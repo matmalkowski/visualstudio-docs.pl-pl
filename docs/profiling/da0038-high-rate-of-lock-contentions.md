@@ -1,0 +1,56 @@
+---
+title: 'DA0038: Wysoka liczba rywalizacji blokad | Dokumentacja firmy Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.38
+- vs.performance.rules.DA0038
+- vs.performance.DA0038
+ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 30f9dbb760bd013bae08b5539f32d652ec3313bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/31/2017
+---
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Wysoka liczba rywalizacji blokad
+|||  
+|-|-|  
+|Identyfikator reguły|DA0038|  
+|Kategoria|Sposób użycia programu .NET framework|  
+|Metoda profilowania|Pobierania próbek<br /><br /> Oprzyrządowanie<br /><br /> Pamięci platformy .NET|  
+|Komunikat|Występuje wysoki współczynnik rywalizacji o blokadę platformy .NET. Zbadaj przyczynę tych rywalizacji, uruchamiając profil współbieżność.|  
+|Typ reguły|Informacje|  
+  
+ Gdy profilu można za pomocą próbkowania, pamięci platformy .NET lub metody kontencji zasobów, należy zebrać co najmniej 25 próbek do wyzwolenia tej reguły.  
+  
+## <a name="cause"></a>Przyczyna  
+ Dane wydajności systemu, które są zbierane z danych profilowania wskazuje znacznie wysoka liczba rywalizacji blokad, który wystąpił podczas wykonywania aplikacji. Należy rozważyć profilowanie, aby znaleźć przyczynę rywalizacji ponownie, używając metoda profilowania współbieżności.  
+  
+## <a name="rule-description"></a>Opis reguły  
+ Blokady są używane do ochrony krytycznych fragmentów kodu, który musi zostać wykonane szeregowe przez jeden wątek na czas w aplikacji wielowątkowych. Microsoft .NET CLR czasu wykonywania (języka wspólnego CLR) zapewnia zbiór pełnej synchronizacji i blokowanie elementów podstawowych. Na przykład w języku C# obsługuje instrukcji "lock" (SyncLock w języku Visual Basic). Zarządzanej aplikacji można wywołać metody Monitor.Enter i Monitor.Exit w system.Threading — przestrzeń nazw nabywanie i zwolnić blokady bezpośrednio. .NET Framework obsługuje dodatkowe synchronizacji i blokowanie elementów podstawowych, w tym klas, które obsługują muteksy ReaderWriterLocks i semaforów. Aby uzyskać więcej informacji, zobacz [podstawowych Omówienie synchronizacji](http://go.microsoft.com/fwlink/?LinkId=177867) w przewodniku programistów platformy .NET Framework w witrynie MSDN. Klasy .NET Framework są nałożone na dolnym usług synchronizacji poziomu wbudowane w system operacyjny Windows. Obejmują one obiekty sekcja krytyczna wiele różnych oczekiwania i zdarzenie sygnalizujące funkcji. Aby uzyskać więcej informacji, zobacz [synchronizacji](http://go.microsoft.com/fwlink/?LinkId=177869) sekcji Win32 i COM Programowanie w bibliotece MSDN  
+  
+ Zarówno .NET Framework klas i obiektów macierzystych systemu Windows, które są używane do synchronizacji i blokowanie są lokalizacji pamięci współużytkowanej, które należy zmienić przy użyciu operacje blokowane. Blokowanej operacji użyj specyficzne dla sprzętu instrukcje, które działają w lokalizacji pamięci współużytkowanej zmianę ich stanu przy użyciu operacji niepodzielnych. Niepodzielne operacje dotrą do wszystkich procesorów na maszynie. Blokad i elementów WaitHandle są obiektami .NET, które automatycznie używają operacje blokowane, jeśli są one skonfigurować lub zresetować. Mogą występować inne pamięci współużytkowanej struktury danych w aplikacji, która wymaga również użycia operacje blokowane w celu zaktualizowania w sposób wątkowo. Aby uzyskać więcej informacji, zobacz [operacji Blokowanej](http://go.microsoft.com/fwlink/?LinkId=177870) w sekcji biblioteki MSND .NET Framework  
+  
+ Synchronizacji i blokowanie to mechanizmy służące do zapewnienia poprawnie wykonać wielowątkowości aplikacji. Każdy wątek aplikacji wielowątkowych jest jednostką niezależne wykonywania z harmonogramem niezależnie przez system operacyjny. Rywalizacji blokad występuje, gdy wątek, który próby uzyskania blokady jest opóźnione, ponieważ inny wątek jest blokadą.  
+  
+ Blokady są często zagnieżdżone. Zagnieżdżanie występuje, gdy wątek wykonywania sekcja krytyczna wykonuje funkcję, która następnie wymaga kolejną blokadę. Niektóre ilość zagnieżdżenia blokady jest nieuniknione. Krytyczne sekcji może wywołać metody .NET Framework korzystający blokad, aby upewnić się, że jest bezpieczne wątkowo. Wywołania z niektórych sekcja krytyczna w aplikacji do metody Framework, która również blokuje przy użyciu dojścia do różnych blokady powoduje, że blokad zagnieździć. Zagnieżdżone warunki blokowania może prowadzić do problemów z wydajnością, które są bardzo trudne do unravel i napraw.  
+  
+ Ta zasada generowane, gdy jest zbyt wysoka liczba rywalizacji blokad wskazywać pomiarów podczas przebiegu profilowania. Rywalizacji blokad opóźnienie wykonywania wątków, które oczekują na blokadę. Należy zbadać nawet stosunkowo małej ilości rywalizacji blokad w testach jednostkowych lub w testach obciążenia uruchomione na sprzęcie końcowy dolnej.  
+  
+> [!NOTE]
+>  Gdy jest zbyt wysoka liczba rywalizacji blokad zgłoszone w danych profilowania [DA0039: bardzo wysoka liczba rywalizacji blokad](../profiling/da0039-very-high-rate-of-lock-contentions.md) komunikat ostrzegawczy jest uruchamiany zamiast tego komunikatu informacji.  
+  
+## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
+ Kliknij dwukrotnie komunikat, aby przejść do [znaczniki](../profiling/marks-view.md) widoku danych profilowania.  Znajdź **.NET CLR LocksAndThreads\Contention szybkość / sekundę** kolumny. Określa, czy określone fazy wykonywania programu rywalizacji blokad w przypadku większych niż inne faz.  
+  
+ Ta zasada uruchamia się tylko wtedy, gdy nie jest używana metoda profilowania współbieżności. Metoda profilowania współbieżności jest najlepszym narzędziem służące do diagnozowania problemów z wydajnością związane z rywalizacji blokad w aplikacji. Zbieraj dane, aby zrozumieć zachowania blokującego aplikacji profilowania współbieżności. Dotyczy to również opis blokad, które są mocno utrzymywał, jak długo wątku czasu wykonywania jest opóźnione oczekiwania na utrzymywał blokad i jakie kod jest powiązana. Współbieżność profile zbiera dane na wszystkich zablokować rywalizacji, w tym zachowania blokującego natywnego urządzeń systemu Windows, klas .NET Framework i innych bibliotek innych firm aplikacji odwołań. Aby uzyskać informacje dotyczące profilowania współbieżności z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, zobacz [wątku zbierania i przetwarzania danych współbieżności](../profiling/collecting-thread-and-process-concurrency-data.md). Linki do informacji dotyczących współbieżności profilowania z wiersza polecenia dla **przy użyciu metody współbieżności rywalizacji zbierać i dane o aktywności wątku** sekcji [przy użyciu profilowania metody z Wiersz polecenia](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
