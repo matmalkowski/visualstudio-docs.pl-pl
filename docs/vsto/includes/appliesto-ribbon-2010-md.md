@@ -1,0 +1,3 @@
+  **Zastosowanie:** informacje przedstawione w tym temacie dotyczą projektów na poziomie dokumentu i projektów dodatku VSTO dla następujących aplikacji: Excel, InfoPath 2013 i InfoPath 2010, Outlook, PowerPoint, Project, Visio, Word. Aby uzyskać więcej informacji, zobacz [dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../../vsto/features-available-by-office-application-and-project-type.md).
+
+  

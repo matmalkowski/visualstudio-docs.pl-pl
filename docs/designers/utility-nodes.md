@@ -1,0 +1,34 @@
+---
+title: "Narzędzie węzłów | Dokumentacja firmy Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/31/2017
+---
+# <a name="utility-nodes"></a>Węzły narzędzi
+W projektancie programu do cieniowania narzędzie węzły reprezentują obliczeniach cieniowania wspólnego, przydatne, które nie pasują do innych kategorii. Niektóre węzły narzędzie wykonywaniem prostych operacji, takich jak dołączanie wektory razem lub wybranie wyniki warunkowo i wykonywać inne złożone operacje, takie jak obliczanie udziału oświetlenia zgodnie z popularnych oświetlenia modeli.  
+  
+## <a name="utility-node-reference"></a>Odwołanie do narzędzia węzła  
+  
+|Węzeł|Szczegóły|Właściwości|  
+|----------|-------------|----------------|  
+|**Dołącz wektora**|Tworzy wektora, jednocześnie dodając określone dane wejściowe.<br /><br /> **Dane wejściowe:**<br /><br /> `Vector`: `float`, `float2`, lub`float3`<br /> Aby dołączyć do wartości.<br /><br /> `Value to Append`: `float`<br /> Wartość do dołączenia.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float2`, `float3`, lub `float4` w zależności od typu danych wejściowych`Vector`<br /> Nowy wektor.|Brak|  
+|**Element Fresnela**|Oblicza wygaszania Fresnela oparte na określonej normalnej powierzchni.<br /><br /> Wartość znajduje się poza element Fresnela wyraża, jak blisko normalna powierzchni bieżącego piksela pokrywa się z wektorem widoku. Gdy wektory są wyrównane, wynikiem funkcji jest 0; Wynik zwiększa się, jak wektory stają się mniej podobne i osiągnie maksymalną, gdy wektory są prostopadły. Możesz użyć tego, aby bardziej lub mniej oczywista wpływ na podstawie relacji między orientację bieżącego piksela i kamery.<br /><br /> **Dane wejściowe:**<br /><br /> `Surface Normal`: `float3`<br /> Normalna powierzchni bieżącego piksela zdefiniowany w przestrzeni stycznej bieżącego piksela. To umożliwia perturb powierzchnia widoczna normalnych, jak normalne mapowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float`<br /> Odbicia bieżącego piksela.|**Wykładnik**<br /> Wykładnik używany do obliczenia wygaszania Fresnela.|  
+|**Jeśli**|Warunkowo wybiera jeden z trzech potencjalnych wyników poszczególnych składników. Warunek jest określony przez relację między dwoma innymi określone dane wejściowe.<br /><br /> Dla każdego składnika wyniku jest wybierany odpowiadający składnik jednego z trzech potencjalnych, na podstawie relacji między odpowiadającymi składnikami dwóch pierwszych danych wejściowych.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub`float4`<br /> Lewa strona wartość do porównania.<br /><br /> `Y`: tego samego typu jako dane wejściowe`X`<br /> Po prawej stronie wartość do porównania.<br /><br /> `X > Y`: tego samego typu jako dane wejściowe`X`<br /> Wartości, które zostały wybrane podczas obliczania `X` jest większa niż `Y`.<br /><br /> `X = Y`: tego samego typu jako dane wejściowe`X`<br /> Wartości, które zostały wybrane podczas obliczania `X` jest równa `Y`.<br /><br /> `X < Y`: tego samego typu jako dane wejściowe`X`<br /> Wartości, które zostały wybrane podczas obliczania `X` jest mniejsza niż `Y`.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Wybrany wynik, dla danego składnika.|Brak|  
+|**Lambert**|Oblicza kolor bieżącego piksela zgodnie z modelem oświetlenia Lambert przy użyciu określonego normalnej powierzchni.<br /><br /> Kolor ten jest to suma koloru otoczenia i udziału rozpraszania oświetlenia w obszarze oświetlenia bezpośredniego. Kolor otoczenia przybliża łączny udział oświetlenia pośredniego, lecz daje płaski i niekontrastowy obraz bez udziału dodatkowego oświetlenia. Rozpraszanie oświetlenia ułatwia dodanie kształtu i głębi do obiektu.<br /><br /> **Dane wejściowe:**<br /><br /> `Surface Normal`: `float3`<br /> Normalna powierzchni bieżącego piksela zdefiniowany w przestrzeni stycznej bieżącego piksela. To umożliwia perturb powierzchnia widoczna normalnych, jak normalne mapowania.<br /><br /> `Diffuse Color`: `float3`<br /> Kolor rozpraszania bieżącego piksela zwykle **kolor punktu**. Jeśli nie danych wejściowych jest podana wartość domyślna jest białe.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Kolor rozpraszania bieżącego piksela.|Brak|  
+|**Maska wektora**|Składniki maski określonego wektora.<br /><br /> Możesz użyć tego usunięcia konkretnych kanałów koloru z wartości koloru lub uniemożliwić mające wpływ na dalsze obliczenia określone składniki.<br /><br /> **Dane wejściowe:**<br /><br /> `Vector`: `float4`<br /> Wektor do maski.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Wektor maskowanego.|**Czerwony / X**<br /> **FALSE** powoduje zamaskowanie składnika czerwony (x); w przeciwnym razie **True**.<br /><br /> **Zielony / Y**<br /> **FALSE** powoduje zamaskowanie składnika zielony (y); w przeciwnym razie **True**.<br /><br /> **Niebieski / Z**<br /> **FALSE** powoduje zamaskowanie składnika niebieski (z); w przeciwnym razie **True**.<br /><br /> **Alpha / W**<br /> **FALSE** powoduje zamaskowanie składnika alfa (w); w przeciwnym razie **True**.|  
+|**Odbicie wektorowej**|Oblicza wektor odbicia dla bieżącego piksela w przestrzeni stycznej na podstawie pozycji kamery.<br /><br /> Służy to do obliczenia odbić, współrzędnych mapy sześciennej i odblasków oświetlenia<br /><br /> **Dane wejściowe:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> Normalna powierzchni bieżącego piksela zdefiniowany w przestrzeni stycznej bieżącego piksela. To umożliwia perturb powierzchnia widoczna normalnych, jak normalne mapowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Wektor odbicia.|Brak|  
+|**Odblasków**|Oblicza udział odblasków oświetlenia zgodnie z modelem oświetlenia Phong przy użyciu określonego normalnej powierzchni.<br /><br /> Odblaski oświetlenia nadają obiektowi błyszczący i połyskliwy wygląd do obiektu, na przykład wody, plastiku lub metali.<br /><br /> **Dane wejściowe:**<br /><br /> `Surface Normal`: `float3`<br /> Normalna powierzchni bieżącego piksela zdefiniowany w przestrzeni stycznej bieżącego piksela. To umożliwia perturb powierzchnia widoczna normalnych, jak normalne mapowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Udział koloru materiału światła odblasków.|Brak|

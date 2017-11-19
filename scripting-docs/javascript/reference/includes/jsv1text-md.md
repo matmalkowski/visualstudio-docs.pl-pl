@@ -1,0 +1,1 @@
+Internet Explorer wcześniejszy niż program Internet Explorer 6

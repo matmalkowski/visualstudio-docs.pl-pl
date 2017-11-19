@@ -1,0 +1,59 @@
+---
+title: IDiaStackWalkHelper::pdataForVA | Dokumentacja firmy Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::pdataByVA method
+ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4925a4a37395dd53fabb1d8d7ba7f80bc5cc6c93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/31/2017
+---
+# <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
+Zwraca PDATA bloku danych skojarzone z wirtualnym adresem.  
+  
+## <a name="syntax"></a>Składnia  
+  
+```C++  
+HRESULT pdataForVA(   
+   ULONGLONG  va,  
+   DWORD      cbData,  
+   DWORD*     pcbData,  
+   BYTE*      pbData  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametry  
+ `va`  
+ [in] Określa wirtualny adres danych do uzyskania.  
+  
+ `cbData`  
+ [in] Rozmiar danych w bajtach do uzyskania.  
+  
+ `pcbData`  
+ [out] Zwraca liczbę bajtów, które zostały pobrane rzeczywisty rozmiar danych.  
+  
+ `pbData`  
+ [w, out] Buforu, który jest wypełniane żądanych danych. Nie może być `NULL`.  
+  
+## <a name="return-value"></a>Wartość zwracana  
+ Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie istnieje żadne PDATA dla określonego adresu. W przeciwnym razie zwraca kod błędu.  
+  
+## <a name="remarks"></a>Uwagi  
+ PDATA (sekcji o nazwie ".pdata") z compiland zawiera informacje dotyczące obsługi funkcji wyjątków.  
+  
+ Obiekt wywołujący wie, jak dużo danych jest zwracana więc obiekt wywołujący nie trzeba uzyskać jak dużo danych jest dostępna. W związku z tym jest możliwa do stosowania tę metodę, aby zwrócić błąd, jeśli `pbData` parametr jest `NULL`.  
+  
+## <a name="see-also"></a>Zobacz też  
+ [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
