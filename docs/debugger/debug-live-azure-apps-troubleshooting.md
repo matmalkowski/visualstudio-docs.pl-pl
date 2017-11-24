@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące migawki debugowania w programie Visual Studio
 
@@ -30,8 +30,7 @@ Jeśli widzisz ikonę ostrzeżenia ![ikona ostrzeżenia Snappoint](../debugger/m
 
 Wykonaj następujące czynności:
 
-1. Upewnij się, że korzystasz z tej samej wersji kodu źródłowego, który był używany do tworzenia i wdrażania aplikacji.
-1. Upewnij się, że są ładowane poprawne symbole dla danego wdrożenia. Aby to zrobić, należy wyświetlić **modułów** okno podczas debugowania migawki i sprawdź kolumna pliku symboli zawiera plik PDB dla modułu debugowania. Należy pamiętać, że debuger migawki podejmie próbę automatycznego pobrania i zastosowania symboli dla danego wdrożenia.
+1. Upewnij się, że korzystasz z tej samej wersji kodu źródłowego, który był używany do tworzenia i wdrażania app.isua1 Twojego. Upewnij się, że są ładowane poprawne symbole dla danego wdrożenia. Aby to zrobić, należy wyświetlić **modułów** okno podczas debugowania migawki i sprawdź kolumna pliku symboli zawiera plik PDB dla modułu debugowania. Należy pamiętać, że debuger migawki podejmie próbę automatycznego pobrania i zastosowania symboli dla danego wdrożenia.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole nie są ładowane, podczas otwierania migawki
 
@@ -70,6 +69,7 @@ Wykonaj następujące czynności:
 - Optymalizacje Roslyn IL nie są w pełni obsługiwane w projektów platformy ASP.NET Core. Dla niektórych projektów platformy ASP.NET Core mogą nie być mogli zobaczyć niektóre zmienne ani niektóre zmienne w instrukcjach warunkowego. 
 - Zmienne specjalne, takie jak *$FUNCTION* lub *$CALLER*, nie można obliczyć w instrukcji warunkowej lub logpoints dla projektów platformy ASP.NET Core.
 - Debugowanie migawki nie działa na usługi aplikacji, która ma [buforowanie lokalne](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) włączona.
+- Debugowanie aplikacji interfejsu API migawki nie jest obecnie obsługiwane.
 
 ## <a name="see-also"></a>Zobacz także
 

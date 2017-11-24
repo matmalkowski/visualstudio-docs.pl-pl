@@ -1,10 +1,10 @@
 ---
 title: "Rozwiązywanie problemów z instalacją | Dokumentacja firmy Microsoft"
 description: "Czasami może wystąpienia problemów. Jeśli z instalacją programu Visual Studio lub uaktualnienie nie powiedzie się, może pomóc tej strony."
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017 r.
 
@@ -37,7 +37,8 @@ Wyszukaj użytkownika komunikat o błędzie z [Visual Studio Developer Community
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Krok 3 — Usuń katalog Instalator programu Visual Studio, aby rozwiązać problemy z uaktualnianiem
 Program inicjujący Instalator programu Visual Studio jest minimalnym pliku wykonywalnego lekki, który instaluje reszty Instalator programu Visual Studio. Usuwanie plików Instalator programu Visual Studio i następnie ponowne uruchomienie inicjujący może rozwiązać niektóre błędy aktualizacji.
 
-**Uwaga:** wykonuje następujące akcje ponownie instaluje pliki Instalator programu Visual Studio i resetuje metadanych instalacji.
+>[!NOTE]
+Wykonaj następujące czynności ponownie instaluje pliki Instalator programu Visual Studio i resetuje metadanych instalacji.
 
 1. Zamknij Instalatora programu Visual Studio.
 2. Usuń katalog Instalator programu Visual Studio. Zazwyczaj jest katalog `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -57,7 +58,7 @@ W niektórych sytuacjach, takich jak powiązane z uszkodzone pliki problemów mo
 W ostateczności można [usuwanie programu Visual Studio](remove-visual-studio.md) usunąć wszystkie pliki instalacyjne i informacji o produkcie.
 
 1. Postępuj zgodnie z instrukcjami [usunięcie programu Visual Studio](remove-visual-studio.md).
-2. Uruchom ponownie program inicjujący opisany w [krok 3 — Usuń katalog Instalator programu Visual Studio, aby rozwiązać problemy z uaktualnianiem](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Uruchom ponownie program inicjujący opisany w [krok 3 — Usuń katalog Instalator programu Visual Studio, aby rozwiązać problemy z uaktualnianiem](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Spróbuj zainstalować lub aktualizacji programu Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Krok 6 — skontaktuj się z nami (opcjonalnie)
@@ -88,10 +89,10 @@ Aby zebrać dzienniki:
 
 ## <a name="more-support-options"></a>Dodatkowe opcje pomocy technicznej
 
-Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
+Jeśli żadne inne czynności nie zezwalać na pomyślnie zainstalować, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka dodatkowych opcji:
-
+* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
 * Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Wymaga to [GitHub](https://github.com/) konta).

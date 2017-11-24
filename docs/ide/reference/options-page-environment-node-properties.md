@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzone z **środowiska** kategorii, `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdego podsekcji to wywołanie, które umożliwia dostęp do właściwości kolekcji, a tabeli w każdym podsekcja zawiera listę właściwości w kolekcji.  
@@ -71,7 +71,7 @@ W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzo
 |Nazwa elementu właściwości|Wartość|Opis|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (wartość logiczna)|Ładuje rozszerzeń dla poszczególnych użytkowników, po uruchomieniu programu Visual Studio w obszarze poświadczeń administratora. Po zmianie tej wartości, należy ponownie uruchomić program Visual Studio.|  
-|EnableOnline|Get/Set (wartość logiczna)|Zapewnia dostęp do rozszerzenia w galerii programu Visual Studio.|  
+|EnableOnline|Get/Set (wartość logiczna)|Zapewnia dostęp do rozszerzeń dla programu Visual Studio Marketplace.|  
 |AutomaticallyCheckForUpdates|Get/Set (wartość logiczna)|Automatycznie sprawdza, czy aktualizacje zainstalowane rozszerzenia.|  
   
 ## <a name="find-and-replace"></a>Znajdź i zamień  

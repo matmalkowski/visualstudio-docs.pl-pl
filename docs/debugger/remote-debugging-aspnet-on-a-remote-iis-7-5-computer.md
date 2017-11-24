@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -26,7 +26,7 @@ Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zains
 W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 ASP.NET MVC 4.5.2, wdrażanie usług IIS i uruchomić zdalnego debugera z programu Visual Studio. Do zdalnego debugowania ASP.NET Core, zobacz [zdalnego debugowania ASP.NET Core na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Aby uzyskać więcej informacji, zobacz [zdalnego debugowania na platformie Azure](../debugger/remote-debugging-azure.md).
 
 Procedury te zostały przetestowane na tych konfiguracji serwera:
-* Windows Server 2012 R2 i IIS 10 (dla systemu Windows Server 2008 R2 kroki serwera są różne)
+* Windows Server 2012 R2 i IIS 8.5 (dla systemu Windows Server 2008 R2 kroki serwera są różne)
 
 ## <a name="requirements"></a>Wymagania
 
