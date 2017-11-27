@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40f554f21cc2cee9fb6d457ef9f4a560740cebc6
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Różnice pomiędzy dodawaniem odwołań za pomocą NuGet a Extension SDK
 
@@ -56,7 +55,7 @@ Poniższa tabela ułatwia porównanie funkcji odwołaniem do zestawu SDK z odwo�
 |Mechanizm obsługuje maszyny czystą developer. (Oznacza to, że instalacja nie jest wymagana, i działa proste pobierania z kontroli kodu źródłowego.)|N|Ponieważ odwołanie SDK, musisz sprawdzić rozwiązania i zestawu SDK oddzielnie. Można sprawdzić w zestawie SDK z dwóch lokalizacji rejestru z systemem innym niż domyślny, z których MSBuild iteruje zestawów SDK (Aby uzyskać więcej informacji, zobacz [tworzenie zestaw Software Development Kit](../extensibility/creating-a-software-development-kit.md)). Alternatywnie Jeśli lokalizacja niestandardowa składa się z zestawów SDK, można określić następujący kod w pliku projektu:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Następnie zaznacz zestawy SDK do tej lokalizacji.|T|Można wyewidencjonować rozwiązania, a program Visual Studio natychmiast rozpoznaje i działa na plikach.|
 |Możesz także dołączyć do dużych społeczności istniejącego pakietu autorów.|Brak|Nowości społeczności.|T||
 |Możesz także dołączyć do dużych społeczności istniejących konsumentów pakietu.|Brak|Nowości społeczności.|T||
-|Możesz także dołączyć do ekosystem partnerów (galerie niestandardowe, repozytoria i tak dalej).|Brak|Dostępne repozytoria obejmują galerii programu Visual Studio, Microsoft Download Center, a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|T||
+|Możesz także dołączyć do ekosystem partnerów (galerie niestandardowe, repozytoria i tak dalej).|Brak|Dostępne repozytoria obejmują Visual Studio Marketplace, Microsoft Download Center, a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|T||
 |Mechanizm integruje się z serwerami kompilacji ciągłej integracji dla tworzenia pakietu i zużycia.|T|Zestaw SDK musi przejść pomyślnie lokalizacji zaewidencjonowania (właściwość SDKReferenceDirectoryRoot) w wierszu polecenia dla programu MSBuild.|T||
 |Mechanizm obsługuje obie wersje pakietu stabilny i wersji wstępnej.|T|Zestaw SDK obsługuje dodawanie odwołań do wielu wersji.|T||
 |Mechanizm obsługuje automatyczne aktualizowanie dla zainstalowanych pakietów.|T|Jeśli zostały wydane jako VSIX lub część aktualizacje automatyczne programu Visual Studio, zestaw SDK zawiera automatycznych powiadomień.|T||
