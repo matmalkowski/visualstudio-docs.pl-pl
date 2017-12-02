@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>Ładowanie VSPackages
 Pakiety VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich jest wymagane. Na przykład pakiet VSPackage jest ładowany podczas fabrykę projektów lub usługa, która implementuje pakiet VSPackage korzysta z programu Visual Studio. Ta funkcja jest nazywana opóźnionego ładowania, który jest używany, jeśli to możliwe zwiększyć wydajność.  
@@ -72,61 +72,7 @@ Pakiety VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich 
   
      Po zainicjowaniu pakiet VSPackage zostanie wymuszone `PackageToBeLoaded` do załadowania.  
   
-     Ładowanie życie nie powinien służyć do komunikacji pakiet VSPackage. Użyj [Using i dostarczanie usług](../extensibility/using-and-providing-services.md) zamiast tego.  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Aby zarejestrować pakiet VSPackage przy użyciu atrybutu niestandardowego  
- W niektórych przypadkach może być konieczne utworzyć nowy atrybut rejestracji dla rozszerzenia. Atrybuty rejestracji służy do dodawania nowych kluczy rejestru lub aby dodać nowe wartości do istniejących kluczy. Nowy atrybut musi pochodzić od <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, i musi ono przesłonić <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> i <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metody.  
-  
-## <a name="creating-a-registry-key"></a>Tworzenie klucza rejestru  
- Poniższy kod tworzy atrybutu niestandardowego **niestandardowych** podkluczy klucza dla pakiet VSPackage, który jest rejestrowany.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Tworzenie nowej wartości istniejącego klucza rejestru  
- Wartości niestandardowe można dodać do istniejącego klucza. Poniższy kod przedstawia sposób dodawania nową wartość do klucza rejestracji pakiet VSPackage.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     Ładowanie życie nie powinien służyć do komunikacji pakiet VSPackage. Użyj [Using i dostarczanie usług](../extensibility/using-and-providing-services.md) zamiast tego.
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Pakiety VSPackage](../extensibility/internals/vspackages.md)

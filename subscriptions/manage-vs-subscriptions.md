@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Dowiedz się, jak maksymalne wykorzystanie subskrypcji programu Visual Studio."
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 ## <a name="signing-in-to-the-portal"></a>Logowanie do portalu
@@ -21,7 +21,7 @@ Subskrypcja programu Visual Studio — Zapraszamy!  Subskrypcja zapewnia całe o
 ### <a name="first-time-access"></a>Dostęp do czasu pierwszego
 Kroki, aby korzystać z subskrypcji po raz pierwszy zależą od tego, jak uzyskać subskrypcję.  
 #### <a name="microsoft-store"></a>Magazyn Microsoft
-Jeśli zakupione subskrypcję programu Visual Studio za pomocą Microsoft Store, kroki aktywacji można zainicjować z płatności **stronę potwierdzenia** lub **wiadomość E-mail z potwierdzeniem.**  
+Jeśli zakupione za pośrednictwem Microsoft Store subskrypcji programu Visual Studio, kroki aktywacji można zainicjować z płatności **stronę potwierdzenia** lub **wiadomość E-mail z potwierdzeniem.**  
 1.  Na stronie"potwierdzenie" lub "Wiadomości E-mail z potwierdzeniem", wybierz polecenie **kliknij tutaj, aby zarejestrować się w**.  Nastąpi przekierowanie do https://my.visualstudio.com/subscriptions/activate.
 2.  Wprowadź adres e-mail służy do Zaloguj się do portalu subskrybenta, a następnie kliknij przycisk **Kontynuuj**.
 3.  W zależności od adresu e-mail może zostać przekierowany do strony logowania Account Microsoft lub stronę logowania Twojej firmy/uczelni.
@@ -31,25 +31,25 @@ Jeśli zakupione subskrypcję programu Visual Studio za pomocą Microsoft Store,
 #### <a name="workschool-accounts"></a>Konta służbowe/pracy
 Jeśli subskrypcji podany przez pracy/służbowe rozwiązaniach otrzymanych powitalnej wiadomości e-mail.  
 1.  Odwiedź stronę [Portal subskrybenta](https://my.visualstudio.com/)
-2.  Wprowadź adres e-mail, który został przypisany do nowej subskrypcji programu Visual Studio. Ten adres jest również objęci subskrybenta **powitalnej litery**. Sprawdź folderów wiadomości-śmieci, jeśli **powitalnej litery** nie została odebrana.
+2.  Wprowadź adres e-mail, który został przypisany do nowej subskrypcji programu Visual Studio. Ten adres jest również objęci subskrybenta **powitalnej litery**. Sprawdź, czy foldery wiadomości-śmieci, jeśli nie otrzymano powitalnej litery.
 3.  Kliknij przycisk **kontynuować**
-4.  Nastąpi przekierowanie do logowania firmowego na stronie.
+4.  Nastąpi przekierowanie do firmowej strony logowania.
 5.  Wprowadź hasło.
 6.  Kliknij przycisk **Zaloguj**.
 
 #### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 Jeśli zakupiono subskrypcję chmury miesięcznego lub rocznego z witryny Marketplace programu Visual Studio, odwiedź stronę [Portal subskrybenta](https://my.visualstudio.com/) i zaloguj się przy użyciu konta Microsoft (MSA) podane w momencie zakupu subskrypcji.
 #### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Przy użyciu konta pracy/służbowego z konta Microsoft (MSA)
-Jeśli Twoja organizacja ma usługi Azure Active Directory, ale nie masz Azure konto usługi Active Directory może być konieczne wykorzystać **osobistych** opcji dostępnych podczas logowania w procesie.
+Jeśli Twoja organizacja ma usługi Azure Active Directory, ale nie masz konta usługi Azure Active Directory należy wykorzystać **osobistych** opcji dostępnych podczas logowania w procesie.
 1.  Przejdź do [Portal subskrybenta](https://my.visualstudio.com)
 2.  Wprowadź adres e-mail, który został przypisany do nowej subskrypcji programu Visual Studio. Ten adres jest również objęci subskrybenta **powitalnej litery**.  (Sprawdź folderów wiadomości-śmieci, jeśli nie otrzymano powitalnej wiadomości e-mail).
 3.  Kliknij przycisk **kontynuować**
-4.  Nastąpi przekierowanie do **strony decyzji**.   Wybierz **pracy konto służbowe** Jeśli subskrypcja jest przypisany do **pracy lub nauki** konta skojarzonego z dzierżawy usługi Azure Active Directory (AAD).  Wybierz **osobistych** Jeśli subskrypcja jest skojarzony z **Corporate** adres e-mail, ale również została przekonwertowana na **osobistych** konta Microsoft (MSA)
+4.  Nastąpi przekierowanie do **strony decyzji**.   Wybierz **pracy konto służbowe** Jeśli subskrypcja jest przypisany do **pracy lub nauki** konta skojarzonego z dzierżawy usługi Azure Active Directory (AAD).  Wybierz **osobistych** Jeśli subskrypcja jest skojarzony z **firmowej** adres e-mail, ale również została przekonwertowana na **osobistych** konta Microsoft (MSA)
 5.  Wprowadź hasło
 6.  Kliknij przycisk **Zaloguj** 
 
 ### <a name="managing-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
-MY portal zgromadzono subskrypcji programu Visual Studio i programów w jednym udoskonalone środowisko portalu.  Na przykład może być standardowe subskrypcji takich jak Visual Studio Enterprise do pracy i miesięczna subskrypcja programu Visual Studio Professional lub Visual Studio Dev Essentials członkostwo, które można korzystać w domu. 
+Portal subskrypcji programu Visual Studio, połączono subskrypcji programu Visual Studio i programów w jednym udoskonalone środowisko portalu.  Na przykład może być standardowe subskrypcji takich jak Visual Studio Enterprise do pracy i miesięczna subskrypcja programu Visual Studio Professional lub Visual Studio Dev Essentials członkostwo, które można korzystać w domu. 
 #### <a name="which-subscription-am-i-using"></a>Subskrypcji, której używam?
 Na stronie korzyści używanej subskrypcji wyraźnie pojawi się na transparencie niebieski.  Jest wyświetlany również w prawym górnym rogu strony.
 
@@ -64,9 +64,9 @@ Na stronie korzyści używanej subskrypcji wyraźnie pojawi się na transparenci
 #### <a name="if-your-subscription-is-not-visible"></a>Jeśli Twoja subskrypcja nie jest widoczne...
 - Mogą one ważność.  Tylko aktywne subskrypcje są wyświetlane w portalu subskrybenta.
 - Może być skojarzony z innego adresu e-mail. Na przykład jeśli Zaloguj się do subskrypcji Visual Studio Professional z Twojej pracy/adres e-mail i mieć członkostwo podstawowe informacje dotyczące programu Visual Studio Dev, skojarzone z Account Microsoft wyświetlany tylko subskrypcji odpowiadający adres e-mail używane do logowania do portalu subskrybenta.  Aby wyświetlić inne subskrypcji, należy się wylogować, a następnie zaloguj się przy użyciu innego adresu e-mail.
-- Jeśli firma kupuje subskrypcji przy użyciu licencji zbiorczej, administrator może nie przypisano subskrypcji do użytkownika.  
+- Jeśli firma kupuje subskrypcji przy użyciu licencji zbiorczej, administrator nie może mieć przypisany subskrypcji do użytkownika lub mogą mieć przypisane subskrypcji do innego użytkownika.  
 
-#### <a name="renewing-my-subscriptions"></a>Odnawianie Moje subskrypcje
+### <a name="renewing-my-subscriptions"></a>Odnawianie Moje subskrypcje
 **Standardowa subskrypcji**
 - Microsoft Store: W przypadku zakupu subskrypcji [Microsoft Store](http://www.microsoft.com/store), możesz odnowić go tam również. 
 - Licencjonowania zbiorowego: Jeśli firma kupuje subskrypcji przy użyciu licencji zbiorczej, administrator skontaktuj się z odsprzedawcą odnowienia subskrypcji.
@@ -81,7 +81,7 @@ Na stronie korzyści używanej subskrypcji wyraźnie pojawi się na transparenci
 
 **Visual Studio Dev Essentials -** Essentials deweloperów to bezpłatny program, a nie wygasają członkostwa.  
 
-#### <a name="transferring-subscriptions"></a>Przenoszenie subskrypcji
+### <a name="transferring-subscriptions"></a>Przenoszenie subskrypcji
 Jeśli subskrypcji zostało zakupione w ramach licencjonowania zbiorowego firmy Microsoft, musisz ponownie przypisać je do osób w organizacji administrator należy wykonać tej operacji. Subskrypcje detaliczne można przenieść do innego użytkownika kontaktując się z działem.  Nie można dokonać transferu subskrypcji bezpłatnych lub "Nie do sprzedaży". 
 
 
@@ -89,9 +89,9 @@ Jeśli subskrypcji zostało zakupione w ramach licencjonowania zbiorowego firmy 
 
 #### <a name="changing-profile-information"></a>Zmiana informacji o profilu
 Można łatwo zmienić informacje kontaktowe i preferencje w Twoim profilu.  
-1.  Kliknij na nazwie, jeśli prawym górnym rogu portalu subskrybenta.
+1.  Kliknij nazwę w prawym górnym rogu portalu subskrybenta.
 2.  Kliknij przycisk **edytowanie profilu** przycisku.
-3.  Na **o** kartę, można zmienić nazwę, poczty e-mail, kraj/region, preferencje obrazów i skontaktuj się z profilu.  Na karcie "Preferencje" można wybrać preferowany język, Data i czas wzorców, strefę czasową i motyw interfejsu użytkownika.  
+3.  Na **o** kartę, można zmienić nazwę, poczty e-mail, kraj/region, preferencje obrazów i skontaktuj się z profilu.  Na **preferencje** karcie można wybrać preferowany język, Data i czas wzorce, strefa czasowa i motyw interfejsu użytkownika.  
 4.  Po zakończeniu zmiany, kliknij przycisk **zapisać**. 
 5.  Kliknij w przeglądarce **ponownie** przycisk, aby powrócić do strony korzyści. 
 

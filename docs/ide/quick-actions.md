@@ -13,11 +13,11 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4ae2344bb1bce77d7e71cadf34660db57380f6b4
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 22a6c84608f8955e3a751af4ee2b9fb113645590
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="quick-actions"></a>Szybkie akcje
 
@@ -42,8 +42,278 @@ Kliknij strzałkę w dół lub potencjalne Pokaż poprawki łącze, aby wyświet
 ## <a name="common-quick-actions"></a>Typowe szybkie akcje
 
 Poniżej przedstawiono niektóre typowe szybkie akcje, które mają zastosowanie zarówno C# i Visual Basic kodu.
+- [Akcje, które błędy](#fix)
+- [Akcje, które usunąć niepotrzebne kodu](#remove)
+- [Działania polegające na dodawaniu Brak kodu](#add)
+- [Kod — przekształcenia](#transform)
 
-### <a name="add-missing-casesdefault-caseboth"></a>Dodaj brakujące przypadków lub domyślnego zarówno case
+### <a id="fix"></a>Akcje, które błędy
+
+#### <a name="correct-misspelled-type"></a>Niepoprawny typ błędnie
+|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS0103, BC30002 | C# i Visual Basic | Visual Studio 2015 Update 2 |
+
+Jeśli przypadkowo błędem typu w programie Visual Studio, ta akcja szybkie automatycznie poprawi go dla Ciebie.  Zostaną wyświetlone te elementy w menu żarówki jako  **"Zmień"*zawiera błąd pisowni typu*"do"*Popraw typu*"**.  Na przykład:
+
+```csharp
+// Before
+private viod MyMethod()
+{
+}
+
+// Change 'viod' to 'void'
+
+// After
+private void MyMethod()
+{
+}
+```
+
+```vb
+' Before
+Function MyFunction as Intger
+End Function
+
+' Change 'Intger' to 'Integer'
+
+' After
+Function MyFunction as Integer
+End Function
+```
+
+#### <a name="resolve-git-merge-conflict"></a>Rozwiązanie konfliktu scalania git
+|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS8300, BC37284  | C# i Visual Basic | Visual Studio 2017 wersji 15 ustęp 3 |
+
+Te szybkie akcje umożliwiają rozwiązywanie konfliktów scalania git "podejmując zmiany", które powoduje usunięcie powodujące konflikt kodu i znaczników.  
+
+```csharp
+// Before     
+private void MyMethod()
+{
+<<<<<<< HEAD
+    if (true)
+    {
+
+    }
+=======
+    if (false)
+    {
+
+    }
+>>>>>>> upstream
+}
+
+// Take changes from 'HEAD'
+
+// After 
+private void MyMethod()
+{
+    if (true)
+    {
+
+    }
+}
+```
+
+#### <a name="make-method-synchronous"></a>Wprowadź synchroniczne — metoda
+|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# i Visual Basic | Visual Studio 2015 Update 2 |
+
+Przy użyciu `async` / `Async` — słowo kluczowe dla metody, należy spodziewać się, że gdzieś wewnątrz tej metody `await` / `Await` również będzie można użyć słowa kluczowego.  Jednak jeśli nie jest to wymagane, szybkie działanie będzie się, że będzie umożliwiają metoda synchroniczna przez usunięcie `async` / `Async` — słowo kluczowe i zmiany zwracanego typu.  Użyj **upewnij metoda synchroniczna** opcji z menu Szybkie akcje.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+#### <a name="make-method-asynchronous"></a>Wprowadź asynchroniczne — metoda
+|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS4032, BC37057 | C# i Visual Basic | Visual Studio 2017 |
+
+Korzystając z `await` / `Await` — słowo kluczowe wewnątrz metody, oczekuje się, że metoda sam jest oznaczona atrybutem `async` / `Async` — słowo kluczowe.  Jednak jeśli nie jest to wymagane, szybkie działanie będzie się, że będzie umożliwiają metody asynchronicznej.  Użyj **upewnij asynchronicznej metody/funkcja** opcji z menu Szybkie akcje.
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+### <a id="remove"></a>Akcje, które usunąć niepotrzebne kodu
+
+#### <a name="remove-unnecesary-usingsimports"></a>Usuń niepotrzebnymi deklaracje Using/importów
+
+|  Właściwe języki |  Obsługiwana wersja |
+|  -------------------- | ----------------  |
+|  C# i Visual Basic | Visual Studio 2015 RTW |
+
+**Usunąć niepotrzebne deklaracje Using/importów** szybkich akcji usunie wszystkie nieużywane `using` i `Import` instrukcji dla bieżącego pliku.  Po wybraniu tego elementu importów nieużywanej przestrzeni nazw zostaną natychmiast usunięte.
+
+#### <a name="remove-unnecessary-cast"></a>Usuwania niepotrzebnego rzutowania
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0004 | C# i Visual Basic | Visual Studio 2015 RTW |
+
+Jeśli rzutowania typu na inny typ, który nie wymaga rzutowania **Usuń niepotrzebnego rzutowania** elementu szybkich akcji spowoduje usunięcie rzutowanie w kodzie.
+
+```csharp
+// before
+int number = (int)3;
+
+// Remove Unnecessary Cast
+
+// after
+int number = 3;
+```
+```vb
+' Before
+Dim number as Integer = CType(3, Integer)
+
+' Remove Unnecessary Cast
+
+' After
+Dim number as Integer = 3
+```
+
+#### <a name="remove-unused-variables"></a>Usuń nieużywane zmienne
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS0219, BC42024 | C# i Visual Basic | Visual Studio 2017 wersji 15 ustęp 3 |
+
+Ta akcja szybkiego umożliwia usunięcie zmiennych, które są zadeklarowane, ale nigdy używana w kodzie.
+
+```csharp
+// Before
+public MyMethod()
+{
+    var unused = 8;
+    var used = 1;
+    return DoStuff(used);
+}
+
+// Remove unused variables
+
+// After
+public MyMethod()
+{
+    var used = 1;
+    return DoStuff(used);
+}
+```
+
+#### <a name="remove-type-from-default-value-expression"></a>Usuwanie typu z **domyślne** wyrażenie wartości
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0034 | C# 7.1 + | Visual Studio 2017 wersji 15 ustęp 3 |
+
+Ta akcja szybkie usuwa typu wartości wyrażenia wartości domyślnej i używa [ `default` literału](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) gdy kompilator może wnioskować o typie wyrażenia.
+
+```csharp 
+// Before
+void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
+
+// Simplify default expression
+
+// After
+void DoWork(CancellationToken cancellationToken = default) { ... }
+
+```
+
+### <a id="add"></a>Działania polegające na dodawaniu Brak kodu
+
+#### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Dodaj deklaracje Using/Importy dla typów zestawów odwołań, pakiety NuGet lub innych typów w rozwiązaniu
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS0103, BC30451 | C# i Visual Basic| Visual Studio 2015 Update 2 |
+
+Używanie typów znajduje się w innych projektów w rozwiązaniu będzie ona wyświetlana szybkie automatycznie, jednak inne muszą być włączone z **Narzędzia > Opcje > C#** lub **podstawowe > Zaawansowane** karty:  
+
+* Sugeruj użycie/Importy dla typów w zestawach odwołania
+* Sugeruj użycie/Importy dla typów w pakietach NuGet
+
+Po włączeniu użycie typu w przestrzeni nazw, która jest on aktualnie zaimportowany, ale istnieje odwołanie do zestawu lub pakietu NuGet, zostanie utworzona instrukcji za pomocą import.
+
+```csharp
+// Before
+Debug.WriteLine("Hello");
+
+// using System.Diagnostics;
+
+// After
+using System.Diagnostics;
+
+Debug.WriteLine("Hello");
+```
+
+```vb
+' Before
+Debug.WriteLine("Hello")
+
+' Imports System.Diagnostics
+
+// After
+Imports System.Diagnostics
+
+Debug.WriteLine("Hello")
+```
+
+#### <a name="add-missing-casesdefault-caseboth"></a>Dodaj brakujące przypadków lub domyślnego zarówno case
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0010 | C# i Visual Basic| Visual Studio 2017 wersji 15 ustęp 3 |
 
 Podczas tworzenia `switch` instrukcji w języku C# lub `Select Case` instrukcji w języku Visual Basic, można użyć Akcja kodu można automatycznie dodać ma wielkość elementów i/lub instrukcji case domyślne.  Dla pustą instrukcję podobne do poniższych:
 
@@ -94,7 +364,6 @@ switch(myEnum)
         break;
 }
 ```
-
 ```vb
 Select Case myEnum
     Case MyEnum.Item1
@@ -106,282 +375,117 @@ Select Case myEnum
 End Select
 ```
 
-### <a name="correct-misspelled-type"></a>Niepoprawny typ błędnie
+#### <a name="add-null-checks-for-parameters"></a>Dodaj sprawdzenia wartości null dla parametrów
+| Właściwe języki |  Obsługiwana wersja |
+| -------------------- | ----------------  |
+| C# i Visual Basic| Visual Studio 2017 wersji 15 ustęp 3 |
 
-Jeśli przypadkowo błędem typu w programie Visual Studio, ta akcja szybkie automatycznie poprawi go dla Ciebie.  Zostaną wyświetlone te elementy w menu żarówki jako  **"Zmień"*zawiera błąd pisowni typu*"do"*Popraw typu*"**.  Na przykład:
-
-```csharp
-// Before
-private viod MyMethod()
-{
-}
-
-// Change 'viod' to 'void'
-
-// After
-private void MyMethod()
-{
-}
-```
-
-```vb
-' Before
-Function MyFunction as Intger
-End Function
-
-' Change 'Intger' to 'Integer'
-
-' After
-Function MyFunction as Integer
-End Function
-```
-
-### <a name="remove-unnecessary-cast"></a>Usuwania niepotrzebnego rzutowania
-
-Jeśli rzutowania typu na inny typ, który nie wymaga rzutowania **Usuń niepotrzebnego rzutowania** elementu szybkich akcji spowoduje usunięcie rzutowanie w kodzie.
-
-```csharp
-// before
-int number = (int)3;
-
-// Remove Unnecessary Cast
-
-// after
-int number = 3;
-```
-
-```vb
-' Before
-Dim number as Integer = CType(3, Integer)
-
-' Remove Unnecessary Cast
-
-' After
-Dim number as Integer = 3
-```
-
-### <a name="replace-method-with-property-or-replace-property-with-method"></a>Zastąp metodę z właściwością lub zastąpić właściwość — metoda
-
-Te szybkie akcje przekonwertuje metody do właściwości lub na odwrót.  W poniższym przykładzie pokazano zmiany z metody do właściwości.  W przeciwnym przypadku po prostu Odwróć *przed* i *po* sekcje.
-
-```csharp
-private int MyValue;
-
-// Before
-public int GetMyValue()
-{
-    return MyValue;
-}
-
-// Replace 'GetMyValue' with property
-
-// After
-public int MyValue
-{
-    get { return MyValue; }
-}
-```
-
-```vb
-Dim MyValue As Integer
-
-' Before
-Function GetMyValue() As Integer
-    Return MyValue
-End Function
-
-' Replace 'GetMyValue' with property
-
-' After
-ReadOnly Property MyValue As Integer
-    Get
-        Return MyValue
-    End Get
-End Property
-```
-
-### <a name="make-method-synchronous"></a>Wprowadź synchroniczne — metoda
-
-Przy użyciu `async` / `Async` — słowo kluczowe dla metody, należy spodziewać się, że gdzieś wewnątrz tej metody `await` / `Await` również będzie można użyć słowa kluczowego.  Jednak jeśli nie jest to wymagane, szybkie działanie będzie się, że będzie umożliwiają metoda synchroniczna przez usunięcie `async` / `Async` — słowo kluczowe i zmiany zwracanego typu.  Użyj **upewnij metoda synchroniczna** opcji z menu Szybkie akcje.
+Ta akcja szybkiego umożliwia dodanie kontrolę w kodzie, aby sprawdzić, czy parametr jest pusty.
 
 ```csharp
 // Before
-async Task<int> MyAsyncMethod()
+class MyClass
 {
-    return 3;
+    public string MyProperty { get; set; }
+
+    public MyClass(string myProperty) // cursor inside myProperty
+    {
+        MyProperty = myProperty;
+    }
 }
 
-// Make method synchronous
+// Add null check
 
 // After
-int MyAsyncMethod()
+class MyClass
 {
-    return 3;
+    public string MyProperty { get; set; }
+
+    public MyClass(string myProperty)
+    {
+        MyProperty = myProperty ?? throw new ArgumentNullException(nameof(myProperty));
+    }
 }
 ```
 
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-### <a name="make-method-asynchronous"></a>Wprowadź asynchroniczne — metoda
-
-Korzystając z `await` / `Await` — słowo kluczowe wewnątrz metody, oczekuje się, że metoda sam jest oznaczona atrybutem `async` / `Async` — słowo kluczowe.  Jednak jeśli nie jest to wymagane, szybkie działanie będzie się, że będzie umożliwiają metody asynchronicznej.  Użyj **upewnij asynchronicznej metody/funkcja** opcji z menu Szybkie akcje.
+#### <a name="add-argument-name"></a>Dodaj nazwy argumentu
+| Właściwe języki |  Obsługiwana wersja |
+| -------------------- | ----------------  |
+| C# i Visual Basic| Visual Studio 2017 wersji 15 ustęp 3 |
 
 ```csharp
 // Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
+var date = new DateTime(1997, 7, 8);
 
-// Make method synchronous
+// Include argument name 'year' (include trailing arguments)
 
 // After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
+var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
+#### <a name="add-braces"></a>Dodaj nawiasy klamrowe
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0011 | C# | Visual Studio 2017 RTW |
 
-' Make method synchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-### <a name="remove-unnecessary-usingsimports"></a>Usuń zbędne deklaracje Using/importów
-
-**Usunąć niepotrzebne deklaracje Using/importów** szybkich akcji usunie wszystkie nieużywane `using` i `Import` instrukcji dla bieżącego pliku.  Po wybraniu tego elementu importów nieużywanej przestrzeni nazw zostaną natychmiast usunięte.
-
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Dodaj deklaracje Using/Importy dla typów zestawów odwołań, pakiety NuGet lub innych typów w rozwiązaniu
-
-Używanie typów znajduje się w innych projektów w rozwiązaniu będzie ona wyświetlana szybkie automatycznie, jednak inne muszą być włączone z **Narzędzia > Opcje > C#** lub **podstawowe > Zaawansowane** karty:
-
-* Sugeruj użycie/Importy dla typów w zestawach odwołania
-* Sugeruj użycie/Importy dla typów w pakietach NuGet
-
-Po włączeniu użycie typu w przestrzeni nazw, która jest on aktualnie zaimportowany, ale istnieje odwołanie do zestawu lub pakietu NuGet, zostanie utworzona instrukcji za pomocą import.
+Dodaj nawiasy klamrowe szybkich akcji opakowuje nawiasów klamrowych otaczających jednowierszowego `if` instrukcje.
 
 ```csharp
 // Before
-Debug.WriteLine("Hello");
+if (true)
+    return "hello,world";
 
-// using System.Diagnostics;
-
-// After
-using System.Diagnostics;
-
-Debug.WriteLine("Hello");
-```
-
-```vb
-' Before
-Debug.WriteLine("Hello")
-
-' Imports System.Diagnostics
+// Add braces
 
 // After
-Imports System.Diagnostics
-
-Debug.WriteLine("Hello")
+if (true) 
+{
+    return "hello,world";
+}
 ```
 
-### <a name="convert-to-interpolated-string"></a>Konwertuj na ciągu interpolowanym
+#### <a name="add-and-order-modifiers"></a>Dodaj i kolejność modyfikatorów
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0036 | C# i Visual Basic| Visual Studio 2017 wersji 15,5 cala |
+| IDE0040 | C# i Visual Basic| Visual Studio 2017 wersji 15,5 cala |
 
-[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) są łatwe express ciągi zawierające osadzone zmienne, podobnie jak  **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**  metody.  Ta akcja szybkie rozpoznaje przypadku ciągi połączonych lub przy użyciu **String.Format**, a zmiany użycie w ciągu interpolowanym.
+Te szybkie akcje zorganizowane modyfikatory, umożliwiając sortowania istniejących i Dodaj brakujące modyfikatory dostępności.
 
 ```csharp
 // Before
-int num = 3;
-string s = string.Format("My string with {0} in the middle", num);
+enum Color
+{
+    Red, White, Blue
+}
 
-// Convert to interpolated string
+// Add accessibility modifiers
 
 // After
-int num = 3;
-string s = $"My string with {num} in the middle";
+internal enum Color
+{
+    Red, White, Blue
+}
+```
+```csharp
+// Before
+static private int thisFieldIsPublic;
+
+// Order modifiers
+
+// After
+private static int thisFieldIsPublic;
+
 ```
 
-```vb
-' Before
-Dim num as Integer = 3
-Dim s as String = String.Format("My string with {0} in the middle", num)
+### <a id="transform"></a>Kod — przekształcenia
 
-' Convert to interpolated string
+#### <a name="convert-if-construct-to-switch"></a>Konwertuj **Jeśli** konstrukcji **przełącznika**
+| Właściwe języki |  Obsługiwana wersja |
+| -------------------- | ----------------  |
+| C# i Visual Basic| Visual Studio 2017 wersji 15 ustęp 3 |
 
-' After
-Dim num as Integer = 3
-Dim s As String = $"My string with {num} in the middle"
-```
-
-### <a name="remove-merge-conflict-markers"></a>Usuń znaczniki konfliktu scalania
-
-Te szybkie akcje umożliwiają rozwiązywanie konfliktów scalania "podejmując zmiany", które powoduje usunięcie powodujące konflikt kodu i znaczników. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja — Rozwiązywanie konfliktów scalania](../ide/media/vside-refactoring-merge-conflicts.png)
-
-### <a name="add-null-checks-for-parameters"></a>Dodaj sprawdzenia wartości null dla parametrów
-
-Ta akcja szybkiego umożliwia dodanie kontrolę w kodzie, aby sprawdzić, czy parametr jest pusty. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja — Dodawanie sprawdzania wartości null](../ide/media/vside-refactoring-nullcheck.png)
-
-### <a name="constructor-generator-improvements"></a>Ulepszenia generator — Konstruktor
-
-Podczas tworzenia konstruktora, ta akcja szybkiego umożliwia wybranie właściwości lub pól, aby wygenerować lub można wygenerować konstruktora z pustej treści. Można również użyć można dodać parametry do istniejących konstruktora z miejsce wywołania. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja - generowania konstruktorów](../ide/media/vside-refactoring-constructors.png)
-
-### <a name="remove-unused-variables"></a>Usuń nieużywane zmienne
-
-Ta akcja szybkiego umożliwia usunięcie zmiennych, które są zadeklarowane, ale nigdy używana w kodzie. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja — zmienne](../ide/media/vside-refactoring-unusedvars.png)
-
-### <a name="generate-overrides"></a>Generowanie zastąpień
-
-Ta akcja szybkiego umożliwia utworzenie zastąpienia z pusty wiersz w klasie lub strukturze. **Wybierz elementy członkowskie** okno dialogowe pozwala wybrać elementy członkowskie do przesłonięcia. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja - zastąpienia](../ide/media/vside-refactoring-overrides.png)
-
-![Refaktoryzacja - zastępuje — okno dialogowe](../ide/media/vside-refactoring-overrides-dialog.png)
-
-### <a name="change-base-for-numeric-literals"></a>Podstawa zmiany w literałach numerycznych
-
-Ta akcja szybkie pozwala konwersji literał liczbowy z jednego podstawowego systemu liczbowego. Na przykład można zmienić liczbę szesnastkową lub format binarny. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja — Zmień podstawowy](../ide/media/vside-refactoring-changebase1.png)
-
-![Refaktoryzacja — Zmień podstawowy](../ide/media/vside-refactoring-changebase2.png)
-
-### <a name="insert-digit-separators-into-literals"></a>Wstaw separatory cyfr do literałów
-
-Ta akcja szybkiego umożliwia dodawanie znaków separatora w wartości literału. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
-
-![Refaktoryzacja - separatory cyfr zmiany](../ide/media/vside-refactoring-separators.png)
-
-### <a name="convert-if-construct-to-switch"></a>Konwertuj **Jeśli** konstrukcji **przełącznika**
-
-Ta akcja szybkiego umożliwia konwertowanie **if to inaczej** konstrukcji **przełącznika** utworzenia. (Dostępne tylko w programie Visual Studio 2017 (wersja 15 ustęp 3 — wersja zapoznawcza).)
+Ta akcja szybkiego umożliwia konwertowanie **if to inaczej** konstrukcji **przełącznika** utworzenia.
 
 ```csharp
 // Before
@@ -430,7 +534,416 @@ Select Case obj
 End Select
 ```
 
-## <a name="see-also"></a>Zobacz także
+#### <a name="convert-to-interpolated-string"></a>Konwertuj na ciągu interpolowanym
+| Właściwe języki |  Obsługiwana wersja |
+| -------------------- | ----------------  |
+| C# w wersji 6.0 + i Visual Basic 14 + | Visual Studio 2017 RTW |
 
-[Style kodu i szybkie akcje](code-styles-and-quick-actions.md)  
-[Zapisywanie i refaktoryzacji kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) są łatwe express ciągi zawierające osadzone zmienne, podobnie jak  **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**  metody.  Ta akcja szybkie rozpoznaje przypadku ciągi połączonych lub przy użyciu **String.Format**, a zmiany użycie w ciągu interpolowanym.
+
+```csharp
+// Before
+int num = 3;
+string s = string.Format("My string with {0} in the middle", num);
+
+// Convert to interpolated string
+
+// After
+int num = 3;
+string s = $"My string with {num} in the middle";
+```
+```vb
+' Before
+Dim num as Integer = 3
+Dim s as String = String.Format("My string with {0} in the middle", num)
+
+' Convert to interpolated string
+
+' After
+Dim num as Integer = 3
+Dim s As String = $"My string with {num} in the middle"
+```
+
+#### <a name="use-object-initializers"></a>Inicjatory obiektów użycia
+| Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0017 | C# i Visual Basic | Visual Studio 2017 RTW |
+
+Ta akcja szybkie pozwala na użycie [obiekt inicjatory](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) zamiast wywoływania tne konstruktora o dodatkowe wiersze i instrukcje przypisania.
+
+```csharp
+// Before
+var c = new Customer();
+c.Age = 21;
+
+// Object initialization can be simplified
+
+// After
+var c = new Customer() { Age = 21 };
+```
+```vb
+' Before
+Dim c = New Customer()
+c.Age = 21
+
+' Object initialization can be simplified
+
+' After
+Dim c = New Customer() With {.Age = 21}
+```
+
+#### <a name="use-collection-initializers"></a>Inicjatory kolekcji użycia
+| Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0028 | C# i Visual Basic | Visual Studio 2017 RTW |
+
+Ta akcja szybkie pozwala używać [inicjatory kolekcji](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) zamiast wielu wywołań `Add` metody klasy.
+
+```csharp
+// Before
+var list = new List<int>();
+list.Add(1);
+list.Add(2);
+list.Add(3);
+
+// Collection initialization can be simplified
+
+// After
+var list = new List<int> { 1, 2, 3 };
+```
+```vb
+' Before
+Dim list = New List(Of Integer)
+list.Add(1)
+list.Add(2)
+list.Add(3)
+
+' Collection initialization can be simplified
+
+' After
+Dim list = New List(Of Integer) From {1, 2, 3}
+
+```  
+
+#### <a name="convert-auto-property-to-full-property"></a>Konwertuj właściwości automatycznej pełne właściwości
+|  Właściwe języki |  Obsługiwana wersja |
+|  -------------------- | ----------------  |
+| C# i Visual Basic | Visual Studio 2017 wersji 15,5 cala |
+
+Ta akcja szybkiego umożliwia konwertowanie właściwości automatycznej właściwością pełne i na odwrót.
+
+```csharp
+// Before
+private int MyProperty { get; set; }
+
+// Convert to full property
+
+// After
+private int MyProperty
+{
+    get { return _myProperty; }
+    set { _myProperty = value; } 
+}
+```
+```vb
+' Before
+Public Property Name As String
+
+' Convert to full property
+
+' After
+Private _Name As String
+
+Public Property Name As String
+    Get
+        Return _Name
+    End Get
+    Set
+        _Name = Value
+    End Set
+End Property
+
+```
+
+#### <a name="convert-block-body-to-expression-bodied-member"></a>Konwertuj treści bloku zabudowanych wyrażenie elementu członkowskiego
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0021-27 | C# W WERSJI 6.0 + | Visual Studio 2017 RTW |
+
+Ta akcja szybkiego umożliwia konwertowanie treści bloku zabudowanych wyrażenia elementów członkowskich dla metod, konstruktorów operatorów, właściwości, indeksatorów i metody dostępu.
+
+```csharp
+//Before
+class MyClass4
+{
+    private int _myProperty;
+
+    public int MyProperty
+    {
+        get { return _myProperty; }
+        set
+        {
+            _myProperty = value;
+        }
+    }
+
+    public MyClass4(int myProperty)
+    {
+        MyProperty = myProperty;
+    }
+
+    public void PrintProperty()
+    {
+        Console.WriteLine(MyProperty);
+    }
+}
+
+// Use expression body for accessors/constructors/methods
+
+// After
+class MyClass4
+{
+    private int _myProperty;
+
+    public int MyProperty
+    {
+        get => _myProperty;
+        set => _myProperty = value;
+    }
+
+    public MyClass4(int myProperty) => MyProperty = myProperty;
+
+    public void PrintProperty() => Console.WriteLine(MyProperty);
+}
+```
+
+#### <a name="convert-anonymous-function-to-local-function"></a>Konwertuj funkcji anonimowej funkcji lokalnej
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0039 | C# 7.0 + | Visual Studio 2017 wersji 15,5 cala |
+
+Ta akcja szybkie konwertuje funkcje anonimowe funkcje lokalne.
+
+```csharp 
+// Before
+Func<int, int> fibonacci = null;
+fibonacci = (int n) =>
+{
+    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+// Use local function
+
+// After
+int fibonacci(int n)
+{
+    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+}
+
+```
+
+#### <a name="convert-referenceequals-to-is-null"></a>Konwertuj `ReferenceEquals` do`is null`
+|  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0041 | C# 7.0 + | Visual Studio 2017 wersji 15,5 cala |
+
+Ta akcja szybkie sugeruje użycie [dopasowanie wzorca](/dotnet/csharp/pattern-matching) zamiast ```ReferenceEquals``` kodowania wzorca, jeśli jest to możliwe.
+
+```csharp
+// Before
+var value = "someString";
+if (object.ReferenceEquals(value, null))
+{
+    return;
+}
+
+// Use 'is null' check
+
+// After
+var value = "someString";
+if (value is null)
+{
+    return;
+}
+```
+
+#### <a name="introduce-pattern-matching"></a>Wprowadzenie dopasowanie wzorca
+| Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0020 | C# 7.0 + | Visual Studio 2017 RTW |
+| IDE0019 | C# 7.0 + | Visual Studio 2017 RTW |
+
+Ta akcja szybkie sugeruje użycie [dopasowanie wzorca](/dotnet/csharp/pattern-matching) rzutowania i sprawdzenia wartości null w języku C#.   
+
+```csharp
+// Before
+if (o is int) 
+{
+    var i = (int)o; 
+    ... 
+}
+
+// Use pattern matching
+
+// After
+if (o is int i) 
+{
+    ...
+}
+
+```
+```csharp
+// Before
+var s = o as string;
+if (s != null) 
+{
+    ...
+}
+
+// Use pattern matching
+
+// After
+if (o is string s) 
+{
+    ...
+}
+```
+
+#### <a name="change-base-for-numeric-literals"></a>Podstawa zmiany w literałach numerycznych
+| Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| C# 7.0 + i Visual Basic 14 + | Visual Studio 2017 wersji 15 ustęp 3 |
+
+Ta akcja szybkie pozwala konwersji literał liczbowy z jednego podstawowego systemu liczbowego. Na przykład można zmienić liczbę szesnastkową lub format binarny. 
+
+```csharp
+// Before
+int countdown = 2097152;
+
+// Convert to hex
+
+// After
+int countdown = 0x200000;
+```
+```vb
+' Before
+Dim countdown As Integer = 2097152
+
+' Convert to hex
+
+' After
+Dim countdown As Integer = &H200000
+```
+
+#### <a name="insert-digit-separators-into-literals"></a>Wstaw separatory cyfr do literałów
+| Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| C# 7.0 + i Visual Basic 14 + | Visual Studio 2017 wersji 15 ustęp 3 |
+
+Ta akcja szybkiego umożliwia dodawanie znaków separatora w wartości literału.  
+
+```csharp
+// Before
+int countdown = 1000000;
+
+// Separate thousands
+
+// After
+int countdown = 1_000_000;
+```
+```vb
+' Before
+Dim countdown As Integer = 1000000
+
+' Separate thousands
+
+' After
+Dim countdown As Integer = 1_000_000
+```
+
+#### <a name="use-explicit-tuple-names"></a>Użyj jawnego krotki nazw
+| Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0033 | C# 7.0 + i Visual Basic 15 + | Visual Studio 2017 RTW |
+
+Ta akcja szybkie identyfikuje obszary, w przypadku nazwa jawnej spójnej kolekcji można użyć zamiast Item1, Item2 itp.
+
+```csharp
+// Before
+(string name, int age) customer = GetCustomer();
+var name = customer.Item1;
+
+// Use explicit tuple name
+
+// After
+(string name, int age) customer = GetCustomer();
+var name = customer.name;
+```
+```vb
+' Before
+Dim customer As (name As String, age As Integer) = GetCustomer()
+Dim name = customer.Item1
+
+' Use explicit tuple name
+
+' After
+Dim customer As (name As String, age As Integer) = GetCustomer()
+Dim name = customer.name
+```
+
+#### <a name="use-inferred-names"></a>Użyj wywnioskować nazw
+| Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# 7.1 + | Visual Studio 2017 v. 15.5 |
+
+Jeśli użytkownicy mogą używać tych wskazują szybkie akcje wywnioskować nazwy elementów członkowskich typów anonimowych lub użyj C# 7.1 w wywnioskować nazwy elementów spójnej kolekcji.
+
+```csharp 
+// Before
+var anon = new { age = age, name = name };
+
+// Use inferred member name
+
+// After
+var anon = new { age, name };
+```
+```csharp
+// Before
+var tuple = (age: age, name: name);
+
+// Use inferred tuple element name
+
+// After
+var tuple = (age, name);
+
+```
+
+#### <a name="deconstruct-tuple-declaration"></a>Deconstruct krotki deklaracji
+| Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
+
+Ta akcja szybkiego umożliwia deconstruct deklaracje zmiennej spójnej kolekcji. 
+
+```csharp 
+// Before
+var person = GetPersonTuple();
+Console.WriteLine($"{person.name} {person.age}");
+
+(int x, int y) point = GetPointTuple();
+Console.WriteLine($"{point.x} {point.y}");
+
+//Deconstruct variable declaration
+
+// After
+var (name, age) = GetPersonTuple();
+Console.WriteLine($"{name} {age}");
+
+(int x, int y) = GetPointTuple();
+Console.WriteLine($"{x} {y}");
+```
+
+## <a name="see-also"></a>Zobacz też
+* [Style kodu i szybkie akcje](code-styles-and-quick-actions.md)  
+* [Pisanie i refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

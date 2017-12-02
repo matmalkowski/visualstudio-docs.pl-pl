@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>Przy użyciu rozszerzenia Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) zawiera graficzny interfejs użytkownika do odnalezienia szablony, wprowadź opcje szablonu oraz tworzenie projektów i pliki. Wchodzi w skład programu Visual Studio 2017 r, a można zainstalować oddzielnie we wcześniejszych wersjach programu Visual Studio.
 
-Cookiecutter wymaga Python 3.3 lub nowszych (32-bitowy lub 64-bitowych) lub Anaconda 3 4.2 i nowsze (32-bitowy lub 64-bitowe). Jeśli nie jest dostępny odpowiedni interpreter języka Python, Visual Studio, wyświetlane jest ostrzeżenie. Po zainstalowaniu interpreter języka Python, Visual Studio jest uruchomiona, kliknij przycisk Strona główna na pasku narzędzi Cookiecutter, aby wykryć interpretera nowo zainstalowany.
+Cookiecutter wymaga Python 3.3 lub nowszych (32-bitowy lub 64-bitowych) lub Anaconda 3 4.2 i nowsze (32-bitowy lub 64-bitowe). Jeśli nie jest dostępny odpowiedni interpreter języka Python, Visual Studio, wyświetlane jest ostrzeżenie. Po zainstalowaniu interpreter języka Python, Visual Studio jest uruchomiona, kliknij przycisk Strona główna na pasku narzędzi Cookiecutter, aby wykryć interpretera nowo zainstalowany. (Zobacz [środowiska Python](python-environments.md) więcej informacji o środowiskach ogólnie.)
 
 Po zakończeniu instalacji wybierz **Widok > Cookiecutter Explorer** aby otworzyć okno:
 

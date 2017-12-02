@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: f8830b24aa763a1a59830d0dd15231673f1dfac3
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 dla deweloperów platformy .NET
 
@@ -84,6 +84,8 @@ Jeśli pochodzących z innego środowiska IDE lub środowisko programistyczne, m
 - [Klawisze dostępu dla programu Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
+Poniżej przedstawiono popularne skróty programu Visual Studio. Zauważ, że niektóre rozszerzenia usunięcia powiązania powiązań kluczy programu Visual Studio domyślne i należy przywrócić powiązania klawiszy użycie poniższych poleceń. Aby przywrócić ustawienia domyślne programu Visual Studio z powiązań kluczy, przejdź do **Narzędzia > Import i eksport ustawień > zresetować wszystkie ustawienia**.
+
 | Skrót (wszystkie profile) | Polecenie | Opis |
 |-|-|-| 
 | **CTRL + T** | Przejdź do wszystkich | Przejdź do dowolnego pliku/typu/elementu członkowskiego/symbol deklaracji |
@@ -95,6 +97,6 @@ Jeśli pochodzących z innego środowiska IDE lub środowisko programistyczne, m
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **CTRL + F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
 | **CTRL + K, D** (profil domyślny) lub **Ctrl + E, D** (profil C#) | Format dokumentu | Czyści formatowanie naruszeń w pliku są oparte na nowym wierszem, odstępy i ustawienia wcięć |
-| **CTRL +\,E** (profil domyślny) lub **Ctrl + W, E** (profil C#) | Widok listy błędów | Zobacz wszystkie błędy w dokumencie, projektu lub rozwiązania |
+| **CTRL +\\, E** (profil domyślny) lub **Ctrl + W, E** (profil C#) | Widok listy błędów | Zobacz wszystkie błędy w dokumencie, projektu lub rozwiązania |
 
 

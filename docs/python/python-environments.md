@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="python-environments"></a>Środowiska Python
 
-Python w programie Visual Studio można łatwo zarządzać wieloma środowiska Python i łatwo przełączać je do różnych projektów. 
+Python w programie Visual Studio można łatwo zarządzać wieloma środowiska Python i łatwo przełączać je do różnych projektów.
 
-Uwaga: Jeśli jesteś nowym użytkownikiem Python w programie Visual Studio, zobacz temat następujące tematy najpierw jak to przedstawia dyskusji opiera się na nich:
+**Uwaga**: Jeśli jesteś nowym użytkownikiem Python w programie Visual Studio, zobacz następujące tematy najpierw jak to przedstawia dyskusji opiera się na nich:
 
 - [Praca z języka Python w programie Visual Studio](python-in-visual-studio.md)
 - [Instalowanie obsługi języka Python w programie Visual Studio](installation.md)
@@ -50,8 +49,8 @@ Wprowadzenie wideo, zobacz [Zarządzanie środowiska Python](https://mva.microso
 
 Z wyjątkiem z programu Visual Studio 2017 r, Python obsługi nie jest dostarczany z interpreter języka Python, należy zainstalować jedną z następujących czynności, aby uruchomić kod. Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa nowo zainstalowany tłumaczy i konfiguruje środowisko dla każdego. Jeśli nie wykrywa zainstalowane środowisko, zobacz [tworzenia środowiska dla istniejących interpreter](#creating-an-environment-for-an-existing-interpreter).
 
-| Interpreter | Opis | 
-| --- | --- | 
+| Interpreter | Opis |
+| --- | --- |
 | [Języka CPython](https://www.python.org/) | "Natywny" i najbardziej często używanych interpretera dostępne w wersjach 32-bitowych i 64-bitowych (32-bitowy zalecane). Zawiera najnowsze funkcje językowe, maksymalną zgodność pakiet języka Python, pełną obsługę debugowania i współdziałanie z [IPython](http://ipython.org/). Zobacz też: [użyć Python 2 lub Python 3?](http://wiki.python.org/moin/Python2orPython3). Należy pamiętać, że Visual Studio 2015 i starsze nie obsługują 3,6 Python i zapewnić błąd "Nieobsługiwana wersja języka python 3,6". Użyj języka Python w wersji 3.5 lub starszej zamiast tego. |
 | [IronPython](https://github.com/IronLanguages/main) | .NET stosowania Python, dostępne w wersjach 32-bitowych i 64-bitowych, podając podstawowe interop /F #/ Visual C dostęp do interfejsów API architektury .NET, Python standardowe debugowania (ale nie C++ debugowanie w trybie mieszanym) oraz mieszany IronPython / C# debugowania. IronPython, jednak nie obsługuje środowisk wirtualnych. | 
 | [Anaconda](https://www.continuum.io) | Danych otwartych nauki platformy obsługiwane przez Python i zawiera najnowszą wersję języka CPython i większość pakietów trudne do zainstalowania. Firma Microsoft zaleca, jeśli nie zdecydujesz inaczej. |
@@ -68,7 +67,7 @@ Aby otworzyć okno środowiska Python, wykonaj jedną z następujących czynnoś
 1. Kliknij prawym przyciskiem myszy **środowiska Python** projektu w Eksploratorze rozwiązań i wybierz **widok wszystkich środowisk języka Python**:
 
     ![Widok wszystkich środowisk polecenia w Eksploratorze rozwiązań](media/environments-view-all.png)
-    
+
 W obu przypadkach jako element równorzędny karty do Eksploratora rozwiązań zostanie wyświetlone okno środowiska Python.
 
 ![Okno środowiska Python](media/environments-default-view.png)
@@ -87,7 +86,7 @@ W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka C
 
 Visual Studio zwykle lokalizuje zainstalowanych interpreter języka Python sprawdzając rejestru (następujące [514 program ten - Python rejestracji w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/)). Jednak program Visual Studio może nie być po zainstalowaniu interpretera w niestandardowy sposób. W takich przypadkach możesz wskazać Visual Studio bezpośrednio do interpretera w następujący sposób:
 
-1. Wybierz **+ niestandardowy...**  w oknie środowisk powoduje utworzenie nowego środowiska i otwiera [ **Konfiguruj** kartę](#configure-tab) opisane poniżej.)
+1. Wybierz **+ niestandardowy...**  w [okno środowiska Python](#managing-python-environments-in-visual-studio), co powoduje utworzenie nowego środowiska i otwiera [ **Konfiguruj** kartę](#configure-tab) opisane poniżej.)
 
     ![Domyślny widok dla nowego środowiska niestandardowych](media/environments-custom-1.png)
 
@@ -130,7 +129,6 @@ Skrypty uruchamiania zawierają kod, który okno interaktywne ładuje i uruchami
 
 1. **Skryptów** kontroli w **Narzędzia > Opcje > Narzędzia Python Tools > interakcyjne Windows** kartę (zobacz [Opcje interakcyjne systemu windows](options.md#interactive-windows-options)) należy podać dodatkowe folder służący do uruchamiania skryptów, które są załadowane, a następnie uruchomienie we wszystkich środowiskach. Jednak ta funkcja nie działa w chwili obecnej.
 
-
 ### <a name="configure-tab"></a>Karta Konfigurowanie
 
 Jeśli wyświetlane, zawiera szczegółowe informacje, zgodnie z opisem w poniższej tabeli. Jeśli na tej karcie nie jest obecny, oznacza to, czy program Visual Studio automatycznie zarządza wszystkie szczegóły.
@@ -166,7 +164,6 @@ Wybieranie **zawsze podniesienia uprawnień podczas instalowania lub usuwania pa
 
 W tym takie same opcje karcie, możesz również wybrać **pip są zawsze uruchamiane jako administrator** do pomijania okna dialogowego dla wszystkich środowisk. Zobacz [opcje — karta Ogólne](options.md#general-options).
 
-
 ### <a name="intellisense-tab"></a>Karta IntelliSense
 
 Wskazuje bieżący stan bazy danych uzupełniania IntelliSense:
@@ -179,7 +176,7 @@ Biblioteki, dla których nie zostały skompilowane danych są oznaczone ikoną z
 
 ## <a name="global-environments"></a>Globalne środowisk
 
-Globalne (lub systemowe) środowiska są dostępne do wszystkich projektów na maszynie. Visual Studio automatycznie zazwyczaj wykrywa globalne środowisk, i można je w oknie środowiska Python. Jeśli nie można dodać środowisku ręcznie, jak opisano wcześniej w [środowiska Python zarządzania w programie Visual Studio](#managing-python-environments-in-visual-studio).
+Globalne (lub systemowe) środowiska są dostępne do wszystkich projektów na maszynie. Visual Studio automatycznie zazwyczaj wykrywa środowisk globalne i mogą być wyświetlane w [okno środowiska Python](#managing-python-environments-in-visual-studio). Jeśli nie możesz dodać środowisku ręcznie za pomocą tego samego okna.
 
 Visual Studio korzysta z domyślnego środowiska dla wszystkich nowych projektów wykonywania, debugowanie, sprawdzanie składni, wyświetlania, importowania i zakończeń elementu członkowskiego i innych zadań, które wymagają środowiska. Zmiana domyślnego środowiska ma wpływ na wszystkie projekty, które nie były [specyficznego dla projektu środowiska](#project-specific-environments) dodany, zgodnie z opisem.
 
@@ -208,7 +205,6 @@ Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowisko, wy
 
 > [!Tip]
 > Typowe sytuacji, gdy pip nie można zainstalować pakietu to pakietu zawierającego kod źródłowy dla natywnych składników w `*.pyd` plików. Bez wymagana wersja programu Visual Studio pip nie można skompilować tych składników. Komunikat o błędzie wyświetlany w tej sytuacji `error: Unable to find vcvarsall.bat`. `easy_install`często jest w stanie pobrać wstępnie skompilowanych plików binarnych, możesz również pobrać odpowiedni kompilatora dla starszych wersji języka Python z [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Aby uzyskać więcej informacji, zobacz [jak rozwiązać problemy z "nie można odnaleźć vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) na Python tools blogu zespołu.
-
 
 ## <a name="virtual-environments"></a>Środowiska wirtualne
 
@@ -242,11 +238,11 @@ Współużytkuje projektem, przy użyciu systemu kompilacji, czy jest planowane 
 
 Z technicznego punktu widzenia nazwy pliku może służyć do śledzenia wymagania (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale Visual Studio zapewnia obsługę określonych `requirements.txt`:
 
-- Jeśli został załadowany projekt, który zawiera `requirements.txt` i chcesz zainstalować wszystkie pakiety wymienione w pliku, kliknij prawym przyciskiem myszy projekt i wybierz **Zainstaluj z pliku requirements.txt**:
+- Jeśli został załadowany projekt, który zawiera `requirements.txt` i chcesz, aby zainstalować te pakiety wymienione w tym pliku, rozwiń węzeł **środowiska Python** w węźle **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy a następnie wybierz węzeł środowiska **Zainstaluj z pliku requirements.txt**:
 
     ![Zainstaluj z pliku requirements.txt](media/environments-requirements-txt-install.png)
 
-- Jeśli masz wszystkie niezbędne pakiety zainstalowane w projektach można kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz **Generuj plik requirements.txt** można utworzyć niezbędnego pliku. Jeśli plik już istnieje, zostanie wyświetlony monit o jak go zaktualizować:
+- Jeśli masz już wszystkie niezbędne pakiety zainstalowane w projekcie, należy kliknąć prawym przyciskiem myszy środowisko, w Eksploratorze rozwiązań i wybrać **Generuj plik requirements.txt** można utworzyć niezbędnego pliku. Jeśli plik już istnieje, zostanie wyświetlony monit o jak go zaktualizować:
 
     ![Opcje pliku requirements.txt aktualizacji](media/environments-requirements-txt-replace.png)
 
