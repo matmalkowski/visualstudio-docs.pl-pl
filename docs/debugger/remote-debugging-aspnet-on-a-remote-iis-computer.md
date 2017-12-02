@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -26,7 +26,7 @@ Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zains
 W tym przewodniku opisano sposób konfigurowania i konfigurowanie programu Visual Studio 2017 platformy ASP.NET Core, wdrażanie usług IIS i dołączyć debuger zdalny z programu Visual Studio. Do zdalnego debugowania ASP.NET 4.5.2, zobacz [zdalnego debugowania ASP.NET na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Aby uzyskać więcej informacji, zobacz [zdalnego debugowania na platformie Azure](../debugger/remote-debugging-azure.md).
 
 Procedury te zostały przetestowane na tych konfiguracji serwera:
-* Windows Server 2012 R2 i IIS 8.5
+* Windows Server 2012 R2 i IIS 8
 * Windows Server 2016 i IIS 10
 
 ## <a name="requirements"></a>Wymagania
@@ -35,7 +35,7 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Tworzenie aplikacji platformy ASP.NET Core na komputerze programu Visual Studio 2017 r. 
 
-1. Tworzenie nowej aplikacji platformy ASP.NET Core. (**Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C# > sieci Web > Aplikacja sieci Web platformy ASP.NET Core (.NET Core)** .
+1. Tworzenie nowej aplikacji platformy ASP.NET Core. (**Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C# > sieci Web > Aplikacja sieci Web platformy ASP.NET Core (.NET Core)**).
 
     W **platformy ASP.NET Core** sekcji szablonów, wybierz opcję **aplikacji sieci Web**.
 
@@ -58,13 +58,13 @@ W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy doda
 - witrynie Download.microsoft.com
 - Visual Studio —
 
-Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek.
+Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
 Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. W większości przypadków te dodatkowe zasoby nie są wymagane do zainstalowania oprogramowania.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalowanie platformy ASP.NET Core w systemie Windows Server
 
-1. Zainstaluj [.NET Core systemu Windows serwer obsługujący](https://go.microsoft.com/fwlink/?linkid=844461) pakietu przez system operacyjny. Pakiet instaluje podstawowego środowiska wykonawczego platformy .NET, biblioteka programu .NET Core i moduł platformy ASP.NET Core.
+1. Zainstaluj [.NET Core systemu Windows serwer obsługujący](https://aka.ms/dotnetcore-2-windowshosting) pakietu przez system operacyjny. Pakiet instaluje podstawowego środowiska wykonawczego platformy .NET, biblioteka programu .NET Core i moduł platformy ASP.NET Core. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [publikowania w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Jeśli system nie ma połączenia internetowego, Uzyskaj i zainstaluj  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  przed zainstalowaniem pakietu Hosting .NET Core systemu Windows Server.
@@ -139,7 +139,6 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
 5. Sprawdź **Pokaż procesy wszystkich użytkowników**.
 6. Wpisz nazwę procesu, aby szybko znaleźć literą **dotnet.exe** (dla platformy ASP.NET Core).
-    >Uwaga: Dla aplikacji platformy ASP.NET Core poprzednia nazwa procesu jest dnx.exe.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 
@@ -148,6 +147,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwę komputera zdalnego >**.
     
     Powinna zostać wyświetlona strona sieci web ASP.NET.
+
 9. W uruchomionej aplikacji ASP.NET, kliknij łącze, aby **o** strony.
 
     Punkt przerwania powinien trafienie w programie Visual Studio.
@@ -157,7 +157,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 W większości konfiguracji są otwarte porty wymagane przez instalację programu ASP.NET i zdalnego debugera. Jednak należy sprawdzić, czy porty są otwarte.
 
 > [!NOTE]
-> Na maszynie Wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> Na maszynie Wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Wymagane porty:
 

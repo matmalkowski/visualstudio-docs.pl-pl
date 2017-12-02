@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Migawki widoku przy użyciu zwrotnego krok IntelliTrace
 Krok zwrotnego IntelliTrace automatycznie tworzy migawkę aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawki umożliwiają wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości. IntelliTrace krok wstecz może zaoszczędzić czas podczas chcesz zobacz poprzedni stan aplikacji, ale nie chcesz uruchomić ponownie debugowania lub Utwórz ponownie stan żądanej aplikacji.
@@ -38,7 +38,7 @@ Ze względu na wydajność migawki nie są brane podczas wykonywania kroków bar
 
 ## <a name="navigate-and-view-snapshots"></a>Nawigacja i wyświetlanie migawek
 
-Można przechodzić między zdarzeniami przy użyciu **krok do tyłu** i **krok do przodu** przycisków na pasku narzędzi debugowania. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **okno narzędzia diagnostyczne**. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
+Można przechodzić między zdarzeniami przy użyciu **krok z poprzednimi wersjami (Alt + [)** i **krok do przodu (Alt +])** przycisków na pasku narzędzi debugowania. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **okno narzędzia diagnostyczne**. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
 
 ![Krok wstecz i przekazywać je przycisków](../debugger/media/intellitrace-step-back-icons-description.png "krok do tyłu i do przodu krok przycisków")
 

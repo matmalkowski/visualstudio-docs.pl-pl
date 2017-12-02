@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: dcac05939cd7f16de3bc5b6748134b52ac4f80d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/29/2017
 ---
 1.  Na urządzeniu lub serwera komputera, na którym chcesz debugować (zamiast komputerze z programem Visual Studio) Pobierz poprawną wersję narzędzi remote Tools.
 
     |Wersja|Łącze|Uwagi|
     |-|-|-|
     |Visual Studio 2017 Update 4|[Zdalne narzędzia](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x86 lub x64). Dla starszych przeglądarek, użyj następujących linków bezpośrednich: [narzędzia zdalnej (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409) i [narzędzia zdalnej (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409).|
-    |Visual Studio 2017 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Jeśli to konieczne, ponownie otwórz łącza.|
-    |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Jeśli to konieczne, ponownie otwórz łącza.|
-    |Visual Studio 2015 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Jeśli to konieczne, ponownie otwórz łącza.|
+    |Visual Studio 2017 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Dla starszych przeglądarek należy dodać nowy zaufanych witryn, jeśli zostanie wyświetlony monit.|
+    |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Dla starszych przeglądarek należy dodać nowy zaufanych witryn, jeśli zostanie wyświetlony monit.|
+    |Visual Studio 2015 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Dla starszych przeglądarek należy dodać nowy zaufanych witryn, jeśli zostanie wyświetlony monit.|
     |Visual Studio 2013|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2013|
     |Visual Studio 2012|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2012|
   

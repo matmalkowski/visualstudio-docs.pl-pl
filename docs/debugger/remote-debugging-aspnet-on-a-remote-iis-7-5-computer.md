@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -26,7 +26,7 @@ Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zains
 W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 ASP.NET MVC 4.5.2, wdrażanie usług IIS i uruchomić zdalnego debugera z programu Visual Studio. Do zdalnego debugowania ASP.NET Core, zobacz [zdalnego debugowania ASP.NET Core na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Aby uzyskać więcej informacji, zobacz [zdalnego debugowania na platformie Azure](../debugger/remote-debugging-azure.md).
 
 Procedury te zostały przetestowane na tych konfiguracji serwera:
-* Windows Server 2012 R2 i IIS 8.5 (dla systemu Windows Server 2008 R2 kroki serwera są różne)
+* Windows Server 2012 R2 i IIS 8 (dla systemu Windows Server 2008 R2 kroki serwera są różne)
 
 ## <a name="requirements"></a>Wymagania
 
@@ -54,7 +54,7 @@ W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy doda
 - witrynie Download.microsoft.com
 - Visual Studio —
 
-Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek.
+Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
 Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. W większości przypadków te dodatkowe zasoby nie są wymagane do zainstalowania oprogramowania.
 

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4ad0cdadcb3d56af55af629b853e660dc9d86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core usług IIS i platformy Azure w programie Visual Studio 2017 r.
 Możesz wdrożyć aplikację sieci Web programu ASP.NET na komputerze z systemem Windows Server z usługami IIS i skonfigurować go do zdalnego debugowania. W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.
@@ -47,7 +47,7 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Tworzenie aplikacji platformy ASP.NET Core na komputerze programu Visual Studio 2017 r. 
 
-1. Tworzenie nowej aplikacji platformy ASP.NET Core. (Wybierz **Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C# > sieci Web > Aplikacja sieci Web platformy ASP.NET Core (.NET Core)**)
+1. Tworzenie nowej aplikacji platformy ASP.NET Core. (Wybierz **Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C# > sieci Web > Aplikacja sieci Web platformy ASP.NET Core (.NET Core)**).
 
     W **platformy ASP.NET Core** sekcji szablonów, wybierz opcję **aplikacji sieci Web**.
 
@@ -59,7 +59,7 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Zdalne debugowanie platformy ASP.NET Core w usłudze aplikacji Azure
 
-W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do pełni wystąpienia usług IIS. Jednak jest ustawień konfiguracji programu IIS i nie można go dostosować. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Umożliwia dostosowywanie usług IIS, należy spróbować debugowania [maszyny Wirtualnej Azure](#BKMK_azure_vm).) 
+W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do pełni wystąpienia usług IIS. Jednak jest ustawień konfiguracji programu IIS i nie można go dostosować. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Umożliwia dostosowywanie usług IIS, należy spróbować debugowania [maszyny Wirtualnej Azure](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Aby wdrożyć aplikację i zdalnego debugowania
 
@@ -67,7 +67,7 @@ W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do 
 
 2. Wybierz **Microsoft Azure App Service** z **publikowania** okno dialogowe, wybierz **Utwórz nowy**, a następnie postępuj zgodnie z monitami, aby opublikować.
 
-    Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 3. W **Eksploratora serwera**, kliknij prawym przyciskiem myszy w wystąpieniu usługi aplikacji i wybierz **dołączyć debuger**.
 
@@ -81,7 +81,7 @@ W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do 
 
 Można utworzyć Azure maszyny Wirtualnej systemu Windows Server i następnie zainstalować i skonfigurowanie usług IIS i innych składników oprogramowania wymagane. Trwa dłużej niż wdrażanie w usłudze Azure App Service i wymaga wykonaj pozostałe kroki w tym samouczku.
 
-Najpierw wykonaj wszystkie kroki opisane w [instalacji i uruchamiania usług IIS](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role).
+Najpierw wykonaj wszystkie kroki opisane w [instalacji i uruchamiania usług IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
 
 Podczas otwierania portu 80 w grupie zabezpieczeń sieci, należy również otworzyć portu 4022 dla zdalnego debugera. Dzięki temu nie trzeba otworzyć go później.
 
@@ -94,13 +94,13 @@ W zależności od ustawień zabezpieczeń przeglądarki go zapisać czasu, nale�
 - witrynie Download.microsoft.com
 - Visual Studio —
 
-Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek.
+Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
 Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. W większości przypadków te dodatkowe zasoby nie są wymagane do zainstalowania oprogramowania.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Instalowanie platformy ASP.NET Core w systemie Windows Server
 
-1. Zainstaluj [.NET Core systemu Windows serwer obsługujący](https://go.microsoft.com/fwlink/?linkid=844461) pakietu przez system operacyjny. Instaluje pakiet podstawowego środowiska wykonawczego platformy .NET, biblioteka programu .NET Core i moduł platformy ASP.NET Core.
+1. Zainstaluj [.NET Core systemu Windows serwer obsługujący](https://aka.ms/dotnetcore-2-windowshosting) pakietu przez system operacyjny. Instaluje pakiet podstawowego środowiska wykonawczego platformy .NET, biblioteka programu .NET Core i moduł platformy ASP.NET Core. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [publikowania w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Jeśli system nie ma połączenia internetowego, Uzyskaj i zainstaluj  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  przed zainstalowaniem pakietu Hosting .NET Core systemu Windows Server.
@@ -209,7 +209,7 @@ Jeśli nie używasz narzędzia Web Deploy, należy opublikować i wdrażanie apl
 
 W większości konfiguracji są otwarte porty wymagane przez instalację programu ASP.NET i zdalnego debugera. Jednak w przypadku rozwiązywania problemów wdrożenia aplikacji znajduje się za zaporą, może być konieczne Sprawdź, czy porty są otwarte.
 
-Na maszynie Wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+Na maszynie Wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Wymagane porty:
 

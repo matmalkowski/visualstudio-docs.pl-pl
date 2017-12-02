@@ -17,24 +17,39 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3f3b54e19d8418f35a733b73ea0616b53bd42ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9f6f1e4739922a2d73999b36c0dc66e6069a6d6b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Porady: Dodawanie zależności do pakietu VSIX
-Można skonfigurować wdrożenie pakietu VSIX, która instaluje wszystkie zależności, które nie są już istnieje na komputerze docelowym. W tym celu należy uwzględnić zależności pliku VSIX do pliku source.extension.vsixmanifest.  
-  
-#### <a name="to-add-a-dependency"></a>Aby dodać zależność  
-  
-1.  Otwórz plik Source.Extension.vsixmanifest,a w **projekt** widoku. Przejdź do **zależności** i kliknij polecenie **nowy**.  
-  
-2.  Aby dodać zainstalowanego rozszerzenia: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **zainstalowane rozszerzenie** , a następnie w **nazwa**, zaznacz rozszerzenie na liście.  
-  
-3.  Aby dodać inny VSIX, który nie jest zainstalowany:: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **pliku w systemie plików** , a następnie użyj **Przeglądaj** przycisk, aby wybrać pliku VSIX.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Struktura pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Przygotowywanie rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+
+Można skonfigurować wdrożenie pakietu VSIX, która instaluje wszystkie zależności, które nie są już istnieje na komputerze docelowym. W tym celu należy uwzględnić zależności pliku VSIX do pliku source.extension.vsixmanifest.
+
+## <a name="to-add-a-dependency"></a>Aby dodać zależność
+
+1. Otwórz plik Source.Extension.vsixmanifest,a w **projekt** widoku. Przejdź do **zależności** i kliknij polecenie **nowy**.
+
+2. Aby dodać zainstalowanego rozszerzenia: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **zainstalowane rozszerzenie** , a następnie w **nazwa**, zaznacz rozszerzenie na liście.
+
+3. Aby dodać inny VSIX, który nie jest zainstalowany:: w **Dodawanie nowych zależności** okno dialogowe, wybierz opcję **pliku w systemie plików** , a następnie użyj **Przeglądaj** przycisk, aby wybrać pliku VSIX.
+
+## <a name="require-a-specific-visual-studio-release"></a>Wymaga określonej wersji programu Visual Studio
+
+Jeśli rozszerzenie wymaga określonej wersji programu Visual Studio 2017, na przykład zależy od funkcji wydane w ramach 15 ustęp 3, można określić numer kompilacji w Twojej VSIX **InstallationTarget**. Na przykład wersji 15 ustęp 3 ma numer kompilacji programu "15.0.26730.3". Widać mapowania wydań numery kompilacji [tutaj](../install/visual-studio-build-numbers-and-release-dates.md). Należy pamiętać, że za pomocą numeru wersji 15 ustęp "3" może nie działać poprawnie.
+
+Jeśli rozszerzenie wymaga 15 ustęp 3 lub nowszym, czy zadeklarować **wersji InstallationTarget** jako [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```
+
+VSIXInstaller wykryje wcześniejszych wersji programu Visual Studio i poinformować użytkownika, że późniejszą aktualizację jest wymagana.
+
+
+## <a name="see-also"></a>Zobacz też
+
+ [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b) [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md) [przygotowywania rozszerzeń dla wdrożenia Instalatora Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

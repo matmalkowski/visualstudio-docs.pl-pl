@@ -11,18 +11,19 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2972cfe2ea4481ab8f5eab6284277615d1d64a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f7193722e7ec1bee7c63e2495ed2d07155cc663b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="generate-an-override-in-c"></a>Generowanie zastąpienia w języku C# #
-**Co:** umożliwia natychmiast generowania kodu dla dowolnej metody, która może zostać zastąpiona po klasie podstawowej. 
 
-**Kiedy:** chcesz zastąpić metodę klasy podstawowej i automatycznie generowania podpisu.  
+**Co:** umożliwia natychmiast generowania kodu dla dowolnej metody, która może być zastąpiona z klasy podstawowej.
 
-**Dlaczego:** można napisać podpis metody samodzielnie, jednak ta funkcja zostanie automatycznie generowania podpisu. 
+**Kiedy:** chcesz zastąpić metodę klasy podstawowej i automatycznie generowania podpisu.
+
+**Dlaczego:** można napisać podpis metody samodzielnie, jednak ta funkcja zostanie automatycznie generowania podpisu.
 
 **Jak:**
 
@@ -34,11 +35,12 @@ ms.lasthandoff: 10/31/2017
 
    >[!TIP]
    >* Użyj ikony właściwości ![Ikona właściwości](media/override_property.png) Aby wyświetlić lub ukryć właściwości na liście.
-   >* Użyj ikony — metoda ![Ikona właściwości](media/override_method.png) Aby wyświetlić lub ukryć metod na liście.
+   >* Użyj ikony — metoda ![Ikona — Metoda](media/override_method.png) Aby wyświetlić lub ukryć metod na liście.
 
 1. Wybrana metoda lub właściwość zostanie dodany do klasy jako przesłonięcie, gotowy do zaimplementowania.
 
    ![Zastąpienie wyników](media/override_result.png)
 
-## <a name="see-also"></a>Zobacz też  
-[Generowanie kodu (C#)](../code-generation-csharp.md)  
+## <a name="see-also"></a>Zobacz także
+
+[Generowanie kodu (C#)](../code-generation-csharp.md)

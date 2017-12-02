@@ -13,11 +13,11 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0fe5627c7307b2d06e894a236d60f4188e6cf427
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c603e0c235b37c63719abb8e9a5e6dbb3ca3e652
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="msbuild-properties"></a>Właściwości programu MSBuild
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.  
@@ -92,7 +92,7 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   
- Właściwości globalne można także ustawiać i modyfikować dla projektów podrzędnych w kompilacjach wieloprojektowych. Służy do tego atrybut `Properties` zadania programu MSBuild. Właściwości globalne również są przekazywane do projektów podrzędnych, chyba że `RemoveProperties` atrybut zadanie programu MSBuild służy do określania listy proerties nie do przesyłania dalej. Aby uzyskać więcej informacji, zobacz [zadanie programu MSBuild](../msbuild/msbuild-task.md).
+ Właściwości globalne można także ustawiać i modyfikować dla projektów podrzędnych w kompilacjach wieloprojektowych. Służy do tego atrybut `Properties` zadania programu MSBuild. Właściwości globalne również są przekazywane do projektów podrzędnych, chyba że `RemoveProperties` atrybut zadanie programu MSBuild służy do określania listy właściwości nie można przesłać dalej. Aby uzyskać więcej informacji, zobacz [zadanie programu MSBuild](../msbuild/msbuild-task.md).
   
  Jeśli właściwość zostanie określona za pomocą atrybutu `TreatAsLocalProperty` w znaczniku projektu, wartość właściwości globalnej nie zastępuje wartości właściwości ustawionej w pliku projektu. Aby uzyskać więcej informacji, zobacz [Project — Element (MSBuild)](../msbuild/project-element-msbuild.md) i [porady: tworzenie tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
@@ -145,4 +145,4 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
  [Porady: odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
  [Porady: tworzenie tych samych plików źródłowych z różnymi opcjami](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md)   
- [Property — Element (MSBuild)](../msbuild/property-element-msbuild.md)
+ [Property, element (MSBuild)](../msbuild/property-element-msbuild.md)

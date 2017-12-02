@@ -10,13 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools dla AI
+# <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
 Visual Studio Tools dla AI to rozszerzenie do tworzenia, testowania i wdrażania głębokie Learning / AI rozwiązania. Go bezproblemowo integruje się z usługi Azure Machine Learning możliwości niezawodne eksperymenty, w tym między innymi do przesyłania zadań szkolenia modelu niewidocznie do obliczeń różnych obiektów docelowych i przygotowania danych. Ponadto zapewnia obsługę niestandardowych metryk i uruchom historii śledzenia, włączanie powtarzalności nauki danych i inspekcji. Enterprise gotowe współpracy, Zezwalaj, aby bezpiecznie pracować nad projektem innym osobom.
 
@@ -31,6 +31,8 @@ Używać funkcji wydajności programu Visual Studio w celu przyspieszenia innowa
 Visual Studio Tools dla AI jest zintegrowany z usługi Azure Machine Learning, aby łatwiej przeglądać galerii eksperymentów przykładowych przy użyciu CNTK, TensorFlow, MMLSpark i inne. 
 
 ![Przykładowy Eksplorator](media\about\gallery.png)
+
+[Dowiedz się więcej na temat tworzenia projektów z galerii próbki](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Skalowanie w poziomie bezpośrednich uczenia modelu szkolenia i/lub inferencing do chmury
 To rozszerzenie ułatwia uczenia modele na komputerze lokalnym lub za pomocą naszych integracji z usługi Azure Machine Learning można przesłać zadania do chmury. Można przesłać zadania do różnych obliczeniowe elementy docelowe, takich jak klastry Spark, maszyny wirtualne Azure procesora GPU i inne  
