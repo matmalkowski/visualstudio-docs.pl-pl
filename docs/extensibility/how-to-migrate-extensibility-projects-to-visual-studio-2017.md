@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Porady: Migracja rozszerzalności projekty do programu Visual Studio 2017 r
 
@@ -102,11 +102,6 @@ Zamiast bezpośredniego edytowania pliku XML manifestu, można użyć nowej **wy
   ![Dodaj wstępnie wymaganego programu roslyn](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Jeśli migracja z wersji zapoznawczej 4 lub Preview 5
-
-* Zastąp `SetupDependencies` z `Prerequisites` i przenosić elementy z `Installer` elementu. `Prerequisites`teraz znajduje się bezpośrednio wewnątrz `PackageManifest` elementu.
-* [Opcjonalnie] Usuń `GenerateVsixV3` elementu. (Było to wymagane w wersji zapoznawczej 5 tylko.) `GenerateVsixV3` Elementu zostaną zignorowane w wersjach poza Preview 5.
 
 ## <a name="update-debug-settings-for-project"></a>Zaktualizuj ustawienia debugowania dla projektu
 
@@ -197,3 +192,15 @@ Przykłady:
 
 * Jeśli korzystasz z rozszerzenia debugera i dowiedzieć się, że projekt zawiera odwołanie do VSDebugEng.dll i VSDebug.dll, kliknij przycisk filtru w **plików binarnych / nazwy plików** nagłówka.  Wyszukaj "VSDebugEng.dll", a następnie kliknij przycisk OK.  Następnie kliknij przycisk filtru w **plików binarnych / nazwy plików** ponownie nagłówka i wyszukaj "VSDebug.dll".  Zaznacz pole wyboru "Dodaj bieżące zaznaczenie do filtru" i wybierz przycisk OK.  Teraz wyglądać za pośrednictwem **nazwa składnika** można znaleźć składnika, które najbardziej powiązany typ rozszerzenia. W tym przykładzie wybrano czy Just-In-Time debugera i dodaj go do Twojego vsixmanifest.
 * Jeśli wiesz, że projektu dotyczy elementów debugera, można wyszukiwać na "debugera" w polu wyszukiwania filtr jakie składniki zawierają debugera w swoim imieniu.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Określanie wersji programu Visual Studio 2017 r.
+
+Jeśli rozszerzenie wymaga określonej wersji programu Visual Studio 2017, na przykład zależy od funkcji wydane w ramach 15 ustęp 3, należy określić numer kompilacji w Twojej VSIX **InstallationTarget**. Na przykład wersji 15 ustęp 3 ma numer kompilacji programu "15.0.26730.3". Widać mapowania wydań numery kompilacji [tutaj](../install/visual-studio-build-numbers-and-release-dates.md). Za pomocą numeru wersji 15 ustęp "3" nie będzie działać prawidłowo.
+
+Jeśli rozszerzenie wymaga 15 ustęp 3 lub nowszym, czy zadeklarować **wersji InstallationTarget** jako [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```
