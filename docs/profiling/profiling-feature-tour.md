@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Przegląd funkcji profilowania
 
@@ -152,7 +152,7 @@ Poniżej przedstawiono listę różnych narzędzi, których program Visual Studi
 |Narzędzia wydajności|System Windows desktop|Magazynu uniwersalnego systemu Windows|Podstawowe ASP.NET/ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak|  
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak|  
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak (nie dla platformy .NET Core Core/ASP.NET)|  
 |[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak|  
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|  
 |[Wskazówek](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|  

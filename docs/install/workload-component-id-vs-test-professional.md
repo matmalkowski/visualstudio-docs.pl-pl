@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.openlocfilehash: c6f4843c6bb1b6811e38668207cd0ace5c5dd445
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 3f3ca9ec09572a46e61b2c47d8e49cc7b3d729e5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 składników katalogu
 
@@ -42,8 +42,8 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | Wymagane
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26606.0 | Wymagane
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.27005.2 | Wymagane
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.27005.2 | Wymagane
 
 ## <a name="unaffiliated-components"></a>Odłączony składników
 
@@ -64,8 +64,8 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Visual Studio obciążenia i składnik identyfikatorów](workload-and-component-ids.md)
+* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Przykłady parametru wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie w trybie offline instalację programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
+  * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
+* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 6879d29b1e8c36ce9456fc44cf738a57603a6d50
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: cfcb85704302303704ef9b4bb1affc60031793d9
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core za pomocą programu Visual Studio
 
@@ -74,6 +74,9 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 1. W górnej części witryny sieci web, wybierz **o** wyświetlić komunikatu dodanych w katalogu `OnGet()` metodę **o** strony.
 
 1. Zamknij przeglądarkę sieci web.
+
+> [!NOTE]
+> Jeśli zostanie wyświetlony komunikat o błędzie informujący o **nie można nawiązać połączenia z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go przy użyciu **Uruchom jako administrator** opcji z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
 
 Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o środowiska IDE programu Visual Studio. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.
 

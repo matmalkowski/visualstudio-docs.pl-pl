@@ -16,18 +16,17 @@ helpviewer_keywords:
 - XML comments
 - XML documentation, generating
 - outlining options [C#]
-- outlining options [J#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
 caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7537b4fc3fec90808c6bdc4a982fe3b7ff37a1d5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: bb1c757ed5c266c74ca14e0b990528844bad0fb2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 To okno dialogowe służy do modyfikowania ustawienia formatowania edytora, refaktoryzacji kodu i komentarze dokumentacji XML dla programu Visual C#. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu** folder, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Zaawansowane**.  
@@ -81,4 +80,4 @@ Gdy kursor znajduje się wewnątrz symbolu, lub kliknij symbol, są wyróżnione
 ## <a name="see-also"></a>Zobacz też  
  [Komentarze dokumentacji XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)   
- [Visual C#, IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [Funkcja IntelliSense dla języka Visual C#](../../ide/visual-csharp-intellisense.md)

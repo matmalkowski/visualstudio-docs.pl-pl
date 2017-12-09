@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 W tej sekcji możesz znaleźć rozwiązania typowych problemów z programu Visual Studio Tools for Unity, opisy znanych problemów i Dowiedz się, jak można zwiększyć Visual Studio Tools for Unity raportowanie błędów.  
@@ -25,7 +25,7 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z programu Visua
 Do rozwiązywania niektórych typowych problemów z programu Visual Studio Tools for Unity, zobacz następujące sekcje.  
 
 ### <a name="visual-studio-crashes"></a>Visual Studio ulega awarii
-Może to być spowodowane do pamięci podręcznej programu Visual Studio MEF jest uszkodzony.
+Może to być spowodowane pamięć podręczna MEF usługi Visual Studio jest uszkodzony.
 
 Należy usunąć następujący folder, aby zresetować pamięć podręczna MEF (Zamknij Visual Studio przed wykonaniem tego):
 
@@ -62,7 +62,8 @@ Jeśli program Visual Studio nie może znaleźć lokalizację źródła dla okre
 ### <a name="unable-to-attach"></a>Nie można dołączyć
 -   Spróbuj tymczasowo wyłączyć programu antywirusowego lub tworzyć reguły wykluczania dla wersji programu VS i Unity.
 -   Spróbuj tymczasowo wyłączyć zapory lub utworzyć zasady umożliwiające TCP/UDP siecią między VS i Unity.
--   Określiliśmy, że programy, takie jak przeglądarka zespołu zakłócają proces wykrywania, prawdopodobnie można spróbować zatrzymania tymczasowo wszelkie dodatkowe oprogramowanie, aby zobaczyć, czy zmienić jej.
+-   Określiliśmy programów, takich jak Podgląd zespołu zakłócają proces wykrywania; możliwe, że możesz zatrzymać tymczasowo wszelkie dodatkowe oprogramowanie, aby sprawdzić, czy zmieni coś.
+-   Nie zmieniaj nazw głównego pliku wykonywalnego Unity pomocą rozszerzenia VSTU jest tylko monitorowanie procesów "Unity.exe".
 
 ### <a name="unable-to-debug-android-players"></a>Nie można debugować odtwarzacze systemu Android
 Używamy multiemisji wykrywania player, (która jest używana przez Unity domyślnego mechanizmu), ale po używamy regularne połączenia TCP, można dołączyć debugera. Faza wykrywania jest głównym problemem w przypadku urządzeń z systemem Android.

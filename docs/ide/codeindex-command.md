@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b68d1a67055e14fce0af48fa58f805216205d4ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: eaf790d8c02c95047e28ca4d911d7f42a33bbd4f
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="codeindex-command"></a>Polecenie CodeIndex
 Użyj **CodeIndex** polecenia do zarządzania kodu indeksowania na Team Foundation Server. Na przykład można zresetować indeks, aby naprawić informacje wskaźników CodeLens lub wyłączyć funkcję indeksowania do badania problemów z wydajnością serwera.  
@@ -124,8 +124,8 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Znajdowanie zmian w kodzie i innych elementów historii za pomocą funkcji CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)  
+## <a name="see-also"></a>Zobacz także
 
- [Zarządzanie konfiguracją serwera z TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Narzędzia wiersza polecenia dla serwerów TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+[Znajdowanie zmian w kodzie i innych elementów historii za pomocą wskaźników CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)  
+[Zarządzanie konfiguracją serwera z TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)  
+[Narzędzia wiersza polecenia dla serwerów TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)

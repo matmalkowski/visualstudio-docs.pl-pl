@@ -22,14 +22,14 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawa czasu odpowiedzi interfejsu użytkownika (HTML)
-W tym przewodniku poprowadzi Cię przez proces identyfikacji i rozwiązywania problemu z wydajnością przy użyciu [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Profiler jest dostępna w aplikacjach Visual Studio dla uniwersalnych systemu Windows i platformy uniwersalnej systemu Windows przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje zbyt często elementy modelu DOM i używasz profilera, aby zidentyfikować i rozwiązać ten problem.  
+W tym przewodniku poprowadzi Cię przez proces identyfikacji i rozwiązywania problemu z wydajnością przy użyciu [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Profiler jest dostępna w programie Visual Studio dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje zbyt często elementy modelu DOM i używasz profilera, aby zidentyfikować i rozwiązać ten problem.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Tworzenie i uruchamianie wykonywania testów aplikacji  
   

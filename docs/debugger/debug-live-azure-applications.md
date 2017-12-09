@@ -1,6 +1,6 @@
 ---
 title: "Debugowanie aplikacji ASP.NET Azure na żywo — Visual Studio | Dokumentacja firmy Microsoft"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowania na żywo aplikacji ASP.NET Azure za pomocą debugera migawki
 
@@ -33,7 +33,7 @@ Ponadto debugera migawki jest dostępna tylko dla programu Visual Studio Enterpr
 
 ## <a name="start-the-snapshot-debugger"></a>Uruchom debuger migawki
 
-1. Zainstaluj [wersji zapoznawczej programu Visual Studio Enterprise 15,5 cala](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) lub nowszym. Jeśli aktualizacja z poprzedniej podglądu programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i sprawdź składnika debugera migawki pracą programowanie ASP.NET i sieć web.
+1. Zainstaluj [Visual Studio Enterprise 2017 wersji 15,5 cala](https://www.visualstudio.com/downloads/) lub nowszym. Jeśli aktualizacja z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i sprawdź składnika debugera migawki pracą programowanie ASP.NET i sieć web.
 
 2. Otwórz projekt, który ma zostać debugowania migawki. 
 

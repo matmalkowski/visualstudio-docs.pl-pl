@@ -10,7 +10,6 @@ ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
-- Code Snippet Inserter [J#]
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
@@ -18,11 +17,11 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu Visual C#
 Wstawki kodu są gotowe do użycia wstawki kodu, który można szybko wstawić do kodu. Na przykład `for` fragment kodu tworzy pustą `for` pętli. Niektóre fragmenty kodu są Otocz wstawki kodu, które umożliwia wybór wierszy kodu, a następnie wybierz fragment kodu, który zawiera wybranych wierszy kodu. Na przykład, gdy należy wybrać wiersze kodu i aktywować `for` fragment kodu tworzy `for` pętli z tych wierszy kodu wewnątrz bloku pętli. Wstawki kodu można ustawić program pisania kodu, szybsze, łatwiejsze i bardziej niezawodny.  
@@ -79,4 +78,4 @@ Wstawki kodu są gotowe do użycia wstawki kodu, który można szybko wstawić d
  [Funkcje wstawek kodu](../ide/code-snippet-functions.md)   
  [Wstawki kodu](../ide/code-snippets.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
- [Porady: Użyj Otocz wstawki kodu](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../ide/how-to-use-surround-with-code-snippets.md)   

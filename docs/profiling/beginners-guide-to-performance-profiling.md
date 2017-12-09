@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Profilowanie wydajności — przewodnik dla początkujących
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **użycie procesora CPU** kartę narzędzi diagnostycznych można uzyskać danych wydajności dla aplikacji. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.
@@ -108,7 +108,6 @@ Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z 
     W tym widoku wybranej funkcji zostaną wyświetlone w nagłówku, a w **bieżącej funkcji** okno (w tym przykładzie GetNumber). Funkcji, które wywołały bieżącą funkcję jest wyświetlany po lewej stronie w obszarze **podczas wywoływania funkcji**, a wszystkie funkcje wywoływane przez bieżącą funkcję są wyświetlane w **funkcji o nazwie** pole po prawej stronie. (Wybierz albo pola, aby zmienić bieżącą funkcję).
 
     Ten widok przedstawia łączny czas (ms) i odsetek ogólną aplikacji czasu podejmujący funkcja do wykonania działania.
-
     **Treść funkcji** również przedstawia łączną ilość czasu (i wartość procentowa czasu) w treści funkcji bez czasu poświęcony na wywołanie i wywołać funkcji. (W tym przykładzie ms 3713 poza 3729 zostały spędzony w treści funkcji, a pozostałe 16 ms zostały spędzony w kodzie zewnętrznych wywoływanych przez tę funkcję).
 
     > [!TIP]
@@ -157,7 +156,7 @@ Użyj pola wyszukiwania można znaleźć węzła, którego szukasz, a następnie
 </div>
   
 ## <a name="see-also"></a>Zobacz też  
- [[Użycia pamięci](../profiling/memory-usage.md)  
+ [Użycie pamięci](../profiling/memory-usage.md)  
  [Użycie procesora CPU](../profiling/cpu-usage.md)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)

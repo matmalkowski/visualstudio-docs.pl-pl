@@ -1,7 +1,7 @@
 ---
 title: Kodowanie Konwencji ustawienia EditorConfig .NET | Dokumentacja firmy Microsoft
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,17 +14,15 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia EditorConfig Konwencji kodowania platformy .NET
 
@@ -283,9 +281,9 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściw
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio | Obsługiwana wersja |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members: Brak | Visual Studio 2017 wersji 15,5 cala |
-| csharp_preferred_modifier_order | IDE0036 | C# | publiczne, prywatne, chronionych, wewnętrzne, statyczne i zewnętrzne, new, wirtualny, abstrakcyjny, sealed zastąpienie, tylko do odczytu, async niebezpieczne, nietrwałe,: Brak | Visual Studio 2017 wersji 15,5 cala |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom, Asynchroniczne: Brak | Visual Studio 2017 wersji 15,5 cala |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members: Brak | Visual Studio 2017 v. 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | publiczne, prywatne, chronionych, wewnętrzne, statyczne i zewnętrzne, new, wirtualny, abstrakcyjny, sealed zastąpienie, tylko do odczytu, async niebezpieczne, nietrwałe,: Brak | Visual Studio 2017 v. 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Częściowy, domyślny, Private, chroniony, publiczny, Friend, NotOverridable, możliwym do zastąpienia, MustOverride, przeciążenia, zastąpienia, MustInherit NotInheritable, statyczna, udostępniony, cieni, tylko do odczytu, WriteOnly, wymiar, stała, WithEvents, rozszerzanie i zwężanie niestandardowe, Asynchroniczne: Brak | Visual Studio 2017 v. 15.5 |
 
 **DotNet\_styl\_wymagają\_accessibility_modifiers**  
 Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
@@ -293,7 +291,7 @@ Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje
 | Wartość | Opis |
 | ----- |:----------- |
 | Zawsze | Modyfikatory accessbility należy określić preferowany |
-| for_non_interface_members | Preferowane modyfikatory dostępności, które mają zostać zadeklarowane z wyjątkiem członków interfejsu publicznego. To obecnie nie różnią się od **zawsze** i będzie działać jako przyszłych sprawdzające dla, jeśli C# dodaje domyślnych metod interfejsu. |
+| Aby uzyskać\_z systemem innym niż\_interface_members | Preferowane modyfikatory dostępności, które mają zostać zadeklarowane z wyjątkiem członków interfejsu publicznego. To obecnie nie różnią się od **zawsze** i będzie działać jako przyszłych sprawdzające dla, jeśli C# dodaje domyślnych metod interfejsu. |
 | Nigdy nie | Nie preferowane modyfikatory dostępności należy określić | 
 
 Przykłady kodu:  
@@ -577,126 +575,126 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje o
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio | Obsługiwana wersja |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# W WERSJI 6.0 + | nigdy nie: Brak | Visual Studio 2017 wersji 15 ustęp 3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | nigdy nie: Brak | Visual Studio 2017 wersji 15 ustęp 3 |
-| csharp_style_expression_bodied_operators | IDE0023 i IDE0024 | C# 7.0 + | nigdy nie: Brak | Visual Studio 2017 wersji 15 ustęp 3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | when_possible: Brak | Visual Studio 2017 wersji 15 ustęp 3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | when_possible: Brak | Visual Studio 2017 wersji 15 ustęp 3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | when_possible: Brak | Visual Studio 2017 wersji 15 ustęp 3 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# W WERSJI 6.0 + | false: Brak | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | false: Brak | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 i IDE0024 | C# 7.0 + | false: Brak | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | wartość true: Brak | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | wartość true: Brak | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | wartość true: Brak | Visual Studio 2017 v. 15.3 |  
 
 **CSharp\_styl\_wyrażenie\_bodied_methods**  
-Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
+Ta reguła akceptuje wartości z poniższej tabeli:  
 
 | Wartość | Opis |
 | ----- |:----------- |
-| when_possible | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla metod |
+| true | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla metod |
 | when_on_single_line | Preferowane zabudowanych wyrażenia elementów członkowskich dla metod, gdy będą one jednym wierszu |
-| Nigdy nie | Preferowane jest treści bloku dla metod | 
+| false | Preferowane jest treści bloku dla metod | 
 
 Przykłady kodu:  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **CSharp\_styl\_wyrażenie\_bodied_constructors**  
-Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
+Ta reguła akceptuje wartości z poniższej tabeli:   
 
 | Wartość | Opis |
 | ----- |:----------- |
-| when_possible | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla konstruktorów |
+| true | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla konstruktorów |
 | when_on_single_line | Preferowane zabudowanych wyrażenia elementów członkowskich dla konstruktorów, gdy będą one jednym wierszu |
-| Nigdy nie | Preferowane jest treści bloku dla konstruktorów |  
+| false | Preferowane jest treści bloku dla konstruktorów |  
 
 Przykłady kodu:  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **CSharp\_styl\_wyrażenie\_bodied_operators**  
-Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
+Ta reguła akceptuje wartości z poniższej tabeli:    
 
 | Wartość | Opis |
 | ----- |:----------- |
-| when_possible | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla operatorów |
+| true | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla operatorów |
 | when_on_single_line | Preferowane zabudowanych wyrażenia elementów członkowskich dla operatorów, gdy będą one jednym wierszu |
-| Nigdy nie | Preferowane treści bloku dla operatorów |  
+| false | Preferowane treści bloku dla operatorów |  
 
 Przykłady kodu:  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **CSharp\_styl\_wyrażenie\_bodied_properties**  
-Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
+Ta reguła akceptuje wartości z poniższej tabeli:   
 
 | Wartość | Opis |
 | ----- |:----------- |
-| when_possible | Preferowane właściwości zabudowanych wyrażenia elementów członkowskich |
+| true | Preferowane właściwości zabudowanych wyrażenia elementów członkowskich |
 | when_on_single_line | Preferowane zabudowanych wyrażenia elementów członkowskich dla właściwości, gdy będą one jednym wierszu |
-| Nigdy nie | Preferowane jest treści bloku dla właściwości |  
+| false | Preferowane jest treści bloku dla właściwości |  
 
 Przykłady kodu:  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **CSharp\_styl\_wyrażenie\_bodied_indexers**  
-Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
+Ta reguła akceptuje wartości z poniższej tabeli:  
 
 | Wartość | Opis |
 | ----- |:----------- |
-| when_possible | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla indeksatorów |
+| true | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla indeksatorów |
 | when_on_single_line | Preferowane zabudowanych wyrażenia elementów członkowskich dla indeksatorów, gdy będą one jednym wierszu |
-| Nigdy nie | Preferowane jest treści bloku dla indeksatorów | 
+| false | Preferowane jest treści bloku dla indeksatorów | 
 
 Przykłady kodu:  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **CSharp\_styl\_wyrażenie\_bodied_accessors**  
-Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:  
+Ta reguła akceptuje wartości z poniższej tabeli:   
 
 | Wartość | Opis |
 | ----- |:----------- |
-| when_possible | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla metod dostępu |
+| true | Preferowane jest zabudowanych wyrażenia elementów członkowskich dla metod dostępu |
 | when_on_single_line | Preferowane zabudowanych wyrażenia elementów członkowskich dla metod dostępu, gdy będą one jednym wierszu |
-| Nigdy nie | Preferowane treści bloku dla metod dostępu | 
+| false | Preferowane treści bloku dla metod dostępu | 
 
 Przykłady kodu:  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ Przykładowy plik .editorconfig:
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">Dopasowanie wzorca</a>

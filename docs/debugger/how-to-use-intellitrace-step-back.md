@@ -1,7 +1,7 @@
 ---
 title: "Wyświetl migawkę przy użyciu funkcji IntelliTrace krok zwrotnego — Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Migawki widoku przy użyciu zwrotnego krok IntelliTrace
 Krok zwrotnego IntelliTrace automatycznie tworzy migawkę aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawki umożliwiają wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości. IntelliTrace krok wstecz może zaoszczędzić czas podczas chcesz zobacz poprzedni stan aplikacji, ale nie chcesz uruchomić ponownie debugowania lub Utwórz ponownie stan żądanej aplikacji.

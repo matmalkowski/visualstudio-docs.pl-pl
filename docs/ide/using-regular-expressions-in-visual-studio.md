@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]używa wyrażeniach regularnych programu .NET Framework w celu znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji na temat wyrażeń regularnych programu .NET, zobacz [wyrażeń regularnych programu .NET Framework](/dotnet/standard/base-types/regular-expressions).  
-  
- Przed zastosowaniem programu Visual Studio 2012 Visual Studio użycie składni wyrażeń regularnych niestandardowych w systemie windows Znajdź i Zamień. Zobacz [programu Visual Studio regularne konwersji wyrażenia](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx) opis przekonwertować niektóre symbole niestandardowe wyrażenie regularne więcej często używane do wersji platformy .NET.  
-  
+
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]używa wyrażeniach regularnych programu .NET Framework w celu znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji na temat wyrażeń regularnych programu .NET, zobacz [wyrażeń regularnych programu .NET Framework](/dotnet/standard/base-types/regular-expressions).
+
 > [!TIP]
->  W systemach operacyjnych Windows większość wierszy kończyć się "\r\n" (znak powrotu karetki znak nowego wiersza). Te znaki nie są widoczne, ale znajdują się w edytorze i są przekazywane do usługi .NET wyrażenia regularnego.  
+> W systemach operacyjnych Windows większość wierszy kończyć się "\r\n" (znak powrotu karetki znak nowego wiersza). Te znaki nie są widoczne, ale znajdują się w edytorze i są przekazywane do usługi .NET wyrażenia regularnego.
+
+## <a name="replacement-patterns"></a>Wzorce zamiany
+
+Informacji o wyrażeń regularnych, które są używane w wzorce zamiany znajduje się w temacie [podstawienia](/dotnet/standard/base-types/substitutions-in-regular-expressions). Aby użyć grupy numerowanych przechwytywania, składnia jest `$1` można określić numeru grupy i `(x)` do określenia danej grupy. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` znajduje cztery dopasowań w następujący ciąg: **2b 1a 3c 4d**. Ciąg zastępczy `z$1` konwertuje tego ciągu do **z1 z2 z3 z4**.
   
-> [!TIP]
->  Informacji o wyrażeń regularnych, które są używane w wzorce zamiany znajduje się w temacie [podstawienia](/dotnet/standard/base-types/substitutions-in-regular-expressions). Aby użyć grupy numerowanych przechwytywania, składnia jest `$1` do określenia grupy numerowanych i `(x)` do określenia danej grupy. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` znajduje cztery dopasowań w następujący ciąg: **2b 1a 3c 4d**. Ciąg zastępczy `z$1` konwertuje tego ciągu do **z1 z2 z3 z4**.  
-  
-## <a name="regular-expressions-in-visual-studio"></a>Wyrażeń regularnych w programie Visual Studio  
- Oto kilka przykładów  
-  
-|Cel|Wyrażenie|Przykład|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>Przykłady wyrażeń regularnych
+
+Oto kilka przykładów:
+
+|Cel|Wyrażenie|Przykład|
+|-------------|----------------|-------------|
 |Dopasowuje dowolny pojedynczy znak (z wyjątkiem podziału wiersza)|.|`a.o`Dopasowuje "aro" w "wokół" i "abo" w "temat", ale nie "akro" w "w".|  
 |Zgodne zero lub więcej wystąpień poprzedniego wyrażenia (odpowiadać maksymalną liczbę znaków, jak to możliwe)|*|`a*r`Dopasowuje "r" w "rack", "ar" w "arek" i "aar" w "aardvark"|  
 |Dopasowuje dowolny znak zero lub więcej razy (symbol wieloznaczny *)|.*|Dopasowuje c.*e "cke" w "hałasu", "comme" w "comment", a 'code' w 'code'|  
@@ -72,6 +70,7 @@ ms.lasthandoff: 10/31/2017
 |Dopasowanie ciągu wewnątrz cudzysłowów|((\\".+?\\")&#124;('.+?'))|Dopasowuje dowolny ciąg w pojedynczym lub podwójnym cudzysłowie.|  
 |Dopasowanie do liczby szesnastkowej|\b0[xX]([0-9a-fA-F]\)\b|Dopasowuje "0xc67f", ale nie "0xc67fc67f".|  
 |Dopasowanie do liczb całkowitych i dziesiętnych|\b[0-9]*\\.\* [0-9] + \b|Dopasowuje "1,333".|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>Zobacz także
+
+[Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)

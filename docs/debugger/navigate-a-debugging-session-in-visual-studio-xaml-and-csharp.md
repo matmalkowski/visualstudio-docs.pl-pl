@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#)
 To szybki start przedstawiono, jak przechodzić sesji debugowania programu Visual Studio oraz do wyświetlania i zmieniania stanu programu w sesji.  
@@ -52,7 +52,7 @@ To szybki start przedstawiono, jak przechodzić sesji debugowania programu Visua
   
  **Otwórz plik źródłowy MainPage.xaml.cs.** Kliknij prawym przyciskiem myszy w edytorze XAML, a następnie wybierz pozycję **kod widoku**. Zostanie wyświetlony plik CodeBehind MainPage.xaml.cs. Należy pamiętać, że tylko jedna metoda `MainPage()` konstruktora, znajduje się w pliku.  
   
- **Zamień Konstruktor MainPage przykładowy kod.** Usuń metodę MainPage(). Tego łącza: [debugera nawigacji przykładowy kod (Xaml i C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md), a następnie skopiuj kod przedstawiony w sekcji C# do Schowka. (Wybierz **ponownie** w przeglądarce lub podglądu pomocy, aby powrócić do tej strony szybki start.) W edytorze programu Visual Studio, Wklej kod w `partial class MainPage` bloku. Wybierz polecenie CTRL + s, aby zapisać plik.  
+ **Zamień Konstruktor MainPage przykładowy kod.** Usuń metodę MainPage(). Tego łącza: [debugera nawigacji przykładowy kod (Xaml i C#)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs), a następnie skopiuj kod przedstawiony w sekcji C# do Schowka. (Wybierz **ponownie** w przeglądarce lub podglądu pomocy, aby powrócić do tej strony szybki start.) W edytorze programu Visual Studio, Wklej kod w `partial class MainPage` bloku. Wybierz polecenie CTRL + s, aby zapisać plik.  
   
  Teraz można wykonać wraz z przykładami w tym temacie.  
   

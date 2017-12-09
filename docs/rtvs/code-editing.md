@@ -1,26 +1,25 @@
 ---
 title: "Edycja kodu za pomocą narzędzia R dla programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Edytowanie kodu języka R w programie Visual Studio
- 
+
 R narzędzi dla programu Visual Studio (RTVS) dostosowanie programu Visual Studio edytowania specjalnie z myślą o R. przy zachowaniu wszystkie funkcje i możliwości, aby korzystać z rozszerzeń. (Na przykład, jeśli wolisz powiązań klucza VIM, można zainstalować bezpłatną [rozszerzenia VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) z galerii programu Visual Studio.)
 
 W tym temacie:
@@ -33,8 +32,7 @@ W tym temacie:
 - [Wstawianie Roxygen komentarzy](#inserting-roxygen-comments)
 - [Opcje edytora](#editor-options)
 
-Zobacz też tematy na [IntelliSense](code-intellisense.md), [wstawki kodu](code-snippets.md), i [R Markdown](rmarkdown.md).
-
+Zobacz też tematy na [IntelliSense](code-intellisense.md), [linting](code-linting.md), [wstawki kodu](code-snippets.md), i [R Markdown](rmarkdown.md).
 
 ## <a name="syntax-highlighting"></a>wyróżnianie składni 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 Do ponownego formatowania pliku całego kodu, wybierz **Edytuj > Zaawansowane > dokumentu w formacie** (Ctrl + E, D).
 
 Automatyczne formatowanie jest operacją oddzielne, którą można cofnąć. Na przykład, jeśli kod wkleić do edytora i formatowanie ma to zastosowanie, wybranie opcji **Edytuj > cofnąć** lub naciskając klawisz Ctrl + Z raz odwraca formatowanie; drugi cofania odwraca Wklej sam.
- 
+
 Opcje formatowania (w tym wyłączenie opcji formatowania) są ustawiane za pomocą **Narzędzia > Opcje** na **Edytor tekstu > R > Zaawansowane** kartę. Można przejść bezpośrednio do tej strony za pomocą **R Narzędzia > Opcje edytora...**  poleceń lub przez kliknięcie prawym przyciskiem myszy w edytorze i wybraniu **opcje formatowania...** . Zobacz [opcji edytora](#editor-options) sekcji, aby uzyskać szczegółowe informacje.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Wstawianie Roxygen komentarzy
 
 RTVS przewiduje generowania skrótu [Roxygen](http://roxygen.org/) komentarzy przy użyciu nazwy parametrów funkcji. Po prostu wpisz `###` na pusty wiersz powyżej definicji funkcji:
@@ -144,5 +142,5 @@ Opcje na **R > Zaawansowane** są specyficzne dla RTVS:
 | | Listy uzupełniania w klawisza Tab | Off | Wywołuje listy uzupełniania wpisywanie co najmniej jeden znak i naciskając klawisz Tab. |
 | | Niezgodne typy częściowo nazwy argumentów | Off | Podczas wpisywania nazwy argumentów w wywołaniu funkcji, podpisu pomocy zawiera opis argumentu, który najlepiej odpowiada. |
 | Okno interaktywne | Sprawdzanie składni w konsoli języka R | Off | Stosuje składni sprawdzanie w oknie interaktywnym. Sprawdzanie składni może nie działać poprawnie w instrukcjach wiele wierszy. | 
-| Tworzenie konspektu | Zwijanie kodu | On | Automatycznie tworzy zwijanej regionów obszarów, takich jak wiele wierszy instrukcji. | 
+| Tworzenie konspektu | Zwijanie kodu | On | Automatycznie tworzy zwijanej regionów obszarów, takich jak wiele wierszy instrukcji. |
 | Sprawdzanie składni | Pokaż błędy składniowe | On | Umożliwia automatyczne składni Sprawdzanie kodu. |

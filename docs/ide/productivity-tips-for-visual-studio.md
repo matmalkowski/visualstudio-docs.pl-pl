@@ -7,45 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 803a1a94fe3eaa1bc63d59e9de2a42711f502262
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: fe42e4d2a61b4166d8a69b7c90cf212c36610bd2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Visual Studio — wskazówki dotyczące produktywności
+# <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności dla programu Visual Studio
 
-Wykonując te wskazówki można można szybkie i wydajne zapisu, przejdź i debugowanie kodu w programie Visual Studio. Aby uzyskać więcej informacji o typowych skróty klawiaturowe, zobacz [porady i wskazówki](../ide/tips-and-tricks-for-visual-studio.md). Aby uzyskać bardziej szczegółowy wykaz, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) i [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Wykonując te wskazówki można można szybkie i wydajne zapisu, przejdź i debugowanie kodu w programie Visual Studio.
 
-## <a name="accessing-visual-studio-tools"></a>Uzyskiwanie dostępu do narzędzi Visual Studio Tools
+Aby uzyskać więcej informacji o typowych skróty klawiaturowe, zobacz [porady i wskazówki](../ide/tips-and-tricks-for-visual-studio.md). Aby uzyskać bardziej szczegółowy wykaz, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) i [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Jeśli przypniesz na ekranie startowym lub pasku zadań można łatwiej dostępu wiersza polecenia dewelopera lub innego narzędzia.
+## <a name="accessing-visual-studio-tools"></a>Uzyskiwanie dostępu do narzędzi Visual Studio tools
 
-1. Na ekranie startowym wpisz `Visual Studio Tools`, a następnie wybierz pozycję **Enter** klucza.
+Możesz szybko dojść wiersza polecenia dewelopera lub innego narzędzia Visual Studio, jeśli przypiąć go do Start menu i na pasku zadań.
 
-1. W **Eksploratora plików**, otwórz menu skrótów dla elementów, które chcesz:
+1. W Eksploratorze Windows przejdź do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
 
-    - Tworzenie powiadomień
-
-    - Menedżer pakietów możliwością debugowania
-
-    - Wiersz polecenia dla VS2013 deweloperów
-
-    - Microsoft Feedback Client 2013
-
-    - VS2013 ARM Cross narzędzia wiersza polecenia
-
-    - VS2013 x64 dla wielu narzędzi wiersza polecenia
-
-    - VS2013 x64 natywnych narzędzi wiersza polecenia
-
-    - VS2013 x86 natywnych narzędzi wiersza polecenia
-
-1. Wybierz **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
+1. Kliknij prawym przyciskiem myszy lub Otwórz menu kontekstowe dla **wiersza polecenia dewelopera**, a następnie wybierz pozycję **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
 
 ## <a name="writing-code"></a>Pisanie kodu
 
@@ -91,11 +74,11 @@ Można wyszukiwać w IDE dla poleceń, plików i opcji, oprócz filtrowanie zawa
 
 - **Wyświetlanie błędów ma adres**. Jeśli wybierzesz **filtru** znajdującego się na **listy błędów** narzędzi można zmniejszyć liczbę błędów, które są widoczne w **listy błędów** okna. Możesz wyświetlić tylko błędów w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Można także przeszukać w oknie Lista błędów, aby znaleźć określone błędy.
 
-- **Znajdź w oknach dialogowych, menu poleceń i opcji**. W [Szybkie uruchamianie, środowisko, opcje — Okno dialogowe](../ide/reference/quick-launch-environment-options-dialog-box.md) wprowadź słowa kluczowe lub wyrażenia dla elementów, które próbujesz odnaleźć. Na przykład następujące opcje są wyświetlane po wprowadzeniu `new project`:
+- **Znajdź w oknach dialogowych, menu poleceń i opcji**. W [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) wprowadź słowa kluczowe lub wyrażenia dla elementów, które próbujesz odnaleźć. Na przykład następujące opcje są wyświetlane po wprowadzeniu `new project`:
 
-     ![Szybkie uruchamianie wyniki dla "nowego projektu"](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Szybkie uruchamianie wyniki dla "nowego projektu"](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-     **Szybkie uruchamianie** zawiera łącza do **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i strony projektów i rozwiązań w **opcje** okno dialogowe, między innymi. Szybkie uruchamianie wyników można także pliki projektu i okien narzędzi.
+    **Szybkie uruchamianie** zawiera łącza do **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i strony projektów i rozwiązań w **opcje** okno dialogowe, między innymi. Szybkie uruchamianie wyników można także pliki projektu i okien narzędzi.
 
 ## <a name="debugging-code"></a>Debugowanie kodu
 
@@ -103,11 +86,11 @@ Debugowanie mogą zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 
 - **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Jak można debugować kodu, można łatwo przełączać między przeglądarek sieci web zainstalowany, w tym [narzędzie Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Można użyć **docelowego debugowania** listę, która znajduje się na **standardowe** narzędzi dalej, aby **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, które przeglądarki jako debugowania lub Wyświetl strony.
 
-     ![Wybierz opcje debugowania w przeglądarce sieci Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Wybierz opcje debugowania w przeglądarce sieci Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **Ustaw punkty przerwania tymczasowego**. Można utworzyć tymczasowego punktu przerwania w bieżącym wierszu kodu i jednocześnie uruchomienia debugera. Gdy naciśniesz wiersza kodu debugera przejdzie do trybu przerwania. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
-     Aby użyć tej funkcji, należy wybrać **Ctrl** + **F10** kluczy lub Otwórz menu skrótów wiersza kodu, na którym chcesz przerwać, a następnie wybierz **Uruchom do kursora** .
+    Aby użyć tej funkcji, należy wybrać **Ctrl** + **F10** kluczy lub Otwórz menu skrótów wiersza kodu, na którym chcesz przerwać, a następnie wybierz **Uruchom do kursora** .
 
 - **Przenieś punkt wykonywania podczas debugowania**. Można przenieść do bieżącego punkt wykonywania do innej sekcji kodu i ponownie uruchom debugowanie z tego punktu. Ta metoda jest przydatna, jeśli chcesz debugować części kodu bez konieczności ponownego tworzenia wszystkich kroków, które są wymagane do uzyskania tej sekcji. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -140,4 +123,4 @@ Debugowanie mogą zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
 [Porady: Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
 [Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Ułatwienia dostępu porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)
+[Porady i wskazówki związane z ułatwieniami dostępu](../ide/reference/accessibility-tips-and-tricks.md)

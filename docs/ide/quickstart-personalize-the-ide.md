@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 369407c70ba15c720af3c92a5fabc56497eeedb6
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: personalizowanie środowiska IDE programu Visual Studio i edytora
 
@@ -79,11 +79,13 @@ Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pi
 
 1. W obszarze **środowiska**, wybierz **czcionki i kolory** kategorii.
 
-   Należy zauważyć, że tekst w polu **Pokaż ustawienia dla** mówi **Edytor tekstu** &mdash; jest to, co chcemy. Może rozszerzyć listy rozwijanej tylko w celu lista dużą ilością miejsca, w którym można dostosowywać czcionki i kolor tekstu.
+   Należy zauważyć, że tekst w polu **Pokaż ustawienia dla** mówi **Edytor tekstu**&mdash;jest to, co chcemy. Może rozszerzyć listy rozwijanej tylko w celu lista dużą ilością miejsca, w którym można dostosowywać czcionki i kolor tekstu.
 
 1. Zmiana koloru tekstu numerów linii w **wyświetlania elementów** wybierz **numer wiersza**. W **pierwszego planu elementu** wybierz **oliwek**.
 
    ![Opcje — okno dialogowe, czcionki i kolory kategorii](media/quickstart-personalize-line-number-color.png)
+
+   Niektóre języki mają własne określone ustawienia czcionek i kolorów. Jeśli jesteś deweloperem C++ i chcesz zmienić kolor używany dla funkcji, na przykład można wyszukać **funkcje języka C++** w **wyświetlania elementów** listy.
 
 1. Przed zakończeniu poza okno dialogowe, umożliwia również zmianę koloru atrybutów XML. W **wyświetlania elementów** listy, przewiń w dół do **atrybutu XML** i zaznacz je. W **pierwszego planu elementu** wybierz **wapna**. Wybierz **OK** naszych opcji Zapisz i zamknij okno dialogowe.
 
@@ -97,5 +99,5 @@ Firma Microsoft przedstawione kilka sposobów dostosowywanie kolorów w Visual S
 
 [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)  
 [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
-[Dopasowywanie edytora](../ide/customizing-the-editor.md)  
-[Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+[Dostosowywanie edytora](../ide/customizing-the-editor.md)  
+[Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 11324501-ceb6-47a2-ae13-e9e992d3603e
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2640607b4b4cd817790048e4e1d497f42ed83a08
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 1ff32914b523b2b515a3d4175e4b3f76ad7ecefd
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="working-with-r-in-visual-studio"></a>Praca z języka R w programie Visual Studio
 
@@ -41,10 +40,10 @@ Następnie wykonaj poniższe łącza, aby dowiedzieć się więcej o funkcjach R
 | [Obszar roboczy](workspaces.md) | RTVS można powiązać obszary robocze lokalnych i zdalnych, umożliwiając tworzenie kodu języka R lokalnie mniejszych zestawów danych, a następnie łatwo uruchomić kod na wydajniejsze komputery oparte na chmurze z znacznie większych zestawów danych. | n/d |
 | [Opcje narzędzia R](options.md) | Kontrolować różne aspekty RTVS. | [Opcje — okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md) |
 | [Edytowanie sformatowanego, IntelliSense i wstawki kodu](code-editing.md) | Obejmuje kolorowania, [IntelliSense](code-intellisense.md) we wszystkich kodu i bibliotek, formatowania pomocy podpisu kodu przejdź do definicji i Znajdź wszystkie odwołania [wstawki kodu](code-snippets.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [R Markdown](rmarkdown.md) | Dokumenty R Markdown pomóc Udostępnianie wyników dane zintegrowane R kodu wewnątrz bloków kodu w języku znaczników markdown. | n/d |
+| [Znaczniki R Markdown](rmarkdown.md) | Dokumenty R Markdown pomóc Udostępnianie wyników dane zintegrowane R kodu wewnątrz bloków kodu w języku znaczników markdown. | n/d |
 | [Okno interaktywne](interactive-repl.md) | Zapewnia pełne środowisko REPL dla języka R umożliwia łatwe uruchamianie kodu w pliku źródłowego w oknie interaktywnym. | n/d |
 | [Wizualizacja danych](visualizing-data.md) | Kreślenia jest integralną częścią środowisko R i RTVS obsługuje wiele niezależnych kreślenia systemu windows, każdy z własnych historii i możliwość przenoszenia geograficzne między systemem windows. Powierzchnie można zapisać plików PDF i mapy bitowej lub skopiowane do Schowka jako mapa bitowa lub metaplik.  | n/d |
-| [Eksplorator zmiennej](variable-explorer.md) | Sprawdź zmienne w zakresach globalnych lub specyficznych dla pakietu, umożliwia wyświetlanie tabel można sortować i wyeksportować do pliku CSV. | n/d |
+| [Eksplorator zmiennych](variable-explorer.md) | Sprawdź zmienne w zakresach globalnych lub specyficznych dla pakietu, umożliwia wyświetlanie tabel można sortować i wyeksportować do pliku CSV. | n/d |
 | [Oferujący wszystkie funkcje debugowania](debugging.md) | Obejmuje integrację z okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
 Zobacz też [— często zadawane pytania](faq.md).

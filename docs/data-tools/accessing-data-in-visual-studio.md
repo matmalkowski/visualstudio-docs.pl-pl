@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -104,7 +104,7 @@ Programy używające usługi REST w języku C++ można użyć [C++ REST SDK](htt
 
 Programy C++, które współpracują z usługi Magazyn Microsoft Azure mogą używać [klienta magazynu Microsoft Azure](http://www.nuget.org/packages/wastorage).
 
-Modelowanie danych &mdash; programu Visual Studio nie ma warstwy ORM dla języka C++. [ODB](http://www.codesynthesis.com/products/odb/) jest popularnych ORM open source dla języka C++.
+Modelowanie danych&mdash;programu Visual Studio nie ma warstwy ORM dla języka C++. [ODB](http://www.codesynthesis.com/products/odb/) jest popularnych ORM open source dla języka C++.
 
 Aby dowiedzieć się więcej o nawiązywaniu połączeń z bazami danych z aplikacji C++, zobacz [narzędzi danych programu Visual Studio dla języka C++](../data-tools/visual-studio-data-tools-for-cpp.md). Aby uzyskać więcej informacji na temat starszych technologii dostępu do danych Visual C++, zobacz [dostęp do danych](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
 

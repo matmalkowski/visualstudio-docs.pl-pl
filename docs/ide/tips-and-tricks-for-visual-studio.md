@@ -1,5 +1,5 @@
 ---
-title: "Porady i wskazówki dotyczące programu Visual Studio | Dokumentacja firmy Microsoft"
+title: "Skróty klawiaturowe w usłudze Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio — Porady i wskazówki
-Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatwiej, za pomocą skrótów w tym temacie. Ten temat jest tylko podzestaw skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual Studio, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md).  
+# <a name="tips-and-tricks-for-visual-studio"></a>Porady i wskazówki dotyczące programu Visual Studio
 
-##  <a name="BKMK_WindowMgmt"></a>Zarządzanie oknem  
+Można przejść w programie Visual Studio łatwiej za pomocą skrótów w tym temacie. Ten temat jest tylko podzestaw skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual Studio, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md).
+
+##  <a name="BKMK_WindowMgmt"></a>Zarządzanie oknem
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Pokaż listę plików otwórz|Ctrl + Alt + Strzałka w dół|  
 |Pokaż wszystkie okna liczby zmiennoprzecinkowe|Ctrl+Shift+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a>Skróty okna  
+##  <a name="BKMK_WindowShortcuts"></a>Skróty okna
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Uruchom nowe wystąpienie|Win + Shift + n|  
 |Przełączanie między systemu Windows|Win + n|  
 
-##  <a name="BKMK_Search"></a>Wyszukiwanie programu Visual Studio  
+##  <a name="BKMK_Search"></a>Visual Studio wyszukiwania
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Wyniki zakresu szybkiego uruchamiania|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używanych<br />- @doc Otwieranie dokumentów|  
 |Wyszukaj w opcji narzędzi|CTRL + E|  
 
-##  <a name="BKMK_EditorFind"></a>Znajdź edytora  
+##  <a name="BKMK_EditorFind"></a>Znajdź edytora
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Znajdź w plikach|Ctrl+Shift+F|  
 |Zastąp w plikach|Ctrl+Shift+H|  
 
-##  <a name="BKMK_CodeEditor"></a>Edytor kodu  
+##  <a name="BKMK_CodeEditor"></a>Edytor kodu
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Przechodzenie między wiele podglądu wyników|F8 i Shift + F8|  
 |Przełącz między okna edytora kodu i wgląd definicji|Shift + Esc|  
 
-##  <a name="BKMK_Toolbars"></a>Paski narzędzi  
+##  <a name="BKMK_Toolbars"></a>Paski narzędzi
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Znajdź tryb polecenia pole tekstowe|Typ ">"|  
 |Utwórz nowy alias|> alias polecenia NewAlias|  
 
-##  <a name="BKMK_Debugging"></a>Debugowanie  
+##  <a name="BKMK_Debugging"></a>Debugowanie
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ Nawigacja w [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] łatw
 |Wyczyść bufor okno bezpośrednie|> ze specyfikacją cls|  
 |Wartość wydruku w oknie bezpośrednim|? nazwa_zmiennej|  
 
-##  <a name="BKMK_ALM"></a>Zarządzanie cyklem życia aplikacji  
- Zobacz [skróty klawiaturowe: Visual Studio Online, TFS sieci web portalu i Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_ALM"></a>Zarządzanie cyklem życia aplikacji
 
-## <a name="see-also"></a>Zobacz też  
- [Blog programu Visual Studio](http://blogs.msdn.com/b/visualstudio)   
- [Visual Studio — porady i wskazówki blogu](http://blogs.msdn.com/b/zainnab)   
- [Przybornika programu Visual Studio na kanale 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio połącz usterki](http://connect.microsoft.com/VisualStudio)
+Zobacz [skróty klawiaturowe: Visual Studio Online, TFS sieci web portalu i Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+
+## <a name="see-also"></a>Zobacz także
+
+[Blog programu Visual Studio](http://blogs.msdn.com/b/visualstudio)  
+[Visual Studio — porady i wskazówki blogu](http://blogs.msdn.com/b/zainnab)  
+[Przybornika programu Visual Studio na kanale 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Visual Studio połącz usterki](http://connect.microsoft.com/VisualStudio)

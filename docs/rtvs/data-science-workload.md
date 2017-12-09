@@ -1,7 +1,7 @@
 ---
 title: "Dane nauki i obciążenia aplikacji analityczne w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 9/5/2017
+ms.date: 09/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,16 +10,15 @@ ms.technology:
 - devlang-fsharp
 ms.tgt_pltfrm: 
 ms.topic: landing-page
-ms.assetid: 018069f3-6d1a-4143-a851-d86d2ff5fbfc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 86f97beae9405003e123ad05893c7e49486f5661
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 5e7738d03fa0c9b8b460fe1b2fb4bc17076fa3b5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Obciążenie nauki dane i aplikacje analitycznych
 

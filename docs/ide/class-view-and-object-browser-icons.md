@@ -16,25 +16,24 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b6fad74a71e457759bc6b35ecb4679c3f26011e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klas i Przeglądarka obiektów ― Ikony
-**Widok klasy** i **przeglądarki obiektów** wyświetlane ikony, które reprezentują jednostek kodu, na przykład, obszary nazw, klasy, funkcje i zmienne. W poniższej tabeli przedstawiono i opisano ikon.  
-  
-|Ikona|Opis|Ikona|Opis|  
-|----------|-----------------|----------|-----------------|  
-|![Namespace Symbol](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Przestrzeń nazw|![Deklaracja symbolu](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Metody lub funkcji|  
+
+**Widok klasy** i **przeglądarki obiektów** wyświetlane ikony, które reprezentują jednostek kodu, na przykład, obszary nazw, klasy, funkcje i zmienne. W poniższej tabeli przedstawiono i opisano ikon.
+
+|Ikona|Opis|Ikona|Opis|
+|----------|-----------------|----------|-----------------|
+|![Namespace Symbol](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Przestrzeń nazw|![Deklaracja symbolu](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Metody lub funkcji|
 |![Klasa ikona](../ide/media/vxclass_icon.gif "vxClass_Icon")|Class|![Symbol operatora](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Operator|  
-|![Symbol interfejs typu lizak](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interface|![Właściwość Symbol](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Właściwość|  
+|![Symbol interfejs typu lizak](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interface|![Właściwość Symbol](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Właściwość|
 |![Struktura Symbol](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Struktura|![Ikona pola](../ide/media/vxfield_icon.gif "vxField_Icon")|Pola lub zmiennej|  
 |![Symbol Unii](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Union|![Symbol zdarzenia](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Zdarzenie|  
 |![Symbol wyliczenia](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Wyliczenie|![Ikona Stała](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Stała|  
@@ -45,21 +44,23 @@ ms.lasthandoff: 10/31/2017
 |![Wyjątek symbolu](../ide/media/vxexception_icon.gif "vxException_Icon")|Wyjątek|![Symbol szablonu](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Szablon|  
 |![Mapowanie symboli](../ide/media/vxmap_icon.gif "vxMap_Icon")|mapy|![Błąd symbolem wykrzyknika](../ide/media/vxerror_icon.gif "vxError_Icon")|Nieznany|  
 |![Typ symbolu przekazywania](../ide/media/ob_type_forward.gif "ob_type_forward")|Przekazywanie dalej typu|||  
-  
-## <a name="signal-icons"></a>Ikony sygnałowe  
- Następujące ikony sygnałowe dotyczą wszystkich poprzednich ikon i wskazują ich dostępność.  
-  
-> [!NOTE]
->  Jeśli projekt jest uwzględniony w bazie danych kontroli źródła, ikony sygnałowe dodatkowe mogą wyświetlony wskazujący stan kontroli źródła, takich jak zaewidencjonowany lub wyewidencjonowany.  
-  
-|Ikona|Opis|  
+
+## <a name="signal-icons"></a>Ikony sygnałowe
+
+Następujące ikony sygnałowe dotyczą wszystkich poprzednich ikon i wskazują ich dostępność.
+
+|Ikona|Opis|
 |----------|-----------------|  
 |\<Brak ikony sygnału >|Publiczna. Dostępne z tego składnika w dowolnym miejscu i z każdego składnika, który odwołuje się on.|  
 |![Sygnał chronione Symbol](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Chronione. Dostępne z zawierające klasy lub typu lub tych pochodzi od klasy lub typu zawierającego.|  
 |![Symbol prywatnego sygnału](../ide/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|Prywatny. Dostępne tylko w zawierający klasy lub typu.|  
 |![Sygnał zapieczętowany Symbol](../ide/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Zapieczętowany.|  
 |![Przyjazne sygnału &#47; Symbol wewnętrzny](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend/wewnętrznego. Dostępne tylko z projektu.|  
-|![Sygnał ikonę strzałki](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Skrót. Skrót do obiektu.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)
+|![Sygnał ikonę strzałki](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Skrót. Skrót do obiektu.|
+
+> [!NOTE]
+> Jeśli projekt jest uwzględniony w bazie danych kontroli źródła, ikony sygnałowe dodatkowe mogą wyświetlony wskazujący stan kontroli źródła, takich jak zaewidencjonowany lub wyewidencjonowany.
+
+## <a name="see-also"></a>Zobacz także
+
+[Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)

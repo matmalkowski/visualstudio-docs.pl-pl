@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Dziennik zmian (Visual Studio Tools dla Unity)
 Visual Studio Tools for Unity dziennika zmian.  
+
+## <a name="3502"></a>3.5.0.2
+ Wydanych 2017 12-04-
+
+### <a name="new-features"></a>Nowe funkcje  
+
+-   **Integracja:**  
+
+    -   Projekty Unity są teraz automatycznie ponownie ładowane w programie Visual Studio po dodaniu skryptu do środowiska Unity lub jego usunięciu.
+
+-   **Debuger:**  
+
+    -   Dodano możliwość użycia Mono debuger współużytkowane przez Xamarin i Visual Studio for Mac do debugowania Edytor platformy Unity.
+
+    -   Dodano obsługę plików symboli debugowania przenośnej.
+
+### <a name="bug-fixes"></a>Poprawki błędów  
+
+-   **Integracja:**  
+
+    -   Naprawić problemy z instalacją zależności.
+
+    -   Menu Pomoc stałym Unity interfejsu API nie są wyświetlane.
+    
+-   **Generowanie projektu:**  
+
+    -   Generowanie projektu player stały podczas pracy z gier platformy uniwersalnej systemu Windows z zapleczem IL2CPP/.NET 4.6.
+    
+    -   Stałe rozszerzenie .dll dodatkowe błędnie dodane do nazwy pliku zestawu.
+    
+    -   Stałe użycie określonego projektu interfejsu API poziom zgodności zamiast jedną globalnego.
+    
+    -   Nie Wymuszaj flagi AllowAttachedDebuggingOfEditor Unity, zgodnie z wartością domyślną jest teraz 'true'.
 
 ## <a name="3402"></a>3.4.0.2
  Wydanych 2017-09-19
@@ -59,7 +92,7 @@ Visual Studio Tools for Unity dziennika zmian.
 
 -   **Generowanie projektu:**  
 
-    -   Usuń generowania rozwiązania Visual Studio na Unity 5.5 i poprzednich wersjach.
+    -   Stałe generowania rozwiązania Visual Studio na Unity 5.5 i poprzednich wersjach.
 
 ## <a name="3300"></a>3.3.0.0
  Wydanych 2017-08-14

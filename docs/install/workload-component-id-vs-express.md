@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: e3f2a67b37d4e6ef6ad7b5e1a946847f63d12903
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 124a40e4e8f4b713e17aa05f95efccc5fcec3589
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Visual Studio Desktop Express 2017 obciążenia i składnik identyfikatorów
 
@@ -44,10 +44,10 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Publikowanie ClickOnce | 15.0.26919.1 | Wymagane
-Microsoft.Component.HelpViewer | Podgląd pomocy | 15.0.26711.1 | Wymagane
-Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Wymagane
-Microsoft.Component.VC.Runtime.OSSupport | Środowiska uruchomieniowego Visual C++ dla platformy uniwersalnej systemu Windows | 15.0.26621.2 | Wymagane
+Microsoft.Component.ClickOnce | Publikowanie ClickOnce | 15.0.27019.1 | Wymagane
+Microsoft.Component.HelpViewer | Podgląd pomocy | 15.0.27005.2 | Wymagane
+Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Wymagane
+Microsoft.Component.VC.Runtime.OSSupport | Środowiska uruchomieniowego Visual C++ dla platformy uniwersalnej systemu Windows | 15.0.27019.1 | Wymagane
 Microsoft.Net.Component.4.5.1.TargetingPack | Pakiet docelowy .NET framework 4.5.1 | 15.0.26621.2 | Wymagane
 Microsoft.Net.Component.4.5.2.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.5.2 | 15.0.26621.2 | Wymagane
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 15.0.26621.2 | Wymagane
@@ -55,14 +55,14 @@ Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 zestawu SDK | 15.0.2662
 Microsoft.Net.Component.4.6.1.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.6.1 | 15.0.26621.2 | Wymagane
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 15.0.26621.2 | Wymagane
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.0.26621.2 | Wymagane
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Narzędzia do programowania .NET framework 4.6.1 | 15.0.26606.0 | Wymagane
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Narzędzia do programowania .NET framework 4.6.1 | 15.0.27005.2 | Wymagane
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Narzędzia deweloperskie programu .NET framework 4 — 4.6 | 15.0.26606.0 | Wymagane
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50614.2 | Wymagane
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Wymagane
 Microsoft.VisualStudio.Component.CoreEditor | Edytor podstawowe usługi Visual Studio | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 narzędzia | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.0.26621.2 | Wymagane
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języka C# i Visual Basic Roslyn | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# i Visual Basic | 15.0.26711.1 | Wymagane
+Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.0.27128.1 | Wymagane
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języka C# i Visual Basic Roslyn | 15.0.27019.1 | Wymagane
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# i Visual Basic | 15.0.27019.1 | Wymagane
 Microsoft.VisualStudio.Component.SQL.ADAL | Środowisko uruchomieniowe programu SQL ADAL | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.SQL.CLR | Typy danych CLR dla programu SQL Server | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Narzędzia wiersza polecenia programu SQL Server | 15.0.26208.0 | Wymagane
@@ -72,15 +72,15 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Wymagane
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.TextTemplating | Transformacji szablonu tekstowego | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI pomocy technicznej | 15.0.26823.1 | Wymagane
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilatory w programie Visual C++ i bibliotek dla ARM | 15.0.26906.1 | Wymagane
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory w programie Visual C++ i bibliotek dla ARM64 | 15.0.26906.1 | Wymagane
+Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI pomocy technicznej | 15.0.27019.1 | Wymagane
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilatory w programie Visual C++ i bibliotek dla ARM | 15.0.27019.1 | Wymagane
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory w programie Visual C++ i bibliotek dla ARM64 | 15.0.27019.1 | Wymagane
 Microsoft.VisualStudio.Component.VisualStudioData | Źródła danych i odwołania do usług | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [x86 i x64] | 15.0.27004.2002 | Wymagane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [ARM i ARM64] | 15.0.27004.2002 | Wymagane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.0.27004.2002 | Wymagane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.0.27004.2002 | Wymagane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [x86 i x64] | 15.0.27128.1 | Wymagane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [ARM i ARM64] | 15.0.27128.1 | Wymagane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.0.27128.1 | Wymagane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.0.27128.1 | Wymagane
 
 ## <a name="unaffiliated-components"></a>Odłączony składników
 
@@ -101,8 +101,8 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Visual Studio obciążenia i składnik identyfikatorów](workload-and-component-ids.md)
+* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Przykłady parametru wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie w trybie offline instalację programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
+  * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
+* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)

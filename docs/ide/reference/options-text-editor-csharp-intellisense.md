@@ -11,7 +11,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense
 helpviewer_keywords:
-- IntelliSense [J#], options
 - underlines, wavy
 - IntelliSense [C#], options
 - IntelliSense [C#], wavy underlines
@@ -22,11 +21,11 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac32cd3946e6d244f6ff658bb636c9ecfd89e197
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ba6e1613410c8143126254c8f7a4bd325c6e6f22
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 Użyj **IntelliSense** strony właściwości, aby zmodyfikować ustawienia, które wpływają na zachowanie IntelliSense dla języka Visual C#. Dostęp można uzyskać **IntelliSense** strony właściwości, klikając **opcje** na **narzędzia** menu, klikając **C#** w **Edytor tekstu** folder, a następnie klikając **IntelliSense.**  
@@ -73,4 +72,4 @@ Użyj **IntelliSense** strony właściwości, aby zmodyfikować ustawienia, któ
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)   
  [Komentarze dokumentacji XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
- [Korzystanie z IntelliSense](../../ide/using-intellisense.md)
+ [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

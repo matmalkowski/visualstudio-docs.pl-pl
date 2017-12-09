@@ -1,156 +1,157 @@
 ---
-title: Wprowadzenie do korzystania z C++ w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: "Wprowadzenie do języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft"
+ms.custom: mvc
+ms.date: 12/04/2017
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: "18"
-author: TerryGLee
+author: corob-msft
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 48f2bb4e61ca6a4f9a9464a6b67a3218b418c8ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c86e7bcfe43eeaa6554efeed6654f34e140d9ea7
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="getting-started-with-c-in-visual-studio"></a>Wprowadzenie do korzystania z C++ w programie Visual Studio
-Wykonując tego przewodnika, użytkownik będzie zapoznanie się z wielu narzędzi i oknach dialogowych, których można używać podczas opracowywania aplikacji za pomocą programu Visual Studio. Utworzysz prosty tekst "Hello, World" — styl aplikacji, podczas gdy Dowiedz się więcej o pracy w zintegrowane środowisko programistyczne (IDE).  
-  
- Ten temat zawiera następujące sekcje:  
-  
- [Zaloguj się do programu Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_Configure)  
-  
- [Utworzyć prostą aplikację](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_CreateApp)  
-  
- [Dodawanie kodu do aplikacji](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_AddCode)  
-  
- [Debugowanie i testowanie aplikacji](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_DebugTest)  
-  
- [Tworzenie wersji aplikacji](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)  
-  
-##  <a name="BKMK_Configure"></a>Zaloguj się do programu Visual Studio  
- Po uruchomieniu programu Visual Studio po raz pierwszy, są podane można logować się za pomocą konta Microsoft, takich jak Live lub Outlook. Logowanie umożliwia ustawienia mają być synchronizowane na Twoich urządzeniach. Aby uzyskać więcej informacji, zobacz [rejestrowanie w programie Visual Studio](../ide/signing-in-to-visual-studio.md)  
-  
- Rysunek 1: Program Visual Studio IDE  
-  
- ![IDE z Visual C &43; &#43; ustawienia stosowane](../ide/media/c--ide_defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout C ++")  
-  
- Po otwarciu programu Visual Studio można wyświetlić trzy podstawowe części IDE: narzędzia systemu windows, menu i pasków narzędzi oraz obszaru głównego okna. Narzędzia systemu windows są zadokowane po lewej i prawej stronie okna aplikacji **Szybkie uruchamianie**, paska menu i standardowym pasku narzędzi u góry. Zawiera środek okna aplikacji **— strona początkowa**. Po otwarciu rozwiązania lub projektu, w tym miejscu są wyświetlane edytory oraz projektantów. Podczas opracowywania aplikacji poświęcany większość czasu w tym obszarze centralnej.  
-  
-##  <a name="BKMK_CreateApp"></a>Utworzyć prostą aplikację  
- Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzyć projektu i rozwiązania. W tym przykładzie utworzysz aplikacji konsoli systemu Windows.  
-  
-#### <a name="to-create-a-console-app"></a>Aby utworzyć aplikację konsoli  
-  
-1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
-  
-     ![Na pasku menu, wybierz plik, nowy, projektu](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
-  
-2.  W **Visual C++** kategorii, wybierz **aplikacji konsoli Win32** szablonu, a następnie nazwę projektu `GreetingsConsoleApp`.  
-  
-     ![Szablon aplikacji konsoli Win32](../ide/media/c--ide_newprojectdlg.png "IDE_NewProjectDlg C ++")  
-     Twoje okno dialogowe może mieć różne opcje, w zależności od tego, czy zostały zainstalowane. Jeśli nie widzisz szablony projektów Visual C++, należy wrócić do poprzedniej strony Instalatora i zainstaluj obciążenia C++.
-  
-3.  Gdy pojawi się Kreator aplikacji Win32, wybierz **Zakończ** przycisku.  
-  
-     ![Kreator aplikacji konsoli Win32](../ide/media/c--ide_win32consoleappwizard.png "IDE_Win32ConsoleAppWizard C ++")  
-  
- GreetingsConsoleApp projektu i rozwiązania z podstawowych plików w przypadku aplikacji konsoli Win32 są tworzone i ładowane automatycznie do **Eksploratora rozwiązań**. Plik GreetingsConsoleApp.cpp jest otwarty w edytorze kodu. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:  
-  
- Rysunek 4: Elementy projektu  
-  
- ![Pliki rozwiązania w Eksploratorze rozwiązań](../ide/media/c--ide_solutioncontents.png "IDE_SolutionContents C ++")  
-  
-##  <a name="BKMK_AddCode"></a>Dodawanie kodu do aplikacji  
- Następnie można będzie Dodaj kod, aby wyświetlić wyraz "Hello" w oknie konsoli.  
-  
-#### <a name="to-display-hello-in-the-console-window"></a>Aby wyświetlić "tekst Hello" w oknie konsoli  
-  
-1.  W pliku GreetingsConsoleApp.cpp wprowadzić pusty wiersz przed wierszem `return 0;` , a następnie wprowadź poniższy kod:  
-  
-    ```  
-    cout << "Hello\n";  
-    ```  
-  
-     Linii o dowolnym kształcie red jest wyświetlany w obszarze `cout`. Komunikat o błędzie pojawia się po wskazaniu go.  
-  
-     ![Tekst błędu dla cout](../ide/media/c--ide_couterror.png "IDE_CoutError C ++")  
-  
-     Komunikat o błędzie pojawia się również w **listy błędów** okna. Okno można wyświetlić, wybierając **widoku**, **listy błędów** na pasku menu.  
-  
-     [Cout](/cpp/standard-library/iostream) znajduje się w \<iostream > pliku nagłówka.  
-  
-2.  Aby uwzględnić iostream — nagłówek, wprowadź poniższy kod po `#include "stdafx.h"`:  
-  
-    ```  
-    #include <iostream>  
-    using namespace std;  
-    ```  
-  
-     Należy zauważyć, jak został wprowadzony kod, zapewniając sugestie dotyczące znaków, które zostały wprowadzone pojawił się pole. To pole jest częścią IntelliSense dla C++, co zapewnia kodowania monitów, w tym listę elementów członkowskich klasy lub interfejsu i informacje o parametrach. Umożliwia także wstawki kodu, które są wstępnie zdefiniowane bloków kodu. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md) i [wstawki kodu](../ide/code-snippets.md).  
-  
-     Czerwony dowolnym kształcie linii pod `cout` zniknie po naprawieniu błędu.  
-  
-3.  Zapisz zmiany w pliku.  
-  
-     ![Kod, który umożliwia naprawienie błędu cout](../ide/media/c--ide_coutfix.png "IDE_CoutFix C ++")  
-  
-##  <a name="BKMK_DebugTest"></a>Debugowanie i testowanie aplikacji  
- Można debugować GreetingsConsoleApp, aby zobaczyć, czy słowo "Hello" jest wyświetlany w oknie konsoli.  
-  
-#### <a name="to-debug-the-application"></a>Aby debugować aplikację  
-  
--   Uruchom debuger.  
-  
-     ![Rozpocznij debugowanie polecenia menu debugowania](../ide/media/exploreide-startdebugging.png "ExploreIDE StartDebugging")  
-  
-     Debuger uruchamia i uruchamia kod. W oknie konsoli (osobnym oknie przypominającą wiersza polecenia) pojawia się na kilka sekund, ale zamyka szybkie, gdy debuger przestanie działać. Aby wyświetlić tekst, należy ustawić punkt przerwania, aby zatrzymać wykonanie programu.  
-  
-#### <a name="to-add-a-breakpoint"></a>Aby dodać punkt przerwania  
-  
-1.  Dodaj punkt przerwania z paska menu, w wierszu `return 0;`. Możesz także po prostu kliknąć na lewym marginesie, aby ustawić punkt przerwania.  
-  
-     ![Przełącz punkt przerwania — polecenie menu debugowania](../ide/media/exploreide-togglebreakpoint.png "togglebreakpoint — ExploreIDE")  
-  
-     Obok wiersza kodu na marginesie po lewej stronie okna edytora jest wyświetlane czerwone koło.  
-  
-2.  Wybierz klawisz F5, aby rozpocząć debugowania.  
-  
-     Po uruchomieniu debugera i zostanie wyświetlone okno konsoli przedstawiający wyraz **Hello**.  
-  
-     ![Tekst w oknie wiersza polecenia systemu Windows Hello](../ide/media/c--ide_hellocommandwindow.png "IDE_HelloCommandWindow C ++")  
-  
-3.  Naciśnij klawisze SHIFT + F5, aby zatrzymać debugowanie.  
-  
- Aby uzyskać więcej informacji, zobacz [projekty startowe](../debugger/debugging-preparation-console-projects.md).  
-  
-##  <a name="BKMK_BuildRelease"></a>Tworzenie wersji aplikacji  
- Teraz, gdy upewnieniu się, że wszystko działa, można przygotować kompilację wersji aplikacji.  
-  
-#### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Aby wyczyścić pliki rozwiązań i zbudować wersję przeznaczoną do publikacji  
-  
-1.  Na pasku menu Usuń plików pośrednich i pliki wyjściowe, które zostały utworzone w poprzednich wersjach.  
-  
-     ![Polecenie Wyczyść rozwiązanie w menu kompilacji](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
-  
-2.  Zmień konfigurację kompilacji dla GreetingsConsoleApp z **debugowania** do **wersji**.  
-  
-     ![Tworzenie wersji aplikacji](../ide/media/c--ide_changingbuildtorelease.png "IDE_ChangingBuildtoRelease C ++")  
-  
-3.  Skompiluj rozwiązanie.  
-  
-     ![Kompiluj rozwiązanie, polecenie menu kompilacji](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
-  
- Gratulujemy zakończenia instruktażu! Jeśli chcesz poznać więcej przykładów, zobacz [przykłady dotyczące programu Visual Studio](../ide/visual-studio-samples.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Za pomocą programu Visual Studio IDE dla projektowania aplikacji C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)   
- [Wskazówki: Tworzenie prostej aplikacji z Visual C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
- [Wskazówki dotyczące produktywności dla programu Visual Studio](../ide/productivity-tips-for-visual-studio.md)   
- [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)   
- [Wprowadzenie do programowania z użyciem programu Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+# <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
+
+Ukończenie tego przewodnika Szybki Start zapoznać się z wielu narzędzi i oknach dialogowych, których można używać podczas opracowywania aplikacji w języku C++ w programie Visual Studio. Tworzenie "Hello, World" — styl aplikacji konsoli, gdy Dowiedz się więcej o pracy w zintegrowane środowisko programistyczne (IDE).
+
+## <a name="prerequisites"></a>Wymagania wstępne
+
+Nie trzeba znać C++ do ukończenia tego przewodnika Szybki Start, ale należy się zapoznać z programowanie ogólne i debugowanie pojęcia. Dokumentacji programu Visual Studio nie pokazuje, jak program w języku C++. Jest dobrym przewodnik dotyczący C++ materiałów szkoleniowych [wprowadzenie](https://isocpp.org/get-started) strony w witrynie sieci Web ISO C++.
+
+Aby z niego skorzystać, potrzebujesz kopię programu Visual Studio 2017 wersji 15.3 lub nowszy z **tworzenia klasycznych aplikacji w języku C++** obciążenia zainstalowane. Przewodnik szybkiego do instalacji, zobacz [zainstalować obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+## <a name="create-a-console-app"></a>Tworzenie aplikacji konsoli
+
+Jeśli nie jest jeszcze uruchomiona, uruchom program Visual Studio.
+
+![IDE z Visual C &43; &#43; ustawienia stosowane](../ide/media/get-started-cpp-ide-layout.png "IDE z Visual C &43; &#43; zastosowane ustawienia")
+
+Po otwarciu programu Visual Studio można wyświetlić trzy podstawowe części IDE: narzędzia systemu windows, menu i pasków narzędzi oraz obszaru głównego okna. Narzędzia systemu windows są zadokowane po lewej i prawej stronie okna aplikacji. **Szybkie uruchamianie** okno, na pasku menu i narzędzi Standardowy znajdują się u góry. Zawiera środek okna **— strona początkowa**. Po otwarciu rozwiązania lub projektu, w tym miejscu są wyświetlane edytory oraz projektantów. Podczas opracowywania aplikacji, większość czasu jest spędzana w tym obszarze centralnej.
+
+Visual Studio będzie korzystać *projekty* organizowania kodu dla aplikacji i *rozwiązań* do organizowania projektów. Projekt zawiera wszystkie opcje, konfiguracji i reguły służące do tworzenia aplikacji. Umożliwia także zarządzanie relacji między plików wszystkich projektów i pliki zewnętrzne. Aby utworzyć aplikację, najpierw należy utworzyć nowy projekt i rozwiązanie.
+
+### <a name="to-create-a-console-app-project"></a>Aby utworzyć projekt aplikacji konsoli
+
+1. Na pasku menu wybierz **Plik > Nowy > Projekt** otworzyć **nowy projekt** okno dialogowe.
+
+   ![Na pasku menu, wybierz Plik > Nowy > Projekt](../ide/media/get-started-cpp-file-new-project-menu.png "paska menu, wybierz Plik > Nowy > Projekt")
+
+1. W **nowy projekt** okno dialogowe, wybierz opcję **zainstalowana > Visual C++** Jeśli nie została już wybrana. W środkowym okienku wybierz **aplikacji konsoli systemu Windows** szablonu. W **nazwa** pole edycji, wprowadź *HelloApp*.
+
+   ![Utwórz projekt aplikacji przy użyciu okna dialogowego Nowy projekt](../ide/media/get-started-cpp-new-project-dialog.png "Utwórz projekt aplikacji przy użyciu okna dialogowego Nowy projekt")
+
+   Twoje okno dialogowe może mieć różne opcje, w zależności od obciążeń programu Visual Studio i składników, które zostały zainstalowane. Jeśli nie widzisz szablony projektów Visual C++, musisz ponownie uruchomić Instalatora programu Visual Studio i zainstaluj **tworzenia klasycznych aplikacji w języku C++** obciążenia. Można to zrobić bezpośrednio z **nowy projekt** okna dialogowego. Aby uruchomić Instalatora, wybierz **Otwórz Instalator programu Visual Studio** łącze w oknie dialogowym.
+
+1. Wybierz **OK** przycisk, aby utworzyć projekt aplikacji i rozwiązań.
+
+   HelloApp projektu i rozwiązania z podstawowych plików aplikacji konsoli systemu Windows są tworzone i ładowane automatycznie do **Eksploratora rozwiązań**. Plik HelloApp.cpp jest otwarty w edytorze kodu. Te elementy są wyświetlane w **Eksploratora rozwiązań**:
+
+   ![Pliki rozwiązania w Eksploratorze rozwiązań](../ide/media/get-started-cpp-solution-explorer.png "plików rozwiązania w Eksploratorze rozwiązań")
+
+## <a name="add-code-to-the-app"></a>Dodawanie kodu do aplikacji
+
+Następnie dodaj kod, aby wyświetlić wyraz "Hello" w oknie konsoli.
+
+### <a name="to-edit-code-in-the-editor"></a>Aby edytować kodu w edytorze
+
+1. W pliku HelloApp.cpp wprowadzić pusty wiersz przed wierszem `return 0;` , a następnie wprowadź ten kod:
+
+   ```cpp
+   cout << "Hello\n";
+   ```
+
+   Linii o dowolnym kształcie red jest wyświetlany w obszarze `cout`. Jeśli wskaźnik znajduje się nad nim, zostanie wyświetlony komunikat o błędzie.
+
+   ![Tekst błędu dla cout](../ide/media/get-started-cpp-intellisense-error.png "tekst błędu dla cout")
+
+   Komunikat o błędzie pojawia się również w **listy błędów** okna. To okno można wyświetlić, wybierając **Widok > listy błędów** na pasku menu.
+
+   ![Błąd w oknie Lista błędów](../ide/media/get-started-cpp-error-list.png "błąd w oknie Lista błędów")
+
+   Brak deklaracji dla kodu [std::cout](/cpp/standard-library/iostream), który znajduje się w \<iostream > pliku nagłówka.
+
+1. Aby uwzględnić iostream — nagłówek, wprowadź ten kod po `#include "stdafx.h"`:
+
+   ```cpp
+   #include <iostream>
+   using namespace std;
+   ```
+
+   Należy zauważyć, jak został wprowadzony kod pojawił się pole. To pole zawiera automatycznego uzupełniania sugestie dotyczące znaków, które należy wprowadzić. Tego część IntelliSense dla C++, która zapewnia kodowania monitów, w tym elementów członkowskich klasy lub interfejsu i informacje o parametrach. Umożliwia także wstawki kodu, które są wstępnie zdefiniowane bloków kodu. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md) i [wstawki kodu](../ide/code-snippets.md).
+
+   ![Stałe kodu w edytorze](../ide/media/get-started-cpp-cout-fix.png "stałym kodu w edytorze")
+
+   Czerwony dowolnym kształcie linii pod `cout` zniknie po naprawieniu błędu.
+
+1. Aby zapisać zmiany w pliku, naciśnij klawisz **Ctrl + S**.
+
+## <a name="build-the-app"></a>Tworzenie aplikacji
+
+Jest łatwy do kompilacji kodu. Na pasku menu wybierz **kompilacji > Kompiluj rozwiązanie**. Visual Studio tworzy rozwiązanie HelloApp, a raporty postępu w **dane wyjściowe** okna.
+
+   ![Skompiluj rozwiązanie HelloApp](../ide/media/get-started-cpp-build-solution.gif "Skompiluj rozwiązanie HelloApp")
+
+## <a name="debug-and-test-the-app"></a>Debugowanie i testowanie aplikacji
+
+Można debugować HelloApp, aby zobaczyć, czy słowo "Hello" jest wyświetlany w oknie konsoli.
+
+### <a name="to-debug-the-app"></a>Do debugowania aplikacji
+
+1. Można uruchomić debugera, wybierz **Debuguj > Rozpocznij debugowanie** na pasku menu.
+
+   ![Rozpocznij debugowanie polecenia menu debugowania](../ide/media/get-started-cpp-start-debugging-menu.png "Rozpocznij debugowanie polecenia menu debugowania")
+
+   Debuger uruchamia i uruchamia kod. W oknie konsoli (osobnym oknie przypominającą wiersza polecenia) pojawia się na kilka sekund, ale zamyka szybkie, gdy debuger przestanie działać. Aby wyświetlić tekst, należy ustawić punkt przerwania, aby zatrzymać wykonanie programu.
+
+### <a name="to-add-a-breakpoint"></a>Aby dodać punkt przerwania
+
+1. W edytorze, umieść kursor w wierszu `return 0;`. Na pasku menu wybierz **Debuguj > Przełącz punkt przerwania**. Możesz również kliknąć na lewym marginesie, aby ustawić punkt przerwania.
+
+     ![Przełącz punkt przerwania — polecenie menu debugowania](../ide/media/get-started-cpp-toggle-breakpoint-menu.png "polecenie Przełącz punkt przerwania w menu debugowania")
+
+     Obok wiersza kodu na marginesie po lewej stronie okna edytora jest wyświetlane czerwone koło.
+
+     ![Punkt przerwania wskazane okno margines](../ide/media/get-started-cpp-breakpoint-set.png "punktu przerwania wskazane margines okna")
+
+1. Aby rozpocząć debugowanie, naciśnij klawisz **F5**.
+
+   Po uruchomieniu debugera i zostanie wyświetlone okno konsoli przedstawiający wyraz **Hello**.
+
+   ![Witaj tekst w oknie konsoli](../ide/media/get-started-cpp-helloapp-window.png "Hello tekst w oknie konsoli")
+
+1. Aby zatrzymać debugowanie, naciśnij klawisz **Shift + F5**.
+
+Aby uzyskać więcej informacji na temat debugowania projektu konsoli, zobacz [projekty startowe](../debugger/debugging-preparation-console-projects.md).
+
+## <a name="build-a-release-version-of-the-app"></a>Tworzenie wersji aplikacji
+
+Teraz, gdy upewnieniu się, że wszystko działa, można przygotować kompilację wersji aplikacji. Wersja kompilacji pozostaw informacji o debugowaniu i opcje optymalizacji kompilatora używany do tworzenia mniejszy, szybszy kodu.
+
+### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Aby wyczyścić pliki rozwiązań i zbudować wersję przeznaczoną do publikacji
+
+1. Na pasku menu wybierz **kompilacji > Wyczyść rozwiązanie** do usuwania plików pośrednich i pliki wyjściowe, które zostały utworzone w poprzednich wersjach.
+
+   ![Polecenie Wyczyść rozwiązanie w menu kompilacji](../ide/media/get-started-cpp-clean-solution-menu.png "ExploreIDE CleanSolution")
+
+1. Aby zmienić konfigurację rozwiązania HelloApp z **debugowania** do **wersji**, na pasku narzędzi wybierz z listy rozwijanej w formancie konfiguracje rozwiązania, a następnie wybierz pozycję **wersji**.
+
+   ![Tworzenie wersji aplikacji](../ide/media/get-started-cpp-set-release-configuration.png "IDE_ChangingBuildtoRelease C ++")
+
+1. Skompiluj rozwiązanie. Na pasku menu wybierz **kompilacji > Kompiluj rozwiązanie**.
+
+Po zakończeniu tej kompilacji, po utworzeniu aplikacji, które mogą kopiować i uruchamiać w dowolnym oknie wiersza polecenia. Nie może wykonać znacznie, ale jest bramy do elementów większa.
+
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Jeśli chcesz poznać więcej przykładów, zobacz [przykłady dotyczące programu Visual Studio](../ide/visual-studio-samples.md).
+
+## <a name="see-also"></a>Zobacz także
+
+[Projektowanie aplikacji w języku C++ w środowisku Visual Studio IDE](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
+[Przewodnik: Tworzenie prostej aplikacji w języku Visual C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[Visual Studio — wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)  
+[Przykłady programu Visual Studio](../ide/visual-studio-samples.md)  
+[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)
