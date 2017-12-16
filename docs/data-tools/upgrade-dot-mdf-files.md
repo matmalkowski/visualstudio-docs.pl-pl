@@ -13,41 +13,39 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8ed511eed7b0ace46bbc61c1d486ade608d4b5a5
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c02ae1ba7091871f92d1fdf00f55f7d0ded6024f
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnij plików .mdf
-W tym temacie opisano opcje uaktualniania pliku bazy danych (mdf), po zainstalowaniu nowszej wersji programu Visual Studio. Zawiera instrukcje dotyczące następujących zadań:  
-  
--   Uaktualnić plik bazy danych do nowszej wersji programu SQL Server Express LocalDB  
-  
--   Uaktualnić plik bazy danych do nowszej wersji programu SQL Server Express  
-  
--   Praca z plikiem bazy danych w programie Visual Studio, ale zachować zgodność ze starszymi wersjami programu SQL Server Express lub LocalDB  
-  
--   Wprowadź programu SQL Server Express domyślny aparat bazy danych  
-  
-Aby otworzyć projekt, który zawiera plik bazy danych (mdf), który został utworzony przy użyciu starszej wersji programu SQL Server Express lub LocalDB, można użyć programu Visual Studio. Aby kontynuować tworzenie projektu w programie Visual Studio, musi mieć danej wersji programu SQL Server Express lub LocalDB zainstalowany na tym samym komputerze co program Visual Studio lub należy uaktualnić plik bazy danych. Jeżeli uaktualnisz plik bazy danych nie można do niego dostęp przy użyciu starszej wersji programu SQL Server Express lub LocalDB.  
-  
-Może też pojawić się prośba uaktualnić plik bazy danych, który został utworzony za pomocą starszej wersji programu SQL Server Express lub LocalDB, jeśli wersja pliku nie jest zgodna z wystąpienia programu SQL Server Express lub LocalDB, które jest obecnie zainstalowane. Aby rozwiązać ten problem, Visual Studio spowoduje wyświetlenie monitu do uaktualnienia pliku.  
-  
+
+W tym temacie opisano opcje uaktualniania pliku bazy danych (mdf), po zainstalowaniu nowszej wersji programu Visual Studio. Zawiera instrukcje dotyczące następujących zadań:
+
+- Uaktualnić plik bazy danych do nowszej wersji programu SQL Server Express LocalDB
+
+- Uaktualnić plik bazy danych do nowszej wersji programu SQL Server Express
+
+- Praca z plikiem bazy danych w programie Visual Studio, ale zachować zgodność ze starszymi wersjami programu SQL Server Express lub LocalDB
+
+- Wprowadź programu SQL Server Express domyślny aparat bazy danych
+
+Aby otworzyć projekt, który zawiera plik bazy danych (mdf), który został utworzony przy użyciu starszej wersji programu SQL Server Express lub LocalDB, można użyć programu Visual Studio. Aby kontynuować tworzenie projektu w programie Visual Studio, musi mieć danej wersji programu SQL Server Express lub LocalDB zainstalowany na tym samym komputerze co program Visual Studio lub należy uaktualnić plik bazy danych. Jeżeli uaktualnisz plik bazy danych nie można do niego dostęp przy użyciu starszej wersji programu SQL Server Express lub LocalDB.
+
+Może też pojawić się prośba uaktualnić plik bazy danych, który został utworzony za pomocą starszej wersji programu SQL Server Express lub LocalDB, jeśli wersja pliku nie jest zgodna z wystąpienia programu SQL Server Express lub LocalDB, które jest obecnie zainstalowane. Aby rozwiązać ten problem, Visual Studio spowoduje wyświetlenie monitu do uaktualnienia pliku.
+
 > [!IMPORTANT]
-> Firma Microsoft zaleca, Utwórz kopię zapasową pliku bazy danych przed rozpoczęciem uaktualniania.  
-  
+> Firma Microsoft zaleca, Utwórz kopię zapasową pliku bazy danych przed rozpoczęciem uaktualniania.
+
 > [!WARNING]
 > Po uaktualnieniu plik mdf, który został utworzony w LocalDB 2014 r. (wersja 12) 32-bitowych do LocalDB 2016 (V13) lub nowszym, nie można ponownie otworzyć plik w 32-bitowej wersji bazy danych LocalDB.
-  
-Przed rozpoczęciem uaktualniania bazy danych, należy wziąć pod uwagę następujące kryteria:  
+
+Przed rozpoczęciem uaktualniania bazy danych, należy wziąć pod uwagę następujące kryteria:
   
 -   Nie uaktualniaj, jeśli chcesz pracować nad projektem w starszej wersji i nowszej wersji programu Visual Studio.  
   
@@ -116,4 +114,5 @@ Można również zmodyfikować połączenie programu SQL Server Express do użyc
     SQL Server Express będzie domyślny aparat bazy danych dla aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
+
 [Uzyskiwanie dostępu do danych w programie Visual Studio](accessing-data-in-visual-studio.md)

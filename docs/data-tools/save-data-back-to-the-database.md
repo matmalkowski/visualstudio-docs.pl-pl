@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych w bazie danych
 Zestaw danych znajduje się w pamięci kopia danych. Jeśli zmodyfikujesz danych jest dobrym rozwiązaniem, aby zapisać te zmiany w bazie danych. Można to robić na jeden z trzech sposobów:  
@@ -46,15 +46,15 @@ Jeśli znasz TableAdapters, można przejść bezpośrednio do jednej z poniższy
 |Temat|Opis|  
 |-----------|-----------------|  
 |[Wstawianie nowych rekordów do bazy danych](../data-tools/insert-new-records-into-a-database.md)|Jak przeprowadzić aktualizacje i wstawia przy użyciu polecenia lub TableAdapters obiektów|  
-|[Aktualizowanie danych za pomocą TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Jak przeprowadzić aktualizacji przy użyciu TableAdapters|  
+|[Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Jak przeprowadzić aktualizacji przy użyciu TableAdapters|  
 |[Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)|Jak przeprowadzić aktualizacje z zestawu danych z co najmniej dwie tabele powiązane|  
-|[Obsługa wyjątku współbieżności](../data-tools/handle-a-concurrency-exception.md)|Sposób obsługi wyjątków, gdy dwóch użytkowników próbują zmienić tych samych danych w bazie danych, w tym samym czasie|  
+|[Obsługiwanie wyjątku współbieżności](../data-tools/handle-a-concurrency-exception.md)|Sposób obsługi wyjątków, gdy dwóch użytkowników próbują zmienić tych samych danych w bazie danych, w tym samym czasie|  
 |[Porady: zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)|Jak zapisać danych w transakcji za pomocą przestrzeni nazw System.Transactions i obiektu TransactionScope|  
-|[Wskazówki: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Wskazówki, która tworzy aplikacji formularzy systemu Windows, aby zademonstrować zapisywania danych do bazy danych wewnątrz transakcji|  
+|[Przewodnik: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Wskazówki, która tworzy aplikacji formularzy systemu Windows, aby zademonstrować zapisywania danych do bazy danych wewnątrz transakcji|  
 |[Zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md)|Sposób edytowania rekordów i Zapisz zmiany w wielu tabel w bazie danych|  
-|[Zapisz dane z obiektu do bazy danych](../data-tools/save-data-from-an-object-to-a-database.md)|Sposób przekazywania danych z obiektu, który nie znajduje się w zestawie danych do bazy danych przy użyciu metody TableAdapter DbDirect|  
-|[Zapisz dane z TableAdapter DBDirect metody](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak używać TableAdapter do wysyłania zapytań SQL bezpośrednio do bazy danych|  
-|[Zapisywanie zestawu danych jako XML](../data-tools/save-a-dataset-as-xml.md)|Jak zapisać zestawu danych do dokumentu XML|  
+|[Zapisywanie danych z obiektu w bazie danych](../data-tools/save-data-from-an-object-to-a-database.md)|Sposób przekazywania danych z obiektu, który nie znajduje się w zestawie danych do bazy danych przy użyciu metody TableAdapter DbDirect|  
+|[Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak używać TableAdapter do wysyłania zapytań SQL bezpośrednio do bazy danych|  
+|[Zapisywanie zestawu danych jako kodu XML](../data-tools/save-a-dataset-as-xml.md)|Jak zapisać zestawu danych do dokumentu XML|  
   
 ## <a name="two-stage-updates"></a>Aktualizacje dwuetapowa  
  Aktualizowanie źródła danych jest procesem dwuetapowym. Pierwszym krokiem jest można zaktualizować zestawu danych o nowych rekordów, zmienionych rekordów lub usuniętych rekordów. Jeśli aplikacja nigdy nie wysyła te zmiany z powrotem do źródła danych, następnie zakończeniu z aktualizacją.  
@@ -217,7 +217,7 @@ W poniższej tabeli opisano, jakie zmiany są zatwierdzone na co obiekt ma zosta
 -   W danych zaplecza, na wysyłanie danych do źródła danych — na przykład bazy danych —, dzięki czemu jego o zaakceptowanie lub odrzucenie danych. Podczas pracy z bazą danych, w którym dostępne są zaawansowane opcje urządzenia do sprawdzania poprawności danych i udostępnia informacje o błędzie, może to być praktyczne rozwiązania, ponieważ można sprawdzić poprawność danych niezależnie od tego, gdzie pochodzi on z. Jednak ta metoda nie może uwzględnić wymagania weryfikacji specyficzne dla aplikacji. Ponadto posiadanie źródła danych sprawdzania poprawności danych może spowodować wiele rund do źródła danych, w zależności od tego, jak aplikacji upraszcza rozpoznawanie błędów sprawdzania poprawności zgłaszany przez wewnętrzny.  
   
     > [!IMPORTANT]
-    >  Za pomocą poleceń danych z <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która ma ustawioną wartość <xref:System.Data.CommandType.Text>, należy dokładnie sprawdzić informacje wysyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą stanowić próbę wysyłania (Wstaw) zmodyfikowany lub dodatkowe instrukcje SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze Sprawdź, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem, aby zawsze używała zapytań sparametryzowanych lub procedur składowanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Za pomocą poleceń danych z <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która ma ustawioną wartość <xref:System.Data.CommandType.Text>, należy dokładnie sprawdzić informacje wysyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą stanowić próbę wysyłania (Wstaw) zmodyfikowany lub dodatkowe instrukcje SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze Sprawdź, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem, aby zawsze używała zapytań sparametryzowanych lub procedur składowanych, gdy jest to możliwe.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Przesyłania aktualizacji do źródła danych  
 Po dokonaniu zmian w zestawie danych, może przesyłać zmiany ze źródłem danych. Najczęściej, możesz to zrobić przez wywołanie metody `Update` metodę TableAdapter (lub adapter danych). Metoda pętlę każdego rekordu w tabeli danych określa, jaki typ aktualizacji jest wymagany (aktualizowania, wstawiania lub usuwania), jeśli istnieje, a następnie uruchamia odpowiednie polecenie.  
@@ -258,7 +258,7 @@ Po dokonaniu zmian w zestawie danych, może przesyłać zmiany ze źródłem dan
   
  <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> Właściwości każdego parametru wskazuje kolumnę w tabeli danych. Na przykład `SourceColumn` właściwość `au_id` i `Original_au_id` parametry ustawiono niezależnie od kolumny w tabeli danych zawiera identyfikator autora. Gdy karty `Update` uruchamia — metoda odczytuje identyfikator kolumny autora z rekordu, który jest aktualizowana i wpisuje wartości w instrukcji.  
   
- W instrukcji UPDATE należy określić zarówno nowe wartości (takie, które będą zapisywane dla tego rekordu) również stare wartości (tak, aby rekordu może znajdować się w bazie danych). Istnieją dwa parametry dla każdej wartości: jeden dla klauzuli SET, a druga w klauzuli WHERE. Oba parametry odczytać danych z rekordu, który jest aktualizowana, ale otrzymują różne wersje wartości kolumn na podstawie parametru [SqlParameter.SourceVersion właściwości](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Parametr dla klauzuli SET pobiera bieżącą wersję, a parametr dla klauzuli WHERE pobiera wersji oryginalnej.  
+ W instrukcji UPDATE należy określić zarówno nowe wartości (takie, które będą zapisywane dla tego rekordu) również stare wartości (tak, aby rekordu może znajdować się w bazie danych). Istnieją dwa parametry dla każdej wartości: jeden dla klauzuli SET, a druga w klauzuli WHERE. Oba parametry odczytać danych z rekordu, który jest aktualizowana, ale otrzymują różne wersje wartości kolumn na podstawie parametru <xref:System.Data.SqlClient.SqlParameter.SourceVersion> właściwości. Parametr dla klauzuli SET pobiera bieżącą wersję, a parametr dla klauzuli WHERE pobiera wersji oryginalnej.  
   
 > [!NOTE]
 >  Można też ustawić wartości w `Parameters` kolekcji samodzielnie w kodzie, które zwykle należy w obsłudze zdarzeń dla adaptera danych <xref:System.Data.DataTable.RowChanging> zdarzeń.  

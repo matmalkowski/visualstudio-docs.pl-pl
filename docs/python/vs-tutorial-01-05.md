@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ab2988bc1123ef16adc929da297a7d5240ec668c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
@@ -48,23 +48,22 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 
 1. Utwórz nowy projekt z **Plik > Nowy > Projekt**, wybierając szablon "Python aplikacji". W pliku kodu, który pojawia się Wklej następujący kod, który tworzy wave cosinus, takich jak poprzednich kroków samouczka tylko tym kreślone graficznie:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Uruchom program z (F5) lub bez debugera (Ctrl + F5), aby wyświetlić dane wyjściowe:
 
   ![Dane wyjściowe przykład matplotlib](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -72,4 +71,5 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 > [Praca z usługą Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Przechodząc głębiej
+
 - [Środowiska Python](python-environments.md)

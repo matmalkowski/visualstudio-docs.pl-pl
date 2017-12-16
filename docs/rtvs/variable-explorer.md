@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: e2c65797293a4f4edcc2f6d068db0ee7d9a4f210
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="variable-explorer"></a>Eksplorator zmiennej
 
@@ -27,22 +27,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 Okno Eksploratora zmiennej pojawia się w następujący sposób:
 
 ![Okno Eksploratora zmiennej w Visual Studio](media/variable-explorer-window.png)
 
 Jeśli masz bardziej złożonych ramki danych R zdefiniowane w sesji, można przejść do danych. Na przykład po uruchomieniu `cars <- mtcars` rozwijając różnych węzłów w Eksploratorze zmiennej można nawigować zestawu danych:
- 
+
 ![Rozwinięty widok Eksploratora zmiennej](media/variable-explorer-expanded-results.png)
- 
+
 Aby usunąć zmienne, kliknij prawym przyciskiem myszy i wybierz **usunąć**, lub wybierz zmienną i naciśnij klawisz Delete.
 
 Możesz również wyszukać obserwacji w ramce danych przy użyciu Wyszukiwanie przyrostowe. Po pierwsze rozwiń węzły w ramce danych, który chcesz przeszukać, a następnie wprowadź terminy wyszukiwania w polu wyszukiwania.
 
 ## <a name="details-table-view"></a>Widok szczegółów (tabeli)
 
-Ponieważ dane są często tabelarycznych, dowolny typ danych złożonych można wyświetlić jako osobnej tabeli wybierając ikonę lupy lub klikając prawym przyciskiem myszy i wybierając **Pokaż szczegóły**. 
+Ponieważ dane są często tabelarycznych, dowolny typ danych złożonych można wyświetlić jako osobnej tabeli wybierając ikonę lupy lub klikając prawym przyciskiem myszy i wybierając **Pokaż szczegóły**.
 
 ![Widok Eksploratora zmiennych w tabeli](media/variable-explorer-table-view.png)
 
@@ -69,7 +69,6 @@ Można również przełączyć się do zakresu funkcji po zatrzymaniu w punkcie 
 ![Zmienna Explorer przedstawiający ramki danych podczas debugowania](media/variable-explorer-as-locals-window.png)
 
 Zmienna Explorer automatycznie zmieni zakresem funkcji krokowo kodu w debugerze, takie jak wyświetlanie zmiennych lokalnych w funkcji.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importowanie danych do zmiennej Explorer
 

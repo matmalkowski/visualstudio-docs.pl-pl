@@ -18,11 +18,11 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecbf4b95689d760a58e00a65671c13c4c0807b51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Porady: korzystanie z kreatora z szablonami projektu
 Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu, implementując umożliwia uruchamianie kodu niestandardowego, gdy użytkownik tworzy projekt z szablonu.  
@@ -34,12 +34,12 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Tworzenie projektu szablonu projektu z projektu VSIX  
  Możesz uruchomić utworzenie niestandardowego szablonu z projektu szablonu projektu., który wchodzi w skład programu Visual Studio SDK. W tej procedurze używamy projektu szablonu projektu C#, ale jest również projektu szablonu projektu Visual Basic. Następnie należy dodać projektu VSIX do rozwiązania, które zawiera projekt szablonu projektu.  
   
-1.  Tworzenie projektu szablonu projektu C# (w programie Visual Studio, **pliku / New / Project / Visual C# / rozszerzalności / szablon projektu C#**). Nadaj mu nazwę **MyProjectTemplate**.  
+1.  Tworzenie projektu szablonu projektu C# (w programie Visual Studio **Plik > Nowy > Projekt > Visual C# > rozszerzalności > szablon projektu C#**). Nadaj mu nazwę **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Użytkownik może monit o zainstalowanie programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Dodawanie nowego projektu VSIX (**pliku / New / Project / Visual C# / rozszerzalności / projektu VSIX**) w tego samego rozwiązania co projekt szablonu (w **Eksploratora rozwiązań**, wybierz węzeł rozwiązania Kliknij prawym przyciskiem myszy, a następnie wybierz **Add / Project nowy**). Nadaj mu nazwę **MyProjectWizard.**  
+2.  Dodawanie nowego projektu VSIX (**Plik > Nowy > Projekt > Visual C# > rozszerzalności > projektu VSIX**) w tego samego rozwiązania co projekt szablonu (w **Eksploratora rozwiązań**, wybierz pozycję rozwiązanie, kliknij prawym przyciskiem myszy, a następnie wybierz węzeł **Dodaj > Nowy projekt**). Nadaj mu nazwę **MyProjectWizard.**  
   
 3.  Ustaw projekt VSIX jako projekt startowy. W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.  
   
@@ -51,14 +51,14 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
   
 7.  Skompiluj rozwiązanie i Rozpocznij debugowanie. Zostanie wyświetlone drugie wystąpienie programu Visual Studio. (Może to potrwać kilka minut).  
   
-8.  W drugim wystąpienie programu Visual Studio spróbuj utworzyć nowy projekt z nowego szablonu. (**Pliku / New / Project / Visual C# / szablon MyProject**). Nowy projekt powinien zostać wyświetlony z klasy o nazwie **Class1**. Został utworzony szablon niestandardowy projektu! Zatrzymać debugowanie.  
+8.  W drugim wystąpienie programu Visual Studio spróbuj utworzyć nowy projekt z nowego szablonu. (**Plik > Nowy > Projekt > Visual C# > szablonu MyProject**). Nowy projekt powinien zostać wyświetlony z klasy o nazwie **Class1**. Został utworzony szablon niestandardowy projektu! Zatrzymać debugowanie.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Tworzenie kreatora szablonu niestandardowego  
  W tym temacie przedstawiono sposób tworzenia niestandardowego kreatora otwartym formularzu systemu Windows, przed utworzeniem projektu. Formularz umożliwia użytkownikom dodanie wartość parametru niestandardowych, który jest dodawany do kodu źródłowego podczas tworzenia projektu.  
   
 1.  Konfigurowanie projektu VSIX, aby umożliwić go w celu utworzenia zestawu.  
   
-2.  W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX. Poniżej Eksploratora rozwiązań powinien zostać wyświetlony **właściwości** okna. W przeciwnym razie wybierz **widok / okno właściwości**, lub naciśnij klawisz **F4**. W oknie właściwości wybierz następujące pola do `true`:  
+2.  W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX. Poniżej Eksploratora rozwiązań powinien zostać wyświetlony **właściwości** okna. W przeciwnym razie wybierz **Widok > okno właściwości**, lub naciśnij klawisz **F4**. W oknie właściwości wybierz następujące pola do `true`:  
   
     -   **IncludeAssemblyInVSIXContainer**  
   
@@ -295,7 +295,7 @@ namespace $safeprojectname$
   
 1.  Ponownie skompiluj rozwiązanie i Rozpocznij debugowanie. Powinna pojawić się drugie wystąpienie programu Visual Studio.  
   
-2.  Utwórz nowy projekt MyProjectTemplate. (**Pliku / New / Project / Visual C# / MyProjectTemplate**)  
+2.  Utwórz nowy projekt MyProjectTemplate. (**Plik > Nowy > Projekt > Visual C# > MyProjectTemplate**)  
   
 3.  W **nowy projekt** okno dialogowe Znajdź szablon, wpisz nazwę i kliknij przycisk **OK**.  
   
@@ -312,4 +312,4 @@ namespace $safeprojectname$
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
- [Wizardextension — Element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
+ [WizardExtension, element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)

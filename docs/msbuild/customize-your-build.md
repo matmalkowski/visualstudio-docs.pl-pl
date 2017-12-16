@@ -15,11 +15,11 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ed63e19334c2c1c40cd5ac353974d7a1dbdc5764
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 W wersjach programu MSBuild przed wersji 15 Jeśli chcesz podać nowych, niestandardowych właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy, Zdefiniuj właściwość w pliku .props, a następnie jawnie zaimportowanie pliku .props w każdym projekcie w rozwiązaniu, między innymi.
@@ -87,7 +87,7 @@ Dla programu msbuild poprawnie scalić pliki "wewnętrzna" (`2-src` i `2-test`) 
 Podsumowanie przez msbuild ogólne podejście jest następujący:
 
 - Dla żadnego danego projektu msbuild wyszukuje pierwszy `Directory.Build.props` w górę w strukturze rozwiązania scala go przy użyciu ustawień domyślnych i zatrzymuje skanowanie, aby uzyskać więcej informacji
-- Jeśli chcesz, aby wiele poziomów znaleziono i scalić następnie [ `<Import...>` ](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (należy pokazanym powyżej) "zewnętrzne" pliku z pliku "wewnętrzne"
+- Jeśli chcesz, aby wiele poziomów znaleziono i scalić następnie [ `<Import...>` ](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (należy pokazanym powyżej) "zewnętrzne" pliku z pliku "wewnętrzne"
 - Jeśli plik "zewnętrzne" nie, nie również zaimportować coś powyżej, następnie skanowanie zatrzymuje
 - Aby kontrolować proces skanowania scalanie, użyj `$(DirectoryBuildPropsPath)` i`$(ImportDirectoryBuildProps)`
 
@@ -95,4 +95,4 @@ Lub po prostu: pierwszy `Directory.Build.props` którego nie importuje niczego, 
 
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   

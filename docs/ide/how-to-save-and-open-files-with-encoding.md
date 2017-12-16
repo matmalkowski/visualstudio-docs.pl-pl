@@ -17,11 +17,11 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 13b00135adfe3d65adeed7eecc5f9e22e4b7a2cb
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Porady: zapisywanie i otwieranie kodowanych plików
 Pliki można zapisywać znakiem określonego kodowania w celu włączenia obsługi języków dwukierunkowych. Można również określić kodowania podczas otwierania pliku, tak, aby poprawnie Wyświetla plik programu Visual Studio.  
@@ -58,6 +58,7 @@ Pliki można zapisywać znakiem określonego kodowania w celu włączenia obsłu
   
 3.  Wykonaj kroki 2 i 3 w poprzedniej procedurze.  
   
-## <a name="see-also"></a>Zobacz też  
- [Kodowanie i globalizacja formularzy systemu Windows](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
- [Globalizacja i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>Zobacz także
+[Kodowanie i podziały wierszy](encodings-and-line-breaks.md)  
+[Kodowanie i globalizacja formularzy systemu Windows](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[Globalizowanie i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

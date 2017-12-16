@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c4ed4d6a90a91ac927feb3be76a06d8080267057
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Używanie rozszerzenia Visual Studio Tools for Unity
 W tej sekcji omówiono sposób użycia programu Visual Studio Tools dla Unity w integracja i funkcje produktywności i sposobu użycia debuger programu Visual Studio do tworzenia aplikacji platformy Unity.  
@@ -97,9 +97,9 @@ W tej sekcji omówiono sposób użycia programu Visual Studio Tools dla Unity w 
 |Otwórz Eksplorator projektów Unity|**Alt + Shift + E**|**View.UnityProjectExplorer**|  
 |Dostęp do dokumentacji Unity|**Ctrl + Alt + M, Ctrl + H**|**Help.UnityAPIReference**|  
 |Dołączanie debugera Unity (player lub edytorze)|***Brak wartości domyślnej***|**Debug.AttachUnityDebugger**|  
-
- Kombinacje klawiszy skrótu można zmienić, jeśli nie chcesz, aby domyślnie. Informacje o tym, jak je zmienić, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio](https://msdn.microsoft.com/en-us/library/5zwses53.aspx).  
-
+  
+ Kombinacje klawiszy skrótu można zmienić, jeśli nie chcesz, aby domyślnie. Informacje o tym, jak je zmienić, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+  
 ## <a name="unity-debugging"></a>Debugowanie Unity  
  Visual Studio Tools for Unity umożliwia debugowanie zarówno edytora i skrypty gier dla projektu Unity za pomocą zaawansowanych debuger programu Visual Studio.  
 

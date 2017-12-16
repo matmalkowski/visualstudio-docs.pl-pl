@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d98688251cb7ea2d1336da0b0afc47a2b86fc03d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e1fe1b28af5d7af79057c6c0feff9adaf1aecca8
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="install-python-support-in-visual-studio"></a>Zainstaluj obsługę języka Python w programie Visual Studio
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/01/2017
 > [!div class="nextstepaction"]
 > [Krok 1: Tworzenie projektu języka Python](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).

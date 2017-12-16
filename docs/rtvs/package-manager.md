@@ -1,5 +1,5 @@
 ---
-title: "Menedżer pakietów w R narzędzi dla programu Visual Studio | Dokumentacja firmy Microsoft"
+title: "Menedżer pakietów w R Tools for Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 92644bcb21c23eb91ccd8223b99cce98ba4c57db
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 3c1449b9e6bd671c8fd722f3c3d7272c8cc65cc7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="package-manager"></a>Menedżer pakietów
 

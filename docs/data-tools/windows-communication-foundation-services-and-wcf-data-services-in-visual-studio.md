@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communication Foundation (WCF) i [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologii firmy Microsoft do tworzenia aplikacji rozproszonych. Ten temat zawiera wprowadzenie do usługi z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektywy. Pełną dokumentację można znaleźć [4.5 usługi danych WCF](/dotnet/framework/data/wcf/index).  
@@ -239,11 +239,10 @@ Aby uniknąć tego problemu, domyślnie są udostępniane typów w zestawach, do
 |-----------|-----------------|  
 |[Wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Udostępnia krok Pokaz tworzenia i używania usługi WCF w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Wskazówki: Tworzenie usługi danych WCF z WPF i strukturą Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Udostępnia pokaz krok po kroku dotyczące tworzenia i używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Za pomocą narzędzi deweloperskich programu WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|W tym artykule omówiono sposób tworzenia i testowania usługi WCF w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Używanie narzędzi deweloperskich programu WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|W tym artykule omówiono sposób tworzenia i testowania usługi WCF w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 ||[Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Omówiono sposób odwołania i użyj [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md)|Przedstawia informacje o niektórych typowych błędów, które mogą wystąpić z odwołania do usług i jak zapobiec ich.|  
 |[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|W tym artykule opisano typowe problemy debugowania i techniki, które mogą wystąpić podczas debugowania usług WCF.|  
-|[Omówienie usługi uwierzytelniania Windows Communication Foundation](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Informacje dotyczące używania usługi WCF do świadczenia usług ról dla witryny sieci Web.|  
 |[Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Zawiera szczegółowe instrukcje dotyczące tworzenie typizowanego zestaw danych i rozdzielić wiele projektów kodu TableAdapter i zestawu danych.|  
 |[Konfiguruj odwołanie do usługi — okno dialogowe](../data-tools/configure-service-reference-dialog-box.md)|W tym artykule opisano elementy interfejsu użytkownika z **odwołania do konfigurowania usługi** okno dialogowe.|  
   
@@ -253,4 +252,4 @@ Aby uniknąć tego problemu, domyślnie są udostępniane typów w zestawach, do
  <xref:System.Data.Services>  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

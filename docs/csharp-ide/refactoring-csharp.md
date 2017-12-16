@@ -1,5 +1,5 @@
 ---
-title: Visual Studio refaktoryzacji funkcji (C#) | Dokumentacja firmy Microsoft
+title: Refaktoryzacja funkcji w programie Visual Studio C# | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>Refaktoryzacji funkcje C# #
+# <a name="refactoring-features-in-c"></a>Refaktoryzacja funkcji w języku C# #
 
-Refaktoryzacja to proces poprawy kodu po został zapisany. Refaktoryzacja zmiany wewnętrznej struktury kodu bez zmiany jego zachowania. Następujące funkcje refaktoryzacji są dostępne w programie Visual Studio w języku C#:
+Refaktoryzacja jest proces zmiany struktury wewnętrznej kodu bez zmiany jego zachowania. Refaktoryzacja jest często umożliwia kodu do odczytu, łatwy w obsłudze i niezawodność.
+
+Następujące funkcje refaktoryzacji są dostępne w programie Visual Studio w języku C#:
 
 * [Zmiana sygnatury metody](refactoring/change-method-signature.md)
 * [Konwertuj metody Get właściwości/właściwości, aby metody Get](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ Refaktoryzacja to proces poprawy kodu po został zapisany. Refaktoryzacja zmiany
 
 ## <a name="see-also"></a>Zobacz także
 
-[Używanie środowiska programistycznego Visual Studio dla C#](using-the-visual-studio-development-environment-for-csharp.md)  
+[Refaktoryzacja, generowanie kodu i szybkie akcje w programie Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Refaktoryzacja w języku Visual Basic](../vb-ide/refactoring-vb.md)  
+[Używanie środowiska programistycznego Visual Studio dla C#](using-the-visual-studio-development-environment-for-csharp.md)

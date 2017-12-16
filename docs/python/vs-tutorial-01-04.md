@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 90f22c2f7626b09f230c497c54c8a37511ea1b0b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c8d9e1ea91b5f13961941644871dd881f49a7416
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 
@@ -26,34 +26,34 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 
 1. Zastąp kod w `PythonApplication1.py` pliku następującym kodem. Ta różnica kod rozszerza `make_dot_string` , dzięki czemu można sprawdzić jego odrębny kroków w debugerze. Pulpit zapewnia również `for` pętli do `main` funkcji i uruchamia go jawnie przez wywołanie tej funkcji:
 
-    ```python  
-    import sys  
-    from math import sin, cos, radians    
-    
+    ```python
+    import sys
+    from math import sin, cos, radians
+
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
         str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
         return str
-    
-    def main():  
+
+    def main():
         for i in range(0, 1800, 12):
-            s = make_dot_string(i)  
-            print(s)  
-            
+            s = make_dot_string(i)
+            print(s)
+
     main()
-    ```  
+    ```
 
 1. Sprawdź, czy kod działa poprawnie naciśnięcie klawisza F5 lub wybierając **Debuguj > Rozpocznij debugowanie** polecenia menu. To polecenie uruchamia kod w debugerze, ale ponieważ nie została jeszcze wykonana żadnych czynności, aby wstrzymać program jest uruchomiona, po prostu Wyświetla szablon wave dla kilku iteracji. Klawisze w oknie danych wyjściowych.
 
     > [!Tip]
     > Aby zamknąć okno danych wyjściowych automatycznie po zakończeniu program, należy zastąpić `main()` wywołania z następującym kodem:
     >
-    > ```python    
-    > if __name__ == "__main__":  
-    >     sys.exit(int(main() or 0))      
-    > ```    
+    > ```python
+    > if __name__ == "__main__":
+    >     sys.exit(int(main() or 0))
+    > ```
 
 1. Ustaw punkt przerwania w `for` instrukcji, klikając szary marginesie tego wiersza lub umieszczając karetki w tym wierszu i przy użyciu **Debuguj > Przełącz punkt przerwania** polecenia (F9). Czerwonej kropki pojawia się na marginesie szary, aby wskazać punkt przerwania (wspomnianego strzałką poniżej):
 
@@ -78,7 +78,7 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
     - **Step Out** (Shift + F11) jest uruchamiana w pozostałej części bieżącej funkcji i zatrzymuje się w wywoływanym kodzie.
 
 1. Przekrocz nad `for` instrukcji przy użyciu **Step Over**. *Wykonywanie krok po kroku* oznacza, że debuger działa bieżącego wiersza kodu, w tym wszystkie wywołania funkcji i natychmiast wstrzymuje ponownie. Powiadomienie jak zmienna `i` teraz jest zdefiniowany w **zmiennych lokalnych** i **automatycznych** systemu windows.
- 
+
 1. Krok w następnym wierszu kodu, który wywołuje `make_dot_string` i zatrzymuje się. Step Over tutaj specjalnie oznacza, że debuger działa całej `make_dot_string` i zatrzymuje się podczas zwraca. Debuger nie zatrzymuje wewnątrz tej funkcji, chyba że istnieje oddzielne punktu przerwania.
 
 1. Kontynuować pominięcie kodu kilka razy więcej i sprawdź, jak wartości w **zmiennych lokalnych** lub **automatycznych** okna zmiany.
@@ -86,20 +86,20 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 1. W **zmiennych lokalnych** lub **automatycznych** okna, kliknij dwukrotnie w **wartość** kolumny albo `i` lub `s` zmienne, aby edytować wartość. Naciśnij klawisz Enter lub kliknij poza tę wartość, aby zastosować zmiany.
 
 1. Kontynuować krokowe wykonywanie kodu za pomocą **Step Into**. Step Into oznacza, że debuger wprowadza wewnątrz każde wywołanie funkcji, dla którego ma debugowania informacje, takie jak `make_dot_string`. Raz wewnątrz `make_dot_string` możesz sprawdzić jej zmiennych lokalnych i w szczególności krokowo kodu.
- 
+
 1. Kontynuuj wykonywanie krok po kroku z Step Into i zwróć uwagę, że gdy dotrzeć do końca `make_dot_string`, następnym krokiem zwraca do `for` pętli przy użyciu nowej wartości zwracanych w `s` zmiennej. Podczas wykonywania kroków ponownie `print` instrukcji, powiadomienia tego kroku do na `print` nie wejdzie w tej funkcji. Jest to spowodowane `print` nie jest napisany w języku Python, ale jest raczej natywnego kodu wewnątrz środowiska uruchomieniowego języka Python.
 
 1. Nadal używać Wkrocz do czasu ponownie tym do `make_dot_string`. Następnie użyj **Wyjdź** i zwróć uwagę, że można wrócić do `for` pętli. Step Out debugera jest uruchamiany w pozostałej części funkcji i automatycznie wstrzymuje w wywoływanym kodzie. Jest to bardzo przydatne, gdy już przeprowadził przez pewną część długich funkcji, którą chcesz debugować, ale nie ma potrzeby krokowo rest i nie chcesz ustawić jawne punktu przerwania w wywoływanym kodzie.
 
 1. Aby kontynuować, program działa do momentu osiągnięcia następnego punktu przerwania, użyj **Kontynuuj** (F5). Ponieważ ma punkt przerwania w `for` pętli, Podziel przy następnej iteracji.
 
-1. Krokowe wykonywanie setki iteracji pętli może być niewygodny, więc Visual Studio umożliwia dodanie *warunku* do punktu przerwania. Debuger następnie wstrzymuje program na punkt przerwania, tylko wtedy, gdy warunek jest spełniony. Na przykład można użyć warunku z punktu przerwania na `for` instrukcję, tak że wstrzymuje tylko gdy wartość `i` przekracza 1600. Aby ustawić ten warunek, kliknij prawym przyciskiem myszy red punktu przerwania kropki (.), a następnie wybierz **warunki...** (Alt + F9, C). W **ustawienia punktów przerwania** menu podręczne, zostanie wyświetlone, wprowadź `i > 1600` jako wyrażenie i wybierz **Zamknij**. Naciśnij klawisz F5, aby kontynuować i sprawdź, czy program ma być uruchamiany dużo iteracji, zanim następnej przerwy. 
+1. Krokowe wykonywanie setki iteracji pętli może być niewygodny, więc Visual Studio umożliwia dodanie *warunku* do punktu przerwania. Debuger następnie wstrzymuje program na punkt przerwania, tylko wtedy, gdy warunek jest spełniony. Na przykład można użyć warunku z punktu przerwania na `for` instrukcję, tak że wstrzymuje tylko gdy wartość `i` przekracza 1600. Aby ustawić ten warunek, kliknij prawym przyciskiem myszy red punktu przerwania kropki (.), a następnie wybierz **warunki...** (Alt + F9, C). W **ustawienia punktów przerwania** menu podręczne, zostanie wyświetlone, wprowadź `i > 1600` jako wyrażenie i wybierz **Zamknij**. Naciśnij klawisz F5, aby kontynuować i sprawdź, czy program ma być uruchamiany dużo iteracji, zanim następnej przerwy.
 
     ![Ustawienie warunku punktu przerwania](media/vs-getting-started-python-21-debugging4.png)
 
 1. Aby uruchomić program do ukończenia, wyłącz punkt przerwania prawym przyciskiem myszy i wybierając **wyłączyć punkt przerwania** (Ctrl + F9). Następnie wybierz **Kontynuuj** (lub naciśnij klawisz F5) do uruchomienia programu. Po zakończeniu programu Visual Studio zatrzymuje sesję debugowania i powraca do trybu edycji. Należy pamiętać, że możesz także usunąć punkt przerwania, klikając jej kropką, ale to również usunięcie wszelkich warunek, który został skonfigurowany.
 
-> [!Tip]    
+> [!Tip]
 > W niektórych sytuacjach, takich jak Niepowodzenie uruchamiania interpreter języka Python, w oknie danych wyjściowych może są wyświetlane tylko chwilę, a następnie Zamknij automatycznie bez co daje możliwość zobaczyć komunikaty błędów. Jeśli tak się stanie, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **argumenty Interpreter** pole. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
 
 ## <a name="next-steps"></a>Następne kroki
@@ -108,5 +108,6 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 > [Instalowanie pakietów w środowisku Python](vs-tutorial-01-05.md)
 
 ### <a name="going-deeper"></a>Przechodząc głębiej
+
 - [Debugowanie](debugging.md).
 - [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) zapewnia pełną dokumentację programu Visual Studio na debugowanie funkcji.

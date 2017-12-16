@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
 **Odwołania do konfigurowania usługi** okno dialogowe umożliwia konfigurowanie zachowania [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] usług.  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/31/2017
  Określa, czy będzie można wywołać metody usługi WCF synchronicznie (ustawienie domyślne) lub asynchronicznie.  
   
  **Generowanie operacji opartego na zadaniach**  
- Podczas pisania kodu asynchroniczne, ta opcja umożliwia korzystanie z zadań równoległych biblioteki (TPL) wprowadzonej z platformą .net 4. Zobacz [zadań Biblioteka równoległych (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Podczas pisania kodu asynchroniczne, ta opcja umożliwia korzystanie z zadań równoległych biblioteki (TPL) wprowadzonej z platformą .net 4. Zobacz [zadań Biblioteka równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **Zawsze Generuj kontraktów komunikatu**  
  Określa, czy typy kontraktu komunikatu, zostanie wygenerowany dla klienta programu WCF. Aby uzyskać więcej informacji na temat kontraktów komunikatu, zobacz [za pomocą kontraktów komunikatu](/dotnet/framework/wcf/feature-details/using-message-contracts).  
@@ -97,4 +97,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
 
  [Porady: Dodawanie odwołania do usługi sieci Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Usługi Windows Communication Foundation oraz usługi danych WCF](../data-tools/configure-service-reference-dialog-box.md)
+ [Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)

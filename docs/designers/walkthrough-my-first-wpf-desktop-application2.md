@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Wskazówki: Pierwszy WPF pulpitu aplikację
 Ten przewodnik zawiera wprowadzenie do rozwoju Windows Presentation Foundation (WPF). Utworzysz Podstawowa aplikacja, która zawiera elementy, które są wspólne dla większości aplikacji klasycznych WPF: XAML znaczników, związane z kodem definicji aplikacji, kontrolki, układ, powiązania danych i style.  
@@ -851,40 +851,40 @@ W tej sekcji utworzysz infrastruktury aplikacji, które zawiera projekt i okna g
 ##  <a name="Best_Practices"></a>Najlepsze praktyki  
  W tym przykładzie przedstawiono podstawowe informacje o WPF i w związku z tym, nie jest zgodna z najlepszych rozwiązań tworzenia aplikacji. Dla kompleksowym WPF i .NET Framework aplikacji programowanie najlepszych rozwiązań zobacz następujące tematy, zależnie od potrzeb:  
   
--   Dostępność — [najlepsze praktyki dotyczące ułatwień dostępu](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Dostępność — [najlepsze praktyki dotyczące ułatwień dostępu](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Zabezpieczenia — [zabezpieczeń w systemie Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Zabezpieczenia — [zabezpieczeń w systemie Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
--   Lokalizacja — [omówienie lokalizacja i globalizacja WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Lokalizacja — [omówienie lokalizacja i globalizacja WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Wydajność — [optymalizacji wydajności aplikacji WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Wydajność — [optymalizacji wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a>Co to jest dalej  
  Masz teraz szereg technik dyspozycji użytkownika służący do tworzenia klasycznych aplikacji przy użyciu WPF. Powinny teraz mieć podstawową wiedzę na temat tworzenia bloków aplikacji WPF z danymi. W tym temacie w żadnym wypadku nie jest wyczerpująca, ale miejmy nadzieję, że użytkownik ma teraz również w pewnym sensie niektóre możliwości, które można wykryć samodzielnie poza technik w tym temacie.  
   
  Aby uzyskać więcej informacji o modelach programowanie i architektura WPF zobacz następujące tematy:  
   
--   [Architektura WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Architektura WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [XAML — omówienie](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [XAML — omówienie](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Przegląd właściwości zależności](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Przegląd właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Układ systemu](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Układ systemu](/dotnet/framework/wpf/advanced/layout)  
   
--   [Style i szablony](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Style i szablony](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Aby uzyskać więcej informacji o tworzeniu aplikacji zobacz następujące tematy:  
   
--   [Omówienie tworzenia aplikacji](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Omówienie tworzenia aplikacji](/dotnet/framework/wpf/app-development/index)  
   
--   [Informacje o formantach](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Informacje o formantach](/dotnet/framework/wpf/controls/index)  
   
--   [Omówienie powiązania danych](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [Omówienie nośnika, animacji i WPF grafikę](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Omówienie nośnika, animacji i WPF grafikę](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Dokumentów na platformie WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Dokumenty w WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Zobacz też  
-[Tworzenie nowoczesnych aplikacji klasycznych z technologii Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[Tworzenie nowoczesnych aplikacji klasycznych przy użyciu platformy Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

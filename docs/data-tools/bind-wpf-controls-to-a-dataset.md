@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązanie formantów WPF z zestawem danych
 W tym przewodniku spowoduje utworzenie aplikacji WPF, który zawiera formanty powiązane z danymi. Formanty są powiązane z rekordów produktów, które znajdują się w zestawie danych. Zostanie również dodawanie przycisków do przeglądania produktów i Zapisz zmiany w rekordach produktu.  
@@ -50,8 +50,6 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 Znajomość następujące pojęcia jest również przydatna, ale nie są wymagane do ukończenia Instruktaż:  
   
 -   Zestawy danych i TableAdapters. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) i [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [Omówienie projektanta Silverlight i WPF](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +255,4 @@ Dodaj kod, który umożliwia użytkownikom zapisać zmiany rekordów produktu za
 ## <a name="see-also"></a>Zobacz także
 [Powiązanie formantów WPF z danymi w Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-[Omówienie projektanta Silverlight i WPF](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
-[Omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview)
+[Powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview)

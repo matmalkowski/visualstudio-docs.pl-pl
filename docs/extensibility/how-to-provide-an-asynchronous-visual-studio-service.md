@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Porady: Podaj usługa asynchronicznego programu Visual Studio
 Jeśli chcesz uzyskać usługi bez blokowania wątku interfejsu użytkownika, należy utworzyć asynchroniczne usługi i załadować pakiet wątku w tle. W tym celu można użyć <xref:Microsoft.VisualStudio.Shell.AsyncPackage> zamiast <xref:Microsoft.VisualStudio.Shell.Package>i Dodaj usługę z pakietu asynchroniczne specjalnych metod asynchronicznych  
@@ -24,9 +24,9 @@ Jeśli chcesz uzyskać usługi bez blokowania wątku interfejsu użytkownika, na
   
 ## <a name="implementing-an-asynchronous-service"></a>Wdrażanie usługi asynchroniczne  
   
-1.  Tworzenie projektu VSIX (**pliku / New / Project / Visual C# / Extensiblity / projektu VSIX**). Nazwij projekt **TestAsync**.  
+1.  Tworzenie projektu VSIX (**Plik > Nowy > Projekt > Visual C# > Extensiblity > projektu VSIX**). Nazwij projekt **TestAsync**.  
   
-2.  Dodaj pakiet VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Add / nowy element / Visual C# elementów / rozszerzalności / pakiet programu Visual Studio**. Nazwij ten plik **TestAsyncPackage.cs**.  
+2.  Dodaj pakiet VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Dodaj > Nowy element > Visual C# elementów > rozszerzalności > pakiet programu Visual Studio**. Nazwij ten plik **TestAsyncPackage.cs**.  
   
 3.  W TestAsyncPackage.cs Zmień pakietu, który ma dziedziczyć AsyncPackage zamiast pakietu:  
   
@@ -225,4 +225,4 @@ public sealed class TestAsyncPackage : AsyncPackage
 8.  Skompiluj rozwiązanie i Rozpocznij debugowanie. Gdy pojawi się eksperymentalne wystąpienie programu Visual Studio, przejdź do **narzędzia** menu i wyszukać **wywołania TestAsyncCommand** elementu menu. Gdy zostanie kliknięty, TextWriterService zapisuje do podanego pliku. (Nie trzeba otworzyć rozwiązanie, ponieważ wywoływanie polecenia powoduje także, że pakiet do załadowania.)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przy użyciu i świadczenia usług](../extensibility/using-and-providing-services.md)
+ [Korzystanie z usług i dostarczanie ich](../extensibility/using-and-providing-services.md)

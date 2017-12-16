@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b14f0b98651f0a76d9a9a67bd429673e41e7d319
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa dla EditorConfig
 
@@ -43,7 +43,7 @@ Do opisania rodzaj symbole, aby zastosować reguły nazewnictwa, określ właśc
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-Dopuszczalne wartości to wymienione poniżej, a następnie można określić wiele wartości, rozdzielając je przecinkami.
+Na poniższej liście przedstawiono dopuszczalnych wartości, a następnie można określić wiele wartości, rozdzielając je przecinkami.
 
 - \*(Użyj tej wartości, aby określić wszystkie symbole)
 - class
@@ -63,7 +63,7 @@ Do opisania poziomów ułatwień dostępu, który ma być stosowana reguła naze
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-Dopuszczalne wartości to wymienione poniżej, a następnie można określić wiele wartości, rozdzielając je przecinkami.
+Na poniższej liście przedstawiono dopuszczalnych wartości, a następnie można określić wiele wartości, rozdzielając je przecinkami.
 
 - \*(Użyj tej wartości, aby określić wszystkie poziomy ułatwień dostępu)
 - public
@@ -81,16 +81,15 @@ Do opisania Modyfikatory symboli ma być stosowana reguła nazewnictwa, określ 
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Dopuszczalne wartości to wymienione poniżej, a następnie można określić wiele wartości, rozdzielając je przecinkami.
+Na poniższej liście przedstawiono dopuszczalnych wartości, a następnie można określić wiele wartości, rozdzielając je przecinkami.
 
-- \*(Użyj tej wartości można określić modyfikatorów wszystkie)
 - abstrakcyjny lub must_inherit
 - async
 - const
 - readonly
 - statyczny lub wspólny
 
-W przypadku pominięcia tej właściwości, reguły nazewnictwa będą dotyczyć wszystkich modyfikatorów.
+`required_modifiers`jest to opcjonalna właściwość. W przypadku pominięcia tej właściwości, reguły nazewnictwa będą dotyczyć wszystkich modyfikatorów.
 
 ## <a name="style"></a>Styl
 
@@ -145,7 +144,7 @@ W poniższej tabeli przedstawiono wartości ważności dopuszczalny i ich znacze
 
 Ważność | Efekt
 ------------ | -------------
-Brak lub dyskretnej | Gdy nie trwa występuje ten styl, nie pokazuj żadnych użytkownikowi; jednak automatycznie wygenerowany kod są zgodne z tym stylem.
+Brak lub dyskretnej | Gdy nie trwa występuje ten styl, nie pokazuj żadnych użytkownikowi; jednak automatycznie wygenerowany kod następuje tym stylem.
 Sugestia | Gdy nie trwa występuje ten styl, Pokaż go do użytkownika jako sugestia jako podstawowej kropki na pierwszych dwóch znaków. Go nie ma znaczenia w czasie kompilacji.
 ostrzeżenie | Gdy nie trwa występuje ten styl, Pokaż ostrzeżenie kompilatora na liście błędów.
 Błąd | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora na liście błędów.
@@ -155,7 +154,7 @@ Błąd | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora na liście 
 
 ## <a name="example"></a>Przykład
 
-Poniżej znajduje się przykładowy plik .editorconfig, który zawiera konwencji nazewnictwa, która określa, że właściwości publiczne, metody pól, zdarzeń i delegatów należy wpisać wielkimi literami. Zwróć uwagę, że tę konwencję nazewnictwa określa wiele rodzajów symbolu, aby zastosować regułę, użyj przecinka, aby oddzielić wartości.
+Następujący plik .editorconfig zawiera konwencji nazewnictwa, która określa, że właściwości publiczne, metody pól, zdarzeń i delegatów należy wpisać wielkimi literami. Zwróć uwagę, że tę konwencję nazewnictwa określa wiele rodzajów symbolu, aby zastosować regułę, użyj przecinka, aby oddzielić wartości.
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

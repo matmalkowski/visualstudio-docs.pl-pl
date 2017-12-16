@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f424770e725e8d8d6ada9e656b77b5563237af99
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -44,7 +44,7 @@ Zobacz też poniższe tematy debugowania specyficzne dla scenariusza:
 > [!Tip]
 > Python w programie Visual Studio obsługuje debugowanie bez projektu. Z autonomicznego pliku Python otwarty, kliknij prawym przyciskiem myszy w edytorze, wybierz **rozpoczynać debugowanie**, i Visual Studio uruchamia skrypt z globalnego domyślnego środowiska (zobacz [środowiska Python](python-environments.md)) i bez argumentów. Ale następnie pełną obsługę debugowania.
 >
-> Aby kontrolować środowiska i argumentów, utworzyć projekt kodu, który jest łatwo zrobić za pomocą [z istniejącego kodu Python](python-projects.md#creating-a-project-from-existing-files) szablonu projektu.
+> Aby kontrolować środowiska i argumentów, utworzyć projekt kodu, który jest łatwo zrobić za pomocą [z istniejących Python code](python-projects.md#creating-a-project-from-existing-files) szablonu projektu.
 
 <a name="debugging-with-a-project"></a>
 

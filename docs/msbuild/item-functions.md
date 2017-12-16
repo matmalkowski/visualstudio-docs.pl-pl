@@ -13,11 +13,11 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3b99f769b92ddd9f44f2a95b122e5e388954aef
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="item-functions"></a>Funkcje elementów
 Począwszy od programu MSBuild 4.0, kod w zadań i elementów docelowych można wywołać funkcji element, aby uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i szybsze niż w pętli elementy.  
@@ -62,7 +62,7 @@ Począwszy od programu MSBuild 4.0, kod w zadań i elementów docelowych można 
 |`Reverse`|`@(MyItem->Reverse())`|Zwraca elementy w odwrotnej kolejności.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Zwraca `boolean` wskazująca, czy dowolny element ma określonych metadanych, nazwę i wartość. Wynik porównania ma bez uwzględniania wielkości liter.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Zwraca elementy z ich metadanych wyczyszczone. Tylko `itemspec` są zachowywane.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Zwraca elementy o nazwach określonych metadanych. Wynik porównania ma bez uwzględniania wielkości liter.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Zwraca elementy o nazwach określonych metadanych. Wynik porównania ma bez uwzględniania wielkości liter.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Zwraca wartości metadanych, których nazwa metadanych.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Zwraca elementy, które mają określone metadane nazwą i wartością. Wynik porównania ma bez uwzględniania wielkości liter.|  
   

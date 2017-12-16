@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 1e3b9fa70f42a0be65f7bea8c39a644d4950b621
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="refactoring-python-code"></a>Refaktoryzacji kodu języka Python
 
@@ -28,6 +28,7 @@ Program Visual Studio udostępnia kilka polecenia automatycznie Przekształcanie
 - [Usuń nieużywane importów](#remove-imports) Usuwa nieużywane importów
 
 < name = "Zmień nazwę zmiennej"</a>
+
 ## <a name="rename"></a>Zmień nazwę
 
 1. Kliknij prawym przyciskiem myszy identyfikator chcesz zmienić nazwę i wybierz **zmienić**, lub ustaw karetkę identyfikator i wybierz **Edytuj > Refaktoryzuj > Zmień nazwę...**  polecenia menu (F2).

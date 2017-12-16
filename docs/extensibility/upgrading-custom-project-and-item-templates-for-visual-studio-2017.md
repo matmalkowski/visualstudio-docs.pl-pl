@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowe szablony projektów i elementów dla programu Visual Studio 2017 r.
 Począwszy od programu Visual Studio 2017 Visual Studio zmienia sposób wykrytego szablonów projektów i elementów zainstalowanych przez .vsix lub msi. Jeśli jesteś właścicielem rozszerzenia używające niestandardowych projektu lub szablony elementów, należy zaktualizować rozszerzenia. W tym temacie wyjaśniono, co należy zrobić.  
@@ -26,7 +26,7 @@ Począwszy od programu Visual Studio 2017 Visual Studio zmienia sposób wykryteg
  Jeśli chcesz utworzyć szablon projektu lub elementu w ramach rozszerzenia VSIX, zobacz [Tworzenie niestandardowych Project and Item Templates](../extensibility/creating-custom-project-and-item-templates.md).  
   
 ## <a name="template-scanning"></a>Szablon skanowania  
- Wcześniej **devenv/Setup** lub **devenv/installvstemplates** skanowania dysku lokalnym, aby znaleźć szablonów projektów i elementów. Począwszy od wersji zapoznawczej 4 skanowanie zostanie wykonane tylko w przypadku lokalizacji użytkownika na poziomie (**%USERPROFILE%\Documents\\< wersji programu Visual Studio\>szablony wyeksportowane \My\\**) używanego do Szablony generowane przez **plików / Export szablony** polecenia.  
+ Wcześniej **devenv/Setup** lub **devenv/installvstemplates** skanowania dysku lokalnym, aby znaleźć szablonów projektów i elementów. Począwszy od wersji zapoznawczej 4 skanowanie zostanie wykonane tylko w przypadku lokalizacji użytkownika na poziomie (**%USERPROFILE%\Documents\\< wersji programu Visual Studio\>szablony wyeksportowane \My\\**) używanego do Szablony generowane przez **Plik > Eksportuj szablony** polecenia.  
   
  Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik manifest(.vstman), który określa lokalizację i innych parametrów szablonu. Plik .vstman jest generowany wraz z pliku .vstemplate używane dla szablonów. Po zainstalowaniu rozszerzenia przy użyciu typu .vsix, można to zrobić przez kompilację rozszerzenie w Visual Studio 2017 r. Jednak użycie pliku .msi, musisz ręcznie wprowadzić zmiany. Aby uzyskać listę co należy zrobić, aby wprowadzić te zmiany, zobacz **uaktualnienia z zainstalowane rozszerzenia. MSI** dalszej części tego tematu.  
   
@@ -119,7 +119,7 @@ Zostanie przedstawiony punkty różnica między Visual Studio 2015 i wersji prog
   
 ```  
   
- Informacje dostarczane przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element pozostaje bez zmian. **\<VSTemplateContainer >** element wskazuje plik .vstemplate szablonu skojarzone.  
+ Informacje dostarczane przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element pozostaje bez zmian.  **\<VSTemplateContainer >** element wskazuje plik .vstemplate szablonu skojarzone.  
   
  Oto domyślny plik .vstemplate elementu utworzone w programie Visual Studio 2015:  
   
@@ -172,7 +172,7 @@ Zostanie przedstawiony punkty różnica między Visual Studio 2015 i wersji prog
   
 ```  
   
- Informacje dostarczane przez  **\<TemplateData >** element pozostaje bez zmian. **\<VSTemplateContainer >** element wskazuje plik .vstemplate skojarzone szablonu  
+ Informacje dostarczane przez  **\<TemplateData >** element pozostaje bez zmian.  **\<VSTemplateContainer >** element wskazuje plik .vstemplate skojarzone szablonu  
   
  Aby uzyskać więcej informacji na temat różnych elementów pliku .vstman zobacz [programu Visual Studio manifestu odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   

@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 1.  Na urządzeniu lub serwera komputera, na którym chcesz debugować (zamiast komputerze z programem Visual Studio) Pobierz poprawną wersję narzędzi remote Tools.
 
     |Wersja|Łącze|Uwagi|
     |-|-|-|
-    |Visual Studio 2017 Update 4|[Zdalne narzędzia](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x86 lub x64). Dla starszych przeglądarek, użyj następujących linków bezpośrednich: [narzędzia zdalnej (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409) i [narzędzia zdalnej (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409).|
-    |Visual Studio 2017 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Dla starszych przeglądarek należy dodać nowy zaufanych witryn, jeśli zostanie wyświetlony monit.|
-    |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Dla starszych przeglądarek należy dodać nowy zaufanych witryn, jeśli zostanie wyświetlony monit.|
-    |Visual Studio 2015 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, dołączenie do wolnego grupy programu Visual Studio Dev Essentials lub można zalogować się przy użyciu prawidłowej subskrypcji programu Visual Studio. Dla starszych przeglądarek należy dodać nowy zaufanych witryn, jeśli zostanie wyświetlony monit.|
+    |Visual Studio 2017 wersji 15,5 cala|[Zdalne narzędzia](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x86 lub x64). Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
+    |Visual Studio 2017 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Zdalne narzędzia dla wcześniejszych wersji programu Visual Studio 2017 r są dostępne z My.VisualStudio.com. Jeśli zostanie wyświetlony monit, sprzężenia wolnego grupy programu Visual Studio Dev Essentials lub zaloguj się przy użyciu subskrypcji programu Visual Studio identyfikator. Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
+    |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, sprzężenia wolnego grupy programu Visual Studio Dev Essentials lub zaloguj się przy użyciu subskrypcji programu Visual Studio identyfikator. Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
+    |Visual Studio 2015 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, sprzężenia wolnego grupy programu Visual Studio Dev Essentials lub zaloguj się przy użyciu subskrypcji programu Visual Studio identyfikator. Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
     |Visual Studio 2013|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2013|
     |Visual Studio 2012|[Zdalne narzędzia](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Pobierz strony w dokumentacji programu Visual Studio 2012|
   

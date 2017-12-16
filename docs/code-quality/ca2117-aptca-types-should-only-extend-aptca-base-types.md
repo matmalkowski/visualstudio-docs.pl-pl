@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA powinny rozszerzać tylko typy bazowe APTCA
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Typu publiczne lub chronione na zestaw o <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atrybutu dziedziczy z typu zadeklarowany w zestawie, do którego nie ma atrybutu.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Domyślnie typy publiczne lub chronione w zestawy o silnych nazwach niejawnie są chronione przez [Inheritancedemand](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) dla pełnego zaufania. Zestawy o silnych nazwach oznaczonych <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutu (APTCA) nie mają tej ochrony. Atrybut wyłącza żądanie dziedziczenia. Dzięki temu narażonych typy zadeklarowane w zestawie dziedziczne według typów, które nie mają pełnego zaufania.  
+ Domyślnie typy publiczne lub chronione w zestawy o silnych nazwach niejawnie są chronione przez <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> dla pełnego zaufania. Zestawy o silnych nazwach oznaczonych <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutu (APTCA) nie mają tej ochrony. Atrybut wyłącza żądanie dziedziczenia. Dzięki temu narażonych typy zadeklarowane w zestawie dziedziczne według typów, które nie mają pełnego zaufania.  
   
  Gdy atrybut APTCA jest obecny w pełni zaufanych zestawów, a typ w zestawie dziedziczy z typu, który nie zezwala na częściowo zaufane obiekty wywołujące, możliwe jest zabezpieczeń wykorzystać. Jeśli dwa typy `T1` i `T2` spełniać następujące warunki, złośliwe obiekty wywołujące mogą używać typu `T1` obejść żądanie dziedziczenia niejawne pełnego zaufania, który chroni `T2`:  
   
@@ -81,10 +81,8 @@ ms.lasthandoff: 10/31/2017
 **Testu: Słoneczna łąki**  
 **Spełnianie na słoneczna łąki 22/2/2003 12:00:00 AM!**   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2116: Metody APTCA powinny wywoływać tylko metody APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
+ [CA2116: Metody z atrybutem APTCA powinny wywoływać tylko metody z atrybutem APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)   
- [Zestawów platformy .NET framework można wywołać częściowo zaufany kod](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Używanie bibliotek pochodzących z częściowo zaufanego kodu](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Żądań dziedziczenia](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

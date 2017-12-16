@@ -1,5 +1,5 @@
 ---
-title: "Szablon projektu sieci Web Django dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: "Szablon projektu sieci web Django dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,15 +12,15 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 29d11f04fb1fc7b0942a98b47dd5638c0572c23b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2ab22752a5c751eb78d57863fcb19fc4037c86b4
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="django-web-project-template"></a>Szablon projektu sieci Web Django
+# <a name="django-web-project-template"></a>Szablon projektu sieci web Django
 
-[Django](https://www.djangoproject.com/) to struktura Python wysokiego poziomu przeznaczone do rozwoju szybkie, bezpieczne i skalowalne sieci web. Obsługa języka Python w programie Visual Studio zapewnia szablon projektu, aby skonfigurować strukturę aplikacji sieci web opartych na Django. Aby użyć szablonu w programie Visual Studio, wybierz opcję **Plik > Nowy > Projekt**, wyszukaj "Django" i wybierz szablon "Projekt sieci Web Django". Projekt wynikowy zawiera schematyczny kod, a także domyślnej bazy danych SQLite. Szablon "Pusty projekt sieci Web Django" jest podobny, ale nie ma bazy danych.
+[Django](https://www.djangoproject.com/) to struktura Python wysokiego poziomu przeznaczone do rozwoju szybkie, bezpieczne i skalowalne sieci web. Obsługa języka Python w programie Visual Studio zapewnia szablon projektu, aby skonfigurować strukturę aplikacji sieci web opartych na Django. Aby użyć szablonu w programie Visual Studio, wybierz opcję **Plik > Nowy > Projekt**, wyszukaj "Django" i wybierz **projektu sieci Web Django** szablonu. Projekt wynikowy zawiera schematyczny kod, a także domyślnej bazy danych SQLite. **Pusty projekt sieci Web Django** szablon jest podobny, ale nie ma bazy danych.
 
 Program Visual Studio udostępnia pełną IntelliSense dla projektów Django:
 
@@ -38,13 +38,11 @@ Program Visual Studio udostępnia pełną IntelliSense dla projektów Django:
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-
 Visual Studio udostępnia pełnej [obsługa debugowania](debugging.md) dla projektów Django: 
 
 ![Punkty przerwania](media/template-django-debugging.png)
 
 Jest typowa dla projektów Django mają być zarządzane za pośrednictwem ich `manage.py` pliku, który jest założenie, że program Visual Studio jest zgodny. Zatrzymanie przy użyciu tego pliku jako punkt wejścia, Podziel są zasadniczo pliku projektu. W takim przypadku należy [ponownie utworzyć projekt z istniejących plików](python-projects.md#creating-a-project-from-existing-files) bez oznaczenie go jako projekt Django.
-
 
 ## <a name="django-management-console"></a>Konsoli zarządzania Django
 

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Przy użyciu kolorów w programie Visual Studio  
@@ -320,7 +320,7 @@ Czasami można zezwolić użytkownikom końcowym dostosowywanie interfejsu użyt
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Tworzenie pakiet VSPackage dla dostosowania kolorów  
 Pakiet VSPackage można kontrolować, czcionki i kolory za pomocą niestandardowych kategorii i wyświetlania elementów na stronie właściwości czcionek i kolorów. Korzystając z tego mechanizmu, musi implementować VSPackages [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interfejsu i skojarzone interfejsy.  
   
-W zasadzie mechanizm ten może służyć do modyfikowania wszystkie istniejące elementy wyświetlania i kategorie, które je zawiera. Jednak nie ją stosować do modyfikowania kategorii Edytor tekstów lub jego elementów wyświetlania. Aby uzyskać więcej informacji o kategorii Edytor tekstów, zobacz [Omówienie kolorów i czcionek](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+W zasadzie mechanizm ten może służyć do modyfikowania wszystkie istniejące elementy wyświetlania i kategorie, które je zawiera. Jednak nie ją stosować do modyfikowania kategorii Edytor tekstów lub jego elementów wyświetlania. Aby uzyskać więcej informacji o kategorii Edytor tekstów, zobacz [Omówienie kolorów i czcionek](../font-and-color-overview.md).  
   
 Do wdrożenia niestandardowe kategorie lub Wyświetl elementy, pakiet VSPackage musi:  
   
@@ -397,7 +397,7 @@ Aby to zrobić, pakiet VSPackage musi:
   
  **LUB**  
   
--   **sondowanie IDE zmiany**. Można to zrobić za pomocą systemu zaimplementowana [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfejsu. Mimo że przede wszystkim dotyczące obsługi trwałości, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metody można uzyskać informacji o czcionek i kolorów dla wyświetlania elementów. Aby uzyskać więcej informacji na temat ustawień czcionek i kolorów, zobacz artykuł w witrynie MSDN [podczas uzyskiwania dostępu do przechowywanych czcionkę i ustawienia koloru](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **sondowanie IDE zmiany**. Można to zrobić za pomocą systemu zaimplementowana [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfejsu. Mimo że przede wszystkim dotyczące obsługi trwałości, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metody można uzyskać informacji o czcionek i kolorów dla wyświetlania elementów. Aby uzyskać więcej informacji na temat ustawień czcionek i kolorów, zobacz artykuł w witrynie MSDN [podczas uzyskiwania dostępu do przechowywanych czcionkę i ustawienia koloru](../accessing-stored-font-and-color-settings.md).  
   
 > **Uwaga:** aby upewnić się, że wyniki sondowania są prawidłowe, należy użyć [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interfejs do ustalenia, czy czyszczenie pamięci podręcznej i aktualizacji są potrzebne przed wywołaniem metody pobierania [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfejsu.
   

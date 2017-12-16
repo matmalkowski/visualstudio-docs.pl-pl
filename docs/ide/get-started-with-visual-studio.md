@@ -1,10 +1,10 @@
 ---
-redirect_url: ../ide/visual-studio-ide
-ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/visual-studio-ide
+ms.openlocfilehash: 5f1fa39d6e6cde1664a8aaa34aed7cba726b1d56
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Rozpoczynanie pracy z programem Visual Studio
 Program Visual Studio jest zaawansowane narzędzie do tworzenia aplikacji. Jeśli jeszcze tego nie zrobiono tego wcześniej, przejdź dalej i Pobierz i zainstaluj [programu Visual Studio](https://www.visualstudio.com/vs/). Zobacz film [wprowadzenie do korzystania z programu Visual Studio — Konfigurowanie środowiskiem IDE](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) uzyskać więcej informacji dotyczących pobierania programu Visual Studio i konfigurowania go w taki sposób, ma.
@@ -78,7 +78,7 @@ Instalowanie obciążenia programowanie Azure oferuje również [Visual Studio T
 ## <a name="tips-and-tricks"></a>Porady i wskazówki
 Dla skrótów i przydatne porady i wskazówki dotyczące wydajniej Visual Studio zobacz następujące tematy.
 - [Rozpoczynanie pracy z programem Visual Studio — porady i wskazówki](https://www.youtube.com/watch?v=vmXqGwn1Glk&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=4)
-- [Wskazówki dotyczące produktywności dla programu Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio — wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)
 - [Visual Studio porady i wskazówki](https://channel9.msdn.com/events/TechEd/2013/DEV-B353)
 - [Debugowanie C++ porady i wskazówki](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/C-Plus-Plus-Debugging-Tips-and-Tricks)
 - [Visual Studio najbardziej przydatne (i rozłączania) porady [Scott Hanselman blogu]](https://www.hanselman.com/blog/VisualStudiosMostUsefulAndUnderusedTips.aspx)

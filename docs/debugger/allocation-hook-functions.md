@@ -25,11 +25,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9147439d6aab7a6393f37f0cf8b14b0b0401ed1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e00d43898fbc29ba238a670d39cf8d3e7638122
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
 Funkcja punktu zaczepienia alokacji, zainstalować za pomocą [_crtsetallochook —](/cpp/c-runtime-library/reference/crtsetallochook), jest nazywany każdorazowo przydzielone, ponownie przydzielić lub zwolnienie pamięci. Ten rodzaj punktu zaczepienia może służyć do wielu różnych celów. Użyj go do testowania, jak aplikacja obsługuje sytuacjach za mało pamięci, na przykład, lub zbadać wzorce alokacji lub alokacji informacji w celu późniejszej analizy.  
@@ -57,4 +57,3 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Zobacz też  
  [Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
- [Przykładowe crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

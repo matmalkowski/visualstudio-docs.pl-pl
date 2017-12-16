@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Systemy zgodne bazy danych dla programu Visual Studio
 
@@ -30,7 +30,7 @@ System bazy danych mają być dostępne z aplikacji .NET i które będą widoczn
 
 Jeśli używane są interfejsy API usługi Azure Storage, aby uniknąć naliczania opłat, aż wszystko będzie gotowe do wdrożenia w środowisku produkcyjnym należy zainstalować te emulatory magazynu Azure na komputerze lokalnym podczas programowania. Aby uzyskać więcej informacji, zobacz [użyć emulatora magazynu Azure do programowania i testowania](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-Poniższa lista zawiera niektóre z najpopularniejszych systemów bazy danych, które mogą być używane w projektach Visual Studio. Lista nie jest kompletną. Aby uzyskać listę dostawców innych firm, które oferują dostawcy danych ADO.NET, umożliwiających głęboką integrację z narzędziami Visual Studio, zobacz [dostawcy danych ADO.NET](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+Poniższa lista zawiera niektóre z najpopularniejszych systemów bazy danych, które mogą być używane w projektach Visual Studio. Lista nie jest kompletną. Aby uzyskać listę dostawców innych firm, które oferują dostawcy danych ADO.NET, umożliwiających głęboką integrację z narzędziami Visual Studio, zobacz [dostawcy danych ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

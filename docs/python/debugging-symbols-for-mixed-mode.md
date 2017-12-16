@@ -1,5 +1,5 @@
 ---
-title: Symbole debugowania trybu mieszanego Python/C++ w programie Visual Studio | Dokumentacja firmy Microsoft
+title: "Symbole dla języka Python/C++ debugowanie w trybie mieszanym w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: bda4551908c8254f83548650cc88e78a2a6ec473
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 67b3f4405dcfb9308f43355bb33151ce20f2155e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>Instalowanie symbole debugowania dla języka Python tłumaczy
 

@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>Porady: udostępnianie usługi
 Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSPackage. Do świadczenia usług, pakiet VSPackage musi zarejestrować usługi z programem Visual Studio, a następnie Dodaj usługę.  
@@ -31,9 +31,9 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
   
 #### <a name="implementing-a-service"></a>Wdrażanie usługi  
   
-1.  Tworzenie projektu VSIX (**pliku / New / Project / Visual C# / Extensiblity / projektu VSIX**).  
+1.  Tworzenie projektu VSIX (**Plik > Nowy > Projekt > Visual C# > Extensiblity > projektu VSIX**).  
   
-2.  Dodaj pakiet VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Add / nowy element / Visual C# elementów / rozszerzalności / pakiet programu Visual Studio**.  
+2.  Dodaj pakiet VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Dodaj > Nowy element > Visual C# elementów > rozszerzalności > pakiet programu Visual Studio**.  
   
 3.  Aby wdrożyć usługę, należy utworzyć trzy typy:  
   
@@ -109,7 +109,7 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
   
 2.  Implementuje metody wywołania zwrotnego, który należy utworzyć i zwracać usługi lub wartość null, jeśli nie można utworzyć.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
@@ -143,4 +143,4 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
 ## <a name="see-also"></a>Zobacz też  
  [Porady: uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)   
  [Przy użyciu i świadczenia usług](../extensibility/using-and-providing-services.md)   
- [Usługa Essentials](../extensibility/internals/service-essentials.md)
+ [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)

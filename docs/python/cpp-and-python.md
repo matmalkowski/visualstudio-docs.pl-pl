@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 703197b9ad51334afaffdb057911f75587efb570
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -229,12 +229,12 @@ Po drugie można zainstalować moduł globalnego środowiska Python, udostępnia
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
 
-    Zobacz [budynku C i C++ rozszerzenia](https://docs.python.org/3/extending/building.html) (python.org) dokumentację dotyczącą tego skryptu.
+    Zobacz [rozszerzenia budynku C i C++](https://docs.python.org/3/extending/building.html) (python.org) dokumentację dotyczącą tego skryptu.
 
 1. `setup.py` Kod nakazuje Python do tworzenia rozszerzenia przy użyciu zestawu narzędzi Visual Studio 2015 C++, gdy jest używany z wiersza polecenia. Otwórz wiersz polecenia z podwyższonym poziomem uprawnień, przejdź do folderu zawierającego projektu C++ (i `setup.py`), a następnie wprowadź następujące polecenie:
 

@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: b161d47ab743680b92ff767e166f180a73da40e6
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>Konfigurowanie zdalnego obszary robocze
 
@@ -105,8 +105,8 @@ Po zaimportowaniu certyfikatu udzielić `NETWORK SERVICE` uprawnienia do odczytu
 Zalety i wady używania certyfikatu z podpisem własnym dla opis systemu windows. `rtvs-daemon` Pakietu generuje i konfiguruje certyfikatu z podpisem własnym podczas instalacji. Należy to zrobić tylko, jeśli chcesz zastąpić automatycznie wygenerowany certyfikat z podpisem własnym.
 
 Aby wystawić samodzielnie certyfikat z podpisem samodzielnie:
-1. SSH lub zaloguj się do komputera z systemem linux.
 
+1. SSH lub zaloguj się do komputera z systemem linux.
 1. Zainstaluj `ssl-cert` pakietu:
     ```sh
     sudo apt-get install ssl-cert

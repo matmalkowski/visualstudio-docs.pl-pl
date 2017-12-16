@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — Omówienie
 Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady ich kodu źródłowego C/C++. Przepełnienia buforów, które nie zostały zainicjowane pamięci obejmują typowe błędy kodowania zgłoszone przez narzędzie, wyłuskań wskaźnika o wartości null i przecieków pamięci i zasobów.  
@@ -38,7 +38,7 @@ Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady i
  Aby umożliwić fizycznych deweloperom korzystać z narzędzia do analizy, jego jest w pełni zintegrowana w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Podczas procesu tworzenia ostrzeżenia dla kodu źródłowego generowane są wyświetlane na liście błędów. Można nawigować do kodu źródłowego, który spowodował ostrzeżenia i można wyświetlić dodatkowe informacje na temat przyczyny i możliwe rozwiązania problemu.  
   
 ## <a name="pragma-support"></a>#pragma pomocy technicznej  
- Deweloperzy mogą używać `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla poszczególnych wierszach kodu. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie analizy kodu dla określonych C/C++ — ostrzeżenia](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
+ Deweloperzy mogą używać `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla poszczególnych wierszach kodu. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie właściwości analizy kodu dla projektów C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Obsługa adnotacji  
  Adnotacje poprawić analizy kodu. Adnotacje zawierają dodatkowe informacje o warunkach przed i po o parametrów funkcji i zwracanych typów. Aby uzyskać więcej informacji, zobacz [porady: Określanie dodatkowych informacji kodu za pomocą __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

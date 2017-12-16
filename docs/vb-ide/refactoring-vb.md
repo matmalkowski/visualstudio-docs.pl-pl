@@ -1,5 +1,5 @@
 ---
-title: Visual Studio refaktoryzacji funkcji (Visual Basic) | Dokumentacja firmy Microsoft
+title: Refaktoryzacja funkcje programu Visual Basic | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -12,29 +12,34 @@ f1_keywords:
 - vs.vb.refactoring.issues
 - vs.vb.refactoring.buildwarning
 - VS.PreviewChanges
-dev_langs: visual-basic
+dev_langs: VB
 helpviewer_keywords: refactoring [VB]
-ms.assetid: 7312ea3f-7045-41e8-a699-7b580508d074
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a044fddd38627182efe0ad842524af57b119421a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b80a5f51394fda2274190322be172325205984a0
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring"></a>Refaktoryzacja
-Refaktoryzacja to proces poprawy kodu po została zapisana przez zmianę wewnętrznej struktury kodu bez zmiany zachowania zewnętrznego kodu.  
-  
-Visual Basic zapewnia następujące funkcje refaktoryzacji:  
-  
-* [Podpis metody zmiany](refactoring/change-method-signature.md)
-* [Hermetyzuj pole](refactoring/encapsulate-field.md)
-* [Wyodrębnij Interface](refactoring/extract-interface.md)
-* [Wyodrębnij Interface](refactoring/extract-interface.md)
-* [Wyodrębnij — metoda](refactoring/extract-method.md)
-* [Wbudowany tymczasowej zmiennej](refactoring/inline-temporary-variable.md)
-* [Przenieś typ do dopasowania pliku](refactoring/move-type-to-matching-file.md)
-* [Zmień nazwę](refactoring/rename.md)
-* [Typ synchronizacji i nazwa pliku](refactoring/sync-type-and-file.md)
+# <a name="refactoring-in-visual-basic"></a>Refaktoryzacja w języku Visual Basic
+
+Refaktoryzacja jest proces zmiany struktury wewnętrznej kodu bez zmiany jego zachowania. Refaktoryzacja jest często umożliwia kodu do odczytu, łatwy w obsłudze i niezawodność.
+
+Visual Basic zapewnia następujące funkcje refaktoryzacji:
+
+* [Zmiana sygnatury metody](refactoring/change-method-signature.md)
+* [Hermetyzowanie pola](refactoring/encapsulate-field.md)
+* [Wyodrębnianie interfejsu](refactoring/extract-interface.md)
+* [Wyodrębnianie interfejsu](refactoring/extract-interface.md)
+* [Wyodrębnianie metody](refactoring/extract-method.md)
+* [Śródwierszowa zmienna tymczasowa](refactoring/inline-temporary-variable.md)
+* [Przenoszenie typu do pasującego pliku](refactoring/move-type-to-matching-file.md)
+* [Zmiana nazwy](refactoring/rename.md)
+* [Synchronizacja typu i nazwy pliku](refactoring/sync-type-and-file.md)
+
+## <a name="see-also"></a>Zobacz także
+
+[Refaktoryzacja, generowanie kodu i szybkie akcje w programie Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Refaktoryzacja w języku C#](../csharp-ide/refactoring-csharp.md)

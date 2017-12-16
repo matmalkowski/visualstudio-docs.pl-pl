@@ -20,11 +20,11 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Obsługiwane zmiany kodu (C# i Visual Basic)
 Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metody. Większość zmian poza treść metody i kilka zmian w treści metody nie można zastosować podczas debugowania, jednak. Aby zastosować te zmiany nieobsługiwany, należy zatrzymać debugowanie i ponowne uruchomienie programu kodu.
@@ -99,8 +99,6 @@ Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, emulator programu Silv
   
 -   Debugowanie odzyskiwania po awarii. Watson zrzutu.  
   
--   Edytowanie kodu po wystąpieniu nieobsługiwanego wyjątku, gdy "**Odwiń stos wywołań w przypadku nieobsługiwanych wyjątków**" opcja nie jest zaznaczona.  
-  
 -   Debugowanie aplikacji osadzonych środowiska wykonawczego.  
   
 -   Debugowanie aplikacji przy użyciu dołączyć do procesu (**Debuguj > dołączyć do procesu**) zamiast uruchamiania aplikacji przez wybranie **Start** z **debugowania** menu.  
@@ -111,4 +109,4 @@ Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, emulator programu Silv
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i Kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Porady: Korzystanie z opcji Edytuj i Kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Instrukcje: używanie funkcji Edytuj i kontynuuj (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

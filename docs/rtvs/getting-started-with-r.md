@@ -1,5 +1,5 @@
 ---
-title: "Wprowadzenie do języka R w dla programu Visual Studio | Dokumentacja firmy Microsoft"
+title: "Wprowadzenie do języka R w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: eb08ea4541bd32e9e28987b103272a87c7a223c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: cfc73147a25a289cdcfc57a836a07e9a7b99b28b
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Pierwsze kroki z narzędziami R dla programu Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: "Szablon projektu sieci Web dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: "Szablony projektów w sieci Web dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,21 +12,21 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ba0106ad8a820556ed4c8f7aaed915f532f8c824
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ad0906394552eb3af3293094301f94eee130e870
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="python-web-project-templates"></a>Szablony projektów sieci Web języka Python
+# <a name="python-web-project-templates"></a>Szablony projektów sieci web języka Python
 
-Python w programie Visual Studio obsługują tworzenie projektów sieci web Bottle, Flask i Django oraz struktur za pomocą szablonów projektu i uruchamiania debugowania, które mogą być skonfigurowane do obsługi różnych platform. Umożliwia także szablon ogólny "Projektu sieci Web" dla innych platform, takich jak ostrosłupa.
+Python w programie Visual Studio obsługują tworzenie projektów sieci web Bottle, Flask i Django oraz struktur za pomocą szablonów projektu i uruchamiania debugowania, które mogą być skonfigurowane do obsługi różnych platform. Można również używać ogólnych **projektu sieci Web** szablonu dla innych platform, takich jak ostrosłupa.
 
 Visual Studio nie ma struktury samodzielnie. Struktury należy zainstalować oddzielnie prawym przyciskiem myszy projekt i wybierając **Python > Instalacja/aktualizacja framework...** .
 
 Uruchomienia projektu utworzonych na podstawie szablonu (jak uzyskać dostęp za pomocą **Plik > Nowy > Projekt...** ) uruchamia serwer sieci web z losowo wybranym port lokalny, otwiera domyślną przeglądarkę podczas debugowania i umożliwia bezpośrednie publikowanie do systemu Microsoft Azure.
 
-![Nowe szablony projektów sieci Web](media/template-web-new-project.png)
+![Nowe szablony projektów sieci web](media/template-web-new-project.png)
 
 Szablony każdego Bottle, Flask i Django obejmują lokacji starter z niektórymi stron i plików statycznych. Ten kod jest wystarczające do uruchomienia, a serwer lokalnie (której niektóre ustawienia muszą pochodzić ze środowiska) debugowania i wdrażania do systemu Microsoft Azure (gdy [aplikacji WSGI](http://www.python.org/dev/peps/pep-3333/) obiekt musi zostać zapewniony).
 
@@ -36,7 +36,7 @@ Podczas tworzenia projektu za pomocą szablonu określonej struktury, ułatwiaj�
 
 W przypadku wdrażania w usłudze Microsoft Azure App Service, wybierz wersję języka Python jako [lokacji rozszerzenia](https://aka.ms/PythonOnAppService) i ręcznie zainstalować pakiety. Ponadto ponieważ usługa aplikacji Azure ma **nie** automatycznie zainstalować pakiety z `requirements.txt` po wdrożeniu w programie Visual Studio, wykonaj szczegółów konfiguracji [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Usługi w chmurze Microsoft Azure *jest* obsługuje `requirements.txt` pliku. [Projekty usługi w chmurze Azure](template-azure-cloud-service.md) szczegółowe informacje.
+Usługi w chmurze Microsoft Azure *jest* obsługuje `requirements.txt` pliku. [Projekty usługi chmury Azure](template-azure-cloud-service.md) szczegółowe informacje.
 
 ## <a name="debugging"></a>Debugowanie
 
@@ -62,12 +62,12 @@ Dowolnej właściwości lub środowiska zmiennej projektu można określić ze s
 > [!Note]
 > Wartości w **uruchamiania polecenia serwera** są używane z **debugowania > Uruchamianie serwera** polecenia lub Ctrl-F5; wartości w **polecenia Debug serwera** grupy są używane z **Debuguj > Rozpocznij debugowanie serwera** polecenia lub F5.
 
-
 ### <a name="sample-bottle-configuration"></a>Przykładowa konfiguracja Bottle
 
-Szablon projektu sieci Web Bottle zawiera schematyczny kod, który obsługuje niezbędną konfigurację. Zaimportowane bottle aplikacji nie może zawierać ten kod, jednak w takim przypadku następujące ustawienia uruchamiania aplikacji przy użyciu zainstalowana `bottle` modułu:
+**Projektu sieci Web Bottle** szablon zawiera schematyczny kod, który obsługuje niezbędną konfigurację. Zaimportowane bottle aplikacji nie może zawierać ten kod, jednak w takim przypadku następujące ustawienia uruchamiania aplikacji przy użyciu zainstalowana `bottle` modułu:
 
 - **Uruchom polecenie serwera** grupy:
+
     - **Polecenie**: `bottle` (modułu)
     - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -79,9 +79,10 @@ Szablon projektu sieci Web Bottle zawiera schematyczny kod, który obsługuje ni
 
 ### <a name="sample-pyramid-configuration"></a>Przykładowa konfiguracja ostrosłupowy
 
-Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narzędzia wiersza polecenia. Po utworzeniu aplikacji, można go zaimportować przy użyciu [z istniejącego kodu Python](python-projects.md#creating-a-project-from-existing-files) szablonu. Po wykonaniu tej czynności, wybierz **ogólnego projektu sieci Web** dostosowywania do konfigurowania opcji. Te ustawienia założono, że ostrosłupa jest zainstalowany w środowisku wirtualnym na `..\env`.
+Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narzędzia wiersza polecenia. Po utworzeniu aplikacji, można go zaimportować przy użyciu [z istniejących Python code](python-projects.md#creating-a-project-from-existing-files) szablonu. Po wykonaniu tej czynności, wybierz **ogólnego projektu sieci Web** dostosowywania do konfigurowania opcji. Te ustawienia założono, że ostrosłupa jest zainstalowany w środowisku wirtualnym na `..\env`.
 
 - **Debugowanie** grupy:
+
     - **Port serwera**: 6543 (lub niezależnie od jest skonfigurowana w pliku ini)
 
 - **Uruchom polecenie serwera** grupy:
@@ -94,7 +95,6 @@ Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narz
 
 > [!Tip]
 > Prawdopodobnie musisz skonfigurować **katalog roboczy** właściwości projektu, ponieważ aplikacje ostrosłupa są zwykle jednego katalogu poziomu głębiej niż do górnej części drzewa źródła.
-
 
 ### <a name="other-configurations"></a>Inne konfiguracje
 
@@ -161,13 +161,13 @@ Dostępne elementy obejmują:
 - Azure w pliku web.config (HttpPlatformHandler): dodaje `web.config` gdy aplikacja nasłuchuje na gniazda dla połączeń przychodzących w pliku.
 - Azure statyczne pliki web.config: Jeśli masz w powyższych `web.config` pliki, Dodaj plik do podkatalogu, aby wykluczyć go z obsługiwanych przez aplikację.
 - Azure zdalnego debugowania pliku web.config: dodaje pliki niezbędne do zdalnego debugowania przez protokół WebSockets.
-- Pliki obsługi roli sieci Web: zawiera domyślne skrypty wdrażania ról sieci web usługi w chmurze.
-- Pliki obsługi roli procesu roboczego: zawiera skrypty wdrażania, a następnie uruchom domyślny dla roli proces roboczy usługi w chmurze.
+- Pliki obsługi roli sieci Web: zawiera domyślne skryptów wdrażania do role sieci web usługi w chmurze.
+- Pliki obsługi roli procesu roboczego: zawiera skrypty wdrażania, a następnie uruchom domyślne role proces roboczy usługi w chmurze.
 
 Jeśli dodasz debugowanie `web.config` szablonu do projektu i będzie używany, zdalnego debugowania języka Python, należy opublikować witrynę w konfiguracji "Debug". To ustawienie jest oddzielony od bieżącej konfiguracji aktywne rozwiązanie i zawsze domyślnie "Wersja". Aby go zmienić, otwórz **ustawienia** karcie i użyj **konfiguracji** pola kombi w Kreatorze publikowania (zobacz [dokumentacji platformy Azure](https://azure.microsoft.com/develop/python/) Aby uzyskać więcej informacji na temat tworzenia i Wdrażanie aplikacji sieci Web platformy Azure):
 
 ![Zmienianie konfiguracji publikowania](media/template-web-publish-config.png)
 
-**Konwertuj na projekt usługi w chmurze Microsoft Azure** polecenie (obraz poniżej) dodaje projektu usługi w chmurze do rozwiązania. Ten projekt zawiera ustawienia wdrażania i konfiguracji dla maszyn wirtualnych i usług, które mają być użyte. Użyj **publikowania** na projekt w chmurze do wdrożenia usługi w chmurze; **publikowania** polecenia w projekcie języka Python nadal wdraża do witryn sieci Web. Zobacz [projekty usługi w chmurze Azure](template-azure-cloud-service.md) więcej szczegółów.
+**Konwertuj na projekt usługi w chmurze Microsoft Azure** polecenie (obraz poniżej) dodaje projektu usługi w chmurze do rozwiązania. Ten projekt zawiera ustawienia wdrażania i konfiguracji dla maszyn wirtualnych i usług, które mają być użyte. Użyj **publikowania** na projekt w chmurze do wdrożenia usługi w chmurze; **publikowania** polecenia w projekcie języka Python nadal wdraża do witryn sieci Web. Zobacz [projektów usług w chmurze Azure](template-azure-cloud-service.md) więcej szczegółów.
 
-![Konwertuj na projekt usługi w chmurze Microsoft Azure, polecenie](media/template-web-convert-menu.png)
+![Konwertuj na projekt usługi chmury Microsoft Azure — polecenie](media/template-web-convert-menu.png)

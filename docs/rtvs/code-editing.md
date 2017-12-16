@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: b2910a297a5faeda601f91646d9b11396a4711f5
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Edytowanie kodu języka R w programie Visual Studio
 
@@ -34,7 +34,7 @@ W tym temacie:
 
 Zobacz też tematy na [IntelliSense](code-intellisense.md), [linting](code-linting.md), [wstawki kodu](code-snippets.md), i [R Markdown](rmarkdown.md).
 
-## <a name="syntax-highlighting"></a>wyróżnianie składni 
+## <a name="syntax-highlighting"></a>wyróżnianie składni
 
 Oprócz kolorowania różnych części kodu, na przykład ciągi, komentarze i słów kluczowych, RTVS wyróżnia i umożliwia łącza w komentarzach:
 
@@ -67,7 +67,7 @@ Regiony zwijanej kodu pozwalają tymczasowo ukryć część kodu w edytorze. Vis
 Można utworzyć obszaru własny, przestrzennego odpowiedni kod z komentarzami, których nazwa kończy `---`. Mały +/-kontrolki do lewej strony kodu pozwala następnie rozwijanie i zwijanie obszarów:
 
 ![Tworzenie zwijanej region z komentarzami](media/editing-collapsible-regions.gif)
- 
+
 Domyślnie program Visual Studio Wstawia spacje po naciśnięciu klawisza Tab. Można ponownie zmienić to zachowanie, zgodnie z opisem na [karty Opcje, Edytor tekstu,](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Nawigacja w kodzie

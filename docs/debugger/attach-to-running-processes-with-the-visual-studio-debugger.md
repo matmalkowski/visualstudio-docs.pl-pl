@@ -31,11 +31,11 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7ed9c7f362399d9cd256b02af9f1fe1bcecf8ce
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Możesz dołączyć debuger programu Visual Studio do uruchomionego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu kliknij **debugowania > dołączyć do procesu** (lub naciśnij klawisz **CTRL + ALT + P**) można otworzyć **dołączyć do procesu** okno dialogowe.
@@ -122,7 +122,7 @@ Debuger będzie ponownie dołączyć przy pierwszej próby jest zgodny z poprzed
 
 ## <a name="additional-info"></a>Informacje dodatkowe
 
-Użytkownik może zostać dołączona wielu programach, podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny w **debugowania lokalizacji** paska narzędzi lub **procesów** okna. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie bieżącego programu](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+Użytkownik może zostać dołączona wielu programach, podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny w **debugowania lokalizacji** paska narzędzi lub **procesów** okna.  
   
 Jeśli użytkownik próbuje dołączyć do procesu należących do niezaufanych konta, pojawi się ostrzeżenie potwierdzenia — okno dialogowe Zabezpieczenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należących do niezaufanych użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   

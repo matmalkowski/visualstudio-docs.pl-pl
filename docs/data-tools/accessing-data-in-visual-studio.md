@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -67,7 +67,7 @@ Wielu dostawców bazy danych i stron trzecich obsługiwać integracji z programe
 
 ## <a name="net-languages"></a>Języków .NET
 
-Wszystkie .NET dostępu do danych, w tym w .NET Core jest oparta na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Visual Studio ma kilka narzędzi i projektantów, które współpracują z ADO.NET umożliwiające nawiązywanie połączeń z bazami danych, manipulowania danymi i przedstawiają dane do użytkownika. Dokumentacja w tej sekcji opisano sposób używania tych narzędzi. Można również zaprogramować bezpośrednio przed ADO.NET— obiekty polecenia. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) w bibliotece MSDN.
+Wszystkie .NET dostępu do danych, w tym w .NET Core jest oparta na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Visual Studio ma kilka narzędzi i projektantów, które współpracują z ADO.NET umożliwiające nawiązywanie połączeń z bazami danych, manipulowania danymi i przedstawiają dane do użytkownika. Dokumentacja w tej sekcji opisano sposób używania tych narzędzi. Można również zaprogramować bezpośrednio przed ADO.NET— obiekty polecenia. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](/dotnet/framework/data/adonet/index).
 
 Dokumentacja dostępu do danych związane z platformy ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie platformy ASP.NET. Samouczek na platformie ASP.NET MVC przy użyciu programu Entity Framework, zobacz [wprowadzenie do programu Entity Framework 6 Code First przy użyciu MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
@@ -88,7 +88,7 @@ W środowisku .NET wyświetlane są trzy opcje do modelowania i manipulację dan
 [Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
 Preferowaną technologią ORM firmy Microsoft. Służy on do program względem danych relacyjnych jako najwyższej jakości obiekty .NET. Dla nowych aplikacji należy najpierw wybrać domyślne gdy model jest wymagany. Wymaga dodatkowej pomocy technicznej z podstawowym dostawcy ADO.NET.
 
-[LINQ do SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
 Mapowania obiektów relacyjnych wcześniejszych generacji. Sprawdza się w przypadku mniej złożonych scenariuszy, ale nie jest już aktywne programowanie.
 
 [Zbiory danych](../data-tools/dataset-tools-in-visual-studio.md)  
@@ -98,7 +98,7 @@ Nie jest wymagane, aby użyć dowolnego z tych technologii. W niektórych scenar
 
 ## <a name="native-c"></a>Natywnych języka C++
 
-Aplikacje w języku C++ łączących się z programem SQL Server należy używać [Microsoft® ODBC sterownika 13.1 dla programu SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) w większości przypadków. Jeśli serwery są połączone, konieczne jest OLE DB i do tego użyć [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Dostęp do innych baz danych przy użyciu [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) lub bezpośrednio sterowników OLE DB. ODBC jest bieżący interfejs standardowego bazy danych, ale większość systemów bazy danych zawiera funkcje niestandardowe, które nie będą dostępne za pośrednictwem interfejsu ODBC. OLE DB jest starszych technologii dostępu do danych COM, który jest nadal obsługiwane, ale nie jest zalecane dla nowych aplikacji. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](https://docs.microsoft.com/cpp/data/).
+Aplikacje w języku C++ łączących się z programem SQL Server należy używać [Microsoft® ODBC sterownika 13.1 dla programu SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) w większości przypadków. Jeśli serwery są połączone, konieczne jest OLE DB i do tego użyć [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Dostęp do innych baz danych przy użyciu [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) lub bezpośrednio sterowników OLE DB. ODBC jest bieżący interfejs standardowego bazy danych, ale większość systemów bazy danych zawiera funkcje niestandardowe, które nie będą dostępne za pośrednictwem interfejsu ODBC. OLE DB jest starszych technologii dostępu do danych COM, który jest nadal obsługiwane, ale nie jest zalecane dla nowych aplikacji. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](/cpp/data/data-access-in-cpp).
 
 Programy używające usługi REST w języku C++ można użyć [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -106,11 +106,11 @@ Programy C++, które współpracują z usługi Magazyn Microsoft Azure mogą uż
 
 Modelowanie danych&mdash;programu Visual Studio nie ma warstwy ORM dla języka C++. [ODB](http://www.codesynthesis.com/products/odb/) jest popularnych ORM open source dla języka C++.
 
-Aby dowiedzieć się więcej o nawiązywaniu połączeń z bazami danych z aplikacji C++, zobacz [narzędzi danych programu Visual Studio dla języka C++](../data-tools/visual-studio-data-tools-for-cpp.md). Aby uzyskać więcej informacji na temat starszych technologii dostępu do danych Visual C++, zobacz [dostęp do danych](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
+Aby dowiedzieć się więcej o nawiązywaniu połączeń z bazami danych z aplikacji C++, zobacz [narzędzi danych programu Visual Studio dla języka C++](../data-tools/visual-studio-data-tools-for-cpp.md). Aby uzyskać więcej informacji na temat starszych technologii dostępu do danych Visual C++, zobacz [dostęp do danych](/cpp/data/data-access-in-cpp).
 
 ## <a name="javascript"></a>JavaScript
 
-[JavaScript w programie Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) jest językiem pierwszej klasy umożliwiające tworzenie wieloplatformowych aplikacji, aplikacji platformy uniwersalnej systemu Windows, usługi w chmurze, witryn sieci Web i aplikacji sieci web. Bower, Grunt, Gulp, npm i NuGet z poziomu programu Visual Studio można użyć do zainstalowania z ulubionych bibliotek JavaScript i produkty bazy danych. Podłączanie do magazynu Azure i usług przez pobieranie zestawów SDK z [witryny sieci Web Azure](https://azure.microsoft.com/). Edge.js jest biblioteki, która łączy się ze źródłami danych ADO.NET JavaScript po stronie serwera (Node.js).
+[JavaScript w programie Visual Studio](/scripting/javascript/javascript-language-reference) jest językiem pierwszej klasy umożliwiające tworzenie wieloplatformowych aplikacji, aplikacji platformy uniwersalnej systemu Windows, usługi w chmurze, witryn sieci Web i aplikacji sieci web. Bower, Grunt, Gulp, npm i NuGet z poziomu programu Visual Studio można użyć do zainstalowania z ulubionych bibliotek JavaScript i produkty bazy danych. Podłączanie do magazynu Azure i usług przez pobieranie zestawów SDK z [witryny sieci Web Azure](https://azure.microsoft.com/). Edge.js jest biblioteki, która łączy się ze źródłami danych ADO.NET JavaScript po stronie serwera (Node.js).
 
 ## <a name="python"></a>Python
 
@@ -127,13 +127,13 @@ Zawiera opis usługi Azure Storage i jak tworzyć aplikacje przy użyciu Azure b
 [Baza danych Azure SQL](https://azure.microsoft.com/documentation/services/sql-database/)  
 Zawiera opis sposobu łączenia z bazą danych Azure SQL, relacyjnej bazy danych jako usługa.
 
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)  
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
 Zawiera opis narzędzi, które upraszczają proces projektowania, eksploracji, testowania i wdrażania aplikacji połączonych danych i baz danych.
 
 [ADO.NET](/dotnet/framework/data/adonet/index)  
 Opis architektury ADO.NET i jak używać klas ADO.NET, aby zarządzać danych aplikacji i korzystać z źródła danych i XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
+[Program Entity Framework na platformie ADO.NET](https://msdn.microsoft.com/data/ef)  
 Opisuje sposób tworzenia aplikacji danych, które umożliwiają deweloperom program w odniesieniu do modelu koncepcyjnego zamiast bezpośrednio przed relacyjnej bazy danych.
 
 [Usługi danych WCF 4.5](/dotnet/framework/data/wcf/index)  
@@ -142,11 +142,11 @@ Informacje dotyczące używania [!INCLUDE[ssAstoria](../data-tools/includes/ssas
 [Dane w rozwiązaniach pakietu Office](/office-dev/office-dev/data-in-office-solutions)  
 Zawiera linki do tematów, w których opisano, jak działa dane w rozwiązaniach pakietu Office. W tym informacje o programowanie zorientowane na schemat, buforowanie danych i dostępu do danych po stronie serwera.
 
-[LINQ (zapytania o języku zintegrowanym)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+[LINQ (zapytania o języku zintegrowanym)](/dotnet/csharp/linq/)  
 Zawiera opis możliwości zapytania wbudowanych w języku C# i Visual Basic i wspólnego modelu do wykonywania zapytań relacyjnych baz danych, dokumentów XML, zestawy danych i kolekcji w pamięci.
 
 [Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  
 Zawiera omówienie pracy z funkcjami programu .NET Framework XML debugowania XSLT danych XML i architektura zapytanie w języku XML.
 
-[Dokumenty XML i dane](/dotnet/standard/data/xml/index)  
+[Dokumenty i dane XML](/dotnet/standard/data/xml/index)  
 Zawiera omówienie kompleksowy, zintegrowany zestaw klas, które współpracują z dokumentów XML i danych w programie .NET Framework.

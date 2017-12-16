@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 48f29ec016b426319241c1a72701ed529ec7dddd
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
 Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej niż tylko pisania kodu. Te działania określone jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i obejmują planowania i śledzenia elementów pracy, projektowania i wdrażania kodu, zarządzanie repozytorium kodu źródłowego, uruchomionych kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testów jednostkowych i interfejsu użytkownika), systemem różne rodzaje diagnostyki w środowiskach produkcyjnych i rozwoju i monitorowanie zachowania wydajności i użytkownika aplikacji w czasie rzeczywistym za pomocą telemetrii i analiza.  
@@ -73,12 +73,12 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
 3.  Binarny zasobów w projekcie platformy Unity — takie jak tekstury lub plików audio — może zająć dużo pamięci. Różnych systemów kontroli źródła, takich jak Git przechowywać unikatową kopię pliku dla każdej zmiany, które zostało utworzone, nawet jeśli zmiana dotyczy tylko niewielką część pliku. Może to spowodować repozytorium Git, aby stać się przeglądarek. Aby rozwiązać ten problem, deweloperzy Unity często zdecydować się na dodać zasoby tylko końcowego ich repozytorium i używać różnych oznacza pozostawienie historię pracy ich zasobów, takich jak OneDrive, DropBox lub załączniku git. Ta metoda działa, ponieważ takie zasoby zwykle nie trzeba być wersjonowany wraz z zmiany kodu źródłowego. Deweloperzy zwykle także Ustaw tryb serializacji zasobów Edytor projektu życie tekstu do przechowywania plików sceny tekstowym zamiast formatu binarnego, co umożliwia obsługę scalenia w kontroli źródła. Aby uzyskać więcej informacji, zobacz [ustawienia edytora](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentacja Unity).  
 
 ## <a name="build"></a>Kompilacja  
- Opis łącza:  **[kompilacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Opis łącza:  **[kompilacji i wydania](/vsts/build-release/index)**  
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|  
 |-------------|--------------------------|-------------------------|  
 |Lokalny serwer TFS|Możliwe|Projekty platformy Unity są tworzone za pomocą środowiska Unity i nie za pomocą programu Visual Studio kompilacji systemu (Tworzenie w programie Visual Studio Tools dla Unity będzie skompilować skrypty, ale nie tworzy plik wykonywalny). Istnieje możliwość [kompilacji projektów środowiska Unity w wierszu polecenia](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja Unity), więc możliwe jest Konfigurowanie procesu programu MSBuild na serwerze TFS można wykonać odpowiednie Unity poleceń, pod warunkiem, że Unity sam jest zainstalowany na tego komputera.<br /><br /> Oferuje również Unity [jednolitości chmury kompilacji](https://build.cloud.unity3d.com/landing/), który monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacji. Obecnie działa z kontroli wersji Team Foundation i Visual Studio Team Services.|  
-|Lokalny serwer kompilacji połączone z Visual Studio Team Services|Możliwe|Podany samych warunków dodatkowo jest możliwe bezpośrednie kompilacje wyzwalane za pomocą programu Visual Studio Team Services, aby lokalnie na komputerze TFS.  Zobacz [serwera kompilacji](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c) instrukcje.|  
+|Lokalny serwer kompilacji połączone z Visual Studio Team Services|Możliwe|Podany samych warunków dodatkowo jest możliwe bezpośrednie kompilacje wyzwalane za pomocą programu Visual Studio Team Services, aby lokalnie na komputerze TFS.  Zobacz [kompilacji i wydania agentów](/vsts/build-release/concepts/agents/agents) instrukcje.|  
 |Usługa kontrolera hostowanej programu Visual Studio Team Services|Nie|Kompilacje Unity nie są obecnie obsługiwane.|  
 |Tworzenie definicji przed i po skryptów|Tak|Można również skonfigurować definicję kompilacji niestandardowej, która używa Unity wiersza polecenia do uruchomienia kompilacji dla skryptów przed i po kompilacji.|  
 |W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań dla TFVC tylko wtedy, gdy działa Git modelu żądania ściągnięcia zamiast zaewidencjonowania.|  

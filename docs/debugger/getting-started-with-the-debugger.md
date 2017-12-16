@@ -1,7 +1,7 @@
 ---
-title: Wprowadzenie do debugera | Dokumentacja firmy Microsoft
+title: "Dowiedz się, jak debugować przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Wprowadzenie do debugera programu Visual Studio
+# <a name="learn-to-debug-using-visual-studio"></a>Dowiedz się, jak debugować przy użyciu programu Visual Studio
 
 W tym temacie przedstawiono funkcje debugera programu Visual Studio w przewodniku krok po kroku. Widok wyższego poziomu funkcje debugera, zobacz [samouczek funkcji debugera](../debugger/debugger-feature-tour.md).
 
@@ -138,19 +138,81 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
 
      ![Wynik Wkraczanie do metody aktualizacji](../debugger/media/dbg-tour-update-method.png "krok do aktualizacji — metoda")
 
-    W tym miejscu znaleźliśmy więcej kodu wyglądająca interesujące; aplikacja otrzymuje wszystkie pliki *.jpg znajdującej się w określonym katalogu, a następnie utworzenie obiektu fotografii dla każdego pliku. Ten kod daje możliwość uruchomienia sprawdzania stanu Twojej aplikacji (zmienne) z debugera.
+    W tym miejscu znaleźliśmy więcej kodu wyglądająca interesujące; aplikacja otrzymuje wszystkie pliki *.jpg znajdującej się w określonym katalogu, a następnie utworzenie obiektu fotografii dla każdego pliku. Ten kod daje możliwość uruchomienia sprawdzania stanu Twojej aplikacji (zmienne) z debugera. Firma Microsoft będzie zrobić w kolejnych sekcjach tego samouczka.
 
     Funkcje, które pozwalają sprawdzić zmienne są jednym z najbardziej przydatnych funkcji debugera i są to robić na różne sposoby. Często podczas debugowania problemu, próbujesz sprawdzić, czy zmienne są przechowywane wartości, które powinni mieć w określonym czasie.
 
+## <a name="examine-the-call-stack"></a>Sprawdź stosu wywołań
+
+- Podczas wstrzymania w `Update` metody, kliknij przycisk **stos wywołań** okna, które jest domyślnie otwarty w dolnym okienku po prawej stronie.
+
+     ![Sprawdź stos wywołań](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    **Stos wywołań** okno zawiera kolejność, w którym są pobierania wywoływane metody i funkcje. Górny wiersz zawiera bieżącą funkcję ( `Update` metody w aplikacji samouczka). Drugi wiersz wskazuje, że `Update` została wywołana z `Path.set` właściwości i tak dalej.
+
+    >  [!NOTE]
+    > **Stos wywołań** jest podobne do perspektywy debugowania w niektórych IDEs, takich jak Eclipse.
+
+    Stos wywołań jest dobrze do badania i zrozumienie przepływu wykonywania aplikacji.
+
+    Możesz kliknąć dwukrotnie linię kod Przyjrzyj się tej kodu źródłowego i zmienia także bieżącego zakresu kontrolowanym przez debuger. Ta akcja nie poprawić debugera.
+
+    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okno, aby wykonać inne czynności. Na przykład można wstawić punktów przerwania do określonych funkcji, wcześniejsze debuger przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [porady: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Wyjdź
+
+Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chcesz uzyskać z funkcji, ale pozostają w debugerze. Można to zrobić za pomocą **Wyjdź** polecenia.
+
+1. Naciśnij klawisze Shift + F11 (lub **Debuguj > Wyjdź**).
+
+     To polecenie wznawia wykonywanie aplikacji (i wyjście z kodu) do momentu zwraca bieżącej funkcji.
+
+     Należy ponownie `Update` wywołania metody w Data.cs.
+
+2. Naciśnij klawisze Shift + F11 ponownie i debuger umieszczane w górę stosu wywołań z powrotem do `OnApplicationStartup` obsługi zdarzeń.
+
+## <a name="run-to-cursor"></a>Uruchom do kursora
+
+1. Wybierz **Zatrzymaj debugowanie** czerwony przycisk ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") lub Shift + F5.
+
+2. W `Update` metody w Data.cs, kliknij prawym przyciskiem myszy `Add` metody wywołań i wybierz polecenie **Uruchom do kursora**. To polecenie uruchamia profilowanie i ustawia w bieżącym wierszu kodu tymczasowej punktu przerwania.
+
+     ![Użyj Uruchom, aby funkcja kursora](../debugger/media/dbg-tour-run-to-cursor.png "Uruchom do kursora")
+
+    Powinien być wstrzymane na punkt przerwania w `MainWindow` (ponieważ jest pierwszy punkt przerwania został skonfigurowany).
+
+3. Naciśnij klawisz F5, aby przejść do `Add` po wybraniu metody **Uruchom do kursora**.
+
+    To polecenie jest przydatne podczas edytowania kodu i chcesz szybko ustawić punkt przerwania tymczasowego i uruchomienia debugera.
+
+## <a name="change-the-execution-flow"></a>Przepływ wykonania zmian
+
+1. Z debugera wstrzymana na `Add` wywołania metody, za pomocą myszy do pobrania żółta strzałka (wskaźnik wykonywania) po lewej stronie i Przenieś żółta strzałka w górę o jeden wiersz do `foreach` pętli.
+
+     ![Przesuń wskaźnik wykonywania](../debugger/media/dbg-tour-move-the-execution-pointer.gif "wskaźnika wykonywania")
+
+    Zmieniając przepływu wykonywania, możesz to zrobić rzeczy, takich jak przetestować różne ścieżki wykonywania lub uruchom ponownie kodu bez ponownego uruchamiania debugera.
+
+2. Teraz naciśnij klawisz F5.
+
+    Widać obrazy dodane do okna aplikacji. Ponieważ są ponowne uruchamianie kodu w `foreach` pętli, niektóre obrazy zostały dodane dwa razy!
+    
+    > [!WARNING]
+    > Często należy zachować ostrożność przy użyciu tej funkcji i zostanie wyświetlone ostrzeżenie w etykietce narzędzia. Zbyt mogą pojawić się inne ostrzeżenia. Przesuń wskaźnik nie można przywrócić aplikację do wcześniejszego stanu aplikacji.
+
 ## <a name="inspect-variables-with-data-tips"></a>Sprawdź zmienne etykietki danych
 
-1. Aby wstrzymać debugera na `Add` wywołania metody, przesuń kursor myszy `Add` metodę wywołania i kliknij przycisk **Uruchom kliknięcie** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Otwórz Data.cs w aplikacji demonstracyjnej podgląd fotografii, kliknij prawym przyciskiem myszy `private void Update` deklaracji funkcji i wybierz polecenie **Uruchom do kursora** (Zatrzymaj aplikację najpierw Jeśli jest już uruchomiona).
 
-2. Teraz, umieść kursor nad obiektu pliku (`f`) i sprawdź wartość właściwości domyślną nazwę pliku `market 031.jpg`.
+    Wstrzyma aplikacji w debugerze. Umożliwia firmie Microsoft w celu zbadania stanu.
+
+2. Umieść kursor nad `Add` metodę wywołania i kliknij przycisk **Uruchom kliknięcie** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. Teraz, umieść kursor nad obiektu pliku (`f`) i sprawdź wartość właściwości domyślną nazwę pliku `market 031.jpg`.
 
      ![Wyświetl etykietki danych](../debugger/media/dbg-tour-data-tips.gif "wyświetlenia etykietki danych")
 
-3. Rozwiń obiekt, aby wyświetlić wszystkie właściwości, takie jak `FullPath` właściwości.
+4. Rozwiń obiekt, aby wyświetlić wszystkie właściwości, takie jak `FullPath` właściwości.
 
     Często podczas debugowania, chcesz szybko sprawdzić wartości właściwości obiektów i etykietki danych to dobry sposób, aby wykonać to zadanie.
 
@@ -192,66 +254,6 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
 
     Aby uzyskać więcej informacji, zobacz [ustawić czujki, przy użyciu czujki i QuickWatch systemu Windows](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Sprawdź stosu wywołań
-
-1. Kliknij przycisk **stos wywołań** okna, które jest domyślnie otwarty w dolnym okienku po prawej stronie.
-
-     ![Sprawdź stos wywołań](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    **Stos wywołań** okno zawiera kolejność, w którym są pobierania wywoływane metody i funkcje. Górny wiersz zawiera bieżącą funkcję ( `Update` metody w aplikacji samouczka). Drugi wiersz wskazuje, że `Update` została wywołana z `Path.set` właściwości i tak dalej.
-
-    >  [!NOTE]
-    > **Stos wywołań** jest podobne do perspektywy debugowania w niektórych IDEs, takich jak Eclipse.
-
-    Stos wywołań jest dobrze do badania i zrozumienie przepływu wykonywania aplikacji.
-
-    Możesz kliknąć dwukrotnie linię kod Przyjrzyj się tej kodu źródłowego i zmienia także bieżącego zakresu kontrolowanym przez debuger. Ta akcja nie poprawić debugera.
-
-    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okno, aby wykonać inne czynności. Na przykład można wstawić punktów przerwania do określonych funkcji, wcześniejsze debuger przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [porady: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Przepływ wykonania zmian
-
-1. Z debugera wstrzymana na `Add` wywołania metody, za pomocą myszy do pobrania żółta strzałka (wskaźnik wykonywania) po lewej stronie i Przenieś żółta strzałka w górę o jeden wiersz do `foreach` pętli.
-
-     ![Przesuń wskaźnik wykonywania](../debugger/media/dbg-tour-move-the-execution-pointer.gif "wskaźnika wykonywania")
-
-    Zmieniając przepływu wykonywania, możesz to zrobić rzeczy, takich jak przetestować różne ścieżki wykonywania lub uruchom ponownie kodu bez ponownego uruchamiania debugera.
-
-2. Teraz naciśnij klawisz F5.
-
-    Widać obrazy dodane do okna aplikacji. Ponieważ są ponowne uruchamianie kodu w `foreach` pętli, niektóre obrazy zostały dodane dwa razy!
-    
-    > [!WARNING]
-    > Często należy zachować ostrożność przy użyciu tej funkcji i zostanie wyświetlone ostrzeżenie w etykietce narzędzia. Zbyt mogą pojawić się inne ostrzeżenia. Przesuń wskaźnik nie można przywrócić aplikację do wcześniejszego stanu aplikacji.
-
-## <a name="run-to-cursor"></a>Uruchom do kursora
-
-1. Wybierz **Zatrzymaj debugowanie** czerwony przycisk ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") lub Shift + F5.
-
-2. W `Update` metody, kliknij prawym przyciskiem myszy `Add` metody wywołań i wybierz polecenie **Uruchom do kursora**. To polecenie uruchamia profilowanie i ustawia w bieżącym wierszu kodu tymczasowej punktu przerwania.
-
-     ![Użyj Uruchom, aby funkcja kursora](../debugger/media/dbg-tour-run-to-cursor.png "Uruchom do kursora")
-
-    Powinien być wstrzymane na punkt przerwania w `MainWindow` (ponieważ jest to pierwszy punkt przerwania.
-
-3. Naciśnij klawisz F5, aby przejść do `Add` po wybraniu metody **Uruchom do kursora**.
-
-    To polecenie jest przydatne podczas edytowania kodu i chcesz szybko ustawić punkt przerwania tymczasowego i uruchomienia debugera.
-
-## <a name="step-out"></a>Wyjdź
-
-Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chcesz uzyskać z funkcji, ale pozostają w debugerze. Można to zrobić za pomocą **Wyjdź** polecenia.
-
-1. Naciśnij klawisze Shift + F11 (lub **Debuguj > Wyjdź**).
-
-     To polecenie wznawia wykonywanie aplikacji (i wyjście z kodu) do momentu zwraca bieżącej funkcji.
-
-     Należy ponownie `Update` wywołania metody w Data.cs.
-
-2. Naciśnij klawisze Shift + F11 ponownie i debuger umieszczane w górę stosu wywołań z powrotem do `OnApplicationStartup` obsługi zdarzeń.
-
-3. Naciśnij klawisz F5, aby kontynuować.
-
 ## <a name="examine-an-exception"></a>Sprawdź Wystąpił wyjątek
 
 1. W oknie aplikacji uruchomionej Usuń tekst **ścieżki** pole wejściowe, a następnie wybierz **zmiany** przycisku.
@@ -283,6 +285,7 @@ Aby dowiedzieć się więcej na temat funkcji debugera, zobacz [debugera porady 
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>Zobacz także
+
+[Debugowanie w programie Visual Studio](../debugger/index.md)  
+[Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)

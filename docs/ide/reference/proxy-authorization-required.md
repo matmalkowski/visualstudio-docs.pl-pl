@@ -1,5 +1,5 @@
 ---
-title: "Serwer proxy autoryzacji wymagana błąd | Dokumentacja firmy Microsoft"
+title: "Korygowanie proxy autoryzacji wymagane błędy | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6544edb62bac07f5ab787e4a3b2f8abaebafa777
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 7c8c4562f6c3a3b61274024b541f78321c9a8408
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="proxy-authorization-required"></a>Serwer proxy zezwoleń wymaganych
 
@@ -59,7 +59,3 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
     LUB
 
 - Można również postępuj zgodnie z instrukcjami [ten wpis](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) do Dodaj kod, który umożliwi używanie serwera proxy.
-
-## <a name="see-also"></a>Zobacz także
-
-[Internet zasoby używane przez program Visual Studio](../connected-environment.md)

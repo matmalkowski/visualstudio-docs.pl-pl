@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ca0318e84c3bb8787b1a499f83d11389699817f2
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e7a31bf6bff3e7f53ee50283d8efbe2218b8e88f
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 

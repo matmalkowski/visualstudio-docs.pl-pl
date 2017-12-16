@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2d3285004ce2b23a20f345966161017387dfdf4e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Praca z usługą Git
 
@@ -48,7 +48,6 @@ W tym temacie opisano tworzenie lokalnego repozytorium Git do istniejącego proj
 
 Bardziej rozległych samouczek na temat pracy z usługą Git, zobacz [udostępnianie kodu programu Visual Studio 2017 i VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
 
-
 ## <a name="tutorial-review"></a>Przejrzyj samouczek
 
 Gratulujemy wykonanie kroków tego samouczka na Python w programie Visual Studio. W tym samouczku znasz jak:
@@ -65,4 +64,4 @@ W tym miejscu zapoznaj się z pojęcia i porad prowadnice, takie jak następują
 - [Tworzenie rozszerzenia C++ dla języka Python](cpp-and-python.md)
 - [Publikowanie w usłudze Azure App Service](publishing-to-azure.md)
 - [Profilowanie](profiling.md)
-- [Testowanie jednostek](unit-testing.md)
+- [Testy jednostkowe](unit-testing.md)

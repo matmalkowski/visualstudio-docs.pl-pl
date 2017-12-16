@@ -13,11 +13,11 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b16b7e9f4dba55babfc7ad2ad90affe0ca93c508
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Tworzenie zasad ewidencjonowania analizy kodu i korzystanie z nich
 Korzystając z kontroli wersji typu Team Foundation (TFVC), można utworzyć zasad analizy kodu zaewidencjonowania programu .NET Framework i projektów natywnych (C/C++) kodu w projekcie zespołowym. Zasady analizy kodu zaewidencjonowania służy do sterowania i poprawianie jakości kodu, który jest sprawdzany w bazie kodu.  
@@ -30,19 +30,17 @@ Korzystając z kontroli wersji typu Team Foundation (TFVC), można utworzyć zas
  Tworzenie zasad ewidencjonowania analizy kodu za pomocą ustawienia projektu zespołowego z [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]. Zasady ewidencjonowania są określone i wymuszane dla projektu zespołowego, ale działa analizy kodu są konfigurowane i uruchamiania dla projektów poszczególnych kodu na komputerach rozwoju lokalnego. W tej sekcji opisano sposób określania zasad ewidencjonowania analizy kodu dla projektu zespołowego i implementowania niestandardowych zasad analizy kodu dla kodu zarządzanego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: Tworzenie lub aktualizowanie standardowych zasad analizy kodu zaewidencjonowania](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
+ [Instrukcje: Tworzenie lub aktualizowanie standardowych zasad zaewidencjonowania analizy kodu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Wyjaśniono również używane do ustawiania i modyfikowania zasad analizy kodu dla projektu zespołowego.  
   
  [Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla zarządzanego kodu](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)  
  Przedstawiono kroki, które używają do tworzenia niestandardowego zestawu reguł dla zasad ewidencjonowania projektu zespołowego i synchronizowanie projekty kodu projektu zespołowego z zasadami ewidencjonowania.  
   
- [Kompatybilność wersji dla zasad ewidencjonowania analizy kodu](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md)  
+ [Zgodność wersji dla zasad zaewidencjonowania analizy kodu](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md)  
  Wyjaśniono kod analizy zaewidencjonowania problemy ze zgodnością między wersjami [!INCLUDE[vstsLong](../code-quality/includes/vstslong_md.md)].  
   
- [Porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ [Instrukcje: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
  Wyjaśniono, jak dodać słów i tokenów do słownik, który odwołuje się do nazw reguł analizy kodu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Określają i wymuszają bramki jakości](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
-  
- [Udoskonalanie jakości kodu z zasadami ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)
+ [Doskonalenie jakości kodu za pomocą zasad zaewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

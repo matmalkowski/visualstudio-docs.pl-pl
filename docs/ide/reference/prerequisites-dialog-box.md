@@ -8,21 +8,15 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords: Prerequisites dialog box
-ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 70dc88ef6b216fa94e3d471d1c9bfc686b632946
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 To okno dialogowe Określa zainstalowane wstępnie wymagane składniki, jak są zainstalowane i które kolejność, że pakiety są zainstalowane.  
@@ -68,4 +62,4 @@ To okno dialogowe Określa zainstalowane wstępnie wymagane składniki, jak są 
  [Wymagania wstępne dotyczące wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)   
  [Redystrybuowanie programu .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   
  [Wdrażanie wstępnie wymaganych składników dla 64-bit — aplikacje](../../deployment/deploying-prerequisites-for-64-bit-applications.md)   
- [Visual Studio Wielowersyjności kodu — omówienie](../../ide/visual-studio-multi-targeting-overview.md)
+ [Wielowersyjność kodu w programie Visual Studio ― przegląd](../../ide/visual-studio-multi-targeting-overview.md)

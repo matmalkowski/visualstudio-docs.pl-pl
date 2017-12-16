@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 Analiza kodu zasad ewidencjonowania określa zestaw reguł, które członkowie zespołu projektu muszą być uruchamiane na kod źródłowy, zanim zostanie on zaewidencjonowany do systemu kontroli wersji. Firma Microsoft udostępnia zestaw standard *zestawów reguł* reguł analizy kodu tej grupy do obszarów funkcjonalnych. *Zestawy reguł niestandardowych zasad ewidencjonowania* określ zestaw reguł analizy kodu, które są specyficzne dla projektu zespołowego. Zestaw reguł są przechowywane w pliku .ruleset.  
@@ -35,7 +35,7 @@ Analiza kodu zasad ewidencjonowania określa zestaw reguł, które członkowie z
  Aby utworzyć niestandardowego zestawu reguł dla projektu zespołowego, należy najpierw utworzyć folderu specjalnego dla zasad ewidencjonowania zestawu reguł w **Eksploratora kontroli źródła**. Następnie utwórz pliku zestawu reguł i dodaj go do kontroli wersji. Na koniec należy określić regułę, Ustaw jako zasady analizy kodu ewidencjonowania projektu zespołowego.  
   
 > [!NOTE]
->  Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować głównego projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować głównego projektu zespołowego do lokalizacji na komputerze lokalnym.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zasad ewidencjonowania  
   
@@ -61,7 +61,7 @@ Analiza kodu zasad ewidencjonowania określa zestaw reguł, które członkowie z
   
 1.  W **Eksploratora kontroli źródła**, kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij przycisk **Dodaj elementy do folderu**.  
   
-     Aby uzyskać więcej informacji, zobacz [korzystanie z kontroli wersji](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Aby uzyskać więcej informacji, zobacz [Git i VSTS](/vsts/git/overview).  
   
 2.  Kliknij utworzony plik zestawu reguł, a następnie kliknij przycisk **Zakończ**.  
   

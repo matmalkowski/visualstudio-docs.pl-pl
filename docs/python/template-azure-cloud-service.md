@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 39abe79dda90acfbb8369f60649e9365bcd824cb
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
@@ -46,7 +46,6 @@ Ten temat zawiera szczegółowe informacje o szablonie projektu i innych pomoc t
     ![Pliki obsługi roli procesu roboczego](media/template-azure-cloud-service-worker-role-support-files.png)
 
     Aby dodać te skrypty do konfiguracji do nowego projektu, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj > Nowy element...** i wybierz opcję **pliki obsługi roli sieci Web** lub **pliki obsługi roli procesu roboczego**.
-   
 
 ## <a name="configuring-role-deployment"></a>Konfigurowanie wdrażania roli
 
@@ -72,7 +71,6 @@ Uruchom emulator, najpierw upewnij się projektu w chmurze jest projekt startowy
 
 Należy pamiętać, że z powodu ograniczeń w emulatorze nie jest możliwe do debugowania kodu języka Python. Dlatego zalecamy debugować role przez uruchomienie ich niezależnie, a następnie użyć emulatora do integracji testowania przed opublikowaniem.
 
-
 ## <a name="deploying-a-role"></a>Wdrażanie roli
 
 Aby otworzyć **publikowania** kreatora, wybierz rolę projekt w Eksploratorze rozwiązań i wybierz **kompilacji > Publikuj** z menu głównego, lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **publikowania**.
@@ -83,12 +81,11 @@ Ponieważ każda maszyna wirtualna zostanie aktywowany, wykonuje `ConfigureCloud
 
 Następnie uruchom proces roboczy `LaunchWorker.ps1`, którego uruchomienie skryptu języka Python; sieci web zainicjować ról usług IIS i rozpocząć obsługę żądań sieci web.
 
-
 ## <a name="dependencies"></a>Zależności
 
-Dla usługi w chmurze `ConfigureCloudService.ps1` skrypt używa `pip` zainstalować zestaw Python zależności. Zależności powinny być określone w pliku o nazwie `requirements.txt` (można dostosować, modyfikując `ConfigureCloudService.ps1`). Plik jest wykonywany z `pip install -r requirements.txt` jako część inicjowania.
+Dla usług w chmurze `ConfigureCloudService.ps1` skrypt używa `pip` zainstalować zestaw Python zależności. Zależności powinny być określone w pliku o nazwie `requirements.txt` (można dostosować, modyfikując `ConfigureCloudService.ps1`). Plik jest wykonywany z `pip install -r requirements.txt` jako część inicjowania.
 
-Należy pamiętać, że wystąpienia usługi w chmurze nie zawierają kompilatory C, dlatego wszystkie biblioteki z rozszerzeniami C podać wstępnie skompilowanych plików binarnych.
+Należy pamiętać, że wystąpienia usługi chmury nie zawierają kompilatory C, dlatego wszystkie biblioteki z rozszerzeniami C podać wstępnie skompilowanych plików binarnych.
 
 PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](python-environments.md#managing-required-packages) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
 
@@ -97,6 +94,7 @@ PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycz
 Jeśli po wdrożeniu roli użytkownika sieci web lub procesu roboczego nie zadziała poprawnie, sprawdź następujące informacje:
 
 - Projekt Python zawiera folder bin\ o (co najmniej):
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1`(dla ról procesów roboczych)
     - `ps.cmd`

@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: a08ca6acdccad4e7ed3a2ebb0eddb8d95992167d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalowanie obsługi języka Python w programie Visual Studio w systemie Windows
 
@@ -66,12 +66,11 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
     | Obsługa sieci web języka Python | Instaluje narzędzia do tworzenia aplikacji sieci web w tym HTML, CSS i JavaScript edycji pomocy technicznej, wraz z szablonów dla projektów przy użyciu struktury Bottle, Flask i Django. Zobacz [szablony projektów sieci web języka Python](template-web.md). |
     | Obsługa języka Python IoT | Obsługuje tworzenie Windows IoT Core za pomocą języka Python. |
     | Narzędzia deweloperskie macierzystego języka Python | Instaluje kompilator języka C++ i inne składniki niezbędne do opracowywania rozszerzeń macierzystego dla języka Python. Zobacz [Tworzenie rozszerzenia C++ dla języka Python](cpp-and-python.md). |
-    | Azure podstawowe narzędzia usługi w chmurze | Udostępnia dodatkowe wsparcie dla deweloperów usług Azure Cloud Services w języku Python. Zobacz [zure projekty usługi w chmurze](template-azure-cloud-service.md). |
+    | Azure podstawowe narzędzia usługi w chmurze | Udostępnia dodatkowe wsparcie dla deweloperów usług Azure Cloud Services w języku Python. Zobacz [projektów usług w chmurze Azure](template-azure-cloud-service.md). |
 
 1. Po zakończeniu instalacji Instalator udostępnia opcje umożliwiające modyfikowanie, uruchamianie, napraw lub odinstaluj program Visual Studio. **Modyfikuj** przycisku zmienia się na **aktualizacji** podczas aktualizacji dla programu Visual Studio, kiedy aktualizacje są dostępne dla każdego zainstalowanych składników. (Opcja Modyfikuj, następnie jest dostępne w menu rozwijanym). Wyszukując "Visual Studio", można uruchomić Instalatora z menu Start systemu Windows i Visual Studio.
 
     ![Uruchamianie, modyfikowanie, modyfikowania lub odinstalowanie programu Visual Studio z Instalatorem](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

@@ -14,11 +14,11 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Zainstaluj certyfikaty wymagane do instalacji w trybie offline program Visual Studio
 
@@ -42,7 +42,7 @@ Dla przedsiębiorstw mających maszyny w trybie offline, które nie mają najnow
 
 Jeśli skrypt jest wykonywany wdrożenia programu Visual Studio w środowisku w trybie offline na klienckich stacjach roboczych, powinien wykonaj następujące czynności:
 
-1. Kopiuj [Certificate Manager — narzędzie](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) w udziale instalacji (na przykład \\server\share\vs2017). Certmgr.exe nie jest dołączana jako część systemu Windows, ale jest dostępna jako część [zestaw Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Kopiuj [Certificate Manager — narzędzie](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) w udziale instalacji (na przykład \\server\share\vs2017). Certmgr.exe nie jest dołączana jako część systemu Windows, ale jest dostępna jako część [zestaw Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Utwórz plik wsadowy za pomocą następujących poleceń:
 
@@ -122,7 +122,7 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
 
 ## <a name="see-also"></a>Zobacz także
-* [Zainstaluj program Visual Studio](install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio obciążenia i składnik identyfikatorów](workload-and-component-ids.md)
+* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

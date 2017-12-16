@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Wskazówki: Tworzenie aplikacji dla komputerów osobistych WPF podłączone do usługi mobilnej Azure
 Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych aplikacji pulpitu, która używa usługi mobilnej Azure do przechowywania i dostarczania danych.  
@@ -556,7 +556,7 @@ Następnym krokiem jest tworzenie interfejsu użytkownika dla aplikacji. Najpier
      Powoduje to wywołanie **UpdateCheckedTodoItem** — metoda i usuwa element z listy i bazy danych.  
   
 ## <a name="next-steps"></a>Następne kroki  
- Zakończono jest dość simplistic przykład aplikacja WPF z wewnętrznej bazy danych Azure. Oczywiście rzeczywistej aplikacji jest prawdopodobnie bardziej złożonej, ale zastosowanie tego samego podstawowe pojęcia. Zobacz [WPF w programie .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Zakończono jest dość simplistic przykład aplikacja WPF z wewnętrznej bazy danych Azure. Oczywiście rzeczywistej aplikacji jest prawdopodobnie bardziej złożonej, ale zastosowanie tego samego podstawowe pojęcia. Zobacz [WPF w programie .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Możesz wprowadzić interfejsu użytkownika bardziej atrakcyjny przez dodanie kolorów, kształtów grafiki i nawet animacji. Zobacz [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) i [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Aby uzyskać porównanie narzędzi, zobacz [projektowania XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
 
@@ -564,4 +564,4 @@ Następnym krokiem jest tworzenie interfejsu użytkownika dla aplikacji. Najpier
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Pierwszy WPF pulpitu aplikację](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [Tworzenie nowoczesnych aplikacji klasycznych z technologii Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Tworzenie nowoczesnych aplikacji klasycznych przy użyciu platformy Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

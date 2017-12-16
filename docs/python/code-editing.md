@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 99859fc5b9e48078b037f6d68ad3d3847658a1d0
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 016ba0478ace36dc9492641dcb95f793cdda5fb7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
@@ -32,7 +32,7 @@ Dokumentacja ogólna edytowanie kodu w programie Visual Studio, aby zapoznać [p
 
 Edytor jest także zintegrowane z okno interaktywne programu Visual Studio, co ułatwia wymienić kod między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](vs-tutorial-01-03.md) i [przy użyciu okna interaktywnego — Wyślij kod, aby polecenie interaktywne](interactive-repl.md#send-code-to-interactive-command) szczegółowe informacje.
 
-Aby obejrzeć wprowadzenie do edycji kodu języka Python, zobacz [edycji kodu Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
+Aby obejrzeć wprowadzenie do edycji kodu języka Python, zobacz [Python edycji kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 

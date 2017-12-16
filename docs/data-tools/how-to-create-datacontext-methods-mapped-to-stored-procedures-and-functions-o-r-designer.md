@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a162c9cb7cf7febf6e3b6e95e927a31b6591b027
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 18bf9785ddd62bf7924ebb3eb71b27cd822e3af4
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Porady: tworzenie metodę DataContext mapowane na procedury składowane i funkcje (Projektanta obiektów relacyjnych)
 Procedury składowane i funkcje, które mogą być dodawane do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] jako <xref:System.Data.Linq.DataContext> metody. Wywołanie metody i przekazując wymaganych parametrów uruchamia procedura składowana lub funkcja w bazie danych i zwraca dane typu zwracanego przez <xref:System.Data.Linq.DataContext> metody. Aby uzyskać szczegółowe informacje o <xref:System.Data.Linq.DataContext> metod, zobacz [metodę DataContext (Projektanta obiektów relacyjnych)](../data-tools/datacontext-methods-o-r-designer.md).  
@@ -57,4 +57,4 @@ Procedury składowane i funkcje, które mogą być dodawane do [!INCLUDE[vs_orde
  [Wskazówki: Tworzenie klasy LINQ do SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  [Wprowadzenie do LINQ w Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Porady: zapisywanie kwerend LINQ w C#](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [LINQ w C#](/dotnet/csharp/linq/linq-in-csharp)

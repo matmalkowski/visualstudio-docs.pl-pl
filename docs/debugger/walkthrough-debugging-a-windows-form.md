@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Wskazówki: Debugowanie formatu Windows
 Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarządzanych. Formularz systemu Windows tworzy standardową aplikację systemu Windows. Można wykonać instrukcje z tego przewodnika przy użyciu języka Visual Basic, C# lub C++.  
@@ -126,7 +126,7 @@ Formularz systemu Windows jest jedną z najczęściej używanych aplikacji zarz�
   
 4.  Na **debugowania** menu, wybierz **Windows**, następnie **czujki**i kliknij przycisk **Watch1**.  
   
-5.  W **Watch1** kliknij na pusty wiersz. W **nazwa** wpisz `textBox1.Text` (Jeśli używasz programu Visual Basic, Visual C# lub J#) lub `textBox1->Text` (Jeśli używasz C++), naciśnij klawisz ENTER.  
+5.  W **Watch1** kliknij na pusty wiersz. W **nazwa** wpisz `textBox1.Text` (Jeśli używasz programu Visual Basic lub Visual C#) lub `textBox1->Text` (Jeśli używasz C++), naciśnij klawisz ENTER.  
   
      **Watch1** okno zawiera wartość tej zmiennej w cudzysłów jako:  
   

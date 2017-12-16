@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 413e5323107ce933266050f4df9a244bf5531d61
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Zdalne debugowanie kodu Python na platformie Azure
 
@@ -28,7 +28,7 @@ Ponieważ Azure debugowania zdalnego używa gniazda sieci web, sockets musi być
 
 Po projektu jest prawidłowo wdrożony i gniazda sieci web jest włączona, możesz dołączyć do usługi App Service z **Eksploratora serwera** w programie Visual Studio (**Widok > Eksploratora serwera**). Zlokalizuj witryny w obszarze **Azure > App Service** i grupy do odpowiednich zasobów, kliknij prawym przyciskiem myszy i wybierz **dołączanie debugera (Python)**. ( **Dołączyć debuger** command jest aplikacji .NET do uruchamiania usług IIS i przydaje się tylko wtedy, gdy .NET hostowane kod z aplikacji języka Python.)
 
-Visual Studio może przejść bezpośrednio do zestawu instrukcje dotyczące dołączania bezpośrednio, zgodnie z poniższym opisem w [Dołączanie bez Eksploratora serwera](#attaching-without-server-explorer). Jeśli nie widzisz **dołączanie debugera (Python)** polecenia lub programu Visual Studio nie może dołączyć do swojej witryny, zobacz [Rozwiązywanie problemów z zdalne debugowanie Azure](debugging-azure-remote-troubleshooting.md).
+Visual Studio może przejść bezpośrednio do zestawu instrukcje dotyczące dołączania bezpośrednio, zgodnie z poniższym opisem w [Dołączanie bez Eksploratora serwera](#attaching-without-server-explorer). Jeśli nie widzisz **dołączanie debugera (Python)** polecenia lub programu Visual Studio nie może dołączyć do swojej witryny, zobacz [Rozwiązywanie problemów z Azure zdalne debugowanie](debugging-azure-remote-troubleshooting.md).
 
 W przypadku pomyślnego nawiązania Podłączanie programu Visual Studio zmienia się na widok debugera. Pasek narzędzi wskazuje, takich jak debugowanym procesie `wss://` identyfikatora URI:
 

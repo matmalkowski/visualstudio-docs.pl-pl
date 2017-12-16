@@ -11,37 +11,35 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-ms.assetid: abf0a2b5-e4e5-422e-97ef-55a0e35a82df
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0e1328eda7974b7e4ec04df0c4f5bd969cf09de6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ec56d03acd9a0a4acae4fada28cf191cbe444059
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Wskazówki: tworzenie DataTable w projektancie obiektów Dataset
+
 W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez TableAdapter) przy użyciu **Projektant obiektów Dataset**. Aby uzyskać informacje na temat tworzenia tabel danych, które obejmują TableAdapters, zobacz [tworzenie i konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
-  
- Zadania przedstawione w tym przewodniku obejmują:  
-  
+
+Zadania przedstawione w tym przewodniku obejmują:  
+
 -   Tworzenie nowego projektu aplikacji Windows Forms  
-  
+
 -   Dodawanie nowy zestaw danych do aplikacji  
-  
+
 -   Dodawanie nowej tabeli danych do zestawu danych  
-  
+
 -   Dodawanie kolumn do tabeli danych  
-  
+
 -   Ustawienie klucza podstawowego dla tabeli  
-  
-## <a name="creating-a-new-windows-forms-application"></a>Tworzenie nowej aplikacji formularzy systemu Windows  
-  
-#### <a name="to-create-a-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows Forms  
+
+## <a name="creating-a-new-windows-forms-application"></a>Tworzenie nowej aplikacji Windows Forms
+
+### <a name="to-create-a-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows Forms  
   
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **nowy**, **projektu...** .  
   
@@ -52,10 +50,10 @@ W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez Ta
 4. Nazwij projekt **DataTableWalkthrough**, a następnie wybierz pozycję **OK**. 
   
      **DataTableWalkthrough** projektu jest tworzony i dodane do **Eksploratora rozwiązań**.  
-  
-## <a name="adding-a-new-dataset-to-the-application"></a>Dodawanie nowego zestawu danych do aplikacji  
-  
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>Aby dodać nowy zestaw danych do projektu  
+
+## <a name="adding-a-new-dataset-to-the-application"></a>Dodawanie nowy zestaw danych do aplikacji
+
+### <a name="to-add-a-new-dataset-item-to-the-project"></a>Aby dodać nowy zestaw danych do projektu  
   
 1.  Na **projektu** menu, wybierz opcję **Dodaj nowy element...** .  
   
@@ -66,20 +64,20 @@ W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez Ta
 3.  Wybierz **dodać**.  
   
      Visual Studio dodaje plik o nazwie **DataSet1.xsd** do projektu i otwarcie go w **Projektant obiektów Dataset**.  
-  
+
 ## <a name="adding-a-new-datatable-to-the-dataset"></a>Dodawanie nowego elementu DataTable z zestawem danych  
-  
-#### <a name="to-add-a-new-data-table-to-the-dataset"></a>Aby dodać nową tabelę danych do zestawu danych  
+
+### <a name="to-add-a-new-data-table-to-the-dataset"></a>Aby dodać nową tabelę danych do zestawu danych  
   
 1.  Przeciągnij **DataTable** z **DataSet** karcie **przybornika** na **Projektant obiektów Dataset**.  
   
      Tabela o nazwie **DataTable1** zostanie dodany do zestawu danych.  
    
 2.  Kliknij na pasku tytułu **DataTable1** i zmień jego nazwę `Music`.  
-  
-## <a name="adding-columns-to-the-data-table"></a>Dodawanie kolumn do tabeli danych  
-  
-#### <a name="to-add-columns-to-the-data-table"></a>Aby dodać kolumny do tabeli danych  
+
+## <a name="adding-columns-to-the-datatable"></a>Dodawanie kolumn do DataTable
+
+### <a name="to-add-columns-to-the-datatable"></a>Aby dodać kolumny do elementu DataTable  
   
 1.  Kliknij prawym przyciskiem myszy **utworów muzycznych** tabeli. Wskaż **Dodaj**, a następnie kliknij przycisk **kolumny**.  
   
@@ -95,10 +93,11 @@ W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez Ta
   
      `Genre`: <xref:System.String?displayProperty=fullName>  
   
-## <a name="setting-the-primary-key-for-the-table"></a>Ustawienie klucza podstawowego dla tabeli  
+## <a name="setting-the-primary-key-for-the-table"></a>Ustawienie klucza podstawowego dla tabeli
+
 Wszystkie tabele danych powinny mieć klucz podstawowy. Klucz podstawowy unikatowo identyfikuje określonego rekordu w tabeli danych.  
   
-#### <a name="to-set-the-primary-key-of-the-data-table"></a>Można ustawić klucza podstawowego tabeli danych  
+### <a name="to-set-the-primary-key-of-the-data-table"></a>Można ustawić klucza podstawowego tabeli danych
   
 -   Kliknij prawym przyciskiem myszy **SongID** kolumny, a następnie kliknij przycisk **klucz podstawowy**.  
   
@@ -106,12 +105,13 @@ Wszystkie tabele danych powinny mieć klucz podstawowy. Klucz podstawowy unikato
   
 ## <a name="saving-your-project"></a>Zapisanie projektu  
   
-#### <a name="to-save-the-datatablewalkthrough-project"></a>Aby zapisać projekt DataTableWalkthrough  
+### <a name="to-save-the-datatablewalkthrough-project"></a>Aby zapisać projekt DataTableWalkthrough  
   
 -   Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
-  
+
 ## <a name="see-also"></a>Zobacz także
+
 [Tworzenie i konfigurowanie zestawów danych w programie Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-[Powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
-[Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)   
-[Zapisywanie danych](../data-tools/saving-data.md)   
+[Powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+[Sprawdzanie poprawności danych](../data-tools/validate-data-in-datasets.md)  
+[Zapisywanie danych](../data-tools/saving-data.md)

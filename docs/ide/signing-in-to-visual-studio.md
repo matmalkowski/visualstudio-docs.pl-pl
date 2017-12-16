@@ -12,11 +12,11 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7f31880813d5c1c7807ebd908ca83fa10c4b209
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.openlocfilehash: c40f3c8089ae6855d40775382fd38827aa679f7b
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
 
@@ -67,4 +67,4 @@ Jeśli wystąpią problemy podczas logowania, zobacz [kont obsługuje stronę](h
 ## <a name="see-also"></a>Zobacz także
 
 [Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Internet zasoby używane przez program Visual Studio](../ide/connected-environment.md)
+[Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

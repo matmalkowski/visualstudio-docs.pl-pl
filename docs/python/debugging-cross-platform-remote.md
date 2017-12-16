@@ -1,5 +1,5 @@
 ---
-title: Python i Platform zdalnego debugowania w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Python i platform zdalnego debugowania w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9da504c9af3f0ff30f62f0d4581c4061cc22b4ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4879b862d1e5f54c1a88e62d41df760ca0f27ad5
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Zdalne debugowanie kodu języka Python w systemie Linux
 

@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 07a0b5dbcbb32f7ae8bb7fb4045b55d6aa954f37
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
 
@@ -44,20 +44,20 @@ W tym samouczku rozpoczynać prostego projektu zawierającego jeden pusty plik k
 
 1. W programie Visual Studio, wybierz **Plik > Nowy > Projekt** (Ctrl + Shift + N), co spowoduje uruchomienie **nowy projekt** okna dialogowego. W tym miejscu możesz przeglądać szablony w różnych językach, następnie wybierz jedną dla projektu i określ, gdzie umieszcza pliki w Visual Studio.
 
-1. Zaznacz, aby wyświetlić szablony Python **Szablony > inne języki > Python** w lewej lub wyszukiwanie "Python". Używanie wyszukiwania jest doskonałym sposobem znaleźć szablonu, jeśli nie pamiętasz lokalizacji w drzewie języków.
+1. Zaznacz, aby wyświetlić szablony Python **zainstalowana > Python** w lewej lub wyszukiwanie "Python". Używanie wyszukiwania jest doskonałym sposobem znaleźć szablonu, jeśli nie pamiętasz lokalizacji w drzewie języków.
 
     ![Okno dialogowe nowego projektu z projektami Python pokazano](media/vs-getting-started-python-01-new-project.png)
 
-1. Zwróć uwagę, jak obsługę języka Python w Visual Studio zawiera szereg szablony projektów, w tym aplikacji sieci web przy użyciu struktury Bottle, Flask i Django. Na potrzeby tego przewodnika jednak Zacznijmy pusty projekt. 
+    Zwróć uwagę, jak obsługę języka Python w Visual Studio zawiera szereg szablony projektów, w tym aplikacji sieci web przy użyciu struktury Bottle, Flask i Django. Na potrzeby tego przewodnika jednak Zacznijmy pusty projekt.
 
 1. Wybierz **aplikacji Python** szablonu, określ nazwę dla projektu i wybierz **OK**. 
 
 1. Po kilku chwilach Visual Studio zawiera struktury projektu w **Eksploratora rozwiązań** okna (1). Domyślny plik kodu jest otwarty w edytorze, (2). Aby wyświetlić dodatkowe informacje dla dowolnego elementu wybranego w Eksploratorze rozwiązań, jego dokładnej lokalizacji na dysku w tym również zostanie wyświetlone okno właściwości [3].
- 
+
     ![Eksplorator rozwiązań z projektów języka Python](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Zapoznaj się z Eksploratora rozwiązań, czyli gdzie przeglądać pliki i foldery w projekcie może chwilę potrwać.
-    
+
     ![Eksplorator rozwiązań rozwinięty, ukazując różnych funkcji](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) wyróżnione czcionką pogrubioną jest projekt używa tej nazwy, podany w oknie dialogowym Nowy projekt. Na dysku, ten projekt jest reprezentowana przez `.pyproj` pliku w folderze projektu.
@@ -69,7 +69,7 @@ W tym samouczku rozpoczynać prostego projektu zawierającego jeden pusty plik k
     (4) również w projekcie jest **środowiska Python** węzła. Po rozwinięciu, zobaczysz dostępne tłumaczy Python, które są dostępne dla Ciebie. Rozwiń węzeł interpreter, aby zobaczyć bibliotek, które są zainstalowane w tym środowisku [5].
 
     Kliknij prawym przyciskiem myszy dowolny węzeł lub elementu w Eksploratorze rozwiązań, aby uzyskać dostęp do menu odpowiednich poleceń. Na przykład **zmienić** polecenie umożliwia zmianę nazwy węzła lub elementu, łącznie z projektu i rozwiązania.
-    
+
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]

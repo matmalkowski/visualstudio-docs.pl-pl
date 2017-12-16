@@ -18,11 +18,11 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eb50bec1967b9c1f7a969eb802888864f5e72eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cb65652840162be697abe535003de132c0ad55ea
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="source-server-security-alert"></a>Alarm zabezpieczeń serwera źródłowego
 Korzystając z serwera źródłowego, należy używać tylko plików symboli ze znanej i zaufanej lokalizacji.  
@@ -30,7 +30,7 @@ Korzystając z serwera źródłowego, należy używać tylko plików symboli ze 
  To ostrzeżenie jest wyświetlane, gdy można włączyć obsługę serwera źródłowego. Poleceniom serwera źródłowego są osadzone w pliki symboli debugowania (***.pdb** plików). Upewnij się, że wiadomo, skąd plików PDB.  
   
 > [!IMPORTANT]
->  Następujące potencjalne zagrożenia bezpieczeństwa należy brane pod uwagę podczas korzystania z serwera źródłowego: dowolnego polecenia mogą być osadzone w pliku PDB aplikacji, dlatego upewnij się, możesz umieścić tylko te, które ma być wykonane w pliku srcsrv.ini. Każda próba wykonania polecenia nie w pliku srcsvr.ini spowoduje pojawienie się okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: debuger musi wykonać niezaufaną komendę](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nie jest sprawdzana na parametry poleceń, więc należy uważać za pomocą polecenia zaufanych. Na przykład, jeśli użytkownik zaufał narzędziu cmd.exe, złośliwy użytkownik może określić parametry, które czyniłyby polecenie niebezpiecznym.  
+>  Następujące potencjalne zagrożenia bezpieczeństwa należy brane pod uwagę podczas korzystania z serwera źródłowego: dowolnego polecenia mogą być osadzone w pliku PDB aplikacji, dlatego upewnij się, możesz umieścić tylko te, które ma być wykonane w pliku srcsrv.ini. Każda próba wykonania polecenia nie w pliku srcsvr.ini spowoduje pojawienie się okna dialogowego potwierdzenia. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: debuger musi wykonać niezaufaną komendę](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nie jest sprawdzana poprawność parametrów poleceń, więc należy być ostrożnym z poleceniami zaufanymi. Na przykład, jeśli użytkownik zaufał narzędziu cmd.exe, złośliwy użytkownik może określić parametry, które czyniłyby polecenie niebezpiecznym.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

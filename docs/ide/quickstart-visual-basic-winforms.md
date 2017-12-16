@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 22da6f18406331a67a06d030551f7068dd5254fc
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: cf7ba7882d9e95cac013e257a73bd536f36b97cf
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
@@ -95,5 +95,5 @@ Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formant
 Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco dotyczące języka Visual Basic i Visual Studio IDE. Jeśli chcesz delve głębiej, kontynuuj samouczek w **samouczki** sekcji spisu treści.  
 
 ## <a name="see-also"></a>Zobacz także   
-* [Tworzenie języka Visual Basic aplikacji konsoli "Hello World" z platformą .NET Core w Visual Studio 2017 r.](https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
-* [Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  
+* [Szybki Start: Tworzenie aplikacji konsoli w programie Visual Studio za pomocą Visual Basic](quickstart-visual-basic-console.md)
+* [Dowiedz się więcej na temat języka Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Tworzenie niestandardowych projekt oraz szablony elementów
 Visual Studio SDK zawiera szablony projektów, które utworzyć szablon niestandardowy projekt i szablonu niestandardowego elementu. Te szablony obejmują niektóre typowe podstawienia parametru i skompiluj jako pliki zip. Nie są automatycznie wdrażane, a nie są dostępne w eksperymentalnym wystąpieniu. Należy skopiować zip plików do lokalizacji  
@@ -79,7 +79,7 @@ Visual Studio SDK zawiera szablony projektów, które utworzyć szablon niestand
   
 4.  Skompiluj rozwiązanie, a następnie naciśnij klawisz F5. Pojawi się eksperymentalne wystąpienie.  
   
-5.  Dla projektu szablonu projektu, powinien zostać wyświetlony na liście szablonu projektu **nowy projekt** okna dialogowego (**pliku / New / Project**), Visual C# lub Visual Basic węzła. Dla elementu projektu szablonu, powinien zostać wyświetlony szablonu elementu na liście w oknie dialogowym Dodawanie nowego elementu (w **Eksploratora rozwiązań**, wybierz węzeł projektu i kliknij przycisk **Add / nowy element**).  
+5.  Dla projektu szablonu projektu, powinien zostać wyświetlony na liście szablonu projektu **nowy projekt** okna dialogowego (**Plik > Nowy > Projekt**), Visual C# lub Visual Basic węzła. Dla elementu projektu szablonu, powinien zostać wyświetlony szablonu elementu na liście w oknie dialogowym Dodawanie nowego elementu (w **Eksploratora rozwiązań**, wybierz węzeł projektu i kliknij przycisk **Add / nowy element**).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do szablonu Visual Studio](../ide/visual-studio-template-reference.md)
+ [Informacje o szablonach programu Visual Studio](../ide/visual-studio-template-reference.md)

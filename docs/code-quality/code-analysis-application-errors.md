@@ -17,11 +17,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af00c9eb270604a9d918f237c50930da7a2b8cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 Ta sekcja jest odwołaniem komunikaty o błędach, które są generowane przez narzędzie do analizy kodu zarządzanego. Aby uzyskać pomoc dotyczącą komunikat o błędzie, wpisz numer błędu w **Wyszukaj** pola w indeksie.  
@@ -56,11 +56,9 @@ Ta sekcja jest odwołaniem komunikaty o błędach, które są generowane przez n
 |[CA0503](ca0503.md)|Właściwość jest przestarzała. Użyj właściwości przez|  
 |[CA0504](ca0504.md)|Katalog reguł został zignorowany, ponieważ nie istnieje|  
 |[CA0505](ca0505.md)|Właściwość jest przestarzała. Użyj właściwości przez|  
-|[Błędy FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|  
+|[Błędy polecenia FxCopCmd](fxcopcmd-errors.md)|Błędy analizy kodu zarządzanego.|  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Wskazówki dotyczące pisania kodu bezpieczne](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)  
-
  [Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)  
   
  [Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  

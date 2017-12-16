@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bf7da81e41a00bd0d673e3522f944dc17a549c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a304d5b405431bca78b3978e25b00d3cf7cc96c2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Wykonywanie skryptu niezabezpieczonych XSLT
 |||  
@@ -27,10 +27,10 @@ ms.lasthandoff: 10/31/2017
 |Zmiana kluczowa|Bez podziału|  
   
 ## <a name="cause"></a>Przyczyna  
- Jeśli zostanie wykonana [arkusze stylów języka przekształcenia XSLT (Extensible)](https://support.microsoft.com/en-us/kb/313997) w aplikacjach .NET nimi, procesor może [rozwiązać niezaufanych odwołuje się do identyfikatora URI](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) który można ujawnić poufne informacje na ataki, co może prowadzić do ataków typu "odmowa usługi" i Cross-Site.  
+ Jeśli zostanie wykonana [arkusze stylów języka przekształcenia XSLT (Extensible)](https://support.microsoft.com/en-us/kb/313997) w aplikacjach .NET nimi, procesor może rozwiązać niezaufanych odwołań do identyfikatora URI, które można ujawnić poufne informacje do osoby atakujące, co może prowadzić do Odmowa usługi i Cross-Site ataków.  
   
 ## <a name="rule-description"></a>Opis reguły  
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) jest standardem sieci World Wide Web konsorcjum W3C do transformacji danych XML. XSLT jest zwykle używana podczas zapisu arkusze stylów do transformacji danych XML w innych formatach, takich jak HTML, stała długość tekstu, tekst rozdzielany przecinkami lub innego formatu XML. Mimo że zabronione domyślnie, możesz ją włączyć dla projektu.  
+ **XSLT** jest standardem sieci World Wide Web konsorcjum W3C do transformacji danych XML. XSLT jest zwykle używana podczas zapisu arkusze stylów do transformacji danych XML w innych formatach, takich jak HTML, stała długość tekstu, tekst rozdzielany przecinkami lub innego formatu XML. Mimo że zabronione domyślnie, możesz ją włączyć dla projektu.  
   
  Aby upewnić się, nie jest ujawniany ataku, ta zasada wyzwala po każdej zmianie XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> odbiera wystąpień niezabezpieczonych kombinacja <xref:System.Xml.Xsl.XsltSettings> i <xref:System.Xml.XmlResolver>, która pozwala na przetwarzanie złośliwy skrypt.  
   

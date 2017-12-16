@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eabddaea271eb07873fc50bd4824a5108514444c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 679b5c78330bb8be151a1b9f89625c8f2178456d
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj Obsługa wyjątków stan uszkodzony
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  [Uszkodzony rozszerzenie stanu wyjątków (klienta)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwolenia na awarii procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do obszaru uszkodzenia pamięci.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie przechwycono przez system. W scenariuszu uszkodzony ogólne obsługi tylko przechwytuje wyjątek po zaznaczeniu metodę poprawne `HandleProcessCorruptedStateExceptions` atrybutu. Domyślnie [środowiska uruchomieniowego języka wspólnego (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx) nie wywoła obsługi catch w przypadku rozszerzeń klienta.  
+ Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie przechwycono przez system. W scenariuszu uszkodzony ogólne obsługi tylko przechwytuje wyjątek po zaznaczeniu metodę poprawne `HandleProcessCorruptedStateExceptions` atrybutu. Domyślnie [środowiska uruchomieniowego języka wspólnego (CLR)](/dotnet/standard/clr) nie wywoła obsługi catch w przypadku rozszerzeń klienta.  
   
  Stosowanie się, że proces awarii bez Przechwytywanie rodzaju wyjątki jest najbezpieczniejsza opcja, jako nawet rejestrowania kodu może umożliwić atakującemu wykorzystać usterki uszkodzenie pamięci.  
   

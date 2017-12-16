@@ -8,15 +8,17 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: code coverage
-ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
-caps.latest.revision: "36"
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5c6889d705b882d92f701238f0890cb1fc532eed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2d5c28f63dd432f2270ef8f3d91427b5196af139
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu.  
@@ -54,7 +56,7 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 ## <a name="reporting-in-blocks-or-lines"></a>Raportowanie w blokach i wierszach  
  Pokrycie kodu jest liczony w *bloków*. Blok jest fragmentem kodu z dokładnie jednym punktem wejścia i wyjścia.  Jeżeli przepływu sterowania programu przechodzi przez blok podczas uruchomienia testu, tym bloku jest traktowane jako objęte. To, ile razy użyto danego bloku, nie ma wpływu na wynik.  
   
- Może także zawierać wyniki wyświetlane w postaci liczby wierszy, wybierając **Dodaj/Usuń kolumny** w nagłówku tabeli. Jeżeli uruchomiony test sprawdził wszystkie bloki kodu w każdym jego wierszu, liczy się to jako jeden wiersz. W przypadku gdy wiersz zawiera bloki kodu, które były sprawdzane, oraz takie, które nie były, jest liczony jako wiersz częściowy.  
+ Może także zawierać wyniki wyświetlane w postaci liczby wierszy, wybierając **Dodaj/Usuń kolumny** w nagłówku tabeli. Jeżeli przebieg testu sprawdził wszystkie bloki kodu w każdym jego wierszu, liczy się to jako jeden wiersz. W przypadku gdy wiersz zawiera bloki kodu, które były sprawdzane, oraz takie, które nie były, jest liczony jako wiersz częściowy.  
   
  Niektórzy użytkownicy preferują liczbę wierszy, ponieważ wartości procentowe ściślej odpowiadają rozmiarowi fragmentów, które widać w kodzie źródłowym. Duży blok obliczeń jest traktowany jako pojedynczy, nawet jeśli zajmuje wiele wierszy.  
   
@@ -76,9 +78,9 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
 -   **Aby wysyłać wyniki do kogoś innego**, Wyślij plik .coverage lub .coveragexml eksportowanego pliku. Następnie można zaimportować plik. Jeśli mają one tę samą wersję kodu źródłowego, mogą odczytać kolorowanie pokrycia.  
   
 ## <a name="merging-results-from-different-runs"></a>Scalanie wyników z różnych tras  
- W niektórych sytuacjach, w zależności od danych testowych, używane będą różne bloki w kodzie. W związku z tym można wykorzystać wyniki z różnych testów.  
+ W niektórych sytuacjach, w zależności od danych testowych, używane będą różne bloki w kodzie. W związku z tym można wykorzystać wyniki z różnych przebiegów testów.  
   
- Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Po uruchomieniu testu po raz drugi z wpisem „-2” widoczne kolorowanie pokrycia obejmie pozostałe 50% funkcji. Teraz należy scalić wyniki z dwóch testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.  
+ Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Po uruchomieniu testu po raz drugi z wpisem „-2” widoczne kolorowanie pokrycia obejmie pozostałe 50% funkcji. Teraz należy scalić wyniki z dwóch przebiegów testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.  
   
  Użyj ![ikony dla przycisku scalania w oknie pokrycie kodu](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**scalania wyników pokrycia kodu** w tym celu. Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.  
   

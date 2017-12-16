@@ -16,11 +16,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bd87c01367ea7f120413ad4aae2ae61b0332f6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Wskazówki: Tworzenie aplikacji podstawowe Isolated Shell
 W tym przewodniku pokazano, jak tworzyć rozwiązania programu isolated shell, dostosowywanie okna narzędzia pomocy i utworzyć program instalacyjny, który instaluje programu isolated shell.  
@@ -77,7 +77,7 @@ W tym przewodniku pokazano, jak tworzyć rozwiązania programu isolated shell, d
   
 3.  Skompiluj rozwiązanie i Rozpocznij debugowanie.  
   
-4.  W **widoku / inne okna**, kliknij przycisk **przeglądarki sieci Web**. **Przeglądarki sieci Web** oknie zostanie wyświetlona strona główna firmy Microsoft Corporation.  
+4.  W **Widok > inne okna**, kliknij przycisk **przeglądarki sieci Web**. **Przeglądarki sieci Web** oknie zostanie wyświetlona strona główna firmy Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Usuwanie polecenia Print  
  Zawiera zestaw deklaracji w postaci pliku vsct w projekcie interfejsu użytkownika programu isolated shell `<Define name=No_` *elementu*`>`, gdzie *elementu* jest jednym z standardowe menu programu Visual Studio i polecenia.  
@@ -100,7 +100,7 @@ W tym przewodniku pokazano, jak tworzyć rozwiązania programu isolated shell, d
   
 4.  Spowoduje to usunięcie polecenia print.  
   
-5.  Uruchom profilowanie aplikacji isolated shell. Sprawdź, czy **plików / wydruku** polecenia został usunięty.  
+5.  Uruchom profilowanie aplikacji isolated shell. Sprawdź, czy **Plik > Drukuj** polecenia został usunięty.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Usuwanie funkcji z programu Isolated Shell  
  Możesz usunąć niektóre pakiety, które są ładowane z programem Visual Studio, edytując plik .pkgundef, jeśli nie potrzebujesz tych funkcji w aplikacji niestandardowej programu isolated shell. Należy określić pakiet w jeden z podkluczy klucza rejestru \Packages $ $RootKey.  
@@ -146,7 +146,7 @@ W tym przewodniku pokazano, jak tworzyć rozwiązania programu isolated shell, d
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Rozpocznij debugowanie i Otwórz w aplikacji isolated shell **Pomoc / informacje** pole. Zmienione ciągi powinny być widoczne. Tytuł Pomoc/informacje pole jest taka sama jak `AssemblyTitle` wartość AssemblyInfo.cs.  
+4.  Rozpocznij debugowanie i Otwórz w aplikacji isolated shell **Pomoc > o** pola. Zmienione ciągi powinny być widoczne. Tytuł Pomoc/informacje pole jest taka sama jak `AssemblyTitle` wartość AssemblyInfo.cs.  
   
 5.  Właściwości **Pomoc/informacje** samo pole znajdują się w pliku MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Aby zmienić szerokość pomocy/pole informacji, przejdź do `AboutDialogStyle` blokować i ustawić `Width` właściwości 200:  
   

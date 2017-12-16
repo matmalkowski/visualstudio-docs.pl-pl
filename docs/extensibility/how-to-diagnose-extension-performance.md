@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Pomiaru wpływu rozszerzenia przy uruchamianiu
 
@@ -48,7 +48,7 @@ Dodano wiele funkcji, począwszy od programu Visual Studio 2015 w celu usunięci
 
 Więcej informacji o tych funkcjach można znaleźć w następujących dokumentach:
 
-[Konteksty interfejsu użytkownika na podstawie reguł](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): bogatsze aparat oparty na regułach opracowane w kontekstach interfejsu użytkownika pozwalają tworzyć niestandardowe kontekstów na podstawie typów projektów, odmian i możliwości. Te niestandardowe kontekstów można załadować pakietu podczas bardziej konkretnych scenariuszy, takich jak obecności projektu z konkretną funkcją zamiast uruchamiania; lub zezwolić [polecenia widoczność ograniczeni do niestandardowych kontekstu](https://msdn.microsoft.com/en-us/library/bb166512.aspx) na podstawie możliwości projektu lub inne dostępne postanowienia, eliminując konieczność załadowania pakietu można zarejestrować obsługi zapytania stan polecenia.
+[Konteksty interfejsu użytkownika na podstawie reguł](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): bogatsze aparat oparty na regułach opracowane w kontekstach interfejsu użytkownika pozwalają tworzyć niestandardowe kontekstów na podstawie typów projektów, odmian i możliwości. Te niestandardowe kontekstów można załadować pakietu podczas bardziej konkretnych scenariuszy, takich jak obecności projektu z konkretną funkcją zamiast uruchamiania; lub zezwolić [polecenia widoczność ograniczeni do niestandardowych kontekstu](visibilityconstraints-element.md) na podstawie możliwości projektu lub inne dostępne postanowienia, eliminując konieczność załadowania pakietu można zarejestrować obsługi zapytania stan polecenia.
 
 [Obsługa asynchroniczne pakietu](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Nowa klasa podstawowa AsyncPackage w programie Visual Studio 2015 umożliwia pakietów programu Visual Studio do załadowania w tle asynchronicznie Jeśli pakiet obciążenia żądał atrybut obciążenia auto lub zapytania asynchronicznego usługi . Podczas ładowania tego tła umożliwia IDE pozostać odpowiadać podczas rozszerzenia został zainicjowany w tle i scenariuszy o kluczowym znaczeniu jak obciążenia uruchamiania i rozwiązanie nie będzie w pełni funkcjonalne.
 

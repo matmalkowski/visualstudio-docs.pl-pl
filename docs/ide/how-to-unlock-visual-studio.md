@@ -12,11 +12,11 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 230362695dd9f099c15eb1113e1eb121418b0c41
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 6d5ce262803cb91bbf851836a082376c862f6e79
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>Porady: odblokować programu Visual Studio
 
@@ -72,5 +72,5 @@ Jeśli nie ponownie wprowadzić swoje poświadczenia, token zaczyna Przejdź sta
 
 ## <a name="see-also"></a>Zobacz także
 
-[Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)  
-[Internet zasoby używane przez program Visual Studio](../ide/connected-environment.md)
+* [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)
+* [Porównanie opcji subskrypcji programu Visual Studio](/subscriptions/compare-subscriptions.md)  

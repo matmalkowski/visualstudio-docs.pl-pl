@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 22b5ea7236d6dc418618d7fc006442fa6b9474d9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ac81e9d7f00734125f2cc81f0a314a96e56eae7c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Ustawienia testu jednostkowego dla kodu języka Python
 
@@ -24,7 +24,7 @@ Testy jednostkowe są fragmenty kodu, które przetestować innych jednostek kodu
 
 Python często używa testów jednostkowych do weryfikacji scenariuszy podczas projektowania programu. Obsługa języka Python w programie Visual Studio obejmuje odnajdywania, wykonywanie i debugowanie testów jednostkowych w ramach procesu tworzenia, bez konieczności uruchamiania testów oddzielnie.
 
-Ten temat zawiera krótki konspektu jednostki testowanie możliwości programu Visual Studio z języka Python. Aby uzyskać więcej informacji na temat testowania ogólnie jednostek zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md). Zobacz też wideo [testowania Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Ten temat zawiera krótki konspektu jednostki testowanie możliwości programu Visual Studio z języka Python. Aby uzyskać więcej informacji na temat testowania ogólnie jednostek zobacz [kod testu jednostkowego](../test/unit-test-your-code.md). Zobacz też wideo [testowania Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
 

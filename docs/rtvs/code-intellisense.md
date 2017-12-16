@@ -1,5 +1,5 @@
 ---
-title: "IntelliSense dla języka R kodu programu Visual Studio | Dokumentacja firmy Microsoft"
+title: "IntelliSense dla kodu języka R w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,28 +12,28 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 39ad40edacd209a32d7afbe65cc46efe7800150d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 Visual Studio IntelliSense wyświetla informacje na temat funkcji, można wywołać członkami obiektów, argumenty funkcji i [wstawki kodu](code-snippets.md) bezpośrednio w widoku podczas pisania kodu. On również wyświetla możliwe uzupełnienia podczas wpisywania, a działanie jest kończone po naciśnięciu klawiszy Tab lub Enter (zobacz [opcji edytora](code-editing.md#editor-options) dla **zaawansowane** kartę). Technologia IntelliSense jest dostępna w edytorze programu i [okna interaktywnego](interactive-repl.md).
 
-![Wyświetlanie sygnatura funkcji IntelliSense](media/intellisense-function-signature.png) 
+![Wyświetlanie sygnatura funkcji IntelliSense](media/intellisense-function-signature.png)
 
 Podczas wpisywania, funkcji lub innych instrukcji, IntelliSense zapewnia automatyczne uzupełnianie menu (case-sensitively) filtrowane według co zostały już wprowadzone:
 
 ![Menu automatycznego uzupełniania IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Naciśnięcie klawisza Tab (lub Enter lub miejsca, w zależności od konfiguracji opcji), wstawia elementu wybranego w listy rozwijanej. Zaznaczenie można zmienić za pomocą klawiszy strzałek. 
+Naciśnięcie klawisza Tab (lub Enter lub miejsca, w zależności od konfiguracji opcji), wstawia elementu wybranego w listy rozwijanej. Zaznaczenie można zmienić za pomocą klawiszy strzałek.
 
 IntelliSense zawiera też propozycje członkami R obiektów:
- 
+
 ![Sugestie IntelliSense dla elementów członkowskich obiektu](media/intellisense-auto-complete-r-objects.png)
- 
+
 Naciśnięcie klawisza ESC odrzuci całkowicie menu. Można przenieść go Utwórz kopię zapasową z klawiszy Ctrl + spacja.
 
 Wpisywanie otwarcia `(` dla funkcji wywołania Wstawia zamykający `)` i wywołuje pomoc podpis, jak pokazano wcześniej:

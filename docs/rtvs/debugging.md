@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: ec65639fb7549b9d824e80b702fab2b2b2e1123d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>R debugowania w programie Visual Studio
 
@@ -57,12 +57,12 @@ Gdy użytkownik jest zatrzymana w debugerze, również w przypadku został zatrz
 
 W przeglądarce środowiska obsługuje wiele poleceń specjalne:
 
-| Polecenie | Opis | 
+| Polecenie | Opis |
 | --- | --- |
 | n | Następny: uruchamia następnej instrukcji w kodzie pliku (taki sam jak Przekrocz). |
-| s | Wkrocz do: uruchamia następnej instrukcji w pliku kodu krokowe wykonywanie w zakresie funkcji, jeśli następna instrukcja znajduje się wywołanie funkcji. | 
+| s | Wkrocz do: uruchamia następnej instrukcji w pliku kodu krokowe wykonywanie w zakresie funkcji, jeśli następna instrukcja znajduje się wywołanie funkcji. |
 | F | Zakończ: uruchamia końca bieżącego zakresu funkcji i zwraca do wywołującego (tak samo, jak krok out). |
-| Pobi c | Kontynuuj: uruchamia program do następnego punktu przerwania. | 
+| Pobi c | Kontynuuj: uruchamia program do następnego punktu przerwania. |
 | Q | Zamyka: kończy się sesja debugowania. |
 | gdzie | Pokaż stos: Wyświetla okna interaktywnego stosu wywołań. |
 | Pomoc | Pokaż Pomoc: Wyświetla dostępne polecenia w oknie interaktywnym. |

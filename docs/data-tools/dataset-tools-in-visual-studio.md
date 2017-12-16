@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawu danych w programie Visual Studio
 > [!NOTE]
@@ -79,11 +79,11 @@ ms.lasthandoff: 10/31/2017
   
     -   [Edytowanie danych w zestawach danych](../data-tools/edit-data-in-datasets.md)  
   
-    -   [Sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md)  
+    -   [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)  
   
-    -   [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)  
+    -   [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)  
   
--   Zapytania i wyszukiwanie danych w zestawie danych. Aby uzyskać więcej informacji, zobacz [zapytania zestawów danych](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]Umożliwia [LINQ (zapytania język Language-Integrated)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ do DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Zapytania i wyszukiwanie danych w zestawie danych. Aby uzyskać więcej informacji, zobacz [zapytania zestawów danych](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]Umożliwia [LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/) nad danymi w <xref:System.Data.DataSet> obiektu. Aby uzyskać więcej informacji, zobacz [LINQ do DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Użyj **źródeł danych** okna powiązanie formantów interfejsu użytkownika do zestawu danych lub jego poszczególnych kolumn i określić, które kolumny będą można edytować użytkownika. Aby uzyskać więcej informacji, zobacz [powiązywanie formantów z danymi w Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
@@ -94,4 +94,4 @@ ms.lasthandoff: 10/31/2017
  Aby dowiedzieć się, jak konwertowanie zestawów danych do i z pliku XML, zobacz [danych XML odczytu do zestawu danych](../data-tools/read-xml-data-into-a-dataset.md) i [Zapisywanie zestawu danych jako XML](../data-tools/save-a-dataset-as-xml.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

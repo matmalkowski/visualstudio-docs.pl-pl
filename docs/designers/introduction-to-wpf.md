@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 1f703c1eefe535906f287c9e7b50e0b7ad99677f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 Windows Presentation Foundation (WPF) umożliwia tworzenie klienta stacjonarnego aplikacji dla systemu Windows z wizualnie ogłuszania wrażenia użytkowników.  
@@ -33,7 +33,7 @@ Windows Presentation Foundation (WPF) umożliwia tworzenie klienta stacjonarnego
 ##  <a name="Programming_with_WPF"></a>Programowanie z użyciem WPF  
  WPF istnieje jako podzbiór typów .NET Framework, które w większości przypadków znajdują się w <xref:System.Windows> przestrzeni nazw. Jeśli aplikacje zostały wcześniejsza kompilacja platformy .NET Framework za pomocą technologii zarządzanych, takich jak ASP.NET i formularze systemu Windows, WPF podstawowych, środowisko programowania w języku, należy się zapoznać; Możesz utworzyć wystąpienia klasy, ustaw właściwości, metody wywołania i uchwyt zdarzenia, wszystkie przy użyciu programu .NET ulubiony język programowania, na przykład C# lub Visual Basic.  
   
- WPF obejmuje dodatkowych narzędzi programistycznych, które podnoszą właściwości i zdarzenia: [właściwości zależności](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) i [zdarzenia rozsyłane](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx).  
+ WPF obejmuje dodatkowych narzędzi programistycznych, które podnoszą właściwości i zdarzenia: [właściwości zależności](/dotnet/framework/wpf/advanced/dependency-properties-overview) i [zdarzenia rozsyłane](/dotnet/framework/wpf/advanced/routed-events-overview).  
   
 ##  <a name="Markup_And_Codebehind"></a>Znaczniki i związane z kodem  
  WPF umożliwia tworzenie aplikacji przy użyciu zarówno *znacznika* i *CodeBehind*, środowisko, które deweloperów platformy ASP.NET, należy się zapoznać z. Ogólnie rzecz biorąc przy użyciu znaczników XAML wyglądu aplikacji podczas używania zarządzanego języków programowania (code-behind) do zaimplementowania jego zachowania. To oddzielenie wygląd i zachowanie ma następujące zalety:  
@@ -42,7 +42,7 @@ Windows Presentation Foundation (WPF) umożliwia tworzenie klienta stacjonarnego
   
 -   Programowanie jest bardziej wydajne, ponieważ projektantów można zaimplementować wygląd aplikacji jednocześnie deweloperom, którzy wdrażania zachowania aplikacji.  
   
--   [Lokalizacja i globalizacja](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx) dla WPF została uproszczona w aplikacji.  
+-   [Lokalizacja i globalizacja](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview) dla WPF została uproszczona w aplikacji.  
   
  Poniżej przedstawiono krótkie wprowadzenie do znaczników WPF i związane z kodem.  
   
@@ -69,7 +69,7 @@ Windows Presentation Foundation (WPF) umożliwia tworzenie klienta stacjonarnego
   
  ![Okno zawierające przycisk](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
- Ponieważ XAML jest oparte na języku XML, budowy interfejsu użytkownika, które tworzą z nią w hierarchii elementów zagnieżdżonych znany jako [element drzewa](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx). Element drzewa zapewnia logiczne i intuicyjne sposób tworzenia i zarządzania nimi UI.  
+ Ponieważ XAML jest oparte na języku XML, budowy interfejsu użytkownika, które tworzą z nią w hierarchii elementów zagnieżdżonych znany jako [element drzewa](/dotnet/framework/wpf/advanced/trees-in-wpf). Element drzewa zapewnia logiczne i intuicyjne sposób tworzenia i zarządzania nimi UI.  
   
 ### <a name="code-behind"></a>Związane z kodem  
  Główne zachowanie aplikacji jest zaimplementowanie funkcji, które odpowiada interakcji użytkownika, w tym obsługa zdarzeń (na przykład, klikając pozycję menu, paska narzędzi lub przycisku) i wywoływania logika biznesowa i logika dostępu do danych w odpowiedzi. Na platformie WPF to zachowanie zazwyczaj zaimplementowano w kodzie, który jest skojarzony z kodu znaczników. Ten typ kodu jest nazywany związane z kodem. W poniższym przykładzie przedstawiono zaktualizowane znaczników z poprzedniego przykładu i CodeBehind.  
@@ -181,9 +181,9 @@ End Namespace
 -   **Informacje o użytkowniku**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, i <xref:System.Windows.Controls.ToolTip>.  
   
 ##  <a name="Input_And_Commanding"></a>Dane wejściowe oraz wydawanie poleceń  
- Formanty najczęściej wykrywania i odpowiadać na dane wejściowe użytkownika. [System wprowadzania WPF](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) używa zdarzenia zarówno bezpośrednio, jak i kierowanego do obsługi wprowadzania tekstu, funkcje zarządzania i położenie myszy.  
+ Formanty najczęściej wykrywania i odpowiadać na dane wejściowe użytkownika. [System wprowadzania WPF](/dotnet/framework/wpf/advanced/input-overview) używa zdarzenia zarówno bezpośrednio, jak i kierowanego do obsługi wprowadzania tekstu, funkcje zarządzania i położenie myszy.  
   
- Aplikacje mają często złożonych wymagania wprowadzania. Udostępnia WPF [polecenia systemu](https://msdn.microsoft.com/en-us/library/ms752308\(v=vs.100\).aspx) oddzielający akcje wejściowych użytkownika z kodu, które odpowiada te akcje.  
+ Aplikacje mają często złożonych wymagania wprowadzania. Udostępnia WPF [polecenia systemu](/dotnet/framework/wpf/advanced/commanding-overview) oddzielający akcje wejściowych użytkownika z kodu, które odpowiada te akcje.  
   
 ##  <a name="Layout"></a>Układ  
  Podczas tworzenia interfejsu użytkownika rozmieszczania formanty według lokalizacji i rozmiaru do utworzenia układu. Decydujące znaczenie żadnych układu jest dostosowania do zmiany rozmiaru okna i ustawienia wyświetlania. Zamiast wymuszania można napisać kod do dostosowania układu w takiej sytuacji, WPF zapewnia system najwyższej jakości, rozszerzalne układu dla Ciebie.  
@@ -211,7 +211,7 @@ End Namespace
  <xref:System.Windows.Controls.DockPanel> Umożliwia podrzędne <xref:System.Windows.Controls.TextBox> formantów zostanie wstrzymana do rozmieszczenia. Aby to zrobić, <xref:System.Windows.Controls.DockPanel> implementuje `Dock` dołączona właściwość, która jest widoczna do formantów podrzędnych, aby umożliwić każdej z nich, aby określić styl dokowania.  
   
 > [!NOTE]
->  Właściwość, która jest zaimplementowana przez formant nadrzędny konstrukcję WPF jest używany przez formanty podrzędne o nazwie [dołączona właściwość](https://msdn.microsoft.com/en-us/library/ms749011\(v=vs.100\).aspx).  
+>  Właściwość, która jest zaimplementowana przez formant nadrzędny konstrukcję WPF jest używany przez formanty podrzędne o nazwie [dołączona właściwość](/dotnet/framework/wpf/advanced/attached-properties-overview).  
   
  Na poniższej ilustracji przedstawiono wynik znaczników XAML w poprzednim przykładzie.  
   
@@ -254,7 +254,7 @@ End Namespace
   
  Aparat powiązanie danych WPF zapewnia dodatkową pomoc, który obejmuje weryfikację, sortowanie, filtrowanie i grupowanie. Ponadto powiązań danych obsługuje korzystanie z szablonów danych można utworzyć niestandardowego interfejsu użytkownika dla powiązania danych, gdy interfejs użytkownika, wyświetlane przez standardowych formantów WPF nie jest odpowiedni.  
   
- Aby uzyskać więcej informacji, zobacz [omówienie powiązania danych](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview).  
   
 ##  <a name="Graphics"></a>Grafiki  
  WPF wprowadza szeroką gamę, skalowalnych i elastycznych zestaw funkcji grafiki, które mają następujące korzyści:  
@@ -283,7 +283,7 @@ End Namespace
   
  ![Okno z tekstem "kliknięto przycisk wielokropka &33;" ] (../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
- Aby uzyskać więcej informacji, zobacz [kształtów i podstawowe rysunek w omówieniu WPF](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [kształtów i podstawowe rysunek w omówieniu WPF](/dotnet/framework/wpf/data/data-binding-overview).  
   
 ### <a name="2-d-geometries"></a>2-D mają geometrię  
  Kształty 2-D podał WPF obejmują standardowy zestaw kształty podstawowe. Jednak należy utworzyć kształty niestandardowe, aby ułatwić projektowanie interfejsu użytkownika. W tym celu WPF zawiera mają geometrię. Na poniższym rysunku pokazano użycie geometrii, tworząc niestandardowe kształtu, który może być narysowana bezpośrednio, używane jako Pędzel lub używana należy przyciąć innych kształtów i formantów.  
@@ -294,28 +294,28 @@ End Namespace
   
  ![Różnych zastosowań ścieżki](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
- Aby uzyskać więcej informacji, zobacz [geometrii — omówienie](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx)  
+ Aby uzyskać więcej informacji, zobacz [omówienie geometrii](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).  
   
 ### <a name="2-d-effects"></a>Efekty 2-D  
  Podzestaw możliwości 2-D WPF zawiera efekty wizualne, takie jak gradienty, mapy bitowe, rysunki malowanie wideo, obracanie, skalowanie i pochylanie. Te są wszystkie osiągnięty przy pędzle; na poniższej ilustracji przedstawiono kilka przykładów.  
   
  ![Ilustracja różnych pędzli](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
- Aby uzyskać więcej informacji, zobacz [omówienie pędzle WPF](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [omówienie pędzle WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).  
   
 ### <a name="3-d-rendering"></a>Renderowanie 3-D  
  WPF także renderowanie 3-D możliwości, które zintegrować z grafiki 2-d, aby umożliwić tworzenie atrakcyjnych i bardziej interesującego interfejsów użytkownika. Na przykład na poniższej ilustracji przedstawiono obrazy 2-D renderowane 3-kształtów.  
   
  ![Zrzut ekranu przedstawiający przykładowy Visual3D](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- Aby uzyskać więcej informacji, zobacz [3-Przegląd grafiki](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [3-Przegląd grafiki](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).  
   
 ##  <a name="Animation"></a>Animacja  
  Umożliwia obsługę animacji WPF, wprowadzone kontrolki powiększania, potrząsanie, pokrętła i zanikania, aby utworzyć interesujące strony przejścia i inne. Można animować większość klas WPF, nawet klas niestandardowych. Na poniższej ilustracji przedstawiono prosty animacji w akcji.  
   
  ![Obrazy modułu animowany](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
- Aby uzyskać więcej informacji, zobacz [omówienie animacja](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [omówienie animacja](/dotnet/framework/wpf/graphics-multimedia/animation-overview).  
   
 ##  <a name="Media"></a>Nośnik  
  Jest jednym ze sposobów przekazywać zawartość sformatowanego przy użyciu nośnika audiowizualnych. WPF obsługuje specjalnych obrazów, wideo i audio.  
@@ -325,7 +325,7 @@ End Namespace
   
  ![Obrazy miniatur i pełny &#45; rozmiar obrazu](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
- Aby uzyskać więcej informacji, zobacz [Imaging omówienie](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [Imaging omówienie](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).  
   
 ### <a name="video-and-audio"></a>Audio i wideo  
  <xref:System.Windows.Controls.MediaElement> Formantu ma możliwość odtwarzania audio i wideo i jest wystarczająco elastyczny, aby stanowić podstawę do odtwarzacza multimedialnego niestandardowych. Następujący kod XAML implementuje odtwarzacza multimedialnego.  
@@ -336,7 +336,7 @@ End Namespace
   
  ![Formant MediaElement z obsługą audio i wideo](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
- Aby uzyskać więcej informacji, zobacz [WPF grafikę, animacji i omówienie nośnika](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [grafiki i Multimedia](/dotnet/framework/wpf/graphics-multimedia).  
   
 ##  <a name="Text_and_Typography"></a>Tekst i typografii  
  W celu ułatwienia renderowanie tekstu wysokiej jakości, WPF oferuje następujące funkcje:  
@@ -355,7 +355,7 @@ End Namespace
   
  ![Tekst z różnych dekoracji tekstu](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- Aby uzyskać więcej informacji, zobacz [typografii w systemie Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [typografii w systemie Windows Presentation Foundation](/dotnet/framework/wpf/advanced/typography-in-wpf).  
   
 ##  <a name="WPF_Customization"></a>Dostosowywanie aplikacji WPF  
  Do tego momentu przedstawiono podstawowe bloki konstrukcyjne WPF do tworzenia aplikacji. Model aplikacji umożliwia hostowanie i dostarczania zawartości aplikacji, która składa się głównie z formantów. Aby uprościć rozmieszczenie kontrolek w interfejsie użytkownika i aby upewnij się, że rozmieszczenia jest obsługiwany w wypadku zmiany rozmiaru okna i wyświetlić ustawienia, należy użyć systemu układu WPF. Ponieważ większość aplikacji zezwala użytkownikom na interakcję z danymi, umożliwia powiązanie danych Zmniejsz ilość pracy integracji interfejsu użytkownika z danymi. Aby poprawić wygląd aplikacji, należy użyć kompleksowego zakresu Obsługa grafiki, animacji i multimediów w WPF.  
@@ -408,10 +408,10 @@ End Namespace
   
  ![Przycisk zawierający wiele typów zawartości](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
- Aby uzyskać więcej informacji na typy zawartości, która jest obsługiwana przez różnych formantów, zobacz [modelu zawartości WPF](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji na typy zawartości, która jest obsługiwana przez różnych formantów, zobacz [modelu zawartości WPF](/dotnet/framework/wpf/controls/wpf-content-model).  
   
 ### <a name="triggers"></a>Wyzwalacze  
- Mimo że głównym celem znaczników XAML do zaimplementowania wygląd aplikacji, umożliwia także XAML do wykonania niektórych aspektów zachowanie aplikacji. Przykładem jest użycie wyzwalaczy, aby zmienić wygląd aplikacji na podstawie interakcji użytkownika. Aby uzyskać więcej informacji, zobacz [stylami i tworzenia szablonów](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
+ Mimo że głównym celem znaczników XAML do zaimplementowania wygląd aplikacji, umożliwia także XAML do wykonania niektórych aspektów zachowanie aplikacji. Przykładem jest użycie wyzwalaczy, aby zmienić wygląd aplikacji na podstawie interakcji użytkownika. Aby uzyskać więcej informacji, zobacz [stylami i tworzenia szablonów](/dotnet/framework/wpf/controls/styling-and-templating).  
   
 ### <a name="control-templates"></a>Szablony formantu  
  Domyślne interfejsów użytkownika dla formantów WPF są zwykle tworzone na podstawie innych kontrolek i kształtów. Na przykład <xref:System.Windows.Controls.Button> składa się z obu <xref:Microsoft.Windows.Themes.ButtonChrome> i <xref:System.Windows.Controls.ContentPresenter> kontrolki. <xref:Microsoft.Windows.Themes.ButtonChrome> Zapewnia wygląd przycisku standardowe podczas <xref:System.Windows.Controls.ContentPresenter> Wyświetla zawartości przycisku, zgodnie z <xref:System.Windows.Controls.ContentControl.Content%2A> właściwości.  
@@ -491,7 +491,7 @@ End Namespace
   
  Należy pamiętać, że <xref:System.Windows.Controls.ListBox> zachował jego działanie i wygląd; zmienił się tylko na wygląd zawartości będzie wyświetlany w polu listy.  
   
- Aby uzyskać więcej informacji, zobacz [omówienie tworzenia szablonów danych](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [omówienie tworzenia szablonów danych](/dotnet/framework/wpf/data/data-templating-overview).  
   
 ### <a name="styles"></a>Style  
  Style Włącz deweloperów i projektantów normalizacji w szczególności wygląd ich produktu. WPF udostępnia model strong style, jest podstawą <xref:System.Windows.Style> elementu. Poniższy przykład tworzy styl, który ustawia kolor tła dla każdego <xref:System.Windows.Controls.Button> na okno, aby `Orange`.  
@@ -525,7 +525,7 @@ End Namespace
   
  ![Dwa pomarańczowe przyciski](../designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
- Aby uzyskać więcej informacji, zobacz [stylami i tworzenia szablonów](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [stylami i tworzenia szablonów](/dotnet/framework/wpf/controls/styling-and-templating).  
   
 ### <a name="resources"></a>Resources  
  Formanty w aplikacji powinny współużytkować tego samego wygląd mogą obejmować z czcionki i kolory tła sterowania szablonów, szablony danych i style. Obsługa WPF w zasoby interfejsu użytkownika umożliwia hermetyzować zasoby w jednej lokalizacji do ponownego użycia.  
@@ -596,7 +596,7 @@ End Namespace
   
  Zasoby i słowniki zasobów są podstawę obsługę WPF kompozycje i karnacji.  
   
- Aby uzyskać więcej informacji, zobacz [Omówienie zasobów](https://msdn.microsoft.com/en-us/library/ms750613\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji, zobacz [Omówienie zasobów](/dotnet/framework/wpf/advanced/xaml-resources).  
   
 ### <a name="custom-controls"></a>Formanty niestandardowe  
  Chociaż hosta obsługi dostosowywania WPF, mogą wystąpić sytuacje, w którym istniejących formantów WPF nie spełniają potrzeb aplikacji lub jej użytkowników. Taka sytuacja może wystąpić podczas:  
@@ -628,18 +628,18 @@ End Namespace
   
  ![Niestandardowe UserControl](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
- Aby uzyskać więcej informacji na formantów niestandardowych, zobacz [informacje o formancie tworzenia](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx).  
+ Aby uzyskać więcej informacji na formantów niestandardowych, zobacz [informacje o formancie tworzenia](/dotnet/framework/wpf/controls/control-authoring-overview).  
   
 ##  <a name="WPF_Best_Practices"></a>Najlepsze rozwiązania w zakresie WPF  
  Podobnie jak w przypadku dowolnej platformie programowanie WPF można na wiele sposobów, aby osiągnąć pożądany wynik. Sposób zapewnienia, że Twoje WPF aplikacje zapewnić środowisko użytkownika wymagane i zazwyczaj spełnienia wymagań odbiorców, są zalecane najlepsze rozwiązania dotyczące ułatwień dostępu, lokalizacja i globalizacja i wydajności. Zobacz następujące tematy, aby uzyskać więcej informacji:  
   
--   [Najlepsze praktyki dotyczące ułatwień dostępu](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)najlepsze praktyki dotyczące ułatwień dostępu  
+-   [Najlepsze praktyki dotyczące ułatwień dostępu](/dotnet/framework/ui-automation/accessibility-best-practices)najlepsze praktyki dotyczące ułatwień dostępu  
   
--   [Omówienie lokalizacja i globalizacja WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   [Przeglądanie globalizacji i lokalizacji WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   [Optymalizacja wydajności aplikacji WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   [Optymalizacja wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
--   [Zabezpieczeń w systemie Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   [Zabezpieczeń w systemie Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
 ##  <a name="Summary"></a>Podsumowanie  
  WPF to technologia kompleksowe prezentacji do tworzenia szerokiej gamy wizualnie ogłuszania aplikacji klienckich. To wprowadzenie udostępnił przyjrzeć się najważniejsze funkcje WPF.  
@@ -651,4 +651,4 @@ End Namespace
 ## <a name="see-also"></a>Zobacz też  
  [Pierwsze kroki z użyciem WPF](../designers/getting-started-with-wpf.md)   
  [Tworzenie nowoczesnych aplikacji klasycznych z technologii Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
- [Program Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)
+ [Windows Presentation Foundation](/dotnet/framework/wpf/index)

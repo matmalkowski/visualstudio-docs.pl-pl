@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: da77078bfd0d6e2195169d40dfdbfdb484b68655
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="working-with-the-r-interactive-window"></a>Praca z okno interaktywne R
 
@@ -75,7 +75,6 @@ Polecenia paska narzędzi są następujące, z których większość mają odpow
 | ![Ustaw katalog roboczy na przycisk lokalizacji projektu](media/repl-toolbar-11-set-working-directory-to-project.png) | Ustawianie pracy katalogu do lokalizacji projektu | Ctrl+Shift+P | Ustawia katalog roboczy na katalog główny aktualnie załadowanego projektu w programie Visual Studio. Zobacz [katalog roboczy](#working-directory). |
 | (Pole tekstowe) | Wybierz pracy katalogu | n/d | Bezpośrednie pole wejściowe dla katalogu roboczego. Zobacz [katalog roboczy](#working-directory). |
 
-
 ## <a name="workspaces-and-sessions"></a>Obszary robocze i sesji
 
 Wykonywanie kodu w oknie interaktywnym tworzy się kontekstu w bieżącej sesji. Kontekst składa się ze zmiennych globalnych, definicje funkcji, biblioteka obciążeń i tak dalej. Ten kontekst jest nazywane ogólnie *obszaru roboczego*, i można zapisywać i załadować obszarów roboczych w dowolnym momencie. 
@@ -88,12 +87,10 @@ Aby ponownie załadować uprzednio zapisanego obszaru roboczego, wybierz **obci�
 
 **Zresetować** przycisk lub **narzędzia R > sesji > Resetuj** czyści kontekstu sesji. Jeśli korzystasz z sesji zdalnej, zresetowanie spowoduje również usunięcie profilu użytkownika na komputerze zdalnym, aby wyczyścić poza przechowywane wszystkie pliki. (Zobacz [obszarów roboczych](workspaces.md#directories-on-local-and-remote-computers).)
 
-
 ## <a name="working-directory"></a>Katalog roboczy
 
 Deweloperzy często chcesz zmienić ich katalog roboczy, podczas gdy w sesji interaktywnej. Różne polecenia dostępne na pasku narzędzi **narzędzia R > katalog roboczy** menu i menu kontekstowego projektu pozwala łatwo ustawić katalogu roboczego lokalizację pliku źródłowego, lokalizacji lub projektu lub innych dowolne lokalizacji. Dzięki temu pomaga uniknąć wpisywania pełnych nazw ścieżek lub długie nazwy ścieżek względnych podczas odwoływania się do plików.
 
- 
 ## <a name="history"></a>Historia
 
 Każdy wiersz wprowadzone w oknie interaktywnym zawiera wiersze wysyłane z edytora, zostaną zachowane w historii REPL. Następnie można przejść za pomocą historii z Up i klawiszy strzałek, ponieważ prawdopodobnie przyzwyczajony do w wierszu polecenia.

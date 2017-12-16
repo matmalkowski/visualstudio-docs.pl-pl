@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA powinny wywoływać tylko metody APTCA
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Obiekt wywołujący częściowo zaufany `X` można wywołać metody `M1`, powodując `M1` do wywołania `M2`. Ponieważ `M2` nie ma atrybutu APTCA, jego bezpośredniego obiektu wywołującego (`M1`) muszą spełniać żądanie łącza do pełnego zaufania; `M1` ma pełne zaufanie, w związku z tym spełnia to sprawdzenie. To zagrożenie bezpieczeństwa, ponieważ `X` nie uczestniczy w zaspokojenia potrzeb link, który chroni `M2` z niezaufanych obiekty wywołujące. W związku z tym metody z atrybutem APTCA nie mogą wywoływać metod, które nie mają atrybutu.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Jeśli atrybut APCTA jest wymagana, należy użyć żądanie do ochrony metodę, która wywołuje całkowicie zaufany zestaw. Dokładne uprawnienia, możesz żądanie będzie zależeć od funkcji udostępnianych przez metodę. Jeśli to możliwe, należy chronić metody zażąda pełnego zaufania upewnić się, że podstawową funkcjonalność nie jest narażony na częściowo zaufane obiekty wywołujące. Jeśli nie jest to możliwe, wybierz zestaw uprawnień skutecznie chroni narażonych funkcji. Aby uzyskać więcej informacji na temat wymagań, zobacz [wymagań](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Jeśli atrybut APCTA jest wymagana, należy użyć żądanie do ochrony metodę, która wywołuje całkowicie zaufany zestaw. Dokładne uprawnienia, możesz żądanie będzie zależeć od funkcji udostępnianych przez metodę. Jeśli to możliwe, należy chronić metody zażąda pełnego zaufania upewnić się, że podstawową funkcjonalność nie jest narażony na częściowo zaufane obiekty wywołujące. Jeśli nie jest to możliwe, wybierz zestaw uprawnień skutecznie chroni narażonych funkcji.  
   
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
  Aby bezpiecznie pominąć ostrzeżenie od tej reguły, musi upewnij się, że funkcje udostępniane przez metodę nie bezpośrednio lub pośrednio zezwala elementom wywołującym na dostęp do poufnych informacji, operacji lub zasobów, które mogą być używane w szkodliwy sposób.  
@@ -74,12 +74,10 @@ ms.lasthandoff: 10/31/2017
  **Żądanie dla pełnego zaufania: żądanie nie powiodło się.**  
 **ClassRequiringFullTrust.DoWork została wywołana.**   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2117: Typy APTCA powinny rozszerzać tylko typy bazowe APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
+ [CA2117: Typy z atrybutem APTCA powinny rozszerzać tylko typy podstawowe z atrybutem APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)   
- [Zestawów platformy .NET framework można wywołać częściowo zaufany kod](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Używanie bibliotek pochodzących z częściowo zaufanego kodu](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Wymagania](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Żądania łączy](/dotnet/framework/misc/link-demands)   
  [Dane i modelowanie](/dotnet/framework/data/index)

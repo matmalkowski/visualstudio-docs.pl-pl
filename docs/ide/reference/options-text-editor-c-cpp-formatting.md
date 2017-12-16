@@ -10,18 +10,18 @@ ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
-dev_langs: C++
+dev_langs: CPP
 helpviewer_keywords: Text Editor Options dialog box, formatting
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 081dc1215b0e8ac026455a5449761ce103c35551
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 27f8a42d3293d3ffc786b8e1b67d2c569cfcd1ed
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub C++.  
@@ -52,7 +52,7 @@ Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub
  **Automatyczne wcięcia na karcie**  
  Można skonfigurować, co się dzieje w bieżącym wierszu kodu po naciśnięciu klawisza TAB. Albo wiersz zostaje wcięty, albo zostaje wstawiony tabulator.  
   
-## <a name="miscellaneous"></a>Inne  
+## <a name="miscellaneous"></a>Różne  
  **Wyliczanie komentarzy w oknie Lista zadań**  
  Edytor może skanować otwarte pliki źródłowe pod kątem wstępnie określonych słów w komentarzach. Tworzy wpis w **listy zadań** okna dla dowolnego słowa kluczowe, które znajdzie.  
   
@@ -71,10 +71,10 @@ Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub
   
 -   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
   
--   [Switch — instrukcja (C++)](/cpp/cpp/switch-statement-cpp)  
+-   [switch, instrukcja (C++)](/cpp/cpp/switch-statement-cpp)  
   
--   [while — instrukcja (C++)](/cpp/cpp/while-statement-cpp)  
+-   [while, instrukcja (C++)](/cpp/cpp/while-statement-cpp)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)   
- [Korzystanie z IntelliSense](../../ide/using-intellisense.md)
+ [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

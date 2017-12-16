@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Wskazówki: tworzenie zestawu danych za pomocą narzędzia Projektant obiektów Dataset
+
 W tym przewodniku spowoduje utworzenie zestawu danych za pomocą **Projektant obiektów Dataset**. Nastąpi przekierowanie przez proces tworzenia nowego projektu i dodawanie nowej **DataSet** element, aby go. Nauczysz się, w jaki sposób tworzyć tabele na podstawie tabel w bazie danych bez używania kreatora.  
-  
- Zadania przedstawione w tym przewodniku obejmują:  
-  
+
+Zadania przedstawione w tym przewodniku obejmują:  
+
 -   Tworzenie nowego **aplikacji Windows Forms** projektu.  
-  
+
 -   Dodawanie pustą **DataSet** elementu do projektu.  
-  
+
 -   Tworzenie i konfigurowanie źródła danych w aplikacji przez utworzenie zestawu danych z **Projektant obiektów Dataset**.  
-  
+ 
 -   Tworzenie połączenia z bazą danych Northwind w **Eksploratora serwera**.  
-  
+
 -   Tworzenie tabel z elementami TableAdapter w zestawie danych na podstawie tabel istniejących w bazie danych.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  

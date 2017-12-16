@@ -11,52 +11,48 @@ helpviewer_keywords:
 - application properties [Visual Studio]
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c5753d12f8926653bcc655e403be20910472fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a99842f41d96323c40c008970938f48d43b69029
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="application-properties"></a>Właściwości aplikacji
-Można ustawić właściwości ogólne aplikacji Visual Basic, C# i F # aplikacji, takich jak typ aplikacji, obiekt uruchomieniowy i informacji o zestawie w **aplikacji** okienku **projektanta projektu**.  
-  
- Można wykonywać następujące zadania w **aplikacji** okienka:  
-  
+
+Można ustawić właściwości ogólne aplikacji Visual Basic, C# i F # aplikacji, takich jak typ aplikacji, obiekt uruchomieniowy i informacji o zestawie w **aplikacji** okienku **projektanta projektu**.
+
+Można wykonywać następujące zadania w **aplikacji** okienka:
+
 -   Określ informacje o zestawie  
-  
+
 -   Określ ekran powitalny dla aplikacji  
-  
+
 -   Określ zdarzenia na poziomie aplikacji  
-  
+
 -   Zmień nazwę zestawu  
-  
+
 -   Zmiana nazw dla aplikacji  
-  
+
 -   Zmienianie typu aplikacji  
-  
+
 -   Zmień obiekt uruchamiania aplikacji  
-  
+
 -   Określanie ikony aplikacji  
-  
+
 -   Włącz style wizualne XP systemu Windows  
-  
+
 -   Określ zachowanie wystąpień aplikacji  
-  
+
 -   Włącz uwierzytelnianie użytkownika niestandardowego  
-  
--   Określ zachowanie zamykania aplikacji  
-  
- Zadań dostępnych dla aplikacji są zależne od języka programowania, używany.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Porady: Określanie ikony aplikacji (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
-  
-## <a name="see-also"></a>Zobacz też  
+
+-   Określ zachowanie zamykania aplikacji
+
+## <a name="see-also"></a>Zobacz także
+
+ [Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
  [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   

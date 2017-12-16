@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio
 
-W tym wprowadzeniu do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 min przeniesiemy samouczek niektórych okien, menu i inne funkcje interfejsu użytkownika.
+W to 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) firma Microsoft będzie przewodnik niektóre z okien, menu i inne funkcje interfejsu użytkownika.
 
 ## <a name="start-page"></a>Strona początkowa
 
@@ -94,8 +94,10 @@ Analizujemy zostały tylko niektóre funkcje programu Visual Studio IDE, aby kor
 
 - Przejdź do sekcji Ogólne elementy interfejsu użytkownika w dokumentacji wersji programu VS, przejdzie bardziej szczegółowo omówiono systemu windows, takich jak [listy błędów](../ide/reference/error-list-window.md), [okno danych wyjściowych](../ide/reference/output-window.md), [okna właściwości](../ide/reference/properties-window.md), i [opcje — Okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md)
 
-- Zająć więcej w samouczku głębokość IDE, a nawet dabble debugowania, w [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
+- Więcej informacji na temat Przewodnik IDE, a nawet dabble debugowania, w [Omówienie środowiska IDE programu Visual Studio](../ide/visual-studio-ide.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Szybki Start: personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Szybki Start: personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Szybki Start: kodowania w edytorze](../ide/quickstart-editor.md)  
+[Szybki Start: projekty i rozwiązania](../ide/quickstart-projects-solutions.md)  

@@ -22,18 +22,18 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 4d1d35049d71ba011516b3bc06316cb46cc61ced
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawa czasu odpowiedzi interfejsu użytkownika (HTML)
 W tym przewodniku poprowadzi Cię przez proces identyfikacji i rozwiązywania problemu z wydajnością przy użyciu [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Profiler jest dostępna w programie Visual Studio dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje zbyt często elementy modelu DOM i używasz profilera, aby zidentyfikować i rozwiązać ten problem.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Tworzenie i uruchamianie wykonywania testów aplikacji  
   
-1.  W programie Visual Studio Utwórz nowy projekt JavaScript uniwersalnych systemu Windows. (Wybierz **pliku / New / Project**. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz pozycję **Windows**, **systemu Windows 10**, następnie albo **uniwersalnych**, lub  **Windows Phone**.  
+1.  W programie Visual Studio Utwórz nowy projekt JavaScript uniwersalnych systemu Windows. (Wybierz **Plik > Nowy > Projekt**. Wybierz **JavaScript** w okienku po lewej stronie, a następnie wybierz pozycję **Windows**, **systemu Windows 10**, następnie albo **uniwersalnych**, lub  **Windows Phone**.  
   
 2.  > [!IMPORTANT]
     >  Wyniki diagnostyki wyświetlane w tym temacie przedstawiono dla aplikacji systemu Windows 8.  

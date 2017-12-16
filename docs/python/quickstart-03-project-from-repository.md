@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 130a5b78ec243049a99c5429538a07ae778e7c1e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: klonowanie repozytorium kodu języka Python w programie Visual Studio
 
@@ -75,7 +75,7 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 > [!div class="nextstepaction"]
 > [Samouczek: Praca z języka Python w programie Visual Studio](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).

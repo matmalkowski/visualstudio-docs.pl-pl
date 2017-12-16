@@ -12,11 +12,11 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 8f27747037bc496c35594973e730c09533820096
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Deweloper testowania narzędzi, scenariusze i funkcje
 
@@ -44,7 +44,7 @@ IntelliTest znacznie zmniejsza nakład pracy można tworzyć i obsługiwać test
 * [IntelliTest — jeden Test do wszystkich reguł](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
 * [IntelliTest wideo](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Rozpoczynanie pracy z IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [IntelliTest podręcznika](intellitest-manual/index.md)
+* [Podręcznik dotyczący funkcji IntelliTest](intellitest-manual/index.md)
 
 <a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Testowanie kodowanego interfejsu użytkownika i Selenium za pomocą interfejsu użytkownika
@@ -75,7 +75,7 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 
 ![Testu z Team Foundation Server i Visual Studio Team Services](media/devtest-codecoverage.png)
 
-* [Korzystanie z pokrycia kodu do określenia, jaka część kodu jest poddawana testom](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Jednostka testowania, pokrycie kodu i analizy kodu klonowania z programem Visual Studio (laboratorium)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Dostosowywanie analizy pokrycia kodu](customizing-code-coverage-analysis.md)
 
@@ -87,7 +87,7 @@ Przetestuj pomoc Eksploratora deweloperom tworzenia, zarządzania i uzyskać mak
 ![Eksplorator testów programu Visual Studio](media/devtest-testexplorer.png)
 
 * [Rozpoczynanie pracy z testów jednostkowych](unit-test-your-code.md)
-* [Uruchom testy jednostkowe za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md)
+* [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md)
 * [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)
 * [Instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md)
 
@@ -95,7 +95,7 @@ Visual Studio także i otwiera drzwi testowania kart sieciowych, takich jak NUni
 
 ![Integracja testu innych firm](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Wprowadzenie do przeprowadzania testów jednostkowych](getting-started-with-unit-testing.md)
 * [Przyspieszenie wykonywania testów jednostkowych w programie Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c86e7bcfe43eeaa6554efeed6654f34e140d9ea7
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+dev_langs: CPP
+ms.openlocfilehash: 730a7b6ce79f2844ca7dca618c684a35c3143944
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 

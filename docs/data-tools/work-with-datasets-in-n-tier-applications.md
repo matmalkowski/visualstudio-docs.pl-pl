@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach warstwowych
 *Aplikacje warstwowe —* są skoncentrowane na dane aplikacji, które są podzielone na kilka logicznych warstw (lub *warstw*). Innymi słowy aplikacji warstwowych jest aplikacja, która jest podzielony na wiele projektów z warstwą dostępu do danych, warstwy logiki biznesowej, a warstwą prezentacji każdego własnego projektu. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).  
@@ -43,12 +43,12 @@ Obsługa N-warstwowa w typizowanych zbiorach danych umożliwia iteracyjne projek
 ## <a name="see-also"></a>Zobacz także
 [Omówienie aplikacji warstwowych](../data-tools/n-tier-data-applications-overview.md)  
 [Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
-[Dodawanie kodu do TableAdapters w aplikacjach warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
-[Dodawanie kodu do zestawów danych w aplikacjach warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
-[Dodawanie walidacji do warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md)  
-[Oddzielne zestawy danych i TableAdapters do różnych projektów](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+[Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[Dodawanie kodu do zestawów danych w aplikacjach n-warstwowych](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
+[Dodawanie walidacji do n-warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md)  
+[Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
 [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)  
 [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
 [Tworzenie i konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md)  
-[N-warstwowa oraz zdalnych aplikacji za pomocą LINQ do SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[N-warstwowe i zdalne aplikacje z użyciem LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

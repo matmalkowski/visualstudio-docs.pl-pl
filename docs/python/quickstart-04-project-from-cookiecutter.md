@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 876fdbd4507fd7ed55e7b29834d4a3bc5e68dfad
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b635d988e54dd8b07092c0c77941552e66a38776
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki Start: Tworzenie projektu z szablonu Cookiecutter
 
@@ -42,15 +42,14 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
     ![Dane wyjściowe projektu szablonu python-sklearn klasyfikatora cookiecutter](media/projects-from-cookiecutter4.png)
 
-
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
 > [Samouczek: Praca z języka Python w programie Visual Studio](vs-tutorial-01-01.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-- [Użycie rozszerzenia Cookiecutter](cookiecutter.md)
+- [Przy użyciu rozszerzenia Cookiecutter](cookiecutter.md)
 - [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).
 - [Lokalizacje instalacji](installation.md#install-locations).

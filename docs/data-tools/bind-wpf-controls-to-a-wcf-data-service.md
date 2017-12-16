@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązanie formantów WPF z usługi danych WCF
 W tym przewodniku spowoduje utworzenie aplikacji WPF, który zawiera formanty powiązane z danymi. Formanty są powiązane z rekordy klientów, które znajdują się w [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Dodasz również przycisków, których klienci mogą używać do wyświetlania i aktualizowania rekordów.  
@@ -56,8 +56,6 @@ Znajomość następujące pojęcia jest również przydatna, ale nie są wymagan
 -   Modele danych w [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].  
   
 -   A modeli danych jednostki ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie struktury jednostek](/dotnet/framework/data/adonet/ef/overview).  
-  
--   Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [Omówienie projektanta Silverlight i WPF](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [omówienie powiązania danych](/dotnet/framework/wpf/data/data-binding-overview).  
   

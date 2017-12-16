@@ -3,11 +3,11 @@ layout: LandingPage
 title: Debugowanie aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
 description: "Dowiedz się, jak używać programu Visual Studio 2017 do debugowania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: d00ef04d3d8f73b607c91f33f9af53429666ba5f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 
@@ -21,7 +21,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_road-map.svg" alt="">
+                            <img src="/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -39,7 +39,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +57,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,7 +75,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_video.svg" alt="">
+                            <img src="/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -147,7 +147,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -165,7 +165,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_whats-new.svg" alt="">
+                            <img src="/media/common/i_whats-new.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">

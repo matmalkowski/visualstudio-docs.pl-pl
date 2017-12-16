@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f60f930cd29d670ee5ac4b4274082ca00ca0012f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
@@ -74,7 +74,7 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 | [Z istniejącego kodu języka Python](#creating-a-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu języka Python w strukturze folderu.  |
 | Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](python-environments.md#project-specific-environments). |
 | [Usługi w chmurze Azure](template-azure-cloud-service.md) | Projekt usługi w chmurze Azure napisanych w języku Python. |
-| [Projekty internetowe](template-web.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
+| [Projekty sieci Web](template-web.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
 | IronPython aplikacji | Podobnie jak szablon aplikacji Python, ale IronPython przez domyślne włączenie .NET międzyoperacyjnego i trybu mieszanego debugowania w językach .NET. |
 | Aplikacja IronPython WPF | Struktury projektu przy użyciu IronPython z plikami Windows Presentation Foundation XAML dla interfejsu użytkownika aplikacji. Program Visual Studio udostępnia projektanta XAML interfejsu użytkownika, związane z kodem mogą być napisane w języku Python i aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | Strony sieci Web IronPython Silverlight | Projekt IronPython, który jest uruchamiany w przeglądarce, za pomocą programu Silverlight. Kodu Python aplikacji znajduje się na stronie sieci web jako skryptu. Tag skryptu umożliwiającego ściąga dół niektórych kod JavaScript, która inicjuje IronPython działają w ramach Silverlight, z którego kodu Python mogą prowadzić interakcję z modelu DOM. |
@@ -144,6 +144,6 @@ Ponieważ odwołań w IronPython nie są dostępne, dopóki wywołania `clr.AddR
 
 ### <a name="webpi-projects"></a>Projekty WebPI
 
-Można dodać odwołania do pozycji produktu WebPI wdrożenia do usługi w chmurze Azure Microsoft gdzie można zainstalować dodatkowe składniki za pośrednictwem WebPI źródła danych. Domyślnie źródła danych, wyświetlany jest specyficzne dla języka Python i obejmuje Django, języka CPython i inne składniki podstawowe. Można również wybrać własne źródła danych, jak pokazano poniżej. Podczas publikowania do systemu Microsoft Azure, zadania Instalator instaluje wszystkich produktów, do którego istnieje odwołanie.
+Możesz dodać odwołania do pozycji produktu WebPI wdrożenia usług chmurowych firmy Microsoft Azure z których można zainstalować dodatkowe składniki za pośrednictwem WebPI źródła danych. Domyślnie źródła danych, wyświetlany jest specyficzne dla języka Python i obejmuje Django, języka CPython i inne składniki podstawowe. Można również wybrać własne źródła danych, jak pokazano poniżej. Podczas publikowania do systemu Microsoft Azure, zadania Instalator instaluje wszystkich produktów, do którego istnieje odwołanie.
 
 ![WebPI odwołań](media/projects-webPI-components.png)

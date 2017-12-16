@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cba3d5568ee2fa2b4af0eb9c10995c813fe09c01
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ do SQL narzędzia w programie Visual Studio
 LINQ do SQL był pierwszy technologii mapowania obiektu relacyjnego wydane przez firmę Microsoft. Działa dobrze w podstawowe scenariusze i może być obsługiwany w programie Visual Studio, ale nie jest już opracowywane aktywne. Użyj LINQ do SQL podczas obsługi starszych aplikacji, który już jest używany lub w aplikacjach proste, użyj programu SQL Server, które nie wymagają mapowania wielu tabel. Ogólnie rzecz biorąc nowych aplikacji należy używać programu Entity Framework, gdy wymagana jest warstwa relacyjnej obiektu mapowania.  
@@ -62,7 +62,7 @@ W programie Visual Studio możesz utworzyć LINQ w klasach SQL, które reprezent
  Inne obiekty, takich jak [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy można użyć dziedziczenia i pochodzić z innych klas. W bazie danych relacji dziedziczenia są tworzone na kilka sposobów. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Obsługuje koncepcja dziedziczenia pojedynczej tabeli, jak często jest zaimplementowana w systemach relacyjnych. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).  
   
 ## <a name="linq-to-sql-queries"></a>LINQ do SQL zapytań  
- Klasy jednostki tworzone przez [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] są przeznaczone do użytku z [LINQ (zapytania język Language-Integrated)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d). Aby uzyskać więcej informacji, zobacz [porady: Kwerenda dotycząca informacji](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
+ Klasy jednostki tworzone przez [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] są przeznaczone do użytku z [LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/). Aby uzyskać więcej informacji, zobacz [porady: Kwerenda dotycząca informacji](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
   
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Oddzielanie wygenerowany element DataContext i kod klasy jednostki w różnych przestrzeniach nazw  
  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Zapewnia **Namespace kontekstu** i **Namespace jednostki** właściwości <xref:System.Data.Linq.DataContext>. Te właściwości określają, jakie przestrzeni nazw <xref:System.Data.Linq.DataContext> i do zostaje wygenerowany kod klasy jednostki. Domyślnie te właściwości są puste i <xref:System.Data.Linq.DataContext> i klas jednostek są generowane w przestrzeni nazw aplikacji. Aby wygenerować kod w przestrzeni nazw innych niż przestrzeń nazw aplikacji, wprowadź wartość do **Namespace kontekstu** i/lub **Namespace jednostki** właściwości.

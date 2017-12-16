@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Oznacz logiczne argumenty P/Invoke za pomocą MarshalAs
 |||  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Opis reguły  
  Platforma wywołania metody uzyskuje dostęp do niezarządzanego kodu i jest definiowana za pomocą `Declare` — słowo kluczowe w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Określa zachowanie marshalingu, służący do konwersji typów danych między zarządzanymi i niezarządzanymi kodu. Wiele proste typy danych, na przykład <xref:System.Byte?displayProperty=fullName> i <xref:System.Int32?displayProperty=fullName>, ma reprezentacji w postaci jednego za pomocą kodu niezarządzanego i nie wymagają specyfikacji ich zachowanie marshalingu; środowisko uruchomieniowe języka wspólnego automatycznie dostarcza poprawne zachowanie.  
   
- <xref:System.Boolean> Typ danych ma wiele oświadczeń za pomocą kodu niezarządzanego. Gdy <xref:System.Runtime.InteropServices.MarshalAsAttribute> nie zostanie określony, domyślne zachowanie dla marshalingu <xref:System.Boolean> typ danych jest <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Jest to liczba całkowita 32-bitowy, który nie jest odpowiedni we wszystkich okolicznościach. Logiczna reprezentacja, wymagany przez metodę niezarządzane powinny być określone i dopasowane do odpowiedniego <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool jest typu Win32 BOOL, który jest zawsze 4 bajty. UnmanagedType.U1 powinien być używany dla języka C++ `bool` lub inne typy 1-bajtowego. Aby uzyskać więcej informacji, zobacz [domyślny Marshaling dla typów logicznych](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
+ <xref:System.Boolean> Typ danych ma wiele oświadczeń za pomocą kodu niezarządzanego. Gdy <xref:System.Runtime.InteropServices.MarshalAsAttribute> nie zostanie określony, domyślne zachowanie dla marshalingu <xref:System.Boolean> typ danych jest <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Jest to liczba całkowita 32-bitowy, który nie jest odpowiedni we wszystkich okolicznościach. Logiczna reprezentacja, wymagany przez metodę niezarządzane powinny być określone i dopasowane do odpowiedniego <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool jest typu Win32 BOOL, który jest zawsze 4 bajty. UnmanagedType.U1 powinien być używany dla języka C++ `bool` lub inne typy 1-bajtowego.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby naprawić naruszenie tej reguły, zastosuj <xref:System.Runtime.InteropServices.MarshalAsAttribute> do <xref:System.Boolean> parametrze lub wartości zwracanej. Ustaw wartość atrybutu do odpowiedniego <xref:System.Runtime.InteropServices.UnmanagedType>.  
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [Organizowanie domyślne dotyczące typów logicznych](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
  [Współdziałanie z kodem niezarządzanym](/dotnet/framework/interop/index)

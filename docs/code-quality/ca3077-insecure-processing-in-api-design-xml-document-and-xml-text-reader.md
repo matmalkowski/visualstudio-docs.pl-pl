@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6944b49626771317f1643f7ae521b0db43c2200c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 7e3e23441a0e4e03f2f7829c24513fd7cfce5eea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Przetwarzanie niezabezpieczonych projekt interfejsu API, dokument XML i czytnika tekstu XML
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Projektowanie interfejsu API otrzymane z XMLDocument i klasy XMLTextReader, można w trosce o <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Za pomocą niezabezpieczonego DTDProcessing wystąpień, gdy odwołuje się do rozpoznawania źródeł zewnętrznej jednostki lub ustawienie niezabezpieczonych wartości w pliku XML może prowadzić do ujawnienie informacji.  
   
 ## <a name="rule-description"></a>Opis reguły  
- A [definicji typu dokumentu (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) jest jeden z dwóch sposobów analizatora składni XML można określić ważności dokumentu, zgodnie z definicją w [sieci World Wide Web konsorcjum W3C XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła ma właściwości i gdzie niezaufanych danych jest akceptowany w celu ostrzegania o deweloperów o możliwości wystąpienia [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:  
+ A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora składni XML można określić ważności dokumentu, zgodnie z definicją w [sieci World Wide Web konsorcjum W3C XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła ma właściwości i gdzie niezaufanych danych jest akceptowany w celu ostrzegania o deweloperów o możliwości wystąpienia [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:  
   
 -   <xref:System.Xml.XmlDocument>lub <xref:System.Xml.XmlTextReader> klasy użyj domyślny program rozpoznawania nazw wartości dla przetwarzanie elementu DTD.  
   

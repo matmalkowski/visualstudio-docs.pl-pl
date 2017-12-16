@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4a06336ff04591d2c3006bdb34b7169b6ae078
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb6d83004414abd530a8274f5338b134de2a5403
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="native-minimum-rules-rule-set"></a>Zestaw reguł Native Minimum Rules
 Microsoft Native Minimum Rules dotyczą najpoważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł w każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.  
@@ -59,7 +59,6 @@ Microsoft Native Minimum Rules dotyczą najpoważniejszych problemów w kodzie n
 |[C6504](../code-quality/c6504.md)|Wartości null na nie będącego wskaźnikiem|  
 |[C6505](../code-quality/c6505.md)|MustCheck na Void|  
 |[C6506](../code-quality/c6506.md)|Rozmiar buforu dla elementu nie będącego wskaźnikiem lub tablicy|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|Niezgodność wartości null na usunąć odwołania do zera.|  
 |[C6508](../code-quality/c6508.md)|Dostęp do zapisu dla stałej|  
 |[C6509](../code-quality/c6509.md)|Użyto Return w warunku wstępnym|  
 |[C6510](../code-quality/c6510.md)|Zakończenie wartością null dla nie będącego wskaźnikiem|  
@@ -70,12 +69,8 @@ Microsoft Native Minimum Rules dotyczą najpoważniejszych problemów w kodzie n
 |[C6516](../code-quality/c6516.md)|Brak właściwości dla atrybutu|  
 |[C6517](../code-quality/c6517.md)|Nieprawidłowy rozmiar dla bufora bez możliwości odczytu|  
 |[C6518](../code-quality/c6518.md)|Rozmiar zapisu dla bufora bez możliwości zapisu|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Nieprawidłowa adnotacja: wartość właściwości "NeedsRelease" musi być tak lub nie|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Nieprawidłowy rozmiar ciągu Wyłuskania|  
 |[C6522](../code-quality/c6522.md)|Nieprawidłowy typ ciągu rozmiaru|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Nieprawidłowy rozmiar parametru ciągu|  
 |[C6525](../code-quality/c6525.md)|Nieprawidłowy rozmiar nieosiągalna lokalizacja ciągu|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Nieprawidłowy typ ciągu rozmiaru buforu|  
 |[C6527](../code-quality/c6527.md)|Nieprawidłowa adnotacja: właściwość "NeedsRelease", nie może być używana dla wartości typu void|  
 |[C6530](../code-quality/c6530.md)|Nierozpoznany styl ciągu formatu|  
 |[C6540](../code-quality/c6540.md)|Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec|  
@@ -135,8 +130,7 @@ Microsoft Native Minimum Rules dotyczą najpoważniejszych problemów w kodzie n
 |[C28253](../code-quality/c28253.md)|Niespójna adnotacja dla funkcji: parametr ma inny adnotacje w tym wystąpieniu.|  
 |[C28254](../code-quality/c28254.md)|(dynamic_cast <>) nie jest obsługiwane w adnotacjach|  
 |[C28262](../code-quality/c28262.md)|Znaleziono błąd składni w adnotacji w funkcji dla adnotacji|  
-|[C28263](../code-quality/c28263.md)|Znaleziono błąd składni w adnotacji warunkowej dla adnotacji — wewnętrzne|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Wynik listy wartości muszą być stałymi.|  
+|[C28263](../code-quality/c28263.md)|Znaleziono błąd składni w adnotacji warunkowej dla adnotacji — wewnętrzne| 
 |[C28267](../code-quality/c28267.md)|Znaleziono błąd składni w adnotacjach adnotacji w funkcji.|  
 |[C28272](../code-quality/c28272.md)|Adnotacja dla funkcji, parametr Rozpatrując jest niespójny z deklaracją funkcji|  
 |[C28273](../code-quality/c28273.md)|W przypadku funkcji wskazówek są niezgodne z deklaracją funkcji|  

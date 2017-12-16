@@ -10,23 +10,17 @@ ms.topic: article
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
-caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4eaa6a746f67c891e9e4979f9c5b06202383e5f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e26fc0c15e259a38fcb638436b4ce671f4ecc241
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="security-page-project-designer"></a>Strona zabezpieczeń, Projektant projektu
 **Zabezpieczeń** strony **projektanta projektu** służy do konfigurowania ustawień zabezpieczeń dostępu kodu dla aplikacji, które są wdrażane za pomocą [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] wdrożenia. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
@@ -80,4 +74,4 @@ ms.lasthandoff: 10/31/2017
  [Porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Zabezpieczenia ClickOnce i wdrażania](../../deployment/clickonce-security-and-deployment.md)   
  [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   
- [Okno dialogowe Ustawienia zaawansowane zabezpieczenia](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Zaawansowane ustawienia zabezpieczeń, okno dialogowe](../../ide/reference/advanced-security-settings-dialog-box.md)

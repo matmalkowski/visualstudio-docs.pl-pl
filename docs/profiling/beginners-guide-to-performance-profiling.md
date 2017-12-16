@@ -1,5 +1,5 @@
 ---
-title: "Przewodnik dla początkujących do profilowania wydajności w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: "Profilowanie wydajności aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -18,13 +18,13 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: 6db8c14125a88c24aa39c2b2e7393aca174125f9
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Profilowanie wydajności — przewodnik dla początkujących
+# <a name="profile-application-performance-in-visual-studio"></a>Profilowanie wydajności aplikacji w programie Visual Studio
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **użycie procesora CPU** kartę narzędzi diagnostycznych można uzyskać danych wydajności dla aplikacji. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.
   
 Gdy wstrzymuje debugera, **użycie procesora CPU** narzędzie zbiera informacje o funkcjach, które są wykonywane w aplikacji. Narzędzie wyświetla listę funkcji, które zostały wykonywania pracy i umożliwia wykresu osi czasu, który można skupić się na poszczególnych segmentów sesji próbkowania.
@@ -68,7 +68,7 @@ W tym temacie omówiono Analiza użycia procesora CPU w normalnym przepływie pr
 
      ![Narzędzia diagnostyki Włącz profilowanie procesora CPU](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     Po wybraniu **Włącz profilowanie procesora CPU**, Visual Studio rozpocznie się rejestrowanie funkcji i jak długo podjęte w celu wykonania. Zebrane dane można przeglądać tylko wtedy, gdy aplikacja jest zatrzymywane w punkcie przerwania.
+     Po wybraniu **rekord Procesora profilu**, Visual Studio rozpocznie się rejestrowanie funkcji i jak długo podjęte w celu wykonania. Zebrane dane można przeglądać tylko wtedy, gdy aplikacja jest zatrzymywane w punkcie przerwania.
 
 8.  Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
 

@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Przetwarzanie DTD niezabezpieczonych
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Jeśli używasz niezabezpieczonych <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwołanie do zewnętrznej jednostki źródeł, analizator akceptuje niezaufanych argument wejściowy i argument wyjawiać poufnych informacji do osoby atakujące.  
   
 ## <a name="rule-description"></a>Opis reguły  
- A [definicji typu dokumentu (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) jest jeden z dwóch sposobów analizatora składni XML można określić ważności dokumentu, zgodnie z definicją w [sieci World Wide Web konsorcjum W3C XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła ma właściwości i gdzie niezaufanych danych jest akceptowany w celu ostrzegania o deweloperów o możliwości wystąpienia [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:  
+ A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora składni XML można określić ważności dokumentu, zgodnie z definicją w [sieci World Wide Web konsorcjum W3C XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła ma właściwości i gdzie niezaufanych danych jest akceptowany w celu ostrzegania o deweloperów o możliwości wystąpienia [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:  
   
 -   Włączono DtdProcessing <xref:System.Xml.XmlReader> wystąpienia, która rozpoznaje zewnętrznej jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.  
   
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/31/2017
   
 -   Wyłącz DTD przetwarzania czy mamy do czynienia ze źródeł niezaufanych przez ustawienie <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> właściwości **true** .  
   
--   Klasy XmlTextReader ma żądanie dziedziczenia pełnego zaufania. Zobacz [Inheritancedemand](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Aby uzyskać więcej informacji.  
+-   Klasy XmlTextReader ma żądanie dziedziczenia pełnego zaufania.  
   
  .NET 4 i nowsze  
   
--   Unikaj włączania DtdProcessing, jeśli jest zajmujących źródeł niezaufanych, ustawiając dla właściwości DtdProcessing [Zabroń lub Ignoruj](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Unikaj włączania DtdProcessing, jeśli jest zajmujących źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> właściwości **Zabroń** lub **Ignoruj**.  
   
 -   Upewnij się, że we wszystkich przypadkach InnerXml metoda Load() korzysta z wystąpienia elementu XmlReader.  
   

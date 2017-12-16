@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio IDE omówienie | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,11 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 811edfd9afaae8bc5c17af3c249ed10c25473701
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -35,19 +35,41 @@ Można skorzystać z możliwości chmury dla aplikacji mobilnych, tworząc usłu
 
 ### <a name="create-cloud-apps-for-azure"></a>Tworzenie aplikacji w chmurze na platformie Azure
 
-Program Visual Studio oferuje zestaw narzędzi, które umożliwiają łatwe tworzenie aplikacji z obsługą chmury obsługiwane przez usługę Microsoft Azure. Można skonfigurować, tworzenia, debugowania pakietu i wdrożyć aplikacje i usługi Microsoft Azure bezpośrednio z IDE. Korzystaj z usług Azure dla aplikacji za pomocą usług połączonych. Aby uzyskać narzędzia Azure dla platformy .NET, wybierz **Azure programowanie** obciążenia podczas instalowania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/).
+Program Visual Studio oferuje zestaw narzędzi, które umożliwiają łatwe tworzenie aplikacji z obsługą chmury obsługiwane przez usługę Microsoft Azure. Można skonfigurować, tworzenia, debugowania pakietu i wdrożyć aplikacje i usługi Microsoft Azure bezpośrednio z IDE. Aby uzyskać narzędzia Azure dla platformy .NET, wybierz **Azure programowanie** obciążenia podczas instalowania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/).
+
+Można korzystać z usług platformy Azure dla aplikacji przy użyciu połączenia usług, takich jak:
+
+- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Usługa Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
+
+[HockeyApp](https://www.visualstudio.com/hockey-app/) ułatwia rozprowadzaj wersje beta, Zbieraj raporty awarii na żywo i uzyskuj opinie od rzeczywistych użytkowników. Ponadto można zintegrować interfejsami API REST usługi Office 365 aplikację do nawiązania połączenia danych przechowywanych w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady GitHub](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+
+[Usługa Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) pomaga wykrywać i diagnozować problemy w aplikacjach i usług sieci web. Usługi Application Insights zostanie też pomóc Ci zrozumieć, co użytkownicy faktycznie zrobić z aplikacji, aby zoptymalizować środowisko użytkownika.
 
 ### <a name="create-apps-for-the-web"></a>Tworzenie aplikacji dla sieci web
 
-Nasze współczesnym świecie dyski sieci web i Visual Studio ułatwia pisanie aplikacji dla niego. Można utworzyć aplikacji sieci web ASP.NET, Node.js, Python, JavaScript i TypeScript. Visual Studio rozumie struktur sieci web, takich jak kątową, jQuery, Express i inne. Oprogramowanie .NET Core i ASP.NET Core uruchomienia w systemach operacyjnych Windows, Mac i Linux. Aby uzyskać więcej informacji, zobacz [nowoczesnych narzędzi sieci Web](https://www.visualstudio.com/vs/modern-web-tooling/).
+Nasze współczesnym świecie dyski sieci web i Visual Studio ułatwia pisanie aplikacji dla niego. Można utworzyć aplikacji sieci web ASP.NET, Node.js, Python, JavaScript i TypeScript. Visual Studio rozumie struktur sieci web, takich jak kątową, jQuery, Express i inne. Oprogramowanie .NET Core i ASP.NET Core uruchomienia w systemach operacyjnych Windows, Mac i Linux. [Platformy ASP.NET Core](http://www.asp.net/core/overview) jest dużej aktualizacji MVC, WebAPI i SignalR i działa w systemie Windows, Mac i Linux.  Platformy ASP.NET Core ma został zaprojektowany od podstaw zapewnienie, że program .NET gotowa i zezwala na składanie stosu do tworzenia aplikacji sieci web opartych na chmurze nowoczesnych i usług.
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>Pisanie kodu w klasie world środowisko edycji
+Aby uzyskać więcej informacji, zobacz [nowoczesnych narzędzi sieci Web](https://www.visualstudio.com/vs/modern-web-tooling/).
 
-Programu Visual Studio ułatwia pisanie kodu szybko i łatwo przy użyciu funkcji, takich jak kolorowanie składni, uzupełniania instrukcji, IntelliSense (podręczny opis elementu zaznaczonego kodu), kodu zwijania, ustawianie punktów przerwania dla debugowania i o wiele więcej.
+### <a name="build-cross-platform-apps-and-games"></a>Tworzenie wieloplatformowych aplikacji i gier
 
-![Przykład kodu JavaScript](../ide/media/vside_tour_javascript_example.gif)
+Visual Studio umożliwia tworzenie aplikacji i gier dla systemu Android, iOS, Linux, Windows i innych urządzeń. Dowiedz się więcej o go w [i Platform Mobile Development](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universal Windows Apps pomóc wykorzystać kod na wielu platformach. Zobacz [uniwersalnych aplikacji systemu Windows](https://dev.windows.com/en-us/windows-apps) Aby uzyskać więcej informacji.
 
-Aby dowiedzieć się więcej, zobacz [pisanie kodu w edytorze kodu i tekstu](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
+Wybierz pozycję Narzędzia, które na podstawie wymagań aplikacji i język, którego chcesz użyć:
+
+- [Xamarin dla Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): typowe kodu w języku C# dla wszystkich urządzeń.
+
+- [Visual Studio Tools for Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md): typowy kod podstawowy dla HTML, CSS i JavaScript lub maszynie.
+
+- [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md): tworzenie gier 2W/3W w języku C#.
+
+- [Programowanie wieloplatformowych aplikacji dla C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): udostępnionych biblioteki kodu i aplikacji w języku C++.
+
+- [Visual Studio Emulator for Android](../cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: debugowania i testowania aplikacji systemu Android bez względu na IDE.
+
+[Tworzyć gry przy użyciu programu Visual Studio](https://www.visualstudio.com/vs/game-development/) z narzędzi takich jak DirectX, Unity, niezr i Cocos do tworzenia gier.
 
 Visual Studio można wykonać wykonywanie wielu czynności więcej pomocy. Aby uzyskać bardziej szczegółowy wykaz, zobacz [programu Visual Studio IDE](https://www.visualstudio.com/vs/).
 
@@ -211,7 +233,7 @@ Na poniższej ilustracji przedstawiono okno programu Team Explorer rozwiązania,
 
 ![Program Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Aby uzyskać dokumentację Team Foundation Server i Visual Studio Team Services, zobacz [Visual Studio Team Services](/vsts/index).
+Można również zautomatyzować procesu kompilacji do kompilacji kodu, który zaznaczono devs Twojego zespołu w kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Zobacz [ciągłej integracji na każdej platformie](https://www.visualstudio.com/en-us/docs/build/overview) Aby uzyskać więcej informacji.
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Nawiązanie połączenia usługi, baz danych i zasobów w chmurze
 
@@ -234,8 +256,13 @@ Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie A
 ![Eksplorator obiektów SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Rozszerzanie programu Visual Studio
+Visual Studio nie ma dokładnie funkcji potrzebne, można dodać go! Można personalizowanie środowiska IDE są oparte na przepływie pracy i stylu, Dodaj obsługę dla zewnętrznych narzędzi nie została jeszcze zintegrowany z programem Visual Studio i modyfikować istniejące funkcje, aby zwiększyć wydajność. Aby uzyskać najnowszą wersję programu Visual Studio Tools rozszerzalności (VS SDK), zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Visual Studio nie ma dokładnie funkcji potrzebne, można dodać go! Można personalizowanie środowiska IDE są oparte na przepływie pracy i stylu, Dodaj obsługę dla zewnętrznych narzędzi nie została jeszcze zintegrowany z programem Visual Studio i modyfikować istniejące funkcje, aby zwiększyć wydajność. Visual Studio oferuje narzędzia, formantów i szablonów firmy Microsoft, partnerzy i społecznością. Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzenia programu Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+Kompilator platformy .NET (Roslyn) służy do pisania własnych analizatorów kodu i generatory kodu. Znajdź wszystkie elementy potrzebne w [Roslyn](https://github.com/dotnet/Roslyn).
+
+Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla programu Visual Studio utworzone przez deweloperzy firmy Microsoft, a także naszą społeczność programowanie.
+
+Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzenia programu Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Dowiedz się więcej i dowiedzieć się, jakie nowości
 

@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b74b905108543422163142fac5984626969ba95d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 
@@ -47,7 +47,7 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +62,8 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Wklejanie wielu wierszy kodu za pomocą wysyłania interakcyjne](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +82,13 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Jeśli chcesz skopiować Pełna zawartość okna interaktywnego, w tym monity i dane wyjściowe, wystarczy użyć standardowego **kopiowania** polecenia.
 
 1. Co to po prostu wykonaniu jest umożliwia szybkie środowiska REPL okno interaktywne wyglądają szczegóły dla małych fragment kodu, a następnie wygodnie dodany kod do pliku źródłowym projektu. Jeśli teraz wykonywania kodu ponownie z Ctrl + F5 (lub **debugowania > Uruchom bez debugowania**), zobacz dokładne wyniki potrzebujesz.
-
 
 ## <a name="next-steps"></a>Następne kroki
 

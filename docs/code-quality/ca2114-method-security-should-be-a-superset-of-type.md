@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Metody zabezpieczeń powinny być nadzbiorem typu
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Zmiana kluczowa|Kluczowa|  
   
 ## <a name="cause"></a>Przyczyna  
- Zabezpieczenia deklaracyjne ma typ ma jeden z jego metody zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [Linkdemand](/dotnet/framework/misc/link-demands) lub [Inheritancedemand](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)oraz uprawnienia sprawdzane przez ten typ nie są podzbiorem uprawnienia metodę.  
+ Zabezpieczenia deklaracyjne ma typ ma jeden z jego metody zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [Linkdemand](/dotnet/framework/misc/link-demands), i sprawdzana przez typ uprawnienia nie są podzbiorem uprawnienia sprawdzony przez metodę.  
   
 ## <a name="rule-description"></a>Opis reguły  
  Metoda nie powinna mieć zarówno metoda poziomie typu i zabezpieczenia deklaratywne dla tego samego działania. Sprawdza dwie nie są połączone; dotyczy tylko żądanie na poziomie metody. Na przykład, jeśli typem wymaga uprawnień `X`, i jedną z metod wymaga uprawnień `Y`, kod nie musi mieć uprawnienie `X` można wykonać metody.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[Nie uprawnienia do odczytu (wymagany przez metodę)] Nie można uzyskać dostępu do danych osobowych: żądanie nie powiodło się.**   
 ## <a name="see-also"></a>Zobacz też  
  [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)   
- [Żądań dziedziczenia](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Żądania łączy](/dotnet/framework/misc/link-demands)   
  [Dane i modelowanie](/dotnet/framework/data/index)

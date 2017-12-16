@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core usług IIS i platformy Azure w programie Visual Studio 2017 r.
 Możesz wdrożyć aplikację sieci Web programu ASP.NET na komputerze z systemem Windows Server z usługami IIS i skonfigurować go do zdalnego debugowania. W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.
@@ -47,11 +47,11 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Tworzenie aplikacji platformy ASP.NET Core na komputerze programu Visual Studio 2017 r. 
 
-1. Tworzenie nowej aplikacji platformy ASP.NET Core. (Wybierz **Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C# > sieci Web > Aplikacja sieci Web platformy ASP.NET Core (.NET Core)**).
+1. Tworzenie nowej aplikacji platformy ASP.NET Core. (Wybierz **Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C# > sieci Web > Aplikacja sieci Web platformy ASP.NET Core**).
 
     W **platformy ASP.NET Core** sekcji szablonów, wybierz opcję **aplikacji sieci Web**.
 
-2. Upewnij się, że **Włącz obsługę Docker** jest **nie** wybrany, a **uwierzytelniania** ustawiono **bez uwierzytelniania**.
+2. Upewnij się, że **ASP.NET Core 2.0** jest zaznaczone, który **Włącz obsługę Docker** jest **nie** wybrany, a **uwierzytelniania** ma ustawioną wartość **Bez uwierzytelniania**.
 
 3. Nazwij projekt **MyASPApp** i kliknij przycisk **OK** do tworzenia nowego rozwiązania.
 

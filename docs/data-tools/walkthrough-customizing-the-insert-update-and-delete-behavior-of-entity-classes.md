@@ -15,14 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f711c0fcdd4866a1b097585052cdcb3733e426d8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Wskazówki: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
-[Składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zapewnia visual powierzchnię tworzenia i edytowania [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy (klas jednostek), które są oparte na obiektach w bazie danych. Za pomocą [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index), można użyć technologii LINQ do dostępu do bazy danych SQL. Aby uzyskać więcej informacji, zobacz [LINQ (zapytania język Language-Integrated)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[Składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zapewnia visual powierzchnię tworzenia i edytowania [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy (klas jednostek), które są oparte na obiektach w bazie danych. Za pomocą [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index), można użyć technologii LINQ do dostępu do bazy danych SQL. Aby uzyskać więcej informacji, zobacz [LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/).  
   
 Domyślnie logika przeprowadzania aktualizacji są dostarczane przez [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] środowiska wykonawczego. Środowisko uruchomieniowe tworzy domyślne instrukcje Insert, Update i Delete na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz używać domyślnego zachowania, można skonfigurować zachowanie aktualizacji i wyznaczyć określonych procedur składowanych do wykonania niezbędnych operacji wstawienia, aktualizacje i usuwa wymagane do pracy z danymi w bazie danych. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład po z klasami jednostki mapowania do widoków. Ponadto podczas bazy danych wymaga dostępu do tabeli za pomocą procedur składowanych można zastąpić domyślne zachowanie aktualizacji. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacji przez przy użyciu procedur składowanych](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).  
   
@@ -270,6 +270,6 @@ W zależności od wymagań aplikacji istnieje kilka czynności, które można wy
 [LINQ do SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
 [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)   
 [Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawienia i usunięcia](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
-[LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)  
+[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
 [LINQ do SQL zapytań](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
  

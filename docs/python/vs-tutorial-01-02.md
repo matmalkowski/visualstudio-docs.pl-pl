@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 7be06db583529aae747b95a7c04ea71f4f204218
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Pisania i uruchamiania kodu
 
@@ -41,14 +41,14 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
     ```
 
 1. Zwróć uwagę, zabarwienie składni, który odróżnia instrukcji `print` w argumencie `"Hello Visual Studio"`. Ponadto tymczasowo usunąć ostatni `"` na ciąg i zwróć uwagę, jak Visual Studio wyświetli czerwoną linią kod który występują błędy składniowe. Następnie zastąp `"` Aby naprawić kod.
- 
+
     ![Kolorowanie składni IntelliSense i błąd podświetlania](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Ponieważ osoby środowisko projektowe polega na bardzo osobistych, Visual Studio umożliwia pełną kontrolę nad wygląd i zachowanie programu Visual Studio. Wybierz **Narzędzia > Opcje** menu poleceń i eksplorować ustawienia w obszarze **środowiska** i **Edytor tekstu** karty. Domyślnie zostanie wyświetlony tylko pewna liczba opcji; Aby wyświetlić każdej opcji dla każdego języka programowania, wybierz **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego. 
 
 1. Uruchom kod napisanych w tym punkcie naciskając klawisze Ctrl + F5 lub wybranie **debugowania > Uruchom bez debugowania** elementu menu. Visual Studio wyświetli ostrzeżenie, jeśli nadal występują błędy w kodzie.
- 
+
 1. Po uruchomieniu programu, zostanie wyświetlone okno konsoli wyświetlania wyników, tak jakby należy uruchomić interpreter języka Python z `PythonApplication1.py` z wiersza polecenia. Naciśnij dowolny klawisz, aby zamknąć okno i powrócić do edytora programu Visual Studio.
 
     ![Dane wyjściowe dla pierwszego uruchomienia programu](media/vs-getting-started-python-07-output.png)
@@ -70,32 +70,30 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
 1. Zakończ importując `sin`, `cos`, i `radians` członków, po raz pierwszy automatycznie zakończeń dostępne dla każdego. Gdy wszystko będzie gotowe, kod powinien wyglądać następująco:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
-    > Ukończenia mogą współpracować z podciągów wpisz dopasowanie części słowa, liter na początku słowa i nawet pominięte znaków. Zobacz [edycji kodu - zakończeń](code-editing.md#completions) szczegółowe informacje.
+    > Ukończenia mogą współpracować z podciągów wpisz dopasowanie części słowa, liter na początku słowa i nawet pominięte znaków. Zobacz [edytowanie kodu - zakończeń](code-editing.md#completions) szczegółowe informacje.
 
 1. Dodaj nieco więcej kodu wartości cosinus 360 stopni:
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Ponownie uruchom program z Ctrl + F5 lub **Debuguj > Rozpocznij bez debugowanie**. Zamknij okno dane wyjściowe, gdy wszystko będzie gotowe.
-
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
 > [W oknie interaktywny REPL](vs-tutorial-01-03.md)
 
-
 ## <a name="going-deeper"></a>Przechodząc głębiej
 
 - [Edytowanie kodu](code-editing.md)
 - [Formatowanie kodu](code-formatting.md)
-- [Refaktoryzacja kodu](code-refactoring.md)
+- [Refaktoryzacji kodu](code-refactoring.md)
 - [Używanie PyLint](code-pylint.md)

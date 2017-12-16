@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Przejrzyj użycie akcji Deny i Permit Only
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Metoda zawiera kontrola zabezpieczeń, określająca akcji zabezpieczeń PermitOnly lub Odmów.  
   
 ## <a name="rule-description"></a>Opis reguły  
- [Przy użyciu metody PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) i <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> zabezpieczeń akcji powinna być używana tylko przez tych, którzy mają zaawansowanej wiedzy na temat programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpieczeń. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.  
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Zabezpieczeń akcji powinna być używana tylko przez tych, którzy mają zaawansowanej wiedzy na temat programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpieczeń. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.  
   
  Odmów zmienia domyślne zachowanie przeszukiwania stosu, który występuje w odpowiedzi na żądanie zabezpieczeń. Umożliwia określenie uprawnień, które nie udziela na czas trwania odmawia metody, niezależnie od uprawnień wywołań w stosie wywołań. Jeśli przeszukiwana stosu wykrywa metody, która jest chroniony przez Odmów i żądane uprawnienie jest uwzględniony w odmówiono uprawnień, przeszukiwania stosu nie powiedzie się. PermitOnly również zmienia domyślne zachowanie przeszukiwania stosu. Dzięki temu kod, aby określić tylko te uprawnienia, które można otrzymać, niezależnie od uprawnień do wywoływania. Jeśli przeszukiwania stosu wykrywa metody, która jest chroniony przez PermitOnly i uprawnienia, które są określone przez PermitOnly nie ma wymaganego uprawnienia, przeszukiwania stosu nie powiedzie się.  
   
@@ -82,5 +82,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)   
- [Zastępowanie kontroli zabezpieczeń](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Przy użyciu metody PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+

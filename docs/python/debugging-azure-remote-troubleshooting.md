@@ -12,13 +12,13 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b4f7edc3753f8c2b9e84668cda4273feab08e8ca
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Zdalne debugowanie narzędzia do rozwiązywania problemów dla języka Python i platformą Azure
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Zdalne debugowanie rroubleshooter dla języka Python i platformą Azure
 
 Visual Studio nie może dołączyć do [Azure App Service dla zdalnego debugowania](debugging-azure-remote.md) dla żadnego z następujących powodów:
 
@@ -33,4 +33,4 @@ Visual Studio nie może dołączyć do [Azure App Service dla zdalnego debugowan
 
 Zobacz też:
 
-- [Azure zdalne debugowanie dla języka Python](debugging-azure-remote.md)
+- [Azure zdalnego debugowania dla języka Python](debugging-azure-remote.md)

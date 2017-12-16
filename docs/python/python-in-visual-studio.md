@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f831aa683efdacc8a01ffbf5ef5a280c1a95f9e3
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
 
@@ -41,7 +41,7 @@ Aby rozpocząć:
 | [Okno interaktywne](interactive-repl.md) | Zapewnia szybkie REPL dla języka Python umożliwia łatwe wyróżnianie fragment kodu i wysyłania go do okna interaktywnego. | n/d |
 | [Oferujący wszystkie funkcje debugowania](debugging.md) | Debugowanie może odbywać się z lub bez projektu programu Visual Studio, w tym możliwość debugowania istniejącego pliku wykonywalnego, [debugowanie w trybie mieszanym Python/C++](debugging-mixed-mode.md), [zdalnego debugowania](debugging-cross-platform-remote.md) do systemu Windows/Linux/Mac [zdalnego debugowania na platformie Azure](debugging-azure-remote.md)i debugowanie okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
 | [Narzędzia profilowania z raportowaniem kompleksowe](profiling.md) | Opisuje, jak jest zużywany czas w aplikacji, łącznie z możliwością porównania wydajności między cyklów profilowania. | [Narzędzia profilowania](../profiling/profiling-tools.md) (nie wszystkie funkcje profilowania programu Visual Studio są dostępne dla języka Python) |
-| [Narzędzia do testowania jednostki](unit-testing.md) | Odnajdywanie, uruchamianie, zarządzania testami w Visual Studio narzędzia Eksplorator testów i łatwe debugowanie testów jednostkowych. | [Testowanie jednostek kodu](../test/unit-test-your-code.md) |
+| [Narzędzia do testowania jednostki](unit-testing.md) | Odnajdywanie, uruchamianie, zarządzania testami w Visual Studio narzędzia Eksplorator testów i łatwe debugowanie testów jednostkowych. | [Kod testu jednostkowego](../test/unit-test-your-code.md) |
 
 Zawiera również obciążenia Python [zestaw Azure SDK for Python](azure-sdk-for-python.md), który upraszcza korzystanie z aplikacji systemu Windows, Mac OS X i Linux usług Azure.
 

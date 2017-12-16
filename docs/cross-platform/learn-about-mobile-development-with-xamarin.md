@@ -11,11 +11,11 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d203bf88f5af6e69b97404ef8da4548f646750b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin
 Ten temat kieruje do materiałów Przegląd, która pomaga w zrozumieniu tworzenie wieloplatformowych aplikacji mobilnych za pomocą platformy Xamarin. Jeśli użytkownik nie został jeszcze zainstalowany program Visual Studio i Xamarin, uruchom [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) procesu należy następnie wróć tutaj do pracy przy użyciu tych zasobów, gdy pliki instalacyjne są uruchomione.  
@@ -94,7 +94,7 @@ Ten temat kieruje do materiałów Przegląd, która pomaga w zrozumieniu tworzen
   
 2.  **IOS firmy Apple symulatora.** Aby dowiedzieć się więcej, przeczytaj [wprowadzenie symulatora systemu iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Emulator Windows Phone firmy Microsoft.** Aby dowiedzieć się więcej, przeczytaj [Windows Phone Emulator for Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Emulator Windows Phone firmy Microsoft.** Aby dowiedzieć się więcej, przeczytaj [Windows Phone Emulator for Windows Phone 8](../debugger/run-windows-phone-apps-in-the-emulator.md).  
   
 ##  <a name="components"></a>Bardziej zgłębić temat: Składniki platformy Xamarin  
  *10 minut*  
