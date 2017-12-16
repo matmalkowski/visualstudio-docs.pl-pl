@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 7e3a1d249ad91a3ffce941442e8b9528592a224d
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.openlocfilehash: eecae2b95947d4bdf40ba6d57a85150e03f21cfb
+ms.sourcegitcommit: abe8d0aaded582058b5f5669d9d534d2f6a83355
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/16/2017
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
 W tym samouczku do tworzenia aplikacji C# dla platformy ASP.NET Core za pomocą programu Visual Studio będzie utworzenia aplikacji sieci web platformy ASP.NET Core C#, Dodaj do niej kod, Eksploruj niektóre funkcje IDE i uruchom aplikację.
@@ -28,7 +28,7 @@ W tym miejscu jest szybkie często zadawane pytania na przedstawiono niektóre p
 ### <a name="what-is-c"></a>Co to jest C#?
 [C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) to bezpieczne i zorientowany obiektowo język programowania, zaprojektowany zarówno niezawodne i łatwe dowiedzieć się więcej.
 ### <a name="what-is-aspnet-core"></a>Co to jest platformy ASP.NET Core?
-Platformy ASP.NET Core to struktura open source i wielu platform przy tworzeniu aplikacji podłączonej do Internetu, takich jak aplikacje sieci web i usług. Aplikacje platformy ASP.NET Core można uruchamiać na albo [.NET Core](/net/core/platform) lub .NET Framework. Mogą tworzyć i uruchom wieloplatformowych aplikacji programu ASP.NET Core w systemie Windows, Mac i Linux. Platformy ASP.NET Core to typu open source w [GitHub](https://github.com/aspnet/home).
+Platformy ASP.NET Core to struktura open source i wielu platform przy tworzeniu aplikacji podłączonej do Internetu, takich jak aplikacje sieci web i usług. Aplikacje platformy ASP.NET Core można uruchomić na .NET Framework lub .NET Core. Mogą tworzyć i uruchom wieloplatformowych aplikacji programu ASP.NET Core w systemie Windows, Mac i Linux. Platformy ASP.NET Core to typu open source w [GitHub](https://github.com/aspnet/home).
 ### <a name="what-is-visual-studio"></a>Co to jest program Visual Studio?
 Visual Studio to zestaw zintegrowanych programowanie wydajności narzędzi dla deweloperów. Go traktować jako program, który służy do tworzenia programy i aplikacje.  
 
@@ -46,25 +46,25 @@ Najpierw utworzysz projekt platformy ASP.NET Core. Typ projektu zawiera wszystki
 
    ![Szablon projektu aplikacji sieci Web platformy ASP.NET Core w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-csharp-aspnet-mycoreapp.png)
 
-#### <a name="add-a-workgroup-optional"></a>Dodaj grupy roboczej (opcjonalnie)
-Jeśli nie widzisz **aplikacji sieci Web platformy ASP.NET Core** szablon projektu, możesz pobrać go przez dodanie **Projektowanie sieci web i ASP.NET Core** obciążenia. Możesz dodać to obciążenie w jednym z dwóch sposobów, w zależności od zainstalowanych aktualizacji programu Visual Studio 2017 na tym komputerze.
+#### <a name="add-a-workload-optional"></a>Dodaj obciążeń (opcjonalnie)
+Jeśli nie widzisz **aplikacji sieci Web platformy ASP.NET Core** szablon projektu, możesz pobrać go przez dodanie **ASP.NET i sieć web development** obciążenia. Możesz dodać to obciążenie w jednym z dwóch sposobów, w zależności od zainstalowanych aktualizacji programu Visual Studio 2017 na tym komputerze.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: Użyj okna dialogowego Nowy projekt
 1. Kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe.
 
   ![Kliknij łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
 
-2. Uruchamia Instalator programu Visual Studio. Wybierz **Projektowanie sieci web i ASP.NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
+2. Uruchamia Instalator programu Visual Studio. Wybierz **ASP.NET i sieć web development** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
 
    ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
 1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje...** .
 
-2. Uruchamia Instalator programu Visual Studio. Wybierz **Projektowanie sieci web i ASP.NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.   
+2. Uruchamia Instalator programu Visual Studio. Wybierz **ASP.NET i sieć web development** obciążenia, a następnie wybierz pozycję **Modyfikuj**.   
 
 #### <a name="add-a-project-template"></a>Dodaj szablon projektu
-1. W **nową aplikację sieci Web Core ASP.NET** oknie dialogowym wybierz **aplikacji sieci Web (Model-View-Controller** szablonu projektu.  
+1. W **nową aplikację sieci Web Core ASP.NET** oknie dialogowym wybierz **aplikacji sieci Web (Model-View-Controller)** szablonu projektu.  
 
 2. Wybierz **ASP.NET Core 2.0** z górnego menu rozwijanego. (Jeśli nie widzisz **ASP.NET Core 2.0** na liście, zainstaluj go, wykonując **Pobierz** łącza, które powinny być wyświetlane w żółty pasek w górnej części okna dialogowego.) Wybierz **OK**.
 
@@ -89,15 +89,16 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
       ![Pliku HomeController.cs w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 2. Widok **HomeController.cs**
+
   ![HomeController.cs w oknie kodu programu Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Projekt ma również **widoków** folder zawierający innych folderach, które mapują na każdym kontrolerze (oraz jednego dla **Shared** widoków. Na przykład, Wyświetl plik CSHTML (rozszerzenia HTML) dla **domowej/o** ścieżka byłaby w **Views/Home/About.cshtml**. Otwórz ten plik.
+4. Projekt ma również **widoków** folder zawierający innych folderach, które mapują na każdym kontrolerze (oraz jednego dla **Shared** widoków). Na przykład, Wyświetl plik CSHTML (rozszerzenia HTML) dla **domowej/o** ścieżka byłaby w **Views/Home/About.cshtml**. Otwórz ten plik.
 
   ![Plik About.cshtml w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
 5. Ten plik CSHTML używa składni Razor do renderowania elementów HTML oparty na kombinacji standardowych znaczników i wbudowane C#.
 
- ![About.cshtml w oknie kodu programu Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
+  ![About.cshtml w oknie kodu programu Visual Studio](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
  > Aby dowiedzieć się więcej na ten temat, zobacz [wprowadzenie do języka C# i ASP.NET przy użyciu składni Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) strony.
@@ -123,7 +124,7 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
  ![Wybierz informacje, w oknie przeglądarki dla aplikacji](../ide/media/csharp-aspnet-browser-page.png)
 
- Między innymi o stronie renderuje część tekstu w pliku HomeController.cs.
+ Między innymi o stronę w przeglądarce renderuje tekst, który jest ustawiana w pliku HomeController.cs.
 
    ![Wyświetlanie tekstu na stronie informacje](../ide/media/csharp-aspnet-browser-page-about.png)
 
@@ -157,7 +158,10 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
   ![Odśwież okno przeglądarki, aby wyświetlić zmieniony tekst](../ide/media/csharp-aspnet-browser-page-about-changed.png)
 
-1. Naciśnij klawisz **F5** można zatrzymać debugowania.
+1. Naciśnij klawisz **Shift**+**F5** można zatrzymać debugowania. Możesz też wybrać **debugowania** > **Zatrzymaj debugowanie** z menu paska lub wybierz **Zatrzymaj debugowanie** przycisku paska narzędzi.
+
+ ![Kliknij przycisk Zatrzymaj debugowanie na pasku narzędzi](../ide/media/csharp-aspnet-stop-debugging.png)
+
 
 Gratulujemy wykonanie kroków tego samouczka!
 
