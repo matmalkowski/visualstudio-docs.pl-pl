@@ -21,11 +21,11 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9682eee19693c95e4f01ea4c99f6daf8646c6af1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
-ms.translationtype: MT
+ms.openlocfilehash: c418d5ab3618a43a1e12bc3be2d96742fcbb669e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrowanie i uaktualnianie projektów programu Visual Studio
 
@@ -43,7 +43,7 @@ Jednak obsługę niektórych typów zmian wraz z upływem czasu. Nowsza wersja p
 
 Na poniższej liście opisano obsługę projektów, które zostały utworzone we wcześniejszych wersjach w programie Visual Studio 2017 r.
 
-Jeśli nie widzisz projektu lub typ pliku wyświetlany w tym miejscu należy, zapoznaj się [programu Visual Studio 2015 wersją tego tematu](https://msdn.microsoft.com/library/hh266747.aspx) i zanotuj komentarze poniżej.
+Jeśli nie widzisz projektu lub typ pliku wyświetlany w tym miejscu należy, zapoznaj się [programu Visual Studio 2015 wersją tego tematu](https://msdn.microsoft.com/library/hh266747.aspx) i [pliku problemu](https://github.com/MicrosoftDocs/visualstudio-docs/issues/) ze szczegółami tego typu projektu.
 
 | Typ projektu | Obsługa |
 | --- | --- |
