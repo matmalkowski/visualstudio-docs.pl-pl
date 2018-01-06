@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b83cb82dab5f723c656b51a5322df7d7aad4570c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82f5e18b838e6f6c0696359a9d88ba3350e636ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Typy wyliczeniowe flag powinny mieć nazwy w liczbie mnogiej
 |||  
@@ -47,10 +48,10 @@ ms.lasthandoff: 10/31/2017
  Można bezpiecznie pominąć naruszenie, jeśli nazwa jest słowem mnogiej, ale nie kończy się na ". Na przykład jeśli wyliczenie wiele dni, który został opisany wcześniej nazwany "DaysOfTheWeek", to naruszyć logiką reguły, ale nie jej celem. Te naruszenia powinny być suppressd.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1027: Oznaczaj wyliczenia za pomocą FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
+ [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
- [CA2217: Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+ [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
- [Projekt wyliczenia](/dotnet/standard/design-guidelines/enum)
+ [Projekt wyliczeń](/dotnet/standard/design-guidelines/enum)

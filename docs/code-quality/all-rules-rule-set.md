@@ -12,15 +12,16 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a6c6692810d9aca3a2958c9bface10698a4b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14e7879ccc83325e5a2bb5719243c0ca92684bc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="all-rules-rule-set"></a>Zestaw reguł All Rules
 Zestaw reguł wszystkich reguł zawiera wszystkie reguły dla natywnych i zarządzanych kodu. Zestaw reguł zawiera wszystkie reguły, które zostały opisane w następujących tematach:  
   
-1.  [Analiza kodu dla C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)  
+1.  [Analiza kodu C/C++ — ostrzeżenia](../code-quality/code-analysis-for-c-cpp-warnings.md)  
   
-2.  [Analiza kodu dla zarządzanego kodu — ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md)
+2.  [Analiza kodu zarządzanego — ostrzeżenia](../code-quality/code-analysis-for-managed-code-warnings.md)

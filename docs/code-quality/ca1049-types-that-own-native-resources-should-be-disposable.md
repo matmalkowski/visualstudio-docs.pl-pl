@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne
 |||  
@@ -53,13 +54,13 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2115: Wywołaj GC. KeepAlive, gdy używasz zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
+ [CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816: Wywołaj GC. Metodę SuppressFinalize poprawnie](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816: Wywołaj poprawnie metodę GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA2216: Typy usuwalne powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA2216: Typy możliwe do likwidacji powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
- [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
+ [CA1001: Typy z polami możliwymi do likwidacji powinny być możliwe do likwidacji](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Oczyszczanie zasobów niezarządzanych](/dotnet/standard/garbage-collection/unmanaged)   

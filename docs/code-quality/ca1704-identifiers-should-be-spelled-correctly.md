@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e43e3340cdbc05ec00c909542e201692199ccfef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 63b10dd1d1037ee90156505f2e73105be7a9ee63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Identyfikatory powinny być napisane poprawnie
 |||  
@@ -90,17 +91,17 @@ ms.lasthandoff: 10/31/2017
  Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy jest celowe błędne słowo i wyraz dotyczy ograniczony zestaw biblioteki. Poprawnie zapisanych wyrazów skrócić czas nauki wymaganego dla nowej biblioteki oprogramowania.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2204: Literały powinny być napisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
+ [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
- [CA1703: Ciągów zasobów powinna być poprawna](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+ [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
  [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: Identyfikatory powinny różnić się tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
  [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)  
   
  [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ [Instrukcje: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

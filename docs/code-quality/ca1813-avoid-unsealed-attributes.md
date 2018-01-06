@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5aec235494b29a21eb5a3c2de39a6933e04b0ebe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ad548bd51985484ebcb39cb6022e994a5e0534a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Unikaj niezapieczętowanych atrybutów
 |||  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1019: Zdefiniuj metody dostępu do argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
+ [CA1019: Zdefiniuj metody dostępu dla argumentów atrybutu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
   
- [CA1018: Oznacz atrybuty atrybutem Attributeusage](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)  
+ [CA1018: Oznacz atrybuty atrybutem AttributeUsage](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Atrybuty](/dotnet/standard/design-guidelines/attributes)
