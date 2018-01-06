@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c9871a767ae8e2a9c77edecda19c986c4ee85f26
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4a93b60cfac2bbc727fbc2a7b4054c4e7b8e3dce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 W programie Visual Studio można użyć modelu ułatwią zrozumienie i zmień systemu, aplikacji lub składnika. Model może pomóc w wizualizacji świecie, w którym działa system, wyjaśnienia potrzeb użytkowników, zdefiniuj architekturze systemu, analizy kodu i upewnij się, że kod użytkownika spełnia wymagania. Zobacz [Channel 9 wideo: poprawy architektury za pomocą modelowania](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -129,7 +130,7 @@ W programie Visual Studio można użyć modelu ułatwią zrozumienie i zmień sy
 |**Filmy wideo**|![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak wideo: sposobu tworzenia i użyj modeli i diagramów UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML z programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak seria: UML narzędzi i rozszerzeń (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Fora**|-   [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogi**|[Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Architektura programu Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|  
+|**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie modeli w elastyczne programowanie](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
@@ -137,6 +138,6 @@ W programie Visual Studio można użyć modelu ułatwią zrozumienie i zmień sy
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
  [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)   
- [Struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
+ [Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

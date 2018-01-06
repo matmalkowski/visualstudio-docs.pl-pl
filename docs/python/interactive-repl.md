@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: de538cfa9470ce148bc5d8f85653edef4c3fd8b0
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
 
@@ -47,7 +48,7 @@ Po pierwsze, przejdź do okna środowiska Python (**Widok > inne okna > środowi
 
 ![Interakcyjne łącze okna w oknie środowiska Python](media/interactive-window-opening.png)
 
-Po drugie, w dolnej części **Widok > inne okna** menu jest ** Python interaktywnego okna ** polecenie dla danego środowiska domyślne, a także polecenia, aby przejść do okna środowiska:
+Drugie w dolnej części **Widok > inne okna** menu jest **okna interaktywnego Python** polecenie dla danego środowiska domyślne, a także polecenia, aby przejść do okna środowiska:
 
 ![Menu okna interaktywnego elementy w widoku > inne okna](media/interactive-window-menu.png)
 

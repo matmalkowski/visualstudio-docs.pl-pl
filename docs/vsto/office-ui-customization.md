@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Dostosowywanie interfejsu użytkownika pakietu Office
   Interfejs użytkownika (UI) można dostosować aplikacji pakietu Microsoft Office, przy użyciu narzędzia Office developer tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:  
@@ -51,11 +52,11 @@ ms.lasthandoff: 10/31/2017
 |-------------|-----------------------------|---------------------------------------------|  
 |W okienku Akcje|Dostosowania na poziomie dokumentów|Excel<br /><br /> Word|  
 |Niestandardowe okienka zadań|Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
-|Niestandardowa Wstążka interfejsu użytkownika|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|  
-|Widoku zakulisowego|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|  
+|Niestandardowa Wstążka interfejsu użytkownika|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|  
+|Widoku zakulisowego|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].,<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio|  
 |Regiony formularzy programu Outlook|Dodatków VSTO|Outlook|  
 |Formanty w dokumentach|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> Word|  
-|Menu skrótów|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
+|Menu skrótów|Dostosowania na poziomie dokumentów<br /><br /> Dodatków VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a>Okienka akcji i niestandardowych okienek zadań  
  Okienka zadań są panele interfejsu użytkownika, które są zazwyczaj zadokowane po jednej stronie okna w aplikacji pakietu Microsoft Office. Prawie wszystkie aplikacje Microsoft Office obejmują okienka zadań wbudowanych. Przykład okienka zadań to pomocy okienka zadań w programie Word.  
@@ -108,6 +109,6 @@ ms.lasthandoff: 10/31/2017
  [Korzystanie z formantów WPF w rozwiązaniach pakietu Office](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Porady: pokazywanie karty dewelopera na Wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
  [Porady: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Wskazówki: Zbieranie danych za pomocą formularza systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [Przewodnik: Zbieranie danych, korzystając z formularzy systemu Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
   
   

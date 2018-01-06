@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>Edytor XML
 Edytor XML jest oparta na [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Edytor tekstu Visual Studio i obejmuje obsługę języków XML. Edytor XML zawiera następujące funkcje:  
@@ -55,19 +56,19 @@ Edytor XML jest wywoływany dla rozszerzeń plików dobrze znany, takich jak .xm
 -   Eksploratora schematu XML.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Sprawdzanie poprawności kodu XML dokumentu](../xml-tools/xml-document-validation.md)  
+ [Walidacja dokumentów XML](../xml-tools/xml-document-validation.md)  
  Opisuje funkcje sprawdzania i sprawdzanie poprawności składni.  
   
  [Funkcje IntelliSense w edytorze XML](../xml-tools/xml-editor-intellisense-features.md)  
  Zawiera opis funkcji IntelliSense, Edytor.  
   
- [Fragmentów kodu XML](../xml-tools/xml-snippets.md)  
+ [Fragmenty kodu XML](../xml-tools/xml-snippets.md)  
  Informacje dotyczące używania funkcji fragmenty kodu XML.  
   
  [Edytowanie arkuszy stylów XSLT](../xml-tools/editing-xslt-style-sheets.md)  
  W tym artykule opisano XSLT edytowania.  
   
- [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)  
+ [Pamięć podręczna schematów](../xml-tools/schema-cache.md)  
  Wyświetla listę schematów, które są zainstalowane w edytorze XML.  
   
  [Składniki edytora XML](../xml-tools/xml-editor-components.md)  

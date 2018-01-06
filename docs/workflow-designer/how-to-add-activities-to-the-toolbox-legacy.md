@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 9b0dce8c2600d125a84044bef60957bd1bfa8b44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7bc489c000cf2d5fa875859208aa631a839168d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Porady: dodawanie działań do przybornika (starsze)
 W przypadku kompilowania rozwiązania przepływu pracy z starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] którego element docelowy [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], działań niestandardowych do dodania do projektu przepływu pracy i ich projektantów umieszczone w **przybornika** dla łatwe dostęp. Możesz także dodać działania bezpośrednio do **przybornika** z biblioteki dołączanej (dynamicznie DLL).  

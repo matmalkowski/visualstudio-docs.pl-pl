@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 758cf3e62621c22f3f97dc62b70c745afb860b8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4c0fbc4a2feb3abc92c47567dcb0ea3d425ddda1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Wskazówki: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild
   Przy użyciu docelowych elementów MSBuild w wierszu polecenia, można dostosować, jak program Visual Studio tworzy pliki pakietu programu SharePoint (wsp). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakowania i grup elementów MSBuild określające wyliczany plików.  
@@ -85,6 +86,6 @@ ms.lasthandoff: 10/31/2017
  Podczas publikowania projektu, zostanie wyświetlony komunikat BeforeLayout przed rozpoczęciem tworzenia pakietów i AfterLayout pojawi się po zakończeniu tworzenia pakietów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

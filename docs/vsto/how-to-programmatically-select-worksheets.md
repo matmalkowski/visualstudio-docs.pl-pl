@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dcd68c96d06613e67b4fdafafecdbbff780eae4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dd84ad38955620ad09ab9fab5fc178241e682948
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Porady: Programowane zaznaczanie arkuszy
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Metody wybiera określony obiekt, który przenosi do nowego obiektu określonego przez użytkownika. Użyj <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> metodę, jeśli chcesz przejść do obiektu bez zmiany określonego przez użytkownika.  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
  [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
+ [Przegląd obiektów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)  
   
   

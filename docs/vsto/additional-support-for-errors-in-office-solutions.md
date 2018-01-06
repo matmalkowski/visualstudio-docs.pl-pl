@@ -61,11 +61,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d57dab19820436dd9c7e3fb07607b5506c180a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e0da4387056e68046294a2f82c9db7bbc798de07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Dodatkowa obsługa błędów w rozwiązaniach pakietu Office
   Można użyć następujących zasobów, aby łatwiej znaleźć rozwiązania problemów występujących podczas tworzenia rozwiązań pakietu Office w Visual Studio.  
@@ -89,13 +90,13 @@ ms.lasthandoff: 10/31/2017
  [Microsoft Pomoc i obsługa techniczna](http://go.microsoft.com/fwlink/?LinkID=108287)  
  Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do pobrania i aktualizacji, audycji pomocy technicznej i innych usług.  
   
- [Dodatkowe zasoby związane z opracowywaniem rozwiązań pakietu Office](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Dodatkowe zasoby do rozwoju rozwiązań Office](../vsto/additional-resources-for-developing-office-solutions.md)  
  Zawiera łącza do dodatkowych zasobów dotyczących dowiedzieć się więcej na temat opracowywania rozwiązań pakietu Office i Office development w programie Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office](../vsto/troubleshooting-office-solution-security.md)   
  [Rozwiązywanie problemów z wdrażaniem rozwiązań Office](../vsto/troubleshooting-office-solution-deployment.md)   
- [Dodatkowe zasoby związane z opracowywaniem rozwiązań pakietu Office](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Dodatkowe zasoby do rozwoju rozwiązań Office](../vsto/additional-resources-for-developing-office-solutions.md)  
   
   

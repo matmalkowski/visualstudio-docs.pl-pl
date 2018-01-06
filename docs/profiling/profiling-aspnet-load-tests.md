@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7669d8ca915a32496399c526b112e877a8bce57c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 7c4a1e48d5e9bdbf28569656b580608a6c35034a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilowanie testów obciążenia ASP.NET
 Można zbierać dane z profilowania automatycznego [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] testów, które działają w projektach witryny sieci Web ASP.NET sieci web. Można zebrać danych o interakcji między próbkowania i warstwy. Więcej informacji znajduje się w następujących tematach:  
@@ -31,4 +32,4 @@ Można zbierać dane z profilowania automatycznego [!INCLUDE[TCMext](../misc/inc
  [Opis pobierania wartości danych](../profiling/understanding-sampling-data-values.md)   
  [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)   
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)   
- [Widok interakcji warstwowych](../profiling/tier-interactions-view.md)
+ [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)

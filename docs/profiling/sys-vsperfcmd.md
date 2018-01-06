@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c733e9ce91ede2e8944616c5db1a727349854b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fa8b11d6f7ca080980234fde4fef5659f376a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 VSPerfCmd.exe **Sys** opcji ustawienie profilowania zdarzenia, które jest próbkowany zdarzenia wywołania systemowe (wywołania funkcji profilowanych aplikacji dla systemu operacyjnego), a opcjonalnie zmian liczba systemu wywołań w próbki Interwał w domyślnej 10.  

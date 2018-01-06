@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c51065eacda271daeb12c17fdeb5fe4e6b20683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Lokalizacja i globalizacja rozwiązań programu Excel
   Ta sekcja zawiera informacje o uwagi dotyczące rozwiązania programu Microsoft Office Excel, które będą uruchamiane na komputerach z systemem innym niż angielski ustawienia dla systemu Windows. Większością aspektów globalizacja i lokalizacja pakietu Microsoft Office są takie same, jak podczas tworzenia innych rodzajów rozwiązań za pomocą programu Visual Studio. Aby uzyskać ogólne informacje, zobacz [Globalizing i lokalizacja aplikacji](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -101,6 +102,6 @@ Application.ActiveCell.Value2 = "05/12/04"
 ## <a name="see-also"></a>Zobacz też  
  [Porady: docelowa Office wielojęzyczny interfejs użytkownika](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Okienko akcji ― Omówienie
   W okienku Akcje jest modyfikowalny **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu programu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel. Jest obsługiwany w okienku zadań Office wraz z innymi okienka wbudowanego zadania takich jak **źródło XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty formularzy systemu Windows lub formantów WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.  
@@ -163,6 +164,6 @@ ms.lasthandoff: 10/31/2017
  [Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
  [Wskazówki: Wiązanie danych do kontrolek okienku akcji programu Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
  [Porady: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Przewodnik: Wstawianie tekstu do dokumentu z okienka akcji](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

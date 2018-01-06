@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5f98e1bd3052f3977a0071f2835fad1a7ed16726
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a780cb0089a83df8f91a8c27be6c2b2953e70399
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Wybierz warunek, okno dialogowe (starsze)
 W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszych [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -57,4 +58,4 @@ W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w stars
  [Za pomocą działania IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   
  [Przy użyciu działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080)   
  [Za pomocą działania Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091)   
- [Projektant starszych pomocy systemu Windows Workflow Foundation interfejsu użytkownika](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

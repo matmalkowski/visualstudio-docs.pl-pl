@@ -20,21 +20,22 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3723d4612df985b1ddd9bd31188596ebefc3548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-tables"></a>Praca z tabelami
   Tematy w tej sekcji zawierają procedury krok po kroku i przykładów kodu do pracy z tabelami w projektach pakietu Office przy użyciu modelu obiektów programu Microsoft Office Word. W niektórych przypadkach sposobów wykonywania tych zadań w dodatkach VSTO różni się od sposobów wykonywania ich w dostosowaniach na poziomie dokumentu.  
   
 |Zadanie|Procedura|  
 |----------|---------------|  
-|Utwórz tabelę, zastosowanie stylu i uzyskać dostępu do tabeli w kodzie.|[Porady: programowane Tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)|  
-|Utwórz tabelę, formatowania i wstawiania danych do komórek.|[Porady: programowane Wypełnianie tabel programu Word właściwościami dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|  
-|Dodawanie wierszy lub kolumn do tabeli.|[Porady: programowane Dodawanie wierszy i kolumn do tabel Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|  
-|Dodaj tekst w komórce i sformatuj go.|[Porady: programowane Dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|  
+|Utwórz tabelę, zastosowanie stylu i uzyskać dostępu do tabeli w kodzie.|[Instrukcje: Programowe tworzenie tabel programu Word](../vsto/how-to-programmatically-create-word-tables.md)|  
+|Utwórz tabelę, formatowania i wstawiania danych do komórek.|[Instrukcje: Programowe wypełnianie tabel programu Word właściwościami dokumentu](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|  
+|Dodawanie wierszy lub kolumn do tabeli.|[Instrukcje: Programowe dodawanie wierszy i kolumn do tabel programu Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|  
+|Dodaj tekst w komórce i sformatuj go.|[Instrukcje: Programowe dodawanie tekstu i formatowania do komórek w tabelach programu Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przegląd modelu obiektów programu Word](../vsto/word-object-model-overview.md)   

@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4e93509595dc9bd576bc1f3f427ef222df11abd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1e335f4c8215499eedd93590455911c3ec234051
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-office-solutions"></a>Rozwiązywanie problemów z rozwiązaniami Office
   Ta sekcja zawiera wskazówki dotyczące rozwiązywania problemów, które można napotkać podczas tworzenia rozwiązań za pomocą narzędzi programowania pakietu Office w Visual Studio.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
  [Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  W tym artykule opisano typowe problemy, które mogą wystąpić podczas projektowania, uruchomione i testowanie rozwiązań pakietu Office w Visual Studio.  
   
- [Porady: ponowne włączanie dodatku narzędzi VSTO, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Instrukcje: Ponowne włączanie wcześniej wyłączonego dodatku narzędzi VSTO](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Opisuje sposób ponownie włączyć dodatku VSTO twarde lub soft wyłączono.  
   
  [Dodatkowa obsługa błędów w rozwiązaniach pakietu Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
  Zawiera tematy, które opisują sposób rozwiązań pakietu Office uwzględnienie funkcji zabezpieczeń dostępnych w środowisku .NET Framework.  
   
- [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
+ [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
  Listy często zadawane pytania dotyczące programowania rozwiązań pakietu Office i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.  
   
   

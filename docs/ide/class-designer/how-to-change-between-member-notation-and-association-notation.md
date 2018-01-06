@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eaf9b7ae5cd6e0dffa8162223aa8838dfe3b1acc
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 24b073c5dddea390972438ad9730f46aba97a85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Porady: zmiana pomiędzy notacją członka i skojarzeniem notacji (Projektant klas)
 W Projektancie klas można zmienić sposób diagramu klas reprezentuje relację skojarzenia między dwoma typami z notacją członka skojarzenie notacji i na odwrót. Elementy członkowskie wyświetlane linie asocjacji często stanowi przydatne wizualizację, w jaki sposób są powiązane typy.  

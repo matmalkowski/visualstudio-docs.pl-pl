@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 738568db51cce97ee0b110220aa195b4ded2adba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8bcdcc42ada14f808c165e9e06b269817f79575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designer"></a>Schemat blokowy Projektant działań
 <xref:System.Activities.Statements.Flowchart> To działanie służy do tworzenia przepływów pracy, zdefiniuj i zarządzać związanymi z formantów złożonych przepływu. A <xref:System.Activities.Statements.Flowchart> można tworzyć w kodzie lub za pomocą [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Ten temat dokumenty [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] wystąpić. [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] Projektant działań przepływu pracy umożliwia deweloperom tworzenie przepływów pracy w sposób fizycznych.  

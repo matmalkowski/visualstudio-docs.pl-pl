@@ -11,11 +11,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 6f7b32031d99b6286595ca5ef05215fc88b20ea2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla formantów platformy uniwersalnej systemu Windows do testowania
 Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows opartych na języku XAML, musi mieć właściwość unikatowy automatyzacji, która identyfikuje każdego formantu.  
@@ -203,4 +204,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Testowanie aplikacji uniwersalnej systemu Windows z kodowanych testów interfejsu użytkownika](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
+ [Testowanie aplikacji platformy UWP systemu Windows za pomocą kodowanych testów interfejsu użytkownika](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

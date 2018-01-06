@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c8d9e1ea91b5f13961941644871dd881f49a7416
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 5e8c34c777abf9f7932d05396cb03e612bfd8eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 
@@ -45,7 +46,7 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
     main()
     ```
 
-1. Sprawdź, czy kod działa poprawnie naciśnięcie klawisza F5 lub wybierając **Debuguj > Rozpocznij debugowanie** polecenia menu. To polecenie uruchamia kod w debugerze, ale ponieważ nie została jeszcze wykonana żadnych czynności, aby wstrzymać program jest uruchomiona, po prostu Wyświetla szablon wave dla kilku iteracji. Klawisze w oknie danych wyjściowych.
+1. Sprawdź, czy kod działa poprawnie naciśnięcie klawisza F5 lub wybierając **Debuguj > Rozpocznij debugowanie** polecenia menu. To polecenie uruchamia kod w debugerze, ale ponieważ nie została jeszcze wykonana żadnych czynności, aby wstrzymać program jest uruchomiona, po prostu Wyświetla szablon wave dla kilku iteracji. Naciśnij dowolny klawisz, aby zamknąć okno danych wyjściowych.
 
     > [!Tip]
     > Aby zamknąć okno danych wyjściowych automatycznie po zakończeniu program, należy zastąpić `main()` wywołania z następującym kodem:

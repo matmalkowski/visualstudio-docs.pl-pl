@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cfc73147a25a289cdcfc57a836a07e9a7b99b28b
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: data-science
+ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Pierwsze kroki z narzędziami R dla programu Visual Studio
 

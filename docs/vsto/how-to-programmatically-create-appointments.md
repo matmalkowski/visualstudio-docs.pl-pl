@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a468918bb796e5641d345902bad297d4617e6d51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9058cbd633931003751baf98fa1fcf34dd32b118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-appointments"></a>Porady: Programowane tworzenie terminów
   W tym przykładzie tworzy terminu i dodaje adresatów wezwania na spotkanie terminu.  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)   
  [Porady: programowane Tworzenie niestandardowego kalendarza](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Porady: programowane Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+ [Instrukcje: Programowe dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
   
   

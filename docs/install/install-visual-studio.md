@@ -2,7 +2,7 @@
 title: Zainstaluj program Visual Studio 2017 | Dokumentacja firmy Microsoft
 description: "Dowiedz się, jak zainstalować program Visual Studio, krok po kroku."
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-ms.assetid: 8d4297e4-9f43-4f12-95ec-22e61154480e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff51b5910d8b81d8319eddd0fa3be08d2f9553d7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 Nowy sposób, aby zainstalować program Visual Studio — Zapraszamy! W naszym najnowsza wersja ułatwiliśmy ułatwia wybierania i instalowania tylko potrzebnych funkcji, które są potrzebne. Minimalnego miejsca zajmowanego przez program Visual Studio również już zostać zmniejszony, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
@@ -48,7 +48,7 @@ Odpowiedzi na pytania dotyczące uruchamiania poprzednich wersji programu Visual
 Następnie należy pobrać plik inicjujący Instalatora programu Visual Studio. Aby to zrobić, kliknij poniższy przycisk, wybierz wersji programu Visual Studio 2017, żądany, kliknij przycisk **zapisać**, a następnie kliknij przycisk **Otwórz folder**.
 
  > [!div class="button"]
- > [Pobierz program Visual Studio 2017 r.](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Pobierz program Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 <br/>
 
 |         |         |
@@ -77,9 +77,9 @@ Po zainstalowaniu Instalator, można go dostosować instalację, wybierając zes
 
 1.  Znajdź obciążenia w **Instalowanie programu Visual Studio** ekranu.
 
-  ![Okno dialogowe Ustawienia programu Visual Studio 2017](media/vs2017-workloads.PNG "obciążeń program Visual Studio")
+ ![Wybieranie obciążenia w oknie dialogowym Instalator Visual Studio 2017 r.](../install/media/install-visual-studio-enterprise.png)
 
-     Na przykład wybierz obciążenie tworzenia klasycznych aplikacji .NET. Pochodzi on z domyślnego edytora core, która obejmuje podstawowych czynności edytowania Obsługa ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu kodu i zintegrowane kontroli kodu źródłowego.  
+     Na przykład wybierz obciążenie ".NET development pulpitu". Pochodzi on z domyślnego edytora core, która obejmuje podstawowych czynności edytowania Obsługa ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu kodu i zintegrowane kontroli kodu źródłowego.  
 
 2.  Po wybraniu workload(s) ma, kliknij przycisk **zainstalować**.
 
@@ -88,7 +88,7 @@ Po zainstalowaniu Instalator, można go dostosować instalację, wybierając zes
 3.  Po zainstalowaniu nowego obciążeń i składników, kliknij przycisk **uruchamianie**.  
 
 > [!TIP]
->  W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składniki, które należy wstępnie zainstalować. Jeśli masz program Visual Studio Otwórz, przejdź do **narzędzia**, **Pobierz narzędzia i funkcje...**  otwierający Instalator programu Visual Studio. Możesz również otworzyć **Instalator programu Visual Studio** z Start menu. Z tego miejsca, możesz wybrać obciążeń lub składniki, które chcesz zainstalować, a następnie kliknij przycisk **Modyfikuj**.  
+>  W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składniki, które należy wstępnie zainstalować. Jeśli masz program Visual Studio Otwórz, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**  otwierający Instalator programu Visual Studio. Możesz również otworzyć **Instalator programu Visual Studio** z Start menu. Z tego miejsca, możesz wybrać obciążeń lub składniki, które chcesz zainstalować, a następnie kliknij przycisk **Modyfikuj**.  
 
 |         |         |
 |---------|---------|
@@ -135,7 +135,7 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 * [Aktualizacja programu Visual Studio 2017 r.](update-visual-studio.md)
@@ -144,4 +144,4 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
 * [Przewodnik administratora 2017 r w usłudze Visual Studio](visual-studio-administrator-guide.md)
   * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.](use-command-line-parameters-to-install-visual-studio.md)
-* [Zainstaluj narzędzia kompilacji do kontenera](build-tools-container.md)
+* [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4903a3c8373c0ce9c6119176649ba793caf27c27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8475544d6ecb822a25a423b73543d7364d79da10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-sampling-events"></a>Porady: wybieranie zdarzeń pobierania próbek
 Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania zbiera dane dotyczące wydajności w przedziale czasu, który jest określony jako liczba cykli procesora, które są używane przez PROFILOWANEGO procesu. Domyślna liczba cykli w interwale jest 10 000 000, czyli około 0,01 sekund na 1 komputerze GH. Można zmienić liczby cykli w interwale, i można zmienić zdarzenie próbkowania. Dostępne są następujące zdarzenia próbkowania:  

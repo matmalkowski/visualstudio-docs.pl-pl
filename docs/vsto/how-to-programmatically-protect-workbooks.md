@@ -22,11 +22,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dcbedb2c30758c762af0c301c239dd03fe4b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5c383c95d37894aaa49a4a42d2b9a17b9a193f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Porady: Programowane włączanie ochrony skoroszytów
   Można chronić programu Microsoft Office Excel, dzięki czemu użytkownicy nie Dodawanie lub usuwanie arkuszy i również programowo Wyłącz ochronę skoroszytu. Opcjonalnie można określić hasło, wskazują, czy mają strukturę chronione (tak, aby użytkownicy nie można przenieść arkusze) oraz wskazuje, czy chroniony windows skoroszytu programu.  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
  [Praca ze skoroszytami](../vsto/working-with-workbooks.md)   
  [Porady: programowane Włączanie ochrony arkuszy](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Porady: programowane ukrywanie arkuszy](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d32ef451cbbefaa2ce639d3271b762fa90892945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zapisywanie rejestratorów uwzględniających wiele procesorów
 Zdolność [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mógł korzystać z wielu procesorów może zmniejszyć czas tworzenia projektu, ale również dodaje złożoności rejestrowanie zdarzeń kompilacji. W środowisku z jednym procesorem zdarzenia, wiadomości, ostrzeżenia i błędy przyjeździe rejestratora w sposób przewidywalne, sekwencyjnych. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł może pojawiają się w tym samym czasie lub poza kolejnością. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia kilku-procesorów obsługujących rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowej "przekazywanie rejestratorów."  

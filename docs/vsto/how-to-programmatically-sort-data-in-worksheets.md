@@ -20,11 +20,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 211a357095290f8f8d608d01c093cd373c7525ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b519dad9f2736b7c4451dd01964b3b16cac8ad2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Porady: programowane sortowanie danych w arkuszach
   Można sortować dane znajdujące się na listach i zakresów arkusza w czasie wykonywania. Poniższy kod sortuje zakres wielokolumnowego o nazwie `Fruits` dane w pierwszej kolumnie, a następnie dane w drugiej kolumnie.  
@@ -72,6 +73,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [ListObject — formant](../vsto/listobject-control.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

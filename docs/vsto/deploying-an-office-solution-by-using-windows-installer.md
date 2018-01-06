@@ -23,11 +23,12 @@ caps.latest.revision: "91"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09a356408815ed6fea416d27e59a58a4edc6a6a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e84bd10c2a7e3ce4c760e0f9231390d4fd037616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 Dowiedz się, jak utworzyć Instalatora systemu Windows dla rozwiązań pakietu Office przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -226,7 +227,7 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
   
 4. W programie Notatnik, Zastąp tekst **swój identyfikator GUID tu** przez wklejenie identyfikator GUID w jego miejscu.  
   
-   **&lt;Właściwości&gt;**  element pliku jest podobny do następującego.  
+    **&lt;Właściwości&gt;**  element pliku jest podobny do następującego.  
   
   
    ```xml  
@@ -539,7 +540,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 [Wymagania wstępne rozwiązania pakietu Office dla wdrożenia](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
 [Wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
-[Przegląd właściwości niestandardowego dokumentu](../vsto/custom-document-properties-overview.md)  
+[Niestandardowe właściwości dokumentu — omówienie](../vsto/custom-document-properties-overview.md)  
 [Udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md)  
 [Udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md)  
 [Wdrażanie programu Visual Studio 2010 Tools dla rozwiązań pakietu Office za pomocą Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=201807)  

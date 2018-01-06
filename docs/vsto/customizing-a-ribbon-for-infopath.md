@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3f4612b3e8dc272b0f51bae80d66d8afe97938e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 647f3a61582c58ee2d132ebd0f81fc6ecff44a02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-a-ribbon-for-infopath"></a>Dostosowywanie Wstążki do InfoPath
   Podczas dostosowywania wstążki w programie Microsoft Office InfoPath należy rozważyć, gdy Twoje niestandardowa Wstążka będą wyświetlane w aplikacji. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]może wyświetlać wstążki w następujących trzech typów InfoPath aplikacji systemu windows:  
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
  [Uzyskiwanie dostępu do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
- [XML wstążki](../vsto/ribbon-xml.md)  
+ [XML — wstążka](../vsto/ribbon-xml.md)  
   
   

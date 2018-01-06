@@ -16,11 +16,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b12a52101feebcfac08c7672834d9d7c65d41c55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96f6e6f27938635628db66f2a6eb58a56cee0d18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Wskazówki: tworzenie niestandardowej akcji elementu projektu z Szablonem elementu, Część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu SharePoint i skojarzyć go z szablonu elementów programu Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, gdy będą oni używać szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane można zainicjować elementu projektu.  
@@ -179,7 +180,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Na **podpisywanie** wybierz opcję **Podpisz zestaw** pole wyboru.  
   
-3.  W **wybierz plik klucza o silnej nazwie** wybierz ** \<nowy... >**.  
+3.  W **wybierz plik klucza o silnej nazwie** wybierz  **\<nowy... >**.  
   
 4.  W **tworzenie silnej nazwy klucza** okna dialogowego wprowadź nazwę, usuń zaznaczenie **ochrony pliku klucza przy użyciu hasła** pole wyboru, a następnie wybierz pozycję **OK** przycisku.  
   
@@ -210,7 +211,7 @@ ms.lasthandoff: 10/31/2017
     </WizardExtension>  
     ```  
   
-     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — Element & #40; Szablony Visual Studio & #41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — Element &#40; Szablony Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Zapisz i zamknij plik.  
   

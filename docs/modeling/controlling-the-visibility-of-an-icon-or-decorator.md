@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f3dc3efefa4a89d64a64bd946f1f79e6c5a6d4df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3a4e1927cd17a5cc86ed58565b53f04aeb6977a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 A *dekoratora* jest ikona albo wiersza tekstu wyświetlanego na kształt języka specyficznego dla domeny (DSL). Możesz ustawić dekoratora występują a znikają w zależności od stanu właściwości w modelu. Na przykład na kształt reprezentujący osoby, może mieć inne ikony, które znajdują się w zależności od danej osoby, płci, liczbę elementów podrzędnych i tak dalej.  
@@ -110,4 +111,4 @@ A *dekoratora* jest ikona albo wiersza tekstu wyświetlanego na kształt języka
  [Definiowanie łączników i kształtów](../modeling/defining-shapes-and-connectors.md)   
  [Ustawienie obraz tła na diagramie](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

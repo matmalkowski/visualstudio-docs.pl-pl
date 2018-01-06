@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Tworzenie aplikacji za pomocą projektanta przepływów pracy
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] Jest widoczny Projektant wizualny oraz debugera dla konstrukcji graficznego i debugowanie [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji w [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] jest hostowana w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Środowisko deweloperskie. Umożliwia utworzenie aplikacji złożonych przepływu pracy, biblioteka działań lub [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] usługi przy użyciu szablonów i projektantów działań. [!INCLUDE[crabout](../test/includes/crabout_md.md)]przepływy pracy, zobacz [Windows Workflow Foundation &#91;. NET Framework 4 &#93; ](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -51,19 +52,19 @@ ms.lasthandoff: 10/27/2017
 -   **Dodać odwołania do usługi...**  funkcjonalność umożliwia generowanie działania automatycznie uzyskiwać dostęp do usług sieci Web.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Za pomocą projektanta przepływów pracy](../workflow-designer/using-the-workflow-designer.md)  
+ [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)  
  Przedstawia sposób tworzenia nowych działań i projektów przepływu pracy przy użyciu wbudowanych projektantów i obsługę argumenty, zmienne wyrażeń, importowania i nadrzędnych przy użyciu innych narzędzi dostarczonych przez projektanta.  
   
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)  
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
  Opis kategorii działań i szablonów ich projektantów, które są dostarczane przez system.  
   
- [Debugowanie przepływów pracy za pomocą projektanta przepływów pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
+ [Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
  Opisano sposób wykonywania tradycyjnych debugowanie procedur, a także debugowanie XAML i wyrażenia.  
   
- [Pomocy interfejsu użytkownika projektanta przepływów pracy](../workflow-designer/workflow-designer-ui-help.md)  
+ [Pomoc interfejsu użytkownika Projektanta przepływu pracy](../workflow-designer/workflow-designer-ui-help.md)  
  Zawiera tematy pomocy kontekstowej dla okien dialogowych udostępniane przez [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], oraz wskazówki dotyczące funkcji powłoki projektanta, skróty klawiaturowe i komunikaty o błędach.  
   
- [Opracowywanie aplikacji przepływ pracy przeznaczonych dla platformy .NET 3.0 lub .NET 3.5 Framework](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
+ [Opracowywanie aplikacji przepływu pracy przeznaczonych dla platformy .NET 3.0 lub .NET 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Zawiera wskazówki dotyczące przy użyciu narzędzia Projektant starszej wersji, którego celem jest [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
  [Projektant ReHosting &#91; WF — przykłady &#93;](http://msdn.microsoft.com/Library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  

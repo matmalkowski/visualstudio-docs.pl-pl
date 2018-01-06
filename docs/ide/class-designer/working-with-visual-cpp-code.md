@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baa2d81dc594ac89750bc50db171ccb4fa576ea9
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: e0861f6e97ea5cc2321befce8cdf6c460c7ec6cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 Projektant klas Wyświetla powierzchni wizualnego projektu o nazwie *diagramu klas* zapewnia wizualną reprezentację elementy kodu w projekcie. Diagramy klas służy do projektowania i wizualizacji klasami i innymi typami w projekcie.  

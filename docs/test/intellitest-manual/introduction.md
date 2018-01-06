@@ -12,11 +12,12 @@ ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 454cd11d9e196e7de9775448640a8ee22c434d4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8c98633cf54d2e6d969ae4b7aede394c851784ba
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie programu Microsoft IntelliTest
 
@@ -55,7 +56,7 @@ IntelliTest znajdzie wejść odpowiednich przetestowany program, który oznacza 
 
 Poniższy przykład tworzy dwa ograniczenia dla parametru o nazwie **wartość** tak, aby program IntelliTest zostanie wygenerowany wymagany ciąg.
 
-```
+```csharp
 using System;
 using Microsoft.Pex.Framework; 
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
@@ -83,10 +84,9 @@ Po skompilowany i wykonywane, IntelliTest generuje zestawu testów, takie jak na
 7. "Hello\0World!"
 8. "Witaj świecie!"
 
-Przejdź [tutaj](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0) zrozumieć, w którym są zapisywane wygenerowane testy.
-Kod wygenerowany test powinien zawierać testu, takie jak następujące:
+Odczyt [generowania testów jednostkowych z Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) zrozumieć, w którym są zapisywane wygenerowane testy. Kod wygenerowany test powinien zawierać testu, takie jak następujące:
 
-```
+```csharp
 [TestMethod]
 [PexGeneratedBy(typeof(global::HelloWorldTest))]
 [PexRaisedException(typeof(Exception))]
@@ -98,7 +98,6 @@ public void HelloWorldThrowsException167()
 
 To bardzo proste!
 
-<a name="limitations"></a>
 ## <a name="limitations"></a>Ograniczenia
 
 W tej sekcji opisano ograniczenia IntelliTest:
@@ -164,7 +163,7 @@ Ponieważ program IntelliTest przechwytuje i "ponownie zgłasza wyjątek" wyjąt
 ## <a name="further-reading"></a>Dalsze informacje
 
 * [Wstępne wpis w blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) w witrynie MSDN.
-* [Generowanie testów jednostek dla kodu za pomocą IntelliTest](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+* [Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 
 ## <a name="got-feedback"></a>Masz opinię?
 

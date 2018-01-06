@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 12ee899bdc9e905aea577de4dbf57b94e9f58306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fad771da4643c68b3be08f778ca2db3b8e09c703
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Okno dialogowe konfiguracji motywu (starsze)
 W tym temacie opisano sposób użycia **konfiguracji motywu** okno dialogowe w starszych [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -40,4 +41,4 @@ W tym temacie opisano sposób użycia **konfiguracji motywu** okno dialogowe w s
   
 ## <a name="see-also"></a>Zobacz też  
  [Kompozycje, projektanta przepływów pracy, opcje — Okno dialogowe (starsze)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
- [Projektant starszych pomocy systemu Windows Workflow Foundation interfejsu użytkownika](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

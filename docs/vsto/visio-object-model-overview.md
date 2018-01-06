@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Model obiektu Visio ― Omówienie
   Do opracowywania rozwiązań pakietu Office dla programu Microsoft Office Visio, możesz użyć modelu obiektów programu Visio. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowego zestawu międzyoperacyjnego dla programu Visio i są zdefiniowane w obszarze nazw Microsoft.Office.Interop.Visio.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)  
   
--   [Praca z kształtów Visio](../vsto/working-with-visio-shapes.md)  
+-   [Praca z dokumentami Visio Shapes](../vsto/working-with-visio-shapes.md)  
   
 ## <a name="understanding-the-visio-object-model"></a>Opis modelu obiektów programu Visio  
  Visio zawiera wiele obiektów, które mogą prowadzić interakcję. Te obiekty są zorganizowane w hierarchii, która jest ściśle zgodna interfejsu użytkownika. W górnej części hierarchii jest [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx) obiektu. Ten obiekt reprezentuje bieżące wystąpienie programu Visio. Obiekt Microsoft.Office.Interop.Visio.Application zawiera obiekty Microsoft.Office.Interop.Visio.Document i Microsoft.Office.Interop.Visio.Page, a także Microsoft.Office.Interop.Visio.Documents i Kolekcje Microsoft.Office.Interop.Visio.Pages. Każdy z tych obiektów i kolekcji ma wiele metod i właściwości, do których masz dostęp do manipulowania i interakcji z nim.  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Praca z dokumentami Visio](../vsto/working-with-visio-documents.md)   
- [Praca z kształtów Visio](../vsto/working-with-visio-shapes.md)  
+ [Praca z dokumentami Visio Shapes](../vsto/working-with-visio-shapes.md)  
   
   

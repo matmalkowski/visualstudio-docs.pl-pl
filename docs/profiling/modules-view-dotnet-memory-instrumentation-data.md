@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d0346732de89fcc08c0f3604e8a66fa1fd7acdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Widok modułów - dane Instrumentacji pamięci .NET
 Widok modułów danych alokacji pamięci .NET zebrane przy użyciu metody Instrumentacji grupuje pamięci i danych o chronometrażu przez moduły, które zostały wykonane w przebiegu profilowania. Dane dla funkcji modułu profilowania znajduje się poniżej tego węzła modułu.  

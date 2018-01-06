@@ -41,11 +41,12 @@ caps.latest.revision: "100"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ae5a2cf43fc457fccb3b4a8e5c53a5596fdae1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a85f69ce67afdb4e1138c75b7c939be3980453f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="host-items-and-host-controls-overview"></a>Przegląd obiektów hosta i kontrolek hosta
   Obiekty hosta i formantów hosta są typy, które pomagają modelu programowania rozwiązań pakietu Office, które są tworzone za pomocą narzędzi programowania pakietu Office w Visual Studio. Obiekty hosta i formantów hosta upewnij się, interakcji z modeli obiektów Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, więcej takich jak interakcji z obiektów zarządzanych, takich jak formanty formularzy systemu Windows.  
@@ -90,23 +91,23 @@ ms.lasthandoff: 10/31/2017
   
  Projekty programu Excel dostępne są następujące kontrolki hosta:  
   
--   [Formant wykresu](../vsto/chart-control.md)  
+-   [Kontrolka wykresu](../vsto/chart-control.md)  
   
--   [ListObject — formant](../vsto/listobject-control.md)  
+-   [ListObject, kontrolka](../vsto/listobject-control.md)  
   
--   [Namedrange — formant](../vsto/namedrange-control.md)  
+-   [NamedRange, kontrolka](../vsto/namedrange-control.md)  
   
--   [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)  
+-   [XmlMappedRange, kontrolka](../vsto/xmlmappedrange-control.md)  
   
  Projekty programu Word dostępne są następujące kontrolki hosta:  
   
--   [BOOKMARK, formant:](../vsto/bookmark-control.md)  
+-   [Bookmark, kontrolka](../vsto/bookmark-control.md)  
   
--   [Formanty zawartości](../vsto/content-controls.md)  
+-   [Kontrolki zawartości](../vsto/content-controls.md)  
   
--   [Formant XMLNode](../vsto/xmlnode-control.md)  
+-   [XMLNode, kontrolka](../vsto/xmlnode-control.md)  
   
--   [Formant XMLNodes](../vsto/xmlnodes-control.md)  
+-   [XMLNodes, kontrolka](../vsto/xmlnodes-control.md)  
   
  Formanty hosta, które są dodawane do dokumentów pakietu Office przypominają natywny obiektów pakietu Office; Formanty hosta jednak dodatkowe funkcje, w tym zdarzenia oraz funkcje do wiązania danych. Na przykład, kiedy zachodzi potrzeba przechwytywania zdarzeń natywny <xref:Microsoft.Office.Interop.Excel.Range> obiektów w programie Excel, najpierw musi obsługiwać zdarzenia zmiany arkusza. Następnie należy określić, czy zmiana została wprowadzona w <xref:Microsoft.Office.Interop.Excel.Range>. Z kolei <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli hosta ma <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie, które można obsługiwać bezpośrednio.  
   
@@ -132,21 +133,21 @@ ms.lasthandoff: 10/31/2017
   
  Aby uzyskać więcej informacji o sposobie dodawania hosta formantów do dokumentów zobacz następujące tematy:  
   
--   [Porady: dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+-   [Instrukcje: Dodawanie kontrolek wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+-   [Instrukcje: Dodawanie kontrolek ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+-   [Instrukcje: Dodawanie kontrolek NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Porady: dodawanie formantów XMLMappedRange do arkuszy](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+-   [Instrukcje: Dodawanie kontrolek XMLMappedRange do arkuszy](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+-   [Instrukcje: Dodawanie kontrolek zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Porady: dodawanie formantów zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+-   [Instrukcje: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Porady: dodawanie formantów XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+-   [Instrukcje: Dodawanie kontrolek XMLNode do dokumentów programu Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Porady: dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+-   [Instrukcje: Dodawanie kontrolek XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="naming-host-controls"></a>Formanty hosta nazewnictwa  
  Przeciągnięcie kontrolką hosta z **przybornika** do dokumentu, kontrolka jest automatycznie o nazwie przy użyciu typu formantu z numeru przyrostowej na końcu. Na przykład, są nazywane zakładki **bookmark1**, **bookmark2**i tak dalej. Jeśli używasz funkcji natywnego programu Word czy Excel można dodać formantu, możesz zapewnić go określonej nazwy w momencie jego tworzenia. Formanty można również zmienić, zmieniając wartość **nazwa** właściwości w **właściwości** okna.  
@@ -179,6 +180,6 @@ ms.lasthandoff: 10/31/2017
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

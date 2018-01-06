@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 478bd6d27d6e4ef0fe75891d95cdc4b3258a74e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b15c9fbf2815132ac4ad84e3b321bb22db199ed2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Po projektowania projektu za pomocą narzędzia Office developer tools w programie Visual Studio i konfigurowanie plików projektu, można rozpocząć skoncentrować się na realizacji kodu i niestandardowego interfejsu użytkownika (UI).  
@@ -55,12 +56,12 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |[Pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md)|Zawiera opis różnych aspektów pisanie kodu w rozwiązaniach pakietu Office.|  
 |[Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)|Omówienie modelu programowania dodatków narzędzi VSTO i powiązanych zadań programistycznych.|  
-|[Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)|Omówienie modelu programowania dostosowań na poziomie dokumentu i powiązanych zadań programistycznych.|  
+|[Programowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)|Omówienie modelu programowania dostosowań na poziomie dokumentu i powiązanych zadań programistycznych.|  
 |[Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)|W tym artykule opisano różne sposoby, który można dostosować aplikacji interfejsu użytkownika pakietu Office za pomocą dodatków narzędzi VSTO i dostosowywanie na poziomie dokumentu.|  
 |[Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)|W tym artykule opisano różne sposoby, w którym można pracować z danymi w rozwiązaniach pakietu Office, takich jak buforowanie danych w dostosowaniach na poziomie dokumentu i wiązanie danych do kontrolek.|  
-|[Sposób automatycznego zapisywania ma wpływ na rozwiązań pakietu Office](./how-autosave-impacts-office-solutions.md)|W tym artykule opisano zmiany należy wprowadzić rozwiązań pakietu Office, gdy jest włączone automatyczne zapisywanie.|
-|[Rozwiązywanie problemów z rozwiązań pakietu Office](../vsto/troubleshooting-office-solutions.md)|Zawiera wskazówki dotyczące rozwiązywania problemów, które można napotkać podczas tworzenia rozwiązań pakietu Office.|  
-|[Obsługa wątkowości w pakietu Office](../vsto/threading-support-in-office.md)|Zawiera omówienie pracy z wielu wątków w rozwiązaniach pakietu Office.|  
+|[Wpływ automatycznego zapisywania na rozwiązania pakietu Office](./how-autosave-impacts-office-solutions.md)|W tym artykule opisano zmiany należy wprowadzić rozwiązań pakietu Office, gdy jest włączone automatyczne zapisywanie.|
+|[Rozwiązywanie problemów z rozwiązaniami Office](../vsto/troubleshooting-office-solutions.md)|Zawiera wskazówki dotyczące rozwiązywania problemów, które można napotkać podczas tworzenia rozwiązań pakietu Office.|  
+|[Obsługa wątkowości w pakiecie Office](../vsto/threading-support-in-office.md)|Zawiera omówienie pracy z wielu wątków w rozwiązaniach pakietu Office.|  
 |[Ułatwienia dostępu w projektach pakietu Office](../vsto/accessibility-in-office-projects.md)|Zawiera opis funkcji ułatwień dostępu, które są dostępne w rozwiązaniach pakietu Office.|  
   
 ## <a name="see-also"></a>Zobacz też  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
  [Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
- [Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+ [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
   

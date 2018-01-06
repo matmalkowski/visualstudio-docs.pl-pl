@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7dcdbfa22301e6872e5ea39fd910a326f817ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: c5c09288baaeb0cad029a04641533f2b9c69f8cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Interfejsy API profilera Visual Studio (Native)
 Interfejsów API profilera Visual Studio umożliwiają programowe sterowanie ilości zbieranych danych i wstaw znaczniki zarówno sygnatury czasowej, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, możesz uwzględnić plik nagłówka VSPerf.h i dodać VSPerf.lib w projekcie.  

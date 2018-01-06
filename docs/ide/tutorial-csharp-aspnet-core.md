@@ -12,14 +12,17 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: eecae2b95947d4bdf40ba6d57a85150e03f21cfb
-ms.sourcegitcommit: abe8d0aaded582058b5f5669d9d534d2f6a83355
+ms.workload:
+- aspnet
+- dotnetcore
+ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/16/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
-W tym samouczku do tworzenia aplikacji C# dla platformy ASP.NET Core za pomocą programu Visual Studio będzie utworzenia aplikacji sieci web platformy ASP.NET Core C#, Dodaj do niej kod, Eksploruj niektóre funkcje IDE i uruchom aplikację.
+W tym samouczku środowiska deweloperskiego C# przy użyciu platformy ASP.NET Core za pomocą programu Visual Studio będzie utworzenia aplikacji sieci web platformy ASP.NET Core C#, Dodaj do niej kod, Eksploruj niektóre funkcje IDE i uruchom aplikację.
 
 Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
@@ -113,7 +116,7 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
 ## <a name="run-and-debug-the-application"></a>Uruchom i debugowania aplikacji
 
-1. Wybierz **usług IIS Express** przycisk w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie możesz nacisnąć przycisk **F5**, lub możesz wybrać **Debuguj > Rozpocznij debugowanie** na pasku menu.)
+1. Wybierz **usług IIS Express** przycisk w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Można również nacisnąć klawisz **F5**, lub wybierz **Debuguj > Rozpocznij debugowanie** na pasku menu.)
 
   ![Kliknij przycisk usług IIS Express programu Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
@@ -154,11 +157,11 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
  ![Zmień tekst o treści "dodatkowe" na tekst, który odczytuje "zmienione"](../ide/media/csharp-aspnet-about-cshtml-code-change.png)
 
-1. Wróć do okna przeglądarki, aby wyświetlić zaktualizowany tekst. (Odśwież przeglądarkę, jeśli nie widzisz tekst, który został zmieniony.)
+1. Wróć do okna przeglądarki, aby wyświetlić zaktualizowany tekst. (Odśwież przeglądarkę, jeśli nie widzisz tekst, który został zmodyfikowany.)
 
   ![Odśwież okno przeglądarki, aby wyświetlić zmieniony tekst](../ide/media/csharp-aspnet-browser-page-about-changed.png)
 
-1. Naciśnij klawisz **Shift**+**F5** można zatrzymać debugowania. Możesz też wybrać **debugowania** > **Zatrzymaj debugowanie** z menu paska lub wybierz **Zatrzymaj debugowanie** przycisku paska narzędzi.
+1. Wybierz **Zatrzymaj debugowanie** przycisku paska narzędzi, aby zatrzymać debugowanie. (Można również nacisnąć klawisz **Shift**+**F5**, lub wybierz **debugowania** > **Zatrzymaj debugowanie** na pasku menu.)
 
  ![Kliknij przycisk Zatrzymaj debugowanie na pasku narzędzi](../ide/media/csharp-aspnet-stop-debugging.png)
 
@@ -168,3 +171,6 @@ Gratulujemy wykonanie kroków tego samouczka!
 ## <a name="see-also"></a>Zobacz także
 * [Wprowadzenie do platformy ASP.NET Core MVC i Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 * [Wprowadzenie do platformy ASP.NET Core stron Razor](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Nowości w języku C#](/dotnet/csharp/whats-new)
+* [Dokumentacja języka C#](/dotnet/csharp/language-reference/index)
+* [Podstawy języka C# dla początkujących bezwzględną](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) kursu wideo

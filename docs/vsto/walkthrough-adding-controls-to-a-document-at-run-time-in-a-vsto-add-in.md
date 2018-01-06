@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28ed2ff2d68dc5a23cfceeb5d5f0eab6dea35eb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Wskazówki: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO
   Formanty można dodać do dowolnego otwartego dokumentu Microsoft Office Word za pomocą dodatku VSTO. W tym przewodniku pokazano, jak korzystanie ze Wstążki, aby umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Word.Controls.Button> lub <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.  
@@ -85,14 +86,14 @@ ms.lasthandoff: 10/31/2017
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**addButtonCheckBox**|  
-    |**Etykiety**|**Dodawanie przycisku**|  
+    |**Etykieta**|**Dodawanie przycisku**|  
   
 9. Drugie pole wyboru, aby dodać **grupa1**, a następnie Zmień następujące właściwości.  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**addRichTextCheckBox**|  
-    |**Etykiety**|**Dodawanie tekstu Rich Text formantu**|  
+    |**Etykieta**|**Dodawanie tekstu Rich Text formantu**|  
   
 10. Projektant wstążki, kliknij dwukrotnie **Dodawanie przycisku**.  
   

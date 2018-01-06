@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a575ab2ede1c537ea4a62b27656946f838ef8b47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d367dbbe273f39bef9ebb6161211864d6d430b97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Windows przepływu pracy programu Visual Studio (starsze)
 Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dostarczonych przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] może służyć do docelowego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Projektant starszych jest wizualnego projektanta, który służy do tworzenia przepływu pracy. Możesz przeciągnąć działania z **przybornika** projektu powierzchni, a następnie skonfiguruj ich brak. Jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna edytora zajmuje obszaru głównego okna używane przez inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna edytora. Nazwa przepływu pracy jest wyświetlany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasek tytułu okna.  
@@ -32,4 +33,4 @@ Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dostarczony
 |Debugowanie systemu windows|Standardowa Visual Studio debugowanie systemu windows, takich jak **wątków**, **stos wywołań**, **punktu przerwania**, **narzędzie zmiennych lokalnych**i **Narzędzia czujki** systemu windows.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie przepływów pracy starsza wersja](../workflow-designer/debugging-legacy-workflows.md)
+ [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)

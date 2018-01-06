@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f7499aba9d7458ca1bf834bb168a25c6a6ae9b5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8f9d26b727281c3443549bd38afce5d9da043334
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 Zdefiniuj elementy przybornika dla elementów, które chcesz zezwolić użytkownikom na wprowadzanie do ich modeli. Istnieją dwa rodzaje narzędzia: element narzędzia i połączenia. W Projektancie wygenerowanego użytkownika można wybrać elementu narzędzia przeciągnij kształtów na diagramie, a narzędzie połączenia, aby narysować łącza między kształtami można wybrać. Ogólnie rzecz biorąc narzędzia elementu zezwala użytkownikom na dodawanie wystąpienia klas domeny do ich modeli i narzędzia połączeń daj dodać wystąpienia relacji domeny.  
@@ -29,7 +30,7 @@ Zdefiniuj elementy przybornika dla elementów, które chcesz zezwolić użytkown
   
 -   [Sposób definiowania przybornika](#ToolboxDef)  
   
--   [Dostosowywanie narzędzia — Element](#customizing)  
+-   [Narzędzia dostosowywania elementów](#customizing)  
   
 -   [Tworzenie grup elementów za pomocą narzędzia](#groups)  
   

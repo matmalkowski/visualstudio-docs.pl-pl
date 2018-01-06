@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bad24eb3693988c8d4f51f347a8473856dd1d224
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migration-activity-designers"></a>Projektanci działań migracji
 Projektantów działań migracji są używane do wywoływania 3.0/3.5 działań przepływu pracy z obiektów docelowych przepływu pracy [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] projektantów działań.  
@@ -33,15 +34,15 @@ Projektantów działań migracji są używane do wywoływania 3.0/3.5 działań 
   
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
   
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)  
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
   
  [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   
- [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)  
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
   
- [Transakcji](../workflow-designer/transaction-activity-designers.md)  
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)  
   
  [Kolekcja](../workflow-designer/collection-activity-designers.md)  
   

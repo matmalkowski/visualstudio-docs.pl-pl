@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia formantów formularzy Windows w dokumentach pakietu Office
   Istnieją pewne różnice między formanty formularzy systemu Windows, które są dodawane do dokumentów pakietu Microsoft Office Word lub arkuszy programu Microsoft Office Excel i formanty formularzy systemu Windows, które są dodawane do formularzy systemu Windows. Na przykład podczas dodawania <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolować dokument, właściwości, takie jak <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, i <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> nie działają zgodnie z oczekiwaniami może.  
@@ -197,6 +198,6 @@ ms.lasthandoff: 10/31/2017
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Formanty formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Porady: dodawanie formantów do dokumentów pakietu Office formularzy systemu Windows](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)  
+ [Instrukcje: Dodawanie kontrolek Windows Forms do dokumentów pakietu Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 324d5e07ed2c1515036282abe12336f90225993f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu
   W tym przewodniku przedstawiono sposób tworzenia dodatku VSTO dla programu Microsoft Office Project. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które projekty są otwarte. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -138,6 +139,6 @@ ms.lasthandoff: 10/31/2017
  [Rozwiązania projektu](../vsto/project-solutions.md)   
  [Kompilowanie rozwiązań pakietu Office](../vsto/building-office-solutions.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   
- [Przegląd szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
+ [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)  
   
   

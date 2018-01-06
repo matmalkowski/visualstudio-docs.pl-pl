@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 344abe2cd271504f476b0464bb8d7b3065716b1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3ef581f46dd834a253e32ab169fc7d36c1c1514b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Porady: zmiana rozmiaru formantów NamedRange
   Można ustawić rozmiaru <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować po dodaniu go do dokumentu programu Microsoft Office Excel; jednak warto zmienić w późniejszym czasie.  
@@ -101,6 +102,6 @@ ms.lasthandoff: 10/31/2017
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Porady: zmiana rozmiaru formantów zakładki](../vsto/how-to-resize-bookmark-controls.md)   
- [Porady: zmiana rozmiaru formantów ListObject](../vsto/how-to-resize-listobject-controls.md)  
+ [Instrukcje: Zmiana rozmiaru kontrolek ListObject](../vsto/how-to-resize-listobject-controls.md)  
   
   

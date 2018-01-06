@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c6a47bae9923d68acc189c53766d5206244f97c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 251522a745ee7b8dc9894a403f09d1a6d3f32793
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-documents"></a>Porady: Programowane zapisywanie dokumentów
   Istnieje kilka sposobów, aby zapisać dokumenty programu Microsoft Office Word. Można zapisać dokumentu bez zmiany nazwy dokumentu lub można zapisać dokument pod nową nazwą.  
@@ -93,6 +94,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: programowane zamykanie dokumentów](../vsto/how-to-programmatically-close-documents.md)   
  [Porady: programowane otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Element hosta dokumentu](../vsto/document-host-item.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

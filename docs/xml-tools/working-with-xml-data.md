@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa74884edc5f0dea16d95fc5f177323da1fab6ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cf5c9d448d7e637344ee3dd5741871f5c177fdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-xml-data"></a>Praca z danych XML
 XML i jego technologii pokrewnych odtwarzania dużych roli w sposób obsługi danych w [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] programu Visual Studio. Visual Studio zawiera narzędzia i funkcje, które ułatwiają pracę z XML, XSLT i XML schematów.  
@@ -55,7 +56,7 @@ XML i jego technologii pokrewnych odtwarzania dużych roli w sposób obsługi da
  W tym artykule omówiono Projektant schematu XML i Praca ze schematami (XSD) języka definicji schematu XML.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Profilowanie XSLT](../xml-tools/debugging-xslt.md)  
+ [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)  
  W tym artykule omówiono sposób można debugować arkusze stylów, za pomocą debugera programu Visual Studio.  
   
  [Odwołanie XML standardów](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  

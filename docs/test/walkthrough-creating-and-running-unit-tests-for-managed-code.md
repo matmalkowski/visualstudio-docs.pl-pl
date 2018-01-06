@@ -17,11 +17,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: ebdac762d3dcc4079ed6e8247b394da685b1013a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Wskazówki: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu
 W tym przewodniku będzie kroku użytkownika przez proces tworzenia, uruchamiania i dostosowywania serii testów jednostkowych za pomocą frameworka testów jednostkowych Microsoft dla kodu zarządzanego i programu Visual Studio Explorer testu. Rozpoczynać się od projektu C#, który jest w fazie projektowania, Utwórz testy, które wykonuje jego kod, uruchom testy i przejrzeć wyniki. Następnie możesz zmienić kod projektu i ponownie uruchom testy.  
@@ -30,7 +31,7 @@ W tym przewodniku będzie kroku użytkownika przez proces tworzenia, uruchamiani
   
  [Przygotowanie przewodnika](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
   
- [Tworzenie projektu testu jednostki](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)  
+ [Tworzenie projektu testu jednostkowego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)  
   
  [Tworzenie klasy testowej](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
   

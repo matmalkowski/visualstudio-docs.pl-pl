@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
   Jeśli tworzysz COM VSTO lub VBA dodatków pakietu Office, należy przestrzegać zaleceń programowanie opisane w tym artykule.   Zapewni:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Złożoności wdrażania dodatków dla użytkowników i administratorów IT.
 -  Nie występują niezamierzone instalacji lub środowisko uruchomieniowe błędów dodatku.
 
->Uwaga: Przy użyciu [Mostek pulpitu](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) przygotować z modelu COM, VSTO lub VBA dodatku dla Sklepu Windows nie jest obsługiwany. Dodatki COM, VSTO i VBA nie mogą być dystrybuowane w magazynie systemu Windows lub pakietu Office. 
+>Uwaga: Przy użyciu [Mostek pulpitu](/windows/uwp/porting/desktop-to-uwp-root) przygotować z modelu COM, VSTO lub VBA dodatku dla Sklepu Windows nie jest obsługiwany. Dodatki COM, VSTO i VBA nie mogą być dystrybuowane w magazynie systemu Windows lub pakietu Office. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Nie sprawdzaj Office podczas instalacji  
  Nie zaleca się o dodatek wykrycia jest zainstalowane podczas instalacji dodatku pakietu Office. Jeśli nie zainstalowano pakietu Office, można zainstalować dodatek, a użytkownik będzie mógł uzyskać do niego dostęp, po zainstalowaniu pakietu Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Użyj osadzone typy międzyoperacyjne (NoPIA)  
-Jeśli rozwiązanie korzysta z programu .NET 4.0 lub nowszym, użyj osadzone typy współdziałania (NoPIA) zamiast w zależności od Office głównej Interop zestawy MIĘDZYOPERACYJNE pakietu redystrybucyjnego. Przy użyciu typu osadzanie zmniejsza rozmiar instalacji rozwiązania i zapewnia zgodności w przyszłości. Pakiet Office 2010 został ostatniej wersji pakietu Office, dostarczonej PIA do dystrybucji. Aby uzyskać więcej informacji, zobacz [wskazówki: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) i [równoważność typów i osadzone typy międzyoperacyjne](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Jeśli rozwiązanie korzysta z programu .NET 4.0 lub nowszym, użyj osadzone typy współdziałania (NoPIA) zamiast w zależności od Office głównej Interop zestawy MIĘDZYOPERACYJNE pakietu redystrybucyjnego. Przy użyciu typu osadzanie zmniejsza rozmiar instalacji rozwiązania i zapewnia zgodności w przyszłości. Pakiet Office 2010 został ostatniej wersji pakietu Office, dostarczonej PIA do dystrybucji. Aby uzyskać więcej informacji, zobacz [wskazówki: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) i [równoważność typów i osadzone typy międzyoperacyjne](/windows/uwp/porting/desktop-to-uwp-root).
 
 Jeśli rozwiązania korzystają z wcześniejszej wersji programu .NET, zaleca się zaktualizowanie rozwiązania do używania .NET 4.0 lub nowszy. Przy użyciu platformy .NET 4.0 lub nowszym zmniejsza wymagania wstępne dotyczące środowiska uruchomieniowego w nowszych wersjach systemu Windows.
   
@@ -66,4 +67,4 @@ Zapewnienie oświadczenia dotyczące pomocy technicznej dla aplikacji klienckich
 >Ważne: Firma Microsoft udostępnia listę obsługiwanych dodatków gotowości raportów, a informacje kontaktowe niezależnego dostawcy oprogramowania. Aby pobrać dodatek na liście, zobacz [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Przy użyciu procesu monitora debugować instalacji lub ładowania problemów
-Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub obciążenia, może być związana z problemów z dostępem do plików i rejestru. Użyj [Monitor procesu](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) lub podobnego narzędzia debugowania do logowania i porównania zachowania dla środowiska pracy, aby łatwiej zidentyfikować problem. 
+Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub obciążenia, może być związana z problemów z dostępem do plików i rejestru. Użyj [Monitor procesu](/sysinternals/downloads/procmon) lub podobnego narzędzia debugowania do logowania i porównania zachowania dla środowiska pracy, aby łatwiej zidentyfikować problem.

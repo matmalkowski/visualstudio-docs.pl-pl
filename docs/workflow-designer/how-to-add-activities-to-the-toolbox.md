@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 23e042a7ff34163872b3a932b105bc3b452023ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aff3172f5f01612923e72ad76f85205af0c31a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Porady: dodawanie działań do przybornika
 Można dodawać do **przybornika** w rozwiązaniu na kilka różnych sposobów. Możesz dodać je z w ramach bieżącego projektu, odwoływać je z innego projektu lub odwoływać je z innego zestawu.  
@@ -60,4 +61,4 @@ Można dodawać do **przybornika** w rozwiązaniu na kilka różnych sposobów. 
 6.  Niestandardowe działania zostanie wyświetlony w **przybornika** kategorii, który był aktywny przed element został dodany. Na przykład jeśli **ogólne** kategorii zostało wybrane w **przybornika** przed dodaniem elementu przybornika, działanie jest wyświetlane w obszarze **ogólne** kategorii.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Za pomocą projektanta przepływów pracy](../workflow-designer/using-the-workflow-designer.md)
+ [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)

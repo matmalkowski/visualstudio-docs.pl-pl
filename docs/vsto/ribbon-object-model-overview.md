@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>Model obiektu Wstążka ― Omówienie
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Udostępnia silnie typizowany obiekt modelu, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania. Na przykład możesz można dynamicznie wypełnianie formantów menu lub pokazać lub ukryć kontrolki kontekstowej. Na Wstążce, ale tylko w przypadku, przed załadowaniem wstążki według aplikacji pakietu Office, można dodać kart, grup i kontrolek. Aby uzyskać informacje, zobacz [ustawienie właściwości że stają się tylko do odczytu](#SettingReadOnlyProperties).  
@@ -53,13 +54,13 @@ ms.lasthandoff: 10/31/2017
 |**Pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Przycisk**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**Grupa przycisków**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
-|**Pole wyboru**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
-|**Pola kombi ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
+|**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
+|**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**Lista rozwijana**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**Pole edycji**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galerii**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Grupy**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**Etykiety**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
+|**Etykieta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**Przycisk podziału**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
@@ -198,6 +199,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
  [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Porady: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Instrukcje: Pokazywanie błędów dodatków interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

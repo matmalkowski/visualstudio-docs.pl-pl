@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f15eea2c0f1e7e62990d860007a7efc4966cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9cbb87017b910accae5ebc63b648691c50f88476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>Korzystanie z formantów WPF w rozwiązaniach pakietu Office
   Mimo że rozwiązania utworzone przy użyciu narzędzi programowania pakietu Office w Visual Studio zostały zaprojektowane do pracy z bezpośrednio z formanty formularzy systemu Windows, umożliwia także formantów WPF w ramach rozwiązań. Windows Presentation Foundation (WPF) stanowi alternatywę do formularzy systemu Windows dla projektowanie interfejsów użytkownika. WPF używa język o nazwie Extensible Application Markup Language (XAML), aby zapewnić nowe techniki do włączania interfejsu użytkownika, nośniki i dokumenty. Aby uzyskać więcej informacji, zobacz [wprowadzenie do platformy WPF w programie Visual Studio 2015](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs).  
@@ -99,21 +100,21 @@ ms.lasthandoff: 10/31/2017
 ## <a name="wpf-resources"></a>Zasoby WPF  
  Aby uzyskać więcej informacji na temat architektury i zagadnienia dotyczące projektowania, hostingu formantów WPF w formularzach i formanty formularzy systemu Windows zobacz następujące tematy:  
   
--   [Architektura wejściowych współdziałanie WPF i formularze systemu Windows](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)  
+-   [Architektura danych wejściowych współdziałania dla Windows Forms i WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)  
   
--   [Mapowanie właściwości WPF i formularze systemu Windows](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)  
+-   [Mapowanie właściwości Windows Forms i WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)  
   
--   [WPF i współdziałanie formularzy systemu Windows](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)  
+-   [Współdziałanie WPF i Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)  
   
--   [Formanty i równoważne WPF formularzy systemu Windows](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)  
+-   [Kontrolki formularzy Windows Forms i równoważne kontrolki WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)  
   
  Aby uzyskać więcej informacji na temat dodawania formantów WPF formanty formularzy systemu Windows i formularzy w programie Visual Studio w czasie projektowania zobacz następujące tematy:  
   
--   [Wskazówki: Tworzenie nowej zawartości WPF na formularzach systemu Windows w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)  
+-   [Przewodnik: tworzenie nowej zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)  
   
--   [Wskazówki: Rozmieszczanie zawartości WPF na formularzach systemu Windows w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)  
+-   [Przewodnik: rozmieszczanie zawartości WPF na formularzach Windows Forms w czasie projektowania](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)  
   
--   [Wskazówki: Nadawanie stylu zawartości WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
+-   [Przewodnik: nadawanie stylu zawartości WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
@@ -124,6 +125,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Porady: dodawanie regionu formularza na projekt dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)  
+ [Instrukcje: Dodawanie regionu formularza do projektu dodatków w programie Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97776e667333d00ecbd10feeb12620b16f2d3ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6397f6e90423640697aa57d7fdf2a1c85303d0f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Porady: Programowane wyszukiwanie w określonym folderze
   W tym przykładzie kodu używane `Find` i `FindNext` metody do wyszukiwania tekstu w polu podmiotu wiadomości e-mail, w której znajdują się **skrzynki odbiorczej**. Ta metoda używa filtru ciąg do wyszukania litera T jako początkowa litera `Subject` tekstu.  
@@ -33,6 +34,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z folderami](../vsto/working-with-folders.md)   
  [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)   
- [Porady: programowane pobieranie folderu na podstawie nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
+ [Instrukcje: Programowe pobieranie folderu na podstawie nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
   
   

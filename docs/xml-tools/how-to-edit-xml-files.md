@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda89cc132ecd496605c19194c0221de503f4469
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8720fe94797e212cb332368572b291ce7fb40a26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-xml-files"></a>Porady: edytowanie plików XML
 Edytor XML jest nowy edytora plików XML. Może służyć autonomiczny plik XML lub pliku skojarzone z projektu programu Visual Studio. Edytor XML jest skojarzony z następujących rozszerzeń: .config, .dtd .xml, XSD, .xdr, XSL, .xslt i .vssettings. Edytor XML jest także powiązany z innego typu pliku mający nie Edytor zarejestrowany i zawiera zawartość XML lub definicji DTD.  
@@ -71,4 +72,4 @@ Edytor XML jest nowy edytora plików XML. Może służyć autonomiczny plik XML 
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)   
  [Właściwości dokumentu XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md)   
- [Porady: tworzenie schematu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+ [Instrukcje: Tworzenie schematu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

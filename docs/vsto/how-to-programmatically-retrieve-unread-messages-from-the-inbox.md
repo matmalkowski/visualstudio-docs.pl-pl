@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01b82a31e0010c3998d1712d8ab004603893bbe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 00d91f47b33a36e95a82f8b483483ed4da733db8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Porady: Programowane pobieranie nieprzeczytanych wiadomości ze skrzynki odbiorczej
   W tym przykładzie pobierana nieprzeczytanych wiadomości e-mail z programu Outlook **skrzynki odbiorczej** i wyświetla liczbę elementów.  
@@ -40,6 +41,6 @@ ms.lasthandoff: 10/31/2017
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Porady: programowane Tworzenie elementu poczty E-Mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [Porady: programowane wysyłanie wiadomości E-Mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Porady: programowane wykonywanie akcji po odebraniu wiadomości E-Mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Instrukcje: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

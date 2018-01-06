@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 89189feb32d84db8fb5c5eb7970faf325be1acd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d634f9648ed87f448e1b984392c827badc42930c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Porady: Ustawianie punktów przerwania w przepływach pracy (starsze)
 W tym temacie opisano, jak można ustawić punktów przerwania w [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] tworzenie aplikacji za pomocą starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] gdy Twoje [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] aplikacja musi docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -65,4 +66,4 @@ W tym temacie opisano, jak można ustawić punktów przerwania w [!INCLUDE[wf](.
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie przepływów pracy starsza wersja](../workflow-designer/debugging-legacy-workflows.md)   
- [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+ [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

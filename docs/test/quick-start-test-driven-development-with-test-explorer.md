@@ -11,11 +11,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c52ce6556ae8937dd26c1be16cfaf1a4b05b1c74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4344c844c47568c3c23744a890c202493704b6a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działanie wielu przyrostowe kroki tworzenia kodu. Istnieje kilka struktur, co umożliwia pisanie testów jednostkowych, w tym również opracowane przez strony trzecie. Niektóre platform testów są przeznaczone do testowania w różnych językach lub platform. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w żadnym z tych platform. Karty są dostępne dla struktur najbardziej często używane, a może zapisywać karty dla innych platform.  

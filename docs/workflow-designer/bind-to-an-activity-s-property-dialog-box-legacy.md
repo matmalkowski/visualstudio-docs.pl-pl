@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ffb172b551018ae7352edb7dd9fed44824a794ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ed372e54e0e40d06dbd1ecf818f507c1a425ad03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Wiązanie z działania &#39; s właściwości — okno dialogowe (starsze)
 W tym temacie opisano sposób użycia **powiązać z właściwością działania** okno dialogowe w starszych [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -36,4 +37,4 @@ W tym temacie opisano sposób użycia **powiązać z właściwością działania
 ## <a name="see-also"></a>Zobacz też  
  [Za pomocą właściwości działania](http://go.microsoft.com/fwlink?LinkID=65013)   
  [Za pomocą właściwości zależności](http://go.microsoft.com/fwlink?LinkID=65007)   
- [Projektant starszych pomocy systemu Windows Workflow Foundation interfejsu użytkownika](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

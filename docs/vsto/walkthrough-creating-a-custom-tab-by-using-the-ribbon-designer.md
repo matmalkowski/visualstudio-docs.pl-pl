@@ -22,11 +22,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 811e4eff77780bda2b348c26bb220a29d5fd1731
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5503bed26a5e2657bb499a7a25098c373e149e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Wskazówki: tworzenie kart niestandardowych za pomocą Projektanta wstążki
   Za pomocą projektanta wstążki, można tworzenie kart niestandardowych, a następnie dodaj i ustawianie formantów na nim.  
@@ -171,6 +172,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: zmiana położenia zakładki na Wstążce](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
  [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md)  
+ [Model obiektu Wstążka — omówienie](../vsto/ribbon-object-model-overview.md)  
   
   

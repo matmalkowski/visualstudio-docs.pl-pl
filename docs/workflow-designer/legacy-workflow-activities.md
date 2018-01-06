@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8a5c35fb036c1d9a94bd42c5ceabe17ae65e7b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 756fa86cf892120b0062e2816f146425ac1b4fa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-workflow-activities"></a>Działania przepływu pracy w starszej wersji
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]zawiera zestaw domyślne działania udostępniające funkcje dla przepływu sterowania, warunki obsługi zdarzeń, zarządzanie stanem i komunikacji z aplikacjami i usługami. Podczas projektowania przepływów pracy, można użyć działania dostarczane przez system, które są udostępniane przez [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], lub utworzyć własne niestandardowe działania.  
@@ -69,16 +70,16 @@ ms.lasthandoff: 10/27/2017
  [!INCLUDE[crabout](../test/includes/crabout_md.md)]sposób tworzenia działań niestandardowych, zobacz [tworzenia działań niestandardowych](http://go.microsoft.com/fwlink?LinkID=65023) i [przy użyciu narzędzia Projektant działań starszych](../workflow-designer/using-the-legacy-activity-designer.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Widoki działania (starsze)](../workflow-designer/activity-views-legacy.md)  
+ [Widoki działania (starsza wersja)](../workflow-designer/activity-views-legacy.md)  
  Zawiera opis widoków projektu różnych działań.  
   
- [Porady: dodawanie działań do przybornika (starsze)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
+ [Instrukcje: Dodawanie działań do przybornika (starsza wersja)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
  Przedstawiono sposób dodawania działań do przybornika.  
   
- [Porady: tworzenie warunku reguły deklaratywne (starsze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
+ [Instrukcje: Tworzenie warunku reguły deklaratywnej (starsza wersja)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
  Przedstawia kroki, aby utworzyć warunek reguły deklaratywne.  
   
- [Porady: Tworzenie zestawu reguł działania PolicyActivity (starsze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
+ [Instrukcje: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Przedstawia kroki, aby utworzyć zestaw reguł działania PolicyActivity.  
   
  [Porady: Implementowanie operacja kontraktu usługi WCF (starsze)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  

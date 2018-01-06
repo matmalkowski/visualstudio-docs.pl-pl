@@ -13,11 +13,12 @@ caps.latest.revision: "35"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a306f7cda287e41efc0cb59cf5a75c7111d32c39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bec7bd5420c16d291db2566e86dd47ba986cca37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 Elementy programu MSBuild są dane wejściowe w systemie kompilacji i zwykle odpowiadają pliki. Elementy są pogrupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listę elementów, które mogą być używane jako parametry dla zadania. Zadań użyj wartości elementu, aby wykonać kroki procesu kompilacji.  
@@ -361,4 +362,4 @@ Output:
  [Porady: wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definicje elementów](../msbuild/item-definitions.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
- [Item — Element (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Item, element (MSBuild)](../msbuild/item-element-msbuild.md)

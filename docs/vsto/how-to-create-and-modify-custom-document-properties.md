@@ -19,11 +19,12 @@ caps.latest.revision: "47"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78cf27b7d58e85217c770abee1dc6a4151cc1eb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ab68f9bd5c6a6bc1176fc211b99ad1de777ca38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu.
   Aplikacje Microsoft Office wymienionych powyżej Podaj wbudowanych właściwości, które są przechowywane z dokumentami. Ponadto można tworzyć i modyfikować niestandardowe właściwości dokumentu, jeśli ma dodatkowych informacji, które mają być przechowywane w dokumencie.  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Porady: Odczyt z oraz zapisywanie właściwości dokumentów](../vsto/how-to-read-from-and-write-to-document-properties.md)  
+ [Instrukcje: Odczytywanie i zapisywanie właściwości dokumentów](../vsto/how-to-read-from-and-write-to-document-properties.md)  
   
   

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2253eb414e58d5168cf6e1d2f4c22880d18d1bd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d15236de90af6a8749482f2b159d66c28a1b8c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-legacy-workflows"></a>Debugowanie przepływów pracy starsza wersja
 Jeśli używasz starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] w [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] do tworzenia [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji czy target.NET Framework 3.0 lub 3.5 może debugować przepływy pracy, takich jak inny program Ustawianie punktów przerwania, dołączanie do procesów i wątków badanie i stos wywołań. Istnieje również możliwość debugowania zdalnego.  
@@ -59,16 +60,16 @@ Jeśli używasz starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.
 -   Debugowanie w trybie mieszanym.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
+ [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
- [Wyłączenie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
+ [Wyłączanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
- [Porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsze)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
+ [Instrukcje: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
   
- [Porady: Ustawianie punktów przerwania w przepływach pracy (starsze)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
+ [Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
   
- [Debugowanie przepływów pracy na komputerze zdalnym (starsze)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
+ [Debugowanie przepływów pracy ze zdalnego komputera (starsza wersja)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
   
- [Debugowanie wykonywania krokowego opcje (starsze)](../workflow-designer/debug-stepping-options-legacy.md)  
+ [Opcje debugowania wykonywania krokowego (starsza wersja)](../workflow-designer/debug-stepping-options-legacy.md)  
   
- [Porady: Zmień opcję krokowe wykonywanie debugowania (starsze)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Instrukcje: Opcja zmiany debugowania krokowego (starsza wersja)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 70c956981c9e211d16d39ac22f759b6a21e0bc5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 66b9c93c9a1c4bcf55b4efc5e95d5b6353f9bd68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Przewodnik: Wywoływanie kodu w dodatku VSTO z kodu VBA
   W tym przewodniku pokazano, jak udostępnianie obiektu w dodatku VSTO do innych rozwiązań Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatków COM VSTO.  
@@ -160,6 +161,6 @@ ms.lasthandoff: 10/31/2017
  [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Dostosowywanie funkcji interfejsu użytkownika korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
+ [Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

@@ -26,11 +26,12 @@ caps.latest.revision: "88"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 236bd457f478d21ed27d31b0a28871e1102a1547
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: db8c6e3363cf1a67dfef5f3dd606dd65ed6f7a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Tworzenie aplikacji pakietu Office i programu SharePoint w programie Visual Studio
   Można rozszerzać przez tworzenie lekkie aplikacji Microsoft Office i programu SharePoint lub dodatek czy użytkownicy mogą pobierać z [sklep Office](https://store.office.com/) lub organizacji w katalogu lub tworząc przez użytkowników rozwiązanie oparte na programie .NET Framework należy zainstalować na komputer.  
@@ -117,6 +118,6 @@ ms.lasthandoff: 10/31/2017
 |Do|Zobacz|  
 |--------|---------|  
 |Porównanie rozwiązań programu SharePoint z dodatków programu SharePoint.|[SharePoint dodatków w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Tworzenie rozwiązań programu SharePoint.|[Tworzenie rozwiązań programu SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
+|Tworzenie rozwiązań programu SharePoint.|[Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
   
   

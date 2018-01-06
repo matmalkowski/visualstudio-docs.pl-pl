@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c8cd4fac7cd6f498716b3611c1b37e1afdc600
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 17b234a774914e998c228dc780b645864420658d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Porady: tworzenie typu zerowalnego (Projektant klas)
 Niektórych typów wartości nie zawsze mieć lub muszą zdefiniowanej wartości. Jest typowym rozwiązaniem w przypadku baz danych, gdy niektóre pola nie można przypisać wartości. Na przykład można przypisać wartości null na wskazują, że jej nie został jeszcze przypisany wartość pole bazy danych.  

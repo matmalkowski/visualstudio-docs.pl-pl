@@ -21,11 +21,12 @@ caps.latest.revision: "105"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8189032a38aba69b63cb96f824c973b0d41a1aad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Uaktualnianie i migracja rozwiązań pakietu Office
   Jeśli masz program Microsoft Office project, który został utworzony we wcześniejszej wersji programu Visual Studio, należy uaktualnić projekt, aby użyć go w bieżącej wersji programu Visual Studio. Aby uaktualnić program Microsoft Office project, otwórz go w wersji programu Visual Studio, który zawiera narzędzia Microsoft Office developer tools. Aby uzyskać więcej informacji o wersjach programu Visual Studio, które obejmują narzędzia Microsoft Office developer tools, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Aktualizacja rozwiązań pakietu Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)   
  [Migracja rozwiązań pakietu Office do programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [Uaktualnianie projektów, opcje — Okno dialogowe](../vsto/project-upgrade-options-dialog-box.md)  
+ [Uaktualnianie projektu, opcje — okno dialogowe](../vsto/project-upgrade-options-dialog-box.md)  
   
   

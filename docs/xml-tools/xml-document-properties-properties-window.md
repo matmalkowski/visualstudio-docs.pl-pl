@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24f3760fb328331684e6894954d79675ff27494e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ceabc30399871c7bbe7fef737e7ecbd87187257d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, okno właściwości
 **Właściwości** okna zawiera podstawowe informacje o dokument, który jest aktywny w edytorze XML. Właściwości, które są dostępne różne w zależności od typu dokumentu XML, który jest obecnie aktywny.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  Ta właściwość jest widoczny tylko wtedy, gdy plik XSLT jest aktualnie aktywne w oknie edytora.  
   
- **Dane wyjściowe**  
+ **Output**  
  Plik, który jest generowany, gdy Przekształcanie dokumentu XML.  
   
  Jeśli plik nie zostanie określony, domyślna nazwa pliku jest generowany na podstawie `method` atrybutu `xsl:output` element, który określa rozszerzenie pliku. Domyślny plik znajduje się w katalogu tymczasowym bieżącego użytkownika.  

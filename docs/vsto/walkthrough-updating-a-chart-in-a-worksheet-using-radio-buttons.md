@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Wskazówki: aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym przewodniku przedstawiono podstawy zapewniają sposób szybkie przełączanie opcji użytkownika, za pomocą przycisków radiowych w arkuszu programu Microsoft Office Excel. W takim przypadku opcji Zmień styl wykresu.  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**dataChart**|  
-    |**HasLegend**|**wartość false**|  
+    |**HasLegend**|**false**|  
   
 ## <a name="adding-controls"></a>Dodawanie formantów  
  Tego arkusza używa przycisków radiowych umożliwić użytkownikom można szybko zmienić styl wykresu. Jednak przycisków radiowych muszą być wyłącznego — po wybraniu jednego przycisku żaden inny przycisk w grupie można wybrać w tym samym czasie. To zachowanie nie odbywa się domyślnie, po dodaniu kilka przycisków radiowych do arkusza.  
@@ -254,6 +255,6 @@ ms.lasthandoff: 10/31/2017
 -   Zmiana formatowania arkusza za pomocą pola wyboru. Aby uzyskać więcej informacji, zobacz [wskazówki: zmiana arkusza formatowania za pomocą formantów CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)  
+ [Przewodniki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)  
   
   

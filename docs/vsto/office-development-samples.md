@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e050bb2a946a03e8ccf854134d46af9001dbd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples"></a>Office Development ― Przykłady
   Visual Studio zawiera przykładowe aplikacje, które pokazują, jak używać narzędzia Microsoft Office developer tools do tworzenia rozwiązań pakietu Office. Te przykłady kodu ilustruje składnię, struktury i techniki używany do tworzenia rozwiązań pakietu Office.  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Przykłady deweloperów MSDN: Informacje za pomocą przykłady kodu](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
+ [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
   
   

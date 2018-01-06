@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98b0eefafa86fdaf8f7a664ac75a2f7c71a43549
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 39a0ebee37c57630649f680d14aa8fef22833225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-send-e-mail"></a>Porady: programowane wysyłanie wiadomości E-Mail  
   W tym przykładzie wysyła wiadomość e-mail do kontaktów, które mają nazwy domeny **example.com** w ich adresów e-mail.  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
  [Praca z elementami poczty](../vsto/working-with-mail-items.md)   
  [Porady: programowane Tworzenie elementu poczty E-Mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [Porady: programowane dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Porady: programowane wykonywanie akcji po odebraniu wiadomości E-Mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Instrukcje: Programowe wykonywanie akcji po otrzymaniu wiadomości e-mail](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

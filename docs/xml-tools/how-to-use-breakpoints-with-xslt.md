@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c077cab7bf02023d0bfb1714940f98020600477
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1407d34bc833c5c8a911adc87c8fa7cfec933256
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Porady: Użyj punktów przerwania z XSLT
 Można ustawić punktów przerwania, w arkuszu stylów XSLT lub w dokumencie źródłowym XML. Jeśli ustawisz punkt przerwania w tagu, gdy rozpoczyna się wykonywanie punkt przerwania zostanie przeniesione do następna instrukcja, która ma informacji o wierszu źródłowym.  
@@ -58,4 +59,4 @@ Można ustawić punktów przerwania, w arkuszu stylów XSLT lub w dokumencie źr
 5.  Kliknij przycisk **debugowania XSL** przycisk na pasku narzędzi edytora XML.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Debugowanie arkusz stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+ [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

@@ -12,11 +12,12 @@ ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 17113215615ff87ef0af611a5bc2061ca0126911
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: da80adbf7df01d18ada256f6d419cb015c34369a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do przeprowadzania testów jednostkowych
 
@@ -91,21 +92,21 @@ Aby uzyskać więcej informacji, zobacz [Live testów jednostkowych programu Vis
 <a name="intellitest"></a>
 ## <a name="generate-unit-tests-with-intellitest"></a>Generowanie testów jednostkowych z IntelliTest
 
-Po uruchomieniu IntelliTest, można łatwo Zobacz które testy kończą się niepowodzeniem i Dodaj wszelkie niezbędne kod, aby je naprawić. Można wybrać, które wygenerowane testy do zapisania do projektu testowego, aby zapewnić mechanizm regresji. Jak zmienić swój kod, należy ponownie uruchomić IntelliTest, aby zachować synchronizację ze zmianami kodu wygenerowane testy. Aby dowiedzieć się więcej, zobacz temat [Generowanie testów jednostek dla kodu za pomocą IntelliTest](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest).
+Po uruchomieniu IntelliTest, można łatwo Zobacz które testy kończą się niepowodzeniem i Dodaj wszelkie niezbędne kod, aby je naprawić. Można wybrać, które wygenerowane testy do zapisania do projektu testowego, aby zapewnić mechanizm regresji. Jak zmienić swój kod, należy ponownie uruchomić IntelliTest, aby zachować synchronizację ze zmianami kodu wygenerowane testy. Aby dowiedzieć się więcej, zobacz temat [Generowanie testów jednostek dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 ![Generowanie testów jednostkowych z IntelliTest](media/intellitest.png)
 
 <a name="unit-tests"></a>
 ## <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
-Użyj Eksploratora testów do uruchamiania testów jednostkowych programu Visual Studio lub projektów testów jednostkowych innych firm, grupowanie testów w kategorii, filtrowanie listy testów i tworzenia, zapisywania i uruchom listy odtwarzania testów. Można również Debuguj testy i Analizuj pokrycie testu wydajności i kod. Aby dowiedzieć się więcej, zobacz temat [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer).
+Użyj Eksploratora testów do uruchamiania testów jednostkowych programu Visual Studio lub projektów testów jednostkowych innych firm, grupowanie testów w kategorii, filtrowanie listy testów i tworzenia, zapisywania i uruchom listy odtwarzania testów. Można również Debuguj testy i Analizuj pokrycie testu wydajności i kod. Aby dowiedzieć się więcej, zobacz temat [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md).
 
 ![Uruchamianie testów jednostkowych z Eksploratora testów](media/testexplorer.png)
 
 <a name="code-coverage"></a>
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Użyj pokrycie kodu, aby określić, ile kodu jest poddawana testom
 
-Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu. Aby dowiedzieć się więcej, zobacz temat [pokrycia kodu używany do określenia, jaka część kodu jest poddawana testom](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu. Aby dowiedzieć się więcej, zobacz temat [pokrycia kodu używany do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ![Aby określić, ile kodu jest poddawana testom korzystanie z pokrycia kodu](media/codecoverage.png)
 
@@ -164,7 +165,7 @@ Odpowiedź: tak, użyj wtyczki dla tej platformy, że Visual Studio test runner 
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Utwórz polecenie testy jednostkowe](create-unit-tests-menu.md)
+* [Polecenie Utwórz testy jednostkowe](create-unit-tests-menu.md)
 * [Generowanie testów z IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Uruchamianie testów za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md)
 * [Określić pokrycie kodu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>XML — Wstążka
   Element wstążki (XML) można dostosować za pomocą XML wstążki. Jeśli chcesz dostosować na Wstążce w taki sposób, który nie jest obsługiwany przez element wstążki (projektanta wizualnego), należy użyć elementu wstążki (XML). Porównanie co można zrobić z każdym elementem, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|Określa metodę, która jest wywoływana podczas ładowania aplikacji wstążki.|  
 |**idMso**|**Karta**|Identyfikuje wbudowanej karty do wyświetlenia na Wstążce.|  
-|**Identyfikator**|**grupy**|Identyfikuje grupę.|  
+|**id**|**grupy**|Identyfikuje grupę.|  
 |**etykiety**|**grupy**|Określa tekst wyświetlany w grupie.|  
   
  Domyślne elementy i atrybuty w pliku XML wstążki to mały podzbiór elementów i atrybutów, które są dostępne. Aby uzyskać pełną listę dostępnych elementów i atrybutów, zobacz artykuł techniczne [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 2 z 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|`GetCustomUI`|Zwraca zawartość pliku XML wstążki. Aplikacje Microsoft Office wywołują tę metodę w celu uzyskania ciągu XML, który definiuje interfejs użytkownika programu niestandardowa Wstążka. Ta metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Uwaga:** `GetCustomUI` powinny być implementowane tylko do zwrócenia zawartości pliku XML wstążki; nie można stosować zainicjować dodatku VSTO programu.   W szczególności nie należy wyświetlić okno dialogowe lub innych okien w Twojej `GetCustomUI` implementacji. W przeciwnym razie wartość niestandardowa Wstążka może nie działać poprawnie. Jeśli masz do uruchomienia kodu, który inicjuje użytkownika dodatku VSTO Dodaj kod, aby `ThisAddIn_Startup` obsługi zdarzeń.|  
+|`GetCustomUI`|Zwraca zawartość pliku XML wstążki. Aplikacje Microsoft Office wywołują tę metodę w celu uzyskania ciągu XML, który definiuje interfejs użytkownika programu niestandardowa Wstążka. Ta metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Uwaga:** `GetCustomUI` powinny być implementowane tylko do zwrócenia zawartości pliku XML wstążki; nie można stosować zainicjować dodatku VSTO programu. W szczególności nie należy wyświetlić okno dialogowe lub innych okien w Twojej `GetCustomUI` implementacji. W przeciwnym razie wartość niestandardowa Wstążka może nie działać poprawnie. Jeśli masz do uruchomienia kodu, który inicjuje użytkownika dodatku VSTO Dodaj kod, aby `ThisAddIn_Startup` obsługi zdarzeń.|  
 |`OnLoad`|Przypisuje <xref:Microsoft.Office.Core.IRibbonControl> parametr `ribbon` pola. Aplikacje Microsoft Office wywołać tę metodę, gdy są ładowane niestandardowa Wstążka. To pole umożliwia dynamiczne aktualizowanie niestandardowa Wstążka. Aby uzyskać więcej informacji, zobacz artykuł techniczny [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 1 z 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Wywoływane przez `GetCustomUI` metodę, aby uzyskać zawartość pliku XML wstążki.|  
   

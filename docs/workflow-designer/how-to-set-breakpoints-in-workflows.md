@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a5565a5f53506ee61cc40cdd09ab4719bef0742b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c9a3124ddefc892207ccc821b80056baab14166
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Porady: Ustawianie punktów przerwania w przepływach pracy
 Jeśli używasz [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], ustaw punkty przerwania w graficznym przepływy pracy w sposób jak w kodzie języka Visual Basic lub C#. Zgodnie z oczekiwaniami, w każdym punkcie przerwania ustawionych powoduje zatrzymanie wykonywania przepływu pracy.  
@@ -42,4 +43,4 @@ Jeśli używasz [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], usta
 ## <a name="see-also"></a>Zobacz też  
  [Porady: wywoływanie Debugger przepływu pracy](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [Debugowanie przepływów pracy za pomocą projektanta przepływów pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Porady: debugowanie XAML z projektanta przepływów pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Instrukcje: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

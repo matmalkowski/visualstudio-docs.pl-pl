@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506a74699ba9f3cf059feb34b16d69af0150895a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb69f11081015960cd79d54fb90893a9202c9bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="current-tab"></a>Aktualna karta
 Klikając **bieżącego** karcie, można wyświetlić stosu wywołań (jeśli jest dostępny) to najbardziej zbliżony do bieżącego punktu zaznaczenie na osi czasu Jeśli segment wątku procesora CPU jest zaznaczony.  W takim przypadku punkt wyboru jest reprezentowana przez czarną strzałkę lub karetkę powyżej osi czasu. Po wybraniu segment blokujący karetkę nie jest wyświetlana, ponieważ nie było żadnych wykonywania. Jednak nadal jest podświetlona segmentu i zostanie wyświetlony stos wywołań.  

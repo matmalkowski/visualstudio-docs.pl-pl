@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ac184805803e92758e1de93400c957d00e8ebda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b891f2af72de34c2ccd71043f2674c338ddb44f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukaj i wybierz typ .NET okno dialogowe
 W **właściwości** projektantów, takich jak projektanta zmiennych, po wybraniu okna, okien dialogowych lub **Przeglądaj w poszukiwaniu typów...**  z listy typów danych, jest **Wyszukaj i wybierz typ .NET** okno dialogowe (określone w formie skróconej jako "typ przeglądarki"). W tym oknie można wybrać typ z widoku drzewa, zespołów i projektów.  
@@ -72,4 +73,4 @@ W **właściwości** projektantów, takich jak projektanta zmiennych, po wybrani
  Wybierając typ kontraktu usługi, typ przeglądarki wyświetlane są tylko typy, które mają <xref:System.ServiceModel.ServiceContractAttribute> atrybutu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)

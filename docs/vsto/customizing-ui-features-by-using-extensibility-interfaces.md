@@ -25,11 +25,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d773ac7a4c3fa8541af30143a3d3031377b5b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7b0808c62b5538e7b4ae50b7992c9b65750169f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika korzystając z rozszerzalności interfejsów
   Narzędzia Office development w Visual Studio Podaj klas i projektantów, które obsługują wiele szczegóły implementacji używanych do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionów formularzy programu Outlook w dodatku VSTO. Jednak można też wdrożyć *rozszerzalności interfejsu* dla każdej funkcji samodzielnie, jeśli mają szczególne wymagania.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 |Interface|Opis|Aplikacje|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementuje ten interfejs do dostosowywania wstążki interfejsu użytkownika. **Uwaga:** można dodać **wstążki (XML)** elementu do projektu, aby wygenerować domyślną <xref:Microsoft.Office.Core.IRibbonExtensibility> implementacja użytkownika dodatku VSTO. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementuje ten interfejs do dostosowywania wstążki interfejsu użytkownika. **Uwaga:** można dodać **wstążki (XML)** elementu do projektu, aby wygenerować domyślną <xref:Microsoft.Office.Core.IRibbonExtensibility> implementacja użytkownika dodatku VSTO. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implementuje ten interfejs do tworzenia niestandardowego okienka zadań.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implementuje ten interfejs do tworzenia regionów formularzy programu Outlook.|Outlook|  
   

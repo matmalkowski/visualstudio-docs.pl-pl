@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f831aa683efdacc8a01ffbf5ef5a280c1a95f9e3
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
 
@@ -34,7 +35,7 @@ Aby rozpocząć:
 | Funkcja | Opis | Dokumentacja ogólna Visual Studio | 
 | --- | --- | --- |
 | [Program Visual Studio system projektu](python-projects.md) | Niejawnie wybiera się strukturę folderów kodu Python, umożliwiając jawne formantu do identyfikacji kodu aplikacji, kodu testowego stron sieci web, JavaScript, tworzenia skryptów, itp. | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Szablony projektu](python-projects.md#project-templates) | Szybko tworzy struktury projektu dla konsoli sieci web, Azure, analizy danych i innych typów projektów | [Szablony Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
+| [Szablony projektu](python-projects.md#project-templates) | Szybko tworzy struktury projektu dla konsoli sieci web, Azure, analizy danych i innych typów projektów | [Szablony programu Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Obsługa wielu interpretera | Obsługuje różne wersje języka CPython i IronPython. | n/d |
 | Obsługa IPython | Obsługuje IPython/Jupyter w REPL dla powierzchni wbudowany, .NET i Windows Presentation Foundation (WPF). | n/d |
 | [Edytowanie sformatowanego, IntelliSense i zrozumienia kodu](code-editing.md) | Obejmuje kolorowania składni, funkcja automatycznego uzupełniania kodu i bibliotek, [kod formatowania](code-formatting.md), pomocy podpisu, Widok klas, przejdź do definicji, Znajdź wszystkie odwołania, fragmentów kodu [refaktoryzacji](code-refactoring.md), [ PyLint](code-pylint.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
@@ -54,7 +55,7 @@ Wprowadzenie wideo, zobacz krótkim [narzędzi Python Tools for Visual Studio](h
 
 **Q. Jest dostępna w programie Visual Studio for Mac obsługę języka Python?**
 
-. Nie w tej chwili, mimo że żądanie na [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Programu Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac/) dokumentacji identyfikuje bieżące typy programowanie, który go obsługuje. W międzyczasie, Visual Studio Code w systemie Windows, Mac i Linux [działa prawidłowo w przypadku języka Python za pomocą dostępnych rozszerzeń](https://code.visualstudio.com/docs/languages/python).
+. Nie w tej chwili, mimo że żądanie na [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Programu Visual Studio for Mac](/visualstudio/mac/) dokumentacji identyfikuje bieżące typy programowanie, który go obsługuje. W międzyczasie, Visual Studio Code w systemie Windows, Mac i Linux [działa prawidłowo w przypadku języka Python za pomocą dostępnych rozszerzeń](https://code.visualstudio.com/docs/languages/python).
 
 **Q. Co mogą wykorzystać do tworzenia interfejsu użytkownika z języka Python?**
 

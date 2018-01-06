@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f83c2055ce8e8872b32bb7e7ab735a04bffcd553
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcaa711d1241056eff486e0984cf9326555b9eb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workflow-designer-ui-help"></a>Pomocy interfejsu użytkownika projektanta przepływów pracy
 Ta sekcja zawiera tematy pomocy kontekstowej [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Podczas pracy w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], są dostępne w tych tematach interfejsu użytkownika, naciskając klawisz **F1** podczas [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] jest otwarte okno dialogowe.  
@@ -26,23 +27,23 @@ Ta sekcja zawiera tematy pomocy kontekstowej [!INCLUDE[wfd1](../workflow-designe
  Ta sekcja zawiera również kilka tematów związanych z nawigacji i komunikaty o błędach.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wyszukaj i wybierz typ .NET okno dialogowe](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
+ [Wyszukiwanie i wybieranie typu .NET, okno dialogowe](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
   
- [Okno dialogowe definicji CorrelatesOn](../workflow-designer/correlateson-definition-dialog-box.md)  
+ [Definiowanie CorrelatesOn, okno dialogowe](../workflow-designer/correlateson-definition-dialog-box.md)  
   
- [Okno dialogowe właściwości CorrelationInitializers Dodawanie](../workflow-designer/add-correlationinitializers-dialog-box.md)  
+ [Dodawanie CorrelationInitializers, okno dialogowe](../workflow-designer/add-correlationinitializers-dialog-box.md)  
   
- [Dodaj parametry i Dodaj argumenty okien dialogowych](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)  
+ [Okna dialogowe Dodawanie parametrów i Dodawanie argumentów](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)  
   
- [Okno dialogowe Edytor kolekcji typów](../workflow-designer/type-collection-editor-dialog-box.md)  
+ [Edytor kolekcji typów, okno dialogowe](../workflow-designer/type-collection-editor-dialog-box.md)  
   
- [Okno dialogowe definicję zawartości](../workflow-designer/content-definition-dialog-box.md)  
+ [Definiowanie zawartości, okno dialogowe](../workflow-designer/content-definition-dialog-box.md)  
   
- [Inicjowanie korelacji — okno dialogowe](../workflow-designer/initialize-correlation-dialog-box.md)  
+ [Inicjowanie korelacji, okno dialogowe](../workflow-designer/initialize-correlation-dialog-box.md)  
   
- [Karta węzła System.Activities wybierz elementy przybornika — okno dialogowe](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)  
+ [Karta System.Activities, okno dialogowe Wybieranie elementów przybornika](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)  
   
- [Funkcji powłoki projektanta przepływów pracy](../workflow-designer/workflow-designer-shell-features.md)  
+ [Funkcje powłoki Projektanta przepływu pracy](../workflow-designer/workflow-designer-shell-features.md)  
   
  [Skróty klawiaturowe](../workflow-designer/keyboard-shortcuts-in-the-workflow-designer.md)  
   

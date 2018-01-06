@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Model obiektu Outlook ― Omówienie
   Umożliwiające tworzenie dodatków narzędzi VSTO dla programu Microsoft Office Outlook, mogą współdziałać z obiektami, które są udostępniane przez model obiektów programu Outlook. Model obiektów programu Outlook zawiera klasy i interfejsy, które reprezentują elementów interfejsu użytkownika. Na przykład <xref:Microsoft.Office.Interop.Outlook.Application> obiekt reprezentuje całej aplikacji <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> obiekt reprezentuje folder zawierający wiadomości e-mail lub innych elementów i <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekt reprezentuje wiadomości e-mail.  
@@ -142,5 +143,5 @@ ms.lasthandoff: 10/31/2017
 |[Praca z elementami poczty](../vsto/working-with-mail-items.md)|Zawiera tematy, które pokazują, jak wykonać zadania z elementami poczty.|  
 |[Praca z folderami](../vsto/working-with-folders.md)|Zawiera tematy, które pokazują, jak wykonać zadania z folderów.|  
 |[Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)|Zawiera tematy, które pokazują, jak wykonać zadania z elementami kalendarza.|  
-|[Porady: programowane wyznaczanie bieżącego elementu programu Outlook](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Pokazuje, jak można wyświetlić nazwę bieżącego folderu i niektóre informacje na temat wybranego elementu.|  
+|[Instrukcje: Programowe wyznaczanie bieżącego elementu programu Outlook](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Pokazuje, jak można wyświetlić nazwę bieżącego folderu i niektóre informacje na temat wybranego elementu.|  
   

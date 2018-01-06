@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e0784662a1c48602dd8f93f5ae97c0a69192c3a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3692e6b224297175d8466a993b0dc16cc7827294
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-solutions"></a>Rozwiązania programu Outlook
   Program Visual Studio udostępnia szablony projektów, które umożliwia tworzenie dodatków narzędzi VSTO dla programu Microsoft Office Outlook. Dodatków VSTO umożliwia automatyzowanie programu Outlook, rozszerzenie funkcji programu Outlook lub dostosowanie interfejsu użytkownika (UI) programu Outlook. Aby uzyskać więcej informacji na temat dodatków VSTO zobacz [dodatki architektura VSTO](../vsto/architecture-of-vsto-add-ins.md).  
@@ -62,10 +63,10 @@ ms.lasthandoff: 10/31/2017
   
 |Zadanie|Więcej informacji|  
 |----------|--------------------------|  
-|Dodaj niestandardowe karty do wstążki inspektora programu Outlook.|[Wstążka ― omówienie](../vsto/ribbon-overview.md)|  
-|Dodaj niestandardowe grupy do wbudowanej karty inspektora programu Outlook.|[Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Dodaj niestandardowe karty do wstążki inspektora programu Outlook.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|  
+|Dodaj niestandardowe grupy do wbudowanej karty inspektora programu Outlook.|[Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
 |Dodawanie niestandardowego okienka zadań wyświetlane w inspektora programu Outlook|[Niestandardowe okienka zadań](../vsto/custom-task-panes.md).|  
-|Dodawanie regionu formularza, który rozszerza lub zamienia istniejące formularzy programu Outlook.|[Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)|  
+|Dodawanie regionu formularza, który rozszerza lub zamienia istniejące formularzy programu Outlook.|[Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md)|  
   
  Aby uzyskać więcej informacji dotyczących dostosowywania interfejsu użytkownika programu Outlook i inne aplikacje Microsoft Office, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
@@ -73,9 +74,9 @@ ms.lasthandoff: 10/31/2017
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)|Zawiera omówienie obiektów, które są udostępniane przez model obiektów programu Outlook.|  
-|[Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)|W tym artykule wyjaśniono narzędzi dostarczonych przez program Visual Studio, ułatwiające projektowanie, tworzenie i debugowania regionów formularzy.|  
-|[Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Pokazuje, jak utworzyć dodatku VSTO dla programu Microsoft Office Outlook.|  
+|[Model obiektu Outlook — omówienie](../vsto/outlook-object-model-overview.md)|Zawiera omówienie obiektów, które są udostępniane przez model obiektów programu Outlook.|  
+|[Tworzenie regionów formularzy w programie Outlook](../vsto/creating-outlook-form-regions.md)|W tym artykule wyjaśniono narzędzi dostarczonych przez program Visual Studio, ułatwiające projektowanie, tworzenie i debugowania regionów formularzy.|  
+|[Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Pokazuje, jak utworzyć dodatku VSTO dla programu Microsoft Office Outlook.|  
 |[Outlook 2010 w programowanie Office](http://go.microsoft.com/fwlink/?LinkId=199013)|Części biblioteki MSDN, gdzie można znaleźć artykuły i odwołać dokumentacji informacje o opracowywaniu rozwiązań programu Outlook (nie odnoszą się do rozwoju pakietu Office przy użyciu programu Visual Studio).|  
   
   

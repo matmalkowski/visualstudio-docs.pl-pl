@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a3b6059acb924bd07d1205e6ffac1d58527875f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7566503fb0fcf92ed30c21f800239ebafb6a21f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Porady: Programowane tworzenie niestandardowych elementów folderu
   W tym przykładzie tworzy nowy folder w programie Microsoft Office Outlook. Nazwa użytkownika, który jest zalogowany jest używana nazwa folderu.  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z folderami](../vsto/working-with-folders.md)   
  [Porady: programowane Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Porady: programowane tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)  
+ [Instrukcje: Programowe tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)  
   
   

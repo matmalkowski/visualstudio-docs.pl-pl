@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1810a57d8f12cff2e34834684f39bf6f508ed5c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c297381f4629b35757693fd95f003a001034060c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Ogólne odniesienia (Office Development w Visual Studio)
   Ta sekcja zawiera szczegółowe informacje techniczne dotyczące projekty Microsoft Office w Visual Studio.  
@@ -32,10 +33,10 @@ ms.lasthandoff: 10/31/2017
  [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)  
  Wyświetla listę podstawowe zestawy międzyoperacyjne, które są dostępne do zainstalowania z pakietu Office i zawiera krótki opis każdego z nich.  
   
- [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)  
+ [Manifesty aplikacji dla rozwiązań Office](../vsto/application-manifests-for-office-solutions.md)  
  Zawiera opis używania manifesty aplikacji w rozwiązaniach pakietu Office.  
   
- [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)  
+ [Manifesty wdrożenia dla rozwiązań Office](../vsto/deployment-manifests-for-office-solutions.md)  
  W tym artykule opisano, jak manifesty wdrożenia są używane rozwiązań pakietu Office.  
   
  [Dokumentacja interfejsu użytkownika &#40; programowanie Office w Visual Studio &#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
  [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
  Opisuje, przykłady i wskazówki krok po kroku dotyczące tworzenia projektów pakietu Office w Visual Studio, która ułatwia informacje i wypróbować składni, strukturą i techniki, używany do tworzenia rozwiązań pakietu Office.  
   
- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
  Zawiera linki do informacji o sposobie rozpoczęcia tworzenia projektów pakietu Office przy użyciu programu Visual Studio.  
   
   

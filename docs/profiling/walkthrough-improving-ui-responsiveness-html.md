@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d1d35049d71ba011516b3bc06316cb46cc61ced
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawa czasu odpowiedzi interfejsu użytkownika (HTML)
 W tym przewodniku poprowadzi Cię przez proces identyfikacji i rozwiązywania problemu z wydajnością przy użyciu [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Profiler jest dostępna w programie Visual Studio dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje zbyt często elementy modelu DOM i używasz profilera, aby zidentyfikować i rozwiązać ten problem.  

@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych biznesowych
   Model usługi łączności danych biznesowych (BDC) można utworzyć przez dodanie jednostek i metody w pliku modelu. Jednostka opis kolekcji pól danych. Na przykład jednostka może reprezentować tabeli w bazie danych. Metoda wykonuje zadania, takie jak dodawanie, usuwanie i aktualizowanie danych reprezentowanego przez jednostek. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -120,19 +121,19 @@ ms.lasthandoff: 10/31/2017
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)|Zawiera opis narzędzi, które służą do wizualnego projektowania modelu zapasowego kontrolera domeny.|  
-|[Porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Pokazuje, jak dodać typy zawartości zewnętrznej lub jednostki do modelu.|  
-|[Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlanie listy jednostek na liście lub części sieci Web.|  
-|[Porady: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlić szczegóły określonej jednostki.|  
-|[Porady: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom do dodawania rekordów do źródła danych bezpośrednio z listy lub części sieci Web.|  
-|[Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom usunąć dane ze źródła danych za pomocą opcji w interfejsie użytkownika (UI) listy lub części sieci Web.|  
-|[Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom zmianę rekordów danych w źródle danych bezpośrednio z listy lub części sieci Web.|  
-|[Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Pokazuje, jak dodać parametry wejściowe i zwracany do metody za pomocą metody okno Szczegóły programu Visual Studio.|  
-|[Porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Pokazuje, jak zdefiniować typy danych parametru w modelu.|  
-|[Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)|Przedstawia sposób tworzenia wystąpienia metody, która wykonuje BDC.|  
-|[Porady: dodawanie opisu filtru do metody wyszukiwania](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Pokazuje, jak umożliwić użytkownikom ograniczyć liczbę wystąpień zwrócona przez metodę wyszukiwania.|  
+|[Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Pokazuje, jak dodać typy zawartości zewnętrznej lub jednostki do modelu.|  
+|[Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlanie listy jednostek na liście lub części sieci Web.|  
+|[Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom wyświetlić szczegóły określonej jednostki.|  
+|[Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom do dodawania rekordów do źródła danych bezpośrednio z listy lub części sieci Web.|  
+|[Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom usunąć dane ze źródła danych za pomocą opcji w interfejsie użytkownika (UI) listy lub części sieci Web.|  
+|[Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)|Pokazuje, jak dodać metodę, która umożliwia użytkownikom zmianę rekordów danych w źródle danych bezpośrednio z listy lub części sieci Web.|  
+|[Instrukcje: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Pokazuje, jak dodać parametry wejściowe i zwracany do metody za pomocą metody okno Szczegóły programu Visual Studio.|  
+|[Instrukcje: Określanie deskryptora typu dla parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Pokazuje, jak zdefiniować typy danych parametru w modelu.|  
+|[Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)|Przedstawia sposób tworzenia wystąpienia metody, która wykonuje BDC.|  
+|[Instrukcje: Dodawanie deskryptora filtru do metody wyszukiwania](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Pokazuje, jak umożliwić użytkownikom ograniczyć liczbę wystąpień zwrócona przez metodę wyszukiwania.|  
 |[Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)|W tym artykule opisano, jak można zdefiniować relacji między jednostkami w modelu. Składniki Web Part danych biznesowych, list zewnętrznych i niestandardowe aplikacje można wyświetlić relacje tych danych w interfejsie użytkownika (UI).|  
 |[Porady: Tworzenie skojarzenia między jednostkami](../sharepoint/how-to-create-an-association-between-entities.md)|Pokazuje, jak zdefiniować relacje między obiektami w modelu.|  
-|[Wskazówki: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Zawiera instrukcje krok po kroku opisano sposób tworzenia i testowania modelu, który wyświetla kontakty w zewnętrznych listy programu SharePoint.|  
-|[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Omówienie tworzenia i projektowania modele usługi BDC.|  
+|[Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Zawiera instrukcje krok po kroku opisano sposób tworzenia i testowania modelu, który wyświetla kontakty w zewnętrznych listy programu SharePoint.|  
+|[Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Omówienie tworzenia i projektowania modele usługi BDC.|  
   
   

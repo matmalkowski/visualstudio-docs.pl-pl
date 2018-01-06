@@ -12,11 +12,12 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.openlocfilehash: 33be7d4a3a47150e577667bbb794326e77ee2fed
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: python
+ms.openlocfilehash: bf0a6e187a98a03d3beed33537fe5244ecd5d35d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 

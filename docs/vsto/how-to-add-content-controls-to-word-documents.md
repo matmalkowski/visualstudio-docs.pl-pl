@@ -31,11 +31,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33e431dc907de8573a4eca00b9de73bcd0f523f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5f673d3a6752fda9256e7a71aff195dfa31fd933
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Porady: dodawanie formantów zawartości do dokumentów programu Word
   W projektów na poziomie dokumentu programu Word można dodać formantów zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektów dodatku VSTO programu Word można dodać formantów zawartości do otwartego dokumentu w czasie wykonywania.  
@@ -192,5 +193,5 @@ ms.lasthandoff: 10/31/2017
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
- [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
+ [Programowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
   

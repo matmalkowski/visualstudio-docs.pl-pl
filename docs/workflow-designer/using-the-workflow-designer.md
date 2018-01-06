@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5fd5d11d45ba4abdcc4f79e0369f47bfdbce0fd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0ea166c2770e78482aa47c3fe903339e8e2501a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-workflow-designer"></a>Za pomocą projektanta przepływów pracy
 Ta sekcja zawiera szczegóły dotyczące sposobu tworzenia nowych działań i projektów przepływu pracy przy użyciu wbudowanych projektantów i wyrażenie edytorze, który jest obsługiwany przez kilka projektantów działań.  
@@ -27,20 +28,20 @@ Ta sekcja zawiera szczegóły dotyczące sposobu tworzenia nowych działań i pr
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)  
  Tematach opisano sposób tworzenia bibliotek przy użyciu tych szablonów.  
   
- [Porady: dodawanie działań do przybornika](../workflow-designer/how-to-add-activities-to-the-toolbox.md)  
+ [Instrukcje: Dodawanie działań do przybornika](../workflow-designer/how-to-add-activities-to-the-toolbox.md)  
  Przedstawia różne sposoby dodawania działań do przybornika.  
   
- [Porady: Użyj projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md)  
+ [Instrukcje: Używanie projektanta argumentów](../workflow-designer/how-to-use-the-argument-designer.md)  
  Pokazuje, jak projektanta argumentów ułatwia umożliwiają przepływ do i z działania danych.  
   
- [Porady: Użyj projektanta zmiennych](../workflow-designer/how-to-use-the-variable-designer.md)  
+ [Instrukcje: Używanie projektanta zmiennych](../workflow-designer/how-to-use-the-variable-designer.md)  
  Pokazuje, jak utworzyć zmienne do użytku w scenariuszach powiązania danych i warunkowe instrukcje.  
   
- [Porady: używanie edytora wyrażeń](../workflow-designer/how-to-use-the-expression-editor.md)  
+ [Instrukcje: Używanie edytora wyrażeń](../workflow-designer/how-to-use-the-expression-editor.md)  
  Przedstawia sposób użycia edytora wyrażeń o wprowadzenie i obliczać wyrażeń.  
   
- [Porady: Użyj projektanta importów](../workflow-designer/how-to-use-the-imports-designer.md)  
+ [Instrukcje: Używanie projektanta importów](../workflow-designer/how-to-use-the-imports-designer.md)  
  Pokazuje, jak wprowadzić przestrzeni nazw dla typów używanych w wyrażeniach utworzonych przez użytkownika.  
   
- [Porady: Użyj nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
+ [Instrukcje: Używanie nawigacji za pomocą linków do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
  Pokazuje, jak można przejść między działaniami.

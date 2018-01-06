@@ -20,11 +20,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5fbd9bf79addf758b18fc21aebd43ceaf2dc3d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96527061e6cd738cbfc6a1aee53ea598f238aebd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Porady: Programowane sprawdzanie pisowni w arkuszach
   Można programowane sprawdzanie pisowni wyrazów w arkuszu. **Pisownia** automatycznie zostanie wyświetlone okno dialogowe przypadku niepoprawnie zapisanych słów w arkuszu.  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
  [Porady: programowane wykonywanie obliczeń programu Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

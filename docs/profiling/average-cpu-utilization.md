@@ -14,15 +14,16 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03fdce795cadba8496d9dd4ea2c0887e8738a8f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38441e88e1086b38ff7028cfbf81b38e48494358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="average-cpu-utilization"></a>Średnie wykorzystanie CPU
 Pokazuje PROFILOWANEGO procesu średnie wykorzystanie rdzeni logicznych systemu w czasie trwania procesu. Wykres nie są wyświetlane, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdego dwa rdzenie są uruchamiane o pojemności 50% dla danego okresu, w tym widoku wyświetli jednego rdzenia logicznego jej użycia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok rdzeni](../profiling/cores-view.md)   
- [Wykres wykorzystania CPU](../profiling/cpu-utilization-graph.md)
+ [Wykres wykorzystania procesora CPU](../profiling/cpu-utilization-graph.md)

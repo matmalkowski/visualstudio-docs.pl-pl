@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ce4a203fd0843fd6b15bfbf85019e85032defbd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 43901987c9f6f37e7082200f675549021fb63f83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 W programie Visual Studio, można użyć *diagram zależności* do wizualizacji Architektura wysokiego poziomu, logicznych systemu. Diagram zależności organizuje artefakty fizycznych w systemie w grupy logiczne, abstrakcyjny *warstwy*. Te warstwy opisano najważniejsze zadania wykonujące artefakty lub głównych składników systemu. Każda warstwa może również zawierać zagnieżdżone warstwy, które opisano bardziej szczegółowe zadania.  
@@ -75,7 +76,7 @@ W programie Visual Studio, można użyć *diagram zależności* do wizualizacji 
   
 -   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
--   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Aby sprawdzić połączonego artefaktów  
   

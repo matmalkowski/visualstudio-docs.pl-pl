@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 025d78ae6f094713425366a6ce667b59ac9958b8
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 234c70896b28f27815b7563b814fb6b4bd933ebd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Porady: wizualizacja skojarzeń kolekcji (Projektant klas)
 Właściwości i pola, które są kolekcjami innych typów mogą być wyświetlane na diagramie klas jako kolekcję skojarzeń. W odróżnieniu od skojarzenie regularne Wyświetla pole lub właściwość jako wiersz łączenie klasa będąca właścicielem z typem pola, skojarzeń kolekcji jest wyświetlany jako wiersz łączenia klasa będąca właścicielem typu modułu zbierającego.  

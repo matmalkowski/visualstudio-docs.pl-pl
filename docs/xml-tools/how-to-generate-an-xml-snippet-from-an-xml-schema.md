@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1090d1509152aaa507220d3119977bb8e9252876
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Porady: generowanie fragment kodu XML na podstawie schematu XML
 Edytor XML ma możliwość Generowanie fragmentów kodu XML na podstawie schematu schematu XML definition language (XSD). Na przykład podczas tworzenia pliku XML, gdy znajduje się obok nazwy elementu, można naciśnij klawisz TAB, aby umieścić element w danych XML generowane na podstawie informacji o schemacie dla tego elementu.  
@@ -155,4 +156,4 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmentów kodu XML](../xml-tools/xml-snippets.md)   
- [Porady: Użyj fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)
+ [Instrukcje: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 264ad0b02d2b352de69a84101b967ae6e663c422
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c3e757d8ffea7e91c2d5e51bc4a04e6225d1064f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowswitchlttgt-activity-designer"></a>Elementu FlowSwitch&lt;T&gt; Projektant działań
 <xref:System.Activities.Statements.FlowSwitch%601> Działanie jest warunkowego węzła, który zapewnia rozgałęzianie przepływ kontroli w zależności od kryterium, gdy wymagane są więcej niż dwóch gałęziach alternatywnych. Jeśli rozgałęzianie przepływu wymaga dwóch ścieżek, użyj <xref:System.Activities.Statements.FlowDecision> działania zamiast tego.  

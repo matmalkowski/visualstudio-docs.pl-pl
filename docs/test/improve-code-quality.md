@@ -12,11 +12,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio]
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 64e6f225e958879a11c5a1b44facc150d1932662
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: f3b7bb9139b1c63bca4c9cf9fbd61e21de6ed043
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-tools-in-visual-studio"></a>Narzędzia do testowania w programie Visual Studio
 
@@ -39,8 +40,8 @@ Narzędzia testowania programu Visual Studio może pomóc Ty i Twój zespół ma
 
 ## <a name="related-scenarios"></a>Scenariusze pokrewne
 
-* [Testowanie eksploracyjne & Ręczne](/vsts/manual-test/)
-* [Testy obciążenia](/vsts/load-test/index)
-* [Ciągłe testowanie](/vsts/build-release/test/index)
-* [Omówienie opracowywania oprogramowania dla usługi Team Services i TFS](/vsts/user-guide/devops-alm-overview)
-* [Analiza jakości aplikacji za pomocą narzędzi analizy kodu](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Poznawcze & Ręczne testowania (VSTS)](/vsts/manual-test/)
+* [Ładowanie testowania (VSTS)](/vsts/load-test/index)
+* [Ciągłe testowanie (VSTS)](/vsts/build-release/test/index)
+* [Omówienie opracowywania oprogramowania dla usługi Team Services i TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Narzędzi analizy kodu](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

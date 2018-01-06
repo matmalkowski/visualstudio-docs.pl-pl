@@ -32,11 +32,12 @@ caps.latest.revision: "76"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Formanty formularzy Windows w dokumentach pakietu Office ― Omówienie
   Formanty formularzy systemu Windows są obiektami, które użytkownicy mogą wykorzystywać do wprowadzania lub manipulować danymi. W projektach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word można dodać formanty formularzy systemu Windows do dokumentu lub skoroszytu w projekcie w czasie projektowania lub tych kontrolek można dodać programistycznie w czasie wykonywania. Można programowo Dodaj formanty otwartego dokumentu lub arkusz w czasie wykonywania w dodatku VSTO dla programu Excel lub Word.  
@@ -165,6 +166,6 @@ ms.lasthandoff: 10/31/2017
  [Wskazówki: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Wskazówki: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
- [Wskazówki: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
   
   

@@ -10,11 +10,12 @@ ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 caps.latest.revision: "3"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 1f1cf3843f7eea9af32c32ec4ecec64fc75edae9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 20e4cca7723a47b5735301c54a67029f0f956c49
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Porady: należy użyć funkcji wyszukiwania w Projektancie przepływów pracy
 W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów pracy, wyszukiwania można w Projektancie przepływów pracy można znaleźć elementów według słów kluczowych. Należy pamiętać, że projektant nie obsługuje Zamień. Wyszukiwanie znajdziesz następujące w Projektancie:  

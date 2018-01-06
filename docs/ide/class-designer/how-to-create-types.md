@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6bd8420a56e20e5cb2fb04bd47931bae68207d1
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: fe4eaf38f20ed358263bb6cc07d4be5c9632cd5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
 Projektowanie nowych typów dla projektów Visual Basic .NET i Visual C# .NET, należy je utworzyć na diagramie klas. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów](how-to-view-existing-types.md).  

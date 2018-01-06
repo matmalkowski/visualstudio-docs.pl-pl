@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
   Kilka szablonów typ projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint i elementy lokacji. Aby uzyskać listę typów projektów dostępne w temacie [projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej przedstawiono opis elementów i właściwości elementu projektu SharePoint.  
@@ -114,21 +115,21 @@ ms.lasthandoff: 10/31/2017
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)|W tym artykule opisano projekt SharePoint oraz szablony elementów projektu jest dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Porady: Dodawanie elementów do projektu SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Opisuje sposób dodawania nowych lub istniejących elementów do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
-|[Wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Prowadzi instrukcje tworzenia klienta pola, typu zawartości, definicji listy i wystąpienia listy.|  
-|[Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)|Opisuje sposób dodawania obsługiwanego odbiornika dla projektu utworzonych w [wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
-|[Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Opisuje sposób tworzenia projektów przepływu pracy, który zawiera formularze przypisania przepływu pracy i formularze inicjalizacji przepływu pracy.|  
+|[Instrukcje: Dodawanie elementów do projektu SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Opisuje sposób dodawania nowych lub istniejących elementów do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
+|[Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Prowadzi instrukcje tworzenia klienta pola, typu zawartości, definicji listy i wystąpienia listy.|  
+|[Instrukcje: Tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)|Opisuje sposób dodawania obsługiwanego odbiornika dla projektu utworzonych w [wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Opisuje sposób tworzenia projektów przepływu pracy, który zawiera formularze przypisania przepływu pracy i formularze inicjalizacji przepływu pracy.|  
 |[Tworzenie stron dla SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Opisuje sposób tworzenia stron, takich jak stron aplikacji, stron w witrynie, stron wzorcowych i układy stron dla programu SharePoint.|  
-|[Tworzenie składników Web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Opisuje sposób dodawania kontrolek, które użytkownicy mogą bezpośrednio modyfikować zawartość, wyglądu i zachowania stron w witrynie programu SharePoint za pomocą przeglądarki.|  
-|[Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia kontrolki użytkownika, które mogą być używane przez stron aplikacji i składników Web Part, które są uruchamiane w programie SharePoint.|  
-|[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Opisuje sposób integrowania danych z usług sieci Web i aplikacji serwera zaplecza do aplikacji programu SharePoint.|  
+|[Tworzenie części sieciowych dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Opisuje sposób dodawania kontrolek, które użytkownicy mogą bezpośrednio modyfikować zawartość, wyglądu i zachowania stron w witrynie programu SharePoint za pomocą przeglądarki.|  
+|[Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia kontrolki użytkownika, które mogą być używane przez stron aplikacji i składników Web Part, które są uruchamiane w programie SharePoint.|  
+|[Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Opisuje sposób integrowania danych z usług sieci Web i aplikacji serwera zaplecza do aplikacji programu SharePoint.|  
 |[Tworzenie definicji witryny dla SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Opisuje sposób tworzenia definicji witryny: szablonów, które są używane do tworzenia witryny programu SharePoint.|  
 |[Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Opisuje sposób importowania elementów, takich jak typy zawartości i moduły z istniejącej witryny SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
-|[Przy użyciu modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Informacje dotyczące używania modułów do wdrażania plików z Twojej [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu do witryny programu SharePoint.|  
+|[Stosowanie modułów podczas dołączania plików do rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Informacje dotyczące używania modułów do wdrażania plików z Twojej [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu do witryny programu SharePoint.|  
 |[Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Opisuje sposób przeglądania lokalnych witryn programu SharePoint za pomocą Eksploratora serwera.|  
-|[Opakowanie i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|W tym artykule opisano sposób użycia właściwości elementu projektu o podanie informacji pakowania i wdrażania dla projektów, takich jak wpisy kontroli bezpieczne, preferencje danych wyjściowych projektu i właściwości funkcji.|  
-|[Porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Opisuje sposób zmapowane katalogi do dodania do projektu w celu zapewnienia dostępu do zasobów programu SharePoint.|  
-|[Zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)|W tym artykule opisano problemy związane z rozwiązań w trybie piaskownicy.|  
+|[Zapewnianie informacji o pakowaniu i wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|W tym artykule opisano sposób użycia właściwości elementu projektu o podanie informacji pakowania i wdrażania dla projektów, takich jak wpisy kontroli bezpieczne, preferencje danych wyjściowych projektu i właściwości funkcji.|  
+|[Instrukcje: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Opisuje sposób zmapowane katalogi do dodania do projektu w celu zapewnienia dostępu do zasobów programu SharePoint.|  
+|[Uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)|W tym artykule opisano problemy związane z rozwiązań w trybie piaskownicy.|  
 |[Zabezpieczenia dla rozwiązań SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|W tym artykule opisano zagadnienia dotyczące zabezpieczeń związane z opracowywaniem rozwiązań SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Okno dialogowe selektora URL &#40; Projektowanie SharePoint w Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|W tym artykule opisano okno dialogowe, którego można użyć, aby dodać ścieżkę odwołania do zasobów w projekcie, lub na lokalnym serwerze programu SharePoint.|  
   
@@ -136,6 +137,6 @@ ms.lasthandoff: 10/31/2017
  [Wprowadzenie &#40; Projektowanie SharePoint w Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

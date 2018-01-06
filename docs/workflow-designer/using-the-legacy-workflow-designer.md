@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: eda078bdfc0eae8861ac4e70b0f1f73a399f994c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7faec3b7a6bf33886928034e1f68ab31c7a60b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Za pomocą projektanta przepływów pracy starsza wersja
 Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dostarczonych przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] może służyć do docelowego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -37,21 +38,21 @@ Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dostarczony
 |Tagi inteligentne|Działania, które nie został w pełni skonfigurowany lub nie jest prawidłowo skonfigurowane są oznaczone ikoną wykrzyknika. Możesz kliknąć ikonę i wyświetlenie listy rozwijanej potrzeb konfiguracji, które istnieją w działaniu. Następnie można użyć **właściwości** okno, aby skonfigurować odpowiednie działania. Gdy wszystkie właściwości są prawidłowe dla działania, ikona wykrzyknika zniknie.|  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Windows przepływu pracy programu Visual Studio (starsze)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
+ [Okna przepływów pracy programu Visual Studio (starsza wersja)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
   
- [Tworzenie projektów przepływu pracy starsza wersja](../workflow-designer/creating-legacy-workflow-projects.md)  
+ [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)  
   
- [Widoki sekwencyjnego przepływu pracy (starsze)](../workflow-designer/sequential-workflow-views-legacy.md)  
+ [Widoki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md)  
   
  [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)  
   
- [Używanie tematów w przepływach pracy (starsze)](../workflow-designer/using-themes-in-workflows-legacy.md)  
+ [Używanie motywów w przepływach pracy (starsza wersja)](../workflow-designer/using-themes-in-workflows-legacy.md)  
   
- [Za pomocą projektanta przepływów pracy maszyny stanu starszych](../workflow-designer/using-the-legacy-state-machine-workflow-designer.md)  
+ [Używanie starszej wersji Projektanta przepływu pracy automatu stanów](../workflow-designer/using-the-legacy-state-machine-workflow-designer.md)  
   
- [Przy użyciu narzędzia Projektant działań starsza wersja](../workflow-designer/using-the-legacy-activity-designer.md)  
+ [Używanie starszej wersji projektanta działań](../workflow-designer/using-the-legacy-activity-designer.md)  
   
- [Projektant starszych pomocy systemu Windows Workflow Foundation interfejsu użytkownika](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
+ [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie przepływów pracy](http://go.microsoft.com/fwlink?LinkID=65010)

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 91ce5811be2aae3744afb7444ab35a9a3da54a20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5e82bde3e7d30fd0516deb4f79ff89bb77d19709
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-activity-designers"></a>Przy użyciu projektantów działań
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] Zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia Twojej działań i przepływów pracy. W tej sekcji opisano kategorie działań dostarczane przez system i ich projektantów, które są dostępne. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w każdej z tych kategorii opisano, co te działania czy i zawierają wskazówki dotyczące sposobu ich używania.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
  Używany do budowy schemat blokowy działania projektantów działań.  
   
- [Automatu stanów](../workflow-designer/state-machine-activity-designers.md)  
+ [Automat stanów](../workflow-designer/state-machine-activity-designers.md)  
  Projektanci działań użyty do utworzenia działań komputera stanu.  
   
  [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
@@ -39,10 +40,10 @@ ms.lasthandoff: 10/27/2017
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
  Projektanci działań używany do utrwalenia i przerwanie działania przepływu pracy.  
   
- [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)  
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
  Umożliwia zarządzanie pierwotnych działania, takie jak przypisywanie i opóźnienie projektantów działań.  
   
- [Transakcji](../workflow-designer/transaction-activity-designers.md)  
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)  
  Projektanci działań używany do zarządzania działania transakcji.  
   
  [Kolekcja](../workflow-designer/collection-activity-designers.md)  
@@ -51,15 +52,15 @@ ms.lasthandoff: 10/27/2017
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md)  
  Umożliwia zarządzanie działania obsługi błędów projektantów działań.  
   
- [Migracji](../workflow-designer/migration-activity-designers.md)  
+ [Migracja](../workflow-designer/migration-activity-designers.md)  
  Umożliwia współdziałanie między projektantami działań [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] / [!INCLUDE[netfx35_short](../workflow-designer/includes/netfx35_short_md.md)] i [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] przepływów pracy.  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Za pomocą projektanta przepływów pracy](../workflow-designer/using-the-workflow-designer.md)  
+ [Używanie projektanta przepływu pracy](../workflow-designer/using-the-workflow-designer.md)  
   
- [Debugowanie przepływów pracy za pomocą projektanta przepływów pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
+ [Debugowanie przepływów pracy za pomocą Projektanta przepływu pracy](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
   
- [Pomocy interfejsu użytkownika projektanta przepływów pracy](../workflow-designer/workflow-designer-ui-help.md)
+ [Pomoc interfejsu użytkownika Projektanta przepływu pracy](../workflow-designer/workflow-designer-ui-help.md)

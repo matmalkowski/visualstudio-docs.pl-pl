@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 822be7f0e6e79f600331197c60ed48ea84cde200
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 83bf3b48d562e5acf24fedd27954c10505454b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Aplikacje i manifesty wdrożenia w rozwiązaniach pakietu Office
   Manifest aplikacji jest plik XML, który zawiera informacje, które jest używane przez rozwiązania do pakietu Office do lokalizowania i zaktualizuj jego zestawów. Manifest aplikacji można łączyć z manifest wdrażania, który jest plikiem XML przechowywane na serwerze, który zawiera informacje potrzebne do zlokalizowania aktualna wersja umowy manifest aplikacji Kreatora raportów i zestawów.  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
  [Manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest)   
- [Manifest wdrażania ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest)  
+ [Manifest wdrożenia ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest)  
   
   

@@ -20,11 +20,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 Testy automatyczne, którzy sterują aplikacji za pośrednictwem jej interfejsu użytkownika (UI) są określane jako *kodowanych testów interfejsu użytkownika* (CUITs). Te testy obejmują testowanie funkcjonalności kontrolek interfejsu użytkownika. Umożliwiają one Sprawdź, czy całej aplikacji, w tym interfejs użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika są szczególnie użyteczne w przypadku weryfikacji lub innych logikę w interfejsie użytkownika, na przykład na stronie sieci web. Są one również często używane do automatyzowania istniejącego testu ręcznego.  
@@ -313,7 +314,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
         -   [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)  
   
-        -   [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+        -   [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
   
 ###  <a name="generatedCode"></a>Wygenerowany kod  
  Po wybraniu **Generuj kod**, tworzonych jest kilka fragmentów kodu:  
@@ -461,9 +462,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  **Dodawanie obsługi w przypadku kontrolek niestandardowych:** framework testowanie kodowanego interfejsu użytkownika nie obsługuje co możliwy interfejs użytkownika i może nie obsługiwać interfejsu użytkownika ma zostać przetestowana. Na przykład nie można od razu utworzyć interfejsu użytkownika dla kodowanego testu interfejsu użytkownika [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Można jednak utworzyć rozszerzenie kodowanego interfejsu użytkownika framework testowania, obsługujące kontrolkę niestandardową.  
   
--   [Włącz testowanie kodowanego interfejsu użytkownika dla Twoich formantów](../test/enable-coded-ui-testing-of-your-controls.md)  
+-   [Włączanie testowania kodowanego interfejsu użytkownika dla kontrolek](../test/enable-coded-ui-testing-of-your-controls.md)  
   
--   [Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
+-   [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
  Kodowane testy interfejsu użytkownika są często używane w celu zautomatyzowania testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji o testach ręcznych, zobacz [&#91; wycofane &#93; Tworzenie przypadków testowania ręcznego przy użyciu programu Microsoft Test Manager](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). Aby uzyskać więcej informacji o automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
   

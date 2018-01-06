@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c2cbca8406f93184bab7ed80a0450047abea711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc47c6bf1e19f66fa55d29f436ba615742d08a3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>Wprowadzenie (Rozwój SharePoint w Visual Studio)
   Ta sekcja pomoże Ci rozpocząć pracę z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwiające tworzenie rozwiązań programu SharePoint, które korzystają z [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
@@ -44,21 +45,21 @@ ms.lasthandoff: 10/31/2017
 |Temat|Opis|  
 |-----------|-----------------|  
 |[Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)|W tym artykule opisano programowanie SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Tworzenie kolumn witryn, typów zawartości i list dla SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Opisuje sposób tworzenia niestandardowej witryny kolumn, typów zawartości i list dla SharePoint za pomocą narzędzi Visual Studio tools dla programu SharePoint.|  
-|[Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Zawiera opis przepływu pracy projektowania i opracowywania.|  
-|[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Opisuje sposób nawiązywania połączenia z modelami łączności danych biznesowych (BDC) do integracji danych biznesowych.|  
-|[Tworzenie składników Web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|W tym artykule opisano składniki Web Part i stron składników Web Part, bloki konstrukcyjne stron w witrynie programu SharePoint.|  
+|[Tworzenie kolumn witryn, typów zawartości oraz list dla SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Opisuje sposób tworzenia niestandardowej witryny kolumn, typów zawartości i list dla SharePoint za pomocą narzędzi Visual Studio tools dla programu SharePoint.|  
+|[Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Zawiera opis przepływu pracy projektowania i opracowywania.|  
+|[Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Opisuje sposób nawiązywania połączenia z modelami łączności danych biznesowych (BDC) do integracji danych biznesowych.|  
+|[Tworzenie części sieciowych dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|W tym artykule opisano składniki Web Part i stron składników Web Part, bloki konstrukcyjne stron w witrynie programu SharePoint.|  
 |[Tworzenie stron aplikacji dla SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Opisuje sposób projektowania stron aplikacji za pomocą projektanta.|  
-|[Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia niestandardowych kontrolki do ponownego użycia stron aplikacji i części sieci Web w programie SharePoint.|  
+|[Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia niestandardowych kontrolki do ponownego użycia stron aplikacji i części sieci Web w programie SharePoint.|  
 |[Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Opisuje sposób nawigowania składników witryny programu SharePoint w Visual Studio okna narzędzia.|  
 |[Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Opisuje sposób tworzenia i debugowanie rozwiązań SharePoint.|  
-|[Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Opisuje sposób pakietu i wdrażanie rozwiązań programu SharePoint.|  
+|[Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Opisuje sposób pakietu i wdrażanie rozwiązań programu SharePoint.|  
 |[Rozszerzanie narzędzi SharePoint w Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Opisuje sposób rozszerzyć narzędzia programu SharePoint, można utworzyć funkcje, które są potrzebne.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

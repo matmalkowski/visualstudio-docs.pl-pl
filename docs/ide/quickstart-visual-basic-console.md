@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 330594aaccbd691a548fec9c237de91d471f4020
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która działa w konsoli programu.
@@ -43,7 +44,7 @@ Najpierw utworzysz projekt aplikacji Visual Basic. Typ projektu zawiera wszystki
      ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
-Po wybraniu szablonu projektu języka Visual Basic oraz nazwę projektu, Visual Studio tworzy prostą aplikację "Hello World". Wywołuje [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli.
+Po wybraniu szablonu projektu języka Visual Basic oraz nazwę projektu, Visual Studio tworzy prostą aplikację "Hello World". Wywołuje <xref:System.Console.WriteLine%2A> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli.
 
 ![Wyświetl domyślny kod Hello World z szablonu](../ide/media/vb-console-helloworld-template.png)
 
@@ -56,7 +57,7 @@ Można to zrobić, w oknie konsoli jest widoczna na tylko chwilę przed jego zam
 ### <a name="add-some-code"></a>Dodawanie kodu
 Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poprosić dla danych wejściowych użytkownika.
 
-1. Dodaj następujący kod bezpośrednio po wywołaniu [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) metody:
+1. Dodaj następujący kod bezpośrednio po wywołaniu <xref:System.Console.WriteLine%2A> metody:
 
    ```vb
    Console.Write("Press any key to continue...")

@@ -10,11 +10,12 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: ad07ac5eba9e8579ae08f5ba1b242f3bc5483a5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d4c8dbac90e3d1e3ec10314debf0a288ad48053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]zawiera szereg projektantów działań, których można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera projektantów działań dostarczane przez system, używany do tworzenia i Zarządzaj przepływami pracy komputera stanu. Poniższe tematy opisują te projektantów i zawierają wskazówki dotyczące sposobu ich używania.  
@@ -48,15 +49,15 @@ ms.lasthandoff: 10/27/2017
   
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
   
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)  
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
   
  [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   
- [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)  
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
   
- [Transakcji](../workflow-designer/transaction-activity-designers.md)  
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)  
   
  [Kolekcja](../workflow-designer/collection-activity-designers.md)  
   

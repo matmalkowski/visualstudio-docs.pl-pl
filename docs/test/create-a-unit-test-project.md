@@ -11,11 +11,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a064d56a0be2acf6000a9e7da770cb9b25d3b65f
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 6294bd85d3a0fe189f0beff5c8a8a91294bd6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 Testy jednostkowe często duplikatów struktury kodu w ramach testu. Na przykład jednostkowy projekt testowy zostałyby utworzone dla każdego projektu kodu, w ramach produktu. Projekt testowy może znajdować się w tym samym rozwiązaniu jako kodzie produkcyjnym lub może być w oddzielnym rozwiązaniu. Może mieć wiele jednostek testowanie projektów w rozwiązaniu.  
@@ -46,10 +47,10 @@ Testy jednostkowe często duplikatów struktury kodu w ramach testu. Na przykła
   
  Zobacz jedną z następujących sekcji:  
   
--   [Pisanie testów jednostkowych dla .NET Framework za pomocą Frameworka testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
 -   [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)  
   
  **Uruchamianie testów jednostkowych**  
   
- [Uruchom testy jednostkowe za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
+ [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)

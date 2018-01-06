@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest kanwy wizualnego projektu. Użyj projektanta wstążki, aby dodać niestandardowe karty, grup i kontroli do Wstążki aplikacji pakietu Microsoft Office.  
@@ -146,12 +147,12 @@ ms.lasthandoff: 10/31/2017
 |**Pole**|Kontener, który umożliwia organizowanie formantów w grupie. Można dodać żadnego formantu, do pola, z wyjątkiem separatora, grupy lub kartę. Pole może być pozioma lub pionowa.|  
 |**Przycisk**|Przycisk, który rozpoczyna się akcja. Przycisk można dodać do grupy, Grupa przycisków, listy rozwijanej, Galeria, menu lub przycisku podziału.|  
 |**Grupa przycisków**|Grupy, która zawiera jeden lub więcej przycisków, przycisków przełączania menu, przyciski podziału i galerii. Grupa przycisków można dodać do grupy lub menu.|  
-|**Pole wyboru**|Pole jest zaznaczone lub wyczyszczone, aby włączyć lub wyłączyć opcję.|  
-|**Pola kombi ComboBox**|Pole edycji z listą dołączony. Użytkownicy mogą albo wpisz lub wybierz wybranych przez nich. Pola są wyświetlane bieżące zaznaczenie. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> właściwość, aby dodawać i usuwać elementy na czas wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|  
+|**CheckBox**|Pole jest zaznaczone lub wyczyszczone, aby włączyć lub wyłączyć opcję.|  
+|**ComboBox**|Pole edycji z listą dołączony. Użytkownicy mogą albo wpisz lub wybierz wybranych przez nich. Pola są wyświetlane bieżące zaznaczenie. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> właściwość, aby dodawać i usuwać elementy na czas wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|  
 |**Lista rozwijana**|Lista elementów, które użytkownik może wybrać. Użytkownik nie wpisz nowy element na liście rozwijanej.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> właściwości, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> dodawanie przycisków do listy właściwości. Jednak nie można dodawać i usuwać przyciski w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|  
 |**Pole edycji**|Pole, w którym użytkownik może wpisać tekst.|  
 |**Galerii**|Menu przedstawiający tablicą lub siatki visual opcji, z których użytkownicy mogą wybrać. Można kontrolować układ zaznaczeń w menu. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> i <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> właściwości, aby określić liczbę wierszy i kolumn, które będzie wyświetlał elementy i przyciski galerii.|  
-|**Etykiety**|Tekst, który służy do identyfikowania formantów na Wstążce.|  
+|**Etykieta**|Tekst, który służy do identyfikowania formantów na Wstążce.|  
 |**Menu**|Listy rozwijanej, która może zawierać żadnego z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />-Galerii<br />-Menu<br />— Przycisk pokrętła<br />— Przełącznik<br />-Separatora<br /><br /> Aby dodać kontrolkę menu w Projektancie wstążki, kliknij strzałkę w dół w menu, aby ujawnić powierzchni projektowej menu. Można następnie przeciągnij formanty wstążki z **przybornika** na menu. Aby zorganizować formantów, przeciągnij je do odpowiednie pozycje.<br /><br /> Do dodawania formantów do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po załadowaniu wstążki do aplikacji pakietu Office, musisz ustawić <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> właściwości **true** przed załadowaniem wstążki. Aby dowiedzieć się, jak to zrobić, zobacz [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|  
 |**Separator**|Pasek alokowania używany do oddzielania elementów na liście. Po dodaniu do grupy, pasek jest pionowy. Po dodaniu do menu, paska jest poziomy.|  
 |**Przycisk podziału**|Przycisk menu dołączony. Przycisk podziału może zawierać żadnego z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />-Galerii<br />-Menu<br />— Przycisk pokrętła<br />— Przełącznik<br />-Separatora<br /><br /> Podobnie jak menu przycisku podziału ma własną powierzchnię projektu. Jednak w przeciwieństwie do menu, możesz aktualizować tylko elementy przycisku podziału przed załadowaniem wstążki do aplikacji pakietu Office. Aby uzyskać informacje o sposobie aktualizowania elementów przycisku podziału, zobacz [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|  

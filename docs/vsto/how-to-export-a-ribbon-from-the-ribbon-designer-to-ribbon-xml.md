@@ -23,11 +23,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b73bff8170e351e9e22e95d53ae446895cfdbd2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7cbdf38b3debd7710ed036d008d52b8ef080d37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Porady: eksportowanie wstążki z Projektanta wstążki do XML wstążki
   **Wstążki (projektanta wizualnego)** element nie obsługuje wszystkich możliwych typów dostosowywania wstążki. Aby dostosować wstążki w sposób zaawansowane, można eksportowanie wstążki z projektanta do pliku XML Wstążki i bezpośredniego edytowania pliku XML.  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [XML wstążki](../vsto/ribbon-xml.md)   
  [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

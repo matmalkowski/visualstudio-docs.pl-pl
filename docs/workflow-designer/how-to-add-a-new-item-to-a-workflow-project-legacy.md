@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ad57b87dcbae858f865a12538c79436e907caa34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: add7474c2d38c2cbb06b0d1cc3c92efa0a16c321
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Porady: Dodawanie nowego elementu do projektu przepływu pracy (starsze)
 Po utworzeniu projektu przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] dostarczonych przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] który dotyczy, albo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], możesz dodać [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] elementów i innych znanych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elementy do projektu.  
@@ -49,4 +50,4 @@ Po utworzeniu projektu przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../
 3.  Kliknij przycisk **Dodaj** można dodać elementu do projektu przepływu pracy.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie projektów przepływu pracy starsza wersja](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)

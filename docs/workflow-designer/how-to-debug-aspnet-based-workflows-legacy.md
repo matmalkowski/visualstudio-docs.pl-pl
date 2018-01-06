@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0eb248f04119f8f0ad70b9a09a4fb22c73399233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: aspnet
+ms.openlocfilehash: 36905d8716b2f6a0fd961f668b7b5ca7c3ef623d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsze)
 W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]— na podstawie [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacje, które odnoszą się do jednego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] w starszych [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].  
@@ -56,4 +57,4 @@ W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../code-quality/in
 ## <a name="see-also"></a>Zobacz też  
  [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
  [Porady: Ustawianie punktów przerwania w przepływach pracy (starsze)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
- [Debugowanie przepływów pracy starsza wersja](../workflow-designer/debugging-legacy-workflows.md)
+ [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)

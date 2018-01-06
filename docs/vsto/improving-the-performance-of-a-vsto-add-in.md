@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa8aba456e6912569480305922511f6ffebe674b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bafc82f247f067f1f836730ec1f676f2f9559915
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Zwiększanie wydajności dodatku VSTO
   Można zapewnić użytkownikom lepsze środowisko optymalizując dodatków VSTO, utworzonych na potrzeby aplikacji, aby szybko rozpocząć, zamknij pakietu Office, otwórz elementów i wykonywanie innych zadań. Jeśli Twoje dodatku VSTO dla programu Outlook, można także zmniejszyć ryzyko, że dodatek VSTO zostanie wyłączona z powodu niskiej wydajności. Można zwiększyć wydajność sieci dodatku VSTO zaimplementowanie następujących strategii:  

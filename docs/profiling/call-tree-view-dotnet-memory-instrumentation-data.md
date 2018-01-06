@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e77a6a1b97d186cfdc9619fc2d57c05831a752ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 043259d4ffd403abcffcfdfa724c8a8044caf5ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Widok drzewa wywołań - dane Instrumentacji pamięci .NET
 Widok drzewa wywołań danych pamięci .NET alokacji profilowania zebrane przy użyciu metody Instrumentacji Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji. Korzeń drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcja zawiera wszystkie funkcje mu i pamięci platformy .NET i danych o chronometrażu dla funkcji.  

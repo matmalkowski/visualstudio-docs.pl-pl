@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 84b7e100fde6740b1733aec451050283e6726bf4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 6478d5a620280a0d71e47eb332e7e33f707e22f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Porady: kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office (Projektant klas)
 Możesz skopiować kształty z diagramu klas .NET (plik .cd) do innych dokumentów. Albo uzyskasz kopię kształtu lub jej kodu źródłowego opartego na rodzaj dokumentu, gdzie możesz wkleić. Aby skopiować kształty z diagramów klas UML w projekcie modelowania, zobacz [Eksportowanie diagramów jako obrazów](../../modeling/export-diagrams-as-images.md).  

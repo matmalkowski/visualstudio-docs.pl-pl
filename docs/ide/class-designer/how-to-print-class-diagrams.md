@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1d5e2255dbcec176c569e73893762f7b37aa4ec
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: a2561789ded435582a064f791edeca08fcbb4cba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-print-class-diagrams-class-designer"></a>Porady: drukowanie diagramów klasy (Projektant klas)
 Można wydrukować diagram klasy wydruku funkcji programu Visual Studio.  

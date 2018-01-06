@@ -26,11 +26,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4cacdbb314130fa45b5aa3820abbbffbcbc6c0bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>Integrowanie danych biznesowych z SharePoint
   Dane biznesowe można zintegrować programu SharePoint. Dane biznesowe mogą pochodzić z wewnętrznego serwera aplikacji, takich jak [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel i SAP, lub usługi sieci Web. Użytkowników można wyświetlić, dodawać, aktualizować lub usuwać dane biznesowe za pomocą list zewnętrznych lub składników Web Part danych biznesowych w programie SharePoint.  Użytkownicy mogą również dostęp do tych danych w trybie offline w aplikacji pakietu Microsoft Office, takich jak Microsoft Outlook. Aby uzyskać więcej informacji, zobacz [gdzie można można wyświetlić danych zewnętrznych](http://go.microsoft.com/fwlink/?LinkId=169295).  

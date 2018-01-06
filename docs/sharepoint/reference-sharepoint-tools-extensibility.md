@@ -16,17 +16,18 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83800ece50304d578c5662ca6794af83021d9156
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b1782d5efa47fffb09d2e54413be1d5e35f89d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Odwołanie (Rozszerzalność Narzędzi SharePoint)
   Ta sekcja zawiera dokumentacja referencyjna dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Element projektu SharePoint — dokumentacja schematu](../sharepoint/sharepoint-project-item-schema-reference.md)  
  Zawiera dokumentacja referencyjna dla schematu pliku .spdata —.  
   
  [Dokumentacja interfejsu API &#40; Rozszerzalność narzędzi SharePoint &#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  

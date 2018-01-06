@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 Można profilu w węzłach obliczeniowych klastrów HPC systemu Windows firmy Microsoft za pomocą metody pobierania próbek [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] lub [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)] narzędzi profilowania. Aby uzyskać więcej informacji na temat HPC zobacz [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) w witrynie sieci Web firmy Microsoft.  

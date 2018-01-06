@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c14cc612c544fff9a415d68ef173edcc2f9dbd87
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 347a38a67762ed92dbf5daeb0a74d428b9e7d8f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicjowanie korelacji — okno dialogowe
 **Inicjowania korelacji** okno dialogowe jest używany w [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] do edycji <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwość <xref:System.ServiceModel.Activities.InitializeCorrelation> działania. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tematu.  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/27/2017
   
 |Element interfejsu użytkownika|Opis|  
 |----------------|-----------------|  
-|**Korelacji**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelacji zainicjować.|  
+|**Korelacja**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelacji zainicjować.|  
 |**Inicjowanie na**|Para klucza i wartości zawierający dane inicjowania. Odpowiada to <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> właściwości. Przykład parę klucza i wartości prawidłowe byłoby klucz o nazwie "OrderID" łączyć się z zmiennej o nazwie OrderID.|  
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Aby uruchomić okno dialogowe inicjowania korelacji  

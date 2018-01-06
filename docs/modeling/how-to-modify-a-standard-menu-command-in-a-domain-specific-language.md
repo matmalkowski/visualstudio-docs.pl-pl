@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f79852eae4b7dfae7345dbf6033a0e1cc0444250
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 Można zmodyfikować zachowanie niektórych standardowych poleceń, które są automatycznie zdefiniowane w Twojej DSL. Na przykład można zmodyfikować **Wytnij** tak, aby nie obejmuje informacji poufnych. Aby to zrobić, można zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs w projekcie DslPackage i pochodne <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -135,7 +136,7 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Pisanie kodu metody  
  Poniższe fragmenty są często przydatne w przypadku tych metod:  
   
--   `this.CurrentSelection`. Kształt, że użytkownik kliknął prawym przyciskiem myszy zawsze znajduje się lista łączników i kształtów. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
+-   `this.CurrentSelection`., Kształt, że użytkownik kliknął prawym przyciskiem myszy zawsze znajduje się lista łączników i kształtów. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
   
 -   `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.  
   

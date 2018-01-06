@@ -20,11 +20,12 @@ caps.latest.revision: "152"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddab05340b898a1a9a1868c7e537e6b53cc013b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1
   System projektu programu SharePoint w Visual Studio można rozszerzyć przez utworzenie własnego projektu typów elementów. W tym przewodniku spowoduje utworzenie elementu projektu, który można dodać do projektu SharePoint do tworzenia niestandardowych akcji w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu, aby **Akcje witryny** menu witryny programu SharePoint.  

@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d94e1c1fa7aac5fe5be517587155be1f7c00102
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2e72b3391660c3eb4d132b549666695cbf5e4ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Porady: Programowane dodawanie wpisu do kontaktów programu Outlook
   W tym przykładzie tworzy nowy kontakt i wprowadza dane w jego miejsce nowego kontaktu.  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
  [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)   
  [Porady: programowane tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)   
  [Porady: programowane dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Porady: programowane wyszukiwanie adresu E-Mail w kontaktach](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
+ [Instrukcje: Programowe wyszukiwanie adresu e-mail w kontaktach](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
   
   

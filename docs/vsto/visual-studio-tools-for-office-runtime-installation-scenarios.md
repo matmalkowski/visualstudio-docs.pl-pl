@@ -16,11 +16,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e09d83fefee766ce19c71812bccfa751cc90e27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 057b9430f6cbac64479e6623e74497427f7824ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla pakietu Office Runtime ― Scenariusze instalacji
   Visual Studio 2010 Tools dla pakietu Office Runtime można zainstalować na trzy sposoby:  
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Zestawy w Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
+ [Zestawy w Visual Studio Tools dla pakietu Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
   
   

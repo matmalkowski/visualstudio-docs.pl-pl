@@ -11,11 +11,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Test z kodowanych testów interfejsu użytkownika systemu Windows platformy uniwersalnej systemu Windows i aplikacji Phone 8.1
 
@@ -151,7 +152,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
     End Sub  
     ```  
   
-     **Formanty**  
+     **Kontrolki**  
   
     ```csharp  
     #region Properties  

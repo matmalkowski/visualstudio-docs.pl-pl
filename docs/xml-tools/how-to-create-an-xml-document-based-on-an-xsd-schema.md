@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d4b4f91a6fb5b85cdd5e9bf6d9f2932c88e6ab7
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bc0ad40823db8a4bd1f2d3553324f8459fb995f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Porady: Tworzenie dokumentu XML na podstawie schematu XSD
 **Generowanie XML próbki** funkcja generuje przykładowy plik XML na podstawie Twojego pliku schematu XML (XSD).  
@@ -77,4 +78,4 @@ Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerow
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Praca z danych XML](../xml-tools/working-with-xml-data.md)
+ [Praca z danymi XML](../xml-tools/working-with-xml-data.md)

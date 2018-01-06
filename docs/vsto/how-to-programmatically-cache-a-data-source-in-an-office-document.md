@@ -21,11 +21,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2952ee6de3321300ad87053f0e5c385357fe0ba2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e117243afff5cfa73cd7a27ad8ce0230d8fd512a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Porady: programowane buforowanie źródła danych w dokumencie programu Word
   Obiekt danych można programowo dodać do pamięci podręcznej danych w dokumencie, wywołując `StartCaching` metody hosta elementów, takich jak <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, lub <xref:Microsoft.Office.Tools.Excel.Worksheet>. Usuń obiekt danych z pamięci podręcznej danych przez wywołanie metody `StopCaching` metody elementu host.  

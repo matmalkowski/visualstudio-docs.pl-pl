@@ -22,11 +22,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de978f92a5c410312cac00034006cd698b1c5cea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dd03b3e14599535c99f8a8ddd17314ce7f0cc719
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint — Rozwiązania
   Program Visual Studio udostępnia szablony projektów, które umożliwia tworzenie dodatków narzędzi VSTO dla programu Microsoft Office PowerPoint. Dodatków VSTO służy do automatyzacji programu PowerPoint, rozszerzenie funkcji programu PowerPoint lub dostosowanie interfejsu użytkownika (UI) programu PowerPoint.  
@@ -72,8 +73,8 @@ ms.lasthandoff: 10/31/2017
 |Zadanie|Więcej informacji|  
 |----------|--------------------------|  
 |Tworzenie niestandardowego okienka zadań.|[Niestandardowe okienka zadań](../vsto/custom-task-panes.md)|  
-|Dodaj niestandardowe karty do wstążki.|[Wstążka ― omówienie](../vsto/ribbon-overview.md)|  
-|Dodawanie niestandardowych grup wbudowanych kartę na Wstążce.|[Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Dodaj niestandardowe karty do wstążki.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|  
+|Dodawanie niestandardowych grup wbudowanych kartę na Wstążce.|[Instrukcje: Dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  Aby uzyskać więcej informacji dotyczących dostosowywania interfejsu użytkownika programu PowerPoint i inne aplikacje Microsoft Office, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   

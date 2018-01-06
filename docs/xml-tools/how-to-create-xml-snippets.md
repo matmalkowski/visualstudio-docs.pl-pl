@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36fccee0e228e4391e80388284b59f19e1f3a1b9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-xml-snippets"></a>Porady: tworzenie fragmentów kodu XML
 Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawiera fragment kodu XML, o nazwie "Fragment", czyli fragment standardowy do tworzenia nowych fragmentów kodu XML.  
@@ -115,4 +116,4 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 ## <a name="see-also"></a>Zobacz też  
  [Fragmentów kodu XML](../xml-tools/xml-snippets.md)   
  [Porady: Użyj fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md)   
- [Porady: generowanie fragment kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+ [Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

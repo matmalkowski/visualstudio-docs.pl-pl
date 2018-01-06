@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2991b31c387e959b055d30d37dd01cf79652adf7
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 Widok modelu zawartości zawiera graficzną reprezentację schematu lokalne i globalne węzłów i ich składników, w tym proste i złożone typy, elementy grupy modeli, atrybuty i grupy atrybutów. Komentarze XML i instrukcji przetwarzania nie można wyświetlić w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: **obszaru roboczego** panelu, który zawiera listy węzłów w [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)i powierzchni projektu, do której możesz zobaczyć modelu zawartości schematu węzły, które są wybrane w **obszaru roboczego** panelu. Widok modelu zawartości zawiera również narzędzi Projektanta schematu XML i na pasku stron nadrzędnych.  
@@ -116,4 +117,4 @@ Suwak powiększenia jest nieprzezroczysta, zaznacz go, przesuń kursor myszy, lu
  Jeśli wprowadzisz zmiany do schematu w edytorze XML zestawu zmiany będą synchronizowane w widoku modelu zawartości. Aby uzyskać więcej informacji, zobacz [integracji z edytora XML](../xml-tools/integration-with-xml-editor.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Roboczym projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)
+ [Obszar roboczy projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)

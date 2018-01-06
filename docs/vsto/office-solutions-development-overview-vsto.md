@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Rozwój rozwiązań Office ― omówienie (środowisko VSTO)
   Przy użyciu programu Microsoft Office jako fronton dla rozwiązania, możesz można korzystać z znanych narzędzi, takich jak funkcje edytora tekstów, Word, funkcji analizy programu Excel i funkcje zarządzania pocztą e-mail programu Outlook i Microsoft Office interfejsy użytkownika . Można tworzyć rozwiązania programu Visual Studio, aby dostosować aplikacje pakietu Office i dodać konkretne funkcje niezbędne do procesów biznesowych. Na przykład można przekształcić Word generator kontraktu, który składana kontrakty się już istniejących części, których może być utworzona, można edytować lub nie można edytować. Przy użyciu programu Excel można utworzyć arkusz automatycznych budżetu dostosowanych do różnych projektów. Użytkownicy mogą również czerpać rozwiązań pakietu office w trybie offline, dzięki czemu częściej niż użycie architektury usługi sieci web złożonych rozwiązań.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
   
--   [Architektura Dostosowywanie na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)  
+-   [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)  
   
 ### <a name="vsto-add-ins"></a>Dodatków VSTO  
  Dodatków VSTO składają się z zestawu, który jest skojarzony z aplikacją Microsoft Office. Zazwyczaj dodatku VSTO uruchamiane po skojarzona aplikacja jest uruchomiona, mimo że użytkownicy mogą również ładować dodatków VSTO po aplikacja jest już uruchomiona. Funkcje dodatków VSTO, tworzone są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.  

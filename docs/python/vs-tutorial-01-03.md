@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b74b905108543422163142fac5984626969ba95d
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 
@@ -31,7 +32,7 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
     ![Okno interaktywne Python i przeciągając zmiany rozmiaru](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Możesz zmienić rozmiar wszystkich okien w programie Visual Studio przez przeciągnięcie granicznych separatorów. Można również przeciągnij windows niezależnie od ramki Visual Studio i rozmieszczenia w dowolny sposób w ramce. Aby uzyskać szczegółowe informacje, zobacz <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">dostosowywanie układów okien</a>.
+    > Możesz zmienić rozmiar wszystkich okien w programie Visual Studio przez przeciągnięcie granicznych separatorów. Można również przeciągnij windows niezależnie od ramki Visual Studio i rozmieszczenia w dowolny sposób w ramce. Aby uzyskać szczegółowe informacje, zobacz [dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Wprowadź kilka instrukcje, takie jak `print("Hello, Visual Studio")` i wyrażenia, takich jak `123/456` natychmiastowego wyników:
 

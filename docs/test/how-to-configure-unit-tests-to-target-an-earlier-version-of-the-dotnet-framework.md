@@ -11,11 +11,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d7a899e16d79ba2aae40506eb3cd6739dcdb4397
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: f4da0733b53b17dbcca779b0fd3e7afcddcb2e85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
 Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wersji programu .NET Framework jest domyślnie jako element docelowy. Ponadto jeśli projekty testowe uaktualnienie poprzedniej wersji programu Visual Studio, ich uaktualnienia do najnowszej wersji programu .NET Framework. Edytując właściwości projektu, można jawnie ponownie docelowych projektu do wcześniejszych wersji programu .NET Framework.  
@@ -129,4 +130,4 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wers
  [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Tworzenie rozwiązań programu SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Okno dialogowe Ustawienia zaawansowane kompilatora (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+ [Zaawansowane ustawienia kompilatora (Visual Basic), okno dialogowe](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

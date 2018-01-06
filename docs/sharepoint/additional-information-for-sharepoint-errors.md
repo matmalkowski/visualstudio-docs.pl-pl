@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4323bb31cb1b63e26c4964bb8e1ce71f010a249e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55151999b3fb0576eb71a1f112bb4c4069accba5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów SharePoint
   Możesz znaleźć pomocy w rozwiązywaniu problemów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint błędów i ostrzeżeń w Rozwiązywanie problemów z tematów i fora publicznego Microsoft Developer Network (MSDN).  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md)  
   
--   [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
+-   [Rozwiązywanie problemów związanych z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Inne zasoby  
  W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint, fora i inne zasoby, które są dostępne w witrynie MSDN.  

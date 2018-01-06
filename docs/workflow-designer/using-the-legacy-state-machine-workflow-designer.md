@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Za pomocą projektanta przepływów pracy maszyny stanu starszych
 Podczas tworzenia nowego projektu maszyny stanu przepływu pracy w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] który dotyczy, albo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], możesz użyć **Aplikacja konsoli przepływu pracy maszyny stanu** lub  **Stan: Biblioteka przepływu pracy automatu** szablonu projektu starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant maszyny stanu jest przedstawiany jako przepływem pracy starszego interfejsu użytkownika projektanta. Uzyskać informacji o szablonach projektu maszyny stanu starszej wersji, zobacz [jak: utworzyć stanu komputera przepływu pracy aplikacji konsoli (starsze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [porady: Tworzenie biblioteki przepływu pracy (starsze)maszynystanu](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

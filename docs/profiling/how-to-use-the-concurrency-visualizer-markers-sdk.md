@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eacea655fe24b497b6bf9caa699e03cac99103d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 794a853db12f106e8f7002d93bca798d45bb582c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Porady: korzystanie ze znaczników wizualizatora współbieżności SDK
 W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżności SDK do tworzenia zakresów i zapisać flagi, wiadomości i alerty.  
@@ -180,4 +181,4 @@ W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżno
      ![CONCURRENCY Visualizer z 3 serii znacznika niestandardowego](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wizualizatora współbieżności SDK](../profiling/concurrency-visualizer-sdk.md)
+ [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

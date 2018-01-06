@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6e0d64c1a0a9f80bf4c3b9ff677c3e3c5e6bc984
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 31afb7827905a0111027cb38d9081def211df7dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Porady: Konfigurowanie właściwości projektu przepływu pracy (starsze)
 Wykonaj następujące kroki, aby wyświetlić lub zmodyfikować właściwości, które są skojarzone z projektów przepływu pracy.  
@@ -36,4 +37,4 @@ Wykonaj następujące kroki, aby wyświetlić lub zmodyfikować właściwości, 
 4.  W projekcie **właściwości** okna, wyświetlanie i modyfikowanie właściwości, które chcesz zmienić.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie projektów przepływu pracy starsza wersja](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)

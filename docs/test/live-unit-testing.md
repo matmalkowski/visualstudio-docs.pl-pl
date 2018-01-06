@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: af8e902f4d56d18097e99a06f76958d3bf2fcff2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testy jednostkowe za pomocą programu Visual Studio 2017 na żywo
 
@@ -117,7 +118,7 @@ Najeżdżając symbol Zakończono powodzeniem lub niepowodzeniem w oknie Kod wid
  
   ![Obraz](./media/lut-failedinfo.png) 
 
-Oprócz nazwy i wyniki testów, umożliwia etykietka narzędzia należy uruchomić ponownie zestaw testów, a także Uruchom zestaw testów za pomocą debugera. W przypadku wybrania jednego lub więcej testów w etykietce narzędzia można również uruchomić lub debugowania tylko te testy. Dzięki temu można debugować testów bez konieczności opuszczania okna kodu. Podczas debugowania, oprócz obserwowania wszystkie punkty przerwania może już ustawiono, wykonanie programu wstrzymuje gdy debuger wykonuje [ `Assert` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) metodę, która zwraca nieoczekiwany wynik. 
+Oprócz nazwy i wyniki testów, umożliwia etykietka narzędzia należy uruchomić ponownie zestaw testów, a także Uruchom zestaw testów za pomocą debugera. W przypadku wybrania jednego lub więcej testów w etykietce narzędzia można również uruchomić lub debugowania tylko te testy. Dzięki temu można debugować testów bez konieczności opuszczania okna kodu. Podczas debugowania, oprócz obserwowania wszystkie punkty przerwania może już ustawiono, wykonanie programu wstrzymuje gdy debuger wykonuje [ `Assert` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) metodę, która zwraca nieoczekiwany wynik. 
 
 Po ustawieniu kursora nie powiodło się testu w etykietce narzędzia rozszerza zapewnienie dodatkowych informacji na temat błędu, jak pokazano na poniższej ilustracji. Dwukrotne kliknięcie na nieudanych testów w etykietce narzędzia, można przejść bezpośrednio do niego.
 

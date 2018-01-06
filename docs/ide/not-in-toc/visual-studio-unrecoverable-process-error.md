@@ -11,11 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 6964c9e0e1202623d535724f6bc3faff018d948a
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 703e27a95d6a0f4b680ad6a729dc974dfe98fc11
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # Błąd nieodwracalny proces programu Visual Studio
 
@@ -40,6 +41,7 @@ Poniżej przedstawiono listę procesów poza procesem, używany przez Visual Stu
 - ServiceHub.SettingsHost.exe
 - ServiceHub.Host.CLR.x86.exe
 - ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.RoslynCodeAnalysisService.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe

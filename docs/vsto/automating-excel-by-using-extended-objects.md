@@ -25,11 +25,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fee085fc97308dd3f62066215b65faede08162e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8342db2cc5803aaed31a7bda0cc8d8b6ae15e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Excel w programie Visual Studio, można użyć *hosta elementów* i *kontrolki hosta*s w ramach rozwiązań. Są to obiekty, które rozszerzają niektórych obiektów często używane w modelu obiektów programu Excel (to znaczy obiektu modelu udostępnianym przez podstawowy zestaw międzyoperacyjny dla programu Excel), takich jak <xref:Microsoft.Office.Interop.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Range> obiektów. Obiekty rozszerzone przypominają obiektami programu Excel, które są oparte na, ale ich dodać dodatkowe funkcje, takie jak nowe zdarzenia i możliwości wiązania danych do obiektów.  
@@ -41,11 +42,11 @@ ms.lasthandoff: 10/31/2017
 ## <a name="excel-host-items"></a>Obiekty hosta programu Excel  
  Projekty programu Excel umożliwiają dostęp do wielu elementów hosta:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Reprezentuje zawiera ten element hosta arkusza w projekcie. Działa również jako kontener dla zarządzane formanty, łącznie z formantami hosta i formantów formularzy systemu Windows i przechowuje informacje o formantach w jego powierzchnię. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>., Reprezentuje zawiera ten element hosta arkusza w projekcie. Działa również jako kontener dla zarządzane formanty, łącznie z formantami hosta i formantów formularzy systemu Windows i przechowuje informacje o formantach w jego powierzchnię. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Ten element hosta reprezentuje skoroszytu w projekcie i działa jako kontener dla składników, które są udostępniane przez wszystkich arkuszy w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Workbook>., Ten element hosta reprezentuje skoroszytu w projekcie i działa jako kontener dla składników, które są udostępniane przez wszystkich arkuszy w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Ten host elementu arkuszu programu Excel, która zawiera tylko wykres i opisuje zdarzenia.  
+-   <xref:Microsoft.Office.Tools.Excel.ChartSheet>., Ten host elementu arkuszu programu Excel, która zawiera tylko wykres i opisuje zdarzenia.  
   
      Po dodaniu wykresu w arkuszu w czasie projektowania, jako nowego arkusza w projekcie dostosowania na poziomie dokumentu programu Microsoft Office Excel Visual Studio automatycznie tworzy <xref:Microsoft.Office.Tools.Excel.ChartSheet> element hosta.  
   
@@ -56,13 +57,13 @@ ms.lasthandoff: 10/31/2017
   
  Aby uzyskać więcej informacji o formantach hosta można użyć w projekty programu Excel, zobacz następujące tematy:  
   
--   [Formant wykresu](../vsto/chart-control.md)  
+-   [Kontrolka wykresu](../vsto/chart-control.md)  
   
--   [ListObject — formant](../vsto/listobject-control.md)  
+-   [ListObject, kontrolka](../vsto/listobject-control.md)  
   
--   [Namedrange — formant](../vsto/namedrange-control.md)  
+-   [NamedRange, kontrolka](../vsto/namedrange-control.md)  
   
--   [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)  
+-   [XmlMappedRange, kontrolka](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: wypełnianie formantów ListObject danymi](../vsto/how-to-fill-listobject-controls-with-data.md)   
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)   
- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

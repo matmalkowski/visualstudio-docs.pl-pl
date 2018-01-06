@@ -12,24 +12,25 @@ caps.latest.revision: "31"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6f171bdffd8fb76801156331f7016d061c8333a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Dostosowywanie prezentacji na diagramie
 Diagram jest obszaru głównego prezentacji projektanta języka specyficznego dla domeny. Zazwyczaj użytkowników będzie używać diagramu do skonstruowania ich modeli. Diagram można dostosować zgodnie z opisem w poniższych tematach.  
   
--   [Definiowanie łączników i kształtów](../modeling/defining-shapes-and-connectors.md)  
+-   [Definiowanie kształtów i łączników](../modeling/defining-shapes-and-connectors.md)  
   
--   [Kontrolowanie kolor, styl linii i inne właściwości kształtu](../modeling/controlling-color-line-style-and-other-shape-properties.md)  
+-   [Kontrolowanie koloru, stylu linii i innych właściwości kształtu](../modeling/controlling-color-line-style-and-other-shape-properties.md)  
   
--   [Kontrolowanie widoczności ikony lub Dekoratora](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)  
+-   [Kontrolowanie widoczności ikony lub elementu Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)  
   
--   [Dostosowywanie pola obrazu i tekstu](../modeling/customizing-text-and-image-fields.md)  
+-   [Dostosowywanie pól tekstowych i obrazu](../modeling/customizing-text-and-image-fields.md)  
   
--   [Ustawienie obraz tła na diagramie](../modeling/setting-a-background-image-on-a-diagram.md)  
+-   [Ustawienie obrazu tła w diagramie](../modeling/setting-a-background-image-on-a-diagram.md)  
   
 -   [Zagnieżdżanie kształtów](../modeling/nesting-shapes.md)  
   

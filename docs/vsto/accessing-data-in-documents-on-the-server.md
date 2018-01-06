@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8345f7d197f44455ae990c159550587bbc79de24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d81c8b10f5ace634cc58bd3135af9b2e69f1c519
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-data-in-documents-on-the-server"></a>Uzyskiwanie dostępu do danych w dokumentach na serwerze
   Można programu z danymi w dostosowaniu poziomie dokumentu, bez konieczności używania modelu obiektów programu Microsoft Office Word i Microsoft Office Excel. Oznacza to, że można uzyskać dostępu do danych znajdujących się w dokumencie na serwerze, który nie ma programu Word lub zainstalowany program Excel. Na przykład kodu na serwerze (na przykład w [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony) można dostosować dane w dokumencie i wysłać dokument dostosowane do użytkownika końcowego. Gdy użytkownik końcowy otworzy dokumentu, kod powiązania danych w zestawie rozwiązanie wiąże danych dostosowane do dokumentu. Jest to możliwe, ponieważ dane w dokumencie jest oddzielony od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md).  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dostępu do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)  
+ [Dane z pamięci podręcznej dostosowywane na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)  
   
   

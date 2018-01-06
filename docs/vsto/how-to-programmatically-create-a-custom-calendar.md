@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 824388d1324095ed8296fd89c71b955967c9bfb2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5f8b606008c66e2c0c173351d5e3d31c808c996
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Porady: Programowane tworzenie niestandardowego kalendarza
   W tym przykładzie jest tworzony nowy folder kalendarza o nazwie **PersonalCalendar**, a następnie tworzy nowy element terminu i dodaje go do folderu Kalendarz. Następnie kod wyświetla folderu Kalendarz.  
@@ -37,6 +38,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)   
  [Porady: programowane tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)   
- [Porady: programowane Tworzenie wezwania na spotkanie](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+ [Instrukcje: Programowe tworzenie wezwania na spotkanie](../vsto/how-to-programmatically-create-a-meeting-request.md)  
   
   

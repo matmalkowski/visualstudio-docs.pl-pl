@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a48af8fb930f30157314b408ff4b77f4c397ff7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 98783b05d531f41583bbd3843e50a808f655ba2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-xsd-files"></a>Przykładowe pliki XSD
 Następujące pliki przykładowe są używane w dokumentacji projektanta schematu XSD.  
@@ -29,5 +30,5 @@ Następujące pliki przykładowe są używane w dokumentacji projektanta schemat
 |Temat|Opis|  
 |-----------|-----------------|  
 |[Przykładowy plik XSD: Schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Dokument XSD, który zawiera schemat zamówienia zakupu typowych.|  
-|[Przykładowy plik XSD: Schema proste](../xml-tools/sample-xsd-file-simple-schema.md)|Dokument XSD, który zawiera prosty schemat.|  
-|[Przykładowy plik XSD: relacji](../xml-tools/sample-xsd-file-relationships.md)|Dokument XSD, który zawiera schemat z relacji.|
+|[Przykładowy plik XSD: Prosty schemat](../xml-tools/sample-xsd-file-simple-schema.md)|Dokument XSD, który zawiera prosty schemat.|  
+|[Przykładowy plik XSD: Relacje](../xml-tools/sample-xsd-file-relationships.md)|Dokument XSD, który zawiera schemat z relacji.|

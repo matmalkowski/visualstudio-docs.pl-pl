@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>Porady: Użyj fragmentów kodu XML
 Można wywołać fragmentów kodu XML za pomocą następujących dwóch poleceń menu skrótów edytora XML. **Wstawić fragment** polecenia wstawia fragment kodu XML w bieżącej pozycji kursora. **z funkcji Otocz przez** polecenia opakowuje fragment kodu XML wokół zaznaczonego tekstu. Każdy fragment kodu XML wyznaczył fragment typów. Typy fragment określają, czy fragment kodu jest dostępna z **wstawić fragment** polecenia **z funkcji Otocz przez** polecenia lub obie.  
@@ -112,4 +113,4 @@ Można wywołać fragmentów kodu XML za pomocą następujących dwóch poleceń
 ## <a name="see-also"></a>Zobacz też  
  [Fragmentów kodu XML](../xml-tools/xml-snippets.md)   
  [Porady: generowanie fragment kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Porady: tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md)
+ [Instrukcje: Tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md)

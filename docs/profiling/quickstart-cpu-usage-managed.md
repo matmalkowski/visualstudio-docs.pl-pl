@@ -14,11 +14,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82184d8374a00adda1b5001b233947cc413ac4c7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: 50f2612687a58857f4d05478db073070e2cc9936
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 

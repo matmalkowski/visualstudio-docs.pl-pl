@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: daf5cfb79c16a26b871e2c4d07ec304c17cb6a33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d36bb9342c1db3fcf0fe007b87831b8c921af6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Porady: Programowane używanie okien dialogowych programu Word w trybie ukrytym
   Złożone operacje przy użyciu wywołania metody co można wykonać za pomocą wbudowanych okien dialogowych w programie Microsoft Word pakietu Office bez wyświetlania ich do użytkownika. Można to zrobić za pomocą <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metody <xref:Microsoft.Office.Interop.Word.Dialog> obiektu bez wywoływania elementu <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metody.  

@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opisano klasy i relacje języka specyficznego dla domeny, wraz z diagramu, kształtów, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka specyficznego dla domeny kod, który definiuje te narzędzia jest generowany zgodnie z informacjami w pliku DslDefinition.dsl.  
@@ -197,7 +198,7 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
   
 -   **IsElementName**. Jeśli ten atrybut ma ustawioną wartość true, jego wartość jest automatycznie ustawiana unikatowe wartości podczas tworzenia wystąpienia klasy nadrzędnej. Ten atrybut można ustawić wartość true dla tylko jednej właściwości każdej klasy, która musi mieć typ ciągu. W przykładzie Diagram składnika `Name` właściwości w `NamedElement` ma `IsElementName` ustawioną na true. Zawsze, gdy użytkownik tworzy `Component` elementu (który dziedziczy z `NamedElement`), jest inicjowana automatycznie podobną "Component6."  
   
--   `DefaultValue`. Jeśli ten atrybut został określony, podanej wartości jest przypisany do tego atrybutu dla nowego wystąpienia tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowe parametry.  
+-   `DefaultValue`., Jeśli ten atrybut został określony, podanej wartości jest przypisany do tego atrybutu dla nowego wystąpienia tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowe parametry.  
   
 -   **Kategoria** jest nagłówka, w którym właściwość będą wyświetlane w **właściwości** okna.  
   
@@ -549,4 +550,4 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 ## <a name="see-also"></a>Zobacz też  
  [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
- [Opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md)
+ [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

@@ -11,11 +11,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5df259efedd50e67ee6e8f94203eb4e0ac56c71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Testowanie aplikacji uniwersalnej systemu Windows z kodowanych testów interfejsu użytkownika
 
@@ -135,7 +136,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
     End Sub  
     ```  
   
-     **Formanty**  
+     **Kontrolki**  
   
     ```csharp  
     #region Properties  
@@ -324,4 +325,4 @@ Po utworzeniu projektu tworzenia testu pozostaje taki sam jak przed.
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Ustawianie unikatowej właściwości automatyzacji dla formantów platformy uniwersalnej systemu Windows do testowania](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
+ [Ustawianie unikatowej właściwości automatyzacji dla kontrolek platformy UWP przeznaczonych do testowania](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

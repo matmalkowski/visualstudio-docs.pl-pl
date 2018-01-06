@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f3e4590a2623d05b78f4c62e877b0ff3783ceec9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b42dadc5a606bcbd94334a070cc571607576dcc9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]obsługuje określony zbiór warunków, które mogą być stosowane wszędzie tam, gdzie `Condition` atrybut jest dozwolony. W poniższej tabeli przedstawiono te warunki.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------|  
 |'`stringA`' == '`stringB`'|Daje w wyniku `true` Jeśli `stringA` jest równe `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla ciągów znaków alfanumerycznych prostego lub wartości typu boolean. Jednak apostrofy są wymagane dla wartości puste.|  
 |'`stringA`' != '`stringB`'|Daje w wyniku `true` Jeśli `stringA` nie jest równa `stringB`.<br /><br /> Na przykład:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Apostrofy nie są wymagane dla ciągów znaków alfanumerycznych prostego lub wartości typu boolean. Jednak apostrofy są wymagane dla wartości puste.|  
-|\<, >, \<=, >=|Oblicza wartości liczbowych argumenty operacji. Zwraca `true` Jeśli relacyjne ocena ma wartość true. Argumenty operacji musi być liczbą dziesiętną lub szesnastkową. Szesnastkowe musi rozpoczynać się od "0 x". **Uwaga:** w formacie XML, znaki `<` i `>` należy użyć znaków ucieczki. Symbol `<` jest reprezentowany jako `<`. Symbol `>` jest reprezentowany jako `>`.|  
+|\<, >, \<=, >=|Oblicza wartości liczbowych argumenty operacji. Zwraca `true` Jeśli relacyjne ocena ma wartość true. Argumenty operacji musi być liczbą dziesiętną lub szesnastkową. Szesnastkowe musi rozpoczynać się od "0 x". **Uwaga:** w formacie XML, znaki `<` i `>` należy użyć znaków ucieczki. Symbol `<` jest reprezentowany jako `&lt;`. Symbol `>` jest reprezentowany jako `&gt;`.|  
 |Istnieje ("`stringA`")|Daje w wyniku `true` Jeśli plik lub folder o nazwie `stringA` istnieje.<br /><br /> Na przykład:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Apostrofy nie są wymagane dla ciągów znaków alfanumerycznych prostego lub wartości typu boolean. Jednak apostrofy są wymagane dla wartości puste.|  
 |HasTrailingSlash ("`stringA`")|Daje w wyniku `true` czy podany ciąg zawiera albo z poprzednimi wersjami ukośnika (\\) lub przesyłane znaku ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Apostrofy nie są wymagane dla ciągów znaków alfanumerycznych prostego lub wartości typu boolean. Jednak apostrofy są wymagane dla wartości puste.|  
 |!|Daje w wyniku `true` , gdy argument jest `false`.|  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
  [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)   
- [Wskazówki: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+ [Przewodnik: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

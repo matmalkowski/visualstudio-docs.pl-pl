@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie Python w usłudze aplikacji Azure
 
@@ -28,7 +31,7 @@ Można dostosowywać obsługi języka Python w usłudze Azure App Service jest d
 > Chociaż usługi aplikacji — domyślnie ma Python 2.7 i języka Python 3.4 zainstalowane w głównym folderów na serwerze, nie można dostosować lub instalowania pakietów w tych środowiskach ani powinien zależeć od ich obecności. Należy zamiast tego polegać na rozszerzeniu lokacji, którą kontrolujesz, zgodnie z opisem w tym temacie.
 
 > [!Important]
-> Procesach opisanych w tym miejscu są może ulec zmianie, a szczególnie w celu poprawy jakości. Zmiany są ogłaszane na [Python Engineering na blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/). >
+> Procesach opisanych w tym miejscu są może ulec zmianie, a szczególnie w celu poprawy jakości. Zmiany są ogłaszane na [Python Engineering na blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Wybieranie wersji języka Python, za pośrednictwem portalu Azure
 
@@ -44,20 +47,19 @@ Można dostosowywać obsługi języka Python w usłudze Azure App Service jest d
 1. Zaznacz rozszerzenie, zaakceptuj postanowienia prawne, a następnie wybierz **OK**.
 1. Po zakończeniu instalacji w portalu pojawi się powiadomienie.
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Wybieranie wersji języka Python za pomocą usługi Azure Resource Manager
 
 Jeśli wdrażasz App Service przy użyciu szablonu usługi Azure Resource Manager, należy dodać rozszerzenie lokacji jako zasób. Rozszerzenie jest wyświetlany jako zagnieżdżonych zasobów z typem `siteextensions` i nazwy na podstawie [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Na przykład po dodawania odwołania do `python361x64` (Python 3.6.1 x 64), Twój szablon może wyglądać następująco (niektóre właściwości pominięcia):
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -96,8 +98,8 @@ Ta akcja powoduje otwarcie strony opis rozszerzenia zawierający ścieżkę:
 Jeśli masz problem z wyświetlaniem ścieżka rozszerzenia można znaleźć je ręcznie przy użyciu konsoli:
 
 1. Na stronie usługi aplikacji, wybierz **narzędzi programistycznych > konsoli**.
-2. Wprowadź polecenie `ls ../home` lub `dir ..\home` można znaleźć folderów rozszerzenia najwyższego poziomu, takich jak `Python361x64`.
-3. Wprowadź polecenie, takie jak `ls ../home/python361x64` lub `dir ..\home\python361x64` upewnić się, że zawiera `python.exe` i inne pliki interpreter.
+1. Wprowadź polecenie `ls ../home` lub `dir ..\home` można znaleźć folderów rozszerzenia najwyższego poziomu, takich jak `Python361x64`.
+1. Wprowadź polecenie, takie jak `ls ../home/python361x64` lub `dir ..\home\python361x64` upewnić się, że zawiera `python.exe` i inne pliki interpreter.
 
 ### <a name="configuring-the-fastcgi-handler"></a>Konfigurowanie obsługi FastCGI
 
@@ -123,6 +125,7 @@ FastCGI jest interfejs, który działa na poziomie żądania. Usługi IIS odbier
 ```
 
 `<appSettings>` Zdefiniowanych w tym miejscu są dostępne dla aplikacji jako zmienne środowiskowe:
+
 - Wartość `PYTHONPATH` może zostać rozszerzona za darmo, ale musi zawierać katalogu głównego aplikacji.
 - `WSGI_HANDLER`musi wskazywać do aplikacji WSGI importowane z aplikacji.
 - `WSGI_LOG`jest opcjonalne, ale zalecane do debugowania swojej aplikacji. 
@@ -169,33 +172,32 @@ Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z na
 | Pakietu z aplikacją | Zainstaluj pakiety bezpośrednio do projektu, a następnie wdrożenia ich do usługi App Service tak, jakby były częścią aplikacji. W zależności od tego, jak wiele zależności są i jak często należy zaktualizować, ta metoda może być Najprostszym sposobem uzyskać przechodzi do wdrożenia pracy. Można wskazać, że biblioteki musi odpowiadać wersji języka Python na serwerze, w przeciwnym razie zostanie wyświetlony zasłoniętej błędy po wdrożeniu. Inaczej mówiąc, ponieważ wersji języka Python w usłudze App Service, rozszerzenia lokacji są dokładnie takie same jak te wersje wydanej w dniu python.org, można łatwo uzyskać zgodnej wersji dla rozwoju lokalnych. |
 | Środowiska wirtualne | Nieobsługiwane. Zamiast tego należy użyć, tworzenie pakietów i ustawić `PYTHONPATH` zmiennej środowiskowej, aby wskazać lokalizację pakietów. |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Konsola Kudu usługi aplikacji Azure
 
 [Konsoli Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) umożliwia bezpośrednie, z podwyższonym poziomem uprawnień dostępu do wiersza polecenia do serwera usługi aplikacji i systemu plików. To jest zarówno przydatnym narzędziem debugowania i umożliwia operacji interfejsu wiersza polecenia, takich jak instalowanie pakietów.
 
 1. Otwórz program Kudu ze strony usługi aplikacji w portalu Azure, wybierając **narzędzi programistycznych > Zaawansowane narzędzia**, wybierając **Przejdź**. Ta akcja powoduje przejście do adresu URL, który jest taki sam jak podstawowy aplikacji adres URL Twojej usługi z wyjątkiem z `.scm` wstawiony. Na przykład, jeśli podstawowy adres URL jest `https://vspython-test.azurewebsites.net/` Kudu jest na `https://vspython-test.scm.azurewebsites.net/` (które można dodać do zakładek):
 
-    ![Konsoli Kudu dla usługi Azure App Service](media/python-on-azure-console01.png)    
+    ![Konsoli Kudu dla usługi Azure App Service](media/python-on-azure-console01.png)
 
-2. Wybierz **konsoli debugowania > CMD** aby otworzyć konsolę, w którym można nawigować do instalacji języka Python i zobacz, co biblioteki są już istnieje.
+1. Wybierz **konsoli debugowania > CMD** aby otworzyć konsolę, w którym można nawigować do instalacji języka Python i zobacz, co biblioteki są już istnieje.
 
-3. Do zainstalowania jednego pakietu:
+1. Do zainstalowania jednego pakietu:
 
     a. Przejdź do folderu instalacji języka Python, w którym chcesz zainstalować pakiet, takich jak `d:\home\python361x64`.
-     
+
     b. Użyj `python.exe -m pip install <package_name>` do zainstalowania pakietu.
-    
+
     ![Przykład instalowania bottle za pośrednictwem konsoli Kudu dla usługi Azure App Service](media/python-on-azure-console02.png)
-    
-4. Jeśli została wdrożona `requirements.txt` dla aplikacji do serwera, zainstalować te wymagania w następujący sposób:
+
+1. Jeśli została wdrożona `requirements.txt` dla aplikacji do serwera, zainstalować te wymagania w następujący sposób:
 
     a. Przejdź do folderu instalacji języka Python, w którym chcesz zainstalować pakiet, takich jak `d:\home\python361x64`.
-    
+
     b. Uruchom polecenie `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
-    
+
     Przy użyciu `requirements.txt` jest zalecane, ponieważ jest łatwy do odtworzenia pakietu dokładną wartość lokalnie i na serwerze. Pamiętaj tylko odwiedzić konsoli po wdrożeniu zmiany wprowadzone w `requirements.txt` i ponownie uruchom polecenie.
-    
+
 > [!Note]
 > Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [Zarządzanie wymaganych pakietów](python-environments.md#managing-required-packages)
 
@@ -210,7 +212,6 @@ Zamiast używać konsoli Kudu za pośrednictwem portalu Azure, możesz uruchamia
 }
 ```
 
-Aby uzyskać informacje o poleceniach oraz uwierzytelniania, zobacz [dokumentacji Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). 
+Aby uzyskać informacje o poleceniach oraz uwierzytelniania, zobacz [dokumentacji Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Możesz też sprawdzić za pomocą poświadczeń `az webapp deployment list-publishing-profiles` polecenia za pomocą wiersza polecenia platformy Azure (zobacz [wdrożenia aplikacji sieci Web az](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles)). Biblioteka pomocnika do ogłaszania Kudu poleceń jest dostępna na [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
-
+Możesz też sprawdzić za pomocą poświadczeń `az webapp deployment list-publishing-profiles` polecenia za pomocą wiersza polecenia platformy Azure (zobacz [wdrożenia aplikacji sieci Web az](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). Biblioteka pomocnika do ogłaszania Kudu poleceń jest dostępna na [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

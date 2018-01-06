@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 43e3da62c78ebead3d13b1a41e7b1fff92fcfc80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 70c7427efa093d7af42b18e694fbf068d52624f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Porady: Tworzenie projektu pusty przepływu pracy (starsze)
 Wykonaj następujące kroki, aby utworzyć pusty projekt przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] dostarczonych przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -50,4 +51,4 @@ Wykonaj następujące kroki, aby utworzyć pusty projekt przepływu pracy za pom
 8.  Kliknij przycisk **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie projektów przepływu pracy starsza wersja](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)

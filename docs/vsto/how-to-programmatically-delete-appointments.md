@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b27c536a9e5b7237efdd6b11b4be75ca1d91f19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 620b0643280adebad55adcfacb6883b644e42227
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Porady: Programowane usuwanie terminów
   W tym przykładzie powoduje usunięcie jednego wystąpienia terminu cyklicznego. W przykładzie założono występuje wystąpienia terminu cyklicznego 28 czerwca 2006 08:00.  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Porady: programowane tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)   
  [Porady: programowane Tworzenie niestandardowego kalendarza](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Porady: programowane Tworzenie wezwania na spotkanie](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+ [Instrukcje: Programowe tworzenie wezwania na spotkanie](../vsto/how-to-programmatically-create-a-meeting-request.md)  
   
   

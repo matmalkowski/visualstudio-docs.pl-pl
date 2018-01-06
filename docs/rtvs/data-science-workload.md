@@ -14,11 +14,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 014d0ecef725f425694c231048d31688ec5a59ea
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: data-science
+ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Obciążenie nauki dane i aplikacje analitycznych
 
@@ -26,7 +27,7 @@ Obciążenie nauki dane i aplikacje analityczne w programie Visual Studio, poł�
 
 - [R i klienta Microsoft R](../rtvs/index.md)
 - [Python i Anaconda](../python/python-in-visual-studio.md)
-- [F # w środowisku .NET Framework](https://docs.microsoft.com/dotnet/fsharp/)
+- [F # w środowisku .NET Framework](/dotnet/fsharp/)
 
 ![Obciążenie nauki danych i analizy aplikacji w Instalatorze programu Visual Studio](media/data-science-workload.png)
 

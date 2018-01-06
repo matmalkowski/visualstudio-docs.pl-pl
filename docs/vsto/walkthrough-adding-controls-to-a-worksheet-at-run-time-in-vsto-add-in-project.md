@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Przewodnik: dodawanie kontrolek do arkusza w czasie wykonywania w projekcie dodatku narzędzi VSTO
   Formanty można dodać do dowolnego Otwórz arkusz przy użyciu dodatku VSTO programu Excel. W tym przewodniku pokazano, jak korzystanie ze Wstążki, aby umożliwić użytkownikom dodawanie <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>, a <xref:Microsoft.Office.Tools.Excel.ListObject> do arkusza. Aby uzyskać informacje, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -77,21 +78,21 @@ ms.lasthandoff: 10/31/2017
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**Przycisk**|  
-    |**Etykiety**|**Przycisk**|  
+    |**Etykieta**|**Przycisk**|  
   
 6.  Drugie pole wyboru, aby dodać **grupa1**, a następnie Zmień następujące właściwości.  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**NamedRange**|  
-    |**Etykiety**|**NamedRange**|  
+    |**Etykieta**|**NamedRange**|  
   
 7.  Trzecie pole wyboru, aby dodać **grupa1**, a następnie Zmień następujące właściwości.  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**ListObject**|  
-    |**Etykiety**|**ListObject**|  
+    |**Etykieta**|**ListObject**|  
   
 ## <a name="adding-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  Zarządzane formanty można dodać tylko do elementów hosta, które działają jak kontenery. Ponieważ projektów dodatku VSTO pracować z dowolnego otwartego skoroszytu, to dodatku VSTO konwertuje element hosta arkusza lub pobiera istniejący element hosta, przed dodaniem formantu. Dodawanie kodu do obsługi zdarzeń kliknięcia każdego formantu można wygenerować <xref:Microsoft.Office.Tools.Excel.Worksheet> elementu hosta, który jest oparty na otwieranie arkusza. Następnie należy dodać <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>, a <xref:Microsoft.Office.Tools.Excel.ListObject> na bieżące zaznaczenie w arkuszu.  
@@ -195,6 +196,6 @@ ms.lasthandoff: 10/31/2017
  [Formanty formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
- [ListObject — formant](../vsto/listobject-control.md)  
+ [ListObject, kontrolka](../vsto/listobject-control.md)  
   
   

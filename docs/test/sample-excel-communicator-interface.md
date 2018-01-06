@@ -11,11 +11,12 @@ ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 653d6430f18b2ca5cdbd2e1307f0c8386cebea91
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aafc9ef6bd8f10e00b64a7bfb25fabc8fedb8b21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-communicator-interface"></a>Interfejs komunikatora programu Excel
 Przykład `IExcelUICommunication` interfejs jest używany w `ExcelUICommunicator` obiektu w `ExcelAddIn` projektu.  
@@ -37,4 +38,4 @@ Przykład `IExcelUICommunication` interfejs jest używany w `ExcelUICommunicator
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [Przykładowy dodatek Excel dla kodowanych testów UI](../test/sample-excel-add-in-for-coded-ui-testing.md)   
- [Przykładowe rozszerzenie kodowanych testów UI dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md)
+ [Przykładowe rozszerzenie kodowanych testów interfejsu użytkownika dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md)

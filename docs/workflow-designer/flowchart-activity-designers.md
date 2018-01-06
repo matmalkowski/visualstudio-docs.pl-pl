@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: daffde4567ebe1134277147afe35ae501a57cdb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a0d158311b82a799cbdf7e7d9c0093f588208a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designers"></a>Schemat blokowy projektantów działań
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używany do zarządzania zaprezentowane w przepływie pracy. Poniższe tematy opisują te działania i zawierają wskazówki dotyczące sposobu ich używania.  
@@ -42,15 +43,15 @@ ms.lasthandoff: 10/27/2017
   
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)  
   
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)  
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
   
  [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   
- [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)  
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
   
- [Transakcji](../workflow-designer/transaction-activity-designers.md)  
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)  
   
  [Kolekcja](../workflow-designer/collection-activity-designers.md)  
   

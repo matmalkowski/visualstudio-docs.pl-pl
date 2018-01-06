@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32156e4d2c9e8e5f809a4de64478667e7133aeb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d52a97e57701159a8ff64a106a92f181b50df66f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-collecting-data-using-a-windows-form"></a>Wskazówki: zbieranie danych korzystając z formularzy systemu Windows
   W tym przewodniku pokazano, jak otworzyć formularza systemu Windows z dostosowywania poziomie dokumentu dla programu Microsoft Office Excel, zbiera informacje o użytkowniku i zapisać te informacje w komórce arkusza.  
@@ -146,6 +147,6 @@ ms.lasthandoff: 10/31/2017
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Wskazówki dotyczące korzystania z programu Word](../vsto/walkthroughs-using-word.md)   
- [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)  
+ [Przewodniki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)  
   
   

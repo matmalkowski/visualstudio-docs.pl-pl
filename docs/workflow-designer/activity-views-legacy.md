@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 50f57684db32f601bd4cbf870456da458aa5ce7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a6658bdf0f1df76e585236497ba4ba19525b199
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="activity-views-legacy"></a>Widoki działania (starsze)
 Wiele działań dostarczonych przez [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], w które przepływy pracy są składane, zawiera kilka widoków projektu dostępne w starszych [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Przeciągnięcie Projektant działań z **przybornika** na powierzchnię projektu, a następnie po wybraniu działania można przełączać się między widokami projektowania przy użyciu **przepływu pracy**menu lub klikając prawym przyciskiem myszy wybrane działanie. Podczas przesuwania wskaźnika nad nazwę wybranego działania listy rozwijanej zbiór kart pojawia się również czy służy do przełączania się między różne widoki.  
@@ -40,4 +41,4 @@ Wiele działań dostarczonych przez [!INCLUDE[wf](../workflow-designer/includes/
   
 ## <a name="see-also"></a>Zobacz też  
  [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)   
- [Widoki sekwencyjnego przepływu pracy (starsze)](../workflow-designer/sequential-workflow-views-legacy.md)
+ [Widoki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/sequential-workflow-views-legacy.md)

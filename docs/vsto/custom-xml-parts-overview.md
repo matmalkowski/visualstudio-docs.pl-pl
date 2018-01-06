@@ -28,11 +28,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5891cb7aa85012bbf99b1dd2e35b86ba3c263790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 735660c3af1c0a8792a35981788b70f4a79d55b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML ― Omówienie
   Dane XML można osadzić w dokumentach niektórych aplikacji pakietu Microsoft Office. Po osadzeniu danych XML w dokumencie dane o nazwie *niestandardowym elementem XML*.  
@@ -70,9 +71,9 @@ ms.lasthandoff: 10/31/2017
   
  Aby utworzyć z niestandardowym elementem XML przy użyciu programu Visual Studio, Dodaj nową <xref:Microsoft.Office.Core.CustomXMLPart> do <xref:Microsoft.Office.Core.CustomXMLParts> kolekcji w dokumencie. Więcej informacji znajduje się w następujących tematach:  
   
--   [Porady: Dodawanie niestandardowych części XML na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+-   [Instrukcje: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentów](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
--   [Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+-   [Instrukcje: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
 ### <a name="modifying-xml-parts-without-starting-the-office-application"></a>Modyfikowanie elementy XML bez uruchamiania aplikacji pakietu Office  
  Można dodawać lub modyfikować z niestandardowym elementem XML bez konieczności uruchamiania programu Excel, PowerPoint lub słowa. Jest to przydatne, jeśli chcesz pracować z danymi XML w dokumencie na komputerze, który nie ma zainstalowany, takim jak serwer aplikacji Microsoft Office.  
@@ -87,6 +88,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: Dodawanie niestandardowych części XML na poziomie dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Formanty zawartości](../vsto/content-controls.md)   
- [Wskazówki: Wiązanie formantów zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [Przewodnik: Powiązywanie kontrolek zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
   
   
