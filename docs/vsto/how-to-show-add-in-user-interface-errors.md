@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3b483889dbd970b2225c773e6dd43b9333b0d8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Porady: pokazywanie błędów dodatków interfejsu użytkownika
   Domyślnie jeśli dodatku VSTO podejmie próbę manipulowania Microsoft Office interfejsu użytkownika (UI) i kończy się niepowodzeniem, żaden komunikat o błędzie jest wyświetlany. Można jednak skonfigurować aplikacje Microsoft Office, aby wyświetlić komunikaty o błędach dla błędów, które odnoszą się do interfejsu użytkownika. Te komunikaty umożliwia pomagają w ustaleniu, dlaczego nie ma niestandardowa Wstążka, lub też dlaczego wstążki jest wyświetlana, ale żadne formanty nie są wyświetlane.  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
  [Wstążka ― omówienie](../vsto/ribbon-overview.md)   
- [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)  
+ [Okienko akcji — omówienie](../vsto/actions-pane-overview.md)  
   
   

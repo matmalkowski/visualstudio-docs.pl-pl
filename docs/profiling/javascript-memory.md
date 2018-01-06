@@ -26,11 +26,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci JavaScript w aplikacji platformy uniwersalnej systemu Windows
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby określić sposób użycia pamięci i Znajdź przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows dla systemu Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje dla uniwersalnych aplikacji systemu Windows.
@@ -401,4 +402,4 @@ if (performance && performance.mark) {
     -   Utwórz obiekt testowy i śledzenia ją w widokach analizator pamięci JavaScript, takie jak wyświetlanie typów. Na przykład bardzo duży obiekt można dołączyć do innego obiektu, aby zobaczyć, czy określony obiekt lub element został zbierane pamięci.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [Przewodnik: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

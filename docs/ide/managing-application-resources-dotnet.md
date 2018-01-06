@@ -20,11 +20,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6645a1147b2ee5f5d5ba0b85a7f8999008f5ae19
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 

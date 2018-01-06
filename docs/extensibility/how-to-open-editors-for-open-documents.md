@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Porady: Otwórz edytory dla otwarte dokumenty
 Przed projekt zostanie otwarte okno dokumentu, projekt najpierw należy określić czy plik jest już otwarte okno dokumentu dla innego edytora. Plik można otworzyć w edytorze specyficznego dla projektu, lub jeden z standardowe edytory zarejestrowany w usłudze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -57,4 +58,4 @@ Przed projekt zostanie otwarte okno dokumentu, projekt najpierw należy określi
 ## <a name="see-also"></a>Zobacz też  
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
  [Porady: Otwórz edytory specyficznego dla projektu](../extensibility/how-to-open-project-specific-editors.md)   
- [Porady: otwieranie standardowe edytory](../extensibility/how-to-open-standard-editors.md)
+ [Instrukcje: otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md)

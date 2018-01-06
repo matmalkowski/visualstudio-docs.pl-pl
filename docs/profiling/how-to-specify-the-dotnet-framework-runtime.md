@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 894d3f137787617de88ddcd2bed586c64dd22117
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 9c2e584b467141557d6a8e2a586643417a47edf0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Porady: Określanie środowiska wykonawczego .NET Framework
 Wraz z wydaniem [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], aplikacje mogą być składane modułów, które zostały utworzone przy użyciu różnych wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] środowiska wykonawczego. Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania profilu pierwszy środowiska uruchomieniowego, który jest ładowany przez aplikację. Można określić czasu wykonywania do profilowania podczas uruchamiania aplikacji z profilerem i dołączanie profilera do aplikacji już uruchomione.  

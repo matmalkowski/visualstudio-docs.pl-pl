@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b260610f32f7ece52870e6f6e90d5b0986b61d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugowania i przygotowanie
 W tej sekcji opisano ustawienia właściwości związanych z debugera i przygotowywania było debugowania programu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. W przypadku utworzenia programu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] za pomocą szablonów projektu, te ustawienia są poprawnie ustawione dla Ciebie w konfiguracji debugowania.  
@@ -45,7 +46,7 @@ W tej sekcji opisano ustawienia właściwości związanych z debugera i przygoto
  [Porady: debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Wyjaśniono, jak można debugować plik wykonywalny, który nie został utworzony jako część projektu programu Visual Studio.  
   
- [Porady: debugowanie przy użyciu źródła Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
+ [Instrukcje: debugowanie przy użyciu źródła Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
  Opisuje sposób debugowania źródła z Microsoft Code Center Premium w projekcie programu Visual Studio.  
   
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)  

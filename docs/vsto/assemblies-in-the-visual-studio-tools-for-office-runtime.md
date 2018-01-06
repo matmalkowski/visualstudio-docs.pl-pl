@@ -16,17 +16,18 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 130cf43e7c11eeccae8fdbdd22b46faf6bfe3c49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dff032c3f43c662b75f4d0b757f16e70095efc33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools dla pakietu Office Runtime
   Podczas tworzenia projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zestawy, które są używane dla docelowej platformy .NET Framework projektu i typ projektu. Istnieją różne zestawy w rozszerzenia pakietu Office dla programu .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aby uzyskać więcej informacji na temat rozszerzeń pakietu Office, zobacz [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Zestawy w rozszerzeniach Office programu .NET Framework 4 i[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- Poniższa tabela zawiera listę zestawów, które znajdują się w Office rozszerzenia [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dokumentacja obszary nazw i typy w farmie znajduje się w temacie [odwołania zarządzane & #40; programowanie Office w Visual Studio & #41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
+ Poniższa tabela zawiera listę zestawów, które znajdują się w Office rozszerzenia [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dokumentacja obszary nazw i typy w farmie znajduje się w temacie [odwołania zarządzane &#40; programowanie Office w Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
 |Nazwa zestawu|Opis|  
 |-------------------|-----------------|  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
+ [Visual Studio Tools dla pakietu Office Runtime — scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
   
   

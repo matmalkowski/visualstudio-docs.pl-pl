@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Wskazówki: generowanie kodu przy użyciu szablonów tekstowych
 Generowanie kodu służy do tworzenia kodu program, który jest silnie typizowane i jeszcze można łatwo zmienić po zmianie modelu źródłowego. Natomiast to alternatywny technice zapisywania całkowicie ogólny program, który akceptuje w pliku konfiguracji, który jest bardziej elastyczna, ale wyniki w kodzie, który nie jest tak łatwe do odczytu i zmienić, ani nie ma takich dobrą wydajność. W tym przewodniku przedstawiono takich korzyści.  
@@ -104,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  W ramach tego przewodnika, nadaj nazwę plikowi `exampleXml.xml`. Ustaw zawartość pliku jako pliku XML w poprzedniej sekcji.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Dodaj plik kodu testu  
  Dodawanie pliku C# do projektu i zapisać w nim próbki kodu, który chcesz mieć możliwość zapisywania. Na przykład:  

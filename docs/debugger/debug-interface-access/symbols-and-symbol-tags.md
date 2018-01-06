@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 347ea483fda44d43d73b147a41a55f0945e515e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-and-symbol-tags"></a>Symbole i tagi symboli
 Informacje o debugowaniu o skompilowany program znajduje się w pliku bazy danych (.pdb) program jako symbole, które są dostępne za pośrednictwem interfejsów API zestawu SDK debugowania interfejsu dostępu (DIA). Wszystkie symbole [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) właściwości. `symTag` Właściwość wskazuje typ symbolu, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia. `symIndexId` Właściwość jest `DWORD` wartość, która zawiera identyfikator unikatowy dla każdego wystąpienia symbolu.  
@@ -38,4 +39,4 @@ Informacje o debugowaniu o skompilowany program znajduje się w pliku bazy danyc
  Opisano typy symbol odpowiadające elementom innego języka, takich jak klasy, tablic i funkcja zwracanych typów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+ [Zestaw SDK dostępu do interfejsu debugowania](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

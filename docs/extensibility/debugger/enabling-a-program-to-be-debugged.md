@@ -13,17 +13,18 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1c38c110e9499936a24c33432180adf18209bf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a581c5a9ae56f52727c011db1de2ad35a5ba3592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Włączanie programu do debugowania
 Przed aparat debugowania (DE) można zdebugować program, należy uruchomić DE lub dołączenie go do istniejącego programu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wprowadzenie do portu](../../extensibility/debugger/getting-a-port.md)  
+ [Pobieranie portu](../../extensibility/debugger/getting-a-port.md)  
  W tym artykule omówiono sposób uzyskiwania portu jako pierwszy krok w celu włączenia programu do debugowania.  
   
  [Rejestrowanie programu](../../extensibility/debugger/registering-the-program.md)  
@@ -35,9 +36,9 @@ Przed aparat debugowania (DE) można zdebugować program, należy uruchomić DE 
  [Na podstawie uruchamiania dołączania](../../extensibility/debugger/launch-based-attachment.md)  
  W tym artykule opisano na podstawie uruchamiania załącznika program, który jest automatycznie po uruchomieniu przez SDM.  
   
- [Wysyłanie zdarzeń wymagane](../../extensibility/debugger/sending-the-required-events.md)  
+ [Wysyłanie wymaganych zdarzeń](../../extensibility/debugger/sending-the-required-events.md)  
  Kroki wymagane zdarzenia podczas tworzenia aparat debugowania (DE) i dołączenie go do programu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie aparat debugowania niestandardowych](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Definiuje aparat debugowania (DE) oraz opis implementowane za pośrednictwem interfejsów DE i sposób może spowodować debugera do przejścia w tryb działania różnych usług.

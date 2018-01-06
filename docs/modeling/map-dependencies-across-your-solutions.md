@@ -31,11 +31,12 @@ caps.latest.revision: "243"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0e0f33505754eb5047a6f8a9ce174c5c07466654
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie mapy kodu. Dzięki temu można zobaczyć, jak kod dopasowuje razem przed odczytaniem za pośrednictwem plików i wierszy kodu.  
@@ -182,7 +183,7 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
   
  Zobacz też:  
   
--   [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)  
+-   [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
   
@@ -248,11 +249,11 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
     |-|-|  
     |**Pokaż typy podstawowe**|Dla klasy dodaj klasę bazową i implementowane interfejsy.<br /><br /> Dla interfejsu dodaj interfejsy podstawowe.|  
     |**Pokaż typy pochodne**|Dla klasy dodaj klasy pochodne.<br /><br /> Dla interfejsu dodaj interfejsy pochodne i implementujące klasy lub struktury.|  
-    |**Pokaż typy przywoływane przez ten element**|Dodaj wszystkie klasy i używanych przez nie elementów członkowskich.|  
-    |**Pokaż typy PRZYWOŁUJĄCE ten element**|Dodaj wszystkie klasy oraz elementy członkowskie, które je używają.|  
+    |**Pokaż typy przywoływane przez ten element**|Dodaj wszystkie klasy i używane przez nie składowe.|  
+    |**Pokaż typy PRZYWOŁUJĄCE ten element**|Dodaj wszystkie klasy oraz ich składowe, które używają tej klasy.|  
     |**Pokaż zawierający Namespace**|Dodaj nadrzędną przestrzeń nazw.|  
     |**Pokaż zawierający Namespace i zestawu**|Dodaj hierarchię kontenera nadrzędnego.|  
-    |**Pokaż wszystkie typy podstawowe**|Dodaj cyklicznie klasę podstawową lub hierarchię interfejsu.|  
+    |**Pokaż wszystkie typy podstawowe**|Dodaj cyklicznie klasę bazową lub hierarchię interfejsu.|  
     |**Pokaż wszystkie typy pochodne**|Dla klasy dodaj wszystkie klasy pochodne cyklicznie.<br /><br /> Dla interfejsu, dodaj wszystkie interfejsy pochodne i cyklicznie implementujące klasy lub struktury.|  
   
      Aby uzyskać **metody**, wybierz:  
@@ -263,7 +264,7 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
     |**Pokaż pola przywoływane przez ten element**|Dodaj pola, do których odwołuje się ta metoda.|  
     |**Pokaż zawierający typ**|Dodaj typ nadrzędny.|  
     |**Pokaż zawierający typ, Namespace i zestawu**|Dodaj hierarchię kontenera nadrzędnego.|  
-    |**Pokaż przesłoniętej metody**|Dla metody, która zastępuje inne metody lub implementuje metodę interfejsu, należy dodać wszystkie metody abstrakcyjne lub wirtualne w klasach podstawowych, które są zastępowane, oraz — jeśli istnieje — implementowaną metodę interfejsu.|  
+    |**Pokaż przesłoniętej metody**|Dla metody, która zastępuje inne metody lub implementuje metodę interfejsu, należy dodać wszystkie metody abstrakcyjne lub wirtualne w klasach bazowych, które są zastępowane, oraz — jeśli istnieje — implementowaną metodę interfejsu.|  
   
      Aby uzyskać **pola** lub **właściwości**, wybierz:  
   
@@ -382,6 +383,6 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
   
 -   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
--   [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)  
+-   [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

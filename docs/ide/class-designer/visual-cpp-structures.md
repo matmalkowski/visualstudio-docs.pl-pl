@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c1411739c7fb5128c73d4f11ff814d341be519
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: d6f2aa3893a230abd52dd5cf19ed9d751e56e50c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Struktury Visual C++ w Projektancie klas
 Projektant klas obsługuje struktur C++, które są zadeklarowane ze słowem kluczowym `struct`. Poniżej przedstawiono przykładowy:  

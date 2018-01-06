@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elementu (programu inicjującego)
 `PackageFiles` Element zawiera `PackageFile` elementów, które określają pakiety instalacyjne wykonywane w `Command` elementu.  
@@ -78,4 +79,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Zobacz też  
  [\<Produktu > — Element](../deployment/product-element-bootstrapper.md)   
  [\<Pakiet > — Element](../deployment/package-element-bootstrapper.md)   
- [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)
+ [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)

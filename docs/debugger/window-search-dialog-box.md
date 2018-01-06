@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc4ea7ee1445c0d1846fadb5319f17d98d3afcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f3b7b20b6ae96904b88ad97bbf87bf066f941d6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="window-search-dialog-box"></a>Wyszukiwanie okien — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierz węzeł w określonym oknie w [widoku systemu Windows](../debugger/windows-view.md). Aby wyświetlić to okno dialogowe, przejść do okna widoku systemu Windows. Następnie wybierz pozycję **Znajdź okno** z **wyszukiwania** menu.  
@@ -51,10 +52,10 @@ To okno dialogowe służy do znajdowania i wybierz węzeł w określonym oknie w
  [Widok okien](../debugger/windows-view.md)  
  Wyświetla widok drzewa dostępne systemu windows i kontrolek.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
   
  [Okno dialogowe Znajdź okno](../debugger/find-window-dialog-box.md)  
@@ -63,5 +64,5 @@ To okno dialogowe służy do znajdowania i wybierz węzeł w określonym oknie w
  [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości przedziału wybranego w widoku systemu Windows.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.

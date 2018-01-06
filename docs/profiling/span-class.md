@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4547cec114568403d8f5fc7a0bb88af3fad3934b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6971000da2b17b96d3371d7d75edc242e87cd94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="span-class"></a>span — Klasa
 Definiuje fazy aplikacji.  
@@ -35,8 +36,8 @@ class span;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[span::span — Konstruktor](../profiling/span-span-constructor.md)|Inicjuje nowe wystąpienie klasy `span` klasy.|  
-|[span:: ~ span — destruktor](../profiling/span-tilde-span-destructor.md)|Niszczy `span` obiektu i zwalnia jego zasoby.|  
+|[Konstruktor span::span](../profiling/span-span-constructor.md)|Inicjuje nowe wystąpienie klasy `span` klasy.|  
+|[Destruktor span::~span](../profiling/span-tilde-span-destructor.md)|Niszczy `span` obiektu i zwalnia jego zasoby.|  
   
 ## <a name="inheritance-hierarchy"></a>Hierarchia dziedziczenia  
  `span`  
@@ -47,4 +48,4 @@ class span;
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz też  
- [Namespace diagnostycznych](../profiling/diagnostic-namespace.md)
+ [Przestrzeń nazw diagnostic](../profiling/diagnostic-namespace.md)

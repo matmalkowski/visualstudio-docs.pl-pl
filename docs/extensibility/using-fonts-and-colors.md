@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-fonts-and-colors"></a>Używanie czcionek i kolorów
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Zapewnia obsługę czcionki i kolory do wyświetlania tekstu.  
@@ -68,10 +69,10 @@ ms.lasthandoff: 10/31/2017
  Określa buforowanie ustawienia czcionek i kolorów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie usługi języka starsza wersja](../extensibility/internals/developing-a-legacy-language-service.md)  
+ [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)  
  W tym artykule omówiono, jak VSPackages języka usługi służy do dostosowywania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytora.  
   
- [Kolorowania w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
+ [Kolorowania składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
  Descries jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Edytor korzysta z usług języka Aby zaimplementować kolorowanie składni.  
   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  

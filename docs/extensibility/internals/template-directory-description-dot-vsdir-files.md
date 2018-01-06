@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bc2f4a50996ccca6a56632166121bf9784629bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (. Pliki Vsdir)
 Szablon pliku opisu katalogu (.vsdir) to plik tekstowy, który umożliwia zintegrowane środowisko programistyczne (IDE), aby wyświetlić folderów, plików kreatora .vsz i plików szablonów, które są skojarzone z projektu w oknach dialogowych. Zawierać jeden rekord dla każdego pliku lub folderu. Wszystkie pliki .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisywania wiele folderów, pliki szablonów lub kreatorów.  
@@ -67,4 +68,4 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
   
 ## <a name="see-also"></a>Zobacz też  
  [Kreatorzy](../../extensibility/internals/wizards.md)   
- [Kreator (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

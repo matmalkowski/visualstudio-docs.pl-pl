@@ -12,11 +12,12 @@ caps.latest.revision: "42"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: fe3f64cf11542d0b8098bb9a47c02a2a47647253
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów zależności
 W programie Visual Studio użytkowników można zweryfikować kodu źródłowego w projekcie modelu warstwy, dzięki czemu można zweryfikować, że kod źródłowy odpowiada zależności na diagramie zależności. Brak algorytmu weryfikacji standardowych, ale można zdefiniować rozszerzeń sprawdzania poprawności.  
@@ -99,7 +100,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
 5.  Wróć do projektu weryfikacji warstwy i dodaj następujące odwołania do projektu:  
   
-    |**Odwołanie**|**Co to umożliwia**|  
+    |**Dokumentacja**|**Co to umożliwia**|  
     |-------------------|------------------------------------|  
     |Microsoft.VisualStudio.GraphModel.dll|Wykres architektury do odczytu|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Przeczytaj modelu DOM kodu skojarzonego z warstwy|  
@@ -277,4 +278,4 @@ namespace Validator3
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozszerzanie diagramy zależności](../modeling/extend-layer-diagrams.md)
+ [Rozszerzanie diagramów zależności](../modeling/extend-layer-diagrams.md)

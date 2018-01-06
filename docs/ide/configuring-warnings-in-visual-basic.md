@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic:
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilatora zawiera zestaw ostrzeżenia dotyczące kodu, który może powodować błędy środowiska wykonawczego. Tych informacji umożliwia zapis czyszcząca, szybciej, lepiej kodu przy użyciu mniejszej liczby błędów. Na przykład kompilator spowoduje wygenerowanie ostrzeżenia, gdy użytkownik próbuje wywołać elementu członkowskiego zmiennej obiektu nieprzypisane zwrócone z funkcji bez ustawienia zwracanej wartości, lub wykonać `Try` bloku błędów w logice przechwytują wyjątki.  
@@ -125,4 +126,4 @@ ms.lasthandoff: 10/31/2017
  [/ nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Są domyślnie wyłączone ostrzeżenia kompilatora](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+ [Domyślnie wyłączone ostrzeżenia kompilatora](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

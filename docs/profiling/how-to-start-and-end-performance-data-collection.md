@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01870b4b687fc353c2e94d8e08ce57555cfc31f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae5470e92a3583ebc5cc18edb1c1662f155c41cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Porady: rozpoczęcia i zakończenia zbierania danych o wydajności
 Plik binarny docelowego, który ma należy dodać do profilu do sesji wydajności przed rozpoczęciem profilowania. Aby dodać element docelowy, kliknij prawym przyciskiem myszy **celów** w **Eksplorator wydajności**, a następnie kliknij przycisk **dodać docelowy binarne**. W **dodać docelowy binarne** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Dodawany jest nowych danych binarnych.  

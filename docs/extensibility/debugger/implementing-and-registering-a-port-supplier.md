@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Wdrażanie i rejestrowanie dostawcy portu
 Rolą port dostawcy jest śledzenie i podaj portów, które z kolei zarządzania procesami. W momencie port musi zostać utworzona dostawca portu zostanie uruchomiony przy użyciu CoCreate z identyfikatorem GUID dostawcy portu (manager debugowania sesji [SDM] będzie używać portu dostawcy wybrany przez użytkownika lub dostawcę port określony przez system projektów). Następnie wywoła SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) aby zobaczyć, czy żadnych portów może być dodany. Jeśli port można dodać, nowy port jest wymagany przez wywołanie [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie jej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, który opisuje. `AddPort`Zwraca nowy port reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu.  
@@ -65,4 +66,4 @@ RemoveMetric(metrictypePortSupplier,
 ## <a name="see-also"></a>Zobacz też  
  [Implementacja dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [Pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Port dostawcy](../../extensibility/debugger/port-suppliers.md)
+ [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)

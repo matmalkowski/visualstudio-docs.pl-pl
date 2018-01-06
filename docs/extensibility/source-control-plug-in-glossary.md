@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-glossary"></a>Słownik wtyczkę kontroli źródła
 Poniższe terminy przydatne i definicje odnoszą się do dokumentacji zestawu SDK dodatku typu Plug-in kontroli źródła.  
@@ -55,7 +56,7 @@ Poniższe terminy przydatne i definicje odnoszą się do dokumentacji zestawu SD
  Scal  
  Proces podczas źródłem dwóch lub więcej plików kodu połączone tworzą nowy plik, który zawiera wszystkie funkcje z poprzednich plików. To pojęcie jest niezbędne w kontroli wersji, której deweloperzy dwóch lub więcej pracować z plikami jednocześnie.  
   
- Project  
+ Projekt  
  Folder kontroli źródła jest często określone jako projekt. To nie ma żadnych relacji z projektami i rozwiązaniami w programie Visual Studio.  
   
  wtyczki  
@@ -68,4 +69,4 @@ Poniższe terminy przydatne i definicje odnoszą się do dokumentacji zestawu SD
  Zatwierdzone zmiany w historii pliku lub zestawu plików. Zmiana jest jednym migawki w projekcie stale zmiany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)
+ [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

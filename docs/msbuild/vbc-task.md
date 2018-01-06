@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5fd338079978cec84c93a22d262d25f575d32e4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1105701c5c84de200dca674a117d7b464ba9fd62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączanych dynamicznie (dll) lub moduły kodu (modułu .netmodule). Aby uzyskać więcej informacji o vbc.exe, zobacz [kompilatora wiersza polecenia programu Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  

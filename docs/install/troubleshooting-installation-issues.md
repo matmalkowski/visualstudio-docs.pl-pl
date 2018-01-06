@@ -14,11 +14,12 @@ ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9cd0a1b21cf7a61c9340c36be5db419d71c36e1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017 r.
 
@@ -95,9 +96,9 @@ Poniżej przedstawiono kilka dodatkowych opcji:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Wymaga to [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Wymaga to [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
-* [Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
 * [Usunięcie programu Visual Studio 2017 r.](remove-visual-studio.md)

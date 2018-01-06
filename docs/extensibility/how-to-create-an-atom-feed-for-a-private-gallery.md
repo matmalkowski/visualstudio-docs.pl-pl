@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b41cb3012b937ac5448b129657064cca68a5d725
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54181205c98445fef393993d683085cc3afbcba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Porady: tworzenie Atom dla galerii prywatnych
 Można utworzyć kanału Atom (RSS) do lokalizacji intranetowych, która zawiera rozszerzenia, a następnie Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatnych galerii. Aby uzyskać więcej informacji, zobacz [galerie prywatnego](../extensibility/private-galleries.md).  
@@ -77,4 +78,4 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowych, która zawiera
  Zwróć uwagę, że tagów łącza dwóch odwołują się do zrzuty ekranu w folderze wygenerowanego obrazów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Galerie prywatnych](../extensibility/private-galleries.md)
+ [Galerie prywatne](../extensibility/private-galleries.md)

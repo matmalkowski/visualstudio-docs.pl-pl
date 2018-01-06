@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab405ec541393e2b9aa256b40ccea5cce061cdc3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5fef7ed581ad39488bc35d9cc46ac211008f5962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-with-xml-editor"></a>Integracja z edytora XML
 Projektant schematu XML jest zintegrowana z edytora XML. Jeśli zmodyfikujesz plik XSD w edytorze XML, zmiany zostaną odzwierciedlone w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Jeśli masz [widok wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) otwarty, zmiana będzie również tam widoczne. Można przechodzić między edytorze XML i Projektant schematu XML w następujący sposób:  
@@ -34,4 +35,4 @@ Czasami jest przydatne wyświetlić kod w edytorze XML i graficznego projektanta
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif "XSDDesignerWithXMLEditorAndCMV")  
   
 ## <a name="see-also"></a>Zobacz też  
- [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md)
+ [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)

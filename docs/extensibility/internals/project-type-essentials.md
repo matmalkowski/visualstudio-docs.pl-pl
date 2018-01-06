@@ -13,22 +13,23 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33f31ec1d5adedb2fac6c2a37c050ee65d774894
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-essentials"></a>Essentials typ projektu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obejmuje kilka typów projektów dla języków, takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Umożliwia również tworzenie własnych typów projektów.  
   
  Jeśli chcesz dodać niestandardowe polecenia, edytory lub okna narzędzi do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], możesz to zrobić bez tworzenia nowego typu projektu. Więcej informacji znajduje się w następujących tematach:  
   
--   [Polecenia, menu i pasków narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
+-   [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
   
--   [Edytora i rozszerzenia usługi języka](../../extensibility/editor-and-language-service-extensions.md)  
+-   [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md)  
   
--   [Rozszerzanie i dostosowywanie narzędzi systemu Windows](../../extensibility/extending-and-customizing-tool-windows.md)  
+-   [Rozszerzanie i dostosowywanie okien narzędzi](../../extensibility/extending-and-customizing-tool-windows.md)  
   
  Podobnie jeśli chcesz dostosować zachowanie podane [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typów projektów, można wykonać za pomocą podtypów projektu. Aby uzyskać więcej informacji, zobacz [podtypów projektu](../../extensibility/internals/project-subtypes.md).  
   
@@ -67,4 +68,4 @@ ms.lasthandoff: 10/31/2017
 -   Typy projektów może obsługiwać wiele konfiguracji, takich jak Debug i Release. Użytkownicy mogą zmieniać różne konfiguracje projektu za pomocą stron właściwości, które należy podać. Aby uzyskać więcej informacji, zobacz [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wdrażanie projektu typów](../../extensibility/internals/deploying-project-types.md)
+ [Wdrażanie typów projektów](../../extensibility/internals/deploying-project-types.md)

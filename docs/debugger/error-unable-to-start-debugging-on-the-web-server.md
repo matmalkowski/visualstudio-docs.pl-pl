@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
@@ -119,7 +119,7 @@ Po wykonaniu kroków szczegółowe tutaj, aby rozwiązać ten problem, a przed p
 
 * Sprawdź konfigurację puli aplikacji, napraw go w razie potrzeby, a następnie spróbuj ponownie.
 
-    Pula aplikacji może być skonfigurowany dla wersji platformy ASP.NET, która jest niezgodna z projektu programu Visual Studio. Zaktualizuj wersję platformy ASP.NET w puli aplikacji, a następnie uruchom go ponownie. Aby uzyskać szczegółowe informacje, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Pula aplikacji może być skonfigurowany dla wersji platformy ASP.NET, która jest niezgodna z projektu programu Visual Studio. Zaktualizuj wersję platformy ASP.NET w puli aplikacji, a następnie uruchom go ponownie. Aby uzyskać szczegółowe informacje, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Ponadto poświadczenia hasła zostały zmienione, należy zaktualizować je w puli aplikacji lub witryny sieci Web.  W puli aplikacji, zaktualizuj poświadczenia w **Zaawansowane ustawienia > Model procesu > tożsamości**. Witryny sieci Web, zaktualizuj poświadczenia w **podstawowe ustawienia > Połącz się jako...** . Ponowne uruchomienie puli aplikacji.
     
@@ -129,7 +129,7 @@ Po wykonaniu kroków szczegółowe tutaj, aby rozwiązać ten problem, a przed p
 
 * Upewnij się, zainstalowanie odpowiedniej wersji programu ASP.NET w usługach IIS.
 
-    Niezgodne wersje platformy ASP.NET w usługach IIS i projektu programu Visual Studio może być przyczyną tego problemu. Konieczne może być ustawiona wersja programu w pliku web.config. Aby zainstalować program ASP.NET w usługach IIS, należy użyć [Instalatora platformy sieci Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Zobacz też [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) lub dla platformy ASP.NET Core [hosta w systemie Windows z programem IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Niezgodne wersje platformy ASP.NET w usługach IIS i projektu programu Visual Studio może być przyczyną tego problemu. Konieczne może być ustawiona wersja programu w pliku web.config. Aby zainstalować program ASP.NET w usługach IIS, należy użyć [Instalatora platformy sieci Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Zobacz też [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) lub dla platformy ASP.NET Core [hosta w systemie Windows z programem IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Usuń błędy uwierzytelniania, jeśli używane są tylko dla adresu IP
 
@@ -155,7 +155,7 @@ Jeśli konfiguracji usług IIS nie jest przyczyną problemu, spróbuj wykonać n
 
      Jeśli usługi IIS nie jest poprawnie zainstalowany, należy pobrać błędy podczas wpisywania tekstu `http://localhost` w przeglądarce.
      
-     Aby uzyskać więcej informacji na temat wdrażania usług IIS, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) i dla platformy ASP.NET Core [hosta w systemie Windows z programem IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Aby uzyskać więcej informacji na temat wdrażania usług IIS, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) i dla platformy ASP.NET Core [hosta w systemie Windows z programem IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Tworzenie podstawowej aplikacji ASP.NET na serwerze (lub przy użyciu pliku web.config podstawowe).
 

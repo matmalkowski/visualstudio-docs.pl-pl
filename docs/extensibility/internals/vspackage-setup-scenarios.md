@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2128d4c2659d7e6e389384c4bf7e133a4fb32e47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dea9d25f211ca5042234c0400b2a10086136f49c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakiet VSPackage
 Należy projektować Instalatorem pakiet VSPackage elastyczność. Na przykład konieczne może być w przyszłości wersji poprawkę zabezpieczeń lub strategii biznesowej, która wymaga obsługi dokładnej wersji side-by-side mogą ulec zmianie.  
@@ -78,4 +79,4 @@ Instalator aktualizacji pakiet VSPackage Side-by-side
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalator systemu Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Obsługa wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+ [Obsługiwanie wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

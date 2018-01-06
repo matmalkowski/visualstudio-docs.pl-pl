@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 797b01016cb82aeb3d6ecfa1d11fa79df0085ee1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1196d229f69d1ffbfaae2c891ca03d1a58aedfdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Zapisywanie kodu dla dodatkowych przycisków i pola wyboru
 Teraz możesz przystąpić do ukończenia cztery metody. Można skopiuj i wklej ten kod, ale jeśli chcesz dowiedzieć się najbardziej z tego samouczka, wpisz kod i użyj funkcji IntelliSense.  

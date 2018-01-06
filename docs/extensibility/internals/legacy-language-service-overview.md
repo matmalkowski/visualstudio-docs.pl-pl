@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05805e5cf4b21f4c7d233cab7dd8421ee76f626f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-overview"></a>Omówienie usługi starszej wersji języka
 Usługa języka zapewnia obsługę edytora, który umożliwia wdrożenie niektórych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji. Klasy usługi języka zarządzane pakietu Framework (MPF) zapewniają pełną obsługę często używane funkcje i częściowe obsługę innych funkcji.  
@@ -63,34 +64,34 @@ Usługa języka zapewnia obsługę edytora, który umożliwia wdrożenie niektó
   
 -   [Zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
--   [Kolorowanie składni w starsza wersja usługi języka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+-   [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
--   [Parowanie nawiasów klamrowych w starsza wersja usługi języka](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+-   [Parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
   
--   [Konspekt w starsza wersja usługi języka](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+-   [Zwijanie w starszej wersji usługi językowej](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
--   [Kod komentowania w starsza wersja usługi języka](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+-   [Komentowanie kodu w starszej wersji usługi językowej](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
--   [Ponowne formatowanie kodu w starsza wersja usługi języka](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+-   [Ponowne formatowanie kodu w starszej wersji usługi językowej](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
--   [Niestandardowe właściwości dokumentu w starsza wersja usługi języka](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+-   [Niestandardowe właściwości dokumentu w starszej wersji usługi językowej](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
--   [Obsługa wstawki kodu za pośrednictwem usługi języka starsza wersja](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+-   [Obsługa fragmentów kodu w starszej wersji usługi językowej](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
--   [Obsługa paska nawigacyjnego w usłudze języka starsza wersja](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+-   [Obsługa paska nawigacyjnego w starszej wersji usługi językowej](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
   
--   [Zakończenie programu Word w starsza wersja usługi języka](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+-   [Uzupełnianie wyrazów w starszej wersji usługi językowej](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
   
--   [Element członkowski uzupełniania w starsza wersja usługi języka](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+-   [Uzupełnianie składowych w starszej wersji usługi językowej](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
 -   [Informacje o parametrach w starsza wersja usługi języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
--   [Szybkie informacje w starsza wersja usługi języka](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+-   [Szybkie informacje w starszej wersji usługi językowej](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
--   [Obsługa okno zmiennych automatycznych w starsza wersja usługi języka](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+-   [Obsługa okna zmiennych automatycznych w starszej wersji usługi językowej](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
   
--   [Sprawdzanie poprawności punkty przerwania w starsza wersja usługi języka](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+-   [Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Rozszerzalność usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-extensibility.md)
+ [Rozszerzalność starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-extensibility.md)

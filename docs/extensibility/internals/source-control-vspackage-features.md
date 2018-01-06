@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204cd6fe59c87dd7ac2b6ca838d1c08b4ff25c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c16fde6cb9dcb29428ad2d52a08b53cffb9f9850
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-features"></a>Funkcje pakiet VSPackage kontroli źródła
 W tej sekcji opisano różne funkcje kontroli źródła pakiet VSPackage. Przedstawia on rejestracji i wybór szczegółów taki pakiet VSPackage i omówiono trzy funkcje związane z kontroli źródła głównego: Obsługa zdarzeń zapytania Edytuj Zapisz zapytanie (QEQS), symbol zastępczy i niestandardowego interfejsu użytkownika (UI) dla kontroli źródła funkcje.  
@@ -36,5 +37,5 @@ W tej sekcji opisano różne funkcje kontroli źródła pakiet VSPackage. Przeds
  Opisano elementy interfejsu użytkownika, określające kontroli źródła pakiet VSPackage.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie pakiet VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ [Tworzenie pakietu VSPackage kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  W tym artykule omówiono sposób tworzenia kontroli źródła pakiet VSPackage, który nie tylko udostępnia funkcje kontroli źródła, ale może być używana do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródła formantu interfejsu użytkownika.

@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework narzędzia w programie Visual Studio
-Entity Framework jest technologia mapowania relacyjnego obiektu, która umożliwia deweloperom platformy .NET pracować z relacyjnej bazie danych przy użyciu obiektów specyficznego dla domeny. Eliminuje potrzebę większość kodu dostępu do danych, deweloperzy zazwyczaj potrzebne do zapisu. Entity Framework jest zalecane mapowania obiektów relacyjnych (ORM) modelowania technologii nowych aplikacji .NET.  
+Entity Framework jest technologia mapowania relacyjnego obiektu, która umożliwia deweloperom platformy .NET pracować z relacyjnej bazie danych przy użyciu obiektów specyficznego dla domeny. Dzięki temu większa część kodu dostępu do danych, który programiści muszą zwykle tworzyć, nie jest już potrzebna. Entity Framework jest zalecane mapowania obiektów relacyjnych (ORM) modelowania technologii nowych aplikacji .NET.  
   
-Entity Framework narzędzia są przeznaczone do tworzenia aplikacji Entity Framework (EF). Pełną dokumentację programu Entity Framework jest tutaj: [EF rdzeni i EF 6](https://docs.microsoft.com/ef/).  
+Entity Framework narzędzia są przeznaczone do tworzenia aplikacji Entity Framework (EF). Pełną dokumentację programu Entity Framework jest tutaj: [EF rdzeni i EF 6](/ef/).  
   
 Narzędziami Entity Framework, można utworzyć *modelu koncepcyjnego* z istniejącej bazy danych graficznie wizualizacji i edytować model koncepcyjny. Lub graficznie najpierw utworzyć model koncepcyjny, a następnie wygenerować bazę danych, która obsługuje modelu. W obu przypadkach można automatycznie aktualizować modelu, gdy podstawowa zmiany bazy danych i automatycznie generować kod warstwy obiektu aplikacji. Dostosowania są generowania bazy danych i warstwy obiektu generowania kodu.  
   
@@ -48,10 +49,10 @@ Narzędzia Generowanie lub zmodyfikowania pliku edmx. Ten plik edmx zawiera info
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Informacje dotyczące używania [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] narzędzia, które [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] umożliwia tworzenie aplikacji.|  
-|[Modelu danych jednostki](/dotnet/framework/data/adonet/entity-data-model)|Zawiera łącza i informacje dotyczące pracy z danymi, który jest używany przez aplikacje oparte na [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
+|[Program Entity Framework na platformie ADO.NET](/dotnet/framework/data/adonet/ef/index)|Informacje dotyczące używania [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] narzędzia, które [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] umożliwia tworzenie aplikacji.|  
+|[Model danych jednostki](/dotnet/framework/data/adonet/entity-data-model)|Zawiera łącza i informacje dotyczące pracy z danymi, który jest używany przez aplikacje oparte na [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
 |[Entity Framework (EF) dokumentacji)](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Zawiera indeks wideo, samouczki i zaawansowane dokumentacji, aby pomóc najlepiej Entity Framework.|  
 |[ASP.NET 5 aplikacji do nowej bazy danych](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Opisuje sposób tworzenia nowej aplikacji ASP.NET 5 za pomocą programu Entity Framework 7.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

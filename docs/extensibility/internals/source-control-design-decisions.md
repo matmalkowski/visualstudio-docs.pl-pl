@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 320a8013177d44491470f8f55c8ee3e1fb19501c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4c1a512e104a092ae98ac86dc5e731fd1732aa33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-design-decisions"></a>Decyzje dotyczące projektu kontroli źródła
 Podczas implementowania kontroli źródła należy rozważyć następujące decyzje dotyczące projektu dla projektów.  
@@ -40,4 +41,4 @@ Podczas implementowania kontroli źródła należy rozważyć następujące decy
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
- [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)
+ [Obsługa kontroli kodu źródłowego](../../extensibility/internals/supporting-source-control.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb782b79c00576a431c8f4453ddf020606aaf5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d77c307ec7b732ba727b7210b4f4eaacb44584aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-persistence"></a>Trwałość projektu
 Trwałości jest kluczy dla projektu. Elementy projektu, które reprezentują plików; użyj większości projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje również projektów, w których dane są nie opartych na pliku. Musi zostać utrwalony plików należących do projektu i pliku projektu. IDE powoduje, że projekt, aby zapisać siebie lub elementu projektu.  
@@ -47,4 +48,4 @@ Trwałości jest kluczy dla projektu. Elementy projektu, które reprezentują pl
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Tworzenie wystąpień projektu za pomocą fabryk projektu](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

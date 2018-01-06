@@ -11,11 +11,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 W tym kodowane testy interfejsu użytkownika w aplikacji programu SharePoint umożliwia Sprawdź, czy całej aplikacji, w tym jego formantów interfejsu użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika można zweryfikować wartości i logika interfejsu użytkownika.  

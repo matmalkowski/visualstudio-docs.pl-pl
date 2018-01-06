@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a60156c77dfc33475d3913c3fed2e30159f03959
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ffcc04808916d8ef31fb77cab72f54c1e22e924c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Podpis&gt; elementu (wdrażania ClickOnce)
 Zawiera informacje potrzebne do cyfrowego podpisywania manifestu tego wdrożenia.  
@@ -73,4 +74,4 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+ [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)

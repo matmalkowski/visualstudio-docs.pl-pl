@@ -16,11 +16,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 032baaa57dd91cb07eac547da810d16e708f0828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 34e0e95475457e2a5f206ad4ecb0d7e42e2bb9ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Definicja IDE polecenia, menu i grupy
 Wiele menu poleceń i polecenia grup są już zdefiniowane na potrzeby używania przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Te polecenia są również dostępne do użycia podczas rozszerzania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -39,10 +40,10 @@ Wiele menu poleceń i polecenia grup są już zdefiniowane na potrzeby używania
  Te pliki znajdują się w  *\<ścieżki instalacji programu Visual Studio SDK >*\VisualStudioIntegration\Common\Inc\\. Te pliki zawierają definicje i identyfikatory GUID menu i grupy, które można używać w pliku konfiguracji (vsct) tabeli polecenia VSPackage jako kontenery własne menu, grup i poleceń.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Identyfikatory GUID oraz identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  
+ [Identyfikatory GUID i identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  
  Udostępnia wartości identyfikatora GUID i identyfikator menu na pasku menu programu Visual Studio i grup, które zawierają.  
   
- [Identyfikatory GUID oraz identyfikatory pasków narzędzi Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)  
+ [Identyfikatory GUID i identyfikatory pasków narzędzi programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)  
  Podano identyfikator GUID i identyfikator wartości pasków narzędzi w programie Visual Studio IDE i grup, które zawierają.  
   
  [Identyfikatory GUID i identyfikatory poleceń programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)  
@@ -51,4 +52,4 @@ Wiele menu poleceń i polecenia grup są już zdefiniowane na potrzeby używania
 ## <a name="see-also"></a>Zobacz też  
  [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Definicja IDE poleceń do rozszerzania systemów projektów](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)   
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

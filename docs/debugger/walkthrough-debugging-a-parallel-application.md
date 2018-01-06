@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a532c2e238528ea32492aae22b001ab0955f8c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Wskazówki: Debugowanie aplikacji równoległych w programie Visual Studio
 Ten przewodnik przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległych. Te okna ułatwić zrozumienie i sprawdź zachowania w czasie wykonywania kod, który używa [zadań biblioteki równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punktów przerwania. Po dzieli kodu, wskazówki przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows do zbadania go.  

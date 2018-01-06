@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899c39af318e16465ccd36d671a2c9d7305b431d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` Metody zmniejsza wstrzymań/wznowień licznika dla określonego poziomu profilowania.  

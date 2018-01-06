@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 Można użyć funkcji IntelliTrace, rejestrowanie zdarzeń i aplikacji, dzięki czemu można zbadać stanu (stosu wywołań i wartości zmiennych lokalnych) w różnych punktach podczas wykonywania wywołania metod. Po prostu zacznij debugowania w zwykły sposób — IntelliTrace jest domyślnie włączona i wyświetlane są informacje funkcji IntelliTrace jest rejestrowanie w nowym **narzędzia diagnostyczne** w obszarze **zdarzenia** kartę. Zaznacz zdarzenie i kliknij przycisk **Uaktywnij debugowanie historyczne** aby zobaczyć stos wywołań i zmiennych lokalnych zarejestrowane dla tego zdarzenia.  

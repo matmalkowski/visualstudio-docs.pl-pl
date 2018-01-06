@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b3974c9103a385badc56fda759ee95ef3a40a93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommand-element"></a>UsedCommand Element
 Włącza pakiet VSPackage umożliwiające dostęp do polecenia, który jest zdefiniowany w innym pliku vsct. Na przykład, jeśli VSPackage korzysta ze standardu **kopiowania** polecenia, który jest zdefiniowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powłoki, można dodać polecenie menu lub pasek narzędzi bez ponownego wprowadzania.  
@@ -51,7 +52,7 @@ Włącza pakiet VSPackage umożliwiające dostęp do polecenia, który jest zdef
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[UsedCommands Element](../extensibility/usedcommands-element.md)|Grupuje elementy UsedCommand i inne grupy UsedCommands.|  
+|[UsedCommands, element](../extensibility/usedcommands-element.md)|Grupuje elementy UsedCommand i inne grupy UsedCommands.|  
   
 ## <a name="remarks"></a>Uwagi  
  Dodając polecenie do `<UsedCommands>` informuje pakiet VSPackage elementu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowiska, że pakiet VSPackage wymaga polecenia. Należy dodać `<UsedCommand>` elementu dla dowolnego polecenia pakietu wymaga, aby nie może znajdować się w wszystkie wersje i konfiguracje programu Visual Studio. Na przykład, jeśli pakiet wymaga polecenia, które są specyficzne dla języka Visual C++, polecenie nie będzie dostępne dla użytkowników programu Visual Web Developer, chyba że uwzględniasz `<UsedCommand>` elementu dla polecenia.  
@@ -68,4 +69,4 @@ Włącza pakiet VSPackage umożliwiające dostęp do polecenia, który jest zdef
   
 ## <a name="see-also"></a>Zobacz też  
  [UsedCommands Element](../extensibility/usedcommands-element.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

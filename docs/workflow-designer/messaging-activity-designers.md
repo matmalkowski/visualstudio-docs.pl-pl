@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2aa2383326682dcedbb0888f5b55d34e3894327c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 481d9e577989b1bd75cea22e0faab6d8a1cc64cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messaging-activity-designers"></a>Projektanci działań do obsługi komunikatów
 Komunikatów projektantów działań są używane do tworzenia i konfigurowania działania obsługi komunikatów, które wysyłania i odbierania [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] wiadomości z poziomu [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji. [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] Wprowadza pięć działania obsługi wiadomości i [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zawiera dwa nowe projektantów szablonu umożliwiające zarządzanie wiadomości w przepływie pracy. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] projektantów działań i szablonu.  
@@ -52,19 +53,19 @@ Komunikatów projektantów działań są używane do tworzenia i konfigurowania 
   
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)  
   
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)  
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
   
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   
- [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)  
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
   
- [Transakcji](../workflow-designer/transaction-activity-designers.md)  
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)  
   
  [Kolekcja](../workflow-designer/collection-activity-designers.md)  
   
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)

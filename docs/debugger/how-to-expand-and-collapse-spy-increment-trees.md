@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6628ad8decf04fdb4a031c62c2dc3c4af5b179d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e419adef776c3973ae3d470e97c88483f0d7d0ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Porady: rozwijanie i zwijanie drzewek w programie Spy++
 Można zwijać i rozwijać widoków systemu Windows, procesów i wątków, przy użyciu dwóch metod:, klikając ikony w oknie lub przy użyciu **drzewa** menu. + I - ikony w drzewie działa tak samo, jak w oknie projektu Visual C++.  
@@ -43,4 +44,4 @@ Można zwijać i rozwijać widoków systemu Windows, procesów i wątków, przy 
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
  [Widoków Spy ++](../debugger/spy-increment-views.md)   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Omówienie wdrażania w programie Visual Studio
 
@@ -43,7 +44,7 @@ Zobacz samouczki krok po kroku.
 
     ![Wybierz publikowania](../deployment/media/quickstart-publish.png)
 
-- **Środowiska uruchomieniowego Visual C++**: można wdrożyć środowiska uruchomieniowego Visual C++ przy użyciu lokalnego wdrożenia lub statycznego łączenia. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych pulpitu aplikacji (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Środowiska uruchomieniowego Visual C++**: można wdrożyć środowiska uruchomieniowego Visual C++ przy użyciu lokalnego wdrożenia lub statycznego łączenia. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych pulpitu aplikacji (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Publikowanie w sieci Web lub wdrożyć do udziału sieciowego
 
@@ -55,7 +56,7 @@ Zobacz samouczki krok po kroku.
 
     Można także wdrożyć aplikacje ASP.NET i usługi na kilka różnych sposobów. Aby uzyskać więcej informacji, zobacz [usług i aplikacji sieci web ASP.NET wdrażanie](http://www.asp.net/aspnet/overview/deployment).
 
-- **Środowiska uruchomieniowego Visual C++**: można wdrożyć środowisko uruchomieniowe Visual C++ przy użyciu centralnej wdrożenia. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych pulpitu aplikacji (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Środowiska uruchomieniowego Visual C++**: można wdrożyć środowisko uruchomieniowe Visual C++ przy użyciu centralnej wdrożenia. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych pulpitu aplikacji (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 - **System Windows desktop** opublikowaniem aplikacji pulpitu systemu Windows na serwerze sieci web lub sieciowego udziału plików przy użyciu wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji komputerowej za pomocą aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) i [wdrażanie natywnych aplikacji za pomocą aplikacji ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -72,7 +73,7 @@ Zobacz samouczki krok po kroku.
     > [!NOTE]
     > Jeśli nie masz już konto platformy Azure, możesz [zarejestrować się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-- Inne **usług Azure**: Zobacz konkretnym [usługi Azure](https://docs.microsoft.com/azure/#pivot=products) dokumentacji dla różnych opcji wdrażania obsługiwane przez program Visual Studio.
+- Inne **usług Azure**: Zobacz konkretnym [usługi Azure](/azure/#pivot=products) dokumentacji dla różnych opcji wdrażania obsługiwane przez program Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Publikowanie w sklepie Microsoft
 

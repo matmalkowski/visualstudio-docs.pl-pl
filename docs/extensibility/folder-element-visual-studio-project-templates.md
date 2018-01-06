@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 677b705015b2b12ee484db7595d6cfd919ad61d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder — Element (szablony projektów Visual Studio)
 Określa folder, który zostanie dodany do projektu.  
@@ -131,4 +132,4 @@ Określa folder, który zostanie dodany do projektu.
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Projectitem — Element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [ProjectItem, element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13a2a8b584af507f8937fd6abb46c85f329de0b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09597130864ae0c1e79ef7470c58b25dde8a9263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="font-and-color-overview"></a>Omówienie kolorów i czcionek
 W tym temacie omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). Również wprowadza pojęcia związane z kategorii i Wyświetl elementy, a także opisano, jak pakiety VSPackage i Edytor core używają atrybutów tekstu.  
@@ -82,4 +83,4 @@ W tym temacie omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy starszej wersji w edytorze](../extensibility/legacy-interfaces-in-the-editor.md)   
- [Kolorowania w starsza wersja usługi języka](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+ [Kolorowanie składni w starszej wersji usługi językowej](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

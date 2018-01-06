@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 775cafd5f8fc5bb2908447d7f34b13e0377d6711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Porady: wstawki kodu za pomocą programu Otocz przez
 Poniższe procedury opisują sposób korzystania z funkcji Otocz przez wstawki kodu. Otocz fragmentów kodu są dostępne trzy sposoby: za pomocą skrótu klawiaturowego, za pomocą menu Edycja i menu kontekstowego.  
@@ -60,4 +61,4 @@ Poniższe procedury opisują sposób korzystania z funkcji Otocz przez wstawki k
   
 ## <a name="see-also"></a>Zobacz też  
  [Wstawki kodu Visual C#](../ide/visual-csharp-code-snippets.md)   
- [Selektor wstawek kodu](../ide/reference/code-snippet-picker.md)
+ [Selektor fragmentów kodu](../ide/reference/code-snippet-picker.md)

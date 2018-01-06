@@ -15,11 +15,12 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff653e6fd9fb33cd7141671e9b77f297f8457a8b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
 Po zainstalowaniu programu Visual Studio 2017 z wiersza polecenia, można użyć różnych parametrów wiersza polecenia kontroli lub dostosowanie instalacji. W wierszu polecenia można wykonywać następujące czynności:
@@ -104,7 +105,7 @@ Listę obciążenia i identyfikatory składników posortowane według produktu V
 | ----------------------- | --------------- |
 | cs-CZ | czeski |
 | de-DE | niemiecki |
-| EN US | angielski |
+| EN US | Angielski |
 | es-ES | Hiszpański |
 | fr-FR | Francuski |
 | IT-IT | Włoski |
@@ -138,11 +139,11 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
  * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
  * [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
  * [Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.](command-line-parameter-examples.md)
- * [Proces instalacji programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
+ * [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>Wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]jest to technologia wdrożenia, która umożliwia tworzenie samoaktualizacji aplikacji systemu Windows, które można instalować i uruchamiać z minimalnym interakcji. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]zapewnia pełną obsługę publikowanie oraz aktualizowanie aplikacje wdrożone przy użyciu technologii ClickOnce, jeśli korzystasz z projektów z języka Visual Basic i Visual C#. Aby uzyskać informacje o wdrażaniu aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -98,11 +99,11 @@ ms.lasthandoff: 10/27/2017
 |----------|-----------------|  
 |[Strona zabezpieczeń, Projektant projektu](../ide/reference/security-page-project-designer.md)|Znaki manifestów aplikacji i wdrażania.|  
 |[Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)|Generuje i edycji manifestów aplikacji i wdrażania dla aplikacji Visual Basic i Visual C#.|  
-|[Mage.exe (Generowanie manifestu i edytowania narzędzie)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generuje manifestów aplikacji i wdrażania dla aplikacji Visual Basic, Visual C# i Visual C++.<br /><br /> Podpisuje i manifestów aplikacji i wdrażania zaloguje się ponownie.<br /><br /> Można uruchomić z wiersza polecenia i skrypty partii.|  
-|[MageUI.exe (Generowanie manifestu i edytowania narzędzia, klient grafiki)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Generuje i edycji manifestów aplikacji i wdrażania.<br /><br /> Podpisuje i manifestów aplikacji i wdrażania zaloguje się ponownie.|  
-|[Generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikacji.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie MSBuild](../msbuild/msbuild-reference.md).|  
-|[Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest wdrażania.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie MSBuild](../msbuild/msbuild-reference.md).|  
-|[Signfile — zadanie](../msbuild/signfile-task.md)|Znaki manifestów aplikacji i wdrażania.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie MSBuild](../msbuild/msbuild-reference.md).|  
+|[Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generuje manifestów aplikacji i wdrażania dla aplikacji Visual Basic, Visual C# i Visual C++.<br /><br /> Podpisuje i manifestów aplikacji i wdrażania zaloguje się ponownie.<br /><br /> Można uruchomić z wiersza polecenia i skrypty partii.|  
+|[MageUI.exe (narzędzie generowania i edytowania manifestu, klient z interfejsem graficznym)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Generuje i edycji manifestów aplikacji i wdrażania.<br /><br /> Podpisuje i manifestów aplikacji i wdrażania zaloguje się ponownie.|  
+|[GenerateApplicationManifest, zadanie](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikacji.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie MSBuild](../msbuild/msbuild-reference.md).|  
+|[GenerateDeploymentManifest, zadanie](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest wdrażania.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie MSBuild](../msbuild/msbuild-reference.md).|  
+|[SignFile, zadanie](../msbuild/signfile-task.md)|Znaki manifestów aplikacji i wdrażania.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie MSBuild](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Tworzenie aplikacji do wygenerowania manifestów aplikacji i wdrażania.|  
   
  W poniższej tabeli przedstawiono .NET Framework w wersji wymaganych do obsługi aplikacji ClickOnce w tych przeglądarek.  

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c694295c3456accc8d2c1cd3b0a1ec20f59343c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7208d38966e2caa9f9510c48c34952742d06c1b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Uzupełnianie składni w starsza wersja usługi języka
 Uzupełnianie to proces, za pomocą którego usługa języka umożliwia użytkownikom Zakończ słowem kluczowym języka lub element, który zostały uruchomione, wpisując w edytorze core. W tym temacie omówiono sposób działania uzupełnianie i jak ją wdrożyć w usłudze języka.  
@@ -40,4 +41,4 @@ Uzupełnianie to proces, za pomocą którego usługa języka umożliwia użytkow
  Po wprowadzeniu wyzwalacza w edytorze — w szczególności bufor tekstowy — wywołuje usługi języka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody. Powoduje to edytor można wyświetlić interfejsu użytkownika, dzięki czemu użytkownik może wybrać spośród kandydatów uzupełniania instrukcji. Ta metoda wymaga wykonania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> i <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> flagi jako parametry. W polu listy przewijania zostanie wyświetlona lista elementów ukończenia. Jako użytkownik będzie nadal występował, wpisując, zaznaczenie w polu listy jest aktualizowany w celu odzwierciedlenia wpisany najlepiej pasuje do najnowszych znaków. Edytor core implementuje interfejs użytkownika dla uzupełniania instrukcji, ale usługa języka musi implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfejsu do określania zestawu elementów ukończenia candidate dla instrukcji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przechwytywaniu polecenia usługi języka starsza wersja](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+ [Przechwytywanie poleceń starszej wersji usługi językowej](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

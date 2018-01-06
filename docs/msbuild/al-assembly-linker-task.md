@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 233946c0c46f9ee053f3497e7d6aa856315c3dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 46ddcdba540128ed866e136bf0db548575e63910
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker) — Zadanie
 AL — zadanie jest zawijana AL.exe, narzędzie, które jest dystrybuowane z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie Assembly Linker jest używany do utworzenia zestawu z manifestu z jednego lub więcej plików, które moduły albo lub plików zasobów. Kompilatory i środowisk deweloperskich może już udostępniać tych funkcji, co często nie jest konieczne do użycia bezpośrednio tego zadania. Assembly Linker jest użyteczna dla deweloperów konieczności tworzenia w jednym zestawie z wielu plików składników, takich jak te, które mogą być tworzone z wielu języków programowania. To zadanie nie łączyć modułów w jednym zestawie pliku; indywidualne moduły muszą być rozproszone i jest dostępny w kolejności dla wynikowego zestawu można prawidłowo załadować. Aby uzyskać więcej informacji dotyczących AL.exe, zobacz [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).  

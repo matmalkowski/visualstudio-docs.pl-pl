@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29def0d3aef8a097f5b956bd43df7d8b53abebb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52040b717204f151e4a370f5f2a25b29781878b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Porady: tworzenie podstawowego modułu cieniowanie Phong
 Ten dokument przedstawia sposób umożliwiają utworzenie cieniowania oświetlenia, implementujący klasycznego modelu oświetlenia Phong Designer programu do cieniowania i języka programu do cieniowania wykres skierowane (DGSL).  
@@ -75,4 +76,4 @@ Ten dokument przedstawia sposób umożliwiają utworzenie cieniowania oświetlen
  [Porady: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md)   
  [Porady: tworzenie cieniowania Lambert podstawowe](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
- [Węzły projektanta programu do cieniowania](../designers/shader-designer-nodes.md)
+ [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

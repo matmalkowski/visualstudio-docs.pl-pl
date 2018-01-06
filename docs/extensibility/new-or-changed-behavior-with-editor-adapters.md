@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f69bbed7c335afb6b570de34cbef70470abd373
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c24b8c5520befcc204b59609b116d9d16ee26281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Zachowanie nowe lub zostały zmienione z kartami edytora
 Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji edytorze podstawowych programu Visual Studio i zamierzasz używać kart edytora (lub podkładek) zamiast przy użyciu nowego interfejsu API, należy zwrócić uwagę następujące różnice w zachowaniu kart edytora względem poprzedniej Edytor core.  

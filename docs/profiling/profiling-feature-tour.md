@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Przegląd funkcji profilowania
 
@@ -146,7 +147,8 @@ Jeśli potrzebne funkcje, takie jak instrumentacji, które nie są aktualnie dos
 
 ![Narzędzia Eksplorator wydajności](../profiling/media/prof-tour-performance-explorer.png "Eksplorator wydajności")
 
-## <a name="which-tool-should-i-use"></a>Narzędzie, które powinny używać?  
+## <a name="tool_support_info"></a>Narzędzie, które powinny używać?  
+
 Poniżej przedstawiono listę różnych narzędzi, których program Visual Studio oferuje i projekty różnych typów można używać ich z:
   
 |Narzędzia wydajności|System Windows desktop|Magazynu uniwersalnego systemu Windows|Podstawowe ASP.NET/ASP.NET|  
@@ -157,7 +159,7 @@ Poniżej przedstawiono listę różnych narzędzi, których program Visual Studi
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|  
 |[Wskazówek](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|  
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak (nie dla platformy ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Tylko .NET Enterprise|Tylko .NET Enterprise|Tylko .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET i Visual Studio Enterprise|.NET i Visual Studio Enterprise|.NET i Visual Studio Enterprise|
 |[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak| 
 |[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak, aby HTML, nie dla XAML|Brak|  
 |[Pamięć języka JavaScript](../profiling/javascript-memory.md)|Brak|tak, aby HTML, nie dla XAML|Brak|  

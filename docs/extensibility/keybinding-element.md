@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>KeyBinding Element
 KeyBinding element określa skróty klawiaturowe dla poleceń.  
@@ -60,7 +61,7 @@ KeyBinding element określa skróty klawiaturowe dla poleceń.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element powiązania klawiszy](../extensibility/keybindings-element.md)|Elementy KeyBinding grup i innych grup powiązań kluczy.|  
+|[KeyBindings, element](../extensibility/keybindings-element.md)|Elementy KeyBinding grup i innych grup powiązań kluczy.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -75,4 +76,4 @@ KeyBinding element określa skróty klawiaturowe dla poleceń.
   
 ## <a name="see-also"></a>Zobacz też  
  [Element powiązania klawiszy](../extensibility/keybindings-element.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

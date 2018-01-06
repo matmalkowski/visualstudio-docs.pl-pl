@@ -32,11 +32,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: ff0f152f92d852846200c96a63927445aa8867b0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Tworzenie mapy visual stosu wywołań podczas debugowania w programie Visual Studio Enterprise
 Utwórz mapę kodu wizualne śledzenie stosu wywołań podczas debugowania kodu. Można robić notatki na mapie, żeby śledzić, jak zachowuje się kod, przez co można skoncentrować się na wyszukiwaniu błędów.
@@ -194,4 +195,4 @@ Poniżej przedstawiono krótki przegląd mapę kodu:
  [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)   
  [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)   
- [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)
+ [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)

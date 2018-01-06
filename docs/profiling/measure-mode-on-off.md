@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ae2bfdc41e3ce9901f91887f805298f13aa4fe8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measure-mode-onoff"></a>Tryb pomiarowy Wł./Wył.
 Za pomocą tego narzędzia, należy dokładnie mierzyć długość czasu na osi czasu. Aby włączyć tryb pomiarowy, kliknij przycisk miary (co ma ikonę linijki), a następnie przeciągnij na osi czasu. Podczas przeciągania zauważyć, że w obszarze poniżej wskaźnika jest wyróżnione kolorem żółtym, a czas jest wyświetlana na pasku narzędzi po prawej stronie przycisku. Ta wartość jest obliczana dynamicznie podczas przeciągania, dzięki czemu można natychmiast zobaczyć, jak długo trwa określonego zdarzenia. Po zwolnieniu przycisku myszy wartość czasu jest widoczne.  

@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource — Zadanie
 Wykonuje konwersję między txt i pliki resx (format zasobów opartych na języku XML) i wspólnego języka środowiska uruchomieniowego binarne .resources plików, które może być osadzony w pliku wykonywalnym na binarne środowiska uruchomieniowego lub skompilowany w zestawy satelickie. To zadanie służy zwykle do konwersji plików txt lub .resx .resource plików. `GenerateResource` Zadanie jest podobne do [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -41,7 +42,7 @@ Wykonuje konwersję między txt i pliki resx (format zasobów opartych na język
 |`ExecuteAsTool`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, uruchamia tlbimp.exe i aximp.exe z odpowiedniego docelowego framework poza procesem do generowania otoki niezbędne zestawy. Ten parametr umożliwia wielowersyjności z `ResolveComReferences`.|  
 |`FilesWritten`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera nazwy wszystkich plików zapisywane na dysku. Jeśli w tym pliku pamięci podręcznej. Ten parametr jest przydatna do implementacji Oczyść.|  
 |`MinimalRebuildFromTracking`|Opcjonalne `Boolean` parametru.<br /><br /> Pobiera lub ustawia przełącznik, który określa, czy będzie używana śledzonych kompilacji przyrostowej. Jeśli `true`, wzrostowe jest włączone; w przeciwnym razie zostanie wymuszone odbudowie.|  
-|`NeverLockTypeAssemblies`|Opcjonalne `Boolean` parametru.<br /><br /> Pobiera lub ustawia wartość logiczna określająca, czy do tworzenia nowego [elementu AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) oceń pliki zasobów (resx) (true) lub Utwórz nową [elementu AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) tylko gdy pliki zasobów odwołują się użytkownika zestaw (false).|  
+|`NeverLockTypeAssemblies`|Opcjonalne `Boolean` parametru.<br /><br /> Pobiera lub ustawia wartość logiczna określająca, czy do tworzenia nowego [elementu AppDomain](/dotnet/api/system.appdomain) oceń pliki zasobów (resx) (true) lub Utwórz nową [elementu AppDomain](/dotnet/api/system.appdomain) tylko gdy pliki zasobów odwołują się użytkownika zestaw (false).|  
 |`OutputResources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Określa nazwę wygenerowanego plików, na przykład plików .resources. Jeśli nie określisz nazwy, używana jest nazwa pliku wejściowego dopasowywania i utworzony plik .resources znajduje się w katalogu, który zawiera plik wejściowy.|  
 |`PublicClass`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, tworzy klasę zasobu o jednoznacznie jako klasa publiczna.|  
 |`References`|Opcjonalne `String[]` parametru.<br /><br /> Odwołania można załadować typów w pliki resx. Elementy danych pliku ResX może mieć typu .NET. Podczas odczytywania pliku .resx to muszą zostać rozwiązane. Zazwyczaj problemu pomyślnie przy użyciu standardowej ładowania reguł. Jeśli podasz zestawów w `References`, ich pierwszeństwo.<br /><br /> Ten parametr nie jest wymagany dla jednoznacznie zasobów.|  

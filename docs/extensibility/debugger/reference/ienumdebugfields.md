@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed697205a5cd7d866df639e2908e3cc0b4fa2f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e930a9e78fb1d91bc5738256e0555f3949829c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Ten interfejs reprezentuje kolekcję obiektów implementacja [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.  
@@ -40,7 +41,7 @@ IEnumDebugFields : IUnknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Dalej](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Pobiera zestaw dalej [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektów z wyliczenia.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Pobiera zestaw dalej [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektów z wyliczenia.|  
 |[Pomiń](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Pomija określoną liczbę wpisów.|  
 |[Resetowanie](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Resetuje wyliczenia do pierwszej pozycji.|  
 |[Klonowania](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Pobiera kopię w bieżącym wyliczeniu.|  

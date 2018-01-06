@@ -13,20 +13,21 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0d7f7ccb9b752af4789b757fb1a3ed2ae5d29e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10e50e8afde8bd4d5669ee899a061b708377f28f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-help"></a>Spy++ — Pomoc
 W dokumentacji narzędzia Spy ++ obejmuje dwie grupy tematy ogólne na przy użyciu narzędzia Spy ++ i widoków Spy ++. Są one następuje Spy ++ — odwołanie, które znajdują się dodatkowe szczegóły dotyczące każdego menu dostępne polecenia i okno dialogowe.  
   
 ## <a name="using-spy"></a>Korzystanie z programu Spy++  
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
 ## <a name="spy-reference"></a>Spy++ — Odwołanie  

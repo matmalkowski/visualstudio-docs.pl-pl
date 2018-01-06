@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfe7da717a59b114052080048e97b1d6fcdd425
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdiff-function"></a>Funkcja SccDiff
 Ta funkcja wyświetla (lub opcjonalnie tylko wyszukuje) systemu kontroli różnice między bieżącego pliku (na dysku lokalnym) i jego ostatniej wersji w źródle.  
@@ -84,4 +85,4 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_TIME|Porównuje dyskretnie pliku za pośrednictwem jego sygnatury czasowej, jeśli są obsługiwane. Jeśli nie jest obsługiwana, powraca do porównania zawartości.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

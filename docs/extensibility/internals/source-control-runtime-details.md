@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9647f1f399b0d6516fe6475e6245c6834a0ea2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b27aa56cdcf48ded56f9a43e40a1e65f3491536
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-runtime-details"></a>Szczegóły czasu wykonywania kontroli źródła
 Projekt zostanie dodany do kontroli źródła, gdy użytkownik dodaje plik do projektu do kontroli źródła, albo przez kontroler automatyzacji, takich jak kreatora. Projekt nie określa dla siebie jest pod kontrolą źródła. obsługuje kontroli źródła, ale należy je dodać ręcznie do niego.  
@@ -28,4 +29,4 @@ Projekt zostanie dodany do kontroli źródła, gdy użytkownik dodaje plik do pr
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>   
- [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)
+ [Obsługa kontroli kodu źródłowego](../../extensibility/internals/supporting-source-control.md)

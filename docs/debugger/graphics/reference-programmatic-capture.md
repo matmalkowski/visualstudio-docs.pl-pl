@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 899211452a776931e3d0d9742e499ed8ba78a652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3755dbb95dc220d070219fbac4a03885d5ed0158
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-programmatic-capture"></a>Odwołanie (przechwycenie programowe)
 Diagnostyka grafiki obsługuje programowe kontrolę nad jego funkcji przechwytywania, za pośrednictwem programowe Przechwytywanie interfejsu API. Ten interfejs API umożliwia Przełącz i dodawać komunikaty do diagnostyki grafiki HUD (wyświetlanie Head w górę), zainicjować i utworzyć pliki dziennika grafiki i przechwytywanie informacji graficznych.  
@@ -27,7 +28,7 @@ Diagnostyka grafiki obsługuje programowe kontrolę nad jego funkcji przechwytyw
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[Vsgdbg — klasa](vsgdbg-class.md)|Reprezentuje interfejs, za pomocą którego składników w aplikacji diagnostyki grafiki jest kontrolowany programowo.|  
+|[VsgDbg, klasa](vsgdbg-class.md)|Reprezentuje interfejs, za pomocą którego składników w aplikacji diagnostyki grafiki jest kontrolowany programowo.|  
   
 ### <a name="preprocessor-symbols"></a>Definicji symboli preprocesora  
   

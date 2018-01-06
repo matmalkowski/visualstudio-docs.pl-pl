@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f61a9917d484499e3cfd641f581859de01663bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-7-share"></a>Testowanie obszaru 7: udziału
 Obszar ten test obejmuje udostępniania elementów między lokacjami za pomocą **udziału** polecenia.  
@@ -62,4 +63,4 @@ Obszar ten test obejmuje udostępniania elementów między lokacjami za pomocą 
 |Udostępnianie kilka plików z jednego projektu do innego|1.  Utwórz nowy projekt z kilku plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Zamknij rozwiązanie.<br />4.  Utwórz nowy projekt w rozwiązaniu do nowego.<br />5.  Dodaj rozwiązanie do kontroli źródła.<br />6.  Wybierz projekt.<br />7.  Otwórz **udziału** okno dialogowe (**pliku** -> **kontroli źródła** -> **udziału**).<br />8.  Udostępnianie kilka plików z wcześniej utworzony projekt do aktualnie otwartego projektu.|Typowe oczekiwane zachowanie.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

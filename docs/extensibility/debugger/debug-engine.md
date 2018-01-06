@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 Aparat debugowania (DE) współpracuje z interpreter lub systemu operacyjnego w celu zapewnienia usług debugowania, takich jak wykonanie oceny kontroli, punkty przerwania i wyrażenia. Niemcy jest odpowiedzialny za monitorowanie stanu debugowany program. Aby to zrobić, DE używa, niezależnie od metody są dostępne w środowisku wykonawczym obsługiwanych, czy z Procesora lub interfejsów API dostarczonych przez środowisko uruchomieniowe.  
@@ -42,4 +43,4 @@ Aparat debugowania (DE) współpracuje z interpreter lub systemu operacyjnego w 
 ## <a name="see-also"></a>Zobacz też  
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)   
  [Ewaluator wyrażeń](../../extensibility/debugger/expression-evaluator.md)   
- [Dostawca — symbol](../../extensibility/debugger/symbol-provider.md)
+ [Dostawca symboli](../../extensibility/debugger/symbol-provider.md)

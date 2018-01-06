@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy uniwersalnej systemu Windows i Windows 8.1 w symulatorze
 Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows i Windows 8.1 jest aplikacją, która symuluje aplikacji platformy uniwersalnej systemu Windows lub Windows 8.1. Można uruchomić aplikacji wybierz rozmiar ekranu fizycznego i rozwiązania, który ma zostać emulować. Można również Symulowanie zdarzeń obrotu i touch typowe i symulować właściwości połączenia sieciowego.
@@ -146,7 +147,7 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows i W
   
  [Odpowiadanie na zdarzenia systemowe z zadaniami w tle](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Wyzwalanie wstrzymania, wznowienia i zdarzeń w aplikacjach platformy uniwersalnej systemu Windows w tle](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach platformy UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Przejdź symulatora za pomocą klawiatury  
  Symulator narzędzi można przechodzić przez naciśnięcie przycisku **klawisze CTRL + ALT + Strzałka w górę** Aby przełączyć fokus w oknie symulatora do narzędzi symulatora. Użyj **Strzałka w górę** i **Strzałka w dół** można przenieść między przyciskami paska narzędzi.  

@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typ projektu
 Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznaje i pracy z danego typu projektu. Wpisy rejestru są zazwyczaj tworzone przy użyciu pliku skryptu (.rgs) z rejestru.  
@@ -270,4 +271,4 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   
- [Tworzenie wystąpień projektu za pomocą fabryk projektu](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

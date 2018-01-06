@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f05461aa75a8088f758bd24ec5e73ccd407a8681
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b64d9b35030a18a6258de52ed0f12f9796044ba5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-vsct-file"></a>Porady: tworzenie. Plik Vsct  
   
@@ -149,4 +150,4 @@ Można utworzyć pliku vsct opartych na języku XML z istniejącego pliku binarn
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie. Pliki Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)
+ [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

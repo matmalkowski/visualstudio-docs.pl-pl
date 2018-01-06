@@ -20,11 +20,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0d2483fb8c3f244f2a5fd51f076d7157711cd34f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania z szablonu. Część klucza rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition.dsl. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodanie do tych elementów, można dodać kod program, aby dostosować DSL bardziej szczegółowo.  
@@ -74,9 +75,9 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
     -   Wybierz **minimalnego projektanta formularza systemu Windows** lub **minimalnego projektanta WPF** utworzyć DSL, wyświetlany na powierzchni formularzy systemu Windows lub programu WPF. Należy napisać kod, aby zdefiniować edytora. Więcej informacji znajduje się w następujących tematach:  
   
-         [Tworzenie języka specyficznego dla domeny na podstawie formularzy systemu Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
+         [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
-         [Tworzenie języka specyficznego dla domeny na podstawie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)  
+         [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)  
   
 3.  Wprowadź rozszerzenia nazwy pliku z DSL w odpowiedniej strony w kreatorze. To rozszerzenie, które pliki zawierające wystąpień programu DSL będzie używany.  
   
@@ -629,7 +630,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 ## <a name="see-also"></a>Zobacz też  
  [Wprowadzenie do korzystania z języków specyficznego dla domeny](../modeling/getting-started-with-domain-specific-languages.md)   
  [Tworzenie języka specyficznego dla domeny na podstawie formularzy systemu Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
- [Tworzenie języka specyficznego dla domeny na podstawie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
+ [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a3c152640963da1414c34770fff68645e33098ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Wskazówki: Profilowanie aplikacji SharePoint
   W tym przewodniku przedstawiono sposób korzystania z narzędzi profilowania w programie Visual Studio do optymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest odbiorcy zdarzeń funkcji programu SharePoint, zawierający pętli bezczynności, który powoduje spadek wydajności odbiorcy zdarzeń funkcji. Profilera Visual Studio można znaleźć i wyeliminować najdroższych (najwolniejsze wykonywania) część projektu, znanej także jako *aktywnej ścieżki*.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
+-   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].,  
   
 ## <a name="creating-a-sharepoint-project"></a>Tworzenie projektu programu SharePoint  
  Najpierw utwórz projekt programu SharePoint.  

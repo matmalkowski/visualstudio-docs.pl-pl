@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8cc25d03d4565f33ff42267ea0af1c7c31cbfd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 026c6cd05ae926228cab5ab2cb52d389cd021d2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="empty-timeline-segment"></a>Pusty segment osi czasu
 W Concurrency Visualizer powód sekcji osi czasu jest pusty (ma białe tło) zależy od rodzaju kanału.  
@@ -33,4 +34,4 @@ W Concurrency Visualizer powód sekcji osi czasu jest pusty (ma białe tło) zal
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)   
- [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)
+ [Ustawianie powiększenia (Widok wątków)](../profiling/zoom-control-threads-view.md)

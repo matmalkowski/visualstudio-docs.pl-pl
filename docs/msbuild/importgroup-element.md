@@ -20,11 +20,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c86eb35c4ec2022d0839273c731dad240cbaeb98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df9aebf8e604ad16b99ac458bdd9d143bd461ff7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="importgroup-element"></a>Importgroup — Element
 Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  

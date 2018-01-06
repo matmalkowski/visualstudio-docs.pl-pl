@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c93a889ca1bfa911a9f0934302450f6c1ec5413
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d01c655924bfbeae525c91ffb231f4d2b3d2c38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-nodes"></a>Węzły parametrów
 W projektancie programu do cieniowania parametru węzły reprezentują wejścia do programu do cieniowania, które są poza kontrolą aplikacji na podstawie na rysunku, na przykład, właściwości materiału, światła kierunkowe, pozycja kamery i czasu. Nie może zmienić te parametry z każdego wywołania rysunku, można użyć tego samego programu do cieniowania umożliwiają inny wygląd obiektu.  

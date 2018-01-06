@@ -11,11 +11,12 @@ helpviewer_keywords: deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: c6dfe76ef1bfcfbcb0c39c33ea01668cc96f2596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="locating-visual-studio"></a>Lokalizowanie programu Visual Studio
 
@@ -34,7 +35,7 @@ Zlokalizuj pojedynczego wystąpienia daną ścieżkę lub bieżącego procesu lu
 
 Aby znaleźć Visual Studio i innych narzędzi w środowiska kompilacji, skrypty programu PowerShell, pliki instalacyjne i scenariuszy, mamy kilka narzędzi typu open source, można użyć bezpośrednio lub ponownej dystrybucji wraz z własnych skryptów.
 
-| Project | Opis |
+| Projekt | Opis |
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | Natywny jednego pliku wykonywalnego można znaleźć wystąpień spełniających kryteria, takich jak wersji lub wersji wstępnej, jakie produkt jest zainstalowany i obciążeń, które są zainstalowane. Obsługuje również wyszukiwanie programu Visual Studio 2010 i nowszych, ale mniej informacje są zwracane, które dla programu Visual Studio 2017 i nowszych. Zobacz [wiki](https://github.com/Microsoft/vswhere/wiki) przykłady. |
 | [Polecenia cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | Obsługiwane polecenia cmdlet programu PowerShell 2.0 lub nowszej, które zwracają informacje sformatowanego jako obiekty można znaleźć wystąpień, w oparciu o te same kryteria jak _vswhere_ i aby dowiedzieć się więcej właściwości o wystąpieniach. Zobacz [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) przykłady. |

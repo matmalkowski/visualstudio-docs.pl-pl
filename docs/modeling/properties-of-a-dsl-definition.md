@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-a-dsl-definition"></a>Właściwości definicji DSL
 Definiowanie właściwości DslDefinition *języka specyficznego dla domeny* definicji właściwości, takie jak numerów wersji. Właściwości DslDefinition są wyświetlane w **właściwości** okna po kliknięciu Otwórz obszar wykresu w *projektanta języka specyficznego dla domeny*.  

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b6556c2b1dc486754bb4dff0dc73e6f19263a6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 0c827df346b6521303d5d42c3423b513ed497086
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Porady: modyfikowanie plików Web.Config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci ASP.NET
 Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilowane metody Instrumentacji w narzędziach profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i .NET danych o okresie istnienia obiektu z dynamicznie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.  
@@ -141,7 +142,7 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
     |**klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**wartość**|`PerformanceToolsFolder`**\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder`**\VSInstr.Exe**|  
   
 4.  Dodaj inny **dodać** element jako element podrzędny **appSettings** elementu.  
   
@@ -150,7 +151,7 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
     |**klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**wartość**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder`jest to ścieżka profilera plików wykonywalnych. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany w lokalizacji domyślnej, wartość będzie **10.0\Team C:\Program Files\Microsoft Visual Studio Tools narzędzia**  
   

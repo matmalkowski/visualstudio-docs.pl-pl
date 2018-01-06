@@ -14,11 +14,12 @@ caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 8ec9540fb68ecb09dc592f9b05a56291c2a8c80d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7f2b46b615c80e2455823ee63262f17f08d307c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagację zmiany jednego elementu na inny wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany do dowolnego elementu w magazynie, zasady nie zostały zaplanowane wykonywane zwykle, gdy peryferyjnych transakcja została przekazana. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu, lub usunięcie go. Zasady można dołączyć do określonych typów elementów, kształtów lub diagramy. Wiele wbudowanych funkcji zdefiniowanych przez zasady: na przykład zasady upewnij się, że diagram został zaktualizowany po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.  
@@ -214,4 +215,4 @@ namespace Company.TaskRuleExample
   
 ## <a name="see-also"></a>Zobacz też  
  [Propaguj zmiany poza modelu do obsługi zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
- [Ogranicz BoundsRules kształtu lokalizacja i rozmiar](../modeling/boundsrules-constrain-shape-location-and-size.md)
+ [BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md)

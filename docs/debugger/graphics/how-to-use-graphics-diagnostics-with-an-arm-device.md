@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60898b7ea37c7e732453fd03f9c557b2494f66c5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eedc7e454c6523c1ab29e4ae685b14954c8e6d98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Porady: Użyj diagnostyki grafiki z urządzeniem ARM
 Diagnostyka grafiki obsługuje zdalne debugowanie aplikacji Direct3D na urządzeniach z systemem ARM z systemem Windows RT 8.1 lub Windows Phone 8.1. Przechwytywanie informacji graficznych z aplikacji Direct3D ona działać na urządzeniu lub korzystać z urządzenia jako maszynie odtwarzającej grafiki przechwyconych wcześniej informacji.  
@@ -47,4 +48,4 @@ Diagnostyka grafiki obsługuje zdalne debugowanie aplikacji Direct3D na urządze
   
 ## <a name="see-also"></a>Zobacz też  
  [Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym](../run-windows-store-apps-on-a-remote-machine.md)   
- [Porady: zmiana maszyny odtwarzania diagnostyki grafiki](how-to-change-the-graphics-diagnostics-playback-machine.md)
+ [Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki](how-to-change-the-graphics-diagnostics-playback-machine.md)

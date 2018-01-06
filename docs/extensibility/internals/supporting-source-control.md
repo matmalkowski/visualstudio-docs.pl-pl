@@ -13,17 +13,18 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-source-control"></a>Obsługa kontroli źródła
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsługuje wyewidencjonowania pliku, zaewidencjonowania i innych operacji kontroli źródła dla projektu lub edytora. Jako klient kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] służy do interakcji z pakietem kontroli źródła, takich jak [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], które obejmują archiwizacji, przechowywanie wersji i urządzeń do sterowania dynamicznie zdefiniowanego zestawu plików.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Model pakietów kontroli źródła](../../extensibility/internals/model-for-source-control-packages.md)  
+ [Model pakietów kontroli kodu źródłowego](../../extensibility/internals/model-for-source-control-packages.md)  
  Opisuje typ projektu musi implementować interfejsy do obsługi kontroli źródła.  
   
  [Decyzje dotyczące projektu](../../extensibility/internals/source-control-design-decisions.md)  

@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ceadf13f6567b303337b14b6b76be86ddcbac8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-xml-code-comments"></a>Stosowanie komentarzy kodu XML
 Można udostępnić komentarze w plikach źródłowych kodu jako IntelliSense. Po dodaniu przełącznika/doc do języka Visual Basic, C# lub wiersza polecenia kompilatora C++ plik XML jest generowany, która służy jako podstawa dla funkcji IntelliSense dokumentacji.  
@@ -33,4 +34,4 @@ Można udostępnić komentarze w plikach źródłowych kodu jako IntelliSense. P
  Aby uzyskać więcej informacji na temat dokumentowanie kodu w języku C++, zobacz [komentarze](/cpp/cpp/comments-cpp) i [dokumentacji XML](/cpp/ide/xml-documentation-visual-cpp).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Korzystanie z IntelliSense](../ide/using-intellisense.md)
+ [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

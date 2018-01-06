@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4012211a39e1286becadd503a20d402f9ac7c7a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5f726a30a7ae50e35726b67336ec41f50be60b24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Porady: Programowane wykluczanie znaczników akapitu podczas tworzenia zakresów
   Gdy utworzysz <xref:Microsoft.Office.Interop.Word.Range> obiektu akapitu, wszystkie znaki niedrukowalne, takie jak znaczników akapitu w oparciu znajdują się w zakresie. Możesz wstawić tekst z akapitu źródła do akapitu docelowego. Jeśli nie chcesz podzielić akapitu docelowego na oddzielnych akapitów, następnie należy najpierw usunąć znacznik akapitu z akapitu źródła. Ponadto ponieważ informacje dotyczące formatowania akapitu są przechowywane w ramach znak, nie można uwzględniać to po włożeniu zakres do istniejącego akapitu.  
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: programowane Wstawianie tekstu w dokumentach programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Porady: programowane Resetowanie zakresów w programie Word dokumentów](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Porady: programowane definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

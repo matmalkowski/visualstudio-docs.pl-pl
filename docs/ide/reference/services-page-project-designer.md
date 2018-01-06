@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0800884a03544aec822d31cf64fd47a4f63f3e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a44dc8304274bf0633e891690f6b34d2637dfa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 Usługi aplikacji klienta udostępnienia uproszczony [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] logowania, ról i usług profilu w aplikacjach formularzy systemu Windows i Windows Presentation Foundation (WPF). Można użyć **usług** strony **projektanta projektu** Włączanie i konfigurowanie usługi aplikacji klienta dla projektu.  
@@ -33,7 +34,7 @@ Usługi aplikacji klienta udostępnienia uproszczony [!INCLUDE[ajax_current_shor
 >  Usługi aplikacji klienta wymaga pełnej wersji programu .NET Framework i nie są obsługiwane w programie .NET Framework Client Profile. Jeśli **włączyć usługi aplikacji klienckiej** pole wyboru jest wyłączone, upewnij się, że **platformy docelowej** jest ustawiony do programu .NET Framework 3.5 lub nowszej. Aby wyświetlić **platformy docelowej** ustawienie w języku C#, Otwórz w Projektancie projektu, a następnie kliknij przycisk **aplikacji** strony. Aby wyświetlić **platformy docelowej** ustawienie w języku Visual Basic, Otwórz w Projektancie projektu, kliknij przycisk **skompilować** , a następnie kliknij przycisk **zaawansowane opcje kompilacji**.  
   
 ## <a name="task-list"></a>Lista zadań  
- [Porady: Konfigurowanie usług aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
+ [Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Konfiguracja**  

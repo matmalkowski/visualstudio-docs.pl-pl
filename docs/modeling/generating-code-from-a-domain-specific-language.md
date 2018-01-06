@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 98811cc3e7830dfcbf548bc34c5b3ee268e6f858
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generowanie kodu z języka specyficznego dla domeny
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia zaawansowane metody do generowania kodu, dokumentów, plików konfiguracji i pozostałych artefaktów z dane reprezentowane w modelach. Przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], można utworzyć zestaw klas, które reprezentują dane, można napisać szablony tekstu w klasach których nazwy i właściwości odzwierciedlenia tych danych.  
@@ -37,15 +38,15 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia zaawansowa
  W tej sekcji omówiono niektóre sposoby tworzenia, modyfikacji i szablony tekstowe używane w debugowania [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Uzyskiwanie dostępu do modeli z szablonów tekstowych](../modeling/accessing-models-from-text-templates.md)  
+ [Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md)  
   
  Zawiera podstawowe informacje o odwołujących się do języka specyficznego dla domeny w szablonach tekstowych.  
   
- [Wskazówki: Debugowanie szablonu tekstowego tego uzyskuje dostęp do modelu](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
+ [Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
   
  Opisuje sposób rozwiązywania problemów i debugowanie szablonu tekstowego, która odwołuje się do języka specyficznego dla domeny.  
   
- [Wskazówki: Łączenie hosta do wygenerowanego procesora dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
+ [Przewodnik: Łączenie hosta z generowanym procesorem dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
   
  Opisano sposób podłączania hosta niestandardowego procesora dyrektywy wygenerowany.  
   

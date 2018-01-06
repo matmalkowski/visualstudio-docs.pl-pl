@@ -14,18 +14,19 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fa4aec5f164e188ff9832d06a4b3c8dad46ae63d
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017 r.
 
 Często administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdrożenia na klienckich stacjach roboczych. Firma Microsoft została zaprojektowana Visual Studio 2017 do pamięci podręcznej plików początkowej instalacji oraz wszystkie aktualizacje produktu w jednym folderze. (Ten proces jest również nazywany _tworzenia układu_.) Firma Microsoft już zostało to zrobione, aby klienckie stacje robocze umożliwiają zarządzanie ich instalacji, nawet jeśli ich nie zostały jeszcze zaktualizowane do obsługi najnowszych aktualizacji tej samej lokalizacji sieciowej.
 
-> [!NOTE]
-> Jeśli masz wiele wersji programu Visual Studio używany w obrębie przedsiębiorstwa (na przykład Visual Studio Professional i Visual Studio Enterprise), należy utworzyć udział instalacji oddzielnej sieci dla każdej wersji.
+ > [!NOTE]
+ > Jeśli masz wiele wersji programu Visual Studio używany w obrębie przedsiębiorstwa (na przykład Visual Studio Professional i Visual Studio Enterprise), należy utworzyć udział instalacji oddzielnej sieci dla każdej wersji.
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Pobierz inicjujący Instalatora programu Visual Studio
 
@@ -157,10 +158,10 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
-* [Zainstaluj program Visual Studio](install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio obciążenia i składnik identyfikatorów](workload-and-component-ids.md)
+* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

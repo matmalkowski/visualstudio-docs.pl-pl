@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24a2937b37aa339f85e197f6ff2bb49cbb0ce86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-project-template"></a>Szablon projektu VSIX
 Można użyć szablonu projektu VSIX do zakodowania w projekcie VSIX jedno lub więcej rozszerzeń programu Visual Studio, a następnie opublikuj pakietu na [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web.  
@@ -85,4 +86,4 @@ Można użyć szablonu projektu VSIX do zakodowania w projekcie VSIX jedno lub w
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
- [Znajdowanie rozszerzeń programu Visual Studio i korzystanie](../ide/finding-and-using-visual-studio-extensions.md)
+ [Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich](../ide/finding-and-using-visual-studio-extensions.md)

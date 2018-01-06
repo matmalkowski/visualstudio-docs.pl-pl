@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 223342709dbe97fe38fb7a495ce482ae70e1c807
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb265aabdb4feda05512e036cda19abc574e2fd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitmap-element"></a>Element mapy bitowej
 Definiuje mapy bitowej. Mapa bitowa została załadowana z zasobu lub z pliku.  
@@ -50,7 +51,7 @@ Definiuje mapy bitowej. Mapa bitowa została załadowana z zasobu lub z pliku.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element map bitowych](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
+|[Bitmaps, element](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -61,4 +62,4 @@ Definiuje mapy bitowej. Mapa bitowa została załadowana z zasobu lub z pliku.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

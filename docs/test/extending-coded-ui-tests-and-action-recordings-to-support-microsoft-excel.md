@@ -11,11 +11,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72c8918d0f3396273bb0eee81cddd8f09c779592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 Testowanie framework kodowane testy interfejsu użytkownika i nagrywania akcji nie obsługuje co przykładowy interfejs użytkownika. Nie obsługuje określonego interfejsu użytkownika, który ma zostać przetestowana. Na przykład nie można bezpośrednio utworzyć kodowanego testu interfejsu użytkownika lub akcji rejestrowania dla [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] arkusza kalkulacyjnego. Można jednak utworzyć własne rozszerzenie kodowanych struktury testowej interfejsu użytkownika, która będzie obsługiwać określonego interfejsu użytkownika korzystając z rozszerzalności platformy kodowanego testu interfejsu użytkownika. Poniższy temat zawiera przykładowy sposób rozszerzyć framework do obsługi tworzenia kodowane testy interfejsu użytkownika i nagrywania akcji dla [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Aby uzyskać więcej informacji na temat platformy, które są obsługiwane, zobacz [obsługiwane konfiguracje oraz platformy kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -78,4 +79,4 @@ Przegląd architektury
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)   
- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

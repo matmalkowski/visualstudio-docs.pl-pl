@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20abad6a195d8493be8849588b86035d03fdc654
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccget-function"></a>Funkcja SccGet
 Ta funkcja pobiera kopię co najmniej jeden plik do przeglądania i kompilacji, ale nie do edycji. Większość systemów plików są oznaczone jako tylko do odczytu.  
@@ -103,4 +104,4 @@ SCCRTN SccGet(
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
- [Używane przez określonego polecenia flag bitowych](../extensibility/bitflags-used-by-specific-commands.md)
+ [Flagi bitowe używane przez określone polecenia ](../extensibility/bitflags-used-by-specific-commands.md)

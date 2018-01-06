@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="responding-to-and-propagating-changes"></a>Odpowiadanie na zmiany i propagowanie zmian
 Gdy element jest tworzony, usunięte lub zaktualizowane, można napisać kod Propaguj zmiany do innych części modelu lub do zasobów zewnętrznych, takich jak pliki, bazy danych lub innych składników.  
@@ -26,15 +27,15 @@ Gdy element jest tworzony, usunięte lub zaktualizowane, można napisać kod Pro
   
 |Metoda|Scenariusze|Więcej informacji|  
 |---------------|---------------|--------------------------|  
-|Definiuje właściwości domeny obliczona.|Właściwość domeny, którego wartość jest obliczana na podstawie innych właściwości w modelu. Na przykład cen, który jest sumą ceny powiązanych elementów.|[Właściwości magazynu obliczeniowej i niestandardowych](../modeling/calculated-and-custom-storage-properties.md)|  
-|Zdefiniuj właściwość domeny niestandardowej magazynu.|Właściwość domeny przechowywane w innych częściach modelu lub zewnętrznie. Na przykład można przeanalizować wyrażenia ciągu w drzewie w modelu.|[Właściwości magazynu obliczeniowej i niestandardowych](../modeling/calculated-and-custom-storage-properties.md)|  
-|Programy obsługi, takie jak OnValueChanging i OnDeleting zmienić zastąpienia|Synchronizowanie różnych elementów i synchronizowania zewnętrznych wartości z modelu.<br /><br /> Ograniczenie wartości do określonych zakresów.<br /><br /> Wywoływana tuż przed i po wartości właściwości i innych zmian. Zmiana można rozwiązać przez Zgłaszanie wyjątku.|[Obsługa zmiany wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md)|  
-|Reguły|Można zdefiniować reguły, które są umieszczane w kolejce do wykonania bezpośrednio przed zakończeniem transakcji, w którym wystąpiło zdarzenie zmiany. Nie są one wykonywane na cofania lub ponownego wykonywania. Ich używać, aby zachować synchronizację z innego jedną część magazynu.|[Reguły Propaguj zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md)|  
-|Zdarzenia magazynu|Magazyn modelowania udostępnia powiadomienia zdarzenia, takie jak dodanie lub usunięcie elementu lub łącze lub zmiana wartości właściwości. Zdarzenie jest również wykonywane na Cofnij i ponów. Użyj magazynu, aby zaktualizować wartości, które nie znajdują się w magazynie.|[Propaguj zmiany poza modelu do obsługi zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|Zdarzenia platformy .NET|Kształty mają procedury obsługi zdarzeń, które odpowiadają na kliknięcie myszą i innych gestów. Należy zarejestrować dla tych zdarzeń dla każdego obiektu. Rejestracja jest zazwyczaj wykonywane w zastąpieniu InitializeInstanceResources i należy ją odtworzyć dla każdego elementu.<br /><br /> Zdarzenia te występują zazwyczaj poza transakcją.|[Porady: Przechwytywanie kliknięcie kształtu lub Dekoratora](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
-|Granice reguły|Zasada granic jest używany w szczególności, aby ograniczyć zakresem kształtu.|[Ogranicz BoundsRules kształtu lokalizacja i rozmiar](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|Reguły wyboru|W szczególności reguł wyboru ograniczyć, co użytkownik może wybrać.|[Porady: dostęp i ograniczyć bieżącego zaznaczenia](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|Wskazuje stanów elementów modelu przy użyciu funkcji kształtów lub łączników, takich jak cień, strzałek, kolor i szerokości linii i styl.|[Aktualizowanie łączników i kształtów w celu odzwierciedlenia modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
+|Definiuje właściwości domeny obliczona.|Właściwość domeny, którego wartość jest obliczana na podstawie innych właściwości w modelu. Na przykład cen, który jest sumą ceny powiązanych elementów.|[Obliczone i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md)|  
+|Zdefiniuj właściwość domeny niestandardowej magazynu.|Właściwość domeny przechowywane w innych częściach modelu lub zewnętrznie. Na przykład można przeanalizować wyrażenia ciągu w drzewie w modelu.|[Obliczone i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md)|  
+|Programy obsługi, takie jak OnValueChanging i OnDeleting zmienić zastąpienia|Synchronizowanie różnych elementów i synchronizowania zewnętrznych wartości z modelu.<br /><br /> Ograniczenie wartości do określonych zakresów.<br /><br /> Wywoływana tuż przed i po wartości właściwości i innych zmian. Zmiana można rozwiązać przez Zgłaszanie wyjątku.|[Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md)|  
+|Reguły|Można zdefiniować reguły, które są umieszczane w kolejce do wykonania bezpośrednio przed zakończeniem transakcji, w którym wystąpiło zdarzenie zmiany. Nie są one wykonywane na cofania lub ponownego wykonywania. Ich używać, aby zachować synchronizację z innego jedną część magazynu.|[Reguły propagujące zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md)|  
+|Zdarzenia magazynu|Magazyn modelowania udostępnia powiadomienia zdarzenia, takie jak dodanie lub usunięcie elementu lub łącze lub zmiana wartości właściwości. Zdarzenie jest również wykonywane na Cofnij i ponów. Użyj magazynu, aby zaktualizować wartości, które nie znajdują się w magazynie.|[Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
+|Zdarzenia platformy .NET|Kształty mają procedury obsługi zdarzeń, które odpowiadają na kliknięcie myszą i innych gestów. Należy zarejestrować dla tych zdarzeń dla każdego obiektu. Rejestracja jest zazwyczaj wykonywane w zastąpieniu InitializeInstanceResources i należy ją odtworzyć dla każdego elementu.<br /><br /> Zdarzenia te występują zazwyczaj poza transakcją.|[Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
+|Granice reguły|Zasada granic jest używany w szczególności, aby ograniczyć zakresem kształtu.|[BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
+|Reguły wyboru|W szczególności reguł wyboru ograniczyć, co użytkownik może wybrać.|[Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
+|OnAssocatedPropertyChanged|Wskazuje stanów elementów modelu przy użyciu funkcji kształtów lub łączników, takich jak cień, strzałek, kolor i szerokości linii i styl.|[Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
   
 ## <a name="comparing-rules-and-store-events"></a>**Porównanie reguł i magazynu**  
  Zmiany powiadamiających, reguł i zdarzenia są uruchamiane w przypadku wystąpienia zmian w modelu.  
@@ -53,4 +54,4 @@ Gdy element jest tworzony, usunięte lub zaktualizowane, można napisać kod Pro
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Przechwytywanie kliknięcie kształtu lub Dekoratora](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
- [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

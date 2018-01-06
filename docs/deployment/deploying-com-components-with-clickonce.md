@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrożenie starszych składników modelu COM został tradycyjnie trudne. Składniki należy zarejestrować globalnie i w związku z tym może spowodować niepożądane skutki uboczne między aplikacjami nakładające się. Ta sytuacja zwykle nie jest problem w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub side-by-side zgodny. Program Visual Studio umożliwia wdrażanie izolowane składniki modelu COM systemu Windows XP lub wyższej systemu operacyjnego.  
@@ -175,4 +176,4 @@ Wdrożenie starszych składników modelu COM został tradycyjnie trudne. Składn
  Istnieje kilka scenariuszy, w których COM jest wymagana rejestracja na komputerze dewelopera, mimo że wdrożenie aplikacji nie wymaga rejestracji. `Isolated` Właściwość wymaga można zarejestrować składnika COM na komputerze dewelopera w celu automatycznego generowania manifestu podczas kompilacji. Nie ma żadnych Przechwytywanie rejestracji możliwości, które wywołują rejestrację automatyczną, podczas kompilacji. Ponadto wszystkie klasy nie jest jawnie zdefiniowany w bibliotece typów nie zostaną odzwierciedlone w manifeście. Podczas używania składnika modelu COM z istniejącym manifestu, takich jak natywne odwołanie, składnik nie może być konieczne można zarejestrować w czasie opracowywania. Jednak rejestracji jest wymagany, jeśli składnik jest formantu ActiveX, i chcesz uwzględnić w **przybornika** i Projektant formularzy systemu Windows.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)
+ [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)

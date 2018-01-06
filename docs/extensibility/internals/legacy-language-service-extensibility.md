@@ -15,11 +15,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5072aef90e08d645bff2a1bb6800e409e7d2104
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cc4913141350b0e0efa65ec0b4db913b578460b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-extensibility"></a>Rozszerzalność usługi starszej wersji języka
 Usługa języka zapewnia obsługę specyficzny dla języka edycji kodu źródłowego w środowisku IDE.  
@@ -29,27 +30,27 @@ Usługa języka zapewnia obsługę specyficzny dla języka edycji kodu źródło
  W tej sekcji omówiono struktury i implementacji usługi starszej wersji języka.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Migrowanie usługi języka starsza wersja](../../extensibility/internals/migrating-a-legacy-language-service.md)  
+ [Migrowanie starszej wersji usługi językowej](../../extensibility/internals/migrating-a-legacy-language-service.md)  
  Opisano sposób aktualizowania usługi języka z programu Visual Studio 2008 do najnowszej wersji.  
   
- [Podstawowe informacje dotyczące języka starszej wersji usługi](../../extensibility/internals/legacy-language-service-essentials.md)  
+ [Podstawowe informacje dotyczące starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-essentials.md)  
  Zawiera ważne informacje dotyczące sposobu tworzenia usługi języka Aby zintegrować język programowania Visual Studio.  
   
- [Tworzenie usługi języka starsza wersja](../../extensibility/internals/developing-a-legacy-language-service.md)  
+ [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)  
  Zawiera łącza do tematów, które ułatwiają tworzenie usługi języka.  
   
- [Kolorowania w starsza wersja usługi języka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
+ [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
  Zawiera informacje dotyczące obsługi wyróżniania składni za pośrednictwem usługi języka.  
   
  [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
  Zawiera informacje o sposobie używania framework zarządzanego pakietu (MPF) do wdrożenia usługi oferujący wszystkie funkcje języka w kodzie zarządzanym.  
   
- [Obsługa narzędzia do przeglądania Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
+ [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
  Opisuje, biblioteki i narzędzia umożliwiające przeglądanie widok drzewa symboli w IDE.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Edytora i rozszerzenia usługi języka](../../extensibility/editor-and-language-service-extensions.md)  
+ [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md)  
  Zawiera omówienie programu Visual Studio edytory.  
   
- [Obsługa usługi języka do debugowania](../../extensibility/internals/language-service-support-for-debugging.md)  
+ [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md)  
  Zawiera informacje i łącza do programu Visual Studio debugowanie SDK, który zawiera informacje wymagane do tworzenia i dostosowywania debugera składniki używane do debugowania programów.

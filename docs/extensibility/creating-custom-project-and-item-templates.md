@@ -12,21 +12,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 3677dd4ad6177f4085c907d1fceaaf37978bf769
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Tworzenie niestandardowych projekt oraz szablony elementów
-Visual Studio SDK zawiera szablony projektów, które utworzyć szablon niestandardowy projekt i szablonu niestandardowego elementu. Te szablony obejmują niektóre typowe podstawienia parametru i skompiluj jako pliki zip. Nie są automatycznie wdrażane, a nie są dostępne w eksperymentalnym wystąpieniu. Należy skopiować zip plików do lokalizacji  
+
+Visual Studio SDK zawiera szablony projektów, które utworzyć szablon niestandardowy projekt i szablonu niestandardowego elementu. Te szablony obejmują niektóre typowe podstawienia parametru i skompiluj jako pliki zip. Nie są automatycznie wdrażane, a nie są dostępne w eksperymentalnym wystąpieniu. Plik zip wygenerowanego należy skopiować do katalogu szablonu użytkownika.
   
- Szablony tworzenia szablonu pozwala na uwzględnianie szablonów w większych rozszerzeń. Dzięki temu można zaimplementować kontroli wersji na pliki źródłowe i wbudowane grupy projektów szablonu w jeden pakiet VSIX.  
+Szablony tworzenia szablonu pozwala na uwzględnianie szablonów w większych rozszerzeń. Dzięki temu można zaimplementować kontroli wersji na pliki źródłowe i wbudowane grupy projektów szablonu w jeden pakiet VSIX.  
   
- Scenariusze tworzenia szablonów podstawowe, należy używać **Eksportuj szablon** kreatora, który wyprowadza do skompresowanego pliku. Aby uzyskać więcej informacji o tworzeniu szablonu podstawowego, zobacz [szablony tworzenie projektów i elementów](../ide/creating-project-and-item-templates.md).  
-  
- Począwszy od programu Visual Studio 2017 skanowanie w poszukiwaniu szablony niestandardowe projektów i elementów zostaną już wykonane. Zamiast tego rozszerzenia, należy podać manifestu plików szablonów, które opisują lokalizację instalacji tych szablonów. Można użyć programu Visual Studio 2017 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenie, należy ręcznie wygenerować pliki manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualniania niestandardowe szablony projektów i elementów dla programu Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schemat manifestu szablonu jest udokumentowany w [programu Visual Studio manifestu odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
-  
+Można również skonfigurować szablon można zainstalować pakietów NuGet. Aby uzyskać więcej informacji, zobacz [pakietów NuGet w szablony Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates).
+
+Scenariusze tworzenia szablonów podstawowe, należy używać **Eksportuj szablon** kreatora, który wyprowadza do skompresowanego pliku. Aby uzyskać więcej informacji o tworzeniu szablonu podstawowego, zobacz [szablony tworzenie projektów i elementów](../ide/creating-project-and-item-templates.md).  
+
+> [!NOTE]
+> Począwszy od programu Visual Studio 2017 skanowanie w poszukiwaniu szablony niestandardowe projektów i elementów zostaną już wykonane. Zamiast tego rozszerzenia, należy podać manifestu plików szablonów, które opisują lokalizację instalacji tych szablonów. Można użyć programu Visual Studio 2017 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenie, należy ręcznie wygenerować pliki manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualniania niestandardowe szablony projektów i elementów dla programu Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schemat manifestu szablonu jest udokumentowany w [programu Visual Studio manifestu odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
 ## <a name="creating-a-project-template"></a>Tworzenie szablonu projektu  
   
 1.  Tworzenie projektu szablonu projektu. Można znaleźć szablonu projektu w **nowy projekt** okna dialogowego, w języku Visual Basic lub Visual C# **rozszerzalności** folderu.  
@@ -81,5 +86,7 @@ Visual Studio SDK zawiera szablony projektów, które utworzyć szablon niestand
   
 5.  Dla projektu szablonu projektu, powinien zostać wyświetlony na liście szablonu projektu **nowy projekt** okna dialogowego (**Plik > Nowy > Projekt**), Visual C# lub Visual Basic węzła. Dla elementu projektu szablonu, powinien zostać wyświetlony szablonu elementu na liście w oknie dialogowym Dodawanie nowego elementu (w **Eksploratora rozwiązań**, wybierz węzeł projektu i kliknij przycisk **Add / nowy element**).  
   
-## <a name="see-also"></a>Zobacz też  
- [Informacje o szablonach programu Visual Studio](../ide/visual-studio-template-reference.md)
+## <a name="see-also"></a>Zobacz też
+
+[Odwołanie do szablonu Visual Studio](../ide/visual-studio-template-reference.md)  
+[Pakiety NuGet w szablony programu Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

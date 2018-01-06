@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Wskazówki: tworzenie niestandardowego procesora dyrektywy
 *Procesory dyrektywy* pracy przez dodawanie kodu do *wygenerowane klasy transformacji*. Jeśli wywołujesz *dyrektywy* z *szablonu tekstowego*, pozostałe kod napisany w szablonie tekst może wykorzystywać funkcję, która udostępnia dyrektywy.  

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28901d9635a4a823507834cde201860fda1e2168
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f4d7d76e80fa165206a3faa53835b74c2716d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccremove-function"></a>Funkcja SccRemove
 Ta funkcja usuwa pliki z systemu kontroli źródła.  
@@ -77,4 +78,4 @@ SCCRTN SccRemove(
  Ta funkcja usuwa pliki z systemu kontroli źródła, ale nie powoduje usunięcia ich z lokalnego dysku twardego użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

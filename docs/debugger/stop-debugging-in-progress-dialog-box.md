@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.stopnow
 dev_langs:
 - CSharp
@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c056882d1a5c7eca4a7e09d040753d139c89b5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3f98ce313228fd96b93cb52104b190adb057a712
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Zatrzymanie trwającego debugowania — Okno dialogowe
 To okno dialogowe jest wyświetlany, gdy debuger próbuje zatrzymać sesję debugowania, ale zatrzymywania sesji jest, aby zająć trochę czasu. Zatrzymanie sesji debugowania jest zazwyczaj bardzo szybko i nie ma tego okna dialogowego. Czasami jednak potrzebny dodatkowy czas można odłączyć od wszystkich procesów debugowany. Zatrzymanie sesji zajmuje więcej niż kilka sekund (lub jeśli wystąpi awaria detach), zostanie wyświetlone okno dialogowe. W takim przypadku często, może to być spowodowane wystąpił problem wewnętrzny i można się z pomocą techniczną.  

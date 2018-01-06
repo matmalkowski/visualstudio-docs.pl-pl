@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9c616c359480831827549d05496157ad28e4575
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c934ae4869867b0680999514cbaae99c74c3d2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Skróty klawiaturowe i klawisze modyfikujące w programie Blend
 Skróty klawiaturowe można przyspieszyć pracę dzięki zmniejszeniu akcję, która wymaga wielu kliknięcia przycisku myszy, aby skrót klawiaturowy pojedynczego. Skróty klawiaturowe w [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] są dostępne w następujących dwóch kategorii:  

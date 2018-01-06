@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae321a8d09bb52b6ef835ab6469fd161013d4eeb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c12d279541e60353a9e6e4354a16870713498b66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami
 Profilowanie interakcji między warstwami udostępnia dodatkowe informacje o czas wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pośrednictwem usług ADO.NET. Dane są zbierane tylko dla wywołań synchronicznych funkcji.  
@@ -48,4 +49,4 @@ Profilowanie interakcji między warstwami udostępnia dodatkowe informacje o cza
 3.  W Eksploratorze wydajności wybierz **cele** węzeł, a następnie określ projekt, plik wykonywalny lub witryny sieci web, który ma zostać profilu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Widok interakcji warstwowych](../profiling/tier-interactions-view.md)
+ [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)

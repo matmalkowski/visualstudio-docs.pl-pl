@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje edytora:  
@@ -73,29 +74,29 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać 
      Jeśli można ją osadzić, należy utworzyć okno hosta dla zewnętrznego edytora, a następnie wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> — metoda i zestaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartości wyliczenia `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wskazówki: Tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Przewodnik: tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Wyjaśnia sposób tworzenia niestandardowego edytora.  
   
- [Wskazówki: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Przewodnik: dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Opisano sposób dodawania funkcji do edytora niestandardowego.  
   
- [Inicjowanie projektanta i konfiguracji metadanych](../extensibility/designer-initialization-and-metadata-configuration.md)  
+ [Inicjowanie projektanta i konfiguracja metadanych](../extensibility/designer-initialization-and-metadata-configuration.md)  
  Wyjaśniono, jak zainicjować projektanta.  
   
- [Dostarczanie Obsługa polecenia Cofnij konstruktorom](../extensibility/supplying-undo-support-to-designers.md)  
+ [Dostarczanie obsługi polecenia Cofnij do projektantów](../extensibility/supplying-undo-support-to-designers.md)  
  Wyjaśniono, jak zapewnić obsługę cofania dla projektantów.  
   
- [Kolorowania w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
+ [Kolorowania składni w edytorach niestandardowych](../extensibility/syntax-coloring-in-custom-editors.md)  
  Objaśniono różnicę między kolorowania w edytorze rdzeni i edytory niestandardowych.  
   
- [Dane dokumentu i Widok dokumentu w edytorach niestandardowych](../extensibility/document-data-and-document-view-in-custom-editors.md)  
+ [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../extensibility/document-data-and-document-view-in-custom-editors.md)  
  Opisuje sposób nadawania danych dokumentów i widoków dokumentu w edytorach niestandardowych.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Interfejsy starszej wersji w edytorze](../extensibility/legacy-interfaces-in-the-editor.md)  
  Wyjaśniono, jak uzyskać dostępu do edytora core za pomocą starszej wersji interfejsu API.  
   
- [Tworzenie usługi języka starsza wersja](../extensibility/internals/developing-a-legacy-language-service.md)  
+ [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)  
  Opisuje sposób nadawania usługi języka.  
   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  

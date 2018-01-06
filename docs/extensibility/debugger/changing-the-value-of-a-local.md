@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78affeb358200599d925b9b70df3ae945759054c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-value-of-a-local"></a>Zmiana wartości zmiennej lokalnej
 > [!IMPORTANT]
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
  Ta procedura umożliwia również zmienić wartość zmiennej w **czujki** okno, ale jest `IDebugProperty2` obiektu skojarzone z wartością używaną zamiast lokalnej `IDebugProperty2` obiekt skojarzony z lokalnym samego siebie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przykładowe zastosowanie zmiany wartości](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
+ [Przykład implementacji zmieniania wartości](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
  Używa próbki MyCEE do kroków procesu zmiany wartości.  
   
 ## <a name="see-also"></a>Zobacz też  

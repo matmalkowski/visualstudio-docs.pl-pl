@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 W tej sekcji opisano typowe problemy debugowania i techniki zarządzanych aplikacji lub aplikacje napisane w językach kierowanych środowiska CLR, takich jak Visual Basic, C# i C++. Techniki opisane w tym miejscu są techniki wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [korzystanie z debugera](../debugger/debugger-basics.md).  
@@ -40,7 +41,7 @@ W tej sekcji opisano typowe problemy debugowania i techniki zarządzanych aplika
  [Instrukcje stop w Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  W tym artykule opisano `Stop` instrukcja, która stanowi alternatywę dla ustawienia punktu przerwania. Przykładowy kod jest również udostępniany, wraz z porównanie `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.  
   
- [Wskazówki: Debugowanie formularzy systemu Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [Przewodnik: debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
  Zapewnia instrukcje krok po kroku dotyczące tworzenia formularzy systemu Windows i debugowanie tego formularza. Formularz systemu Windows, standardowy składnik zarządzanych aplikacji systemu Windows, jest jednym z najbardziej typowych zarządzanych aplikacji. W tym przewodniku zastosowano Visual C# i Visual Basic, ale zazwyczaj przypominają techniki tworzenia formularzy systemu Windows w języku C++.  
   
  [Debugowanie metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -49,7 +50,7 @@ W tej sekcji opisano typowe problemy debugowania i techniki zarządzanych aplika
  [Debugowanie w trybie mieszanym](../debugger/debugging-mixed-mode-applications.md)  
  W tym artykule omówiono debugowanie trybu mieszanego aplikacji. Oznacza to, każda aplikacja, która łączy kodu natywnego z kodu zarządzanego.  
   
- [Błąd: Debugowanie jest niemożliwe, ponieważ w systemie jest włączony debuger jądra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Błąd: Debugowanie nie jest możliwe, ponieważ debuger jądra został wyłączony z poziomu systemu](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  W tym artykule opisano komunikat o błędzie, który występuje podczas debugowania kodu zarządzanego na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], lub systemu Windows NT, który został uruchomiony w trybie debugowania.  
   
  [Optymalizacja i debugowanie JIT](../debugger/jit-optimization-and-debugging.md)  
@@ -65,7 +66,7 @@ W tej sekcji opisano typowe problemy debugowania i techniki zarządzanych aplika
  [IntelliTrace](../debugger/intellitrace.md)  
  Aby znaleźć błędy szybciej i łatwiej rejestrowanie historii wykonywania aplikacji przy użyciu funkcji IntelliTrace. Krok wstecz i przekazywać je za pomocą wywołań sprawdzać stan aplikacji w najważniejszych punktach w czasie i zarejestrowane zdarzenia. Debugowanie kodu bez ustawienie wiele punktów przerwania lub ponownego uruchamiania aplikacji jako często. Wymaga programu Visual Studio Ultimate.  
   
- [Śledzenie i Instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
+ [Śledzenie i instrumentacja aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
  W tym artykule opisano, śledzenie, sposób można monitorować wykonywania aplikacji, gdy jest uruchomiona i instrumentacji, która obejmuje umieszczenie instrukcji śledzenia strategicznych lokalizacji w kodzie. Ten temat zawiera również linki do wprowadzenie do Instrumentacji i śledzenia, przełączniki śledzenia, obiekty nasłuchujące śledzenia kodu w aplikacji, Dodawanie instrukcji śledzenia do kodu aplikacji i kompilowanie warunkowe ze śledzenia <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> .  
   
  [/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  

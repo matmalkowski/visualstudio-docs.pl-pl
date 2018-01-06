@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: 0ad7cdb245aa43deab22593fbbb5a5b10105f5af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Wskazówki: tworzenie wstawek kodu
 Fragment kodu można utworzyć tylko kilka prostych kroków. To wszystko, co należy zrobić, tworzenie pliku XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. W kodzie, można dodać odniesienia i parametry zamiany. Fragment kodu można dodać do instalacji programu Visual Studio za pomocą przycisku importu w Menedżerze fragmentów kodu (**narzędzia**, **Menedżerze fragmentów kodu...** ).  
@@ -252,4 +253,4 @@ Fragment kodu można utworzyć tylko kilka prostych kroków. To wszystko, co nal
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
-[Odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md)
+[Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

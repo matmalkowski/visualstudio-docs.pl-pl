@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afa939c0b8a033930f5e8e7bcc525d6f33e55f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Porady: tworzenie i edycja konfiguracji
 Można utworzyć kilka konfiguracje kompilacji rozwiązania. Na przykład można skonfigurować kompilację debugowania, służącego do znajdowania i rozwiązywania problemów z testerów i można skonfigurować różne rodzaje kompilacje, które mogą być dystrybuowane do różnych klientów.  
@@ -126,5 +127,5 @@ Można utworzyć kilka konfiguracje kompilacji rozwiązania. Na przykład można
 ## <a name="see-also"></a>Zobacz też  
  [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)   
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
+ [Zarządzanie właściwościami projektu i rozwiązania](managing-project-and-solution-properties.md)
 

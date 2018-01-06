@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-port-supplier"></a>Implementacja dostawcy portu
 Dostawca portu udostępnia porty na żądanie do menedżera sesji debugowania (SDM). Dostawca portu musi wykonywane podczas debugowania na maszynę z systemem innym niż DCOM lub gdy nowe urządzenie musi być obsługiwany. Na przykład aby umożliwić debugowanie na telefon komórkowy, może implementować dostawcy port udostępniający nawiązać połączenia z telefonem komórkowym (być może przy użyciu IR lub połączenie komórki) i wylicza procesy i programy uruchomione na telefonie porty.  
@@ -27,10 +28,10 @@ Dostawca portu udostępnia porty na żądanie do menedżera sesji debugowania (S
  W przypadku debugowania programów na komputerach z systemem Windows (w tym zdalnego debugowania) programu Visual Studio udostępnia dostawców portu dla macierzystego i procesy środowiska uruchomieniowego języka wspólnego (CLR), nie istnieje potrzeba do implementowania dostawcy portu w takich przypadkach.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wdrażanie i rejestrowanie dostawcy portu](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
+ [Implementowanie i rejestrowanie dostawcy portu](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
  W tym artykule omówiono, jak SDM współdziała z portu dostawcy i jego portów.  
   
- [Wymagany Port dostawcy interfejsów](../../extensibility/debugger/required-port-supplier-interfaces.md)  
+ [Wymagane interfejsy dostawcy portów](../../extensibility/debugger/required-port-supplier-interfaces.md)  
  Dokumenty interfejsów, które muszą zostać zaimplementowane uzyskać portu dostawcy.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

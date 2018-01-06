@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa1c2fa5d0da738057e59cdac007c499a834bc0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e59f3826cbb2ed83510cd98209b4c83f9278397d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="providing-automation-for-code"></a>Zapewnianie automatyzacji dla kodu
 Tworzenie modelu automatyzacji dla kodu nie jest wymagane. Zestaw SDK środowiska nie przewiduje próbkę w ten sposób. Szczegółowe informacje na temat modele kodu, zobacz <xref:EnvDTE.CodeModel> obiektu.  
@@ -35,4 +36,4 @@ Tworzenie modelu automatyzacji dla kodu nie jest wymagane. Zestaw SDK środowisk
  Jeśli chcesz dodać funkcje, takie jak metody lub właściwości, które nie są dostępne ze standardu `CodeModel` i `FileCodeModel` interfejsów, utworzyć własny interfejs, który dziedziczy standardowego. Pamiętaj dokumentu z systemu projektu, aby wiedzieli, że użytkownicy końcowi poszukaj go. Zwraca standardowy interfejs, ale użytkownik może wywołać `QueryInterface` metody lub Rzutowanie do interfejsu Jeżeli wiadomo istnieje.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przegląd modelu automatyzacji](../../extensibility/internals/automation-model-overview.md)
+ [Omówienie modelu automatyzacji](../../extensibility/internals/automation-model-overview.md)

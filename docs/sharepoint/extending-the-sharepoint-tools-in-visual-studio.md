@@ -19,11 +19,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b78f90df8b6e46774310bd4a8cf218fbcbc7a18b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c18f4097fb9f718f4ec2fc9c4683e599d38b74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>Rozszerzanie Narzędzi SharePoint w Visual Studio
   Narzędzia programu SharePoint w Visual Studio wymagań wiele scenariuszy programowania aplikacji. Może jednak odnajdywania przypadków, w którym nie zapewniają funkcje, które wymagają możesz lub innymi deweloperami. W takich przypadkach można rozszerzyć narzędzia programu SharePoint do tworzenia potrzebne funkcje.  

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Jaki &#39; s nowego w Visual Studio 2015 SDK
 Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual Studio 2015, Visual Studio 2015 zaktualizowane i Visual Studio 2017 r.  
@@ -39,13 +40,13 @@ Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual
 ### <a name="visual-c-and-visual-basic"></a>Visual C# i Visual Basic  
  C# i Visual Basic brak pełnego zakresu szablony elementów projektu, które pozwalają tworzyć VSPackages, polecenia menu okna narzędzi, klasyfikatory edytora, skojarzenia edytora i rozszerzenia marginesu edytora. Można dodać wybranych lub wszystkich z nich do standardowych projektu VSIX. Aby uzyskać więcej informacji, zobacz:  
   
--   [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+-   [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
--   [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md)  
+-   [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)  
   
--   [Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
+-   [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
   
--   [Tworzenie rozszerzenia z pakiet VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+-   [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
      Pakiet VSPackage Kreator nie tworzy już rozszerzeń w języku C# lub Visual Basic.  
   
@@ -53,7 +54,7 @@ Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual
  Dla języka C++ Kreator pakiet VSPackage obsługuje polecenia menu okna narzędzi i edytory niestandardowych. Wyszukaj go w **nowy projekt** okno dialogowe w **Visual C++ / rozszerzalności**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Zestawy odwołanie do zestawu SDK programu VS za pośrednictwem pakietu NuGet  
- Zwiększona przenośność oraz udostępniania tych projektów rozszerzalności można użyć wersji NuGet zestawów odwołań zestawu VS SDK.  Są one dostępne na [nuget.org](http://www.nuget.org) opublikowanych przez [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) i można je łatwo dodać do projektu lub rozwiązania za pomocą programu Visual Studio **odwołuje się do / Zarządzaj NuGet Pakiety** okna dialogowego. Można dodać poszczególnych odwołań do zestawów określonych rozszerzeń lub dodać zestawu SDK programu VS odwołuje się do zestawów jednocześnie przy użyciu zestawu SDK dla programu [Meta pakietu](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Aby dowiedzieć się więcej na temat narzędzia NuGet, zobacz [dokumentacji NuGet](http://docs.microsoft.com/NuGet) i [interfejsu użytkownika Menedżera pakietów](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) tematów.  
+ Zwiększona przenośność oraz udostępniania tych projektów rozszerzalności można użyć wersji NuGet zestawów odwołań zestawu VS SDK.  Są one dostępne na [nuget.org](http://www.nuget.org) opublikowanych przez [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) i można je łatwo dodać do projektu lub rozwiązania za pomocą programu Visual Studio **odwołuje się do / Zarządzaj NuGet Pakiety** okna dialogowego. Można dodać poszczególnych odwołań do zestawów określonych rozszerzeń lub dodać zestawu SDK programu VS odwołuje się do zestawów jednocześnie przy użyciu zestawu SDK dla programu [Meta pakietu](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Aby dowiedzieć się więcej na temat narzędzia NuGet, zobacz [dokumentacji NuGet](/NuGet) i [interfejsu użytkownika Menedżera pakietów](/NuGet/Tools/Package-Manager-UI) tematów.  
   
  Gdy używasz wersji NuGet zestawów odwołań zestawu VS SDK inny użytkownik nie należy zainstalować zestawu SDK dla programu do otwierania i skompilowanie projektu.  Zestawy odwołań NuGet i narzędzia kompilacji zestawu VS SDK automatycznie zostaną zainstalowane na komputerze dla tego projektu.  
   

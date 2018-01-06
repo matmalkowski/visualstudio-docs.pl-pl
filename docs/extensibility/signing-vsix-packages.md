@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a27b4e76e0cd8f986441778ed39c7fbb5a2211
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
 Zestawy rozszerzenia nie muszą być podpisane, zanim zostaną one uruchomione w programie Visual Studio, ale jest dobrym rozwiązaniem, aby to zrobić.  
@@ -39,7 +40,7 @@ Zestawy rozszerzenia nie muszą być podpisane, zanim zostaną one uruchomione w
   
 1.  Dodaj z pliku VSIX do projektu.  
   
-2.  Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierając **Dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji na NuGet i dodawanie pakietów NuGet w można znaleźć w temacie [dokumentacji NuGet](http://docs.microsoft.com/NuGet) i [interfejsu użytkownika Menedżera pakietów](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) tematów.  
+2.  Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierając **Dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji na NuGet i dodawanie pakietów NuGet w można znaleźć w temacie [dokumentacji NuGet](/NuGet) i [interfejsu użytkownika Menedżera pakietów](/NuGet/Tools/Package-Manager-UI) tematów.  
   
 3.  Wyszukaj VSIXSignTool z VisualStudioExtensibility i zainstaluj pakiet NuGet.  
   
@@ -50,4 +51,4 @@ Zestawy rozszerzenia nie muszą być podpisane, zanim zostaną one uruchomione w
  /F znak VSIXSignTool.exe \<plik_certyfikatu > /p \<hasło > \<VSIXfile >  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+ [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

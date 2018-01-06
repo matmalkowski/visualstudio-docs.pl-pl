@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc66e193b13ac6baf9d6089483a1281c2d6a59ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f2209ce2a2f6b1263bb52d550ca303f2525047d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parent-element"></a>Element nadrzędny
 Element nadrzędny, przycisk lub pola kombi mogą być tylko grupy. Element nadrzędny menu lub grupy może być innych menu lub grupy. W [CommandPlacement Element](../extensibility/commandplacement-element.md), ten element jest wymagany; w innych przypadkach jest opcjonalna. W przypadku pominięcia tego elementu nadrzędnego `Group_Undefined:0` będzie niejawnego.  
@@ -47,10 +48,10 @@ Element nadrzędny, przycisk lub pola kombi mogą być tylko grupy. Element nadr
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definiuje wszystkich elementów, które reprezentują poleceń, które zawiera pakiet VSPackage zintegrowane środowisko programistyczne (IDE). Na przykład elementów menu, menu Paski narzędzi i pola kombi.|  
-|[Element przycisków](../extensibility/buttons-element.md)|Grupy [Button Element](../extensibility/button-element.md) elementów.|  
-|[Element menu](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakiet VSPackage.|  
-|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkich elementów, które reprezentują poleceń, które zawiera pakiet VSPackage zintegrowane środowisko programistyczne (IDE). Na przykład elementów menu, menu Paski narzędzi i pola kombi.|  
+|[Buttons, element](../extensibility/buttons-element.md)|Grupy [Button Element](../extensibility/button-element.md) elementów.|  
+|[Menus, element](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakiet VSPackage.|  
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

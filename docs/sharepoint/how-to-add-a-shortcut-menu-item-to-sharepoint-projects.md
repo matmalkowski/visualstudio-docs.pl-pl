@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e327a716fc77dbc8dd3515c092dcd32c2da5158
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9427d2307a9d9726c2df1032410168c3b5cf1cc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Porady: dodawanie elementu menu skrótów do projektów SharePoint
   Można dodać pozycji menu skrótów do żadnego projektu programu SharePoint. Element menu jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań**.  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie projektów SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
+ [Instrukcje: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
   
   

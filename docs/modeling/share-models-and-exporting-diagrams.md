@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 982a4f54788e38129adaf5b23c15609f3ccad53d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 49c6ea6eff4abbd8b0863bc04a07b8c912f35c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Udostępnianie modeli i eksportowanie diagramów
 W programie Visual Studio możesz udostępniać modeli i diagramów współpracowników na kilka sposobów.  
@@ -50,7 +51,7 @@ W programie Visual Studio możesz udostępniać modeli i diagramów współpraco
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Udostępnianie modeli w projekcie dużych lub średnia.|  
+|[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Udostępnianie modeli w projekcie dużych lub średnia.|  
 |[Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md)|Skopiuj części diagramy do aplikacji, takich jak PowerPoint lub słowa lub wydrukować diagram plik XPS.|  
 |[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)|Przegląd modeli i diagramów.|  
   

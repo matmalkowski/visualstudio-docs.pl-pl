@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb1dd096b08525cd03f65ed46def81979bfaf272
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ecc4913d9d508d95347945b8f4aaa816bc3d510c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Porady: dane z pamięci podręcznej w dokumentach zabezpieczonych hasłem
   Możesz dodać dane do pamięci podręcznej danych w dokumencie lub skoroszytu, który jest chroniony hasłem, zmiany w pamięci podręcznej danych nie są zapisane automatycznie. Można zapisać zmian w pamięci podręcznej danych przez zastąpienie dwie metody w projekcie.  
@@ -80,6 +81,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Buforowanie danych](../vsto/caching-data.md)   
  [Porady: dane z pamięci podręcznej do użycia w trybie Offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Porady: programowane buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+ [Instrukcje: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

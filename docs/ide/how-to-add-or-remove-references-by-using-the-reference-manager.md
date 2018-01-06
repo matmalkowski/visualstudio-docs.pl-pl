@@ -23,11 +23,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a4e225f8a68923963549ba70b7900b0692ddad3
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 24c317a641fc178306013d8b75c3254f3d3f7b1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 

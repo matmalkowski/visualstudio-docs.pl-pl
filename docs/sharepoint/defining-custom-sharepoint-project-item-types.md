@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 980712e717df294a4d390eb66ed2f1740ba2c3f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e627d78e5c040614c29e7503cd7efab728b02bfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-custom-sharepoint-project-item-types"></a>Definiowanie niestandardowych typów elementów projektu SharePoint
   Zdefiniuj nowy typ elementu projektu SharePoint, gdy chcesz utworzyć nowy rodzaj elementu projektu SharePoint. Na przykład Visual Studio nie ma SharePoint — elementy projektu do dodawania pól lub akcje niestandardowe w witrynie programu SharePoint. Można definiować własnych typów SharePoint — elementy projektu do tworzenia pól, niestandardowe akcje lub inne składniki programu SharePoint.  

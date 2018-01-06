@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6bdca24340f301fc19f3bc8d1e86c97c3b98c5c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20548574a15c1ac7867ff7142033e94328a40ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 Zawijania narzędzie Microsoft 32-bitowy Library Manager lib.exe. Library Manager tworzy i którymi zarządza biblioteki plików obiektów wspólnej obiektu pliku formatu (COFF). Library Manager może tworzyć pliki eksportu i Importuj biblioteki do definicji odwołania wyeksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](/cpp/build/reference/lib-reference) i [systemem LIB](/cpp/build/reference/running-lib).  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d41a4776362f450d5d55552b049c3bba1bc781b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu MSBuild
 Podtyp projektu może być konieczne do utrwalenia danych specyficznych dla podtypu do pliku projektu do późniejszego użycia. Podtyp projektu używa trwałości plik projektu do spełniać następujące wymagania:  
@@ -79,4 +80,4 @@ Podtyp projektu może być konieczne do utrwalenia danych specyficznych dla podt
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Podtypów projektu](../../extensibility/internals/project-subtypes.md)
+ [Podtypy projektów](../../extensibility/internals/project-subtypes.md)

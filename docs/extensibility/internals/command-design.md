@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf6d0d7a9aa556aab454f90e4dcfc5dc4f236c03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe3db0582c65a2ece2162ab24afb6d179b865a27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-design"></a>Polecenie projektu
 Dodając polecenie do pakiet VSPackage, należy określić, którym jest wyświetlany, jeśli jest dostępny i jak ma być obsługiwane.  
@@ -69,7 +70,7 @@ Dodając polecenie do pakiet VSPackage, należy określić, którym jest wyświe
 |[Dostępność](../../extensibility/internals/command-availability.md)|W tym artykule opisano, jak Visual Studio kontekstu Określa, które polecenia są dostępne.|  
 |[Algorytm routingu](../../extensibility/internals/command-routing-algorithm.md)|W tym artykule opisano, jak architektura routingu polecenia programu Visual Studio umożliwia poleceń, które mają być obsługiwane przez różnych VSPackages.|  
 |[Wskazówki dotyczące umieszczania](../../extensibility/internals/command-placement-guidelines.md)|Sugeruje położenie poleceń w środowisku Visual Studio.|  
-|[Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|W tym artykule opisano, jak VSPackages najlepiej może korzystać z architekturą polecenia programu Visual Studio.|  
-|[Polecenie domyślne grupy i położenie paska narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|W tym artykule opisano, jak VSPackages najlepiej używać poleceń, które znajdują się w programie Visual Studio.|  
-|[Zarządzanie VSPackages](../../extensibility/managing-vspackages.md)|W tym artykule opisano, jak Visual Studio ładuje VSPackages.|  
-|[Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Zawiera informacje o plikach vsct opartych na języku XML, które służą do opisywania układu i wyglądu poleceń w VSPackages.|
+|[Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|W tym artykule opisano, jak VSPackages najlepiej może korzystać z architekturą polecenia programu Visual Studio.|  
+|[Domyślne położenie poleceń, grup i pasków narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|W tym artykule opisano, jak VSPackages najlepiej używać poleceń, które znajdują się w programie Visual Studio.|  
+|[Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)|W tym artykule opisano, jak Visual Studio ładuje VSPackages.|  
+|[Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Zawiera informacje o plikach vsct opartych na języku XML, które służą do opisywania układu i wyglądu poleceń w VSPackages.|

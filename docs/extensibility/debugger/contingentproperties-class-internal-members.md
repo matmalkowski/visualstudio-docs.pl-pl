@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d5d929f41a40d986aafa8150e68fadcb46f3469
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1bd9c94b99b4881167d7ae434691ffd08666ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contingentproperties-class---internal-members"></a>Klasa ContingentProperties — wewnętrzne elementy członkowskie
 Zawiera dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.  
@@ -49,4 +50,4 @@ Zawiera dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.
  .NET Framework inicjuje pola tej klasy, tylko wtedy, gdy są potrzebne.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wewnętrzne rozszerzenia równoległe dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

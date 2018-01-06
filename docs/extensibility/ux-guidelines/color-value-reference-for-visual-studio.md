@@ -13,11 +13,12 @@ ms.suite:
 ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 manager: ghogen
-ms.openlocfilehash: be4b63e767463b7b801ab5ed98d8482e94aacd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Kolor wartości odwołania dla programu Visual Studio
 Ten temat jest odwołanie do tworzenia nowych tokenów kolorów. Podczas tworzenia nowego interfejsu użytkownika, można użyć podobne kolory z istniejącego interfejsu użytkownika, aby wybrać kolorów motywu każdego głównego i nazwy kolorów systemu dla tego elementu motywów duży kontrast. 

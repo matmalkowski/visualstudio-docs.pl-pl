@@ -18,11 +18,12 @@ caps.latest.revision: "81"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e4f3dd4d84e52c8ae98cd5ae2dd8b93ac1e69c59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 925c61e2fa8ebf8c53e8170c7563031b4bbcb18b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-text-template-directives"></a>Dyrektywy T4 dotyczące szablonu tekstowego
 Dyrektywy zawierają instrukcje dla aparatu przekształceń szablonu tekstu.  
@@ -37,37 +38,37 @@ Dyrektywy zawierają instrukcje dla aparatu przekształceń szablonu tekstu.
   
  Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym. Nie należy umieszczać je w bloku kodu `<#...#>`, ani po bloku funkcji klasy `<#+...#>`.  
   
- [T4 dotycząca Dyrektywa szablonu](../modeling/t4-template-directive.md)  
+ [Dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md)  
  ```  
 <#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
- [T4 dotycząca Dyrektywa parametru](../modeling/t4-parameter-directive.md)  
+ [Dyrektywa T4 dotycząca parametru](../modeling/t4-parameter-directive.md)  
  ```  
 <#@ parameter type="Full.TypeName" name="ParameterName" #>  
 ```  
   
- [T4 Dyrektywa Output](../modeling/t4-output-directive.md)  
+ [Dyrektywa T4 dotycząca danych wyjściowych](../modeling/t4-output-directive.md)  
  ```  
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>  
 ```  
   
- [T4 dotycząca Dyrektywa zestawu](../modeling/t4-assembly-directive.md)  
+ [Dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md)  
  ```  
 <#@ assembly name="[assembly strong name|assembly file name]" #>  
 ```  
   
- [T4 dotycząca Dyrektywa importowania](../modeling/t4-import-directive.md)  
+ [Dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md)  
  ```  
 <#@ import namespace="namespace" #>  
 ```  
   
- [T4 Dyrektywa Include](../modeling/t4-include-directive.md)  
+ [Dyrektywa T4 dotycząca dołączania](../modeling/t4-include-directive.md)  
  ```  
 <#@ include file="filePath" #>  
 ```  
   
- [Dyrektywa T4 CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)  
+ [Dyrektywa T4 dotycząca działania CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)  
  ```  
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
 ```  

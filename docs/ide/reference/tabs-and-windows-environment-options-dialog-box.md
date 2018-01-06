@@ -13,14 +13,15 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87d24ff07477d0023933acedd7cd371166151443
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a96103ce251450ee8fd6ca7de536800104ae82ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Karty i okna, środowisko, opcje — okno dialogowe
 Użyj tej strony, aby ustawić opcje dla systemu windows, jak z kartami zachowują się w okienku Edytora i zachowanie okna narzędzi. Aby uzyskać więcej informacji, zobacz [dostosowywanie układów okien w programie Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)
+ [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

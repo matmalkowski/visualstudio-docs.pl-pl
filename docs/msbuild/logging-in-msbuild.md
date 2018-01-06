@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 26a166779ae0a217e9522e7c3b577ec85507c0a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a2b2267a47ec88f948402ee54e8c84468b5e6a63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logging-in-msbuild"></a>Logowanie w programie MSBuild
 Rejestrowanie umożliwia można monitorować postęp kompilacji. Przechwytywanie rejestrowanie kompilacji zdarzenia, komunikaty ostrzeżeń i błędów w pliku dziennika.  
@@ -29,10 +30,10 @@ Rejestrowanie umożliwia można monitorować postęp kompilacji. Przechwytywanie
  [Rejestratory kompilacji](../msbuild/build-loggers.md)  
  Omówiono kroki wymagane do utworzenia rejestratora jeden procesor.  
   
- [Rejestrowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)  
+ [Logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)  
  W tym artykule opisano, jak działa logowanie w środowisku wielu procesorów i dwa modele rejestrowanie wielu procesorów.  
   
- [Zapisywanie rejestratorów kilku-procesorów obsługujących](../msbuild/writing-multi-processor-aware-loggers.md)  
+ [Zapisywanie rejestratorów uwzględniających wiele procesorów](../msbuild/writing-multi-processor-aware-loggers.md)  
  Zawiera opis sposobu tworzenia kilku-procesorów obsługujących rejestratorów i sposobu użycia ConfigurableForwardingLogger.  
   
  [Tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md)  

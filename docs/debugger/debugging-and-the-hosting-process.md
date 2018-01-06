@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02cdf8b50415a238c2af2735a20fea4ed8c23668
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01d4ebaada2c8ac65c1f44a5c80525f1b9e66a5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debugowanie i proces hostingu
 Procesu hostingu Visual Studio poprawia wydajność debugera i włącza nowe funkcje debugera, takich jak debugowanie częściowo zaufane i Obliczanie wyrażenia czasu projektowania. Jeśli potrzebujesz, można wyłączyć procesu hostingu. Aby uzyskać więcej informacji, zobacz [porady: wyłączanie procesu hostingu](../ide/how-to-disable-the-hosting-process.md). W poniższych sekcjach opisano niektóre różnice między debugowanie z włączonymi i wyłączonymi procesu hostingu.  
@@ -44,4 +45,4 @@ Procesu hostingu Visual Studio poprawia wydajność debugera i włącza nowe fun
 ## <a name="see-also"></a>Zobacz też  
  [Proces hostingu (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [Porady: debugowanie częściowo zaufanych aplikacji](../debugger/how-to-debug-a-partial-trust-application.md)   
- [Porady: wyłączanie procesu hostingu](../ide/how-to-disable-the-hosting-process.md)
+ [Instrukcje: Wyłączanie procesu hostingu](../ide/how-to-disable-the-hosting-process.md)

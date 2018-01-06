@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 577010320dc4aa0a726e7c0befba8173245681e7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3323d317ac8b04731d1573d5c1a05150e012cbfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-essentials"></a>Podstawowe informacje dotyczące języka starszej wersji usługi
 Należy podać usługi języka Aby zintegrować język programowania Visual Studio. W tym temacie opisano funkcje dostępne w usługach starszej wersji języka.  

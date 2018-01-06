@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 876585e6be7a3acb3d971d4860b083f8216cc137
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 130e8ba80bb4d8f28ee64aeba1202463552eb20a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Zbieranie danych współbieżności dla wątku i procesu
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metoda profilowania współbieżności narzędziach profilowania umożliwia zbieranie danych kontencji zasobów, który zawiera informacje o zdarzeniu co synchronizacji, który powoduje, że funkcja w profilowanych aplikacji oczekiwania na dostęp do zasobu.  

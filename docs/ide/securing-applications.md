@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-applications"></a>Zabezpieczanie aplikacji
 Podczas gdy większość aplikacji posiadał najczęstsze wyzwania zabezpieczeń, każdej domeny aplikacji ma trudności z własnych.  
@@ -63,8 +64,8 @@ Podczas gdy większość aplikacji posiadał najczęstsze wyzwania zabezpieczeń
 ## <a name="securing-desktop-applications"></a>Zabezpieczanie aplikacji klasycznych  
  Projektowanie zabezpieczeń aplikacji klasycznych to kluczowy etap w aplikacjach.  
   
- [Zabezpieczenia formularzy systemu Windows](/dotnet/framework/winforms/windows-forms-security)  
+ [Zabezpieczenia formularzy Windows Forms](/dotnet/framework/winforms/windows-forms-security)  
  Omówienie implementacji zabezpieczeń formularzy systemu Windows.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zabezpieczeń](../ide/security-in-visual-studio.md)
+ [Zabezpieczenia](../ide/security-in-visual-studio.md)

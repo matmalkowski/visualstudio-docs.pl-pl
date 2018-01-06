@@ -28,11 +28,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7a24d3809c9e600620b074315a07f2d0eaf3d18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ded4d3227ab3840f393f35832160405ba0195c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan — Funkcja
 Oznacza początek nowy zakres.  
@@ -134,4 +135,4 @@ HRESULT CvEnterSpanExVA(
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

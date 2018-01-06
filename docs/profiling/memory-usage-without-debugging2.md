@@ -12,18 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="memory-usage-without-the-debugger"></a>Użycie pamięci bez debugera
+# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debuger programu Visual Studio
 Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następujące czynności  
   
 -   Monitorowanie aplikacji wykorzystanie pamięci do prawej w programie Visual Studio podczas opracowywania scenariusza.  

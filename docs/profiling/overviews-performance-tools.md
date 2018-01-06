@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 00ec00f549198972714e95d9c586b0a3e30f2ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overviews-performance-tools"></a>Omówienia (narzędzia wydajności)
 Ta sekcja zawiera ogólne i omówienie terminologii dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania, która służy do pomiaru właściwości działania tworzonej aplikacji.  

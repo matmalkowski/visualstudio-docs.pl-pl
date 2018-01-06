@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a30589591a7cef60ecfb19945366f8fcf539da02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a270811cc13d4b0e9af027ec2b4b5d2032582a3e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="opening-and-saving-project-items"></a>Otwieranie i zapisywanie elementów projektu
 Po dodaniu nowego typu projektu można zarządzać otwieranie i zapisywanie plików projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). W poniższych tematach opisano różne podejścia do otwierania i zapisywania plików.  
@@ -29,25 +30,25 @@ Po dodaniu nowego typu projektu można zarządzać otwieranie i zapisywanie plik
  [Wyświetlanie plików za pomocą polecenia Otwórz plik](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
  Zawiera wyjaśnienie krok po kroku sposób obsługi IDE **Otwórz plik** polecenia i rolą projektów w odpowiedzi na to polecenie.  
   
- [Wyświetlanie plików przy użyciu Otwórz za pomocą polecenia](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
+ [Wyświetlanie plików przy użyciu polecenia Otwórz za pomocą](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Zawiera szczegółowe, krok wyjaśnienie sposobu obsługi IDE **Otwórz za pomocą** polecenie otwarcia pliku, który zawiera niektóre wybór standardowe edytory monitowania.  
   
- [Porady: Otwórz edytory specyficznego dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md)  
  Instrukcje krok po kroku do określenia, że pliki określonego typu w projekcie powinien zostać otwarty za pomocą edytora określonego projektu.  
   
- [Porady: otwieranie standardowe edytory](../../extensibility/how-to-open-standard-editors.md)  
+ [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)  
  Instrukcje krok po kroku do określenia sposobu włączania IDE otworzyć standardowego edytora plików w sieci typu projektu.  
   
- [Porady: Otwórz edytory dla otwarte dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Instrukcje: otwieranie edytorów dla otwartych dokumentów](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Zawiera instrukcje krok po kroku, aby otworzyć Edytor specyficznego dla projektu, dla której plik otwarty.  
   
  [Zapisywanie standardowego dokumentu](../../extensibility/internals/saving-a-standard-document.md)  
  Zawiera szczegółowe wyjaśnienie, jak obsługuje IDE **zapisać**, **Zapisz jako**, i **Zapisz wszystko** poleceń dla dokumentu otwarty w edytorze standardowa.  
   
- [Zapisanie dokumentu niestandardowych](../../extensibility/internals/saving-a-custom-document.md)  
+ [Zapisywanie niestandardowego dokumentu](../../extensibility/internals/saving-a-custom-document.md)  
  Zapewnia diagram i szczegółowe wyjaśnienie, jak obsługuje IDE **zapisać**, **Zapisz jako**, i **Zapisz wszystko** polecenia dla dokumentów otwarty w edytorze niestandardowych.  
   
- [Określanie otwieranym edytora plików w projekcie](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
+ [Określanie, który edytor służy do otwierania pliku w projekcie](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
  W tym artykule omówiono proces, który wykonuje IDE w celu wybrania odpowiedniego edytora projektanta dla pliku.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 513404a9abda00844e8ba68e5e207961d6de4868
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69965b35d919c4170c54cbfa1eed5d5a52dc8287
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki programu Visual Studio
 Visual Studio*diagnostyki grafiki* jest zestaw narzędzi dla rejestrowanie i analizowanie danych renderowania i problemom z wydajnością w aplikacjach Direct3D. Diagnostyka grafiki można w aplikacji, które są uruchomione lokalnie na komputerze z systemem Windows w emulatorze urządzenia z systemem Windows lub na zdalnym komputerze lub urządzeniu.  
@@ -72,7 +73,7 @@ Visual Studio*diagnostyki grafiki* jest zestaw narzędzi dla rejestrowanie i ana
  [Debuger HLSL](hlsl-shader-debugger.md)  
  Aby sprawdzić, jak kod programu do cieniowania dla aktualnie zaznaczonego zdarzenia i grafiki etap potoku ma zachowywać się, należy użyć **debuger HLSL** krokowo kodu, sprawdź zawartość zmienne i wykonywanie innych typowych zadań debugowania. Debuger HLSL umożliwia również sprawdzić kod programu do cieniowania obliczeń, niezależnie od tego, czy wyniki są dalej przetwarzane przez potok grafiki i są tylko do odczytu przez aplikację.  
   
- [Narzędzie wiersza polecenia przechwytywania](command-line-capture-tool.md)  
+ [Narzędzie wiersza polecenia do przechwytywania](command-line-capture-tool.md)  
  Szybkie przechwytywania i odtwarzanie informacji graficznych bez korzystania z programu Visual Studio i przechwycenie programowe za pomocą narzędzia wiersza polecenia przechwytywania. W szczególności można użyć narzędzia wiersza polecenia przechwytywania, automatyzacji lub w środowisku testowym.  
   
  [Przykłady](graphics-diagnostics-examples.md)  

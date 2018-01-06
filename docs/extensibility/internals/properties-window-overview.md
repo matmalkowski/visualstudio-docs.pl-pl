@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0094accca0feb026fca02c78bf6e86fe512ce981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-overview"></a>Omówienie okno właściwości
 **Właściwości** okna jest używana do wyświetlania właściwości dla obiekt wybrany w dwa główne typy dostępnych w systemie windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). Te dwa typy systemu windows są:  
@@ -52,4 +53,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)   
- [Pola okna właściwości i interfejsów](../../extensibility/internals/properties-window-fields-and-interfaces.md)
+ [Pola i interfejsy okna właściwości](../../extensibility/internals/properties-window-fields-and-interfaces.md)

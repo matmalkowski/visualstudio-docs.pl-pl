@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4959334c9d6949e199ad18934e69ea46e1172b55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9e643eb31062bcd81302fba6e7d35cc8dfa674b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Porady: wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint
   Można wdrożyć lub publikowanie rozwiązań programu SharePoint do lokalnego serwera programu SharePoint na komputerze deweloperskim. Procesu wdrażania kopiuje plik wsp na serwer programu SharePoint, instaluje rozwiązanie, a następnie aktywuje funkcji. Proces publikowania tylko kopiuje plik wsp do serwera programu SharePoint i instaluje je. Należy ręcznie uaktywnić go w celu włączenia go w programie SharePoint.  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
  [Tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Porady: Dostosowywanie pakietu rozwiązania SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Porady: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
+ [Instrukcje: Dodawanie i usuwanie funkcji oraz elementów do pakietu przy użyciu projektanta pakietów](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   
   

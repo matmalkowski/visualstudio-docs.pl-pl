@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d043d9963ad9f2bf9bd06b7a8cc543ffaee50e19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d97fd1e1d2c840279eec3b2769efc42f98894b92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection — Element (szablony Visual Studio)
 Określa organizację i zawartość szablonów wieloprojektowych.  
@@ -88,4 +89,4 @@ Określa organizację i zawartość szablonów wieloprojektowych.
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)
+ [Instrukcje: Tworzenie szablonów obejmujących wiele projektów](../ide/how-to-create-multi-project-templates.md)

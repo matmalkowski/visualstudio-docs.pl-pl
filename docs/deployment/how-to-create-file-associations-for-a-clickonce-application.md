@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 491de73e97bf44ea54d5ccdfb604924ff26c9530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6d0a2c0912b98995bb6d933766a46f4ebc527a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Porady: tworzenie skojarzeń plików dla aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje mogą być skojarzony z jedną lub więcej rozszerzeń nazw plików, dzięki czemu aplikacja zostanie uruchomiony automatycznie, gdy użytkownik otwiera plik tych typów. Dodawanie obsługi rozszerzenia nazw plików do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest prosta.  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Zobacz też  
  [\<fileAssociation > — Element](../deployment/fileassociation-element-clickonce-application.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Mage.exe (Generowanie manifestu i edytowania narzędzie)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+ [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

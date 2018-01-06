@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3d205dae6dd00ec5d763b9fb36f9c48041438ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń wprowadzania dla formantów NumericUpDown
 W piątym części tego samouczka zostanie dodana procedury obsługi zdarzeń Enter ułatwiają wprowadzanie odpowiedzi na problemy kwizu nieco. Ten kod będzie zaznaczyć lub wyczyścić bieżącą wartość w każdej kontrolki NumericUpDown, natychmiast przyjmującego kwizu wybierze go i rozpoczyna wprowadź inną wartość.  

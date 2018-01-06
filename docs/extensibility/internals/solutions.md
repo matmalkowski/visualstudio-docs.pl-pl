@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75298d8fa2ede5db06bef624eeb385785c416747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions"></a>Rozwiązania
 Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Informacje odnoszą się do rozwiązania projekt i stan są przechowywane w dwóch plików rozwiązania, plik tekstowy solution (.sln) i pliku binarnego rozwiązania użytkownika opcji (.suo).  
@@ -29,8 +30,8 @@ Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które
  W tym artykule omówiono typy plików rozwiązania, znajdujących się w rozwiązania, a proces, który występuje po otwarciu rozwiązania.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Rozwiązania (. Plik sln)](../../extensibility/internals/solution-dot-sln-file.md)  
+ [Plik rozwiązania (Sln)](../../extensibility/internals/solution-dot-sln-file.md)  
  Wyjaśnienie struktury pliku sln.  
   
- [Opcje użytkownika rozwiązania (. Pliku suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
+ [Plik opcji użytkownika rozwiązania (Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
  W tym artykule wyjaśniono plik .suo.

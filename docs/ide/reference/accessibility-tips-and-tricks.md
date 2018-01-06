@@ -12,11 +12,12 @@ ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4cfc07cb77e1db595d1b381b1097dcfcba0abdab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>I porady dotyczące ułatwień dostępu dla programu Visual Studio
 > [!TIP]
@@ -94,7 +95,7 @@ Poniżej przedstawiono sposób.
 
 
 ## <a name="see-also"></a>Zobacz także  
-* [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-  * [Porady: Dostosowywanie menu i pasków zadań w programie Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+  * [Instrukcje: Dostosowywanie menu i pasków narzędzi w programie Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Ułatwienia dostępu firmy Microsoft](https://www.microsoft.com/Accessibility)

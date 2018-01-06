@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7191d31d4ec53fb26f4ab20114201836f1b58fc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757968aabfc256cda37a103d48c8d12f1fc16fa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizard-support-for-nested-projects"></a>Obsługa kreatora dla projektów zagnieżdżonych
 Dwa kreatory, które można wdrożyć projektu nadrzędnego dla projektów zagnieżdżonych uruchamia IDE: **nowy projekt** kreatora i **Dodaj element** kreatora.  
@@ -33,4 +34,4 @@ Dwa kreatory, które można wdrożyć projektu nadrzędnego dla projektów zagni
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
- [Projekty zagnieżdżenia](../../extensibility/internals/nesting-projects.md)
+ [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

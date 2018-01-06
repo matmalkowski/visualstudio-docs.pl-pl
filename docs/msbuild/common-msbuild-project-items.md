@@ -18,14 +18,15 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
-W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element nazwany odnosi się do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy w projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są definiowane w microsoft.build.commontypes.xsd pliku.  
+W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element nazwany odnosi się do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy w projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku Microsoft.Build.CommonTypes.xsd.  
   
 ## <a name="common-items"></a>Wspólne elementy  
  Poniżej znajduje się lista wszystkich wspólne elementy projektów.  
@@ -33,7 +34,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="reference"></a>Tematy pomocy  
  Reprezentuje odwołanie do zestawu (zarządzane) w projekcie.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |HintPath|Opcjonalny ciąg. Względna lub bezwzględna ścieżka zestawu.|  
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana zestawu, na przykład "System.Windows.Forms".|  
@@ -45,7 +46,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="comreference"></a>COMReference  
  Reprezentuje składnika modelu COM (niezarządzany) odwołania do projektu.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |Nazwa|Opcjonalny ciąg. Wyświetlana nazwa składnika.|  
 |Identyfikator GUID|Opcjonalny ciąg. Identyfikator GUID dla składnika w formularzu {12345678-1234-1234-1234-1234567891234}.|  
@@ -58,14 +59,14 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="comfilereference"></a>COMFileReference  
  Reprezentuje listę bibliotek typów, które źródła danych do docelowego ResolvedComreference.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, która jest używana dla składnika, na przykład, "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Reprezentuje natywnego pliku manifestu lub odwołanie do tego pliku.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |Nazwa|Wymagany ciąg. Podstawowa nazwa pliku manifestu.|  
 |HintPath|Wymagany ciąg. Względna ścieżka pliku manifestu.|  
@@ -73,16 +74,16 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="projectreference"></a>ProjectReference  
  Reprezentuje odwołanie do innego projektu.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|  
-|Project|Opcjonalny ciąg. Identyfikator GUID dla odwołania do w formie {12345678-1234-1234-1234-1234567891234}.|  
+|Projekt|Opcjonalny ciąg. Identyfikator GUID dla odwołania do w formie {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Opcjonalny ciąg. Ścieżka pliku projektu, do którego prowadzi odwołanie.|  
   
 ### <a name="compile"></a>Kompilacji  
  Reprezentuje pliki źródłowe dla kompilatora.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
 |AutoGen|Opcjonalna wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE).|  
@@ -93,7 +94,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji|  
 |Generator|Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie.|  
@@ -107,7 +108,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="content"></a>Zawartość  
  Reprezentuje pliki, które nie są skompilowane w projekcie, ale może być osadzone lub opublikowane wraz z jej.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
 |Generator|Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie.|  
@@ -122,7 +123,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="none"></a>Brak  
  Reprezentuje pliki, które powinny mieć żadnej roli w procesie kompilacji.  
   
-|Nazwa elementu|Opis|  
+|Nazwa metadanych elementu|Opis|  
 |---------------|-----------------|  
 |DependentUpon|Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji.|  
 |Generator|Wymagany ciąg. Nazwa dowolnego generatora plików uruchamianego na tym elemencie.|  

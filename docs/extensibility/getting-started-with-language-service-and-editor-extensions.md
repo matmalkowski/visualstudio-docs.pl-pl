@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do usługi języka oraz rozszerzenia Edytora
 Rozszerzenia edytora służy do dodawania funkcji usługi języka takich jak tworzenie konspektu, pasujących nawiasów klamrowych, IntelliSense i żarówki języka programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytorze programu Visual Studio, na przykład tekstu kolorowania marginesy, skojarzenia i inne elementy wizualne. Można również definiować własne typu zawartości i określić wygląd i zachowanie widoków tekstu, w których zostanie wyświetlona zawartość.  
@@ -84,9 +85,9 @@ Rozszerzenia edytora służy do dodawania funkcji usługi języka takich jak two
   
  Można również utworzyć edytora składników MEF z rozszerzeniem pakiet programu Visual Studio. Zobacz poniższe wskazówki, aby uzyskać szczegółowe informacje:  
   
--   [Wskazówki: Korzystanie z polecenia powłoki z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Wskazówki: Używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Usługa języka i punkty rozszerzenia Edytora](../extensibility/language-service-and-editor-extension-points.md)
+ [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

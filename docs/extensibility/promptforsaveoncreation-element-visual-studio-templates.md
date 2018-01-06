@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ce7e73801b34542bcf1c6be35d950b1fabdc7c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation — Element (szablony Visual Studio)
 Określa, czy użytkownik jest monitowany o projektu lokalizacji za pośrednictwem zapisywania **nowy projekt** okno dialogowe podczas tworzenia projektu. Jeśli ten element jest ustawiony na `true`, a następnie użytkownik jest monitowany o zapisanie lokalizacji; Jeśli `false`, nie monit. (To znaczy, że projekt tymczasowy jest tworzony.)  
@@ -88,4 +89,4 @@ Określa, czy użytkownik jest monitowany o projektu lokalizacji za pośrednictw
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

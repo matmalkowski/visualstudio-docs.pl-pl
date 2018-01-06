@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8100c43578c11ae73f26764df74aa17caccc3611
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d7acd147fd8d2b73b2172900baf7e1f49808e9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="session-debug-manager"></a>Menedżer sesji debugowania
 Menedżer debugowania sesji (SDM) zarządza dowolną liczbę aparatami debugowania (DE) debugowania dowolną liczbę programów w wielu procesach w dowolnej liczby maszyn. Oprócz multiplekser aparat debugowania, SDM zapewnia spójny obraz sesji debugowania do IDE.  

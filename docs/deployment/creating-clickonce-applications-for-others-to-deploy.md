@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
 Nie wszystkie deweloperów, którzy tworzą wdrożenia ClickOnce planuje wdrożyć same aplikacje. Wiele z nich tylko pakietu aplikacji przy użyciu technologii ClickOnce, a następnie przekazują pliki do klienta, takich jak dużych przedsiębiorstw. Klient staje się odpowiedzialne za hosting aplikacji w swojej sieci. W tym temacie omówiono niektóre problemy związane z takich wdrożeniach w wersjach programu .NET Framework, przed w wersji 3.5. Opisuje nowe rozwiązanie, używając nowej funkcji "używać manifestu dla zaufania" w .NET Framework 3.5. Ponadto zawiera z zalecanych Strategie tworzenia wdrożenia ClickOnce dla klientów, którzy nadal używają starszej wersji programu .NET Framework.  
@@ -103,4 +104,4 @@ Nie wszystkie deweloperów, którzy tworzą wdrożenia ClickOnce planuje wdroży
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie technologii ClickOnce do testowania i obsługi serwerów produkcyjnych bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [Wskazówki: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Wskazówki: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Przewodnik: ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)

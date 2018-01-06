@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8cd55986d7f4597030830906485ba1d7c1b3389
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccadd-function"></a>Funkcja SccAdd
 Ta funkcja dodaje nowe pliki do systemu kontroli źródła.  
@@ -95,4 +96,4 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16BE|0x40|Traktuje formatu pliku jako tekst Unicode w UTF16 Big Endian.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

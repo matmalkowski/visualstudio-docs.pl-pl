@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2f2e76d9dec25e6c5bf5d6deeab42364d28de8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35dfc24f22d223fcd6f1db225342bb406e73c3ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numery wersji dla głównych i zlokalizowanych zestawów satelickich
 <xref:System.Resources.SatelliteContractVersionAttribute> Klasa obsługuje przechowywanie wersji zestawu głównego, który używa zlokalizowane zasoby za pomocą Menedżera zasobów. Stosowanie <xref:System.Resources.SatelliteContractVersionAttribute> do aplikacji główny zestaw pozwala zaktualizować i ponownie wdróż bez aktualizowania jego zestawy satelickie zestawu. Na przykład można użyć <xref:System.Resources.SatelliteContractVersionAttribute> klasy z dodatkiem service pack, który nie wprowadzenia nowych zasobów, bez odbudowywania ani ponownego wdrażania ponownie zestawy satelickie. Zlokalizowanych zasobów była dostępna, musi odpowiadać wersji kontraktu satelickiego zestawu głównego <xref:System.Reflection.AssemblyVersionAttribute> klasy z zestawami satelity. Należy określić numer dokładnej wersji w <xref:System.Resources.SatelliteContractVersionAttribute>; symbol wieloznaczny znaków, takich jak "*" nie są dozwolone. Aby uzyskać więcej informacji, zobacz [podczas pobierania zasobów](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).  
@@ -48,4 +49,4 @@ ms.lasthandoff: 10/31/2017
  [Ustawienie atrybutów zestawu](/dotnet/framework/app-domains/set-assembly-attributes)   
  [Zabezpieczenia a zlokalizowane zestawy satelickie](../ide/security-and-localized-satellite-assemblies.md)   
  [Lokalizowanie aplikacji](../ide/localizing-applications.md)   
- [Globalizacja i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md)
+ [Globalizowanie i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

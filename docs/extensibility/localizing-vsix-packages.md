@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a8bb9332b30e5dbc410bdacea3800713b25b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b95047348f549073a05060b81874f65d7781918
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizowanie pakietów VSIX
 
@@ -107,5 +108,5 @@ W poniższym przykładzie przedstawiono istotne części pliku Extension.vsixman
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Odwołanie do schematu LanguagePack 2.0 VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Pakietu językowego VSIX zawiera opis informacji o lokalizacji pliku .vsix wdrożenia.|
-|[Struktura pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Opisuje struktury i zawartości pakietu vsix.|
-|[Lokalizowanie poleceń Menu](../extensibility/localizing-menu-commands.md)|Pokazuje, jak do zlokalizowania inne zasoby tekstu w rozszerzeniu.|
+|[Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Opisuje struktury i zawartości pakietu vsix.|
+|[Lokalizowanie poleceń menu](../extensibility/localizing-menu-commands.md)|Pokazuje, jak do zlokalizowania inne zasoby tekstu w rozszerzeniu.|

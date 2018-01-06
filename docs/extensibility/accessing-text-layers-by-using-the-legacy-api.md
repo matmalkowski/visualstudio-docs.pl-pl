@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54a981a57605ccb93062ac0678b1e8b5673c6d1a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a5f7a80e8d594f3c9e62ecd2047cc1116948d2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Uzyskiwanie dostępu do warstwy tekstu przy użyciu interfejsu API starsza wersja
 Warstwa tekstu hermetyzuje zwykle aspektów układu tekstu. Na przykład warstwy "Funkcja w pojedynczych" Ukrywa tekst przed i po funkcja zawierająca karetki (punktu wstawiania).  

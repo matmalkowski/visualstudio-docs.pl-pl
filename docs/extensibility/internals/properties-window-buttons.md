@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>Przyciski okno właściwości
 W zależności od języka programowania i typ produktu, domyślnie na pasku narzędzi są wyświetlane przyciski niektórych **właściwości** okna. We wszystkich przypadkach **według kategorii**, **Alphabetized**, **właściwości**, i **strony właściwości** są wyświetlane przyciski. W programie Visual C# i Visual Basic **zdarzenia** przycisk będzie również wyświetlana. W niektórych projektów Visual C++ **VC ++ wiadomości** i **zastępuje VC** są wyświetlane przyciski. Dodatkowe przyciski mogą być wyświetlane dla innych typów projektów. Aby uzyskać więcej informacji na temat przycisków w **właściwości** okna, zobacz [okna właściwości](../../ide/reference/properties-window.md).  

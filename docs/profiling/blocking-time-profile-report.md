@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="blocking-time-profile-report"></a>Raport profilowania czasu blokowania
 Raporty profilu zapewnienia agregacji danych czasu blokowania stosy wywołań, które są specyficzne dla każdej kategorii blokowania (na przykład "We/wy" lub "Synchronizacji"). Raport wywłaszczanie zawiera listę procesów, które są zastępowane wraz z liczbą wystąpień wywłaszczanie bieżącego procesu. Aby zbudować blokowania raport profilu, narzędzie zbiera blokowania wywołań interfejsu API i sumuje ich do drzewa stosy wywołań. Dane wyświetlane w tych raportach różni się od przez bieżącego zakresu czasu, ukrytych wątków oraz następujące dwa filtry, które mogą być stosowane:  

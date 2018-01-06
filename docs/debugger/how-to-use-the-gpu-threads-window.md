@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Porady: korzystanie z okna wątków GPU
 Okno wątków GPU można zbadać i pracy z wątków, które są uruchomione na procesor GPU w aplikacji, która debugowania. Aby uzyskać więcej informacji na temat aplikacji uruchamianych na procesora GPU, zobacz [Przegląd C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -107,4 +108,4 @@ Okno wątków GPU można zbadać i pracy z wątków, które są uruchomione na p
 ## <a name="see-also"></a>Zobacz też  
  [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Porady: Korzystanie z okna czujki równoległej](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Wskazówki: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

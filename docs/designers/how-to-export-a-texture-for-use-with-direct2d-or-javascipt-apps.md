@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad01fe04374ee9ae8c1514f8194a91c2247a5311
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cce24e1daeeded8482d43b64a3c81aebd06e22bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Porady: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 Potok zawartości obrazu mogą generować tekstury, które są zgodne z konwencjami renderowanie wewnętrznego w Direct2D. Tekstury tego typu są odpowiednie do użycia w aplikacji, które używają Direct2D i w aplikacjach platformy uniwersalnej systemu Windows tworzone przy użyciu języka JavaScript.  

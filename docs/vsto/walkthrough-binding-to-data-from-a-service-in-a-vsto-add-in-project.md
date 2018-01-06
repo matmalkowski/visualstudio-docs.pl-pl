@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6874dd125c692b6d853dc89cc533bf3d623aad51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 035b74048aca3b91449bc857a36594bc280065c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Wskazówki: Powiązanie z danymi z usług w projekcie dodatku narzędzi VSTO
   Dane można powiązać z formanty hosta w projektów dodatku VSTO. W tym przewodniku pokazano, jak dodawanie formantów do dokumentu programu Microsoft Office Word, powiązanie formantów danych pobranych z usługi zawartość w witrynie MSDN i reagowania na zdarzenia w czasie wykonywania.  
@@ -119,6 +120,6 @@ ms.lasthandoff: 10/31/2017
      Informacje są pobierane z usługi zawartości MTPS i wyświetlany w formancie zawartości.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c06d246f7467e19969075537f321061463d1755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b09176efca3a8839d5e6a741a1e161ff61cdc7ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starsza wersja usługi języka
 Poniższa lista kontrolna zawiera podsumowanie podstawowe kroki, które należy wykonać, aby utworzyć usługę języka [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] core edytora. Integracja usługi języka do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], należy utworzyć ewaluatora wyrażeń debugowania. Aby uzyskać więcej informacji, zobacz [zapisywania ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [programu Visual Studio Extensibility debugera](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

@@ -13,15 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Zdarzenia sterty niestandardowych natywnego ETW
 
-Visual Studio zawiera szereg [profilowania i narzędzia diagnostyczne](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), tym profilera natywnej pamięci.  Ten program profilujący przechwytuje [zdarzenia ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od dostawcy sterty i umożliwia analizę sposobu pamięci są przydzielone i używane.  Domyślnie to narzędzie można analizować tylko przydziałów wykonanych ze standardowego stosu systemu Windows, a poza tym natywnej sterty alokacje nie będzie wyświetlana.
+Visual Studio zawiera szereg [profilowania i narzędzia diagnostyczne](../profiling/profiling-tools.md), tym profilera natywnej pamięci.  Ten program profilujący przechwytuje [zdarzenia ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od dostawcy sterty i umożliwia analizę sposobu pamięci są przydzielone i używane.  Domyślnie to narzędzie można analizować tylko przydziałów wykonanych ze standardowego stosu systemu Windows, a poza tym natywnej sterty alokacje nie będzie wyświetlana.
 
 Istnieje wiele przypadków, w których warto użyć własnych niestandardowych sterty i uniknąć zadań alokacji ze standardowego stosu.  Na przykład można użyć [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) można przydzielić dużej ilości pamięci podczas uruchamiania aplikacji i gier, a następnie Zarządzaj własne bloki w obrębie tej listy.  W tym scenariuszu narzędzie pamięci profilera byłaby widoczna tylko tej początkowej alokacji i nie niestandardowych zarządzania infrastrukturą wykonać wewnątrz fragmentu pamięci.  Jednak przy użyciu niestandardowego natywnej sterty ETW dostawcę, możesz pozwolić, aby wiedzieć o alokacje tworzonego poza standardowe sterty narzędzie.
 
@@ -47,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Migawka [użycie pamięci](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) narzędzia bez sterty niestandardowych śledzenia pokazuje, tylko alokacji jednobajtowych 8192 i żadne niestandardowe alokacje wysyłanych przez pulę:
+Migawka [użycie pamięci](../profiling/memory-usage.md) narzędzia bez sterty niestandardowych śledzenia pokazuje, tylko alokacji jednobajtowych 8192 i żadne niestandardowe alokacje wysyłanych przez pulę:
 
 ![Alokacja sterty systemu Windows](media/heap-example-windows-heap.png)
 
@@ -138,7 +139,7 @@ Ta biblioteka można łatwo C i C++.
    ```
 
 ## <a name="tracking-memory-usage"></a>Śledzenie użycia pamięci
-Z tych wywołań w miejscu użycie niestandardowego sterty teraz można śledzić za pomocą standardowego **użycie pamięci** narzędzia w programie Visual Studio.  Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz [użycie pamięci](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) dokumentacji. Upewnij się, że włączono profilowanie sterty z migawkami, w przeciwnym razie nie będzie mógł przeglądać użycie niestandardowego sterty wyświetlane. 
+Z tych wywołań w miejscu użycie niestandardowego sterty teraz można śledzić za pomocą standardowego **użycie pamięci** narzędzia w programie Visual Studio.  Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz [użycie pamięci](../profiling/memory-usage.md) dokumentacji. Upewnij się, że włączono profilowanie sterty z migawkami, w przeciwnym razie nie będzie mógł przeglądać użycie niestandardowego sterty wyświetlane. 
 
 ![Włącz profilowanie sterty](media/heap-enable-heap.png)
 
@@ -152,11 +153,11 @@ Wartość domyślna *sterty NT* sterty wygląda tak samo jak wcześniej, dodają
 
 ![Stos śledzenia, NT](media/heap-example-windows-heap.png)
 
-Tak jak z standardowe sterty systemu Windows, można użyć tego narzędzia do porównywania migawki i wyszukaj przecieki lub uszkodzenie w niestandardowych sterty, który jest opisany w głównym [użycie pamięci](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) dokumentacji.
+Tak jak z standardowe sterty systemu Windows, można użyć tego narzędzia do porównywania migawki i wyszukaj przecieki lub uszkodzenie w niestandardowych sterty, który jest opisany w głównym [użycie pamięci](../profiling/memory-usage.md) dokumentacji.
 
 > [!TIP]
 > Visual Studio zawiera także **użycie pamięci** narzędzie w **profilowanie wydajności** zestawu narzędzi, które można włączyć **debugowania > wydajności programu profilującego** opcji menu lub **Alt + F2** klawiatury kombinacji.  Ta funkcja nie obejmuje śledzenia stosu i nie będzie wyświetlany na Twojej niestandardowych sterty, zgodnie z opisem w tym miejscu.  Tylko **narzędzia diagnostyczne** okna, które można włączyć za **debugowania > Windows > Pokaż narzędzia diagnostyczne** menu lub **Ctrl + Alt + F2** klawiatury kombinacja, zawiera tę funkcję.
 
 ## <a name="see-also"></a>Zobacz też
-[Narzędzia profilowania](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[Użycie pamięci](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[Narzędzia profilowania](../profiling/profiling-tools.md)  
+[Użycie pamięci](../profiling/memory-usage.md)

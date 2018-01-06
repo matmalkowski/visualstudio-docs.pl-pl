@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b2fb918d7545655b70a20629ff71427e66030b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon — Element (szablony Visual Studio)
 Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która jest wyświetlana w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe szablonu.  
@@ -95,4 +96,4 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która je
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

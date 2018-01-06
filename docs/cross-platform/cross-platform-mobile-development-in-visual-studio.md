@@ -12,11 +12,12 @@ caps.latest.revision: "64"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e12acc12559b4295958906fd182c381933bb5d45
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Obsługujący wiele Platform Mobile Development w Visual Studio
 Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows za pomocą programu Visual Studio.  Podczas projektowania aplikacji, użyj narzędzia w programie Visual Studio ułatwia dodawanie podłączonych usług takich jak Office 365, Azure App Service i usługi Application Insights.
@@ -92,7 +93,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows za po
 |--------------------|
 |[Więcej informacji na temat uniwersalnych aplikacji systemu Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centrum deweloperów systemu Windows)|
 |[Tworzenie pierwsza](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centrum deweloperów systemu Windows)|
-|[Tworzenie aplikacji dla platformy uniwersalnej systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
+|[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrowanie aplikacji platformy uniwersalnej systemu Windows (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a>Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)
@@ -117,7 +118,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows za po
 |**Dowiedz się więcej**|
 |--------------------|
 |[Zainstaluj program Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Wprowadzenie do programu Visual Studio Tools for Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
+|[Wprowadzenie do programu Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
 |[Dowiedz się więcej o programie Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a>Tworzenie aplikacji dla systemu Android i Windows (C++)

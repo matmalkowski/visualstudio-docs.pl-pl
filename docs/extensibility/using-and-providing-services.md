@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28b66dea8440c969926abd3892739f4e041b064
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fbba5070af77e1509ed3b3840a2045ae0f2c12b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-and-providing-services"></a>Przy użyciu i świadczenia usług
 Usługa jest Umowa między dwoma VSPackages. Jeden pakiet VSPackage oferuje określony zbiór interfejsów dla innego pakiet VSPackage korzystać. Na przykład [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferuje <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> do dowolnego pakiet VSPackage go obsłużyć obciążenia. Ta usługa udostępnia <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
@@ -36,19 +37,19 @@ Usługa jest Umowa między dwoma VSPackages. Jeden pakiet VSPackage oferuje okre
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Udostępnia podstawowe funkcje związane z rozwiązania, takie jak możliwość wyliczyć projektów, tworzenie nowych projektów i monitorowanie zmian projektu.|  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Usługa Essentials](../extensibility/internals/service-essentials.md)  
+ [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)  
  Przedstawia informacje o ważne elementy usługi Visual Studio.  
   
- [Porady: uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)  
+ [Instrukcje: uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)  
  W tym artykule omówiono sposób żądania (korzystać) usługi.  
   
- [Porady: udostępnianie usługi](../extensibility/how-to-provide-a-service.md)  
+ [Instrukcje: dostarczanie usługi](../extensibility/how-to-provide-a-service.md)  
  W tym artykule omówiono sposób do świadczenia usług.  
   
- [Porady: Podaj usługa asynchronicznego programu Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Instrukcje: dostarczanie asynchronicznej usługi programu Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Omówiono sposób obsługi asynchronicznego.  
   
- [Porady: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md)  
+ [Instrukcje: rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md)  
  W tym artykule omówiono typowe problemy i przedstawia ich rozwiązania.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

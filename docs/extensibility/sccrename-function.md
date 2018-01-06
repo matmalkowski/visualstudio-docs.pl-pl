@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2936c2ea4425ad6eaccc2d23853f4174e1c9c2a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2fa3c891f1e963b40e34fb0f664bcf479730c20d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccrename-function"></a>Funkcja SccRename
 Ta funkcja zmienia nazwę pliku w systemie kontroli źródła.  
@@ -65,4 +66,4 @@ SCCRTN SccRename(
  Ta funkcja może służyć do zmiany nazwy pliku lub przenieść go z jednej lokalizacji do innej w systemie kontroli źródła. Wtyczka do kontroli źródła nie powinny podejmować próby dostępu do pliku na dysku. Odpowiada IDE Zmień nazwę pliku lokalnego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

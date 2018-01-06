@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c81c5f4981c1d6ebbd26cf9abf22b6c4033f8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21a7af80b2c371b0f3088d3aa863d76fc55d7ab1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>Porady: Programowane dołączanie plików do elementów poczty e-mail programu Outlook
   W tym przykładzie dołącza plik do nowego elementu poczty i wysyła je do Armando Pinto. Przykładzie przyjęto założenie, że osoby o nazwie Armando Pinto istnieje jako odbiorcy.  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
  [Praca z elementami poczty](../vsto/working-with-mail-items.md)   
  [Porady: programowane wysyłanie wiadomości E-Mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [Porady: programowane zapisywanie załączników z elementów poczty E-Mail programu Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Porady: programowane Tworzenie elementu poczty E-Mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
+ [Instrukcje: Programowe tworzenie elementu poczty e-mail](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
   
   

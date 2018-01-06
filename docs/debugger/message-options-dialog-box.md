@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
 - Spy++, message options
@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1d2adec322d5fff76e918e1fa11b37e2339b070
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 45878b19619f5a3842d235242603293d990a510a
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="message-options-dialog-box"></a>Opcje komunikatów — Okno dialogowe
 Użyj tego okna dialogowego, aby wybrać wiadomości, które są wymienione w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, wybierz **komunikaty dziennika** z **Spy** menu.  
@@ -41,7 +42,7 @@ Użyj tego okna dialogowego, aby wybrać wiadomości, które są wymienione w [w
  [Okno dialogowe właściwości wiadomości](../debugger/message-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wybranego w widoku komunikatów wiadomości.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.  
   
  [Wyszukiwanie komunikatu w widoku komunikatów](../debugger/how-to-search-for-a-message-in-messages-view.md)  
@@ -53,8 +54,8 @@ Użyj tego okna dialogowego, aby wybrać wiadomości, które są wymienione w [w
  [Widok komunikatów](../debugger/messages-view.md)  
  Wyświetla strumienia komunikatów skojarzony z okno, proces lub wątek.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.

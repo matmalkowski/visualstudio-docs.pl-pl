@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 303ce6608ee17b99995d871c5da1536a08fef335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Wskazówki: Wyświetlanie skrócone informacje etykietek narzędzi
 Skrócone informacje to funkcja IntelliSense, która wyświetla podpisy metod i opisy, gdy użytkownik przesunie wskaźnik nad nazwę metody. Na podstawie języka funkcje, takie jak skrócone informacje można zaimplementować definiujący identyfikatory, dla których chcesz zawierają opisy skrócone informacje, a następnie utworzenie etykietka narzędzia, w którym ma być wyświetlana zawartość. Skrócone informacje można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i wyświetlić skrócone informacje dla właśnie tego typu lub skrócone informacje można wyświetlać dla istniejącego typu zawartości (na przykład "tekst"). Ten przewodnik przedstawia sposób wyświetlania skrócone informacje dla typu zawartości "text".  
@@ -177,4 +178,4 @@ Skrócone informacje to funkcja IntelliSense, która wyświetla podpisy metod i 
 4.  Przesuń wskaźnik myszy na jednym z wystąpień "Dodaj". Podpis i opis `add` metoda powinna być wyświetlana.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

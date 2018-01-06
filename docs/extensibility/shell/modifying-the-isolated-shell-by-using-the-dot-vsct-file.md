@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdaab4c5c9f0ee5522ae372e4a0cd94fb113eed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631aaaf4bf3d36cf5b83c8e67791c453cdfed925
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modyfikowanie przy użyciu programu Isolated Shell. Plik Vsct
 Projekt interfejsu użytkownika dla projektu programu Visual Studio programu isolated shell zawiera pliku vsct, co pozwala określić, które grupy aplikacji i poszczególnych polecenia są dostępne w aplikacji. Poniżej przedstawiono fragment pliku vsct bez modyfikacji.  
@@ -57,4 +58,4 @@ Projekt interfejsu użytkownika dla projektu programu Visual Studio programu iso
  Aby uzyskać więcej informacji, zobacz [projektowania tabeli polecenia XML (. Pliki Vsct)](../internals/designing-xml-command-table-dot-vsct-files.md) i [odwołanie do schematu VSCT XML](../vsct-xml-schema-reference.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio izolowane powłoki](visual-studio-isolated-shell.md)
+ [Visual Studio Isolated Shell](visual-studio-isolated-shell.md)

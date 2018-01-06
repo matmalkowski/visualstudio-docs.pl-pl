@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51ed8cd351a306c3992b4b6c9fcc2231a90085f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ae692249ea952970b096825c8f6968158eb2f17f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-priority"></a>Priorytet projektu
 Element projektu zwykle jest elementem członkowskim tylko jednego projektu w rozwiązaniu. W związku z tym IDE może łatwo ustalić, który projekt jest używany do otwierania elementu. Jednak jeśli element jest członkiem więcej niż jeden projekt, IDE wykorzystuje schemat priorytet ustalenie najlepszych projektu do otwierania elementu.  
@@ -37,4 +38,4 @@ Element projektu zwykle jest elementem członkowskim tylko jednego projektu w ro
 ## <a name="see-also"></a>Zobacz też  
  [Projekt różne pliki](../../extensibility/internals/miscellaneous-files-project.md)   
  [Porady: Otwórz edytory dla otwarte dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)   
- [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
+ [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)

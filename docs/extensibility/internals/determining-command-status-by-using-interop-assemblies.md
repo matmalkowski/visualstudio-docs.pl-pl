@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cde6ae841271622e0d538d679991288c111095e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b7b695288bec904e1e576f9f566944613c97f31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Określanie stanu polecenia przy użyciu zestawy międzyoperacyjne
 Pakiet VSPackage musi zachować informacje o stanie poleceń, które może obsługiwać. Środowisko nie może określić, kiedy polecenie przetwarzanych w ramach VSPackage staje się włączone lub wyłączone. Jest odpowiedzialny za VSPackage do informowania o stanach polecenia środowiska, na przykład stan ogólne polecenia takie jak **Wytnij**, **kopiowania**, i **Wklej**.  

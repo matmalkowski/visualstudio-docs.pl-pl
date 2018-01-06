@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 181462529b4e66f894328d099298408a91145c6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzenie, komentowanie i testowanie kodu
 Obok możesz dodać komentarz do kodu. Należy pamiętać, że nie powoduje zmiany zachowania programu jest komentarz. Ułatwi osobie, która odczytuje swój kod, aby zrozumieć, jakie operacje. Dodawanie komentarzy w kodzie jest dobrym nawyk umożliwia pobranie do. W środowisku Visual C#, dwa przekazywania ukośniki (/ /) zaznacz wiersz jako komentarz. W języku Visual Basic pojedynczego cudzysłowu (') służy do zaznacz wiersz jako komentarz. Po dodaniu komentarza, należy przetestować programu. Jest dobrym rozwiązaniem jest uruchamianie i testowanie kodu często podczas pracy w projektach, aby można było catch i rozwiązywania problemów z wcześniej, zanim ten kod pobiera bardziej skomplikowane. Ta metoda jest wywoływana *iteracyjne testowanie*.  

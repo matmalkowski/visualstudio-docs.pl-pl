@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abf254aa21be5ec4b7401e21afa5f9bcca00e011
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties"></a>Rozszerzanie właściwości
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Właściwości** okna jest przeglądarką uniwersalnych właściwości dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` wpisz informacje i metadanych modelu COM +, aby wyświetlić właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowane środowisko programistyczne (IDE).  
@@ -30,29 +31,29 @@ Okno właściwości
  Ta sekcja zawiera szczegółowe informacje, które odnoszą się do poszczególnych obszarach **właściwości** okna i interfejsów, które należy zaimplementować i wywołania do wypełnienia okna.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Omówienie okno właściwości](../../extensibility/internals/properties-window-overview.md)  
+ [Omówienie okna właściwości](../../extensibility/internals/properties-window-overview.md)  
  Objaśnienie jego przeznaczenia **właściwości** okna względem okna narzędzia i okna dokumentu.  
   
- [Szablon zasad i w oknie właściwości](../../extensibility/internals/template-policy-and-the-properties-window.md)  
+ [Szablon zasad i okno właściwości](../../extensibility/internals/template-policy-and-the-properties-window.md)  
  Omówiono sposób projektu znajduje się w szablonie projektu w przedsiębiorstwie oraz jak szablonu projektu przedsiębiorstwa mogą wymusić zasady.  
   
- [Pola okna właściwości i interfejsów](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
+ [Pola i interfejsy okna właściwości](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
  Wyjaśniono podstawę do wyboru, która określa, jakie informacje są wyświetlane w **właściwości** okna.  
   
- [Lista obiektów okno właściwości](../../extensibility/internals/properties-window-object-list.md)  
+ [Lista obiektów okna właściwości](../../extensibility/internals/properties-window-object-list.md)  
  Opisuje cel **właściwości** okno Lista obiektów, opisujące, jak to zrobić, podczas różne obiekty z tej listy wyzwala wywołanie, środowisko zostanie poinformowany, czy został on wybrany nowy obiekt.  
   
- [Przyciski okno właściwości](../../extensibility/internals/properties-window-buttons.md)  
+ [Przyciski okna właściwości](../../extensibility/internals/properties-window-buttons.md)  
  Objaśnienie jego przeznaczenia cztery domyślne przyciski wyświetlane na **właściwości** pasek narzędzi okna.  
   
- [Właściwości wyświetlania siatki](../../extensibility/internals/properties-display-grid.md)  
+ [Siatka wyświetlania właściwości](../../extensibility/internals/properties-display-grid.md)  
  Wyjaśnia, gdzie znaleziono nazw właściwości i pola wartości właściwości w siatce.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Typy projektów](../../extensibility/internals/project-types.md)  
  W tym artykule omówiono projektów jako bloków konstrukcyjnych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Kompilowanie i tworzenia](../../ide/compiling-and-building-in-visual-studio.md)  
+ [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)  
  W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] platformy stale testowanie i debugowanie aplikacji podczas ich tworzenia.  
   
  [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)  

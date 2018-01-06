@@ -37,11 +37,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48670b03444a8701dc3c23fe591a962e01f51f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 87d1fe708d4090fc6d2dd9509a04d13e7a21e079
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziome dokumentu są nieco inne niż programy obsługi zdarzeń dla dodatków VSTO.  
@@ -107,25 +108,25 @@ ms.lasthandoff: 10/31/2017
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Kolejność zdarzeń w projektach na poziomie dokumentu programu Excel  
  **Uruchamiania** są wywoływane programy obsługi zdarzeń w projektach programu Excel, w następującej kolejności:  
   
-1.  `ThisWorkbook_Startup`.  
+1.  `ThisWorkbook_Startup`.,  
   
-2.  `Sheet1_Startup`.  
+2.  `Sheet1_Startup`.,  
   
-3.  `Sheet2_Startup`.  
+3.  `Sheet2_Startup`.,  
   
-4.  `Sheet3_Startup`.  
+4.  `Sheet3_Startup`.,  
   
 5.  Inne arkuszy w kolejności.  
   
  **Zamknięcia** są wywoływane programy obsługi zdarzeń w rozwiązaniu skoroszytu, w następującej kolejności:  
   
-1.  `ThisWorkbook_Shutdown`.  
+1.  `ThisWorkbook_Shutdown`.,  
   
-2.  `Sheet1_Shutdown`.  
+2.  `Sheet1_Shutdown`.,  
   
-3.  `Sheet2_Shutdown`.  
+3.  `Sheet2_Shutdown`.,  
   
-4.  `Sheet3_Shutdown`.  
+4.  `Sheet3_Shutdown`.,  
   
 5.  Inne arkuszy w kolejności.  
   
@@ -161,6 +162,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
- [Przegląd szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)  
+ [Szablony projektów pakietu Office — omówienie](../vsto/office-project-templates-overview.md)  
   
   

@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7453a61f599b8d3e051fea1c016d914814ec7fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-flow-activity-designers"></a>Projektanci działań przepływu sterowania
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]zawiera kilka działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używana do sterowania przepływem w przepływie pracy. Poniższe tematy opisują te działania i zawierają wskazówki dotyczące sposobu ich używania.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="related-sections"></a>Sekcje pokrewne  
  Dla innych typów projektantów działań zobacz następujące tematy.  
   
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)  
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
   
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
   
@@ -85,13 +86,13 @@ ms.lasthandoff: 10/27/2017
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   
- [Elementy podstawowe](../workflow-designer/primitives-activity-designers.md)  
+ [Typy pierwotne](../workflow-designer/primitives-activity-designers.md)  
   
- [Transakcji](../workflow-designer/transaction-activity-designers.md)  
+ [Transakcja](../workflow-designer/transaction-activity-designers.md)  
   
  [Kolekcja](../workflow-designer/collection-activity-designers.md)  
   
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
- [Przy użyciu projektantów działań](../workflow-designer/using-the-activity-designers.md)
+ [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)

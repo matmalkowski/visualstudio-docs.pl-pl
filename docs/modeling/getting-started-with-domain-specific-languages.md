@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4dd9df4832e08d33a8209181e47a38101a5658f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyciu języka specyficznego dla domeny (DSL) utworzone przy użyciu zestawu SDK modelowania dla programu Visual Studio.  
@@ -407,7 +408,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
 ## <a name="see-also"></a>Zobacz też  
  [Opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md)   
- [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
+ [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

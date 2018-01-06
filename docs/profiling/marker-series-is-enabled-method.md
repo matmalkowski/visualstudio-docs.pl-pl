@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9de16a85ca956f3f8a488a76b50eb2738c705aca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1189c84cd3e7399cae7aaecb79e14aab3cd20d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled — Metoda
 Określa, czy dowolnej sesji jest włączony dostawca.  
@@ -48,4 +49,4 @@ bool is_enabled(
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz też  
- [marker_series — klasa](../profiling/marker-series-class.md)
+ [marker_series, klasa](../profiling/marker-series-class.md)

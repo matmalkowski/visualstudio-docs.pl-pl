@@ -31,11 +31,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84dbee96880d651ab17efd1b19dbb2589f87f9f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbef364c316f51be8996e79f63a493b51e619f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określ symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik bazy danych (.pdb) programu skrót pliku symboli, mapuje identyfikatorów, które należy utworzyć w kodzie źródłowym dla klas, metod i inny kod, aby identyfikatory, które są używane w skompilowanych plików wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger użyje tych informacji do określenia dwóch kluczowych informacji:

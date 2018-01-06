@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a47eb4e129ac90e8a397c936922a8cc3aeb80277
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1edbe90bf9f1002392374a17b8dd85270ec2fef5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 W projektancie programu do cieniowania stałych węzły reprezentują wartości literałów i interpolowane atrybuty wierzchołków w obliczeniach cieniowania pikseli. Ponieważ wierzchołek atrybuty są interpolowane — różni się od tak, dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera innej wersji stałej. Dzięki temu każdego piksela unikatowego wyglądu.  
@@ -30,19 +31,19 @@ W projektancie programu do cieniowania stałych węzły reprezentują wartości 
   
 |Węzeł|Szczegóły|Właściwości|  
 |----------|-------------|----------------|  
-|**Wektor kamery**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni świata.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|  
-|**Stała kolorów**|Wartość stałą koloru.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Dane wyjściowe**<br /> Wartość koloru.|  
-|**Stałe**|Stała wartość skalarną.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Wartość skalarną.|**Dane wyjściowe**<br /> Wartość skalarną.|  
-|**Stała 2D**|Stała wektora z dwoma składowymi.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float2`<br /> Wartość wektora.|**Dane wyjściowe**<br /> Wartość wektora.|  
-|**Stała 3D**|Wektor z trzema składowymi stałą.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wartość wektora.|**Dane wyjściowe**<br /> Wartość wektora.|  
-|**Stała 4D**|Stała czterema składowymi wektora.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Dane wyjściowe**<br /> Wartość wektora.|  
-|**Pozycja znormalizowane**|Pozycja bieżącego piksela wyrażona we współrzędnych urządzenia znormalizowaną.<br /><br /> Współrzędna x i współrzędna y mają wartości z zakresu [-1, 1], Współrzędna z ma wartość z zakresu [0, 1], i w składnika zawiera głębokość punktu w przestrzeni widoku; w nie jest znormalizowana.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|  
-|**Kolor punktu**|Kolor rozpraszania bieżącego piksela jest kombinacją materiału rozpraszania koloru i wierzchołków atrybutów koloru.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Kolor rozpraszania bieżącego piksela.|Brak|  
-|**Głębokość punktu**|Głębokość bieżącego piksela w przestrzeni widoku.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|  
-|**Głębokość punktu znormalizowane**|Głębokość bieżącego piksela wyrażona we współrzędnych urządzenia znormalizowaną.<br /><br /> Wynik zawiera wartość z zakresu [0, 1].<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|  
-|**Pozycja ekranu**|Pozycja bieżącego piksela wyrażona w współrzędne ekranu.<br /><br /> Współrzędne ekranu są oparte na bieżącego okienka ekranu. X i y składników zawiera współrzędne ekranu, składnik z zawiera głębokość znormalizowany do zakresu [0, 1], i w składnik zawiera głębokość w przestrzeni widoku.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|  
-|**Normalna powierzchni**|Normalna powierzchni bieżącego piksela w przestrzeni obiektów.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni obiektów.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|  
-|**Wektor kamery przestrzeni stycznej**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni stycznej.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni stycznej.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|  
+|**Wektor kamery**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|  
+|**Stała kolorów**|Wartość stałą koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość koloru.|  
+|**Stałe**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarną.|**Output**<br /> Wartość skalarną.|  
+|**Stała 2D**|Stała wektora z dwoma składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Wartość wektora.|**Output**<br /> Wartość wektora.|  
+|**Stała 3D**|Wektor z trzema składowymi stałą.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wartość wektora.|**Output**<br /> Wartość wektora.|  
+|**Stała 4D**|Stała czterema składowymi wektora.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektora.|  
+|**Pozycja znormalizowane**|Pozycja bieżącego piksela wyrażona we współrzędnych urządzenia znormalizowaną.<br /><br /> Współrzędna x i współrzędna y mają wartości z zakresu [-1, 1], Współrzędna z ma wartość z zakresu [0, 1], i w składnika zawiera głębokość punktu w przestrzeni widoku; w nie jest znormalizowana.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|  
+|**Kolor punktu**|Kolor rozpraszania bieżącego piksela jest kombinacją materiału rozpraszania koloru i wierzchołków atrybutów koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Kolor rozpraszania bieżącego piksela.|Brak|  
+|**Głębokość punktu**|Głębokość bieżącego piksela w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|  
+|**Głębokość punktu znormalizowane**|Głębokość bieżącego piksela wyrażona we współrzędnych urządzenia znormalizowaną.<br /><br /> Wynik zawiera wartość z zakresu [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|  
+|**Pozycja ekranu**|Pozycja bieżącego piksela wyrażona w współrzędne ekranu.<br /><br /> Współrzędne ekranu są oparte na bieżącego okienka ekranu. X i y składników zawiera współrzędne ekranu, składnik z zawiera głębokość znormalizowany do zakresu [0, 1], i w składnik zawiera głębokość w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|  
+|**Normalna powierzchni**|Normalna powierzchni bieżącego piksela w przestrzeni obiektów.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni obiektów.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|  
+|**Wektor kamery przestrzeni stycznej**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni stycznej.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni stycznej.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|  
 |**Kierunek światła przestrzeni stycznej**|Wektor definiujący kierunek padania światła ze źródła światła w przestrzeni stycznej bieżącego piksela.<br /><br /> Służy to do obliczenia udziału oświetlenia i odblasków w przestrzeni stycznej.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do źródła światła.|Brak|  
-|**Normalny świata**|Normalna powierzchni bieżącego piksela w przestrzeni świata.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni świata.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|  
-|**Pozycja świata**|Pozycja bieżącego piksela w przestrzeni świata.<br /><br /> **Dane wyjściowe**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
+|**Normalny świata**|Normalna powierzchni bieżącego piksela w przestrzeni świata.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|  
+|**Pozycja świata**|Pozycja bieżącego piksela w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|

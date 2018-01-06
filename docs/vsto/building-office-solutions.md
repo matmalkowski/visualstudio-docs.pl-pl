@@ -31,11 +31,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3df5fca6d41070b09ceb8b8be9b05212b7caa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf3fde8e5a7e91719da11faca01453b405e30401
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-office-solutions"></a>Kompilowanie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowanie i debugowanie innych typów projektów programu Visual Studio, takie jak formularze systemu Windows. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [kompilowania i tworzenia w programie Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -113,8 +114,8 @@ ms.lasthandoff: 10/31/2017
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)|Przedstawia informacje o zagadnieniach dotyczących debugowanie projektów pakietu Office.|  
-|[Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Przedstawia sposób tworzenia podstawowego dostosowywania poziomie dokumentu dla programu Excel.|  
-|[Porady: ponowne włączanie dodatku narzędzi VSTO, która została wyłączona](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Opisuje sposób ponownie włączyć dodatku VSTO twarde lub soft wyłączono.|  
-|[Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera linki do informacji o tworzeniu rozwiązań pakietu Office i informacji na temat roli zestawów w rozwiązaniu.|  
+|[Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Przedstawia sposób tworzenia podstawowego dostosowywania poziomie dokumentu dla programu Excel.|  
+|[Instrukcje: Ponowne włączanie wcześniej wyłączonego dodatku narzędzi VSTO](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Opisuje sposób ponownie włączyć dodatku VSTO twarde lub soft wyłączono.|  
+|[Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera linki do informacji o tworzeniu rozwiązań pakietu Office i informacji na temat roli zestawów w rozwiązaniu.|  
   
   

@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12265c725480324c396d59d848e5269432bb5d6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-word"></a>Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word
   Jeśli użytkownik dopiero rozpoczynasz pracę tworzenie dostosowań na poziomie dokumentu dla programu Microsoft Office Word za pomocą programu Visual Studio, Oto co należy wiedzieć.  
@@ -48,11 +49,11 @@ ms.lasthandoff: 10/31/2017
   
  Więcej informacji znajduje się w następujących tematach:  
   
--   [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
+-   [Programowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
   
 -   [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)  
   
--   [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
+-   [Przegląd obiektów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)  
   
 ## <a name="customizing-the-user-interface-of-word"></a>Dostosowywanie interfejsu użytkownika programu Word  
  Większość rozwiązań Microsoft Office zmodyfikować interfejsu użytkownika (UI) aplikacji pakietu Office do niektórych umożliwiają użytkownikom na interakcję z rozwiązaniem. Istnieje wiele sposobów, w których można zmodyfikować interfejsu użytkownika programu Word za pomocą dostosowania poziomie dokumentu. Na przykład można dodać kontrolki do Wstążki i można wyświetlić w okienku Akcje. Aby uzyskać więcej informacji, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  

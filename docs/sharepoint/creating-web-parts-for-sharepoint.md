@@ -30,11 +30,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bba3f2e5f645b6b97fb43b22e7dfc1028a01ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3398364f4c9e4046c3ab4670a544a96c5ac455c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Tworzenie części sieciowych dla SharePoint
   Przy użyciu składników web Part, można zmodyfikować zawartość, wyglądu i zachowania stron witryny programu SharePoint za pomocą przeglądarki. Formanty po stronie serwera, które są uruchamiane wewnątrz strony sieci web są składniki Web Part: są blokami konstrukcyjnymi stron, które znajdują się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: składnikami Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -116,11 +117,11 @@ ms.lasthandoff: 10/31/2017
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Porady: tworzenie SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Pokazuje, jak utworzyć części sieci web dla strony programu SharePoint.|  
-|[Porady: tworzenie SharePoint Web Part za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Przedstawiono sposób tworzenia składników web Part dla SharePoint za pomocą powierzchni projektu visual.|  
-|[Porady: Tworzenie formantu użytkownika dla strony aplikacji SharePoint lub składnik Web Part](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Pokazuje, jak utworzyć niestandardowe kontrolki do ponownego użycia, które mogą być używane przez stron aplikacji i składników web Part, które są uruchamiane w programie SharePoint.|  
-|[Wskazówki: Tworzenie składnika Web Part dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint.|  
-|[Wskazówki: Tworzenie składnika Web Part dla SharePoint za pomocą projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Opisuje sposób projektowania składnika web part dla SharePoint przeciągając formanty powierzchnię projektu visual.|  
-|[Wskazówki: Tworzenie składnika Web Part Silverlight wyświetlającego dane OData dla programu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint, która obsługuje aplikację Silverlight i wyświetla dane z listy programu SharePoint.|  
+|[Instrukcje: Tworzenie SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Pokazuje, jak utworzyć części sieci web dla strony programu SharePoint.|  
+|[Instrukcje: Tworzenie części sieciowej SharePoint za pomocą narzędzia Projektant](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Przedstawiono sposób tworzenia składników web Part dla SharePoint za pomocą powierzchni projektu visual.|  
+|[Instrukcje: Tworzenie kontrolki użytkownika dla części sieciowej lub strony aplikacji SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Pokazuje, jak utworzyć niestandardowe kontrolki do ponownego użycia, które mogą być używane przez stron aplikacji i składników web Part, które są uruchamiane w programie SharePoint.|  
+|[Przewodnik: Tworzenie części sieciowej dla SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint.|  
+|[Przewodnik: Tworzenie składnika Web part dla SharePoint za pomocą Projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Opisuje sposób projektowania składnika web part dla SharePoint przeciągając formanty powierzchnię projektu visual.|  
+|[Przewodnik: Tworzenie składnika Web Part programu Silverlight wyświetlającego dane OData dla programu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Opisuje sposób projektowania składnika web part programu SharePoint, która obsługuje aplikację Silverlight i wyświetla dane z listy programu SharePoint.|  
   
   

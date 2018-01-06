@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-content-manager-overrides"></a>Przesłonięcia Menedżera zawartości Pomocy
 Można zmienić domyślne zachowanie związane z pomocy funkcji w programie Visual Studio IDE i podglądu pomocy. Niektóre opcje są określone przez utworzenie [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) pliku można ustawić różne wartości klucza rejestru. Inne są ustawiane bezpośrednio w rejestrze.
@@ -61,7 +62,7 @@ Następujące dwa można kontrolować przez ustawienie wartości klucza rejestru
 |Wskaż magazynu zawartości lokalnej w udziale sieciowym|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
   
 ## <a name="see-also"></a>Zobacz także
-[Podręcznik administratora programu Podgląd pomocy](../ide/help-viewer-administrator-guide.md)  
-[Argumenty wiersza polecenia Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md)  
+[Argumenty wiersza poleceń Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)  
 [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)  
 [Modyfikowanie przy użyciu pliku .pkgdef programu isolated shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

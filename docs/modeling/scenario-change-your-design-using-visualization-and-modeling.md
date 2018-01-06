@@ -20,11 +20,12 @@ caps.latest.revision: "61"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e6ffb17164bf49cb585d9fd67dd99c833a805411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 Upewnij się, że systemu oprogramowania zaspokoi potrzeby użytkowników z wykorzystaniem wizualizacji i modelowania narzędzia w programie Visual Studio.
@@ -92,13 +93,13 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
   
  Zobacz:  
   
--   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Porady: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+-   [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
--   [Modelowanie zestawu SDK dla programu Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+-   [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -249,7 +250,7 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
   
 -   [Testowanie aplikacji](https://www.visualstudio.com/docs/test/overview)  
   
--   [Weryfikacja systemu w czasie projektowania](../modeling/validate-your-system-during-development.md)  
+-   [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)  
   
 -   [Korzystanie z kontroli wersji](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
@@ -391,7 +392,7 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
   
  Jako punktu wyjścia do eksplorowania i przedyskutować istniejące klasy projektanta klas służy do tworzenia diagramów klasy z kodu.  
   
--   [Porady: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+-   [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Podsumowanie: Sile diagramy klas  
  Diagramy klas w celu określenia:  
@@ -459,11 +460,11 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
   
  Zobacz:  
   
--   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)  
+-   [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)  
   
@@ -490,7 +491,7 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
  [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)   
  [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)   
  [Używanie modeli w elastyczne programowanie](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Weryfikacja systemu w czasie projektowania](../modeling/validate-your-system-during-development.md)   
+ [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)   
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
  

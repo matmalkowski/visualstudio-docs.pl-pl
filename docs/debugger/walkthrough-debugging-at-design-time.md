@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d497535f8511c3f9e6c55e80157507ed36184b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5869279a7bafb11368b7fb232e6ca68ca7d98478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Wskazówki: debugowanie w czasie projektowania
 Można użyć programu Visual Studio **Immediate** okno, aby wykonać funkcji lub procedury, gdy aplikacja nie jest uruchomiona. Jeśli funkcja lub procedura zawiera punkt przerwania, Visual Studio spowoduje przerwanie wykonywania we właściwym momencie. Następnie można okna debugera Sprawdź swój stan programu. Ta funkcja jest nazywana debugowanie w czasie projektowania.  

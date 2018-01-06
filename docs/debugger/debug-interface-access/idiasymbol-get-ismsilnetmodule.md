@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b2fbb56a23768b323b79559f0695471792cb553
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ce40114eb19cc24f08054ae570fc05a5cc11f07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Pobiera flagę wskazującą, czy moduł jest modułu .netmodule (Microsoft języka pośredniego (MSIL) moduł, który zawiera tylko metadane i nie ma symboli natywnych).  
@@ -53,4 +54,4 @@ HRESULT get_isMSILNetmodule(
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Compilanddetails —](../../debugger/debug-interface-access/compilanddetails.md)
+ [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

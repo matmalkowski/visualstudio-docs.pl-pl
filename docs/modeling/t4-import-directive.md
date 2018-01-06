@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e27400d82f751136a3ce8e2e448f04935f2157a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5d581e182b39ac5a786b2d66a1a3798ba7fe82ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-import-directive"></a>Dyrektywa T4 dotycząca importowania
 W blokach kodu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego T4, `import` dyrektywy służy do odwoływania się do elementów w innej przestrzeni nazw nie oferuje w pełni kwalifikowaną nazwą. Jest to równoważne `using` w języku C# lub `imports` w [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].  
@@ -52,4 +53,4 @@ The file contains: <#=  fileContent #>
 -   Przestrzeń nazw z DSL  
   
 ## <a name="see-also"></a>Zobacz też  
- [T4 dotycząca Dyrektywa zestawu](../modeling/t4-assembly-directive.md)
+ [Dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md)

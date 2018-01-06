@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca93d63236eb1b50663eff4c86a6ae3603600802
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 18c531bb849793de184f3797067dceff4bd10199
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Przełączniki wiersza polecenia Devenv programowanie pakiet VSPackage
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Umożliwia deweloperom automatyzację zadań w wierszu polecenia, podczas wykonywania devenv.exe, pliku, który uruchamia proces programu Visual Studio zintegrowane środowisko programistyczne (IDE).  

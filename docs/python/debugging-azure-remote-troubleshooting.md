@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b4f7edc3753f8c2b9e84668cda4273feab08e8ca
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Zdalne debugowanie rroubleshooter dla języka Python i platformą Azure
 

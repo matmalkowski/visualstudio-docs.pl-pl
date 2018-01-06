@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d72d4807f61adcab1321b6471c2bea31f048a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e936404d285fe5845ae364c3b5960e2fb335d2d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-aspx-markup"></a>Porady: lokalizowanie znacznika ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]strony (aspx) używają zwykle ustalony ciągami. Do zlokalizowania te ciągi, należy je zastąpić przy użyciu wyrażeń, które odwołują się zlokalizowanych zasobów.  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
  [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
  [Porady: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)   
  [Porady: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)   
- [Porady: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)  
+ [Instrukcje: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)  
   
   

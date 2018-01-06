@@ -15,11 +15,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c5e60ada4489e12312df92ecceab8bc268a6cfac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c37e092f2caa39807760bd04a22587d684a6998d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci web będzie zawierać "\<html >..." i wszystkich innych standardowych części strony HTML. Wstawione do szablonu są *kontrolować bloki*, które są fragmenty kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.  
@@ -273,7 +274,7 @@ Content of MyFile.txt is:
   
 |Zadanie|Temat|  
 |----------|-----------|  
-|Pisanie szablonu.|[Wskazówki dotyczące pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md)|  
+|Pisanie szablonu.|[Zalecenia dotyczące pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md)|  
 |Generowanie tekstu przy użyciu kodu programu.|[Struktura szablonu tekstowego](../modeling/writing-a-t4-text-template.md)|  
 |Generowanie plików w rozwiązaniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |Uruchom generowania tekstu poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  

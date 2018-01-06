@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881824c819b1e71189df3de647081b3c4e0689a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95d637585a08089432c8ed054b535c3e56fc9c18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 Możliwość debugowania inny proces zapewnia bardzo szeroki uprawnień, które nie w przeciwnym razie będzie, szczególnie w przypadku debugowania zdalnego. Debuger złośliwego może spowodować rozległe zniszczenia na maszynie debugowany.  
@@ -83,5 +84,5 @@ Możliwość debugowania inny proces zapewnia bardzo szeroki uprawnień, które 
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
- [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należących do niezaufanych użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
+ [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
  [Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać niezaufaną komendę](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

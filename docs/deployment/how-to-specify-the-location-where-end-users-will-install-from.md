@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41a601febff80b002512a3783d8405dc42e5d766
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Porady: określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, lokalizacji, gdzie użytkownicy do pobrania i zainstalowania aplikacji nie jest zawsze lokalizacji, w którym początkowo publikowania aplikacji. Na przykład w niektórych organizacjach deweloper może publikowania aplikacji na serwerze tymczasowym, a następnie administrator przeniosłaby aplikacji na serwerze sieci Web.  
@@ -47,4 +48,4 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Określ, gdzie programu Visual Studio kopiuje pliki](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7c15d6bd2bd50b8ba8c5075ab2d90287e3a4750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-textures-and-images"></a>Praca z obrazami i teksturami
 Za pomocą edytora obrazów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do tworzenia i modyfikowania tekstury i obrazów. Edytor obrazów obsługuje sformatowanego formatów obrazów i tekstury, takich jak te, które są używane do rozwoju aplikacji DirectX.  
@@ -50,4 +51,4 @@ Za pomocą edytora obrazów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Edytor obrazów](../designers/image-editor.md)|Opisuje sposób pracy z tekstury i obrazów za pomocą edytora obrazów.|  
-|[Przykłady edytor obrazów](../designers/image-editor-examples.md)|Zawiera łącza do tematów, które przedstawiają sposób wykonywania typowych zadań obrazu za pomocą edytora obrazów.|
+|[Przykłady Edytora obrazów](../designers/image-editor-examples.md)|Zawiera łącza do tematów, które przedstawiają sposób wykonywania typowych zadań obrazu za pomocą edytora obrazów.|

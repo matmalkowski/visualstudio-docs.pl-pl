@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9e1bbce7fd1727bc629f015894c16b1d56a2150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-5-change-source-control"></a>Testu obszar 5: Zmień kontrolę źródła
 Ten obszar testu wtyczkę kontroli źródła obejmuje zmiana kontroli źródła, za pomocą **Zmień kontrolę źródła** polecenia.  
@@ -76,4 +77,4 @@ Ten obszar testu wtyczkę kontroli źródła obejmuje zmiana kontroli źródła,
 |Ponownie powiązać rozwiązanie lub projekt docelowy tylko w tym samym katalogu|1.  Tworzenie projektu.<br />2.  Dodaj tylko projektu do korzystania z kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.<br />3.  Zamknij rozwiązanie.<br />4.  Utwórz nowe rozwiązanie z co najmniej dwa projekty.<br />5.  Dodaj rozwiązanie do kontroli źródła.<br />6.  Dodaj projekt utworzony w kroku 1 z kontroli źródła.<br />7.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonować rozwiązania.<br />8.  Sprawdź w całym rozwiązaniu.<br />9. Otwórz **Zmień kontrolę źródła** okno dialogowe.<br />10. Wybierz dodany projekt (z kroku 6), a następnie kliknij przycisk **Unbind**.<br />11. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.<br />12. Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie.<br />13. Otwórz ponownie **Zmień kontrolę źródła** okno dialogowe.<br />14. Wybierz dodany projekt (z kroku 6), a następnie kliknij przycisk **powiązać**.<br />15. Wybierz oryginalnej lokalizacji.|Rozwiązanie i projekty pozostaną kontrolowany.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

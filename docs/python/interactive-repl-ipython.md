@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 856e8b3f13c5938dd6bd7ec1465bda9715636875
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>W oknie interaktywnym przy użyciu IPython
 
@@ -31,7 +32,7 @@ W tym przewodniku powinny mieć [Anaconda](https://www.continuum.io) środowisko
 
 1. Przyjrzyj się **pakiety** (lub **pip**) i upewnij się, że `IPython` i `matplotlib` są wyświetlane. Jeśli nie, zainstaluj je tutaj.
 
-1. Wybierz **omówienie** i wybierz **IPython używany tryb interaktywny.** (W programie Visual Studio 2015, wybierz **skonfigurować opcje interakcyjne** można otworzyć **opcje** okna dialogowego, a następnie ustaw **trybie interaktywnym** IPython i wybierz **OK** ).    
+1. Wybierz **omówienie** i wybierz **IPython używany tryb interaktywny.** (W programie Visual Studio 2015, wybierz **skonfigurować opcje interakcyjne** można otworzyć **opcje** okna dialogowego, a następnie ustaw **trybie interaktywnym** IPython i wybierz **OK** ).
 
 1. Wybierz **Otwórz okno interaktywne** można wyświetlić okno interaktywne w trybie IPython. Może być konieczne zresetowanie okna, jeśli zmienione zostały właśnie trybie interakcyjnym; może być również konieczne naciśnij klawisz Enter, jeśli tylko >>> pojawi się monit.
 
@@ -75,11 +76,11 @@ W tym przewodniku powinny mieć [Anaconda](https://www.continuum.io) środowisko
     ![Wysyłanie kodu z edytora do okna interaktywnego](media/ipython-repl-05.png)
 
 1. Aby zobaczyć wykresy poza okno interaktywne, uruchom kod zamiast przy użyciu **Debuguj > Uruchom bez debugowania** polecenia.
-    
+
 IPython ma wiele innych przydatnych funkcji, takich jak anulowanie powłoki systemu, podstawienie zmiennej przechwytywanie danych wyjściowych, itd. Zapoznaj się [dokumentacji IPython](http://ipython.org/documentation.html) Aby uzyskać więcej informacji.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 - Aby łatwo i bez konieczności instalacji Jupyter, spróbuj wolnych [usługi hostowanej platformy Azure, komputery przenośne](https://notebooks.azure.com/) umożliwia przechowywać i udostępniać innym użytkownikom notesy.
 
-- Można również uruchomić Jupyter (wcześniej znane jako IPython) na własną maszynę wirtualną systemu Windows lub Linux na platformie Azure. Aby uzyskać więcej informacji, zobacz [tworzenie Azure maszyny Wirtualnej. Instalowanie Jupyter i działających na platformie Azure notesu Jupyter](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Można również uruchomić Jupyter (wcześniej znane jako IPython) na własną maszynę wirtualną systemu Windows lub Linux na platformie Azure. Aby uzyskać więcej informacji, zobacz [tworzenie Azure maszyny Wirtualnej. Instalowanie Jupyter i działających na platformie Azure notesu Jupyter](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

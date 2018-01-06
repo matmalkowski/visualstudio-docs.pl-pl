@@ -23,11 +23,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7375a9be72f6f65ab07e543c481b3075d8b5d8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f23156d7684fa2878eb09c3fec6a32e2938c13a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edytuj kod i Kontynuuj debugowanie w programie Visual Studio (C#, VB, C++)
 Edytuj i Kontynuuj jest elementem zaoszczędzić czas, który pozwala wprowadzać zmiany do kodu źródłowego, gdy program jest w trybie przerwania. Po wznowieniu wykonywanie programu, wybierając polecenie wykonywania, takie jak **Kontynuuj** lub **krok**, Edytuj i Kontynuuj automatycznie stosuje zmiany kodu z pewnymi ograniczeniami. Dzięki temu można wprowadzić zmiany w kodzie podczas sesji debugowania, zamiast zatrzymać, skompiluj ponownie całego programu i uruchomić ponownie sesję debugowania.  
@@ -38,11 +39,11 @@ Edytuj i Kontynuuj jest elementem zaoszczędzić czas, który pozwala wprowadza�
   
  [Porady: zatrzymywanie zmian kodu](../debugger/how-to-stop-code-changes.md)   
   
- [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
+ [Edytuj i kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
- [Edytuj i Kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
+ [Edytuj i kontynuuj (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
   
- [Edytuj i Kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
+ [Edytuj i kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)  
   
  [Edytuj i Kontynuuj nie są obsługiwane w F #](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
   

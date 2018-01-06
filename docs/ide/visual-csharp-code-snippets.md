@@ -17,11 +17,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu Visual C#
 Wstawki kodu są gotowe do użycia wstawki kodu, który można szybko wstawić do kodu. Na przykład `for` fragment kodu tworzy pustą `for` pętli. Niektóre fragmenty kodu są Otocz wstawki kodu, które umożliwia wybór wierszy kodu, a następnie wybierz fragment kodu, który zawiera wybranych wierszy kodu. Na przykład, gdy należy wybrać wiersze kodu i aktywować `for` fragment kodu tworzy `for` pętli z tych wierszy kodu wewnątrz bloku pętli. Wstawki kodu można ustawić program pisania kodu, szybsze, łatwiejsze i bardziej niezawodny.  

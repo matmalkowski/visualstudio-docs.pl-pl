@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f780de1bac1786ac3c5ffb70bd1a2f442fc8734
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]czy system kompilacji dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Poniższe linki prowadzą do tematów, które zawierają [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacje referencyjne.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)  
  Informacje dotyczące używania `Choose`, `When`, i `Otherwise` elementy.  
   
- [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ [Właściwości MSBuild zarezerwowane i dobrze znane](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  W tym artykule opisano [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zastrzeżone właściwości.  
   
  [Wspólne właściwości projektów MSBuild](../msbuild/common-msbuild-project-properties.md)  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)  
  Zawiera opis elementów projektu, które są wspólne dla wszystkich typów projektów i elementów, które są często używane przez typy określonego projektu.  
   
- [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)  
+ [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)  
  W tym artykule opisano argumentów i parametrów, które mogą być używane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
   
  [. Pliki obiektów docelowych](../msbuild/msbuild-dot-targets-files.md)  

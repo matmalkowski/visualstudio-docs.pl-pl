@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f359c8bcad7bdc32b481fa6fc30a96a8669129f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie zestawu międzyoperacyjnego programy obsługi poleceń
 Pakiet VSPackage należy zarejestrować się [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby prawidłowo polecenia kieruje zintegrowane środowisko programistyczne (IDE).  
@@ -71,4 +72,4 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Poleceń i menu, które używają zestawów międzyoperacyjnych](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+ [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0fa900e0e3eff479e9fbbeed375b4d8b580d132
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikowania** strony **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.  

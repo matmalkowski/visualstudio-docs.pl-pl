@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f57cfea2655061985f58692c2d6c47c6433230bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de2af589a92e401ecf549726dea1a5ae300a20bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 Program Blend for Visual Studio ułatwia projektowanie opartych na języku XAML systemu Windows i aplikacji sieci Web. Zawiera środowisko tego samego projektu XAML podstawowe co program Visual Studio i dodaje wizualnych projektantów zaawansowanych zadań, takich jak animacji i zachowania. (Aby uzyskać porównanie narzędzi, zobacz [projektowania XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).)
@@ -97,7 +98,7 @@ Jeśli jesteś nowym użytkownikiem programu Blend for Visual Studio, Poświęć
   
  ![Panel właściwości](../designers/media/blend5_properties_panel.png "Blend5_properties_panel")  
   
- **Kategorie** rozwijanie i zwijanie kategorie właściwości. Kliknij przycisk **rozwiń** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") i **Zwiń** ![Zwiń](../designers/media/b5_collapse_button.png "b5_collapse_button") aby pokazać lub ukryć szczegóły kategorii.  
+ **Kategorie** rozwijanie i zwijanie kategorie właściwości. Kliknij przycisk **rozwiń** ![ ] (../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") i **Zwiń** ![Zwiń] (../designers/media/b5_collapse_button.png "b5_collapse_button") aby pokazać lub ukryć szczegóły kategorii.  
   
 |||  
 |-|-|  

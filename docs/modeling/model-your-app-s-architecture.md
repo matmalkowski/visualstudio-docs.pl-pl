@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 672e2ca393d8cd47466f44c1efb34e6648b7ed4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 669720bcffe8f33636147863b89c2a28113911c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji &#39; architektura s
 Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia użytkowników musi, możesz utworzyć modeli w programie Visual Studio jako część opisie ogólną strukturę i zachowania systemu oprogramowania lub aplikacji. Przy użyciu modeli, można również opisać wzorców, które są używane w projekcie. Te modele pomagają zrozumieć istniejącej architektury, omówiono w nim zmiany i wyraźnie komunikacji zamiaru.  

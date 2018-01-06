@@ -15,11 +15,12 @@ caps.latest.revision: "51"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e4a2485b7e702844a037787234ef3a1ab66495d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e334a148a205338a872e9581bce1c3c1a70b7df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie Menu na pasku Menu programu Visual Studio
 W tym przewodniku przedstawiono sposób dodawania menu na pasku menu programu Visual Studio zintegrowane środowisko programistyczne (IDE). Na pasku menu IDE zawiera menu Kategorie, takie jak **pliku**, **Edytuj**, **widoku**, **okna**, i **Pomoc** .  
@@ -97,4 +98,4 @@ W tym przewodniku przedstawiono sposób dodawania menu na pasku menu programu Vi
      Okno komunikatu powinno są wyświetlane i wyświetlenie komunikatu "TestCommand pakietu wewnątrz TopLevelMenu.TestCommand.MenuItemCallback()". Oznacza to, że nowe polecenie działa.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

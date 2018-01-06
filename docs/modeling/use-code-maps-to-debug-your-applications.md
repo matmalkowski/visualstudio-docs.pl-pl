@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d9d1f6ac733a0feccb3f2fa8175fb85ed035b35c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 Mapy kodu mogą pomóc uniknąć poczucia zagubienia w dużych baz kodu, kod nieznane lub starszego kodu. Na przykład debugowanie, może być konieczne przeglądać kod pochodzące z wielu plików i projektów. Używanie map kodu do nawigację fragmentów kodu i zrozumieć ich relacje między nimi. Dzięki temu nie trzeba informacji o tym kodzie w nagłówek lub utworzyć oddzielne diagram. Dzięki pracy zostanie przerwany, kod mapy pomocy odświeżania pamięci dotyczące kodu, nad którymi pracuje.  

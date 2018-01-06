@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań są panele interfejsu użytkownika, które są zazwyczaj zadokowane po jednej stronie okna w aplikacji pakietu Microsoft Office. Niestandardowe okienka zadań zapewniają sposób utworzyć własny okienka zadań i użytkownikom interfejs znany dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać kontrolki, których uruchamianie kodu w celu modyfikowania dokumentów ani nie wyświetlają danych ze źródła danych.  
@@ -230,4 +231,4 @@ ms.lasthandoff: 10/31/2017
  [Porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Wskazówki: Automatyzacja aplikacji z niestandardowego okienka zadań](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Wskazówka: Synchronizacja niestandardowego okienka zadań z przyciskiem wstążki](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Wskazówki: Wyświetlanie niestandardowych okienek zadań z wiadomościami E-Mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  

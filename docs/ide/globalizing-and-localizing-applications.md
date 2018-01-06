@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizacja i lokalizacja aplikacji
 Jeśli planujesz dystrybuowanie aplikacji międzynarodowych odbiorców, należy zachować kilka sposobów na uwadze podczas fazy projektowania i opracowywania. Nawet jeśli nie masz takich planów małych nakładu pracy na początku można ułatwienia znacznie powinien planów zmianie w przyszłych wersjach aplikacji. Wbudowane usługi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ułatwiają tworzenie pojedynczej aplikacji, które można dostosować do różnych ustawień regionalnych przy użyciu tworzenie aplikacji zarządzanych za pomocą programu Visual Studio.  
@@ -31,7 +32,7 @@ Jeśli planujesz dystrybuowanie aplikacji międzynarodowych odbiorców, należy 
  Visual Studio została zaprojektowana od początku tworzenie dla odbiorców międzynarodowe łatwe dzięki wykorzystaniu usług wbudowane [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Następujące strony pomoże przedstawiono funkcje internacjonalizacji wbudowanych w programie Visual Studio.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wprowadzenie do aplikacji międzynarodowych oparte na programie .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
+ [Wprowadzenie do aplikacji międzynarodowych opartych na programie .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Wprowadza pojęcia związane z opracowywania oprogramowania dla międzynarodowego rynku przy użyciu programu Visual Studio i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
  [Lokalizowanie aplikacji](../ide/localizing-applications.md)  
@@ -47,10 +48,10 @@ Jeśli planujesz dystrybuowanie aplikacji międzynarodowych odbiorców, należy 
  [Globalizowanie aplikacji (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  Zawiera tematy instruktażowe i wskazówki ułatwiające globalize i lokalizowanie aplikacji Windows 8.1 skompilowanej przy użyciu kodu XAML.  
   
- [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do wydania](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Podano informacje dotyczące programowanie międzynarodowe grupy odbiorców.  
   
- [Przegląd biblioteki klas](/dotnet/standard/class-library-overview)  
+ [Omówienie biblioteki klas](/dotnet/standard/class-library-overview)  
  Wprowadza klasy, interfejsy i typy wartości, które przyspieszenia i zoptymalizować proces rozwoju i zapewnienia dostępu do funkcji systemu.  
   
  <xref:System.Globalization>  

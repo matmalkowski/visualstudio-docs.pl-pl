@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7673839e44e913d7d0a219400142fe7e6a0b95e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2171a940951d828df358d09dae5fec68b6475e4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-project-types"></a>Wdrażanie projektu typów
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]instaluje nowy agregator typu projektu (ProjectAggregator2.dll), a także pakiet Instalatora Windows w celu rozpowszechniania (ProjectAggregator2.msi). Należy użyć nowego agregatora dla typów projektów kodu zarządzanego. ProjectAggregator2 działa arounds ograniczenia w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu agregator, który uniemożliwiać poprawne działanie typów projektów kodu zarządzanego. W poniższych krokach opisano sposób zmiany VSPackage do użycia nowego agregatora.  

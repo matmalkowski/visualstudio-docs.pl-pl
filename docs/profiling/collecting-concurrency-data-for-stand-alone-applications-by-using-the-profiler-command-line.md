@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91e079fa996c30160454dcd7f8cc3d3bade27b2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3f0003370525dafd29195473b2de0a02e18f3070
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania umożliwia zbieranie danych działanie wątku, który pokazuje wykorzystania Procesora należy, rywalizacji wątku, wątek migracji, opóźnienia synchronizacji, obszarów nakładających się we/wy i inne i danych kontencji zasobów zdarzenia systemu.  
@@ -52,9 +53,9 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 |**Usługi profilowania**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-concurrency-data-views-and-reports"></a>Analizowanie danych współbieżności widoków i raportów  
- [Widok danych Kontencji zasobów](../profiling/resource-contention-data-views.md)  
+ [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
   
- [CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)  
+ [Concurrency Visualizer](../profiling/concurrency-visualizer.md)  
   
 ## <a name="reference"></a>Tematy pomocy  
  [Wiersza polecenia narzędzi profilowania](../profiling/command-line-profiling-tools-reference.md)

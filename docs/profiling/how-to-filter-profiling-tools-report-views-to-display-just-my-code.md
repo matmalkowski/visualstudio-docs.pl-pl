@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bb2da222b566362a069eaa9ab59d959a0c5b71d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 074ae2e5484833eb5ffaf3d3346d7d232c62e23f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Porady: filtrowanie widoków raportu odnośnie do narzędzi profilowania w celu wyświetlenia Tylko mojego kodu
 Visual Studio 2010 Premium zapewnia filtrowania raportów wydajności, dzięki czemu są one wyświetlane tylko kod, który został zaimplementowany. Domyślnie jest to funkcja, która nosi tylko mój kod. Jest ona skonfigurowana za pośrednictwem **tylko mój kod** opcji **opcje** okno dialogowe.  

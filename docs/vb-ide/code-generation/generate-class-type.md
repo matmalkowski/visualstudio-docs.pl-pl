@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Generuj klasy lub typu w języku Visual Basic
 **Co:** umożliwia natychmiast generowania kodu dla klasy lub typu. 
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
    Access | Ustaw typ ma *domyślne*, *wewnętrzne* lub *publicznego* dostępu.
    rodzaj | To może być ustawiona jako *klasy* lub *struktury*.
    Nazwa | Nie można zmienić i będzie można już wpisana nazwa.
-   Project | Jeśli istnieje wiele projektów w rozwiązaniu, są dostępne miejsce klasie/strukturze wygaśnięcia.
+   Projekt | Jeśli istnieje wiele projektów w rozwiązaniu, są dostępne miejsce klasie/strukturze wygaśnięcia.
    Nazwa pliku | Można utworzyć nowego pliku lub typu można dodać do istniejącego pliku.
 
 1. Klasa/struktura zostaną utworzone automatycznie przy użyciu konstruktora wywnioskować na podstawie jej użycia.

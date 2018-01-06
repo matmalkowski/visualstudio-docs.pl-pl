@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03e7bd5728320bb2efd0b90728b6c1a16f5997ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6a518d618b3a98ec85cbbe015d3b2c5fc7a710
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testu obszar 8: Przełączanie wtyczki
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) ma interfejs użytkownika (UI), aby zmienić bieżącą wtyczką kontroli źródła. Ten obszar testu udostępnia przypadków testowych dla procesu pobrania, które wtyczki do użycia na potrzeby rozwiązania do kontroli źródła.  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/31/2017
 |Zmiana wtyczki dla rozwiązania|1.  Wybierz wtyczki w ramach testu jako bieżący (**narzędzia** -> **opcje** -> **kontroli źródła** -> **wtyczki Wybór**).<br />2.  Utwórz nowy projekt i rozwiązanie.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Usuń powiązanie rozwiązanie z kontroli źródła (przy użyciu **Zmień kontrolę źródła** okno dialogowe).<br />5.  Wybierz inny wtyczki (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6.  Załaduj ponownie rozwiązanie z dysku, jeśli zwalnianie modułu.<br />7.  Dodaj rozwiązanie do kontroli źródła.<br />8.  Usuń powiązanie rozwiązanie z kontroli źródła (przy użyciu **Zmień kontrolę źródła** okno dialogowe).<br />9. Wybierz wtyczki w ramach testu ponownie.<br />10. Załaduj ponownie rozwiązanie z dysku, jeśli zwalnianie modułu.<br />11. Powiąż rozwiązania do oryginalnej lokalizacji (przy użyciu **Zmień kontrolę źródła** okno dialogowe).|Rozwiązanie jest dodawany do kontroli źródła przy użyciu wybranej wtyczki.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

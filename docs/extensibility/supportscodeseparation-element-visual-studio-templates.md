@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa232e26309bf910ae4c19a9ebb2006b2ef2f7c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: affe4d6c73271bea467e373bd8100b3b7f06c0ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation — Element (szablony Visual Studio)
 Określa, czy **umieść kod w osobnym pliku** pole wyboru jest włączone w **Dodaj nowy element** okno dialogowe.  
@@ -89,4 +90,4 @@ Określa, czy **umieść kod w osobnym pliku** pole wyboru jest włączone w **D
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

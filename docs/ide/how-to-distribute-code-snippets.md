@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 39f6006ec6dfe754efc58f2ccdc7b09d803de6b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>Porady: rozprowadzanie wstawek kodu
 Możesz po prostu zapewniają Twojej wstawki kodu dla Twoich znajomych i je zainstalować fragmenty kodu na swoich komputerach za pomocą Menedżera wstawki kodu. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, można objąć pliku fragment rozszerzenie programu Visual Studio, które użytkownicy programu Visual Studio można zainstalować.  
@@ -103,4 +104,4 @@ W tej procedurze użyjemy tego samego fragmentu kodu Hello World utworzone w [ws
     ```  
 
 ## <a name="see-also"></a>Zobacz też  
-[Wstawki kodu](../ide/code-snippets.md)
+[Fragmenty kodu](../ide/code-snippets.md)

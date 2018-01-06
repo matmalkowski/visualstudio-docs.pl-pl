@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f19ec03dda8666eea39b50af40a44ab2c68694ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Porady: tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego zlokalizowane wersje pakietu programu inicjującego można utworzyć przez utworzenie dwóch większej liczby plików dla poszczególnych ustawień regionalnych: postanowień licencyjnych dotyczących oprogramowania, plik (na przykład eula.rtf) oraz manifest pakietu (plik package.xml).  
@@ -54,7 +55,7 @@ Po utworzeniu pakietu programu inicjującego zlokalizowane wersje pakietu progra
     |Chiński (tradycyjny)|zh-Hant|  
     |czeski|CS|  
     |niemiecki|Niemcy|  
-    |angielski|EN|  
+    |Angielski|EN|  
     |Hiszpański|ES|  
     |Francuski|FR|  
     |Włoski|go|  
@@ -96,4 +97,4 @@ Po utworzeniu pakietu programu inicjującego zlokalizowane wersje pakietu progra
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)   
  [Wymagania wstępne dotyczące wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)   
- [Porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)
+ [Instrukcje: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)

@@ -26,11 +26,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f422e980a585b9cbac3c0b59ad8d981aba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Używanie okien pamięci w debugerze programu Visual Studio
 **Pamięci** okna zapewnia wgląd do obszaru pamięci, która jest używana przez aplikację. **Czujki** okna, **QuickWatch** okno dialogowe **automatycznych** okno i **zmiennych lokalnych** okna Pokaż zawartość zmiennych, które są przechowywane w określonych lokalizacjach w pamięci. Ale **pamięci** okno zawiera obraz na dużą skalę. Ten widok może być wygodną metodą badanie dużej części danych (buforów lub dużych ciągów, na przykład), które nie są wyświetlane poprawnie w innych oknach. Jednak **pamięci** okno nie jest ograniczona do wyświetlania danych. Wyświetla wszystkie elementy w obszarze pamięci, czy zawartość jest danych, kodu lub losowych bity pamięci w pamięci nieprzypisane.  

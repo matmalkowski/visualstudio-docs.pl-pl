@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 256a609dad857097731e4914a11623fe62ad7664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Wskazówki: Tworzenie usługi języka starsza wersja
 Używanie klas języka framework (MPF) zarządzanego pakietu do wdrożenia usługi języka [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] jest prosta. Należy pakiet VSPackage do obsługi usługi języka, samej usługi języka i analizatora dla danego języka.  

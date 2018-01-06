@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051043583b4be3ce795fab544156c7a1f94d88c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-projects"></a>Rozszerzanie projektów
 Projekty i rozwiązania są sposoby Visual Studio organizuje pliki kodu i zasobów w jednostki kompilacji i wdrożenia. Można znaleźć więcej informacji na temat projektów w [projektów (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -41,16 +42,16 @@ Projekty i rozwiązania są sposoby Visual Studio organizuje pliki kodu i zasob�
  [Weryfikowanie podtypów projektu w czasie wykonywania](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Wyjaśniono, jak sprawdzić podtypu projektu w czasie wykonywania.  
   
- [Dodawanie i usuwanie strony właściwości](../extensibility/adding-and-removing-property-pages.md)  
+ [Dodawanie i usuwanie stron właściwości](../extensibility/adding-and-removing-property-pages.md)  
  Opis sposobu dostosowywania strony właściwości niestandardowe projektu.  
   
- [Dodanie atrybutu do elementu projektu](../extensibility/adding-an-attribute-to-a-project-item.md)  
+ [Dodawanie atrybutu do elementu projektu](../extensibility/adding-an-attribute-to-a-project-item.md)  
  Wyjaśniono, jak dodać atrybut do elementu projektu niestandardowych.  
   
  [Utrwalanie właściwości elementu projektu](../extensibility/persisting-the-property-of-a-project-item.md)  
  Wyjaśniono, jak można utrwalić właściwości elementu projektu niestandardowych.  
   
- [Zarządzanie projektami uniwersalnych systemu Windows](../extensibility/managing-universal-windows-projects.md)  
+ [Zarządzanie uniwersalnymi projektami systemu Windows](../extensibility/managing-universal-windows-projects.md)  
  Wyjaśnia sposób zarządzania uniwersalne projekty.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne

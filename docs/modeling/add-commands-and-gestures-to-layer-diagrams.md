@@ -14,11 +14,12 @@ caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na wykresach zależności w Visual Studio. Rozszerzenia te można spakować do programu Visual Studio integracji rozszerzenia (VSIX) dystrybuowanej do innych użytkowników programu Visual Studio.  
@@ -86,7 +87,7 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
 4.  Wróć do polecenia lub gestu projektu programu obsługi i dodaj następujące odwołania do projektu.  
   
-|**Odwołanie**|**Co to umożliwia**|  
+|**Dokumentacja**|**Co to umożliwia**|  
 |-------------------|------------------------------------|  
 |Program Visual Studio Files\Microsoft [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Tworzenie i edytowanie warstwy|  
 |Microsoft.VisualStudio.Uml.Interfaces|Tworzenie i edytowanie warstwy|  
@@ -264,4 +265,4 @@ namespace MyLayerExtensions // change to your preference
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modeli warstw w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md)   
- [Dodawanie niestandardowej weryfikacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
+ [Dodawanie niestandardowej walidacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   

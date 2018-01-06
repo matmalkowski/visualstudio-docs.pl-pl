@@ -17,16 +17,17 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Obszar testu 3: Zapoznaj się z / cofnąć wyewidencjonowania
 Ten obszar testu wtyczkę kontroli źródła obejmuje edycji i cofanie elementy z magazynu wersji za pomocą **Wyewidencjonuj** i **Cofnij wyewidencjonowanie** poleceń.  
   
- **Wyewidencjonuj**: znaczniki elementu w magazynie wersji jako wyewidencjonowane, należy kopii lokalnej do odczytu/zapisu modyfikuje..  
+ **Wyewidencjonuj**: znaczniki elementu w magazynie wersji jako wyewidencjonowane, należy kopii lokalnej do odczytu/zapisu modyfikuje.  
   
  **Cofnij wyewidencjonowanie**: oznacza element w magazynie wersji jako zaewidencjonowany, umożliwia przywrócenie kopii lokalnej do stanu przed wyewidencjonowanie (w zależności od opcji).  
   
@@ -137,4 +138,4 @@ Ten obszar testu wtyczkę kontroli źródła obejmuje edycji i cofanie elementy 
 |Cofnij wyewidencjonowanie projektu po usunięciu plików z projektu|1.  Utwórz nowy projekt, a następnie dodaj go do kontroli źródła.<br />2.  Zapoznaj się z projektu.<br />3.  Usuń plik z projektu.<br />4.  Cofnij wyewidencjonowanie projektu.|Usunięto plik pojawia się w projekcie w Eksploratorze rozwiązań.<br /><br /> Projekt został już wyewidencjonowany.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

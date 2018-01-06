@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9762bf8905ad162bd6059fae9ed1b7be06ca7919
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5fe8fe1706e6310c077399bb9300d439a7664d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Porady: tworzenie lub usuwanie zależności projektu
 Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być konieczne, aby najpierw utworzyć niektórych projektów, aby wygenerować kod używany przez inne projekty. Gdy projekt korzysta z pliku wykonywalnego kod wygenerowany przez inny projekt, projekt, który generuje kod jest określany jako zależności projektu z projektu, który wykorzystuje kod. Takie relacji zależności można zdefiniować w **zależności projektu** okno dialogowe.  
@@ -65,5 +66,5 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)   
  [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)   
- [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
+ [Zarządzanie właściwościami projektu i rozwiązania](managing-project-and-solution-properties.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3006ddafa743a5cd55a687895e894f3cbb068a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16d3e15187d6164bf0b659a94ac81d26a8bf6a5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, które rozszerzają pakietu Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  [Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  Zawiera linki do informacji na temat sposobu rozwiązań pakietu Office, w tym informacje o poziomie dokumentu i dodatków VSTO.  
   
- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
  Zawiera informacje dotyczące sposobu tworzenia projektu pakietu Office i skonfiguruj projekt w programie Visual Studio.  
   
  [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
  [Rozwiązania programu Excel](../vsto/excel-solutions.md)  
  Zawiera informacje dotyczące sposobu automatyzacji programu Excel, tworzyć rozwiązania programu Excel i zrozumieć globalizacji kwestie związane z programu Excel.  
   
- [InfoPath — rozwiązania](../vsto/infopath-solutions.md)  
+ [Rozwiązania InfoPath](../vsto/infopath-solutions.md)  
  Zawiera informacje dotyczące sposobu tworzenia szablonów formularzy i dodatków narzędzi VSTO dla programu InfoPath.  
   
  [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)  

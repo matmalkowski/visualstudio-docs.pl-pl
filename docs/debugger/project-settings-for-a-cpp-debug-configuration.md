@@ -115,11 +115,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e32547d66d1bf4de73b209ac0174598da9bbb731
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania języka C++
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C lub Visual C++ w **strony właściwości** okno dialogowe, zgodnie z opisem w [porady: Ustaw debugowania i wydania konfiguracje](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono gdzie można znaleźć ustawień debugera w **strony właściwości** okno dialogowe.  
@@ -192,4 +193,4 @@ Debugowanie bibliotek DLL, które są zewnętrzne względem projektu, zobacz [pr
  [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Tworzenie i zarządzanie projektami Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)   
  [/ ASSEMBLYDEBUG (Dodaj DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)   
- [Typowe makra dla poleceń kompilacji oraz właściwości](/cpp/ide/common-macros-for-build-commands-and-properties)
+ [Typowe makra dla właściwości i poleceń kompilacji](/cpp/ide/common-macros-for-build-commands-and-properties)

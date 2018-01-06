@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b196adf16359c640ba08495b36f4ba428cf8ba48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opcje — Okno dialogowe [Visual Studio]
 **Opcje** okno dialogowe umożliwia skonfigurowanie zintegrowane środowisko programistyczne (IDE) do własnych potrzeb. Na przykład można założyć domyślną lokalizację zapisywania dla projektów, zmienić domyślny wygląd i zachowanie systemu windows i tworzenie skrótów do często używanych poleceń. Dostępne są także opcje specyficzne dla języka programowania i platform. Dostęp można uzyskać **opcje** z **narzędzia** menu.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/31/2017
  Zaznaczenie lub unselecting **Pokaż wszystkie ustawienia** stosuje wszystkie zmiany wprowadzone w **opcje** okno dialogowe, nawet wtedy, gdy nie ma jeszcze kliknięty **OK**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dopasowywanie edytora](../../ide/customizing-the-editor.md)
+ [Dostosowywanie edytora](../../ide/customizing-the-editor.md)

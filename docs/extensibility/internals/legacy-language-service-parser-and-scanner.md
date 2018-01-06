@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30453237dcd95607a4f3524f115d16bc1cf4859a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizatora usługi starszej wersji języka i skanera
 Analizator jest Puls usługi języka. Klasy języka zarządzane pakietu Framework (MPF) wymagają analizatora składni języka aby wybrać informacji na temat kodu będzie wyświetlany. Analizator oddziela tekst w tokenach leksykalne, a następnie identyfikuje tokeny te według typu i funkcjonalność.  
@@ -138,4 +139,4 @@ namespace MyNamespace
  [Wdrażanie usługi języka starsza wersja](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Omówienie usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-overview.md)   
  [Kolorowanie składni w starsza wersja usługi języka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
- [Parowanie nawiasów klamrowych w starsza wersja usługi języka](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
+ [Parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)

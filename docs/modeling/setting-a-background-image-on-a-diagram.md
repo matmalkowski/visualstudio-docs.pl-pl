@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 13e52e30ebeda4d881474bcf990068d1a92bb7f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: de0297909723a384dbff7d2eeeae2f5942deef71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania zestawu SDK, należy określić obrazu tła wygenerowanego projektanta przy użyciu kodu niestandardowego.  
@@ -107,6 +108,6 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i model
  [Definiowanie łączników i kształtów](../modeling/defining-shapes-and-connectors.md)   
  [Dostosowywanie pola obrazu i tekstu](../modeling/customizing-text-and-image-fields.md)   
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

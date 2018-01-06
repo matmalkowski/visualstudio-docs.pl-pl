@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5aaff542f654928a7ed56313232a6e6ead67f9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-report-views"></a>Filtrowanie widoków raportów
 Filtry można stosować do profilowania pliki danych, aby ograniczyć dane profilowania, który jest wyświetlany w widokach raport o wydajności i wyeksportowane pliki raportu. Można ograniczyć raportu do danych między wartości sygnatur czasowych, i umożliwia ograniczenie danych do określonych procesów i wątków. Można zapisać do pliku filtrów i utworzenie filtru na inny plik danych profilowania przez zaimportowanie zapisany filtr.  

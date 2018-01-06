@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6ca0159d522d7890452a54986093f4062803faf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2929e53dc3459c1699a0bc09cb235971ba02f90f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference, element (szablony Visual Studio)
 Określa, że szablon elementu używa odwołania do zestawu SDK.  
@@ -44,7 +45,7 @@ Określa, że szablon elementu używa odwołania do zestawu SDK.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do projektu.|  
+|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do projektu.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
  Wartość tekstowa jest wymagana.  

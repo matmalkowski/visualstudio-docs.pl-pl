@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 Możesz wygenerować ciągów tekstowych w aplikacji w czasie wykonywania za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonów tekstowych środowiska wykonawczego. Komputer, którym wykonuje aplikacji muszą mieć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Środowisko uruchomieniowe szablony czasami są nazywane "wstępnie przetworzony szablonów tekstowych", ponieważ w czasie kompilacji szablon generuje kod, który jest wykonywany w czasie wykonywania.  

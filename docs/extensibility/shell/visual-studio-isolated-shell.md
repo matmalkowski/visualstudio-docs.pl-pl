@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f4056e778e7d8f6aa62e84b03897c810160fa41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e80b947b2d4d20692e0abceae0ffa36e64f2b0df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio izolowane powłoki
 Powłoka programu Visual Studio izolowane służy do tworzenia aplikacji autonomicznych, które można uruchomić side-by-side z innymi wersjami programu Visual Studio. Jest używany głównie w celu hostowania specjalne narzędzia, które mogą używać usługi Visual Studio, ale również dostosowanego wyglądu i znakowania. Funkcje programu Visual Studio i grupami polecenia menu mogą być łatwo włączać i wyłączać. Tytuły aplikacji, ikony aplikacji i ekrany powitalny są można swobodnie dostosowywać. Listę można dostosowywać funkcji, zobacz [Dostosowywanie programu Isolated Shell](customizing-the-isolated-shell.md).  
@@ -65,4 +66,4 @@ Powłoka programu Visual Studio izolowane służy do tworzenia aplikacji autonom
 |Rozszerzalność|Wykorzystuje pakiety VSPackage i MEF składników|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Shell (izolowany lub zintegrowany)](shell-isolated-or-integrated.md)
+ [Shell (Isolated lub Integrated)](shell-isolated-or-integrated.md)

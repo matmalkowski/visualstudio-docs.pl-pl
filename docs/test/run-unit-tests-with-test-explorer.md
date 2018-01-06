@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 Użyj Eksploratora testów do uruchamiania testów jednostkowych programu Visual Studio lub projektów testów jednostkowych innych firm, grupowanie testów w kategorii, filtrowanie listy testów i tworzenia, zapisywania i uruchom listy odtwarzania testów. Można również Debuguj testy i Analizuj pokrycie testu wydajności i kod.  
@@ -180,7 +181,7 @@ Użyj Eksploratora testów do uruchamiania testów jednostkowych programu Visual
 |**Komunikat o błędzie**|Wyszukiwanie wiadomości zdefiniowane przez użytkownika błędu zwrócony przez nie powiodło się potwierdzeń do dopasowania.|  
 |**Ścieżka pliku**|Przeszukuje dopasowań w pełni kwalifikowanej nazwy pliku plików źródłowych testu.|  
 |**W pełni kwalifikowana nazwa**|Wyszukuje w pełni kwalifikowanej nazwy pliku testu przestrzeni nazw, klasy i metody do dopasowania.|  
-|**Dane wyjściowe**|Wyszukuje użytkownika komunikaty o błędach są zapisywane do wyjścia standardowego (stdout) lub błąd standardowy (stderr). Składnia służąca do określenia komunikaty wyjściowe są definiowane przez platformy testów jednostkowych.|  
+|**Output**|Wyszukuje użytkownika komunikaty o błędach są zapisywane do wyjścia standardowego (stdout) lub błąd standardowy (stderr). Składnia służąca do określenia komunikaty wyjściowe są definiowane przez platformy testów jednostkowych.|  
 |**Wynik**|Wyszukuje nazwy kategorii Eksploratora testów dopasowań: **testy nie powiodło się**, **pominięte testy**, **przekazany testy**.|  
   
  Aby wykluczyć podzbiór wyników filtru, należy użyć następującej składni:  

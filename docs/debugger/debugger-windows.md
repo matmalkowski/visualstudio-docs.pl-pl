@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Więcej informacji na temat okna debugera programu Visual Studio
 Podczas debugowania programu, można otworzyć większości oknach debugera. Aby zobaczyć listę okien debugera, ustaw punkt przerwania i Rozpocznij debugowanie. Po trafieniu punktu przerwania i wykonywanie zatrzymuje kliknij **Debuguj > Windows**.  
@@ -26,7 +27,7 @@ Podczas debugowania programu, można otworzyć większości oknach debugera. Aby
 |**Okno**|**Klawisze skrótu**|**Zobacz temat**|  
 |Punkty przerwania|CTRL + ALT + B|[Użyj punkty przerwania](../debugger/using-breakpoints.md)|  
 |Ustawienia wyjątków|CTRL + ALT + E|[Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md)|  
-|Dane wyjściowe|CTRL + ALT + O|[Okno danych wyjściowych](../ide/reference/output-window.md)|    
+|Dane wyjściowe|CTRL + ALT + O|[Okno Dane wyjściowe](../ide/reference/output-window.md)|    
 |Czujki|CTRL + ALT + W (1, 2, 3, 4)|[Oglądanie i QuickWatch systemu Windows](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|SHIFT + F9|[Oglądanie i QuickWatch systemu Windows](../debugger/watch-and-quickwatch-windows.md)|  
 |Automatycznych|CTRL + ALT + V, A|[Automatyczne i ustawień regionalnych systemu Windows](../debugger/autos-and-locals-windows.md)|  

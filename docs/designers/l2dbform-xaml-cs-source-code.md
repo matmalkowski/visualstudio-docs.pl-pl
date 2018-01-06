@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f34917cf5138201b1668e2800bc4ae1fd8e73a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e477801883abde205a1667b444575c0f831b930f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.XAML.CS
 Ten temat zawiera zawartość i opis kodu źródłowego C# w pliku L2DBForm.xaml.cs. Klasy częściowe L2XDBForm zawarte w tym pliku mogą być podzielone trzy części logiczne: elementy członkowskie danych i `OnRemove` i `OnAddBook` przycisk kliknięcie uchwytów zdarzeń.  
@@ -139,4 +140,4 @@ namespace LinqToXmlDataBinding {
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Przykład LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Kod źródłowy L2DBForm.XAML](../designers/l2dbform-xaml-source-code.md)
+ [Kod źródłowy L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)

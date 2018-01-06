@@ -12,11 +12,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc30e3236f81f558f3794bb459f6da3edbdaa63d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 065d5b16e99ce7c1356f710ab2a6cc42bbd6cde4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Wskazówki: Tworzenie zestawu SDK, w języku C++
 W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne biblioteki zestawu SDK, pakiet SDK jako Visual rozszerzenia Studio (VSIX), a następnie użyć jej do utworzenia aplikacji. Instruktaż jest podzielona na następujące kroki:  
@@ -182,4 +183,4 @@ W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne bibliot
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Tworzenie SDK przy użyciu języka C# lub Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
- [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md)
+ [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

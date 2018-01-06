@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cb2bf52c038b0abbac742aafa942f2f7ea7ea1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ecbff62570067b25aae9ad525138687eb281c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-handling"></a>Obsługa poleceń
 Edytor można zdefiniować nowe polecenia. Polecenia są zwykle wyświetlane w menu na pasku narzędzi lub w menu kontekstowym.  
@@ -50,4 +51,4 @@ Edytor można zdefiniować nowe polecenia. Polecenia są zwykle wyświetlane w m
  Można również użyć wstępnie zdefiniowanych poleceń, które nie muszą być zdefiniowane w pliku vsct. Na przykład, jeśli w pliku EditorPane.cs generowane przez szablon pakietu Visual Studio stwierdzisz, że zestaw wstępnie zdefiniowanych poleceń, takich jak <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> zdefiniowane przez <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, są obsługiwane w programy obsługi poleceń, takich jak metoda onSelectAll.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

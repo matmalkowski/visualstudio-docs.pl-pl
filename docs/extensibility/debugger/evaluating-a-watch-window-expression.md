@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03a74bf73f457009a6f17f8e7bdda8e4e7b9e35f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Obliczenie wyrażenia okno czujki
 > [!IMPORTANT]
@@ -51,10 +52,10 @@ ms.lasthandoff: 10/31/2017
 >  Nie jest niezbędna dla EE odpowiadać ten dwuetapowy proces, mimo że program Visual Studio zakłada EE można przeanalizować i oceny w tym samym kroku podczas [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) nosi nazwę (jest to przykład MyCEE działania, na przykład). Język utworzenia złożonych wyrażeń, można oddzielić krok analizy z kroku oceny. Umożliwia to zwiększenie wydajności w debugerze programu Visual Studio, gdy wiele Obejrzyj wyrażenia są pokazywane.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przykładowe zastosowanie Szacowanie wyrażeń](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
+ [Przykład implementacji oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
  Używa próbki MyCEE do kroków procesu Obliczanie wyrażenia.  
   
- [Obliczenie wyrażenia czujki](../../extensibility/debugger/evaluating-a-watch-expression.md)  
+ [Ocenianie wyrażenia kontrolnego](../../extensibility/debugger/evaluating-a-watch-expression.md)  
  W tym artykule wyjaśniono, co się dzieje po analizy wyrażenia powiodło się.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

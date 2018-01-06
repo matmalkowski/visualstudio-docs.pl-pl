@@ -19,11 +19,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3b7cfb842a0372d4410a0794ff8ade901af713b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6efeccfdaa6b3377869fb20f9c66613960529daf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Porady: zapełnianie arkuszy danymi z bazy danych
   Można uzyskać dostępu do danych w projektach pakietu Office poziomie dokumentu w taki sam sposób, że uzyskujesz dostęp do danych w projektach formularzy systemu Windows. Użyj tego samego narzędzia i kodu można wyświetlić dane w ramach rozwiązania i formanty formularzy systemu Windows nawet służy do wyświetlania danych. Ponadto można korzystać formantów o nazwie formanty hosta, które są obiektów macierzystych w programie Microsoft Office Excel, które zostały rozszerzone za pomocą zdarzeń i możliwości wiązania danych. Aby uzyskać więcej informacji, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  

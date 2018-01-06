@@ -25,11 +25,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: efcd5ec4da94e1e3441ffbecafeeb54e1f896bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89dde8238cd2badb4ea9841263d822b5729d00cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automating-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Word w Visual Studio, można użyć *hosta elementów* i *kontrolki hosta*s w ramach rozwiązań. Są to obiekty, które rozszerzają niektórych obiektów często używane w modelu obiektów programu Word (to znaczy obiektu modelu udostępnianym przez podstawowy zestaw międzyoperacyjny dla programu Word), takie jak <xref:Microsoft.Office.Interop.Word.Document> i <xref:Microsoft.Office.Interop.Word.ContentControl> obiektów. Obiekty rozszerzone przypominają obiektów programu Word, które są oparte na, ale Dodaj dodatkowe zdarzenia oraz funkcje powiązania danych do obiektów.  
@@ -50,13 +51,13 @@ ms.lasthandoff: 10/31/2017
   
  Aby uzyskać więcej informacji o formantach hosta można użyć w projekty programu Word, zobacz następujące tematy:  
   
--   [Formanty zawartości](../vsto/content-controls.md)  
+-   [Kontrolki zawartości](../vsto/content-controls.md)  
   
--   [BOOKMARK, formant:](../vsto/bookmark-control.md)  
+-   [Bookmark, kontrolka](../vsto/bookmark-control.md)  
   
--   [Formant XMLNode](../vsto/xmlnode-control.md)  
+-   [XMLNode, kontrolka](../vsto/xmlnode-control.md)  
   
--   [Formant XMLNodes](../vsto/xmlnodes-control.md)  
+-   [XMLNodes, kontrolka](../vsto/xmlnodes-control.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: dodawanie formantów zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)   

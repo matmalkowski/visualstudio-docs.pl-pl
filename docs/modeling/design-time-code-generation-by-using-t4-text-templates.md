@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 97cf47eafc99abefeebce0f69ac2840617fb35e2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9f510759d878792a31913fef8596ae6829cf74f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych plików w sieci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Zazwyczaj pisania szablonów, aby różnią kodu, które generują one zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje na temat wymagań aplikacji.  
@@ -368,10 +369,10 @@ Warning("A warning message");
 |Następny krok|Temat|  
 |---------------|-----------|  
 |Zapisz i debugowanie szablonu tekstowego bardziej zaawansowanych, z kodem, który używa funkcji pomocniczych, dołączonych plików i danych zewnętrznych.|[Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)|  
-|Generowanie dokumentów na podstawie szablonów w czasie wykonywania.|[Generowanie tekstu czasu wykonywania z szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
+|Generowanie dokumentów na podstawie szablonów w czasie wykonywania.|[Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
 |Uruchom generowania tekstu poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Przekształć dane w postaci języka specyficznego dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Zapis procesory dyrektywy do przekształcania źródeł danych.|[Dopasowanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md)|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki dotyczące pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md)
+ [Zalecenia dotyczące pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md)

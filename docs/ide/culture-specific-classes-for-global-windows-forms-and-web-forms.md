@@ -29,11 +29,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1864d3bd07906d5bd7413689c912e0a3c7ede036
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d3dbe578ac9f902314e7270ecb8a7d799fcc47a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Klasy specyficzne dla kultury dla globalnych formularzy systemu Windows i formularzy sieci Web
 Każdy kulturę różnych Konwencji do wyświetlania dat, czasu, cyfry, waluty i inne informacje. <xref:System.Globalization> Przestrzeń nazw zawiera klasy, które mogą służyć do modyfikowania wartości jak specyficzne dla kultury są wyświetlane, takich jak <xref:System.Globalization.DateTimeFormatInfo>, **kalendarza**, i <xref:System.Globalization.NumberFormatInfo>.  
@@ -77,4 +78,4 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
  <xref:System.Globalization.Calendar>   
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>   
  <xref:System.String.Format%2A?displayProperty=fullName>   
- [Globalizacja i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md)
+ [Globalizowanie i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

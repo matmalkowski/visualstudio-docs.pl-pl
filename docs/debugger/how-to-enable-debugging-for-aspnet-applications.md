@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debugowanie aplikacji ASP.NET w programie Visual Studio
 
@@ -124,7 +125,7 @@ Do debugowania na serwerze sieci web lokalny, ustaw właściwości projektu. Do 
 
 2. Jeśli wybierzesz serwer zewnętrzny (niestandardowy), wprowadź prawidłowy adres URL w **adres URL projektu** (lub **podstawowego adresu URL**) pola.
 
-    Serwer zewnętrzny w przypadku lokalnego usług IIS, usługi IIS musi być zainstalowana i poprawnie skonfigurowany. Na przykład należy skonfigurować odpowiedniej wersji programu ASP.NET w usługach IIS. Aby uzyskać więcej informacji, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Jeśli chcesz przetestować wdrożenie, a także debugowania, zobacz [wdrażanie do testowania](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Serwer zewnętrzny w przypadku lokalnego usług IIS, usługi IIS musi być zainstalowana i poprawnie skonfigurowany. Na przykład należy skonfigurować odpowiedniej wersji programu ASP.NET w usługach IIS. Aby uzyskać więcej informacji, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Jeśli chcesz przetestować wdrożenie, a także debugowania, zobacz [wdrażanie do testowania](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Jeśli serwer zewnętrzny [zdalnego](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), możesz dołączyć do procesu zamiast i te ustawienia projektu nie są używane do debugowania.
 
@@ -134,7 +135,7 @@ Dla usług IIS Express, nie musisz skonfigurować serwer sieci web (Pomiń tę s
 
 Jeśli korzystasz z lokalnego serwera sieci web usług IIS, wykonaj następujące kroki.
 
-1. Upewnij się, że prawidłowo zainstalowano usług IIS. Aby uzyskać więcej informacji, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Upewnij się, że prawidłowo zainstalowano usług IIS. Aby uzyskać więcej informacji, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Upewnij się, zainstaluj poprawną wersję platformy ASP.NET na serwerze. Instalator platformy sieci Web (WebPI) należy zainstalować funkcję ASP.NET 4.5 (z węzła serwera w systemie Windows Server 2012 R2, wybierz **pobrać nowych składników platformy sieci Web** , a następnie wyszukaj ASP.NET). Aby zainstalować program ASP.NET Core, zobacz [publikowania w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -230,5 +231,5 @@ Na przykład można określić `debug="true"` www.microsoft.com/aaa/Web.config i
 [Debugowanie wdrożonych aplikacji sieci Web](debugging-deployed-web-applications.md)   
 [Wskazówki: Debugowanie formularzy sieci Web](walkthrough-debugging-a-web-form.md)   
 [Porady: debugowanie wyjątków ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Debugowanie aplikacji sieci Web: błędy i rozwiązywanie problemów](debugging-web-applications-errors-and-troubleshooting.md)
+[Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](debugging-web-applications-errors-and-troubleshooting.md)
   

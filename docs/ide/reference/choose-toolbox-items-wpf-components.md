@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę dostępnych opcji Windows Presentation Foundation (WPF) na komputerze lokalnym. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu, aby wyświetlić **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **WPF Składniki** kartę. Aby posortować wymienione składniki, wybierz nagłówek dowolnej kolumny.  
@@ -74,5 +75,5 @@ Ponadto, jeśli metadane w czasie projektowania jest stosowana do formantu niest
 Formanty bezpośrednio w widoku XAML można odwoływać się przez mapowanie przestrzeni nazw i zestawu dla formantu.  
 
 ## <a name="see-also"></a>Zobacz także  
-[Przybornika](../../ide/reference/toolbox.md)  
-[Pierwsze kroki z użyciem WPF](../../designers/getting-started-with-wpf.md)
+[Przybornik](../../ide/reference/toolbox.md)  
+[Wprowadzenie do korzystania z platformy WPF](../../designers/getting-started-with-wpf.md)

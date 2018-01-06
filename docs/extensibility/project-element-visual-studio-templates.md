@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4a60bdd81d2e6428d0fdafa6547227a496f862
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-element-visual-studio-templates"></a>Project — Element (szablony Visual Studio)
 Określa plików lub katalogów do dodania do projektu.  
@@ -106,4 +107,4 @@ Określa plików lub katalogów do dodania do projektu.
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Projectitem — Element (szablony projektu Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
- [Folder — Element (szablony projektu Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)
+ [Folder, element (szablony projektów Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)

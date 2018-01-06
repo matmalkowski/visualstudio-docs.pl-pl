@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f862319d29502f1e3e242990072fbe0d2410fab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Porady: konfigurowanie projektów do wielu platform docelowych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]umożliwia rozwiązanie docelowy kilku różnych architektury Procesora lub platformy, na raz. Aby ustawić te właściwości są dostępne za pośrednictwem **programu Configuration Manager** okno dialogowe.  
@@ -66,4 +67,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Porady: tworzenie i edycja konfiguracji](../ide/how-to-create-and-edit-configurations.md)   
  [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)   
- [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+ [Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

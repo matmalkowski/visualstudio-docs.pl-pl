@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.openlocfilehash: acef07cd95395312d1456401bd58142264d89794
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 Style wizualne umożliwić wyświetlanie formantów standardowych można zmieniać w oparciu o motywu wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), dlatego należy je włączyć ręcznie. Włączanie style wizualne dla aplikacji WPF i opublikować rozwiązania spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu i proces publikowania aplikacji WPF przy włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat stylów wizualnych, zobacz [omówienie Visual Style](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji o komunikat o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -166,4 +167,4 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
  [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
  [Omówienie style wizualne](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
  [Włączanie style wizualne](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Wiersz polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs)
+ [Wiersze polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs)

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05e10305f7e4c243f799cfe33d4d9b86418eed86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7a025cdfc14eb39dad7ea2bc72a69f1f260fb583
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-linked-undo-management"></a>Porady: za pomocą przystawki Zarządzanie połączonego cofania
 Połączonego cofania umożliwia użytkownikowi cofnąć równocześnie w tej samej zmiany w wielu plikach. Na przykład jednoczesnych tekst zostanie zmieniony na wiele plików programów, takich jak plik nagłówka i plik Visual C++ jest transakcją połączonego cofania. Możliwość połączonego cofania jest wbudowana w implementacji środowiska menedżera cofania i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> umożliwia manipulowanie tej możliwości. Połączonego cofania jest implementowany przez modułu cofnięcia nadrzędnego, który można połączyć stosy oddzielne cofania razem powinien być traktowany jako jednostki cofania pojedynczego. Procedury dotyczące korzystania z połączonego cofania została szczegółowo opisana w następnej sekcji.  

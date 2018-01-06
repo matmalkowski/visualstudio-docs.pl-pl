@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 160aa732568f92b7aa768146de13c41867064717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Ustaw czujki w zmiennych w równoległych wątków w programie Visual Studio
 Okno czujki równoległej może jednocześnie wyświetlać wartości, które posiada jedno wyrażenie w wielu wątkach. Każdy wiersz reprezentuje wątku, który działa w aplikacji, ale może być reprezentowany przez wątek w wielu wierszach. W szczególności każdy wiersz reprezentuje wywołanie funkcji, w której funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienianie kolejności, usuwanie i grupować elementy, które są w kolumnach. Można Flaga, Usuń flagę ze, Zablokuj (Wstrzymaj) i odblokowania wątków (Wznów). Następujące kolumny są wyświetlane w **czujki równoległej** okno:  
@@ -88,4 +89,4 @@ Okno czujki równoległej może jednocześnie wyświetlać wartości, które pos
 ## <a name="see-also"></a>Zobacz też  
  [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Wskazówki: Debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

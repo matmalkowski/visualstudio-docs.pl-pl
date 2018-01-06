@@ -29,11 +29,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7dd65878844e5c903b18c08e6dd5455f3dccb91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c9a3e0abdf478d6280795cd17b9b9a0bea0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Łączenie VBA i dostosowywanie na poziomie dokumentu
   Można użyć języka Visual Basic dla kodu aplikacji (VBA) w dokumencie, który jest częścią dostosowanie poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. Kod VBA w dokumencie można wywołać z zestawu dostosowania, lub z projektem, aby włączyć kod VBA w dokumencie, aby wywoływać kod w zestawie dostosowania można skonfigurować.  
@@ -260,6 +261,6 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Wskazówki: Wywoływanie kodu z VBA w Visual C & 35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [VBA i rozwiązania pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
- [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
+ [Programowanie dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)  
   
   

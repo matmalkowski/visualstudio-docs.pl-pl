@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b2933f82c4088735f4203d947bad66c71aeb3e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b729c71836e0a57f18c05cf6435581419bdbb92e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buttons-element"></a>Element przycisków
 Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezentują poszczególnych poleceń.  
@@ -46,14 +47,14 @@ Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezen
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element przycisków](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
-|[Button Element](../extensibility/button-element.md)|Określa polecenie, które użytkownik może interakcyjnie przeprowadzić.|  
+|[Buttons, element](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
+|[Button, element](../extensibility/button-element.md)|Określa polecenie, które użytkownik może interakcyjnie przeprowadzić.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element poleceń](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -71,4 +72,4 @@ Grupy [przycisk](../extensibility/button-element.md) elementów, które reprezen
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

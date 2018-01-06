@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 764b6ff8b19711cb05f34c9bf652956057318346
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff198f5c4b574bf3a27ae1ee8fb6ffdd482c7f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extern-element"></a>Extern — Element
 Zewnętrzny element odwołuje się do żadnych plików zewnętrznych nagłówków (.h) do scalenia pliku vsct w czasie kompilacji. Pliki do scalenia muszą znajdować się na ścieżce dołączanych podane do kompilatora VSCT lub odwołuje się [obejmują elementu](../extensibility/include-element.md). Pliki mogą być inne vsct lub pliki nagłówkowe C++.  
@@ -57,7 +58,7 @@ Extern — Element
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Wszystkie elementy, które reprezentują polecenia definiuje — to znaczy elementy menu, menu Paski narzędzi i pola kombi — udostępniająca pakiet VSPackage IDE.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Wszystkie elementy, które reprezentują polecenia definiuje — to znaczy elementy menu, menu Paski narzędzi i pola kombi — udostępniająca pakiet VSPackage IDE.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -74,4 +75,4 @@ Extern — Element
 ## <a name="see-also"></a>Zobacz też  
  [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

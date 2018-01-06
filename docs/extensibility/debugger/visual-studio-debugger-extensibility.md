@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9a14f95fbed47670b3c5b5db19e4e0e6b8ba074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5b5943dc8087a22e1bdfb94ae6d0d10335c174a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozszerzalność debugera programu Visual Studio
 Visual Studio zawiera debugera kodu źródłowego całkowicie interakcyjny, udostępnieniem wydajny i łatwy w użyciu narzędzia śledzeniu usterki w programie. Debuger ma pełnej obsługi języka Visual Basic, C#, C/C++ i JavaScript. Jednak w przypadku [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], która jest dostępna z [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), innych języków programowania, może być obsługiwany w debugerze przy użyciu tej samej funkcji zaawansowanych.  
@@ -36,16 +37,16 @@ Visual Studio zawiera debugera kodu źródłowego całkowicie interakcyjny, udos
  [Wprowadzenie](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
  Opisano, co [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania ofert oraz instrukcje dotyczące instalowania zestawu SDK.  
   
- [Tworzenie aparat debugowania niestandardowych](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Dokumenty niestandardowy proces DE, od przygotowania programu do DE do odłączenia DE.  
   
  [Zapisywanie Ewaluator wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
  Wyjaśnia, czy należy napisać ewaluatora wyrażeń.  
   
- [Wybieranie strategii wdrażania aparat debugowania](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
+ [Wybieranie strategii implementacji aparatu debugowania](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
  W tym artykule omówiono implementowania Twojej DE.  
   
- [Odwołanie](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
+ [Dokumentacja](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  Dokumenty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowanie interfejsu API.  
   
  [Przykłady](../../extensibility/debugger/visual-studio-debugging-samples.md)  

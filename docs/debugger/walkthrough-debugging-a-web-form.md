@@ -26,11 +26,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 344ba292f16098c969d287a88a5d441acc950de1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 842b52d063b5de701c74501410e3249da7358776
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
 Kroki opisane w tym przewodniku opisano, jak debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sieci Web aplikacji, znanej także jako formularza sieci Web. Przedstawiono sposób uruchamiania i zatrzymuje wykonywanie, ustaw punkty przerwania i Sprawdź zmienne w **czujki** okna.  

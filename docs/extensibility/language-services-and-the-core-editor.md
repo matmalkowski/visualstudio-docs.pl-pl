@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1528bc685577082df997535a680c372620821de0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3d2bcad21bb919125b487a57b73d3a458a3a1f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-services-and-the-core-editor"></a>Usługi językowe i Edytor Core
 Edytory w programie Visual Studio są często powiązane z usługi języka. Między innymi usługi języka zapewnia kolorowanie składni, uzupełniania IntelliSense i formatowania tekstu.  
@@ -46,4 +47,4 @@ Obiekty usługi Core edytora i język
  [Udostępnia kontekst usługi języka przy użyciu interfejsu API starsza wersja](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
  [IntelliSense Hosting](../extensibility/intellisense-hosting.md)   
  [Języki zawarte](../extensibility/contained-languages.md)   
- [Tworzenie usługi języka starsza wersja](../extensibility/internals/developing-a-legacy-language-service.md)
+ [Tworzenie starszej wersji usługi językowej](../extensibility/internals/developing-a-legacy-language-service.md)

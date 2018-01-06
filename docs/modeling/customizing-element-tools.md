@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2555fe2be42ed58482cdacf174a6cb035a8d7bd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2571fd137875a0971b7a9e4364849a3105ca220a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-tools"></a>Narzędzia dostosowywania elementów
 W niektórych definicjach DSL jednej koncepcji reprezentowały grupę elementów. Na przykład w przypadku utworzenia modelu, w którym składnik ma ustalony zbiór portów, zawsze ma portów należy utworzyć w tym samym czasie jako składnik ich nadrzędnego. W związku z tym należy dostosować narzędzie do tworzenia elementu tak, aby tworzy grupę elementów, a nie tylko jednego. Aby to osiągnąć, można dostosować, jak narzędzie do tworzenia elementu został zainicjowany.  
@@ -62,4 +63,4 @@ public partial class CircuitDiagramToolboxHelper
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowywanie Element tworzenia i przepływu](../modeling/customizing-element-creation-and-movement.md)
+ [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generowanie kodu i szablony tekstowe T4
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *szablonu tekstowego T4* jest mieszaniną bloki tekstu i logiki kontroli, które można wygenerować pliku tekstowego. Logika kontroli są zapisywane jako fragmenty kodu programu w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. W programie Visual Studio 2015 Update 2 lub nowszy można użyć funkcji w wersji 6.0 C# w dyrektywach szablony T4. Wygenerowany plik może być tekst dowolnego rodzaju, takich jak strony sieci Web lub plik zasobu lub kodu źródłowego program w dowolnym języku.  
@@ -97,7 +98,7 @@ namespace Fabrikam.FirstJob
  Nosi nazwę funkcji transformacji szablonu tekstowego *T4*.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Generowanie tekstu czasu wykonywania z szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+ [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
  W dowolnej aplikacji, które generuje pliki tekstowe szablony tekstowe prekompilowany jest łatwy i niezawodny metodą Definiowanie tekstu. Jednak ta metoda nie może służyć do szablonów tekstowych, które zmieniają się w czasie wykonywania.  
   
  [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
@@ -109,7 +110,7 @@ namespace Fabrikam.FirstJob
  [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)  
  Składnia pliku szablonu tekstowego.  
   
- [Wskazówki: Generowanie kodu przy użyciu szablonów tekstowych](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Pokaz sposób użycia generowania kodu.  
   
  [Debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md)  

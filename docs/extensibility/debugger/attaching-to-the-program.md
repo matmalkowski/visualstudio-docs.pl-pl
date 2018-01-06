@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd4baed877bd5d0262e966edf006dea80596b47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75b532005bf4aeb471aa16ecfc6ac8ff508e3c7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-to-the-program"></a>Dołączanie do programu
 Po zarejestrowaniu programy z odpowiedni port należy dołączyć debuger do programu, który chcesz debugować.  
@@ -71,4 +72,4 @@ Po zarejestrowaniu programy z odpowiedni port należy dołączyć debuger do pro
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
  [Dołącz](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
- [Dołącz](../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)

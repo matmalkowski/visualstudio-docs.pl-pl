@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa1513bcd61ac63fb9d2a59f69a8b2ce22cf5114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-menus-and-toolbars"></a>Polecenia, menu i pasków narzędzi
 Menu i pasków narzędzi są przez użytkowników dostępu do polecenia w pakiecie VSPackage. Polecenia są funkcje, których wykonywanie zadań, takich jak drukowanie dokumentu, odświeżenie widoku lub utworzenie nowego pliku. Menu i pasków narzędzi są graficznego wygodnie prezentować poleceniach użytkownikom. Zazwyczaj pokrewnych poleceń są zgrupowane razem z menu lub pasek narzędzi.  
@@ -38,30 +39,30 @@ Menu i pasków narzędzi są przez użytkowników dostępu do polecenia w pakiec
  Tematy w tej sekcji opisano, jak działają polecenia, menu i pasków narzędzi w VSPackages.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Szczegółowy opis specyfikacji formatu tabeli polecenia.  
   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
  Zawiera opis składni opartych na języku XML i kompilatora dla polecenia tabel.  
   
- [Polecenie domyślne grupy i położenie paska narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
+ [Domyślne położenie poleceń, grup i pasków narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
  W tym artykule opisano wstępnie zdefiniowanych poleceń, grupy menu i pasków narzędzi.  
   
- [Definicja IDE polecenia, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
+ [Polecenia, menu i grupy definiowane w środowisku IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
  Określa wstępnie zdefiniowanych menu, poleceń i dostępny do użytku przez grupy polecenia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Polecenie projektu](../../extensibility/internals/command-design.md)  
+ [Projektowanie poleceń](../../extensibility/internals/command-design.md)  
  Wyjaśniono, jak zaprojektować poleceń.  
   
- [Optymalizacja Menu i poleceń paska narzędzi](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
+ [Optymalizacja poleceń menu i paska narzędzi](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
  Zawiera wskazówki dotyczące poleceń.  
   
  [Udostępnianie poleceń](../../extensibility/internals/making-commands-available.md)  
  Wyjaśniono, jak udostępnić polecenia dla programu Visual Studio.  
   
- [Poleceń i menu, które używają zestawów międzyoperacyjnych](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
  Opisuje sposób nadawania poleceń, które używają zestawów międzyoperacyjnych.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Routing poleceń w VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
+ [Routing poleceń w pakietach VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
  W tym artykule wyjaśniono, routing poleceń w VSPackages.

@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2a731c504355cbd3869790720af1f67f6c6bf0eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elementu (programu inicjującego)
 `InstallChecks` Elementu obsługuje uruchamianie różnych testów w komputerze lokalnym, aby upewnić się, że wszystkie odpowiednie wymagania wstępne dla aplikacji zostały zainstalowane.  
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/27/2017
 |`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Ta właściwość może być przywoływany testu poniżej `InstallConditions` element, który jest elementem podrzędnym elementu `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<polecenia > elementu](../deployment/commands-element-bootstrapper.md).|  
 |`FileName`|Wymagany. Nazwa znajduje się w pliku.|  
 |`SearchPath`|Wymagany. Dysku lub folder, w którym można wyszukać plik. Musi to być ścieżką względną, jeśli `SpecialFolder` przypisano; w przeciwnym razie musi być ścieżką bezwzględną.|  
-|`SpecialFolder`|Opcjonalny. Folder, który ma specjalne znaczenie do systemu Windows lub do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Wartość domyślna to interpretować `SearchPath` jako ścieżkę bezwzględną. Prawidłowe wartości są następujące:<br /><br /> `AppDataFolder`. Folder dane aplikacji dla tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; specyficzne dla bieżącego użytkownika.<br /><br /> `CommonAppDataFolder`. Folder dane aplikacji, używane przez wszystkich użytkowników.<br /><br /> `CommonFilesFolder`. Folder plików wspólnych dla bieżącego użytkownika.<br /><br /> `LocalDataAppFolder`. Folder dane aplikacji z systemem innym niż roamingu.<br /><br /> `ProgramFilesFolder`. Standardowa folderu Program Files aplikacje 32-bitowe.<br /><br /> `StartUpFolder`. Folder, który zawiera wszystkie aplikacje uruchamiane podczas uruchamiania systemu.<br /><br /> `SystemFolder`. Folder zawierający system 32-bitowych bibliotek DLL.<br /><br /> `WindowsFolder`. Folder zawierający instalacji systemu Windows.<br /><br /> `WindowsVolume`. Dysk lub partycję, która zawiera instalacji systemu Windows.|  
+|`SpecialFolder`|Opcjonalny. Folder, który ma specjalne znaczenie do systemu Windows lub do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Wartość domyślna to interpretować `SearchPath` jako ścieżkę bezwzględną. Prawidłowe wartości są następujące:<br /><br /> `AppDataFolder`., Folder dane aplikacji dla tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; specyficzne dla bieżącego użytkownika.<br /><br /> `CommonAppDataFolder`., Folder dane aplikacji, używane przez wszystkich użytkowników.<br /><br /> `CommonFilesFolder`., Folder plików wspólnych dla bieżącego użytkownika.<br /><br /> `LocalDataAppFolder`., Folder dane aplikacji z systemem innym niż roamingu.<br /><br /> `ProgramFilesFolder`., Standardowa folderu Program Files aplikacje 32-bitowe.<br /><br /> `StartUpFolder`., Folder, który zawiera wszystkie aplikacje uruchamiane podczas uruchamiania systemu.<br /><br /> `SystemFolder`., Folder zawierający system 32-bitowych bibliotek DLL.<br /><br /> `WindowsFolder`., Folder zawierający instalacji systemu Windows.<br /><br /> `WindowsVolume`., Dysk lub partycję, która zawiera instalacji systemu Windows.|  
 |`SearchDepth`|Opcjonalny. Głębokość w do wyszukania podfoldery dla wskazanego pliku. Wyszukiwanie jest pierwszy głębokość. Wartość domyślna to 0, co ogranicza wyszukiwanie do folderu najwyższego poziomu, określony przez `SpecialFolder` i **SearchPath**.|  
   
 ## <a name="msiproductcheck"></a>MsiProductCheck  
@@ -183,4 +184,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [\<Polecenia > — Element](../deployment/commands-element-bootstrapper.md)   
- [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)
+ [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)

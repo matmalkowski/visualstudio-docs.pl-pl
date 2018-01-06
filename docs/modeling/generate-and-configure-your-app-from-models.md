@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 Można wygenerować lub skonfigurować części aplikacji z modelu.
@@ -40,7 +41,7 @@ Można wygenerować lub skonfigurować części aplikacji z modelu.
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurowanie aplikacji z modelu  
  Do zmiany zachowania aplikacji w czasie wykonywania, nie można użyć generowania kodu, który generuje kod źródłowy, aby aplikacja została skompilowana. Zamiast tego można zaprojektować aplikacji ma zostać odczytany model i odpowiednio różnicującej jego zachowania. Aby uzyskać więcej informacji, zobacz:  
   
--   [Porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+-   [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
  Ta metoda również będą stosowane przyrostowo, ale więcej pracy na początku. Należy napisać kod, który zostanie odczytany model i skonfiguruj struktury, która umożliwia jego wartości umożliwić dostęp do zmiennej części. Tworzenie ogólnych części zmiennej jest droższe niż generowanie kodu.  
   

@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78ccd24a262863a4d6f844d624ef9996d09d568f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e3dcc6d0ed711d41fd47f043177e5d172193249
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Porady: przewijanie rekordów bazy danych w arkuszu
   Poniższa procedura przedstawia sposób wyświetlania jednego pola z tabeli bazy danych w arkuszu programu Microsoft Office Excel z formantami, które umożliwiają użytkownikom końcowym przewijania wszystkich rekordów za pomocą projektanta.  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
 6.  Z **formularzy systemu Windows** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.BindingNavigator> kontroli do arkusza i konfigurowanie kontroli, którego chcesz użyć. Aby uzyskać więcej informacji, zobacz [informacje o formancie BindingNavigator &#40; Formularze systemu Windows &#41; ](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

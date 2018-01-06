@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>CPU i liczniki systemu Windows
 Profilera Visual Studio umożliwia zbieranie danych wydajności, który został wygenerowany przez jednostkę procesora (liczniki CPU) i dane wydajności, który został wygenerowany przez system operacyjny (liczniki systemu Windows).  
@@ -132,4 +133,4 @@ Profilera Visual Studio umożliwia zbieranie danych wydajności, który został 
  [Omówienie](../profiling/overviews-performance-tools.md)   
  [Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)   
  [Porady: zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)   
- [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)
+ [Instrukcje: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)

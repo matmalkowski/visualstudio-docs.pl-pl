@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identyfikatory GUID oraz identyfikatory pasków narzędzi Visual Studio
 W tym temacie wylicza wartości Identyfikator GUID i identyfikator pasków narzędzi, które znajdują się w programie Visual Studio zintegrowane środowisko programistyczne (IDE) i grupy mogą zawierać. Te wartości są definiowane w vsct pliki, które są instalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [IDE-Defined polecenia, menu oraz grup](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -140,4 +141,4 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator pasków narz�
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie kontrolera Menu do paska narzędzi](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [Dodawanie do okna narzędzi paska narzędzi](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Identyfikatory GUID oraz identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [Identyfikatory GUID i identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji SharePoint
   Jeśli aplikacji SharePoint działają wolno lub Niewydajne, może używać profilowania funkcji w programie Visual Studio, aby zidentyfikować problematyczne kodu i inne elementy. Za pomocą funkcji testowania obciążenia, można określić sposób wykonywania aplikacji SharePoint mocno obciążony, np. gdy wielu użytkowników dostępu do aplikacji jednocześnie. Uruchamianie testów wydajności sieci web, można zmierzyć, sposób wykonywania aplikacji w sieci web. Za pomocą kodowanych testów interfejsu użytkownika, można sprawdzić, czy całej aplikacji programu SharePoint, w tym interfejs użytkownika działa prawidłowo. Jeśli korzystasz ze sobą te testy, można pomagają zidentyfikować problemy z wydajnością, przed wdrożeniem aplikacji.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Wskazówki: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profil próbkowania w aplikacji programu SharePoint.|  
+|[Przewodnik: Profilowanie aplikacji SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Pokazuje, jak przeprowadzić analizę profil próbkowania w aplikacji programu SharePoint.|  
 |[Testowanie wydajności aplikacji z przed wprowadzeniem](https://www.visualstudio.com/docs/test/performance-testing/run-performance-tests-app-before-release)|Opisuje sposób tworzenia testów obciążenia, które ułatwiają testowania obciążenia aplikacji SharePoint.|  
 |[Testowanie jednostek kodu](/visualstudio/test/unit-test-your-code)|Opisuje sposób wyszukiwania logiki błędów w kodzie za pomocą testów jednostkowych.|  
 |[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Opisuje sposoby testowania interfejsu użytkownika aplikacji programu SharePoint.|  

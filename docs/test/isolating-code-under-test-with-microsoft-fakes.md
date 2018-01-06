@@ -12,11 +12,12 @@ dev.langs:
 ms.topic: article
 ms.author: douge
 manager: douge
-ms.openlocfilehash: f9064c1d7068cc8fe8f367001f7908f65f8a6bdf
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 35189a94ca0cd1bd9bd9b0aa91349fffd847c22b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 

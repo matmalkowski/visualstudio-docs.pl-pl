@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d5ce262803cb91bbf851836a082376c862f6e79
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>Porady: odblokować programu Visual Studio
 
@@ -68,9 +69,9 @@ Jeśli nie ponownie wprowadzić swoje poświadczenia, token zaczyna Przejdź sta
 
 ### <a name="update-expired-licenses"></a>Aktualizacja wygasłego licencji
 
- Jeśli subskrypcja utraciła ważność całkowicie i nie ma praw dostępu do programu Visual Studio, musisz odnowić subskrypcję lub dodać inne konto, które ma subsription. Aby uzyskać więcej informacji o licencji są używane, przejdź do **pliku**, **ustawienia konta** i przyjrzyj się informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innego konta, należy dodać to konto do **wszystkich kont** listy po lewej stronie okna dialogowego, wybierając **Dodaj konto...**  łącza.
+ Jeśli subskrypcja utraciła ważność całkowicie i nie ma praw dostępu do programu Visual Studio, możesz odnowić subskrypcję, lub dodać innego konta, które ma subskrypcję. Aby uzyskać więcej informacji o licencji są używane, przejdź do **pliku**, **ustawienia konta** i przyjrzyj się informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innego konta, należy dodać to konto do **wszystkich kont** listy po lewej stronie okna dialogowego, wybierając **Dodaj konto...**  łącza.
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)
-* [Porównanie opcji subskrypcji programu Visual Studio](/subscriptions/compare-subscriptions.md)  
+ 

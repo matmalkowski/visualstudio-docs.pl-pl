@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce546f36ed93f0f42bfd548c64f2a25669e162b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 44ae5ff7e9095d6c88d753342da30983b30b7364
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory poleceń programu Visual Studio
 Identyfikator GUID i identyfikator wartości polecenia uwzględnione w programie Visual Studio zintegrowane środowisko programistyczne (IDE) są definiowane w vsct pliki, które są instalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [IDE-Defined polecenia, menu oraz grup](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -66,4 +67,4 @@ Identyfikator GUID i identyfikator wartości polecenia uwzględnione w programie
 ## <a name="see-also"></a>Zobacz też  
  [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)
+ [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

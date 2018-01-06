@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy usługi starszej wersji języka
 Dla określonego języka programowania jednocześnie może istnieć tylko jedno wystąpienie usługi języka. Jednak usługa jeden język może obsługiwać więcej niż jeden z nich.  
@@ -55,4 +56,4 @@ Dla określonego języka programowania jednocześnie może istnieć tylko jedno 
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie usługi języka starsza wersja](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Lista kontrolna: Tworzenie starsza wersja usługi języka](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+ [Lista kontrolna: tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

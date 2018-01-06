@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7175bd4e2d0b07640dd45b38aa246c649def32ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a331c131eaf48eb7be8bc3709599412aa01b1ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektu za pomocą fabryk projektu
 Typy w projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyj *fabrykę projektów* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabrykę klas standardowe cocreatable obiektów COM. Obiekty projektu nie są jednak cocreatable: ich można tworzyć tylko za pomocą fabryki projektu.  
@@ -53,4 +54,4 @@ Typy w projektów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] u
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)

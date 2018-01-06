@@ -22,11 +22,12 @@ caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a08c56ae60822e6d4183e5789c68cbe383b4dd5
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Nowości w debugerze programu[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

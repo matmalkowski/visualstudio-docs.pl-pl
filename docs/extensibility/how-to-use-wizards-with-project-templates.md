@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Porady: korzystanie z kreatora z szablonami projektu
 Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu, implementując umożliwia uruchamianie kodu niestandardowego, gdy użytkownik tworzy projekt z szablonu.  
@@ -310,6 +311,8 @@ namespace $safeprojectname$
      Zwróć uwagę, że `$custommessage$` zostało zastąpione tekst wprowadzony w formularza danych wejściowych użytkownika kreatora.  
   
 ## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension, element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
+
+<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+[Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)  
+[WizardExtension, element (szablony Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)  
+[Pakiety NuGet w szablony programu Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

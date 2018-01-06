@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — Odwołanie do schematu
 Wstawki kodu IntelliSense są wstępnie utworzone fragmenty kodu, które są gotowe do wstawienia do aplikacji z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Umożliwiają one poprawę wydajności pracy, ponieważ zmniejszają ilość czasu spędzanego na wielokrotnym wpisywaniu tego samego kodu czy wyszukiwaniu przykładów. Służy do tworzenia własnych fragmentów kodu i dodaj je do wstawki kodu schematu XML fragmentu kodu IntelliSense który [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] już zawiera.  
@@ -648,4 +649,4 @@ Dostępne są trzy atrybuty dla elementu kodu:
   
 ## <a name="see-also"></a>Zobacz też  
  [Wstawki kodu](../ide/code-snippets.md)   
- [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)
+ [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)

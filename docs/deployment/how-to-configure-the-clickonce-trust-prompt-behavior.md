@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 24a229c7c96221c0b7f04a91d5f71fa566e71e81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Porady: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce
 Możesz określić wiersz zaufania ClickOnce do formantu, czy użytkownicy końcowi otrzymują możliwość instalowania aplikacji ClickOnce, takie jak aplikacje systemu Windows Presentation Foundation, aplikacje konsoli, przeglądarce WPF w aplikacji formularzy systemu Windows aplikacje i rozwiązań pakietu Office. Możesz skonfigurować wiersz zaufania poprzez ustawienie kluczy rejestru na komputerze użytkownika końcowego.  
@@ -235,4 +236,4 @@ Możesz określić wiersz zaufania ClickOnce do formantu, czy użytkownicy końc
  [Porady: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Porady: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

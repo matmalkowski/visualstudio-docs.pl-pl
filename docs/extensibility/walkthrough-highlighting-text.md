@@ -13,11 +13,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f702a834b925f13525db122934a5593d313e0ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-highlighting-text"></a>Wskazówki: Wyróżnianie tekstu
 Różne efekty można dodać do edytora, tworząc części Managed Extensibility Framework (MEF). W tym przewodniku przedstawiono sposób zaznacz każde wystąpienie bieżącego słowa w pliku tekstowym. Jeśli wyraz występuje więcej niż jeden raz w pliku tekstowym, a następnie pozycji karetki w jedno wystąpienie, każde wystąpienie zostanie wyróżniona.  
@@ -408,4 +409,4 @@ Różne efekty można dodać do edytora, tworząc części Managed Extensibility
 4.  Umieść kursor w jednym z wystąpień tekst "hello". Każde wystąpienie powinno być zaznaczone na niebiesko.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

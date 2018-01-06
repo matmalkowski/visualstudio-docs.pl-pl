@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: efdd7f5358ce0ec4afd32ebaa8ff1fd8d117dc47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 976fbd25965c62e82f9b358f22c8fe3f2b83363e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne poziomy, w których można zdefiniować narzędzi modelowania:  
@@ -69,12 +70,12 @@ Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne po
 |Dostosuj sposób modeli są zapisywane do pliku.|Zobacz [dostosowywania magazynu plików i serializacja XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
 |Zapisz modeli baz danych lub innego nośnika.|Zastąpienie *YourLanguage*danych dokumentu<br /><br /> Zobacz [dostosowywania magazynu plików i serializacja XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
 |Integrować kilka DSLs, aby mogły działać w ramach jednej aplikacji.|Zobacz [integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
-|Zezwalaj na Twoje DSL rozszerzyć przez osoby trzecie i kontrola rozszerzenia.|[Rozszerzanie programu DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Udostępnianie klas między DSLs przy użyciu biblioteki DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definiowanie zasad blokowania, aby tworzyć segmenty tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
+|Zezwalaj na Twoje DSL rozszerzyć przez osoby trzecie i kontrola rozszerzenia.|[Rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Udostępnianie klas między językami DSL za pomocą biblioteki DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
 ## <a name="see-also"></a>Zobacz też  
  [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
  [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modelowanie zestawu SDK dla programu Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+ [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

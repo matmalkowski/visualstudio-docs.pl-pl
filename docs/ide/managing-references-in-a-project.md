@@ -24,11 +24,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9442275dba03eabb183e9917ecc5c8fe874b0478
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -54,7 +55,7 @@ Można wprowadzić odwołania do następujących typów składników i usług:
 
 ### <a name="project-references"></a>Odwołania do projektu
 
-Uniwersalne projekty platformy systemu Windows (UWP) można utworzyć odwołania do innych projektów uniwersalnych systemu Windows w rozwiązaniu lub Windows 8.1 projektów lub plików binarnych, pod warunkiem, że te projekty nie należy używać interfejsów API, które są przestarzałe w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [przenieść z systemem Windows 8 środowiska wykonawczego platformy uniwersalnej systemu Windows](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+Uniwersalne projekty platformy systemu Windows (UWP) można utworzyć odwołania do innych projektów uniwersalnych systemu Windows w rozwiązaniu lub Windows 8.1 projektów lub plików binarnych, pod warunkiem, że te projekty nie należy używać interfejsów API, które są przestarzałe w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [przenieść z systemem Windows 8 środowiska wykonawczego platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
 
 Jeśli wybierzesz przekierować projekty Windows 8.1 do systemu Windows 10, zobacz [portu, migracji i uaktualniania projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 

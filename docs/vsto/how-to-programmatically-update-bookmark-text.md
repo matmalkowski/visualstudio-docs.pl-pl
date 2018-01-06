@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee78ad2aac4ff9cefcb3291d3b1b2010d8a1c26c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c9db34e05c964b95a41593b194c4941293c7efb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Porady: Programowane aktualizowanie tekstu zakładki
   Tekst można wstawiać do symbolu zastępczego zakładki w dokumencie programu Microsoft Office Word tak, aby można było odzyskać tekst w późniejszym czasie lub tekst w zakładki. Jeśli tworzysz dostosowania poziomie dokumentu, można także zaktualizować tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> formant, który jest powiązany z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Porady: programowane Wstawianie tekstu w dokumentach programu Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Przegląd modelu obiektów programu Word](../vsto/word-object-model-overview.md)   
- [BOOKMARK, formant:](../vsto/bookmark-control.md)  
+ [Bookmark, kontrolka](../vsto/bookmark-control.md)  
   
   

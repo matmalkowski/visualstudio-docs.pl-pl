@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Praca z obiektami 3-D do gier i aplikacji
 W tym dokumencie opisano [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia, które służą do tworzenia lub modyfikowania 3-modeli, tekstury i programów do cieniowania, na podstawie DirectX gier i aplikacji.  
@@ -52,7 +53,7 @@ W tym dokumencie opisano [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Praca z tekstury i obrazów](../designers/working-with-textures-and-images.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z obrazami i tekstury.|  
-|[Praca z modelami 3-w](../designers/working-with-3-d-models.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z 3-modeli.|  
-|[Praca z programów do cieniowania](../designers/working-with-shaders.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do cieniowania Designer do tworzenia i modyfikowania efekty niestandardowego programu do cieniowania.|  
-|[Korzystanie z zasobów 3-w aplikacji lub gry](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano sposób użycia zasobów, które utworzono za pomocą edytora obrazów, edytorze modeli lub projektanta programu do cieniowania w aplikacji lub gry.|
+|[Praca z obrazami i teksturami](../designers/working-with-textures-and-images.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z obrazami i tekstury.|  
+|[Praca z modelami 3-D](../designers/working-with-3-d-models.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z 3-modeli.|  
+|[Praca z cieniowaniem](../designers/working-with-shaders.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do cieniowania Designer do tworzenia i modyfikowania efekty niestandardowego programu do cieniowania.|  
+|[Korzystanie z obiektów 3-D w grach i aplikacjach](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano sposób użycia zasobów, które utworzono za pomocą edytora obrazów, edytorze modeli lub projektanta programu do cieniowania w aplikacji lub gry.|

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 901423bfa9b43e2d4eaaa20a225c35e76a0b8790
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d32a49d780f6ae7929f1442ee70a8085724ca6e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Kontrakty polecenia w zestawy międzyoperacyjne
 Podstawowy kontrakt obsługi poleceń za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs jest środowisko wywołuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody, aby określić, czy polecenie jest obsługiwana i, jeśli jest obsługiwana, aby określić jego stanu i tekst. Następnie wywołania środowiska <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodę można wykonać polecenia.  

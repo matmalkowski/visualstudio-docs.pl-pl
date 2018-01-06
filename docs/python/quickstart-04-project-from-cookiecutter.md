@@ -1,5 +1,5 @@
 ---
-title: "Szybki Start: Tworzenie projektów języka Python z szablonu Cookiecutter w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: "Szybki Start: Tworzenie projektu języka Python za pomocą Cookiecutter w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b635d988e54dd8b07092c0c77941552e66a38776
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: b45f23a0cb30a97036ab0362b5974c0fc65a8064
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki Start: Tworzenie projektu z szablonu Cookiecutter
 

@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: a9350a7aa2ed3b4befaa2305042dbc4fc74fcf31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Nawigowanie i aktualizowanie modeli warstw w kodzie programu
 W tym temacie opisano elementów i relacji w modelach warstwy, których można nawigowanie i aktualizowanie przy użyciu kodu programu. Aby uzyskać więcej informacji o zależnościach diagramy z punktu widzenia użytkownika, zobacz [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md) i [diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md).  
@@ -92,7 +93,7 @@ IEnumerable<ILayerComment> comments =
   
  Główne typy i metody danych z odwołaniami do artefaktu są następujące:  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Właściwość kategorii wskazuje, jaki rodzaj artefaktu odwołuje się do, takich jak klasy, plik wykonywalny lub zestawu. Kategorie określa, jak identyfikator identyfikuje artefaktu docelowej.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>., Właściwość kategorii wskazuje, jaki rodzaj artefaktu odwołuje się do, takich jak klasy, plik wykonywalny lub zestawu. Kategorie określa, jak identyfikator identyfikuje artefaktu docelowej.  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A>Tworzy odwołania do artefaktu z <xref:EnvDTE.Project> lub <xref:EnvDTE.ProjectItem>. To jest operacja asynchroniczna. W związku z tym zazwyczaj zawierają wywołania zwrotnego, która jest wywoływana po zakończeniu tworzenia.  
   
@@ -129,4 +130,4 @@ public void ... (...)
  [Dodawanie niestandardowej weryfikacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Dodawanie właściwości niestandardowych do diagramów zależności](../modeling/add-custom-properties-to-layer-diagrams.md)   
  [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)   
- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)   

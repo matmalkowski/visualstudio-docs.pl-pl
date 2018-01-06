@@ -18,11 +18,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f07b924c5af117f39e19dc5add6046a14be22a6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcji lub obiektów do uruchomienia profilowania. Ten widok udostępnia oś czasu wykresu i dwa lub więcej list najdroższych funkcji lub obiektów oparte na metryk wydajności metodę profilowania. Dane w tym widoku zależy od metody profilowania, która została użyta (próbkowania, Instrumentacji lub współbieżności) i czy został zebrany alokacji pamięci .NET.  

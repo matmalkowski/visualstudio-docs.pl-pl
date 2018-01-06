@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 985a174955ac96c37cc4f50e4550f7186d3f80c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 672ce7f47dc8478343f336ed06757af109a5ecce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control"></a>Kontrola źródła
 W tej sekcji omówiono opcje implementacji jako funkcja zintegrowanego z kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], albo za pomocą wtyczki kontroli źródła lub pakiet VSPackage kontroli źródła.  
@@ -29,14 +30,14 @@ W tej sekcji omówiono opcje implementacji jako funkcja zintegrowanego z kontrol
  [Omówienie](../../extensibility/internals/source-control-integration-overview.md)  
  Przegląd dwie opcje dostępne do wykonywania kontroli źródła.  
   
- [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Tworzenie wtyczki kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-plug-in.md)  
  W tym artykule omówiono sposób tworzenia wtyczka do kontroli źródła dostarczającego funkcja kontroli źródła, za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika kontroli źródła (UI).  
   
- [Tworzenie pakiet VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ [Tworzenie pakietu VSPackage kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  W tym artykule omówiono sposób tworzenia kontroli źródła pakiet VSPackage, który nie tylko udostępnia funkcje kontroli źródła, ale może być używana do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródła formantu interfejsu użytkownika.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Plug-in kontroli źródła](../../extensibility/source-control-plug-ins.md)  
+ [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)  
  Odwołanie do API wtyczkę kontroli źródła.  
   
  [Rozszerzanie projektów](../../extensibility/extending-projects.md)  

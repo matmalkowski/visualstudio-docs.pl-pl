@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Podgląd biblioteki obrazów
 Narzędzia Visual Studio Image Viewer biblioteki można załadować i wyszukiwać manifestów obrazu, dzięki czemu użytkownik do manipulowania je w taki sam sposób, czy program Visual Studio. Użytkownik może zmienić tła, rozmiarów DPI, duży kontrast i inne ustawienia. Narzędzie również Wyświetla informacje ładowania dla manifest każdego obrazu oraz źródła informacji dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:  

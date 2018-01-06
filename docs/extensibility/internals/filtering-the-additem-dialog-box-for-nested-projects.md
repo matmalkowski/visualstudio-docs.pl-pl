@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 392f2f33d792c4e8f31ff0423b68a28a68797818
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1f5fc7695df028330d0e53faebefc178f499da1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Filtrowanie okno dialogowe AddItem dla projektów zagnieżdżonych
 Po wyświetleniu **AddItem** okno dialogowe dla projektu zagnieżdżonego projektu nadrzędnego można kontrolować, jakie elementy są wyświetlane w oknie dialogowym.  
@@ -36,4 +37,4 @@ Po wyświetleniu **AddItem** okno dialogowe dla projektu zagnieżdżonego projek
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [Dodawanie elementów do Dodaj nowy element okien dialogowych](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Rejestrowanie szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Projekty zagnieżdżenia](../../extensibility/internals/nesting-projects.md)
+ [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

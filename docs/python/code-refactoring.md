@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1e3b9fa70f42a0be65f7bea8c39a644d4950b621
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>Refaktoryzacji kodu języka Python
 
@@ -25,7 +26,7 @@ Program Visual Studio udostępnia kilka polecenia automatycznie Przekształcanie
 - [Zmień nazwę](#rename) zmienia nazwę wybranej klasy, metody lub nazwę zmiennej
 - [Wyodrębnij metodę](#extract-method) tworzy nową metodę z zaznaczonym kodzie
 - [Dodaj importu](#add-import) zapewnia tagów inteligentnych można dodać brakujące importu
-- [Usuń nieużywane importów](#remove-imports) Usuwa nieużywane importów
+- [Usuń nieużywane importów](#remove-unused-imports) Usuwa nieużywane importów
 
 < name = "Zmień nazwę zmiennej"</a>
 
@@ -71,6 +72,7 @@ Podobnie Visual Studio filtruje funkcje, które są importowane z innymi moduła
 Ponadto jeśli coś zwykle można wykluczyć, ale ma inne wartości, które będą uwzględnione (ponieważ jest to nazwa została przypisana wartość w module, na przykład), programu Visual Studio nadal wyklucza importu. To zachowanie przyjęto założenie, że wartość nie należy można wyeksportować, ponieważ jest on zdefiniowany w innym module, i w związku z tym dodatkowe przypisania mogą być również wyeksportowany nie fikcyjnej wartości.
 
 < name = "remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Usuń nieużywane importów
 
 Podczas pisania kodu, jest łatwo tworzyć `import` instrukcje dla modułów, które nie są używane w ogóle. Ponieważ program Visual Studio analizuje kodu, automatycznie można określić czy `import` instrukcji jest potrzebna, analizując czy importowany nazwa jest używana w zakresie, poniżej której występuje instrukcja.

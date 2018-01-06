@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20ffb34c3c9ac1d2842995c53332eb241337b769
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiające, projektowanie opartych na języku XAML systemu Windows i aplikacje sieci Web. Interfejsy użytkownika można tworzyć dla aplikacji, przeciągając formantów z **przybornika** i ustawianie właściwości w **właściwości** okna. Można również edytować XAML bezpośrednio w widoku XAML.  
@@ -166,4 +167,4 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
 ## <a name="see-also"></a>Zobacz też  
  [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)   
  [Jak utworzyć i zastosować zasobu](../designers/how-to-create-and-apply-a-resource.md)   
- [Wskazówki: Powiązanie z danymi w Projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Przewodnik: tworzenie powiązań z danymi w projektancie XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

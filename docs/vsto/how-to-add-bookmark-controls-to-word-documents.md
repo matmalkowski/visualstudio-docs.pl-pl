@@ -20,11 +20,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7da98e9d013f131e889c287cd1d158b3fb25e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 86e23b3240739a063a738a984de936d8848fba9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Porady: dodawanie formantów zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentów w projekcie w czasie projektowania lub w czasie wykonywania. W dodatku VSTO projektów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do otwartego dokumentu w czasie wykonywania.  
@@ -135,6 +136,6 @@ ms.lasthandoff: 10/31/2017
  [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Porady: zmiana rozmiaru formantów zakładki](../vsto/how-to-resize-bookmark-controls.md)  
+ [Instrukcje: Zmiana rozmiaru kontrolek zakładki](../vsto/how-to-resize-bookmark-controls.md)  
   
   

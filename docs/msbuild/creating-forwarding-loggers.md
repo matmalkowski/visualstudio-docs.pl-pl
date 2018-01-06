@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d17f11394b533cebd2481ea859ec2b0f2194c360
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5037b284a0f524a8b7c550a72fe76a27afd37f10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-forwarding-loggers"></a>Tworzenie przekazywania rejestratorów
 Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając wybranie zdarzenia, które chcesz monitorować podczas kompilacji projektów w systemie wieloprocesorowym. Przez włączenie przekazywania rejestratorów, można zapobiec niechciane zdarzenia z przeciążając uda się rozpoznać rejestratora centralnego, spowalniając czas kompilacji i przeładowania dziennika.  
@@ -44,4 +45,4 @@ Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Rejestratory kompilacji](../msbuild/build-loggers.md)   
- [Rejestrowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)
+ [Logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Dowiedz się, jak debugować przy użyciu programu Visual Studio
 
@@ -27,7 +28,7 @@ Albo odczytanie wzdłuż, zobacz Funkcje debugera, lub można pobrać kompletne 
 
 |         |         |
 |---------|---------|
-| ![Obejrzyj film](../install/media/video-icon.png "WatchVideo") | [Obejrzyj film](#video) debugowania, który zawiera podobne kroki. |
+|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |    [Obejrzyj film](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) debugowania, który zawiera podobne kroki. |
 
 Mimo że aplikacja demonstracyjna C#, funkcje mają zastosowanie do języka C++, Visual Basic, JavaScript i innych języków obsługiwanych przez program Visual Studio (inaczej w przypadku gdy).
 
@@ -278,12 +279,6 @@ Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chces
 3. Naciśnij klawisz F5, aby kontynuować aplikacji.
 
 Aby dowiedzieć się więcej na temat funkcji debugera, zobacz [debugera porady i wskazówki](../debugger/debugger-tips-and-tricks.md).
-
-## <a name="video"></a>Obejrzyj film debugowania
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ## <a name="see-also"></a>Zobacz także
 

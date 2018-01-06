@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c12e300a3537d1927710b0a4c3550ec3f5fd762
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c971d4565c95cab23e683a1a4f20c75ebea81b8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Porady: Implementowanie Znajdź i Zastąp mechanizmu
 Program Visual Studio udostępnia dwa sposoby wdrażania Znajdź i Zamień. Jednym ze sposobów jest przekazać obraz tekstu do powłoki i pozwól mu wyszukiwanie, wyróżnianie i zastępując tekst. Dzięki temu użytkownicy mogą określić wiele zakresów tekstu. Alternatywnie VSPackage można kontrolować, ta sama funkcja. W obu przypadkach należy powiadomić powłokę o bieżącą lokalizację docelową i elementów docelowych dla wszystkich otwartych dokumentów.  

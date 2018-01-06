@@ -12,17 +12,18 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206049d850b1f2f3c6b225b0c0d9c51d2a449a07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01f10f3d9c2f0f61708c14f2d7a8307f9db850f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-profiling-tools-reference"></a>Narzędzia profilowania wiersza polecenia — Odwołanie
 Narzędzia wiersza polecenia wydajności umożliwiają deweloperom profilu aplikacji w wierszu polecenia. Następujące narzędzia profilowania wiersza polecenia umożliwiają profilu kodu w wierszu polecenia.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Narzędzie VSInstr](../profiling/vsinstr.md)  
+ [VSInstr](../profiling/vsinstr.md)  
  Wyświetla listę opcji Instrumentacji VSInstr.exe.  
   
  [Ostrzeżenia VSInstr](../profiling/vsinstr-warnings.md)  
@@ -34,7 +35,7 @@ Narzędzia wiersza polecenia wydajności umożliwiają deweloperom profilu aplik
  [VSPerfCmd](../profiling/vsperfcmd.md)  
  Wyświetla listę opcji VSPerfCmd.exe zbierania danych dotyczących wydajności.  
   
- [Vsperfmon —](../profiling/vsperfmon.md)  
+ [VSPerfMon](../profiling/vsperfmon.md)  
  Wyświetla listę opcji VSPerfMon.exe zbierania zbierania danych.  
   
  [VSPerfReport](../profiling/vsperfreport.md)  

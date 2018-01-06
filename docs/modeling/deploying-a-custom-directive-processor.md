@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na dowolnym komputerze, musi być zarejestrowany za pomocą jednej z metod opisanych w tym temacie.  
@@ -199,4 +200,4 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-qual
 |Zestaw|REG_SZ|\<**Nazwę zestawu w GAC**>|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie procesory dyrektywy szablonu tekstowego T4 niestandardowych](../modeling/creating-custom-t4-text-template-directive-processors.md)
+ [Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego](../modeling/creating-custom-t4-text-template-directive-processors.md)

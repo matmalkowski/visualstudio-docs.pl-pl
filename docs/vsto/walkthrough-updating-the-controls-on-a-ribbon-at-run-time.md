@@ -22,11 +22,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf9e63423a094d4aa574be1d952702ff077aa627
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9ca505ff6e61962cd360a3f8413a69abe92e377f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Wskazówki: aktualizowanie formantów na wstążce w czasie wykonywania
   W tym przewodniku przedstawiono sposób użycia model obiektu Wstążka zaktualizować formantów na Wstążce po załadowaniu wstążki do aplikacji pakietu Office.  
@@ -303,6 +304,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)   
  [Porady: dodawanie formantów do widoku Zakulisowego](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Porady: eksportowanie wstążki z projektanta wstążki do XML wstążki](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Porady: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Instrukcje: Pokazywanie błędów dodatków interfejsu użytkownika](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

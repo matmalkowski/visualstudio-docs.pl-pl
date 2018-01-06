@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: adec7e86fcb33985aa61b7e20b7e9ac16d2ad7b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 852baa1c8a2b627e5426411d8c156ab28d5c6614
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Porady: stosowanie cieniowania do modelu 3-D
 Tym dokumencie przedstawiono sposób użycia w edytorze modeli do zastosowania do cieniowania skierowane wykres programu do cieniowania języka (DGSL) do 3-w modelu.  
@@ -46,4 +47,4 @@ Tym dokumencie przedstawiono sposób użycia w edytorze modeli do zastosowania d
  [Porady: Tworzenie podstawowego modelu 3-w](../designers/how-to-create-a-basic-3-d-model.md)   
  [Porady: tworzenie cieniowania kolor podstawowy](../designers/how-to-create-a-basic-color-shader.md)   
  [Edytor modelu](../designers/model-editor.md)   
- [Projektant programu do cieniowania](../designers/shader-designer.md)
+ [Projektant cieniowania](../designers/shader-designer.md)

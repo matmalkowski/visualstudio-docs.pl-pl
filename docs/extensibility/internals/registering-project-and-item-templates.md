@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablony projektów i elementów
 Typy projektów należy zarejestrować katalogów, w którym znajdują się ich szablonów projektu i elementu projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]informacje rejestracji skojarzony z typami Twojego projektu są używane do określenia, jakie można wyświetlić w **Dodawanie nowego projektu** i **Dodaj nowy element** okien dialogowych.  
@@ -123,4 +124,4 @@ Typy projektów należy zarejestrować katalogów, w którym znajdują się ich 
  [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Kreatorzy](../../extensibility/internals/wizards.md)   
  [Lokalizowanie aplikacji](../../ide/localizing-applications.md)   
- [CATIDs dla obiektów, które są zazwyczaj używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8883e2bb2e573d5c3fdf1e66d41b01abc25d6f0b
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
-ms.translationtype: HT
+ms.workload: multiple
+ms.openlocfilehash: 082569ea1875e03154e98e8078a21aafc7ad76dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-language-specific-editor-options"></a>Ustawianie opcji edytora specyficznych dla języka
 
@@ -51,4 +52,4 @@ Visual Studio oferuje wiele tekstu opcji edytora, które są stosowane do okreś
 
 [Dostosowywanie edytora](../../ide/customizing-the-editor.md)  
 [Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig](../../ide/create-portable-custom-editor-options.md)  
-[Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md) &mdash; zawiera łącza do tematów opisujących sposób dostosować ustawienia powiązań klucza i inne funkcje zintegrowane środowisko programistyczne (IDE).
+[Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)&mdash;zawiera łącza do tematów opisujących sposób dostosować ustawienia powiązań klucza i inne funkcje zintegrowane środowisko programistyczne (IDE).

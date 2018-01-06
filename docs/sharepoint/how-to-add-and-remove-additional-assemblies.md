@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b7859738ac1fe70bdca4cdca5d2dff1220a22b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8109fade596b15e73234dda378e90c188388e41e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Porady: dodawanie i usuwanie zestawów dodatkowych
   Jeśli pakiet programu SharePoint jest zależny od innych zestawów dla funkcji lub danych, możesz dodać zestawy do pakietu rozwiązań (wsp). W ten sposób programu SharePoint server upewnia się, że niestandardowe zestawy są instalowane przy użyciu pakietu.  
@@ -115,6 +116,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Porady: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
+ [Instrukcje: Dodawanie i usuwanie elementów do funkcji SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
   
   

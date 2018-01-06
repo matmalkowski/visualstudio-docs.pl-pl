@@ -16,11 +16,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26f5777477617b0bffe008ec92873b852af8fe08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d38f2347009d75c5e06365c757d2d51339bf06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Dodawanie polecenia na pasku narzędzi Eksplorator rozwiązań
 W tym przewodniku pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań** paska narzędzi.  
@@ -120,4 +121,4 @@ W tym przewodniku pokazano, jak przycisk, aby dodać **Eksploratora rozwiązań*
  Widoczność przycisku jest kontrolowany przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakiet VSPackage. Po załadowaniu pakiet VSPackage widoczność przycisku jest kontrolowana przez pakiet VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands Vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

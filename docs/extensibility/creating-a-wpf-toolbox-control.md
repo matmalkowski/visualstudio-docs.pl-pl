@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 313f89f0fe9a4bf9e9171ebafc866366067ab98c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 605ce6f221df959e553cbfde2f3439da06b474c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Tworzenie formantu przybornika WPF
 Szablon formantu przybornika WPF (Windows Presentation Framework) umożliwia tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak użyć szablonu, aby utworzyć **przybornika** kontroli, którą można dystrybuować do innych użytkowników.  

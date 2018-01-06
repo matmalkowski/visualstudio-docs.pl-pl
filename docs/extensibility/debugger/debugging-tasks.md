@@ -13,17 +13,18 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>Debugowanie zadań
 Aby zdebugować program, musi zostać uruchomiona i aparat debugowania (DE) musi być dołączony do niego, w przeciwnym razie DE musi być dołączony do wcześniej uruchomionego programu. Po dołączeniu DE należy wygenerować pewnych zdarzeń uruchomienia. W odpowiedzi pakiet debugowania próbuje powiązać punktów przerwania ustawionych w IDE. Gdy program trafi powiązania punktu przerwania, zostaje zatrzymana i oczekuje na dane wejściowe użytkownika.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Problemy z zabezpieczeniami](../../extensibility/debugger/security-issues.md)  
+ [Problemy dotyczące zabezpieczeń](../../extensibility/debugger/security-issues.md)  
  W tym artykule omówiono czynności zabezpieczeń, które są wymagane do debugowania programu.  
   
  [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md)  
@@ -32,16 +33,16 @@ Aby zdebugować program, musi zostać uruchomiona i aparat debugowania (DE) musi
  [Dołączanie bezpośrednio do programu](../../extensibility/debugger/attaching-directly-to-a-program.md)  
  W tym artykule opisano proces wykorzystywany do debugowania programu w ramach procesu, który jest już uruchomiony.  
   
- [Wysyłanie zdarzeń do uruchomienia po Launch](../../extensibility/debugger/sending-startup-events-after-a-launch.md)  
+ [Wysyłanie zdarzeń uruchamiania po uruchomieniu](../../extensibility/debugger/sending-startup-events-after-a-launch.md)  
  Wyświetla listę zdarzeń, które mają miejsce, gdy DE jest dołączony do programu, dopóki program znajduje się na jego główny punkt wejścia i jest gotowy do debugowania.  
   
  [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)  
  W tym artykule wyjaśniono, jak DE zwykle wysyła zdarzenie punktu wejścia, zdarzenie ukończenia ładowania lub zdarzeniem zatrzymującym, w zależności od okoliczności.  
   
- [Wiązania punktów przerwania](../../extensibility/debugger/binding-breakpoints.md)  
+ [Tworzenie powiązań punktów przerwania](../../extensibility/debugger/binding-breakpoints.md)  
  W tym artykule opisano, jak to zrobić, jeśli punkt przerwania ustawiony przez użytkownika, środowiska IDE formulates żądanie i wyświetla monit o sesji debugowania, aby utworzyć punkt przerwania.  
   
- [Obliczenia wyrażenia](../../extensibility/debugger/evaluating-expressions.md)  
+ [Ocenianie wyrażeń](../../extensibility/debugger/evaluating-expressions.md)  
  Wyjaśnia sposób tworzenia wyrażenia i co się dzieje, gdy wyrażenie jest obliczane.  
   
  [Wizualizacja i wyświetlanie danych](../../extensibility/debugger/visualizing-and-viewing-data.md)  

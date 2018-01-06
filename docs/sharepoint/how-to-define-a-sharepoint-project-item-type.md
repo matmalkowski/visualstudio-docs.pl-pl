@@ -19,11 +19,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c5f39fea52b6f417b046a7ff1f72dff1190a038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fb19c360f19890c7e9c116ad721dd99ef633d47a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Porady: definiowanie typu elementu projektu SharePoint
   Definiowanie typu elementu projektu, gdy chcesz utworzyć niestandardowego elementu projektu SharePoint. Aby uzyskać więcej informacji, zobacz [Definiowanie typów elementów projektu SharePoint niestandardowe](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
@@ -42,11 +43,11 @@ ms.lasthandoff: 10/31/2017
   
 4.  Do klasy, Dodaj następujące atrybuty:  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Ten atrybut umożliwia Visual Studio, aby odnaleźć i załadować Twojego <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> typu konstruktora atrybutu.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute>., Ten atrybut umożliwia Visual Studio, aby odnaleźć i załadować Twojego <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> typu konstruktora atrybutu.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. W definicji typu elementu projektu ten atrybut określa identyfikator ciągu dla nowego elementu projektu. Zalecane jest użycie formatu *nazwa firmy*. *Nazwa funkcji* można mieć pewność, że wszystkie elementy projektu mają unikatową nazwę.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>., W definicji typu elementu projektu ten atrybut określa identyfikator ciągu dla nowego elementu projektu. Zalecane jest użycie formatu *nazwa firmy*. *Nazwa funkcji* można mieć pewność, że wszystkie elementy projektu mają unikatową nazwę.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Ten atrybut Określa ikonę dla tego elementu projektu w **Eksploratora rozwiązań**. Ten atrybut jest opcjonalna. Jeśli nie zastosować do klasy, Visual Studio Wyświetla domyślną ikonę dla elementu projektu. Jeśli ten atrybut zostanie ustawiony, należy przekazać w pełni kwalifikowana nazwa ikony lub mapy bitowej osadzonego w tym zestawem.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>., Ten atrybut Określa ikonę dla tego elementu projektu w **Eksploratora rozwiązań**. Ten atrybut jest opcjonalna. Jeśli nie zastosować do klasy, Visual Studio Wyświetla domyślną ikonę dla elementu projektu. Jeśli ten atrybut zostanie ustawiony, należy przekazać w pełni kwalifikowana nazwa ikony lub mapy bitowej osadzonego w tym zestawem.  
   
 5.  W implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody, użyj członkami *projectItemTypeDefinition* parametru Definiowanie zachowania typu elementu projektu. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> obiekt, który zapewnia dostęp do zdarzeń zdefiniowanych w <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfejsów. Aby uzyskać dostęp do określonego wystąpienia typu elementu projektu, obsługę <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzenia, takie jak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
   
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
  [Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Porady: Dodawanie właściwości do typu elementu projektu SharePoint niestandardowych](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
- [Porady: Dodawanie pozycji Menu skrótów do typu elementu projektu SharePoint niestandardowych](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)  
+ [Instrukcje: Dodawanie pozycji menu skrótów do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)  
   
   

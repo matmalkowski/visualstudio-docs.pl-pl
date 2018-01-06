@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ca1f26078a590ae2034218c5df4a74b66fa2449
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b04cd593bd631ba92545901ff289a9f8ed4f1822
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccismulticheckoutenabled-function"></a>Funkcja SccIsMultiCheckoutEnabled
 Ta funkcja sprawdza, czy wtyczkę kontroli źródła umożliwia skonfigurowanie wielu wyewidencjonowania pliku.  
@@ -51,4 +52,4 @@ SCCRTN SccIsMultiCheckoutEnabled(
  IDE sprawia, że dwa sprawdza, czy pliki mogą zostać wyewidencjonowane jednocześnie przez więcej niż jednego użytkownika. Po pierwsze system kontroli źródła musi obsługiwać wiele wyewidencjonowania. Wtyczka do kontroli źródła można określić tej możliwości podczas inicjowania podając `SCC_CAP_MULTICHECKOUT`. Następnie drugiego wyboru IDE wywołuje tę funkcję, aby określić, czy bieżący projekt obsługuje wiele wyewidencjonowania. Jeśli wiele wyewidencjonowania są obsługiwane dla wybranego projektu, zwraca sukces wtyczki kodu i ustawia `pbMultiCheckout` do różną od zera (`TRUE`) lub `FALSE`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

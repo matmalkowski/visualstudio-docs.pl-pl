@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea578a020b4e60c3a2ff11af5d78570d636d822f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6b4c7cedd267ba02772db16e026803061933cf5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-shader"></a>Porady: eksport cieniowania
 Ten dokument pokazano, jak wyeksportować cieniowania skierowane wykres programu do cieniowania języka (DGSL) może być używany w aplikacji za pomocą projektanta programu do cieniowania.  
@@ -53,4 +54,4 @@ Ten dokument pokazano, jak wyeksportować cieniowania skierowane wykres programu
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: tworzenie cieniowania kolor podstawowy](../designers/how-to-create-a-basic-color-shader.md)   
- [Projektant programu do cieniowania](../designers/shader-designer.md)
+ [Projektant cieniowania](../designers/shader-designer.md)

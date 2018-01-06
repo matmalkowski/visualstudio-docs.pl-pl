@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc69edbe0865953d242967490a0852c9da4942b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff9458eed7f9c77a964240f81017d27d95d9622
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-flag-element"></a>Polecenie flagi elementu
 Modyfikuje jego elementu nadrzędnego.  
@@ -75,8 +76,8 @@ Modyfikuje jego elementu nadrzędnego.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element przycisków](../extensibility/buttons-element.md)|Zawiera grupę [Button Element](../extensibility/button-element.md) elementów.|  
-|[Element menu](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakiet VSPackage.|  
+|[Buttons, element](../extensibility/buttons-element.md)|Zawiera grupę [Button Element](../extensibility/button-element.md) elementów.|  
+|[Menus, element](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakiet VSPackage.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

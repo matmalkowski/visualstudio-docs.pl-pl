@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34424ae13a47008eaefa3634f2bf25d31daf285e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ccfae6292f696fa7c0951595a9baab123c81149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze praktyki dotyczące korzystania z wstawek kodu
 Kod w fragment kodu przedstawia tylko najbardziej podstawową metodą coś zrobić. Dla większości aplikacji należy zmodyfikować kod do własnych aplikacji.  
@@ -69,4 +70,4 @@ Kod w fragment kodu przedstawia tylko najbardziej podstawową metodą coś zrobi
 ## <a name="see-also"></a>Zobacz też  
  [Wstawki kodu IntelliSense języka Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
  [Zabezpieczanie aplikacji](../ide/securing-applications.md)   
- [Wstawki kodu](../ide/code-snippets.md)
+ [Fragmenty kodu](../ide/code-snippets.md)

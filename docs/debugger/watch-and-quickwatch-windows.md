@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Ustaw czujki na zmiennych czujki i QuickWatch Windows w programie Visual Studio
 Podczas debugowania, można użyć **czujki** (**debugowania > Windows > Obejrzyj > Obejrzyj (1, 2, 3, 4)**) i **QuickWatch** (kliknij prawym przyciskiem myszy na zmiennej /  **Debuguj > QuickWatch**) systemu windows, aby obejrzeć zmiennych i wyrażeń.  Różnica jest to, że **czujki** można wyświetlić w oknie kilku zmiennych podczas **QuickWatch** okno wyświetla pojedynczą zmienną w czasie.
@@ -232,7 +233,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Widok dynamiczny i okno czujki  
  Niektóre języki skryptów (na przykład JavaScript lub Python) Użyj dynamicznych lub [kaczka wpisując](https://en.wikipedia.org/wiki/Duck_typing), i języków .NET (w wersji 4.0 lub nowszy) obsługuje obiekty, które są trudne do obserwować przy użyciu normalnego debugowania systemu windows, ponieważ ich może być czasu wykonywania właściwości i metody, których nie można wyświetlić.  
   
- Gdy okno czujki wyświetla obiektu utworzone na podstawie typu, który implementuje [interfejsu interfejs IDynamicMetaObjectProvider](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), debuger dodaje specjalnego **widoku dynamicznego** węzeł **automatycznych**  wyświetlania. Ten węzeł zawiera dynamicznych elementów członkowskich obiektu dynamicznego, ale nie zezwala na edytowanie wartości elementów członkowskich.  
+ Gdy okno czujki wyświetla obiektu utworzone na podstawie typu, który implementuje [interfejsu interfejs IDynamicMetaObjectProvider](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), debuger dodaje specjalnego **widoku dynamicznego** węzeł **automatycznych**  wyświetlania. Ten węzeł zawiera dynamicznych elementów członkowskich obiektu dynamicznego, ale nie zezwala na edytowanie wartości elementów członkowskich.  
   
  Kliknięcie prawym przyciskiem myszy w dowolnym podrzędnym **widoku dynamicznego** i wybierz polecenie **Dodaj wyrażenie kontrolne**, debuger Wstawia nową zmienną czujki, który rzutuje obiekt na obiekt dynamiczny. Innymi słowy **nazwa obiektu** staje się (**obiektu (dynamiczny)). Nazwa**.  
   

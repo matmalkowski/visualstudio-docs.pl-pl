@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c5cce390ad786ad530153e1850850509990b039
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-element"></a>Element poleceń
 Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage. Kolekcja może mieć maksymalnie pięć podpunkty w następujący sposób: menu, grup przycisków, kombinacje i bitmapy.  
@@ -52,17 +53,17 @@ Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage. Kolekcja mo
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element menu](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakiet VSPackage.|  
-|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń w pakiet VSPackage.|  
-|[Element przycisków](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
-|[Element map bitowych](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
-|[Element kombinacje](../extensibility/combos-element.md)|Grupuje elementy kombi.|  
+|[Menus, element](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakiet VSPackage.|  
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń w pakiet VSPackage.|  
+|[Buttons, element](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
+|[Bitmaps, element](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
+|[Combos, element](../extensibility/combos-element.md)|Grupuje elementy kombi.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definiuje wszystkich elementów, które reprezentują poleceń, które zawiera pakiet VSPackage do środowiska IDE. Możliwych elementów są elementy menu, menu, paski narzędzi i pola kombi.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkich elementów, które reprezentują poleceń, które zawiera pakiet VSPackage do środowiska IDE. Możliwych elementów są elementy menu, menu, paski narzędzi i pola kombi.|  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład przedstawia użycie [polecenia Element](../extensibility/commands-element.md).  
@@ -92,4 +93,4 @@ Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage. Kolekcja mo
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

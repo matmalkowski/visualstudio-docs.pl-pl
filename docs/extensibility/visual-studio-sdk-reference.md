@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c900b2f266be4ea88921b5f7cd0db02991a091
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-reference"></a>Odwołanie do zestawu SDK programu Visual Studio
 Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, powiązane obszary nazw i innych obszarach zainteresowań dla deweloperów, którzy korzystają z programu Visual Studio SDK.  
@@ -228,16 +229,16 @@ Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, powiąza
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) — wyliczenie  
  Określa flagi hosta IntelliSense.  
   
- [Odwołanie do schematu VSCT XML](../extensibility/vsct-xml-schema-reference.md)  
+ [Odwołanie do schematu XML VSCT](../extensibility/vsct-xml-schema-reference.md)  
  Zawiera tabelę elementów schematu tabeli poleceń w usłudze Visual Studio z dozwolonych podrzędne elementy i atrybuty dla każdego.  
   
  [Identyfikatory GUID i stałych](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  Zawiera listę identyfikatorów GUID używanych w całym zestawie SDK.  
   
- [Stałe COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)  
+ [Stałe modelu COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)  
  Wyświetla listę identyfikatorów dla elementów interfejsu użytkownika używanych w całym środowisku zestawu SDK.  
   
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)  
+ [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)  
  Linki do tematów dla interfejsu API dodatku typu Plug-in kontroli źródła.  
   
  [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md)  

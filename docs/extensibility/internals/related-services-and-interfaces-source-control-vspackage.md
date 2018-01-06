@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d652db21fb98cbb0f06c2ac5ceec0f8f239beff6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Powiązane usługi i interfejsy (VSPackage kontroli źródła)
 Ta sekcja zawiera listę wszystkich powiązanych pakiet VSPackage interfejsów w kontroli źródła [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kontroli źródła pakiet VSPackage implementuje niektóre z tych interfejsów i używa innych użytkowników do wykonywania zadań kontroli źródła.  
@@ -43,7 +44,7 @@ Ta sekcja zawiera listę wszystkich powiązanych pakiet VSPackage interfejsów w
 |---------------|-------------|--------------------|----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Edytory wywołać tego interfejsu przed zmodyfikowaniem lub zapisywanie pliku. Pakiet VSPackage kontroli źródła można wyewidencjonować pliku lub odrzucać operacji, jeśli wyewidencjonowanie nie powiedzie się.|Pakiet VSPackage do kontroli źródła|Zalecane|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Ten interfejs zapewnia funkcje kontroli podstawowego źródła dla projektów, takie jak rejestrowanie i wyrejestrowywanie projektów z kontrolą źródła i zapewniania obsługi symboli kontroli źródła podstawowych.|Pakiet VSPackage do kontroli źródła|Wymagane|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Ten interfejs jest uzyskiwany z <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> przy użyciu <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> funkcji, lub po prostu rzutowanie obiekt implementujący `IVsHierarchy` do `IVsSccProject2`. Służy do pobierania plików pod kontrolą źródła w projekcie lub informowania projektu bieżący stan kontroli źródła lub miejsca.|Project|Wymagane|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Ten interfejs jest uzyskiwany z <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> przy użyciu <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> funkcji, lub po prostu rzutowanie obiekt implementujący `IVsHierarchy` do `IVsSccProject2`. Służy do pobierania plików pod kontrolą źródła w projekcie lub informowania projektu bieżący stan kontroli źródła lub miejsca.|Projekt|Wymagane|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>|Moduł integracji używa tego interfejsu można ustawić bieżącego aktywnego pakiet VSPackage.|Pakiet VSPackage do kontroli źródła|Wymagane|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Ten interfejs jest oparty na modelu subskrypcji. Żadnych pakiet VSPackage można sygnalizować, że chce otrzymywać zdarzeń dokumentów i jest zalecana przez powłokę na zdarzenia, które mają być. Wdrożenie i obsługiwane przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], który z kolei przekazuje zdarzenia implementowania `IVsTrackProjectDocumentsEvents2` do pakiet VSPackage.|Stub kontroli źródła|Wymagane|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3>|Ten interfejs oferuje przetwarzanie wsadowe, operacji odczytu/zapisu zsynchronizowane i zaawansowane `OnQueryAddFiles` metody.|Stub kontroli źródła|Wymagane|  
@@ -56,7 +57,7 @@ Ta sekcja zawiera listę wszystkich powiązanych pakiet VSPackage interfejsów w
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>|Pakiet VSPackage używa tego interfejsu, aby zdefiniować dodatkowe symboli jako symbole kontroli źródła dla węzłów w **Eksploratora rozwiązań**.|Pakiet VSPackage do kontroli źródła|Optional|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl>|**Dodaj** okno dialogowe dla projektów sieci Web używa tego interfejsu. Zapewnia metody do przeglądania dla lokalizację kontroli źródła i otwarcie projektu sieci Web uprzednio dodanych w repozytorium kontroli źródła w tej lokalizacji.|Pakiet VSPackage do kontroli źródła|Zalecane|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>|Ten interfejs obsługuje ładowanie asynchroniczne (tła) projektów z kontrolą źródła.|Pakiet VSPackage do kontroli źródła|Optional|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|Ten interfejs umożliwia projektów obserwowanie asynchroniczne ładowanie inicjowane przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>.|Project|Optional|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|Ten interfejs umożliwia projektów obserwowanie asynchroniczne ładowanie inicjowane przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>.|Projekt|Optional|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions>|Ten interfejs umożliwia IDE w celu kontroli źródła active pakiet VSPackage zapytania. Wartość ustawienia kontroli źródła, które mają znaczenie, nawet wtedy, gdy kontrolka nie active źródła zarejestrowana pakiet VSPackage wysyła zapytanie do środowiska IDE. Ten interfejs jest implementowany i obsługiwane przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].|Stub kontroli źródła|Wymagane|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>|Ten interfejs jest używany podczas rejestrowania pakiet VSPackage kontroli źródła.|Stub kontroli źródła|Wymagane|  
 |<xref:EnvDTE.SourceControl>|Ten interfejs jest używany w automatyzacji. W efekcie ujawnia on tylko funkcje, które mogą być wykonywane bez wyświetlania elementów interfejsu użytkownika.|Pakiet VSPackage do kontroli źródła|Optional|  

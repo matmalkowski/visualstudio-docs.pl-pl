@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 031894a3307a40af981ad974898ae819ba68d24a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7968fe71fffb736a6e86319339f3cc7823480403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Porady: Programowane wyszukiwanie tekstu w zakresach arkusza
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst również może być ciągów błędów, które mogą być wyświetlane w komórce arkusza takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągów błąd, zobacz [wartości błędów komórki](http://msdn.microsoft.com/library/office/ff839168.aspx).  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
  [Praca z zakresami](../vsto/working-with-ranges.md)   
  [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Porady: programowane odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

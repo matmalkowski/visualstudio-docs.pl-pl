@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c925cc1cf8b1a5c70dfc1e650151d79945828935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 071c8832e154f151d6ee9d04c45b5bc927366f7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Porady: dodawanie i usuwanie elementów do funkcji SharePoint
   Po utworzeniu rozwiązania SharePoint Visual Studio dodaje domyślne SharePoint — elementy projektu do funkcji programu. Przed wdrożeniem można dodawać i usuwać SharePoint — elementy projektu do modyfikowania funkcji programu SharePoint.  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

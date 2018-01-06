@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes-view"></a>Widok procesów
 Widok procesy Wyświetla drzewa wszystkich aktywnych procesów w systemie. Nazwa procesu modułu i identyfikator są wyświetlane. Użyj widoku procesów, jeśli chcesz sprawdzić proces określony system, który zazwyczaj odpowiada zakresowi wykonywania programu. Procesy są identyfikowane za pomocą nazwy modułu lub są wyznaczone "procesy systemowe".  
@@ -46,10 +47,10 @@ Widok procesy Spy ++
  Wyjaśniono, jak można wyświetlić więcej informacji na temat wiadomości.  
   
 ### <a name="related-sections"></a>Sekcje pokrewne  
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
   
  [Wyszukiwanie procesów — okno dialogowe](../debugger/process-search-dialog-box.md)  
@@ -58,5 +59,5 @@ Widok procesy Spy ++
  [Okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md)  
  Wyświetla właściwości procesu, który wybrano w widoku procesów.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.

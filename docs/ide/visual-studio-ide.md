@@ -9,11 +9,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 811edfd9afaae8bc5c17af3c249ed10c25473701
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e8b2ee3e80d292e6a05a23c2f5b6932d569e0024
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -41,7 +42,7 @@ Można korzystać z usług platformy Azure dla aplikacji przy użyciu połączen
 
 - [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Usługa Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
 
 [HockeyApp](https://www.visualstudio.com/hockey-app/) ułatwia rozprowadzaj wersje beta, Zbieraj raporty awarii na żywo i uzyskuj opinie od rzeczywistych użytkowników. Ponadto można zintegrować interfejsami API REST usługi Office 365 aplikację do nawiązania połączenia danych przechowywanych w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady GitHub](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -85,7 +86,7 @@ Aby wykonać kroki tworzenia poniżej programu, upewnij się, wybierz i zainstal
 
 Oprócz instalacji lepszą wydajność Visual Studio 2017 ma również krótszą rozruchu IDE i załadować czasy rozwiązania.
 
-Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [zainstalować program Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).  
+Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [zainstalować program Visual Studio 2017](../install/install-visual-studio.md).
 
 ## <a name="sign-in"></a>Rejestrowanie
 
@@ -151,7 +152,7 @@ Dobrym sposobem Dowiedz się więcej o coś jest jej używać! Załóżmy zajrzy
 
 1. Po zakończeniu uruchamiania programu, wybierz polecenie Zatrzymaj (![Zatrzymaj przycisku](../ide/media/VSIDE_StopButton.png)) przycisk na pasku narzędzi, zatrzymaj ją.
 
-Załóżmy recap wykonanej do tej pory została: utworzyć nowy projekt C# uniwersalnych systemu Windows w programie Visual Studio, wyświetlić jego kod, dodać formantu do projektanta, zmienić kodu XAML i został uruchomiony projektu. Chociaż proces została uproszczona w tym przykładzie, to przedstawiono niektóre typowe części programu Visual Studio IDE, która będzie używana podczas opracowywania własnych aplikacji. Dalsze szczegóły tego przykładu, zobacz [tworzenie "Hello, world" app (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+Załóżmy recap wykonanej do tej pory została: utworzyć nowy projekt C# uniwersalnych systemu Windows w programie Visual Studio, wyświetlić jego kod, dodać formantu do projektanta, zmienić kodu XAML i został uruchomiony projektu. Chociaż proces została uproszczona w tym przykładzie, to przedstawiono niektóre typowe części programu Visual Studio IDE, która będzie używana podczas opracowywania własnych aplikacji. Dalsze szczegóły tego przykładu, zobacz [tworzenie "Hello, world" app (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
 
 ## <a name="debug-test-and-improve-your-code"></a>Debugowanie, testowanie i poprawić kod
 
@@ -175,7 +176,7 @@ Aby dać visual Omówienie programu Visual Studio, na poniższej ilustracji prze
 
 - [Dane wyjściowe](../ide/reference/output-window.md) okno jest, gdzie Visual Studio wysyła jej powiadomień, takie jak debugowanie i komunikaty o błędach, ostrzeżenia kompilatora, publikowania komunikatów o stanie i. Każde źródło komunikatu ma własną kartę.
 
-- [Team Explorer](/vsts/user-guide/work-team-explorer) umożliwia śledzenie elementów roboczych i udostępnianie kodu z innymi użytkownikami przy użyciu technologii kontroli wersji, takich jak [Git](https://git-scm.com/) i [Team Foundation wersji formantu (TFVC)] (/ Przegląd-usługi vsts/tfvc).
+- [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) umożliwia śledzenie elementów roboczych i udostępnianie kodu z innymi użytkownikami przy użyciu technologii kontroli wersji, takich jak [Git](https://git-scm.com/) i [kontroli wersji typu Team Foundation (TFVC)](/vsts/tfvc/overview).
 
 - [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) umożliwia wyświetlanie i zarządzania zasobami platformy Azure, takich jak maszyny wirtualne, tabel, baz danych i inne. Jeśli określonej operacji wymaga portalu Azure, Eksplorator chmury linki prowadzące do miejsca, w portalu Azure, które muszą przejść.
 
@@ -183,7 +184,7 @@ Aby dać visual Omówienie programu Visual Studio, na poniższej ilustracji prze
 
 Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Visual Studio:
 
-- [Szybkie uruchamianie](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) pole wyszukiwania jest to dobry sposób na szybkie wyszukiwanie informacji w programie Visual Studio. Rozpocząć wpisywanie nazwy niezależnie od, którego szukasz, i Visual Studio listy wyników przyjmujących dokładnie której ma nastąpić przejście. Szybkie uruchamianie zawiera również linki, który uruchamia Instalator programu Visual Studio dla wszystkich obciążeń lub poszczególnych składników.
+- [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) pole wyszukiwania jest to dobry sposób na szybkie wyszukiwanie informacji w programie Visual Studio. Rozpocząć wpisywanie nazwy niezależnie od, którego szukasz, i Visual Studio listy wyników przyjmujących dokładnie której ma nastąpić przejście. Szybkie uruchamianie zawiera również linki, który uruchamia Instalator programu Visual Studio dla wszystkich obciążeń lub poszczególnych składników.
 
   ![Pole wyszukiwania w usłudze szybkiego uruchamiania](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -221,7 +222,7 @@ Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Vis
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzanie kodu źródłowego i współpracę z innymi osobami
 
-Możesz zarządzać kodu źródłowego w obsługiwanych przez dowolnego dostawcy, w tym GitHub repozytoriów Git. Lub użyj [programu Visual Studio Team Services (VSTS)](/vsts/index) do zarządzania kodu obok usterek i elementy pracy dla całego projektu. Zobacz [wprowadzenie do usługi Git i usługi Team Services](/vsts/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej o zarządzaniu repozytoriów Git w programie Visual Studio przy użyciu programu Team Explorer. Visual Studio ma również inne funkcje kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [nowe funkcje Git w programie Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Możesz zarządzać kodu źródłowego w obsługiwanych przez dowolnego dostawcy, w tym GitHub repozytoriów Git. Lub użyj [programu Visual Studio Team Services (VSTS)](/vsts/index) do zarządzania kodu obok usterek i elementy pracy dla całego projektu. Zobacz [wprowadzenie do usługi Git i zespołu usług (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej o zarządzaniu repozytoriów Git w programie Visual Studio przy użyciu programu Team Explorer. Visual Studio ma również inne funkcje kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [nowe funkcje Git w programie Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Team Services to usługa oparta na chmurze dla hostingu oprogramowania projektów i umożliwianie współpracy w zespołach. VSTS obsługuje systemów zarówno Git i kontroli źródła programu Team Foundation, a także Scrum, CMMI i Agile metodologii programowanie. Team Foundation wersji formantu (TFVC) używa pojedynczy serwer scentralizowane repozytorium do śledzenia i wersji plików. Lokalne zmiany są zawsze ewidencjonowane na centralnym serwerze, gdy inni deweloperzy mogą pobrać najnowsze zmiany.
 
@@ -247,9 +248,9 @@ Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie A
 
 ![Eksplorator chmury](../ide/media/VSIDE_CloudExplorer.png)
 
-**W Eksploratorze serwera** ułatwia przeglądanie i zarządzanie wystąpień programu SQL Server i zasobami lokalnie, zdalnie i na witryny Salesforce.com, Office 365, Azure i witryn sieci Web. Aby otworzyć Eksploratora serwera, w menu głównym, wybierz **widoku**, **Eksploratora serwera**. Zobacz [dodać nowe połączenia](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) Aby uzyskać więcej informacji na temat używania Eksploratora serwera.
+**W Eksploratorze serwera** ułatwia przeglądanie i zarządzanie wystąpień programu SQL Server i zasobami lokalnie, zdalnie i na witryny Salesforce.com, Office 365, Azure i witryn sieci Web. Aby otworzyć Eksploratora serwera, w menu głównym, wybierz **widoku**, **Eksploratora serwera**. Zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md) Aby uzyskać więcej informacji na temat używania Eksploratora serwera.
 
-[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) jest wydajne środowisko projektowe dla programu SQL Server, bazy danych SQL Azure i usługi Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, obsługa i Refaktoryzuj baz danych. Możesz pracować z projektem bazy danych lub bezpośrednio z bazy danych połączonych wystąpienia na — lub poza siedzibą firmy.
+[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) jest wydajne środowisko projektowe dla programu SQL Server, bazy danych SQL Azure i usługi Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, obsługa i Refaktoryzuj baz danych. Możesz pracować z projektem bazy danych lub bezpośrednio z bazy danych połączonych wystąpienia na — lub poza siedzibą firmy.
 
 **Eksplorator obiektów SQL Server** w programie Visual Studio udostępnia widok obiektów bazy danych podobny do programu SQL Server Management Studio. Eksplorator obiektów SQL Server można wykonywać zadania zarządzania i projektowania lekkich bazy danych, takich jak edytowanie danych w tabeli, porównanie schematów, wykonywanie zapytań przy użyciu menu kontekstowe bezpośrednio w Eksploratorze obiektów SQL Server i inne.
 

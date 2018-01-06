@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5f010ee5d72723ec0ef4f20b13b895dc9b75f1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a760336194482485f7b46cd35600fcb102d7113b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-community-resources"></a>Zasoby społeczności WPF
 Microsoft udostępnia szereg zasoby społeczności można poznać, omówiono w nim i wyrazić swoją opinię na Windows Presentation Foundation (WPF), blogi utworzonego przez członków zespołu WPF i użytkownicy społeczności, fora i opinii z witryny Microsoft Connect w tym Centrum.  
@@ -38,4 +39,4 @@ Microsoft udostępnia szereg zasoby społeczności można poznać, omówiono w n
  Wyrazić swoją opinię na temat dokumentacji dla WPF, klikając **był pomocny tę stronę?** przycisk na stronie i wprowadzić swoje komentarze. To zapewnia swoją opinię bezpośrednio z zespołem.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie nowoczesnych aplikacji klasycznych z technologii Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Tworzenie nowoczesnych aplikacji klasycznych przy użyciu platformy Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

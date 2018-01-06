@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb177139491236cf518aba4e7f2effd213c1a469
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 46f9f748f683558e6fb82607d4c87a0a0dbc1cae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType — Element (szablony Visual Studio)
 Kategoryzuje szablon projektu, aby był on wyświetlany w obszarze określonej grupy w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
@@ -99,4 +100,4 @@ Kategoryzuje szablon projektu, aby był on wyświetlany w obszarze określonej g
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Projectsubtype — Element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+ [ProjectSubType, element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)

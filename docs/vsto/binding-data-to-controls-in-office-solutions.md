@@ -23,11 +23,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb94603d3041a30e978fff0ac6fff399648fc027
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office
   Formanty formularzy systemu Windows można powiązać i *hostowania formantów* dla dokumentu programu Microsoft Office Word lub Arkusz Microsoft Office Excel ze źródłem danych, więc formanty automatycznie wyświetlić dane. Formanty w projektach na poziomie aplikacji jak również poziomie dokumentu można powiązać danych.  
@@ -77,22 +78,22 @@ ms.lasthandoff: 10/31/2017
 ### <a name="binding-data-in-document-level-projects-at-design-time"></a>Wiązanie danych w projektach na poziomie dokumentu w czasie projektowania  
  W następujących tematach opisano przykłady powiązania danych w czasie projektowania:  
   
--   [Porady: zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [Instrukcje: Zapełnianie arkuszy danymi z bazy danych](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [Porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [Instrukcje: Zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [Porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [Instrukcje: Zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [Porady: zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [Instrukcje: Zapełnianie dokumentów danymi z usług](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [Porady: przewijanie rekordów bazy danych w arkuszu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [Instrukcje: Przewijanie rekordów bazy danych w arkuszu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
 ### <a name="binding-data-in-vsto-add-in-projects"></a>Powiązanie danych w projektach w dodatku VSTO  
  W dodatku VSTO projektów można dodawać formanty tylko w czasie wykonywania. W następujących tematach opisano przykłady powiązania danych w czasie wykonywania:  
   
--   [Wskazówki: Proste danych powiązania w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [Przewodnik: Proste powiązanie danych w projektach dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [Wskazówki: Złożone danych powiązania w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [Przewodnik: Złożone powiązanie danych w projektach dodatku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
 ## <a name="updating-data-that-is-bound-to-host-controls"></a>Aktualizowanie danych powiązanej z formanty hosta  
  Powiązanie danych między źródłem danych i kontroli hosta obejmuje aktualizacji dwukierunkowe danych. W proste powiązanie danych, zmian w źródle danych są automatycznie odzwierciedlane w formancie hosta, ale zmiany w formancie hosta wymagają jawnym wywołaniem do aktualizowania źródła danych. Przyczyną jest to, że w niektórych przypadkach, zmiany w jedno pole powiązane z danymi nie zostały zaakceptowane, chyba że posiadają zmiany w innym polu powiązane z danymi. Na przykład może być dwa pola, jeden dla wieku i jeden lat środowisko. Środowisko nie może przekraczać wieku. Użytkownik nie może zaktualizować wieku od 50 do 25, a następnie środowisko od 30 do 10, chyba że użytkownik wprowadza zmiany w tym samym czasie. Aby rozwiązać ten problem, pola z proste powiązanie danych nie zostaną zaktualizowane aktualizacje jawnie są wysyłane przez kod.  

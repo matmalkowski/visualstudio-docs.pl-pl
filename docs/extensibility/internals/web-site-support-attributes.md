@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 504046999814b4766fa9e5e8c006a02049e7007d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 868fe0785c90a174610b9fff837fc6fbfb084e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-attributes"></a>Witryna sieci Web pomocy technicznej atrybutów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Projekt witryny sieci Web może zostać rozszerzony do zapewniają obsługę sieci Web języków programowania. Język musi się zarejestrować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby szablony projektu może występować w **nowej witryny sieci Web** okno dialogowe, gdy jest wybrany język.  
@@ -58,4 +59,4 @@ ms.lasthandoff: 10/31/2017
  Implementacja IVsIntellisenseProject obsługuje odwołania i wywołuje kompilatora języka, gdy strony sieci Web z kodu jest wymagane, ale nie są buforowane.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Witryna sieci Web pomocy technicznej](../../extensibility/internals/web-site-support.md)
+ [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2c9e2111e02bb9669b7e915bb170e4607932978
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d9949cd9686c846c3baec67553b8cab203bc843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Porady: Programowane dodawanie i usuwanie komentarzy do arkusza
   Można programowo Dodawanie i usuwanie komentarzy w arkuszach programu Microsoft Office Excel. Komentarze można dodawać tylko do pojedynczego komórek, aby nie zakresów wielu komórek.  
@@ -67,6 +68,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
  [Porady: programowane wyświetlanie komentarzy do arkusza](../vsto/how-to-programmatically-display-worksheet-comments.md)   
- [Namedrange — formant](../vsto/namedrange-control.md)  
+ [NamedRange, kontrolka](../vsto/namedrange-control.md)  
   
   

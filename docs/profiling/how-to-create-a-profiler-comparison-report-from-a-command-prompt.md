@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe95412c11da05d409954762f40c46745b98940
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3eb863a53b1e03ca71db9c18a1d8188ef47b392
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Porady: tworzenie raportu porównania profilera z wiersza polecenia
 Możesz wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania raport, który porównuje dane dotyczące wydajności dwóch danych profilowania (. VSP notebooka. Pliki VSPS). Raport przedstawia różnice, regresji wydajności i ulepszenia, które nastąpiły jednej sesji profilowania. Wartości w raporcie przedstawia zmian lub zmiany z linii bazowej pierwszego pliku, który określisz. Tej różnicowej jest obliczana przez określenie różnica między stara wartość jest wartością linii bazowej, i wartość wyniku z nowego analizy. Porównywanie danych profilera może bazować na funkcje w kodzie, modułów w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
@@ -27,7 +28,7 @@ Możesz wygenerować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n
   
  Aby utworzyć raport Porównanie, należy użyć następującej składni:  
   
- **VSPerfReport/diff** `VspFileName1` *VspFileName2* [**/**`Options`]    
+ **VSPerfReport/diff** `VspFileName1` *VspFileName2* [**/**`Options`]  
   
  Można dodać opcji z poniższej tabeli, aby **VSPerfReport/diff** wiersza polecenia.  
   

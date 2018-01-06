@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio tools danych dla platformy .NET
 Visual Studio i .NET Framework razem zapewniają szeroką gamę interfejsu API oraz obsługę łączenie z bazami danych, modelowania danych w pamięci i wyświetlanie danych w interfejsie użytkownika narzędzia. Klasy .NET Framework, które zapewniają funkcje dostępu do danych są określane jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, wraz z danymi, narzędzia programu Visual Studio był pierwotnie przeznaczony głównie do obsługi relacyjnych baz danych i XML. Te dni wielu dostawców bazy danych NoSQL, lub osób trzecich, oferują dostawcy ADO.NET.  
   
-[Oprogramowanie .NET core](https://www.dotnetfoundation.org/netcore) obsługuje ADO.NET, z wyjątkiem zestawów danych i powiązanych typów. Jeśli są przeznaczonych dla platformy .NET Core i wymagają warstwy mapowania relacyjnego obiektu (ORM), użyj [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
+[Oprogramowanie .NET core](https://www.dotnetfoundation.org/netcore) obsługuje ADO.NET, z wyjątkiem zestawów danych i powiązanych typów. Jeśli są przeznaczonych dla platformy .NET Core i wymagają warstwy mapowania relacyjnego obiektu (ORM), użyj [Entity Framework Core](/ef/core/).  
   
 Na poniższym diagramie przedstawiono uproszczony widok podstawowej architektury:  
   

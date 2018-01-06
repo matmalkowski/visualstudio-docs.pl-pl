@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9342a06550427162219bf84a59178783e26473d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: febbc4e398fb2611a2968c2dbd9a922b12f45e5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 **Przekonwertować** okno dialogowe służy do wybierania narzędzie konwersji, aby utworzyć nowy projekt na podstawie starej, takich jak tworzenie [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projektu z projektu programu Visual Basic 6. Można również użyć [programu Visual Studio projektu konwertera](https://github.com/ssvaidya/VSProjectConverter) do Uaktualnianie projektów utworzonych w poprzednich wersjach programu Visual Studio.   

@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c0fa4b408c43acbf2ec87bcfaca5135c9037af7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee6c746874e7e00643f1b840185969a6dabadfe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="important-commands-for-language-service-filters"></a>Ważne poleceń dla filtrów usługi języka
 Aby utworzyć filtr usługi języka oferujący wszystkie potrzebne funkcje, należy rozważyć obsługi następujących poleceń. Pełną listę identyfikatory poleceń jest zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wyliczenie dla kodu zarządzanego i nagłówek Stdidcmd.h plik niezarządzanych [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kodu. Można znaleźć w pliku Stdidcmd.h *ścieżki instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  
@@ -42,4 +43,4 @@ Aby utworzyć filtr usługi języka oferujący wszystkie potrzebne funkcje, nale
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłane z menu, zwykle **Zaznaczanie komentarzy** lub **usuń znaczniki komentarza wybór** z **zaawansowane** w **Edytuj** menu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>Wskazuje, że użytkownik chce komentarz zaznaczonego tekstu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wskazuje, że użytkownik chce usuń znaczniki komentarza zaznaczonego tekstu. Te polecenia może być zaimplementowany tylko przez usługi języka.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie usługi języka starsza wersja](../../extensibility/internals/developing-a-legacy-language-service.md)
+ [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -11,11 +11,12 @@ ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: f7a85581023e100f5b69d1250711d0746540fe5c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 95f9c69ebca7dbdc7e576279b4e1ad3f17d2be25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 
@@ -55,7 +56,7 @@ Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — 
 
 **W systemie Windows 10**:
 
-1. [Rick — kliknij ikonę Docker dla systemu Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawień... **.
+1. [Rick — kliknij ikonę Docker dla systemu Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawień...** .
 2. [Polecenie demona](https://docs.docker.com/docker-for-windows/#docker-daemon) sekcji.
 3. [Przełącz **podstawowe** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) przycisk, aby **zaawansowane**.
 4. Dodaj następujące właściwości tablicy JSON zwiększenie miejsca na dysku do 120GB (więcej niż wystarczającego dla narzędzia kompilacji możliwości rozbudowy).
@@ -189,9 +190,10 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Przykład zaawansowane kontenerów](advanced-build-tools-container.md)
-* [Znane problemy dotyczące kontenerów](build-tools-container-issues.md)
+* [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
+* [Znane problemy z kontenerami](build-tools-container-issues.md)
+* [Visual Studio kompilacji narzędzia 2017 obciążenia i składnik identyfikatorów](workload-component-id-vs-build-tools.md)

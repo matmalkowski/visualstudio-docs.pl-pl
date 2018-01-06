@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>Przybornik
 **Przybornika** Wyświetla ikony dla formantów i innych elementów, które można dodać do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów. Aby otworzyć **przybornika**, kliknij przycisk **przybornika** na **widoku** menu. Dokowany **przybornika**, można przypiąć go otwórz lub ustaw ją na **automatyczne ukrywanie**.  
@@ -38,15 +39,15 @@ ms.lasthandoff: 10/31/2017
 ## <a name="help-on-toolbox-tabs"></a>Pomoc na temat kart z przybornika  
  Poniższe dokumenty zawierają więcej informacji o określonych **przybornika** karty.  
   
--   [Przybornik, karta dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+-   [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Przybornik, karta składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+-   [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
 -   [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Przybornik, karta dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+-   [Przybornik, karta Dane](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Przybornik, karta składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+-   [Przybornik, karta Składniki](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
 -   [Przybornik, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   

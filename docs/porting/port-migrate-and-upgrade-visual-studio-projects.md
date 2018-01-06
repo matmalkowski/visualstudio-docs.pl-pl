@@ -21,11 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c418d5ab3618a43a1e12bc3be2d96742fcbb669e
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
-ms.translationtype: HT
+ms.workload: multiple
+ms.openlocfilehash: b91e9bae56333dcb07e19922c9a9461b23ab8e66
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrowanie i uaktualnianie projektów programu Visual Studio
 
@@ -47,7 +48,7 @@ Jeśli nie widzisz projektu lub typ pliku wyświetlany w tym miejscu należy, za
 
 | Typ projektu | Obsługa |
 | --- | --- |
-| Projekty platformy .NET core (xproj) | Projektów utworzonych za pomocą programu Visual Studio 2015 użyć wersji zapoznawczej narzędzi, które obejmują plik projektu xproj. Po otwarciu pliku xproj z programu Visual Studio 2017 pojawi się monit migrację pliku do formatu .csproj (kopia zapasowa pliku xproj staje się). Ten format .csproj dla platformy .NET Core projektów nie jest obsługiwany, w programie VS2015 i starszych wersji.  Format xproj nie jest obsługiwany w Visual Studio 2017 innych niż podczas migracji do .csproj. Aby uzyskać więcej informacji, zobacz [Migrowanie .NET Core projekty do formatu .csproj](https://docs.microsoft.com/dotnet/core/migration/#visual-studio-2017).|
+| Projekty platformy .NET core (xproj) | Projektów utworzonych za pomocą programu Visual Studio 2015 użyć wersji zapoznawczej narzędzi, które obejmują plik projektu xproj. Po otwarciu pliku xproj z programu Visual Studio 2017 pojawi się monit migrację pliku do formatu .csproj (kopia zapasowa pliku xproj staje się). Ten format .csproj dla platformy .NET Core projektów nie jest obsługiwany, w programie VS2015 i starszych wersji.  Format xproj nie jest obsługiwany w Visual Studio 2017 innych niż podczas migracji do .csproj. Aby uzyskać więcej informacji, zobacz [Migrowanie .NET Core projekty do formatu .csproj](/dotnet/core/migration/#visual-studio-2017).|
 | Aplikacja sieci Web ASP.NET i aplikacji sieci Web ASP.NET Core z włączoną usługą Application Insights | Dla każdego użytkownika programu Visual Studio zasobów informacje są przechowywane w rejestrze dla każdego wystąpienia użytkownika. Służy to kiedy użytkownik nie ma projektu i chce wyszukiwanie danych Azure Application Insights. Visual Studio 2015 korzysta z lokalizacji w rejestrze innego niż Visual Studio 2017 i nie powoduje konfliktu.<br/><br/>Gdy użytkownik tworzy aplikacji sieci Web ASP.NET lub aplikacji sieci Web platformy ASP.NET Core, dany zasób jest przechowywany w pliku .suo. Użytkownik może otworzyć projekt w programie Visual Studio 2015 lub 2017 i informacje zasobów będą używane zarówno dla programu Visual Studio obsługuje projekty i rozwiązania używany przez obie wersje. Użytkownicy muszą uwierzytelnić się raz dla każdego produktu. Na przykład, jeśli projekt jest utworzone za pomocą programu Visual Studio 2015 i otwarte w Visual Studio 2017, użytkownik będzie musiał uwierzytelniania w programie Visual Studio 2017 r. |
 | Formularz sieci Web lub formularz Windows C#/Visual Basic | Projekt można otworzyć w programie Visual Studio 2017 i programu Visual Studio 2015. |
 | Baza danych projektów testów jednostkowych (.csproj, .vbproj)    | Starsze jednostka danych zostanie załadowany w Visual Studio 2017 projekty testowe, ale będzie używać pamięci podręcznej GAC d wersję zależności. Aby uaktualnić jednostkowy projekt testowy, aby użyć najnowszej zależności kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz **Konwertuj na projekt testowania jednostki programu SQL Server...** . |

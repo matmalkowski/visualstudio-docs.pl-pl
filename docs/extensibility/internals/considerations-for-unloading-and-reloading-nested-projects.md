@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd45ebf8be2732cded5c84f18338f104b76840cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Zagadnienia dotyczące zwalniania i przeładunku zagnieżdżonych projektów
 Podczas implementowania projektu zagnieżdżonego typy, można wykonać dodatkowe kroki, jeśli zwolnisz i załaduj ponownie projektów. Poprawnie o do rozwiązania zdarzeń, musi poprawnie wygenerować `OnBeforeUnloadProject` i `OnAfterLoadProject` zdarzenia.  
@@ -35,4 +36,4 @@ Podczas implementowania projektu zagnieżdżonego typy, można wykonać dodatkow
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
- [Projekty zagnieżdżenia](../../extensibility/internals/nesting-projects.md)
+ [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

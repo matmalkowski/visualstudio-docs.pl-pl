@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220e6d9bb9d360a51f9a83b5d0b4420cf64aef91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b23876c454a447f9a7e47d866f81208b813a17ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Używane w ciągi podstawienia. Pkgdef i. Pliki Pkgundef
 Można użyć ciągów podstawienia wymienione poniżej w .pkgdef i pliki .pkgundef zdefiniowane dla Visual Studio izolowany aplikacji powłoki.  

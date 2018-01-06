@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57e6d01e918256217e94077f6414651e50dd4c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 018103ed0ede32b65403821e36128bca6fd083a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem — Element
   Reprezentuje element danych niestandardowych, który jest skojarzony z elementem projektu programu SharePoint, w formacie klucza i wartości. Klucz i wartość muszą być ciągami.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|**Klucz**|Wymagane **xs:string** atrybutu.<br /><br /> Klucz, który jest używany do przechowywania i pobierania elementu danych.|  
+|**Key**|Wymagane **xs:string** atrybutu.<br /><br /> Klucz, który jest używany do przechowywania i pobierania elementu danych.|  
 |**Wartość**|Wymagane **xs:string** atrybutu.<br /><br /> Wartość elementu danych.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 |**Może być pusta.**|Nie|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu elementu projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Element projektu SharePoint — dokumentacja schematu](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

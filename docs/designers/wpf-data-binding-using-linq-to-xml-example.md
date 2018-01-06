@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f009537fb3bd3920f5b3e81c65570c7119b59c4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb05851313626884b817aac3368fa9fb1793b97d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>Powiązanie danych WPF za pomocą LINQ do XML przykładu
 Ta sekcja zawiera przykładowe Windows Presentation Foundation (WPF), który wiąże składników interfejsu użytkownika do osadzonego źródła danych XML. Nazwa w tym przykładzie (i projekt programu Visual Studio, który go zawiera) jest *LinqToXmlDataBinding*.  
@@ -25,8 +26,8 @@ Ta sekcja zawiera przykładowe Windows Presentation Foundation (WPF), który wi�
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Porady: tworzenie i uruchamianie przykład LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Zawiera instrukcje krok po kroku dotyczące sposobu tworzenia, wypełnij i kompilowania projektu programu Visual Studio, w tym przykładzie.|  
-|[Wskazówki: Przykład LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)|Zawiera pliki źródłowe podstawowego projektu i opis sposobu używania LINQ do XML dla powiązania danych w ramach tego kodu.|  
+|[Instrukcje: kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Zawiera instrukcje krok po kroku dotyczące sposobu tworzenia, wypełnij i kompilowania projektu programu Visual Studio, w tym przykładzie.|  
+|[Przewodnik: LinqToXmlDataBinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)|Zawiera pliki źródłowe podstawowego projektu i opis sposobu używania LINQ do XML dla powiązania danych w ramach tego kodu.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Powiązanie danych WPF za pomocą LINQ do XML](../designers/wpf-data-binding-with-linq-to-xml.md)
+ [Powiązanie danych WPF za pomocą LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)

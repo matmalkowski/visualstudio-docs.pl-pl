@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8d2f56c29121a4be06f00198edd235007fc1cd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punkty przerwania w starsza wersja usługi języka
 Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w określonym punkcie podczas, gdy jest uruchamiana w debugerze. Użytkownika można umieścić punkt przerwania w żadnych wierszy w pliku źródłowym, ponieważ edytor nie ma informacji o to, co stanowi prawidłowej lokalizacji punktu przerwania. Po uruchomieniu debugera, wszystkie oznaczone punkty przerwania (nazywane oczekujących punktów przerwania) są powiązane z odpowiednią lokalizację w uruchomiony program. W tym samym czasie, które są weryfikowane punktów przerwania, aby upewnić się, że ich oznaczanie prawidłowy kod lokalizacji. Na przykład punkt przerwania w komentarz nie jest prawidłowa, ponieważ nie istnieje żaden kod w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowy punktów przerwania.  

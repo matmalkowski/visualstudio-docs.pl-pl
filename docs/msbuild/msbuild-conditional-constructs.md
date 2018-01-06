@@ -26,11 +26,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb6244ceed63fead2925c0af7d98669b1bf5bfc2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c95420accf377cc4debaae88e1290c3056b5001a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]udostępnia mechanizm dla dowolnego / lub przetwarzania z [wybierz](../msbuild/choose-element-msbuild.md), [podczas](../msbuild/when-element-msbuild.md), i [w przeciwnym razie](../msbuild/otherwise-element-msbuild.md) elementów.  
@@ -83,4 +84,4 @@ ms.lasthandoff: 10/31/2017
  [Choose — Element (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [Gdy Element (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise — Element (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf6a2a2a663854d79a33eb84bb135d349a185532
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="report-based-on-visible-time-range"></a>Raport bazujący na widocznym zakresie czasu
 Widok profil zawiera raporty, które są oparte na aktualnie widocznym zakresie czasu i kanałów. Aby wyświetlić szczegóły dotyczące różnych podzestawy danych, kliknij przycisk elementów w legendzie.  

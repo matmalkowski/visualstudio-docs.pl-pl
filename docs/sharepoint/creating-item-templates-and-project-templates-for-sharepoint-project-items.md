@@ -22,11 +22,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7ea1c76cda46313458dcac01b415e7541732a26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1946d31d1e0f508267300c14551b0a8efff81587
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint
   Podczas definiowania niestandardowego typu elementu projektu SharePoint można skojarzyć go z elementu lub szablon projektu, dzięki czemu inne deweloperzy mogą używać elementu projektu w programie Visual Studio. Można również utworzyć Kreatora szablonu.  
@@ -90,6 +91,6 @@ ms.lasthandoff: 10/31/2017
  [Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
- [Tworzenie szablony projektów i elementów](/visualstudio/ide/creating-project-and-item-templates)  
+ [Tworzenie szablonów projektu i elementu](/visualstudio/ide/creating-project-and-item-templates)  
   
   

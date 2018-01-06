@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1419f4e45aefed59aa36b249568a53a47ad3c459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Wprowadzenie do rozszerzalności debugera
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Zawiera informacje potrzebne do tworzenia i dostosowywania debugera składniki używane do debugowania programów z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 -   ATL COM  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przewodnik po rozszerzanie debugera](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
+ [Plan rozwoju rozszerzania debugera](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
  Zawiera opis procesu wdrażania debugowania w produkcie, w zależności od kompilujący i jego dane wyjściowe.  
   
  [Składniki debugera](../../extensibility/debugger/debugger-components.md)  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)  
  W tym artykule wyjaśniono, jak aparat debugowania (DE) działa jednocześnie w ramach kodu, dokumentacji i konteksty Obliczanie wyrażenia. Opisuje, dla każdego z trzech kontekstów, lokalizacji, pozycja lub oceny odpowiednie do niego.  
   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)  
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
  Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i obliczaniu wyrażeń.

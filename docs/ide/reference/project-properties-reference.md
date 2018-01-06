@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 95ffd0009e50f01e40a3182bfbf6c8c6947836c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66bd8d44fdd7ddfed502b72dcb60853fb63d3671
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-properties-reference"></a>Odwołanie do właściwości projektu
 Dowiedz się więcej o sposobie konfigurowania i dostosowywania właściwości projektu.  
@@ -30,7 +31,7 @@ Dowiedz się więcej o sposobie konfigurowania i dostosowywania właściwości p
 |-----------|-----------------|  
 |[Strona aplikacji, Projektant projektu (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Ta strona służy do określania ustawień aplikacji i właściwości [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu.|  
 |[Strona aplikacji, Projektant projektu (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Ta strona służy do określania ustawień aplikacji i właściwości [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu.|  
-|[Strona zdarzenia kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|W tym okienku umożliwia określenie instrukcje konfiguracji kompilacji.|  
+|[Strona Zdarzenia kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|W tym okienku umożliwia określenie instrukcje konfiguracji kompilacji.|  
 |[Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)|Użyj w tym okienku, aby określić właściwości konfiguracji kompilacji dla [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu.|  
 |[Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|Ta strona służy do określania właściwości kompilacji [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektów.|  
 |||  

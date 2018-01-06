@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 368f6ecb67bc8b01df975da6e68e95b553a0e31d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 99f073e7f27fc98c1c751ae8153adfeea0018e2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-context"></a>Kontekst projektu
 Gdy użytkownik dodaje lub współpracuje z projektów i elementów projektu, IDE korzysta pojęcie kontekst projektu, aby określić, jak różne operacje powinny być wykonywane.  
@@ -30,4 +31,4 @@ Gdy użytkownik dodaje lub współpracuje z projektów i elementów projektu, ID
   
 ## <a name="see-also"></a>Zobacz też  
  [Priorytet projektu](../../extensibility/internals/project-priority.md)   
- [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
+ [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)

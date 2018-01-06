@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie
 
@@ -57,6 +58,6 @@ Określa, ile informacji jest wyświetlana w **dane wyjściowe** okna dla kompil
 Określa, ile informacje są zapisywane w pliku dziennika kompilacji, który znajduje się pod adresem \\... \\ *ProjectName*\Debug\\*ProjectName*. dziennika.  
 
 ## <a name="see-also"></a>Zobacz także  
-[Kompilowanie i tworzenia](../../ide/compiling-and-building-in-visual-studio.md)  
+[Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)  
 [Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)  
 [Okno dialogowe Opcje, projekty i rozwiązania, projekty sieci Web](options-dialog-box-projects-and-solutions-web-projects.md)

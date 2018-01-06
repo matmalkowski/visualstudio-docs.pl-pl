@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b935e0d09bb80347ee17c796f83846cef02a39f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5316a6f7f206ce5f28c6a76d13bf6dc8e4143125
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-clean-a-build"></a>Porady: czyszczenie kompilacji
 Podczas oczyszczania kompilacji wszystkich plików pośrednich i wynikowych są usuwane, pozostawiając tylko pliki projektów i składnika. Z plików projektu i składników nowe wystąpienia klasy obiektów i pliki wyjściowe mogą następnie zostać skompilowane. Biblioteka typowych zadań, które jest udostępniane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje [Exec](../msbuild/exec-task.md) zadanie, które służy do uruchamiania polecenia systemowe. Aby uzyskać więcej informacji w bibliotece zadań, zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
@@ -106,4 +107,4 @@ Podczas oczyszczania kompilacji wszystkich plików pośrednich i wynikowych są 
  [Makedir — zadanie](../msbuild/makedir-task.md)   
  [Removedir — zadanie](../msbuild/removedir-task.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
- [Obiekty docelowe](../msbuild/msbuild-targets.md)
+ [Docelowe elementy](../msbuild/msbuild-targets.md)

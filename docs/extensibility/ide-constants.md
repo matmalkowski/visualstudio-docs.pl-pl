@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>Stałe środowiska IDE
 <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe, które są specyficzne dla zintegrowane środowisko programistyczne (IDE) i które zostały wcześniej zdefiniowane tylko w plikach nagłówka.  
@@ -119,4 +120,4 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Definicja IDE poleceń do rozszerzania systemów projektów](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+ [Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

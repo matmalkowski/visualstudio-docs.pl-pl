@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 870469b77eb2f9fcf562602dd651c84fa71020ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-expressions"></a>Obliczenia wyrażenia
 Wyrażenia są tworzone na podstawie ciągi przekazywane z automatycznych, Watch, QuickWatch lub bezpośredniego systemu windows. Wyrażenie jest obliczane, generuje drukowalnych ciąg znaków zawierający nazwę i typ zmiennej lub argumentu i jego wartość. Ten ciąg jest wyświetlane w oknie odpowiedniego IDE.  
@@ -37,4 +38,4 @@ Wyrażenia są tworzone na podstawie ciągi przekazywane z automatycznych, Watch
 ## <a name="see-also"></a>Zobacz też  
  [Ramki stosu](../../extensibility/debugger/stack-frames.md)   
  [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md)   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

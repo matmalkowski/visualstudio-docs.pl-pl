@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Używane przez określonego polecenia flag bitowych
 Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źródła może być modyfikowany przez ustawienie jednego lub więcej bitów w pojedynczej wartości. Te wartości są określane jako flag bitowych. Różne flag bitowych używany przez interfejs API dodatku typu Plug-in kontroli źródła są szczegółowo opisane w tym miejscu pogrupowane według funkcji, która używa ich.  
@@ -36,7 +37,7 @@ Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źród�
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Wtyczka do kontroli źródła powinien automatycznie wykrywa, czy plik jest tekstowy czy binarny.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ pliku jest tekst.|  
-|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest plikiem binarnym. **Uwaga:** `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` flagi wzajemnie się wykluczają.   Należy ustawić dokładnie jedną lub nie.|  
+|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest plikiem binarnym. **Uwaga:** `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` flagi wzajemnie się wykluczają. Należy ustawić dokładnie jedną lub nie.|  
 |`SCC_ADD_STORELATEST`|0x02|Przechowywanie tylko najnowszą wersję (nie wystąpiły).|  
   
 ## <a name="diff-flags"></a>Flagi różnicowego  
@@ -108,4 +109,4 @@ Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źród�
 |`SCC_OPT_SCO_YES`|1L|Nie wtyczki wyewidencjonowania interfejsu użytkownika, nie katalog roboczy.|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)
+ [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

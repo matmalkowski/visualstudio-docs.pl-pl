@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d295d73560a560caa7f374965a280cf48ad66c2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3251db736e42d0b5e49d92b17720605c507d2184
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries — Funkcja
 Zwalnia serii znacznika. Nie używaj obiekt serii znacznika po inaczej wydanie aplikacji mogą ulec awarii. Błąd zwolnienia serii znacznika spowoduje przeciek pamięci.  
@@ -42,4 +43,4 @@ HRESULT CvReleaseMarkerSeries(
  **Nagłówek:** cvmarkers.h  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)
+ [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

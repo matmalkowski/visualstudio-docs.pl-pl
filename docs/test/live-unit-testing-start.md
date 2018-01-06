@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 92c829e2a0ee0e3fb793d0fd6230460f9102973a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z Live testów jednostkowych programu Visual Studio
 
@@ -55,7 +56,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 1. W **Dodawanie nowego projektu** okna dialogowego, węzeł wybierz C#, następnie wybierz **.NET Standard**. 
 
    > [!NOTE]
-   > Ponieważ nasza biblioteka jest przeznaczony dla platformy .NET Standard zamiast konkretnej implementacji .NET, może zostać wywołana z implementacji .NET obsługującej danej wersji programu .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Ponieważ nasza biblioteka jest przeznaczony dla platformy .NET Standard zamiast konkretnej implementacji .NET, może zostać wywołana z implementacji .NET obsługującej danej wersji programu .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](/dotnet/standard/net-standard).
 
 1. Wybierz **biblioteki klas (.NET Standard)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibrary` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
@@ -83,7 +84,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 1. W **Dodawanie nowego projektu** okno dialogowe, wybierz węzeł języka Visual Basic, a następnie wybierz **.NET Standard**. 
 
    > [!NOTE]
-   > Ponieważ nasza biblioteka jest przeznaczony dla platformy .NET Standard zamiast konkretnej implementacji .NET, może zostać wywołana z implementacji .NET obsługującej danej wersji programu .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Ponieważ nasza biblioteka jest przeznaczony dla platformy .NET Standard zamiast konkretnej implementacji .NET, może zostać wywołana z implementacji .NET obsługującej danej wersji programu .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](/dotnet/standard/net-standard).
 
 1. Wybierz **biblioteki klas (.NET Standard)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibrary` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
@@ -103,7 +104,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
      
       - `HasEmbeddedSpaces`Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
     
-1. Kliknij prawym przyciskiem myszy na projekt StringLibrary w **Eksploratora rozwiązań** i wybierz **właściwości**. W **aplikacji** karcie, usuń tekst w **głównej przestrzeni nazw** pola tekstowego, jak przedstawiono na poniższym rysunku. Główna przestrzeń nazw jest definiowana za pomocą [instrukcji Namespace](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement) w kodzie źródłowym.
+1. Kliknij prawym przyciskiem myszy na projekt StringLibrary w **Eksploratora rozwiązań** i wybierz **właściwości**. W **aplikacji** karcie, usuń tekst w **głównej przestrzeni nazw** pola tekstowego, jak przedstawiono na poniższym rysunku. Główna przestrzeń nazw jest definiowana za pomocą [instrukcji Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) w kodzie źródłowym.
 
    ![Okno dialogowe właściwości projektu dla projektu Visual Basic](./media/lut-start/vb-properties.png)
  
@@ -249,7 +250,7 @@ Aby rozszerzyć pokrycia kodu do `StartsWithLower` metody, wykonaj następujące
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. Modyfikowanie `DirectCallWithNullOrEmpty` metody, dodając następujący kod bezpośrednio po wywołaniu [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metody.
+1. Modyfikowanie `DirectCallWithNullOrEmpty` metody, dodając następujący kod bezpośrednio po wywołaniu [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metody.
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -266,7 +267,7 @@ Aby rozszerzyć pokrycia kodu do `StartsWithLower` metody, wykonaj następujące
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. Modyfikowanie `DirectCallWithNullOrEmpty` metody, dodając następujący kod bezpośrednio po wywołaniu [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metody.
+1. Modyfikowanie `DirectCallWithNullOrEmpty` metody, dodając następujący kod bezpośrednio po wywołaniu [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metody.
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -307,7 +308,7 @@ W tej sekcji można odkryć sposób korzystania na żywo testów jednostkowych z
     
 1. Wybierz **debugowania wybrane** można debugować testu nie powiodło się. 
  
-1. Visual Studio wykonuje testu w trybie debugowania. Naszym teście przypisuje każdy ciąg w tablicy zmiennej o nazwie `phrase` i przekazuje je do `HasEmbeddedSpaces` metody. Wykonanie programu wstrzymuje i wywołuje czasu debugera pierwsze wyrażenie assert jest `false`. Okno dialogowe wyjątku, będącą wynikiem nieoczekiwaną wartość w [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) wywołanie metody przedstawiono na poniższej ilustracji.  
+1. Visual Studio wykonuje testu w trybie debugowania. Naszym teście przypisuje każdy ciąg w tablicy zmiennej o nazwie `phrase` i przekazuje je do `HasEmbeddedSpaces` metody. Wykonanie programu wstrzymuje i wywołuje czasu debugera pierwsze wyrażenie assert jest `false`. Okno dialogowe wyjątku, będącą wynikiem nieoczekiwaną wartość w [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) wywołanie metody przedstawiono na poniższej ilustracji.  
 
    ![Na żywo testów jednostkowych okno dialogowe wyjątku.](media/lut-start/exception-dialog-cs.png) 
  
@@ -340,7 +341,7 @@ W tej sekcji można odkryć sposób korzystania na żywo testów jednostkowych z
     
 1. Wybierz **debugowania wybrane** można debugować testu nie powiodło się. 
  
-1. Visual Studio wykonuje testu w trybie debugowania. Naszym teście przypisuje każdy ciąg w tablicy zmiennej o nazwie `phrase` i przekazuje je do `HasEmbeddedSpaces` metody. Wykonanie programu wstrzymuje i wywołuje czasu debugera pierwsze wyrażenie assert jest `false`. Okno dialogowe wyjątku, będącą wynikiem nieoczekiwaną wartość w [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) wywołanie metody przedstawiono na poniższej ilustracji.  
+1. Visual Studio wykonuje testu w trybie debugowania. Naszym teście przypisuje każdy ciąg w tablicy zmiennej o nazwie `phrase` i przekazuje je do `HasEmbeddedSpaces` metody. Wykonanie programu wstrzymuje i wywołuje czasu debugera pierwsze wyrażenie assert jest `false`. Okno dialogowe wyjątku, będącą wynikiem nieoczekiwaną wartość w [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) wywołanie metody przedstawiono na poniższej ilustracji.  
 
    ![Na żywo testów jednostkowych okno dialogowe wyjątku.](media/lut-start/exception-dialog-vb.png) 
  

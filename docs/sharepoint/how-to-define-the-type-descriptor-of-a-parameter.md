@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19722a4cffb0e3708939734253b0f2c4a408389e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 64d741146c0ee2421ab663f78601bfba8c373f86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Porady: określanie deskryptora typu dla parametru
   Deskryptor typu zawiera właściwości opisujące typ danych parametru. Deskryptor typu można zdefiniować pola, jednostki lub kolekcji jednostek. Aby uzyskać więcej informacji, zobacz [deskryptora typu](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  

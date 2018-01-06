@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0ee36596521f26ff4dd948e697640d0c82d796f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e1a3810f6f0c2de6bffb2f97c2f1fc446ea3b6d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdbg-class"></a>VsgDbg — Klasa
 Reprezentuje interfejs dla sterowanie programowe składnika w aplikacji diagnostyki grafiki.  
@@ -35,7 +36,7 @@ class VsgDbg;
 |Nazwa|Opis|  
 |----------|-----------------|  
 |[VsgDbg::VsgDbg (Konstruktor)](vsgdbg-vsgdbg-constructor.md)|Tworzy wystąpienie klasy `VsgDbg` klasy i opcjonalnie przygotowuje składników w aplikacji diagnostyki grafiki aktywnie przechwytywanie i rejestrowanie informacji graficznych.|  
-|[VsgDbg:: ~ VsgDbg (destruktor)](vsgdbg-tilde-vsgdbg-destructor.md)|Niszczy wystąpienia `VsgDbg` klasy.|  
+|[VsgDbg::~VsgDbg (Destruktor)](vsgdbg-tilde-vsgdbg-destructor.md)|Niszczy wystąpienia `VsgDbg` klasy.|  
   
 ### <a name="public-methods"></a>Metody publiczne  
   

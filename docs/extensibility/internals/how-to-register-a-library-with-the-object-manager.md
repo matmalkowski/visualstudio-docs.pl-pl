@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6782e1cb84f4fbbe63a0e69a5c684d44ec7ccd21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Porady: rejestrowanie biblioteki z Menedżera obiektów
 Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki Znajdź Symbol**, umożliwiają wyświetlanie symbole w projekcie lub składników zewnętrznych. Symbole obejmują obszary nazw, klasy, interfejsy, metody i inne elementy języka. Biblioteki śledzenie tych symboli i ujawniać je, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów, które wypełnia narzędzia z danymi.  
@@ -170,4 +171,4 @@ Przeglądanie symbole narzędzi, takich jak **widoku klasy**, **przeglądarki ob
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzalność usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Obsługa narzędzia do przeglądania Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Porady: udostępnianie list symboli udostępniane przez bibliotekę do Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Instrukcje: uwidacznianie listy symboli udostępnianych przez bibliotekę dla menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

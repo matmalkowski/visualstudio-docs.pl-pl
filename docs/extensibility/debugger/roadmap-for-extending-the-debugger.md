@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af86f2b8daeffeb700b619c4ba0d9cbb00700dd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 612017888c78f0994a83a10e3628fc10b667f8d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Przewodnik po rozszerzanie debugera
 Ta dokumentacja zawiera informacje o przewodnik i odwołanie do rozszerzania [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] debugera z [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -34,21 +35,21 @@ Ta dokumentacja zawiera informacje o przewodnik i odwołanie do rozszerzania [!I
   
      [Szacowanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [Obliczenia wyrażenia](../../extensibility/debugger/evaluating-expressions.md)  
+     [Ocenianie wyrażeń](../../extensibility/debugger/evaluating-expressions.md)  
   
-     [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md)  
+     [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md)  
   
-     [Szacowanie wyrażeń w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+     [Ocena wyrażeń w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
-     [Pisanie wspólnej ewaluatora wyrażenia środowiska uruchomieniowego języka](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+     [Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
 -   Obiekty docelowe, a system operacyjny lub inne środowisko wykonawcze zastrzeżonych, należy napisać własny DE. Samouczek, który tworzy prosty DE, przy użyciu ATL COM jest dostępne. Więcej informacji znajduje się w następujących tematach:  
   
-     [Tworzenie aparat debugowania niestandardowych](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+     [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
      [Samouczek: Tworzenie aparat debugowania, za pomocą biblioteki ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
-     [Implementacja dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)  
+     [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
      [Przykłady](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   

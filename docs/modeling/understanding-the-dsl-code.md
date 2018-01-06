@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0a4cc7b61426479a45e87568b040906426870233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 294d10eb8a8fab361ddf5b3dadf4d779a95947a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w generuje rozwiązania języka specyficznego dla domeny (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowanego interfejsu API.  
@@ -350,4 +351,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
  [Opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md)   
  [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)   
- [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e487acefcb06c4fa0cd2070bfcf20bd065d500ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elimination-of-sak-files"></a>Eliminacja ~ SAK plików
 W 1.2 interfejsu API dodatku typu Plug-in kontroli źródła ~ SAK pliki zostały zastąpione przez flagi możliwości i nowe funkcje, które wykrywa, czy wtyczka do kontroli źródła obsługuje MSSCCPRJ plików i udostępnionych wyewidencjonowania.  
@@ -54,4 +55,4 @@ W 1.2 interfejsu API dodatku typu Plug-in kontroli źródła ~ SAK pliki został
 >  Jeśli ten klucz rejestru jest ustawiona na DWORD: 00000000, jest odpowiednikiem klucza jest nieistniejącą i Visual Studio nadal podejmuje próbę utworzenia plików tymczasowych. Jednak jeśli klucz rejestru DWORD: 00000001 Visual Studio nie próbował utworzyć plików tymczasowych. Zamiast tego przyjęto założenie, że wtyczka do kontroli źródła nie obsługuje MSSCCPRJ. Plik SCC i nie obsługuje współdzielonymi wyewidencjonowaniami.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Nowości w źródła formantu wtyczka interfejsu API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

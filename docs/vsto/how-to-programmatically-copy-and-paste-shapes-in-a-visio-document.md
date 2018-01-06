@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3454a6514c22f1da82ef95407a0ff6be1fe442c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5b1f3a402d4f39b3648bbcf577ff48a130625b50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Porady: Programowane kopiowanie i wklejanie kształtów w dokumencie programu Visio
   Można programowo kształtów na jednej stronie dokumentu skopiować i wkleić je do nowej strony, w tym samym dokumencie. Można wkleić je do domyślnej lokalizacji (center aktywne okno) lub te same lokalizacje współrzędnych jak miało na stronie oryginalnej.  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
  [Praca z kształtów Visio](../vsto/working-with-visio-shapes.md)   
- [Porady: programowane Dodawanie kształtów do dokumentu programu Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
+ [Instrukcje: Programowe dodawanie kształtów do dokumentu programu Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
   
   

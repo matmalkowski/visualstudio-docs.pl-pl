@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>Widok danych metody próbkowania profilera
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zostały wygenerowane za pomocą metody pobierania próbek.  
@@ -60,7 +61,7 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profil
  Wyświetla wykres graficzny relacji między wybranej funkcji i funkcji o nazwie, które zostały wywołane przez wybranej funkcji.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)  
+ [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)  
  Informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zostały wygenerowane za pomocą metody instrumentacji.  
   
  [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  

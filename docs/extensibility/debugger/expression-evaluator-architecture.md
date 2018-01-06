@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6805b97da8e8f742b1b6c0bb3298e9324bb1f72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-architecture"></a>Architektura ewaluatora wyrażenia
 > [!IMPORTANT]
@@ -53,10 +54,10 @@ ms.lasthandoff: 10/31/2017
  [Kontekst oceny](../../extensibility/debugger/evaluation-context.md)  
  Zawiera argumenty, które są przekazywane, gdy DE wywołuje EE.  
   
- [Wyrażenie klucza ewaluatora interfejsów](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
+ [Interfejsy ewaluatora wyrażeń klucza](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
  Opisuje kluczowe interfejsy potrzebne podczas zapisywania EE oraz kontekst oceny.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie Ewaluator wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)   
- [Zmiana wartości zmiennej lokalnej](../../extensibility/debugger/changing-the-value-of-a-local.md)
+ [Zmienianie wartości zmiennej lokalnej](../../extensibility/debugger/changing-the-value-of-a-local.md)

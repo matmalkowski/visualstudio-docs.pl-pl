@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1490c350a9c2c5fc91d516e2658c47a8246eb5d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Obsługa projektu i właściwości konfiguracji
 **Właściwości** okna w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) można wyświetlić właściwości projektu i konfiguracji. Strony właściwości można określić typu projektu co użytkownik może ustawiać właściwości aplikacji.  
@@ -96,4 +97,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie i usuwanie strony właściwości](../../extensibility/adding-and-removing-property-pages.md)   
  [Projekty](../../extensibility/internals/projects.md)   
- [Opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+ [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

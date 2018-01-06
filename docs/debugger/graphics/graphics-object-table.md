@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
 Tabela obiektów graficznych w Visual Studio grafiki analizy pomaga w zrozumieniu obiektów Direct3D, które obsługują ramka gry lub aplikacji.  
@@ -87,7 +88,7 @@ Tabela obiektów graficznych w Visual Studio grafiki analizy pomaga w zrozumieni
 |**float2**|Wektor, który zawiera dwa 32-bitowych wartości zmiennoprzecinkowych.|  
 |**float3**|Wektor, który zawiera trzy 32-bitowych wartości zmiennoprzecinkowych.|  
 |**FLOAT4**|Wektor, który zawiera cztery 32-bitowych wartości zmiennoprzecinkowych.|  
-|**bajtów**|Wartość 8-bitową liczbę całkowitą ze znakiem.|  
+|**byte**|Wartość 8-bitową liczbę całkowitą ze znakiem.|  
 |**bajt 2**|Wartość 16-bitową liczbę całkowitą ze znakiem.|  
 |**4-bajtowy**|Wartość całkowita 32-bitowych. Taki sam jak **int**.|  
 |**8-bajtową**|Wartość 64-bitowej podpisanej liczby całkowitej. Taki sam jak **int64**.|  
@@ -103,15 +104,15 @@ Tabela obiektów graficznych w Visual Studio grafiki analizy pomaga w zrozumieni
 |**half2**|Wektor, który zawiera dwa 16-bitowych wartości zmiennoprzecinkowych.|  
 |**half3**|Wektor, który zawiera trzy 16-bitowych wartości zmiennoprzecinkowych.|  
 |**half4**|Wektor, który zawiera cztery 16-bitowych wartości zmiennoprzecinkowych.|  
-|**podwójne**|64-bitowych wartości zmiennoprzecinkowych.|  
+|**double**|64-bitowych wartości zmiennoprzecinkowych.|  
 |**int**|Wartość całkowita 32-bitowych. Taki sam jak **4-bajtowych**.|  
 |**Int64**|Wartość 64-bitowej podpisanej liczby całkowitej. Taki sam jak **8-bajtową**.|  
 |**xint**|32-bitową wartość szesnastkową. Taki sam jak **x4byte**.|  
 |**xint64**|Wartość szesnastkowa 64-bitowych. Taki sam jak **x8byte**.|  
 |**uint**|Wartość 32-bitowej liczby całkowitej bez znaku. Taki sam jak **u4byte**.|  
 |**UInt64 —**|Wartość 64-bitowej liczby całkowitej bez znaku. Taki sam jak **u8byte**.|  
-|**wartość logiczna**|Wartość logiczna (`true` lub `false`) wartość. Każda wartość logiczna jest reprezentowany przez 32-bitową wartość.|  
+|**bool**|Wartość logiczna (`true` lub `false`) wartość. Każda wartość logiczna jest reprezentowany przez 32-bitową wartość.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Diagnostyka grafiki (debugowania grafiki DirectX)](visual-studio-graphics-diagnostics.md)   
- [Wskazówki: Brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)
+ [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)

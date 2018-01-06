@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dff0b96bc40f857224df5222b43efac914de4f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — Omówienie
 W tym omówieniu przedstawiono podstawowe profilowania. Deweloperzy, którzy dopiero zaczynasz korzystać z wydajności pracy zostanie wyświetlony jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania pomoże im szybko stać się wydajność i zwiększyć wydajność ich kodu. Deweloperzy, którzy są w profilowania można zapoznać się z określonych funkcji w narzędziach profilowania i procesów.  

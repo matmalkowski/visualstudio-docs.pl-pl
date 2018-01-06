@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d6d7f0bc3d55e59fec506d6387f0f6254300ee8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 567d1c8248ff00a1387ccd1c40a8c8c658b551ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 Można użyć strony **środowiska** folderu w **opcje** okno dialogowe, aby ustawić jak niektóre elementy zintegrowane środowisko programistyczne (IDE) Wyświetl i zachowania. Dostępne stron środowiska, z menu, wybierając **narzędzia**, **opcje**, a następnie wybierając **środowiska**.  
@@ -46,4 +47,4 @@ Można użyć strony **środowiska** folderu w **opcje** okno dialogowe, aby ust
 |Zmienić domyślną stronę domową i wyszukiwania, zmienić systemowy edytor źródeł i konfigurować opcje programu Internet Explorer.|[Web przeglądarki, środowisko, opcje — Okno dialogowe](../../ide/reference/web-browser-environment-options-dialog-box.md)|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Opcje — okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
+ [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

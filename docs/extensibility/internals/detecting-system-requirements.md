@@ -15,11 +15,12 @@ caps.latest.revision: "50"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92c4d51d575ffd6e5723bf80b8adc700b83f6afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc16c51b72ced37072c4ddf6d47bf347cf57c0f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="detecting-system-requirements"></a>Wykrywanie wymagania systemowe
 Pakiet VSPackage nie może działać, chyba że jest zainstalowany program Visual Studio. Gdy Instalator systemu Microsoft Windows umożliwia zarządzanie instalacjami VSPackage, można skonfigurować Instalatora, aby wykryć, czy jest zainstalowany program Visual Studio. Można również skonfigurować go, aby sprawdzić systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określonej ilości pamięci RAM.  
@@ -49,4 +50,4 @@ Pakiet VSPackage nie może działać, chyba że jest zainstalowany program Visua
  Nie można zarejestrować poprawnie VSPackage, jeśli Visual Studio jest uruchomiony, gdy jest zainstalowany pakiet VSPackage. Instalator musi Wykryj, kiedy jest uruchomiony program Visual Studio i następnie odmówić zainstalować ten program. Instalator Windows nie umożliwia Użyj wpisów tabeli, aby włączyć wykrywanie takich modyfikacji. Zamiast tego utwórz akcji niestandardowej, w następujący sposób: Użyj `EnumProcesses` funkcji, aby wykryć procesu devenv.exe, a następnie ustaw właściwości Instalatora, który jest używany w warunek uruchomienia lub warunkowo wyświetlenia monitu, aby zamknąć okno dialogowe Program Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instalowanie VSPackages za pomocą Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+ [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

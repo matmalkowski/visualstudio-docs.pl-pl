@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7da3855a699ae350c24646386d3b1a7e39520b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78e052b11046f3af517a97da7fea089625613fb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start"></a>Uruchamianie
 **Start** opcja to opcja VSPerfCmd.exe, która inicjuje profilera do określonej metody profilowania.  
@@ -60,7 +61,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>Nieprawidłowe opcje  
  Nie można używać następujących opcji z **Start** opcji wiersza polecenia.  
   
- **Stan**  
+ **Status**  
  **Stan** dotyczy tych procesów, które są profilowaniu. Wyświetlane są procesów i wątków oraz ich bieżący stan profilu (wł. / wył.). Na przykład, jeśli proces zostanie zatrzymana **stan** nie będzie wskazywać to w raporcie. **Stan** opisano proces albo jest profilowane lub nie.  
   
  **Zamknięcie**[**:**`Timeout`]  

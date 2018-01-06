@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0fd05d9b8e45b80c0c8bddf3ea1f776c385378b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c1ff7797b16bddb039b5871832736665bd8d054
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-diagnostics-examples"></a>Przykłady diagnostyki grafiki
 Następujące przykłady przedstawiają sposób debugowania problemy z renderowaniem w aplikacjach opartych na technologii DirectX przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki.  
@@ -24,9 +25,9 @@ Następujące przykłady przedstawiają sposób debugowania problemy z renderowa
 ## <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych  
  Zanim użyjesz diagnostyki grafiki do diagnozowania problemów renderowania w aplikacji należy przechwytywanie informacji graficznych z aplikacji jest uruchomiona. Z aplikacji, która działa lokalnie lub aplikacji, która jest uruchomiona na komputerze zdalnym lub innych urządzeń, można przechwycić informacji graficznych. Te wskazówki pokazują, jak przechwytywanie informacji graficznych z aplikację ręcznie lub programowo:  
   
--   [Wskazówki: Przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)  
+-   [Przewodnik: przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)  
   
--   [Wskazówki: Programowe przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information-programmatically.md)  
+-   [Przewodnik: programowe przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>Diagnostyka grafiki za pomocą urządzenia opartego na architekturze ARM  
  Można użyć diagnostyki grafiki do debugowania aplikacji Direct3D na urządzeniu z systemem opartego na architekturze ARM przy użyciu zdalnego debugowania. Aby uzyskać więcej informacji, zobacz [porady: użycie diagnostyki grafiki z urządzeniem ARM](how-to-use-graphics-diagnostics-with-an-arm-device.md).  
@@ -39,18 +40,18 @@ Następujące przykłady przedstawiają sposób debugowania problemy z renderowa
   
  Te scenariusze pokazują, jak można użyć diagnostyki grafiki, aby ustalić, dlaczego brakuje obiektu i znaleźć kod, który jest odpowiedzialny.  
   
--   [Wskazówki: Brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)  
+-   [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)  
   
--   [Wskazówki: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)  
+-   [Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [Wskazówki: Brak obiektów spowodowany błędnie skonfigurowanym potokiem](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+-   [Przewodnik: brak obiektów spowodowany błędnie skonfigurowanym potokiem](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>Debugowanie błędów renderowania  
  Obiektu (lub obiektów), nie ma poprawny wygląd jest inny powszechny problem, który deweloperzy grafiki doświadczeniem. Tego rodzaju problemy mogą być trudne do diagnozowania ponieważ niepoprawny wygląd i jego przyczyną może należeć do zakresu od bardzo oczywiste — wiązanie niewłaściwy tekstury — do bardzo niewielkie — usterki w kodzie programu do cieniowania lub nieoczekiwany interakcji między programów do cieniowania. Niektóre problemy mogą być spowodowane przez kombinację błędy.  
   
  Poniżej przedstawiono scenariusz, w którym przedstawiono sposób użycia diagnostyki grafiki do śledzenia problem z renderowaniem nie tak niewielkie, powodowany przez usterkę pomocniczych programu do cieniowania:  
   
--   [Wskazówki: Debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)  
+-   [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>Debugowanie programów do cieniowania obliczeń  
  Można użyć diagnostyki grafiki do debugowania DirectCompute cieniowania obliczenia jądra, które generują niepoprawne wyniki. Z DirectCompute moc obliczeniową procesora GPU służy do wykonywania obliczeń na dużą liczbę elementów danych równolegle. Dla niektórych rodzaje problemów, wykorzystanie procesora GPU mogą wykonywać wiele razy szybciej niż nawet dobrze zoptymalizowanego kodu procesora CPU. Jednak tradycyjnych debugery nie może wykryć kodu uruchamianego na procesorze GPU. Debugowanie tego rodzaju kodu wymaga specjalnych narzędzia, które są często specyficznych dla dostawcy, a nie może być zintegrowana z programu Visual Studio. Aby wprowadzić bardziej spójny debugowania cieniowania obliczenia w zakresie GPU, diagnostyki grafiki rejestruje zdarzenia wysyłania DirectCompute — oprócz zdarzeń renderowania Direct3D —, aby znanych narzędzi można używać do debugowania problemów w kodzie cieniowania obliczenia.  

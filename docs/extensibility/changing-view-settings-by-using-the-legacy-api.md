@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Zmiana ustawień widoku przy użyciu interfejsu API starsza wersja
 Ustawienia podstawowe funkcje edytora, takie jak zawijanie, margines zaznaczania i wirtualną przestrzeń, można zmienić przez użytkownika przez **opcje** okno dialogowe. Jednak istnieje również możliwość zmiany tych ustawień programowo.  
@@ -47,4 +48,4 @@ Ustawienia podstawowe funkcje edytora, takie jak zawijanie, margines zaznaczania
 ## <a name="see-also"></a>Zobacz też  
  [W edytorze Core](../extensibility/inside-the-core-editor.md)   
  [Uzyskiwanie dostępu do theText widoku przy użyciu interfejsu API starsza wersja](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
- [Opcje — okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md)
+ [Opcje, okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md)

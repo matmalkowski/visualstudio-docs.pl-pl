@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 18431ea15b53959234da4b2c6dedb24b8fa2e390
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
 Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy najpierw pobrać pakietów Instalatora dla tych wymagań wstępnych na komputerze deweloperskim. Podczas publikowania aplikacji i wybierz **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co Moja aplikacja**, wystąpi błąd, jeśli pakietów Instalatora nie ma w **pakiety** folderu.  
@@ -53,4 +54,4 @@ Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE
      Teraz można dystrybuować pakiet instalacyjny z aplikacją.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Instalowanie wymagań wstępnych za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c9cf2ed906cd35f201c13cc2f82f8142f598b901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-user-commands-and-actions"></a>Pisanie poleceń i akcji użytkownika
 Dodawanie poleceń do diagramu i odpowiedzi na gesty, takich jak przeciągania i upuszczania, kliknij przycisk, a następnie kliknij dwukrotnie zdarzenia można dostosować języka specyficznego dla domeny.  
@@ -30,9 +31,9 @@ Dodawanie poleceń do diagramu i odpowiedzi na gesty, takich jak przeciągania i
   
 -   [Porady: przechwycić kliknięcie kształtu lub Dekoratora](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) — umożliwiają użytkownikom klikać z elementu do innego elementu, do której się odwołuje.  
   
--   [Porady: dostęp i ograniczyć bieżącego zaznaczenia](../modeling/how-to-access-and-constrain-the-current-selection.md)  
+-   [Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   
--   [Dostosowywanie narzędzia — Element](../modeling/customizing-element-tools.md)  
+-   [Narzędzia dostosowywania elementów](../modeling/customizing-element-tools.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wdrażanie rozwiązań języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)
+ [Wdrażanie rozwiązań dla języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md)

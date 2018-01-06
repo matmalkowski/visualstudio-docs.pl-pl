@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2dfdf4f5a722bf4fea0c4bd3175e33799aa8b8df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków edytora programu Visual Studio
 Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje Odczyt i nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.  
@@ -87,4 +88,4 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
  [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)   
- [Wskazówki: Wyświetlanie uzupełniania](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Przewodnik: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)

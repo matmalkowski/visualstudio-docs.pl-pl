@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator"></a>Ewaluator wyrażeń
 Ewaluatory wyrażeń (EE) sprawdź, czy składnia języka aby przeanalizować i ocena wyrażeń i zmienne w czasie wykonywania, dzięki czemu mogą być odczytywane przez użytkownika, gdy IDE jest w trybie przerwania.  

@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
 
@@ -119,7 +120,7 @@ drzewo informacyjne katalogu. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |File.SaveSelectedItems|Ctrl+S [Globalny]|  
 |File.ViewinBrowser|Ctrl+Shift+W [Globalny]|  
 
-## <a name="project"></a>Project
+## <a name="project"></a>Projekt
 
 |Polecenia|Skróty klawiaturowe [Konteksty]|  
 |--------------|-------------------------------------|  

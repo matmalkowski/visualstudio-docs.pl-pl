@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b55d1d5ec8e84c8d16681ffd0ac738291e1bc39d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 911cc5e7959e5a392ff4ff53945ca5277605f7b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
 Można spakować DSLs kilka w ramach jednego rozwiązania, dzięki czemu są one zainstalowane ze sobą.  
@@ -63,4 +64,4 @@ Można spakować DSLs kilka w ramach jednego rozwiązania, dzięki czemu są one
 ## <a name="see-also"></a>Zobacz też  
  [Integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md)
+ [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)

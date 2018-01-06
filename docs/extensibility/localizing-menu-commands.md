@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77bd698149ca4e73b462fc3ada9256ba5911177e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-menu-commands"></a>Lokalizowanie poleceń Menu
 Możesz podać zlokalizowany tekst menu i narzędzi poleceń, tworząc vsct zlokalizowanych plików i zlokalizowane pliki .resx dla VSPackage, a następnie zaktualizować plików projektu zmiany.  
@@ -159,4 +160,4 @@ Możesz podać zlokalizowany tekst menu i narzędzi poleceń, tworząc vsct zlok
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands Vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
- [Globalizacja i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md)
+ [Globalizowanie i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

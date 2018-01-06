@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polecenia** okna skracając tekst potrzebne do wykonania polecenia. Na przykład zamiast wprowadzania `>File.OpenFile` do wyświetlenia **Otwórz plik** okno dialogowe, można użyć wstępnie zdefiniowanych alias `>of`.  
@@ -37,10 +38,10 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
   
 |Nazwa polecenia|Alias|Pełna nazwa|  
 |------------------|-----------|-------------------|  
-|[Print — polecenie](../../ide/reference/print-command.md)|?|Debug.Print|  
-|[Szybka czujka — polecenie](../../ide/reference/quick-watch-command.md)|??|Debug.quickwatch —|  
+|[Drukuj, polecenie](../../ide/reference/print-command.md)|?|Debug.Print|  
+|[Szybka czujka, polecenie](../../ide/reference/quick-watch-command.md)|??|Debug.quickwatch —|  
 |Dodaj nowy projekt|AddProj|File.AddNewProject|  
-|[Alias — polecenie](../../ide/reference/alias-command.md)|Alias|Tools.alias —|  
+|[Alias, polecenie](../../ide/reference/alias-command.md)|Alias|Tools.alias —|  
 |okno zmiennych automatycznych|Automatycznych|Debug.Autos|  
 |Okno punktów przerwania|czarnej listy|Debug.Breakpoints|  
 |Przełącz punkt przerwania|najlepszych praktyk w zakresie|Debug.togglebreakpoint —|  
@@ -51,7 +52,7 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |Wyczyść wszystko|ze specyfikacją CLS|Edit.ClearAll|  
 |Tryb polecenia|Cmd|View.CommandWindow|  
 |Kod widoku|kod|View.ViewCode|  
-|[Lista pamięci — polecenie](../../ide/reference/list-memory-command.md)|d|Debug.listmemory —|  
+|[Lista pamięci, polecenie](../../ide/reference/list-memory-command.md)|d|Debug.listmemory —|  
 |[Lista pamięci — polecenie](../../ide/reference/list-memory-command.md) jako ANSI|da|Debug.listmemory — /Ansi|  
 |[Lista pamięci — polecenie](../../ide/reference/list-memory-command.md) format jednego bajtu|bazy danych|Debug.listmemory — /Format:OneByte|  
 |[Lista pamięci — polecenie](../../ide/reference/list-memory-command.md) jako ANSI z formatem czterech bajtów|Kontroler domeny|Debug.listmemory — /Format:FourBytes /Ansi|  
@@ -64,35 +65,35 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |Dezasemblacja, okno|disasm|Debug.Disassembly|  
 |[Lista pamięci — polecenie](../../ide/reference/list-memory-command.md) format 8-bajtowej|dq —|Debug.listmemory — /Format:EightBytes|  
 |[Lista pamięci — polecenie](../../ide/reference/list-memory-command.md) jako Unicode|du|Debug.listmemory — /Unicode|  
-|[Evaluate statement — polecenie](../../ide/reference/evaluate-statement-command.md)|Eval|Debug.evaluatestatement —|  
+|[Oceń instrukcję, polecenie](../../ide/reference/evaluate-statement-command.md)|Eval|Debug.evaluatestatement —|  
 |Zakończ|Zakończ|File.Exit|  
 |Wybieranie formatu|format|Edit.FormatSelection|  
 |Pełny ekran|Pełny ekran|View.FullScreen|  
-|[Polecenie uruchomienia](../../ide/reference/start-command.md)|K|Debug.Start|  
-|[Przejdź do — polecenie](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|  
+|[Uruchomienie, polecenie](../../ide/reference/start-command.md)|K|Debug.Start|  
+|[Przejdź do, polecenie](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|  
 |Przejdź do nawiasu klamrowego|GotoBrace|Edit.GotoBrace|  
 |F1Help|Pomoc|Help.F1Help|  
 |Trybie natychmiastowym|natychmiast|Tools.ImmediateMode|  
 |Wstaw plik jako tekst|InsertFile|Edit.InsertFileAsText|  
-|[Lista stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)|KB|Debug.listcallstack —|  
+|[Lista stosu wywołań, polecenie](../../ide/reference/list-call-stack-command.md)|KB|Debug.listcallstack —|  
 |Wprowadź małe litery|LCase|Edit.MakeLowercase|  
 |Wytnij wiersza|LineCut|Edit.LineCut|  
 |Usuń wiersz|LineDel|Edit.LineDelete|  
 |Lista składników|Wyświetlanie członków|Edit.ListMembers|  
 |okno zmiennych lokalnych|Zmienne lokalne|Debug.Locals|  
-|[Dane wyjściowe okna polecenie dziennika](../../ide/reference/log-command-window-output-command.md)|Dziennik|Tools.LogCommandWindowOutput|  
+|[Zapisuj dane wyjściowe okna Polecenie, polecenie](../../ide/reference/log-command-window-output-command.md)|Dziennik|Tools.LogCommandWindowOutput|  
 |Tryb oznaczania okno polecenia|Oznacz|Tools.CommandWindowMarkMode|  
 |okno pamięci|Memory1 pamięci|Debug.Memory1|  
 |Okno pamięci 2|Memory2|Debug.Memory2|  
 |Okno pamięci 3|Pamięci3|Debug.Memory3|  
 |Okno pamięci 4|Memory4|Debug.Memory4|  
-|[Ustaw radix — polecenie](../../ide/reference/set-radix-command.md)|n|Debug.setradix —|  
-|[Showwebbrowser — polecenie](../../ide/reference/showwebbrowser-command.md)|Przejdź NAV|View.showwebbrowser —|  
+|[Ustaw Radix, polecenie](../../ide/reference/set-radix-command.md)|n|Debug.setradix —|  
+|[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Przejdź NAV|View.showwebbrowser —|  
 |Następna zakładka|NextBook|Edit.NextBookmark|  
-|[Nowy plik — polecenie](../../ide/reference/new-file-command.md)|NF|File.NewFile|  
+|[Nowy plik, polecenie](../../ide/reference/new-file-command.md)|NF|File.NewFile|  
 |Nowy projekt|potoki NewProj|File.NewProject|  
-|[Otwórz plik — polecenie](../../ide/reference/open-file-command.md)|jest on otwarty|File.OpenFile|  
-|[Otwórz projekt — polecenie](../../ide/reference/open-project-command.md)|OP|File.OpenProject|  
+|[Otwórz plik, polecenie](../../ide/reference/open-file-command.md)|jest on otwarty|File.OpenFile|  
+|[Otwórz projekt, polecenie](../../ide/reference/open-project-command.md)|OP|File.OpenProject|  
 |Zwiń do definicji/Stop zwijania|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|  
 |Przekrocz|P|Debug.StepOver|  
 |Informacje o parametrach|ParamInfo|Edit.ParameterInfo|  
@@ -107,7 +108,7 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |Zapisywanie wybranych elementów|Zapisz|File.SaveSelectedItems|  
 |Zapisz wszystko|SaveAll|File.SaveAll|  
 |Zapisz jako|Zapisz jako|File.SaveSelectedItemsAs|  
-|[Polecenia powłoki](../../ide/reference/shell-command.md)|powłoka|Tools.Shell —|  
+|[Powłoka, polecenie](../../ide/reference/shell-command.md)|powłoka|Tools.Shell —|  
 |Zatrzymaj Znajdź w plikach|StopFind|Edit.findinfiles — / Stop|  
 |Zamień zakotwiczenie|SwapAnchor|Edit.SwapAnchor|  
 |Wkrocz|t|Debug.StepInto|  
@@ -118,14 +119,14 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |Sąsiadująco w pionie|TileV|Window.TileVertically|  
 |Przełącz zakładkę|ToggleBook|Edit.ToggleBookmark|  
 |Okno przybornika|przybornik|View.Toolbox|  
-|[Lista dezasemblacji — polecenie](../../ide/reference/list-disassembly-command.md)|u|Debug.listdisassembly —|  
+|[Lista dezasemblacji, polecenie](../../ide/reference/list-disassembly-command.md)|u|Debug.listdisassembly —|  
 |Upewnij się wielkie litery|UCase|Edit.MakeUppercase|  
 |Cofnij|Cofnij|Edit.Undo|  
 |Untabify zaznaczenia|Untabify|Edit.UntabifySelection|  
 |okno czujki|Czujki|Debug.WatchN|  
 |Przełącz zawijanie tekstu|WordWrap|Edit.ToggleWordWrap|  
 |Lista procesów|&#124;|Debug.ListProcesses|  
-|[Lista wątków — polecenie](../../ide/reference/list-threads-command.md)|~ ~ * k ~\*kb|Debug.listthreads — Debug.ListTheads /AllThreads|  
+|[Lista wątków, polecenie](../../ide/reference/list-threads-command.md)|~ ~ * k ~\*kb|Debug.listthreads — Debug.ListTheads /AllThreads|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   

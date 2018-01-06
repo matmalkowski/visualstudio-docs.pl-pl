@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a08c43dbc6ec14768b0d74cd6fd89ef152b1074e
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 2d589c4f9fabefbc141d96b233c55a1fd9fc10eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Projektowanie i tworzenie klas i typów
 Projektowanie, zwizualizować i Refaktoryzuj klasami i innymi typami w kodzie za pomocą projektanta klas w programie Visual Studio. Diagramy klas umożliwia tworzenie i edytowanie klas w projekcie Visual C# .NET, Visual Basic .NET i C++, struktury projektu na lepsze zrozumienie lub zreorganizować kodu.  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0133ced82f35a8daefeb3dcaaacd4822f5cad345
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0d01e7c8ef95270cde9c1054cc286b62bbe95c46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modyfikowanie stylu obiektów w programie Blend
 Najprostszym sposobem dostosowania obiektu jest można ustawić właściwości **właściwości** okienka.  
@@ -45,15 +46,15 @@ Najprostszym sposobem dostosowania obiektu jest można ustawić właściwości *
   
  Tworzenie pędzla obrazu przy użyciu obrazu. Na poniższych ilustracjach przedstawiono pędzla obrazu, pędzla obraz rozmieszczany i pędzla obrazu odwrócony.  
   
- ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
+ ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![ ] (../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![ ] (../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png " 38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
   
  Tworzenie pędzla Rysowanie za pomocą wektorowej, takich jak ścieżki lub kształtu. Na poniższych ilustracjach przedstawiono rysowania pędzla, rysowania pędzla rozmieszczany i rysowania pędzla odwrócony.  
   
- ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
+ ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![ ] (../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![ ] (../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png " 15bf6021-620c-4490-9eae-086153d3f14f")  
   
  Tworzenie pędzla visual z formantu, takie jak przycisk. Na poniższych ilustracjach przedstawiono visual pędzla i pędzla visual wypełniania.  
   
- ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227")![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
+ ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![ ] (../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
  **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pędzle kafelka](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
@@ -88,7 +89,7 @@ Najprostszym sposobem dostosowania obiektu jest można ustawić właściwości *
 > [!NOTE]
 >  Nie można utworzyć style lub szablonów dla każdego typu formantu. Jeśli ich nie obsługuje formantu, przycisk stron nadrzędnych nie pojawi się powyżej obszaru roboczego.  
 >   
->  Aby powrócić do edytowania zakresu głównego dokumentu, kliknij przycisk **zwracać zasięg** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
+>  Aby powrócić do edytowania zakresu głównego dokumentu, kliknij przycisk **zwracać zasięg** ![ ] (../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
@@ -102,7 +103,7 @@ Najprostszym sposobem dostosowania obiektu jest można ustawić właściwości *
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonie formantu  
- Wybierz kontrolkę i w [właściwości](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, Znajdź **styl** lub **szablonu** właściwości. Następnie kliknij przycisk **zaawansowane opcje** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), a następnie kliknij przycisk **zresetować** menu skrótów.  
+ Wybierz kontrolkę i w [właściwości](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelu, Znajdź **styl** lub **szablonu** właściwości. Następnie kliknij przycisk **zaawansowane opcje** ![ ] (../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), a następnie kliknij przycisk **zresetować** menu skrótów.  
   
 ##  <a name="Visual"></a>Stany wizualne: Zmienianie wyglądu formantu na podstawie stanu  
  Formanty mogą mieć inny wygląd visual na podstawie interakcji użytkownika. Na przykład możesz wprowadzić przycisk włączyć zielony, gdy użytkownik kliknie go lub można uruchomić animacji. Skróć lub wydłużyć czas między stany wizualne przy użyciu przejścia.  
@@ -114,7 +115,7 @@ Najprostszym sposobem dostosowania obiektu jest można ustawić właściwości *
 ##  <a name="Resources"></a>Zasoby: Tworzenie kolory, style i szablony i używać ich ponownie później  
  Wszystko, co można przekształcić w projekcie do zasobu. Zasób jest tylko obiekt, który można użyć ponownie w różnych miejscach w aplikacji. Można na przykład utworzyć kolor jeden raz, stał się zasób, a następnie użyć koloru w kilku obiektach. Aby zmienić kolor wszystkich tych obiektów, można zmienić kolor zasobów.  
   
- ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7")![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
+ ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-B153-52a23cd744f7") ![ ] (../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
  **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [krótki touch zasobów](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   

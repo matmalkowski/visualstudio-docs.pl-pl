@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 838b7cac850b8e7eb3401065cf13202d3a3a40ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizards"></a>Kreatorzy
 Po utworzeniu kreatora zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE), tak aby inne osoby go używać. Pojawi się w Kreatorze dodano **Dodawanie nowego projektu** lub **Dodaj nowy element** okien dialogowych. Aby wyświetlić **Dodawanie nowego projektu** lub **Dodaj nowy element** okno dialogowe pola, kliknij prawym przyciskiem myszy Otwórz rozwiązanie w **Eksploratora rozwiązań**, wskaż polecenie **Dodaj**, i następnie kliknij przycisk **nowy projekt** lub **nowy element**.  
@@ -31,13 +32,13 @@ Po utworzeniu kreatora zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../cod
  Tematy w tej sekcji omówiono w nim pliki, które implementuje spowodować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Dodawanie nowego projektu** i **Dodaj nowy element** okien dialogowych, aby wyświetlić listę kreatora spośród dostępnych kreatorów i szablony, i wymagania, które kreatora muszą spełnić, aby działać poprawnie w środowisku IDE.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
+ [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
  Zawiera omówienie którego szablonu plików z katalogu opis wraz z wyjaśnieniem ich działania w środowisku IDE, aby wyświetlić folderów, plików kreatora .vsz i plików szablonów, które są skojarzone z projektem w oknach dialogowych.  
   
- [Kreator (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)  
+ [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)  
  Wyjaśnia sposób IDE uruchamiania kreatorów i zawiera trzy części pliku .vsz.  
   
- [Kreator interfejsu (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)  
+ [Interfejs kreatora (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)  
  W tym artykule opisano `IDTWizard` interfejs, który kreatorów musi implementować do pracy w środowisku IDE.  
   
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)  

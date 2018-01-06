@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf66dce40cda2d72757c3a2fe141ed023b286d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-document-table"></a>Uruchomionej tabeli dokumentu
 IDE przechowuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struktury o nazwie uruchomionej tabeli dokumentów (Normalizacją). Ta lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy te dokumenty są obecnie edytowany. Dokument jest dowolny element, który jest trwały, w tym pliki w projekcie, lub głównego pliku projektu (na przykład plik .vcxproj).  
@@ -61,4 +62,4 @@ IDE przechowuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej str
   
 ## <a name="see-also"></a>Zobacz też  
  [Użycie RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   
- [Trwałość i uruchomiona tabeli dokumentu](../../extensibility/internals/persistence-and-the-running-document-table.md)
+ [Trwałość i uruchamianie tabeli dokumentów](../../extensibility/internals/persistence-and-the-running-document-table.md)

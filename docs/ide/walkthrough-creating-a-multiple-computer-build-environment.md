@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Wskazówki: tworzenie środowiska kompilacji na wielu komputerach
 
@@ -289,8 +290,8 @@ W tym przewodniku została zweryfikowana względem następujących systemów ope
     |Vcvarsall.bat argument|Kompilatora|Tworzenie architektury komputera|Architektura danych wyjściowych kompilacji|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (ustawienie domyślne)|natywny 32-bitowych|x86, x64|x86|  
-    |x86_amd64|x64 między|x86, x64|x64|  
-    |amd64|x64 macierzystego|x64|x64|  
+    |x86_amd64|x64 między|x86, x64|X64|  
+    |amd64|x64 macierzystego|X64|X64|  
   
      Jeśli vcvarsall.bat zostanie wykonane pomyślnie — to znaczy, że jest wyświetlany żaden komunikat o błędzie — można pominąć następny krok i Kontynuuj w [MSBuild instalowanie zestawów do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) sekcji tego dokumentu .  
   
@@ -425,4 +426,4 @@ W tym przewodniku została zweryfikowana względem następujących systemów ope
   
 ## <a name="see-also"></a>Zobacz też  
  [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)   
- [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
+ [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)

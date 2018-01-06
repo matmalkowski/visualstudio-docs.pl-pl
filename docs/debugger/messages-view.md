@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>Widok komunikatów
 Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wyświetla ten strumień komunikatu. Uchwyt okna, kod wiadomości i wiadomości są wyświetlane. Można utworzyć widoku komunikatów dla wątku lub procesu również. Dzięki temu można wyświetlić komunikaty wysyłane do wszystkich okien należących do określonych proces lub wątek, który jest szczególnie przydatne w przypadku przechwytywania komunikaty inicjowania okna.  
@@ -68,10 +69,10 @@ Widok komunikatów narzędzia Spy ++
  Jak wyświetlić więcej informacji na temat wiadomości.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
   
  [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md)  
@@ -83,5 +84,5 @@ Widok komunikatów narzędzia Spy ++
  [Okno dialogowe właściwości wiadomości](../debugger/message-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wybranego w widoku komunikatów wiadomości.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.

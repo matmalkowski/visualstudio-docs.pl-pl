@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71da10ee4473f3fb542e0ce0e03891d60b75d34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementowanie obsługi dla projektów zagnieżdżonego polecenia
 IDE może przekazać poleceń, które są przekazywane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsów zagnieżdżonych projektów lub projektów nadrzędnego mogą filtrować lub zastąpienie polecenia.  
@@ -56,4 +57,4 @@ IDE może przekazać poleceń, które są przekazywane za pośrednictwem <xref:M
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [Polecenia, menu i pasków narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)   
- [Projekty zagnieżdżenia](../../extensibility/internals/nesting-projects.md)
+ [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

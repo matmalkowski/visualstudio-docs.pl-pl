@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty wiersza poleceń Menedżera zawartości pomocy
 Można określić sposób wdrażania i zarządzania nimi zawartość lokalnej pomocy przy użyciu argumentów wiersza polecenia do menedżera zawartości pomocy (HlpCtntMgr.exe). Należy uruchomić skrypty dla tego narzędzia wiersza polecenia z uprawnieniami administratora, a nie można uruchamiać te skrypty jako usługa. Za pomocą tego narzędzia, można wykonywać następujące zadania:  
@@ -88,6 +89,6 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
-[Podręcznik administratora programu Podgląd pomocy](../ide/help-viewer-administrator-guide.md)  
-[Zastąpienia menedżera zawartości pomocy](../ide/help-content-manager-overrides.md)  
+[Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md)  
+[Przesłonięcia Menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md)  
 [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)

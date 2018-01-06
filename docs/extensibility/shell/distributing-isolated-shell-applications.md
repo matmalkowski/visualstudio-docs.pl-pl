@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7e2a85a7e94ad9a700b197c9c4e0f75e78b4ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6e9b7ded8d24e4d252d29338d89bd176648511a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>Dystrybuowanie aplikacji Isolated Shell
 Aby utworzyć aplikację programu isolated shell, należy zainstalować program Visual Studio i programu Visual Studio SDK. Do dystrybucji aplikacji na komputerach innych użytkowników lub klientów, należy uwzględnić specjalne pakietu redystrybucyjnego dla programu isolated shell.  

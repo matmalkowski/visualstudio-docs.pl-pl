@@ -12,11 +12,12 @@ helpviewer_keywords: application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a36cb7e8f395c177c155e457640b9cb98ae32e7
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 5a41ed010a4e950bd0fa4d28f63481587b847309
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 

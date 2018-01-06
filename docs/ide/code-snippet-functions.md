@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>Funkcje wstawek kodu
 Istnieją trzy funkcje dostępne w programie [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] wstawki kodu. Funkcje są określone w [funkcja](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia wstawki kodu, zobacz [wstawki kodu](../ide/code-snippets.md).  
@@ -155,4 +156,4 @@ Istnieją trzy funkcje dostępne w programie [!INCLUDE[csprcs](../data-tools/inc
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcja — Element (wstawki kodu Intellisense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [Odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md)
+ [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

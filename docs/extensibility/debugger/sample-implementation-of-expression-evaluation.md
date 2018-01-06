@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2cae1e8d697ba8079b29fa2188f0fb2f8b9a40e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe39048edb15e3997b74ca3a7047085da6f042fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Przykładowe zastosowanie Szacowanie wyrażeń
 > [!IMPORTANT]
@@ -112,4 +113,4 @@ STDMETHODIMP CExpressionEvaluator::Parse(
   
 ## <a name="see-also"></a>Zobacz też  
  [Obliczenie wyrażenia okno czujki](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
- [Obliczenie wyrażenia czujki](../../extensibility/debugger/evaluating-a-watch-expression.md)
+ [Ocenianie wyrażenia kontrolnego](../../extensibility/debugger/evaluating-a-watch-expression.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a91dbb7797d69ec71b776eeef5e34e0ced21ad9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Porady: Debugowanie aparatu debugowania niestandardowych
 Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiana pod kontrolą wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kontrolowanie typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Jakie następujące przedstawiono kroki, co pozwala na debugowanie z niestandardowych DE.  
@@ -77,4 +78,4 @@ Typ projektu uruchamia aparat debugowania (DE) z <xref:Microsoft.VisualStudio.Sh
 9. Jeśli zdecydujesz się na debugowanie tego procesu uruchamiania DE, można wykonać kroki opisane w procedurze "Debugowanie niestandardowych debugowania aparatu" można dołączyć do sieci DE po jej uruchomieniu. Zapewni to trzy wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchomiona: jeden dla typu źródła danych projektu, drugie typu wystąpień projektu i podłączony do sieci DE innej.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie aparat debugowania niestandardowych](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+ [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)

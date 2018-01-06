@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 561c7e12b1c8e888513b44b8fec36f8bb5e5f9fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf92d22b3c27d23fa90b6d9be13cf4fa6604384a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ do XML właściwości dynamicznych
 Ta sekcja zawiera informacje na temat właściwości dynamicznych w składniku LINQ do XML. W szczególności te właściwości są udostępniane przez <xref:System.Xml.Linq.XAttribute> i <xref:System.Xml.Linq.XElement> klasy, które znajdują się w <xref:System.Xml.Linq> przestrzeni nazw.  
@@ -35,8 +36,8 @@ Ta sekcja zawiera informacje na temat właściwości dynamicznych w składniku L
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Właściwości dynamiczne XAttribute — klasa](../designers/xattribute-class-dynamic-properties.md)|Szczegółowe informacje na temat właściwości dynamicznych udostępnianych przez <xref:System.Xml.Linq.XAttribute> klasy.|  
-|[Właściwości dynamiczne klasy XElement — klasa](../designers/xelement-class-dynamic-properties.md)|Szczegółowe informacje na temat właściwości dynamicznych udostępnianych przez <xref:System.Xml.Linq.XElement> klasy.|  
+|[Właściwości dynamiczne klasy XAttribute](../designers/xattribute-class-dynamic-properties.md)|Szczegółowe informacje na temat właściwości dynamicznych udostępnianych przez <xref:System.Xml.Linq.XAttribute> klasy.|  
+|[Właściwości dynamiczne klasy XElement](../designers/xelement-class-dynamic-properties.md)|Szczegółowe informacje na temat właściwości dynamicznych udostępnianych przez <xref:System.Xml.Linq.XElement> klasy.|  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:System.Xml.Linq>  

@@ -11,11 +11,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: "41"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e7c6e2ed36593a55548ec182c147f00ae447a500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a87dabee46cfcfb7e22d0217081a3a7ed47d9bc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation (WPF) do przedstawienia sposobu tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.  
@@ -186,7 +187,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
 3.  W pliku CodedUITest1.cs Znajdź **CodedUITestMethod** metody, kliknij prawym przyciskiem myszy i wybierz **Uruchom testy**, lub uruchom test z Eksploratora testów.  
   
-     Podczas wykonywania kodowanego testu interfejsu użytkownika aplikacja SimpleWPFApp jest widoczna. Wykonuje ona działania, których nie było w poprzedniej procedurze. Jednak gdy test próbuje zaznacz pole wyboru dla formantu pole wyboru, okno wyników testu pokazuje, że testowanie nie powiodło się. To jest, ponieważ test próbuje zaznacz pole wyboru, ale nie jest pamiętać, że kontrolka pola wyboru jest wyłączone, aż pasek postępu jest wykonane w 100%. Problem można rozwiązać i podobne problemy przy użyciu różnych `UITestControl.WaitForControlXXX()` metod, które są dostępne dla kodowanych testów UI. Następna procedura zostaną przedstawione za pomocą `WaitForControlEnabled()` metodę, aby rozwiązać ten problem, który spowodował niepowodzenie tego testu. Aby uzyskać więcej informacji, zobacz [tworzenie kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+     Podczas wykonywania kodowanego przebiegu testu interfejsu użytkownika aplikacja SimpleWPFApp jest widoczna. Wykonuje ona działania, których nie było w poprzedniej procedurze. Jednak gdy test próbuje zaznacz pole wyboru dla formantu pole wyboru, okno wyników testu pokazuje, że testowanie nie powiodło się. To jest, ponieważ test próbuje zaznacz pole wyboru, ale nie jest pamiętać, że kontrolka pola wyboru jest wyłączone, aż pasek postępu jest wykonane w 100%. Problem można rozwiązać i podobne problemy przy użyciu różnych `UITestControl.WaitForControlXXX()` metod, które są dostępne dla kodowanych testów UI. Następna procedura zostaną przedstawione za pomocą `WaitForControlEnabled()` metodę, aby rozwiązać ten problem, który spowodował niepowodzenie tego testu. Aby uzyskać więcej informacji, zobacz [tworzenie kodowanego interfejsu użytkownika testy oczekiwania dla określonych zdarzeń podczas odtwarzania](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
 ### <a name="edit-and-rerun-the-coded-ui-test"></a>Edytowanie i ponowne uruchamianie kodowanego testu interfejsu użytkownika  
   
@@ -390,4 +391,4 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Wprowadzenie do projektanta WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora testu kodowanego interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+ [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

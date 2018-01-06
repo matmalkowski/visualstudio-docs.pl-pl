@@ -22,11 +22,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb1c757ed5c266c74ca14e0b990528844bad0fb2
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 To okno dialogowe służy do modyfikowania ustawienia formatowania edytora, refaktoryzacji kodu i komentarze dokumentacji XML dla programu Visual C#. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu** folder, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Zaawansowane**.  

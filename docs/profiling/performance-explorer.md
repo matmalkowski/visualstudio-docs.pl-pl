@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6547c139df10498c7be7c2ad13401001d38c067d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f95197bcd7315f432ce2fff2bd1e5dae1005e7e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer"></a>Eksplorator wydajności
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzi profilowania let deweloperom mierzyć, oceny i docelowa problemy związane z wydajnością w ich kodu. Te narzędzia są w pełni zintegrowane w IDE, aby zapewnić bezproblemową i przystępne środowisko.  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
 |**Techniki dla systemu Windows 8 i nowsze**|[Narzędzia wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
-|**Pojęciami profilowania:** pojęć i terminów, które będą używane do zbierania, wyświetlanie i analizowanie wydajności kodu za pomocą narzędzi profilowania.|[Omówienie](../profiling/overviews-performance-tools.md)|  
+|**Pojęciami profilowania:** pojęć i terminów, które będą używane do zbierania, wyświetlanie i analizowanie wydajności kodu za pomocą narzędzi profilowania.|[Omówienia](../profiling/overviews-performance-tools.md)|  
 |**Przechodzić w i to zrobić:** Dowiedz się, ale podstawowe procedury, które będą używane podczas zbierania, wyświetlania i analizowania wydajności kodu przy użyciu narzędzi do profilowania. Wypróbuj ją z praktyczne wskazówki.|[Wprowadzenie](../profiling/getting-started-with-performance-tools.md)|  
 |**Konfigurowanie sesji profilowania:** informacje zaawansowane metody Określ projekty lub dane binarne do profilu, wybierz metodę profilowania, wybierz dane wydajności mają być zbierane i ustaw opcje sesji profilowania.|[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)|  
 |**Kontrolowanie danych, które zbiera profilera:** Użyj właściwości sesji wydajności i interaktywne procedury do uruchamiania i zatrzymywania profilowania oraz dane dotyczące wydajności zbierane tylko informacje, które chcesz ograniczyć.|[Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)|  

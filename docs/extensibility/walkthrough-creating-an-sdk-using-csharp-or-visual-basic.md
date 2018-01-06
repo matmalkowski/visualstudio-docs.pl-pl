@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5f944dad46225a70192bbfb0dbd0d1dc6dc861a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Wskazówki: Tworzenie SDK przy użyciu języka C# lub Visual Basic
 W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne za pomocą Visual C# i następnie pakietu SDK jako Visual Studio rozszerzenia (VSIX). Będzie wykonaj następujące procedury:  
@@ -245,4 +246,4 @@ W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Tworzenie zestawu SDK, w języku C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [Wskazówki: Tworzenie SDK przy użyciu języka JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
- [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md)
+ [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>Węzły narzędzi
 W projektancie programu do cieniowania narzędzie węzły reprezentują obliczeniach cieniowania wspólnego, przydatne, które nie pasują do innych kategorii. Niektóre węzły narzędzie wykonywaniem prostych operacji, takich jak dołączanie wektory razem lub wybranie wyniki warunkowo i wykonywać inne złożone operacje, takie jak obliczanie udziału oświetlenia zgodnie z popularnych oświetlenia modeli.  

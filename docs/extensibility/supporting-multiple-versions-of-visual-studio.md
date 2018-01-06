@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c03df6edc54948060fa3b1f8eee264646a80f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługa wielu wersji programu Visual Studio
 Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma wersjami produktu na tym samym komputerze. Do VSPackages oznacza to, że każdy użytkownik może mieć kilka wersji programu Visual Studio zainstalowany na tym samym komputerze. Jednak nie może mieć side-by-side wersje programu VSPackages ładowane do jednej wersji programu Visual Studio.  
@@ -42,11 +43,11 @@ Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma we
     >  Instalowanie wersji programu Visual Studio instaluje odpowiednią wersję programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na przykład instalowania programu Visual Studio 2010 i Visual Studio 2012 w tym samym komputerze instaluje wersji 4.0 i 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]odpowiednio.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wybór między VSPackages udostępnionego i wersji](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
+ [Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
  Wyjaśniono, jak rozwiązać problemy side-by-side, w pakiecie VSPackage.  
   
- [Rejestrowanie rozszerzeń nazw plików na potrzeby wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
+ [Rejestrowanie rozszerzeń nazw plików na potrzeby wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
  W tym artykule opisano, jak zarejestrować skojarzeń plików w scenariuszu side-by-side VSPackage.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Instalowanie VSPackages za pomocą Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)  
+ [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)  

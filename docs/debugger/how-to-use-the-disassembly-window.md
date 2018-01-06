@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c72de947262cd87e4920d87c2d4d54664e02cc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio
 Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie poziomie adresu **opcje** okno dialogowe **debugowanie** węzła. Nie jest niedostępna na potrzeby debugowania skryptu lub SQL.  

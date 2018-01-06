@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5b16cf6260932f11c9d4fd33f2eb5662327355a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 125bca0b0edd6571c6cc969da0cd3cbe809057da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Porady: zbieranie danych liczników systemu Windows
 Liczniki systemu Windows to liczniki wydajności systemu, które mogą być zbierane w ustalonych odstępach czasu podczas profilowania. W widoku raportu narzędzi profilowania znaki, jest oznaczony wiersz **AutoMark** dla każdego interwału zbierania. Wiersz zawiera kolumny, które opisano w tym interwał wartości licznika wydajności. Aby ograniczyć analizę do okresu czasu między dwoma określonymi znacznikami, wybierz znaczniki, kliknij prawym przyciskiem myszy, a następnie wybierz **filtru przez** ->  **znaczniki** z menu skrótów.  

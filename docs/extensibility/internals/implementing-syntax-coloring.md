@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowanie składni
 Kiedy usługa języka udostępnia kolorowanie składni, analizator konwertuje wiersza tekstu na tablicę elementów colorable i zwraca odpowiadający te elementy colorable typy tokenów. Analizator powinien zwrócić token typy, które należą do listy elementów colorable. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Wyświetla każdy element colorable w oknie Kod zgodnie z atrybutów przypisane przez obiekt colorizer do odpowiedniego typu tokenu.  
@@ -69,4 +70,4 @@ Kiedy usługa języka udostępnia kolorowanie składni, analizator konwertuje wi
  [Porady: używanie wbudowanych elementów Colorable](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [Niestandardowe elementy Colorable](../../extensibility/internals/custom-colorable-items.md)   
  [Tworzenie usługi języka starsza wersja](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Kolorowanie składni w starsza wersja usługi języka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
+ [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

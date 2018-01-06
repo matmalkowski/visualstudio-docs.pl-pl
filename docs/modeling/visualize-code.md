@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0abc0bff93da0944ce7e413a83dafc47e375a8a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 50904fd36dc3a4f009b87b9daa5c603fdee702ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 Wizualizacji i modelowania narzędzia w programie Visual Studio umożliwia ułatwić zrozumienie istniejący kod i opis aplikacji. Dzięki temu można wizualnie Dowiedz się, jak zmiany mogą wpłynąć na kod i pomocy oceny pracy i zagrożeń wynikających z tych zmian. Na przykład:  
@@ -40,7 +41,7 @@ Wizualizacji i modelowania narzędzia w programie Visual Studio umożliwia ułat
 |||  
 |-|-|  
 |**Zrozumienie kodu oraz jego relacji:**<br /><br /> Mapowanie relacji między określonym fragmentów kodu.<br /><br /> Zobacz Omówienie relacji w kodzie dla całego rozwiązania.<br /><br /> **Uwaga**: W tej wersji programu Visual Studio, termin *mapy kodu* jest używany zamiast *wykresu zależności*.|-   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie przez tworzenie diagramów klas z kodu.|[Porady: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Zrozumienie struktury klasy:**<br /><br /> Umożliwia wizualizację struktury klas w projekcie przez tworzenie diagramów klas z kodu.|[Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
 |**Opis projektu systemu wysokiego poziomu, a następnie sprawdź kod dla tego projektu:**<br /><br /> Opis projektu wysokiego poziomu systemu i jego zależności zamierzone przez tworzenie diagramów zależności. Weryfikacja kodu dla tego projektu do upewnij się, że zależności w kodzie zachowania zgodności z projektu.|-   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  

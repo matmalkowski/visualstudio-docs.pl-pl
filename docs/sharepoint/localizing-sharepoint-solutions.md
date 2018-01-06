@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
   Proces przygotowywania aplikacji, dzięki czemu mogą być używane na całym świecie nosi nazwę lokalizacji. Lokalizacja jest tłumaczenie zasobów na określoną kulturę. Aby uzyskać więcej informacji, zobacz [Globalizing i lokalizacja aplikacji](/visualstudio/ide/globalizing-and-localizing-applications). Ten temat zawiera omówienie dotyczące lokalizowanie rozwiązań programu SharePoint.  
@@ -138,6 +139,6 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  [Porady: Lokalizowanie znacznika ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
  [Porady: Lokalizowanie kodu](../sharepoint/how-to-localize-code.md)   
  [Porady: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)   
- [Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
+ [Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
   
   

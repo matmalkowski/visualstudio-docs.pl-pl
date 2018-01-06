@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Shader Designer
 W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do cieniowania Designer do tworzenia, modyfikowania i eksportowanie niestandardowych efektów wizualnych, które są nazywane *programów do cieniowania*.  
@@ -79,7 +80,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
 |**Podgląd z stożkowy**|Po włączeniu modelu stożek jest używany do podglądu programu do cieniowania. Można włączyć podgląd tylko jeden kształt naraz.|  
 |**Podgląd z teapot**|Po włączeniu modelu teapot jest używany do podglądu programu do cieniowania. Można włączyć podgląd tylko jeden kształt naraz.|  
 |**Wyświetl podgląd płaszczyzny**|Po włączeniu modelu płaszczyzny jest używany do podglądu programu do cieniowania. Można włączyć podgląd tylko jeden kształt naraz.|  
-|**Przybornika**|Alternatywnie pokazuje lub ukrywa **przybornika**.|  
+|**Przybornik**|Alternatywnie pokazuje lub ukrywa **przybornika**.|  
 |**Właściwości**|Możesz też pokazuje lub ukrywa **właściwości** okna.|  
 |**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksportuj**: włącza eksportu cieniowania w wielu formatach.<br /><br /> **Eksportowanie jako**: eksportuje programu do cieniowania jako albo HLSL kodu źródłowego lub kodu bajtowego cieniowania skompilowany. Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [porady: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: Umożliwia wybór renderowania, służący do wyświetlania powierzchnię projektu.<br /><br /> **Renderowanie z D3D11**: używa Direct3D 11 do renderowania powierzchnię projektanta programu do cieniowania.<br /><br /> **Renderowanie z D3D11WARP**: używa Direct3D 11 Windows Advanced rasteryzacji platformy (WARP) do renderowania powierzchnię projektanta programu do cieniowania.<br /><br /> **Widok**: włącza zaznaczenie dodatkowe informacje o projektancie programu do cieniowania.<br /><br /> **Szybkość klatek**: po włączeniu Wyświetla bieżąca szybkość klatek w prawym górnym rogu powierzchnię projektu. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.  Ta opcja jest przydatna podczas włączania **tryb renderowania w czasie rzeczywistym** opcji.|  
   
@@ -185,6 +186,6 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Praca z 3-zasoby do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia służące do pracy z tekstury i obrazów, 3-modele i efekty programu do cieniowania.|  
+|[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia służące do pracy z tekstury i obrazów, 3-modele i efekty programu do cieniowania.|  
 |[Edytor obrazów](../designers/image-editor.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytor obrazów do pracy z tekstury i obrazów.|  
 |[Edytor modelu](../designers/model-editor.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze modeli do pracy z 3-modeli.|

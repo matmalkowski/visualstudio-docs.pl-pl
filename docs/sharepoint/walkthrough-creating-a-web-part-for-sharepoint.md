@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3293382ffc0c36fb78bb115d0f38c311278a7151
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3a580d662c09e0f8a73deca2c4e0cea7cea6650c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Wskazówki: tworzenie części sieciowej dla SharePoint
   Części sieci Web umożliwiają użytkownikom bezpośrednio modyfikować zawartość, wyglądu i zachowania stron w witrynie programu SharePoint za pomocą przeglądarki. W tym przewodniku przedstawiono sposób tworzenia składnika Web Part za pomocą **składnika Web Part** szablon elementu w Visual Studio 2010.  
@@ -230,6 +231,6 @@ ms.lasthandoff: 10/31/2017
  [Tworzenie składników Web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Porady: tworzenie SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [Porady: tworzenie SharePoint Web Part za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Wskazówki: Tworzenie składnika Web Part dla SharePoint za pomocą projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
+ [Przewodnik: Tworzenie składnika Web part dla SharePoint za pomocą Projektanta](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
   
   

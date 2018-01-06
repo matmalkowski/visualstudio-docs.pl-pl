@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a1cf847b87e7902ef535359420ea105a48dc9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e086111be924d1262866f882b77d821659af909d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Ustawienia międzynarodowe, środowisko, opcje — Okno dialogowe
 Na stronie Ustawienia międzynarodowe można zmienić domyślny język, jeśli masz więcej niż jedną wersję językową zintegrowane środowisko programistyczne (IDE) na komputerze jest zainstalowany. Dostęp do tego okna dialogowego, wybierając **opcje** z **narzędzia** menu, a następnie wybierając **ustawienia międzynarodowe** z **środowiska** folderu. Jeśli ta strona nie ma na liście, wybierz **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
@@ -42,4 +43,4 @@ Na stronie Ustawienia międzynarodowe można zmienić domyślny język, jeśli m
   
 ## <a name="see-also"></a>Zobacz też  
  [Zainstaluj pakiety językowe](../../install/install-visual-studio.md#step-6---install-language-packs-optional)   
- [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)
+ [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

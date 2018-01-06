@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd32edd9828702ec95754018ff361a44da00e5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be5b8481170ee6d733fbe4cfc36d4606b644517e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view"></a>Widok modułów
 Widok modułów zawiera listę modułów danych profilowania. Każdy moduł jest węzła głównego drzewa hierarchicznej. Profilowane funkcje modułu są wyświetlane poniżej tego węzła modułu. Jeśli dane profilowania został zebrany przy użyciu metody pobierania próbek, informacje w wierszu znajduje się poniżej tego węzła funkcji i danych wskaźnik instrukcji znajduje się poniżej tego węzła wiersza.  

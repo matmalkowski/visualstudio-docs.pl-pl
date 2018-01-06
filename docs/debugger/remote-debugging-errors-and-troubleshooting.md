@@ -25,22 +25,23 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fea0a39532b7edbbe5f8419f1d5588b8a5d73471
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10ffa79e5a9ca7d64be9842db80a39f54d192a4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
 Mogą wystąpić następujące błędy podczas próby debugowania zdalnego.  
   
 -   [Błąd: Nie można automatycznie Wkrocz do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Błąd: Program Microsoft Visual Studio Monitor debugera zdalnego (polecenia MSVSMON. Wywołanie pliku EXE) nie jest uruchomiona na komputerze zdalnym.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
+-   [Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   
 -   [Nie można nawiązać połączenia z programem Microsoft Visual Studio Monitor debugera zdalnego](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Błąd: Maszyna zdalna nie są wyświetlane w oknie dialogowym połączenia zdalne](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+-   [Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zdalne](../debugger/remote-debugging.md)

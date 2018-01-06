@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: bbfe3eb4f76d8237d6e1a1b7c26aa48b1f081f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debugowanie lub wyłączenie kodu projektu w Projektancie XAML
 W wielu przypadkach nieobsługiwanych wyjątków w Projektancie XAML może być spowodowane przez kod projektu próbujących uzyskać dostęp do właściwości lub metody, które zwracać różne wartości i pracować na różne sposoby, gdy aplikacja jest uruchomiona w projektancie. Rozwiąż te wyjątki, debugowanie kodu projektu w innym wystąpieniu programu Visual Studio lub czasowo uniemożliwić ich po wyłączeniu kodu projektu w projektancie.  

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a191585a251af878c6abef5599a490d7eafe363
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
 Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomaga w zrozumieniu wpływ pikseli określone przez zdarzenia Direct3D, jakie występują podczas ramka gry lub aplikacji.  
@@ -78,4 +79,4 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)   
- [Wskazówki: Debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

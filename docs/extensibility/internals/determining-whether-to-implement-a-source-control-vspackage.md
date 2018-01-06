@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88281496c2e8350f910feda7934e2b55a494243b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Określanie, czy wdrożyć pakiet VSPackage kontroli źródła
 W tej sekcji rosnącego wyborów plug-in kontroli źródła i kontroli źródła VSPackages do rozszerzania rozwiązania oraz zapewnia ogólnych wytycznych o wybieraniu ścieżki odpowiedniej integracji kontroli źródła.  
@@ -39,4 +40,4 @@ W tej sekcji rosnącego wyborów plug-in kontroli źródła i kontroli źródła
 4.  Obsługa zdarzeń zapytania, edytować i zapisywać zapytania (zobacz [zapytania Edytuj Zapisz zapytanie](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Tworzenie wtyczki kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-plug-in.md)

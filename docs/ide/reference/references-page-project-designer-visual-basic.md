@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cada43ba0ac05d5ec7355f77578127c3339929be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 Użyj **odwołania** strony **projektanta projektu** do zarządzania odwołań, odwołania sieci Web i importowane przestrzenie nazw w projekcie. Projekty mogą zawierać odwołania do składników COM usług XML sieci Web, biblioteki klas .NET Framework lub zestawów albo innych bibliotek klas. Aby uzyskać więcej informacji na temat używania odwołania zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).  
@@ -89,4 +90,4 @@ Użyj **odwołania** strony **projektanta projektu** do zarządzania odwołań, 
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md)   
  [Porady: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
- [Imports — instrukcja (Namespace XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)
+ [Imports, instrukcja (przestrzeń nazw XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

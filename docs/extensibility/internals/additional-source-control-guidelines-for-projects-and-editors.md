@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Wskazówki dotyczące kontroli dodatkowe źródła dla projektów i edytory
 Istnieje szereg wskazówki, które projekty i edytory należy stosować się do celu zapewnienia obsługi kontroli źródła.  
@@ -25,7 +26,7 @@ Istnieje szereg wskazówki, które projekty i edytory należy stosować się do 
 ## <a name="guidelines"></a>Wytyczne dotyczące  
  Projekcie lub Edytor również należy wykonać następujące polecenie, aby obsługiwać kontroli źródła:  
   
-|Obszar|Project|Edytor|Szczegóły|  
+|Obszar|Projekt|Edytor|Szczegóły|  
 |----------|-------------|------------|-------------|  
 |Prywatne kopie plików|X||Środowisko obsługuje prywatnej kopii plików. Oznacza to, że każda osoba zarejestrowana w projekcie ma jego własnej prywatnej kopię plików projektu.|  
 |ANSI/Unicode trwałości|X|X|Podczas pisania kodu trwałości, utrwalić plików w formularzu ANSI, ponieważ większość programów kontroli źródła aktualnie nie obsługują standardu Unicode.|  
@@ -36,4 +37,4 @@ Istnieje szereg wskazówki, które projekty i edytory należy stosować się do 
 |Załaduj ponownie|X|X|Podczas zmiany pliku na dysku, Edytor musi mieć możliwość załadować go ponownie. Uczestnictwa w kontroli źródła, środowisko, załaduje danych przez wywołanie metody z <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. Podczas wyewidencjonowania wywołanego IVsQueryEditQuerySave jest najtrudniejsze przypadku Załaduj ponownie::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przetwarzania informacji. Jednak kod Załaduj ponownie musi być można uruchomić w tej sytuacji.<br /><br /> Środowisko automatycznie ładuje ponownie pliki projektu. Jednak projekt musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> jeśli zawiera on zagnieżdżone hierarchie w celu zapewnienia obsługi ponownego ładowania zagnieżdżone pliki projektu.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)
+ [Obsługa kontroli kodu źródłowego](../../extensibility/internals/supporting-source-control.md)

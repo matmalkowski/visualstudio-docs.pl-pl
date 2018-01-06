@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f993e47ea748d8caf90aee0a2ee99cbf78dbede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e1fc85dbd4fa5f4a8fe757b279826a81705dfd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 Zawiera narzędzie do analizy kodu, który można włączyć w kodzie. Narzędzie raportuje informacje o Twojej zestawy, takie jak naruszenia reguły projektowania i programowanie określone w wytycznych projektowych programu Microsoft .NET Framework.  
@@ -65,4 +66,4 @@ Zawiera narzędzie do analizy kodu, który można włączyć w kodzie. Narzędzi
 ## <a name="see-also"></a>Zobacz też  
  [Analiza kodu dla zarządzanego kodu — ostrzeżenia](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Analiza kodu dla kodu zarządzanego ― omówienie](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [Wskazówki: Analizowanie zarządzanego kodu pod względem wad kodu](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+ [Przewodnik: Analizowanie kodu zarządzanego pod kątem defektów](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

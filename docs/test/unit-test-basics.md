@@ -12,11 +12,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec6d6bc63094b361f7663e640d9133add3bfbfd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: b71e1797b7ba5378b7a8396f56f97cc9a0c63b2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie testów jednostkowych. Jest to testowania, ponieważ można podzielić funkcji programu do odrębny testować zachowania, które można sprawdzić w poszczególnych jednostek *jednostki*. Narzędzia Eksplorator testów programu Visual Studio zapewnia elastyczne i wydajne sposób uruchamiania testów jednostkowych i wyświetlać ich wyniki w programie Visual Studio. Visual Studio instaluje testowania struktur dla kodu zarządzanego i natywnego jednostek firmy Microsoft. Użyj *framework testy jednostkowe* do tworzenia testów jednostkowych, uruchom je i raportuje o wynikach tych testów. Testów jednostkowych Uruchom ponownie podczas wprowadzania zmian, aby przetestować czy kodzie nadal działa poprawnie. Visual Studio Enterprise można to zrobić automatycznie [Live testów jednostkowych](live-unit-testing-intro.md), która wykrywa testów, których dotyczą przez kod zmiany i ich działa w tle podczas pisania.
@@ -44,9 +45,9 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie test
 ###  <a name="BKMK_Quick_starts"></a>Szybki Start  
  Aby obejrzeć wprowadzenie do testowania jednostek, które umożliwia przejście bezpośrednio do kodowania Zobacz jedną z poniższych tematów:  
   
--   [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+-   [Przewodnik: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Szybki Start: Test programowanie sterowane za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)  
+-   [Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 -   [Testowanie kodu natywnego za pomocą narzędzia Eksplorator testów jednostkowych](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -187,7 +188,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
  Aby uzyskać więcej informacji o struktur testowania jednostki firmy Microsoft Zobacz jedną z następujących tematów:  
   
--   [Pisanie testów jednostkowych dla .NET Framework za pomocą Frameworka testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
 -   [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)  
   

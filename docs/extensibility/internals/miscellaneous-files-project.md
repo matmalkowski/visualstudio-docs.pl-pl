@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 514eb7a80b5e23997abb64c513af1b278bf90704
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d3fa64b06504d8982594945f5b0c38956676b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files-project"></a>Projekt różne pliki
 Po otwarciu elementy projektu IDE przypisuje do projektu różne pliki wszystkie elementy, które nie są elementami członkowskimi żadnych projektów w rozwiązaniu.  
@@ -45,4 +46,4 @@ Po otwarciu elementy projektu IDE przypisuje do projektu różne pliki wszystkie
  [Porady: Otwórz edytory specyficznego dla projektu](../../extensibility/how-to-open-project-specific-editors.md)   
  [Porady: otwieranie standardowe edytory](../../extensibility/how-to-open-standard-editors.md)   
  [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
+ [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)

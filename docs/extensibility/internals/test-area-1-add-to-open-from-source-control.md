@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar test 1: Dodaj do / Otwórz z kontroli źródła
 Ta-wtyczka do kontroli źródła testu obszar obejmuje umieszczenie rozwiązań lub projektów pod kontrolą źródła i pobierania ich z kontroli źródła.  
@@ -87,4 +88,4 @@ Ta-wtyczka do kontroli źródła testu obszar obejmuje umieszczenie rozwiązań 
 |Dodaj do rozwiązania — rozwiązanie dodane do kontroli źródła według wyboru|1.  Tworzenie rozwiązania z projektem.<br />2.  Dodaj tylko rozwiązanie do kontroli źródła jako zaznaczenia. Jeśli ten krok zakończy się powodzeniem, przejdź do następnego kroku.<br />3.  Zamknij rozwiązanie.<br />4.  Utwórz nowe rozwiązanie.<br />5.  Dodaj wcześniej kontrolowane rozwiązanie z kontroli źródła (**pliku**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**).|`Result from Step 2:`<br /><br /> Projekt nie jest pod kontrolą źródła.<br /><br /> `Result from Step 5:`<br /><br /> Pierwsze rozwiązanie, gdyby elementy rozwiązania, nie można ich dodać z kontroli źródła, więc nie są wyświetlane.<br /><br /> Projekt z pierwsze rozwiązanie zostanie wyświetlony jako niedostępny.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

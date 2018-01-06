@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e6861ba33fed68455fdc6d38aee81549edc516f
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Klasy Visual C++ w Projektancie klas
 Projektant klas obsługuje klas C++ i wizualizuje macierzystych klas C++ w taki sam sposób jak kształty klas języka Visual Basic i Visual C#, z wyjątkiem klasy C++ może mieć wiele relacji dziedziczenia. Można rozwinąć kształtu klasy do wyświetlenia więcej pól i metod w klasie lub zwinąć do oszczędzania przestrzeni dyskowej.  

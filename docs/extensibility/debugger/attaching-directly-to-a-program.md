@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-directly-to-a-program"></a>Dołączanie bezpośrednio do programu
 Użytkownicy, którzy chcą do debugowania programów w procesie, która jest już uruchomiona zwykle skorzystać z tego procesu:  
@@ -44,4 +45,4 @@ Użytkownicy, którzy chcą do debugowania programów w procesie, która jest ju
   
 ## <a name="see-also"></a>Zobacz też  
  [Wysyłanie zdarzeń do uruchomienia po Launch](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

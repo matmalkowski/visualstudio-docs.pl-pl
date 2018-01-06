@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Określ, czy w celu debugowania tylko kodu użytkownika przy użyciu tylko mój kod w programie Visual Studio
 Można skonfigurować programu Visual Studio automatycznie Przekrocz nad systemu, framework i inne wywołania niezwiązanych z użytkownikiem i zwinąć tych wywołań w oknie stosu wywołań. Funkcja, która włącza lub wyłącza to zachowanie jest nazywany *tylko mój kod*. W tym temacie opisano sposób użycia tylko mój kod w językach C#, Visual Basic, C++ i JavaScript projektów.

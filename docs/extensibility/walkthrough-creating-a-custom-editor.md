@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74408fd88a594503c2a585cd0edfa86f28ed596e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e8ea75cb96b36f885a55cbf9f174394379dc05a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>Wskazówki: Tworzenie edytora niestandardowego
 Szablon projektu pakiet VSPackage można utworzyć prosty niestandardowego edytora w języku C++.  Szablon projektu pakiet VSPackage już nie obsługuje projektów C# lub Visual Basic. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -49,4 +50,4 @@ Szablon projektu pakiet VSPackage można utworzyć prosty niestandardowego edyto
      Edytor obsługuje operacje kopiowania i wklejania, Znajdź i Zamień i Otwórz i obciążenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Pakiety VSPackage](../extensibility/internals/vspackages.md)

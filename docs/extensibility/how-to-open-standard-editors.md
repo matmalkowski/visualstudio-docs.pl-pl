@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd3e3b8da06e6846c8c6adc6ddc3f65873c1e2bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dcf36dc8f4ef818a84719bc534a09ecf30baf76f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-standard-editors"></a>Porady: otwieranie standardowe edytory
 Po otwarciu edytora standardowego umożliwisz IDE ustalić standardowego edytora dla typu pliku wyznaczonych, zamiast określania edytorze specyficznego dla projektu dla pliku.  

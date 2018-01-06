@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9250db8b405885b5f8e8c76a68d0663c52d82ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="thread-properties-dialog-box"></a>Właściwości wątków — Okno dialogowe
 Użyj tego okna dialogowego pole dowiedzieć się więcej o konkretnym wątkiem. Aby wyświetlić to okno dialogowe, Przenieś fokus do [Widok wątków](../debugger/threads-view.md) okna lub Otwórz [widoku komunikatów](../debugger/messages-view.md) i rozwiń wiadomości. Zaznacz dowolny węzeł wątku w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  
@@ -34,7 +35,7 @@ Użyj tego okna dialogowego pole dowiedzieć się więcej o konkretnym wątkiem.
  [Okno dialogowe Wyszukiwanie wątków](../debugger/thread-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego wątku w widoku wątków.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.  
   
  [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
@@ -43,8 +44,8 @@ Użyj tego okna dialogowego pole dowiedzieć się więcej o konkretnym wątkiem.
  [Widok wątków](../debugger/threads-view.md)  
  Wyświetla widok drzewa Aktywne wątki.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Model pakietów kontroli źródła
 Następujący model reprezentuje przykładem implementacji kontroli źródła. W modelu Zobacz interfejsy, które należy zaimplementować i usług środowiska, które należy wywołać. Podobnie jak wszystkie usługi faktycznie wywoływać metody określonego interfejsu, który można uzyskać na usługę. Nazwy klas są identyfikowane ułatwiające zobacz sposób wykonywania kontroli źródła.  
@@ -43,4 +44,4 @@ Przykładowy projekt kontroli źródła
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
- [Obsługa kontroli źródła](../../extensibility/internals/supporting-source-control.md)
+ [Obsługa kontroli kodu źródłowego](../../extensibility/internals/supporting-source-control.md)

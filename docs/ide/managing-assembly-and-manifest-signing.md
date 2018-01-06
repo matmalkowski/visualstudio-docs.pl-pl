@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Zarządzanie zestawem i podpisywanie manifestu
 Podpisu silnej nazwy zawiera składnik oprogramowania unikatowych tożsamości. Silnych nazw są używane, aby zagwarantować, że zestaw nie może być sfałszowane przez kogoś innego i upewnij się, że składnik zależności i instrukcje konfiguracji mapowania na składnik prawidłowa, a wersja składnika.  
@@ -72,4 +73,4 @@ Ogólnie rzecz biorąc nie podpisuj plików wykonywalnych. Składnik silnej nazw
   
 ## <a name="see-also"></a>Zobacz też  
  [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)   
- [Silnych nazwach (podpisywanie zestawów) (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+ [Zestawy o silnych nazwach (podpisywanie zestawów) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

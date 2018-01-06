@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
 Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elementu) steruje stanem wykonywania aplikacji — uruchamianie, wstrzymywanie, wznawianie i przerywanie aplikacji w odpowiedzi na działania użytkownika i stan urządzenia. Podczas debugowania, system Windows wyłącza te zdarzenia aktywacji. W tym temacie opisano sposób uruchamiania tych zdarzeń w debugerze.  
   
  W tym temacie opisano również sposób debugowania **zadania w tle**. Zadania w tle umożliwiają wykonywania pewnych operacji w tle, nawet w przypadku aplikacji nie jest uruchomiona. Debuger umożliwia umieszczanie aplikacji w trybie debugowania, a następnie — bez uruchamiania interfejsu użytkownika — start i debugowania zadania w tle.  
   
- Aby uzyskać więcej informacji na temat zadań tła i zarządzanie okresem istnienia procesu zobacz [uruchamianie i wznawianie i wielozadaniowości](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Aby uzyskać więcej informacji na temat zadań tła i zarządzanie okresem istnienia procesu zobacz [uruchamianie i wznawianie i wielozadaniowości](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a>W tym temacie  
  [Wyzwalacz zdarzenia Zarządzanie okresem istnienia procesu](#BKMK_Trigger_Process_Lifecycle_Management_events)  

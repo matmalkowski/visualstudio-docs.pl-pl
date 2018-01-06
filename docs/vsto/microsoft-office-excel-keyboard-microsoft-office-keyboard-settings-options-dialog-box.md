@@ -20,11 +20,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57e3edf9b8d3f81ebbed6a02f2ff3097321f8074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d082e03ce0edcbbccd6e3dcd8b22ba00a483d91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Klawiatura Microsoft Office Excel, ustawienia klawiatury Microsoft Office — Okno dialogowe
   Program Microsoft Excel pakietu Office i programu Visual Studio zarówno obsługi klawiszy skrótów. Inne polecenia w programie Excel, jak i w programie Visual Studio może zastąpić tej samej kombinacji klawiszy skrótów. Gdy program Excel jest otwarty w projektach na poziomie dokumentu w programie Visual Studio, tylko jedną aplikację naraz odbiera poleceń klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótu, ale można wprowadzić ich odbierania, gdy dokument ma fokus, wybierając Excel **schemat klawiatury dynamiczne**.  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
  Visual Studio odbiera poleceń klawiszy skrótów tylko wtedy, gdy fokus. Po aktywowaniu Excel Excel odbiera wszystkie polecenia klawiszy skrótów. Na przykład, jeśli naciśniesz klawisz funkcji F5 podczas Excel ma fokus, zostanie otwarty **przejdź do** okno dialogowe. Jeśli podczas, gdy fokus jest Visual Studio naciśnij klawisz F5, Visual Studio rozpoczyna debugowanie rozwiązania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Microsoft Office Word klawiatury, ustawienia klawiatury Microsoft Office, opcje — Okno dialogowe](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+ [Klawiatura Microsoft Office Word, ustawienia klawiatury Microsoft Office, Opcje — okno dialogowe](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

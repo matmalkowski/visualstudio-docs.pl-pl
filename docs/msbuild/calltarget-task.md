@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e88638d83a0d5920727e531f7101d4230abcce7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a52a17c84f316e0e809804043fda280a94dfe775
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calltarget-task"></a>CallTarget — Zadanie
 Wywołuje określone elementy docelowe w pliku projektu.  
@@ -66,4 +67,4 @@ Wywołuje określone elementy docelowe w pliku projektu.
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Obiekty docelowe](../msbuild/msbuild-targets.md)
+ [Docelowe elementy](../msbuild/msbuild-targets.md)

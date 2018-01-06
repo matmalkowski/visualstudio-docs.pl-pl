@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące migawki debugowania w programie Visual Studio
 
@@ -68,11 +69,11 @@ Wykonaj następujące czynności:
 - Migawki debugowania z wielu klientów programu Visual Studio z tej samej usługi aplikacji nie jest obecnie obsługiwane.
 - Optymalizacje Roslyn IL nie są w pełni obsługiwane w projektów platformy ASP.NET Core. Dla niektórych projektów platformy ASP.NET Core mogą nie być mogli zobaczyć niektóre zmienne ani niektóre zmienne w instrukcjach warunkowego. 
 - Zmienne specjalne, takie jak *$FUNCTION* lub *$CALLER*, nie można obliczyć w instrukcji warunkowej lub logpoints dla projektów platformy ASP.NET Core.
-- Debugowanie migawki nie działa na usługi aplikacji, która ma [buforowanie lokalne](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) włączona.
+- Debugowanie migawki nie działa na usługi aplikacji, która ma [buforowanie lokalne](/azure/app-service/app-service-local-cache) włączona.
 - Debugowanie aplikacji interfejsu API migawki nie jest obecnie obsługiwane.
 
 ## <a name="see-also"></a>Zobacz także
 
 [Debugowanie w programie Visual Studio](../debugger/index.md)  
 [Debugowania na żywo aplikacji ASP.NET, za pomocą debugera migawki](../debugger/debug-live-azure-applications.md)  
-[Często zadawane pytania dotyczące debugowania migawki](../debugger/debug-live-azure-apps-faq.md)  
+[Debugowanie migawek — często zadawane pytania](../debugger/debug-live-azure-apps-faq.md)  

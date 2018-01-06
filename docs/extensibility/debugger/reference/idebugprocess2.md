@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8b349bee09f068a5777ecc212223c36951236ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896448526f41514fb74b385f8605839908708305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Ten interfejs reprezentuje procesu uruchomionego na porcie. Jeśli port jest port lokalny, następnie `IDebugProcess2` zazwyczaj reprezentuje fizyczny procesu na komputerze lokalnym.  
@@ -49,9 +50,9 @@ IDebugProcess2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Pobiera tytuł, przyjazną nazwę lub nazwę pliku procesu.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Pobiera wystąpienie przez ten proces jest uruchomiony na serwerze maszyny.|  
 |[Zakończenie](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Kończy proces.|  
-|[Dołącz](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Dołącza do procesu.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Dołącza do procesu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Określa, czy model SDM można odłączyć procesu.|  
-|[Odłączanie](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Odłącza debugera w procesie.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Odłącza debugera w procesie.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Pobiera identyfikator procesu systemu.|  
 |[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Pobiera unikatowy identyfikator globalny tego procesu.|  
 |[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [PRZESTARZAŁY]|Pobiera nazwę sesji, która jest debugowania procesu.<br /><br /> [PRZESTARZAŁY. NALEŻY ZAWSZE POWROTU `E_NOTIMPL`.]|  

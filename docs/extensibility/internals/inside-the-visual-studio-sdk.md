@@ -16,13 +16,14 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>W programie Visual Studio SDK
+# <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzeń programu Visual Studio, w tym architektura programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.  
   
 ## <a name="extensibility-architecture"></a>Rozszerzalność architektury  
@@ -37,7 +38,7 @@ Ogólny widok architektury programu Visual Studio
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Visual Studio shell zapewnia podstawowe funkcje i obsługuje cross komunikacji między rozszerzeniami pakiety VSPackage i MEF składnika. Aby uzyskać więcej informacji, zobacz [programu Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>Wskazówki dotyczące czynności użytkownika  
+## <a name="user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika  
  Jeśli planujesz projektowanie nowych funkcji dla programu Visual Studio, należy podjąć przyjrzeć się te wskazówki dotyczące projektowania i użyteczność porady: [dotyczące środowiska użytkownika w usłudze Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Polecenia  

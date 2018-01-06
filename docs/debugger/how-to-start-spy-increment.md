@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b301d16c96878974c12b94879f717c727d129a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bc54bd1a2912c4c07b37a5694c2a576ddd5de31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-spy"></a>Porady: korzystanie z programu Spy++
 Można uruchomić narzędzie Spy ++ z programu Visual Studio lub w wierszu polecenia.  
@@ -45,4 +46,4 @@ Można uruchomić narzędzie Spy ++ z programu Visual Studio lub w wierszu polec
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
  [Widoków Spy ++](../debugger/spy-increment-views.md)   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

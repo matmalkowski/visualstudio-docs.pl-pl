@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb07ad37e8522e2a893edbc7fba86e359893b812
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18a8d66da62fd480934c750a6b809465022c5d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Porady: debugowanie w klastrze o wysokiej wydajności
 Debugowanie programu przetwarzanie wieloprocesorowe w klastrze wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Istnieje jednak kilka dodatkowych kwestii dotyczących. Wymagania ogólne ustawienia zdalnego, zobacz [zdalnego debugowania](../debugger/remote-debugging.md).  

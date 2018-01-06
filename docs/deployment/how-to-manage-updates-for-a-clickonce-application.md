@@ -22,11 +22,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8de46a08d49bb71da055021b6785e4a3e2e97efc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Porady: zarządzanie aktualizacji dla aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje można sprawdzić aktualizacje automatyczne lub programowo. Deweloperzy masz dużą elastyczność określania, kiedy i jak aktualizacji są sprawdzane, czy aktualizacje są obowiązkowe i gdy aplikacja ma sprawdzać dostępność aktualizacji.  
@@ -113,4 +114,4 @@ ms.lasthandoff: 10/27/2017
  [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Porady: sprawdzanie aktualizacji aplikacji programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [Instrukcje: sprawdzanie aktualizacji aplikacji w sposób programowy za pomocą wdrażania interfejsu API technologii ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

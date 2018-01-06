@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6a1afea2357fb0c0ef1bcf8152f8a3785a55786
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 539ceb45cce6c317ed3723c5006e6d2a77029335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions-overview"></a>Omówienie rozwiązania
 Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projekt i stan informacje dotyczące rozwiązania są przechowywane w dwóch plikach inne rozwiązanie. Plik rozwiązania (sln) jest tekstowy umieszczony pod kontrolą kodu źródłowego i udostępniana między użytkownikami i. Plik rozwiązania użytkownika opcji (.suo) jest plikiem binarnym. W związku z tym plik .suo — nie można umieścić pod kontrolą kodu źródłowego i zawiera informacje specyficzne dla użytkownika.  

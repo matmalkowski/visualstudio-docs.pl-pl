@@ -18,11 +18,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e528bb0ef732400639f8604cf471d7f54a89ae73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b5dcbf99dcc6005c89a7bc67030f2e0f2fddfc5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Porady: zapełnianie dokumentów danymi z bazy danych
   Miały dostęp do danych w projektach na poziomie dokumentu dla programu Microsoft Office, w taki sam sposób, że uzyskujesz dostęp do danych w projektach formularzy systemu Windows. Używania tego samego narzędzia i kod, aby przenosić dane z bazy danych w ramach rozwiązania i formanty formularzy systemu Windows można użyć do wyświetlania danych.  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: aktualizowanie źródła danych danymi z formanty hosta](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Korzystanie z plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Łączenie z danymi w aplikacjach formularzy systemu Windows](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+ [BindingSource, składnik — omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

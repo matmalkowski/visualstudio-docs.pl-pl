@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0352d2c2bee683c602dbe0449a9c25bb6ff259a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3aa69594dd644e5b4f1c5d74d313b72cf2f505
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="groups-element"></a>Element grupy
 Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.  
@@ -46,14 +47,14 @@ Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Elementu grupy](../extensibility/group-element.md)|Reprezentuje grupę jednego polecenia.|  
-|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.|  
+|[Group, element](../extensibility/group-element.md)|Reprezentuje grupę jednego polecenia.|  
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element poleceń](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -67,4 +68,4 @@ Zawiera wpisy, które definiują grupy polecenia pakiet VSPackage.
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

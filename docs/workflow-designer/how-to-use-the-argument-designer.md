@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5093e5561140a0ebff57da1f7c21a8954ee58bb3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1cdd0dd563a5f87d4e32f779985afd63319032
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-argument-designer"></a>Porady: Użyj projektanta argumentów
 W porównaniu z poprzednimi wersjami [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], projektanta argumentów ułatwia umożliwiają przepływ do i z działania danych. Projektant jest dostępne po kliknięciu **argumenty** przycisk w lewym dolnym rogu obszaru projektowania. Projektant zawiera listę argumentów, które znajdują się w formie tabelarycznej i można sortować według poszczególnych nagłówków kolumn, z wyjątkiem **wartość domyślna** kolumny. Każdy argument zawiera nazwa, kierunek w/out/w out/właściwości, typ i domyślne wyrażenie wartości (jeśli istnieją). Nazwa i wartość domyślną, wyrażenia są pola edycji, a typie i kierunku są listach rozwijanych. [! OBEJMUJĄ[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).  
@@ -36,4 +37,4 @@ W porównaniu z poprzednimi wersjami [!INCLUDE[dnprdnshort](../code-quality/incl
   
 ## <a name="see-also"></a>Zobacz też  
  [Za pomocą projektanta przepływów pracy](../workflow-designer/using-the-workflow-designer.md)   
- [Argumenty i zmienne](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
+ [Zmienne i argumenty](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

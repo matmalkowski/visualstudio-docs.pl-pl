@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffc6ecc620f57f0cc1e4dd8baf02f1bd1b17d53b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a5e31eb2acb50d9803bedd77e48d0821cbaea61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="feedback-to-the-user"></a>Opinię do użytkownika
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) wizualne dotyczące funkcjonalność dostępna jest oparta na bieżące zaznaczenie i kontekst zaznaczenia globalnego użytkownika. W poniższej tabeli wymieniono funkcje, które są dostępne w wybór różnych kontekstach.  
@@ -63,4 +64,4 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane śro
 ## <a name="see-also"></a>Zobacz też  
  [Wybór i waluty w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)   
- [Wybieranie i hierarchie](../../extensibility/internals/hierarchies-and-selection.md)
+ [Hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md)

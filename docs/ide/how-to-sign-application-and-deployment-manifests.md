@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9be05b63169d155f7e1662112ca119422ddbc1a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisywanie aplikacji i manifestów wdrożenia
 Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifestów aplikacji i wdrażania muszą być podpisane przy użyciu pary kluczy publiczny/prywatny i podpisany przy użyciu technologii Authenticode. Można podpisać manifestów przy użyciu certyfikatu z magazynu certyfikatów systemu Windows lub pliku klucza.  
@@ -112,4 +113,4 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifes
  [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)   
  [Porady: tworzenie pary kluczy publiczno prywatnych](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md)   
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)
+ [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dd9e082834af6194b84c7975e4a42337d66a429a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b2f48162ed4c37358980c40b5c71c4f955880358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadane dobrze znanego elementu MSBuild
 W poniższej tabeli opisano metadanych przypisany do każdego elementu po jego utworzeniu. W każdym przykładzie użyto następujących deklaracji elementu można dołączyć plik `C:\MyProject\Source\Program.cs` w projekcie.  
@@ -52,4 +53,4 @@ W poniższej tabeli opisano metadanych przypisany do każdego elementu po jego u
 ## <a name="see-also"></a>Zobacz też  
  [Elementy](../msbuild/msbuild-items.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)

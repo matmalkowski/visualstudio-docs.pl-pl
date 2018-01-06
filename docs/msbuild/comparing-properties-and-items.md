@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6210f6e96c4e0b1330ee83a3f0f19ae58849dfce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-properties-and-items"></a>Porównanie właściwości i elementów
 Właściwości programu MSBuild i elementy jest używany zarówno do przekazywania informacji do zadania, oceny warunków i przechowywać wartości, które można odwoływać się w pliku projektu.  

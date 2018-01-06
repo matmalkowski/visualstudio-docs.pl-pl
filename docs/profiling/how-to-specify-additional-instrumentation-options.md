@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59bc7f5a03577c00d6c085ff1a6861e73eda2f71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c663b4de5f35df1d0fb1bdcfda076502360361d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Porady: określanie dodatkowych opcji instrumentacji
 Pliki binarne mogą dodawać [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane środowisko programistyczne (IDE) lub za pomocą narzędzia wiersza polecenia. Instrumentacja pliku binarnego z w środowisku IDE, można kontrolować objętość danych zbieranych podczas instrumentacji, przez określenie dodatkowych opcji Instrumentacji do [VSInstr](../profiling/vsinstr.md) narzędzia. Te opcje są dostępne w sesji lub na poziomie docelowej. Na przykład aby dołączyć lub wykluczyć określone funkcje podczas instrumentacji, opcja dodatkowe Instrumentacji na poziomie docelowej.  

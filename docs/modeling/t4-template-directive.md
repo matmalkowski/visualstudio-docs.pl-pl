@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6bb99e6ef2c4a898285e4d7dae503aec0fc7d955
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego T4 zazwyczaj rozpoczyna się od `template` dyrektywy, który określa sposób przetwarzania szablonu. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.  
@@ -59,7 +60,7 @@ debug="true"
 ```  
   
  Prawidłowe wartości:  
- `true, false`. Wartość domyślna to false.  
+ `true, false`., Wartość domyślna to false.  
   
  Jeśli `debug` atrybutu `true`, plik pośredni kod będzie zawierał informacje, które umożliwiają debugera zidentyfikować dokładniej pozycji w szablonie, gdzie przerwania lub wyjątek wystąpił.  
   
@@ -74,7 +75,7 @@ hostspecific="true"
 ```  
   
  Prawidłowe wartości:  
- `true, false, trueFromBase`. Wartość domyślna to false.  
+ `true, false, trueFromBase`., Wartość domyślna to false.  
   
  Jeśli ustawisz wartość tego atrybutu `true`, właściwość o nazwie `Host` jest dodawana do klasy generowane przez szablon tekstu. Właściwość jest odwołanie do hosta przez aparat przekształcania i jest zadeklarowany jako <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.  
   
@@ -140,7 +141,7 @@ Squares of numbers:
   
  Jeśli nie określisz `inherits` atrybut, klasa podstawowa i Klasa pochodna zostaną wygenerowane na podstawie szablonu tekstu. Po określeniu `inherits` wygenerowaniu atrybutu klasy pochodnej. Klasa bazowa może być napisana odręcznie, ale musi mieć metody, które są używane w klasie pochodnej.  
   
- Zazwyczaj można określić inny wstępnie przetworzony szablon jako klasę podstawową. Szablon podstawowy dostarcza wspólne bloki tekstu, które mogą się przeplatać z tekstem z szablonów pochodnych. Można użyć klasy funkcji bloki `<#+ ... #>` do definiowania metod, które zawierają fragmentów tekstu. Na przykład można umieścić strukturę tekstu wyjściowego w szablonie podstawowym, zapewniającym wirtualne metody, które mogą zostać zastąpione w szablonach pochodnych:  
+ Zazwyczaj można określić inny wstępnie przetworzony szablon jako klasę bazową. Szablon podstawowy dostarcza wspólne bloki tekstu, które mogą się przeplatać z tekstem z szablonów pochodnych. Można użyć klasy funkcji bloki `<#+ ... #>` do definiowania metod, które zawierają fragmentów tekstu. Na przykład można umieścić strukturę tekstu wyjściowego w szablonie podstawowym, zapewniającym wirtualne metody, które mogą zostać zastąpione w szablonach pochodnych:  
   
  Szablon tekstowy (wstępnie przetworzony) czasu wykonywania BaseTemplate.tt:  
  ```scr  
@@ -202,7 +203,7 @@ This is the common footer.
   
  Można utworzyć klasy podstawowe i pochodne w różnych projektach. Pamiętaj, aby dodać podstawowy projekt lub zestawu do odwołania do projektu pochodnych.  
   
- Można również użyć zwykłej klasy odręcznej jako klasy bazowej. Klasa podstawowa musi dostarczać metody stosowane w klasie pochodnej.  
+ Można również użyć zwykłej klasy odręcznej jako klasy bazowej. Klasa bazowa musi dostarczać metody stosowane w klasie pochodnej.  
   
 > [!WARNING]
 >  Jeśli używasz `inherits` i `hostspecific` atrybuty ze sobą, określ hostspecific = "trueFromBase" w klasie pochodnej i hosta = "true" w klasie podstawowej. Dzięki temu można uniknąć podwójnego definicji `Host` właściwości w wygenerowanym kodzie.  

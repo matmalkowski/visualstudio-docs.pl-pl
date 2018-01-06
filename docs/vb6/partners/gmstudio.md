@@ -9,11 +9,12 @@ dev_langs: visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.openlocfilehash: e1d86e5a4f363a39283d32778144a1c0a7c50f23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="great-migrations-studio-gmstudio"></a>Bardzo migracje Studio (gmStudio)
 

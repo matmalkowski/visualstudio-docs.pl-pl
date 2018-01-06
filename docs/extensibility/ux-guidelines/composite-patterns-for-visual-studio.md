@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone połączyć elementy projektu i interakcji w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio w zakresie spójności:  
@@ -485,7 +486,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
 |Okno dialogowe|Lokalizacja okna dialogowego, jeśli ma on przeniesiony<br /><br /> Widok, który użytkownik ostatnio używana w oknie dialogowym|Po zamknięciu okna dialogowego<br /><br /> Gdy kończy się sesja programu Visual Studio|W pamięci<br /><br /> Rejestr w **HKEY_Current_User**|  
 |Okno|Rozmiar i położenie okna|Po zamknięciu okna<br /><br /> Podczas zmiany trybu programu Visual Studio<br /><br /> Gdy kończy się sesja programu Visual Studio|**Opcji użytkownika (.suo)** pliku projektu<br /><br /> Plik opcji niestandardowych ustawień okna|  
 |dokument|Bieżące zaznaczenie w dokumencie<br /><br /> Widok dokumentu<br /><br /> Ostatnich kilku miejscach odwiedzoną przez użytkownika|Po zapisaniu dokumentu|**Opcji użytkownika (.suo)** pliku projektu|  
-|Project|Odwołania do plików<br /><br /> Odwołania do katalogów znajdujących się na dysku<br /><br /> Odwołania do innego oprogramowania<br /><br /> Składniki<br /><br /> Informacje o stanie o samym projekcie|Po zapisaniu projektu|Plik projektu|  
+|Projekt|Odwołania do plików<br /><br /> Odwołania do katalogów znajdujących się na dysku<br /><br /> Odwołania do innego oprogramowania<br /><br /> Składniki<br /><br /> Informacje o stanie o samym projekcie|Po zapisaniu projektu|Plik projektu|  
 |Rozwiązanie|Odwołania do projektów<br /><br /> Odwołania do plików|Po zapisaniu projekt lub rozwiązanie|**Solution (.sln)** pliku|  
 |Ustawienia w **Narzędzia > Opcje**|Dostosowania klawiatury<br /><br /> Dostosowywanie paska narzędzi<br /><br /> Schematy kolorów|Gdy **Narzędzia > Opcje** zamknięciu okna<br /><br /> Gdy kończy się sesja programu Visual Studio|Rejestr w **HKEY_Current_User**|  
   

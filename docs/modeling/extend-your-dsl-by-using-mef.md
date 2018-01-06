@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 492455d06c65bdcf3838c4f61d1fd2dbbcbb0c3f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1f64368c90f6d77be24271eeaac96cc6b5624f67
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 Języka specyficznego dla domeny (DSL) można rozszerzyć za pomocą Managed Extensibility Framework (MEF). Użytkownik lub inni deweloperzy będą mogli zapisać rozszerzenia DSL bez zmiany definicji DSL i kod programu. Takie rozszerzenia obejmują poleceń menu, przeciągnij i upuść programów obsługi i sprawdzania poprawności. Użytkownicy będą mogli do zainstalowania programu DSL, a następnie opcjonalnie zainstalować rozszerzenia dla niego.  
@@ -377,4 +378,4 @@ namespace MefExtension
  [Wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)   
  [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Sprawdzanie poprawności języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md)
+ [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7f2824cc86f919a2124d82fd5b23db571ac780b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fac3e7bfe487c3c8a8b99cdf9495d41e630a685
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-window-dialog-box"></a>Okno dialogowe Znajdź okno
 Umożliwia to okno dialogowe Wybierz okno i wyświetla jego właściwości lub komunikaty. Aby wyświetlić to okno dialogowe, wybierz **Znajdź okno** z **Spy** menu.  
@@ -57,10 +58,10 @@ Umożliwia to okno dialogowe Wybierz okno i wyświetla jego właściwości lub k
  [Widok okien](../debugger/windows-view.md)  
  Wyświetla widok drzewa dostępne systemu windows i kontrolek.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
   
  [Wyszukiwanie okien — okno dialogowe](../debugger/window-search-dialog-box.md)  
@@ -69,5 +70,5 @@ Umożliwia to okno dialogowe Wybierz okno i wyświetla jego właściwości lub k
  [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości przedziału wybranego w widoku systemu Windows.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.

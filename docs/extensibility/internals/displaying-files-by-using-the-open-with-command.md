@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed8a19ce0cfb6a7936d61ff7a5855498d2010359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a1631632a2ceb66380d1d0c41e54b5a4244a31a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Wyświetlanie plików przy użyciu Otwórz za pomocą polecenia
 Projekt można zadawać IDE, aby wyświetlić **Otwórz za pomocą** okno dialogowe. To żądanie monituje użytkownika o otwarcie pliku, który ma wybór standardowe edytory. W poniższych krokach opisano tego procesu.  
@@ -37,4 +38,4 @@ Projekt można zadawać IDE, aby wyświetlić **Otwórz za pomocą** okno dialog
 ## <a name="see-also"></a>Zobacz też  
  [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Wyświetlanie plików za pomocą polecenia Otwórz plik](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Porady: otwieranie standardowe edytory](../../extensibility/how-to-open-standard-editors.md)
+ [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)

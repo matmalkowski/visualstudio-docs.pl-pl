@@ -14,20 +14,21 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8fb47ec57ccaa6e0bf3ddc8304dff3a1ecaf8258
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd39848819087209455d31e481d560a0534ea385
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Debugowanie przepływów pracy za pomocą projektanta przepływów pracy
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] Umożliwia debugowanie przepływów pracy i działań niestandardowych. Proces i zachowanie są podobne do domyślnych [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] debugera. Tematy w tej sekcji opisano sposób wykonywania tradycyjnych debugowanie procedur, a także debugowanie XAML i wyrażenia.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: wywoływanie Debugger przepływu pracy](../workflow-designer/how-to-invoke-the-workflow-debugger.md)  
+ [Instrukcje: Wywoływanie debugera przepływu pracy](../workflow-designer/how-to-invoke-the-workflow-debugger.md)  
   
- [Porady: Ustawianie punktów przerwania w przepływach pracy](../workflow-designer/how-to-set-breakpoints-in-workflows.md)  
+ [Instrukcje: Ustawianie punktów przerwania w przepływach pracy](../workflow-designer/how-to-set-breakpoints-in-workflows.md)  
   
- [Porady: debugowanie XAML z projektanta przepływów pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)  
+ [Instrukcje: Debugowanie kodu XAML za pomocą Projektanta przepływu pracy](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)  
   
- [Nieobsługiwane scenariusze debugowania w Projektancie przepływów pracy](../workflow-designer/unsupported-debugging-scenarios-in-the-workflow-designer.md)
+ [Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy](../workflow-designer/unsupported-debugging-scenarios-in-the-workflow-designer.md)

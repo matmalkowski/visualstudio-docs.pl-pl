@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugowanie: wymagania systemu
 W tym temacie opisano wymagania programowe i zabezpieczeń dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] debugowania scenariusze:  
@@ -43,7 +44,7 @@ W tym temacie opisano wymagania programowe i zabezpieczeń dla [!INCLUDE[vstecas
  Aby debugować [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (obsługiwanych przez pulę aplikacji), musi mieć uprawnienia do debugowania tego procesu. Domyślnie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji przed ich usług IIS 6.0, Uruchom jako **ASPNET** użytkownika. W usługach IIS 6.0 i IIS 7.0 **usługi SIECIOWEJ** konta jest ustawieniem domyślnym. Jeśli proces roboczy jest uruchomiona jako **ASPNET**, lub jako **usługi SIECIOWEJ**, musisz mieć uprawnienia administratora do jego debugowania.
 
  > [!IMPORTANT]
- > Począwszy od systemu Windows Server 2008 R2, firma Microsoft zaleca użycie [puli](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) jako tożsamość, dla każdej puli aplikacji.
+ > Począwszy od systemu Windows Server 2008 R2, firma Microsoft zaleca użycie [puli](/iis/manage/configuring-security/application-pool-identities) jako tożsamość, dla każdej puli aplikacji.
   
  Nazwa [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy zmienia się za pomocą debugowania scenariusza i wersji programu IIS. Aby uzyskać więcej informacji, zobacz [porady: znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

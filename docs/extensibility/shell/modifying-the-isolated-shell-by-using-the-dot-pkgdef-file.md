@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37e15fd871ad55bfca2ebf725b8a814b03df6d93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f250d81ec35a2d9de074f54dded1f7ef0d76ef09
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modyfikowanie przy użyciu programu Isolated Shell. Pliku Pkgdef
 Plik .pkgdef obsługuje ustawienia używane do dostosowywania aplikacji isolated shell. Określa wartości, które są tworzone, gdy aplikacja jest zainstalowana na komputerze i że odwołuje się powłoki programu Visual Studio podczas uruchamiania aplikacji. Ustawienia są zorganizowane w pliku oparte na kluczach rejestru odpowiednich.  

@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9782e51688ae1ef4fda3ed52636de54149fa79e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie strony początkowej niestandardowych
 Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej strony początkowej.  
@@ -91,4 +92,4 @@ Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej stron
  [Dodawanie kontrolki użytkownika do strony początkowej](../extensibility/adding-user-control-to-the-start-page.md)   
  [Dodawanie poleceń programu Visual Studio do strony początkowej](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
  [Wskazówki: Zapisywanie ustawień użytkownika na stronę początkową](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
- [Wdrażanie niestandardowych Start stron](../extensibility/deploying-custom-start-pages.md)
+ [Wdrażanie niestandardowych stron początkowych](../extensibility/deploying-custom-start-pages.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfb3bcca8c56ebefa665e44384df0751e71f6591
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-side-by-side-file-associations"></a>Zarządzanie skojarzeń plików Side-by-Side
 Jeśli VSPackage udostępnia skojarzeń plików, należy zdecydować, jak obsługiwać urządzenia side-by-side, w których przypadku konkretnej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powinna być wywoływana w celu otwarcia pliku. Formaty plików niezgodne komplikuje problem.  

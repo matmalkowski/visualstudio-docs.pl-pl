@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 68773435bc35a93ab49189306db532c68e2b8dad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: eee0e88b23a26ae7a89005ff304b565dd3d84c34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Porady: określanie plików publikowanych za pomocą technologii ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pliki aplikacji, wszystkie z systemem innym niż kodu w projekcie są wdrażane wraz z aplikacji. W niektórych przypadkach można mogą nie ma, należy opublikować określonych plików lub można zainstalować niektórych plików na podstawie warunków. Visual Studio oferuje możliwości Wyklucz pliki, pliki są oznaczane jako pliki danych lub wymagania wstępne i tworzenie grup plików instalacji warunkowego.  
@@ -117,4 +118,4 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

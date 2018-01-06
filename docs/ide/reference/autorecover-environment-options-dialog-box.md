@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7cc057fbb19b51a6f30092b2f0edce747f03edfb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09ea9631877c8bec0523cf0bcfd7ebc161aae596
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, środowisko, opcje — Okno dialogowe
 Ta strona Opcje — okno dialogowe umożliwia określenie, czy pliki są automatycznie do kopii zapasowej. Ta strona umożliwia również określić czy zmodyfikowane pliki zostaną przywrócone, gdy jest nieoczekiwanie zamykany zintegrowane środowisko programistyczne (IDE). Dostęp do tego okna dialogowego, wybierając **narzędzia** menu i wybierając pozycję **opcje**, a następnie wybierając **środowiska** folderu i wybierając polecenie  **AutoRecover** strony. Jeśli ta strona nie ma na liście, wybierz **wszystkie ustawienia** w **opcje** okno dialogowe.  
@@ -41,4 +42,4 @@ Ta strona Opcje — okno dialogowe umożliwia określenie, czy pliki są automat
  Ta opcja umożliwia określenie, jak długo przechowuje pliki utworzone dla Autoodzyskiwania w Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Opcje — okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)
+ [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

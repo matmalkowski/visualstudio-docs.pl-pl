@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de22bd4722df1cd78472fd9e180fdb8132401828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af8aac642ecd21f8f4709874e4e3e6ff0b3e58b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckout-function"></a>Funkcja SccCheckout
 Podana lista nazw plików w pełni kwalifikowana, tej funkcji wyewidencjonuje je na dysku lokalnym. Komentarz ma zastosowanie do wszystkich plików wyewidencjonowany. Argument komentarz może być `null` ciągu.  
@@ -76,4 +77,4 @@ SCCRTN SccCheckout (
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
- [Używane przez określonego polecenia flag bitowych](../extensibility/bitflags-used-by-specific-commands.md)
+ [Flagi bitowe używane przez określone polecenia ](../extensibility/bitflags-used-by-specific-commands.md)

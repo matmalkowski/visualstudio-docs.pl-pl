@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2ab3403fe01ce4ead0d3e388eaadbc34595675
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4cd226ebc3d2853ddfa35f42c5990db940c4424
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-locations"></a>Lokalizacje symboli
 Większość symbole mają określonej lokalizacji w pliku obrazu. Lokalizacja symbolu zostanie określony z wartością z przedziału od [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) wyliczenia. Symbol może obsługiwać dodatkowe właściwości, w zależności od jego lokalizacji.  

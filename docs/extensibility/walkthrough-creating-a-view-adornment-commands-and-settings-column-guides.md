@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Wskazówki: Tworzenie ozdób widoku, poleceń i ustawień (prowadnice kolumn)
 Można rozszerzyć Edytor tekstu/kodu programu Visual Studio z poleceniami i efekty widoku.  W tym temacie opisano Rozpoczynanie pracy z funkcją popularnych rozszerzenia prowadnice kolumn.  Przewodniki kolumny są wizualnie światła linii w widoku edytora tekstu w celu zarządzania kodu do określonej szerokości.  W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisy na blogu lub usterek raportów.  
@@ -1357,4 +1358,4 @@ private int GetApplicableColumn(EventArgs e)
  [Usługa języka i punkty rozszerzenia Edytora](../extensibility/language-service-and-editor-extension-points.md)   
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [Dodawanie do Menu podmenu](../extensibility/adding-a-submenu-to-a-menu.md)   
- [Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+ [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eca23f38a27ac43246fd6fbf0b4449630ef3f64d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c0a9fbbfe7e4b0b38b0286cf10f06dd7eec89c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Poradnik: Równoczesne kompilowanie wielu konfiguracji
 Większość typów projektów z wieloma, lub nawet wszystkie ich konfiguracji kompilacji, w tym samym czasie można tworzyć przy użyciu **tworzenia partii** okno dialogowe. Jednak w tym samym momencie nie można utworzyć następujących typów projektów w wielu konfiguracjach kompilacji:  

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0620821ec908deed2c57ddfefb40763a48fd2074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65e05d7da2acf5bd3eaf8dab1e3781d3d5b244a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Wysyłanie zdarzeń do uruchomienia po Launch
 Gdy aparat debugowania (DE) jest dołączony do programu, szereg zdarzenia uruchamiania wysyłane z powrotem do sesji debugowania.  
@@ -47,4 +48,4 @@ Gdy aparat debugowania (DE) jest dołączony do programu, szereg zdarzenia uruch
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

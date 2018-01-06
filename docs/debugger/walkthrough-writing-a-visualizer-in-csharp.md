@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Wskazówki: Pisanie wizualizatora w C# #
 W tym przewodniku pokazano, jak napisać prosty wizualizatora przy użyciu języka C#. Wizualizator, które będą tworzone w tym przewodniku Wyświetla zawartość ciągu przy użyciu okno komunikatu formularzy systemu Windows. Ten Wizualizator prosty ciąg nie jest szczególnie przydatna w sobie, ale zawiera podstawowe kroki, które należy wykonać, aby utworzyć wizualizatorów bardziej użyteczna w przypadku innych typów danych.  
@@ -69,7 +66,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 6.  W DebuggerSide.cs, dodaj następującą instrukcję do `using` instrukcji:  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 1.  W DebuggerSide.cs przejdź do następującego kodu:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  Zmień kod, aby:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 -   W `public class DebuggerSide`, Dodaj następujący **metody:**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -113,7 +110,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 4.  W DebuggerSide.cs, dodaj następującą instrukcję do `using` instrukcji:  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 1.  W `Show` metody, Dodaj następujący wiersz kodu:  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 1.  Dodaj następujący kod atrybutu do DebuggerSide.cs, po `using` instrukcje ale przed wysłaniem `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  Na **kompilacji** menu, wybierz **kompilacji MyFirstVisualizer**. Projekt powinien pomyślnie kompilacji. Przed kontynuowaniem należy poprawić błędy kompilacji.  
@@ -153,7 +150,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 1.  Dodaj następującą metodę do klasy `public DebuggerSide`:  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -203,13 +200,13 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
   
 3.  W TestConsole.cs, Dodaj następujący kod do `using` instrukcji:  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  W metodzie `Main`, Dodaj następujący kod:  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  

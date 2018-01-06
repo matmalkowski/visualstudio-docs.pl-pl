@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: Kulisy, część druga
 W [nowej generacji projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy jak **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows aplikacji**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i klikniętej OK.  
@@ -157,5 +158,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Generowanie nowego projektu: Kulisy, należy do jednego](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Generowanie nowego projektu: za kulisami, część pierwsza](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

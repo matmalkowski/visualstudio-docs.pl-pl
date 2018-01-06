@@ -25,11 +25,14 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38fa4b37b008aca07b26b859f50767344dcafd9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7599c99c9375cda7b5f24432db8c137c5c4357df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Porady: wychodzenia z kodu zarządzanego gdy w oknie stosu wywołań brakuje ramek natywnych
 Jeśli kod ma ramek natywnych, które nie są widoczne w **stos wywołań** okna, wykonywanie krok po kroku z kodu zarządzanego może spowodować nieoczekiwane wyniki. Jako rozwiązanie alternatywne można użyć zamiast punkt przerwania **Wyjdź**.  

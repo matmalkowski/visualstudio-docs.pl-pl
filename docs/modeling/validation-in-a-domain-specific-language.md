@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f4e27cfcff61be6712df97de0bb36008bda2547e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1d29c90dbfebaa71ace3e6d1027f17bb43fcd971
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia walidacji, aby sprawdzić, czy model utworzone przez użytkownika jest łatwy do rozpoznania. Na przykład jeśli Twoje DSL umożliwia użytkownikom rysowanie drzewa rodziny osób i ich elementów nadrzędnych, można zapisać ograniczenia, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementów nadrzędnych.  
@@ -345,4 +346,4 @@ validationController.ValidateCustom
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Propaguj zmiany poza modelu do obsługi zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+ [Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)

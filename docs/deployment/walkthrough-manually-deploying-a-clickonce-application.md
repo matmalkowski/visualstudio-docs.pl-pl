@@ -24,11 +24,12 @@ caps.latest.revision: "49"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce
 Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, lub należy korzystać z funkcji zaawansowanego wdrożenia, takich jak wdrażanie zaufanej aplikacji należy za pomocą narzędzia wiersza polecenia Mage.exe tworzenia Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Ten przewodnik zawiera opis sposobu tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu wiersza polecenia wersji (Mage.exe) lub wersji graficznego (MageUI.exe) generowania manifestu i narzędzia do edycji.  

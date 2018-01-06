@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7481531c910ddf668ce911ae37215545b77903
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d52a9dbed6cec64426247a0b92bff2b8ec98ec97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Pisanie wspólnej ewaluatora wyrażenia środowiska uruchomieniowego języka
 > [!IMPORTANT]
@@ -31,10 +32,10 @@ ms.lasthandoff: 10/31/2017
  Niektóre aspekty pakiet debugowania programu Visual Studio należy interpretować kod w kontekście języka programowania. Na przykład podczas wykonywania zatrzymany w punkcie przerwania, wszystkie wyrażenia, które użytkownik ma wpisane w **czujki** okna musi być obliczane i wyświetlane. Ponadto użytkownik może zmienić wartość zmiennej lokalnej przez wpisanie wyrażenia do **czujki** okna lub do **Immediate** okna.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Środowisko uruchomieniowe języka wspólnego i Szacowanie wyrażeń](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
+ [Środowisko uruchomieniowe języka wspólnego i ocenianie wyrażeń](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
  Wyjaśniono, że podczas zastrzeżonych język programowania są integracji środowiska IDE programu Visual Studio, zapisywanie EE stanie obliczenia wyrażenia w kontekście zastrzeżonych języka umożliwia kompilacji na język pośredni firmy Microsoft (MSIL) bez pisania aparat debugowania.  
   
- [Architektura ewaluatora wyrażenia](../../extensibility/debugger/expression-evaluator-architecture.md)  
+ [Architektura ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator-architecture.md)  
  Omówiono sposób implementuje wymaganych interfejsów EE i Wywołaj wspólnego języka środowiska uruchomieniowego symbol dostawcy i interfejsy integratora.  
   
  [Rejestrowanie ewaluatora wyrażeń](../../extensibility/debugger/registering-an-expression-evaluator.md)  
@@ -46,13 +47,13 @@ ms.lasthandoff: 10/31/2017
  [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)  
  W tym artykule opisano, jak to zrobić, gdy wstrzymuje wykonywanie, pakiet debugowania wywołuje DE, aby uzyskać listę zmiennych lokalnych i argumentów.  
   
- [Obliczenie wyrażenia okno czujki](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
+ [Ocenianie wyrażenia okna wyrażeń kontrolnych](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
  Dokumenty, jak pakiet debugowania programu Visual Studio wywołuje DE, aby określić bieżącą wartość każde wyrażenie na liście czujki.  
   
- [Zmiana wartości zmiennej lokalnej](../../extensibility/debugger/changing-the-value-of-a-local.md)  
+ [Zmienianie wartości zmiennej lokalnej](../../extensibility/debugger/changing-the-value-of-a-local.md)  
  Wyjaśnia, w zmiana wartości lokalnej, każdego wiersza w oknie zmienne lokalne ma skojarzony obiekt, który zawiera nazwę, typ i bieżącą wartość zmiennej lokalnej.  
   
- [Implementowanie Wizualizatorach typu i niestandardowych przeglądarki](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
+ [Implementowanie wizualizatorów typu i przeglądarek niestandardowych](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
  Wyjaśnia, które interfejs musi realizowane przez który składnik do obsługi wizualizatorach typu i niestandardowych przeglądarki.  
   
 ## <a name="see-also"></a>Zobacz też  

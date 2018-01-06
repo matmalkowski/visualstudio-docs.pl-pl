@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzone z **środowiska** kategorii, `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdego podsekcji to wywołanie, które umożliwia dostęp do właściwości kolekcji, a tabeli w każdym podsekcja zawiera listę właściwości w kolekcji.  
@@ -63,7 +64,7 @@ W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzo
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (wartość logiczna)|Zapisuje dokumenty w formacie Unicode, gdy nie można zapisać danych w stronie kodowej.|  
 |DontShowGlobalUndoChangeLossDialog|Get/Set (wartość logiczna)|Wyświetli ostrzeżenie, gdy globalne cofanie modyfikuje inne pliki edytowany.|  
 |AllowEditingReadOnlyFiles|Get/Set (wartość logiczna)|Umożliwia edytowanie plików tylko do odczytu, ale zapewnia ostrzeżenie po próba je zapisać.|  
-|DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Pozycja w karcie również w celu wstawienia otwartego dokumentu.|  
+|DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>., Pozycja w karcie również w celu wstawienia otwartego dokumentu.|  
   
 ## <a name="extension-manager"></a>Menedżer rozszerzeń  
  `DTE.Properties("Environment", "ExtensionManager")`  
@@ -165,4 +166,4 @@ W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzo
  [Określanie nazwy właściwości elementów na stronach opcje](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Strona opcji, czcionki i kolory — właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Strona opcji, Edytor tekstu — właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)   
- [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)
+ [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

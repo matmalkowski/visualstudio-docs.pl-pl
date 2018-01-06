@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 74e74184840e74c6333c6e503ea24cc7252061bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c16226e53afedd400360aa78cd87c878e30be68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami różnych kompilacji. Na przykład można utworzyć kompilację debugowania z informacji o symbolach lub kompilacji wydania bez informacji o symbolu, ale z włączonymi optymalizacjami. Lub w przypadku kompilowania projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. W takich przypadkach większość opcji kompilacji nie zmieniają się; tylko kilka opcji nie zostaną zmienione na sterowanie konfigurację kompilacji. Z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], użyj właściwości i warunki do tworzenia konfiguracji różnych kompilacji.  
@@ -189,4 +190,4 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 [MSBuild](../msbuild/msbuild.md)  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
  [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)   
- [Project — Element (MSBuild)](../msbuild/project-element-msbuild.md)
+ [Project, element (MSBuild)](../msbuild/project-element-msbuild.md)

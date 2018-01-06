@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4f46faae63d3fd60715ecd9aec804d03ef6dbc81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5d76ca47f0278306c16d6d5b15b964d6118318c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-include-directive"></a>Dyrektywa T4 Include
 W szablonie tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mogą zawierać tekst z innego pliku przy użyciu `<#@include#>` dyrektywy. Możesz umieścić `include` dyrektywy w dowolnym miejscu szablonu tekstowego przed pierwszym bloku funkcji klasy `<#+ ... #>`. Pliki załączone może również zawierać `include` dyrektywy i innych dyrektyw. To pozwala na udostępnianie kodu szablonu i standardowych wzorców tekstu szablonu między szablonami.  

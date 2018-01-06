@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4677b10d54a6c591c2f60e4c0b1f2978ad49a0ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c13b1a4e1b183b3a6f4b54f58cca3593ce5c7bb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework w edytorze
 Edytor jest utworzony przy użyciu składników Managed Extensibility Framework (MEF). Można tworzyć własne składników MEF do rozszerzania edytora, a kod może wykorzystać również składników edytora.  
@@ -105,4 +106,4 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 5.  Kiedy została wykonana z zestawu, umieść ją w... \Common7\IDE\Components\ folder instalacji programu Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Usługa języka i punkty rozszerzenia Edytora](../extensibility/language-service-and-editor-extension-points.md)
+ [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model usługi języka starsza wersja
 Usługa języka definiuje elementy i funkcje w określonym języku i służy do zapewnienia edytor z użyciem informacji specyficznych dla danego języka. Na przykład edytor musi znać elementów i słów kluczowych języka aby zapewnić obsługę kolorowanie składni.  
@@ -51,4 +52,4 @@ Podstawowy język modelu usług
 |Usługa języka|Implementacja zależnych; implementuje<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Obiekt zawierający informacje specyficzne dla języka wyróżnianie składni, uzupełnianie i pasujących nawiasów klamrowych edytora.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dane dokumentu i Widok dokumentu w edytorach niestandardowych](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+ [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../../extensibility/document-data-and-document-view-in-custom-editors.md)

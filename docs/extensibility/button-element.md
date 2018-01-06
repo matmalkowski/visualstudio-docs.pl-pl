@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd630a2fed94604cb91dc3af7e46f96269f75ad0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5af5dce3edf1ac2910af5f8d593ed8e316cff721
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="button-element"></a>Button Element
 Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyciski może być różnego rodzaju: przycisk, przycisk menu i SplitDropDown.  
@@ -52,17 +53,17 @@ Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyci
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element nadrzędny](../extensibility/parent-element.md)|Opcjonalny. Elementu nadrzędnego przycisku.|  
-|[Icon — Element](../extensibility/icon-element.md)|Opcjonalny. Ikony skojarzone z przyciskiem.|  
-|[Polecenie flagi elementu](../extensibility/command-flag-element.md)|Wymagany. Poniżej znajdują się prawidłowe wartości CommandFlag dla przycisku.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly.|  
-|[Element ciągów](../extensibility/strings-element.md)|Wymagany. Obiekt podrzędny [ButtonText elementu](../extensibility/buttontext-element.md) musi być zdefiniowany.|  
+|[Parent, element](../extensibility/parent-element.md)|Opcjonalny. Elementu nadrzędnego przycisku.|  
+|[Icon, element](../extensibility/icon-element.md)|Opcjonalny. Ikony skojarzone z przyciskiem.|  
+|[Command Flag, element](../extensibility/command-flag-element.md)|Wymagany. Poniżej znajdują się prawidłowe wartości CommandFlag dla przycisku.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly.|  
+|[Strings, element](../extensibility/strings-element.md)|Wymagany. Obiekt podrzędny [ButtonText elementu](../extensibility/buttontext-element.md) musi być zdefiniowany.|  
 |Adnotacja|Opcjonalny komentarz.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element przycisków](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
+|[Buttons, element](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie zdefiniowano przycisku w pliku vsct.  
@@ -80,4 +81,4 @@ Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyci
  ```
  
 ## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

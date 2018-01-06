@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Uruchamianie tworzenia rozszerzenia programu Visual Studio
 Jeśli rozszerzenia programu Visual Studio przed nigdy nie zostały zapisane, prawdopodobnie masz kilka pytań. Firma Microsoft zostały umieszczone niektóre z najczęściej następujące. Jeśli nie widzisz informacje, których szukasz, użyj przycisków opinii (**był pomocny tę stronę?** w dolnej części ekranu) aby poprosić o jaką mają.  
@@ -51,13 +52,13 @@ Jeśli rozszerzenia programu Visual Studio przed nigdy nie zostały zapisane, pr
   
 -   [Rozszerzanie projektów](../extensibility/extending-projects.md)  
   
--   [Opcje i rozszerzanie ustawień użytkownika](../extensibility/extending-user-settings-and-options.md)  
+-   [Rozszerzanie opcji i ustawień użytkownika](../extensibility/extending-user-settings-and-options.md)  
   
--   [Rozszerzanie właściwości i w oknie właściwości](../extensibility/extending-properties-and-the-property-window.md)  
+-   [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md)  
   
 -   [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
   
--   [Visual Studio izolowane powłoki](../extensibility/visual-studio-isolated-shell.md)  
+-   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)  
   
 ##  <a name="BKMK_ProjectTemplate"></a>Szablony projektów, które są udostępniane przez VSSDK?  
  Dwa główne typy rozszerzeń są pakiety VSPackage i MEF rozszerzenia. Ogólnie rzecz biorąc pakiet VSPackage rozszerzenia są używane dla rozszerzeń używających lub rozszerzyć poleceń, narzędzi systemu windows i projektów. Rozszerzenia MEF służą do rozszerzania lub Dostosuj edytorze programu Visual Studio.  
@@ -89,4 +90,4 @@ Jeśli rozszerzenia programu Visual Studio przed nigdy nie zostały zapisane, pr
 ## <a name="how-can-i-distribute-my-extension"></a>Jak można rozpowszechniać Moje rozszerzenie?  
  Można zainstalować rozszerzenia na innym komputerze lub przesyłać je do Twoich znajomych jako pliku .vsix zainstalowaniu kliknij go dwukrotnie. Można znaleźć więcej informacji na temat pakietów VSIX w [wysyłania rozszerzenia dla programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  
   
- Można również publikować swoje rozszerzenie w Visual Studio Marketplace, dzięki czemu są widoczne dla dużej liczby klientów programu Visual Studio. Na przykład pakietu rozszerzenia do witryny Marketplace, zobacz [wskazówki: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji dotyczących co należy zrobić, aby publikować w witrynie Marketplace, zobacz [produktów i rozszerzenia programu Visual Studio](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview).
+ Można również publikować swoje rozszerzenie w Visual Studio Marketplace, dzięki czemu są widoczne dla dużej liczby klientów programu Visual Studio. Na przykład pakietu rozszerzenia do witryny Marketplace, zobacz [wskazówki: publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Aby uzyskać więcej informacji dotyczących co należy zrobić, aby publikować w witrynie Marketplace, zobacz [produktów i rozszerzenia programu Visual Studio](/vsts/integrate/ide/extensions/overview).

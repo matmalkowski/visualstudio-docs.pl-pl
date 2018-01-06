@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 291cb024413072a6e07cbe46a2679994f7bd3315
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a10c38ec29e9a149d6756bcbe5bbfa1e65fcbe24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Widok linii - dane próbkowania pamięci .NET
 Widok linii dla platformy .NET pamięci alokacji profilowania danych przy użyciu metody próbkowania wymieniono instrukcje, które przydzielonej pamięci podczas przebiegu profilowania. Kolumny także rozmiaru i liczby alokacji.  

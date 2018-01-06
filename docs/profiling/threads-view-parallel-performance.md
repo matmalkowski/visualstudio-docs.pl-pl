@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (Parallel Performance)
 Widok wątków jest najbardziej szczegółowy i bogate widok wizualizatora współbieżności. Korzystając z tego widoku, można ustalić, czy wątki są wykonywanie lub blokuje z powodu synchronizacji, we/wy lub innego powodu.  
@@ -148,4 +149,4 @@ Widok wątków
  Ta karta przedstawia procesów i wątków były wykonywane w imieniu bieżącego procesu, które pliki są dotknięciu (na przykład bibliotek DLL, które zostały załadowane), odczytano liczbę bajtów i inne informacje We/Wy dysku. Ten raport służy do oceny czasu poświęcana podczas uzyskiwania dostępu do plików podczas wykonywania, szczególnie w przypadku, gdy proces wydaje się być powiązany we/wy. Aby uzyskać więcej informacji, zobacz [raport dotyczący operacji na dysku](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)
+ [Concurrency Visualizer](../profiling/concurrency-visualizer.md)

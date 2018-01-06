@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 831d0f60c992324c81cb1366ac28b3e3f1b066ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd45af08abd3d3523e2c88af13f46d81ebdb8e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files"></a>Folder różnych plików
 Możesz chcieć użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytory pracy niezależnie z projektem lub rozwiązaniem. Gdy masz otwartego rozwiązania można otwierać i modyfikować pliki bez dodawania ich do rozwiązania lub projektu. Pliki, które chcesz pracować z niezależnie od kontenery są nazywane różne pliki. Różne pliki są zewnętrzne rozwiązania i projekty nie są uwzględnione w kompilacji i nie może zostać dołączony do rozwiązania pod kontrolą źródła.  

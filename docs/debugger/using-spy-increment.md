@@ -13,20 +13,21 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6dcc0a50c2bf0706e217651e72cd023902d83120
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b450fc3720ba199b833ed2fbd98a748c71b8d74f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-spy"></a>Korzystanie z programu Spy++
 Spy ++ (SPYXX. (EXE) to narzędzie oparte na Win32, które umożliwia widoku graficznego elementów systemu procesy, wątki systemu windows i komunikatów okien. Spy ++ pomocy do ta sekcja zawiera następujące tematy pomocy:  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wprowadzenie programu Spy ++](../debugger/introducing-spy-increment.md)  
+ [Wprowadzenie do programu Spy++](../debugger/introducing-spy-increment.md)  
  Opisano typy informacji, które można wyświetlić za pomocą narzędzia Spy ++.  
   
- [Porady: Uruchom narzędzie Spy ++](../debugger/how-to-start-spy-increment.md)  
+ [Instrukcje: rozpoczynanie pracy z programem Spy++](../debugger/how-to-start-spy-increment.md)  
  Wyjaśniono, jak można uruchomić narzędzie Spy ++ z menu Narzędzia.  
   
  [Spy ++ — pasek narzędzi](../debugger/spy-increment-toolbar.md)  
@@ -45,8 +46,8 @@ Spy ++ (SPYXX. (EXE) to narzędzie oparte na Win32, które umożliwia widoku gra
  Opisano sposób modyfikowania widoku.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.

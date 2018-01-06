@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3694e8f4a8cdbdac147df3d6e60324888bccf048
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-4-check-in"></a>Obszar testu 4: Zaewidencjonuj
 Ten obszar testu wtyczkę kontroli źródła obejmuje wysyłanie zaktualizowane elementy do magazynu wersji za pomocą **Zaewidencjonuj** polecenia.  
@@ -70,4 +71,4 @@ Ten obszar testu wtyczkę kontroli źródła obejmuje wysyłanie zaktualizowane 
 |Dodaj projekt do rozwiązania puste pod kontrolą źródła (**oczekujących zaewidencjonowań** okna)|1.  Utwórz puste rozwiązanie.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Dodaj nowy projekt.<br />4.  Jeśli zostanie wyświetlony monit, należy zaakceptować wyewidencjonowanie rozwiązania.<br />5.  Sprawdź w rozwiązaniu z **oczekujących zaewidencjonowań** okna.|Typowe oczekiwane zachowanie.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

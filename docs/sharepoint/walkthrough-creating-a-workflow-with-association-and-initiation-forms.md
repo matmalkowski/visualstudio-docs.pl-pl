@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: tworzenie i przepływu pracy z formularzami inicjacji i skojarzenia
   Ten przewodnik przedstawia sposób tworzenia podstawowych sekwencyjnego przepływu pracy, uwzględniająca stosowanie formularzy skojarzenia i inicjowania. Są to formularzy ASPX, umożliwiających parametrów, które mają zostać dodane do przepływu pracy, gdy najpierw została skojarzona przez administratora programu SharePoint (formularz skojarzenia), a po uruchomieniu przepływu pracy przez użytkownika (formularza inicjowania).  
@@ -453,6 +454,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [Wskazówki: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
+ [Przewodnik: Dodawanie strony aplikacji do przepływu pracy](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   
   

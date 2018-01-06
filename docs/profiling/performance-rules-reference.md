@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec05a24a932816374766c107c1aab6f018e77cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24ae3ce7346c3fb6608a2db4faa4c57dd3399773
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-reference"></a>Zasady wydajności — Odwołanie
 Zasady wydajności narzędzi profilowania zapewniają dodatkowe ostrzeżenia i informacje o wydajności aplikacji. Reguły wydajności analizowanie danych w przebiegu profilowania, zebrane ze źródeł, takich jak liczniki wydajności procesora i systemu Windows. Reguła komunikaty są wyświetlane w oknie dane wyjściowe błędów [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane środowisko deweloperskie. Komunikaty są wyświetlane z jedną z następujących poziomów reguły:  
@@ -35,6 +36,6 @@ Zasady wydajności narzędzi profilowania zapewniają dodatkowe ostrzeżenia i i
 |||  
 |-|-|  
 |[Zasady wydajności użycia programu .NET framework](../profiling/dotnet-framework-usage-performance-rules.md)|Zasady, które ułatwiają efektywnie korzystać z programu .NET Framework.|  
-|[Pamięci oraz stronicowanie reguły wydajności](../profiling/memory-and-paging-performance-rules.md)|Reguły, które analizowanie zarządzanego pamięci i stronicowania działanie aplikacji.|  
+|[Reguły wydajności pamięci i stronicowania](../profiling/memory-and-paging-performance-rules.md)|Reguły, które analizowanie zarządzanego pamięci i stronicowania działanie aplikacji.|  
 |[Reguły korzystania z narzędzi profilowania](../profiling/profiling-tools-usage-rules.md)|Zasady, które ułatwiają efektywnie korzystać z narzędzia profilowania.|  
 |[Reguły wydajności monitorowania zasobu](../profiling/resource-monitoring-performance-rules.md)|Uruchom wiadomości informacji o wykorzystaniu procesora i pamięci w profilowania.|

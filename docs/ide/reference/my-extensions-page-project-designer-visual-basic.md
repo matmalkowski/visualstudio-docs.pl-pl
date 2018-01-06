@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b95a691f3246fd3745ce90bffa7967bd5ad52d31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18817d7fd6af26c5e1ce9d021afc37d1e9da8f34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Strona Moje rozszerzenia, Projektant projektu (Visual Basic)
 Użyj **Moje rozszerzenia** strony **projektanta projektu** do zarządzania `My` przestrzeń nazw rozszerzeń w projekcie. `My`przestrzeń nazw rozszerzeń umożliwiają dostosowanie `My` przestrzeni nazw, aby dodać własne niestandardowe elementy członkowskie. Informacje na temat tworzenia niestandardowych `My` rozszerzenia przestrzeni nazw, zobacz [rozszerzanie My Namespace w Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  
@@ -43,4 +44,4 @@ Użyj **Moje rozszerzenia** strony **projektanta projektu** do zarządzania `My`
  [Rozszerzanie Moje Namespace w Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)   
  [Pakowanie i wdrażanie niestandardowych rozszerzeń My](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)   
  [Rozszerzanie modelu aplikacji Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)   
- [Dostosowywanie, które obiekty są dostępne w mojej](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)
+ [Dostosowywanie, które obiekty są dostępne w My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

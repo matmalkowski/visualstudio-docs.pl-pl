@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Przewodnik po funkcji debuger programu Visual Studio
 
@@ -192,6 +193,26 @@ Pomocnik wyjątków jest doskonałym funkcja, która może pomóc w debugowaniu 
 > Pomocnik wyjątków zastępuje Asystenta wyjątków w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozwiń węzeł **ustawienia wyjątków** węzeł, aby wyświetlić więcej opcji, w jaki sposób obsługiwać ten typ wyjątku, ale nie ma potrzeby zmian w tym samouczku!
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debugowania na żywo w aplikacjach ASP.NET w usłudze Azure App Service
+
+**debugera migawki** tworzy migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który chcesz. Aby nakazać debugera do tworzenia migawki, należy ustawić snappoints i logpoints w kodzie. Debuger pozwala zobaczyć dokładnie co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Debuger migawki ułatwiają znacznie skrócić czas potrzebny na rozwiązać problemy występujące w środowisku produkcyjnym.
+
+![Uruchom debuger migawki](../debugger/media/snapshot-launch.png "Uruchom debuger migawki")
+
+Kolekcja migawki jest dostępna dla aplikacji ASP.NET uruchomionych w usłudze Azure App Service. Aplikacje ASP.NET muszą być uruchomione na .NET Framework 4.6.1 lub nowszej, i aplikacje platformy ASP.NET Core musi być uruchomiona na .NET Core 2.0 lub nowszego systemu Windows.
+
+Aby uzyskać więcej informacji, zobacz [debugowania na żywo aplikacji ASP.NET, za pomocą debugera migawki](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Migawki widoku przy użyciu funkcji IntelliTrace krok zwrotnego (Visual Studio Enterprise)
+
+**Krok zwrotnego IntelliTrace** automatycznie tworzy migawkę aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawki umożliwiają wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości. IntelliTrace krok wstecz może zaoszczędzić czas podczas chcesz zobacz poprzedni stan aplikacji, ale nie chcesz uruchomić ponownie debugowania lub Utwórz ponownie stan żądanej aplikacji.
+
+Można znaleźć i wyświetlić migawki za pomocą **krok do tyłu** i **krok do przodu** przycisków na pasku narzędzi debugowania. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **narzędzia diagnostyczne** okna.
+
+![Krok do tyłu i do przodu przyciski](../debugger/media/intellitrace-step-back-icons-description.png  "przyciski krok do tyłu i do przodu")  
+
+Aby uzyskać więcej informacji, zobacz [wyświetlić migawki IntelliTrace krok zwrotnego pomocą](../debugger/how-to-use-intellitrace-step-back.md) strony.
 
 ## <a name="more-features-to-look-at"></a>Więcej funkcji, aby przyjrzeć się
 

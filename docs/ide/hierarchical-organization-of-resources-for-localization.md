@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchiczna organizacja zasobów do lokalizacji
 W programie Visual Studio zlokalizowanych zasobów (dane, takie jak parametry i obrazy odpowiednie do każdego kultury) są przechowywane w oddzielnych plików i załadować zgodnie z ustawieniem kultury interfejsu użytkownika. Aby zrozumieć, jak zlokalizowanych zasobów są ładowane, warto traktować ich jako zorganizowane hierarchicznie.  

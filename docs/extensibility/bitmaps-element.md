@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4db0446a0adeaeee3d3a3fc1c5ae6ee02594f34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 42e8780312296bd038a0bfe5ed2911dab9940ea7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitmaps-element"></a>Element map bitowych
 Grupy [mapy bitowej elementu](../extensibility/bitmap-element.md) elementów.  
@@ -46,14 +47,14 @@ Grupy [mapy bitowej elementu](../extensibility/bitmap-element.md) elementów.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element map bitowych](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
-|[Element mapy bitowej](../extensibility/bitmap-element.md)|Definiuje mapy bitowej.|  
+|[Bitmaps, element](../extensibility/bitmaps-element.md)|Grupuje elementy mapy bitowej.|  
+|[Bitmap, element](../extensibility/bitmap-element.md)|Definiuje mapy bitowej.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element poleceń](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -67,4 +68,4 @@ Grupy [mapy bitowej elementu](../extensibility/bitmap-element.md) elementów.
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

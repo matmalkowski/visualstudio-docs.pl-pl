@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a7c002bd17da5f693955a82ab2e74bf65dc0cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
   Projektu definicji witryny programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia tworzenie *definicji witryny*, która stanowi podstawę dla nowej witryny programu SharePoint. Te definicje nie tylko określić wygląd i zachowanie witryny programu SharePoint, ale także jego zawartości domyślnej i funkcji. W definicji możesz umieścić listy wstępnie skonfigurowane, typów zawartości, odbiorcy zdarzeń, obrazy i inne elementy. SharePoint obejmuje niektóre definicje witryn, takie jak BLOG, na przykład. Podczas tworzenia witryny na podstawie definicji witryny BLOGU lokacji zawiera listy, części sieci Web i innych elementów, które wymaga lokacji obsługi blogów.  
@@ -52,12 +53,12 @@ ms.lasthandoff: 10/31/2017
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Wskazówki: Tworzenie podstawowego projektu definicji witryny](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Zawiera instrukcje dotyczące tworzenia podstawowego projektu definicji witryny w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Przewodnik: Tworzenie podstawowego projektu definicji witryny](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Zawiera instrukcje dotyczące tworzenia podstawowego projektu definicji witryny w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Porady: Tworzenie definicji witryny niestandardowych i konfiguracji](http://go.microsoft.com/fwlink/?LinkId=183309)|Opisuje sposób tworzenia definicji niestandardowej witryny w programie SharePoint, kopiując istniejącej definicji witryny, a następnie modyfikując kopię.|  
 |[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|W tym artykule opisano dla oryginalnego pliku, który określa definicje lokacji dostępne w **Wybieranie szablonu** sekcji **nową witrynę programu SharePoint** strony.|  
 |[Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Opisuje sposób przygotowania rozwiązań programu SharePoint do użytku globalnego.|  
-|[Tworzenie składników Web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Opisuje sposób tworzenia części strony programu SharePoint, które użytkownicy mogą modyfikować.|  
-|[Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia formantów wielokrotnych uruchamianych w stron aplikacji i składników Web Part.|  
+|[Tworzenie części sieciowych dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Opisuje sposób tworzenia części strony programu SharePoint, które użytkownicy mogą modyfikować.|  
+|[Tworzenie kontrolek wielokrotnego użytku dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia formantów wielokrotnych uruchamianych w stron aplikacji i składników Web Part.|  
 |[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Informacje dotyczące używania projektanta, który pojawia się po otwarciu strony sieci Web w projekcie.|  
 |[Omówienie stron sieci Web programu ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178726)|Zawiera ogólne informacje o strukturze [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony sieci Web, w jaki strony są przetwarzane przez [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]i w jaki sposób [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony są wyświetlane znaczników, który jest zgodny ze standardami XHTML.|  
 |[Składnia strony sieci Web ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178727)|W tym artykule opisano elementy znaczników, które składają się na stronie platformy ASP.NET.|  

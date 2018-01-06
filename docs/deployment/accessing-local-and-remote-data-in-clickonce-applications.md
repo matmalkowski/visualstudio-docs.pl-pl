@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 5474a2101a96576d7043c10cc3fd35fad3756653
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce
 Większość aplikacji używają lub wyprodukować danych. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]zapewnia różne opcje do odczytywania i zapisywania danych, zarówno lokalnie, jak i zdalnie.  
@@ -111,4 +112,4 @@ Większość aplikacji używają lub wyprodukować danych. [!INCLUDE[ndptecclick
  W większości przypadków, użytkownik nie ma dostępu do bazy danych bezpośrednio, ale zostanie do niego dostęp zamiast za pośrednictwem aplikacji serwera sieci Web napisany w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] lub usługi XML sieci Web. Uzyskiwanie dostępu do bazy danych w ten sposób jest często najlepszą metodę Jeśli Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest wdrażana z serwera sieci Web. Można uzyskiwać dostęp do serwera w częściowej relacji zaufania bez podnoszenia uprawnień aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Instrukcje: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c77d5fb404be8dda323720c1e0c1ab2c1887c88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cace0c9826a76a4a8341c6b85e1219dcf287e80a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="secure-deployment"></a>Wdrażanie zabezpieczeń
   Po utworzeniu rozwiązania do pakietu Office, komputerze dewelopera jest aktualizowane automatycznie uruchamianie kodu w projekcie do uruchomienia. Jednak podczas wdrażania rozwiązania, należy podać dowody, na którym można oprzeć decyzji dotyczącej zaufania rozwiązania przy użyciu certyfikatu podpisywania, lub używając [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monitu o klucz zaufania. Aby uzyskać więcej informacji, zobacz [udzielanie zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e9bfcf1d4da949c7f24ccf004cf3d031e776063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad84bca1dd6abaa0603b88d8be3575b9f68e337a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menus-element"></a>Element menu
 Definiuje menu i pasków narzędzi, które implementuje pakiet VSPackage.  
@@ -46,14 +47,14 @@ Definiuje menu i pasków narzędzi, które implementuje pakiet VSPackage.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element menu](../extensibility/menus-element.md)|Definiuje menu i pasków narzędzi, które implementuje pakiet VSPackage.|  
-|[Menu Element](../extensibility/menu-element.md)|Reprezentuje pojedynczy menu lub pasek narzędzi.|  
+|[Menus, element](../extensibility/menus-element.md)|Definiuje menu i pasków narzędzi, które implementuje pakiet VSPackage.|  
+|[Menu, element](../extensibility/menu-element.md)|Reprezentuje pojedynczy menu lub pasek narzędzi.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element poleceń](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń w pakiecie VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń w pakiecie VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -82,4 +83,4 @@ Definiuje menu i pasków narzędzi, które implementuje pakiet VSPackage.
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

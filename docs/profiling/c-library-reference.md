@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 690c1cf6ff64e71bcf9ad96ab5cb2c9f472d9855
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C
 Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżności.  
@@ -26,26 +27,26 @@ Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżno
 >  Standard języka C rezerwuje Użyj identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znaków dla wdrożeń, takich jak biblioteki. Nie używaj nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu elementów, których nazwy wykonaj tę Konwencję nie ma gwarancji i mogą ulec zmianie w przyszłych wersjach. Z tego powodu takie elementy kodu zostały pominięte w niniejszej dokumentacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Cvcreatedefaultmarkerseriesofdefaultprovider — funkcja](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
+ [Funkcja CvCreateDefaultMarkerSeriesOfDefaultProvider](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
   
- [Cvcreatemarkerseries — funkcja](../profiling/cvcreatemarkerseries-function.md)  
+ [Funkcja CvCreateMarkerSeries](../profiling/cvcreatemarkerseries-function.md)  
   
- [Cvcreatemarkerserieswithcodepagea — funkcja](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
+ [Funkcja CvCreateMarkerSeriesWithCodePageA](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
   
- [Cventerspan — funkcja](../profiling/cventerspan-function.md)  
+ [Funkcja CvEnterSpan](../profiling/cventerspan-function.md)  
   
- [CvInitProvider — funkcja](../profiling/cvinitprovider-function.md)  
+ [Funkcja CvInitProvider](../profiling/cvinitprovider-function.md)  
   
- [Cvisenabled — funkcja](../profiling/cvisenabled-function.md)  
+ [Funkcja CvIsEnabled](../profiling/cvisenabled-function.md)  
   
- [Cvleavespan — funkcja](../profiling/cvleavespan-function.md)  
+ [Funkcja CvLeaveSpan](../profiling/cvleavespan-function.md)  
   
- [Cvreleasemarkerseries — funkcja](../profiling/cvreleasemarkerseries-function.md)  
+ [Funkcja CvReleaseMarkerSeries](../profiling/cvreleasemarkerseries-function.md)  
   
- [Cvreleaseprovider — funkcja](../profiling/cvreleaseprovider-function.md)  
+ [Funkcja CvReleaseProvider](../profiling/cvreleaseprovider-function.md)  
   
- [Cvwritealert — funkcja](../profiling/cvwritealert-function.md)  
+ [Funkcja CvWriteAlert ](../profiling/cvwritealert-function.md)  
   
- [Cvwriteflag — funkcja](../profiling/cvwriteflag-function.md)  
+ [Funkcja CvWriteFlag](../profiling/cvwriteflag-function.md)  
   
- [Cvwritemessage — funkcja](../profiling/cvwritemessage-function.md)
+ [Funkcja CvWriteMessage](../profiling/cvwritemessage-function.md)

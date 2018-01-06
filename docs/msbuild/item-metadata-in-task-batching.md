@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: daa41beb487020dcaeccba692ace97b057a6b3ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 176f44c105909935988a06f3eb928e5adfb77149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementu i uruchom zadanie z każdej z partii. Może być trudne do zrozumienia dokładnie elementy jest przekazywany z partii, które. W tym temacie omówiono następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.  
@@ -226,4 +227,4 @@ Items in ExampColl: Item2;Item5
  [Itemmetadata — Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md)
+ [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 036f519529f0226c56b711096abc91e4ebf97d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — Zadanie
 Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jego wymagań wstępnych. Służy on jako pojedynczego Instalatora, która integruje się oddzielne pliki instalacyjne dla wszystkich składników tworzących aplikacji.  

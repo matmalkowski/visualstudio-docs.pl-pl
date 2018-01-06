@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Opracuj kodu w programie Visual Studio bez projektów i rozwiązań  
 W Visual Studio 2017 r możesz otworzyć kodu z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, można, na przykład znaleźć projektu kodu na Git, klonowanie i otworzyć go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu.  
@@ -171,7 +172,7 @@ W tej procedurze dodamy dwa zadania niestandardowej kompilacji, których nMake k
 
   ![Polecenia zadania niestandardowej kompilacji](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Dodaj następujące zadania kompilacji do tasks.vs.json. W tym przykładzie dodamy dwa zadania: jedną o nazwie "pliku reguł programu make kompilacji", która używa polecenia nMake, aby skompilować projekt, innych o nazwie czyszczenia pliku reguł programu make które wywołuje polecenie nMake z argumentem "Wyczyść". Te zadania, należy dodać w ramach istniejącej tablicy "zadania". (Należy pamiętać, że są one tylko zadania kompilacji przykład. Dla nich faktycznie pracę, musisz mieć obciążenia, który zawiera [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) zainstalowanych w systemie.)  
+1. Dodaj następujące zadania kompilacji do tasks.vs.json. W tym przykładzie dodamy dwa zadania: jedną o nazwie "pliku reguł programu make kompilacji", która używa polecenia nMake, aby skompilować projekt, innych o nazwie czyszczenia pliku reguł programu make które wywołuje polecenie nMake z argumentem "Wyczyść". Te zadania, należy dodać w ramach istniejącej tablicy "zadania". (Należy pamiętać, że są one tylko zadania kompilacji przykład. Dla nich faktycznie pracę, musisz mieć obciążenia, który zawiera [nNake](/cpp/build/nmake-reference) zainstalowanych w systemie.)
 
   ```xml
   {

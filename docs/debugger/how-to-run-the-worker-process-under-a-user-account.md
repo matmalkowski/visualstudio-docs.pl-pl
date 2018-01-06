@@ -23,17 +23,18 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 650d16b525f1917e28bb4fae88047df14f35f35c
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Porady: uruchamianie procesu roboczego z konta użytkownika
 Aby skonfigurować komputer, co umożliwia uruchamianie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe) przy użyciu konta użytkownika, wykonaj następujące kroki.  
 
  > [!IMPORTANT]
- > Począwszy od systemu Windows Server 2008 R2, firma Microsoft zaleca użycie [puli](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) jako tożsamość, dla każdej puli aplikacji.
+ > Począwszy od systemu Windows Server 2008 R2, firma Microsoft zaleca użycie [puli](/iis/manage/configuring-security/application-pool-identities) jako tożsamość, dla każdej puli aplikacji.
   
 ## <a name="procedure"></a>Procedura  
   

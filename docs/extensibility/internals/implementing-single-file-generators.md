@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9894666dd435dcaa110ba8af8307d7e942119bee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b9fed2f4118600c48ad6cb769c8e697b06ae77d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-single-file-generators"></a>Implementowanie generatory pojedynczego pliku
 Niestandardowe narzędzie — czasami określane jako generatora pojedynczych plików — umożliwiają rozszerzanie [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu systemów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Niestandardowe narzędzie jest składnik modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfejsu. Przy użyciu tego interfejsu, niestandardowe narzędzie przekształca pojedynczego pliku wejściowego w pojedynczym wyjściowym pliku. Wynik transformacji może być kodu źródłowego lub innych danych wyjściowych przydatne. Dwa przykłady kod wygenerowany przez narzędzie niestandardowe pliki są kod wygenerowany w odpowiedzi na zmiany w wizualnego projektanta i pliki generowane przy użyciu usługi sieci Web Services Description Language (WSDL).  
@@ -32,4 +33,4 @@ Niestandardowe narzędzie — czasami określane jako generatora pojedynczych pl
  Niestandardowe narzędzie musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfejsu. Opcjonalnie, narzędzia niestandardowe obsługuje <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> interfejsu, aby pobrać informacje ze źródeł innych niż pliku wejściowego. W każdym przypadku przed użyciem narzędzia niestandardowego, musi być zarejestrowany w systemie lub w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lokalnego rejestru. Aby uzyskać więcej informacji o rejestrowaniu narzędzi niestandardowych, zobacz [rejestrowanie generatory pojedynczy plik](../../extensibility/internals/registering-single-file-generators.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Udostępnianie typów wizualnych projektantów](../../extensibility/internals/exposing-types-to-visual-designers.md)
+ [Udostępnianie typów dla projektantów wizualnych](../../extensibility/internals/exposing-types-to-visual-designers.md)

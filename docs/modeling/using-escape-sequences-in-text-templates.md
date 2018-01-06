@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fdf062c9b33dd4a160f54bba83991a3cdda7f0d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1806b6aa1b6c6d4ac233e4a9d5785fe903d42221
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Korzystanie z sekwencji unikowych w szablonach tekstowych
 Można użyć sekwencji unikowych w szablonach tekstowych, które mają być Generowanie tagi szablonu tekstu i (C# jedynie w kodzie) specjalne znaków kontrolnych i cudzysłowów.  
@@ -38,4 +39,4 @@ Można użyć sekwencji unikowych w szablonach tekstowych, które mają być Gen
 -   Jeśli escape (\\) pojawi się gdziekolwiek w dowolnej kolejności innej niż gdzie specjalne znaków kontrolnych lub cudzysłowu (w języku C# tylko), znak będą dane wyjściowe bezpośrednio.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: generowanie szablonów z szablonów przy użyciu sekwencji unikowych](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)
+ [Instrukcje: Generowanie szablonów z szablonów przy użyciu sekwencji ucieczki](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

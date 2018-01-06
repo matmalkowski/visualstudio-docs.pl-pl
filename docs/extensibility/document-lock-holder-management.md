@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-lock-holder-management"></a>Zarządzanie właściciela blokady dokumentu
 Tabela systemem dokumentu (Normalizacją) obsługuje liczbę otwarte dokumenty i wszystkie blokady edycji, które mają. Blokady edycji można umieścić na dokument w Normalizacją, gdy programowo jest edytowany w tle bez użytkownika wyświetlany w oknie dokumentu otwartego dokumentu. Ta funkcja jest często używane przez projektantów, które modyfikują wiele plików za pomocą graficznego interfejsu użytkownika.  
@@ -43,4 +44,4 @@ Tabela systemem dokumentu (Normalizacją) obsługuje liczbę otwarte dokumenty i
   
 ## <a name="see-also"></a>Zobacz też  
  [Uruchomionej tabeli dokumentu](../extensibility/internals/running-document-table.md)   
- [Trwałość i uruchomiona tabeli dokumentu](../extensibility/internals/persistence-and-the-running-document-table.md)
+ [Trwałość i uruchamianie tabeli dokumentów](../extensibility/internals/persistence-and-the-running-document-table.md)

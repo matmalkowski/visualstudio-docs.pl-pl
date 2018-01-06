@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 862d537585e3599a7069f1a30d1dc652a49e699c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 049521213437e2d28e1e26b61859685158cebc08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskscheduler-class---internal-members"></a>Klasa TaskScheduler — wewnętrzne elementy członkowskie
 W tym temacie opisano wewnętrzne elementy członkowskie <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> klasy, które pomagają implementować niestandardowe debugera. Aby uzyskać ogólne informacje o tej klasy, zobacz <xref:System.Threading.Tasks.TaskScheduler> temat referencyjny.  
@@ -50,4 +51,4 @@ W tym temacie opisano wewnętrzne elementy członkowskie <xref:System.Threading.
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Wewnętrzne rozszerzenia równoległe dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

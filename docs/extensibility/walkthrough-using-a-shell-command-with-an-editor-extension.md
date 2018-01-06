@@ -13,11 +13,12 @@ caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83fe23b830594ac81b489b8f43095c24b29dd7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5a7f9426297ef28bdf4b829bd6697543f5aab55f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Wskazówki: Korzystanie z polecenia powłoki z rozszerzeniem edytora
 W pakiet VSPackage można dodać funkcji, takich jak polecenia menu do edytora. W tym przewodniku przedstawiono sposób dodawania ozdób widoku tekstu w edytorze za pomocą polecenia menu.  
@@ -724,4 +725,4 @@ W pakiet VSPackage można dodać funkcji, takich jak polecenia menu do edytora. 
      Fourscore...  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

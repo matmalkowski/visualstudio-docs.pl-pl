@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Debugowanie aplikacji uniwersalnych systemu Windows (UWP)
 Debuger programu Visual Studio zapewnia pełną obsługę debugowanie aplikacji platformy uniwersalnej systemu Windows.  
@@ -30,13 +31,11 @@ Informacje dotyczące debugowania uniwersalnych aplikacji systemu Windows, temac
   
 Aby debugować aplikacje Windows Phone 8, zobacz [debugowanie aplikacji dla systemu Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
-## <a name="in-this-section"></a>W tej sekcji  
-  
 |||  
 |-|-|  
 |[Uruchamianie aplikacji w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze lokalnym, w symulatorze aplikacji lub w emulatorze lub na urządzeniu zdalnym.|  
 |[Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Znajdź i napraw błędy w aplikacjach platformy uniwersalnej systemu Windows za pomocą debugera programu Visual Studio.|  
-|[Debugowanie pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)|Debugowanie wdrożonych aplikacji lokalnych i zdalnych.|
+|[Debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md)|Debugowanie wdrożonych aplikacji lokalnych i zdalnych.|
 |[Zawartość wyprzedzeniem dla aplikacji platformy uniwersalnej systemu Windows](../debugger/prefetch-content-for-windows-store-apps.md)|Analiza wpływu klasy ContentPrefetcher w aplikacji platformy uniwersalnej systemu Windows.|  
   
 ## <a name="see-also"></a>Zobacz też  

@@ -11,11 +11,12 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 628da2068b2428e82820edfed0ad171566075ea7
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
-ms.translationtype: HT
+ms.workload: multiple
+ms.openlocfilehash: 6fe43af670320a5832765faf25294a46b8f98d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Refaktoryzacja, generowanie kodu i szybkie akcje w programie Visual Studio
 
@@ -31,7 +32,7 @@ Refaktoryzacja to proces modyfikowania kodu w celu ułatwienia utrzymanie, zrozu
 
 * [Pisanie i refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 
-* [Narzędzia Visual F # Tools zasilania](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) &mdash; refaktoryzacji pomocy technicznej dla F # w tym rozszerzeniu Visual Studio innych firm.
+* [Narzędzia Visual F # Tools zasilania](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools)&mdash;refaktoryzacji pomocy technicznej dla F # w tym rozszerzeniu Visual Studio innych firm.
 
 ## <a name="code-generation"></a>Generowanie kodu
 

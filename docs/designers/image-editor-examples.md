@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b69e225bf4d7273e4e9ff1a33a1b5c4e8e332ebf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c257b39f6bb320ce39ca34278d6eff29a3f4615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor-examples"></a>Przykłady Edytora obrazów
 Artykuły w tej sekcji dokumentacji zawierają przykłady, które pokazują, jak za pomocą edytora obrazów.  
@@ -25,10 +26,10 @@ Artykuły w tej sekcji dokumentacji zawierają przykłady, które pokazują, jak
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Porady: Tworzenie podstawowego tekstury](../designers/how-to-create-a-basic-texture.md)|Pokazuje, jak utworzyć podstawowy tekstury.|  
-|[Porady: eksportowanie tekstury do użytku z programem Direct2D lub Javascipt aplikacji](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Przedstawia sposób tworzenia tekstury DDS formatu, który ma wstępnie przemnożone alfa używanego w Direct2D lub WWA aplikacji.|  
-|[Porady: tworzenie i modyfikowanie poziomów Mipmapy](../designers/how-to-create-and-modify-mip-levels.md)|Pokazuje sposób generowania poziomów Mipmapy z obrazu.|  
-|[Korzystanie z zasobów 3-w aplikacji lub gry](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przetworzyć zasoby 3-w przypadku kompilowania projekcie lub rozwiązaniu, tak aby były gotowe do użycia w aplikacji. Omówiono także strategii ładowania różnych rodzajów zasobów w aplikacji.|  
-|[Porady: eksportowanie tekstury, który zawiera mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, który zawiera wstępnie obliczonych mipmapy.|  
-|[Porady: eksportowanie tekstury, który ma wstępnie przemnożone alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, zawierający wstępnie przemnożone wartości alfa.|  
-|[Porady: eksportowanie tekstury do użytku z programem Direct2D lub Javascipt aplikacji](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, które mogą być używane w Direct2D lub aplikacji Javascript.|
+|[Instrukcje: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)|Pokazuje, jak utworzyć podstawowy tekstury.|  
+|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Przedstawia sposób tworzenia tekstury DDS formatu, który ma wstępnie przemnożone alfa używanego w Direct2D lub WWA aplikacji.|  
+|[Instrukcje: tworzenie i modyfikacja poziomów MIP](../designers/how-to-create-and-modify-mip-levels.md)|Pokazuje sposób generowania poziomów Mipmapy z obrazu.|  
+|[Korzystanie z obiektów 3-D w grach i aplikacjach](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przetworzyć zasoby 3-w przypadku kompilowania projekcie lub rozwiązaniu, tak aby były gotowe do użycia w aplikacji. Omówiono także strategii ładowania różnych rodzajów zasobów w aplikacji.|  
+|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, który zawiera wstępnie obliczonych mipmapy.|  
+|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, zawierający wstępnie przemnożone wartości alfa.|  
+|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, które mogą być używane w Direct2D lub aplikacji Javascript.|

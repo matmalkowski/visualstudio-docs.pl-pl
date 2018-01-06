@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 337bf9a33f781046f0713dbb52a72412229dcd17
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 515aefab86a0a047d7074d127d9dd621feb0117c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Porady: tworzenie cieniowania tekstury skali szarości
 Ten dokument pokazuje, jak używać Designer programu do cieniowania i języka programu do cieniowania wykres skierowane (DGSL) do tworzenia cieniowania tekstury skali szarości. Ten program do cieniowania Modyfikuje wartości kolorów RGB próbki tekstury, a następnie używa go wraz z wartością alfa zostały zmodyfikowane, aby ustawić kolor końcowy.  
@@ -55,4 +56,4 @@ Ten dokument pokazuje, jak używać Designer programu do cieniowania i języka p
  [Porady: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md)   
  [Edytor obrazów](../designers/image-editor.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
- [Węzły projektanta programu do cieniowania](../designers/shader-designer-nodes.md)
+ [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

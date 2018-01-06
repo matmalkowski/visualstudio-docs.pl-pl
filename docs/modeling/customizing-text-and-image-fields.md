@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c551b368ba695f4d78fbe7a885f3896160fa93ae
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9699c36e83a984885853725a599570c19b528f7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
 Po zdefiniowaniu dekoratora tekstu w kształcie jest reprezentowany przez TextField. Przykłady inicjowania TextFields i innych ShapeFields Sprawdź, czy Dsl\GeneratedCode\Shapes.cs w rozwiązaniu DSL.  
@@ -272,4 +273,4 @@ partial class ExampleShape
  [Definiowanie łączników i kształtów](../modeling/defining-shapes-and-connectors.md)   
  [Ustawienie obraz tła na diagramie](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)

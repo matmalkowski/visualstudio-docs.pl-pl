@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e7f810ff5ad1654081cd061edbc4360eb988402
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 60365f3722ae4e2c1f8b52dacc3df03840fb3304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Porady: Identyfikowanie symbole w bibliotece
 Przeglądanie symbol narzędzia wyświetlanie widoków hierarchiczna symboli. Symbole reprezentują przestrzeni nazw, obiektów, klas, elementy członkowskie klasy i inne elementy języka.  
@@ -30,7 +31,7 @@ Przeglądanie symbol narzędzia wyświetlanie widoków hierarchiczna symboli. Sy
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfoNode>  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.,  
   
  Lokalizacja symbolu w hierarchii odróżnia symbolu. Umożliwia przeglądanie symbol narzędzia można przejść do określony symbol. Unikatowa, w pełni kwalifikowaną ścieżkę do symbolu Określa lokalizację. Każdy element w ścieżce jest węzłem. Ścieżka rozpoczyna się od węzła najwyższego poziomu i kończy określony symbol. Jeśli metoda M1 jest elementem członkowskim klasy C1 C1, a w przestrzeni nazw N1 pełną ścieżkę metody M1 jest N1. C1. M1. Ta ścieżka zawiera trzy węzły: N1, C1 i M1.  
   
@@ -87,4 +88,4 @@ N1
 ## <a name="see-also"></a>Zobacz też  
  [Obsługa narzędzia do przeglądania Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Porady: rejestrowanie biblioteki z Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Porady: udostępnianie list symboli udostępniane przez bibliotekę do Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Instrukcje: uwidacznianie listy symboli udostępnianych przez bibliotekę dla menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

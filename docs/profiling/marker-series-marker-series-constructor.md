@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83922b913e810042bef82eb0b81a0e42f8d3bbb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e5a9e6029ed579a6e7464eae8a198948c49fed58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series — Konstruktor
 Inicjuje nowe wystąpienie klasy `marker_series` klasy.  
@@ -52,4 +53,4 @@ marker_series(
  **Namespace:** CONCURRENCY::Diagnostic —  
   
 ## <a name="see-also"></a>Zobacz też  
- [marker_series — klasa](../profiling/marker-series-class.md)
+ [marker_series, klasa](../profiling/marker-series-class.md)

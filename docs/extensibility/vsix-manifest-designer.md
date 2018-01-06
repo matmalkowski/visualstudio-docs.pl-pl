@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaf35854aede65b605b4578ca9ee71375ad7a479
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 Modyfikuje VSIX pliku manifestu pakietu, który określa zachowanie instalacji określone dla rozszerzenia Visual Studio.  
@@ -152,4 +153,4 @@ Modyfikuje VSIX pliku manifestu pakietu, który określa zachowanie instalacji o
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
- [Struktura pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
+ [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)

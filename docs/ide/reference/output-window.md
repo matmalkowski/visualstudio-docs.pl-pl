@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b58e7997d2aaec4661906743a4ef72ce82fcd91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1e886e88ad7ab4e943908e003ffe56719bd13211
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-window"></a>Okno wyniku
 **Dane wyjściowe** okna można wyświetlić komunikaty o stanie dla różnych funkcji w zintegrowane środowisko programistyczne (IDE). Aby otworzyć **dane wyjściowe** okna, na pasku menu wybierz **widoku/wyjścia** (lub kliknij polecenie CTRL + ALT + O).  
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
  [Porady: kontrolowanie w oknie danych wyjściowych](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Kompilowanie i tworzenia](../../ide/compiling-and-building-in-visual-studio.md)   
  [Opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md)   
- [Przegląd biblioteki klas](/dotnet/standard/class-library-overview)
+ [Omówienie biblioteki klas](/dotnet/standard/class-library-overview)

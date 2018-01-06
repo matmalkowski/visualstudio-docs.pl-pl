@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55783b604e929d2e5d4cdc613befa2fbec42aec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik po testowym dla plug-in kontroli źródła
 Ta sekcja zawiera wskazówki dotyczące testowania z wtyczka do kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Podano szeroką gamę omówienie najczęściej obszarów testowych, jak również niektórych bardziej skomplikowanych obszarów, które mogą powodować problemy. W tym omówieniu nie stanowi wyczerpującej listy przypadków testowych.  
@@ -66,7 +67,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania z wtyczka do kontroli źród�
   
     -   Przypadek 1c: Dodaj rozwiązanie z kontroli źródła  
   
--   [Obszar Test 2: Uzyskaj z kontroli źródła](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Obszar testowy 2: pobieranie z kontroli kodu źródłowego](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 -   [Obszar testu 3: Zapoznaj się z / cofnąć wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
@@ -82,7 +83,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania z wtyczka do kontroli źród�
   
     -   Przypadek 3e: odwrócenia wyewidencjonowania  
   
--   [Obszar testu 4: Zaewidencjonuj](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Obszar testowy 4: ewidencjonowanie](../../extensibility/internals/test-area-4-check-in.md)  
   
     -   Przypadek 4a: zmodyfikowane elementy  
   
@@ -90,7 +91,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania z wtyczka do kontroli źród�
   
     -   Przypadek 4c: dodawanie projektów  
   
--   [Testu obszar 5: Zmień kontrolę źródła](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Obszar testowy 5: zmienianie kontroli kodu źródłowego](../../extensibility/internals/test-area-5-change-source-control.md)  
   
     -   Przypadek 5a: Bind  
   
@@ -98,15 +99,15 @@ Ta sekcja zawiera wskazówki dotyczące testowania z wtyczka do kontroli źród�
   
     -   Przypadek 5c: ponownie powiązać  
   
--   [Testowanie obszaru 6: usuwanie](../../extensibility/internals/test-area-6-delete.md)  
+-   [Obszar testowy 6: usuwanie](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Testowanie obszaru 7: udziału](../../extensibility/internals/test-area-7-share.md)  
+-   [Obszar testowy 7: udostępnianie](../../extensibility/internals/test-area-7-share.md)  
   
--   [Testu obszar 8: Przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Obszar testowy 8: przełączanie wtyczki](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
     -   Przypadek 8a: automatyczna zmiana  
   
     -   Przypadek 8b: rozwiązania na podstawie zmiany  
   
 ## <a name="see-also"></a>Zobacz też  
- [Plug-in kontroli źródła](../../extensibility/source-control-plug-ins.md)
+ [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)

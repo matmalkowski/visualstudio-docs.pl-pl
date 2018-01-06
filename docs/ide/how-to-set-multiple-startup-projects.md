@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6241d739a48e8061bb9962578fd4e4158f78cac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Porady: ustawianie wielu projektów startowych
 Program Visual Studio umożliwia określenie sposobu więcej niż jeden projekt jest uruchamiany, gdy uruchamiasz debuger.  
@@ -33,8 +34,8 @@ Program Visual Studio umożliwia określenie sposobu więcej niż jeden projekt 
 4.  Wybierz **wiele projektów startowych** opcji i ustaw odpowiednie działania.
 
 ## <a name="see-also"></a>Zobacz też  
- [Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
 
  [Tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md)
 
- [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)
+ [Zarządzanie właściwościami projektu i rozwiązania](../ide/managing-project-and-solution-properties.md)

@@ -16,11 +16,12 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 62e7a5cca98de8f4b584c7a3b3d9b72fdefa2519
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: c143456d71057071aa953605e2ee60c6aa9c77de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Przewodnik administratora w usłudze Visual Studio 2017
 
@@ -62,19 +63,19 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.](use-command-line-parameters-to-install-visual-studio.md)
-  * [Przykłady parametru wiersza polecenia](command-line-parameter-examples.md)
+  * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
   * [Obciążenie i identyfikator składnika odwołania](workload-and-component-ids.md)
 * [Utworzyć na podstawie sieci instalację programu Visual Studio](create-a-network-installation-of-visual-studio.md)
   * [Zainstaluj certyfikaty wymagane do instalacji w trybie offline program Visual Studio](install-certificates-for-visual-studio-offline.md)
 * [Automatyzowanie programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
 * [Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
-* [Określ ustawienia domyślne dla wdrożeń w przedsiębiorstwie programu Visual Studio](set-defaults-for-enterprise-deployments.md)
-* [Wyłącz lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md)
+* [Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie](set-defaults-for-enterprise-deployments.md)
+* [Wyłączanie lub przenoszenie pamięci podręcznej pakietów](disable-or-move-the-package-cache.md)
 * [Aktualizacja Instalacja oparta na sieci programu Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Formant aktualizacje do wdrożenia programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Sterowanie aktualizacjami na potrzeby wdrożeń programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)

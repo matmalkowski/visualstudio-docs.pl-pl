@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c241b80430fd02a649efab7f8a65498e606d2804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-troubleshoot-services"></a>Porady: Rozwiązywanie problemów z usługami
 Istnieje kilka typowych problemów, które mogą wystąpić podczas próby pobrania usługi:  
@@ -71,4 +72,4 @@ if (log == null) return;
 ## <a name="see-also"></a>Zobacz też  
  [Lista dostępnych usług](../extensibility/internals/list-of-available-services.md)   
  [Przy użyciu i świadczenia usług](../extensibility/using-and-providing-services.md)   
- [Usługa Essentials](../extensibility/internals/service-essentials.md)
+ [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)

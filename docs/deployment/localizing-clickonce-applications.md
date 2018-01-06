@@ -25,11 +25,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 60643d872594e9e868243adda33ae21a82dc7198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 Lokalizacja to proces polegający na wprowadzaniu odpowiednich dla określonej kultury aplikacji. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowanie waluty, dostosowanie rozmiaru formantów w formularzu, i formanty dublowania od prawej do lewej w razie potrzeby.  
@@ -84,4 +85,4 @@ Lokalizacja to proces polegający na wprowadzaniu odpowiednich dla określonej k
 ## <a name="see-also"></a>Zobacz też  
  [\<element assemblyIdentity > — Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   
- [Globalizacja formularzy systemu Windows](/dotnet/framework/winforms/advanced/globalizing-windows-forms)
+ [Globalizacja formularzy Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

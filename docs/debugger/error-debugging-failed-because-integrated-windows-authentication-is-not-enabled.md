@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
 - CSharp
@@ -15,16 +15,16 @@ dev_langs:
 - C++
 - aspx
 helpviewer_keywords: debugger, Web application errors
-ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88747922ae486adf65d2babe7a349e9538e8c9c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d3d66a2892378f04061907e383965c6c02096bf1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
 Uwierzytelnianie użytkownika, który debugowania żądanego uniemożliwiły błąd uwierzytelniania. Taka sytuacja może wystąpić przy próbie wkroczyć do aplikacji sieci Web lub usługi XML sieci Web. Jedną z przyczyn tego błędu jest tym zintegrowane uwierzytelnianie systemu Windows nie jest włączona. Aby go włączyć, postępuj zgodnie z instrukcjami "Aby włączyć zintegrowane uwierzytelnianie systemu Windows".  

@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76d86738f53e0d6dc60289d1e3f395794f8482ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3fb9b831562e2d9e4ce7d686f49ac484d58f6804
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diagnostic-namespace"></a>diagnostic — Przestrzeń nazw
 `diagnostics` Przestrzeń nazw zapewnia funkcje do emitowania znaczników wizualizatora współbieżności.  
@@ -35,14 +36,14 @@ namespace diagnostic;
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[marker_series — klasa](../profiling/marker-series-class.md)|Reprezentuje serial kanału zdarzeń generowanych przez jednego dostawcę.|  
-|[span — klasa](../profiling/span-class.md)|Definiuje fazy aplikacji.|  
+|[marker_series, klasa](../profiling/marker-series-class.md)|Reprezentuje serial kanału zdarzeń generowanych przez jednego dostawcę.|  
+|[span, klasa](../profiling/span-class.md)|Definiuje fazy aplikacji.|  
   
 ### <a name="enumerations"></a>Wyliczenia  
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[marker_importance — wyliczenie](../profiling/marker-importance-enumeration.md)|Reprezentuje poziom ważności znaczników wizualizatora współbieżności.|  
+|[Wyliczenie marker_importance](../profiling/marker-importance-enumeration.md)|Reprezentuje poziom ważności znaczników wizualizatora współbieżności.|  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** cvmarkersobj.h  
@@ -50,4 +51,4 @@ namespace diagnostic;
  **Namespace:** współbieżności  
   
 ## <a name="see-also"></a>Zobacz też  
- [Namespace współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+ [Przestrzeń nazwy współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)

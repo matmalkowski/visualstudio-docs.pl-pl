@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b4c0f46924c2c828158960a924faa031be0fd14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfe0e4b39e96d98718ff98025add521a678699ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>Modyfikowanie przy użyciu programu Isolated Shell. Plik Pkgundef
 Można zmodyfikować plik .pkgundef, aby wykluczyć wpisy rejestru określonego z aplikacji isolated shell. Zazwyczaj przy pierwszym uruchomieniu aplikacji na komputerze z powłoki programu Visual Studio kopiuje istniejące wpisy rejestru programu Visual Studio do głównego klucza rejestru dla aplikacji. W tym wszelkie odwołania do VSPackages aktualnie zainstalowany.  

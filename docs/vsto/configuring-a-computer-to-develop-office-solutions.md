@@ -16,11 +16,12 @@ caps.latest.revision: "97"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d3e0b354375d6116a1bcc0cc2b0d69ecc2f16b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c07a1ce1434f3ad5f3d8707a4fbaa89695d878f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-a-computer-to-develop-office-solutions"></a>Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Tworzenie dodatków narzędzi VSTO i dostosowań pakietu Microsoft Office, należy zainstalować obsługiwaną wersję programu Visual Studio, .NET Framework i program Microsoft Office.  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 |--------------|------------------------|  
 |Visual Studio|-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)]<br />-   [!INCLUDE[vsPreShort](../vsto/includes/vspreshort-md.md)]<br />-   [!INCLUDE[vsUltShort](../vsto/includes/vsultshort-md.md)]**Ważne:** musi zaznacz pole wyboru Microsoft Office Developer Tools podczas instalacji.|  
 |.NET Framework|-Programu .NET Framework 4 lub nowszej.|  
-|Microsoft Office|<ul><li>Dowolnej wersji pakietu Office, w tym Office Professional Plus dla usługi Office 365.</li><li>Jedną z następujących aplikacji autonomicznych:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 i Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musi być zainstalowany jako część pakietu Office. **Ważne:** wersje kliknij polecenie do uruchomienia aplikacji pakietu Office 2010 nie są obsługiwane.|  
+|Microsoft Office|<ul><li>Dowolnej wersji pakietu Office, w tym Office Professional Plus dla usługi Office 365.</li><li>Jedną z następujących aplikacji autonomicznych:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 i Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musi być zainstalowany jako część pakietu Office. **Ważne:** wersje kliknij polecenie do uruchomienia aplikacji pakietu Office 2010 nie są obsługiwane.|  
   
  Aby instalacja szczegółowe instrukcje, zobacz [porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).  
   
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Porady: Instalowanie narzędzi Visual Studio Tools for Office Runtime pakietu redystrybucyjnego](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Porady: zainstalować podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   
- [Funkcje dostępne w aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)  
+ [Funkcje dostępne w aplikacjach pakietu Office i typ projektu](../vsto/features-available-by-office-application-and-project-type.md)  
   
   

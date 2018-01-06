@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Dostosowywanie menu i formanty edytora przy użyciu interfejsu API starsza wersja
 Usługa języka lub widoku tekstu, można kontrolować menu kontekstowe i formantów w edytorze. Strony w tej sekcji opisano sposób pracy z tych funkcji.  
@@ -36,5 +37,5 @@ Usługa języka lub widoku tekstu, można kontrolować menu kontekstowe i forman
  Instrukcje na temat aktualizowania **pasek stanu**.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Edytora i rozszerzenia usługi języka](../extensibility/editor-and-language-service-extensions.md)  
+ [Rozszerzenia edytora i usługi językowej](../extensibility/editor-and-language-service-extensions.md)  
  Przedstawia różne typy edytory używanego w programie Visual Studio.

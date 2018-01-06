@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a0868c898b9713bec07939a2e0404eb17d988ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d01c39479918b95203a7dacdba17c1ff9d1ec9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer"></a>Projektant schematu XML
 Projektant schematu XML (XSD Designer) jest narzędziem graficznego umożliwia wizualizowanie schematu ustawiony na różnych poziomach abstrakcji. Poniżej przedstawiono główne składniki projektanta XSD:  
@@ -30,13 +31,13 @@ Projektant schematu XML (XSD Designer) jest narzędziem graficznego umożliwia w
 -   [Widoku modelu zawartości](../xml-tools/content-model-view.md) zawiera graficzną reprezentację szczegóły węzły lokalne i globalne schematu, w tym proste i złożone typy, elementy grup, atrybuty i grupy atrybutów.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md)  
+ [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)  
  Zawiera omówienie Eksploratora schematu XML i jak umożliwia pracę z schematu XML definition language (XSD) schematów.  
   
- [Roboczym projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)  
+ [Obszar roboczy projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)  
  Zawiera omówienie obszaru roboczego projektanta schematu XSD.  
   
- [Integracja z edytora XML](../xml-tools/integration-with-xml-editor.md)  
+ [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md)  
  W tym artykule opisano, jak projektant schematu XML jest zintegrowany z edytora XML.  
   
  [Zadania projektanta schematu XML](../xml-tools/xml-schema-designer-tasks.md)  

@@ -34,11 +34,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Porady: Ustawianie debugowania i wydania konfiguracji w programie Visual Studio
 Projektów programu Visual Studio mają oddzielne wersji i konfiguracje programu do debugowania. Jako nazwy oznacza kompilacji wersji do debugowania do debugowania i wersji ostatecznej wersji dystrybucji.  

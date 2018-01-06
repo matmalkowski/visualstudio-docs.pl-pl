@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 numery kompilacji i daty wydania
 W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2017 r, do daty.
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | Wydanie | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 Podgląd 1.1 | Wersja zapoznawcza | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | Wydanie | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 Podgląd 1.0 | Wersja zapoznawcza | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | Wydanie | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | Wydanie | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 Podgląd 5.0 | Wersja zapoznawcza | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | Wydanie | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 Podgląd 4.0 | Wersja zapoznawcza | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | Wydanie | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | Wydanie | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | Wydanie | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 Podgląd 3.0 | Wersja zapoznawcza | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | Wydanie | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 Podgląd 2.0 | Wersja zapoznawcza | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | Wydanie | 10/19/2017 | 15.4.27004.2005 |
 | 15,5 cala Podgląd 1 | Wersja zapoznawcza | 10/11/2017 | 15.0.27009.1 |
 | 15.4 | Wydanie | 10/9/2017 | 15.0.27004.20002 |
 | 15.4 Podgląd 6 | Wersja zapoznawcza | 10/9/2017| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.3.1 | Wydanie | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1 Podgląd 1 | Wersja zapoznawcza | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1  | Wydanie | 8/18/2017 | 15.0.26730.08 |
-| 15.4 preview 1 | Wersja zapoznawcza | 8/22/2017 | n/d |
+| 15.4 preview 1 | Wersja zapoznawcza | 8/24/2017 | 15.4.26823.1 |
 | 15.3 | Wydanie | 8/14/2017 | 15.0.26730.3 |
 | 15 ustęp 3 Podgląd 7.1 | Wersja zapoznawcza | 8/11/2017 | 15.0.26730.3 |
 | 15 ustęp 3 Podgląd 7 | Wersja zapoznawcza | 8/1/2017 | 15.0.26730.0 |
@@ -79,9 +96,9 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz też
 * [Przewodnik administratora w usłudze Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.](use-command-line-parameters-to-install-visual-studio.md)
-* [Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)

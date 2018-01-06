@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 754b2e79131e425b8e27c0084acbd6243016815a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Ten interfejs reprezentuje program, który działa w procesie.  
@@ -44,9 +45,9 @@ IDebugProgram2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Pobiera nazwę programu.|  
 |[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Pobiera proces tego programu.|  
 |[Zakończenie](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Przerywa ten program.|  
-|[Dołącz](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Dołącza do tego programu.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Dołącza do tego programu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Określa, czy aparat debugowania (DE) można odłączyć od program.|  
-|[Odłączanie](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Odłącza debugera z tego programu.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Odłącza debugera z tego programu.|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Pobiera unikatowy identyfikator globalny tego programu.|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Pobiera program właściwości.|  
 |[Wykonanie](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Jest nadal uruchomiony ten program w stanie zatrzymania. Wszelkie poprzedniego stanu wykonywania jest wyczyszczone.|  

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063a569ff047b3febd2608cb3c1e0003f40f7785
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 04257a6ea4bfb3dbe788ba48ee3077b1847b000d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-isolated-shell"></a>Rozszerzanie programu Isolated Shell
 Powłoka programu Visual Studio izolowane można rozszerzyć przez dodanie pakiet VSPackage, część Managed Extensibility Framework (MEF) lub ogólnego projektu VSIX do aplikacji programu isolated shell.  
@@ -121,4 +122,4 @@ Powłoka programu Visual Studio izolowane można rozszerzyć przez dodanie pakie
 8.  Tworzenie i uruchamianie rozwiązania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Tworzenie aplikacji podstawowe Isolated Shell](walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell](walkthrough-creating-a-basic-isolated-shell-application.md)

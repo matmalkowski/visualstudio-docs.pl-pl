@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08a27820e1fc3f2677bc64dac85a657a6d1db1b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc78fd4331839ce1a55253a719c40f8b19dea491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Wskazówki: Przykład LinqToXmlDataBinding
 W tym przewodniku opisano przykład LinqToXmlDataBinding oraz omówiono bardziej interesującego zawartości jego dwa pliki podstawowym źródłem L2DBForm.xaml i L2DBForm.xaml.cs.  
@@ -45,9 +46,9 @@ W tym przewodniku opisano przykład LinqToXmlDataBinding oraz omówiono bardziej
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Kod źródłowy L2DBForm.XAML](../designers/l2dbform-xaml-source-code.md)|Zawiera opis kodu XAML w pliku L2DBForm.xaml i zawartość.|  
-|[Kod źródłowy L2DBForm.XAML.CS](../designers/l2dbform-xaml-cs-source-code.md)|Zawiera opis kodu źródłowego C# w pliku L2DBForm.xaml.cs i zawartość.|  
+|[Kod źródłowy L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)|Zawiera opis kodu XAML w pliku L2DBForm.xaml i zawartość.|  
+|[Kod źródłowy L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Zawiera opis kodu źródłowego C# w pliku L2DBForm.xaml.cs i zawartość.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązanie danych WPF za pomocą LINQ do XML przykładu](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Porady: tworzenie i uruchamianie przykład LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+ [Instrukcje: kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

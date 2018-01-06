@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 809f0f50ace62253371d4fd14425bb870a3be633
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f36df39cf29ff298a327ec6e6d4bb02ff53485a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-contexts"></a>Konteksty debugera
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania, aparat debugowania (DE) działa jednocześnie w kilku różnych kontekstach, w następujący sposób:  
@@ -35,10 +36,10 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania, apar
  [Położenie dokumentu](../../extensibility/debugger/document-position.md)  
  Definiuje położenie dokumentu w Visual Studio debugowanie za pomocą abstrakcję pozycji w pliku źródłowym, ponieważ znana IDE.  
   
- [Kontekstu dokumentu](../../extensibility/debugger/document-context.md)  
+ [Kontekst dokumentu](../../extensibility/debugger/document-context.md)  
  W tym artykule omówiono jakie kontekstu dokumentu reprezentuje w Visual Studio debugowanie w odniesieniu do pliku źródłowego. Omówiono także sposób obsługi symbol mapowania kontekst kodu dokumentacji kontekstu.  
   
- [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md)  
+ [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md)  
  Zawiera informacje dotyczące kontekstu oceny wyrażenia w Visual Studio. Na przykład kontekst oceny wyrażenia ramki stosu udostępnia kontekst oceny zmiennych lokalnych, parametrów metod i elementów członkowskich klasy.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -48,5 +49,5 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania, apar
  [Składniki debugowania](../../extensibility/debugger/debugger-components.md)  
  Zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), Ewaluator wyrażeń (EE) i obsługi symboli (SH).  
   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)  
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
  Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i obliczaniu wyrażeń.

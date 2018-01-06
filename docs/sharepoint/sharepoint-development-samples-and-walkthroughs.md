@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a68df6ecfbf4c511922ae89f67e9323a245432d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 986cf8cd6051a08948fb633168792d127cddc5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint Przykłady rozwoju i wskazówki
   Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i wskazówki krok po kroku, ilustrujących składni, struktury i techniki stosowane do tworzenia rozwiązań programu SharePoint.  
@@ -35,10 +36,10 @@ ms.lasthandoff: 10/31/2017
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Przykłady rozwoju SharePoint](../sharepoint/sharepoint-development-samples.md)|W tym artykule opisano przykładowe aplikacje, które pokazują, jak za pomocą narzędzi programowanie SharePoint w Visual Studio.|  
-|[Rozwój SharePoint — wskazówki](../sharepoint/sharepoint-development-walkthroughs.md)|Wyświetla listę przewodniki krok po kroku, które stanowią wprowadzenie do narzędzi programistycznych programu SharePoint w Visual Studio.|  
+|[Rozwój SharePoint — przykłady](../sharepoint/sharepoint-development-samples.md)|W tym artykule opisano przykładowe aplikacje, które pokazują, jak za pomocą narzędzi programowanie SharePoint w Visual Studio.|  
+|[Rozwój SharePoint — przewodniki](../sharepoint/sharepoint-development-walkthroughs.md)|Wyświetla listę przewodniki krok po kroku, które stanowią wprowadzenie do narzędzi programistycznych programu SharePoint w Visual Studio.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie rozwiązań programu SharePoint](../sharepoint/create-sharepoint-solutions.md)  
+ [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)  
   
   

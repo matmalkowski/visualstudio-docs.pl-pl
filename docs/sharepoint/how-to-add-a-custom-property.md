@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b087ae9f767ed762b6d9269f60f2612127bdc705
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 813063a2cd32374171c37e770e033959d7b7d3d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-custom-property"></a>Porady: dodawanie właściwości niestandardowej
   Możesz dodać niestandardowe właściwości do modelu przy użyciu **Edytor właściwości**. Można uzyskać dostępu do tych właściwości w kodzie, aby pobrać informacje, takie jak parametry połączenia i innych danych w czasie wykonywania.  
@@ -52,6 +53,6 @@ ms.lasthandoff: 10/31/2017
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+ [Integrowanie danych biznesowych z SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

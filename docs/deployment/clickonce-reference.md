@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4cfe5caa65246773759c4de7512fd41aa9e88023
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 898acac30776a4b189433440c9bb713a00561029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-reference"></a>ClickOnce — Odwołanie
 Następujące strony opisano struktury plików XML, używany do reprezentowania aplikacji ClickOnce.  
@@ -32,19 +33,19 @@ Następujące strony opisano struktury plików XML, używany do reprezentowania 
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)  
  Zawiera listę i opisy elementów i atrybutów, które tworzą manifest aplikacji.  
   
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)  
+ [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)  
  Zawiera listę i opisy elementów i atrybutów, które tworzą manifest wdrażania.  
   
- [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)  
+ [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)  
  Wyświetla listę elementów pliku produktu i pakietu.  
   
- [Dokumentacja interfejsu API niezarządzany ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
+ [Dokumentacja niezarządzanego interfejsu API ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
  Wyświetla niezarządzane publiczne interfejsy API z dfshim.dll.  
   
 ## <a name="reference"></a>Tematy pomocy  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)  
+ [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)  
  Zawiera szczegółowe informacje o pojęciach dotyczących wdrażania ClickOnce.  
   
  <xref:System.Deployment.Application>  

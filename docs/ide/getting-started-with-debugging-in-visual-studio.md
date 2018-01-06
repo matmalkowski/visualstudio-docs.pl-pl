@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: def722f9e3bbf8c8d4ea4d06dc268156edbbb2df
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 29fe0104a79dc4f627f910cd60ceb1f17bb94c56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Wprowadzenie do debugowania w programie Visual Studio
 Program Visual Studio udostępnia zaawansowany zestaw zintegrowanych kompilacji projektu oraz narzędzia debugowania. W tym temacie Dowiedz się, jak rozpocząć korzystanie z najprostszych zbiór debugowanie funkcji interfejsu użytkownika.  

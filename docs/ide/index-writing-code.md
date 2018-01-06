@@ -6,11 +6,12 @@ ms.topic: landing-page
 title: "Zapis i zarządzanie kodu przy użyciu dokumentacji programu Visual Studio | Dokumentacja firmy Microsoft"
 description: "Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio do zapisu, przejdź, zarządzania i poprawić kod."
 ms.technology: vs-ide-general
-ms.openlocfilehash: bc08b4822f411587db76f648e2b3ba508d513fb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-and-manage-code-using-visual-studio-documentation"></a>Zapis i zarządzanie kodu przy użyciu dokumentacji programu Visual Studio
 
@@ -172,8 +173,8 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><a href="/visualstudio/ide/class-view-and-object-browser-icons">Widok klas i przeglądarka obiektów ― ikony</a></p>
-                        <p><a href="/visualstudio/ide/reference/visual-studio-reference">Odwołanie w Visual Studio</a></p>
+                        <p><a href="/visualstudio/ide/class-view-and-object-browser-icons">Widok klasy i Przeglądarka obiektów, ikony</a></p>
+                        <p><a href="/visualstudio/ide/reference/visual-studio-reference">Visual Studio — dokumentacja</a></p>
                     </div>
                 </div>
             </div>

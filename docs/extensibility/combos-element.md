@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c729f92992ddea109a7024452457bd56d281b89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9818f94a34bc8e4bc7bb77ebf36239a52f22eab6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combos-element"></a>Element kombinacje
 Grupy [kombi Element](../extensibility/combo-element.md) elementów.  
@@ -46,14 +47,14 @@ Grupy [kombi Element](../extensibility/combo-element.md) elementów.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element kombinacje](../extensibility/combos-element.md)|Grupuje elementy kombi.|  
-|[Element kombi](../extensibility/combo-element.md)|Definiuje polecenia, które są wyświetlane w polu kombi.|  
+|[Combos, element](../extensibility/combos-element.md)|Grupuje elementy kombi.|  
+|[Combo, element](../extensibility/combo-element.md)|Definiuje polecenia, które są wyświetlane w polu kombi.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element poleceń](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakiet VSPackage.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -81,4 +82,4 @@ Grupy [kombi Element](../extensibility/combo-element.md) elementów.
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i pasków narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

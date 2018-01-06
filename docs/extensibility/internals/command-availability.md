@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecdbdc3074ad6dc80a8bd713c46303ba3cca628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 53ab248d9e71d3177cabb8ce522343d37bcabb26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-availability"></a>Polecenie dostępności
 W kontekście programu Visual Studio Określa, które polecenia są dostępne. W zależności od bieżącego projektu, bieżącego edytora VSPackages, które zostały załadowane i innych aspektów zintegrowane środowisko programistyczne (IDE), można zmienić kontekstu.  
@@ -55,4 +56,4 @@ W kontekście programu Visual Studio Określa, które polecenia są dostępne. W
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)   
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

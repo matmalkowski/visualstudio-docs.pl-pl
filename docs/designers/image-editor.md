@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Edytor obrazów
 W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytor obrazów do wyświetlania i modyfikowania zasobów tekstury i obrazów.  
@@ -108,7 +109,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
 |**Powiększ do rzeczywistego rozmiaru**|Wyświetla obraz przy użyciu relacji między piksele obrazu i pikseli ekranu 1:1.|  
 |**Dopasuj widok do rozmiaru**|Wyświetla pełny obraz ramki okna.|  
 |**Powiększ do szerokości**|Wyświetla całą szerokość obrazu ramki okna.|  
-|**Siatki**|Włącza lub wyłącza siatki, który pokazuje pikseli. Siatki mogą nie być wyświetlane, dopóki powiększenie fragmentu obrazu.|  
+|**Siatka**|Włącza lub wyłącza siatki, który pokazuje pikseli. Siatki mogą nie być wyświetlane, dopóki powiększenie fragmentu obrazu.|  
 |**Wyświetl poziom Mipmapy dalej**|Aktywuje następny większy poziom Mipmapy w łańcuchu mapy Mipmapy. Aktywne poziom Mipmapy jest wyświetlany na powierzchni projektu. Ten element jest dostępny tylko dla tekstury, które mają poziom Mipmapy.|  
 |**Wyświetl poziom Mipmapy poprzedniego**|Aktywuje na następny poziom Mipmapy mniejsze w łańcuchu mapy Mipmapy. Aktywne poziom Mipmapy jest wyświetlany na powierzchni projektu. Ten element jest dostępny tylko dla tekstury, które mają poziom Mipmapy.|  
 |**Kanał czerwony**<br /><br /> **Kanał zielony**<br /><br /> **Kanał niebieski**<br /><br /> **Kanał alfa**|Włącza lub wyłącza określonych kanałów. **Uwaga:** systematycznie włączając lub wyłączając kanałów koloru, można odizolować problemów, które są powiązane z co najmniej jeden z nich. Na przykład można zidentyfikować niepoprawne alfa przezroczystości.|  
@@ -271,6 +272,6 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Praca z 3-zasoby do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie narzędzia, których można użyć w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z zasobów graficznych, takich jak tekstury i obrazów, 3-modele i efekty programu do cieniowania.|  
+|[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie narzędzia, których można użyć w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z zasobów graficznych, takich jak tekstury i obrazów, 3-modele i efekty programu do cieniowania.|  
 |[Edytor modelu](../designers/model-editor.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze modeli do pracy z 3-modeli.|  
-|[Projektant programu do cieniowania](../designers/shader-designer.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Designer programu do cieniowania do pracy z programów do cieniowania.|
+|[Projektant cieniowania](../designers/shader-designer.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Designer programu do cieniowania do pracy z programów do cieniowania.|

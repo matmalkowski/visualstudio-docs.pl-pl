@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e18791f33ddb9c373af8b0af8def615c26374b3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: d43a783bc070e5903af35c780bb9fc1ff3737295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
 Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które mają wpływ na działanie funkcji IntelliSense dla języka JavaScript. Dostęp można uzyskać **IntelliSense** strony, wybierając **narzędzia**, **opcje** na pasku menu, a następnie rozszerzanie **Edytor tekstu**,  **JavaScript**, **IntelliSense.**  
@@ -80,4 +81,4 @@ Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usług
 Ta opcja umożliwia dodawanie dodatkowych plików .js IntelliSense przez przechodzenie do odpowiednich plików.  
   
 ## <a name="see-also"></a>Zobacz też  
-[IntelliSense dla JavaScript](../../ide/javascript-intellisense.md)
+[Funkcja IntelliSense dla języka JavaScript](../../ide/javascript-intellisense.md)

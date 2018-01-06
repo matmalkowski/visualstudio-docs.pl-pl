@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a07f5b47ac6d9941a24f1d452bb1e290365049ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 357da47a68e3ae25fcd30f9516ce0509b9717807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-outlook-form-regions"></a>Tworzenie regionów formularzy w programie Outlook
   Regiony formularzy służy do dostosowywania formularzy programu Microsoft Office Outlook. Program Visual Studio udostępnia zaawansowane narzędzia, które ułatwiają projektowanie, tworzenie i debugowania regionów formularzy.  
@@ -181,13 +182,13 @@ ms.lasthandoff: 10/31/2017
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Zawiera informacje, które mogą pomóc w optymalizacji sieci regionów formularzy i uniknąć ewentualnych problemów.|  
-|[Porady: dodawanie regionu formularza na projekt dodatku programu Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Pokazuje, jak utworzyć regionu formularza, aby rozszerzyć za pomocą standardowych lub niestandardowych formularzy programu Microsoft Office Outlook **nowych regionów formularzy programu Outlook** kreatora.|  
+|[Wytyczne dotyczące tworzenia regionów formularzy w programie Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Zawiera informacje, które mogą pomóc w optymalizacji sieci regionów formularzy i uniknąć ewentualnych problemów.|  
+|[Instrukcje: Dodawanie regionu formularza do projektu dodatków w programie Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Pokazuje, jak utworzyć regionu formularza, aby rozszerzyć za pomocą standardowych lub niestandardowych formularzy programu Microsoft Office Outlook **nowych regionów formularzy programu Outlook** kreatora.|  
 |[Kojarzenie regionu formularza z klasą wiadomości programu Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Wyjaśniono, jak określić elementy, które program Microsoft Office Outlook wyświetlania regionu formularza przez kojarzenie regionu formularza z klasą wiadomości poszczególnych elementów.|  
-|[Wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Pokazuje, jak projektowanie regionów formularzy niestandardowych wyświetlany jako nową stronę w oknie inspektora w elemencie kontaktu.|  
-|[Wskazówki: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Pokazuje, jak projektowanie regionów formularzy w programie Microsoft Office Outlook, a następnie zaimportuj regionów formularzy w projekcie dodatku narzędzi VSTO programu Outlook przy użyciu **nowych regionów formularzy programu Outlook** kreatora.|  
+|[Przewodnik: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Pokazuje, jak projektowanie regionów formularzy niestandardowych wyświetlany jako nową stronę w oknie inspektora w elemencie kontaktu.|  
+|[Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Pokazuje, jak projektowanie regionów formularzy w programie Microsoft Office Outlook, a następnie zaimportuj regionów formularzy w projekcie dodatku narzędzi VSTO programu Outlook przy użyciu **nowych regionów formularzy programu Outlook** kreatora.|  
 |[Uzyskiwanie dostępu do regionów formularzy w czasie wykonywania](../vsto/accessing-a-form-region-at-run-time.md)|Opisuje, jak napisać kod, aby wyświetlić, Ukryj lub modyfikowanie formantów na region formularza i włączyć użytkownikom na uruchamianie kodu z innych obszarów w projekcie przy użyciu `Globals` klasy.|  
-|[Porady: ochrona programu Outlook przed wyświetlaniem regionów formularzy](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Pokazuje, jak zapobiec wyświetlaniu regionu formularza dla danego elementu programu Microsoft Office Outlook.|  
+|[Instrukcje: Ochrona programu Outlook przed wyświetlaniem regionów formularzy](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Pokazuje, jak zapobiec wyświetlaniu regionu formularza dla danego elementu programu Microsoft Office Outlook.|  
 |Pokazuje, jak można uzyskać dostępu do elementu programu Outlook, w której znajduje się regionu formularza.|  
 |[Niestandardowe akcje w regionach formularzy programu Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Opisuje sposób użytkownicy mogli odpowiedzieć elementu programu Outlook.|  
   

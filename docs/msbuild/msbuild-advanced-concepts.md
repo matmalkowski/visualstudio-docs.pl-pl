@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7d996986fbd4bc5df5841b8b74b37b8153495db4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91544f1ccc30a2f5dca998a0f670c4733cf964ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-advanced-concepts"></a>Pojęcia zaawansowane dotyczące programu MSBuild
 Dokumenty w tej sekcji opisano sposób korzystania z zaawansowanych technik zwiększające kompilacje, które są uruchamiane przy użyciu programu MSBuild.  
@@ -35,4 +36,4 @@ Dokumenty w tej sekcji opisano sposób korzystania z zaawansowanych technik zwi�
   
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Rejestrowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)
+ [Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)

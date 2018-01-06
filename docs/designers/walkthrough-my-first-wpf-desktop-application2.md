@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Wskazówki: Pierwszy WPF pulpitu aplikację
 Ten przewodnik zawiera wprowadzenie do rozwoju Windows Presentation Foundation (WPF). Utworzysz Podstawowa aplikacja, która zawiera elementy, które są wspólne dla większości aplikacji klasycznych WPF: XAML znaczników, związane z kodem definicji aplikacji, kontrolki, układ, powiązania danych i style.  
@@ -268,7 +269,7 @@ W tej sekcji utworzysz infrastruktury aplikacji, które zawiera projekt i okna g
   
 1.  Wybierz następujące obrazu i zapisz go jako `watermark.png`.  
   
-     ![Obraz znaku wodnego przewodnik](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Obraz znaku wodnego przewodnik](../designers/media/wpf_watermark.png "znaku wodnego")  
   
     > [!NOTE]
     >  Można utworzyć własny obraz i zapisz go jako `watermark.png`.  

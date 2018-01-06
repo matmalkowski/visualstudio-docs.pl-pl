@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f424770e725e8d8d6ada9e656b77b5563237af99
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -30,7 +31,7 @@ W tym temacie:
 
 - [Debugowanie podstawowe](#basic-debugging)
 - [Projekt opcji debugowania](#project-debugging-options)
-- [Okno interaktywne debugowania](#the-debug-interactive-window)
+- [Natychmiastowe i interaktywne systemu windows](#immediate-and-interactive-windows)
 
 Zobacz też poniższe tematy debugowania specyficzne dla scenariusza:
 
@@ -162,6 +163,7 @@ Domyślnie debuger programu rozpoczyna się od standardowego uruchamiania Python
 | Zmienne środowiskowe | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci `NAME=VALUE`. Ponieważ to ustawienie jest stosowane, w górnej części istniejących zmiennych środowiskowych globalnej i po `PYTHONPATH` jest ustawiona zgodnie z ustawieniem ścieżki wyszukiwania może służyć do ręcznie przesłonić te inne zmienne. |
 
 < name = "debug--okna interaktywnego"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Natychmiastowe i interaktywne systemu windows
 
 Istnieją dwa okna interaktywnego, możesz użyć podczas sesji debugowania: okno programu Visual Studio natychmiastowego standardowe i okno interaktywne debugowania języka Python.

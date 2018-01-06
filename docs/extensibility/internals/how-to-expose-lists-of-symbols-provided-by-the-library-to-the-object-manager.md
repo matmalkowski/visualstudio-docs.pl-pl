@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15248c2ed4ebca289421576bc6d59776cb0d6298
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fc34c363fb62a8cf2a6d902a6e897886627e508
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Porady: udostępnianie list symboli udostępniane przez bibliotekę do Menedżera obiektów
 Narzędzia przeglądanie symbol **widoku klasy**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki Znajdź Symbol**, żądania dla nowych danych do przekazania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów. Menedżera obiektów znajduje odpowiednich bibliotek i żąda nowej listy symboli. Biblioteki odpowiedzieć w żądane dane do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów wywołuje metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu w celu uzyskania danych i używa go do wypełnienia lub zaktualizuj widoki narzędzia przeglądanie symbolu.  
@@ -473,4 +474,4 @@ Narzędzia przeglądanie symbol **widoku klasy**, **przeglądarki obiektów**, *
  [Obsługa narzędzia do przeglądania Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Porady: rejestrowanie biblioteki z Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Porady: Identyfikowanie symbole w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
- [Rozszerzalność usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-extensibility.md)
+ [Rozszerzalność starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-extensibility.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2cbcb6e6239552ae32c817601634587a2fe3a41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75d714399f851aa479f398064e576790c793fffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Wyświetlanie plików za pomocą polecenia Otwórz plik
 W poniższych krokach opisano sposób obsługi IDE **Otwórz plik** polecenia, który jest dostępny na **pliku** w menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Również w krokach opisano, jak projekty powinny odpowiadać na wywołania, które pochodzą z tego polecenia.  
@@ -58,4 +59,4 @@ W poniższych krokach opisano sposób obsługi IDE **Otwórz plik** polecenia, k
  [Wyświetlanie plików przy użyciu Otwórz za pomocą polecenia](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Porady: Otwórz edytory specyficznego dla projektu](../../extensibility/how-to-open-project-specific-editors.md)   
- [Porady: otwieranie standardowe edytory](../../extensibility/how-to-open-standard-editors.md)
+ [Instrukcje: otwieranie standardowych edytorów](../../extensibility/how-to-open-standard-editors.md)

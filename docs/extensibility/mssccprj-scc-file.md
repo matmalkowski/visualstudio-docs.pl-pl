@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b61478b482ed10aba61ea9ce412dc0fe0725b0bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Plik SCC
 Gdy Visual Studio rozwiązania lub projektu znajduje się pod kontrolą źródła przy użyciu środowiska IDE, IDE otrzymuje dwa kluczowych informacji z kontroli źródła wtyczek w postaci ciągów. Te ciągi "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury", są nieprzezroczysta dla IDE, ale są one używane przez wtyczkę do zlokalizowania rozwiązania lub projektu w kontroli wersji. IDE zwykle uzyskuje te ciągi po raz pierwszy przez wywołanie metody [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a następnie zapisuje je w pliku rozwiązania lub projektu dla przyszłych połączeń w celu [SccOpenProject](../extensibility/sccopenproject-function.md). Osadzone w pliki rozwiązań i projektów ciągi "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury" nie są automatycznie aktualizowane podczas użytkownika gałęzi rozwidlenia, albo kopiuje pliki rozwiązań i projektów, które znajdują się w kontroli wersji. Aby upewnić się, że pliki rozwiązań i projektów wskazują ich poprawnej lokalizacji w kontroli wersji, należy ręcznie zaktualizować ciągi. Ponieważ ciągi mają być nieprzezroczyste, jego mogą nie być wyczyść jak powinny być zaktualizowane.  
@@ -77,4 +78,4 @@ Gdy Visual Studio rozwiązania lub projektu znajduje się pod kontrolą źródł
   
 ## <a name="see-also"></a>Zobacz też  
  [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
- [Ciągi używane jako klucze do znajdowania wtyczka do kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+ [Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

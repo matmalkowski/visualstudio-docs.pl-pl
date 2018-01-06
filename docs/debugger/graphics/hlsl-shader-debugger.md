@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7d095d5dec0194f75d739899433c04439f08539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c1aeeb2da6817375e0327dba385037dccdc58cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
 Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć sposób działania kodu programu do cieniowania HLSL w rzeczywistych warunkach aplikacji.  
@@ -77,4 +78,4 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć spos
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Wskazówki: Debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)   
- [Wskazówki: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+ [Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

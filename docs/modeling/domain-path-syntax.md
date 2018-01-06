@@ -12,11 +12,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d32cef09adef982f22aa46a72ab71cd1e7ec8568
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3a8694c3c2a0601d3ce616b593e4c652d959f59e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="domain-path-syntax"></a>Składnia ścieżki domeny
 Definicje DSL używać składni języka XPath można znaleźć określone elementy w modelu.  
@@ -38,4 +39,4 @@ Definicje DSL używać składni języka XPath można znaleźć określone elemen
  Nazwa, której użyjesz dla przeskoku element do łącza jest wartością roli `Property Name`. Nazwa, której użyjesz dla elementu łącza przeskoku jest nazwa roli docelowej.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md)
+ [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

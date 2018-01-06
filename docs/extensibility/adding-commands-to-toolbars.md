@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd2c357b0882dd96295d288f379fb7c19f650484
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d3ecced1681cb9af4d73dcea9868b71c9a09ef38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-commands-to-toolbars"></a>Dodawanie poleceń do pasków narzędzi
 Pasek narzędzi jest pasek pozioma lub pionowa zawierający przyciski powiązany z poleceń. Paski narzędzi na wielu różnych systemu windows w programie Visual Studio można dodać własne polecenia: Okno główne programu Visual Studio, Eksploratora rozwiązań i okien narzędzi niestandardowych.  
@@ -27,14 +28,14 @@ Pasek narzędzi jest pasek pozioma lub pionowa zawierający przyciski powiązany
  [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)  
  Wyjaśniono, jak dodać pasek narzędzi do zestawu paski narzędzi w oknie głównym programu Visual Studio.  
   
- [Dodawanie do okna narzędzi paska narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
+ [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
  Wyjaśniono, jak dodać pasek narzędzi okna narzędzia.  
   
- [Dodawanie polecenia na pasku narzędzi Eksplorator rozwiązań](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
+ [Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
  Wyjaśniono, jak dodać polecenia do paska narzędzi w Eksploratorze rozwiązań.  
   
- [Dodawanie kontrolera Menu do paska narzędzi](../extensibility/adding-a-menu-controller-to-a-toolbar.md)  
+ [Dodawanie kontrolera menu do paska narzędzi](../extensibility/adding-a-menu-controller-to-a-toolbar.md)  
  Wyjaśniono, jak dodać kontroler menu do paska narzędzi.  
   
- [Dynamiczne dodawanie elementów Menu](../extensibility/dynamically-adding-menu-items.md)  
+ [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)  
  Wyjaśniono, jak dynamiczne dodawanie elementów menu w różnych kontekstach.

@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e89e7fa1c57fcc3df5f1870db4e639de4bb87ddd
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Praca z diagramami klas (Projektant klas)
 Klasa diagramy ułatwiające zrozumienie, jakie struktura klas projektów innym zostały zapisane (lub która zarejestrowała dawno temu). Można je dostosować, udostępniać i prezentować informacje projektu z innymi osobami.  

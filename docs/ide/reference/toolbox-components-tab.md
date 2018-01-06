@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta Składniki
 Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektantów. Oprócz [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składników, które są dołączone do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], takich jak <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog> składników, można dodać użytkownika składników własnych lub innej firmy do tej karty. Aby uzyskać więcej informacji, zobacz [porady: manipulowanie karty przybornika](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
@@ -63,7 +64,7 @@ Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../code-qual
  **ServiceController**  
  Tworzy <xref:System.ServiceProcess.ServiceController> wystąpienie składnika służy do modyfikowania istniejących usług, w tym uruchamianie i zatrzymywanie usług oraz wysyłanie poleceń do nich. Aby uzyskać więcej informacji, zobacz [monitorowania usług systemu Windows](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
- **Czasomierz**  
+ **Timer**  
  Tworzy <xref:System.Windows.Forms.Timer> wystąpienie składnika można użyć, aby dodać funkcje oparte na czasie do aplikacji opartych na systemie Windows. Aby uzyskać więcej informacji, zobacz [Timer — składnik](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]

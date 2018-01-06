@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem Element
 `VisibilityItem` Określa statyczne widoczności poleceń i pasków narzędzi. Każdy wpis identyfikuje polecenia lub menu a skojarzone polecenie kontekstu interfejsu użytkownika. Visual Studio wykrywa polecenia, menu i paski narzędzi oraz ich widoczności bez ładowania VSPackages, który definiuje ich. Używa IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodę, aby sprawdzić, czy kontekst interfejsu użytkownika poleceń jest aktywny.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Element Określa widoczność statycznych grupy poleceń i pasków narzędzi.|  
+|[VisibilityConstraints, element](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Element Określa widoczność statycznych grupy poleceń i pasków narzędzi.|  
   
 ## <a name="remarks"></a>Uwagi  
  Standardowa kontekstów interfejsu użytkownika programu Visual Studio są zdefiniowane w *ścieżki instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc\vsshlids.h plik również jako <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> i <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy. Bardziej szczegółowy zestaw kontekstów interfejsu użytkownika jest zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants> klasy.  
@@ -79,4 +80,4 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>   
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
  [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

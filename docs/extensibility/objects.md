@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7c42521915574952649776894ddc660e8e49c11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c79183861539849a04e4936ed9b0f16092963496
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="objects"></a>Obiekty
 Poniższe informacje opisano obiekty, które są używane do utworzenia wystąpienia core edytora tekstu.  
@@ -36,5 +37,5 @@ Poniższe informacje opisano obiekty, które są używane do utworzenia wystąpi
  Zawiera opis widoku tekstu, okno, który pozwala użytkownikom wyświetlać i edytować tekst Unicode buforu tekstowego.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Odwołanie do zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md)  
+ [Dokumentacja zestawu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
  Wyświetla listę tematów odwołania.

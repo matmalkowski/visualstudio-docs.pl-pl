@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1c0238bb7a525166f69a59b0af5d08db5286a5f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c21160247a617c1f74333ef567a6857bbc902cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="onerror-element-msbuild"></a>OnError — Element (MSBuild)
 Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` atrybutu `false` zadania nie powiodło się.  
@@ -80,4 +81,4 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
 
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Obiekty docelowe](../msbuild/msbuild-targets.md)
+ [Docelowe elementy](../msbuild/msbuild-targets.md)

@@ -1,60 +1,57 @@
 ---
-title: "Porady: Tworzenie szablonów projektów | Dokumentacja firmy Microsoft"
+title: "Tworzenie szablonów projektów dla programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.ExportTemplateWizard
-helpviewer_keywords:
-- Visual Studio templates, creating project templates
-- project templates, metadata files
-- Visual Studio templates, project templates
-- project templates, custom template locations
-- project templates, creating
-ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
-caps.latest.revision: "19"
+helpviewer_keywords: project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a473ac2be65acc9b08455fe687b52468f5ca9fa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0da7a7979b4fed6f58cdda6f1eafa55517e4df9b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-create-project-templates"></a>Porady: tworzenie szablonów projektów
-Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** kreatora, w którym pakietów szablonu w pliku zip. Można również tworzyć szablony w formacie pliku VSIX dla ulepszone wdrażanie, za pomocą rozszerzenia eksportu Kreatora szablonów lub z szablonów w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)], lub szablonów można tworzyć ręcznie.  
-  
-### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Aby utworzyć szablon niestandardowy projekt przy użyciu standardowych Kreatora eksportowania szablonu  
-  
-1.  Tworzenie projektu.  
-  
+# <a name="how-to-create-project-templates"></a>Porady: Tworzenie szablonów projektów
+
+W tym temacie przedstawiono sposób tworzenia szablonu przy użyciu **Kreatora eksportowania szablonu**, które pakiety szablonu w pliku zip.
+
+## <a name="to-create-a-user-project-template-by-using-the-export-template-wizard"></a>Aby utworzyć szablon projektu użytkownika przy użyciu Kreatora eksportowania szablonu
+
+1. Tworzenie projektu.
+
     > [!NOTE]
-    >  Gdy nazwy projektu, który będzie źródło szablonu, należy używać tylko znaków prawidłowego identyfikatora. Szablon wyeksportowany z projektu o nazwie nieprawidłowe znaki może spowodować błędy kompilacji w przyszłości projekty na podstawie szablonu. Aby uzyskać więcej informacji na prawidłowy identyfikator znaków, zobacz [zadeklarowane nazwy elementów](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
-  
-2.  Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon.  
-  
-3.  Zgodnie z potrzebami Edytuj pliki kodu, wskaż, gdzie parametr zastąpienia powinno mieć miejsce. Aby uzyskać więcej informacji na zastępowanie parametru, zobacz [porady: parametry zastępczych w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
-  
-4.  Na **projektu** menu, kliknij przycisk **Eksportuj szablon**. **Eksportuj szablon** zostanie otwarty Kreator.  
-  
-5.  Kliknij przycisk **projektu szablonu**.  
-  
-6.  Jeśli masz więcej niż jeden projekt w bieżącym rozwiązaniu, wybierz projekty, do których mają zostać wyeksportowane do szablonu.  
-  
-7.  Kliknij przycisk **Dalej**.  
-  
-8.  Wybierz ikonę i obraz podglądu dla szablonu. Będą one widoczne w **nowy projekt** okno dialogowe.  
-  
-9. Wprowadź nazwę i opis szablonu.  
-  
-10. Kliknij przycisk **Zakończ**. Projektu jest wyeksportowany do pliku zip umieszczony w lokalizacji określonej w danych wyjściowych i, jeśli zaznaczone, należy zaimportować do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-     Jeśli masz [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] zainstalowana, można zawijać Zakończono szablonu w pliku .vsix dla wdrożenia przy użyciu **projektu VSIX** szablonu. Aby uzyskać więcej informacji, zobacz [wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
+    > Gdy nazwy projektu, który będzie źródło szablonu, należy używać tylko znaków prawidłowego identyfikatora. W przeciwnym razie w projektach, które są tworzone na podstawie tego szablonu mogą wystąpić błędy kompilacji. Aby uzyskać więcej informacji na temat prawidłowego identyfikatora znaków, zobacz [zadeklarowane nazwy elementów (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names) lub [identyfikatorów (C++)](/cpp/cpp/identifiers-cpp). Alternatywnie można użyć [parametrów szablonu](../ide/template-parameters.md) używanie "bezpiecznej" nazw klas i przestrzenie nazw.
+
+1. Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon. Na przykład możesz edytować pliki kodu, wskaż, gdzie parametr zastąpienia powinno mieć miejsce. Zobacz [porady: parametry zastępcze w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
+
+1. Na **projektu** menu, wybierz **Eksportuj szablon...** .
+
+   **Kreatora eksportowania szablonu** otwiera.
+
+1. Na **wybierz typ szablonu** wybierz pozycję **szablonu projektu**. Wybierz projekt, aby wyeksportować do szablonu, a następnie wybierz pozycję **dalej**.
+
+1. Na **wybierz opcje szablonu** strony, wprowadź nazwę i opcjonalny opis, ikony i wyświetlić podgląd obrazu szablonu. Te elementy będą wyświetlane w **nowy projekt** okno dialogowe. Wybierz **Zakończ**.
+
+  Projekt jest wyeksportowany do pliku zip i umieszczane w lokalizacji określonej w danych wyjściowych i zaznaczenie tej opcji, należy zaimportować do programu Visual Studio.
+
+>[!NOTE]
+> Aby znaleźć szablonu w **nowy projekt** okna dialogowego rozwiń **zainstalowana** , a następnie rozwiń kategorię, która odpowiada `ProjectType` elementu w pliku .vstemplate. Na przykład plik .vstemplate zawierający `<ProjectType>CSharp</ProjectType>` jest wyświetlany w obszarze **zainstalowana** > **Visual C#**, domyślnie. Szablon można organizować w podkatalogu typu projektu przez utworzenie folderu w tym katalogu i umieszczenie w nim plik zip do szablonu. Aby uzyskać więcej informacji, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+## <a name="other-ways-to-create-project-templates"></a>Inne sposoby Tworzenie szablonów projektów
+
+Ręczne tworzenie szablonów projektów zbieranie plików, które stanowią projektu do folderu, a następnie utworzenie pliku XML .vstemplate o odpowiednie metadane. Aby uzyskać więcej informacji, zobacz [porady: ręczne tworzenie szablonów sieci web](../ide/how-to-manually-create-web-templates.md).
+
+Jeśli masz program Visual Studio SDK zainstalowany Zakończono szablonu może zawijać w pliku VSIX dla wdrożenia przy użyciu **projektu VSIX** szablonu. Aby uzyskać więcej informacji, zobacz [wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
+
+## <a name="see-also"></a>Zobacz także
+
+[Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)  
+[Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)  
+[Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

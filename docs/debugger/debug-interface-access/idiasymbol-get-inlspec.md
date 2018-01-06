@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8b96e3a44ae1bb03cde58fc28af4871e80aaf4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-Ta funkcja pobiera flagę wskazującą, czy funkcja została oznaczona jako inline (przy użyciu jednej z [w tekście, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) atrybutów).  
+Ta funkcja pobiera flagę wskazującą, czy funkcja została oznaczona jako inline (przy użyciu jednej z [w tekście, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) atrybutów).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,4 +51,4 @@ HRESULT get_inlSpec(
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [w tekście, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md)
+ [w tekście, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp)

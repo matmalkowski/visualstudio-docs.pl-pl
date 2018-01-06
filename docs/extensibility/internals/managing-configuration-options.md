@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e0de435dca5c2bf16d9943f353ddb72080af969
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a5ae644d910cdad584c7b285c75987f39c26e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-configuration-options"></a>Opcje konfiguracji zarządzania
 Podczas tworzenia nowego typu projektu muszą zarządzać projektu i rozwiązania ustawienia konfiguracji, które określają jak projekt zostanie skompilowany, spakowanych, wdrażania i uruchamiania. W poniższych tematach opisano konfigurację projektu i rozwiązania.  
@@ -35,13 +36,13 @@ Podczas tworzenia nowego typu projektu muszą zarządzać projektu i rozwiązani
  [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md)  
  W tym artykule wyjaśniono, jak obiekt konfiguracji projektu zarządza wyświetlania informacji o konfiguracji do interfejsu użytkownika.  
   
- [Konfiguracja projektu dla tworzenia](../../extensibility/internals/project-configuration-for-building.md)  
+ [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)  
  Wyjaśniono, jak lista konfiguracji rozwiązania dla danego rozwiązania jest zarządzana przez **konfiguracje rozwiązania** okno dialogowe.  
   
- [Konfiguracja projektu do zarządzania wdrożenia](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
+ [Konfigurowanie projektu do zarządzania wdrożeniem](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
  Definiuje czynność wdrażania oraz dwa sposoby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje projektów, które obsługują wdrażania.  
   
- [Konfiguracja projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md)  
+ [Konfigurowanie projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md)  
  Opisano obsługiwane w każdej konfiguracji procesów kompilacji i interfejsów i metod, przez który dane wyjściowe elementy mogą być udostępniane.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Wdrażanie, publikowanie i aktualizowanie pakietów rozwiązania SharePoint
   Po tworzenia rozwiązań programu SharePoint w Visual Studio, można wdrożyć pliku pakietu (wsp) na lokalny serwer SharePoint lub opublikować go do lokalnego lub zdalnego serwera programu SharePoint. W przypadku wdrożenia z plików, można dostosować, sposób wdrożenia pliki pakietu (wsp).  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
  Jeśli zostaną wprowadzone zmiany do projektu SharePoint w Visual Studio po opublikowaniu opublikowanego pakietu muszą zostać uaktualnione, aby uwzględnić zmiany. Aby pomyślnie uaktualnić, pakiet musi mieć unikatową nazwę. Jeśli pakiet o takiej samej nazwie znajduje się w witrynie programu SharePoint — które mogą wystąpić podczas aktualizowania istniejących aplikacji — alerty o błędach na nazwę pliku w konflikcie i pozwala zmienić nazwę pakietu. Po ponownie opublikować, nowy pakiet pojawia się w witrynie programu SharePoint i może zostać uaktualniony. Uaktualnionego pakietu aktualizacji rozwiązania przy użyciu danych z starszej pakiet, a następnie aktywuje rozwiązań w programie SharePoint. Aby uzyskać więcej informacji, zobacz [porady: wdrażanie, publikowanie i uaktualniania rozwiązań programu SharePoint na serwerze zdalnym](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

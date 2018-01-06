@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41fd9fcee2d0ae954f5ec234bf23cbefd5ccd6da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Opis elementu&gt; elementu (wdrażania ClickOnce)
 Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i **Dodaj lub usuń programy** w Panelu sterowania.  
@@ -63,4 +64,4 @@ Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i 
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+ [Manifest wdrożenia ClickOnce](../deployment/clickonce-deployment-manifest.md)

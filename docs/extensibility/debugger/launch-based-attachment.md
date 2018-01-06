@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch-based-attachment"></a>Na podstawie uruchamiania załącznika
 Na podstawie uruchamiania załącznika z programem odbywa się automatycznie. Gdy proces obsługujący program jest uruchamiana przez SDM, na podstawie uruchamiania załącznika następuje ścieżkę do tej metody ręcznego załącznika. Aby uzyskać informacje, zobacz [dołączenie do programu](../../extensibility/debugger/attaching-to-the-program.md).  
@@ -37,4 +38,4 @@ Na podstawie uruchamiania załącznika z programem odbywa się automatycznie. Gd
   
 ## <a name="see-also"></a>Zobacz też  
  [Wysyłanie zdarzeń wymagane](../../extensibility/debugger/sending-the-required-events.md)   
- [Włączanie programu do debugowania](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

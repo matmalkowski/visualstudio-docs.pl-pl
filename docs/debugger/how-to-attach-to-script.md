@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914974e27e6856174a4260b741f2e864d8509ff8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 15143ad050997cd92b21bd342f5d821c9514271a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-to-script"></a>Porady: dołączanie do skryptu
 W tym temacie wyjaśniono, jak ręcznie dołączyć debuger programu Visual Studio do pliku skryptu w celu debugowania.  
@@ -71,5 +72,5 @@ W tym temacie wyjaśniono, jak ręcznie dołączyć debuger programu Visual Stud
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie skryptu po stronie klienta](../debugger/client-side-script-debugging.md)   
  [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należących do niezaufanych użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
+ [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)

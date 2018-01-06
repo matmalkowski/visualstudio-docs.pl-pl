@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebfb54a289fe085f00c40df34256cfb2174f98fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Tworzenie rozszerzenia z szablonem elementu edytora
 Można użyć szablonów elementów, które znajdują się w Visual Studio SDK do tworzenia podstawowego edytora rozszerzeń, które dodać klasyfikatory, skojarzenia i marginesów do edytora. Szablony elementów edytora są dostępne dla projektów Visual C# lub Visual Basic VSIX.  
@@ -99,4 +100,4 @@ Można użyć szablonów elementów, które znajdują się w Visual Studio SDK d
 4.  Tworzenie tego projektu i Rozpocznij debugowanie. Pojawi się eksperymentalne wystąpienie. Po otwarciu pliku tekstowego zielony margines, który zawiera wyrazy "Hello EditorMargin1" jest wyświetlony poniżej poziomy pasek przewijania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Usługa języka i punkty rozszerzenia Edytora](../extensibility/language-service-and-editor-extension-points.md)
+ [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

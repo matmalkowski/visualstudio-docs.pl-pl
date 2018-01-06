@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed0ffd44e248cb1f420cb7be308a46c914fffee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli źródła
 Ta sekcja porównuje dwa sposoby integracji kontroli źródła programu Visual Studio; kontroli źródła wtyczek i pakiet VSPackage, który zapewnia rozwiązanie do kontroli źródła i zaznacza nowe funkcje kontroli źródła. Program Visual Studio umożliwia ręczne przełączanie między kontroli źródła VSPackages i plug-in kontroli źródła, a także automatyczne przełączanie oparte na rozwiązaniu.  
@@ -79,4 +80,4 @@ Ta sekcja porównuje dwa sposoby integracji kontroli źródła programu Visual S
  [Kontrola źródła](../../extensibility/internals/source-control.md)   
  [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Tworzenie pakiet VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)   
- [Nowości w kontroli źródła](../../extensibility/internals/what-s-new-in-source-control.md)
+ [Nowości dotyczące kontroli kodu źródłowego](../../extensibility/internals/what-s-new-in-source-control.md)

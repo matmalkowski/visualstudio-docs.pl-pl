@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43947a2e239833459923f6991d4ee54d12876fe3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 015f2efa352b5ff2d8b87e356972270c175d0168
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Porady: dodawanie i usuwanie importowanych przestrzeni nazw (Visual Basic)
 Importowanie przestrzeni nazw umożliwia przy użyciu elementów z tej przestrzeni nazw w kodzie bez pełni kwalifikujących się elementu. Na przykład, jeśli chcesz, aby uzyskać dostęp do `Create` metody w `System.Messaging.MessageQueue` klasy, można zaimportować `System.Messaging` przestrzeni nazw i po prostu odwoływać się do elementu, należy w kodzie jako `MessageQueue.Create`.  

@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d81a65a8030fd77ead1362602b0e16f474ef410c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ed5ca134205568a185541b64e3f22cc4f76ed36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Porady: dostosowywanie funkcji SharePoint
   Można tworzyć i dostosowywać funkcji programu SharePoint przy użyciu narzędzia Projektant funkcji w programie Visual Studio. Na przykład można ustawić zakresu funkcji i dodać inne funkcje jako zależności. Domyślnie projektancie funkcji jest otwarty podczas dodawania nowych funkcji w Eksploratorze rozwiązań lub w Eksploratorze pakietu programu SharePoint.  
@@ -95,6 +96,6 @@ ms.lasthandoff: 10/31/2017
 2.  Szablon jest odświeżany z oryginalny tekst, a zmiany wprowadzone w pliku XML zostaną utracone.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

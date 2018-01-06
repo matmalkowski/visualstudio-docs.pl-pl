@@ -19,11 +19,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1974f32731d8ba45b2210b9d9231a7e69d6905f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2ca99a5ad13989f29126b23a93055b174bb49150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Wskazówki: tworzenie rozszerzenia projektu SharePoint
   W tym przewodniku ilustruje sposób tworzenia rozszerzeń dla projektów programu SharePoint. Aby odpowiedzieć na poziomie projektu zdarzenia, takie jak po projektu jest dodany, usunięty lub zmieniono jego nazwę, można użyć rozszerzenia projektu. Można również dodać niestandardowe właściwości lub reagować, gdy wartość właściwości zostanie zmieniona. W przeciwieństwie do rozszerzenia elementu projektu rozszerzenia projektu nie może być skojarzony z określonym typem projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenia ładuje po otwarciu dowolnego rodzaju projektu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

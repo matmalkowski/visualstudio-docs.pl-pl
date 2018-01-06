@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d2b5d07fb143f84b3680d51624469b9778b42a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0e02e7e436f42846b2e18f96d1bb4112a168476e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="subscribing-to-an-event"></a>Subskrybowanie zdarzeń
 W tym przewodniku opisano sposób tworzenia okna narzędzia, która reaguje na zdarzenia w uruchomionej tabeli dokumentu (Normalizacją). Okno narzędzia obsługuje kontrolkę użytkownika, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Metody łączy interfejsu zdarzenia.  

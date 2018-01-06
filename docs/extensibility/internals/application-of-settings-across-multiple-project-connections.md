@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień przez wiele połączeń projektu
 Wtyczka do kontroli źródła utworzony za pomocą 1.2 interfejsu API dodatku typu Plug-in kontroli źródła, można użyć do wykonania tej samej operacji kontroli źródła dla wielu projektów lub wielu kontekstów połączenia operacji zbiorczej. Partie można wyeliminować nadmiarowego, okien dialogowych z doświadczenia użytkownika projektu.  
@@ -37,4 +38,4 @@ Wtyczka do kontroli źródła utworzony za pomocą 1.2 interfejsu API dodatku ty
  `SCCBeginBatch` Funkcja rozpoczyna grupy operacji kontroli źródła. `SccEndBatch`Zamyka grupy. Grupy nie mogą być zagnieżdżone.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Nowości w źródła formantu wtyczka interfejsu API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

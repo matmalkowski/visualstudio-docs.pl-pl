@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>Uruchamianie programu
 Użytkownicy, którzy chcą debugowania programu można nacisnąć klawisz F5, aby uruchomić debugera z IDE. To rozpoczyna się szereg zdarzeń, które powoduje ostatecznie IDE nawiązywania aparat debugowania (DE), który z kolei jest połączony, lub dołączony do programu w następujący sposób:  
@@ -53,12 +54,12 @@ Użytkownicy, którzy chcą debugowania programu można nacisnąć klawisz F5, a
  Jeśli `GUID_NULL` są przekazywane, a następnie port uruchamia program. Po uruchomieniu programu tworzy środowisko wykonawcze `IDebugProgramNode2` interfejsu do opisywania program i przekazuje je do `IDebugPortNotify2::AddProgramNode`. Powiadamia to port, na którym działa program. Następnie SDM dołącza aparat debugowania do działającego programu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Port powiadamiania](../../extensibility/debugger/notifying-the-port.md)  
+ [Powiadamianie portu](../../extensibility/debugger/notifying-the-port.md)  
  W tym artykule wyjaśniono, co się stanie po uruchomieniu programu i portu jest powiadamiany.  
   
- [Dołączanie po Launch](../../extensibility/debugger/attaching-after-a-launch.md)  
+ [Dołączanie po uruchomieniu](../../extensibility/debugger/attaching-after-a-launch.md)  
  Dokumenty podczas sesji debugowania jest gotowy do dołączenia do programu DE.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)  
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
  Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i obliczaniu wyrażeń.

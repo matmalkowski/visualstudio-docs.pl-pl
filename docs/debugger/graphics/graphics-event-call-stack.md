@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81a7edd908da5953e04e68a1a903ed585f1ec6b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-call-stack"></a>Stos wywołań zdarzeń grafiki
 Stos wywołań zdarzeń grafiki w analizatora grafiki programu Visual Studio ułatwia mapowania relacji między zdarzeń grafiki powodować problemy i kodu źródłowego aplikacji.  
@@ -44,4 +45,4 @@ Stos wywołań zdarzeń grafiki w analizatora grafiki programu Visual Studio uł
  Aby zrozumieć grafiki wybranego zdarzenia, może być konieczne informacje o obiektach Direct3D, które są skojarzone z nim. **Stosu wywołań zdarzeń grafiki** okna zawiera łącza do tych informacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)
+ [Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)

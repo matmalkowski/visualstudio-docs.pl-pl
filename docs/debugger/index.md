@@ -3,11 +3,11 @@ layout: LandingPage
 title: Debugowanie aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
 description: "Dowiedz się, jak używać programu Visual Studio 2017 do debugowania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 87f55a02e4e37d4daa8da0282182f7e3a45a0efa
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 
@@ -69,7 +69,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

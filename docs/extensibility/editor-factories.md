@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfef7e641bc8f7e041242ce28110845855c2a65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0fb464d3eb9d7b39b853593c9458fe800296321
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-factories"></a>Fabryki edytora
 Fabryka edytora tworzy Edytor obiektów i umieszczane w ramkę okna, znany jako widoku fizycznego. Tworzy dane dokumentu i obiekty widoku dokumentów, które są niezbędne do utworzenia edytory i projektantów. Fabryka edytora jest wymagane do utworzenia edytorze podstawowych programu Visual Studio i dowolnego edytora standardowego. Opcjonalnie można utworzyć niestandardowego edytora z fabryką edytora.  
@@ -55,4 +56,4 @@ Fabryka edytora tworzy Edytor obiektów i umieszczane w ramkę okna, znany jako 
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
- [Uruchomionej tabeli dokumentu](../extensibility/internals/running-document-table.md)
+ [Uruchamianie tabeli dokumentu](../extensibility/internals/running-document-table.md)

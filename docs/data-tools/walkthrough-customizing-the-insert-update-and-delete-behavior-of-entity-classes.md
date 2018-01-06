@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Wskazówki: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
 [Składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) zapewnia visual powierzchnię tworzenia i edytowania [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy (klas jednostek), które są oparte na obiektach w bazie danych. Za pomocą [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index), można użyć technologii LINQ do dostępu do bazy danych SQL. Aby uzyskać więcej informacji, zobacz [LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/).  
@@ -264,7 +265,7 @@ W zależności od wymagań aplikacji istnieje kilka czynności, które można wy
   
 -   Implementuje współbieżności sprawdzanie w trakcie aktualizacji. Aby uzyskać informacje, zobacz [optymistycznej współbieżności: omówienie](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
   
--   Dodawanie zapytań LINQ można filtrować dane. Aby uzyskać informacje, zobacz [wprowadzenie do kwerend LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+-   Dodawanie zapytań LINQ można filtrować dane. Aby uzyskać informacje, zobacz [wprowadzenie do kwerend LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
   
 ## <a name="see-also"></a>Zobacz także
 [LINQ do SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     

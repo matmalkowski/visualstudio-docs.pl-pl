@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Jaki &#39; s nowego w Visual Studio 2017 r.
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.5 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -223,7 +224,7 @@ Oprócz wdrażania aplikacji prostsze Windows 10 spadek twórców Update jest pi
 * **Najlepiej platformy uniwersalnej systemu Windows, jak i Win32** <br/>
 Firma Microsoft ulepszyła platformy Windows 10 z [Mostek pulpitu](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) Aby ulepszyć systemu Windows 10 dla wszystkich deweloperów platformy .NET, czy ich bieżący koncentruje się na platformy uniwersalnej systemu Windows, WPF, formularze systemu Windows lub Xamarin. Nowy typ projektu tworzenia pakietów aplikacji w programie Visual Studio 2017 wersji 15,5 cala umożliwia tworzenie pakietów aplikacji systemu Windows dla projektów WPF i formularze systemu Windows, podobnie jak dla projektów uniwersalnych systemu Windows. Po pakietu aplikacji, możesz uzyskać korzyści wdrożenia aplikacji systemu Windows 10 i można rozpowszechniać za pomocą Microsoft Store (aplikacji dla konsumentów) lub Microsoft Store dla firm i Education. Ponieważ spakowanych aplikacji ma dostęp do pełnej powierzchni interfejsu API platformy uniwersalnej systemu Windows oraz interfejsów API Win32 na pulpicie, można teraz modernizacji aplikacji WPF i formularze systemu Windows stopniowo przy użyciu funkcji API platformy uniwersalnej systemu Windows i Windows 10. Ponadto mogą obejmować składniki Win32 w aplikacjach platformy uniwersalnej systemu Windows, które podświetlony na pulpicie ze wszystkimi funkcjami systemu Win32. 
 
-Aby uzyskać więcej informacji na temat platformy uniwersalnej systemu Windows, zobacz [opracowywania aplikacji dla systemu Windows platformy Uniwersalnej](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp) strony.
+Aby uzyskać więcej informacji na temat platformy uniwersalnej systemu Windows, zobacz [opracowywania aplikacji dla systemu Windows platformy Uniwersalnej](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) strony.
 
 ## <a name="mobile-app-development"></a>Programowanie aplikacji mobilnej
 ### <a name="xamarin"></a>Xamarin
@@ -270,7 +271,7 @@ I zawiera teraz Docker pomocy technicznej.
 
 **Nowość w 15 ustęp 3**: Visual Studio 2017 wersji 15 ustęp 3 obsługuje programowanie .NET Core 2.0. Przy użyciu programu .NET Core 2.0 wymaga, pobieranie i Instalowanie zestawu SDK .NET Core 2.0 oddzielnie.  
 
-Aby uzyskać więcej informacji, zobacz [.NET Core przewodnik](https://docs.microsoft.com/dotnet/core/index) strony.
+Aby uzyskać więcej informacji, zobacz [.NET Core przewodnik](/dotnet/core/index) strony.
 
 ## <a name="games-development"></a>Programowanie gry
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -301,6 +302,6 @@ Jeśli chcesz sugestii dotyczących jak możemy ulepszyć program Visual Studio,
 ## <a name="see-also"></a>Zobacz też
 * [Visual Studio 2017 informacje o wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Co to jest nowe w programie Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Nowości w języku C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [Nowości w języku C#](/dotnet/csharp/whats-new)  
 * [Nowości dotyczące programu Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Co to jest nowe w programie Visual Studio dla komputerów Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

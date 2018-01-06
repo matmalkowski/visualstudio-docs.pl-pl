@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 Można zainstalować i wyświetlić zawartość różne produkty i technologie, na komputerze lokalnym przy użyciu Podglądu pomocy firmy Microsoft, w tym programu Visual Studio, .NET Framework, dokumentację języka, SQL Server i systemu Windows dla deweloperów. Podgląd Pomocy umożliwia:  
@@ -84,5 +85,5 @@ Pasek narzędzi w oknie podglądu pomocy zawiera następujące przyciski:
 
 ## <a name="see-also"></a>Zobacz także
 [Instalacja podglądu pomocy firmy Microsoft](../ide/microsoft-help-viewer-installation.md)  
-[Podręcznik administratora programu Podgląd pomocy](../ide/help-viewer-administrator-guide.md)  
-[Zainstaluj i Zarządzaj zawartości lokalnej](../ide/install-and-manage-local-content.md)
+[Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md)  
+[Instalowanie zawartości lokalnej i zarządzanie nią](../ide/install-and-manage-local-content.md)

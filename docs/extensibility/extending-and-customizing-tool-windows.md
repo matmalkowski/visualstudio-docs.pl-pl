@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Rozszerzanie i dostosowywanie narzędzi systemu Windows
 Program Visual Studio udostępnia wiele różnych typów systemu windows, na przykład okna narzędzi okna dokumentów i okno dialogowe systemu windows. Inne okna, takie jak okna właściwości, w oknie danych wyjściowych i w oknie Lista zadań, są typy okien narzędzi.  
@@ -50,4 +51,4 @@ Program Visual Studio udostępnia wiele różnych typów systemu windows, na prz
  Rozszerzenia programu Visual Studio należy utworzyć modalnych okien dialogowych za wyprowadzanie je z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, co pozwala na kontrolowanie je i pozostałej części interfejsu użytkownika. Aby uzyskać więcej informacji zobacz. [Tworzenie i zarządzanie nimi modalnych okien dialogowych](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md)
+ [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)

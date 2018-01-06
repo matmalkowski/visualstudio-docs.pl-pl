@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4a8ed7ebbd3fc2fc35e9145509ebf335652c4bbd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fbeaf6655ffc3e05afd9633add0defde9368a419
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Porady: ustawienie niestandardowej lokalizacji pliku dziennika błędów wdrażania technologii ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]przechowuje pliki dziennika aktywacji dla wszystkich wdrożeń. Te dzienniki dokumentu błędy dotyczące instalowania i Inicjowanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tworzą jeden plik dziennika dla każdego wdrożenia aktywacji. Te pliki dziennika są przechowywane w folderze tymczasowych plików internetowych. Plik dziennika dla wdrożenia jest wyświetlane użytkownikowi, gdy wystąpi błąd aktywacji, a użytkownik kliknie **szczegóły** w oknie dialogowym błędu wynikowy.  

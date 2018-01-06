@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 026223f89822f2d76aa1185da8691c538b15ee62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 **Immediate** okna jest używana do debugowania i obliczać wyrażeń, wykonać instrukcje wartości zmiennych i tak dalej. Umożliwia ona wprowadź wyrażenia, które mają być obliczane lub wykonywane przez język programowania podczas debugowania. Aby wyświetlić **Immediate** okna, otwórz projekt do edycji, a następnie wybierz **Windows** z **debugowania** menu i wybierz **Immediate**, lub naciśnij klawisze CTRL + ALT + I.  
@@ -129,4 +130,4 @@ Nie można użyć obliczenie wyrażenia czasu projektowania w typów projektów,
  [Podstawowe informacje o debugerze](../../debugger/debugger-basics.md)   
  [Wskazówki: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)   
- [Za pomocą wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+ [Używanie wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

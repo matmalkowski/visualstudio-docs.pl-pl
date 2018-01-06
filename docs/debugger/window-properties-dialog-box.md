@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2fc28d8fed522174ae706336bbba63be5c179cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c6a2608490bcecf7c4eb61b1541eec355cd41c3
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="window-properties-dialog-box"></a>Okno dialogowe właściwości okna
 Aby dowiedzieć się więcej na temat określonego okna, użyj tego okna dialogowego. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku systemu Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  
@@ -42,7 +43,7 @@ Aby dowiedzieć się więcej na temat określonego okna, użyj tego okna dialogo
  [Wyszukiwanie okien — okno dialogowe](../debugger/window-search-dialog-box.md)  
  Umożliwia znalezienie węzła w określonym oknie w widoku systemu Windows.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.  
   
  [Za pomocą narzędzia Znajdź](../debugger/how-to-use-the-finder-tool.md)  
@@ -54,8 +55,8 @@ Aby dowiedzieć się więcej na temat określonego okna, użyj tego okna dialogo
  [Widok okien](../debugger/windows-view.md)  
  Wyświetla widok drzewa dostępne systemu windows i kontrolek.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.

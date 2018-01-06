@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1085312849ce33518654e044a795d6aa4b735e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: beaab13c76b3d50f97662e66c1f72dc83161e96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funkcje API wtyczkę kontroli źródła
 Interfejs API dodatku typu Plug-in kontroli źródła udostępnia następujące funkcje, które musi być implementowana przez wtyczki zgodnie z tego interfejsu API kontroli źródła. Podpisy każdej funkcji oraz semantykę skojarzone z flagi bitów i inne parametry zostały szczegółowo opisane w tym dokumencie.  
@@ -89,4 +90,4 @@ Interfejs API dodatku typu Plug-in kontroli źródła udostępnia następujące 
   
 ## <a name="see-also"></a>Zobacz też  
  [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)   
- [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Tworzenie wtyczki kontroli kodu źródłowego](../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efe710a237ff9cde5d66a7e377f7a4b700a00705
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w Concurrency Visualizer, mogą dodawać kod źródłowy. Dodatkowe dane można skojarzyć z fazy i zdarzeń w kodzie. Te dodatkowe wizualizacje są określane jako *znaczniki*.  Przewodnik wprowadzający dla [wprowadzenie do zestawu SDK wizualizatora współbieżności](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -125,7 +126,7 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Odwołanie do biblioteki C++](../profiling/cpp-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla języka C++.|  
-|[Odwołanie do biblioteki C](../profiling/c-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla C.|  
+|[Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla języka C++.|  
+|[Odwołanie do biblioteki języka C](../profiling/c-library-reference.md)|Opisuje narzędzia Concurrency Visualizer interfejsu API dla C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Opisuje interfejs API wizualizatora współbieżności dla kodu zarządzanego.|  
-|[CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)|Informacje referencyjne dotyczące widoków i raportów profilowania pliki danych, które są generowane przy użyciu metody współbieżności i czy obejmują dane wykonanie wątku.|
+|[Concurrency Visualizer](../profiling/concurrency-visualizer.md)|Informacje referencyjne dotyczące widoków i raportów profilowania pliki danych, które są generowane przy użyciu metody współbieżności i czy obejmują dane wykonanie wątku.|

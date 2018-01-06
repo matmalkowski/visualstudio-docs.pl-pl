@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec4ec1c06d6c64a344e9e39d01c850b901534af8
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-topics"></a>Porady: wyszukiwanie tematów
 Funkcja wyszukiwania pełnotekstowego zlokalizować wszystkie tematy zawierające określonego wyrazu. Można również dostosować i dostosować wyszukiwanie przy użyciu symboli wieloznacznych wyrażenia, operatorów logicznych i operatory wyszukiwania zaawansowanego.  

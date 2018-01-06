@@ -26,11 +26,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c1e6f76c1c425ce31b518e9c4cb3db4d6280e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 622be02def57621f43439f84f84321cb1bac9911
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-deleter-method"></a>Porady: dodawanie metody Deleter
   Aby umożliwić użytkownikowi końcowemu usunąć rekord danych z listy zewnętrznej w witrynie programu SharePoint, dodając *Deleter* metody do modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -80,6 +81,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Porady: Dodawanie parametru do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Porady: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)  
+ [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)  
   
   

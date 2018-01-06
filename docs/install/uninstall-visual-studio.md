@@ -15,11 +15,12 @@ ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3defb5813311a1c71bf6010fe49dc066f3403a1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3f2d472d5fc4b6581a9e94e1c2efacc2299eaca0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uninstall-visual-studio"></a>Odinstaluj program Visual Studio
 Ta strona przeprowadzi Cię przez odinstalowanie programu Visual Studio, naszych zintegrowany pakiet narzędzi wydajności dla deweloperów.  
@@ -56,10 +57,10 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
-* [Zainstaluj program Visual Studio](install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Modyfikowanie Visual Studio 2017 r.](modify-visual-studio.md)
-* [Aktualizacja programu Visual Studio](update-visual-studio.md)
+* [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Usuwanie programu Visual Studio](remove-visual-studio.md)

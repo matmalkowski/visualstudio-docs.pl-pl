@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>Praca z cieniowaniem
 Można użyć projektanta programu do cieniowania na podstawie wykresu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektowania niestandardowego programu do cieniowania skutki. Możesz użyć tych programów do cieniowania w aplikacji lub gry opartych na technologii DirectX.  
@@ -37,6 +38,6 @@ Można użyć projektanta programu do cieniowania na podstawie wykresu w [!INCLU
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Projektant programu do cieniowania](../designers/shader-designer.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Designer programu do cieniowania do pracy z programów do cieniowania.|  
-|[Węzły projektanta programu do cieniowania](../designers/shader-designer-nodes.md)|W tym artykule omówiono rodzaje projektanta programu do cieniowania węzłów, które służy do osiągnięcia efekty graficzne.|  
-|[Przykłady projektanta programu do cieniowania](../designers/shader-designer-examples.md)|Zawiera łącza do tematów, które pokazują, jak uzyskać typowe efekty grafiki za pomocą projektanta programu do cieniowania.|
+|[Projektant cieniowania](../designers/shader-designer.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Designer programu do cieniowania do pracy z programów do cieniowania.|  
+|[Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)|W tym artykule omówiono rodzaje projektanta programu do cieniowania węzłów, które służy do osiągnięcia efekty graficzne.|  
+|[Przykłady projektanta cieniowania](../designers/shader-designer-examples.md)|Zawiera łącza do tematów, które pokazują, jak uzyskać typowe efekty grafiki za pomocą projektanta programu do cieniowania.|

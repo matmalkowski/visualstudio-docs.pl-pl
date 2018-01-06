@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7078ee1e125ca11b0707b22b0d824cd0fc2d75b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Wskazówki: Wyświetlanie pomocy podpisu
 Podpis pomocy (znanej także jako *informacje o parametrach*) wyświetlany w etykietce narzędzia podpis metody, gdy użytkownik wpisze znak start listy parametrów (zazwyczaj nawias otwierający). Trakcie wpisywania parametru i parametr separatora (zazwyczaj przecinkami), element tooltip jest aktualizowana w celu wyświetlenia następny parametr pogrubione. Podpis pomocy można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i wyświetlić Pomoc podpisu dla właśnie tego typu lub można wyświetlić pomocy podpisu dla istniejącego typu zawartości (na przykład "tekst"). Ten przewodnik przedstawia sposób wyświetlenia pomocy podpisu dla typu zawartości "text".  
@@ -247,4 +248,4 @@ Podpis pomocy (znanej także jako *informacje o parametrach*) wyświetlany w ety
 4.  Po wpisaniu nawias otwierający powinna zostać wyświetlona etykietka narzędzia, który wyświetla listę dwóch sygnatury `add()` metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

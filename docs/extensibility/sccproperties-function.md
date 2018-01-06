@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccproperties-function"></a>Funkcja SccProperties
 Ta funkcja zawiera właściwości kontroli źródła dla pliku lub projektu.  
@@ -61,4 +62,4 @@ SCCRTN SccProperties (
  Właściwości są definiowane przez wtyczkę kontroli źródła i może różnić się od wtyczki do wtyczki. Jeśli wtyczka umożliwia użytkownikowi zmianę właściwości kontroli źródła pliku, powinien on zwrócić `SCC_I_RELOAD` sygnalizują IDE, do którego ten plik lub projekt musi zostać ponownie załadowana.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

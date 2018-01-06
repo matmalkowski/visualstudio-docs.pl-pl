@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0be1527c82264ef388eb01d3a06702c1c4bb4f7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cf841cf70f092fb38adc42bfa6271c6c3aa121d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny języka specyficznego dla domeny (DSL) mogą być wyświetlane dla użytkownika na diagramie i w Eksploratorze z języka i można uzyskać, sprawdzając kod programu. Jednak właściwości różnią się w taki sposób, że ich wartości są przechowywane.  
@@ -112,4 +113,4 @@ void SetAgeValue(int value)
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Właściwości domeny](../modeling/properties-of-domain-properties.md)   
- [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
+ [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)

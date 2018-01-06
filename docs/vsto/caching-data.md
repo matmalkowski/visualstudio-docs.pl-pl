@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d5f044f1f1d0f36918939a67d9d2e5bb1899929
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 616dea48ba9689bd90a01dab64c8855bdf774adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caching-data"></a>Buforowanie danych
   Może buforować dane obiektów w dostosowaniu poziomie dokumentu, tak, aby dane są dostępne w trybie offline lub bez konieczności otwierania programu Microsoft Office Word i Microsoft Office Excel. W pamięci podręcznej obiektu, obiekt musi mieć typ danych, który spełnia określone wymagania. Wiele typowych typów danych w programie .NET Framework spełnia te wymagania, w tym <xref:System.String>, <xref:System.Data.DataSet>, i <xref:System.Data.DataTable>.  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
  [Porady: dane z pamięci podręcznej do użycia w trybie Offline lub na serwerze](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Porady: programowane buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Porady: dane w dokumencie chroniony hasłem z pamięci podręcznej](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Wskazówki: Tworzenie relacji wzorzec szczegółów przy użyciu pamięci podręcznej zestawu danych](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Przewodnik: Tworzenie relacji wzorzec/szczegół z użyciem zestawu danych z pamięci podręcznej](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

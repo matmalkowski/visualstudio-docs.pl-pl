@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50cb56a8f1df730f3aa4ee214df50188b7ec94ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cfa9bf22d384b564a4051681bded69a2b186c9c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Porady: Programowane usuwanie kontaktów programu Outlook
   W tym przykładzie powoduje usunięcie kontaktu. W przykładzie założono, że kontakt o nazwie "Armando Pinto" istnieje w **kontaktów** folderu.  
@@ -36,6 +37,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)   
  [Porady: programowane wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Porady: programowane dostęp do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)  
+ [Instrukcje: Programowe uzyskiwanie dostępu do kontaktów programu Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)  
   
   

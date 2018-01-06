@@ -24,26 +24,27 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 423b2537b425066ca490eb8ae3c20d17fbc31253
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80668df65b1250eb579597653cf32ab79d30218c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-editor-options-dialog-box"></a>Opcje edytora tekstowego — Okno dialogowe
 Opcje edytora w **opcje** okno dialogowe umożliwiają dostosowanie wyglądu i zachowania edytora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: zmiana czcionek i kolorów w edytorze](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Instrukcje: Zmiana czcionek i kolorów w edytorze](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Wyjaśniono, jak zmiana edytora czcionek i kolorów.  
   
- [Porady: Zarządzanie zawijaniem wierszy w edytorze](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Instrukcje: Zarządzanie zawijaniem wierszy w edytorze](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Wyjaśniono, word, opcje zawijania wierszy.  
   
- [Porady: wyświetlanie numerów wierszy w edytorze](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Instrukcje: Wyświetlanie numerów wierszy w edytorze](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Wyjaśniono, jak włączyć numerów wierszy.  
   
- [Porady: wyświetlanie adresów URL jako łączy w edytorze](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Instrukcje: Wyświetlanie adresów URL jako linków w edytorze](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  Wyjaśniono, jak formatu adresów URL, aby były wyświetlane jako łącza.  
   
  [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)  

@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2edb49095bb71e71414e82855c1b3c39904a62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-incrementally"></a>Porady: kompilacja przyrostowa
 Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składników, które są nadal aktualne nie zostały odbudowane. Jeśli wszystkie elementy docelowe są tworzone za każdym razem każdej kompilacji będzie trwać bardzo długo. Aby włączyć kompilacji przyrostowej (kompilacji, w którym tylko tych obiektów docelowych, które nie zostały utworzone przed lub elementów docelowych, które są nieaktualne, są odbudować), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) można porównać sygnatury czasowe plików wejściowych ze znacznikami czasu plików wyjściowych i określanie, czy pominąć, kompilacji lub częściowo odbudować obiektu docelowego. Jednak musi być mapowanie jeden do jednego między wejścia i wyjścia. Aby włączyć elementy docelowe zidentyfikować ten bezpośredniego mapowania można użyć transformacji. Aby uzyskać więcej informacji na transformacje, zobacz [przekształca](../msbuild/msbuild-transforms.md).  
@@ -109,4 +110,4 @@ Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składnik
  [TARGET — Element (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Przekształca](../msbuild/msbuild-transforms.md)   
  [CSC — zadanie](../msbuild/csc-task.md)   
- [Vbc — zadanie](../msbuild/vbc-task.md)
+ [Vbc, zadanie](../msbuild/vbc-task.md)

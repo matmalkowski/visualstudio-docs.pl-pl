@@ -18,11 +18,12 @@ caps.latest.revision: "130"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3fec17bdde7f559cafa3d12833585ffa0c03ab7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55d2f0c75925cb3bc95242c72e6734759c611d2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Porady: konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Aby skonfigurować komputer programowanie, dzięki czemu można użyć narzędzia Microsoft Office developer tools w programie Visual Studio, postępuj zgodnie z instrukcjami w tym temacie. Musi mieć uprawnienia administracyjne na komputerze dewelopera, aby wykonać te czynności.  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
  [What's New in programowanie Office](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Porady: Instalowanie narzędzi Visual Studio Tools for Office Runtime pakietu redystrybucyjnego](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Porady: zainstalować podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

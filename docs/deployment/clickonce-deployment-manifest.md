@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4e0734079cc3a54666c7e9b736ec1f3284ad891a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7cca74c6b0b5f1c118bb1360184558fc383c40c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifest wdrożenia ClickOnce
 Manifest rozmieszczenia jest plik XML, który opisuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, w tym identyfikacji bieżącego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wersji aplikacji do wdrożenia.  

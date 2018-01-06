@@ -9,11 +9,12 @@ author: corob-msft
 ms.author: tglee
 manager: ghogen
 dev_langs: CPP
-ms.openlocfilehash: 730a7b6ce79f2844ca7dca618c684a35c3143944
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 

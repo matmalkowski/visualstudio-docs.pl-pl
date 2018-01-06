@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffbfb131eedb316c321bbf955ec7cc2951c71b8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90f3d2347f8bf37173f3eb257293b71d706eb0a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-in-vspackages"></a>Routing poleceń w VSPackages
 Polecenie jest skierowany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na podstawie kontekstu, w którym jest wykonywana. W kontekście początkowej na zewnątrz jest kierowany do globalnego kontekstu.  
@@ -31,12 +32,12 @@ Polecenie jest skierowany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs
  [Dostępność](../../extensibility/internals/command-availability.md)  
  W tym artykule omówiono routing poleceń.  
   
- [Poleceń i menu, które używają zestawów międzyoperacyjnych](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ [Polecenia i menu, w których używane są zestawy międzyoperacyjne](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
  W tym artykule omówiono zagadnienia dotyczące polecenia routingu między kodu zarządzanego i modelu COM.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)  
  W tym artykule omówiono modelu dla jak ustalić użytkownika wyboru kontekstu fokus w oknie.  
   
- [Polecenia, menu i pasków narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
+ [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
  Wyjaśnia sposób tworzenia interfejsu użytkownika, który zawiera menu, paski narzędzi i polecenia pola kombi.

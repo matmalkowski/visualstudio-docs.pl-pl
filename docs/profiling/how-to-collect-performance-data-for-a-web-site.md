@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff9927357b23ced05bbee6db354cbe8e82e62b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Porady: zbieranie danych wydajności dla witryny sieci Web
 Można użyć **kreatora osiągów** do gromadzenia danych wydajności [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web. Można profilu aplikacji sieci Web, która jest otwarta w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lub można profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] witryny sieci Web, który znajduje się na komputerze lokalnym i nie jest otwarty w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  

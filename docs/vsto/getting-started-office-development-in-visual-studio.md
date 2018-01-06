@@ -16,11 +16,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04e0419fe3c56ef51656aafb20f16d78045dabab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c50dd98c929e8875930b964f3e5f15218fb90174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>Wprowadzenie (Office Development w Visual Studio)
   Ta sekcja zawiera tematy, które ułatwiają rozpoczęcie pracy przy użyciu narzędzia Microsoft Office developer tools w programie Visual Studio.  
@@ -32,10 +33,10 @@ ms.lasthandoff: 10/31/2017
  [Rozwój rozwiązań Office ― omówienie &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Podano informacje związane z opracowywaniem rozwiązań pakietu Office w Visual Studio.  
   
- [Zmiany w projekcie projektów pakietu Office, które odnoszą się do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+ [Zmiany w projektach związanych z pakietem Office tworzonych pod kątem oprogramowania .NET Framework w wersji 4 lub 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
  W tym artykule opisano nowy projekt projektów pakietu Office przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym i istotne zmiany kodu w projektach pakietu Office, które można dokonać migracji do listy [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym.  
   
- [Funkcje dostępne w aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)  
+ [Funkcje dostępne w aplikacjach pakietu Office i typ projektu](../vsto/features-available-by-office-application-and-project-type.md)  
  W tym artykule opisano, które aplikacje i projekty muszą korzystać z funkcji programowanie pakietu Office, takich jak rozszerzalności wstążki, niestandardowe okienka zadań, okienka akcji i regionów formularzy.  
   
  [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
  [VBA i rozwiązania pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
  W tym artykule opisano względną sile Visual Basic dla aplikacji i narzędzi programowania pakietu Office w Visual Studio dla opracowywania rozwiązań pakietu Office.  
   
- [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
+ [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
  Zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
  [Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  W tym artykule opisano składniki rozwiązań pakietu Office i sposobu ich działania w czasie projektowania i w czasie wykonywania.  
   
- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
  Zawiera informacje o sposobie tworzenia projektu pakietu Office i skonfiguruj projekt w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)  

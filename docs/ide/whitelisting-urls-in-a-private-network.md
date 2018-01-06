@@ -11,11 +11,12 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87200019d6420ddafb28c18dc6b73f334cd80913
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 4a4093c7ebba74493a64833bfbf83ee6d28ef1ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whitelisting-urls-in-a-private-network"></a>Adresy URL listę dozwolonych podobnej w sieci prywatnej
 

@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Przy użyciu zapisanych danych funkcji IntelliTrace
 Przejdź do określonych punktów podczas wykonywania aplikacji po rozpoczęciu debugowania z pliku IntelliTrace (.iTrace) dziennika. Ten plik może zawierać zdarzenia dotyczące wydajności, wyjątki wątków, kroków testu, moduły i inne informacje o systemie, czy rekordów funkcji IntelliTrace podczas sekwencji aplikacji.  
@@ -194,7 +195,7 @@ Przejdź do określonych punktów podczas wykonywania aplikacji po rozpoczęciu 
     |**Identyfikator kategorii**|**Identyfikator kategorii**|  
     |**Kategoria**|**Kategoria**|  
     |**Obszar**|**Produktu**|  
-    |**Dane wyjściowe**|**Komunikat**|  
+    |**Output**|**Komunikat**|  
     |**Identyfikator korelacji**|**Identyfikator korelacji**|  
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Uruchom debugowanie z nieobsłużonego wyjątku  

@@ -18,11 +18,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79facc7d8232a1dac5adc5f9e57848d4a206ba82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 762a068858e7ad79c9a4fe9d02d1d868f150c5a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Porady: Programowane wyświetlanie dokumentów w podglądzie wydruku
   Rozwiązania generuje raport, można wyświetlić raport w trybie podglądu wydruku do użytkownika.  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Porady: programowane drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)   
  [Porady: programowane otwieranie istniejących dokumentów](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Porady: programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)  
+ [Instrukcje: Programowe tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md)  
   
   

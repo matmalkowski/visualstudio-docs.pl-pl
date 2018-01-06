@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.options.OutputWindow
 - VS.ToolsOptionsPages.Debugger.OutputWindow
@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9272df85e6761078b4c84024f3d5318b216a0de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 949dd44787684cea9c725ab7fe88462c1613faf4
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno danych wyjściowych, debugowanie, opcje ― Okno dialogowe
 Można określić, jakie typy informacji o debugowaniu są wyświetlane w **dane wyjściowe** okna. Aby wyświetlić te opcje, otwórz **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzeł, a następnie kliknij przycisk **okno danych wyjściowych**.  
@@ -40,4 +41,4 @@ Można określić, jakie typy informacji o debugowaniu są wyświetlane w **dane
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie, opcje — Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
- [Okno danych wyjściowych](../ide/reference/output-window.md)
+ [Okno Dane wyjściowe](../ide/reference/output-window.md)

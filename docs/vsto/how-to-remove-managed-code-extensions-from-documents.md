@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9da75468ae417bd835b457cdbd5219ef9462df1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Porady: usuwanie rozszerzenia kodu zarządzanego z dokumentów
   Programowo można usunąć zestawu dostosowania z dokumentu lub skoroszytu, który jest częścią dostosowanie poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. Użytkownicy mogą otwierać dokumenty i przeglądanie zawartości, ale nie będą wyświetlane wszystkie niestandardowego interfejsu użytkownika (UI) dodawanie do dokumentów i kod nie zostanie uruchomiona.  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Porady: dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
+ [Instrukcje: Dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   
   

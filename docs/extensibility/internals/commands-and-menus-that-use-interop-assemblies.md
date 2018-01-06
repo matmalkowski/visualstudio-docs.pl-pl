@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee9fa1faa52afb2ea6d8154b4767fcab2cee0981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d89b698a97d1793b3c5255966d9eca35ec1b78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Poleceń i menu, które używają zestawów międzyoperacyjnych
 Pakiet VSPackage, który implementuje poleceń menu i paska narzędzi przy użyciu zestawy międzyoperacyjne muszą:  
@@ -35,24 +36,24 @@ Pakiet VSPackage, który implementuje poleceń menu i paska narzędzi przy użyc
  Poniżej opisano sposób wykonywania tych zadań.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Określanie stanu polecenia przy użyciu zestawy międzyoperacyjne](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
+ [Określanie stanu polecenia przy użyciu zestawów międzyoperacyjnych](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
  W tym artykule opisano, jak pakiet VSPackage powiadamia IDE dotyczących poleceń, które obsługuje i czy są obecnie włączone.  
   
- [Kontrakty polecenia w zestawy międzyoperacyjne](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
+ [Kontrakty poleceń w zestawach międzyoperacyjnych](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
  Zawiera definicję kontraktu podstawowe polecenia używane przez wszystkie VSPackages wykonania polecenia przy użyciu zestawy międzyoperacyjne  
   
  [Implementacja](../../extensibility/internals/command-implementation.md)  
  Zawiera omówienie sposobu pakiet VSPackage wykonuje polecenie.  
   
- [Rejestrowanie zestawu międzyoperacyjnego programy obsługi poleceń](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
+ [Rejestrowanie programów obsługi zestawu międzyoperacyjnego](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
  Opisuje wpisy rejestru wymagane do powiadamiania IDE, że pakiet VSPackage zapewnia programem obsługi.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Dostępność](../../extensibility/internals/command-availability.md)  
  Zawiera opis kryteriów, które są używane IDE do ustalenia, jakie polecenia pakiet VSPackage są dostępne i jak obiekt obsługuje je.  
   
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Zawiera szczegółowe informacje o sposobie tworzenia interfejsu użytkownika, który używa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia pomocy technicznej.  
   
- [Routing poleceń w VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
+ [Routing poleceń w pakietach VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
  Omówienie procesu używany do tworzenia powiązań obiektu z żądaniem poprawne polecenie.

@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e288ccfd0e59f95c521d605c34e04240c94a1848
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e220692b263dbb35779c25ff0b189f219e98b842
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
 *Proces transformacji szablonu tekstowego* przyjmuje *szablonu tekstowego* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. *Aparat przekształcania szablonu tekstowego* formanty proces i aparat współdziała z hosta transformacji szablonu tekstowego i co najmniej jeden szablon tekstu *procesory dyrektywy* do ukończenia proces. Aby uzyskać więcej informacji, zobacz [proces transformacji szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/27/2017
  [Wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md)  
  Wyjaśniono, jak zarejestrować niestandardowego procesora dyrektywy.  
   
- [Wskazówki: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
+ [Przewodnik: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  Opisuje sposób tworzenia niestandardowego procesora dyrektywy, jak zarejestrować i przetestować procesora dyrektywy oraz format pliku wyjściowego w formacie HTML.

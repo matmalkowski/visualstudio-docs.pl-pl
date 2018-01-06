@@ -13,23 +13,24 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 121544050a4bc17bbf616b1a2c7b9a90f98f9c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13951a42b5a0fe6874c713bea3025e232b259b6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfejsy (debugowania programu Visual Studio)
 Metody należą alfabetycznie każdego interfejsu w tabeli treści i na stronie interfejsu w kolejności Vtable.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)  
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)  
  Opisuje interfejsy używane przez aparat debugowania.  
   
- [Interfejsy Obliczanie wyrażenia](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
+ [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
  Opisuje interfejsy, które obliczać wyrażeń w stosie wywołań w trybie przerwania.  
   
- [Symbol dostawcy interfejsów](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
+ [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
  Opisuje interfejsy, które implementuje dostawcę symbol do skojarzenia z typów identyfikatorów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

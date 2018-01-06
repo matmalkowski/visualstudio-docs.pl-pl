@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02f3d66b7d519546f1da89bb323ec9ab740628f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 44b938467454d73c460cc9276b46bc165d36bcee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-legacy-workflow-projects"></a>Tworzenie projektów przepływu pracy starsza wersja
 W tej sekcji opisano sposób tworzenia projektów przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] dostarczonych przez vs2010. Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] celów [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Zawiera informacje o sposobie używania szablonów projektu przepływu pracy, które są wymienione w poniższej tabeli.  
@@ -34,24 +35,24 @@ W tej sekcji opisano sposób tworzenia projektów przepływu pracy za pomocą st
 |Projekt pusty przepływu pracy|Pusty projekt do tworzenia aplikacji przepływu pracy.|  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: tworzenie projektów przepływu pracy (starsze)](../workflow-designer/how-to-create-workflow-projects-legacy.md)  
+ [Instrukcje: Tworzenie projektów przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-workflow-projects-legacy.md)  
   
- [Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsze)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)  
+ [Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)  
   
- [Porady: Tworzenie biblioteki sekwencyjnego przepływu pracy (starsze)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)  
+ [Instrukcje: Tworzenie biblioteki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)  
   
- [Porady: Tworzenie biblioteki działań przepływów pracy (starsze)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)  
+ [Instrukcje: Tworzenie biblioteki działań przepływów pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)  
   
- [Porady: tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)  
+ [Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)  
   
- [Porady: Tworzenie biblioteki przepływu pracy automatu stanów (starsze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)  
+ [Instrukcje: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)  
   
- [Porady: Tworzenie projektu pusty przepływu pracy (starsze)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)  
+ [Instrukcje: Tworzenie pustego projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)  
   
- [Porady: Konfigurowanie właściwości projektu przepływu pracy (starsze)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)  
+ [Instrukcje: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)  
   
- [Porady: Dodawanie nowego elementu do projektu przepływu pracy (starsze)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
+ [Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widoki sekwencyjnego przepływu pracy (starsze)](../workflow-designer/sequential-workflow-views-legacy.md)   
- [Windows przepływu pracy programu Visual Studio (starsze)](../workflow-designer/visual-studio-workflow-windows-legacy.md)
+ [Okna przepływów pracy programu Visual Studio (starsza wersja)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

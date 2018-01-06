@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy wskazówki w tej serii [tworzenia podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak utworzyć podstawowy projekt systemu. W tym przewodniku opiera się na system podstawowych projektów przez dodanie szablonu Visual Studio, strony właściwości i inne funkcje. Pierwszy wskazówki należy wykonać przed rozpoczęciem tego.  

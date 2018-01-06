@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff86fd14857206361a4bd9c15088cb3547200b28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-markers"></a>Znaczniki Concurrency Visualizer
 Narzędzia Concurrency Visualizer znaczniki są ikony, które reprezentują zdarzenia w aplikacji.  Zwykle aplikacja generuje te zdarzenia do wyznaczenia fazy lub wystąpień w aplikacji.  Zdarzenia mogą być generowane przez aplikację lub biblioteki i środowisk uruchomieniowych, który korzysta z aplikacji.  
@@ -43,15 +44,15 @@ Narzędzia Concurrency Visualizer znaczniki są ikony, które reprezentują zdar
 ## <a name="known-sources-of-markers"></a>Znane źródeł znaczników  
  U innego dostawcy ETW mogą generować znaczniki, tak długo, jak dostawca działa zgodnie z określonymi ograniczeniami. Można skonfigurować Concurrency Visualizer do nasłuchiwania źródła zdarzeń dodatkowe znaczniki. Domyślnie nasłuchuje go do tych źródeł zdarzeń:  
   
--   [Wizualizatora współbieżności SDK](../profiling/concurrency-visualizer-sdk.md)  
+-   [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)  
   
 -   [Biblioteka zadań równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [Biblioteka przepływu danych](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+-   [Przepływ danych](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
 -   [Równoległe LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [Współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime)  
+-   [Środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime)  
   
 -   [Obsługa znaczników scenariusza](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
@@ -66,4 +67,4 @@ Narzędzia Concurrency Visualizer znaczniki są ikony, które reprezentują zdar
  [Znaczniki typu Flaga](../profiling/flag-markers.md)   
  [Znaczniki komunikatu](../profiling/message-markers.md)   
  [Znaczniki zakresu](../profiling/span-markers.md)   
- [Wizualizowanie zdarzeń EventSource znaczników](../profiling/visualizing-eventsource-events-as-markers.md)
+ [Wizualizowanie zdarzeń EventSource w postaci znaczników](../profiling/visualizing-eventsource-events-as-markers.md)

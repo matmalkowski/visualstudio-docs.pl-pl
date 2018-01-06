@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 58f419d52d2d89f998f64e236cfc1f0053c9cfd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: e352baf834f026462cb35921f7f79e75b3aecd96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-picker"></a>Selektor wstawek kodu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zawiera Edytor kodu **selektor wstawek kodu** umożliwiająca, za pomocą kilku kliknięć myszą, aby wstawić gotowe bloki kodu do aktywnego dokumentu.  
@@ -57,4 +58,4 @@ Lista dostępnych dla wstawiania lub listy folderów zawierających wstawki kodu
 [Najlepsze rozwiązania dotyczące korzystania z wstawek kodu](../../ide/best-practices-for-using-code-snippets.md)   
 [Wstawki kodu IntelliSense języka Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
 [Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)   
-[Porady: Użyj Otocz wstawki kodu](../../ide/how-to-use-surround-with-code-snippets.md)
+[Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../../ide/how-to-use-surround-with-code-snippets.md)

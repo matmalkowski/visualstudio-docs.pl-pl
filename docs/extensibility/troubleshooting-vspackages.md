@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e409d31b4f1e16f735b9b4ef22d42dedccf55a9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c2fc24775cee3d40857166d3415f90b2adf756
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z VSPackages
 Poniżej przedstawiono typowe problemy, które mogą wiązać Ciebie z VSPackage i wskazówki dotyczące rozwiązywania problemów.  
@@ -127,4 +128,4 @@ Poniżej przedstawiono typowe problemy, które mogą wiązać Ciebie z VSPackage
  Upewnij się, że wpis InprocServer32 ma poprawną ścieżkę pliku dll pakiet VSPackage.  
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Pakiety VSPackage](../extensibility/internals/vspackages.md)

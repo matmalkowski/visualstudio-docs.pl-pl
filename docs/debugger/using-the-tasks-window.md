@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>Korzystanie z okna zadań
-**Zadania** podobny okna **wątków** okna, z wyjątkiem, że pokazywane są informacje o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), lub [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) obiektów zamiast każdy wątek. Podobnie jak wątków zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; wiele zadań mogą uruchamiać na tym samym wątku. 
+**Zadania** podobny okna **wątków** okna, z wyjątkiem, że pokazywane są informacje o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), lub [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) obiektów zamiast każdy wątek. Podobnie jak wątków zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; wiele zadań mogą uruchamiać na tym samym wątku. 
   
  W kodzie zarządzanym, można użyć **zadania** okno podczas pracy z <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów lub **await** i **async** słowa kluczowe (**Await** i **Async** w języka Visual Basic). Aby uzyskać więcej informacji o zadaniach w kodzie zarządzanym, zobacz [programowania równoległego](/dotnet/standard/parallel-programming/index).  
   

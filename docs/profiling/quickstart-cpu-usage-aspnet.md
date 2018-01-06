@@ -14,11 +14,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f159236a6ed35411745168e22fcb78afa8e0851
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: aspnet
+ms.openlocfilehash: 2d92c4fcdbc3c4af3269876836602025a4403463
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
 

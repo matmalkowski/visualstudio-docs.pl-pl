@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ad0906394552eb3af3293094301f94eee130e870
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Szablony projektów sieci web języka Python
 
@@ -67,13 +68,12 @@ Dowolnej właściwości lub środowiska zmiennej projektu można określić ze s
 **Projektu sieci Web Bottle** szablon zawiera schematyczny kod, który obsługuje niezbędną konfigurację. Zaimportowane bottle aplikacji nie może zawierać ten kod, jednak w takim przypadku następujące ustawienia uruchamiania aplikacji przy użyciu zainstalowana `bottle` modułu:
 
 - **Uruchom polecenie serwera** grupy:
-
-    - **Polecenie**: `bottle` (modułu)
-    - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Polecenie**: `bottle` (modułu)
+  - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **Debugowanie polecenia Server** grupy:
-    - **Polecenie**: `bottle` (modułu)
-    - **Argumenty**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Polecenie**: `bottle` (modułu)
+  - **Argumenty**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Opcja nie jest zalecana w przypadku używania programu Visual Studio dla debugowania.
 
@@ -82,12 +82,11 @@ Dowolnej właściwości lub środowiska zmiennej projektu można określić ze s
 Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narzędzia wiersza polecenia. Po utworzeniu aplikacji, można go zaimportować przy użyciu [z istniejących Python code](python-projects.md#creating-a-project-from-existing-files) szablonu. Po wykonaniu tej czynności, wybierz **ogólnego projektu sieci Web** dostosowywania do konfigurowania opcji. Te ustawienia założono, że ostrosłupa jest zainstalowany w środowisku wirtualnym na `..\env`.
 
 - **Debugowanie** grupy:
-
-    - **Port serwera**: 6543 (lub niezależnie od jest skonfigurowana w pliku ini)
+  - **Port serwera**: 6543 (lub niezależnie od jest skonfigurowana w pliku ini)
 
 - **Uruchom polecenie serwera** grupy:
-    - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
-    - Argumenty:`Production.ini`
+  - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
+  - Argumenty:`Production.ini`
 
 - **Debugowanie polecenia Server** grupy:
     - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
@@ -145,7 +144,7 @@ Ponadto możesz zalogować się za pośrednictwem [konsoli deweloperskiej](https
 
 Po zainstalowaniu rozszerzenia lokacji i wykonywania pip bezpośrednio przy użyciu konsoli programowanie jest obecnie, zalecanym sposobem instalowania pakietów. Przy użyciu pełną ścieżkę do języka Python jest ważna, lub może wykonywać niewłaściwy i nie jest zazwyczaj konieczne do użycia w środowisku wirtualnym. Na przykład:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

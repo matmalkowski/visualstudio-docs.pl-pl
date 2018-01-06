@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db531c35ea3bbb6176095f19897404d192096e22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 839d6d23e358cc3a35085d90abfa2efae11b22eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Ten interfejs reprezentuje kolekcję obiektów implementacja [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
@@ -40,7 +41,7 @@ IEnumDebugAdresses : IUnknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Dalej](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Pobiera zestaw dalej [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektów z wyliczenia.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Pobiera zestaw dalej [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektów z wyliczenia.|  
 |[Pomiń](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Pomija określoną liczbę wpisów.|  
 |[Resetowanie](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Resetuje wyliczenia do pierwszej pozycji.|  
 |[Klonowania](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Pobiera kopię w bieżącym wyliczeniu.|  

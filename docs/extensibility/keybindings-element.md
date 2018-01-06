@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff72a2a7acf63dea678aad0cda4cdca196ffc14f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a56d930094c7a29deb4720836ba6e5a7365cc9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybindings-element"></a>Element powiązania klawiszy
 Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań kluczy.  
@@ -47,14 +48,14 @@ Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[KeyBinding Element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|  
+|[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|  
 |[Powiązania klawiszy](../extensibility/keybindings-element.md)|Elementy KeyBinding grup i innych grup powiązań kluczy.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -69,4 +70,4 @@ Element powiązania klawiszy grupuje elementy KeyBinding i inne grupy powiązań
   
 ## <a name="see-also"></a>Zobacz też  
  [KeyBinding Element](../extensibility/keybinding-element.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4781830d73d36f981937a51e7f9a8bf86780198c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37da28d4c5db1e008af29c03997943720dcfbada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Porady: Dodaj węzły do obszaru roboczego z Eksploratora schematu XML
 W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md) z Eksploratora schematu XML. Można to osiągnąć poprzez przeciągnięcie i upuszczenie węzłów z Eksploratora schematu XML na widok projektanta XSD lub za pomocą menu kontekstowego Eksploratora schematu XML. Możesz również dodać węzłów, które są wyróżnione wyniku wyszukiwania wykonywane przy użyciu Eksploratora schematu XML. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie schematu ustawiony wyszukiwania wynik węzły do obszaru roboczego](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
@@ -61,4 +62,4 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
      `purchaseOrder` Węzła i `PurchaseOrderType` węźle są wyświetlane obok siebie na powierzchni projektu [widok wykresu](../xml-tools/graph-view.md). Ponieważ dwa węzły są powiązane ( `purchaseOrder` element jest `PurchaseOrderType` typu), Strzałka jest rysowany między nimi.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md)
+ [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)

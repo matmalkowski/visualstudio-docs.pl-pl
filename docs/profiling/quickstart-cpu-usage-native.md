@@ -15,11 +15,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2fcd8eee11876853ce51c154e740cdb91015662
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: 7540203c395d51d6372aad908ec028180f41bd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 

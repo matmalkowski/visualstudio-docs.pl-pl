@@ -14,11 +14,12 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Ułatwienia dostępu Visual Studio
 > [!TIP]
@@ -41,15 +42,15 @@ Oprócz funkcji ułatwień dostępu i narzędzi w systemie Windows następujące
 
  Więcej informacji znajduje się w następujących tematach:  
 
--   [Porady: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)  
+-   [Instrukcje: Ustawianie opcji ułatwień dostępu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)  
 
--   [Porady: używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
+-   [Instrukcje: Używanie wyłącznie klawiatury](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
 
 -   [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
 
--   [Ułatwienia dostępu porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)  
+-   [Porady i wskazówki związane z ułatwieniami dostępu](../../ide/reference/accessibility-tips-and-tricks.md)  
 
 -   [Porady: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
 
 ## <a name="see-also"></a>Zobacz też  
- [Produktów i usług firmy Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+ [Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

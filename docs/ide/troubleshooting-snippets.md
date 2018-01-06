@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80e5ba76a54b584e5eed74f507f1fb3b81e7f89e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc17b237d2bd38d146a70fb05c1c4f6a91f98b37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-snippets"></a>Rozwiązywanie problemów z wstawkami kodu programu
 Problemy z wstawki kodu IntelliSense są zazwyczaj spowodowane dwa problemy: uszkodzony fragment pliku lub Zła zawartość pliku fragment kodu.  
@@ -40,4 +41,4 @@ Problemy z wstawki kodu IntelliSense są zazwyczaj spowodowane dwa problemy: usz
 -   Zmienna może być niezdefiniowana. Niezdefiniowany zmiennych w fragment powinien być zaznaczony. Jeśli nie, które mogą być zgłaszane do twórcy fragment jako błąd.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wstawki kodu](../ide/code-snippets.md)
+ [Fragmenty kodu](../ide/code-snippets.md)

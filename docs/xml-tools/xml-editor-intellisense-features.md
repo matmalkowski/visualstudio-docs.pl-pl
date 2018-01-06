@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3690f3e8459821e0a927a351ee28f901b318deab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 Edytor XML zawiera pełną funkcje IntelliSense porównywalna innych edytorów języka podany w programie Visual Studio. W tej sekcji opisano, jak za pomocą funkcji IntelliSense języka definicji schematu XML (XSD) i dokumentów XSLT.  
@@ -121,4 +122,4 @@ Na przykład w przypadku wybrania `e:Book` element z listy IntelliSense, gdy pre
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)   
  [Korzystanie z IntelliSense](../ide/using-intellisense.md)   
- [Wskazówki: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+ [Przewodnik: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

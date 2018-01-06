@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99dff1fbe5638c81572f9b370f94c0337f9f7e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista zadań, środowisko, opcje — Okno dialogowe
 Ta strona Opcje umożliwia dodawanie, usuwanie i zmienić tokenów komentarzy, które generują **listy zadań** przypomnienia. Aby wyświetlić te ustawienia, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **środowiska** folderu i wybierz polecenie **listy zadań**.  
@@ -76,4 +77,4 @@ Ta strona Opcje umożliwia dodawanie, usuwanie i zmienić tokenów komentarzy, k
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z listy zadań](../../ide/using-the-task-list.md)   
  [Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)   
- [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)
+ [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Wydajność programu Visual Studio — porady i wskazówki
 
@@ -70,7 +71,7 @@ Jeśli użytkownik zwykle zaczyna brakować pamięci podczas sesji debugowania, 
 
     Aby wyłączyć narzędzia diagnostyczne, Uruchom sesję debugowania, wybierz **Narzędzia > Opcje > Włącz narzędzia diagnostyczne**i usuń zaznaczenie opcji.
 
-    Aby uzyskać więcej informacji, zobacz [narzędziach profilowania](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Aby uzyskać więcej informacji, zobacz [narzędziach profilowania](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Wyłącz narzędzia i rozszerzenia
 Niektóre narzędzia lub rozszerzenia może ją wyłączyć, aby zwiększyć wydajność.

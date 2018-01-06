@@ -14,18 +14,19 @@ ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7618537fcceb0527b29f5c40584fb69d7ddcca63
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Zainstaluj program Visual Studio 2017 na o niskiej przepustowości lub zawodnych w środowiskach sieci
 
 Zalecamy wypróbowanie Instalator sieci web programu Visual Studio&mdash;naszym zdaniem znajdziesz ją dobrej doświadczenie w większości sytuacji.
 
  > [!div class="button"]
- > [Pobierz program Visual Studio 2017 r.](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Pobierz program Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
 <br/>
 
 Jednak jeśli połączenie z Internetem jest niedostępne lub zawodnych, można użyć wiersza polecenia utworzyć lokalnej pamięci podręcznej plików trzeba wykonać instalację w trybie offline. Poniżej przedstawiono sposób.
@@ -92,7 +93,7 @@ Uruchom instalację za pomocą tego polecenia:
 | ----------------------- | --------------- |
 | cs-CZ | czeski |
 | de-DE | niemiecki |
-| EN US | angielski |
+| EN US | Angielski |
 | es-ES | Hiszpański |
 | fr-FR | Francuski |
 | IT-IT | Włoski |
@@ -112,9 +113,9 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
-* [Zainstaluj program Visual Studio](install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

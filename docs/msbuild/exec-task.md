@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7447f3f6fc9042bbcca5fc176e26200f4848a04c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0eadf1b5d94a136861d45275ebc5b94b6707cf14
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="exec-task"></a>Exec — Zadanie
 Uruchamia określony program lub polecenia przy użyciu określonych argumentów.  
@@ -36,8 +37,11 @@ Uruchamia określony program lub polecenia przy użyciu określonych argumentów
 |Parametr|Opis|  
 |---------------|-----------------|  
 |`Command`|Wymagane `String` parametru.<br /><br /> Polecenia do uruchomienia. Mogą to być polecenia systemowe, takie jak attrib, lub pliku wykonywalnego, takie jak program.exe, runprogram.bat lub setup.msi.<br /><br /> Ten parametr może zawierać wiele wierszy poleceń. Alternatywnie można umieścić wielu poleceń w pliku wsadowym i uruchomić go za pomocą tego parametru.|  
+|`ConsoleOutput`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Każdy element danych wyjściowych jest wiersza ze Standardowy strumień wyjściowy lub błąd standardowy wyemitowany przez narzędzie. To jest tylko przechwycone, jeśli `ConsoleToMsBuild` ma ustawioną wartość `true`.|
+|`ConsoleToMsBuild`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie będzie przechwytywać standardowy błąd i standardowe dane wyjściowe narzędzia i udostępnić je w `ConsoleOutput` parametru wyjściowego. Wartość domyślna to `false`.|
 |`CustomErrorRegularExpression`|Opcjonalne `String` parametru.<br /><br /> Określa wyrażenie regularne, używany do wierszy dodatkowych błędów w danych wyjściowych narzędzia. Jest to przydatne w przypadku narzędzia, które powodują powstanie niezwykle sformatowane dane wyjściowe.|  
 |`CustomWarningRegularExpression`|Opcjonalne `String` parametru.<br /><br /> Określa wyrażenie regularne, który służy do dodatkowych wierszy ostrzeżenie w danych wyjściowych narzędzia. Jest to przydatne w przypadku narzędzia, które powodują powstanie niezwykle sformatowane dane wyjściowe.|  
+|`EchoOff`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie zostanie Emituj rozwinięte formę `Command` w dzienniku MSBuild. Wartość domyślna to `false`.|
 |`ExitCode`|Opcjonalne `Int32` tylko do odczytu parametru wyjściowego.<br /><br /> Określa kod zakończenia zapewnianej przez wykonanego polecenia.|  
 |`IgnoreExitCode`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie ignoruje kod zakończenia zapewnianej przez wykonanego polecenia. W przeciwnym razie zwraca zadanie `false` Jeśli wykonanego polecenia zwraca kod zakończenia inną niż zero.|  
 |`IgnoreStandardErrorWarningFormat`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `false`, wybiera wiersze w danych wyjściowych, który jest zgodny z formatem standardowy błąd/ostrzeżenie i rejestruje je jako błędy lub ostrzeżenia. Jeśli `true`, wyłączyć to zachowanie. Wartość domyślna to `false`.|  

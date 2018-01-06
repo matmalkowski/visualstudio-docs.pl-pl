@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Porady: tworzenie modułu cieniującego gradientu geometrycznego
 Ten dokument pokazuje, jak używać projektanta programu do cieniowania i język programu do cieniowania wykres skierowane do tworzenia cieniowania geometrycznego w gradientu. Ten program do cieniowania skaluje stałej wartości kolorów RGB przez wysokość każdego punktu obiektu w przestrzeni świata.  
@@ -77,4 +78,4 @@ Ten dokument pokazuje, jak używać projektanta programu do cieniowania i język
  [Porady: Model terenu 3-w](../designers/how-to-model-3-d-terrain.md)   
  [Porady: tworzenie cieniowania tekstury skali szarości](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
- [Węzły projektanta programu do cieniowania](../designers/shader-designer-nodes.md)
+ [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

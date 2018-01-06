@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: fb1a9a4781d2ba486f2a9404c2c764a530cdf738
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e3fd48f33e5499f7a67aed02c7b732ebe6b3b7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowdecision-activity-designer"></a>Projektant działań elementu FlowDecision
 <xref:System.Activities.Statements.FlowDecision> Węzeł jest węzłem warunkowego udostępniający gałąź przepływu sterowania do jednej z dwóch rozwiązań alternatywnych, na podstawie tego, czy określony warunek jest spełniony. Jeśli przepływ wymaga więcej niż dwa oddziały, należy użyć <xref:System.Activities.Statements.FlowSwitch%601> zamiast tego.  

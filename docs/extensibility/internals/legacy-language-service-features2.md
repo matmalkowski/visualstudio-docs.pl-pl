@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c91beed050f665a73622eb929fbafc482a15a78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92c33d46f7bc58de1bee0b6c782165a6c7cd8d5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-features"></a>Funkcje usługi starszej wersji języka
 W poniższych sekcjach wymieniono niektóre funkcje usługi starszej wersji języka, które można podać.  
@@ -28,22 +29,22 @@ W poniższych sekcjach wymieniono niektóre funkcje usługi starszej wersji jęz
 >  Zaleca się zacząć Edytor nowy interfejs API tak szybko, jak to możliwe. Spowoduje to poprawić wydajność usługi języka i pozwala korzystać z nowych funkcji edytora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Kolorowania w starsza wersja usługi języka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
+ [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
  Opisuje sposób nadawania kolorowanie składni.  
   
- [Automatyczne formatowanie starsza wersja usługi języka](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
+ [Formatowanie automatyczne w starszej wersji usługi językowej](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
  Opisuje sposób nadawania, automatycznego formatowania.  
   
  [Informacje o parametrach w starsza wersja usługi języka](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Opisuje sposób nadawania Tooltip informacji parametru IntelliSense.  
   
- [Uzupełnianie składni w starsza wersja usługi języka](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
+ [Uzupełnianie instrukcji w starszej wersji usługi językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
  Opisuje sposób nadawania listy instrukcji IntelliSense i listy uzupełniania członków.  
   
- [Tekst zwijania i ukryte w starsza wersja usługi języka](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
+ [Zwijanie i tekst ukryty w starszej wersji usługi językowej](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
  Opisuje sposób nadawania zwijania czy ukryty tekst.  
   
- [Porady: Podaj rozszerzona obsługa zwijania w starsza wersja usługi języka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Instrukcje: zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Omówiono kroki w przypadku implementowania Obsługa debugera.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne

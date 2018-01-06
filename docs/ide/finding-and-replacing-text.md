@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Znajdowanie i zastępowanie tekstu
 Można znaleźć i Zastąp tekst w edytorze kodu programu Visual Studio i niektórych windows tekstowych danych wyjściowych takich jak **znaleźć wyników** systemu windows, za pomocą **Znajdź i Zamień** kontroli lub **znaleźć / Zastąp w plikach**. Można również Wyszukaj i Zamień w niektórych projektanta systemu windows, takich jak projektanta XAML i Projektant formularzy systemu Windows i okien narzędzi  
@@ -80,4 +81,4 @@ Można znaleźć i Zastąp tekst w edytorze kodu programu Visual Studio i niekt�
  Ustawia składnika można zdefiniować jako zakres wyszukiwania, wybierając **edytowanie zestawu składnika niestandardowe** znajdujący się obok **Szukaj w** pole. Można określić zainstalowanych .NET lub COM składników, projektów programu Visual Studio, które są uwzględnione w rozwiązaniu lub dowolnego zestawu lub typ biblioteki (.dll, .tlb, .olb, .exe i ocx). Aby przeszukać odwołania, zaznacz **Szukaj w odwołaniach** pole.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
+ [Używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)

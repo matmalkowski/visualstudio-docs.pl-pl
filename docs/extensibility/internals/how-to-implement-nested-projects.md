@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Porady: wdrożeniu zagnieżdżonych projektów
 Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków, które muszą zostać zaimplementowane. Projekt nadrzędny przejmuje niektóre z obowiązków tego samego, które rozwiązanie ma jego projektów zagnieżdżonych (podrzędny). Projekt nadrzędny jest kontenerem projektów podobne do rozwiązania. W szczególności istnieje kilka zdarzeń, które muszą zgłoszone przez rozwiązanie i projekty nadrzędnego do kompilacji hierarchia zagnieżdżonych projektów. Te zdarzenia są opisane w następujących proces tworzenia zagnieżdżonych projektów.  
@@ -81,17 +82,17 @@ Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków,
   
  Poniższe tematy dotyczy kilka pojęć wziąć pod uwagę podczas implementowania zagnieżdżonych projektów:  
   
- [Zagadnienia dotyczące zwalniania i przeładunku zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
+ [Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
   
- [Obsługa kreatora dla projektów zagnieżdżonych](../../extensibility/internals/wizard-support-for-nested-projects.md)  
+ [Obsługa kreatora dla zagnieżdżonych projektów](../../extensibility/internals/wizard-support-for-nested-projects.md)  
   
- [Implementowanie obsługi dla projektów zagnieżdżonego polecenia](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)  
+ [Implementowanie obsługi poleceń dla zagnieżdżonych projektów](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)  
   
- [Filtrowanie okno dialogowe AddItem dla projektów zagnieżdżonych](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
+ [Filtrowanie okna dialogowego Dodawanie elementu dla projektów zagnieżdżonych](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie elementów do Dodaj nowy element okien dialogowych](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Rejestrowanie szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)   
- [Kreator (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

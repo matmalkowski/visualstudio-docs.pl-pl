@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>Udostępnianie typów wizualnych projektantów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]musi mieć dostęp do definicje klas i typów w czasie projektowania, aby wyświetlić wizualnego projektanta. Klasy są ładowane z wstępnie zdefiniowane zestawy, które obejmują pełne zależności zestawu bieżącego projektu (odniesienia oraz ich zależności). Może być również wymagany do dostępu do klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe wizualnych projektantów.  
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt BuildManager — wprowadzenie](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implementowanie generatory pojedynczego pliku](../../extensibility/internals/implementing-single-file-generators.md)   
- [Rejestrowanie generatory pojedynczego pliku](../../extensibility/internals/registering-single-file-generators.md)
+ [Rejestrowanie generatorów jednoplikowych](../../extensibility/internals/registering-single-file-generators.md)

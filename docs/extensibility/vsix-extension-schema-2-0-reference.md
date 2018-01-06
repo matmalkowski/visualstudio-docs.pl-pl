@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1c81a34a290b34207f505d6b1ab46fa8b11cd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f0ac6fdedb5d65f40f718c568297dc0196c4537
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schemat manifestu jest otwarty. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie zrozumieć.  
@@ -217,4 +218,4 @@ Plik manifestu VSIX wdrożenia opis zawartości pakietu VSIX. Format pliku jest 
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wysyłanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+ [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

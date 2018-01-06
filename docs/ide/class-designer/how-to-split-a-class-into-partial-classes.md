@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f101d75770e344961dabc981be352387d60a5f6b
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 4d550b5b6df7b799f00b0043846be387cb6e6322
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Porady: podział klas na klasy częściowe (Projektant klas)
 Deklaracja klasy lub struktury między kilka deklaracji można podzielić przy użyciu `Partial` słów kluczowych w języku Visual Basic lub `partial` — słowo kluczowe języka Visual C#. Możesz użyć dowolnej liczby częściowe deklaracje ma dowolną liczbę plików innego źródła można dowolnie lub jeden plik źródłowy. Jednak wszystkie deklaracje muszą być w tym samym zestawie i tego samego obszaru nazw.  

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe4921e48c978b1073c985d4c11f11a14f3b351c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-context-objects"></a>Wybór obiektów kontekstu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) używa obiekt kontekstu globalnego wyboru w celu określenia, co powinno być wyświetlane w IDE. Każde okno w IDE może mieć własną obiekt kontekstu wyboru do kontekst zaznaczenia globalnych. IDE aktualizuje kontekst zaznaczenia globalnych z wartościami z okna, gdy okno ma fokus. Aby uzyskać więcej informacji, zobacz [opinii użytkownikowi](../../extensibility/internals/feedback-to-the-user.md).  

@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 625bc1301d4ea4a43fdd3dec7f28eb26171eb503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: deaed7caedfa825917d4d6740f3d1866f77da68e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Porady: uruchamianie aplikacji natywnej z profilerem do zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania narzędzia wiersza polecenia do uruchomienia aplikacji natywnej autonomicznej (klient) i zbierania danych współbieżności procesie i wątku.  
@@ -53,7 +54,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 2.  Uruchom aplikację docelowym, wpisując:  
   
-     **VSPerfCmd**[/uruchamianie](../profiling/launch.md) **:** `AppName` [`Options`]    
+     **VSPerfCmd**[/uruchamianie](../profiling/launch.md) **:** `AppName` [`Options`]  
   
      Można użyć tych opcjach w poniższej tabeli z **/uruchamianie** opcji.  
   

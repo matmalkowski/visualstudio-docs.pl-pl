@@ -21,14 +21,15 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Porady: oznaczanie kontrolek pojęciem bezpiecznych kontrolek
-  Dla bezpieczeństwa SharePoint oddzieli formantów sieci Web, które są chronione przed uruchomienie skryptu formantów sieci Web, które nie są. Chronione formantów, lub *bezpieczne kontrolki*, mogą uzyskiwać niezaufanym użytkownikom. Można oznaczyć formanty jako bezpieczne właściwości bezpieczne wpisy kontroli elementu projektu SharePoint lub w **projektanta pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz  
+  Dla bezpieczeństwa SharePoint oddzieli formantów sieci Web, które są chronione przed uruchomienie skryptu formantów sieci Web, które nie są. Chronione formantów, lub *bezpieczne kontrolki*, mogą uzyskiwać niezaufanym użytkownikom. Można oznaczyć formanty jako bezpieczne właściwości bezpieczne wpisy kontroli elementu projektu SharePoint lub w **projektanta pakietów** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł  
   
  [plik Web.config zmiana ustawień](http://go.microsoft.com/fwlink/?LinkId=178965) i [rejestrowanie w zestawie części sieci Web jako formant bezpieczny](http://go.microsoft.com/fwlink/?LinkId=171013).  
   
@@ -120,6 +121,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Opakowanie i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

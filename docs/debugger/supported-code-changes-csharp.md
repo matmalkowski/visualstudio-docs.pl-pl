@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: dotnet
+ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Obsługiwane zmiany kodu (C# i Visual Basic)
 Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metody. Większość zmian poza treść metody i kilka zmian w treści metody nie można zastosować podczas debugowania, jednak. Aby zastosować te zmiany nieobsługiwany, należy zatrzymać debugowanie i ponowne uruchomienie programu kodu.

@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Wskazówki: Wyświetlanie pasujących nawiasów klamrowych
 Można zaimplementować opartych na języku funkcje, takie jak parowanie nawiasów klamrowych Definiowanie nawiasów klamrowych, które chcesz dopasować, a następnie dodaniu tekstu znacznika do pasujących nawiasów klamrowych podczas karetka znajduje się na jednym z nawiasy klamrowe. Można zdefiniować nawiasy klamrowe w kontekście języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i dotyczą tagi tylko tego typu lub tagów można zastosować do istniejącego typu zawartości (na przykład "tekst"). Poniższe wskazówki pokazano, jak zastosować parowanie nawiasów klamrowych znaczniki, aby typ zawartości "text".  
@@ -125,4 +126,4 @@ Można zaimplementować opartych na języku funkcje, takie jak parowanie nawias�
 4.  Po umieszczeniu karetkę przed otwierający nawias klamrowy zarówno tego nawias klamrowy, jak i zamknij pasującego nawiasu klamrowego powinien być zaznaczony. Po umieszczeniu kursora zaraz po Zamknij nawias klamrowy zarówno tego nawias klamrowy, jak i pasujące otwierający nawias klamrowy, powinien być zaznaczony.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

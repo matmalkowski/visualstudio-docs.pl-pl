@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31c9c065f7e285e76d85bbcd901d3a9c23cba6a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 5607f5a2828b7589cbe803732262a52d9e760421
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Zbieranie alokacji pamięci .NET i okres istnienia obiektu
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Narzędzia profilowania obsługuje zbieranie alokacji pamięci .NET i danych o okresie istnienia obiektu, które pomaga wykrywać problemy z wydajnością związane z pamięcią w aplikacji.  

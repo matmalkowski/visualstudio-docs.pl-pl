@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1137c8c5c6041b41e8cbdc0e13d43b6188bd1b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-components"></a>Składniki debugera
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugera jest wdrażany jako pakiet VSPackage i zarządza nimi cała debugowanie. Sesja debugowania obejmuje następujące elementy:  
@@ -42,13 +43,13 @@ ms.lasthandoff: 10/31/2017
  ![Przegląd składników debugowania](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Debugowanie pakietu](../../extensibility/debugger/debug-package.md)  
+ [Pakiet debugowania](../../extensibility/debugger/debug-package.md)  
  W tym artykule omówiono pakietu debugowania, w którym jest uruchomiona w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłokę i obsługuje wszystkie interfejsu użytkownika.  
   
- [Menedżer debugowania procesu](../../extensibility/debugger/process-debug-manager.md)  
+ [Menedżer debugowania procesów](../../extensibility/debugger/process-debug-manager.md)  
  Zawiera omówienie funkcji PDM, czyli menedżera procesów, które może być debugowany.  
   
- [Menedżer sesji debugowania](../../extensibility/debugger/session-debug-manager.md)  
+ [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md)  
  Definiuje SDM, co zapewnia spójny obraz sesji debugowania do środowiska IDE. SDM zarządza DE.  
   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)  
@@ -60,10 +61,10 @@ ms.lasthandoff: 10/31/2017
  [Ewaluator wyrażeń](../../extensibility/debugger/expression-evaluator.md)  
  Objaśnienie jego przeznaczenia EE w czasie wykonywania.  
   
- [Dostawca — symbol](../../extensibility/debugger/symbol-provider.md)  
+ [Dostawca symboli](../../extensibility/debugger/symbol-provider.md)  
  W tym artykule omówiono, jak to zrobić, w implementacji dostawcy symbol ocenia zmiennych i wyrażeń.  
   
- [Typ wizualizatora i podglądu niestandardowego](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
+ [Wizualizator typów i przeglądarka niestandardowa](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
  W tym artykule omówiono co typ wizualizatora i podglądu niestandardowego są i jaką rolę ewaluatora wyrażenia odtworzenie w obu obsługi.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
  [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)  
  W tym artykule wyjaśniono, jak DE działa jednocześnie w ramach kodu, dokumentacji i konteksty Obliczanie wyrażenia. Opisuje, dla każdego z trzech kontekstów lokalizacji, pozycja lub oceny odpowiednie do niego.  
   
- [Debugowanie zadań](../../extensibility/debugger/debugging-tasks.md)  
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)  
  Zawiera łącza do różnych zadań debugowania, takie jak uruchamianie programu i obliczaniu wyrażeń.  
   
 ## <a name="see-also"></a>Zobacz też  

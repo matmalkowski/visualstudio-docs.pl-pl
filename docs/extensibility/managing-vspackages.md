@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>Zarządzanie VSPackages
 W większości przypadków nie musisz martwić się o zarządzanie VSPackages, ponieważ szablonów projektów i elementów Zarejestruj i automatycznie załadować pakietu. Jednak w niektórych sytuacjach może być konieczne Dowiedz się więcej bit, aby można było zarządzać pakietu.  
@@ -48,4 +49,4 @@ Rozszerzenia może wpłynąć na wydajność obciążenia uruchamiania i rozwią
  Dowiedz się techniki rozwiązywania problemów VSPackages, które nie są ładowane lub występują błędy: [VSPackages Rozwiązywanie problemów](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Pakiety VSPackage](../extensibility/internals/vspackages.md)

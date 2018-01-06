@@ -11,11 +11,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c3e5410769ba10a905c8116677ae5d03d0df656e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1612856fa4c098b5b7ff081020a84324bd5f8c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-coverage"></a>Pokrycie kodu — wyszukiwanie błędów
 Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotyczące zestawów natywnych i zarządzanych (pliki .dll i .exe). Jednak w niektórych przypadkach w oknie Wyniki pokrycia kodu jest wyświetlany błąd typu „Wygenerowano puste wyniki: …”. Może się tak zdarzyć z kilku przyczyn. Ten temat ma pomóc w rozwiązaniu tych problemów.  
@@ -146,4 +147,4 @@ Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotycząc
  Brak.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Korzystanie z pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+ [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

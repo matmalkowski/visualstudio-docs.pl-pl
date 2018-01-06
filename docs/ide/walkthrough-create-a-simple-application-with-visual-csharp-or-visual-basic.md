@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 95a7aacf57621b2ac02675811e346ceb2f6ca5ad
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Wskazówki: Tworzenie prostej aplikacji z użyciem Visual C# lub Visual Basic
 Wykonując tego przewodnika, użytkownik będzie zapoznanie się z wielu narzędzi, okna dialogowe i projektantów, których można używać podczas opracowywania aplikacji za pomocą programu Visual Studio. Będzie utworzyć prostą aplikację "Hello, World", projektowanie interfejsu użytkownika, Dodaj kod i debugowanie błędów w czasie Dowiedz się więcej o pracy w zintegrowane środowisko programistyczne (IDE).

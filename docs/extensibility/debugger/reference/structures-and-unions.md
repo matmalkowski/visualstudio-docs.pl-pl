@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2fc3225bda24a9ea0d759c1f684801723ea396f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1cae50d4ff122ebea1fa11291570ac23f556f6f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="structures-and-unions"></a>Struktury i Unii
 Poniżej przedstawiono struktur i Unii w Visual Studio SDK debugowania.  
@@ -181,7 +182,7 @@ Poniżej przedstawiono struktur i Unii w Visual Studio SDK debugowania.
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)  
  Opisuje właściwości wątku.  
   
- [TYPE_INFO —](../../../extensibility/debugger/reference/type-info.md)  
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
  Opisuje typ pola.  
   
  [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)  

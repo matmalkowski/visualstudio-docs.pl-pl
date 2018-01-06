@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 68270961af154e15e02f3426da98007edd631bc4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
 W tym samouczku Visual Basic (VB), zostanie utworzone i uruchomione kilka aplikacji w innej konsoli za pomocą programu Visual Studio oraz Eksplorowanie niektóre funkcje programu Visual Studio [zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
@@ -32,7 +33,7 @@ Visual Studio to zestaw zintegrowanych programowanie wydajności narzędzi dla d
 ### <a name="what-is-a-console-app"></a>Co to jest aplikacja konsoli?
 Aplikacja konsoli dane wejściowe i alias wyświetla dane wyjściowe w oknie wiersza polecenia konsoli.
 ### <a name="what-is-net-core"></a>Co to jest oprogramowanie .NET Core?
-Oprogramowanie .NET core to ewolucyjny następny krok programu .NET Framework. W przypadku, gdy programu .NET Framework zezwalały na udostępnianie kodu w językach programowania, .NET Core dodaje umożliwiają udostępnianie kodu na platformach lepszy, jest typu open source. (.NET Framework i .NET Core obejmuje bibliotek wbudowane funkcje, jak również środowisko uruchomieniowe języka wspólnego (CLR), która działa jako maszynę wirtualną do uruchamiania kodu).
+Oprogramowanie .NET core to ewolucyjny następny krok programu .NET Framework. Gdzie programu .NET Framework zezwalały na udostępnianie kodu w językach programowania .NET Core dodaje umożliwiają udostępnianie kodu na platformach. Nawet lepiej jest typu open source. (.NET Framework i .NET Core obejmuje bibliotek wbudowane funkcje, jak również środowisko uruchomieniowe języka wspólnego (CLR), która działa jako maszynę wirtualną do uruchamiania kodu).
 
 ## <a name="start-developing"></a>Rozpocząć tworzenie
 Czy chcesz rozpocząć tworzenie? Chodźmy!
@@ -70,7 +71,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
 
 1. Jeśli go nie jest jeszcze otwarty, następnie otwórz Twojej *WhatIsYourName* projektu.
 
-2. Wprowadź poniższy kod Visual Basic natychmiast po nawiasie otwierającym, który następuje `Sub Main(args As String())` wierszu i przed pierwszym zamykający nawias kwadratowy:
+2. Wprowadź poniższy kod Visual Basic natychmiast po nawiasie otwierającym, który następuje `Sub Main(args As String())` wierszu i przed `End Sub` wiersza:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")

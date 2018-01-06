@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24fd3c3a0ffb537c63346ef867a2a43481acfa9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Dodawanie katalogów do okna dialogowego Nowy projekt
 Podczas tworzenia nowych typów projektów, możesz również zarejestrować nowy katalog w **nowy projekt** się okno dialogowe zawierające je do użycia jako szablon. W poniższym przykładzie wyjaśniono, jak zarejestrować nowego katalogu, znanej także jako węzeł. W tym przykładzie szablony udostępniane przez pakiet VSPackage CLSID_Package są rejestrowane. W rezultacie, z lewej strony **nowy projekt** okno dialogowe oferuje dodanego węzła o nazwie ustaleniami Folder_Label_ResID zasobów. Ten zasób jest ładowany z pakiet VSPackage satelitarnej biblioteki DLL.  
@@ -50,4 +51,4 @@ NoRemove NewProjectTemplates
 ## <a name="see-also"></a>Zobacz też  
  [Rejestrowanie szablony projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Dodawanie elementów do Dodaj nowy element okien dialogowych](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Dodawanie katalogów do dodania okno dialogowe Nowy element](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [Dodawanie katalogów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

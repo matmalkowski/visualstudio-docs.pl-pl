@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a16c564b39afdc2ec3cf3e15883fc05b2a13f5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: add11e32bfdac58d0fc2f057a1ce72e0aece3c7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Porady: dodawanie formantów do widoku zakulisowego
   Projektant wstążki umożliwia dodawanie formantów do menu dostępnym po kliknięciu **pliku** kartę po uruchomieniu aplikacji, kontrolek, które dodajesz do **pliku** karta jest wyświetlana grupa o nazwie  **Dodatki**.  
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/31/2017
  [Projektant wstążki](../vsto/ribbon-designer.md)   
  [XML wstążki](../vsto/ribbon-xml.md)   
  [Porady: wprowadzenie do dostosowywania wstążki](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą Projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 Skorzystaj z poniższych linków, aby uzyskać informacje o technologii, które obsługują dostępny projektu, a także wskazówki i przykłady rozwoju witryny sieci Web i aplikacje dostępne w systemie Windows. Ogólne informacje o ułatwieniach dostępu można znaleźć w [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
@@ -57,4 +58,4 @@ Skorzystaj z poniższych linków, aby uzyskać informacje o technologii, które 
 -   **Sieci Web inicjatywy ułatwień dostępu w sieci World Wide Web konsorcjum W3C** tej witryny sieci Web zawiera wytyczne i techniki rozwoju dostępnej witryny sieci Web. Aby uzyskać więcej informacji, zobacz [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+ [Ułatwienia dostępu w Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

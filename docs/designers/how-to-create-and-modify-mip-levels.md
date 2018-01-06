@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18f7aa6c48b0f1deebd292193d46119e8a97c4b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fbc385f5bf00d8e54aadc21162a9174be71d416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Porady: tworzenie i modyfikacja poziomów MIP
 W tym dokumencie przedstawiono sposób użycia **edytor obrazów** do generowania i zmodyfikować *poziomów Mipmapy* dla przestrzeni tekstury elementu szczegóły na poziomie (LoD).  
@@ -45,4 +46,4 @@ W tym dokumencie przedstawiono sposób użycia **edytor obrazów** do generowani
 >  Jeśli nie ma potrzeby modyfikowania zawartość poszczególnych poziomów Mipmapy — jak może osiągnąć niektórych skutków — zaleca się generowanie mipmapy z tekstury źródło w czasie kompilacji. Pomaga to zapewnić, że poziomów Mipmapy pozostają zsynchronizowane z tekstury źródła, ponieważ modyfikacje poziom Mipmapy nie są przenoszone na innych poziomach automatycznie. Aby uzyskać więcej informacji na temat generowania mipmapy w czasie kompilacji, zobacz [porady: eksportowanie tekstury tego mipmapy zawiera](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie podstawowego tekstury](../designers/how-to-create-a-basic-texture.md)
+ [Instrukcje: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ac8580a1b930d4ad18db9eebb275e4eb67d80c62
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Polecenia&gt; elementu (programu inicjującego)
 `Commands` Testy opisanego przez elementy podrzędne implementuje element `InstallChecks` elementu i oświadcza, które pakiety [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programu inicjującego należy zainstalować, jeśli test zakończy się niepowodzeniem.  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/27/2017
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Reboot`|Opcjonalny. Określa, czy jeśli żadnych pakietów, zwróci kod zakończenia ponownego uruchomienia komputera należy ponownie uruchomić system. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Defer`. Ponowne uruchomienie jest odroczona do przyszłości.<br /><br /> `Immediate`. Powoduje natychmiastowego ponownego uruchomienia, jeśli jeden z pakietów zwrócony kod zakończenia ponownego uruchomienia.<br /><br /> `None`. Powoduje, że żądania ponownego uruchomienia mają być ignorowane.<br /><br /> Wartość domyślna to `Immediate`.|  
+|`Reboot`|Opcjonalny. Określa, czy jeśli żadnych pakietów, zwróci kod zakończenia ponownego uruchomienia komputera należy ponownie uruchomić system. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Defer`., Ponowne uruchomienie jest odroczona do przyszłości.<br /><br /> `Immediate`., Powoduje natychmiastowego ponownego uruchomienia, jeśli jeden z pakietów zwrócony kod zakończenia ponownego uruchomienia.<br /><br /> `None`., Powoduje, że żądania ponownego uruchomienia mają być ignorowane.<br /><br /> Wartość domyślna to `Immediate`.|  
   
 ## <a name="command"></a>Polecenie  
  `Command` Element jest elementem podrzędnym `Commands` elementu. A `Commands` element może mieć co najmniej jeden `Command` elementów. Element ma następujące atrybuty.  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/27/2017
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Value`|Wymagany. Wartość kodu zakończenia, do której należy `ExitCode` element ma zastosowanie.|  
-|`Result`|Wymagany. Sposób instalacji powinny reagować na ten kod zakończenia. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Success`. Flagi za pomyślnie zainstalowanym pakietem.<br /><br /> `SuccessReboot`. Flagi za pomyślnie zainstalowanym pakietem i instruuje ponownego uruchomienia systemu.<br /><br /> `Fail`. Flagi pakietu, ponieważ nie powiodło się.<br /><br /> `FailReboot`. Flagi pakietu, ponieważ nie powiodło się i instruuje ponownego uruchomienia systemu.|  
+|`Result`|Wymagany. Sposób instalacji powinny reagować na ten kod zakończenia. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Success`., Flagi za pomyślnie zainstalowanym pakietem.<br /><br /> `SuccessReboot`., Flagi za pomyślnie zainstalowanym pakietem i instruuje ponownego uruchomienia systemu.<br /><br /> `Fail`., Flagi pakietu, ponieważ nie powiodło się.<br /><br /> `FailReboot`., Flagi pakietu, ponieważ nie powiodło się i instruuje ponownego uruchomienia systemu.|  
 |`String`|Opcjonalny. Wartość do użytkownika w odpowiedzi na ten kod zakończenia.|  
 |`FormatMessageFromSystem`|Opcjonalny. Określa, czy użyć dostarczane przez system błąd odpowiadający kod zakończenia lub wartość podana w `String`. Prawidłowe wartości to `true`, co oznacza, że do użycia dostarczane przez system błąd i `false`, co oznacza, że użyć ciągu podał `String`. Wartość domyślna to `false`. Jeśli ta właściwość jest `false`, ale `String` nie jest ustawiony dostarczane przez system błąd będą używane.|  
   

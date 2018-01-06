@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>Importy edytora
 Liczba usług edytora, fabryki i brokerów, które dostarczają rozszerzenie różnego rodzaju dostępu do edytora core można zaimportować. Na przykład możesz zaimportować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> umożliwia z <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (Tego nawigatora pozwala na bufor tekstowy wykonywać różnego rodzaju wyszukiwania).  
@@ -44,19 +45,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Więcej przykładów dotyczących przy użyciu Importy zobacz następujące wskazówki:  
   
- [Wskazówki: Tworzenie symbolu margines](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Przewodnik: tworzenie symbolu na marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Wskazówki: Dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Przewodnik: dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Wskazówki: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
+ [Przewodnik: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Wskazówki: Wyświetlanie skrócone informacje etykietek narzędzi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Wskazówki: Wyświetlanie pomocy podpisu](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Przewodnik: wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Wskazówki: Wyświetlanie uzupełniania](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Przewodnik: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Wskazówki: Wyświetlanie sugestii żarówka](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [Przewodnik: wyświetlanie sugestii „żarówka”](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="importing-the-service-provider"></a>Importowanie dostawcy usług  
  Możesz również zaimportować <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (znaleziony w zestawie Microsoft.VisualStudio.Shell.Immutable.10.0) w taki sam sposób, aby uzyskać dostęp do usługi Visual Studio:  
@@ -123,4 +124,4 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Usługa języka i punkty rozszerzenia Edytora](../extensibility/language-service-and-editor-extension-points.md)
+ [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

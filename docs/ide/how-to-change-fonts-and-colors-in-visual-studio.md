@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ed7705b2c32b64ba242333ae68057c60ae2a870
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Porady: Zmiana czcionek i kolorów w Visual Studio
 
@@ -70,5 +71,5 @@ Można zmienić rozmiar czcionki i tekst dla wszystkich systemów windows i okna
 
 ## <a name="see-also"></a>Zobacz także
 
-[Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
-[Porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Ułatwienia dostępu w Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
+[Instrukcje: Zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

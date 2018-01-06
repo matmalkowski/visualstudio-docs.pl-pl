@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a34a964450931071a290764074f4e955fe19aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support"></a>Witryna sieci Web pomocy technicznej
 System projektu witryny sieci Web to system projektu, który tworzy projekty sieci Web. Projekty sieci Web z kolei tworzenie aplikacji sieci Web. Projekt witryny sieci Web generuje jednego pliku wykonywalnego dla każdej strony sieci Web, który jest skojarzony kod. Dodatkowe pliki wykonywalne zostaną wygenerowane na podstawie plików kodu źródłowego w folderze /App_Code.  
@@ -31,12 +32,12 @@ System projektu witryny sieci Web to system projektu, który tworzy projekty sie
 ```  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Szablony witryn sieci Web pomocy technicznej](../../extensibility/internals/web-site-support-templates.md)  
+ [Szablony pomocy technicznej dotyczącej witryn internetowych](../../extensibility/internals/web-site-support-templates.md)  
  Wyświetla listę szablonów, które służą do tworzenia nowych projektów witryny sieci Web i skojarzone elementy.  
   
- [Witryna sieci Web pomocy technicznej atrybutów](../../extensibility/internals/web-site-support-attributes.md)  
+ [Atrybuty pomocy technicznej dotyczącej witryn internetowych](../../extensibility/internals/web-site-support-attributes.md)  
  Przedstawia informacje o atrybuty rejestracji połączyć projekt witryny sieci Web, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Projekty sieci Web](../../extensibility/internals/web-projects.md)  
+ [Projekty internetowe](../../extensibility/internals/web-projects.md)  
  Zawiera omówienie programu dwa rodzaje projektów sieci Web, projektów witryny sieci Web i projekty aplikacji sieci Web.

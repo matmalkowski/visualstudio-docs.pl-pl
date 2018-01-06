@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2de242ed974716b0ba00918d30bc2679a36420fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a656baf951e573a5913960b19c1b583797de090f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-experimental-instance"></a>Eksperymentalne wystąpienie programu
 Do ochrony środowiska deweloperskiego Visual Studio z zastosowaniem aplikacji, które może go zmienić, VSSDK miejsce eksperymentalne używanej do wykonywania eksperymentów. Tworzenie nowej aplikacji za pomocą programu Visual Studio w zwykły sposób, ale Uruchom za pomocą tego eksperymentalne wystąpienie.  

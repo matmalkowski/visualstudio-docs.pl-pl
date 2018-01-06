@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 998ce86fdf714c65763748971e89fa45ec289a51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a29b9453fa7fd36564fef2956c1d41cc7f29cf07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directory-status-code-enumerator"></a>Moduł wyliczający kod stanu katalogu
 `SccDirStatus` Modułu wyliczającego zawiera nazwanych wartości stałej, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używany przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API dodatku typu Plug-in kontroli źródła.  

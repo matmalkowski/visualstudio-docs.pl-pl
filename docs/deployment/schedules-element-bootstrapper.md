@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Harmonogramy&gt; elementu (programu inicjującego)
 `Schedules` Element zawiera `Schedule` elementów, które definiują określonych godzinach, na które polecenia zdefiniowane przez `Command` element powinien zostać uruchomiony.  
@@ -66,4 +67,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [\<Produktu > — Element](../deployment/product-element-bootstrapper.md)   
- [Produkt i pakiet — odwołanie do schematu](../deployment/product-and-package-schema-reference.md)
+ [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)

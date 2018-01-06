@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43217eeac5722923daca289113f3f5407ae7c649
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Porady: Zarządzanie zawijaniem wierszy w Edytorze
 Można ustawić lub wyczyścić **zawijanie** opcji. Gdy ta opcja jest ustawiona, część długi wiersz, który rozciąga się poza bieżącym szerokość okna edytora kodu jest wyświetlany w następnym wierszu. Po wyłączeniu tej opcji, na przykład, aby ułatwić korzystanie z numerowanie wierszy można przewijać w prawo, aby wyświetlić punkty końcowe długie wiersze.  

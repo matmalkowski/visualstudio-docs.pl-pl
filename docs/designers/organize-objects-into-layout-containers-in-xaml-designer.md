@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5635f5da028283e6683548ec4388f7b3bfcbd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9c7b9c8f0f36435c2595a5df648daa54a614e278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 Załóżmy, którym chcesz obiekty wyświetlane na stronach; obiekty, takie jak obrazy, przycisków i wideo. Może być mają pojawiać się w wiersze i kolumny, w jednym wierszu w pionie lub poziomie lub w stałego położenia.  
@@ -35,13 +36,13 @@ Załóżmy, którym chcesz obiekty wyświetlane na stronach; obiekty, takie jak 
   
  Poniższe panele układu są najbardziej popularly używane, ale istnieją inne. Można je znaleźć wszystkie w **zasoby** panelu.  
   
--   [Siatki](#Grid)  
+-   [Siatka](#Grid)  
   
 -   [UniformGrid](#Uniform)  
   
--   [Kanwy](#Canvas)  
+-   [Kanwa](#Canvas)  
   
--   [Panel stosu](#Stack)  
+-   [StackPanel](#Stack)  
   
 -   [WrapPanel](#Wrap)  
   
@@ -50,7 +51,7 @@ Załóżmy, którym chcesz obiekty wyświetlane na stronach; obiekty, takie jak 
 ###  <a name="Grid"></a>Siatki  
  Rozmieść obiekty w wiersze i kolumny.  
   
- ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
+ ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441F-9136-98375fee87b7")  
   
  **Obejrzyj krótki klip wideo:** ![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [przy użyciu siatki](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
@@ -100,15 +101,15 @@ Załóżmy, którym chcesz obiekty wyświetlane na stronach; obiekty, takie jak 
   
  Następujące opcje układu znajdują się najbardziej popularly używane, ale istnieją inne. Można je znaleźć wszystkie w **zasoby** panelu.  
   
--   [Obramowania](#Border)  
+-   [Obramowanie](#Border)  
   
--   [Menu podręczne](#Popup)  
+-   [Popup](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   
 -   [UniformGrid](#Uniform)  
   
--   [Viewbox](#View)  
+-   [Okno widoku](#View)  
   
 ###  <a name="Border"></a>Obramowania  
  Utwórz obramowanie, tło lub oba elementy wokół obiektu. Można dodać tylko jeden obiekt do **obramowania**. Jeśli chcesz zastosować obramowania i tło więcej niż jeden obiekt, należy dodać panelu układu **obramowania**. Następnie należy dodać obiekty do tego panelu lub formantu.  

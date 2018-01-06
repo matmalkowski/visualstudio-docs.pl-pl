@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9687e4f0be16fb42f13c6f9dd20a2cb39be50cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00716142e7f91d01fbc81c5d25b378065cb44f92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Za pomocą Menedżera tekstu do monitorowania ustawień globalnych
 W przypadku zastosowania edytora core, należy monitorować zmiany wprowadzone w ustawieniach globalnych, ponieważ te zmiany mogą wpłynąć na wystąpienie edytora. Można śledzić zmiany przez nasłuchiwanie zdarzeń zgłaszanych przez Menedżera tekstu. Na przykład po określeniu globalne preferencji wygląd i zachowanie składnika w edytorze podstawowe, takie jak jego obiekt danych dokumentu Menedżera tekstu przechowuje te informacje i przesyła je do wszystkich klientów, których dotyczy.  

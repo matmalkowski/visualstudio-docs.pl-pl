@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db8a6cd6832b2fa427cea539bc03add5d330e06e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a9d9331e8767c4d815a6f62b7952414ced966d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-toolbar"></a>Spy++ — Pasek narzędzi
 Pasek narzędzi pojawia się poniżej paska menu w programie Spy ++. Umożliwia wyświetlanie lub ukrywanie paska narzędzi na **widoku** menu, kliknij przycisk **narzędzi**.  
@@ -46,4 +47,4 @@ Pasek narzędzi pojawia się poniżej paska menu w programie Spy ++. Umożliwia 
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
  [Widoków Spy ++](../debugger/spy-increment-views.md)   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

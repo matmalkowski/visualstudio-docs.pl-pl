@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Poradnik: Oglądanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 Po utworzeniu projektu w programie Visual Studio IDE, można przejrzeć informacje o tej kompilacji w **dane wyjściowe** okna. Za pomocą tych informacji, można na przykład rozwiązać niepowodzenie kompilacji. Dla projektów C++ można również wyświetlić tych samych informacji w pliku txt, który został utworzony i zapisany automatycznie. Dla kodu zarządzanego projektów, można skopiować i wkleić informacje z **dane wyjściowe** okna do .txt plik i zapisać ją samodzielnie. Umożliwia także IDE do określenia, jakie informacje mają być wyświetlane o każdej kompilacji.  
@@ -59,4 +60,4 @@ Po utworzeniu projektu w programie Visual Studio IDE, można przejrzeć informac
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)

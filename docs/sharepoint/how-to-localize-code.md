@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c283f8e2b73fdb4ba44322ca09f8fb436d729ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4e920074f6f771c2b8e5a78b128bf3b1f096d77e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-code"></a>Porady: lokalizowanie kodu
   Niezlokalizowany kodzie użyto wartości ciągu ustalony. Do localize — ciągi kodu, zastąp je z wywołań <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, czyli metody, która odwołuje się do zlokalizowanych zasobów.  
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
  [Lokalizowanie rozwiązań SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
  [Porady: Lokalizowanie funkcji](../sharepoint/how-to-localize-a-feature.md)   
  [Porady: Lokalizowanie znacznika ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Porady: Dodawanie pliku zasobów](../sharepoint/how-to-add-a-resource-file.md)  
+ [Instrukcje: Dodawanie pliku zasobu](../sharepoint/how-to-add-a-resource-file.md)  
   
   

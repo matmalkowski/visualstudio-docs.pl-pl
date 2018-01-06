@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba6952bce6d99149f2a8f18b7d2eac12cbd08761
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 57e3ceda07abadbf00e67e740bd276430157eabe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizard-interface-idtwizard"></a>Kreator interfejsu (IDTWizard)
 Zintegrowane środowisko programistyczne (IDE) używa <xref:EnvDTE.IDTWizard> interfejs do komunikacji z kreatorów. Kreatorzy musi implementować ten interfejs, aby mogło zostać zainstalowane w środowisku IDE.  
@@ -70,4 +71,4 @@ STDMETHOD(Execute)(THIS_
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)   
  [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)   
  [Kreatorzy](../../extensibility/internals/wizards.md)   
- [Kreator (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

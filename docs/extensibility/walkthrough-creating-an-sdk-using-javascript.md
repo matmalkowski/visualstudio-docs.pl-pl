@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a87ee7d1a48c313a29d00524d471b46ef572f4a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Wskazówki: Tworzenie SDK przy użyciu języka JavaScript
 Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visual Studio rozszerzenia (VSIX) przy użyciu języka JavaScript.  Instruktaż jest podzielona na następujące elementy:  
@@ -317,4 +318,4 @@ Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visua
 12. W aplikacji interfejsu użytkownika, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz  **=**  przycisku. Zostanie wyświetlone prawidłowego wyniku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md)
+ [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

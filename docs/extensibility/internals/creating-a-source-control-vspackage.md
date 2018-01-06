@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c3d414f1fcf6a7f4cd4155eb04e3696fb39740a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3fac86583126e94bcfaea65a82c7cf923275769
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-source-control-vspackage"></a>Tworzenie pakiet VSPackage kontroli źródła
 Ta dokumentacja zawiera łącza do Przegląd architektury pakietu kontroli źródła, zintegrowany z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], interfejs API, który jest zdefiniowany przez interfejsy do implementacji i usług, które mają być używane, a próbkę przedstawiono prosty źródła kontrolowanie wdrażania pakietu.  
@@ -40,8 +41,8 @@ Ta dokumentacja zawiera łącza do Przegląd architektury pakietu kontroli źró
  Opisuje strukturę pakiet VSPackage, który głęboką integrację musi zaimplementować pakiet kontroli źródła.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Tworzenie wtyczki kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-plug-in.md)  
  W tym artykule omówiono sposób tworzenia wtyczka do kontroli źródła dostarczającego funkcja kontroli źródła w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika kontroli źródła (UI).  
   
- [Kontrola źródła](../../extensibility/internals/source-control.md)  
+ [Kontrola kodu źródłowego](../../extensibility/internals/source-control.md)  
  W tym artykule omówiono opcje implementacji jako funkcja zintegrowanego z kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

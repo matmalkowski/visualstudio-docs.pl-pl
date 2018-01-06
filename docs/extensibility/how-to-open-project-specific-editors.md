@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>Porady: Otwórz edytory specyficznego dla projektu
 Jeśli plik elementu otwierany przez projekt leżą jest powiązana z określonego edytora dla tego projektu, projekt musi otworzyć plik za pomocą edytora określonego projektu. Plik nie może być delegowane do IDE mechanizm wybierania edytora. Na przykład zamiast za pomocą edytora standardowego mapy bitowej, możesz użyć tej opcji edytora specyficznych dla projektu do określenia Edytor określonych mapy bitowej, które rozpoznaje informacje w pliku, który jest unikatowy dla projektu.  
@@ -57,4 +58,4 @@ Jeśli plik elementu otwierany przez projekt leżą jest powiązana z określone
 ## <a name="see-also"></a>Zobacz też  
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
  [Porady: otwieranie standardowe edytory](../extensibility/how-to-open-standard-editors.md)   
- [Porady: Otwórz edytory dla otwarte dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Instrukcje: otwieranie edytorów dla otwartych dokumentów](../extensibility/how-to-open-editors-for-open-documents.md)

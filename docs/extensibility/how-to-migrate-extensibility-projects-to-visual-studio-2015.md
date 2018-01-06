@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Porady: Migracja projektów rozszerzalności programu Visual Studio 2015
 Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.  
@@ -45,7 +46,7 @@ Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.
   
 2.  Usuwanie zestawów odwołań zestawu VS SDK z projektu, wybierając je, kliknij prawym przyciskiem myszy i **Usuń**.  
   
-3.  Dodaj wersji NuGet zestawów odwołań zestawu VS SDK.  Nadal w **odwołania do Eksploratora rozwiązań** otworzyć węzła **Zarządzaj pakietami NuGet...**  okna dialogowego.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [interfejsu użytkownika Menedżera pakietów](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Zestawy odwołań zestawu SDK są publikowane w [nuget.org](http://www.nuget.org) przez [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Dodaj wersji NuGet zestawów odwołań zestawu VS SDK.  Nadal w **odwołania do Eksploratora rozwiązań** otworzyć węzła **Zarządzaj pakietami NuGet...**  okna dialogowego.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [interfejsu użytkownika Menedżera pakietów](/NuGet/Tools/Package-Manager-UI). Zestawy odwołań zestawu SDK są publikowane w [nuget.org](http://www.nuget.org) przez [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Przy użyciu **nuget.org** jako sieci **źródła pakietu**, wyszukaj nazwę pakietu NuGet odpowiadającego zestaw żądaną odwołania (na przykład: Microsoft.VisualStudio.Shell.14.0) i zainstaluj go w sieci Projekt.  NuGet mogą dodawać wiele zestawów odwołań w celu spełnienia zależności zestawu początkowej.  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf0dd4ab4a60dc7cfdfd351aee59c4942f75ef69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e44c9e7cc8aee41606366e1d4cb175a1855053f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: Podgląd i edycja kodu za pomocą definicji wglądu (Alt+F12)
 Można użyć **definicji wglądu** polecenie, aby wyświetlić i edytować kod bez przełączania od pisania kodu. **Podgląd definicji** i **przejdź do definicji** wyświetlane te same informacje, ale **definicji wglądu** zawiera go w oknie podręcznym i **przejdź do definicji** zawiera kod w oknie oddzielne kodu. **Przejdź do definicji** powoduje, że kontekst (oznacza to, że kod active okna, bieżącego wiersza, a pozycja kursora) przejść do definicji okna kodu. Za pomocą **definicji wglądu**, można wyświetlać i edytować definicję i poruszanie się w pliku definicji przy zachowaniu Twoje miejsce w oryginalnym pliku kodu.  

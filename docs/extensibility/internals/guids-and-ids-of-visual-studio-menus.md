@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identyfikatory GUID oraz identyfikatory menu programu Visual Studio
 W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup na pasku menu programu Visual Studio. Te wartości są definiowane w vsct pliki, które są instalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [IDE-Defined polecenia, menu oraz grup](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -39,7 +40,7 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup n
 |-----------|--------|  
 |Plik/Edit/widok|IDG_VS_MM_FILEEDITVIEW|  
 |Refaktoryzacja|IDG_VS_MM_REFACTORING:|  
-|Project|IDG_VS_MM_PROJECT|  
+|Projekt|IDG_VS_MM_PROJECT|  
 |Kompilacja|IDG_VS_MM_BUILDDEBUGRUN|  
 |Format/narzędzia|IDG_VS_MM_TOOLSADDINS|  
 |Społeczność okna/pomocy|IDG_VS_MM_WINDOWHELP|  
@@ -55,7 +56,7 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup n
 |Edytowanie|IDM_VS_MENU_EDIT|  
 |Widok|IDM_VS_MENU_VIEW|  
 |Refaktoryzacja|IDM_VS_MENU_REFACTORING|  
-|Project|IDM_VS_MENU_PROJECT|  
+|Projekt|IDM_VS_MENU_PROJECT|  
 |Kompilacja|IDM_VS_MENU_BUILD|  
 |Format|IDM_VS_MENU_FORMAT|  
 |Narzędzia|IDM_VS_MENU_TOOLS|  
@@ -143,7 +144,7 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup n
 |Rozwiązanie|IDG_VS_BUILD_SOLUTION|  
 |Wybór|IDG_VS_BUILD_SELECTION|  
 |Optymalizacja sterowana profilem|IDG_VS_PGO_SELECTION|  
-|Inne|IDG_VS_BUILD_MISC|  
+|Różne|IDG_VS_BUILD_MISC|  
 |Anuluj|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="tools-menu-groups"></a>Grupy Menu narzędzia  
@@ -218,4 +219,4 @@ W tym temacie wylicza wartości Identyfikator GUID i identyfikator menu i grup n
 ## <a name="see-also"></a>Zobacz też  
  [Identyfikatory GUID oraz identyfikatory pasków narzędzi Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
  [Identyfikatory GUID i identyfikatory poleceń programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

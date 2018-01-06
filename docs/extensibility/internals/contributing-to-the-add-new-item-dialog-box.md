@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13f4d254027fe168018fe597f772518bd8ac6b94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Współtworzenie Dodaj nowy element — okno dialogowe
 Podtyp projektu zapewniają pełną nowy katalog elementów dla **Dodaj nowy element** okno dialogowe rejestrując **Dodaj element** szablonów w obszarze `Projects` podklucza rejestru.  
@@ -45,4 +46,4 @@ Podtyp projektu zapewniają pełną nowy katalog elementów dla **Dodaj nowy ele
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [CATIDs dla obiektów, które są zazwyczaj używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

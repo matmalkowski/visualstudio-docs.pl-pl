@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a8949135bb7354ba0279ac1b6c2f0ba99fb1b2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 204038ac7a86c0b458ea08c2f4bd2c6a4dffe7cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-6-delete"></a>Testowanie obszaru 6: usuwanie
 Ten obszar testu wtyczkę kontroli źródła obejmuje akcje usuwania.  
@@ -32,7 +33,7 @@ Ten obszar testu wtyczkę kontroli źródła obejmuje akcje usuwania.
   
 -   Foldery  
   
--   Project  
+-   Projekt  
   
  W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **usunąć** projektu (spowoduje usunięcie plików na dysku). Każda akcja usuwa projektów lub elementów z **Eksploratora rozwiązań**.  
   
@@ -56,4 +57,4 @@ Ten obszar testu wtyczkę kontroli źródła obejmuje akcje usuwania.
 |Usuń plik z projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń plik z projektu.<br />4.  Powtórz kroki od 1 do 3 dla lokalnych projektu sieci Web (wykonuje różne ścieżki do kodu, ale ma tego samego interfejsu zewnętrznego i zachowanie).|Typowe oczekiwane zachowanie.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik po testowym dla plug-in kontroli źródła](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

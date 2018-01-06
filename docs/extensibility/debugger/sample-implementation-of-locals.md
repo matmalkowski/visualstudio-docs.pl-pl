@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c167c0a0f0a9dd0c14b92f27c0d9d862b5157072
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-implementation-of-locals"></a>Przykładowe zastosowanie zmiennych lokalnych
 > [!IMPORTANT]
@@ -48,19 +49,19 @@ ms.lasthandoff: 10/31/2017
 10. Visual Studio wywołania [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) dla każdego lokalnych można uzyskać nazwę, wartość oraz typu lokalnego. Są to informacje wyświetlane w **zmiennych lokalnych** okna.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Implementowanie GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)  
+ [Implementowanie metody GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)  
  W tym artykule opisano implementacja [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).  
   
  [Wyliczanie zmiennych lokalnych](../../extensibility/debugger/enumerating-locals.md)  
  W tym artykule opisano, jak aparat debugowania (DE) umożliwia wywołanie wyliczyć zmienne lokalne lub argumentów.  
   
- [Pobieranie właściwości lokalne](../../extensibility/debugger/getting-local-properties.md)  
+ [Pobieranie właściwości lokalnych](../../extensibility/debugger/getting-local-properties.md)  
  W tym artykule opisano, jak DE nawiązuje połączenie uzyskać nazwę, typ i wartość jednego lub więcej zmiennych lokalnych.  
   
- [Pobieranie wartości lokalnej](../../extensibility/debugger/getting-local-values.md)  
+ [Pobieranie wartości lokalnych](../../extensibility/debugger/getting-local-values.md)  
  W tym artykule omówiono uzyskiwania wartości lokalnej, która wymaga usługi określonego przez kontekst oceny obiektu wiążącego.  
   
- [Obliczenia zmiennych lokalnych](../../extensibility/debugger/evaluating-locals.md)  
+ [Ocenianie zmiennych lokalnych](../../extensibility/debugger/evaluating-locals.md)  
  W tym artykule wyjaśniono, jak są analizowane zmiennych lokalnych.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

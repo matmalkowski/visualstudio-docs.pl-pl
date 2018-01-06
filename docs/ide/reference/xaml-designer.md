@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xaml-designer-options-page"></a>Strona opcji projektanta XAML
 Użyj **projektanta XAML** Strona opcji, aby określić sposób formatowania elementów i atrybutów w dokumencie XAML. Aby otworzyć tę stronę, wybierz **narzędzia** menu, a następnie wybierz **opcje**. Aby uzyskać dostęp do **projektanta XAML** właściwości wybierz pozycję **projektanta XAML** węzła. Ustawienia projektanta XAML zostaną zastosowane po otwarciu dokumentu. Tak Jeśli wprowadzisz zmiany w ustawieniach, musisz zamknąć i ponownie otworzyć Visual Studio, aby zobaczyć zmiany.
@@ -46,7 +47,7 @@ To ustawienie służy do kontrolowania, kiedy i jak projektanta XAML jest wyświ
 |-|-|  
 |**Pionowe**|Źródło XAML jest wyświetlana po lewej stronie widoku XAML, a po drugiej stronie zostanie wyświetlona projektanta XAML.|  
 |**Poziomy**|Projektant XAML jest wyświetlana w górnej części widoku XAML i źródła XAML jest wyświetlana poniżej.|  
-|**Domyślne**|Dokument XAML używa orientację podziału zalecane dla platformy docelowej projektu dokumentu. Dla większości platform, co jest równoważne **poziome**.|  
+|**Default**|Dokument XAML używa orientację podziału zalecane dla platformy docelowej projektu dokumentu. Dla większości platform, co jest równoważne **poziome**.|  
 
 ## <a name="zoom-by-using"></a>Powiększenie przy użyciu
 Użyj tego ustawienia, aby określić, jak powiększenia działa podczas edytowania dokumentu XAML.

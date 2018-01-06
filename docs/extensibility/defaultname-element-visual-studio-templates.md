@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0e65c17eef2242a8732638be680889ea9b55374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6a20bd878e9c6f85e03ff0738ed2a92d274f6232
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName — Element (szablony Visual Studio)
 Określa nazwę, która spowoduje wygenerowanie system projektu programu Visual Studio dla projektów lub elementów, podczas jego tworzenia.  
@@ -85,4 +86,4 @@ Określa nazwę, która spowoduje wygenerowanie system projektu programu Visual 
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "93"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e4a536f99c81c19ecd22554896463a84715c7b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Language (.dgml) mapy. Na przykład można edytować elementy, aby określić niestandardowe style, przypisać właściwości i kategorii elementy kodu i linki, lub Podłącz dokumenty lub adresy URL do elementów kodu lub do łącza. Aby uzyskać więcej informacji o elementach DGML, zobacz [skierowane do Graph Markup Language) dokumentacja języka (DGML](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -645,4 +646,4 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
  [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)   
  [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)   
- [Dokumentacja directed Graph Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md)
+ [Dokumentacja języka DGML (Directed Graph Markup Language)](../modeling/directed-graph-markup-language-dgml-reference.md)

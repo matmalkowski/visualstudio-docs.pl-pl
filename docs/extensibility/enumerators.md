@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b9f71c83d70dc6daca7a3906b784d6babf8dea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7929ead4ced01561adb8c11dcaa56bc97f57884b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerators"></a>Modułów wyliczających
 Ta sekcja zawiera modułu wyliczającego typów danych w interfejsie API dodatku typu Plug-in kontroli źródła znajomość wtyczkę kontroli źródła.  
@@ -36,7 +37,7 @@ Ta sekcja zawiera modułu wyliczającego typów danych w interfejsie API dodatku
  Zawiera nazwanych wartości stałej, określające stan katalogu pod kontrolą źródła.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Tworzenie wtyczki kontroli kodu źródłowego](../extensibility/internals/creating-a-source-control-plug-in.md)  
  Definiuje zestaw SDK dodatku typu Plug-in kontroli źródła i opisano dołączone zasoby.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
@@ -48,5 +49,5 @@ Ta sekcja zawiera modułu wyliczającego typów danych w interfejsie API dodatku
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
  Zawiera opis funkcji wywołania zwrotnego, która jest używana przez [SccOpenProject](../extensibility/sccopenproject-function.md) wyświetlać komunikaty z kontroli źródła wtyczek za pomocą środowiska IDE.  
   
- [Plug-in kontroli źródła](../extensibility/source-control-plug-ins.md)  
+ [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)  
  Zawiera pełną listę wszystkich elementów w interfejsie API dodatku typu Plug-in kontroli źródła.

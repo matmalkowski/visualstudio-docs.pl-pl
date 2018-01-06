@@ -13,20 +13,21 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7768d6ba35c2116c658dcd1b7968080932b99543
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt docelowy jest zależna od dane wyjściowe inny element docelowy. Aby określić kolejność uruchamiania obiektów docelowych, można użyć tych atrybutów:  
   
--   `InitialTargets`. To `Project` atrybut określa elementy docelowe, które będą uruchamiane, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  
+-   `InitialTargets`., To `Project` atrybut określa elementy docelowe, które będą uruchamiane, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  
   
--   `DefaultTargets`. To `Project` atrybut określa, które cele są uruchamiane, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
+-   `DefaultTargets`., To `Project` atrybut określa, które cele są uruchamiane, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
   
--   `DependsOnTargets`. To `Target` atrybut określa elementy docelowe, które należy uruchomić, zanim będzie można uruchomić ten element docelowy.  
+-   `DependsOnTargets`., To `Target` atrybut określa elementy docelowe, które należy uruchomić, zanim będzie można uruchomić ten element docelowy.  
   
 -   `BeforeTargets`i `AfterTargets`. Te `Target` atrybuty określają, że ten element docelowy powinien być wykonywany przed lub po określone elementy docelowe (MSBuild 4.0).  
   
@@ -121,4 +122,4 @@ Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt
 7.  Po obiektu docelowego jest wykonywane lub pominięta, wszelkie docelowego, który jest wyświetlany w `AfterTargets` atrybutu jest uruchamiany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obiekty docelowe](../msbuild/msbuild-targets.md)
+ [Docelowe elementy](../msbuild/msbuild-targets.md)

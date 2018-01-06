@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c3c3b817975304a41181b5e346a32b0b95c4258e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: daa6b9b61083f61d631c6dd55265c338c08ff7f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Wskazówki: pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Dla wielu kultur przy użyciu zestawów satelickich można skonfigurować aplikacji formularzy systemu Windows. A *zestawu satelickiego* jest zestawu zawierającego zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.  

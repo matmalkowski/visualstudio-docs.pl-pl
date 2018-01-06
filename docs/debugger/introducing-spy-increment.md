@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69fbcb828f7fd534e9f086db43f2e63110794b9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introducing-spy"></a>Wprowadzenie programu Spy++
 Spy ++ umożliwia wykonywanie następujących zadań:  
@@ -57,4 +58,4 @@ Spy ++ umożliwia wykonywanie następujących zadań:
  [Porady: Uruchom narzędzie Spy ++](../debugger/how-to-start-spy-increment.md)   
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
  [Widoków Spy ++](../debugger/spy-increment-views.md)   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

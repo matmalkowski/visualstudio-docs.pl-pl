@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektura wtyczkę kontroli źródła
 Można dodać obsługę kontroli źródła do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) przez implementację i dołączanie wtyczka do kontroli źródła. IDE nawiązuje połączenie z kontrolą źródła wtyczki za pomocą dobrze zdefiniowany interfejsu API dodatku typu Plug-In kontroli źródła. IDE przedstawia funkcje kontroli wersji z systemu kontroli źródła, zapewniając interfejsu użytkownika (UI), która składa się z pasków narzędzi i poleceń menu. Wtyczka do kontroli źródła implementuje funkcje kontroli źródła.  
@@ -42,4 +43,4 @@ Diagram architektury przedstawiający interakcji między VS i kontroli źródła
 ## <a name="see-also"></a>Zobacz też  
  [Plug-in kontroli źródła](../../extensibility/source-control-plug-ins.md)   
  [Słownik](../../extensibility/source-control-plug-in-glossary.md)   
- [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Tworzenie wtyczki kontroli kodu źródłowego](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8429e7175ca6ab9a537952fb4a605f2281da69c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
 Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły podczas, gdy aplikacja była uruchomiona w obszarze sesję diagnostyki grafiki. Po rejestrowane, można sprawdzić dziennik w analizatora grafiki programu Visual Studio do diagnozowania problemów renderowania i wydajność.  
@@ -116,4 +117,4 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły pod
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Wskazówki: Debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

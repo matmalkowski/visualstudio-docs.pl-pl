@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e48fd86555a2bd110f2945063b23f03d0ce64e16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
 Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzie wyszukiwania można również Znajdź okno podrzędne wyłączone i wykrycia, które okno, aby wyróżnić, jeśli wyłączono podrzędnych przedziały czasu nakładają na.  
@@ -55,4 +56,4 @@ Narzędzia wyszukiwania w oknie dialogowym Znajdź okno
 ## <a name="see-also"></a>Zobacz też  
  [Widoków Spy ++](../debugger/spy-increment-views.md)   
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

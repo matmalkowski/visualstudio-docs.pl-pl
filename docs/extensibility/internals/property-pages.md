@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 484d53315f836117b69270a2f43b6b780733b9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages"></a>Strony właściwości
 Użytkownicy mogą wyświetlać i zmieniać właściwości zależne od konfiguracji i - niezależne projektu za pomocą stron właściwości. A **strony właściwości** przycisk jest aktywny w **właściwości** oknie lub na pasku narzędzi Eksplorator rozwiązań dla obiektów, które dostarczają widoku strony właściwości zaznaczonego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla projektów i rozwiązań. Jednak może również być udostępniane dla elementów projektu, które należy użyć właściwości zależne od konfiguracji. Ta funkcja może być używany, gdy pliki w projekcie wymagają ustawienia przełącznika kompilatora różnych kompilować się właściwie.  

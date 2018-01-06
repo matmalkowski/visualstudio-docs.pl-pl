@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 07beb4cfbc8acad0184ff93d12121699f3b27b03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa07e9e489dd6334e0075da4cd8c265e71aa1db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-command-line-reference"></a>Informacje w wierszu polecenia programu MSBuild
 Korzystając z programu MSBuild.exe tworzenia pliku projektu lub rozwiązania, mogą obejmować kilka przełączników, aby określić różne aspekty procesu.  

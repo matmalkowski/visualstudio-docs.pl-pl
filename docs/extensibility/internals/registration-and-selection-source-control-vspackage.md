@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 118f715e71f610d4e9dc2589767f6fb54ab4e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (VSPackage kontroli źródła)
 Pakiet VSPackage musi być zarejestrowana do udostępnienia go do kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Jeśli kontroli źródła więcej niż jeden pakiet VSPackage zostanie zarejestrowany, użytkownik może wybrać których pakiet VSPackage załadować w odpowiednim czasie. Zobacz [VSPackages](../../extensibility/internals/vspackages.md) więcej szczegółów na pakiety VSPackage i jak można je zarejestrować.  
@@ -86,4 +87,4 @@ Pakiet VSPackage musi być zarejestrowana do udostępnienia go do kontroli źró
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   
  [Funkcje](../../extensibility/internals/source-control-vspackage-features.md)   
  [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)   
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [Pakiety VSPackage](../../extensibility/internals/vspackages.md)

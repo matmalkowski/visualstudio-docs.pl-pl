@@ -14,11 +14,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4aed087f8280049018818e68f7db56960db7e690
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-hierarchy"></a>Hierarchia wywołań
 Hierarchia wywołań pozwala poruszać się po kodzie za pomocą wyświetlania wszystkich wywołań do i z wybranej metody, właściwości lub konstruktora. Dzięki temu można lepiej zrozumieć, jak przepływu kodu oraz ocena skutków zmiany kodu. Można sprawdzić kilka poziomów kod, aby wyświetlić złożonych łańcuchów wywołań metod i dodatkowe punkty wejścia do kodu, dzięki czemu można eksplorować wszystkie możliwe wykonanie ścieżki.  

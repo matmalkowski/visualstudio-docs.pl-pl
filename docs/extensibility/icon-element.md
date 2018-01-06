@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e8309e0052f6aa92a0069f0c2138880a7742de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2787798afe9554601d44a965ae3f12d5ebeab8bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element"></a>Icon — Element
 Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej.  Atrybut id zaznacza gniazda paska mapy bitowej. Ten element jest opcjonalny.  W przypadku pominięcia tego elementu wartość **guidOfficeIcon:msotcidNoIcon** będzie niejawnego.  
@@ -50,7 +51,7 @@ Atrybut guid tagu ikona jest identyfikatorem guid zdefiniowanych mapy bitowej.  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element przycisków](../extensibility/buttons-element.md)||  
+|[Buttons, element](../extensibility/buttons-element.md)||  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 741fc8ac1ed4e0cc449c8010b71bd13a484933a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 768082882c5ed180956b9bac28c20283404bb913
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć plików raportów, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modeli języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablony tekstowe będzie działać w trybie eksperymentalne podczas debugowania programu DSL, a także będzie działać na komputerze, na którym wdrożono DSL.  

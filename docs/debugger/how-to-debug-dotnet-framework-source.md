@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>Porady: debugowanie źródła .NET Framework
 Najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia nowe funkcje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] debugowania. Aby debugować [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] źródła, musi mieć dostęp do debugowania symbole dla kodu. Należy również włączyć wykonywanie krok po kroku do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] źródła.  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df87a8c890f5326e4b7b385016e17a432626ec92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97962debc24b9e8bff3d4daaa7b632db775c2476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="texture-nodes"></a>Węzły tekstury
 W projektancie programu do cieniowania węzłów tekstury przykładowe różne typy tekstury i mają geometrię i utworzyć lub Przekształć współrzędnych tekstury. Tekstury Podaj kolorów i oświetlenia szczegółów w obiektach.  

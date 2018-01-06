@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 820c5c48b9fc3b8d05d6e4d867e198ecc9237634
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb7ae3c6bee8b75fd99edc7da150e71ef7394d63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-legend"></a>Widok rdzeni — Legenda
 Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera kolumny, które zawierają liczby przełączeń kontekstu różnych rdzeniach, przełączeń kontekstu całkowitej i procent przełączeń kontekstu przecinających rdzenie. Wiersze w legendzie są sortowane według liczby przełączeń kontekstu różnych rdzeniach, w kolejności malejącej.  

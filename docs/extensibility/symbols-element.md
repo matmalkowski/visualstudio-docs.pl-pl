@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ef5b215e18163b10c8002affc959bd80b586cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a6065162ce5ba7c8f611be7a093bba7a0c55fca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-element"></a>Element symboli
 Definiuje identyfikatory GUID oraz identyfikatorów, które są używane przez inne elementy VSCT. Dla niezarządzanego kodu, te informacje zazwyczaj pochodzą z pliki nagłówkowe, które są określone przez [zewnętrzny Element](../extensibility/extern-element.md). Zarządzany kod używa elementów podrzędnych elementu symbole, aby zdefiniować te informacje.  
@@ -57,7 +58,7 @@ Definiuje identyfikatory GUID oraz identyfikatorów, które są używane przez i
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Element główny pliku vsct.|  
+|[CommandTable, element](../extensibility/commandtable-element.md)|Element główny pliku vsct.|  
   
 ## <a name="example"></a>Przykład  
   
@@ -73,4 +74,4 @@ Definiuje identyfikatory GUID oraz identyfikatorów, które są używane przez i
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

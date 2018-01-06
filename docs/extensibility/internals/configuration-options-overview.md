@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 Projekty w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może obsługiwać wiele konfiguracji, które mogą być tworzone, debugowany, uruchamiania i/lub wdrożone. Konfiguracja jest opisane nazwany zestaw właściwości, zwykle przełączniki kompilatora i lokalizacje plików typu kompilacji. Domyślnie nowe rozwiązania zawiera dwie konfiguracje Debug i Release. Te konfiguracje mogą być stosowane przy użyciu ustawień domyślnych, lub zmodyfikować, aby spełniały określone wymagania rozwiązania lub projektu. Niektóre pakiety mogą być tworzone na dwa sposoby: edytorem ActiveX lub jako składnik w miejscu. Projekty nie trzeba jednak obsługuje wiele konfiguracji. Jeśli jest dostępny tylko jedną konfigurację, że konfiguracja jest mapowany do wszystkich konfiguracji rozwiązania.  

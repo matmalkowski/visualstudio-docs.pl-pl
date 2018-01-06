@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68c2565540d8b22d659b40d5cab4a443cac6439f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1f3f21c13c30abafdb59e5e997210cd0d7b4fcfb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 Opcje tego okna dialogowego pozwala określić, jak wszystkie pliki z określonych rozszerzeń plików będzie obsługiwany przez program Visual Studio zintegrowane środowisko programistyczne (IDE). Dla każdego **rozszerzenia** że należy wprowadzić, możesz wybrać środowisko edycji. Dzięki temu można wybrać edytor IDE lub designer Otwórz dokumenty określonego typu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **Edytor tekstu** , a następnie wybierz węzeł **rozszerzenie pliku**.  
@@ -55,4 +56,4 @@ Opcje tego okna dialogowego pozwala określić, jak wszystkie pliki z określony
  Udostępnia tę samą listę jako **edytor**. Wybierz edytor IDE lub designer Otwórz dokumenty bez rozszerzeń plików.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)
+ [Instrukcje: Zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)

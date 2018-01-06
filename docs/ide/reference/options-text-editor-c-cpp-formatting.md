@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27f8a42d3293d3ffc786b8e1b67d2c569cfcd1ed
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: cplusplus
+ms.openlocfilehash: 5a96a88ca7edd21989764c843f57c01a7bf03b0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 Pozwala zmienić domyślne zachowanie Edytora kodu podczas programowania w C lub C++.  

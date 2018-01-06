@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Powiadomienia i postępu dla programu Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Systemy powiadomień  

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Kolorowania w starsza wersja usługi języka
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]przy użyciu usługi kolorowanie zidentyfikować elementy języka i wyświetlić je z określonego kolorów w edytorze.  
@@ -66,13 +67,13 @@ Proste colorizer modelu
 >  Oprócz używania colorizer usługi języka, pakiet VSPackage służy ogólnego przeznaczenia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tekstu kolorowania mechanizmu. Aby uzyskać więcej informacji na temat ten mechanizm, zobacz [przy użyciu czcionek i kolorów](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Implementowanie kolorowanie składni](../../extensibility/internals/implementing-syntax-coloring.md)  
+ [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)  
  W tym artykule omówiono, jak edytor uzyskuje dostęp do, kolorowanie składni i usługa języka musi wdrożenie do obsługi składni kolorowania usługi języka.  
   
- [Porady: używanie wbudowanych elementów Colorable](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Pokazuje, jak użyć wbudowanych elementów colorable z usługi języka.  
   
- [Niestandardowe elementy Colorable](../../extensibility/internals/custom-colorable-items.md)  
+ [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)  
  W tym artykule omówiono implementowania niestandardowych elementów colorable.  
   
 ## <a name="see-also"></a>Zobacz też  

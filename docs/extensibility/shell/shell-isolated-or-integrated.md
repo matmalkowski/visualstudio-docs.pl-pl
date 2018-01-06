@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92462699141f9d0a1af2d9eb461caadf4ee467ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 562cff752e38cfcfa224f54b4350317b76db4bec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (izolowany lub zintegrowany)
 Można utworzyć własne aplikacji opartych na Visual Studio w trybie zintegrowanym lub izolowanej. W trybie zintegrowanym oprócz aplikacji dostępnych wiele funkcji programu Visual Studio. W trybie izolowanym wybierz polecenie podzbiór funkcji programu Visual Studio, które chcesz dystrybuować wraz z własne rozszerzenie.  
@@ -59,4 +60,4 @@ Można utworzyć własne aplikacji opartych na Visual Studio w trybie zintegrowa
  Aby uzyskać więcej informacji na temat pakietów do dystrybucji, zobacz [Visual Studio Extensibility pliki do pobrania](http://go.microsoft.com/fwlink/?LinkID=119298) witryny sieci Web.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wysyłanie rozszerzeń programu Visual Studio](../shipping-visual-studio-extensions.md)
+ [Dostarczanie rozszerzeń programu Visual Studio](../shipping-visual-studio-extensions.md)

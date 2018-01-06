@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 22c307129e1c0295b041180f475c3d905cc43539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a1d5b2bbf218d35cf20638d865c6c78379c5f02b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Porady: określanie pierwszego obiektu docelowego do kompilacji
 Plik projektu może zawierać jeden lub więcej `Target` elementów, które określają jak projekt jest budowany. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Aparatu kompilacji pierwszy projektu go znajduje oraz wszelkie zależności, chyba że plik projektu zawiera `DefaultTargets` atrybutu `InitialTargets` atrybut lub element docelowy jest określona za pomocą wiersza polecenia **/ docelowy** przełącznika.  
@@ -77,4 +78,4 @@ Plik projektu może zawierać jeden lub więcej `Target` elementów, które okre
 ## <a name="see-also"></a>Zobacz też
   [MSBuild](../msbuild/msbuild.md)  
  [Obiekty docelowe](../msbuild/msbuild-targets.md)   
- [Porady: czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)
+ [Instrukcje: Czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)

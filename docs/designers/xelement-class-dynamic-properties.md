@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba611fe5582b65e314046b80fb15751a0152b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xelement-class-dynamic-properties"></a>Właściwości dynamiczne klasy XElement — klasa
 W tej sekcji opisano właściwości dynamicznych <xref:System.Xml.Linq.XElement?displayProperty=fullName> klasy.  
@@ -35,4 +36,4 @@ W tej sekcji opisano właściwości dynamicznych <xref:System.Xml.Linq.XElement?
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   
  [LINQ do XML właściwości dynamicznych](../designers/linq-to-xml-dynamic-properties.md)   
- [Właściwości dynamiczne XAttribute — klasa](../designers/xattribute-class-dynamic-properties.md)
+ [Właściwości dynamiczne klasy XAttribute](../designers/xattribute-class-dynamic-properties.md)

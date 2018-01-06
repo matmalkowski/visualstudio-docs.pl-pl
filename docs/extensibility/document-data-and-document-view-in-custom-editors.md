@@ -13,17 +13,18 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3506a6906c4223888a14132339cbe5499c92d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i Widok dokumentu w edytorach niestandardowych
 Niestandardowy Edytor składa się z dwóch części: obiekt danych dokumentu i obiektu widoku dokumentu. Jako nazwy sugerują, obiekt danych dokumentu reprezentuje danych tekst do wyświetlenia, a obiekt widoku dokumentu (lub "Widok") — co najmniej jeden windows wyświetlania obiektu danych dokumentu.  
   
 ## <a name="document-data-object"></a>Obiekt danych dokumentu  
- Obiekt danych dokumentu jest reprezentację danych tekstu w buforze tekstu. Jest obiekt COM, który przechowuje tekst dokumentu i inne informacje, obsługuje trwałości dokumentu i umożliwia jego danych z wielu widoków. Aby uzyskać więcej informacji, zobacz  
+ Obiekt danych dokumentu jest reprezentację danych tekstu w buforze tekstu. Jest obiekt COM, który przechowuje tekst dokumentu i inne informacje, obsługuje trwałości dokumentu i umożliwia jego danych z wielu widoków. Aby uzyskać więcej informacji, zobacz artykuł  
   
  <xref:EnvDTE80.Window2.DocumentData%2A>i [dokumentu Windows](../extensibility/internals/document-windows.md).  
   

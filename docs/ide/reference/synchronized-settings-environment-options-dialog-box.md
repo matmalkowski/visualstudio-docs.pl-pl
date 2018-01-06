@@ -13,14 +13,15 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d94a4c0cbb64385c726c4c5c41e41dc4611f08d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7e9748faab4819f6e079fdac68919c10931e3d3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="synchronized-settings-environment-options-dialog-box"></a>Zsynchronizowane ustawienia, środowisko, opcje — okno dialogowe
 Użyj tej strony, aby określić, czy do synchronizacji (są przekazywane) ustawienia na wielu komputerach. Aby uzyskać więcej informacji, zobacz [zsynchronizowane ustawienia](../../ide/synchronized-settings-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)
+ [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

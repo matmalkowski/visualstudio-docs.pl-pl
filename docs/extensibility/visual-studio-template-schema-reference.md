@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 803a5dd6b6f9153bb6bda6bf2a7a1f82e79d06b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb289f6ca65887433cbdb7dee65333ea31060097
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odwołanie do schematu szablonu Visual Studio
 Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate. Pliki te zawierają metadane szablonów projektów, szablonów elementów i zestawów początkowych.  
@@ -62,7 +63,7 @@ Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate.
 |[Typ projektu](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|  
 |[Promptforsaveoncreation —](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|  
 |[Providedefaultname —](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|  
-|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|  
+|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Zestaw|--|  
 |[Odwołania](../extensibility/references-element-visual-studio-templates.md)|Tematy pomocy|--|  
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Wersja|  
@@ -74,7 +75,7 @@ Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate.
 |[Supportslanguagedropdown —](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|  
 |[Supportsmasterpage —](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> Odwołania<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Projekt<br /><br /> Odwołania<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Nazwa<br /><br /> Opis<br /><br /> Ikona<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|  
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|  
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|  
@@ -84,4 +85,4 @@ Ten rozdział zawiera informacje o elementach języka XML w plikach .vstemplate.
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: tworzenie zestawów początkowych](../ide/how-to-create-starter-kits.md)
+ [Instrukcje: Tworzenie pakietów startowych](../ide/how-to-create-starter-kits.md)

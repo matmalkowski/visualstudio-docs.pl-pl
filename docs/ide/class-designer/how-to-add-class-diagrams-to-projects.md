@@ -15,11 +15,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8bf3d2259c225212781e2d31b9a714d86f60fdd7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: acd999878d112f236a1ee02f495fc9d10a9a735c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Porady: dodawanie diagramów klasy do projektu (Projektant klas)
 Projektowanie, edycji i klasy zrefaktoryzuj i innych typów, należy dodać diagram klas do projektu Visual C# .NET, Visual Basic .NET i C++. Do wizualizacji różnych części kodu w projekcie, należy dodać wiele diagramów klas do projektu.  

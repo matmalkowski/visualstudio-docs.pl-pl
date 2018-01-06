@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>Znajdź kodu za pomocą polecenia przejdź do  
 Visual Studio **przejdź do** poleceń wyszukiwania ukierunkowanych swój kod, aby szybko znaleźć określone elementy. Można przejść do określonego wiersza, typu, symbol, plików i element członkowski z prosty, ujednolicony interfejs. Ta funkcja istnieje w programie Visual Studio 2017 i nowszych.  
@@ -84,4 +85,4 @@ Okno Center   | Przenieś to okno do góry środka edytora kodu, zamiast prawym 
 
 ## <a name="see-also"></a>Zobacz też  
 [Nawigowanie po kodzie](../ide/navigating-code.md)  
-[Przejdź do definicji i definicji wglądu](../ide/go-to-and-peek-definition.md)  
+[Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)  

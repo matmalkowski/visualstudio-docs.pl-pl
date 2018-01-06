@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e890145199fe864d2f7b5010495375bfbc6cc094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Wskazówki: Dostosowywanie widoku tekstu
 Można dostosować widoku tekstu, zmieniając dowolne z następujących właściwości w jego format edytora mapy:  
@@ -94,4 +95,4 @@ Można dostosować widoku tekstu, zmieniając dowolne z następujących właści
 5.  Włącz widoczne odstępu. (Na **Edytuj** menu wskaż **zaawansowane** , a następnie kliknij przycisk **widoku biały znak**). Wpisz tekst niektóre karty. Czerwone strzałki, które reprezentują kartach powinien być wyświetlany.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Usługa języka i punkty rozszerzenia Edytora](../extensibility/language-service-and-editor-extension-points.md)
+ [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)

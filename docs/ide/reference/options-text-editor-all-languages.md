@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61b3ab54929cdd7e6a584737f8963302335c4fd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3ef5133f1d92d9f18a62117e40a0788766dfe439
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia dotyczą również inne edytory oparte na kodzie edytora, takiego jak projektanta HTML widoku źródła. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **Edytor tekstu** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.  
@@ -98,4 +99,4 @@ To ustawienie nie ma wpływu na kopiowania lub wycinania podczas wiersza nie jes
 ## <a name="see-also"></a>Zobacz też  
  [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)   
- [Korzystanie z IntelliSense](../../ide/using-intellisense.md)
+ [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

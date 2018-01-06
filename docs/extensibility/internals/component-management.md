@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73a3100252dd5ddfcebd791588a4041c8d588e8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 398986499732a36819808b07f05f7d6b46787a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="component-management"></a>Składnik zarządzania
 Jednostki zadań w Instalatorze systemu Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każda usługa WIC to podstawowa jednostka instalacji i zliczanie dla ustawień używające Instalatora Windows.  
@@ -52,4 +53,4 @@ Jednostki zadań w Instalatorze systemu Windows są określane jako składniki I
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybór między VSPackages udostępnionego i wersji](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
- [Scenariusze instalacji pakiet VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
+ [Scenariusze instalacji pakietu VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e3b99f769b92ddd9f44f2a95b122e5e388954aef
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>Funkcje elementów
 Począwszy od programu MSBuild 4.0, kod w zadań i elementów docelowych można wywołać funkcji element, aby uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i szybsze niż w pętli elementy.  

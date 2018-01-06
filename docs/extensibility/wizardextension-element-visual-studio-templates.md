@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41b5b3b786716603167b3917e5aa7b4a7ae14920
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb0922d0d3666d1bb00f01c0151dfa14c24a3931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension — Element (szablony Visual Studio)
 Zawiera elementy rejestracji dostosowywania Kreatora szablonu.  
@@ -48,7 +49,7 @@ Zawiera elementy rejestracji dostosowywania Kreatora szablonu.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Zestawu](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Określa nazwę lub silnej nazwy zestawu w globalnej pamięci podręcznej zestawów. Musi istnieć co najmniej jeden `Assembly` element `WizardExtension` elementu.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Określa nazwę lub silnej nazwy zestawu w globalnej pamięci podręcznej zestawów. Musi istnieć co najmniej jeden `Assembly` element `WizardExtension` elementu.|  
 |[Fullclassname —](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Pełna nazwa klasy, która implementuje `IWizard` interfejsu. Musi istnieć co najmniej jeden `FullClassName` element `WizardExtension` elementu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
@@ -94,4 +95,4 @@ Zawiera elementy rejestracji dostosowywania Kreatora szablonu.
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Korzystanie z kreatora z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

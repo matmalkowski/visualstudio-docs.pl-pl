@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6acbd33d04c939b95d16da4e0c8085681b602378
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: afaa64da38508ffcf55d86c3a6fe16bd0e884f7a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Używanie tematów w przepływach pracy (starsze)
 W tym temacie opisano sposób używania tematów w [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] podczas za pomocą starszego [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] którego element docelowy [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -33,4 +34,4 @@ W tym temacie opisano sposób używania tematów w [!INCLUDE[wf](../workflow-des
 ## <a name="see-also"></a>Zobacz też  
  [Okno dialogowe konfiguracji motywu (starsze)](../workflow-designer/theme-configuration-dialog-box-legacy.md)   
  [Kompozycje, projektanta przepływów pracy, opcje — Okno dialogowe (starsze)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
- [Za pomocą projektanta przepływów pracy starsza wersja](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Używanie starszej wersji Projektanta przepływu pracy](../workflow-designer/using-the-legacy-workflow-designer.md)

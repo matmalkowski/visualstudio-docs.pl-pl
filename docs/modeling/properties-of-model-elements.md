@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7c42f7a0a2a87aadc63f65240b981bc3e94c5417
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ef494d68ba8ce8134483f910bc7e6d984e4717c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-model-elements"></a>Właściwości elementów modelu
 Ta sekcja zawiera listę właściwości, które są wyświetlane w oknie właściwości po wybraniu elementu na diagramie definicji DSL lub w Eksploratorze DSL.  
@@ -25,6 +26,6 @@ Ta sekcja zawiera listę właściwości, które są wyświetlane w oknie właśc
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)  
   
- [Zastępowanie i rozszerzanie wygenerowane klasy](../modeling/overriding-and-extending-the-generated-classes.md)  
+ [Zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)  
   
- [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
+ [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22838f561793845c9b44e57631c46773b094c98b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Porady: konfigurowanie projektów do platform docelowych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Umożliwia konfigurowanie aplikacji pod kątem różnych platform, w tym platformach 64-bitowych. Aby uzyskać więcej informacji na 64-bitowej platformy obsługi w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zobacz [aplikacji 64-bitowych](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  

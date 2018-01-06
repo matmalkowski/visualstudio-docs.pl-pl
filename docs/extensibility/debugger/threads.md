@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 150e27c4b8df06784848829bfe713773cf9d48a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f611284584b091fca390f660b3e840f6cebe048c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads"></a>Wątki
 Pod względem architektury debugera **wątku**:  
@@ -35,4 +36,4 @@ Pod względem architektury debugera **wątku**:
  [Ramki stosu](../../extensibility/debugger/stack-frames.md)   
  [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
  [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
- [Menedżer sesji debugowania](../../extensibility/debugger/session-debug-manager.md)
+ [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md)

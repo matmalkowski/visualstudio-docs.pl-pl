@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd3f81580af908d06fe7389c04a6559d14f1075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b1a0f4175dc884283dcf92b7f6268a518cdaf0ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>Wywoływanie modeli obiektów SharePoint
   Po utworzeniu rozszerzeń dla narzędzi SharePoint w Visual Studio może być konieczne wywoływania interfejsów API programu SharePoint do wykonywania określonych zadań. Na przykład w przypadku utworzenia niestandardowego kroku wdrożenia dla projektów programu SharePoint, trzeba będzie wywoływać interfejsy API programu SharePoint do wykonania niektórych zadań w celu wdrożenia rozwiązania.  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Tworzenie polecenia SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Porady: wykonywanie polecenia SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
+ [Omówienie modelu programowania rozszerzeń narzędzi SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
   
   

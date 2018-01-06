@@ -18,11 +18,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20381a6db187536dc729c08bb046152a0489e6a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a57d625fcb87f5e101cc1e0f60b79a74c132b8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Porady: Programowane wyświetlanie komentarzy do arkusza
   Można programowo pokazywać i ukrywać komentarzy w arkuszach programu Microsoft Office Excel.  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Praca z arkuszami](../vsto/working-with-worksheets.md)   
  [Porady: programowane Dodawanie i usuwanie komentarzy do arkusza](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
- [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
+ [Przegląd obiektów hosta i kontrolek hosta](../vsto/host-items-and-host-controls-overview.md)  
   
   

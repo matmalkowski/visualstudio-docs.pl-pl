@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2393d254ee2864291a0a3ae5bbed6e78d80d3863
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff905ae4f280d106eea34d513af35ee3de663b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer-nodes"></a>Węzły Shader Designer
 Artykuły w tej sekcji dokumentacji zawierają informacje o różnych węzłach Projektant programu do cieniowania, które umożliwia tworzenie efektów grafiki.  
@@ -46,9 +47,9 @@ Artykuły w tej sekcji dokumentacji zawierają informacje o różnych węzłach 
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Węzły stałej](../designers/constant-nodes.md)|W tym artykule opisano węzły, które służą do reprezentowania wartości literałów i interpolowane informacji o stanie wierzchołków w obliczeniach cieniowania. Ponieważ wierzchołek stanu są interpolowane — i w związku z tym jest różne dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera innej wersji stałej.|  
-|[Parametr węzłów](../designers/parameter-nodes.md)|W tym artykule opisano węzły, które służą do reprezentowania pozycji aparatu fotograficznego, właściwości materiału oświetlenia parametry, czas i inne informacje stan aplikacji w obliczeniach cieniowania.|  
+|[Stałe węzły](../designers/constant-nodes.md)|W tym artykule opisano węzły, które służą do reprezentowania wartości literałów i interpolowane informacji o stanie wierzchołków w obliczeniach cieniowania. Ponieważ wierzchołek stanu są interpolowane — i w związku z tym jest różne dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera innej wersji stałej.|  
+|[Węzły parametrów](../designers/parameter-nodes.md)|W tym artykule opisano węzły, które służą do reprezentowania pozycji aparatu fotograficznego, właściwości materiału oświetlenia parametry, czas i inne informacje stan aplikacji w obliczeniach cieniowania.|  
 |[Węzły tekstury](../designers/texture-nodes.md)|W tym artykule opisano węzły, które służy do próbkowania różne typy tekstury i mają geometrię i do utworzenia lub Przekształcanie współrzędnych tekstury typowe sposoby.|  
 |[Węzły matematyczne](../designers/math-nodes.md)|W tym artykule opisano węzły, które służy do wykonywania algebraicznych, logiki trygonometryczne i innych operacji matematycznych, które mapują bezpośrednio do instrukcji HLSL.|  
-|[Narzędzie węzłów](../designers/utility-nodes.md)|W tym artykule opisano węzły, które służy do wykonywania typowych obliczeń oświetlenia i innymi typowymi operacjami, które mapują bezpośrednio do instrukcji HLSL.|  
-|[Węzły filtru](../designers/filter-nodes.md)|W tym artykule opisano węzły, które służy do filtrowania tekstury i filtrowanie kolorów.|
+|[Węzły narzędzi](../designers/utility-nodes.md)|W tym artykule opisano węzły, które służy do wykonywania typowych obliczeń oświetlenia i innymi typowymi operacjami, które mapują bezpośrednio do instrukcji HLSL.|  
+|[Węzły filtrów](../designers/filter-nodes.md)|W tym artykule opisano węzły, które służy do filtrowania tekstury i filtrowanie kolorów.|

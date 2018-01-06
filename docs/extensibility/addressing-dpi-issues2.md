@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywania problemów DPI
 Zwiększa liczbę urządzeń jest dostarczany z ekranami "o wysokiej rozdzielczości". Te ekrany zwykle mają ponad 200 pikseli na cal (ppi). Korzystanie z aplikacji na tych komputerach będzie wymagać zawartości do skalowanie do potrzeb wyświetlania zawartości w odległości normalnego widoku dla urządzenia. Począwszy od 2014 r. miejsce docelowe głównej wyświetlacze o wysokiej gęstości pracuje w terenie, urządzenia (tablety, laptopy clamshell i telefony).  

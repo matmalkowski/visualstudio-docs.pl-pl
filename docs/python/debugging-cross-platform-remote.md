@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4879b862d1e5f54c1a88e62d41df760ca0f27ad5
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Zdalne debugowanie kodu języka Python w systemie Linux
 
@@ -35,9 +36,9 @@ Do wykonania tego instruktażu potrzebne są następujące elementy:
 - Komputera zdalnego z systemem Python w systemie operacyjnym, takich jak Mac OS x lub Linux.
 - Port 5678 (przychodzące) otwarty na zaporze tego komputera, co jest ustawieniem domyślnym dla zdalnego debugowania.
 
-Można jednak łatwo tworzyć [maszyn wirtualnych systemu Linux na platformie Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) i [dostępu za pomocą pulpitu zdalnego](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) z systemu Windows. Ubuntu dla maszyny Wirtualnej jest wygodne, ponieważ Python jest instalowane domyślnie; w przeciwnym razie zapoznaj się z listą na [zainstalować interpreter języka Python wybranym](python-environments.md#selecting-and-installing-python-interpreters) dla języka Python dodatkowe lokalizacje.
+Można jednak łatwo tworzyć [maszyn wirtualnych systemu Linux na platformie Azure](/azure/virtual-machines/linux/creation-choices) i [dostępu za pomocą pulpitu zdalnego](/azure/virtual-machines/linux/use-remote-desktop) z systemu Windows. Ubuntu dla maszyny Wirtualnej jest wygodne, ponieważ Python jest instalowane domyślnie; w przeciwnym razie zapoznaj się z listą na [zainstalować interpreter języka Python wybranym](python-environments.md#selecting-and-installing-python-interpreters) dla języka Python dodatkowe lokalizacje.
 
-Aby uzyskać więcej informacji na temat tworzenia reguły zapory dla maszyny Wirtualnej platformy Azure, zobacz [Otwieranie portów dla maszyny Wirtualnej na platformie Azure przy użyciu portalu Azure](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Aby uzyskać więcej informacji na temat tworzenia reguły zapory dla maszyny Wirtualnej platformy Azure, zobacz [Otwieranie portów dla maszyny Wirtualnej na platformie Azure przy użyciu portalu Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Przygotowywanie do debugowania skryptu
 
@@ -131,14 +132,13 @@ W tych kroków możemy ustawić proste punkt przerwania, aby zatrzymać proces z
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Zabezpieczanie połączenia debugera przy użyciu protokołu SSL
 
 Domyślnie połączenie z serwerem zdalnego debugowania ptvsd jest zabezpieczone tylko klucz tajny i wszystkie dane są przekazywane w postaci zwykłego tekstu. W przypadku bardziej bezpieczne połączenia ptvsd obsługuje SSL, który ustawia się w następujący sposób:
 
 1. Na komputerze zdalnym generowanie oddzielnych certyfikatu z podpisem własnym i pliki klucza przy użyciu biblioteki openssl:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -151,8 +151,8 @@ Domyślnie połączenie z serwerem zdalnego debugowania ptvsd jest zabezpieczone
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    Można wprowadzić zmiany w pliku kodu na komputerze lokalnym, ale ponieważ ten kod nie jest aktualnie ma uruchomiony, jest bezwzględnie konieczne.    
+
+    Można wprowadzić zmiany w pliku kodu na komputerze lokalnym, ale ponieważ ten kod nie jest aktualnie ma uruchomiony, jest bezwzględnie konieczne.
 
 1. Uruchom ponownie program Python na komputerze zdalnym, dzięki czemu jest gotowy do debugowania.
 

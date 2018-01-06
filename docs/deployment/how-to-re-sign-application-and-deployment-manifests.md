@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: baa3e9310946482a4c7c64fdb619ce612a21dbda
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e3c6551269df19c554dfa50409108bf952c4b326
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Porady: ponowne podpisywanie aplikacji i manifestów wdrożenia
 Po wprowadzeniu zmian do właściwości wdrożenia w aplikacji manifestu dla aplikacji formularzy systemu Windows, aplikacje systemu Windows Presentation Foundation (xbap) lub rozwiązań pakietu Office, musisz ponownie zalogować się zarówno aplikacji i manifesty wdrożenia z certyfikat. Ten proces gwarantuje, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  
@@ -125,4 +126,4 @@ Po wprowadzeniu zmian do właściwości wdrożenia w aplikacji manifestu dla apl
  [Porady: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Porady: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Porady: Konfigurowanie zachowania monitu o zaufanie ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [Instrukcje: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

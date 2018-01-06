@@ -25,11 +25,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4ad4566f013d322e1e5b7a150fea84a5682d938
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6dbfc2fd214d11eac8a9615c95d3f3ec6e6f3efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Importowanie elementów z istniejącej witryny SharePoint
   Importowanie pakietu rozwiązań SharePoint szablon projektu umożliwia ponowne użycie elementów, takich jak pola z istniejących witryn programu SharePoint i typy zawartości w ramach nowego [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint. Mimo że można uruchomić najbardziej importowanych rozwiązań bez żadnych modyfikacji, brak pewnych ograniczeń i zagadnień do uwzględnienia, zwłaszcza, jeśli można modyfikować po zaimportowaniu ich elementów.  
@@ -143,6 +144,6 @@ ms.lasthandoff: 10/31/2017
  [Wskazówki: Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Wytyczne dotyczące importowania wielokrotnych przepływów danych](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
  [Wskazówki: Importowanie przepływu pracy wielokrotnego użytku programu SharePoint Designer do Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Instrukcje: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
   
   

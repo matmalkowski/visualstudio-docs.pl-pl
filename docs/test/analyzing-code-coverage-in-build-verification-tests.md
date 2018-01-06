@@ -11,11 +11,12 @@ ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3dab1fb335bf1fa7a51faf8f298208c18ec87dc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c37646bfdb722b2deb53f290eabbb9917fa987ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analiza pokrycia kodu w testach weryfikacji kompilacji
 Analizy pokrycia kodu w programie Microsoft Visual Studio zawiera, jaka część kodu jest są wykonywane przez testów automatycznych. Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -37,4 +38,4 @@ Analizy pokrycia kodu w programie Microsoft Visual Studio zawiera, jaka część
  Po uruchomieniu kompilacji, wyniki pokrycia kodu jest wyświetlany w podsumowaniu kompilacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Korzystanie z pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+ [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

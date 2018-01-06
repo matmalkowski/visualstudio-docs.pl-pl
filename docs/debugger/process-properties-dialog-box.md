@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
 - process properties, Spy++
@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc116cc0085d5db9e54ca6befce6d3627c5d975
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e1178cd848cbac3589faeb2292e2ceadf52c11b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="process-properties-dialog-box"></a>Okno dialogowe właściwości procesu
 Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego procesu. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  
@@ -43,7 +44,7 @@ Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego 
  [Wyszukiwanie procesów — okno dialogowe](../debugger/process-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego procesu w widoku procesu.  
   
- [Spy ++ — odwołanie](../debugger/spy-increment-reference.md)  
+ [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.  
   
  [Wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md)  
@@ -52,8 +53,8 @@ Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego 
  [Widok procesów](../debugger/processes-view.md)  
  Wyświetla widok drzewa aktywnych procesów.  
   
- [Widoków Spy ++](../debugger/spy-increment-views.md)  
+ [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
  W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)  
+ [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.

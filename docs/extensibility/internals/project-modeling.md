@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d654669ad35ce77d840f4852ceb7a6605a8221be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31c3d87a44838ead7663ff4c156985ab1b8e98eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-modeling"></a>Projekt modelowania
 Następnym krokiem w zapewnianiu automatyzacji dla projektu jest zaimplementowanie obiektów standardowe projektu: <xref:EnvDTE.Projects> i `ProjectItems` kolekcje; `Project` i <xref:EnvDTE.ProjectItem> obiekty; a pozostałe obiekty unikatowe dla implementacji. Te standardowe obiekty są zdefiniowane w pliku Dteinternal.h. Implementacja standardowych obiektów znajduje się w przykładowej BscPrj. Te klasy jako modele służy do tworzenia własnego projektu standardowych obiektów, które autonomiczna side-by-side z obiektami projektu z innych typów projektów.  

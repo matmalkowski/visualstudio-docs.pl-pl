@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4a191c94731560cbc36b4738d16ef202f051873
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c9fe87ae48c705e447b4fc5bd2834a417c4e8d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate — Element (szablony projektów Visual Studio)
 Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub startowy.  
@@ -87,4 +88,4 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub st
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

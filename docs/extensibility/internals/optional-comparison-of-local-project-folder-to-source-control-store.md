@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cde0a7c34fe81c86d9f500bb1800006e5291ee92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cbf4e9f2ccbe895db79115949818345c62245f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Opcjonalne porównanie Folder lokalny projekt do kontroli źródła
 W źródle kontrolować 1.2 interfejsu API wtyczek porównania folder lokalny projektu z kontroli źródła odbywa się za pomocą funkcji [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) i [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
@@ -42,4 +43,4 @@ W źródle kontrolować 1.2 interfejsu API wtyczek porównania folder lokalny pr
 >  Ta funkcja korzysta z tej samej flagi polecenie jako [SccDiff](../../extensibility/sccdiff-function.md). Jako dostawca wtyczkę kontroli źródła możesz nie obsługuje operacji "szybkie różnicowego" dla katalogów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Nowości w źródła formantu wtyczka interfejsu API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

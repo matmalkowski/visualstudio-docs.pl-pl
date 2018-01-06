@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e7638f1f8134ded87f2bde1f9617757e6ad536b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9845a7db8d71e802cc24160d16e5382717c0c28b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące narzędzie wyboru bezpośrednio w programie Blend
-Poniższa tabela zawiera listę skrótów, które umożliwiają zmodyfikuj istniejące ścieżki **Zaznaczanie bezpośrednie** narzędzia ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362"). Aby dodać lub usunąć punkty na ścieżce, lub Dołącz dwa istniejące ścieżki, użyj **pióra** narzędzia.  
+Poniższa tabela zawiera listę skrótów, które umożliwiają zmodyfikuj istniejące ścieżki **Zaznaczanie bezpośrednie** narzędzie ![ ] (../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") . Aby dodać lub usunąć punkty na ścieżce, lub Dołącz dwa istniejące ścieżki, użyj **pióra** narzędzia.  
   
 |Do tej czynności|Zrób to|Wskaźnik|  
 |-----------------------|-------------|-------------|  
@@ -30,8 +31,8 @@ Poniższa tabela zawiera listę skrótów, które umożliwiają zmodyfikuj istni
 |Zmień kąt tangens punktu na ścieżce|Kliknij punkt lub segment ścieżki, aby uchwytów są wyświetlane, a następnie przeciągnij jeden stycznej punktów końcowych|![](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png "beb1a907-1e50-450c-aab3-4d7026f5e426")<br /><br /> Wskaźnik stycznej|  
 |Punkt do rogu sharp lub kliknij przycisk zmniejsza tangens od zera.|Umieść kursor nad punktem, przytrzymaj klawisz ALT, a następnie kliknij punkt|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Konwertuj wskaźnika|  
 |Wprowadzić dowolny sharp róg smooth (lub jeśli jest już smooth, zmień kąt krzywej przechodzą przez punkt klikniętej)|Umieść kursor nad punktem, przytrzymaj klawisz ALT, a następnie przeciągnij punkt|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Konwertuj wskaźnika|  
-|Zmień segmentu krzywej do linii prostej|Umieść kursor nad segment w ścieżce, przytrzymaj klawisz ALT, a następnie kliknij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Konwertuj segmentu wskaźnika|  
-|Wykonaj segment i pochylić ją do krzywej do przekazywania pozycję wskaźnika|Umieść kursor nad segment w ścieżce, przytrzymaj klawisz ALT, a następnie przeciągnij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Konwertuj segmentu wskaźnika|  
+|Zmień segmentu krzywej do linii prostej|Umieść kursor nad segment w ścieżce, przytrzymaj klawisz ALT, a następnie kliknij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441F-97ed-2f1496e416bf")<br /><br /> Konwertuj segmentu wskaźnika|  
+|Wykonaj segment i pochylić ją do krzywej do przekazywania pozycję wskaźnika|Umieść kursor nad segment w ścieżce, przytrzymaj klawisz ALT, a następnie przeciągnij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441F-97ed-2f1496e416bf")<br /><br /> Konwertuj segmentu wskaźnika|  
 |Dostosuj jeden z końców tangens niezależnie od drugiej strony|Zaznacz bezpośrednio punktu lub segmentu, przytrzymaj klawisz ALT, a następnie przeciągnij stycznej punktu końcowego|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> Konwertuj stycznej wskaźnika|  
   
 ## <a name="see-also"></a>Zobacz też  

@@ -13,11 +13,12 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e9196f3e4bc76e53d50bc480b8e0860186fe778e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 7e70e4366ca91e00beeb4fff49ec30d4618bde81
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quick-actions"></a>Szybkie akcje
 
@@ -591,7 +592,7 @@ Dim s As String = $"My string with {num} in the middle"
 | ------- | -------------------- | ----------------  |
 | IDE0017 | C# i Visual Basic | Visual Studio 2017 RTW |
 
-Ta akcja szybkie pozwala na użycie [obiekt inicjatory](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) zamiast wywoływania tne konstruktora o dodatkowe wiersze i instrukcje przypisania.
+Ta akcja szybkie pozwala na użycie [obiekt inicjatory](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) zamiast wywoływania tne konstruktora o dodatkowe wiersze i instrukcje przypisania.
 
 ```csharp
 // Before
@@ -621,7 +622,7 @@ Dim c = New Customer() With {.Age = 21}
 | ------- | -------------------- | ----------------  |
 | IDE0028 | C# i Visual Basic | Visual Studio 2017 RTW |
 
-Ta akcja szybkie pozwala używać [inicjatory kolekcji](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) zamiast wielu wywołań `Add` metody klasy.
+Ta akcja szybkie pozwala używać [inicjatory kolekcji](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) zamiast wielu wywołań `Add` metody klasy.
 
 ```csharp
 // Before

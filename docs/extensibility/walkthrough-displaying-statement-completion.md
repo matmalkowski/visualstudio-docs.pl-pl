@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ebdc87e1dccf2bde66ccfeebb6c2b4fba144c70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Wskazówki: Wyświetlanie uzupełniania
 Uzupełnianie opartych na języku można zaimplementować definiujący identyfikatory, dla których chcesz podać ukończenia, a następnie wyzwalania zakończenia sesji. Można zdefiniować uzupełniania w kontekście usługi języka, definiować własne rozszerzenie nazwy pliku i typu zawartości i Wyświetl uzupełnianie tylko tego typu lub możesz wyzwolić uzupełnianie istniejącego typu zawartości — na przykład "w postaci zwykłego tekstu". W tym przewodniku przedstawiono sposób wyzwolenia uzupełniania dla typu zawartości "zwykły tekst", który jest typem zawartości plików tekstowych. Typ zawartości "text" jest elementem nadrzędnym wszystkich innych typów zawartości, łącznie z kodu i pliki XML.  
@@ -204,4 +205,4 @@ Uzupełnianie opartych na języku można zaimplementować definiujący identyfik
 4.  Podczas wpisywania najpierw "a", a następnie "d" powinna być wyświetlana lista zawierająca "Dodawanie" i "dostosowania". Zwróć uwagę, że wybrany jest dodanie. Po wpisaniu "d" Lista powinna zawierać tylko "Dodawanie", który jest obecnie wybrany. Zatwierdzenia "Dodawanie" naciskając klawisz spacji, tabulatorem ani Enter lub odrzucić listy, wpisując Esc lub innego klucza.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

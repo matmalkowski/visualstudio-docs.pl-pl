@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 870a8d1c08a8ca0fa72cabf47c8e1087a39e70f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
 Podczas obsługi polecenia lub gestu pisania dla danego języka specyficznego dla domeny, należy określić element, jakie użytkownik kliknął prawym przyciskiem myszy. Można również uniemożliwić niektórych kształtów lub pola wybierane. Na przykład można rozmieścić, że gdy użytkownik kliknie ikonę dekoratora, kształtu, który go zawiera zamian zostanie wybrany. Zaznaczenie w ten sposób ograniczający zmniejsza liczbę obsługi, które trzeba zapisać. On również ułatwia dla użytkownika, który można kliknij w dowolnym miejscu w kształcie bez konieczności uniknąć dekorator.  

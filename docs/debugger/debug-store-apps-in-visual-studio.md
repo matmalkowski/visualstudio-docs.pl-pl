@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3920bfbd5b1ddbddc3166118ead0c7d0fefff8d8
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8684a1220b871e2c77f8c0229cddd807a6031cd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-in-visual-studio"></a>Debugowanie aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
 Debuger programu Visual Studio umożliwia kontrolowanie wykonania programu i sprawdź, czy jego stanu. Znajdź przyczynę wady w aplikacjach platformy uniwersalnej systemu Windows i zrozumienie dokładnie, jak aplikacja działa, można użyć debugera. Po wstrzymaniu wykonywania (podział) w debugerze programu Visual Studio zawiera plik źródłowy, który zawiera wykonywanie kodu i zaznacza wykonywania instrukcji. Można przyjrzeć się wartości zmiennych, stos wywołań wykonywania funkcji i innych aspektów stanu użytkownika programu. Można kontynuować wykonywania (kroków) program jednej instrukcji w czasie, aby zobaczyć, jak instrukcje zmienić wartości programu. W aplikacji napisanych z użyciem języka JavaScript można badania i manipulowania modelu DOM strony.  

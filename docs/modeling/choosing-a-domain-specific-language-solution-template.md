@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2a1ad374c709b9575ff8e3d46bb3d2178a1c3f95
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b636ab7937c85199c26b8ce8a95fa33cdcc7976b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 Tworzenie rozwiązań języka specyficznego dla domeny, wybierz jeden z szablonów rozwiązania, które są dostępne w Kreatorze projektanta języka specyficznego dla domeny. Wybierając szablon najlepiej odpowiadający język, w którym chcesz utworzyć, można zminimalizować zmiany, które należy do początkowej rozwiązania.  
@@ -34,4 +35,4 @@ Tworzenie rozwiązań języka specyficznego dla domeny, wybierz jeden z szablon�
 |Biblioteka DSL|-Minimalnego biblioteki|Jeśli chcesz utworzyć częściową definicją DSL, który można zaimportować do innych definicje DSL, należy użyć tego szablonu.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Omówienie narzędzia języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)
+ [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md)

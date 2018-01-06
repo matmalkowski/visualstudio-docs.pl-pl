@@ -13,21 +13,22 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c28fbedddcd5a3d7bb80f1c14cd9a7f2ffe89eb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0435225f30f5f596aed4631f0130b94cd3b273ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Tekst zwijania i ukryte w starsza wersja usługi języka
 Tworzenie konspektu umożliwia Zwiń sekwencji wierszy tekstu w jednym wierszu. Na przykład w języku C++ może zostać zwinięty wszystkie metody do jednego wiersza, pokazujący tylko sygnatura metody. Ukryty tekst jest sekwencji wierszy tekstu, które mogą być pokazywane lub ukryte.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: Obsługa konspekt w starsza wersja usługi języka](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
+ [Instrukcje: obsługa zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  Opisuje sposób nadawania  
   
- [Porady: zapewniają obsługę tekstu ukrytego w starsza wersja usługi języka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Instrukcje: zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Objaśnienie jego przeznaczenia obszaru tekstu ukrytego i zawiera instrukcje dotyczące sposobu wdrażania region tekstu ukrytego.  
   
- [Porady: Podaj rozszerzona obsługa zwijania w starsza wersja usługi języka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Instrukcje: zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Opisano dwie opcje rozszerzających zwijania obsługę języka poza obsługi *Zwiń definicji* polecenia.

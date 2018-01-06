@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyśle skróty klawiaturowe w Visual Studio
 Aby uzyskać więcej informacji o ułatwieniach dostępu klawiatury, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md) i [porady: Użyj klawiatury wyłącznie](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -51,7 +52,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |[Edytor zestawu danych](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, porównaj schematu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Edytor szczegółów programu Team Foundation Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[Różnica podglądu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools projektanta tabel](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Projektant formularzy systemu Windows](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
 |[Eksplorator modelu DOM](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, Edytor T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Edytor tekstu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Element roboczy edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
-|[Interakcyjne F #](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, Edytor PDW T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Diagram działania UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Widok zapytania o elementy robocze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
+|[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, Edytor PDW T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Diagram działania UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Widok zapytania o elementy robocze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[Edytor dokumentu wykresu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Narzędzie Page Inspector](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[Diagram klas UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Widok wyników elementu roboczego](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[Diagnostyki grafiki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Projektant zapytań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[Diagram składnika UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Projektant przepływów pracy](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
 |[Edytor HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Wyniki zapytania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Diagram przypadku użycia UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Projektant XAML interfejsu użytkownika](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
@@ -755,7 +756,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |-------------|-----------------------|  
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|  
 
-##  <a name="bkmk_TeamExplorer"></a> Team Explorer  
+##  <a name="bkmk_TeamExplorer"></a>Program Team Explorer  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  

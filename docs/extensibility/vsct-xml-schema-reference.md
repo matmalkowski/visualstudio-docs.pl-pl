@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fc82041f8ab2790c63c271f85d573a3105ab8b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e02d4ad31a4877dd88dca941c06e38f7eeac82f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-xml-schema-reference"></a>Odwołanie do schematu VSCT XML
 Zapewnia tabeli elementów schematu kompilatora tabeli polecenie podrzędne dozwolone elementy i atrybuty dla każdego.  
@@ -45,36 +46,36 @@ Zapewnia tabeli elementów schematu kompilatora tabeli polecenie podrzędne dozw
 ## <a name="schema-hierarchy"></a>Schemat hierarchii  
  Pliku vsct ma następujące główne elementy.  
   
- [CommandTable Element](../extensibility/commandtable-element.md)  
+ [CommandTable, element](../extensibility/commandtable-element.md)  
   
- [Extern — Element](../extensibility/extern-element.md)  
+ [Extern, element](../extensibility/extern-element.md)  
   
- [Umieść Element](../extensibility/include-element.md)  
+ [Include, element](../extensibility/include-element.md)  
   
- [Zdefiniuj Element](../extensibility/define-element.md)  
+ [Define, element](../extensibility/define-element.md)  
   
- [Element poleceń](../extensibility/commands-element.md)  
+ [Commands, element](../extensibility/commands-element.md)  
   
- [CommandPlacements Element](../extensibility/commandplacements-element.md)  
+ [CommandPlacements, element](../extensibility/commandplacements-element.md)  
   
- [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md)  
+ [VisibilityConstraints, element](../extensibility/visibilityconstraints-element.md)  
   
- [Element powiązania klawiszy](../extensibility/keybindings-element.md)  
+ [KeyBindings, element](../extensibility/keybindings-element.md)  
   
- [UsedCommands Element](../extensibility/usedcommands-element.md)  
+ [UsedCommands, element](../extensibility/usedcommands-element.md)  
   
- [Element nadrzędny](../extensibility/parent-element.md)  
+ [Parent, element](../extensibility/parent-element.md)  
   
- [Icon — Element](../extensibility/icon-element.md)  
+ [Icon, element](../extensibility/icon-element.md)  
   
- [Element ciągów](../extensibility/strings-element.md)  
+ [Strings, element](../extensibility/strings-element.md)  
   
- [Polecenie flagi elementu](../extensibility/command-flag-element.md)  
+ [Command Flag, element](../extensibility/command-flag-element.md)  
   
- [Element symboli](../extensibility/symbols-element.md)  
+ [Symbols, element](../extensibility/symbols-element.md)  
   
  [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Routing poleceń w VSPackages](../extensibility/internals/command-routing-in-vspackages.md)
+ [Routing poleceń w pakietach VSPackage](../extensibility/internals/command-routing-in-vspackages.md)

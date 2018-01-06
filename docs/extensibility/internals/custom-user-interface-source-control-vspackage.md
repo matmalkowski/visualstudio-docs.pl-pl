@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6138ffcd0c56b87e9e29a316aa2ae0ad9f982e18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (VSPackage kontroli źródła)
 Pakiet VSPackage deklaruje elementy jego menu i ich domyślne stany poprzez plik tabeli poleceń w usłudze Visual Studio (vsct). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) do momentu załadowania pakiet VSPackage wyświetla elementów menu w ich domyślne Stany. Następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda jest wywoływana, aby włączyć lub wyłączyć elementów menu.  
@@ -64,4 +65,4 @@ Pakiet VSPackage deklaruje elementy jego menu i ich domyślne stany poprzez plik
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>   
  <xref:EnvDTE.Constants.vsContextNoSolution>   
- [Zarządzanie VSPackages](../../extensibility/managing-vspackages.md)
+ [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)

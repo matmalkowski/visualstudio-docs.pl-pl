@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a90a5cfdc521de0716d81b07529822f69289b605
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1104ebfbd066ad438262fcca0186acfb3854dbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createexpinstance-utility"></a>Narzędzie CreateExpInstance
 Narzędzia CreateExpInstance do tworzenia, zresetować, lub usuń eksperymentalne wystąpienie programu Visual Studio. Eksperymentalne wystąpienie służy do debugowania i testowania rozszerzeń programu Visual Studio bez zmiany podstawowego produktu.  
@@ -63,4 +64,4 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **CreateExpInstance.exe/reset / vsinstance = 14.0/rootsuffix = Exp**  
   
 ## <a name="see-also"></a>Zobacz też  
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [Pakiety VSPackage](../../extensibility/internals/vspackages.md)

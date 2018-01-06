@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: Kulisy, należy do jednego
 Kiedykolwiek traktować o sposobie tworzenia własnego typu projektu? Zastanawiasz się, co faktycznie się dzieje podczas tworzenia nowego projektu? Teraz pobrać peek pod maską i zobacz, co naprawdę dzieje.  
@@ -216,4 +217,4 @@ devenv /installvstemplates
  **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tylko w węźle systemu Windows.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Generowanie nowego projektu: Kulisy, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Generowanie nowego projektu: za kulisami, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Porady: przełączanie na inny wątek podczas debugowania w programie Visual Studio
 Podczas debugowania aplikacji wielowątkowych służy jednej z kilku metod przejść z wątku, który pracy z do innego wątku.
 
 > [!NOTE]
-> Jeśli chcesz kontrolować kolejność, w którym wykonywanie wątków, musisz [zablokować i odblokować wątków](/debugger/get-started-debugging-multithreaded-apps.md).
+> Jeśli chcesz kontrolować kolejność, w którym wykonywanie wątków, musisz [zablokować i odblokować wątków](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Po sprawdzeniu wątków w edytorze kodu i oknach debugowania wielowątkowe żółta strzałka wskazuje bieżący wątek. Zielona strzałka z nawiasy tail oznacza, że wątek długoterminowe ma bieżącego kontekstu debugera.
   

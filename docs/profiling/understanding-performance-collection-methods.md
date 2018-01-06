@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Opis metoda zbierania danych wydajności
 Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o wydajności. W tym temacie opisano różne metody oraz zasugerowano kilka scenariuszy zbierania danych za pomocą konkretnych metod.  
@@ -78,7 +79,7 @@ Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o
   
  [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)  
+ [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)  
   
 ##  <a name="concurrency"></a>Współbieżność  
  Metoda profilowania Współbieżność zbiera informacje o aplikacjach wielowątkowych. Metoda profilowania Rywalizacja o zasoby zbiera szczegółowe informacje o stosie wywołań w każdym przypadku, gdy konkurencyjne wątki są zmuszone czekać na dostęp do wspólnego zasobu. Mechanizm wizualizacji współbieżności zbiera również bardziej ogólne informacje o wewnętrznych interakcjach aplikacji wielowątkowej, a także o jej interakcjach ze sprzętem, systemem operacyjnym i innymi procesami na komputerze hosta:  
@@ -91,9 +92,9 @@ Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o
   
  [Zbieranie danych współbieżności procesu i wątku](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
- [Widok danych Kontencji zasobów](../profiling/resource-contention-data-views.md)  
+ [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
   
- [CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)  
+ [Concurrency Visualizer](../profiling/concurrency-visualizer.md)  
   
 ##  <a name="net_memory"></a>Pamięci platformy .NET  
  Metoda profilowania za pomocą alokacji pamięci środowiska .NET przerywa działanie procesora komputera na każdym zdarzeniu przydziału obiektu środowiska .NET Framework w profilowanej aplikacji. Jeśli są zbierane również informacje o okresie istnienia obiektu, profiler przerywa działanie procesora po każdym zdarzeniu wyrzucania elementów bezużytecznych w środowisku .NET Framework.  
@@ -124,7 +125,7 @@ Dane interakcji między warstwami gromadzone przez narzędzia pakietu Profiling 
   
  [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)  
   
- [Widok interakcji warstwowej](../profiling/tier-interaction-views.md)  
+ [Widoki interakcji między warstwami](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: zbieranie danych wydajności dla witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   

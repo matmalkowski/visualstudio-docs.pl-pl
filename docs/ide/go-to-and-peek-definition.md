@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>Przejdź do definicji i definicji wglądu  
 Przejdź do definicji i wgląd definicji funkcji umożliwiają łatwe wyświetlanie definicji typu lub elementu członkowskiego.
@@ -51,4 +52,4 @@ Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i Edycja kodu za 
 
 ## <a name="see-also"></a>Zobacz też  
 [Nawigowanie po kodzie](../ide/navigating-code.md)  
-[Porady: Podgląd i Edycja kodu za pomocą definicji wglądu (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+[Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  

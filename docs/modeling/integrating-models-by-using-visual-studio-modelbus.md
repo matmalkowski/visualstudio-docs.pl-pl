@@ -11,11 +11,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 63295738603d2a88adb70b43d41e185c7eabbc69
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c349c79ebd2348fa4ce0c04fd3020d7909a3c34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus udostępnia metody do tworzenia łączy między modelami i z innych narzędzi do modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Można utworzyć zintegrowany zestaw DSLs.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/07/2017
   
  Aby uzyskać dodatkowe informacje i przykładowy kod zobacz:  
   
--   [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)  
+-   [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)  
   
 -   [Modelowanie zestawu SDK dla programu Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
 
@@ -513,4 +514,4 @@ private const string INVALID_REF_FORMAT =
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Przy użyciu ModelBus programu Visual Studio w szablonu tekstowego](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [Użycie programu Visual Studio ModelBus w szablonie tekstu](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

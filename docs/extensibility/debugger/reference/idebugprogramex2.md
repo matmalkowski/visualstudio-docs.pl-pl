@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ddcd913371a09646185f3b46a516cb3af8528ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ea614bee34911d2cd919ce3ca67a00834a6132c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Ten interfejs umożliwia sesji debugowania Menedżera (SDM) dołączyć do programu i uzyskać węzła programu skojarzonego z programem.  
@@ -40,7 +41,7 @@ IDebugProgramEx2 : IUnknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Dołącz](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Dołącza program do sesji.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Dołącza program do sesji.|  
 |[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Pobiera węzeł program skojarzony z programu.|  
   
 ## <a name="remarks"></a>Uwagi  

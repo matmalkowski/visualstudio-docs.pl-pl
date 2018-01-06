@@ -7,23 +7,19 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f35dd690c97b4f69ff4633155f05dd9a2ebd7a2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
-Wyszukiwanie przecieków pamięci i nieefektywne pamięci podczas debugowania kodu z debugera zintegrowane **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, należy wykonać co najmniej jeden *migawki* sterty pamięci zarządzanego i natywnego. Można zbierać migawki .NET, Tryb natywny lub mieszane (.NET i natywnego) aplikacji.  
-  
--   Można analizować jedna migawka, aby zrozumieć względną wpływ typów obiektów na wykorzystanie pamięci i znaleźć kodu w aplikacji używającej Niewydajne pamięci.  
-  
--   Można także porównać (diff) dwiema migawkami aplikacji można znaleźć w kodzie obszarów powodujących wykorzystanie pamięci zwiększyć wraz z upływem czasu.  
+# <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profil w programie Visual Studio
+Wyszukiwanie przecieków pamięci i nieefektywne pamięci podczas debugowania kodu z debugera zintegrowane **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, należy wykonać co najmniej jeden *migawki* zarządzanego i natywnego pamięci sterty ułatwi zrozumienie wpływu użycia pamięci typy obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszane (.NET i natywnego) aplikacji.  
   
  Poniżej przedstawiono graficzne **narzędzia diagnostyczne** okna (dostępnej w programie Visual Studio 2015 Update 1 lub nowszy):  
   
@@ -160,13 +156,14 @@ Do analizy użycia pamięci, kliknij jeden z łącza, które otwiera szczegóło
  ![Typy natywne różnicowego Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogi i filmy wideo  
- [Diagnostyczne narzędzia okna debugera programu Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+
+|         |         |
+|---------|---------|
+|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |    [Obejrzyj film](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) przy użyciu narzędzia diagnostyczne, które pokazuje, jak Analiza użycia pamięci i procesora w Visual Studio 2017 r. |
+
+ [Analizowanie Procesora i pamięci podczas debugowania](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Blog: Narzędzie użycia pamięci podczas debugowania w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
-  
- [Visual C++ Blog: Diagnostyka pamięci natywnej w podglądzie VS2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
-  
- [Visual C++ Blog: Narzędzia diagnostyczne natywnej pamięci dla programu Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Visual C++ Blog: Pamięci profilowania w programie Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="see-also"></a>Zobacz też
  [Profilowanie w programie Visual Studio](../profiling/index.md)  

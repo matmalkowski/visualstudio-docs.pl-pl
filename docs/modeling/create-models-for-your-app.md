@@ -26,11 +26,12 @@ caps.latest.revision: "58"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: cc4455d507265376b9f208d8f351472ee6968c45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3f4a6e3ba2eafa281fda8557f48c0886aff89105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 Modelowanie diagramów ułatwić zrozumienie, wyjaśnienia i komunikować się pomysły dotyczące kodu i wymagania użytkownika, które system oprogramowania musi obsługiwać.
@@ -41,7 +42,7 @@ Modelowanie diagramów ułatwić zrozumienie, wyjaśnienia i komunikować się p
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
+|[Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i relacje w istniejącego kodu|  
 |Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)|Typy i ich relacje w kodu platformy .NET|  
   
@@ -52,9 +53,9 @@ Modelowanie diagramów ułatwić zrozumienie, wyjaśnienia i komunikować się p
 |[Tworzenie wizualizacji kodu](../modeling/visualize-code.md)|Tworzenie map kodu i diagramy zależności, aby lepiej zrozumieć nieznane kodu.|  
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używanie modeli wyjaśnienie i komunikować się potrzeb użytkowników.|  
 |[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|Używanie modeli opisano ogólną strukturę i zachowania systemu i upewnij się, że spełnia potrzeby użytkowników.|  
-|[Weryfikacja systemu w czasie projektowania](../modeling/validate-your-system-during-development.md)|Upewnij się, że oprogramowanie jest zgodnie z potrzebami użytkowników i ogólna architektura systemu.|  
+|[Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)|Upewnij się, że oprogramowanie jest zgodnie z potrzebami użytkowników i ogólna architektura systemu.|  
 |[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używanie modeli w elastyczne programowanie](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Użyj modele, aby ułatwić zrozumienie i zmienić systemu podczas jego tworzenia.|  
-|[Struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowanie modeli w projekcie dużych lub średnia.|  
+|[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowanie modeli w projekcie dużych lub średnia.|  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   

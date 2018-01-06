@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 Visual Studio — polecenia umożliwiają Wywołaj polecenie z **polecenia** okna, **Immediate** okna, lub **Find/Command** pole. W każdym przypadku oznacza większe niż znak (`>`) służy do wskazywania polecenia, a nie operacji wyszukiwania lub debugowania do wykonania.  
@@ -64,18 +65,18 @@ Visual Studio — polecenia umożliwiają Wywołaj polecenie z **polecenia** okn
 |[Otwórz projekt](../../ide/reference/open-project-command.md)|Otwiera istniejący projekt i pozwala na dodawanie projektu do bieżącego rozwiązania.|  
 |[Otwórz rozwiązanie](../../ide/reference/open-solution-command.md)|Otwiera istniejącego rozwiązania.|  
 |[Drukuj](../../ide/reference/print-command.md)|Oblicza wyrażenie i wyświetla wyniki lub określony tekst.|  
-|[Szybka czujka — polecenie](../../ide/reference/quick-watch-command.md)|Wyświetla wybrany lub określony tekst w **wyrażenie** pole **Szybka czujka** okno dialogowe.|  
+|[Szybka czujka, polecenie](../../ide/reference/quick-watch-command.md)|Wyświetla wybrany lub określony tekst w **wyrażenie** pole **Szybka czujka** okno dialogowe.|  
 |[Zamień](../../ide/reference/replace-command.md)|Zamienia tekst w plikach za pomocą podzbiór opcje dostępne na **Znajdź i Zamień** formantu.|  
 |[Zastąp w plikach](../../ide/reference/replace-in-files-command.md)|Zamienia tekst w plikach za pomocą podzbiór opcje dostępne w [Zastąp w plikach](../../ide/replace-in-files.md).|  
 |[Ustaw bieżącą ramkę stosu](../../ide/reference/set-current-stack-frame-command.md)|Umożliwia wyświetlenie ramki stosu w szczególności.|  
 |[Ustaw bieżący wątek](../../ide/reference/set-current-thread-command.md)|Umożliwia wyświetlenie określonego wątku.|  
 |[Ustaw radix —](../../ide/reference/set-radix-command.md)|Określa liczbę bajtów do wyświetlenia.|  
 |[Powłoki](../../ide/reference/shell-command.md)|Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, jakby polecenie zostało wykonane w wierszu polecenia.|  
-|[Showwebbrowser — polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL, określ w oknie przeglądarki sieci Web albo w ramach zintegrowane środowisko programistyczne (IDE) lub zewnętrzne względem programu IDE.|  
-|[Początek](../../ide/reference/start-command.md)|Rozpoczyna się proces debugowania i pozwala określić sposób obsługi błędów.|  
+|[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL, określ w oknie przeglądarki sieci Web albo w ramach zintegrowane środowisko programistyczne (IDE) lub zewnętrzne względem programu IDE.|  
+|[Start](../../ide/reference/start-command.md)|Rozpoczyna się proces debugowania i pozwala określić sposób obsługi błędów.|  
 |[Ścieżka](../../ide/reference/symbol-path-command.md)|Ustawia listę katalogów dla debugera do wyszukiwania symboli.|  
 |[Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md)|Włącza punkt przerwania lub wyłączyć, w zależności od bieżącego stanu w bieżącej lokalizacji w pliku.|  
-|[Czujka — polecenie](../../ide/reference/watch-command.md)|Tworzy i otwiera określone wystąpienie programu **czujki** okna.|  
+|[Czujka, polecenie](../../ide/reference/watch-command.md)|Tworzy i otwiera określone wystąpienie programu **czujki** okna.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Okno polecenia](../../ide/reference/command-window.md)   

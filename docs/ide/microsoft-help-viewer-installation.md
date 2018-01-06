@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3a7716f7f2f20504e854fe91afa0b315d856fef
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f9192bc9e69e977b8e0e8a4bbdf36a9d20e9d33f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 Kilka produktów można wyświetlić zawartości pomocy w podglądu pomocy firmy Microsoft, w tym programu Visual Studio i SQL Server.

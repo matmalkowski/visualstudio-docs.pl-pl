@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 704c69efa4e0495a1a4aa7545fa6ba100488afe9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f42cccacee8b46b5bc3d637ad8f7153d704f8441
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 Podczas otwierania modelu w wersji programu Visual Studio, która nie obsługuje tworzenia modelu, model zostanie otwarty w trybie tylko do odczytu. W tym trybie można zmienić układ diagramy, ale nie można zmienić modelu na model.  
@@ -57,7 +58,7 @@ Podczas otwierania modelu w wersji programu Visual Studio, która nie obsługuje
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę ogólną architektury. Gdy jest zapisywany kod, mogą zostać automatycznie zweryfikowany względem diagramu warstwowego.|  
+|[Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Diagram warstwowy pokazuje strukturę ogólną architektury. Gdy jest zapisywany kod, mogą zostać automatycznie zweryfikowany względem diagramu warstwowego.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)

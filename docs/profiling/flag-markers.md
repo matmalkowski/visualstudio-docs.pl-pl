@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flag-markers"></a>Znaczniki typu flaga
 Znacznik flagi reprezentuje coś, który wystąpił w chwili w czasie w aplikacji. Flaga może reprezentować wiele rodzajów zdarzeń aplikacji. Na przykład flagę pokazać po zaplanowano element roboczy w szczególności lub gdy został zgłoszony wyjątek. Środowisk uruchomieniowych, takich jak biblioteka zadań równoległych można również generować flagi.  
@@ -50,4 +51,4 @@ Agregacja flag poziom ważności
   
 ## <a name="see-also"></a>Zobacz też  
  [Znaczniki CONCURRENCY Visualizer](../profiling/concurrency-visualizer-markers.md)   
- [Wizualizatora współbieżności SDK](../profiling/concurrency-visualizer-sdk.md)
+ [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

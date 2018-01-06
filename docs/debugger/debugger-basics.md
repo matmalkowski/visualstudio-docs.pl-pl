@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Podstawowe informacje o debugerze
 Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wykonawczego programu i Znajdź błędy logiczne. Debuger współpracuje z wszystkie języki programowania Visual Studio i ich skojarzonych bibliotek. Z debugera mogą być dzielone wykonanie kroków opisanych w kodzie i oceny zmiennych w aplikacji.  
   
-## <a name="in-this-section"></a>W tej sekcji  
  [Wprowadzenie do debugera](../debugger/getting-started-with-the-debugger.md)  
  Wyjaśniono, jak używać funkcji debugera do debugowania aplikacji.  
-
- [Obejrzyj film wideo w debugerze](../debugger/getting-started-with-the-debugger.md#video)  
- Przedstawia sposób użycia funkcji debugera do debugowania aplikacji.
   
  [Przejdź w kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)  
  Opisuje sposób krok kodzie za pomocą debugera.  

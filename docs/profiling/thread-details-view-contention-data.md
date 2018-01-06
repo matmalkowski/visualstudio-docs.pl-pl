@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 669f227b1c5a13aada7573a245f459ba4c6a8a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd9df48aca48d86be6e4df8d2296b2b156093e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="thread-details-view---contention-data"></a>Widok szczegółów wątku - dane Kontencji
 Widok szczegółów wątku przedstawia wykres osi czasu blokowania zdarzeń w wątku wybranego przebiegu profilowania, które zostały spowodowane kontencji zasobów. To blokującego zdarzenie występuje, gdy wątek jest wymuszone wstrzymania wykonywania, ponieważ inny wątek został zablokowany dostęp do zasobu.  

@@ -22,11 +22,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b9e9963b43e6ca2049337fdfdf76b0a1314ae32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzia do przeglądania Symbol
 **Przeglądarka obiektów**, **widoku klasy**, **przeglądarce wywołań** i **wyniki Znajdź Symbol** narzędzia zapewniają symbol Przeglądanie możliwości programu Visual Studio. Te narzędzia wyświetlanie widoków hierarchiczne drzewo symboli i prezentują jedynie relacje między symbolami w drzewie. Symbole może reprezentować przestrzeni nazw, obiektów, klas, elementy członkowskie klasy i inne elementy języka zawarte w różnych składników. Następujące składniki projektów programu Visual Studio, zewnętrznych [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składniki i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  
@@ -54,4 +55,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  [Porady: rejestrowanie biblioteki z Menedżera obiektów](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Porady: udostępnianie list symboli udostępniane przez bibliotekę do Menedżera obiektów](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Porady: Identyfikowanie symbole w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Instrukcje: identyfikowanie symboli w bibliotece](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

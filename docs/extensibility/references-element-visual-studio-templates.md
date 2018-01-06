@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 436b5f745dc9b3b8c135ad111e6e708bbd391b4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ceee0091dc20938f9098985c2609f0a3d239c699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-element-visual-studio-templates"></a>Odwołania — element (szablony Visual Studio)
 Grupy odwołania do zestawów, które do szablonu dodawany do projektów.  
@@ -49,7 +50,7 @@ Grupy odwołania do zestawów, które do szablonu dodawany do projektów.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Odwołanie](../extensibility/reference-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do projektu. Musi istnieć co najmniej jeden `Reference` elementów w `References` elementu.|  
+|[Dokumentacja](../extensibility/reference-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do projektu. Musi istnieć co najmniej jeden `Reference` elementów w `References` elementu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
@@ -85,4 +86,4 @@ Grupy odwołania do zestawów, które do szablonu dodawany do projektów.
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

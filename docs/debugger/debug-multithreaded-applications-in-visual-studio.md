@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f8798616d9a39d46150f039ffe4340302439f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 Wątek jest sekwencję instrukcji, do których system operacyjny przydziela czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym składa się z co najmniej jeden wątek. Procesy, które mają więcej niż jeden wątek są nazywane wielowątkowych.  
@@ -41,7 +42,7 @@ Program Visual Studio udostępnia różnych narzędzi do użycia w debugowanie a
 
 - Wątki, podstawowe narzędzia do debugowania wątki są **wątków** okna, znaczniki wątku w systemie windows źródła **stosów równoległych** okna, **czujki równoległej** okna, i **debugowania lokalizacji** paska narzędzi. Aby dowiedzieć się więcej o **wątków** okna i **debugowania lokalizacji** narzędzi, zobacz [wskazówki: debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md). Aby dowiedzieć się, jak używać **stosów równoległych** i **czujki równoległej** systemu windows, temacie [rozpocząć debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Zarówno tematach opisano sposób użycia znaczników wątku.
   
-- Kod, który używa [zadań biblioteki równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania są **stosów równoległych** okna, **Czujki równoległej** okno i **zadania** okna ( **zadania** okna obsługuje również JavaScript). Aby rozpocząć, zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) i [wskazówki: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md). 
+- Kod, który używa [zadań biblioteki równoległych (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) lub [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime/), podstawowe narzędzia do debugowania są **stosów równoległych** okna, **Czujki równoległej** okno i **zadania** okna ( **zadania** okna obsługuje również JavaScript). Aby rozpocząć, zobacz [wskazówki: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md) i [wskazówki: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
 - Debugowanie wątków na procesor GPU, jest podstawowym narzędziem **wątki GPU** okna. Zobacz [porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 

@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba36f0279c8401e49b30a4f1f61b3e857cb20b5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a0775a8476d7fc4842ade5f4ac7b96271d06a8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties-and-the-property-window"></a>Rozszerzanie właściwości i w oknie właściwości
 **Właściwości** okno służy do wyświetlania i edytowania właściwości czasu projektowania i zdarzenia wybranych obiektów.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
  Po wybraniu obiektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], publiczny właściwości obiektu są wyświetlane w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [Przegląd okna właściwości](../extensibility/internals/properties-window-overview.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Udostępnianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md)  
+ [Uwidacznianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md)  
  W tym artykule wyjaśniono, jak może mieć niestandardowej właściwości wyświetlane w oknie właściwości.  
   
  [Pobieranie właściwości projektu](../extensibility/getting-project-properties.md)  

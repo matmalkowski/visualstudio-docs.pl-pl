@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
   Microsoft Visual Studio i Microsoft Office, zawierają wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowe ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [witrynę sieci Web Accessibility](http://go.microsoft.com/fwlink/?LinkID=37113).  
@@ -90,6 +91,6 @@ ms.lasthandoff: 10/31/2017
  [Tworzenie rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Ułatwienia dostępu dla osób niepełnosprawnych](/visualstudio/ide/reference/accessibility-for-people-with-disabilities)   
- [Funkcje ułatwień dostępu programu Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
+ [Ułatwienia dostępu w Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
   
   

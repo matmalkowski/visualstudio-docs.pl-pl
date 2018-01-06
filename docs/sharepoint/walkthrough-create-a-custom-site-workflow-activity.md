@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b7a24c793755cdd5102407d1a3a5cbfad103c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Wskazówki: tworzenie niestandardowego działania przepływu pracy witryny
   Ten przewodnik przedstawia sposób tworzenia działań niestandardowych do przepływu pracy z poziomu witryny przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Przepływy pracy poziomie witryny dotyczą całej lokacji, a nie tylko listy w witrynie). Działania niestandardowego tworzy kopię zapasową listy anonsów, a następnie kopiuje zawartość listy anonsów do niego.  

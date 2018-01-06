@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45ef0413540729abb67caad992a557c5b4692dfe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d23b1b97145b5e0b24ebfe814aeca5168ef6a06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Ten interfejs umożliwia sesji debugowania Menedżera (SDM) powiadomić procesu, który jest dołączenie do lub odłączanie od procesu.  
@@ -47,8 +48,8 @@ IDebugProcessEx2 : IUnknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Dołącz](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o tym procesie czy sesji jest teraz debugowania procesu.|  
-|[Odłączanie](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o tym procesie czy sesja jest już debugowania procesu.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o tym procesie czy sesji jest teraz debugowania procesu.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o tym procesie czy sesja jest już debugowania procesu.|  
 |[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Dodaje węzłów programu listę aparaty debugowania.|  
   
 ## <a name="remarks"></a>Uwagi  

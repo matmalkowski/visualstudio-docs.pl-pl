@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalogu
 Ta cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące przyjmująca Usługa obrazów w usłudze Visual Studio i katalogu obrazu wprowadzone w programie Visual Studio 2015.  

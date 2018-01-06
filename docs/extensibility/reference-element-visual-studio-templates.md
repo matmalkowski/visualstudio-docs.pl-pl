@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f25b39178141f3e3a40899645a0a1af6c8417ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1006e85611044805c0f3bd1e0035595288a5b32d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference — Element (szablony Visual Studio)
 Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do projektu.  
@@ -48,7 +49,7 @@ Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do proje
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Zestawu](../extensibility/assembly-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa informacje o zestawie używane w szablonie, aby dodać odwołanie do tego zestawu do projektów. Musi istnieć jedna `Assembly` element w każdym `Reference` elementu.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa informacje o zestawie używane w szablonie, aby dodać odwołanie do tego zestawu do projektów. Musi istnieć jedna `Assembly` element w każdym `Reference` elementu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
@@ -84,4 +85,4 @@ Określa odwołanie do zestawu, aby dodać, gdy element zostanie dodany do proje
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablony projektów i elementów](../ide/creating-project-and-item-templates.md)
+ [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

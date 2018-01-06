@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0799a5da2b1596c79a57a6960283c62fca709a8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf0c454e649f45975a4d45300923dbd155511136
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Porady: instalowanie autonomiczny profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]zawiera autonomiczny profilera, który można uruchomić bez konieczności instalowania na podstawie wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko deweloperskie. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci Web w środowisku produkcyjnym.  

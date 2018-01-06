@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 794eccaf59b65044840d459bbde2e17eab8684a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="delayed-document-loading"></a>Opóźnione ładowanie dokumentu
 Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojarzone dokumenty nie są ładowane bezpośrednio. Ramki okna dokumentu jest tworzony w stanie oczekiwania inicjowania i dokument symbolu zastępczego (o nazwie ramki stub) znajduje się w tabeli systemem dokumentu (Normalizacją).  
@@ -50,7 +51,7 @@ Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojar
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Ta metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> obiekt, który zawiera wartość dla <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Jeśli dokument nie została jeszcze zainicjowana.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>., Ta metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> obiekt, który zawiera wartość dla <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Jeśli dokument nie została jeszcze zainicjowana.  
   
  Można dowiedzieć się, gdy dokument został załadowany przez subskrybowanie zdarzeń Normalizacją, które jest wywoływane, gdy dokument jest w pełni zainicjowany. Dostępne są dwie możliwości:  
   

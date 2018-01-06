@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c350be06c2934f8f83adf8804c7ab4efb7f60e7
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 4d8d2755898b51f46c4682b461e4f3ba983b9d9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania umożliwia zbieranie danych działanie wątku, który pokazuje wykorzystania Procesora należy, rywalizacji wątku, wątek migracji, opóźnienia synchronizacji, obszarów nakładających się we/wy i inne i danych kontencji zasobów zdarzenia systemu.  
@@ -50,9 +51,9 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 |**Profil aplikacji sieci Web ASP.NET**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-concurrency-data-views-and-reports"></a>Analizowanie danych współbieżności widoków i raportów  
- [Widok danych Kontencji zasobów](../profiling/resource-contention-data-views.md)  
+ [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
   
- [CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)  
+ [Concurrency Visualizer](../profiling/concurrency-visualizer.md)  
   
 ## <a name="reference"></a>Tematy pomocy  
  [Wiersza polecenia narzędzi profilowania](../profiling/command-line-profiling-tools-reference.md)

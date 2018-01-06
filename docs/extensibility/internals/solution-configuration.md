@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 Konfiguracje rozwiązania przechowywania właściwości poziomu rozwiązania. Bezpośrednie ich zachowanie **Start** klucza (F5) i **kompilacji** poleceń. Domyślnie te polecenia skompilować i uruchomić z konfiguracji debugowania. Zarówno polecenie zostanie wykonane w ramach konfiguracji rozwiązania. Oznacza to, że użytkownik może spodziewać się F5 do uruchamiania i kompilacji, niezależnie od aktywne rozwiązanie są konfigurowane za pomocą ustawienia. Środowisko zaprojektowano w celu optymalizacji dla rozwiązania, a nie projektów po przejściu do tworzenia i uruchamiania.  
@@ -29,7 +30,7 @@ Konfiguracje rozwiązania przechowywania właściwości poziomu rozwiązania. Be
   
  Oto, jak można zaimplementować konfiguracje rozwiązania obsługiwane przez użytkownika typu projektu:  
   
--   Project  
+-   Projekt  
   
      Wyświetla nazwy projektów znalezione w bieżącym rozwiązaniu.  
   

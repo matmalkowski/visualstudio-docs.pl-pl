@@ -13,11 +13,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>Wskazówki: Tworzenie konspektu
 Można zaimplementować opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwiń lub Zwiń. Regiony można zdefiniować w kontekście usługi języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typu i dotyczą definicji region tylko tego typu lub definicje regionie można zastosować do istniejącego typu zawartości (na przykład "tekst"). W tym przewodniku pokazano, jak zdefiniować i wyświetlanie konspektu regionów.  
@@ -134,4 +135,4 @@ Można zaimplementować opartych na języku funkcje, takie jak tworzenie konspek
 4.  Powinien być zwijania region, który zawiera zarówno nawiasów klamrowych. Należy kliknąć znak MINUS z lewej strony otwierający nawias klamrowy, aby zwinąć zwijania regionu. Gdy region jest zwinięte, symbol wielokropka (...) powinna zostać wyświetlona z lewej strony obszaru zwiniętego i wyskakujące okienko zawierające tekst **Aktywuj tekst** powinien zostać wyświetlony, gdy wskaźnik myszy znajduje się nad wielokropka.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

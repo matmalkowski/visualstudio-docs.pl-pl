@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65c48fe6ff7f675add8b5bd5944e159587de2e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-building-an-application"></a>Wskazówki: kompilowanie aplikacji
 Wykonując tego przewodnika, użytkownik będzie zapoznanie się ze kilka opcji, które można skonfigurować podczas tworzenia aplikacji za pomocą programu Visual Studio. Zostanie utworzenie konfiguracji niestandardowej kompilacji, Ukryj niektóre komunikaty ostrzegawcze oraz zwiększyć dane wyjściowe kompilacji dla przykładowej aplikacji.  
@@ -238,4 +239,4 @@ Gratulacje: zakończyła się pomyślnie w tym przewodniku.
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Tworzenie projektu (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Omówienie wstępnej kompilacji projektu aplikacji sieci Web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
- [Wskazówki: Korzystanie z MSBuild](../msbuild/walkthrough-using-msbuild.md)
+ [Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4207903fdd0f9a1462460d7f7cb2704e70e08df6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nesting-projects"></a>Projekty zagnieżdżenia
 Deweloperów w przedsiębiorstwach aplikacji korzystających z pakietu VS można grupowania podobnych typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą *projektu zagnieżdżenia*. Na przykład projektu szablonu używa zagnieżdżonych projekty do grupy projektów do kategorii. Projekty fasad biznesowe, projekty sieci Web interfejsu użytkownika i tak dalej są pogrupowane w jednej kategorii.  
@@ -45,4 +46,4 @@ Przykład zagnieżdżonych projektów
  [Filtrowanie okno dialogowe AddItem dla projektów zagnieżdżonych](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)   
- [Kreator (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f50378179276a88ff9dd1a6017cd84143b499707
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 457652b39ce788e5960e5531002628a3dea27cf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Widok funkcji - dane Instrumentacji pamięci .NET
 Widok funkcji .NET pamięci alokacji profilowania danych, które zostały zebrane przy użyciu metody Instrumentacji zawiera listę funkcji, które przydzielonej pamięci podczas przebiegu profilowania. Wiersz funkcji raportów, rozmiaru i liczby przydziałów i danych o chronometrażu dla funkcji.  

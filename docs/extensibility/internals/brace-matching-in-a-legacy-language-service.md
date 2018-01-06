@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd70d65a7d2cbabbbf7fcd3581e8ba974ff25ee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c496c65244f0ede0c3a6385f6cf1329479a17c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Parowanie nawiasów klamrowych w starsza wersja usługi języka
 Dopasowywanie nawiasu klamrowego pomaga developer śledzić elementy języka, które muszą zostać wykonane ze sobą, takie jak nawiasy i nawiasy klamrowe. Gdy dewelopera wprowadza zamykający nawias klamrowy, zostanie wyróżniona nawiasem otwierającym.  
@@ -140,4 +141,4 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-features1.md)   
- [Analizatora usługi starszej wersji języka i skanera](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+ [Analizator i skaner starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

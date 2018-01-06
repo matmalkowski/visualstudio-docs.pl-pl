@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Dodawanie elementów do Dodaj nowy element okien dialogowych
 Dodawanie elementów do procesu **Dodaj nowy element** okno dialogowe rozpoczyna się od kluczy rejestru. Jak przedstawiono w następujących wpisach rejestru, w sekcji AddItemTemplates zawiera ścieżkę i nazwę katalogu, w które elementy udostępniona w **Dodaj nowy element** są umieszczane okno dialogowe.  
@@ -83,4 +84,4 @@ Dodawanie elementów do procesu **Dodaj nowy element** okno dialogowe rozpoczyna
  [CATIDs dla obiektów, które są zazwyczaj używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
  [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
- [Kreator (. Pliku Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

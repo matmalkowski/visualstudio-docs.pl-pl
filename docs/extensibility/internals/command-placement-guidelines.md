@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e74bda24459bedeef007b451c7fabe3922e7ab37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c79d58530a7f6afc5779fab1bc0b5a1626cb595
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-placement-guidelines"></a>Wskazówki dotyczące umieszczania polecenia
 Najlepsze rozwiązania dotyczące rozmieszczania poleceń w Visual Studio zintegrowane środowisko programistyczne (IDE) różni się zależnie od rozmiaru zestawu poleceń. Polecenia są zdefiniowane i pozycjonować względem informacji w plikach vsct.  
@@ -60,4 +61,4 @@ Najlepsze rozwiązania dotyczące rozmieszczania poleceń w Visual Studio zinteg
   
 ## <a name="see-also"></a>Zobacz też  
  [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabela poleceń programu Visual Studio (pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

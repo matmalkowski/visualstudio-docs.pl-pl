@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 **HTML** karta w przyborniku zawiera składniki, które są przydatne w formularzach sieci Web i stron sieci Web. Aby wyświetlić na tej karcie, należy najpierw otworzyć dokument do edycji w Projektancie HTML. Na **widoku** menu, kliknij przycisk **przybornika**, a następnie kliknij przycisk **HTML** karcie przybornika.  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Dane wejściowe (plik)**  
  ![Strona HTML pole pliku](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Dane wejściowe (hasło)**  
  ![Pole hasła w usłudze Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -113,7 +114,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Jeśli aplikacja przesyła nazwy użytkownika i hasła, należy skonfigurować witryny sieci Web do używania protokołu Secure Sockets Layer (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz "Zabezpieczanie połączeń z protokołu SSL" w [przewodniku obsługi usług IIS](http://go.microsoft.com/fwlink/?linkid=47856). Ponadto zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Jeśli aplikacja przesyła nazwy użytkownika i hasła, należy skonfigurować witryny sieci Web do używania protokołu Secure Sockets Layer (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz "Zabezpieczanie połączeń z protokołu SSL" w [przewodniku obsługi usług IIS](http://go.microsoft.com/fwlink/?linkid=47856). Ponadto zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Dane wejściowe (pole wyboru)**  
  ![HTML strony sieci Web opcja Checkbox w przyborniku](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w witrynach składnika ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Tabela**  
  ![HTMLpageToolbarTable — zrzut ekranu](../../ide/reference/media/vxtable.gif "vxTable")  

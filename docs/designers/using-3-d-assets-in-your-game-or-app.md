@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przetwarzanie 3-zasobów i uwzględnić je w kompilacji.  
@@ -202,8 +203,8 @@ cbuffer MiscVars : register(b3)
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Porady: eksportowanie tekstury, który zawiera mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, który zawiera wstępnie obliczonych mipmapy.|  
-|[Porady: eksportowanie tekstury, który ma wstępnie przemnożone alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, zawierający wstępnie przemnożone wartości alfa.|  
-|[Porady: eksportowanie tekstury do użytku z programem Direct2D lub Javascipt aplikacji](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Opisuje sposób eksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript za pomocą potoku zawartości obrazu.|  
-|[Praca z 3-zasoby do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera opis narzędzi edycji programu Visual Studio do tworzenia i manipulowania 3-zasoby, które obejmują tekstury i obrazów, 3-modele i programów do cieniowania.|  
-|[Porady: eksportowanie programu do cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania do cieniowania przy użyciu projektanta programu do cieniowania.|
+|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, który zawiera wstępnie obliczonych mipmapy.|  
+|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu, aby wyeksportować tekstury, zawierający wstępnie przemnożone wartości alfa.|  
+|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Opisuje sposób eksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript za pomocą potoku zawartości obrazu.|  
+|[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera opis narzędzi edycji programu Visual Studio do tworzenia i manipulowania 3-zasoby, które obejmują tekstury i obrazów, 3-modele i programów do cieniowania.|  
+|[Instrukcje: eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania do cieniowania przy użyciu projektanta programu do cieniowania.|
