@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8fda7a1663a8aa9ccbf1f89f2a3b05d74b0a2316
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typed-vs-untyped-datasets"></a>Wpisane a nietypizowane zbiory danych
 Typizowany zestaw dataset jest zestawu danych, który najpierw pochodzi od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektant obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy dataset. Informacje ze schematu (tabel, kolumn i tak dalej) są generowane i skompilowany w tej nowej klasy dataset jako zestaw obiektów pierwszej klasy i właściwości. Ponieważ typizowanego obiektu dataset pochodząca od klasy podstawowej <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, które przyjmują wystąpienia <xref:System.Data.DataSet> klasy jako parametr.  
@@ -44,4 +45,4 @@ Typizowany zestaw dataset jest zestawu danych, który najpierw pochodzi od podst
  Ogólnie rzecz biorąc są wielokrotnie podczas można dynamicznie utworzyć zestawu danych bez schematu dostępne. W takim przypadku zestawu danych jest po prostu wygodny struktury zachować informacje, jak długo dane można przedstawić w sposób relacyjnej. W tym samym czasie można korzystać z możliwości zestawu danych, takie jak możliwość serializować informacji do przekazania do inny proces lub zapisać pliku XML.
 
 ## <a name="see-also"></a>Zobacz także
-[Narzędzia zestawu danych](../data-tools/dataset-tools-in-visual-studio.md)
+[Narzędzia do obsługi zestawów danych](../data-tools/dataset-tools-in-visual-studio.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0077ababbbcfb1b2dff77a8847f5e0e0671241be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6f9fe7b24a1e2bdd68d92f6dd22952df0d2a057
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarchia leksykalna typów symboli
 W poniższej tabeli przedstawiono typy symbol w leksykalne hierarchii.  
@@ -30,18 +31,18 @@ W poniższej tabeli przedstawiono typy symbol w leksykalne hierarchii.
 |[Adnotacja](../../debugger/debug-interface-access/annotation.md)|Określa lokalizację adnotacjami w kodzie programu.|  
 |[Blok](../../debugger/debug-interface-access/block.md)|Określa zakresy typów zagnieżdżonych funkcji.|  
 |`Compiland`|Określa `compiland` połączone z pliku .exe.|  
-|[Compilanddetails —](../../debugger/debug-interface-access/compilanddetails.md)|Określa dane compiland, które mogą wymagać ładowania compiland dodatkowych szczegółów i w związku z tym pociągnąć za sobą środowiska wykonawczego obciążenie, można pobrać.|  
-|[Compilandenv —](../../debugger/debug-interface-access/compilandenv.md)|Określa wszelkie dodatkowe zmienne środowiskowe istotne dla kompilacji compiland.|  
-|[Niestandardowe (Debug Interface Access SDK)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Określa symbol zdefiniowany przez użytkownika.|  
-|[Dane (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Określa takie zmienne jako parametry, zmienne lokalne, zmienne globalne i elementów członkowskich klasy.|  
-|[Wywołanie pliku exe](../../debugger/debug-interface-access/exe.md)|Określa globalny zakres danych. odnosi się do całego pliku .exe lub .dll.|  
-|[Funcdebugend —](../../debugger/debug-interface-access/funcdebugend.md)|Określa funkcja, która ma zdefiniowanych punktów, w których debugowanie jest aby zakończyć.|  
-|[Funcdebugstart —](../../debugger/debug-interface-access/funcdebugstart.md)|Określa funkcja, która ma zdefiniowanych punktów, w których debugowanie jest rozpoczęcie.|  
-|[Funkcja (Debug Interface Access SDK)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Określa funkcję.|  
-|[Etykieta (Debug Interface Access SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Określa lokalizację, w kodzie programu.|  
-|[Publicsymbol —](../../debugger/debug-interface-access/publicsymbol.md)|Określa zewnętrzny symbol, który jest wyświetlany podczas kompilowania programu wykonywalnego.|  
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Określa dane compiland, które mogą wymagać ładowania compiland dodatkowych szczegółów i w związku z tym pociągnąć za sobą środowiska wykonawczego obciążenie, można pobrać.|  
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Określa wszelkie dodatkowe zmienne środowiskowe istotne dla kompilacji compiland.|  
+|[Niestandardowe (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Określa symbol zdefiniowany przez użytkownika.|  
+|[Dane (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Określa takie zmienne jako parametry, zmienne lokalne, zmienne globalne i elementów członkowskich klasy.|  
+|[Exe](../../debugger/debug-interface-access/exe.md)|Określa globalny zakres danych. odnosi się do całego pliku .exe lub .dll.|  
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Określa funkcja, która ma zdefiniowanych punktów, w których debugowanie jest aby zakończyć.|  
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Określa funkcja, która ma zdefiniowanych punktów, w których debugowanie jest rozpoczęcie.|  
+|[Funkcja (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Określa funkcję.|  
+|[Etykieta (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Określa lokalizację, w kodzie programu.|  
+|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Określa zewnętrzny symbol, który jest wyświetlany podczas kompilowania programu wykonywalnego.|  
 |[Thunk](../../debugger/debug-interface-access/thunk.md)|Określa `thunk`.|  
-|[Usingnamespace —](../../debugger/debug-interface-access/usingnamespace.md)|Określa `namespace`identyfikator.|  
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Określa `namespace`identyfikator.|  
   
 > [!NOTE]
 >  Symbol dodatkowe właściwości mogą być dostępne w zależności od typu symbolu. Te właściwości są wyświetlane w tematach pojedynczy symbol.  

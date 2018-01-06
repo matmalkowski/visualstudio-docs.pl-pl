@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4efdd5297b1a4b995ba7d3e45edc9b2c982f6ecd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c76c61f79b0a76d923f92084a1e1ccdca82b60c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Wylicza według adresu różne symbole zawarte w źródle danych.  
@@ -104,4 +105,4 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
- [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)
+ [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

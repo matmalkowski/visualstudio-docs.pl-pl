@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: e84f946915328eb0ee5a49e690b2ee520d29e968
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 272b648b7b7bc27ae2f043a3a3d0541c87822258
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio i Xamarin
 Xamarin jest to platforma programistyczna aplikacji mobilnej do tworzenia natywnych iOS, Android i Windows aplikacji ze wspólnego C# / .NET kod elementu bazowego, uzyskanie 75% do prawie 100% kodu ponownego użycia między platformami. Aplikacje napisane na platformie Xamarin i C# ma pełny dostęp do podstawowej platformy interfejsów API i interfejsów użytkownika natywnej kompilacji i skompilować specyficzne dla platformy pakietów, tak aby mały wpływ na wydajność środowiska uruchomieniowego. (Uwaga: program Xamarin obsługuje również F #, ale w tej dokumentacji koncentruje się na C# tylko. Visual Basic nie jest obsługiwana w tej chwili.)  

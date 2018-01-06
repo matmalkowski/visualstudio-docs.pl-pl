@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26449893366c5c63892349976ef5db1c47dd8036
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2cd5f53c2b563e24781d6c8b4469743fa81cc500
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
 Pobiera adres podstawowy ramki.  
@@ -39,4 +40,4 @@ HRESULT get_base (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)
+ [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio
 Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) i [Sprawdź środowisku Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym przewodniku przedstawiono sposób tworzenia aplikacji platformy Xamarin basic (pokazana poniżej) z natywnego warstwy interfejsu użytkownika. Udostępniony kod znajduje się w bibliotece klas przenośnych (PCL) natywnego interfejsu użytkownika, i projekty poszczególnych platform zawierają definicje interfejsu użytkownika.  
@@ -251,7 +252,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**tekst**|**Wyszukiwanie według kod pocztowy**|  
-    |**Identyfikator**|`@+id/ZipCodeSearchLabel`|  
+    |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
     |**stylu tekstu**|`bold`|  
@@ -283,7 +284,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**tekst**|**Kod pocztowy**|  
-    |**Identyfikator**|`@+id/ZipCodeLabel`|  
+    |**id**|`@+id/ZipCodeLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginTop**|`5dp`|  
   
@@ -304,7 +305,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
-    |**Identyfikator**|`@+id/zipCodeEntry`|  
+    |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
     |**Szerokość**|`165dp`|  
@@ -327,7 +328,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
-    |**Identyfikator**|`@+id/weatherBtn`|  
+    |**id**|`@+id/weatherBtn`|  
     |**tekst**|**Pobierz pogody**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  

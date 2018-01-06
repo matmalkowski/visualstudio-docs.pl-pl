@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 771506897b5c40242c26a06db4e176e6eb785b21
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-project-settings"></a>Ustawienia projektu debugowania
 Niektóre ustawienia projektu wpłynąć na debugowanie. Te ustawienia określają czynności, takich jak katalogi, jakie debuger wygląda na polecenia i argumentów polecenia używane do uruchomienia programu i typ informacji o debugowaniu utworzonych dla programu. Możesz zmienić te ustawienia w **strony właściwości** okno dialogowe.  

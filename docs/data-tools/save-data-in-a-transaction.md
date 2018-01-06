@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Wskazówki: Zapisywanie danych w transakcji
 W tym przewodniku pokazano, jak można zapisać danych w transakcji za pomocą <xref:System.Transactions> przestrzeni nazw. W tym przewodniku utworzysz aplikacji formularzy systemu Windows. Użyjesz Kreator konfiguracji źródła danych można utworzyć zestawu danych dla dwóch tabel w bazie danych Northwind. Zostanie dodana dane powiązane kontrolki formularza systemu Windows i będzie zmodyfikować kod używany w parametrze BindingNavigator na przycisk zapisywania do aktualizacji bazy danych wewnątrz elementu TransactionScope.  
@@ -175,4 +176,4 @@ Aby uzgadnianie zmiany do powiązanych danych przebiega następująco:
   
 ## <a name="see-also"></a>Zobacz także
 [Porady: zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)  
-[Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+[Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

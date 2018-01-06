@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3f8a31f886548d03f7acac58d392713ced297b42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: cb3f6c23d4994346dab26e800c116ad0c7301f4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, update lub metody delete
 Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, update lub metody delete. Jeśli zostanie usunięta, te metody także zostaną usunięte. Czy chcesz kontynuować?  
@@ -36,5 +37,5 @@ Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, upda
      Zamyka okno komunikatu i nie zostały zmienione.  
   
 ## <a name="see-also"></a>Zobacz także
-[Komunikaty Projektanta obiektów relacyjnych](../data-tools/o-r-designer-messages.md)  
+[Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

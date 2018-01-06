@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ca28bc1fd6a76262b47800dcca466e8843d3271
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da5da213d400f846f634a98dbdbe919cedf03bcd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Unikaj wywoływania problematycznych metod
 |||  
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
  Komunikaty z tej reguły ma pomijać tylko, jeśli nie alternatywne metody problemy nie są dostępne.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ostrzeżenia niezawodności](../code-quality/reliability-warnings.md)
+ [Ostrzeżenia dotyczące niezawodności](../code-quality/reliability-warnings.md)

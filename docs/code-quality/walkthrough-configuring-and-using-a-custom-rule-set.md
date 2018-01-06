@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Wskazówki: konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
 W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały skonfigurowane do używania niestandardowych *zestaw reguł* w bibliotece klas. Możesz wybrać zestaw reguł, które odnoszą się do typ projektu, do którego określony dla rozwiązania lub wybrać alternatywny reguły zestawów do konkretna potrzeba, takie jak skanowanie starszego kodu dla problemów, które można naprawić w sposób nierozdzielający zrealizowania. W obu przypadkach można również dostosować dostrajania wymogami projektu zestawów reguł.  
@@ -154,4 +155,4 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Konfigurowanie analizy kodu dla projektu zarządzanego kodu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Odwołanie zestawu reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
+ [Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)

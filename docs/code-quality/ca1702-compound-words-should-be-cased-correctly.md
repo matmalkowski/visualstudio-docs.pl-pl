@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c8606656b7ffe5f64c4c162b85d24bdbd9b1de0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d410f3796cdb30a620f0e0260f8cd529a4428831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Wyrazy złożone należy zapisywać z uwzględnieniem wielkości liter
 |||  
@@ -51,8 +52,8 @@ ms.lasthandoff: 10/31/2017
   
  [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: Identyfikatory powinny różnić się tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zasady nazewnictwa](/dotnet/standard/design-guidelines/naming-guidelines)   
- [Konwencje wielkość liter](/dotnet/standard/design-guidelines/capitalization-conventions)
+ [Konwencje dotyczące wielkości liter](/dotnet/standard/design-guidelines/capitalization-conventions)

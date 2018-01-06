@@ -16,18 +16,19 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a362829f776cb1a9a50609c83821ba569537796a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 21ec79e9cb20e68ee57298a0d7a197657a616e31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
 SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą adnotacji kodu źródłowego, możesz wprowadzić zamiar za kodu jawnego. Adnotacje również włączyć funkcję automatycznej analizy statycznej narzędzia do analizy kodu dokładniej ze znacznie mniejszą liczbę fałszywych alarmów i fałszywych wyników negatywnych.  
   
  Artykuły w tej sekcji dokumentacji aspektów SAL, zapewniają odwołanie SAL składni i znajdują się przykłady użycia.  
   
--   [Poznanie SAL](../code-quality/understanding-sal.md)  
+-   [Informacje o języku SAL](../code-quality/understanding-sal.md)  
   
      Zawiera informacje i przykłady pokazujące podstawowe adnotacji SAL.  
   
@@ -47,7 +48,7 @@ SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą adnotac
   
      Opisano sposób korzystania z adnotacji SAL mechanizmy blokady.  
   
--   [Określanie, kiedy i gdzie dotyczy adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+-   [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      Wyświetla listę adnotacji SAL Określ warunek lub zakresu (umieszczania) innych adnotacji SAL.  
   

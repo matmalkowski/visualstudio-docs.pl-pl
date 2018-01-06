@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c3b336305e0365d6a1bd014e24bf548e38c7848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 137c584b787bb0534770ca6f16bd8b326b8f1acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functiontype"></a>FunctionType
 Każdy podpisu unique — funkcja `SymTagFunctionType` symbolu. Każdy parametr jest rozpoznawany jako klasy podrzędnej symbol `SymTagFunctionArgType` tagu.  
@@ -49,4 +50,4 @@ Każdy podpisu unique — funkcja `SymTagFunctionType` symbolu. Każdy parametr 
 ## <a name="see-also"></a>Zobacz też  
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Cv_access_e — wyliczenie](../../debugger/debug-interface-access/cv-access-e.md)   
- [Functionargtype —](../../debugger/debug-interface-access/functionargtype.md)
+ [FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)

@@ -77,11 +77,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
 Ten temat zawiera szczegółowe przyjrzeć się sterty debugowania CRT.  
@@ -305,11 +306,11 @@ typedef struct _CrtMemState
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
-|[_Crtmemcheckpoint —](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Zapisuje migawkę sterty w **_crtmemstate —** struktury dostarczone przez aplikację.|  
-|[_Crtmemdifference —](/cpp/c-runtime-library/reference/crtmemdifference)|Porównuje dwie struktury stanu pamięci, zapisuje różnica między nimi w strukturze trzeci stan i zwraca wartość PRAWDA, jeśli dwa stany są różne.|  
-|[_Crtmemdumpstatistics —](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Zrzuty danego **_crtmemstate —** struktury. Struktura może zawierać migawkę stanu sterty debugowania w danym momencie lub różnicę między dwiema migawkami.|  
-|[_Crtmemdumpallobjectssince —](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Zrzuty informacji na temat wszystkich obiektów przydzielonych od danego migawki sterty lub po rozpoczęciu wykonywania. Za każdym razem, gdy jego zrzuty **_client_block —** bloku, wywołuje funkcję punktu zaczepienia dostarczone przez aplikację, jeśli jeden został zainstalowany przy użyciu **_crtsetdumpclient —**.|  
-|[_Crtdumpmemoryleaks —](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Określa, czy wszystkie pamięci przecieków wystąpił od momentu rozpoczęcia wykonywania programu, a jeśli tak, zrzuty wszystkie przydzielone obiekty. Za każdym razem, gdy **_crtdumpmemoryleaks —** zrzuty **_client_block —** bloku, wywołuje funkcję punktu zaczepienia dostarczone przez aplikację, jeśli jeden został zainstalowany przy użyciu **_crtsetdumpclient —**.|  
+|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Zapisuje migawkę sterty w **_crtmemstate —** struktury dostarczone przez aplikację.|  
+|[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Porównuje dwie struktury stanu pamięci, zapisuje różnica między nimi w strukturze trzeci stan i zwraca wartość PRAWDA, jeśli dwa stany są różne.|  
+|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Zrzuty danego **_crtmemstate —** struktury. Struktura może zawierać migawkę stanu sterty debugowania w danym momencie lub różnicę między dwiema migawkami.|  
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Zrzuty informacji na temat wszystkich obiektów przydzielonych od danego migawki sterty lub po rozpoczęciu wykonywania. Za każdym razem, gdy jego zrzuty **_client_block —** bloku, wywołuje funkcję punktu zaczepienia dostarczone przez aplikację, jeśli jeden został zainstalowany przy użyciu **_crtsetdumpclient —**.|  
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Określa, czy wszystkie pamięci przecieków wystąpił od momentu rozpoczęcia wykonywania programu, a jeśli tak, zrzuty wszystkie przydzielone obiekty. Za każdym razem, gdy **_crtdumpmemoryleaks —** zrzuty **_client_block —** bloku, wywołuje funkcję punktu zaczepienia dostarczone przez aplikację, jeśli jeden został zainstalowany przy użyciu **_crtsetdumpclient —**.|  
   
  ![Powrót do początku](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [zawartości](#BKMK_Contents)  
   

@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2799e2425ec9748075fc082881243658c363e327
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fd882c536fefde9a9eb6ab546d6049d1f1216771
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza systemu Windows do wyszukiwania danych
 Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Można na przykład wyświetlanie zleceń dla określonych odbiorców lub szczegóły określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formularzu, a następnie zapytanie jest wykonywane przy użyciu danych wejściowych użytkownika jako parametr; oznacza to, że jest wybrane dane na podstawie zapytania parametrycznego. Zapytanie zwraca tylko dane, które spełnia kryteria wprowadzony przez użytkownika. W tym przewodniku pokazano, jak utworzyć kwerendę, która zwraca klientów w określonym mieście i zmodyfikować interfejsu użytkownika, dzięki czemu użytkownicy mogą wprowadzać nazwę miejscowości i naciśnij przycisk, aby wykonać zapytanie.  

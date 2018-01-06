@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef0bff2d084abc51f22bccc8aeef42d1545a5ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cdd8c9d2e581df3e7b0ebeba092a212fb7a89f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 Zapewnia kontrolę nad jak DIA SDK oblicza wirtualnych i względną wirtualnych adresów dla obiektów debugowania.  
@@ -59,4 +60,4 @@ IDiaAddressMap : IUnknown
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)
+ [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 5309ce8676723b712790f061771e6d965a73ae21
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 35e0f7e8b84c5f2ea38b9f5871393955795faa2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Nie można zmodyfikować projektanta podczas debugowania
 Ten komunikat jest wyświetlany, gdy podejmowana jest próba do modyfikowania elementów w Projektancie obiektów relacyjnych, gdy aplikacja działa w trybie debugowania. Gdy aplikacja działa w trybie debugowania, Projektant obiektów relacyjnych jest tylko do odczytu.  
@@ -28,5 +29,5 @@ Ten komunikat jest wyświetlany, gdy podejmowana jest próba do modyfikowania el
      Aplikacja przestaje debugowania i elementów w Projektancie obiektów relacyjnych można modyfikować.  
   
 ## <a name="see-also"></a>Zobacz także
-[Komunikaty Projektanta obiektów relacyjnych](../data-tools/o-r-designer-messages.md)  
+[Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projektów baz danych i aplikacji warstwy danych w programie Visual Studio  
 Projektów bazy danych służy do tworzenia nowych baz danych, nowych aplikacji warstwy danych (DAC) oraz do aktualizowania istniejących baz danych oraz aplikacji warstwy danych. Zarówno projektów bazy danych, jak i projektów DAC umożliwiają dotyczą metody zarządzania projektu i kontroli wersji wysiłków programowanie bazy danych w podobny sposób zastosowania tych metod do kodu zarządzanego i natywnego. Może ułatwić zarządzanie zmianami do baz danych i serwerów baz danych przez utworzenie zespołu deweloperów *projektu DAC*, *projekt bazy danych*, lub *Projekt serwera* i umieścić go w ramach kontroli wersji. Członkowie zespołu można zapoznać się z plików podejmowaniu, tworzenie i testowanie zmian w *izolowane środowisko*, lub piaskownicy przed udostępnieniem je zespołowi. Aby zapewnić jakości kodu, zespołu Zakończ i przetestować w środowisku przemieszczania wszystkich zmian dla konkretnej wersji bazy danych, przed wdrożeniem zmian w środowisku produkcyjnym.  
@@ -37,4 +38,4 @@ Aby uzyskać listę funkcji bazy danych, które są obsługiwane przez aplikacje
 |**Tworzenie prototypów, weryfikowanie przetestować wyniki oraz modyfikowanie skryptów bazy danych i obiektów:** można użyć [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] edytora w celu wykonania tych zadań.|-   [Zapytanie i edytory tekstów (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (witrynę sieci web firmy Microsoft)|  
   
 ## <a name="see-also"></a>Zobacz także
-[Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+[Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

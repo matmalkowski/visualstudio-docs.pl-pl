@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>Praca z metrykami kodów
 
@@ -103,7 +104,7 @@ Można wybrać i skopiować wybranego wiersza danych metryki kodu do Schowka jak
 
 Można utworzyć [programu Visual Studio Team Services (VSTS)](/vsts/index) powoduje elementu roboczego, który jest oparty na **wyniki metryki kodu** okna. Po utworzeniu elementu roboczego programu Visual Studio automatycznie wprowadzi tytuł w **tytuł** dane metryk pola i kodu w ramach **historii** kartę.
 
-Aby uzyskać więcej informacji na temat programu VSTS elementów roboczych, zobacz [elementy robocze](/vsts/work/work-items/index).
+Aby uzyskać więcej informacji na temat programu VSTS elementów roboczych, zobacz [(VSTS) elementów roboczych](/vsts/work/work-items/index).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Aby utworzyć element roboczy na podstawie wyniku
 

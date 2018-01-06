@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0091e17cf24a9476dde84cf2d8ad1a34f94e2cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 *Hierarchiczna aktualizacja* proces zapisywanie zaktualizowanych danych (z zestawu danych z dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu zasady integralności referencyjnej. *Integralność referencyjna* odwołuje się do reguły spójności udostępniane przez ograniczenia w bazie danych, które kontrolują zachowanie wstawiania, aktualizowania i usuwania rekordów powiązanych. Na przykład jest integralności referencyjnej, wymusza tworzenie rekordu klienta przed zezwoleniem zamówień ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacje w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md)  
@@ -121,4 +122,4 @@ Oprócz zatwierdzania zmian w tabeli podrzędnych przed zapisaniem danych do baz
 |`UpdateOrder`Właściwość|Określa kolejność poszczególnych insert, update i polecenia usuwania. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, które wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

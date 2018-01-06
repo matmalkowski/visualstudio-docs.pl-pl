@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26dd5500f50b185c31809d9882e03e56541a567a
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 775c03583a2fac35f2b62525bf5a18a67f250cef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Dodawanie kodu do zestawów danych w aplikacjach warstwowych
 Można rozszerzyć funkcjonalności zestawu danych, tworząc plik częściowej klasy dla zestawu danych i dodawanie kodu do niego (zamiast Dodawanie kodu do *DatasetName*. Plik Dataset.Designer). Klasy częściowe Włącz kod dla określonej klasy podzielony między wiele plików fizycznych. Aby uzyskać więcej informacji, zobacz [częściowe](/dotnet/visual-basic/language-reference/modifiers/partial) lub [klasy częściowe i metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
@@ -65,7 +66,7 @@ Domyślnie po oddzieleniu zestawu danych i kod TableAdapter, wynik jest plik odr
   
 ## <a name="see-also"></a>Zobacz także
 [Omówienie aplikacji warstwowych](../data-tools/n-tier-data-applications-overview.md)   
-[Dodawanie kodu do TableAdapters w aplikacjach warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[Dodawanie kodu do adapterów TableAdapter w aplikacjach n-warstwowych](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
 [Tworzenie i konfigurowanie TableAdapters](create-and-configure-tableadapters.md)  
 [Hierarchiczna aktualizacja — Przegląd](hierarchical-update.md)     
 [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

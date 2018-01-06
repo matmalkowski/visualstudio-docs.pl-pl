@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych z WPF i Entity Framework 6
 Ta walkthough przedstawiono sposób tworzenia aplikacji podstawowe "formularzy nad danymi" w programie Visual Studio z bazy danych LocalDB programu SQL Server, bazy danych Northwind, Entity Framework 6 i Windows Presentation Foundation. Widoczny jest sposób czy podstawowe wiązanie danych z widoku główny szczegółowy i ma również niestandardowe "powiązanie Navigator" z przyciski "Przenieś następny", "Przenieś poprzedni," "Przenieś na początek," "Przenieś na koniec," "Aktualizuj" i "Delete".  
@@ -425,5 +426,5 @@ Dodaj te metody obsługi do klasy okna głównego w MainWindow.xaml.cs. Jeśli T
 Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Powinna zostać wyświetlona klienta i kolejność danych w siatce, a przycisków nawigacji powinny działać zgodnie z oczekiwaniami. Kliknij pozycję "Commit", aby dodać nowego klienta lub kolejności do modelu po wprowadzeniu danych. Kliknij przycisk "Anuluj", aby utworzyć kopię poza nowego klienta lub nowy formularz kolejności bez zapisywania danych. Możesz wprowadzić zmian do istniejących klientów i zamówienia bezpośrednio w polach tekstowych, a te zmiany są automatycznie zapisywane w modelu.  
   
 ## <a name="see-also"></a>Zobacz także
-[Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  
+[Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  
 [Dokumentację programu Entity Framework](https://msdn.microsoft.com/en-us/data/ee712907.aspx)

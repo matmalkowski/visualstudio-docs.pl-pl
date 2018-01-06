@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 520882b8d1b24cc7bc346ae185de8f186e4fa163
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac62bc901629e65d5104bede66046711dd879930
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Nie zmniejszaj widoczności dziedziczonego elementu członkowskiego
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  Metoda prywatna w niezamknięty typ ma podpis, który jest taki sam jak publiczny metody zadeklarowanej w typie podstawowym. Metoda prywatna nie jest ostateczny.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Nie należy zmieniać modyfikatora dostępu dla dziedziczonych elementów członkowskich. Zmiana dziedziczonego elementu członkowskiego na prywatny nie uniemożliwia wywołującym uzyskania dostępu do implementacji metody klasy podstawowej. Jeśli element członkowski ma zostać prywatnych i typ jest otwarty, dziedziczenie typów mogą wywoływać ostatniego wykonania publicznej metody w hierarchii dziedziczenia. Jeśli musisz zmienić modyfikator dostępu, metoda powinna być oznaczona jako ostatecznego lub jego typu powinny być zapieczętowane aby zapobiec zastąpieniu metody.  
+ Nie należy zmieniać modyfikatora dostępu dla dziedziczonych elementów członkowskich. Zmiana dziedziczonej składowej na prywatną nie uniemożliwia wywołującym uzyskania dostępu do implementacji metody klasy podstawowej. Jeśli element członkowski ma zostać prywatnych i typ jest otwarty, dziedziczenie typów mogą wywoływać ostatniego wykonania publicznej metody w hierarchii dziedziczenia. Jeśli musisz zmienić modyfikator dostępu, metoda powinna być oznaczona jako ostatecznego lub jego typu powinny być zapieczętowane aby zapobiec zastąpieniu metody.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby usunąć naruszenie tej reguły, zmienić dostępu za prywatne. Alternatywnie Jeśli język programowania obsługuje tę funkcję, możesz wprowadzić metody końcowego.  

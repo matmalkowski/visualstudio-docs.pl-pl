@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data"></a>Zapisywanie danych
 Zapisywanie danych jest proces utrwalanie zmienić danych w modelu danych aplikacji z powrotem do oryginalnego magazynu danych, zwykle relacyjnej bazy danych takich jak SQL Server.  
@@ -40,7 +41,7 @@ Zapisywanie danych jest proces utrwalanie zmienić danych w modelu danych aplika
  W poniższych tematach opisano pojęcia i zadania związane z zapisywania danych.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
-[Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)  
+[Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)  
  Zawiera omówienie sposobu zmiany zostały wprowadzone w zestawie danych i jak zestawu danych śledzi informacje o zmianach, aby zapisać te zmiany do bazy danych.  
   
 [Porady: Dodawanie, modyfikowanie i usuwanie jednostek (usługi danych WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  

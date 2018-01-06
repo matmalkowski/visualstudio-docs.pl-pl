@@ -11,11 +11,14 @@ ms.assetid: C06FAB2E-F592-4EFF-B96A-58858C92DCEB
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: 3b1ad3d7dc6af48986e8b10278a8b8135843239d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 19b98dc472b9e01529725b95133d289edff6334d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-sample-game-assets"></a>Importuj przykładowe zasoby gier
 
@@ -47,4 +50,4 @@ Po pliki zostały ukończone importowania, należy dodać pliki wymagane sceny w
 
 ## <a name="next-step"></a>Następny krok
 
-* [Testowanie gry próbki](visual-studio-tools-for-unity-azure-game.md)
+* [Testowanie przykładowej gry](visual-studio-tools-for-unity-azure-game.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0162e15d1692aa1ad6efef6a1a4d2a2088e8661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a750aa8e26242625b67e8e985f3dba1d8c09fd8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 Pobiera wyliczenie umożliwia klientowi iterację informacja o numerach wierszy wszystkich funkcji śródwierszowych, zgodne określonej nazwy.  
@@ -50,4 +51,4 @@ HRESULT findInlineesByName (
  [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
- [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+ [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

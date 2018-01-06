@@ -22,11 +22,12 @@ caps.latest.revision: "41"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d23453b502bc95a64dc84f1642a704261e28eb20
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: cplusplus
+ms.openlocfilehash: ade7e26ba6742ca85683c74928d0564d55f8b730
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Analiza kodu dla C/C++ — Ostrzeżenia
 Ta sekcja zawiera ostrzeżenia analizy kodu C/C++ z wyjątkiem tych, które zostały zgłoszone przez [C++ podstawowe wskazówki dotyczące programy](code-analysis-for-cpp-corecheck.md). Informacje dotyczące analizy kodu, zobacz [/ analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [Szybki Start: analiza kodu dla C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  

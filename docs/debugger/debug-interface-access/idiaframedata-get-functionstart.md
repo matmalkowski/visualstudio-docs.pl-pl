@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51303607eace37d5886c14efc1057bc50e4c8ce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7cd995a695f809737c0dbc4adfab0e76e2c8266
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.  
@@ -42,4 +43,4 @@ HRESULT get_functionStart (
  Istnieje możliwość ramka stosu nie będzie uruchomienia funkcji, ponieważ ramka reprezentuje wbudowanego metody lub funkcji wstawione do funkcji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

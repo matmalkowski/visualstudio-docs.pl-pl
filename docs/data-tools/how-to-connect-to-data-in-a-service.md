@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 334f31dcd68e031bfb25b4e0dcd6ce55b9d2f20c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 58d22a756edd625a9c664862d05de5fe405fd9f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Porady: łączenie z danymi w usłudze
 Łączenie aplikacji z danymi zwróconymi z usługą, uruchamiając [Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png) i wybierając **usługi** na **wybierz typ źródła danych**strony.  

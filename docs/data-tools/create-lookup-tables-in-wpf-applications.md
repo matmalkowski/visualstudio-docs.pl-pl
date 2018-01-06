@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 78322512fdc59b4ba661bca0d40d1532ac4c98e2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 4b403d3bbe2e42ee74af7a2f7babe8b2700dd0d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 Termin *tabeli odnośników* (nazywane również *powiązania wyszukiwania*) opisano formant, który wyświetla informacje dotyczące jednego danych tabeli na podstawie wartości pola klucza obcego w innej tabeli. Można utworzyć tabeli odnośników przeciągając węzeł główny tabeli nadrzędnej lub obiekt w **źródeł danych** okna na formant, który jest już powiązany z kolumną lub właściwości w tabeli podrzędnych.  
@@ -61,11 +62,11 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
   
 7.  W obszarze węzła podrzędnego kliknij menu rozwijane dla elementu, który dotyczy danych nadrzędnym a podrzędnym. (W powyższym przykładzie jest to **CustomerID** węzła.) Wybierz jedną z następujących typów formantów, które obsługują powiązanie wyszukiwania:  
   
-    -   **Pola kombi ComboBox**  
+    -   **ComboBox**  
   
-    -   **Pola listy**  
+    -   **ListBox**  
   
-    -   **Element ListView**  
+    -   **ListView**  
   
         > [!NOTE]
         >  Jeśli **ListBox** lub **ListView** formant nie jest wyświetlany na liście tych kontrolek można dodać do listy. Aby uzyskać informacje, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  

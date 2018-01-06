@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fd4f23ab77e2b810d5064bd45e9f7d530e9844e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1593800a2cde8ff0aa1bbecd169f5f3ebd601cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny przyrostek
 |||  
@@ -90,7 +91,7 @@ foreach(SomeType x in SomeDictionary.Values) { }
  Dla innych sufiksów nie Pomijaj ostrzeżenia od tej reguły. Sufiks umożliwia przeznaczenia być widoczne z nazwy typu.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
+ [CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Atrybuty](/dotnet/standard/design-guidelines/attributes)   

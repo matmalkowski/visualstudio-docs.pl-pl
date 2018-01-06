@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5ad51388ae1580ada61442798b46048ad71ece64
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: f78a3f48ce6e8d08134694bc03c80f9c2e9b3363
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 W [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] i [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], można tworzyć i modyfikować niestandardowy *zestaw reguł* do określonego projektu potrzeb skojarzonych z analizy kodu. Aby utworzyć regułę niestandardową C++ zestaw, projektu C/C++ musi być otwarty w programie Visual Studio IDE. Możesz następnie otwórz zestaw standardowych reguł w edytorze zestawu reguł, a następnie dodaj lub usuń określone zasady i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu Określa, że naruszono reguły.  

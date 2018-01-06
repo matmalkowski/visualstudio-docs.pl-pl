@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługa wyjątku współbieżności
 Wyjątków współbieżności (<xref:System.Data.DBConcurrencyException>) są wywoływane, gdy dwóch użytkowników próba zmiany tych samych danych w bazie danych, w tym samym czasie. W tym przewodniku tworzenia aplikacji systemu Windows, która ilustruje sposób catch <xref:System.Data.DBConcurrencyException>, odszukaj wiersz, który spowodował błąd i Dowiedz się strategię sposobu jego obsługa.  
@@ -224,4 +225,4 @@ Użytkownik będzie mógł zastąpienia bazy danych z wersją proponowanych, lub
 10. Wybieranie **nr** anuluje aktualizacji i aktualizuje zestaw danych z wartościami, które są obecnie w bazie danych. Wybieranie **tak** zapisuje proponowanej wartości w bazie danych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

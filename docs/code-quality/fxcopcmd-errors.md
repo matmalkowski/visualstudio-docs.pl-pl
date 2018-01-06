@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd — Błędy
 Fxcopcmd — nie należy wziąć pod uwagę wszystkie błędy jako krytyczny. Jeśli FxCopCmd informacji wystarczających do wykonania częściowej analizy, wykonuje błędy analizy i raporty, które wystąpiły. Kod błędu, który jest 32-bitową liczbę całkowitą, zawiera bitowe połączenie wartości liczbowe odpowiadające błędy.  
@@ -54,4 +55,4 @@ Fxcopcmd — nie należy wziąć pod uwagę wszystkie błędy jako krytyczny. Je
     >  FxCopCmd kod powrotu "Odwołań do zestawów błąd" 0x200 samodzielnie jest ostrzeżenie, a nie błąd. Kod powrotu wskazuje znaleziono brakujących odwołań pośrednie, ale że FxCopCmd mógł je obsłużyć. Jest to ostrzeżenie, że istnieje możliwość, że niektóre wyniki analizy mogą zabezpieczenia mogły zostać naruszone. Należy wziąć pod uwagę kod powrotny "Odwołań do zestawów błąd" jako błąd w połączeniu z innymi kodu powrotnego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Błędy aplikacji analizy kodu](../code-quality/code-analysis-application-errors.md)
+ [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)

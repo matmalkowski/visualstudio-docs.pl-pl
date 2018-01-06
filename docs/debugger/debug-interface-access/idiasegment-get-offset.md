@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e0b3c12cb32bd2582cdfc603dbdde5623c6f77e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 49959474b91183a662319e04890787d15ba13d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
 Pobiera przesunięcie, w segmentach, w którym rozpoczyna się sekcji.  
@@ -39,4 +40,4 @@ HRESULT get_offset (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasegment —](../../debugger/debug-interface-access/idiasegment.md)
+ [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

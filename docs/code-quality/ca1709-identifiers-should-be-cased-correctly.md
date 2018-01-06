@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9332359228d657e9155996443822a5d1c11ad01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f563ca87212b6f4af45f68987469b0c1370a7a18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identyfikatory powinny być zapisywane z uwzględnieniem wielkości liter
 |||  
@@ -63,4 +64,4 @@ ms.lasthandoff: 10/31/2017
  Można również dodać konkretnych terminów, skrótów i akronimów do słownika analizy kodu. Warunki określone w słownika nie spowoduje naruszeń tej reguły. Aby uzyskać więcej informacji, zobacz [porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1708: Identyfikatory powinny różnić się tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

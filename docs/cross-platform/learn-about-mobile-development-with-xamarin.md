@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: xamarin
+ms.openlocfilehash: 9e2c341d9516959fcc7ef6bc40215023891d618a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin
 Ten temat kieruje do materiałów Przegląd, która pomaga w zrozumieniu tworzenie wieloplatformowych aplikacji mobilnych za pomocą platformy Xamarin. Jeśli użytkownik nie został jeszcze zainstalowany program Visual Studio i Xamarin, uruchom [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) procesu należy następnie wróć tutaj do pracy przy użyciu tych zasobów, gdy pliki instalacyjne są uruchomione.  

@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>Refaktoryzacja zmiany nazwy (C#)
 **Zmień nazwę** jest funkcją refaktoryzacji w Visual Studio zintegrowane środowisko programistyczne (IDE), która zapewnia łatwy sposób można zmienić nazwy identyfikatory symboli kodu, takich jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typów. **Zmień nazwę** może służyć do zmiany nazwy w komentarze i ciągi i zmienić deklaracje i wywołania identyfikatora.  

@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 340fcf2994e7f013f8d23ccb291e3ceb55510348
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7542e21963f272dd10180203a52bee9994de2cdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Nie przekazuj typów przez odwołanie
 |||  
@@ -86,4 +87,4 @@ ms.lasthandoff: 10/31/2017
 **Przekazywanie poprzez wartość zwrotna:**  
 **12345 ABCDE**   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1021: Unikanie parametrów](../code-quality/ca1021-avoid-out-parameters.md)
+ [CA1021: Unikaj parametrów out](../code-quality/ca1021-avoid-out-parameters.md)

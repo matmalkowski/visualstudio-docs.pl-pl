@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6be0c08efcd1f409bfb69775822e4904372f2511
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3e595046442092c11b068b6df6fde2a9a56e705
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementacje ICollection mają silnie typizowane elementy członkowskie
 |||  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1038: Wyliczenia powinny być silnie typizowane](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
+ [CA1038: Moduły wyliczające powinny być silnie typizowane](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
  [CA1039: Listy są silnie typizowane](../code-quality/ca1039-lists-are-strongly-typed.md)  
   

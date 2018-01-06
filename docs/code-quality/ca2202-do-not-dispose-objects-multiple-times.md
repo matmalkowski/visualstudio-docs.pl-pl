@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3439739626a81636020a6b645ba5820a59747f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nie należy usuwać obiektów wiele razy
 |||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
  Poprawnie zaimplementowana A <xref:System.IDisposable.Dispose%2A> metoda może być wywołana wiele razy bez generowania wyjątku. Jednak to nie jest gwarantowana i aby uniknąć generowania <xref:System.ObjectDisposedException?displayProperty=fullName> nie należy wywoływać <xref:System.IDisposable.Dispose%2A> więcej niż jeden raz w obiekcie.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2000: Usuwanie obiektów przed utratą zakresu](../code-quality/ca2000-dispose-objects-before-losing-scope.md)  
+ [CA2000: Likwiduj obiekty przed utratą zakresu](../code-quality/ca2000-dispose-objects-before-losing-scope.md)  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby rozwiązać problem naruszenie tej reguły, zmień implementację tak, to niezależnie od ścieżki kodu <xref:System.IDisposable.Dispose%2A> jest wywoływana tylko jeden raz dla obiekt.  

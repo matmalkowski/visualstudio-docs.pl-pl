@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32feb4aa34303414e54dd9c10fd91d600deb72cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bb8d748bbff828a3f6b08a589eb6d500b052da92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
 Pobiera przesunięcia część adresu kodu ramki.  
@@ -39,4 +40,4 @@ HRESULT get_addressOffset (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

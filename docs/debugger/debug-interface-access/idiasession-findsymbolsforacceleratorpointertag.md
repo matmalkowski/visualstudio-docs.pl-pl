@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f67263b385c184b0182716469f110c87bcebb50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d61c2fed68091df63aa356868321cfef7d386fc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 Zwraca wyliczenie symboli dla zmiennej, która odpowiada wartości określonego tagu w obiekcie nadrzędnym funkcja stub akceleratora.  
@@ -47,4 +48,4 @@ HRESULT findSymbolsForAcceleratorPointerTag (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)
+ [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05a0a339b413495aadfa397e5fec3b826f920026
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 Podczas tworzenia aplikacji, która obsługuje dane w bazie danych można wykonywać podstawowe zadania, takie jak definiowanie parametry połączenia, wstawiania danych i uruchamianie procedur składowanych. Wykonując w tym temacie, można wykryć jak wchodzić w interakcję z bazą danych z wewnątrz prostą aplikację "formularzy nad danymi" formularzy systemu Windows za pomocą Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — łącznie z zestawów danych LINQ do SQL i programu Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawionych w tym artykule.  
@@ -232,4 +233,4 @@ Aby ukończyć logiki formularza FillOrCancel, wykonaj następujące kroki.
 Wybierz **F5** klucz do tworzenia i testowania aplikacji po kodu każdego kliknij program obsługi zdarzeń, a następnie po Zakończ kodowania.
 
 ## <a name="see-also"></a>Zobacz także
-[Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+[Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

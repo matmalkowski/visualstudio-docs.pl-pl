@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91e31cb303211bce5107a91649057620946b1936
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ac250469c15d1578c875f793276154995d07f05
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 Pobiera identyfikator compiland w sekcji.  
@@ -39,4 +40,4 @@ HRESULT get_compilandId (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

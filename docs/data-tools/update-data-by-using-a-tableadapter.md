@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7d49f0ddc965327334aea471b1276b4e78987ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizowanie danych za pomocą TableAdapter
 Po ukończeniu zmodyfikowane i sprawdzić poprawności danych w zestawie danych, możesz wysłać zaktualizowane dane do bazy danych przez wywołanie metody `Update` metody [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Metody aktualizacji jednej tabeli danych i uruchamia polecenie poprawne (INSERT, UPDATE lub DELETE) na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. Zestaw danych ma powiązane tabele, Visual Studio generuje klasę TableAdapterManager, która służy do aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje zostały wprowadzone we właściwej kolejności, w oparciu o ograniczenia klucza obcego, które są zdefiniowane w bazie danych. Korzystając z formantów powiązanych z danymi, architektura wiązania danych tworzy zmienną członkowską klasy TableAdapterManager, o nazwie tableAdapterManager. 
@@ -53,4 +54,4 @@ Po ukończeniu zmodyfikowane i sprawdzić poprawności danych w zestawie danych,
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab52f6dee7152837c17508aac65eeab501c7f0c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef67fcde92715e1b405d337e3bdc41ae3835473e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Pobiera nazwę do kodu źródłowego z systemem innym niż plik; oznacza to, że kod, który zostało dodane.  
@@ -39,4 +40,4 @@ HRESULT get_virtualFilename (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md)
+ [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

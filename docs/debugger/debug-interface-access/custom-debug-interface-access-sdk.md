@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c1f768c5e4e7f76d63841bb59f07a403e1d78f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e367a96bd24840e734ada21d45ee35dfaee36b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Niestandardowe (Zestaw SDK dostępu do interfejsu debugowania)
 Niektóre kompilatory wprowadzać symbole, które nie są identyfikowane przez żaden z typów standardowe leksykalne symboli. Te symbole są identyfikowane za pomocą `SymTagCustom` tagu.  

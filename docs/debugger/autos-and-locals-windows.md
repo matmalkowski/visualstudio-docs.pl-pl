@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2504807bd4717ec7f42ed059e7ef4d962c7441e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Sprawdź zmienne w automatycznych i zmiennych lokalnych Windows w programie Visual Studio
 **Automatycznych** okna (podczas debugowania, **CTRL + ALT + V, A**, lub **debugowania > Windows > automatycznych**) i **zmiennych lokalnych** okna (podczas debugowania **CTRL + ALT + V, L**, lub **Debuguj > Windows > Zmienne lokalne**) są bardzo przydatne, gdy chcesz sprawdzić wartości zmiennych podczas debugowania. **Zmiennych lokalnych** wyświetlane zmienne zdefiniowane w zakresie lokalnego jest zazwyczaj funkcji lub metody, który jest aktualnie wykonywany. **Automatycznych** okna są wyświetlane zmienne używane wokół bieżącego wiersza (miejsce, w której debuger został zatrzymany). Dokładnie zmienne, które są wyświetlane w tym oknie różni się w różnych językach. Zobacz [co zmienne są wyświetlane w oknie automatycznych?](#bkmk_whatvariables) poniżej.  

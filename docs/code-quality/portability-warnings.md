@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 112f3686f2a3d21b2d5d493498b42e9b63fdb05b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: efd2d56700c70b27771623e618f61675b174da01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="portability-warnings"></a>Ostrzeżenia przenośności
 Ostrzeżenia przenośności obsługuje przenośność w różnych systemach operacyjnych.  
@@ -32,4 +33,4 @@ Ostrzeżenia przenośności obsługuje przenośność w różnych systemach oper
 |----------|-----------------|  
 |[CA1900: Pola typu wartości powinny być przenośne](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Ta reguła sprawdza, czy struktur, które są zadeklarowane za pomocą atrybutu układ jawny są wyrównane prawidłowo po przekazywane do kodu niezarządzanego na 64-bitowych systemach operacyjnych.|  
 |[CA1901: Deklaracje P/Invoke powinny być przenośne](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Ta zasada oblicza rozmiar każdego parametru i wartość zwracaną P/Invoke i weryfikuje, czy ich rozmiar jest prawidłowa, gdy są przekazywane do kodu niezarządzanego w 32-bitowych i 64-bitowych systemach operacyjnych.|  
-|[CA1903: Używaj tylko API z frameworku docelowego](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Element członkowski lub typ używa elementu członkowskiego lub typu wprowadzonego w dodatku Service Pack, który nie został uwzględniony razem ze wskazanym środowiskiem docelowym projektu.|
+|[CA1903: Używaj tylko interfejsu API platformy docelowej](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Element członkowski lub typ używa elementu członkowskiego lub typu wprowadzonego w dodatku Service Pack, który nie został uwzględniony razem ze wskazanym środowiskiem docelowym projektu.|

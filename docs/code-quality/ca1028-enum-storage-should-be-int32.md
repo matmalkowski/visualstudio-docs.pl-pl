@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd0f74a322e136263b6445db2692380dfea2efa3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b09082cd78b3b78dda28201e85099e87f87d8ad4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Pamięć wyliczenia powinna być Int32
 |||  
@@ -63,15 +64,15 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1008: Wyliczenia powinny mieć wartości zerowej](../code-quality/ca1008-enums-should-have-zero-value.md)  
+ [CA1008: Wyliczenia powinny zawierać wartość zero](../code-quality/ca1008-enums-should-have-zero-value.md)  
   
- [CA1027: Oznaczaj wyliczenia za pomocą FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
+ [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
- [CA2217: Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+ [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
- [CA1700: Nie nadawać wartościom enum oznaczenia "Reserved"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)  
+ [CA1700: Nie nadawaj wartościom wyliczenia nazwy „Reserved”](../code-quality/ca1700-do-not-name-enum-values-reserved.md)  
   
- [CA1712: Nie dodawaj prefiksu wartości enum nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
+ [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Byte?displayProperty=fullName>   

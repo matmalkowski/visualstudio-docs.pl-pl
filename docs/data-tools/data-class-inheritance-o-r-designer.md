@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 13864f690af8b57cc23a218e20a098002e70a2ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: c881f70b966a4a0b4d5bf173bcac4569d6a9c1ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-class-inheritance-or-designer"></a>Dziedziczenie klas danych (Projektanta obiektów relacyjnych)
 Inne obiekty, takich jak [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy można użyć dziedziczenia i pochodzić z innych klas. W kodzie można określić relacji dziedziczenia między obiektami przez zadeklarowanie, że jedna klasa dziedziczy z innej. W bazie danych relacji dziedziczenia są tworzone na kilka sposobów. [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) Obsługuje koncepcja dziedziczenia pojedynczej tabeli, jak często jest zaimplementowana w systemach relacyjnych.  

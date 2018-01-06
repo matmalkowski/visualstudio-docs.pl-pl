@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b6af518b68c8e9384ff701305bce9253eedac56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fbfadc19b1da36ce7e1fc261e48d0fe5d5ecf200
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Zwraca ramki przez wirtualny adres względny (RVA).  
@@ -44,4 +45,4 @@ HRESULT frameByRVA(
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

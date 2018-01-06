@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e404f0b893453fa319d5c4df97319f8e77720805
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-interface-access-sdk"></a>Zestaw SDK dostępu do interfejsu debugowania
 Microsoft debugowania interfejsu dostępu Software Development Kit (DIA SDK) zapewnia dostęp do debugowania informacje przechowywane w plikach bazy danych (.pdb) program generowane przez postcompiler narzędzi firmy Microsoft. Ponieważ format pliku PDB wygenerowany za pomocą narzędzi postcompiler ulega poprawki stałej, udostępnianie format jest niepraktyczne. Przy użyciu interfejsu API DIA, można tworzyć aplikacje, które wyszukiwać i przeglądać informacje o debugowaniu przechowywane w pliku PDB. Takie aplikacje można na przykład raport informacje zwrotne śledzenia stosu i analizowanie danych dotyczących wydajności.  
@@ -30,13 +31,13 @@ Microsoft debugowania interfejsu dostępu Software Development Kit (DIA SDK) zap
  [Wprowadzenie](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
  Zawiera omówienie DIA SDK, funkcje i określa, w którym zainstalowano wymaganego nagłówka i pliki biblioteki DIA SDK.  
   
- [Wykonywanie zapytania. Plik PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+ [Używanie zapytań dotyczących pliku .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  Instrukcje dotyczące sposobu używania interfejsu API DIA pliku .pdb kwerendy.  
   
  [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
  W tym artykule omówiono, jak symbole i tagi symboli są używane w interfejsie API DIA.  
   
- [Odwołanie](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+ [Dokumentacja](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
  Zawiera interfejsy, metody, wyliczenia i struktury DIA interfejsu API.  
   
  [Dia2dump — przykład](../../debugger/debug-interface-access/dia2dump-sample.md)  

@@ -25,11 +25,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ee3e5401b663435415c0f3004054090be82e916
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2870f1b74532b181ae2101ae01a0e95b494f6f61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debugowanie aplikacji w trybie mieszanym
 Aplikacją trybu mieszanego jest każda aplikacja, która łączy w sobie kod natywny (C++) z kodem zarządzanym (takim jak Visual Basic, Visual C# lub C++ działający w środowisku uruchomieniowym języka wspólnego). Debugowanie aplikacji w trybie mieszanym jest przede wszystkim przejrzystości [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; nie jest za bardzo różni się od debugowanie w trybie pojedynczej aplikacji. Istnieje jednak kilka specjalnych okoliczności.  

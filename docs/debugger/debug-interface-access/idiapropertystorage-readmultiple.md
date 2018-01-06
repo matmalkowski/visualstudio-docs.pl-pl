@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77ead9e28f86067c08aa610fc902f2a0847bfb25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffa66117095ef73ac9d25ce8117431f03ba0ad57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Odczytuje określony właściwości z bieżącego zestawu właściwości.  
@@ -50,4 +51,4 @@ HRESULT ReadMultiple(
  Jeśli nie znaleziono właściwość, odpowiadający mu wpis w `rgvar` tablica zawiera `VARIANT` z typem `VT_EMPTY`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiapropertystorage —](../../debugger/debug-interface-access/idiapropertystorage.md)
+ [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

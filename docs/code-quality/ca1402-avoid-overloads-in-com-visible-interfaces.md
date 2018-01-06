@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdba95f57b969173cdcbfecbb8c2d8bcbc298d32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9294e1aab07aa05bc10de507e0a5885a47ebcc40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Unikaj przeciążeń w interfejsach widocznych dla modelu COM
 |||  
@@ -69,10 +70,10 @@ void SomeMethod_3(int valueOne, int valueTwo);
 ## <a name="related-rules"></a>Powiązanych reguł  
  [CA1413: Unikaj pól niepublicznych w typach wartości widocznych dla modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
- [CA1407: Unikaj statycznych elementów członkowskich w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
+ [CA1407: Unikaj składowych statycznych w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
  [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Współdziałanie z kodem niezarządzanym](/dotnet/framework/interop/index)   
- [Long — typ danych](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+ [Long, typ danych](/dotnet/visual-basic/language-reference/data-types/long-data-type)

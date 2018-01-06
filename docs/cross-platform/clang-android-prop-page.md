@@ -44,11 +44,12 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Clang właściwości projektu (Android C++)
 
@@ -72,8 +73,8 @@ Kontrola zabezpieczeń | Kontrola zabezpieczeń pomaga wykryć przepełnienie st
 Kod niezależny | Generowanie pozycji niezależne kodu (PIC) do użycia w bibliotece udostępnionej.
 Użyj krótkich wyliczenia | Typ wyliczenia używa tylko liczby bajtów wymaganej przez wejściowy zestaw możliwych wartości.
 Włącz informacje typu Run-Time | Dodaje kod do sprawdzania typów obiektów C++ w czasie wykonywania (informacje o typie środowiska uruchomieniowego).     (frtti, fno-rtti)
-Standard języka C | Określa standard języka C. | **Domyślne**<br>**C89** -C89 Standard języka.<br>**C99** -C99 Standard języka.<br>**C11** -C11 Standard języka.<br>**C99 (GNU dialekt)** — Standard języka C99 (GNU dialekt).<br>**C11 (GNU dialekt)** — Standard języka C11 (GNU dialekt).<br>
-Standard języka C++ | Określa standard języka C++. | **Domyślne**<br>**C ++ 03** — Standard 03 języka C ++.<br>**C ++ 11** -C ++ 11 języka Standard.<br>**C ++ 14** -C ++ 14 języka Standard.<br>**03 c ++ (GNU dialekt)** C ++ - 03 Standard języka (GNU dialekt).<br>**C ++ 11 (GNU dialekt)** - C ++ 11 Standard języka (GNU dialekt).<br>**C ++ 14 (GNU dialekt)** - C ++ 14 Standard języka (GNU dialekt).<br>
+Standard języka C | Określa standard języka C. | **Default**<br>**C89** -C89 Standard języka.<br>**C99** -C99 Standard języka.<br>**C11** -C11 Standard języka.<br>**C99 (GNU dialekt)** — Standard języka C99 (GNU dialekt).<br>**C11 (GNU dialekt)** — Standard języka C11 (GNU dialekt).<br>
+Standard języka C++ | Określa standard języka C++. | **Default**<br>**C ++ 03** — Standard 03 języka C ++.<br>**C ++ 11** -C ++ 11 języka Standard.<br>**C ++ 14** -C ++ 14 języka Standard.<br>**03 c ++ (GNU dialekt)** C ++ - 03 Standard języka (GNU dialekt).<br>**C ++ 11 (GNU dialekt)** - C ++ 11 Standard języka (GNU dialekt).<br>**C ++ 14 (GNU dialekt)** - C ++ 14 Standard języka (GNU dialekt).<br>
 Definicje preprocesora | Definiuje symbole przetwarzania wstępnego dla pliku źródłowego. (-D).
 Usuń definicje preprocesora | Określa, że co najmniej jeden anulowanie definicji preprocesora.  (-U [macro])
 Usuń definicje wszystkich Preprocesorów | Usuń definicje wszystkich zdefiniowanych wcześniej wartości preprocesora.  (-undef)

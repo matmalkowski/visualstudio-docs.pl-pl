@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e6ed4bf0cb025feb2a4f52084857d9bdf5394770
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 403fe906172f31a979d9b714b8982fb5932c5b72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 Jest jedną z najbardziej typowych scenariuszy w aplikacjach do wyświetlania danych formularza w aplikacji systemu Windows, edycję danych i wysyłać zaktualizowane dane w bazie danych. W tym przewodniku tworzy formularz, który wyświetla dane z powiązanych tabel i przedstawia sposób edytowania rekordów i zapisać zmiany w bazie danych. W tym przykładzie użyto `Customers` i `Orders` tabele w bazie danych Northwind.  
@@ -163,4 +164,4 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
   
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

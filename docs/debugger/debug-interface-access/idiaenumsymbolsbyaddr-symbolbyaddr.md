@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b538c5ff956ebd6fcfa5d1cff111ec716def9c99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b44fd8ff54dbd19b3fb4d27d0088ceeda455ae2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 Umieszcza modułu wyliczającego, wykonując wyszukiwania przez numer sekcji obrazu i przesunięcie.  
@@ -48,4 +49,4 @@ HRESULT symbolByAddr (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsymbolsbyaddr —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

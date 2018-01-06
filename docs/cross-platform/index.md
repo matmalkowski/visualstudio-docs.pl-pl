@@ -5,11 +5,12 @@ ms.author: apexprodleads
 ms.topic: landing-page
 title: Mobile Development dokumentacji C++ | Dokumentacja firmy Microsoft
 description: "Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń z programem Visual Studio."
-ms.openlocfilehash: 2d7dc3860091e11ab7b8983d9f1b739ffd383ba3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: apexprodleads
+ms.openlocfilehash: ec8f21742192a098543986d117241d2bb29bb36d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mobile-development-with-c-documentation"></a>Tworzenie przenośnych za pomocą dokumentacji C++
 
@@ -85,7 +86,7 @@ Tworzenie natywnych aplikacji C++ dla systemu iOS, Android i Windows urządzeń 
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE i narzędzia do programowania w języku Visual C++</a><p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Zintegrowane środowisko projektowe i narzędzia projektowe Visual C++</a><p>
                     </div>
                 </div>
             </div>

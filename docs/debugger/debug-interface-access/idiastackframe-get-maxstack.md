@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33dc48e1753595c54e535813a27f70f1b0f9920f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69a633931acf6a07286ca393660eb76074697d17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
 Pobiera maksymalną liczbę bajtów wypychana na stosie w ramce.  
@@ -39,4 +40,4 @@ HRESULT get_maxStack (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)
+ [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

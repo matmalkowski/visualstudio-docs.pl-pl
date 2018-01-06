@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ef318d7c71a5770ea7a78ff078340b4f2dff960
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f31d0f5d236327db483c9698579c8c03129acd64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Rozwiązywanie problemów związanych z metrykami kodów
 Niektóre następujące problemy mogą występować w przypadku zbierać metryki kodu:  
@@ -31,4 +32,4 @@ Niektóre następujące problemy mogą występować w przypadku zbierać metryki
 -   Funkcja zawiera instrukcji switch (Select Case w języku Visual Basic). Kompilator różnice między [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i wcześniejszych wersjach może wygenerować inny kod MSIL dla niektórych zawierających fall-through przypadków instrukcji switch.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

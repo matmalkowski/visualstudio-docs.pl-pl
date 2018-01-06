@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 9f2373e3a851899d139360caf0f6bb8b6ab0efa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Porady: zapisywanie danych przy użyciu transakcji
 Zapisywanie danych w transakcji przy użyciu <xref:System.Transactions> przestrzeni nazw. Użyj <xref:System.Transactions.TransactionScope> obiekt, aby uczestniczyć w transakcji, która jest automatycznie zarządzane dla Ciebie.  
@@ -53,5 +54,5 @@ Aby wycofać transakcji, Zgłoś wyjątek przed wywołaniem <xref:System.Transac
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
   
 ## <a name="see-also"></a>Zobacz także
-[Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)  
-[Wskazówki: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)  
+[Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)  
+[Przewodnik: Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)  

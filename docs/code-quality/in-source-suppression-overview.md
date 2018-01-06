@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Ograniczanie w kodzie źródłowym - Omówienie
 Pomijanie w źródła jest możliwość Pomiń lub Ignoruj naruszeń analizy kodu w kodzie zarządzanym przez dodanie **SuppressMessage** atrybutu segmenty kodu, które powodują naruszenia. **SuppressMessage** atrybut jest atrybutem warunkowym, który jest dostępny w IL metadanych zestawu z kodu zarządzanego, tylko wtedy, gdy CODE_ANALYSIS symbol kompilacji jest definiowany w czasie kompilacji.  

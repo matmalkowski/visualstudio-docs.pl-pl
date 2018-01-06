@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474b6efeecc13b197f3189804682265beeba907e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ee2733643350b2fea9b78a9d876037497d35e41a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Odbiera wywołania zwrotne z symboli DIA lokalizowanie procedury w celu umożliwienia ograniczenia nałożone na lokalizowania procesu.  
@@ -54,4 +55,4 @@ IDiaLoadCallback2 : IDiaLoadCallback
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [Idiareadexeatoffsetcallback —](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [Idiareadexeatrvacallback —](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [Idialoadcallback —](../../debugger/debug-interface-access/idialoadcallback.md)
+ [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)

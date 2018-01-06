@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64360c57f0d4b09f0dc7e8026208c7ec542709c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 689fe39cfb8a7719efbba15b412800d9dfa78361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują naruszeń zasady w bibliotekach kodu zarządzanego. Ostrzeżenia są podzielone na reguły obszarów, takich jak projekt, lokalizacji, wydajności i zabezpieczeń. Każde ostrzeżenie oznacza naruszenia reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dotyczące każdego ostrzeżenia analizy kodu zarządzanego.  
@@ -47,16 +48,16 @@ Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują 
 |||  
 |-|-|  
 |[Ostrzeżenia dzięki CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia dzięki CheckId|  
-|[Ostrzeżenia kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejszy bibliotek i aplikacji za pośrednictwem prawidłowe użycie kryptograficzne.|  
-|[Ostrzeżenia projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują odpowiedniej biblioteki projektu określony przez [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zaleceń dotyczących projektowania.|  
-|[Ostrzeżenia globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują bibliotek gotowe i aplikacji.|  
-|[Ostrzeżenia międzyoperacyjności](../code-quality/interoperability-warnings.md)|Ostrzeżenia, które obsługują funkcję interakcji z klientami COM.|  
-|[Ostrzeżenia dotyczące utrzymania](../code-quality/maintainability-warnings.md)|Ostrzeżenia, które obsługują konserwacji biblioteki i aplikacji.|  
-|[Ostrzeżenia mobilności](../code-quality/mobility-warnings.md)|Ostrzeżenia, które obsługują efektywne zużycie energii.|  
-|[Ostrzeżenia nazewnictwa](../code-quality/naming-warnings.md)|Ostrzeżenia, które obsługują przestrzeganie konwencje nazewnictwa [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zaleceń dotyczących projektowania.|  
-|[Ostrzeżenia wydajności](../code-quality/performance-warnings.md)|Ostrzeżenia, które obsługują bibliotek wysokiej wydajności i aplikacji.|  
-|[Ostrzeżenia przenośności](../code-quality/portability-warnings.md)|Ostrzeżenia, które obsługują przenośność na różnych platformach.|  
-|[Ostrzeżenia niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodności biblioteki i aplikacji, takich jak odpowiednie użycie pamięci i wątku.|  
-|[Ostrzeżenia o zabezpieczeniach](../code-quality/security-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejszy bibliotek i aplikacji.|  
-|[Ostrzeżenia wykorzystania](../code-quality/usage-warnings.md)|Ostrzeżenia, które obsługują odpowiednie użycie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|[Ostrzeżenia dotyczące kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejszy bibliotek i aplikacji za pośrednictwem prawidłowe użycie kryptograficzne.|  
+|[Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują odpowiedniej biblioteki projektu określony przez [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zaleceń dotyczących projektowania.|  
+|[Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują bibliotek gotowe i aplikacji.|  
+|[Ostrzeżenia dotyczące współdziałania](../code-quality/interoperability-warnings.md)|Ostrzeżenia, które obsługują funkcję interakcji z klientami COM.|  
+|[Ostrzeżenia dotyczące konserwacji](../code-quality/maintainability-warnings.md)|Ostrzeżenia, które obsługują konserwacji biblioteki i aplikacji.|  
+|[Ostrzeżenia dotyczące mobilności](../code-quality/mobility-warnings.md)|Ostrzeżenia, które obsługują efektywne zużycie energii.|  
+|[Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)|Ostrzeżenia, które obsługują przestrzeganie konwencje nazewnictwa [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zaleceń dotyczących projektowania.|  
+|[Ostrzeżenia dotyczące wydajności](../code-quality/performance-warnings.md)|Ostrzeżenia, które obsługują bibliotek wysokiej wydajności i aplikacji.|  
+|[Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)|Ostrzeżenia, które obsługują przenośność na różnych platformach.|  
+|[Ostrzeżenia dotyczące niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodności biblioteki i aplikacji, takich jak odpowiednie użycie pamięci i wątku.|  
+|[Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejszy bibliotek i aplikacji.|  
+|[Ostrzeżenia dotyczące użycia](../code-quality/usage-warnings.md)|Ostrzeżenia, które obsługują odpowiednie użycie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
 |[Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)|Błędy, które wystąpić, jeśli zasad analizy kodu nie jest spełniony na zaewidencjonowania.|

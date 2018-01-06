@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf7025f4a9fb9bef9f8980ae04bf0c8cae056df5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 777201a1bcea69a5a7c6a5d13c135553bfcc6466
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
 Pobiera sekwencję wyliczany debugowania strumieni danych.  
@@ -40,4 +41,4 @@ HRESULT getEnumDebugStreams (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiaenumdebugstreams —](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+ [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

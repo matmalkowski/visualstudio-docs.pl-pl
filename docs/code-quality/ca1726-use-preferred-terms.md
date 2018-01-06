@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ae02d0eb136d45bc2b8af7dde5f897765493050
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 63a27c62f46343ac840a550ccbefd30f20e9f06a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
 |||  
@@ -70,4 +71,4 @@ ms.lasthandoff: 10/31/2017
  Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy nazwa identyfikatora jest zamierzone i dotyczy w szczególności pierwotny termin zamiast preferowanych terminów.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [Ostrzeżenia nazewnictwa](../code-quality/naming-warnings.md)
+ [Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)

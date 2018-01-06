@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49db544894fe5ce393922e989757ffb3bf4022e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6deaaabfcc4befca3079f4ef177c35f6b684e99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 Pobiera flagę określającą, czy wskaźnik ramki jest obecny. Używany, gdy [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ma ustawioną wartość `SymTagFunction`.  
@@ -51,4 +52,4 @@ HRESULT get_framePointerPresent(
  Biblioteki DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

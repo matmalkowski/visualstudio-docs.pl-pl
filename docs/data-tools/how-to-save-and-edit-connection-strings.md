@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4a7482c269cd978d2c1848c896985b1194797e42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: bb3ddcf8a4d1ac14b356bfabac2378ff345ef65b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Porady: zapisywanie i edycja parametrów połączeń
 Parametry połączenia w aplikacjach Visual Studio można zapisać w pliku konfiguracji aplikacji (nazywane również ustawienia aplikacji) lub ustalony bezpośrednio w aplikacji. Zapisywanie ciągów połączenia w pliku konfiguracji aplikacji upraszcza zadanie obsługi aplikacji. Jeśli parametry połączenia muszą być zmienione, wówczas można zaktualizować go w pliku ustawień aplikacji (zamiast konieczności go zmienić w kodzie źródłowym i ponownie skompilować aplikację).

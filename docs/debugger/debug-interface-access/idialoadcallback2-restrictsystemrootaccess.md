@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2f77f92487f8f44aa2608f6e29eb779c9292ae8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5b9ba8caf92e7838dfa2bb97cee94aa4a42da77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 Określa, czy potrzeby wyszukiwania plików PDB jest dozwolone w katalogu głównym systemu.  
@@ -36,4 +37,4 @@ HRESULT RestrictSystemRootAccess();
  Inne niż powrotnych kodu `S_OK` uniemożliwia wyszukiwanie katalog główny systemu plików PDB.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idialoadcallback2 —](../../debugger/debug-interface-access/idialoadcallback2.md)
+ [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

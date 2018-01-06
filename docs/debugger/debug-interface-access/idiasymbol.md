@@ -14,11 +14,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e4954c691795f71704aab7493ef8df3dbb3f958
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Opisuje właściwości instancji symbolu.  
@@ -350,4 +351,4 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
- [Compiland](../../debugger/debug-interface-access/compiland.md)
+ [Jednostka kompilacji](../../debugger/debug-interface-access/compiland.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38c73680435816d044c363f55193fba64b33ee44
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1e1497092e94a176ab3024da65e068f5c982fc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 Wylicza różnych wkładów sekcji zawarte w źródle danych.  
@@ -35,7 +36,7 @@ IDiaEnumSectionContribs : IUnknown
 |Metoda|Opis|  
 |------------|-----------------|  
 |[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Pobiera [interfejsu interfejsu IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) wersji ten moduł wyliczający.|  
-|[Idiaenumsectioncontribs::get_count —](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Pobiera liczbę sekcji udziały.|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Pobiera liczbę sekcji udziały.|  
 |[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Pobiera wkładów sekcji za pomocą indeksu.|  
 |[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Pobiera określoną liczbę sekcji wkładów w kolejności wyliczenia.|  
 |[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Pomija określoną liczbę sekcji wkładów w kolejności wyliczenia.|  
@@ -110,4 +111,4 @@ void ShowSectionContribs(IDiaSession *pSession)
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

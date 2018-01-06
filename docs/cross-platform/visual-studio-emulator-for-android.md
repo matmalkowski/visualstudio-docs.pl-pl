@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7900b976e2533f1bd9a53d1e9e437339c6041a73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulator programu Visual Studio dla systemu Android
 Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urządzenie z systemem Android. Umożliwia środowisku wirtualnym, w którym można debugowania i testowania aplikacji systemu Android bez urządzenia fizycznego. Umożliwia także izolowane środowisko prototypów aplikacji.  
@@ -100,4 +101,4 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
   
 ## <a name="see-also"></a>Zobacz też  
  [Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Rozwiązywanie problemów z programu Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

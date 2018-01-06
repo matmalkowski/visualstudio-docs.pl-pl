@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7aae3c7bc11cdde209ef4d663793f25fa1e9e67e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 6c078affefbb24a9fbbb65c854911f4b91f12183
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Udostępnianie wywołania zwrotnego dziennika środowiska Unity za pomocą rozszerzenia VSTU
 Visual Studio Tools for Unity rejestruje wywołanie zwrotne dziennika Unity, aby można było strumienia jego konsoli dla programu Visual Studio. Jeśli Edytor skryptów również zarejestrowane wywołanie zwrotne dziennika środowiska Unity, wywołania zwrotnego pomocą rozszerzenia VSTU może zakłócać wywołanie zwrotne. Aby zapobiec tej możliwości, użyj `VisualStudioIntegration.LogCallback` zdarzeń do współpracy za pomocą rozszerzenia VSTU.  

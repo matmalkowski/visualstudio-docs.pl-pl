@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 738b4b5b2e73a55489cc98e6f9e2218568984c68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21d4ad300ee511ae296e66dda0038b626bdf9ead
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 Pobiera symbol za pomocą indeksu.  
@@ -44,4 +45,4 @@ HRESULT Item (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

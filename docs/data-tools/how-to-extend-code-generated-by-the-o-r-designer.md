@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cc60c4fe5ff014b1088509c8e5c4982bf7f4322a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e5b38288cc8d0d58e18e4aea3de2b80470783ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Porady: rozszerzanie kod wygenerowany przez Projektanta obiektów relacyjnych
 Kod wygenerowany przez [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] zostanie ponownie wygenerowany podczas wprowadzania zmian do innych obiektów na powierzchni projektanta i klas jednostek. Z powodu tego ponownego wygenerowania kodu żadnego kodu, które dodajesz do wygenerowanego kodu jest zwykle zastąpione, gdy projektant generuje kod. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Umożliwia generowanie plików częściowej klasy, w których można dodać kod, który nie zostanie nadpisany. Jednym z przykładów Dodawanie własny kod do kod wygenerowany przez [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] polega na dodaniu sprawdzanie poprawności danych do programu LINQ w klasach SQL (jednostka). Aby uzyskać informacje, zobacz [porady: Dodawanie walidacji do klas jednostek](../data-tools/how-to-add-validation-to-entity-classes.md).  
@@ -50,5 +51,5 @@ Kod wygenerowany przez [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_
 ## <a name="see-also"></a>Zobacz też  
  [LINQ do SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Wskazówki: Tworzenie klasy LINQ do SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  

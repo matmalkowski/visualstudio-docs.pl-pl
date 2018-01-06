@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Sprawdzanie poprawności danych w zestawach danych
 Sprawdzanie poprawności danych jest proces potwierdzania wartości wprowadzanego do obiektów danych są zgodne z ograniczeniami w ramach schematu zestawu danych. Proces weryfikacji również potwierdza, że te wartości są następujące reguły, które zostały utworzone dla aplikacji. Jest dobrym rozwiązaniem, aby sprawdzić poprawność danych przed ich wysłaniem aktualizacje do źródłowej bazy danych. Zmniejsza to błędy, a także potencjalnych liczby rund między aplikacją i bazy danych.  
@@ -213,4 +214,4 @@ Przekazywanie <xref:System.Data.DataRowVersion> wartość wraz z indeks kolumny 
 ## <a name="see-also"></a>Zobacz także
 [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Porady: Sprawdzanie poprawności danych w formancie DataGridView formularzy systemu Windows](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)   
-[Porady: wyświetlanie ikon błędów dotyczących weryfikacji formularza z systemu Windows składnika ErrorProvider formularzy](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+[Instrukcje: wyświetlanie ikon błędów dotyczących weryfikacji formularza za pomocą składnika ErrorProvider formularzy Windows Forms](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

@@ -11,20 +11,21 @@ caps.latest.revision: "13"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: a770fdeae316e6ee79e919df9c9cc1b4551b90b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdź środowisku Xamarin
 Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-platform/setup-and-install.md)), spędzają na kilka minut, sprawdź, czy wszystko jest gotowe do środowisko rozwoju Xamarin.  
   
  Po wykonaniu tych weryfikacji, można wykonać jedną lub obie następujące wskazówki:  
   
--   [Dowiedz się podstawowe informacje dotyczące tworzenia aplikacji z platformy Xamarin.Forms w programie Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
+-   [Poznaj podstawowe informacje dotyczące tworzenia aplikacji za pomocą platformy Xamarin.Forms w programie Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
   
--   [Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
+-   [Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
   
 ## <a name="all-platforms"></a>Wszystkie platformy  
  Najpierw wybierz **Narzędzia > Opcje**, rozwiń węzeł **Xamarin > innych**i kliknij przycisk **Sprawdź** łącza dla aktualizacji. Należy z Xamarin 4.0.3.214 lub nowszej, aby uniknąć problemów z poprzednich licencjonowania.  

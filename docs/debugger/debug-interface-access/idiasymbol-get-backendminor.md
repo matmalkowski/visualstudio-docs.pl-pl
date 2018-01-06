@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474b62f702655472327f94370f75955695192795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dad2d2ac3cd5ff1ed57f71b3858db7cfa6875178
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
 Pobiera zaplecza podrzędny numer wersji kompilatora.  
@@ -54,4 +55,4 @@ HRESULT get_backEndMinor (
 |Wersja:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

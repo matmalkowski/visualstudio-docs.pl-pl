@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b80f370f670f4dff4b65d7c0e7658f855d5e573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 65c4ab52ead981d54cf9b0c64c7a3c1c941de5b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie parametrycznych zapytań TableAdapter
 Uruchamianie zapytania parametrycznego zwraca dane, które spełniają warunki klauzuli WHERE, w ramach zapytania. Na przykład można parametryzacja listę klientów, aby wyświetlić tylko w przypadku klientów z niektórych miasta przez dodanie `WHERE City = @City` na końcu instrukcji SQL, które zwraca listę klientów.  

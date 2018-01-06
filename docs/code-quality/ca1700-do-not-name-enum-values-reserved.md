@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2acfafaec213f619dbe8c3077ab5cc72bdfde88d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e97c2da18531584128c48c9aac36ebb16ae86cc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nie nazwy wartości wyliczenia &#39; Zarezerwowane &#39;
 |||  
@@ -55,12 +56,12 @@ ms.lasthandoff: 10/31/2017
  Jest bezpieczne pominąć ostrzeżenie od tej reguły dla elementu członkowskiego, który jest obecnie używany lub bibliotek, które wcześniej zostały dostarczone.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2217: Nie oznaczaj typów wyliczeniowych atrybutem FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+ [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
- [CA1712: Nie dodawaj prefiksu wartości enum nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
+ [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
   
- [CA1028: Pamięć wyliczenia powinna być Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
+ [CA1028: Magazyn typu wyliczeniowego powinien być typu Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
   
- [CA1008: Wyliczenia powinny mieć wartości zerowej](../code-quality/ca1008-enums-should-have-zero-value.md)  
+ [CA1008: Wyliczenia powinny zawierać wartość zero](../code-quality/ca1008-enums-should-have-zero-value.md)  
   
- [CA1027: Oznaczaj wyliczenia za pomocą FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

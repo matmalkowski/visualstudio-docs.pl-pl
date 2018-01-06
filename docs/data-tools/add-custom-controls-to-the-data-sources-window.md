@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d1efd7051d9119c4d0e6643c1d42e78d9cdde7cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie formantów niestandardowych do okna źródeł danych
 Gdy przeciągnąć element z **źródeł danych** okna do powierzchni projektu, można utworzyć formantu powiązanego z danymi, można wybrać typ formantu, który można utworzyć. Każdy element w oknie ma listy wyświetla formantów, które są dostępne. Zbiór kontrolki skojarzone z każdym elementem zależy od typu danych elementu. Jeśli formant, który ma zostać utworzony, nie ma na liście, można postępuj zgodnie z instrukcjami w tym temacie, aby dodać kontrolki do listy.  

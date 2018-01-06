@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2450ed950227b6755b57f20f3520a1e75034aafe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 1ebb2621aa8da474c08d12e187feadef85840663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 Aby wstawianie nowych rekordów do bazy danych, można użyć `TableAdapter.Update` metody lub jeden element TableAdapter DBDirect — metody (w szczególności `TableAdapter.Insert` metody). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
@@ -83,4 +84,4 @@ Możesz wstawić nowych rekordów bezpośrednio do bazy danych przy użyciu pole
  Musi mieć dostęp do bazy danych, z którym próbujesz nawiązać połączenie, a także uprawnienia do wykonywania operacji wstawiania do żądanej tabeli.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

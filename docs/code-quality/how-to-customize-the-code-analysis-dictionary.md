@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a14870e494c9c8efeb7c15dabf034f059c4a3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Porady: dostosowywanie słownika analizy kodu
 Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kodzie błędy w pisowni, gramatyczne przypadek i inne konwencje nazewnictwa [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wytyczne. Można utworzyć pliku Xml słownika, aby dodać, usunąć lub zmodyfikować warunki, skrótów i akronimów do słownika wbudowanych.  
@@ -97,17 +98,17 @@ Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kod
   
 -   [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Wyrazy złożone powinien mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703: Ciągów zasobów powinna być poprawna](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704: Identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
 -   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 -   [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)  
   
--   [CA2204: Literały powinny być napisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
+-   [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
 ###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Słownik/słowa/nierozpoznany/Word  
  Aby wykluczyć warunek z listy warunków, które identyfikuje analizy kodu jako poprawnie zapisany, Dodaj wyrażenie, aby wykluczyć je jako tekst wewnętrzny elementu słownika/słowa/nierozpoznany/Word. Warunki w elementach słownika/słowa/nierozpoznany/Word nie jest rozróżniana.  
@@ -132,17 +133,17 @@ Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kod
   
 -   [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Wyrazy złożone powinien mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703: Ciągów zasobów powinna być poprawna](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704: Identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
 -   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 -   [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)  
   
--   [CA2204: Literały powinny być napisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
+-   [CA2204: Literały powinny być zapisane poprawnie](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
 ###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Słownik/słowa/przestarzałe/termin [@PreferredAlternate]  
  Aby dołączyć termin Lista warunków, które identyfikuje analizy kodu jako przestarzałe, należy dodać termin jako tekst wewnętrzny elementu słownika/słowa/przestarzały/termin. Przestarzałe termin jest słowa, które jest poprawna, ale nie powinny być używane.  
@@ -173,11 +174,11 @@ Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kod
   
 -   [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Wyrazy złożone powinien mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703: Ciągów zasobów powinna być poprawna](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704: Identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
 -   [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)  
   
@@ -208,11 +209,11 @@ Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kod
   
 -   [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Wyrazy złożone powinien mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703: Ciągów zasobów powinna być poprawna](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703: Ciągi zasobu powinny być zapisane poprawnie](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704: Identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
 ###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Słownik/słowa/DiscreteExceptions/termin  
  Aby wykluczyć termin na liście terminów, które identyfikuje analizy kodu jako pojedynczy, odrębny word, gdy zaznaczone jest pole termin reguł wielkości liter dla wyrazy złożone, Dodaj termin jako tekst wewnętrzny elementu słownika/słowa/DiscreteExceptions/terminu. Termin w elemencie słownika/słowa/DiscreteExceptions/termin nie jest rozróżniana wielkość liter.  
@@ -237,7 +238,7 @@ Kod — analiza używa wbudowanych słownika do sprawdzania identyfikatory w kod
   
 -   [CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Wyrazy złożone powinien mieć prawidłową wielkość liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: W wyrazach złożonych należy poprawnie używać wielkości liter](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 ###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Słownik/akronimów/CasingExceptions/akronim  
  Aby objąć akronim Lista warunków, które analizy kodu wskazywany jest poprawna i wskazują, jak zasady wyrazy złożone akronim, gdy zaznaczone jest pole termin w małych i wielkich liter, Dodaj termin jako tekst wewnętrzny słownika/akronimów/CasingExceptions / Acronym element. Akronim w elemencie słownika/akronimów/CasingExceptions/skrót jest rozróżniana wielkość liter.  

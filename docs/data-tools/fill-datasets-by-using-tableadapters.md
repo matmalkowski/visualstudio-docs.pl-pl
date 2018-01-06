@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zbiorów danych przy użyciu TableAdapters
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstawie co najmniej jednego zapytania lub procedur składowanych, które określisz. TableAdapters można również wykonywać dodawania, aktualizacji i usuwania bazy danych, aby zachować zmiany wprowadzone do zestawu danych. Można również wydać polecenia globalne, które nie są związane z żadną z tabel.  
@@ -39,10 +40,10 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstaw
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Tworzenie i konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Jak używać projektantów do tworzenia i konfigurowania TableAdapters|  
-|[Tworzenie parametrycznych zapytań TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Jak użytkownicy mogą podać argumenty procedur TableAdapter lub zapytania|  
-|[Bezpośredni dostęp do bazy danych za pomocą TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Sposób użycia metody Dbdirect TableAdapters|  
-|[Wyłączanie ograniczeń w czasie wypełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Jak pracować z ograniczenia foreign key podczas aktualizowania danych|  
+|[Tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Jak używać projektantów do tworzenia i konfigurowania TableAdapters|  
+|[Tworzenie sparametryzowanych zapytań adaptera TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Jak użytkownicy mogą podać argumenty procedur TableAdapter lub zapytania|  
+|[Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Sposób użycia metody Dbdirect TableAdapters|  
+|[Wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Jak pracować z ograniczenia foreign key podczas aktualizowania danych|  
 |[Jak rozszerzanie funkcjonalności TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Jak dodać niestandardowego kodu do TableAdapters|  
 |[Odczytywanie danych XML do zestawu danych](../data-tools/read-xml-data-into-a-dataset.md)|Jak pracować z XML|  
   
@@ -128,4 +129,4 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstaw
 Jeśli używasz polecenia danych z ustawioną właściwość CommandType <xref:System.Data.CommandType.Text>, należy dokładnie sprawdzić informacje wysyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą stanowić próbę wysyłania (Wstaw) zmodyfikowany lub dodatkowe instrukcje SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze Sprawdź, czy informacje są prawidłowe. Najlepszym rozwiązaniem jest zawsze używaj zapytań sparametryzowanych lub procedur składowanych, gdy jest to możliwe.  
   
 ## <a name="see-also"></a>Zobacz także
-[Narzędzia zestawu danych](../data-tools/dataset-tools-in-visual-studio.md)
+[Narzędzia do obsługi zestawów danych](../data-tools/dataset-tools-in-visual-studio.md)

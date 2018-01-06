@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80a70157f52a3d633c6b09727eab182bda287037
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6b7a1d2ccedbe88f92b40ab9f26b8aad37c0a999
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vtable"></a>VTable
 Tabeli wirtualnej jest identyfikowany przez `SymTagVTable` symbolu.  
@@ -44,4 +45,4 @@ Tabeli wirtualnej jest identyfikowany przez `SymTagVTable` symbolu.
   
 ## <a name="see-also"></a>Zobacz też  
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Vtableshape —](../../debugger/debug-interface-access/vtableshape.md)
+ [VTableShape](../../debugger/debug-interface-access/vtableshape.md)

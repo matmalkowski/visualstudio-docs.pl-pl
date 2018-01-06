@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e29e7219c8f8fff8293de23eee37769d09754b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b556f6960ea237d288b0c6c70174181b3d3b87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest wirtualna klasa podstawowa.  
@@ -42,4 +43,4 @@ HRESULT get_virtualBaseClass (
 >  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

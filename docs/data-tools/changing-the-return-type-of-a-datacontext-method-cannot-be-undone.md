@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 28398032eb4c17916af4294e5ccab386040cf98e
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e28cf13486e21564c4acdf62e3edc89321a4f1b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Zmiany zwracanego typu metody DataContext nie można cofnąć
 Nie można cofnąć zmiany zwracanego typu metody DataContext. Aby przywrócić automatycznie wygenerowany typ, musisz przeciągnąć element z Eksploratora serwera Explorer/bazy danych do Projektanta obiektów relacyjnych ponownie. Czy na pewno chcesz zmienić zwracany typ?  
@@ -40,5 +41,5 @@ Zwracany typ <xref:System.Data.Linq.DataContext> metoda różni się w zależno�
     A <xref:System.Data.Linq.DataContext> metody jest tworzony z oryginalnego domyślny typ zwracany.  
   
 ## <a name="see-also"></a>Zobacz także
-[Komunikaty Projektanta obiektów relacyjnych](../data-tools/o-r-designer-messages.md)  
+[Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -26,11 +26,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 283903076a5f6e465f3cb87be7d6710af8d914ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e60235e497f770d7e8ce30e27c3a86143f7144e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 Moduł potwierdzenie lub `Assert` instrukcji, sprawdza warunek, który jest określony jako argument `Assert` instrukcji. Jeśli warunek jest spełniony, występuje żadna akcja. Gdy warunek jest spełniony, potwierdzenie nie powiedzie się. Jeśli korzystasz z kompilacji debugowania, program wprowadza tryb przerwania.  

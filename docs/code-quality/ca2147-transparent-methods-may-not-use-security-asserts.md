@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4893dbf799a964024fef59b7b0092b3066e8fdd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38ac5492c987515c7c6504c91d2e035f8b8645ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Jawne metody nie mogą używać potwierdzeń zabezpieczeń
 |||  
@@ -64,4 +65,4 @@ ms.lasthandoff: 10/31/2017
  Innym rozwiązaniem jest usunięcie Assert z kodu i umożliwić dowolnego pliku kolejnych operacji We/Wy przepływu żądania uprawnień poza SecurityTransparentMethod do obiektu wywołującego. Dzięki temu kontroli zabezpieczeń. W takim przypadku nie inspekcji zabezpieczeń nie jest zazwyczaj konieczne, ponieważ żądania uprawnień będą przepływać do wywołującego i/lub domeny aplikacji. Żądania uprawnień ściśle są kontrolowane przez zasady zabezpieczeń, hostowania środowiska i Udziel uprawnień kodu źródłowego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ostrzeżenia o zabezpieczeniach](../code-quality/security-warnings.md)
+ [Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)

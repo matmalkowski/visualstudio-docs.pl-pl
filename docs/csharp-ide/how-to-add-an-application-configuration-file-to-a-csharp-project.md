@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097e7a2eac78fe85b2a3ab62d5cdf1fd18908d56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 707100d33e91d1b0920d008140dc2fb6f1e078fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Porady: Dodawanie pliku konfiguracji aplikacji do projektu C#
 Dodanie pliku konfiguracji aplikacji (pliku app.config) do projektu C#, można dostosować sposób środowisko uruchomieniowe języka wspólnego lokalizuje i ładuje pliki zestawu. Aby uzyskać więcej informacji o plikach konfiguracji aplikacji, zobacz [jak zestawy środowiska wykonawczego lokalizuje](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).  
@@ -45,4 +46,4 @@ Dodanie pliku konfiguracji aplikacji (pliku app.config) do projektu C#, można d
  [Schemat pliku konfiguracji](/dotnet/framework/configure-apps/file-schema/index)   
  [Konfigurowanie aplikacji](/dotnet/framework/configure-apps/index)   
  [Porady: Konfigurowanie aplikacji pod kątem wersji programu .NET Framework](http://msdn.microsoft.com/en-us/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
- [Używanie środowiska projektowania programu Visual Studio w języku C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)
+ [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

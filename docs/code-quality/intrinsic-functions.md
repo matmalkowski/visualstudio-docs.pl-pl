@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be65ae9177591b015cd8b29b3dbdc262b66a30ab
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intrinsic-functions"></a>Funkcje wewnętrzne
 Wyrażenie w SAL może być wyrażenie C/C++, pod warunkiem, że wyrażenie ma efekty uboczne — na przykład ++,--i mieć skutki uboczne w tym kontekście wywołania funkcji.  SAL zapewnia jednak niektóre obiekty typu funkcji i niektóre zastrzeżone symbole, których można używać w wyrażeniach SAL. Są one określane jako *funkcje wewnętrzne*.  
@@ -37,7 +38,7 @@ Wyrażenie w SAL może być wyrażenie C/C++, pod warunkiem, że wyrażenie ma e
 |`_Inexpressible_(expr)`|Wyrażenie w sytuacji, gdy rozmiar buforu jest zbyt złożone, aby reprezentować za pomocą wyrażenia adnotacji — na przykład, jeśli jest obliczana przez skanowanie wejściowy zestaw danych, a następnie zliczania wybranych składników.|  
 |`_Nullterm_length_(param)`|`param`jest to liczba elementów w buforze do, ale nie włącznie z terminatorem null. Można stosować do dowolnego buforu typu niezagregowanym, inny niż void.|  
 |`_Old_(expr)`|Gdy jest obliczane w warunku wstępnym, `_Old_` zwraca wartość wejściowa `expr`.  Podczas szacowania w po warunek, zwracana jest wartość `expr` będzie mieć obliczonego w warunku wstępnym.|  
-|`_Param_(n)`|`n`Parametru do funkcji, licząc od 1 do `n`, i `n` jest literałem stałej całkowitej. Jeśli parametr ma nazwę, ta adnotacja jest identyczna jak uzyskiwanie dostępu do parametru według nazwy. **Uwaga:** `n` mogą odwoływać się do parametrów pozycyjnych, które są definiowane przez wielokropek lub mogą być używane w prototypy funkcji gdzie nazwy nie są używane.  |  
+|`_Param_(n)`|`n`Parametru do funkcji, licząc od 1 do `n`, i `n` jest literałem stałej całkowitej. Jeśli parametr ma nazwę, ta adnotacja jest identyczna jak uzyskiwanie dostępu do parametru według nazwy. **Uwaga:** `n` mogą odwoływać się do parametrów pozycyjnych, które są definiowane przez wielokropek lub mogą być używane w prototypy funkcji gdzie nazwy nie są używane.|  
 |`return`|C/C++ zastrzeżone słowa kluczowego `return` można użyć w wyrażeniu SAL wskaż wartość zwracaną przez funkcję.  Wartość jest dostępna tylko w stanie post; Błąd składni, aby użyć go w stan sprzed jest.|  
   
 ## <a name="string-specific"></a>Określonego ciągu  

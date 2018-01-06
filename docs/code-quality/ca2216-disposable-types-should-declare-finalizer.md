@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 087df27916465b3ddba0b8e2c92bacf89dd33c1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65332b37da874ce3475bb166b29c47ccc5a5870d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Typy usuwalne powinny deklarować finalizator
 |||  
@@ -56,11 +57,11 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2115: Wywołaj GC. KeepAlive, gdy używasz zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
+ [CA2115: Wywołaj funkcję GC.KeepAlive w przypadku korzystania z zasobów natywnych](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816: Wywołaj GC. Metodę SuppressFinalize poprawnie](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816: Wywołaj poprawnie metodę GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA1049: Typy, które posiadają natywne zasoby powinny być usuwalne](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
+ [CA1049: Typy z zasobami natywnymi powinny być możliwe do likwidacji](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.IDisposable?displayProperty=fullName>   

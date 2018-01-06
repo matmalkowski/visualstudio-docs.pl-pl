@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 Analiza kodu zasad ewidencjonowania określa zestaw reguł, które członkowie zespołu projektu muszą być uruchamiane na kod źródłowy, zanim zostanie on zaewidencjonowany do systemu kontroli wersji. Firma Microsoft udostępnia zestaw standard *zestawów reguł* reguł analizy kodu tej grupy do obszarów funkcjonalnych. *Zestawy reguł niestandardowych zasad ewidencjonowania* określ zestaw reguł analizy kodu, które są specyficzne dla projektu zespołowego. Zestaw reguł są przechowywane w pliku .ruleset.  

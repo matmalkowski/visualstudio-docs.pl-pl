@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 22ea6a58453de8c28703dbe0252ab6370be55bf3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7cc4d8420cd823964aeed790a412e462b14634c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 *N-warstwowa* dane aplikacji są aplikacjom dostęp do danych i są podzielone na kilka logicznych warstw, lub *warstw*. Rozdzielić składniki aplikacji odrębny warstw zwiększa łatwość konserwacji i skalowalność aplikacji. Robi to przez włączenie ułatwia przyjęcie nowych technologii, które można zastosować do pojedynczej warstwie bez konieczności ponownego zaprojektowania całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji warstwy środkowej i warstwy danych. Warstwy środkowej obejmują zazwyczaj Warstwa dostępu do danych, warstwy logiki biznesowej i udostępniane składniki, takie jak uwierzytelniania i weryfikacji. Warstwa danych zawiera relacyjnej bazy danych. Aplikacje warstwowe zwykle przechowuj poufnych informacji w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).  

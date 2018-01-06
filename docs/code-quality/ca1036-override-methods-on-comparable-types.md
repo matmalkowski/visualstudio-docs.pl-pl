@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d07e63363542a9bf5a1dd756026183349659abe1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody na typach porównywalnych
 |||  
@@ -67,4 +68,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.IComparable?displayProperty=fullName>   
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Operatory porównania](/dotnet/standard/design-guidelines/equality-operators)
+ [Operatory równości](/dotnet/standard/design-guidelines/equality-operators)

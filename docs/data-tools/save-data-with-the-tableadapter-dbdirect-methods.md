@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisz dane z TableAdapter DBDirect metody
 Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji SQL bezpośrednio na bazie danych za pomocą metod TableAdapter DBDirect. Metody TableAdapter DBDirect Podaj poprawnie poziom kontroli nad aktualizacje bazy danych. Można je do uruchomienia określonej instrukcji SQL i zapisanych procedur wywołując poszczególne `Insert`, `Update`, i `Delete` metody odpowiednio do potrzeb aplikacji (zamiast zastąpionej `Update` metodę, która wykonuje AKTUALIZACJĘ INSERT i DELETE instrukcje wszystko w jednym wywołaniu).  
@@ -170,4 +171,4 @@ W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowe
 -   Dodawanie dodatkowych tabel do zestawu danych, wybierając **skonfigurować zestawu danych za pomocą kreatora** z poziomu **źródeł danych** okna. Można dodawać formanty, które wyświetlanie powiązanych danych przeciągając pokrewne węzłów na formularzu. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

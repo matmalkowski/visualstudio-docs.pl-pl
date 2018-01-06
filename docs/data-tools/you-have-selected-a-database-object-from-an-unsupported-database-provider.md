@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05e638be5cc11f66052e5a1f6116e7205b824106
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 85a8e5883a8d78297336016ac295f9b5d76ce337
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Po wybraniu obiektu bazy danych od dostawcy nieobsługiwanej bazy danych
 Projektant obiektów relacyjnych obsługuje tylko dostawcy danych programu .NET Framework dla programu SQL Server (<xref:System.Data.SqlClient>). Mimo że można kliknąć **OK** i kontynuować pracę z obiektami od dostawców nieobsługiwanej bazy danych, może wystąpić nieoczekiwane zachowanie w czasie wykonywania.  
@@ -37,5 +38,5 @@ Projektant obiektów relacyjnych obsługuje tylko dostawcy danych programu .NET 
    Akcja została zatrzymana. Utwórz lub użyj połączenie danych za pomocą dostawcy .NET Framework dla programu SQL Server.  
   
 ## <a name="see-also"></a>Zobacz także
-[Komunikaty Projektanta obiektów relacyjnych](../data-tools/o-r-designer-messages.md)  
+[Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

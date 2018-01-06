@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdb60a248ae50435f982d6f69affe85c8976b634
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2bf873c491895a1e6a45abcc84271958f2ded104
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 Pobiera odwołanie do pliku źródłowego.  
@@ -40,4 +41,4 @@ HRESULT get_sourceFile (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
- [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)
+ [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

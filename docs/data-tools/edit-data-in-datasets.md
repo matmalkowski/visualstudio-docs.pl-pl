@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 Taki sam sposób, jak edytować dane w tabeli w dowolnej bazy danych można edytować dane w tabelach danych. Proces może obejmować, wstawianie, aktualizowanie i usuwanie rekordów w tabeli. W formularzu powiązane z danymi można określić pola, które są można edytować użytkownika. W takich przypadkach infrastruktury wiązania danych obsługuje wszystkie śledzenia zmian, aby zmiany mogą być wysyłane w bazie danych później. Jeśli programowo wprowadź zmiany do danych i chcesz wysłać te zmiany z powrotem do bazy danych, należy użyć obiektów i metod, które wykonują śledzenia zmian dla Ciebie.  

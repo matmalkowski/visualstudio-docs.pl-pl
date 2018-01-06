@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0701c93146b4cc460a7216d2f4159832389db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cde73eeec2b6a73f25f714c41976d3d0513e939
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory powinny mieć poprawny przyrostek
 |||  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
  Nie pomijaj ostrzeżenia od tej reguły, chyba że sufiks ma znaczenie jednoznaczne w domenie aplikacji.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA1710: Identyfikatory powinny mieć poprawny przyrostek](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)  
+ [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Atrybuty](/dotnet/standard/design-guidelines/attributes)   

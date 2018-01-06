@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15fed0e2638ba8870a47a65a359b4f02bc6c7eda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7b4d4a42c15398b1817c06ec0193aef16e865b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerations-and-structures"></a>Wyliczenia i struktury
 Są to wyliczenia i struktury używane przez DIA SDK.  
@@ -77,11 +78,11 @@ Są to wyliczenia i struktury używane przez DIA SDK.
  W tym artykule opisano wpis w mapie adres.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+ [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
  Określa interfejsami DIA SDK.  
   
- [Stałe (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
+ [Stałe (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  Określa stałe, które są dostępne w DIA SDK.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+ [Dokumentacja](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

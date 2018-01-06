@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c67507302cf1ee0c189b44729bdd4261913d7afc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db44bae0b9b6f2cb27b4e45633c31e16f09bedee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) relokacji informacji dla sekcji.  
@@ -39,4 +40,4 @@ HRESULT get_relocationsCrc (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

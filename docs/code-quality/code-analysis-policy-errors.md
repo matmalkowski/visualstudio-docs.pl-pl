@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 052bb1314560089feb714027737f35167c947418
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 268940f39d3d74e7dd701f9c458d7dd08ff6c1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
 Następujące błędy wystąpić, jeśli zasad analizy kodu nie jest spełniony na zaewidencjonowania:  
@@ -74,4 +75,4 @@ Następujące błędy wystąpić, jeśli zasad analizy kodu nie jest spełniony 
  Ten błąd dotyczy niezarządzane projektów. Zasady analizy kodu wymagają analizy kodu dla C/C++, ale nie jest włączone w bieżącym projekcie na kliencie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Błędy aplikacji analizy kodu](../code-quality/code-analysis-application-errors.md)
+ [Błędy zgłaszane przez aplikację do analizy kodu](../code-quality/code-analysis-application-errors.md)

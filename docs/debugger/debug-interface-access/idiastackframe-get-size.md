@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb1dad649760a4984c87ca4f7bb80b1902bf652b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44818f91d92368d60d1a99af6539da0d67efe4c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
 Pobiera rozmiar ramki stosu w bajtach.  
@@ -39,4 +40,4 @@ HRESULT get_size (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)
+ [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

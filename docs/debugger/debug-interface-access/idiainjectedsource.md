@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7beda305bbe0673b6e1b47f0e11eb641ab8aa0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cfcb19170221ea7e37a25cb93c7bf77fc769fd1a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Uzyskuje dostęp do dodane przechowywane w źródle danych DIA kodu źródłowego.  
@@ -124,4 +125,4 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
  [Interfejsy (zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
  [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
- [Idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+ [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

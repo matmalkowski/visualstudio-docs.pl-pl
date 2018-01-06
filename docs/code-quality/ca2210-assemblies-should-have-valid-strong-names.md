@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11e50cb87364a85d0c97ae5e566b1209696febbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 066c78158b688db8164a5ebf23dbe957c7c324ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Zestawy powinny mieć prawidłowe silne nazwy
 |||  
@@ -98,4 +99,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>   
  <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>   
  [Porady: podpisać zestaw o silnej nazwie](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [SN.exe (narzędzie silnych nazw)](/dotnet/framework/tools/sn-exe-strong-name-tool)
+ [Sn.exe (narzędzie silnych nazw)](/dotnet/framework/tools/sn-exe-strong-name-tool)

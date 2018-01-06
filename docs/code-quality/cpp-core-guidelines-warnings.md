@@ -11,11 +11,12 @@ author: mblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 65f4e7ed865a3a620d58b45580914d6e0b589660
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Przy użyciu programy wytyczne Core C++
 Wskazówki Core C++ są przenośny zestaw wskazówki, reguł i najlepsze rozwiązania dotyczące pisania kodu w języku C++ utworzone przez ekspertów C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł jako część jej narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakietu NuGet dla programu Visual Studio 2015](#vs2015_corecheck).

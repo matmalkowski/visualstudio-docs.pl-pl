@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 5936edd6096bd708dda1b03f60f94cea3d6c1e5b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7ade7aa6e103a8637d26b10029faabc434ce3a83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio
 Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do formularzy systemu Windows. Aby utworzyć takie formanty powiązane z danymi, można przeciągnij elementy z **źródeł danych** okna na Projektant formularzy systemu Windows w programie Visual Studio.
@@ -41,11 +42,11 @@ Przed przeciągnij elementy, można ustawić typ kontroli, którą chcesz utworz
   
 Aby uzyskać więcej informacji na temat <xref:System.Windows.Forms.BindingSource> składników, zobacz:  
   
--   [BindingSource — składnik](/dotnet/framework/winforms/controls/bindingsource-component)  
+-   [BindingSource, składnik](/dotnet/framework/winforms/controls/bindingsource-component)  
   
--   [Informacje o składniku BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+-   [BindingSource, składnik — omówienie](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
--   [Architektura składnika BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
+-   [BindingSource, składnik — architektura](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
   
 [Formantu BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) udostępnia interfejs użytkownika do przechodzenia między dane wyświetlane przez aplikację systemu Windows.
 

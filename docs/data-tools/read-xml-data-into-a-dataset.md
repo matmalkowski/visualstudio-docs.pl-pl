@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 ADO.NET udostępnia prosty metody pracy z danymi XML. W tym przewodniku tworzenia aplikacji systemu Windows, który ładuje dane XML do zestawu danych. Zestaw danych są następnie wyświetlane <xref:System.Windows.Forms.DataGridView> formantu. Na koniec schematu XML na podstawie zawartości pliku XML jest wyświetlana w polu tekstowym.  

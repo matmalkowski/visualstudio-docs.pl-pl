@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="or-designer-messages"></a>Komunikaty Projektanta obiektów relacyjnych
 Ten temat zawiera listę komunikatów, które mogą wystąpić podczas pracy z Projektanta obiektów relacyjnych.  
@@ -30,29 +31,29 @@ Ten temat zawiera listę komunikatów, które mogą wystąpić podczas pracy z P
   
  [Nie można pobrać informacji o schemacie dla obiektu bazy danych \<nazwa obiektu >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
- [Co najmniej jeden obiekt wybranej bazy danych zwraca schemat, który nie pasuje do schematu klasy docelowej](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
+ [Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
- [Co najmniej jeden wybrany element zawiera typ danych, który nie jest obsługiwany przez projektanta](../data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)  
+ [Co najmniej jeden wybrany element zawiera typ danych nieobsługiwany przez projektanta](../data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)  
   
- [Właściwości połączenia w pliku ustawień aplikacji jest niewystarczające lub niepoprawne](../data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)  
+ [Brakuje właściwości połączenia w pliku ustawień aplikacji lub jest ona niepoprawna](../data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)  
   
  [Nie można zmodyfikować projektanta podczas debugowania](../data-tools/the-designer-cannot-be-modified-while-debugging.md)  
   
- [Obiekty, które są dodawane do projektanta, użyj innego połączenia danych niż aktualnie używa narzędzia Projektant](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
+ [Obiekty dodawane do projektanta używają innego połączenia danych niż aktualnie używane przez projektanta](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
  [Właściwość \<właściwość name > nie można usunąć](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
  [Właściwość \<właściwość name > nie można usunąć, ponieważ uczestniczy ona w skojarzeniu \<Nazwa skojarzenia >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
- [Nie można usunąć wybranej klasy, ponieważ jest używany jako typ zwracany dla co najmniej jedną metodę DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
+ [Nie można usunąć wybranej klasy, ponieważ jest ona używana jako zwracany typ przez co najmniej jedną metodę DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
- [Wybrane połączenie używa dostawcy nieobsługiwanej bazy danych](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
+ [Wybrane połączenie używa nieobsługiwanego dostawcy bazy danych](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
   
- [Ta metoda powiązane jest metoda pomocnicza następujące domyślne insert, update lub metody delete](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
+ [Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
   
- [Ostrzeżenie. Wprowadzono zmiany do okna dialogowego Konfigurowanie zachowania, które nie zostały zastosowane](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)  
+ [Ostrzeżenie. Wprowadzono zmiany w oknie dialogowym Konfigurowanie zachowania, które nie zostały zastosowane](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)  
   
- [Po wybraniu obiektu bazy danych od dostawcy nieobsługiwanej bazy danych](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
+ [Wybrano obiekt bazy danych od nieobsługiwanego dostawcy bazy danych](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:System.Data.Linq>  
@@ -60,4 +61,4 @@ Ten temat zawiera listę komunikatów, które mogą wystąpić podczas pracy z P
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [LINQ do SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
- [LINQ do SQL](/dotnet/framework/data/adonet/sql/linq/index)
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

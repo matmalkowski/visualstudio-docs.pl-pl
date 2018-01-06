@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 685f57286a022be6b7acbdaf2b8ffed33457fef1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązanie formantów WPF z danymi w Visual Studio
 Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] kontrolki. Aby utworzyć takie formanty powiązane z danymi, można przeciągnij elementy z **źródeł danych** okna na [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W tym temacie opisano niektóre z najbardziej typowych zadań, narzędzia i klasy, które umożliwia tworzenie powiązanych z danymi [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] aplikacji.  
@@ -36,10 +37,10 @@ Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do 
   
 |Zadanie|Więcej informacji|  
 |----------|----------------------|  
-|Utwórz nowe formanty związane z danymi.<br /><br /> Powiąż istniejące formant z danymi.|[Powiązanie formantów WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)|  
+|Utwórz nowe formanty związane z danymi.<br /><br /> Powiąż istniejące formant z danymi.|[Powiązywanie kontrolek WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)|  
 |Utwórz formant, które wyświetlają pokrewne dane w relacji nadrzędny podrzędny: kiedy użytkownik wybierze nadrzędny rekord danych w jednym formancie, inny formant wyświetli powiązane dane podrzędne dla wybranego rekordu.|[Wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)|  
 |Utwórz *tabeli odnośników* wyświetlający informacje z jednej tabeli na podstawie wartości pola klucza obcego w innej tabeli.|[Tworzenie tabel wyszukiwania w aplikacjach WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|  
-|Powiąż formant z obrazem w bazie danych.|[Powiązywanie formantów z obrazami z bazy danych](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
+|Powiąż formant z obrazem w bazie danych.|[Powiązywanie kontrolek z obrazami z bazy danych](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
   
 ## <a name="valid-drop-targets"></a>Nieprawidłowa miejsc docelowych  
  Możesz przeciągnąć elementów w **źródeł danych** okna tylko prawidłowe miejsc docelowych w [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Istnieją dwa główne rodzaje z prawidłowych miejsc upuszczania: kontenery i formanty. Kontener jest element interfejsu użytkownika, który zwykle zawiera formanty. Na przykład siatka jest kontenerem i podobnie okno.  

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e003e49e6745a096467944717f4cd817312cbca3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a913d40820532fab76729dcc6a96191f27085714
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 Pobiera flagę wskazującą, czy sekcja zawiera kodu wykonywalnego.  
@@ -39,4 +40,4 @@ HRESULT get_code (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

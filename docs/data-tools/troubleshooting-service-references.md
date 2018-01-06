@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e46c8bf778ff18ea25096e524716bcb44916f460
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pracy z [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] lub [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] odwołania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

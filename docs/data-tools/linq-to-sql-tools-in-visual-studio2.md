@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ do SQL narzędzia w programie Visual Studio
 LINQ do SQL był pierwszy technologii mapowania obiektu relacyjnego wydane przez firmę Microsoft. Działa dobrze w podstawowe scenariusze i może być obsługiwany w programie Visual Studio, ale nie jest już opracowywane aktywne. Użyj LINQ do SQL podczas obsługi starszych aplikacji, który już jest używany lub w aplikacjach proste, użyj programu SQL Server, które nie wymagają mapowania wielu tabel. Ogólnie rzecz biorąc nowych aplikacji należy używać programu Entity Framework, gdy wymagana jest warstwa relacyjnej obiektu mapowania.  

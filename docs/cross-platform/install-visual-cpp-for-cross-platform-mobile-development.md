@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Zainstaluj Visual C++ for Cross Platform Mobile Development
 [Visual C++ dla wielu Platform Mobile Development](http://go.microsoft.com/fwlink/p/?LinkId=536383) jest instalowalnych składników programu Visual Studio 2015. Zawiera szablony programu Visual Studio i platform, a instaluje narzędzia wieloplatformowe i zestawy SDK, aby rozpocząć się szybko, bez konieczności zlokalizować, pobieranie i skonfigurować je samodzielnie. Te narzędzia Visual Studio umożliwia łatwe tworzenie, edytowanie, debugowania i testowania projektów i platform. W tym temacie opisano sposób instalowania narzędzi i oprogramowanie innych firm wymagane umożliwiające tworzenie wieloplatformowych aplikacji za pomocą programu Visual Studio. Omówienie składnika, zobacz [Visual C++ i Platform przenośnych](http://go.microsoft.com/fwlink/p/?LinkId=536387)  

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc162882e8cece08a2688ccc73a674a9ab6e0fce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 5eb37bd3abbf88b04bed0d382e07abe4379eb661
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (Projektanta obiektów relacyjnych)
 <xref:System.Data.Linq.DataContext>metody (w kontekście [składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) są metody <xref:System.Data.Linq.DataContext> klasy, która uruchamianie procedury składowane i funkcje w bazie danych.  

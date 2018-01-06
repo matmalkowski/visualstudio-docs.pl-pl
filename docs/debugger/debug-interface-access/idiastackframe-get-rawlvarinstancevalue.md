@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5559ad617afbb2ae4a65ecbf399f7f79d93ae1c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5872c77a9154c72f6c3bcd76452792cff34452cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 Ta metoda pobiera wartość określonej zmiennej lokalnej raw bajtów.  
@@ -51,4 +52,4 @@ HRESULT get_rawLVarInstanceValue(
  Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)
+ [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

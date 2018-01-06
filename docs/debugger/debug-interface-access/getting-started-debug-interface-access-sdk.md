@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Wprowadzenie (Zestaw SDK dostępu do interfejsu debugowania)
 Debugowanie interfejsu dostępu (DIA) zestawu SDK udostępnia z dokumentacją instruktażowy i przykładowe, która ilustruje sposób korzystania z interfejsu API DIA. Umożliwia interfejsy i metody w DIA SDK niestandardowe aplikacje otwierania plików PDB i .dbg i wyszukiwania ich zawartość symbole, wartości atrybutów, adresy i inne informacje debugowania. Zestaw SDK udostępnia tabele odwołań dla właściwości skojarzone z symbole znajdujące się w aplikacji w języku C++.  
@@ -47,8 +48,8 @@ Debugowanie interfejsu dostępu (DIA) zestawu SDK udostępnia z dokumentacją in
  [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
  Przegląda podstawowej architektury pakietu DIA.  
   
- [Wykonywanie zapytania. Plik PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+ [Używanie zapytań dotyczących pliku .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  Instrukcje krok po kroku dotyczące sposobu używania interfejsu API DIA pliku .pdb kwerendy.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+ [Zestaw SDK dostępu do interfejsu debugowania](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b3a896e64e048a5104bca84b726c730d4d9d524a
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5bba0739a35dbc90c0c9141619c54b93f653d482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Właściwość &lt;nazwa właściwości&gt; nie można usunąć
 Właściwość \<właściwość name > nie można usunąć, ponieważ jest ona ustawiona jako **właściwość rozróżniacza** dziedziczenia między \<Nazwa klasy > i \<Nazwa klasy >  
@@ -34,5 +35,5 @@ Właściwość \<właściwość name > nie można usunąć, ponieważ jest ona u
 3.  Spróbuj ponownie usunąć właściwości.  
   
 ## <a name="see-also"></a>Zobacz także
-[Komunikaty Projektanta obiektów relacyjnych](../data-tools/o-r-designer-messages.md)  
+[Komunikaty narzędzia Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

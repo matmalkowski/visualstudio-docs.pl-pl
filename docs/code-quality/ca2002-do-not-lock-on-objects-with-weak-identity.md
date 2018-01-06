@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54a7693f5e2921b7cab60278c870c456084c56f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55bc495f116b4a7be8c118b47c71a9fed9f85777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Nie należy blokować obiektów z słabą tożsamością
 |||  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
  Nie pomijaj ostrzeżeń dla tej reguły.  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2213: Pola usuwalne powinny zostać usunięte](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+ [CA2213: Pola możliwe do likwidacji powinny zostać zlikwidowane](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie przedstawiono niektóre blokady obiektu, które naruszają zasady.  
@@ -73,4 +74,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Threading.Monitor>   
  <xref:System.AppDomain>   
  [Lock — instrukcja](/dotnet/csharp/language-reference/keywords/lock-statement)   
- [SyncLock — instrukcja](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [SyncLock, instrukcja](/dotnet/visual-basic/language-reference/statements/synclock-statement)

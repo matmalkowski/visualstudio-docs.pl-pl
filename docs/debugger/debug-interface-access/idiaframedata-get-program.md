@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a26982c1827b9d9b4a7ed09e8aa3af61c9141c9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Pobiera ciąg program, który jest używany do obliczania rejestru ustawić przed wywołaniem do bieżącej funkcji.  
@@ -52,4 +53,4 @@ HRESULT get_program (
  Należy pamiętać, że program ciągu określonego procesora CPU i Konwencja wywoływania dla funkcji reprezentowany przez bieżącej ramki stosu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

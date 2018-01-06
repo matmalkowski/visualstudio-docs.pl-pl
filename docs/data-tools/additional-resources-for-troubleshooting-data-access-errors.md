@@ -229,11 +229,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: d578457776afb058ee0f40bba4bb0d208f2f5e66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ea895859550d1ebb5ddfebe743388dc971d82592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych
 Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na forach publicznego Microsoft Developer Network (MSDN). W poniższej tabeli wymieniono dostępne w witrynie MSDN forach związanych z danymi.  
@@ -262,4 +263,4 @@ Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na for
  Aby uzyskać informacje dotyczące rozwiązywania problemów z łącznością z programem SQL Server, zobacz [Rozwiązywanie problemów z połączenia z aparatem bazy danych serwera SQL jak](http://go.microsoft.com/fwlink/?LinkID=246151).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

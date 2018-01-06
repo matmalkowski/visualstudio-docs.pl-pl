@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e99f722d211b2e1bd548f1bf22c995246f3e0b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Wywołaj poprawnie GC.SuppressFinalize
 |||  
@@ -70,9 +71,9 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]  
   
 ## <a name="related-rules"></a>Powiązanych reguł  
- [CA2215: Metody Dispose powinny wywoływać metodę dispose klasy podstawowej](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
+ [CA2215: Metody Dispose powinny wywoływać metodę Dispose klasy podstawowej](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
   
- [CA2216: Typy usuwalne powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA2216: Typy możliwe do likwidacji powinny deklarować finalizator](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wzorzec Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

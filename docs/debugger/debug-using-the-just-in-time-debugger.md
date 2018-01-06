@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie za pomocą debugera just in Time programu Visual Studio
 Debugowanie Just In Time uruchamia program Visual Studio automatycznie po wyjątku lub awarii w aplikacji, która działa poza Visual Studio. Dzięki temu można przetestować aplikację, gdy nie jest uruchomiony program Visual Studio i rozpocząć debugowanie przy użyciu programu Visual Studio, gdy występuje problem.
@@ -180,4 +181,4 @@ static void Main(string[] args)
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Just-In-Time, debugowanie, opcje — Okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należących do niezaufanych użytkownika może być niebezpieczne. Jeśli nie wiesz, poniższe informacje wyglądają podejrzanie, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Tworzenie aplikacji dla platformy uniwersalnej systemu Windows (UWP)
 Za pomocą platformy uniwersalnej systemu Windows i naszego jednego rdzenia systemu Windows można uruchomić tej samej aplikacji na dowolnym urządzeniu z systemem Windows 10 z telefonów do komputerów stacjonarnych. Tworzenie tych aplikacji uniwersalnych systemu Windows z programu Visual Studio i narzędzia deweloperskie uniwersalnej aplikacji systemu Windows.  
@@ -54,4 +55,4 @@ Jeśli masz istniejące aplikacje Sklepu Windows 8.1, aplikacje Windows Phone 8.
 Po utworzeniu aplikacji uniwersalnych systemu Windows, należy spakować aplikację, aby ją zainstalować na urządzeniu z systemem Windows 10 lub przesłać je do Sklepu Windows. Zobacz [pakowanie aplikacji](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Zobacz także
-[Obsługujący wiele Platform Mobile Development w Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  
+[Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

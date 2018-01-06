@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7caff553adfd812e671a2d8643b2352d9868ca43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d20496fae54b0fdf2b0f0d17de0590c325bab0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko API z frameworku docelowego
 |||  
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Ostrzeżenia przenośności](../code-quality/portability-warnings.md)   
- [Przeznaczonych dla określonej wersji platformy .NET](../ide/targeting-a-specific-dotnet-framework-version.md)
+ [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/targeting-a-specific-dotnet-framework-version.md)

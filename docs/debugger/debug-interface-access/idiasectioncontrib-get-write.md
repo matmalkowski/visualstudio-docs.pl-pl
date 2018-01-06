@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec7d307e1e8a9957e2a997ff8c745f8abcd465d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fde413b95ffd251d4d6f5e0a1dbd3b9e481642ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
 Pobiera flagę wskazującą, czy sekcja może być modyfikowana.  
@@ -39,4 +40,4 @@ HRESULT get_write (
  Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

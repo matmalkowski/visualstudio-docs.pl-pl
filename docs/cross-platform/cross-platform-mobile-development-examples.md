@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Przykłady aplikacji mobilnych dla wielu Platform
 Niektóre szablony zainstalowane przez Visual C++ dla wielu Platform Mobile Development Generowanie pełną przykłady, których można użyć do poznania. Ponadto Centrum deweloperów systemu Windows ma kilka aplikacji przykładzie, które można pobrać i wypróbować w programie Visual Studio.  
