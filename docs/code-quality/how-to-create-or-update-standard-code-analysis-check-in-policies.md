@@ -14,11 +14,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6396b698a5f4d2602c9969d6cab0422832b3e6dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d11a8c3169b019ac504ed98258d9281037eb1dd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 Możesz wymagać uruchomić analizy kodu dla wszystkich projektów kodu w projekcie zespołowym przy użyciu zasad analizy kodu zaewidencjonowania. Wymagających analizy kodu może poprawić jakość kodu, który jest sprawdzany w bazie kodu.  
@@ -71,4 +72,4 @@ Możesz wymagać uruchomić analizy kodu dla wszystkich projektów kodu w projek
     -   Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania niestandardowych zasad ewidencjonowania reguły, zobacz [zasady niestandardowe wykonania zaewidencjonowania dla kodu zarządzanego](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+ [Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

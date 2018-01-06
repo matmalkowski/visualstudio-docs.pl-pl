@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie formantów z danymi w Visual Studio
 Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Tych kontrolek powiązanych z danymi można utworzyć, przeciągając elementy z **źródeł danych** okna na powierzchni projektu lub kontrolki na powierzchni w programie Visual Studio.  
@@ -58,13 +59,13 @@ Aby wyświetlić dane użytkownikom aplikacji, wiązanie danych do kontrolek. Ty
 |----------|----------------------|  
 |Otwórz **źródeł danych** okna.|Otwórz powierzchni projektu w edytorze i wybierz polecenie **widoku** > **źródeł danych**.|  
 |Dodawanie źródła danych do projektu.|[Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)|  
-|Ustawianie formantu, który jest tworzony podczas przeciągnąć element z **źródeł danych** okna do projektanta.|[Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|  
-|Zmodyfikuj listę i kontrolek, które są skojarzone z elementów w **źródeł danych** okna.|[Dodawanie formantów niestandardowych do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md)|  
+|Ustawianie formantu, który jest tworzony podczas przeciągnąć element z **źródeł danych** okna do projektanta.|[Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|  
+|Zmodyfikuj listę i kontrolek, które są skojarzone z elementów w **źródeł danych** okna.|[Dodawanie kontrolek niestandardowych do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md)|  
 |Tworzenie formantów powiązanych z danymi.|[Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Powiązanie formantów WPF z danymi w Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|  
 |Powiązanie z obiektem lub kolekcji.|[Powiązanie obiektów w programie Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|  
-|Filtrowanie danych, która jest wyświetlana w Interfejsie użytkownika.|[Filtrowanie i sortowanie danych w aplikacji formularzy systemu Windows](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
-|Dostosowywanie podpisów dla formantów.|[Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
+|Filtrowanie danych, która jest wyświetlana w Interfejsie użytkownika.|[Filtrowanie i sortowanie danych w aplikacji Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
+|Dostosowywanie podpisów dla formantów.|[Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)   
- [Powiązanie danych formularzy systemu Windows](/dotnet/framework/winforms/windows-forms-data-binding)
+ [Wiązanie danych formularzy Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)

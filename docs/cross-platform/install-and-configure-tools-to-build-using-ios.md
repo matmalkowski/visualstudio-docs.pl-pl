@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Zainstaluj i skonfiguruj narzędzia do kompilacji przy użyciu systemu iOS
 Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowania i wdrażania kodu dla systemu iOS w narzędziu iOS Simulator lub urządzenia z systemem iOS, ale z powodu ograniczeń licencji kod musi być skompilowany i zdalnie uruchamiać na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, musisz instalowania i konfigurowania zdalnego agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), opartym na systemie Dojścia zdalnego agenta kompilacji żądań w programie Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączone do komputera Mac lub w narzędziu iOS Simulator na komputerach Mac.  
@@ -239,4 +240,4 @@ Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowa
      gdzie *config_file_path* to ścieżka do pliku konfiguracji w formacie JSON. Opcje uruchamiania i ich wartości nie może zawierać kreski.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zainstaluj Visual C++ for Cross Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7ead60f427a513af263502dbecb3237c776ef776
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 752103825a25c4352ccc21730b8d2b7265f8f41b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Konstruktory domyślne muszą być co najmniej tak krytyczne, jak podstawowe konstruktory domyślne
 |||  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
  Atrybut przezroczystości domyślnego konstruktora klasy pochodnej nie jest tak ważne, jak przezroczystość klasy podstawowej.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Typy i składniki, które mają <xref:System.Security.SecurityCriticalAttribute> nie można użyć przez kod aplikacji Silverlight. Typy krytyczne dla bezpieczeństwa i członkowie mogą być używani tylko przez zaufany kod w środowisku .NET Framework dla biblioteki klas Silverlight. Ze względu na to, że publiczna lub chroniona konstrukcja w klasie pochodnej musi mieć taką samą lub większą przejrzystość jak jej klasa podstawowa, klasy w aplikacji nie mogą pochodzić z klasy oznaczonej jako SecurityCritical.  
+ Typy i składniki, które mają <xref:System.Security.SecurityCriticalAttribute> nie można użyć przez kod aplikacji Silverlight. Krytyczne dla bezpieczeństwa typy i składowe mogą być używane tylko przez zaufany kod w środowisku .NET Framework dla biblioteki klas Silverlight. Ze względu na to, że publiczna lub chroniona konstrukcja w klasie pochodnej musi mieć taką samą lub większą przejrzystość jak jej klasa bazowa, klasy w aplikacji nie mogą pochodzić z klasy oznaczonej jako SecurityCritical.  
   
  Dla kodu platformy środowisko CoreCLR Jeśli typ podstawowy ma konstruktora domyślnego nieprzezroczystych public lub protected następnie Typ pochodny musi przestrzegać reguły dziedziczenia konstruktora domyślnego. Typ pochodny również musi mieć konstruktora domyślnego i tego konstruktora musi wynosić co najmniej jako krytyczne domyślnego konstruktora typu podstawowego.  
   

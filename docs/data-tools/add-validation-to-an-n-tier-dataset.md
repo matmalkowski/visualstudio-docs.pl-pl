@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b4c204c7515e8bb178ba1ee541650593c0281f15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: a3f37b734bb9d109634fc272fca3140d40c040f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do warstwowego zestawu danych
 Dodawanie walidacji do zestawu danych, który jest dzielony stanowi rozwiązanie warstwowe zasadniczo jest taka sama jak dodawanie walidacji do pojedynczego pliku zestawu danych (dataset w jednym projekcie). Sugerowane lokalizacją sprawdzaniu poprawności danych jest podczas <xref:System.Data.DataTable.ColumnChanging> i/lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabeli danych.  
@@ -170,4 +171,4 @@ End Sub
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie aplikacji warstwowych](../data-tools/n-tier-data-applications-overview.md)   
  [Wskazówki: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
- [Sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md)
+ [Weryfikowanie danych w zestawach danych](../data-tools/validate-data-in-datasets.md)

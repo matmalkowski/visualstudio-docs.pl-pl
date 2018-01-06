@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 Program Visual Studio udostępnia czasu projektowania narzędzi do pracy z obiektami niestandardowych jako źródło danych w aplikacji. Jeśli chcesz przechowywać dane z bazy danych w obiekcie powiązanemu z kontrolek interfejsu użytkownika, zalecane podejście jest użycie programu Entity Framework do generowania klasy lub klas. Programu Entity Framework auto generuje wszystkich umożliwiającego śledzenie zmian kodu, co oznacza, że zmiany wprowadzone w lokalnych obiektów automatycznie są zachowywane w bazie danych w przypadku wywołania AcceptChanges w obiekcie DbSet. Aby uzyskać więcej informacji, zobacz [dokumentację programu Entity Framework](https://ef.readthedocs.org/en/latest/).  

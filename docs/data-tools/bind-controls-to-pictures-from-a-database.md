@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc71529f852e87ca206509e06cb80940c11ac36d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77d2780200fd8be7a42d396cdade39b271b04bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie formantów z obrazami z bazy danych
 Można użyć **źródeł danych** okna do powiązania obraz w bazie danych z formantem w aplikacji. Na przykład można powiązać obraz <xref:System.Windows.Controls.Image> kontroli w aplikacji WPF lub do <xref:System.Windows.Forms.PictureBox> formantu w aplikacji formularzy systemu Windows.  

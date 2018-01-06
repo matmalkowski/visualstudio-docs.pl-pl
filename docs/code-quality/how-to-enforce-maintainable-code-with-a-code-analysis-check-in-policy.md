@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 19d8761abea6934c59673c332ea09e8a0b4e6997
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: wymuszanie kodu za pomocą zasad ewidencjonowania analizy kodu
 Deweloperzy mogą używać narzędzia metryki kodu do mierzenia stopnia złożoności i łatwości konserwacji ich kodu, ale nie można ich wywołać metryki kodu jako część zasad ewidencjonowania. Jednakże zespołu można włączyć reguły analizy kodu Sprawdź zgodność ich kodu ze standardami metryki kodu i wymuszania reguł za pomocą zasad ewidencjonowania. Aby uzyskać więcej informacji na temat metryki kodu, zobacz [wartości metryk kodów](../code-quality/code-metrics-values.md).  
@@ -60,4 +61,4 @@ Deweloperzy mogą używać narzędzia metryki kodu do mierzenia stopnia złożon
   
 ## <a name="see-also"></a>Zobacz też  
  [Wartości metryk kodów](../code-quality/code-metrics-values.md)   
- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+ [Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

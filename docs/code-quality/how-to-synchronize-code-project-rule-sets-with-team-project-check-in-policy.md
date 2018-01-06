@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de3a7bfaccec45dc6b7fce1def45a6e6de8e75f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899f9026b2e7c86ad1bd9f722dc7e1904cab2b9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Porady: synchronizowanie zestawu reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego
 Możesz zsynchronizować ustawienia analizy kodu dla projektów kodu z zasadami ewidencjonowania projektu zespołowego, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w regule ustawienie zasad ewidencjonowania. Twoje realizacji developer można poinformować o nazwę i lokalizację zestawu reguł dla zasad ewidencjonowania. Jedną z następujących opcji umożliwia upewnij się, że analiza kodu dla projektu używa poprawny zestaw reguł:  

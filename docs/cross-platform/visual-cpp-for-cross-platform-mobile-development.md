@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross Platform Mobile Development
 Można tworzyć natywne aplikacje C++ dla systemu iOS, Android i Windows i udziału typowy kod w bibliotekach przeznaczony dla systemu iOS, Android i Windows za pomocą programu Visual C++ dla aplikacji mobilnych dla wielu Platform. Ta opcja jest dostępna w programie Visual Studio 2015, który instaluje zestawy SDK i narzędzia potrzebne do aplikacji dla wielu platform bibliotek udostępnionych i aplikacje natywne. Po jej zainstalowaniu może umożliwiają utworzenie kodu uruchamianego w systemach iOS i urządzeniach z systemem Android i platform, oprócz Windows, Windows Phone lub Xbox Visual C++.  
@@ -97,12 +98,12 @@ Można tworzyć natywne aplikacje C++ dla systemu iOS, Android i Windows i udzia
   
 ## <a name="in-this-section"></a>W tej sekcji  
   
-1.  [Zainstaluj Visual C++ for Cross Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1.  [Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [Zainstaluj i skonfiguruj narzędzia do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2.  [Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
 3.  [Tworzenie aplikacji systemu Android działania natywnego](../cross-platform/create-an-android-native-activity-app.md)  
   
 4.  [Tworzenie aplikacji OpenGL ES w systemach Android i iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Przykłady aplikacji mobilnych dla wielu Platform](../cross-platform/cross-platform-mobile-development-examples.md)
+5.  [Przykłady programowania międzyplatformowych aplikacji mobilnych](../cross-platform/cross-platform-mobile-development-examples.md)

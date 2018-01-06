@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1c7e99ce49df969fae439afac5d65369fae9c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e7078e6814abeb0db2afd2cffe698f923e530179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisz dane z obiektu do bazy danych
 Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednego z TableAdapter DBDirect — metody (na przykład `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
@@ -78,4 +79,4 @@ Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z 
  Musi mieć uprawnienia do wykonania wybranego INSERT, UPDATE lub DELETE w tabeli w bazie danych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych w bazie danych](../data-tools/save-data-back-to-the-database.md)
+ [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

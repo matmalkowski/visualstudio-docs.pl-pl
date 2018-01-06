@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Porady: tworzenie LINQ w klasach SQL zamapowane do tabel i widoków (Projektanta obiektów relacyjnych)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]klasy, które są mapowane na bazę danych, tabele i widoki są nazywane *klas jednostek*. Mapuje klasy jednostka rekordu, natomiast poszczególne właściwości klasy jednostki mapowania poszczególnych kolumn, które tworzą rekord. Tworzenie klas jednostek, które są oparte na tabele lub widoki przeciągając tabele lub widoki z **Eksploratora serwera**/**Eksploratora bazy danych** na [LINQ do SQL narzędzi w Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Generuje klas i stosuje konkretnym [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atrybutów w celu włączenia [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkcji (przesyłanie danych i możliwości edycji <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje o [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas, zobacz [LINQ w modelu obiektu SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  

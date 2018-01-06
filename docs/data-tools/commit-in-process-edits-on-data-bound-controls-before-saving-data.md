@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 38d50f1e3da0004869ae66df8e486affa1b68c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdź wewnątrzprocesowych na formantach powiązanych z danymi przed zapisaniem danych
 Podczas edycji wartości w formantach powiązanych z danymi, użytkownicy muszą Przejdź poza bieżącego rekordu można przekazać zaktualizowanej wartości do powiązanej z kontroli źródła danych. Gdy przeciągnij elementy z [Data Sources — okno](add-new-data-sources.md) na formularz, pierwszy element, który musisz porzucić generuje kod w **zapisać** zdarzenia kliknij przycisk <xref:System.Windows.Forms.BindingNavigator>. Ten kod wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource>. W związku z tym wywołaniu <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody są generowane tylko dla pierwszego <xref:System.Windows.Forms.BindingSource> dodana do formularza.  

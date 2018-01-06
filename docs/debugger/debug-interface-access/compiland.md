@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a93cc4b98d46989aedfb212a54e6a5df5692ad59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compiland"></a>Jednostka kompilacji
 Istnieje `SymTagCompiland` symboli dla każdego Compiland połączony plik .exe. Compiland informacje są dzielone symbole z `SymTagCompiland` tagu, który można pobrać bez ładowania symboli dodatkowe compiland oraz symboli z `SymTagCompilandDetails` tag, które mogą wymagać ładowania symboli dodatkowych.  

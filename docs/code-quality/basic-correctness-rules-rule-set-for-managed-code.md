@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfe5e81256c6a1c105d8bff88c7f6271ffa4d235
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 Zestaw reguł podstawowe reguły poprawności koncentruje się na błędów logicznych i typowych pomyłek przy używaniu framework interfejsów API. Podstawowe reguły poprawności obejmują reguły w zestawie reguł reguł zalecanych Minimum. Aby uzyskać więcej informacji, zobacz [ustawić zarządzane zalecane reguły dla zarządzanego kodu](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) powinna zawierać tę regułę, ustaw, aby rozszerzyć listę ostrzeżeń, że minimalna zalecana raportu reguł.  

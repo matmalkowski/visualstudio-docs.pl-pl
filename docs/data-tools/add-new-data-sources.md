@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0c83367d383ab72194e5f83609b0f93d8602fdcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła danych* odwołuje się do obiektów .NET połączenia z magazynem danych i udostępniania danych do aplikacji .NET. Projektanci programu Visual Studio może używać źródła danych do generowania kodu umożliwiającego, który wiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z danych wyjściowych **źródeł danych** okna. Tego rodzaju źródła danych może być:  
@@ -97,4 +98,4 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *źródła 
  Możesz utworzyć źródło danych z listy programu SharePoint, uruchamiając **Kreator konfiguracji źródła danych** i wybierając **SharePoint** typ źródła danych. SharePoint udostępnia dane za pomocą [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], dlatego tworzenie źródła danych programu SharePoint jest taki sam, jak podczas tworzenia źródła danych z usługi. Wybieranie **SharePoint** elementu **Kreator konfiguracji źródła danych** otwiera **Dodaj odwołanie do usługi** okno dialogowe, w którym można połączyć się z usługą danych programu SharePoint poprzez wskazanie serwera programu SharePoint.  To wymaga zestawu SDK programu SharePoint.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio tools danych dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

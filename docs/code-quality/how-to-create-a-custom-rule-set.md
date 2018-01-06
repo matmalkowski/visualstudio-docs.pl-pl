@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Porady: tworzenie niestandardowego zestawu reguł
 W [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], i [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], można tworzyć i modyfikować niestandardowy *zestaw reguł* do określonego projektu potrzeb skojarzonych z analizy kodu. Aby utworzyć regułę niestandardową wartość, otwórz je lub zestawów reguł więcej standardowe w edytorze zestawu reguł. Można dodać lub usunąć określone zasady i akcji, który występuje podczas analizy kodu Określa, że naruszono reguły można zmienić.  
@@ -111,4 +112,4 @@ W [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[v
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Konfigurowanie analizy kodu dla projektu zarządzanego kodu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Odwołanie zestawu reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
+ [Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
