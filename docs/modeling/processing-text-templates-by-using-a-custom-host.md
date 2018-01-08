@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ea51f2b4b11680c07d9e7344d097b954a57d3f4d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f4456899b724d8a7cd2dba6039b28eee29bfafd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
 *Transformacji szablonu tekstowego* przetworzyć przyjmuje *szablonu tekstowego* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. Możesz wywołać aparat przekształcania tekstu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia, lub z poziomu aplikacji autonomicznej uruchomiona na komputerze, na którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany. Jednak należy podać *hosta tworzenia szablonów tekstowych*. Ta klasa łączy szablon ze środowiskiem, znajdując zasoby, takie jak zestawy i dołączane pliki, oraz zajmując się obsługą danych wyjściowych i komunikatów o błędach.  
@@ -52,15 +53,15 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>jest zdefiniowany w **Microsoft.VisualStudio.TextTemplating.\*. 0 biblioteki dll**, i <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> jest zdefiniowany w **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0 biblioteki dll**.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  Przedstawiono sposób tworzenia niestandardowego hosta szablonu tekstowego, która sprawia, że tekst szablonu funkcji dostępnych poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Proces transformacji szablonu tekstowego](../modeling/the-text-template-transformation-process.md)  
+ [Proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md)  
  W tym artykule opisano, jak działa transformacja tekstu i które części można dostosować.  
   
- [Tworzenie procesory dyrektywy szablonu tekstowego T4 niestandardowych](../modeling/creating-custom-t4-text-template-directive-processors.md)  
+ [Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  Zawiera omówienie procesorów dyrektyw szablonu tekstu.
