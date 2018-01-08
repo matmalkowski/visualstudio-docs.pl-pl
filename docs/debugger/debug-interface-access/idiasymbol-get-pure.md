@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11bbc11200340d51d1b680202df78fc7ab76e7d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c59cb3c82e60eff992ba07c382a24ec10d4b64c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 Pobiera flagę określającą, czy funkcja jest czysty wirtualnego.  
@@ -42,4 +43,4 @@ HRESULT get_pure (
 >  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

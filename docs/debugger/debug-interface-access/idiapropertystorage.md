@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a135bb036a327433ba3edb3e6e320a2d81a279e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 71f3f0afb305bd59de53f66adc6c3c1418ec1534
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Umożliwia odczytanie trwałej właściwości zestaw właściwości DIA.  
@@ -49,19 +50,19 @@ IDiaPropertyStorage : IUnknown
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
  Uzyskanie przez wywołanie metody tego interfejsu `QueryInterface` metody na inny interfejs. Następujące interfejsy mogą być przeszukiwane dla `IDiaPropertyStorage` interfejsu:  
   
--   [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)  
+-   [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
--   [Idiasegment —](../../debugger/debug-interface-access/idiasegment.md)  
+-   [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
   
--   [Idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md)  
+-   [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
   
--   [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)  
+-   [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
   
--   [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)  
+-   [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
   
--   [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)  
+-   [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
   
--   [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)  
+-   [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>Przykład  
  Ten przykład przedstawia funkcję, która wyświetla wszystkie właściwości udostępniane przez `IDiaPropertyStorage` obiektu. Zobacz [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfejsu, na przykład przedstawia sposób `IDiaPropertyStorage` interfejsu są uzyskiwane z [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) interfejsu.  
@@ -137,4 +138,4 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
  [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
- [Idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+ [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
