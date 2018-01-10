@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1612856fa4c098b5b7ff081020a84324bd5f8c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 10fc7fe674e73ab1c81721048a50db80d1dd6fdd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="troubleshooting-code-coverage"></a>Pokrycie kodu — wyszukiwanie błędów
 Narzędzie analizy pokrycia kodu w programie Visual Studio zbiera dane dotyczące zestawów natywnych i zarządzanych (pliki .dll i .exe). Jednak w niektórych przypadkach w oknie Wyniki pokrycia kodu jest wyświetlany błąd typu „Wygenerowano puste wyniki: …”. Może się tak zdarzyć z kilku przyczyn. Ten temat ma pomóc w rozwiązaniu tych problemów.  

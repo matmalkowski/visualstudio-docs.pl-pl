@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
-caps.latest.revision: "15"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 68999863abbf539bf1d83456d0630820249adb77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 7595df2e8d57ae21d134aa68d156e87b883e8500
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
 Pakiet Microsoft.SharePoint.Emulators zawiera zestaw bibliotek, które ułatwiają tworzenie testów jednostkowych izolowanych aplikacji Microsoft SharePoint 2010. Użyj emulatory [podkładek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolacji platformę, by utworzyć lekkie obiekty w pamięci, które imitują najczęściej obiekty i metody interfejsu API programu SharePoint. Jeśli metoda programu SharePoint nie jest emulowana, lub aby zmienić domyślne zachowanie emulatora, można utworzyć elementów sztucznych podkładek do udostępniania wyników, które mają.  
@@ -589,7 +588,7 @@ namspace MySPAppTests
  [W tym temacie](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
- [Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
- [Wydajności sieci Web i obciążenia testowanie aplikacji SharePoint 2010 i 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Opracowywanie rozwiązań SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
+
+[Testowanie jednostek kodu](../test/unit-test-your-code.md)  
+[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)  
+[Opracowywanie rozwiązań SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)

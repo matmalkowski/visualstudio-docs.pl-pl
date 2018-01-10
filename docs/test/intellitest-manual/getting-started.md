@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Get started
-ms.assetid: 21FE4D68-9E7F-4BB1-BD69-B0D09A941F09
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5dc4e6bca1654c17fced9821bfc84b41e9c39851
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+author: gewarren
+ms.openlocfilehash: 9016006f9774c4a9eff2937f32543b9f8d9f5fb8
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Rozpoczynanie pracy z Microsoft IntelliTest
 

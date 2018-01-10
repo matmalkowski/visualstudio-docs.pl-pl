@@ -4,19 +4,18 @@ ms.custom:
 ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: "13"
 ms.author: mblome
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: cad1d4dd670f83c9dcb168127ecbe44f8687f09a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Jak przetestować biblioteki DLL programu Visual C++ dla aplikacji platformy uniwersalnej systemu Windows 
 W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla biblioteki DLL języka C++ dla aplikacji systemu Windows platformy Uniwersalnej Framework testów firmy Microsoft dla języka C++. Biblioteki DLL RooterLib pokazuje niezrozumiała chwile teorii limit z calculus zaimplementowanie funkcji, która oblicza szacunkową pierwiastek kwadratowy z podanej liczbie. Biblioteka DLL może następnie uwzględniane w aplikacji platformy uniwersalnej systemu Windows, która przedstawia użytkownikowi fun, co można zrobić za pomocą matematycznych.  

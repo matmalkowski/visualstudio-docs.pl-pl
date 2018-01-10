@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
-caps.latest.revision: "23"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 009ae62acc9685ee0d004976ce86b751cc0d1852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji sieci Web przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji sieci Web.  

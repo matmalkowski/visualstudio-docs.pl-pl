@@ -21,11 +21,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>replace — Metoda (Ciąg) (JavaScript)
 Zastępuje tekst w ciągu przy użyciu wyrażenia regularnego lub ciągu wyszukiwania.  
@@ -34,7 +34,7 @@ Zastępuje tekst w ciągu przy użyciu wyrażenia regularnego lub ciągu wyszuki
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>Parametry  
@@ -59,8 +59,8 @@ stringObj. replace(rgExp, replaceText)
 |**$&**|Określa część `stringObj` cały wzorzec jest zgodny. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
 |`$``|Określa część `stringObj` czy poprzedza dopasowania opisanego przez  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
 |`$'`|Określa część `stringObj` następujący dopasowania opisanego przez  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
-|`$`  ***n***|*n* Th przechwycone submatch, gdzie  *n*  jest pojedynczą cyfrą dziesiętną z zakresu od 1 do 9. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
-|`$`  ***nn***|*nn* Th przechwycone submatch, gdzie  *nn*  jest liczbą dziesiętną dwucyfrowe od 01 do 99. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
+|`$`  ***n***| *n* Th przechwycone submatch, gdzie  *n*  jest pojedynczą cyfrą dziesiętną z zakresu od 1 do 9. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
+|`$`  ***nn***| *nn* Th przechwycone submatch, gdzie  *nn*  jest liczbą dziesiętną dwucyfrowe od 01 do 99. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] lub nowszy)|  
   
  Jeśli `replaceText` to funkcja, dla każdego podciąg funkcja jest wywoływana z następującymi *m* + 3 argumenty gdzie *m* jest liczba pozostałych Przechwytywanie nawiasów w `rgExp`. Pierwszy argument jest dopasowanym podciągiem. Następne *m* argumenty są wszystkie przechwytywania, które powstały w wyniku wyszukiwania. Argument *m* + 2 jest przesunięcie w `stringObj` którym wystąpił dopasowania, a argument *m* + 3 jest `stringObj`. Wynikiem jest wartość w postaci ciągu, powstałego w wyniku zastąpienia każdego dopasowanego podciągu wartością zwracaną z wywołania funkcji.  
   
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  Poniższy przykład, który działa w [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] i później, przedstawia sposób użycia funkcji, która zwraca tekst zastępczy. Zastępuje wszelkie wystąpienia liczby, po której występuje litera "F" na wartość będąca odpowiednikiem w stopniach Celsjusza.  

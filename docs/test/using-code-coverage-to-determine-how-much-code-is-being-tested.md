@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 Aby określić, jaka część kodu projektu jest faktycznie testowana przez zakodowane testy, takie jak testy jednostkowe, można użyć funkcji pokrycia kodu programu Visual Studio. Aby skutecznie zabezpieczyć się przed błędami, testy powinny obejmować lub pokrywać znaczną część kodu.  
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Po uruchomieniu kompilacji wyniki pokrycia kodu są dołączane do przebiegu testowego i pojawiają się w podsumowaniu kompilacji.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analizowanie pokrycia kodu w wierszu polecenia  
- Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Pokrycie kodu jest opcją tego narzędzia. Aby uzyskać więcej informacji, zobacz [opcje wiersza polecenia VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options).  
+
+Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Pokrycie kodu jest opcją narzędzia vstest.console.exe.
+
+1.  Uruchom wiersz polecenia programisty dla programu Visual Studio:
   
-1.  Uruchom wiersz polecenia programisty dla programu Visual Studio:  
+    W systemie Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia dla programu VS 2017 deweloperów**.  
   
-     W systemie Windows **Start** menu, wybierz **wszystkie programy**, **programu Microsoft Visual Studio**, **programu Visual Studio Tools**,  **Wiersz polecenia dla deweloperów**.  
+2.  Uruchom następujące polecenie:
   
-2.  Uruchom:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów  
  Jeśli nie są wyświetlane wyniki pokrycia kodu, zobacz [Rozwiązywanie problemów z pokrycia kodu](../test/troubleshooting-code-coverage.md).  

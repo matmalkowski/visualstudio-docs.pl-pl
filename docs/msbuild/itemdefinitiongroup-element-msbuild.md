@@ -22,11 +22,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 431171316ba98cfb6195c6cf26d6530147733e51
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1a8444c63d7c025c04f212901e82cce6d5cf24da
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup — Element (MSBuild)
 `ItemDefinitionGroup` Element pozwala zdefiniować zestaw definicje elementów, które są wartości metadanych, które domyślnie są stosowane do wszystkich elementów w projekcie. ItemDefinitionGroup zastępuje konieczność użycia [createitem — zadanie](../msbuild/createitem-task.md) i [CreateProperty — zadanie](../msbuild/createproperty-task.md). Aby uzyskać więcej informacji, zobacz [definicje elementów](../msbuild/item-definitions.md).  
@@ -37,10 +37,10 @@ ms.lasthandoff: 12/22/2017
 ## <a name="syntax"></a>Składnia  
 
 ```  
-<ItemGroup Condition="'String A' == 'String B'">  
+<ItemDefinitionGroup Condition="'String A' == 'String B'">  
     <Item1>... </Item1>  
     <Item2>... </Item2>  
-</ItemGroup>  
+</ItemDefinitionGroup>  
 ```  
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy  

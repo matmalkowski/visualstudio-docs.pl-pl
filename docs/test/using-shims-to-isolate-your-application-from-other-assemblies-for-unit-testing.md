@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
-caps.latest.revision: "12"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 3a0d2932e4fc14070759906ad27c36f63132559b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 **Poprawki typy** są jednym z dwie technologie używane przez program Microsoft substytutów Framework do pozwalają łatwo odizolowanego składniki w ramach testu ze środowiska. Podkładek kierowanie wywołań określonych metod do kodu, który można zapisać jako część testu. Wiele metod zwraca różne wyniki zależy od warunków zewnętrznych, ale podkładki jest pod kontrolą testu i może zwrócić spójne wyniki przy każdym wywołaniu. Dzięki temu można łatwiej zapisu testów.  

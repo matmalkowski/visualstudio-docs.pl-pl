@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Testowanie jednostek kodu
 Testy jednostkowe zapewniają deweloperów i testerów szybko wyszukać błędy logikę w metod klas w [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], i [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] projektów.  
@@ -55,15 +54,6 @@ Testy jednostkowe zapewniają deweloperów i testerów szybko wyszukać błędy 
 |**Rozszerzanie jednostki typu testowego:** funkcji można dodawać do testów, które mogą nie być w ramach testów jednostkowych. Na przykład można dodać właściwość testu, która określa, czy test powinien być uruchomiony w kontekście zwykłego użytkownika. Można również rozszerzyć środowisko o dodanie atrybutów wiersza do metody i użyć danych w tym wierszu wewnątrz testu.|Przykładowy kod jak rozszerzyć jednostki struktury testowej, można znaleźć w następującej [witrynę sieci Web](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Ustawianie opcji testowania:** na przykład określić, gdzie są przechowywane wyniki testu.|[Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>Zadania powiązane  
- [Przeglądanie wyników testu w programie Microsoft Test Manager](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Opisuje wyniki testów i sposoby pracy z nimi, włączając w to sposób ich wyświetlania, zapisywania i usuwania.  
-  
- [Uruchamianie testów systemowych przy użyciu programu Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Zawiera linki do informacji o korzystaniu z programu Visual Studio zamiast [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Uruchamianie testów automatycznych.  
-  
 ## <a name="reference"></a>Tematy pomocy  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Zawiera opis przestrzeni nazw UnitTesting, obejmujący atrybuty, wyjątki, potwierdzenia i inne klasy, które obsługują testy jednostkowe.  
@@ -85,6 +75,6 @@ Testy jednostkowe zapewniają deweloperów i testerów szybko wyszukać błędy 
 ### <a name="reference"></a>Tematy pomocy  
  [Indeks zawartości dla testów jednostkowych](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>Zobacz też  
- [Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)   
- [Testowanie aplikacji](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Zobacz także
+
+[Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)

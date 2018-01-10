@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
+
 Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy rozwiązania (.exe/.dll), które są ładowane podczas testów jednostkowych. Zaleca się zachować to ustawienie domyślne, ponieważ w większości przypadków działa ono prawidłowo. Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Przed rozpoczęciem dostosowywania zachowania pokrycia kodu należy wziąć pod uwagę kilka alternatyw:  
+Przed rozpoczęciem dostosowywania zachowania pokrycia kodu należy wziąć pod uwagę kilka alternatyw:  
   
 -   *Chcę wyłączyć kod testu z wyników pokrycia kodu i zawiera tylko kod aplikacji.*  
   
@@ -31,10 +31,11 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
   
      Uzyskaj pliki .pdb dla tych zestawów i skopiuj je do tego samego folderu, co pliki .dll zestawu.  
   
- Aby dostosować zachowanie pokrycia kodu, skopiuj [przykładowa na końcu tego tematu](#sample) i dodaj go do rozwiązania przy użyciu pliku runsettings rozszerzenia. Edytowanie jej do własnych potrzeb, a następnie na **testu** menu, wybierz **ustawień testu**, **wybierz ustawienia testu** pliku. W pozostałej części tego tematu opisano tę procedurę bardziej szczegółowo.  
+Aby dostosować zachowanie pokrycia kodu, skopiuj [przykładowa na końcu tego tematu](#sample) i dodaj go do rozwiązania przy użyciu pliku runsettings rozszerzenia. Edytowanie jej do własnych potrzeb, a następnie na **testu** menu, wybierz **ustawień testu**, **wybierz ustawienia testu** pliku. W pozostałej części tego tematu opisano tę procedurę bardziej szczegółowo.  
   
-## <a name="the-runsettings-file"></a>Plik .runsettings  
- Zaawansowane ustawienia pokrycia kodu są określone w pliku .runsettings. Jest to plik konfiguracji używany przez narzędzia do testowania jednostkowego. Firma Microsoft zaleca, należy skopiować [przykładowa na końcu tego tematu](#sample) i edytować go do własnych potrzeb.  
+## <a name="the-runsettings-file"></a>Plik .runsettings
+
+Zaawansowane ustawienia pokrycia kodu są określone w pliku .runsettings. Jest to plik konfiguracji używany przez narzędzia do testowania jednostkowego. Firma Microsoft zaleca, należy skopiować [przykładowa na końcu tego tematu](#sample) i edytować go do własnych potrzeb.  
   
 -   *Co się stało z pliku .testsettings, używane w programie Visual Studio 2010?*  
   
@@ -58,8 +59,9 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
   
  Inne aspekty testów jednostkowych można skonfigurować w tym samym pliku .runsettings. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).  
   
-### <a name="specifying-symbol-search-paths"></a>Określanie ścieżek wyszukiwania symbolu  
- Pokrycie kodu wymaga symboli (pliki .pdb), aby były obecne zestawy. Dla zestawów zbudowanych według rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach pliki .pdb mogą nie być przylegającymi do plików binarnych, ale ścieżkę wyszukiwania symbolu można określić w pliku .runsettings.  
+### <a name="specifying-symbol-search-paths"></a>Określanie ścieżek wyszukiwania symbolu
+
+Pokrycie kodu wymaga symboli (pliki .pdb), aby były obecne zestawy. Dla zestawów zbudowanych według rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach pliki .pdb mogą nie być przylegającymi do plików binarnych, ale ścieżkę wyszukiwania symbolu można określić w pliku .runsettings.  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
 > [!WARNING]
 >  Rozpoznawanie symboli może potrwać, szczególnie przy używaniu zdalnej lokalizacji pliku z wieloma zestawami. W związku z tym należy wziąć pod uwagę kopiowanie zdalnych plików .pdb do tej samej lokalizacji lokalnej co pliki binarne (.dll i .exe).  
   
-### <a name="excluding-and-including"></a>Uwzględnianie i wykluczanie  
- Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:  
+### <a name="excluding-and-including"></a>Uwzględnianie i wykluczanie
+
+Określone zestawy można wykluczyć z analizy pokrycia kodu. Na przykład:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
   
  `Include`jest przetwarzana przed `Exclude`.  
   
-### <a name="regular-expressions"></a>Wyrażenia regularne  
- Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:  
+### <a name="regular-expressions"></a>Wyrażenia regularne
+
+Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:  
   
 1.  **. \***  ciąg znaków  
   
@@ -178,43 +182,47 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>Jak określić pliki .runsettings podczas wykonywania testów  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Aby dostosować ustawienia uruchamiania w testach programu Visual Studio  
- Wybierz **testu**, **ustawień testu**, **wybierz plik ustawień testu** i wybierz plik runsettings. Plik pojawi się w menu Ustawienia testu, gdzie można zaznaczyć go lub usunąć. Gdy zaznaczone, przy każdym użyciu ma zastosowanie pliku runsettings **Analizuj pokrycie kodu**.  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Dostosowywanie ustawień uruchamiania w teście wiersza polecenia  
- Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Plik ustawień jest parametrem tego narzędzia. Aby uzyskać więcej informacji, zobacz [przy użyciu narzędzia VSTest.console w wierszu polecenia](/devops-test-docs/test/using-vstest-console-from-the-command-line).  
-  
-1.  Uruchom wiersz polecenia programisty dla programu Visual Studio:  
-  
-     W systemie Windows **Start**, wybierz **wszystkie programy**, **programu Microsoft Visual Studio**, **programu Visual Studio Tools**, **Developer Wiersz polecenia**.  
-  
-2.  Uruchom:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Dostosowywanie ustawień wykonywania w definicji kompilacji  
- Dane pokrycia kodu można uzyskać z kompilacji zespołu.  
-  
- ![Określanie runsettings w definicji kompilacji](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Aby dostosować ustawienia uruchamiania w testach programu Visual Studio
+
+Wybierz **testu** > **ustawień testu** > **wybierz plik ustawień testu** i wybierz plik runsettings. Plik pojawi się w menu Ustawienia testu, gdzie można zaznaczyć go lub usunąć. Gdy zaznaczone, przy każdym użyciu ma zastosowanie pliku runsettings **Analizuj pokrycie kodu**.
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>Dostosowywanie ustawień uruchamiania w teście wiersza polecenia
+
+Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Plik ustawień jest parametrem tego narzędzia.
+
+1.  Uruchom wiersz polecenia programisty dla programu Visual Studio:
+
+    W systemie Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia dla programu VS 2017 deweloperów**.
+
+2.  Uruchom następujące polecenie:
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>Dostosowywanie ustawień wykonywania w definicji kompilacji
+
+Dane pokrycia kodu można uzyskać z kompilacji zespołu.
+
+![Określanie runsettings w definicji kompilacji](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
+
 1.  Upewnij się, że plik .runsettings jest zaewidencjonowany.  
   
 2.  W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.  
   
-3.  Na **procesu** rozwiń pozycję **testów automatycznych**, **źródła testu**, **parametrów uruchomieniowych**. Wybierz użytkownika **runsettings** pliku.  
+3.  Na **procesu** rozwiń pozycję **testów automatycznych** > **źródła testu** > **parametrów uruchomieniowych**. Wybierz użytkownika **runsettings** pliku.
   
     -   *Ale **zestawu testowego** pojawia się zamiast **źródła testu**. Podczas próby ustawić **parametrów uruchomieniowych** pole, można wybrać tylko pliki .testsettings.*  
   
          W obszarze **testów automatycznych**, wybierz pozycję **zestawu testowego**i wybierz polecenie **[...]**  na końcu linii. W **Dodawanie/edytowanie testu** okno dialogowe, zestaw **Test Runner** do **Visual Studio Test Runner**.  
   
- Wyniki są widoczne w sekcji podsumowania raportu kompilacji.  
+Wyniki są widoczne w sekcji podsumowania raportu kompilacji.
   
-##  <a name="sample"></a>Przykładowy plik runsettings  
- Skopiuj ten kod i dostosuj go do swoich potrzeb. Jest to domyślny plik .runsettings.  
-  
- (Do innych celów pliku runsettings, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
-  
-```xml  
+##  <a name="sample"></a>Przykładowy plik runsettings
+
+Skopiuj ten kod i dostosuj go do swoich potrzeb. Jest to domyślny plik .runsettings.
+
+(Do innych celów pliku runsettings, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Korzystanie z pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Testowanie jednostek kodu](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>Zobacz także
+
+[Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[Testowanie jednostek kodu](../test/unit-test-your-code.md)

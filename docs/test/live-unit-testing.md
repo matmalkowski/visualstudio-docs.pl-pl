@@ -8,15 +8,14 @@ ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
-ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: af8e902f4d56d18097e99a06f76958d3bf2fcff2
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testy jednostkowe za pomocą programu Visual Studio 2017 na żywo
 

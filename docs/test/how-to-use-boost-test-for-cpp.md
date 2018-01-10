@@ -1,22 +1,21 @@
 ---
 title: "Jak używać Boost.Test dla języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/07/2017
+ms.date: 01/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2e0710a8-8e8a-4f6e-8415-5ab3eb830079
-caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b469ee739ebdc4f3cf61e8b5e578c676b5af5e24
-ms.sourcegitcommit: 0614bdb0895b6e6f5b84ba4e1d9327802eca3a6b
+ms.workload: cplusplus
+ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać Boost.Test dla języka C++ w programie Visual Studio
 
@@ -32,9 +31,15 @@ Wymaga Boost.Test [zwiększanie wyniku](http://www.boost.org/)! Jeśli nie masz 
 
 1. Postępuj zgodnie z instrukcjami w [Vcpkg: Menedżer pakietów C++ dla systemu Windows](/cpp/vcpkg) do zainstalowania vcpkg (Jeśli nie masz jeszcze go).
 
-1. Uruchom `vcpkg install boost:x86-windows-static` do zainstalowania z biblioteką statyczną zwiększanie wyniku.
+1. Zainstaluj biblioteki dynamicznej lub statycznej Boost.Test:
 
-1. Uruchom `vcpkg integrate install` polecenia do konfigurowania programu Visual Studio z biblioteki i dodać ścieżki do nagłówków zwiększenie wydajności i pliki binarne.
+    - Uruchom `vcpkg install boost-test` zainstalować bibliotekę dynamiczną Boost.Test.
+    
+       -OR-
+       
+    - Uruchom `vcpkg install boost-test:x86-windows-static` do zainstalowania z biblioteką statyczną Boost.Test.
+
+1. Uruchom `vcpkg integrate install` do konfigurowania programu Visual Studio z biblioteki i dodać ścieżki do nagłówków zwiększenie wydajności i pliki binarne.
 
 ## <a name="create-a-project-for-your-tests"></a>Utwórz projekt dla testów
 
