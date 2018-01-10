@@ -30,11 +30,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia określenia niestandardowego schematu czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowane środowisko programistyczne (IDE). Dostęp do tego okna dialogowego, klikając **narzędzia / Opcje**, a następnie wybierając **środowiska / czcionki i kolory**. Jeśli ta strona nie ma na liście, wybierz **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
@@ -191,7 +192,7 @@ Wyświetla listę elementów, dla których można zmienić kolor pierwszego plan
 |**Atrybut XML**|Nazwy atrybutów.|  
 |**Cudzysłowy atrybutu XML**|Znaki cudzysłowu dla atrybutów XML.|  
 |**Wartość atrybutu XML**|Zawartość atrybutów XML.|  
-|**Sekcja Cdata XML**|Zawartość \<! [CDATA [...]] >.|  
+|**Sekcja Cdata XML**|Zawartość \<! [ CDATA [...]] >.|  
 |**Komentarz XML**|Zawartość \<!---->.|  
 |**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!--,-->,?\>, \<! [,]] >, a [,].|  
 |**Atrybut dokumentu XML**|Wartość dokumentacji xml atrybutów, takich jak \<param name = "I" > gdzie "I" pokolorowane.|  

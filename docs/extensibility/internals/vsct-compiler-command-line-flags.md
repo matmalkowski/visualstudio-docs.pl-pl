@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flagi wiersza polecenia kompilatora VSCT
 Kompilator Visual Studio polecenia tabeli (VSCT) zawiera przełączniki wiersza polecenia w celu zapewnienia pomyślnej kompilacji vsct plików.  
@@ -62,7 +63,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Określ wszelkie dodatkowe zdefiniowanych symboli.|  
 |-I|Wskazują, że dodatkowy obejmują ścieżek, które powinny być używane podczas rozpoznawania odwołań do pliku.|  
 |-L|Określ <xref:System.Globalization.CultureInfo> nazwa kultury, na przykład "en US".|  
-|-E|Emituj obiektów C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C &#124; P &#124;N]:*filename*gdzie C = C#, H = nagłówka C++, N przestrzeń nazw =. Przestrzeń nazw jest wymagany dla języka C#.|  
+|-E|Emituj obiektów C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C &#124; P &#124; N]:*filename*gdzie C = C#, H = nagłówka C++, N przestrzeń nazw =. Przestrzeń nazw jest wymagany dla języka C#.|  
 |-v|Pełne dane wyjściowe.|  
   
  Przełącznika -L instruuje kompilator, aby wybrać grupę ciągów w celu utworzenia pliku binarnego .cto, który odpowiada danym <xref:System.Globalization.CultureInfo> nazwa kultury. Określona nazwa kultury powinna być zgodna atrybut Language co najmniej jednego [Element ciągów](../../extensibility/strings-element.md) w pliku vsct. Jeśli element ciągów nie ma języka atrybutu, został on odziedziczony po zawierający [CommandTable elementu](../../extensibility/commandtable-element.md).  
@@ -80,4 +81,4 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ## <a name="see-also"></a>Zobacz też  
  [Tabela polecenia programu Visual Studio (. Pliki Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)   
- [Jak VSPackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Skróty klawiaturowe w programie Blend
 ## <a name="project-shortcuts"></a>Skróty projektu  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
 |Przenieś zaznaczony obiekt do przodu|CTRL + SHIFT +]|  
 |Przenieś do przodu|CTRL +]|  
 |Przenieś zaznaczony obiekt do tyłu|CTRL + SHIFT + [|  
-|Przesuń do tyłu|CTRL +[|  
+|Przesuń do tyłu|CTRL + [|  
 |Formantu użytkownika z zaznaczonych obiektów (WPF)|F8|  
 |Proporcje obiektów|Naciśnij i przytrzymaj klawisz SHIFT podczas przenoszenia obiektu|  
 |Obracanie obiektu o 15 stopni|Naciśnij i przytrzymaj klawisz SHIFT podczas obracania obiektu|  

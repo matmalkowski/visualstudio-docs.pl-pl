@@ -18,11 +18,12 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e7ea52c913ec9df94a9e7ad94f8a848acf23f800
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 

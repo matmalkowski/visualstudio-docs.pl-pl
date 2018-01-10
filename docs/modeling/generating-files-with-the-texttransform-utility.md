@@ -14,11 +14,12 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d168695aca3626fa1ba351aef56faf001c5b6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generowanie plików za pomocą narzędzia TextTransform
 TextTransform.exe jest narzędziem wiersza polecenia, które służy do transformacji szablonu tekstowego. Podczas wywoływania TextTransform.exe, należy określić nazwę pliku tekstowego z szablonu jako argumentem. TextTransform.exe wywołuje aparat przekształcania tekstu i przetwarza szablonu tekstowego. TextTransform.exe jest zazwyczaj wywoływana przez skrypty. Jednak nie jest zwykle wymagane, ponieważ można dokonać transformacji tekstu, w programie Visual Studio lub w procesie kompilacji.  
@@ -62,7 +63,7 @@ TextTransform [<options>] <templateName>
 |**-** \<Includedirectory >|Katalog, który zawiera szablony tekstowe zawarte w szablonie określony tekst.|  
 |**-P** \<referencepath >|Katalog, aby wyszukać określony w ramach szablonu tekstowego zestawów lub przy użyciu **- r** opcji.<br /><br /> Na przykład aby uwzględnić zestawy używane dla interfejsu API programu Visual Studio, należy użyć<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
 |**-dp** \<processorName >!\< className >! \<assemblyName &#124; codeBase >|Nazwa, pełna nazwa typu i zestawu procesora dyrektywy, który może służyć do przetwarzania dyrektywy niestandardowe w szablonie tekstu.|  
-|**-** [processorName]![directiveName]! \<parameterName >! \<parameterValue >|Określ wartość parametru dla procesora dyrektywy. Jeśli określisz tylko nazwa parametru i wartość parametru będzie dostępne dla wszystkich procesorów dyrektywy. Jeśli określisz procesora dyrektywy parametr jest dostępne tylko do określonego procesora. Jeśli określisz nazwy dyrektywy parametr jest dostępna tylko wtedy, gdy określony dyrektywa jest przetwarzana.<br /><br /> Aby uzyskać dostęp do wartości parametrów z procesora dyrektywy lub szablonu tekstowego, należy użyć <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. W szablonie tekst obejmują `hostspecific` w dyrektywie template i wywoływać wiadomości na `this.Host`. Na przykład:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zawsze wpisz '!' znaków, nawet jeśli pominięto opcjonalne procesora i nazwy dyrektywy. Na przykład:<br /><br /> `-a !!param!value`|  
+|**-** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Określ wartość parametru dla procesora dyrektywy. Jeśli określisz tylko nazwa parametru i wartość parametru będzie dostępne dla wszystkich procesorów dyrektywy. Jeśli określisz procesora dyrektywy parametr jest dostępne tylko do określonego procesora. Jeśli określisz nazwy dyrektywy parametr jest dostępna tylko wtedy, gdy określony dyrektywa jest przetwarzana.<br /><br /> Aby uzyskać dostęp do wartości parametrów z procesora dyrektywy lub szablonu tekstowego, należy użyć <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. W szablonie tekst obejmują `hostspecific` w dyrektywie template i wywoływać wiadomości na `this.Host`. Na przykład:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.,<br /><br /> Zawsze wpisz '!' znaków, nawet jeśli pominięto opcjonalne procesora i nazwy dyrektywy. Na przykład:<br /><br /> `-a !!param!value`|  
 |**-h**|Zawiera Pomoc.|  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
