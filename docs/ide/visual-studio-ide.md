@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e8b2ee3e80d292e6a05a23c2f5b6932d569e0024
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -196,7 +196,7 @@ Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Vis
 
   ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2017_Intellisense.png)
 
-- **Zygzaki** są faliste podkreślenie czerwony, które generują alerty błędów lub potencjalnych problemów w kodzie w czasie rzeczywistym w trakcie pisania. Dzięki temu można rozwiązać je natychmiast bez oczekiwania na błąd mają być wykryte podczas kompilacji lub czasu wykonywania. Jeśli Aktywuj wężyk, pojawi się dodatkowe informacje o tym błędzie. Żarówka może również zostać wyświetlony na lewym marginesie z sugestie dotyczące sposobu Napraw błąd. Aby uzyskać więcej informacji, zobacz [szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md).
+- **Zygzaki** są faliste podkreślenie czerwony, które generują alerty błędów lub potencjalnych problemów w kodzie w czasie rzeczywistym w trakcie pisania. Dzięki temu można rozwiązać je natychmiast bez oczekiwania na błąd mają być wykryte podczas kompilacji lub czasu wykonywania. Jeśli Aktywuj wężyk, pojawi się dodatkowe informacje o tym błędzie. Żarówka może również zostać wyświetlony na lewym marginesie z sugestie dotyczące sposobu Napraw błąd. Aby uzyskać więcej informacji, zobacz [szybkie akcje](../ide/quick-actions.md).
 
  ![Zygzaki](../ide/media/vs2017_squiggle.png)
 

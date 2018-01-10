@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 21018eb6e1a3ff282a7ec9fb856c431f894dafca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa4604ae256fdd4a3f935cc05ff7aec0fda4e842
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Wskazówki: Debugowanie arkusz stylów XSLT
 Kroki opisane w tym przewodniku pokazują, jak używać debuger XSLT. Kroki obejmują wyświetlanie zmiennych, ustawianie punktów przerwania i krokowe wykonywanie kodu. Arkusz stylów znajduje wszystkie źródłowe, których koszt poniżej średnią cenę książek.  
@@ -121,7 +121,7 @@ Okno zmiennych lokalnych Wyświetla wszystkie zmienne lokalne i ich wartości. W
     </books>  
   </xsl:template>  
 </xsl:stylesheet>  
-```  
+```
   
 ### <a name="booksxml"></a>Books.XML  
   
@@ -153,7 +153,7 @@ Okno zmiennych lokalnych Wyświetla wszystkie zmienne lokalne i ich wartości. W
     <price>9.99</price>  
   </book>  
 </bookstore>  
-```  
+```
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)
