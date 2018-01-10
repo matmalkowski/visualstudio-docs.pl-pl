@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: vs.UnitTest.CreateUnitTest
-ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
-caps.latest.revision: "27"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b71e1797b7ba5378b7a8396f56f97cc9a0c63b2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 492aaa5190bb0b24e7077d3523197ff4eff6ba49
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie testów jednostkowych. Jest to testowania, ponieważ można podzielić funkcji programu do odrębny testować zachowania, które można sprawdzić w poszczególnych jednostek *jednostki*. Narzędzia Eksplorator testów programu Visual Studio zapewnia elastyczne i wydajne sposób uruchamiania testów jednostkowych i wyświetlać ich wyniki w programie Visual Studio. Visual Studio instaluje testowania struktur dla kodu zarządzanego i natywnego jednostek firmy Microsoft. Użyj *framework testy jednostkowe* do tworzenia testów jednostkowych, uruchom je i raportuje o wynikach tych testów. Testów jednostkowych Uruchom ponownie podczas wprowadzania zmian, aby przetestować czy kodzie nadal działa poprawnie. Visual Studio Enterprise można to zrobić automatycznie [Live testów jednostkowych](live-unit-testing-intro.md), która wykrywa testów, których dotyczą przez kod zmiany i ich działa w tle podczas pisania.

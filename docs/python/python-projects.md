@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
-Python aplikacje są zazwyczaj definiowane przy użyciu tylko plików i folderów, ale ta struktura może stać się złożona jako aplikacje większy i może obejmować automatycznie generowanej pliki JavaScript dla aplikacji sieci web i tak dalej. Aby ułatwić zarządzanie tym złożoności, można utworzyć projektów programu Visual Studio dla aplikacji Python. Projekt języka Python ( `.pyproj` pliku) identyfikuje źródła i pliki zawartości skojarzonej z projektem, zawiera informacje o kompilacji dla każdego pliku przechowuje informacje o integracji z systemami kontroli źródła i pomaga organizować użytkownika Aplikacja do składników logicznych.
+Python aplikacje są zazwyczaj definiowane przy użyciu tylko plików i folderów, ale ta struktura może stać się złożona jako aplikacje większy i może obejmować automatycznie generowanej pliki JavaScript dla aplikacji sieci web i tak dalej. Projektu programu Visual Studio pomaga zarządzać tym złożoności. Projekt ( `.pyproj` pliku) identyfikuje źródła i pliki zawartości skojarzonej z projektem, zawiera informacje o kompilacji dla każdego pliku przechowuje informacje o integracji z systemami kontroli źródła i pomaga organizować aplikacji do składników logicznych.
 
 Ponadto projekty zawsze są zarządzane w programie Visual Studio *rozwiązania*, który może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie. Na przykład projektów języka Python można odwołanie projektu C++ w przypadku modułu rozszerzenia taki sposób, że program Visual Studio automatycznie tworzy projektu C++ (w razie potrzeby) po rozpoczęciu debugowania projektu języka Python. (Aby uzyskać ogólne informacje, zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
@@ -38,7 +38,7 @@ W tym temacie:
 
 < name = "lightweight użycia projektu bez"</a>
 > [!Tip]
-> Nawet bez projektu programu Visual Studio dobrze działa z kodu języka Python, jak to możliwe Otwórz Python pliku samodzielnie i korzystać z automatycznego zakończenia, IntellSense i debugowanie (prawym przyciskiem myszy w edytorze i wybierając **Start [z | bez] debugowania**). Ponieważ taki kod zawsze używa domyślnego środowiska globalnych, jednak mogą pojawić się błędy lub nieprawidłowe zakończeń Jeśli kod jest przeznaczona dla innego środowiska. Ponadto program Visual Studio analizuje wszystkie pliki i pakiety w folderze, w którym jeden plik jest otwarty, może zużywać znaczną czas procesora CPU.
+> Nawet bez projektu programu Visual Studio dobrze działa z kodu języka Python, jak to możliwe Otwórz Python pliku samodzielnie i korzystać z automatycznego zakończenia, IntelliSense i debugowanie (prawym przyciskiem myszy w edytorze i wybierając **Start [z | bez] debugowania**). Ponieważ taki kod zawsze używa domyślnego środowiska globalnych, jednak mogą pojawić się błędy lub nieprawidłowe zakończeń Jeśli kod jest przeznaczona dla innego środowiska. Ponadto program Visual Studio analizuje wszystkie pliki i pakiety w folderze, w którym jeden plik jest otwarty, może zużywać znaczną czas procesora CPU.
 >
 > Zgodnie z poniższym opisem w jest proste sprawa do tworzenia projektu programu Visual Studio z istniejącego kodu [tworzenia projektu z istniejących plików](#creating-a-project-from-existing-files).
 
@@ -62,15 +62,16 @@ Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego.
 ![Aktywowanie środowisko dla projektów języka Python](media/projects-activate-environment.png)
 
 < name = "typów projektów"</a>
+
 ## <a name="project-templates"></a>Szablony projektu
 
-Program Visual Studio pozwala na wiele sposobów, aby skonfigurować projekt języka Python, od początku lub z istniejącego kodu. Aby użyć szablonu, wybierz **Plik > Nowy > Projekt...**  polecenie menu, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań i wybierz **Dodaj > Nowy projekt...** , które przywołać **nowy projekt** okna dialogowego poniżej. Aby wyświetlić szablony specyficzne dla języka Python, wyszukaj frazę "Python" lub wybierz **Szablony > inne języki > Python** węzła:
+Program Visual Studio pozwala na wiele sposobów, aby skonfigurować projekt języka Python, od początku lub z istniejącego kodu. Aby użyć szablonu, wybierz **Plik > Nowy > Projekt...**  polecenie menu, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań i wybierz **Dodaj > Nowy projekt...** , które przywołać **nowy projekt** okna dialogowego poniżej. Aby wyświetlić szablony specyficzne dla języka Python, wyszukaj frazę "Python" lub wybierz **zainstalowana > Python** węzła:
 
 ![Okno dialogowe nowego projektu z szablonami Python](media/projects-new-project-dialog.png)
 
 Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r (nie wszystkie szablony są dostępne wszystkie poprzednie wersje):
 
-| Szablon | Opis | 
+| Szablon | Opis |
 | --- | --- |
 | [Z istniejącego kodu języka Python](#creating-a-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu języka Python w strukturze folderu.  |
 | Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](python-environments.md#project-specific-environments). |

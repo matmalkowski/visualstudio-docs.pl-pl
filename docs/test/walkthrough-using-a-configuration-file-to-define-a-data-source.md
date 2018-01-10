@@ -11,16 +11,15 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: "32"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
 W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowanej w pliku app.config w celu przeprowadzania testów jednostkowych. Dowiesz się tworzenie pliku app.config, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:  
@@ -269,8 +268,8 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 > [!IMPORTANT]
 >  Wdrażanie elementów, takich jak źródła danych, tak aby były dostępne dla testu w katalogu wdrożenia.  
   
-## <a name="see-also"></a>Zobacz też  
- [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
- [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Testowanie aplikacji](/devops-test-docs/test/test-apps-early-and-often)   
- [Instrukcje: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
+## <a name="see-also"></a>Zobacz też
+
+[Testowanie jednostek kodu](../test/unit-test-your-code.md)  
+[Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
+[Instrukcje: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

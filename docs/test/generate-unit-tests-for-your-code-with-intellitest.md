@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: vs.UnitTest.CreateIntelliTest
-ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
-caps.latest.revision: "33"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf6bdf29541b721839bbdef42a2bc018d4a9c424
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 4ec391c698a53caa93796634ccf6fd8bf6bdcb41
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostek dla kodu za pomocą IntelliTest
 IntelliTest Eksploruje kodu .NET do generowania danych testowych i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie, jest generowany wprowadzania testu który wykona tej instrukcji. Analizy przypadków jest wykonywane dla każdego gałąź warunkowa w kodzie. Na przykład `if` instrukcje, potwierdzeń i wszystkie operacje, które można zgłaszają wyjątki są analizowane. Analiza jest używany do generowania danych testowych dla sparametryzowanego testu jednostkowego dla każdej z metod tworzenia testów jednostkowych z pokryciem kodu wysoki.  

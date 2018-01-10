@@ -13,11 +13,11 @@ author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload: unity
-ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e68024333084b6166305266dd061ef32bc0e14a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
 Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej niż tylko pisania kodu. Te działania określone jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i obejmują planowania i śledzenia elementów pracy, projektowania i wdrażania kodu, zarządzanie repozytorium kodu źródłowego, uruchomionych kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testów jednostkowych i interfejsu użytkownika), systemem różne rodzaje diagnostyki w środowiskach produkcyjnych i rozwoju i monitorowanie zachowania wydajności i użytkownika aplikacji w czasie rzeczywistym za pomocą telemetrii i analiza.  
@@ -84,8 +84,7 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
 |Tworzenie definicji przed i po skryptów|Tak|Można również skonfigurować definicję kompilacji niestandardowej, która używa Unity wiersza polecenia do uruchomienia kompilacji dla skryptów przed i po kompilacji.|  
 |W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań dla TFVC tylko wtedy, gdy działa Git modelu żądania ściągnięcia zamiast zaewidencjonowania.|  
 
-## <a name="testing"></a>Testowanie  
- Opis łącza:  **[testowanie aplikacji](/devops-test-docs/test/test-apps-early-and-often)**  
+## <a name="testing"></a>Testowanie
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|  
 |-------------|--------------------------|-------------------------|  
@@ -96,8 +95,9 @@ Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej 
 |[Testowanie jednostek kodu](../test/unit-test-your-code.md)|W ramach Unity, ale nie w programie Visual Studio|Udostępnia Unity własną jednostkę test framework jako część [narzędzia testowe Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity zasobów magazynu). Wyniki testów jednostkowych są zgłaszane w ramach platformy Unity i nie zostaną wyświetlone w programie Visual Studio.|  
 |[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Nie|Kodowane testy interfejsu użytkownika zależą od formantów do odczytu w Interfejsie użytkownika aplikacji; Aplikacji Unity są graficznych i dlatego zawartość nie jest możliwy za pomocą narzędzi testu kodowanego interfejsu użytkownika.|  
 
-## <a name="improve-code-quality"></a>Podnoszenie jakości kodu  
- Opis łącza:  **[poprawy jakości kodu](/visualstudio/test/improve-code-quality)**  
+## <a name="improve-code-quality"></a>Podnoszenie jakości kodu
+
+Opis łącza:  **[poprawy jakości kodu](/visualstudio/test/improve-code-quality)**  
 
 |Funkcja|Obsługiwane z Unity|Dodatkowe uwagi|  
 |-------------|--------------------------|-------------------------|  

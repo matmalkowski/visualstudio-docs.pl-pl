@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
-caps.latest.revision: "12"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: f4da0733b53b17dbcca779b0fd3e7afcddcb2e85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
 Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wersji programu .NET Framework jest domyślnie jako element docelowy. Ponadto jeśli projekty testowe uaktualnienie poprzedniej wersji programu Visual Studio, ich uaktualnienia do najnowszej wersji programu .NET Framework. Edytując właściwości projektu, można jawnie ponownie docelowych projektu do wcześniejszych wersji programu .NET Framework.  

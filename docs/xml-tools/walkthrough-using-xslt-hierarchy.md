@@ -7,30 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da7cbf43ff21825e57b5bd5a47f59dbee27fe938
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e36ebaec08d09cbf006f4c20e743b5c2a909169
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Wskazówki: Korzystanie z hierarchii XSLT
-Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja rozpoczyna się od arkusza stylów podmiotu zabezpieczeń, ale po wyświetleniu błędu w wyniku kompilowanie arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawienie błędu lub edycji arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączone lub importowany. Krokowe arkusza stylów w debugerze może Otwórz arkusze stylów dołączone i importowane, i chcesz dodać punkt przerwania w pewnym momencie jednego lub więcej arkuszy stylów dołączone.  
+
+Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja rozpoczyna się od arkusza stylów podmiotu zabezpieczeń, ale po wyświetleniu błędu w wyniku kompilowanie arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawienie błędu lub edycji arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączone lub importowany. Krokowe arkusza stylów w debugerze może Otwórz arkusze stylów dołączone i importowane, i chcesz dodać punkt przerwania w pewnym momencie jednego lub więcej arkuszy stylów dołączone.
+
+Inny scenariusz, gdzie mogą być przydatne narzędzie hierarchii XSLT jest umieścić punkty przerwania reguł wbudowanych szablonów. Szablon reguły są specjalne szablony wygenerowany dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates` po nie innych szablonów nie odpowiada węzła. Aby zaimplementować debugowania w regułach wbudowanych szablonów, debuger XSLT generuje plik z zasadami w folderze tymczasowym i kompiluje je razem z arkusza stylów podmiotu zabezpieczeń. Bez Przechodzenie do kodu z niektórych `xsl:apply-template`, może być trudne można znaleźć arkusze stylów, które zostały uwzględnione w arkuszu stylów główną lub znajdowanie i Otwieranie arkusza stylów przy użyciu reguł wbudowanych szablonów.
+
+W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do którego istnieje odwołanie.
+
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Debugowanie w arkuszu stylów do którego istnieje odwołanie
+
+1. Otwórz dokument XML w Visual Studio. W tym przykładzie użyto następujących `collection.xml` dokumentu.  
   
- Inny scenariusz, gdzie mogą być przydatne narzędzie hierarchii XSLT jest umieścić punkty przerwania reguł wbudowanych szablonów. Szablon reguły są specjalne szablony wygenerowany dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates` po nie innych szablonów nie odpowiada węzła. Aby zaimplementować debugowania w regułach wbudowanych szablonów, debuger XSLT generuje plik z zasadami w folderze tymczasowym i kompiluje je razem z arkusza stylów podmiotu zabezpieczeń. Bez Przechodzenie do kodu z niektórych `xsl:apply-template`, może być trudne można znaleźć arkusze stylów, które zostały uwzględnione w arkuszu stylów główną lub znajdowanie i Otwieranie arkusza stylów przy użyciu reguł wbudowanych szablonów.  
-  
- W przykładzie, w tym temacie pokazano, debugowania w arkuszu stylów do którego istnieje odwołanie.  
-  
-### <a name="procedure-title"></a>Tytuł procedury  
-  
-1.  Otwórz dokument XML w Visual Studio. W tym przykładzie użyto następujących `collection.xml` dokumentu.  
-  
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>  
     <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
     <COLLECTION>  
@@ -50,11 +48,11 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem X
         <PUBLISHER>Scootney</PUBLISHER>  
       </BOOK>  
     </COLLECTION>  
-    ```  
-  
-2.  Dodaj następujące `xslincludefile.xsl`:  
-  
-    ```  
+    ```
+
+1. Dodaj następujące `xslincludefile.xsl`:
+
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
@@ -73,11 +71,11 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem X
     </xsl:template>  
   
     </xsl:stylesheet>  
-    ```  
+    ```
   
 3.  Dodaj następujące `xslinclude.xsl` pliku:  
   
-    ```  
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
@@ -107,13 +105,14 @@ Narzędzie hierarchii XSLT upraszcza wiele zadań związanych z projektowaniem X
   
       <xsl:include href="xslincludefile.xsl" />  
     </xsl:stylesheet>  
-    ```  
+    ```
   
-4.  Dodaj punkt przerwania w instrukcji:`<xsl:include href="xslincludefile.xsl" />`  
+4.  Dodaj punkt przerwania w instrukcji `<xsl:include href="xslincludefile.xsl" />`.
   
 5.  Rozpocznij debugowanie.  
   
-6.  Gdy debuger zatrzymuje się na instrukcję `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz Wkrocz do przycisku. Należy pamiętać, że debugowanie może być kontynuowane w arkuszu stylów do którego istnieje odwołanie. Hierarchia jest widoczna i Projektant zawiera prawidłową ścieżkę.  
+6.  Gdy debuger zatrzymuje się na instrukcję `<xsl:include href="xslincludefile.xsl" />`, naciśnij klawisz **Step Into** przycisku. Należy pamiętać, że debugowanie może być kontynuowane w arkuszu stylów do którego istnieje odwołanie. Hierarchia jest widoczna i Projektant zawiera prawidłową ścieżkę.  
   
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Zobacz także
+
+[Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

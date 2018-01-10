@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: 92c829e2a0ee0e3fb793d0fd6230460f9102973a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z Live testów jednostkowych programu Visual Studio
 

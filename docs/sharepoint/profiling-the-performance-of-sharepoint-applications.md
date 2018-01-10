@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji SharePoint
   Jeśli aplikacji SharePoint działają wolno lub Niewydajne, może używać profilowania funkcji w programie Visual Studio, aby zidentyfikować problematyczne kodu i inne elementy. Za pomocą funkcji testowania obciążenia, można określić sposób wykonywania aplikacji SharePoint mocno obciążony, np. gdy wielu użytkowników dostępu do aplikacji jednocześnie. Uruchamianie testów wydajności sieci web, można zmierzyć, sposób wykonywania aplikacji w sieci web. Za pomocą kodowanych testów interfejsu użytkownika, można sprawdzić, czy całej aplikacji programu SharePoint, w tym interfejs użytkownika działa prawidłowo. Jeśli korzystasz ze sobą te testy, można pomagają zidentyfikować problemy z wydajnością, przed wdrożeniem aplikacji.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Testowanie jednostek kodu](/visualstudio/test/unit-test-your-code)|Opisuje sposób wyszukiwania logiki błędów w kodzie za pomocą testów jednostkowych.|  
 |[Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Opisuje sposoby testowania interfejsu użytkownika aplikacji programu SharePoint.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Testowanie aplikacji](/devops-test-docs/test/test-apps-early-and-often)   
- [Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>Zobacz też
+
+[Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Podnoszenie jakości kodu](/visualstudio/test/improve-code-quality)

@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Przy użyciu zapisanych danych funkcji IntelliTrace
 Przejdź do określonych punktów podczas wykonywania aplikacji po rozpoczęciu debugowania z pliku IntelliTrace (.iTrace) dziennika. Ten plik może zawierać zdarzenia dotyczące wydajności, wyjątki wątków, kroków testu, moduły i inne informacje o systemie, czy rekordów funkcji IntelliTrace podczas sekwencji aplikacji.  
@@ -39,7 +39,7 @@ Przejdź do określonych punktów podczas wykonywania aplikacji po rozpoczęciu 
     |**Źródło**|**Zobacz**|  
     |----------------|-------------|  
     |Sesji funkcji IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community Edition)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Sesję testu w programie Microsoft Test Manager. Pliku .iTrace to dołącza do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Sesję testu w programie Microsoft Test Manager. Pliku .iTrace to dołącza do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, albo samodzielnie lub z programu System Center 2012 R2 Operations Manager, platformy ASP.NET sieci web aplikacji i systemem we wdrożeniu aplikacji SharePoint|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co to jest nowe w programie System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a>Co chcesz zrobić?  
@@ -266,7 +266,7 @@ Przejdź do określonych punktów podczas wykonywania aplikacji po rozpoczęciu 
   
  [Funkcje IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

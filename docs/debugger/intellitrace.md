@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Można poświęcają mniej czasu, debugowania aplikacji, korzystając z funkcji IntelliTrace do rejestrowania i śledzenia historii wykonywania kodu. Błędy można znaleźć łatwe, ponieważ umożliwia IntelliTrace:  
@@ -47,7 +47,7 @@ Można poświęcają mniej czasu, debugowania aplikacji, korzystając z funkcji 
 |||  
 |-|-|  
 |**Debugowaniem aplikacji przy użyciu funkcji IntelliTrace:**<br /><br /> — Pokaż poza zdarzenia.<br />— Pokaż mnie informacje ze zdarzeniami poprzednich wywołań.<br />-Zapisz moje sesji funkcji IntelliTrace.<br />-Formant dane, które umożliwia zbieranie danych funkcji IntelliTrace.|-   [Wskazówki: Używanie funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Debugowanie historyczne](../debugger/historical-debugging.md)<br />-   [Migawki widoku przy użyciu zwrotnego krok IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Gromadzenie danych IntelliTrace w trakcie sesji testu w Test Manager**|-   [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Gromadzenie danych IntelliTrace w trakcie sesji testu w Test Manager**|-   [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Gromadzenie danych IntelliTrace z wdrożonej aplikacji**|-   [Za pomocą autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Uruchom profilowanie z plikiem dziennika funkcji IntelliTrace (.iTrace pliku).**|-   [Przy użyciu zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ Można poświęcają mniej czasu, debugowania aplikacji, korzystając z funkcji 
   
 -   Aplikacja ulegnie awarii na komputerze testowym, ale zostanie pomyślnie uruchomiony na komputerze dewelopera.  
   
-     Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbierać więcej danych diagnostycznych podczas wykonywania testów ręcznych](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) i [Użyj zapisywane są dane funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+     Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbierać więcej danych diagnostycznych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) i [Użyj zapisywane są dane funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 -   Błąd lub awarii odbywa się we wdrożonej aplikacji.  
   
@@ -180,8 +180,6 @@ Można poświęcają mniej czasu, debugowania aplikacji, korzystając z funkcji 
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Funkcje IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Obejmują danych diagnostycznych śledzenia z usterkami trudnymi do odtworzenia](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)  
   

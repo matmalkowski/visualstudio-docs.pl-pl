@@ -16,37 +16,35 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
-caps.latest.revision: "85"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fafb9bc38aca51db6baf6cace6dc887db60ed8c8
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
+
 Testy automatyczne, którzy sterują aplikacji za pośrednictwem jej interfejsu użytkownika (UI) są określane jako *kodowanych testów interfejsu użytkownika* (CUITs). Te testy obejmują testowanie funkcjonalności kontrolek interfejsu użytkownika. Umożliwiają one Sprawdź, czy całej aplikacji, w tym interfejs użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika są szczególnie użyteczne w przypadku weryfikacji lub innych logikę w interfejsie użytkownika, na przykład na stronie sieci web. Są one również często używane do automatyzowania istniejącego testu ręcznego.  
-  
- Jak pokazano na poniższej ilustracji, środowisko rozwoju typowe może być where, początkowo, wystarczy skompilować aplikację (F5) i kliknij przycisk za pomocą formantów interfejsu użytkownika, aby sprawdzić, czy elementy są poprawne. Następnie możesz utworzyć kodowanego testu, tak aby nie trzeba ręcznie przetestować aplikację w dalszym ciągu. W zależności od konkretnej funkcji testowane w aplikacji można napisać kod funkcjonalności testu lub test integracji, który może lub nie może zawierać testowania na poziomie interfejsu użytkownika. Jeśli po prostu chcesz uzyskać bezpośredni dostęp do niektórych logiki biznesowej, może być kod testu jednostkowego. Jednak w pewnych okolicznościach może być korzystne obejmują przetestowanie różnych kontrolek interfejsu użytkownika w aplikacji. Kodowanego testu interfejsu użytkownika można zautomatyzować początkowej scenariuszu (F5) zweryfikowaniu, że ten postęp dokonany w kodzie nie ma wpływu na funkcjonalność aplikacji.  
-  
- ![Testowanie podczas tworzenia aplikacji](../test/media/cuit_overview.png "CUIT_Overview")  
-  
- Tworzenie kodowanego testu interfejsu użytkownika jest bardzo proste. Możesz po prostu wykonać test ręcznie podczas konstruktora testu CUIT działa w tle. Można również określić, jakie wartości powinny być wyświetlane w określonych pól. Konstruktor testu CUIT rejestruje czynności użytkownika i generuje kod z nich. Po utworzeniu testu można edytować go w edytorze specjalne, która umożliwia modyfikowanie sekwencję akcji.  
-  
- Alternatywnie Jeśli przypadek testowy, który został zarejestrowany w programie Microsoft Test Manager, istnieje możliwość wygenerowania kodu od tego. Aby uzyskać więcej informacji, zobacz [rekordu i play testy ponownie ręczne](/devops-test-docs/test/record-and-play-back-manual-tests).  
-  
- Specjalne konstruktora testu CUIT i Edytor ułatwiają tworzenie i edytowanie kodowane testy interfejsu użytkownika, nawet jeśli swoje umiejętności głównego jest skoncentrowana testowania zamiast kodowania. Jednak jeśli jesteś deweloperem i chcesz rozszerzyć test w sposób bardziej zaawansowanych, struktura kodu tak, aby proste do skopiowania i dostosowania. Na przykład możesz zarejestrować test, aby kupić coś w witrynie sieci Web, a następnie edytuj wygenerowany kod w celu dodania pętli kupuje wiele elementów.  
-  
- **Wymagania**  
-  
--   Visual Studio Enterprise  
-  
- Aby uzyskać więcej informacji o platformach i konfiguracjach obsługiwanych przez kodowane testy interfejsu użytkownika, zobacz [obsługiwane konfiguracje oraz platformy kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
-  
- **W tym temacie**  
+
+Jak pokazano na poniższej ilustracji, środowisko rozwoju typowe może być where, początkowo, wystarczy skompilować aplikację (F5) i kliknij przycisk za pomocą formantów interfejsu użytkownika, aby sprawdzić, czy elementy są poprawne. Następnie możesz utworzyć kodowanego testu, tak aby nie trzeba ręcznie przetestować aplikację w dalszym ciągu. W zależności od konkretnej funkcji testowane w aplikacji można napisać kod funkcjonalności testu lub test integracji, który może lub nie może zawierać testowania na poziomie interfejsu użytkownika. Jeśli po prostu chcesz uzyskać bezpośredni dostęp do niektórych logiki biznesowej, może być kod testu jednostkowego. Jednak w pewnych okolicznościach może być korzystne obejmują przetestowanie różnych kontrolek interfejsu użytkownika w aplikacji. Kodowanego testu interfejsu użytkownika można zautomatyzować początkowej scenariuszu (F5) zweryfikowaniu, że ten postęp dokonany w kodzie nie ma wpływu na funkcjonalność aplikacji.  
+
+![Testowanie podczas tworzenia aplikacji](../test/media/cuit_overview.png "CUIT_Overview")  
+
+Tworzenie kodowanego testu interfejsu użytkownika jest bardzo proste. Możesz po prostu wykonać test ręcznie podczas konstruktora testu CUIT działa w tle. Można również określić, jakie wartości powinny być wyświetlane w określonych pól. Konstruktor testu CUIT rejestruje czynności użytkownika i generuje kod z nich. Po utworzeniu testu można edytować go w edytorze specjalne, która umożliwia modyfikowanie sekwencję akcji.
+
+Specjalne konstruktora testu CUIT i Edytor ułatwiają tworzenie i edytowanie kodowane testy interfejsu użytkownika, nawet jeśli swoje umiejętności głównego jest skoncentrowana testowania zamiast kodowania. Jednak jeśli jesteś deweloperem i chcesz rozszerzyć test w sposób bardziej zaawansowanych, struktura kodu tak, aby proste do skopiowania i dostosowania. Na przykład możesz zarejestrować test, aby kupić coś w witrynie sieci Web, a następnie edytuj wygenerowany kod w celu dodania pętli kupuje wiele elementów.  
+
+**Wymagania**
+
+- Visual Studio Enterprise
+
+Aby uzyskać więcej informacji o platformach i konfiguracjach obsługiwanych przez kodowane testy interfejsu użytkownika, zobacz [obsługiwane konfiguracje oraz platformy kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
+
+**W tym temacie**
   
 -   [Tworzenie kodowanych testów interfejsu użytkownika](#VerifyingCodeUsingCUITCreate)  
   
@@ -155,7 +153,7 @@ Testy automatyczne, którzy sterują aplikacji za pośrednictwem jej interfejsu 
   
  Pozostałe części tego tematu podać więcej szczegółów na temat kroków tej procedury.  
   
- Aby uzyskać bardziej szczegółowy przykład zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). W tym przewodnikiem utworzysz prostą aplikację systemu Windows Presentation Foundation (WPF) w celu zademonstrowania sposobu tworzenia, edytowania i obsługa kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.  
+ Aby uzyskać bardziej szczegółowy przykład zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). W tym przewodnikiem utworzysz prostą aplikację systemu Windows Presentation Foundation (WPF) w celu zademonstrowania sposobu tworzenia, edytowania i obsługa kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.
   
 ###  <a name="starting"></a>Uruchamianie i zatrzymywanie testowanej aplikacji  
  *Nie chcę uruchomić i zatrzymać mojej aplikacji, przeglądarki lub bazy danych osobno dla każdego z testów. Jak uniknąć, który?*  
@@ -192,17 +190,17 @@ Testy automatyczne, którzy sterują aplikacji za pośrednictwem jej interfejsu 
  Gdy zostaną dodane wszystkie Twoje potwierdzenia dla testu, wybierz **OK**.  
   
  Aby wygenerować kod dla Twojego potwierdzenia i Dodaj formant do mapy interfejsu użytkownika, wybierz **Generuj kod** ikony. Wpisz nazwę metodę kodowanego testu interfejsu użytkownika i opis metody, która zostanie dodany jako komentarze w metodzie. Wybierz **Dodaj i generowanie**. Następnie wybierz **zamknąć** ikonę, aby zamknąć **konstruktora kodowanego testu interfejsu użytkownika**. Spowoduje to wygenerowanie kodu podobne do następującego kodu. Na przykład, jeśli wprowadzona nazwa jest `AssertForAddTwoNumbers`, kod będzie wyglądać następująco:  
-  
--   Dodaje wywołanie do metody assert AssertForAddTwoNumbers do metody w pliku kodowanego testu interfejsu użytkownika:  
-  
-    ```  
+
+-   Dodaje wywołanie do metody assert AssertForAddTwoNumbers do metody w pliku kodowanego testu interfejsu użytkownika:
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         this.UIMap.AddTwoNumbers();  
         this.UIMap.AssertForAddTwoNumbers();  
     }  
-    ```  
+    ```
   
      Możesz edytować ten plik, aby zmienić kolejność kroków i potwierdzeń lub utworzyć nowe metody testowe. Aby dodać więcej kodu, umieść kursor w metodzie testowej i w menu skrótów wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**.  
   
@@ -214,7 +212,7 @@ Testy automatyczne, którzy sterują aplikacji za pośrednictwem jej interfejsu 
   
      Można również wyświetlić wygenerowany kod metody potwierdzenia w UIMap.Designer.cs. Jednak nie należy edytować ten plik. Aby dostosowaną wersją kodu kopiowanie metod do innego pliku, takie jak UIMap.cs, Zmień nazwę metody i tam je edytować.  
   
-    ```  
+    ```csharp
     public void AssertForAddTwoNumbers()  
     {  
         ...  
@@ -264,13 +262,12 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  W pliku konfiguracji, zmień wartości `HoverKeyModifier` i `HoverKey` klucze do modyfikowania przydziałów klawiatury:  
   
-```  
+```
 <!-- Begin : Background Recorder Settings -->  
 <!-- HoverKey to use. -->  
 <add key="HoverKeyModifier" value="Control, Shift"/>  
 <add key="HoverKey" value="R"/>  
-  
-```  
+```
   
  *Mam problemy z rejestrowanie ruchów myszy w witrynie sieci Web. Istnieje już poprawka w tym celu za?*  
  **Ustawienie niejawne przesuwania wskaźnika myszy przeglądarki sieci web**  
@@ -413,7 +410,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   Z formantami, które pochodzą z T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, takie jak T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList lub T: Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, należy pobrać lub ustawić wartości właściwości bezpośrednio w następujący sposób:  
   
-    ```  
+    ```csharp
     int i = myHtmlList.ItemCount;  
     myWinCheckBox.Checked = true;  
     ```  
@@ -452,13 +449,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [Porady: Konfigurowanie i uruchomienie zaplanowanych testów po skompilowaniu aplikacji](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
   
--   [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
+-   [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
   
--   [Uruchamianie testów automatycznych z wiersza polecenia](/devops-test-docs/test/running-automated-tests-from-the-command-line)  
-  
--   [Porady: Konfigurowanie agenta testowego do uruchamiania testów w interakcji z pulpitem](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)  
-  
--   [&#91; wycofane &#93; Za pomocą kodowanych testów interfejsu użytkownika w testach obciążenia](/devops-test-docs/test_notintoc/using-coded-ui-tests-in-load-tests)  
+-   [Porady: Konfigurowanie agenta testowego do uruchamiania testów w interakcji z pulpitem](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
   
  **Dodawanie obsługi w przypadku kontrolek niestandardowych:** framework testowanie kodowanego interfejsu użytkownika nie obsługuje co możliwy interfejs użytkownika i może nie obsługiwać interfejsu użytkownika ma zostać przetestowana. Na przykład nie można od razu utworzyć interfejsu użytkownika dla kodowanego testu interfejsu użytkownika [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Można jednak utworzyć rozszerzenie kodowanego interfejsu użytkownika framework testowania, obsługujące kontrolkę niestandardową.  
   
@@ -466,7 +459,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
- Kodowane testy interfejsu użytkownika są często używane w celu zautomatyzowania testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji o testach ręcznych, zobacz [&#91; wycofane &#93; Tworzenie przypadków testowania ręcznego przy użyciu programu Microsoft Test Manager](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). Aby uzyskać więcej informacji o automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
+ Kodowane testy interfejsu użytkownika są często używane w celu zautomatyzowania testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji o testach ręcznych, zobacz [uruchomić testy ręczne z Microsoft Test Manager](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager). Aby uzyskać więcej informacji o automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   
@@ -493,5 +486,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora testu kodowanego interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Uaktualnianie z programu Visual Studio 2010 kodowanych testów interfejsu użytkownika](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
- [Generowanie kodowanego testu interfejsu użytkownika na podstawie dotychczasowego rejestrowania akcji](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+ [Uaktualnianie kodowanych testów interfejsu użytkownika programu Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)

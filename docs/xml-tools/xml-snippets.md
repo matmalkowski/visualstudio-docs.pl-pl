@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>Fragmentów kodu XML
 Edytor XML oferuje funkcję, *fragmentów kodu XML*, co umożliwia szybkie tworzenie plików XML. Można ponownie użyć fragmentów kodu XML, wstawiając je do plików. Można również generować dane XML na podstawie schematu schematu XML definition language (XSD).  
@@ -37,7 +37,7 @@ Edytor XML oferuje funkcję, *fragmentów kodu XML*, co umożliwia szybkie tworz
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  Możesz wstawić wstawki na dwa sposoby. **Wstawić fragment** polecenia wstawia fragment kodu XML w bieżącej pozycji kursora. **z funkcji Otocz przez** polecenia opakowuje fragment kodu XML wokół zaznaczonego tekstu. Albo oba polecenia są dostępne z **IntelliSense** podmenu w **Edytuj** menu lub menu skrótów edytora.  
   

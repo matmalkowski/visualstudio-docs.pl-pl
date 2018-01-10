@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: xamarin
-ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
 Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych przeznaczonych dla systemu Android, iOS i Windows za pomocą języka C# .NET i Visual Studio. Xamarin umożliwia dużej części kodu mogą być współużytkowane przez platformy, tylko na niewielkim odsetku muszą być specyficzne dla platformy. Aby uzyskać więcej informacji na Xamarin się w temacie [Visual Studio i Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -80,9 +80,8 @@ Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych przeznaczony
 |Tworzenie definicji przed i po skryptów|Tak||  
 |W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań dla TFVC tylko wtedy, gdy działa Git modelu żądania ściągnięcia zamiast zaewidencjonowania.|  
   
-## <a name="testing"></a>Testowanie  
- Opis łącza:  **[testowanie aplikacji](/devops-test-docs/test/test-apps-early-and-often)**  
-  
+## <a name="testing"></a>Testowanie
+
 |Funkcja|Obsługiwane za pomocą platformy Xamarin|Dodatkowe uwagi|  
 |-------------|----------------------------|-------------------------|  
 |Planowanie testów, tworzenie przypadków testowych i organizowanie zestawów testów|Tak||  

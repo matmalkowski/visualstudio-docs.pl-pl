@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Środowiska Python
 
@@ -53,7 +53,7 @@ Z wyjątkiem z programu Visual Studio 2017 r, Python obsługi nie jest dostarcza
 | Interpreter | Opis |
 | --- | --- |
 | [Języka CPython](https://www.python.org/) | "Natywny" i najbardziej często używanych interpretera dostępne w wersjach 32-bitowych i 64-bitowych (32-bitowy zalecane). Zawiera najnowsze funkcje językowe, maksymalną zgodność pakiet języka Python, pełną obsługę debugowania i współdziałanie z [IPython](http://ipython.org/). Zobacz też: [użyć Python 2 lub Python 3?](http://wiki.python.org/moin/Python2orPython3). Należy pamiętać, że Visual Studio 2015 i starsze nie obsługują 3,6 Python i zapewnić błąd "Nieobsługiwana wersja języka python 3,6". Użyj języka Python w wersji 3.5 lub starszej zamiast tego. |
-| [IronPython](https://github.com/IronLanguages/main) | .NET stosowania Python, dostępne w wersjach 32-bitowych i 64-bitowych, podając podstawowe interop /F #/ Visual C dostęp do interfejsów API architektury .NET, Python standardowe debugowania (ale nie C++ debugowanie w trybie mieszanym) oraz mieszany IronPython / C# debugowania. IronPython, jednak nie obsługuje środowisk wirtualnych. | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | .NET stosowania Python, dostępne w wersjach 32-bitowych i 64-bitowych, podając podstawowe interop /F #/ Visual C dostęp do interfejsów API architektury .NET, Python standardowe debugowania (ale nie C++ debugowanie w trybie mieszanym) oraz mieszany IronPython / C# debugowania. IronPython, jednak nie obsługuje środowisk wirtualnych. |
 | [Anaconda](https://www.continuum.io) | Danych otwartych nauki platformy obsługiwane przez Python i zawiera najnowszą wersję języka CPython i większość pakietów trudne do zainstalowania. Firma Microsoft zaleca, jeśli nie zdecydujesz inaczej. |
 | [PyPy](http://www.pypy.org/) | Implementacja JIT śledzenie wysokiej wydajności, języka Python, który ułatwia programy długotrwałe i sytuacji możesz określić wydajności problemów, ale nie można znaleźć inne rozwiązania. Działa z programem Visual Studio, ale z ograniczoną obsługę zaawansowanych funkcji debugowania. |
 | [Jython](http://www.jython.org/) | Implementacja Python na maszynie wirtualnej Java (JVM). Podobny do IronPython, kodu uruchamianego w Jython mogą prowadzić interakcję z klas Java i bibliotek, ale może nie móc korzystać z wielu bibliotek przeznaczonych do języka CPython. Działa z programem Visual Studio, ale z ograniczoną obsługę zaawansowanych funkcji debugowania. |
@@ -73,7 +73,7 @@ W obu przypadkach jako element równorzędny karty do Eksploratora rozwiązań z
 
 ![Okno środowiska Python](media/environments-default-view.png)
 
-W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka CPython) wraz z 32-bitowe i 64-bitowych wersji IronPython 2.7. W takim przypadku domyślnego środowiska pogrubioną czcionką jest języka Python 3.4, który jest używany dla wszystkich nowych projektów. Jeśli nie widać żadnych środowisk na liście, oznacza to, zostały zainstalowane narzędzia Python Tools for Visual Studio w programie Visual Studio 2015 lub starszym, ale nie zostały zainstalowane interpreter języka Python (zobacz [Zaznaczanie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) powyżej). 
+W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka CPython) wraz z 32-bitowe i 64-bitowych wersji IronPython 2.7. W takim przypadku domyślnego środowiska pogrubioną czcionką jest języka Python 3.4, który jest używany dla wszystkich nowych projektów. Jeśli nie widać żadnych środowisk na liście, oznacza to, zostały zainstalowane narzędzia Python Tools for Visual Studio w programie Visual Studio 2015 lub starszym, ale nie zostały zainstalowane interpreter języka Python (zobacz [Zaznaczanie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) powyżej).
 
 > [!Tip]
 > Gdy **środowiska Python** okno jest ograniczone, jak pokazano powyżej, środowiska są wymienione na początku i różnych kart na dole. Jednak Rozszerzanie okna wystarczająco, zmienia się na szeroki widok, w którym może się okazać bardziej wygodne do pracy z.
@@ -161,7 +161,7 @@ W tym ostatnim przypadku ponieważ środowisko znajduje się w obszarze chronion
 
 **Podniesienie poziomu teraz** przyznaje uprawnienia administracyjne do narzędzia pip pojedyncza, podmiotu również do dowolnego systemu operacyjnego wyświetla monit o uprawnienia. Wybieranie **Kontynuuj bez uprawnień administratora** próby instalacji pakietu, ale narzędzie pip kończy się niepowodzeniem podczas próby utworzenia folderów z danych wyjściowych, takich jak "Błąd: nie można utworzyć" C:\Program Files\Anaconda3\Lib\site-packages\ PNG.PY': odmowa uprawnień. "
 
-Wybieranie **zawsze podniesienia uprawnień podczas instalowania lub usuwania pakietów** zapobiega wyświetlaniu środowiska okna dialogowego. Aby ponownie wyświetlone okno dialogowe, przejdź do **Narzędzia > Opcje > Narzędzia Python Tools > Ogólne** i kliknij przycisk **zresetować wszystkie okna dialogowe trwale ukryty**. 
+Wybieranie **zawsze podniesienia uprawnień podczas instalowania lub usuwania pakietów** zapobiega wyświetlaniu środowiska okna dialogowego. Aby ponownie wyświetlone okno dialogowe, przejdź do **Narzędzia > Opcje > Narzędzia Python Tools > Ogólne** i kliknij przycisk **zresetować wszystkie okna dialogowe trwale ukryty**.
 
 W tym takie same opcje karcie, możesz również wybrać **pip są zawsze uruchamiane jako administrator** do pomijania okna dialogowego dla wszystkich środowisk. Zobacz [opcje — karta Ogólne](options.md#general-options).
 
@@ -247,13 +247,13 @@ Z technicznego punktu widzenia nazwy pliku może służyć do śledzenia wymagan
 
     ![Opcje pliku requirements.txt aktualizacji](media/environments-requirements-txt-replace.png)
 
-    - **Zastąp cały plik** usuwa wszystkie elementy, komentarze i opcje, które istnieją.
-    - **Odśwież istniejących** wykrywa wymagań dotyczących pakietu i aktualizuje specyfikatory wersji, aby dopasować aktualnie zainstalowaną wersję.
-    - **Aktualizowanie i dodawanie wpisów** odświeża wszelkie wymagania, które zostały znalezione i dodaje wszystkie inne pakiety na końcu pliku.
+  - **Zastąp cały plik** usuwa wszystkie elementy, komentarze i opcje, które istnieją.
+  - **Odśwież istniejących** wykrywa wymagań dotyczących pakietu i aktualizuje specyfikatory wersji, aby dopasować aktualnie zainstalowaną wersję.
+  - **Aktualizowanie i dodawanie wpisów** odświeża wszelkie wymagania, które zostały znalezione i dodaje wszystkie inne pakiety na końcu pliku.
 
 Ponieważ `requirements.txt` pliki mają zawiesza wymagania dotyczące projektu, wszystkie zainstalowane pakiety są zapisywane z użyciem wersji dokładne. Użycie wersji dokładne gwarantuje, że można łatwo odtworzyć środowiska na innym komputerze. Pakiety są dołączane, nawet jeśli zostały one zainstalowane z zakresem wersji, jako zależność inny pakiet, lub z Instalatorem niż pip.
 
-Jeśli` requirements.txt` plik istnieje podczas dodawania nowego środowiska wirtualnego **Dodawanie środowiska wirtualnego** Wyświetla okno dialogowe opcję pakiety są instalowane automatycznie, dzięki czemu można łatwo odtworzyć w środowisku na innym komputerze:
+Jeśli `requirements.txt` plik istnieje podczas dodawania nowego środowiska wirtualnego **Dodawanie środowiska wirtualnego** Wyświetla okno dialogowe opcję pakiety są instalowane automatycznie, dzięki czemu można łatwo odtworzyć w środowisku na innym komputerze:
 
 ![Tworzenie środowiska wirtualnego z pliku requirements.txt](media/environments-requirements-txt.png)
 

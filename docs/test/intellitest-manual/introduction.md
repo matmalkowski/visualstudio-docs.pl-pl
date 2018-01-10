@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8c98633cf54d2e6d969ae4b7aede394c851784ba
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+author: gewarren
+ms.openlocfilehash: 65f14d96bd495a1b3f8ca138176fbf805fdfeb67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie programu Microsoft IntelliTest
 

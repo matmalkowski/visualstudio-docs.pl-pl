@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Porady: tworzenie fragmentów kodu XML
 Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawiera fragment kodu XML, o nazwie "Fragment", czyli fragment standardowy do tworzenia nowych fragmentów kodu XML.  
@@ -54,7 +54,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  `Expansion` Typ Określa, czy fragment pojawia się po wywołaniu **wstawić fragment** polecenia. `SurroundsWith` Typ Określa, czy fragment pojawia się po wywołaniu **obudowy z** polecenia.  
   
@@ -72,7 +72,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  `Code` Element zawiera trzy zmienne.  
   
@@ -88,7 +88,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  Wartość elementu name jest oznaczona jako edytowalny region.  
   
@@ -100,7 +100,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Literały znajdują się funkcje. Edytor XML zawiera funkcji o nazwie **LookupPrefix**. **LookupPrefix** funkcja wyszukuje dany identyfikator URI przestrzeni nazw z lokalizacji w dokumencie XML ta Wstawka kodu jest wywoływany z i zwraca prefiks przestrzeni nazw, który jest zdefiniowany dla tej przestrzeni nazw, jeśli istnieje i zawiera dwukropek (:) w tej nazwie. Poniżej przedstawiono przykład `Literal` element, który używa **LookupPrefix** funkcji.  
   
@@ -109,7 +109,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  Zmienna $ $prefix następnie może być używana w innym miejscu w Twojej fragment kodu XML.  
   

@@ -4,20 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: unit tests
-ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
-caps.latest.revision: "26"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e809cdbdce23d6bfafcfae2501a25c982455ba46
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
 Narzędzia testowania programu Visual Studio jednostki zostały zaprojektowane do obsługi deweloperów i zespoły, które dołączyć jednostki testowania w swoje praktyki rozwoju oprogramowania. Testy jednostkowe zapewniają deweloperów i testerów wydajne, łatwy w obsłudze sposób wyszukiwania błędów logiki metod klasy w projektach Visual C#, Visual Basic i Visual C++.  

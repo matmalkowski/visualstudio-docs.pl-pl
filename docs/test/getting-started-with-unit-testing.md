@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: unit testing, create unit test plans
-ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: da80adbf7df01d18ada256f6d419cb015c34369a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+author: gewarren
+ms.openlocfilehash: e6789c3a8ddb9b0aa317df0d2362d39946069cbd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do przeprowadzania testów jednostkowych
 

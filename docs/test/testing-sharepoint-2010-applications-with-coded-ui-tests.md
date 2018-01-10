@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 W tym kodowane testy interfejsu użytkownika w aplikacji programu SharePoint umożliwia Sprawdź, czy całej aplikacji, w tym jego formantów interfejsu użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika można zweryfikować wartości i logika interfejsu użytkownika.  
@@ -144,10 +143,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Forum  
  [Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>Zobacz też  
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Wydajności sieci Web i obciążenia testowanie aplikacji SharePoint 2010 i 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Tworzenie rozwiązań programu SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Weryfikowanie i debugowanie kodu aplikacji programu SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [Kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Profilowanie wydajności aplikacji SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>Zobacz także
+
+[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)  
+[Tworzenie rozwiązań programu SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
+[Weryfikowanie i debugowanie kodu aplikacji programu SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+[Kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+[Profilowanie wydajności aplikacji SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
