@@ -1,12 +1,22 @@
-# [Przewodnik po funkcjach profilowania](profiling-feature-tour.md)
-## [Profilowanie wydajności — przewodnik dla początkujących](beginners-guide-to-performance-profiling.md)
-## [Co nowego w narzędziach profilowania](what-s-new-in-profiling-tools.md)
+
+# [Dokumentacja profilowania](index.md)
+# Omówienie
+## [Przewodnik po funkcjach profilowania](profiling-feature-tour.md)
+# Przewodniki Szybki Start
+## [Analizowanie użycia procesora CPU (zarządzane)](quickstart-cpu-usage-managed.md)
+## [Analizowanie użycia procesora CPU (natywne)](quickstart-cpu-usage-native.md)
+## [Analizowanie użycia procesora CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Samouczki
+## [Wydajność aplikacji profilującej w programie Visual Studio](beginners-guide-to-performance-profiling.md)
+## [Użycie pamięci profilu w programie Visual Studio](memory-usage.md)
+# Pojęcia
 ## [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](running-profiling-tools-with-or-without-the-debugger.md)
-## [Analizowanie użycia pamięci](memory-usage.md)
-### [Niestandardowe zdarzenia ETW sterty natywnej](custom-native-etw-heap-events.md)
-### [Użycie pamięci bez debugera](memory-usage-without-debugging2.md)
+# Przewodniki z instrukcjami
 ## [Analizowanie użycia procesora CPU](cpu-usage.md)
 ### [Analizowanie użycia procesora CPU za pomocą aplikacji uniwersalnej systemu Windows](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Analizowanie użycia pamięci](analyze-memory-usage.md)
+### [Niestandardowe zdarzenia ETW sterty natywnej](custom-native-etw-heap-events.md)
+### [Użycie pamięci bez debugera](memory-usage-without-debugging2.md)
 ## [Analizowanie użycia procesora GPU](gpu-usage.md)
 ## [Analizowanie zużycia zasobów](application-timeline.md)
 ## [Funkcja PerfTips](perftips.md)
@@ -366,4 +376,6 @@
 ##### [Funkcja CvWriteFlag](cvwriteflag-function.md)
 ##### [Funkcja CvWriteMessage](cvwritemessage-function.md)
 ### [Narzędzie wiersza polecenia narzędzia Concurrency Visualizer (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analizowanie zużycia energii w aplikacjach platformy UWP](analyze-energy-use-in-store-apps.md)
+## [Analizowanie zużycia energii w aplikacjach ze Sklepu](analyze-energy-use-in-store-apps.md)
+# Resources
+## [Co nowego w narzędziach profilowania](what-s-new-in-profiling-tools.md)

@@ -20,7 +20,7 @@
 ### [Szablon projektów internetowych Django](template-django.md)
 ### [Szablon usługi w chmurze platformy Azure](template-azure-cloud-service.md)
 ## [Zestaw Azure SDK dla języka Python](azure-sdk-for-python.md)
-# Instrukcje
+# Przewodniki z instrukcjami
 ## [Edytowanie kodu](code-editing.md)
 ### [Formatowanie kodu](code-formatting.md)
 ### [Refaktoryzacja kodu](code-refactoring.md)
