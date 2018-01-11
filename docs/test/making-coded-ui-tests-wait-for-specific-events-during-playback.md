@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
-caps.latest.revision: "24"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b2c507d49bca2589d7c5a70d88f8819ee68d0ce5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: HT
+author: gewarren
+ms.openlocfilehash: 4a6c7ae9f0438d440471bc9e049b539e96e63e13
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Wstrzymywanie kodowanych testów użytkownika dla określonych zdarzeń podczas odtwarzania
 Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać testu czekać na niektóre zdarzenia, takie jak okna pojawia się paska postępu zniknąć i tak dalej. Aby to zrobić, użyj odpowiedniej metody UITestControl.WaitForControlXXX(), zgodnie z opisem w poniższej tabeli. Na przykład kodowanego testu interfejsu użytkownika, który oczekuje na formantu można włączyć za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metody, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
@@ -56,8 +55,7 @@ Podczas odtwarzania testu kodowanego interfejsu użytkownika można nakazać tes
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>  
   
- Czeka na określony predykat zwraca się `true`. Można to operacji oczekiwania złożonych (takich jak warunki lub) na dany formant. Na przykład możesz poczekać, aż tekst stanu będzie miał wartość **astępujący** lub **Błąd**, jak pokazano w poniższym kodzie:
-  
+ Czeka na określony predykat zwraca się `true`. Można to operacji oczekiwania złożonych (takich jak warunki lub) na dany formant. Na przykład możesz poczekać, aż tekst stanu będzie miał wartość **Następujący** lub **Błąd**, jak pokazano w poniższym kodzie:  
   
 ```csharp  
   
