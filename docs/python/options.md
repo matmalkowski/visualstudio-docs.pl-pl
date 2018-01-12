@@ -1,7 +1,7 @@
 ---
 title: "Opcje języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: HT
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 
@@ -40,6 +40,8 @@ W poniższych sekcjach opisano poszczególne opcje:
 - [Opcje diagnostyki](#diagnostics-options)
 - [Interaktywne opcje systemu Windows](#interactive-windows-options)
 - [Zaawansowane opcje edytora języka Python](#advanced-python-editor-options)
+
+Należy pamiętać, że **eksperymentalne** grupy zawiera opcje dla funkcji, które są nadal w fazie projektowania i nie opisano w tym miejscu. Są one często omówione w ogłoszenia na [engineering Python na blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Opcje ogólne
 
@@ -69,7 +71,6 @@ W poniższych sekcjach opisano poszczególne opcje:
 | Włącz debugowanie standardowa biblioteka języka Python | Off | Umożliwia Wkrocz do biblioteki standardowej kodu źródłowego podczas debugowania, ale wydłuża czas potrzebny do debugera rozpocząć.|
 
 ![Okno dialogowe, debugowanie kartę Opcje języka Python](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Opcje diagnostyki
 
