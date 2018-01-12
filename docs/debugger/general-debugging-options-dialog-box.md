@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 **Narzędzia > Opcje > debugowanie > Ogólne** stronie można ustawić następujące opcje:  
@@ -85,7 +85,7 @@ Włącza funkcję automatycznej oceny właściwości i niejawna funkcja wywołuj
     Wykonuje wywołanie ciąg niejawna konwersja podczas obliczania obiektów w oknach zmiennych. W związku z tym że wynik jest wyświetlana jako ciągu zamiast nazwy typu. Ma zastosowanie tylko podczas debugowania w kodzie języka C#. To ustawienie może być zastąpiona przez atrybutu DebuggerDisplay (zobacz [za pomocą atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
 **Włącz obsługę serwera źródłowego**  
-Określa, że debuger programu Visual Studio można pobrać plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i debugowania narzędzi dla systemu Windows są dwa serwery źródła, które implementują protokół. Aby uzyskać więcej informacji na temat konfigurowania SrcSrv, zobacz [SrcSrv](hhttps://msdn.microsoft.com/en-us/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentacji. Ponadto zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+Określa, że debuger programu Visual Studio można pobrać plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i debugowania narzędzi dla systemu Windows są dwa serwery źródła, które implementują protokół. Aby uzyskać więcej informacji na temat konfigurowania SrcSrv, zobacz [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentacji. Ponadto zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 >  Ponieważ odczytywania .pdb, pliki można wykonania dowolnego kodu w plikach, upewnij się, czy zaufania serwerowi.  

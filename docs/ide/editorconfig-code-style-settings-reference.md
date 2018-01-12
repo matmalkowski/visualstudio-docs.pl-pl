@@ -1,7 +1,7 @@
 ---
 title: Kodowanie Konwencji ustawienia EditorConfig .NET | Dokumentacja firmy Microsoft
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 01/10/2018
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -18,12 +18,14 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: kaseyu
-ms.openlocfilehash: 1eaef82dd904c867510770a1850d5893434a78e1
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- dotnet
+- dotnetcore
+ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia EditorConfig Konwencji kodowania platformy .NET
 
@@ -81,6 +83,8 @@ Na poniższej liście przedstawiono dopuszczalny języka reguł Konwencji:
         - DotNet\_styl\_jawne\_tuple_names
         - DotNet\_styl\_coalesce_expression
         - DotNet\_styl\_null_propagation
+        - DotNet\_preferowane\_wywnioskować\_tuple_names
+        - DotNet\_preferowane\_wywnioskować\_anonimowych\_typu\_member_names
 - Ustawienia stylu kodu C#
     - [Typy jawne i niejawne](#var)
         - CSharp\_styl\_var\_dla\_wbudowane\_in_types
@@ -116,7 +120,7 @@ Reguły stylu w tej sekcji dotyczą zarówno C# i Visual Basic. Aby wyświetlić
 
 Ta zasada styl (reguły IDE0003 identyfikatorów i IDE0009) mogą być stosowane do pól, właściwości, metody lub zdarzenia. Wartość **true** oznacza preferowane symbolu kod, aby być poprzedzone znakiem `this.` w języku C# lub `Me.` w języku Visual Basic. Wartość **false** oznacza preferowane elementu kodu _nie_ do być poprzedzone znakiem `this.` lub `Me.`.
 
-W poniższej tabeli przedstawiono nazwy reguł, właściwe języki programowania, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+W poniższej tabeli przedstawiono nazwy reguł, właściwe języki programowania i wartości domyślnych:
 
 | Nazwa reguły | Właściwe języki | Wartość domyślna w usłudze Visual Studio |
 | ----------- | -------------------- | ----------------------|
@@ -219,7 +223,7 @@ AddHandler Elapsed, AddressOf Handler
 
 W pliku .editorconfig te reguły może wyglądać następująco:
 
-```
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_qualification_for_field = false:suggestion
@@ -232,7 +236,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 Ta zasada styl można zastosować do zmiennych lokalnych, parametrów metod i elementów członkowskich klasy lub oddzielne zasady do typu w wyrażeniach dostępu do elementu członkowskiego. Wartość **true** oznacza preferowane jest słowo kluczowe języka (np. `int` lub `Integer`) zamiast nazwy typu (np. `Int32`) dla typów, które mają słowa kluczowego reprezentujące je. Wartość **false** oznacza preferowane jest nazwa typu zamiast słowo kluczowe języka.
 
-W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściwe języki programowania, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściwe języki programowania i wartości domyślnych:
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
@@ -287,7 +291,7 @@ Dim local = Int32.MaxValue
 
 W pliku .editorconfig te reguły może wyglądać następująco:
 
-```
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
@@ -364,7 +368,7 @@ End Class
 
 W pliku .editorconfig te reguły może wyglądać następująco:
 
-```
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
@@ -384,13 +388,15 @@ Reguły stylu w tej sekcji dotyczą wyrażenia poziom preferencji, łącznie z u
 
 W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściwe języki programowania, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
 
-| Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
-| --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_object_initializer | IDE0017 | C# i Visual Basic | PRAWDA: sugestii |
-| dotnet_style_collection_initializer | IDE0028 | C# i Visual Basic | PRAWDA: sugestii |
-| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + i Visual Basic 15 + | PRAWDA: sugestii |
-| dotnet_style_coalesce_expression | IDE0029 | C# i Visual Basic | PRAWDA: sugestii |
-| dotnet_style_null_propagation | IDE0031 | C# w wersji 6.0 + i Visual Basic 14 + | PRAWDA: sugestii |
+| Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio | Visual Studio w wersji 2017 |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_object_initializer | IDE0017 | C# i Visual Basic | PRAWDA: sugestii | Pierwsze wydanie |
+| dotnet_style_collection_initializer | IDE0028 | C# i Visual Basic | PRAWDA: sugestii | Pierwsze wydanie |
+| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + i Visual Basic 15 + | PRAWDA: sugestii | Pierwsze wydanie |
+| dotnet_style_coalesce_expression | IDE0029 | C# i Visual Basic | PRAWDA: sugestii | Pierwsze wydanie |
+| dotnet_style_null_propagation | IDE0031 | C# w wersji 6.0 + i Visual Basic 14 + | PRAWDA: sugestii | Pierwsze wydanie |
+| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + i Visual Basic 15 + | PRAWDA: sugestii | 15,6 w wersji preview 2 |
+| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# i Visual Basic | PRAWDA: sugestii | 15,6 w wersji preview 2 |
 
 **DotNet\_styl\_object_initializer**
 
@@ -523,9 +529,40 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-W pliku .editorconfig te reguły może wyglądać następująco:
+**DotNet\_preferowane\_wywnioskować\_tuple_names**
+
+- Jeśli ta reguła jest równa **true**, preferowane nazwy elementów wywnioskowanych spójnej kolekcji.
+- Jeśli ta reguła jest równa **false**, preferowane nazwy elementów jawne spójnej kolekcji.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**DotNet\_styl\_preferowane\_wywnioskować\_anonimowych\_typu\_member_names**
+
+- Jeśli ta reguła jest równa **true**, preferowane nazwy elementów członkowskich wywnioskowanego typu anonimowego.
+- Jeśli ta reguła jest równa **false**, preferowane nazwy elementów członkowskich jawnego typu anonimowego.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
 
 ```
+
+W pliku .editorconfig te reguły może wyglądać następująco:
+
+```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_object_initializer = true:suggestion
@@ -533,6 +570,8 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>Ustawienia stylu kodu C#
@@ -543,7 +582,7 @@ Reguły stylu w tej sekcji dotyczą C# tylko.
 
 Reguły stylu w tej sekcji (reguły IDE0007 identyfikatorów i IDE0008) dotyczą stosowania [var](/dotnet/csharp/language-reference/keywords/var) — słowo kluczowe w porównaniu z typem jawnym w deklaracji zmiennej. Typy wbudowane, gdy typem jest widoczna i innych miejscach, można osobno zastosowana ta reguła.
 
-W poniższej tabeli przedstawiono nazwy reguł, właściwe języki programowania, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+W poniższej tabeli przedstawiono nazwy reguł, właściwe języki programowania i wartości domyślnych:
 
 | Nazwa reguły | Właściwe języki | Domyślny program Visual Studio |
 | ----------- | -------------------- | ----------------------|
@@ -598,7 +637,7 @@ bool f = this.Init();
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_var_for_built_in_types = true:suggestion
@@ -745,7 +784,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_expression_bodied_methods = false:none
@@ -760,7 +799,7 @@ csharp_style_expression_bodied_accessors = true:suggestion
 
 Reguły stylu w tej sekcji dotyczą stosowania [dopasowanie wzorca](/dotnet/csharp/pattern-matching) w języku C#.
 
-W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje odpowiedni język, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje odpowiedni język i wartości domyślnych:
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
@@ -800,7 +839,7 @@ if (s != null) {...}
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -811,7 +850,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 Ten styl określa, czy reguła dotyczy `out` zmienne są deklarowane jako wbudowany, czy nie. Uruchamianie w języku C# 7, można [zadeklarować zmiennej poza na liście argumentów w wywołaniu metody](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), a nie w deklaracji zmiennej oddzielne.
 
-W poniższej tabeli przedstawiono nazwę reguły, identyfikator reguły, wersje odpowiedni język, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+W poniższej tabeli przedstawiono nazwę reguły, identyfikator reguły, wersje odpowiedni język i wartości domyślnych:
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | -------- | -------------------- | ----------------------|
@@ -835,7 +874,7 @@ if (int.TryParse(value, out i) {...}
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_inlined_variable_declaration = true:suggestion
@@ -917,7 +956,7 @@ fibonacci = (int n) =>
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
@@ -929,7 +968,7 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 
 Te reguły dotyczą stylu składni wokół `null` sprawdzania, w tym o korzystaniu z `throw` wyrażenia lub `throw` instrukcje oraz czy należy sprawdzić wartość null lub użyj warunkowego operatora łączącego (`?.`) podczas wywoływania [wyrażenia lambda](/dotnet/csharp/lambda-expressions).
 
-W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje odpowiedni język, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
+W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje odpowiedni język i wartości domyślnych:
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
@@ -969,7 +1008,7 @@ if (func != null) { func(args); }
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_style_throw_expression = true:suggestion
@@ -1003,7 +1042,7 @@ if (test) this.Display();
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_braces = true:none
@@ -1080,7 +1119,7 @@ using System.Threading.Tasks;
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
@@ -1277,7 +1316,7 @@ var q = from a in e from b in e
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_new_line_before_open_brace = methods, properties, control_blocks, types
@@ -1426,7 +1465,7 @@ class C
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_indent_case_contents = true
@@ -1533,7 +1572,7 @@ int y = ( int )x;
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_space_after_cast = true
@@ -1590,7 +1629,7 @@ public int MyProperty
 
 Przykładowy plik .editorconfig:
 
-```
+```EditorConfig
 # CSharp formatting settings:
 [*.cs]
 csharp_preserve_single_line_statements = true

@@ -27,17 +27,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - Windows Forms controls [Office development in Visual Studio], about Windows Forms controls
 - Office applications [Office development in Visual Studio], Windows Forms
-ms.assetid: a959506b-5038-49c2-831a-d63c6d6b797d
-caps.latest.revision: "76"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Formanty formularzy Windows w dokumentach pakietu Office ― Omówienie
   Formanty formularzy systemu Windows są obiektami, które użytkownicy mogą wykorzystywać do wprowadzania lub manipulować danymi. W projektach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word można dodać formanty formularzy systemu Windows do dokumentu lub skoroszytu w projekcie w czasie projektowania lub tych kontrolek można dodać programistycznie w czasie wykonywania. Można programowo Dodaj formanty otwartego dokumentu lub arkusz w czasie wykonywania w dodatku VSTO dla programu Excel lub Word.  

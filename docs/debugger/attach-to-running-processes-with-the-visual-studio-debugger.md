@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Możesz dołączyć debuger programu Visual Studio do uruchomionego procesu na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu kliknij **debugowania > dołączyć do procesu** (lub naciśnij klawisz **CTRL + ALT + P**) można otworzyć **dołączyć do procesu** okno dialogowe.
@@ -147,10 +147,7 @@ W przypadku niektórych typów aplikacji (takich jak aplikacje platformy uniwers
 |Debugowanie innych typów obsługiwanej aplikacji na proces serwera|Narzędzia zdalne (Jeśli serwer jest zdalny) i dołączyć do procesu|Iexplore.exe lub inne procesy|W razie potrzeby identyfikowania procesu za pomocą Menedżera zadań. Zobacz [zdalnego debugowania](../debugger/remote-debugging.md) i nowszym sekcje w tym temacie|
 |Zdalne debugowanie aplikacji klasycznej systemu Windows|Zdalne narzędzia i F5|Brak| Zobacz [debugowanie zdalne](../debugger/remote-debugging.md)|
 |Zdalne debugowanie aplikacji Uniwersalnej, systemem OneCore, HoloLens i IoT|Debuguj zainstalowany pakiet aplikacji|Brak|Zobacz [Debuguj zainstalowany pakiet aplikacji](debug-installed-app-package.md) zamiast **dołączyć do procesu**|
-|Debugowanie aplikacji uniwersalnych aplikacji systemu Windows (UWP), systemem OneCore, HoloLens i IoT, który nie został uruchomiony z programu Visual Studio|Debuguj zainstalowany pakiet aplikacji|Brak|Zobacz [Debuguj zainstalowany pakiet aplikacji](debug-installed-app-package.md) zamiast **dołączyć do procesu**|
-  
-> [!WARNING]
->  Aby dołączyć do platformy uniwersalnej systemu Windows, w którym napisano w języku JavaScript, musisz najpierw włączyć debugowanie aplikacji. Zobacz [dołączyć debuger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) w Centrum deweloperów systemu Windows.  
+|Debugowanie aplikacji uniwersalnych aplikacji systemu Windows (UWP), systemem OneCore, HoloLens i IoT, który nie został uruchomiony z programu Visual Studio|Debuguj zainstalowany pakiet aplikacji|Brak|Zobacz [Debuguj zainstalowany pakiet aplikacji](debug-installed-app-package.md) zamiast **dołączyć do procesu**|  
   
 > [!NOTE]
 >  Dla debugera do dołączenia do kodu w języku C++ kod musi Emituj `DebuggableAttribute`. Można dodać tego kodu automatycznie przez łączenie z [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) — opcja konsolidatora.

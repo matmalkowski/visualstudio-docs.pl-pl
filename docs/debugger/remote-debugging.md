@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikacji Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalny debuger programu Visual Studio.
@@ -35,9 +35,9 @@ Aby uzyskać szczegółowe instrukcje na debugowanie zdalne zobacz następujące
 |Scenariusz|Łącze|
 |-|-|-|
 |ASP.NET|[Zdalne debugowanie platformy ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) lub [zdalnego debugowania ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# lub Visual Basic|[Zdalne debugowanie C# lub Visual Basic projektu](remote-debugging-csharp.md)|
-|C++|[Zdalne debugowanie projektu C++](remote-debugging-cpp.md)|
-|Aplikacje uniwersalne systemu Windows (UWP)|[Debugowanie zainstalowanego pakietu aplikacji](debug-installed-app-package.md)|
+|C# lub Visual Basic|[Zdalne debugowanie C# lub Visual Basic projektu](../debugger/remote-debugging-csharp.md)|
+|C++|[Zdalne debugowanie projektu C++](../debugger/remote-debugging-cpp.md)|
+|Aplikacje uniwersalne systemu Windows (UWP)|[Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) i [debugowania pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)|
 |Azure|[Zdalne debugowanie ASP.NET na platformie Azure](remote-debugging-azure.md)|
 |Sieć szkieletowa usług Azure|[Debugowanie aplikacji sieci szkieletowej usług zdalnej](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 

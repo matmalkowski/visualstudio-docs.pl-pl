@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-ms.assetid: 17e818f8-0f3a-4a96-a6fc-1634ddb4825d
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 20a56a2f6582a08270292cd86cf62a9344d8565f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: efc9cc2988125621212698576deeca1247e26a58
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Porady: tworzenie funkcji niestandardowej oraz zasady walidacji pakietu dla Rozwiązań SharePoint
   Można utworzyć niestandardowe reguły walidacji można zweryfikować pakietu rozwiązania generowane przez program Visual Studio. Można wykonać pełnej weryfikacji w całej funkcji lub pakietu, wybierając **weryfikacji** z menu kontekstowego pakietu lub funkcji w **PackagingExplorer**. Częściowego sprawdzania poprawności jest wykonywane podczas dodawania nowych elementów projektu SharePonit lub funkcje do projektu, aby określić pakietu lub funkcji działałoby w prawidłowym stanie.  

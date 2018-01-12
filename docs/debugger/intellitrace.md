@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Można poświęcają mniej czasu, debugowania aplikacji, korzystając z funkcji IntelliTrace do rejestrowania i śledzenia historii wykonywania kodu. Błędy można znaleźć łatwe, ponieważ umożliwia IntelliTrace:  
@@ -56,7 +56,7 @@ Można poświęcają mniej czasu, debugowania aplikacji, korzystając z funkcji 
 |||  
 |-|-|  
 |**Obsługiwane**|-Aplikacje Visual Basic i Visual C#, korzystających z programu .NET Framework 2.0 lub nowszych wersjach.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, formularze systemu Windows, WCF, WPF, przepływu pracy systemu Windows, programu SharePoint 2010, SharePoint 2013 i aplikacje 64-bitowe.<br />     Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Aby debugować aplikacje Microsoft Azure przy użyciu funkcji IntelliTrace, zobacz [debugowania usługi chmury opublikowane za pomocą funkcji IntelliTrace i Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Ograniczona obsługa**|-.NET core i aplikacje platformy ASP.NET Core, obsługiwane w przypadku tylko zdarzenia<br />-Aplikacje F # na zasadach eksperymentalnych<br />— Aplikacje ze Sklepu Windows obsługiwane tylko zdarzenia|  
+|**Ograniczona obsługa**|-.NET core i aplikacje platformy ASP.NET Core, obsługiwane w przypadku tylko zdarzenia<br />-Aplikacje F # na zasadach eksperymentalnych<br />-Aplikacje platformy uniwersalnej systemu Windows obsługuje tylko zdarzenia|  
 |**Nieobsługiwane**|— C++ innych języków i skryptu<br />-Usługi systemu Windows, Silverlight, Xbox, lub [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikacji|  
   
 > [!NOTE]

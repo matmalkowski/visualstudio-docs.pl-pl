@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-ms.assetid: e2cd35cc-7731-428e-9046-34fc57a02c48
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d395492d030728e65eb5e35b053641f0b684da2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee90d5c205f58736f7ccb6536e29b2fd6d16b152
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Zmiany wymagane w celu uruchamiania projektów związanych z pakietem Office przenoszonych do oprogramowania .NET Framework w wersji 4 lub 4.5
   Jeśli platforma docelowa programu Office project jest zmieniana na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później ze starszej wersji programu .NET Framework, należy wykonać następujące zadania, aby upewnić się, że rozwiązanie może działać na komputerze dewelopera i na komputerach użytkowników końcowych:  

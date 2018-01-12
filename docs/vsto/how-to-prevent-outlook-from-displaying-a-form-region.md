@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], canceling display
 - canceling form region display
-ms.assetid: 82a25def-776a-476a-a72d-d0a48a827d3c
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cdcc241031f8dcd2bd79000aeecde5c9d19f593d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: def4454f1031e5958dfc10e1a1fc77ccaed59067
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Porady: ochrona programu Outlook przed wyświetlaniem regionów formularzy
   Mogą wystąpić sytuacje, w których nie ma programu Microsoft Office Outlook do wyświetlania regionu formularza dla danego elementu. Na przykład w elemencie kontaktu nie zawierają adresu biznesowych, może uniemożliwić pokazujący lokalizacji biznesowe na mapie wyświetlaniu regionu formularza.  

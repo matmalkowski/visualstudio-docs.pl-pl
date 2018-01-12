@@ -18,23 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Debugowanie aplikacji uniwersalnych systemu Windows (UWP)
-Debuger programu Visual Studio zapewnia pełną obsługę debugowanie aplikacji platformy uniwersalnej systemu Windows.  
-  
-Informacje dotyczące debugowania uniwersalnych aplikacji systemu Windows, temacie [wdrażanie i debugowanie aplikacji platformy uniwersalnej systemu Windows](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps).  
+Debuger programu Visual Studio zapewnia pełną obsługę debugowania aplikacji platformy uniwersalnej systemu Windows i Windows 8.1.  
   
 Aby debugować aplikacje Windows Phone 8, zobacz [debugowanie aplikacji dla systemu Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
 |||  
 |-|-|  
-|[Uruchamianie aplikacji w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze lokalnym, w symulatorze aplikacji lub w emulatorze lub na urządzeniu zdalnym.|  
-|[Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Znajdź i napraw błędy w aplikacjach platformy uniwersalnej systemu Windows za pomocą debugera programu Visual Studio.|  
+|[Uruchom sesję debugowania dla aplikacji platformy uniwersalnej systemu Windows](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze lokalnym, podłączonego urządzenia w aplikacji symulator lub emulator, lub na urządzeniu zdalnym.|  
 |[Debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md)|Debugowanie wdrożonych aplikacji lokalnych i zdalnych.|
 |[Zawartość wyprzedzeniem dla aplikacji platformy uniwersalnej systemu Windows](../debugger/prefetch-content-for-windows-store-apps.md)|Analiza wpływu klasy ContentPrefetcher w aplikacji platformy uniwersalnej systemu Windows.|  
   

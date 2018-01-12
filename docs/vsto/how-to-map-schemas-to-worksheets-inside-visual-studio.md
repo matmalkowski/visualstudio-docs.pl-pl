@@ -15,17 +15,15 @@ helpviewer_keywords:
 - mappings [Office development in Visual Studio], XML schemas to Excel worksheets
 - Excel [Office development in Visual Studio], XML schemas
 - worksheets [Office development in Visual Studio], XML schemas
-ms.assetid: cef3f751-c1cf-46f3-9177-0bacdcee4121
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2dc089fb2c4ae2714a0b94d7756aaa432406ef74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ed0da1c2ac181db93105a93dd2269be55f0379a2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Porady: mapowanie schematów z arkuszami w programie Visual Studio
   Gdy arkusz jest otwarty w programie Visual Studio, możesz mapować schematu XML do arkusza. Można użyć tych samych narzędzi Microsoft Office Excel, których używasz, gdy skoroszyt jest otwarty poza Visual Studio. Office project tworzy obiekty tej samej, czy mapowanie schematu do arkusza przed lub po utworzeniu rozwiązania programu Excel.  

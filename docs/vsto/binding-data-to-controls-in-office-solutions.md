@@ -18,17 +18,15 @@ helpviewer_keywords:
 - data binding, controls
 - Office applications [Office development in Visual Studio], data binding
 - controls, data binding
-ms.assetid: b6faaed7-df9b-4d78-9863-e515cd5c7ed9
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5892f77b335e26e5b907159c4a9da37a58d2ae19
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office
   Formanty formularzy systemu Windows można powiązać i *hostowania formantów* dla dokumentu programu Microsoft Office Word lub Arkusz Microsoft Office Excel ze źródłem danych, więc formanty automatycznie wyświetlić dane. Formanty w projektach na poziomie aplikacji jak również poziomie dokumentu można powiązać danych.  

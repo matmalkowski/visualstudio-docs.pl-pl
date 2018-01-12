@@ -26,17 +26,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-ms.assetid: c4b79ea8-df70-4a72-b76e-26e337d65727
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cf3fde8e5a7e91719da11faca01453b405e30401
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 885c17815c8cbebcbda3f65f92a0cacad3f42f1b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="building-office-solutions"></a>Kompilowanie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowanie i debugowanie innych typów projektów programu Visual Studio, takie jak formularze systemu Windows. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [kompilowania i tworzenia w programie Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  

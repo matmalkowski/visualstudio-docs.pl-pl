@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Debugowanie kodu HTML i CSS w aplikacji Windows 8.1 i platformy uniwersalnej systemu Windows
 ![Ma zastosowanie do systemu Windows i Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- W przypadku aplikacji JavaScript programu Visual Studio zapewnia kompleksowe środowisko debugowania, które zawiera funkcje, które są znane deweloperom korzystającym z programu Internet Explorer i Visual Studio. Te funkcje są obsługiwane w przypadku [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplikacje Windows Phone oraz aplikacje utworzone za pomocą programu Visual Studio Tools for Apache Cordova.  
+ W przypadku aplikacji JavaScript programu Visual Studio zapewnia kompleksowe środowisko debugowania, które zawiera funkcje, które są znane deweloperom korzystającym z programu Internet Explorer i Visual Studio. Te funkcje są obsługiwane dla aplikacji platformy UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplikacje Windows Phone oraz aplikacje utworzone za pomocą programu Visual Studio Tools for Apache Cordova.  
   
  Przy użyciu interaktywnych model debugowania dostarczone przez narzędzia inspekcji w modelu DOM, można wyświetlać i modyfikować renderowany kod HTML i CSS. Można to zrobić bez zatrzymania i ponownego uruchomienia debugera.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Na przykład, który demonstruje sposób wybierania elementów za pomocą **Select element** przycisku, zobacz [stylów CSS debugowania przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a>Przeglądarki i obsługa Platform  
- Visual Studio tools dla języka JavaScript, Eksploratora modelu DOM i okna konsoli języka JavaScript są obsługiwane na następujących platformach:  
+ Eksplorator modelu DOM i okna konsoli języka JavaScript są obsługiwane na następujących platformach:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]i aplikacji Windows Phone przy użyciu języka JavaScript i HTML  
+-   Aplikacje platformy UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] i aplikacji Windows Phone przy użyciu języka JavaScript i HTML  
   
 -   Z programu Internet Explorer 11[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

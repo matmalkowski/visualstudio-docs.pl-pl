@@ -17,17 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-ms.assetid: 9a215904-b760-4a49-93e8-a1a708ce0526
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f6dfae83f09398ba9a8d1377c16756487193ee2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-document-properties-overview"></a>Niestandardowe właściwości dokumentu ― Omówienie
   Podczas kompilowania projektu poziomie dokumentu programu Visual Studio dodaje dwie właściwości niestandardowych do dokumentu w projekcie: _AssemblyLocation i _AssemblyName. Po otwarciu dokumentu aplikacji Microsoft Office sprawdza te niestandardowe właściwości dokumentu. Jeśli istnieją w dokumencie ładowania aplikacji [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], który uruchamia dostosowań. Aby uzyskać więcej informacji, zobacz [architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).  

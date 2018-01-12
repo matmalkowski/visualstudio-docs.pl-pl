@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Użyj punktów przerwania w debugerze programu Visual Studio
 Można ustawić punktów przerwania, aby zatrzymać wykonanie debugera, prawdopodobnie, aby zobaczyć stan zmiennych kodu lub spojrzeć na stosie wywołań. Są one jednym z najważniejszych metod debugowania w przyborniku dewelopera.  
@@ -232,7 +232,7 @@ Można ustawić punktów przerwania, aby zatrzymać wykonanie debugera, prawdopo
 ## <a name="export-and-import-breakpoints"></a>Funkcje eksportu i importu punkty przerwania  
  Punkt przerwania można wyeksportować do pliku XML, prawym przyciskiem myszy punkt przerwania i wybierając **wyeksportować**. Plik jest zapisywany w katalogu rozwiązania domyślnie. Aby zaimportować punktów przerwania, otwórz **punktów przerwania** okna (**CTRL + ALT + B**) i na pasku narzędzi kliknij przycisk strzałki w prawo (element tooltip jest **Importuj punkty przerwania z pliku**) .  
   
-## <a name="troubleshoot-breakpoints"></a>Rozwiązywanie problemów z punktów przerwania  
+## <a name="troubleshoot"></a>Rozwiązywanie problemów z punktów przerwania 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po usunięciu punktu przerwania, ale można kontynuować trafień go podczas uruchamiania debugowania ponownie  
  Jeśli punkt przerwania został usunięty podczas debugowania, w niektórych przypadkach można napotkać punkt przerwania ponownie przy następnym uruchomieniu debugowania. Aby zatrzymać naciśnięcie tego punktu przerwania, sprawdź, czy wszystkie wystąpienia punktu przerwania są usuwane z **punktów przerwania** okna.  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], data
 - data [Office development in Visual Studio], local
 - local data [Office development in Visual Studio]
-ms.assetid: 7a920e6b-f0c3-4a62-b5dd-02668a6177b6
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1576af3c3fc8a1c7f514a4941eb849df03774c5f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>Korzystanie z plików lokalnej bazy danych w rozwiązaniach pakietu Office ― Omówienie
   Rozwiązania pakietu Office, mogą obejmować plik bazy danych, takich jak plik programu SQL Server Express (mdf) lub plik programu Microsoft Office Access (.mdb). Pozwala to użytkownikom końcowym obsługę lokalnej bazy danych w sytuacji, gdy obsługa scentralizowanej bazie danych nie jest wymagane, na przykład w przypadku rozwiązania lokalnego magazynu używanego na pojedynczym komputerze.  

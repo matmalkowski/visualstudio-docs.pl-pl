@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>Pamięci podręcznej schematów
 Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %InstallRoot%\Xml\Schemas. Pamięci podręcznej schematu jest globalne dla wszystkich użytkowników na tym komputerze i zawiera standardowe schematów XML, które są używane do walidacji dokumentu IntelliSense i XML.  
@@ -54,13 +54,13 @@ Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %Insta
   
  Edytor XML obsługuje również dowolną liczbę schematu katalogu plików w katalogu pamięci podręcznej schematu. Wykazów schematów może wskazywać inne lokalizacje dla schematów, które chcesz wiedzieć o w edytorze. Plik catalog.xsd definiuje format pliku wykazu i znajduje się w katalogu pamięci podręcznej schematu. Plik catalog.xml jest domyślna i zawiera łącza do innych schematów w InstallDir %. Poniżej przedstawiono przykładowy plik catalog.xml:  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  `href` Atrybut może być dowolnym pliku http lub ścieżka URL wskazującym schematu. Ścieżka do pliku może być względem katalogu dokumentu. Następujące zmienne rozdzielone %%, są rozpoznawane przez Edytor który będzie wdrażany w ścieżce:  
   
@@ -82,25 +82,25 @@ Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %Insta
   
 Dokument katalogu może zawierać `Catalog` element, który wskazuje innych katalogów. Można użyć `Catalog` elementu do punktu centralnego katalogu, współużytkowane przez zespół lub firmy lub udostępnione partnerów biznesowych w wykazie online. `href` Atrybut jest URL http lub ścieżki pliku innych katalogów. Poniżej przedstawiono przykład `Catalog` elementu:  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  Katalog można też kontrolować sposób schematy są skojarzone z dokumentów XML za pomocą specjalnych `Association` elementu. Ten element kojarzy schematów, które mają docelowej przestrzeni nazw z rozszerzeniem określonego pliku, które mogą być przydatne, ponieważ w edytorze XML, które nie są automatycznie skojarzeń schematów, które nie mają `targetNamespace` atrybutu. W poniższym przykładzie `Association` element kojarzy schematu dotNetConfig ze wszystkich plików mających rozszerzenie pliku "Konfiguracja":  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>Schematy zlokalizowanych  
  W wielu przypadkach plik catalog.xml nie zawiera wpisy dla zlokalizowanych schematów. Dodatkowe wpisy można dodać do pliku catalog.xml wskazujące zlokalizowanych schematu katalogu.  
   
  W poniższym przykładzie nowy `Schema` element został utworzony używającej % zmienna % LCID wskaż zlokalizowanych schematu.  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>Zmiana lokalizacji pamięci podręcznej schematu  
  Można dostosować przy użyciu pamięci podręcznej schematu lokalizację **różne** strona Opcje. Jeśli masz katalog ulubionych schematów, zamiast tego użyć tych schematów można skonfigurować edytora.  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio
 ![Dotyczy tylko systemów Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 Na zdalnym urządzeniu z systemem Windows 10, należy włączyć [tryb dewelopera](/windows/uwp/get-started/enable-your-device-for-development). Na urządzeniach z systemem Windows 10 systemem twórcy aktualizacji lub później, zdalne narzędzia są instalowane automatycznie podczas wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [debugowania pakietu aplikacji zainstalowanych](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Na sprzed twórcy aktualizacji wersji systemu Windows 10 i Windows 8.1 na urządzeniu zdalnym należy skonfigurować narzędzia zdalnej programu Visual Studio i zdalny debuger musi być uruchomiona. Na Windows 8.1 należy również zainstalować licencję dewelopera.
+> W wersji aktualizacji sprzed twórcy systemu Windows 10 i Windows 8.1 narzędzi Remote Tools for Visual Studio musi być zainstalowany na urządzeniu zdalnym i zdalnego debugera musi być uruchomiona. Na Windows 8.1 należy również zainstalować licencję dewelopera.
   
 Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplikacji do urządzenia zdalnego.  
   
@@ -101,7 +101,7 @@ Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplika
  Można ustawić następujące opcje wdrażania na stronie właściwości debugowania projektu startowego.  
   
  **Zezwalaj na sprzężenie zwrotne sieci**  
- Ze względów bezpieczeństwa [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikację, która jest zainstalowana w standardowy sposób nie może wykonywać wywołania sieci jest zainstalowany na urządzeniu. Domyślnie wdrożenie programu Visual Studio tworzy wyjątek od tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia przetestowanie procedur komunikacji na jednym komputerze. Przed wysłaniem aplikacji [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], należy przetestować aplikację bez zwolnienia.  
+ Ze względów bezpieczeństwa platformy uniwersalnej systemu Windows lub [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikację, która jest zainstalowana w standardowy sposób nie może wykonywać wywołania sieci jest zainstalowany na urządzeniu. Domyślnie wdrożenie programu Visual Studio tworzy wyjątek od tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia przetestowanie procedur komunikacji na jednym komputerze. Przed wysłaniem aplikacji [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], należy przetestować aplikację bez zwolnienia.  
   
  Aby usunąć wykluczenia sprzężenia zwrotnego sieci z poziomu aplikacji:  
   

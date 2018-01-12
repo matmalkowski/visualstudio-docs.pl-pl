@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designing a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
-ms.assetid: 19cad8cf-8a82-4000-84cf-1e5aff54e5af
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych biznesowych
   Model usługi łączności danych biznesowych (BDC) można utworzyć przez dodanie jednostek i metody w pliku modelu. Jednostka opis kolekcji pól danych. Na przykład jednostka może reprezentować tabeli w bazie danych. Metoda wykonuje zadania, takie jak dodawanie, usuwanie i aktualizowanie danych reprezentowanego przez jednostek. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

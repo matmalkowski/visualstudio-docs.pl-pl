@@ -18,17 +18,15 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-ms.assetid: 61ae02e7-3f37-4230-bae1-54a498c2fae8
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 7130e9393786f28f800b8448cfd52a54369f3fdc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilowanie wydajności aplikacji SharePoint
   Jeśli aplikacji SharePoint działają wolno lub Niewydajne, może używać profilowania funkcji w programie Visual Studio, aby zidentyfikować problematyczne kodu i inne elementy. Za pomocą funkcji testowania obciążenia, można określić sposób wykonywania aplikacji SharePoint mocno obciążony, np. gdy wielu użytkowników dostępu do aplikacji jednocześnie. Uruchamianie testów wydajności sieci web, można zmierzyć, sposób wykonywania aplikacji w sieci web. Za pomocą kodowanych testów interfejsu użytkownika, można sprawdzić, czy całej aplikacji programu SharePoint, w tym interfejs użytkownika działa prawidłowo. Jeśli korzystasz ze sobą te testy, można pomagają zidentyfikować problemy z wydajnością, przed wdrożeniem aplikacji.  

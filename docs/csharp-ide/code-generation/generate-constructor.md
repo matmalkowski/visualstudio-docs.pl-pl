@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Generuj Konstruktor w języku C# #
 **Co:** umożliwia natychmiast generowania kodu dla nowego konstruktora dla klasy. 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![Generowanie wyników — Konstruktor](media/constructor_result.png)
 
-## <a id="selection"></a>Dodaj parametr do istniejących konstruktora
+## <a id="addparameter"></a>Dodaj parametr do istniejących konstruktora
 1. Dodawanie parametru do istniejącego wystąpienia obiektu.
 
 1. Umieść kursor w wierszu przypadku czerwona falista wskazujący używano konstruktora, który jeszcze nie istnieje.

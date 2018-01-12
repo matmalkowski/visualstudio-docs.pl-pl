@@ -16,17 +16,15 @@ helpviewer_keywords:
 - upgrading applications [Office development in Visual Studio]
 - upgrading Office solutions in Visual Studio
 - migrating Office solutions in Visual Studio
-ms.assetid: cc60cdcb-593d-498a-8358-f1f3ac673fe1
-caps.latest.revision: "105"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Uaktualnianie i migracja rozwiązań pakietu Office
   Jeśli masz program Microsoft Office project, który został utworzony we wcześniejszej wersji programu Visual Studio, należy uaktualnić projekt, aby użyć go w bieżącej wersji programu Visual Studio. Aby uaktualnić program Microsoft Office project, otwórz go w wersji programu Visual Studio, który zawiera narzędzia Microsoft Office developer tools. Aby uzyskać więcej informacji o wersjach programu Visual Studio, które obejmują narzędzia Microsoft Office developer tools, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

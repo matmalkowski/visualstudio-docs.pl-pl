@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d87870ef00ceb0a3c66b91975b11038c00bd1dc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7460071cc45c8e4994ad0a72d5f26dcce40c853
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Wskazówki: Korzystanie z funkcji edytora XML
 Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. Instruktaż używa niektóre funkcje edytora XML wchodzące przydatne do tworzenia XML.  
@@ -128,7 +128,7 @@ Kroki opisane w tym przewodniku opisano sposób tworzenia nowego dokumentu XML. 
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)

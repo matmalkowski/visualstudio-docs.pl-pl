@@ -18,17 +18,15 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-ms.assetid: a853d91c-9fd6-421a-b3a2-956b6b494b96
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c190c4ace56b2be9c63c9f11570354cddc6c8635
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bd7a401ab96cbb196d97b2e210b3ede0a624deb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Porady: otwieranie rozwiązań pakietu Office bez uruchamiania kodu
   Rozwiązanie Microsoft Office, utworzone za pomocą rozszerzenia kodu zarządzanego jest uruchamiany nawet wtedy, gdy ustawienie zabezpieczeń w aplikacji pakietu Office przez użytkownika końcowego jest ustawiony na wysoki. Jest to spowodowane zabezpieczenie kodu zestawu .NET jest zarządzany przez program Microsoft .NET Framework, nie przez program Microsoft Office.  

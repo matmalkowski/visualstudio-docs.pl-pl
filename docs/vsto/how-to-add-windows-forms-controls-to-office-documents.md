@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], adding
 - controls [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], Windows Forms controls
-ms.assetid: 4d188ad2-8e17-4eb0-8422-2ff56c683e3d
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2503ab821f22cb04c6f31d4e5174e755d58cab4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Porady: dodawanie formantów formularzy Windows do dokumentów pakietu Office
   Formanty formularzy systemu Windows można dodać do programu Microsoft Office Excel i Microsoft Office Word dokumentów w czasie projektowania w projektach na poziomie dokumentu. W czasie wykonywania można dodawać formanty w dostosowaniach na poziomie dokumentu i w dodatkach VSTO. Na przykład można dodać <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> sterowania do arkusza, dzięki czemu użytkownicy mogą wybrać z listy opcji.  

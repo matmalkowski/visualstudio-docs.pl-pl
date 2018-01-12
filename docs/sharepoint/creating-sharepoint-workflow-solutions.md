@@ -20,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-ms.assetid: fe79b99a-cb7c-4a14-8d9f-bce0c0805ba0
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb0dce0aa162260ca784593ec34ee5c39acd1f31
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Tworzenie rozwiązań przepływu pracy SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]udostępnia narzędzia do tworzenia niestandardowych przepływów pracy, które Zarządzanie cyklem życia dokumenty i elementy listy w witrynie sieci Web programu SharePoint. Elementy dostarczone obejmują projektanta, zestaw kontrolek działania i niezbędne odwołania zestawów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zawiera również **Kreator dostosowania programu SharePoint**, aby utworzyć i skonfigurować przepływy pracy.  

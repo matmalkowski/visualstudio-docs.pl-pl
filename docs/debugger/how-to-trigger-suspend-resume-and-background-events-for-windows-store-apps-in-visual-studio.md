@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
 Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elementu) steruje stanem wykonywania aplikacji — uruchamianie, wstrzymywanie, wznawianie i przerywanie aplikacji w odpowiedzi na działania użytkownika i stan urządzenia. Podczas debugowania, system Windows wyłącza te zdarzenia aktywacji. W tym temacie opisano sposób uruchamiania tych zdarzeń w debugerze.  
@@ -109,7 +109,7 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
      ![Wstrzymywanie, wznawianie, przerwanie i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>Wyzwalacz zdarzenia Zarządzanie okresem istnienia procesu, a w tle zadań z zainstalowaną aplikację  
- Użyj okna dialogowego debugowania aplikacji zainstalowane załadować aplikację, która jest już zainstalowana w debugerze. Na przykład może debugować aplikację, która została zainstalowana z Microsoft Store lub debugowania aplikacji, jeśli masz pliki źródłowe dla aplikacji, ale nie projektu programu Visual Studio dla aplikacji. Okno dialogowe debugowania aplikacji zainstalowane pozwala uruchomić aplikację w trybie debugowania na komputerze programu Visual Studio lub na urządzeniu zdalnym lub ustawienie aplikacji do uruchamiania w trybie debugowania, ale nie można go uruchomić. Zobacz **Uruchom zainstalowaną aplikację w debugerze** części albo [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) lub [Visual C++, Visual C# i Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) wersji **sposobu uruchamiania sesja debugowania** Aby uzyskać więcej informacji.  
+ Użyj okna dialogowego debugowania aplikacji zainstalowane załadować aplikację, która jest już zainstalowana w debugerze. Na przykład może debugować aplikację, która została zainstalowana z Microsoft Store lub debugowania aplikacji, jeśli masz pliki źródłowe dla aplikacji, ale nie projektu programu Visual Studio dla aplikacji. Okno dialogowe debugowania aplikacji zainstalowane pozwala uruchomić aplikację w trybie debugowania na komputerze programu Visual Studio lub na urządzeniu zdalnym lub ustawienie aplikacji do uruchamiania w trybie debugowania, ale nie można go uruchomić. Zobacz **Uruchom zainstalowaną aplikację w debugerze** sekcji [rozpocząć sesję debugowania w aplikacji platformy uniwersalnej systemu Windows](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  Po załadowaniu aplikacji w debugerze, można użyć dowolnej z opisanych procedur.  
   

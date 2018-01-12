@@ -15,17 +15,15 @@ helpviewer_keywords:
 - threading [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], threading support
 - object models [Office development in Visual Studio], threading support
-ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2157
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c06e88c90116040fa3e9448368d32953095f889e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3383e3767c97efad9177f0e361524137ea5d66a8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="threading-support-in-office"></a>Obsługa wątkowości w pakiecie Office
   Ten temat zawiera informacje dotyczące sposobu wątków jest obsługiwana w modelu obiektów programu Microsoft Office. Model obiektów pakietu Office nie jest bezpieczne dla wątków, ale istnieje możliwość pracy z wielu wątków w rozwiązaniach pakietu Office. Aplikacje pakietu Office są serwery składnika modelu COM (Object). COM pozwala klientom wywoływać serwerów COM na dowolne wątków. W przypadku serwerów COM, które nie są bezpieczne dla wątków COM udostępnia mechanizm do serializacji równoczesnych wywołań, tak aby tylko jeden wątek logiczny jest wykonywana na serwerze w dowolnym momencie. Mechanizm ten nosi nazwę modelu jednowątkowego apartamentu (STA). Ponieważ wywołania są serializowane, wywołań może zostać zablokowany przez czas, gdy serwer jest zajęty lub obsługuje inne wywołania wątku w tle.  

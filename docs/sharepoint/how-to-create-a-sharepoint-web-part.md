@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], adding
 - Web Parts [SharePoint development in Visual Studio], creating
-ms.assetid: 0d037522-c25e-4c24-93b7-518db0f791b7
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f5d4f06b13c1c27c9f4b5e245e73929596dcf423
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 27826859d2bac9b247132e7fcb2c3721b6d38092
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Porady: tworzenie SharePoint Web Part
   Można tworzyć i dostosowywać części sieci web, dodając **składnika Web Part** elementu do żadnego projektu programu SharePoint, a następnie edytując plik kodu części sieci web lub za pomocą projektanta. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie składnika Web Part programu SharePoint za pomocą projektanta](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  

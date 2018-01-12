@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Ribbon [Office development in Visual Studio], tabs
-ms.assetid: 3f0906e3-9708-4136-ac49-986bc4c92ea4
-caps.latest.revision: "26"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 196b16ba28ee5fa590c54dee89dcd65978f2ecd2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5016651a6cc4f1316536c22d555a65aaba64b788
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Porady: zmiana położenia zakładki na wstążce
   Można zmienić kolejność kart niestandardowych na Wstążce za pomocą **edytora kolekcji kartę**. Niestandardowe karty można umieścić przed lub po wbudowanej karty na Wstążce. Tabulator wbudowana jest karta, która jest już na Wstążce aplikacji pakietu Microsoft Office. Na przykład **danych** karta jest wbudowanej karty w programie Excel.  

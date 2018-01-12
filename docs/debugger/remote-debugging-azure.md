@@ -16,11 +16,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 8d0163d9834a56735daf67050dbf3b8e74011dc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core usług IIS i platformy Azure w programie Visual Studio 2017 r.
 Możesz wdrożyć aplikację sieci Web programu ASP.NET na komputerze z systemem Windows Server z usługami IIS i skonfigurować go do zdalnego debugowania. W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.

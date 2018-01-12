@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a26ca0228a869d36daf427f4ba90fd1b17abeaf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Wskazówki: Używanie XSLT IntelliSense
 W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego zakończenia wartości niektórych atrybutów.  
@@ -26,7 +26,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
   
 1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
     <!-- These 2 elements effectively assign  
          $messages = resources/en.xml/<messages>,  
@@ -46,22 +46,22 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
       </xsl:message>  
     </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Wstaw kursor po `<xsl:template name="msg23" match="msg23">` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl:call-template` elementu:  
   
-    ```  
+    ```xml
     <xsl:call-template name="localized-message">  
     </xsl:call-template>  
-    ```  
+    ```
   
      Lista nazw szablonu jest wyświetlana w `name=""` atrybutu `xsl:call-template` elementu podczas pisania.  
   
 3.  Wstaw kursor po `<xsl:call-template name="localized-message">` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl:with-param` elementu:  
   
-    ```  
+    ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
-    ```  
+    ```
   
      Lista nazw parametrów jest wyświetlana w `name=""` atrybutu `xsl:with-param` elementu.  
   
@@ -69,7 +69,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
   
 1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
       <xsl:template match="/">  
         <HTML>  
@@ -112,13 +112,13 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
         </TD>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Wstaw kursor po `<xsl:apply-templates select="phone" />` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl: apply-templates` elementu:  
   
-    ```  
+    ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">  
-    ```  
+    ```
   
      Lista trybów szablonu jest wyświetlana w `mode=""` atrybutu `xsl:apply-templates` elementu.  
   
@@ -126,7 +126,7 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
   
 1.  Utwórz nowy plik XSLT i skopiuj poniższy kod:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
     version="1.0">  
       <xsl:param name="browser" select="'InternetExplorer'"/>  
@@ -153,15 +153,16 @@ W tym przewodniku pokazano, jak technologię XSLT IntelliSense do automatycznego
         </alt:stylesheet>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Wstaw kursor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` i naciśnij klawisz ENTER. Zacznij pisać następujące `xsl:namespace-alias` elementu:  
   
-    ```  
+    ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
-    ```  
+    ```
   
      Zwróć uwagę, jak Lista prefiksów znajdowały się w `stylesheet-prefix` i `result-prefix` atrybuty `xsl:namespace-alias` elementu.  
   
-## <a name="see-also"></a>Zobacz też  
- [Funkcje IntelliSense w edytorze XML](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Zobacz także
+
+[Funkcje IntelliSense w edytorze XML](../xml-tools/xml-editor-intellisense-features.md)

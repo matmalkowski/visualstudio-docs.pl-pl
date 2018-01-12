@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-ms.assetid: 83db570d-6b9f-4dab-9e71-db41f17b987a
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
   Projektu definicji witryny programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia tworzenie *definicji witryny*, która stanowi podstawę dla nowej witryny programu SharePoint. Te definicje nie tylko określić wygląd i zachowanie witryny programu SharePoint, ale także jego zawartości domyślnej i funkcji. W definicji możesz umieścić listy wstępnie skonfigurowane, typów zawartości, odbiorcy zdarzeń, obrazy i inne elementy. SharePoint obejmuje niektóre definicje witryn, takie jak BLOG, na przykład. Podczas tworzenia witryny na podstawie definicji witryny BLOGU lokacji zawiera listy, części sieci Web i innych elementów, które wymaga lokacji obsługi blogów.  

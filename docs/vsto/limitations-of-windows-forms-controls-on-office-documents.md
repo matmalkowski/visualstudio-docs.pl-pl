@@ -20,17 +20,15 @@ helpviewer_keywords:
 - Toolbox [Office development in Visual Studio], unsupported controls
 - user controls [Office development in Visual Studio], grouping controls
 - Windows Forms controls [Office development in Visual Studio], Toolbox
-ms.assetid: 95ff473e-4952-4977-bc88-c77289c9fb0b
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Ograniczenia formantów formularzy Windows w dokumentach pakietu Office
   Istnieją pewne różnice między formanty formularzy systemu Windows, które są dodawane do dokumentów pakietu Microsoft Office Word lub arkuszy programu Microsoft Office Excel i formanty formularzy systemu Windows, które są dodawane do formularzy systemu Windows. Na przykład podczas dodawania <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrolować dokument, właściwości, takie jak <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, i <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> nie działają zgodnie z oczekiwaniami może.  

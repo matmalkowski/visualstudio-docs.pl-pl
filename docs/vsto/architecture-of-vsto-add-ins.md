@@ -16,17 +16,15 @@ helpviewer_keywords:
 - vstoee.dll
 - application-level add-ins [Office development in Visual Studio], architecture
 - add-ins [Office development in Visual Studio], architecture
-ms.assetid: 978f102f-15c6-44e4-84e8-80b161408324
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a4dbe8611da0814bfaa148b2d9c4caf7f7858d9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatków VSTO utworzone za pomocą narzędzia Office developer tools w programie Visual Studio architektury funkcjami, które wyróżnić stabilności i zabezpieczeń, a następnie włącz je, aby ściśle współpracować z programem Microsoft Office. W tym temacie opisano następujące aspekty dodatków VSTO:  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -76,7 +76,7 @@ Visual Studio można wykonać wykonywanie wielu czynności więcej pomocy. Aby u
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 
-Aby rozpocząć pracę, Pobierz program Visual Studio i zainstaluj go w systemie. Możesz pobrać go w [programu Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017/).
+Aby rozpocząć pracę, Pobierz program Visual Studio i zainstaluj go w systemie. Możesz pobrać go w [programu Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
 
 Program Visual Studio jest teraz bardziej lekkie niż kiedykolwiek! Moduły Instalator umożliwia wybierz i zainstaluj *obciążeń*, które są grup funkcji potrzebnych do programowania języka lub platformy wolisz. Ta strategia pomaga w zapewnieniu rozmiaru instalacji programu Visual Studio mniejszy niż kiedykolwiek wcześniej, co oznacza instalowany i aktualizuje szybciej zbyt.
 

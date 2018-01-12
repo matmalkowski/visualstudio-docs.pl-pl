@@ -16,17 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-ms.assetid: 6f90cb48-eb8f-43c2-a3f7-ed4ce81aedf2
-caps.latest.revision: "20"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 519c6907bb5779a3819419144905ca68e5cce939
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1b00d82679388c50d6d111209a9a206bd9587a3a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-an-event-receiver"></a>Porady: tworzenie obsługiwanego odbiornika
   Tworząc *odbiorcy zdarzeń*, mogą odpowiadać, gdy użytkownik korzysta z programu SharePoint elementy, takie jak listy lub elementów listy. Na przykład kod w odbiorcy zdarzeń mogą być wyzwalane, gdy użytkownik zmienia kalendarz lub usuwa nazwę z listy kontaktów. Wykonując w tym temacie nauczysz się, jak dodać odbiorca zdarzenia do wystąpienia listy.  

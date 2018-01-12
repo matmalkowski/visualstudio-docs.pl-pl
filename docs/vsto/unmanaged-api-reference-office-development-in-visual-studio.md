@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, reference
 - Office development in Visual Studio, unmanaged API reference
-ms.assetid: cdbc70b1-1f98-43dc-a619-07d805e53dce
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3a48af1199b041ef59c3e31e4e9496d78d21aec1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 640e292719f8d466ba21cc449ea624527b50bcf0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Niezarządzane odniesienia API (Office Development w Visual Studio)
   Począwszy od systemu Microsoft Office 2007, użyj aplikacji pakietu Office [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md) interfejs do wywołania w dodatku VSTO modułu ładującego składnik, który jest dołączony do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ten składnik umożliwiają załadowanie zarządzanych dodatków VSTO. Możesz utworzyć własne składnika dodatku VSTO modułu ładującego z zastosowaniem tego interfejsu.  

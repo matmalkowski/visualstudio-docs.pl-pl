@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa dla EditorConfig
 
@@ -157,7 +157,7 @@ Błąd | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora na liście 
 
 Następujący plik .editorconfig zawiera konwencji nazewnictwa, która określa, że właściwości publiczne, metody pól, zdarzeń i delegatów należy wpisać wielkimi literami. Zwróć uwagę, że tę konwencję nazewnictwa określa wiele rodzajów symbolu, aby zastosować regułę, użyj przecinka, aby oddzielić wartości.
 
-```
+```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -177,7 +177,7 @@ Poniższy zrzut ekranu przedstawia wynik tę konwencję nazewnictwa w edytorze. 
 
 Teraz Zmieńmy ważności naruszenia można `warning`:
 
-```
+```EditorConfig
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 

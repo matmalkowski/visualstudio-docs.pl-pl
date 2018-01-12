@@ -15,17 +15,15 @@ helpviewer_keywords:
 - shortcut keys [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], shortcut keys
 - accessibility [Office development in Visual Studio]
-ms.assetid: 48efcf1f-ca49-47ce-99f0-cc99f051aeae
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 567ab9cffbd4546e276fcfd55af773e99fe07d34
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
   Microsoft Visual Studio i Microsoft Office, zawierają wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowe ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [witrynę sieci Web Accessibility](http://go.microsoft.com/fwlink/?LinkID=37113).  

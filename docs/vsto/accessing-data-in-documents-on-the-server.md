@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - data access [Office development in Visual Studio]
-ms.assetid: 14a42e96-ed2f-48a1-a0c0-e19f9eba4956
-caps.latest.revision: "32"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d81c8b10f5ace634cc58bd3135af9b2e69f1c519
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 48857640268c45026aacae903896451fd18f1af8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessing-data-in-documents-on-the-server"></a>Uzyskiwanie dostępu do danych w dokumentach na serwerze
   Można programu z danymi w dostosowaniu poziomie dokumentu, bez konieczności używania modelu obiektów programu Microsoft Office Word i Microsoft Office Excel. Oznacza to, że można uzyskać dostępu do danych znajdujących się w dokumencie na serwerze, który nie ma programu Word lub zainstalowany program Excel. Na przykład kodu na serwerze (na przykład w [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony) można dostosować dane w dokumencie i wysłać dokument dostosowane do użytkownika końcowego. Gdy użytkownik końcowy otworzy dokumentu, kod powiązania danych w zestawie rozwiązanie wiąże danych dostosowane do dokumentu. Jest to możliwe, ponieważ dane w dokumencie jest oddzielony od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [buforowane dane w dostosowaniach na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md).  

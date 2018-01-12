@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
 Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do programowe przechwytywanie informacji graficznych z aplikacji Direct3D.  
@@ -42,7 +42,7 @@ Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagn
 -   Przechwytywanie informacji graficznych  
   
 > [!NOTE]
->  Poprzednich implementacjach przechwycenie programowe zależał od narzędzi Remote Tools for [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umożliwiają korzystanie z funkcji przechwytywania, Windows 8.1 obsługuje przechwytywanie bezpośrednio za pomocą Direct3D 11.2. W związku z tym nie należy zainstalować narzędzia zdalnej dla przechwycenie programowe na Windows 8.1.  
+>  Poprzednich implementacjach przechwycenie programowe zależał od Remote Tools for Visual Studio dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umożliwiają korzystanie z funkcji przechwytywania, Windows 8.1 obsługuje przechwytywanie bezpośrednio za pomocą Direct3D 11.2. W związku z tym nie należy zainstalować narzędzia Remote Tools for Visual Studio dla przechwycenie programowe na Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Przygotowywanie aplikacji do użycia przechwycenie programowe  
  Aby użyć przechwycenie programowe w aplikacji, musi on zawierać niezbędne nagłówki. Te nagłówki są częścią zestawu Windows 8.1 SDK.  
@@ -183,10 +183,10 @@ Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagn
   
      Jeśli nie wykonasz tej czynności, nazwa pliku jest default.vsglog. Jeśli nie zostały zdefiniowane `DONT_SAVE_VSGLOG_TO_TEMP`, następnie lokalizację pliku względem katalogu tymczasowego; w przeciwnym razie jest powiązane z katalogiem roboczym lub w innej lokalizacji, jeśli określony bezwzględnej nazwy pliku.  
   
- Aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikacji, lokalizację katalogu tymczasowego są specyficzne dla każdego użytkownika i aplikacji i zwykle znajduje się w lokalizacji takiej jak C:\users\\*username*\AppData\Local\Packages\\ *nazwy rodziny pakietów*\TempState\\. Dla aplikacji klasycznych, lokalizację katalogu tymczasowego jest przeznaczony dla każdego użytkownika i zazwyczaj znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Temp\\.  
+ Dla platformy uniwersalnej systemu Windows i [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikacji, lokalizację katalogu tymczasowego są specyficzne dla każdego użytkownika i aplikacji i zwykle znajduje się w lokalizacji takiej jak C:\users\\*username*\AppData\Local\Packages\\ *nazwy rodziny pakietów*\TempState\\. Dla aplikacji klasycznych, lokalizację katalogu tymczasowego jest przeznaczony dla każdego użytkownika i zazwyczaj znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Można zapisać w określonej lokalizacji, musi mieć uprawnienia do zapisu w tej lokalizacji; w przeciwnym razie wystąpi błąd. Należy pamiętać, że [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikacje są bardziej ograniczony w aplikacjach klasycznych, o których one można zapisać danych i mogą wymagać dodatkowej konfiguracji do zapisu w określonych lokalizacjach.  
+>  Można zapisać w określonej lokalizacji, musi mieć uprawnienia do zapisu w tej lokalizacji; w przeciwnym razie wystąpi błąd. Należy pamiętać, że platformy uniwersalnej systemu Windows i [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikacje są bardziej ograniczony w aplikacjach klasycznych, o których one można zapisać danych i mogą wymagać dodatkowej konfiguracji do zapisu w określonych lokalizacjach.  
   
 ### <a name="capturing-the-graphics-information"></a>Przechwytywanie informacji graficznych  
  Po przygotowywania aplikacji przechwycenie programowe i opcjonalnie skonfigurować lokalizację i nazwę grafiki pliku dziennika, kompilowania aplikacji i następnie uruchomić ani debugować go do przechwycenia danych; Nie uruchamiaj diagnostyki grafiki z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] korzystając programowe Przechwytywanie interfejsu API. Grafika dziennika są zapisywane w określonej lokalizacji. Jeśli chcesz zachować tę wersję dziennika, przenieś go do innej lokalizacji. w przeciwnym razie zostaną zastąpione, gdy ponownie uruchom aplikację.  
