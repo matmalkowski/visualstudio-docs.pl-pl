@@ -1,5 +1,6 @@
 ---
 title: "Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio | Dokumentacja firmy Microsoft"
+description: "Krótkie wprowadzenie do programu Visual Studio, która tworzy aplikację sieci web proste przy użyciu platformy Falcon przy użyciu języka Python."
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 
@@ -67,7 +70,7 @@ W tym szybkiego startu jednak, przy użyciu biblioteki Falcon zgłaszać proces 
 
 Aby uzyskać więcej informacji na temat Falcon, odwiedź stronę [falconframework.org](https://falconframework.org/).
 
-Należy pamiętać, zamiast instalowania bibliotek w środowisku globalnych, deweloperzy zazwyczaj utworzyć "środowisko wirtualne", w którym chcesz zainstalować biblioteki dla określonego projektu. Wiele szablonów projektu języka Python w programie Visual Studio `requirements.txt` plik zawierający listę bibliotek, od których zależy ten szablon. Tworzenie projektu z jednego z tych szablonów wyzwala tworzenie środowiska wirtualnego, w którym są zainstalowane biblioteki. Aby uzyskać więcej informacji, zobacz [środowiska Python - środowisk wirtualnych](../python/python-environments.md#virtual-environments).
+Należy pamiętać, zamiast instalowania bibliotek w środowisku globalnych, deweloperzy zazwyczaj utworzyć "środowisko wirtualne", w którym chcesz zainstalować biblioteki dla określonego projektu. Wiele szablonów projektu języka Python w programie Visual Studio `requirements.txt` plik zawierający listę bibliotek, od których zależy ten szablon. Tworzenie projektu z jednego z tych szablonów wyzwala tworzenie środowiska wirtualnego, w którym są zainstalowane biblioteki. Aby uzyskać więcej informacji, zobacz [środowiska Python - środowisk wirtualnych](../python/python-environments.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Dodawanie plików kodu
 

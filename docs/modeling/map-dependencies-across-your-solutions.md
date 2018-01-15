@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
-Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie mapy kodu. Dzięki temu można zobaczyć, jak kod dopasowuje razem przed odczytaniem za pośrednictwem plików i wierszy kodu.  
-  
- ![Służy do wyświetlania zależności w ramach rozwiązań](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Poniżej przedstawiono niektóre pliki wideo**:  
-  
--   [Poznanie zależności w kodzie za pomocą wizualizacji](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Wizualizacja skutków wprowadzenia zmian](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Poznawanie złożonego kodu przy użyciu map kodu](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a>Wprowadzenie do mapy kodu  
- **Aby użyć mapy kodu, albo**:  
+
+Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie mapy kodu. Dzięki temu można zobaczyć, jak kod dopasowuje razem przed odczytaniem za pośrednictwem plików i wierszy kodu.
+
+![Służy do wyświetlania zależności w ramach rozwiązań](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Poniżej przedstawiono niektóre pliki wideo**:
+
+- [Poznanie zależności w kodzie za pomocą wizualizacji](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Wizualizacja skutków wprowadzenia zmian](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Poznawanie złożonego kodu przy użyciu map kodu](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a>Wprowadzenie do mapy kodu
+
+**Aby użyć mapy kodu, albo**:
   
 -   Visual Studio Enterprise: Tworzenie map kodu w edytorze kodu, w Eksploratorze rozwiązań, widoku klasy lub przeglądarki obiektów.  
   
@@ -171,7 +171,7 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
   
 10. Innym sposobem fokusu w na mapie złożone rozwiązanie polega na generowaniu nowej mapy zawierający wybrane elementy z istniejącej mapy. Przytrzymaj **CTRL** podczas wybierania elementów chcesz skupić się na, otwórz menu skrótów i wybierz **nowy wykres na podstawie wyboru**.  
   
-     ![Pokaż elementy wybrane na nowej mapie kodu](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Pokaż elementy wybrane na nowej mapie kodu](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Kontekst zawierający są przenoszone do nowej mapy. Ukryj foldery rozwiązania i inne kontenery nie chcesz, aby wyświetlić przy użyciu **filtry** okienka.  
   

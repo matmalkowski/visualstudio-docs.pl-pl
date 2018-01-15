@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 W wizualizacji i modelowania zestawu SDK, można zdefiniować magazynu obsługi zdarzeń do propagujące zmiany do zasobów poza magazynu, na przykład zmienne bez magazynu, plików modeli w innych magazynach lub inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia. Programy obsługi zdarzeń magazynu są wykonywane po zakończeniu transakcji, w którym wystąpiło zdarzenie wyzwalania. Są one również wykonywane Cofnij lub ponów operację. W związku z tym w przeciwieństwie do reguł magazynu zdarzenia magazynu są najbardziej przydatny w przypadku aktualizowania wartości, które znajdują się poza Sklepem. W przeciwieństwie do zdarzenia platformy .NET magazynu obsługi zdarzeń są rejestrowane nasłuchiwanie na klasę: nie trzeba zarejestrować oddzielne obsługi dla poszczególnych wystąpień. Aby uzyskać więcej informacji o tym, jak wybrać różne sposoby obsługi zmian, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ W wizualizacji i modelowania zestawu SDK, można zdefiniować magazynu obsługi 
   
     -   `ElementDeleted`-wyzwalane po element modelu, relację, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale go nie odniesie żadnych relacji z innymi elementami.  
   
-2.  Dodaj definicję klasy częściowej dla *YourDsl***DocData** w osobnym pliku kodu w **DslPackage** projektu.  
+2.  Dodaj definicję klasy częściowej dla *YourDsl *** DocData** w osobnym pliku kodu w **DslPackage** projektu.  
   
 3.  Pisanie kodu zdarzenia metodą, jak w poniższym przykładzie. Można ją `static`, chyba że chcesz uzyskać dostęp do `DocData`.  
   

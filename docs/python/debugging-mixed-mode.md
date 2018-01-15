@@ -12,16 +12,23 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b1a36b387ad9fd8a2212cfaceefbd454edf33dde
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Debugowanie razem Python i C++
 
-Najbardziej regularne debugery Python obsługuje debugowania tylko kodu języka Python. W praktyce, Python jest jednak używany w połączeniu z C lub C++ którym wymagany jest wysoka wydajność lub wprowadzić możliwość bezpośrednie wywoływanie interfejsów API platformy (zobacz [Tworzenie rozszerzenia C++ dla języka Python](cpp-and-python.md) przykład. Po załadowaniu projektu języka Python, program Visual Studio udostępnia zintegrowane, jednoczesnych trybu mieszanego możliwość krok między Python i kodu natywnego, punkty przerwania w obu typów kodu i możliwość debugowania dla języka Python i natywnego C/C++, z stosy wywołań połączone, Zobacz Python reprezentacje obiektów ramek natywnych i na odwrót:
+Najbardziej regularne debugery Python obsługuje debugowania tylko kodu języka Python. W praktyce jednak Python umożliwia w połączeniu z C lub C++ w scenariuszach wymagających wysokiej wydajności lub możliwości bezpośrednie wywoływanie interfejsów API platformy. (Zobacz [Tworzenie rozszerzenia C++ dla języka Python](cpp-and-python.md) np.) Po załadowaniu projektu języka Python, Visual Studio udostępnia zintegrowane, jednocześnie dla języka Python i natywnego C/C++ debugowanie w trybie mieszanym, w tym:
+
+- Stosy wywołań połączone
+- Krok między Python i kod natywny
+- Punkty przerwania w obu typów kodu
+- Zobacz Python reprezentacje obiektów ramek natywnych i na odwrót
 
 ![Debugowanie w trybie mieszanym](media/mixed-mode-debugging.png) 
 
@@ -34,31 +41,38 @@ Aby obejrzeć wprowadzenie do tworzenia, testowania i debugowania modułów maci
 
 ## <a name="enabling-mixed-mode-debugging"></a>Włączanie debugowania w trybie mieszanym
 
-1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań wybierz **właściwości**, wybierz pozycję **debugowania** karcie, a następnie włącz opcję **Włącz debugowanie kodu natywnego**. Ta opcja umożliwia włączenie trybu mieszanego dla sesji debugowania wszystkie.
+1. Kliknij prawym przyciskiem myszy projekt języka Python w Eksploratorze rozwiązań, wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie wybierz **Włącz debugowanie kodu natywnego**. Ta opcja umożliwia włączenie trybu mieszanego dla sesji debugowania wszystkie.
 
     ![Włączanie debugowania kodu natywnego](media/mixed-mode-debugging-enable-native.png)
 
-    > [!Tip]    
+    > [!Tip]
     > Gdy włączone jest debugowanie kodu natywnego, w oknie danych wyjściowych Python może zniknąć natychmiast po zakończeniu program bez umożliwiając zwykle Wstrzymaj "Naciśnij dowolny klawisz, aby kontynuować...". Aby wymusić przerwie, Dodaj `-i` opcji w celu **Uruchom > argumenty Interpreter** na **debugowania** karcie, gdy włączone jest debugowanie kodu natywnego. Ten argument umieszcza interpreter języka Python w trybie interakcyjnym, po zakończeniu kodu, w którym czeka na naciśnij klawisz Enter, aby zakończyć Ctrl + Z.
 
-1. Podczas dołączania do istniejącego procesu debugera trybu mieszanego (**Debuguj > dołączyć do procesu...** ), wybierz pozycję **wybierz...**  przycisk, aby otworzyć **wybór typu kodu** okno dialogowe, zestaw **Debuguj te typy kodu** i wybrać zarówno **natywnego** i  **Python** na liście:
+1. Podczas dołączania do istniejącego procesu debugera trybu mieszanego (**Debuguj > dołączyć do procesu...** ), wybierz pozycję **wybierz...**  przycisk, aby otworzyć **wybór typu kodu** okna dialogowego. Następnie ustaw **Debuguj te typy kodu** opcję i zaznacz oba **natywnego** i **Python** na liście:
 
     ![Wybieranie typów kodu macierzystego i języka Python](media/mixed-mode-debugging-code-type.png)
 
-    Ustawienia typu kodu są trwałe, więc jeśli chcesz wyłączyć debugowanie w trybie mieszanym podczas dołączania do innego procesu później, powtórz te kroki i wyczyść typ kodu języka Python.
+    Ustawienia typu kodu są trwałe, więc jeśli chcesz wyłączyć debugowanie w trybie mieszanym podczas dołączania do innego procesu później, wyczyść typ kodu języka Python.
 
-    Można wybrać inne typy kodu, oprócz lub zamiast **natywnego**. Na przykład, jeśli zarządzanej aplikacji obsługuje języka CPython, z kolei używa modułów macierzystych rozszerzenia, i chcesz debugować wszystkie trzy, można sprawdzić **Python**, **natywnego**i kod zarządzany ** do ujednoliconego w tym obsługi debugowania łączyć stosy wywołań i przechodzenie między wszystkie trzy środowisk uruchomieniowych.
+    Można wybrać inne typy kodu, oprócz lub zamiast **natywnego**. Na przykład, jeśli zarządzanej aplikacji obsługuje języka CPython, z kolei używa modułów macierzystych rozszerzenia, i chcesz debugować wszystkie trzy, można sprawdzić **Python**, **natywnego**, i **zarządzane**razem ujednoliconym środowisku debugowania w tym stosy wywołań połączone, a następnie między wszystkie trzy środowisk uruchomieniowych.
 
-1. Podczas uruchamiania debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego. Zobacz [symboli do debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode.md) szczegółowe informacje. Musisz zainstalować symbole tylko raz w każdym środowisku danego języka Python. Należy pamiętać, że po zainstalowaniu obsługi języka Python za pomocą Instalatora programu Visual Studio 2017 symbole są dołączane automatycznie.
+1. Podczas uruchamiania debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego (zobacz [symboli do debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode.md)). Musisz zainstalować symbole tylko raz w każdym środowisku danego języka Python. Symbole są automatycznie dołączane po zainstalowaniu obsługi języka Python za pomocą Instalatora programu Visual Studio 2017 r.
 
-1. Można również trzeba przygotować się kodu źródłowego języka Python. Dla języka Python standardowy, kod źródłowy jest uzyskiwany z [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/). Pobierz odpowiednią dla danej wersji archiwum i wyodrębnij go do folderu. Można następnie punktu programu Visual Studio do określonych plików w tym folderze, w dowolnym momencie go monit.
+1. Można również znać kodu źródłowego dla języka Python samej siebie. Standard języka Python, można znaleźć [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), pobierz odpowiednie dla posiadanej wersji archiwum i wyodrębnij go do folderu. Można następnie punktu programu Visual Studio do określonych plików w tym folderze, w dowolnym momencie go monit.
 
-> [!Note]
-> Trybu mieszanego debugowania zgodnie z opisem w tym miejscu jest włączona tylko wtedy, gdy projekt Python załadowanych do programu Visual Studio. Tego projektu określa tryb debugowania programu Visual Studio, czyli, co sprawia, że opcja trybu mieszanego dostępne. Jeśli jednak masz załadować projekt C++ (jak w przypadku podczas [osadzanie Python w innej aplikacji, zgodnie z opisem na python.org](https://docs.python.org/3/extending/embedding.html), a następnie debuger natywny C++, która nie obsługuje debugowanie w trybie mieszanym korzysta z programu Visual Studio.
->
-> W takim przypadku Uruchom bez debugowania projektu C++ (**debugowania > uruchomienie bez debugowania** lub Ctrl + F5), a następnie użyć **debugowania > dołączyć do procesu...** . W oknie dialogowym, wybierz odpowiedni proces, a następnie użyj **wybierz...**  przycisk, aby otworzyć **wybór typu kodu** okna dialogowego, w którym można wybrać Python, jak pokazano poniżej. Wybierz **OK** celu zamknięcia tego okna dialogowego, następnie **Attach** można uruchomić debugera. Należy pamiętać, że może być konieczne wprowadzenie odpowiednich pauzę lub opóźnienia w aplikacji C++, aby upewnić się, że nie wymaga Python chcesz debugować przed można uruchomić debugera.
->
-> ![Wybór języka Python jako typ debugowania podczas dołączanie debugera](media/mixed-mode-debugging-attach-type.png)
+### <a name="enable-mixed-mode-debugging-in-a-c-project"></a>Włącz debugowanie w trybie mieszanym w projektach C++
+
+Tryb mieszany debugowania zgodnie z opisem w tym artykule jest włączona tylko wtedy, gdy projekt Python załadowanych do programu Visual Studio. Tego projektu określa tryb debugowania programu Visual Studio, czyli, co sprawia, że opcja trybu mieszanego dostępne.
+
+Jeśli jednak masz załadować projekt C++ (jak w przypadku podczas [osadzanie Python w innej aplikacji, zgodnie z opisem na python.org](https://docs.python.org/3/extending/embedding.html), a następnie debuger natywny C++, która nie obsługuje debugowanie w trybie mieszanym korzysta z programu Visual Studio. Jednak można uruchomić debugera oddzielnie:
+
+1. Uruchomienie bez debugowania projektu C++ (**debugowania > Uruchom bez debugowania** lub Ctrl + F5).
+1. Wybierz **Debuguj > dołączyć do procesu...** . W oknie dialogowym, wybierz odpowiedni proces, a następnie użyj **wybierz...**  przycisk, aby otworzyć **wybór typu kodu** okna dialogowego, w którym można wybrać Python:
+
+    ![Wybór języka Python jako typ debugowania podczas dołączanie debugera](media/mixed-mode-debugging-attach-type.png)
+
+1. Wybierz **OK** celu zamknięcia tego okna dialogowego, następnie **Attach** można uruchomić debugera. 
+1. Może być konieczne wprowadzenie odpowiednich pauzę lub opóźnienia w aplikacji C++, aby upewnić się, że nie wymaga kod języka Python, który chcesz debugować przed prawdopodobieństwo można dołączyć debugera.
 
 ## <a name="mixed-mode-specific-features"></a>Funkcje specyficzne dla trybu mieszanego
 
@@ -73,8 +87,7 @@ Stos wywołań okna zawiera zarówno macierzystego i Python ramek stosu przeplat
 
 ![Stos wywołań połączone](media/mixed-mode-debugging-call-stack.png)
 
-> [!Note]
-> Przejścia są wyświetlane jako "[kod zewnętrzny]", bez określania kierunku przejścia, jeśli **Narzędzia > Opcje > debugowanie > Ogólne > Włącz opcję tylko mój kod** opcja jest ustawiona.
+Przejścia są wyświetlane jako "[kod zewnętrzny]", bez określania kierunku przejścia, jeśli **Narzędzia > Opcje > debugowanie > Ogólne > Włącz opcję tylko mój kod** opcja jest ustawiona.
 
 Dwukrotne kliknięcie żadnej ramce wywołanie powoduje active i otwiera kod źródłowy odpowiednie, jeśli to możliwe. Jeśli kod źródłowy jest niedostępny, ramki nadal jest aktywowane i mogą być kontrolowane zmiennych lokalnych.
 
@@ -94,7 +107,7 @@ Aby wyłączyć tę funkcję, kliknij prawym przyciskiem myszy w oknie zmienne l
 
 C typy węzłów tego pokazu "[widok Python]" (jeśli jest włączona):
 
-- `PyObject `
+- `PyObject`
 - `PyVarObject`
 - `PyTypeObject`
 - `PyByteArrayObject`
@@ -109,12 +122,11 @@ C typy węzłów tego pokazu "[widok Python]" (jeśli jest włączona):
 - `PyStringObject`
 - `PyUnicodeObject`
 
-"[Widok Python]" nie jest automatycznie wyświetlane dla typów, które samodzielne utworzenie. Podczas tworzenia rozszerzeń dla języka Python 3.x, braku zazwyczaj nie stanowi to problemu ponieważ dowolnego obiektu ostatecznie ma `ob_base` pole jeden z typów powyżej, co powoduje, że "[Python widoku]". 
+"[Widok Python]" nie jest automatycznie wyświetlane dla typów, które samodzielne utworzenie. Podczas tworzenia rozszerzeń dla języka Python 3.x, braku zazwyczaj nie stanowi to problemu ponieważ dowolnego obiektu ostatecznie ma `ob_base` pole jeden z typów powyżej, co powoduje, że "[Python widoku]".
 
 Dla języka Python 2.x, jednak każdego typu obiektu zwykle deklaruje jej nagłówek jako kolekcja pola śródwierszowe, i istnieje skojarzenie między typami utworzone niestandardowe i `PyObject` na poziomie systemu typu w kodzie C/C++. Aby umożliwić węzłów "[widok Python]" dla takich typów niestandardowych, Edytuj `PythonDkm.natvis` w [katalog instalacji narzędzi Python tools](installation.md#install-locations)i dodać innego elementu w pliku XML dla struktury języka C lub C++ klasy.
 
 Opcja alternatywne (i lepsze) jest wykonanie czynności opisanych [3123 program ten](http://www.python.org/dev/peps/pep-3123/) i Użyj jawnego `PyObject ob_base;` pola zamiast `PyObject_HEAD`, ale które mogą nie być możliwe ze względów zgodności z poprzednimi wersjami.
-
 
 ### <a name="native-values-view-in-python-code"></a>Wyświetl wartości macierzystych w kodzie języka Python
 

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, Properties window
-ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
-caps.latest.revision: "20"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2c11cf4d8fb8d913c1d288b5daeb110b9003f7b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8193fa12967848308c1e992f5d5f5011890042ea
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 W języku specyficznego dla domeny (DSL) można dostosować wygląd i zachowanie okna właściwości w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W definicję DSL można zdefiniować właściwości domeny w każdej klasie domeny. Domyślnie po wybraniu wystąpienia klasy w diagramie lub w Eksploratorze modelu, dla każdej właściwości domeny znajduje się w oknie właściwości. Dzięki temu można wyświetlić i edytować wartości właściwości domeny, nawet jeśli nie ma ich mapowane do pól kształt na diagramie.  

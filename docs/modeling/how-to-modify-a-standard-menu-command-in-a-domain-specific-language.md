@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
-caps.latest.revision: "10"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f79852eae4b7dfae7345dbf6033a0e1cc0444250
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 845c7168aff8232bab8c9320c48b538c114752f1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 Można zmodyfikować zachowanie niektórych standardowych poleceń, które są automatycznie zdefiniowane w Twojej DSL. Na przykład można zmodyfikować **Wytnij** tak, aby nie obejmuje informacji poufnych. Aby to zrobić, można zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs w projekcie DslPackage i pochodne <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -136,7 +134,7 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Pisanie kodu metody  
  Poniższe fragmenty są często przydatne w przypadku tych metod:  
   
--   `this.CurrentSelection`., Kształt, że użytkownik kliknął prawym przyciskiem myszy zawsze znajduje się lista łączników i kształtów. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
+-   `this.CurrentSelection`. Kształt, że użytkownik kliknął prawym przyciskiem myszy zawsze znajduje się lista łączników i kształtów. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
   
 -   `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.  
   

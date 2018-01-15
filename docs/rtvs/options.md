@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Narzędzia języka R w opcjach programu Visual Studio
 
@@ -34,8 +34,8 @@ Opcje i ustawienia właściwe dla języka R są dostępne przy użyciu poniższy
 
 - Opcje formatowania kodu (zobacz [opcji edytora](code-editing.md#editor-options): **Narzędzia > Opcje** menu, następnie wybierz **Edytor tekstu > R > Formatowanie**
 - Opcje linting (zobacz [Linting](code-linting.md)): **Narzędzia > Opcje** menu, następnie wybierz **Edytor tekstu > R > wierszu**
-- Zaawansowane opcje edytora ([opisanych w tym temacie](#text-editor-r-advanced-options)): **Narzędzia > Opcje** menu, następnie wybierz **Edytor tekstu > R > Zaawansowane**
-- Opcje zachowania ([opisanych w tym temacie](#r-tools-advanced-options)): **R Narzędzia > Opcje** menu lub **Narzędzia > Opcje**, następnie przewiń do **narzędzia R**.
+- Zaawansowane opcje edytora ([opisanych w tym temacie](#text-editor-r--advanced-options)): **Narzędzia > Opcje** menu, następnie wybierz **Edytor tekstu > R > Zaawansowane**
+- Opcje zachowania ([opisanych w tym temacie](#r-tools--advanced-options)): **R Narzędzia > Opcje** menu lub **Narzędzia > Opcje**, następnie przewiń do **narzędzia R**.
 
 **Narzędzia R > Ustawienia nauki danych** polecenie dotyczy również wiele różnych ustawień w programie Visual Studio ogólnej. To polecenie jest opisany w następnej sekcji.
 

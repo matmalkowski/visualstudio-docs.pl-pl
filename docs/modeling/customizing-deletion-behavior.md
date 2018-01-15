@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia również. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne zostaną usunięte. To zachowanie jest o nazwie *usunąć propagacji*. Można dostosować propagacji delete, na przykład ułożyć, że dodatkowe powiązane elementy są usuwane. Pisanie kodu programu, możesz wprowadzić propagacji delete są zależne od stanu modelu. Może również spowodować inne zmiany w odpowiedzi do usunięcia.  
@@ -78,7 +76,7 @@ Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia r
 >  Aby dodać kod programu do definicji DSL, Utwórz osobnym pliku kodu w **Dsl** projektu i zapisu częściowe definicje, aby rozszerzyć klasy w folderze wygenerowany kod. Aby uzyskać więcej informacji, zobacz [pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a>Definiowanie zamknięcia Delete  
- Operacja usunięcia używa klasy *YourModel***DeleteClosure** Aby określić, które elementy, aby usunąć, biorąc pod uwagę wartości początkowe. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` , przejście na wykresie relacji. Można zastąpić te metody. ShouldVisitRolePlayer jest dostarczany z tożsamości łącza i elementu w jednej z ról łącza. Powinien on zwrócić jedną z następujących wartości:  
+ Operacja usunięcia używa klasy *YourModel *** DeleteClosure** Aby określić, które elementy, aby usunąć, biorąc pod uwagę wartości początkowe. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` , przejście na wykresie relacji. Można zastąpić te metody. ShouldVisitRolePlayer jest dostarczany z tożsamości łącza i elementu w jednej z ról łącza. Powinien on zwrócić jedną z następujących wartości:  
   
 -   **VisitorFilterResult.Yes**— element powinien zostać usunięty, i walkera powinno być kontynuowane, aby wypróbować inne łącza do elementu.  
   

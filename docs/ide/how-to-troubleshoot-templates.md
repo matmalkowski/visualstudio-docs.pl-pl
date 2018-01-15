@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Porady: Rozwiązywanie problemów z szablonami
 
@@ -47,20 +47,6 @@ Jeśli plik .vstemplate w szablonie nie pasuje do schematu szablonu Visual Studi
 1. Umieść nowy plik zip, w tym samym katalogu co stary plik zip.
 
 1. Usuń pliki szablonów wyodrębnionego i stary plik zip szablonu.
-
-## <a name="monitor-the-event-log"></a>Monitorowanie dziennika zdarzeń
-
-Visual Studio dzienniki błędów napotkanych podczas przetwarzania plików zip szablonu. Jeśli nie ma szablonu **nowy projekt** oczekiwano okno dialogowe jako, można użyć **Podgląd zdarzeń** Aby rozwiązać ten problem.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>Aby znaleźć błędy szablonu w Podglądzie zdarzeń
-
-1. W systemie Windows z **Start** menu, wybierz **narzędzi administracyjnych systemu Windows** > **Podgląd zdarzeń**.
-
-1. W okienku po lewej stronie wybierz **dzienniki systemu Windows** > **aplikacji**.
-
-1. Poszukaj zdarzeń z **źródła** wartość `Visual Studio - VsTemplate`.
-
-1. Aby wyświetlić błąd, kliknij dwukrotnie zdarzenie szablonu.
 
 ## <a name="enable-diagnostic-logging"></a>Włączanie rejestrowania diagnostyki
 

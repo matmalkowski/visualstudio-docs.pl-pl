@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a4794f1cde57f365ec4ec98251763e8d0e839ae0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0be62faf81fc9d7da60a03596c25cc01a9bf0eac
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Porady: udostępnianie kodu z VBA w projektach Visual C#
   Można udostępnianie kodu w projektach Visual C# na język Visual Basic dla kodu aplikacji (VBA), jeśli chcesz, aby dwa typy kodu do oddziaływać na siebie.  
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/10/2018
   
      Aby uzyskać informacje o obiektach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Wyodrębnij interfejs z klasy, która wyświetlasz VBA. W **wyodrębniania interfejsu** oknie dialogowym Wybierz publiczne elementy członkowskie, które chcesz uwzględnić w deklaracji interfejsu. Aby uzyskać więcej informacji, zobacz [wyodrębnić refaktoryzacji interfejsu &#40; K & 35; &#41; ](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  Wyodrębnij interfejs z klasy, która wyświetlasz VBA. W **wyodrębniania interfejsu** oknie dialogowym Wybierz publiczne elementy członkowskie, które chcesz uwzględnić w deklaracji interfejsu. Aby uzyskać więcej informacji, zobacz [wyodrębnić refaktoryzacji interfejsu](../ide/reference/extract-interface-csharp.md).
   
 7.  Dodaj **publicznego** — słowo kluczowe do deklaracji interfejsu.  
   

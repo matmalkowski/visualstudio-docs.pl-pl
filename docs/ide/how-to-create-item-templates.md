@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>Porady: Tworzenie szablonów elementów
 
@@ -62,8 +62,6 @@ Kreator wykona większość zadań, aby utworzyć szablon podstawowy, ale w wiel
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   Do projektów Windows 8.1 C# w pliku .vstemplate, Dodaj następujące XML w otwarcia i zamknięcia `<TemplateData>` tag: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Dla projektów C++ Windows 8.1, należy użyć wartości `WinRT-Native-6.3`. Dla systemu Windows 10 i innych typów projektów, zobacz [TemplateGroupID — element (rozszerzalność)](../extensibility/templategroupid-element-visual-studio-templates.md). Aby .vstemplate pełne informacje, zobacz [odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md).
 
 1. W programie Visual Studio Zapisz plik .vstemplate i zamknij go.
 

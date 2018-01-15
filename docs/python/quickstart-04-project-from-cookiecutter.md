@@ -7,17 +7,19 @@ ms.suite:
 ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: quickstart
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: b45f23a0cb30a97036ab0362b5974c0fc65a8064
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 0a866796ac9a4fb76c9f0ef8370d8c19217b8ee7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki Start: Tworzenie projektu z szablonu Cookiecutter
 
@@ -50,7 +52,7 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przy użyciu rozszerzenia Cookiecutter](cookiecutter.md)
+- [Użycie rozszerzenia Cookiecutter](cookiecutter.md)
 - [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).
 - [Lokalizacje instalacji](installation.md#install-locations).

@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse — Funkcja (JavaScript)
 Konwertuje ciąg JSON na obiekt.  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Upewnij się, że `text` argument był serializowany przez zgodne JSON implementacji takich jak `JSON.stringify`.  
   
--   Uruchom `text` argumentu w moduł weryfikacji JSON, takich jak [JSLint](http://www.jslint.com/) zidentyfikować błędy składniowe.  
+-   Uruchom `text` argumentu w moduł weryfikacji JSON, takich jak [JSLint](http://www.jslint.com/) lub [JSON do pliku CSV](https://json-csv.com) zidentyfikować błędy składniowe.  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie użyto `JSON.parse` do przekonwertowania ciągu JSON do obiektu.  

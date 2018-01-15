@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania z szablonu. Część klucza rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition.dsl. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodanie do tych elementów, można dodać kod program, aby dostosować DSL bardziej szczegółowo.  
@@ -122,7 +120,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 -   Klasy głównym, znajduje się w lewym górnym diagramu DSL definicji w obszarze **klasy i relacje**. Zmień jego nazwę na inny niż DSL. Na przykład DSL, o nazwie **MusicLibrary** może mieć klasy głównym o nazwie **utworów muzycznych**.  
   
--   Diagram klas, znajduje się w prawej dolnej części diagramu DSL definicji w **elementów diagramu** kolumny. Może być konieczne przewiń w prawo, aby go wyświetlić. Zazwyczaj nosi *YourDsl***Diagram**.  
+-   Diagram klas, znajduje się w prawej dolnej części diagramu DSL definicji w **elementów diagramu** kolumny. Może być konieczne przewiń w prawo, aby go wyświetlić. Zazwyczaj nosi * YourDsl ***Diagram**.  
   
 -   Jeśli używasz **przepływ zadań** szablonu i chcesz tworzenie diagramów z ścieżek, przechowywać i Zmień nazwę klasy domeny aktora i ActorSwimlane kształtu.  
   
@@ -223,11 +221,11 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w trybie eksperymentalne. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
   
-3.  **Otwórz Eksploratora.** Na stronie diagramu jest okno Eksploratora język, jest zazwyczaj o nazwie *YourLanguage* Explorer. Jeśli nie ma tego okna, może być na karcie poniżej Eksploratora rozwiązań. Jeśli nie możesz znaleźć, na **widoku** menu wskaż **inne okna**, a następnie kliknij przycisk *YourLanguage***Explorer**.  
+3.  **Otwórz Eksploratora.** Na stronie diagramu jest okno Eksploratora język, jest zazwyczaj o nazwie *YourLanguage* Explorer. Jeśli nie ma tego okna, może być na karcie poniżej Eksploratora rozwiązań. Jeśli nie możesz znaleźć, na **widoku** menu wskaż **inne okna**, a następnie kliknij przycisk * YourLanguage ***Explorer**.  
   
      Twoje explorer przedstawia widok drzewa modelu.  
   
-4.  **Utwórz nowe elementy.** Kliknij prawym przyciskiem myszy węzeł główny na początku, a następnie kliknij przycisk **Dodaj nowy***YourClass*.  
+4.  **Utwórz nowe elementy.** Kliknij prawym przyciskiem myszy węzeł główny na początku, a następnie kliknij przycisk **Dodaj nowy *** YourClass*.  
   
      Nowe wystąpienie klasy zostanie wyświetlona w języku Explorer.  
   
@@ -623,7 +621,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 |W Eksploratorze DSL nie można dodać do kolekcji. Na przykład po I prawym przyciskiem myszy narzędzia nie jest żadne "Dodaj narzędzie" polecenie w menu.<br /><br /> W Eksploratorze dla moich DSL nie można dodać elementu do listy.|Kliknij prawym przyciskiem myszy element powyżej węzła, który próbujesz. Jeśli chcesz dodać do listy polecenia Dodaj jest nie znajduje się w węźle listy, ale w jego właściciela.|  
 |Po utworzeniu klasy domeny, ale nie można utworzyć wystąpienia w Eksploratorze języka.|Każda klasa domeny, z wyjątkiem głównego musi być elementem docelowym relacji osadzania.|  
 |W Eksploratorze dla moich DSL elementy są wyświetlane tylko w przypadku ich nazwy typu.|W definicji DSL, wybierz właściwość domeny klasy i w oknie właściwości ustaw **jest nazwa elementu** na wartość true.|  
-|Moje DSL zawsze zostanie otwarty w edytorze XML.|Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak nawet po rozwiązaniu tego błędu, należy jawnie zresetować można z projektantem DSL w edytorze.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz *YourLanguage***Designer (ustawienie domyślne)**.|  
+|Moje DSL zawsze zostanie otwarty w edytorze XML.|Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak nawet po rozwiązaniu tego błędu, należy jawnie zresetować można z projektantem DSL w edytorze.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz * YourLanguage ***Designer (ustawienie domyślne)**.|  
 |Przybornika Moje DSL nie jest wyświetlany po zmianie nazwy zestawu.|Przejrzyj i zaktualizuj **DslPackage\GeneratedCode\Package.tt** uzyskać więcej informacji, zobacz [porady: zmiana Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |Nie ma przybornika Moje DSL, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawi się komunikat raportowania nie można załadować rozszerzenia.|Zresetuj eksperymentalne wystąpienie i skompiluj ponownie rozwiązanie.<br /><br /> 1.  W oknie menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio eksperymentalne wystąpienie programu**.<br />2.  Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**.|  
   

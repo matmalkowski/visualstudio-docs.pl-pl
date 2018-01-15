@@ -1,7 +1,7 @@
 ---
-title: Python w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Python w programie Visual Studio (z systemem Windows) | Dokumentacja firmy Microsoft
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,27 +12,29 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: bcfe9502cc2d5d83f1b4cac24c71459ca5acb230
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
-# <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
+# <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
 
 Python to niezawodne, elastyczne, łatwe dowiedzieć się, bez używania we wszystkich systemach operacyjnych i obsługiwanych przez społeczność deweloperów silne i wiele bibliotek wolnego popularnych język programowania. Python obsługuje wszystkie środki projektowanie, łącznie z aplikacji sieci web, usług sieci web, aplikacji klasycznych, skrypty i obliczanie naukowe i jest używany przez wiele uczelni, służące zwykłych deweloperzy i deweloperów podobne. Dodatkowe informacje na temat języka na [python.org](https://www.python.org) i [języka Python dla początkujących](https://www.python.org/about/gettingstarted/).
 
-Program Visual Studio w systemie Windows udostępnia [open source](https://github.com/Microsoft/ptvs) obsługę języka Python za pomocą programowania Python i obciążeń nauki danych (Visual Studio 2017 r) i bezpłatne narzędzia Python Tools for Visual Studio rozszerzenia (Visual Studio 2015 i starszych). Python nie jest obecnie obsługiwany w programie Visual Studio dla komputerów Mac, ale jest dostępna w Mac i Linux za pomocą programu Visual Studio Code (zobacz [Q & A poniżej](#questions-and-answers).
+Program Visual Studio w systemie Windows udostępnia [open source](https://github.com/Microsoft/ptvs) obsługę języka Python za pomocą programowania Python i obciążeń nauki danych (Visual Studio 2017 r) i bezpłatne narzędzia Python Tools for Visual Studio rozszerzenia (Visual Studio 2015 i starszych). Python nie jest obecnie obsługiwany w programie Visual Studio dla komputerów Mac, ale jest dostępna w Mac i Linux za pomocą programu Visual Studio Code (zobacz [pytania i odpowiedzi](#questions-and-answers)).
 
 Aby rozpocząć:
 
 - Postępuj zgodnie z [instrukcje dotyczące instalacji](installation.md) do skonfigurowania obciążenia Python
 - Przejdź do co najmniej jednego skróconych podręczników, aby utworzyć projekt. Jeśli masz pewności, Rozpocznij od [utworzyć projekt z szablonu](quickstart-02-project-from-template.md).
 - Postępuj zgodnie z [Praca z języka Python w programie Visual Studio](vs-tutorial-01-01.md) samouczka środowisko pełnej end-to-end.
-- Następnie użyj poniższych łączy, aby poznać funkcje związane z języka Python oraz możliwości programu Visual Studio, sama.
+- Następnie użyć łącza w poniższej tabeli, aby poznać funkcje związane z języka Python oraz możliwości programu Visual Studio, sam.
 
-| Funkcja | Opis | Dokumentacja ogólna Visual Studio | 
+| Funkcja | Opis | Dokumentacja ogólna Visual Studio |
 | --- | --- | --- |
 | [Program Visual Studio system projektu](python-projects.md) | Niejawnie wybiera się strukturę folderów kodu Python, umożliwiając jawne formantu do identyfikacji kodu aplikacji, kodu testowego stron sieci web, JavaScript, tworzenia skryptów, itp. | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Szablony projektu](python-projects.md#project-templates) | Szybko tworzy struktury projektu dla konsoli sieci web, Azure, analizy danych i innych typów projektów | [Szablony programu Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
@@ -49,7 +51,6 @@ Zawiera również obciążenia Python [zestaw Azure SDK for Python](azure-sdk-fo
 Wprowadzenie wideo, zobacz krótkim [narzędzi Python Tools for Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) kursu na Microsoft Virtual Academy (około 22 minut całkowita). 
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
-
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 
@@ -176,25 +177,24 @@ Obsługiwane funkcje w wersji programu Visual Studio i wersji:
 | Debuguj test | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Obsługa Git VS 2012 jest dostępna w Visual Studio Tools for Git rozszerzenia, dostępne w [galerii programu Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. Obsługa Git dla programu Visual Studio 2012 jest dostępna w Visual Studio Tools for Git rozszerzenia, dostępne w [galerii programu Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
 
-2. Wymaga wdrożenia do witryny sieci Web Azure [zestaw Azure SDK for .NET 2.1 - VS 2010 z dodatkiem SP1](http://go.microsoft.com/fwlink/?LinkId=313855).  Nowsze wersje nie obsługują VS 2010.
+1. Wymaga wdrożenia do witryny sieci Web Azure [zestaw Azure SDK for .NET 2.1 — Visual Studio 2010 z dodatkiem SP1](http://go.microsoft.com/fwlink/?LinkId=313855). Nowsze wersje nie obsługują programu Visual Studio 2010.
 
-3. Obsługa roli proces roboczy i rolą sieć Web Azure wymaga [zestaw Azure SDK for .NET 2.3 - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) lub nowszym.
+1. Obsługa roli proces roboczy i rolą sieć Web Azure wymaga [zestaw Azure SDK for .NET 2.3 - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) lub nowszym.
 
-4. Obsługa roli proces roboczy i rolą sieć Web Azure wymaga [zestaw Azure SDK for .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszym.
+1. Obsługa roli proces roboczy i rolą sieć Web Azure wymaga [zestaw Azure SDK for .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszym.
 
-5. Edytor szablonu Django w programie Visual Studio 2013 ma znane problemy, które są rozpoznawane przez zainstalowanie aktualizacji 2.
+1. Edytor szablonu Django w programie Visual Studio 2013 ma znane problemy, które są rozpoznawane przez zainstalowanie aktualizacji 2.
 
-6. Wymaga systemu Windows 8 lub nowszy. Visual Studio Express 2013 for Web nie ma dołączanie do procesu w oknie dialogowym, ale zdalne debugowanie witryny sieci Web Azure jest nadal możliwe, w Eksploratorze serwera za pomocą polecenia dołączanie debugera (Python). Zdalne debugowanie wymaga [zestaw Azure SDK for .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszym.
+1. Wymaga systemu Windows 8 lub nowszy. Visual Studio Express 2013 for Web nie ma dołączanie do procesu w oknie dialogowym, ale zdalne debugowanie witryny sieci Web Azure jest nadal możliwe, w Eksploratorze serwera za pomocą polecenia dołączanie debugera (Python). Zdalne debugowanie wymaga [zestaw Azure SDK for .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszym.
 
-7. Wymaga systemu Windows 8 lub nowszy. Dołączanie debugera (Python) wymaga polecenia w Eksploratorze serwera [zestaw Azure SDK for .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszym.
+1. Wymaga systemu Windows 8 lub nowszy. Dołączanie debugera (Python) wymaga polecenia w Eksploratorze serwera [zestaw Azure SDK for .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszym.
 
-8. Wymaga systemu Windows 8 lub nowszy.
+1. Wymaga systemu Windows 8 lub nowszy.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Zapisywanie Kinect gry języka Python za pomocą PyKinect](https://github.com/Microsoft/PTVS/wiki/PyKinect) (GitHub wiki)
 - [Mostek WFastCGI między usługami IIS a Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
 - [Bezpłatne kursy Python w Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Górny Python pytania wirtualna Akademia firmy Microsoft](https://aka.ms/mva-top-python-questions)

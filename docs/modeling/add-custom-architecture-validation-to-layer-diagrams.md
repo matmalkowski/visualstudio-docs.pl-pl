@@ -13,11 +13,11 @@ author: alexhomer1
 ms.author: ahomer
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.openlocfilehash: b267c0f801ddb4faf7fbca561c893e7296bb0a8e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów zależności
 W programie Visual Studio użytkowników można zweryfikować kodu źródłowego w projekcie modelu warstwy, dzięki czemu można zweryfikować, że kod źródłowy odpowiada zależności na diagramie zależności. Brak algorytmu weryfikacji standardowych, ale można zdefiniować rozszerzeń sprawdzania poprawności.  
@@ -59,7 +59,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
     > [!NOTE]
     >  Stosowana metoda zostanie wywołana tylko w określonych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [Walidacja warstw debugowania](#debugging).  
   
-5.  Aby zainstalować rozszerzenie w głównym wystąpienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin\\\***. Skopiuj go na komputerze, na którym chcesz zainstalować, a następnie kliknij go dwukrotnie. Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
+5.  Aby zainstalować rozszerzenie w głównym wystąpienie programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin\\\***. Skopiuj go na komputerze, na którym chcesz zainstalować, a następnie kliknij go dwukrotnie. Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Dodawanie warstwy moduł weryfikacji do oddzielnego pliku VSIX  
  Jeśli chcesz utworzyć jedną VSIX, które zawiera warstwy modułów sprawdzania poprawności, polecenie i inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania pliku VSIX i oddzielne projektów dla programów obsługi. 
@@ -116,7 +116,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
     > [!NOTE]
     >  Stosowana metoda zostanie wywołana tylko w określonych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [Walidacja warstw debugowania](#debugging).  
   
-8.  Aby zainstalować pliku VSIX w głównym wystąpienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektu VSIX. Skopiuj go na komputerze, na którym chcesz zainstalować pliku VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows. (Eksploratorze plików w systemie Windows 8).  
+8.  Aby zainstalować pliku VSIX w głównym wystąpienie programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektu VSIX. Skopiuj go na komputerze, na którym chcesz zainstalować pliku VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
   
      Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
@@ -150,7 +150,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
  Gdy użytkownik wywołuje **walidację architektury** polecenia menu, system plików wykonywalnych warstwy analizy warstwy i ich artefaktów do utworzenia wykresu. Wykres ma czterech części:  
   
--   Modele warstw z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania, które są reprezentowane jako węzły i łącza na wykresie.  
+-   Modele warstw rozwiązania Visual Studio, które są reprezentowane jako węzły i łącza na wykresie.  
   
 -   Kod, elementy projektu i pozostałych artefaktów, które są zdefiniowane w rozwiązaniu i reprezentowane jako węzły i linki reprezentujące zależności wykryte przez proces analizowania.  
   
@@ -190,7 +190,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
  Łącza od warstwy do elementów w kodzie mają kategorię "Reprezentuje".  
   
 ##  <a name="debugging"></a>Debugowanie sprawdzania poprawności  
- Aby debugować rozszerzenie weryfikacji warstwy, naciśnij klawisze CTRL + F5. Eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otwiera. W tym wystąpieniu otwarcia lub utworzenia modelu warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.  
+ Aby debugować rozszerzenie weryfikacji warstwy, naciśnij klawisze CTRL + F5. Otwiera eksperymentalne wystąpienie programu Visual Studio. W tym wystąpieniu otwarcia lub utworzenia modelu warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test z rozwiązaniem, która zawiera zależności  
  Weryfikacja nie została wykonana, chyba że znajdują się następujące właściwości:  
@@ -199,7 +199,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
 -   Ma warstwy modelu, które są skojarzone z elementy kodu.  
   
- Uruchom eksperymentalne wystąpienie programu po raz pierwszy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Aby przetestować rozszerzenia sprawdzania poprawności, otwarcia lub utworzenia rozwiązania, które ma następujące cechy.  
+ Przy pierwszym uruchomieniu eksperymentalne wystąpienie programu Visual Studio, aby przetestować rozszerzenia sprawdzania poprawności, otwarcia lub utworzenia rozwiązania, które ma następujące cechy.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Architektura sprawdzania poprawności uruchamiania czystego rozwiązanie przed  
  Po zaktualizowaniu kodu sprawdzania poprawności, użyj **czystą rozwiązania** na **kompilacji** menu w rozwiązaniu eksperymentalne, aby przetestować polecenia sprawdzania poprawności. Jest to konieczne, ponieważ są buforowane wyniki weryfikacji. Jeśli nie zaktualizowano diagramu zależności testowego lub jego kod, nie można wykonać metody sprawdzania poprawności.  
@@ -207,9 +207,9 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
 ### <a name="launch-the-debugger-explicitly"></a>Uruchom debuger jawnie  
  Sprawdzanie poprawności jest uruchamiany w oddzielnych procesach. W związku z tym punkty przerwania w metodę sprawdzania poprawności nie zostanie wywołany. Należy dołączyć debuger do procesu jawnie podczas sprawdzania poprawności została uruchomiona.  
   
- Aby dołączyć debuger do procesu sprawdzania poprawności, wstawianie wywołania do `System.Diagnostics.Debugger.Launch()` na początku metodę sprawdzania poprawności. Gdy pojawi się okno dialogowe debugowania, wybierz główny wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Aby dołączyć debuger do procesu sprawdzania poprawności, wstawianie wywołania do `System.Diagnostics.Debugger.Launch()` na początku metodę sprawdzania poprawności. Kiedy wyświetli się okno dialogowe debugowania, wybierz główny wystąpienie programu Visual Studio.  
   
- Alternatywnie można wstawić wywołania `System.Windows.Forms.MessageBox.Show()`. Po wyświetleniu okna komunikatu, przejdź do wystąpienia głównego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i na **debugowania** kliknij menu **dołączyć do procesu**. Wybierz proces o nazwie **Graphcmd.exe**.  
+ Alternatywnie można wstawić wywołania `System.Windows.Forms.MessageBox.Show()`. Po wyświetleniu okna komunikatu, przejdź do głównego wystąpienia programu Visual Studio i na **debugowania** kliknij menu **dołączyć do procesu**. Wybierz proces o nazwie **Graphcmd.exe**.  
   
  Zawsze uruchamiaj eksperymentalne wystąpienie, naciskając klawisze CTRL + F5 (**uruchomić bez debugowania**).  
   

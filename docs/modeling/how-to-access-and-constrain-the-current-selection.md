@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, accessing the current selection
-ms.assetid: 2990981e-dfae-416f-b0d0-7197f1242dfa
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9eaf9d13d6c5bc81153d459dc592b99f9e893733
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
 Podczas obsługi polecenia lub gestu pisania dla danego języka specyficznego dla domeny, należy określić element, jakie użytkownik kliknął prawym przyciskiem myszy. Można również uniemożliwić niektórych kształtów lub pola wybierane. Na przykład można rozmieścić, że gdy użytkownik kliknie ikonę dekoratora, kształtu, który go zawiera zamian zostanie wybrany. Zaznaczenie w ten sposób ograniczający zmniejsza liczbę obsługi, które trzeba zapisać. On również ułatwia dla użytkownika, który można kliknij w dowolnym miejscu w kształcie bez konieczności uniknąć dekorator.  

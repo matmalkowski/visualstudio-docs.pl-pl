@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
-caps.latest.revision: "10"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6bb99e6ef2c4a898285e4d7dae503aec0fc7d955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ade36e1b21323fcb0e4ff55369069033ead63e21
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego T4 zazwyczaj rozpoczyna się od `template` dyrektywy, który określa sposób przetwarzania szablonu. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.  
@@ -60,7 +58,7 @@ debug="true"
 ```  
   
  Prawidłowe wartości:  
- `true, false`., Wartość domyślna to false.  
+ `true, false`. Wartość domyślna to false.  
   
  Jeśli `debug` atrybutu `true`, plik pośredni kod będzie zawierał informacje, które umożliwiają debugera zidentyfikować dokładniej pozycji w szablonie, gdzie przerwania lub wyjątek wystąpił.  
   
@@ -75,7 +73,7 @@ hostspecific="true"
 ```  
   
  Prawidłowe wartości:  
- `true, false, trueFromBase`., Wartość domyślna to false.  
+ `true, false, trueFromBase`. Wartość domyślna to false.  
   
  Jeśli ustawisz wartość tego atrybutu `true`, właściwość o nazwie `Host` jest dodawana do klasy generowane przez szablon tekstu. Właściwość jest odwołanie do hosta przez aparat przekształcania i jest zadeklarowany jako <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.  
   

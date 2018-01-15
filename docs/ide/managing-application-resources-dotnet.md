@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
@@ -48,7 +48,6 @@ Wybierz **zasobów** kartę. Można dodać plik .resx, jeśli projektu nie zawie
 Zasoby są zarządzane w różny sposób w projektach platformy .NET niż w innych typów projektów. Aby uzyskać więcej informacji o zasobach w:
 
 - Uniwersalnych aplikacji platformy systemu Windows (UWP), zobacz [zasobów aplikacji i systemu zarządzania zasobów](/windows/uwp/app-resources/)
-- Zobacz aplikacji Windows 8.x, [Definiowanie zasobów aplikacji (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - Projekty C++, zobacz [Praca z plikami zasobów](/cpp/windows/working-with-resource-files) i [porady: tworzenie zasobu](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Zobacz także

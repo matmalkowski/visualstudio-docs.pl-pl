@@ -13,12 +13,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: a1e5568f30177d3f4664d1cc1ebd7192539b86bf
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: c4c10f6f2bb0624ab72e8eb7f07db38f61bcf1a7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -156,6 +158,9 @@ Aby uzyskać więcej informacji, zobacz [instalowanie obsługę języka Python d
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Konwertowanie projektu C++ do rozszerzenia dla języka Python
 
 Aby C++ DLL do rozszerzenia dla języka Python, najpierw zmodyfikować wyeksportowanych metod wchodzić w interakcje z typów języka Python. Następnie dodaj funkcję, która eksportuje modułu, wraz z definicjami metod modułu. Tło na to, co przedstawiono w tym miejscu, można znaleźć w temacie [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html) i szczególnie [obiektów modułu](https://docs.python.org/3/c-api/module.html) na python.org. (Pamiętaj, aby wybrać wersji języka Python z kontrolka listy rozwijanej w prawym górnym rogu).
+
+> [!Note]
+> Te instrukcje dotyczą Python 3.x. Jeśli pracujesz Python 2.7 odwołują się do [rozszerzanie Python 2.7 z C lub C++](https://docs.python.org/2.7/extending/extending.html) i [eksportowanie rozszerzenia moduły do języka Python 3](https://docs.python.org/2.7/howto/cporting.html) (python.org).
 
 1. W pliku C++ obejmują `Python.h` u góry:
 

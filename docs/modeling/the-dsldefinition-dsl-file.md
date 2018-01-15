@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, definition file
-ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
-caps.latest.revision: "22"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opisano klasy i relacje języka specyficznego dla domeny, wraz z diagramu, kształtów, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka specyficznego dla domeny kod, który definiuje te narzędzia jest generowany zgodnie z informacjami w pliku DslDefinition.dsl.  
@@ -198,7 +196,7 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
   
 -   **IsElementName**. Jeśli ten atrybut ma ustawioną wartość true, jego wartość jest automatycznie ustawiana unikatowe wartości podczas tworzenia wystąpienia klasy nadrzędnej. Ten atrybut można ustawić wartość true dla tylko jednej właściwości każdej klasy, która musi mieć typ ciągu. W przykładzie Diagram składnika `Name` właściwości w `NamedElement` ma `IsElementName` ustawioną na true. Zawsze, gdy użytkownik tworzy `Component` elementu (który dziedziczy z `NamedElement`), jest inicjowana automatycznie podobną "Component6."  
   
--   `DefaultValue`., Jeśli ten atrybut został określony, podanej wartości jest przypisany do tego atrybutu dla nowego wystąpienia tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowe parametry.  
+-   `DefaultValue`. Jeśli ten atrybut został określony, podanej wartości jest przypisany do tego atrybutu dla nowego wystąpienia tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowe parametry.  
   
 -   **Kategoria** jest nagłówka, w którym właściwość będą wyświetlane w **właściwości** okna.  
   

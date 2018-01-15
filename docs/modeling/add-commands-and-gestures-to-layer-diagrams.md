@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na wykresach zależności w Visual Studio. Rozszerzenia te można spakować do programu Visual Studio integracji rozszerzenia (VSIX) dystrybuowanej do innych użytkowników programu Visual Studio.  
@@ -45,7 +43,7 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
 3.  Aby przetestować rozszerzenia, naciśnij klawisz **CTRL + F5** lub **F5**.  
   
-     Eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uruchamia. W tym wystąpieniu Utwórz diagram zależności. Rozszerzenie polecenia lub gestu powinny działać na tym diagramie.  
+     Uruchamia eksperymentalne wystąpienie programu Visual Studio. W tym wystąpieniu Utwórz diagram zależności. Rozszerzenie polecenia lub gestu powinny działać na tym diagramie.  
   
 4.  Zamknij eksperymentalne wystąpienie i zmodyfikować przykładowy kod. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modeli w kodzie programu warstwy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +53,7 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
      [Definiowanie procedury obsługi gestów](#gesture)  
   
-6.  Aby zainstalować rozszerzenie w głównym wystąpienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin\\\***. Skopiuj go na komputerze, na którym chcesz zainstalować, a następnie kliknij go dwukrotnie. Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
+6.  Aby zainstalować rozszerzenie w głównym wystąpienie programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin\\\***. Skopiuj go na komputerze, na którym chcesz zainstalować, a następnie kliknij go dwukrotnie. Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Dodawanie poleceń i gestów do oddzielnego pliku VSIX  
  Jeśli chcesz utworzyć jedną VSIX, które zawiera polecenia, warstwy modułów weryfikacji i inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania pliku VSIX i oddzielne projektów dla programów obsługi.
@@ -104,9 +102,9 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
      Zobacz też [nawigowanie i aktualizowanie modeli w kodzie programu warstwy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Aby przetestować funkcję, naciśnij kombinację klawiszy CTRL + F5 lub F5. Eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otwiera. W tym wystąpieniu Utwórz lub Otwórz diagram zależności.  
+2.  Aby przetestować funkcję, naciśnij kombinację klawiszy CTRL + F5 lub F5. Otwiera eksperymentalne wystąpienie programu Visual Studio. W tym wystąpieniu Utwórz lub Otwórz diagram zależności.  
   
-3.  Aby zainstalować pliku VSIX w głównym wystąpienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektu VSIX. Skopiuj go na komputerze, na którym chcesz zainstalować pliku VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows (Eksploratora plików w systemie Windows 8).  
+3.  Aby zainstalować pliku VSIX w głównym wystąpienie programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektu VSIX. Skopiuj go na komputerze, na którym chcesz zainstalować pliku VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.  
   
      Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   

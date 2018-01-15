@@ -11,17 +11,15 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
-caps.latest.revision: "22"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2bbc9fb84ae2487d3c90efcecf9d48c43c28df32
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 Możesz wygenerować ciągów tekstowych w aplikacji w czasie wykonywania za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonów tekstowych środowiska wykonawczego. Komputer, którym wykonuje aplikacji muszą mieć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Środowisko uruchomieniowe szablony czasami są nazywane "wstępnie przetworzony szablonów tekstowych", ponieważ w czasie kompilacji szablon generuje kod, który jest wykonywany w czasie wykonywania.  

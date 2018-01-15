@@ -1,7 +1,7 @@
 ---
 title: "Środowiska Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 07/25/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,43 +12,47 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 54c25180e0133ec407099cf4bb0f58f2279279d4
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-environments"></a>Środowiska Python
 
-Python w programie Visual Studio można łatwo zarządzać wieloma środowiska Python i łatwo przełączać je do różnych projektów.
+Python *środowiska* kontekst, w którym można uruchomić kod języka Python. Środowisko składa się z tłumacza, biblioteki (zazwyczaj Python standardowa biblioteka) i zestaw zainstalowanych pakietów. Te składniki wspólnie określają, które konstrukcji języka i składni są prawidłowe, jakiego systemu operacyjnego funkcje są dostępne, a które pakietów, należy użyć.
 
-**Uwaga**: Jeśli jesteś nowym użytkownikiem Python w programie Visual Studio, zobacz następujące tematy najpierw jak to przedstawia dyskusji opiera się na nich:
+W programie Visual Studio, zarządzanie wszystkimi środowisk przy użyciu [okno środowiska Python](#managing-python-environments-in-visual-studio) zgodnie z opisem w tym artykule. Danego projektu, wybrano środowisko do użycia na potrzeby uruchamiania kodu, debugowanie, sprawdzanie składni, wyświetlanie zakończeń import i element członkowski, a wszelkie inne zadania, które są specyficzne dla interpretera i zainstalowane biblioteki. Visual Studio zachowuje również bazy danych dla poszczególnych środowisk udostępniający automatycznego uzupełniania po wprowadzeniu kodu IntelliSense.
+
+Środowiska wirtualne programu Visual Studio również zapewnia obsługę `requirements.txt` plików i ścieżek wyszukiwania.
+
+**Uwaga**: Jeśli jesteś nowym użytkownikiem Python w programie Visual Studio, zobacz następujące artykuły w tle konieczne:
 
 - [Praca z języka Python w programie Visual Studio](python-in-visual-studio.md)
 - [Instalowanie obsługi języka Python w programie Visual Studio](installation.md)
 
-Python *środowiska*, w którym będzie zawsze uruchomić kod języka Python, składa się z interpreter biblioteki (zazwyczaj Python standardowej biblioteki), i zestaw zainstalowanych pakietów. Razem te składniki ustalić, które konstrukcji języka i składni są prawidłowe, jakiego systemu operacyjnego funkcje są dostępne, a które pakietów, należy użyć.
+## <a name="global-and-virtual-environments"></a>Globalne i wirtualnych środowisk
 
-W programie Visual Studio, środowisko również baza IntelliSense dla bibliotek środowiska tak, aby wpisać instrukcję, takich jak `import` w programie Visual Studio Edytor automatycznie wyświetlana lista dostępnych bibliotek, a także modułów w te biblioteki.
+Istnieją dwa typy środowiska Python: globalna i wirtualnych.
 
-Często deweloperzy używać tylko jednej, globalnej środowiska Python. Inni deweloperzy, jednak należy zarządzać wieloma globalne środowisk, środowisk specyficznego dla projektu i środowiska wirtualne zgodnie z objaśnieniem w tym temacie:
+**Globalne środowisk**: instalacji każdego języka Python (na przykład, Python 2.7, 3,6 Python i Anaconda 4.4.0, zobacz [zaznaczenie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) przechowuje własnego środowiska. Każde środowisko składa się z określonym interpreter języka Python, jego biblioteki standardowej i zestaw wstępnie zainstalowane pakiety. Instalowanie pakietu do globalnego środowiska udostępnia je do wszystkich projektów przy użyciu tego środowiska. Jeśli środowisko znajduje się w obszarze ochrona systemu plików (w ramach `c:\program files`, na przykład), a następnie instalowanie pakietów wymaga uprawnień administratora.
 
-- [Wybieranie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters)
-- [Zarządzanie środowiska Python w programie Visual Studio](#managing-python-environments-in-visual-studio)
-- [Globalne środowisk](#global-environments)
-- [Środowisk specyficznego dla projektu](#project-specific-environments)
-- [Środowiska wirtualne](#virtual-environments)
-- [Zarządzanie wymaganych pakietów](#managing-required-packages)
-- [Ścieżki wyszukiwania](#search-paths)
+Globalne środowiska są dostępne dla wszystkich projektów na komputerze. W programie Visual Studio wybierz opcję jedną globalnego środowiska jako domyślny, który jest używany we wszystkich projektach, jeśli nie możesz wybrać inną nazwę dla projektu. Aby uzyskać więcej informacji, zobacz [wybierając środowisko dla projektu](#selecting-an-environment-for-a-project).
 
-Wprowadzenie wideo, zobacz [Zarządzanie środowiska Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2m35s).
+**Środowiska wirtualne**: ponieważ pakiety zainstalowane w środowisku globalne nie są dostępne dla wszystkich projektów, które używają tego środowiska, mogą wystąpić konflikty, gdy dwa projekty wymagają niezgodnych pakietów lub różne wersje tego samego pakietu. Środowiska wirtualne uniknąć takie konflikty przy użyciu interpreter i standardowej biblioteki z globalnego środowiska, ale obsługa własnych magazynów pakietu w folderach izolowanego.
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+W programie Visual Studio, można utworzyć środowisko wirtualne dla konkretnego projektu, który jest przechowywany w podfolderze w projekcie (zobacz [tworzenia środowisk wirtualnych](#creating-virtual-environments). Plik projektu identyfikuje również środowiska wirtualnego. Visual Studio rejestruje także wszelkie pakiety, które zainstalować do tego środowiska wirtualnego w projekcie `requirements.txt` pliku. Jeśli następnie udostępnić projektu i innymi deweloperami otwórz go na komputerach, program Visual Studio udostępnia opcję, aby ponownie utworzyć środowisko wirtualne.
 
-## <a name="selecting-and-installing-python-interpreters"></a>Wybieranie i instalowanie tłumaczy Python
+### <a name="selecting-and-installing-python-interpreters"></a>Wybieranie i instalowanie tłumaczy Python
 
-Z wyjątkiem z programu Visual Studio 2017 r, Python obsługi nie jest dostarczany z interpreter języka Python, należy zainstalować jedną z następujących czynności, aby uruchomić kod. Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa nowo zainstalowany tłumaczy i konfiguruje środowisko dla każdego. Jeśli nie wykrywa zainstalowane środowisko, zobacz [tworzenia środowiska dla istniejących interpreter](#creating-an-environment-for-an-existing-interpreter).
+Domyślnie instalowanie Python obciążenia Programowanie w Visual Studio 2017 instaluje Python 3 (64-bitowe). Opcjonalnie można zainstalować 32-bitowe i 64-bitowe wersje Python 2, Python 3, Anaconda 2 i Anaconda 3, zgodnie z opisem w [instalacji](installation.md). Można też ręcznie zainstalują dowolną z tłumaczy wymienione w poniższej tabeli.
+
+Dla programu Visual Studio 2015 i starszych należy ręcznie zainstalować jedną tłumaczy.
+
+Visual Studio (wszystkie wersje) automatycznie tworzy środowisko dla każdego zainstalowana interpreter języka Python, sprawdzając rejestru (następujące [514 program ten - Python rejestracji w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/)). Jeśli program Visual Studio nie wykrywa zainstalowane środowisko, zobacz [tworzenia środowiska dla istniejących interpreter](#creating-an-environment-for-an-existing-interpreter).
 
 | Interpreter | Opis |
 | --- | --- |
@@ -62,30 +66,32 @@ Deweloperzy, które chcą udostępniać nowych metod wykrywania dla środowiska 
 
 ## <a name="managing-python-environments-in-visual-studio"></a>Zarządzanie środowiska Python w programie Visual Studio
 
-Aby otworzyć okno środowiska Python, wykonaj jedną z następujących czynności:
+Aby otworzyć okno środowiska Python, wybierz **Widok > inne okna > środowiska Python** polecenie menu, kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu w Eksploratorze rozwiązań i Wybierz **widok wszystkich środowisk języka Python**:
 
-1. Wybierz **Widok > inne okna > środowiska Python** polecenia menu.
-1. Kliknij prawym przyciskiem myszy **środowiska Python** projektu w Eksploratorze rozwiązań i wybierz **widok wszystkich środowisk języka Python**:
-
-    ![Widok wszystkich środowisk polecenia w Eksploratorze rozwiązań](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
 
 W obu przypadkach jako element równorzędny karty do Eksploratora rozwiązań zostanie wyświetlone okno środowiska Python.
 
 ![Okno środowiska Python](media/environments-default-view.png)
 
-W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka CPython) wraz z 32-bitowe i 64-bitowych wersji IronPython 2.7. W takim przypadku domyślnego środowiska pogrubioną czcionką jest języka Python 3.4, który jest używany dla wszystkich nowych projektów. Jeśli nie widać żadnych środowisk na liście, oznacza to, zostały zainstalowane narzędzia Python Tools for Visual Studio w programie Visual Studio 2015 lub starszym, ale nie zostały zainstalowane interpreter języka Python (zobacz [Zaznaczanie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) powyżej).
+W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka CPython) wraz z 32-bitowe i 64-bitowych wersji IronPython 2.7. Domyślne środowisko pogrubioną czcionką jest języka Python 3.4, który jest używany dla wszystkich nowych projektów. Jeśli nie widać żadnych środowisk na liście, oznacza to, zostały zainstalowane narzędzia Python Tools for Visual Studio w programie Visual Studio 2015 lub starszym, ale nie zostały zainstalowane interpreter języka Python (zobacz [Zaznaczanie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) powyżej). **+ Niestandardowy...**  polecenie pozwala [utworzyć środowisko dla istniejących interpreter](#create-an-environment-for-an-existing-interpreter).
 
-> [!Tip]
-> Gdy **środowiska Python** okno jest ograniczone, jak pokazano powyżej, środowiska są wymienione na początku i różnych kart na dole. Jednak Rozszerzanie okna wystarczająco, zmienia się na szeroki widok, w którym może się okazać bardziej wygodne do pracy z.
->
-> ![Widok rozszerzony okno środowiska Python](media/environments-expanded-view.png)
+Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. Inny formant może pojawić się odświeża IntelliSense bazy danych dla tego środowiska.
+
+Poniżej listy środowisk jest selektora listy rozwijanej dla **omówienie**, **pakiety**, i **IntelliSense** opcje w dalszej części tej sekcji. Po rozwinięciu **środowiska Python** okna dostatecznie szerokie, te opcje są wyświetlane jako kart, które może się okazać bardziej wygodne do pracy z:
+
+![Widok rozszerzony okno środowiska Python](media/environments-expanded-view.png)
 
 > [!Note]
 > Mimo że program Visual Studio szanuje opcję pakiety w przypadku lokacji systemu, nie udostępnia sposób, aby zmienić go z poziomu programu Visual Studio.
 
+Wprowadzenie wideo do zarządzania środowiska w programie Visual Studio, zobacz [Zarządzanie środowiska Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2m35s).
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Tworzenie środowiska dla istniejących interpretera
 
-Visual Studio zwykle lokalizuje zainstalowanych interpreter języka Python sprawdzając rejestru (następujące [514 program ten - Python rejestracji w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/)). Jednak program Visual Studio może nie być po zainstalowaniu interpretera w niestandardowy sposób. W takich przypadkach możesz wskazać Visual Studio bezpośrednio do interpretera w następujący sposób:
+Jeśli program Visual Studio nie zlokalizować interpreter (na przykład jeśli jest zainstalowana w lokalizacji niestandardowej), można utworzyć i środowisku co następuje:
 
 1. Wybierz **+ niestandardowy...**  w [okno środowiska Python](#managing-python-environments-in-visual-studio), co powoduje utworzenie nowego środowiska i otwiera [ **Konfiguruj** kartę](#configure-tab) opisane poniżej.)
 
@@ -99,7 +105,7 @@ Visual Studio zwykle lokalizuje zainstalowanych interpreter języka Python spraw
 
 ### <a name="moving-an-existing-interpreter"></a>Przenoszenie istniejących interpretera
 
-Jeśli przenosisz tłumacza istniejącej do nowej lokalizacji w systemie plików, Visual Studio automatycznie nie wykrywa zmiany. Ręczne kroki są niezbędne do aktualizacji na liście w oknie środowiska:
+Jeśli przenosisz tłumacza istniejącej do nowej lokalizacji w systemie plików, Visual Studio nie automatycznie wykrywa zmiany i należy ręcznie zaktualizować jego środowiska:
 
 - Jeśli pierwotnie utworzono środowisko dla tego interpreter, należy edytować tego środowiska, aby wskazywał nową lokalizację.
 
@@ -116,6 +122,7 @@ Zawiera podstawowe informacje i poleceń środowiska:
 | Ustaw jako domyślny dla nowych projektów tego środowiska | Ustawia środowisko active, co może spowodować Visual Studio może chwilę nie odpowiadać podczas ładuje IntelliSense bazy danych. Środowiska z wiele pakietów mogą być nieodpowiadająca przez dłuższy czas. |
 | Odwiedź witrynę sieci Web dystrybutora | Otwiera w przeglądarce adres URL udostępniony przez dystrybucję oprogramowania Python. Python 3.x, na przykład przechodzi do python.org. |
 | Otwórz okno interaktywne | Otwiera [okna interaktywnego (REPL)](interactive-repl.md) dla tego środowiska w programie Visual Studio stosowania [skrypty uruchamiania (patrz poniżej)](#startup-scripts). |
+| Eksploruj interaktywne skryptów | Zobacz [skrypty uruchamiania](#startup-scripts). |
 | Tryb interaktywny IPython | Jeśli wartość zostanie otwarte okno interaktywne z IPython domyślnie. Ten wbudowany włączone geograficzne oraz rozszerzona składnia IPython takich jak `name?` Aby wyświetlić Pomoc i `!command` powłoki poleceń. Ta opcja jest zalecana, gdy przy użyciu rozkładu Anaconda, ponieważ wymaga dodatkowych pakietów. Aby uzyskać więcej informacji, zobacz [przy użyciu IPython w oknie interaktywnym](interactive-repl-ipython.md). |
 | Otwórz w programie PowerShell | Uruchamia interpretera w oknie poleceń programu PowerShell. |
 | (Łącza folder) | Zapewniają szybki dostęp do folderu instalacji w środowisku, python.exe interpreter i pythonw.exe interpreter. Pierwszy otwiera w Eksploratorze Windows, tych dwóch Otwórz okno konsoli. |
@@ -149,7 +156,7 @@ Jeśli wyświetlane, zawiera szczegółowe informacje, zgodnie z opisem w poniż
 
 ### <a name="pip-tab"></a>Karta PIP
 
-Zarządza pakiety zainstalowane w środowisku, co umożliwia również i wyszukiwanie i instalowanie nowych (w tym wszelkie zależności). Wyszukiwanie filtry obecnie zainstalowanych pakietów i [PyPI](https://pypi.python.org). Można również bezpośrednio wprowadzić dowolne `pip install` polecenie w polu wyszukiwania, takie jak tym flagi `--user` lub `--no-deps`.
+Zarządza pakiety zainstalowane w środowisku, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności). Wyszukiwanie filtry obecnie zainstalowanych pakietów i [PyPI](https://pypi.python.org). Można również bezpośrednio wprowadzić dowolne `pip install` polecenie w polu wyszukiwania, takie jak tym flagi `--user` lub `--no-deps`.
 
 ![Karta pip środowiska Python](media/environments-pip-tab.png)
 
@@ -175,13 +182,7 @@ Baza danych zawiera metadanych dla biblioteki wszystkie środowiska i przyspiesz
 
 Biblioteki, dla których nie zostały skompilowane danych są oznaczone ikoną z **!**; Jeśli środowisko bazy danych nie jest zakończone, **!** jest także wyświetlany obok niej na liście głównego środowiska.
 
-## <a name="global-environments"></a>Globalne środowisk
-
-Globalne (lub systemowe) środowiska są dostępne do wszystkich projektów na maszynie. Visual Studio automatycznie zazwyczaj wykrywa środowisk globalne i mogą być wyświetlane w [okno środowiska Python](#managing-python-environments-in-visual-studio). Jeśli nie możesz dodać środowisku ręcznie za pomocą tego samego okna.
-
-Visual Studio korzysta z domyślnego środowiska dla wszystkich nowych projektów wykonywania, debugowanie, sprawdzanie składni, wyświetlania, importowania i zakończeń elementu członkowskiego i innych zadań, które wymagają środowiska. Zmiana domyślnego środowiska ma wpływ na wszystkie projekty, które nie były [specyficznego dla projektu środowiska](#project-specific-environments) dodany, zgodnie z opisem.
-
-## <a name="project-specific-environments"></a>Środowisk specyficznego dla projektu
+## <a name="selecting-an-environment-for-a-project"></a>Wybierając środowisko dla projektu
 
 Środowisk specyficznego dla projektu upewnij się, czy projekt jest zawsze uruchamiany w środowisku ignorowanie domyślnego środowiska globalnego. Na przykład jeśli globalne domyślnego środowiska jest języka CPython, ale projekt wymaga IronPython i niektórych bibliotek, które nie są zainstalowane w globalnej środowiska, następnie środowisku specyficznego dla projektu jest konieczne.
 
@@ -207,13 +208,7 @@ Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowisko, wy
 > [!Tip]
 > Typowe sytuacji, gdy pip nie można zainstalować pakietu to pakietu zawierającego kod źródłowy dla natywnych składników w `*.pyd` plików. Bez wymagana wersja programu Visual Studio pip nie można skompilować tych składników. Komunikat o błędzie wyświetlany w tej sytuacji `error: Unable to find vcvarsall.bat`. `easy_install`często jest w stanie pobrać wstępnie skompilowanych plików binarnych, możesz również pobrać odpowiedni kompilatora dla starszych wersji języka Python z [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Aby uzyskać więcej informacji, zobacz [jak rozwiązać problemy z "nie można odnaleźć vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) na Python tools blogu zespołu.
 
-## <a name="virtual-environments"></a>Środowiska wirtualne
-
-Pakiety zainstalowane w środowisku globalne nie są dostępne dla wszystkich projektów, które go używają, konflikty może wystąpić, gdy dwa projekty wymagają niezgodnych pakietów lub różne wersje tego samego pakietu. Aby uniknąć tych konfliktów, program Visual Studio oferuje możliwość tworzenia *środowisk wirtualnych*, które są zazwyczaj specyficzne dla projektu.
-
-Podobnie jak inne środowiska Python środowisko wirtualne składa się z interpreter języka Python, biblioteki i zestaw pakietów. W takim przypadku jednak środowiska wirtualnego używa interpreter i biblioteki z jedną globalnego środowisk (zakładając, że obsługuje środowisk wirtualnych), ale jego pakiety są oddzielne i izolowane z globalnej i innych środowisk wirtualnych. Izolacja ponownie pozwala uniknąć konfliktów i minimalizuje wpływ środowiska wirtualnego do przybliżone jego pakietów. 
-
-Aby utworzyć środowisko wirtualne:
+## <a name="creating-virtual-environments"></a>Tworzenie środowisk wirtualnych
 
 1. Kliknij prawym przyciskiem myszy **środowiska Python** w Eksploratorze rozwiązań i wybierz **Dodawanie środowiska wirtualnego...** , co spowoduje uruchomienie następujących czynności:
 
@@ -231,11 +226,11 @@ Istniejącego środowiska wirtualnego można również dodać, klikając prawym 
 
 Gdy środowisko wirtualne zostanie dodany do projektu, zostanie wyświetlony w **środowiska Python** okna, możesz to zrobić podobnie jak inne środowiska i można zarządzać jej pakietów. Prawym przyciskiem myszy i wybierając **Usuń** Usuwa odwołanie do środowiska albo usuwa środowiska i wszystkie jego pliki na dysku (ale nie interpreter podstawowy).
 
-Należy pamiętać, że wadą do środowisk wirtualnych jest że ustalony plikowym i w związku z tym nie można łatwo można udostępnione lub do innych komputerów programowanie. Na szczęście, można użyć `requirements.txt` plików zgodnie z opisem w następnej sekcji.
+Należy pamiętać, że wadą do środowisk wirtualnych jest że ustalony plikowym i w związku z tym nie można łatwo można udostępnione lub do innych komputerów programowanie. Na szczęście, można użyć `requirements.txt` plików zgodnie z opisem w następnej sekcji, aby umożliwić adresatów projektu, aby łatwo przywrócić środowiska.
 
-## <a name="managing-required-packages"></a>Zarządzanie wymaganych pakietów
+## <a name="managing-required-packages-requirementstxt"></a>Zarządzanie wymaganych pakietów (requirements.txt)
 
-Współużytkuje projektem, przy użyciu systemu kompilacji, czy jest planowane [opublikowania go w usłudze Microsoft Azure](template-azure-cloud-service.md), należy określić pakiety zewnętrzne wymagane. Zalecanym rozwiązaniem jest użycie [pliku requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych.
+Współużytkuje projektem, przy użyciu systemu kompilacji, czy jest planowane [opublikowania go w usłudze Microsoft Azure](template-azure-cloud-service.md), należy określić pakiety zewnętrzne, które wymaga projektu. Zalecanym rozwiązaniem jest użycie [pliku requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych.
 
 Z technicznego punktu widzenia nazwy pliku może służyć do śledzenia wymagania (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale Visual Studio zapewnia obsługę określonych `requirements.txt`:
 
@@ -286,17 +281,18 @@ Cleaning up...
 
 ## <a name="search-paths"></a>Ścieżki wyszukiwania
 
-Typowy Usage Python `PYTHONPATH` zmiennej środowiskowej (lub `IRONPYTHONPATH`, itd.) zapewnia domyślnej ścieżki wyszukiwania plików modułu. Oznacza to, że jeśli używasz `import <name>` instrukcji, Python, najpierw przeszukuje jego wbudowanych modułów pasującej nazwie, a następnie folder wyszukiwania zawierający Python kod jest uruchomiona, wyszukuje "moduł ścieżki wyszukiwania" zgodnie z definicją w odpowiednich środowiska Zmienna. (Zobacz [ścieżki wyszukiwania modułu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) i [zmiennych środowiskowych](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) w podstawowej dokumentacji języka Python.)
+Typowy Usage Python `PYTHONPATH` zmiennej środowiskowej (lub `IRONPYTHONPATH`, itd.) zapewnia domyślnej ścieżki wyszukiwania plików modułu. Oznacza to, że jeśli używasz `from <name> import...` lub `import <name>` instrukcji, Python wyszukuje następujące lokalizacje w kolejności zgodnej nazwie:
 
-Zmiennej środowiskowej ścieżki wyszukiwania, jednak jest ignorowana przez program Visual Studio, nawet wtedy, gdy jest on ustawiony dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* ustawiono dla całego systemu i w związku z tym zgłasza niektóre kwestie, które nie mogą być odbierane automatycznie: moduły do którego istnieje odwołanie, przeznaczone dla języka Python 2.7 lub Python 3.3? Są one będą zastąpienie modułów standardowa biblioteka? Zna dewelopera tego zachowania, czy jest próba złośliwego przejęcie kontroli?
+1. Wbudowane moduły języka Python.
+1. Folder zawierający kod języka Python, który jest uruchomiony.
+1. "Moduł ścieżki wyszukiwania" jako zdefiniowanej przez zmienną środowiskową zastosowania. (Zobacz [ścieżki wyszukiwania modułu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) i [zmiennych środowiskowych](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) w podstawowej dokumentacji języka Python.)
 
-Obsługa języka Python w programie Visual Studio umożliwia w związku z tym Określ ścieżki wyszukiwania bezpośrednio w środowiskach i projektów. Ścieżki wyszukiwania są przekazywane jako wartość `PYTHONPATH` (lub równoważnego) podczas debugowania lub wykonania skryptu w programie Visual Studio. Dodając ścieżki wyszukiwania, Visual Studio przeprowadzający bibliotek w tych lokalizacjach i kompilacje baz danych IntelliSense dla nich (utworzenie bazy danych może zająć trochę czasu w zależności od liczby bibliotek).
+Visual Studio ignoruje zmiennej środowiskowej ścieżki wyszukiwania, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* ustawiono dla całego systemu i w związku z tym zgłasza niektóre kwestie, które nie mogą być odbierane automatycznie: moduły do którego istnieje odwołanie, przeznaczone dla języka Python 2.7 lub Python 3.3? Są one będą zastąpienie modułów standardowa biblioteka? Zna dewelopera tego zachowania, czy jest próba złośliwego przejęcie kontroli?
 
-Aby dodać ścieżkę wyszukiwania, kliknij prawym przyciskiem myszy **ścieżki wyszukiwania** elementu w Eksploratorze rozwiązań wybierz **Dodaj Folder do ścieżki wyszukiwania...** i wybierz folder do dołączenia. Ta ścieżka jest używana w każdym środowisku skojarzony z projektem.
+Program Visual Studio udostępnia w związku z tym określenie ścieżki wyszukiwania bezpośrednio w środowiskach i projektów. Kod, który uruchamiania lub debugowania w programie Visual Studio odbiera ścieżki wyszukiwania w wartości `PYTHONPATH` (i inne zmienne równoważne). Dodając ścieżki wyszukiwania, Visual Studio przeprowadzający bibliotek w tych lokalizacjach i kompilacje baz danych IntelliSense dla nich (utworzenie bazy danych może zająć trochę czasu w zależności od liczby bibliotek).
+
+Aby dodać ścieżkę wyszukiwania, kliknij prawym przyciskiem myszy **ścieżki wyszukiwania** elementu w Eksploratorze rozwiązań wybierz **Dodaj Folder do ścieżki wyszukiwania...** i wybierz folder do dołączenia. Ta ścieżka jest używana w każdym środowisku skojarzony z projektem. (Mogą zostać wyświetlone błędy Jeśli środowisko jest oparta na Python 3 i użytkownik podejmie próbę dodania ścieżki wyszukiwania w modułach Python 2.7.)
 
 Pliki z `.zip` lub `.egg` rozszerzenia również mogą być dodawane jako ścieżki wyszukiwania, wybierając **dodać archiwum Zip do ścieżki wyszukiwania...** . Podobnie jak w przypadku folderów, zawartość te pliki są skanowane i udostępnione IntelliSense.
 
-> [!Note]
-> Użytkownik może dodać ścieżki wyszukiwania w modułach Python 2.7, gdy używasz Python 3.3 i mogą zostać wyświetlone błędy w związku z tym.
-
-Jeśli zawartość nie należy zmieniać często są regularnie przy użyciu tej samej ścieżki wyszukiwania, może być bardziej wydajne, aby zainstalować go do folderu pakietów lokacji. Go następnie są analizowane i przechowywane w bazie danych IntelliSense, jest zawsze być skojarzony z danego środowiska i nie wymaga ścieżkę wyszukiwania do dodania dla każdego projektu.
+Jeśli zawartość nie należy zmieniać często są regularnie przy użyciu tej samej ścieżki wyszukiwania, może być bardziej wydajne, aby zainstalować go do folderu pakietów lokacji. Ścieżki wyszukiwania następnie są analizowane i przechowywane w bazie danych IntelliSense, jest zawsze być skojarzony z danego środowiska i nie wymaga ścieżkę wyszukiwania do dodania do każdego projektu.

@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eed8f03eefb15b982f297b78f7503c947df8d712
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 12065875980d114d6ea8b9912009701afb5cf9a0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 Istnieje tylko jeden element PictureBox w formularzu. Podczas dodawania go IDE automatycznie o nazwie go **pictureBox1**. Istnieje tylko jedno pole wyboru, o nazwie **pole wyboru 1**. Najszybciej jak napisać kod i ten kod będzie odnosić się do pola wyboru i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza to, gdy zostanie wyświetlony **pictureBox1** lub **pole wyboru 1** w kodzie.  
@@ -74,7 +74,7 @@ Karta pliku Form1.CS z kodu Visual C#
   
      Po dodaniu obsługi zdarzeń dla formantu, można uzyskać do niego w dowolnym momencie Projektant formularzy systemu Windows przez dwukrotne kliknięcie formantu lub z menu, wybierając **widoku**, **kod**.  
   
-     Nazwy są ważne podczas tworzenia programów i metody (w tym obsługi zdarzeń) może mieć dowolną nazwę, która ma. Po dodaniu obsługi zdarzeń z IDE tworzy nazwę, na podstawie nazwy formantu i zdarzenia są obsługiwane. Na przykład zdarzenie kliknięcia przycisku o nazwie **Pokaż przycisk** jest nazywany `showButton_Click()` metoda obsługi zdarzeń. Ponadto otwierające i zamykające nawiasy () są zwykle dodawane po nazwę metody, aby wskazać opisano metody. Jeśli zdecydujesz, aby zmienić nazwę zmiennej kodu, kliknij prawym przyciskiem myszy zmienną w kodzie, a następnie wybierz pozycję **Refaktoryzuj**, **zmienić**. Wszystkie wystąpienia tej zmiennej w kodzie zostały zmienione. Zobacz [zmienić Refaktoryzacja (C#)](../csharp-ide/refactoring/rename.md) lub [zmienić refaktoryzacji (Visual Basic)](../vb-ide/refactoring/rename.md) Aby uzyskać więcej informacji.
+     Nazwy są ważne podczas tworzenia programów i metody (w tym obsługi zdarzeń) może mieć dowolną nazwę, która ma. Po dodaniu obsługi zdarzeń z IDE tworzy nazwę, na podstawie nazwy formantu i zdarzenia są obsługiwane. Na przykład zdarzenie kliknięcia przycisku o nazwie **Pokaż przycisk** jest nazywany `showButton_Click()` metoda obsługi zdarzeń. Ponadto otwierające i zamykające nawiasy () są zwykle dodawane po nazwę metody, aby wskazać opisano metody. Jeśli zdecydujesz, aby zmienić nazwę zmiennej kodu, kliknij prawym przyciskiem myszy zmienną w kodzie, a następnie wybierz pozycję **Refaktoryzuj**, **zmienić**. Wszystkie wystąpienia tej zmiennej w kodzie zostały zmienione. Zobacz [zmienić Refaktoryzacja (C#)](../ide/reference/rename-csharp.md) lub [zmienić refaktoryzacji (Visual Basic)](../ide/reference/rename-vb.md) Aby uzyskać więcej informacji.
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   

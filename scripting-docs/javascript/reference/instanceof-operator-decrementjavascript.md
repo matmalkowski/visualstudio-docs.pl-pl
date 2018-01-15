@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof — Operator (JavaScript)
 Zwraca wartość logiczną, wskazującą, czy obiekt jest wystąpienie danej klasy.  
@@ -46,7 +46,7 @@ result = object instanceof class
  Wymagany. Występuje, określony klasy obiektów.  
   
 ## <a name="remarks"></a>Uwagi  
- `instanceof` Operator zwraca `true` Jeśli `object` jest wystąpieniem `class`. Zwraca `true` Jeśli `true` Jeśli `class` znajduje się w łańcuchu prototypu obiektu. Zwraca `false` Jeśli `object` nie jest wystąpieniem `class`, lub jeśli `object` jest `null`.  
+ `instanceof` Operator zwraca `true` Jeśli `object` jest wystąpieniem `class`. Zwraca `true` Jeśli `class` znajduje się w łańcuchu prototypu obiektu. Zwraca `false` Jeśli `object` nie jest wystąpieniem `class`, lub jeśli `object` jest `null`.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład przedstawia użycie `instanceof` operatora.  

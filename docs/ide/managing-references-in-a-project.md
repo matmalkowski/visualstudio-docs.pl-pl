@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -61,13 +61,13 @@ Jeśli wybierzesz przekierować projekty Windows 8.1 do systemu Windows 10, zoba
 
 ### <a name="extension-sdk-references"></a>Odwołania do zestawu SDK rozszerzenia
 
-Visual Basic, C#, C++ i JavaScript Windows platformy Uniwersalnej aplikacji może odwoływać się rozszerzenia SDK przeznaczonych [!INCLUDE[win81](../debugger/includes/win81_md.md)], tak długo, jak te rozszerzenia SDK nie należy używać interfejsów API, które są przestarzałe w systemie Windows 10. Sprawdź, czy w witrynie dostawcy zestawu SDK rozszerzenia, aby dowiedzieć się, czy można się odwoływać za aplikacji platformy uniwersalnej systemu Windows.
+Visual Basic, C#, C++ i JavaScript Windows platformy Uniwersalnej aplikacji może się odwoływać rozszerzenia SDK przeznaczonych Windows 8.1, tak długo, jak te rozszerzenia SDK nie należy używać interfejsów API, które są przestarzałe w systemie Windows 10. Sprawdź, czy w witrynie dostawcy zestawu SDK rozszerzenia, aby dowiedzieć się, czy można się odwoływać za aplikacji platformy uniwersalnej systemu Windows.
 
 Jeśli okaże się, że zestawu SDK rozszerzenia przywoływane przez aplikację nie jest obsługiwany, a następnie należy wykonać następujące czynności:
 
-1. Sprawdź nazwę projektu, który powoduje błąd. Platformy, którą Twój projekt jest docelowo jest podana w nawiasach obok nazwy projektu. Na przykład **MyProjectName (Windows 8.1)** oznacza, że projekt **MyProjectName** jest przeznaczonych dla wersji platformy [!INCLUDE[win81](../debugger/includes/win81_md.md)].
+1. Sprawdź nazwę projektu, który powoduje błąd. Platformy, którą Twój projekt jest docelowo jest podana w nawiasach obok nazwy projektu. Na przykład **MyProjectName (Windows 8.1)** oznacza, że projekt **MyProjectName** jest przeznaczonych dla wersji platformy Windows 8.1.
 
-2. Przejdź do witryny dostawcy, który jest właścicielem nieobsługiwany zestawu SDK rozszerzenia, a następnie zainstalować wersję zestawu SDK rozszerzenia z zależnościami, które są zgodne z wersją platformy, którą Twój projekt jest docelowo.
+1. Przejdź do witryny dostawcy, który jest właścicielem nieobsługiwany zestawu SDK rozszerzenia, a następnie zainstalować wersję zestawu SDK rozszerzenia z zależnościami, które są zgodne z wersją platformy, którą Twój projekt jest docelowo.
 
     > [!NOTE]
     > Jednym ze sposobów dowiedzieć się, czy zestawu SDK rozszerzenia ma zależności od innych zestawów SDK rozszerzenia jest przeszukując **Menedżera odwołań**. Uruchom ponownie program Visual Studio, Utwórz nowy projekt aplikacji platformy uniwersalnej systemu Windows C#, a następnie kliknij prawym przyciskiem myszy projekt i wybierz **Dodaj odwołanie**. Przejdź do **Windows** kartę, a następnie **rozszerzenia** karty podrzędnej, a następnie wybierz zestawu SDK rozszerzenia. Szukaj w okienku po prawej stronie w **Menedżera odwołań**. Jeśli zawiera on zależności, zostaną one dostępne.
@@ -75,13 +75,13 @@ Jeśli okaże się, że zestawu SDK rozszerzenia przywoływane przez aplikację 
     > [!IMPORTANT]
     > Jeśli projekt jest docelowo systemu Windows 10 i zestawu SDK rozszerzenia zainstalowane w poprzednim kroku ma zależność na pakietu Microsoft Visual C++ środowiska wykonawczego, wersji programu Microsoft Visual C++ Runtime Package zgodnego z systemem Windows 10 jest 14.0 i jest zainstalowany Program Visual Studio.
 
-3. Jeśli zainstalowany w poprzednim kroku zestawu SDK rozszerzenia ma zależności od innych zestawów SDK rozszerzenia, przejdź do witryny dostawców, którzy należą zależności i zainstalować wersje te zależności, które są zgodne z wersją platformy, którą Twój projekt jest Określanie wartości docelowej.
+1. Jeśli zainstalowany w poprzednim kroku zestawu SDK rozszerzenia ma zależności od innych zestawów SDK rozszerzenia, przejdź do witryny dostawców, którzy należą zależności i zainstalować wersje te zależności, które są zgodne z wersją platformy, którą Twój projekt jest Określanie wartości docelowej.
 
-4. Uruchom ponownie program Visual Studio, a następnie otwórz aplikację.
+1. Uruchom ponownie program Visual Studio, a następnie otwórz aplikację.
 
-5. Kliknij prawym przyciskiem myszy **odwołania** węzła w projekcie, który spowodował błąd i wybierz polecenie **Dodaj odwołanie**.
+1. Kliknij prawym przyciskiem myszy **odwołania** węzła w projekcie, który spowodował błąd i wybierz polecenie **Dodaj odwołanie**.
 
-6. Kliknij przycisk **Windows** kartę, a następnie **rozszerzenia** podrzędna, następnie usuń zaznaczenie pól wyboru dla starego rozszerzenia SDK, a następnie sprawdź, czy pola wyboru nowego rozszerzenia SDK. Kliknij przycisk **OK**.
+1. Kliknij przycisk **Windows** kartę, a następnie **rozszerzenia** podrzędna, następnie usuń zaznaczenie pól wyboru dla starego rozszerzenia SDK, a następnie sprawdź, czy pola wyboru nowego rozszerzenia SDK. Kliknij przycisk **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Dodawanie odwołania w czasie projektowania
 

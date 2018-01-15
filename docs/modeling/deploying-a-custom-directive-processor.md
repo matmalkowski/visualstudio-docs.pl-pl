@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
-Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na dowolnym komputerze, musi być zarejestrowany za pomocą jednej z metod opisanych w tym temacie.  
+Aby użyć niestandardowego procesora dyrektywy w programie Visual Studio na dowolnym komputerze, musi być zarejestrowany za pomocą jednej z metod opisanych w tym temacie.  
   
  Alternatywne metody to:  
   
@@ -30,7 +28,7 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-qual
   
 -   Ustaw klucz rejestru. W tej metodzie należy dodać wpis rejestru dla procesora dyrektywy.  
   
- Należy użyć jednej z tych metod, tylko wtedy, gdy chcesz transformacji szablonu tekstowego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
+ Należy użyć jednej z tych metod, tylko wtedy, gdy chcesz transformacji szablonu tekstowego w programie Visual Studio lub [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Wdrażanie procesora dyrektywy w VSIX  
  Można dodać niestandardowego procesora dyrektywy do [rozszerzenia serwera Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
@@ -47,7 +45,7 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-qual
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Aby opracować niestandardowy procesor dyrektywy w projekcie VSIX  
   
-1.  Tworzenie projektu VSIX w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1.  Tworzenie projektu VSIX w programie Visual Studio.  
   
     -   W **nowy projekt** okna dialogowego rozwiń **Visual Basic** lub **Visual C#**, następnie rozwiń węzeł **rozszerzalności**. Kliknij przycisk **projektu VSIX**.  
   
@@ -104,19 +102,19 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-qual
   
 #### <a name="to-install-the-custom-directive-processor"></a>Aby zainstalować procesor dyrektywy niestandardowej  
   
-1.  W Eksploratorze Windows (Eksplorator plików w systemie Windows 8) otwórz katalog kompilacji (zazwyczaj bin\Debug lub bin\Release).  
+1.  W Eksploratorze Windows otwórz katalog kompilacji (zazwyczaj bin\Debug lub bin\Release).  
   
 2.  Jeśli chcesz zainstalować procesor dyrektywy na innym komputerze, skopiuj plik .vsix do innego komputera.  
   
-3.  Kliknij dwukrotnie plik .vsix. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pojawi się Instalator rozszerzenia.  
+3.  Kliknij dwukrotnie plik .vsix. Zostanie wyświetlone Instalator rozszerzenia programu Visual Studio.  
   
-4.  Uruchom ponownie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Teraz można uruchomić szablony tekstowe, które zawierają dyrektywy odwołujące się do procesora dyrektywy niestandardowej. Każda dyrektywa jest tej postaci:  
+4.  Uruchom ponownie program Visual Studio. Teraz można uruchomić szablony tekstowe, które zawierają dyrektywy odwołujące się do procesora dyrektywy niestandardowej. Każda dyrektywa jest tej postaci:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Aby odinstalować lub tymczasowo wyłączyć procesor dyrektywy niestandardowej  
   
-1.  W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **narzędzia** menu, kliknij przycisk **Menedżera rozszerzenia**.  
+1.  W programie Visual Studio **narzędzia** menu, kliknij przycisk **Menedżera rozszerzenia**.  
   
 2.  Wybierz VSIX, który zawiera procesora dyrektywy, a następnie kliknij przycisk **Odinstaluj** lub **wyłączyć**.  
   
@@ -169,7 +167,7 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../code-qual
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Jeśli chcesz zainstalować procesora dyrektywy w wersji eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Wstaw "Exp" po "11.0".  
+     Jeśli chcesz zainstalować procesora dyrektywy w eksperymentalnym wersji programu Visual Studio, Wstaw "Exp" po "11.0".  
   
 3.  Dodaj klucz rejestru, który ma taką samą nazwę jak klasa procesora dyrektywy.  
   

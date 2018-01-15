@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 7f74c03d081084356682630d234d6db81e64b4bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
@@ -26,7 +28,7 @@ Deweloperzy poświęcać dużo czasu w edytorze kodu tak [Python obsługi w prog
 W tym temacie:
 
 - [IntelliSense](#intellisense) tym zakończeń, pomocy podpisu, szybkie informacje i kolorowanie kodu.
-- [Wstawki kodu](#code-snippets)
+- [Fragmenty kodu](#code-snippets)
 - [Nawigowanie po kodzie](#navigating-your-code)
 
 Dokumentacja ogólna edytowanie kodu w programie Visual Studio, aby zapoznać [pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt w Visual Studio](../ide/outlining.md), który pomaga pozostać koncentruje się na poszczególnych sekcji kodu. Obejmuje obsługę języka Python za pomocą przeglądarki obiektów Visual Studio (**Widok > inne okna > przeglądarki obiektów** lub Ctrl + W, J) do sprawdzania klas zdefiniowanych w każdym module i funkcji zdefiniowanych w tych klas. 

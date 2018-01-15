@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -35,8 +37,8 @@ W tym temacie:
 
 Zobacz też poniższe tematy debugowania specyficzne dla scenariusza:
 
-- [Debugowanie zdalne i platform](debugging-cross-platform-remote.md)
-- [Azure debugowanie zdalne](debugging-azure-remote.md)
+- [Zdalne międzyplatformowe debugowanie](debugging-cross-platform-remote.md)
+- [Zdalne debugowanie platformy Azure](debugging-azure-remote.md)
 - [Debugowanie w trybie mieszanym Python/C++](debugging-mixed-mode.md)
 - [Symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode.md)
 

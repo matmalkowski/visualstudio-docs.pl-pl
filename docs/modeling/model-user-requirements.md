@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb użytkowników za pomocą rysowania diagramy o ich działaniach i części systemu odgrywa w pomagając im ich celach. Wymagania modelu jest zestaw tych diagramów, z których każdy koncentruje się na różnych aspektów potrzeb użytkowników. Aby demonstracyjne wideo, zobacz: [modelowanie biznesowe domeny](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
@@ -61,7 +59,7 @@ Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb 
 ##  <a name="BusinessRules"></a>Wyświetlanie reguły biznesowe  
  Reguła biznesowa jest wymaganie, który nie jest skojarzony z konkretnego przypadku użycia i powinien być uwzględniony w całym systemie.  
   
- Wiele reguły biznesowe są ograniczenia na relacje między koncepcyjnej klasy. Można napisać te *statycznych**reguły biznesowe* jako komentarze skojarzone z odpowiednich klas na diagram koncepcyjny klasy. Na przykład:  
+ Wiele reguły biznesowe są ograniczenia na relacje między koncepcyjnej klasy. Można napisać te *statycznych ** reguły biznesowe* jako komentarze skojarzone z odpowiednich klas na diagram koncepcyjny klasy. Na przykład:  
   
  ![Reguła w komentarzu dołączonym do klasy Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

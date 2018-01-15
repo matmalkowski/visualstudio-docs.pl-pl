@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Pisanie kodu w edytorze kodu
 Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edycji kodu](https://www.visualstudio.com/features/ide-vs) szybki przegląd.  
@@ -130,9 +130,10 @@ Aby dowiedzieć się, gdy elementy określonego kodu są przywoływane w całym 
 ## <a name="customize-the-editor"></a>Dostosowywanie edytora  
 Można udostępnić ustawienia programu Visual Studio z innego projektanta, mieć ustawienia są zgodne z normą, lub przywrócić ustawienia domyślne programu Visual Studio za pomocą **Kreator importowania i eksportowania ustawień** na  **Narzędzia** menu. W **Kreator importowania i eksportowania ustawień**, możesz zmienić wybrane ustawienia ogólne lub język i ustawienia specyficzne dla projektu.
 
-Aby zdefiniowane klawisze dostępu nowe lub zmienione istniejących klawisze dostępu, przejdź do **narzędzia**, **opcje**, **środowiska**, **klawiatury**. Aby uzyskać więcej informacji na temat klawisze dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Aby zdefiniowane klawisze dostępu nowe lub zmienione istniejących klawisze dostępu, przejdź do **narzędzia**, **opcje**, **środowiska**, **klawiatury**. Aby uzyskać więcej informacji na temat klawisze dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Aby uzyskać więcej informacji dotyczących dostosowywania edytora, zobacz [dopasowywanie edytora](../ide/customizing-the-editor.md). Aby informacji na temat opcji edytora specyficznych dla języka, zobacz [przy użyciu środowiska programowania Visual Studio w języku C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) i [opcje, Edytor tekstu, JavaScript, formatowanie](../ide/reference/options-text-editor-javascript-formatting.md).
+Aby uzyskać więcej informacji dotyczących dostosowywania edytora, zobacz [dopasowywanie edytora](../ide/customizing-the-editor.md). Opcji edytora specyficznych dla języka JavaScript, zobacz [opcje, Edytor tekstu, JavaScript, formatowanie](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Zobacz także
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

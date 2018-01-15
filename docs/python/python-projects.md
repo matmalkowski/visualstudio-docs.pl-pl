@@ -1,7 +1,7 @@
 ---
 title: "Projekty języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,35 +12,31 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 7a0e449772f0947daf6c6bc8ec67af3a7456925d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
 Python aplikacje są zazwyczaj definiowane przy użyciu tylko plików i folderów, ale ta struktura może stać się złożona jako aplikacje większy i może obejmować automatycznie generowanej pliki JavaScript dla aplikacji sieci web i tak dalej. Projektu programu Visual Studio pomaga zarządzać tym złożoności. Projekt ( `.pyproj` pliku) identyfikuje źródła i pliki zawartości skojarzonej z projektem, zawiera informacje o kompilacji dla każdego pliku przechowuje informacje o integracji z systemami kontroli źródła i pomaga organizować aplikacji do składników logicznych.
 
-Ponadto projekty zawsze są zarządzane w programie Visual Studio *rozwiązania*, który może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie. Na przykład projektów języka Python można odwołanie projektu C++ w przypadku modułu rozszerzenia taki sposób, że program Visual Studio automatycznie tworzy projektu C++ (w razie potrzeby) po rozpoczęciu debugowania projektu języka Python. (Aby uzyskać ogólne informacje, zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
-
 ![Python projekt w Eksploratorze rozwiązań](media/projects-solution-explorer.png)
 
-Program Visual Studio oferuje różne szablony projektów języka Python, aby szybko skonfigurować szereg struktury aplikacji, w tym szablonu, aby utworzyć projekt z istniejących drzewa folderów i szablon do tworzenia projektu czystą, pusty. Zobacz [szablony projektu](#project-templates) poniżej indeksu.
+Ponadto projekty zawsze są zarządzane w programie Visual Studio *rozwiązania*, który może zawierać dowolną liczbę projektów, które mogą odwoływać się do siebie. Na przykład projektów języka Python można odwoływać się do projektów C++, który implementuje moduł rozszerzenia. Z tej relacji programu Visual Studio automatycznie tworzy projektu C++ (w razie potrzeby), po rozpoczęciu debugowania projektu języka Python. (Aby uzyskać ogólne informacje, zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
-W tym temacie:
+Program Visual Studio oferuje różne szablony projektów języka Python, aby szybko skonfigurować szereg struktury aplikacji, w tym szablonu, aby utworzyć projekt z istniejących drzewa folderów i szablon do tworzenia projektu czystą, pusty. Zobacz [szablony projektu](#project-templates) indeksu.
 
-- [Dodawanie plików, przypisanie pliku uruchamiania oraz ustawienia środowiska](#adding-files-assigning-a-startup-file-and-setting-environments)
-- [Szablony projektu](#project-templates)
-- [Pliki połączone](#linked-files)
-- [Odwołania](#references)
+<a name="lightweight-usage-project-free"></a>
 
-< name = "lightweight użycia projektu bez"</a>
 > [!Tip]
-> Nawet bez projektu programu Visual Studio dobrze działa z kodu języka Python, jak to możliwe Otwórz Python pliku samodzielnie i korzystać z automatycznego zakończenia, IntelliSense i debugowanie (prawym przyciskiem myszy w edytorze i wybierając **Start [z | bez] debugowania**). Ponieważ taki kod zawsze używa domyślnego środowiska globalnych, jednak mogą pojawić się błędy lub nieprawidłowe zakończeń Jeśli kod jest przeznaczona dla innego środowiska. Ponadto program Visual Studio analizuje wszystkie pliki i pakiety w folderze, w którym jeden plik jest otwarty, może zużywać znaczną czas procesora CPU.
+> Nawet bez projektu programu Visual Studio dobrze działa z kodu języka Python. Można na przykład otwórz Python pliku samodzielnie i korzystać z automatycznego zakończenia, IntelliSense i debugowanie (prawym przyciskiem myszy w edytorze i wybierając **Start [z | bez] debugowanie**). Ponieważ taki kod zawsze używa domyślnego środowiska globalnych, jednak mogą pojawić się błędy lub nieprawidłowe zakończeń Jeśli kod jest przeznaczona dla innego środowiska. Ponadto program Visual Studio analizuje wszystkie pliki i pakiety w folderze, w którym jeden plik jest otwarty, może zużywać znaczną czas procesora CPU.
 >
-> Zgodnie z poniższym opisem w jest proste sprawa do tworzenia projektu programu Visual Studio z istniejącego kodu [tworzenia projektu z istniejących plików](#creating-a-project-from-existing-files).
+> Zgodnie z opisem w jest proste sprawa do tworzenia projektu programu Visual Studio z istniejącego kodu [tworzenia projektu z istniejących plików](#creating-a-project-from-existing-files).
 
 Aby obejrzeć wprowadzenie do projektów języka Python w programie Visual Studio, zobacz wideo [wprowadzenie kodu Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2m17s).
 
@@ -50,14 +46,14 @@ Zobacz też starsze wideo [nowości: Używanie kontroli źródła z projektów j
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Dodawanie plików, przypisanie pliku uruchamiania oraz ustawienia środowiska
 
-Podczas opracowywania aplikacji zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików łatwo odbywa się przez kliknięcie prawym przyciskiem myszy projekt i wybierając **Dodaj > istniejący element...** , z którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj > Nowy element...** , który wyświetla okno dialogowe z różnymi tym python puste pliki, klasę python testu jednostkowego szablonów elementów i różnych plików związanych z aplikacjami sieci web. Firma Microsoft zachęca do eksplorowania tych opcji z projektu testowego, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
+Podczas opracowywania aplikacji zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików odbywa się przez kliknięcie prawym przyciskiem myszy projekt i wybierając **Dodaj > istniejący element...** . z którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj > Nowy element...** , który wyświetla okno dialogowe z różnych szablonów elementów. Szablony obejmują python puste pliki, python klasy testu jednostkowego i różnych plików związanych z aplikacjami sieci web. Można sprawdzić te opcje z projektu testowego, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
 
-Każdy projekt Python ma jeden plik przypisanej rozruchu, czcionką pogrubioną w Eksploratorze rozwiązań. Uruchamiania jest plik, który jest uruchamiany po rozpoczęciu debugowania (F5 lub **debugowania > Rozpocznij debugowanie**) lub uruchom projekt w oknie interaktywnym (Shift + Alt + F5 lub **debugowania > wykonanie projektu w interakcyjne Python**). Aby go zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik uruchamiania**.
+Każdy projekt Python ma jeden plik przypisanej rozruchu, czcionką pogrubioną w Eksploratorze rozwiązań. Uruchamiania jest plik, który jest uruchamiany po rozpoczęciu debugowania (F5 lub **Debuguj > Rozpocznij debugowanie**) lub po uruchomieniu projektu w oknie interaktywnym (Shift + Alt + F5 lub **debugowania > wykonanie projektu w języku Python Interakcyjne**). Aby go zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik uruchamiania**.
 
 > [!Tip]
-> Usuwanie plików wybranego uruchomienia z projektu i nie wybrać nową, próba uruchomienia wyniki projektu w języku Python danych wyjściowych okno pojawiające się, ale następnie i znika niemal natychmiast. Jeśli wystąpi ten problem, sprawdź, czy plik przypisanej uruchamiania. Również, aby zachować w oknie danych wyjściowych w takich przypadkach, kliknij prawym przyciskiem myszy projekt, wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **argumenty Interpreter** pola. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
+> Usuwanie plików wybranego uruchomienia z projektu i nie wybrać nową, systemem wyniki projektu w języku Python danych wyjściowych okna pojawiające się, ale następnie znika niemal natychmiast. Jeśli wystąpi ten problem, sprawdź, czy plik przypisanej uruchamiania. Również, aby zachować w oknie danych wyjściowych w takich przypadkach, kliknij prawym przyciskiem myszy projekt, wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **argumenty Interpreter** pola. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
 
-Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego. Aby skojarzyć projektu z innego środowiska (również w środowiskach wirtualnych), kliknij prawym przyciskiem myszy z **środowiska Python** węzła w projekcie, wybierz opcję **środowiska Python Dodaj lub usuń**, i Wybierz te, które chcesz. Aby zmienić aktywnego środowiska, kliknij prawym przyciskiem myszy wymagane środowisko i wybierz **aktywacji środowiska** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [środowiska Python](python-environments.md#project-specific-environments).
+Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego. Aby skojarzyć projektu z innego środowiska (również w środowiskach wirtualnych), kliknij prawym przyciskiem myszy z **środowiska Python** węzła w projekcie, wybierz opcję **środowiska Python Dodaj lub usuń**, i Wybierz te, które chcesz. Aby zmienić aktywnego środowiska, kliknij prawym przyciskiem myszy wymagane środowisko i wybierz **aktywacji środowiska** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [środowiska Python](python-environments.md#selecting-an-environment-for-a-project).
 
 ![Aktywowanie środowisko dla projektów języka Python](media/projects-activate-environment.png)
 
@@ -74,7 +70,7 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 | Szablon | Opis |
 | --- | --- |
 | [Z istniejącego kodu języka Python](#creating-a-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu języka Python w strukturze folderu.  |
-| Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](python-environments.md#project-specific-environments). |
+| Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](python-environments.md#selecting-an-environment-for-a-project). |
 | [Usługi w chmurze Azure](template-azure-cloud-service.md) | Projekt usługi w chmurze Azure napisanych w języku Python. |
 | [Projekty sieci Web](template-web.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
 | IronPython aplikacji | Podobnie jak szablon aplikacji Python, ale IronPython przez domyślne włączenie .NET międzyoperacyjnego i trybu mieszanego debugowania w językach .NET. |
@@ -83,6 +79,9 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 | Aplikacji formularzy systemu Windows IronPython | Struktury projektu za pomocą withUI IronPython tworzone przy użyciu kodu z formularzy systemu Windows. Aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | Aplikacja w tle (IoT) | Obsługują wdrażanie projektów języka Python do uruchamiania jako usługi w tle na urządzeniach. Odwiedź stronę [Centrum deweloperów systemu Windows IoT](https://dev.windows.com/en-us/iot) Aby uzyskać więcej informacji. |
 | Moduł rozszerzenia języka Python | Ten szablon jest dostępny w węźle Visual C++, jeśli po zainstalowaniu **Python natywnych narzędzi** z obciążeniem Python w Visual Studio 2017 (zobacz [instalacji](installation.md)). Struktura core zapewnia rozszerzenie DLL, podobnie jak opisany w C++ [Tworzenie rozszerzenia C++ dla języka Python](cpp-and-python.md). |
+
+> [!Note]
+> Ponieważ interpretacji języka Python, projektów języka Python w programie Visual Studio nie dają autonomicznego pliku wykonywalnego, podobnie jak inne projekty języka skompilowanych (C#, na przykład). Aby uzyskać więcej informacji, zobacz [pytania i odpowiedzi dotyczące](python-in-visual-studio.md#questions-and-answers).
 
 < name = "Tworzenie —-z — istniejącego pliki projektu"</a>
 
@@ -95,9 +94,9 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 
 ## <a name="linked-files"></a>Pliki połączone
 
-Połączone pliki to pliki, które przełączone do projektu, ale zazwyczaj znajdują się poza folderów projektu aplikacji. Pojawią się one w Eksploratorze rozwiązań jako normalne pliki za pomocą ikony nałożone skrótów: ![Ikona pliku łącza](media/projects-linked-file-icon.png)
+Pliki połączone są pliki, które zostały przeniesione do projektu, ale zazwyczaj znajdują się poza folderów projektu aplikacji. Pojawią się one w Eksploratorze rozwiązań jako normalne pliki za pomocą ikony nałożone skrótów: ![Ikona pliku łącza](media/projects-linked-file-icon.png)
 
-Połączone pliki zostały określone w `.pyproj` plików przy użyciu normalnych `<Compile Include="...">` elementu. Można je niejawnych plików połączonych używają ścieżki względnej poza struktury katalogów, czy łącze jawne pliki mogą być przez określenie ich ścieżki w Eksploratorze rozwiązań:
+Połączone pliki zostały określone w `.pyproj` plik za pomocą `<Compile Include="...">` elementu. Pliki połączone są użycie ścieżki względnej poza struktury katalogów, jawnych ani niejawnych użycie ścieżki w Eksploratorze rozwiązań:
 
 ```xml
 <Compile Include="..\test2.py">

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Wskazówki: tworzenie środowiska kompilacji na wielu komputerach
 
@@ -29,7 +29,6 @@ Można utworzyć środowisko kompilacji w obrębie organizacji przez zainstalowa
 Ten dokument nie przyznaje praw do ponownej dystrybucji oprogramowania zewnętrznie lub w celu zapewnienia środowiska kompilacji do udzielania podmiotom trzecim.  
   
 > Zrzeczenie odpowiedzialności<br /><br /> Niniejszy dokument jest udostępniany na "jako — jest" podstawy. Gdy przetestowano czynności podane nie możemy do testowania wyczerpujący każdej konfiguracji. Firma Microsoft podejmie próbę aktualność dokumentu wszelkie informacje dodatkowe, które zostały rozpoznane. Informacje i poglądy wyrażone w tym dokumencie, w tym adresy URL i innymi odwołaniami do witryn internetowych, mogą ulec zmianie bez uprzedzenia. Microsoft nie udziela żadnych gwarancji, express lub domniemanych, w odniesieniu do informacji dostępnych w tym miejscu. Użytkownik ponosi ryzyko związane z użyciem jej.<br /><br /> Ten dokument nie daje użytkownikowi żadnych praw do jakiejkolwiek własności intelektualnej związanej z jakimkolwiek produktem firmy Microsoft. Można kopiować i używać tego dokumentu do wewnętrznych celów referencyjnych.<br /><br /> Użytkownik nie ma obowiązku nadaniu firmie Microsoft w dowolnym sugestie, komentarzy ani innych opinii ("opinie"), odnoszące się do tego dokumentu. Jednak opinię, dobrowolnie mogą być używane w Microsoft Products i związanych z nimi specyfikacjach lub innych dokumentacji (zbiorczo "Offerings Microsoft"), który z kolei może być stosowane przez osoby trzecie do opracowywania własnych produktów. W związku z tym jeśli Microsoft Feedback dać w dowolnej wersji tego dokumentu lub Offerings firmy Microsoft do których mają zastosowanie, akceptujesz: () firmy Microsoft może korzystać za darmo, odtworzyć licencji, rozpowszechniania i inaczej komercjalizacji tych opinii w udostępnianych przez firmę Microsoft Oferty; (b) można również przyznać stron trzecich, bez dodatkowych opłat, tylko te patentowe prawa niezbędne do obsługi innych produktów lub interfejsu z określonych części Product firmy Microsoft, wykorzystujących opinię użytkownika; i (c) użytkownik nie będzie przekazywać Microsoft opinię (i), czy masz podejrzeń podlega wszelkie oświadczenia patentowe, autorskie lub inne prawa własności intelektualnej lub prawa osobom trzecim; lub (ii) z zastrzeżeniem postanowień licencyjnych, które się wymagają żadnych Offering firmy Microsoft zawierająca lub pochodzące z takich opinii lub innych własności intelektualnej Microsoft licencji lub w inny sposób udostępniać podmiotom trzecim.
-
 
 W tym przewodniku została zweryfikowana względem następujących systemów operacyjnych, wykonując MSBuild w wierszu polecenia i za pomocą Team Foundation Build.  
   
@@ -47,7 +46,7 @@ W tym przewodniku została zweryfikowana względem następujących systemów ope
   
  W środowisku wielu komputerach nie może służyć do tworzenia tego rodzaju aplikacji:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]aplikacje. Aby utworzyć [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji, należy zainstalować program Visual Studio na komputerze kompilacji.  
+-   Aplikacje platformy uniwersalnej systemu Windows. Aby tworzenie aplikacji platformy uniwersalnej systemu Windows, należy zainstalować program Visual Studio na komputerze kompilacji.  
   
 -   Aplikacji klasycznych, które odnoszą się do programu .NET Framework 4 lub starszym. Aby utworzyć tego rodzaju aplikacji, należy zainstalować na komputerze kompilacji Visual Studio lub zestawów odwołań .NET i narzędzia (zestaw Windows 7.1 SDK).  
   

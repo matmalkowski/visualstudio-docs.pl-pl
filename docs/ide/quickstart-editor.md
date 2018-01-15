@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Szybki Start: kodowania w edytorze
 
@@ -135,7 +135,7 @@ Edytor programu Visual Studio ułatwia Sprawdź definicję typu, metody itd. Jed
 
 ## <a name="refactoring-a-name"></a>Refaktoryzacja nazwę
 
-Nikt nie pobiera prawo kod po raz pierwszy, a drugi czynności, które możesz chcieć zmienić nazwę zmiennej lub metody. Spróbujmy Visual Studio [Refaktoryzacja](../ide/refactoring-code-generation-quick-actions.md#refactoring) funkcji, aby zmienić nazwę `_words` zmienną `words`.
+Nikt nie pobiera prawo kod po raz pierwszy, a drugi czynności, które możesz chcieć zmienić nazwę zmiennej lub metody. Spróbujmy Visual Studio [Refaktoryzacja](../ide/refactoring-in-visual-studio.md) funkcji, aby zmienić nazwę `_words` zmienną `words`.
 
 1. Umieść kursor nad definicji `words` zmienną i wybierz polecenie **zmienić...**  z kliknij prawym przyciskiem myszy lub menu kontekstowego lub naciśnij klawisz **Ctrl**+**R**, **Ctrl**+**R**.
 
@@ -156,10 +156,10 @@ Udało Ci się ukończyć tego przewodnika Szybki Start dla edytorze programu Vi
 ## <a name="see-also"></a>Zobacz także
 
 [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Szybki Start: personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)  
-[Szybki Start: projekty i rozwiązania](../ide/quickstart-projects-solutions.md)  
-[Wstawki kodu](../ide/code-snippets.md)  
+[Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)  
+[Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)  
+[Fragmenty kodu](../ide/code-snippets.md)  
 [Obramowanie](../ide/outlining.md)  
 [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)  
-[Refaktoryzacja](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)  
+[Refaktoryzacja](../ide/refactoring-in-visual-studio.md)  
+[Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

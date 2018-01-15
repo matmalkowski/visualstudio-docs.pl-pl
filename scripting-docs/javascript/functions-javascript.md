@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>Funkcje (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]funkcje wykonywania akcji; można także wrócić wartości. Czasami są wyniki obliczeń lub porównania. Funkcje są również nazywane "metody globalne".  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>Parametrów REST  
- Parametry REST, określony przez operator () rozpowszechniania umożliwiają włączenie kolejnych argumentów w wywołaniu funkcji do tablicy.  
+ Umieść parametry, określony przez operator rozpiętości `...`, pozwala na włączenie kolejnych argumentów w wywołaniu funkcji do tablicy.  
   
  Pozostałe parametry, eliminując konieczność stosowania `arguments` obiektu. Pozostałe parametry różnią się od `arguments` obiekt na kilka sposobów, takich jak:  
   

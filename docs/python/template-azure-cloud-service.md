@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
 Visual Studio zawiera szablony ułatwiające rozpoczęcie pracy tworzenia usługi w chmurze Azure przy użyciu języka Python.
 
-A [usługi w chmurze](http://go.microsoft.com/fwlink/?LinkId=306052) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na Visual maszyny odpowiednio do skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](template-web.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy korzystać z [danych](http://go.microsoft.com/fwlink/?LinkId=401571) i [usługi aplikacji](http://go.microsoft.com/fwlink/?LinkId=401572) bibliotek, które mogą być zainstalowane z `pip install` &nbsp; [ `azure` ](http://pypi.org/project/azure).
+A [usługi w chmurze](http://go.microsoft.com/fwlink/?LinkId=306052) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na Visual maszyny odpowiednio do skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](template-web.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy korzystać z [danych](http://go.microsoft.com/fwlink/?LinkId=401571) i [usługi aplikacji](http://go.microsoft.com/fwlink/?LinkId=401572) bibliotek, które mogą być zainstalowane z [ `pip install azure` ](http://pypi.org/project/azure).
 
 Ten temat zawiera szczegółowe informacje o szablonie projektu i innych pomoc techniczna w Visual Studio 2017 r (wcześniejszych wersji są podobne, lecz w edytorze). Aby uzyskać więcej informacji na temat pracy z platformą Azure w języku Python, odwiedź [Centrum deweloperów języka Python Azure](http://go.microsoft.com/fwlink/?linkid=254360).
 
@@ -80,7 +81,7 @@ Aby otworzyć **publikowania** kreatora, wybierz rolę projekt w Eksploratorze r
 
 Proces publikowania wiąże się z dwóch faz. Po pierwsze Visual Studio tworzy pojedynczy pakiet zawierający wszystkie role dla usługi w chmurze. Ten pakiet jest, co jest wdrożony na platformie Azure, która inicjuje co najmniej jednej maszyny wirtualnej dla każdej roli i wdrożyć źródła.
 
-Ponieważ każda maszyna wirtualna zostanie aktywowany, wykonuje `ConfigureCloudService.ps1` skryptów i zainstaluj zależności. Ten skrypt domyślnie instaluje najnowszą wersję języka Python z [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) i ewentualnych pakietów, określona w `requirements.txt` pliku. 
+Ponieważ każda maszyna wirtualna zostanie aktywowany, wykonuje `ConfigureCloudService.ps1` skryptów i zainstaluj zależności. Ten skrypt domyślnie instaluje najnowszą wersję języka Python z [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) i ewentualnych pakietów, określona w `requirements.txt` pliku.
 
 Następnie uruchom proces roboczy `LaunchWorker.ps1`, którego uruchomienie skryptu języka Python; sieci web zainicjować ról usług IIS i rozpocząć obsługę żądań sieci web.
 
@@ -90,7 +91,7 @@ Dla usług w chmurze `ConfigureCloudService.ps1` skrypt używa `pip` zainstalowa
 
 Należy pamiętać, że wystąpienia usługi chmury nie zawierają kompilatory C, dlatego wszystkie biblioteki z rozszerzeniami C podać wstępnie skompilowanych plików binarnych.
 
-PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](python-environments.md#managing-required-packages) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
+PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](python-environments.md#managing-required-packages-requirementstxt) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -98,9 +99,9 @@ Jeśli po wdrożeniu roli użytkownika sieci web lub procesu roboczego nie zadzi
 
 - Projekt Python zawiera folder bin\ o (co najmniej):
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1`(dla ról procesów roboczych)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1`(dla ról procesów roboczych)
+  - `ps.cmd`
 
 - Projekt Python zawiera `requirements.txt` pliku wyświetlanie listy wszystkich zależności (lub alternatywnie Kolekcja plików koło).
 - Włączenie pulpitu zdalnego na usługi w chmurze i sprawdź pliki dziennika.

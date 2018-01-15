@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie Python w usłudze aplikacji Azure
 
 [Usługa aplikacji Azure](https://azure.microsoft.com/services/app-service/) jest ofertę platformy jako usługa dla aplikacji sieci web, czy są one witryn dostępne za pośrednictwem przeglądarki, interfejsów API REST używany przez własnych klientów lub przetwarzania wyzwolenia zdarzenia. Usługa aplikacji w pełni obsługuje Hermetyzowanie przy użyciu języka Python do wdrożenia aplikacji.
 
-Można dostosowywać obsługi języka Python w usłudze Azure App Service jest dostępna jako zestaw usług aplikacji *lokacji rozszerzenia* czy każdy zawierać określonej wersji środowiska uruchomieniowego języka Python. Następnie można zainstalować wszystkie odpowiednie pakiety bezpośrednio do tego środowiska, zgodnie z opisem w tym temacie. Dostosowując środowiska w samej usługi aplikacji, nie należy do obsługi pakietów w projektach aplikacji sieci web lub przekaż je z kodu aplikacji. 
+Można dostosowywać obsługi języka Python w usłudze Azure App Service jest dostępna jako zestaw usług aplikacji *lokacji rozszerzenia* czy każdy zawierać określonej wersji środowiska uruchomieniowego języka Python. Następnie można zainstalować wszystkie odpowiednie pakiety bezpośrednio do tego środowiska, zgodnie z opisem w tym temacie. Dostosowując środowiska w samej usługi aplikacji, nie należy do obsługi pakietów w projektach aplikacji sieci web lub przekaż je z kodu aplikacji.
 
 > [!Tip]
 > Chociaż usługi aplikacji — domyślnie ma Python 2.7 i języka Python 3.4 zainstalowane w głównym folderów na serwerze, nie można dostosować lub instalowania pakietów w tych środowiskach ani powinien zależeć od ich obecności. Należy zamiast tego polegać na rozszerzeniu lokacji, którą kontrolujesz, zgodnie z opisem w tym temacie.
@@ -87,7 +88,7 @@ Rozpocznij od znajdowanie pełną ścieżkę do rozszerzenia lokacji `python.exe
 
 Rozszerzenie lokacji Python jest zainstalowany na serwerze, w obszarze `d:\home` w folderze właściwe dla wersji języka Python i architektura (z wyjątkiem kilku starszych wersji). Na przykład Python 3.6.1 x64 jest zainstalowany w `d:\home\python361x64`. Pełna ścieżka do interpreter języka Python jest następnie `d:\home\python361x64\python.exe`.
 
-Aby wyświetlić określoną ścieżkę w usłudze App Service, wybierz **rozszerzenia** na stronie usługi aplikacji, następnie wybierz rozszerzenie na liście. 
+Aby wyświetlić określoną ścieżkę w usłudze App Service, wybierz **rozszerzenia** na stronie usługi aplikacji, następnie wybierz rozszerzenie na liście.
 
 ![Lista rozszerzeń w usłudze Azure App Service](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ Interpreter języka Python zainstalowane za pomocą rozszerzenia lokacji jest ty
 
 Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z następujących metod:
 
-| Metody | Użycie | 
+| Metody | Użycie |
 | --- | --- |
 | [Konsola Kudu usługi aplikacji Azure](#azure-app-service-kudu-console) | Instaluje interaktywne pakietów. Pakiety muszą być czysty Python lub należy opublikować koła. |
 | [Program kudu interfejsu API REST](#kudu-rest-api) | Może służyć do automatyzowania instalacji pakietu aktualizacji.  Pakiety muszą być czysty Python lub należy opublikować koła. |
@@ -199,7 +200,7 @@ Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z na
     Przy użyciu `requirements.txt` jest zalecane, ponieważ jest łatwy do odtworzenia pakietu dokładną wartość lokalnie i na serwerze. Pamiętaj tylko odwiedzić konsoli po wdrożeniu zmiany wprowadzone w `requirements.txt` i ponownie uruchom polecenie.
 
 > [!Note]
-> Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [Zarządzanie wymaganych pakietów](python-environments.md#managing-required-packages)
+> Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [zarządzania wymagane pakiety](python-environments.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>Program kudu interfejsu API REST
 
