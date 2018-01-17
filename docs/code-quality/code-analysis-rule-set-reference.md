@@ -14,14 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Odwołanie zestawu reguł analizy kodu
-Podczas konfigurowania analizy kodu dla zarządzanego kodu projektów w [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], lub [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]jest wyświetlana lista wbudowanych *zestawów reguł*. Można użyć jednego z zestawów reguł standard lub zestawu reguł do wymagań projektu można dostosować.  
+Podczas konfigurowania analizy kodu dla zarządzanego kodu projektów w [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], lub [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] jest wyświetlana lista wbudowanych *zestawów reguł*. Można użyć jednego z zestawów reguł standard lub zestawu reguł do wymagań projektu można dostosować.  
   
 ## <a name="available-rule-sets"></a>Zestawy dostępne reguły  
  W poniższej tabeli przedstawiono domyślne zestawy reguł:  
