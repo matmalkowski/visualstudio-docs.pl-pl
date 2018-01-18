@@ -84,6 +84,13 @@
 #### [Określanie konkretnej wersji programu .NET Framework jako docelowej](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Wielowersyjność kodu — omówienie](ide/visual-studio-multi-targeting-overview.md)
 ##### [Określanie wersji docelowej programu .NET Framework](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Tworzenie szablonów projektów i elementów
+##### [Tworzenie szablonów projektu](ide/how-to-create-project-templates.md)
+##### [Tworzenie szablonów obejmujących wiele projektów](ide/how-to-create-multi-project-templates.md)
+##### [Tworzenie szablonów elementów](ide/how-to-create-item-templates.md)
+##### [Tworzenie szablonów elementów obejmujących wiele plików](ide/how-to-create-multi-file-item-templates.md)
+##### [Tworzenie szablonów sieci Web](ide/how-to-manually-create-web-templates.md)
+##### [Rozwiązywanie problemów z szablonami](ide/how-to-troubleshoot-templates.md)
 #### [Obsługa 64-bitowego środowiska IDE programu Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Opracowywanie bez projektów i rozwiązań („Otwórz folder”)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Pisanie kodu w edytorze](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Kodowania i znaki podziału wiersza](ide/encodings-and-line-breaks.md)
 ##### [Zapisywanie i otwieranie plików z zastosowaniem kodowania](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Obramowanie](ide/outlining.md)
-#### [Automatyczne generowanie kodu](ide/code-generation-in-visual-studio.md)
+#### [Generowanie i naprawianie kodu](ide/code-generation-in-visual-studio.md)
 ##### [Fragmenty kodu](ide/code-snippets.md)
 ###### Używanie fragmentów kodu
 ####### [Fragmenty kodu Visual C#](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Dostosowywanie szablonów projektów i elementów](ide/customizing-project-and-item-templates.md)
 #### [Aktualizowanie istniejących szablonów](ide/how-to-update-existing-templates.md)
 #### [Zastępowanie parametrów w szablonie](ide/how-to-substitute-parameters-in-a-template.md)
-### Tworzenie nowych szablonów projektów i elementów
-#### [Tworzenie szablonów projektu](ide/how-to-create-project-templates.md)
-#### [Tworzenie szablonów obejmujących wiele projektów](ide/how-to-create-multi-project-templates.md)
-#### [Tworzenie szablonów elementów](ide/how-to-create-item-templates.md)
-#### [Tworzenie szablonów elementów obejmujących wiele plików](ide/how-to-create-multi-file-item-templates.md)
-#### [Tworzenie szablonów sieci Web](ide/how-to-manually-create-web-templates.md)
+### Szablony projektów i elementów
 ### [Parametry szablonu](ide/template-parameters.md)
-### [Odwołanie do schematu szablonu (rozszerzalność)](extensibility/visual-studio-template-schema-reference.md)
-### [Rozwiązywanie problemów z szablonami](ide/how-to-troubleshoot-templates.md)
+### [Odwołanie do schematu szablonu (rozszerzalność)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Ogólne elementy interfejsu użytkownika
 ### [Hierarchia wywołań](ide/reference/call-hierarchy.md)
 ### [Podgląd zmian](ide/preview-changes.md)
