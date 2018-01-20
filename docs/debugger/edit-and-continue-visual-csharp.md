@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: e2e2d380bf90ae2cb0140c508f7cb3b9842c7bf8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9b820dceefbb84dc9c0b9b9efff75afdb38b30f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C#)
  Z opcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany w kodzie w trybie przerwania podczas debugowania. Zmiany można zastosować bez konieczności zatrzymać i uruchomić ponownie sesję debugowania. W trybie uruchamiania edytora źródła jest tylko do odczytu.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/22/2017
  Edytuj i Kontynuuj jest obsługiwana w platformy uniwersalnej systemu Windows w systemie Windows 10 i x86 i x64 aplikacji przeznaczonych dla platformy .NET Framework 4.6 pulpitu lub nowszej wersji (.NET Framework jest tylko wersja desktop).
 
  > [!NOTE]
- > Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, emulator programu Silverlight 5, Windows Phone i Windows Phone i Windows 8.1.
+ > Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, Silverlight 5 i Windows 8.1.
   
  Gdy Edytuj i Kontynuuj jest włączona, obsługiwane są automatycznie zastosować zmian korzystając z polecenia wykonywania debugera, takie jak **Kontynuuj**, **krok**, **ustawienia następnej instrukcji**, lub wykonaj w oknie debugera Obliczanie funkcji.  
   

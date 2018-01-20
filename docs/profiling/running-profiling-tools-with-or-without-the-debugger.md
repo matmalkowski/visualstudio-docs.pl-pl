@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchomione narzędzia profilowania z lub bez debugera
 Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre z nich (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchomić z lub bez debugera. Narzędzia non debugera wydajności są przeznaczone do uruchamiania na wersji konfiguracji, gdy debuger zintegrowane narzędzia są przeznaczone do uruchamiania na konfiguracji debugowania.  
@@ -52,7 +52,7 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
   
      Poniżej przedstawiono graficzne **narzędzia diagnostyczne** okna w Visual Studio 2015 Update 1:  
   
-     ![DiagnosticTools &#45; Aktualizację1](../profiling/media/diagnostictools-update1.png "aktualizację1 DiagnosticTools")  
+     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4.  Można wybrać, czy wyświetlane **użycie pamięci** lub **użycie procesora CPU** (lub obie) z **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise, można włączyć lub wyłączyć IntelliTrace w **narzędzia / Opcje / IntelliTrace**.  
   
@@ -77,7 +77,7 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
   
 2.  Na **debugowania** menu, wybierz **profilera wydajności...** (Klawisz skrótu: Alt + F2).  
   
-3.  Na stronie uruchamiania diagnostyki wybierz co najmniej jedno narzędzie do pracy w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do projektu typu systemu operacyjnego i język programowania. Po wybraniu narzędzie diagnostyczne są wyłączone wybrane narzędzia, których nie można uruchomić w tej samej sesji diagnostycznej. Oto, jak może wyglądać wybranych aplikacji C# uniwersalnych systemu Windows:  
+3.  Na stronie uruchamiania diagnostyki wybierz co najmniej jedno narzędzie do pracy w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do projektu typu systemu operacyjnego i język programowania. Po wybraniu narzędzie diagnostyczne są wyłączone wybrane narzędzia, których nie można uruchomić w tej samej sesji diagnostycznej. Oto, jak może wyglądać wybrane opcje dla aplikacji uniwersalnych systemu Windows C#:  
   
      ![Wybierz narzędzia diagnostyczne](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
@@ -123,7 +123,7 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
  ![Podaj adres url do wyświetlenia w programie Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Debugowanie zdalne  
- Uruchomiona na zdalnym komputerze lub tablecie sesji diagnostycznej wymaga programu Visual Studio Tools zdalnego zainstalowana i uruchomiona w celu zdalnego. Dla aplikacji klasycznych, zobacz [zdalnego debugowania](../debugger/remote-debugging.md).  Dla aplikacji uniwersalnych systemu Windows, temacie [aplikacji platformy uniwersalnej systemu Windows uruchom na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Uruchomiona na zdalnym komputerze lub tablecie sesji diagnostycznej wymaga programu Visual Studio Tools zdalnego zainstalowana i uruchomiona w celu zdalnego. Dla aplikacji klasycznych, zobacz [zdalnego debugowania](../debugger/remote-debugging.md).  W przypadku aplikacji platformy uniwersalnej systemu Windows, temacie [aplikacji platformy uniwersalnej systemu Windows uruchom na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Wpisy na blogu i artykuły MSDN z zespół deweloperów diagnostyki  
  [MSDN Magazine: Analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  

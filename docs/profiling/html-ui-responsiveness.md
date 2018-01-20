@@ -7,28 +7,23 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML w aplikacji uniwersalnych systemu Windows
 W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjach za pomocą Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępna dla uniwersalnych aplikacji systemu Windows.  
@@ -42,9 +37,9 @@ W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjac
 -   Visual aktualizacje, które są rzadziej niż oczekiwano. Dzieje się tak, jeśli wątek interfejsu użytkownika jest zbyt zajęty, aby zachować płynne szybkości. Na przykład jeśli trwa wątku interfejsu użytkownika mogą być opuszczane ramki. Niektóre wątku bez interfejsu użytkownika pracy, takich jak żądania sieci, dekodowanie obrazu, oraz farby można również ograniczyć częstotliwości aktualizacji visual. (Nie wszystkie rysowania odbywa się w wątku interfejsu użytkownika).  
   
 ##  <a name="RunningProfiler"></a>Uruchom narzędzie czasu odpowiedzi interfejsu użytkownika HTML  
- Podczas pracy platformy uniwersalnej systemu Windows lub Windows 8.1 aplikacja Otwórz w programie Visual Studio lub zainstalować na komputerze z systemem Windows 8 lub nowszym, można użyć narzędzia czasu odpowiedzi interfejsu użytkownika HTML.  
+ Jeśli masz pracy aplikacji platformy uniwersalnej systemu Windows, Otwórz w programie Visual Studio, można użyć narzędzia czasu odpowiedzi interfejsu użytkownika HTML.  
   
-1.  Jeśli korzystasz z aplikacji z programu Visual Studio na **standardowe** paska narzędzi w **Rozpocznij debugowanie** wybierz cel wdrożenia, takiej jak emulatory Windows Phone **komputera lokalnego** , **Symulatora**, lub **maszyny zdalnej**.  
+1.  Jeśli korzystasz z aplikacji z programu Visual Studio na **standardowe** paska narzędzi w **Rozpocznij debugowanie** wybierz cel wdrożenia, takich jak **komputera lokalnego** lub **Urządzenia**.  
   
 2.  Na **debugowania** menu, wybierz **profilera wydajności...** .  
   
@@ -115,7 +110,7 @@ W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjac
   
      Na poniższej ilustracji przedstawiono wykres wykorzystania CPU z obszaru zainteresowania wyróżnione.  
   
-     ![Wykres wykorzystania CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Użyj [wyświetlić szczegóły osi czasu](#TimelineDetails) Aby uzyskać szczegółowe informacje o zdarzeniach, które są uruchamiane zbyt często lub biorąc zbyt dużo czasu. Na przykład wyszukaj następujące czynności:  
   
@@ -203,7 +198,7 @@ if (performance.mark && performance.measure) {
   
  Ten przykład przedstawia Wykres wykorzystania CPU wygląda następująco:  
   
- ![Wykres wykorzystania CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  Użyj tego wykresu na:  
   
@@ -317,7 +312,7 @@ if (performance.mark && performance.measure) {
   
 -   **Wykonywanie skryptów.** Wskazuje czas analizowania i uruchamianie JavaScript. Obejmuje to zdarzenia modelu DOM, czasomierze, skryptów i pracy ramki animacji. Zawiera zarówno kod użytkownika i kod biblioteki.  
   
--   **WYKAZ GLOBALNY.** Wskazuje czas spędzony na wyrzucanie elementów bezużytecznych.  
+-   **GC.** Wskazuje czas spędzony na wyrzucanie elementów bezużytecznych.  
   
 -   **Style.** Wskazuje czas spędzony analizy CSS i obliczanie prezentacji i układu elementu.  
   

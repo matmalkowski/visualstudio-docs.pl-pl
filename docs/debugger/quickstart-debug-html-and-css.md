@@ -1,5 +1,5 @@
 ---
-title: Debugowanie kodu HTML i CSS (platformy uniwersalnej systemu Windows i Windows 8.1 aplikacji) | Dokumentacja firmy Microsoft
+title: Debugowanie kodu HTML i CSS w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Debugowanie kodu HTML i CSS w aplikacji Windows 8.1 i platformy uniwersalnej systemu Windows
-![Ma zastosowanie do systemu Windows i Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie HTML i CSS w aplikacjach platformy uniwersalnej systemu Windows w programie Visual Studio
   
- W przypadku aplikacji JavaScript programu Visual Studio zapewnia kompleksowe środowisko debugowania, które zawiera funkcje, które są znane deweloperom korzystającym z programu Internet Explorer i Visual Studio. Te funkcje są obsługiwane dla aplikacji platformy UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplikacje Windows Phone oraz aplikacje utworzone za pomocą programu Visual Studio Tools for Apache Cordova.  
+ W przypadku aplikacji JavaScript programu Visual Studio zapewnia kompleksowe środowisko debugowania, które zawiera funkcje, które są znane deweloperom korzystającym z programu Internet Explorer i Visual Studio. Te funkcje są obsługiwane dla aplikacji platformy uniwersalnej systemu Windows i aplikacje utworzone za pomocą programu Visual Studio Tools for Apache Cordova.  
   
  Przy użyciu interaktywnych model debugowania dostarczone przez narzędzia inspekcji w modelu DOM, można wyświetlać i modyfikować renderowany kod HTML i CSS. Można to zrobić bez zatrzymania i ponownego uruchomienia debugera.
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Utwórz nowe rozwiązanie programu Visual Studio, wybierając **pliku** > **nowy projekt**.  
   
-2.  Wybierz **JavaScript** > **magazynu**, albo wybierz **aplikacji systemu Windows** lub **aplikacji Windows Phone**, a następnie wybierz pozycję  **Pusta aplikacja**.  
+2.  Wybierz **JavaScript** > **uniwersalnych systemu Windows**, a następnie wybierz pozycję **aplikacji WinJS**.  
   
 3.  Wpisz nazwę projektu, takie jak `FlipViewApp`i wybierz polecenie **OK** do utworzenia aplikacji.  
   
-4.  W elemencie BODY default.html Dodaj ten kod:  
+4.  W elemencie BODY index.html Dodaj ten kod:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     Na poniższej ilustracji przedstawiono co chcesz zobaczyć możemy uruchomić tę aplikację w emulatorze telefonu (wygląda podobnie w symulatorze). Aby pobrać aplikację w tym stanie firma Microsoft będzie jednak ustalenie liczbę usterek.  
+     Na poniższej ilustracji przedstawiono co chcesz zobaczyć, jeśli firma Microsoft uruchomić tej aplikacji. Aby pobrać aplikację w tym stanie firma Microsoft będzie jednak ustalenie liczbę usterek.  
   
      ![Właściwości FlipView aplikacji przedstawiający oczekiwanych rezultatów](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Wybierz **symulatora** lub **Emulator 8.1 WVGA 4 cala 512MB** z listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** znajdującego się na **debugowania**narzędzi:  
+7.  Wybierz **komputera lokalnego** z listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** znajdującego się na **debugowania** narzędzi:  
   
      ![Wybierz opcję debugowania listy docelowej](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Wybierz **debugowania** > **Rozpocznij debugowanie**, lub naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.  
   
-     Uruchomienie aplikacji w symulatorze lub w emulatorze telefonu, ale zobaczysz ekran przede wszystkim puste, ponieważ style ma kilka błędów. Pierwszy `FlipView` obraz zostanie wyświetlony w małych kwadratowe pobliżu środka ekranu.  
-  
-9. Jeśli korzystasz z aplikacji w symulatorze, wybierz **zmienić rozdzielczość** polecenia narzędzi po prawej stronie symulatora, aby skonfigurować o rozdzielczości ekranu 1280 x 800. Daje to pewność, że wartości podanych w poniższych krokach zgodne, zostanie wyświetlony w symulatorze.  
+     Ta funkcja jest uruchamiana aplikacja, ale zobaczysz ekran przede wszystkim puste, ponieważ style ma kilka błędów. Pierwszy `FlipView` obraz zostanie wyświetlony w małych kwadratowe pobliżu środka ekranu.  
   
 10. Przełącz się do programu Visual Studio i wybierz **Eksploratora modelu DOM** kartę.  
   
@@ -169,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 11. W oknie Eksploratora modelu DOM, wybierz element DIV sekcji, która ma identyfikator równy `"fView"`. Aby wyświetlić i wybrać poprawny element DIV, użyj klawiszy strzałek. (Klawisz strzałki w prawo umożliwia wyświetlanie elementów podrzędnych).  
   
-     ![Narzędzia DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  DIV element można wybrać w lewym dolnym rogu okna konsoli języka JavaScript, wpisując `select(fView)` na >> danych wejściowych wiersza, a następnie naciśnij klawisz Enter.  
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. W głównym oknie Eksploratora modelu DOM, kliknij dwukrotnie styl wbudowany wysokość i szerokość `fView` DIV element. Można teraz edytować wartości w tym miejscu. W tym scenariuszu chcemy całkowicie usunąć.  
   
-15. Wybierz `width: 100px;height: 100px;`, naciśnij klawisz Delete, a następnie naciśnij klawisz Enter. Po naciśnięciu klawisza Enter nowe wartości są natychmiast odzwierciedlone w symulatorze lub w emulatorze telefonu, mimo że nie zatrzymał sesję debugowania.  
+15. W oknie głównym kliknij dwukrotnie `width: 100px;height: 100px;`, naciśnij klawisz **usunąć** klucza, a następnie naciśnij klawisz **Enter**. Po naciśnięciu klawisza Enter nowe wartości są natychmiast odzwierciedlone w aplikacji, chociaż nie zostało to jeszcze zatrzymać sesję debugowania.  
   
     > [!IMPORTANT]
     >  Jak można zaktualizować atrybutów w oknie Eksploratora modelu DOM, można także zaktualizować wartości, które znajdują się w **style**, **Computed**, i **układu** karty. Aby uzyskać więcej informacji, zobacz [stylów CSS debugowania przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md) i [układu debugowania za pomocą narzędzia DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Przełącz się do aplikacji, wybierając symulator lub w emulatorze telefonu lub za pomocą Alt + Tab.  
+16. Przełącz się do aplikacji, wybierając go lub za pomocą Alt + Tab.  
   
      Teraz `FlipView` formantu jest większy niż rozmiar ekranu symulator lub w emulatorze telefonu. To nie jest zamierzone wynik. Aby zbadać, przełącz się do programu Visual Studio.  
   
-17. W programie DOM Explorer wybierz **Computed** karcie ponownie, a następnie otwórz reguły wysokość. FView element nadal znajduje się wartość 100%, zgodnie z oczekiwaniami z CSS, ale obliczona wartość jest równa wysokość ekranu symulatora (na przykład 800 piks lub 667.67px), czyli nie co chcemy dla tej aplikacji. Aby zbadać, można usunąć wysokość i szerokość dla `fView` DIV element.  
+17. W programie DOM Explorer wybierz **Computed** karcie ponownie, a następnie otwórz reguły wysokość. FView element nadal znajduje się wartość 100%, zgodnie z oczekiwaniami z CSS, ale obliczona wartość jest równa wysokość ekranu aplikacji (na przykład 800 piks 667.67px lub wartość), który jest nie co chcemy dla tej aplikacji. Aby zbadać w następnych krokach usuwamy wysokość i szerokość dla `fView` DIV element.  
   
 18. W **style** karcie, usuń zaznaczenie pola wyboru właściwości wysokość i szerokość dla `#fView` selektora CSS.  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. Aby zbadać, przełącz się do programu Visual Studio i wybierz **układu** kartę, aby przyjrzeć się elementu pola modelu.  
   
-     W **układu** kartę, pojawi się następujące wartości:  
+     W **układu** kartę, pojawi się następujące:  
   
-    -   Dla symulator: 320px (przesunięcie) i 320px (marginesu).  
+    -   255px (przesunięcie) i 255px (marginesu) lub wartości podobnie, w zależności od rozdzielczości urządzenia. 
   
-    -   Na emulatorze telefonu: 100px (przesunięcie) i 100px (marginesu).  
-  
-     Na poniższej ilustracji pokazano sposób **układu** wygląda kartę, jeśli używasz emulatora telefonu (przesunięcie 100px i marginesu).  
+     Na poniższej ilustracji pokazano sposób **układu** wygląda kartę, jeśli używasz emulatora z przesunięcia 100px i marginesu).  
   
      ![Karta Układ Eksploratora modelu DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  Wyróżnianie elementów poprzez ustawienie nad nimi wskaźnika jest obsługiwane tylko częściowo w Emulator Windows Phone.  
   
- Na przykład, który demonstruje sposób wybierania elementów za pomocą **Select element** przycisku, zobacz [stylów CSS debugowania przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
-  
-##  <a name="BrowserSupport"></a>Przeglądarki i obsługa Platform  
- Eksplorator modelu DOM i okna konsoli języka JavaScript są obsługiwane na następujących platformach:  
-  
--   Aplikacje platformy UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] i aplikacji Windows Phone przy użyciu języka JavaScript i HTML  
-  
--   Z programu Internet Explorer 11[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Uruchomiony programie Internet Explorer 10[!INCLUDE[win8](../debugger/includes/win8_md.md)]  
-  
- Przejdź [tutaj](http://go.microsoft.com/fwlink/?LinkID=232448) do pobrania [!INCLUDE[win8](../debugger/includes/win8_md.md)] i Visual Studio.  
-  
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Debugowanie stylów CSS przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)   
- [Podgląd odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)   
  [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)   
  [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md)   

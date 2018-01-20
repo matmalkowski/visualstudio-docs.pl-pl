@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zużycie energii aplikacji platformy uniwersalnej systemu Windows na tablecie niskiego poboru energii urządzenia z systemem całość lub część czasu na ich własnych baterii. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii można zwiększyć wdrożenia aplikacji i korzystać przez klientów.  
@@ -106,7 +106,7 @@ if (performance && performance.mark) {
      Program Visual Studio analizuje zebrane dane i wyświetla wyniki.  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>Zbieranie danych profilu energii dla zainstalowanych aplikacji  
- Narzędzie Zużycie energii można uruchomić jedynie dla aplikacji do Sklepu Windows 8.1 uruchamianych z poziomu rozwiązania programu Visual Studio lub zainstalowanych ze Sklepu Windows. Gdy rozwiązanie jest otwarty w programie Visual Studio, domyślny obiekt docelowy jest **projekt startowy**. Aby określić zainstalowaną aplikację jako obiekt docelowy:  
+ Narzędzie zużycia energii można uruchomić tylko na aplikacji platformy uniwersalnej systemu Windows, które są uruchamiane z rozwiązania Visual Studio lub są instalowane z Microsoft Store. Gdy rozwiązanie jest otwarty w programie Visual Studio, domyślny obiekt docelowy jest **projekt startowy**. Aby określić zainstalowaną aplikację jako obiekt docelowy:  
   
 1.  Wybierz **zmiany docelowego** , a następnie wybierz **zainstalowanych aplikacji**.  
   

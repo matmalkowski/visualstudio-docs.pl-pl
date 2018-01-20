@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 1d2f023900735b2e8f3f2235850ab55ec6237efc
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debuger programu Visual Studio
 Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następujące czynności  
@@ -32,7 +32,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
   
 -   Porównaj migawek, aby znaleźć przyczynę problemy z pamięcią.  
   
- W tym temacie opisano sposób analizowania aplikacji Windows Universal XAML za pomocą narzędzia użycia pamięci. Jeśli chcesz Analiza użycia pamięci w aplikacji uniwersalnych systemu Windows, które JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+ W tym temacie opisano sposób narzędzie wykorzystanie pamięci do analizowania aplikacji platformy uniwersalnej systemu Windows w języku XAML. Jeśli chcesz Analiza użycia pamięci w aplikacji platformy uniwersalnej systemu Windows używającej języka JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](../profiling/javascript-memory.md).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Uruchom sesję diagnostyki użycia pamięci  
   
@@ -138,7 +138,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
 |||  
 |-|-|  
 |**Typ obiektu**|Nazwa wystąpienia typu lub obiektu.|  
-|**Liczba**|Liczba wystąpień obiektu tego typu. Liczba ma zawsze numer 1 dla wystąpienia.|  
+|**Count**|Liczba wystąpień obiektu tego typu. Liczba ma zawsze numer 1 dla wystąpienia.|  
 |**Rozmiar (w bajtach)**|Dla typu, rozmiaru wszystkie wystąpienia typu migawki pamięci, z wyłączeniem rozmiar obiekty należące do wystąpienia.<br /><br /> Wystąpienie typu, rozmiaru obiektu, z wyłączeniem rozmiar obiektów zawartych w wystąpieniu. wystąpienia.|  
 |**Całkowity rozmiar (w bajtach)**|Rozmiar wystąpienia typu lub rozmiaru pojedynczego wystąpienia, takich jak rozmiar zawartych w nim obiektów.|  
   
@@ -179,7 +179,7 @@ Można użyć **użycie pamięci** narzędzia bez debugowania wykonać następuj
 |||  
 |-|-|  
 |**Typ obiektu**|Nazwa wystąpienia typu lub obiektu.|  
-|**Liczba**|Liczba wystąpień typu podstawowego migawki. **Liczba** ma zawsze numer 1 dla wystąpienia.|  
+|**Count**|Liczba wystąpień typu podstawowego migawki. **Liczba** ma zawsze numer 1 dla wystąpienia.|  
 |**Liczba różnicowego**|Dla typu różnicę w liczbie wystąpień typu podstawowego migawki i poprzednią migawkę. To pole jest puste w przypadku wystąpienia.|  
 |**Rozmiar (w bajtach)**|Rozmiar obiektów w migawce głównej, z wyłączeniem rozmiar obiekty znajdujące się w obiektach. Dla typu **rozmiar (w bajtach)** i **całkowity rozmiar (w bajtach)** są sumy rozmiary wystąpienia typu.|  
 |**Diff całkowity rozmiar (w bajtach)**|Dla typu różnicę w całkowity rozmiar wystąpienia typu podstawowego migawki i poprzednią migawkę, z wyłączeniem rozmiar obiekty należące do wystąpienia. To pole jest puste w przypadku wystąpienia.|  

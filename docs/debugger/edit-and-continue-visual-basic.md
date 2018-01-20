@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Edytuj i kontynuuj (Visual Basic)
 Edytuj i Kontynuuj jest funkcją [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] debugowania, który umożliwia zmianę kodu podczas wykonywania w trybie przerwania. Po zastosowaniu edycji kodu można wznowić wykonywanie kodu nowe edycji w miejscu i zobaczyć efekt.  
@@ -42,7 +42,7 @@ Edytuj i Kontynuuj jest funkcją [!INCLUDE[vbprvb](../code-quality/includes/vbpr
  Edytuj i Kontynuuj jest obsługiwana w aplikacji platformy uniwersalnej systemu Windows dla systemu Windows 10 i x86 i x64 aplikacji przeznaczonych dla platformy .NET Framework 4.6 pulpitu lub nowszej wersji (.NET Framework jest tylko wersja desktop).
 
  > [!NOTE]
- > Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, emulator programu Silverlight 5, Windows Phone i Windows Phone i Windows 8.1.
+ > Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, Silverlight 5 i Windows 8.1.
   
  Edytuj i Kontynuuj nie jest obsługiwana po rozpoczęciu debugowania przy użyciu **dołączyć do procesu**. Edytuj i Kontynuuj nie jest obsługiwana dla zoptymalizowanego kodu lub mieszane kodu zarządzanego i natywnego. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic](../debugger/supported-code-changes-csharp.md).
   

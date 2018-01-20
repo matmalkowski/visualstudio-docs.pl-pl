@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania
 Można uzyskać w czasie rzeczywistym widok kodu XAML uruchomionego za pomocą **dynamicznym drzewie wizualnym** i **Live Explorer właściwości**. Te narzędzia umożliwiają widoku drzewa elementów interfejsu użytkownika w uruchomionej aplikacji XAML i wyświetlić właściwości środowisko uruchomieniowe dowolny element interfejsu użytkownika, którą wybierzesz.  
@@ -27,7 +27,6 @@ Można uzyskać w czasie rzeczywistym widok kodu XAML uruchomionego za pomocą *
 |Typ aplikacji|System operacyjny i narzędzia|  
 |-----------------|--------------------------------|  
 |Aplikacje systemu Windows Presentation Foundation (4.0 i nowsze)|Windows 7 i nowsze|  
-|Windows 8.1 i Windows Phone 8.1 aplikacji|Windows 10 i nowsze, z [systemu Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |Aplikacje uniwersalne systemu Windows|Windows 10 i nowsze, z [systemu Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Trwa wyszukiwanie elementów dynamiczne drzewo wizualne  

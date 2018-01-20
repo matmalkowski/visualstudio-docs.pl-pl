@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikacji Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalny debuger programu Visual Studio.
@@ -34,12 +34,11 @@ Aby uzyskać szczegółowe instrukcje na debugowanie zdalne zobacz następujące
 
 |Scenariusz|Łącze|
 |-|-|-|
+|Azure|[Debugowanie ASP.NET w usłudze Azure App Service (debuger migawki)](../debugger/debug-live-azure-applications.md), [zdalnego debugowania ASP.NET na platformie Azure](../debugger/remote-debugging-azure.md), lub [debugowania aplikacji usługi sieć szkieletowa usług Azure](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Zdalne debugowanie platformy ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) lub [zdalnego debugowania ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# lub Visual Basic|[Zdalne debugowanie C# lub Visual Basic projektu](../debugger/remote-debugging-csharp.md)|
-|C++|[Zdalne debugowanie projektu C++](../debugger/remote-debugging-cpp.md)|
+|C# lub Visual Basic|[Zdalne debugowanie projektu C# lub Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C++|[Debugowanie zdalne projektu C++](../debugger/remote-debugging-cpp.md)|
 |Aplikacje uniwersalne systemu Windows (UWP)|[Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) i [debugowania pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)|
-|Azure|[Zdalne debugowanie ASP.NET na platformie Azure](remote-debugging-azure.md)|
-|Sieć szkieletowa usług Azure|[Debugowanie aplikacji sieci szkieletowej usług zdalnej](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Jeśli po prostu chcesz pobrać i zainstalować zdalny debuger i nie wymagają żadnych dodatkowych instrukcji dla danego scenariusza, wykonaj kroki opisane w tym artykule.
   
@@ -51,11 +50,11 @@ Jeśli po prostu chcesz pobrać i zainstalować zdalny debuger i nie wymagają �
 
 Zdalny debuger można znaleźć (**msvsmon.exe**) na komputerze przy użyciu programu Visual Studio Community, Professional lub Enterprise już zainstalowana. W niektórych scenariuszach Najprostszym sposobem konfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon.exe) z udziału plików. Ograniczenia użycia, zobacz stronę pomocy zdalny debuger (**Pomoc > użycia** w zdalnym debugerze).
 
-1. Znajdź **msvsmon.exe** w katalogu odpowiadającym używanej wersji programu Visual Studio. Dla programu Visual Studio Enterprise 2017:
+1. Znajdź **msvsmon.exe** w katalogu odpowiadającym używanej wersji programu Visual Studio. For Visual Studio Enterprise 2017:
 
-      **Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
-      **Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
 2. Udział **zdalnego debugera** folderu na komputerze programu Visual Studio.
 

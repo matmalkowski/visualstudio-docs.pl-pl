@@ -1,7 +1,7 @@
 ---
 title: "Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio
-![Dotyczy tylko systemów Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Funkcja wdrożenia programu Visual Studio tworzy i rejestruje aplikacji platformy uniwersalnej systemu Windows, które są tworzone w programie Visual Studio na urządzeniu docelowym. Dokładnie, jak jest zarejestrowana aplikacja, zależy od tego, czy urządzenie docelowe jest lokalnym lub zdalnym:  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 Na zdalnym urządzeniu z systemem Windows 10, należy włączyć [tryb dewelopera](/windows/uwp/get-started/enable-your-device-for-development). Na urządzeniach z systemem Windows 10 systemem twórcy aktualizacji lub później, zdalne narzędzia są instalowane automatycznie podczas wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [debugowania pakietu aplikacji zainstalowanych](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> W wersji aktualizacji sprzed twórcy systemu Windows 10 i Windows 8.1 narzędzi Remote Tools for Visual Studio musi być zainstalowany na urządzeniu zdalnym i zdalnego debugera musi być uruchomiona. Na Windows 8.1 należy również zainstalować licencję dewelopera.
+> Na wstępnie twórcy wersje aktualizacji systemu Windows 10 narzędzi Remote Tools for Visual Studio musi być zainstalowany na urządzeniu zdalnym i zdalnego debugera musi być uruchomiona.
   
 Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplikacji do urządzenia zdalnego.  
   
@@ -117,5 +115,6 @@ Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplika
 -   Na stronie właściwości JavaScript i debugowania, ustaw **uruchamianie aplikacji** do wartości **tak**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie pakietu aplikacji zainstalowanych](../debugger/debug-installed-app-package.md).   
+ [Zaawansowane opcje zdalnego wdrażania](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Debugowanie pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)   
  [Uruchamianie aplikacji w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

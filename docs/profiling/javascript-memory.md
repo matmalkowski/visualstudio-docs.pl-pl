@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci JavaScript w aplikacji platformy uniwersalnej systemu Windows
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby określić sposób użycia pamięci i Znajdź przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows dla systemu Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje dla uniwersalnych aplikacji systemu Windows.
@@ -48,36 +43,14 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio, aby okr
   
      Obiekty, które nie są tworzone bezpośrednio w kodzie aplikacji automatycznie są odfiltrowywane. Można także filtrować dane według nazwy obiektu.  
   
- Samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w pracy aplikacji, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
-  
- W tym temacie:  
-  
- [Uruchom narzędzie JavaScript memory analyzer](#Run)   
- [Sprawdź użycie pamięci](#Check)   
- [Izolowanie przeciek pamięci](#Isolate)   
- [Wyświetl podsumowanie użycia pamięci na żywo](#LiveMemory)   
- [Wyświetlanie podsumowania migawki](#SnapshotSummary)   
- [Wyświetl szczegóły migawki](#SnapshotDetails)   
- [Wyświetlić diff migawki](#SnapshotDiff)   
- [Wyświetl obiekty wg dominatora](#FoldObjects)   
- [Filtrowanie danych za pomocą identyfikatora](#Filter)   
- [Znajdź obiektu drzewa obiektów](#ShowInRootsView)   
- [Umożliwia wyświetlanie odwołań do udostępnionego obiektu](#References)   
- [Pokaż obiekty wbudowane](#BuiltInValues)   
- [Zapisywanie plików sesji diagnostycznej](#Save)   
- [Skojarz kodu źródłowego z danych użycia pamięci](#JSConsoleCommands)   
- [Porady dotyczące identyfikowania problemy z pamięcią](#Tips)  
-  
 ##  <a name="Run"></a>Uruchom narzędzie JavaScript memory analyzer  
- Analizator pamięci można użyć w przypadku aplikacji dla platformy UWP pracy Otwórz w programie Visual Studio lub zainstalowany na komputerze, na którym działa [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszym.  
+ Analizator pamięci można użyć podczas pracy aplikacji platformy uniwersalnej systemu Windows, Otwórz w programie Visual Studio.
   
 #### <a name="to-run-the-memory-analyzer"></a>Aby uruchomić analizator pamięci  
   
 1.  Otwórz program Visual Studio.  
   
-2.  Jeśli korzystasz z aplikacji z programu Visual Studio w **Rozpocznij debugowanie** listy na **standardowe** narzędzi wybierz cel debugowania dla projektu: albo Emulator Windows Phone lub, w przypadku aplikacji platformy uniwersalnej systemu Windows  **Komputer lokalny**, **symulatora**, lub **maszyny zdalnej**.  
-  
-     Aby uzyskać więcej informacji o tych opcjach, zobacz [uruchamiać aplikacje w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  Jeśli korzystasz z aplikacji z programu Visual Studio w **Rozpocznij debugowanie** listy na **standardowe** narzędzi wybierz cel debugowania dla projektu: albo **komputera lokalnego** lub **Urządzenia**.  
   
 3.  Na pasku menu wybierz **debugowania**, **profilera wydajności...** .  
   
@@ -400,6 +373,3 @@ if (performance && performance.mark) {
          Aby wyizolować problemy, które nie izolować przez ręczne tworzenie migawki sterty można używać tych poleceń.  
   
     -   Utwórz obiekt testowy i śledzenia ją w widokach analizator pamięci JavaScript, takie jak wyświetlanie typów. Na przykład bardzo duży obiekt można dołączyć do innego obiektu, aby zobaczyć, czy określony obiekt lub element został zbierane pamięci.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

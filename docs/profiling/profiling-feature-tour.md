@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Przegląd funkcji profilowania
 
@@ -32,7 +32,7 @@ Podczas debugowania, można użyć **narzędzia diagnostyczne** okna do analizow
 
 ![Wyświetl podsumowanie narzędzia diagnostyczne](../profiling/media/prof-tour-cpu-and-memory-graph.gif "podsumowanie narzędzia diagnostyczne")
 
-**Narzędzia diagnostyczne** okno często jest preferowany sposób do profilu aplikacji, ale można również zamiast tego wykonaj analizę których post aplikacji. Aby uzyskać więcej informacji na temat różnych metod, zobacz [uruchomione profilowanie narzędzia z lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+**Narzędzia diagnostyczne** okno często jest preferowany sposób do profilu aplikacji, ale dla wersji kompilacji można również wykonać analizę których post aplikacji zamiast tego. Aby uzyskać więcej informacji na temat różnych metod, zobacz [uruchomione profilowanie narzędzia z lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Aby wyświetlić profilowania Obsługa narzędzi dla różnych typów aplikacji, zobacz [narzędzie, które należy używać?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analiza użycia procesora CPU
 
@@ -119,13 +119,13 @@ Umożliwia także wykresy do sprawdzenia, czy istnieją powiązane Procesora GPU
 
 ## <a name="analyze-performance-javascript"></a>Analizowanie wydajności (JavaScript)
 
-W przypadku aplikacji HTML uniwersalnych systemu Windows można użyć narzędzi pamięć języka JavaScript i HTML czasu odpowiedzi interfejsu użytkownika.
+W przypadku aplikacji platformy uniwersalnej systemu Windows można użyć narzędzi pamięć języka JavaScript i HTML czasu odpowiedzi interfejsu użytkownika.
 
 Narzędzi pamięć języka JavaScript jest podobny do narzędzia do użycia pamięci dostępne dla innych typów aplikacji. Za pomocą tego narzędzia, aby określić sposób użycia pamięci i znaleźć przecieki pamięci w aplikacji. Aby uzyskać więcej informacji o tym narzędziu, zobacz [pamięci JavaScript](../profiling/javascript-memory.md).
 
 ![Narzędzia profilowania pamięci JavaScript](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-Aby zdiagnozować czasu odpowiedzi interfejsu użytkownika, powolne ładowanie czasu i powolne aktualizacji visual w aplikacji Windows Universal HTML, narzędzie czasu odpowiedzi interfejsu użytkownika HTML. Użycie jest podobny do narzędzia osi czasu aplikacji dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md).
+Aby zdiagnozować czasu odpowiedzi interfejsu użytkownika, powolne ładowanie czasu i powolne aktualizacji visual w aplikacji platformy uniwersalnej systemu Windows, narzędzie czasu odpowiedzi interfejsu użytkownika HTML. Użycie jest podobny do narzędzia osi czasu aplikacji dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md).
 
 ![Narzędzia profilowania czasu odpowiedzi interfejsu użytkownika HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,14 +151,14 @@ Jeśli potrzebne funkcje, takie jak instrumentacji, które nie są aktualnie dos
 
 Poniżej przedstawiono listę różnych narzędzi, których program Visual Studio oferuje i projekty różnych typów można używać ich z:
   
-|Narzędzia wydajności|System Windows desktop|Magazynu uniwersalnego systemu Windows|Podstawowe ASP.NET/ASP.NET|  
+|Narzędzia wydajności|System Windows desktop|Platforma UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak|  
 |[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak (nie dla platformy .NET Core Core/ASP.NET)|  
 |[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak|  
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|  
-|[Wskazówek](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|  
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak (nie dla platformy ASP.NET Core)|  
+|[PerfTips](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|  
+|[Performance Explorer](../profiling/performance-explorer.md)|Tak|Brak|Tak (nie dla platformy ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|.NET i Visual Studio Enterprise|.NET i Visual Studio Enterprise|.NET i Visual Studio Enterprise|
 |[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak| 
 |[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak, aby HTML, nie dla XAML|Brak|  

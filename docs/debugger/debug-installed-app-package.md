@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Debugowanie pakietu aplikacji zainstalowanych w programie Visual Studio (UWP)
 
@@ -91,9 +91,6 @@ Podczas debugowania pakietu aplikacji zainstalowanych na komputerze zdalnym po r
 
      > [!NOTE]
 > Przedstawia XBox lub urządzenia HoloLens uruchomi aplikację w debugerze, jeśli jest już uruchomiona.
-
-> [!NOTE]
-> Aplikacji platformy uniwersalnej systemu Windows mogą być opracowane i skompilowany w systemie Windows 8.1 lub nowszym, ale wymaga systemu Windows 10 do uruchomienia. Jeśli tworzysz aplikację platformy uniwersalnej systemu Windows na komputerach z systemem Windows 8.1 można zdalne debugowanie aplikacji platformy uniwersalnej systemu Windows uruchomionej na innym urządzeniu z systemem Windows 10, pod warunkiem, że komputer hosta i docelowy znajdują się w tej samej sieci LAN. Aby to zrobić, należy pobrać i zainstalować narzędzia Remote Tools for Visual Studio na obu komputerach. Zainstalowana wersja musi być zgodna istniejącej wersji programu Visual Studio, który został zainstalowany i architektura wybierz (x 64 x86) musi być również zgodna z docelowej aplikacji.
 
 Aby uzyskać informacje na Zaawansowane opcje zdalnego wdrażania usług aplikacji platformy uniwersalnej systemu Windows, zobacz [wdrażanie i debugowanie aplikacji platformy uniwersalnej systemu Windows](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   

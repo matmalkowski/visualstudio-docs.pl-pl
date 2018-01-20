@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Obsługiwane zmiany kodu (C# i Visual Basic)
 Edytuj i Kontynuuj obsługuje większość typów zmian kodu w treści metody. Większość zmian poza treść metody i kilka zmian w treści metody nie można zastosować podczas debugowania, jednak. Aby zastosować te zmiany nieobsługiwany, należy zatrzymać debugowanie i ponowne uruchomienie programu kodu.
@@ -86,7 +86,7 @@ Poniższa tabela zawiera zmiany, które mogą być nawiązywane C# i Visual Basi
 
 ## <a name="unsupported-app-scenarios"></a>Scenariusze nieobsługiwane aplikacji
 
-Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, emulator programu Silverlight 5, Windows Phone i Windows Phone i Windows 8.1.
+Nieobsługiwany aplikacji i platform obejmują ASP.NET 5, Silverlight 5 i Windows 8.1.
 
 > [!NOTE]
 > Aplikacje, które są obsługiwane obejmują platformy uniwersalnej systemu Windows w systemie Windows 10 i x86 i x64 aplikacji przeznaczonych dla platformy .NET Framework 4.6 pulpitu lub nowszej wersji (.NET Framework jest tylko wersja desktop).

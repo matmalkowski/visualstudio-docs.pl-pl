@@ -1,5 +1,5 @@
 ---
-title: "Odśwież platformy uniwersalnej systemu Windows lub Windows 8.1 aplikacji | Dokumentacja firmy Microsoft"
+title: "Odświeżanie aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>Odśwież platformy uniwersalnej systemu Windows lub Windows 8.1 aplikacji
-![Ma zastosowanie do systemu Windows i Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Odśwież w aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
   
- Można wprowadzić zmiany w kodzie podczas debugowania kodu, a następnie Odśwież aplikacji platformy uniwersalnej systemu Windows, przy użyciu języka JavaScript, wybierając **aplikacji odświeżania systemu Windows** znajdującego się na **debugowania** paska narzędzi. Wybranie tego przycisku ponowne załadowanie aplikacji bez zatrzymania i ponownego uruchomienia debugera. Funkcja odświeżania umożliwia modyfikowanie kodu HTML, CSS i JavaScript i szybko wyświetlić wyniki. Ta funkcja jest obsługiwana w przypadku aplikacji platformy uniwersalnej systemu Windows i Windows 8.1.  
+ Można wprowadzić zmiany w kodzie podczas debugowania kodu, a następnie Odśwież aplikacji platformy uniwersalnej systemu Windows, przy użyciu języka JavaScript, wybierając **aplikacji odświeżania systemu Windows** znajdującego się na **debugowania** paska narzędzi. Wybranie tego przycisku ponowne załadowanie aplikacji bez zatrzymania i ponownego uruchomienia debugera. Funkcja odświeżania umożliwia modyfikowanie kodu HTML, CSS i JavaScript i szybko wyświetlić wyniki. Ta funkcja jest obsługiwana w przypadku aplikacji platformy uniwersalnej systemu Windows.  
   
  Odświeżanie nie zarządzania stanem Twojej aplikacji lub uwzględnić następujące zmiany do swojej aplikacji:  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>Aby odświeżyć aplikacji  
   
-1.  W programie Visual Studio Utwórz nowy projekt za pomocą szablonu projektu aplikacji nawigacji.  
-  
-     Może to być aplikacji platformy uniwersalnej systemu Windows lub aplikacji Windows 8.1.  
-  
-2.  Przy użyciu szablonu należy otworzyć w programie Visual Studio, wybierz cel debugowania.  
-  
-     Jeśli projekt Windows Phone Twój bieżący projekt startowy, wybierz emulator Windows Phone dla elementu docelowego debugowania. W przeciwnym razie wybierz **symulatora** lub **komputera lokalnego**.  
+1.  Z projektu platformy uniwersalnej systemu Windows otwórz w programie Visual Studio, wybierz **komputera lokalnego** jako cel debugowania.
   
      ![Wybierz opcję debugowania listy docelowej](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  Naciśnij klawisz F5, aby uruchomić aplikację w trybie debugowania.  
   
-4.  Przełącz się do programu Visual Studio. (Naciśnij klawisz F12).  
+4.  Przełącz się do programu Visual Studio. 
   
-5.  W **Eksploratora rozwiązań**w **stron** > **macierzystego** folder, otwórz home.html.  
-  
-6.  Zmień tekst tytułu strony z  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     do czegoś innego następująco:  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  Na stronie głównej aplikacji platformy uniwersalnej systemu Windows edycji niektórych kodu HTML.
   
 7.  Kliknij przycisk **aplikacji odświeżania systemu Windows** przycisku, który wygląda podobnie do następującej: ![przycisk aplikacji odświeżania systemu Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Lub naciśnij klawisz F4.)  
   
-8.  Przełącz się do aplikacji. Aplikacja zostanie ponownie załadowana bez ponownego uruchamiania debugera i pojawi się nowy tytuł strony.  
+8.  Przełącz się do aplikacji. Aplikacja zostanie ponownie załadowana i zaktualizowane HTML używany do renderowania aplikacji.
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

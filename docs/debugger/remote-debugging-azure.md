@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core usług IIS i platformy Azure w programie Visual Studio 2017 r.
-Możesz wdrożyć aplikację sieci Web programu ASP.NET na komputerze z systemem Windows Server z usługami IIS i skonfigurować go do zdalnego debugowania. W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.
+Dla usługi Azure App Service, zaleca się debugowania za pomocą [debugera migawki](../debugger/debug-live-azure-applications.md) lub możesz wykonać instrukcje w tym temacie, można dołączyć debugera z programu Visual Studio. Jeśli używasz systemu Windows Server z usługami IIS na maszynie Wirtualnej platformy Azure, możesz również ustawić dla zdalnego debugowania. W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.
 
 > [!WARNING]
 > Pamiętaj usunąć zasobów platformy Azure, utworzonych po wykonaniu kroków opisanych w tym samouczku. Dzięki temu można uniknąć naliczania opłat niepotrzebne.
@@ -93,10 +93,10 @@ Podczas otwierania portu 80 w grupie zabezpieczeń sieci, należy również otwo
 
 W zależności od ustawień zabezpieczeń przeglądarki go zapisać czasu, należy dodać następujące zaufanych witryn do przeglądarki, można łatwo pobrać opisane w tym samouczku oprogramowanie. Może być wymagany dostęp do tych witryn:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
-- witrynie Download.microsoft.com
-- Visual Studio —
+- download.microsoft.com
+- visualstudio.com
 
 Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
@@ -184,7 +184,7 @@ Jeśli nie używasz narzędzia Web Deploy, należy opublikować i wdrażanie apl
 2. W programie Visual Studio, kliknij przycisk **Debuguj > dołączyć do procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > W programie Visual Studio 2017 r, możesz ponownie dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie dołączyć do procesu...** (Shift + Alt + P). 
+    > W programie Visual Studio 2017 r, możesz ponownie dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie dołączyć do procesu...** (Shift+Alt+P). 
 
 3. Ustaw dla pola kwalifikator  **\<nazwę komputera zdalnego >: 4022**.
 4. Kliknij przycisk **Odśwież**.

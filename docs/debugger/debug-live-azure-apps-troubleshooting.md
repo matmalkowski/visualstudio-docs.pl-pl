@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące migawki debugowania w programie Visual Studio
 
@@ -71,6 +71,17 @@ Wykonaj następujące czynności:
 - Zmienne specjalne, takie jak *$FUNCTION* lub *$CALLER*, nie można obliczyć w instrukcji warunkowej lub logpoints dla projektów platformy ASP.NET Core.
 - Debugowanie migawki nie działa na usługi aplikacji, która ma [buforowanie lokalne](/azure/app-service/app-service-local-cache) włączona.
 - Debugowanie aplikacji interfejsu API migawki nie jest obecnie obsługiwane.
+
+## <a name="site-extension-upgrade"></a>Uaktualnienie rozszerzenia lokacji
+
+Migawki debugowanie i usługa Application Insights zależą od ICorProfiler, który ładuje z procesem lokacji i powoduje problemy podczas uaktualniania. Zalecamy, aby ten proces, aby upewnić się, że nie nie czas przestoju do swojej witryny produkcji.
+
+- Utwórz [miejsce wdrożenia](/azure/app-service/web-sites-staged-publishing) w usłudze App Service i wdrażanie witryny dla gniazda.
+- W Eksploratorze chmury w programie Visual Studio lub z portalu Azure, Zamień miejsca produkcji.
+- Zatrzymaj witrynę miejsca. To może zająć kilka sekund kill poza procesu w3wp.exe lokacji ze wszystkich wystąpień.
+- Uaktualnienie gniazdo rozszerzenia lokacji w lokacji Kudu lub w portalu Azure (*bloku usługi aplikacji > Narzędzia do programowania > Rozszerzenia > aktualizacji*).
+- Uruchom witrynę miejsca. Firma Microsoft zaleca w witrynie do rozgrzewki go ponownie.
+- Zamienić miejsca produkcji.
 
 ## <a name="see-also"></a>Zobacz także
 

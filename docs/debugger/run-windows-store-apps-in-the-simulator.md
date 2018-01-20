@@ -1,5 +1,5 @@
 ---
-title: Uruchamianie aplikacji platformy uniwersalnej systemu Windows i Windows 8.1 w symulatorze | Dokumentacja firmy Microsoft
+title: Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -18,26 +18,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy uniwersalnej systemu Windows i Windows 8.1 w symulatorze
-Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows i Windows 8.1 jest aplikacją, która symuluje aplikacji platformy uniwersalnej systemu Windows lub Windows 8.1. Można uruchomić aplikacji wybierz rozmiar ekranu fizycznego i rozwiązania, który ma zostać emulować. Można również Symulowanie zdarzeń obrotu i touch typowe i symulować właściwości połączenia sieciowego.
+# <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze
+Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jest aplikacją, która symuluje aplikacji platformy uniwersalnej systemu Windows. Zazwyczaj można debugować na komputerze lokalnym, podłączonego urządzenia lub komputerze zdalnym. W niektórych scenariuszach może być do symulatora programu Visual Studio należy używać do emulowania różnych ekranu fizycznego rozmiaru i rozdzielczość. Można również Symulowanie zdarzeń obrotu i touch typowe i symulować właściwości połączenia sieciowego.
   
  Symulator udostępnia środowisko, w którym można projektować, rozwijać, debugowania i testowania aplikacji platformy uniwersalnej systemu Windows. Jednak przed opublikowaniem aplikacji Microsoft Store, należy przetestować aplikację na rzeczywistego urządzenia.  
   
  Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows nie działa w izolowanym środowisku na komputerze lokalnym. W związku z tym błędów występujących w symulatorze, takich jak nieodwracalny błąd systemowe, również może mieć wpływ na cały komputer.  
   
- Zobacz [aplikacji Windows Phone uruchamianie w emulatorze](../debugger/run-windows-phone-apps-in-the-emulator.md) informacji Windows Phone.  
-  
 > [!IMPORTANT]
->  Symulator programu Visual Studio 2015 nie zawiera przycisk używanie funkcji geolokalizacji. Jest to spowodowane symulator systemu Windows 10 nie obejmuje używanie funkcji geolokalizacji symulacji. Jeśli należy wykonać tego rodzaju symulacji, można użyć symulatora programu Visual Studio 2013 na Windows 8.1 lub starszymi systemami operacyjnymi.  
+>  Symulator programu Visual Studio 2015 nie zawiera przycisk używanie funkcji geolokalizacji. Jest to spowodowane symulator systemu Windows 10 nie obejmuje używanie funkcji geolokalizacji symulacji.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a>Ustaw symulator jako element docelowy  
- Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze, wybierz **symulatora** z listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** przycisk debugera **standardowe** paska narzędzi.  
+ Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze, wybierz **symulatora** z listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** przycisk debugera **standardowe** paska narzędzi. Ta opcja jest dostępna tylko jeśli aplikacji **Min platformy docelowej. Wersja** jest mniejsza niż system operacyjny na komputerze deweloperskim. 
   
  ![Działających w symulatorze](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   

@@ -25,17 +25,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: b21dcdefde586b4a2724c8c0a659462b5f0898f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w C#
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania C# w **strony właściwości** okna, zgodnie z opisem w [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono gdzie można znaleźć ustawień debugera w **strony właściwości** okna.  
   
 > [!WARNING]
->  Ten temat nie dotyczy aplikacji platformy uniwersalnej systemu Windows i Windows 8.1. Zobacz [rozpocząć sesję debugowania: (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Ten temat nie dotyczy aplikacji platformy uniwersalnej systemu Windows. Zobacz [rozpocząć sesję debugowania: (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ##  <a name="BKMK_Debug_tab"></a>Karta debugowania  
   

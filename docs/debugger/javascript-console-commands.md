@@ -7,29 +7,24 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+- cordova
+ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli języka JavaScript w programie Visual Studio
-![Ma zastosowanie do systemu Windows i Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Polecenia służą do wysyłania wiadomości i wykonywać inne zadania w oknie konsoli JavaScript programu Visual Studio. Aby uzyskać przykłady pokazujące, które przedstawiają sposób korzystania z tego okna, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie dotyczą do aplikacji platformy uniwersalnej systemu Windows oraz aplikacji utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji oprogramowania Cordova, zobacz [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Aby uzyskać informacje na temat używania konsoli programu w menu Narzędzia programu Internet Explorer F12, zobacz [w tym temacie](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
@@ -63,7 +58,7 @@ ms.lasthandoff: 12/22/2017
 |`msIsIndependentlyComposed(element)`|Używane w aplikacji sieci web. Nie są obsługiwane w aplikacjach platformy uniwersalnej systemu Windows przy użyciu języka JavaScript.|Nieobsługiwane.|  
 |`profile(reportName)`|Używane w aplikacji sieci web. Nie są obsługiwane w aplikacjach platformy uniwersalnej systemu Windows przy użyciu języka JavaScript.|Nieobsługiwane.|  
 |`profileEnd()`|Używane w aplikacji sieci web. Nie są obsługiwane w aplikacjach platformy uniwersalnej systemu Windows przy użyciu języka JavaScript.|Nieobsługiwane.|  
-|`select(element)`|Wybiera określony kod HTML `element` w [Eksploratora modelu DOM](../debugger/quickstart-debug-html-and-css.md).|Console.SELECT(element);|  
+|`select(element)`|Wybiera określony kod HTML `element` w [Eksploratora modelu DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Uruchamia czasomierz identyfikowany przez opcjonalny `name` parametru. W przypadku użycia z `console.timeEnd`, oblicza czas, jaki musi upłynąć między `time` i `timeEnd`i zwraca wynik (mierzony w ms) przy użyciu konsoli `name` ciągu jako prefiksu. Używana do umożliwienia Instrumentacja kodu aplikacji do pomiaru wydajności.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Zatrzymuje czasomierz identyfikowany przez opcjonalny `name` parametru. Zobacz `time` konsoli poleceń.|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Wysyła ślad stosu w oknie konsoli. Śledzenie stosu wywołań pełną i zawierają informacje, takie jak nazwa pliku, numeru wiersza i numer kolumny.|`console.trace();`|  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Debugowanie aplikacji
 Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Typy różnych aplikacji i w różnych językach wymagają różnych ustawień i technik, a obecnie różnych problemów wymagających do debugowania.  
@@ -31,7 +31,7 @@ Poniższe sekcje dotyczą debugowania dla określonych typów aplikacji. Typy r�
   
 |||  
 |-|-|  
-|[Debugowanie platformy uniwersalnej systemu Windows i Windows 8.1 aplikacji](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Opisuje sposób debugowania aplikacji platformy uniwersalnej systemu Windows.|  
+|[Debugowanie aplikacji platformy UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Opisuje sposób debugowania aplikacji platformy uniwersalnej systemu Windows.|  
 |[Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)|Informacje dotyczące debugowania kodu zarządzanego (Visual C#, Visual Basic i F3).|  
 |[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)|Opisuje sposób debugowania inny rodzaj natywnych aplikacji C++.|  
 |[Debugowanie kodu GPU](../debugger/debugging-gpu-code.md)|Informacje dotyczące debugowania kodu C++, który jest uruchamiany w jednostce przetwarzania graficznego (GPU).|  

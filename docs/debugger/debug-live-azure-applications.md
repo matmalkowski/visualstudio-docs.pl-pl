@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowania na żywo aplikacji ASP.NET Azure za pomocą debugera migawki
 
@@ -47,9 +47,12 @@ Ponadto debugera migawki jest dostępna tylko dla programu Visual Studio Enterpr
 
    ![Uruchom debuger migawki](../debugger/media/snapshot-launch.png "Uruchom debuger migawki")
 
-    Po raz pierwszy należy wybrać **dołączyć debuger migawki**, zostanie wyświetlony monit o Zainstaluj debugera migawki w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service. 
+    Po raz pierwszy należy wybrać **dołączyć debuger migawki**, zostanie wyświetlony monit o Zainstaluj rozszerzenie lokacji debugera migawki w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service. 
 
    Program Visual Studio jest teraz migawki tryb debugowania.
+
+    > [!NOTE]
+    > Rozszerzenia usługi Application Insights witryny obsługuje również debugowania migawki. Jeśli wystąpią komunikat o błędzie "w lokacji rozszerzenie nieaktualne", można znaleźć pod adresem [Rozwiązywanie problemów z porady i znane problemy dotyczące debugowania migawki](../debugger/debug-live-azure-apps-troubleshooting.md) uaktualniania szczegóły.
 
    ![Tryb debugowania migawki](../debugger/media/snapshot-message.png "migawki tryb debugowania")
 
@@ -130,7 +133,7 @@ Oprócz wykonywania migawki po wybraniu snappoint, można również skonfigurowa
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Aby dowiedzieć się, jak sprawdzić zmienne podczas wyświetlania migawek, zobacz [samouczek funkcji Debbuger](../debugger/debugger-feature-tour.md).
+- Aby dowiedzieć się, jak sprawdzić zmienne podczas wyświetlania migawek, zobacz [samouczek funkcji debugera](../debugger/debugger-feature-tour.md).
 - Widok [często zadawane pytania dotyczące debugowania migawki](../debugger/debug-live-azure-apps-faq.md).
 - Widok [Rozwiązywanie problemów z porady i znane problemy dotyczące debugowania migawki](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Jeśli chcesz wyświetlić migawki w usłudze Application Insights, gdy aplikacja trafi wyjątek, możesz to zrobić. Aby uzyskać więcej informacji, zobacz [debugowania migawek na wyjątki w aplikacjach .NET](/azure/application-insights/app-insights-snapshot-debugger). Usługi Application Insights obsługuje aplikacje platformy Service Fabric oprócz usługi Azure App Service.

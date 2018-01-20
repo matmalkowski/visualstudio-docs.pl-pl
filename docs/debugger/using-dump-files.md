@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Program Visual Studio przy użyciu plików zrzutu
 Pliki zrzutu z lub bez stosów; Utwórz plik zrzutu; Otwórz plik zrzutu; Znajdowanie danych binarnych, w pliku pdb i pliku źródłowego dla pliku zrzutu.
@@ -56,11 +56,11 @@ Pliki zrzutu z lub bez stosów; Utwórz plik zrzutu; Otwórz plik zrzutu; Znajdo
   
 -   Program Visual Studio umożliwia debugowanie plików zrzutu macierzystych aplikacji z urządzeń ARM. Program Visual Studio umożliwia również debugowanie plików zrzutu zarządzanych aplikacji z urządzeń ARM, ale tylko w macierzystym debugerze.  
   
--   Aby debugować [trybu jądra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Zrzuć pliki programu Visual Studio 2013, Pobierz [Windows 8.1 w wersji z narzędzi debugowania dla systemu Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Zobacz [debugowanie jądra w programie Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Aby debugować [trybu jądra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) Zrzuć pliki, Pobierz narzędzia debugowania dla systemu Windows, który jest częścią [zestaw sterowników systemu Windows (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Program Visual Studio nie może debugować pliki zrzutu zapisane w formacie zrzutu starsze znany jako [zrzut pełnego trybu użytkownika](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Należy zauważyć, że pełny zrzut trybu użytkownika to nie to samo, co zrzut ze stertą.  
   
--   Aby debugować z [SOS.dll (rozszerzenie debugowania SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) w Visual Studio, konieczne jest zainstalowanie narzędzi debugowania dla systemu Windows, który jest częścią systemu Windows Driver Kit (WDK). Zobacz [Windows 8.1 Preview: Pobieranie zestawów, usługa bits i narzędzi](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Aby debugować z [SOS.dll (rozszerzenie debugowania SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) w programie Visual Studio należy zainstalować narzędzia debugowania dla systemu Windows, który jest częścią [zestaw sterowników systemu Windows (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Utwórz plik zrzutu  
  Aby utworzyć plik zrzutu z programu Visual Studio:  
@@ -113,6 +113,6 @@ Pliki zrzutu z lub bez stosów; Utwórz plik zrzutu; Otwórz plik zrzutu; Znajdo
  Jeśli program Visual Studio nie może znaleźć plików potrzebnych do modułu w zrzutu debugowania, wyświetla odpowiedniej strony (**nie znaleziono binarne**, **znaleziono symboli nie**, lub **nie znaleziono źródła**). Strony te zawierają szczegółowe informacje o przyczynie problemu i zawierają łącza do czynności, które mogą pomóc w określeniu poprawnej lokalizacji plików. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie Just In Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)

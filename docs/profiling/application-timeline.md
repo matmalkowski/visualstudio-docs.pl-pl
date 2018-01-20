@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3109f33c24b3ff217f6e48c6458a4c6514b0b151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 340ef03d7b9449f6fc9ee50a4c24afff03120e6f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
 Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie problemów aplikacji interakcji dotyczące problemów z wydajnością w aplikacji XAML. To narzędzie pomaga w zwiększeniu wydajności aplikacji XAML zapewniając szczegółowy widok wykorzystania zasobów aplikacji. Można analizować czasu poświęconego przez aplikację przygotowywanie ramki interfejsu użytkownika (układu i renderowania), sieci i dysku żądań obsługi, a w scenariuszach, takich jak rozmiar uruchamiania aplikacji, ładowania stron i systemu Windows.  
@@ -31,8 +31,6 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 1.  Aplikacje uniwersalne systemu Windows (w systemie Windows 10)  
   
 2.  Windows 8.1  
-  
-3.  Windows Phone 8.1 (wspólnej platformie XAML)  
   
 4.  Program Windows Presentation Foundation (.Net 4.0 i nowsze)  
   
@@ -103,7 +101,7 @@ Użyj **oś czasu aplikacji** profilera, tak aby Znajdowanie i rozwiązywanie pr
 |**Analiza kodu**|Czas poświęcony na tworzenie obiektów i analizy plików XAML.<br /><br /> Rozszerzanie **Parsowanie** w węźle **szczegóły osi czasu** Wyświetla łańcuch zależności wszystkich plików XAML, które zostały przeanalizować wyniku zdarzeń głównego. Umożliwi to zidentyfikować tworzenie analizowania i obiekt niepotrzebnych plików w scenariuszach poufnych wydajności i zoptymalizowania je.|  
 |**Układ**|W dużych aplikacji tysiące elementy mogą być wyświetlane na ekranie, w tym samym czasie. Może to spowodować niska szybkość klatek interfejsu użytkownika i czas odpowiedzi aplikacji odpowiednio niska. Zdarzenie układu dokładnie określa koszt układania każdego elementu (tj. czas spędzony w rozmieszczanie, miary ApplyTemplate, ArrangeOverride i ArrangeOverride) i tworzy visual drzewa, w których uczestniczyła w przebiegu układu. Można użyć tej wizualizacji, aby ustalić, który drzew logicznej musi oczyszczania lub do oceny innych mechanizmów opóźnienia, aby zoptymalizować z przebiegu układu.|  
 |**Renderowanie**|Czas poświęcony na rysunku elementów XAML do ekranu.|  
-|**I / 0**|Czas poświęcony na pobieranie danych z lokalnego dysku lub z zasobów sieciowych, które są dostępne za pośrednictwem [Microsoft Windows Internet (WinINet) interfejsu API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
+|**I/0**|Czas poświęcony na pobieranie danych z lokalnego dysku lub z zasobów sieciowych, które są dostępne za pośrednictwem [Microsoft Windows Internet (WinINet) interfejsu API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kod aplikacji**|Czas poświęcony na wykonywanie kodu aplikacji (użytkownika), który nie jest powiązana z analizy ani układu.|  
 |**Inne XAML**|Czas poświęcony na wykonywanie kodu środowiska uruchomieniowego języka XAML.|  
   

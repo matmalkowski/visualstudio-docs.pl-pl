@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables w debugerze programu Visual Studio
 Pseudovariables są warunki, używany do wyświetlania pewne informacje w oknie zmiennej lub **QuickWatch** okno dialogowe. Możesz wprowadzić pseudovariable w taki sam sposób jak wprowadzasz normalnym zmiennej. Pseudovariables zmienne nie są jednak i nazwy zmiennych w programie nie są zgodne.  
@@ -49,10 +49,10 @@ $handles
 |`$env`|Wyświetla blok środowiska w podglądzie ciągu.|  
 |`$cmdline`|Wyświetla ciąg wiersza polecenia, który jest uruchomiony program.|  
 |`$pid`|Wyświetla identyfikator procesu.|  
-|`$`*registername*<br /><br /> lub<br /><br /> `@`*registername*|Wyświetla zawartość rejestru *registername*.<br /><br /> Zazwyczaj można wyświetlić zawartość rejestru właśnie, wprowadzając nazwę rejestru. Tylko wtedy, należy użyć następującej składni jest, gdy nazwa rejestru overloads nazwę zmiennej. Jeśli nazwa rejestru jest taka sama jak nazwa zmiennej w bieżącym zakresie, debuger interpretuje nazwy jako nazwy zmiennej. Kiedy jest `$` *registername* lub `@` *registername* polega na pod ręką.|  
+|`$` *registername*<br /><br /> lub<br /><br /> `@` *registername*|Wyświetla zawartość rejestru *registername*.<br /><br /> Zazwyczaj można wyświetlić zawartość rejestru właśnie, wprowadzając nazwę rejestru. Tylko wtedy, należy użyć następującej składni jest, gdy nazwa rejestru overloads nazwę zmiennej. Jeśli nazwa rejestru jest taka sama jak nazwa zmiennej w bieżącym zakresie, debuger interpretuje nazwy jako nazwy zmiennej. Kiedy jest `$` *registername* lub `@` *registername* polega na pod ręką.|  
 |`$clk`|Wyświetla czas w cykle zegara.|  
 |`$user`|Wyświetla struktury zawierającej informacje o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje o haśle nie jest wyświetlana.|  
-|`$exceptionstack`|Wyświetla ślad stosu wyjątku bieżącego środowiska uruchomieniowego systemu Windows. `$ exceptionstack`działa tylko w aplikacji platformy uniwersalnej systemu Windows i Windows 8.1 lub nowszym. `$ exceptionstack`nieobsługiwane wyjątki C++ i KLIKA|  
+|`$exceptionstack`|Wyświetla ślad stosu wyjątku bieżącego środowiska uruchomieniowego systemu Windows. `$ exceptionstack`działa tylko w aplikacji platformy uniwersalnej systemu Windows. `$ exceptionstack`nieobsługiwane wyjątki C++ i KLIKA|  
 |`$ReturnValue`|Wyświetla wartość zwracaną przez metodę .NET Framework.|  
   
  W języku C# i Visual Basic można użyć pseudovariables przedstawione w tej tabeli:  
@@ -68,7 +68,7 @@ $handles
 |--------------------|--------------|  
 |`$delete`lub`$$delete`|Usuwa Zmienna niejawna, który został utworzony w **Immediate** okna. Składnia jest `$delete,` *zmiennej* lub`$delete,` *zmiennej*`.`|  
 |`$objectids`lub`$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów podrzędnych określone wyrażenie. Składnia jest `$objectid,` *wyrażenie* lub`$listobjectids,` *wyrażenia*`.`|  
-|`$`*N*`#`|Wyświetla obiekty o identyfikatorze obiektu równa *N*.|  
+|`$` *N* `#`|Wyświetla obiekty o identyfikatorze obiektu równa *N*.|  
 |`$dynamic`|Wyświetla specjalną **widoku dynamicznego** węzła dla obiekt, który implementuje `IDynamicMetaObjectProvider`. Interfejs. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4.|  
   
 ## <a name="see-also"></a>Zobacz też  
