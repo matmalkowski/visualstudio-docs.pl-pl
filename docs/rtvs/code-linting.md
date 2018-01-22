@@ -1,7 +1,7 @@
 ---
 title: "Linting R kodu za pomocą narzędzia R dla programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 01/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
@@ -14,29 +14,31 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 76f4ceb040e62e4ebac46e8a791f5dac0d73aff5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b7fcd958c1bed744f40c1a726e6bec4f86d307df
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Kod linting R w programie Visual Studio
 
-Linting jest procesem, która analizuje kod, aby odkryć potencjalne błędy, a także kwestie związane z formatowaniem i innych szumu w plikach kodu (na przykład fałszywe białych znaków). Linting pomaga również w zachęca niektórych Konwencji kodowania, takich jak identyfikatory nazewnictwa, która jest bardzo pomocne w obrębie zespołów i innych sytuacjach współpracy.
+Linting jest procesem, która analizuje kod, aby odkryć potencjalne błędy, formatowanie i innych szumu kodu, takie jak fałszywe odstępu. Linting pomaga również w zachęca niektórych Konwencji kodowania, takich jak identyfikatory nazewnictwa, która jest bardzo pomocne w obrębie zespołów i innych sytuacjach współpracy.
 
-R narzędzi dla programu Visual Studio (RTVS) zawiera wbudowane linting R z zachowaniem steruje się za pomocą różnych opcji. Te opcje można znaleźć w **Narzędzia > Opcje > Edytor tekstu > R > wierszu**.
+R narzędzi dla programu Visual Studio (RTVS) zawiera wbudowane linting R z zachowaniem jest kontrolowany za pomocą różnych opcji opisanych w tym artykule. Te opcje można znaleźć w **Narzędzia > Opcje > Edytor tekstu > R > wierszu**.
 
-Linting jest domyślnie wyłączona. Aby włączyć linting, ustaw **wszystkie > Włącz wierszu** opcję na wartość true. Kolejne sekcje w tym temacie opisano inne opcje linting:
+Linting jest domyślnie wyłączona. Aby włączyć linting, ustaw **wszystkie > Włącz wierszu** opcję na wartość true.
 
 Po włączeniu linting jest stosowana w edytorze podczas pisania. Problemy są wyświetlane jako zygzaki zielony. Na przykład na poniższym rysunku RTVS zidentyfikowała sześć linting problemy, w tym użycie `=` zamiast `<-` przydziału, brak odstępy dookoła argumenty funkcji, użyj przypadku Pascal identyfikatorów pisanych wielkimi literami i korzystanie z średnika. Ustawiając kursor nad rozwiązaniem problemu zawiera opis.
 
 ![Przykłady linting dla kodu języka R](media/linting-01.png)
 
+Często Zmień opcje linting zależnie od potrzeb projektu lub pliku. Na przykład użyć przykładowego kodu z kursu online `=` zamiast `<-` wraz z identyfikatory przypadku Pascal. Taki kod może wyświetlić częste linting ostrzeżenia, ponieważ domyślne opcje linting Flaga tych przypadkach. Podczas pracy z kodu, a następnie, możesz po prostu można wyłączyć opcji zamiast poświęcany czas korygowanie każde wystąpienie.
+
 ## <a name="assignment-group"></a>Przypisanie grupy
 
 | Opcja | Wartość domyślna | Efekt linting |
 | --- | --- | --- |
-| Wymuszanie\<- | `True` | Określa, kiedy `<-` nie jest używany do przypisania. |
+| Enforce \<- | `True` | Określa, kiedy `<-` nie jest używany do przypisania. |
 
 ## <a name="naming-group"></a>Grupy nazewnictwa
 

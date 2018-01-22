@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 10da44e4766fa3a68a0f4d70a4c1e89f3f9ccf65
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 32e2f0d889bac5313201fd65bf98ce2a8243a284
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
@@ -44,7 +44,7 @@ W tym temacie:
 
 W ramach tego przewodnika należy projektu aplikacji sieci web oparta na platformach Bottle, Flask i Django. Jeśli nie masz jeszcze projektu, aby ponowić proces publikowania Utwórz projekt testowy proste w następujący sposób:
 
-1. W programie Visual Studio, wybierz **Plik > Nowy > Projekt**, wyszukaj "Bottle", wybierz **projektu sieci Web Bottle**, określ, jak i nazwę i ścieżkę do projektu, kliknij przycisk **OK**. (Szablon Bottle jest dołączana do obciążenia programowania Python; zobacz [instalacji](installation.md).)
+1. W programie Visual Studio, wybierz **Plik > Nowy > Projekt**, wyszukaj "Bottle", wybierz **projektu sieci Web Bottle**, określ, jak i nazwę i ścieżkę do projektu, kliknij przycisk **OK**. (Szablon Bottle jest dołączana do obciążenia programowania Python; zobacz [instalacji](installing-python-support-in-visual-studio.md).)
 
 1. Postępuj zgodnie z monitami, aby zainstalować pakiety zewnętrzne, wybierając **zainstalować w środowisku wirtualnym** i preferowany podstawowy interpreter środowiska wirtualnego. Zazwyczaj odpowiada ten wybór z wersją programu Python zainstalowanym usługi aplikacji.
 

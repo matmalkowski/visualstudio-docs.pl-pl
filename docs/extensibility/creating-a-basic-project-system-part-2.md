@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy wskazówki w tej serii [tworzenia podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak utworzyć podstawowy projekt systemu. W tym przewodniku opiera się na system podstawowych projektów przez dodanie szablonu Visual Studio, strony właściwości i inne funkcje. Pierwszy wskazówki należy wykonać przed rozpoczęciem tego.  
@@ -108,7 +108,7 @@ Pierwszy wskazówki w tej serii [tworzenia podstawowego systemu projektu, częś
   
 -   SimpleProject.myproj  
   
--   Plik program.CS  
+-   Program.cs  
   
 -   AssemblyInfo.cs  
   
@@ -283,7 +283,7 @@ ZipProjects:
   
 -   $safeprojectname$ to nazwa podana przez użytkownika w **nowy projekt** okno dialogowe, zmodyfikowane w celu usunięcia wszystkich znaków niebezpieczne i spacje.  
   
- Aby uzyskać pełną listę parametrów szablonu, zobacz [parametrów szablonu](../ide/template-parameters.md).  Jeśli chcesz utworzyć parametru szablonu niestandardowego, zobacz [NIB: porady: przekazywanie niestandardowych parametrów szablonów](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Aby uzyskać pełną listę parametrów szablonu, zobacz [parametrów szablonu](../ide/template-parameters.md).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Aby zastąpić parametrów szablonu projektu  
   

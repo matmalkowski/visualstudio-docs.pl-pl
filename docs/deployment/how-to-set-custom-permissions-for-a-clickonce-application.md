@@ -20,11 +20,11 @@ author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload: multiple
-ms.openlocfilehash: 671f48cfac80595832f7aeee71e0e87388f947e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a2a9a3315b58fa0181c004917081362cf60df4c0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Porady: ustawienie uprawnień niestandardowych dla aplikacji ClickOnce
 Można wdrożyć [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, która używa domyślnych uprawnień w strefach Internet lub lokalny Intranet. Alternatywnie można utworzyć strefę niestandardowe uprawnienia, które są wymagane przez aplikację. Można to zrobić przez dostosowanie uprawnień zabezpieczeń w **zabezpieczeń** strony **projektanta projektu**.  
@@ -50,7 +50,7 @@ Można wdrożyć [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 7.  Przed `</applicationRequestMinimum>` element, należy dodać kod XML uprawnienia wymagane przez aplikację.  
   
     > [!NOTE]
-    >  Można użyć `ToXml` ustawiona metoda uprawnienia, aby wygenerować kod XML dla manifest aplikacji. Na przykład, aby wygenerować plik XML dla <xref:System.Security.Permissions.EnvironmentPermission> zestaw uprawnień, wywołania <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody. Aby uzyskać więcej informacji na temat struktury uprawnienie ustawić XML, zobacz [NIB: porady: Importowanie zestawu uprawnień przy użyciu pliku XML](http://msdn.microsoft.com/en-us/dea16b54-c108-408a-ac36-cdc05f746236).  
+    >  Można użyć `ToXml` ustawiona metoda uprawnienia, aby wygenerować kod XML dla manifest aplikacji. Na przykład, aby wygenerować plik XML dla <xref:System.Security.Permissions.EnvironmentPermission> zestaw uprawnień, wywołania <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)   

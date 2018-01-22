@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 96ef5d340a961671b199e521b2d6ee5d05794160
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="formatting-python-code"></a>Formatowanie kodu języka Python
 
@@ -30,7 +30,7 @@ Visual Studio umożliwia sformatowanie szybki kod do dopasowania wstępnie skonf
 
 Opcje są ustawiane za pomocą **Narzędzia > Opcje > Edytor tekstu > Python > Formatowanie** i jego zagnieżdżonych karty i domyślnie są ustawione odpowiadające podzbiorem [8 program ten przewodnik po stylu](http://www.python.org/dev/peps/pep-0008/). **Ogólne** kartę Określa, kiedy stosowane jest formatowanie; trzy karty ustawienia zostały opisane w tym temacie.
 
-[Python obsługi w programie Visual Studio](installation.md) dodaje również przydatne [wypełnienia akapitu komentarz](#fill-comment-paragraph-command) polecenie **Edytuj > Zaawansowane** menu zgodnie z opisem poniżej.
+[Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) dodaje również przydatne [wypełnienia akapitu komentarz](#fill-comment-paragraph-command) polecenie **Edytuj > Zaawansowane** menu zgodnie z opisem poniżej.
 
 ## <a name="spacing"></a>Odstępy
 

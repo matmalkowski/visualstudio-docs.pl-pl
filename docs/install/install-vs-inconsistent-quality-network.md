@@ -1,25 +1,24 @@
 ---
 title: "Zainstaluj na o niskiej przepustowości lub zawodnych w środowiskach sieci | Dokumentacja firmy Microsoft"
 description: "W tym artykule opisano, jak Instalator programu Visual Studio działa w warunkach zawodnej sieci i wyjaśniono, jak pobrać pliki instalacji przed rozpoczęciem instalacji."
-ms.date: 08/30/2017
-ms.reviewer: tims
+ms.date: 01/17/2018
+ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
-author: timsneath
+- installing Visual Studio
+- no internet connection
+author: tglee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Zainstaluj program Visual Studio 2017 na o niskiej przepustowości lub zawodnych w środowiskach sieci
 
@@ -32,7 +31,7 @@ Zalecamy wypróbowanie Instalator sieci web programu Visual Studio&mdash;naszym 
 Jednak jeśli połączenie z Internetem jest niedostępne lub zawodnych, można użyć wiersza polecenia utworzyć lokalnej pamięci podręcznej plików trzeba wykonać instalację w trybie offline. Poniżej przedstawiono sposób.
 
 > [!NOTE]
-> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio 2017 klienckich stacjach roboczych, które są zaporą z siecią Internet, zobacz nasze [Tworzenie instalacji sieciowej programu Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) i [Uwagi dotyczące instalowania programu Visual Studio w środowisku offline](../install/install-visual-studio-in-offline-environment.md) stron.
+> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio 2017 klienckich stacjach roboczych, które są zaporą z siecią Internet, zobacz nasze [Tworzenie instalacji sieciowej programu Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) i [Zainstalować certyfikaty wymagane do instalacji w trybie offline program Visual Studio](../install/install-certificates-for-visual-studio-offline.md) stron.
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>Krok 1 — pobieranie inicjujący Instalatora programu Visual Studio
 
@@ -84,8 +83,8 @@ Uruchom instalację za pomocą tego polecenia:
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
-  > [!NOTE]
-  > Jeśli zostanie wyświetlony błąd, że podpis jest nieprawidłowy, należy zainstalować certyfikaty zaktualizowane. Otwórz folder certyfikaty w pamięci podręcznej w trybie offline. Kliknij dwukrotnie plik certyfikatu, a następnie kliknij za pomocą Kreatora Menedżera certyfikatów. Jeśli pojawi się monit o podanie hasła, pozostaw to pole puste.
+> [!NOTE]
+> Jeśli zostanie wyświetlony błąd, że podpis jest nieprawidłowy, należy zainstalować certyfikaty zaktualizowane. Otwórz folder certyfikaty w pamięci podręcznej w trybie offline. Kliknij dwukrotnie plik certyfikatu, a następnie kliknij za pomocą Kreatora Menedżera certyfikatów. Jeśli pojawi się monit o podanie hasła, pozostaw to pole puste.
 
 ## <a name="list-of-language-locales"></a>Lista ustawień regionalnych języka
 
@@ -96,7 +95,7 @@ Uruchom instalację za pomocą tego polecenia:
 | EN US | Angielski |
 | es-ES | Hiszpański |
 | fr-FR | Francuski |
-| IT-IT | Włoski |
+| it-IT | Włoski |
 | ja-JP | japoński |
 | ko-KR | koreański |
 | pl-PL | polski |
@@ -104,7 +103,7 @@ Uruchom instalację za pomocą tego polecenia:
 | ru-RU | Rosyjski |
 | tr-TR | turecki |
 | zh-CN | Chiński (uproszczony) |
-| zh-TW. | Chiński — tradycyjny |
+| zh-TW | Chiński — tradycyjny |
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

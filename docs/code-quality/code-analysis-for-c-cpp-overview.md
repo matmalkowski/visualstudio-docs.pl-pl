@@ -26,11 +26,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 84ba9274258fe41b93a980c815bfd808454b9061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — Omówienie
 Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady ich kodu źródłowego C/C++. Przepełnienia buforów, które nie zostały zainicjowane pamięci obejmują typowe błędy kodowania zgłoszone przez narzędzie, wyłuskań wskaźnika o wartości null i przecieków pamięci i zasobów.  
@@ -48,7 +48,7 @@ Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady i
  Możesz wymagać, że wszystkie źródła kodu zaewidencjonowane spełniają określone zasady. W szczególności chcesz upewnij się, że krokiem ostatniej kompilacji lokalnego uruchomienia analizy. Aby uzyskać więcej informacji na temat włączania zasad analizy kodu zaewidencjonowania zobacz [tworzenie i przy użyciu zasad analizy kodu zaewidencjonowania](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Integracja kompilacji Team  
- Można użyć zintegrowane funkcje systemu kompilacji, aby uruchomić narzędzie do analizy kodu na potrzeby [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proces kompilacji. Aby uzyskać więcej informacji, zobacz [kompilowania aplikacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Można użyć zintegrowane funkcje systemu kompilacji, aby uruchomić narzędzie do analizy kodu na potrzeby [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proces kompilacji. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania](/vsts/build-release/index).  
   
 ## <a name="command-line-support"></a>Obsługa wiersza polecenia  
  Oprócz pełnej integracji środowiska programistycznego programiści mogą również wykorzystać narzędzie do analizy w wierszu polecenia, jak pokazano w poniższym przykładzie:  

@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>Protokół serwera języka
 
@@ -39,11 +39,11 @@ LSP powstał w czasie, a obecnie jest w wersji 3.0. Jego uruchomienia, gdy poję
 
 Zbliżonym do czasu Microsoft zaczęła działać na serwerze języka TypeScript, z myślą o obsługi języka TypeScript w edytorach, takich jak Emacs i Sublime Text. W tej implementacji edytora komunikuje się za pośrednictwem stdin/stdout z procesu serwera TypeScript i używa przez protokół debugera V8 ładunek JSON dla żądań i odpowiedzi. Serwer TypeScript zostało zintegrowane wtyczki TypeScript Sublime i kodzie VS do edycji sformatowanego maszynie.
 
-Po w zintegrowanym dwa serwery z inną wersją językową, kodzie VS team rozpoczął Eksploruj edytory i IDEs wspólny protokół serwera języka. Wspólny protokół umożliwia dostawcy języka utworzyć serwer jednego języka, który może być zużyte przez różne IDEs. Aby zaimplementować jeden raz po stronie klienta protokołu ma tylko konsumenta serwera języka. Powoduje to sytuacja win-win dla dostawcy języka i konsumentów języka.
+Po o zintegrowany dwa serwery z inną wersją językową, kodzie VS team rozpoczął Eksploruj edytory i IDEs wspólny protokół serwera języka. Wspólny protokół umożliwia dostawcy języka utworzyć serwer jednego języka, który może być zużyte przez różne IDEs. Aby zaimplementować jeden raz po stronie klienta protokołu ma tylko konsumenta serwera języka. Powoduje to sytuacja win-win dla dostawcy języka i konsumentów języka.
 
-Wprowadzenie do protokołu języka używanego przez serwer TypeScript, było więcej ogólne i niezależne od języka. Protokół została wykonana z użyciem więcej funkcji języka przy użyciu języka VS kodu interfejsu API dla pomysłów. Samego protokołu jest wspierany przez usługę RPC JSON dla zdalnego wywołania z powodu jego bibliotek prostoty i obsługa wielu języków programowania.
+Protokół serwera języka pracę z protokołem używanym przez serwer TypeScript, rozwijając go z większą liczbą funkcji języka przez język VS kodu interfejsu API. Protokół jest wspierany przez usługę RPC JSON dla zdalnego wywołania ze względu na prostotę i istniejącej biblioteki.
 
-Dogfooded zespołu kodzie VS protokołu implementując kilka serwerów języka linter. Serwer języka linter odpowiada na żądania wierszu (skanowanie) pliku i zwraca zestaw elementów wykrytych ostrzeżeń i błędów. Celem było wierszu pliku jako użytkownika zmiany w dokumencie, co oznacza, że będzie wiele żądań linting podczas sesji przy użyciu edytora. On warto zachować serwera i systemem tak, aby nowy proces linting nie musiały zostać uruchomione dla każdej Edycja użytkownika. Kilka serwerów linter zostały wprowadzone w tym kodzie VS ESLint i TSLint rozszerzeń. Tych dwóch serwerów linter zarówno implementowanych w TypeScript/JavaScript i uruchom na Node.js. Ich udostępnianie biblioteki, która implementuje na kliencie i serwerze część protokołu.
+VS kodu zespołu prototypowana protokołu implementując kilka serwerów linter języka, które odpowiadają na żądania do wierszu (skanowanie) pliku i zwrócić zestaw wykryte ostrzeżenia i błędy. Celem było wierszu pliku jako użytkownika zmiany w dokumencie, co oznacza, że będzie wiele żądań linting podczas sesji przy użyciu edytora. On warto zachować serwera i systemem tak, aby nowy proces linting nie muszą być uruchomiony dla każdego Edycja użytkownika. Kilka serwerów linter zostały wprowadzone w tym kodzie VS ESLint i TSLint rozszerzeń. Tych dwóch serwerów linter zarówno implementowanych w TypeScript/JavaScript i uruchom na Node.js. Ich udostępnianie biblioteki, która implementuje na kliencie i serwerze część protokołu.
 
 ## <a name="how-the-lsp-works"></a>Jak działa LSP
 

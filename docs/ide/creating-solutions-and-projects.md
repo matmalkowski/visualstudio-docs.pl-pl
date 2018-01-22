@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d6e879e8708c55ebb5ebdd5980bd70ea1e4a97d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie projektów i rozwiązań
 
@@ -81,7 +81,7 @@ Jeśli masz kolekcję plików kodu źródłowego, można łatwo dodać je do pro
 1. W kreatorze, przejdź do lokalizacji plików, a następnie wprowadź nazwę dla nowego projektu w **nazwa** pole. Gdy wszystko będzie gotowe, wybierz pozycję **Zakończ** przycisku.
 
 > [!NOTE]
-> Ta opcja jest najlepsza stosunkowo proste kolekcji plików. Obecnie są obsługiwane tylko typy projektów Visual C++, Apache Cordova, Visual Basic i Visual C#.
+> Ta opcja działa najlepiej w stosunkowo proste kolekcji plików. Obecnie są obsługiwane tylko typy projektów Visual C++, Apache Cordova, Visual Basic i Visual C#.
 
 ## <a name="add-files-to-a-solution"></a>Dodawanie plików do rozwiązania
 

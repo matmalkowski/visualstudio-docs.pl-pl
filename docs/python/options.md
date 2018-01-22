@@ -21,11 +21,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 
@@ -51,10 +51,10 @@ Należy pamiętać, że **eksperymentalne** grupy zawiera opcje dla funkcji, kt�
 | --- | --- | --- |
 | Pokaż okno danych wyjściowych podczas tworzenia środowisk wirtualnych| On | Usuń zaznaczenie, aby zapobiec wyświetlaniu w oknie danych wyjściowych. |
 | Pokaż okno dane wyjściowe podczas instalowania lub usuwania pakietów | On |  Usuń zaznaczenie, aby zapobiec wyświetlaniu w oknie danych wyjściowych. |
-| Zawsze uruchamiaj pip jako administrator | Off | Zawsze eksponuje `pip install` operacje dla wszystkich środowisk. Podczas instalowania pakietów, Visual Studio monituje o uprawnienia administratora, jeśli środowisko znajduje się w obszarze chronionym systemu plików takich jak `c:\Program Files`. W tym wierszu, możesz zawsze podniesienia uprawnień `pip install` tylko ten jeden środowiska. Zobacz [środowiska Python — karta pip](python-environments.md#pip-tab). |
+| Zawsze uruchamiaj pip jako administrator | Off | Zawsze eksponuje `pip install` operacje dla wszystkich środowisk. Podczas instalowania pakietów, Visual Studio monituje o uprawnienia administratora, jeśli środowisko znajduje się w obszarze chronionym systemu plików takich jak `c:\Program Files`. W tym wierszu, możesz zawsze podniesienia uprawnień `pip install` tylko ten jeden środowiska. Zobacz [środowiska Python — karta pip](managing-python-environments-in-visual-studio.md#pip-tab). |
 | Automatyczne generowanie ukończenia DB przy pierwszym użyciu | On | Aby uzyskać [zakończeń IntelliSense](code-editing.md#intellisense) do pracy w bibliotece, Visual Studio należy wygenerować ukończenia bazy danych dla tej biblioteki. Tworzenie bazy danych jest realizowane w tle biblioteki jest zainstalowany, ale nie może być ukończone po rozpoczęciu pisania kodu. W przypadku wybrania tej opcji programu Visual Studio priorytetem ukończenia bazy danych biblioteki podczas pisania kodu, który korzysta z niego. |
-| Ignoruj zmienne PYTHONPATH systemowe | On | PYTHONPATH jest domyślnie ignorowana, ponieważ program Visual Studio oferuje bardziej bezpośrednie sposób określ ścieżki wyszukiwania w środowiskach i projektów. Zobacz [środowiska Python - ścieżki wyszukiwania](python-environments.md#search-paths) szczegółowe informacje. |
-| Ścieżki wyszukiwania aktualizacji podczas dodawania plików połączonych | On | Gdy ustawiona, dodając [połączony plik](python-projects.md#linked-files) z projektem aktualizacje [ścieżki wyszukiwania](python-environments.md#search-paths) tak, aby IntelliSense mogą zawierać zawartość folderu połączony plik w jego ukończenia bazy danych. Usuń zaznaczenie tej opcji, aby wykluczyć takiej zawartości z bazy danych ukończenia. |
+| Ignoruj zmienne PYTHONPATH systemowe | On | PYTHONPATH jest domyślnie ignorowana, ponieważ program Visual Studio oferuje bardziej bezpośrednie sposób określ ścieżki wyszukiwania w środowiskach i projektów. Zobacz [środowiska Python - ścieżki wyszukiwania](managing-python-environments-in-visual-studio.md#search-paths) szczegółowe informacje. |
+| Ścieżki wyszukiwania aktualizacji podczas dodawania plików połączonych | On | Gdy ustawiona, dodając [połączony plik](managing-python-projects-in-visual-studio.md#linked-files) z projektem aktualizacje [ścieżki wyszukiwania](managing-python-environments-in-visual-studio.md#search-paths) tak, aby IntelliSense mogą zawierać zawartość folderu połączony plik w jego ukończenia bazy danych. Usuń zaznaczenie tej opcji, aby wykluczyć takiej zawartości z bazy danych ukończenia. |
 | Ostrzegaj, gdy zaimportowane się, że nie można odnaleźć modułu | On | Wyczyść tę opcję, aby pominąć ostrzeżenia, gdy wiesz, zaimportowanego modułu nie jest obecnie dostępna, ale w przeciwnym razie nie ma wpływu na kod operacji. |
 | Wcięcie niespójne raportu jako | Ostrzeżenia | Ponieważ interpreter języka Python silnie zależny od prawidłowego wcięcia w celu ustalenia zakresu, Visual Studio domyślnie wystawia ostrzeżenia po wykryciu niespójne wcięcia, które mogą wskazywać błędów kodu. Ustaw *błędy* się jeszcze bardziej strict, co powoduje, że program zakończyć pracę w takich przypadkach. Aby całkowicie wyłączyć to zachowanie, wybierz *nie*. |
 | Sprawdź, czy ankiety/wiadomości | Raz w tygodniu | Ustawia częstotliwość jaką zezwolisz na używanie programu Visual Studio można Otwórz okno zawierające strony sieci web z powiązanych Python ankiet i wiadomości, jeśli jest dostępna. Opcje są *nigdy*, *raz dziennie*, *raz w tygodniu*, i *raz w miesiącu*. |
@@ -88,7 +88,7 @@ Należy pamiętać, że **eksperymentalne** grupy zawiera opcje dla funkcji, kt�
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
-| Skrypty | n/d | Określa ogólne folder uruchamiania skryptów do zastosowania do interaktywnego systemu windows dla wszystkich środowisk. Zobacz [skrypty uruchamiania](python-environments.md#startup-scripts). Należy jednak pamiętać, że ta funkcja nie działa obecnie. |
+| Skrypty | n/d | Określa ogólne folder uruchamiania skryptów do zastosowania do interaktywnego systemu windows dla wszystkich środowisk. Zobacz [skrypty uruchamiania](managing-python-environments-in-visual-studio.md#startup-scripts). Należy jednak pamiętać, że ta funkcja nie działa obecnie. |
 | Strzałki w górę lub w dół przejdź historii | On | Używa klawiszy strzałek w celu nawigowania w historii w oknie interaktywnym. Wyczyścić to ustawienie, aby przejść w danych wyjściowych okno interaktywne zamiast za pomocą klawiszy strzałek. |
 | Tryb uzupełniania | Tylko obliczać wyrażeń bez wywołania funkcji | Proces określania dostępne elementy członkowskie na wyrażeniu w oknie interaktywnym może wymagać oceny bieżącego wyrażenia niedokończone może powodować efekty uboczne lub funkcji jest wywołana wiele razy. Ustawieniem domyślnym *tylko obliczać wyrażeń bez wywołania funkcji* wyklucza wyrażeń, które są wyświetlane do wywoływania funkcji, ale ocenia inne wyrażenia. Na przykład ocenia `a.b` , ale nie `a().b`.  *Nigdy nie obliczać wyrażeń* uniemożliwia wszystkie efekty uboczne, za pomocą tylko normalne aparacie IntelliSense dla sugestie. *Ocena wszystkie wyrażenia* ocenia pełne wyrażenie uzyskanie sugestii, niezależnie od tego, efekty uboczne. |
 | Ukryj podpowiedzi analizy statycznej | Off | Gdy opcja wyświetla tylko sugestii, które są uzyskiwane przez obliczenie wyrażenia. Jeśli w połączeniu z tryb uzupełniania *nigdy nie obliczać wyrażeń*, nie przydatne zakończeń są wyświetlane w oknie interaktywnym. |

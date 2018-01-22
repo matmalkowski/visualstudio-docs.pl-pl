@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: klonowanie repozytorium kodu języka Python w programie Visual Studio
 
-Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](installation.md), można łatwo Klonuj repozytorium kodu Python i utworzyć projekt z niego.
+Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](installing-python-support-in-visual-studio.md), można łatwo Klonuj repozytorium kodu Python i utworzyć projekt z niego.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 14. Uruchom program ponownie, aby zobaczyć, czy pierwszy wyboru przekazuje i zatrzymuje program na koan dalej. Kontynuuj, naprawa błędów i uruchom ponownie program można dowolnie.
 
 > [!Important]
-> W tego przewodnika Szybki Start, został utworzony bezpośrednio Sklonowanie *python_koans* repozytorium w witrynie GitHub. Takie repozytorium jest chroniony przez jego autora z zmian bezpośrednio, dlatego próba Zatwierdź zmiany do repozytorium kończy się niepowodzeniem. W praktyce deweloperzy rozwidlania zamiast tego repozytorium do ich własnego konta GitHub, wprowadzić zmiany, a następnie utwórz żądania ściągnięcia do przesyłania tych zmian w oryginalnej repozytorium. Te kroki opisano w [samouczek krok 6 — Praca z usługą Git](vs-tutorial-01-06.md).
+> W tego przewodnika Szybki Start, został utworzony bezpośrednio Sklonowanie *python_koans* repozytorium w witrynie GitHub. Takie repozytorium jest chroniony przez jego autora z zmian bezpośrednio, dlatego próba Zatwierdź zmiany do repozytorium kończy się niepowodzeniem. W praktyce deweloperzy rozwidlania zamiast tego repozytorium do ich własnego konta GitHub, wprowadzić zmiany, a następnie utwórz żądania ściągnięcia do przesyłania tych zmian w oryginalnej repozytorium. Te kroki opisano w [samouczek krok 6 — Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Samouczek: Praca z języka Python w programie Visual Studio](vs-tutorial-01-01.md)
+> [Samouczek: Praca z języka Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).
-- [Lokalizacje instalacji](installation.md#install-locations).
+- [Tworzenie środowiska dla istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md).
+- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).

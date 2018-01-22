@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Ustawienia testu jednostkowego dla kodu języka Python
 
@@ -35,7 +35,7 @@ Ten temat zawiera krótki konspektu jednostki testowanie możliwości programu V
 
 Konwencja, Visual Studio identyfikuje testy są jako metody, których nazwy rozpoczynają się od `test`. Aby wyświetlić ten problem, wykonaj następujące czynności:
 
-1. Otwórz [projektów języka Python](python-projects.md) załadowane w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj > Nowy element...** , a następnie wybierz pozycję **testu jednostkowego języka Python** następuje **Dodaj**.
+1. Otwórz [projektów języka Python](managing-python-projects-in-visual-studio.md) załadowane w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj > Nowy element...** , a następnie wybierz pozycję **testu jednostkowego języka Python** następuje **Dodaj**.
 
 1. Ta akcja tworzy `test1.py` pliku z kodem, który importuje standardowego `unittest` modułu, pochodzi z klasy testowej `unittest.TestCase`i wywołuje `unittest.main()` Jeśli bezpośrednio uruchomić skrypt:
 
@@ -92,7 +92,7 @@ Aby rozpocząć debugowania, ustaw początkowy punkt przerwania w kodzie, a nast
 
 ![Debugowanie testu](media/unit-test-debugging.png)
 
-Można również użyć **Analizuj pokrycie kodu dla wybrane testy** i **profil testu** poleceń, w zależności od używanej wersji programu Visual Studio (zobacz [macierzy funkcji](python-in-visual-studio.md#features-matrix)).
+Można również użyć **Analizuj pokrycie kodu dla wybrane testy** i **profil testu** poleceń, w zależności od używanej wersji programu Visual Studio (zobacz [macierzy funkcji](overview-of-python-tools-for-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Znane problemy
 

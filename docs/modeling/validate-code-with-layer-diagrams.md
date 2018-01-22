@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 02c983fb7cd797be377f8821c46b2d7dc38450f9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -218,7 +218,7 @@ W tej wersji programu Visual Studio walidacji zależności występuje w czasie r
   
  Aby uzyskać więcej informacji o błędach weryfikacji, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], zobacz:  
   
--   [Tworzenie aplikacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [Kompilowanie i wydawanie](/vsts/build-release/index)  
   
 -   [Użyj domyślnej szablonu procesu kompilacji](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
@@ -246,7 +246,7 @@ W tej wersji programu Visual Studio walidacji zależności występuje w czasie r
   
  W poniższej sekcji opisano składnię, która jest używana w tych błędach, wyjaśniono znaczenie tych błędów i zasugerowano, co można zrobić, aby je rozwiązać lub zarządzać nimi.  
   
-|**Składnia**|**Opis**|  
+|**Syntax**|**Opis**|  
 |----------------|---------------------|  
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* jest artefaktu, który jest skojarzony z warstwą na diagramie zależności.<br /><br /> *ArtifactTypeN* jest typem *ArtifactN*, takich jak **klasy** lub **metody**, na przykład:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metoda)|  
 |*NamespaceNameN*|Nazwa przestrzeni nazw.|  

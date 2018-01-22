@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b400e8a8c9c69b0c18204c55522d287d55d845ab
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 7695287c2d9db90bc452be926ce574a1fb38b03e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Szybki Start: Tworzenie projektu języka Python z istniejącego kodu
 
-Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](installation.md), łatwo ją przenieść istniejący kod języka Python do projektu programu Visual Studio.
+Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](installing-python-support-in-visual-studio.md), łatwo ją przenieść istniejący kod języka Python do projektu programu Visual Studio.
 
 > [!Important]
 > Proces opisany w tym miejscu nie Przenieś lub skopiuj oryginalnych plików źródłowych. Jeśli chcesz pracować z kopią, najpierw zduplikowane folderu.
@@ -35,10 +35,10 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Samouczek: Praca z języka Python w programie Visual Studio](vs-tutorial-01-01.md)
+> [Samouczek: Praca z języka Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).
-- [Lokalizacje instalacji](installation.md#install-locations).
+- [Tworzenie środowiska dla istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md).
+- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).

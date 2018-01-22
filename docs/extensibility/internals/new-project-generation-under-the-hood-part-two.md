@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: Kulisy, część druga
 W [nowej generacji projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy jak **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows aplikacji**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i klikniętej OK.  
@@ -28,7 +28,7 @@ W [nowej generacji projektu: pod maską, część 1](../../extensibility/interna
 ## <a name="generating-the-solution-files"></a>Generowanie plików rozwiązania  
  Wybieranie szablonów aplikacji kieruje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Rozpakowywanie i otwieranie odpowiedni plik .vstemplate i uruchomić szablon interpretować polecenia XML w tym pliku. Te polecenia Tworzenie projektów i elementów projektu w rozwiązaniu do nowego lub istniejącego.  
   
- Szablon wypakowuje pliki źródłowe, nazywany szablonów elementów z tego samego folderu zip, który zawiera plik .vstemplate. Szablon te pliki są kopiowane do nowego projektu, dostosowywanie ich odpowiednio. Omówienie szablonów projektów i elementów, zobacz [NIB: szablony Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Szablon wypakowuje pliki źródłowe, nazywany szablonów elementów z tego samego folderu zip, który zawiera plik .vstemplate. Szablon te pliki są kopiowane do nowego projektu, dostosowywanie ich odpowiednio.  
   
 ### <a name="template-parameter-replacement"></a>Zastępowanie parametru szablonu  
  Gdy szablon kopiuje szablonu elementów do nowego projektu, zastępuje wszelkie parametry szablonu z ciągami, aby dostosować plik. Parametr szablonu to specjalne token, który jest poprzedzony i następuje znak dolara ($), na przykład $date$.  
@@ -121,7 +121,7 @@ namespace Simple
   
  Wynikowa struktury folderów aplikacji systemu Windows wygląda następująco:  
   
- ![Rozwiązanie Simple](../../extensibility/internals/media/simplesolution.png "rozwiązanie Simple")  
+ ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
  Pierwszy i tylko \<projektu > tag w odczyty szablonu:  
   

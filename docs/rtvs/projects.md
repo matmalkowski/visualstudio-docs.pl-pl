@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
@@ -28,7 +28,7 @@ Projekty zawsze są zarządzane w programie Visual Studio *rozwiązania*, który
 ## <a name="creating-a-new-r-project"></a>Tworzenie nowego projektu R
 
 1. Uruchom program Visual Studio.
-1. Wybierz **Plik > Nowy > Projekt...** (Ctrl + Shift + N)
+1. Wybierz **Plik > Nowy > Projekt...** (Ctrl+Shift+N)
 1. Wybierz "Projekt R" w ramach **Szablony > R**, nadaj projektu, nazwy i lokalizacji, a wybierz **OK**:
 
     ![Okno dialogowe Nowy projekt dla języka R w programie Visual Studio (RTVS w VS2017)](media/getting-started-01-new-project.png)
@@ -52,7 +52,7 @@ To polecenie tworzy projekt z pustą `script.R` plik otwarty w edytorze. Zwróć
 | NumSpacesForTab | 2 | Liczba spacji do wstawienia w przypadku UseSpacesForTab tak. |
 | Kodowanie | UTF-8 | Domyślne kodowanie używane do `.R` plików. |
 | RnwWeave | Sweave | Pakiet do użycia podczas tkania pliku Rnw. |
-| Lateksu | pdfLaTeX | Bibliotekę do użycia podczas konwertowania RMarkdwon na PDF. |
+| LaTeX | pdfLaTeX | Bibliotekę do użycia podczas konwertowania RMarkdwon na PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Konwertowanie folderu plików do projektu R
 
@@ -119,6 +119,6 @@ W poniższym przykładzie rozwiązanie zawiera projekt R modelu, który został 
 Wyróżnione pogrubione projekt jest projektem "Autostart" dla rozwiązania; Aby go zmienić, kliknij prawym przyciskiem myszy inny projekt i wybierz **Ustaw jako projekt startowy**.
 
 > [!Note]
-> Obecnie nie ma żadnych jawnych R, aby C# / integracji języka C++ (jest dostępna dla języka Python, zobacz [Tworzenie rozszerzenia C++ dla języka Python](../python/cpp-and-python.md)).  Jednak są dostępne, które zapewniają C# i mostków C++ dla R. biblioteki
+> Obecnie nie ma żadnych jawnych R, aby C# / integracji języka C++ (jest dostępna dla języka Python, zobacz [Tworzenie rozszerzenia C++ dla języka Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  Jednak są dostępne, które zapewniają C# i mostków C++ dla R. biblioteki
 
 Aby uzyskać więcej informacji na temat zarządzania projektów i rozwiązań — ogólnie rzecz biorąc, zobacz [rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

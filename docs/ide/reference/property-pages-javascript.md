@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6665452bd074c083216120732cff8a3f18a74dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e4f01a74a3246a326c1695371a303472901c9ea
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 **Strony właściwości**zapewnia dostęp do ustawień projektu. Można użyć stron, które są widoczne w **strony właściwości** można zmienić właściwości projektu.  
@@ -68,11 +68,11 @@ Następujące strony i opcje są wyświetlane w **strony właściwości**.
  **Debuger do uruchomienia**  
  Określa domyślnego hosta dla debugera.  
 
--   Wybierz **komputera lokalnego** do uruchomienia aplikacji na komputerze hosta programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](http://go.microsoft.com/fwlink/?LinkId=234912).  
+-   Wybierz **komputera lokalnego** do uruchomienia aplikacji na komputerze hosta programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](../../debugger/run-windows-store-apps-on-the-local-machine.md).  
 
--   Wybierz **symulatora** uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji w symulatorze](http://go.microsoft.com/fwlink/?LinkId=234913).  
+-   Wybierz **symulatora** uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji w symulatorze](../../debugger/run-windows-store-apps-in-the-simulator.md).  
 
--   Wybierz **maszyny zdalnej** do uruchomienia aplikacji na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [uruchamianie aplikacji na komputerze zdalnym](http://go.microsoft.com/fwlink/?LinkId=234914).  
+-   Wybierz **maszyny zdalnej** do uruchomienia aplikacji na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [uruchamianie aplikacji na komputerze zdalnym](../../debugger/run-windows-store-apps-on-a-remote-machine.md).  
 
 **Uruchamianie aplikacji**  
 Określa, czy można uruchomić aplikacji, naciśnij klawisz F5 lub kliknij przycisk **debugowania**, **Rozpocznij debugowanie**. Wybierz **tak** do uruchamiania aplikacji; w przeciwnym razie wybierz **nr**. W przypadku wybrania **nr**, nadal można debugowania aplikacji, jeśli używasz innej metody ją uruchomić.  

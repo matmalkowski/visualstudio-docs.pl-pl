@@ -33,11 +33,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 Instrukcja potwierdzenia określa warunek, który będzie mieć wartość true w punkcie w programie. Jeśli ten warunek nie zostanie spełniony, potwierdzenie nie powiedzie się, wykonania programu zostanie przerwany i [błędy potwierdzenia — okno dialogowe](../debugger/assertion-failed-dialog-box.md) pojawi się.  
@@ -46,7 +46,7 @@ Instrukcja potwierdzenia określa warunek, który będzie mieć wartość true w
   
 -   Potwierdzenia MFC dla programów MFC.  
   
--   [ATLASSERT](http://msdn.microsoft.com/Library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) dla programów, które używają ATL.  
+-   [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert) dla programów, które używają ATL.  
   
 -   Potwierdzenia CRT dla programów, które używają biblioteki wykonawczej języka C.  
   
@@ -95,7 +95,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- Ponieważ `ASSERT` wyrażenie nie jest obliczane w wydanej wersji programu, `nM` mają różne wartości w wersji Debug i Release. Aby uniknąć tego problemu w MFC, można użyć [Sprawdź](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makro zamiast `ASSERT`.  `VERIFY`oblicza wyrażenie we wszystkich wersjach, ale nie sprawdza wynik w wersji.  
+ Ponieważ `ASSERT` wyrażenie nie jest obliczane w wydanej wersji programu, `nM` mają różne wartości w wersji Debug i Release. Aby uniknąć tego problemu w MFC, można użyć [Sprawdź](/cpp/mfc/reference/diagnostic-services#verify) makro zamiast `ASSERT`.  `VERIFY`oblicza wyrażenie we wszystkich wersjach, ale nie sprawdza wynik w wersji.  
   
  Należy zachować ostrożność szczególnie przy użyciu wywołania funkcji w instrukcji potwierdzania, ponieważ obliczania funkcji może mieć nieoczekiwane skutki uboczne.  
   
@@ -111,7 +111,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 ##  <a name="BKMK_CRT_assertions"></a>Potwierdzenia CRT  
  CRTDBG. Określa plik nagłówka H [_ASSERT i _asserte — makra](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) sprawdzania potwierdzenia.  
   
-|Makra|Wynik|  
+|Macro|Wynik|  
 |-----------|------------|  
 |`_ASSERT`|Jeśli określone wyrażenie nie jest SPEŁNIONY, plik nazwy i wiersz numer `_ASSERT`.|`_ASSERTE`|  
 |`_ASSERTE`|Taki sam jak `_ASSERT`, oraz reprezentację ciągu wyrażenie, które zostało potwierdzone.|  
@@ -165,7 +165,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  Jeśli argument MFC `ASSERT` makro ocenia się na zero lub ma wartość FAŁSZ, makra zatrzymuje wykonywanie programu i ostrzega o tym użytkownika; w przeciwnym razie wykonanie jest kontynuowane.  
   
- Jeśli potwierdzenie nie powiedzie się, okno dialogowe komunikat zawiera nazwę plik źródłowy i numer wiersza potwierdzenia. Jeżeli wybierz przycisk Ponów w oknie dialogowym pole, wywołanie [afxdebugbreak —](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) powoduje wykonanie przerwanie i przejście do debugera. W tym momencie można zbadać stosu wywołań i użyj inne urządzenia debugera, aby określić, dlaczego potwierdzenia nie powiodło się. Jeśli włączono [Just in time debugowania](../debugger/just-in-time-debugging-in-visual-studio.md)i debuger nie został jeszcze uruchomiony, okno dialogowe można uruchomić debugera.  
+ Jeśli potwierdzenie nie powiedzie się, okno dialogowe komunikat zawiera nazwę plik źródłowy i numer wiersza potwierdzenia. Jeżeli wybierz przycisk Ponów w oknie dialogowym pole, wywołanie [afxdebugbreak —](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) powoduje wykonanie przerwanie i przejście do debugera. W tym momencie można zbadać stosu wywołań i użyj inne urządzenia debugera, aby określić, dlaczego potwierdzenia nie powiodło się. Jeśli włączono [Just in time debugowania](../debugger/just-in-time-debugging-in-visual-studio.md)i debuger nie został jeszcze uruchomiony, okno dialogowe można uruchomić debugera.  
   
  Poniższy przykład przedstawia użycie `ASSERT` można sprawdzić wartość zwrotną funkcji:  
   
@@ -180,7 +180,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
   
- `ASSERT` Makro nie tworzy kodu w wersji. Można obliczyć wyrażenia w wersji, należy użyć [Sprawdź](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makro zamiast ASSERT.  
+ `ASSERT` Makro nie tworzy kodu w wersji. Można obliczyć wyrażenia w wersji, należy użyć [Sprawdź](/cpp/mfc/reference/diagnostic-services#verify) makro zamiast ASSERT.  
   
 ###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>Assert_valid — MFC i CObject::AssertValid  
  [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid) metoda zapewnia czasu wykonywania kontroli wewnętrzny stan klasy obiektu. Nie są wymagane do przesłonięcia `AssertValid` po pochodzi z klasy `CObject`, możesz wprowadzić klasy bardziej niezawodny w ten sposób. `AssertValid`należy wykonać potwierdzeń na wszystkie zmienne Członkowskie obiektu, aby zweryfikować, że zawierają one prawidłowych wartości. Na przykład należy sprawdzić, że zmienne Członkowskie wskaźnik nie mają wartości NULL.  

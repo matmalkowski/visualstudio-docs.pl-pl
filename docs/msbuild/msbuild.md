@@ -16,11 +16,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również nazywany MSBuild, udostępnia schematu XML dla pliku projektu, która kontroluje sposób platformy kompilacji przetwarza i tworzy oprogramowania. Visual Studio będzie korzystać program MSBuild, ale nie jest zależny od programu Visual Studio. Wywołując msbuild.exe w pliku projektu lub rozwiązania, możesz organizować i kompilacji produktów w środowiskach, w którym nie jest zainstalowany program Visual Studio.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 12/22/2017
  W środowisku IDE programu Visual Studio można napisać kod, ale Uruchom tworzy się przy użyciu programu MSBuild. Jako kolejny alternatywny można kompilacji kodu w środowisku IDE programu na komputerze dewelopera, ale kompilacji kodu, który jest zintegrowany z wielu deweloperów za pomocą wiersza polecenia programu MSBuild.  
   
 > [!NOTE]
->  Umożliwia Team Foundation Build automatycznie Kompiluj, testowania i wdrażania aplikacji. Możesz system kompilacji automatycznie uruchomić kompilacji, gdy deweloperzy zaewidencjonowaniu kodu (na przykład w ramach strategii ciągłej integracji) lub zgodnie z harmonogramem (na przykład co noc kompilacji testu weryfikacji kompilacji). Team Foundation Build kompiluje kod przy użyciu programu MSBuild. Aby uzyskać więcej informacji, zobacz [kompilowania aplikacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+>  Umożliwia Team Foundation Build automatycznie Kompiluj, testowania i wdrażania aplikacji. Możesz system kompilacji automatycznie uruchomić kompilacji, gdy deweloperzy zaewidencjonowaniu kodu (na przykład w ramach strategii ciągłej integracji) lub zgodnie z harmonogramem (na przykład co noc kompilacji testu weryfikacji kompilacji). Team Foundation Build kompiluje kod przy użyciu programu MSBuild. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania](/vsts/build-release/index).  
   
  Ten temat zawiera omówienie programu MSBuild. Samouczek wprowadzający, zobacz [wskazówki: przy użyciu programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Przy użyciu programu MSBuild w programie Visual Studio](#BKMK_VisualStudio)  
   
--   [Przeznaczanie dla wielu platform](#BKMK_Multitargeting)  
+-   [Multitargeting](#BKMK_Multitargeting)  
   
 ##  <a name="BKMK_CommandPrompt"></a>Przy użyciu programu MSBuild w wierszu polecenia  
  Aby uruchomić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wierszu polecenia, przekazać plik projektu do MSBuild.exe, wraz z niej odpowiednie opcje wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustaw inne opcje, które kontrolują proces kompilacji. Na przykład czy użyć następującej składni wiersza polecenia do tworzenia pliku `MyProj.proj` z `Configuration` ustawioną właściwość `Debug`.  

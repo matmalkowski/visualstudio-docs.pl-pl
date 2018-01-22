@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation — Element (szablony Visual Studio)
 Określa, czy użytkownik jest monitowany o projektu lokalizacji za pośrednictwem zapisywania **nowy projekt** okno dialogowe podczas tworzenia projektu. Jeśli ten element jest ustawiony na `true`, a następnie użytkownik jest monitowany o zapisanie lokalizacji; Jeśli `false`, nie monit. (To znaczy, że projekt tymczasowy jest tworzony.)  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Promptforsaveoncreation — >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -57,7 +57,7 @@ Określa, czy użytkownik jest monitowany o projektu lokalizacji za pośrednictw
 ## <a name="remarks"></a>Uwagi  
  `PromptForSaveOnCreation`to opcjonalny element. Wartość domyślna to `false`.  
   
- Tymczasowe projekty są projektów, które można tworzyć i modyfikować bez zapisywania zawartości tego projektu na dysku. Aby uzyskać więcej informacji, zobacz [NIB tymczasowe projekty](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Tymczasowe projekty są projektów, które można tworzyć i modyfikować bez zapisywania zawartości tego projektu na dysku.  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie ustawiono wartość `PromptForSaveOnCreation` równa `false`, określającej umożliwia projekt do utworzenia jako tymczasowy projektu.  

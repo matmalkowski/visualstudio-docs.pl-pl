@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: ee8571d14edced4b4bd4f20fc0799c9391f23515
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.openlocfilehash: d595d97c0f8d9e58f02764c8e06e4a3057184daa
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 01/22/2018
 ---
 # Pomoc F1
 
-Wygląda na to, możesz przez pomyłkę wyładowany w tym miejscu. Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy kursor znajduje się tylko do prawej strony nazwy przed naciskając klawisz **F1**. Jeśli to nadal nie zadziała, spróbuj użyć wyszukiwania na https://docs.microsoft.com.
+Wygląda na to, możesz przez pomyłkę wyładowany w tym miejscu. Jeśli szukasz pomocy F1 — słowo kluczowe lub nazwa interfejsu API należy kursor znajduje się wewnątrz lub na prawo słowo przed naciskając klawisz **F1**. Jeśli to nadal nie zadziała, spróbuj użyć wyszukiwania na https://docs.microsoft.com.
 
 Jeśli szukasz pomocy w edytorze tekstu, sama zobacz [pisanie kodu w edytorze](../../ide/writing-code-in-the-code-and-text-editor.md).

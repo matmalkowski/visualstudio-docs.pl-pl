@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w Visual Basic
 Możesz zmienić ustawienia projektu dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konfiguracji debugowania w **strony właściwości** okna, zgodnie z opisem w [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższych tabelach przedstawiono gdzie można znaleźć ustawień debugera w **strony właściwości** okna.  
@@ -43,7 +43,7 @@ Możesz zmienić ustawienia projektu dla [!INCLUDE[vbprvb](../code-quality/inclu
 |Ustawienie|Opis|  
 |-------------|-----------------|  
 |**Konfiguracja**|Ustawia tryb dla kompilowania aplikacji. Wybierz spośród **aktywny (debugowanie)**, **debugowania**, **wersji**, **wszystkie konfiguracje**.|  
-|**Uruchomienie akcji**|Ta grupa formantów Określa akcję, która ma miejsce, gdy wybierzesz Start z menu Debugowanie.<br /><br /> -   **Uruchom projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [NIB sposobu: Ustaw projekty startowe](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970).<br />-   **Uruchom program zewnętrznych** umożliwia start i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączyć do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Uruchom przeglądarkę w adresie URL** pozwala na debugowanie aplikacji sieci Web.|  
+|**Uruchomienie akcji**|Ta grupa formantów Określa akcję, która ma miejsce, gdy wybierzesz Start z menu Debugowanie.<br /><br /> -   **Uruchom projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. <br />-   **Uruchom program zewnętrznych** umożliwia start i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączyć do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Uruchom przeglądarkę w adresie URL** pozwala na debugowanie aplikacji sieci Web.|  
 |**Argumenty wiersza polecenia**|Określa argumenty wiersza polecenia dla programu do debugowania. Nazwa polecenia jest nazwa programu określone w uruchomienia programu zewnętrznego. Argumenty wiersza polecenia są ignorowane, jeśli akcja uruchamiania początkowy adres URL.|  
 |**Katalog roboczy**|Określa katalog roboczy debugowany program. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], katalog roboczy jest aplikacja jest uruchamiana w katalogu. Domyślny katalog roboczy jest \bin\Debug lub \bin\Release, w zależności od bieżącej konfiguracji.|  
 |**Użyj komputera zdalnego**|Gdy pole wyboru jest zaznaczone, włączone jest debugowanie zdalne. W polu tekstowym, możesz wpisać nazwę komputera zdalnego, gdy aplikacja będzie uruchamiana na potrzeby debugowania lub [nazwy serwera polecenia Msvsmon](../debugger/remote-debugging.md). Lokalizacja pliku exe na komputerze zdalnym jest określony przez właściwość ścieżki wyjściowej na karcie kompilacji. Lokalizacja musi być możliwe do udostępnienia katalog na komputerze zdalnym.|  

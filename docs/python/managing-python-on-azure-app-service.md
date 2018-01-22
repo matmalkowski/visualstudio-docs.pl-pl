@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie Python w usłudze aplikacji Azure
 
@@ -200,7 +200,7 @@ Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z na
     Przy użyciu `requirements.txt` jest zalecane, ponieważ jest łatwy do odtworzenia pakietu dokładną wartość lokalnie i na serwerze. Pamiętaj tylko odwiedzić konsoli po wdrożeniu zmiany wprowadzone w `requirements.txt` i ponownie uruchom polecenie.
 
 > [!Note]
-> Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [zarządzania wymagane pakiety](python-environments.md#managing-required-packages-requirementstxt).
+> Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [zarządzania wymagane pakiety](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>Program kudu interfejsu API REST
 

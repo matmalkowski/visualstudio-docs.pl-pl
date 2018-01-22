@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu języka Python z szablonu w programie Visual Studio
 
-Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](installation.md), ułatwia tworzenie nowego projektu Python przy użyciu różnych szablonów.
+Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](installing-python-support-in-visual-studio.md), ułatwia tworzenie nowego projektu Python przy użyciu różnych szablonów.
 
 1. Uruchom program Visual Studio.
 
-1. Wybierz **Plik > Nowy > Projekt** (Ctrl + Shift + N). W **nowy projekt** okno dialogowe, wyszukaj "Python", a następnie wybierz odpowiedni szablon. Należy pamiętać, że wybranie szablonu wyświetla krótki opis zawiera jakie szablonu. (Zobacz też [projektów języka Python](python-projects.md#project-templates).)
+1. Wybierz **Plik > Nowy > Projekt** (Ctrl + Shift + N). W **nowy projekt** okno dialogowe, wyszukaj "Python", a następnie wybierz odpowiedni szablon. Należy pamiętać, że wybranie szablonu wyświetla krótki opis zawiera jakie szablonu. (Zobacz też [projektów języka Python](managing-python-projects-in-visual-studio.md#project-templates).)
 
     ![Okno dialogowe Nowy projekt VS2017 z szablonu Python](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Samouczek: Praca z języka Python w programie Visual Studio](vs-tutorial-01-01.md)
+> [Samouczek: Praca z języka Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installation.md).
-- [Lokalizacje instalacji](installation.md#install-locations).
+- [Tworzenie środowiska dla istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md).
+- [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).

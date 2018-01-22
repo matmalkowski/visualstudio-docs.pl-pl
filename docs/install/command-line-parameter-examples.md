@@ -2,7 +2,7 @@
 title: "Przykłady parametru wiersza polecenia do instalacji programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 05/06/2017
-ms.reviewer: tims
+ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
@@ -12,11 +12,11 @@ author: timsneath
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4729300eea0a4e1474779edd4bec021a5db9e73c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f91810f53a27cc988c44e6c283364bb2d29e39e0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.
 Aby zilustrować jak [używania parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md), poniżej przedstawiono kilka przykładów, które można dostosować w celu dostosowania potrzeb.
@@ -35,6 +35,15 @@ vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
 ```
+
+* Aktualizacja wystąpienia programu Visual Studio przy użyciu wiersza polecenia nie interakcyjne monitów, ale wyświetlany postęp:
+```
+vs_enterprise.exe --update --quiet --wait
+vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+```
+
+> [!NOTE]
+> Oba polecenia są wymagane. Pierwsze polecenie aktualizacji, Instalator programu Visual Studio. Drugie polecenie aktualizuje wystąpienie programu Visual Studio. Aby uniknąć okno dialogowe kontroli konta użytkownika, należy uruchomić wiersz polecenia jako Administrator. 
 
 * Zainstalować pulpitu wystąpienie programu Visual Studio w trybie dyskretnym, przy użyciu pakietu języka francuskiego, zwracanie tylko wtedy, gdy jest zainstalowany produkt.
 ```

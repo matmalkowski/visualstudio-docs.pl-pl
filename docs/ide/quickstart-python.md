@@ -16,11 +16,11 @@ dev_langs: python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 
@@ -70,7 +70,7 @@ W tym szybkiego startu jednak, przy użyciu biblioteki Falcon zgłaszać proces 
 
 Aby uzyskać więcej informacji na temat Falcon, odwiedź stronę [falconframework.org](https://falconframework.org/).
 
-Należy pamiętać, zamiast instalowania bibliotek w środowisku globalnych, deweloperzy zazwyczaj utworzyć "środowisko wirtualne", w którym chcesz zainstalować biblioteki dla określonego projektu. Wiele szablonów projektu języka Python w programie Visual Studio `requirements.txt` plik zawierający listę bibliotek, od których zależy ten szablon. Tworzenie projektu z jednego z tych szablonów wyzwala tworzenie środowiska wirtualnego, w którym są zainstalowane biblioteki. Aby uzyskać więcej informacji, zobacz [środowiska Python - środowisk wirtualnych](../python/python-environments.md#creating-virtual-environments).
+Należy pamiętać, zamiast instalowania bibliotek w środowisku globalnych, deweloperzy zazwyczaj utworzyć "środowisko wirtualne", w którym chcesz zainstalować biblioteki dla określonego projektu. Wiele szablonów projektu języka Python w programie Visual Studio `requirements.txt` plik zawierający listę bibliotek, od których zależy ten szablon. Tworzenie projektu z jednego z tych szablonów wyzwala tworzenie środowiska wirtualnego, w którym są zainstalowane biblioteki. Aby uzyskać więcej informacji, zobacz [środowiska Python - środowisk wirtualnych](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Dodawanie plików kodu
 
@@ -144,7 +144,7 @@ Aby uzyskać więcej informacji o Falcon, zobacz [szybkiego startu Falcon](https
 Gratulujemy Kończenie pracy tego przewodnika Szybki Start, w którym znasz nieco programu Visual Studio IDE języka Python. Aby kontynuować pełniejsze samouczek dotyczący Python w programie Visual Studio, w tym za pomocą okna interaktywnego debugowania wizualizacji danych i Praca z usługą Git, kliknij przycisk poniżej.
 
 > [!div class="nextstepaction"]
-> [Samouczek: Wprowadzenie do języka Python w programie Visual Studio](../python/vs-tutorial-01-01.md).
+> [Samouczek: Wprowadzenie do języka Python w programie Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 - Dowiedz się więcej o [szablonów aplikacji w programie Visual Studio web języka Python](../python/template-web.md)
 - Dowiedz się więcej o [debugowania języka Python](../python/debugging.md)

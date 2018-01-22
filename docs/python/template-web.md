@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Szablony projektów sieci web języka Python
 
@@ -33,7 +33,7 @@ Uruchomienia projektu utworzonych na podstawie szablonu (jak uzyskać dostęp za
 
 Szablony każdego Bottle, Flask i Django obejmują lokacji starter z niektórymi stron i plików statycznych. Ten kod jest wystarczające do uruchomienia, a serwer lokalnie (której niektóre ustawienia muszą pochodzić ze środowiska) debugowania i wdrażania do systemu Microsoft Azure (gdy [aplikacji WSGI](http://www.python.org/dev/peps/pep-3333/) obiekt musi zostać zapewniony).
 
-Podczas tworzenia projektu za pomocą szablonu określonej struktury, ułatwiające instalowanie wymaganych pakietów przy użyciu narzędzia pip zostanie wyświetlone okno dialogowe. Zalecamy również przy użyciu [środowiska wirtualnego](python-environments.md#global-and-virtual-environments) dla projektów sieci web tak, aby prawidłowe zależności są uwzględniane podczas publikowania witryny sieci web:
+Podczas tworzenia projektu za pomocą szablonu określonej struktury, ułatwiające instalowanie wymaganych pakietów przy użyciu narzędzia pip zostanie wyświetlone okno dialogowe. Zalecamy również przy użyciu [środowiska wirtualnego](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) dla projektów sieci web tak, aby prawidłowe zależności są uwzględniane podczas publikowania witryny sieci web:
 
 ![Okno dialogowe, który instaluje wymagane pakiety szablonu projektu](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ Dowolnej właściwości lub środowiska zmiennej projektu można określić ze s
 
 ### <a name="sample-pyramid-configuration"></a>Przykładowa konfiguracja ostrosłupowy
 
-Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narzędzia wiersza polecenia. Po utworzeniu aplikacji, można go zaimportować przy użyciu [z istniejących Python code](python-projects.md#creating-a-project-from-existing-files) szablonu. Po wykonaniu tej czynności, wybierz **ogólnego projektu sieci Web** dostosowywania do konfigurowania opcji. Te ustawienia założono, że ostrosłupa jest zainstalowany w środowisku wirtualnym na `..\env`.
+Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narzędzia wiersza polecenia. Po utworzeniu aplikacji, można go zaimportować przy użyciu [z istniejących Python code](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) szablonu. Po wykonaniu tej czynności, wybierz **ogólnego projektu sieci Web** dostosowywania do konfigurowania opcji. Te ustawienia założono, że ostrosłupa jest zainstalowany w środowisku wirtualnym na `..\env`.
 
 - **Debugowanie** grupy:
   - **Port serwera**: 6543 (lub niezależnie od jest skonfigurowana w pliku ini)

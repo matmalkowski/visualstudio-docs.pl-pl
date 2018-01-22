@@ -29,17 +29,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 Jeśli debugowany program MFC, mogą być przydatne tych metod debugowania.  
   
 ##  <a name="BKMK_In_this_topic"></a>W tym temacie  
- [Afxdebugbreak —](#BKMK_AfxDebugBreak)  
+ [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [TRACE — makro](#BKMK_The_TRACE_macro)  
   
@@ -64,7 +64,7 @@ Jeśli debugowany program MFC, mogą być przydatne tych metod debugowania.
     -   [Tworzenie aplikacji MFC z informacji o debugowaniu dla wybranych modułów](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a>Afxdebugbreak —  
- MFC zapewnia specjalnego [afxdebugbreak —](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) funkcja dla kodować punktów przerwania w kodzie źródłowym:  
+ MFC zapewnia specjalnego [afxdebugbreak —](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) funkcja dla kodować punktów przerwania w kodzie źródłowym:  
   
 ```  
 AfxDebugBreak( );  
@@ -147,9 +147,9 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
     |Wartość|Opis|  
     |-----------|-----------------|  
-    |**allocmemdf —**|Włącz diagnostycznych alokatora (ustawienie domyślne).|  
-    |**delayfreememdf —**|Opóźnienie zwalnianie pamięci podczas wywoływania metody `delete` lub `free` dopóki wyjście z programu. To spowoduje, że program przydzielić maksymalną ilość pamięci.|  
-    |**checkalwaysmemdf —**|Wywołanie [afxcheckmemory —](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) każdorazowo pamięci są przydzielone lub zwolniony.|  
+    |**allocMemDF**|Włącz diagnostycznych alokatora (ustawienie domyślne).|  
+    |**delayFreeMemDF**|Opóźnienie zwalnianie pamięci podczas wywoływania metody `delete` lub `free` dopóki wyjście z programu. To spowoduje, że program przydzielić maksymalną ilość pamięci.|  
+    |**checkAlwaysMemDF**|Wywołanie [afxcheckmemory —](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) każdorazowo pamięci są przydzielone lub zwolniony.|  
   
      Te wartości można w połączeniu za pomocą operacji operatora logicznego OR, jak pokazano poniżej:  
   

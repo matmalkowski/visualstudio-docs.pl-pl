@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio C++ podstawowe wskazówki sprawdzania odwołania | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ podstawowe wskazówki dotyczące sprawdzania odwołania
 Ta sekcja zawiera ostrzeżenia C++ podstawowe wskazówki. Informacje dotyczące analizy kodu, zobacz [/ analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis) i [Szybki Start: analiza kodu dla C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
@@ -26,17 +26,17 @@ Ta sekcja zawiera ostrzeżenia C++ podstawowe wskazówki. Informacje dotyczące 
 
 ## <a name="ownerpointer-group"></a>OWNER_POINTER grupy
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
   Zwraca obiekt zakresie zamiast przydzielone sterty, jeśli ma ona Konstruktor przenoszenia. Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr). 
      
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)  
   Resetowanie lub jawnie usunąć właściciela\<T > wskaźnika "% Zmienna %". Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
      
 [C26404 DONT_DELETE_INVALID](C26404.md)  
-  Nie należy usuwać właściciela\<T > które mogą być w nieprawidłowym stanie. Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
+  Nie należy usuwać właściciela\<T > może to być w nieprawidłowym stanie. Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
 
 [C26405 DONT_ASSIGN_TO_VALID](C26405.md)  
-  Nie należy przypisywać do właściciela\<T > które mogą być w nieprawidłowym stanie. Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
+  Nie należy przypisywać do właściciela\<T > może to być w nieprawidłowym stanie. Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
 
 [C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md)  
   Nie należy przypisywać raw wskaźnika do właściciela\<T >. Zobacz [C++ podstawowe wskazówki dotyczące R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
@@ -56,7 +56,7 @@ Ta sekcja zawiera ostrzeżenia C++ podstawowe wskazówki. Informacje dotyczące 
 ## <a name="rawpointer-group"></a>RAW_POINTER grupy
  
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
-Nie należy przypisywać wynik alokacji lub wywołanie funkcji z użyciem właściciela\<T > zwrócić wartość do wskaźnika raw, użyj właściciela<T> zamiast tego. Zobacz [C++ podstawowe wskazówki dotyczące I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
+Nie należy przypisywać wynik alokacji lub wywołanie funkcji z użyciem właściciela\<T > zwrócić wartość do nieprzetworzonej wskaźnika; Użyj właściciela\<T > zamiast tego. Zobacz [C++ podstawowe wskazówki dotyczące I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)  
 Nie należy usuwać raw wskaźnika, który nie jest właścicielem\<T >. Zobacz [C++ podstawowe wskazówki dotyczące I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
@@ -123,16 +123,30 @@ Nie należy usuwać raw wskaźnika, który nie jest właścicielem\<T >. Zobacz 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)  
   Inicjator globalnych uzyskuje dostęp do obiekt zewnętrzny "% % symbol". Zobacz [C++ podstawowe wskazówki dotyczące I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).  
   
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) należy unikać bez nazwy obiektów z konstrukcji niestandardowych oraz zniszczenia. [ES.84: Nie (spróbuj) zadeklarować zmiennej lokalnej bez nazwy](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 ## <a name="class-group"></a>Klasa grupy
     
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md)  
   Zdefiniuj lub usunąć wszelkie operacje domyślną w typie '% symbol %', zdefiniuj lub usunąć je wszystkie. Zobacz [C++ podstawowe wskazówki dotyczące C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).  
+
+
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) funkcja "% % symbol" powinna być oznaczona jako "override". Zobacz [ C.128: funkcji wirtualnych należy określić dokładnie jeden wirtualny, zastępowanie lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final). 
+
   
 [C26434 DONT_HIDE_METHODS](C26434.md)  
   Funkcja "% symbol_1%" ukrywa-wirtualna funkcja "% symbol_2%". Zobacz [C++ podstawowe wskazówki dotyczące C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).  
   
+
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funkcja "% % symbol" należy określić dokładnie jedną "virtual", "override" lub "final". Zobacz [ C.128: funkcji wirtualnych należy określić dokładnie jeden wirtualny, zastępowanie lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md). 
+
+
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)  
   Typ '% symbol %' z funkcją wirtualną musi albo publiczny wirtualny lub chronionych niewirtualne — destruktor. Zobacz [C++ podstawowe wskazówki dotyczące C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).  
+
+
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) zastąpiona destruktor nie należy używać jawnego przesłaniania lub specyfikatory "virtual". Zobacz [C.128: funkcji wirtualnych należy określić dokładnie jeden wirtualny, zastępowanie lub końcowego](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 
 ## <a name="type-group"></a>Typ grupy
     
@@ -158,41 +172,41 @@ Nie należy usuwać raw wskaźnika, który nie jest właścicielem\<T >. Zobacz 
 
 ## <a name="const-group"></a>CONST grupy
     
-C26460 USE_CONST_REFERENCE_ARGUMENTS:  
+C26460 USE_CONST_REFERENCE_ARGUMENTS  
   Argument odwołania "% argumentu %" dla funkcji "% funkcji %" może być oznaczony jako `const`. Zobacz [C++ podstawowe wskazówki dotyczące con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
 C26461 USE_CONST_POINTER_ARGUMENTS: argument wskaźnika "% argumentu %" dla funkcji "% funkcji %" może być oznaczony jako wskaźnik do `const`. Zobacz [C++ podstawowe wskazówki dotyczące con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
-C26462 USE_CONST_POINTER_FOR_VARIABLE:  
+C26462 USE_CONST_POINTER_FOR_VARIABLE  
   Wartość wskazywana przez "% Zmienna %" jest przypisane tylko raz, oznacz go jako wskaźnik do `const`. Zobacz [C++ podstawowe wskazówki dotyczące con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26463 USE_CONST_FOR_ELEMENTS:  
+C26463 USE_CONST_FOR_ELEMENTS  
   Elementy tablicy % tablicy % przypisanych tylko raz, Oznacz elementy `const`. Zobacz [C++ podstawowe wskazówki dotyczące con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26464 USE_CONST_POINTER_FOR_ELEMENTS:  
+C26464 USE_CONST_POINTER_FOR_ELEMENTS  
   Wartości wskazywanej przez elementy tablicy % tablicy % przypisanych tylko raz, elementy Oznacz jako wskaźnik do `const`. Zobacz [C++ podstawowe wskazówki dotyczące con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
 
-C26496 USE_CONST_FOR_VARIABLE:  
+C26496 USE_CONST_FOR_VARIABLE  
   Zmienna "% Zmienna %" jest przypisane tylko raz, oznacz go jako `const`. Zobacz [C++ podstawowe wskazówki dotyczące con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26497 USE_CONSTEXPR_FOR_FUNCTION:  
+C26497 USE_CONSTEXPR_FOR_FUNCTION  
   Ta funkcja % funkcji można oznaczyć `constexpr` w razie potrzeby jest ocena kompilacji. Zobacz [C++ podstawowe wskazówki dotyczące F.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).  
   
-C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL:  
+C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL  
   Można użyć tej funkcji wywołania % funkcji % `constexpr` w razie potrzeby jest ocena kompilacji. Zobacz [C++ podstawowe wskazówki dotyczące con.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).  
 
 ## <a name="type-group"></a>Typ grupy
-C26465 NO_CONST_CAST_UNNECESSARY:  
+C26465 NO_CONST_CAST_UNNECESSARY  
   Nie używaj `const_cast` do rzutowania z usuwaniem `const`. `const_cast`nie jest wymagana. constness lub zmienności nie jest usuwany przez tę konwersję. Zobacz [C++ podstawowe wskazówki dotyczące Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
-C26466 NO_STATIC_DOWNCAST_POLYMORPHIC:  
+C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   Nie używaj `static_cast` downcasts. Rzutowanie z typem polimorficznym należy używać dynamic_cast. Zobacz [C++ podstawowe wskazówki dotyczące Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
   
-C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:  
+C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR  
   Nie używaj `reinterpret_cast`. Rzutowanie z void * można użyć `static_cast`. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md)  
-  Nie używaj `static_cast` dla konwersje arytmetyczne. Użyj nawiasów klamrowych inicjowania gsl::narrow_cast lub gsl::narow. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
+  Nie używaj `static_cast` dla konwersje arytmetyczne. Użyj nawiasów klamrowych inicjowania, gsl::narrow_cast lub gsl::narow. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26473 NO_IDENTITY_CAST](C26473.md)  
   Nie rzutowanie pomiędzy typami wskaźnika, gdy typu źródłowego i docelowego są takie same. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
@@ -203,22 +217,22 @@ C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md)  
   Nie należy używać funkcji stylu C rzutowania. Zobacz [C++ podstawowe wskazówki dotyczące ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).  
      
-C26490 NO_REINTERPRET_CAST:  
+C26490 NO_REINTERPRET_CAST  
   Nie używaj `reinterpret_cast`. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26491 NO_STATIC_DOWNCAST:  
+C26491 NO_STATIC_DOWNCAST  
   Nie używaj `static_cast` downcasts. Zobacz [C++ podstawowe wskazówki dotyczące Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26492 NO_CONST_CAST:  
+C26492 NO_CONST_CAST  
   Nie używaj `const_cast` do rzutowania z usuwaniem `const`. Zobacz [C++ podstawowe wskazówki dotyczące Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
     
-C26493 NO_CSTYLE_CAST:  
+C26493 NO_CSTYLE_CAST  
   Nie używaj rzutowania w stylu języka C. Zobacz [C++ podstawowe wskazówki dotyczące Type.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type). 
      
-C26494 VAR_USE_BEFORE_INIT:  
+C26494 VAR_USE_BEFORE_INIT  
   Zmienna "% Zmienna %" nie jest zainicjowany. Zawsze można zainicjować obiektu. Zobacz [C++ podstawowe wskazówki dotyczące Type.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26495 MEMBER_UNINIT:  
+C26495 MEMBER_UNINIT  
   Zmienna "% Zmienna %" nie jest zainicjowany. Zawsze można zainicjować zmiennej członkowskiej. Zobacz [C++ podstawowe wskazówki dotyczące Type.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
 ## <a name="bounds-group"></a>Grupy granic
@@ -226,10 +240,10 @@ C26495 MEMBER_UNINIT:
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)   
   Nie używaj arytmetyki wskaźnika. Zamiast tego użyj zakresu. Zobacz [C++ podstawowe wskazówki dotyczące Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26482 NO_DYNAMIC_ARRAY_INDEXING:  
+C26482 NO_DYNAMIC_ARRAY_INDEXING  
   Tylko indeks do tablic za pomocą wyrażenia stałe. Zobacz [C++ podstawowe wskazówki dotyczące Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26483 STATIC_INDEX_OUT_OF_RANGE:  
+C26483 STATIC_INDEX_OUT_OF_RANGE  
   Wartość % wartość jest poza zakresem (0, powiązane %) zmiennej "% Zmienna %". Tylko indeks do tablic za pomocą wyrażenia stałe, które znajdują się w granice tablicy. Zobacz [C++ podstawowe wskazówki dotyczące Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   

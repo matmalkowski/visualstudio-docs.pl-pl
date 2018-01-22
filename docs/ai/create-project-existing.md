@@ -24,7 +24,7 @@ Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.
 8. W razie potrzeby, uruchom program naciskając klawisze Ctrl + F5 lub wybranie **Debuguj > Rozpocznij bez debugowanie**. 
 
 > [!div class="nextstepaction"]
-> [Samouczek: Praca z języka Python w programie Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Samouczek: Praca z języka Python w programie Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Zobacz też
 

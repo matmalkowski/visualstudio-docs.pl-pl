@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Rozszerzanie właściwości
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Właściwości** okna jest przeglądarką uniwersalnych właściwości dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` wpisz informacje i metadanych modelu COM +, aby wyświetlić właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowane środowisko programistyczne (IDE).  
   
- **Właściwości** okna, które mogą być otwierane przez naciśnięcie przycisku F4 na klawiaturze lub wybierając **okna właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania właściwości i zdarzenia wybranych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązań i projektów, są wyświetlane na [strony właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji, zobacz [właściwości NIB: projekt](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md), i [zarządzania NIB: element w projektach](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ **Właściwości** okna, które mogą być otwierane przez naciśnięcie przycisku F4 na klawiaturze lub wybierając **okna właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania właściwości i zdarzenia wybranych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązań i projektów, są wyświetlane na [strony właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Przegląd okna właściwości](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Okno właściwości  

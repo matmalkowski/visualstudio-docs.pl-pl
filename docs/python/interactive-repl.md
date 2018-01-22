@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
 
@@ -38,7 +38,7 @@ Visual Studio zawiera szereg trybów REPL dla języka Python do wyboru:
 
 W tym temacie opisano **standardowe** i **debugowania** REPL trybów. Aby uzyskać więcej informacji o trybach IPython, zobacz [przy użyciu IPython REPL](interactive-repl-ipython.md).
 
-Aby uzyskać szczegółowe wskazówki, wraz z przykładami, w tym interakcji w edytorze, np. Ctrl + Enter, zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](vs-tutorial-01-03.md). Wprowadzenie wideo, zobacz [okna interaktywnego Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
+Aby uzyskać szczegółowe wskazówki, wraz z przykładami, w tym interakcji w edytorze, np. Ctrl + Enter, zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Wprowadzenie wideo, zobacz [okna interaktywnego Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
@@ -104,7 +104,7 @@ Wprowadzanie `dir()` w zakresie Wyświetla prawidłowych identyfikatorów w tym 
 
 ![Okno interaktywne w zakresie importlib](media/interactive-importlib-scope.png)
 
-< name = "wysyłania kodu do interaktywne"</a>
+<a name="sending-code-to-interactive"</a>
 
 ## <a name="send-code-to-interactive-command"></a>Wyślij kod na interakcyjne
 

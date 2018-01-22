@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b33c96844abc9bbf4cc7bcd403626980e0bf37a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
@@ -91,7 +91,7 @@ Dla usług w chmurze `ConfigureCloudService.ps1` skrypt używa `pip` zainstalowa
 
 Należy pamiętać, że wystąpienia usługi chmury nie zawierają kompilatory C, dlatego wszystkie biblioteki z rozszerzeniami C podać wstępnie skompilowanych plików binarnych.
 
-PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](python-environments.md#managing-required-packages-requirementstxt) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
+PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

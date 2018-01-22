@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
 W tym samouczku Visual Basic (VB), zostanie utworzone i uruchomione kilka aplikacji w innej konsoli za pomocą programu Visual Studio oraz Eksplorowanie niektóre funkcje programu Visual Studio [zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
@@ -82,11 +82,11 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
      Console.ReadKey(True)
     ```
 
-    Ten kod zastępuje istniejące [elementu Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1), i [Console.ReadKey]() instrukcje.
+    Ten kod zastępuje istniejące <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, i <xref:System.Console.ReadKey%2A> instrukcje.
 
  ![W oknie kod przedstawiający kodu co to jest nazwa użytkownika](../ide/media/vb-codewindow-what-name.png)
 
-3. Po otwarciu okna konsoli, wprowadź nazwę. Okna konsoli powinien wyglądać podobnie do następującego zrzutu ekranu:       
+3. Po otwarciu okna konsoli, wprowadź nazwę. Okna konsoli powinien wyglądać podobnie do następującego zrzutu ekranu:
 
    ![Konsoli okna pokazującego co to jest nazwa użytkownika, Data i godzina, a następnie naciśnij dowolny klawisz, aby kontynuować wiadomości](../ide/media/vb-console-what-name.png)
 

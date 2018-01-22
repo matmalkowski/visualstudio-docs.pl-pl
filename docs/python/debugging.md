@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 5cd67d031cd41a1f36de68d7372fdfcfd6f8e476
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -45,9 +45,9 @@ Zobacz też poniższe tematy debugowania specyficzne dla scenariusza:
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python w programie Visual Studio obsługuje debugowanie bez projektu. Z autonomicznego pliku Python otwarty, kliknij prawym przyciskiem myszy w edytorze, wybierz **rozpoczynać debugowanie**, i Visual Studio uruchamia skrypt z globalnego domyślnego środowiska (zobacz [środowiska Python](python-environments.md)) i bez argumentów. Ale następnie pełną obsługę debugowania.
+> Python w programie Visual Studio obsługuje debugowanie bez projektu. Z autonomicznego pliku Python otwarty, kliknij prawym przyciskiem myszy w edytorze, wybierz **rozpoczynać debugowanie**, i Visual Studio uruchamia skrypt z globalnego domyślnego środowiska (zobacz [środowiska Python](managing-python-environments-in-visual-studio.md)) i bez argumentów. Ale następnie pełną obsługę debugowania.
 >
-> Aby kontrolować środowiska i argumentów, utworzyć projekt kodu, który jest łatwo zrobić za pomocą [z istniejących Python code](python-projects.md#creating-a-project-from-existing-files) szablonu projektu.
+> Aby kontrolować środowiska i argumentów, utworzyć projekt kodu, który jest łatwo zrobić za pomocą [z istniejących Python code](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) szablonu projektu.
 
 <a name="debugging-with-a-project"></a>
 
@@ -58,7 +58,7 @@ Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, 
 Rozpoczyna się od sesji debugowania **Debuguj > Rozpocznij debugowanie** polecenia, **Start** przycisku paska narzędzi lub klawisz F5. Te akcje Uruchom plik uruchomienia projektu (pokazano pogrubienia w Eksploratorze rozwiązań) z projektu aktywnego środowiska i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone we właściwościach projektu (zobacz [debugowania projektu opcje](#project-debugging-options). Jeśli jakiegoś powodu nie ma pliku uruchamiania Ustaw, jednak okno danych wyjściowych Python krótko pojawia się i znika. W takim przypadku kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik uruchamiania**.
 
 > [!Note]
-> Debuger zawsze rozpoczyna się od aktywnego środowiska Python dla projektu. Zmian w środowisku, aby różne aktywne jeden zgodnie z opisem na [środowiska Python](python-environments.md).
+> Debuger zawsze rozpoczyna się od aktywnego środowiska Python dla projektu. Zmian w środowisku, aby różne aktywne jeden zgodnie z opisem na [środowiska Python](managing-python-environments-in-visual-studio.md).
 
 ### <a name="breakpoints"></a>Punkty przerwania
 
@@ -81,7 +81,7 @@ Podczas ustawiania warunki, można również ustawić **akcji** i utworzyć komu
 
 Po zatrzymana w punkcie przerwania, są różne sposoby krokowo kodu lub uruchom bloki kodu przed przerwaniem ponownie. Te polecenia są dostępne w wielu miejscach, w tym narzędzi debugowania top **debugowania** menu, w menu kontekstowym kliknij prawym przyciskiem myszy w edytorze kodu i za pośrednictwem skróty klawiaturowe (za pośrednictwem nie wszystkie polecenia są we wszystkich miejscach):
 
-| Funkcja | Naciśnięcie klawisza | Opis |
+| Funkcja | Keystroke | Opis |
 | --- | --- | --- |
 | Kontynuuj | F5 | Uruchamia kod, aż do osiągnięcia następnego punktu przerwania. |
 | Wkrocz | F11 | Uruchamia następnej instrukcji i zatrzymuje. Następnej instrukcji w przypadku wywołania funkcji, debuger zatrzymuje się w pierwszym wierszu wywoływanej funkcji. |
@@ -151,8 +151,8 @@ Domyślnie debuger programu rozpoczyna się od standardowego uruchamiania Python
 | --- | --- |
 | Standardowa uruchamiania Python | Używa debugowania kod napisany w języku Python przenośny, który jest zgodny z języka CPython, IronPython i odmiany takich jak Stackless Python. Zapewnia najlepsze środowisko do debugowania czyste kodu języka Python. Po dołączeniu do działającego `python.exe` proces, uruchom ten jest używany. Uruchom ten zawiera również [debugowanie w trybie mieszanym](debugging-mixed-mode.md) języka CPython, co umożliwia bezproblemowe krok między kodu C/C++ i kodem języka Python. |
 | Uruchamianie sieci Web | Uruchamia domyślnej przeglądarki na uruchamianie i włącza debugowanie szablonów. Zobacz [debugowania szablonów sieci Web](template-web.md#debugging) sekcji, aby uzyskać więcej informacji. |
-| Uruchamianie sieci Django Web | Taki sam jak uruchamianie sieci Web i wyświetlane tylko dla zapewnienia zgodności. |
-| Uruchamianie IronPython (.NET) | Używa debugera platformy .NET, które działa wyłącznie z IronPython, ale umożliwia przechodzenie między żadnego projektu języka .NET, w tym C# i VB. Uruchamianie tego programu jest używana, gdy dołączanie do uruchomionego procesu .NET, który jest hostem IronPython. |
+| Django Web launcher | Taki sam jak uruchamianie sieci Web i wyświetlane tylko dla zapewnienia zgodności. |
+| IronPython (.NET) launcher | Używa debugera platformy .NET, które działa wyłącznie z IronPython, ale umożliwia przechodzenie między żadnego projektu języka .NET, w tym C# i VB. Uruchamianie tego programu jest używana, gdy dołączanie do uruchomionego procesu .NET, który jest hostem IronPython. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opcje uruchamiania (ścieżki wyszukiwania, argumenty uruchomienia i zmiennych środowiskowych)
 
@@ -164,7 +164,7 @@ Domyślnie debuger programu rozpoczyna się od standardowego uruchamiania Python
 | Ścieżka interpretera | Zastępuje ścieżka skojarzona z bieżącym środowisku.  wartość może być przydatne w przypadku uruchamiania skryptu z niestandardowym interpreter. |
 | Zmienne środowiskowe | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci `NAME=VALUE`. Ponieważ to ustawienie jest stosowane, w górnej części istniejących zmiennych środowiskowych globalnej i po `PYTHONPATH` jest ustawiona zgodnie z ustawieniem ścieżki wyszukiwania może służyć do ręcznie przesłonić te inne zmienne. |
 
-< name = "debug--okna interaktywnego"</a>
+<a name="the-debug-interactive-window"</a>
 
 ## <a name="immediate-and-interactive-windows"></a>Natychmiastowe i interaktywne systemu windows
 

@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
-Deweloperzy poświęcać dużo czasu w edytorze kodu tak [Python obsługi w programie Visual Studio](installation.md) zapewnia funkcję ułatwiającą Twoją produktywność. Cechy IntelliSense wyróżnianie składni, automatycznego uzupełniania pomocy podpisu, zamienników metod, wyszukiwania i nawigacji. 
+Deweloperzy poświęcać dużo czasu w edytorze kodu tak [Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) zapewnia funkcję ułatwiającą Twoją produktywność. Cechy IntelliSense wyróżnianie składni, automatycznego uzupełniania pomocy podpisu, zamienników metod, wyszukiwania i nawigacji. 
 
 W tym temacie:
 
@@ -33,7 +33,7 @@ W tym temacie:
 
 Dokumentacja ogólna edytowanie kodu w programie Visual Studio, aby zapoznać [pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt w Visual Studio](../ide/outlining.md), który pomaga pozostać koncentruje się na poszczególnych sekcji kodu. Obejmuje obsługę języka Python za pomocą przeglądarki obiektów Visual Studio (**Widok > inne okna > przeglądarki obiektów** lub Ctrl + W, J) do sprawdzania klas zdefiniowanych w każdym module i funkcji zdefiniowanych w tych klas. 
 
-Edytor jest także zintegrowane z okno interaktywne programu Visual Studio, co ułatwia wymienić kod między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](vs-tutorial-01-03.md) i [przy użyciu okna interaktywnego — Wyślij kod, aby polecenie interaktywne](interactive-repl.md#send-code-to-interactive-command) szczegółowe informacje.
+Edytor jest także zintegrowane z okno interaktywne programu Visual Studio, co ułatwia wymienić kod między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [przy użyciu okna interaktywnego — Wyślij kod, aby polecenie interaktywne](interactive-repl.md#send-code-to-interactive-command) szczegółowe informacje.
 
 Aby obejrzeć wprowadzenie do edycji kodu języka Python, zobacz [Python edycji kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
 
@@ -41,7 +41,7 @@ Aby obejrzeć wprowadzenie do edycji kodu języka Python, zobacz [Python edycji 
 
 ## <a name="intellisense"></a>IntelliSense
 
-Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Aby zwiększyć wydajność, IntelliSense zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [środowiska Python](python-environments.md)). 
+Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Aby zwiększyć wydajność, IntelliSense zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [środowiska Python](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Zakończeń
 

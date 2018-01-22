@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Obsługa projektu i właściwości konfiguracji
 **Właściwości** okna w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) można wyświetlić właściwości projektu i konfiguracji. Strony właściwości można określić typu projektu co użytkownik może ustawiać właściwości aplikacji.  
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/22/2017
  Framework pakietu zarządzania dla projektów (MPFProj) udostępnia klasy pomocy dotyczące tworzenia i zarządzania nowy system projektu. Instrukcje można znaleźć źródła kodu i kompilacji w [MPF projektów — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Trwałość projektu i właściwości konfiguracji  
- Właściwości projektu i konfiguracji są zachowywane w pliku projektu, który ma rozszerzenie nazwy pliku skojarzone z typem projektu, na przykład, .csproj, vbproj i .myproj. Projekty języka zazwyczaj używany plik szablonu do wygenerowania pliku projektu. Istnieją jednak faktycznie na kilka sposobów skojarzenia typów projektów i szablony. Aby uzyskać więcej informacji, zobacz [NIB: szablony Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) i [opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Właściwości projektu i konfiguracji są zachowywane w pliku projektu, który ma rozszerzenie nazwy pliku skojarzone z typem projektu, na przykład, .csproj, vbproj i .myproj. Projekty języka zazwyczaj używany plik szablonu do wygenerowania pliku projektu. Istnieją jednak faktycznie na kilka sposobów skojarzenia typów projektów i szablony. Aby uzyskać więcej informacji, zobacz [opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
  Właściwości projektu i konfiguracji są tworzone przez dodawanie elementów do pliku szablonu. Te właściwości będą dostępne dla każdego projektu utworzone za pomocą typu projektu, który korzysta z tego szablonu. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]projekty i MPFProj używają [nie znajduje się w kompilacji: Przegląd MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schematu dla plików szablonów. Te pliki mają sekcji PropertyGroup dla każdej konfiguracji. Właściwości projektów zwykle są zachowywane w pierwszej sekcji PropertyGroup ma ustawioną wartość ciąg pusty argument konfiguracji.  
   
