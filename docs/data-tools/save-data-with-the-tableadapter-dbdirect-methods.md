@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628a3cfc75f786ceb989145ada6e2f2579f349cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisz dane z TableAdapter DBDirect metody
 Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji SQL bezpośrednio na bazie danych za pomocą metod TableAdapter DBDirect. Metody TableAdapter DBDirect Podaj poprawnie poziom kontroli nad aktualizacje bazy danych. Można je do uruchomienia określonej instrukcji SQL i zapisanych procedur wywołując poszczególne `Insert`, `Update`, i `Delete` metody odpowiednio do potrzeb aplikacji (zamiast zastąpionej `Update` metodę, która wykonuje AKTUALIZACJĘ INSERT i DELETE instrukcje wszystko w jednym wywołaniu).  
@@ -45,7 +45,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
 ## <a name="prerequisites"></a>Wymagania wstępne  
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.  
   
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania wersjach programu SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.  
+1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.  
   
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:  
 

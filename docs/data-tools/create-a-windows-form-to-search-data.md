@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: fd882c536fefde9a9eb6ab546d6049d1f1216771
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 31ec03dbc2eda481d4de82a848d696b80e99cb2e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza systemu Windows do wyszukiwania danych
 Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Można na przykład wyświetlanie zleceń dla określonych odbiorców lub szczegóły określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formularzu, a następnie zapytanie jest wykonywane przy użyciu danych wejściowych użytkownika jako parametr; oznacza to, że jest wybrane dane na podstawie zapytania parametrycznego. Zapytanie zwraca tylko dane, które spełnia kryteria wprowadzony przez użytkownika. W tym przewodniku pokazano, jak utworzyć kwerendę, która zwraca klientów w określonym mieście i zmodyfikować interfejsu użytkownika, dzięki czemu użytkownicy mogą wprowadzać nazwę miejscowości i naciśnij przycisk, aby wykonać zapytanie.  
@@ -48,11 +48,12 @@ Typowy scenariusz aplikacji jest wyświetlanie wybranych danych w formularzu. Mo
   
 -   Wprowadzanie parametrów do formularza i wykonywania zapytania parametrycznego.  
   
-## <a name="prerequisites"></a>Wymagania wstępne  
+## <a name="prerequisites"></a>Wymagania wstępne
+
 W tym przewodniku zastosowano programu SQL Server Express LocalDB i przykładowej bazy danych Northwind.  
-  
-1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania wersjach programu SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.  
-  
+
+1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalator programu Visual Studio**. W Instalatorze programu Visual Studio, można zainstalować jako część programu SQL Server Express LocalDB **magazynu danych i przetwarzania** obciążenia, lub jako poszczególnych składników.
+
 2.  Instalowanie przykładowej bazy danych Northwind, wykonaj następujące czynności:  
 
     1. W programie Visual Studio Otwórz **Eksplorator obiektów SQL Server** okna. (Eksplorator obiektów SQL Server jest instalowany jako część **magazynu danych i przetwarzania** obciążenia w Instalatorze programu Visual Studio.) Rozwiń węzeł **programu SQL Server** węzła. Kliknij prawym przyciskiem myszy w wystąpieniu bazy danych LocalDB, a następnie wybierz **nowej kwerendy...** .  

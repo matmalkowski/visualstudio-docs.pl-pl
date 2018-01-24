@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>Ostrzeżenia o zabezpieczeniach
 Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikacje. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.  
@@ -81,7 +81,7 @@ Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikac
 |[CA2149: Metody przezroczyste nie mogą wywoływać kodu natywnego](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Ta reguła jest uruchamiana dla każdej przezroczystej metody, która wywołuje bezpośrednio kod natywny, na przykład przez metodę P/Invoke. Naruszenie tej zasady prowadzi do wyjątku MethodAccessException w poziomie 2 modelu przezroczystości i pełnego żądania dla UnmanagedCode w modelu przezroczystości poziomu 1.|  
 |[CA2151: Pola typu krytycznego powinny być krytyczne pod względem zabezpieczeń](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Aby używać typów krytycznych pod względem zabezpieczeń, kod odwołujący się do typu musi być albo krytyczny pod względem zabezpieczeń, albo bezpieczny-krytyczny pod względem zabezpieczeń. Ta zasada obowiązuje nawet w przypadku odwołania pośredniego. Dlatego pole mające zabezpieczenia przezroczyste lub pole bezpieczne-krytyczne pod względem zabezpieczeń jest mylące, ponieważ przezroczysty kod nadal nie będzie mógł uzyskać dostępu do pola.|  
 |[Deklaracje CA5122 P/Invoke nie powinny być bezpieczne krytyczne](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Metody są oznaczone jako SecuritySafeCritical, gdy wykonują operacje zależne od zabezpieczeń, ale mogą być również bezpiecznie używane przez kod przezroczystości. Kod przezroczystości może nigdy bezpośrednio nie wywołać kodu natywnego za pośrednictwem metody P/Invoke. Dlatego oznakowanie metody P/Invoke jako bezpiecznej-krytycznej pod względem zabezpieczeń nie umożliwi jej wywołania kodu przezroczystości i jest mylące dla analizy zabezpieczeń.|  
-|[CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Uszkodzony rozszerzenie stanu wyjątków (klienta)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwolenia na awarii procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do obszaru uszkodzenia pamięci.|  
+|[CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Uszkodzony rozszerzenie stanu wyjątków (klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwolenia na awarii procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do obszaru uszkodzenia pamięci.|  
 |[CA3075: Niezabezpieczone przetwarzanie definicji DTD](../code-quality/ca3075-insecure-dtd-processing.md)|Użyj niezabezpieczonych wystąpień DTDProcessing lub odwołania do jednostki zewnętrznej źródeł, analizator może zaakceptować niezaufanych danych wejściowych i wyjawiać poufnych informacji do osoby atakujące.|  
 |[CA3076: Niezabezpieczone wykonywanie skryptu XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Jeśli nimi wykonane arkusze stylów języka przekształcenia XSLT (Extensible) w aplikacjach .NET, procesor może rozwiązać niezaufanych odwołań do identyfikatora URI, które można ujawnić poufne informacje do osoby atakujące, co może prowadzić do odmowy usługi i Cross-Site ataki.|  
 |[CA3077: Niezabezpieczone przetwarzanie w elemencie Design interfejsu API, dokumencie XML i czytniku tekstu dla kodu XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Projektowanie interfejsu API otrzymane z XMLDocument i klasy XMLTextReader, można w trosce o DtdProcessing.  Za pomocą niezabezpieczonego DTDProcessing wystąpień, gdy odwołuje się do rozpoznawania źródeł zewnętrznej jednostki lub ustawienie niezabezpieczonych wartości w pliku XML może prowadzić do ujawnienie informacji.|

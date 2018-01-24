@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Konfigurowanie i instalowanie oprogramowania Visual Studio dla komputerów Mac
 
@@ -49,6 +49,18 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 
   ![Wybierz elementy](media/installer-image5.png)
 
+  Jeśli nie chcesz, aby zainstalować wszystkie platformy, pomocne w podejmowaniu decyzji, które platformy, aby zainstalować za pomocą przewodnika poniżej:
+
+  * **Aplikacje za pomocą platformy Xamarin**:
+      - Platformy Xamarin.Forms — wybierz **Android** i **iOS** platform.
+      - Wybierz tylko — iOS **iOS** platformy (należy pamiętać, że będą musieli zainstalować [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Wybierz tylko — android **Android** platformy (Zwróć uwagę, należy również wybrać odpowiednie zależności).
+      - Wybierz tylko — Mac **macOS** platformy (należy pamiętać, że będą musieli zainstalować [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Wybierz pełni wieloplatformowych aplikacji platformy Xamarin — **Android**, **iOS**, i **macOS** platform.
+  * **Aplikacje .NET core** — wybierz **.NET Core** platformy.
+  * **Aplikacje sieci Web platformy ASP.NET Core** — wybierz **.NET Core** platformy.
+  * **Aplikacji gry dla wielu platform Unity** — nie dodatkowych platform muszą być zainstalowane poza Visual Studio dla komputerów Mac. Zapoznaj się [przewodnik konfiguracji środowiska Unity](~/setup-vsmac-tools-unity.md) Aby uzyskać więcej informacji na temat instalowania rozszerzenia Unity.
+
   Na tym ekranie instalacji Wyświetla wersji i rozmiaru poszczególnych składników. Kliknij przycisk każdego składnika, aby wyświetlić listę zależności dla tego składnika (dla systemu Android), zobacz dodatkowe pakiety, które pobiera (dla platformy .NET Core) lub wyświetlić dodatkowe aplikacje wymagane (dla systemów iOS i macOS):
 
   ![Dodatkowe zależności dla systemu android](media/installer-image6.png)
@@ -74,17 +86,6 @@ Do pracy z systemem iOS w programie Visual Studio potrzebne są następujące el
 > [!NOTE]
 Jeśli została wybrana opcja Instaluj platformy lub narzędzia podczas oryginalnej instalacji (przez unselecting go w kroku #6), należy uruchomić [Instalator](https://www.visualstudio.com/vs/) ponownie, jeśli chcesz później dodać składniki.
 
-## <a name="manual-installation"></a>Instalacja ręczna
-
-Jeśli instalacja nie powiedzie się lub dowolnego pojedynczego składnika Instalacja nie powiedzie się, można rozwiązać ten problem za pomocą ręcznej instalacji. Aby wyświetlić wymagane składniki i pobrać każdego z nich, wykonaj następujące czynności:
-
-1. Na ekranie drugi na Instalator programu Visual Studio, przejdź do paska menu, a następnie wybierz **instrukcje dotyczące instalacji ręcznego widoku**:
-
-    ![Opcja przedstawiający ręczne zainstalowanie elementu menu](media/installer-image12.png)
-
-2. Postępuj zgodnie z instrukcjami, aby pobrać i zainstalować składniki ręcznie:
-
-  ![Okno dialogowe Instalacja ręczna](media/installer-image13.png)
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Zainstaluj program Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
 
@@ -92,4 +93,24 @@ Aby zainstalować program Visual Studio dla komputerów Mac za zaporą, niektór
 
 Skonfiguruj sieci, aby umożliwić dostęp do następujących lokalizacji:
 
-* [Visual Studio punkty końcowe](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+* [Visual Studio punkty końcowe](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+
+## <a name="next-steps"></a>Następne kroki
+
+Instalacja programu Visual Studio for Mac pozwala rozpocząć pisanie kodu dla aplikacji. Poniższe przewodniki są dostarczane do przeprowadzenia w następnych krokach zapisywania i wdrażania projektów.
+
+### <a name="ios"></a>iOS
+
+1. [Witaj, z systemem iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+2. [Inicjowania obsługi administracyjnej urządzeniu](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(do uruchamiania aplikacji na urządzeniu).
+
+
+### <a name="android"></a>Android
+
+1. [Za pomocą platformy Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Zestaw SDK systemu android Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Konfigurowanie urządzeń środowiska deweloperskiego](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenie gier środowiska Unity
+
+Inne obciążenia można znaleźć w temacie [obciążeń](~/workloads.md) strony.

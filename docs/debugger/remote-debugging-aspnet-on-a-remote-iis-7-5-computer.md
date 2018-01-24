@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
 
 ![Składniki zdalnego debugera](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 ASP.NET MVC 4.5.2, wdrażanie usług IIS i uruchomić zdalnego debugera z programu Visual Studio. Do zdalnego debugowania ASP.NET Core, zobacz [zdalnego debugowania ASP.NET Core na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Aby uzyskać więcej informacji, zobacz [zdalnego debugowania na platformie Azure](../debugger/remote-debugging-azure.md).
+W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 ASP.NET MVC 4.5.2, wdrażanie usług IIS i uruchomić zdalnego debugera z programu Visual Studio. Do zdalnego debugowania ASP.NET Core, zobacz [zdalnego debugowania ASP.NET Core na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Dla usługi Azure App Service można łatwe wdrażanie i debugowanie na wstępnie skonfigurowane wystąpienia usług IIS przy użyciu [debugera migawki](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 wymagane) lub [dołączanie debugera z Eksploratora serwera](../debugger/remote-debugging-azure.md).
 
 Procedury te zostały przetestowane na tych konfiguracji serwera:
 * Windows Server 2012 R2 i IIS 8 (dla systemu Windows Server 2008 R2 kroki serwera są różne)
@@ -50,10 +50,10 @@ Zdalny debuger jest obsługiwana w systemie Windows Server, począwszy od system
 
 W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy dodać następujące zaufanych witryn do przeglądarki, można łatwo pobrać opisane w tym samouczku oprogramowanie. Może być wymagany dostęp do tych witryn:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
-- witrynie Download.microsoft.com
-- Visual Studio —
+- download.microsoft.com
+- visualstudio.com
 
 Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 
@@ -70,7 +70,7 @@ Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program 
     > [!NOTE]
     > Jeśli używasz systemu Windows Server 2008 R2 można zainstalować programu ASP.NET 4 zamiast za pomocą tego polecenia:
 
-     **C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Ponowne uruchomienie systemu (lub wykonać **net stop została /y** następuje **net start w3svc** z wiersza polecenia, aby pobrać zmiany systemowej PATH).
 
@@ -147,7 +147,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 2. W programie Visual Studio, kliknij przycisk **Debuguj > dołączyć do procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > W programie Visual Studio 2017 r, można ponownie dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie dołączyć do procesu...** (Shift + Alt + P). 
+    > W programie Visual Studio 2017 r, można ponownie dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie dołączyć do procesu...** (Shift+Alt+P). 
 
 3. Ustaw dla pola kwalifikator  **\<nazwę komputera zdalnego >: 4022**.
 4. Kliknij przycisk **Odśwież**.

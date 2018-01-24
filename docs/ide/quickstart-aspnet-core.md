@@ -14,13 +14,13 @@ dev_langs: CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66c1b3ca7a877c001bc3aeb69c5331fdc828aad8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core za pomocą programu Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web platformy ASP.NET Core C#. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
 
@@ -30,11 +30,11 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
 1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **pliku**, **nowy**, **projektu...** .
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
 
 1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **Visual C#**, a następnie wybierz **.NET Core**. W środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET Core**, a następnie wybierz **OK**.
 
-     Jeśli nie widzisz **.NET Core** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia**, **Pobierz narzędzia i Funkcje...** . Uruchamia Instalator programu Visual Studio. Wybierz **ASP.NET i sieć web development** obciążenia, a następnie wybierz **Modyfikuj**.
+     Jeśli nie widzisz **.NET Core** projektu szablonu kategorii, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie. Uruchamia Instalator programu Visual Studio. Wybierz **ASP.NET i sieć web development** obciążenia, a następnie wybierz **Modyfikuj**.
 
      ![Obciążenie platformy ASP.NET w Instalatorze programu VS](../ide/media/quickstart-aspnet-workload.png)
 
@@ -64,7 +64,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
  }
  ```
 
-1. Zobaczysz dwóch faliste podkreślenie są wyświetlane w obszarze **środowiska** i **ciąg**, ponieważ te typy nie są w zakresie. Otwórz **listy błędów** narzędzi, aby wyświetlić błędy tej samej liście. (Jeśli nie widzisz **listy błędów** narzędzi wybierz **widoku**, **listy błędów** na pasku menu u góry.)
+1. Zobaczysz dwóch faliste podkreślenie są wyświetlane w obszarze **środowiska** i **ciąg**, ponieważ te typy nie są w zakresie. Otwórz **listy błędów** narzędzi, aby wyświetlić błędy tej samej liście. (Jeśli nie widzisz **listy błędów** narzędzi wybierz **widoku** > **listy błędów** na pasku menu u góry.)
 
    ![Lista błędów](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -72,7 +72,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Naciśnij klawisz **Ctrl + F5** do uruchomienia aplikacji, a następnie otwórz go w przeglądarce sieci web.
+1. Naciśnij klawisz **Ctrl**+**F5** do uruchomienia aplikacji, a następnie otwórz go w przeglądarce sieci web.
 
 1. W górnej części witryny sieci web, wybierz **o** wyświetlić komunikatu dodanych w katalogu `OnGet()` metodę **o** strony.
 
@@ -85,5 +85,6 @@ Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że 
 
 ## <a name="see-also"></a>Zobacz także
 
+[Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)  
 [Wprowadzenie do języka C# i Visual Basic przy użyciu programu Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
 [Wprowadzenie do platformy ASP.NET Core stron Razor](/aspnet/core/tutorials/razor-pages/razor-pages-start)

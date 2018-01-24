@@ -1,20 +1,19 @@
 ---
-title: "Visual Studio IDE omówienie | Dokumentacja firmy Microsoft"
+title: "Omówienie programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -32,7 +31,7 @@ Lub, wystarczy otworzyć kodu uzyskać z niemal dowolnego miejsca i pobrać prac
 
 Można utworzyć natywnej aplikacji mobilnych dla różnych platform, za pomocą Visual C# i Xamarin lub Visual C++ lub aplikacje hybrydowe z platformy Apache Cordova przy użyciu języka JavaScript. Można zapisywać przenośnych gry dla platformy Unity, niezr, DirectX i Cocos. Visual Studio zawiera emulatorze systemu Android, aby uruchomić i debugowania aplikacji systemu Android.
 
-Można skorzystać z możliwości chmury dla aplikacji mobilnych, tworząc usługi aplikacji Azure. Usługi aplikacji Azure Włączanie aplikacji do przechowywania danych w chmurze, bezpieczne uwierzytelnianie użytkowników i automatycznie skalować zasobów lub w dół do uwzględnienia na potrzeby aplikacji i firmy. Aby dowiedzieć się więcej, zobacz [tworzenia aplikacji mobilnych](https://www.visualstudio.com/vs/mobile-app-development/).
+Można skorzystać z możliwości chmury dla aplikacji mobilnych, tworząc usługi aplikacji Azure. Usługi aplikacji Azure Włączanie aplikacji do przechowywania danych w chmurze, bezpieczne uwierzytelnianie użytkowników i automatycznie skalować zasobów lub w dół do uwzględnienia na potrzeby aplikacji i firmy. Aby dowiedzieć się więcej, zobacz [rozwoju aplikacji mobilnej](https://www.visualstudio.com/vs/mobile-app-development/).
 
 ### <a name="create-cloud-apps-for-azure"></a>Tworzenie aplikacji w chmurze na platformie Azure
 
@@ -96,7 +95,7 @@ Po uruchomieniu programu Visual Studio po raz pierwszy, można opcjonalnie Zalog
 
 Dobrym sposobem Dowiedz się więcej o coś jest jej używać! Załóżmy zajrzyj dostęp i utworzyć nowe, proste program.
 
-1. Otwórz program Visual Studio. W menu, wybierz **pliku**, **nowy**, **projektu**.
+1. Otwórz program Visual Studio. W menu, wybierz **pliku** > **nowy** > **projektu**.
 
   ![Zrzut ekranu](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -104,11 +103,14 @@ Dobrym sposobem Dowiedz się więcej o coś jest jej używać! Załóżmy zajrzy
 
 1. **Nowy projekt** okno dialogowe zawiera kilka szablonów projektu. Wybierz **uniwersalnych systemu Windows** kategorię w obszarze **Visual C#**, wybierz **pusta aplikacja (uniwersalna systemu Windows)** szablonu, a następnie wybierz pozycję **OK**przycisku.
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_NewProject2.png)
+  > [!NOTE]
+  > Jeśli nie widzisz **uniwersalnych systemu Windows** kategorii, musisz zainstalować **platformy uniwersalnej systemu Windows dla deweloperów** obciążenia. Aby to zrobić, wybierz **Otwórz Instalator programu Visual Studio** łącza w lewym dolnym rogu **nowy projekt** okna dialogowego. Po **Instalator programu Visual Studio** zostanie otwarta, wybierz opcję **platformy uniwersalnej systemu Windows dla deweloperów** obciążenia, a następnie wybierz **Modyfikuj**.
+
+  ![Szablon pusta aplikacja platformy uniwersalnej systemu Windows](../ide/media/new-uwp-blank-app-template.png)
 
   Spowoduje to utworzenie nowego projektu aplikacji puste uniwersalnych systemu Windows za pomocą Visual C# i XAML jako języków programowania. Zaczekaj, aż do bit Visual Studio skonfigurowanie projektu dla Ciebie. Jeśli zostanie wyświetlony monit o podanie informacji, po prostu zaakceptuj wartości domyślne teraz.
 
-1. W **nowe uniwersalnych projektów systemu Windows** okna dialogowego Zaakceptuj ustawienia domyślne, wybierając **OK**.
+1. W **nowego projektu platformy uniwersalnej systemu Windows** okna dialogowego Zaakceptuj ustawienia domyślne, wybierając **OK**.
 
 1. Wkrótce powinien zostać wyświetlony ekran podobny do następującego zrzutu ekranu. Pliki projektu są wyświetlane po prawej stronie w okno Eksploratora rozwiązań.
 
@@ -140,7 +142,7 @@ Dobrym sposobem Dowiedz się więcej o coś jest jej używać! Załóżmy zajrzy
 
   ![Zrzut ekranu](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Teraz uruchomić aplikację. Można to zrobić, wybierając **Start** (![przycisk Start](../ide/media/VSIDE_StartButton.png)) przycisk na pasku narzędzi lub wybierając **F5** klucza, lub w menu, wybierając pozycję **debugowania**, **Rozpocznij debugowanie**.
+1. Teraz uruchomić aplikację. Można to zrobić, wybierając **Start** (![przycisk Start](../ide/media/VSIDE_StartButton.png)) przycisk na pasku narzędzi lub wybierając **F5** klucza, lub w menu, wybierając pozycję **debugowania**  >  **Rozpocznij debugowanie**.
 
   ![Zrzut ekranu](../ide/media/VSIDE_Tour_RunButton.png)
 
@@ -232,7 +234,7 @@ Jeśli masz konto usługi Visual Studio Team Services lub Team Foundation Server
 
 Na poniższej ilustracji przedstawiono okno programu Team Explorer rozwiązania, które znajduje się w VSTS.
 
-![Program Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
 Można również zautomatyzować procesu kompilacji do kompilacji kodu, który zaznaczono devs Twojego zespołu w kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Zobacz [ciągłej integracji na każdej platformie](https://www.visualstudio.com/en-us/docs/build/overview) Aby uzyskać więcej informacji.
 
@@ -248,7 +250,7 @@ Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie A
 
 ![Eksplorator chmury](../ide/media/VSIDE_CloudExplorer.png)
 
-**W Eksploratorze serwera** ułatwia przeglądanie i zarządzanie wystąpień programu SQL Server i zasobami lokalnie, zdalnie i na witryny Salesforce.com, Office 365, Azure i witryn sieci Web. Aby otworzyć Eksploratora serwera, w menu głównym, wybierz **widoku**, **Eksploratora serwera**. Zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md) Aby uzyskać więcej informacji na temat używania Eksploratora serwera.
+**W Eksploratorze serwera** ułatwia przeglądanie i zarządzanie wystąpień programu SQL Server i zasobami lokalnie, zdalnie i na witryny Salesforce.com, Office 365, Azure i witryn sieci Web. Aby otworzyć Eksploratora serwera, w menu głównym, wybierz **widoku** > **Eksploratora serwera**. Zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md) Aby uzyskać więcej informacji na temat używania Eksploratora serwera.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) jest wydajne środowisko projektowe dla programu SQL Server, bazy danych SQL Azure i usługi Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, obsługa i Refaktoryzuj baz danych. Możesz pracować z projektem bazy danych lub bezpośrednio z bazy danych połączonych wystąpienia na — lub poza siedzibą firmy.
 
@@ -257,6 +259,7 @@ Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie A
 ![Eksplorator obiektów SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Rozszerzanie programu Visual Studio
+
 Visual Studio nie ma dokładnie funkcji potrzebne, można dodać go! Można personalizowanie środowiska IDE są oparte na przepływie pracy i stylu, Dodaj obsługę dla zewnętrznych narzędzi nie została jeszcze zintegrowany z programem Visual Studio i modyfikować istniejące funkcje, aby zwiększyć wydajność. Aby uzyskać najnowszą wersję programu Visual Studio Tools rozszerzalności (VS SDK), zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 Kompilator platformy .NET (Roslyn) służy do pisania własnych analizatorów kodu i generatory kodu. Znajdź wszystkie elementy potrzebne w [Roslyn](https://github.com/dotnet/Roslyn).
@@ -276,6 +279,6 @@ Gratulujemy ukończenia samouczka środowiska IDE programu Visual Studio! Mamy n
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Pobieranie programu Visual Studio](https://www.visualstudio.com/downloads/)
 * [Blog programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Fora programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
-* [Wirtualna Akademia firmy Microsoft](https://mva.microsoft.com/)
+* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Channel 9](https://channel9.msdn.com/)

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5a41ed010a4e950bd0fa4d28f63481587b847309
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fdd95f1890033e90b2679a2c992f3a49ad474851
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="managing-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 
@@ -99,7 +99,7 @@ Należy również jawnie wywołać `Save` metody tej klasy otoki w celu utrzyman
 Properties.Settings.Default.Save();
 ```
 
-Aby uzyskać ogólne informacje o uzyskiwaniu dostępu do ustawień aplikacji `Settings` , zobacz [Przegląd ustawień aplikacji (.NET Frameword)](/dotnet/framework/winforms/advanced/application-settings-overview). Informacje o iteracji w ustawieniach, zobacz ten [wpis na forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Aby uzyskać ogólne informacje o uzyskiwaniu dostępu do ustawień aplikacji `Settings` , zobacz [Przegląd ustawień aplikacji (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Informacje o iteracji w ustawieniach, zobacz ten [wpis na forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Zobacz także
 

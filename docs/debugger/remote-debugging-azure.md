@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core usług IIS i platformy Azure w programie Visual Studio 2017 r.
-Dla usługi Azure App Service, zaleca się debugowania za pomocą [debugera migawki](../debugger/debug-live-azure-applications.md) lub możesz wykonać instrukcje w tym temacie, można dołączyć debugera z programu Visual Studio. Jeśli używasz systemu Windows Server z usługami IIS na maszynie Wirtualnej platformy Azure, możesz również ustawić dla zdalnego debugowania. W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017 r.
+
+W tym przewodniku opisano sposób konfigurowania i konfigurowania aplikacji programu Visual Studio 2017 platformy ASP.NET Core, wdrożyć ją w usługach IIS przy użyciu usługi Azure i dołączyć debuger zdalny z programu Visual Studio.
+
+Zalecanym sposobem zdalnego debugowania na platformie Azure jest zależna od danego scenariusza:
+
+* Aby debugować platformy ASP.NET Core w usłudze Azure App Service, zobacz [Azure debugowania aplikacji za pomocą debugera migawki](../debugger/debug-live-azure-applications.md). Jest to zalecana metoda.
+* Aby debugować platformy ASP.NET Core w usłudze Azure App Service przy użyciu tradycyjnych więcej funkcji debugowania, wykonaj kroki opisane w tym temacie (zobacz sekcję [zdalnego debugowania w usłudze Azure App Service](#remote_debug_azure_app_service)).
+
+    W tym scenariuszu należy wdrożyć aplikację z programu Visual Studio na platformie Azure, ale nie trzeba ręcznie zainstalować lub skonfigurować usługi IIS lub zdalnego debugera (te składniki są reprezentowane liniami przerywana), jak pokazano na poniższej ilustracji.
+
+    ![Składniki zdalnego debugera](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* Debugowanie usług IIS na maszynie Wirtualnej platformy Azure, wykonaj kroki opisane w tym temacie (zobacz sekcję [zdalnego debugowania na maszynie Wirtualnej platformy Azure](#remote_debug_azure_vm)). Dzięki temu można korzystać z dostosowanego konfiguracji usług IIS, ale kroków instalacji i wdrażania są bardziej skomplikowane.
+
+    Dla maszyny Wirtualnej platformy Azure należy wdrożyć aplikację z programu Visual Studio na platformie Azure i należy ręcznie zainstalować rolę usług IIS i zdalnego debugera, jak pokazano na poniższej ilustracji.
+
+    ![Składniki zdalnego debugera](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Aby debugować platformy ASP.NET Core w sieci szkieletowej usług Azure, zobacz [debugowania zdalnego aplikacji sieci szkieletowej usług](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Pamiętaj usunąć zasobów platformy Azure, utworzonych po wykonaniu kroków opisanych w tym samouczku. Dzięki temu można uniknąć naliczania opłat niepotrzebne.
 
-W tym temacie przedstawiono sposób:
-
-* Zdalne debugowanie platformy ASP.NET Core w usłudze Azure App Service
-
-* Zdalne debugowanie platformy ASP.NET Core na maszynie Wirtualnej platformy Azure
-
-Dla usługi Azure App Service należy wdrożyć aplikację z programu Visual Studio na platformie Azure, ale nie trzeba ręcznie zainstalować lub skonfigurować usługi IIS lub zdalnego debugera (te składniki są reprezentowane liniami przerywana), jak pokazano na poniższej ilustracji.
-
-![Składniki zdalnego debugera](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Dla maszyny Wirtualnej platformy Azure należy wdrożyć aplikację z programu Visual Studio na platformie Azure i należy ręcznie zainstalować rolę usług IIS i zdalnego debugera, jak pokazano na poniższej ilustracji.
-
-![Składniki zdalnego debugera](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Aby debugować platformy ASP.NET Core w sieci szkieletowej usług Azure, zobacz [debugowania zdalnego aplikacji sieci szkieletowej usług](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Wymagania
 
@@ -61,11 +63,11 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 4. Otwórz plik About.cshtml.cs i ustaw punkt przerwania `OnGet` — metoda (w szablonach starsze HomeController.cs zamiast tego otworzyć i ustawić punkt przerwania `About()` metody).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Zdalne debugowanie platformy ASP.NET Core w usłudze aplikacji Azure
+## <a name="remote_debug_azure_app_service"></a>Zdalne debugowanie platformy ASP.NET Core w usłudze aplikacji Azure
 
 W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do pełni wystąpienia usług IIS. Jednak jest ustawień konfiguracji programu IIS i nie można go dostosować. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Umożliwia dostosowywanie usług IIS, należy spróbować debugowania [maszyny Wirtualnej Azure](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>Aby wdrożyć aplikację i zdalnego debugowania
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Aby wdrożyć aplikację i zdalnego debugowania za pomocą Eksploratora serwera
 
 1. W programie Visual Studio, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **publikowania**.
 
@@ -73,7 +75,7 @@ W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do 
 
     Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. W **Eksploratora serwera**, kliknij prawym przyciskiem myszy w wystąpieniu usługi aplikacji i wybierz **dołączyć debuger**.
+3. Otwórz **Eksploratora serwera** (**widoku** > **Eksploratora serwera**), kliknij prawym przyciskiem myszy w wystąpieniu usługi aplikacji i wybierz **dołączyć debuger**.
 
 4. W uruchomionej aplikacji ASP.NET, kliknij łącze, aby **o** strony.
 
@@ -81,7 +83,7 @@ W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do 
 
     To już wszystko! Pozostałe kroki w tym temacie dotyczą zdalnego debugowania na maszynie Wirtualnej platformy Azure.
 
-## <a name="BKMK_azure_vm"></a>Zdalne debugowanie platformy ASP.NET Core na maszynie Wirtualnej platformy Azure
+## <a name="remote_debug_azure_vm"></a>Zdalne debugowanie platformy ASP.NET Core na maszynie Wirtualnej platformy Azure
 
 Można utworzyć Azure maszyny Wirtualnej systemu Windows Server i następnie zainstalować i skonfigurowanie usług IIS i innych składników oprogramowania wymagane. Trwa dłużej niż wdrażanie w usłudze Azure App Service i wymaga wykonaj pozostałe kroki w tym samouczku.
 

@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfigurowanie odwołania do usługi — Okno dialogowe
-**Odwołania do konfigurowania usługi** okno dialogowe umożliwia konfigurowanie zachowania [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] usług.  
-  
+
+**Odwołania do konfigurowania usługi** okno dialogowe umożliwia konfigurowanie zachowania usługi Windows Communication Foundation (WCF).
+
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe, kliknij prawym przyciskiem myszy usługę odwołania w **Eksploratora rozwiązań** i wybierz polecenie **skonfigurować odwołania do usługi**. Można również otworzyć okno dialogowe, klikając **zaawansowane** przycisk **okno dialogowe Dodaj odwołanie do usługi**.  
-  
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+
+Aby uzyskać dostęp do **skonfigurować odwołania do usługi** okno dialogowe, kliknij prawym przyciskiem myszy usługę odwołania w **Eksploratora rozwiązań** i wybierz polecenie **skonfigurować odwołania do usługi**. Można również otworzyć okno dialogowe, klikając **zaawansowane** przycisk **okno dialogowe Dodaj odwołanie do usługi**.
+
 ## <a name="task-list"></a>Lista zadań  
   
 -   Aby zmienić adres, gdzie jest hostowana usługa WCF, wprowadź nowy adres w **adres** pola.  
@@ -86,16 +87,15 @@ ms.lasthandoff: 12/22/2017
  **Lista przywoływanych zestawach**  
  Zawiera listę zestawów występujących w odwołaniach projektu lub witryny sieci Web. Gdy **ponownie użyj typów w określonych przywoływanych zestawach** jest zaznaczona, pojedyncze zestawy można zaznaczyć lub wyczyścić.  
   
- **Dodaj odwołanie sieci Web**  
- Wyświetla [odwołania sieci Web, okno dialogowe Dodawanie](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Tej opcji należy używać tylko w przypadku projektów przeznaczonych dla wersji 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-> [!NOTE]
->  **Dodaj odwołanie sieci Web** przycisk jest dostępny tylko wtedy, gdy **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.  
-  
-## <a name="see-also"></a>Zobacz też  
+ **Dodaj odwołanie sieci Web** zostanie wyświetlone okno dialogowe Dodaj odwołanie sieci Web.
 
- [Porady: Dodawanie odwołania do usługi sieci Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Tej opcji należy używać tylko w przypadku projektów przeznaczonych dla wersji 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+
+> [!NOTE]
+> **Dodaj odwołanie sieci Web** przycisk jest dostępny tylko wtedy, gdy **odwołania do konfigurowania usługi** zostanie wyświetlone okno dialogowe z **okno dialogowe Dodaj odwołanie do usługi**.
+
+## <a name="see-also"></a>Zobacz także
+
+[Porady: Dodawanie odwołania do usługi sieci Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Usługi Windows Communication Foundation i usługi danych programu WCF](../data-tools/configure-service-reference-dialog-box.md)

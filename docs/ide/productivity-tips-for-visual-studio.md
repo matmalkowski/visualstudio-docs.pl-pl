@@ -11,47 +11,41 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5e257d8d90d21c4298b92f7bc4b923ed5a720c85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności dla programu Visual Studio
 
-Wykonując te wskazówki można można szybkie i wydajne zapisu, przejdź i debugowanie kodu w programie Visual Studio.
+Ten temat zawiera różne porad ułatwiających zapisu, przejdź i debugowanie kodu szybkie i skuteczne.
 
-Aby uzyskać więcej informacji o typowych skróty klawiaturowe, zobacz [porady i wskazówki](../ide/tips-and-tricks-for-visual-studio.md). Aby uzyskać bardziej szczegółowy wykaz, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) i [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-## <a name="accessing-visual-studio-tools"></a>Uzyskiwanie dostępu do narzędzi Visual Studio tools
-
-Możesz szybko dojść wiersza polecenia dewelopera lub innego narzędzia Visual Studio, jeśli przypiąć go do Start menu i na pasku zadań.
-
-1. W Eksploratorze Windows przejdź do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
-
-1. Kliknij prawym przyciskiem myszy lub Otwórz menu kontekstowe dla **wiersza polecenia dewelopera**, a następnie wybierz pozycję **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
+Uzyskać informacji o typowych skróty klawiaturowe, zobacz [klawiatury porady](../ide/tips-and-tricks-for-visual-studio.md). Lub, aby uzyskać pełną listę skrótów klawiaturowych, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) i [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="writing-code"></a>Pisanie kodu
 
 Szybsze pisanie kodu przy użyciu następujących funkcji.
 
-- **Użyj przykładowych aplikacji**. Można przyspieszyć programowanie aplikacji przez pobranie i zainstalowanie przykładowe aplikacje z [Microsoft Developer Network](https://code.msdn.microsoft.com/). Można też uzyskać określonej technologii lub koncepcji programowania, pobierając i eksploracja przykładowy pakiet dla tego obszaru.
+- **Użyj poleceń wygody**. Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład w **programu Visual Studio 2017 wersji 15,6 preview 2** i później, możesz wybrać polecenie łatwo zduplikowany wiersz kodu bez konieczności skopiuj go, zmienić położenie kursora, a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij klawisz **Ctrl**+**E**,**V**. Użytkownik może szybko rozwiń lub Zwiń zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **rozwiń wybór** i **Wybór umowy**, lub naciskając klawisz **Ctrl**+**W** i **Ctrl**+**przesunięcia**  + **W** (dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowsze).
 
 - **Używanie IntelliSense**. Po wprowadzeniu kodu w edytorze, zostanie wyświetlone informacje funkcji IntelliSense, takie jak listy elementów członkowskich, informacje o parametrach szybka podpowiedź, pomoc podpisu i całe słowo. Obsługuje te funkcje dopasowywania rozmytego tekstu; na przykład listy wyników dla członków listy zawiera nie tylko wpisy rozpoczynających się od znaków czy zostały wprowadzone, ale także wpisów, zawierające kombinację znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
 
 - **Zmień automatyczne wstawianie Opcje IntelliSense podczas wpisywania kodu**. Przełączanie IntelliSense do tryb sugestii, można określić, że opcje IntelliSense są wstawiane tylko wtedy, gdy jawnie je.
 
-     Aby włączyć tryb sugestii, wybierz **Ctrl** + **Alt** + **spacja** kluczy lub na pasku menu wybierz **Edytuj**, **IntelliSense**, **Przełącz tryb uzupełniania**.
+     Aby włączyć tryb sugestii, wybierz **Ctrl**+**Alt**+**spacja** kluczy lub na pasku menu wybierz **Edytuj**  >  **IntelliSense** > **Przełącz tryb uzupełniania**.
 
-- **Wstawki kodu za pomocą**. Można użyć wbudowanych wstawki lub utworzyć własne wstawki.
+- **Wstawki kodu za pomocą**. Wbudowane wstawki za pomocą lub utworzyć własne fragmentów.
 
-     Aby wstawić fragment kodu, na pasku menu wybierz polecenie **Edytuj**, **IntelliSense**, **wstawić fragment** lub Otwórz menu skrótów w pliku i wybierz polecenie **wstawić fragment kodu** . Aby uzyskać więcej informacji, zobacz [wstawki kodu](../ide/code-snippets.md).
+     Aby wstawić fragment kodu, na pasku menu wybierz polecenie **Edytuj** > **IntelliSense** > **wstawić fragment** lub **zfunkcjiOtoczprzez**, lub Otwórz menu skrótów w pliku i wybierz polecenie **fragment** > **wstawić fragment** lub **z funkcji Otocz przez**. Aby uzyskać więcej informacji, zobacz [wstawki kodu](../ide/code-snippets.md).
 
-- **Usuń kodu wbudowanego błędy**. Szybkie akcje pozwalają łatwo zrefaktoryzuj, generowanie lub modyfikację kodu za pomocą jednej akcji. Można zastosować te akcje za pomocą ikoną żarówki ![małych ikon żarówki](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), lub naciskając klawisz **Alt + Enter** lub **Ctrl +.** gdy kursor znajduje się na odpowiedni wiersz kodu. Zobacz [szybkie akcje](quick-actions.md) Aby uzyskać więcej informacji.
+- **Usuń kodu wbudowanego błędy**. Szybkie akcje pozwalają łatwo zrefaktoryzuj, generowanie lub modyfikację kodu za pomocą jednej akcji. Można zastosować te akcje za pomocą ikoną żarówki ![małych ikon żarówki](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), lub naciskając klawisz **Alt** +  **Wprowadź** lub **Ctrl**+**.** gdy kursor znajduje się na odpowiedni wiersz kodu. Zobacz [szybkie akcje](quick-actions.md) Aby uzyskać więcej informacji.
 
 - **Wyświetlanie i edytowanie definicji elementu kodu**. Można szybko wyświetlić i edytować modułu, w którym jest zdefiniowany element kodu, takie jak element członkowski, zmiennej lub lokalnego.
 
-    Aby otworzyć okno podręczne definicji, zaznacz element, a następnie wybierz pozycję **Alt + F12** kluczy, lub Otwórz menu skrótów dla elementu, a następnie wybierz pozycję **definicji wglądu**. Aby otworzyć definicję w oknie oddzielny kod, otwórz menu skrótów dla elementu, a następnie wybierz **przejdź do definicji**.
+    Aby otworzyć okno podręczne definicji, zaznacz element, a następnie wybierz pozycję **Alt**+**F12** kluczy, lub Otwórz menu skrótów dla elementu, a następnie wybierz pozycję **wgląd Definicja**. Aby otworzyć definicję w oknie oddzielny kod, otwórz menu skrótów dla elementu, a następnie wybierz **przejdź do definicji**.
+
+- **Użyj przykładowych aplikacji**. Można przyspieszyć programowanie aplikacji przez pobranie i zainstalowanie przykładowe aplikacje z [Microsoft Developer Network](https://code.msdn.microsoft.com/). Można też uzyskać określonej technologii lub koncepcji programowania, pobierając i eksploracja przykładowy pakiet dla tego obszaru.
 
 ## <a name="navigating-within-your-code"></a>Poruszanie się w obrębie kodu
 
@@ -59,15 +53,15 @@ Szybsze pisanie kodu przy użyciu następujących funkcji.
 
 - **Zakładki wierszy kodu**. Zakładki można użyć, aby szybko przejść do określonych wierszy kodu w pliku.
 
-    Aby ustawić zakładki, na pasku menu, wybierz **Edytuj**, **zakładki**, **przełączająca**. Można wyświetlić wszystkie zakładki w rozwiązaniu w **zakładki** okna. Aby uzyskać więcej informacji, zobacz [ustawienie zakładek w kodzie](../ide/setting-bookmarks-in-code.md).
+    Aby ustawić zakładki, na pasku menu, wybierz **Edytuj** > **zakładki** > **przełączająca**. Można wyświetlić wszystkie zakładki w rozwiązaniu w **zakładki** okna. Aby uzyskać więcej informacji, zobacz [ustawienie zakładek w kodzie](../ide/setting-bookmarks-in-code.md).
 
 - **Wyszukaj definicje symbolu w pliku**. Umożliwia wyszukiwanie w ramach rozwiązania, aby zlokalizować definicji symbolu i nazwy pliku, ale wyniki wyszukiwania nie uwzględniają przestrzeni nazw lub zmiennych lokalnych.
 
-   Aby uzyskać dostęp do tej funkcji, na pasku menu wybierz **Edytuj**, **przejdź do**.
+   Aby uzyskać dostęp do tej funkcji, na pasku menu wybierz **Edytuj** > **przejdź do**.
 
 - **Przeglądaj ogólną strukturę kodu**. W **Eksploratora rozwiązań**, można wyszukiwać i przeglądać klasy i ich typy i składniki w projektach. Można również wyszukiwania symboli, Wyświetl hierarchię wywołań metody, Znajdź odwołania do symboli i wykonywać inne zadania. Jeśli wybierzesz element kodu w **Eksploratora rozwiązań**, skojarzony plik zostanie otwarty w **Podgląd** kartę i przesuwa kursor do elementu w pliku. Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md).
 
-## <a name="finding-items-faster"></a>Szybsze znajdowanie elementów
+## <a name="finding-items-faster"></a>Znajdowanie elementów szybciej
 
 Można wyszukiwać w IDE dla poleceń, plików i opcji, oprócz filtrowanie zawartości okna narzędzi, aby wyświetlić tylko informacje istotne dla bieżącego zadania.
 
@@ -91,7 +85,7 @@ Debugowanie mogą zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 
 - **Ustaw punkty przerwania tymczasowego**. Można utworzyć tymczasowego punktu przerwania w bieżącym wierszu kodu i jednocześnie uruchomienia debugera. Gdy naciśniesz wiersza kodu debugera przejdzie do trybu przerwania. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
-    Aby użyć tej funkcji, należy wybrać **Ctrl** + **F10** kluczy lub Otwórz menu skrótów wiersza kodu, na którym chcesz przerwać, a następnie wybierz **Uruchom do kursora** .
+    Aby użyć tej funkcji, należy wybrać **Ctrl**+**F10** kluczy lub Otwórz menu skrótów wiersza kodu, na którym chcesz przerwać, a następnie wybierz **Uruchom do kursora** .
 
 - **Przenieś punkt wykonywania podczas debugowania**. Można przenieść do bieżącego punkt wykonywania do innej sekcji kodu i ponownie uruchom debugowanie z tego punktu. Ta metoda jest przydatna, jeśli chcesz debugować części kodu bez konieczności ponownego tworzenia wszystkich kroków, które są wymagane do uzyskania tej sekcji. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -105,9 +99,17 @@ Debugowanie mogą zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 
      Aby uzyskać więcej informacji o dodatkowe polecenia, zobacz [programu Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="managing-files-toolbars-and-windows"></a>Zarządzanie plikami, paski narzędzi i systemu Windows
+## <a name="accessing-visual-studio-tools"></a>Uzyskiwanie dostępu do narzędzi Visual Studio tools
 
- W dowolnym momencie może być Praca w wielu plikach kodu i przenoszenia między kilka okien narzędzi podczas opracowywania aplikacji. Można zachować organizowane przy użyciu następujących wskazówek.
+Możesz szybko dojść wiersza polecenia dewelopera lub innego narzędzia Visual Studio, jeśli przypiąć go do Start menu i na pasku zadań.
+
+1. W Eksploratorze Windows przejdź do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+
+1. Kliknij prawym przyciskiem myszy lub Otwórz menu kontekstowe dla **wiersza polecenia dewelopera**, a następnie wybierz pozycję **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
+
+## <a name="managing-files-toolbars-and-windows"></a>Zarządzanie plikami, paski narzędzi i systemu windows
+
+W dowolnym momencie może być Praca w wielu plikach kodu i przenoszenia między kilka okien narzędzi podczas opracowywania aplikacji. Można zachować organizowane przy użyciu następujących wskazówek.
 
 - **Widoczne pliki, które są często używane w edytorze**. Pliki do lewej strony karty można przypiąć również tak, że są one widoczne niezależnie od tego, ile plików jest otwarty w edytorze.
 

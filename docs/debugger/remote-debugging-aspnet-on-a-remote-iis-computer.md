@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d08fd52f501ed962f50c232d579171fc52dd2b19
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
 
 ![Składniki zdalnego debugera](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-W tym przewodniku opisano sposób konfigurowania i konfigurowanie programu Visual Studio 2017 platformy ASP.NET Core, wdrażanie usług IIS i dołączyć debuger zdalny z programu Visual Studio. Do zdalnego debugowania ASP.NET 4.5.2, zobacz [zdalnego debugowania ASP.NET na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Aby uzyskać więcej informacji, zobacz [zdalnego debugowania na platformie Azure](../debugger/remote-debugging-azure.md).
+W tym przewodniku opisano sposób konfigurowania i konfigurowanie programu Visual Studio 2017 platformy ASP.NET Core, wdrażanie usług IIS i dołączyć debuger zdalny z programu Visual Studio. Do zdalnego debugowania ASP.NET 4.5.2, zobacz [zdalnego debugowania ASP.NET na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Dla usługi Azure App Service można łatwe wdrażanie i debugowanie na wstępnie skonfigurowane wystąpienia usług IIS przy użyciu [debugera migawki](../debugger/debug-live-azure-applications.md) lub [dołączanie debugera z Eksploratora serwera](../debugger/remote-debugging-azure.md).
 
 Procedury te zostały przetestowane na tych konfiguracji serwera:
 * Windows Server 2012 R2 i IIS 8
@@ -56,10 +56,10 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 W zależności od ustawienia zabezpieczeń mogą go zapisać czasu, należy dodać następujące zaufanych witryn do przeglądarki, można łatwo pobrać opisane w tym samouczku oprogramowanie. Może być wymagany dostęp do tych witryn:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
-- witrynie Download.microsoft.com
-- Visual Studio —
+- download.microsoft.com
+- visualstudio.com
 
 Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn, przechodząc do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny**. Te kroki są różne dla innych przeglądarek. (Jeśli chcesz pobrać starszej wersji zdalnego debugera z my.visualstudio.com niektóre dodatkowe zaufanych witryn są wymagane do logowania).
 

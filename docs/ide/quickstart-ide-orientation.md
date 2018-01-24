@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49518c7d38ebbec74908123b83b57bf039dda6f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a74d123d8cb0055f01619bae25b9a1bda54b35f4
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio
 
@@ -99,6 +99,6 @@ Analizujemy zostały tylko niektóre funkcje programu Visual Studio IDE, aby kor
 
 ## <a name="see-also"></a>Zobacz także
 
-[Szybki Start: personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)  
-[Szybki Start: kodowania w edytorze](../ide/quickstart-editor.md)  
-[Szybki Start: projekty i rozwiązania](../ide/quickstart-projects-solutions.md)  
+[Szybki Start: Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)  
+[Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)

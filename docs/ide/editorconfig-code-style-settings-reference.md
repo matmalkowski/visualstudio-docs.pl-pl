@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia EditorConfig Konwencji kodowania platformy .NET
 
@@ -66,49 +66,49 @@ Na poniższej liście przedstawiono dopuszczalny języka reguł Konwencji:
 
 - Ustawienia stylu kodu platformy .NET
     - ["This." i "Me." kwalifikatorów](#this_and_me)
-        - DotNet\_styl\_kwalifikacji\_for_field
-        - DotNet\_styl\_kwalifikacji\_for_property
-        - DotNet\_styl\_kwalifikacji\_for_method
-        - DotNet\_styl\_kwalifikacji\_for_event
+        - dotnet\_style\_qualification\_for_field
+        - dotnet\_style\_qualification\_for_property
+        - dotnet\_style\_qualification\_for_method
+        - dotnet\_style\_qualification\_for_event
     - [Słowa kluczowe języka zamiast framework nazwy typów dla odwołania do typu](#language_keywords)
         - DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_zmiennych lokalnych\_parameters_members
-        - DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_member_access
+        - dotnet\_style\_predefined\_type\_for\_member_access
     - [Modyfikator preferencji](#normalize_modifiers)
-        - DotNet\_styl\_wymagają\_accessibility_modifiers
+        - dotnet\_style\_require\_accessibility_modifiers
         - CSharp\_preferowanych\_modifier_order
         - Visual\_podstawowe\_preferowanych\_modifier_order
     - [Wyrażenie poziom preferencji](#expression_level)
-        - DotNet\_styl\_object_initializer
-        - DotNet\_styl\_collection_initializer
-        - DotNet\_styl\_jawne\_tuple_names
-        - DotNet\_styl\_coalesce_expression
-        - DotNet\_styl\_null_propagation
-        - DotNet\_preferowane\_wywnioskować\_tuple_names
-        - DotNet\_preferowane\_wywnioskować\_anonimowych\_typu\_member_names
+        - dotnet\_style\_object_initializer
+        - dotnet\_style\_collection_initializer
+        - dotnet\_style\_explicit\_tuple_names
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
+        - dotnet\_prefer\_inferred\_tuple_names
+        - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
 - Ustawienia stylu kodu C#
     - [Typy jawne i niejawne](#var)
         - CSharp\_styl\_var\_dla\_wbudowane\_in_types
         - CSharp\_styl\_var\_podczas\_typu\_is_apparent
-        - CSharp\_styl\_var_elsewhere
+        - csharp\_style\_var_elsewhere
     - [Elementy członkowskie z wyrażeniem w treści](#expression_bodied_members)
         - CSharp\_styl\_wyrażenie\_bodied_methods
         - CSharp\_styl\_wyrażenie\_bodied_constructors
         - CSharp\_styl\_wyrażenie\_bodied_operators
         - CSharp\_styl\_wyrażenie\_bodied_properties
         - CSharp\_styl\_wyrażenie\_bodied_indexers
-        - CSharp\_styl\_wyrażenie\_bodied_accessors
+        - csharp\_style\_expression\_bodied_accessors
     - [Dopasowanie wzorca](#pattern_matching)
         - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jest\_z\_cast_check
         - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jako\_z\_null_check
     - [Wbudowane deklaracje zmiennej](#inlined_variable_declarations)
-        - CSharp\_styl\_wbudowanego\_variable_declaration
+        - csharp\_style\_inlined\_variable_declaration
     - [Wyrażenie poziom preferencji](#expression_level_csharp)
         - CSharp\_preferowane\_proste\_default_expression
-        - CSharp\_styl\_deconstructed\_variable_declaration
+        - csharp\_style\_deconstructed\_variable_declaration
         - CSharp\_styl\_wzorzec\_lokalnego\_za pośrednictwem\_anonymous_function
     - ["Null" Sprawdzanie preferencji](#null_checking)
-        - CSharp\_styl\_throw_expression
-        - CSharp\_styl\_warunkowego\_delegate_call
+        - csharp\_style\_throw_expression
+        - csharp\_style\_conditional\_delegate_call
     - [Preferencje blok kodu](#code_block)
         - CSharp\_prefer_braces
 
@@ -129,7 +129,7 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki programowania
 | dotnet_style_qualification_for_method | C# i Visual Basic | false: Brak |
 | dotnet_style_qualification_for_event | C# i Visual Basic | false: Brak |
 
-**DotNet\_styl\_kwalifikacji\_for_field**
+**dotnet\_style\_qualification\_for_field**
 
 - Jeśli ta reguła jest równa **true**, preferowane pola mają być poprzedzone znakiem `this.` w języku C# lub `Me.` w języku Visual Basic.
 - Jeśli ta reguła jest równa **false**, preferowane pola _nie_ do być poprzedzone znakiem `this.` lub `Me.`.
@@ -152,7 +152,7 @@ Me.capacity = 0
 capacity = 0
 ```
 
-**DotNet\_styl\_kwalifikacji\_for_property**
+**dotnet\_style\_qualification\_for_property**
 
 - Jeśli ta reguła jest równa **true**, preferowane właściwości, które mają być poprzedzone znakiem `this.` w języku C# lub `Me.` w języku Visual Basic.
 - Jeśli ta reguła jest równa **false**, preferowane właściwości _nie_ do być poprzedzone znakiem `this.` lub `Me.`.
@@ -175,7 +175,7 @@ Me.ID = 0
 ID = 0
 ```
 
-**DotNet\_styl\_kwalifikacji\_for_method**
+**dotnet\_style\_qualification\_for_method**
 
 - Jeśli ta reguła jest równa **true**, metody, aby być poprzedzona słowem wybrać `this.` w języku C# lub `Me.` w języku Visual Basic.
 - Jeśli ta reguła jest równa **false**, preferowane metody _nie_ do być poprzedzone znakiem `this.` lub `Me.`.
@@ -198,7 +198,7 @@ Me.Display()
 Display()
 ```
 
-**DotNet\_styl\_kwalifikacji\_for_event**
+**dotnet\_style\_qualification\_for_event**
 
 - Jeśli ta reguła jest równa **true**, zdarzenia, które mają być poprzedzona słowem wybrać `this.` w języku C# lub `Me.` w języku Visual Basic.
 - Jeśli ta reguła jest równa **false**, preferowane zdarzenia _nie_ do być poprzedzone znakiem `this.` lub `Me.`.
@@ -266,7 +266,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-**DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_member_access**
+**dotnet\_style\_predefined\_type\_for\_member_access**
 
 - Jeśli ta reguła jest równa **true**, preferowane jest słowem kluczowym języka dla wyrażeń dostępu do elementów członkowskich, zamiast nazwy typu dla typów, które mają słowa kluczowego reprezentujące je.
 - Jeśli ta reguła jest równa **false**, preferowane jest nazwa typu dla wyrażeń dostępu do elementów członkowskich, zamiast słowo kluczowe języka.
@@ -300,24 +300,24 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers">Modyfikator preferencji</a>
 
-Reguły stylu w tej sekcji dotyczą modyfikator preferencje, w tym wymagające Modyfikatory accessbility i określając odpowiednią modyfikator porządek sortowania.
+Reguły stylu w tej sekcji dotyczą modyfikator preferencje, w tym wymagające modyfikatory dostępności i określając odpowiednią modyfikator porządek sortowania.
 
 W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściwe języki programowania, wartości domyślne i pierwszej obsługiwanej wersji programu Visual Studio:
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio | Visual Studio w wersji 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members: Brak | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | publiczne, prywatne, chronionych, wewnętrzne, statyczne i zewnętrzne, new, wirtualny, abstrakcyjny, sealed zastąpienie, tylko do odczytu, async niebezpieczne, nietrwałe,: Brak | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Częściowy, domyślny, Private, chroniony, publiczny, Friend, NotOverridable, możliwym do zastąpienia, MustOverride, przeciążenia, zastąpienia, MustInherit NotInheritable, statyczna, udostępniony, cieni, tylko do odczytu, WriteOnly, wymiar, stała, WithEvents, rozszerzanie i zwężanie niestandardowe, Asynchroniczne: Brak | 15.5 |
 
-**DotNet\_styl\_wymagają\_accessibility_modifiers**
+**dotnet\_style\_require\_accessibility_modifiers**
 
 Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:
 
 | Wartość | Opis |
 | ----- |:----------- |
-| Zawsze | Modyfikatory accessbility należy określić preferowany |
-| Aby uzyskać\_z systemem innym niż\_interface_members | Preferowane modyfikatory dostępności, które mają zostać zadeklarowane z wyjątkiem członków interfejsu publicznego. To obecnie nie różnią się od **zawsze** i będzie działać jako przyszłych sprawdzające dla, jeśli C# dodaje domyślnych metod interfejsu. |
+| Zawsze | Modyfikatory dostępności należy określić preferowany |
+| for\_non\_interface_members | Preferowane modyfikatory dostępności, które mają zostać zadeklarowane z wyjątkiem członków interfejsu publicznego. To obecnie nie różnią się od **zawsze** i będzie działać jako przyszłych sprawdzające dla, jeśli C# dodaje domyślnych metod interfejsu. |
 | Nigdy nie | Nie preferowane modyfikatory dostępności należy określić |
 
 Przykłady kodu:
@@ -398,7 +398,7 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściw
 | dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + i Visual Basic 15 + | PRAWDA: sugestii | 15,6 w wersji preview 2 |
 | dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# i Visual Basic | PRAWDA: sugestii | 15,6 w wersji preview 2 |
 
-**DotNet\_styl\_object_initializer**
+**dotnet\_style\_object_initializer**
 
 - Jeśli ta reguła jest równa **true**, preferowane obiektów, aby można było zainicjować przy użyciu inicjatory obiektów, kiedy to możliwe.
 - Jeśli ta reguła jest równa **false**, wybrać obiekty do *nie* można zainicjować przy użyciu inicjatory obiektów.
@@ -423,7 +423,7 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-**DotNet\_styl\_collection_initializer**
+**dotnet\_style\_collection_initializer**
 
 - Jeśli ta reguła jest równa **true**, wybrać kolekcje, aby można było zainicjować przy użyciu inicjatory kolekcji, jeśli to możliwe.
 - Jeśli ta reguła jest równa **false**, preferowane kolekcje w celu *nie* można zainicjować przy użyciu inicjatory kolekcji.
@@ -452,7 +452,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-**DotNet\_styl\_jawne\_tuple_names**
+**dotnet\_style\_explicit\_tuple_names**
 
 - Jeśli ta reguła jest równa **true**, wolą krotki nazwy właściwości ItemX.
 - Jeśli ta reguła jest równa **false**, preferowane właściwości ItemX nazwy spójnej kolekcji.
@@ -479,7 +479,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**DotNet\_styl\_coalesce_expression**
+**dotnet\_style\_coalesce_expression**
 
 - Jeśli ta reguła jest równa **true**, preferowane null łączącego wyrażenia trójargumentowy sprawdzania.
 - Jeśli ta reguła jest równa **false**, preferowane trójargumentowy sprawdzanie do wyrażeń łączącego wartości null.
@@ -504,7 +504,7 @@ Dim v = If(x Is Nothing, y, x) ' or
 Dim v = If(x IsNot Nothing, x, y)
 ```
 
-**DotNet\_styl\_null_propagation**
+**dotnet\_style\_null_propagation**
 
 - Jeśli ta reguła jest równa **true**, wolą używać operatora warunkowego wartości null, jeśli to możliwe.
 - Jeśli ta reguła jest równa **false**, wolą używać trójargumentowy sprawdzanie wartości null, jeśli jest to możliwe.
@@ -544,7 +544,7 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
-**DotNet\_styl\_preferowane\_wywnioskować\_anonimowych\_typu\_member_names**
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
 
 - Jeśli ta reguła jest równa **true**, preferowane nazwy elementów członkowskich wywnioskowanego typu anonimowego.
 - Jeśli ta reguła jest równa **false**, preferowane nazwy elementów członkowskich jawnego typu anonimowego.
@@ -590,7 +590,7 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki programowania
 | csharp_style_var_when_type_is_apparent | C# | wartość true: Brak |
 | csharp_style_var_elsewhere | C# | wartość true: Brak |
 
-**CSharp\_styl\_var\_dla\_wbudowane\_in_types**
+**csharp\_style\_var\_for\_built\_in_types**
 
 - Jeśli ta reguła jest równa **true**, preferowane `var` służy do deklarowania zmiennych z typami wbudowanych systemu, takich jak `int`.
 - Jeśli ta reguła jest równa **false**, Preferuj jawnego typu przed `var` do deklarowania zmiennych z typami wbudowany system takich jak `int`.
@@ -620,7 +620,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-**CSharp\_styl\_var_elsewhere**
+**csharp\_style\_var_elsewhere**
 
 - Jeśli ta reguła jest równa **true**, preferowane `var` za pośrednictwem jawnego typu we wszystkich przypadkach, chyba że zastąpione przez inną regułę stylu kodu.
 - Jeśli ta reguła jest równa **false**, Preferuj jawnego typu przed `var` we wszystkich przypadkach, chyba że zastąpione przez inną regułę stylu kodu.
@@ -654,13 +654,13 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje o
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio | Visual Studio w wersji 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_expression_bodied_methods | IDE0022 | C# W WERSJI 6.0 + | false: Brak | 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | false: Brak | 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 i IDE0024 | C# 7.0 + | false: Brak | 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | wartość true: Brak | 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | wartość true: Brak | 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | wartość true: Brak | 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false: Brak | 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 i IDE0024 | C# 7.0+ | false: Brak | 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | wartość true: Brak | 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | wartość true: Brak | 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | wartość true: Brak | 15.3 |
 
-**CSharp\_styl\_wyrażenie\_bodied_methods**
+**csharp\_style\_expression\_bodied_methods**
 
 Ta reguła akceptuje wartości z poniższej tabeli:
 
@@ -680,7 +680,7 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-**CSharp\_styl\_wyrażenie\_bodied_constructors**
+**csharp\_style\_expression\_bodied_constructors**
 
 Ta reguła akceptuje wartości z poniższej tabeli:
 
@@ -762,7 +762,7 @@ public T this[int i] => _value[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-**CSharp\_styl\_wyrażenie\_bodied_accessors**
+**csharp\_style\_expression\_bodied_accessors**
 
 Ta reguła akceptuje wartości z poniższej tabeli:
 
@@ -803,10 +803,10 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje o
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0 + | PRAWDA: sugestii |
-| csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0 + | PRAWDA: sugestii |
+| csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0+ | PRAWDA: sugestii |
+| csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0+ | PRAWDA: sugestii |
 
-**CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jest\_z\_cast_check**
+**csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check**
 
 - Jeśli ta reguła jest równa **true**, preferowane, zamiast dopasowywania do wzorca `is` wyrażenia z typu rzutowania.
 - Jeśli ta reguła jest równa **false**, preferowane `is` wyrażenia z typu rzutowania zamiast dopasowywania do wzorca.
@@ -821,7 +821,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-**CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jako\_z\_null_check**
+**csharp\_style\_pattern\_matching\_over\_as\_with\_null_check**
 
 - Jeśli ta reguła jest równa **true**, preferowane, zamiast dopasowywania do wzorca `as` wyrażenia o wartości null sprawdza, czy jest coś określonego typu.
 - Jeśli ta reguła jest równa **false**, preferowane `as` wyrażenia ze sprawdzenia wartości null zamiast wzorzec dopasowany do ustalenia, czy jest coś określonego typu.
@@ -854,9 +854,9 @@ W poniższej tabeli przedstawiono nazwę reguły, identyfikator reguły, wersje 
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | -------- | -------------------- | ----------------------|
-| csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0 + | PRAWDA: sugestii |
+| csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0+ | PRAWDA: sugestii |
 
-**CSharp\_styl\_wbudowanego\_variable_declaration**
+**csharp\_style\_inlined\_variable_declaration**
 
 - Jeśli ta reguła jest równa **true**, preferowane `out` zmienne, które mają być zadeklarowana śródwierszowo na liście argumentów w wywołaniu metody, jeśli to możliwe.
 - Jeśli ta reguła jest równa **false**, preferowane `out` zmienne, które mają być zadeklarowana przed wywołaniem metody.
@@ -888,9 +888,9 @@ W poniższej tabeli przedstawiono nazwę reguły, identyfikator reguły, wersje 
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio | Visual Studio w wersji 2017 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_prefer_simple_default_expression | IDE0034 | C# 7.1 + | PRAWDA: sugestii | 15.3 |
-| csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 + | PRAWDA: sugestii | 15.5 |
-| csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0 + | PRAWDA: sugestii | 15.5 |
+| csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | PRAWDA: sugestii | 15.3 |
+| csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | PRAWDA: sugestii | 15.5 |
+| csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0+ | PRAWDA: sugestii | 15.5 |
 
 **CSharp\_preferowane\_proste\_default_expression**
 
@@ -909,7 +909,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-**CSharp\_styl\_deconstructed\_variable_declaration**
+**csharp\_style\_deconstructed\_variable_declaration**
 
 - Jeśli ta reguła jest równa **true**, preferowane deconstructed deklaracja zmiennej.
 - Jeśli ta reguła jest równa **false**, nie preferowane deconstruction w deklaracjach zmiennych.
@@ -932,7 +932,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-**CSharp\_styl\_wzorzec\_lokalnego\_za pośrednictwem\_anonymous_function**
+**csharp\_style\_pattern\_local\_over\_anonymous_function**
 
 - Jeśli ta reguła jest równa **true**, preferowane funkcje lokalne za pośrednictwem funkcji anonimowych.
 - Jeśli ta reguła jest równa **false**, Preferuj funkcje anonimowe przed funkcje lokalne.
@@ -972,10 +972,10 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły, wersje o
 
 | Nazwa reguły | Identyfikator reguły | Właściwe języki | Domyślny program Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| csharp_style_throw_expression | IDE0016 | C# 7.0 + | PRAWDA: sugestii |
+| csharp_style_throw_expression | IDE0016 | C# 7.0+ | PRAWDA: sugestii |
 | csharp_style_conditional_delegate_call | IDE0041 | C# W WERSJI 6.0 + | PRAWDA: sugestii |
 
-**CSharp\_styl\_throw_expression**
+**csharp\_style\_throw_expression**
 
 - Jeśli ta reguła jest równa **true**, wolą używać `throw` wyrażenia zamiast `throw` instrukcje.
 - Jeśli ta reguła jest równa **false**, wolą używać `throw` instrukcje zamiast `throw` wyrażenia.
@@ -991,7 +991,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-**CSharp\_styl\_warunkowego\_delegate_call**
+**csharp\_style\_conditional\_delegate_call**
 
 - Jeśli ta reguła jest równa **true**, wolą używać operatora łączącego warunkowego (`?.`) podczas wywoływania wyrażenia lambda, zamiast wykonywania o wartości null Sprawdź.
 - Jeśli ta reguła jest równa **false**, preferowane sprawdzania wartości null przed wywołaniem wyrażenia lambda, zamiast operatora łączącego warunkowego (`?.`).
@@ -1098,7 +1098,7 @@ W poniższej tabeli przedstawiono nazwy reguły właściwe języki, wartości do
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# i Visual Basic | true | 15.3  |
 
-**DotNet\_sortowania\_systemu\_directives_first**
+**dotnet\_sort\_system\_directives_first**
 
 - Jeśli ta reguła jest równa **true**posortować alfabetycznie przy użyciu dyrektyw System.* i umieść je przed innymi deklaracje Using.
 - Jeśli ta reguła jest równa **false**, nie umieszczaj System.* przy użyciu dyrektyw przed innymi przy użyciu dyrektyw.
@@ -1199,7 +1199,7 @@ if (...) {
 }
 ```
 
-**CSharp\_nowe\_wiersza\_before_catch**
+**csharp\_new\_line\_before_catch**
 
 - Jeśli ta reguła jest równa **true**, umieść `catch` instrukcje w nowym wierszu.
 - Jeśli ta reguła jest równa **false**, umieść `catch` instrukcje w tym samym wierszu.
@@ -1252,9 +1252,9 @@ try {
 }
 ```
 
-**CSharp\_nowe\_wiersza\_przed\_członków\_w\_object_initializers**
+**csharp\_new\_line\_before\_members\_in\_object_initializers**
 
-- Jeśli ta reguła jest równa **true**, wymagają członkami intializers obiektu w osobnych wierszach.
+- Jeśli ta reguła jest równa **true**, wymagają członkami intiializers obiektu w osobnych wierszach.
 - Jeśli ta reguła jest równa **false**, wymagają członkami inicjatory obiektów w tym samym wierszu.
 
 Przykłady kodu:
@@ -1340,7 +1340,7 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki, wartości do
 | csharp_indent_switch_labels |  C# | true | 15.3  |
 | csharp_indent_labels |  C# | no_change | 15.3  |
 
-**CSharp\_wcięcie\_case_contents**
+**csharp\_indent\_case_contents**
 
 - Jeśli ta reguła jest równa **true**, wcięcie `switch` przypadek zawartość.
 - Jeśli ta reguła jest równa **false**, nie wcięcie `switch` przypadek zawartość.
@@ -1375,7 +1375,7 @@ switch(c) {
 }
 ```
 
-**CSharp\_wcięcie\_switch_labels**
+**csharp\_indent\_switch_labels**
 
 - Jeśli ta reguła jest równa **true**, wcięcie `switch` etykiety.
 - Jeśli ta reguła jest równa **false**, nie wcięcie `switch` etykiety.
@@ -1410,7 +1410,7 @@ default:
 }
 ```
 
-**CSharp\_indent_labels**
+**csharp\_indent_labels**
 
 Ta zasada nie akceptuje **true** lub **false** wartości; zamiast tego przyjmuje wartość z następującej tabeli:
 
@@ -1487,7 +1487,7 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki, wartości do
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_parentheses |  C# | false | 15.3  |
 
-**CSharp\_miejsca\_after_cast**
+**csharp\_space\_after_cast**
 
 - Jeśli ta reguła jest równa **true**, wymagają odstęp między rzutowanie i wartość.
 - Jeśli ta reguła jest równa **false**, wymagają _nie_ odstęp między rzutowanie i wartość.

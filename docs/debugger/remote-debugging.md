@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikacji Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalny debuger programu Visual Studio.
@@ -34,11 +34,13 @@ Aby uzyskać szczegółowe instrukcje na debugowanie zdalne zobacz następujące
 
 |Scenariusz|Łącze|
 |-|-|-|
-|Azure|[Debugowanie ASP.NET w usłudze Azure App Service (debuger migawki)](../debugger/debug-live-azure-applications.md), [zdalnego debugowania ASP.NET na platformie Azure](../debugger/remote-debugging-azure.md), lub [debugowania aplikacji usługi sieć szkieletowa usług Azure](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|Azure App Service|[Migawki debugera](../debugger/debug-live-azure-applications.md) lub [zdalnego debugowania ASP.NET na platformie Azure](../debugger/remote-debugging-azure.md)|
+|Maszyna wirtualna platformy Azure|[Platforma ASP.NET debugowania zdalnego na platformie Azure](../debugger/remote-debugging-azure.md)|
+|Azure Service Fabric|[Debugowanie aplikacji sieci szkieletowej usług Azure](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Zdalne debugowanie platformy ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) lub [zdalnego debugowania ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# lub Visual Basic|[Zdalne debugowanie projektu C# lub Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C# lub Visual Basic|[Zdalne debugowanie projektu w języku C# lub Visual Basic](../debugger/remote-debugging-csharp.md)|
 |C++|[Debugowanie zdalne projektu C++](../debugger/remote-debugging-cpp.md)|
-|Aplikacje uniwersalne systemu Windows (UWP)|[Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) i [debugowania pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)|
+|Aplikacje uniwersalne systemu Windows (UWP)|[Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) lub [debugowania pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)|
 
 Jeśli po prostu chcesz pobrać i zainstalować zdalny debuger i nie wymagają żadnych dodatkowych instrukcji dla danego scenariusza, wykonaj kroki opisane w tym artykule.
   

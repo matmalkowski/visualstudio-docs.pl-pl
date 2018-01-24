@@ -9,11 +9,11 @@ ms.date: 01/16/2018
 ms.topic: article
 helpviewer_keywords: editor
 ms.workload: dotnet
-ms.openlocfilehash: 8f8c8433a1c07b508ee6a433592914340a7c0de3
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 dla deweloperów platformy .NET
 
@@ -104,6 +104,9 @@ Poniżej przedstawiono popularne skróty programu Visual Studio. Zauważ, że ni
 | **Ctrl+F12** | Przejdź do implementacji | Przejdź z podstawowego typu lub elementu członkowskiego do jej różnych implementacji |
 | **Shift+F12** | Znajdź wszystkie odwołania | Zobacz wszystkie symbolu lub literału odwołań |
 | **Ctrl+.** (również **Alt + wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacje lub innych szybkie akcje są dostępne pod adresem wybór pozycji lub kod kursora |
+| **CTRL**+**E**,**V** | Zduplikowany wiersz | Duplikaty wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 wersji 15,6 preview 2** i nowsze) |
+| **Ctrl**+**W** | Rozwiń wybór | Rozwija bieżące zaznaczenie przez jedną jednostkę strukturalne (dostępne w **programu Visual Studio 2017 wersji 15,5 cala**) |
+| **Ctrl**+**Shift**+**W** | Wybór umowy | Kontrakty (zmniejsza) bieżącego zaznaczenia przez jedną jednostkę strukturalne (dostępne w **programu Visual Studio 2017 wersji 15,5 cala**) |
 | **Ctrl+Q** | Szybkie uruchamianie | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **Ctrl+F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |

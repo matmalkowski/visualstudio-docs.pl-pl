@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Wstawki kodu
 
@@ -35,7 +35,7 @@ Wstawki kodu są małe bloki kodu wielokrotnego użytku, które można wstawiać
 
 W programie Visual Studio istnieją dwa rodzaje fragment kodu: wstawki rozszerzenia, które są dodawane w określonym kursora, a może zastąpić skrót fragment i Otocz wstawki (C# i tylko C++), które zostaną dodane wokół zaznaczonego bloku kodu.
 
-Przykład fragment wstawiania: w języku C# tryf skrótu służy do wstawiania blok try-finally:
+Przykład fragment rozwinięcia: w języku C# tryf skrótu służy do wstawiania blok try-finally:
 
 ```csharp
 try

@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-projects-and-solutions"></a>Szybki Start: projekty i rozwiązania
+# <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
 
 W tym szybkiego startu 10 minut firma Microsoft będzie Poznaj, co to oznacza, że tworzenie rozwiązania i projektu w programie Visual Studio. Przyjrzymy właściwości projektu, a niektóre z plików, które może zawierać. Utworzymy również odwołanie do projektu drugiego.
 
@@ -62,7 +62,7 @@ Teraz możemy dodać nasze pierwszego projektu do rozwiązania. Firma Microsoft 
    Projekt o nazwie "QuickDate" pojawia się poniżej rozwiązania w **Eksploratora rozwiązań**. Obecnie zawiera jednego pliku o nazwie **App.config**.
 
    > [!NOTE]
-   > Jeśli nie widzisz **Visual C#** w lewym okienku okna dialogowego, musisz zainstalować **tworzenia klasycznych aplikacji .NET** obciążenia. Jest prosty sposób, w tym celu kliknij **Otwórz Instalator programu Visual Studio** łącze w dolnej części okienka po lewej stronie. **Instalator programu Visual Studio** otwiera, i z tego miejsca można wybrać poprawny obciążenia, a następnie **Modyfikuj** przycisku.
+   > Jeśli nie widzisz **Visual C#** w lewym okienku okna dialogowego, musisz zainstalować **tworzenia klasycznych aplikacji .NET** obciążenia. Prosty sposób, w tym celu jest wybranie **Otwórz Instalator programu Visual Studio** łącze w lewym dolnym rogu okna dialogowego. Po **Instalator programu Visual Studio** uruchomieniu wybierz **tworzenia klasycznych aplikacji .NET** obciążenia, a następnie **Modyfikuj** przycisku.
 
    ![Otwórz łącze Instalator programu Visual Studio](media/quickstart-projects-open-installer.png)
 
@@ -183,8 +183,8 @@ Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Następnie należy p
 ## <a name="see-also"></a>Zobacz także
 
 [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Szybki Start: personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)  
-[Szybki Start: kodowania w edytorze](../ide/quickstart-editor.md)  
+[Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)  
+[Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)  
 [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)  
 [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)  
 [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  

@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 Podczas tworzenia aplikacji, która obsługuje dane w bazie danych można wykonywać podstawowe zadania, takie jak definiowanie parametry połączenia, wstawiania danych i uruchamianie procedur składowanych. Wykonując w tym temacie, można wykryć jak wchodzić w interakcję z bazą danych z wewnątrz prostą aplikację "formularzy nad danymi" formularzy systemu Windows za pomocą Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — łącznie z zestawów danych LINQ do SQL i programu Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawionych w tym artykule.  
@@ -47,7 +47,7 @@ Podczas tworzenia aplikacji, która obsługuje dane w bazie danych można wykony
   
 -   Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, można zainstalować go z [stronę pobierania wersjach programu SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+-   SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, można zainstalować go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 W tym temacie założono, że znasz podstawowych funkcji programu Visual Studio IDE i można utworzyć aplikacji formularzy systemu Windows, dodać formularzy do projektu, przycisków i innych formantów na formularzach, ustaw właściwości formantów i zdarzenia prostego kodu. Jeśli nie masz doświadczenia z tych zadań, zaleca się wykonanie [wprowadzenie do języka Visual C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tematu przed skorzystaniem z tego przewodnika.  
   
@@ -99,8 +99,8 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
   
 |Formanty formularza nawigacji|Właściwości|  
 |--------------------------------------|----------------|  
-|Przycisk|Nazwa = btnGoToAdd|  
-|Przycisk|Nazwa = btnGoToFillOrCancel|  
+|Przycisk|Name = btnGoToAdd|  
+|Przycisk|Name = btnGoToFillOrCancel|  
 |Przycisk|Nazwa = btnExit|  
   
  **Formularz NewCustomer**  
@@ -113,7 +113,7 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
 |TextBox|Nazwa = txtCustomerID<br /><br /> ReadOnly = True|  
 |Przycisk|Nazwa = btnCreateAccount|  
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maksymalna = 5000<br /><br /> Nazwa = numOrderAmount|  
-|Element DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpOrderDate|  
+|DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpOrderDate|  
 |Przycisk|Nazwa = btnPlaceOrder|  
 |Przycisk|Nazwa = btnAddAnotherAccount|  
 |Przycisk|Nazwa = btnAddFinish|  
@@ -126,9 +126,9 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
 |----------------------------------------|----------------|  
 |TextBox|Nazwa = txtOrderID|  
 |Przycisk|Nazwa = btnFindByOrderID|  
-|Element DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpFillDate|  
+|DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpFillDate|  
 |Formant DataGridView|Nazwa = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|  
-|Przycisk|Nazwa = btnCancelOrder|  
+|Przycisk|Name = btnCancelOrder|  
 |Przycisk|Nazwa = btnFillOrder|  
 |Przycisk|Nazwa = btnFinishUpdates|  
   

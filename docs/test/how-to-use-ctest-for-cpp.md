@@ -11,11 +11,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
 author: mikeblome
-ms.openlocfilehash: 989f2b06df55fd0927863fe7e5603d3d0ec90b06
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 529e070a3db1e6587989f8d0c55dc04e6db0388c
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać CTest dla języka C++ w programie Visual Studio
 CMake (w tym CTest) jest zintegrowany jako część programu Visual Studio IDE **Develoment pulpitu z C++** obciążenia. Aby zainstalować go na komputerze, otwórz Instalator programu Visual Studio i Znajdź [CMake Tools dla Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) na liście składników obciążenia.
@@ -26,16 +26,5 @@ Obsługa CMake w programie Visual Studio nie wiąże się z systemu projektu pro
 
 ![Uruchom testy CTest](media/cpp-cmake-run-tests.png "CTest uruchomienia testów")
 
-
 ## <a name="see-also"></a>Zobacz też
 [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)
-
-
-  
-
-
-
-
-
-
-
