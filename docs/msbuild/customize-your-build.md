@@ -16,21 +16,21 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 78773b3a87aff91fae92ec64365ef55620e58d44
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 82b7503b937babd81a41136656d75c95e844b94c
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
-W wersjach programu MSBuild przed wersji 15 Jeśli chcesz podać nowych, niestandardowych właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy, Zdefiniuj właściwość w pliku .props, a następnie jawnie zaimportowanie pliku .props w każdym projekcie w rozwiązaniu, między innymi.
+W wersjach programu MSBuild przed wersji 15 Jeśli chcesz podać nowych, niestandardowych właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy zdefiniować właściwości w *.props* pliku, a następnie zaimportować jawnie *.props* pliku w każdym projekcie w rozwiązaniu, między innymi.
 
-Jednak teraz możesz dodać nową właściwość do każdego projektu w jednym kroku przez definiowanie jednego pliku o nazwie Directory.Build.props w katalogu głównym Twojego repozytorium. Po uruchomieniu programu MSBuild Microsoft.Common.props wyszukuje struktury katalogów dla pliku Directory.Build.props (i Microsoft.Common.targets szuka Directory.Build.targets). Jeśli zostanie znaleziony, importuje właściwości. Directory.Build.props jest zdefiniowane przez użytkownika pliku, który zawiera dostosowania do projektów w katalogu.
+Jednak teraz możesz dodać nową właściwość do każdego projektu w jednym kroku przez zdefiniowaniem go w jednego pliku o nazwie *Directory.Build.props* w katalogu głównym Twojego repozytorium. Po uruchomieniu programu MSBuild *Microsoft.Common.props* wyszukuje struktury katalogów dla *Directory.Build.props* plików (i *Microsoft.Common.targets* szuka *Directory.Build.targets*). Jeśli zostanie znaleziony, importuje właściwości. *Directory.Build.props* plik użytkownika, który zawiera dostosowania do projektów w katalogu.
 
 ## <a name="directorybuildprops-example"></a>Przykład Directory.Build.props
-Na przykład, jeśli chcesz włączyć wszystkie projektów dostęp do nowych Roslyn **/ deterministyczne** funkcji (która jest widoczna w docelowej Roslyn CoreCompile przez właściwość `$(Deterministic)`), można wykonać następujące czynności.
+Na przykład, jeśli chcesz włączyć wszystkie projektów dostęp do nowych Roslyn **/ deterministyczne** funkcji (która jest widoczna w Roslyn `CoreCompile` docelowego za pomocą właściwości `$(Deterministic)`), można wykonać następujące czynności.
 
-1. Utwórz nowy plik w folderze głównym Twojego repozytorium o nazwie Directory.Build.props.
+1. Utwórz nowy plik w folderze głównym Twojego repozytorium o nazwie *Directory.Build.props*.
 2. Dodaj następujący kod XML w pliku.
 
   ```xml
@@ -40,10 +40,10 @@ Na przykład, jeśli chcesz włączyć wszystkie projektów dostęp do nowych Ro
     </PropertyGroup>
   </Project>
   ```
-3. Uruchom program MSBuild. Importy istniejącego projektu Microsoft.Common.props i Microsoft.Common.targets znaleźć pliku i zaimportuj go.
+3. Run MSBuild. Importy istniejącego projektu *Microsoft.Common.props* i *Microsoft.Common.targets* Znajdź plik i zaimportuj go.
 
 ## <a name="search-scope"></a>Zakres wyszukiwania
-Podczas wyszukiwania plików Directory.Build.props, MSBuild przeprowadzi struktura katalogów do góry z lokalizacji projektu ($(MSBuildProjectFullPath)) Zatrzymywanie po klient zlokalizuje pliku Directory.Build.props. Na przykład jeśli Twoje $(MSBuildProjectFullPath) c:\users\username\code\test\case1, MSBuild zaczyna się wyszukiwanie, a następnie wyszukiwania struktura katalogów w górę, dopóki znajduje się plik Directory.Build.props, tak jak następującą strukturę katalogów .
+Podczas wyszukiwania *Directory.Build.props* pliku, program MSBuild przeprowadzi struktura katalogów do góry z lokalizacji projektu (`$(MSBuildProjectFullPath)`), zatrzymywanie po klient zlokalizuje *Directory.Build.props* plik. Na przykład jeśli Twoje `$(MSBuildProjectFullPath)` został *c:\users\username\code\test\case1*, MSBuild zaczyna się wyszukiwanie istnieje i następnie wyszukiwania struktura katalogów w górę, dopóki znajduje się *Directory.Build.props* pliku, tak jak następującą strukturę katalogów.
 
 ```
 c:\users\username\code\test\case1
@@ -53,13 +53,13 @@ c:\users\username
 c:\users
 c:\
 ```
-Lokalizacja pliku rozwiązania jest Directory.Build.props znaczenia.
+Lokalizacja pliku rozwiązania nie ma znaczenia *Directory.Build.props*.
 
 ## <a name="import-order"></a>Kolejność importu
 
-Directory.Build.props jest importowany bardzo wczesnym etapie Microsoft.Common.props, więc właściwości zdefiniowane później są niedostępne do niego. Tak należy unikać odwołujących się do właściwości, które nie zostały jeszcze zdefiniowane (i w związku z tym oszacuje pustą).
+*Directory.Build.props* jest zaimportowana bardzo wczesnym *Microsoft.Common.props*, więc właściwości zdefiniowane później są niedostępne do niego. Tak należy unikać odwołujących się do właściwości, które nie zostały jeszcze zdefiniowane (i w związku z tym oszacuje pustą).
 
-Directory.Build.targets zostaną zaimportowane z Microsoft.Common.targets po zaimportowaniu pliki .targets z pakietami NuGet. Tak może służyć do zastępowania właściwości oraz zdefiniowanego w większości logiki kompilacji, ale w czasie może być konieczna dostosowań w pliku projektu po zaimportowaniu końcowego.
+*Directory.Build.targets* została zaimportowana z *Microsoft.Common.targets* po zaimportowaniu *.targets* pliki z pakietami NuGet. Tak może służyć do zastępowania właściwości oraz zdefiniowanego w większości logiki kompilacji, ale w czasie może być konieczna dostosowań w pliku projektu po zaimportowaniu końcowego.
 
 ## <a name="use-case-multi-level-merging"></a>Przypadek użycia: scalanie wielu poziomów
 
@@ -79,20 +79,20 @@ Załóżmy, że ta struktura standardowego rozwiązania:
     \Project2Tests
 ````
 
-Może być pożądane mają wspólne właściwości wszystkich projektów `(1)`, typowe właściwości `src` projekty `(2-src)`i wspólnych właściwości `test` projektów `(2-test)`.
+Może być pożądane mają wspólne właściwości wszystkich projektów *(1)*, typowe właściwości *src* projekty *(2-src)*i wspólnych właściwości  *Testowanie* projekty *(2 test)*.
 
-Dla programu msbuild poprawnie scalić pliki "wewnętrzna" (`2-src` i `2-test`) z plikiem "zewnętrzna" (`1`), możesz należy wziąć pod uwagę to raz msbuild wyszukuje `Directory.Build.props` pliku przestaje dalsze skanowanie. Aby kontynuować skanowania i scalić z zewnętrznym plikiem, umieść to w oba pliki wewnętrzny:
+Dla programu MSBuild poprawnie scalić pliki "wewnętrzna" (*2-src* i *2 test*) z pliku "zewnętrzna" (*1*), weź pod uwagę raz program MSBuild wyszukuje *Directory.Build.props* pliku przestaje dalsze skanowanie. Aby kontynuować skanowania i scalić z zewnętrznym plikiem, umieść to w oba pliki wewnętrzny:
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
-Podsumowanie przez msbuild ogólne podejście jest następujący:
+Podsumowanie przez MSBuild ogólne podejście jest następujący:
 
-- Dla żadnego danego projektu msbuild wyszukuje pierwszy `Directory.Build.props` w górę w strukturze rozwiązania scala go przy użyciu ustawień domyślnych i zatrzymuje skanowanie, aby uzyskać więcej informacji
+- Dla żadnego danego projektu MSBuild wyszukuje pierwszy *Directory.Build.props* w górę w strukturze rozwiązania scala go przy użyciu ustawień domyślnych i zatrzymuje skanowanie, aby uzyskać więcej informacji
 - Jeśli chcesz, aby wiele poziomów znaleziono i scalić następnie [ `<Import...>` ](../msbuild/property-functions.md#msbuild-getpathoffileabove) (należy pokazanym powyżej) "zewnętrzne" pliku z pliku "wewnętrzne"
 - Jeśli plik "zewnętrzne" nie, nie również zaimportować coś powyżej, następnie skanowanie zatrzymuje
 - Aby kontrolować proces skanowania scalanie, użyj `$(DirectoryBuildPropsPath)` i`$(ImportDirectoryBuildProps)`
 
-Lub po prostu: pierwszy `Directory.Build.props` którego nie importuje niczego, jest gdzie zatrzymuje program msbuild.
+Lub po prostu: pierwszy *Directory.Build.props* którego nie importuje niczego, jest gdzie zatrzymuje program MSBuild.
 
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   

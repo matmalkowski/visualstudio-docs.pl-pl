@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzenia programu Visual Studio
 
@@ -31,7 +31,7 @@ Rozszerzenia programu Visual Studio są pakiety kodu umożliwiające działanie 
 Można użyć **rozszerzenia i aktualizacje** okno dialogowe, aby zainstalować rozszerzenia programu Visual Studio i przykłady z witryny sieci Web i innych lokalizacjach, a następnie włączyć, wyłączyć, zaktualizować lub je odinstalować. (**Narzędzia / rozszerzenia i aktualizacje**, lub typ **rozszerzenia** w **Szybkie uruchamianie** okno). Okno dialogowe zawiera również aktualizacje zainstalowane przykłady i rozszerzenia. Można również pobrać z witryny sieci Web rozszerzenia lub pobrać je z innymi deweloperami.
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2015 rozszerzenia hostowanych w programie Visual Studio Marketplace zostanie automatycznie zaktualizowana.  Możesz zmienić to ustawienie za pomocą **rozszerzenia i aktualizacje** okna dialogowego.  Zobacz sekcję dotyczącą **aktualizacje automatyczne rozszerzenia** poniżej szczegółowe informacje.
+> Począwszy od programu Visual Studio 2015 hostowanych w programie Visual Studio Marketplace rozszerzenia są automatycznie aktualizowane. Możesz zmienić to ustawienie za pomocą **rozszerzenia i aktualizacje** okna dialogowego.  Zobacz sekcję dotyczącą **aktualizacje automatyczne rozszerzenia** poniżej szczegółowe informacje.
 
 ## <a name="finding-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio
 
@@ -66,24 +66,26 @@ Jeśli chcesz wyłączyć aktualizacje automatyczne, należy wyłączyć funkcj�
 > [!NOTE]
 > Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia / Opcje / środowiska / rozszerzenia i aktualizacje**) czy będzie aktualizacji automatycznych dla rozszerzeń dla poszczególnych użytkowników, wszystkie rozszerzenia użytkownika lub obu (ustawienie domyślne).
 
-## <a name="extension-crash-notifications"></a>Rozszerzenie awarii powiadomienia
+## <a name="extension-crashunresponsiveness-notifications"></a>Rozszerzenie awarii/odpowiadać powiadomienia
 
-W Visual Studio 2017 r (wersja 15 ustęp 3 — wersja zapoznawcza) programu Visual Studio powiadamia użytkownika, jeśli podejrzewa, że rozszerzenie uczestniczyła w awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątku. Przy następnym uruchomieniu programu Visual Studio sprawdza stosu, począwszy od liścia i działają na bazie. Jeśli Visual Studio Określa, że ramka należy moduł, który jest częścią zainstalowane i włączone rozszerzenie, powiadomi użytkownika o wiadomości, takie jak
+Nowość w **programu Visual Studio 2017 wersji 15 ustęp 3**, Visual Studio powiadamia użytkownika, jeśli podejrzewa, że rozszerzenie uczestniczyła w awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątku. Przy następnym uruchomieniu programu Visual Studio sprawdza stosu, począwszy od liścia i działają na bazie. Jeśli program Visual Studio Określa, że ramki należy moduł, który jest częścią zainstalowane i włączone rozszerzenie, pokazuje powiadomienie.
 
-"Poprzedniej sesji został nieoczekiwanie zakończony. Wyłączanie rozszerzenia "extension_name" może zapobiec podobne problemy."
+Nowość w **15,6 wersji programu Visual Studio w wersji zapoznawczej 3**, Visual Studio również powiadamia użytkownika, jeśli podejrzewa, powoduje rozszerzenie interfejsu użytkownika przestanie odpowiadać.
 
-Można zignorować powiadomienie lub wykonać jedną z następujących czynności:
+Gdy te powiadomienia są wyświetlane, możesz zignorować powiadomienie lub wykonać jedną z następujących czynności:
 
 - Wybierz **wyłącza to rozszerzenie**. Visual Studio wyłącza rozszerzenia i informuje o tym, czy należy ponownie uruchomić system, aby wyłączyć zaczęły obowiązywać. Można ponownie włączyć rozszerzenia w **rozszerzenia i aktualizacje** okno dialogowe, jeśli chcesz.
 
-- Wybierz **nie pokazuj więcej dla tego rozszerzenia**. IDE nie będą już wyświetlane powiadomienia o awarii (Crash) skojarzony z tym rozszerzeniem, ale zostanie ona Pokaż powiadomienia o awarii skojarzone z innymi rozszerzeniami.
+- Wybierz **nigdy nie pokazuj więcej tego komunikatu**. 
+  - Jeśli powiadomienia dotyczą awarii w poprzedniej sesji, Visual Studio nie będą już wyświetlane się, że występuje powiadomienie po awarii, skojarzony z tym rozszerzeniem. Visual Studio będzie widoczna powiadomienia w przypadku braku odpowiedzi może być skojarzony z tym rozszerzeniem lub awarii lub brak reakcji, które mogą być skojarzone z innymi rozszerzeniami. 
+  - Jeśli powiadomienia dotyczą braku odpowiedzi, IDE nie będą już wyświetlane powiadomienie po to rozszerzenie jest skojarzony z braku odpowiedzi. Visual Studio będzie widoczna powiadomień dotyczące awarii dla tego rozszerzenia i związane z awarii i braku odpowiedzi powiadomienia dla innych rozszerzeń. 
 
-- Wybierz **więcej** do wyświetlania tego tematu pomocy w domyślnej przeglądarce.
+- Wybierz **więcej** przejdzie do tej strony.
 
-- Wybierz **X** przycisk na końcu powiadomień na odrzucenie powiadomienia. Jeśli to samo rozszerzenie jest związany z awarii w przyszłych sesji, ponownie zostanie wyświetlone powiadomienie.
+- Wybierz **X** przycisk na końcu powiadomień na odrzucenie powiadomienia. Nowe powiadomienie będzie wyświetlany dla przyszłych wystąpień rozszerzenia skojarzona z awaria lub brak reakcji interfejsu użytkownika.
 
 > [!NOTE]
-> Powiadomienie o awarii oznacza, że tylko spośród modułów rozszerzenia znajdowała się na stosie dla tej awarii. Nie musi to oznaczać, że rozszerzenie sam spowodował awarię (crash). Istnieje możliwość rozszerzenia wywołuje kod, który wchodzi w skład programu Visual Studio, czy kod spowodował awarię (crash). Jednak powiadomienia nadal może być przydatne w przypadku scenariuszy, które doprowadziło do awarii nie jest dla Ciebie ważne. W takim przypadku wyłączenie rozszerzenia pozwala uniknąć w przyszłości tego samego awarii bez wywierania wpływu na wydajność.
+> Powiadomienie nie odpowiadać lub awarii interfejsu użytkownika oznacza tylko że jeden z modułów rozszerzenia na stosie gdy odpowiadać interfejsu użytkownika lub w przypadku wystąpienia awarii. Nie musi to oznaczać, że rozszerzenie sam był dziedziczonej z istotnymi elementami. Istnieje możliwość, że rozszerzenie o nazwie kodu, który wchodzi w skład programu Visual Studio, co z kolei spowodowało odpowiadać interfejsu użytkownika lub awarii. Jednak powiadomienia nadal mogą być przydatne, jeśli rozszerzenie, które doprowadziły do awarii lub brak reakcji interfejsu użytkownika nie jest dla Ciebie ważne. W takim przypadku wyłączenie rozszerzenia pozwala uniknąć braku odpowiedzi interfejsu użytkownika lub awarii w przyszłości, bez wywierania wpływu na wydajność. 
 
 ## <a name="sample-master-copies-and-working-copies"></a>Przykładowy wzorzec kopii i Praca z kopii
 

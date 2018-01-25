@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Użyj punktów przerwania w debugerze programu Visual Studio
 Można ustawić punktów przerwania, aby zatrzymać wykonanie debugera, prawdopodobnie, aby zobaczyć stan zmiennych kodu lub spojrzeć na stosie wywołań. Są one jednym z najważniejszych metod debugowania w przyborniku dewelopera.  
@@ -160,6 +160,9 @@ Można ustawić punktów przerwania, aby zatrzymać wykonanie debugera, prawdopo
  Jeśli ustawisz warunku punktu przerwania z nieprawidłową składnią, zostanie wyświetlony komunikat ostrzegawczy. Jeśli określisz warunku punktu przerwania z prawidłowej składni, ale nieprawidłowej semantyce, pojawi się ostrzeżenie punkt przerwania zostaje trafiony po raz pierwszy. W obu przypadkach debuger dzieli wykonywania, gdy nieprawidłowy punkt przerwania zostaje trafiony. Punkt przerwania zostanie pominięty, tylko wtedy, gdy warunek jest prawidłowa i daje w wyniku `false`.  
   
  Warunek może być prawidłowym wyrażeniem, który jest rozpoznawany przez debuger. Aby uzyskać więcej informacji na temat prawidłowe wyrażenia, zobacz [wyrażeń w debugerze](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Można użyć **klawisze CTRL + Enter** zamknąć **ustawienia punktów przerwania** okna.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Używanie wartości identyfikatorów obiektów w warunków punktu przerwania (C# i F #)  
  Istnieją momenty, gdy chcesz obserwować zachowanie określonego obiektu; na przykład możesz dowiedzieć się, dlaczego obiektu dodano więcej niż raz w kolekcji. W języku C# i F # można utworzyć obiektu identyfikatory określone wystąpienia [typy referencyjne](/dotnet/csharp/language-reference/keywords/reference-types) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i skojarzone z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
@@ -232,20 +235,6 @@ Można ustawić punktów przerwania, aby zatrzymać wykonanie debugera, prawdopo
 ## <a name="export-and-import-breakpoints"></a>Funkcje eksportu i importu punkty przerwania  
  Punkt przerwania można wyeksportować do pliku XML, prawym przyciskiem myszy punkt przerwania i wybierając **wyeksportować**. Plik jest zapisywany w katalogu rozwiązania domyślnie. Aby zaimportować punktów przerwania, otwórz **punktów przerwania** okna (**CTRL + ALT + B**) i na pasku narzędzi kliknij przycisk strzałki w prawo (element tooltip jest **Importuj punkty przerwania z pliku**) .  
   
-## <a name="troubleshoot"></a>Rozwiązywanie problemów z punktów przerwania 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po usunięciu punktu przerwania, ale można kontynuować trafień go podczas uruchamiania debugowania ponownie  
- Jeśli punkt przerwania został usunięty podczas debugowania, w niektórych przypadkach można napotkać punkt przerwania ponownie przy następnym uruchomieniu debugowania. Aby zatrzymać naciśnięcie tego punktu przerwania, sprawdź, czy wszystkie wystąpienia punktu przerwania są usuwane z **punktów przerwania** okna.  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Debuger nie może zlokalizować poprawna wersja pliku źródłowego dla punktu przerwania  
- Jeśli plik źródłowy zmienił i źródła nie jest już zgodny z kodem, debugowana, debuger może zlokalizować pliku źródłowego, który odpowiada punkt przerwania, nawet jeśli plik źródłowy istnieje.  
-  
-1.  Jeśli chcesz, aby wyświetlić kod źródłowy, który nie pasuje do wersji Visual Studio debugowania, wybierz **Debuguj > Opcje i ustawienia**. Na **debugowanie/ogólne** wyczyść **wymaga plików źródłowych odpowiadających dokładnie oryginalnej wersji** opcji.  
-  
-2.  Może także powiązać punktu przerwania w pliku źródłowym. Wybierz punkt przerwania, a **warunki** w menu kontekstowym. Sprawdź **Zezwalaj kod źródłowy różni się od oryginału** w **ustawienia punktów przerwania** okna.  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Punkty przerwania nie działają w bibliotece DLL  
- Nie można ustawić punktu przerwania w pliku źródłowym, gdy debuger nie została jeszcze załadowana informacji debugowania dla modułu którym znajduje się kod. Objawy mogą obejmować takie jak wiadomości **punkt przerwania nie zostanie ustawiona,**. Symbol punktu przerwania ostrzeżenie pojawia się w lokalizacji punktu przerwania. Jednak te punkty przerwania ostrzeżenie stają się rzeczywista punktów przerwania po załadowaniu kod. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Zobacz też  
- [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
+[Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+[Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
