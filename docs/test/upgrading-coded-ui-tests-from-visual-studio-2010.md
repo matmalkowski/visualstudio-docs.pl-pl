@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
 Testowanie projektów zawierających kodowane testy interfejsu użytkownika, które zostały utworzone w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 dyskretnie naprawy po otwarciu w programie Visual Studio 2012 lub nowszym. Projekty testowe zaznaczenie do kontroli źródła plików projektu są wyewidencjonowane dla tej naprawy. Po naprawieniu te testowanie projektów zawierających kodowane może testy interfejsu użytkownika, a następnie można użyć zarówno [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] z dodatkiem SP1 i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +25,7 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowanego testu interfejsu użytkownika, zostanie on utworzony typ projektu testowego kodowanego interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [uaktualniania testów z wcześniejszych wersji programu Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> Visual Studio zawiera więcej niż jeden typ projektu testowego. Jeśli tworzysz nowy kodowanego testu interfejsu użytkownika, zostanie on utworzony typ projektu testowego kodowanego interfejsu użytkownika.
   
 > [!WARNING]
 >  [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]Projekty testowe, które zawierają kodowane testy interfejsu użytkownika musi zostać również przebudowany po otwarciu projektu testu w [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] lub [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] side-by-side z [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -46,7 +46,7 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 |Nowy kod interfejsu użytkownika testowania interfejsów API zostały dodane w[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]|**Kompilacja zakończy się niepowodzeniem.**<br /><br /> Jeśli utworzysz kodowanych testów interfejsu użytkownika przy użyciu nowego interfejsu użytkownika testowania interfejsu API w [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], nie można otworzyć te projekty w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].|Przy użyciu interfejsu API nowe projekty powinny być zarządzane w [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tylko.|  
 |W [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], odwołania zostały dodane wewnątrz instrukcji 'Wybierz' w pliku csproj. W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], jest używany plik celów opinie do zawierają odwołania kodowanego interfejsu użytkownika zestawu testowego.|W [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], kodowanego testu interfejsu użytkownika nie można dodać do projektu testowego utworzone w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] (lub z dodatkiem SP1) nie zawiera kodowanego testu interfejsu użytkownika.<br /><br /> Proces naprawy dodaje plik elementów docelowych i wybierz instrukcji. Jeśli kodowanego testu interfejsu użytkownika nie jest w projekcie testowym projektu jest oznaczony jako naprawić i odpowiednie odwołania nie zostaną dodane przy dodawaniu kodowanego testu interfejsu użytkownika w [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|Musisz utworzyć nowy projekt testowy za pomocą tego samego rozwiązania [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] i dodać nowe kodowanego testu interfejsu użytkownika. Alternatywnie kodowanych testów interfejsu użytkownika można dodać do projektu testu w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] z dodatkiem SP1 i otworzyć projekt który w [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|  
   
-##  <a name="UpgradingCodedUIFromVS2010_Update"></a>Visual Studio 2010 z dodatkiem SP1 Update  
+##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 Update  
  Aktualizacja [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z dodatkiem SP1 i obsługa zgodności dla programu Visual Studio 2012 lub nowszego i systemu Windows 8 lub nowszy, jest dostępny do pobrania na [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=34677) i zaktualizuj również co program Visual Studio.  
   
  Po zainstalowaniu aktualizacji, następujące [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] zwiększona funkcji narzędzia w kodowanego testu interfejsu użytkownika dla systemu Windows 8 z dodatkiem SP1:  
@@ -66,6 +66,5 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
 ## <a name="see-also"></a>Zobacz także
 
 [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Aktualizowanie testów z wcześniejszych wersji programu Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)  
 [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

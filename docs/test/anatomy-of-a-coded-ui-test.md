@@ -8,17 +8,18 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 928caef1cdad112e794bd7ac9317d8f8dbf03117
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c449c0e23fa3effa693059ed6d0b6c4a61b8470c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
+
 Podczas tworzenia kodowanego testu interfejsu użytkownika w projekcie kodowanego testu interfejsu użytkownika kilka pliki zostaną dodane do rozwiązania. W tym temacie użyjemy przykład kodowany Test interfejsu użytkownika do eksplorowania tych plików.  
   
  **Wymagania**  
@@ -35,7 +36,7 @@ Podczas tworzenia kodowanego testu interfejsu użytkownika w projekcie kodowaneg
 |[CodedUITest1.cs](#CodedUITestCS)|[Klasa CodedUITest1](#CodedUITestCS)<br /><br /> [Metody](#CodedUITestMethods)<br /><br /> [Właściwości](#CodedUITestProperties)|Tak|  
 |[UIMap.uitest](#UIMapuitest)|Mapa XML interfejsu użytkownika dla testu.|Nie|  
   
-###  <a name="UIMapDesignerFile"></a>UIMap.Designer.cs  
+###  <a name="UIMapDesignerFile"></a> UIMap.Designer.cs  
  Ten plik zawiera kod, który jest automatycznie tworzony przez **konstruktora testu kodowanego interfejsu użytkownika** po utworzeniu testu. Ten plik ponownie jest tworzony zawsze zmienia testu, dzięki czemu nie jest plik, w którym można dodać lub zmodyfikować kod.  
   
 #### <a name="declarations-section"></a>Sekcja deklaracji  
@@ -62,25 +63,25 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 ####  <a name="UIMapClass"></a>Klasa UIMap  
  W następnej sekcji pliku jest <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy.  
   
-```  
+```csharp
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]  
 public partial class UIMap  
-```  
+```
   
- Kod klasy rozpoczyna się od <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> do klasy, która jest zadeklarowany jako częściowy klasy zastosowano. Można zauważyć, że atrybut jest również zastosowane do każdej klasy w tym pliku. Plik, który może zawierać więcej kodu dla tej klasy jest `UIMap.cs`, która została omówiona później.  
-  
- Wygenerowany `UIMap` klasy zawiera kod dla każdej metody, która została określona podczas testu została zarejestrowana.  
-  
-```  
+Kod klasy rozpoczyna się od <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> do klasy, która jest zadeklarowany jako częściowy klasy zastosowano. Można zauważyć, że atrybut jest również zastosowane do każdej klasy w tym pliku. Plik, który może zawierać więcej kodu dla tej klasy jest `UIMap.cs`, która została omówiona później.  
+
+Wygenerowany `UIMap` klasy zawiera kod dla każdej metody, która została określona podczas testu została zarejestrowana.  
+
+```csharp
 public void LaunchCalculator()  
 public void AddItems()  
 public void VerifyTotal()  
 public void CleanUp()  
-```  
-  
- Ta część <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasa zawiera także wygenerowany kod dla każdej właściwości, który jest wymagany przez metody.  
-  
-```  
+```
+
+Ta część <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasa zawiera także wygenerowany kod dla każdej właściwości, który jest wymagany przez metody.
+
+```csharp
 public virtual LaunchCalculatorParams LaunchCalculatorParams  
 public virtual AddItemsParams AddItemsParams  
 public virtual VerifyTotalExpectedValues VerifyTotalExpectedValues  
@@ -92,12 +93,12 @@ public UIRunWindow UIRunWindow
 public UICalculatorWindow UICalculatorWindow  
 public UIStartWindow UIStartWindow  
 public UIMathApplicationWindow UIMathApplicationWindow  
-```  
+```
   
 #####  <a name="UIMapMethods"></a>Metody do UIMap  
- Każda metoda ma podobną strukturę `AddItems()` metody. To jest szczegółowo w kodem, które są prezentowane wraz z podziały wierszy można dodać przejrzystości.  
-  
-```  
+ Każda metoda ma podobną strukturę `AddItems()` metody. To jest szczegółowo w kodem, które są prezentowane wraz z podziały wierszy można dodać przejrzystości.
+
+```csharp
 /// <summary>  
 /// AddItems - Use 'AddItemsParams' to pass parameters into this method.  
 /// </summary>  
@@ -119,10 +120,10 @@ public void AddItems()
     Keyboard.SendKeys(uIItemEdit,   
         this.AddItemsParams.UIItemEditSendKeys,   
         ModifierKeys.None);  
-}  
-```  
-  
- Podsumowanie komentarz dla każdej definicji metody informuje która klasa na potrzeby wartości parametrów dla tej metody. W takim przypadku jest `AddItemsParams` klasy, która jest zdefiniowana później w `UIMap.cs` plików i która jest również typ wartości, który jest zwracany przez `AddItemsParams` właściwości.  
+}
+```
+
+Podsumowanie komentarz dla każdej definicji metody informuje która klasa na potrzeby wartości parametrów dla tej metody. W takim przypadku jest `AddItemsParams` klasy, która jest zdefiniowana później w `UIMap.cs` plików i która jest również typ wartości, który jest zwracany przez `AddItemsParams` właściwości.  
   
  W górnej części metody kod jest `Variable Declarations` obiekty regionu, który definiuje zmienne lokalne interfejsu użytkownika, który będzie używany przez metodę.  
   
@@ -131,20 +132,20 @@ public void AddItems()
  Następnie są wiersze, które wysyłanie tekstu z klawiatury do Kalkulatora aplikacji przy użyciu właściwości `AddItemsParams` obiektu.  
   
  `VerifyTotal()` Metoda ma bardzo podobne strukturę i zawiera następujący kod potwierdzenia.  
-  
-```  
+
+```csharp
 // Verify that 'Unknown Name' text box's property 'Text' equals '9. '  
 Assert.AreEqual(  
     this.VerifyTotalExpectedValues.UIItemEditText,   
     uIItemEdit.Text);  
-```  
-  
+```
+
  Nazwa pola tekstowego jest wymienione jako nieznane, ponieważ Deweloper aplikacji Kalkulator systemu Windows nie dostarczył nazwę publicznie dostępnych dla formantu. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> Metody zakończy się niepowodzeniem, gdy rzeczywista wartość nie jest równa oczekiwanej wartości, które mogłyby spowodować niepowodzenie testu. Także zauważyć, że wartość oczekiwana zawiera dziesiętnym, w którym następuje spacja. Jeśli masz jakikolwiek modyfikowanie funkcji wdrażanych tego konkretnego testu, musisz zezwolić na dla tego punktu dziesiętnego i miejsce.  
   
 #####  <a name="UIMapProperties"></a>Właściwości UIMap  
  Kod dla każdej właściwości jest również bardzo standardowe w klasie. Poniższy kod dla `AddItemsParams` właściwość jest używana w `AddItems()` metody.  
   
-```  
+```csharp
 public virtual AddItemsParams AddItemsParams  
 {  
     get  
@@ -155,14 +156,14 @@ public virtual AddItemsParams AddItemsParams
         }  
         return this.mAddItemsParams;  
     }  
-}  
-```  
-  
+}
+```
+
  Powiadomienie, że właściwość używa prywatnego zmiennej lokalnej o nazwie `mAddItemsParams` do przechowywania wartości przed zwraca go. Nazwa właściwości i nazwa klasy dla obiekt, który zwraca są takie same. Klasa jest zdefiniowana później w `UIMap.cs` pliku.  
   
  Każda klasa, która jest zwracana przez właściwość jest strukturę podobną. Poniżej przedstawiono `AddItemsParams` klasy.  
-  
-```  
+
+```csharp
 /// <summary>  
 /// Parameters to be passed into 'AddItems'  
 /// </summary>  
@@ -180,12 +181,12 @@ public class AddItemsParams
     /// </summary>  
     public string UIItemEditSendKeys = "{Add}{NumPad2}{Enter}";  
     #endregion  
-}  
-```  
-  
- W przypadku wszystkich klas `UIMap.cs` pliku, ta klasa rozpoczyna się od <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. W tej klasie małych jest `Fields` region, który definiuje ciągi do użycia jako parametry <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> metodę, która jest używana w `UIMap.AddItems()` metodę, która została omówiona wcześniej. Można napisać kod, aby zastąpić wartości w polach ciąg przed wywołaniem metody, w którym są używane te parametry.  
-  
-###  <a name="UIMapCS"></a>UIMap.cs  
+}
+```
+
+W przypadku wszystkich klas `UIMap.cs` pliku, ta klasa rozpoczyna się od <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. W tej klasie małych jest `Fields` region, który definiuje ciągi do użycia jako parametry <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> metodę, która jest używana w `UIMap.AddItems()` metodę, która została omówiona wcześniej. Można napisać kod, aby zastąpić wartości w polach ciąg przed wywołaniem metody, w którym są używane te parametry.  
+
+###  <a name="UIMapCS"></a> UIMap.cs  
  Domyślnie ten plik zawiera częściowym `UIMap` klasy, która nie ma metody ani właściwości.  
   
 #### <a name="uimap-class"></a>Klasa UIMap  
@@ -196,40 +197,41 @@ public class AddItemsParams
 ###  <a name="CodedUITestCS"></a>CodedUITest1.cs  
  Ten plik został wygenerowany przez **konstruktora testu kodowanego interfejsu użytkownika**, ale nie zostanie ponownie utworzony zawsze zmodyfikowanego testu, dzięki czemu można zmodyfikować kod w tym pliku. Nazwa pliku jest generowany na podstawie nazwy, określony dla testu podczas jego tworzenia.  
   
-#### <a name="codeduitest1-class"></a>Klasa CodedUITest1  
- Domyślnie ten plik zawiera definicję tylko jedną klasę.  
-  
-```  
+#### <a name="codeduitest1-class"></a>Klasa CodedUITest1
+
+Domyślnie ten plik zawiera definicję tylko jedną klasę.
+
+```csharp
 [CodedUITest]  
 public class CodedUITest1  
-```  
-  
- T:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute jest automatycznie stosowane do klasy, która umożliwia testowanie platformę, by go rozpoznać jako rozszerzenia testowania. Także zauważyć, że nie jest klasy częściowej. Cały kod klasy znajduje się w tym pliku.  
+```
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> Jest automatycznie stosowane do klasy, która umożliwia testowanie platformę, by go rozpoznać jako rozszerzenia testowania. Także zauważyć, że nie jest klasy częściowej. Cały kod klasy znajduje się w tym pliku.  
   
 #####  <a name="CodedUITestProperties"></a>Właściwości CodedUITest1  
  Klasa zawiera dwie właściwości domyślne, które znajdują się w dolnej części pliku. Nie należy modyfikować.  
   
-```  
+```csharp
 /// <summary>  
 /// Gets or sets the test context which provides  
 /// information about and functionality for the current test run.  
 ///</summary>  
 public TestContext TestContext  
 public UIMap UIMap  
-```  
+```
   
 #####  <a name="CodedUITestMethods"></a>Metody CodedUITest1  
  Domyślnie klasa zawiera tylko jedna metoda.  
-  
-```  
+
+```csharp
 public void CodedUITestMethod1()  
-```  
-  
+```
+
  Ta metoda wywołuje każdą `UIMap` metody określonej zostały zarejestrowane testu jest opisany w sekcji na [UIMap klasy](#UIMapClass).  
   
  Region, który jest zatytułowany `Additional test attributes`, jeśli odkomentowana, zawiera dwie metody opcjonalne.  
   
-```  
+```csharp
 // Use TestInitialize to run code before running each test   
 [TestInitialize()]  
 public void MyTestInitialize()  
@@ -254,31 +256,32 @@ public void MyTestCleanup()
   
     // You could move this line from the CodedUITestMethod1() method  
     this.UIMap.CloseCalculator();  
-}  
-```  
-  
+}
+```
+
  `MyTestInitialize()` Metoda ma <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> zastosować dla niego, informujące framework testowych, aby wywołać tę metodę przed wszystkie inne metody. Podobnie `MyTestCleanup()` metoda ma <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> zastosować dla niego, która informuje framework testowych, aby wywołać tę metodę po wszystkich innych metod testu zostać wywołany. Korzystanie z tych metod jest opcjonalne. Dla tego testu `UIMap.LaunchCalculator()` metoda może być wywoływana z `MyTestInitialize()` i `UIMap.CloseCalculator()` metoda może być wywoływana z `MyTestCleanup()` zamiast z `CodedUITest1Method1()`.  
   
  Jeśli dodasz więcej metod do tej klasy za pomocą <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>, testowania platforma wywoła każdej metody w ramach testu.  
   
-###  <a name="UIMapuitest"></a>UIMap.uitest  
+###  <a name="UIMapuitest"></a> UIMap.uitest  
  Jest to plik XML, że reprezentuje strukturę kodowanego interfejsu użytkownika testu rejestrowania i jego części. Obejmują one akcje i klasy oprócz tych metod i właściwości tych klas. [UIMap.Designer.cs](#UIMapDesignerFile) plik zawiera kod, który został wygenerowany przez konstruktora kodowanego interfejsu użytkownika, aby odtworzyć struktury testu i udostępnia połączenie do testowania framework.  
   
  `UIMap.uitest` Plik nie jest bezpośrednio można edytować. Jednak można użyć konstruktora kodowanego interfejsu użytkownika można zmodyfikować test, który automatycznie zmienia `UIMap.uitest` pliku i [UIMap.Designer.cs](#UIMapDesignerFile) pliku.  
   
-## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>   
- <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>   
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)   
- [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)   
- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Zobacz także
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>   
+<xref:System.CodeDom.Compiler.GeneratedCodeAttribute>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>   
+[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
+[Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)   
+[Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)   
+[Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)   
+[Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

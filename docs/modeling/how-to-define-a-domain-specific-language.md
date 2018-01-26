@@ -19,27 +19,23 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
-Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania z szablonu. Część klucza rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition.dsl. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodanie do tych elementów, można dodać kod program, aby dostosować DSL bardziej szczegółowo.  
-  
- Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej witrynie: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie Visual Studio z szablonu. Część klucza rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition.dsl. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodanie do tych elementów, można dodać kod program, aby dostosować DSL bardziej szczegółowo.
 
+Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej witrynie: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>Wybieranie rozwiązania szablonu  
  Aby zdefiniować DSL, należy zainstalować następujące składniki:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio wizualizacji i modelowania zestawu SDK||  
 
@@ -47,7 +43,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- Aby utworzyć nowego języka specyficznego dla domeny, należy utworzyć nowy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania przy użyciu szablonu projektu języka specyficznego dla domeny.  
+ Aby utworzyć nowego języka specyficznego dla domeny, trzeba utworzyć nowe rozwiązanie Visual Studio za pomocą szablonu projektu języka specyficznego dla domeny.  
   
 #### <a name="to-create-a-dsl-solution"></a>Tworzenie rozwiązań DSL  
   
@@ -98,17 +94,17 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 ### <a name="test-the-solution"></a>Testowanie rozwiązania  
  Rozwiązanie szablonu zapewnia pracy DSL, które można zmodyfikować lub użyć, ponieważ jest on.  
   
- Aby przetestować rozwiązania, naciśnij klawisz F5 lub CTRL + F5. Nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zostanie otwarty w trybie eksperymentalne.  
+ Aby przetestować rozwiązania, naciśnij klawisz F5 lub CTRL + F5. Otwiera nowe wystąpienie programu Visual Studio w trybie eksperymentalne.  
   
- W nowym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], w Eksploratorze rozwiązań Otwórz przykładowy plik. Spowoduje to otwarcie jako diagram, z przybornika.  
+ W nowym wystąpieniu programu Visual Studio w Eksploratorze rozwiązań Otwórz przykładowy plik. Spowoduje to otwarcie jako diagram, z przybornika.  
   
- Jeśli uruchomienia rozwiązania, które zostały utworzone z **minimalnego języka** szablonu, Twoje eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie wyglądać następująco:  
+ Jeśli uruchomienia rozwiązania, które zostały utworzone z **minimalnego języka** szablonu, eksperymentalne Visual Studio będzie podobne do następujących:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  Poeksperymentuj z narzędzia. Tworzenie elementów, a następnie łącząc je.  
   
- Zamknij eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Zamknij eksperymentalne wystąpienie programu Visual Studio.  
   
 > [!NOTE]
 >  Nie można wyświetlić kształty na przykład przetestować plik, modyfikacji DSL. Jednak można utworzyć nowych elementów.  
@@ -173,7 +169,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 |Sposób wyświetlania elementu|Klasy nadrzędnej (osadzanie)|Przykład DSL szablon rozwiązania|  
 |------------------------------|--------------------------------|--------------------------------------|  
-|Kształt na diagramie.<br /><br /> Tor.|Klasy głównym DSL.|Minimalny języka.<br /><br /> Przepływ zadań: Klasa aktora.|  
+|Kształt na diagramie.<br /><br /> Swimlane.|Klasy głównym DSL.|Minimalny języka.<br /><br /> Przepływ zadań: Klasa aktora.|  
 |Kształt w tor.|Klasa domeny elementów, które są wyświetlane jako ścieżek.|Przepływ zadań: Klasa zadań.|  
 |Element na liście kształtu, gdy element zostanie usunięty po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowany na kształt kontenera.|Diagram klas: atrybut klasy.<br /><br /> Diagram składnika: Port klasy.|  
 |Element na liście, nie zostanie usunięta po usunięciu kontenera.|Klasy głównym DSL.<br /><br /> Na liście zostaną wyświetlone linki odwołań.||  
@@ -217,11 +213,11 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 ##### <a name="to-test-the-new-domain-classes"></a>Aby przetestować nowe klasy domeny  
   
-1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań do generowania kodu DSL projektanta. Ten krok można zautomatyzować. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań do generowania kodu DSL projektanta. Ten krok można zautomatyzować. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
-2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w trybie eksperymentalne. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
+2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie eksperymentalne. W eksperymentalnym wystąpieniu programu Visual Studio otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
   
-3.  **Otwórz Eksploratora.** Na stronie diagramu jest okno Eksploratora język, jest zazwyczaj o nazwie *YourLanguage* Explorer. Jeśli nie ma tego okna, może być na karcie poniżej Eksploratora rozwiązań. Jeśli nie możesz znaleźć, na **widoku** menu wskaż **inne okna**, a następnie kliknij przycisk * YourLanguage ***Explorer**.  
+3.  **Otwórz Eksploratora.** Na stronie diagramu jest okno Eksploratora język, jest zazwyczaj o nazwie *YourLanguage* Explorer. Jeśli nie ma tego okna, może być na karcie poniżej Eksploratora rozwiązań. Jeśli nie możesz znaleźć, na **widoku** menu wskaż **inne okna**, a następnie kliknij przycisk *YourLanguage* **Explorer**.  
   
      Twoje explorer przedstawia widok drzewa modelu.  
   
@@ -317,7 +313,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań do generowania kodu DSL projektanta.  
   
-2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w trybie eksperymentalne. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
+2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie eksperymentalne. W eksperymentalnym wystąpieniu programu Visual Studio otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
   
 3.  **Sprawdź, czy element narzędzia są wyświetlane w przyborniku.**  
   
@@ -393,7 +389,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań do generowania kodu DSL projektanta.  
   
-2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w trybie eksperymentalne. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
+2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie eksperymentalne. W eksperymentalnym wystąpieniu programu Visual Studio otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
   
 3.  **Sprawdź, czy narzędzie połączenia jest wyświetlany w przyborniku.**  
   
@@ -494,7 +490,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań do generowania kodu DSL projektanta.  
   
-2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w trybie eksperymentalne. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
+2.  **Tworzenie i uruchamianie DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie eksperymentalne. W eksperymentalnym wystąpieniu programu Visual Studio otwarcia lub utworzenia pliku, który ma rozszerzenie nazwy pliku z DSL.  
   
 3.  **Sprawdź, czy narzędzie znajduje się w przyborniku.**  
   
@@ -623,12 +619,10 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 |W Eksploratorze dla moich DSL elementy są wyświetlane tylko w przypadku ich nazwy typu.|W definicji DSL, wybierz właściwość domeny klasy i w oknie właściwości ustaw **jest nazwa elementu** na wartość true.|  
 |Moje DSL zawsze zostanie otwarty w edytorze XML.|Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak nawet po rozwiązaniu tego błędu, należy jawnie zresetować można z projektantem DSL w edytorze.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz * YourLanguage ***Designer (ustawienie domyślne)**.|  
 |Przybornika Moje DSL nie jest wyświetlany po zmianie nazwy zestawu.|Przejrzyj i zaktualizuj **DslPackage\GeneratedCode\Package.tt** uzyskać więcej informacji, zobacz [porady: zmiana Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|Nie ma przybornika Moje DSL, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawi się komunikat raportowania nie można załadować rozszerzenia.|Zresetuj eksperymentalne wystąpienie i skompiluj ponownie rozwiązanie.<br /><br /> 1.  W oknie menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio eksperymentalne wystąpienie programu**.<br />2.  Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**.|  
+|Nie ma przybornika Moje DSL, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawi się komunikat raportowania nie można załadować rozszerzenia.|Zresetuj eksperymentalne wystąpienie i skompiluj ponownie rozwiązanie.<br /><br /> 1.  W oknie menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio eksperymentalne wystąpienie programu**.<br />2.  W programie Visual Studio**kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wprowadzenie do korzystania z języków specyficznego dla domeny](../modeling/getting-started-with-domain-specific-languages.md)   
  [Tworzenie języka specyficznego dla domeny na podstawie formularzy systemu Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

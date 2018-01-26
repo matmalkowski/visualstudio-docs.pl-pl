@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7578426058c5e41bb6507c044be411348c42d050
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
 Można migrować projektów, które definiowanie i korzystanie z języka specyficznego dla domeny na potrzeby [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z wersji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dostarczone z [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -23,7 +23,7 @@ Można migrować projektów, które definiowanie i korzystanie z języka specyfi
   
  Należy uruchomić narzędzie do migracji jawnie: go nie jest uruchamiane automatycznie po otwarciu rozwiązania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Narzędzia i dokument szczegółowe wskazówki można znaleźć na tej ścieżce:  
   
- **% Program Files%\Microsoft programu Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Przed przeprowadzeniem migracji projektów DSL  
  Narzędzie do migracji modyfikuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pliki projektu (**.csproj**) i pliki rozwiązania (**.sln**).  
@@ -42,7 +42,7 @@ Można migrować projektów, które definiowanie i korzystanie z języka specyfi
   
     -   Kliknij dwukrotnie pozycję Narzędzia w Eksploratorze Windows (lub Eksploratora plików) lub uruchom narzędzie z wiersza polecenia. Narzędzie znajduje się w tej lokalizacji:  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Wybierz folder, który zawiera rozwiązania i projekty, które ma zostać przekonwertowany.  
   
@@ -76,7 +76,7 @@ Można migrować projektów, które definiowanie i korzystanie z języka specyfi
     2.  Kliknij przycisk **Przekształć wszystkie szablony** przycisku w nagłówku Eksploratora rozwiązań.  
   
         > [!NOTE]
-        >  Ten krok można wykonać niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+        >  Ten krok można wykonać niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6.  Zaktualizuj niestandardowego kodu w projektach przekonwertowany.  
   

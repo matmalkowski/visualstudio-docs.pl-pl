@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 2302c2bbfbd38ff307335b525aa319afb5f07e25
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0cb316475748033bb020a2f3065f9492a5a201ed
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 Edytor kodowanego testu interfejsu użytkownika pozwala łatwo zmodyfikować kodowanych testów interfejsu użytkownika. Za pomocą edytora testu interfejsu użytkownika na stałe, można znaleźć, Wyświetl i Edytuj właściwości metody testowe i działania interfejsu użytkownika. Ponadto można użyć mapy formantów interfejsu użytkownika do wyświetlania i edytowania ich kontroli.  
@@ -63,7 +63,7 @@ Edytor kodowanego testu interfejsu użytkownika pozwala łatwo zmodyfikować kod
 >  Po wybraniu akcji interfejsu użytkownika, który znajduje się w metodzie w **akcji UI** okienku odpowiedniego formantu zostanie wyróżniona. Można również zmodyfikować właściwości formantów lub akcji interfejsu użytkownika.  
   
  *Nie widzę* edytora kodowanego testu interfejsu użytkownika.  
- Być może używasz wersji programu Visual Studio Enterprise przed 2012. Edytor kodowanego testu interfejsu użytkownika została ona również dostępna w programie Visual Studio 2010 funkcji dodatkiem Service Pack 2 z subskrypcją MSDN. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Microsoft Visual Studio 2010 funkcji dodatkiem Service Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
+ Być może używasz wersji programu Visual Studio Enterprise przed 2012. Edytor kodowanego testu interfejsu użytkownika została ona również dostępna w programie Visual Studio 2010 funkcji dodatkiem Service Pack 2 z subskrypcją MSDN. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
   
 ##  <a name="CodedUITestEditor_EditActionAndControlProperties"></a>Modyfikowanie właściwości akcji UI oraz ich odpowiednich właściwości formantu  
  Za pomocą edytora testu interfejsu użytkownika na stałe, możesz szybko znaleźć i wyświetlić wszystkich akcji interfejsu użytkownika na metody testu. Po wybraniu akcji interfejsu użytkownika w edytorze, automatycznie zostanie wyróżniona odpowiedniego formantu. Podobnie w przypadku wybrania formantu są wyróżnione skojarzonych z nimi działań interfejsu użytkownika. Po wybraniu akcji interfejsu użytkownika lub formantu, następnie jest łatwe w użyciu okna właściwości, aby zmodyfikować właściwości, które odpowiadają z nim.  
@@ -216,6 +216,6 @@ Edytowanie właściwości formantu
 ## <a name="see-also"></a>Zobacz także
 
 [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)  
-[Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)  
+[Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)  
 [Tworzenie kodowanego testu interfejsu użytkownika opartego na danych](../test/creating-a-data-driven-coded-ui-test.md)  
 [Przewodnik: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

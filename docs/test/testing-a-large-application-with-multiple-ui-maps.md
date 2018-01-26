@@ -10,24 +10,25 @@ ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: ca9114dfe601f523878749593a213b36465bd0a7
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c2eff9fc8e8aedecb1fd9b99538fa600dbcc5eb1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map UI
+
 W tym temacie omówiono sposób użycia kodowane testy interfejsu użytkownika, gdy są testowanie dużej aplikacji przy użyciu wielu map UI.  
   
  **Wymagania**  
   
 -   Visual Studio Enterprise  
   
- Podczas tworzenia nowego kodowanego testu interfejsu użytkownika, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] framework testowania generuje kod dla testu domyślnie w <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy. Aby uzyskać więcej informacji o sposobie rejestrowania kodowanych testów interfejsu użytkownika, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) i [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).  
+ Podczas tworzenia nowego kodowanego testu interfejsu użytkownika framework testowania programu Visual Studio generuje kod dla testu domyślnie w <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> klasy. Aby uzyskać więcej informacji o sposobie rejestrowania kodowanych testów interfejsu użytkownika, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) i [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).  
   
  Wygenerowany kod dla mapy interfejsu użytkownika zawiera klasę dla każdego obiektu, który test współdziała z. Dla każdej wygenerowane metody klasę pomocnika dla parametrów metod jest generowany dla tej metody. W przypadku dużej liczby obiektów, stron i formularzy i formantów w aplikacji może zwiększyć się bardzo dużych mapy interfejsu użytkownika. Ponadto jeśli wiele osób pracuje testy, aplikacji staje się niewygodna z jednego dużego pliku mapy interfejsu użytkownika.  
   
@@ -67,24 +68,25 @@ W tym temacie omówiono sposób użycia kodowane testy interfejsu użytkownika, 
   
 4.  Wybierz **dodać**.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Minimalizuje okno i **konstruktora kodowanego testu interfejsu użytkownika** zostanie wyświetlone okno dialogowe.  
+     Zmniejsza okno programu Visual Studio i **konstruktora kodowanego testu interfejsu użytkownika** zostanie wyświetlone okno dialogowe.  
   
 5.  Rejestruj akcje pierwsza metoda i wybierz **Generuj kod**.  
   
 6.  Zamknij po rejestrowane wszystkie akcje i potwierdzenia do pierwszej strony lub składnika i grupować je w metodach **konstruktora kodowanego testu interfejsu użytkownika** okno dialogowe.  
   
 7.  Kontynuuj tworzenie map UI. Rejestruje akcje i potwierdzeń, grupować w metody dla każdego składnika, a następnie wygeneruj kod.  
-  
- W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stała dla kreatorów, formularzy i strony. Mimo że każda mapy interfejsu użytkownika ma klasę okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odnoszące się do tego samego okno najwyższego poziomu w ramach wszystkich składników aplikacji Uruchom. Kodowanego interfejsu użytkownika testy wyszukiwania dla formantów hierarchicznie od góry do dołu, począwszy od okien najwyższego poziomu, więc w aplikacji złożonych, okno rzeczywistych najwyższego poziomu można zduplikowany w każdym mapy interfejsu użytkownika. Jeśli okno rzeczywistych najwyższego poziomu jest zduplikowany, wprowadzanie wielu modyfikacji spowoduje, że w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością, podczas przełączania się między mapy interfejsu użytkownika.  
-  
- Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody w celu zapewnienia, że nowe okno najwyższego poziomu w tym mapy interfejsu użytkownika jest taka sama jak główne okno najwyższego poziomu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład jest częścią klasy narzędzia, która zapewnia dostęp do poszczególnych składników oraz ich formanty podrzędne, które są reprezentowane przez klasy generowane w różnych mapy interfejsu użytkownika.  
-  
- Na przykład aplikacja sieci Web o nazwie `Contoso` strony głównej, strony produktu i stronę koszyka zakupów. Każdy z tych stron udostępnianie typowych okno najwyższego poziomu czyli okna przeglądarki. Brak mapy interfejsu użytkownika dla każdej strony i klasa narzędzie ma podobny do następującego kodu:  
-  
-```  
+
+ W wielu przypadkach okno najwyższego poziomu aplikacji pozostaje stała dla kreatorów, formularzy i strony. Mimo że każda mapy interfejsu użytkownika ma klasę okna najwyższego poziomu, wszystkie mapy są prawdopodobnie odnoszące się do tego samego okno najwyższego poziomu w ramach wszystkich składników aplikacji Uruchom. Kodowanego interfejsu użytkownika testy wyszukiwania dla formantów hierarchicznie od góry do dołu, począwszy od okien najwyższego poziomu, więc w aplikacji złożonych, okno rzeczywistych najwyższego poziomu można zduplikowany w każdym mapy interfejsu użytkownika. Jeśli okno rzeczywistych najwyższego poziomu jest zduplikowany, wprowadzanie wielu modyfikacji spowoduje, że w przypadku zmiany tego okna. Może to spowodować problemy z wydajnością, podczas przełączania się między mapy interfejsu użytkownika.
+
+ Aby zminimalizować ten efekt, można użyć `CopyFrom()` metody, aby upewnić się, że nowe okno najwyższego poziomu w tym mapy interfejsu użytkownika jest taka sama jak okno główne najwyższego poziomu.
+
+## <a name="example"></a>Przykład
+
+Poniższy przykład jest częścią klasy narzędzia, która zapewnia dostęp do poszczególnych składników oraz ich formanty podrzędne, które są reprezentowane przez klasy generowane w różnych mapy interfejsu użytkownika.
+
+Na przykład aplikacja sieci Web o nazwie `Contoso` strony głównej, strony produktu i stronę koszyka zakupów. Każdy z tych stron udostępnianie typowych okno najwyższego poziomu czyli okna przeglądarki. Brak mapy interfejsu użytkownika dla każdej strony i klasa narzędzie ma podobny do następującego kodu:
+
+```csharp
 using ContosoProject.UIMaps;  
 using ContosoProject.UIMaps.HomePageClasses;  
 using ContosoProject.UIMaps.ProductPageClasses;  
@@ -135,12 +137,13 @@ namespace ContosoProject
     // Continue to create properties for each page, getting the   
     // page object from the corresponding UI Map and copying the   
     // top level window properties from the Home Page.  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)
+}
+```
+
+## <a name="see-also"></a>Zobacz także
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>  
+<xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>  
+[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)  
+[Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)  
+[Anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md)

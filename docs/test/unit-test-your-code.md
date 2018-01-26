@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: bafabb6755a5d3c8cf8f2b60b67a9dc0d7af9792
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-test-your-code"></a>Testowanie jednostek kodu
 Testy jednostkowe zapewniają deweloperów i testerów szybko wyszukać błędy logikę w metod klas w [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], i [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] projektów.  
@@ -43,14 +43,14 @@ Testy jednostkowe zapewniają deweloperów i testerów szybko wyszukać błędy 
   
 |Zadania|Skojarzone tematy|  
 |-----------|-----------------------|  
-|**Szybki Start i wskazówki:** Użyj następujących tematach, aby dowiedzieć się testowania w programie Visual Studio z przykładów kodu jednostek.|-   [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Szybki Start: Test programowanie sterowane za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [Testowanie kodu natywnego za pomocą narzędzia Eksplorator testów jednostkowych](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
-|**Testy jednostkowe za pomocą narzędzia Eksplorator testów:** Dowiedz się, jak narzędzia Eksplorator testów mogą pomóc tworzyć bardziej wydajnie i efektywnie testów jednostkowych.|-   [Teście jednostkowym](../test/unit-test-basics.md)<br />-   [Tworzenie projektu testu jednostki](../test/create-a-unit-test-project.md)<br />-   [Uruchom testy jednostkowe za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)<br />-   [Uaktualnianie z programu Visual Studio 2010 testy jednostkowe](http://msdn.microsoft.com/en-us/9bb75856-f68a-4de2-a084-b08a947a1172)|  
+|**Szybki Start i wskazówki:** Użyj następujących tematach, aby dowiedzieć się testowania w programie Visual Studio z przykładów kodu jednostek.|-   [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Szybki Start: Test programowanie sterowane za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|  
+|**Testy jednostkowe za pomocą narzędzia Eksplorator testów:** Dowiedz się, jak narzędzia Eksplorator testów mogą pomóc tworzyć bardziej wydajnie i efektywnie testów jednostkowych.|-   [Teście jednostkowym](../test/unit-test-basics.md)<br />-   [Tworzenie projektu testu jednostki](../test/create-a-unit-test-project.md)<br />-   [Uruchom testy jednostkowe za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)<br />-   [Uaktualnianie kodowanego testu interfejsu użytkownika z Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)|  
 |**Testy jednostkowe kodu zarządzanego:**|-   [Pisanie testów jednostkowych dla .NET Framework za pomocą Frameworka testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|  
 |**Kod w języku C++ testy jednostkowe**|-   [Pisanie testów jednostkowych dla C/C++ Framework testów jednostkowych Microsoft dla języka C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|  
 |**Izolowanie testów jednostkowych**|-   [Izolowanie testowanego pomocą struktury Microsoft Fakes kodu](../test/isolating-code-under-test-with-microsoft-fakes.md)|  
 |**Umożliwia określenie, jaka część kodu projektu jest testowana przy użyciu testów jednostkowych pokrycia kodu:** więcej informacji na temat funkcji pokrycia kodu [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] narzędzia do testowania.|-   [Korzystanie z pokrycia kodu do określenia, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
-|**Wykonywać analizy wydajności i obciążenia za pomocą testów obciążenia dla testów jednostkowych:** można tworzyć testu obciążenia i Dodaj testy jednostkowe do niej zdiagnozować wydajności i podkreślają problemy w aplikacji. **Uwaga:** tworzenie i używanie testów obciążenia wymaga programu Visual Studio Enterprise.|-   [Tworzenie i edytowanie testów obciążenia](http://msdn.microsoft.com/en-us/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Porady: Dodawanie testów wydajności sieci Web i testów jednostkowych do scenariusza testu obciążenia](http://msdn.microsoft.com/en-us/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Porady: usuwanie testów sieci Web i testów jednostkowych z scenariusza testu obciążenia](http://msdn.microsoft.com/en-us/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
-|**Określają i wymuszają bramki jakości:** można utworzyć bramki jakości do wymuszania, że testy są uruchamiane przed kodu zostanie zaznaczona w celu zapewnienia jakości kodu.|-   [Określają i wymuszają bramki jakości](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Wykonywać analizy wydajności i obciążenia za pomocą testów obciążenia dla testów jednostkowych:** można tworzyć testu obciążenia i Dodaj testy jednostkowe do niej zdiagnozować wydajności i podkreślają problemy w aplikacji.|-   [Obciążenia testowania (VSTS i TFS)](/vsts/load-test/)|  
+|**Określają i wymuszają bramki jakości:** można utworzyć bramki jakości do wymuszania, że testy są uruchamiane przed kodu jest zaewidencjonowany, aby pomóc w zapewnieniu jakości kodu.|-   [Określają i wymuszają bramki jakości](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Rozszerzanie jednostki typu testowego:** funkcji można dodawać do testów, które mogą nie być w ramach testów jednostkowych. Na przykład można dodać właściwość testu, która określa, czy test powinien być uruchomiony w kontekście zwykłego użytkownika. Można również rozszerzyć środowisko o dodanie atrybutów wiersza do metody i użyć danych w tym wierszu wewnątrz testu.|Przykładowy kod jak rozszerzyć jednostki struktury testowej, można znaleźć w następującej [witrynę sieci Web](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Ustawianie opcji testowania:** na przykład określić, gdzie są przechowywane wyniki testu.|[Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
@@ -67,7 +67,7 @@ Testy jednostkowe zapewniają deweloperów i testerów szybko wyszukać błędy 
  [Channel 9: Testowanie aplikacji platformy uniwersalnej systemu Windows utworzony przy użyciu języka XAML jednostkowe](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Fora  
- [Testy jednostkowe programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
+ [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="guidance"></a>Wskazówki  
  [Testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 2: testy jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)  

@@ -13,13 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 495e226a16e94dbe87584c54fa317ccb0ab84482
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
+
 Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb użytkowników za pomocą rysowania diagramy o ich działaniach i części systemu odgrywa w pomagając im ich celach. Wymagania modelu jest zestaw tych diagramów, z których każdy koncentruje się na różnych aspektów potrzeb użytkowników. Aby demonstracyjne wideo, zobacz: [modelowanie biznesowe domeny](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Aby sprawdzić, które wersje programu Visual Studio obsługi każdego typu modelu, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -43,10 +44,11 @@ Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb 
  W przypadku umożliwia dyskusji fokus użytkowników lub ich i ponownie go na początku każdej iteracji, modelu wymagania zapewnia największe korzyści. Nie masz oczekiwania na zakończenie jego szczegółowo pisania kodu. Częściowo działającą aplikację, nawet jeśli znacznie uproszczony, zwykle stanowi podstawę najbardziej zachęca dyskusji wymagania użytkownikom. Model jest efektywny sposób podsumowywania wyniki tych dyskusji. Aby uzyskać więcej informacji, zobacz [używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  W tych tematach "system" oznacza systemu lub aplikacji, które tworzysz. Może być duży zbiór wiele składników sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większy. W każdym przypadku modelu wymagania opisano zachowanie nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.  
+> W tych tematach "system" oznacza systemu lub aplikacji, które tworzysz. Może być duży zbiór wiele składników sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większy. W każdym przypadku modelu wymagania opisano zachowanie nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.  
   
-## <a name="common-tasks"></a>Typowe zadania  
- Można utworzyć kilka widoków różne wymagania dotyczące użytkowników.  Każdy widok zawiera określonego typu informacji.  Podczas tworzenia tych widoków, najlepiej przenoszenie często z jednego do drugiego. Można uruchomić z dowolnego widoku.  
+## <a name="common-tasks"></a>Wspólne zadania
+
+Można utworzyć kilka widoków różne wymagania dotyczące użytkowników.  Każdy widok zawiera określonego typu informacji.  Podczas tworzenia tych widoków, najlepiej przenoszenie często z jednego do drugiego. Można uruchomić z dowolnego widoku.  
   
 |Diagramu lub dokumentu|Znaczenie w modelu wymagania|Sekcja|  
 |-------------------------|-----------------------------------------------|-------------|  
@@ -56,8 +58,9 @@ Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb 
   
  Zwróć uwagę, że większość typów diagram mogą być używane do innych celów. Omówienie typów diagramu, zobacz [tworzenia modeli dla aplikacji](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>Wyświetlanie reguły biznesowe  
- Reguła biznesowa jest wymaganie, który nie jest skojarzony z konkretnego przypadku użycia i powinien być uwzględniony w całym systemie.  
+##  <a name="BusinessRules"></a>Wyświetlanie reguły biznesowe
+
+Reguła biznesowa jest wymaganie, który nie jest skojarzony z konkretnego przypadku użycia i powinien być uwzględniony w całym systemie.  
   
  Wiele reguły biznesowe są ograniczenia na relacje między koncepcyjnej klasy. Można napisać te *statycznych ** reguły biznesowe* jako komentarze skojarzone z odpowiednich klas na diagram koncepcyjny klasy. Na przykład:  
   
@@ -75,8 +78,9 @@ Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb 
 |--------------------|----------|  
 |Jak wdrażać kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Opisujące jakości wymagania dotyczące usługi  
- Istnieje kilka kategorii wymagania jakości usługi. Obejmują one następujące czynności:  
+##  <a name="QoSRequirements"></a>Opisujące jakości wymagania dotyczące usługi
+
+Istnieje kilka kategorii wymagania jakości usługi. Obejmują one następujące czynności:  
   
 -   Wydajność  
   
@@ -88,17 +92,13 @@ Visual Studio ułatwia zrozumienie, omówiono w nim i komunikować się potrzeb 
   
 -   Niezawodność  
   
- Niektóre z tych wymagań można uwzględnić w opisach przypadków użycia określonego. Inne wymagania nie są specyficzne dla przypadki użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możesz, jest przydatne do przestrzegania słownictwa zdefiniowane za pomocą modelu wymagania. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły uczestników, przypadków użycia i klasy w powyższej ilustracji:  
-  
- Jeśli restauracji usuwa element Menu, gdy klient jest porządkowanie zawierają najważniejsze nowości, dowolny element kolejność, która odwołuje się do tego elementu Menu będzie wyświetlany w czerwony.  
-  
- Więcej informacji można znaleźć w następujących tematach:  
-  
-|Aby dowiedzieć się więcej o|Odczyt|  
-|--------------------|----------|  
-|Więcej szczegółowych informacji dotyczących jakości wymagania dotyczące usługi rejestrowania|[Wskazówki dotyczące definiowania jakości wymagania dotyczące usługi](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
-|Jak wdrażać kod zgodną jakości wymagania dotyczące usługi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)   
- [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
+Niektóre z tych wymagań można uwzględnić w opisach przypadków użycia określonego. Inne wymagania nie są specyficzne dla przypadki użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możesz, jest przydatne do przestrzegania słownictwa zdefiniowane za pomocą modelu wymagania. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły uczestników, przypadków użycia i klasy w powyższej ilustracji:
+
+Jeśli restauracji usuwa element Menu, gdy klient jest porządkowanie zawierają najważniejsze nowości, dowolny element kolejność, która odwołuje się do tego elementu Menu będzie wyświetlany w czerwony.
+
+Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md) więcej informacji na temat tworzenia kodu zgodną jakości wymagania dotyczące usługi.
+
+## <a name="see-also"></a>Zobacz także
+
+[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)  
+[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)

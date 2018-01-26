@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 91f1143e593ae63d41e15beb74612f192ec736d1
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8e73b12b1ca3fa3760bf1b074eb42370130534b6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Porady: ustawienie atrybutów CLR w elemencie
 Atrybuty niestandardowe są specjalne atrybuty, które mogą być dodawane do elementów domeny, kształtów, łączniki i diagramy. Można dodać dowolny atrybut, który dziedziczy z `System.Attribute` klasy.  
@@ -42,4 +42,4 @@ Atrybuty niestandardowe są specjalne atrybuty, które mogą być dodawane do el
      `[`*AttributeName* `(` *ParameterName* `=` *typu*`)]`  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

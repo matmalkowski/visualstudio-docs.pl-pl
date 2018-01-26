@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7f5bd86a9fe8d67111886e7578187747b1ea3ec8
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b3f1c171f86c9af82e532abf948ee6199a16d0e1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-decorators"></a>Właściwości elementów Decorator
 Elementy decorator są ikony, tekst lub Rozwiń/Zwiń znaki, które mogą być wyświetlane na kształtów lub łączników na diagramie. W poniższej tabeli przedstawiono trzy rodzaje dekoratora właściwości. Niektóre właściwości są wyświetlane tylko na elementy kształtu decorator lub tylko dla elementów decorator łącznika.  
@@ -28,7 +28,7 @@ Elementy decorator są ikony, tekst lub Rozwiń/Zwiń znaki, które mogą być w
 |--------------|-----------------|-------------|  
 |Nazwa wyświetlana|Nazwa dekoratora, który będzie wyświetlany w Projektancie wygenerowany.|Rozwiń węzeł Dekoratora Zwiń|  
 |Nazwa|Nazwa dekorator.|ExpandCollapseDecorator|  
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym dekoratora.|\<Brak >|  
+|Uwagi|Nieformalne uwagi, które są skojarzone z tym dekoratora.|\<none>|  
 |HorizontalOffset|Przesunięcie w poziomie, względem to domyślne położenie dekoratora, w calach. (Kształtów tylko.)|0|  
 |VerticalOffset|Przesunięcie w pionie, względem to domyślne położenie dekoratora, w calach. (Kształtów tylko.)|0|  
 |OffsetFromLine|Przesunięcie dekoratora z poziomu wiersza względem położenia domyślnego w calach. (Dla łączników tylko.)|0|  
@@ -39,10 +39,10 @@ Elementy decorator są ikony, tekst lub Rozwiń/Zwiń znaki, które mogą być w
   
 |Właściwość|Opis|Domyślny|  
 |--------------|-----------------|-------------|  
-|DefaultIcon|Ścieżka pliku ikony lub obrazu do wyświetlenia.|\<Brak >|  
+|DefaultIcon|Ścieżka pliku ikony lub obrazu do wyświetlenia.|\<none>|  
 |Nazwa wyświetlana|Nazwa dekoratora, który ma być wyświetlany w Projektancie wygenerowany.|Ikona Dekoratora|  
 |Nazwa|Nazwa dekorator.|IconDecorator|  
-|Uwagi|Nieformalne uwagi, które są skojarzone z dekorator.|\<Brak >|  
+|Uwagi|Nieformalne uwagi, które są skojarzone z dekorator.|\<none>|  
 |HorizontalOffset|Przesunięcie w poziomie, względem to domyślne położenie dekoratora, w calach. (Kształtów tylko.)|0|  
 |VerticalOffset|Przesunięcie w pionie, względem to domyślne położenie dekoratora, w calach. (Kształtów tylko.)|0|  
 |OffsetFromLine|Przesunięcie dekoratora z poziomu wiersza względem położenia domyślnego w calach. (Dla łączników tylko.)|0|  
@@ -58,7 +58,7 @@ Elementy decorator są ikony, tekst lub Rozwiń/Zwiń znaki, które mogą być w
 |FontSize|Rozmiar czcionki tekstu, który jest wyświetlany w dekorator.|8|  
 |FontStyle|Styl czcionki tekstu, który jest wyświetlany w dekorator.|Regularne|  
 |Nazwa|Nazwa dekorator.|Etykieta|  
-|Uwagi|Nieformalne uwagi, które są skojarzone z dekorator.|\<Brak >|  
+|Uwagi|Nieformalne uwagi, które są skojarzone z dekorator.|\<none>|  
 |HorizontalOffset|Przesunięcie w poziomie, względem to domyślne położenie dekoratora, w calach. (Kształtów tylko.)|0|  
 |VerticalOffset|Przesunięcie w pionie, względem to domyślne położenie dekoratora, w calach. (Kształtów tylko.)|0|  
 |OffsetFromLine|Przesunięcie dekoratora z poziomu wiersza względem położenia domyślnego w calach. (Dla łączników tylko.)|0|  
@@ -66,4 +66,4 @@ Elementy decorator są ikony, tekst lub Rozwiń/Zwiń znaki, które mogą być w
 |Pozycja|To domyślne położenie dekorator.|TargetBottom|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

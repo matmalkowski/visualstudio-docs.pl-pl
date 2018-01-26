@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 3e0be7d788d4471f249b50f8c846343514b1c346
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Korzystanie z członków Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
 Framework testów jednostkowych obsługuje jednostki testowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Użyj klas i członków w Microsoft.VisualStudio.TestPlatform.UnitTestFramework > przestrzenią nazw, gdy są kodowania testów jednostkowych. Można używać ich, gdy napisano jednostki przetestować od początku lub są uściślenie test jednostki, który został wygenerowany na podstawie kodu podczas testowania.  
@@ -41,9 +41,10 @@ Framework testów jednostkowych obsługuje jednostki testowania w [!INCLUDE[vspr
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.DataSourceElementCollection  
   
-## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używany do ustanawiania kolejności wywoływania  
- Element kodu ozdobione jedną z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia testu jednostkowego](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
-  
+## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używany do ustanawiania kolejności wywoływania
+
+Element kodu ozdobione jedną z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia testu jednostkowego](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+
 ### <a name="for-assemblies"></a>Dla zestawów  
  AssemblyInitialize i AssemblyCleanup są nazywane prawo po załadowaniu używanemu zestawowi oraz prawo przed używanemu zestawowi zostanie zwolniona.  
   
@@ -64,8 +65,9 @@ Framework testów jednostkowych obsługuje jednostki testowania w [!INCLUDE[vspr
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute  
   
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty używane do identyfikowania testu klasy i metody  
- Każda klasa testu musi mieć atrybut TestClass i każdej metody testu musi mieć atrybut TestMethod. Aby uzyskać więcej informacji, zobacz [anatomia testu jednostkowego](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty używane do identyfikowania testu klasy i metody
+
+Każda klasa testu musi mieć atrybut TestClass i każdej metody testu musi mieć atrybut TestMethod. Aby uzyskać więcej informacji, zobacz [anatomia testu jednostkowego](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute  
   
@@ -109,7 +111,7 @@ Framework testów jednostkowych obsługuje jednostki testowania w [!INCLUDE[vspr
   
 ## <a name="test-configuration-classes"></a>Klasy konfiguracji testu  
   
--   Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes >  
+-   Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>  
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestConfigurationSection  
   
@@ -120,12 +122,10 @@ Framework testów jednostkowych obsługuje jednostki testowania w [!INCLUDE[vspr
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.CssProjectStructureAttribute  
   
-## <a name="classes-used-with-private-accessors"></a>Klasy używane z prywatnej metody dostępu  
- Zgodnie z opisem w [przy użyciu Publicize można utworzyć prywatnego akcesora](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), można wygenerować testu jednostkowego dla metody prywatnej. Tej generacji tworzy klasie prywatnego akcesora, która tworzy wystąpienie obiektu PrivateObject klasy. Klasa PrivateObject jest klasa otoki umożliwiająca używa jako część procesu prywatnego akcesora odbicia. Klasa PrivateType jest podobny, ale jest używana do wywoływania prywatnych metod statycznych, zamiast wywoływania metod prywatnych wystąpienia.  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
-  
-## <a name="see-also"></a>Zobacz też  
- Microsoft.VisualStudio.TestPlatform.UnitTestFramework
+## <a name="classes-used-with-private-accessors"></a>Klasy używane z prywatnej metody dostępu
+
+Możesz wygenerować testu jednostkowego dla metody prywatnej. Tej generacji tworzy klasie prywatnego akcesora, która tworzy wystąpienie obiektu PrivateObject klasy. Klasa PrivateObject jest klasa otoki umożliwiająca używa jako część procesu prywatnego akcesora odbicia. Klasa PrivateType jest podobny, ale jest używana do wywoływania prywatnych metod statycznych, zamiast wywoływania metod prywatnych wystąpienia.
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType

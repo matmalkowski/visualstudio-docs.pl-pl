@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Praca z rozwiązaniami dotyczącymi języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Ta sekcja ma o tym, jak skonfigurować i dostosować rozwiązania.  
@@ -47,5 +47,5 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu [!INCLUDE[vspr
  [Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Projektant DSL z poleceń menu można dostosować.  
   
- [Jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Aby uniknąć, klikając polecenie Przekształć wszystkie szablony, możesz wprowadzić go automatyczne częścią kompilacji.

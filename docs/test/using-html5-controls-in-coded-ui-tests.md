@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: e3589707f07564bbcd84151b0eedeb1c0029428b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 093457cf2aea3951db89e6fa677ec03fe55df89a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 Kodowane testy interfejsu użytkownika obejmuje obsługę, niektóre z formantów HTML5, które są dołączone do programu Internet Explorer 9 i programu Internet Explorer 10.  
@@ -33,7 +33,7 @@ Kodowane testy interfejsu użytkownika obejmuje obsługę, niektóre z formantó
 ## <a name="supported-html5-controls"></a>Formanty obsługiwanych języków HTML5.  
  Kodowane testy interfejsu użytkownika obejmują obsługę rekordu, odtwarzania i sprawdzania poprawności następujących formantów HTML5:  
   
--   [Formant audio](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [Audio Control](#UsingHTML5ControlsCodedUITestsAudio)  
   
 -   [Formant wideo](#UsingHTML5ControlsCodedUITestsVideo)  
   
@@ -41,7 +41,7 @@ Kodowane testy interfejsu użytkownika obejmuje obsługę, niektóre z formantó
   
 -   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a>Formant audio  
+###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio Control  
  **Formant audio:** poprawnie zarejestrowana i odtwarzania akcji w formancie HTML5 Audio.  
   
  ![Formant HTML5 Audio](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
@@ -121,7 +121,7 @@ string VideoWidth
   
 |Akcja|Rejestrowanie|Wygenerowany kod|  
 |------------|---------------|--------------------|  
-|**Ustaw położenie w suwaka**|Ustaw położenie \<x > w \<name > suwaka|HtmlSlider.ValueAsNumber=\<x >|  
+|**Ustaw położenie w suwaka**|Ustaw położenie \<x > w \<name > suwaka|HtmlSlider.ValueAsNumber=\<x>|  
   
  Następujące właściwości są dostępne dla HtmlSlider i na wszystkich z nich można dodać potwierdzenia:  
   
@@ -136,12 +136,12 @@ string ValueAsNumber
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a>ProgressBar  
  **Formant ProgreesBar:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwościami tego formantu.  
-  
+
  ![Formant HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
-  
-## <a name="see-also"></a>Zobacz też  
- [Elementy HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Dostosowywanie kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+## <a name="see-also"></a>Zobacz także
+
+[Elementy HTML](http://go.microsoft.com/fwlink/?LinkID=232441)  
+[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)  
+[Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)  
+[Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

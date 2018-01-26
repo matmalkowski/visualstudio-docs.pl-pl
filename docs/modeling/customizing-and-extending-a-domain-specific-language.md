@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne poziomy, w których można zdefiniować narzędzi modelowania:  
@@ -55,7 +55,7 @@ Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne po
 |Usuń, zmienić elementu nadrzędnego lub ponowne łączenie powiązanych elementów, gdy element zostanie usunięty.|Ustaw **propaguje usunąć** wartość rolę w relacji. Bardziej złożone efekty zastępują `ShouldVisitRelationship` i `ShouldVisitRolePlayer` metod w `MyDslDeleteClosure` klas zdefiniowanych w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie sposób usuwania](../modeling/customizing-deletion-behavior.md)|  
 |Zachowaj kształt układu i wyglądu na kopiowanie i przeciągnij upuść.|Dodaj kształty i łączniki do skopiowanych `ElementGroupPrototype`. Najodpowiedniejszym metody do przesłonięcia`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).|  
 |Wklejanie kształtów w wybranej lokalizacji, np. w bieżącej pozycji kursora.|Zastąpienie `ClipboardCommandSet.ProcessOnCopy()` Aby użyć lokalizacji określonej wersji `ElementOperations.Merge().` zobacz [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).|  
-|Tworzyć linki do dodatkowych przy wklejeniu|Zastąpienie ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Tworzyć linki do dodatkowych przy wklejeniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Przeciągania i upuszczania z diagramu, inne DSLs i Windows elementów|Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Zezwalaj na kształtu lub narzędzia przeciąganych na kształt podrzędny, taki jak port, tak jakby były przeciągnięto nadrzędnego.|Define — dyrektywa scalania Element na klasę obiektu docelowego do przekazywania upuszczony obiekt nadrzędny. Zobacz [Dostosowywanie Element tworzenia i przepływu](../modeling/customizing-element-creation-and-movement.md).|  
 |Zezwalaj na kształt lub narzędzia może być przeciągnięto kształtu, a linki do dodatkowych lub obiekty utworzone. Na przykład, aby umożliwić komentarz, aby być upuszczone na element, do którego ma być połączony.|#Define — dyrektywa scalania Element dla klasy docelowej domeny i zdefiniowanie łączy do wygenerowania. W przypadku złożonych można dodać kod niestandardowy. Zobacz [Dostosowywanie Element tworzenia i przepływu](../modeling/customizing-element-creation-and-movement.md).|  
@@ -70,10 +70,10 @@ Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne po
 |Integrować kilka DSLs, aby mogły działać w ramach jednej aplikacji.|Zobacz [integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Zezwalaj na Twoje DSL rozszerzyć przez osoby trzecie i kontrola rozszerzenia.|[Rozszerzanie DSL za pomocą MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Udostępnianie klas między językami DSL za pomocą biblioteki DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>Zobacz też  
- [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
- [Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>Zobacz także
+
+[Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
+[Pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

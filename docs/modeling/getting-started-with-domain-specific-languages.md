@@ -10,25 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
-W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyciu języka specyficznego dla domeny (DSL) utworzone przy użyciu zestawu SDK modelowania dla programu Visual Studio.  
+W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyciu języka specyficznego dla domeny (DSL) utworzone przy użyciu zestawu SDK modelowania dla programu Visual Studio.
 
+> [!NOTE]
+> W programie Visual Studio 2017 r. SDK transformacji szablonu tekstowego Visual Studio SDK modelowania są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
- Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej witrynie: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej witrynie: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co należy zrobić z języka specyficznego dla domeny  
  Języka specyficznego dla domeny jest notacji, zwykle graficzny przeznaczony do użycia do określonego celu. Z kolei języków, takich jak UML są ogólnego przeznaczenia. W DSL można zdefiniować rodzaje elementu modelu i ich relacje i jak mają być przedstawiane na ekranie.  
   
- Po zaprojektowaniu DSL można rozpowszechniać go jako część pakietu rozszerzenia integracji programu Visual Studio (VSIX). Użytkownicy pracować z DSL w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ Po zaprojektowaniu DSL można rozpowszechniać go jako część pakietu rozszerzenia integracji programu Visual Studio (VSIX). Użytkownicy pracować z DSL w programie Visual Studio:  
   
  ![Diagram drzewa rodziny, przybornika i explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
@@ -36,14 +35,14 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
  Jedną z głównych aplikacji DSLs jest do generowania kodu programu, pliki konfiguracji i pozostałych artefaktów. Szczególnie w przypadku dużych projektów i linii produktów, w którym zostanie utworzona kilka wariantów produktu, generowanie wiele aspektów zmiennej DSLs zapewniają duży wzrost niezawodności i bardzo szybkie odpowiedzi na zmiany wymagań.  
   
- Pozostała część tego przeglądu jest Przewodnik wprowadzający podstawowe operacje tworzenia i użyciu języka specyficznego dla domeny w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Pozostała część tego przeglądu jest Przewodnik wprowadzający podstawowe operacje tworzenia i używania języka specyficznego dla domeny w programie Visual Studio.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby zdefiniować DSL, należy zainstalować następujące składniki:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Modelowanie zestawu SDK dla programu Visual Studio||  
 
@@ -52,7 +51,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
 
   
 ## <a name="creating-a-dsl-solution"></a>Tworzenie rozwiązania DSL  
- Aby utworzyć nowego języka specyficznego dla domeny, należy utworzyć nowy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania za pomocą szablonu projektu języka specyficznego dla domeny.  
+ Aby utworzyć nowego języka specyficznego dla domeny, należy utworzyć nowe rozwiązanie Visual Studio za pomocą szablonu projektu języka specyficznego dla domeny.  
   
 #### <a name="to-create-a-dsl-solution"></a>Tworzenie rozwiązań DSL  
   
@@ -100,7 +99,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
 -   **Projekt DSL** ten projekt zawiera kod, który definiuje język specyficznego dla domeny.  
   
--   **Projekt DslPackage** ten projekt zawiera kod, który umożliwia wystąpień DSL otwarty i edytowany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   **Projekt DslPackage** ten projekt zawiera kod, który umożliwia wystąpień DSL, aby go otworzyć i edytować w programie Visual Studio.  
   
 ##  <a name="Debugging"></a>Uruchomiona DSL  
  Rozwiązanie DSL można uruchomić natychmiast po jej utworzeniu. Później możesz zmodyfikować definicję DSL stopniowo, uruchomiony ponownie po każdej zmianie rozwiązania.  
@@ -110,15 +109,15 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
 1.  Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań. Większość kodu źródłowego z DslDefinition.dsl to generuje.  
   
     > [!NOTE]
-    >  Przy każdej zmianie DslDefinition.dsl, należy kliknąć opcję **Przekształć wszystkie szablony** przed możesz ponownie skompiluj rozwiązanie. Ten krok można zautomatyzować. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+    >  Przy każdej zmianie DslDefinition.dsl, należy kliknąć opcję **Przekształć wszystkie szablony** przed możesz ponownie skompiluj rozwiązanie. Ten krok można zautomatyzować. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
 2.  Naciśnij klawisz F5, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
-     DSL kompilacje i jest zainstalowany w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     DSL kompilacje i jest zainstalowany w eksperymentalne wystąpienie programu Visual Studio.
   
-     Eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uruchamia. Eksperymentalne wystąpienie trwa jego ustawienia z oddzielnych poddrzewo rejestru, których [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia są zarejestrowane na potrzeby debugowania. Normalne wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie mają dostępu do zarejestrowanego rozszerzeń.  
+     Uruchamia eksperymentalne wystąpienie programu Visual Studio. Eksperymentalne wystąpienie trwa jego ustawienia z oddzielnych poddrzewo rejestru, których rozszerzenia programu Visual Studio są zarejestrowane na potrzeby debugowania. Normalnego wystąpienia programu Visual Studio nie mają dostępu do zarejestrowanego rozszerzeń.  
   
-3.  W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz plik modelu o nazwie **testu** z **Eksploratora rozwiązań**.  
+3.  Eksperymentalne wystąpienie programu Visual Studio, otwórz plik modelu o nazwie **testu** z **Eksploratora rozwiązań**.  
   
      \-lub -  
   
@@ -136,7 +135,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
 5.  Kliknij pozycję etykiety kształty, aby je zmienić.  
   
- Twoje eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie wyglądać następująco:  
+ Eksperymentalne Visual Studio będzie podobne do następujących:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -147,7 +146,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
  Można wyświetlać modelu w drzewie **Explorer** wyświetlić podczas edytowania modelu. Podczas dodawania kształtów na diagramie, elementy modelu jest również dostępna w Eksploratorze. Można Eksploratora, nawet jeśli dostępny jest brak diagramu.  
   
- Nie widać Eksploratora w wystąpieniu debugowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]na **widoku** menu wskaż **inne okna**, a następnie kliknij przycisk  *\<swój język >* **Explorer**.  
+ Jeśli nie są widoczne w Eksploratorze w wystąpieniu debugowania programu Visual Studio, **widoku** menu wskaż **inne okna**, a następnie kliknij przycisk  *\<swój język >* **Explorer**.  
   
 ### <a name="the-api-of-your-dsl"></a>Funkcji API z DSL  
  Twoje DSL generuje interfejs API, który umożliwia odczytywanie i aktualizowanie modeli, które są wystąpieniami klasy DSL. Jednej aplikacji interfejsu API polega na generowaniu pliki tekstowe z modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
@@ -164,7 +163,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Można ponownie wygenerować pliki tekstowe po zmodyfikowaniu pliku modelu  
   
-1.  W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Zapisz plik modelu.  
+1.  Eksperymentalne wystąpienie programu Visual Studio Zapisz plik modelu.  
   
 2.  Upewnij się, że parametr nazwy pliku w każdym pliku .TT — odwołuje się do pliku modelu używanego do eksperymentów. Zapisz plik .TT —.  
   
@@ -182,7 +181,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
  Aby uzyskać więcej informacji, zobacz [generowania kodu języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md) i [pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="customizing-the-dsl"></a>Dostosowywanie DSL  
- Jeśli chcesz zmodyfikować definicję DSL, zamknij eksperymentalne wystąpienie i aktualizacji definicji w głównym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wystąpienia.  
+ Aby zmodyfikować definicję DSL, należy zamknąć eksperymentalne wystąpienie i aktualizacji definicji w głównym wystąpienie programu Visual Studio.  
   
 > [!NOTE]
 >  Po zmodyfikowaniu definicji DSL, może spowodować utratę informacji w modelach testu, które zostały utworzone za pomocą wcześniejszych wersji.  Na przykład debugowania rozwiązania zawiera plik o nazwie próbki, który zawiera niektóre kształty i łączniki. Po rozpoczęciu tworzenia definicję DSL, nie będą widoczne, a zostaną one utracone podczas zapisywania pliku.  
@@ -222,9 +221,9 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
     2.  Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań  
   
-    3.  Naciśnij F5. Poczekaj na wystąpienie eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pojawi się.  
+    3.  Naciśnij F5. Zaczekaj, aż zostanie wyświetlony eksperymentalne wystąpienie programu Visual Studio.  
   
-4.  W rozwiązaniu debugowanie w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz plik modelu testu. Przeciągnij elementy go z przybornika. Należy zauważyć, że zmieniono podpisy narzędzia i nazwy typów w Eksploratorze DSL.  
+4.  W rozwiązaniu debugowanie w eksperymentalne wystąpienie programu Visual Studio Otwórz plik modelu testu. Przeciągnij elementy go z przybornika. Należy zauważyć, że zmieniono podpisy narzędzia i nazwy typów w Eksploratorze DSL.  
   
 5.  Zapisz plik modelu.  
   
@@ -348,7 +347,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
   
 8.  Kliknij pozycję Zapisz definicję DSL **Przekształć wszystkie szablony**, a następnie naciśnij klawisz **F5**.  
   
-9. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz plik modelu testu. Użycie nowych narzędzi do tworzenia miastach i linki między miastach i osoby. Należy zauważyć, że można tworzyć tylko łącza między poprawne typy elementu.  
+9. W eksperymentalne wystąpienie programu Visual Studio Otwórz plik modelu testu. Użycie nowych narzędzi do tworzenia miastach i linki między miastach i osoby. Należy zauważyć, że można tworzyć tylko łącza między poprawne typy elementu.  
   
 10. Tworzenie kodu, która zawiera miejscowości, w którym mieszka każda osoba. Szablony tekstowe są jednym z miejsc, w którym można uruchomić taki kod. Na przykład można zmodyfikować istniejący plik Sample.tt w rozwiązaniu debugowanie tak, aby zawierał następujący kod:  
   
@@ -380,33 +379,32 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i przy użyci
 ## <a name="validation-and-commands"></a>Sprawdzanie poprawności i poleceń  
  Ten DSL dalsze można utworzyć przez dodanie ograniczenia sprawdzania poprawności. Te ograniczenia są metody, które można określić, które upewnij się, że model jest w odpowiednim stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że datę urodzenia dziecka jest nowsza niż nadrzędnych. Funkcja weryfikacji wyświetli ostrzeżenie, jeśli użytkownik DSL próbuje zapisać modelu, który dzieli żadne ograniczenia. Aby uzyskać więcej informacji, zobacz [sprawdzania poprawności języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).  
   
- Można również zdefiniować poleceń menu, które może wywołać użytkownik. Polecenia można modyfikować modelu. Mogą również współpracować innych modeli w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i z zasobów zewnętrznych. Aby uzyskać więcej informacji, zobacz [porady: modyfikowanie standardowe polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Można również zdefiniować poleceń menu, które może wywołać użytkownik. Polecenia można modyfikować modelu. Można ich także interakcji z innymi modelami w programie Visual Studio oraz z zasobów zewnętrznych. Aby uzyskać więcej informacji, zobacz [porady: modyfikowanie standardowe polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Wdrażanie DSL  
- Aby zezwolić innym użytkownikom korzystanie z języka specyficznego dla domeny, dystrybucji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pliku rozszerzenia (VSIX). To jest tworzony podczas kompilowania rozwiązania DSL.  
+ Aby zezwolić innym użytkownikom korzystanie z języka specyficznego dla domeny, możesz dystrybuować pliku rozszerzenia serwera Visual Studio (VSIX). To jest tworzony podczas kompilowania rozwiązania DSL.  
   
- Zlokalizuj plik .vsix w folder bin rozwiązania. Skopiuj go na komputerze, na którym chcesz go zainstalować. Na tym komputerze kliknij dwukrotnie plik VSIX. DSL można używać we wszystkich wystąpieniach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na tym komputerze.  
+ Zlokalizuj plik .vsix w folder bin rozwiązania. Skopiuj go na komputerze, na którym chcesz go zainstalować. Na tym komputerze kliknij dwukrotnie plik VSIX. DSL można używać we wszystkich wystąpieniach programu Visual Studio na tym komputerze.  
   
- Tę samą procedurę służy do zainstalowania na własnym komputerze DSL, dzięki czemu nie trzeba używać eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Tę samą procedurę służy do zainstalowania na własnym komputerze DSL, dzięki czemu nie trzeba używać eksperymentalne wystąpienie programu Visual Studio.  
   
  Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a>Usuwanie starego DSLs eksperymentalne  
- Jeśli zostały utworzone eksperymentalne DSLs nie są już potrzebne, Usuń z komputera poprzez zresetowanie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eksperymentalne wystąpienie.  
+ Jeśli utworzono DSLs eksperymentalne, które nie są już potrzebne, można usunąć z komputera, resetując Visual Studio eksperymentalne wystąpienie.  
   
- Spowoduje to usunięcie z komputera wszystkie DSLs eksperymentalne i inne eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia. Są to rozszerzeń, które zostały wykonane w trybie debugowania.  
+ Spowoduje to usunięcie z komputera wszystkie DSLs eksperymentalne i inne eksperymentalne rozszerzeń programu Visual Studio. Są to rozszerzeń, które zostały wykonane w trybie debugowania.  
   
- Ta procedura nie powoduje usunięcia DSLs lub inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzeń, które zostały w pełni zainstalowane, wykonując pliku VSIX.  
+ Ta procedura nie powoduje usunięcia DSLs i innych rozszerzeń programu Visual Studio, w pełni zainstalowane, wykonując pliku VSIX.  
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Aby zresetować programu Visual Studio eksperymentalne wystąpienie programu  
   
 1.  Kliknij przycisk **Start**, kliknij przycisk **wszystkie programy**, **zestawu SDK programu Microsoft Visual Studio 2010**, **narzędzia**, a następnie **zresetować firmy Microsoft Visual Studio 2010 eksperymentalne wystąpienie**.  
   
-2.  Odbuduj żadnych eksperymentalne DSLs lub inne eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzeń, które chcesz użyć.  
+2.  Odbuduj żadnych eksperymentalne DSLs lub inne eksperymentalne rozszerzeń programu Visual Studio, które nadal mają być wykorzystywane.  
   
-## <a name="see-also"></a>Zobacz też  
- [Opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md)   
- [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
+## <a name="see-also"></a>Zobacz także
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md)   
+[Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opisano klasy i relacje języka specyficznego dla domeny, wraz z diagramu, kształtów, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka specyficznego dla domeny kod, który definiuje te narzędzia jest generowany zgodnie z informacjami w pliku DslDefinition.dsl.  
@@ -151,13 +151,13 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
   
  Każda klasa domeny (w tym relacje, kształtów, łączniki i diagramy) może mieć następujące atrybuty i węzłów podrzędnych:  
   
--   **Identyfikator.** Ten atrybut jest identyfikatorem GUID. Jeśli nie zostanie określona wartość w pliku, Projektant języka specyficznego dla domeny utworzy wartość. (W ilustracjach w tym dokumencie, ten atrybut jest zwykle pominięte aby zaoszczędzić miejsce.)  
+-   **Id.** Ten atrybut jest identyfikatorem GUID. Jeśli nie zostanie określona wartość w pliku, Projektant języka specyficznego dla domeny utworzy wartość. (W ilustracjach w tym dokumencie, ten atrybut jest zwykle pominięte aby zaoszczędzić miejsce.)  
   
 -   **Nazwa i Namespace.** Te atrybuty Określ nazwę i przestrzeń nazw, klasy w wygenerowanym kodzie. Razem muszą być unikatowe w obrębie języka specyficznego dla domeny.  
   
 -   **InheritanceModifier.** Ten atrybut to "abstract", "sealed" lub none.  
   
--   **Nazwa wyświetlana.** Ten atrybut jest nazwa wyświetlana w **właściwości** okna. Atrybut Nazwa wyświetlana może zawierać spacji i innych znaków interpunkcyjnych.  
+-   **DisplayName.** Ten atrybut jest nazwa wyświetlana w **właściwości** okna. Atrybut Nazwa wyświetlana może zawierać spacji i innych znaków interpunkcyjnych.  
   
 -   **GeneratesDoubleDerived.** Jeśli ten atrybut ma ustawioną wartość true, dwie klasy są generowane i jest podklasą innych. Wygenerowane metody są w podstawowym, a w podklasy konstruktorów. Przez ustawienie dla tego atrybutu, można zastąpić dowolnej metody wygenerowanego kodu niestandardowego.  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Łącznik maps może również zawierać dekoratora mapy.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
  [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

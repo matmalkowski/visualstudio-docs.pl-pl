@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
 Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wersji programu .NET Framework jest domyślnie jako element docelowy. Ponadto jeśli projekty testowe uaktualnienie poprzedniej wersji programu Visual Studio, ich uaktualnienia do najnowszej wersji programu .NET Framework. Edytując właściwości projektu, można jawnie ponownie docelowych projektu do wcześniejszych wersji programu .NET Framework.  
@@ -62,7 +62,7 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wers
   
      Są wyświetlane właściwości projekt testowy Visual Basic.  
   
-5.  Na **skompilować** wybierz kartę **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.  
+5.  Na **skompilować** , wybierz pozycję **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.
   
      ![Zaawansowane opcje kompilacji](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +84,7 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wers
   
      Są wyświetlane właściwości projekt testowy Visual C#.  
   
-5.  Na **aplikacji** wybierz kartę **platformy docelowej** , a następnie wybierz **.NET Framework 3.5** lub nowszy z listy rozwijanej, aby zmienić framework.as docelowej pokazano na poniższej ilustracji. Nie należy określać wersji klienta.  
+5.  Na **aplikacji** , wybierz pozycję **platformy docelowej**. Z listy rozwijanej wybierz **.NET Framework 3.5** lub nowszej wersji, jak pokazano na poniższej ilustracji. Nie należy określać wersji klienta.
   
      ![Miejsce docelowe upuszczania framework &#45; w dół listy](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
@@ -125,8 +125,8 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszej wers
   
 8.  W Eksploratorze rozwiązań wybierz Zaznacz **Załaduj ponownie projekt** w menu skrótów projekt testowy Visual C++.  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Tworzenie rozwiązań programu SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Zaawansowane ustawienia kompilatora (Visual Basic), okno dialogowe](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>Zobacz także
+
+[Tworzenie rozwiązań SharePoint](/office-dev/office-dev/create-sharepoint-solutions)  
+[Kompilowanie i debugowanie rozwiązań SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[Zaawansowane ustawienia kompilatora (Visual Basic), okno dialogowe](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

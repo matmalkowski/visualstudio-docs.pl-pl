@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
 W tym kodowane testy interfejsu użytkownika w aplikacji programu SharePoint umożliwia Sprawdź, czy całej aplikacji, w tym jego formantów interfejsu użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika można zweryfikować wartości i logika interfejsu użytkownika.  
@@ -34,7 +34,7 @@ W tym kodowane testy interfejsu użytkownika w aplikacji programu SharePoint umo
 -   ![Wymagań wstępnych](../test/media/prereq.png "wstępnym") pomocy technicznej dla programu PowerPoint 2010 dla programu Visio i formantów w aplikacji programu SharePoint nie jest obsługiwane.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji programu SharePoint  
- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) dla aplikacji programu SharePoint 2010 jest taka sama jak tworzenie testów dla innych typów aplikacji. Rekord i odtwarzanie jest obsługiwana dla wszystkich kontrolek interfejsu sieci Web edycji. Interfejs do wybierania kategorii i części sieci web są wszystkie formanty standardowe sieci web.  
+ [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md) dla aplikacji programu SharePoint 2010 jest taka sama jak tworzenie testów dla innych typów aplikacji. Rekord i odtwarzanie jest obsługiwana dla wszystkich kontrolek interfejsu sieci Web edycji. Interfejs do wybierania kategorii i części sieci web są wszystkie formanty standardowe sieci web.  
   
  ![Części sieci web programu SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
@@ -141,7 +141,7 @@ uiGridKeyboardInputEdit.Text=value;
  [Testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 5 automatyzacji testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="forum"></a>Forum  
- [Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=254496)  
+ [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
 ## <a name="see-also"></a>Zobacz także
 

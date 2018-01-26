@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Wskazówki: Publikowanie rozszerzenie programu Visual Studio
 
@@ -70,9 +70,7 @@ W takim przypadku będą używane domyślne rozszerzenie pakiet VSPackage, ale t
 
   ![Przekaż do witryny Marketplace](media/upload-to-marketplace.png)
 
-6. Wybierz wydawcę, którego chcesz użyć w celu przekazania Twoje rozszerzenie.  Można zmienić wydawcy, klikając nazwę wydawcy, w lewym górnym rogu.
-
-  ![Wydawca zmiany Marketplace](media/change-marketplace-publisher.png)
+6. Wybierz wydawcę, którego chcesz użyć w celu przekazania Twoje rozszerzenie.  Można zmienić wydawcy, klikając na liście po lewej stronie nazwy wydawców.  Polecenie **nowe rozszerzenie** i wybierz **programu Visual Studio**.
 
 7. W **1: Przekaż rozszerzenia**, możesz przekazać plik VSIX bezpośrednio do programu Visual Studio Marketplace lub po prostu Dodaj łącze własne witryny sieci Web. W takim przypadku będzie przekazać naszych rozszerzenia TestPublish.vsix.  Przeciągnij i upuść rozszerzenie lub użyj **kliknij** łącze, aby wyszukać plik.  Rozszerzenie można znaleźć w folderze \bin\Release projektu.  Kliknij przycisk **Kontynuuj**.
 
@@ -86,7 +84,7 @@ W takim przypadku będą używane domyślne rozszerzenie pakiet VSPackage, ale t
     
     * **Identyfikator VSIX** jest unikatowy identyfikator, który używa programu Visual Studio dla rozszerzenia.  Jest to wymagane, jeśli chcesz mieć rozszerzenie aktualizowane automatycznie.  To jest wypełniana automatycznie z pliku source.extension.vsixmanifest.
     
-    * **Logo** który będzie używany dla rozszerzenia.  To jest wypełniana automatycznie od pliku source.extension.vsixmanifest, jeśli zostanie podana.
+   * **Logo** który będzie używany dla rozszerzenia.  To jest wypełniana automatycznie od pliku source.extension.vsixmanifest, jeśli zostanie podana.
     
     * **Krótki opis** z czego Twoje rozszerzenie.  To jest wypełniana automatycznie od pliku source.extension.vsixmanifest.
     
@@ -108,12 +106,32 @@ W takim przypadku będą używane domyślne rozszerzenie pakiet VSPackage, ale t
     
     * **Zezwalaj na pytań i odpowiedzi na Twoje rozszerzenie** pozwoli użytkownikom na pozostaw pytań na stronie wpis rozszerzenia.
 
-9. Kliknij przycisk **Zapisz & Przekaż**. Zostanie otwarta strona Zarządzanie Wstecz, aby Twoje wydawcy.  Rozszerzenie nie został opublikowany.  Do publikowania hover z rozszerzeniem za pośrednictwem wpis rozszerzenia, a następnie kliknij przycisk **...**  , a następnie **upewnij publicznego**.  Możesz wyświetlić sposób rozszerzenia będzie wyglądać w witrynie Marketplace, wybierając **wyświetlić szczegóły**.  W przypadku nabycia numerów kliknij **raporty**.  Aby wprowadzić zmiany do rozszerzenia, polecenie **Edytuj*.
+9. Kliknij przycisk **Zapisz & Przekaż**. Zostanie otwarta strona Zarządzanie Wstecz, aby Twoje wydawcy.  Rozszerzenie nie został opublikowany.  Aby opublikować rozszerzenie, kliknij prawym przyciskiem myszy na Twoje rozszerzenie i wybierz **Upublicznij**.  Możesz wyświetlić sposób rozszerzenia będzie wyglądać w witrynie Marketplace, wybierając **rozszerzenie widoku**.  W przypadku nabycia numerów kliknij **raporty**.  Aby wprowadzić zmiany do rozszerzenia, polecenie **Edytuj*.
 
   ![Rozszerzenie wpisu Menu](media/extension-entry-menu.png)
 
 10. Po kliknięciu przycisku **Upublicznij**, rozszerzenie teraz jest publiczny.  Wyszukaj w Visual Studio Marketplace na Twoje rozszerzenie.
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Dodać użytkowników do zarządzania kontem wydawcy
+
+Marketplace obsługuje przyznawanie uprawnień dodatkowym użytkownikom dostęp do zarządzania kontem wydawcy.
+
+1. Przejdź do konta wydawcy, który chcesz dodać użytkowników do.
+
+2. Wybierz **członków** i wybierz polecenie **Dodaj**
+
+  ![Dodaj dodatkowe użytkownika](media/add-users.png)
+
+3. Następnie możesz określić adres e-mail użytkownika, o których chcesz dodać, a następnie przyznać odpowiedni poziom dostępu w ramach **wybierz rolę**.  Możesz wybrać następujące opcje:
+
+  * **Twórcy**: użytkownika można publikowania rozszerzenia, ale nie można wyświetlić lub zarządzania rozszerzeniami opublikowane przez innych użytkowników.
+  
+  * **Czytnik**: użytkownika można wyświetlić rozszerzenia, ale nie można opublikować lub zarządzania rozszerzeniami.
+  
+  * **Współautor**: użytkownik można opublikować i Zarządzaj rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzanie dostępem.
+  
+  * **Właściciel**: użytkownik może publikować i zarządzać rozszerzeniami, Edytuj ustawienia wydawcy i zarządzanie dostępem.
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Zainstaluj rozszerzenia z witryny Marketplace programu Visual Studio
 
 Teraz, gdy rozszerzenie zostanie opublikowana, zainstaluj go w programie Visual Studio i przetestować go brak.
@@ -126,7 +144,7 @@ Teraz, gdy rozszerzenie zostanie opublikowana, zainstaluj go w programie Visual 
 
 4. Aby ukończyć instalację, zamknij wszystkie wystąpienia programu Visual Studio.
 
-## <a name="removing-the-extension"></a>Usuwanie rozszerzenia
+## <a name="remove-the-extension"></a>Usuń rozszerzenie
 
 Można usunąć rozszerzenia z witryny Marketplace programu Visual Studio i z tego komputera.
 
@@ -136,7 +154,7 @@ Można usunąć rozszerzenia z witryny Marketplace programu Visual Studio i z te
 
 2. W prawym górnym rogu kliknij **publikowania** rozszerzenia.  Wybierz wydawcy, który był używany podczas publikowania TestPublish.  Zostanie wyświetlony na liście TestPublish.
 
-3. Umieść kursor nad wpis rozszerzenia, a następnie kliknij przycisk **...**  i **Usuń...** Użytkownik jest proszony o potwierdzenie, czy chcesz usunąć rozszerzenie.  Kliknij przycisk **OK**.
+3. Kliknij prawym przyciskiem myszy wpis rozszerzenia, a następnie kliknij przycisk **Usuń** użytkownik jest proszony o potwierdzenie, czy chcesz usunąć rozszerzenie.  Kliknij przycisk **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Aby usunąć rozszerzenia z komputera
 

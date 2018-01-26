@@ -11,17 +11,18 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
+
 W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowanej w pliku app.config w celu przeprowadzania testów jednostkowych. Dowiesz się tworzenie pliku app.config, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:  
   
 -   Tworzenie pliku app.config.  
@@ -35,7 +36,7 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 -   Dostęp do danych źródła przy użyciu <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- W celu wykonania instrukcji w tym przewodniku potrzebne są następujące elementy:  
+ W tym przewodniku, należy:  
   
 -   Visual Studio Enterprise  
   
@@ -76,7 +77,7 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 >  Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz. Ustaw wersję do 9.0.0.0, jeśli używasz programu Visual Studio .NET Framework 3.5. Jeśli używasz programu Visual Studio .NET Framework 2.0, Ustaw wersję do 8.0.0.0.  
   
 ## <a name="define-connection-strings"></a>Zdefiniuj parametry połączenia  
- Parametry połączenia zdefiniuj określonych informacji o dostawcy do uzyskiwania dostępu do źródeł danych. Parametry połączenia zdefiniowane w plikach konfiguracji udostępnianie informacji o dostawcy danych do ponownego użycia w aplikacji. W tej sekcji utworzysz dwa parametry połączenia, które będą używane przez źródeł danych, które są zdefiniowane w sekcji konfiguracji niestandardowej.  
+ Parametry połączenia zdefiniuj informacji specyficznych dla dostawcy do uzyskiwania dostępu do źródeł danych. Parametry połączenia zdefiniowane w plikach konfiguracji udostępnianie informacji o dostawcy danych do ponownego użycia w aplikacji. W tej sekcji utworzysz dwa parametry połączenia, które będą używane przez źródeł danych, które są zdefiniowane w sekcji konfiguracji niestandardowej.  
   
 #### <a name="to-define-connection-strings"></a>Aby określić parametry połączenia  
   
@@ -148,20 +149,20 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- `microsoft.visualstudio.testtools` Element powinien wyglądać podobnie do poniższego:  
-  
-```  
+`microsoft.visualstudio.testtools` Element powinien wyglądać podobnie do poniższego:
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Plik app.config końcowego powinny wyglądać podobnie do poniższego:  
-  
-```  
+```
+
+Plik app.config końcowego powinny wyglądać podobnie do poniższego:
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +218,11 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Aby utworzyć testu jednostkowego przy użyciu pliku app.config źródeł danych  
   
-1.  Dodawanie testu jednostkowego do projektu testowego.  
-  
-     Aby uzyskać więcej informacji, zobacz [tworzenie i Uruchamianie testów jednostek dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Dodawanie testu jednostkowego do projektu testowego.
   
 2.  Zastąp zawartość automatycznego generowania testu jednostkowego z następującym kodem:  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +263,11 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 3.  Sprawdź, czy atrybutów elementu DataSource. Zwróć uwagę, nazwy ustawień z pliku app.config.  
   
 4.  Skompiluj i uruchom testy MyTestMethod i MyTestMethod2.  
-  
+
 > [!IMPORTANT]
->  Wdrażanie elementów, takich jak źródła danych, tak aby były dostępne dla testu w katalogu wdrożenia.  
-  
+> Wdrażanie elementów, takich jak źródła danych, tak aby były dostępne dla testu w katalogu wdrożenia.
+
 ## <a name="see-also"></a>Zobacz też
 
 [Testowanie jednostek kodu](../test/unit-test-your-code.md)  
-[Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Instrukcje: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

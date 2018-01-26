@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
+
 Aby użyć niestandardowego procesora dyrektywy w programie Visual Studio na dowolnym komputerze, musi być zarejestrowany za pomocą jednej z metod opisanych w tym temacie.  
   
- Alternatywne metody to:  
+Alternatywne metody to:  
   
--   [Rozszerzenie programu Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Zapewnia to sposób zainstalowania i odinstalowywania procesora dyrektywy zarówno na swoim komputerze, jak i na innych komputerach. Zazwyczaj można umieścić inne funkcje w tym samym VSIX.  
+-   [Rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Zapewnia to sposób zainstalowania i odinstalowywania procesora dyrektywy zarówno na swoim komputerze, jak i na innych komputerach. Zazwyczaj można umieścić inne funkcje w tym samym VSIX.  
   
 -   [Pakiet VSPackage](../extensibility/internals/vspackages.md). W przypadku definiowania VSPackage, zawierającego inne funkcje oprócz procesora dyrektywy, istnieje wygodna metoda rejestracji procesora dyrektywy.  
   
 -   Ustaw klucz rejestru. W tej metodzie należy dodać wpis rejestru dla procesora dyrektywy.  
   
- Należy użyć jednej z tych metod, tylko wtedy, gdy chcesz transformacji szablonu tekstowego w programie Visual Studio lub [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
+Należy użyć jednej z tych metod, tylko wtedy, gdy chcesz transformacji szablonu tekstowego w Visual Studio lub MSBuild. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Wdrażanie procesora dyrektywy w VSIX  
- Można dodać niestandardowego procesora dyrektywy do [rozszerzenia serwera Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Wdrażanie procesora dyrektywy w VSIX
+
+Można dodać niestandardowego procesora dyrektywy do [rozszerzenia serwera Visual Studio (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Upewnij się, że w pliku .vsix znajdują się dwa następujące elementy:  
   
@@ -39,10 +41,10 @@ Aby użyć niestandardowego procesora dyrektywy w programie Visual Studio na dow
   
 -   Plik .pkgdef, który rejestruje procesor dyrektywy. Główna nazwa pliku musi być zgodna z nazwą zestawu. Na przykład, pliki mogą być nazwane CDP.dll i CDP.pkgdef.  
   
- Aby sprawdzić lub zmienić zawartość pliku .vsix, zmień rozszerzenie nazwy pliku na .zip, a następnie otwórz go. Po zakończeniu edycji zawartości zmień nazwę pliku z powrotem na .vsix.  
-  
- Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje jedną z metod.  
-  
+Aby sprawdzić lub zmienić zawartość pliku .vsix, zmień rozszerzenie nazwy pliku na .zip, a następnie otwórz go. Po zakończeniu edycji zawartości zmień nazwę pliku z powrotem na .vsix.  
+
+Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje jedną z metod.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Aby opracować niestandardowy procesor dyrektywy w projekcie VSIX  
   
 1.  Tworzenie projektu VSIX w programie Visual Studio.  
@@ -90,11 +92,11 @@ Aby użyć niestandardowego procesora dyrektywy w programie Visual Studio na dow
   
 5.  Dodaj następujące odwołania do projektu:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Dodaj niestandardową klasę procesora dyrektywy do projektu.  
   
@@ -197,5 +199,6 @@ Aby użyć niestandardowego procesora dyrektywy w programie Visual Studio na dow
 |Class|REG_SZ|\<**Twoje pełni kwalifikowaną nazwą klasy**>|  
 |Zestaw|REG_SZ|\<**Nazwę zestawu w GAC**>|  
   
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>Zobacz także
+
+[Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego](../modeling/creating-custom-t4-text-template-directive-processors.md)

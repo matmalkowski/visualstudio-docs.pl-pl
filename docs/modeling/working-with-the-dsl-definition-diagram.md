@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5da1da2b7c74f6c95651eeb0120b213ad1e1d394
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 713d7d3598e56ceb4e5a339facb948d6d222a32d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Praca z diagramem definicji DSL
 Diagram [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definicji jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Można dodać elementy do Twojej domeny modelu i definiowanie relacji na diagramie i możesz zmodyfikować układ diagramu, aby był bardziej czytelny.  
@@ -73,4 +73,4 @@ Diagram [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definicji jest ważnym n
  Jeśli relacja domeny ma relacje, lub ma relacje osadzanie lub odwołania z innych relacje domeny, można wyświetlić relacji jako klasa, prawym przyciskiem myszy relację, a następnie klikając polecenie **Pokaż jako klasy** . Relacja będzie wyświetlane z **właściwości domeny** przedziału i wyświetli drzewa dziedziczenia i relacje.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

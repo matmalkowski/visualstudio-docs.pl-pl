@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation (WPF) do przedstawienia sposobu tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.  
@@ -51,7 +51,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
 10. Zaznacz formant przycisku. W oknie Właściwości zmień wartość atrybutu **nazwa** właściwość z \<bez nazwy > Aby button1. Następnie zmień wartość atrybutu **zawartości** właściwości z przycisk Start.  
   
-11. Zaznacz formant paska postępu. W oknie Właściwości zmień wartość dla **nazwa** właściwość z \<bez nazwy > Aby progressBar1. Następnie zmień wartość atrybutu **maksymalna** właściwość z **100** do **10000**.  
+11. Zaznacz formant paska postępu. W oknie Właściwości zmień wartość atrybutu **nazwa** właściwość z \<bez nazwy > Aby progressBar1. Następnie zmień wartość atrybutu **maksymalna** właściwość z **100** do **10000**.  
   
 12. Zaznacz formant pola wyboru. W oknie Właściwości zmień wartość atrybutu **nazwa** właściwość z \<bez nazwy > pole wyboru 1 i wyczyść **IsEnabled** właściwości.  
   
@@ -143,7 +143,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
      UIMap — Konstruktor kodowanego testu interfejsu użytkownika zostanie wyświetlony, a okno programu Visual Studio jest zminimalizowany.  
   
-     Aby uzyskać więcej informacji na temat opcji w oknie dialogowym, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+     Aby uzyskać więcej informacji na temat opcji w oknie dialogowym, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).  
   
 8.  Wybierz **Rozpocznij rejestrowanie** na UIMap - kodowanego testu interfejsu użytkownika.  
   
@@ -368,26 +368,20 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   
-### <a name="videos"></a>Wideo  
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowanego interfejsu użytkownika testów-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>Wideo
+
+![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [wprowadzenie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowanego interfejsu użytkownika testów-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [konserwacji i debugowanie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowanego interfejsu użytkownika testów-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowania ręcznie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230575)
   
-### <a name="hands-on-lab"></a>Ćwiczenia praktyczne  
- [Wirtualne laboratorium MSDN: Wprowadzenie do tworzenia kodowanych testów interfejsu użytkownika z programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>Najczęściej zadawane pytania
+
+[Kodowanych testów interfejsu użytkownika — często zadawane pytania](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>Najczęściej zadawane pytania  
- [Kodowanych testów interfejsu użytkownika — często zadawane pytania - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [Kodowanych testów interfejsu użytkownika — często zadawane pytania -2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>Forum  
- [Visual Studio automatyzacji testów UI (w tym CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>Zobacz też  
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Wprowadzenie do projektanta WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>Zobacz także
+
+[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)  
+[Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

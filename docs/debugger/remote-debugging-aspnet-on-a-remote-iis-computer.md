@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w Visual Studio 2017 r
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
 
 ![Składniki zdalnego debugera](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-W tym przewodniku opisano sposób konfigurowania i konfigurowanie programu Visual Studio 2017 platformy ASP.NET Core, wdrażanie usług IIS i dołączyć debuger zdalny z programu Visual Studio. Do zdalnego debugowania ASP.NET 4.5.2, zobacz [zdalnego debugowania ASP.NET na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Dla usługi Azure App Service można łatwe wdrażanie i debugowanie na wstępnie skonfigurowane wystąpienia usług IIS przy użyciu [debugera migawki](../debugger/debug-live-azure-applications.md) lub [dołączanie debugera z Eksploratora serwera](../debugger/remote-debugging-azure.md).
+W tym przewodniku opisano sposób konfigurowania i konfigurowanie programu Visual Studio 2017 platformy ASP.NET Core, wdrażanie usług IIS i dołączyć debuger zdalny z programu Visual Studio. Do zdalnego debugowania ASP.NET 4.5.2, zobacz [zdalnego debugowania ASP.NET na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Można także wdrożyć i debugowania w usługach IIS przy użyciu usługi Azure. Dla usługi Azure App Service można łatwe wdrażanie i debugowanie na wstępnie skonfigurowane wystąpienia usług IIS i zdalnego debugera za pomocą [debugera migawki](../debugger/debug-live-azure-applications.md) lub [dołączanie debugera z Eksploratora serwera](../debugger/remote-debugging-azure.md).
 
 Procedury te zostały przetestowane na tych konfiguracji serwera:
 * Windows Server 2012 R2 i IIS 8

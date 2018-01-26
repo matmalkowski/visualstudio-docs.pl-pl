@@ -14,18 +14,20 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
-Możesz wygenerować testy jednostkowe metod ogólnych dokładnie tak jak w przypadku innych metod, zgodnie z opisem w [porady: tworzenie i uruchamianie testu jednostkowego](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Poniższe sekcje zawierają informacje i przykłady tworzenia testów jednostkowych dla metod generycznych.  
-  
-## <a name="type-arguments-and-type-constraints"></a>Argumenty typu i ograniczenia typu  
- Gdy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje testu jednostkowego dla klasy ogólnej, takich jak `MyList<T>`, generuje dwóch metod: Ogólne pomocnika i metody testowej. Jeśli `MyList<T>` ma co najmniej jednego ograniczenia typu, argumentu typu muszą spełniać wszystkie ograniczenia typu. Aby upewnić się, że ogólnego kodu w obszarze testu działa zgodnie z oczekiwaniami dla wszystkich dopuszczalna danych wejściowych, metody testowej wywołuje metodę pomocnika ogólnego z ograniczeniami, które mają zostać przetestowane.  
-  
+
+Testy jednostkowe metod ogólnych można generować, dokładnie tak jak w przypadku innych metod. Poniższe sekcje zawierają informacje i przykłady tworzenia testów jednostkowych dla metod generycznych.
+
+## <a name="type-arguments-and-type-constraints"></a>Argumenty typu i ograniczenia typu
+
+Gdy program Visual Studio generuje testu jednostkowego dla klasy ogólnej, takich jak `MyList<T>`, generuje dwóch metod: Ogólne pomocnika i metody testowej. Jeśli `MyList<T>` ma co najmniej jednego ograniczenia typu, argumentu typu muszą spełniać wszystkie ograniczenia typu. Aby upewnić się, że ogólnego kodu w obszarze testu działa zgodnie z oczekiwaniami dla wszystkich dopuszczalna danych wejściowych, metody testowej wywołuje metodę pomocnika ogólnego z ograniczeniami, które mają zostać przetestowane.
+
 ## <a name="examples"></a>Przykłady  
  Poniższe przykłady przedstawiają testów jednostkowych dla typów ogólnych:  
   
@@ -124,7 +126,7 @@ public void SizeOfLinkedListTest()
   
  Druga sekcja zawiera kod z projektu testowego.  
   
-#### <a name="code-under-test-project"></a>Projekt kodu w obszarze testu  
+#### <a name="code-under-test-project"></a>Code-Under-Test Project  
   
 ```  
 using System;  
@@ -197,6 +199,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [Anatomia testu jednostkowego](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Testowanie jednostek kodu](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Zobacz także
+
+[Testowanie jednostek kodu](../test/unit-test-your-code.md)

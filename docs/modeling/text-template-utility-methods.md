@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Metody korzystania z szablonów tekstowych
-Istnieje kilka metod, które są zawsze dostępne podczas pisania kodu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Istnieje kilka metod, które są zawsze dostępne podczas pisania kodu w szablonie tekstu Visual Studio. Te metody są zdefiniowane w <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Można również używać innych metod i usług udostępnianych przez środowisko hosta w szablonie zwykły tekst (nieprzetworzony). Na przykład można rozpoznać ścieżki do pliku, rejestrowanie błędów i pobrać usług świadczonych przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i załadować wszelkie pakiety.  Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do programu Visual Studio z szablonu tekstowego](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Można również używać innych metod i usług udostępnianych przez środowisko hosta w szablonie zwykły tekst (nieprzetworzony). Na przykład można rozpoznać ścieżki do pliku, rejestrowanie błędów i pobrać usług świadczonych przez Visual Studio i wszystkie pakiety załadowane. Aby uzyskać więcej informacji, zobacz [podczas uzyskiwania dostępu do programu Visual Studio z szablonu tekstowego](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Metod zapisu  
- Można użyć `Write()` i `WriteLine()` metody, aby dołączyć tekst wewnątrz bloków kodu standardowe, zamiast blok kodu wyrażenia. Poniższe bloki kodu dwóch działają tak samo.  
+## <a name="write-methods"></a>Metod zapisu
+
+Można użyć `Write()` i `WriteLine()` metody, aby dołączyć tekst wewnątrz bloków kodu standardowe, zamiast blok kodu wyrażenia. Poniższe bloki kodu dwóch działają tak samo.  
   
-##### <a name="code-block-with-an-expression-block"></a>Blok kodu z blok wyrażenia  
+### <a name="code-block-with-an-expression-block"></a>Blok kodu z blok wyrażenia  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Blok kodu przy użyciu WriteLine()  
+### <a name="code-block-using-writeline"></a>Blok kodu przy użyciu WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Wcięcie metody  
+## <a name="indentation-methods"></a>Wcięcie metody
+
  Wcięcie metody umożliwia sformatować dane wyjściowe szablonu tekstu. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Klasa ma `CurrentIndent` ciągu właściwość, która zawiera bieżącego wcięcia w szablonu tekstowego i `indentLengths` oznacza to pole listy wcięcia, które zostały dodane. Można dodać wcięcia z `PushIndent()` — metoda i odejmowania wcięcia z `PopIndent()` metody. Jeśli chcesz usunąć wszystkie wcięcia, użyj `ClearIndent()` metody. Poniższy blok kodu pokazano sposób użycia tych metod:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Błąd i ostrzeżenie metody  
- Można dodawać komunikaty do metody narzędziowe błędu i ostrzeżenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] listy błędów. Na przykład następujący kod doda komunikat o błędzie na liście błędów.  
+ Błąd i ostrzeżenie metody narzędziowe służy do dodawania wiadomości na liście błędów programu Visual Studio. Na przykład następujący kod doda komunikat o błędzie na liście błędów.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Typ `this.Host` zależy od typu hosta, w którym szablon jest wykonywany. W szablonie, który jest uruchomiony w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można rzutować `this.Host` do `IServiceProvider` do uzyskania dostępu do usług, takich jak IDE. Na przykład:  
+ Typ `this.Host` zależy od typu hosta, w którym szablon jest wykonywany. W szablonie, który jest uruchomiony w programie Visual Studio, można rzutować `this.Host` do `IServiceProvider` do uzyskania dostępu do usług, takich jak IDE. Na przykład:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

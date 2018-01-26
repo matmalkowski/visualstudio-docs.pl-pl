@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplikacji sieci Web przez rejestrowanie testów przy użyciu przeglądarki Internet Explorer. Następnie można dostosować swoje badania i odtwarzać je za pomocą Internet Explorer lub innego typu przeglądarki dla tych aplikacji sieci Web.  
@@ -28,7 +28,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
   
     -   Microsoft Windows 7  
   
-    -   System Microsoft Windows 8  
+    -   Microsoft Windows 8  
   
     -   Microsoft Windows Server 2008 R2 SP1  
   
@@ -78,7 +78,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
     > [!TIP]
     >  Możesz również pobrać składników Selenium kodowanego interfejsu użytkownika dla wielu przeglądarki testowania z [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika testy, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+ Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika testy, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md).  
   
 ### <a name="enable-debugging"></a>Włączanie debugowania  
  Aby włączyć debugowanie aplikacji sieci Web, należy zastosować następujące opcje konfiguracji:  
@@ -113,7 +113,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
   
 -   ![Porada](../test/media/tip.png "Porada") możesz skonfigurować dane wyjściowe do zrzutów ekranu w dziennikach kodowanego interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:  
   
-     **C:\Program pliki (x86) \Microsoft Visual Studio 11.0\Common7\IDE**  
+     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
      Ustaw następujące wartości:  
   

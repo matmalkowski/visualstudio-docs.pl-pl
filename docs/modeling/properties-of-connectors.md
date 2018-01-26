@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7874e3017c714f41a660f96bedbb126fe121086e
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 892f9b3cacd5e2c0c33373ca5ec065ba436ffe59
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-connectors"></a>Właściwości łączników
 Łączniki reprezentują relacje domeny w wygenerowanym projektanta.  
@@ -33,21 +33,21 @@ ms.lasthandoff: 01/13/2018
 |Kolor tekstu|Kolor używany do elementów decorator tekstu, które są skojarzone z tym łącznikiem.|czarne|  
 |Grubość|Grubość linii dla tego łącznika, mierzony w milimetrach.|0.03125|  
 |Modyfikator dostępu|Poziom dostępu klasy (`public` lub `internal`).|Public|  
-|Atrybuty niestandardowe|Można dodawać atrybuty do klasy kodu źródłowego, która jest generowana z tego łącznika.|\<Brak >|  
+|Atrybuty niestandardowe|Można dodawać atrybuty do klasy kodu źródłowego, która jest generowana z tego łącznika.|\<none>|  
 |Generuje o podwójnej precyzji pochodnych|Jeśli `True`, zarówno klasy podstawowej i częściowej klasy (obsługuje dostosowywania przy użyciu zastąpień) zostanie wygenerowany. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ma niestandardowy konstruktora|Jeśli `True`, niestandardowe konstruktora znajdzie się w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana z łącznika (`none`, `abstract` lub `sealed`).|brak|  
 |Podstawowy łącznika|Klasa podstawowa tego łącznika.|(Brak)|  
 |Nazwa|Nazwa tego łącznika.|Bieżąca nazwa|  
 |Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym łącznikiem.|Bieżącej przestrzeni nazw|  
-|ToolTip — typ|W jaki sposób element tooltip jest zdefiniowany (stałej, zmiennej lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli zmienna, następnie element tooltip jest zdefiniowany w kodu niestandardowego.|\<Brak >|  
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym łącznikiem.|\<Brak >|  
+|ToolTip — typ|W jaki sposób element tooltip jest zdefiniowany (stałej, zmiennej lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli zmienna, następnie element tooltip jest zdefiniowany w kodu niestandardowego.|\<none>|  
+|Uwagi|Nieformalne uwagi, które są skojarzone z tym łącznikiem.|\<none>|  
 |Styl trasowania|Styl, który służy do routingu łącznika. A `Rectilinear` kątem prostym włącza zgodnie z wymaganiami; sprawia, że łącznik `Straight` łącznika nie ma.|Prostoliniowego|  
 |Kolor narażonych jako właściwość<br /><br /> Styl kreskowania narażonych jako właściwość<br /><br /> Grubość narażonych jako właściwość<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicji kształtu, a następnie kliknij przycisk **dodać widoczne**.|False|  
-|Opis|Używany do dokumentów wygenerowanych projektanta.|\<Brak >|  
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego łącznika.|\<Brak >|  
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałych etykietka narzędzia.|\<Brak >|  
-|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego elementu.|\<Brak >|  
+|Opis|Używany do dokumentów wygenerowanych projektanta.|\<none>|  
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego łącznika.|\<none>|  
+|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałych etykietka narzędzia.|\<none>|  
+|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego elementu.|\<none>|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

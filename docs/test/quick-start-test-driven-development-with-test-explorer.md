@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 0dce2cfd041b3fe0be3ecd4061e3447190d5e448
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: fb46a6d739e06f980b13cd2b643946b47b6661e3
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działanie wielu przyrostowe kroki tworzenia kodu. Istnieje kilka struktur, co umożliwia pisanie testów jednostkowych, w tym również opracowane przez strony trzecie. Niektóre platform testów są przeznaczone do testowania w różnych językach lub platform. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w żadnym z tych platform. Karty są dostępne dla struktur najbardziej często używane, a może zapisywać karty dla innych platform.  
@@ -147,15 +147,15 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
   
      ![Jednostka Test Explorer przedstawiający testu przekazywanie. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodawanie testów, aby rozszerzyć zakres danych wejściowych  
-  
-1.  Aby ulepszyć Twoje pewność, że w kodzie działa we wszystkich przypadkach, Dodaj testy, które spróbuj większej liczby argumentów.  
-  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodawanie testów, aby rozszerzyć zakres danych wejściowych
+
+1.  Aby ulepszyć Twoje pewność, że w kodzie działa we wszystkich przypadkach, Dodaj testy, które spróbuj większej liczby argumentów.
+
     > [!TIP]
-    >  Uniknąć, zmieniając istniejące testy, które przekazują. Zamiast tego należy dodać nowe testy. Zmień istniejące testy, tylko w przypadku zmiany wymagań użytkownika. Ta zasada zapewnia nie utracić istniejące funkcje podczas pracy w celu rozszerzenia kodu.  
-  
-     W klasie testu Dodaj następujący test, który próbuje zakres wartości wejściowych:  
-  
+    >  Uniknąć, zmieniając istniejące testy, które przekazują. Zamiast tego należy dodać nowe testy. Zmień istniejące testy, tylko w przypadku zmiany wymagań użytkownika. Te zasady ułatwiają upewnij się, że nie utracić istniejące funkcje podczas pracy w celu rozszerzenia kodu.
+
+     W klasie testu Dodaj następujący test, który próbuje zakres wartości wejściowych:
+
     ```csharp  
     [TestMethod]  
     public void RooterValueRange()  

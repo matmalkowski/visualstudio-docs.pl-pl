@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a582796e7436df49a719d758896ee8dcea43b068
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 74d271b6d1c9124d323b9c1ecbbfe9e716b1c5b8
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
 Za pomocą frameworka testów jednostkowych Microsoft dla kodu zarządzanego, można skonfigurować metody testowej jednostki można pobrać wartości używanych w metodzie testowej ze źródła danych. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, co ułatwia testowanie różnych danych wejściowych przy użyciu pojedynczej metody.  
@@ -83,7 +83,7 @@ public int AddIntegers(int first, int second)
 ##  <a name="BKMK_Creating_a_data_source"></a>Tworzenie źródła danych  
  Aby przetestować `AddIntegers` metody, utworzymy źródła danych, która określa zakres wartości dla parametrów i sum, które mają zostać zwrócone. W naszym przykładzie tworzymy bazy danych Sql Compact `MathsData` i tabela o nazwie `AddIntegersData` zawiera następujące nazwy kolumn i wartości  
   
-|Pierwszaliczba|Drugaliczba|Suma|  
+|Pierwszaliczba|SecondNumber|Suma|  
 |-----------------|------------------|---------|  
 |0|1|1|  
 |1|1|2|  
@@ -182,12 +182,12 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  Po testowana metoda jest usuwana testu, uruchom ponownie, na pasku wyniki włącza zielony i metody testowej jest przenoszony do **przekazany Test** grupy.  
   
-## <a name="see-also"></a>Zobacz też  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Porady: tworzenie i uruchamianie testu jednostkowego](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
- [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
- [Uruchom testy jednostkowe za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)   
- [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## <a name="see-also"></a>Zobacz także
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>  
+[Testowanie jednostek kodu](../test/unit-test-your-code.md)  
+[Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)  
+[Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

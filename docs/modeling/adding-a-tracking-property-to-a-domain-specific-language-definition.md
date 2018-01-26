@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 W tym przewodniku przedstawiono sposób dodawania właściwości śledzenia do modelu domeny.  
@@ -27,7 +27,7 @@ W tym przewodniku przedstawiono sposób dodawania właściwości śledzenia do m
   
  W narzędzia języka specyficznego dla domeny (narzędzia DSL), wyświetlana nazwa właściwości klasy domeny ma wartość domyślną, która jest obliczana przy użyciu nazwy klasy domeny, ale użytkownik może na przykład zmień wartość w czasie projektowania lub zresetować go do obliczonej wartości.  
   
- W tym przewodniku możesz utworzyć języka specyficznego dla domeny (DSL), którego Namespace, śledzenie właściwość, która ma wartość domyślną, na podstawie właściwości Namespace domyślny modelu. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ W tym przewodniku możesz utworzyć języka specyficznego dla domeny (DSL), którego Namespace, śledzenie właściwość, która ma wartość domyślną, na podstawie właściwości Namespace domyślny modelu. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak DSL projektanta nie można dodać właściwość śledzenia na język. W związku z tym należy dodać kodu niestandardowego do definiowania i implementować właściwość śledzenia.  
   
@@ -48,9 +48,9 @@ W tym przewodniku przedstawiono sposób dodawania właściwości śledzenia do m
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Tworzenie projektu DSL  
  Tworzenie projektu dla danego języka specyficznego dla domeny.  
@@ -253,7 +253,7 @@ W tym przewodniku przedstawiono sposób dodawania właściwości śledzenia do m
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Aby zmodyfikować deskryptora typu dla klasy domeny ExampleModel  
   
 1.  Dodaj następujący kod do pliku TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

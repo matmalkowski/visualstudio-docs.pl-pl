@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych plików w sieci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Zazwyczaj pisania szablonów, aby różnią kodu, które generują one zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje na temat wymagań aplikacji.  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  W przypadku zmiany modelu źródłowego, należy ponownie uruchom wszystkie szablony w rozwiązaniu. W tym celu należy ręcznie wybrać **Przekształć wszystkie szablony** na **kompilacji** menu.  
   
- Jeśli zainstalowano [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania SDK może mieć wszystkie szablony przekształcone automatycznie przy każdym wykonaniu kompilacji. Aby to zrobić, Edytuj plik projektu (pliku .csproj lub .vbproj) w edytorze tekstów i dodaj następujące wiersze zbliża się koniec pliku, po innych `<import>` instrukcji:  
+ Po zainstalowaniu programu Visual Studio SDK modelowania może mieć wszystkie szablony przekształcone automatycznie przy każdym wykonaniu kompilacji. Aby to zrobić, Edytuj plik projektu (pliku .csproj lub .vbproj) w edytorze tekstów i dodaj następujące wiersze zbliża się koniec pliku, po innych `<import>` instrukcji:
 
+> [!NOTE]
+> W programie Visual Studio 2017 r. SDK transformacji szablonu tekstowego Visual Studio SDK modelowania są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  
@@ -337,7 +336,7 @@ Warning("A warning message");
   
     |||  
     |-|-|  
-    |**Niestandardowe narzędzie =**|**Texttemplatingfilegenerator —**|  
+    |**Niestandardowe narzędzie =**|**TextTemplatingFileGenerator**|  
     |**Akcja kompilacji =**|**Brak**|  
   
 5.  Wstaw następujące wiersze na początku pliku:  
