@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords: Class Designer [Visual Studio], typedefs
+helpviewer_keywords:
+- Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 Instrukcji TypeDef utworzyć jednej lub kilku warstw pośredników między nazwą jego typ podstawowy. Projektant klas obsługuje typy typedef języka C++, które są zadeklarowane ze słowem kluczowym `typedef`, na przykład:  
@@ -48,10 +51,10 @@ typedef class coord
    unsigned x;  
    unsigned y;  
 };  
-```  
-  
-Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [typedef specyfikator](https://msdn.microsoft.com/en-us/library/05w82thz.aspx).  
-  
+```
+
+Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [definicje typów](/cpp/aliases-and-typedefs-cpp#typedefs).
+
 Kształt C++ element typedef ma kształt z typem określonym w definicji typu. Na przykład, jeśli źródło deklaruje `typedef class`, kształt zaokrąglonymi narożnikami, a etykieta **klasy**. Aby uzyskać `typedef struct`, kształt ma narożniki i etykiety **struktury**.  
   
 Klasy i struktury mogą mieć zagnieżdżonych definicje typów zadeklarowana wewnątrz. w związku z tym kształty klasy i struktury można wyświetlić deklaracje typedef zagnieżdżonych jako kształtów zagnieżdżonych.  
@@ -201,5 +204,6 @@ Class
 -> MyIntVect  
   
 ## <a name="see-also"></a>Zobacz także
-[Praca z kodem Visual C++](working-with-visual-cpp-code.md)   
-[Specyfikator — TypeDef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)
+
+[Praca z kodem Visual C++](working-with-visual-cpp-code.md)  
+[Definicje typów](/cpp/aliases-and-typedefs-cpp#typedefs)

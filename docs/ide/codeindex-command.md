@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3f181dccce6239cc8014e8e8ebf54c2e53794a50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 350708309cdc7a65b8c991454704dc9212f20ef8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="codeindex-command"></a>Polecenie CodeIndex
 Użyj **CodeIndex** polecenia do zarządzania kodu indeksowania na Team Foundation Server. Na przykład można zresetować indeks, aby naprawić informacje wskaźników CodeLens lub wyłączyć funkcję indeksowania do badania problemów z wydajnością serwera.  
@@ -54,7 +56,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/ignoreList:**[Dodaj &#124; Usuń &#124; removeAll &#124; widok]`ServerPath`<br /><br /> Na początek, koniec lub obu końców ścieżki serwera, można użyć znaku wieloznacznego (*).|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodawanie pliku, który ma nie być indeksowane do listy plików została zignorowana.<br />-   **Usuń**: Usuń plik, który ma być indeksowany z listy plików została zignorowana.<br />-   **removeAll**: Wyczyść listy plików została zignorowana i uruchomić indeksowania wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|  
 |**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Zawiera określoną liczbę plików, która przekracza określony rozmiar w KB. Następnie można użyć **/ignoreList** opcji, aby wykluczyć pliki indeksowania.|  
 |**/reindexAll**|Wyczyść wcześniej zindeksowanych danych i uruchom ponownie indeksowania.|  
-|**/destroyCodeIndex [/ noprompt]**|Usuwanie indeksu kodu i wszystkie zindeksowanych danych. Nie wymaga potwierdzenia, jeśli używasz **/noprompt** opcji.|  
+|**/destroyCodeIndex [/noPrompt]**|Usuwanie indeksu kodu i wszystkie zindeksowanych danych. Nie wymaga potwierdzenia, jeśli używasz **/noprompt** opcji.|  
 |**/temporaryDataSizeLimit**: [Widok &#124; <`SizeInGBs`> &#124; Wyłącz]|Kontroli ilości tymczasowe dane CodeLens tworzy podczas przetwarzania grupy zmian. Domyślny limit wynosi 2 GB.<br /><br /> -   **Widok**: Pokaż bieżący limit rozmiaru.<br />-   `SizeInGBs`: Zmienić limit rozmiaru.<br />-   **Wyłącz**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzana przed CodeLens przetwarza nowy zestaw zmian. Jeśli dane tymczasowe przekracza ten limit, CodeLens wstrzyma przetwarzania poza grupy zmian, nie nowe. CodeLens spowoduje ponowne uruchomienie przetwarzania po danych jest wyczyszczone, a spadnie poniżej tego limitu. Oczyszczanie jest uruchamiany automatycznie raz dziennie. Oznacza to, że dane tymczasowe może przekroczenia tego limitu do momentu wyczyszczenia zacznie działać.|  
 |**/indexHistoryPeriod**: [Widok &#124; wszystkie &#124; <`NumberOfMonths`>]|Formant, jak długo indeksu historii zmian. Ma to wpływ na ile historii CodeLens przedstawiono. Domyślny limit wynosi 12 miesięcy. Oznacza to, CodeLens przedstawia historię zmian tylko w ostatnich 12 miesięcy.<br /><br /> -   **Widok**: Pokaż bieżąca liczba miesięcy.<br />-   **wszystkie**: indeks cała historia zmian.<br />-   `NumberOfMonths`: Liczba miesięcy, używany do historii zmian indeksu zmienić.|  
 |**/collectionName:**`CollectionName`|Określa nazwę kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|  
@@ -128,5 +130,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>Zobacz także
 
 [Znajdowanie zmian w kodzie i innych elementów historii za pomocą wskaźników CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)  
-[Zarządzanie konfiguracją serwera z TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)  
-[Narzędzia wiersza polecenia dla serwerów TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+[Zarządzanie konfiguracją serwera z TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd)

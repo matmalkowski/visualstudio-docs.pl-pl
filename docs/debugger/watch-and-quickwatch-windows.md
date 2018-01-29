@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Ustaw czujki na zmiennych czujki i QuickWatch Windows w programie Visual Studio
-Podczas debugowania, można użyć **czujki** (**debugowania > Windows > Obejrzyj > Obejrzyj (1, 2, 3, 4)**) i **QuickWatch** (kliknij prawym przyciskiem myszy na zmiennej /  **Debuguj > QuickWatch**) systemu windows, aby obejrzeć zmiennych i wyrażeń.  Różnica jest to, że **czujki** można wyświetlić w oknie kilku zmiennych podczas **QuickWatch** okno wyświetla pojedynczą zmienną w czasie.
+Podczas debugowania, można użyć **czujki** i **QuickWatch** systemu windows, aby obejrzeć zmiennych i wyrażeń.  Różnica jest to, że **czujki** można wyświetlić w oknie kilku zmiennych podczas **QuickWatch** okno wyświetla pojedynczą zmienną w czasie. 
 
-Systemu windows są dostępne tylko podczas sesji debugowania. 
+Systemu windows są dostępne tylko podczas sesji debugowania. Aby otworzyć **czujki** okna, wybierz **debugowania > Windows > Obejrzyj > Obejrzyj (1, 2, 3, 4)**). Aby otworzyć **QuickWatch** okna, albo kliknij prawym przyciskiem myszy w zmiennej i wybierz **QuickWatch** lub wybierz **Debuguj > QuickWatch**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Obserwowania pojedynczą zmienną z QuickWatch  
  Można użyć **QuickWatch** okna, aby przyjrzeć się pojedynczą zmienną. Na przykład, jeśli masz następujący kod:  
@@ -54,11 +55,11 @@ static void Main(string[] args)
   
 2.  Rozpocznij debugowanie. Wykonanie zatrzymuje się na punkt przerwania.  
   
-3.  Otwórz **QuickWatch** okna (kliknij prawym przyciskiem myszy, a następnie wybierz **QuickWatch**, lub **SHIFT + F9**).
+3.  Otwórz **QuickWatch** okna (kliknij prawym przyciskiem myszy `a`, a następnie wybierz **QuickWatch**, lub wybierz `a` i naciśnij klawisz **SHIFT + F9**).
 
     Powinny pojawić się zmienną w **wartości** okna o wartości 1.
 
-    ![Wyrażenie QuickWatch](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     Jeśli chcesz ocenić wyrażenia przy użyciu zmiennej, dodać wyrażenie, takie jak `a + b` do **wyrażenie** i kliknij **obliczyć ponownie**. 
   
@@ -115,7 +116,7 @@ int main()
   
  Na przykład jeśli masz kod przedstawiony w poprzedniej sekcji, można uzyskać średnią z trzech wartości następująco:  
   
- ![Obejrzyj wyrażenie](../debugger/media/watchexpression.png "WatchExpression")  
+ ![Watch Expression](../debugger/media/watchexpression.png "WatchExpression")  
   
  W ogólności, zasady obliczania wyrażeń w **czujki** okna są takie same jak zasady obliczania wyrażeń języka programowania. Jeśli wyrażenie zawiera błąd składniowy, można oczekiwać, że ten sam błąd kompilatora, które są widoczne w edytorze kodu. Oto przykład:  
   

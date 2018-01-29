@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ClassDesigner.OverrideMembersDialog
+f1_keywords:
+- vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
 - members, overriding
 - overriding members
@@ -18,23 +20,25 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 63a81fef59104d6731a782575fe1c3b23f48e304
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3bdf6237fdbfb6e15df0d58835c260252cd8efdb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoryzacja klas i typów (Projektant klas)
-Gdy zrefaktoryzuj kod, można ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jej wewnętrznej struktury i sposobu jego obiektów zaprojektowany nie jego zachowanie zewnętrznych. Użyj projektanta klas i okno Szczegóły klasy do zmniejszenia pracy, musisz wykonać i ryzyko wprowadzenia usterek, gdy Refaktoryzuj kodu Visual C# .NET, Visual Basic .NET lub C++ w projekcie programu Visual Studio.  
-  
+
+Gdy zrefaktoryzuj kod, można ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jej wewnętrznej struktury i sposobu jego obiektów zaprojektowany nie jego zachowanie zewnętrznych. Korzystanie z projektanta klas i okno Szczegóły klasy do Zmniejsz ilość pracy, które musisz wykonać oraz ryzyko wprowadzenia usterki, gdy Refaktoryzuj kodu C#, VB lub C++ w projekcie programu Visual Studio.
+
 > [!NOTE]
->  Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany; jest przywoływanego projektu; lub jego pliki nie są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów zostaną wyświetlone różne sposoby, aby zapisać swoją pracę, w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod w inny sposób, na przykład bezpośrednio edytując ją zmienić. Aby uzyskać więcej informacji, zobacz [wyświetlane informacje tylko do odczytu](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
-  
+> Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany, jest przywoływanego projektu lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów zostaną wyświetlone różne sposoby, aby zapisać swoją pracę, w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod w inny sposób, na przykład bezpośrednio edytując ją zmienić.
+
 ## <a name="common-tasks"></a>Typowe zadania  
   
 |Zadanie|Zawartość pomocnicza|  

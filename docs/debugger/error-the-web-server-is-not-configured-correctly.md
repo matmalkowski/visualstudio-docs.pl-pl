@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 09/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.remote.projnotconfigured
+f1_keywords:
+- vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "22"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Błąd: Serwer sieci Web nie jest prawidłowo skonfigurowany
 
@@ -39,7 +43,7 @@ Wykonaj następujące kroki, aby rozwiązać ten problem:
 
     Jeśli aplikacja sieci web został skopiowany do innej maszyny, ręcznie przeniesiony lub ścieżka fizyczna może być niepoprawny. Resetowanie usług IIS i spróbuj ponownie.
 
-3. W programie Visual Studio Sprawdź, czy właściwym serwerem jest wybrane we właściwościach. (Otwórz **właściwości > sieci Web > serwery** lub **właściwości > debugowanie** zależnie od typu projektu. W projekcie formularzy sieci Web otwórz **strony właściwości > opcje Start > serwer**).
+3. Jeśli debugujesz lokalnie w programie Visual Studio, sprawdź, czy we właściwościach wybrano właściwym serwerem. (Otwórz **właściwości > sieci Web > serwery** lub **właściwości > debugowanie** zależnie od typu projektu. W projekcie formularzy sieci Web otwórz **strony właściwości > opcje Start > serwer**).
 
     Jeśli używasz zewnętrznego serwera (niestandardowy), takich jak IIS, adres URL musi być prawidłowy. W przeciwnym razie wybierz usług IIS Express i spróbuj ponownie.
 

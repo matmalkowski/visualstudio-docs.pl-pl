@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 475c228dc7031dbb7cb98d9f325fcce89f31223b
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista zadań, środowisko, opcje — Okno dialogowe
 Ta strona Opcje umożliwia dodawanie, usuwanie i zmienić tokenów komentarzy, które generują **listy zadań** przypomnienia. Aby wyświetlić te ustawienia, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **środowiska** folderu i wybierz polecenie **listy zadań**.  
@@ -51,7 +53,7 @@ Ta strona Opcje umożliwia dodawanie, usuwanie i zmienić tokenów komentarzy, k
  Gdy Wstaw komentarz do kodu, w których tekst rozpoczyna się od tokenu z **lista tokenów**, **listy zadań** Wyświetla komentarz jako nowy wpis w każdym przypadku, gdy plik jest otwarty do edycji. Kliknij ten przycisk **listy zadań** wpis, aby przejść bezpośrednio do wiersza komentarz w kodzie. Aby uzyskać więcej informacji, zobacz [korzystanie z listy zadań](../../ide/using-the-task-list.md).  
   
  lista tokenów  
- Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokeny niestandardowe. Tokeny komentarza to rozróżnianiem wielkości liter w Visual C# i Visual C++, ale nie w języku Visual Basic.  
+ Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokeny niestandardowe. Tokeny komentarza to rozróżnianiem wielkości liter w języku C# i Visual C++, ale nie w języku Visual Basic.  
   
 > [!NOTE]
 >  Jeśli nie wpiszesz żądanego tokenu dokładnie w brzmieniu podanym w **lista tokenów**, komentarza zadania nie będą wyświetlane w **listy zadań**.  

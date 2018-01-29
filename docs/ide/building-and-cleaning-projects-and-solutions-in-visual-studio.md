@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
 Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie lub wyczyść wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Samouczek krok po kroku, zobacz [wskazówki: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).  
@@ -58,11 +60,11 @@ Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie 
   
 1.  W **Eksploratora rozwiązań**, wybierz lub Otwórz projekt.  
   
-2.  Na pasku menu wybierz **kompilacji**i wybrać opcję **kompilacji***ProjectName* lub **odbudować***ProjectName*.  
+2.  Na pasku menu wybierz **kompilacji**i wybrać opcję **kompilacji *** ProjectName* lub **odbudować *** ProjectName*.  
   
-    -   Wybierz **kompilacji***ProjectName* tworzenie tylko tych projektu składników, które zostały zmienione od czasu ostatniej kompilacji.  
+    -   Wybierz **kompilacji *** ProjectName* tworzenie tylko tych projektu składników, które zostały zmienione od czasu ostatniej kompilacji.  
   
-    -   Wybierz **odbudować***ProjectName* "Wyczyść" Projekt i późniejszego kompilowania plików projektu i wszystkie składniki projektu.  
+    -   Wybierz **odbudować *** ProjectName* "Wyczyść" Projekt i późniejszego kompilowania plików projektu i wszystkie składniki projektu.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Tworzenie tylko projekt startowy i jego zależności  
   
@@ -92,7 +94,7 @@ Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie 
   
     -   **Wyczyść tylko** *ProjectName*  
   
-    -   **Połącz tylko** *ProjectName*  
+    -   **Link Only** *ProjectName*  
   
     Polecenia te dotyczą tylko [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wybranego, bez tworzenia, ponownie skompilować, czyszczenia lub łączenia wszystkie zależności projektu lub rozwiązania pliki projektu. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **projektu tylko** podmenu może zawierać więcej poleceń.  
   
@@ -111,11 +113,12 @@ Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie 
     -   Wybierz polecenie Ctrl + Break kluczy.  
   
 ## <a name="see-also"></a>Zobacz także
-[Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)   
-[Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)   
-[Konfiguracje debugowania i wydania projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)   
-[Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)   
+
+[Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)  
+[Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)  
+[Instrukcje: ustawienia konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+[Dokumentacja kompilacji w języku C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)  
 [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)

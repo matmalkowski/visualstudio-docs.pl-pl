@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
@@ -84,8 +86,10 @@ Często ten błąd występuje, ponieważ zmiana konfiguracji lub błąd wystąpi
 
 ## <a name="server_error"></a>Serwer zdalny zwrócił błąd
 
-Sprawdź kod błędu, który jest zwracany w wiadomości, aby zidentyfikować przyczynę problemu. Poniżej przedstawiono kilka typowych kody błędów.
-- (403) zabroniony. Sprawdź, czy łączysz się z właściwym serwerem typu i adres URL (w **właściwości > sieci Web > serwery** lub **właściwości > debugowanie**w zależności od typu projektu). Sprawdź także, że plik web.config zawiera `debug=true` w elemencie kompilacji. Jeśli te ustawienia są już prawidłowe, sprawdź, czy folderze aplikacji sieci Web ma uprawnienia prawidłowy folder. Aby uzyskać więcej informacji, zobacz [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck).
+Sprawdź Twojej [pliku dziennika usług IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) kody błędów podrzędne i dodatkowe informacje oraz tej usługi IIS 7 [wpis w blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Ponadto poniżej przedstawiono niektóre często występujące kody błędów i kilka sugestii.
+- (403) zabroniony. Istnieje wiele możliwych przyczyn tego błędu, dlatego należy sprawdzić plik dziennika i ustawienia zabezpieczeń programu IIS dla witryny sieci web. Upewnij się, że plik web.config zawiera `debug=true` w elemencie kompilacji. Upewnij się, że folder aplikacji sieci Web ma odpowiednie uprawnienia i czy w konfiguracji puli aplikacji jest poprawna, (mógł ulec zmianie hasła). Zobacz [Sprawdź konfigurację usług IIS](#vxtbshttpservererrorsthingstocheck). Jeśli te ustawienia są już prawidłowe, i debugowania lokalnie, Sprawdź również, że łączysz się z właściwym serwerem typu i adres URL (w **właściwości > sieci Web > serwery** lub **właściwości > debugowanie**, w zależności od typu projektu).
 - (503) serwer jest niedostępny. Pula aplikacji może mieć została zatrzymana z powodu zmiany konfiguracji lub błąd. Ponowne uruchomienie puli aplikacji.
 - (404) nie można odnaleźć. Upewnij się, że pula aplikacji jest skonfigurowana dla odpowiedniej wersji programu ASP.NET.
 
@@ -125,7 +129,7 @@ Po wykonaniu kroków szczegółowe tutaj, aby rozwiązać ten problem, a przed p
     
 * Sprawdź, czy folder aplikacji sieci Web ma odpowiednie uprawnienia.
 
-    Upewnij się, nadaj IIS_IUSRS, IUSR lub konkretnego użytkownika skojarzonego z odczytu puli aplikacji, a następnie wykonać uprawnień dla folderu aplikacji sieci Web. Usuń problem i ponownie uruchom pulę aplikacji.
+    Upewnij się, że zapewniają IIS_IUSRS, IUSR, lub określonego użytkownika skojarzony z [puli aplikacji](/iis/manage/configuring-security/application-pool-identities) Odczyt i wykonywanie uprawnień dla folderu aplikacji sieci Web. Usuń problem i ponownie uruchom pulę aplikacji.
 
 * Upewnij się, zainstalowanie odpowiedniej wersji programu ASP.NET w usługach IIS.
 

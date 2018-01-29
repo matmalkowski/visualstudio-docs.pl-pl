@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: accessibility [Visual Studio]
+helpviewer_keywords:
+- accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Porady: ustawianie opcji ułatwień dostępu IDE
 > [!TIP]
@@ -33,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="editors-dialogs-and-tool-windows"></a>Edytory, okna dialogowe i okna narzędzi  
  Domyślnie, okna dialogowe i okien narzędzi w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używać tego samego rozmiaru czcionki i kolory jako systemu operacyjnego. Ustawienia kolorów dla ramki IDE, okna dialogowe, pasków narzędzi i okien narzędzi są oparte schemat kolorów: jasny lub ciemny. Można zmienić bieżącego motywu kolorów w [ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md).  
 
- Można także wyświetlić wyskakujących okienek w widok kodu edytora. Okna te można monit z dostępnych elementów członkowskich w bieżący obiekt i parametrów do wykonania instrukcji lub funkcji. Okna te mogą być przydatne, jeśli masz problemy z pisaniem. Jednak zakłócają fokusu w edytorze kodu, który może być problemów w przypadku niektórych użytkowników. Można wyłączyć te okna, otwierając okno dialogowe Opcje i wyczyszczenie **automatyczna lista członków** i **informacje o parametrach** w **Edytor tekstu**, **wszystkie Języki**, **ogólne** strony **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie opcji ogólnych edytora](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Można także wyświetlić wyskakujących okienek w widok kodu edytora. Okna te można monit z dostępnych elementów członkowskich w bieżący obiekt i parametrów do wykonania instrukcji lub funkcji. Okna te mogą być przydatne, jeśli masz problemy z pisaniem. Jednak zakłócają fokusu w edytorze kodu, który może być problemów w przypadku niektórych użytkowników. Można wyłączyć te okna, otwierając okno dialogowe Opcje i wyczyszczenie **automatyczna lista członków** i **informacje o parametrach** w **Edytor tekstu**, **wszystkie Języki**, **ogólne** strony **opcje** okno dialogowe.
 
  Możesz zmienić kolejność w zintegrowane środowisko programistyczne (IDE) z własnymi sposobu pracy systemu windows. Można dock, float, Ukryj lub ukrywać każdego okna narzędzia.  
 

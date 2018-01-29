@@ -1,5 +1,5 @@
 ---
-title: "Wskazówki: Tworzenie prostej aplikacji z Visual C# lub Visual Basic | Dokumentacja firmy Microsoft"
+title: "Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 10/03/2017
 ms.reviewer: 
@@ -11,18 +11,19 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: b33816e074cf63826c931bcda0978ebdb5bb8bbe
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Wskazówki: Tworzenie prostej aplikacji z użyciem Visual C# lub Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic
 Wykonując tego przewodnika, użytkownik będzie zapoznanie się z wielu narzędzi, okna dialogowe i projektantów, których można używać podczas opracowywania aplikacji za pomocą programu Visual Studio. Będzie utworzyć prostą aplikację "Hello, World", projektowanie interfejsu użytkownika, Dodaj kod i debugowanie błędów w czasie Dowiedz się więcej o pracy w zintegrowane środowisko programistyczne (IDE).
   
 ##  <a name="BKMK_ConfigureIDE"></a>Konfigurowanie środowiska IDE  

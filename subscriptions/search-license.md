@@ -1,5 +1,5 @@
 ---
-title: Wyszukiwanie i filtrowanie | Visual Studio Marketplace
+title: Wyszukiwanie i filtrowanie | Dokumentacja firmy Microsoft
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can locate individual subscribers or group
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 65ffebd7cd1472dbf0acfdda2f102da6e8273c92
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: fddd8f950969d77ac879d8570bba21468f657123
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Wyszukiwanie i filtrowanie subskrybentów w subskrypcji programu Visual Studio
 Portalu administracyjnego subskrypcji programu Visual Studio umożliwia wyszukiwanie konkretnego podzestawu subskrybentów na podstawie różnych kryteriów. Można filtrować listy subskrybentów nazwa, adres e-mail, poziom subskrypcji i różnych innych informacji. 

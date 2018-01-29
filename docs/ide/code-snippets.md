@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets"></a>Wstawki kodu
 
@@ -91,6 +92,6 @@ Można dodawać i usuwać katalogi fragment kodu z **Dodaj** i **Usuń** przycis
 [Instrukcje: Dystrybucja fragmentów kodu](../ide/how-to-distribute-code-snippets.md)  
 [Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu](../ide/best-practices-for-using-code-snippets.md)  
 [Rozwiązywanie problemów z fragmentami kodu](../ide/troubleshooting-snippets.md)  
-[Fragmenty kodu Visual C#](../ide/visual-csharp-code-snippets.md)  
+[Wstawki kodu C#](../ide/visual-csharp-code-snippets.md)  
 [Fragmenty kodu Visual C++](../ide/visual-cpp-code-snippets.md)  
 [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

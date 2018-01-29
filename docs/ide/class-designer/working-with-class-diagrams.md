@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Praca z diagramami klas (Projektant klas)
 Klasa diagramy ułatwiające zrozumienie, jakie struktura klas projektów innym zostały zapisane (lub która zarejestrowała dawno temu). Można je dostosować, udostępniać i prezentować informacje projektu z innymi osobami.  
@@ -39,6 +41,7 @@ Po ma dopracowaniu jeden lub więcej diagramów klasy, możesz skopiować je do 
 >  Projektant klas nie śledzi lokalizację plików źródłowych, więc zmiany struktury projektu lub przenoszenie plików źródłowych w projekcie może spowodować Projektant klas utratę informacji o tego typu, szczególnie typ źródła jako element typedef, klas podstawowych lub typu powiązania. Może być wyświetlany komunikat o błędzie, takich jak **Projektant klas nie może wyświetlić tego typu**. Jeśli to zrobisz, przeciągnij kod źródłowy zmodyfikowany lub przeniesiono do diagramu klas, aby ją wyświetlić go ponownie.
   
 ## <a name="see-also"></a>Zobacz także
-[Wyświetlanie typów i relacji](viewing-types-and-relationships.md)   
-[Porady: dostosowywanie diagramów klasy](how-to-customize-class-diagrams.md)   
-[Porady: usuwanie kształtów typu z diagramów klas](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+
+[Wyświetlanie typów i relacji](viewing-types-and-relationships.md)  
+[Porady: dostosowywanie diagramów klasy](how-to-customize-class-diagrams.md)  
+[Porady: usuwanie kształtów typu z diagramów klas](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

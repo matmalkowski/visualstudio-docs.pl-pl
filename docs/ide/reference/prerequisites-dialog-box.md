@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-helpviewer_keywords: Prerequisites dialog box
+f1_keywords:
+- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
+helpviewer_keywords:
+- Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
@@ -42,7 +46,7 @@ Wymagane składniki, które są widoczne w **wymagania wstępne** okno dialogowe
 
 |Element|Opis|
 |-------------|-----------------|
-|**.NET framework 3.5 z dodatkiem SP1**|Ten pakiet instaluje następujące czynności:<br /><br /> -.NET framework w wersji 2.0, 3.0 i 3.5.<br />-Obsługa wszystkich wersji systemu .NET Framework w 32-bitowych (x86) i (x64) 64-bitowych systemach operacyjnych.<br />— Pakiety językowe dla każdej wersji .NET Framework, który ma zainstalowany pakiet.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do systemu Windows Vista i .NET Framework 3.5 jest dołączana do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. .NET framework 3.5 jest wymagana dla wszystkich języków Visual Basic i Visual C# projektów, które są kompilowane dla 32-bitowych systemów operacyjnych i który wynosi przez platformę docelową **.NET Framework 3.5**, a dla projektów języka Visual Basic i Visual C# skompilowany dla 64-bitowych systemach operacyjnych. (IA64 nie jest obsługiwana.) Należy pamiętać, że projekty Visual Basic i Visual C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [programu Visual Studio omówienie Wielowersyjności](../../ide/visual-studio-multi-targeting-overview.md), [redystrybuowanie programu .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287), i [wdrażanie wymagania wstępne dotyczące aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Ten element jest wybrany domyślnie.|
+|**.NET framework 3.5 z dodatkiem SP1**|Ten pakiet instaluje następujące czynności:<br /><br /> -.NET framework w wersji 2.0, 3.0 i 3.5.<br />-Obsługa wszystkich wersji systemu .NET Framework w 32-bitowych (x86) i (x64) 64-bitowych systemach operacyjnych.<br />— Pakiety językowe dla każdej wersji .NET Framework, który ma zainstalowany pakiet.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do systemu Windows Vista i .NET Framework 3.5 jest dołączana do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. .NET framework 3.5 jest wymagana dla wszystkich projektów Visual Basic i C#, które są kompilowane dla 32-bitowych systemów operacyjnych i która platforma docelowa ma wartość **.NET Framework 3.5**, a dla projektów Visual Basic i C# skompilowana dla wersji 64-bitowych systemy operacyjne. (IA64 nie jest obsługiwana.) Należy pamiętać, że projekty Visual Basic i C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [programu Visual Studio omówienie Wielowersyjności](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wymagania wstępne dotyczące aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Ten element jest wybrany domyślnie.|
 |**Microsoft .NET Framework 4.x**|Ten pakiet instaluje program .NET Framework 4.x x86 i x64 64.|
 |**Microsoft System CLR Types dla programu SQL Server 2014 (x64 i x86)**|Ten pakiet instaluje program Microsoft System CLR Types dla programu SQL Server 2014 dla x64 lub x86.|
 |**SQL Server 2008 R2 Express**|Ten pakiet instaluje program Microsoft SQL Server 2008 R2 Express, bezpłatna wersja programu Microsoft SQL Server 2008 R2, idealne bazy danych dla małych sieci web, serwera lub aplikacje. Może służyć bezpłatnie do prac deweloperskich i produkcji. Bezpłatny [rejestracji](http://go.microsoft.com/fwlink/?LinkId=130380) jest wymagana do dystrybucji programu SQL Server 2008 R2 Express z aplikacją.|
@@ -56,6 +60,5 @@ Wymagane składniki, które są widoczne w **wymagania wstępne** okno dialogowe
 
 [Strona publikowania, Projektant projektu](../../ide/reference/publish-page-project-designer.md)  
 [Wstępnie wymagane składniki wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)  
-[Redystrybuowanie programu .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Wielowersyjność kodu w programie Visual Studio ― przegląd](../../ide/visual-studio-multi-targeting-overview.md)

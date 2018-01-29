@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,23 +16,24 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88f3ec2d9e8c682511c87cbcf5a5690ae797d8c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie
 
-W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visual C#, które można tworzyć w tym samym czasie, niektóre domyślne kompilacji zachowania i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, zaznacz **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i wybierz **skompilować i uruchomić**.
+W tym oknie można określić maksymalną liczbę projektów Visual C++ lub C#, które można tworzyć w tym samym czasie, niektóre domyślne kompilacji zachowania i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, zaznacz **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i wybierz **skompilować i uruchomić**.
   
 **Maksymalna liczba równoległych projektu kompilacji**  
-Określa maksymalną liczbę projektów Visual C++ i Visual C#, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów jest automatycznie ustawiana liczby procesorów komputera. Wartość maksymalna to 32.  
+Określa maksymalną liczbę projektów Visual C++ i C#, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów jest automatycznie ustawiana liczby procesorów komputera. Wartość maksymalna to 32.  
 
 **Tworzyć tylko projekty startowe i zależności przy uruchomieniu**  
 Tworzy tylko projekt startowy i jego zależności użycia klucza, wybierz opcję F5 **debugowania > Start** polecenia menu lub odpowiednich poleceń na **kompilacji** menu. Jeżeli wyczyszczone, wszystkie projekty i zależności są kompilacji. 

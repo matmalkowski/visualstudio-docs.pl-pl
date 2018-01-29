@@ -1,24 +1,27 @@
 ---
-title: Jakie opcje publikowania jest dla mnie odpowiednia? | Dokumentacja firmy Microsoft
+title: Jakie opcje publikowania jest dla mnie odpowiednia? | Microsoft Docs
 ms.custom: 
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # Jakie opcje publikowania jest dla mnie odpowiednia?
 
@@ -31,26 +34,22 @@ Z poziomu programu Visual Studio, aplikacji sieci Web mogą być publikowane bez
 
 Na **publikowania** kartę, wybierz istniejący profil publikowania, zaimportować istniejący lub Utwórz nową przy użyciu opcji opisanych w tym miejscu.
 
-## Usługa aplikacji Azure
+## Aplikacje sieci Web usługi aplikacji Azure
 
-[Usługa aplikacji Azure](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) ułatwia deweloperom szybkie tworzenie szerokiej gamy usług i aplikacji sieci web skalowalności bez obsługa infrastruktury.
+[Azure App Service Web Apps](/azure/app-service/app-service-web-overview) (lub po prostu aplikacji sieci Web) ułatwia deweloperom szybkie tworzenie szerokiej gamy usług i aplikacji sieci web skalowalności bez obsługa infrastruktury.
 
-W szczególności dla aplikacji sieci web usługi aplikacji to kontener dla [ *aplikacji sieci Web*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/), ściśle zgodnej, co można będzie traktować jako hosta sieci web tradycyjnych. Oznacza to aplikacji sieci Web udostępnia zasoby niezbędne obliczeniowe, których można uruchomić kod po stronie serwera i udostępnić go przez Internet.
-
-Należy określić, ile obliczeniowych zasilania aplikacji sieci Web ma, wybierając [cen warstwy lub plan](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) zawierającego usługi aplikacji. Istnieje wiele aplikacji sieci Web (i inne typy aplikacji) udostępnić tę samą usługę aplikacji bez Zmiana warstwy cenowej. Na przykład może obsługiwać programowanie, tymczasowych i produkcyjnych aplikacji sieci Web razem na tej samej usługi aplikacji.
+Należy określić, ile obliczeniowych zasilania aplikacji sieci Web ma, wybierając [cen warstwy lub plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) zawierającego usługi aplikacji. Istnieje wiele aplikacji sieci Web (i inne typy aplikacji) udostępnić tę samą usługę aplikacji bez Zmiana warstwy cenowej. Na przykład może obsługiwać programowanie, tymczasowych i produkcyjnych aplikacji sieci Web razem na tej samej usługi aplikacji.
 
 Uruchamia usługę aplikacji hostowanych w chmurze maszyn wirtualnych na platformie Azure, ale te maszyny wirtualne są zarządzane dla Ciebie. Każdej aplikacji sieci Web w usłudze App Service zostanie przypisany unikatowy \*. azurewebsites.net URL; wszystkie warstwy cenowe innych niż wolne umożliwia przypisywanie niestandardowych nazw domen do lokacji.
 
-### Kiedy należy wybrać usługi aplikacji Azure
+### Kiedy należy wybrać aplikacje sieci Web usługi aplikacji Azure
 
 - Chcesz wdrożyć aplikacji sieci web, który jest dostępny za pośrednictwem Internetu.
 - Użytkownik chce automatycznie skalować bez konieczności ponownego wdrażania aplikacji sieci web w zależności od potrzeb.
 - Nie chcesz zachować infrastruktury serwera (w tym aktualizacji oprogramowania).
 - Wszystkie dostosowania poziomu komputera, na serwerach, które host aplikacji sieci web nie jest konieczne.
 
-
 > Jeśli chcesz używać usługi Azure App Service w własnego centrum danych lub innych komputerów lokalnych, możesz to zrobić za pomocą [stosu Azure](https://azure.microsoft.com/overview/azure-stack/).
-
 
 ## Maszyny wirtualne platformy Azure
 

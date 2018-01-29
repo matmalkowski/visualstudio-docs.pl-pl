@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,27 +14,28 @@ helpviewer_keywords:
 - Web applications, accessibility
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6df23292ef3ae5016d2ddd48f0ced93e3a577a2f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 Skorzystaj z poniższych linków, aby uzyskać informacje o technologii, które obsługują dostępny projektu, a także wskazówki i przykłady rozwoju witryny sieci Web i aplikacje dostępne w systemie Windows. Ogólne informacje o ułatwieniach dostępu można znaleźć w [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
   
-## <a name="technologies"></a>Technologie  
+## <a name="technologies"></a>Technologies  
   
 -   **Microsoft Active Accessibility** technologii A COM, który zwiększa dostępność sposób pomaga w pracy z aplikacjami z systemem Microsoft Windows. Udostępnia biblioteki dll, które są włączone do systemu operacyjnego, a także interfejsu COM i elementy programowania aplikacji, które zapewniają niezawodne metod publikowania informacji na temat elementów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
   
 -   **Microsoft .NET mowy technologii** zestawu SDK programu Microsoft .NET mowy to zestaw Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] formantów, dodatku programu Microsoft Internet Explorer mowy przykładowe aplikacje i dokumentacji, który umożliwia deweloperom sieci Web do tworzenia, debugowania i Wdrażanie włączone mowy [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] aplikacji. Narzędzia są bezproblemowo zintegrowane z programu Microsoft Visual Studio, co umożliwia deweloperom wykorzystać środowisko projektowe znane. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
   
--   **Opis SAMI 1.0** technologii firmy Microsoft synchronizowane dostępny Media Interchange (SAMI), umożliwia deweloperom podpis audio zawartości dla multimediów komputera. Aby uzyskać więcej informacji, zobacz [http://msdn.microsoft.com/en-us/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+-   **Opis SAMI 1.0** technologii firmy Microsoft synchronizowane dostępny Media Interchange (SAMI), umożliwia deweloperom podpis audio zawartości dla multimediów komputera. Aby uzyskać więcej informacji, zobacz [1.0 SAMI opis](http://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Aplikacje systemu Windows  
   
@@ -45,13 +47,9 @@ Skorzystaj z poniższych linków, aby uzyskać informacje o technologii, które 
   
 ## <a name="web-sites"></a>Witryny sieci Web  
   
--   [Wskazówki: Dostęp — wytyczne za pomocą formantów obrazu, kontrolek Menu i AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten temat zawiera instrukcje krok po kroku włączania dostępne elementy sterujące przykładowa strona sieci Web, jak również pewne wskazówki dotyczące projektowania ułatwień dostępu Witryna sieci Web.  
+-   [Wskazówki: Dostęp — wytyczne za pomocą formantów obrazu, kontrolek Menu i AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) ten temat zawiera instrukcje krok po kroku włączania dostępne elementy sterujące przykładowa strona sieci Web, jak również pewne wskazówki dotyczące projektowania ułatwień dostępu Witryna sieci Web.
   
--   **Udostępnianie stron sieci Web więcej** tego artykułu technicznego zawiera listę elementów HTML 3.2, które są dostępne, a także elementów, które można udostępnić do użycia w przypadku rozwoju witryny sieci Web. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/en-us/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
-  
--   **Tworzenie stron sieci Web dostępne z DHTML** tego artykułu technicznego zawiera listę elementów HTML 4.0, które są dostępne, a także dostępne wskazówki dotyczące projektowania sieci Web. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
-  
--   **Alternatywy tekstu do stron sieci Web niedostępna** tego artykułu technicznego informacje dotyczące używania pliku XML i XSLT zapewnienie wiele widoków tej samej stronie sieci Web, takich jak tekst tylko w wersji. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+-   **Tworzenie stron sieci Web dostępne z DHTML** tego artykułu technicznego zawiera listę elementów HTML 4.0, które są dostępne, a także dostępne wskazówki dotyczące projektowania sieci Web. Aby uzyskać więcej informacji, zobacz [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
   
 ### <a name="third-party-resources"></a>Zasoby innych firm  
   

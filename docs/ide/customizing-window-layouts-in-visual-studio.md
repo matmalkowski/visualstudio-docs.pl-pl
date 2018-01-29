@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e26a9fa0daf5c92c81161bdcafd92490f9a05113
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 W programie Visual Studio można dostosować położenie, rozmiar i zachowania systemu windows, aby utworzyć układów okien, które najlepiej dla różnych Projektowanie przepływów pracy. Podczas dostosowywania układ IDE pamięta. Na przykład możesz zmienić lokalizację dokowania **Eksploratora rozwiązań** , a następnie zamknij program Visual Studio, przy następnym uruchomieniu, nawet jeśli pracujesz na innym komputerze, **Eksploratora rozwiązań** będzie zadokowane w tej samej lokalizacji. Można także nazwę niestandardowego układu i zapisz go, a następnie przełączać się między układów za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji i drugi dla debugowania i przełączać się między nimi przy użyciu **okno &#124; Zastosuj układ okna** polecenia menu.  
@@ -134,7 +136,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowania s
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Utwórz projekt interfejsu użytkownika i dostosowanie układu  
 
-1.  W **nowy projekt** okna dialogowego, Utwórz Visual C# pulpitu aplikacji WPF i Wywołaj jego dowolne. Podawać, że jest to projekt gdy firma Microsoft będzie działać w interfejsie użytkownika, chcemy, aby zmaksymalizować obszar okna projektanta i Przenieś innych okien narzędzi do końca.  
+1.  W **nowy projekt** okna dialogowego, tworzenie aplikacji pulpitu WPF C# i wywołać go, co chcesz. Podawać, że jest to projekt gdy firma Microsoft będzie działać w interfejsie użytkownika, chcemy, aby zmaksymalizować obszar okna projektanta i Przenieś innych okien narzędzi do końca.  
 
 2.  Jeśli masz wiele monitorów ściągnięcia **Eksploratora rozwiązań** okna i **właściwości** okna za pośrednictwem drugiego monitora. W systemie jednego monitora należy zamknąć wszystkie okna z wyjątkiem projektanta.  
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — Odwołanie do schematu
 Wstawki kodu IntelliSense są wstępnie utworzone fragmenty kodu, które są gotowe do wstawienia do aplikacji z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Umożliwiają one poprawę wydajności pracy, ponieważ zmniejszają ilość czasu spędzanego na wielokrotnym wpisywaniu tego samego kodu czy wyszukiwaniu przykładów. Służy do tworzenia własnych fragmentów kodu i dodaj je do wstawki kodu schematu XML fragmentu kodu IntelliSense który [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] już zawiera.  
@@ -35,8 +37,8 @@ Wstawki kodu IntelliSense są wstępnie utworzone fragmenty kodu, które są got
 |[Element autora](../ide/code-snippets-schema-reference.md#author)|[Identyfikator elementu](../ide/code-snippets-schema-reference.md#id)|[Element skrótów](../ide/code-snippets-schema-reference.md#shortcut)|  
 |[Code Element](../ide/code-snippets-schema-reference.md#code)|[Import — Element](../ide/code-snippets-schema-reference.md#import)|[Fragment kodu — Element](../ide/code-snippets-schema-reference.md#snippet)|  
 |[CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet)|[Element importów](../ide/code-snippets-schema-reference.md#imports)|[SnippetType Element](../ide/code-snippets-schema-reference.md#snippettype)|  
-|[CodeSnippets Element](../ide/code-snippets-schema-reference.md#codesnippets)|[Element — słowo kluczowe](../ide/code-snippets-schema-reference.md#keyword)|[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|  
-|[Deklaracje — Element](../ide/code-snippets-schema-reference.md#declarations)|[Element słowa kluczowe](../ide/code-snippets-schema-reference.md#keywords)|[Tytuł elementu](../ide/code-snippets-schema-reference.md#title)|  
+|[CodeSnippets Element](../ide/code-snippets-schema-reference.md#codesnippets)|[Keyword Element](../ide/code-snippets-schema-reference.md#keyword)|[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|  
+|[Deklaracje — Element](../ide/code-snippets-schema-reference.md#declarations)|[Keywords Element](../ide/code-snippets-schema-reference.md#keywords)|[Tytuł elementu](../ide/code-snippets-schema-reference.md#title)|  
 |[Domyślny Element](../ide/code-snippets-schema-reference.md#default)|[Element literał](../ide/code-snippets-schema-reference.md#literal)|[Etykietka narzędzia elementu](../ide/code-snippets-schema-reference.md#tooltip)|  
 |[Opis elementu](../ide/code-snippets-schema-reference.md#description)|[Namespace — Element](../ide/code-snippets-schema-reference.md#namespace)|[Typ elementu](../ide/code-snippets-schema-reference.md#type)|  
 |[Element — funkcja](../ide/code-snippets-schema-reference.md#function)|[Object Element](../ide/code-snippets-schema-reference.md#object)|[Adres URL elementu](../ide/code-snippets-schema-reference.md#url)|  
@@ -240,7 +242,7 @@ Dostępne są trzy atrybuty dla elementu kodu:
  Określa funkcję do wykonania, gdy w programie Visual Studio na literale lub obiekcie zostanie ustawiony fokus.  
   
 > [!NOTE]
->  `Function` Jest obsługiwany tylko w wstawki kodu Visual C#.  
+>  `Function` Jest obsługiwany tylko w wstawki kodu C#.  
   
 ```xml  
 <Function>  
@@ -275,7 +277,7 @@ Dostępne są trzy atrybuty dla elementu kodu:
 |[Element autora](../ide/code-snippets-schema-reference.md#author)|Element opcjonalny. Imię i nazwisko/nazwa osoby lub firmy, która utworzyła fragment kodu. Może być zero lub jeden `Author` elementów w `Header` elementu.|  
 |[Opis elementu](../ide/code-snippets-schema-reference.md#description)|Element opcjonalny. Opis fragmentu kodu. Może być zero lub jeden `Description` elementów w `Header` elementu.|  
 |[HelpUrl Element](../ide/code-snippets-schema-reference.md#helpurl)|Element opcjonalny. Adres URL strony zawierającej poszerzone informacje o fragmencie kodu. Może być zero lub jeden `HelpURL` elementy w elemencie nagłówka. **Uwaga:** programu Visual Studio nie używa `HelpUrl` elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.|  
-|[Element słowa kluczowe](../ide/code-snippets-schema-reference.md#keywords)|Element opcjonalny. Grupy `Keyword` elementów. Może być zero lub jeden `Keywords` elementów w `Header` elementu.|  
+|[Keywords Element](../ide/code-snippets-schema-reference.md#keywords)|Element opcjonalny. Grupy `Keyword` elementów. Może być zero lub jeden `Keywords` elementów w `Header` elementu.|  
 |[Element skrótów](../ide/code-snippets-schema-reference.md#shortcut)|Element opcjonalny. Określa tekst skrótu, który pozwala wstawić fragment kodu. Może być zero lub jeden `Shortcut` elementów w `Header` elementu.|  
 |[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|Element opcjonalny. Grupy `SnippetType` elementów. Może być zero lub jeden `SnippetTypes` elementów w `Header` elementu. Jeśli istnieją nie `SnippetTypes` elementów, fragment kodu zawsze jest prawidłowy.|  
 |[Tytuł elementu](../ide/code-snippets-schema-reference.md#title)|Element wymagany. Przyjazna nazwa fragmentu kodu. Musi istnieć dokładnie jeden `Title` element `Header` elementu.|  
@@ -369,7 +371,7 @@ Dostępne są trzy atrybuty dla elementu kodu:
   
 |Element nadrzędny|Opis|  
 |--------------------|-----------------|  
-|[Element słowa kluczowe](../ide/code-snippets-schema-reference.md#keywords)|Poszczególne grupy `Keyword` elementów.|  
+|[Keywords Element](../ide/code-snippets-schema-reference.md#keywords)|Poszczególne grupy `Keyword` elementów.|  
   
  Wartość tekstowa jest wymagana. Słowo kluczowe fragmentu kodu.  
   
@@ -385,7 +387,7 @@ Dostępne są trzy atrybuty dla elementu kodu:
   
 |Element podrzędny|Opis|  
 |-------------------|-----------------|  
-|[Element — słowo kluczowe](../ide/code-snippets-schema-reference.md#keyword)|Element opcjonalny. Zawiera poszczególne słowa kluczowe fragmentu kodu. Może wynosić zero lub więcej `Keyword` elementów w `Keywords` elementu.|  
+|[Keyword Element](../ide/code-snippets-schema-reference.md#keyword)|Element opcjonalny. Zawiera poszczególne słowa kluczowe fragmentu kodu. Może wynosić zero lub więcej `Keyword` elementów w `Keywords` elementu.|  
   
 |Element nadrzędny|Opis|  
 |--------------------|-----------------|  
@@ -563,7 +565,7 @@ Dostępne są trzy atrybuty dla elementu kodu:
   
 -   `Expansion`: umożliwia fragment kodu, który ma zostać wstawiony wskazywanej przez kursor.  
   
--   `Refactoring`: Określa, że fragment kodu jest używany podczas refaktoryzacji Visual C#. `Refactoring`Nie można używać w wstawki kodu niestandardowego.  
+-   `Refactoring`: Określa, że fragment kodu jest używany podczas refaktoryzacji C#. `Refactoring`Nie można używać w wstawki kodu niestandardowego.  
   
 ##  <a name="snippettypes"></a>SnippetTypes Element  
  Poszczególne grupy `SnippetType` elementów. Jeśli `SnippetTypes` element nie jest obecny, fragment kodu może zostać wstawiony w dowolne miejsce w kodzie.  

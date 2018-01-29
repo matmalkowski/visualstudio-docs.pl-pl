@@ -1,5 +1,5 @@
 ---
-title: "Przy użyciu kluczy produktu"
+title: "Przy użyciu kluczy produktu | Dokumentacja firmy Microsoft"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Przy użyciu kluczy produktu w ramach subskrypcji programu Visual Studio
+
 ## <a name="product-keys-overview"></a>Omówienie kluczy produktu
 Visual Studio subskrypcje zapewniają dostęp do produktów szeroki zakres Microsoft projektowanie, tworzenie, testowanie i ilustrujące aplikacji. Niektóre z tych produktów wymagają klucze produktu podczas instalacji, a niektóre z tych wymagają aktywacji.
 
@@ -45,7 +46,7 @@ Jeśli użytkownik zastrzeżenia maksymalną liczbę kluczy dostępne dla Twojej
 Nasze badanie zawiera większość subskrybentów są objęte liczba kluczy produktu zawarte w nich. Jeśli potrzebujesz dodatkowych kluczy, należy przesłać żądanie za pośrednictwem subskrypcja programu Visual Studio [obsługi klienta](https://www.visualstudio.com/subscriptions/support/) i zostanie uwzględniony zatwierdzenia przez przypadku.
 
 ## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie, a także klucze produktów
-Możesz muszą być podpisane subskrypcji programu Visual Studio Aby wyświetlić klucze produktu. Znaleziono kluczami produktów poszczególnych wybierając niebieski **uzyskać klucz** łączy dla określonego produktu na [pliki do pobrania](https://my.visualstudio.com/downloads) strony, jak pokazano poniżej.  Wszystkie klucze są także dostępne w agregacji na [klucze produktu](https://my.visualstudio.com/productkeys) strony. Gdy istnieje wiele kluczy dla pojedynczego produktu, uwagi będą wyświetlane w kolumnie o wersji do pobrania pomóc w określeniu, klucz, do którego powinien być używany.
+Możesz muszą być podpisane subskrypcji programu Visual Studio Aby wyświetlić klucze produktu. Znaleziono kluczami produktów poszczególnych wybierając niebieski **uzyskać klucz** łączy dla określonego produktu na [pliki do pobrania](https://my.visualstudio.com/downloads) strony, jak pokazano poniżej.  Wszystkie klucze są także dostępne w agregacji na [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) strony. Gdy istnieje wiele kluczy dla pojedynczego produktu, uwagi będą wyświetlane w kolumnie o wersji do pobrania pomóc w określeniu, klucz, do którego powinien być używany.
 
 ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
 
@@ -79,7 +80,7 @@ Tylko subskrybenci z aktywne subskrypcje można pobrać produktów i oświadcze�
 
 Aby potwierdzić klucz produktu:
 1.  Zaloguj się do subskrypcji programu Visual Studio.  Użytkownik musi zalogowany do pobrania produktów lub oświadczeń kluczy produktu. 
-2.  Polecenie [klucze produktu](https://my.visualstudio.com/productkeys) kartę.
+2.  Polecenie [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartę.
 3.  Klucze produktu alfabetycznym według nazwy produktu.  Można albo przewiń w dół nazwa żądanego produktu, lub wyszukaj go przy użyciu pasek wyszukiwania w górnej części strony.  
 ![Wyszukiwanie klucza produktu](_img\product-keys\visio-product-key-cropped.png)
 
@@ -91,7 +92,7 @@ Możesz wyeksportować listę wszystkich kluczy, które zostały przejęte, wraz
 
 **Ważne: Jeśli subskrypcja wygaśnie, nie będzie można oświadczeń nowych kluczy lub wyeksportować oświadczeniem kluczy.** 
 
-Aby wyeksportować klucze, wystarczy kliknąć na **wyeksportować wszystkie klucze** przycisku z prawej strony kluczy produktu.  Zostanie utworzony plik .xml prawo KeysExport.xml i będziesz mieć możliwość otworzyć lub zapisać plik.  Należy otworzyć plik przy użyciu aplikacji może obsługiwać plików XML.  Na przykład można otworzyć pliku jako tylko do odczytu skoroszytu programu Excel.  
+Aby wyeksportować klucze, wystarczy kliknąć na **wyeksportować wszystkie klucze** łącza po prawej stronie kluczy produktu.  Zostanie utworzony plik .xml prawo KeysExport.xml i będziesz mieć możliwość otworzyć lub zapisać plik.  Należy otworzyć plik przy użyciu aplikacji może obsługiwać plików XML.  Na przykład można otworzyć pliku jako tylko do odczytu skoroszytu programu Excel.  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Pokazów Internet za pośrednictwem usług terminalowych
 Korzystanie z subskrypcji programu Visual Studio, mogą zapewnić użytkownikom dostęp do Internetu pokazów programy za pomocą usług terminalowych (z systemem Windows Server 2003 lub Windows Server 2008) lub usług pulpitu zdalnego (Windows Server 2008 R2 lub nowszy). Maksymalnie 200 użytkowników anonimowych ma równoczesny dostęp użytkownika pokaz w ten sposób. Pokaz użytkownika nie mogą używać danych produkcyjnych. Subskrybentów usługi Visual Studio są licencjonowane do zaprezentowania swoich aplikacji dla użytkowników końcowych. Jedyny scenariusz, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio zakłócają aplikacja przykładowa gdy oprogramowanie jest licencjonowane za pomocą Visual jest tej prezentacji Internet za pomocą usług terminalowych (TS) lub usług pulpitu zdalnego (RDS) Subskrypcje Studio.
@@ -99,8 +100,9 @@ Korzystanie z subskrypcji programu Visual Studio, mogą zapewnić użytkownikom 
 Jest to oprócz praw i testowania, gdzie subskrybentów usługi Visual Studio można użyć jako wiele połączeń usług pulpitu zdalnego lub usług terminalowych w razie potrzeby.
 
 ### <a name="enabling-rds-access"></a>Włączanie dostępu do usług pulpitu zdalnego 
-Subskrybentów usługi Visual Studio może zwiększyć liczbę użytkowników, którzy można uzyskać dostępu do systemu Windows Server za pośrednictwem usług pulpitu zdalnego, wprowadzając klucz produktu dostarczony w [klucze produktu](https://my.visualstudio.com/productkeys) karcie na [portal subskrybenta](https://my.visualstudio.com). Aby uzyskać klucz produktu, połączyć się ze stroną kluczy produktów i przewiń w dół do wersji systemu Windows Server są uruchomione. Znajdź "Systemu Windows Server < wersja > R2 połączeń usług pulpitu zdalnego < użytkownika lub urządzenia >", a następnie kliknij przycisk **klucz oświadczenia** łącza. Na przykład jeśli używasz usług pulpitu zdalnego w systemie Windows Server 2012 R2 i instalacja używa licencje CAL użytkownika, wybierz "Systemu Windows Server 2012 połączeń usług pulpitu zdalnego użytkownika (50)".
+Subskrybentów usługi Visual Studio może zwiększyć liczbę użytkowników, którzy można uzyskać dostępu do systemu Windows Server za pośrednictwem usług pulpitu zdalnego, wprowadzając klucz produktu dostarczony w [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) karcie na [portal subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Aby uzyskać klucz produktu, połączyć się ze stroną kluczy produktów i przewiń w dół do wersji systemu Windows Server są uruchomione. Znajdź "Systemu Windows Server < wersja > R2 połączeń usług pulpitu zdalnego < użytkownika lub urządzenia >", a następnie kliknij przycisk **klucz oświadczenia** łącza. Na przykład jeśli używasz usług pulpitu zdalnego w systemie Windows Server 2012 R2 i instalacja używa licencje CAL użytkownika, wybierz "Systemu Windows Server 2012 połączeń usług pulpitu zdalnego użytkownika (50)".
 Klucze pięć każdego typu są dostępne dla systemu Windows Server 2008 R2, a każdy klucz będzie obsługiwać 20 połączeń. Dla systemu Windows Server 2012 R2 cztery klucze raz dla każdego typu są Podaj i będzie obsługiwać 50 połączeń. 
+
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Aby włączyć dodatkowe połączenia w systemie Windows Server: 
 1.  Otwórz Menedżera serwera.
 2.  Otwórz listę serwerów w okienku nawigacji w lewo.
@@ -113,4 +115,4 @@ Użytkownicy końcowi mogą łączyć się uzyskiwać dostęp do aplikacji za po
 - Maksymalnie 200 równoczesnych użytkowników połączenia mogą być używane w przypadku pokazów aplikacji. 
 - Klucze produktu, aby umożliwić połączenia użytkownika musi zostać uzyskana przez subskrybenta programu Visual Studio.
 
-Jeśli potrzebujesz instrukcje dotyczące konfigurowania licencjonowania usług pulpitu zdalnego na serwerze, można znaleźć pod adresem [konfiguracji licencjonowania usług pulpitu zdalnego w systemie Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Jeśli masz pytania, odwiedź stronę [forum usług pulpitu zdalnego firmy Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS). 
+Jeśli potrzebujesz instrukcje dotyczące konfigurowania licencjonowania usług pulpitu zdalnego na serwerze, można znaleźć pod adresem [konfiguracji licencjonowania usług pulpitu zdalnego w systemie Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Jeśli masz pytania, odwiedź stronę [forum usług pulpitu zdalnego firmy Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS). 

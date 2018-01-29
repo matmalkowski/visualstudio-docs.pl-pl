@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,16 +20,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 53fe343002de3f89431927c95f36a0c092b36c2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifestów aplikacji i wdrażania, a także można podpisać zestawu (podpisywanie silną nazwą).  
@@ -89,11 +91,11 @@ Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifest�
 > [!NOTE]
 >  Po zarejestrowaniu zestawu nie zawsze masz dostęp do klucza prywatnego. Na przykład organizacja może być ściśle związany pary kluczy deweloperzy nie mają dostępu do codziennie. Klucz publiczny mogą być dostępne, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnione* lub *częściowe podpisywanie* zapewnienie klucza publicznego, odkładanie dodanie klucza prywatnego, aż zestaw zostanie przekazany dalej.  
   
-## <a name="see-also"></a>Zobacz też  
- [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   
- [Zarządzanie zestawem i podpisywanie manifestu](../../ide/managing-assembly-and-manifest-signing.md)   
- [Podpisywanie zarządzanych aplikacji silnej nazwy](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Porady: podpisywanie aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Porady: podpisać zestawu (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
- [Porady: podpisać zestaw o silnej nazwie](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)   
+## <a name="see-also"></a>Zobacz także
+
+[Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)  
+[Zarządzanie podpisywaniem zestawu i manifestu](../../ide/managing-assembly-and-manifest-signing.md)  
+[Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md)  
+[Porady: podpisać zestawu (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)  
+[Instrukcje: podpisywanie zestawu silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)  
+[Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies) 

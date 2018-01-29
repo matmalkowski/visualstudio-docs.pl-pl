@@ -1,5 +1,5 @@
 ---
-title: "Edytować subskrypcje w portalu administratora | Visual Studio Marketplace"
+title: "Edytować subskrypcje w portalu administratora | Dokumentacja firmy Microsoft"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edytowanie przypisania subskrypcji programu Visual Studio
 
@@ -29,13 +29,15 @@ Można aktualizować abonenta imię, nazwisko, kraj, język i pliki do pobrania.
 
    ![Edytuj szczegóły subskrybenta](_img\edit-license\edit-subscriber.png)
 
-Uwaga: Jeśli potrzebujesz zmienić poziom subskrypcji dla subskrybenta, konieczne będzie usunięcie użytkownika z portalu i dodać je ponownie. Poziomy subskrypcji jest niemożliwa.
+> [!NOTE]
+> Jeśli potrzebujesz zmienić poziom subskrypcji dla subskrybenta, należy usunąć użytkownika z portalu i dodać je ponownie. Poziomy subskrypcji jest niemożliwa.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Edytowanie wielu subskrybentów za pomocą edycji zbiorczej
 
 Można edytować wielu subskrybentów jednocześnie przy użyciu procesu zbiorczego edycji. Ta funkcja jest głównie używana dla organizacji, które są pośrednictwa firmowej poczty e-mail zmiany adresu lub jeśli podjęto decyzję o ograniczanie dostępu do plików do pobrania dla organizacji. 
 
-**Ważne:** poziomy subskrypcji (tj. Enterprise, Professional, itp.) i nie można zmienić subskrypcji identyfikatorów GUID.  Przy próbie przekazania z następującymi elementami zmienić przekazywania zakończy się niepowodzeniem.  
+> [!IMPORTANT]
+> Poziomy subskrypcji (tj. Enterprise, Professional, itp.) i nie można zmienić subskrypcji identyfikatorów GUID.  Przy próbie przekazania z następującymi elementami zmienić przekazywania zakończy się niepowodzeniem.  
 
 1.  Aby edytować wielu subskrybentom naraz, przejdź do karty subskrybentów. Na Wstążce u góry kliknij **zbiorczo edytować**. 
 

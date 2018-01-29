@@ -36,7 +36,7 @@
 ### [Podręcznik administratora programu Podgląd Pomocy](ide/help-viewer-administrator-guide.md)
 #### [Argumenty wiersza poleceń Menedżera zawartości pomocy](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Przesłonięcia Menedżera zawartości Pomocy](ide/help-content-manager-overrides.md)
-### Tematy pomocy
+### Odwołanie
 #### [Identyfikatory obciążeń i składników programu Visual Studio](install/workload-and-component-ids.md)
 #### [Numery wersji i daty wydania programu Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
 ## [Instalowanie narzędzi do kompilacji w kontenerze](install/build-tools-container.md)
@@ -74,7 +74,6 @@
 ##### [Różnice między dodawaniem odwołań za pomocą narzędzia NuGet i zestawu SDK rozszerzenia](ide/adding-references-using-nuget-versus-an-extension-sdk.md)
 ##### [Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic)](ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 ##### [Rozwiązywanie problemów z przerwanymi odwołaniami](ide/troubleshooting-broken-references.md)
-#### [Właściwości aplikacji](ide/application-properties.md)
 #### [Zarządzanie zasobami aplikacji (.NET)](ide/managing-application-resources-dotnet.md)
 #### [Zarządzanie ustawieniami aplikacji (.NET)](ide/managing-application-settings-dotnet.md)
 ##### [Dodawanie pliku konfiguracji aplikacji do projektu C#](ide/how-to-add-app-config-file.md)
@@ -308,7 +307,7 @@
 ### [Globalizowanie aplikacji](ide/globalizing-applications.md)
 #### [Klasy specyficzne dla kultury na potrzeby globalnych formularzy Windows Forms i formularzy internetowych](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Tworzenie aplikacji w językach dwukierunkowych](ide/creating-applications-in-bi-directional-languages.md)
-# Tematy pomocy
+# Odwołanie
 ## [Co nowego](ide/whats-new-in-visual-studio.md)
 ### Szablony projektów i elementów
 ### [Parametry szablonu](ide/template-parameters.md)

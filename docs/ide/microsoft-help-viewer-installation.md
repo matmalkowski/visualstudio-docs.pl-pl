@@ -8,32 +8,32 @@ ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- installing the Help Viewer
+- installing Help Viewer
 - Help Viewer, installing
-ms.assetid: 51e72eac-d5d7-45e6-8899-04935499d1a6
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9192bc9e69e977b8e0e8a4bbdf36a9d20e9d33f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7bf5b2645a3d37c7c8f146f154503944dd8e3d50
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
+
 Kilka produktów można wyświetlić zawartości pomocy w podglądu pomocy firmy Microsoft, w tym programu Visual Studio i SQL Server.
 
 Podgląd pomocy jest opcjonalna instalacja składników programu Visual Studio. Aby zainstalować go za pośrednictwem Instalator programu Visual Studio, wykonaj następujące kroki:
 
 1. Otwórz **Instalator programu Visual Studio** z Start menu lub, jeśli masz program Visual Studio Otwórz można **narzędzia**, **Pobierz narzędzia i funkcje...**  otworzyć Instalator programu Visual Studio.
 
-2. Wybierz **pojedynczych składników** , a następnie wybierz **podglądu pomocy** w obszarze **kodu narzędzia** sekcji.
+1. Wybierz **pojedynczych składników** , a następnie wybierz **podglądu pomocy** w obszarze **kodu narzędzia** sekcji.
 
    ![Składnik Podgląd Pomocy Instalatora programu VS](media/help_viewer_vs_installer.png)
 
-3. Wybierz **Modyfikuj** przycisk, aby rozpocząć instalację programu Podgląd Pomocy firmy Microsoft.
+1. Wybierz **Modyfikuj** przycisk, aby rozpocząć instalację programu Podgląd Pomocy firmy Microsoft.
 
 Innym sposobem z łatwością zainstalować podglądu pomocy firmy Microsoft jest za pośrednictwem **Szybkie uruchamianie** pola:
 
@@ -41,9 +41,9 @@ Innym sposobem z łatwością zainstalować podglądu pomocy firmy Microsoft jes
 
    ![Szybkie uruchamianie pole](media/help_viewer_quick_launch.png)
 
-2. Wybierz wynik instalacji o nazwie **podglądu pomocy (składnik Indiviual)**.
+1. Wybierz wynik instalacji o nazwie **podglądu pomocy (składnik Indiviual)**.
 
-3. W otwartym oknie dialogowym wybierz **zainstalować** przycisku.
+1. W otwartym oknie dialogowym wybierz **zainstalować** przycisku.
 
    ![Przycisk Zainstaluj](media/help_viewer_install.png)
 
@@ -52,5 +52,6 @@ Innym sposobem z łatwością zainstalować podglądu pomocy firmy Microsoft jes
 |  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |  [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) o sposobie instalowania podglądu pomocy firmy Microsoft przy użyciu Instalator programu Visual Studio. |
 
 ## <a name="see-also"></a>Zobacz także
+
 [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)  
 [Podgląd pomocy i zawartości w trybie offline dla programu SQL Server](/sql/sql-server/sql-server-help-installation)

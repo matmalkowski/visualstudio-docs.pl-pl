@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Toolbox, Components tab
-ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
-caps.latest.revision: "14"
+helpviewer_keywords:
+- Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf0ab13b104422771b117c17ed3ff89b53fa461f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta Składniki
-Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektantów. Oprócz [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składników, które są dołączone do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], takich jak <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog> składników, można dodać użytkownika składników własnych lub innej firmy do tej karty. Aby uzyskać więcej informacji, zobacz [porady: manipulowanie karty przybornika](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+
+Wyświetla składniki, które można dodać do projektantów języka Visual Basic i C#. Oprócz składników .NET Framework, które są dołączone do programu Visual Studio, takich jak <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog> składników, można dodać użytkownika składników własnych lub innej firmy do tej karty.
   
  Aby wyświetlić tę kartę z **widoku** menu, wybierz opcję **przybornika**. W **przybornika**, wybierz pozycję **składniki** kartę.  
   
- **Proces BackgroundWorker**  
+ **BackgroundWorker**  
  Tworzy `System.ComponentModel.BackgroundWorker` wystąpienie składnika, które można uruchomić operacji w oddzielnych, dedykowane wątku.  
   
  **DirectoryEntry**  
@@ -37,16 +39,16 @@ Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../code-qual
  **ErrorProvider**  
  Tworzy `System.Windows.Forms.ErrorProvider` wystąpienie składnika, co oznacza użytkownika końcowego, że kontrolkę w formularzu ma skojarzone z nim błąd.  
   
- **Dziennik zdarzeń**  
+ **EventLog**  
  Tworzy <xref:System.Diagnostics.EventLog> wystąpienie składnika służy do interakcji z systemem i niestandardowe dzienniki zdarzeń, w tym zapisu do dziennika zdarzeń i odczytywanie danych dziennika. Aby uzyskać więcej informacji, zobacz [wprowadzenie do składnika EventLog](http://msdn.microsoft.com/en-us/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
- **Element FileSystemWatcher**  
+ **FileSystemWatcher**  
  Tworzy <xref:System.IO.FileSystemWatcher> wystąpienie składnika, który służy do monitorowania zmian do dowolnego katalogu lub pliku, do których masz dostęp. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie wystąpień składnika FileSystemWatcher](http://msdn.microsoft.com/en-us/2e628234-4951-4135-8a86-28b924070d50).  
   
  **Helpprovider —**  
  Tworzy `System.Windows.Forms.HelpProvider` wystąpienie składnika, który zawiera menu podręczne lub pomoc dla formantów.  
   
- **Listy obrazów**  
+ **ImageList**  
  Tworzy `System.Windows.Forms.ImageList` wystąpienie składnika, który udostępnia metody umożliwiające zarządzanie kolekcją `System.Drawing.Image` obiektów.  
   
  **MessageQueue**  
@@ -58,7 +60,7 @@ Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../code-qual
  **Proces**  
  Tworzy <xref:System.Diagnostics.Process> wystąpienie składnika można zatrzymać, uruchomić i manipulowania danymi powiązanymi z procesów w systemie. Aby uzyskać więcej informacji, zobacz [monitorowanie i zarządzanie procesów systemu Windows](http://msdn.microsoft.com/en-us/a86bd4c1-b92c-49a0-8f32-61d67837b45e).  
   
- **Klasy SerialPort**  
+ **SerialPort**  
  Tworzy `System.IO.Ports.SerialPort` wystąpienie składnika, które oferuje synchroniczne i sterowane zdarzeniami we/wy, dostępu do numeru pin i podział stanów i dostęp do właściwości sterownik szeregowy.  
   
  **ServiceController**  

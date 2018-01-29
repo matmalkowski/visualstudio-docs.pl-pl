@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -52,7 +51,7 @@ Przy następnym otwarciu Eksploratora serwera, wyświetlane są zasoby dla tej s
 1. Wybierz węzeł projektu w Eksploratorze rozwiązań, a następnie wybierz **Dodaj, połączone usługi**. **Dodać podłączonej usługi** kreatora pojawi się i zawiera listę usług konta platformy Azure, która jest skojarzona z identyfikatorem logowania programu Visual Studio Należy pamiętać, że nie trzeba oddzielnie logowanie do platformy Azure. Jednak należy zalogować się do innych kont podczas pierwszej próby dostępu ich zasobów na danym komputerze.
 
     > [!WARNING]
-    > Jeśli po raz pierwszy tworzysz aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio na określonym komputerze, pojawi się monit Aby włączyć, przechodząc do Twojego urządzenia pod kątem trybu programowanie **ustawienia &#124;  Aktualizacje i zabezpieczeń &#124; Dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenia na potrzeby programowania](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).
+    > Jeśli po raz pierwszy tworzysz aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio na określonym komputerze, pojawi się monit Aby włączyć, przechodząc do Twojego urządzenia pod kątem trybu programowanie **ustawienia &#124;  Aktualizacje i zabezpieczeń &#124; Dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### <a name="access_azure"></a>Dostęp do usługi Azure Active Directory w projekcie sieci Web
 
@@ -82,4 +81,4 @@ Teraz przejdź do **Eksploratora serwera** ponownie, kliknij prawym przyciskiem 
 
 ## <a name="see-also"></a>Zobacz także
 
-[Zaloguj się do programu Visual Studio](signing-in-to-visual-studio.md)
+[Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)

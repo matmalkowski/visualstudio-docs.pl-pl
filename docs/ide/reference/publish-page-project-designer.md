@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikowania** strony **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.  
@@ -44,16 +47,16 @@ ms.lasthandoff: 12/22/2017
  W przypadku aplikacji przeglądarki sieci Web WPF **aplikacja jest dostępna w trybie offline oraz** opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.  
   
  **Pliki aplikacji**  
- Otwiera [aplikacji plikach — okno dialogowe](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8), używany do określania, jak i gdzie poszczególne pliki są zainstalowane.  
+ Otwiera okno dialogowe pliki aplikacji, która służy do określania, jak i gdzie poszczególne pliki są zainstalowane.  
   
  **Wymagania wstępne**  
- Otwiera [wstępnie wymagane składniki — okno dialogowe](../../ide/reference/prerequisites-dialog-box.md), który służy do określania wstępnie wymagane składniki, takie jak .NET Framework, można zainstalować z aplikacji.  
+ Otwiera okno dialogowe wymagania wstępne, które służy do określania wstępnie wymagane składniki, takie jak .NET Framework, można zainstalować z aplikacji.  
   
  **Aktualizacje**  
- Otwiera [okno dialogowe aktualizacje aplikacji](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), który służy do określania zachowania aktualizacji dla aplikacji. Nie jest dostępna, gdy **aplikacja jest dostępna online tylko** jest zaznaczone.  
+ Otwiera okno dialogowe aktualizacji aplikacji, która jest używana do określania zachowania aktualizacji dla aplikacji. Nie jest dostępna, gdy **aplikacja jest dostępna online tylko** jest zaznaczone.  
   
  **Opcje**  
- Otwiera [publikowania opcje — Okno dialogowe](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), który jest używany do określenia dodatkowych zaawansowane opcje publikowania.  
+ Otwiera okno dialogowe Opcje publikowania, który jest używany do określenia dodatkowych opcji publikowania zaawansowanych.  
   
  **Opublikuj wersję**  
  Ustawia numer wersji publikowania dla tej aplikacji; Po zmianie numeru wersji aplikacji jest publikowany jako aktualizacja. Każda część wersji publikowania (**głównych**, **pomocnicza**, **kompilacji**, **poprawki**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), Maksymalna wartość dozwolona przez <xref:System.Version>.  
@@ -64,7 +67,7 @@ ms.lasthandoff: 12/22/2017
  Opcjonalny. Po wybraniu tej opcji (ustawienie domyślne), **poprawki** część numeru wersji publikacji jest zwiększany o jeden zawsze opublikowanej aplikacji. Powoduje to, że aplikacja publikowane jako aktualizacja.  
   
  **Kreator publikacji**  
- Otwiera [Kreator publikowania](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872). Kończenie pracy kreatora Publikowanie ma ten sam efekt co działa **publikowania** na **kompilacji** menu.  
+ Zostanie otwarty Kreator publikowania. Kończenie pracy kreatora Publikowanie ma ten sam efekt co działa **publikowania** na **kompilacji** menu.  
   
  **Publikuj teraz**  
  Publikowanie aplikacji przy użyciu bieżących ustawień. Odpowiednikiem **Zakończ** przycisk **PublishWizard**.  

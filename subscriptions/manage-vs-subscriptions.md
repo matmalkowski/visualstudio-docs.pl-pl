@@ -9,18 +9,18 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 ## <a name="signing-in-to-the-portal"></a>Logowanie do portalu
 Subskrypcja programu Visual Studio — Zapraszamy!  Subskrypcja zapewnia całe oprogramowanie i korzyści, które wymagają aby pozostać się na cały kod rzeczy, w tym oprogramowania, miesięczne środki na korzystanie z platformy Azure, narzędzia współpracy, szkolenie perks, obsługiwanych i inne — wszystkie najnowszej i najlepszej firmy Microsoft.  Aby można było korzystać z portalu, należy się zalogować.
 ### <a name="first-time-access"></a>Dostęp do czasu pierwszego
 Kroki, aby korzystać z subskrypcji po raz pierwszy zależą od tego, jak uzyskać subskrypcję.  
-#### <a name="microsoft-store"></a>Magazyn Microsoft
+#### <a name="microsoft-store"></a>Microsoft Store
 Jeśli zakupione za pośrednictwem Microsoft Store subskrypcji programu Visual Studio, kroki aktywacji można zainicjować z płatności **stronę potwierdzenia** lub **wiadomość E-mail z potwierdzeniem.**  
 1.  Na stronie"potwierdzenie" lub "Wiadomości E-mail z potwierdzeniem", wybierz polecenie **kliknij tutaj, aby zarejestrować się w**.  Nastąpi przekierowanie do https://my.visualstudio.com/subscriptions/activate.
 2.  Wprowadź adres e-mail służy do Zaloguj się do portalu subskrybenta, a następnie kliknij przycisk **Kontynuuj**.
@@ -31,7 +31,7 @@ Jeśli zakupione za pośrednictwem Microsoft Store subskrypcji programu Visual S
 #### <a name="workschool-accounts"></a>Konta służbowe/pracy
 Jeśli subskrypcji podany przez pracy/służbowe rozwiązaniach otrzymanych powitalnej wiadomości e-mail.  
 1.  Odwiedź stronę [Portal subskrybenta](https://my.visualstudio.com/)
-2.  Wprowadź adres e-mail, który został przypisany do nowej subskrypcji programu Visual Studio. Ten adres jest również objęci subskrybenta **powitalnej litery**. Sprawdź, czy foldery wiadomości-śmieci, jeśli nie otrzymano powitalnej litery.
+2.  Wprowadź adres e-mail, który został przypisany do nowej subskrypcji programu Visual Studio. Ten adres jest również objęci subskrybenta powitalnej wiadomości e-mail. Sprawdź, czy foldery wiadomości-śmieci, jeśli nie otrzymano powitalnej wiadomości e-mail.
 3.  Kliknij przycisk **kontynuować**
 4.  Nastąpi przekierowanie do firmowej strony logowania.
 5.  Wprowadź hasło.
@@ -74,9 +74,9 @@ Na stronie korzyści używanej subskrypcji wyraźnie pojawi się na transparenci
 **Subskrypcje - usług w chmurze** subskrypcje w chmurze nie muszą być odnowione.  Tak długo, jak jest płatnej subskrypcji, pozostaną aktywne. 
 
 **Subskrypcje zakupione w ramach programów -** Jeśli otrzymasz subskrypcję za pośrednictwem programu subskrypcji jest powiązany z uczestnictwa w programie.  Sprawdź dotrzeć do kontaktów programu, aby uzyskać dodatkowe informacje. 
-- [Wyobraź sobie](https://imagine.microsoft.com/about)
+- [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Sieci Microsoft Partner Network](https://partner.microsoft.com/en-us)
+- [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
 **Visual Studio Dev Essentials -** Essentials deweloperów to bezpłatny program, a nie wygasają członkostwa.  

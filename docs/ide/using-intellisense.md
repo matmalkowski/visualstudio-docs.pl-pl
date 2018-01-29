@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
 - IntelliSense, Complete Word
 - IntelliSense, completion mode
@@ -25,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-intellisense"></a>Korzystanie z IntelliSense
 
@@ -70,7 +72,7 @@ Informacje o parametrach można wywołać ręcznie, wybierając **Edytuj** > **I
 
 Szybkie informacje wyświetlają pełną deklarację dla każdego identyfikatora w kodzie.
 
-![Szybkie informacje programu Visual Studio](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Visual Studio Quick Info](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
 
 Po wybraniu elementu członkowskiego **członków listy** polu Szybkie informacje jest także wyświetlany.
 
@@ -109,7 +111,7 @@ MessageBox( hWnd, "String literal|")
 ## <a name="see-also"></a>Zobacz także
 
 [Akcje funkcji IntelliSense specyficzne dla języka Visual Basic](../ide/visual-basic-specific-intellisense.md)  
-[Funkcja IntelliSense dla języka Visual C#](../ide/visual-csharp-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [Funkcja IntelliSense dla języka JavaScript](../ide/javascript-intellisense.md)  
 [Zapisywanie i refaktoryzacji kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [Stosowanie komentarzy kodu XML](../ide/supplying-xml-code-comments.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c0683e9c619352c6d3f7d0cb431d3e2c973b6270
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
+
 Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplikacji i właściwości projektu.  
   
 Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz pozycję **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **aplikacji** kartę.  
@@ -111,7 +112,7 @@ Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu (nie **rozwiązan
  Następujące ustawienia są dostępne w **właściwości platformy aplikacji systemu Windows** sekcji. Te opcje są dostępne tylko wtedy, gdy **struktury aplikacji Włącz** pole wyboru jest zaznaczone. Po tej sekcji opisano **właściwości platformy aplikacji systemu Windows** ustawienia dla aplikacji Windows Presentation Foundation (WPF).  
   
  **Włącz style wizualne XP**  
- Włącza lub wyłącza style wizualne systemu Windows XP, znanej także jako *kompozycji systemu Windows XP*. Style wizualne Windows XP włączyć, na przykład formantów dynamicznych kolorów i zaokrąglone narożniki. Domyślnie włączone. Aby uzyskać więcej informacji na temat style wizualne XP systemu Windows, temacie [funkcji systemu Windows XP i formantów formularzy systemu Windows](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Włącza lub wyłącza style wizualne systemu Windows XP, znanej także jako *kompozycji systemu Windows XP*. Style wizualne Windows XP włączyć, na przykład formantów dynamicznych kolorów i zaokrąglone narożniki. Domyślnie włączone.
   
  **Aplikacja pojedynczego wystąpienia**  
  Zaznacz to pole wyboru, aby uniemożliwić użytkownikom uruchamianie wielu wystąpień aplikacji. Ustawieniem domyślnym dla tego pola wyboru jest wyczyszczone. To ustawienie umożliwia wiele wystąpień aplikacji do uruchomienia.  
@@ -157,7 +158,4 @@ Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu (nie **rozwiązan
  **Wyświetl zdarzenia aplikacji**  
  Kliknij ten przycisk, aby wyświetlić `Application` pliku klasy częściowe (Application.xaml.vb) w edytorze kodu. Jeśli plik nie istnieje, Projektant projektu tworzy z odpowiednią nazwę klasy i przestrzeni nazw.  
   
- <xref:System.Windows.Application> Obiektu informuje o zdarzeniach, gdy występują pewne zmiany stanu aplikacji (na przykład do uruchamiania aplikacji lub zamknięcie). Aby uzyskać pełną listę zdarzeń, które udostępnia tę klasę, zobacz <xref:System.Windows.Application>. Zdarzenia te są obsługiwane w sekcji kodu użytkownika `Application` klasy częściowej.  
-  
-## <a name="see-also"></a>Zobacz też  
-[Zarządzanie właściwościami aplikacji](../../ide/application-properties.md) [pisanie kodu w rozwiązaniach pakietu Office](/office-dev/office-dev/writing-code-in-office-solutions)
+ <xref:System.Windows.Application> Obiektu informuje o zdarzeniach, gdy występują pewne zmiany stanu aplikacji (na przykład do uruchamiania aplikacji lub zamknięcie). Aby uzyskać pełną listę zdarzeń, które udostępnia tę klasę, zobacz <xref:System.Windows.Application>. Zdarzenia te są obsługiwane w sekcji kodu użytkownika `Application` klasy częściowej.

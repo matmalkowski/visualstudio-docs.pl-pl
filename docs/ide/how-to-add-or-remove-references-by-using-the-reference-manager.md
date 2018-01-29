@@ -4,12 +4,14 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - references [Visual Studio], adding
 - assemblies [Visual Studio], references
 - Visual Basic projects, references
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -161,7 +164,7 @@ Na karcie Windows są wymienione wszystkie zestawy SDK specyficzne dla platform,
 
 Można wygenerować plik WinMD w Visual Studio na dwa sposoby:
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]Aplikacja zarządzana projekty**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projekty aplikacji można wyjściowe pliki binarne WinMD przez ustawienie właściwości projektu &#124; Dane wyjściowe typu = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wprowadzi właściwości projektu &#124; Nazwa zestawu lub właściwości projektu &#124; Wartość Namespace, która jest odłączony od zestaw przestrzeni nazw w projekcie lub brak nie jest nadzbiorem obszaru nazw w projekcie, generowania ostrzeżeń kompilacji: "A.winmd" nie jest prawidłową winmd nazwę pliku dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieje w przestrzeni nazw sub nazwy pliku nie będzie można znajdować się w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Pulpitu projekt Visual Basic lub Visual C# może używać tylko metadanych Winmd, które zostały wygenerowane za pomocą [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawów SDK, które są określane jako metadanych Winmd firmy i nie można wygenerować metadanych Winmd.
+- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]Aplikacja zarządzana projekty**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projekty aplikacji można wyjściowe pliki binarne WinMD przez ustawienie właściwości projektu &#124; Dane wyjściowe typu = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wprowadzi właściwości projektu &#124; Nazwa zestawu lub właściwości projektu &#124; Wartość Namespace, która jest odłączony od zestaw przestrzeni nazw w projekcie lub brak nie jest nadzbiorem obszaru nazw w projekcie, generowania ostrzeżeń kompilacji: "A.winmd" nie jest prawidłową winmd nazwę pliku dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieje w przestrzeni nazw sub nazwy pliku nie będzie można znajdować się w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Pulpitu projekt Visual Basic lub C# można korzystać tylko metadanych Winmd, które zostały wygenerowane za pomocą [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawów SDK, które są określane jako metadanych Winmd firmy i nie można wygenerować metadanych Winmd.
 
 - **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]projektów natywnych aplikacji**: natywny plik WinMD, który składa się z tylko metadane. Jego realizacja istnieje w oddzielnym pliku DLL. Co może spowodować natywne pliki binarne, wybierając szablon projektu składnika środowiska wykonawczego systemu Windows w **nowy projekt** okno dialogowe lub uruchamiając od pustego projektu i modyfikowanie właściwości projektu, aby wygenerować plik WinMD. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.
 

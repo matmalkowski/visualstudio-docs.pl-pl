@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritancelinelabel
-helpviewer_keywords: Class Designer [Visual Studio], classes
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Klasy Visual C++ w Projektancie klas
-Projektant klas obsługuje klas C++ i wizualizuje macierzystych klas C++ w taki sam sposób jak kształty klas języka Visual Basic i Visual C#, z wyjątkiem klasy C++ może mieć wiele relacji dziedziczenia. Można rozwinąć kształtu klasy do wyświetlenia więcej pól i metod w klasie lub zwinąć do oszczędzania przestrzeni dyskowej.  
+Projektant klas obsługuje klas C++ i wizualizuje macierzystych klas C++ w taki sam sposób jak Visual Basic i C# kształtów klasy, z wyjątkiem klasy C++ może mieć wiele relacji dziedziczenia. Można rozwinąć kształtu klasy do wyświetlenia więcej pól i metod w klasie lub zwinąć do oszczędzania przestrzeni dyskowej.  
   
 > [!NOTE]
 >  Projektant klas nie obsługuje unie (specjalny typ klasy, w którym przydzielić pamięć jest niezbędne dla elementu Członkowskiego Unii największy danych Kwota).  
@@ -53,7 +57,7 @@ Prawym przyciskiem myszy kształt klasy, a następnie klikając pozycję **Poka�
 > [!NOTE]
 >  **Pokaż klas pochodnych** polecenie nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do widoku klasy, rozwijając węzeł typu, rozszerzanie **typów pochodnych** podfolder, a następnie przeciągając tych typów do diagramu klas.  
   
-Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) i [wielu klas Base](/cpp/cpp/multiple-base-classes).  
+Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne](https://msdn.microsoft.com/library/6td5yws2.aspx) i [wielu klas Base](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Klasy abstrakcyjne  
 Projektant klas obsługuje klasy abstrakcyjne (o nazwie "abstrakcyjnych klas podstawowych"). Są to klasy, który nigdy nie wystąpienia, ale z którego mogą pochodzić innych klas. W przykładzie z "Dziedziczenie wielokrotne" we wcześniejszej części tego dokumentu, użytkownik może utworzyć wystąpienia `Bird` klasy pojedyncze obiekty w następujący sposób:  
@@ -152,25 +156,26 @@ W poniższej tabeli przedstawiono przykłady z częściowa specjalizacja szablon
 |------------------|-------------------------|  
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> FUNC\<T, U > (+ 1 przeciążenia)|  
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Klasy szablonów<br /><br /> `B<T2>`<br /><br /> Klasy szablonów<br /><br /> (B znajduje się w obrębie klasy A **zagnieżdżone typy**)|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int ><br /><br /> `C<T>`<br /><br /> Klasy szablonów|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Klasy szablonów|  
   
 W poniższej tabeli przedstawiono kilka przykładów dziedziczenia szablonu.  
   
 |Element Code|Widok projektanta klas|  
 |------------------|-------------------------|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> -> B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B znajduje się w obrębie klasy C w obszarze **zagnieżdżone typy**)<br /><br /> `C<T>`<br /><br /> Klasy szablonów|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B znajduje się w obrębie klasy C w obszarze **zagnieżdżone typy**)<br /><br /> `C<T>`<br /><br /> Klasy szablonów|  
   
 W poniższej tabeli przedstawiono kilka przykładów canonical klas wyspecjalizowanych połączenia.  
   
 |Element Code|Widok projektanta klas|  
 |------------------|-------------------------|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int ><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasy szablonów<br /><br /> `D`<br /><br /> Class<br /><br /> -> C\<float >|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasy szablonów<br /><br /> `D`<br /><br /> Class<br /><br /> -> C\<float >|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T >|  
-  
+
 ## <a name="see-also"></a>Zobacz także
-[Praca z kodem Visual C++](working-with-visual-cpp-code.md)   
-[Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)   
-[Anonimowe typy klas](/cpp/cpp/anonymous-class-types)   
-[Dziedziczenie wielokrotne](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
-[Wiele klas podstawowych](/cpp/cpp/multiple-base-classes)   
+
+[Praca z kodem Visual C++](working-with-visual-cpp-code.md)  
+[Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)  
+[Anonimowe typy klas](/cpp/cpp/anonymous-class-types)  
+[Dziedziczenie wielokrotne](https://msdn.microsoft.com/library/6td5yws2.aspx)  
+[Wiele klas podstawowych](/cpp/cpp/multiple-base-classes)  
 [Szablony](/cpp/cpp/templates-cpp)

@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cs.ProjectPropertiesBuild
+f1_keywords:
+- cs.ProjectPropertiesBuild
 helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 233bb7516678888a2c7c4e6ec0b1b4f7d21b1393
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 Użyj **kompilacji** strony **projektanta projektu** można określać właściwości konfiguracji kompilacji projektu. Ta strona dotyczy [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tylko projekty.  
@@ -34,7 +37,7 @@ Aby uzyskać dostęp do **kompilacji** wybierz węzeł projektu (nie **rozwiąza
 Poniższe opcje pozwalają wybrać configuration i platform, aby wyświetlić lub zmodyfikować.  
 
 > [!NOTE]
->  Z konfiguracjami kompilacji uproszczony system projektu określa, czy do kompilacji debugowania lub wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+> Z konfiguracjami kompilacji uproszczony system projektu określa, czy do kompilacji debugowania lub wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie debugowania i konfiguracje wydania](/debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfiguracja**  
 Określa, które ustawienia konfiguracji, aby wyświetlić lub zmodyfikować. Te ustawienia mogą być **aktywny (debugowanie)** (to jest wartość domyślna), **debugowania**, **wersji**, lub **wszystkie konfiguracje**.  
@@ -104,9 +107,9 @@ Traktuje wszystkie ostrzeżenia jako błędy.
 Następujące ustawienia są używane do konfigurowania opcji danych wyjściowych dla procesu kompilacji.  
 
 **Ścieżka danych wyjściowych**  
-Określa lokalizację plików wyjściowych dla tej konfiguracji projektu. Wprowadź ścieżkę danych wyjściowych kompilacji w tym polu, lub wybierz **Przeglądaj** przycisk, aby określić ścieżkę. Należy pamiętać, że ścieżka względna; Jeśli wprowadź ścieżkę bezwzględną, będzie można zapisać jako względną. Domyślna ścieżka to bin\Debug lub bin\Release\\. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+Określa lokalizację plików wyjściowych dla tej konfiguracji projektu. Wprowadź ścieżkę danych wyjściowych kompilacji w tym polu, lub wybierz **Przeglądaj** przycisk, aby określić ścieżkę. Należy pamiętać, że ścieżka względna; Jeśli wprowadź ścieżkę bezwzględną, będzie można zapisać jako względną. Domyślna ścieżka to bin\Debug lub bin\Release\\.
 
-Z konfiguracjami kompilacji uproszczony system projektu określa, czy do kompilacji debugowania lub wersji. **Kompilacji** polecenie **debugowania** menu (F5) umieści kompilacji w lokalizacji debugowania, niezależnie od tego **ścieżka wyjściowa** określisz. Jednak **kompilacji** polecenie **kompilacji** menu umieszcza je w lokalizacji użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+Z konfiguracjami kompilacji uproszczony system projektu określa, czy do kompilacji debugowania lub wersji. **Kompilacji** polecenie **debugowania** menu (F5) umieści kompilacji w lokalizacji debugowania, niezależnie od tego **ścieżka wyjściowa** określisz. Jednak **kompilacji** polecenie **kompilacji** menu umieszcza je w lokalizacji użytkownika. Aby uzyskać więcej informacji, zobacz [opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md).
 
 **Plik dokumentacji XML**  
 Określa nazwę pliku, do których dokumentacji będą przetwarzane komentarze. Aby uzyskać więcej informacji, zobacz [/doc (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).  

@@ -10,12 +10,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d5aca783500b27e6b292b82304eb14d0fba7d32
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Porady dotyczące klawiatury dla programu Visual Studio
 
@@ -124,6 +125,7 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 
 ## <a name="see-also"></a>Zobacz także
 
+[Skróty klawiaturowe (VSTS i TFS)](/vsts/collaborate/keyboard-shortcuts)  
 [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)  
 [Visual Studio — porady i wskazówki blogu](http://blogs.msdn.com/b/zainnab)  
 [Przybornika programu Visual Studio na kanale 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  

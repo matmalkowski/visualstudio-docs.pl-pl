@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -38,11 +40,11 @@ Aby wybrać wskaźników, które chcesz wyświetlić lub wyłącz i Włącz Code
 
 Potrzebne są:
 
--  Visual Studio Enterprise lub Professional programu Visual Studio
+-  Visual Studio Enterprise or Visual Studio Professional
 
--  Kodu języka Visual C# .NET i Visual Basic .NET
+-  Kod C# lub Visual Basic
 
-Wybierz **odwołania** wskaźnika (**Alt + 2**). Jeśli widzisz **odwołania 0**, możesz nie mają odwołań z kodu Visual C# lub Visual Basic. To nie zawiera odwołania do innych elementów, takich jak pliki XAML i ASPX.
+Wybierz **odwołania** wskaźnika (**Alt + 2**). Jeśli widzisz **odwołania 0**, możesz nie mają odwołań z kodu C# lub Visual Basic. To nie zawiera odwołania do innych elementów, takich jak pliki XAML i ASPX.
 
 ![CodeLens &#45; Wybierz odwołania do wskaźnika](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -62,13 +64,13 @@ Przejrzyj historię swój kod, aby dowiedzieć się, co się stało z kodu. Lub 
 
 Potrzebne są:
 
-- Visual Studio Enterprise lub Professional programu Visual Studio
+- Visual Studio Enterprise or Visual Studio Professional
 
-- Team Foundation Server 2013 lub nowszy, Visual Studio Team Services lub Git
+- Team Foundation Server 2013 or later, Visual Studio Team Services, or Git
 
-- [Lync 2010 lub nowszej lub Skype dla firm](http://technet.microsoft.com/en-us/lync), skontaktuj się z zespołem w edytorze kodu  
+- [Lync 2010 lub nowszej lub Skype dla firm](https://technet.microsoft.com/office/dn788773), skontaktuj się z zespołem w edytorze kodu
 
-Kod Visual C# .NET i Visual Basic .NET, który jest przechowywany z kontroli wersji Team Foundation (TFVC) lub Git, otrzymasz CodeLens szczegóły na poziomie klasy i metody (*poziomie element kodu* wskaźniki). Jeśli repozytorium Git znajduje się w TfGit, możesz również uzyskać linki do elementów roboczych TFS.  
+Kod C# lub Visual Basic, który jest przechowywany z kontroli wersji Team Foundation (TFVC) lub Git, otrzymasz CodeLens szczegóły na poziomie klasy i metody (*poziomie element kodu* wskaźniki). Jeśli repozytorium Git znajduje się w TfGit, możesz również uzyskać linki do elementów roboczych TFS.  
 
 ![Element kodu &#45; wskaźniki poziomu](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
 
@@ -86,7 +88,7 @@ Znajdź który zmieniono C# lub kod Visual Basic, a wprowadzone zmiany ich, wska
 
 ![CodeLens: Get historię zmian przez kod w TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
 
-Domyślny okres czasu jest ostatnich 12 miesięcy. Jeśli kod jest przechowywany na serwerze Team Foundation Server, można to zmienić, uruchamiając [polecenia TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) z [CodeIndex — polecenie](../ide/codeindex-command.md) i **/indexHistoryPeriod** flagi.  
+Domyślny okres czasu jest ostatnich 12 miesięcy. Jeśli kod jest przechowywany na serwerze Team Foundation Server, można to zmienić, uruchamiając [polecenia TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd) z [CodeIndex — polecenie](../ide/codeindex-command.md) i **/indexHistoryPeriod** flagi.
 
 Aby wyświetlić szczegółowej historii wszystkie zmiany, w tym z więcej niż rok temu, wybierz pozycję **Pokaż wszystkie zmiany w pliku**.  
 
@@ -191,9 +193,9 @@ Otwórz menu skrótów dla elementu, aby wyświetlić opcje kontaktu. Jeśli mas
 
 Dowiedz się więcej o testy jednostek, które istnieją dla kodu bez konieczności otwierania Eksploratora testów. Potrzebne są:  
 
--   Visual Studio Enterprise lub Professional programu Visual Studio  
+-   Visual Studio Enterprise or Visual Studio Professional  
   
--   Kodu języka Visual C# .NET i Visual Basic .NET  
+-   Kod C# lub Visual Basic  
   
 -   A [jednostkowy projekt testowy](../test/unit-test-your-code.md) mający testy jednostek dla kodu aplikacji  
   
@@ -233,15 +235,15 @@ Dowiedz się więcej o testy jednostek, które istnieją dla kodu bez konieczno�
   
 ###  <a name="NoIndicators"></a>Pytanie: gdzie znajduje się CodeLens?
 
-**Odpowiedź:** CodeLens pojawia się w kodzie Visual C# .NET i Visual Basic .NET na poziomie metody, klasy, indeksatora i właściwości. CodeLens pojawia się na poziomie plików dla wszystkich typów plików.
+**Odpowiedź:** CodeLens pojawia się w kodzie C# i Visual Basic na poziomie metody, klasy, indeksatora i właściwości. CodeLens pojawia się na poziomie plików dla wszystkich typów plików.
 
 - Upewnij się, że jest włączona CodeLens. Przejdź do **narzędzia**, **opcje**, **Edytor tekstu**, **wszystkie języki**, **CodeLens**.  
-  
-- Jeśli kod jest przechowywany w programie TFS, upewnij się, że kod indeksowania jest włączona przy użyciu [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).  
 
-- Wskaźniki związane z TFS pojawiają się tylko wtedy, gdy elementy robocze są połączone z kodem, a użytkownik ma uprawnienia do otwierania połączonych elementów roboczych. [Upewnij się, że masz uprawnienia zabezpieczeń elementów członkowskich zespołu.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- Jeśli kod jest przechowywany w programie TFS, upewnij się, że kod indeksowania jest włączona przy użyciu [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
-- Wskaźniki testów jednostkowych nie są wyświetlane, gdy kod aplikacji nie ma testów jednostkowych. Wskaźniki stanu testu są automatycznie wyświetlane w projektach testów. Jeśli wiesz, że kod aplikacji testów jednostkowych, jednak nie są wyświetlane wskaźniki testu, spróbuj skompilować rozwiązanie (**Ctrl + Shift + B**).  
+- Wskaźniki związane z TFS pojawiają się tylko wtedy, gdy elementy robocze są połączone z kodem, a użytkownik ma uprawnienia do otwierania połączonych elementów roboczych. [Upewnij się, że masz uprawnienia zabezpieczeń elementów członkowskich zespołu](/vsts/work/scale/multiple-teams).
+
+- Wskaźniki testów jednostkowych nie są wyświetlane, gdy kod aplikacji nie ma testów jednostkowych. Wskaźniki stanu testu są automatycznie wyświetlane w projektach testów. Jeśli wiesz, że kod aplikacji testów jednostkowych, jednak nie są wyświetlane wskaźniki testu, spróbuj skompilować rozwiązanie (**Ctrl + Shift + B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Pytanie: Dlaczego nie widzę szczegóły elementu pracy zatwierdzania?
 
@@ -301,11 +303,11 @@ Aby użyć klawiatury:
 
 ###  <a name="LocalVersion"></a>Pytanie: co to jest "Wersja lokalna"?
 
-**Odpowiedź:** **lokalnej wersji** Strzałka najbardziej aktualnych zmian w lokalnej wersji tego pliku. Jeśli serwer ma nowszą grupy zmian, pojawią się one powyżej lub poniżej **lokalnej wersji** strzałka, w zależności od kolejności sortowania grupy zmian.  
+**Odpowiedź:** **lokalnej wersji** Strzałka najbardziej aktualnych zmian w lokalnej wersji tego pliku. Jeśli serwer ma nowszą grupy zmian, pojawią się one powyżej lub poniżej **lokalnej wersji** strzałka, w zależności od kolejności sortowania grupy zmian.
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Pytanie: czy można zarządzać w jaki sposób CodeLens przetwarza kod, aby wyświetlić historię i połączone elementy?
 
-**Odpowiedź:** tak, jeśli kod jest w programie TFS, użyj [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).
+**Odpowiedź:** tak, jeśli kod jest w programie TFS, użyj [CodeIndex — polecenie](../ide/codeindex-command.md) z [polecenia konfiguracyjnego TFS](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,5 +1,5 @@
 ---
-title: IntelliSense Visual C# | Dokumentacja firmy Microsoft
+title: C# IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas debugowania w [trybie natychmiastowym](../ide/reference/immediate-window.md) okna poleceń.
+C#, IntelliSense jest dostępna podczas kodowania w edytorze i podczas debugowania w [trybie natychmiastowym](../ide/reference/immediate-window.md) okna poleceń.
 
 ## <a name="completion-lists"></a>Listy uzupełniania
 
-Listy uzupełniania IntelliSense języka Visual C# zawierają tokenów z listy elementów członkowskich, całe słowo i inne. Zapewnia szybki dostęp do:
+Listy uzupełniania IntelliSense w języku C# zawiera tokenów z listy elementów członkowskich, całe słowo i inne. Zapewnia szybki dostęp do:
 
 - Elementy członkowskie typu lub przestrzeni nazw
 
@@ -42,15 +43,15 @@ Listy uzupełniania w C# jest również inteligentne odfiltrować istotny token�
 
 ## <a name="code-snippets-in-completion-lists"></a>Wstawki kodu na listach uzupełniania
 
-W środowisku Visual C#, listy uzupełniania obejmuje wstawki kodu, aby łatwo Wstawianie wstępnie zdefiniowanych treści kodu do programu. Wstawki kodu są wyświetlane na liście uzupełniania jako fragment [skrót](../ide/code-snippets-schema-reference.md#shortcut). Aby uzyskać więcej informacji na temat wstawki kodu, które domyślnie są dostępne w programie Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).
+W języku C# na liście uzupełniania obejmuje wstawki kodu, aby łatwo Wstawianie wstępnie zdefiniowanych treści kodu do programu. Wstawki kodu są wyświetlane na liście uzupełniania jako fragment [skrót](../ide/code-snippets-schema-reference.md#shortcut). Aby uzyskać więcej informacji na temat wstawki kodu, które domyślnie są dostępne w języku C#, zobacz [wstawki kodu C#](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Słowa kluczowe języka na listach uzupełniania
 
-W środowisku Visual C#, na liście uzupełniania także słowa kluczowe języka. Aby uzyskać więcej informacji na temat słów kluczowych języka C#, zobacz [słowa kluczowe języka C#](/dotnet/csharp/language-reference/keywords/index).
+W języku C# na liście uzupełniania zawiera słowa kluczowe języka. Aby uzyskać więcej informacji na temat słów kluczowych języka C#, zobacz [słowa kluczowe języka C#](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Metody rozszerzenia na listach uzupełniania
 
-W środowisku Visual C#, lista uzupełniania zawiera metody rozszerzenia, które znajdują się w zakresie.
+W języku C# lista uzupełniania zawiera metody rozszerzenia, które znajdują się w zakresie.
 
 > [!NOTE]
 > Listy uzupełniania nie są wyświetlane wszystkie metody rozszerzenia dla <xref:System.String> obiektów.
@@ -59,9 +60,9 @@ Metody rozszerzenia użyj ikony innego niż metody wystąpienia. Lista ikony na 
 
 ## <a name="filtered-completion-lists"></a>Filtrowane listy uzupełniania
 
-IntelliSense usuwa niepotrzebne elementy członkowskie na liście uzupełniania za pomocą filtrów. Visual C# filtruje listy uzupełniania, które są wyświetlane dla tych elementów:
+IntelliSense usuwa niepotrzebne elementy członkowskie na liście uzupełniania za pomocą filtrów. C# filtruje listy uzupełniania, które są wyświetlane dla tych elementów:
 
-- **Podstawowe klasy i interfejsy**: IntelliSense automatycznie usuwa elementy z interfejsu base klasy uzupełniania list i, w deklaracji klasy podstawowe i interfejs listy i ograniczenie list. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas podstawowych, ponieważ wyliczenia nie można używać dla klas podstawowych. Uzupełnianie lista klas bazowych zawiera tylko interfejsów i przestrzenie nazw. Wybierz element na liście, wpisz przecinek IntelliSense usuwa klasy podstawowe z listy uzupełniania ponieważ Visual C# nie obsługuje wielu dziedziczenia. Takie samo zachowanie występuje także klauzule ograniczenia.
+- **Podstawowe klasy i interfejsy**: IntelliSense automatycznie usuwa elementy z interfejsu base klasy uzupełniania list i, w deklaracji klasy podstawowe i interfejs listy i ograniczenie list. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas podstawowych, ponieważ wyliczenia nie można używać dla klas podstawowych. Uzupełnianie lista klas bazowych zawiera tylko interfejsów i przestrzenie nazw. Wybierz element na liście, wpisz przecinek IntelliSense usuwa klasy podstawowe z listy uzupełniania ponieważ C# nie obsługuje wielu dziedziczenia. Takie samo zachowanie występuje także klauzule ograniczenia.
 
 - **Atrybuty**: podczas stosowania atrybut do typu, na liście uzupełniania jest filtrowana tak, że lista zawiera tylko te typy, które elementem podrzędnym elementu przestrzenie nazw, które zawierają te typy, takich jak <xref:System.Attribute>.
 
@@ -133,7 +134,7 @@ Wyświetlane opcje mogą być następujące:
 
 - **Generuj pole**
 
-- **Generate — metoda**
+- **Generowanie metody**
 
 - **Generowanie klas**
 

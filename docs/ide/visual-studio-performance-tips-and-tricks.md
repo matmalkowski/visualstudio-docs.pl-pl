@@ -3,21 +3,24 @@ title: "I porady dotyczące wydajności programu Visual Studio | Dokumentacja fi
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Wydajność programu Visual Studio — porady i wskazówki
 
@@ -32,7 +35,7 @@ Visual Studio wydajności zalecenia są przeznaczone dla sytuacje małej ilości
 
     Po uaktualnieniu do wersji 64-bitowe systemu z 32-bitowej wersji systemu Windows, należy rozwinąć ilość dostępnej pamięci wirtualnej dla programu Visual Studio, od 2 do 4 GB. Dzięki temu Visual Studio do obsługi obciążeń znacznie większe, mimo że jest to proces 32-bitowy.
 
-    Aby uzyskać więcej informacji, zobacz [limity pamięci](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) i [na 64-bitowym systemie Windows przy użyciu/largeaddressaware](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Aby uzyskać więcej informacji, zobacz [limity pamięci](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) i [na 64-bitowym systemie Windows przy użyciu/largeaddressaware](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Skonfiguruj rozwiązanie i projekty
 
@@ -47,6 +50,7 @@ Jeśli masz bardzo dużym rozwiązaniem z wielu projektów, może korzystać dzi
     Rozwiązania można podzielić na kilka mniejszych plików rozwiązania z często używanych projektów. Ta refaktoryzacji powinno być znacznie zmniejszyć użycie pamięci przepływu pracy. Mniejsze rozwiązań także załadować szybciej.
 
 ## <a name="configure-debugging-options"></a>Skonfiguruj opcje debugowania
+
 Jeśli użytkownik zwykle zaczyna brakować pamięci podczas sesji debugowania, wydajność można zoptymalizować w co najmniej jeden zmiany konfiguracji.
 
 - **Włącz opcję tylko mój kod**
@@ -74,6 +78,7 @@ Jeśli użytkownik zwykle zaczyna brakować pamięci podczas sesji debugowania, 
     Aby uzyskać więcej informacji, zobacz [narzędziach profilowania](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Wyłącz narzędzia i rozszerzenia
+
 Niektóre narzędzia lub rozszerzenia może ją wyłączyć, aby zwiększyć wydajność.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Aby wymusić wyrzucania elementów bezużytecznych, użyj klawiszy skrótu: **Ct
 
 Jeśli wymuszanie wyrzucanie elementów bezużytecznych niezawodnie sprawia, że scenariusz pracy pliku raportu za pomocą narzędzia opinii programu Visual Studio to zachowanie jest prawdopodobnie usterki.
 
-Aby uzyskać szczegółowy opis moduł garbage collector środowiska CLR, zobacz [podstawowych z wyrzucanie elementów bezużytecznych](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Aby uzyskać szczegółowy opis moduł garbage collector środowiska CLR, zobacz [podstawowych z wyrzucanie elementów bezużytecznych](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio IDE](../ide/index.md)
+## <a name="see-also"></a>Zobacz także
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

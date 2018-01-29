@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 17b234a774914e998c228dc780b645864420658d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Porady: tworzenie typu zerowalnego (Projektant klas)
 Niektórych typów wartości nie zawsze mieć lub muszą zdefiniowanej wartości. Jest typowym rozwiązaniem w przypadku baz danych, gdy niektóre pola nie można przypisać wartości. Na przykład można przypisać wartości null na wskazują, że jej nie został jeszcze przypisany wartość pole bazy danych.  
@@ -37,7 +39,7 @@ Domyślnie w deklaracji zmiennej jako wartości null typu go nie ma zdefiniowane
   
 Projektant klas Wyświetla typ dopuszczający wartość null, tak samo, jak wyświetla jego typem podstawowym.  
   
-Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe języka Visual C#, zobacz [typy dopuszczające wartości zerowe](/dotnet/csharp/programming-guide/nullable-types/index). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typy dopuszczające wartości zerowe wartości](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).  
+Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku C#, zobacz [typy dopuszczające wartości zerowe](/dotnet/csharp/programming-guide/nullable-types/index). Aby uzyskać więcej informacji na temat typów dopuszczających wartości zerowe w języku Visual Basic, zobacz [typy dopuszczające wartości zerowe wartości](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).  
   
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   

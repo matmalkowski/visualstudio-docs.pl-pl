@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 9acc8f2e015b6ca2ad26881eeb1f53012d96e56d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 20eefe3933767e357d977e2f3a5a0626aa555c39
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Wprowadzenie do aplikacji międzynarodowych na podstawie .NET Framework
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wyróżnić dwie części do tworzenia aplikacji gotowych: lokalizacja, proces tłumaczenie zasobów dla określonej kultury i globalizacja, proces projektowania aplikacji, które można dostosować do innych kultur. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
@@ -47,7 +49,7 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wyróżnić 
   
  System projektu dla formularzy systemu Windows i formularzy sieci Web pozwala na tworzenie plików zasobów przy użyciu szablonu pliku zasobu zestawu, dostępu do zasobów i skompilowanie projektu. Zestawy satelickie zostanie utworzony wraz z głównym zestawu.  
   
- Podczas zlokalizowanej aplikacji, jej wygląd jest określana przez dwie wartości kultury. (A *kultury* jest zestawem preferencji użytkownika związanych z języka i środowiska oraz konwencje kultury użytkownika.) Ustawienie kultury interfejsu użytkownika określa, jakie zasoby zostaną załadowane. Kultura interfejsu użytkownika jest ustawiony jako `UICulture` w plikach Web.config i dyrektywy strony i <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> w kodzie języka Visual Basic lub Visual C#. Ustawienie kultury Określa format wartości, takich jak dat, liczb, waluty i tak dalej. Kultura jest ustawiony jako `Culture` w plikach Web.config i dyrektywy strony <xref:System.Globalization.CultureInfo.CurrentCulture%2A> w kodzie języka Visual Basic lub Visual C#.  
+ Podczas zlokalizowanej aplikacji, jej wygląd jest określana przez dwie wartości kultury. (A *kultury* jest zestawem preferencji użytkownika związanych z języka i środowiska oraz konwencje kultury użytkownika.) Ustawienie kultury interfejsu użytkownika określa, jakie zasoby zostaną załadowane. Kultura interfejsu użytkownika jest ustawiony jako `UICulture` w plikach Web.config i dyrektywy strony i <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> w kodzie języka Visual Basic lub C#. Ustawienie kultury Określa format wartości, takich jak dat, liczb, waluty i tak dalej. Kultura jest ustawiony jako `Culture` w plikach Web.config i dyrektywy strony <xref:System.Globalization.CultureInfo.CurrentCulture%2A> w kodzie języka Visual Basic lub C#.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.Globalization>   

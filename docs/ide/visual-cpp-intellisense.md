@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fffb892efdbe3ad2731de5b0b81f6e59f237f884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-intellisense"></a>Intellisense dla programu Visual C++
 
@@ -23,37 +25,37 @@ IntelliSense dla języka C++ jest dostępna dla autonomicznych pliki także jak 
 
 ## <a name="intellisense-features-in-c"></a>Funkcje IntelliSense w języku C++
 
-IntelliSense jest nazwa nadana zestaw funkcji, które kodowania wygodniejsze. Ponieważ różne osoby mają różne poznać co to jest wygodne, można niemal wszystkie funkcje IntelliSense włączone lub wyłączone w **Edytor tekstu, C/C++, zaawansowane** strony właściwości.
+IntelliSense jest nazwa nadana zestaw funkcji, które kodowania wygodniejsze. Ponieważ różne osoby mają różne poznać co to jest wygodne, można niemal wszystkie funkcje IntelliSense włączone lub wyłączone w **opcje** okna dialogowego, w obszarze **Edytor tekstu**  >  **C/C++** > **zaawansowane**. **Opcje** okno dialogowe jest dostępne z **narzędzia** menu na pasku menu.
 
-![Narzędzia, opcje, Edytor tekstu, C &#47; & C &43; 43; zaawansowane](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+![Okno dialogowe opcji narzędzi](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 Elementy menu i skróty klawiaturowe pokazano na poniższej ilustracji umożliwia dostęp do funkcji IntelliSense.
 
-![Visual C &43; &#43; IntelliSense Menu](../ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")
+![IntelliSense menu](../ide/media/vs2015_cpp_intellisense_menu.png)
 
 ### <a name="statement-completion-and-member-list"></a>Listy uzupełniania i element członkowski — instrukcja
 
-Po ponownym uruchomieniu, wpisując słowa kluczowego, typu, funkcji, nazwa zmiennej lub innego elementu programu rozpoznającego przez kompilator, Edytor umożliwia dokończyć słowa
+Po ponownym uruchomieniu, wpisując słowa kluczowego, typu, funkcji, nazwa zmiennej lub innego elementu programu rozpoznającego przez kompilator, edytor oferuje dokończyć słowo.
 
 Listę ikon i ich znaczenie, zobacz [Widok klas i przeglądarka obiektów ― ikony](../ide/class-view-and-object-browser-icons.md).
 
 ![Visual C &43; &#43; Okno programu Word zakończenia](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
-Lista elementów członkowskich jest wywoływana po raz pierwszy pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli używasz **Ctrl + J** po, który zawiera wszystkie elementy członkowskie niezależnie od dostępności. Jeśli wywołanie raz trzeci go jeszcze większą listę elementów programu jest wyświetlany. Można wyłączyć uzupełniania w **Opcje ogólne C/C++** strony.
+Lista elementów członkowskich jest wywoływana po raz pierwszy pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli naciśniesz **Ctrl**+**J** po, który zawiera wszystkie elementy członkowskie niezależnie od dostępności. Jeśli wywołanie raz trzeci go jeszcze większą listę elementów programu jest wyświetlany. Można wyłączyć listy członków w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
 
-![Visual C &43; &#43; Lista elementów członkowskich](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43;&#43; Member List](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Parametr pomocy
 
-Po wpisaniu nawiasu otwierającego wywołanie funkcji lub nawias w deklaracji zmiennej szablonu klasy Edytor pokazuje małe okno z typami parametrów dla każdego przeciążenia funkcji lub konstruktora. Parametr "bieżący"--na podstawie lokalizacji kursora — jest pogrubione. Można wyłączyć uzupełniania w **Opcje ogólne C/C++** strony.
+Po wpisaniu nawiasu otwierającego wywołanie funkcji lub nawias w deklaracji zmiennej szablonu klasy Edytor pokazuje małe okno z typami parametrów dla każdego przeciążenia funkcji lub konstruktora. Parametr "bieżący"&mdash;na podstawie lokalizacji kursora&mdash;jest pogrubiony. Można wyłączyć informacje o parametrach w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **Ogólne**  >  **Informacje o parametrach**.
 
-![Visual C &43; &#43; Parametr pomocy](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C&#43;&#43; Parameter Help](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>Szybkie informacje
 
-Po umieszczeniu kursora myszy na zmienną małych okno jest wyświetlane w tekście, który zawiera informacje o typie i nagłówek, w którym jest zdefiniowany typ. Aktywuj wywołanie funkcji, aby wyświetlić podpisu funkcji. Można wyłączyć szybkie informacje w **Edytor tekstu, C/C++, zaawansowane** strony.
+Po umieszczeniu kursora myszy na zmienną małych okno jest wyświetlane w tekście, który zawiera informacje o typie i nagłówek, w którym jest zdefiniowany typ. Aktywuj wywołanie funkcji, aby wyświetlić podpisu funkcji. Można wyłączyć szybkie informacje w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **zaawansowane**  >  **Automatyczna szybka podpowiedź**.
 
-![Visual C &43; &#43; Skrócone informacje](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
 ### <a name="error-squiggles"></a>Zygzaki sygnalizujące błędy
 
@@ -63,7 +65,7 @@ Zygzaki pod elementem programu (zmiennej, słowo kluczowe, nawias klamrowy, wpis
 
 ### <a name="code-colorization-and-fonts"></a>Kolorowanie kodu i czcionek
 
-Domyślne kolorów i czcionek można zmieniać za pomocą **środowiska, czcionki i kolory** strony właściwości. Można zmienić czcionki dla wielu interfejsu użytkownika systemu windows w tym miejscu nie tylko edytora. Ustawienia, które są specyficzne dla języka C++ rozpoczynać się od "C++"; inne ustawienia są dla wszystkich języków.
+Można zmienić domyślny kolorów i czcionek w **opcje** okna dialogowego, w obszarze **środowiska** > **czcionki i kolory**. Można zmienić czcionki dla wielu interfejsu użytkownika systemu windows w tym miejscu nie tylko edytora. Ustawienia, które są specyficzne dla języka C++ rozpoczynać się od "C++"; inne ustawienia są dla wszystkich języków.
 
 ### <a name="cross-platform-intellisense"></a>IntelliSense i platform
 
@@ -95,7 +97,7 @@ Należy zauważyć, że:
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense dla plików autonomicznych
 
-Po otwarciu pojedynczego pliku poza żadnego projektu nadal otrzymywać IntelliSense. Można włączyć lub wyłączyć określonymi funkcjami, przechodząc do **Edytor tekstu, C/C++, zaawansowane** można włączyć lub wyłączyć funkcje IntelliSense. Aby skonfigurować IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików poza projektami** w **zaawansowane** sekcji. Zobacz [Przewodnik po Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
+Po otwarciu pojedynczego pliku poza żadnego projektu nadal otrzymywać IntelliSense. Można włączyć lub wyłączyć określonej funkcji IntelliSense w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++**  >  **Zaawansowane**. Aby skonfigurować IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików poza projektami** sekcji.
 
 ![Visual C &43; &#43; pojedynczy plik intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 

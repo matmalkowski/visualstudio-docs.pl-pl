@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,33 +13,37 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fec5c2bbbf97bee5e0abb0725641a5c562997065
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippet-functions"></a>Funkcje wstawek kodu
-Istnieją trzy funkcje dostępne w programie [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] wstawki kodu. Funkcje są określone w [funkcja](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia wstawki kodu, zobacz [wstawki kodu](../ide/code-snippets.md).  
-  
-## <a name="functions"></a>Funkcje  
- W poniższej tabeli opisano funkcje dostępne w `Function` element wstawki kodu.  
-  
+
+Istnieją trzy funkcje dostępne w programie wstawki kodu C#. Funkcje są określone w [funkcja](../ide/code-snippets-schema-reference.md#function) element fragmentu kodu. Aby uzyskać informacje na temat tworzenia wstawki kodu, zobacz [wstawki kodu](../ide/code-snippets.md).
+
+## <a name="functions"></a>Funkcje
+
+W poniższej tabeli opisano funkcje dostępne w `Function` element wstawki kodu.
+
 |Funkcja|Opis|Język|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje instrukcji switch i zestaw instrukcji case w elementach członkowskich wyliczenie określony przez `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musi być odwołaniem do literału wyliczenia lub typu wyliczeniowego.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Zwraca nazwę klasy, która zawiera wstawiony fragment kodu.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`SimpleTypeName(` `TypeName` `)`|Zmniejsza *TypeName* parametr do swojej najprostszej formie, w tym kontekście, w którym wywołano fragment kodu.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia użycie `GenerateSwitchCases` funkcji. Gdy ta Wstawka kodu zostanie wstawiony i wyliczenia jest wprowadzany do `$switch_on$` literału, `$cases$` generuje literał `case` instrukcji dla każdej wartości w wyliczeniu.  
-  
-```  
+## <a name="example"></a>Przykład
+
+Poniższy przykład przedstawia użycie `GenerateSwitchCases` funkcji. Gdy ta Wstawka kodu zostanie wstawiony i wyliczenia jest wprowadzany do `$switch_on$` literału, `$cases$` generuje literał `case` instrukcji dla każdej wartości w wyliczeniu.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -74,12 +79,13 @@ Istnieją trzy funkcje dostępne w programie [!INCLUDE[csprcs](../data-tools/inc
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia użycie `ClassName` funkcji. Po wstawieniu ta Wstawka kodu `$classname$` literał jest zastępowany nazwę otaczającej klasy w tej lokalizacji w pliku kodu.  
-  
-```  
+```
+
+## <a name="example"></a>Przykład
+
+Poniższy przykład przedstawia użycie `ClassName` funkcji. Po wstawieniu ta Wstawka kodu `$classname$` literał jest zastępowany nazwę otaczającej klasy w tej lokalizacji w pliku kodu.
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -120,12 +126,13 @@ Istnieją trzy funkcje dostępne w programie [!INCLUDE[csprcs](../data-tools/inc
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Przykład  
- Ten przykład przedstawia sposób użycia `SimpleTypeName` funkcji. Gdy ta Wstawka kodu zostaną wstawione do pliku kodu `$SystemConsole$` literał zostanie zastąpiony najprostsza forma <xref:System.Console> typu w tym kontekście, w którym wywołano fragment kodu.  
-  
-```  
+```
+
+## <a name="example"></a>Przykład
+
+Ten przykład przedstawia sposób użycia `SimpleTypeName` funkcji. Gdy ta Wstawka kodu zostaną wstawione do pliku kodu `$SystemConsole$` literał zostanie zastąpiony najprostsza forma <xref:System.Console> typu w tym kontekście, w którym wywołano fragment kodu.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -152,8 +159,9 @@ Istnieją trzy funkcje dostępne w programie [!INCLUDE[csprcs](../data-tools/inc
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Funkcja — Element (wstawki kodu Intellisense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)
+```
+
+## <a name="see-also"></a>Zobacz także
+
+[Element — funkcja](../ide/code-snippets-schema-reference.md#function)  
+[Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)

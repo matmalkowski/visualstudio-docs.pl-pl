@@ -1,30 +1,32 @@
 ---
-title: Wstawki kodu Visual C# | Dokumentacja firmy Microsoft
+title: Wstawki kodu C# | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
 - Code Snippet Inserter [C#]
-- Visual C#, default snippets
+- C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 04b75cb77a41d69edfae565660d7dbabe6c10ee9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-code-snippets"></a>Wstawki kodu Visual C#
+# <a name="c-code-snippets"></a>Wstawki kodu C#
 Wstawki kodu są gotowe do użycia wstawki kodu, który można szybko wstawić do kodu. Na przykład `for` fragment kodu tworzy pustą `for` pętli. Niektóre fragmenty kodu są Otocz wstawki kodu, które umożliwia wybór wierszy kodu, a następnie wybierz fragment kodu, który zawiera wybranych wierszy kodu. Na przykład, gdy należy wybrać wiersze kodu i aktywować `for` fragment kodu tworzy `for` pętli z tych wierszy kodu wewnątrz bloku pętli. Wstawki kodu można ustawić program pisania kodu, szybsze, łatwiejsze i bardziej niezawodny.  
 
  Wstawianie wstawek kodu w lokalizacji kursora lub wstawić fragment kodu Otocz wokół aktualnie zaznaczonego kodu. Wstawianie wstawek kodu jest wywoływany przez **wstawianie fragmentu kodu** lub **z funkcji Otocz przez** polecenia w **IntelliSense** menu lub przy użyciu klawiszy skrótu CTRL + K a następnie X lub CTRL + K, a następnie S odpowiednio.  
@@ -43,7 +45,7 @@ Wstawki kodu są gotowe do użycia wstawki kodu, który można szybko wstawić d
 |checked|Tworzy [zaznaczone](/dotnet/csharp/language-reference/keywords/checked) bloku.|Wewnątrz metody, indeksatora, Metoda dostępu do właściwości lub metody dostępu zdarzenia.|  
 |class|Tworzy deklaracji klasy.|W przestrzeni nazw (w tym globalnej przestrzeni nazw), klasy lub struktury.|  
 |ctor|Tworzy konstruktora dla klasy zawierającego.|Wewnątrz klasy.|  
-|efektywna|Tworzy wywołanie <xref:System.Console.WriteLine%2A>.|Wewnątrz metody, indeksatora, Metoda dostępu do właściwości lub metody dostępu zdarzenia.|  
+|cw|Tworzy wywołanie <xref:System.Console.WriteLine%2A>.|Wewnątrz metody, indeksatora, Metoda dostępu do właściwości lub metody dostępu zdarzenia.|  
 |do|Tworzy [czy](/dotnet/csharp/language-reference/keywords/do) `while` pętli.|Wewnątrz metody, indeksatora, Metoda dostępu do właściwości lub metody dostępu zdarzenia.|  
 |else|Tworzy [else](/dotnet/csharp/language-reference/keywords/if-else) bloku.|Wewnątrz metody, indeksatora, Metoda dostępu do właściwości lub metody dostępu zdarzenia.|  
 |enum|Tworzy [wyliczenia](/dotnet/csharp/language-reference/keywords/enum) deklaracji.|W przestrzeni nazw (w tym globalnej przestrzeni nazw), klasy lub struktury.|  

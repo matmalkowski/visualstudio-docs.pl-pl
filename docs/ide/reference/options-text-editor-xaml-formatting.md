@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,16 +31,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: a5a3ffde718d951181d788cca5cf57a21cbff4d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 2ba33419f0d1d69a65b494149798fefc8a7dcb6d
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 Użyj **formatowanie** strony właściwości, aby określić sposób formatowania elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń pozycję **Edytor tekstu**, **XAML**, **formatowanie** węzła.  
@@ -113,7 +115,6 @@ Można określić zdarzenia, które powodują automatyczne formatowanie.
 |**Klamrowe nawiasy zamykające do wyrażenia MarkupExtension**|Określa, czy rozszerzenie znacznika zamykającego nawiasu (}) jest generowana automatycznie po wpisaniu otwarcia nawiasy znak ({}).|  
 |**Oddzielać parametry wyrażeń MarkupExtension**|Określa, czy przecinkami są generowane po wpisaniu więcej niż jeden parametr w rozszerzeniu znaczników.|  
 
-## <a name="see-also"></a>Zobacz też  
- [XAML w WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Porady: Zmienianie ustawienia widoku XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [XAML wskazówki i przykłady kodu](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Zobacz także
+
+[XAML w WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

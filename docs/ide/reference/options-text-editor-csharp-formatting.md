@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,19 +25,21 @@ helpviewer_keywords:
 - formatting [C#]
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 0c4303cb996094562ed955e58f6b7ec37b38fc2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-formatting"></a>Opcje, edytor tekstu, C#, formatowanie
-Użyj **formatowanie** okno dialogowe strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu**, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Formatowanie**.  
+
+Użyj **formatowanie** okno dialogowe strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do **opcje** okno dialogowe w programie Visual Studio, kliknij przycisk **narzędzia** > **opcje**. Następnie rozwiń **Edytor tekstu**, rozwiń węzeł **C#**, rozwiń węzeł **styl kodu**, a następnie kliknij przycisk **formatowanie**.  
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 Visual Studio umożliwia tworzenie aplikacji, które umożliwia poprawne wyświetlanie tekstu w językach zapisywane prawej do lewej, m.in. arabski i hebrajski. W przypadku niektórych funkcji po prostu można ustawić właściwości. W pozostałych przypadkach musi implementować funkcje w kodzie.  
@@ -80,15 +82,16 @@ Visual Studio umożliwia tworzenie aplikacji, które umożliwia poprawne wyświe
 -   Kod i literały tekstowe. W edytorze kodu (która jest również edytora tekstów) umożliwia arabskiego lub hebrajską nazwy klasy, funkcje, zmiennych, właściwości, literałów ciągów, atrybuty i tak dalej. Edytor nie obsługuje jednak kolejność czytania od prawej do lewej; tekst rozpoczyna się zawsze do lewej.  
   
     > [!TIP]
-    >  Zaleca się umieszczenie Literały ciągu w plikach zasobu zamiast kodować je do programu. Aby uzyskać więcej informacji, zobacz [wskazówki: Lokalizowanie formularzy systemu Windows](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Zaleca się umieszczenie Literały ciągu w plikach zasobu zamiast kodować je do programu. Aby uzyskać więcej informacji, zobacz [zasobów w aplikacjach klasycznych (.NET Framework)](/dotnet/framework/resources/index).
   
     > [!NOTE]
-    >  Musi być spójna w sposób odwołań do obiektów o nazwie w tych językach. Na przykład jeśli używasz Kashida nazewnictwa Arabic zmiennej, należy zawsze używać Kashida podczas odwoływania się do tej zmiennej lub będą powodować błędy.  
+    > Musi być spójna w sposób odwołań do obiektów o nazwie w tych językach. Na przykład jeśli używasz Kashida nazewnictwa Arabic zmiennej, należy zawsze używać Kashida podczas odwoływania się do tej zmiennej lub będą powodować błędy.  
   
 -   Komentarze w kodzie. Komentarze można tworzyć w arabski lub hebrajski. Umożliwia także tych języków w narzędziu konstruktora komentarza.  
   
-## <a name="see-also"></a>Zobacz też  
- [Obsługa dwukierunkowych w systemie Windows formularzy aplikacji](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Dwukierunkowa obsługa aplikacji sieci Web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [Globalizowanie aplikacji](../ide/globalizing-applications.md)   
- [Lokalizowanie aplikacji](../ide/localizing-applications.md)
+## <a name="see-also"></a>Zobacz także
+
+[Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[Dwukierunkowa obsługa aplikacji sieci Web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[Globalizowanie aplikacji](../ide/globalizing-applications.md)  
+[Lokalizowanie aplikacji](../ide/localizing-applications.md)

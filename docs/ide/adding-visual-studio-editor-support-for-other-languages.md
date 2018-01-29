@@ -15,17 +15,19 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków edytora programu Visual Studio
 Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje Odczyt i nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.  
@@ -40,11 +42,11 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
 |||||||  
 |-|-|-|-|-|-|  
 |Bat|F#|Java|Język znaczników markdown|Rdzy|Visual Basic|  
-|Clojure|Przejdź|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Przejdź|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
-|CoffeeScript|HTML|MNIEJ|Python|SQL|VBNet|  
-|CSS|INI|LUA|R|Kod SWIFT|XML|  
-|Docker|Jade|Wprowadź|Ruby|TypeScript|YAML PROGRAMU|  
+|CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
+|CSS|INI|LUA|R|Swift|XML|  
+|Docker|Jade|Wprowadź|Ruby|TypeScript|YAML|  
   
  Oprócz kolorowanie składni i uzupełniania instrukcji podstawowych programu Visual Studio ma również funkcję [przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja pozwala na szybkie wyszukiwanie plików kodu, ścieżki do plików i symbole kodu. Visual Studio udostępnia przejdź do pomocy technicznej dla następujących języków.  
   
@@ -62,7 +64,7 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
   
 -   Visual C++  
   
--   Visual C#  
+-   C#  
   
  Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy obsługa danego języka nie został jeszcze zainstalowany. Instalowanie obsługi specjalne w przypadku niektórych języków może zapewnić obsługę dodatkowych języków, takie jak IntelliSense lub inne funkcje zaawansowane języka, takie jak żarówki.  
   
@@ -71,7 +73,7 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
   
  Dodaj wszystkie nowe gramatyki TextMate dla programu Visual Studio w następującym folderze:  
   
- % userprofile %\\. vs\Extensions  
+ %userprofile%\\.vs\Extensions  
   
  W obszarze tej ścieżki podstawowej należy dodać do następujących folderów, jeśli mają one zastosowanie do sytuacji:  
   
