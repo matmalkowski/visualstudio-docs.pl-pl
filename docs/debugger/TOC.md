@@ -18,6 +18,7 @@
 # Przewodniki z instrukcjami
 ## [Nawigowanie po kodzie za pomocą debugera](navigating-through-code-with-the-debugger.md)
 ## [Używanie punktów przerwania](using-breakpoints.md)
+### [Rozwiązywanie problemów z punktami przerwania](troubleshooting-breakpoints.md)
 ## [Sprawdzanie danych](debugger-windows.md)
 ### [Sprawdzanie zmiennych](autos-and-locals-windows.md)
 ### [Ustawianie wyrażenia kontrolnego na zmiennych](watch-and-quickwatch-windows.md)

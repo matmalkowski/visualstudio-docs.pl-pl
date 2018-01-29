@@ -366,6 +366,7 @@
 #### [Opcje projektanta XAML, okno dialogowe](ide/reference/xaml-designer.md)
 ### [Okno Dane wyjściowe](ide/reference/output-window.md)
 ### [Odwołanie do właściwości projektu](ide/reference/project-properties-reference.md)
+#### [Strona aplikacji, Projektant projektu (UWP)](ide/reference/application-page-project-designer-uwp.md)
 #### [Strona aplikacji, Projektant projektu (Visual Basic)](ide/reference/application-page-project-designer-visual-basic.md)
 ##### [Informacje o zestawie, okno dialogowe](ide/reference/assembly-information-dialog-box.md)
 #### [Strona aplikacji, Projektant projektu (C#)](ide/reference/application-page-project-designer-csharp.md)
