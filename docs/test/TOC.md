@@ -20,6 +20,7 @@
 ## [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md)
 ### [Uruchamianie testu jednostkowego jako procesu 64-bitowego](run-a-unit-test-as-a-64-bit-process.md)
 ### [Przewodnik: tworzenie i uruchamianie testów jednostkowych aplikacji platformy UWP](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [Eksplorator testów — często zadawane pytania](test-explorer-faq.md)
 ## [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [Pisanie testów jednostkowych dla kodu zarządzanego](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [Przewodnik: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
