@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Wprowadzenie do debugera programu Visual Studio
 Debuger programu Visual Studio jest łatwy w użyciu w dowolnym języku. W tym miejscu zostanie omówiony sposób debugowania prosty program C#, ale te same kroki można zastosować do kodu w innych językach, takich jak C++ i JavaScript.
@@ -27,7 +29,7 @@ Aby obejrzeć film przedstawiający podobne funkcje, zobacz [wprowadzenie do deb
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Debugowanie projektu podstawowe języka C#  
  Zacznijmy od prostą aplikację konsoli języka C# (**Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C#** , a następnie **aplikacji konsoli**). Jeśli nigdy nie pracował z programu Visual Studio przed, zobacz [wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** metody tylko dodaje 1 do zmienna całkowitoliczbowa 10 razy i wynik do konsoli:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  Umieszczeniu na **testInt** zmienną, aby wyświetlić bieżącą wartość w etykietce danych.  
   
- ![DBG &#95; Podstawowe informacje o &#95; danych &#95; Wskazówki dotyczące](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  Poniżej oknie Kod powinien zostać wyświetlony **automatycznych**, **zmiennych lokalnych**, i **czujki** systemu windows. Te okna Pokaż bieżące wartości zmiennych w czasie wykonywania. Zarówno **automatycznych** i **zmiennych lokalnych** Pokaż windows **testInt** o wartości **10**.  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Różnice między **Step Into** i **Step Over**, należy dodać metody, która jest wywoływana przy użyciu innej metody. Dodawanie metody do aplikacji C# i wywołać ją z metody Main. Kod powinien wyglądać następująco:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

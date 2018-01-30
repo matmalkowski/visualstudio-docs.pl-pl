@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,23 +20,24 @@ helpviewer_keywords:
 - debugging Windows Services applications, OnStart method
 - Windows Service applications, debugging
 ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b482189ca4018cb3d55c2b35ecff3578863410a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bcfe3062ff0f36628016e1a9c0fc70278a5b0de7
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Porady: debugowanie metody OnStart
 Usługa systemu Windows można debugować przez uruchamianie usługi i dołącza debuger do procesu usługi. Aby uzyskać więcej informacji, zobacz [porady: debugowanie aplikacji usług systemu Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Jednak aby debugować <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> metody usługi systemu Windows, można uruchomić debugera z wewnątrz metody.  
   
 1.  Dodaj wywołanie do <xref:System.Diagnostics.Debugger.Launch%2A> na początku `OnStart()`metody.  
   
-    ```CSharp  
+    ```csharp  
     protected override void OnStart(string[] args)  
     {  
         System.Diagnostics.Debugger.Launch();  

@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Sprawdź zmienne w automatycznych i zmiennych lokalnych Windows w programie Visual Studio
 **Automatycznych** okna (podczas debugowania, **CTRL + ALT + V, A**, lub **debugowania > Windows > automatycznych**) i **zmiennych lokalnych** okna (podczas debugowania **CTRL + ALT + V, L**, lub **Debuguj > Windows > Zmienne lokalne**) są bardzo przydatne, gdy chcesz sprawdzić wartości zmiennych podczas debugowania. **Zmiennych lokalnych** wyświetlane zmienne zdefiniowane w zakresie lokalnego jest zazwyczaj funkcji lub metody, który jest aktualnie wykonywany. **Automatycznych** okna są wyświetlane zmienne używane wokół bieżącego wiersza (miejsce, w której debuger został zatrzymany). Dokładnie zmienne, które są wyświetlane w tym oknie różni się w różnych językach. Zobacz [co zmienne są wyświetlane w oknie automatycznych?](#bkmk_whatvariables) poniżej.  
@@ -33,14 +35,14 @@ Aby uzyskać więcej informacji o debugowaniu podstawowe zobacz [wprowadzenie do
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Spojrzenie na obiektach w oknach zmiennych automatycznych i zmiennych lokalnych  
 Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych lokalnych jako drzewa formantów. Kliknij strzałkę w lewo nazwę zmiennej, aby rozwinąć widok, aby wyświetlić pola i właściwości. Oto przykład [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) obiektu w **zmiennych lokalnych** okno:  
   
-![Zmienne lokalne &#45; FileStream](../debugger/media/locals-filestream.png "FileStream zmiennych lokalnych")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a>Jakie zmienne są wyświetlane w oknie automatycznych?  
  Można użyć **automatycznych** okna w kodzie C#, Visual Basic i C++. **Automatycznych** okna nie obsługuje języka JavaScript lub F #.  
   
  W języku C# i Visual Basic **automatycznych** okno wyświetla dowolnej zmiennej używany w bieżącym lub poprzedniego wiersza. Jeśli na przykład deklarować zmiennych i ustaw je w następujący sposób:
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych
 
  Jeśli ustawisz punkt przerwania w wierszu `c = 3`; i uruchom debuger, po przerwaniu wykonywania **automatycznych** okno będzie wyglądać następująco:  
 
- ![Automatyczne &#45; CSharp](../debugger/media/autos-csharp.png "CSharp automatycznych")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  Należy pamiętać, że wartość `c` ma wartość 0, ponieważ wiersz `c = 3` jeszcze nie zostało wykonane.  
 
@@ -73,7 +75,7 @@ Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych
 
  Jeśli ustawisz punkt przerwania w wierszu `e = 5;` i uruchom debuger, po przerwaniu wykonywania **automatycznych** okno będzie wyglądać następująco:  
   
- ![Automatyczne &#45; Cplus](../debugger/media/autos-cplus.png "Cplus automatycznych")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Należy pamiętać, że zmienna e została zainicjowana, ponieważ kod w wierszu `e = 5;` jeszcze nie zostało wykonane.  
   
@@ -84,7 +86,7 @@ Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych
   
  Poniższy kod C# dodaje zwracane wartości dwie funkcje:  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  

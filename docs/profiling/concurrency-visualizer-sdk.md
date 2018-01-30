@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.sdk.about
+f1_keywords:
+- vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3745e863a94c0e2b899da0bf9d81589570c6ac0
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w Concurrency Visualizer, mogą dodawać kod źródłowy. Dodatkowe dane można skojarzyć z fazy i zdarzeń w kodzie. Te dodatkowe wizualizacje są określane jako *znaczniki*.  Przewodnik wprowadzający dla [wprowadzenie do zestawu SDK wizualizatora współbieżności](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -40,7 +43,7 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
   
 3.  Dodaj importów lub przy użyciu instrukcji w kodzie.  
   
-    ```CSharp  
+    ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
@@ -93,7 +96,7 @@ Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić doda
   
 1.  Aby użyć nowego <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, najpierw utworzyć przy użyciu <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> obiekt, a następnie wygeneruj znacznika zdarzenia bezpośrednio z nowej serii.  
   
-    ```CSharp  
+    ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
     series1.WriteFlag("My flag");  
     ```  

@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Systemu windows są dostępne tylko podczas sesji debugowania. Aby otworzyć **c
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Obserwowania pojedynczą zmienną z QuickWatch  
  Można użyć **QuickWatch** okna, aby przyjrzeć się pojedynczą zmienną. Na przykład, jeśli masz następujący kod:  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a>Odświeżanie wartości czujki, które są nieaktualne  
  W pewnych okolicznościach, można napotkać ikony odświeżania (strzałka cykliczne) gdy wyrażenie jest obliczane w **czujki** okna.  Na przykład, jeśli masz obliczania właściwości wyłączone (**Narzędzia > Opcje > debugowanie > Włącz obliczanie właściwości i inne niejawne wywołania funkcji**), i mieć następujący kod:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  Poniższy kod tworzy jedną metodę `Person` przy użyciu zmiennej lokalnej, ale chcesz poznać `Person`jego nazwa jest w innej metody:  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  

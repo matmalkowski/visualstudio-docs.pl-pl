@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 91cef7c8c037421b69cd13e69ab21543aaf89839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 315a5c06a1ecda7976f17e20a299daed5dad65bd
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Sprawdź aplikację z programem IntelliTrace historical debugowania w programie Visual Studio
 Można użyć [debugowania historycznego](../debugger/historical-debugging.md) do tyłu i do przodu przez wykonanie aplikacji i sprawdzić jego stan.  
@@ -27,7 +29,7 @@ Można użyć funkcji IntelliTrace w Visual Studio Enterprise edition, ale nie w
 ## <a name="navigate-your-code-with-historical-debugging"></a>Przejdź do kodu za pomocą debugowania historycznego  
  Zacznijmy prosty program, który ma usterki. W języku C# aplikacji konsoli Dodaj następujący kod:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  

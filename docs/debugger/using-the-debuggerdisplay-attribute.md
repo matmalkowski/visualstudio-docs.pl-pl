@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 08/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11770efcc517b9ec713656f540d75b0a2c412ae7
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Za pomocą atrybutu DebuggerDisplay
 [Debuggerdisplayattribute — klasa](/dotnet/api/system.diagnostics.debuggerdisplayattribute) Określa, jak obiekt, właściwość lub pole jest wyświetlany w oknach zmiennych debugera. Ten atrybut można stosować do typów delegatów, właściwości, pól i zestawów.  
@@ -75,7 +77,7 @@ csc /t:library autoexp.cs
   
  Jest jednym ze sposobów zmniejszyć możliwe problemy z wyrażenia przez utworzenie właściwości prywatnej, która wykonuje operację i zwraca wartość typu ciąg. Atrybutu DebuggerDisplay można następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład zawiera implementację tego wzorca:  
   
-```CSharp  
+```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
 {      
@@ -99,7 +101,7 @@ public sealed class MyClass
 |Key|"3"|Obiekt {ciąg}|  
 |Wartość|3|Obiekt {int}|  
   
-```CSharp  
+```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
 internal class KeyValuePairs  
 {  

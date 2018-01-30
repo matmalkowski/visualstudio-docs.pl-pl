@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Przejdź do kodu za pomocą debugera programu Visual Studio
 Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który ułatwi szybsze i łatwiejsze do znalezienia i rozwiąż problemy w aplikacji. Podczas nawigacji kodu w debugerze, można sprawdzić stan aplikacji lub Dowiedz się więcej o przepływ wykonania.  
@@ -32,13 +35,13 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
   
  Zieloną strzałkę również uruchomienie debugera (taki sam jak **F5**).  
   
- ![DBG &#95; Podstawowe informacje o &#95; Rozpocznij &#95; debugowanie](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Obejmują kilka innych sposobów, że można uruchomić aplikację w debugerze **F11** ([Wkrocz do kodu](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([Przekrocz kod](#BKMK_Step_over_Step_out)), lub przy użyciu **Uruchom do kursora**.  Zobacz pozostałe sekcje w tym temacie, aby uzyskać informacje na czy te opcje.  
   
  Podczas debugowania, żółty wiersz zawiera kod, który zostanie wykonany następny.  
   
- ![DBG &#95; Podstawowe informacje o &#95; Podział &#95; Tryb](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Podczas debugowania, można przełączać się między poleceń, takich jak **F5**, **F11** i korzystanie z innych funkcji opisanych w tym temacie (np. punkty przerwania), aby szybko uzyskać dostęp do kodu, aby przyjrzeć się.  
   
@@ -56,7 +59,7 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
   
 -   Debuger faktycznie przechodzi przez instrukcje kodu zamiast fizycznej wierszy. Na przykład `if` klauzuli mogą być zapisywane w jednym wierszu:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
 |Polecenie klawiatury|Polecenia menu|Opis|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Przekrocz**|Jeśli bieżący wiersz zawiera wywołanie funkcji **Step Over** uruchamia kod, a następnie wstrzymuje wykonywanie w pierwszym wierszu kodu po powrocie wywołanej funkcji.|  
-|**SHIFT + F11**|**Wyjdź**|**Step Out** kontynuuje wykonywanie kodu i wstrzymuje wykonywanie, gdy bieżąca funkcja zwraca (pomija debugera za pomocą funkcji current).|  
+|**Shift+F11**|**Wyjdź**|**Step Out** kontynuuje wykonywanie kodu i wstrzymuje wykonywanie, gdy bieżąca funkcja zwraca (pomija debugera za pomocą funkcji current).|  
   
 > [!TIP]
 >  Aby znaleźć punkt wejścia w aplikacji należy uruchomić z **F10** lub **F11**. Polecenia te często są przydatne podczas sprawdzania stanu Twojej aplikacji i dowiedzieć się więcej o przepływie jej wykonanie w trakcie.  
