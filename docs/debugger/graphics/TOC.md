@@ -30,7 +30,6 @@
 ## [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)
 ## [Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
 ## [Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki](how-to-change-the-graphics-diagnostics-playback-machine.md)
-## [Instrukcje: używanie diagnostyki grafiki z urządzeniem ARM](how-to-use-graphics-diagnostics-with-an-arm-device.md)
 # [Odwołanie (przechwycenie programowe)](reference-programmatic-capture.md)
 ## [VsgDbg, klasa](vsgdbg-class.md)
 ### [VsgDbg::VsgDbg (Konstruktor)](vsgdbg-vsgdbg-constructor.md)
