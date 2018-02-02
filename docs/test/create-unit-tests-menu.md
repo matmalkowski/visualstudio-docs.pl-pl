@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
+helpviewer_keywords:
+- unit testing, create unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: cf851d9fbd32bfdd07c6e1a67517ddf38784799c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Utwórz jednostki klas zastępczych metody testu za pomocą polecenia Utwórz testy jednostkowe
 
-Visual Studio **tworzenia testów jednostkowych** polecenie umożliwia tworzenie jednostki klas zastępczych metody testu. Ta funkcja umożliwia łatwe konfigurację projektu testowego, klasy testowej i szkieletu metody testu w niej. 
+Visual Studio **tworzenia testów jednostkowych** polecenie umożliwia tworzenie jednostki klas zastępczych metody testu. Ta funkcja umożliwia łatwe konfigurację projektu testowego, klasy testowej i szkieletu metody testu w niej.
 
 ## <a name="availability-and-extensions"></a>Dostępność i rozszerzenia
 
@@ -63,8 +65,7 @@ Ta funkcja zawsze, gdy trzeba utworzyć testy jednostek, ale w szczególności, 
 
 Jednak ta funkcja jest równie mające zastosowanie do sytuacji, w którym rozpoczyna się przez napisanie kodu dewelopera, a użyty do ładowania początkowego testowania dyscypliny jednostek. W ramach przepływu kodowania deweloper może być szybko utworzyć jednostki testu szkieletu metody (z klasy odpowiedniego testu, a Projekt testowy odpowiedniego) dla określonej części kodu. 
 
-## <a name="more-information"></a>Więcej informacji
+## <a name="see-also"></a>Zobacz także
 
-Zobacz wpis w blogu [tworzenie testu jednostkowego klas zastępczych metody przy użyciu "Tworzenia testów jednostkowych"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/).
-
-Można znaleźć więcej testowania blogach jednostek [tutaj](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/).
+[Tworzenie klas zastępczych metody testu jednostkowego z "Utwórz testy jednostkowe"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
+[Wpisy na blogu testy jednostkowe](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)

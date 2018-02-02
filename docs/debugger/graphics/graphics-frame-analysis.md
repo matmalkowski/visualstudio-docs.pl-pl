@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D gier i aplikacji.  
@@ -147,37 +148,32 @@ Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do anal
 ### <a name="gpu-counters"></a>Liczniki procesora GPU  
  Obsługa liczników sprzętowych procesora GPU jest zależne od sprzętu.  
   
- Ponieważ żaden komputer aktualnie oferowane przez firmy Intel, AMD lub nVidia GPU niezawodnie obsługuje liczników sprzętowych procesora GPU, analiza ramek nie zebrać liczników z nich. Jednak analizy ramek zbierania liczników sprzętowych z tych procesorów graficznych, które niezawodnie ich obsługi:  
+ Ponieważ żaden komputer aktualnie oferowane przez firmy Intel, AMD lub nVidia GPU niezawodnie obsługuje liczników sprzętowych procesora GPU, analiza ramek nie zebrać liczników z nich. Jednak analizy ramek zbierania liczników sprzętowych z następujących procesora GPU, który niezawodny sposób je obsługuje:  
   
--   SOCs Qualcomm, (żadnych obsługującego Windows Phone)  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Nie inne platformy, która obsługuje analizy ramek zbiera dane liczników sprzętowych procesora GPU.  
   
 > [!NOTE]
 >  Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może zająć wiele przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W związku z tym kolejności, w którym procesor GPU liczniki są zbierane jest nieokreślony.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Sygnatury czasowe, okluzji kwerendy i liczników sprzętowych procesora GPU są obsługiwane tylko w aparaty telefoniczne Windows Phone, które dostarczonych z systemu Windows Phone 8.1 lub Windows Phone 10. Analiza ramek wymaga je w celu odtwarzania się, że plik dziennika grafiki. Aparaty telefoniczne Windows Phone, które pierwotnie dostarczono Windows Phone 8 nie obsługują analizy ramek, nawet w przypadku aparaty telefoniczne, które zostały zaktualizowane w usłudze Windows Phone 8.1 lub Windows Phone 10.  
-  
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze  
  Niektóre sposoby używania analiza ramek nie są obsługiwane lub są dobrym pomysłem.  
-  
-### <a name="warp"></a>WARP  
- Analiza ramek jest przeznaczona do użycia profilu i poprawia wydajność renderowania na sprzęcie prawdziwe. Nie uniemożliwia uruchomiony analizy ramek na urządzenia WARP — emulator Windows Phone, który jest uruchamiany na WARP —, ale nie jest zazwyczaj zastanowić wykonywania ponieważ WARP systemem wysokiej klasy procesora CPU jest mniejsza niż nawet obsługą najmniej GPU nowoczesnych i WARP wydajność może się zmieniać znacznie w zależności od określonego Procesora pracuje.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Przechwytuje odtwarzania poziomie o wysokim funkcji na urządzeniach niskiego poziomu  
  W analizatorze grafiki podczas odtwarzania pliku dziennika grafiki, która używa wyższego poziomu funkcji nie obsługuje maszyny odtwarzania, on automatycznie powraca do WARP. Analizę ramek go jawnie nie wracały do WARP oraz generuje błąd — WARP przydaje się sprawdzenie poprawności aplikacji Direct3D, ale nie sprawdzenie jego wydajności.  
   
 > [!NOTE]
->  Chociaż należy koniecznie pamiętać problemy z poziomu funkcji, można przechwytywać i odtwarzanie się, że pliki na różne konfiguracje sprzętu i urządzeniach dziennika grafiki. Na przykład umożliwia przechwytywanie informacji graficznych na Windows Phone i odtwarzać go ponownie na komputerze i odwrotnie jest również obsługiwany. W obu przypadkach dziennika grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsy API, lub użyj poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.  
+>  Chociaż należy koniecznie pamiętać problemy z poziomu funkcji, można przechwytywać i odtwarzanie się, że pliki na różne konfiguracje sprzętu i urządzeniach dziennika grafiki. Dziennika grafiki można odtwarzać ponownie tak długo, jak w pliku dziennika nie zawiera interfejsy API, lub użyj poziomów funkcji, które nie są obsługiwane na maszynie odtwarzającej.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 lub niższy  
  Jeśli aplikacja wymaga interfejsu API programu Direct3D 10, analiza ramek nie rozpoznaje lub ich profilu, nawet jeśli są rozpoznawane i używane przez inne narzędzia Analizator grafiki.
   
 > [!NOTE]
 >  Dotyczy to tylko wywołania interfejsu API programu Direct3D, których używasz, nie poziomów funkcji.
+
+### <a name="warp"></a>WARP  
+ Analiza ramek jest przeznaczona do użycia profilu i poprawia wydajność renderowania na sprzęcie prawdziwe. Nie uniemożliwia uruchomiony analizy ramek na urządzenia WARP, ale nie jest zazwyczaj zastanowić wykonywania ponieważ WARP systemem wysokiej klasy procesora CPU jest mniejsza niż nawet obsługą najmniej GPU nowoczesnych i WARP wydajność może się znacznie różnić w zależności od określonego Procesora jest on uruchomiony.  
   
 ##  <a name="Variants"></a>Elementy Variant  
  Każdej zmiany, która sprawia, że analiza ramek na sposób renderowania ramki podczas odtwarzania nosi nazwę *variant*. Wariantów, które sprawdza, czy analiza ramek odpowiadają wspólnego, stosunkowo łatwa zmiany, które można zmienić w celu ulepszenia wydajności renderowania lub visual jakości aplikacji, na przykład, zmniejszenie jego rozmiar tekstury, za pomocą metody kompresji tekstury lub włączenie różne rodzaje wygładzanie. Wariantów zastąpić kontekstu zwykle renderowania i parametrów aplikacji. Poniżej przedstawiono podsumowanie:  
@@ -185,9 +181,9 @@ Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do anal
 |Variant|Opis|  
 |-------------|-----------------|  
 |**Rozmiaru okienka ekranu 1 x 1**|Zmniejsza wymiary okienka ekranu na wszystkie elementy docelowe renderowania na 1 x 1 pikseli.<br /><br /> Aby uzyskać więcej informacji, zobacz [Variant rozmiaru okienka ekranu 1 x 1](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|Wyłącza wielu przykładowa Wygładzanie (MSAA) na wszystkich celów renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|Umożliwia 2 x wielu przykładowa Wygładzanie (MSAA) na wszystkich celów renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|Umożliwia 4 x wielu przykładowa Wygładzanie (MSAA) na wszystkich celów renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Wyłącza wielu przykładowa Wygładzanie (MSAA) na wszystkich celów renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Umożliwia 2 x wielu przykładowa Wygładzanie (MSAA) na wszystkich celów renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Umożliwia 4 x wielu przykładowa Wygładzanie (MSAA) na wszystkich celów renderowania.<br /><br /> Aby uzyskać więcej informacji, zobacz [0 x / 2 x / 4 x MSAA wariantów](0x-2x-4x-msaa-variants.md)|  
 |**Filtrowanie punktu tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_MIP_POINT` (punkt filtrowania tekstury) dla wszystkich odpowiednich tekstury próbek.<br /><br /> Aby uzyskać więcej informacji, zobacz [punktu, dwuliniowa Trilinear i wariantów filtrowania tekstury anizotropowej](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrowanie dwuliniowa tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrowanie dwuliniowa tekstury) dla wszystkich odpowiednich tekstury próbek.<br /><br /> Aby uzyskać więcej informacji, zobacz [punktu, dwuliniowa Trilinear i wariantów filtrowania tekstury anizotropowej](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrowanie trilinear tekstury**|Ustawia tryb filtrowania `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrowanie trilinear tekstury) dla wszystkich odpowiednich tekstury próbek.<br /><br /> Aby uzyskać więcej informacji, zobacz [punktu, dwuliniowa Trilinear i wariantów filtrowania tekstury anizotropowej](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

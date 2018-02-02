@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 
@@ -63,13 +64,13 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
   
  **Możesz mapować zależności dla kodu w tych językach**:  
   
--   Visual C# .NET i Visual Basic .NET w rozwiązaniu lub zestawów (.dll lub .exe)  
+-   Visual C# lub Visual Basic w rozwiązaniu lub zestawów (.dll lub .exe)  
   
 -   Natywnego lub zarządzanego kodu C lub C++ w projektach Visual C++, pliki nagłówków (.h lub `#include`), lub plików binarnych  
   
 -   X ++, projekty i zestawy wprowadzone z modułów .NET dla programu Microsoft Dynamics AX  
   
- **Uwaga:** dla innych projektów C# i Visual Basic .NET, są mniej opcji uruchamiania mapę kodu lub dodawanie elementów do istniejącej mapy kodu. Nie można na przykład, kliknij prawym przyciskiem myszy obiekt w edytorze tekstu projektu C++ i dodaj go do mapy kodu. Jednak możesz przeciągać i porzucić elementy poszczególnych kodu lub pliki w Eksploratorze rozwiązań, Widok klas i przeglądarka obiektów.  
+ **Uwaga:** dla innych projektów C# lub Visual Basic, są mniej opcji uruchamiania mapę kodu lub dodawanie elementów do istniejącej mapy kodu. Nie można na przykład, kliknij prawym przyciskiem myszy obiekt w edytorze tekstu projektu C++ i dodaj go do mapy kodu. Jednak możesz przeciągać i porzucić elementy poszczególnych kodu lub pliki w Eksploratorze rozwiązań, Widok klas i przeglądarka obiektów.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Aby wyświetlić ogólne zależności między rozwiązania  
   
@@ -286,7 +287,7 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
 ##  <a name="SeeSourceHeader"></a>Zobacz zależności między pliki źródłowe C i C++ i pliki nagłówkowe  
  Jeśli chcesz utworzyć bardziej szczegółowy mapy dla projektów C++, ustaw opcję kompilatora informacji o przeglądaniu (**/FR**) na tych projektów. W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. W przypadku wybrania **OK**, to ustawienie opcji dla bieżącej mapy. Można ukryć w komunikacie wszystkie nowsze mapy. Ukryj tę wiadomość, można wyświetlić ją ponownie. Ustawiono następujący klucz rejestru `0` lub usunąć klucza:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie nie można utworzyć mapy kodu dla nagłówka (.h lub `#include`) pliki zakończenie bazy danych IntelliSense aktualizacji. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio. Aby rozwiązać problemy lub komunikaty wyświetlane, ponieważ niektóre ustawienia IntelliSense są wyłączone, zobacz [Rozwiązywanie problemów z mapy dla kodu C i C++](#Troubleshooting).  
   
@@ -310,7 +311,7 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|  
 |---------------|------------------------|--------------------|  
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Błędy kompilacji, które wystąpiły, a następnie ponownie wygenerować mapy.|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]przestaje odpowiadać podczas próby Generuj mapę kodu z **architektura** menu.|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przestaje odpowiadać podczas próby Generuj mapę kodu z **architektura** menu.|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|  
 |Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia IntelliSense może być wyłączone w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **opcje** okno dialogowe.|Włącz te ustawienia.<br /><br /> Zobacz [opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
 |Komunikat **nieznanych metod** pojawia się w węźle metody.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz **/Fixed: No** opcji w konsolidatorze.|  
 ||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz **/DEBUG** opcji w konsolidatorze.|  

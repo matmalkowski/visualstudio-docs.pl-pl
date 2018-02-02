@@ -1,45 +1,42 @@
 ---
 title: "Wprowadzenie do języka R w programie Visual Studio | Dokumentacja firmy Microsoft"
+description: "Wskazówki dotyczące użycia języka R w programie Visual Studio, w tym tworzenia projektu, okno interaktywne kodu, edytowanie i debugowanie."
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: cf8df86322e10054dee5dbcee95839506f690306
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Pierwsze kroki z narzędziami R dla programu Visual Studio
 
-Po utworzeniu R narzędzi dla programu Visual Studio (RTVS) zainstalowany (zobacz [instalacji](installation.md)), możesz szybko uzyskać smak doświadczenia, które zapewniają te narzędzia. Poniższe sekcje zawierają informacje pomocne przy możliwościami:
-
-- [Tworzenie projektu R](#create-an-r-project)
-- [Eksploruj okna interaktywnego i IntelliSense](#explore-the-interactive-window-and-intellisense)
-- [Funkcje edycji kodu obsługi](#experience-code-editing-features)
-- [Debugowanie kodu](#debugging-your-code)
-- [Następne kroki](#next-steps)
+Po utworzeniu R narzędzi dla programu Visual Studio (RTVS) zainstalowany (zobacz [instalacji](installing-r-tools-for-visual-studio.md)), możesz szybko uzyskać smak doświadczenia, które zapewniają te narzędzia. 
 
 ## <a name="create-an-r-project"></a>Tworzenie projektu R
 
 1. Uruchom program Visual Studio.
-1. Wybierz **Plik > Nowy > Projekt...** (Ctrl + Shift + N)
+1. Wybierz **Plik > Nowy > Projekt...** (Ctrl+Shift+N)
 1. Wybierz "Projekt R" w ramach **Szablony > R**, nadaj projektu, nazwy i lokalizacji, a wybierz **OK**:
 
    ![Okno dialogowe Nowy projekt dla języka R w programie Visual Studio (RTVS w VS2017)](media/getting-started-01-new-project.png)
 
 1. Po utworzeniu projektu Zobacz się następujące systemu windows:
 
-    - Po prawej stronie jest Visual Studio Eksploratorze rozwiązań, której występuje projektu w nadrzędnym *rozwiązania*. (Rozwiązania może zawierać dowolną liczbę projektów o różnych typach; zobacz [projekty](projects.md) szczegółowe informacje.
+    - Po prawej stronie jest Visual Studio Eksploratorze rozwiązań, której występuje projektu w nadrzędnym *rozwiązania*. (Rozwiązania może zawierać dowolną liczbę projektów o różnych typach; zobacz [projekty](r-projects-in-visual-studio.md) szczegółowe informacje.
     - W lewej górnej części jest nowy plik R (`script.R`) funkcje służące do edytowania kodu źródłowego z wszystkimi programu Visual Studio do edytowania.
     - W lewym dolnym rogu jest **R interakcyjne** okna, w którym możesz interaktywnie opracowanie i przetestowanie kodu.
 
@@ -74,13 +71,13 @@ Po utworzeniu R narzędzi dla programu Visual Studio (RTVS) zainstalowany (zobac
 
     ![Wyświetlanie wykresu w programie Visual Studio](media/getting-started-07-plot-window.png)
 
-Okno interaktywne umożliwia również przejrzeć historię, obciążenia i Zapisz obszarów roboczych dołączyć do debugera i interakcję z plikami kodu źródłowego zamiast kopiowania i wklejania. Zobacz [Praca z okno interaktywne R](interactive-repl.md) szczegółowe informacje.
+Okno interaktywne umożliwia również przejrzeć historię, obciążenia i Zapisz obszarów roboczych dołączyć do debugera i interakcję z plikami kodu źródłowego zamiast kopiowania i wklejania. Zobacz [Praca z okno interaktywne R](interactive-repl-for-r-in-visual-studio.md) szczegółowe informacje.
 
 ## <a name="experience-code-editing-features"></a>Funkcje edycji kodu obsługi
 
 Praca krótko z okno interaktywne przedstawiono podstawowe funkcje edycji takie jak IntelliSense, które również działają w edytorze kodu. Po wprowadzeniu tego samego kodu jako przed Zobacz tego samego autouzupełniania i monity IntelliSense, ale nie dane wyjściowe.
 
-Pisanie kodu w `.R` plików pozwala zobaczyć cały kod jednocześnie i ułatwia zmiany małe, a następnie szybko sprawdzić działanie uruchamiając kod w oknie interaktywnym. Może także zawierać dowolną liczbę plików w projekcie. Jeśli kod jest w pliku, można również uruchomić go krok w debugerze (omówione w dalszej części tego tematu). Funkcje te są przydatne informacje o jest tworzenie algorytmów obliczeniową i pisanie kodu do manipulowania co najmniej jeden zestaw danych, szczególnie w przypadku, gdy chcesz sprawdzić wszystkie wyniki pośrednie.
+Pisanie kodu w `.R` plików pozwala zobaczyć cały kod jednocześnie i ułatwia zmiany małe, a następnie szybko sprawdzić działanie uruchamiając kod w oknie interaktywnym. Może także zawierać dowolną liczbę plików w projekcie. Jeśli kod jest w pliku, można również uruchomić go krok w debugerze (omówione w dalszej części tego artykułu). Funkcje te są przydatne informacje o jest tworzenie algorytmów obliczeniową i pisanie kodu do manipulowania co najmniej jeden zestaw danych, szczególnie w przypadku, gdy chcesz sprawdzić wszystkie wyniki pośrednie.
 
 Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej Newtona Limit](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). (Ten przykład jest dostosowany z *R Cookbook* przez Teetor Pawła.)
 
@@ -109,7 +106,7 @@ Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej
 
     ```R
     n <- 30
-    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))    
+    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))
     lines(density(samp.means))
     ```
 
@@ -139,7 +136,7 @@ Na przykład poniższe kroki tworzenia trochę kodu do eksplorowania [centralnej
 
     ![Zaktualizowano podwójne kreślenia w programie Visual Studio poprawnie skalowania](media/getting-started-10-plot3.png)
 
-Istnieje więcej, które można wykonać w edytorze. Aby uzyskać więcej informacji, zobacz [edytowanie kodu](code-editing.md), [IntelliSense](code-intellisense.md), i [wstawki kodu](code-snippets.md).
+Istnieje więcej, które można wykonać w edytorze. Aby uzyskać więcej informacji, zobacz [edytowanie kodu](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), i [wstawki kodu](code-snippets-for-r.md).
 
 ## <a name="debugging-your-code"></a>Debugowanie kodu
 
@@ -169,14 +166,14 @@ Jednym z kluczowych możliwości programu Visual Studio jest jego debugowania in
 
 1. Można kontynuować krokowe wykonywanie programu wiersz po wierszu, lub wybierz opcję **Kontynuuj** (F5), aby uruchomić go do wykonania (lub następnego punktu przerwania).
 
-Aby przejść głębiej, zobacz [debugowanie](debugging.md) i [Explorer zmiennej](variable-explorer.md).
+Aby przejść głębiej, zobacz [debugowanie](debugging-r-in-visual-studio.md) i [Explorer zmiennej](variable-explorer.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym przewodniku samouczka podstawy projektów języka R, przy użyciu okna interaktywnego, code, edytowanie i debugowanie w programie Visual Studio. Aby kontynuować, eksploracji więcej możliwości, zobacz następujące tematy, a także wyświetlane w spisie treści tematy:
+W tym przewodniku samouczka podstawy projektów języka R, przy użyciu okna interaktywnego, code, edytowanie i debugowanie w programie Visual Studio. Aby kontynuować, eksploracji więcej możliwości, zobacz następujące artykuły, a także wyświetlany w spisie treści artykułów:
 
 - [Przykładowych projektach](getting-started-samples.md)
-- [Edytowanie kodu](code-editing.md)
-- [Debugowanie](debugging.md)
-- [Obszary robocze](workspaces.md)
-- [Wizualizacja danych](visualizing-data.md)
+- [Edytowanie kodu](editing-r-code-in-visual-studio.md)
+- [Debugowanie](debugging-r-in-visual-studio.md)
+- [Obszary robocze](r-workspaces-in-visual-studio.md)
+- [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md)

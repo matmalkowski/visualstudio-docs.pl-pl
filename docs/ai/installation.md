@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installation"></a>Instalacja
 
@@ -103,7 +104,7 @@ Następnie należy sprawdzić, czy Python 3.5 jest poprawnie zainstalowany, a na
     C:\Users\test>python -m pip install -U pip
     ```
 
-- **System macOS**
+- **macOS**
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -117,7 +118,7 @@ Następnie należy sprawdzić, czy Python 3.5 jest poprawnie zainstalowany, a na
 ### <a name="python-on-visual-studio"></a>Python w programie Visual Studio
 
 Python jest w pełni obsługiwany w programie Visual Studio za pomocą rozszerzeń.
-Dowiedz się więcej na temat instalacji [języka Python dla programu Visual Studio Tools](https://docs.microsoft.com/visualstudio/python/installation) więcej szczegółów.
+Dowiedz się więcej na temat instalacji [języka Python dla programu Visual Studio Tools](../python/installing-python-support-in-visual-studio.md) więcej szczegółów.
 
 ### <a name="numpy-and-scipy"></a>NumPy i SciPy
 
@@ -209,7 +210,7 @@ Aby zainstalować PyTorch, uruchom następujące polecenie w terminalu:
     - Dekompresja go do katalogu macierzystego, np. "C:\Users\test\pytorch".
     - Dodaj "C:\Users\test\pytorch\Lib\site-packages" do zmiennej środowiskowej % PYTHONPATH %.
 
-- **System macOS**
+- **macOS**
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```

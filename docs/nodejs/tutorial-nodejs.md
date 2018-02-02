@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Wprowadzenie do środowiska Node.js w programie Visual Studio
 W tym samouczku do tworzenia aplikacji Node.js przy użyciu programu Visual Studio będzie utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
@@ -134,6 +137,8 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Kliknij przyciski do wyświetlania różnych obrazów.
 
+    ![Aplikacja uruchomiona w przeglądarce](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+
 1. Otwórz okno interaktywne Node.js, wybierając **Widok > inne okna > Node.js okna interaktywnego**.
 
    ![Otwórz okno interaktywne Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
@@ -144,7 +149,7 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Zamknij przeglądarkę sieci web.  
 
-## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
+## <a name="optional-publish-to-azure-app-service"></a>(Opcjonalnie) Publikowanie w usłudze Azure App Service
 
 1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **publikowania**.
 

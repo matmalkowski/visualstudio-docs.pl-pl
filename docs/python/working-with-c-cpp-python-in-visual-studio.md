@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -49,7 +50,7 @@ Aby uzyskać więcej informacji, zobacz [instalowanie obsługę języka Python d
 
 1. Utwórz nowy projekt języka Python w programie Visual Studio, wybierając **Plik > Nowy > Projekt**. Wyszukaj "Python", wybierz **aplikacji Python** szablonu, nadaj mu odpowiednią nazwę i lokalizację, a następnie wybierz **OK**.
 
-1. W projekcie `.py` plików, wklej następujący kod, który wzorców obliczenia tangens hiperboliczny (zaimplementowana bez korzystania z biblioteki matematyczne ułatwia porównanie). Możesz także wprowadzić kod ręcznie, aby zgłaszać niektóre [Python funkcje edytowania](code-editing.md).
+1. W projekcie `.py` plików, wklej następujący kod, który wzorców obliczenia tangens hiperboliczny (zaimplementowana bez korzystania z biblioteki matematyczne ułatwia porównanie). Możesz także wprowadzić kod ręcznie, aby zgłaszać niektóre [Python funkcje edytowania](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -288,7 +289,7 @@ Program Visual Studio obsługuje debugowania kodu Python i C++ razem.
 
     ![Zatrzymywanie w punkcie przerwania w kodzie C++](media/cpp-debugging.png)
 
-1. W tym momencie można wykonywać krokowo kodu C++, Sprawdź zmienne i tak dalej. Te funkcje są wyszczególnione w [debugowanie C++ i Python razem](debugging-mixed-mode.md).
+1. W tym momencie można wykonywać krokowo kodu C++, Sprawdź zmienne i tak dalej. Te funkcje są wyszczególnione w [debugowanie C++ i Python razem](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Alternatywnych metod
 

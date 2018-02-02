@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 
@@ -113,5 +114,5 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 
 ### <a name="going-deeper"></a>Przechodząc głębiej
 
-- [Debugowanie](debugging.md).
+- [Debugowanie](debugging-python-in-visual-studio.md)
 - [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md) zapewnia pełną dokumentację programu Visual Studio na debugowanie funkcji.

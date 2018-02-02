@@ -1,24 +1,21 @@
 ---
 title: "Visual Studio, narzędzia do testowania | Dokumentacja firmy Microsoft"
-ms.custom: na
-ms.date: 02/17/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/31/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ad98bfedbccabd5b02059151ce3a5c510fecd83b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Narzędzia do testowania w programie Visual Studio
 
@@ -34,7 +31,7 @@ Narzędzia testowania programu Visual Studio może pomóc Ty i Twój zespół ma
 |[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Eksplorator testów ułatwia integrowanie testów jednostkowych w praktyce z programowanie. Można użyć framework testów jednostkowych firmy Microsoft lub jednego z kilku innych firm i Otwórz źródło struktury.|
 |[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest automatycznie generuje testów jednostkowych i danych testowych dla kodu zarządzanego.|
 |[Pokrycie kodu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|Pokrycie kodu Określa, jaka część kodu projektu jest rzeczywiście testowane przez kodowane testy, takie jak testów jednostkowych.|
-|[Struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Izolowanie testowanego przez zastąpienie klas zastępczych i podkładek innych części aplikacji kod pomocy Microsoft Fakes.|
+|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Izolowanie testowanego przez zastąpienie klas zastępczych i podkładek innych części aplikacji kod pomocy Microsoft Fakes.|
 |[Testy jednostkowe na żywo](../test/live-unit-testing.md)|Testowanie jednostkowe na żywo działa w tle testów jednostkowych i automatycznie graficznie wyświetla wyniki pokrycia i testowania kodu w edytorze kodu programu Visual Studio.|
 |[Automatyzacja interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)|Użyj kodowanych testów interfejsu użytkownika do aplikacji za pośrednictwem jej interfejsu użytkownika.|
 |[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Środowisko laboratoryjne jest kolekcją maszyn wirtualnych i fizycznych, które służy do tworzenia i testowania aplikacji.|

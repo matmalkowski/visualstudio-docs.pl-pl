@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Pisania i uruchamiania kodu
 
@@ -44,7 +45,7 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
     print("Hello, Visual Studio")
     ```
 
-1. Zwróć uwagę, zabarwienie składni, który odróżnia instrukcji `print` w argumencie `"Hello Visual Studio"`. Ponadto tymczasowo usunąć ostatni `"` na ciąg i zwróć uwagę, jak Visual Studio wyświetli czerwoną linią kod który występują błędy składniowe. Następnie zastąp `"` Aby naprawić kod.
+1. Zwróć uwagę, zabarwienie składni, który odróżnia instrukcji `print` w argumencie `"Hello Visual Studio"`. Ponadto tymczasowo usunąć ostatni `"` na ciąg i zwróć uwagę, jak Visual Studio zawiera czerwone podkreślenie dla kodu które występują błędy składniowe. Następnie zastąp `"` Aby naprawić kod.
 
     ![Kolorowanie składni IntelliSense i błąd podświetlania](media/vs-getting-started-python-06-IntelliSense3b.png)
 
@@ -79,7 +80,7 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
     ```
 
     > [!Tip]
-    > Ukończenia mogą współpracować z podciągów wpisz dopasowanie części słowa, liter na początku słowa i nawet pominięte znaków. Zobacz [edytowanie kodu - zakończeń](code-editing.md#completions) szczegółowe informacje.
+    > Ukończenia mogą współpracować z podciągów wpisz dopasowanie części słowa, liter na początku słowa i nawet pominięte znaków. Zobacz [edytowanie kodu - zakończeń](editing-python-code-in-visual-studio.md#completions) szczegółowe informacje.
 
 1. Dodaj nieco więcej kodu wartości cosinus 360 stopni:
 
@@ -97,7 +98,7 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
 
 ## <a name="going-deeper"></a>Przechodząc głębiej
 
-- [Edytowanie kodu](code-editing.md)
-- [Formatowanie kodu](code-formatting.md)
-- [Refaktoryzacja kodu](code-refactoring.md)
-- [Używanie PyLint](code-pylint.md)
+- [Edytowanie kodu](editing-python-code-in-visual-studio.md)
+- [Formatowanie kodu](formatting-python-code.md)
+- [Refaktoryzacja kodu](refactoring-python-code.md)
+- [Używanie PyLint](linting-python-code.md)

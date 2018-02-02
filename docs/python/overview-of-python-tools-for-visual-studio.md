@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 067684c7b5064e096849afe69d2f0db1bcc75ea6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
 
@@ -31,7 +32,7 @@ Program Visual Studio w systemie Windows udostępnia [open source](https://githu
 Aby rozpocząć:
 
 - Postępuj zgodnie z [instrukcje dotyczące instalacji](installing-python-support-in-visual-studio.md) do skonfigurowania obciążenia Python
-- Przejdź do co najmniej jednego skróconych podręczników, aby utworzyć projekt. Jeśli masz pewności, Rozpocznij od [utworzyć projekt z szablonu](quickstart-02-project-from-template.md).
+- Przejdź do co najmniej jednego skróconych podręczników, aby utworzyć projekt. Jeśli masz pewności, Rozpocznij od [utworzyć projekt z szablonu](quickstart-02-python-in-visual-studio-project-from-template.md).
 - Postępuj zgodnie z [Praca z języka Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) samouczka środowisko pełnej end-to-end.
 - Następnie użyć łącza w poniższej tabeli, aby poznać funkcje związane z języka Python oraz możliwości programu Visual Studio, sam.
 
@@ -41,11 +42,11 @@ Aby rozpocząć:
 | [Szablony projektu](managing-python-projects-in-visual-studio.md#project-templates) | Szybko tworzy struktury projektu dla konsoli sieci web, Azure, analizy danych i innych typów projektów | [Szablony programu Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Obsługa wielu interpretera | Obsługuje różne wersje języka CPython i IronPython. | n/d |
 | Obsługa IPython | Obsługuje IPython/Jupyter w REPL dla powierzchni wbudowany, .NET i Windows Presentation Foundation (WPF). | n/d |
-| [Edytowanie sformatowanego, IntelliSense i zrozumienia kodu](code-editing.md) | Obejmuje kolorowania składni, funkcja automatycznego uzupełniania kodu i bibliotek, [kod formatowania](code-formatting.md), pomocy podpisu, Widok klas, przejdź do definicji, Znajdź wszystkie odwołania, fragmentów kodu [refaktoryzacji](code-refactoring.md), [ PyLint](code-pylint.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Okno interaktywne](interactive-repl.md) | Zapewnia szybkie REPL dla języka Python umożliwia łatwe wyróżnianie fragment kodu i wysyłania go do okna interaktywnego. | n/d |
-| [Oferujący wszystkie funkcje debugowania](debugging.md) | Debugowanie może odbywać się z lub bez projektu programu Visual Studio, w tym możliwość debugowania istniejącego pliku wykonywalnego, [debugowanie w trybie mieszanym Python/C++](debugging-mixed-mode.md), [zdalnego debugowania](debugging-cross-platform-remote.md) do systemu Windows/Linux/Mac [zdalnego debugowania na platformie Azure](debugging-azure-remote.md)i debugowanie okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
-| [Narzędzia profilowania z raportowaniem kompleksowe](profiling.md) | Opisuje, jak jest zużywany czas w aplikacji, łącznie z możliwością porównania wydajności między cyklów profilowania. | [Narzędzia profilowania](../profiling/profiling-tools.md) (nie wszystkie funkcje profilowania programu Visual Studio są dostępne dla języka Python) |
-| [Narzędzia do testowania jednostki](unit-testing.md) | Odnajdywanie, uruchamianie, zarządzania testami w Visual Studio narzędzia Eksplorator testów i łatwe debugowanie testów jednostkowych. | [Kod testu jednostkowego](../test/unit-test-your-code.md) |
+| [Edytowanie sformatowanego, IntelliSense i zrozumienia kodu](editing-python-code-in-visual-studio.md) | Obejmuje kolorowania składni, funkcja automatycznego uzupełniania kodu i bibliotek, [kod formatowania](formatting-python-code.md), pomocy podpisu, Widok klas, przejdź do definicji, Znajdź wszystkie odwołania, fragmentów kodu [refaktoryzacji](refactoring-python-code.md), [ PyLint](linting-python-code.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Okno interaktywne](python-interactive-repl-in-visual-studio.md) | Zapewnia szybkie REPL dla języka Python umożliwia łatwe wyróżnianie fragment kodu i wysyłania go do okna interaktywnego. | n/d |
+| [Oferujący wszystkie funkcje debugowania](debugging-python-in-visual-studio.md) | Debugowanie może odbywać się z lub bez projektu programu Visual Studio, w tym możliwość debugowania istniejącego pliku wykonywalnego, [debugowanie w trybie mieszanym Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), [debugowania zdalnego w systemie Linux](debugging-python-code-on-remote-linux-machines.md) do systemu Windows i Linux / Mac, [zdalnego debugowania na platformie Azure](debugging-remote-python-code-on-azure.md)i debugowanie okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Narzędzia profilowania z raportowaniem kompleksowe](profiling-python-code-in-visual-studio.md) | Opisuje, jak jest zużywany czas w aplikacji, łącznie z możliwością porównania wydajności między cyklów profilowania. | [Narzędzia profilowania](../profiling/profiling-tools.md) (nie wszystkie funkcje profilowania programu Visual Studio są dostępne dla języka Python) |
+| [Narzędzia do testowania jednostki](unit-testing-python-in-visual-studio.md) | Odnajdywanie, uruchamianie, zarządzania testami w Visual Studio narzędzia Eksplorator testów i łatwe debugowanie testów jednostkowych. | [Kod testu jednostkowego](../test/unit-test-your-code.md) |
 
 Zawiera również obciążenia Python [zestaw Azure SDK for Python](azure-sdk-for-python.md), który upraszcza korzystanie z aplikacji systemu Windows, Mac OS X i Linux usług Azure.
 

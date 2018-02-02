@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalowanie obsługi języka Python w programie Visual Studio w systemie Windows
 
@@ -30,12 +31,12 @@ Aby zainstalować obsługę języka Python dla programu Visual Studio (znanej ta
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 lub starszej](#visual-studio-2013-and-earlier)
 
-Dla programu Visual Studio 2015 lub starszym należy oddzielnie zainstalować interpreter języka Python wybranych przez użytkownika (Python 3.5 i wcześniej; 3,6 nie jest obsługiwana i zostanie wygenerowany komunikat "Python nieobsługiwana wersja 3,6"). Aby uzyskać więcej informacji, zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). Tej samej stronie zawiera również instrukcje dotyczące dodawania istniejącego interpreter języka Python do programu Visual Studio 2017 r.
+Dla programu Visual Studio 2015 lub starszym należy oddzielnie zainstalować interpreter języka Python wybranych przez użytkownika (Python 3.5 i wcześniej; 3,6 nie jest obsługiwana i generuje komunikat "Python nieobsługiwana wersja 3,6"). Aby uzyskać więcej informacji, zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). Tej samej stronie zawiera również instrukcje dotyczące dodawania istniejącego interpreter języka Python do programu Visual Studio 2017 r.
 
 Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyjne, Otwórz okno interaktywne Python, naciskając klawisz Alt-I i wprowadzania `2+2`. Jeśli nie widzisz dane wyjściowe `4`, sprawdź ponownie wszystkie czynności.
 
 > [!Tip]
-> Obciążenie Python zawiera przydatne rozszerzenia Cookiecutter, które zawiera graficzny interfejs użytkownika do odnalezienia szablony, wprowadź opcje szablonu oraz tworzenie projektów i pliki. Aby uzyskać więcej informacji, zobacz [przy użyciu Cookiecutter](cookiecutter.md).
+> Obciążenie Python zawiera przydatne rozszerzenia Cookiecutter, które zawiera graficzny interfejs użytkownika do odnalezienia szablony, wprowadź opcje szablonu oraz tworzenie projektów i pliki. Aby uzyskać więcej informacji, zobacz [przy użyciu Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > Obsługa języka Python nie jest obecnie dostępna w programie Visual Studio dla komputerów Mac, ale jest dostępna w Mac i Linux za pomocą programu Visual Studio Code. Zobacz [pytania i odpowiedzi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -63,11 +64,11 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
     | Opcja | Opis |
     | --- | --- |
     | Dystrybucje Python | Wybierz dowolną kombinację wariantów 32-bitowe i 64-bitowe języka Python, 2, Python 3 Anaconda2 i Anaconda3 dystrybucji, które mają pracować z. Każdy zawiera dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, w szczególności to platforma nauki Otwórz danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można powrócisz do Instalator programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.) |
-    | Obsługa szablonów Cookiecutter | Instaluje Cookiecutter graficznego interfejsu użytkownika do odnalezienia szablony, wprowadź opcje szablonu oraz tworzenie projektów i pliki. Zobacz [przy użyciu rozszerzenia Cookiecutter](cookiecutter.md). |
-    | Obsługa sieci web języka Python | Instaluje narzędzia do tworzenia aplikacji sieci web w tym HTML, CSS i JavaScript edycji pomocy technicznej, wraz z szablonów dla projektów przy użyciu struktury Bottle, Flask i Django. Zobacz [szablony projektów sieci web języka Python](template-web.md). |
+    | Obsługa szablonów Cookiecutter | Instaluje Cookiecutter graficznego interfejsu użytkownika do odnalezienia szablony, wprowadź opcje szablonu oraz tworzenie projektów i pliki. Zobacz [przy użyciu rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md). |
+    | Obsługa sieci web języka Python | Instaluje narzędzia do tworzenia aplikacji sieci web w tym HTML, CSS i JavaScript edycji pomocy technicznej, wraz z szablonów dla projektów przy użyciu struktury Bottle, Flask i Django. Zobacz [szablony projektów sieci web języka Python](python-web-application-project-templates.md). |
     | Obsługa języka Python IoT | Obsługuje tworzenie Windows IoT Core za pomocą języka Python. |
     | Narzędzia deweloperskie macierzystego języka Python | Instaluje kompilator języka C++ i inne składniki niezbędne do opracowywania rozszerzeń macierzystego dla języka Python. Zobacz [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md). Zainstaluj również **tworzenia klasycznych aplikacji w języku C++** obciążenia dla pełnej obsługi języka C++. |
-    | Azure podstawowe narzędzia usługi w chmurze | Udostępnia dodatkowe wsparcie dla deweloperów usług Azure Cloud Services w języku Python. Zobacz [projektów usług w chmurze Azure](template-azure-cloud-service.md). |
+    | Azure podstawowe narzędzia usługi w chmurze | Udostępnia dodatkowe wsparcie dla deweloperów usług Azure Cloud Services w języku Python. Zobacz [projektów usług w chmurze Azure](python-azure-cloud-service-project-template.md). |
 
 1. Po zakończeniu instalacji Instalator udostępnia opcje umożliwiające modyfikowanie, uruchamianie, napraw lub odinstaluj program Visual Studio. **Modyfikuj** przycisku zmienia się na **aktualizacji** podczas aktualizacji dla programu Visual Studio, kiedy aktualizacje są dostępne dla każdego zainstalowanych składników. (Opcja Modyfikuj, następnie jest dostępne w menu rozwijanym). Wyszukując "Visual Studio", można uruchomić Instalatora z menu Start systemu Windows i Visual Studio.
 

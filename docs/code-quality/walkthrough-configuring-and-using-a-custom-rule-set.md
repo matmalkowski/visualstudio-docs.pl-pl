@@ -5,27 +5,26 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
-ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Wskazówki: konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
+
 W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały skonfigurowane do używania niestandardowych *zestaw reguł* w bibliotece klas. Możesz wybrać zestaw reguł, które odnoszą się do typ projektu, do którego określony dla rozwiązania lub wybrać alternatywny reguły zestawów do konkretna potrzeba, takie jak skanowanie starszego kodu dla problemów, które można naprawić w sposób nierozdzielający zrealizowania. W obu przypadkach można również dostosować dostrajania wymogami projektu zestawów reguł.  
   
- W tym przewodniku będzie krok za pomocą tych procesów:  
+W tym przewodniku będzie krok za pomocą tych procesów:  
   
 -   Utwórz bibliotekę klas.  
   
@@ -39,14 +38,11 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
 -   Uruchom analizę kodu i zobacz, jak działa zachowanie dostosowywania zestawu reguł.  
   
-## <a name="prerequisites"></a>Wymagania wstępne  
+## <a name="using-rule-sets-with-code-analysis"></a>Korzystanie z zestawów reguł analizy kodu
+
+Najpierw utwórz prostą klasę.  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], lub[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
-  
-## <a name="using-rule-sets-with-code-analysis"></a>Korzystanie z zestawów reguł analizy kodu  
- Najpierw utwórz prostą klasę.  
-  
-#### <a name="create-a-class-library"></a>Tworzenie biblioteki klas  
+### <a name="create-a-class-library"></a>Tworzenie biblioteki klas  
   
 1.  Na **pliku** menu, kliknij przycisk **nowy** , a następnie kliknij przycisk **projektu**.  
   
@@ -58,7 +54,7 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
  Następnie należy wybrać **podstawowe reguły wskazówek dotyczących projektowania Microsoft** zestaw reguł i zapisać go z projektu.  
   
-#### <a name="select-a-code-analysis-rule-set"></a>Wybierz zestaw reguł analizy kodu  
+### <a name="select-a-code-analysis-rule-set"></a>Wybierz zestaw reguł analizy kodu  
   
 1.  Na **Analizuj** menu, kliknij przycisk **Konfigurowanie analizy kodu dla RuleSetSample**.  
   
@@ -75,11 +71,11 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
  Następnie dodasz kod do biblioteki klasy, która będzie używana do pokazu naruszenia CA1704 "Identyfikatory powinny być napisane poprawnie" reguł analizy kodu. Aby uzyskać więcej informacji, zobacz [CA1704: identyfikatory powinny być napisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
-#### <a name="add-your-own-code"></a>Dodaj swój kod  
+### <a name="add-your-own-code"></a>Dodaj swój kod  
   
 -   W Eksploratorze rozwiązań Otwórz plik Class1.cs i zastąpić istniejący kod z następujących czynności:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -99,13 +95,12 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
                 return (sum);  
             }  
         }  
-    }  
+    }
+    ```
   
-    ```  
+Teraz można uruchamiać analizę kodu w projekcie RuleSetSample i wyszukaj wszelkie błędy i ostrzeżenia wygenerowane w oknie Lista błędów.  
   
- Teraz można uruchamiać analizę kodu w projekcie RuleSetSample i wyszukaj wszelkie błędy i ostrzeżenia wygenerowane w oknie Lista błędów.  
-  
-#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Przeprowadź analizę kodu na projekt RuleSetSample  
+### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Przeprowadź analizę kodu na projekt RuleSetSample  
   
 1.  Na **Analizuj** menu, kliknij przycisk **Uruchom analizę kodu na RuleSetSample**.  
   
@@ -117,7 +112,7 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
  Następnie będzie można dostosować zestaw reguł, do wykluczenia ostrzeżenie CA1704, "Identyfikatory powinny być napisane poprawnie".  
   
-#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Dostosowywanie zestawu dla projektu można wyłączyć reguły określonych reguł  
+### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Dostosowywanie zestawu dla projektu można wyłączyć reguły określonych reguł  
   
 1.  Na **Analizuj** menu, kliknij przycisk **Konfigurowanie analizy kodu dla RuleSetSample**.  
   
@@ -127,15 +122,15 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
 4.  W obszarze **akcji** kolumny wybierz **None.** CA1704 zapobiega wyświetlaniu jako ostrzeżenia lub błędu w oknie Lista błędów.  
   
-     Teraz jest odpowiedni moment, aby wypróbować różne przycisków paska narzędzi i filtrowania opcji, aby zapoznać się z nimi. Na przykład można użyć **Group By** listy rozwijanej, aby pomóc w lokalizacji określonej reguły lub kategoria reguł. Innym przykładem jest, że można używać **Ukryj wyłączone reguły** przycisk na pasku narzędzi strony zestawu reguł do ukrywania lub pokazywania wszystkie reguły z **akcji** kolumny ustawioną **Brak**. Może to być przydatne, jeśli chcesz skanować dla wszystkich reguł, które można wyłączona, aby sprawdzić, czy nadal chcesz je wyłączyć.  
+     Teraz jest odpowiedni moment, aby wypróbować różne przycisków paska narzędzi i opcji, aby zapoznać się z nimi filtrowania. Na przykład można użyć **Group By** listy rozwijanej, aby pomóc w lokalizacji określonej reguły lub kategoria reguł. Innym przykładem jest, że można używać **Ukryj wyłączone reguły** przycisk na pasku narzędzi strony zestawu reguł do ukrywania lub pokazywania wszystkie reguły z **akcji** kolumny ustawioną **Brak**. Może to być przydatne, jeśli chcesz skanować dla wszystkich reguł, które można wyłączona, aby sprawdzić, czy nadal chcesz je wyłączyć.  
   
 5.  W menu Widok kliknij przycisk okna właściwości. Typ **Moje zestawu reguł niestandardowych** w polu nazwy okna narzędzia właściwości. Spowoduje to zmianę nazwę wyświetlaną dla nowego zestawu reguł w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE.  
   
 6.  Na **pliku** menu, kliknij przycisk **Zapisz wszystkie Rules.ruleset Microsoft** Aby zapisać dostosowane reguły zestaw. Przejdź do folderu głównego projektu. W **nazwę pliku** polu tekstowym **MyCustomRuleSet**. Teraz można wybrać zestaw reguł niestandardowych do użytku z projektu.  
   
- Nowy zestaw reguł utworzony należy teraz skonfigurować ustawienia projektu, aby określić, czy chcesz użyć nowej reguły ustawić z nim.  
+Nowy zestaw reguł utworzony należy teraz skonfigurować ustawienia projektu, aby określić, czy chcesz użyć nowej reguły ustawić z nim.  
   
-#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Określ nową regułę, ustaw do użycia z projektu  
+### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Określ nową regułę, ustaw do użycia z projektu  
   
 1.  W Eksploratorze rozwiązań kliknij projekt prawym przyciskiem myszy, a następnie wybierz **właściwości**.  
   
@@ -147,12 +142,13 @@ W tym przewodniku pokazano, jak używać narzędzi analizy kodu, które zostały
   
  Na koniec zostanie uruchomiony ponownie przy użyciu MyCustomRuleSet zestawu reguł analizy kodu. Zwróć uwagę, w oknie Lista błędów nie wyświetla naruszenia CA1704 reguły wydajności.  
   
-#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Przeprowadź analizę kodu na projekt RuleSetSample po raz drugi  
+### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Przeprowadź analizę kodu na projekt RuleSetSample po raz drugi  
   
 1.  Na **Analizuj** menu, kliknij przycisk **Uruchom analizę kodu na RuleSetSample**.  
   
 2.  W oknie Lista błędów, zwróć uwagę, że po kliknięciu **ostrzeżenia**, nie są już wyświetlane naruszenia CA1704 ostrzeżenie reguły "Identyfikatory powinny być napisane poprawnie".  
   
-## <a name="see-also"></a>Zobacz też  
- [Porady: Konfigurowanie analizy kodu dla projektu zarządzanego kodu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Zobacz także
+
+[Porady: Konfigurowanie analizy kodu dla projektu zarządzanego kodu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+[Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)

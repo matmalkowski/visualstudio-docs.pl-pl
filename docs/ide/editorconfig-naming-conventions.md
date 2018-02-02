@@ -1,10 +1,9 @@
 ---
-title: Konwencje nazewnictwa .NET dla EditorConfig | Dokumentacja firmy Microsoft
+title: Pliki .NET nazewnictwa konwencje dla EditorConfig | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -13,14 +12,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.workload:
+- multiple
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa dla EditorConfig
+# <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa .NET dla EditorConfig
 
 Konwencje nazewnictwa dotyczą nazw elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, że publiczne elementy członkowskie muszą być kapitalizacji lub że metod asynchronicznych musi kończyć się "Async". Te zasady można wymusić, określając je w [pliku .editorconfig](../ide/create-portable-custom-editor-options.md). Naruszenia reguły nazewnictwa się na liście błędów lub propozycją pod nazwą, w zależności od ważności wybranej reguły. Nie istnieje potrzeba aby skompilować projekt, aby wyświetlić naruszenia.
 

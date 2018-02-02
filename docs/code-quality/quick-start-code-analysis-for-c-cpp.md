@@ -10,34 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Szybki start: Analiza kodu dla C/C++
-Aby poprawy jakości aplikacji, należy regularnie uruchamiania analizy kodu dla kodu C lub C++. To może pomóc w znalezieniu typowych problemów, naruszeń dobrym rozwiązaniem programowania lub usterek, które są trudne do odnajdywania testy. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ przeszukuje analizy kodu dla kodu określonych wzorców, które są prawidłowe, ale nadal można utworzyć problemy lub innym osobom korzystającym z kodu.  
-  
-## <a name="in-this-topic"></a>W tym temacie:  
-  
--   [Konfigurowanie zestawów reguł dla projektu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Przeprowadzanie analizy kodu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Analizowanie i rozwiązywanie ostrzeżenia analizy kodu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Pomijanie ostrzeżeń analizy kodu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [Tworzenie elementów pracy dla kod analizy ostrzeżenia](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Wyszukiwanie i filtrowanie wyników analizy kodu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Szybki Start: Analiza kodu dla C/C++
+Aby poprawy jakości aplikacji, należy regularnie uruchamiania analizy kodu dla kodu C lub C++. To może pomóc w znalezieniu typowych problemów, naruszeń dobrym rozwiązaniem programowania lub usterek, które są trudne do odnajdywania testy. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ przeszukuje analizy kodu dla kodu określonych wzorców, które są prawidłowe, ale nadal można utworzyć problemy lub innym osobom korzystającym z kodu.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Konfigurowanie zestawów reguł dla projektu  
   
@@ -85,20 +70,18 @@ Aby poprawy jakości aplikacji, należy regularnie uruchamiania analizy kodu dla
   
 -   Na **kompilacji** menu, wybierz **Uruchom analizę kodu na** *Nazwa projektu*.  
   
- Jest skompilowany projekt lub rozwiązanie i uruchamia analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.  
+ Jest skompilowany projekt lub rozwiązanie i uruchamia analizy kodu. Wyniki są wyświetlane na liście błędów.  
   
-##  <a name="BKMK_Analyze"></a>Analizowanie i rozwiązywanie ostrzeżenia analizy kodu  
- Do analizowania określone ostrzeżenia, wybierz tytuł ostrzeżenia w oknie analizy kodu. Ostrzeżenie rozszerza się, aby wyświetlić dodatkowe informacje o problemie. Jeśli to możliwe, analizy kodu wyświetla numery wierszy i logiki analizy, które doprowadziło do tego ostrzeżenia. Aby uzyskać szczegółowe informacje na temat tego ostrzeżenia, w tym możliwe rozwiązania problemu należy wybrać identyfikator ostrzeżenia, aby wyświetlić tematu pomocy w bibliotece MSND dla wiadomości.  
-  
- Po rozwinięciu ostrzeżenie wiersza kodu, która spowodowała ostrzeżenie zostanie wyróżniona w edytorze kodu programu Visual Studio.  
-  
- Po zidentyfikowaniu problem można rozwiązać, w kodzie. Następnie uruchom ponownie analizę kodu, aby upewnić się, że ostrzeżenia nie jest już widoczna w oknie analizy kodu i nie ma Twojego poprawka nie zgłaszany nowego ostrzeżenia.  
-  
-> [!TIP]
->  Można ponownie uruchomić analizy kodu w oknie analizy kodu. Wybierz **Analizuj** przycisk i wybierz zakres analizy. Można ponownie uruchomić analizy całego rozwiązania lub wybranego projektu.  
-  
+##  <a name="BKMK_Analyze"></a>Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
+
+Do analizowania określone ostrzeżenia, wybierz tytuł ostrzeżenia na liście błędów. Ostrzeżenie rozszerza się, aby wyświetlić dodatkowe informacje o problemie. Jeśli to możliwe, analizy kodu wyświetla numery wierszy i logiki analizy, które doprowadziło do tego ostrzeżenia. Aby uzyskać szczegółowe informacje na temat tego ostrzeżenia, w tym możliwe rozwiązania problemu należy wybrać identyfikator ostrzeżenia, aby wyświetlić jego odpowiedni temat Pomocy online.
+
+Po wybraniu ostrzeżenie wiersza kodu, która spowodowała ostrzeżenie zostanie wyróżniona w edytorze kodu programu Visual Studio.
+
+Po zidentyfikowaniu problem można rozwiązać, w kodzie. Następnie uruchom ponownie analizę kodu, aby upewnić się, czy ostrzeżenia nie jest już widoczna na liście błędów i nie ma Twojego poprawka nie zgłaszany ostrzeżenia nowego.
+
 ##  <a name="BKMK_Suppress"></a>Pomijanie ostrzeżeń analizy kodu  
- Brak razy podczas może zdecydować, czy nie, aby naprawić ostrzeżenia analizy kodu. Możesz określić rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo, że ten problem może wystąpić w implementacji rzeczywistych kodu. Lub może uważasz, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Ostrzeżeń indywidualnych można pominąć, tak aby nie były widoczne w oknie analizy kodu.  
+ Brak razy podczas może zdecydować, czy nie, aby naprawić ostrzeżenia analizy kodu. Możesz określić rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo, że ten problem może wystąpić w implementacji rzeczywistych kodu. Lub może uważasz, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Ostrzeżeń indywidualnych można pominąć, tak aby nie były widoczne na liście błędów.  
   
  Aby wyłączyć ostrzeżenia:  
   
@@ -115,19 +98,22 @@ Aby poprawy jakości aplikacji, należy regularnie uruchamiania analizy kodu dla
   
  **Aby utworzyć element roboczy dla co najmniej jedno ostrzeżenie kodu C/C++**  
   
-1.  W oknie analizy kodu Rozwiń i wybierz ostrzeżenia  
+1.  Na liście błędów Rozwiń i wybierz ostrzeżenia  
   
-2.  Menu skrótów dla ostrzeżenia, należy wybrać **Utwórz element roboczy**, a następnie wybierz typ elementu roboczego.  
+2.  Menu skrótów dla ostrzeżenia, należy wybrać **Utwórz element roboczy**, a następnie wybierz typ elementu roboczego.
   
 3.  Program Visual Studio pojedynczym elemencie roboczym wybranego ostrzeżenia i wyświetla element roboczy w oknie dokumentu IDE.  
   
 4.  Dodaj wszelkie dodatkowe informacje, a następnie wybierz pozycję **zapisać element roboczy**.  
   
-##  <a name="BKMK_Search"></a>Wyszukiwanie i filtrowanie wyników analizy kodu  
- Możesz przeszukać długich list komunikaty ostrzegawcze i można filtrować ostrzeżeń w rozwiązań dotyczących wielu projektów.  
+##  <a name="BKMK_Search"></a>Wyszukiwanie i filtrowanie wyników analizy kodu
+
+Możesz przeszukać długich list komunikaty ostrzegawcze i można filtrować ostrzeżeń w rozwiązań dotyczących wielu projektów.  
   
-1.  **Aby ostrzeżeń filtru tytuł lub identyfikator ostrzeżenia**: Wprowadź słowa kluczowe w **filtru** pola tekstowego.  
+- **Aby ostrzeżeń filtru tytuł lub identyfikator ostrzeżenia**: Wprowadź słowo kluczowe w polu wyszukiwania.
   
-2.  **Aby ostrzeżeń filtru przez projekt**: W rozwiązaniu do wielu projektów, wybierz jeden lub więcej projektów na liście u góry rogu okna analizy kodu. Wybierz nazwę rozwiązania, aby wyświetlić wszystkie ostrzeżenia.  
-  
-3.  **Aby ostrzeżeń filtru według ważności**: Domyślnie komunikaty analizy kodu są przypisane ważność **ostrzeżenie**. Można przypisać ważność jeden lub więcej komunikatów jako **błąd** w zestawie reguł niestandardowych. Wybierz **ostrzeżenie** lub **błąd** do wyświetlenia tylko komunikaty, które są przypisane im wagi. Wybierz **wszystkie** Aby wyświetlić wszystkie komunikaty.
+- **Aby ostrzeżeń filtru według ważności**: Domyślnie komunikaty analizy kodu są przypisane ważność **ostrzeżenie**. Można przypisać ważność jeden lub więcej komunikatów jako **błąd** w zestawie reguł niestandardowych. Na **ważność** kolumny **listy błędów**, wybierz strzałkę listy rozwijanej, a następnie ikonę filtru. Wybierz **ostrzeżenie** lub **błąd** do wyświetlenia tylko komunikaty, które są przypisane im wagi. Wybierz **Zaznacz wszystko** Aby wyświetlić wszystkie komunikaty.
+
+## <a name="see-also"></a>Zobacz także
+
+[Analiza kodu dla C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

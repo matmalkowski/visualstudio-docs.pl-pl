@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Praca z usługą Git
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Program Visual Studio udostępnia bezpośrednia Integracja z lokalnym repozytoria Git oraz te, które znajdują się na usługi, takie jak GitHub i Visual Studio Team Services. Integracja obejmuje klonowanie repozytorium, zatwierdzania zmian i zarządzania gałęzi.
 
-W tym temacie opisano tworzenie lokalnego repozytorium Git do istniejącego projektu. Aby uzyskać wskazówki dotyczące tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: Klonuj repozytorium kodu języka Python w programie Visual Studio](quickstart-03-project-from-repository.md).
+W tym temacie opisano tworzenie lokalnego repozytorium Git do istniejącego projektu. Aby uzyskać wskazówki dotyczące tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: Klonuj repozytorium kodu języka Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Z projektem Otwórz w programie Visual Studio, takich jak projekt z [poprzedniego kroku](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Dodaj rozwiązanie do kontroli źródła**. Program Visual Studio tworzy lokalne repozytorium Git, który zawiera kod Twojego projektu i formantów związanych z Git wyświetla również wyświetlane wzdłuż dolnej części okna programu Visual Studio. Pokaż formanty oczekujących zatwierdzeń, zmiany nazwy repozytorium i oddziału. Umieść kursor nad formantów, aby wyświetlić dodatkowe informacje.
 
@@ -66,6 +67,6 @@ Gratulujemy wykonanie kroków tego samouczka na Python w programie Visual Studio
 W tym miejscu zapoznaj się z pojęcia i porad prowadnice, takie jak następujące:
 
 - [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Publikowanie w usłudze Azure App Service](publishing-to-azure.md)
-- [Profilowanie](profiling.md)
-- [Testowanie jednostek](unit-testing.md)
+- [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Profilowanie](profiling-python-code-in-visual-studio.md)
+- [Testowanie jednostek](unit-testing-python-in-visual-studio.md)

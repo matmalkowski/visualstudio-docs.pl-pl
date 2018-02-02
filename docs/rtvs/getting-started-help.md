@@ -1,23 +1,26 @@
 ---
 title: "Okno narzędzi R pomocy dla programu Visual Studio | Dokumentacja firmy Microsoft"
+description: "Pomoc dla R jest zintegrowana bezpośrednio okno interaktywne programu Visual Studio za pośrednictwem? Polecenie."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Pomoc w R narzędzi dla programu Visual Studio
 
@@ -28,7 +31,7 @@ Pomoc dla R jest zintegrowana bezpośrednio okno interaktywne programu Visual St
 > [!Tip]
 > W oknie Pomoc, podobnie jak wszystkie inne w programie Visual Studio można rozmieszczone i zadokowane, jednak chcesz. Zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Aby otworzyć Pomoc wyniki w przeglądarce, wybierz **R Narzędzia > Opcje** menu i zestaw **przeglądarki pomoc R** właściwości `External`. Zobacz [opcje](options.md).
+> Aby otworzyć Pomoc wyniki w przeglądarce, wybierz **R Narzędzia > Opcje** menu i zestaw **przeglądarki pomoc R** właściwości `External`. Zobacz [opcje](options-for-r-tools-in-visual-studio.md).
 
 Aby wyszukać Pomoc, użyj `??` polecenia następuje terminu wyszukiwania. Jeśli wyszukiwany termin zawiera spacje, użyj cudzysłowów:
 
@@ -52,7 +55,7 @@ Deweloperzy często wyszukiwanie w dokumentacji R, aby uzyskać pomoc dotycząc�
     ![Wywoływanie pomoc za pośrednictwem menu kontekstowym kliknij prawym przyciskiem myszy](media/help-right-click.png)
 
 > [!Tip]
-> Aby otworzyć Pomoc zintegrowane w przeglądarce, wybierz **R Narzędzia > Opcje** i ustaw **przeglądarki sieci Web F1** do `External`. Zobacz [opcje](options.md).
+> Aby otworzyć Pomoc zintegrowane w przeglądarce, wybierz **R Narzędzia > Opcje** i ustaw **przeglądarki sieci Web F1** do `External`. Zobacz [opcje](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Wyszukiwanie zintegrowane StackOverflow
 
@@ -64,4 +67,4 @@ Ciąg dołączany zakresu, można zmienić `R site:stackoverflow`, za pomocą **
 
 ![Zmiana opcji ciąg wyszukiwania F1 w sieci Web](media/options-dialog.png)
 
-Jeśli wolisz wyświetlić wyniki w przeglądarce, zmień **przeglądarki sieci Web F1** zgodnie z opisem w artykule na [opcje](options.md).
+Jeśli wolisz wyświetlić wyniki w przeglądarce, zmień **przeglądarki sieci Web F1** zgodnie z opisem w artykule na [opcje](options-for-r-tools-in-visual-studio.md).

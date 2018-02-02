@@ -6,21 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Presentation.View.ImportDesigner.UI
+f1_keywords:
+- System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cfa65ee24b99fd81712ec88e45f44bb2ed42c21a
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>Porady: Użyj projektanta importów
-Projektanta importów umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach utworzonych przez użytkownika. Podobnie jak **importuje** lub **przy użyciu** słów kluczowych w języku Visual Basic .NET i C#, określenie obszarów nazw w projektanta importów umożliwiają wystarczy wprowadzić w wyrażeniu a nie w pełni kwalifikowaną nazwę typu Nazwa typu wersji.  
+Projektanta importów umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach utworzonych przez użytkownika. Podobnie jak **importuje** lub **przy użyciu** słów kluczowych w języku Visual Basic i C#, określenie obszarów nazw w projektanta importów umożliwiają wystarczy wprowadzić w wyrażeniu a nie w pełni kwalifikowaną nazwę typu Nazwa typu wersji.  
   
  Projektanta importów reaguje na zmiany w interfejsie użytkownika i zmian wprowadzonych po zapisaniu przepływ pracy. Po zapisaniu przepływu pracy przestrzeni nazw można automatycznie dodawane do projektanta importów. Należą do nich między innymi:  
   

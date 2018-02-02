@@ -1,14 +1,16 @@
 ---
-title: "Zarządzanie Python w usłudze Azure App Service | Dokumentacja firmy Microsoft"
+title: "Instalowanie tłumaczy Python i bibliotek w usłudze Azure App Service | Dokumentacja firmy Microsoft"
+description: "Jak zainstalować interpreter języka Python i bibliotek w usłudze Azure App Service i konfigurowanie aplikacji sieci web, aby poprawnie odwoływać się do tego interpreter."
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie Python w usłudze aplikacji Azure
 
@@ -131,7 +133,7 @@ FastCGI jest interfejs, który działa na poziomie żądania. Usługi IIS odbier
 - `WSGI_HANDLER`musi wskazywać do aplikacji WSGI importowane z aplikacji.
 - `WSGI_LOG`jest opcjonalne, ale zalecane do debugowania swojej aplikacji. 
 
-Zobacz [publikowania na platformie Azure](publishing-to-azure.md) dodatkowe szczegóły dotyczące `web.config` aplikacji sieci web zawartość Bottle, Flask i Django.
+Zobacz [publikowania na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) dodatkowe szczegóły dotyczące `web.config` aplikacji sieci web zawartość Bottle, Flask i Django.
 
 ### <a name="configuring-the-httpplatform-handler"></a>Konfigurowanie obsługi HttpPlatform
 
@@ -170,7 +172,7 @@ Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z na
 | --- | --- |
 | [Konsola Kudu usługi aplikacji Azure](#azure-app-service-kudu-console) | Instaluje interaktywne pakietów. Pakiety muszą być czysty Python lub należy opublikować koła. |
 | [Program kudu interfejsu API REST](#kudu-rest-api) | Może służyć do automatyzowania instalacji pakietu aktualizacji.  Pakiety muszą być czysty Python lub należy opublikować koła. |
-| Pakietu z aplikacją | Zainstaluj pakiety bezpośrednio do projektu, a następnie wdrożenia ich do usługi App Service tak, jakby były częścią aplikacji. W zależności od tego, jak wiele zależności są i jak często należy zaktualizować, ta metoda może być Najprostszym sposobem uzyskać przechodzi do wdrożenia pracy. Można wskazać, że biblioteki musi odpowiadać wersji języka Python na serwerze, w przeciwnym razie zostanie wyświetlony zasłoniętej błędy po wdrożeniu. Inaczej mówiąc, ponieważ wersji języka Python w usłudze App Service, rozszerzenia lokacji są dokładnie takie same jak te wersje wydanej w dniu python.org, można łatwo uzyskać zgodnej wersji dla rozwoju lokalnych. |
+| Pakietu z aplikacją | Zainstaluj pakiety bezpośrednio do projektu, a następnie wdrożenia ich do usługi App Service tak, jakby były częścią aplikacji. W zależności od tego, jak wiele zależności są i jak często należy zaktualizować, ta metoda może być Najprostszym sposobem uzyskać przechodzi do wdrożenia pracy. Można wskazać, że biblioteki musi odpowiadać wersji języka Python na serwerze, w przeciwnym razie Zobacz zasłoniętej błędy po wdrożeniu. Inaczej mówiąc, ponieważ wersji języka Python w usłudze App Service, rozszerzenia lokacji są dokładnie takie same jak te wersje wydanej w dniu python.org, można łatwo uzyskać zgodnej wersji dla rozwoju lokalnych. |
 | Środowiska wirtualne | Nieobsługiwane. Zamiast tego należy użyć, tworzenie pakietów i ustawić `PYTHONPATH` zmiennej środowiskowej, aby wskazać lokalizację pakietów. |
 
 ### <a name="azure-app-service-kudu-console"></a>Konsola Kudu usługi aplikacji Azure

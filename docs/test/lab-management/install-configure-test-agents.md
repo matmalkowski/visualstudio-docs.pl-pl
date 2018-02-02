@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Instalowanie i konfigurowanie agentów testowych
 
@@ -81,7 +83,7 @@ W poniższej tabeli przedstawiono scenariusze obsługiwane przez agentów progra
 | Scenariusze obsługiwane przez agentów dla programu Visual Studio 2013 | Zamiast w programie TFS i usług terminalowych |
 | --- | --- |
 | Przepływ pracy kompilacja-wdrażanie-testy w programie Visual Studio | Użytkownicy mogą używać [definicji kompilacji](https://www.visualstudio.com/team-services/continuous-integration/) (nie kompilacji XAML) dla kompilacji, wdrożyć i przetestować scenariusze w programie TFS. |
-| Obciążenia testowania (testowanie wydajności) przy użyciu lokalnych komputerach zdalnych | Test Controller i testowanie agentów 2013 aktualizacji 5 umożliwia obciążenia testy lokalnie. [Więcej informacji](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| Obciążenia testowania (testowanie wydajności) przy użyciu lokalnych komputerach zdalnych | Test Controller i testowanie agentów 2013 aktualizacji 5 umożliwia obciążenia testy lokalnie. [Więcej informacji](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Zdalne wykonywanie testów automatycznych z Microsoft Test Manager za pomocą środowiska laboratoryjnego | Obecnie nie istnieje alternatywa dla tego scenariusza. Firma Microsoft zaleca zadanie Uruchom testy funkcjonalne służy w kompilacji i wydania definicje (nie w kompilacji XAML) można zdalnie wykonać testy. |
 | Deweloperzy zdalnego testy są wykonywane w programie Visual Studio | Nie jest już obsługiwana. |
 

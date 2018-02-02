@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e0ab96c1c0c3deeced62ff9808737c903e682b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c82bc929fa7633719c06569cb3dded5df651a349
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Udoskonalanie jakości kodu z zasadami ewidencjowania projektu zespołowego
 
@@ -48,7 +50,7 @@ Można określić te zasadami projektu zespołowego Zaewidencjonuj:
 |Zadanie|Zawartość pomocnicza|
 |----------|------------------------|
 |**Użycie analizy kodu w procesie tworzenia:** członków zespołu przeprowadzanie analizy kodu na swoich komputerach programowanie. W programie Visual Studio, deweloperzy skonfigurować, uruchomić uruchomień analizy kodu dla kodu poszczególnych projektów, wyświetlać i analizować problemy znalezione przez uruchamia i tworzenie elementów roboczych dla ostrzeżenia.|[Analizowanie jakości aplikacji](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
-|**Tworzenie i Uruchamianie testów jednostkowych:** testów jednostkowych zapewniają deweloperów i testerów szybko wyszukać błędy logikę w metod klas w projektów C#, Visual Basic .NET i C++. Testu jednostkowego można utworzyć jeden raz i uruchamiać za każdym razem, że kod źródłowy jest zmieniana na upewnij się, że zostały wprowadzone nie błędy.|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|
+|**Tworzenie i Uruchamianie testów jednostkowych:** testów jednostkowych zapewniają deweloperów i testerów szybko wyszukać błędy logikę w metod klas w projektów C#, Visual Basic i C++. Testu jednostkowego można utworzyć jeden raz i uruchamiać za każdym razem, że kod źródłowy jest zmieniana na upewnij się, że zostały wprowadzone nie błędy.|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|
 |**Śledzenie elementów pracy i wad:** elementów roboczych można użyć do śledzenia i zarządzanie służbowy i informacje o projekcie zespołowym. Element roboczy jest bazą danych rekord [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] używa do śledzenia przypisania i stan prac. Można użyć różnych typów elementów roboczych do śledzenia różne typy pracy, takich jak wymagania dotyczące klienta, usterki produktu i zadań związanych z projektowaniem.|[Elementy robocze (VSTS)](/vsts/work/work-items/index)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne

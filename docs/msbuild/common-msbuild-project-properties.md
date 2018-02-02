@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 45e4e7c43b43fda63deb9008b35ccc4db4487cf8
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli przedstawiono często używane właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach TARGETS, które zapewnia MSBuild.  
@@ -71,7 +73,7 @@ W poniższej tabeli przedstawiono często używane właściwości, które są zd
 |ExcludeDeploymentUrl|[Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md) dodaje deploymentprovider — tag do manifestu wdrożenia, jeśli plik projektu zawiera dowolną z następujących elementów:<br /><br /> -   UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Przy użyciu ExcludeDeploymentUrl, jednak uniemożliwia deploymentprovider — tag dodawany do manifest wdrażania, nawet jeżeli niektóre powyżej adresów URL. Aby to zrobić, dodaj następującą właściwość w pliku projektu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`**Uwaga:** ExcludeDeploymentUrl nie jest widoczna w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE i można ustawić tylko przez ręczna Edycja pliku projektu. Ustawienie tej właściwości nie ma wpływu na publikowanie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; oznacza to, że deploymentprovider — tag nadal zostanie dodany adres URL określony przez PublishUrl.|  
 |FileAlignment|Określa w bajtach, where były wyrównane w sekcjach pliku wyjściowego. Prawidłowe wartości to 512, 1024, 2048, 4096, 8192. Ta właściwość jest odpowiednikiem `/filealignment` przełącznika kompilatora.|  
 |FrameworkPathOverride|Określa lokalizację pliku mscorlib.dll i pliku microsoft.visualbasic.dll. Ten parametr jest odpowiednikiem `/sdkpath` przełącznika kompilatora vbc.exe.|  
-|GenerateDocumentation|(Visual Basic .NET tylko) Parametrów typu boolean wskazującą, czy dokumentacji jest generowany przez kompilację. Jeśli `true`, kompilacja generuje informacje o dokumentacji i umieszczenie go w pliku XML z nazwą pliku wykonywalnego lub biblioteki utworzonym przez zadanie kompilacji.|
+|GenerateDocumentation|(Tylko w języku Visual Basic) Parametrów typu boolean wskazującą, czy dokumentacji jest generowany przez kompilację. Jeśli `true`, kompilacja generuje informacje o dokumentacji i umieszczenie go w pliku XML z nazwą pliku wykonywalnego lub biblioteki utworzonym przez zadanie kompilacji.|
 |IntermediateOutputPath|Ścieżka wyjściowa pełnej pośrednie wynikające z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład \obj\debug\\. Jeśli ta właściwość nie zostanie zastąpiona, następnie ustawienie `BaseIntermediateOutputPath` nie ma wpływu.|  
 |KeyContainerName|Nazwa kontenera klucza silnej nazwy.|  
 |KeyOriginatorFile|Nazwa pliku klucza silnej nazwy.|  

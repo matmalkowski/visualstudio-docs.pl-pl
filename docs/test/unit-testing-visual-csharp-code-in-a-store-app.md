@@ -9,58 +9,34 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: dc9a2ac6d7267cd94902b7bbf950b49e0d71f815
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0e0af23cca96238a0ea7bbcde11ac4507e55a9bc
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Jednostka testowania kodu Visual C# w aplikacji platformy uniwersalnej systemu Windows
-W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla klasy Visual C# w aplikacji platformy uniwersalnej systemu Windows. Klasa Rooter pokazuje niezrozumiała chwile teorii limit z calculus zaimplementowanie funkcji, która oblicza szacunkową pierwiastek kwadratowy z podanej liczbie. Aplikacja matematycznych następnie użyć tej funkcji do wyświetlenia użytkownika fun, co można zrobić za pomocą matematycznych.  
-  
- W tym temacie przedstawiono sposób użycia testowania jako pierwszy krok w rozwoju jednostek. W takie podejście należy najpierw zapisać metody testowej, która sprawdza określone zachowanie w systemie, testowany, a następnie napisać kod, który przekazuje testu. Wprowadzenie zmian w kolejności poniższych procedur, można cofnąć tej strategii do pierwszej operacji zapisu kod, który chcesz przetestować, a następnie wpisz testów jednostkowych.  
-  
- W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projektów testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Testy jednostkowe mogą również obejmować bezpośrednio w projekcie biblioteki DLL, lub można utworzyć oddzielne rozwiązania testów jednostkowych i biblioteki DLL.  
-  
-> [!NOTE]
->  Visual Studio Community, Enterprise i Professional oferują dodatkowe funkcje, w celu przeprowadzania testów jednostkowych.  
->   
->  -   Użyj dowolnej frameworka testów jednostkowych innych firm i otwórz źródła został utworzony adapter dodatku dla programu Microsoft Test Explorer. Można także analizować i wyświetlić informacje o pokryciu kodu do testów.  
-> -   Uruchomienia testów po każdej kompilacji.  
-> -   VS Enterprise zawiera także Microsoft Fakes framework izolacji dla kodu zarządzanego, ułatwiająca pozwala skupić się testy na swoim własnym kodem, zastępując badanie kodu systemu i funkcje innych firm.  
->   
->  Aby uzyskać więcej informacji, zobacz [weryfikowanie kodu za pomocą testów jednostkowych](http://msdn.microsoft.com/library/dd264975.aspx) w bibliotece MSDN.  
-  
-##  <a name="BKMK_In_this_topic"></a>W tym temacie  
- [Tworzenie rozwiązania i jednostkowy projekt testowy](#BKMK_Create_the_solution_and_the_unit_test_project)  
-  
- [Sprawdź, że testy uruchamiane w narzędzia Eksplorator testów](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Dodaj klasę Rooter do projektu matematycznych](#BKMK_Add_the_Rooter_class_to_the_Maths_project)  
-  
- [Kilka projekt testowy do projektu aplikacji](#BKMK_Couple_the_test_project_to_the_app_project)  
-  
- [Wielokrotnie powtarzane rozszerzyć testy i były przekazywane](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Debuguj test się niepowodzeniem](#BKMK_Debug_a_failing_test)  
-  
- [Zrefaktoryzuj kod](#BKMK_Refactor_the_code_)  
-  
+
+W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla klasy Visual C# w aplikacji platformy uniwersalnej systemu Windows. Klasa Rooter pokazuje niezrozumiała chwile teorii limit z calculus zaimplementowanie funkcji, która oblicza szacunkową pierwiastek kwadratowy z podanej liczbie. Aplikacja matematycznych następnie użyć tej funkcji do wyświetlenia użytkownika fun, co można zrobić za pomocą matematycznych.
+
+W tym temacie przedstawiono sposób użycia testowania jako pierwszy krok w rozwoju jednostek. W takie podejście należy najpierw zapisać metody testowej, która sprawdza określone zachowanie w systemie, testowany, a następnie napisać kod, który przekazuje testu. Wprowadzenie zmian w kolejności poniższych procedur, można cofnąć tej strategii do pierwszej operacji zapisu kod, który chcesz przetestować, a następnie wpisz testów jednostkowych.
+
+W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projektów testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Testy jednostkowe mogą również obejmować bezpośrednio w projekcie biblioteki DLL, lub można utworzyć oddzielne rozwiązania testów jednostkowych i biblioteki DLL.
+
 ##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a>Tworzenie rozwiązania i jednostkowy projekt testowy  
   
-1.  Na **pliku** menu, wybierz **nowy**, a następnie wybierz pozycję **nowy projekt**.  
+1.  Na **pliku** menu, wybierz **nowy** > **projektu...** .
   
-2.  W **nowy projekt** okna dialogowego rozwiń **zainstalowana**, następnie rozwiń węzeł **Visual C#** i wybierz polecenie **uniwersalnych systemu Windows**. Następnie wybierz pozycję **pusta aplikacja** z listy szablonów projektu.  
+2.  W **nowy projekt** okna dialogowego rozwiń **zainstalowana** > **Visual C#** i wybierz polecenie **uniwersalnych systemu Windows**. Następnie wybierz pozycję **pusta aplikacja** z listy szablonów projektu.
   
 3.  Nazwij projekt `Maths` i upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone.  
   
 4.  W Eksploratorze rozwiązań, wybieranie Nazwa rozwiązania, **Dodaj** z menu skrótów, a następnie wybierz pozycję **nowy projekt**.  
   
-5.  W **nowy projekt** okna dialogowego rozwiń **zainstalowana**, następnie rozwiń węzeł **Visual C#** i wybierz polecenie **uniwersalnych systemu Windows** . Następnie wybierz pozycję **Biblioteka testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.  
-  
-     ![Tworzenie projektu testu jednostki](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
+5.  W **nowy projekt** okna dialogowego rozwiń **zainstalowana**, następnie rozwiń węzeł **Visual C#** i wybierz polecenie **uniwersalnych systemu Windows** . Następnie wybierz pozycję **aplikacji testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.
   
 6.  Otwórz UnitTest1.cs w edytorze programu Visual Studio.  
   
@@ -287,7 +263,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
   
      Test zakończy się niepowodzeniem. Wybierz nazwę testu w Eksploratorze testów. Zostanie wyróżniona potwierdzenia nie powiodło się. Komunikat o błędzie jest widoczny w okienku szczegółów Eksploratora testów.  
   
-     ![Nie powiodło się NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+     ![NegativeRangeTests failed](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
 3.  Aby zobaczyć, dlaczego test zakończy się niepowodzeniem, krok przy użyciu funkcji:  
   

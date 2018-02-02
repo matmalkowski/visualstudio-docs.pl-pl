@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Jak przetestować biblioteki DLL programu Visual C++ dla aplikacji platformy uniwersalnej systemu Windows 
+# <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL programu Visual C++
+
 W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla biblioteki DLL języka C++ dla aplikacji systemu Windows platformy Uniwersalnej Framework testów firmy Microsoft dla języka C++. Biblioteki DLL RooterLib pokazuje niezrozumiała chwile teorii limit z calculus zaimplementowanie funkcji, która oblicza szacunkową pierwiastek kwadratowy z podanej liczbie. Biblioteka DLL może następnie uwzględniane w aplikacji platformy uniwersalnej systemu Windows, która przedstawia użytkownikowi fun, co można zrobić za pomocą matematycznych.  
   
  W tym temacie przedstawiono sposób użycia testowania jako pierwszy krok w rozwoju jednostek. W takie podejście należy najpierw zapisać metody testowej, która sprawdza określone zachowanie w systemie, testowany, a następnie napisać kod, który przekazuje testu. Wprowadzenie zmian w kolejności poniższych procedur, można cofnąć tej strategii do pierwszej operacji zapisu kod, który chcesz przetestować, a następnie wpisz testów jednostkowych.  
   
- W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projektów testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Testy jednostkowe mogą również obejmować bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i. BIBLIOTEKI DLL. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) uzyskać porady na temat struktury, których do użycia.  
-  
-##  <a name="In_this_topic"></a>W tym temacie  
-
- [Tworzenie rozwiązania i jednostkowy projekt testowy](#Create_the_solution_and_the_unit_test_project)  
-  
- [Sprawdź, że testy uruchamiane w narzędzia Eksplorator testów](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Dodaj do rozwiązania projektu biblioteki DLL](#Add_the_DLL_project_to_the_solution)  
-  
- [Udostępnienie funkcji DLL dla kodowanego testu](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [Wielokrotnie powtarzane rozszerzyć testy i były przekazywane](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Debuguj test się niepowodzeniem](#Debug_a_failing_test)  
-  
- [Zrefaktoryzuj kod bez zmiany testów](#Refactor_the_code_without_changing_tests)  
+ W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projektów testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Testy jednostkowe mogą również obejmować bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i. BIBLIOTEKI DLL. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) uzyskać porady na temat struktury, których do użycia.
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a>Tworzenie rozwiązania i jednostkowy projekt testowy  
   
-1.  Na **pliku** menu, wybierz **nowy**, a następnie wybierz pozycję **nowy projekt**.  
+1.  Na **pliku** menu, wybierz **nowy** > **nowy projekt...** .
   
-2.  W oknie dialogowym Nowy projekt, rozwiń węzeł **zainstalowana**, następnie rozwiń węzeł **Visual C++** i wybierz polecenie **UWP**. Następnie wybierz pozycję **Biblioteka testów jednostkowych (aplikacji platformy UWP)** z listy szablonów projektu.  
-  
-     ![Utwórz & C &43; 43; Biblioteka testów jednostkowych](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  W oknie dialogowym Nowy projekt, rozwiń węzeł **zainstalowana** > **Visual C++** i wybierz polecenie **uniwersalnych systemu Windows**. Następnie wybierz pozycję **aplikacji testów jednostkowych (uniwersalna systemu Windows)** z listy szablonów projektu.
   
 3.  Nazwij projekt `RooterLibTests`; Określ lokalizację; Nazwa rozwiązania `RooterLib`; i upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczony.  
   
@@ -297,7 +281,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
      Test zakończy się niepowodzeniem. Wybierz nazwę testu w Eksploratorze testów. Zostanie wyróżniona potwierdzenia nie powiodło się. Komunikat o błędzie jest widoczny w okienku szczegółów Eksploratora testów.  
   
-     ![Nie powiodło się NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+     ![NegativeRangeTests failed](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
 3.  Aby zobaczyć, dlaczego test zakończy się niepowodzeniem, krok przy użyciu funkcji:  
   

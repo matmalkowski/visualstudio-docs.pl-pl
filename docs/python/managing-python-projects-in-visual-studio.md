@@ -1,26 +1,27 @@
 ---
-title: "Zarządzanie projektami Python w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: "Zarządzanie projektami Python aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Objaśnienie jego przeznaczenia projekty w programie Visual Studio, pokazuje, jak utworzyć projektów i zarządzanie nimi dla kodu języka Python i opisano dostępne szablony inny projekt dla języka Python."
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90a1c568b5e97afcaa975e1fe77230fa0b65d80d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
@@ -72,8 +73,8 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 | --- | --- |
 | [Z istniejącego kodu języka Python](#creating-a-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu języka Python w strukturze folderu.  |
 | Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
-| [Usługi w chmurze Azure](template-azure-cloud-service.md) | Projekt usługi w chmurze Azure napisanych w języku Python. |
-| [Projekty sieci Web](template-web.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
+| [Usługi w chmurze Azure](python-azure-cloud-service-project-template.md) | Projekt usługi w chmurze Azure napisanych w języku Python. |
+| [Projekty sieci Web](python-web-application-project-templates.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
 | IronPython aplikacji | Podobnie jak szablon aplikacji Python, ale IronPython przez domyślne włączenie .NET międzyoperacyjnego i trybu mieszanego debugowania w językach .NET. |
 | Aplikacja IronPython WPF | Struktury projektu przy użyciu IronPython z plikami Windows Presentation Foundation XAML dla interfejsu użytkownika aplikacji. Program Visual Studio udostępnia projektanta XAML interfejsu użytkownika, związane z kodem mogą być napisane w języku Python i aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | Strony sieci Web IronPython Silverlight | Projekt IronPython, który jest uruchamiany w przeglądarce, za pomocą programu Silverlight. Kodu Python aplikacji znajduje się na stronie sieci web jako skryptu. Tag skryptu umożliwiającego ściąga dół niektórych kod JavaScript, która inicjuje IronPython działają w ramach Silverlight, z którego kodu Python mogą prowadzić interakcję z modelu DOM. |

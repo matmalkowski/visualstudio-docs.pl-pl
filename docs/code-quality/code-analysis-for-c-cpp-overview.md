@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -21,18 +22,20 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2261921e4266f1b58ed31650ac1ff1bb7c028942
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — Omówienie
+# <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — omówienie
+
 Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady ich kodu źródłowego C/C++. Przepełnienia buforów, które nie zostały zainicjowane pamięci obejmują typowe błędy kodowania zgłoszone przez narzędzie, wyłuskań wskaźnika o wartości null i przecieków pamięci i zasobów.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)  
@@ -54,3 +57,8 @@ Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady i
  Oprócz pełnej integracji środowiska programistycznego programiści mogą również wykorzystać narzędzie do analizy w wierszu polecenia, jak pokazano w poniższym przykładzie:  
   
  `C:\>cl /analyze Sample.cpp`
+
+## <a name="see-also"></a>Zobacz także
+
+[Analiza jakości sterowników za pomocą narzędzi analizy kodu](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)  
+[Analiza kodu dla sterowników ostrzeżenia](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

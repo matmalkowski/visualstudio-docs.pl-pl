@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -54,7 +55,7 @@ Aby upewnić się, że kod nie koliduje to z jego projekt, sprawdź poprawność
   
 -   Visual Studio na serwerze Team Foundation Build, aby sprawdzić poprawność kodu automatycznie z Team Foundation Build  
   
--   Rozwiązania, które ma diagramu zależności projektu modelowania. Na tym wykresie zależności muszą być połączone z artefaktami w projektach Visual C# .NET i Visual Basic .NET, które chcesz zweryfikować. Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Rozwiązania, które ma diagramu zależności projektu modelowania. Na tym wykresie zależności muszą być połączone z artefaktami w C# lub Visual Basic projektów, które chcesz zweryfikować. Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ W tej wersji programu Visual Studio walidacji zależności występuje w czasie r
 2.  Aby wyświetlić źródło każdy błąd, kliknij dwukrotnie ten błąd w **listy błędów** okna.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]mogą być wyświetlane mapy kodu zamiast źródła błędu. Dzieje się tak, jeśli kod ma zależność na zestaw, który nie jest określony przez wykres zależności, albo kod brakuje zależności, który jest określony przez wykres zależności. Przejrzyj mapy kodu lub kod, aby określić, czy zależność powinna istnieć. Aby uzyskać więcej informacji na temat mapy kodu, zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mogą być wyświetlane mapy kodu zamiast źródła błędu. Dzieje się tak, jeśli kod ma zależność na zestaw, który nie jest określony przez wykres zależności, albo kod brakuje zależności, który jest określony przez wykres zależności. Przejrzyj mapy kodu lub kod, aby określić, czy zależność powinna istnieć. Aby uzyskać więcej informacji na temat mapy kodu, zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Aby zarządzać błędy, zobacz [Zarządzanie błędy sprawdzania poprawności](#ManageErrors).  
   

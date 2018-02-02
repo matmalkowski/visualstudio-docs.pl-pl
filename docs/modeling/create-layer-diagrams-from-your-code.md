@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności w kodzie
-W celu wizualizacji Architektura wysokiego poziomu, logicznych systemu oprogramowania, utworzyć *diagram zależności* w programie Visual Studio. Aby upewnić się, że kod jest zgodny z tego projektu, sprawdź poprawność kodu przy użyciu diagramu zależności. Można tworzyć diagramy zależności dla projektów Visual C# .NET i Visual Basic .NET. Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzi](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Utwórz diagram zależności](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Diagram zależności umożliwia organizowanie elementów rozwiązania Visual Studio w grupy logiczne, abstrakcyjny o nazwie *warstwy*. Można użyć warstw do opisania głównych zadań wykonywanych przez te artefakty lub główne składniki systemu. Każda warstwa może zawierać innych warstwy opisujące bardziej szczegółowe zadania. Można również określić przeznaczone lub istniejące *zależności* między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Aby utrzymać kontrolę architektury kodu, wyświetl zamierzone zależności na diagramie i przeprowadź walidację kodu na podstawie diagramu.  
-  
- [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Utwórz diagram zależności  
- Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera projekt modelowania. 
-  
+
+W celu wizualizacji Architektura wysokiego poziomu, logicznych systemu oprogramowania, utworzyć *diagram zależności* w programie Visual Studio. Aby upewnić się, że kod jest zgodny z tego projektu, sprawdź poprawność kodu przy użyciu diagramu zależności. Można tworzyć diagramy zależności dla projektów Visual C# i Visual Basic. Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Utwórz diagram zależności](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Diagram zależności umożliwia organizowanie elementów rozwiązania Visual Studio w grupy logiczne, abstrakcyjny o nazwie *warstwy*. Można użyć warstw do opisania głównych zadań wykonywanych przez te artefakty lub główne składniki systemu. Każda warstwa może zawierać innych warstwy opisujące bardziej szczegółowe zadania. Można również określić przeznaczone lub istniejące *zależności* między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Aby utrzymać kontrolę architektury kodu, wyświetl zamierzone zależności na diagramie i przeprowadź walidację kodu na podstawie diagramu.
+
+[Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Utwórz diagram zależności
+
+Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera projekt modelowania.
+
 > [!IMPORTANT]
->  Nie dodawaj, przeciągnij lub skopiuj istniejący diagram zależności z projektem modelowania do innego projektu modelowania lub w inne miejsce w rozwiązaniu. Pozwala to zachować odniesienia z oryginalnego diagramu nawet po zmianie diagramu. Mogłoby to także uniemożliwić prawidłowe działanie walidacji warstwy i spowodować wystąpienie innych problemów, takich jak brakujące elementy lub inne błędy, przy próbie otwarcia diagramu.  
->   
->  Zamiast tego należy dodać nowy diagram zależności do projektu modelowania. Skopiuj elementy z diagramu źródłowego do nowego diagramu. Zapisać projekt modelowania i nowy diagram zależności.  
-  
+> Nie dodawaj, przeciągnij lub skopiuj istniejący diagram zależności z projektem modelowania do innego projektu modelowania lub w inne miejsce w rozwiązaniu. Pozwala to zachować odniesienia z oryginalnego diagramu nawet po zmianie diagramu. Mogłoby to także uniemożliwić prawidłowe działanie walidacji warstwy i spowodować wystąpienie innych problemów, takich jak brakujące elementy lub inne błędy, przy próbie otwarcia diagramu.
+>
+> Zamiast tego należy dodać nowy diagram zależności do projektu modelowania. Skopiuj elementy z diagramu źródłowego do nowego diagramu. Zapisać projekt modelowania i nowy diagram zależności.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Aby dodać nowy diagram zależności do projektu modelowania  
   
 1.  Na **architektura** menu, wybierz **nowy Diagram zależności**.  

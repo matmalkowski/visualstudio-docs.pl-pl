@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Wskazówki: analizowanie kodu C++ pod względem wad
 W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potencjalnych przy użyciu narzędzia do analizy kodu dla kodu C/C++.  
@@ -41,7 +43,7 @@ W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potenc
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
--   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]lub [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].  
+-   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] lub [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].  
   
 -   Kopię [próbka Demo](../code-quality/demo-sample.md).  
   
@@ -85,9 +87,9 @@ W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potenc
   
 3.  Popraw to ostrzeżenie, za pomocą makra zakończyło się pomyślnie. Kod powinien wyglądać następujący kod:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  W **listy błędów**, kliknij dwukrotnie następujące ostrzeżenie:  
   
@@ -95,17 +97,17 @@ W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potenc
   
 5.  Testowanie pod kątem równości, aby poprawić to ostrzeżenie. Kod powinien wyglądać podobnie do poniższego kodu:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Aby Traktuj ostrzeżenia jako błędy  
   
 1.  W pliku Bug.cpp, Dodaj następujący `#pragma` instrukcji na początku pliku do Traktuj ostrzeżenie C6001 jako błąd:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Skompiluj ponownie projekt CodeDefects.  
   
@@ -141,17 +143,14 @@ W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potenc
   
 8.  Aby usunąć to ostrzeżenie, należy użyć instrukcji "if", aby przetestować wartości zwracanej. Kod powinien wyglądać następujący kod:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Skompiluj ponownie projekt adnotacji.  
   
@@ -161,15 +160,13 @@ W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potenc
   
 1.  Adnotuj formalnych parametrów i zwraca wartość funkcji `AddTail` za pomocą warunków przed i po, jak pokazano w poniższym przykładzie:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Skompiluj ponownie projekt adnotacji.  
   
@@ -181,19 +178,21 @@ W tym przewodniku pokazano, jak analiza kodu C/C++ pod względem wad kodu potenc
   
 4.  Aby usunąć to ostrzeżenie, należy użyć instrukcji "if", aby przetestować wartości zwracanej. Kod powinien wyglądać następujący kod:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Skompiluj ponownie projekt adnotacji.  
   
      Tworzy projekt bez żadnych ostrzeżeń ani błędów.  
   
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Analizowanie kodu zarządzanego pod kątem defektów](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Zobacz także
+
+[Przewodnik: Analizowanie kodu zarządzanego pod kątem defektów](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Analiza kodu dla C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

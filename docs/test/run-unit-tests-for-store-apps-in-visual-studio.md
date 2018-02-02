@@ -1,5 +1,5 @@
 ---
-title: Uruchom testy jednostkowe dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Uruchom testy jednostkowe w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,49 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Uruchom testy jednostkowe dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
-W tym temacie opisano sposób uruchamiania testów jednostkowych za pomocą Eksploratora testów w programie Microsoft Visual Studio  
-  
-> [!NOTE]
->  W tematach w tej sekcji opisano funkcji programu Visual Studio Express dla systemu Windows 8. Visual Studio Community, Enterprise i Professional oferują dodatkowe funkcje, w celu przeprowadzania testów jednostkowych.  
->   
->  -   Użyj dowolnej frameworka testów jednostkowych innych firm lub Otwórz źródła adapter dodatku dla Eksploratora testów został utworzony. Można także analizować i wyświetlić informacje o pokryciu kodu dla testów.  
-> -   Uruchomienia testów po każdej kompilacji. Można również użyć Microsoft Fakes framework izolacji dla kodu zarządzanego skoncentrować się testy na swoim własnym kodem podstawiając badanie kodu systemu i funkcje innych firm.  
->   
->  Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md) w bibliotece MSDN.  
-  
-##  <a name="BKMK_In_this_topic"></a>W tym temacie  
- [Platform testów jednostkowych i projekty testowe](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [Uruchamianie testów w narzędzia Eksplorator testów](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [Uruchamianie testów](#BKMK_Running_tests)  
-  
- [Wyświetlanie wyników testu](#BKMK_Viewing_test_results)  
-  
--   [Wyświetlanie szczegółów testu](#BKMK_Viewing_test_details)  
-  
--   [Wyświetlanie kodu źródłowego metody testowej](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [Organizowanie listy testów](#BKMK_Organizing_the_test_list)  
-  
--   [Grupowanie testów](#BKMK_Grouping_tests)  
-  
--   [Wyszukiwanie i filtrowanie listy testów](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [Debugowanie testów jednostkowych](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>Platform testów jednostkowych i projekty testowe  
- Visual Studio Express dla aplikacji platformy uniwersalnej systemu Windows zawiera struktury testowania jednostki Microsoft zarządzanego i natywnego kodu C++. Eksplorator testów można uruchomić testy z wielu projektów testów w rozwiązaniu i klasy testowe, które należą do projektów kodu produkcyjnego. Projekty testowe może być dowolną kombinacją języka Visual C++ lub platform testów jednostkowych programu Visual C# i Visual Basic. Jeśli kod w ramach testu są zapisywane dla programu .NET Framework, w dowolnym języku .NET Framework, niezależnie od języka kodu docelowego można napisać projektu testowego. Natywny projektów kodu C/C++, należy sprawdzić za pomocą frameworka testów jednostkowych C++.  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>Uruchom testy jednostkowe w programie Visual Studio
+
+W tym temacie opisano sposób uruchamiania testów jednostkowych za pomocą Eksploratora testów w programie Microsoft Visual Studio.
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>Platform testów jednostkowych i projekty testowe
+
+Visual Studio zawiera struktury testowania jednostki firmy Microsoft dla kodu zarządzanego i natywnego kodu C++. Eksplorator testów można uruchomić testy z wielu projektów testów w rozwiązaniu i klasy testowe, które należą do projektów kodu produkcyjnego. Projekty testowe może być dowolną kombinacją języka Visual C++ lub platform testów jednostkowych programu Visual C# i Visual Basic. Jeśli kod w ramach testu są zapisywane dla programu .NET Framework, w dowolnym języku .NET Framework, niezależnie od języka kodu docelowego można napisać projektu testowego. Natywny projektów kodu C/C++, należy sprawdzić za pomocą frameworka testów jednostkowych C++.
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Uruchamianie testów w narzędzia Eksplorator testów  
  Podczas kompilowania projektu testowego, testy są wyświetlane w Eksploratorze testów. Eksploratora testów nie jest widoczny, jeśli **testu** w menu programu Visual Studio, wybierz **systemu Windows**, a następnie wybierz pozycję **Eksploratora testów**.  
   
@@ -117,7 +91,7 @@ W tym temacie opisano sposób uruchamiania testów jednostkowych za pomocą Eksp
 1.  W edytorze programu Visual Studio należy ustawić punkt przerwania w metody testowe, które chcesz debugować.  
   
     > [!NOTE]
-    >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkie metody testowe, które chcesz debugować.  
+    > Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkie metody testowe, które chcesz debugować.  
   
 2.  W Eksploratorze testów, wybierz metody testowe, a następnie wybierz **Debuguj zaznaczone testy** menu skrótów.  
   

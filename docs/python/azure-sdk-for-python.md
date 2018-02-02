@@ -1,14 +1,16 @@
 ---
 title: Zestaw Azure SDK for Python | Dokumentacja firmy Microsoft
+description: "Zestaw Azure SDK for Python można łatwo korzystać z usług Microsoft Azure z Python aplikacji działających na dowolnej platformie."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 01/22/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: fa18c4a0b29b9f9dc05dae3093b4432e38635154
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: f4f42f80bef2548c8caaff84df0d9a0118bfeac7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 
@@ -30,7 +32,7 @@ Zestaw Azure SDK for Python ułatwia zużywają i zarządzania usługami Microso
 
 Zestaw SDK usługi Azure jest instalowany z [indeksu pakietów języka Python](https://pypi.python.org/pypi/azure).
 
-Zainstaluj **najnowsza stabilna wersja** (obsługuje Python 2.7 i 3.3 +) w następujący sposób:
+Zainstaluj **najnowsza stabilna wersja** (obsługuje Python 2.7 i 3.x) w następujący sposób:
 
 ```command
 pip install azure
@@ -42,13 +44,13 @@ Można również wykonać [zainstalować Python i zestawu SDK](https://azure.mic
 
 Można znaleźć w dokumentacji [azure sdk dla python.readthedocs.org](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html).
 
-[Zestawu Azure SDK dla Centrum deweloperów języka Python](http://azure.microsoft.com/develop/python/) również ma liczbę przydatne zasoby, w tym szereg samouczków, takich jak:
+[Zestawu Azure SDK dla Centrum deweloperów języka Python](http://azure.microsoft.com/develop/python/) również ma wiele przydatnych zasobów, w tym liczby samouczki:
 
 - Tworzenie aplikacji sieci web za pomocą [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app), i [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Magazyn obiektów blob](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Magazyn tabel](/azure/storage/storage-python-how-to-use-table-storage)
 - [Magazyn kolejek](/azure/storage/storage-python-how-to-use-queue-storage)
-- [Usługi DocumentDB](/azure/documentdb/documentdb-python-application)
+- [DocumentDB](/azure/documentdb/documentdb-python-application)
 - [Kolejki usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Subskrypcje tematy magistrali usług](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Zarządzanie usługami](/azure/cloud-services/cloud-services-python-how-to-use-service-management)

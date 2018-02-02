@@ -1,5 +1,5 @@
 ---
-title: "Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: "Tworzenie i Uruchamianie testów jednostkowych programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,32 +7,31 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit tests
+helpviewer_keywords:
+- unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: e809cdbdce23d6bfafcfae2501a25c982455ba46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 911a330f61cb403b11f0fe860e1bc650837e50e3
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
-Narzędzia testowania programu Visual Studio jednostki zostały zaprojektowane do obsługi deweloperów i zespoły, które dołączyć jednostki testowania w swoje praktyki rozwoju oprogramowania. Testy jednostkowe zapewniają deweloperów i testerów wydajne, łatwy w obsłudze sposób wyszukiwania błędów logiki metod klasy w projektach Visual C#, Visual Basic i Visual C++.  
-  
-> [!NOTE]
->  W tematach w tej sekcji opisano funkcji programu Visual Studio 2012 Express dla systemu Windows 8. Visual Studio Ultimate, VS Premium i VS Professional oferują dodatkowe funkcje, w celu przeprowadzania testów jednostkowych.  
->   
->  -   W ostatecznej wersji programu VS, VS Premium i VS Professional można użyć dowolnego frameworka testów jednostkowych innych firm lub Otwórz źródła adapter dodatku dla Eksploratora testów został utworzony. Można także analizować i wyświetlić informacje o pokryciu kodu dla testów z VS Ultimate i VS Premium.  
-> -   W ostatecznej wersji programu VS można uruchomić testów po każdej kompilacji. Można również użyć Microsoft Fakes framework izolacji dla kodu zarządzanego skoncentrować się testy na swoim własnym kodem podstawiając badanie kodu systemu i funkcje innych firm.  
-> -   **JavaScript**. Testy jednostkowe JavaScript nie jest dostępny w środowisku IDE programu Visual Studio Express dla systemu Windows 8. W Visual Studio Professional, Premium, Ultimate platform testów jednostkowych JavaScript są dostępne jako rozszerzenia w galerii programu Visual Studio. Możesz również testowania kodu JavaScript przy użyciu jednej autonomicznej innych firm lub otworzyć platform testów jednostkowych JavaScript źródła.  
->   
->  Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md) w bibliotece MSDN.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Testowanie jednostek kodu C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
-  
- [Biblioteki DLL C++ testy jednostkowe](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  
-  
- [Uruchom testy jednostkowe w narzędzia Eksplorator testów](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
+# <a name="create-and-run-unit-tests-in-visual-studio"></a>Tworzenie i Uruchamianie testów jednostkowych programu Visual Studio
+
+Narzędzia testowania programu Visual Studio jednostki zostały zaprojektowane do obsługi deweloperów i zespoły, które dołączyć jednostki testowania w swoje praktyki rozwoju oprogramowania. Testy jednostkowe zapewniają deweloperów i testerów wydajne, łatwy w obsłudze sposób wyszukiwania błędów logiki metod klasy w projektach Visual C#, Visual Basic i Visual C++.
+
+## <a name="in-this-section"></a>W tej sekcji
+
+[Testowanie jednostek kodu C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
+
+[Biblioteki DLL C++ testy jednostkowe](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)
+
+[Uruchom testy jednostkowe w narzędzia Eksplorator testów](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
+
+## <a name="see-also"></a>Zobacz także
+
+[Testowanie jednostek kodu](../test/unit-test-your-code.md)

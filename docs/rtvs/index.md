@@ -1,23 +1,26 @@
 ---
 title: R Tools for Visual Studio | Dokumentacja firmy Microsoft
+description: "R narzędzi dla programu Visual Studio (RTVS) to rozszerzenie bezpłatne, open source, które oferują wiele funkcji języka, w tym IntelliSense, debugowania i zdalnych obszarów roboczych."
 ms.custom: 
 ms.date: 11/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c18eadd6cfcdf6fc77b204f78654126ceb1862db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: f0ed20e323714ab28ae66c2522b613e1414a0973
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Praca z języka R w programie Visual Studio
 
@@ -30,22 +33,22 @@ R narzędzi dla programu Visual Studio (RTVS) to bezpłatny, [open source](https
 
 Aby skorzystać z języka R w programie Visual Studio:
 
-- [Zainstaluj narzędzia R](installation.md).
-- Postępuj zgodnie z [wprowadzenie](getting-started-with-r.md) przewodniku, jak również [przykłady](getting-started-samples.md) i [uzyskiwanie pomocy](getting-started-help.md) tematów.
+- [Zainstaluj narzędzia R](installing-r-tools-for-visual-studio.md).
+- Postępuj zgodnie z [wprowadzenie](getting-started-with-r.md) przewodniku, jak również [przykłady](getting-started-samples.md) i [uzyskiwanie pomocy](getting-started-help.md) artykułów.
 
 Następnie wykonaj poniższe łącza, aby dowiedzieć się więcej o funkcjach R, a także ogólne możliwości programu Visual Studio, sama.
 
 | Funkcja | Opis | Dokumentacja ogólna Visual Studio | 
 | --- | --- | --- |
-| [Program Visual Studio system projektu](projects.md) | Organizowanie Zarządzanie powiązane pliki w strukturze wygodne i skorzystać z szablonów przydatne dla elementów, jak kod języka R, dokumentację języka R R Markdown, zapytania SQL i procedur składowanych. Również kredyty [Menedżera pakietów](package-manager.md) i [integracji programu SQL Server](sql-server.md).  | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Obszar roboczy](workspaces.md) | RTVS można powiązać obszary robocze lokalnych i zdalnych, umożliwiając tworzenie kodu języka R lokalnie mniejszych zestawów danych, a następnie łatwo uruchomić kod na wydajniejsze komputery oparte na chmurze z znacznie większych zestawów danych. | n/d |
-| [Opcje narzędzia R](options.md) | Kontrolować różne aspekty RTVS. | [Opcje — okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Edytowanie sformatowanego, IntelliSense i wstawki kodu](code-editing.md) | Obejmuje kolorowania, [IntelliSense](code-intellisense.md) we wszystkich kodu i bibliotek, formatowania pomocy podpisu kodu przejdź do definicji i Znajdź wszystkie odwołania [wstawki kodu](code-snippets.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Znaczniki R Markdown](rmarkdown.md) | Dokumenty R Markdown pomóc Udostępnianie wyników dane zintegrowane R kodu wewnątrz bloków kodu w języku znaczników markdown. | n/d |
-| [Okno interaktywne](interactive-repl.md) | Zapewnia pełne środowisko REPL dla języka R umożliwia łatwe uruchamianie kodu w pliku źródłowego w oknie interaktywnym. | n/d |
-| [Wizualizacja danych](visualizing-data.md) | Kreślenia jest integralną częścią środowisko R i RTVS obsługuje wiele niezależnych kreślenia systemu windows, każdy z własnych historii i możliwość przenoszenia geograficzne między systemem windows. Powierzchnie można zapisać plików PDF i mapy bitowej lub skopiowane do Schowka jako mapa bitowa lub metaplik.  | n/d |
+| [Program Visual Studio system projektu](r-projects-in-visual-studio.md) | Organizowanie Zarządzanie powiązane pliki w strukturze wygodne i skorzystać z szablonów przydatne dla elementów, jak kod języka R, dokumentację języka R R Markdown, zapytania SQL i procedur składowanych. Również kredyty [Menedżera pakietów](r-package-manager-in-visual-studio.md) i [integracji programu SQL Server](integrating-sql-server-with-r.md).  | [Rozwiązania i projekty w programie Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Workspace](r-workspaces-in-visual-studio.md) | RTVS można powiązać obszary robocze lokalnych i zdalnych, umożliwiając tworzenie kodu języka R lokalnie mniejszych zestawów danych, a następnie łatwo uruchomić kod na wydajniejsze komputery oparte na chmurze z znacznie większych zestawów danych. | n/d |
+| [Opcje narzędzia R](options-for-r-tools-in-visual-studio.md) | Kontrolować różne aspekty RTVS. | [Opcje — okno dialogowe](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Edytowanie sformatowanego, IntelliSense i wstawki kodu](editing-r-code-in-visual-studio.md) | Obejmuje kolorowania, [IntelliSense](r-intellisense.md) we wszystkich kodu i bibliotek, formatowania pomocy podpisu kodu przejdź do definicji i Znajdź wszystkie odwołania [wstawki kodu](code-snippets-for-r.md)itd. | [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Znaczniki R Markdown](rmarkdown-with-r-in-visual-studio.md) | Dokumenty R Markdown pomóc Udostępnianie wyników dane zintegrowane R kodu wewnątrz bloków kodu w języku znaczników markdown. | n/d |
+| [Okno interaktywne](interactive-repl-for-r-in-visual-studio.md) | Zapewnia pełne środowisko REPL dla języka R umożliwia łatwe uruchamianie kodu w pliku źródłowego w oknie interaktywnym. | n/d |
+| [Wizualizowanie danych](visualizing-data-with-r-in-visual-studio.md) | Kreślenia jest integralną częścią środowisko R i RTVS obsługuje wiele niezależnych kreślenia systemu windows, każdy z własnych historii i możliwość przenoszenia geograficzne między systemem windows. Powierzchnie można zapisać plików PDF i mapy bitowej lub skopiowane do Schowka jako mapa bitowa lub metaplik.  | n/d |
 | [Eksplorator zmiennych](variable-explorer.md) | Sprawdź zmienne w zakresach globalnych lub specyficznych dla pakietu, umożliwia wyświetlanie tabel można sortować i wyeksportować do pliku CSV. | n/d |
-| [Oferujący wszystkie funkcje debugowania](debugging.md) | Obejmuje integrację z okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Oferujący wszystkie funkcje debugowania](debugging-r-in-visual-studio.md) | Obejmuje integrację z okna interaktywnego. | [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
 Zobacz też [— często zadawane pytania](faq.md).
 

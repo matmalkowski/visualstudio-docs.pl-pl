@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Strona opcji, debugowanie — Właściwości węzła
 W poniższych tabelach opisano stron (lub kolekcji właściwości) które są skojarzone z **debugowanie** kategorii, `DTE.Properties("Debugging", <Property Page>)` z **opcje** okno dialogowe.  
@@ -39,7 +41,7 @@ W poniższych tabelach opisano stron (lub kolekcji właściwości) które są sk
 |ShowAllMembers|Get/Set (wartość logiczna)|Dla obiektów nienależących do użytkownika określa, czy debuger wyświetla wszystkich elementach członkowskich obiektu w oknach zmiennych. Ta opcja nie ma znaczenia, chyba że włączono opcję tylko mój kod.|  
 |WarnIfNoUserCode|Get/Set (wartość logiczna)|Określa, czy debuger emituje ostrzeżenie, gdy użytkownik próbuje dołączyć do procesu, który nie ma kodu użytkownika. Ta opcja nie ma znaczenia, chyba że włączono opcję tylko mój kod.|  
 |EnablePropertyEvaluation|Get/Set (wartość logiczna)|Określa, czy debuger automatycznie oblicza właściwości i niejawna funkcja wywołuje w kodzie zarządzanym.|  
-|CallStringConversion|Get/Set (wartość logiczna)|Określa, czy debuger niejawnie wywołuje funkcję konwersji ciągów na obiektach w oknach zmiennych. Ta opcja dotyczy tylko kodu C# i JScript.|  
+|CallStringConversion|Get/Set (wartość logiczna)|Określa, czy debuger niejawnie wywołuje funkcję konwersji ciągów na obiektach w oknach zmiennych.|  
 |EnableSourceServer|Get/Set (wartość logiczna)|Określa, czy debuger może kodu dostępu z serwera źródłowego.|  
 |PrintSourceServerDiagnostics|Get/Set (wartość logiczna)|Określa, czy w oknie danych wyjściowych zawiera komunikatów diagnostycznych związane z serwera źródłowego. Ta opcja nie ma znaczenia, chyba że jest włączony dostęp do serwera źródłowego.|  
 |HighlightEntireLine|Get/Set (wartość logiczna)|Określa, czy debuger wyróżnia cały wiersz dla punktów przerwania i bieżącej instrukcji.|  
@@ -73,7 +75,7 @@ W poniższych tabelach opisano stron (lub kolekcji właściwości) które są sk
 |JitNative|Get/Set (wartość logiczna)|Określa, czy włączone jest debugowanie just in Time dla kodu natywnego.|  
 |JitScript|Get/Set (wartość logiczna)|Określa, czy włączone jest debugowanie just in Time dla kodu skryptu.|  
   
-## <a name="native"></a>Natywny  
+## <a name="native"></a>Natywne  
  `DTE.Properties("Debugging", "Native")`  
   
 |Nazwa elementu właściwości|Wartość|Opis|  
@@ -88,4 +90,4 @@ W poniższych tabelach opisano stron (lub kolekcji właściwości) które są sk
  [Strona opcji, Edytor tekstu — właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Ogólne, debugowanie, opcje — Okno dialogowe](../../debugger/general-debugging-options-dialog-box.md)   
  [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Just-In-Time, debugowanie, opcje — Okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Just-In-Time, Debugging, Options Dialog Box](../../debugger/just-in-time-debugging-options-dialog-box.md)

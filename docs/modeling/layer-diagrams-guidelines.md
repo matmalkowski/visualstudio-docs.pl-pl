@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy zależności* w programie Visual Studio. Upewnij się, kod pozostaje zgodne z tym projekcie weryfikując kodu przy użyciu diagramu zależności. Walidacja warstw mogą również obejmować procesu kompilacji. Zobacz [Channel 9 wideo: projektowania i walidacji architektury przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy zależności
  Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>Zdefiniuj warstwy do reprezentowania funkcjonalności obszarów i składników  
- Warstwy reprezentują logiczne grupy *artefakty*, takich jak projekty, pliki kodu przestrzeni nazw, klasy i metody. Można utworzyć warstwy z artefaktów z projektów Visual C# .NET i Visual Basic .NET, lub możesz dołączyć specyfikacji lub plany do warstwy, łączenie dokumentów, takich jak pliki programu Word lub prezentacji programu PowerPoint. Każda warstwa pojawia się jako prostokąt na diagramie i pokazuje liczbę artefaktów, które są z nim połączone. Warstwa może zawierać zagnieżdżone warstwy, które opisują innych zadań.  
+ Warstwy reprezentują logiczne grupy *artefakty*, takich jak projekty, pliki kodu przestrzeni nazw, klasy i metody. Można utworzyć warstwy z artefaktów z projektów Visual C# i Visual Basic, lub możesz dołączyć specyfikacji lub plany do warstwy, łączenie dokumentów, takich jak pliki programu Word lub prezentacji programu PowerPoint. Każda warstwa pojawia się jako prostokąt na diagramie i pokazuje liczbę artefaktów, które są z nim połączone. Warstwa może zawierać zagnieżdżone warstwy, które opisują innych zadań.  
   
  Generalnie, warstwy nazwy zgodnie z ich funkcji, na przykład "Prezentacji" lub "Usługi". Jeśli artefakty są ściśle współzależne, umieść je w tej samej warstwie. Jeśli artefakty mogą być aktualizowane oddzielnie lub używany w aplikacjach oddzielne, umieść je w różnych warstwach. Aby poznać wzorce Tworzenie warstw, odwiedź witrynę wzorce, praktyki i rozwiązania pod [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

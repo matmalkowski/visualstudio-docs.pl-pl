@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody na typach porównywalnych
 |||  
@@ -53,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  W języku C#, tokeny, które są używane do reprezentowania tych operatorów są następujące: ==,! =, \<, a >.  
   
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli naruszenie przyczyną jest brak operatory i języka programowania nie obsługuje operatora przeładowanie, jak w przypadku programu Visual Basic .NET. Jest również bezpiecznie Pomiń ostrzeżenie związane z tą regułą, gdy generowane na operatory równości innych niż op_Equality, jeśli użytkownik stwierdzi, że implementacja operatorów nie ma sensu w kontekście Twojej aplikacji. Jednak należy zawsze za pośrednictwem op_Equality i == — operator Jeśli przesłania metody Object.Equals.  
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy naruszenie przyczyną jest brak operatory i języka programowania nie obsługuje operatora przeładowanie, tak jak w przypadku programu Visual Basic. Jest również bezpiecznie Pomiń ostrzeżenie związane z tą regułą, gdy generowane na operatory równości innych niż op_Equality, jeśli użytkownik stwierdzi, że implementacja operatorów nie ma sensu w kontekście Twojej aplikacji. Jednak należy zawsze za pośrednictwem op_Equality i == — operator Jeśli przesłania metody Object.Equals.  
   
 ## <a name="example"></a>Przykład  
  Poniżej przedstawiono przykład zawierający typu, który implementuje poprawnie <xref:System.IComparable>. Komentarze w kodzie zidentyfikować metody, które spełniają różne zasady, które są powiązane z <xref:System.Object.Equals%2A> i <xref:System.IComparable> interfejsu.  

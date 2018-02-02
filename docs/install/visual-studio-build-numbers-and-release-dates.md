@@ -5,23 +5,28 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 01/17/2018
+ms.date: 01/31/2018
 ms.topic: article
 helpviewer_keywords: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.service: 
-ms.workload: multiple
-ms.openlocfilehash: 4dee8cbd037fc1b4dda7f420e9a2cbff925d9a23
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: b6724896790d6fd3c6356bf63c6119f856640531
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 numery kompilacji i daty wydania
 W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2017 r, do daty.
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.6 | Wydanie | 1/29/2018 | 15.5.27130.2027 |
+| 15.5.5 | Wydanie | 1/25/2018 | 15.5.27130.2026 |
+| 15.6.0 Podgląd 3.0 | Wersja zapoznawcza | 1/25/2018 | 15.6.27323.2 |
 | 15.5.4 | Wydanie | 1/16/2018 | 15.5.27130.2024 |
 | 15.6.0 Podgląd 2.0 | Wersja zapoznawcza | 1/10/2018 | 15.6.27309.0 |
 | 15.5.3 | Wydanie | 1/9/2018 | 15.5.27130.2020 |

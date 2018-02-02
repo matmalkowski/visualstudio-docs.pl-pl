@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 Użyj narzędzia użycie procesora GPU w Centrum diagnostyki i wydajności usługi Visual Studio, aby lepiej zrozumieć wykorzystanie sprzętu wysokiego poziomu aplikacji Direct3D. Służy on do ustalenia, czy wydajność aplikacji jest powiązane z procesora CPU lub powiązane z procesora GPU i uzyskanie szczegółowe informacje na temat używania platformy sprzętu bardziej efektywnie. Użycie procesora GPU obsługuje aplikacje, które używają Direct3D 12, Direct3D 11 i Direct3D 10; nie obsługuje innych interfejsów API, takich jak Direct2D lub OpenGL grafiki.  
@@ -118,7 +118,7 @@ Począwszy od programu Visual Studio 2017 tych danych można otworzyć za pomoc�
 |**Identyfikator wątku**|Identyfikator wątku, z której pochodzi zdarzenia.|  
   
 > [!IMPORTANT]
->  Windows 8.1 jest wymagany dla zdarzeń autorstwa. Ponadto jeśli sterownik lub procesora GPU nie obsługuje Instrumentacji niezbędne funkcje, wszystkie zdarzenia będą wyświetlane jako "unattributed". Upewnij się zaktualizować sterownik procesora GPU i spróbuj ponownie, jeśli wystąpi ten problem. Aby uzyskać więcej informacji, zobacz [sprzętu i obsługi sterowników](#hwsupport) poniżej.  
+>  Jeśli sterownik lub procesora GPU nie obsługuje funkcji instrumentacji konieczne, wszystkie zdarzenia będą wyświetlane jako "unattributed". Upewnij się zaktualizować sterownik procesora GPU i spróbuj ponownie, jeśli wystąpi ten problem. Aby uzyskać więcej informacji, zobacz [sprzętu i obsługi sterowników](#hwsupport) poniżej.  
   
 ## <a name="gpu-usage-settings"></a>Ustawienia użycia procesora GPU  
  Istnieje możliwość skonfigurowania narzędzia użycie procesora GPU odroczenie zbiór informacje dotyczące profilowania, zamiast uruchamiania zbierać informacje, jak najszybciej po uruchomieniu aplikacji. Ponieważ rozmiar danych profilowania mogą być istotne, jest to przydatne, gdy wiesz, że spowolnienie wydajności aplikacji nie będzie dłużej wyświetlane dopiero po pewnym czasie.  
@@ -143,7 +143,7 @@ Począwszy od programu Visual Studio 2017 tych danych można otworzyć za pomoc�
   
 |Dostawcy|Opis elementu procesora GPU|Wymagana wersja sterownika|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4. Generowanie Intel® rdzenie procesora (Haswell)<br /><br /> -Intel® HD grafiki (GT1)<br />-Intel® HD grafiki 4200 (GT2)<br />-Intel® HD grafiki 4400 (GT2)<br />-Intel® HD grafiki 4600 (GT2)<br />-Intel® HD grafiki P4600 (GT2)<br />-Intel® HD grafiki P4700 (GT2)<br />-Intel® HD grafiki 5000 (GT3)<br />-Grafika Intel® Iris™ 5100 (GT3)<br />-Intel® Iris™ Pro grafiki 5200 (GT3e)|--(użyj najnowszej wersji sterowników)|  
+|Intel®|4. Generowanie Intel® rdzenie procesora (Haswell)<br /><br /> -Intel® HD grafiki (GT1)<br />-Intel® HD grafiki 4200 (GT2)<br />-Intel® HD grafiki 4400 (GT2)<br />-Intel® HD grafiki 4600 (GT2)<br />-Intel® HD grafiki P4600 (GT2)<br />-Intel® HD grafiki P4700 (GT2)<br />-Intel® HD grafiki 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-Intel® Iris™ Pro grafiki 5200 (GT3e)|--(użyj najnowszej wersji sterowników)|  
 |AMD®|Większość od serii 7000 HD™ AMD Radeon (AMD Radeon™ HD 7350 7670 wyklucza)<br /><br /> AMD Radeon™ GPU, AMD FirePro™ GPU i AMD FirePro GPU akceleratorów, oferujący funkcje architektura grafiki dalej Core (GCN).<br /><br /> Serii E AMD® i AMD A-series przyspieszony przetwarzania jednostki (APU) z architektury grafiki dalej Core (GCN) ("Kaveri", "Kabini", "Temash", "Beema", "Mullins")|14.7 RC3 lub nowszej|  
 |NVIDIA®|Najbardziej od 400 serii NVIDIA GeForce®.<br /><br /> NVIDIA® GeForce® GPU, NVIDIA Quadro® GPU i NVIDIA® teslach™ GPU akceleratorów, oferujący funkcje Fermi™, Kepler™ ani Maxwell™ architektury.|343.37 lub nowszej|  
   

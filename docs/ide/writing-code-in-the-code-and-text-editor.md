@@ -5,24 +5,20 @@ ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: abde071bd67ab3f6a65891d347b9214f6dd5257b
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.workload:
+- multiple
+ms.openlocfilehash: 5847c97f3fddea65b00c35a5a0f4d5665329ae7e
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Pisanie kodu w edytorze kodu
 
@@ -67,7 +63,6 @@ Liczba zaawansowanych funkcji można znaleźć w **edycji/zaawansowane** podmenu
 |Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie ma żadnego zaznaczenia, zmienia znak punkt wstawiania na małe litery.|
 |Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrótu: Klawisze ALT + Strzałka w górę.|
 |Przesuń wybrane wiersze w dół|Przenosi wybrany wiersz w dół o jeden wiersz. Skrótu: Klawisze ALT + Strzałka w dół.|
-|Sprawdź poprawność dokumentu|Weryfikuje plików kodu w języku JScript.|
 |Usuń biały znak w poziomie|Usuwa tabulatory lub spacje na koniec bieżącego wiersza.|
 |Widok biały znak|Wyświetla spacje jako zgłoszono kropek i karty jako strzałki. Koniec pliku jest wyświetlana jako prostokątne symbolu. Jeśli **narzędzia/Opcje/tekstu Editor/All języków/Word zawijania/Pokaż symbole widoczne dla zawijania** jest zaznaczone, tego symbolu jest również wyświetlany.|
 |Zawijanie tekstu|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączyć zawijanie i Włącz ustawienia edytora tekstu wszystkie języki (**narzędzia/Opcje/językach Editor/All**).|

@@ -1,6 +1,6 @@
 # <a name="create-an-ai-project-from-existing-code"></a>Tworzenie projektu AI z istniejącego kodu
 
-Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), łatwo ją przenieść istniejący kod języka Python do projektu programu Visual Studio. 
+Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), łatwo ją przenieść istniejący kod języka Python do projektu programu Visual Studio.
 
 > [!Important]
 >
@@ -14,18 +14,17 @@ Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.
 
 1. W oknie kreatora należy ustawić ścieżkę do istniejącego kodu, zdefiniować filtr dla typów plików i określ wszystkie ścieżki wyszukiwania, które Twój projekt wymaga, a następnie wybierz **OK**. Jeśli nie znasz wyszukiwania, jakie są ścieżki wypełniaj tego pola.
 
-
 ![Nowy projekt z istniejących źródeł, krok 2](media\create-project-existing\azurebatch-newproject.png)
 
 > Sprawdź, czy istniejący kod jest częścią projektu usługi Azure Machine Learning, "**uczenia maszynowego Azure jest folder**" w celu zapewnienia pomyślnej konwersji istotne szczegóły konfiguracji usługi Azure Machine Learning, takie jak eksperymenty, które konto, które obszaru roboczego, kontekstów obliczeń do użycia i inne.
 
 1. Aby ustawić pliku startowego, zlokalizuj plik w Eksploratorze rozwiązań, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako plik uruchamiania**.
 
-8. W razie potrzeby, uruchom program naciskając klawisze Ctrl + F5 lub wybranie **Debuguj > Rozpocznij bez debugowanie**. 
+1. W razie potrzeby, uruchom program naciskając klawisze Ctrl + F5 lub wybranie **Debuguj > Rozpocznij bez debugowanie**.
 
 > [!div class="nextstepaction"]
 > [Samouczek: Praca z języka Python w programie Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](https://docs.microsoft.com/visualstudio/python/python-environments#creating-an-environment-for-an-existing-interpreter)
+- [Tworzenie środowiska dla istniejących interpreter języka Python](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
