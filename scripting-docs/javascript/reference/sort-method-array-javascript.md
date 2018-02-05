@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>sort — Metoda (Tablica) (JavaScript)
 Sortuje `Array`.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Uwagi  
  `sort` Sortuje metody `Array` obiektu w miejscu; brak nowych `Array` obiekt jest tworzony podczas wykonywania.  
   
- Jeśli podasz funkcję `sortFunction` argumentu, aplikacja musi zwracać jedną z następujących wartości:  
+ `sortFunction`przyjmuje dwa argumenty i musi zwracać jedną z następujących wartości:  
   
--   Wartość ujemną, jeśli pierwszy argument przekazywany jest mniejsza niż drugi argument.  
+-   Wartość ujemną (mniejszą niż 0), jeśli pierwszy argument przekazywany jest mniejsza niż drugi argument.  Pierwszy argument jest sortowana do dolnej indeksu.
   
--   Zero, jeśli dwa argumenty są równoważne.  
+-   Wartość zero (0), jeśli dwa argumenty są równoważne.  Dwa argumenty są sortowane w odniesieniu do innych elementów w tablicy, ale nie są posortowane względem siebie.
   
--   Dodatnia wartość, jeśli pierwszy argument jest większy niż drugi argument.  
+-   Wartość dodatnią (większa niż 0), jeśli pierwszy argument jest większy niż drugi argument.  Drugi argument jest sortowana do dolnej indeksu.
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład przedstawia użycie `sort` metody.  

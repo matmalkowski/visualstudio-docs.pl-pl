@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a5a8aeec2421b92057ba414b5cf23b1770b1f761
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
 Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do programowe przechwytywanie informacji graficznych z aplikacji Direct3D.  
@@ -96,7 +96,7 @@ Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagn
   
 ##### <a name="to-capture-graphics-information"></a>Aby przechwytywanie informacji graficznych  
   
--   Aby uruchomić przechwytywanie informacji graficznych, użyj `BeginCapture`:  
+- Aby uruchomić przechwytywanie informacji graficznych, użyj `BeginCapture`:  
   
     ```  
     ...  
@@ -111,6 +111,8 @@ Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagn
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
+
+- Po wywołaniu `EndCapture`, zwolnij obiekt grafiki. 
   
 ## <a name="next-steps"></a>Następne kroki  
  W tym przewodniku przedstawiono programowe przechwytywanie informacji graficznych. Jako kolejny krok Rozważ użycie tej opcji:  

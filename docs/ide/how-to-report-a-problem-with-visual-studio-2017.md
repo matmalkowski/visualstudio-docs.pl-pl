@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 Jeśli wystąpi problem z programem Visual Studio, chcemy wiadomo o nim. Oto jak zgłosić problem, tak aby firma Microsoft może zdiagnozować i rozwiązać ten problem.  
@@ -24,8 +25,9 @@ Jeśli wystąpi problem z programem Visual Studio, chcemy wiadomo o nim. Oto jak
 ## <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
 Jeśli jeszcze tego nie zrobiono, zaloguj się do programu Visual Studio przed zgłosić problem. W ten sposób można zgłosić problem, które występują, a także głosu lub komentarz na nim. Można nawet głosu lub komentarz na inny problem, który zostanie wyświetlony przesłane za.
 
-1.  Kliknij przycisk **logowania**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu.
-2.  Postępuj zgodnie z instrukcjami na ekranie do logowania.
+1.  W programie Visual Studio, wybierz **pomocy** > **Prześlij opinię** > **zgłosić Problem**.
+2.  W razie potrzeby wybierz **logowania**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu.
+3.  Postępuj zgodnie z instrukcjami na ekranie do logowania.
 
  ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png "Zaloguj się zgłosić problem")  
 

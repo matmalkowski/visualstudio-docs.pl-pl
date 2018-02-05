@@ -25,11 +25,11 @@ ms.author: kempb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 45e4e7c43b43fda63deb9008b35ccc4db4487cf8
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli przedstawiono często używane właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach TARGETS, które zapewnia MSBuild.  
@@ -52,7 +52,7 @@ W poniższej tabeli przedstawiono często używane właściwości, które są zd
 |BaseOutputPath|Podstawowa ścieżka do pliku wyjściowego. Jeśli jest ustawiona, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] użyje `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Przykład składni:`<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Folder najwyższego poziomu, w której tworzone są wszystkie foldery specyficzne dla konfiguracji pośrednich danych wyjściowych. Wartość domyślna to `obj\`. Następujący kod jest przykładem:`<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Wartość logiczna, która wskazuje, czy odwołania projektu są wbudowane lub oczyszczone równoległe, gdy wiele procesów [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest używany. Wartość domyślna to `true`, co oznacza, że projekty zostaną skompilowane w równoległe, gdy system ma wiele rdzeni lub procesorów.|  
-|BuildProjectReferences|Wartość logiczna, która wskazuje, czy odwołania projektu są tworzone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ustaw `false` Jeśli tworzysz projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) `true` Jeśli inaczej.|  
+|BuildProjectReferences|Wartość logiczna, która wskazuje, czy odwołania projektu są tworzone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automatycznie `false` Jeśli tworzysz projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) `true` Jeśli inaczej. `/p:BuildProjectReferences=false`można określić w wierszu polecenia, aby uniknąć sprawdzanie, czy przywoływane projekty są aktualne.|  
 |CleanFile|Nazwa pliku, która będzie służyć jako "czysta pamięci podręcznej." Wyczyść pamięć podręczną znajduje się lista wygenerowanych plików do usunięcia podczas oczyszczania operacji. Plik jest przekazywany w ścieżce pośrednich danych wyjściowych przez proces kompilacji.<br /><br /> Ta właściwość określa tylko nazwy plików, które nie mają informacje o ścieżce.|  
 |Strona kodowa|Określa stronę kodową do użycia dla wszystkich plików kodu źródłowego w kompilacji. Ta właściwość jest odpowiednikiem `/codepage` przełącznika kompilatora.|  
 |CompilerResponseFile|Plik odpowiedzi opcjonalne, które mogą zostać przekazane do zadania kompilatora.|  
