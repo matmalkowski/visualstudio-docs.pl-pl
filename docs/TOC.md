@@ -1,5 +1,6 @@
 # [Dokumentacja programu Visual Studio](ide/index.md)
 # [Omówienie](ide/visual-studio-ide.md)
+## [Co nowego](ide/whats-new-in-visual-studio.md)
 # Instalacja
 ## [Instalowanie programu Visual Studio](install/install-visual-studio.md)
 ## [Logowanie do programu Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [Klasy specyficzne dla kultury na potrzeby globalnych formularzy Windows Forms i formularzy internetowych](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Tworzenie aplikacji w językach dwukierunkowych](ide/creating-applications-in-bi-directional-languages.md)
 # Tematy pomocy
-## [Co nowego](ide/whats-new-in-visual-studio.md)
-### Szablony projektów i elementów
+## Szablony projektów i elementów
 ### [Parametry szablonu](ide/template-parameters.md)
 ### [Odwołanie do schematu szablonu (rozszerzalność)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## Ogólne elementy interfejsu użytkownika
