@@ -36,9 +36,10 @@
 ### [Podręcznik administratora programu Podgląd Pomocy](ide/help-viewer-administrator-guide.md)
 #### [Argumenty wiersza poleceń Menedżera zawartości pomocy](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Przesłonięcia Menedżera zawartości Pomocy](ide/help-content-manager-overrides.md)
-### Odwołanie
+### Tematy pomocy
 #### [Identyfikatory obciążeń i składników programu Visual Studio](install/workload-and-component-ids.md)
 #### [Numery wersji i daty wydania programu Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
+## [Korzystanie z programu Visual Studio z poziomu maszyny wirtualnej platformy Azure](install/using-visual-studio-vm.md)
 ## [Instalowanie narzędzi do kompilacji w kontenerze](install/build-tools-container.md)
 ### [Zaawansowany przykład dotyczący kontenerów](install/advanced-build-tools-container.md)
 ### [Znane problemy z kontenerami](install/build-tools-container-issues.md)
@@ -307,7 +308,7 @@
 ### [Globalizowanie aplikacji](ide/globalizing-applications.md)
 #### [Klasy specyficzne dla kultury na potrzeby globalnych formularzy Windows Forms i formularzy internetowych](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Tworzenie aplikacji w językach dwukierunkowych](ide/creating-applications-in-bi-directional-languages.md)
-# Odwołanie
+# Tematy pomocy
 ## [Co nowego](ide/whats-new-in-visual-studio.md)
 ### Szablony projektów i elementów
 ### [Parametry szablonu](ide/template-parameters.md)
