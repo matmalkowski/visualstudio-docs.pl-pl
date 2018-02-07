@@ -1,1 +1,28 @@
 # [Visual Studio Connected Environment (Połączone środowisko programu Visual Studio)](visual-studio-connected-environment.md)
+
+# [Wprowadzenie](get-started.md)
+##[.NET Core (VS Code i CLI)](get-started-netcore-01.md)
+###[1. Instalowanie narzędzi](get-started-netcore-01.md)
+###[2. Tworzenie środowiska deweloperskiego na platformie Azure](get-started-netcore-02.md)
+###[3. Tworzenie aplikacji internetowej platformy ASP.NET](get-started-netcore-03.md)
+###[4. Debugowanie kontenera w usłudze Kubernetes](get-started-netcore-04.md)
+###[5. Wywoływanie innego kontenera](get-started-netcore-05.md)
+###[6. Projektowanie zespołowe](get-started-netcore-06.md)
+###[7. Podsumowanie](get-started-netcore-07.md)
+
+##[.NET Core (Visual Studio 2017)](get-started-netcore-visualstudio-01.md)
+###[1. Instalowanie narzędzi](get-started-netcore-visualstudio-01.md)
+###[2. Tworzenie aplikacji internetowej platformy ASP.NET](get-started-netcore-visualstudio-02.md)
+###[3. Tworzenie środowiska deweloperskiego na platformie Azure](get-started-netcore-visualstudio-03.md)
+###[4. Debugowanie aplikacji](get-started-netcore-visualstudio-04.md)
+
+##[Node.js (VS Code i CLI)](get-started-nodejs-01.md)
+###[1. Instalowanie narzędzi](get-started-nodejs-01.md)
+###[2. Tworzenie środowiska deweloperskiego na platformie Azure](get-started-nodejs-02.md)
+###[3. Tworzenie aplikacji internetowej platformy Node.js](get-started-nodejs-03.md)
+###[4. Debugowanie kontenera w usłudze Kubernetes](get-started-nodejs-04.md)
+###[5. Wywoływanie innego kontenera](get-started-nodejs-05.md)
+###[6. Projektowanie zespołowe](get-started-nodejs-06.md)
+###[7. Podsumowanie](get-started-nodejs-07.md)
+
+
