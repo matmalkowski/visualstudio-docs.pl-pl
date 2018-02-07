@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 56b1753dbdcfbf8ce318e964a16879f02b1482c4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-c"></a>Generowanie Equals i GetHashCode — metoda zastąpień w języku C# #
 
@@ -36,7 +38,7 @@ Zastąp metodę GetHashCode w celu dopuszcza typu działać poprawnie w tablicy 
    ![Wyróżniony kod](media/overrides-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **Generowanie Equals(object)** lub **Generowanie metodę Equals i GetHashCode** z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generowanie Equals(object)** lub **Generowanie metodę Equals i GetHashCode** z okna podglądu menu podręczne.

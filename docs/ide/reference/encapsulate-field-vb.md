@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.encapsulatefield
-dev_langs: VB
-ms.workload: multiple
+f1_keywords:
+- vs.csharp.refactoring.encapsulatefield
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: 010a297745ed6028f7ee127fffc210097d6d26f5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="encapsulate-a-field-in-visual-basic"></a>Hermetyzuj pole w języku Visual Basic
 
@@ -34,7 +37,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/encapsulate-highlight-vb.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + E**.  (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz opcję **hermetyzowania pola** wpisu z menu podręcznego okna podglądu.
    * **Myszy**

@@ -11,14 +11,17 @@ ms.devlang: csharp
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.convertmethodtoproperty
-dev_langs: csharp
-ms.workload: dotnet
+f1_keywords:
+- vs.csharp.refactoring.convertmethodtoproperty
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: a23af31c5099908ed0b6fed07404216a57975f75
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method"></a>Konwertuj metody Get właściwości / przekonwertować właściwości metody Get
 
@@ -33,7 +36,7 @@ ms.lasthandoff: 01/13/2018
 1. Umieść kursor w nazwie metody Get.
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu. Jeśli masz metody Set, wybierając można przekonwertować również Set, metoda w tym momencie **metody Zastąp Get i Set, metoda z właściwością**.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu. Jeśli masz metody Set, wybierając można przekonwertować również Set, metoda w tym momencie **metody Zastąp Get i Set, metoda z właściwością**.
@@ -71,7 +74,7 @@ public int MyValue
 1. Umieść kursor w nazwie metody Get.
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.

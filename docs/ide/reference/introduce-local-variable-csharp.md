@@ -9,12 +9,13 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 6ba9478c09e55df54f94ed93c7a694f798ae76b4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="introduce-a-local-variable-in-c"></a>Wprowadź zmienną lokalną w języku C# #
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/local-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **wprowadź element lokalny dla (wszystkie wystąpienia) "*wyrażenie*"** z menu podręczne okno podglądu, gdzie *wyrażenie* kodu zostały wyróżnione.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **wprowadź element lokalny dla (wszystkie wystąpienia) "*wyrażenie*"** z menu podręcznego okna podglądu gdzie *wyrażenie* kodu zostały wyróżnione.

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/17/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.devlang: VB
@@ -12,14 +13,17 @@ ms.assetid: ebc361fe-d9b1-4c7a-ae28-5e71b5775460
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vsl.GenerateFromUsage
-dev_langs: VB
-ms.workload: multiple
+f1_keywords:
+- vsl.GenerateFromUsage
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: 4a4ff45a59fb53964a365f31cc4d5f48a5b159dc
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Generuj klasy lub typu w języku Visual Basic
 **Co:** umożliwia natychmiast generowania kodu dla klasy lub typu. 
@@ -35,7 +39,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/class-highlight-vb.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz jedną z opcji z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz jedną z opcji z menu podręcznego okna podglądu.

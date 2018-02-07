@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.extractmethod
-dev_langs: VB
-ms.workload: multiple
+f1_keywords:
+- vs.csharp.refactoring.extractmethod
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: f9e55a41f9a61626e8fce18cb11da6edc8a8bced
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="extract-a-method-in-visual-basic"></a>Wyodrębnij metodę w języku Visual Basic
 
@@ -34,7 +37,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/extractmethod-highlight-vb.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + M**.  (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
    * **Myszy**

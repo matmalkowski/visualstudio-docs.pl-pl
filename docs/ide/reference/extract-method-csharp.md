@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.extractmethod
-dev_langs: csharp
-ms.workload: dotnet
+f1_keywords:
+- vs.csharp.refactoring.extractmethod
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: 805d215eb5d885d8ab38aa288ef2c8fd3e7e90cf
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="extract-a-method-in-c"></a>Wyodrębnij metodę w języku C# #
 
@@ -34,7 +37,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/extractmethod-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + M**.  (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
    * **Myszy**

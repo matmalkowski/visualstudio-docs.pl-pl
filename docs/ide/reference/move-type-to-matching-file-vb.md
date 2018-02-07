@@ -9,12 +9,13 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 510b984ad2de9476d53e9a5a4bcd667f393d3d4b
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="move-type-to-a-matching-file-in-visual-basic"></a>Typ przenoszenia do odpowiedniego pliku w Visual Basic
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/movetype-highlight-vb.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś typu *TypeName*.vb** z menu podręcznego okna podglądu gdzie *TypeName* to nazwa wybranego typu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś typu *TypeName*.vb** z menu podręcznego okna podglądu gdzie  *Właściwość TypeName* to nazwa wybranego typu.

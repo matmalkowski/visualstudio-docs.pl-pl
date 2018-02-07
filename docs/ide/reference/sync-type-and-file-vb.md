@@ -9,13 +9,15 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: VB
-ms.workload: multiple
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: 93e1b1f446dc330b2c2c1c1e5b36e6a21e64f521
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-in-visual-basic"></a>Synchronizowanie typu na nazwę pliku lub nazwę pliku do typu w języku Visual Basic
 
@@ -35,7 +37,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/synctype-highlight-vb.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **Zmień nazwę pliku do *TypeName*.vb** z menu podręczne okno podglądu, gdzie *TypeName* to nazwa wybranego typu.
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **Zmień nazwę typu na _Filename_**  z menu podręczne okno podglądu, gdzie *Filename* jest nazwą bieżącego pliku.
    * **Myszy**

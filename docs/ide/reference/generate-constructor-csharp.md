@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f2280cfa-a9ec-4b56-9d94-c8fd384db980
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: b6e73b3b012547e98934bbcd76d1ee2eb0f3324d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Generuj Konstruktor w języku C# #
 **Co:** umożliwia natychmiast generowania kodu dla nowego konstruktora dla klasy. 
@@ -38,7 +40,7 @@ ms.lasthandoff: 01/13/2018
    ![Kursor w pustym wierszu](media/constructor1-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generuj Konstruktor...**  z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generuj Konstruktor...**  z menu podręcznego okna podglądu.
@@ -60,7 +62,7 @@ ms.lasthandoff: 01/13/2018
 1. Wyróżnij elementy członkowskie chcesz mieć w Twojej wygenerowany Konstruktor: ![Wyróżnij elementy członkowskie](media/constructor2-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generuj Konstruktor "TypeName(...)"**  z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generuj Konstruktor "TypeName(...)"**  z menu podręcznego okna podglądu.
@@ -77,7 +79,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/constructor-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generuj Konstruktor w "*TypeName*"** z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Generuj Konstruktor w "*TypeName*"** z menu podręcznego okna podglądu.
@@ -101,7 +103,7 @@ ms.lasthandoff: 01/13/2018
     ![Generuj Konstruktor wyróżnienia](media/constructor4-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **dodać parametr "TypeName(...)"**  z menu podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **dodać parametr "TypeName(...)"**  z menu podręcznego okna podglądu.
@@ -122,7 +124,7 @@ ms.lasthandoff: 01/13/2018
 1. Umieść kursor w nowo dodanym parametrze.
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **tworzenie i zainicjować właściwości "YourProperty"** lub **tworzenie i zainicjować pola "YourField"** z Podręcznego okna podglądu.
    * **Myszy**
      * Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **tworzenie i zainicjować właściwości "YourProperty"** lub **tworzenie i zainicjować pola "YourField"**z menu podręcznego okna podglądu.

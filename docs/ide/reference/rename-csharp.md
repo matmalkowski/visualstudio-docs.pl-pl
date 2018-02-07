@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.rename
-dev_langs: CSharp
-ms.workload: dotnet
+f1_keywords:
+- vs.csharp.refactoring.rename
+dev_langs:
+- CSharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: e1325de81e16b0e381f07af4d8073d0a3fa4330c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="rename-a-code-symbol-in-c"></a>Zmiana nazwy symbolu kodu w języku C# #
 
@@ -34,7 +37,7 @@ ms.lasthandoff: 01/13/2018
    ![Wyróżniony kod](media/rename-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
-   * **Klawiatury**
+   * **Keyboard**
      * Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + R**. (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
    * **Myszy**
      * Wybierz **Edytuj > Refaktoryzuj > Zmień nazwę**.
