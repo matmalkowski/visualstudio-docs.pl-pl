@@ -14,7 +14,10 @@
 ###[1. Instalowanie narzędzi](get-started-netcore-visualstudio-01.md)
 ###[2. Tworzenie aplikacji internetowej platformy ASP.NET](get-started-netcore-visualstudio-02.md)
 ###[3. Tworzenie środowiska deweloperskiego na platformie Azure](get-started-netcore-visualstudio-03.md)
-###[4. Debugowanie aplikacji](get-started-netcore-visualstudio-04.md)
+###[4. Debugowanie kontenera w usłudze Kubernetes](get-started-netcore-visualstudio-04.md)
+###[5. Wywoływanie innego kontenera](get-started-netcore-visualstudio-05.md)
+###[6. Projektowanie zespołowe](get-started-netcore-visualstudio-06.md)
+###[7. Podsumowanie](get-started-netcore-visualstudio-07.md)
 
 ##[Node.js (VS Code i CLI)](get-started-nodejs-01.md)
 ###[1. Instalowanie narzędzi](get-started-nodejs-01.md)
