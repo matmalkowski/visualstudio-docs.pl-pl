@@ -4,9 +4,9 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.codemapanalyzers
+f1_keywords:
+- vs.progression.codemapanalyzers
 helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
@@ -14,12 +14,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45d2a0a026afd0ed7fcdda965fc726543223533f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: bcbfdedaf0c60ffcd293d69cfb4da67a5e89d6fb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu
 Uruchom analizatorów na map kodu do określania kodu, który może być zbyt skomplikowane lub które mogą wymagać poprawy jakości. Na przykład można użyć tych analizatorów:  
@@ -34,7 +36,7 @@ Uruchom analizatorów na map kodu do określania kodu, który może być zbyt sk
   
 1.  Na pasku narzędzi mapy, wybierz **układu**, **analizatorów**, a następnie analizatora, które chcesz uruchomić:  
   
-    |**Analizator**|**Aby zidentyfikować węzłów który**|  
+    |**Analyzer**|**Aby zidentyfikować węzłów który**|  
     |------------------|--------------------------------|  
     |**Analizator odwołania cykliczne**|Zależności cyklicznych są od siebie wzajemnie. **Uwaga:** zależności cykliczne, które znajdują się w **ogólne** grupy nie są wyświetlane na mapie, gdy rozwiń grupę.|  
     |**Znajdź analizatora koncentratory**|Znajdują się w górnej 25% węzły połączone wysokiej<br /><br /> **Aby ukryć wszystkie węzły na mapie**<br /><br /> -Otwórz menu skrótów mapy, wybierz pozycję **zaawansowane**, **wybierz**, **Ukryj niezaznaczone**.<br />     Mapy ukrywa niezaznaczone węzłów i analizatora identyfikuje nowe węzły jako koncentratorów.|  

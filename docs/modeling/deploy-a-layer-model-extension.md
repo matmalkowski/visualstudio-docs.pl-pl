@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 060cf2551f6c79259c7094d52f35db92f9ebcfef
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Wdrażanie rozszerzenia modelu warstwy
 Innych użytkowników programu Visual Studio można zainstalować warstwę modelowania rozszerzeń, które można utworzyć za pomocą programu Visual Studio.  
@@ -42,7 +43,7 @@ Innych użytkowników programu Visual Studio można zainstalować warstwę model
 2.  Kliknij nazwę rozszerzenia, a następnie kliknij przycisk **Odinstaluj**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalowanie rozszerzenia na serwerze Team Foundation Build  
- [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]serwery nie mają zwykle zainstalowanego programu Visual Studio, a więc nie można zainstalować pliku VSIX, kliknij go dwukrotnie. Instalacja [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] zawiera niektóre składniki umożliwiające rozszerzenie VSIX uruchomić, ale należy ręcznie zainstalować rozszerzenie.  
+ [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] serwery nie mają zwykle zainstalowanego programu Visual Studio, a więc nie można zainstalować pliku VSIX, kliknij go dwukrotnie. Instalacja [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] zawiera niektóre składniki umożliwiające rozszerzenie VSIX uruchomić, ale należy ręcznie zainstalować rozszerzenie.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Aby zainstalować rozszerzenie warstwy na [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] serwera  
   
@@ -56,11 +57,11 @@ Innych użytkowników programu Visual Studio można zainstalować warstwę model
   
     -   Aby zainstalować tylko w przypadku usługi sieciowej, która uruchamia [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:  
   
-         %Windir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\\Extensions\Microsoft [wersja]  
+         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
     -   Jeśli skonfigurowano [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] do uruchamiania w trybie interakcyjnym jako określony użytkownik, można zainstalować tylko dla tego użytkownika:  
   
-         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [wersja]  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % jest zwykle *DriveName*: Użytkownicy*UserName*AppDataLocal.  

@@ -1,40 +1,31 @@
 ---
-title: Korzystanie z IntelliSense | Dokumentacja firmy Microsoft
+title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Korzystanie z IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Korzystanie z IntelliSense w Visual Studio
 
 Technologia IntelliSense jest ogólnym terminem dla wielu funkcji: elementów członkowskich listy, informacji o parametrach, szybkich informacji i uzupełniania słów. Te funkcje pozwalają dowiedzieć się więcej o kodzie, którego używasz, śledzić wpisywane parametry i dodawać wywołania do właściwości i metod za pomocą zaledwie kilku naciśnięć klawiszy.
 
@@ -86,7 +77,7 @@ Można wyłączyć szybka podpowiedź dla kodu C++ przechodząc do **narzędzia*
 
 ## <a name="complete-word"></a>Dokończ wyraz
 
-Całe słowo kończy reszty zmiennej, polecenia lub nazwę funkcji po wprowadzeniu wystarczającej liczby znaków, aby usunąć niejednoznaczność terminu. Można wywołać całe słowo, wybierając **Edytuj** > **IntelliSense** > **całe słowo**, naciskając **Ctrl**  +  **Miejsca**, lub wybierając **całe słowo** przycisk na pasku narzędzi edytora.
+Całe słowo kończy reszty zmiennej, polecenia lub nazwę funkcji po wprowadzeniu wystarczającej liczby znaków, aby usunąć niejednoznaczność terminu. Można wywołać całe słowo, wybierając **Edytuj** > **IntelliSense** > **całe słowo**, naciskając **Ctrl** + **Miejsca**, lub wybierając **całe słowo** przycisk na pasku narzędzi edytora.
 
 ## <a name="intellisense-options"></a>Opcje IntelliSense
 
@@ -110,8 +101,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Zobacz także
 
-[Akcje funkcji IntelliSense specyficzne dla języka Visual Basic](../ide/visual-basic-specific-intellisense.md)  
+[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
 [C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [Funkcja IntelliSense dla języka JavaScript](../ide/javascript-intellisense.md)  
-[Zapisywanie i refaktoryzacji kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
+[Pisanie i refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [Stosowanie komentarzy kodu XML](../ide/supplying-xml-code-comments.md)

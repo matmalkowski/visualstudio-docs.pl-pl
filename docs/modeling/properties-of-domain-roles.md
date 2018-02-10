@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a2ae5a5e017980a6f7a5310ea3c76e49253249d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 49539aea007a14eab68ad3f28d92d2e960618690
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje o rolach domeny, zobacz [opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -37,7 +38,7 @@ Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać i
 |Kategoria|Kategorii, pod którym wygenerowanej właściwości pojawia się w **właściwości** okna w Projektancie wygenerowany. Jeśli ta właściwość jest pusta, a następnie wygenerowanej właściwości jest wyświetlany w obszarze **różne** kategorii|< Brak\>|  
 |Opis|Opis, który jest używany do kod dokumentów i jest używany w Interfejsie użytkownika wygenerowanego projektanta.<br /><br /> Opis jest wyświetlany w etykietce narzędzia Intellisense dla wygenerowanej właściwości dla klasy obiektu pełniącego rolę.|`Description for`*Pełna nazwa roli*|  
 |Nazwa wyświetlana|Nazwa, która jest wyświetlana w Projektancie wygenerowany dla roli domeny.|Skorygowaną wartość właściwości Name.|  
-|Słowo kluczowe pomocy|Optional-słowo kluczowe służący do indeksu Pomocy F1 dla roli domeny.|\<Brak >|  
+|Słowo kluczowe pomocy|Optional-słowo kluczowe służący do indeksu Pomocy F1 dla roli domeny.|\<none>|  
 |Wyświetlana nazwa właściwości|Nazwa, która jest wyświetlana w Projektancie wygenerowany dla właściwości wygenerowanego roli.|Skorygowaną wartość właściwości nazwy właściwości.|  
   
 > [!NOTE]

@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio
 Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) i [Sprawdź środowisku Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym przewodniku przedstawiono sposób tworzenia aplikacji platformy Xamarin basic (pokazana poniżej) z natywnego warstwy interfejsu użytkownika. Udostępniony kod znajduje się w bibliotece klas przenośnych (PCL) natywnego interfejsu użytkownika, i projekty poszczególnych platform zawierają definicje interfejsu użytkownika.  
@@ -255,7 +256,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
-    |**stylu tekstu**|`bold`|  
+    |**textStyle**|`bold`|  
   
     > [!TIP]
     >  Należy zauważyć, że wiele właściwości nie mogą zawierać rozwijalna lista wartości, które można wybrać.  Może być trudne do odgadnięcia, jakie wartości ciągu do użycia dla dowolnego danej właściwości. Masz sugestie, spróbuj wyszukiwania dla nazwy właściwości w [R.attr](http://developer.android.com/reference/android/R.attr.html) klasy strony.  
@@ -308,7 +309,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
-    |**Szerokość**|`165dp`|  
+    |**width**|`165dp`|  
   
      Ponownie kod:  
   
@@ -332,7 +333,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     |**tekst**|**Pobierz pogody**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
-    |**Szerokość**|`165dp`|  
+    |**width**|`165dp`|  
   
     ```xml  
     <Button    android:text="Get Weather"  

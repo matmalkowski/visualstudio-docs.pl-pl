@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
-helpviewer_keywords: Domain-Specific Language, serialization
+f1_keywords:
+- vs.dsltools.dsldesigner.xmlbehavior
+helpviewer_keywords:
+- Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 Gdy użytkownik zapisuje wystąpienia, lub *modelu*, języka specyficznego dla domeny (DSL) w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pliku XML jest tworzony lub aktualizowany. Plik można załadować ponownie, aby odtworzyć modelu w magazynie.  
@@ -151,7 +154,7 @@ Gdy użytkownik zapisuje wystąpienia, lub *modelu*, języka specyficznego dla d
   
      Utwórz relację dziedziczenia z klasy domeny do innej klasy, która ma właściwość klucza krótkiej nazwy.  
   
-### <a name="avoiding-duplicate-monikers"></a>Unikanie monikerów zduplikowane  
+### <a name="avoiding-duplicate-monikers"></a>Avoiding Duplicate Monikers  
  Jeśli używasz kwalifikowaną monikerów klucza, istnieje możliwość dwa elementy w modelu użytkownika mają taką samą wartość właściwości klucza. Na przykład jeśli Twoje DSL ma klasę osoby, która ma właściwość Name, użytkownika można ustawić nazwy dwa elementy te same. Mimo że modelu może być zapisany do pliku, jego czy nie zostanie odświeżona poprawnie.  
   
  Istnieje kilka metod, które pomagają uniknąć tej sytuacji:  

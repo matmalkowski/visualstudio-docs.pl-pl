@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Praca z usługą Git
 
@@ -35,7 +35,7 @@ W tym temacie opisano tworzenie lokalnego repozytorium Git do istniejącego proj
 
   ![Dodatkowe informacje są wyświetlane po aktywowaniu Git formantu w oknie programu Visual Studio](media/working-with-git-01.png)
 
-1. **Team Explorer** również zostanie wyświetlone okno z różnymi opcjami Git, wybierając nagłówka repozytorium. **Synchronizacji** okienka, co zostało pokazane, udostępnia opcje publikowania w repozytorium zdalnym.
+1. **Team Explorer** również zostanie wyświetlone okno z różnymi opcjami Git, wybierając nagłówka repozytorium. **Synchronizacji** okienka, jak pokazano po wybraniu **Push** nagłówka, oferuje opcje publikowania w repozytorium zdalnym.
 
   ![Program Team Explorer w programie Visual Studio po utworzeniu lokalnego repozytorium](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ W tym temacie opisano tworzenie lokalnego repozytorium Git do istniejącego proj
 
   ![Program Team Explorer w programie Visual Studio przedstawiający gałęzi](media/working-with-git-04.png)
 
-1. Korzystając z lokalnego repozytorium, zatwierdzone zmiany przejdź bezpośrednio do repozytorium. Jeśli korzystasz z repozytorium zdalnym, wybierz **synchronizacji** wypychanej lokalnego zatwierdzenia.
+1. Korzystając z lokalnego repozytorium, zatwierdzone zmiany przejdź bezpośrednio do repozytorium. Jeśli masz połączenie z repozytorium zdalnym, wybierz nagłówek, wybierz **synchronizacji** Aby przełączyć się do **synchronizacji** sekcji i pracować z istnieje przedstawionych poleceń programu.
 
 ## <a name="going-deeper"></a>Przechodząc głębiej
 

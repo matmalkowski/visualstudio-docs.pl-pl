@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 Można zezwolić na element, aby być przeciągnięto innego, z przybornika lub wklejenie lub operacji przenoszenia. Może mieć przeniesione elementy połączone z elementów docelowych przy użyciu relacji, które określisz.  
@@ -37,7 +40,7 @@ Można zezwolić na element, aby być przeciągnięto innego, z przybornika lub 
   
  Odpowiedzialność EMD jest określenie, jak obiekt lub grupę obiektów powinny zostać scalone do określonej lokalizacji w modelu. W szczególności decyduje, jakie relacje należy można utworzyć wystąpienia połączyć scalonych grupy do modelu. Można również dostosować go do ustawiania właściwości i utworzyć dodatkowe obiekty.  
   
- ![DSL &#45; EMD &#95; Scal](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 Rola dyrektywy scalania Element  
   
  EMD jest generowany automatycznie podczas definiowania relacja osadzania. To ustawienie domyślne EMD tworzy wystąpienie relacji po dodaniu nowych wystąpień podrzędnych do elementu nadrzędnego. Na przykład te EMDs domyślne można zmodyfikować przez dodanie niestandardowego kodu.  
@@ -47,7 +50,7 @@ Rola dyrektywy scalania Element
 ## <a name="defining-an-element-merge-directive"></a>Definiowanie scalania Element — dyrektywa  
  Dyrektywy scalania element można dodać do klasy, relacje domeny kształtów, łączniki i diagramy. Można dodawać lub je znaleźć w Eksploratorze DSL w klasie odbierania domeny. Odbieranie klasa jest klasą domeny elementu, który jest już w modelu i na której element nowe lub skopiowane zostaną scalone.  
   
- ![DSL &#45; EMD &#95; szczegóły](../modeling/media/dsl-emd_details.png "DSL EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  **Indeksowania klasy** jest klasą domeny elementów, które można by scalić do elementów członkowskich klasy odbiorczej. Wystąpienia podklasami klasy indeksowania również zostaną scalone przez ten EMD, chyba że zostanie ustawiony **dotyczy podklasy** na wartość False.  
   

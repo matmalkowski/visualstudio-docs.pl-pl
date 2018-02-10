@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8db29f57c05f1bc9c80c3dc658c23a7c7e109edd
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 Istnieje możliwość rozszerzenia projektanta, który służy do edytowania definicji DSL. Typy rozszerzenia, które można wprowadzić obejmują dodawanie polecenia menu dodawania obsługi przeciągnąć i kliknij dwukrotnie gestów i reguł, które są wyzwalane, gdy zmiany w określonych typach wartości lub relacji. Rozszerzenia mogą umieszczone jako Visual Studio integracji rozszerzenia (VSIX) i dystrybuowany do innych użytkowników.  

@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
-helpviewer_keywords: dependency diagrams
+helpviewer_keywords:
+- dependency diagrams
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1f843817e41485b1cc487afc0827c473431f658b
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d94c4fe495083823e19ba1d6b25fe7b89050b66
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników oraz z architektury Twojego systemu.  
@@ -37,7 +38,7 @@ Visual Studio może zapewnić oprogramowania zgodne z wymaganiami użytkowników
 |------------------|---------------|  
 |**Filmy wideo**|![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Dougowi siedem: opis kodu i System projektu programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: projektowania aplikacji przy użyciu diagramu zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak seria: jak sprawdzanie poprawności kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|  
 |**Fora**|-   [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**Blogi**|-   [Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**Blogi**|-   [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Zobacz też  

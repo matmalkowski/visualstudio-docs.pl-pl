@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,16 +30,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: "12"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="link-task"></a>Połącz — Zadanie
 Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora łączy pliki obiektów wspólnej obiektu pliku formatu (COFF) i biblioteki, aby utworzyć plik wykonywalny (.exe) lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).  
@@ -75,7 +76,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Opcjonalne **ciąg** parametru.  
   
-     Listy opcji konsolidatora określone w wierszu polecenia. Na przykład **"***/option1 /option2 /option#*". Ten parametr umożliwia określenie opcji konsolidatora, które nie są reprezentowane przez inne **łącze** parametru zadania.  
+     Listy opcji konsolidatora określone w wierszu polecenia. Na przykład **"*** / opcja 1 /option2 /option#*". Ten parametr umożliwia określenie opcji konsolidatora, które nie są reprezentowane przez inne **łącze** parametru zadania.  
   
      Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).  
   
@@ -117,7 +118,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Umożliwia głębiej pliku śledzenia do przechwytywania zachowanie przyrostowe przez łącze. Zawsze zwraca `true`.  
   
--   **Właściwość BaseAddress**  
+-   **BaseAddress**  
   
      Opcjonalne **ciąg** parametru.  
   
@@ -241,13 +242,13 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-    -   **NotSet** - *\<Brak >*  
+    -   **NotSet** - *\<none>*  
   
-    -   **Sterownik** -   **/Driver**  
+    -   **Driver** - **/Driver**  
   
     -   **UpOnly** - **/DRIVER:UPONLY**  
   
-    -   **WDM** -   **/DRIVER: WDM**  
+    -   **WDM** - **/DRIVER:WDM**  
   
      Aby uzyskać więcej informacji, zobacz [/Driver (sterownik trybu jądra systemu Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
   
@@ -323,7 +324,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Aby uzyskać więcej informacji, zobacz [/order (Put funkcje w kolejności)](/cpp/build/reference/order-put-functions-in-order).  
   
--   **Aby parametr GenerateDebugInformation**  
+-   **GenerateDebugInformation**  
   
      Opcjonalne **logiczna** parametru.  
   
@@ -417,7 +418,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Aby uzyskać więcej informacji, zobacz [/KeyContainer (Określanie kontenera klucza, aby podpisać zestaw)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Zobacz też **KeyFile** parametru w tej tabeli.  
   
--   **Plik klucza**  
+-   **KeyFile**  
   
      Opcjonalne **ciąg** parametru.  
   
@@ -493,7 +494,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
     -   **Domyślna** - *\<Brak >*  
   
-    -   **UseLinkTimeCodeGeneration** - **opcję/LTCG**  
+    -   **UseLinkTimeCodeGeneration** - **/LTCG**  
   
     -   **PGInstrument** - **/LTCG:PGInstrument**  
   
@@ -685,11 +686,11 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **NotSet** - *\<Brak >*  
+    -   **NotSet** - *\<none>*  
   
-    -   **LinkVerbose** -   **/VERBOSE**  
+    -   **LinkVerbose** - **/VERBOSE**  
   
-    -   **LinkVerboseLib** - **: lib**  
+    -   **LinkVerboseLib** - **/VERBOSE:Lib**  
   
     -   **LinkVerboseICF** - **/VERBOSE:ICF**  
   
@@ -739,7 +740,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Aby uzyskać więcej informacji, zobacz [/pdbstripped (Usuń symbole prywatne)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
--   **Podsystem**  
+-   **SubSystem**  
   
      Opcjonalne **ciąg** parametru.  
   
@@ -747,13 +748,13 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **NotSet** - *\<Brak >*  
+    -   **NotSet** - *\<none>*  
   
     -   **Konsola** - **opcji**  
   
-    -   **Windows** -   **/Subsystem: Windows**  
+    -   **Windows** - **/SUBSYSTEM:WINDOWS**  
   
-    -   **Natywny** - **/SUBSYSTEM:NATIVE**  
+    -   **Native** - **/SUBSYSTEM:NATIVE**  
   
     -   **Aplikacja EFI** - **/SUBSYSTEM:EFI_APPLICATION**  
   
@@ -761,7 +762,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
     -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **Środowisko uruchomieniowe EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
@@ -817,7 +818,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **NotSet** - *\<Brak >*  
+    -   **NotSet** - *\<none>*  
   
     -   **MachineARM** - **/MACHINE:ARM**  
   
@@ -837,9 +838,9 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
     -   **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X 64**  
+    -   **MachineX64** - **/MACHINE:X64**  
   
-    -   **MachineX86** - **/MACHINE:X 86**  
+    -   **MachineX86** - **/MACHINE:X86**  
   
      Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformy docelowej)](/cpp/build/reference/machine-specify-target-platform).  
   

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language Tools, solution templates
+helpviewer_keywords:
+- Domain-Specific Language Tools, solution templates
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45bf09afe83629541d9d685c83805eb1ad5955fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0723e5d5e9e2d1d216bdeaf91f1fd2b7752e208c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 Tworzenie rozwiązań języka specyficznego dla domeny, wybierz jeden z szablonów rozwiązania, które są dostępne w Kreatorze projektanta języka specyficznego dla domeny. Wybierając szablon najlepiej odpowiadający język, w którym chcesz utworzyć, można zminimalizować zmiany, które należy do początkowej rozwiązania.  
@@ -26,7 +28,7 @@ Tworzenie rozwiązań języka specyficznego dla domeny, wybierz jeden z szablon�
 |--------------|--------------|-----------------|  
 |Diagramy klas|-Przedział kształtów<br />— Dziedziczenie klasa<br />-Relacji dziedziczenia<br />-Kształt dziedziczenia<br />— Właściwości relacji|Ten szablon rozwiązania należy użyć, jeśli języka specyficznego dla domeny zawiera jednostki i relacje, które mają właściwości. Ten szablon umożliwia tworzenie diagramów klas UML podobny języka specyficznego dla domeny. Główne jednostki są klasy i interfejsy, wraz z relacji skojarzenia, uogólnianie i implementacji. Klasy lub interfejsu jest wyświetlany jako okno, który zawiera listę atrybutów.|  
 |Diagramy składników|-Porty|Jeśli języka specyficznego dla domeny zawiera składniki, to znaczy składnikami systemu oprogramowania, należy użyć tego szablonu rozwiązania. Ten szablon tworzy podobny diagramy składników UML języka specyficznego dla domeny. Główne jednostki są składniki i portów, które są wyświetlane jako małe kształty na zewnątrz składników.|  
-|Diagramy przepływu zadań|-Obrazu i geometrii kształtów<br />-   *Ścieżek*|Użyj tego szablonu rozwiązanie, jeśli języka specyficznego dla domeny zawiera przepływy pracy, Stany lub sekwencji. Ten szablon tworzy podobny diagramy aktywności UML języka specyficznego dla domeny. Obiekt główny jest działanie i relacji głównego jest przejścia między działaniami. Szablon zawiera kilka innych elementów, takich jak stan początkowy stan końcowy i pasek synchronizacji.|  
+|Diagramy przepływu zadań|-Obrazu i geometrii kształtów<br />-   *Swimlanes*|Użyj tego szablonu rozwiązanie, jeśli języka specyficznego dla domeny zawiera przepływy pracy, Stany lub sekwencji. Ten szablon tworzy podobny diagramy aktywności UML języka specyficznego dla domeny. Obiekt główny jest działanie i relacji głównego jest przejścia między działaniami. Szablon zawiera kilka innych elementów, takich jak stan początkowy stan końcowy i pasek synchronizacji.|  
 |Minimalny języka|-Jednej klasy i kształtu<br />-Jednej relacji i łącznika|Jeśli języka specyficznego dla domeny wygląda inaczej innych szablonów, należy użyć tego szablonu rozwiązania. Ten szablon tworzy języka specyficznego dla domeny, którego dwóch klas i jednej relacji, które są przedstawiane w **przybornika** jako **pole** i **wiersza**. Klasa, jak i relacji mają przykład właściwość ciągu.|  
 |Minimalny projektanta formularza systemu Windows|-Małe modelu.<br />— Windows formularz, który wyświetla modelu.|Jeśli chcesz utworzyć aplikację, w którym DSL jest powiązany z formularza systemu Windows, a nie graficznego projektanta, należy użyć tego szablonu.<br /><br /> Formularz, który działa jako interfejs użytkownika dla języka znajduje się w folderze Dsl\UI.<br /><br /> Przed otwarciem projektanta formularza należy skompilować projekt.<br /><br /> Aby uzyskać więcej informacji, zobacz [Tworzenie języka specyficznego dla domeny Windows Forms-Based](../modeling/creating-a-windows-forms-based-domain-specific-language.md).|  
 |Projektant WPF minimalnego|-Małe modelu<br />— Windows Presentation Foundation interfejsu użytkownika, który wyświetla modelu|Jeśli chcesz utworzyć aplikację, w którym DSL jest powiązany z interfejsem użytkownika WPF, zamiast graficznego projektanta, należy użyć tego szablonu.<br /><br /> Projektant interfejsu użytkownika znajduje się w folderze Dsl\UI.<br /><br /> Przed otwarciem projektanta interfejsu użytkownika należy skompilować projekt.<br /><br /> Aby uzyskać więcej informacji, zobacz [Tworzenie języka specyficznego dla domeny WPF-Based](../modeling/creating-a-wpf-based-domain-specific-language.md).|  

@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitoring-gpu-utilization"></a>Monitorowanie wykorzystania procesora GPU
 Aby monitorować użycie procesora GPU zdalnego maszyn systemu Linux:
 

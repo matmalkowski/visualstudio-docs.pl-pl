@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus udostępnia metody do tworzenia łączy między modelami i z innych narzędzi do modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Można utworzyć zintegrowany zestaw DSLs.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus udostępnia metody do tworzenia łączy między modelami i z innych narzędzi do modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Można utworzyć zintegrowany zestaw DSLs.  
   
  ModelBus pozwala utworzyć unikatową odwołania do modelu lub konkretnego elementu w modelu. To odwołanie mogą być przechowywane poza modelu, na przykład w elemencie w innego modelu. Gdy w przypadku nowszych, narzędzie chce uzyskać dostęp do elementu, infrastruktury magistrali modelu będzie załadować odpowiedni model i zwracać element. Jeśli chcesz, można wyświetlić modelu dla użytkownika. Jeśli plik nie jest dostępny w poprzedniej lokalizacji, ModelBus poprosi użytkownika o znalezienie go. Jeśli użytkownik znajduje się plik, ModelBus naprawi wszystkie odwołania do tego pliku.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/13/2018
  Folder `ModelBusAdapters\bin\*` zawiera zestawy utworzony przez `Dsl` projektu i `ModelBusAdapters` projektu. Aby odwołać tego DSL z innego DSL, należy zaimportować tych zestawów.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Upewniając się, że można odwoływać się elementy  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Karty ModelBus umożliwia identyfikację domyślnie identyfikator guid elementu. Te identyfikatory, dlatego musi zostać utrwalony w pliku modelu.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Karty ModelBus umożliwia identyfikację domyślnie identyfikator guid elementu. Te identyfikatory, dlatego musi zostać utrwalony w pliku modelu.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Aby upewnić się, że element identyfikatory są zachowywane  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  W projekcie debugowanie w eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Dodaj pliki, które są wystąpieniami klasy każdego DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus tylko można rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Na przykład nie można utworzyć odwołanie do pliku modelu w innej części systemu plików.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus tylko można rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Na przykład nie można utworzyć odwołanie do pliku modelu w innej części systemu plików.  
   
 4.  Tworzenie niektórych elementów i łączy w wystąpieniu narażonych DSL i zapisz go.  
   

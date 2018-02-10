@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Wskazówki: konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
 
@@ -106,7 +106,7 @@ Teraz można uruchamiać analizę kodu w projekcie RuleSetSample i wyszukaj wsze
   
 2.  Kliknij w oknie Lista błędów **ostrzeżenia** , a następnie kliknij przycisk **opis** nagłówek kolumny, aby posortować ostrzeżenia alfanumerycznie.  
   
-     W przypadku aplikacji rzeczywistych czy Usuń wszelkie naruszenia reguły warto w tym momencie ustalania, lub opcjonalnie wyłączyć lub pominąć reguły, jeśli można stwierdzić, że nie warto ustalania. Aby uzyskać więcej informacji, zobacz [Pomiń ostrzeżenia przy użyciu atrybutu SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     W przypadku aplikacji rzeczywistych czy Usuń wszelkie naruszenia reguły warto w tym momencie ustalania, lub opcjonalnie wyłączyć lub pominąć reguły, jeśli można stwierdzić, że nie warto ustalania. Aby uzyskać więcej informacji, zobacz [tłumienie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
   
 3.  Zwróć uwagę, CA1704 ostrzeżenia. Te naruszeń w tej regule wskazują, że "rozważ podanie bardziej zrozumiałej nazwy parametrów." W kodzie można rozwiązać ten problem, albo można wyłączyć reguły, zgodnie z objaśnieniem w następnej procedurze.  
   

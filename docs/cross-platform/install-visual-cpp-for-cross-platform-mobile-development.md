@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: b9f87e95a2d4088bb72890ef3f9508d9c5e02abc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Zainstaluj Visual C++ for Cross Platform Mobile Development
 [Visual C++ dla wielu Platform Mobile Development](http://go.microsoft.com/fwlink/p/?LinkId=536383) jest instalowalnych składników programu Visual Studio 2015. Zawiera szablony programu Visual Studio i platform, a instaluje narzędzia wieloplatformowe i zestawy SDK, aby rozpocząć się szybko, bez konieczności zlokalizować, pobieranie i skonfigurować je samodzielnie. Te narzędzia Visual Studio umożliwia łatwe tworzenie, edytowanie, debugowania i testowania projektów i platform. W tym temacie opisano sposób instalowania narzędzi i oprogramowanie innych firm wymagane umożliwiające tworzenie wieloplatformowych aplikacji za pomocą programu Visual Studio. Omówienie składnika, zobacz [Visual C++ i Platform przenośnych](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
@@ -135,4 +137,4 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>Zobacz też  
  [Zainstaluj i skonfiguruj narzędzia do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
- [Visual C++ i Platform przenośnych](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
+ [Visual C++ Cross-Platform Mobile](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

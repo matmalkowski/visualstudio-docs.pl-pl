@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 
@@ -53,7 +55,7 @@ Istnieje również możliwość definiowania polecenia menu i innych narzędzi, 
   
 Zazwyczaj języka specyficznego dla domeny jest tworzona po zespół deweloperów do pisania kodu podobne do kilku produktów. Na przykład w firmie, która specjalizuje się w bagażu obsługi systemów zdefiniować bagażu DSL ścieżki, w którym można generują one części kodu dla każdej instalacji. Zalety DSL są, że jej zostały zrozumiane przez klientów, czy z niego wygenerować kod jest niezawodna i czy system można szybko zaktualizować zmiany wymagań dotyczących klientów.  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]Umożliwia tworzenie własnych graficznego projektanta i własne notacji diagram języka specyficznego dla domeny, a następnie użyj języka aby wygenerować kod źródłowy odpowiednie dla każdego projektu.  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Umożliwia tworzenie własnych graficznego projektanta i własne notacji diagram języka specyficznego dla domeny, a następnie użyj języka aby wygenerować kod źródłowy odpowiednie dla każdego projektu.  
   
 ## <a name="domain-specific-development"></a>Programowanie specyficznego dla domeny
 

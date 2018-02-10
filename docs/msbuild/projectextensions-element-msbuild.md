@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
 dev_langs:
 - VB
 - CSharp
@@ -17,22 +18,23 @@ helpviewer_keywords:
 - <ProjectExtensions> element [MSBuild]
 - ProjectExtensions element [MSBuild]
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 803cdbdf037ca46b95ac2aad9289a56e3cfcc69e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b0b6ab3795e312cb083dd1237d814e262fa6375e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions — Element (MSBuild)
 Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki zawiera inną niż projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacji. Cokolwiek wewnątrz elementu `ProjectExtensions` element zostanie zignorowany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
 
- \<Projekt >  
- \<ProjectExtensions >  
+ \<Project>  
+ \<ProjectExtensions>  
 
 ## <a name="syntax"></a>Składnia  
 
@@ -55,7 +57,7 @@ Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="remarks"></a>Uwagi  
  Tylko jeden `ProjectExtensions` element może być używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na wykresach zależności w Visual Studio. Rozszerzenia te można spakować do programu Visual Studio integracji rozszerzenia (VSIX) dystrybuowanej do innych użytkowników programu Visual Studio.  
@@ -87,12 +88,12 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
 |**Dokumentacja**|**Co to umożliwia**|  
 |-------------------|------------------------------------|  
-|Program Visual Studio Files\Microsoft [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Tworzenie i edytowanie warstwy|  
+|Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Tworzenie i edytowanie warstwy|  
 |Microsoft.VisualStudio.Uml.Interfaces|Tworzenie i edytowanie warstwy|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Modyfikowanie kształtów na diagramach|  
 |System.ComponentModel.Composition|Zdefiniuj składników za pomocą Managed Extensibility Framework (MEF)|  
-|Microsoft.VisualStudio.Modeling.Sdk. [wersja]|Zdefiniuj rozszerzenia modelowania|  
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [wersja]|Kształty aktualizacji i diagramów|  
+|Microsoft.VisualStudio.Modeling.Sdk.[version]|Zdefiniuj rozszerzenia modelowania|  
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Kształty aktualizacji i diagramów|  
   
 1.  Przeprowadź edycję pliku klasy w C# projektu biblioteki klas zawiera kod dla rozszerzenia. Aby uzyskać więcej informacji zobacz jedną z następujących sekcji:  
   

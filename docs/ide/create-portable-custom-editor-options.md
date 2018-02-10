@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65eafeab083b85fb7e872adabf97f5497cc62291
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 8be85bc578b31b087c77da1444ddd9950a6bc0ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Utwórz Edytor przenośny, niestandardowe ustawienia z EditorConfig
 
@@ -106,7 +106,7 @@ EditorConfig pliki są odczytywane od góry do dołu, a najbliższego pliki Edit
 
 ## <a name="editing-editorconfig-files"></a>Edytowanie plików EditorConfig
 
-Program Visual Studio udostępnia pewne IntelliSense do edycji plików .editorconfig.
+Visual Studio pomaga edytować pliki .editorconfig zapewniając liście uzupełniania IntelliSense.
 
 ![IntelliSense w pliku .editorconfig](media/editorconfig-intellisense-no-extension.png)
 

@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
 ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
-caps.latest.revision: "27"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dbb673b263cc7cf4931a07b968a763faf057fad4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest — Zadanie
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania opisano wdrożenie aplikacji, definiując unikatową tożsamość wdrożenia, identyfikujące cech wdrożenia, takich jak instalacji lub w trybie online, określając aplikacji zaktualizuj ustawienia i lokalizacje, aktualizacji i wskazujący odpowiadającego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji.  
@@ -42,7 +44,7 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 |`DeploymentUrl`|Opcjonalne `String` parametru.<br /><br /> Określa lokalizację aktualizacji dla aplikacji. Jeśli ten parametr nie jest określony, lokalizacja aktualizacji nie jest zdefiniowany dla aplikacji. Jednak jeśli `UpdateEnabled` parametr jest `true`, musi być określona lokalizacja aktualizacji. Podana wartość powinna być w pełni kwalifikowaną ścieżkę adresu URL lub ścieżką UNC.|  
 |`Description`|Opcjonalne `String` parametru.<br /><br /> Określa opcjonalny opis dla aplikacji.|  
 |`DisallowUrlActivation`|Opcjonalne `Boolean` parametru.<br /><br /> Określa, czy aplikacja mają być uruchamiane automatycznie po otwarciu przy użyciu adresu URL. Jeśli ten parametr ma `true`, aplikację można uruchomić tylko z Start menu. Wartością domyślną tego parametru jest `false`. Tych danych wejściowych ma zastosowanie tylko wtedy, gdy `Install` jest wartość parametru `true`.|  
-|`EntryPoint`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje punkt wejścia dla zestawu wygenerowanego manifestu. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania, określa tych danych wejściowych [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji.<br /><br /> W [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], [generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md) wymagane `EntryPoint` do generowania manifestu aplikacji. (Zestaw lub natywnego manifestów nie wymagają `EntryPoint`.) To wymaganie była wymuszana z powodu błędu kompilacji: "MSB3185: punkt wejścia nie jest określony dla manifest."<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]nie wydaje tego błędu podczas `EntryPoint` nie określono parametru zadania. Zamiast tego \<customHostSpecified > znacznik jest wstawiany jako element podrzędny \<Punkt_wejścia > tagu, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Można dodać zależności biblioteki DLL do manifestu aplikacji przy użyciu następujących kroków:<br /><br /> 1.  Rozpoznaj odwołania do zestawu z wywołaniem do <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Przekazać dane wyjściowe poprzedniego zadania i zestawu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Przekaż zależności za pomocą `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
+|`EntryPoint`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje punkt wejścia dla zestawu wygenerowanego manifestu. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrażania, określa tych danych wejściowych [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji.<br /><br /> W [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], [generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md) wymagane `EntryPoint` do generowania manifestu aplikacji. (Zestaw lub natywnego manifestów nie wymagają `EntryPoint`.) To wymaganie była wymuszana z powodu błędu kompilacji: "MSB3185: punkt wejścia nie jest określony dla manifest."<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie wydaje tego błędu podczas `EntryPoint` nie określono parametru zadania. Zamiast tego \<customHostSpecified > znacznik jest wstawiany jako element podrzędny \<Punkt_wejścia > tagu, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Można dodać zależności biblioteki DLL do manifestu aplikacji przy użyciu następujących kroków:<br /><br /> 1.  Rozpoznaj odwołania do zestawu z wywołaniem do <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Przekazać dane wyjściowe poprzedniego zadania i zestawu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Przekaż zależności za pomocą `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
 |`ErrorReportUrl`|Opcjonalne <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Określa adres URL strony sieci Web, która jest wyświetlana w oknach dialogowych podczas instalacji ClickOnce.|  
 |`InputManifest`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje wejściowy dokument XML służyć jako podstawa dla generatora manifestu. Dzięki temu danych strukturalnych, takich jak niestandardowe definicje manifestu, zostaną odzwierciedlone w manifeście danych wyjściowych. Element główny dokumentu XML musi być węzłem zestawu w przestrzeni nazw asmv1.|  
 |`Install`|Opcjonalne `Boolean` parametru.<br /><br /> Określa, czy aplikacja zostanie zainstalowana aplikacja lub aplikacji tylko w trybie online. Jeśli ten parametr ma `true`, aplikacja zostanie zainstalowana w menu Start użytkownika i mogą zostać usunięte przy użyciu okno dialogowe Dodaj lub usuń programy. Jeśli ten parametr ma `false`, aplikacja jest przeznaczona do używania online ze strony sieci Web. Wartością domyślną tego parametru jest `true`.|  

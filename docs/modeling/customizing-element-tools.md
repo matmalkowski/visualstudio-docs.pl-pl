@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec997cfe101c5148f901c23356592016b72d4791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0797defab29289b424855f617ed7b6825800b5c7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-tools"></a>Narzędzia dostosowywania elementów
 W niektórych definicjach DSL jednej koncepcji reprezentowały grupę elementów. Na przykład w przypadku utworzenia modelu, w którym składnik ma ustalony zbiór portów, zawsze ma portów należy utworzyć w tym samym czasie jako składnik ich nadrzędnego. W związku z tym należy dostosować narzędzie do tworzenia elementu tak, aby tworzy grupę elementów, a nie tylko jednego. Aby to osiągnąć, można dostosować, jak narzędzie do tworzenia elementu został zainicjowany.  

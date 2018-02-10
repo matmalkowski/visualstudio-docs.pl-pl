@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu programu Visual C++ kod
 
@@ -31,7 +34,7 @@ Aby wstawić fragment kodu, otwórz plik kodu C++ (.cpp lub .h), kliknij dowolne
 
 - W **edycji / IntelliSense** menu, wybierz opcję **wstawić fragment kodu**
 
-- Użyj klawiszy dostępu: **CTRL + K + X**
+- Użyj klawiszy dostępu: **Ctrl**+**K**+**X**
 
 Powinna wyświetlić się lista dostępnych opcji, począwszy od **#if**. Po wybraniu **#if**, powinien zostać wyświetlony następujący kod dodane do pliku:
 
@@ -47,11 +50,11 @@ Następnie można zastąpić 0 z warunkiem poprawne.
 
 Aby użyć fragment kodu otaczającego zaznaczony kod, wybierz wiersz (lub wiele wierszy) i wykonaj jedną z następujących czynności:
 
-1. Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz **z funkcji Otocz przez**
+- Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowego, a następnie wybierz **z funkcji Otocz przez**
 
-2. W **edycji / IntelliSense** menu, wybierz opcję **z funkcji Otocz przez**
+- Z **Edytuj** > **IntelliSense** menu, wybierz opcję **z funkcji Otocz przez**
 
-3. Użyj klawiszy dostępu: **CTRL + K + S**
+- Przy użyciu klawiatury, naciśnij klawisz: **CTRL**+**K**+**S**
 
 Wybierz **#if**. Powinny pojawić się dane podobne do poniższych:
 
@@ -174,4 +177,4 @@ Jeśli podczas próby wstawienia fragment destruktora poza klasą, zapewnia dest
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wstawki kodu](../ide/code-snippets.md)
+[Fragmenty kodu](../ide/code-snippets.md)

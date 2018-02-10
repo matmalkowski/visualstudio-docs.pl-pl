@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 W wizualizacji i modelowania zestawu SDK, można zdefiniować magazynu obsługi zdarzeń do propagujące zmiany do zasobów poza magazynu, na przykład zmienne bez magazynu, plików modeli w innych magazynach lub inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia. Programy obsługi zdarzeń magazynu są wykonywane po zakończeniu transakcji, w którym wystąpiło zdarzenie wyzwalania. Są one również wykonywane Cofnij lub ponów operację. W związku z tym w przeciwieństwie do reguł magazynu zdarzenia magazynu są najbardziej przydatny w przypadku aktualizowania wartości, które znajdują się poza Sklepem. W przeciwieństwie do zdarzenia platformy .NET magazynu obsługi zdarzeń są rejestrowane nasłuchiwanie na klasę: nie trzeba zarejestrować oddzielne obsługi dla poszczególnych wystąpień. Aby uzyskać więcej informacji o tym, jak wybrać różne sposoby obsługi zmian, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  

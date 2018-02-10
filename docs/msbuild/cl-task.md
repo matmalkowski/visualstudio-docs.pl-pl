@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,16 +21,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cl-task"></a>CL — Zadanie
 Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wykonywalne (.exe), pliki biblioteki dołączanej (dynamicznie dll) lub plików kodu modułu (modułu .netmodule). Aby uzyskać więcej informacji, zobacz [— opcje kompilatora](/cpp/build/reference/compiler-options).  
@@ -84,9 +85,9 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **AssemblyCode** - **/FA**  
   
-    -   **AssemblyAndMachineCode** -   **/FAC**  
+    -   **AssemblyAndMachineCode** - **/FAc**  
   
-    -   **AssemblyAndSourceCode** -   **/FAS**  
+    -   **AssemblyAndSourceCode** - **/FAs**  
   
     -   **Wszystkie** -   **/facs**  
   
@@ -102,11 +103,11 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Domyślna** -                          *\<Brak >*  
   
-    -   **StackFrameRuntimeCheck** - **rtcs**  
+    -   **StackFrameRuntimeCheck** - **/RTCs**  
   
-    -   **UninitializedLocalUsageCheck** - **rtcu**  
+    -   **UninitializedLocalUsageCheck** - **/RTCu**  
   
-    -   **EnableFastChecks** -                          **rtc1**  
+    -   **EnableFastChecks** -                          **/RTC1**  
   
      Aby uzyskać więcej informacji, zobacz [/RTC (błąd czasu wykonywania sprawdza)](/cpp/build/reference/rtc-run-time-error-checks).  
   
@@ -150,9 +151,9 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Cdecl** - **/Gd**  
   
-    -   **FastCall** -                          **gr**  
+    -   **FastCall** -                          **/Gr**  
   
-    -   **StdCall** -                          **GZ**  
+    -   **StdCall** -                          **/Gz**  
   
      Aby uzyskać więcej informacji, zobacz [/Gd, / GR, GV, /Gz (Konwencja wywoływania)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).  
   
@@ -166,7 +167,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Domyślna** - *\<Brak >*  
   
-    -   **CompileAsC** -   **/TC**  
+    -   **CompileAsC** - **/TC**  
   
     -   **CompileAsCpp** - **/TP**  
   
@@ -182,13 +183,13 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **FALSE** - *\<Brak >*  
   
-    -   **wartość true,** -   **/CLR**  
+    -   **true** - **/clr**  
   
-    -   **Czysty** -   **/CLR: pure**  
+    -   **Pure** - **/clr:pure**  
   
-    -   **Bezpieczne** -   **/CLR: Safe**  
+    -   **Safe** - **/clr:safe**  
   
-    -   **OldSyntax** - **: oldsyntax**  
+    -   **OldSyntax** - **/clr:oldSyntax**  
   
      Aby uzyskać więcej informacji, zobacz [/CLR (kompilacja języka wspólnego środowiska uruchomieniowego)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
@@ -208,11 +209,11 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **OldStyle** -   **/z7**  
+    -   **OldStyle** - **/Z7**  
   
-    -   **ProgramDatabase** -   **/zi**  
+    -   **ProgramDatabase** - **/Zi**  
   
-    -   **EditAndContinue** -   **/zi**  
+    -   **EditAndContinue** - **/ZI**  
   
      Aby uzyskać więcej informacji, zobacz [/z7, / zi, /ZI (Format informacji debugowania)](/cpp/build/reference/z7-zi-zi-debug-information-format).  
   
@@ -274,7 +275,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Wiersz** - **/errorReport:prompt**  
   
-    -   **Kolejka** - **/errorReport:queue**  
+    -   **Queue** - **/errorReport:queue**  
   
     -   **Wyślij** -   **/errorreport: Send**  
   
@@ -290,11 +291,11 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **FALSE** - *\<Brak >*  
   
-    -   **Asynchroniczne** -   **/eha**  
+    -   **Async** - **/EHa**  
   
-    -   **Synchronizacja** -   **/ehsc**  
+    -   **Sync** - **/EHsc**  
   
-    -   **SyncCThrow** -   **/EHS**  
+    -   **SyncCThrow** - **/EHs**  
   
      Aby uzyskać więcej informacji, zobacz [/EH (Model obsługi wyjątku)](/cpp/build/reference/eh-exception-handling-model).  
   
@@ -342,7 +343,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Ściśle** -   **/FP: strict**  
   
-    -   **Szybkie** - **Fast**  
+    -   **Fast** - **/fp:fast**  
   
      Aby uzyskać więcej informacji, zobacz [/fp (określenie zachowania Floating-Point)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
@@ -408,7 +409,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **OnlyExplicitInline** - **/Ob1**  
   
-    -   **AnySuitable** -   **/ob2**  
+    -   **AnySuitable** - **/Ob2**  
   
      Aby uzyskać więcej informacji, zobacz [/Ob (rozszerzenie funkcji wbudowanej)](/cpp/build/reference/ob-inline-function-expansion).  
   
@@ -484,11 +485,11 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Wyłączone** - **/Od**  
   
-    -   **MinSpace** -   **/O1**  
+    -   **MinSpace** - **/O1**  
   
-    -   **MaxSpeed** -   **/O2**  
+    -   **MaxSpeed** - **/O2**  
   
-    -   **Pełna** - **OX**  
+    -   **Full** - **/Ox**  
   
      Aby uzyskać więcej informacji, zobacz [/O opcje (Optymalizuj kod)](/cpp/build/reference/o-options-optimize-code).  
   
@@ -648,9 +649,9 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **Domyślna** - **/Zp1**  
+    -   **Default** - **/Zp1**  
   
-    -   **1 bajt** - **/Zp1**  
+    -   **1Byte** - **/Zp1**  
   
     -   **2Bytes** - **/Zp2**  
   
@@ -754,7 +755,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **EnableAllWarnings** -   **/ścian**  
   
-     Aby uzyskać więcej informacji, zobacz **/W**  *n*  opcji [/w, /W0, /W1, /W2, /W3, / W4, /w1, /w2, /w3, / W4, / Wall, /wd, / możemy /wo, /Wv, wx (poziom ostrzegawczy)](/cpp/build/reference/compiler-option-warning-level).  
+     Aby uzyskać więcej informacji, zobacz **/W *** n* opcji [/w, /W0, /W1, /W2, /W3, / W4, /w1, /w2, /w3, / W4, / Wall, /wd, / możemy /wo, /Wv, wx (poziom ostrzegawczy)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

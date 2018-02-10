@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: db3cf85576e6c46aca14897f7244cd0f56d8d5c2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: fd64bb3bce6b6477c0db1c7d0c5a15e518ae71ef
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 01/29/2018
 
 ### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. Testy są wyświetlane w Eksploratorze testów podczas wpisywania, bez konieczności tworzenia projektu. Co się zmieniło?
 
-  Ta funkcja jest nazywana [wykrywania testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824). Analizator Roslyn używa odnaleźć testów i wypełnić Eksploratora testów w czasie rzeczywistym, bez konieczności skompilowanie projektu. Aby uzyskać więcej informacji dotyczących zachowania odnajdywania testu dynamicznie zdefiniowanych testów takich jak teorii lub cech niestandardowych, zobacz często zadawane pytania dotyczące #1.
+  Ta funkcja jest nazywana [wykrywania testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824). Analizator platformę .NET Complier ("Roslyn") używa odnaleźć testów i wypełnić Eksploratora testów w czasie rzeczywistym, bez konieczności skompilowanie projektu. Aby uzyskać więcej informacji dotyczących zachowania odnajdywania testu dynamicznie zdefiniowanych testów takich jak teorii lub cech niestandardowych, zobacz często zadawane pytania dotyczące #1.
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. Jakich języków i struktur test służy odnajdywania testów w czasie rzeczywistym?
 
-  [Wykrywania testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) działa tylko dla języków zarządzane (C# i Visual Basic), ponieważ jest utworzony przy użyciu kompilatora Roslyn. Na razie wykrywania testów w czasie rzeczywistym działa tylko dla xUnit NUnit i MSTest struktury.
+  [Wykrywania testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) działa tylko dla języków zarządzane (C# i Visual Basic), ponieważ jest utworzony przy użyciu kompilatora .NET ("Roslyn"). Na razie wykrywania testów w czasie rzeczywistym działa tylko dla xUnit NUnit i MSTest struktury.
 
 ## <a name="features"></a>Funkcje
 

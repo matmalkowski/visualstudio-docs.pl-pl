@@ -1,27 +1,27 @@
 ---
 title: "Zarządzanie środowiska Python w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Jak używać okno środowiska Python w Visual Studio, aby zarządzać globalne i envrionments wirtualnych, konfigurowanie niestandardowych środowisk, instalowania tłumaczy Python, instalowanie pakietów, ustawianie ścieżki wyszukiwania i zarządzania środowiskami dla projektów programu Visual Studio."
+description: "Jak używać okno środowiska Python w Visual Studio, aby zarządzać globalne i środowisk wirtualnych, konfigurowanie niestandardowych środowisk, instalowania tłumaczy Python, instalowanie pakietów, ustawianie ścieżki wyszukiwania i zarządzania środowiskami dla projektów programu Visual Studio."
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Środowiska Python
 
@@ -70,13 +70,13 @@ Deweloperzy, które chcą udostępniać nowych metod wykrywania dla środowiska 
 
 Aby otworzyć okno środowiska Python, wybierz **Widok > inne okna > środowiska Python** polecenie menu, kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu w Eksploratorze rozwiązań i Wybierz **widok wszystkich środowisk języka Python**:
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Widok wszystkich środowisk polecenia w Eksploratorze rozwiązań](media/environments-view-all.png)
 
 W obu przypadkach jako element równorzędny karty do Eksploratora rozwiązań zostanie wyświetlone okno środowiska Python.
 
 ![Okno środowiska Python](media/environments-default-view.png)
 
-W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka CPython) wraz z 32-bitowe i 64-bitowych wersji IronPython 2.7. Domyślne środowisko pogrubioną czcionką jest języka Python 3.4, który jest używany dla wszystkich nowych projektów. Jeśli nie widać żadnych środowisk na liście, oznacza to, zostały zainstalowane narzędzia Python Tools for Visual Studio w programie Visual Studio 2015 lub starszym, ale nie zostały zainstalowane interpreter języka Python (zobacz [Zaznaczanie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) powyżej). **+ Niestandardowy...**  polecenie pozwala [utworzyć środowisko dla istniejących interpreter](#create-an-environment-for-an-existing-interpreter).
+W powyższym przykładzie zainstalowania języka Python 3.4 (32-bitowe języka CPython) wraz z 32-bitowe i 64-bitowych wersji IronPython 2.7. Domyślne środowisko pogrubioną czcionką jest języka Python 3.4, który jest używany dla wszystkich nowych projektów. Jeśli nie widać żadnych środowisk na liście, oznacza to, zostały zainstalowane narzędzia Python Tools for Visual Studio w programie Visual Studio 2015 lub starszym, ale nie zostały zainstalowane interpreter języka Python (zobacz [Zaznaczanie i instalowanie tłumaczy Python](#selecting-and-installing-python-interpreters) powyżej). **+ Niestandardowy...**  polecenie pozwala [utworzyć środowisko dla istniejących interpreter](#creating-an-environment-for-an-existing-interpreter).
 
 Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. Inny formant może pojawić się odświeża IntelliSense bazy danych dla tego środowiska.
 

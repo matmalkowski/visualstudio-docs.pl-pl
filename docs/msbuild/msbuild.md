@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: "59"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również nazywany MSBuild, udostępnia schematu XML dla pliku projektu, która kontroluje sposób platformy kompilacji przetwarza i tworzy oprogramowania. Visual Studio będzie korzystać program MSBuild, ale nie jest zależny od programu Visual Studio. Wywołując msbuild.exe w pliku projektu lub rozwiązania, możesz organizować i kompilacji produktów w środowiskach, w którym nie jest zainstalowany program Visual Studio.  
@@ -87,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 >  Przed pobraniem projektu określają wiarygodności kodu.  
   
 ##  <a name="BKMK_ProjectFile"></a>Plik projektu  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]wykorzystuje format pliku projektu opartego na formacie XML, który jest bardzo proste i rozszerzalny. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Format pliku projektu umożliwia deweloperom opisano elementy, które mają zostać skompilowane, a także, jak są ma zostać utworzony dla różnych systemów operacyjnych i konfiguracji. Ponadto format pliku projektu umożliwia deweloperom autora wielokrotnego użytku kompilacji reguł, które mogą być brana pod uwagę w oddzielnych plików tak, aby kompilacje mogą być wykonywane stale w wielu różnych projektów w produkcie.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykorzystuje format pliku projektu opartego na formacie XML, który jest bardzo proste i rozszerzalny. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Format pliku projektu umożliwia deweloperom opisano elementy, które mają zostać skompilowane, a także, jak są ma zostać utworzony dla różnych systemów operacyjnych i konfiguracji. Ponadto format pliku projektu umożliwia deweloperom autora wielokrotnego użytku kompilacji reguł, które mogą być brana pod uwagę w oddzielnych plików tak, aby kompilacje mogą być wykonywane stale w wielu różnych projektów w produkcie.  
   
  W poniższych sekcjach opisano niektóre podstawowe elementy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] format pliku projektu. Samouczek dotyczący sposobu tworzenia pliku podstawowego projektu, zobacz [wskazówki: Tworzenie pliku projektu MSBuild od początku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
@@ -140,7 +141,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Logiki wykonywania zadania jest zapisywane w kodzie zarządzanym i mapować do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] za pomocą [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu. Można pisać własne zadania przy tworzenia zarządzanego typu, który implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji na temat tworzenia zadania, zobacz [wpisywanie zadania](../msbuild/task-writing.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]zawiera typowe zadania, które można dostosować do własnych wymagań.  Przykłady [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [makedir —](../msbuild/makedir-task.md), co powoduje katalogów, i [Csc](../msbuild/csc-task.md), który kompiluje pliki kodu źródłowego języka Visual C#. Aby uzyskać listę dostępnych zadań wraz z informacjami użycia, zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera typowe zadania, które można dostosować do własnych wymagań.  Przykłady [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [makedir —](../msbuild/makedir-task.md), co powoduje katalogów, i [Csc](../msbuild/csc-task.md), który kompiluje pliki kodu źródłowego języka Visual C#. Aby uzyskać listę dostępnych zadań wraz z informacjami użycia, zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
   
  Zadania są wykonywane w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu, tworząc element, który ma nazwę zadania jako element podrzędny [docelowej](../msbuild/target-element-msbuild.md) elementu. Zadania zazwyczaj zaakceptować parametrów, które są przekazywane jako atrybuty elementu. Zarówno [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości i elementów, które mogą być używane jako parametry. Na przykład poniższy kod wywołania [makedir —](../msbuild/makedir-task.md) zadań i przekazuje jego wartość `BuildDir` właściwość, która została zadeklarowana w poprzedniego przykładu.  
   
@@ -169,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Może rejestrować błędy kompilacji, ostrzeżenia i komunikaty do konsoli lub innego urządzenia wyjściowego. Aby uzyskać więcej informacji, zobacz [uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [rejestrowania w programie MSBuild](../msbuild/logging-in-msbuild.md).  
   
 ##  <a name="BKMK_VisualStudio"></a>Przy użyciu programu MSBuild w programie Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]używa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] format pliku projektu do przechowywania informacji o kompilacji o zarządzanych projektów. Projekt ustawień, które zostały dodane lub zmienione za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu są uwzględniane w. * proj pliku, który jest generowany dla każdego projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]używa hostowanej wystąpienia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do tworzenia projektów zarządzanych. Oznacza to, że zarządzanego projektu mogą być wbudowane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub w wierszu polecenia (nawet jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany), a wyniki musi być taka sama.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] format pliku projektu do przechowywania informacji o kompilacji o zarządzanych projektów. Projekt ustawień, które zostały dodane lub zmienione za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu są uwzględniane w. * proj pliku, który jest generowany dla każdego projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]używa hostowanej wystąpienia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do tworzenia projektów zarządzanych. Oznacza to, że zarządzanego projektu mogą być wbudowane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub w wierszu polecenia (nawet jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany), a wyniki musi być taka sama.  
   
  Samouczek dotyczący sposobu używania programu MSBuild w programie Visual Studio, zobacz [wskazówki: przy użyciu programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   

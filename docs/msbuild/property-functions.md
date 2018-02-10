@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 02/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, property functions
+helpviewer_keywords:
+- MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-caps.latest.revision: "33"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta do oceny skrypty programu MSBuild. Funkcje właściwości można tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań funkcje właściwości można używać poza elementów docelowych i są oceniane przed uruchomieniem żadnych docelowych.  
@@ -70,7 +72,7 @@ W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta
 
 -   System.Double  
 
--   Element System.Enum  
+-   System.Enum  
 
 -   System.Guid  
 
@@ -102,9 +104,9 @@ W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta
 
 -   System.StringComparer  
 
--   Obiekt System.TimeSpan  
+-   System.TimeSpan  
 
--   Obiektu System.Text.RegularExpressions.Regex  
+-   System.Text.RegularExpressions.Regex  
 
 -   Microsoft.Build.Utilities.ToolLocationHelper  
 
@@ -185,7 +187,7 @@ W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta
 |int BitwiseXor (int, int pierwszy, sekundy)|Wykonaj bitowej `XOR` pierwszego i drugiego (pierwszy ^ drugi).|  
 |int BitwiseNot(int first)|Wykonaj bitowej `NOT` (~ pierwszy).|  
 |wartość logiczna IsOsPlatform (ciąg platformString)|Określ, czy bieżąca Platforma systemu operacyjnego jest `platformString`. `platformString`musi być członkiem <xref:System.Runtime.InteropServices.OSPlatform>.|
-|wartość logiczna IsOSUnixLike|Wartość true, jeśli bieżący system operacyjny jest systemu Unix.|
+|bool IsOSUnixLike|Wartość true, jeśli bieżący system operacyjny jest systemu Unix.|
 |ciąg NormalizePath (ścieżka params ciąg [])|Pobiera pełną ścieżkę postaci kanonicznej podana ścieżka i gwarantuje, że zawiera on znaków separatora katalogu prawidłowe w bieżącym systemie operacyjnym.|
 |ciąg NormalizeDirectory (ścieżka params ciąg [])|Pobiera postaci kanonicznej pełną ścieżkę udostępnionego katalogu i zapewnia zawiera znak separatora właściwą dla bieżącego systemu operacyjnego, przy jednoczesnym zapewnieniu jej posiada na końcu ukośnik.|
 |ciąg EnsureTrailingSlash(string path)|Jeśli w podanej ścieżce nie ma ukośników, dodać go. Jeśli ścieżka jest pustym ciągiem, nie zostanie zmodyfikowana.|

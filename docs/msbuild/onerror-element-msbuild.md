@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#OnError
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#OnError
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +18,22 @@ helpviewer_keywords:
 - OnError Element [MSBuild]
 - <OnError Element [MSBuild]
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
-caps.latest.revision: "14"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c21160247a617c1f74333ef567a6857bbc902cdd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ed8d48fe390f5a5990506a6b7eeab3d1efe8b5ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="onerror-element-msbuild"></a>OnError — Element (MSBuild)
 Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` atrybutu `false` zadania nie powiodło się.  
 
- \<Projekt >  
+ \<Project>  
  \<Docelowy >  
  \<OnError — >  
 
@@ -62,7 +64,7 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
 |[Docelowy](../msbuild/target-element-msbuild.md)|Element kontenera dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania.|  
 
 ## <a name="remarks"></a>Uwagi  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]wykonuje `OnError` elementu, jeśli jeden z `Target` elementu zadań kończy się niepowodzeniem z `ContinueOnError` ustawić atrybutu `ErrorAndStop` (lub `false`). Jeśli zadanie nie powiedzie się, cele określone w `ExecuteTargets` atrybutu jest wykonywana. Jeśli istnieje więcej niż jeden `OnError` elementu w miejscu docelowym `OnError` elementy są wykonywane sekwencyjnie, gdy zadanie nie powiodło się.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykonuje `OnError` elementu, jeśli jeden z `Target` elementu zadań kończy się niepowodzeniem z `ContinueOnError` ustawić atrybutu `ErrorAndStop` (lub `false`). Jeśli zadanie nie powiedzie się, cele określone w `ExecuteTargets` atrybutu jest wykonywana. Jeśli istnieje więcej niż jeden `OnError` elementu w miejscu docelowym `OnError` elementy są wykonywane sekwencyjnie, gdy zadanie nie powiodło się.  
 
  Aby uzyskać informacje o `ContinueOnError` atrybutów, zobacz [Task — Element (MSBuild)](../msbuild/task-element-msbuild.md). Informacje dla celów, zobacz [cele](../msbuild/msbuild-targets.md).  
 

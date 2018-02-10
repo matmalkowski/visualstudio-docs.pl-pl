@@ -1,3 +1,5 @@
+---
+---
 # <a name="view-recent-job-performance-and-details"></a>Wyświetl ostatnie zadanie wydajność i szczegóły
 Złożone zadania można wyświetlić listę zadań, aby wyświetlić ich stan, czas trwania i inne.
 

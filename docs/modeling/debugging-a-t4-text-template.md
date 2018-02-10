@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 Można ustawić punktów przerwania w szablonach tekstowych. Debugowanie szablonu tekstowego czasu projektowania, Zapisz plik tekstowy szablonu, a następnie wybierz **debugowania szablon T4** menu skrótów w pliku w Eksploratorze rozwiązań. Debugowanie szablonu tekstowego środowiska wykonawczego, po prostu debugowania aplikacji, do którego on należy.  
@@ -46,7 +47,7 @@ Można ustawić punktów przerwania w szablonach tekstowych. Debugowanie szablon
 |Ścieżka "{0}" musi być lokalną na tym komputerze lub częścią zaufanej strefy.|Występuje, gdy dyrektywy lub dyrektywa zestawu odwołuje się do pliku, który jest nie na komputerze lokalnym lub w sieci zaufanej strefy.|Upewnij się że katalogu, w którym dyrektywy lub dyrektywy zestawu znajdują się w strefie zaufanych. Można dodać katalogu sieciowego do zaufanej strefy za pomocą programu Internet Explorer.|  
 |Wiele błędów składni, takich jak "Nieprawidłowy token" catch"" lub "przestrzeni nazw nie może bezpośrednio zawierać elementów członkowskich"|Zbyt wiele nawiasów klamrowych zamknięcia w kodzie szablonu. Kompilator jest skomplikowana go z standardowe generowania kodu.|Sprawdź numer zamykające nawiasy i nawiasy wewnątrz ograniczników kodu.|  
 |Pętle lub warunków nie kompilacji lub wykonania poprawnie. Na przykład: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Ten kod zawsze wyświetla wartość i. Tylko "Liczba to:" jest warunkowego.|W języku C# należy zawsze używać nawiasów klamrowych otaczającego bloki tekstu, które są osadzone w instrukcji sterowania.|Dodaj nawiasy klamrowe: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"Wyrażenie jest zbyt złożone" podczas przetwarzania szablonu czasu projektowania lub skompilowanie szablonu środowiska uruchomieniowego (wstępnie przetworzonych).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]przestaje działać podczas próby sprawdź kod wygenerowany przez szablon środowiska wykonawczego.|Blok tekstu jest zbyt długa. T4 konwertuje tekst bloki wyrażenie łączenia ciągu z jednego ciągu literału dla każdego wiersza szablonu. Bloki bardzo długi tekst można overstep limity rozmiaru kompilatora.|Podzielić bloku długi tekst blok wyrażenia, takich jak:<br /><br /> `<#= "" #>`|  
+|"Wyrażenie jest zbyt złożone" podczas przetwarzania szablonu czasu projektowania lub skompilowanie szablonu środowiska uruchomieniowego (wstępnie przetworzonych).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przestaje działać podczas próby sprawdź kod wygenerowany przez szablon środowiska wykonawczego.|Blok tekstu jest zbyt długa. T4 konwertuje tekst bloki wyrażenie łączenia ciągu z jednego ciągu literału dla każdego wiersza szablonu. Bloki bardzo długi tekst można overstep limity rozmiaru kompilatora.|Podzielić bloku długi tekst blok wyrażenia, takich jak:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Ostrzeżenie opisy i poprawki  
  W poniższej tabeli wymieniono najczęściej ostrzeżenia wraz z poprawki, jeśli jest dostępna.  

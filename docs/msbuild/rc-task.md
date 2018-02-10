@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: "10"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5398f3eb1aa140ed53d6734734528d5c89a104c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="rc-task"></a>RC — Zadanie
 Opakowuje narzędzia kompilatora zasobów systemu Windows firmy Microsoft rc.exe. **RC** zadań kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionek, do pliku zasobów (.res). Aby uzyskać więcej informacji, zobacz "Kompilator zasobów" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
@@ -42,7 +43,7 @@ Opakowuje narzędzia kompilatora zasobów systemu Windows firmy Microsoft rc.exe
 |Parametr|Opis|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Opcjonalne **String []** parametru.<br /><br /> Dodaje katalog do listy katalogów, które są wyszukiwane pliki nagłówkowe.<br /><br /> Aby uzyskać więcej informacji, zobacz **/I** opcji [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  
-|**AdditionalOptions**|Opcjonalne **ciąg** parametru.<br /><br /> Lista przykład wiersza polecenia optionsor **"***/option1 /option2 /option#*". Ten parametr umożliwia określenie opcji wiersza polecenia, które nie są reprezentowane przez inne **RC** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  
+|**AdditionalOptions**|Opcjonalne **ciąg** parametru.<br /><br /> Lista przykład wiersza polecenia optionsor **"*** / opcja 1 /option2 /option#*". Ten parametr umożliwia określenie opcji wiersza polecenia, które nie są reprezentowane przez inne **RC** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  
 |**Kultury**|Opcjonalne **ciąg** parametru.<br /><br /> Określa identyfikator ustawień regionalnych, który reprezentuje kulturę używaną w zasobach.<br /><br /> Aby uzyskać więcej informacji, zobacz **/l** opcji [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  
 |**IgnoreStandardIncludePath**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, zabezpiecza kompilator zasobów sprawdzanie zmiennej środowiskowej INCLUDE podczas wyszukiwania plików nagłówka lub zasobu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/x** opcji [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  
 |**NullTerminateStrings**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, wszystkie ciągi w tabeli ciągów kończy wartości null.<br /><br /> Aby uzyskać więcej informacji, zobacz  **/n**  opcji [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  

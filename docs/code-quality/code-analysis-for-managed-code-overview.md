@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Analiza kodu dla kodu zarządzanego ― omówienie
 
@@ -39,11 +41,11 @@ Aby ręczne przeprowadzanie analizy kodu w projekcie, na pasku menu wybierz **An
 
 Reguły analizy kodu dla zarządzanego kodu są podzielone na *zestawów reguł*. Można użyć jednego z zestawów reguł standard Microsoft lub można utworzyć niestandardowego zestawu reguł do spełnienia konkretna potrzeba użycia. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
 
-## <a name="in-source-suppression"></a>W pomijanie źródła
+## <a name="suppress-warnings"></a>Pomijanie ostrzeżeń
 
 Często jest przydatne do wskazywania ostrzeżenie nie dotyczy. Informuje deweloperów oraz inne osoby, które może przejrzeć kod później, że ostrzeżenie został zbadana i następnie pominięte lub ignorowane.
 
-W źródle pomijanie ostrzeżeń jest implementowane za pośrednictwem atrybutów niestandardowych. Aby wyłączyć ostrzeżenia, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w poniższym przykładzie:
+Pomijanie w źródła ostrzeżeń jest implementowane za pośrednictwem atrybutów niestandardowych. Aby wyłączyć ostrzeżenia, Dodaj atrybut `SuppressMessage` do kodu źródłowego, jak pokazano w poniższym przykładzie:
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-Aby uzyskać więcej informacji, zobacz [Pomiń ostrzeżenia przy użyciu atrybutu SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+Aby uzyskać więcej informacji, zobacz [tłumienie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
+
+> [!NOTE]
+> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany utrudnione numerem ostrzeżenia analizy kodu. Jeśli nie jest gotowa na rozwiązanie ostrzeżeń, aby tymczasowo wyłączyć analizy kodu, otwieranie stron właściwości projektu (**projektu** > ***projektu* właściwości...** ) i przejdź do **analizy kodu** kartę. Anuluj wybór **Włącz analizę kodu podczas kompilacji**, a następnie ponownie skompiluj projekt. Alternatywnie można wybrać różne, mniejszym zestawu reguł jest w celu uruchomienia kodu. Pamiętaj, aby włączyć analizę kodu na powrót po osiągnięciu gotowości do napraw ostrzeżenia.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchom jako część zasad ewidencjonowania analizy kodu
 

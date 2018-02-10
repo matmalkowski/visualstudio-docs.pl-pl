@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.workload: multiple
-ms.openlocfilehash: b267c0f801ddb4faf7fbca561c893e7296bb0a8e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
-ms.translationtype: HT
+helpviewer_keywords:
+- dependency diagrams, adding custom validation
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów zależności
 W programie Visual Studio użytkowników można zweryfikować kodu źródłowego w projekcie modelu warstwy, dzięki czemu można zweryfikować, że kod źródłowy odpowiada zależności na diagramie zależności. Brak algorytmu weryfikacji standardowych, ale można zdefiniować rozszerzeń sprawdzania poprawności.  
@@ -80,7 +80,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
     2.  W **Dodaj nowy element zawartości** okno dialogowe, zestaw:  
   
-         **Typ** = **Microsoft.VisualStudio.MefComponent**  
+         **Type** = **Microsoft.VisualStudio.MefComponent**  
   
          **Źródło** = **projekt w bieżącym rozwiązaniu**  
   
@@ -92,7 +92,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
     2.  W **Dodaj nowy element zawartości** okno dialogowe, zestaw:  
   
-         **Typ** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Nie jest jedną z opcji na liście rozwijanej. Należy wprowadzić go z klawiatury.  
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Nie jest jedną z opcji na liście rozwijanej. Należy wprowadzić go z klawiatury.  
   
          **Źródło** = **projekt w bieżącym rozwiązaniu**  
   
@@ -107,7 +107,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Odczytywanie modelu warstwy|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Odczytywanie i aktualizowanie kształtów i diagramów.|  
     |System.ComponentModel.Composition|Zdefiniuj składnika weryfikacji przy użyciu Managed Extensibility Framework (MEF)|  
-    |Microsoft.VisualStudio.Modeling.Sdk. [wersja]|Zdefiniuj rozszerzenia modelowania|  
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Zdefiniuj rozszerzenia modelowania|  
   
 6.  Skopiuj przykładowy kod na końcu tego tematu do pliku klasy w projekcie biblioteki modułu sprawdzania poprawności zawiera kod z weryfikacji. Aby uzyskać więcej informacji, zobacz [programowania weryfikacji](#programming).  
   

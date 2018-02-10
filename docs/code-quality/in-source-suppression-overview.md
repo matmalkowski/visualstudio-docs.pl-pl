@@ -1,5 +1,5 @@
 ---
-title: "Pomijanie ostrzeżeń analizy kodu w programie Visual Studio przy użyciu atrybutu SuppressMessage | Dokumentacja firmy Microsoft"
+title: "Pomijanie ostrzeżeń analizy kodu w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
 
@@ -34,6 +34,9 @@ W języku C + +/ CLI, użyj makra urzędu certyfikacji\_POMIŃ\_wiadomości lub 
 
 > [!NOTE]
 > Nie należy używać pominięć w źródła w kompilacjach wydania, aby uniknąć przypadkowego wysyłania metadanych pomijanie w źródła. Ponadto z powodu przetwarzania pomijania-source, może być niższa wydajność aplikacji.
+
+> [!NOTE]
+> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany utrudnione numerem ostrzeżenia analizy kodu. Jeśli nie jest gotowa na rozwiązanie ostrzeżeń, aby tymczasowo wyłączyć analizy kodu, otwieranie stron właściwości projektu (**projektu** > ***projektu* właściwości...** ) i przejdź do **analizy kodu** kartę. Anuluj wybór **Włącz analizę kodu podczas kompilacji**, a następnie ponownie skompiluj projekt. Alternatywnie można wybrać różne, mniejszym zestawu reguł jest w celu uruchomienia kodu. Pamiętaj, aby włączyć analizę kodu na powrót po osiągnięciu gotowości do napraw ostrzeżenia.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage — atrybut
 
@@ -95,7 +98,7 @@ Ze względu na łatwość pominięcie Nazwa reguły nie jest zalecane.
 
 Atrybuty do pomijania można zastosować do metody, ale nie może być osadzony w treści metody. Oznacza to, że wszystkie naruszenia określonej reguły są pomijane, jeśli dodasz <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut do metody.
 
-W niektórych przypadkach można pominąć konkretnego wystąpienia naruszenia, na przykład, dzięki czemu kod przyszłości nie jest automatycznie wykluczony z reguł analizy kodu. Niektórych reguł analizy kodu można to zrobić przy użyciu `MessageId` właściwość <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybutu. Ogólnie rzecz biorąc, starsze reguły naruszeń w zakresie określonego symbolu (zmienną lokalną ani parametrem) `MessageId` właściwości. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) jest przykładem takich reguły. Jednak nie przestrzega starsze reguły za naruszenia na kod wykonywalny (z systemem innym niż symbol) `MessageId` właściwości. Ponadto nie przestrzega analizatorów Roslyn `MessageId` właściwości.
+W niektórych przypadkach można pominąć konkretnego wystąpienia naruszenia, na przykład, dzięki czemu kod przyszłości nie jest automatycznie wykluczony z reguł analizy kodu. Niektórych reguł analizy kodu można to zrobić przy użyciu `MessageId` właściwość <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybutu. Ogólnie rzecz biorąc, starsze reguły naruszeń w zakresie określonego symbolu (zmienną lokalną ani parametrem) `MessageId` właściwości. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) jest przykładem takich reguły. Jednak nie przestrzega starsze reguły za naruszenia na kod wykonywalny (z systemem innym niż symbol) `MessageId` właściwości. Ponadto analizatorów platformy kompilatora .NET ("Roslyn") nie przestrzega `MessageId` właściwości.
 
 Aby pominąć to naruszenie określonego symbolu regułę, określ nazwę symbolu `MessageId` właściwość <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybutu. W poniższym przykładzie pokazano kod z dwóch naruszeń [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;jeden dla `name` zmienną i jeden dla `age` zmiennej. Naruszenie dla `age` symbol jest pomijane.
 

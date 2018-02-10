@@ -4,22 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
 - vs.dsltools.dsldesigner.selectcursordialog
-helpviewer_keywords: Domain-Specific Language, toolbox
+helpviewer_keywords:
+- Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7ce422f22a2420e3972477bfe9513b88a5861f1
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 Zdefiniuj elementy przybornika dla elementów, które chcesz zezwolić użytkownikom na wprowadzanie do ich modeli. Istnieją dwa rodzaje narzędzia: element narzędzia i połączenia. W Projektancie wygenerowanego użytkownika można wybrać elementu narzędzia przeciągnij kształtów na diagramie, a narzędzie połączenia, aby narysować łącza między kształtami można wybrać. Ogólnie rzecz biorąc narzędzia elementu zezwala użytkownikom na dodawanie wystąpienia klas domeny do ich modeli i narzędzia połączeń daj dodać wystąpienia relacji domeny.  

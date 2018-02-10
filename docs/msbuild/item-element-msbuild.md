@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +16,23 @@ helpviewer_keywords:
 - Item Element [MSBuild]
 - <Item> Element [MSBuild]
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e4feedb6f32b1d1fb03ef51468eb50ef1a0aa7a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="item-element-msbuild"></a>Item — Element (MSBuild)
 Zawiera element zdefiniowane przez użytkownika i jego metadanych. Każdy element, który jest używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `ItemGroup` elementu.  
 
- \<Projekt >  
- \<ItemGroup >  
+ \<Project>  
+ \<ItemGroup>  
  \<Element >  
 
 ## <a name="syntax"></a>Składnia  
@@ -87,7 +88,7 @@ Teraz, jednak można przekazać `Version` metadanych jako atrybut, taki jak nast
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Itemmetadata —](../msbuild/itemmetadata-element-msbuild.md)|Zdefiniowane przez użytkownika elementu metadanych klucz, który zawiera wartość metadanych elementu. Może wynosić zero lub więcej `ItemMetadata` elementy w elemencie.|  
+|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Zdefiniowane przez użytkownika elementu metadanych klucz, który zawiera wartość metadanych elementu. Może wynosić zero lub więcej `ItemMetadata` elementy w elemencie.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 

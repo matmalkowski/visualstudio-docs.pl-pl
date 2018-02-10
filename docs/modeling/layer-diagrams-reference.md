@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
@@ -22,12 +21,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d11e02e9218d86e0e971c685ab496a2b85b2be21
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5185b391d0374754675999bff02438efd8de83e4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 W programie Visual Studio, można użyć *diagram zależności* do wizualizacji Architektura wysokiego poziomu, logicznych systemu. Diagram zależności organizuje artefakty fizycznych w systemie w grupy logiczne, abstrakcyjny *warstwy*. Te warstwy opisano najważniejsze zadania wykonujące artefakty lub głównych składników systemu. Każda warstwa może również zawierać zagnieżdżone warstwy, które opisano bardziej szczegółowe zadania.  
@@ -90,7 +91,7 @@ W programie Visual Studio, można użyć *diagram zależności* do wizualizacji 
     |**Kategorie**|Rodzaj artefaktu, takich jak klasy, przestrzeń nazw, plik źródłowy i tak dalej|  
     |**Warstwy**|Warstwa, który stanowi łącze do artefaktu|  
     |**Obsługuje sprawdzanie poprawności**|Jeśli **True**, a następnie warstwy procesu weryfikacji można sprawdzić, czy projekt jest zgodny zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczą w procesie weryfikacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md).|  
-    |**Identyfikator**|Odwołanie do połączonego artefaktu|  
+    |**Identifier**|Odwołanie do połączonego artefaktu|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)

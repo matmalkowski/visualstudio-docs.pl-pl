@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: d015b927f8ba0fa62244a6cd09ff19efcb46451d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Zainstaluj i skonfiguruj narzędzia do kompilacji przy użyciu systemu iOS
 Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowania i wdrażania kodu dla systemu iOS w narzędziu iOS Simulator lub urządzenia z systemem iOS, ale z powodu ograniczeń licencji kod musi być skompilowany i zdalnie uruchamiać na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, musisz instalowania i konfigurowania zdalnego agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), opartym na systemie Dojścia zdalnego agenta kompilacji żądań w programie Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączone do komputera Mac lub w narzędziu iOS Simulator na komputerach Mac.  
@@ -42,7 +44,7 @@ Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowa
   
  [Konfigurowanie agenta zdalnego dla komputerów Mac](#ConfigureMac)  
   
-##  <a name="Prerequisites"></a>Wymagania wstępne  
+##  <a name="Prerequisites"></a> Wymagania wstępne  
  Aby zainstalować i korzystać z agenta zdalnego tworzenie kodu dla systemu iOS, najpierw musi mieć następujące wymagania wstępne:  
   
 -   Komputer Mac z systemem OS X Mavericks lub nowszy  

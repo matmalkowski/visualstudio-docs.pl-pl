@@ -1,3 +1,5 @@
+---
+---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Przeglądaj magazynu, aby przekazać dane lub pobrać modele i dzienniki
 
 Możesz przeglądać wszystkie magazynu na maszynie zdalnej lub udział plików Azure, aby umożliwić przekazywanie danych lub pobieranie modeli i dzienniki. Lub jeśli chcesz uzyskać dostęp do dzienników i zadania danych wyjściowych dla danego zadania, możesz to zrobić także w przeglądarce zadania

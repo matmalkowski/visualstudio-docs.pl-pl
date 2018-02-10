@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language Tools, supported Visual Studio editions
+helpviewer_keywords:
+- Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b76309249310afd5bd88c8d8553792512e208220
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 359bb9864532f2f3fbeb4fecca28c54ea0a96e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization &amp; Modeling SDK
 Poniżej przedstawiono listę wersje programu Visual Studio, które są obsługiwane z [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] środowisk do tworzenia i wdrażania. Aby uzyskać więcej informacji na te wersje, zobacz Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Centrum deweloperów](http://go.microsoft.com/fwlink/?LinkId=75628).  
@@ -32,7 +34,7 @@ Poniżej przedstawiono listę wersje programu Visual Studio, które są obsługi
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
 ## <a name="deployment-editions"></a>Wersje wdrożenia  
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]Wdrażanie języki specyficznego dla domeny, które tworzysz obsługuje następujące konfiguracje:  
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Wdrażanie języki specyficznego dla domeny, które tworzysz obsługuje następujące konfiguracje:  
   
 -   Visual Studio Enterprise  
   

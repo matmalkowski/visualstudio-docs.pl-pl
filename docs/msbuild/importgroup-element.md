@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +16,23 @@ helpviewer_keywords:
 - <ImportGroup> element [MSBuild]
 - ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
-caps.latest.revision: "4"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df9aebf8e604ad16b99ac458bdd9d143bd461ff7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 567df29941439a760d1537906a3d22d22db9f7e9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="importgroup-element"></a>Importgroup — Element
 Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  
 
- \<Projekt >  
- \<Importgroup — >  
+ \<Project>  
+ \<ImportGroup>  
 
 ## <a name="syntax"></a>Składnia  
 
@@ -61,7 +62,7 @@ Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warune
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="remarks"></a>Uwagi  
 

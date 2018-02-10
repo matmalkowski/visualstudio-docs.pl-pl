@@ -9,20 +9,19 @@ ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-ms.devlang: python
+dev_langs:
+- python
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-dev_langs:
-- python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a28c124ae560edca6451ed70d13c28b4138772d1
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 
@@ -32,7 +31,7 @@ To 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko 
 
 1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **Plik > Nowy > Projekt...** .
+1. Na pasku menu u góry wybierz **Plik > Nowy > Projekt... **.
 
 1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **zainstalowana**, a następnie wybierz pozycję **Python**.
 
@@ -40,7 +39,7 @@ To 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko 
 
     ![Okno dialogowe nowego projektu z projektu sieci Web języka Python wybrane](media/quickstart-python-00-web-project.png)
 
-    Jeśli nie widzisz szablony projektów języka Python, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **Narzędzia > Pobierz narzędzia i funkcje...**  otworzyć Instalator programu Visual Studio. Wybierz **programowania Python** obciążenia, a następnie wybierz **Modyfikuj**.
+    Jeśli nie widzisz szablony projektów języka Python, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **Narzędzia > Pobierz narzędzia i funkcje... ** otworzyć Instalator programu Visual Studio. Wybierz **programowania Python** obciążenia, a następnie wybierz **Modyfikuj**.
 
     ![Obciążenie programowania Python w Instalatorze programu Visual Studio](../python/media/installation-python-workload.png)
 
@@ -62,7 +61,7 @@ W tym szybkiego startu jednak, przy użyciu biblioteki Falcon zgłaszać proces 
 
     ![Eksploratora rozwiązań przedstawiający domyślnego środowiska](media/quickstart-python-02-default-environment.png)
 
-1. Kliknij prawym przyciskiem myszy środowisko i wybierz **zainstaluj pakiet języka Python...** . To polecenie powoduje otwarcie **środowiska Python** okno na **pakiety** kartę. W polu wyszukiwania wprowadź "falcon" i wybierz **"pip zainstalować falcon" z PyPI**. Zaakceptuj wszystkie wyświetla monit o uprawnienia administratora i obserwować **dane wyjściowe** okna w programie Visual Studio dla postępu. (Monit podniesienia uprawnień spowodowany folder pakietów globalnego środowiska znajduje się w obszarze chronionym jak `c:\program files`.)
+1. Kliknij prawym przyciskiem myszy środowisko i wybierz **zainstaluj pakiet języka Python... **. To polecenie powoduje otwarcie **środowiska Python** okno na **pakiety** kartę. W polu wyszukiwania wprowadź "falcon" i wybierz **"pip zainstalować falcon" z PyPI**. Zaakceptuj wszystkie wyświetla monit o uprawnienia administratora i obserwować **dane wyjściowe** okna w programie Visual Studio dla postępu. (Monit podniesienia uprawnień spowodowany folder pakietów globalnego środowiska znajduje się w obszarze chronionym jak `c:\program files`.)
 
     ![Instalowanie biblioteki Falcon](media/quickstart-python-03-install-package.png)
 
@@ -78,9 +77,9 @@ Należy pamiętać, zamiast instalowania bibliotek w środowisku globalnych, dew
 
 Teraz możesz dodać bitowego kodu języka Python do wdrożenia aplikacji sieci web minimalny.
 
-1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj > Nowy element...** .
+1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj > Nowy element... **.
 
-1. W wyświetlonym oknie dialogowym wybierz **pusty plik Python**, nadaj jej nazwę `hello.py`i wybierz **Dodaj**. Visual Studio automatycznie otwiera plik w oknie edytora. (Zazwyczaj **Dodaj > Nowy element...**  polecenia jest to dobry sposób na dodawanie różnych typów plików do projektu, szablony elementów często stanowi przydatne schematyczny kod.)
+1. W wyświetlonym oknie dialogowym wybierz **pusty plik Python**, nadaj jej nazwę `hello.py`i wybierz **Dodaj**. Visual Studio automatycznie otwiera plik w oknie edytora. (Zazwyczaj **Dodaj > Nowy element... ** polecenia jest to dobry sposób na dodawanie różnych typów plików do projektu, szablony elementów często stanowi przydatne schematyczny kod.)
 
 1. Skopiuj poniższy kod i wklej ją do `hello.py`:
 

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, API
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 56eb5c11984e60e16374853ef1911ae831476d64
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: db6d65c5dd0c79549516ff3b9c58b8b59c4be885
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-t4-text-transformation"></a>Dopasowanie przekształcenia tekstu T4
 Szablony tekstowe są funkcją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umożliwiające generowanie kodu programu lub inne pliki tekstowe, proces przekształcenia. Przy użyciu [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], można rozszerzyć domyślny proces przekształcania szablonu dostosowując procesora dyrektywy szablonu tekstu lub hosta szablonu tekstowego.  

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,16 +20,17 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: "29"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference — Zadanie
 Określa wszystkie zestawy, które są zależne od określonych zestawów. Obejmuje to drugie i `n`th kolejność zależności.  
@@ -60,7 +61,7 @@ Określa wszystkie zestawy, które są zależne od określonych zestawów. Obejm
 |`IgnoreDefaultInstalledAssemblyTables`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie szuka zadania i używa dodatkowe zainstalowany zestaw tabel (lub "Listy redystrybucyjnej") która znajdują się w katalogu \RedistList w `TargetFrameworkDirectories`. Wartość domyślna to`false.`|  
 |`IgnoreDefaultInstalledAssemblySubsetTables`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie szuka zadania i używa dodatkowe zainstalowany zestaw tabel podzestawu (lub "Zawiera podzbiór") która znajdują się w katalogu \SubsetList w `TargetFrameworkDirectories`. Wartość domyślna to`false.`|  
 |`InstalledAssemblySubsetTables`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Zawiera listę plików XML, określających zestawy, które powinny być w podzbiorze docelowej.<br /><br /> Opcjonalnie elementy na tej liście można określić metadanych "FrameworkDirectory", aby skojarzyć`InstalledAssemblySubsetTable`<br /><br /> z katalogiem określonej struktury.<br /><br /> Jeśli istnieje tylko jeden `TargetFrameworkDirectories` elementu, a następnie wszystkie elementy na tej liście, które nie mają w metadanych "FrameworkDirectory" są traktowane jakby ustawiono unikatową wartość, która została przekazana do `TargetFrameworkDirectories`.|  
-|`InstalledAssemblyTables`|Opcjonalne `String` parametru.<br /><br /> Zawiera listę plików XML, które określają zestawy, które powinny być zainstalowane na komputerze docelowym.<br /><br /> Gdy `InstalledAssemblyTables` jest ustawiona, wcześniejszych wersji zestawów na liście są scalane w nowszej wersji, które są wymienione w pliku XML. Ponadto zestawy, które mają ustawienie InGAC = 'true' są uznawane za wymagania wstępne i są ustawione na CopyLocal = 'false', chyba że jawnie przesłonięte.<br /><br /> Opcjonalnie elementy na tej liście można określić metadanych "FrameworkDirectory", aby skojarzyć `InstalledAssemblyTable` z katalogiem określonej struktury.  Jednak to ustawienie jest ignorowane, chyba że nazwa Redist rozpoczyna się od<br /><br /> "Microsoft-Windows-CLRCoreComp".<br /><br /> Jeśli istnieje tylko jeden `TargetFrameworkDirectories` elementu, a następnie wszystkie elementy na tej liście, które nie mają w metadanych "FrameworkDirectory" są traktowane jakby ustawiono unikatową wartość, która została przekazana<br /><br /> Aby `TargetFrameworkDirectories`.|  
+|`InstalledAssemblyTables`|Opcjonalne `String` parametru.<br /><br /> Zawiera listę plików XML, które określają zestawy, które powinny być zainstalowane na komputerze docelowym.<br /><br /> Gdy `InstalledAssemblyTables` jest ustawiona, wcześniejszych wersji zestawów na liście są scalane w nowszej wersji, które są wymienione w pliku XML. Ponadto zestawy, które mają ustawienie InGAC = 'true' są uznawane za wymagania wstępne i są ustawione na CopyLocal = 'false', chyba że jawnie przesłonięte.<br /><br /> Opcjonalnie elementy na tej liście można określić metadanych "FrameworkDirectory", aby skojarzyć `InstalledAssemblyTable` z katalogiem określonej struktury.  Jednak to ustawienie jest ignorowane, chyba że nazwa Redist rozpoczyna się od<br /><br /> "Microsoft-Windows-CLRCoreComp".<br /><br /> Jeśli istnieje tylko jeden `TargetFrameworkDirectories` elementu, a następnie wszystkie elementy na tej liście, które nie mają w metadanych "FrameworkDirectory" są traktowane jakby ustawiono unikatową wartość, która została przekazana<br /><br /> to `TargetFrameworkDirectories`.|  
 |`LatestTargetFrameworkDirectories`|Opcjonalne `String[]` parametru.<br /><br /> Określa listę katalogów, które zawierają listy redystrybucyjnej najbardziej aktualne Framework, które można zastosować na komputerze. Jeśli to nie jest ustawiony najwyższy zainstalowany na tym komputerze identyfikator platformy elementu docelowego podanego framework jest używana.|  
 |`ProfileName`|Opcjonalne `String` parametru.<br /><br /> — Nazwa profilu framework ma zostać skonfigurowany. Na przykład klienta, sieci Web lub sieci.|  
 |`RelatedFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Zawiera powiązane pliki, takich jak pliki XML i .pdb, które mają taką samą nazwę podstawową jako odwołanie.<br /><br /> Pliki wymienione w tym parametrze opcjonalnie może zawierać następujące metadane elementu:<br /><br /> -   `Primary`: `Boolean` wartość. Jeśli `true`, a następnie element plik został przekazany do tablicy przez przy użyciu `Assemblies` parametru. Wartość domyślna to `false`.<br />-   `CopyLocal`: `Boolean` wartość. Wskazuje, czy dane odwołanie, powinien zostać skopiowany do katalogu wyjściowego.|  

@@ -4,31 +4,35 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.externaltools
-helpviewer_keywords: external tools [Visual Studio]
+f1_keywords:
+- vs.externaltools
+helpviewer_keywords:
+- external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 78a3e1ee549a42681d6f15b432d0c6bb608976fd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
 Można wywołać narzędzia zewnętrznego w programie Visual Studio za pomocą **narzędzia** menu. Kilka domyślne narzędzia są dostępne z **narzędzia** menu, a menu można dostosować, dodając inne pliki wykonywalne własny.
 
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Narzędzia dostępne w menu programu Visual Studio Tools
+## <a name="tools-available-on-the-tools-menu"></a>Narzędzia dostępne w menu Narzędzia
 
 **Narzędzia** menu zawiera kilka wbudowanych poleceń, takich jak:
 
 * **Rozszerzenia i aktualizacje** dla [Zarządzanie rozszerzenia programu Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Menedżer wstawek kodu...**  dla [organizowanie wstawki kodu](code-snippets.md#code-snippet-manager)
+* **Menedżer wstawek kodu...**  dla [organizowanie wstawki kodu](code-snippets.md)
 * **Ochrona cenią sobie wcześniejsze — Dotfuscator** uruchomienie [Dotfuscator Community Edition (CE)](dotfuscator/index.md) Jeśli jest [zainstalowany](dotfuscator/install.md)
 * **Dostosuj...**  dla [Dostosowywanie menu i pasków narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opcje...**  dla [ustawienie szereg różnych opcji dla programu Visual Studio IDE i inne narzędzia](reference/options-dialog-box-visual-studio.md)
@@ -37,7 +41,7 @@ Można wywołać narzędzia zewnętrznego w programie Visual Studio za pomocą *
 
 Możesz dodać zewnętrznego narzędzia na **narzędzia** menu.
 
-1. Otwórz **zewnętrznych narzędzi** okno dialogowe, wybierając **narzędzia**, **zewnętrznych narzędzi...** .
+1. Otwórz **zewnętrznych narzędzi** okno dialogowe, wybierając **narzędzia** > **zewnętrznych narzędzi...** .
 
 1. Kliknij przycisk **Dodaj**, a następnie wypełnij informacje. Na przykład następujący wpis powoduje Eksploratora Windows, aby otworzyć znajduje się w katalogu pliku, który aktualnie otwarte w programie Visual Studio:
 
@@ -68,7 +72,7 @@ Poniżej znajduje się pełna lista argumentów, które mogą być używane podc
 |Katalog projektu|$(ProjDir)|Katalog bieżącego projektu (dysk + ścieżki).|  
 |Nazwa pliku projektu|$(ProjFileName)|Nazwa pliku bieżącego projektu (dysk + ścieżka pliku nazwy).|  
 |Katalog rozwiązań|$(SolutionDir)|Katalog bieżącego rozwiązania (dysk + ścieżki).|  
-|Nazwa pliku rozwiązania|$(Solutionfilename) —|Nazwa pliku bieżącego rozwiązania (dysk + ścieżka pliku nazwy).|
+|Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk + ścieżka pliku nazwy).|
 
 > [!NOTE]
 > Pasek stanu IDE przedstawia zmienne bieżącego wiersza i bieżącej kolumny, aby wskazać, gdy punkt wstawiania znajduje się w edytorze kodu active. Zmienna tekst zwraca tekst lub wybrane w tej lokalizacji kodu.

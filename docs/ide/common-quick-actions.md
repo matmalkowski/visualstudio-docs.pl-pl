@@ -13,12 +13,13 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.workload: multiple
-ms.openlocfilehash: 3fa79518b564ca59b560e98bd32860f6d063077f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -240,7 +241,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>Usuwanie typu z **domyślne** wyrażenie wartości
 
-Ta akcja szybkie usuwa typu wartości wyrażenia wartości domyślnej i używa [ `default` literału](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) gdy kompilator może wnioskować o typie wyrażenia.
+Ta akcja szybkie usuwa typu wartości wyrażenia wartości domyślnej i używa [domyślną literału](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) gdy kompilator może wnioskować o typie wyrażenia.
 
 ```csharp
 // Before
@@ -255,7 +256,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 |  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
-| IDE0034 | C# 7.1 + | Visual Studio 2017 wersji 15 ustęp 3 |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 wersji 15 ustęp 3 |
 
 ## <a name="actions-that-add-missing-code"></a>Działania polegające na dodawaniu Brak kodu
 
@@ -744,7 +745,7 @@ int fibonacci(int n)
 
 |  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
-| IDE0041 | C# 7.0 + | Visual Studio 2017 wersji 15,5 cala |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 wersji 15,5 cala |
 
 Ta akcja szybkie sugeruje użycie [dopasowanie wzorca](/dotnet/csharp/pattern-matching) zamiast ```ReferenceEquals``` kodowania wzorca, jeśli jest to możliwe.
 
@@ -768,7 +769,7 @@ if (value is null)
 
 |  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
-| IDE0039 | C# 7.0 + | Visual Studio 2017 wersji 15,5 cala |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 wersji 15,5 cala |
 
 ### <a name="introduce-pattern-matching"></a>Wprowadzenie dopasowanie wzorca
 
@@ -810,8 +811,8 @@ if (o is string s)
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
-| IDE0020 | C# 7.0 + | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0 + | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
 
 ### <a name="change-base-for-numeric-literals"></a>Podstawa zmiany w literałach numerycznych
 
@@ -928,7 +929,7 @@ var tuple = (age, name);
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
 | IDE0037 | C# | Visual Studio 2017 v. 15.5 |
-| IDE0037 | C# 7.1 + | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
 
 ### <a name="deconstruct-tuple-declaration"></a>Deconstruct krotki deklaracji
 
@@ -954,7 +955,7 @@ Console.WriteLine($"{x} {y}");
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
-| IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: "30"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd43bae37f453ce3ce7ec589815554a6b62dea05
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 Program MSBuild używa zestawu narzędzi zadań, elementy docelowe i narzędzia do tworzenia aplikacji. Zazwyczaj narzędzi MSBuild zawiera plik microsoft.common.tasks, microsoft.common.targets i kompilatory, takie jak csc.exe i vbc.exe. Większość procesami może służyć do skompilowania aplikacji, aby więcej niż jedna wersja programu .NET Framework i więcej niż jednej platformie systemu. Jednak zestaw narzędzi MSBuild 2.0 może służyć do mają być stosowane tylko programu .NET Framework 2.0.  
@@ -118,4 +119,4 @@ Program MSBuild używa zestawu narzędzi zadań, elementy docelowe i narzędzia 
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfiguracje standardowego i niestandardowego zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)   
- [Przeznaczanie dla wielu platform](../msbuild/msbuild-multitargeting-overview.md)
+ [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 511c0b3990471b9b1e4e8e7e6023db8920360b99
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narzędzi, które służy do tworzenia aplikacji projektu. MSBuild obejmuje standardowych narzędzi, ale można również utworzyć niestandardowe procesami. Aby uzyskać informacje o określaniu zestawu narzędzi, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -33,7 +34,7 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narz�
 |2.0|*Ścieżka instalacji systemu Windows*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Ścieżka instalacji systemu Windows*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Ścieżka instalacji systemu Windows*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*% ProgramFiles %*\MSBuild\12.0\bin|  
+|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
   
  `ToolsVersion` Wartość określa, który zestaw narzędzi jest używany przez projekt, który generuje Visual Studio. W [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] wartością domyślną jest "12.0" (niezależnie od tego, jakie wersja określona w pliku projektu), ale ten atrybut można zastąpić przy użyciu **/toolsversion** przełącznik w wierszu polecenia. Informacje dotyczące tego atrybutu i inne sposoby określ `ToolsVersion`, zobacz [Zastępowanie ustawienia ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   

@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza systemu Windows z DSL, używając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania zestawu SDK.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL Wpf 2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Wystąpienie DSL wyświetlanie interfejsu użytkownika formularza systemu Windows i Eksplorator modelu.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Tworzenie formularzy systemu Windows DSL  
@@ -70,7 +71,7 @@ Wystąpienie DSL wyświetlanie interfejsu użytkownika formularza systemu Window
 ## <a name="updating-the-dsl-definition"></a>Aktualizowanie definicji DSL  
  Następujące definicji DSL jest używana w tym przewodniku.  
   
- ![DSL &#45; WPF &#45; 1](../modeling/media/dsl-wpf-1.png "DSL Wpf 1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Aby zaktualizować definicję DSL  
   
@@ -129,7 +130,7 @@ Wystąpienie DSL wyświetlanie interfejsu użytkownika formularza systemu Window
   
      Właściwości i relacje klasy modelu są wyświetlane w oknie źródeł danych.  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf-3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Aby połączyć modelu do formularza  
   
@@ -304,7 +305,7 @@ Schemat łącza między źródłami danych i widoków.
   
      Można edytować nazwy elementu w widoku siatki danych. Można również usunąć z tego miejsca.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL Wpf 2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>Kod, aby dodać element — informacje  
  Nowy element przycisków poniższy kod alternatywnych jest nieco prostsze.  

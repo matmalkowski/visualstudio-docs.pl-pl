@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Tworzenie projektu AI z szablonu w programie Visual Studio
 
-Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), ułatwia tworzenie nowego projektu Python przy użyciu różnych szablonów.
+Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), ułatwia tworzenie nowego projektu AI przy użyciu różnych szablonów.
 
 1. Uruchom program Visual Studio.
 

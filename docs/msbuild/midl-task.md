@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +26,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL) midl.exe. Aby uzyskać więcej informacji, zobacz "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
@@ -55,7 +56,7 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
      Opcjonalne **ciąg** parametru.  
   
-     Listę opcji wiersza polecenia. Na przykład **"***/option1 /option2 /option#*". Ten parametr umożliwia określenie opcji wiersza polecenia, które nie są reprezentowane przez inne parametru zadania MIDL.  
+     Listę opcji wiersza polecenia. Na przykład **"*** / opcja 1 /option2 /option#*". Ten parametr umożliwia określenie opcji wiersza polecenia, które nie są reprezentowane przez inne parametru zadania MIDL.  
   
      Aby uzyskać więcej informacji, zobacz "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
@@ -233,7 +234,7 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
      Aby uzyskać więcej informacji, zobacz **/iid** opcji "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **Identyfikator ustawień regionalnych**  
+-   **LocaleID**  
   
      Opcjonalne **int** parametru.  
   
@@ -305,11 +306,11 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<Brak >*|  
-    |**1**|**/ Zp1**|  
-    |**2**|**/ Zp2**|  
-    |**4**|**/ Zp4**|  
-    |**8**|**/ Zp8**|  
+    |**NotSet**|*\<none>*|  
+    |**1**|**/Zp1**|  
+    |**2**|**/Zp2**|  
+    |**4**|**/Zp4**|  
+    |**8**|**/Zp8**|  
   
      Aby uzyskać więcej informacji, zobacz **/Zp** opcji "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. **/Zp** opcja jest równoważna wartości **/dodatkiem Service pack** opcja i starszej **/ align** opcji.  
   
@@ -339,7 +340,7 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<Brak >*|  
+    |**NotSet**|*\<none>*|  
     |**Win32**|**/ ENV win32**|  
     |**Itanium**|**/ ENV ia64**|  
     |**X64**|**/ ENV x64**|  
@@ -411,11 +412,11 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**0**|**/ W0**|  
-    |**1**|**/ W1**|  
-    |**2**|**/ W2**|  
-    |**3**|**/ W3**|  
-    |**4**|**/ W4**|  
+    |**0**|**/W0**|  
+    |**1**|**/W1**|  
+    |**2**|**/W2**|  
+    |**3**|**/W3**|  
+    |**4**|**/W4**|  
   
      Aby uzyskać więcej informacji, zobacz **/W** opcji "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **WarnAsError** parametru w tej tabeli.  
   

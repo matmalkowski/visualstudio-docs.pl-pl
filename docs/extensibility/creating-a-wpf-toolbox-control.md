@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- vssdk
+ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Tworzenie formantu przybornika WPF
 Szablon formantu przybornika WPF (Windows Presentation Framework) umożliwia tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak użyć szablonu, aby utworzyć **przybornika** kontroli, którą można dystrybuować do innych użytkowników.  
@@ -61,7 +63,7 @@ Szablon formantu przybornika WPF (Windows Presentation Framework) umożliwia two
   
 1.  Otwórz MyToolboxControl.xaml.cs w widoku kodu.  
   
-2.  Znajdź klasy MyToolboxControl i zmień jego nazwę na TestControl. (Jest to najszybszy sposób, w tym celu można zmienić nazwy klasy, następnie wybierz **zmienić** z menu kontekstowego i wykonaj kroki. (Aby uzyskać więcej informacji na temat **zmienić** polecenia, zobacz [zmienić Refaktoryzacja (C#)](../ide/reference/rename-csharp.md).)
+2.  Znajdź klasy MyToolboxControl i zmień jego nazwę na TestControl. (Jest to najszybszy sposób, w tym celu można zmienić nazwy klasy, następnie wybierz **zmienić** z menu kontekstowego i wykonaj kroki. (Aby uzyskać więcej informacji na temat **zmienić** polecenia, zobacz [zmienić Refaktoryzacja (C#)](../ide/reference/rename.md).)
   
 3.  Przejdź do `ProvideToolboxControl` atrybutu i zmień wartość pierwszy parametr **testu**. Jest to nazwa grupy, która będzie zawierać formant w **przybornika**.  
   

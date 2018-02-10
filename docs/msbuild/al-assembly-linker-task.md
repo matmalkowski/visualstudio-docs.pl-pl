@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AL
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: "22"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 46ddcdba540128ed866e136bf0db548575e63910
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker) — Zadanie
 AL — zadanie jest zawijana AL.exe, narzędzie, które jest dystrybuowane z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie Assembly Linker jest używany do utworzenia zestawu z manifestu z jednego lub więcej plików, które moduły albo lub plików zasobów. Kompilatory i środowisk deweloperskich może już udostępniać tych funkcji, co często nie jest konieczne do użycia bezpośrednio tego zadania. Assembly Linker jest użyteczna dla deweloperów konieczności tworzenia w jednym zestawie z wielu plików składników, takich jak te, które mogą być tworzone z wielu języków programowania. To zadanie nie łączyć modułów w jednym zestawie pliku; indywidualne moduły muszą być rozproszone i jest dostępny w kolejności dla wynikowego zestawu można prawidłowo załadować. Aby uzyskać więcej informacji dotyczących AL.exe, zobacz [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).  

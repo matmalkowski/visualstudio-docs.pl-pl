@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 Visual Studio hostów [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialny za projektu prawie każdego projektu w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mogą być pomyślnie użyć formatu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]nawet wtedy, gdy projektu zostało utworzone przez innego narzędzia i ma niestandardowy proces kompilacji.  
@@ -53,10 +54,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]analizuje warunki `PropertyGroup`, `ItemGroup`, `Import`, właściwości i elementów w tym celu.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] analizuje warunki `PropertyGroup`, `ItemGroup`, `Import`, właściwości i elementów w tym celu.  
   
 ## <a name="additional-build-actions"></a>Dodatkowe akcje kompilacji  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Pozwala zmienić nazwę elementu typu pliku w projekcie z **Akcja kompilacji** właściwość [właściwości pliku](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, i `None` nazwy typu elementu zawsze są wyświetlane w tym menu oraz inne elementu typu nazwy już w projekcie. Aby upewnić się, wszystkie nazwy typu elementu niestandardowego są zawsze dostępne w menu, można dodać nazwy do typu elementu o nazwie `AvailableItemName`. Na przykład dodanie następujących do pliku projektu spowoduje dodanie niestandardowego typu `JScript` do tego menu dla wszystkich projektów, które go zaimportować:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pozwala zmienić nazwę elementu typu pliku w projekcie z **Akcja kompilacji** właściwość [właściwości pliku](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) okna. `Compile`, `EmbeddedResource`, `Content`, i `None` nazwy typu elementu zawsze są wyświetlane w tym menu oraz inne elementu typu nazwy już w projekcie. Aby upewnić się, wszystkie nazwy typu elementu niestandardowego są zawsze dostępne w menu, można dodać nazwy do typu elementu o nazwie `AvailableItemName`. Na przykład dodanie następujących do pliku projektu spowoduje dodanie niestandardowego typu `JScript` do tego menu dla wszystkich projektów, które go zaimportować:  
   
 ```xml  
 <ItemGroup>  
@@ -91,7 +92,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Podczas kompilowania wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], właściwość `$(BuildingInsideVisualStudio)` ma ustawioną wartość `true`. To umożliwia w plikach projektu lub .targets spowodować kompilacji do zachowywać się inaczej.  
   
 ## <a name="displaying-properties-and-items"></a>Wyświetlanie właściwości i elementów  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]rozpoznaje niektóre nazwy i wartości właściwości. Na przykład następującą właściwość w projekcie spowoduje, że **aplikacji systemu Windows** pojawią się w **typu aplikacji** polu **projektanta projektu**.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpoznaje niektóre nazwy i wartości właściwości. Na przykład następującą właściwość w projekcie spowoduje, że **aplikacji systemu Windows** pojawią się w **typu aplikacji** polu **projektanta projektu**.  
   
 ```xml  
 <OutputType>WinExe</OutputType>  
@@ -99,7 +100,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Wartość właściwości można edytować w **projektanta projektu** i zapisane w pliku projektu. Jeśli taka właściwość podano nieprawidłową wartość, edytując ręcznie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie Pokaż ostrzeżenie po załadowaniu projektu i zastąp wartość domyślną nieprawidłową wartość.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]rozumie, wartości domyślne dla niektórych właściwości. Te właściwości nie zostaną utrwalone w pliku projektu, jeśli nie mają wartości innych niż domyślne.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozumie, wartości domyślne dla niektórych właściwości. Te właściwości nie zostaną utrwalone w pliku projektu, jeśli nie mają wartości innych niż domyślne.  
   
  Właściwości z dowolnych nazw nie są wyświetlane w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby zmodyfikować dowolne właściwości w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], należy otworzyć plik projektu w edytorze XML i edytować je ręcznie. Aby uzyskać więcej informacji, zobacz [edytowanie plików projektu w programie Visual Studio](#BKMK_EditingProjects) później w tym temacie.  
   
@@ -126,7 +127,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Aby odnaleźć i uruchom zestawu wyjściowego i dołączyć debuger, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wymaga właściwości `OutputPath`, `AssemblyName`, i `OutputType` poprawnie zdefiniowany. Debuger nie będzie można dołączyć, jeśli proces kompilacji nie spowodowało kompilator, aby wygenerować plik PDB.  
   
 ## <a name="design-time-target-execution"></a>Wykonanie docelowego czasu projektowania  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]próbuje wykonać obiektów docelowych z niektórych nazw ładuje projekt. Następujących elementów docelowych zawierać `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, i `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Uruchamia następujących elementów docelowych, dzięki czemu kompilatora mogą być inicjowane w celu zapewnienia funkcji IntelliSense, można zainicjować debugera i wyświetlana w Eksploratorze rozwiązań odwołania mogą zostać rozwiązane. Jeśli nie podano tych celów, projekt zostanie obciążenia i kompilacji poprawnie, ale środowisko czasu projektowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie będzie w pełni funkcjonalne.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] próbuje wykonać obiektów docelowych z niektórych nazw ładuje projekt. Następujących elementów docelowych zawierać `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, i `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Uruchamia następujących elementów docelowych, dzięki czemu kompilatora mogą być inicjowane w celu zapewnienia funkcji IntelliSense, można zainicjować debugera i wyświetlana w Eksploratorze rozwiązań odwołania mogą zostać rozwiązane. Jeśli nie podano tych celów, projekt zostanie obciążenia i kompilacji poprawnie, ale środowisko czasu projektowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie będzie w pełni funkcjonalne.  
   
 ##  <a name="BKMK_EditingProjects"></a>Edytowanie plików projektu w programie Visual Studio  
  Aby edytować [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu bezpośrednio, można otworzyć pliku projektu w edytorze programu Visual Studio XML.  
@@ -151,7 +152,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Podstawowe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] typy są definiowane w Microsoft.Build.Core.xsd i popularne typy używane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są zdefiniowane w Microsoft.Build.CommonTypes.xsd. Aby dostosować schematów, tak aby było możliwe IntelliSense i sprawdzanie poprawności dla nazwy typu elementu niestandardowego, właściwości i zadań, możesz edytować Microsoft.Build.xsd lub utworzyć własny schemat, który zawiera schematów CommonTypes lub Core. Jeśli utworzysz własny schemat, należy przekierować XML edytora, aby znaleźć za pomocą **właściwości** okna.  
   
 ## <a name="editing-loaded-project-files"></a>Edytowanie wczytanych plików projektu  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]buforuje zawartość plików projektu i plików zaimportowanych przez pliki projektu. Po zmodyfikowaniu pliku załadowanego projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie wyświetli monit ponownie załadować projekt tak, aby zmiany zostały wprowadzone. Jednak po zmodyfikowaniu pliku zaimportowanej przez załadowanego projektu nie będzie żadnego monitu o ponowne załadowanie i musi zwolnić i ponownie Załaduj projekt ręcznie, aby zmiany zostały wprowadzone.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] buforuje zawartość plików projektu i plików zaimportowanych przez pliki projektu. Po zmodyfikowaniu pliku załadowanego projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie wyświetli monit ponownie załadować projekt tak, aby zmiany zostały wprowadzone. Jednak po zmodyfikowaniu pliku zaimportowanej przez załadowanego projektu nie będzie żadnego monitu o ponowne załadowanie i musi zwolnić i ponownie Załaduj projekt ręcznie, aby zmiany zostały wprowadzone.  
   
 ## <a name="output-groups"></a>Grupy danych wyjściowych  
  Kilka zdefiniowanego w Microsoft.Common.targets mają nazwy kończy się rozszerzeniem `OutputGroups` lub `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]wymaga następujących elementów docelowych, można pobrać określone listy wyjścia projektu. Na przykład `SatelliteDllsProjectOutputGroup` docelowej tworzy listę wszystkie zestawy satelickie utworzy kompilacji. Grupy te dane wyjściowe są używane przez funkcje, takie jak publikowanie, wdrożenia i odwołania do projektu do projektu. Projekty, które nie określają je będzie obciążenia i kompilacji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale niektóre funkcje mogą nie działać poprawnie.  

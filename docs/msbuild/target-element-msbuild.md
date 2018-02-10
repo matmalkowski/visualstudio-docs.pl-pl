@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Target
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +18,22 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-caps.latest.revision: "34"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fe87cf8af6c5c2cbb63153f0d82988bd44800519
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="target-element-msbuild"></a>Target — Element (MSBuild)
 Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.  
 
- \<Projekt >  
+ \<Project>  
  \<Docelowy >  
 
 ## <a name="syntax"></a>Składnia  
@@ -85,7 +87,7 @@ Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/int
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 
 ## <a name="remarks"></a>Uwagi  
  Pierwszy element docelowy do wykonania jest określona w czasie wykonywania. Obiekty docelowe może być zależny od innych celów. Na przykład cel wdrożenia jest zależny od docelowej dla kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparat wykonuje zależności w kolejności, w jakiej występują w `DependsOnTargets` atrybutu od lewej do prawej. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).  

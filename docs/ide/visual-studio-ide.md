@@ -6,15 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.topic: article
 author: gewarren
+f1_keywords:
+- vs.startpage
+- VS.StartPage.HowDoI
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -263,7 +266,7 @@ Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie A
 
 Visual Studio nie ma dokładnie funkcji potrzebne, można dodać go! Można personalizowanie środowiska IDE są oparte na przepływie pracy i stylu, Dodaj obsługę dla zewnętrznych narzędzi nie została jeszcze zintegrowany z programem Visual Studio i modyfikować istniejące funkcje, aby zwiększyć wydajność. Aby uzyskać najnowszą wersję programu Visual Studio Tools rozszerzalności (VS SDK), zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Kompilator platformy .NET (Roslyn) służy do pisania własnych analizatorów kodu i generatory kodu. Znajdź wszystkie elementy potrzebne w [Roslyn](https://github.com/dotnet/Roslyn).
+Kompilator platformy .NET ("Roslyn") służy do pisania własnych analizatorów kodu i generatory kodu. Znajdź wszystkie elementy potrzebne w [Roslyn](https://github.com/dotnet/Roslyn).
 
 Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla programu Visual Studio utworzone przez deweloperzy firmy Microsoft, a także naszą społeczność programowanie.
 

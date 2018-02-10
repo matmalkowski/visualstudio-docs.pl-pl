@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild
+helpviewer_keywords:
+- msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Rozwiązywanie zestawów w czasie projektowania
 Po dodaniu odwołania do zestawu za pomocą karty .NET okna dialogowego Dodaj Odwołanie, odwołanie wskazuje na pośrednie odwołanie do zestawu, który jest zestawem zawierającym wszystkie informacje o typie i podpisie, ale nie musi zawierać żadnego kodu. Karta .NET zawiera listę odwołań do zestawów, które odpowiadają zestawom środowiska uruchomieniowego w .NET Framework. Ponadto wyświetla listę odwołań do zestawów, które odpowiadają zestawom środowiska uruchomieniowego w zarejestrowanych folderach AssemblyFoldersEx używanych przez inne firmy.  
   
 ## <a name="multi-targeting"></a>Wielowersyjność kodu  
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] pozwala na wybór wersji .NET Framework, która działa albo w Środowisku uruchomieniowym języka wspólnego (CLR) wersja 2 lub wersja 4. Dotyczy wersji .NET Framework 2.0, 3.0, 3.5, 4, 4.5 oraz 4.5.1 i wersji Silverlight 1.0, 2.0 i 3.0. Jeśli zostanie wydana nowa wersja .NET Framework oparta na wersji CLR 2.0 lub wersji 4, Framework może być zainstalowany przy użyciu odpowiedniego pakietu i automatycznie pojawi się jako cel w programie Visual Studio.  
+ [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] Umożliwia docelowej wersji .NET Framework, która uruchamiać na wspólnego języka środowiska uruchomieniowego (CLR) w wersji 2.0 lub w wersji 4. Dotyczy wersji .NET Framework 2.0, 3.0, 3.5, 4, 4.5 oraz 4.5.1 i wersji Silverlight 1.0, 2.0 i 3.0. Jeśli zostanie wydana nowa wersja .NET Framework oparta na wersji CLR 2.0 lub wersji 4, Framework może być zainstalowany przy użyciu odpowiedniego pakietu i automatycznie pojawi się jako cel w programie Visual Studio.  
   
 ## <a name="how-type-resolution-works"></a>Sposób, a jak działa typ rozwiązania  
  W czasie wykonywania CLR rozwiązuje typy w zestawie szukając w pamięci podręcznej GAC, katalogu bin i wszelkich ścieżkach sondowania. Jest to obsługiwane przez moduł ładujący fusion. Ale skąd moduł ładujący fusion wie czego szukać? To zależy od rozdzielczości wybranej w czasie projektowania, podczas kompilowania aplikacji.  

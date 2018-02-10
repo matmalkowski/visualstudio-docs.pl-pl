@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-tasks"></a>Zadania programu MSBuild
 Platformy kompilacji musi mieć możliwość wykonania dowolną liczbę akcji podczas procesu kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]używa *zadania* do wykonania tych czynności. Zadanie jest jednostką kodu wykonywalnego, używana przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania operacji niepodzielnych kompilacji.  
@@ -39,7 +40,7 @@ Platformy kompilacji musi mieć możliwość wykonania dowolną liczbę akcji po
   
  Do wykonania zadania w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu, Utwórz element o nazwie zadania jako element podrzędny `Target` elementu. Jeśli zadanie akceptuje parametry, te są przekazywane jako atrybuty elementu.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]element listy i właściwości mogą być używane jako parametry. Na przykład poniższy kod wywołania `MakeDir` zadań i ustawia wartość `Directories` właściwość `MakeDir` wartości z obiektu `BuildDir` właściwości zadeklarowany w poprzednim przykładzie.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] element listy i właściwości mogą być używane jako parametry. Na przykład poniższy kod wywołania `MakeDir` zadań i ustawia wartość `Directories` właściwość `MakeDir` wartości z obiektu `BuildDir` właściwości zadeklarowany w poprzednim przykładzie.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -63,10 +64,10 @@ Platformy kompilacji musi mieć możliwość wykonania dowolną liczbę akcji po
 ```  
   
 ## <a name="included-tasks"></a>Dołączone zadania  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]dostarczany z wielu zadań, takich jak [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [makedir —](../msbuild/makedir-task.md), co powoduje katalogów, i [Csc](../msbuild/csc-task.md), który kompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plików kodu źródłowego. Aby uzyskać pełną listę dostępnych zadań i informacje o użyciu zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dostarczany z wielu zadań, takich jak [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [makedir —](../msbuild/makedir-task.md), co powoduje katalogów, i [Csc](../msbuild/csc-task.md), który kompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plików kodu źródłowego. Aby uzyskać pełną listę dostępnych zadań i informacje o użyciu zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Zastąpione zadania  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Wyszukuje zadań w kilku lokalizacjach. Pierwszy znajduje się w plikach z rozszerzeniem. OverrideTasks przechowywanych w katalogach platformy .NET Framework. Zadania w tych plikach zastąpienie innych zadań pod tą samą nazwą, łącznie z zadaniami w pliku projektu. Drugi znajduje się w plikach z rozszerzeniem. Zadania w katalogach platformy .NET. Jeśli zadanie nie zostanie znaleziony w jednej z tych lokalizacji, używane jest zadanie w pliku projektu.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Wyszukuje zadań w kilku lokalizacjach. Pierwszy znajduje się w plikach z rozszerzeniem. OverrideTasks przechowywanych w katalogach platformy .NET Framework. Zadania w tych plikach zastąpienie innych zadań pod tą samą nazwą, łącznie z zadaniami w pliku projektu. Drugi znajduje się w plikach z rozszerzeniem. Zadania w katalogach platformy .NET. Jeśli zadanie nie zostanie znaleziony w jednej z tych lokalizacji, używane jest zadanie w pliku projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   

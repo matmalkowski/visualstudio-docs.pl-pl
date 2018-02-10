@@ -5,32 +5,43 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
 helpviewer_keywords:
-- code snippets, replacement parameters
-- code snippets, surround with
-- replacement parameters
-- code snippets, expansion
 - surround with
 - code snippets
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-snippets"></a>Wstawki kodu
 
-Wstawki kodu są małe bloki kodu wielokrotnego użytku, które można wstawiać w pliku kodu za pomocą polecenia menu kontekstowego lub kombinację klawiszy dostępu. Zwykle zawierają bloki kodu powszechnie używane, takich jak try-finally lub if-else bloków, ale może służyć do wstawienia całej klasy lub metody.
+Wstawki kodu są małe bloki kodu wielokrotnego użytku, które można wstawiać w pliku kodu za pomocą polecenia menu kontekstowego lub kombinację klawiszy dostępu. Zwykle zawierają bloki kodu najczęściej używanych takich jak `try-finally` lub `if-else` bloków, ale może służyć do wstawienia całej klasy lub metody.
+
+Wstawki kodu są dostępne dla wielu języków, w tym C#, C++, Visual Basic, XML i T-SQL, kilka. Aby wyświetlić wszystkie dostępne zainstalowanych fragmenty kodu dla języka, otwórz **Menedżerze fragmentów kodu** z **narzędzia** menu programu Visual Studio i wybierz język z menu rozwijane u góry.
+
+![Okno dialogowe Menedżer wstawek kodu](media/code-snippets-manager.png)
+
+Wstawki kodu jest możliwy w następujący sposób ogólne:
+
+- Na pasku menu wybierz **Edytuj** > **IntelliSense** > **wstawić fragment...**
+
+- Z menu kliknij prawym przyciskiem myszy lub kontekstu w edytorze kodu, wybierz **fragment** > **wstawić fragment...**
+
+- Z klawiatury, naciśnij klawisz **Ctrl**+**K**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Wstawki rozszerzenia i wstawki z funkcji Otocz przez
 
@@ -49,9 +60,9 @@ finally
 }
 ```
 
-Ta Wstawka kodu można wstawiać, klikając **wstawić fragment** w menu kontekstowe okna Kod, następnie **Visual C#**, wpisz `tryf`, a następnie naciśnij klawisz **kartę**, lub można wpisać `tryf` i naciśnij klawisz **kartę** dwa razy.
+Ta Wstawka kodu można wstawiać, klikając **wstawić fragment** w menu kontekstowe okna Kod, następnie **Visual C#**, wpisz `tryf`, a następnie naciśnij klawisz **kartę**. Alternatywnie możesz wpisać `tryf` i naciśnij klawisz **kartę** dwa razy.
 
-Przykład fragment Otocz: w języku C++ skrót `if` może służyć jako fragment wstawiania lub fragment Otocz. W przypadku wybrania wiersz kodu (na przykład `return FALSE;`), a następnie kliknij przycisk **z funkcji Otocz przez**, następnie **Jeśli**, fragment jest rozwinięta wokół wiersza:
+Przykład fragment Otocz: w języku C++ skrót `if` może służyć jako fragment wstawiania lub fragment Otocz. W przypadku wybrania wiersz kodu (na przykład `return FALSE;`), a następnie wybierz pozycję **z funkcji Otocz przez** > **Jeśli**, fragment jest rozwinięta wokół wiersza:
 
 ```cpp
 if (true)
@@ -64,7 +75,11 @@ if (true)
 
 Wstawki kodu programu może zawierać parametry zamiany, które symboli zastępczych, które należy zastąpić do dopasowania dokładne pisania kodu. W poprzednim przykładzie `true` jest to parametr zastąpienia, należy zastąpić z odpowiedniego warunku. Wprowadzone zastąpienia jest powtarzany dla każdego wystąpienia tego samego parametru zastępczy we fragmencie.
 
-Na przykład w języku Visual Basic istnieje fragment kodu, która wstawia właściwości. Kliknij przycisk **wstawić fragment** w menu kontekstowym okna Kod, następnie **wzorce kodu**, następnie **zdarzenia właściwości, procedur,**, następnie zdefiniuj właściwość. Dodaje się następujący kod:
+Na przykład w języku Visual Basic istnieje fragment kodu, która wstawia właściwości. Aby wstawić fragment kodu, wybierz **fragment...**   >  **Wstawić fragment** z menu kliknij prawym przyciskiem myszy lub kontekstu w pliku kodu języka Visual Basic. Następnie wybierz pozycję **wzorce kodu** > **zdarzenia właściwości, procedur,** > **definiuje właściwości**.
+
+![Menu fragment kodu dla Definiuj właściwości](media/code-snippets-vb-property.png)
+
+Dodaje się następujący kod:
 
 ```vb
 Private newPropertyValue As String
@@ -80,18 +95,12 @@ End Property
 
 Jeśli zmienisz `newPropertyValue` do `m_property`, następnie każde wystąpienie `newPropertyValue` zostanie zmieniona. Jeśli zmienisz `String` do `Int` w deklaracji właściwości następnie wartość metody set jest również zmienić `Int`.
 
-## <a name="code-snippet-manager"></a>Menedżer wstawek kodu
-
-Można wyświetlić wszystkie fragmenty kodu, które są aktualnie zainstalowane, a ich lokalizacji na dysku, wybierając **narzędzia**, **Menedżerze fragmentów kodu**. Fragmenty kodu są wyświetlane przez język.
-
-Można dodawać i usuwać katalogi fragment kodu z **Dodaj** i **Usuń** przycisków w **Menedżerze fragmentów kodu** okna dialogowego. Aby dodać poszczególne fragmenty kodu, użyj **importu** przycisku.
-
 ## <a name="see-also"></a>Zobacz także
 
-[Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)  
-[Instrukcje: Dystrybucja fragmentów kodu](../ide/how-to-distribute-code-snippets.md)  
-[Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu](../ide/best-practices-for-using-code-snippets.md)  
-[Rozwiązywanie problemów z fragmentami kodu](../ide/troubleshooting-snippets.md)  
+[Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)  
+[Porady: rozprowadzanie wstawek kodu](../ide/how-to-distribute-code-snippets.md)  
+[Najlepsze rozwiązania dotyczące korzystania z wstawek kodu](../ide/best-practices-for-using-code-snippets.md)  
+[Rozwiązywanie problemów z wstawki kodu programu](../ide/troubleshooting-snippets.md)  
 [Wstawki kodu C#](../ide/visual-csharp-code-snippets.md)  
-[Fragmenty kodu Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)
+[Wstawki kodu programu Visual C++ kod](../ide/visual-cpp-code-snippets.md)  
+[Odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md)

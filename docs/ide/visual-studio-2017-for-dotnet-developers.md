@@ -7,13 +7,15 @@ manager: ghogen
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
 ms.topic: article
-helpviewer_keywords: editor
-ms.workload: dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+helpviewer_keywords:
+- editor
+ms.workload:
+- dotnet
+ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 dla deweloperów platformy .NET
 
@@ -22,7 +24,7 @@ ms.lasthandoff: 01/23/2018
 [Dokumentacja: Korzystanie z IntelliSense](using-intellisense.md)  
 [Dokumentacji: Funkcje edycji inteligentne](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio ma głębokie opis kodu za pomocą kompilatora Roslyn dostarczają edycji Inteligentne funkcje, takie jak kolorowanie składni, kod zakończenia, sprawdzanie pisowni błędnie wpisane zmienne, rozpoznawania typu niezaimportowanych, obramowanie, wizualizatorów struktury [CodeLens](find-code-changes-and-other-history-with-codelens.md), wywołaj hierarchii, stanie hover szybka podpowiedź, parametr pomocy, a także narzędzia do refaktoryzacji, szybkie akcje stosowania i generowanie kodu.
+Visual Studio ma bezpośrednich opis kodu przez kompilator .NET ("Roslyn"), aby umożliwiają edytowanie Inteligentne funkcje, takie jak kolorowanie składni, kod zakończenia, sprawdzanie pisowni błędnie wpisane zmienne, rozpoznawania typu niezaimportowanych zwijania — struktura wizualizatory, [CodeLens](find-code-changes-and-other-history-with-codelens.md), wywołaj hierarchii, stanie hover szybka podpowiedź, parametr pomocy, a także narzędzia do refaktoryzacji, szybkie akcje stosowania i generowanie kodu.
 
 ![Edytor kodu inteligentne w usłudze Visual Studio](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 

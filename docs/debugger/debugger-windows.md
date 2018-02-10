@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Więcej informacji na temat okna debugera programu Visual Studio
-Podczas debugowania programu, można otworzyć większości oknach debugera. Aby zobaczyć listę okien debugera, ustaw punkt przerwania i Rozpocznij debugowanie. Po trafieniu punktu przerwania i wykonywanie zatrzymuje kliknij **Debuguj > Windows**.  
+
+Podczas debugowania programu, można otworzyć większości oknach debugera. Aby zobaczyć listę okien debugera, ustaw punkt przerwania i Rozpocznij debugowanie. Po trafieniu punktu przerwania i wykonywanie zatrzymuje kliknij **Debuguj > Windows**.
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ Podczas debugowania programu, można otworzyć większości oknach debugera. Aby
 |Stosów równoległych|CTR:+SHIFT+D, S|[Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)|
 |Czujki równoległej|CTR:+SHIFT+D, (1, 2, 3, 4)|[Pobierz uruchomić debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Wątki|CTRL+ALT+H|[Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md)|
-|Moduły|CTRL+ALT+U|[Porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)| 
+|Moduły|CTRL+ALT+U|[Porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)|
 |Wątków GPU|-|[Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Zadania|CTR:+SHIFT+D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)| 
-|Interakcyjne debugowania języka Python|SHIFT+ALT+I|[Pierwsze kroki z narzędziami PTVS: interaktywny język Python](../python/python-interactive-repl-in-visual-studio.md)
+|Zadania|CTR:+SHIFT+D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
+|Interakcyjne debugowania języka Python|SHIFT+ALT+I|[Interaktywny REPL Python](../python/interactive-repl.md)|
 |Konsola JavaScript|CTRL+ALT+V, C|[Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Eksplorator DOM|CTRL+ALT+V, D|[Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ Podczas debugowania programu, można otworzyć większości oknach debugera. Aby
 |Dezasemblacji|CTRL+ALT+D|[Porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)|
 |Rejestruje|CTRL+ALT+G|[Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Zobacz też  
- [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)
+## <a name="see-also"></a>Zobacz też
+
+[Podstawowe informacje o debugerze](../debugger/debugger-basics.md)

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>MT — Zadanie
 Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
@@ -55,11 +56,11 @@ Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji,
 |**EnableDPIAwareness**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, dodaje do manifestu informacje, wskazującą aplikację jako obsługującą ustawienia DPI. Pisanie aplikacji obsługującą ustawienia DPI sprawia, że interfejs użytkownika wyglądać spójnie z wieloma różnymi ustawienia wysokiej rozdzielczości ekranu.<br /><br /> Aby uzyskać więcej informacji, zobacz "Wysokiej rozdzielczości" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**GenerateCatalogFiles**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, generuje katalogu plików definicji (.cdf).<br /><br /> Aby uzyskać więcej informacji, zobacz **/makecdfs** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**GenerateCategoryTags**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, powoduje, że tagi kategorii do wygenerowania. Jeśli ten parametr ma `true`, **ManifestFromManagedAssemblyMT** również musi zostać określony parametr zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/category** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**InputResourceManifests**|Opcjonalne **ciąg** parametru.<br /><br /> Dane wejściowe manifestu z zasobu typu RT_MANIFEST, który ma określony identyfikator. Określ zasób w postaci  *\<Plik > [***;** *[***#***] < resource_id >]*, gdzie opcjonalny `resource_id` parametru jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, zostanie użyta wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/inputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**InputResourceManifests**|Opcjonalne **ciąg** parametru.<br /><br /> Dane wejściowe manifestu z zasobu typu RT_MANIFEST, który ma określony identyfikator. Określ zasób w postaci  *\<Plik > [***;*** [***#***] < resource_id >]*, gdzie opcjonalny `resource_id` parametru jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, zostanie użyta wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/inputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ManifestFromManagedAssembly**|Opcjonalne **ciąg** parametru.<br /><br /> Generuje manifest z określonego zestawu zarządzanego.<br /><br /> Aby uzyskać więcej informacji, zobacz **/managedassemblyname** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ManifestToIgnore**|Opcjonalne **ciąg** parametru.<br /><br /> (Nie jest używany.)|  
 |**OutputManifestFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa nazwę manifestu wyjściowego. Jeśli ten parametr zostanie pominięty, tylko jeden manifest jest on obsługiwany przez tego manifestu jest modyfikowany w miejscu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/out** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**OutputResourceManifests**|Opcjonalne **ciąg** parametru.<br /><br /> Dane wyjściowe manifestu do zasobu typu RT_MANIFEST, który ma określony identyfikator. Zasób jest w formie  *\<Plik > [***;** *[***#***] < resource_id >]*, gdzie opcjonalny `resource_id` parametru jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, zostanie użyta wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/outputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**OutputResourceManifests**|Opcjonalne **ciąg** parametru.<br /><br /> Dane wyjściowe manifestu do zasobu typu RT_MANIFEST, który ma określony identyfikator. Zasób jest w formie  *\<Plik > [***;*** [***#***] < resource_id >]*, gdzie opcjonalny `resource_id` parametru jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, zostanie użyta wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/outputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**RegistrarScriptFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa nazwę rejestratora pliku skryptu (.rgs) bez rejestrowania COM manifestu pomocy technicznej.<br /><br /> Aby uzyskać więcej informacji, zobacz **/rgs** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ReplacementsFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa plik, który zawiera wartości dla wymienialnych ciągów w pliku skryptu (.rgs) rejestratora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/replacements** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ResourceOutputFileName**|Opcjonalne **ciąg** parametru.<br /><br /> Określa plik zasobów wynikowych, używany do osadzania manifestu w projekcie wynikowym.|  

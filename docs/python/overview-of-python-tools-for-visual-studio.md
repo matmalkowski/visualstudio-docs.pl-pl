@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
 
@@ -70,7 +70,7 @@ A. Python to zwykle interpretacji języka, z którym jest on uruchamiany na żą
 
 ## <a name="features-matrix"></a>Funkcje macierzy
 
-Obsługa języka Python można zainstalować w następujących wersjach programu Visual Studio zgodnie z opisem w [Przewodnik instalacji](installing-python-support-in-visual-studio.md):
+Funkcje języka Python można zainstalować w następujących wersjach programu Visual Studio zgodnie z opisem w [Przewodnik instalacji](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (wszystkie wersje)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (wszystkie wersje)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +81,7 @@ Obsługa języka Python można zainstalować w następujących wersjach programu
 - Program Visual Studio 2012 (Pro edition lub nowszy)
 - Visual Studio 2010 z dodatkiem SP1 (Pro edition lub nowszy; .NET 4.5 wymagana)
 
-Obsługiwane funkcje w wersji programu Visual Studio i wersji:
+Funkcje są w pełni obsługiwane i utrzymywana w najnowszej wersji programu Visual Studio. Funkcje są dostępne w starszych wersjach, ale nie są zachowywane aktywnie.
 
 | Obsługa języka Python | 2017 | 2015 | 2013 Comm | Pulpit 2013 | Sieci web 2013 | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +166,8 @@ Obsługiwane funkcje w wersji programu Visual Studio i wersji:
 | Zdalne debugowanie (z systemem Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | Okno interaktywne debugowania | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | Profilowanie | 2017 | 2015 | 2013 Comm | Pulpit 2013 | Sieci web 2013 | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

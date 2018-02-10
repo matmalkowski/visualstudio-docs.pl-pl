@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
 helpviewer_keywords:
 - code, understanding
@@ -14,12 +13,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d3272195d1099ea851cbabf32c845ce2d46a697c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: bb4b7729cb0541c6ef3feb007e99b9e532c6c361
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 Wizualizacji i modelowania narzędzia w programie Visual Studio umożliwia ułatwić zrozumienie istniejący kod i opis aplikacji. Dzięki temu można wizualnie Dowiedz się, jak zmiany mogą wpłynąć na kod i pomocy oceny pracy i zagrożeń wynikających z tych zmian. Na przykład:  
@@ -47,7 +47,7 @@ Wizualizacji i modelowania narzędzia w programie Visual Studio umożliwia ułat
 |**Kategoria**|**Łącza**|  
 |------------------|---------------|  
 |**Fora**|-   [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**Blogi**|[Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**Blogi**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artykuły techniczne i arkuszy**|[Forum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Zobacz też  
