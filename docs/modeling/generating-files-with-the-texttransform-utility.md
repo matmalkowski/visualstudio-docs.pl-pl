@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: b7816e11c431f17336955f2037d288641b6c3ad5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generowanie plików za pomocą narzędzia TextTransform
 TextTransform.exe jest narzędziem wiersza polecenia, które służy do transformacji szablonu tekstowego. Podczas wywoływania TextTransform.exe, należy określić nazwę pliku tekstowego z szablonu jako argumentem. TextTransform.exe wywołuje aparat przekształcania tekstu i przetwarza szablonu tekstowego. TextTransform.exe jest zazwyczaj wywoływana przez skrypty. Jednak nie jest zwykle wymagane, ponieważ można dokonać transformacji tekstu, w programie Visual Studio lub w procesie kompilacji.  
@@ -27,11 +28,11 @@ TextTransform.exe jest narzędziem wiersza polecenia, które służy do transfor
   
  TextTransform.exe znajduje się w następującym katalogu:  
   
- **\Program pliki (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**  
+ **\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**  
 
 Professional Edition lub
 
- **\Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+ **\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
  
  Enterprise Edition.
 
