@@ -7,7 +7,7 @@
 ###[3. Tworzenie aplikacji internetowej platformy ASP.NET](get-started-netcore-03.md)
 ###[4. Debugowanie kontenera w usłudze Kubernetes](get-started-netcore-04.md)
 ###[5. Wywoływanie innego kontenera](get-started-netcore-05.md)
-###[6. Projektowanie zespołowe](get-started-netcore-06.md)
+###[6. Praca w udostępnionym środowisku deweloperskim](get-started-netcore-06.md)
 ###[7. Podsumowanie](get-started-netcore-07.md)
 
 ##[.NET Core (Visual Studio 2017)](get-started-netcore-visualstudio-01.md)
@@ -16,7 +16,7 @@
 ###[3. Tworzenie środowiska deweloperskiego na platformie Azure](get-started-netcore-visualstudio-03.md)
 ###[4. Debugowanie kontenera w usłudze Kubernetes](get-started-netcore-visualstudio-04.md)
 ###[5. Wywoływanie innego kontenera](get-started-netcore-visualstudio-05.md)
-###[6. Projektowanie zespołowe](get-started-netcore-visualstudio-06.md)
+###[6. Praca w udostępnionym środowisku deweloperskim](get-started-netcore-visualstudio-06.md)
 ###[7. Podsumowanie](get-started-netcore-visualstudio-07.md)
 
 ##[Node.js (VS Code i CLI)](get-started-nodejs-01.md)
@@ -25,7 +25,8 @@
 ###[3. Tworzenie aplikacji internetowej platformy Node.js](get-started-nodejs-03.md)
 ###[4. Debugowanie kontenera w usłudze Kubernetes](get-started-nodejs-04.md)
 ###[5. Wywoływanie innego kontenera](get-started-nodejs-05.md)
-###[6. Projektowanie zespołowe](get-started-nodejs-06.md)
+###[6. Praca w udostępnionym środowisku deweloperskim](get-started-nodejs-06.md)
 ###[7. Podsumowanie](get-started-nodejs-07.md)
 
+# [Rozwiązywanie problemów](troubleshooting.md)
 
