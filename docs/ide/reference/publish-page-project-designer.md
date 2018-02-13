@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikowania** strony **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.  
@@ -34,10 +34,8 @@ ms.lasthandoff: 01/29/2018
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Lokalizacja folderu publikowania**  
- Określa lokalizację, w którym aplikacja jest opublikowana. Może być ścieżką dysku (`C:\deploy\myapplication`), udział plików (`\\server\myapplication`), serwer FTP (`ftp://ftp.microsoft.com/myapplication`), lub witryny sieci Web (`http://www.microsoft.com/myapplication`). Należy pamiętać, że tekst musi znajdować się w **lokalizację publikowania** polu aby Przeglądaj (**...** ) przycisku do pracy.  
-  
- Domyślnie jest lokalizację publikowania `http://localhost/<projectname>/` Jeśli usługi IIS są zainstalowane, lub `publish\` katalogu, jeśli nie masz zainstalowane usługi IIS. Jeśli komputer jest systemem Windows Vista, wartością domyślną jest zawsze `publish\` katalogu, niezależnie od tego, czy zostały zainstalowane usługi IIS.  
-  
+ Określa lokalizację, w którym aplikacja jest opublikowana. Może być ścieżką dysku (`C:\deploy\myapplication`), udział plików (`\\server\myapplication`), lub serwera FTP (`ftp://ftp.microsoft.com/myapplication`). Należy pamiętać, że tekst musi znajdować się w **lokalizację publikowania** polu aby Przeglądaj (**...** ) przycisku do pracy.  
+   
  **Adres URL folderu instalacji**  
  Opcjonalny. Określa witryny sieci Web, do którego użytkownicy przejdź do instalowania aplikacji. Jest to konieczne, tylko jeśli różni się od **lokalizację publikowania**, na przykład po opublikowaniu aplikacji na serwerze tymczasowym.  
   

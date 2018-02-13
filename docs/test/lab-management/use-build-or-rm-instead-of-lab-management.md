@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Użyj kompilacji i zarządzania zleceniami zamiast Lab Management dla testowanie automatyczne
 
@@ -26,7 +28,7 @@ Jeśli używasz programu Microsoft Test Manager (MTM) i Lab Management do testó
 
 * [Samoobsługowe zarządzanie środowiska SCVMM](#managescvmm)
 
-Kompilowanie i zarządzania zleceniami nie obsługują samoobsługowego tworzenia środowisk SCVMM izolowane od sieci i nie ma żadnych planów, aby zapewnić tę obsługę w przyszłości. Istnieją jednak niektóre [sugerowane alternatyw](#isolatedenvir).
+* [Tworzenie środowisk sieci izolowanych](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Automatyzacja kompilacja wdrażanie testy
@@ -74,14 +76,15 @@ W poniższej tabeli przedstawiono typowe działania używanego do wykonywania w 
 | Utwórz punkt kontrolny środowiska, lub przywrócić środowiska do czystą punktu kontrolnego. | Otwórz środowisko laboratoryjne w przeglądarce środowiska. Wybierz opcję Utwórz punkt kontrolny lub przywracania do poprzedniego punktu kontrolnego. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM wykonywać te operacje na maszynach wirtualnych. Lub, aby wykonać te czynności w ramach większych automatyzacji, obejmują zadań punkt kontrolny z [rozszerzenia integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) jako część środowiska w definicji wersji. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Samoobsługowe tworzenie środowisk sieci izolowanych
+## <a name="creation-of-network-isolated-environments"></a>Tworzenie środowisk sieci izolowanych
 
 Środowisko laboratorium izolowane sieci jest grupą SCVMM maszyn wirtualnych, które można bezpiecznie sklonować bez powodowania konfliktach sieciowych. Zostało to zrobić w programie MTM przy użyciu szeregu instrukcji, które umożliwiają skonfigurowanie maszyn wirtualnych w sieci publicznej zestaw kart interfejsu sieciowego można skonfigurować maszyn wirtualnych w sieci prywatnej, a innego zestawu kart interfejsu sieciowego.
 
-Wraz z rozwojem bardziej rozbudowane publicznej i prywatnej chmurze systemy zarządzania, takich jak [Microsoft Azure](https://azure.microsoft.com/) i [Microsoft Azure stosu](https://azure.microsoft.com/overview/azure-stack/), może wykorzystywać więcej w chmurze narzędzia do zarządzania bezpośrednio podobne możliwości. Nie istnieje sposób równoważne na realizację tego celu, w kompilacji i zarządzania zleceniami.
+Jednak VSTS i TFS w połączeniu z programu SCVMM kompilacji i zadanie wdrażania, można użyć do zarządzania środowisk programu SCVMM, udostępniania izolowanych sieci wirtualnych i zaimplementować scenariusze kompilacja wdrażanie testy. Na przykład można użyć zadania:
 
-Zachęcamy do rozważenia następujących alternatyw, jeśli potrzebujesz izolacji sieci:
+* Tworzenie, przywracania i Usuń punkty kontrolne
+* Tworzenie nowych maszyn wirtualnych przy użyciu szablonu
+* Uruchamianie i zatrzymywanie maszyn wirtualnych
+* Uruchamianie niestandardowych skryptów programu PowerShell dla programu SCVMM
 
-* Jeden motywacją do izolacji sieci została łatwość konfiguracji wielu klonach. Każdy klonowania jest dokładne repliki oryginału, nazwy komputera i ustawień konfiguracji zostaną zachowane, ponieważ jest, a to ułatwia konfigurowanie nowych środowisk. Jednak takie same korzyści powoduje, że mogą wystąpić później w cyklu życia (na przykład w środowisku produkcyjnym), ponieważ sposób koniec wdrożenia aplikacji nie jest w tym samym problemy. **Zamiast tego**, warto rozważyć skonfigurowanie nowych środowisk w taki sam sposób jak skonfigurować produkcyjnych i unikać izolacji sieci.
-
-* Korzystania z infrastruktury chmury publicznej, takich jak [Microsoft Azure](https://azure.microsoft.com/) na potrzeby testów wymaga. Możesz z łatwością użyć [szablonów usługi Azure Resource Manager](https://azure.microsoft.com/documentation/templates/) z [portalu Azure Marketplace](https://azure.microsoft.com/marketplace/) lub [Azure szybki start szablony](https://azure.microsoft.com/documentation/templates/) skonfigurowania grup maszyn wirtualnych, które są połączone za pośrednictwem sieci prywatnej i są dostępne do publicznej sieci tylko przy użyciu serwera proxy lub jumpbox.
+Aby uzyskać więcej informacji, zobacz [Utwórz środowisko wirtualne sieci izolowanej dla scenariuszy kompilacja wdrażanie testy](/vsts/build-release/actions/virtual-networks/create-virtual-network).

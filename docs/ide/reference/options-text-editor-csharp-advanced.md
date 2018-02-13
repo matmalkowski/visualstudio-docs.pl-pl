@@ -1,6 +1,5 @@
 ---
 title: Zaawansowane opcje, Edytor tekstu, C# | Dokumentacja firmy Microsoft
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -9,8 +8,6 @@ ms.tgt_pltfrm:
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 helpviewer_keywords:
 - XML comments
@@ -22,67 +19,96 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 119d6660b476dd025ff8def009369a4e38d09d28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5d6cf8b655151e9b07111b6ac6fd64b6ad3c845f
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
-To okno dialogowe służy do modyfikowania ustawienia formatowania edytora, refaktoryzacji kodu i komentarze dokumentacji XML dla C#. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu** folder, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Zaawansowane**.
+Użyj **zaawansowane** Strona opcji, aby zmodyfikować ustawienia formatowania edytora, code refaktoryzacji i komentarze dokumentacji XML dla C#. Aby uzyskać dostęp do tej strony opcji, należy wybrać **narzędzia** > **opcje**, a następnie wybierz pozycję **Edytor tekstu** > **C#**  >  **Zaawansowane**.
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="analysis"></a>Analiza
+
+- Włącz pełną analizę rozwiązania
+
+   Włącza analizę kodu we wszystkich plikach w rozwiązaniu, nie wystarczy otworzyć plików kodu. Aby uzyskać więcej informacji, zobacz [Pełna analiza rozwiązania](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+- Analiza funkcji edytora w procesie zewnętrznym (eksperymentalne)
+
+## <a name="using-directives"></a>Przy użyciu dyrektyw
+
+- Najpierw umieścić dyrektywy "System" podczas sortowania użyć
+
+- Oddziel przy użyciu grup dyrektywy
+
+- Sugeruj użycie typów w zestawach odwołania
+
+- Sugeruj użycie typów w pakietach NuGet
+
+## <a name="highlighting"></a>Wyróżnianie
+
+- Wyróżnij odwołania do symbolu pod kursorem
+
+   Gdy kursor znajduje się wewnątrz symbolu, lub kliknij symbol, są wyróżnione wszystkich wystąpień tego symbolu w pliku kodu.
+
+- Wyróżnij pokrewne słowa kluczowe pod kursorem
+
 ## <a name="outlining"></a>Tworzenie konspektu
 
-Trybu zwijania przy otwieraniu plików  
-Po wybraniu automatycznie przedstawiono plik kodu, który tworzy zwijanej bloków kodu. Zwiń po raz pierwszy plik jest otwarty, bloki #regions i nieaktywnych bloków kodu.
+- Trybu zwijania przy otwieraniu plików
+
+   Po wybraniu automatycznie przedstawiono plik kodu, który tworzy zwijanej bloków kodu. Zwiń po raz pierwszy plik jest otwarty, bloki #regions i nieaktywnych bloków kodu.
+
+- Pokaż separatory wierszy procedury
+
+- Pokaż obramowanie dla konstrukcji poziomu deklaracji
+
+- Pokaż obramowanie dla poziomu konstrukcji kodu
+
+- Pokaż obramowanie dla komentarzy i regiony preprocesora
+
+- Zwiń #regions podczas zwijanie do definicji
+
+## <a name="fading"></a>Zanikania
+
+- Stopniowe limit nieużywanych deklaracji Using
+
+- Stopniowe kodu jest nieosiągalny
+
+## <a name="block-structure-guides"></a>Przewodniki struktury bloku
+
+- Pokaż przewodniki dotyczące konstrukcji poziomu deklaracji
+
+- Pokaż przewodniki dotyczące poziomu konstrukcji kodu
 
 ## <a name="editor-help"></a>Edytor pomocy
 
-Podkreślenie błędy w edytorze  
-Identyfikuje błędy kompilacji w kodzie. Jeśli ta opcja jest zaznaczona, faliste podkreślenie pojawią się w kolorów, które mają określone znaczenie:
-  
--   Błędy analizy są oznaczone kolorem czerwonym.  
-  
--   Niebieski są błędy kompilacji.  
-  
--   Ostrzeżenia kompilacji są zielone.  
-  
--   Nieprawidłowy [Edytuj i Kontynuuj](../../debugger/edit-and-continue.md) zmiany są purpurowy.  
-  
-Wskaźnika na segment kodu podkreślone, aby wyświetlić etykietkę zawierającą informacje o tym błędzie.  
-  
-Pokaż błędy semantyczne na żywo  
-Identyfikuje niektóre błędy kompilacji bez jawnego kompilacji, na przykład deklarowanie i za pomocą nieznanego typu lub odwołuje się do nieznanej właściwości.  
-  
-Wyróżnij odwołania do symbolu pod kursorem  
-Gdy kursor znajduje się wewnątrz symbolu, lub kliknij symbol, są wyróżnione wszystkich wystąpień tego symbolu w pliku kodu.  
-  
-## <a name="refactoring"></a>Refaktoryzacja
+- Generuj komentarze dokumentacji XML dla / / /
 
-Sprawdź wyniki refaktoryzacji  
-Wyświetla **wyniki weryfikacji** okno dialogowe podczas refaktoryzacji kodu, który zawiera błędy kompilacji lub refaktoryzacji spowodowałoby kodu odwołania powiązać z inną z jej oryginalnej powiązania.  
+   Po wybraniu Wstawia elementy XML dla komentarzy do dokumentacji XML po wpisaniu `///` wprowadzenie komentarza. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [komentarze dokumentacji XML (C# przewodnik programowania w języku)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-Ostrzegaj w elementach członkowskich z odwołaniami do wygenerowanego przez kompilator  
-Wyświetla okno dialogowe z ostrzeżeniem, podczas próby Refaktoryzuj elementu członkowskiego, który ma taką samą nazwę jak odwołanie do wygenerowanego przez kompilator.
+- Wstaw \* na początku nowych wierszy podczas pisania /\* \*/ komentarzy
 
-## <a name="xml-documentation-comments"></a>Komentarze dokumentacji XML
+- Pokaż Podglad śledzenia zmian nazw
 
-Generuj komentarze dokumentacji XML dla / / /  
-Po wybraniu Wstawia elementy XML dla komentarzy do dokumentacji XML po wpisaniu `///` wprowadzenie komentarza. Aby uzyskać więcej informacji na temat dokumentacji XML, zobacz [komentarze dokumentacji XML (C# przewodnik programowania w języku)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+- Wprowadź podziału literałów ciągów na
 
-## <a name="implement-interface"></a>Implementowanie interfejsu
+- Raport nieprawidłowe symbole zastępcze w "ciąg. Format "wywołań
 
-Otaczające wygenerowanego kodu z #region  
-Wstawia #region \< *Nazwa interfejsu*> elementu członkowskiego wokół metody, gdy używany jest implementowanie interfejsu lub zaimplementuj interfejs jawnie.
+## <a name="extract-method"></a>Wyodrębnij metodę
 
-## <a name="organize-usings"></a>Organizacja deklaracji Using
+- Nie umieszczaj klauzul ref lub out w strukturze niestandardowej
 
-Najpierw umieścić dyrektywy "System" podczas sortowania użyć  
-Po wybraniu `System` przy użyciu dyrektywy występować przed innymi przy użyciu dyrektyw. Aby uzyskać więcej informacji, zobacz deklaracje Using Organizuj w [C#, IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).
+## <a name="implement-interface-or-abstract-class"></a>Implementowanie interfejsu lub klasy abstrakcyjnej
+
+- Podczas wstawiania właściwości, zdarzeń i metody, umieść je z innymi elementami członkowskimi z taką samą lub na końcu
+
+- Podczas generowania właściwości, preferowane właściwości zgłaszanie lub użyć automatycznie właściwości
 
 ## <a name="see-also"></a>Zobacz także
 
