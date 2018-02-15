@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracje standardowego i niestandardowego zestawu narzędzi | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: msbuild
@@ -11,46 +11,42 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 511c0b3990471b9b1e4e8e7e6023db8920360b99
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Konfiguracje standardowego i niestandardowego zestawu narzędzi
 Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narzędzi, które służy do tworzenia aplikacji projektu. MSBuild obejmuje standardowych narzędzi, ale można również utworzyć niestandardowe procesami. Aby uzyskać informacje o określaniu zestawu narzędzi, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   
 ## <a name="standard-toolset-configurations"></a>Konfiguracje standardowego zestawu narzędzi  
- MSBuild 12.0 obejmuje następujące procesami standardowe:  
+ MSBuild 15.0 obejmuje następujące procesami standardowe:  
   
 |ToolsVersion|Ścieżka zestawu narzędzi (określoną we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|  
 |------------------|--------------------------------------------------------------------------------------------|  
 |2.0|*Ścieżka instalacji systemu Windows*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Ścieżka instalacji systemu Windows*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Ścieżka instalacji systemu Windows*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
+|15.0|*Ścieżka instalacji usługi Visual Studio*\MSBuild\15.0\bin|  
   
- `ToolsVersion` Wartość określa, który zestaw narzędzi jest używany przez projekt, który generuje Visual Studio. W [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] wartością domyślną jest "12.0" (niezależnie od tego, jakie wersja określona w pliku projektu), ale ten atrybut można zastąpić przy użyciu **/toolsversion** przełącznik w wierszu polecenia. Informacje dotyczące tego atrybutu i inne sposoby określ `ToolsVersion`, zobacz [Zastępowanie ustawienia ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ `ToolsVersion` Wartość określa, który zestaw narzędzi jest używany przez projekt, który generuje Visual Studio. W programie Visual Studio 2017 r, wartością domyślną jest "15.0" (niezależnie od tego, jakie wersja określona w pliku projektu), ale ten atrybut można zastąpić przy użyciu **/toolsversion** przełącznik w wierszu polecenia. Informacje dotyczące tego atrybutu i inne sposoby określ `ToolsVersion`, zobacz [Zastępowanie ustawienia ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
- Jeśli `ToolsVersion` nie zostanie określona, klucz rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\< numer wersji\>\DefaultToolsVersion** definiuje `ToolsVersion`, który jest zawsze 2.0.  
-  
- Następujące klucze rejestru, określ ścieżkę instalacji programu MSBuild.exe.  
+ Visual Studio 2017 nie za pomocą klucza rejestru dla ścieżki dla programu MSBuild. Dla wersji programu MSBuild przed 15.0, czy zostały zainstalowane z programu Visual Studio 2017 następujące klucze rejestru, określ ścieżkę instalacji programu MSBuild.exe.  
   
 |Klucz rejestru|Nazwa klucza|Wartość klucza ciągu|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Ścieżka instalacji programu .NET framework 2.0|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Ścieżka instalacji programu .NET framework 3.5|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Ścieżka instalacji programu .NET framework 4|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|Ścieżka instalacji programu MSBuild|  
   
 ### <a name="sub-toolsets"></a>Podzestawach  
- Jeśli klucz rejestru w poprzedniej tabeli podklucz, MSBuild używa go określić ścieżkę sub zestawu narzędzi mogą zastąpić ścieżki w zestawie narzędzi nadrzędnej. Przykładem jest następujący podklucz:  
+ Jeśli klucz rejestru w poprzedniej tabeli podklucz, MSBuild używa można ustalić ścieżki sub-zestawu narzędzi zastępujący ścieżki w zestawie narzędzi nadrzędnej. Przykładem jest następujący podklucz:  
   
  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
@@ -64,24 +60,24 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narz�
 ## <a name="custom-toolset-definitions"></a>Definicje niestandardowego zestawu narzędzi  
  Podczas standardowych narzędzi nie spełnia wymagań kompilacji, można utworzyć niestandardowego zestawu narzędzi. Na przykład może być scenariusza laboratorium kompilacji musi mieć oddzielnym systemie na potrzeby tworzenia [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Przy użyciu niestandardowego zestawu narzędzi, można przypisać wartości niestandardowych w celu `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchom MSBuild.exe. W ten sposób można także użyć `$(MSBuildToolsPath)` właściwości, aby zaimportować pliki .targets z tego katalogu, a także definiowanie własnych właściwości niestandardowego zestawu narzędzi, które mogą być używane dla każdego projektu, który korzysta z tego zestawu narzędzi.  
   
- Określ niestandardowego zestawu narzędzi w pliku konfiguracyjnym MSBuild.exe (lub narzędzia niestandardowego, który jest hostem aparat MSBuild, jeśli jest to, co w przypadku korzystania). Na przykład pliku konfiguracyjnego MSBuild.exe mogą obejmować następującej definicji zestawu narzędzi, jeśli zamierza zastępują domyślne zachowanie ToolsVersion 12.0.  
+ Określ niestandardowego zestawu narzędzi w pliku konfiguracyjnym MSBuild.exe (lub narzędzia niestandardowego, który jest hostem aparat MSBuild, jeśli jest to, co w przypadku korzystania). Na przykład pliku konfiguracyjnego MSBuild.exe mogą obejmować następującej definicji zestawu narzędzi, jeśli zamierza zastępują domyślne zachowanie ToolsVersion 15.0.  
   
 ```xml  
-<msbuildToolsets default="12.0">  
-   <toolset toolsVersion="12.0">  
+<msbuildToolsets default="15.0">  
+   <toolset toolsVersion="15.0">  
       <property name="MSBuildToolsPath"   
         value="C:\SpecialPath" />  
    </toolset>  
 </msbuildToolsets>  
 ```  
   
- `<msbuildToolsets>`musi także być zdefiniowany w pliku konfiguracji, w następujący sposób.  
+ `<msbuildToolsets>` musi także być zdefiniowany w pliku konfiguracji, w następujący sposób.  
   
 ```xml  
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=12.0.0.0, Culture=neutral,   
+       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  
@@ -90,7 +86,7 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narz�
 > [!NOTE]
 >  Odczyt poprawnie, `<configSections>` musi być pierwszym podsekcji w `<configuration>` sekcji.  
   
- `ToolsetConfigurationSection`jest sekcji konfiguracji niestandardowej, które mogą być używane przez każdego hosta MSBuild dla konfiguracji niestandardowej. Jeśli używasz niestandardowego zestawu narzędzi hosta nie trzeba wykonywać żadnych czynności można zainicjować aparatu kompilacji, z wyjątkiem Podaj wpisy w pliku konfiguracji. Definiując wpisy w rejestrze, można określić procesami komputera, które mają zastosowanie do MSBuild.exe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a wszystkie hosty programu MSBuild.  
+ `ToolsetConfigurationSection` jest sekcji konfiguracji niestandardowej, które mogą być używane przez każdego hosta MSBuild dla konfiguracji niestandardowej. Jeśli używasz niestandardowego zestawu narzędzi hosta nie trzeba wykonywać żadnych czynności można zainicjować aparatu kompilacji, z wyjątkiem Podaj wpisy w pliku konfiguracji. Definiując wpisy w rejestrze, można określić procesami komputera, które mają zastosowanie do MSBuild.exe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a wszystkie hosty programu MSBuild.  
   
 > [!NOTE]
 >  Jeśli plik konfiguracji definiuje ustawienia `ToolsVersion` została już zdefiniowana w rejestrze, dwie definicje nie zostały scalone. Definicja w pliku konfiguracji ma pierwszeństwo i ustawienia w rejestrze tego `ToolsVersion` są ignorowane.  
@@ -99,7 +95,7 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadań, elementy docelowe i narz�
   
 -   **$(MSBuildBinPath)** ustawiono `ToolsPath` wartości określonej w rejestrze lub w pliku konfiguracyjnym gdzie `ToolsVersion` jest zdefiniowany. `$(MSBuildToolsPath)` Ustawienie w rejestrze lub w pliku konfiguracyjnym Określa lokalizację do podstawowych zadań i elementów docelowych. W pliku projektu mapowany do właściwości $(MSBuildBinPath), a także z właściwością $(MSBuildToolsPath).  
   
--   `$(MSBuildToolsPath)`jest zastrzeżony właściwość, która jest dostarczana przez właściwość MSBuildToolsPath, która została określona w pliku konfiguracji. (Ta właściwość zastępuje `$(MSBuildBinPath)`. Jednak `$(MSBuildBinPath)` jest przenoszone zgodność.) Zdefiniuj niestandardowego zestawu narzędzi, albo `$(MSBuildToolsPath)` lub `$(MSBuildBinPath)` , ale nie obu, chyba że mają taką samą wartość.  
+-   `$(MSBuildToolsPath)` jest zastrzeżony właściwość, która jest dostarczana przez właściwość MSBuildToolsPath, która została określona w pliku konfiguracji. (Ta właściwość zastępuje `$(MSBuildBinPath)`. Jednak `$(MSBuildBinPath)` jest przenoszone zgodność.) Zdefiniuj niestandardowego zestawu narzędzi, albo `$(MSBuildToolsPath)` lub `$(MSBuildBinPath)` , ale nie obu, chyba że mają taką samą wartość.  
   
  Można również dodać właściwości niestandardowe, specyficzne dla ToolsVersion do pliku konfiguracji przy użyciu takiej samej składni, który umożliwia dodawanie właściwości MSBuildToolsPath. Aby udostępnić te właściwości niestandardowe do pliku projektu, użyj takiej samej nazwie jak nazwa wartość, która została określona w pliku konfiguracji. Procesami, ale nie podzestawach mogą określić w pliku konfiguracji.  
   

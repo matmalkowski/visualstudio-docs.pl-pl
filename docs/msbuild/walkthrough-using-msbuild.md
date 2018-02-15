@@ -10,17 +10,16 @@ ms.topic: article
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d268ac5eb479a680063eabe4d986657c3ec4013
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Wskazówki: używanie programu MSBuild
 MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przewodniku przedstawiono bloków konstrukcyjnych programu MSBuild i pokazano, jak napisać, manipulowanie nimi oraz debugowania projektów MSBuild. Poznasz:  
@@ -62,45 +61,33 @@ MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przew
      Plik projektu zostanie wyświetlony w edytorze kodu.  
   
 ## <a name="targets-and-tasks"></a>Obiektów docelowych i zadań  
- Pliki projektu są pliki w formacie XML z węzła głównego [projektu](../msbuild/project-element-msbuild.md).  
+Pliki projektu są pliki w formacie XML z węzła głównego [projektu](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Należy określić przestrzeni nazw xmlns w elemencie projektu.  
+Należy określić przestrzeni nazw xmlns w elemencie projektu. Jeśli `ToolsVersion` znajduje się w nowym projekcie, musi być "15.0".
   
- Pracy tworzenia aplikacji wykonuje się za pomocą [docelowej](../msbuild/target-element-msbuild.md) i [zadań](../msbuild/task-element-msbuild.md) elementów.  
+Pracy tworzenia aplikacji wykonuje się za pomocą [docelowej](../msbuild/target-element-msbuild.md) i [zadań](../msbuild/task-element-msbuild.md) elementów.  
   
 -   Zadanie jest najmniejsza jednostka pracy, czyli "atom" kompilacji. Zadania są niezależne wykonywalnego składników, które mogą mieć wejścia i wyjścia. Nie ma żadnych zadań lub aktualnie odwołuje się określona w pliku projektu. Dodawanie zadań do pliku projektu w poniższych sekcjach. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md) tematu.  
   
--   Element docelowy jest nazwane sekwencji zadań. Istnieją dwa cele na końcu pliku projektu, które obecnie są ujęte w komentarz HTML: BeforeBuild i AfterBuild.  
+-   Element docelowy jest nazwane sekwencji zadań. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md) tematu.  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md) tematu.  
-  
- Węzeł projektu jest opcjonalny defaulttargets — atrybut, który wybiera domyślnego obiektu docelowego do kompilacji, w tym przypadku kompilacji.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- Nie zdefiniowano celu kompilacji w pliku projektu. Zamiast niego, zostaną zaimportowane z pliku Microsoft.CSharp.targets przy użyciu [importu](../msbuild/import-element-msbuild.md) elementu.  
+Domyślny obiekt docelowy nie jest zdefiniowany w pliku projektu. Zamiast tego jest on określony w importowanych projektów. [Importu](../msbuild/import-element-msbuild.md) element określa zaimportowane projektów. Na przykład w projekcie C# domyślnego obiektu docelowego zostaną zaimportowane z pliku Microsoft.CSharp.targets. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- Zaimportowane pliki skutecznie są wstawiane do pliku projektu, wszędzie tam, gdzie występuje do nich.  
+Zaimportowane pliki skutecznie są wstawiane do pliku projektu, wszędzie tam, gdzie występuje do nich.  
+
+> [!NOTE]
+> Niektóre typy projektu, takich jak .NET Core, użyj uproszczony schemat z `Sdk` atrybutu zamiast `ToolsVersion`. Te projekty ma niejawne importów i różne domyślne wartości atrybutów.
   
- MSBuild śledzi docelowe kompilacji i gwarantuje, że każdego obiektu docelowego jest wbudowana w nie więcej niż raz.  
+MSBuild śledzi docelowe kompilacji i gwarantuje, że każdego obiektu docelowego jest wbudowana w nie więcej niż raz.  
   
 ## <a name="adding-a-target-and-a-task"></a>Dodanie elementu docelowego i zadania  
  Dodanie elementu docelowego do pliku projektu. Dodaj zadanie do docelowego, który komunikat do drukowania.  
@@ -160,9 +147,6 @@ MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przew
   
  Przez przemian edytora kodu i okna wiersza polecenia, można zmienić pliku projektu i szybko wyświetlić wyniki.  
   
-> [!NOTE]
->  Po uruchomieniu programu msbuild bez przełącznika polecenia /t msbuild tworzy element docelowy określonego przez atrybut DefaultTarget elementu projektu, w tym przypadku "Kompilacji". Powoduje to skompilowanie aplikacji formularzy systemu Windows BuildApp.exe.  
-  
 ## <a name="build-properties"></a>Właściwości kompilacji  
  Właściwości kompilacji są pary nazwa wartość, które prowadzą kompilacji. Kilka właściwości kompilacji są już zdefiniowane w górnej części pliku projektu:  
   
@@ -180,10 +164,10 @@ MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przew
  Wszystkie właściwości są elementy podrzędne elementy PropertyGroup. Nazwa właściwości jest nazwa elementu podrzędnego, a wartość właściwości jest elementem tekst elementu podrzędnego. Na przykład  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- Definiuje właściwości o nazwie TargetFrameworkVersion nadanie mu wartość ciągu "v12.0".  
+ Definiuje właściwości o nazwie TargetFrameworkVersion nadanie mu wartość ciągu "v15.0".  
   
  Tworzenie właściwości mogą być zmieniane w dowolnym momencie. IF  
   
@@ -225,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +17,23 @@ helpviewer_keywords:
 - debugging [Visual Studio], client-side scripts
 - client-side scripts, debugging
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 401ee40e2d296cbef041cb56568b639d05835f04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f1d0073f1623c96c86f3c43b6992385eca38193
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="client-side-script-debugging"></a>Debugowanie skryptu po stronie klienta
 Debuger programu Visual Studio oferuje kompleksowe środowisko debugowania Znajdowanie i usuwanie błędów skryptów po stronie klienta w stron ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Otwieranie dokumentów skryptu  
- Można zobaczyć listy dokumentów skryptu po stronie serwera i klienta w **Eksploratora rozwiązań** do wyświetlenia. Można otworzyć dokumentu skryptu z **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie dokumentów skryptu](../debugger/how-to-view-script-documents.md).  
+Można zobaczyć listy dokumentów skryptu po stronie serwera i klienta w **Eksploratora rozwiązań** do wyświetlenia. Można otworzyć dokumentu skryptu z **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie dokumentów skryptu](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapowanie punktów przerwania  
  W programie Visual Studio nie może bezpośrednio debugowania kodu po stronie serwera, ale można ustawić punktu przerwania w pliku po stronie serwera. Visual Studio automatycznie mapuje punkt przerwania w odpowiedniej lokalizacji w pliku po stronie klienta i tworzy zamapowanych punktu przerwania w kodzie po stronie klienta.  
