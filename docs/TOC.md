@@ -23,9 +23,8 @@
 ### Instalowanie w sieci
 #### [Tworzenie instalacji sieciowej programu Visual Studio](install/create-a-network-installation-of-visual-studio.md)
 #### [Aktualizowanie instalacji sieciowej programu Visual Studio](install/update-a-network-installation-of-visual-studio.md)
-#### [Instalowanie programu Visual Studio za zaporą lub serwerem proxy](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [Poprawianie błędów autoryzacji serwera proxy](ide/reference/proxy-authorization-required.md)
-#### [Umieszczanie na białej liście adresów URL w sieci prywatnej](ide/whitelisting-urls-in-a-private-network.md)
+#### [Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [Rozwiązywanie problemów z błędami sieci podczas instalowania lub używania programu Visual Studio](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### Wdrażanie w przedsiębiorstwie
 #### [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](install/automated-installation-with-response-file.md)
 #### [Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
@@ -188,6 +187,7 @@
 ### [Tworzenie aplikacji pakietu Office i programu SharePoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [Praca z plikami XML i XSLT](xml-tools/xml-tools-in-visual-studio.md)
 ### Dodatkowe samouczki
+#### [Tworzenie aplikacji WPF w języku C# lub Visual Basic](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Samouczek 1: Tworzenie przeglądarki obrazów (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [Krok 1. Tworzenie projektu aplikacji Windows Forms](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [Krok 2. Uruchamianie programu](ide/step-2-run-your-program.md)
