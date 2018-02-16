@@ -5,7 +5,8 @@ ms.custom:
 ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +18,13 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Zainstaluj program Visual Studio za serwerem zapory lub serwera proxy
 
@@ -30,19 +32,19 @@ Instalator programu Visual Studio pobiera pliki z różnych domen i serwerów ic
 
 Jeśli to możliwe w danym środowisku, należy rozważyć dodanie następujących domen z protokołów HTTP i HTTPS.
 
-## <a name="microsoft-domains"></a>Domeny firmy Microsoft
+## <a name="microsoft-domains"></a>Microsoft domains
 | Domain | Cel |
 | ------ | ------- |
 | go.microsoft.com | Rozpoznawanie adresu URL instalacji |
 | aka.MS | Rozpoznawanie adresu URL instalacji |
-| Download.VisualStudio.microsoft.com | Ustawienia lokalizacji pobierania pakietów |
-| witrynie Download.microsoft.com | Ustawienia lokalizacji pobierania pakietów |
-| Download.VisualStudio.com | Ustawienia lokalizacji pobierania pakietów |
-| DL.xamarin.com | Ustawienia lokalizacji pobierania pakietów |
+| download.visualstudio.microsoft.com | Ustawienia lokalizacji pobierania pakietów |
+| download.microsoft.com | Ustawienia lokalizacji pobierania pakietów |
+| download.visualstudio.com | Ustawienia lokalizacji pobierania pakietów |
+| dl.xamarin.com | Ustawienia lokalizacji pobierania pakietów |
 | visualstudiogallery.msdn.microsoft.com | Lokalizacja pobierania rozszerzenia programu Visual Studio |
-| www.VisualStudio.com | Lokalizacja dokumentacji |
+| www.visualstudio.com | Lokalizacja dokumentacji |
 | docs.microsoft.com | Lokalizacja dokumentacji |
-| MSDN.microsoft.com | Lokalizacja dokumentacji |
+| msdn.microsoft.com | Lokalizacja dokumentacji |
 | www.microsoft.com | Lokalizacja dokumentacji |
 | *.windows.net | Zaloguj się w lokalizacji |
 | *.microsoftonline.com | Zaloguj się w lokalizacji |
@@ -52,16 +54,16 @@ Jeśli to możliwe w danym środowisku, należy rozważyć dodanie następujący
 ## <a name="non-microsoft-domains"></a>Domeny inne niż firmy Microsoft
 | Domain | Instaluje te obciążenia |
 | ------ | ------- |
-| Archive.apache.org |  Tworzenie przenośnych za pomocą języka JavaScript <br />(Cordova) |
-| cocos2d x.org | Tworzenie gier z C++ <br />(Cocos) |
-| Download.epicgames.com | Tworzenie gier z C++ <br />(Aparatu unreal Engine) |
-| Download.Oracle.com | Tworzenie przenośnych za pomocą języka JavaScript <br />(Java SDK) <br /><br />Programowanie przenośnych z platformą .NET <br />(Java SDK) |
-| Download.unity3d.com | Tworzenie gier z Unity <br />(Unity) |
+| archive.apache.org |  Tworzenie przenośnych za pomocą języka JavaScript <br />(Cordova) |
+| cocos2d-x.org | Tworzenie gier z C++ <br />(Cocos) |
+| download.epicgames.com | Tworzenie gier z C++ <br />(Aparatu unreal Engine) |
+| download.oracle.com | Tworzenie przenośnych za pomocą języka JavaScript <br />(Java SDK) <br /><br />Programowanie przenośnych z platformą .NET <br />(Java SDK) |
+| download.unity3d.com | Tworzenie gier z Unity <br />(Unity) |
 | netstorage.unity3d.com | Tworzenie gier z Unity <br /> (Unity) |
-| DL.Google.com | Tworzenie przenośnych za pomocą języka JavaScript <br />(Zestaw SDK systemu android i zestawu NDK, Emulator) <br /><br />Programowanie przenośnych z platformą .NET <br />(Zestaw SDK systemu android i zestawu NDK, Emulator) |
+| dl.google.com | Tworzenie przenośnych za pomocą języka JavaScript <br />(Zestaw SDK systemu android i zestawu NDK, Emulator) <br /><br />Programowanie przenośnych z platformą .NET <br />(Zestaw SDK systemu android i zestawu NDK, Emulator) |
 | www.incredibuild.com | Tworzenie gier z C++ <br />(IncrediBuild) |
-| incredibuildvs2017i.azureedge.NET | Tworzenie gier z C++ <br />(IncrediBuild) |
-| www.Python.org | Tworzenie Python <br />(Python) <br /><br />Nauki dane i aplikacje analitycznych <br />(Python) |
+| incredibuildvs2017i.azureedge.net | Tworzenie gier z C++ <br />(IncrediBuild) |
+| www.python.org | Tworzenie Python <br />(Python) <br /><br />Aplikacje do analizy i przetwarzania danych <br />(Python) |
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

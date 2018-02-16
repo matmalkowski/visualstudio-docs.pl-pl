@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9236a36e6041cb22f6206c08662cb16be846cf85
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
 
@@ -81,7 +81,8 @@ Funkcje języka Python można zainstalować w następujących wersjach programu 
 - Program Visual Studio 2012 (Pro edition lub nowszy)
 - Visual Studio 2010 z dodatkiem SP1 (Pro edition lub nowszy; .NET 4.5 wymagana)
 
-Funkcje są w pełni obsługiwane i utrzymywana w najnowszej wersji programu Visual Studio. Funkcje są dostępne w starszych wersjach, ale nie są zachowywane aktywnie.
+> [!Important]
+> Funkcje są w pełni obsługiwane i utrzymywana w najnowszej wersji programu Visual Studio. Funkcje są dostępne w starszych wersjach, ale nie są zachowywane aktywnie.
 
 | Obsługa języka Python | 2017 | 2015 | 2013 Comm | Pulpit 2013 | Sieci web 2013 | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

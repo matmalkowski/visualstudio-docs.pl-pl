@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24eeb39abdee21d5441c88a3fa253d4818fe61e1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definiowanie niestandardowego polecenia dla projektów języka Python
 
@@ -282,7 +282,7 @@ Następujące polecenie, po prostu działa `where` pokazanie Python pliki w fold
 
 ```xml
 <PropertyGroup>
-  <PythonCommands>$(PythonCommands);InstallMyPackage;ShowOutdatedPackages;ShowAllPythonFilesInProject</PythonCommands>
+  <PythonCommands>$(PythonCommands);ShowAllPythonFilesInProject</PythonCommands>
 </PropertyGroup>
 
 <Target Name="ShowAllPythonFilesInProject" Label="Show Python files in project" Returns="@(Commands)">
@@ -296,6 +296,62 @@ Następujące polecenie, po prostu działa `where` pokazanie Python pliki w fold
 ### <a name="run-server-and-run-debug-server-commands"></a>Uruchom serwer i debugowania wykonywania polecenia serwera
 
 Aby zapoznać się z jak **początkowego serwera** i **początkowego debugowania serwera** poleceń dla projektów sieci web są zdefiniowane, sprawdź [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (GitHub).
+
+### <a name="install-package-for-development"></a>Zainstaluj pakiet do tworzenia aplikacji
+
+```xml
+<PropertyGroup>
+  <PythonCommands>PipInstallDevCommand;$(PythonCommands);</PythonCommands>
+</PropertyGroup>
+
+<Target Name="PipInstallDevCommand" Label="Install package for development" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="pip" TargetType="module" Arguments="install --editable $(ProjectDir)"
+        WorkingDirectory="$(WorkingDirectory)" ExecuteIn="Repl:Install package for development">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) używane z uprawnieniami.*
+
+### <a name="generate-windows-installer"></a>Generowanie Instalatora Windows
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWinInstCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWinInstCommand" Label="Generate Windows Installer" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+        Arguments="bdist_wininst --user-access-control=force --title &quot;$(InstallerTitle)&quot; --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+        WorkingDirectory="$(WorkingDirectory)" RequiredPackages="setuptools"
+        ExecuteIn="Repl:Generate Windows Installer">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) używane z uprawnieniami.*
+
+### <a name="generate-wheel-package"></a>Generuj pakiet wheel
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWheelCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWheelCommand" Label="Generate Wheel Package" Returns="@(Commands)">
+
+  <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+      Arguments="bdist_wheel --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+      WorkingDirectory="$(WorkingDirectory)" RequiredPackages="wheel;setuptools"
+      ExecuteIn="Repl:Generate Wheel Package">
+    <Output TaskParameter="Command" ItemName="Commands" />
+  </CreatePythonCommandItem>
+</Target>
+```
+
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub) używane z uprawnieniami.*
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -329,7 +385,7 @@ Oznacza to, że zawartość `<Target>` lub `<CreatePythonCommandItem>` elementy 
 - Wymagane `Target` atrybut jest pusty.
 - Wymagane `TargetType` jest pusta lub zawiera nierozpoznaną wartość atrybutu.
 - Wymagane `ExecuteIn` jest pusta lub zawiera nierozpoznaną wartość atrybutu.
-- `ErrorRegex`lub `WarningRegex` został określony bez ustawienia `ExecuteIn="output"`.
+- `ErrorRegex` lub `WarningRegex` został określony bez ustawienia `ExecuteIn="output"`.
 - Nierozpoznany atrybuty istnieje w elemencie. Na przykład użyto `Argumnets` (zapisana) zamiast `Arguments`.
 
 Wartości atrybutów może być pusta, odwołując się do właściwości, która nie jest zdefiniowany. Na przykład, jeśli używasz token `$(StartupFile)` , ale plik uruchomienia nie została zdefiniowana w projekcie, a następnie token jest rozpoznawany jako ciąg pusty. W takich przypadkach możesz określić wartość domyślną. Na przykład **uruchamiania serwera** i **serwer uruchamiania debugowania** poleceń zdefiniowanych w Bottle, Flask, i domyślnie szablony projektów Django `manage.py` , jeśli nie określono inaczej pliku uruchamiania serwera we właściwościach projektu.

@@ -4,7 +4,8 @@ description: "Dowiedz się, jak zaktualizować Visual Studio, krok po kroku."
 ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,12 +15,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e61def66e68d7f889349d0e7b7337238e220dce
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualizacja do najnowszej wersji programu Visual Studio 2017 r.
 Firma Microsoft aktualizacji programu Visual Studio często rozszerzenie jego funkcjonalność i rozwiąż problemy zgłoszone przez klienta. Aby się upewnić, że masz najbardziej [bieżącej, zoptymalizowane wydania programu Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), należy go zaktualizować. Poniżej przedstawiono sposób.
@@ -84,6 +86,6 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
-* [Modyfikowanie Visual Studio 2017 r.](modify-visual-studio.md)
+* [Modify Visual Studio 2017](modify-visual-studio.md)
 * [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)
 * [Przewodnik Administratorzy programu Visual Studio](visual-studio-administrator-guide.md)
