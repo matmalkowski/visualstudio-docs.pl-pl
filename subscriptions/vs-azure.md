@@ -9,11 +9,11 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Za pomocą programu Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -68,11 +68,16 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://m
 ![Pulpit nawigacyjny platformy Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
-*Wyszukaj aktualizacje w tym miejscu*
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Pytanie: jak przesłać zdarzenia pomocy technicznej z portalu Azure?
+Odpowiedź: przesyłanie zdarzeniem pomocy technicznej z portalu Azure jest procesem trzech etapów.
+1. Aktywowanie korzyści technicznej i uzyskać swój identyfikator dostępu identyfikator umowy.
+2. Połącz umowy pomocy technicznej z subskrypcją platformy Azure. 
+3. Przedstawia zdarzenia pomocy technicznej.
+Odwiedź stronę [pomocy technicznej](/visualstudio/subscriptions/vs-tech-support) dokumentacji, aby uzyskać szczegółowe informacje. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu platformy Azure?  Zobacz następujące zasoby:
-    - Pomoc techniczna: https://azure.microsoft.com/support/options/ 
-    - [Dokumentacja](/azure/)
+    - Pomoc techniczna: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+    - [Dokumentację platformy Azure](/visualstudio/azure/)
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).
 -  Masz pytania dotyczące programu Visual Studio IDE, Visual Studio Team Services lub innych produktach Visual Studio lub usług?  Odwiedź stronę [obsługi programu Visual Studio](https://www.visualstudio.com/support/). 

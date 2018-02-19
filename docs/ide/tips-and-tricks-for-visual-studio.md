@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Porady dotyczące klawiatury dla programu Visual Studio
 
@@ -68,7 +68,7 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 |Znajdź w plikach|Ctrl+Shift+F|
 |Zastąp w plikach|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a>Edytor kodu
+##  <a name="BKMK_CodeEditor"></a> Edytor kodu
 
 |Polecenie|Skrót|Dostępność wersji|
 |-|-|-|
@@ -84,8 +84,8 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 |Blokowanie wybór|Przytrzymaj klawisz Alt i przeciągnij mysz, klawiszy Shift + Alt + Strzałka||
 |Przenieś wiersz w górę lub w dół|Alt + Strzałka w górę / Alt + Strzałka w dół||
 |Zduplikowany wiersz|Ctrl+E,V|Visual Studio 2017 15,6 w wersji preview 2|
-|Rozwiń wybór|Ctrl+W|Visual Studio 2017 wersji 15,5 cala|
-|Wybór umowy|Ctrl+Shift+W|Visual Studio 2017 wersji 15,5 cala|
+|Rozwiń wybór|**Shift**+**Alt**+**=**|Visual Studio 2017 wersji 15,5 cala|
+|Wybór umowy|**Shift**+**Alt**+**-**|Visual Studio 2017 wersji 15,5 cala|
 |Przejdź do definicji|F12||
 |Definicji wglądu|Alt+F12||
 |Przejdź do definicji stosu|Ctrl + Shift + 8 (wstecz), Ctrl + Shift + 7 (dalej)||
@@ -125,9 +125,9 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 
 ## <a name="see-also"></a>Zobacz także
 
-[Skróty klawiaturowe (VSTS i TFS)](/vsts/collaborate/keyboard-shortcuts)  
-[Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)  
-[Visual Studio — porady i wskazówki blogu](http://blogs.msdn.com/b/zainnab)  
-[Przybornika programu Visual Studio na kanale 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio Connect Bugs](http://connect.microsoft.com/VisualStudio)
+- [Skróty klawiaturowe (VSTS i TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)
+- [Visual Studio — porady i wskazówki blogu](http://blogs.msdn.com/b/zainnab)
+- [Przybornika programu Visual Studio na kanale 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Visual Studio Connect Bugs](http://connect.microsoft.com/VisualStudio)

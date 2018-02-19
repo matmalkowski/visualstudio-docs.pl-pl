@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Debugowanie razem Python i C++
 
 Najbardziej regularne debugery Python obsługuje debugowania tylko kodu języka Python. W praktyce jednak Python umożliwia w połączeniu z C lub C++ w scenariuszach wymagających wysokiej wydajności lub możliwości bezpośrednie wywoływanie interfejsów API platformy. (Zobacz [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md) przewodnik.)
 
 Program Visual Studio udostępnia zintegrowane, jednocześnie dla języka Python i natywnego C/C++, debugowanie w trybie mieszanym, pod warunkiem, że wybrano **Python natywnych narzędzi** opcji dla obciążenia Python Programowanie w Visual Studio Instalator.
+
+> [!Note]
+> Debugowanie w trybie mieszanym nie jest dostępna z narzędziami języka Python dla programu Visual Studio 1.x w Visual Studio 2015 lub starszym.
 
 Funkcje debugowania w trybie mieszanym zawierają następujące informacje, jak opisano w tym artykule:
 
@@ -40,12 +43,9 @@ Funkcje debugowania w trybie mieszanym zawierają następujące informacje, jak 
 
 ![Debugowanie w trybie mieszanym](media/mixed-mode-debugging.png)
 
-Wprowadzenie wideo do tworzenia, testowania i debugowania modułów macierzystych C z programem Visual Studio, zobacz [nowości: Tworzenie modułów macierzystych](https://youtu.be/D9RlT06a1EI) (witrynie youtube.com, 9m9s). Wideo ma zastosowanie do programu Visual Studio 2015 i 2017 r.
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> Debugowanie w trybie mieszanym nie jest dostępna z narzędziami języka Python dla programu Visual Studio 1.x.
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | Aby obejrzeć wprowadzenie do tworzenia, testowania i debugowania modułów macierzystych C z programem Visual Studio, zobacz [nowości: Tworzenie modułów macierzystych](https://youtu.be/D9RlT06a1EI) (witrynie youtube.com, 9 m 09s). Wideo ma zastosowanie do programu Visual Studio 2015 i 2017 r. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Włącz debugowanie w trybie mieszanym w projekcie języka Python
 

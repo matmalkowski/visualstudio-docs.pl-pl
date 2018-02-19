@@ -2,7 +2,7 @@
 title: "Omówienie obsługi języka Python w programie Visual Studio (z systemem Windows) | Dokumentacja firmy Microsoft"
 description: "Podsumowanie funkcji dostępnych dla języka Python w programie Visual Studio (znanej także jako narzędzia Python Tools for Visual Studio i narzędzi PTVS), w tym pytania i odpowiedzi (FAQ) macierz obsługi funkcji w wersjach programu Visual Studio."
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9236a36e6041cb22f6206c08662cb16be846cf85
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
 
@@ -50,9 +50,10 @@ Aby rozpocząć:
 
 Zawiera również obciążenia Python [zestaw Azure SDK for Python](azure-sdk-for-python.md), który upraszcza korzystanie z aplikacji systemu Windows, Mac OS X i Linux usług Azure.
 
-Wprowadzenie wideo, zobacz krótkim [narzędzi Python Tools for Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) kursu na Microsoft Virtual Academy (około 22 minut całkowita). 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj seria filmów (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) wprowadzenie do języka Python w programie Visual Studio (całkowita liczba minut 22). |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | Zobacz także następujące filmy wideo na Microsoft Virtual Academy:<ul><li>[Wprowadzenie do programowania w języku Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Języka Python dla początkujących użytkowników: Ciągi i funkcje](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Podstawy języka Python: Lista i pętle](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Pytania TOP Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 

@@ -20,16 +20,16 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d6e207dbadd7ffdb73cf348213cab7627905c28
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: 320b2492d73e0c15d806dac9aac3802bf957f83c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Zainstalować i używać programu Visual Studio i usług Azure za serwerem zapory lub serwera proxy
 Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Zapora lub serwer proxy, będą adresów URL domen, które możesz chcieć "dozwolone" i porty i protokoły, które można otworzyć, tak aby było możliwe najlepsze doświadczenia, podczas instalacji i używania Visual Stu dio i usług Azure.
 
-* **[Zainstaluj program Visual Studio](#install-visual-studio)**: tabela zawiera adresy URL domeny do listy dozwolonych adresów IP tak, aby mieć dostęp do wszystkich składników i obciążeń, które mają.    
+* **[Zainstaluj program Visual Studio](#install-visual-studio)**: te tabele zawierają domeny adresów URL do listy dozwolonych adresów IP tak, aby mieć dostęp do wszystkich składników i obciążeń, które mają.    
 
 * **[Użyj programu Visual Studio i usług Azure](#use-visual-studio-and-azure-services)**: tabela zawiera adresy URL domeny do listy dozwolonych adresów IP i portów i protokołów, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
 

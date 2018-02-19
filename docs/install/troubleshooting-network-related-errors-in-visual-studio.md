@@ -21,11 +21,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7958724c5909f7738d43bc7f502c03c6146e2f2f
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 Mamy rozwiązania najczęstszych błędów dotyczących sieci lub serwera proxy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwer proxy.
@@ -34,7 +34,7 @@ Mamy rozwiązania najczęstszych błędów dotyczących sieci lub serwera proxy,
 
 Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem za pośrednictwem serwera proxy, a serwer proxy blokuje wywołań Visual Studio wysyła do niektórych zasobów sieciowych.
 
-#### <a name="to-fix-this-error"></a>Aby naprawić ten błąd:
+### <a name="to-fix-this-error"></a>Aby naprawić ten błąd:
 
 - Uruchom ponownie program Visual Studio. Powinny być wyświetlane okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
 
@@ -80,7 +80,7 @@ Jeśli używasz programu Visual Studio w sieci prywatnej z zaporą, Visual Studi
 
 Visual Studio korzysta z protokołu Transport Layer Security (TLS) 1.2 nawiązywania połączenia z zasobami sieciowymi. Urządzenia zabezpieczeń w niektórych sieciach prywatnych blokować niektóre połączenia z serwerem, gdy program Visual Studio korzysta z protokołu TLS 1.2.
 
-#### <a name="to-fix-this-error"></a>Aby naprawić ten błąd:
+### <a name="to-fix-this-error"></a>Aby naprawić ten błąd:
 
 Włącz połączenia dla następujących adresów URL:
 
@@ -124,6 +124,6 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
-* [Zainstalować i używać programu Visual Studio za serwerem zapory lub serwera proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)

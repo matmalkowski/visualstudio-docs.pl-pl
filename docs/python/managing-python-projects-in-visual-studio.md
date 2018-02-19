@@ -2,7 +2,7 @@
 title: "Zarządzanie projektami Python aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Objaśnienie jego przeznaczenia projekty w programie Visual Studio, pokazuje, jak utworzyć projektów i zarządzanie nimi dla kodu języka Python i opisano dostępne szablony inny projekt dla języka Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
@@ -40,11 +40,10 @@ Program Visual Studio oferuje różne szablony projektów języka Python, aby sz
 >
 > Zgodnie z opisem w jest proste sprawa do tworzenia projektu programu Visual Studio z istniejącego kodu [tworzenia projektu z istniejących plików](#creating-a-project-from-existing-files).
 
-Aby obejrzeć wprowadzenie do projektów języka Python w programie Visual Studio, zobacz wideo [wprowadzenie kodu Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2m17s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Zobacz też starsze wideo [nowości: Używanie kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8m55s).
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) wprowadzenie do projektów języka Python (2 m 17s). |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | Zobacz też [nowości: Używanie kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8 m 55s). |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Dodawanie plików, przypisanie pliku uruchamiania oraz ustawienia środowiska
 

@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywowanie świadczenia pomocy technicznej w ramach subskrypcji programu Visual Studio
 
-Rozwiąż problemy naprawa w razie awarii w środowiskach nieprodukcyjnych.  (Uwaga: przy korzyści należy aktywować przed wysłaniem żądania pomocy technicznej.)  Visual Studio Enterprise chmury standardowe i roczne subskrypcje otrzymają cztery zdarzenia w czasie subskrypcje w chmurze standard i roczne Visual Studio Professional odbierania dwa zdarzenia.  
+Rozwiąż problemy naprawa w razie awarii w środowiskach nieprodukcyjnych.  (Musi być aktywowany korzyści, aby móc przesłać żądanie obsługi.)  Visual Studio Enterprise chmury standardowe i roczne subskrypcje otrzymają cztery zdarzenia w czasie subskrypcje w chmurze standard i roczne Visual Studio Professional odbierania dwa zdarzenia.  
 
-**Uwaga:** nie wszystkie subskrypcje na danym poziomie mogą otrzymywać zdarzeń pomocy technicznej.  Subskrypcje zakupione w ramach ekwiwalentu pełnego wymiaru czasu, niego, MPN, MCT i innych programów obsługi zdarzeń nie jest wyświetlany.  Jeśli Twoja subskrypcja nie jest przysługiwać zdarzenia pomocy technicznej, na kafelku pomoc techniczna nie będą widoczne w swoje korzyści dostępne. 
+> [!NOTE]
+> Nie wszystkie subskrypcje na danym poziomie mogą otrzymywać zdarzeń pomocy technicznej.  Subskrypcje zakupione w ramach ekwiwalentu pełnego wymiaru czasu, niego, MPN, MCT i innych programów obsługi zdarzeń nie jest wyświetlany.  Jeśli Twoja subskrypcja nie jest przysługiwać zdarzenia pomocy technicznej, na kafelku pomoc techniczna nie będą widoczne w swoje korzyści dostępne. 
 
    ![Kafelek świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ Rozwiąż problemy naprawa w razie awarii w środowiskach nieprodukcyjnych.  (Uw
 
     ![Identyfikator subskrypcji znaleźć świadczenia pomocy technicznej](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**Uwaga:** aktywowania konta pomocy technicznej w innym języku niż angielski, wybierz swój kraj z [tej listy](http://support.microsoft.com/activatesupport).   
+> [!NOTE]
+> Aby aktywować konto pomocy technicznej w innym języku niż angielski, wybierz swój kraj z [tej listy](http://support.microsoft.com/activatesupport).   
 
 # <a name="how-to-submit-an-incident"></a>Jak przesłać zdarzenia
 Po ma identyfikator umowy oraz skonfigurować identyfikator dostępu, gdy będziesz potrzebować pomocy technicznej numer pomocy technicznej dla kraju, przesłać zdarzenia pomocy technicznej [online](http://support.microsoft.com/oas/), lub przesłać zdarzenia za pośrednictwem portalu Azure.  Jeśli chcesz użyć uzyskać pomoc przez telefon, nadal można przesłać zdarzenia w trybie online i specjalistą pomocy technicznej firmy Microsoft spowoduje wywołanie zwrotne.
@@ -85,7 +87,7 @@ Aby użyć programu Visual Studio korzyści z subskrypcji pomocy technicznej dla
 1.  Odwiedź stronę https://portal.azure.com i zaloguj się
 2.  W obszarze nawigacji po lewej stronie kliknij "Pomoc + Obsługa"
 3.  W obszarze "Obsługa" kliknij przycisk "Łącza pomocy technicznej kontraktu"
-4.  Wprowadź Podaj "Identyfikator dostępu" i "ID skontaktuj się z" dostępne w #1 powyżej.
+4.  Wprowadź Podaj "Identyfikator dostępu" i "Identyfikator zamówienia" podany w #1 powyżej.
 Po wykonaniu tych kroków, będzie można wybrać planu pomocy technicznej skojarzone z korzyści z subskrypcji dla programu Visual Studio.  (Nazwa planu może zawierać "MSDN").
 
  

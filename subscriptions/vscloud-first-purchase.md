@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 0c8c8a5941010dc383f544c9b6dabe374515fe3f
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="buying-visual-studio-cloud-subscriptions---making-your-first-purchase"></a>Kupowanie subskrypcji chmury programu Visual Studio — Tworzenie pierwszego zakupu
 

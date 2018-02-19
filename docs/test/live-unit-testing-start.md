@@ -1,6 +1,6 @@
 ---
 title: "Dowiedz się, jak do testowania kodu z aktywnego testu jednostkowego w Visual Studio 2017 | Dokumentacja firmy Microsoft | Dokumentacja firmy Microsoft"
-ms.date: 2017-08-31
+ms.date: 08/31/2017
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
@@ -10,12 +10,13 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 2f2c8ba68419b23d2e74b82e23640c68a6f534aa
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z Live testów jednostkowych programu Visual Studio
 
@@ -68,13 +69,13 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
-   `StringLibrary`ma trzy metody statycznej:
+   `StringLibrary` ma trzy metody statycznej:
 
-      - `StartsWithUpper`Zwraca `true` Jeśli ciąg rozpoczyna się wielką literę; w przeciwnym razie zwraca `false`.
+      - `StartsWithUpper` Zwraca `true` Jeśli ciąg rozpoczyna się wielką literę; w przeciwnym razie zwraca `false`.
       
       - `StartsWithLower`Zwraca `true` Jeśli ciąg rozpoczyna się małą literę; w przeciwnym razie zwraca `false`.
      
-      - `HasEmbeddedSpaces`Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
+      - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
     
 1.  Wybierz **kompilacji**, **Kompiluj rozwiązanie** z menu najwyższego poziomu programu Visual Studio. Visual Studio pomyślnie należy utworzyć bibliotekę.
  
@@ -96,13 +97,13 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
-   `StringLibrary`ma trzy metody statycznej:
+   `StringLibrary` ma trzy metody statycznej:
 
-      - `StartsWithUpper`Zwraca `true` Jeśli ciąg rozpoczyna się wielką literę; w przeciwnym razie zwraca `false`.
+      - `StartsWithUpper` Zwraca `true` Jeśli ciąg rozpoczyna się wielką literę; w przeciwnym razie zwraca `false`.
       
       - `StartsWithLower`Zwraca `true` Jeśli ciąg rozpoczyna się małą literę; w przeciwnym razie zwraca `false`.
      
-      - `HasEmbeddedSpaces`Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
+      - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
     
 1. Kliknij prawym przyciskiem myszy na projekt StringLibrary w **Eksploratora rozwiązań** i wybierz **właściwości**. W **aplikacji** karcie, usuń tekst w **głównej przestrzeni nazw** pola tekstowego, jak przedstawiono na poniższym rysunku. Główna przestrzeń nazw jest definiowana za pomocą [instrukcji Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) w kodzie źródłowym.
 

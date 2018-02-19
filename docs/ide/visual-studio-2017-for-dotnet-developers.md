@@ -11,18 +11,18 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 dla deweloperów platformy .NET
 
 ## <a name="smart-code-editor"></a>Edytor kodu inteligentne
 
-[Dokumentacja: Korzystanie z IntelliSense](using-intellisense.md)  
-[Dokumentacji: Funkcje edycji inteligentne](writing-code-in-the-code-and-text-editor.md)
+- [Dokumentacja: Korzystanie z IntelliSense](using-intellisense.md)
+- [Dokumentacji: Funkcje edycji inteligentne](writing-code-in-the-code-and-text-editor.md)
 
 Visual Studio ma bezpośrednich opis kodu przez kompilator .NET ("Roslyn"), aby umożliwiają edytowanie Inteligentne funkcje, takie jak kolorowanie składni, kod zakończenia, sprawdzanie pisowni błędnie wpisane zmienne, rozpoznawania typu niezaimportowanych zwijania — struktura wizualizatory, [CodeLens](find-code-changes-and-other-history-with-codelens.md), wywołaj hierarchii, stanie hover szybka podpowiedź, parametr pomocy, a także narzędzia do refaktoryzacji, szybkie akcje stosowania i generowanie kodu.
 
@@ -50,14 +50,14 @@ Ponadto przy użyciu kodu sugestie Dowiedz się, najlepsze rozwiązania w zakres
 
 [Dokumentacji: Testowania w programie Visual Studio jednostek](../test/improve-code-quality.md)
 
-Uruchom i debugowanie testy jednostkowe na podstawie MSTest, NUnit lub XUnit testowania struktur dla dowolnej aplikacji przeznaczonych dla platformy .NET Framework, .NET Standard lub .NET Core. Eksploruj i przejrzyj testów w *Eksploratora testów* lub natychmiast zobaczyć wpływ zmian kodu w edytorze z testy jednostkowe *Live testów jednostkowych* (tylko w wersji Enterprise). 
+Uruchom i debugowanie testy jednostkowe na podstawie MSTest, NUnit lub XUnit testowania struktur dla dowolnej aplikacji przeznaczonych dla platformy .NET Framework, .NET Standard lub .NET Core. Eksploruj i przejrzyj testów w *Eksploratora testów* lub natychmiast zobaczyć wpływ zmian kodu w edytorze z testy jednostkowe *Live testów jednostkowych* (tylko w wersji Enterprise).
 
 ![Na żywo testowania w programie Visual Studio jednostek](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>Kod spójności i stylu
 
-[Dokumentacji: Opcje przenośne niestandardowego edytora](create-portable-custom-editor-options.md)  
-[Dokumentacja: EditorConfig kodu stylu ustawień dla platformy .NET](editorconfig-code-style-settings-reference.md)
+- [Dokumentacji: Opcje przenośne niestandardowego edytora](create-portable-custom-editor-options.md)
+- [Dokumentacja: EditorConfig kodu stylu ustawień dla platformy .NET](editorconfig-code-style-settings-reference.md)
 
 Program Visual Studio umożliwia konfigurację Konwencji kodowania, wykrywa naruszeń styl kodowania i zapewnia szybkie — poprawki, aby rozwiązać problemy stylu z **Ctrl +.** Skrót. Konfigurowanie i wymuszać formatowania zespołu, nazw i kodu konwencje stylu w repozytorium — umożliwiając zastępowania wartości na poziomie projektu i pliku — za pomocą *EditorConfig*.
 
@@ -107,8 +107,6 @@ Poniżej przedstawiono popularne skróty programu Visual Studio. Zauważ, że ni
 | **Shift+F12** | Znajdź wszystkie odwołania | Zobacz wszystkie symbolu lub literału odwołań |
 | **Ctrl+.** (również **Alt + wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacje lub innych szybkie akcje są dostępne pod adresem wybór pozycji lub kod kursora |
 | **CTRL**+**E**,**V** | Zduplikowany wiersz | Duplikaty wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 wersji 15,6 preview 2** i nowsze) |
-| **Ctrl**+**W** | Rozwiń wybór | Rozwija bieżące zaznaczenie przez jedną jednostkę strukturalne (dostępne w **programu Visual Studio 2017 wersji 15,5 cala**) |
-| **Ctrl**+**Shift**+**W** | Wybór umowy | Kontrakty (zmniejsza) bieżącego zaznaczenia przez jedną jednostkę strukturalne (dostępne w **programu Visual Studio 2017 wersji 15,5 cala**) |
 | **Ctrl+Q** | Szybkie uruchamianie | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **Ctrl+F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |

@@ -3,21 +3,22 @@ title: "Obsługa nadmiernie oświadczeniem licencji | Dokumentacja firmy Microso
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
 Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d01474a410e2c2b115e5026da5e4d3e5b6783ad5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Obsługa nadmiernie oświadczeniem subskrypcji
-Czasami zamówień są zmieniane po subskrybentów zostały dodane, które mogą skutkować mających więcej przypisane subskrypcje niż liczba licencji należących do firmy. W takim przypadku karcie subskrybentów Pokaż alert i udostępniają więcej informacji. 
-**Uwaga: Overclaimed scenariuszy nie będzie dozwolone w programach licencji Open.**
+Czasami zamówień są zmieniane po subskrybentów zostały dodane, które mogą skutkować mających więcej przypisane subskrypcje niż liczba licencji należących do firmy. W takim przypadku karta subskrybentów zawiera alert oraz przedstawiono dodatkowe informacje. 
+> [!NOTE] 
+> Overclaimed scenariusze nie są dozwolone w programach licencji Open.
 
 ![Powiadomienia o nadmiernie oświadczeniem subskrypcji](_img\over-claimed\over-claimed-alert.png)
 

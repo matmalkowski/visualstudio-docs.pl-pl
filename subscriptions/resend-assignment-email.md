@@ -1,22 +1,34 @@
 ---
-title: "Jak ponownie przypisania subskrypcję wiadomości E-mail z centrum VLSC | Dokumentacja firmy Microsoft"
+title: "Jak ponownie przypisania subskrypcję wiadomości E-mail z Manage.visualstudio.com lub VLSC | Dokumentacja firmy Microsoft"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Jak ponownie wysłać wiadomości E-mail przypisania subskrypcji z centrum VLSC:
+# <a name="how-to-resend-subscription-assignment-emails"></a>Jak ponowne wysyłanie wiadomości E-mail przypisania subskrypcji:
 
+Kroki niezbędne do wysłania wiadomości e-mail przypisania zależą od portalu, których używasz do zarządzania subskrypcjami. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Ponowne wysyłanie wiadomości e-mail przypisania z wewnątrz manage.visualstudio.com
+
+Proces ponownego wysłania wiadomości e-mail przypisania z portalu manage.visualstudio.com jest bardzo prosty:
+
+1. Odwiedź stronę [manage.visualstudio.com](https://manage.visualstudio.com) portalu i zaloguj się. 
+2. Użyj **filtru** kartę, aby wyszukać subskrybenta, do którego chcesz ponownie wysłać wiadomość e-mail przypisania. (Aby uzyskać więcej informacji dotyczących filtrowania, zobacz [wyszukiwania dla subskrypcji](/visualstudio/subscriptions/search-license).)
+3. Polecenie subscriber(s).  Można użyj kombinacji klawisza Ctrl + kliknięcie lub Shift + kliknij, aby wybrać wiele subskrybentów.
+4. Kliknij przycisk **Wyślij ponownie** w górnej części wyników wyszukiwania.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Ponowne wysyłanie wiadomości e-mail przypisania w w centrum VLSC
 Gdy subskrypcja została przypisana do subskrybenta w centrum VLSC i subskrybenta żądań jest ponowne wysłanie wiadomości e-mail przypisania, można uzyskać, edytując informacje pocztą e-mail abonenta i zmianę wstecz do oryginalnego adresu. To automatycznie wyzwoli, ponowne wysyłanie wiadomości e-mail przypisania.
 
 Wykonaj poniżej instrukcjami, aby ponownie wysłać wiadomość e-mail przypisania:
@@ -36,4 +48,3 @@ Spowoduje to VLSC rozpoznaje, że wprowadzono zmian w subskrypcji i ponowne wys�
 
 > [!NOTE]
 > - Nowo przypisanej subskrypcji automatycznie wygeneruje przypisania wiadomości e-mail. Powyższe jest konieczne tylko wtedy, gdy użytkownik zażąda się, że nowe powiadomienie e-mail przypisania lub powiadomienia nie są wysyłane z dowolnego powodu.
-> - Ta procedura nie jest potrzebna do ponownego wysłania wiadomości e-mail przydziału dla subskrypcji przypisane za pośrednictwem https://manage.visualstudio.com.  Aby ponownie wysłać wiadomości e-mail przypisania do subskrybentów w portalu, po prostu zaznacz subscriber(s) i kliknij **Wyślij ponownie** na górze listy subskrybentów.  

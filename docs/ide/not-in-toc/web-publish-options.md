@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Jakie opcje publikowania jest dla mnie odpowiednia?
 
@@ -50,6 +50,8 @@ Uruchamia usługę aplikacji hostowanych w chmurze maszyn wirtualnych na platfor
 - Wszystkie dostosowania poziomu komputera, na serwerach, które host aplikacji sieci web nie jest konieczne.
 
 > Jeśli chcesz używać usługi Azure App Service w własnego centrum danych lub innych komputerów lokalnych, możesz to zrobić za pomocą [stosu Azure](https://azure.microsoft.com/overview/azure-stack/).
+
+Aby uzyskać więcej informacji na temat publikowania aplikacji platformy ASP.NET Core, zobacz [publikowania aplikacji sieci web platformy ASP.NET Core w usłudze Azure App Service przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Maszyny wirtualne platformy Azure
 
@@ -83,7 +85,7 @@ Należy pamiętać, że jeśli z jakiegokolwiek powodu (na przykład dostęp do 
 - Należy tylko wdrożenia lokalnego testu.
 - Chcesz zbadać i potencjalnie niezależnie modyfikować pliki aplikacji przed ich wysłaniem do innego cel wdrożenia.
 
-
+Aby uzyskać więcej informacji na temat wdrażania aplikacji .NET Core, zobacz [wdrażanie .NET Core aplikacji za pomocą programu Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Niestandardowe elementy docelowe
 
@@ -103,3 +105,5 @@ Można utworzyć dowolną liczbę niestandardowych wdrażania profilów w progra
 - Usługi w chmurze jest używana na Podaj innych niż Azure, który jest możliwy za pośrednictwem adresów URL.
 - Chcesz wdrożyć przy użyciu poświadczeń innych niż te, które można używać w programie Visual Studio lub te bezpośrednio powiązane konta platformy Azure.
 - Chcesz usunąć pliki z docelowej każdym wdrożeniu.
+
+Aby uzyskać więcej informacji dotyczących publikowania w usługach IIS, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) i [zdalnego debugowania ASP.NET na komputerze zdalnym IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

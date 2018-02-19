@@ -11,6 +11,7 @@ f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
 - MSBuild.ResolveAssemblyReference.FoundConflict
+- MSBuild.ResolveAssemblyRedirects.SuggestedRedirects
 dev_langs:
 - VB
 - CSharp
@@ -26,11 +27,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference — Zadanie
 Określa wszystkie zestawy, które są zależne od określonych zestawów. Obejmuje to drugie i `n`th kolejność zależności.  
@@ -53,14 +54,14 @@ Określa wszystkie zestawy, które są zależne od określonych zestawów. Obejm
 |`FilesWritten`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera elementy zapisywane na dysku.|  
 |`FindDependencies`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, będzie można znaleźć zależności. W przeciwnym razie znajdują się odwołania do głównej. Wartość domyślna to `true`.|  
 |`FindRelatedFiles`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, powiązane pliki takie jak .pdb, pliki i pliki XML zostaną znalezione. Wartość domyślna to `true`.|  
-|`FindSatellites`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, zestawy satelickie zostaną znalezione. Wartość domyślna to`true.`|  
+|`FindSatellites`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, zestawy satelickie zostaną znalezione. Wartość domyślna to `true.`|  
 |`FindSerializationAssemblies`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie zadania wyszukiwania zestawów serializacji. Wartość domyślna to `true`.|  
 |`FullFrameworkAssemblyTables`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa elementy, które mają metadanych "FrameworkDirectory" do skojarzenia z katalogiem określonego framework lista redystrybucyjna. Jeśli skojarzenie nie jest możliwe, zostanie zarejestrowany błąd. Logikę resolve zestawu odwołania (RAR) używa docelowym katalogu platformy, jeśli nie ustawiono FrameworkDirectory..|  
 |`FullFrameworkFolders`|Opcjonalne <xref:System.String?displayProperty=fullName> `[]` parametru.<br /><br /> Określa zestaw folderów, które zawierają katalogu redistlist —. Ten katalog reprezentuje pełna platformy dla profilu danego klienta, na przykład %programfiles%\reference assemblies\microsoft\framework\v4.0.|  
 |`FullTargetFrameworkSubsetNames`|Opcjonalne `String[]` parametru.<br /><br /> Zawiera listę nazw podzestawu framework docelowych. Jeśli nazwa podzbioru, na liście pasujący w `TargetFrameworkSubset` nazwy właściwości, następnie system wyklucza tego podzestawu platformy docelowej określonej w czasie kompilacji.|  
-|`IgnoreDefaultInstalledAssemblyTables`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie szuka zadania i używa dodatkowe zainstalowany zestaw tabel (lub "Listy redystrybucyjnej") która znajdują się w katalogu \RedistList w `TargetFrameworkDirectories`. Wartość domyślna to`false.`|  
-|`IgnoreDefaultInstalledAssemblySubsetTables`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie szuka zadania i używa dodatkowe zainstalowany zestaw tabel podzestawu (lub "Zawiera podzbiór") która znajdują się w katalogu \SubsetList w `TargetFrameworkDirectories`. Wartość domyślna to`false.`|  
-|`InstalledAssemblySubsetTables`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Zawiera listę plików XML, określających zestawy, które powinny być w podzbiorze docelowej.<br /><br /> Opcjonalnie elementy na tej liście można określić metadanych "FrameworkDirectory", aby skojarzyć`InstalledAssemblySubsetTable`<br /><br /> z katalogiem określonej struktury.<br /><br /> Jeśli istnieje tylko jeden `TargetFrameworkDirectories` elementu, a następnie wszystkie elementy na tej liście, które nie mają w metadanych "FrameworkDirectory" są traktowane jakby ustawiono unikatową wartość, która została przekazana do `TargetFrameworkDirectories`.|  
+|`IgnoreDefaultInstalledAssemblyTables`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie szuka zadania i używa dodatkowe zainstalowany zestaw tabel (lub "Listy redystrybucyjnej") która znajdują się w katalogu \RedistList w `TargetFrameworkDirectories`. Wartość domyślna to `false.`|  
+|`IgnoreDefaultInstalledAssemblySubsetTables`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, następnie szuka zadania i używa dodatkowe zainstalowany zestaw tabel podzestawu (lub "Zawiera podzbiór") która znajdują się w katalogu \SubsetList w `TargetFrameworkDirectories`. Wartość domyślna to `false.`|  
+|`InstalledAssemblySubsetTables`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Zawiera listę plików XML, określających zestawy, które powinny być w podzbiorze docelowej.<br /><br /> Opcjonalnie elementy na tej liście można określić metadanych "FrameworkDirectory", aby skojarzyć `InstalledAssemblySubsetTable`<br /><br /> z katalogiem określonej struktury.<br /><br /> Jeśli istnieje tylko jeden `TargetFrameworkDirectories` elementu, a następnie wszystkie elementy na tej liście, które nie mają w metadanych "FrameworkDirectory" są traktowane jakby ustawiono unikatową wartość, która została przekazana do `TargetFrameworkDirectories`.|  
 |`InstalledAssemblyTables`|Opcjonalne `String` parametru.<br /><br /> Zawiera listę plików XML, które określają zestawy, które powinny być zainstalowane na komputerze docelowym.<br /><br /> Gdy `InstalledAssemblyTables` jest ustawiona, wcześniejszych wersji zestawów na liście są scalane w nowszej wersji, które są wymienione w pliku XML. Ponadto zestawy, które mają ustawienie InGAC = 'true' są uznawane za wymagania wstępne i są ustawione na CopyLocal = 'false', chyba że jawnie przesłonięte.<br /><br /> Opcjonalnie elementy na tej liście można określić metadanych "FrameworkDirectory", aby skojarzyć `InstalledAssemblyTable` z katalogiem określonej struktury.  Jednak to ustawienie jest ignorowane, chyba że nazwa Redist rozpoczyna się od<br /><br /> "Microsoft-Windows-CLRCoreComp".<br /><br /> Jeśli istnieje tylko jeden `TargetFrameworkDirectories` elementu, a następnie wszystkie elementy na tej liście, które nie mają w metadanych "FrameworkDirectory" są traktowane jakby ustawiono unikatową wartość, która została przekazana<br /><br /> to `TargetFrameworkDirectories`.|  
 |`LatestTargetFrameworkDirectories`|Opcjonalne `String[]` parametru.<br /><br /> Określa listę katalogów, które zawierają listy redystrybucyjnej najbardziej aktualne Framework, które można zastosować na komputerze. Jeśli to nie jest ustawiony najwyższy zainstalowany na tym komputerze identyfikator platformy elementu docelowego podanego framework jest używana.|  
 |`ProfileName`|Opcjonalne `String` parametru.<br /><br /> — Nazwa profilu framework ma zostać skonfigurowany. Na przykład klienta, sieci Web lub sieci.|  
@@ -73,7 +74,7 @@ Określa wszystkie zestawy, które są zależne od określonych zestawów. Obejm
 |`SerializationAssemblyFiles`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Zawiera wszystkie zestawy serializacji XML znaleziono. Te elementy są oznaczone CopyLocal = true, jeśli i tylko wtedy, gdy odwołanie lub zależności, który spowodował ten element, aby istnieje CopyLocal = true.<br /><br /> `Boolean` Metadanych CopyLocal wskazuje, czy dane odwołanie, powinien zostać skopiowany do katalogu wyjściowego.|  
 |`Silent`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, nie komunikaty są rejestrowane. Wartość domyślna to `false`.|  
 |`StateFile`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę pliku, która wskazuje, gdzie zapisać pośredniego kompilacji stanu dla tego zadania.|  
-|`SuggestedRedirects`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Zawiera jeden element dla każdego różne powodujące konflikt tożsamości zestawu, niezależnie od wartości `AutoUnify` parametru. Obejmuje to co kultury i PKT znaleziony, która nie ma wpisu odpowiedniego bindingRedirect w pliku konfiguracyjnym aplikacji.<br /><br /> Każdy element opcjonalnie zawiera następujące informacje:<br /><br /> -   `Include`Atrybut: zawiera pełną nazwę rodziny zestawu z wartości pola wersji 0.0.0.0<br />-   `MaxVersion`Metadane elementu: zawiera numer wersji maksymalnej.|  
+|`SuggestedRedirects`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy tylko do odczytu.<br /><br /> Zawiera jeden element dla każdego różne powodujące konflikt tożsamości zestawu, niezależnie od wartości `AutoUnify` parametru. Obejmuje to co kultury i PKT znaleziony, która nie ma wpisu odpowiedniego bindingRedirect w pliku konfiguracyjnym aplikacji.<br /><br /> Każdy element opcjonalnie zawiera następujące informacje:<br /><br /> -   `Include` Atrybut: zawiera pełną nazwę rodziny zestawu z wartości pola wersji 0.0.0.0<br />-   `MaxVersion` Metadane elementu: zawiera numer wersji maksymalnej.|  
 |`TargetedRuntimeVersion`|Opcjonalne `String` parametru.<br /><br /> Określa wersję środowiska uruchomieniowego do obiektu docelowego, na przykład 2.0.57027 lub v2.0.57027.|  
 |`TargetFrameworkDirectories`|Opcjonalne `String[]` parametru.<br /><br /> Określa ścieżkę katalogu docelowego framework. Ten parametr jest wymagany, można określić stanu CopyLocal wynikowy elementów.<br /><br /> Jeśli ten parametr nie jest określony, wynikowy elementów będzie mieć wartość CopyLocal `true` chyba że jawnie mają `Private` wartość metadanych `true` na ich elementu źródłowego.|  
 |`TargetFrameworkMoniker`|Opcjonalne `String` parametru.<br /><br /> TargetFrameworkMoniker do monitorowania, jeśli istnieje. Służy do rejestrowania.|  

@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Przy użyciu kluczy produktu w ramach subskrypcji programu Visual Studio
 
@@ -90,7 +90,8 @@ Jak widać, dostępne są różne wersje programu Visio 2010 na liście.  Jeden 
 ### <a name="exporting-your-claimed-keys"></a>Eksportowanie kluczy oświadczeniem
 Możesz wyeksportować listę wszystkich kluczy, które zostały przejęte, wraz z dużej liczby statycznych i innych kluczy, które są automatycznie oznaczane jako "przejęte" dla Ciebie.  
 
-**Ważne: Jeśli subskrypcja wygaśnie, nie będzie można oświadczeń nowych kluczy lub wyeksportować oświadczeniem kluczy.** 
+> [!IMPORTANT] 
+> Jeśli subskrypcja wygaśnie, nie można żądać nowych kluczy lub wyeksportować z oświadczeniem keys.* * 
 
 Aby wyeksportować klucze, wystarczy kliknąć na **wyeksportować wszystkie klucze** łącza po prawej stronie kluczy produktu.  Zostanie utworzony plik .xml prawo KeysExport.xml i będziesz mieć możliwość otworzyć lub zapisać plik.  Należy otworzyć plik przy użyciu aplikacji może obsługiwać plików XML.  Na przykład można otworzyć pliku jako tylko do odczytu skoroszytu programu Excel.  
 

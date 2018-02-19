@@ -2,7 +2,7 @@
 title: "Instalowanie obsługi języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Szczegółowe instrukcje dotyczące sposobu instalowania narzędzi Python Tools dla programu Visual Studio (PTVS) w Visual Studio 2017 r. 2015, 2013, 2012 i 2010, łącznie z opcjami i lokalizację instalacji."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0ef5cba2924c33857a8366105bde1f933a1ae9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalowanie obsługi języka Python w programie Visual Studio w systemie Windows
 
@@ -43,7 +43,7 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Pobierz i Uruchom najnowszą wersję Instalatora programu Visual Studio 2017 r. Należy zainstalować wersję 15,2 i powyżej, aby używać języka Python.
+1. Pobierz i Uruchom najnowszą wersję Instalatora programu Visual Studio 2017 r. Jeśli masz już zainstalowanego programu Visual Studio, uruchom Instalatora programu Visual Studio i przejdź do kroku 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Zainstaluj program Visual Studio 2017 Community</a>
@@ -55,7 +55,10 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
 
     ![Obciążenie programowania Python w Instalatorze programu Visual Studio](media/installation-python-workload.png)
 
-    Opcjonalnie: podczas pracy z analizy danych, należy również rozważyć **nauki dane i aplikacje analitycznych** obciążenia (15,2 2017 r w usłudze Visual Studio i nowsze). To obciążenie obejmuje obsługę języka Python, a także języków R i F #. Aby uzyskać więcej informacji, zobacz [nauki danych i obciążenia aplikacji analitycznych](../rtvs/data-science-workload.md).
+    Opcjonalnie: podczas pracy z analizy danych, należy również rozważyć **nauki dane i aplikacje analitycznych** obciążenia. To obciążenie obejmuje obsługę języka Python, a także języków R i F #. Aby uzyskać więcej informacji, zobacz [nauki danych i obciążenia aplikacji analitycznych](../rtvs/data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Python i analizy danych obciążenia są dostępne tylko w wersji Visual Studio 2017 15,2 i nowszym.
 
 1. Po prawej stronie Instalatora wybierz dodatkowe opcje, w razie potrzeby. Pomiń ten krok, aby zaakceptować wartości domyślne.
 
@@ -63,7 +66,7 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
 
     | Opcja | Opis |
     | --- | --- |
-    | Dystrybucje Python | Wybierz dowolną kombinację wariantów 32-bitowe i 64-bitowe języka Python, 2, Python 3 Anaconda2 i Anaconda3 dystrybucji, które mają pracować z. Każdy zawiera dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, w szczególności to platforma nauki Otwórz danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można powrócisz do Instalator programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.) |
+    | Dystrybucje Python | Wybierz dowolną kombinację wariantów 32-bitowe i 64-bitowe języka Python, 2, Python 3 Anaconda2 i Anaconda3 dystrybucji, które mają pracować z. Każdy zawiera dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, w szczególności to platforma nauki Otwórz danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można powrócisz do Instalator programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: Jeśli po zainstalowaniu dystrybucji poza Instalator programu Visual Studio, nie istnieje potrzeba do sprawdzenia odpowiednika tej opcji w tym miejscu. Visual Studio automatycznie wykrywa istniejącej instalacji języka Python. Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). |
     | Obsługa szablonów Cookiecutter | Instaluje Cookiecutter graficznego interfejsu użytkownika do odnalezienia szablony, wprowadź opcje szablonu oraz tworzenie projektów i pliki. Zobacz [przy użyciu rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md). |
     | Obsługa sieci web języka Python | Instaluje narzędzia do tworzenia aplikacji sieci web w tym HTML, CSS i JavaScript edycji pomocy technicznej, wraz z szablonów dla projektów przy użyciu struktury Bottle, Flask i Django. Zobacz [szablony projektów sieci web języka Python](python-web-application-project-templates.md). |
     | Obsługa języka Python IoT | Obsługuje tworzenie Windows IoT Core za pomocą języka Python. |
@@ -74,7 +77,9 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
 
     ![Uruchamianie, modyfikowanie, modyfikowania lub odinstalowanie programu Visual Studio z Instalatorem](media/installation-vs-launch.png)
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) na temat instalowania obsługi języka Python w programie Visual Studio.|
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -107,11 +112,11 @@ Dla programu Visual Studio 2017 r, Python obciążenie jest zainstalowany w `%Pr
 Dla programu Visual Studio 2015 i starszych wersji ścieżki instalacji są następujące:
 
 - 32-bitowe:
-  - Ścieżka:`%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Lokalizacja ścieżka rejestru:`HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Ścieżka: `%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Lokalizacja ścieżka rejestru: `HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
 - 64-bitowe:
-  - Ścieżka:`%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Lokalizacja ścieżka rejestru:`HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Ścieżka: `%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Lokalizacja ścieżka rejestru: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
 
 gdzie:
 

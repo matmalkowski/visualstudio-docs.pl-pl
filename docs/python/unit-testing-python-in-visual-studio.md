@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 662ac8a1d8eac3e23d98bd9978a16e286a26d145
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Ustawienia testu jednostkowego dla kodu języka Python
 
@@ -29,9 +29,11 @@ Testy jednostkowe są fragmenty kodu, które przetestować innych jednostek kodu
 
 Python często używa testów jednostkowych do weryfikacji scenariuszy podczas projektowania programu. Obsługa języka Python w programie Visual Studio obejmuje odnajdywania, wykonywanie i debugowanie testów jednostkowych w ramach procesu tworzenia, bez konieczności uruchamiania testów oddzielnie.
 
-Ten temat zawiera krótki konspektu jednostki testowanie możliwości programu Visual Studio z języka Python. Aby uzyskać więcej informacji na temat testowania ogólnie jednostek zobacz [kod testu jednostkowego](../test/unit-test-your-code.md). Zobacz też wideo [testowania Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Ten temat zawiera krótki konspektu jednostki testowanie możliwości programu Visual Studio z języka Python. Aby uzyskać więcej informacji na temat testowania ogólnie jednostek zobacz [kod testu jednostkowego](../test/unit-test-your-code.md).
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) w jednostce testowania w języku Python (2 m 31s). |
 
 ## <a name="discovering-and-viewing-tests"></a>Wykrywanie i wyświetlanie testów
 

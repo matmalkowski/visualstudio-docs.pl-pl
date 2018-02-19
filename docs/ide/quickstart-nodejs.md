@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: javascript
@@ -12,13 +13,15 @@ ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 12c848797b167038b02106ca3392cac50171f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
@@ -37,6 +40,10 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
      ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)  
 
     Program Visual Studio tworzy i nowe rozwiązanie i otworzy w projekcie. **Server.js** otwarty w edytorze.
+
+4. Jeśli nie masz środowisko uruchomieniowe Node.js już zainstalowany, zainstaluj go z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
+
+    Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego można skonfigurować projektu do odwołania zainstalowanego środowiska uruchomieniowego.
 
 ## <a name="explore-the-ide"></a>Eksploruj IDE  
 

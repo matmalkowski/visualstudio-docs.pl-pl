@@ -1,9 +1,10 @@
 ---
-title: "Omówienie programu Visual Studio | Dokumentacja firmy Microsoft"
+title: "Omówienie programu Visual Studio 2017 | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/09/2017
+ms.date: 02/05/2018
 ms.reviewer: 
 ms.suite: 
+ms.technology: vs-ide-general
 ms.topic: article
 author: gewarren
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8fc4946c79b16b3fb28e0991ff38cfe96e22a9e1
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -49,7 +50,7 @@ Można korzystać z usług platformy Azure dla aplikacji przy użyciu połączen
 
 [HockeyApp](https://www.visualstudio.com/hockey-app/) ułatwia rozprowadzaj wersje beta, Zbieraj raporty awarii na żywo i uzyskuj opinie od rzeczywistych użytkowników. Ponadto można zintegrować interfejsami API REST usługi Office 365 aplikację do nawiązania połączenia danych przechowywanych w chmurze. Aby uzyskać więcej informacji, zobacz [te przykłady GitHub](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
-[Usługa Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) pomaga wykrywać i diagnozować problemy w aplikacjach i usług sieci web. Usługi Application Insights zostanie też pomóc Ci zrozumieć, co użytkownicy faktycznie zrobić z aplikacji, aby zoptymalizować środowisko użytkownika.
+[Usługa Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) pomaga wykrywać i diagnozować problemy w aplikacjach i usług sieci web. Usługi Application Insights ułatwia także zrozumieć, co użytkownicy faktycznie zrobić z aplikacją, aby zoptymalizować środowisko użytkownika.
 
 ### <a name="create-apps-for-the-web"></a>Tworzenie aplikacji dla sieci web
 
@@ -59,114 +60,105 @@ Aby uzyskać więcej informacji, zobacz [nowoczesnych narzędzi sieci Web](https
 
 ### <a name="build-cross-platform-apps-and-games"></a>Tworzenie wieloplatformowych aplikacji i gier
 
-Visual Studio umożliwia tworzenie aplikacji i gier dla systemu Android, iOS, Linux, Windows i innych urządzeń. Dowiedz się więcej o go w [i Platform Mobile Development](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universal Windows Apps pomóc wykorzystać kod na wielu platformach. Zobacz [uniwersalnych aplikacji systemu Windows](https://dev.windows.com/windows-apps) Aby uzyskać więcej informacji.
+Visual Studio umożliwia tworzenie aplikacji i gier dla macOS, Linux i Windows, a także dla systemu Android, iOS i innych urządzeniach przenośnych.
 
-Wybierz pozycję Narzędzia, które na podstawie wymagań aplikacji i język, którego chcesz użyć:
+- Tworzenie [.NET Core](/dotnet/core/) aplikacji uruchamianych w systemie Windows, system macOS i Linux.
 
-- [Xamarin dla Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): typowe kodu w języku C# dla wszystkich urządzeń.
+- Tworzenie aplikacji mobilnych dla systemu iOS, Android i Windows w języku C# i F # za pomocą [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
-- [Visual Studio Tools for Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md): typowy kod podstawowy dla HTML, CSS i JavaScript lub maszynie.
+- Użyj technologii sieci web standard&mdash;HTML, CSS i JavaScript&mdash;do tworzenia aplikacji mobilnych dla systemu iOS, Android i Windows za pomocą [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md): tworzenie gier 2W/3W w języku C#.
+- Tworzenie gier 2W i 3W w języku C# za pomocą [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- [Programowanie wieloplatformowych aplikacji dla C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): udostępnionych biblioteki kodu i aplikacji w języku C++.
+- Aplikacje natywne C++ kompilacji dla systemów iOS, Android i Windows i udziału typowy kod w bibliotekach skompilowany dla systemu iOS, Android i Windows, przy użyciu [C++ dla aplikacji dla wielu platform](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
-- [Visual Studio Emulator for Android](../cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: debugowania i testowania aplikacji systemu Android bez względu na IDE.
+- Wdrażanie, testowanie i debugowanie aplikacji systemu Android z [emulatora systemu Android](../cross-platform/visual-studio-emulator-for-android.md).
 
-[Tworzyć gry przy użyciu programu Visual Studio](https://www.visualstudio.com/vs/game-development/) z narzędzi takich jak DirectX, Unity, niezr i Cocos do tworzenia gier.
-
-Visual Studio można wykonać wykonywanie wielu czynności więcej pomocy. Aby uzyskać bardziej szczegółowy wykaz, zobacz [programu Visual Studio IDE](https://www.visualstudio.com/vs/).
+Visual Studio można wykonać wykonywanie wielu czynności więcej pomocy. Aby uzyskać bardziej szczegółowy wykaz, zobacz [www.visualstudio.com](https://www.visualstudio.com/vs/).
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 
 Aby rozpocząć pracę, Pobierz program Visual Studio i zainstaluj go w systemie. Możesz pobrać go w [programu Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
 
-Program Visual Studio jest teraz bardziej lekkie niż kiedykolwiek! Moduły Instalator umożliwia wybierz i zainstaluj *obciążeń*, które są grup funkcji potrzebnych do programowania języka lub platformy wolisz. Ta strategia pomaga w zapewnieniu rozmiaru instalacji programu Visual Studio mniejszy niż kiedykolwiek wcześniej, co oznacza instalowany i aktualizuje szybciej zbyt.
+Visual Studio jest teraz bardziej lekkie niż kiedykolwiek wcześniej. Moduły Instalator umożliwia wybierz i zainstaluj *obciążeń*, które są grup funkcji potrzebnych do programowania języka lub platformy wolisz. Ta strategia pomaga w zapewnieniu rozmiaru instalacji programu Visual Studio mniejszy niż kiedykolwiek wcześniej, co oznacza instalowany i aktualizuje szybciej zbyt. Oprócz instalacji lepszą wydajność Visual Studio 2017 ma również krótszą rozruchu IDE i załadować czasy rozwiązania.
 
-Aby wykonać kroki tworzenia poniżej programu, upewnij się, wybierz i zainstaluj **platformy uniwersalnej systemu Windows dla deweloperów** obciążenia.
+Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [zainstalować program Visual Studio 2017](../install/install-visual-studio.md). Wykonanie czynności dla [tworzenia program](#create-a-program), pamiętaj o wybraniu **aplikacji dla wielu platform .NET Core** obciążenie podczas instalacji.
 
-![Instalator programu Visual Studio](../ide/media/vside_tour_install_dialog.png)
-
-Oprócz instalacji lepszą wydajność Visual Studio 2017 ma również krótszą rozruchu IDE i załadować czasy rozwiązania.
-
-Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [zainstalować program Visual Studio 2017](../install/install-visual-studio.md).
+![Visual Studio Installer](../ide/media/overview-net-core-workload.png)
 
 ## <a name="sign-in"></a>Rejestrowanie
 
-Po uruchomieniu programu Visual Studio po raz pierwszy, można opcjonalnie Zaloguj się przy użyciu konta Microsoft lub pracy lub konta służbowego. Trwa logowanie, umożliwia synchronizowanie ustawień programu Visual Studio, takich jak układów okien na wielu urządzeniach. On również łączy automatycznie usługi, które może być konieczne, takie jak subskrypcje platformy Azure i Visual Studio Team Services.
+Po uruchomieniu programu Visual Studio po raz pierwszy, można opcjonalnie Zaloguj się przy użyciu konta Microsoft lub pracy lub konta służbowego. Trwa logowanie, umożliwia synchronizowanie ustawień programu Visual Studio, takich jak układów okien na wielu urządzeniach. On również zostanie automatycznie łączy się usługi może być konieczne, takich jak subskrypcje platformy Azure i [Visual Studio Team Services](/vsts/).
 
 ## <a name="create-a-program"></a>Utwórz program
 
 Dobrym sposobem Dowiedz się więcej o coś jest jej używać! Załóżmy zajrzyj dostęp i utworzyć nowe, proste program.
 
-1. Otwórz program Visual Studio. W menu, wybierz **pliku** > **nowy** > **projektu**.
+1. Otwórz program Visual Studio. W menu, wybierz **pliku** > **nowy** > **projektu...** .
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_NewProject1.png)
+  ![Plik > Nowy projekt na pasku menu](../ide/media/VSIDE_Tour_NewProject1.png)
 
-  Alternatywnie można utworzyć nowy projekt za pomocą strony początkowej. Aby uzyskać więcej informacji, zobacz [korzystają z możliwości przeprojektowana strona początkowa (blog)](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/).
+1. **Nowy projekt** okno dialogowe zawiera kilka szablonów projektu. Wybierz **.NET Core** kategorię w obszarze **Visual C#**, a następnie wybierz pozycję **aplikacji konsoli (.NET Core)** szablonu. W **nazwa** tekstu wpisz "HelloWorld". Wybierz **OK** przycisku.
 
-1. **Nowy projekt** okno dialogowe zawiera kilka szablonów projektu. Wybierz **uniwersalnych systemu Windows** kategorię w obszarze **Visual C#**, wybierz **pusta aplikacja (uniwersalna systemu Windows)** szablonu, a następnie wybierz pozycję **OK**przycisku.
+  ![Szablon aplikacji .NET core](../ide/media/overview-new-project-dialog.png)
 
   > [!NOTE]
-  > Jeśli nie widzisz **uniwersalnych systemu Windows** kategorii, musisz zainstalować **platformy uniwersalnej systemu Windows dla deweloperów** obciążenia. Aby to zrobić, wybierz **Otwórz Instalator programu Visual Studio** łącza w lewym dolnym rogu **nowy projekt** okna dialogowego. Po **Instalator programu Visual Studio** zostanie otwarta, wybierz opcję **platformy uniwersalnej systemu Windows dla deweloperów** obciążenia, a następnie wybierz **Modyfikuj**.
+  > Jeśli nie widzisz **.NET Core** kategorii, musisz zainstalować **aplikacji dla wielu platform .NET Core** obciążenia. Aby to zrobić, wybierz **Otwórz Instalator programu Visual Studio** łącza w lewym dolnym rogu **nowy projekt** okna dialogowego. Po **Instalator programu Visual Studio** zostanie otwarta, przewiń w dół i wybierz **aplikacji dla wielu platform .NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
 
-  ![Szablon pusta aplikacja platformy uniwersalnej systemu Windows](../ide/media/new-uwp-blank-app-template.png)
+   Visual Studio używa tego szablonu do tworzenia projektu. Jest prostą aplikację "Hello World", który wywołuje <xref:System.Console.WriteLine> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli.
 
-  Spowoduje to utworzenie nowego projektu aplikacji pusta uniwersalna systemu Windows przy użyciu języka C# i XAML jako języków programowania. Zaczekaj, aż do bit Visual Studio skonfigurowanie projektu dla Ciebie. Jeśli zostanie wyświetlony monit o podanie informacji, po prostu zaakceptuj wartości domyślne teraz.
+1. Wkrótce powinien zostać wyświetlony ekran podobny do następującego zrzutu ekranu:
 
-1. W **nowego projektu platformy uniwersalnej systemu Windows** okna dialogowego Zaakceptuj ustawienia domyślne, wybierając **OK**.
+  ![Visual Studio IDE](../ide/media/overview-ide-console-app.png)
 
-1. Wkrótce powinien zostać wyświetlony ekran podobny do następującego zrzutu ekranu. Pliki projektu są wyświetlane po prawej stronie w okno Eksploratora rozwiązań.
+   Kod C# dla aplikacji jest wyświetlany w oknie Edytor zajmuje większość miejsca. Zwróć uwagę, że składnia kodu jest automatycznie pokolorowane wskazująca różnych typów kodu, na przykład słowa kluczowe i typów. Ponadto małych, pionowych linii kreskowanej w kodzie określają, które nawiasów klamrowych siebie, a później zlokalizować kod pomocy numery wierszy. Można wybrać znaków minus małe, opakowany można zwijać i rozwijać kodu. Ten kod zwijania funkcji umożliwia ukrywanie kodu, który nie jest konieczne, pomagając zminimalizować bałaganu na ekranie.
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_NewProject3.png)
+   Pliki projektu są wyświetlane po prawej stronie w oknie o nazwie **Eksploratora rozwiązań**.
 
-1. W Eksploratorze rozwiązań wybierz małego czarny trójkąt obok pliku MainPage.xaml, aby go rozwinąć i powinna zostać wyświetlona pliku MainPage.xaml.cs poniżej. Wybierz ten plik (zawierający kod w języku C#) aby go otworzyć.
-
-  Kod C# MainPage.xaml.cs zostanie wyświetlony w edytorze kodu po lewej stronie ekranu. Zwróć uwagę, że składnia kodu jest automatycznie pokolorowane wskazująca różnych typów kodu, na przykład instrukcji lub komentarzy. Ponadto małych, pionowych linii kreskowanej w kodzie określają, które nawiasów klamrowych siebie, a później zlokalizować kod pomocy numery wierszy. Można wybrać znaków minus małe, opakowany można zwijać i rozwijać kodu. Ten kod zwijania funkcji umożliwia ukrywanie kodu, który nie jest konieczne, pomagając zminimalizować bałaganu na ekranie.
-
-  ![](../ide/media/VSIDE_Tour_NewProject3a.png)
+  ![Visual Studio IDE z polami czerwony](../ide/media/overview-ide-console-app-red-boxes.png)
 
   Brak dostępnych innych menu i okien narzędzi, ale Przyjrzyjmy teraz.
 
-1. Dodawanie przycisku do XAML, aby umożliwić użytkownikom możliwość interakcji z aplikacją. Aby to zrobić, otwórz plik MainPage.xaml. Widok podzielony pokazuje: projektanta powyżej, wizualnie objęcia formantów, a widok kodu poniżej, przedstawiający kodzie projektanta XAML. Po uruchomieniu program później, zobacz w Projektancie staje się oknem, które użytkownicy zobaczą, "form", i określa podstawowe języka XAML wyświetlaną w formularzu.
+1. Teraz uruchomić aplikację. Można to zrobić, wybierając **uruchomić bez debugowania** z **debugowania** menu na pasku menu. Można również nacisnąć **Ctrl**+**F5**.
 
-1. W lewej części ekranu wybierz **przybornika** kartę, aby otworzyć przybornika. Przybornik zawiera szereg visual formanty, które można dodać do formularzy. Teraz po prostu dodamy kontrolkę przycisku.
+  ![Debuguj > Uruchom bez debugowania menu](../ide/media/overview-start-without-debugging.png)
 
-1. Rozwiń węzeł **formanty standardowe XAML** sekcji, a następnie przeciągnij formantu przycisku się do formularza do góry. (Dokładnej lokalizacji nie ma znaczenia).
+  Visual Studio tworzy aplikację, a z komunikatem "Witaj świecie!" zostanie otwarte okno konsoli. Masz teraz uruchomionej aplikacji.
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_Toolbox.png)
+  ![Okno konsoli](../ide/media/overview-console-window.png)
 
-  Gdy wszystko będzie gotowe, powinny zostać wyświetlone informacje podobne do następującego.
+1. Aby zamknąć okno konsoli, naciśnij dowolny klawisz na klawiaturze.
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_XAMLButton.png)
+1. Dodajmy dodatkowy kod w aplikacji. Dodaj następujący kod C# przed wierszem informacją `Console.WriteLine("Hello World!");`:
 
-  Przycisk znajduje się w projektancie, a jego kod źródłowy (wyróżniony) jest automatycznie dodawany do projektanta XAML kodu.
+   ```csharp
+   Console.WriteLine("\nWhat is your name?");
+   var name = Console.ReadLine();
+   ```
 
-1. Teraz Zmień kod XAML. Zmień nazwę tekst w kodzie przycisk z `Button` do `Hello!`.
+   Ten kod wyświetla "Co to jest nazwa?" w konsoli okno i czeka, aż użytkownik wprowadza tekst następuje **Enter** klucza.
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_XAMLButton2.png)
+1. Teraz Zmień wiersz z informacją, `Console.WriteLine("Hello World!");` poniższy kod:
 
-1. Teraz uruchomić aplikację. Można to zrobić, wybierając **Start** (![przycisk Start](../ide/media/VSIDE_StartButton.png)) przycisk na pasku narzędzi lub wybierając **F5** klucza, lub w menu, wybierając pozycję **debugowania**  >  **Rozpocznij debugowanie**.
+   ```csharp
+   Console.WriteLine($"\nHello {name}!");
+   ```
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_RunButton.png)
+1. Ponownie uruchom aplikację wybierając **debugowania** > **uruchomić bez debugowania** lub naciskając klawisz **Ctrl**+**F5**.
 
-  Aplikacja rozpoczyna się procesu kompilacji i komunikaty o stanie są wyświetlane w oknie danych wyjściowych. Wkrótce powinien zostać wyświetlony formularz wyświetlane ze przycisk w nim. Masz teraz uruchomionej aplikacji.
+   Visual Studio odtwarza aplikacji i otwiera i wyświetla monit o podanie nazwy okna konsoli.
 
-  ![Zrzut ekranu](../ide/media/VSIDE_Tour_RunProject.png)
+1. Wprowadź nazwę w oknie konsoli i naciśnij klawisz **Enter**.
 
-  Oczywiście nie znacznie od razu, ale możesz dodać więcej funkcji do niego później, jeśli chcesz.
+   ![Dane wejściowe z okna konsoli](media/overview-console-input.png)
 
-1. Po zakończeniu uruchamiania programu, wybierz polecenie Zatrzymaj (![Zatrzymaj przycisku](../ide/media/VSIDE_StopButton.png)) przycisk na pasku narzędzi, zatrzymaj ją.
-
-Załóżmy recap wykonanej do tej pory została: utworzyć nowy projekt C# uniwersalnych systemu Windows w programie Visual Studio, wyświetlić jego kod, dodać formantu do projektanta, zmienić kodu XAML i został uruchomiony projektu. Chociaż proces została uproszczona w tym przykładzie, to przedstawiono niektóre typowe części programu Visual Studio IDE, która będzie używana podczas opracowywania własnych aplikacji. Dalsze szczegóły tego przykładu, zobacz [tworzenie "Hello, world" app (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+1. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
 ## <a name="debug-test-and-improve-your-code"></a>Debugowanie, testowanie i poprawić kod
 
-Nic nie uruchamia doskonale cały czas. Podczas pisania kodu, należy ją uruchomić i przetestować go do błędów i wydajności. Visual Studio najnowocześniejszych debugowania systemu umożliwia debugowania kodu uruchamianego w środowisku lokalnym projektu, urządzenie zdalne lub emulator, takich jak te dla urządzeń z systemem Android lub Windows Phone. Możesz kroków opisanych w jedną instrukcję kodu w czasie i sprawdzić zmiennych, możesz przejść, można przejrzeć aplikacji wielowątkowych i można ustawić punktów przerwania, które są osiągane tylko, gdy określony warunek jest spełniony. Można monitorować wartości zmiennych jako uruchamia kod i inne. Wszystkie te można zarządzać w edytorze kodu, dzięki czemu nie trzeba pozostaw kodu.
+Nic nie uruchamia doskonale cały czas. Podczas pisania kodu, należy ją uruchomić i przetestować go do błędów i wydajności. Visual Studio najnowocześniejszych debugowania systemu umożliwia debugowania kodu uruchamianego w środowisku lokalnym projektu, urządzenie zdalne lub emulator takich jak [dla urządzeń z systemem Android](../cross-platform/visual-studio-emulator-for-android.md). Możesz kroków opisanych w jedną instrukcję kodu w czasie i sprawdzić zmiennych w trakcie pracy. Można ustawić punktów przerwania, które są osiągane tylko, gdy określony warunek jest spełniony. Można monitorować wartości zmiennych jako uruchamia kod i inne. Wszystkie te można zarządzać w edytorze kodu, dzięki czemu nie trzeba pozostaw kodu. Aby uzyskać więcej informacji na temat debugowania w programie Visual Studio, zobacz [debugera samouczek funkcji](../debugger/debugger-feature-tour.md).
 
-![Debugowanie](../ide/media/VSIDE_Tour_Debugging.png)
-
-Do testowania, programu Visual Studio oferuje testowania IntelliTest, obciążenia i testowanie wydajności i innych jednostek. Aby uzyskać więcej informacji na temat programu Visual Studio debugowanie procesu, zobacz [samouczek funkcji debugera](../debugger/debugger-feature-tour.md). Aby dowiedzieć się więcej na temat testowania, zobacz [narzędzi do testowania i scenariusze](../test/developer-testing-scenarios.md). Aby dowiedzieć się więcej na temat zwiększania wydajności aplikacji, zobacz [profilowania samouczek funkcji](../profiling/profiling-feature-tour.md).
+Do testowania, programu Visual Studio oferuje testowania IntelliTest, obciążenia i testowanie wydajności i innych jednostek. Aby dowiedzieć się więcej na temat testowania, zobacz [testowania scenariuszy i narzędzia](../test/developer-testing-scenarios.md). Aby dowiedzieć się więcej na temat zwiększania wydajności aplikacji, zobacz [profilowania samouczek funkcji](../profiling/profiling-feature-tour.md).
 
 ## <a name="deploy-your-finished-application"></a>Wdrażanie aplikacji Zakończono
 
@@ -198,7 +190,7 @@ Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Vis
 
  ![Refaktoryzacja](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** jest ogólny termin zbiór popularnych funkcji wyświetlania informacji o typie o kodzie bezpośrednio w edytorze i, w niektórych przypadkach można zapisać małe fragmenty kodu. Przypomina o dokumentacji podstawowej wbudowany w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w oknie Pomoc. Funkcje IntelliSense zależy od języka. Aby uzyskać więcej informacji, zobacz [C#, IntelliSense](../ide/visual-csharp-intellisense.md), [Intellisense dla programu Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense dla JavaScript](../ide/javascript-intellisense.md), i [IntelliSense specyficzne dla języka Visual Basic ](../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono niektóre funkcje IntelliSense w miejscu pracy:
+- **IntelliSense** jest ogólny termin zbiór popularnych funkcji wyświetlania informacji o typie o kodzie bezpośrednio w edytorze i, w niektórych przypadkach można zapisać małe fragmenty kodu. Przypomina o dokumentacji podstawowej wbudowany w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w oknie Pomoc. Funkcje IntelliSense zależy od języka. Aby uzyskać więcej informacji, zobacz [C#, IntelliSense](../ide/visual-csharp-intellisense.md), [Intellisense dla programu Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense dla JavaScript](../ide/javascript-intellisense.md), i [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono niektóre funkcje IntelliSense w miejscu pracy:
 
   ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2017_Intellisense.png)
 
@@ -222,10 +214,6 @@ Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Vis
 
  ![Przejdź do definicji](../ide/media/VSIDE_go_to_definition.png)
 
-- Pokrewne narzędzia [przeglądarki obiektów](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), umożliwia można przeprowadzać inspekcję zestawy .NET lub środowiska wykonawczego systemu Windows w systemie, aby zobaczyć typy one zawierać a jakie elementy członkowskie (właściwości, metody, zdarzenia, itp.) tych typów.
-
-  ![System.Timer w przeglądarce obiektów](../ide/media/objectbrowser.png)
-
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzanie kodu źródłowego i współpracę z innymi osobami
 
 Możesz zarządzać kodu źródłowego w obsługiwanych przez dowolnego dostawcy, w tym GitHub repozytoriów Git. Lub użyj [programu Visual Studio Team Services (VSTS)](/vsts/index) do zarządzania kodu obok usterek i elementy pracy dla całego projektu. Zobacz [wprowadzenie do usługi Git i zespołu usług (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej o zarządzaniu repozytoriów Git w programie Visual Studio przy użyciu programu Team Explorer. Visual Studio ma również inne funkcje kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [nowe funkcje Git w programie Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
@@ -240,7 +228,7 @@ Na poniższej ilustracji przedstawiono okno programu Team Explorer rozwiązania,
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Można również zautomatyzować procesu kompilacji do kompilacji kodu, który zaznaczono devs Twojego zespołu w kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Zobacz [kompilacji i wydania (VSTS i TFS)](/vsts/build-release/index) Aby uzyskać więcej informacji.
+Można również zautomatyzować procesu kompilacji do kompilacji kodu, który zaznaczono devs Twojego zespołu w kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania (VSTS i TFS)](/vsts/build-release/index).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Nawiązanie połączenia usługi, baz danych i zasobów w chmurze
 
@@ -283,6 +271,5 @@ Gratulujemy ukończenia samouczka środowiska IDE programu Visual Studio! Mamy n
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Pobieranie programu Visual Studio](https://www.visualstudio.com/downloads/)
 * [Blog programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Fora usługi Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
-* [Channel 9](https://channel9.msdn.com/)

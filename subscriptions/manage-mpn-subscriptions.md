@@ -9,11 +9,11 @@ Description: Managing Visual Studio subscriptions included with Microsoft Partne
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9866b018d93e1a7b9612f65107f978ecd15bc9de
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>Zarządzanie subskrypcjami Visual Studio dołączonego członkostwa partnera firmy Microsoft w sieci (MPN)
 
@@ -28,7 +28,8 @@ Liczba i poziom subskrypcji programu Visual Studio różnią się zależnie od s
 - Sieci Microsoft Partner Network [świadczenia usług Podręcznik administratora programu do oprogramowania i Online]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) )
     - PG 6 - przypisywanie ról kontaktu i subskrypcji programu Visual Studio dla pakietu akcji
 
-      **Uwaga:** roli skontaktuj się z działem jest wymagany dla subskrypcji programu Visual Studio
+> [!NOTE]
+> Roli skontaktuj się z działem jest wymagany dla subskrypcji programu Visual Studio
     - PG 8 — Visual Studio przypisywanie subskrypcji dla partnerów kompetencja
 
 

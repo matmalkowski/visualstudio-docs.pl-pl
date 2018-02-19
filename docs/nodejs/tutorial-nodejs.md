@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Wprowadzenie do środowiska Node.js w programie Visual Studio
 W tym samouczku do tworzenia aplikacji Node.js przy użyciu programu Visual Studio będzie utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
@@ -37,6 +37,10 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
      Jeśli nie widzisz **Azure Node.js Express 4 aplikacji w warstwie podstawowa** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**. 
 
     Visual Studio tworzy nowe rozwiązanie i otwiera projektu. **App.js** plik projektu zostanie otwarty w edytorze (lewe okienko). Jeśli nie masz doświadczenia z projektów i rozwiązań programu Visual Studio, zobacz [Szybki Start: program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js](../ide/quickstart-nodejs.md).
+
+4. Jeśli nie masz środowisko uruchomieniowe Node.js już zainstalowany, zainstaluj go z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
+
+    Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego można skonfigurować projektu do odwołania zainstalowanego środowiska uruchomieniowego.
 
 ## <a name="add-some-code"></a>Dodawanie kodu
 
@@ -121,7 +125,7 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     ![Wybierz cel debugowania](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. Naciśnij klawisz **Ctrl + F5** do uruchomienia aplikacji.
+1. Naciśnij klawisz **F5** (**debugowania** > **Rozpocznij debugowanie**) do uruchomienia aplikacji.
 
     Debuger wstrzymuje na ustawić punktu przerwania. Teraz możesz sprawdzić stan Twojej aplikacji.
 
@@ -129,7 +133,7 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     ![Sprawdź zmienne](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. Naciśnij klawisz **F5** aby kontynuować.
+1. Naciśnij klawisz **F5** (**debugowania** > **Kontynuuj**), aby kontynuować.
 
     Aplikacja zostanie otwarty w przeglądarce.
 
@@ -139,7 +143,7 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     ![Aplikacja uruchomiona w przeglądarce](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Otwórz okno interaktywne Node.js, wybierając **Widok > inne okna > Node.js okna interaktywnego**.
+1. Otwórz okno interaktywne Node.js, wybierając **widoku** > **inne okna** > **okna interaktywnego Node.js**.
 
    ![Otwórz okno interaktywne Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 

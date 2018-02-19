@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Zdalne debugowanie kodu języka Python w systemie Linux
 
@@ -29,9 +29,9 @@ Program Visual Studio można uruchomić i debugowania aplikacji Python lokalnie 
 
 Używając ptvsd kodu Python debugowany obsługuje serwer debugowania, do którego można dołączyć program Visual Studio. Ta obsługa wymaga małych modyfikacji kodu zaimportować i włączyć serwer i może wymagać sieci lub zapory konfiguracji na komputerze zdalnym, aby zezwolić na połączenia TCP.
 
-Aby obejrzeć wprowadzenie do debugowania zdalnego, zobacz [nowości: debugowanie zdalne i Platform](https://youtu.be/y1Qq7BrV6Cc) (witrynie youtube.com, 6m22s), która ma zastosowanie do programu Visual Studio 2015 i 2017 r.
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | Aby obejrzeć wprowadzenie do debugowania zdalnego, zobacz [nowości: debugowanie zdalne i Platform](https://youtu.be/y1Qq7BrV6Cc) (witrynie youtube.com, 6m22s), która ma zastosowanie do programu Visual Studio 2015 i 2017 r. |
 
 ## <a name="setting-up-a-linux-computer"></a>Konfigurowanie komputera z systemem Linux
 

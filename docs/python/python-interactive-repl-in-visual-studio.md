@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 995c3d8512c3df9bf2cc40fe962106a95f9d6268
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
 
@@ -33,16 +33,18 @@ Visual Studio zawiera szereg trybów REPL dla języka Python do wyboru:
 
 | REPL | Opis | Edytowanie | Debugowanie | Obrazy |
 | --- | --- | --- | --- | --- |
-| Standard | Domyślne REPL, rozmów bezpośrednio Python. | Standard edycji (multiline itp.). | Tak, za pomocą`$attach` | Nie |
+| Standard | Domyślne REPL, rozmów bezpośrednio Python. | Standard edycji (multiline itp.). | Tak, za pomocą `$attach` | Nie |
 | Debugowanie | Domyślne REPL, rozmów na debugowanym procesie Python | Standardowa edycji | Tylko debugowania | Nie |
 | IPython | REPL komunikuje się IPython wewnętrznej bazy danych | Polecenia IPython, udogodnień Pylab | Nie | Tak, wbudowane w REPL |
 | IPython bez Pylab | REPL komunikuje się IPython wewnętrznej bazy danych | Standardowe IPython | Nie | Tak, strona potwierdzenia | 
 
 W tym temacie opisano **standardowe** i **debugowania** REPL trybów. Aby uzyskać więcej informacji o trybach IPython, zobacz [przy użyciu IPython REPL](interactive-repl-ipython.md).
 
-Aby uzyskać szczegółowe wskazówki, wraz z przykładami, w tym interakcji w edytorze, np. Ctrl + Enter, zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Wprowadzenie wideo, zobacz [okna interaktywnego Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
+Aby uzyskać szczegółowe wskazówki, wraz z przykładami, w tym interakcji w edytorze, np. Ctrl + Enter, zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) na okno interaktywne (2 m 22s).|
 
 ## <a name="opening-an-interactive-window"></a>Otwieranie okna interaktywnego
 
@@ -79,7 +81,7 @@ Wyjątek stanowi podczas dodatkowe wiersze kodu są potrzebne do podejmowania pe
 > [!Tip]
 > Okno interaktywne poprawia zwykle Python wiersza polecenia REPL wystąpić przez automatycznie wcięcia instrukcji, które należą do zakresu otaczającego. Swoją historię (przypomnieć o strzałkę w górę) udostępnia również wielowierszowy elementów wiersza polecenia REPL stanowi tylko pojedynczych wierszy.
 
-<a name="meta-commands"></a>Okno interaktywne obsługuje również kilka meta polecenia. Wszystkie polecenia meta rozpoczynać `$`, i można wpisać `$help` spowoduje wyświetlenie listy poleceń meta i `$help <command>` Aby uzyskać szczegóły obciążenia dla określonego polecenia.
+<a name="meta-commands"></a> Okno interaktywne obsługuje również kilka meta polecenia. Wszystkie polecenia meta rozpoczynać `$`, i można wpisać `$help` spowoduje wyświetlenie listy poleceń meta i `$help <command>` Aby uzyskać szczegóły obciążenia dla określonego polecenia.
 
 | Meta-polecenia | Opis |
 | --- | --- |

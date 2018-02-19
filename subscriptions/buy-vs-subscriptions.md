@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Jak kupić subskrypcję
 Istnieją dwa główne typy subskrypcji programu Visual Studio, chmur i standard, które opisano szczegółowo w [programu Visual Studio, na stronie dotyczącej cen](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ Istnieją dwa główne typy subskrypcji programu Visual Studio, chmur i standard
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Kupować subskrypcje, program Visual Studio Standard
 Należy skontaktować się z odsprzedawcą oprogramowania, aby kupić subskrypcję programu Visual Studio standardowe, lub odwiedź [Microsoft Store](https://www.microsoft.com/store) online.
 
-*   Aby utworzyć konto subskrypcji platformy Azure i Kup Visual Studio Marketplace, musisz "osobiste" [konta Microsoft](https://www.microsoft.com/account) lub ["konto służbowe"](/azure/active-directory/sign-up-organization) Jeśli dokonujesz zakupów dla Twojej organizacji i zarządzają tożsamościami w usłudze Azure Active Directory (Azure AD).
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Kupować subskrypcje w chmurze programu Visual Studio
+
+Aby utworzyć konto subskrypcji platformy Azure i Kup Visual Studio Marketplace, musisz "osobiste" [konta Microsoft](https://www.microsoft.com/account) lub ["konto służbowe"](/azure/active-directory/sign-up-organization) Jeśli dokonujesz zakupów dla Twojej organizacji i zarządzają tożsamościami w usłudze Azure Active Directory (Azure AD).
 
 > [!WARNING]
 > Jeśli używasz subskrypcji platformy Azure kupować subskrypcje chmury w usłudze Visual Studio, opłaty te będą wyświetlane jako nadwyżki i nie będą uwzględniane zobowiązania pieniężnego sieci Azure. Dowiedz się więcej o Azure rozliczeń w [— często zadawane pytania](/vsts/billing/faq-azure-billing).  
-
-### <a name="buy-subscriptions"></a>Kupować subskrypcje
-
 
 1.  Zaloguj się do [programu Visual Studio Marketplace > Subskrypcje](https://marketplace.visualstudio.com/subscriptions).
 

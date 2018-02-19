@@ -10,12 +10,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności dla programu Visual Studio
 
@@ -27,7 +28,7 @@ Uzyskać informacji o typowych skróty klawiaturowe, zobacz [klawiatury porady](
 
 Szybsze pisanie kodu przy użyciu następujących funkcji.
 
-- **Użyj poleceń wygody**. Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład w **programu Visual Studio 2017 wersji 15,6 preview 2** i później, możesz wybrać polecenie łatwo zduplikowany wiersz kodu bez konieczności skopiuj go, zmienić położenie kursora, a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij klawisz **Ctrl**+**E**,**V**. Użytkownik może szybko rozwiń lub Zwiń zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **rozwiń wybór** i **Wybór umowy**, lub naciskając klawisz **Ctrl**+**W** i **Ctrl**+**przesunięcia**  + **W** (dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowsze).
+- **Użyj poleceń wygody**. Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład w **programu Visual Studio 2017 wersji 15,6 preview 2** i później, możesz wybrać polecenie łatwo zduplikowany wiersz kodu bez konieczności skopiuj go, zmienić położenie kursora, a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij klawisz **Ctrl**+**E**,**V**. Użytkownik może szybko rozwiń lub Zwiń zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **rozwiń wybór** lub **Edytować** > **zaawansowane** > **wybór umowy**, lub naciskając klawisz **Shift** + **Alt** +  **=**  lub **Shift**+**Alt** +  **-**  (dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowsze).
 
 - **Używanie IntelliSense**. Po wprowadzeniu kodu w edytorze, zostanie wyświetlone informacje funkcji IntelliSense, takie jak listy elementów członkowskich, informacje o parametrach szybka podpowiedź, pomoc podpisu i całe słowo. Obsługuje te funkcje dopasowywania rozmytego tekstu; na przykład listy wyników dla członków listy zawiera nie tylko wpisy rozpoczynających się od znaków czy zostały wprowadzone, ale także wpisów, zawierające kombinację znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
 
@@ -73,7 +74,7 @@ Można wyszukiwać w IDE dla poleceń, plików i opcji, oprócz filtrowanie zawa
 
     ![Szybkie uruchamianie wyniki dla "nowego projektu"](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-    **Szybkie uruchamianie** zawiera łącza do **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i strony projektów i rozwiązań w **opcje** okno dialogowe, między innymi. Szybkie uruchamianie wyników można także pliki projektu i okien narzędzi.
+    **Szybkie uruchamianie** zawiera łącza do **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i strony projektów i rozwiązań w **opcje** okna dialogowego pole, między innymi. Szybkie uruchamianie wyników można także pliki projektu i okien narzędzi.
 
 ## <a name="debugging-code"></a>Debugowanie kodu
 
@@ -95,7 +96,7 @@ Debugowanie mogą zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 
      Aby dodać etykietki danych, debuger musi być w trybie przerwania. Umieść kursor w zmiennej, a następnie wybierz przycisk numeru pin na etykietek danych, która jest wyświetlana. Po zatrzymaniu debugowania w pliku źródłowym obok wiersza kodu, która zawiera zmienną pojawi się ikona niebieski numeru pin. Jeśli wskażesz niebieski numeru pin, pojawi się wartość zmiennej z ostatniej sesji debugowania.
 
-- **Wyczyść okna bezpośredniego**. Można wymazać zawartość [oknie bezpośrednim](../ide/reference/immediate-window.md) w czasie projektowania, wprowadzając `>cls` lub`>Edit.ClearAll`
+- **Wyczyść okna bezpośredniego**. Można wymazać zawartość [oknie bezpośrednim](../ide/reference/immediate-window.md) w czasie projektowania, wprowadzając `>cls` lub `>Edit.ClearAll`
 
      Aby uzyskać więcej informacji o dodatkowe polecenia, zobacz [programu Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
 
@@ -123,7 +124,7 @@ W dowolnym momencie może być Praca w wielu plikach kodu i przenoszenia między
 
 ## <a name="see-also"></a>Zobacz także
 
-[Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[Porady: Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Porady i wskazówki związane z ułatwieniami dostępu](../ide/reference/accessibility-tips-and-tricks.md)
+- [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Porady: Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Porady i wskazówki związane z ułatwieniami dostępu](../ide/reference/accessibility-tips-and-tricks.md)
