@@ -1,48 +1,75 @@
-# [Subskrypcje programu Visual Studio](index.md)
-# Omówienie
-## [Porównanie oferty subskrypcji](compare-subscriptions.md)
-
-# Przewodniki z instrukcjami
-##  Subskrybenci
-### [Kupowanie subskrypcji](buy-vs-subscriptions.md)
-### [Zarządzanie subskrypcją](manage-vs-subscriptions.md)
-### [Korzystanie z plików do pobrania dla subskrybentów](subscriber-downloads.md)
-### [Korzystanie z kluczy produktów](product-keys.md)
-### Jak aktywować korzyści
-#### Narzędzia
-##### [Visual Studio IDE](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [Enterprise Mobility + Security](vs-ems.md)
-##### [Konto dewelopera systemu Windows](vs-windows-dev.md)
-##### [Office 365 dla deweloperów](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Platforma Microsoft Azure rozliczana według bieżącego użycia](vs-azure-payg.md) 
-#### Edukacja
-##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Szkolenia w witrynie Xamarin University](vs-xamarin.md)
-##### [Microsoft E-Learning](vs-elearn.md)
-##### [Subskrypcja magazynu MSDN Magazine](vs-msdn.md)
-#### Obsługa
-##### [Pomoc techniczna](vs-tech-support.md)
-
-## Administratorzy
-### [Administrator — omówienie](admin-responsibilities.md)
-### [Uzyskiwanie dostępu do portalu administratora](access-admin-portal.md)
-### [Korzystanie z portalu administratora](using-admin-portal.md)
-### [Przypisywanie subskrypcji](assign-license.md)
-### [Edytowanie subskrypcji](edit-license.md)
-### [Usuwanie subskrypcji](delete-license.md)
-### [Wyszukiwanie subskrypcji](search-license.md)
-### [Obsługiwanie nadmiernej liczby zgłoszonych subskrypcji](handle-overclaimed-license.md)
-### [Obsługiwanie wygasłych subskrypcji](handle-expired-license.md)
-
+# [Subskrypcje programu Visual Studio](index.md) 
+## Środowiska subskrybenta
+### [Korzystanie z portalu dla subskrybentów](using-the-subscriber-portal.md)
+#### [Aktywacja subskrypcji detalicznych](activate-store-subscriptions.md)
+#### [Logowanie](signing-in.md)
+##### [Logowanie się przy użyciu aliasów](aliasing.md)
+#### [Zarządzanie subskrypcjami](manage-vs-subscriptions.md)
+### [Pobieranie oprogramowania](subscriber-downloads.md)
+#### [Lista oprogramowania dostępnego do pobrania](software-download-list.md)
+### [Uzyskiwanie kluczy produktów i zarządzanie nimi](product-keys.md)
+### Visual Studio Dev Essentials
+#### [Dołączanie do programu Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [Rezygnacja z programu Visual Studio Dev Essentials](leave-vsde.md)
+### [Korzyści dla subskrybenta](subscriber-benefits.md)
+## Używanie korzyści dla subskrybenta
+### Narzędzia
+#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Środki na korzystanie z platformy Azure](vs-azure.md) 
+#### [Visual Studio App Center](vs-visual-studio-app-center.md)
+#### [Parasoft ](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [Enterprise Mobility & Security](vs-ems.md)
+#### [Konto dewelopera systemu Windows](vs-windows-dev.md)
+#### [Subskrypcja dewelopera usługi Office 365](vs-office-dev.md)
+#### [Power BI Pro ](vs-pbi.md)
+#### [Modern Requirements4TFS](vs-modernreq.md)
+#### [Platforma Azure rozliczana według bieżącego użycia](vs-azure-payg.md)
+### Profesjonalne programowanie
+#### [LinkedIn Learning](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Szkolenia w witrynie Xamarin University](vs-xamarin.md)
+#### [Szkolenia Microsoft E-Learning](vs-elearn.md)
+#### [Subskrypcja magazynu MSDN Magazine](vs-msdn.md)
+### Korzyści związane z pomocą techniczną
+#### [Czat z doradcą Azure Advisor](vs-azure-advisory-chat.md)
+#### [Społeczność platformy Azure](vs-azure-community.md)
+#### [Pomoc techniczna](vs-tech-support.md)
+#### [Priorytetowa pomoc techniczna na forach*](vs-priority-support.md)
+#### [Obsługa Concierge](vs-concierge-chat.md)
+## Zarządzanie subskrypcjami
+### Omówienie
+#### [Więcej informacji na temat zarządzania subskrypcjami](subscription-management-info.md)
+#### [Obowiązki administratora](admin-responsibilities.md)
+#### [Zarządzanie administratorami](managing-admins.md)
+#### [Uzyskiwanie dostępu do portalu](access-admin-portal.md)
+#### Dołączanie organizacji
+##### [Znajdowanie numeru PCN](find-pcn.md)
+##### [Zarządzanie wieloma numerami PCN](multiple-pcns.md)
+##### [Znajdowanie podstawowej osoby kontaktowej](find-primary-contact.md)
+##### [Znajdowanie identyfikatorów subskrypcji](find-subscription-id.md)
+### Korzystanie z portalu administracyjnego
+#### [Przypisywanie subskrypcji](assign-license.md)
+#### [Ponowne wysyłanie wiadomości e-mail dotyczących przypisania](resend-assignment-email.md)
+#### [Edytowanie subskrypcji](edit-license.md)
+#### [Usuwanie subskrypcji](delete-license.md)
+#### [Wyszukiwanie subskrypcji](search-license.md)
+#### [Nadmierne alokacje](handle-overclaimed-license.md)
+#### [Wygasłe subskrypcje](handle-expired-license.md)
+#### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
+## Uzyskiwanie subskrypcji programu Visual Studio
+### [Porównanie subskrypcji](compare-subscriptions.md)
+### Kupowanie subskrypcji chmury
+#### [Omówienie](vscloud-overview.md)
+#### [Pierwszy zakup](vscloud-first-purchase.md)
+#### [Odnowienia](vscloud-renewals.md)
+#### [Dodatkowy zakup](vscloud-buy-more.md)
+#### [Anulowanie](vscloud-cancel.md)
 ## Resources
-### [Warunki użytkowania](vs-license-terms.md)
-### [Pomoc techniczna dotycząca subskrypcji](https://www.visualstudio.com/subscriptions/support/)
+### [Postanowienia licencyjne programu Visual Studio](vs-license-terms.md)
+### [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Porównanie opcji i cen subskrypcji](https://www.visualstudio.com/vs/pricing)
+### [Porównanie funkcji programu Visual Studio IDE](https://www.visualstudio.com/vs/compare)
