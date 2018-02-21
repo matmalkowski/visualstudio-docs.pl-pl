@@ -13,12 +13,13 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.workload: multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Wskazówki: Pierwszy WPF pulpitu aplikację
 
@@ -59,7 +60,7 @@ W tej sekcji utworzysz infrastruktury aplikacji, które zawiera projekt i okna g
 
 1. W **właściwości** okna, rozwiń węzeł **typowe** węzła kategorii i wybierz polecenie **tytuł** właściwości, a następnie wprowadź `ExpenseIt` i naciśnij klawisz **Enter**  klucza.
   
-     Zwróć uwagę, że **tytuł** zmiany elementu w oknie XAML aby pasowała do nowej wartości. Można zmodyfikować właściwości XAML w oknie XAML lub **właściwości** okna, a zmiany są synchronizowane.
+     Zwróć uwagę, że **tytuł** atrybut w XAML okna zmiany aby pasowała do nowej wartości. Można zmodyfikować właściwości XAML w oknie XAML lub **właściwości** okna, a zmiany są synchronizowane.
 
 1. W oknie XAML, ustaw wartość **wysokość** elementu `375`i ustaw wartość **szerokość** właściwości `500`.
   
@@ -115,7 +116,7 @@ W tej sekcji dodasz dwie strony i obraz do aplikacji.
 
 1. W projektancie, wybierz **ExpenseItHome.xaml** karcie, jeśli nie jest jeszcze aktywne Karta konstruktora.
 
-1. Wybierz `<Title>` element i Zmień tytuł, aby **programu ExpenseIt — strona główna**.
+1. Wybierz `Title` atrybutu i zmień wartość na **programu ExpenseIt — strona główna**.
   
      Twoje **ExpenseItHome.xaml** pliku powinna wyglądać tak jak to w języku C#:  
   
@@ -177,7 +178,7 @@ W tej sekcji dodasz dwie strony i obraz do aplikacji.
 
 1. W projektancie, wybierz **ExpenseReportPage.xaml** karcie, jeśli nie jest jeszcze aktywne Karta konstruktora.
 
-1. Wybierz `<Title>` element i Zmień tytuł, aby **programu ExpenseIt — widok wydatków**.
+1. Wybierz `Title` atrybutu i zmień wartość na **programu ExpenseIt — widok wydatków**.
   
      Plik ExpenseReportPage.xaml powinna wyglądać tak jak to w języku C#:  
   
