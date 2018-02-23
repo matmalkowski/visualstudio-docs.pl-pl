@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Praca z programu SQL Server i R
 
@@ -32,9 +32,9 @@ Znakomity obsługi programu Visual Studio dla programu SQL Server ułatwia dane,
 > - Visual Studio 2017: uruchom Instalator programu Visual Studio i wybierz magazyn danych i przetwarzania obciążenia, w tym narzędzi danych programu SQL Server.
 > - Visual Studio 2015: postępuj zgodnie z instrukcjami [pobierania programu SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-Poniższe wideo (3m 03s) zawiera krótki przegląd programu SQL Server i R:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (witrynie youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) Omówienie programu SQL Server i R (3 m 03s). |
 
 ## <a name="creating-and-running-sql-queries"></a>Tworzenie i uruchamianie zapytań SQL
 
@@ -65,9 +65,9 @@ RTVS upraszcza inaczej niewygodna błędów oraz łączenia kodu SQL i R wewnąt
 - [Pisania i testowania procedury składowane SQL](#write-and-test-a-sql-stored-procedure)
 - [Publikowanie procedury składowane SQL](#publish-a-sql-stored-procedure)
 
-Poniższe wideo (6 mln 09s) również zawiera omówienie tych funkcji:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (witrynie youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) omówienie R i SQL przechowywanych procedur (6 mln 09s). |
 
 ### <a name="add-a-database-connection"></a>Dodaj połączenie z bazą danych
 
@@ -87,7 +87,7 @@ RTVS tworzy trzy pliki dla procedury składowanej: `.R` pliku dla kodu języka R
 
 ![Eksplorator rozwiązań rozszerzony widok procedury składowanej SQL z języka R](media/sql-solution-explorer-expanded.png)
 
-`StoredProcedure.R`(w tym przykładzie) jest, gdzie należy wpisać kod R. Wartości domyślne są:
+`StoredProcedure.R` (w tym przykładzie) jest, gdzie należy wpisać kod R. Wartości domyślne są:
 
 ```R
 # @InputDataSet: input data frame, result of SQL query execution
@@ -109,7 +109,7 @@ Prostu, kod odbiera dataframe R o nazwie `InputDataSet` i zwraca wyniki w `Outpu
 
 Wygenerowany kod (w komentarzach) zawiera skrypt teście małych, który używa [pakietu RODBC](https://cran.r-project.org/web/packages/RODBC/index.html) do przesyłania instrukcję SQL z programem SQL Server, uruchom go i pobrać jego zestawu wyników jako dataframe R. Użytkownik może usuń znaczniki komentarza Ustaw ten kod testu, aby interaktywnie wpisz swój kod R wyniku uzyskanie programu SQL Server.
 
-`StoredProcedure.Query.sql`Zapis i przetestować zapytanie SQL, które generuje dane dotyczące `InputDataSet`. Z tym `.sql` plik, Edytor zawiera wszystkie funkcje języka Transact-SQL zwykle do Ciebie.
+`StoredProcedure.Query.sql` Zapis i przetestować zapytanie SQL, które generuje dane dotyczące `InputDataSet`. Z tym `.sql` plik, Edytor zawiera wszystkie funkcje języka Transact-SQL zwykle do Ciebie.
 
 Po zakończeniu modyfikowania swoim własnym kodem SQL, zintegrować ją z kodu języka R w `StoredProcedure.R` przeciągając `.sql` pliku na Otwórz edytor dla `.R` pliku. Na ilustracji poniżej `StoredProcedure.Query.sql` został przeciągnięty do punktu po przecinku w `sqlQuery(channel, )`:
 

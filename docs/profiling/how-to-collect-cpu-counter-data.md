@@ -4,69 +4,68 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.property.cpucounters
+f1_keywords:
+- vs.performance.property.cpucounters
 helpviewer_keywords:
 - profiling tools, using portable CPU counters
 - performance tools, portable CPU counters
-ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
-caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13bba809b77286cd4a6eea4efa41b69c317d23d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be2add4c277b99b6eb1361dac4f9227fb868c2e3
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika procesora
-Licznik zdarzeń Procesora służy do zbierania danych wydajności dotyczących sprzętu. W tym temacie przedstawiono sposób zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.  
-  
- **Wymagania**  
-  
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
-  
- Występują dwa typy zdarzeń licznika Procesora:  
-  
--   Przenośne zdarzeń — zdarzenia Procesora, które mogą zostać pobrane niezależnie od określonego procesora CPU.  
-  
--   Platforma zdarzeń — zdarzenia Procesora, które są powiązane do określonego procesora CPU.  
-  
- Przenośne zdarzenia zawierają ogólne zdarzenia, takie jak instrukcje wycofane i nie został zatrzymany cykle, Procesora buforu zdarzeń rozgałęziania zdarzenia i zdarzenia pamięci podręcznej L2. Liczniki zdarzeń dostępną platformę zależą od producenta procesora.  
-  
- Kategorie zdarzeń może być współużytkowana platforma i przenośne liczniki. Na przykład następujące kategorie danych są często wspólne dla obu typów:  
-  
--   Zdarzenia pamięci.  
-  
--   Zdarzenia frontonu.  
-  
--   Zdarzenia gałęzi.  
-  
- Można zbierać dane liczników wydajności w profilera dwa sposoby:  
-  
--   Zbieranie danych z jednego lub kilku liczników podczas profilu za pomocą Instrumentacji.  
-  
--   Określ zdarzenia licznika jako interwał próbkowania, gdy profilu za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md).  
-  
-### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU, gdy profilu za pomocą Instrumentacji  
-  
-1.  W tej sesji wydajności **strony właściwości**, kliknij przycisk **liczniki CPU.**  
-  
-2.  Wybierz **zbieranie liczniki CPU** pole wyboru.  
-  
-3.  Rozwiń węzeł **dostępnych liczników wydajności** drzewa do momentu znalezienia zdarzenia próbkowania, które mają być zbierane.  
-  
-4.  Dla każdego zdarzenia, które chcesz zebrać, wybierz zdarzenie, a następnie kliknij strzałkę w prawo, aby dodać zdarzenie do **wybrane liczniki** listy.  
-  
+
+Licznik zdarzeń Procesora służy do zbierania danych wydajności dotyczących sprzętu. W tym temacie przedstawiono sposób zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.
+
+Występują dwa typy zdarzeń licznika Procesora:
+
+- Przenośne zdarzeń — zdarzenia Procesora, które mogą zostać pobrane niezależnie od określonego procesora CPU.
+
+- Platforma zdarzeń — zdarzenia Procesora, które są powiązane do określonego procesora CPU.
+
+ Przenośne zdarzenia zawierają ogólne zdarzenia, takie jak instrukcje wycofane i nie został zatrzymany cykle, Procesora buforu zdarzeń rozgałęziania zdarzenia i zdarzenia pamięci podręcznej L2. Liczniki zdarzeń dostępną platformę zależą od producenta procesora.
+
+ Kategorie zdarzeń może być współużytkowana platforma i przenośne liczniki. Na przykład następujące kategorie danych są często wspólne dla obu typów:
+
+- Zdarzenia pamięci.
+
+- Zdarzenia frontonu.
+
+- Zdarzenia gałęzi.
+
+ Można zbierać dane liczników wydajności w profilera dwa sposoby:
+
+- Zbieranie danych z jednego lub kilku liczników podczas profilu za pomocą Instrumentacji.
+
+- Określ zdarzenia licznika jako interwał próbkowania, gdy profilu za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md).
+
+## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU, gdy profilu za pomocą Instrumentacji
+
+1. W tej sesji wydajności **strony właściwości**, kliknij przycisk **liczniki CPU.**
+
+2. Wybierz **zbieranie liczniki CPU** pole wyboru.
+
+3. Rozwiń węzeł **dostępnych liczników wydajności** drzewa do momentu znalezienia zdarzenia próbkowania, które mają być zbierane.
+
+4. Dla każdego zdarzenia, które chcesz zebrać, wybierz zdarzenie, a następnie kliknij strzałkę w prawo, aby dodać zdarzenie do **wybrane liczniki** listy.
+
     > [!NOTE]
-    >  **Dostępnych liczników wydajności** jest włączone, tylko jeśli wybierzesz **liczniki CPU zbieranie** pole wyboru.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Właściwości sesji wydajności](../profiling/performance-session-properties.md)   
- [Procesor CPU i liczniki systemu Windows](../profiling/cpu-and-windows-counters.md)   
- [Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)
+    > **Dostępnych liczników wydajności** jest włączone, tylko jeśli wybierzesz **liczniki CPU zbieranie** pole wyboru.
+
+## <a name="see-also"></a>Zobacz także
+
+[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
+[Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
+[Procesor CPU i liczniki systemu Windows](../profiling/cpu-and-windows-counters.md)  
+[Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)

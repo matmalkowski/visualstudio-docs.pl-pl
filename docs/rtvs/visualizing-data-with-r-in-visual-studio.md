@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 97e9838e46a4e0158b281f243ffda7d46044ef2d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Tworzenie danych wizualnych geograficzne z języka R
 
@@ -28,9 +28,9 @@ Kreślenia jest kluczowym elementem naukowca danych przepływu pracy. W menu Nar
 
 ![Obraz bohater kreślenia](media/plotting-hero-image.png)
 
-Poniższe wideo (2m 02s) zawiera krótki przewodnik po kreślenia w RTVS:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTbKmz5RSgY" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo") | [Obejrzyj film (witrynie youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na kreślenia z R (2 m 02s). |
 
 ## <a name="the-plot-window"></a>Okno kreślenia
 

@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.workload:
+- multiple
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzenia programu Visual Studio
 
@@ -70,22 +73,22 @@ Jeśli chcesz wyłączyć aktualizacje automatyczne, należy wyłączyć funkcj�
 
 Nowość w **programu Visual Studio 2017 wersji 15 ustęp 3**, Visual Studio powiadamia użytkownika, jeśli podejrzewa, że rozszerzenie uczestniczyła w awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątku. Przy następnym uruchomieniu programu Visual Studio sprawdza stosu, począwszy od liścia i działają na bazie. Jeśli program Visual Studio Określa, że ramki należy moduł, który jest częścią zainstalowane i włączone rozszerzenie, pokazuje powiadomienie.
 
-Nowość w **15,6 wersji programu Visual Studio w wersji zapoznawczej 3**, Visual Studio również powiadamia użytkownika, jeśli podejrzewa, powoduje rozszerzenie interfejsu użytkownika przestanie odpowiadać.
+Nowość w **programu Visual Studio 2017 wersji 15,6 preview 3**, Visual Studio również powiadamia użytkownika, jeśli podejrzewa, powoduje rozszerzenie interfejsu użytkownika przestanie odpowiadać.
 
 Gdy te powiadomienia są wyświetlane, możesz zignorować powiadomienie lub wykonać jedną z następujących czynności:
 
 - Wybierz **wyłącza to rozszerzenie**. Visual Studio wyłącza rozszerzenia i informuje o tym, czy należy ponownie uruchomić system, aby wyłączyć zaczęły obowiązywać. Można ponownie włączyć rozszerzenia w **rozszerzenia i aktualizacje** okno dialogowe, jeśli chcesz.
 
-- Wybierz **nigdy nie pokazuj więcej tego komunikatu**. 
-  - Jeśli powiadomienia dotyczą awarii w poprzedniej sesji, Visual Studio nie będą już wyświetlane się, że występuje powiadomienie po awarii, skojarzony z tym rozszerzeniem. Visual Studio będzie widoczna powiadomienia w przypadku braku odpowiedzi może być skojarzony z tym rozszerzeniem lub awarii lub brak reakcji, które mogą być skojarzone z innymi rozszerzeniami. 
-  - Jeśli powiadomienia dotyczą braku odpowiedzi, IDE nie będą już wyświetlane powiadomienie po to rozszerzenie jest skojarzony z braku odpowiedzi. Visual Studio będzie widoczna powiadomień dotyczące awarii dla tego rozszerzenia i związane z awarii i braku odpowiedzi powiadomienia dla innych rozszerzeń. 
+- Wybierz **nigdy nie pokazuj więcej tego komunikatu**.
+  - Jeśli powiadomienia dotyczą awarii w poprzedniej sesji, Visual Studio nie będą już wyświetlane się, że występuje powiadomienie po awarii, skojarzony z tym rozszerzeniem. Visual Studio będzie widoczna powiadomienia w przypadku braku odpowiedzi może być skojarzony z tym rozszerzeniem lub awarii lub brak reakcji, które mogą być skojarzone z innymi rozszerzeniami.
+  - Jeśli powiadomienia dotyczą braku odpowiedzi, IDE nie będą już wyświetlane powiadomienie po to rozszerzenie jest skojarzony z braku odpowiedzi. Visual Studio będzie widoczna powiadomień dotyczące awarii dla tego rozszerzenia i związane z awarii i braku odpowiedzi powiadomienia dla innych rozszerzeń.
 
 - Wybierz **więcej** przejdzie do tej strony.
 
 - Wybierz **X** przycisk na końcu powiadomień na odrzucenie powiadomienia. Nowe powiadomienie będzie wyświetlany dla przyszłych wystąpień rozszerzenia skojarzona z awaria lub brak reakcji interfejsu użytkownika.
 
 > [!NOTE]
-> Powiadomienie nie odpowiadać lub awarii interfejsu użytkownika oznacza tylko że jeden z modułów rozszerzenia na stosie gdy odpowiadać interfejsu użytkownika lub w przypadku wystąpienia awarii. Nie musi to oznaczać, że rozszerzenie sam był dziedziczonej z istotnymi elementami. Istnieje możliwość, że rozszerzenie o nazwie kodu, który wchodzi w skład programu Visual Studio, co z kolei spowodowało odpowiadać interfejsu użytkownika lub awarii. Jednak powiadomienia nadal mogą być przydatne, jeśli rozszerzenie, które doprowadziły do awarii lub brak reakcji interfejsu użytkownika nie jest dla Ciebie ważne. W takim przypadku wyłączenie rozszerzenia pozwala uniknąć braku odpowiedzi interfejsu użytkownika lub awarii w przyszłości, bez wywierania wpływu na wydajność. 
+> Powiadomienie nie odpowiadać lub awarii interfejsu użytkownika oznacza tylko że jeden z modułów rozszerzenia na stosie gdy odpowiadać interfejsu użytkownika lub w przypadku wystąpienia awarii. Nie musi to oznaczać, że rozszerzenie sam był dziedziczonej z istotnymi elementami. Istnieje możliwość, że rozszerzenie o nazwie kodu, który wchodzi w skład programu Visual Studio, co z kolei spowodowało odpowiadać interfejsu użytkownika lub awarii. Jednak powiadomienia nadal mogą być przydatne, jeśli rozszerzenie, które doprowadziły do awarii lub brak reakcji interfejsu użytkownika nie jest dla Ciebie ważne. W takim przypadku wyłączenie rozszerzenia pozwala uniknąć braku odpowiedzi interfejsu użytkownika lub awarii w przyszłości, bez wywierania wpływu na wydajność.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Przykładowy wzorzec kopii i Praca z kopii
 

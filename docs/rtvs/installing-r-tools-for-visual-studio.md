@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Instalowanie narzędzi R dla programu Visual Studio
 
@@ -44,7 +44,7 @@ Nie można zainstalować RTVS, jeśli masz tylko program Visual Studio Shell do�
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalowanie RTVS w Visual Studio 2017 r.
 
-1. Uruchom Instalatora programu Visual Studio. (Zobacz [pobiera](https://www.visualstudio.com/downloads/) Jeśli jeszcze nie masz zainstalowanego programu Visual Studio.) W systemie Windows 7, upewnij się, że Instalatorem jest aktualizowana w celu wyświetlenia wersji programu Visual Studio *15,2 kompilacji 26430.12* lub nowszym.
+1. Uruchom Instalatora programu Visual Studio. (Zobacz [pobiera](https://www.visualstudio.com/downloads/) Jeśli jeszcze nie masz zainstalowanego programu Visual Studio.) W systemie Windows 7, upewnij się, że Instalatorem zostało zaktualizowane do wyświetlenia wersji programu Visual Studio 2017 *15,2 kompilacji 26430.12* lub nowszym.
 
 1. Wybierz **nauki dane i aplikacje analitycznych** obciążenia:
 
@@ -75,18 +75,18 @@ Pobierz bieżący RTVS dla programu Visual Studio 2015 z [https://aka.ms/rtvs-cu
 > [!Note]
 > Autonomiczny Instalator RTVS działa tylko w przypadku programu Visual Studio 2015 roku. z programu Visual Studio 2017 r, zainstaluj obsługę R za pośrednictwem [obciążenia nauki dane i aplikacje analitycznych](#installing-rtvs-in-visual-studio-2017) zgodnie z wcześniejszym opisem.
 
-RTVS dla programu Visual Studio 2015 jest instalowany w:`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
+RTVS dla programu Visual Studio 2015 jest instalowany w: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
 ## <a name="offline-installation-of-visual-studio-and-rtvs"></a>Instalacja programu Visual Studio i RTVS w trybie offline
 
 Instalacja w trybie offline jest odpowiednia dla komputerów, które nie są połączone z Internetem:
 
-1. Postępuj zgodnie z instrukcjami, aby utworzyć Instalatora w trybie offline dla używanej wersji programu Visual Studio: 
+1. Postępuj zgodnie z instrukcjami, aby utworzyć Instalatora w trybie offline dla używanej wersji programu Visual Studio:
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Dla programu Visual Studio 2015, Pobierz instalatorów RTVS w trybie offline z [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) i [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Dla programu Visual Studio 2015, Pobierz instalatorów RTVS w trybie offline z [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) i [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Instalowanie programu Visual Studio i RTVS z instalatorów w trybie offline.
 
