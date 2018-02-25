@@ -29,4 +29,4 @@ Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Ręczne identyfikowanie istniejącego środowiska Python](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

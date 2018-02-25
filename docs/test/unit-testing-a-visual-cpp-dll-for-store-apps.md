@@ -1,7 +1,7 @@
 ---
 title: "Jak przetestować biblioteki DLL programu Visual C++ dla aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/04/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 02c1e5a2bc4ba10aa1719ace69fc33de79995984
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL programu Visual C++
 
@@ -26,7 +26,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
  W tym temacie tworzy także jedno rozwiązanie Visual Studio i oddzielne projektów testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Testy jednostkowe mogą również obejmować bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i. BIBLIOTEKI DLL. Zobacz [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) uzyskać porady na temat struktury, których do użycia.
   
-##  <a name="Create_the_solution_and_the_unit_test_project"></a>Tworzenie rozwiązania i jednostkowy projekt testowy  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Tworzenie rozwiązania i jednostkowy projekt testowy  
   
 1.  Na **pliku** menu, wybierz **nowy** > **nowy projekt...** .
   
@@ -50,11 +50,11 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
          Gdy testy są uruchamiane, tworzone jest wystąpienie klasy każdego testu. Metody testowe są nazywane w nieokreślonej kolejności. Można określić specjalne metody, które są wywoływane przed i po każdej modułu, klasy lub metody. Aby uzyskać więcej informacji, zobacz [korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) w bibliotece MSDN.  
   
-##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Sprawdź, że testy uruchamiane w narzędzia Eksplorator testów  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sprawdź, że testy uruchamiane w narzędzia Eksplorator testów  
   
 1.  Wstaw kod testu:  
   
-    ```cpp  
+    ```cpp
     TEST_METHOD(TestMethod1)  
     {  
         Assert::AreEqual(1,1);  
@@ -69,7 +69,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
      ![Testowanie Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="Add_the_DLL_project_to_the_solution"></a>Dodaj do rozwiązania projektu biblioteki DLL  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> Dodaj do rozwiązania projektu biblioteki DLL  
   
 1.  W Eksploratorze rozwiązań wybierz nazwę rozwiązania. Z menu skrótów wybierz **Dodaj**, a następnie **Dodawanie nowego projektu**.  
   
@@ -129,7 +129,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
     ```  
   
-##  <a name="make_the_dll_functions_visible_to_the_test_code"></a>Udostępnienie funkcji dll dla kodowanego testu  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Udostępnienie funkcji dll dla kodowanego testu  
   
 1.  Dodaj RooterLib do projektu RooterLibTests.  
   
@@ -182,7 +182,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
  Ma ustawienie testu i projekty kodu i sprawdzić, czy można uruchamiać testy, które uruchamiania funkcji w projekcie kodu. Teraz można rozpocząć pisanie rzeczywistych testów i kod.  
   
-##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Wielokrotnie powtarzane rozszerzyć testy i były przekazywane  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Wielokrotnie powtarzane rozszerzyć testy i były przekazywane  
   
 1.  Dodaj nowego testu:  
   
@@ -243,7 +243,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 > [!TIP]
 >  Opracuj kodu, dodając testy jednym naraz. Upewnij się, że wszystkie testy zostały zaliczone pomyślnie po każdej iteracji.  
   
-##  <a name="Debug_a_failing_test"></a>Debuguj test się niepowodzeniem  
+##  <a name="Debug_a_failing_test"></a> Debuguj test się niepowodzeniem  
   
 1.  Dodawanie innego testu do **unittest1.cpp**:  
   
@@ -313,7 +313,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
   
  ![Wszystkie testy zostały zaliczone pomyślnie](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="Refactor_the_code_without_changing_tests"></a>Zrefaktoryzuj kod bez zmiany testów  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Zrefaktoryzuj kod bez zmiany testów  
   
 1.  Uproszczenia obliczeń centralnej w `SquareRoot` funkcji:  
   

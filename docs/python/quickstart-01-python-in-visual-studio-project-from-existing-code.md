@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4caf9c973d6ee99475c94b2d7870e536eb62781b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e8e57fb97b5e792375cefb344306a9bdc71836be
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Szybki Start: Tworzenie projektu języka Python z istniejącego kodu
 
@@ -41,6 +41,6 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md).
 - [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).

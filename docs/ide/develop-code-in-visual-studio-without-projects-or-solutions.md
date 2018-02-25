@@ -1,7 +1,6 @@
 ---
 title: "Opracuj kodu w programie Visual Studio bez projekty i rozwiązania | Dokumentacja firmy Microsoft"
-ms.custom: 
-ms.date: 02/27/2017
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -15,226 +14,106 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 40995be9ee5d5da5a3219dd8badcb13e4b3f6e62
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
+ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Opracuj kodu w programie Visual Studio bez projektów i rozwiązań
 
-W Visual Studio 2017 r możesz otworzyć kodu z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, można, na przykład znaleźć projektu kodu na Git, klonowanie i otworzyć go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu.  
+W Visual Studio 2017 r możesz otworzyć kodu z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, można, na przykład klonowanie repozytorium w usłudze GitHub, otwórz go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu. W razie potrzeby można określić zadania niestandardowej kompilacji i uruchomić parametrów za pomocą prostego pliki w formacie JSON.
 
-Nie tylko możesz edytować kod i skompiluj go w programie Visual Studio, można również przejść za pomocą kodu (na przykład za pomocą przejdź do polecenia). Kod będzie wyświetlany z kolorowanie składni, a w wielu przypadkach obejmują podstawowe uzupełnianie i debugowania, wraz z punktów przerwania. W przypadku niektórych języków będzie zawierać zwiększające funkcjonalność. Zobacz [utworzyć przenośny, niestandardowego edytora ustawień](create-portable-custom-editor-options.md) Aby uzyskać więcej informacji.  
+Po otwarciu plików kodu w programie Visual Studio Solution Explorer wyświetla wszystkie pliki w folderze. Możesz kliknąć dowolny plik, aby rozpocząć edycji. W tle Visual Studio rozpoczyna indeksowania pliki, aby włączyć IntelliSense, nawigacji i funkcje refaktoryzacji. Jak edytować, tworzenie, przenoszenie i usuwania plików programu Visual Studio automatycznie śledzenia zmian i stale aktualizuje jego indeks IntelliSense. Kod będzie wyświetlany z kolorowanie składni, a w wielu przypadkach obejmują podstawowe instrukcji IntelliSense.
 
-## <a name="open-code-anywhere"></a>Otwórz kod dowolnego miejsca
+## <a name="open-any-code"></a>Otwórz każdy kod
 
-Kod można otworzyć w programie Visual Studio w następujący sposób:  
+Kod do programu Visual Studio można otworzyć w dowolnym z następujących sposobów:
 
-- Na pasku menu programu Visual Studio wybierz **pliku**, **Otwórz**, **folderu**, następnie przejdź do lokalizacji kodu.  
-
-- W menu kontekstowym (kliknij prawym przyciskiem myszy) do folderu zawierającego kod, wybierz **Otwórz w programie Visual Studio** polecenia.  
-
-- Wybierz **Otwórz Folder** łącza w Visual Studio — strona początkowa.  
-
-- Otwórz kod sklonować z repozytorium GitHub.  
+- Na pasku menu programu Visual Studio wybierz **pliku** > **Otwórz** > **folderu**, a następnie przejdź do lokalizacji kodu.
+- W menu kontekstowym (kliknij prawym przyciskiem myszy) do folderu zawierającego kod, wybierz **Otwórz w programie Visual Studio** polecenia.
+- Wybierz **Otwórz Folder** łącza w Visual Studio — strona początkowa.
+- Jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Ctrl**+**Shift**+**Alt**+**O** w języku Visual Studio.
+- Otwórz kod z sklonowanego repozytorium GitHub.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Aby otworzyć kodu z sklonowanego repozytorium GitHub
 
-Poniższy przykład pokazuje, jak można sklonować repozytorium GitHub, a następnie otwórz jego kodu w programie Visual Studio. Aby wykonać tę procedurę, musi mieć konto usługi GitHub i Git dla systemu Windows zainstalowanych w systemie. Zobacz [utworzeniem nowego konta usługi GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account/) i [Git dla systemu Windows](https://git-for-windows.github.io/) Aby uzyskać więcej informacji.  
+Poniższy przykład pokazuje, jak można sklonować repozytorium GitHub, a następnie otwórz jego kodu w programie Visual Studio. Aby wykonać tę procedurę, musi mieć konto usługi GitHub i Git dla systemu Windows zainstalowanych w systemie. Zobacz [utworzeniem nowego konta usługi GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account/) i [Git dla systemu Windows](https://git-for-windows.github.io/) Aby uzyskać więcej informacji.
 
-1. Przejdź do repozytorium, które chcesz sklonować w witrynie GitHub.  
+1. Przejdź do repozytorium, które chcesz sklonować w witrynie GitHub.
 
-1. Wybierz **klonowania lub pobrać** przycisk, a następnie wybierz pozycję **Kopiuj do Schowka** przycisk w menu rozwijanym, aby skopiować bezpiecznego adresu URL dla repozytorium GitHub.  
+1. Wybierz **klonowania lub pobrać** przycisk, a następnie wybierz pozycję **Kopiuj do Schowka** przycisk w menu rozwijanym, aby skopiować bezpiecznego adresu URL dla repozytorium GitHub.
 
-  ![Przycisk powielania GitHub](./media/VSIDE_Code_Clone.png)
+   ![Przycisk powielania GitHub](./media/VSIDE_Code_Clone.png)
 
-    > [!NOTE]
-    >  Gdy masz również opcję, aby otworzyć projekt na pulpicie lub pobrać plik zip projektu, w tym przykładzie pokazano, jak klonowanie repozytorium przy użyciu metody bezpiecznego adresu URL.
+1. W programie Visual Studio, wybierz **Team Explorer** kartę, aby otworzyć program Team Explorer. Jeśli karta nie jest widoczna, otwórz go z **widoku** > **Team Explorer**.
 
-1. W programie Visual Studio, wybierz **Team Explorer** kartę, aby otworzyć program Team Explorer.  
+1. W programie Team Explorer w obszarze **lokalnego repozytoriów Git** wybierz **klonowania** polecenia, a następnie wklej adres URL strony GitHub w polu tekstowym.
 
-1. W programie Team Explorer w obszarze **lokalnego repozytoriów Git** wybierz **klonowania** polecenia, a następnie wklej adres URL strony GitHub w polu tekstowym.  
+   ![Klonowanie projektu](./media/VSIDE_Code_Clone2.png)
 
-  ![Klonowanie projektu](./media/VSIDE_Code_Clone2.png)
+1. Wybierz **klonowania** przycisk sklonować pliki projektu do lokalnego repozytorium Git. W zależności od rozmiaru repozytorium ten proces może potrwać kilka minut.
 
-1. Wybierz **klonowania** przycisk sklonować pliki projektu do lokalnego repozytorium Git. W zależności od rozmiaru repozytorium ten proces może potrwać kilka minut.  
+1. Po repozytorium ma został sklonowany w systemie, w programie Team Explorer, wybierz **Otwórz** polecenia w menu kontekstowym (kliknij prawym przyciskiem myszy) nowo sklonowanego repozytorium.
 
-1. Po repozytorium ma został sklonowany w systemie, w programie Team Explorer, wybierz **Otwórz** polecenia w menu kontekstowym (kliknij prawym przyciskiem myszy) nowo sklonowanego repozytorium.  
+   ![Sklonowanego repozytorium](./media/VSIDE_Code_Clone3.png)
 
-  ![Sklonowanego repozytorium](./media/VSIDE_Code_Clone3.png)
+1. Wybierz **Pokaż widok folderu** polecenie, aby wyświetlić pliki w Eksploratorze rozwiązań
 
-1. Wybierz **Pokaż widok folderu** polecenie, aby wyświetlić pliki w Eksploratorze rozwiązań  
+   ![Pokaż widok folderu](./media/VSIDE_Code_Clone3_show.png)
 
-  ![Pokaż widok folderu](./media/VSIDE_Code_Clone3_show.png)
-
-  Można teraz przeglądanie folderów i plików w repozytorium sklonowany i wyświetlić i wyszukiwanie kodu w edytorze kodu programu Visual Studio z kolorowanie składni i inne funkcje.
-
-    ![Wyszukiwanie kodu sklonowany projektu](./media/VSIDE_Code_Clone4.png)  
+   Można teraz przeglądanie folderów i plików w repozytorium sklonowany i wyświetlić i wyszukiwanie kodu w edytorze kodu programu Visual Studio z kolorowanie składni i inne funkcje.
 
 |         |         |
 |---------|---------|
-|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |    [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) dotyczące klonowania i otworzyć kodu z repozytorium GitHub, w programie Visual Studio. |
+|  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")|    [Obejrzyj film](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) dotyczące klonowania i otworzyć kodu z repozytorium GitHub, w programie Visual Studio. |
 
-## <a name="debug-your-code"></a>Debugowanie kodu
+## <a name="run-and-debug-your-code"></a>Uruchom i debugowanie kodu
 
-Można debugować kodu w programie Visual Studio bez projekt lub rozwiązanie. Aby debugować niektórych języków, konieczne może być Określ prawidłowe *uruchamiania pliku* w projekcie kodu, takie jak skrypt, plik wykonywalny lub projektu. Visual Studio działa to określony kod najpierw podczas debugowania kodu.  
+Można debugować kodu w programie Visual Studio bez projekt lub rozwiązanie! Aby debugować niektórych języków, konieczne może być Określ prawidłowe *uruchamiania pliku* w codebase, takich jak skrypt, plik wykonywalny lub projektu. Pole listy rozwijanej obok pola **Start** przycisk na pasku narzędzi zawiera wszystkie wykryte Visual Studio, a także szczegółowo określić elementy elementy startowe. Visual Studio działa ten kod najpierw podczas debugowania kodu.
 
-Pole listy rozwijanej obok przycisku Start na pasku narzędzi zawiera wszystkie wykryte Visual Studio, a także elementów, które można wybrać w folderze elementy startowe.  
+Konfigurowanie kodu do uruchomienia w programie Visual Studio zależy od tego, jakiego rodzaju kodu jest, i jakie narzędzia kompilacji.
 
-![Przycisk Uruchom](./media/VSIDE_Code_Run_Button.png)  
+### <a name="codebases-that-use-msbuild"></a>Codebases używające programu MSBuild
 
-Visual Studio automatycznie rozpoznaje projektów, ale konieczne można w sposób jawny wybrany przez użytkownika jako element startowy zanim pojawią się na liście skryptów (na przykład Python i JavaScript). Ponadto niektóre elementy startowe, takich jak program MSBuild i CMake, może mieć wielu konfiguracji kompilacji, które są wyświetlane na liście rozwijanej przycisk Uruchom.  
+Na podstawie MSBuild codebases może mieć wielu konfiguracji kompilacji, które są widoczne w **Start** przycisku listy rozwijanej. Wybierz plik, który ma być używany jako element startowy, a następnie wybierz pozycję **Start** przycisk, aby rozpocząć debugowanie.
 
-Program Visual Studio obsługuje obecnie debugowanie dla następujących języków:  
+> [!NOTE]
+> Dla języka C# i Visual Basic codebases, musisz mieć **tworzenia klasycznych aplikacji .NET** obciążenia zainstalowane. Dla języka C++ codebases, musisz mieć **tworzenia klasycznych aplikacji w języku C++** obciążenia zainstalowane.
 
-- Node.js  
+### <a name="codebases-that-use-custom-build-tools"></a>Codebases tego użycia niestandardowych narzędzi kompilacji
 
-- Python  
+Jeśli używany przez codebase niestandardowych narzędzi kompilacji, a następnie programu Visual Studio należy wskazać sposób tworzenia przy użyciu kodu *zadania kompilacji* które są zdefiniowane w *JSON* pliku. Aby uzyskać więcej informacji, zobacz [Dostosowywanie kompilacji i debugowanie zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-- Projekty oparte na MSBuild (C#, VB, C++)  
+### <a name="codebases-that-contain-python-or-javascript-code"></a>Codebases, który zawiera kod języka Python lub JavaScript
 
-- Każdego pliku wykonywalnego z plików PDB (Python debugera).  
+Jeżeli baza kodu zawiera kod języka Python lub JavaScript, nie trzeba skonfigurować dowolne *JSON* pliki, ale trzeba instalować odpowiednie obciążenie. Należy także skonfigurować skrypt uruchamiania:
 
-### <a name="to-debug-nodejs-and-python"></a>Debugowanie Node.js i Python:
+1. Zainstaluj [programowanie Node.js](https://www.visualstudio.com/vs/node-js/) lub [programowania Python](https://www.visualstudio.com/vs/python/) obciążenie, wybierając **narzędzia** > **Pobierz narzędzia i funkcje...** , lub zamknięcia programu Visual Studio i uruchamiając Instalator programu Visual Studio.
 
-1. Zainstaluj Node.js lub Python Tools lub program Visual Studio 2017 i środowiska uruchomieniowego Node.js.  
+   ![Node.js i Python obciążeń programowanie](media/python_nodejs_workloads.png)
 
-1. W menu kontekstowym pliku JavaScript w Eksploratorze rozwiązań wybierz **Ustaw jako element startowy** polecenia.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy lub kontekstu menu plik JavaScript lub Python, wybierz **Ustaw jako element startowy** polecenia.
 
-1. Wybierz **F5** klawisz, aby rozpocząć debugowanie.  
+1. Wybierz **Start** przycisk, aby rozpocząć debugowanie.
 
-### <a name="to-debug-msbuild-projects"></a>Debugowanie projektów MSBuild
+### <a name="codebases-that-contain-c-code"></a>Codebases, który zawiera kod w języku C++
 
-1. W menu programu Visual Studio wybierz **debugowania**. Z menu rozwijanego wybierz projekt lub projekt lub plik, który ma być wyświetlany jako element startowy w Eksploratorze rozwiązań.  
+Aby dowiedzieć się, jak otwieranie kod w języku C++ bez rozwiązań lub projektów programu Visual Studio, zobacz [Otwórz Folder projektów C++](/cpp/ide/non-msbuild-projects).
 
-1. Wybierz **F5** klawisz, aby rozpocząć debugowanie.  
+### <a name="codebases-that-contain-a-visual-studio-project"></a>Codebases zawierających projektu programu Visual Studio
 
-### <a name="to-debug-executable-files"></a>Aby debugować pliki wykonywalne
+Jeśli folder kod zawiera projektu programu Visual Studio, możesz wyznaczyć projektu jako element startowy.
 
-1. W menu programu Visual Studio wybierz **debugowania**. Z menu rozwijanego wybierz projekt lub projekt lub plik, który ma być wyświetlany jako element startowy w Eksploratorze rozwiązań.  
+![Ustaw projekt jako element startowy](media/customize-set-project-as-startup-item.png)
 
-1. Wybierz **F5** klawisz, aby rozpocząć debugowanie.  
+**Start** przycisku zmiany tekstu w celu odzwierciedlenia, że projekt jest element startowy.
 
-## <a name="enable-custom-build-tools"></a>Włącz niestandardowe narzędzia kompilacji
-
-Visual Studio potrafi uruchamianie wielu różnych językach, ale nie wiadomo, jak uruchomić wszystkie. Jeśli Visual Studio wie, jak uruchomić danego języka, można od razu wykonywania kodu. Jeżeli zostanie podjęta próba uruchomienia kodu programu Visual Studio nie może ustalić, sposobu jego uruchamiania, pasek informacyjny monituje można wyznaczyć plik w Twojej codebase do działania jako element startowy.  
-
-Jeśli codebase używa narzędzia niestandardowej kompilacji, które nie rozpoznaje programu Visual Studio, jednak następnie prawdopodobnie nie można uruchomić i debugowania kodu w programie Visual Studio, dopóki nie zostanie ukończona pewnych dodatkowych czynności. Musisz określić typ prawidłowy plik wykonywalny, takich jak kompilatora, oraz wszelkie niestandardowe parametry i argumenty wymagane przez język. Aby włączyć tę opcję, program Visual Studio udostępnia *zadania kompilacji*. Można utworzyć zadania kompilacji, aby określić wszystkie elementy potrzebne języka Aby skompilować i uruchomić kodu.  
-
-Można również utworzyć kompilacji dowolnego zadania, które można wykonać prawie wszystko, co ma. Na przykład można utworzyć zadania do wyświetlania zawartości folderu lub zmiany nazwy pliku. Alternatywnie można utworzyć więcej docelowych niestandardowej kompilacji zadań wykonywanie czynności takich jak kompilacji i skompilowanie projektu przy użyciu określonych argumentów. Poniższe kroki przedstawiają sposób tworzenia obu typów zadań kompilacji.  
-
-#### <a name="to-create-an-arbitrary-build-task"></a>Aby utworzyć zadanie dowolnego kompilacji
-
-1. Wybierz plik lub folder projektu w Eksploratorze rozwiązań, w którym zadanie ma i w pliku lub folderu menu kontekstowe (kliknij prawym przyciskiem myszy), **skonfigurować zadania**.  
-
-  ![Konfigurowanie zadań](./media/VSIDE_Code_Config_Task.png)
-
-  Wybieranie **skonfigurować zadania** otwiera plik o nazwie tasks.vs.json. Jeśli ten plik nie istnieje, jest tworzony. Ten plik zawiera zadania kompilacji dla wybranego pliku lub folderu.  
-
-  ![Plik Tasks.VS.JSON](./media/VSIDE_Code_Tasks_JSON.png)
-
-1. Dodaj następujące zadania kompilacji do tasks.vs.json. W tym przykładzie dodamy prostych zadań o nazwie "Listy danych wyjściowych" listę plików i podfolderów wybranego folderu, w oknie danych wyjściowych. (Nowe zadanie powinni zostać dodani w istniejącej tablicy "zadania").  
-
-  ```xml
-      {
-        "taskName": "List outputs",
-        "appliesTo": "*",
-        "type": "command",
-        "command": "${env.COMSPEC}",
-        "args": [
-          "dir ${outDir}"
-        ]
-      },
-  ```
-  Zadania kompilacji pełne powinna wyglądać następująco.  
-
-  ![Zadania kompilacji dowolnego](./media/VSIDE_Code_Tasks_ArbTask.png)
-
-1. Zapisz projekt.  
-
-1. Otwórz menu kontekstowe dla wybranego folderu. Powinny pojawić się nowe zadanie dowolnego kompilacji są wyświetlane u dołu menu kontekstowego.  
-
-  ![Polecenie zadań dowolnego kompilacji](./media/VSIDE_Code_Tasks_ArbTask2.png)
-
-1. Wybierz nowy **listy danych wyjściowych** polecenie do wykonania zadania.  
-
-### <a name="to-create-a-custom-build-task"></a>Aby utworzyć zadanie niestandardowej kompilacji
-
-W tej procedurze dodamy dwa zadania niestandardowej kompilacji, których nMake kompilacji i czyszczenie kodu.  
-
-1. Wybierz plik projektu w Eksploratorze rozwiązań, które chcesz wyznaczyć element startowy. W menu kontekstowym (kliknij prawym przyciskiem myszy) pliku, wybierz **skonfigurować zadania**.  
-
-  ![Polecenia zadania niestandardowej kompilacji](./media/VSIDE_Code_Tasks_CustTask1.png)
-
-1. Dodaj następujące zadania kompilacji do tasks.vs.json. W tym przykładzie dodamy dwa zadania: jedną o nazwie "pliku reguł programu make kompilacji", która używa polecenia nMake, aby skompilować projekt, innych o nazwie czyszczenia pliku reguł programu make które wywołuje polecenie nMake z argumentem "Wyczyść". Te zadania, należy dodać w ramach istniejącej tablicy "zadania". (Należy pamiętać, że są one tylko zadania kompilacji przykład. Dla nich faktycznie pracę, musisz mieć obciążenia, który zawiera [nNake](/cpp/build/nmake-reference) zainstalowanych w systemie.)
-
-  ```xml
-  {
-  "taskName": "makefile-build",
-  "appliesTo": "makefile",
-  "type": "command",
-  "contextType": "build",
-  "command": "nmake"
-  },
-  {
-  "taskName": "makefile-clean",
-  "appliesTo": "makefile",
-  "type": "command",
-  "contextType": "clean",
-  "command": "nmake",
-  "args": [
-    "clean"
-    ]
-  },
-  ```
-  Zadania ukończone niestandardowej kompilacji powinien wyglądać następująco.  
-
-  ![Zadanie niestandardowej kompilacji](./media/VSIDE_Code_Tasks_CustTask2.png)
-
-1. Zapisz projekt.  
-
-1. Otwórz menu kontekstowe dla wybranego pliku. Nowe zadania kompilacji niestandardowej powinna pojawić się w środku menu kontekstowego.  
-
-  ![Polecenia zadania niestandardowej kompilacji](./media/VSIDE_Code_Tasks_CustTask3.png)
-
-  > [!NOTE]
-  > Polecenia są wyświetlane w obszarze **skonfigurować zadania** polecenia ze względu na ich `contextType` ustawień; "kompilacji" i "Wyczyść" są poleceń kompilacji, aby były wyświetlane w sekcji kompilacji w środku menu kontekstowego.  
-
-  Teraz, niestandardowych poleceń kompilacji został skojarzony z plikiem, można wyznaczyć plik jako element startowy.  
-
-1. W menu kontekstowym pliku, wybierz **Ustaw jako element startowy**.  
-
-  ![Polecenia zadania niestandardowej kompilacji](./media/VSIDE_Code_Tasks_CustTask4.png)
-
-1. Na pasku narzędzi wybierz strzałkę listy rozwijanej obok przycisku Start. Element startowy jest teraz wyświetlany jako opcja.  
-
-  ![Polecenia zadania niestandardowej kompilacji](./media/VSIDE_Code_Tasks_CustTask5.png)
-
-Teraz możesz **Start** przycisk lub **F5** klawisz, aby uruchomić baza kodu. Możesz edytować i debugowania baza kodu w programie Visual Studio, mimo że program Visual Studio nie rozpoznaje narzędzia kompilacji bazy kodu. Zostaną wyświetlone dane wyjściowe z zadania kompilacji w **dane wyjściowe** okna i błędy kompilacji są wyświetlane w **listy błędów**. Tasks.vs.json kompilacji pozamałżeńskie pliku zadań narzędzi używanych przez baza kodu do kompilacji z pętli wewnętrzny programowania Visual Studio niestandardowe.  
-
-Zadania kompilacji niestandardowej można dodawać do pojedynczych plików lub wszystkich plików określonego typu. Na przykład pliki pakietu NuGet można skonfigurować do zadania "Przywracanie Packages" lub wszystkich plików źródłowych można skonfigurować tak, aby zadanie analizy statycznej, takich jak linter dla wszystkich plików js.  
-
-Program Visual Studio obsługuje VSCode `$variable` podstawienia w folderze głównym tasks.vs.json oprócz zmiennych środowiskowych (takie jak `$env.var`) lub kluczy.  
-
-## <a name="specify-build-output"></a>Określ dane wyjściowe kompilacji
-
-Jeśli projekt musi być skompilowany, możesz dodać dodatkowe tagu o nazwie `output` do pliku tasks.vs.json. Oto przykład.  
-
-`"output": "${workspaceRoot}\\bin\\hellomake.exe"`
-
-Określanie lokalizacji danych wyjściowych powiadamia gdzie można znaleźć w danych wyjściowych kompilacji projektu programu Visual Studio.  
-
-## <a name="tasksvsjson-file-location"></a>Lokalizacja pliku Tasks.VS.JSON
-
-Domyślnie plik tasks.vs.json znajduje się w ukrytym folderze o nazwie `.vs`. Aby wyświetlić ukryte pliki w programie Visual Studio, wybierz **Pokaż wszystkie pliki** przycisk na pasku narzędzi Eksplorator rozwiązań.
-
-![Polecenie zadań dowolnego kompilacji](./media/VSIDE_Code_Tasks_FileLocation.png)
-
-Plik tasks.vs.json jest ukryty, ponieważ większość użytkowników przeważnie nie chcesz sprawdź go do kontroli źródła. Jednak jeśli chcesz mieć możliwość sprawdzenia go do kontroli źródła, przeciągnij plik do katalogu głównego projektu gdzie będą widoczne.  
-
-Inne pliki JSON może znajdować się w folderze .vs, ale są jedynymi osobami, które należy przenieść plik tasks.vs.json i plik launch.vs.json (jeśli jest). Plik launch.vs.json konfiguruje debuger programu Visual Studio podczas pliku tasks.vs.json konfiguruje kompilacji w programie Visual Studio.  
+![Projekt na przycisku Start](media/customize-start-button-project.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Dostosowywanie kompilacji i debugowanie zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
+- [Otwórz Folder projektów dla języka C++](/cpp/ide/non-msbuild-projects)
+- [CMake projektów w języku C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Pisanie kodu w edytorze kodu i tekstu](../ide/writing-code-in-the-code-and-text-editor.md)

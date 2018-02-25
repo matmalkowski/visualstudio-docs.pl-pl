@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: bc9317615edbf49e35aa0ac3d2ff079beab20df5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie Python w usłudze aplikacji Azure
 
@@ -130,8 +130,8 @@ FastCGI jest interfejs, który działa na poziomie żądania. Usługi IIS odbier
 `<appSettings>` Zdefiniowanych w tym miejscu są dostępne dla aplikacji jako zmienne środowiskowe:
 
 - Wartość `PYTHONPATH` może zostać rozszerzona za darmo, ale musi zawierać katalogu głównego aplikacji.
-- `WSGI_HANDLER`musi wskazywać do aplikacji WSGI importowane z aplikacji.
-- `WSGI_LOG`jest opcjonalne, ale zalecane do debugowania swojej aplikacji. 
+- `WSGI_HANDLER` musi wskazywać do aplikacji WSGI importowane z aplikacji.
+- `WSGI_LOG` jest opcjonalne, ale zalecane do debugowania swojej aplikacji. 
 
 Zobacz [publikowania na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) dodatkowe szczegóły dotyczące `web.config` aplikacji sieci web zawartość Bottle, Flask i Django.
 
@@ -202,7 +202,7 @@ Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z na
     Przy użyciu `requirements.txt` jest zalecane, ponieważ jest łatwy do odtworzenia pakietu dokładną wartość lokalnie i na serwerze. Pamiętaj tylko odwiedzić konsoli po wdrożeniu zmiany wprowadzone w `requirements.txt` i ponownie uruchom polecenie.
 
 > [!Note]
-> Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [zarządzania wymagane pakiety](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
+> Nie żadnego kompilatora C z usługi aplikacji, więc musisz zainstalować kółka pod kątem ewentualnych pakietów z modułów macierzystych rozszerzenia. Wiele pakietów popularnych podać własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na komputerze lokalnym programowanie i przekazywania następnie kółka do swojej witryny. Na przykład zobacz [zarządzania wymagane pakiety z pliku requirements.txt](managing-required-packages-with-requirements-txt.md).
 
 ### <a name="kudu-rest-api"></a>Program kudu interfejsu API REST
 

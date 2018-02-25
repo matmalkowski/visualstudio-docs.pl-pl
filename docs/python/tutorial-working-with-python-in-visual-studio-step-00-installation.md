@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca3dccf8a30bb4e1132c0bbc7ea8d8e660ae0f8e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 30e3341db1543690d39f5144ed67894b1fb65c4d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Zainstaluj obsługę języka Python w programie Visual Studio
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie środowiska dla istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md).
 - [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).
 

@@ -36,7 +36,7 @@ Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.
 
     ![Pierwsze dane wyjściowe z programu Python MNIST](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Jeśli używasz Anaconda i wystąpi błąd o Brak numpy, może być konieczna zmiana środowiska python, konieczne może być [zmienić środowiska python, aby użyć Anaconda](../python/managing-python-environments-in-visual-studio.md)
+> Jeśli używasz Anaconda i wystąpi błąd o Brak numpy, konieczne może być [zmienić środowiska Python, aby użyć Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
 11. Można zwizualizować postępu za pomocą TensorBoard. Kliknij prawym przyciskiem myszy projekt i kliknij przycisk **Uruchom TensorBoard** następnie wybierz katalog TensorBoard rejestruje dane wyjściowe.
 

@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -219,7 +219,7 @@ Aby C++ DLL do rozszerzenia dla języka Python, najpierw zmodyfikować wyeksport
 1. Ustawienia konfiguracji docelowej "Wersja" i skompiluj projekt C++ ponownie w celu zweryfikowania kodu. Jeśli wystąpią błędy, sprawdź następujących przypadkach:
     - Nie można zlokalizować Python.h: Upewnij się, że ścieżka w **C/C++ > Ogólne > Dodatkowe katalogi dołączenia** w punktach właściwości projektu do instalacji języka Python `include` folderu.
     - Nie można zlokalizować biblioteki Python: Upewnij się, że ścieżka w **konsolidatora > Ogólne > Dodatkowe katalogi bibliotek** w punktach właściwości projektu do instalacji języka Python `libs` folderu.
-    - Konsolidator błędy związane z Architektura docelowa: Zmień architektura projektu docelowego C++ odpowiadać instalacji języka Python.
+    - Konsolidator błędy związane z Architektura docelowa: Zmień architektura projektu docelowego C++ odpowiadać instalacji języka Python. Na przykład jeśli docelowych x64 z projektu C++, ale instalacja Python jest x86, Zmień projekt C++ pod kątem x86.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Testowanie kodu i porównywania wyników
 

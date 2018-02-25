@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -54,7 +54,7 @@ Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, 
 Rozpoczyna się od sesji debugowania **Debuguj > Rozpocznij debugowanie** polecenia, **Start** przycisku paska narzędzi lub klawisz F5. Te akcje Uruchom plik uruchomienia projektu (pokazano pogrubienia w Eksploratorze rozwiązań) z projektu aktywnego środowiska i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone we właściwościach projektu (zobacz [debugowania projektu opcje](#project-debugging-options). Jeśli jakiegoś powodu nie ma pliku uruchamiania Ustaw, jednak okno danych wyjściowych Python krótko pojawia się i znika. W takim przypadku kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik uruchamiania**.
 
 > [!Note]
-> Debuger zawsze rozpoczyna się od aktywnego środowiska Python dla projektu. Zmian w środowisku, aby różne aktywne jeden zgodnie z opisem na [środowiska Python](managing-python-environments-in-visual-studio.md).
+> Debuger zawsze rozpoczyna się od aktywnego środowiska Python dla projektu. Zmian w środowisku, aby różne aktywne jeden zgodnie z opisem na [wybranie środowisku Python dla projektu](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Punkty przerwania
 

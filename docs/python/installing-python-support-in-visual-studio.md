@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalowanie obsługi języka Python w programie Visual Studio w systemie Windows
 
@@ -31,7 +31,7 @@ Aby zainstalować obsługę języka Python dla programu Visual Studio (znanej ta
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 lub starszej](#visual-studio-2013-and-earlier)
 
-Dla programu Visual Studio 2015 lub starszym należy oddzielnie zainstalować interpreter języka Python wybranych przez użytkownika (Python 3.5 i wcześniej; 3,6 nie jest obsługiwana i generuje komunikat "Python nieobsługiwana wersja 3,6"). Aby uzyskać więcej informacji, zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). Tej samej stronie zawiera również instrukcje dotyczące dodawania istniejącego interpreter języka Python do programu Visual Studio 2017 r.
+Dla programu Visual Studio 2015 lub starszym należy również oddzielnie [instalowanie interpretera Python](installing-python-interpreters.md) wybranych przez użytkownika (Python 3.5 i wcześniej; 3,6 nie jest obsługiwana i generuje komunikat "Python nieobsługiwana wersja 3,6"). Tej samej stronie zawiera również instrukcje dotyczące dodawania istniejącego interpreter języka Python do programu Visual Studio 2017 r.
 
 Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyjne, Otwórz okno interaktywne Python, naciskając klawisz Alt-I i wprowadzania `2+2`. Jeśli nie widzisz dane wyjściowe `4`, sprawdź ponownie wszystkie czynności.
 
@@ -91,7 +91,7 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
 
     ![Opcja PTVS w Instalatorze programu Visual Studio 2015](media/installation-vs2015.png)
 
-1. Po zakończeniu instalacji programu Visual Studio [zainstalować interpreter języka Python wybranym](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Jeśli masz już tłumacza zainstalowana, zobacz [tworzenia środowiska dla istniejących interpreter](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. Po zakończeniu instalacji programu Visual Studio [zainstalować interpreter języka Python wybranym](installing-python-interpreters.md). Jeśli masz już zainstalowany interpreter i Visual Studio nie wykryje on automatycznie, zobacz [ręczne identyfikowanie istniejącego środowiska](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 lub starszej
 
@@ -101,7 +101,7 @@ Aby szybko testowania obsługi języka Python po wykonaniu czynności instalacyj
     - Program Visual Studio 2012: [PTVS 2.1 dla programu Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Program Visual Studio 2010: [PTVS 2.1 dla programu Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Zainstaluj interpreter języka Python wybranym](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Jeśli masz już tłumacza zainstalowana, zobacz [tworzenia środowiska dla istniejących interpreter](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. [Zainstaluj interpreter języka Python wybranym](installing-python-interpreters.md). Jeśli masz już zainstalowany interpreter i Visual Studio nie wykryje on automatycznie, zobacz [ręczne identyfikowanie istniejącego środowiska](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="install-locations"></a>Lokalizacje instalacji
 

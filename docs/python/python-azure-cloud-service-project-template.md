@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
@@ -57,8 +57,8 @@ Ten temat zawiera szczegółowe informacje o szablonie projektu i innych pomoc t
 
 Skrypty programu PowerShell w projekcie roli `bin` folderu kontroli wdrożenia tej roli i może być edytowana do dostosowywania konfiguracji:
 
-- `ConfigureCloudService.ps1`Służy do ról sieć web i proces roboczy, zwykle można zainstalować i skonfigurować zależności i ustaw wersję języka Python.
-- `LaunchWorker.ps1`jest używany tylko dla roli proces roboczy i umożliwia zmianę zachowania podczas uruchamiania, Dodaj argumenty wiersza polecenia lub dodać zmienne środowiskowe.
+- `ConfigureCloudService.ps1` Służy do ról sieć web i proces roboczy, zwykle można zainstalować i skonfigurować zależności i ustaw wersję języka Python.
+- `LaunchWorker.ps1` jest używany tylko dla roli proces roboczy i umożliwia zmianę zachowania podczas uruchamiania, Dodaj argumenty wiersza polecenia lub dodać zmienne środowiskowe.
 
 Oba pliki zawierają instrukcje dotyczące dostosowywania. Można także zainstalować wersji środowiska Python, dodając inne zadanie do projektu usługi chmury głównego `ServiceDefinition.csdef` pliku z ustawieniami `PYTHON` zmienną do jego zainstalowanych `python.exe` (lub równoważnego) ścieżki. Gdy `PYTHON` jest ustawiona, Python nie jest zainstalowana z NuGet.
 
@@ -93,7 +93,7 @@ Dla usług w chmurze `ConfigureCloudService.ps1` skrypt używa `pip` zainstalowa
 
 Należy pamiętać, że wystąpienia usługi chmury nie zawierają kompilatory C, dlatego wszystkie biblioteki z rozszerzeniami C podać wstępnie skompilowanych plików binarnych.
 
-PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
+PIP i jego zależności, a także pakietów w `requirements.txt`, są automatycznie pobierane i może być liczona jako mogą być obciążane przepustowości. Zobacz [zarządzania wymagane pakiety](managing-required-packages-with-requirements-txt.md) szczegółowe informacje na temat zarządzania `requirements.txt` plików.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -102,7 +102,7 @@ Jeśli po wdrożeniu roli użytkownika sieci web lub procesu roboczego nie zadzi
 - Projekt Python zawiera folder bin\ o (co najmniej):
 
   - `ConfigureCloudService.ps1`
-  - `LaunchWorker.ps1`(dla ról procesów roboczych)
+  - `LaunchWorker.ps1` (dla ról procesów roboczych)
   - `ps.cmd`
 
 - Projekt Python zawiera `requirements.txt` pliku wyświetlanie listy wszystkich zależności (lub alternatywnie Kolekcja plików koło).

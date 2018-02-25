@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -35,7 +35,7 @@ Uruchomienia projektu utworzonych na podstawie szablonu (jak uzyskać dostęp za
 
 Szablony każdego Bottle, Flask i Django obejmują lokacji starter z niektórymi stron i plików statycznych. Ten kod jest wystarczające do uruchomienia, a serwer lokalnie (której niektóre ustawienia muszą pochodzić ze środowiska) debugowania i wdrażania do systemu Microsoft Azure (gdy [aplikacji WSGI](http://www.python.org/dev/peps/pep-3333/) obiekt musi zostać zapewniony).
 
-Podczas tworzenia projektu za pomocą szablonu określonej struktury, ułatwiające instalowanie wymaganych pakietów przy użyciu narzędzia pip zostanie wyświetlone okno dialogowe. Zalecamy również przy użyciu [środowiska wirtualnego](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) dla projektów sieci web tak, aby prawidłowe zależności są uwzględniane podczas publikowania witryny sieci web:
+Podczas tworzenia projektu za pomocą szablonu określonej struktury, ułatwiające instalowanie wymaganych pakietów przy użyciu narzędzia pip zostanie wyświetlone okno dialogowe. Zalecamy również przy użyciu [środowiska wirtualnego](selecting-a-python-environment-for-a-project.md#using-virtual-environments) dla projektów sieci web tak, aby prawidłowe zależności są uwzględniane podczas publikowania witryny sieci web:
 
 ![Okno dialogowe, który instaluje wymagane pakiety szablonu projektu](media/template-web-requirements-txt-wizard.png)
 
@@ -62,7 +62,7 @@ Właściwości w **uruchamiania polecenia serwera** i **polecenia Debug serwera*
 - **Środowisko**: listę oddzielonych znakami nowego wiersza `NAME=VALUE` pary określania zmiennych środowiskowych. Te zmienne są ustawiane po wszystkie właściwości, które mogą być modyfikowane środowiska, takie jak port ścieżki numer i wyszukiwania i dlatego mogą zastąpić te wartości.
 
 Dowolnej właściwości lub środowiska zmiennej projektu można określić ze składnią MSBuild, na przykład: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)`jest ścieżką względną do pliku uruchamiania i `{StartupModule}` jest importowane nazwę pliku uruchamiania. `$(SERVER_HOST)`i `$(SERVER_PORT)` są zmiennymi środowiskowymi normalne, które są ustawiane przez **adres URL do uruchomienia** i **numer portu** właściwości, automatycznie lub przez **środowiska** Właściwość.
+`$(StartupFile)` jest ścieżką względną do pliku uruchamiania i `{StartupModule}` jest importowane nazwę pliku uruchamiania. `$(SERVER_HOST)` i `$(SERVER_PORT)` są zmiennymi środowiskowymi normalne, które są ustawiane przez **adres URL do uruchomienia** i **numer portu** właściwości, automatycznie lub przez **środowiska** właściwości.
 
 > [!Note]
 > Wartości w **uruchamiania polecenia serwera** są używane z **debugowania > Uruchamianie serwera** polecenia lub Ctrl-F5; wartości w **polecenia Debug serwera** grupy są używane z **Debuguj > Rozpocznij debugowanie serwera** polecenia lub F5.
@@ -73,11 +73,11 @@ Dowolnej właściwości lub środowiska zmiennej projektu można określić ze s
 
 - **Uruchom polecenie serwera** grupy:
   - **Polecenie**: `bottle` (modułu)
-  - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumenty**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **Debugowanie polecenia Server** grupy:
   - **Polecenie**: `bottle` (modułu)
-  - **Argumenty**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Opcja nie jest zalecana w przypadku używania programu Visual Studio dla debugowania.
 
@@ -90,11 +90,11 @@ Aplikacje ostrosłupa obecnie najlepiej są tworzone przy użyciu `pcreate` narz
 
 - **Uruchom polecenie serwera** grupy:
   - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
-  - Argumenty:`Production.ini`
+  - Argumenty: `Production.ini`
 
 - **Debugowanie polecenia Server** grupy:
     - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
-    - Argumenty:`Development.ini`
+    - Argumenty: `Development.ini`
 
 > [!Tip]
 > Prawdopodobnie należy skonfigurować **katalog roboczy** właściwości projektu, ponieważ aplikacje ostrosłupa są zwykle jednego katalogu poziomu głębiej niż do górnej części drzewa źródła.

@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia języka protokół serwera
 
@@ -136,7 +136,7 @@ LSP nie zawiera specyfikację dostarczania tekstu kolorowania języków. Aby pod
 
 1. Utwórz folder o nazwie "Gramatykach" wewnątrz rozszerzenia (lub może być niezależnie od nazwy).
 
-2. W folderze "Gramatykach" obejmują wszystkie pliki *.tmlanguage lub *.tmtheme chcesz zapewniające kolorowania niestandardowych.
+2. W folderze "Gramatykach" obejmują *.tmlanguage, *.plist, *.tmtheme lub pliki *.json, którą chcesz udostępniających kolorowania niestandardowych.
 
 3. Kliknij prawym przyciskiem myszy na pliki i wybierz **właściwości**. Zmiany akcji kompilacji na **zawartości** i **Include w pliku VSIX** właściwości na wartość true.
 

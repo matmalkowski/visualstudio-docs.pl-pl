@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
@@ -54,7 +54,7 @@ Każdy projekt Python ma jeden plik przypisanej rozruchu, czcionką pogrubioną 
 > [!Tip]
 > Usuwanie plików wybranego uruchomienia z projektu i nie wybrać nową, systemem wyniki projektu w języku Python danych wyjściowych okna pojawiające się, ale następnie znika niemal natychmiast. Jeśli wystąpi ten problem, sprawdź, czy plik przypisanej uruchamiania. Również, aby zachować w oknie danych wyjściowych w takich przypadkach, kliknij prawym przyciskiem myszy projekt, wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **argumenty Interpreter** pola. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
 
-Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego. Aby skojarzyć projektu z innego środowiska (również w środowiskach wirtualnych), kliknij prawym przyciskiem myszy z **środowiska Python** węzła w projekcie, wybierz opcję **środowiska Python Dodaj lub usuń**, i Wybierz te, które chcesz. Aby zmienić aktywnego środowiska, kliknij prawym przyciskiem myszy wymagane środowisko i wybierz **aktywacji środowiska** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [środowiska Python](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project).
+Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego. Aby skojarzyć projektu z innego środowiska (również w środowiskach wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła w projekcie, wybierz opcję **środowiska Python Dodaj lub usuń**, i Wybierz te, które chcesz. Aby zmienić aktywnego środowiska, kliknij prawym przyciskiem myszy wymagane środowisko i wybierz **aktywacji środowiska** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [wybierając środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
 
 ![Aktywowanie środowisko dla projektów języka Python](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 | Szablon | Opis |
 | --- | --- |
 | [Z istniejącego kodu języka Python](#creating-a-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu języka Python w strukturze folderu.  |
-| Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
+| Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](selecting-a-python-environment-for-a-project.md). |
 | [Usługi w chmurze Azure](python-azure-cloud-service-project-template.md) | Projekt usługi w chmurze Azure napisanych w języku Python. |
 | [Projekty sieci Web](python-web-application-project-templates.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
 | IronPython aplikacji | Podobnie jak szablon aplikacji Python, ale IronPython przez domyślne włączenie .NET międzyoperacyjnego i trybu mieszanego debugowania w językach .NET. |
@@ -136,7 +136,7 @@ Odwołanie do `.pyd` plik umożliwia IntelliSense dla wygenerowanego modułu. Vi
 
 Jeśli w dowolnym momencie moduł rozszerzenie zostanie zaktualizowane na dysku, Visual Studio zerwano modułu w tle. Ta akcja nie ma wpływu na zachowania w czasie wykonywania, ale niektóre zakończeń nie są dostępne do czasu ukończenia analizy.
 
-Może być również konieczne dodanie [ścieżki wyszukiwania](managing-python-environments-in-visual-studio.md#search-paths) do folderu zawierającego modułu.
+Może być również konieczne dodanie [ścieżki wyszukiwania](search-paths.md) do folderu zawierającego modułu.
 
 ### <a name="net-projects"></a>Projekty platformy .NET
 

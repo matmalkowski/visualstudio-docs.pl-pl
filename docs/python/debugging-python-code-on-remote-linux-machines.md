@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Zdalne debugowanie kodu języka Python w systemie Linux
 
@@ -40,7 +40,7 @@ Do wykonania tego instruktażu potrzebne są następujące elementy:
 - Komputera zdalnego z systemem Python w systemie operacyjnym, takich jak Mac OS x lub Linux.
 - Port 5678 (przychodzące) otwarty na zaporze tego komputera, co jest ustawieniem domyślnym dla zdalnego debugowania.
 
-Można jednak łatwo tworzyć [maszyn wirtualnych systemu Linux na platformie Azure](/azure/virtual-machines/linux/creation-choices) i [dostępu za pomocą pulpitu zdalnego](/azure/virtual-machines/linux/use-remote-desktop) z systemu Windows. Ubuntu dla maszyny Wirtualnej jest wygodne, ponieważ Python jest instalowane domyślnie; w przeciwnym razie zapoznaj się z listą na [zainstalować interpreter języka Python wybranym](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) dla języka Python dodatkowe lokalizacje.
+Można jednak łatwo tworzyć [maszyn wirtualnych systemu Linux na platformie Azure](/azure/virtual-machines/linux/creation-choices) i [dostępu za pomocą pulpitu zdalnego](/azure/virtual-machines/linux/use-remote-desktop) z systemu Windows. Ubuntu dla maszyny Wirtualnej jest wygodne, ponieważ Python jest instalowane domyślnie; w przeciwnym razie zapoznaj się z listą na [zainstalować interpreter języka Python wybranym](installing-python-interpreters.md) dla języka Python dodatkowe lokalizacje.
 
 Aby uzyskać więcej informacji na temat tworzenia reguły zapory dla maszyny Wirtualnej platformy Azure, zobacz [Otwieranie portów dla maszyny Wirtualnej na platformie Azure przy użyciu portalu Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
