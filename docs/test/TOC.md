@@ -45,7 +45,7 @@
 ### [Przewodnik: pisanie testów jednostkowych dla bibliotek DLL języka C/C++](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [Struktura testów jednostkowych Microsoft dla interfejsów API języka C++ — dokumentacja](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [Tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [Testowanie jednostek biblioteki DLL programu Visual C++ na potrzeby aplikacji platformy UWP](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [Testowanie jednostek biblioteki DLL platformy UWP w języku C++](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [Testowanie jednostek kodu języka Visual C# w aplikacjach platformy UWP](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [Uruchamianie testów jednostkowych dla aplikacji platformy UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

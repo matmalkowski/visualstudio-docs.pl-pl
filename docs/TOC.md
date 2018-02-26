@@ -97,6 +97,7 @@
 ##### [Zastępowanie parametrów w szablonie](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Obsługa 64-bitowego środowiska IDE programu Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Opracowywanie bez projektów i rozwiązań („Otwórz folder”)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Dostosowywanie zadań kompilacji i debugowania](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Pisanie kodu w edytorze](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Znajdowanie i zastępowanie tekstu](ide/finding-and-replacing-text.md)
 ##### [Używanie wyrażeń regularnych](ide/using-regular-expressions-in-visual-studio.md)

@@ -1,5 +1,6 @@
 # [Omówienie](overview-of-python-tools-for-visual-studio.md)
 # [Instalacja](installing-python-support-in-visual-studio.md)
+## [Zainstaluj interpretery języka Python](installing-python-interpreters.md)
 # Przewodniki Szybki Start
 ## [Tworzenie projektu z istniejącego kodu](quickstart-01-project-from-existing.md)
 ## [Tworzenie projektu z szablonu](quickstart-02-python-in-visual-studio-project-from-template.md)
@@ -14,13 +15,17 @@
 ## [5 — Instalowanie pakietów i zarządzanie środowiskami Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 ## [6 — Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 # Pojęcia
-## [Środowiska Python](managing-python-environments-in-visual-studio.md)
 ## [Projekty Python](managing-python-projects-in-visual-studio.md)
 ### [Szablony projektów internetowych](python-web-application-project-templates.md)
 ### [Szablon projektów internetowych Django](python-django-web-application-project-template.md)
 ### [Szablon usługi w chmurze platformy Azure](python-azure-cloud-service-project-template.md)
 ## [Zestaw Azure SDK dla języka Python](azure-sdk-for-python.md)
 # Przewodniki z instrukcjami
+## [Zarządzanie środowiskami](managing-python-environments-in-visual-studio.md)
+### [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
+### [Używanie pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
+### [Ścieżki wyszukiwania](search-paths.md)
+### [Dokumentacja okna środowiska](python-environments-window-tab-reference.md)
 ## [Edytowanie kodu](editing-python-code-in-visual-studio.md)
 ### [Formatowanie kodu](formatting-python-code.md)
 ### [Refaktoryzacja kodu](refactoring-python-code.md)

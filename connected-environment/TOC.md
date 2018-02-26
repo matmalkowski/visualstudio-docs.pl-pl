@@ -1,4 +1,4 @@
-# [Visual Studio Connected Environment (Połączone środowisko programu Visual Studio)](visual-studio-connected-environment.md)
+# [Połączone środowisko VS](visual-studio-connected-environment.md)
 
 # [Wprowadzenie](get-started.md)
 ##[.NET Core (VS Code i CLI)](get-started-netcore-01.md)
@@ -27,6 +27,9 @@
 ###[5. Wywoływanie innego kontenera](get-started-nodejs-05.md)
 ###[6. Praca w udostępnionym środowisku deweloperskim](get-started-nodejs-06.md)
 ###[7. Podsumowanie](get-started-nodejs-07.md)
+
+# Instrukcje
+##[Udostępnianie środowiska deweloperskiego](how-to/share-dev-environment.md)
 
 # [Rozwiązywanie problemów](troubleshooting.md)
 
