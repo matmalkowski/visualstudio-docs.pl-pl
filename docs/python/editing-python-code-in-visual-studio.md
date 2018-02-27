@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
@@ -39,7 +39,7 @@ Można również użyć przeglądarki obiektów Visual Studio (**Widok > inne ok
 
 ## <a name="intellisense"></a>IntelliSense
 
-Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Aby zwiększyć wydajność, IntelliSense zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [środowiska Python](managing-python-environments-in-visual-studio.md)). 
+Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Aby zwiększyć wydajność, IntelliSense zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [odwołania okno środowiska Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Zakończeń
 
