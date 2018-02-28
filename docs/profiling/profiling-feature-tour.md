@@ -4,16 +4,19 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

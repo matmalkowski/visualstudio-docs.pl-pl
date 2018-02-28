@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,28 +17,41 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
-Podczas debugowania aplikacji zarządzanej, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślnie powoduje pominięcie optymalizacji kodu just-in-time (JIT). Pomijanie JIT optymalizacji oznacza, że są debugowanie kodu nie są zoptymalizowane. Kod uruchamia się nieco wolniej, ponieważ nie jest zoptymalizowana, ale środowiska debugowania jest znacznie bardziej szczegółowego. Debugowanie zoptymalizowanego kodu trudniej i zalecane tylko, jeśli wystąpią usterkę, która występuje w zoptymalizowanym kodzie, ale nie można odtworzyć w wersji nie są zoptymalizowane.  
-  
- Optymalizację JIT jest kontrolowany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przez **Pomiń optymalizację JIT podczas ładowania modułu** opcji. Tej opcji można znaleźć na **ogólne** w obszarze **debugowanie** w węźle **opcje** okno dialogowe.  
-  
- Jeśli wyczyścisz **Pomiń optymalizację JIT podczas ładowania modułu** opcji można debugowania zoptymalizowanego kodu JIT, ale może być ograniczony możliwość debugowania, ponieważ kod zoptymalizowany nie pasuje do kodu źródłowego. W związku z tym debugera systemu windows, takich jak **zmiennych lokalnych** i **automatycznych** okna mogą nie wyświetlać te informacje, jak gdyby zostały debugowanie kodu nie są zoptymalizowane.  
-  
- Debugowanie za pomocą tylko mój kod innego dotyczy istotną różnicą. Jeśli debugowania tylko mój kod, debuger uwzględnia zoptymalizowanego kodu za kod niezwiązany z użytkownikiem, który nie powinny być wyświetlane podczas debugowania. W związku z tym jeśli są debugowanie JIT zoptymalizowany kod, prawdopodobnie chcesz wyłączyć opcję tylko mój kod. Aby uzyskać więcej informacji, zobacz [Ogranicz wykonywanie krok po kroku, aby tylko mój kod](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code).  
-  
- Należy pamiętać, że **Pomiń optymalizację JIT podczas ładowania modułu** opcja powoduje pominięcie optymalizacji kodu po załadowaniu modułów. Możesz dołączyć do procesu, który jest już uruchomiony, mogą zawierać kod, który jest już załadowany, kompilacji JIT i zoptymalizowane. **Pomiń optymalizację JIT podczas ładowania modułu** opcji nie ma wpływu na taki kod, mimo że będzie miało wpływ na modułów, które są ładowane po dołączeniu. Ponadto **Pomiń optymalizację JIT podczas ładowania modułu** opcji nie ma wpływu na moduły, na przykład WinForms.dll, które są tworzone za pomocą narzędzia NGEN.  
-  
+**Jak działają funkcje optymalizacji programu .NET:** Jeśli próbujesz debugowania kodu, łatwiej gdy kod jest **nie** zoptymalizowane. To dlatego, jeśli kod jest zoptymalizowany, kompilatora i środowiska uruchomieniowego dokonać zmian emitowany kodu procesora CPU, aby działa szybciej, ale ma mniej bezpośredniego mapowania do oryginalnego kodu źródłowego. Oznacza to, że debugery są często informujące wartości zmiennych lokalnych i kodu wykonywanie krok po kroku, a punkty przerwania może nie działać zgodnie z oczekiwaniami.
+
+Zwykle konfigurację kompilacji wydania tworzy zoptymalizowanego kodu i nie obsługuje konfiguracji kompilacji debugowania. `Optimize` Właściwość MSBuild Określa, czy kompilator jest informację do optymalizacji kodu.
+
+W ekosystemie .NET kodu jest włączona ze źródła do instrukcji procesora CPU w dwóch etapach: najpierw kompilatora C# konwertuje tekst wprowadzony w postaci binarnej pośredniej o nazwie MSIL i zapisuje ten plików dll. Później środowisko uruchomieniowe platformy .NET konwertuje to MSIL do instrukcji procesora CPU. W pewnym stopniu można zoptymalizować w obu czynności, ale bardziej znaczących optymalizacje wykonuje drugi etap wykonywane przez środowisko uruchomieniowe platformy .NET.
+
+**Opcja "Pomiń optymalizację JIT podczas ładowania modułu (tylko kod zarządzany)":** debuger udostępnia opcję, która kontroluje, co się stanie po ładuje bibliotekę DLL, która jest skompilowany z włączonymi optymalizacjami wewnątrz procesu docelowego. Jeśli ta opcja jest zaznaczona (stan domyślny), a następnie środowiska uruchomieniowego .NET kompiluje kod MSIL do kodu procesora CPU, pozostawia włączonymi optymalizacjami. Jeśli opcja jest zaznaczona, debuger żąda wyłączone optymalizacje.
+
+**Pomiń optymalizację JIT podczas ładowania modułu (tylko kod zarządzany)** opcji można znaleźć w **ogólne** w obszarze **debugowanie** w węźle **opcje** okno dialogowe.
+
+**Kiedy należy zaznaczysz tę opcję:** zaznaczeniu tej opcji w przypadku bibliotek DLL są pobierane z innego źródła, takie jak pakietu nuget debugować kod w tej biblioteki DLL. Aby to zrobić można również znaleźć pliku symboli (.pdb) dla tej biblioteki DLL.
+
+Jeśli interesuje Cię tylko debugowanie kodu, które tworzysz lokalnie, najlepiej pozostawić ta opcja nie jest zaznaczona, ponieważ w niektórych przypadkach włączenie tej opcji będzie znacznie spowolnić debugowania. Istnieją dwa przyczyna to spowolnić:
+
+* Kod zoptymalizowany działa szybciej. Jeśli są wyłączenie optymalizacji dla części kodu, można sumują wpływu na wydajność.
+* Jeśli masz tylko mój kod włączone debuger nawet spróbuj i załadować symbole dla bibliotek DLL, które są zoptymalizowane. Znajdowanie symboli może zająć dużo czasu.
+
+**Ograniczenia dotyczące tej opcji:** istnieją dwie sytuacje, gdy ta opcja spowoduje **nie** pracy:
+
+1. W sytuacjach, w którym są dołączanie debugera do już uruchomionego procesu ta opcja nie wpłyną na modułów, które zostały już załadowane w czasie, który debuger został dołączony.
+2. Ta opcja nie ma wpływu na bibliotek DLL, które zostały wstępnie skompilowanych do natywnego kodu (nazywane również przetworzone przez program ngen). Można jednak wyłączyć użycia wstępnie skompilowany kod, przez uruchomienie procesu ze środowiskiem zmiennej COMPlus_ZapDisable ustawiony na "1".
+
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)   

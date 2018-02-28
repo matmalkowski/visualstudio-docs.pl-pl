@@ -7,14 +7,16 @@ ms.suite:
 ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.XamlDesigner.DataBinding
+f1_keywords:
+- VS.XamlDesigner.DataBinding
 dev_langs:
 - CSharp
 - VB
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
 ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT

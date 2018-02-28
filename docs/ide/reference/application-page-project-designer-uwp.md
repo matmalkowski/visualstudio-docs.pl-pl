@@ -3,12 +3,15 @@ title: "Strona właściwości aplikacji dla aplikacji platformy uniwersalnej sys
 ms.date: 01/23/2018
 ms.technology: vs-ide-general
 ms.topic: article
-f1_keywords: AppPackage.Properties.Application"
-helpviewer_keywords: Application page [UWP project]
+f1_keywords:
+- AppPackage.Properties.Application"
+helpviewer_keywords:
+- Application page [UWP project]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 ms.openlocfilehash: 34cb125c33ab36a89601c2492d27841bb2ce49d5
 ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT

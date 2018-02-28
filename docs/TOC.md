@@ -46,7 +46,7 @@
 # Przewodniki Szybki Start
 ## [Orientacja programu Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Projekty i rozwiązania](ide/quickstart-projects-solutions.md)
-## [Pisanie kodu w edytorze](ide/quickstart-editor.md)
+## [Używanie edytora](ide/quickstart-editor.md)
 ## [Personalizowanie motywu i kolorów tekstu](ide/quickstart-personalize-the-ide.md)
 ## [C++: Tworzenie aplikacji konsoli](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: Tworzenie aplikacji internetowych](ide/quickstart-python.md)
@@ -98,7 +98,7 @@
 #### [Obsługa 64-bitowego środowiska IDE programu Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Opracowywanie bez projektów i rozwiązań („Otwórz folder”)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Dostosowywanie zadań kompilacji i debugowania](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Pisanie kodu w edytorze](ide/writing-code-in-the-code-and-text-editor.md)
+### [Używanie edytora](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Znajdowanie i zastępowanie tekstu](ide/finding-and-replacing-text.md)
 ##### [Używanie wyrażeń regularnych](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Pole wyszukiwania polecenia](ide/find-command-box.md)

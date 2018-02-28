@@ -10,17 +10,21 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.workload: multiple
-ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+dev_langs:
+- CSharp
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>Szybki Start: Kodowania w edytorze
+# <a name="quickstart-use-the-code-editor"></a>Szybki Start: Za pomocą edytora kodu
 
 W tym wprowadzenie 10-minutowych do edytora dodamy kod do pliku, aby wyglądały na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i kod ułatwia zrozumienie.
+
+Tego przewodnika Szybki Start założono, że czytelnik zna już język programowania. Jeśli nie, zalecamy najpierw Szukaj w jednej z programowania poradniki Szybki Start, takich jak tworzenie aplikacji sieci web z [Python](../ide/quickstart-python.md) lub [C#](../ide/tutorial-csharp-aspnet-core.md), lub Utwórz aplikację konsoli z [Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/quickstart-cpp.md).
 
 ## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
 
@@ -68,7 +72,7 @@ Pasek narzędzi udostępnia szereg przycisków większej wydajności jako użytk
         "brown",
         "fox",
         "jumps"
-    }
+    };
 
     string[] morewords = {
         "over",
@@ -155,11 +159,11 @@ Udało Ci się ukończyć tego przewodnika Szybki Start dla edytorze programu Vi
 
 ## <a name="see-also"></a>Zobacz także
 
-[Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)  
-[Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)  
-[Fragmenty kodu](../ide/code-snippets.md)  
-[Obramowanie](../ide/outlining.md)  
-[Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)  
-[Refaktoryzacja](../ide/refactoring-in-visual-studio.md)  
-[Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
+- [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)
+- [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+- [Fragmenty kodu](../ide/code-snippets.md)
+- [Obramowanie](../ide/outlining.md)
+- [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)
+- [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)
+- [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

@@ -7,11 +7,14 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codedUItest.testeditor
-helpviewer_keywords: coded UI test, Coded UI Test Editor
+f1_keywords:
+- vs.codedUItest.testeditor
+helpviewer_keywords:
+- coded UI test, Coded UI Test Editor
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 0cb316475748033bb020a2f3065f9492a5a201ed
 ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da

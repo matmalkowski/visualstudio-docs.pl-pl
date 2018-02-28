@@ -3,33 +3,34 @@ layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: "Zapis i zarządzanie kodu przy użyciu dokumentacji programu Visual Studio | Dokumentacja firmy Microsoft"
+title: "Zapis i zarządzanie kodem przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft"
 description: "Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio do zapisu, przejdź, zarządzania i poprawić kod."
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88550be8e6d2d7e226d591a5011da5d3affbb511
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="write-and-manage-code-using-visual-studio-documentation"></a>Zapis i zarządzanie kodu przy użyciu dokumentacji programu Visual Studio
+# <a name="write-and-manage-code-using-visual-studio"></a>Zapis i zarządzanie nimi kodu za pomocą programu Visual Studio
 
 Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio do zapisu, przejdź, zarządzania i poprawić kod.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/visualstudio/ide/writing-code-in-the-code-and-text-editor">
+        <a href="/visualstudio/ide/solutions-and-projects-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="" />
+                            <img src="/media/common/i_code-blocks.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się, jak napisać kod, a następnie przejdź w edytorze kodu</h3>
+                        <h3>Tworzenie projektów i rozwiązań</h3>
                     </div>
                 </div>
             </div>
@@ -37,7 +38,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
         </a>
     </li>
     <li>
-        <a href="https://youtu.be/4glwwioCVjA?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
+        <a href="/visualstudio/ide/writing-code-in-the-code-and-text-editor">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -47,7 +48,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Edytuj i przejdź do kodu</h3>
+                        <h3>Edytor kodu</h3>
                     </div>
                 </div>
             </div>
@@ -55,89 +56,17 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
         </a>
     </li>
     <li>
-        <a href="https://youtu.be/pc9vX_4RGV4?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
+        <a href="/visualstudio/ide/navigating-code">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
+                            <img src="/media/common/i_agile.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Otwórz projekt z kontroli źródła</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://www.visualstudio.com/docs/git/share-your-code-in-git-vs">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Zarządzanie kodu przy użyciu narzędzia Git w programie Visual Studio</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/code-snippets">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-samples.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Tworzenie wstawek kodu</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/test/improve-code-quality">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-quality.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Podnoszenie jakości kodu</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/refactoring-in-visual-studio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-automate.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Korygowanie i restrukturyzacji kodu</h3>
+                        <h3>Przejdź do kodu</h3>
                     </div>
                 </div>
             </div>
@@ -155,7 +84,43 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Program Visual Studio generowanie kodu dla Ciebie</h3>
+                        <h3>Generowanie i napraw kodu</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_code-samples.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Użyj programu Visual Studio bez projektów i rozwiązań</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/vsts/git/share-your-code-in-git-vs-2017">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_git-mark.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Zarządzanie kodu przy użyciu narzędzia Git w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -164,20 +129,117 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
     </li>
 </ul>
 
----
+## <a name="get-started-with-programming-languages-in-visual-studio"></a>Rozpoczynanie pracy z języków programowania w Visual Studio
 
-<h2>Tematy pomocy</h2>
-<ul class="panelContent cardsW">
+Tworzenie pierwszej aplikacji w programie Visual Studio.
+
+<ul class="panelContent cardsFTitle">
     <li>
+        <a href="/visualstudio/ide/tutorial-csharp-aspnet-core">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <p><a href="/visualstudio/ide/class-view-and-object-browser-icons">Widok klasy i Przeglądarka obiektów, ikony</a></p>
-                        <p><a href="/visualstudio/ide/reference/visual-studio-reference">Visual Studio — dokumentacja</a></p>
+                        <h3>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
         </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Wprowadzenie do języka C++ w programie Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-python">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Wprowadzenie do języka Python w programie Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-visual-basic-console">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Utwórz aplikację konsoli za pomocą Visual Basic</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Tworzenie aplikacji sieci web za pomocą języka Node.js</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/rtvs/getting-started-with-r">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Wprowadzenie do języka R narzędzi dla programu Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
     </li>
 </ul>

@@ -188,6 +188,7 @@
 ## [Instrukcje: używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [Instrukcje: używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Instrukcje: diagnozowanie wydajności rozszerzenia](how-to-diagnose-extension-performance.md)
+## [Instrukcje: diagnozowanie opóźnień w interfejsie użytkownika powodowanych przez rozszerzenia](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [Rozwiązywanie problemów z pakietami VSPackage](troubleshooting-vspackages.md)
 # [Shell (Integrated lub Isolated)](https://vspartner.com/pages/vsshells)
 # [Dostarczanie rozszerzeń programu Visual Studio](shipping-visual-studio-extensions.md)

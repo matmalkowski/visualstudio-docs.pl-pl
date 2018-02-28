@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Pomiaru wpływu rozszerzenia przy uruchamianiu
 
@@ -30,6 +32,9 @@ Aby ułatwić użytkownikom poznania zakresu przedstawionego wypływu, dodaliśm
 ![Zarządzanie działanie programu Visual Studio](media/manage-performance.png)
 
 Ten dokument ma na celu pomóc deweloperom rozszerzenia przez opisujący sposób obliczania wpływ rozszerzenia i jak można ją analizować lokalnie Aby sprawdzić, czy rozszerzenie mogą być wyświetlane jako wydajności wpływające na rozszerzenia.
+
+> [!NOTE]
+> Ten dokument koncentruje się na wpływ rozszerzeń dla obciążenia uruchamiania i rozwiązania. Rozszerzenia również wpływać na wydajność programu Visual Studio po spowodują one interfejsu użytkownika przestać odpowiadać. Aby uzyskać więcej informacji na ten temat, zobacz [porady: diagnozowanie interfejsu użytkownika opóźnienia powodowane przez rozszerzenia](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Wpływ uruchamiania rozszerzenia
 

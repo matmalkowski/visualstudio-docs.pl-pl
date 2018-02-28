@@ -10,7 +10,8 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
+dev_langs:
+- CSharp
 ms.workload:
 - aspnet
 - dotnetcore

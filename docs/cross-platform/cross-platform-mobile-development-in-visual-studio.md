@@ -14,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Aplikacji mobilnych dla wielu Platform w programie Visual Studio
 
@@ -34,7 +34,7 @@ Jeśli chcesz utworzyć graficzny aplikacji gry lub bez ramek, instalowanie narz
 
 Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w tym samym rozwiązaniu, udostępnianie kodu i nawet interfejsu użytkownika.
 
-|Dowiedz się więcej|
+|**Dowiedz się więcej**|
 |--------------------|
 |[Zainstaluj program Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Więcej informacji na temat platformy Xamarin w programie Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
@@ -65,7 +65,7 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 
  Możesz udostępniać kodu za pomocą udostępnionego projektu i projektu biblioteki klas przenośnych. Może się okazać, że niektóre kodu mieści się przez więcej najlepiej w projekcie udostępnionym i kodu znaczeniu wewnątrz projektu biblioteki klas przenośnych.
 
-|Dowiedz się więcej|
+|**Dowiedz się więcej**|
 |--------------------|
 |Wybierz opcję Udostępnianie kodu przy użyciu udostępnionych projektów i/lub projektów przenośnej biblioteki klas.<br /><br /> [Udostępnianie kodu na platformach](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog .NET Framework)<br /><br /> [Udostępnianie kodu opcje](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Kod opcje udostępniania w środowisku .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (Biblioteka MSDN)|
 
@@ -78,10 +78,10 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 
  Windows 10 jest stosunkowo nowe, więc tam również szablony projektów przeznaczonych Windows 8.1. Za pomocą tych szablonów projektu i aplikacja zostanie uruchomiona na telefony, tablety i komputery z systemem Windows 10. Jednak wszystkie urządzenia z systemem Windows 8.1 będą otrzymywać automatyczne uaktualnienia do systemu Windows 10, więc w przypadku braku określonych przyczyn, dlaczego czy raczej target Windows 8.1, firma Microsoft zaleca użycie szablony projektów, które odnoszą się do systemu Windows 10.
 
-|Dowiedz się więcej|
+|**Dowiedz się więcej**|
 |--------------------|
-|[Więcej informacji na temat uniwersalnych aplikacji systemu Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centrum deweloperów systemu Windows)|
-|[Tworzenie pierwsza](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centrum deweloperów systemu Windows)|
+|[Wprowadzenie do platformy uniwersalnej systemu Windows](/windows/uwp/get-started/universal-application-platform-guide)|
+|[Tworzenie pierwszej aplikacji](/windows/uwp/get-started/your-first-app)|
 |[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrowanie aplikacji platformy uniwersalnej systemu Windows (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
@@ -104,7 +104,7 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 
  Szablony projektu dla tworzenia uniwersalnych aplikacji systemu Windows są nadal dostępne w programie Visual Studio tak najbliższym z nich korzystać, jeśli planujesz pod kątem tylko urządzeń z systemem Windows. Jeśli zechcesz później target Android i iOS, należy zawsze portu swój kod projektu oprogramowania Cordova. Brak wersji open source WinJS interfejsów API, więc można używać kodu, który korzysta z tych interfejsów API. Inaczej mówiąc, jeśli planujesz innych platform docelowych w przyszłości, zaleca się uruchomić program Visual Studio Tools for Apache Cordova.
 
-|Dowiedz się więcej|
+|**Dowiedz się więcej**|
 |--------------------|
 |[Zainstaluj program Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Wprowadzenie do programu Visual Studio Tools for Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
@@ -131,7 +131,7 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 
  Podczas pisania kodu w tych bibliotek, można użyć IntelliSense do eksplorowania macierzystych interfejsów API platformy systemu Android i Windows. Te projekty biblioteki są w pełni zintegrowane z debuger programu Visual Studio, można ustawić punktów przerwania, kroki do kodu i znajdowanie i rozwiązywanie problemów przy użyciu wszystkich zaawansowanych funkcji debugera.
 
-|Dowiedz się więcej|
+|**Dowiedz się więcej**|
 |--------------------|
 |[Pobierz program Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Zainstaluj Visual C++ for Cross Platform Mobile Development tools.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Biblioteka MSDN)|
@@ -151,7 +151,7 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 
  Gry środowiska Unity i narzędzia Visual Studio Tools for Unity już dziś zacznij tworzyć.
 
-|Dowiedz się więcej|
+|**Dowiedz się więcej**|
 |--------------------|
 |[Dowiedz się więcej o tworzeniu Unity gry z programem Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
 |[Dowiedz się więcej o programie Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) (Biblioteka MSDN)|

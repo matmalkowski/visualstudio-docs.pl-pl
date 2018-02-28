@@ -1,34 +1,32 @@
 ---
 title: "Porady: debugowanie źródła .NET Framework | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
-helpviewer_keywords: debugging, .NET Framework source
+helpviewer_keywords:
+- debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 75f3665afcf5d4937fae46e2a6871e0f7121b561
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-debug-net-framework-source"></a>Porady: debugowanie źródła .NET Framework
-Najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia nowe funkcje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] debugowania. Aby debugować [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] źródła, musi mieć dostęp do debugowania symbole dla kodu. Należy również włączyć wykonywanie krok po kroku do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] źródła.  
+Debugowanie źródła .NET Framework, musi mieć dostęp do debugowania symbole dla kodu. Należy również włączyć wykonywanie krok po kroku do źródła .NET Framework.  
   
- Można włączyć [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wykonywanie krok po kroku i symbol pobierania w **opcje** okno dialogowe. Po włączeniu symbol pobierania można pobrać symboli lub po prostu włącz opcję pobierania później. Jeśli nie pobieraj natychmiast symbole, symbole zostaną pobrane przy następnym uruchomieniu debugowania aplikacji. Możesz także zrobić ręcznego pobrania z **modułów** okna lub **stos wywołań** okna.  
+ Można włączyć .NET Framework wykonywanie krok po kroku i symbol pobierania w **opcje** okno dialogowe. Po włączeniu symbol pobierania można pobrać symboli lub po prostu włącz opcję pobierania później. Jeśli nie pobieraj natychmiast symbole, symbole zostaną pobrane przy następnym uruchomieniu debugowania aplikacji. Możesz także zrobić ręcznego pobrania z **modułów** okna lub **stos wywołań** okna.  
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Aby włączyć debugowanie źródła .NET Framework  
   
@@ -36,7 +34,7 @@ Najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udo
   
 2.  W **opcje** okno dialogowe, kliknij przycisk **debugowanie** kategorii.  
   
-3.  W **ogólne** należy ustawić **włączyć .NET Framework** krokowe wykonywanie źródła.  
+3.  W **ogólne** należy ustawić **źródła włączyć .NET Framework wykonywanie krok po kroku.**  
   
     1.  Jeśli były włączone tylko mój kod, okno dialogowe informuje, czy tylko mój kod jest teraz wyłączony. Kliknij przycisk **OK**.  
   
@@ -44,17 +42,11 @@ Najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udo
   
 4.  W obszarze **debugowanie** kategorii, kliknij przycisk **symbole**.  
   
-5.  Jeśli chcesz zmienić lokalizację pamięci podręcznej symboli:  
-  
-    1.  Otwórz **debugowanie** węzła w polu po lewej stronie.  
-  
-    2.  W obszarze **debugowanie** węzła, kliknij przycisk **symbole**.  
-  
-    3.  Edytowanie lokalizacji w **pamięci podręcznej symboli z serwerów symboli w tym katalogu** lub kliknij przycisk **Przeglądaj** aby wybrać lokalizację.  
+5.  Jeśli chcesz zmienić lokalizację pamięci podręcznej symboli, edytować lokalizację w **pamięci podręcznej symboli w tym katalogu** lub kliknij przycisk **Przeglądaj** aby wybrać lokalizację.  
   
 6.  Jeśli chcesz natychmiast pobrać symboli, kliknij przycisk **załadować symbole, używając powyższych lokalizacjach**.  
   
-     Ten przycisk jest niedostępny w trybie projektowania.  
+     Ten przycisk jest niedostępny w trybie projektowania, ale jest dostępna podczas debugowania.  
   
      Jeśli użytkownik nie chce Pobierz symbole, symbole będą pobierane automatycznie podczas następnego uruchomienia debugowania programu.  
   
@@ -62,15 +54,15 @@ Najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udo
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Aby załadować symbole Framework korzystanie z okna modułów  
   
-1.  W **modułów** okna, kliknij prawym przyciskiem myszy, a moduł, dla którego nie załadowano symboli. Można określić, czy załadowano symbole nie analizując **stan symbole** kolumny.  
+1.  W **modułów** okna (podczas debugowania, wybierz **debugowania** > **Windows** > **modułów**), Kliknij prawym przyciskiem myszy moduł, dla którego nie załadowano symboli. Można określić, czy załadowano symbole nie analizując **stan symbole** kolumny.  
   
-2.  Wskaż **Załaduj symbole z** i kliknij przycisk **serwerów symboli firmy Microsoft** pobieranie symboli z serwera symboli publicznych firmy Microsoft lub **ścieżki symboli** załadować z katalogu której uprzednio zapisano symboli.  
+2.  Wskaż **ustawienia** i kliknij przycisk **serwerów symboli firmy Microsoft** pobieranie symboli z serwera symboli publicznych firmy Microsoft. Lub, kliknij prawym przyciskiem myszy modułu i wybierz **załadować symbole** załadować z katalogu, w której uprzednio zapisano symboli.  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Aby załadować symbole Framework w oknie stosu wywołań  
   
 1.  W **stos wywołań** okna, kliknij prawym przyciskiem myszy, a ramki, dla którego nie załadowano symboli. Ramki będzie wygaszone.  
   
-2.  Wskaż **Załaduj symbole z** i kliknij przycisk **serwerów symboli firmy Microsoft** lub **ścieżki symboli**.  
+2.  Wskaż **ustawienia** i kliknij przycisk **serwerów symboli firmy Microsoft**, lub kliknij prawym przyciskiem myszy modułu i wybierz polecenie **ścieżki symboli**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   

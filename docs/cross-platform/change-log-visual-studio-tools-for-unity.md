@@ -4,23 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.workload:
+- unity
+ms.openlocfilehash: f3ff8389c6d8f84ed534f259ada36db7489f7b31
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Dziennik zmian (Visual Studio Tools dla Unity)
 Visual Studio Tools for Unity dziennika zmian.  
+
+## <a name="3503"></a>3.5.0.3
+ Wydanych 2018-01-09.
+
+### <a name="bug-fixes"></a>Poprawki błędów  
+
+-   **Integracja:**  
+
+    -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
 
 ## <a name="3502"></a>3.5.0.2
  Wydanych 2017 12-04-

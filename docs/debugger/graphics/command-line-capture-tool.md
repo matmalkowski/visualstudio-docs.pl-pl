@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68ea5a718b1a0d1ccff7155f842bc3808d640c21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia przechwytywania
 DXCap.exe to narzędzie wiersza polecenia do przechwytywania diagnostyki grafiki i odtwarzania. Obsługuje ona Direct3D 10 do Direct3D 12 na wszystkich poziomach funkcji.  
@@ -42,12 +44,12 @@ DXCap.exe -info
   
  `-frame``frames`  
  W trybie przechwytywania `frames` określa ramek, które mają być przechwytywane. Pierwsza ramka jest 1. Można określić wiele ramek przy użyciu przecinków i zakresów. Na przykład jeśli `frames` jest `2, 5, 7-9, 15`, następnie ramki `2`, `5`, `7`, `8`, `9`, i `15` są przechwytywane.  
+
+> [!TIP]
+> Użyj `-frame` `manual` do określenia, że ramki zostanie ręcznie przechwycone przez naciśnięcie klawisza Print Screen. Po uruchomieniu aplikacji; można przechwycić ramki Aby zatrzymać przechwytywanie ramek, wróć do interfejsu wiersza polecenia i naciśnij klawisz enter.  
   
  `-period``periods`  
  W trybie przechwytywania `periods` określa zakres czasu, w sekundach, w których chcesz przechwytywać ramki. Można określić wiele okresów, przy użyciu przecinków i zakresów. Na przykład jeśli `periods` jest `2.1-5, 7.0-9.3`, a następnie ramek, które mają być renderowane między `2.1` i `5` sekund, a między`7` i `9.3` sekund są przechwytywane.  
-  
- `-manual`  
- W trybie przechwytywania `-manual` Określa, że ramki zostanie ręcznie przechwycone przez naciśnięcie klawisza Print Screen. Po uruchomieniu aplikacji; można przechwycić ramki Aby zatrzymać przechwytywanie ramek, wróć do interfejsu wiersza polecenia i naciśnij klawisz enter.  
   
  `-c` `app` [`args...`]  
  Przechwyć tryb. W trybie przechwytywania `app` Określa nazwę aplikacji, którą chcesz przechwytywanie informacji graficznych; `args...` określa dodatkowe parametry wiersza polecenia do danej aplikacji.  
@@ -165,15 +167,15 @@ DXCap.exe -e map
  Polecenie powyżej wylicza aplikacji platformy uniwersalnej systemu Windows, które odpowiada "map"; Poniżej przedstawiono dane wyjściowe:  
   
  **Pakiet "Microsoft.BingMaps":**  
- **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe C:\Program**  
- **Imię i nazwisko: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nazwa: Microsoft.BingMaps**  
  **Wydawca: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S Waszyngton, C = = US**  
  **Wersja: 2.1.2914.1734**  
  **Możliwych do uruchomienia aplikacji:**  
  **Identyfikator: AppexMaps**  
- **Exe: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe C:\Program**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: nie**  
  ** AppSpec (do uruchamiania): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** ostatni wiersz danych wyjściowych dla każdej aplikacji wyliczany wyświetla polecenie umożliwia przechwytywanie informacji graficznych z niego.  
   

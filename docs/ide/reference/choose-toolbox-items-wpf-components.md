@@ -7,14 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.chooseitems.wpfcomponents
+f1_keywords:
+- vs.chooseitems.wpfcomponents
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 6953cefdaab594825843ac168bebe82bd9ef9144
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT

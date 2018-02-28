@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.workload:
+- xamarin
+ms.openlocfilehash: 5878da6742412a368e7b5ff84d0e0e20a4751914
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdź środowisku Xamarin
 Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-platform/setup-and-install.md)), spędzają na kilka minut, sprawdź, czy wszystko jest gotowe do środowisko rozwoju Xamarin.  
@@ -77,7 +78,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-plat
   
          ![Wybranie emulatora Windows Phone jako cel debugowania](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Sprawdź 4")  
   
-    -   Jeśli wystąpią problemy z uzyskiwaniem emulatora do pracy, przeczytaj [Rozwiązywanie problemów z Emulator Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
+    -   Jeśli wystąpią problemy z uzyskiwaniem emulatora do pracy, przeczytaj [Rozwiązywanie problemów z Emulator Windows Phone 8](/previous-versions/windows/apps/jj681694\(v%3dvs.105\)).  
   
 ## <a name="ios"></a>iOS  
   
@@ -107,7 +108,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-plat
   
         -   Upewnij się, w dla systemu iOS właściwości projektu w sklepie iOS pakietu podpisywania karcie, czy pole niestandardowe uprawnienie jest pusta dla konfiguracji debugowania aktywnego.  Uwaga: należy tylko spróbować usuwanie to ustawienie, jeśli zostały napotkane powyżej komunikat o błędzie.  
   
-##  <a name="missing"></a>Brak szablonów projektu Xamarin? Spróbuj to  
+##  <a name="missing"></a> Brak szablonów projektu Xamarin? Spróbuj to  
  Szablony mogą być brakujące, w przypadku zainstaluj program Xamarin bezpośrednio z witryny sieci Web platformy Xamarin i Visual Studio 2013 i Visual Studio 2015 zainstalowane obok siebie. To proste rozwiązać problem, ale: po prostu włącz **Xamarin dla Visual Studio 2015** funkcji w Instalatorze programu Xamarin.  
   
 1.  W Panelu sterowania otwórz **programy i funkcje**, wybierz **Xamarin** elementu, a następnie kliknij przycisk **zmiany**.  

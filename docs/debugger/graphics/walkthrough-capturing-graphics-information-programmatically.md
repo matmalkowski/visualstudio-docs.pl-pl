@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
 Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do programowe przechwytywanie informacji graficznych z aplikacji Direct3D.  
@@ -30,7 +30,7 @@ Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagn
   
 -   Wywołanie `CaptureCurrentFrame`Jeżeli problem z renderowaniem jest trudne do przewidywania i przechwytywania w testów ręcznych, ale można przewidzieć programowo przy użyciu informacji o stanie aplikacji w czasie wykonywania.  
   
-##  <a name="CaptureDX11_2"></a>Przechwycenie programowe w systemie Windows 10  
+##  <a name="CaptureDX11_2"></a> Przechwycenie programowe w systemie Windows 10  
  Ta część przewodnika pokazuje przechwycenie programowe w aplikacji, które używają interfejsu API programu DirectX 11.2 w systemie Windows 10, które używa metody przechwytywania niezawodny.
   
  W tej sekcji przedstawiono sposób wykonywania tych zadań:  
@@ -79,7 +79,7 @@ Można użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagn
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Należy sprawdzić `HRESULT` zwrócony przez `DXGIGetDebugInterface1` zapewnienie uzyskać prawidłowy interfejs przed jego użyciem:  
+     Należy sprawdzić `HRESULT` zwrócony przez [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) zapewnienie uzyskać prawidłowy interfejs przed jego użyciem:  
   
     ```  
     if (FAILED(getAnalysis))  

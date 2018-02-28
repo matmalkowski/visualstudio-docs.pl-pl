@@ -43,7 +43,6 @@
 #### [Instrukcje: zbieranie danych wydajności dotyczących witryny internetowej](how-to-collect-performance-data-for-a-web-site.md)
 #### [Instrukcje: ręczne tworzenie sesji wydajności](how-to-manually-create-performance-sessions.md)
 #### [Przewodnik: identyfikowanie problemów z wydajnością](walkthrough-identifying-performance-problems.md)
-#### [Przykładowa aplikacja PeopleTrax (narzędzia profilowania)](peopletrax-sample-profiling-tools.md)
 ### [Konfigurowanie sesji wydajności](configuring-performance-sessions.md)
 #### [Instrukcje: odwołania do informacji o symbolach w systemie Windows](how-to-reference-windows-symbol-information.md)
 #### [Instrukcje: wybieranie metod zbierania](how-to-choose-collection-methods.md)

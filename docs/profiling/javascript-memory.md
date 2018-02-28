@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: JavaScript
+dev_langs:
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -17,11 +19,12 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

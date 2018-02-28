@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.toolbox.html
+f1_keywords:
+- vs.toolbox.html
 helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
@@ -15,7 +16,8 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fc52ea4ce28c7fac6f7318eac8e835efc0f11cb1
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT

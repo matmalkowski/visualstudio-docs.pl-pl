@@ -4,21 +4,24 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: JavaScript
+dev_langs:
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

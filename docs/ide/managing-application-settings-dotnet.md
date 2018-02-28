@@ -4,15 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msvse_settingsdesigner.err.nameblank
-helpviewer_keywords: application settings [Visual Studio]
+f1_keywords:
+- msvse_settingsdesigner.err.nameblank
+helpviewer_keywords:
+- application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fdd95f1890033e90b2679a2c992f3a49ad474851
 ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
