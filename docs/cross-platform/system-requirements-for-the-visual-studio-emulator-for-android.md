@@ -75,7 +75,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
 -   Musisz być członkiem lokalnej grupy Administratorzy funkcji Hyper-V.  
   
-##  <a name="System">Wymagania systemowe</a>  
+##  <a name="System"></a> Wymagania systemowe  
  Komputer musi spełniać następujące wymagania:  
   
 -   Obsługa funkcji Hyper-V (zobacz [wymagania dotyczące funkcji Hyper-V](#HyperV))  
@@ -88,7 +88,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
  ![Sprawdź wymagania systemowe](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
-##  <a name="Network">Wymagania dotyczące sieci</a>  
+##  <a name="Network"></a> Wymagania dotyczące sieci  
  Sieć musi spełniać następujące wymagania:  
   
 -   DHCP  
@@ -103,7 +103,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
 -   [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
-##  <a name="HyperV">Wymagania dotyczące funkcji Hyper-V</a>  
+##  Wymagania dotyczące funkcji Hyper-V  
  Wymagania dotyczące funkcji Hyper-V w systemie BIOS  
   
  System BIOS komputera musi obsługiwać następujące wymagania i musi być włączone:  
@@ -136,12 +136,12 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
  Aby samodzielnie ręcznie dodać do grupy, otwórz lokalnych użytkowników i grup przystawki. Aby uzyskać więcej informacji, zobacz [dodać konto użytkownika do grupy](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (W tym temacie Windows 7 jest również zastosowanie do systemu Windows 8).  
   
-##  <a name="BootableVHD">Uruchamianie emulatora z rozruchowego dysku VHD nie jest obsługiwane.</a>  
+##  <a name="BootableVHD"></a> Uruchamianie emulatora z rozruchowego dysku VHD nie jest obsługiwane.  
  Próby uruchomienia aplikacji w Visual Studio Emulator for Android podczas uruchamiania systemu Windows z rozruchowego dysku VHD, emulator zwykle może zająć kilka minut, aby uruchomić lub nie została uruchomiona. Gdy emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: Wdrażanie aplikacji nie powiodło się. Spróbuj ponownie.  
   
  Ta konfiguracja nie jest obsługiwana. Informacje dotyczące problemów pokrewnych, zobacz [Rozwiązywanie problemów z programu Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
-##  <a name="Files">Funkcja Hyper-V wymaga bez kompresji i szyfrowania plików</a>  
+##  <a name="Files"></a> Funkcja Hyper-V wymaga bez kompresji i szyfrowania plików  
  Na dysku twardym skonfigurowane przy użyciu systemu plików NTFS pliki wirtualnych dysków twardych, używany przez funkcję Hyper-V należy nieskompresowane i bez szyfrowania. Upewnij się, że następujące katalogi nie są skompresowane lub zaszyfrowane:  
   
 -   %localappdata%\Microsoft\XDE  
