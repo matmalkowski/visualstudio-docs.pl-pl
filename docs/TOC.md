@@ -33,6 +33,8 @@
 #### [Sterowanie aktualizacjami na potrzeby wdrożeń programu Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Zarządzanie instalacjami
 #### [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](install/tools-for-managing-visual-studio-instances.md)
+### Zarządzanie subskrypcjami
+#### [Subskrypcje programu Visual Studio: Administrator — omówienie](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Podręcznik administratora programu Podgląd Pomocy](ide/help-viewer-administrator-guide.md)
 #### [Argumenty wiersza poleceń Menedżera zawartości pomocy](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Przesłonięcia Menedżera zawartości Pomocy](ide/help-content-manager-overrides.md)
