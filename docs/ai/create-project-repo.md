@@ -1,13 +1,19 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonuj repozytorium kodu języka Python w programie Visual Studio
 
 Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), można łatwo Klonuj repozytorium kodu Python i utworzyć projekt z niego.
 
 1. Do nawiązania połączenia repozytoriów GitHub, uruchom Instalatora programu Visual Studio wybierz **Modyfikuj**i wybierz **pojedynczych składników** kartę. Przewiń w dół do **kodu narzędzia** zaznacz **rozszerzenie GitHub dla programu Visual Studio**i wybierz **Modyfikuj**.
-    
+
     ![Wybierając rozszerzenie GitHub w Instalatorze programu Visual Studio](media\create-project-repo\installation-github-extension.png)
-    
+
 2. Uruchom program Visual Studio.
 
 3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można nawiązać połączenia z usługi GitHub lub Visual Studio Team Services lub sklonować repozytorium.

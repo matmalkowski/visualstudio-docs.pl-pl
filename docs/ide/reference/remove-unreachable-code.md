@@ -13,11 +13,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1048458eb41a5c1f9842c3cfea1b3c8a553fbf20
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 90ea46079e318c09ab62e27f9a75ccdd2452887d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Usuń refaktoryzacji nieosiągalny kod
 
@@ -40,7 +40,7 @@ Dotyczy to refaktoryzacji:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Usuń nieosiągalny kod** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Usuń nieosiągalny kod** z menu podręcznego okna podglądu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Usuń nieosiągalny kod** z menu podręcznego okna podglądu.
 
@@ -67,5 +67,5 @@ private void Method()
 
 ## <a name="see-also"></a>Zobacz także
 
-[Refaktoryzacja](../refactoring-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

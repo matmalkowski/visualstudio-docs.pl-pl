@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ccdab053e06efc11b6f9c42d391d4b4fc1f85f7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d66a0e41f0c68d3d5c4378a664ef36aba0d869b7
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnij refaktoryzacji — metoda
 
@@ -52,7 +52,7 @@ Dotyczy to refaktoryzacji:
 
    - **Keyboard**
      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + M**. (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Wyodrębnij metodę** z menu podręcznego okna podglądu.
    - **Myszy**
      - Wybierz **Edytuj > Refaktoryzuj > wyodrębniania metody**.
      - Kliknij prawym przyciskiem myszy kod i wybierz **Refaktoryzuj > wyodrębnić > Wyodrębnij metodę**.
@@ -64,16 +64,16 @@ Dotyczy to refaktoryzacji:
    > Można także zaktualizować komentarze i innymi ciągami, aby użyć tej nowej nazwy oraz [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **zmienić** pole, który jest wyświetlany u góry rogu środowiskiem IDE.
 
    - C#:
-   
+
     ![Zmień nazwę metody - C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
-   
+
     ![Zmień nazwę metody - Visual Basic](media/extractmethod-rename-vb.png)
 
 1. Po zakończeniu modyfikowania zmiany, wybierz **Zastosuj** przycisk lub naciśnij przycisk **Enter** , a zmiany zostaną zatwierdzone.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Refaktoryzacja](../refactoring-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

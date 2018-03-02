@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 dla deweloperów platformy .NET
 
@@ -40,9 +40,9 @@ Szybko przejść przez przejście do pliku, typu, elementu członkowskiego lub d
 
 [Dokumentacji: Refaktoryzacje i szybkie akcje](refactoring-code-generation-quick-actions.md)
 
-Visual Studio ma diagnostyki kodu na żywo, aby pomóc w poprawie jakości kodu przez wykrywanie błędów i kod potencjalnie powodować problemy. Firma Microsoft udostępnia szybkie akcje (**Ctrl +.**) do rozwiązywania problemów wykrytych przez dokument, projektu lub rozwiązania. Włącz *analizy rozwiązania pełnej* Aby znaleźć problemy dla całego rozwiązania, nawet jeśli nie są one otwarte pliki w edytorze.
+Visual Studio ma diagnostyki kodu na żywo, aby pomóc w poprawie jakości kodu przez wykrywanie błędów i kod potencjalnie powodować problemy. Firma Microsoft udostępnia szybkie akcje (**Ctrl**+**.**) do rozwiązywania problemów wykrytych przez dokument, projektu lub rozwiązania. Włącz *analizy rozwiązania pełnej* Aby znaleźć problemy dla całego rozwiązania, nawet jeśli nie są one otwarte pliki w edytorze.
 
-Ponadto przy użyciu kodu sugestie Dowiedz się, najlepsze rozwiązania w zakresie, wejściowy lub generowanie kodu refaktoryzacji kodu, a przyjmuje nowe funkcje językowe z **Ctrl +.** Skrót.
+Ponadto przy użyciu kodu sugestie Dowiedz się, najlepsze rozwiązania w zakresie, wejściowy lub generowanie kodu refaktoryzacji kodu, a przyjmuje nowe funkcje językowe z **Ctrl**+**.** Skrót.
 
 ![Zastosuj Szybkie rozwiązania i refaktoryzacje za pomocą menu żarówka](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Uruchom i debugowanie testy jednostkowe na podstawie MSTest, NUnit lub XUnit tes
 - [Dokumentacji: Opcje przenośne niestandardowego edytora](create-portable-custom-editor-options.md)
 - [Dokumentacja: EditorConfig kodu stylu ustawień dla platformy .NET](editorconfig-code-style-settings-reference.md)
 
-Program Visual Studio umożliwia konfigurację Konwencji kodowania, wykrywa naruszeń styl kodowania i zapewnia szybkie — poprawki, aby rozwiązać problemy stylu z **Ctrl +.** Skrót. Konfigurowanie i wymuszać formatowania zespołu, nazw i kodu konwencje stylu w repozytorium — umożliwiając zastępowania wartości na poziomie projektu i pliku — za pomocą *EditorConfig*.
+Program Visual Studio umożliwia konfigurację Konwencji kodowania, wykrywa naruszeń styl kodowania i zapewnia szybkie — poprawki, aby rozwiązać problemy stylu z **Ctrl**+**.** Skrót. Konfigurowanie i wymuszać formatowania zespołu, nazw i kodu konwencje stylu w repozytorium — umożliwiając zastępowania wartości na poziomie projektu i pliku — za pomocą *EditorConfig*.
 
 ![Konfigurowanie i wymuszaniu Konwencji kodowania z EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,7 +105,7 @@ Poniżej przedstawiono popularne skróty programu Visual Studio. Zauważ, że ni
 | **F12** (również **kliknij z wciśniętym**) | Przejdź do definicji | Przejdź do których jest zdefiniowany symbol |
 | **Ctrl+F12** | Przejdź do implementacji | Przejdź z podstawowego typu lub elementu członkowskiego do jej różnych implementacji |
 | **Shift+F12** | Znajdź wszystkie odwołania | Zobacz wszystkie symbolu lub literału odwołań |
-| **Ctrl+.** (również **Alt + wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacje lub innych szybkie akcje są dostępne pod adresem wybór pozycji lub kod kursora |
+| **Ctrl**+**.** (również **Alt + wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacje lub innych szybkie akcje są dostępne pod adresem wybór pozycji lub kod kursora |
 | **CTRL**+**E**,**V** | Zduplikowany wiersz | Duplikaty wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 wersji 15,6 preview 2** i nowsze) |
 | **Ctrl+Q** | Szybkie uruchamianie | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |

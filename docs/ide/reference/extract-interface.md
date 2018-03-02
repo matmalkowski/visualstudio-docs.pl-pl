@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 451b5ccddf6052eca3ae0a19b87076d2fd88a952
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e735b194da008de83fddac564194f8bb008c66bb
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnij refaktoryzacji — interfejs
 
@@ -52,7 +52,7 @@ Dotyczy to refaktoryzacji:
 
    - **Keyboard**
      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + I**. (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **wyodrębniania interfejsu** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **wyodrębniania interfejsu** z menu podręcznego okna podglądu.
    - **Myszy**
      - Wybierz **Edytuj > Refaktoryzuj > wyodrębniania interfejsu**.
      - Kliknij prawym przyciskiem myszy nazwę klasy, wybierz opcję **szybkie akcje i Refaktoryzacje** menu i wybierz **wyodrębniania interfejsu** z menu podręcznego okna podglądu.

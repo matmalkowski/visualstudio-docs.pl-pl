@@ -12,11 +12,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b91c4dc3cc3bc3550f11bc60c95f1c3ed511cf62
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak używać Boost.Test dla języka C++ w programie Visual Studio
 
@@ -35,18 +35,18 @@ Wymaga Boost.Test [zwiększanie wyniku](http://www.boost.org/)! Jeśli nie masz 
 1. Zainstaluj biblioteki dynamicznej lub statycznej Boost.Test:
 
     - Uruchom **vcpkg zainstalować zwiększanie wyniku testu** zainstalować bibliotekę dynamiczną Boost.Test.
-    
+
        -OR-
-       
+
     - Uruchom **vcpkg zainstalować zwiększanie wyniku-testu: x 86 windows statycznej** do zainstalowania z biblioteką statyczną Boost.Test.
 
 1. Uruchom **vcpkg integracji instalacji** do konfigurowania programu Visual Studio z biblioteki i dodać ścieżki do nagłówków zwiększenie wydajności i pliki binarne.
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Dodaj szablon elementu (Visual Studio 2017 wersji 15.6 i nowsze)
 
-1. Aby utworzyć plik .cpp dla testów, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj nowy element**. 
- 
-![Szablon elementu Boost.Test](media/boost_test_item_template.png "Boost.Test elementu szablonu")
+1. Aby utworzyć plik .cpp dla testów, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj nowy element**.
+
+   ![Szablon elementu Boost.Test](media/boost_test_item_template.png "Boost.Test elementu szablonu")
 
 1. Nowy plik zawiera przykładowe metody testowej. Skompilowanie projektu Aby włączyć **Eksploratora testów** metody odnajdywania.
 
@@ -54,14 +54,14 @@ Szablon elementu używa wariant jeden nagłówek Boost.Test, ale można modyfiko
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Tworzenie projektu testu (Visual Studio 2017 wersji 15,5 cala)
 
-W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowane szablony projektów lub elementów są dostępne dla Boost.Test. W związku z tym należy utworzyć i skonfigurować projekt aplikacji konsoli do przechowywania testów. 
+W programie Visual Studio 2017 wersji 15,5 cala nie testu wstępnie skonfigurowane szablony projektów lub elementów są dostępne dla Boost.Test. W związku z tym należy utworzyć i skonfigurować projekt aplikacji konsoli do przechowywania testów.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj** > **nowy projekt...** .
 
 1. W okienku po lewej stronie wybierz **Visual C++** > **Windows Desktop**, a następnie wybierz pozycję **aplikacji konsoli systemu Windows** szablonu.
 
 1. Nadaj nazwę projektu i wybierz polecenie **OK**.
-1. Usuń `main` funkcji w pliku .cpp. 
+1. Usuń `main` funkcji w pliku .cpp.
 
 1. Jeśli używasz wersji nagłówka jednym lub dynamicznej biblioteki Boost.Test, przejdź do [Dodaj zawiera dyrektywy, które](#add_include_directives). Jeśli używasz wersji biblioteki statycznej, następnie należy wykonać pewne dodatkowe czynności konfiguracyjne:
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Zapis i uruchamiania testów
-Teraz można przystąpić do zapisu i uruchamiać testy zwiększanie wyniku. Zobacz [zwiększanie wyniku testu biblioteka dokumentacji](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html) informacji o makra testu. Zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md) informacji o odnajdywaniu, uruchamiania i grupowanie testów przy użyciu **Eksploratora testów**.
+Teraz można przystąpić do zapisu i uruchamiać testy zwiększanie wyniku. Zobacz [zwiększanie wyniku testu biblioteka dokumentacji](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) informacji o makra testu. Zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md) informacji o odnajdywaniu, uruchamiania i grupowanie testów przy użyciu **Eksploratora testów**.
 
 ## <a name="see-also"></a>Zobacz także
 [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)

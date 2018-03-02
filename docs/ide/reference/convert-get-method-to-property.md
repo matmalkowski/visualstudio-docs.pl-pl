@@ -16,11 +16,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d0a532e2e3e5bb8afa4a3c3dc9720134a1b7e8b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab91e95d699b4a7fcc27ca1f6bcdf43b51af9c26
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertuj metody Get właściwości / przekonwertować właściwości refaktoryzacje metody Get
 
@@ -41,7 +41,7 @@ Refaktoryzacje te dotyczą:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu.
 
@@ -73,7 +73,7 @@ public int MyValue
 
 **Co:** służy do konwertowania właściwości na metodę Get
 
-**Kiedy:** ma właściwość, która obejmuje więcej niż natychmiast ustawiania i pobierania wartości 
+**Kiedy:** ma właściwość, która obejmuje więcej niż natychmiast ustawiania i pobierania wartości
 
 ### <a name="how-to"></a>Porada
 
@@ -82,7 +82,7 @@ public int MyValue
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.
 
@@ -90,5 +90,5 @@ public int MyValue
 
 ## <a name="see-also"></a>Zobacz także
 
-[Refaktoryzacja](../refactoring-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

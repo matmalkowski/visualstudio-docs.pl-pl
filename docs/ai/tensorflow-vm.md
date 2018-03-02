@@ -9,17 +9,18 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 424072fd91672921c470dbc16e1a9287b1cc575a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Uczenie modelu przy użyciu TensorFlow w chmurze
 
-W tym samouczku, firma Microsoft będzie uczenia, model TensorFlow przy użyciu [MNIST dataset](http://yann.lecun.com/exdb/mnist/) na platformie Azure [głębokie Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) maszyny wirtualnej. 
+W tym samouczku, firma Microsoft będzie uczenia, model TensorFlow przy użyciu [MNIST dataset](http://yann.lecun.com/exdb/mnist/) na platformie Azure [głębokie Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) maszyny wirtualnej.
 
 Baza danych MNIST ma zestaw szkolenia 60 000 przykłady i zbiór 10 000 przykłady odręcznie cyfr.
 
@@ -28,10 +29,10 @@ Przed rozpoczęciem upewnij się, że masz następujące zainstalowane i skonfig
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Konfiguracja Azure bezpośrednich uczenia maszyny wirtualnej
 
-> [!NOTE] 
+> [!NOTE]
 > Ustaw **typ systemu operacyjnego** do systemu Linux.
 
-Można znaleźć informacje o sposobie zapasowej głębokie maszyny wirtualnej Learning [tutaj](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
+Można znaleźć informacje o sposobie zapasowej głębokie maszyny wirtualnej Learning [tutaj](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Usuń komentarz w parens
 
@@ -41,13 +42,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Pobierz przykładowy kod
 
-Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierający wprowadzenie do uczenia głębokie TensorFlow, CNTK, Theano i próbek. 
+Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierający wprowadzenie do uczenia głębokie TensorFlow, CNTK, Theano i próbek.
 
 ## <a name="open-project"></a>Otwórz projekt
 
 - Uruchom program Visual Studio i wybierz **Plik > Otwórz > Projekt/rozwiązanie**.
 
-- Wybierz **przykłady Tensorflow** folder z repozytorium próbki pobrane i Otwórz **TensorflowExamples.sln** pliku. 
+- Wybierz **przykłady Tensorflow** folder z repozytorium próbki pobrane i Otwórz **TensorflowExamples.sln** pliku.
 
 ![Otwórz projekt](media\tensorflow-local\open-project.png)
 
@@ -55,7 +56,7 @@ Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) za
 
 ## <a name="add-azure-remote-vm"></a>Dodaj zdalnego maszyna wirtualna platformy Azure
 
-W Eksploratorze serwera, kliknij prawym przyciskiem myszy **maszyny zdalnej** węzeł w obszarze narzędzia AI węzeł i wybierz opcję "Dodaj...". Wprowadź nazwę wyświetlaną komputer zdalny, IP hosta SSH portu, nazwę użytkownika i plik hasła/klucza. 
+W Eksploratorze serwera, kliknij prawym przyciskiem myszy **maszyny zdalnej** węzeł w obszarze narzędzia AI węzeł i wybierz opcję "Dodaj...". Wprowadź nazwę wyświetlaną komputer zdalny, IP hosta SSH portu, nazwę użytkownika i plik hasła/klucza.
 
 ![Dodaj nowy komputer zdalny](media\tensorflow-vm\add-remote-vm.png)
 
@@ -68,11 +69,11 @@ W oknie przesyłania:
 
 - Na liście **klastrze**, wybierz komputer zdalny (z "rm:" prefiks) można przesłać zadania.
 
-- Wprowadź **Nazwa zadania**. 
+- Wprowadź **Nazwa zadania**.
 
-- Kliknij przycisk **przesłać**. 
+- Kliknij przycisk **przesłać**.
 
-## <a name="check-status-of-job"></a>Sprawdź stan zadania 
+## <a name="check-status-of-job"></a>Sprawdź stan zadania
 Aby wyświetlić stan i szczegóły zadania: rozszerzenia maszyn wirtualnych można przesłać zadania w **Eksploratora serwera**. Kliknij dwukrotnie **zadania**.
 
 ![Zadanie przeglądarki](media\tensorflow-vm\job-browser.png)

@@ -13,11 +13,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d19a348ff21abce181f971c798d61cde393f4689
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a76e6024a2b61bcae08fb8db169483bcee6e5d19
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Przenieś deklarację blisko odwołania refaktoryzacji
 
@@ -38,7 +38,7 @@ Dotyczy to refaktoryzacji:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś deklarację blisko odwołania** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś deklarację blisko odwołania** z menu podręcznego okna podglądu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś deklarację blisko odwołania** z menu podręcznego okna podglądu.
 
@@ -67,5 +67,5 @@ if (condition)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Refaktoryzacja](../refactoring-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

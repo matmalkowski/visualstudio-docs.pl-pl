@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d001e708553e2a4b0ed8ad9ae78eddf5e0b9a0a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określonej wersji programu .NET Framework i *platformy docelowej*, czyli architektura konkretnego oprogramowania.  Na przykład możesz zastosować aplikacji do uruchamiania na .NET Framework 2.0 na platformie 32-bitowego, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja platformy docelowej i platforma docelowa jest nazywany *kontekst docelowy*.  
@@ -34,19 +34,21 @@ Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określ
   
 -   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (objęte [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4 (dołączone do programu Visual Studio 2010)  
-  
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5 (objęte [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)])  
-  
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.1 (objęte [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)])  
-  
 -   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
   
 -   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (objęte [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
   
  Na liście zestawów, że każdy udostępnia odwołanie do wersji programu .NET Framework różnią się między sobą. Na przykład nie można utworzyć aplikacji Windows Presentation Foundation (WPF), chyba, że projekt jest przeznaczony dla platformy .NET Framework w wersji 3.0 lub nowszym.  
   
- Platforma docelowa jest określona w `TargetFrameworkVersion` właściwość w pliku projektu. Za pomocą stron właściwości projektu w programie Visual Studio zintegrowane środowisko programistyczne (IDE), można zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostępne wartości `TargetFrameworkVersion` są `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, i `v4.6`.  
+ Platforma docelowa jest określona w `TargetFrameworkVersion` właściwość w pliku projektu. Za pomocą stron właściwości projektu w programie Visual Studio zintegrowane środowisko programistyczne (IDE), można zmienić platformę docelową dla projektu. Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostępne wartości `TargetFrameworkVersion` są `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v.4.6.1`, `v4.6.2`, `4.7`, i `4.7.1`.  
   
 ```xml  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -64,9 +66,9 @@ Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określ
 ## <a name="target-platform"></a>Platforma docelowa  
  A *platformy* jest kombinacja sprzętu i oprogramowania, które definiuje określonego środowiska. Na przykład  
   
--   `x86`Określa 32-bitowy system operacyjny Windows jest uruchomiona na z procesorem Intel 80 x 86 lub jego odpowiednik.  
+-   `x86` Określa 32-bitowy system operacyjny Windows jest uruchomiona na z procesorem Intel 80 x 86 lub jego odpowiednik.  
   
--   `Xbox`Określa platformę Microsoft konsoli Xbox 360.  
+-   `Xbox` Określa platformę Microsoft konsoli Xbox 360.  
   
  A *platformy docelowej* czy platforma określonego projektu jest oparty na. Platforma docelowa jest określona w `Platform` kompilacji właściwość w pliku projektu. Za pomocą stron właściwości projektu można zmienić platformę docelową lub **programu Configuration Manager** w IDE.  
   

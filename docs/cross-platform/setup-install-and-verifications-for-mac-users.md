@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
-caps.latest.revision: "10"
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
 W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim na komputerze Mac, które opcjonalnie Visual Studio umożliwia maszynie wirtualnej systemu Windows na komputerach Mac. Jeśli jesteś deweloperem pracy przede wszystkim na komputerze z systemem Windows i należy skonfigurować dodatkowej Mac przeznaczony dla systemu iOS, znajduje się w [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) tematu.
@@ -33,7 +34,7 @@ W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim n
 
  Ten temat zawiera instrukcje dotyczące tych wymagań.  Podczas procesu instalacji, należy przejrzeć temat [Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) do odczytywania i obejrzyj materiałów niezbędne tła.
 
-##  <a name="mac"></a>Instalator Mac (Apple ID, Xcode i Xamarin)
+##  <a name="mac"></a> Instalator Mac (Apple ID, Xcode i Xamarin)
 
 1.  Utwórz bezpłatne identyfikator firmy Apple w [mój identyfikator Apple ID](https://appleid.apple.com/) Jeśli nie masz już. Jest to niezbędne do instalowania i rejestrowania się w środowisku Xcode.
 
@@ -43,7 +44,7 @@ W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim n
 
 4.  Po zakończeniu instalowania Xamarin na komputerach z systemem Windows i Mac, postępuj zgodnie z instrukcjami [połączenie z komputerem Mac przy użyciu XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com), dzięki czemu można pracować z systemem iOS i Mac w programie Visual Studio w systemie Windows komputer.
 
-##  <a name="windows"></a>Instalator systemu Windows wewnątrz równoleżników (Visual Studio i Xamarin)
+##  <a name="windows"></a> Instalator systemu Windows wewnątrz równoleżników (Visual Studio i Xamarin)
 
 1.  Korzystanie z pulpitu systemu Windows, skonfigurowanego wewnątrz równoleżników/VMWare [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja; wersje Professional i Enterprise może służyć próbny o 30 dni.
 
@@ -65,10 +66,10 @@ W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim n
 
 6.  Po zakończeniu instalowania Xamarin na komputerach z systemem Windows i Mac, postępuj zgodnie z instrukcjami [połączenie z komputerem Mac przy użyciu XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com), dzięki czemu można pracować z systemem iOS w programie Visual Studio.
 
-##  <a name="verify"></a>Sprawdź środowiska
+##  <a name="verify"></a> Sprawdź środowiska
  Po ukończeniu ma instalatorów spędzają na kilka minut, sprawdź, czy wszystko jest gotowe do środowisko rozwoju Xamarin.
 
-### <a name="xamarin-studio"></a>Program Xamarin Studio
+### <a name="xamarin-studio"></a>Xamarin Studio
  Najpierw upewnij się, że po przejściu do podanego łącza, czy masz **Xamarin Studio** wybrane w prawym górnym rogu, aby zobaczyć poprawna wersja dokumentacji Xamarin:
 
  ![Wybieranie platformy Xamarin Studio można znaleźć w dokumentacji poprawne na Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")

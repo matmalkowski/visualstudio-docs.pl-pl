@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77b6feef7556950d121e462cb1e8e81e8c4bfe7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3016df12481da0a7ea81dee1ff895fc5dcbd059d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generuj klasy lub typu w programie Visual Studio
 
@@ -51,7 +51,7 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
      - Umieść kursor nad czerwona falista, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana.
@@ -93,5 +93,5 @@ Utworzono klasy lub struktury. Język C# tworzona jest również konstruktora.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Generowanie kodu](../code-generation-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Generowanie kodu](../code-generation-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

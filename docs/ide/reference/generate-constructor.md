@@ -11,11 +11,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78b1829ae6a302b7c5f71fa2c478152d0c20d1b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0767b47fcf4456e1ac198674ece6c9de31850279
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generuj Konstruktor w programie Visual Studio
 
@@ -39,7 +39,7 @@ Dotyczy to generowanie kodu:
    - [Dodaj parametr do istniejących konstruktora](#addparameter)
    - [Utwórz i zainicjuj pola/właściwości z parametru konstruktora](#create)
 
-## <a id = "pick"></a>Generuj Konstruktor i wybierz elementy członkowskie (C# tylko)
+## <a id = "pick"></a> Generuj Konstruktor i wybierz elementy członkowskie (C# tylko)
 
 1. Umieść kursor w dowolnym pustym wierszu w klasie:
 
@@ -48,7 +48,7 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
      - Kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już na pusty wiersz w klasie.
@@ -70,7 +70,7 @@ Dotyczy to generowanie kodu:
 
    ![Generowanie wyników — Konstruktor](media/constructor1-result-cs.png)
 
-## <a id="selection"></a>Generuj Konstruktor z wybranego pola (C# tylko)
+## <a id="selection"></a> Generuj Konstruktor z wybranego pola (C# tylko)
 
 1. Wyróżnij elementy członkowskie, które chcesz mieć w Twojej wygenerowany Konstruktor:
 
@@ -79,7 +79,7 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
      - Kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która pojawia się na lewym marginesie, gdy kursor tekstu znajduje się już na wiersz z zaznaczenia.
@@ -92,7 +92,7 @@ Dotyczy to generowanie kodu:
 
    ![Generowanie wyników — Konstruktor](media/constructor2-result-cs.png)
 
-## <a id="usage"></a>Generuj Konstruktor z użycia nowego (C# i Visual Basic)
+## <a id="usage"></a> Generuj Konstruktor z użycia nowego (C# i Visual Basic)
 
 1. Umieść kursor w wierszu przypadku czerwona falista. Czerwona falista wskazuje wywołanie konstruktora, który jeszcze nie istnieje.
 
@@ -107,7 +107,7 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
      - Umieść kursor nad czerwona falista, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana.
@@ -130,7 +130,7 @@ Dotyczy to generowanie kodu:
 
       ![Generowanie wynik metody VB](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a>Dodawanie parametru do istniejących — Konstruktor (C# tylko)
+## <a id="addparameter"></a> Dodawanie parametru do istniejących — Konstruktor (C# tylko)
 
 1. Dodawanie parametru do istniejących wywołania konstruktora.
 
@@ -141,7 +141,7 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
      - Umieść kursor nad czerwona falista, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana.
@@ -155,7 +155,7 @@ Dotyczy to generowanie kodu:
 
    ![Generowanie wyników — Konstruktor](media/constructor4-result-cs.png)
 
-## <a id="create"></a>Utwórz i zainicjuj pola lub właściwości w parametrze — Konstruktor (C# tylko)
+## <a id="create"></a> Utwórz i zainicjuj pola lub właściwości w parametrze — Konstruktor (C# tylko)
 
 1. Znajdź istniejący Konstruktor i dodać parametr:
 
@@ -166,7 +166,7 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
      - Kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która pojawia się na lewym marginesie, gdy kursor tekstu znajduje się już na wiersz za pomocą parametru dodany.
@@ -181,5 +181,5 @@ Dotyczy to generowanie kodu:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Generowanie kodu](../code-generation-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Generowanie kodu](../code-generation-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

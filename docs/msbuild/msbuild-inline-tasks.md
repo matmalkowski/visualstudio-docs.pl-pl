@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e6ac51448f014e9d37e5e1521c01f3dfc903b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 021107e4048a990c7c207d8d868db581ea0bfd4e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  
@@ -66,7 +66,7 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
   
 -   `Using` Element zawiera przestrzenie nazw, które chcesz uzyskać dostęp. Przypomina to `Using` instrukcji języka Visual C#. `Namespace` Atrybut określa przestrzeń nazw do uwzględnienia.  
   
- `Reference`i `Using` elementy są niezależne od języka. Zadania wbudowane można pisać w jednym z obsługiwanych języków .NET CodeDom, na przykład Visual Basic lub Visual C#.  
+ `Reference` i `Using` elementy są niezależne od języka. Zadania wbudowane można pisać w jednym z obsługiwanych języków .NET CodeDom, na przykład Visual Basic lub Visual C#.  
   
 > [!NOTE]
 >  Elementy zawarte `Task` elementu są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań kodu.  
@@ -103,7 +103,7 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
-      <Reference Include="System.Xml.dll"/>  
+      <Reference Include="System.Xml"/>
       <Using Namespace="System"/>  
       <Using Namespace="System.IO"/>  
       <Code Type="Fragment" Language="cs">  
@@ -139,11 +139,11 @@ Log.LogError("Hello, world!");
   
  Parametry może mieć co najmniej jeden z tych atrybutów:  
   
--   `Required`jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametr jest wymagany i musi mieć określoną wartość przed wywołaniem zadania.  
+-   `Required` jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametr jest wymagany i musi mieć określoną wartość przed wywołaniem zadania.  
   
--   `ParameterType`jest opcjonalny atrybut, który jest `System.String` domyślnie. Do dowolnego typu pełni kwalifikowana, co element lub wartość, który może zostać przekonwertowany do i z ciągu za pomocą System.Convert.ChangeType może zostać ustawiony. (Innymi słowy, dowolnego typu, które mogą zostać przekazane do i z zadanie zewnętrzne.)  
+-   `ParameterType` jest opcjonalny atrybut, który jest `System.String` domyślnie. Do dowolnego typu pełni kwalifikowana, co element lub wartość, który może zostać przekonwertowany do i z ciągu za pomocą System.Convert.ChangeType może zostać ustawiony. (Innymi słowy, dowolnego typu, które mogą zostać przekazane do i z zadanie zewnętrzne.)  
   
--   `Output`jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametr musi mieć określoną wartość przed powrotem z metody Execute.  
+-   `Output` jest opcjonalny atrybut, który jest `false` domyślnie. Jeśli `true`, a następnie parametr musi mieć określoną wartość przed powrotem z metody Execute.  
   
  Na przykład  
   
@@ -157,11 +157,11 @@ Log.LogError("Hello, world!");
   
  definiuje trzy następujące parametry:  
   
--   `Expression`jest wymaganego parametru wejściowego typu System.String.  
+-   `Expression` jest wymaganego parametru wejściowego typu System.String.  
   
--   `Files`jest wymagany element parametru wejściowego listy.  
+-   `Files` jest wymagany element parametru wejściowego listy.  
   
--   `Tally`jest parametrem wyjściowym typu System.Int32.  
+-   `Tally` jest parametrem wyjściowym typu System.Int32.  
   
  Jeśli `Code` element ma `Type` atrybutu `Fragment` lub `Method`, a następnie właściwości są tworzone automatycznie dla każdego parametru. W przeciwnym razie wartość właściwości musi być jawnie zadeklarowany w kodzie źródłowym zadań i musi dokładnie odpowiadać ich definicje parametru.  
   

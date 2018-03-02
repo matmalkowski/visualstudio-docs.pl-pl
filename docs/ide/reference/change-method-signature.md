@@ -17,11 +17,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8358e14ccf9570207b3e52a552990fd2a3a80d49
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c181eb27ccdbc2f1efb7294e1610a6055245241c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="change-a-method-signature-refactoring"></a>Zmień refaktoryzacji podpisu — metoda
 
@@ -53,7 +53,7 @@ Dotyczy to refaktoryzacji:
 
    - **Keyboard**
      - Naciśnij klawisz **Ctrl + R**, następnie **klawisze Ctrl + V**.  (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
-     - Naciśnij klawisz **Ctrl +.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **zmiany sygnatury** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **zmiany sygnatury** z menu podręcznego okna podglądu.
    - **Myszy**
      - Wybierz **Edytuj > Refaktoryzuj > Usuń parametry**.
      - Wybierz **Edytuj > Refaktoryzuj > zmiany kolejności parametrów**.
@@ -84,5 +84,5 @@ Dotyczy to refaktoryzacji:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Refaktoryzacja](../refactoring-in-visual-studio.md)  
-[Podgląd zmian](../../ide/preview-changes.md)
+- [Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Podgląd zmian](../../ide/preview-changes.md)

@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c15207a564a63f08d58c4f0164aae703d43daa9a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 339882fadba46dc0a42c6796d135e761a3554e9c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="calltarget-task"></a>CallTarget — Zadanie
 Wywołuje określone elementy docelowe w pliku projektu.  
@@ -36,7 +36,7 @@ Wywołuje określone elementy docelowe w pliku projektu.
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`RunEachTargetSeparately`|Opcjonalne `Boolean` parametru wyjściowego.<br /><br /> Jeśli `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana raz na docelowy. Jeśli `false`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana raz w celu zbudowania wszystkie elementy docelowe. Wartość domyślna to `false`.|  
+|`RunEachTargetSeparately`|Opcjonalne `Boolean` parametru wejściowego.<br /><br /> Jeśli `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana raz na docelowy. Jeśli `false`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat jest wywoływana raz w celu zbudowania wszystkie elementy docelowe. Wartość domyślna to `false`.|  
 |`TargetOutputs`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru wyjściowego.<br /><br /> Zawiera wszystkie elementy docelowe wbudowanych dane wyjściowe.|  
 |`Targets`|Opcjonalne `String[]` parametru.<br /><br /> Określa docelowy lub obiekty docelowe do skompilowania.|  
 |`UseResultsCache`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, buforowane wynik jest zwracany, jeśli jest obecny.<br /><br /> **Uwaga** MSBuild gdy zadanie zostanie uruchomione, dane wyjściowe są buforowane w zakresie (ProjectFileName, GlobalProperties) [TargetNames] jako listę pozycji kompilacji.|  

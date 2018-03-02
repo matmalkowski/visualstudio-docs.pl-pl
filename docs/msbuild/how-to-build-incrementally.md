@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: eaebea1fea86339badd7882c7436087ae555b7b5
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-incrementally"></a>Porady: kompilacja przyrostowa
 Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składników, które są nadal aktualne nie zostały odbudowane. Jeśli wszystkie elementy docelowe są tworzone za każdym razem każdej kompilacji będzie trwać bardzo długo. Aby włączyć kompilacji przyrostowej (kompilacji, w którym tylko tych obiektów docelowych, które nie zostały utworzone przed lub elementów docelowych, które są nieaktualne, są odbudować), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) można porównać sygnatury czasowe plików wejściowych ze znacznikami czasu plików wyjściowych i określanie, czy pominąć, kompilacji lub częściowo odbudować obiektu docelowego. Jednak musi być mapowanie jeden do jednego między wejścia i wyjścia. Aby włączyć elementy docelowe zidentyfikować ten bezpośredniego mapowania można użyć transformacji. Aby uzyskać więcej informacji na transformacje, zobacz [przekształca](../msbuild/msbuild-transforms.md).  
@@ -72,7 +72,7 @@ Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składnik
  Ten plik projektu zawiera zarówno `Convert` i `Build` elementów docelowych. `GenerateContentFiles` i `BuildHelp` zadania są umieszczane w `Convert` i `Build` odpowiednio elementów docelowych, dzięki czemu można wbudować przyrostowo każdego obiektu docelowego. Za pomocą `Output` element, dane wyjściowe `GenerateContentFiles` zadań są umieszczane w `ContentFile` listy elementów, gdzie są używane jako dane wejściowe dla `BuildHelp` zadań. Przy użyciu `Output` element w ten sposób automatycznie udostępnia dane wyjściowe z zadania jako dane wejściowe dla innego zadania, aby nie musieli poszczególnych elementów listy lub element listy ręcznie w przypadku każdego zadania.  
   
 > [!NOTE]
->  Mimo że `GenerateContentFiles` docelowych można tworzyć przyrostowo, wszystkie dane wyjściowe z tego miejsca docelowego zawsze są wymagane jako dane wejściowe dla `BuildHelp` docelowej. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]automatycznie udostępnia wszystkie dane wyjściowe z jednego miejsca docelowego jako dane wejściowe dla innego celu korzystając z `Output` elementu.  
+>  Mimo że `GenerateContentFiles` docelowych można tworzyć przyrostowo, wszystkie dane wyjściowe z tego miejsca docelowego zawsze są wymagane jako dane wejściowe dla `BuildHelp` docelowej. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] automatycznie udostępnia wszystkie dane wyjściowe z jednego miejsca docelowego jako dane wejściowe dla innego celu korzystając z `Output` elementu.  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -80,7 +80,7 @@ Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składnik
   
     <ItemGroup>  
         <TXTFile Include="*.txt"/>  
-        <XMLFile Include="\metadata\*.xml"/>  
+        <XMLFiles Include="\metadata\*.xml"/>  
     </ItemGroup>  
   
     <Target Name = "Convert"  
@@ -100,7 +100,7 @@ Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składnik
   
         <BuildHelp  
             ContentFiles = "@(ContentFiles)"  
-            MetadataFiles = "@(XMLFile)"  
+            MetadataFiles = "@(XMLFiles)"  
             OutputFileName = "$(MSBuildProjectName).help"/>  
     </Target>  
 </Project>  

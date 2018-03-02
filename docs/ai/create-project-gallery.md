@@ -9,33 +9,34 @@ ms.date: 11/13/2017
 ms.topic: how to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b45aa6b2ddfb37b99f7f1d92d4d2b205e905488
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1221459107a807c267583e46b6449dc63be094c1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Utwórz projekt AI z galerii Azure Machine Learning w programie Visual Studio
 
-Usługa Azure Machine Learning jest zintegrowany z programu Visual Studio Tools dla AI. Służy on do przesyłania zadań learning maszyny do zdalnego obliczeń obiektów docelowych jak maszyn wirtualnych platformy Azure, klastry Spark i inne. Dowiedz się więcej o [Azure Machine Learning eksperymenty](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Usługa Azure Machine Learning jest zintegrowany z programu Visual Studio Tools dla AI. Służy on do przesyłania zadań learning maszyny do zdalnego obliczeń obiektów docelowych jak maszyn wirtualnych platformy Azure, klastry Spark i inne. Dowiedz się więcej o [Azure Machine Learning eksperymenty](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 
 Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), ułatwia tworzenie nowego projektu języka Python za pomocą wstępnie przygotowanych przepisami w galerii Azure Machine Learning próbki.
 
-> [!NOTE] 
-> Azure Machine Learning Workbench musi być zainstalowany. Aby go zainstalować można znaleźć [szybkiego startu instalacji usługi Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+> [!NOTE]
+> Azure Machine Learning Workbench musi być zainstalowany. Aby go zainstalować można znaleźć [szybkiego startu instalacji usługi Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)
 
-1. Uruchom program Visual Studio. Otwórz **Eksploratora serwera** otwierając **narzędzia AI** menu i wybierając polecenie **wybierz klastra**  
+1. Uruchom program Visual Studio. Otwórz **Eksploratora serwera** otwierając **narzędzia AI** menu i wybierając polecenie **wybierz klastra**
 
     ![Wybór klastra](media\create-project-gallery\select-cluster.png)
 
 1. Zaloguj się do subskrypcji usługi Azure Machine Learning, klikając prawym przyciskiem myszy **usługi Azure Machine Learning** następnie wybierz węzeł w Eksploratorze serwera **logowania** i postępuj zgodnie z instrukcjami.
 
     ![Logowanie](media\create-project-gallery\azureml-login.png)
- 
-2. Wybierz **narzędzia AI > Azure Machine Learning próbki galerii**. 
-    
+
+2. Wybierz **narzędzia AI > Azure Machine Learning próbki galerii**.
+
     ![Przykładowe galerii](media\create-project-gallery\gallery.png)
 
 1. Dla tego przewodnika Szybki Start, wybierz "**MNIST przy użyciu TensorFlow**" sample i kliknij przycisk **zainstalować**. Omówienia następujących zagadnień:
@@ -47,14 +48,14 @@ Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.
  - **Dodaj do rozwiązania**: Określa, czy do dodania do bieżącego rozwiązania Visual Studio lub Utwórz i Otwórz nowe rozwiązanie
  - **Ścieżka projektu**: lokalizację, aby zapisać kod
  - **Nazwa projektu**: typ **TensorFlowMNIST**
-   
+
 ![Projekt wynikowy przy użyciu szablonu aplikacji Python](media/create-project-gallery/new-AzureSampleProject.png)
 
 1. Program Visual Studio tworzy plik projektu ( `.pyproj` pliku na dysku) oraz inne pliki zdefiniowane w próbce. Przy użyciu szablonu "MNIST" Projekt zawiera kilka plików.
 
     ![mnist](media\create-project-gallery\azml-mnist.png)
 
-1. Przesłać zadania usługi Azure Machine Learning. 
+1. Przesłać zadania usługi Azure Machine Learning.
 
     ![mnist](media\create-project-gallery\submit-azml.png)
 
