@@ -10,19 +10,22 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fc42d87dcd32fdc8a96c6295453f755e9623316c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 95bad7dfdf38b4b8a8f2aa1a307cf7512732ae9c
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="xslt-profiler"></a>Profiler XSLT
 
-Profilera XSLT jest narzędziem profilera analizy wydajności, które ułatwia tworzenie i debugowanie dokumentów XSLT. Profilera XSLT umożliwia deweloperom mierzyć i ocena problemów związanych z wydajnością w kodzie XSLT, tworząc szczegółowych raportów wydajności XSLT. Profilera XSLT zawiera wskazówki przydatne dla XSL i XSLT liczbą optymalizacji arkusza stylów, które są istotne dla aplikacji opartych na XSLT, które wymagają maksymalnej wydajności.
+Profilera XSLT jest narzędziem profilera analizy wydajności, które ułatwia tworzenie i debugowanie dokumentów XSLT. Można mierzyć i tworzenie raportów wydajności XSLT szczegółowe w celu oceny problemów związanych z wydajnością w kodzie XSLT. Profilera XSLT zawiera wskazówki przydatne dla XSL i XSLT liczbą optymalizacji arkusza stylów, które są istotne dla aplikacji opartych na XSLT, które wymagają maksymalnej wydajności.
 
 Profilera XSLT jest częścią programu Visual Studio i jest dostępny w **XML** menu.
 
 ![Profiler XSLT](../xml-tools/media/profile-xslt-menu.png)
+
+> [!NOTE]
+> Profilera XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio 2017 r.
 
 ## <a name="see-also"></a>Zobacz także
 

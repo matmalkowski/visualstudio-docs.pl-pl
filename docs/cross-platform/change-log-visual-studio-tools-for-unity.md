@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c408473207075f1c20935b3bbd985012230dc094
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Dziennik zmian (Visual Studio Tools dla Unity)
 Visual Studio Tools for Unity dziennika zmian.
@@ -25,9 +25,9 @@ Visual Studio Tools for Unity dziennika zmian.
 ## <a name="3503"></a>3.5.0.3
  Wydanych 2018-01-09.
 
-### <a name="bug-fixes"></a>Poprawki błędów  
+### <a name="bug-fixes"></a>Poprawki błędów
 
--   **Integracja:**  
+-   **Integracja:**
 
     -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
 

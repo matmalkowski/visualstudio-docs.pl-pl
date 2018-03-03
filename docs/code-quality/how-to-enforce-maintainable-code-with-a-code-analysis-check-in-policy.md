@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: wymuszanie kodu za pomocą zasad ewidencjonowania analizy kodu
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: Wymuszanie kodu za pomocą zasad analizy kodu zaewidencjonowania
 
-Deweloperzy mogą używać narzędzia metryki kodu do mierzenia stopnia złożoności i łatwości konserwacji ich kodu, ale nie można wywołać metryki kodu jako część zasad ewidencjonowania. Można jednak włączyć reguł analizy kodu, które pozwalają sprawdzić zgodność kodu ze standardami metryki kodu i wymuszania reguł za pomocą zasad ewidencjonowania. Aby uzyskać więcej informacji na temat metryki kodu, zobacz [wartości metryki kodu](../code-quality/code-metrics-values.md).
+Deweloperzy mogą używać narzędzia metryki kodu do mierzenia stopnia złożoności i łatwości konserwacji ich kodu, ale nie można wywołać metryki kodu jako część zasad ewidencjonowania. Można jednak włączyć reguł analizy kodu, które pozwalają sprawdzić zgodność kodu ze standardami metryki kodu i wymuszania reguł za pomocą zasad ewidencjonowania. Aby uzyskać więcej informacji na temat metryki kodu, zobacz [kodu wartości metryk](../code-quality/code-metrics-values.md).
 
 Można włączyć głębokość dziedziczenia, klasa sprzężenia, indeks łatwości utrzymania i złożoności wymuszanie kodu za za pomocą zasad ewidencjonowania analizy kodu. Wszystkie cztery te zasady znajdują się w kategorii "Utrzymanie reguły" w edytorze zasad analizy kodu.
 

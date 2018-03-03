@@ -1,5 +1,5 @@
 ---
-title: Wyniki metryk w programie Visual Studio Code | Dokumentacja firmy Microsoft
+title: "Okno wyników metryk kodów w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,15 +19,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Praca z metrykami kodów
+# <a name="using-the-code-metrics-results-window"></a>W oknie wyników metryk kodów
 
-**Wyników metryk kodów** okno wyświetla dane, które jest generowany przez analizę metryki kodu. Aby uzyskać więcej informacji na temat wartości danych metryki kodu, zobacz [wartości metryk kodów](../code-quality/code-metrics-values.md).
+**Wyników metryk kodów** okno wyświetla dane, które jest generowany przez analizę metryki kodu. Aby uzyskać więcej informacji na temat wartości danych metryki kodu, zobacz [kodu wartości metryk](../code-quality/code-metrics-values.md).
 
 ## <a name="displaying-code-metrics-results"></a>Wyświetlanie wyników metryk kodów
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 12/22/2017
 
 - Na **Analizuj** menu, wybierz **Windows** > **wyników metryk kodów**.
 
-   \-lub -
+   \- lub -
 
 - Na **widoku** menu, wybierz **inne okna** > **wyników metryk kodów**.
 
-   **Wyników metryk kodów** okno jest wyświetlane, nawet jeśli go nie zawiera wyników.
+**Wyników metryk kodów** okno jest wyświetlane, nawet jeśli go nie zawiera wyników.
 
 ### <a name="to-view-code-metrics-details"></a>Aby wyświetlić szczegóły metryk kodu
 
@@ -73,7 +73,7 @@ Można dodać lub usunąć wyniki kolumny z **wyników metryk kodów** okna. Pon
 
 1. Kliknij przycisk **Dodaj/Usuń kolumny** przycisku.
 
-     \-- lub kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.
+     \- - lub kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.
 
 1. W **Dodaj/Usuń kolumny** okno dialogowe, wyczyść pole wyboru dla kolumny, które chcesz usunąć, a następnie kliknij przycisk **OK**.
 
@@ -81,7 +81,7 @@ Można dodać lub usunąć wyniki kolumny z **wyników metryk kodów** okna. Pon
 
 1. Kliknij przycisk **Dodaj/Usuń kolumny** przycisku.
 
-     \-lub -
+     \- lub -
 
      Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.
 
@@ -91,7 +91,7 @@ Można dodać lub usunąć wyniki kolumny z **wyników metryk kodów** okna. Pon
 
 1. Kliknij przycisk **Dodaj/Usuń kolumny** przycisku.
 
-     \-lub -
+     \- lub -
 
      Kliknij prawym przyciskiem myszy nagłówek dowolnej kolumny, a następnie kliknij przycisk **Dodaj/Usuń kolumny**.
 
@@ -131,5 +131,5 @@ Aby uzyskać więcej informacji na temat programu VSTS elementów roboczych, zob
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wartości metryk kodów](../code-quality/code-metrics-values.md)  
-[Instrukcje: Generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Wartości metryk kodów](../code-quality/code-metrics-values.md)
+- [Porady: generowanie metryk kodów](../code-quality/how-to-generate-code-metrics-data.md)

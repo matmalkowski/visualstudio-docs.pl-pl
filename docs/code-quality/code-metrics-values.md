@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 
@@ -26,9 +26,11 @@ Zwiększenie stopnia złożoności nowoczesne aplikacje zwiększa także trudno�
 
 Deweloperzy mogą używać programu Visual Studio do generowania kodu danych metryki pomiaru złożoności i łatwości konserwacji ich kodu zarządzanego. Można wygenerować danych metryki kodu dla całego rozwiązania lub projektu jednego.
 
+Informacje o sposobie generowania danych metryki kodu w programie Visual Studio, zobacz [porady: generowanie metryk kodów](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Pomiarów oprogramowania
 
-Na poniższej liście przedstawiono wyniki metryk kodów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oblicza:
+Poniższa lista zawiera kod wyników metryk, które oblicza Visual Studio:
 
 - **Indeks łatwości utrzymania** — oblicza wartość indeksu pomiędzy 0 a 100 reprezentującą względną łatwość utrzymania kod. Wysoka wartość oznacza lepszą utrzymania. Klasyfikacje oznaczone kolorem można szybko zidentyfikować problemy z programem w kodzie. Zielony klasyfikacji wynosi 20-100 i oznacza, że kod ma dużą łatwość utrzymania. Żółty klasyfikacji wynosi 10-19 i wskazuje, że kod jest łatwy w obsłudze średnio. Czerwony klasyfikacji jest klasyfikację od 0 do 9 i wskazuje niski łatwość utrzymania.
 
@@ -51,3 +53,8 @@ Aby uzyskać więcej informacji dotyczących sposobu metryki kodu traktuje anoni
 Niektóre narzędzia oprogramowania i kompilatory generowania kodu, który został dodany do projektu i projektanta projektu nie widzi ani nie należy zmieniać. Przede wszystkim metryki kodu ignoruje wygenerowany kod podczas obliczania wartości metryk. Dzięki temu wartości metryk w celu odzwierciedlenia co deweloper może wyświetlić i zmienić.
 
 Kod wygenerowany dla formularzy systemu Windows nie jest ignorowany, ponieważ jest on kod, który deweloper może wyświetlić i zmienić.
+
+## <a name="next-steps"></a>Następne kroki
+
+- [Porady: generowanie metryk kodów](../code-quality/how-to-generate-code-metrics-data.md)
+- [Okno wyników metryk kodów](../code-quality/working-with-code-metrics-data.md)

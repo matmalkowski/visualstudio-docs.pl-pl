@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc4946c79b16b3fb28e0991ff38cfe96e22a9e1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: bb2e7a3dcd800367ab54945cb0c406ce7afcf45a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -190,7 +190,7 @@ Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Vis
 
  ![Refaktoryzacja](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** jest ogólny termin zbiór popularnych funkcji wyświetlania informacji o typie o kodzie bezpośrednio w edytorze i, w niektórych przypadkach można zapisać małe fragmenty kodu. Przypomina o dokumentacji podstawowej wbudowany w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w oknie Pomoc. Funkcje IntelliSense zależy od języka. Aby uzyskać więcej informacji, zobacz [C#, IntelliSense](../ide/visual-csharp-intellisense.md), [Intellisense dla programu Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense dla JavaScript](../ide/javascript-intellisense.md), i [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono niektóre funkcje IntelliSense w miejscu pracy:
+- **IntelliSense** jest ogólny termin zbiór popularnych funkcji wyświetlania informacji o typie o kodzie bezpośrednio w edytorze i, w niektórych przypadkach można zapisać małe fragmenty kodu. Przypomina o dokumentacji podstawowej wbudowany w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w oknie Pomoc. Funkcje IntelliSense zależy od języka. Aby uzyskać więcej informacji, zobacz [C#, IntelliSense](../ide/visual-csharp-intellisense.md), [IntelliSense dla programu Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense dla JavaScript](../ide/javascript-intellisense.md), i [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono niektóre funkcje IntelliSense w miejscu pracy:
 
   ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2017_Intellisense.png)
 

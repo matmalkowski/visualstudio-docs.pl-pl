@@ -1,5 +1,5 @@
 ---
-title: Visual C++ Intellisense | Dokumentacja firmy Microsoft
+title: Visual C++ IntelliSense | Dokumentacja firmy Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="visual-c-intellisense"></a>Intellisense dla programu Visual C++
+# <a name="visual-c-intellisense"></a>IntelliSense dla programu Visual C++
 
 IntelliSense dla języka C++ jest dostępna dla autonomicznych pliki także jak w przypadku plików, które są częścią projektu C++. W projektach między platformami niektóre funkcje IntelliSense są dostępne w .cpp i .c pliki w projekcie udostępnionym kodu, nawet jeśli znajdują się w kontekście systemu Android lub iOS.
 

@@ -10,17 +10,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: cplusplus
-ms.openlocfilehash: e7b9d0ef40fd0efc4bbf071ef5da75b13e8dd82a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 38f6dfc375e776e4ad471fa8075b755dc3c31998
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstu, C/C++, eksperymentalne
 
@@ -33,7 +35,7 @@ Te funkcje są dostępne w instalacji programu Visual Studio 2017 r.
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="enable-predictive-intellisense"></a>Włącz predykcyjnej Intellisense
+## <a name="enable-predictive-intellisense"></a>Włącz predykcyjnej IntelliSense
 
 IntelliSense predykcyjnej ogranicza liczbę wyników wyświetlanych na liście rozwijanej IntelliSense, aby wyświetlić tylko wyniki, które mają zastosowanie w kontekście. Na przykład jeśli wpiszesz <code>int x =</code> i Wywołaj element dropdown IntelliSense, wyświetlona zostanie tylko liczby całkowite i funkcje, które zwracają liczb całkowitych. Domyślnie predykcyjnej IntelliSense jest wyłączona.
 
@@ -58,5 +60,5 @@ Możesz przeglądać funkcje edycji dodatkowy tekst w [Visual Studio Marketplace
 
 ## <a name="see-also"></a>Zobacz także
 
-[Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)  
-[Refaktoryzacja w języku C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refaktoryzacja w języku C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)

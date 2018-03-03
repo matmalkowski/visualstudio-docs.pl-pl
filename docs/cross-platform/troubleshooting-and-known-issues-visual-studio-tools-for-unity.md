@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3a763c74022f0960dfa11e30038dae1c97295de
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 W tej sekcji możesz znaleźć rozwiązania typowych problemów z programu Visual Studio Tools for Unity, opisy znanych problemów i Dowiedz się, jak można zwiększyć Visual Studio Tools for Unity raportowanie błędów.
@@ -40,7 +40,7 @@ To powinno rozwiązać problem. W przypadku, gdy problem nadal występuje, uruch
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problemy z zabarwienie VS2015 i Intellisense lub kod.
+### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problemy z zabarwienie VS2015 i IntelliSense lub kod.
 Należy próbować uaktualniania programu Visual Studio 2015 do aktualizacji 3.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio zawiesza się.

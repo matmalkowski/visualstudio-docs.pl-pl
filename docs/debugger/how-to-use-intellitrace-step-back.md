@@ -4,62 +4,74 @@ ms.custom:
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="view-snapshots-using-intellitrace-step-back"></a>Migawki widoku przy użyciu zwrotnego krok IntelliTrace
+# <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zwroty kroku migawki widoku przy użyciu funkcji IntelliTrace w programie Visual Studio
+
 Krok zwrotnego IntelliTrace automatycznie tworzy migawkę aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawki umożliwiają wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości. IntelliTrace krok wstecz może zaoszczędzić czas podczas chcesz zobacz poprzedni stan aplikacji, ale nie chcesz uruchomić ponownie debugowania lub Utwórz ponownie stan żądanej aplikacji.
 
 Krok IntelliTrace zwrotnego jest dostępna, począwszy od programu Visual Studio Enterprise 2017 wersji 15.5 lub nowszej, a wymaga systemu Windows 10 Anniversary aktualizacji lub nowszej. Funkcja jest obecnie obsługiwane dla debugowania ASP.NET, WinForms WPF, konsoli zarządzanych aplikacji i bibliotek klas zarządzanych. Debugowanie aplikacji platformy ASP.NET Core .NET Core i platformy uniwersalnej systemu Windows nie jest obecnie obsługiwane. 
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Włącz tryb migawki i zdarzenia funkcji IntelliTrace 
-Aby włączyć tę funkcję, przejdź do **Narzędzia > Opcje > IntelliTrace** ustawienia, a następnie wybierz opcję **IntelliTrace zdarzenia i migawek**. 
 
-![Włącz tryb zdarzeń funkcji IntelliTrace i migawki](../debugger/media/intellitrace-enable-snapshots.png "tryb migawki i włączyć zdarzeń funkcji IntelliTrace")
+1. W programie Visual Studio Enterprise, przejdź do **Narzędzia > Opcje > IntelliTrace** ustawienia, a następnie wybierz opcję **IntelliTrace zdarzenia i migawek**. 
 
-IntelliTrace tworzy migawkę proces aplikacji w debugerze każdego zdarzenia krok i punktu przerwania. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna, oraz inne zdarzenia funkcji IntelliTrace. Aby otworzyć to okno, wybierz polecenie **Debug / Windows / Pokaż narzędzia diagnostyczne**.
+    ![Włącz tryb zdarzeń funkcji IntelliTrace i migawki](../debugger/media/intellitrace-enable-snapshots.png "tryb migawki i włączyć zdarzeń funkcji IntelliTrace")
 
-Ikona aparatu obok zdarzeń, dla których są dostępne migawki. 
+2. Otwórz projekt w programie Visual Studio.
 
-![Karta zdarzeń z migawkami](../debugger/media/intellitrace-events-tab-with-snapshots.png "kartę zdarzenia z migawkami punktów przerwania i kroki")
+3. Ustaw co najmniej jednego punktu przerwania w projekcie i Rozpocznij debugowanie (naciśnij klawisz **F5**), lub uruchomić debugowanie przy przechodzeniu przez kod (**F10** lub **F11**).
 
-Ze względu na wydajność migawki nie są brane podczas wykonywania kroków bardzo szybko. Jeśli brak aparatu ikony obok kroku, spróbuj krokowe wykonywanie wolniej.
+    IntelliTrace tworzy migawkę proces aplikacji w debugerze każdego zdarzenia krok i punktu przerwania. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna, oraz inne zdarzenia funkcji IntelliTrace. Aby otworzyć to okno, wybierz polecenie **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+
+    Ikona aparatu obok zdarzeń, dla których są dostępne migawki. 
+
+    ![Karta zdarzeń z migawkami](../debugger/media/intellitrace-events-tab-with-snapshots.png "kartę zdarzenia z migawkami punktów przerwania i kroki")
+
+    Ze względu na wydajność migawki nie są brane podczas wykonywania kroków bardzo szybko. Jeśli brak aparatu ikony obok kroku, spróbuj krokowe wykonywanie wolniej.
 
 ## <a name="navigate-and-view-snapshots"></a>Nawigacja i wyświetlanie migawek
 
-Można przechodzić między zdarzeniami przy użyciu **krok z poprzednimi wersjami (Alt + [)** i **krok do przodu (Alt +])** przycisków na pasku narzędzi debugowania. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **okno narzędzia diagnostyczne**. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
+1. Przechodzenie między zdarzeniami przy użyciu **krok z poprzednimi wersjami (Alt + [)** i **krok do przodu (Alt +])** przycisków na pasku narzędzi debugowania.
 
-![Krok wstecz i przekazywać je przycisków](../debugger/media/intellitrace-step-back-icons-description.png "krok do tyłu i do przodu krok przycisków")
+    Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **okno narzędzia diagnostyczne**. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
 
-Gdy krok wstecz lub krok do przodu, Visual Studio wprowadza tryb debugowania historycznego. W tym trybie kontekstu debugera przełączników do momentu, gdy zarejestrowano wybranego zdarzenia. Visual Studio również przesunie wskaźnik do odpowiedniego wiersza kodu w oknie źródła. 
+    ![Krok wstecz i przekazywać je przycisków](../debugger/media/intellitrace-step-back-icons-description.png "krok do tyłu i do przodu krok przycisków")
 
-W tym widoku możesz sprawdzić wartości w **stos wywołań**, **zmiennych lokalnych**, **automatycznych**, i **czujki** systemu windows. Można również ustawić kursor nad zmienne do wyświetlania etykietek danych i wykonywania wyrażenia w **Immediate** okna. Dane, które pojawi się z migawki procesu aplikacji, w tym punkcie w czasie.
+    Gdy krok wstecz lub krok do przodu, Visual Studio wprowadza tryb debugowania historycznego. W tym trybie kontekstu debugera przełączników do momentu, gdy zarejestrowano wybranego zdarzenia. Visual Studio również przesunie wskaźnik do odpowiedniego wiersza kodu w oknie źródła. 
 
-Tak, na przykład, jeżeli został trafiony punkt przerwania i podjąć krok (**F10**), **krok do tyłu** przycisk umieszcza Visual Studio w trybie historycznych w wierszu kodu odpowiadający punktu przerwania. 
+    W tym widoku możesz sprawdzić wartości w **stos wywołań**, **zmiennych lokalnych**, **automatycznych**, i **czujki** systemu windows. Można również ustawić kursor nad zmienne do wyświetlania etykietek danych i wykonywania wyrażenia w **Immediate** okna. Dane, które pojawi się z migawki procesu aplikacji, w tym punkcie w czasie.
 
-![Tryb historycznych uaktywnianie na zdarzenie z migawki](../debugger/media/intellitrace-historical-mode-with-snapshot.png "tryb historycznych uaktywnianie na zdarzenie z migawki")
+    Tak, na przykład, jeżeli został trafiony punkt przerwania i podjąć krok (**F10**), **krok do tyłu** przycisk umieszcza Visual Studio w trybie historycznych w wierszu kodu odpowiadający punktu przerwania. 
 
-Aby powrócić do wykonania na żywo, wybierz **Kontynuuj (F5)** lub kliknij przycisk **wrócić do debugowania na żywo** łącze w pasku informacyjnym. 
+    ![Tryb historycznych uaktywnianie na zdarzenie z migawki](../debugger/media/intellitrace-historical-mode-with-snapshot.png "tryb historycznych uaktywnianie na zdarzenie z migawki")
 
-Można również wyświetlić migawka **zdarzenia** kartę. Wybierz zdarzenie z migawki, a następnie kliknij przycisk **Uaktywnij debugowanie historyczne**. Możesz również kliknąć ikonę aparatu, aby aktywować debugowania historycznego.
+2. Aby powrócić do wykonania na żywo, wybierz **Kontynuuj (F5)** lub kliknij przycisk **wrócić do debugowania na żywo** łącze w pasku informacyjnym. 
 
-![Aktywuj debugowania historycznego na zdarzenie](../debugger/media/intellitrace-activate-historical-debugging.png "Uaktywnij debugowanie historyczne na zdarzenia")
+3. Można również wyświetlić migawka **zdarzenia** kartę. Aby to zrobić, wybierz zdarzenie z migawki, a następnie kliknij przycisk **Uaktywnij debugowanie historyczne**.
 
-W odróżnieniu od **ustawienia następnej instrukcji** polecenia Wyświetlanie migawki nie ponownie kodu; daje widok statyczny stan aplikacji w punkcie w czasie, który wystąpił w przeszłości.
+    Możesz również kliknąć ikonę aparatu, aby aktywować debugowania historycznego.
 
-![Omówienie zwrotnego krok IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Omówienie programu IntelliTrace krok zwrotnego")
+    ![Aktywuj debugowania historycznego na zdarzenie](../debugger/media/intellitrace-activate-historical-debugging.png "Uaktywnij debugowanie historyczne na zdarzenia")
+
+    W odróżnieniu od **ustawienia następnej instrukcji** polecenia Wyświetlanie migawki nie ponownie kodu; daje widok statyczny stan aplikacji w punkcie w czasie, który wystąpił w przeszłości.
+
+    ![Omówienie zwrotnego krok IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Omówienie programu IntelliTrace krok zwrotnego")
 
 ## <a name="next-steps"></a>Następne kroki  
  Aby dowiedzieć się, jak sprawdzić zmienne w Visual Studio, zobacz [debugera samouczek funkcji](../debugger/debugger-feature-tour.md)  

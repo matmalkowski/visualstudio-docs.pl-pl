@@ -1,45 +1,49 @@
 ---
-title: "Ustawianie zakładek w kodzie | Dokumentacja firmy Microsoft"
+title: "Ustawianie zakładek kodu w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf8367b3e4f0d20db435e16f9843e6d431c068b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecf0aa9d18b02cffb68c68e5c844a726c749a0a3
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="setting-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
+# <a name="set-bookmarks-in-code"></a>Zestaw zakładek w kodzie
 
-Zakładki służy do oznaczania wierszy w kodzie, dzięki czemu można szybko powrócić do określonej lokalizacji i przeskakiwanie między lokalizacjami. Zakładka polecenia i ikony są dostępne w dwóch miejscach: okno zakładek (**widoku** > **okno zakładek**) i paska narzędzi edytora tekstu.
+Zakładki służy do oznaczania linii w kodzie, dzięki czemu można szybko powrócić do określonej lokalizacji lub przeskakiwanie między lokalizacjami. Zakładka polecenia i ikony są dostępne w dwóch miejscach: **okno zakładek** (**widoku** > **okno zakładek**) i paska narzędzi edytora tekstu.
 
-## <a name="managing-bookmarks"></a>Zarządzanie zakładki
+![Zakładka paska narzędzi](media/bookmark-toolbar.png)
 
-Aby dodać zakładki, umieść kursor na wiersz, który ma być zakładki. Kliknij przycisk **Przełącz** przycisk lub naciśnij klawisze CTRL + K. Spowoduje to dodanie zakładki. Jeśli przycisk przełączania (lub naciśnij klawisze CTRL + K) ponownie, zostanie usunięta zakładki. Możesz także usunąć zakładki, klikając **usunąć** przycisk w oknie zakładki.
+![Okno zakładek](media/bookmark-window.png)
+
+## <a name="manage-bookmarks"></a>Zarządzanie zakładki
+
+Aby dodać zakładki, umieść kursor na wiersz, który ma być zakładki. Wybierz **Przełącz zakładkę** przycisk lub naciśnij przycisk **Ctrl**+**K**, **Ctrl**+**K** . Spowoduje to dodanie zakładki. Jeśli wybierzesz **Przełącz zakładkę** przycisk (lub naciśnij klawisz **Ctrl**+**K**, **Ctrl** +  **K**) ponownie, zostanie usunięta zakładki.
+
+Aby wiedzieć, w skrócie określonej zakładki jest, można zmienić w **okno zakładek** z menu kliknij prawym przyciskiem myszy lub kontekstu. Zakładki może usunąć, wybierając **usunąć** przycisk w oknie zakładki.
 
 > [!IMPORTANT]
 > Numer wiersza, aby kod nie jest ustawiana zakładki. Zmodyfikuj kod, zakładki są przechowywane w wierszu numer, a nie przenosi się z kodem.
 
-Można przechodzić między zakładki przy użyciu **następnej zakładki** i **poprzedniej zakładki** przyciski w oknie zakładki.
+Można przechodzić między zakładki przy użyciu **następnej zakładki** i **Poprzednia zakładka** przyciski w oknie zakładki.
 
-Zakładki można organizować w wirtualne foldery, klikając **nowy Folder** w oknie zakładki, a następnie przeciągając wybranego zakładek do nowego folderu.
+Zakładki można organizować w foldery wirtualne, wybierając **nowy Folder** w oknie zakładki, a następnie przeciągając wybranego zakładek do nowego folderu.
 
-Można wyłączyć zakładek (bez ich usuwania), klikając **Wyłącz wszystkie zakładki** przycisk w oknie zakładki. Można ponownie włączyć po kliknięciu przycisku tego samego (teraz nazywany **Włącz wszystkie zakładki**).
+Można wyłączyć zakładek (bez ich usuwania), wybierając **Wyłącz wszystkie zakładki** przycisk w oknie zakładki. Można ponownie włączyć, wybierając przycisk tego samego (teraz nazywany **włączyć wszystkie zakładki**).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Pisanie kodu w edytorze](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Pisanie kodu w edytorze](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -14,11 +14,11 @@ manager: ghogen
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa .NET dla EditorConfig
 
@@ -46,7 +46,7 @@ Do opisania rodzaj symbole, aby zastosować reguły nazewnictwa, określ właśc
 
 Na poniższej liście przedstawiono dopuszczalnych wartości, a następnie można określić wiele wartości, rozdzielając je przecinkami.
 
-- \*(Użyj tej wartości, aby określić wszystkie symbole)
+- \* (Użyj tej wartości, aby określić wszystkie symbole)
 - class
 - struktura 
 - interface
@@ -66,7 +66,7 @@ Do opisania poziomów ułatwień dostępu, który ma być stosowana reguła naze
 
 Na poniższej liście przedstawiono dopuszczalnych wartości, a następnie można określić wiele wartości, rozdzielając je przecinkami.
 
-- \*(Użyj tej wartości, aby określić wszystkie poziomy ułatwień dostępu)
+- \* (Użyj tej wartości, aby określić wszystkie poziomy ułatwień dostępu)
 - public
 - wewnętrzny lub przyjaciel
 - private
@@ -90,7 +90,7 @@ Na poniższej liście przedstawiono dopuszczalnych wartości, a następnie możn
 - readonly
 - statyczny lub wspólny
 
-`required_modifiers`jest to opcjonalna właściwość. W przypadku pominięcia tej właściwości, reguły nazewnictwa będą dotyczyć wszystkich modyfikatorów.
+`required_modifiers` jest to opcjonalna właściwość. W przypadku pominięcia tej właściwości, reguły nazewnictwa będą dotyczyć wszystkich modyfikatorów.
 
 ## <a name="style"></a>Styl
 
@@ -187,5 +187,6 @@ Jeżeli Zamknij i otwórz ponownie pliku kodu zamiast wyświetlanie uwag w obsza
 
 ## <a name="see-also"></a>Zobacz także
 
-[Języka .NET i Konwencji formatowania](../ide/editorconfig-code-style-settings-reference.md)  
-[Tworzenie niestandardowego edytora przenośne opcji](../ide/create-portable-custom-editor-options.md)
+- [Języka .NET i Konwencji formatowania](../ide/editorconfig-code-style-settings-reference.md)
+- [Tworzenie niestandardowego edytora przenośne opcji](../ide/create-portable-custom-editor-options.md)
+- [Plik .editorconfig platformę .NET kompilatora](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
