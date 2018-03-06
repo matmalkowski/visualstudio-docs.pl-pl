@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -65,7 +65,7 @@ Podczas oceny ten problem, należy rozważyć następujące:
 
 ![Inefficient I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-Nadmierne zużycie lub ich nieuprawnione użycie operacji We/Wy jest częstą przyczyną wydajność w aplikacjach. Należy wziąć pod uwagę poprzedniej ilustracji. Profil widocznej osi czasu pokazuje, że 42 procent czasu widoczne wątku jest używany przez operacje We/Wy. Oś czasu pokazuje dużo operacji We/Wy, co oznacza, że profilowana aplikacja często jest zablokowana z powodu operacji We/Wy. Aby wyświetlić szczegółowe informacje o rodzajach We/Wy i gdy program jest zablokowany, powiększenie fragmentu regionów powodować problemy, przejrzyj profil widocznej osi czasu, a następnie kliknij określonego bloku we/wy, aby wyświetlić bieżące stosy wywołań.
+Nadmierne zużycie lub ich nieuprawnione użycie operacji We/Wy jest częstą przyczyną wydajność w aplikacjach. Należy wziąć pod uwagę poprzedniej ilustracji. Profil widocznej osi czasu pokazuje, że 44 procent czasu widoczne wątku jest używany przez operacje We/Wy. Oś czasu pokazuje dużo operacji We/Wy, co oznacza, że profilowana aplikacja często jest zablokowana z powodu operacji We/Wy. Aby wyświetlić szczegółowe informacje o rodzajach We/Wy i gdy program jest zablokowany, powiększenie fragmentu regionów powodować problemy, przejrzyj profil widocznej osi czasu, a następnie kliknij określonego bloku we/wy, aby wyświetlić bieżące stosy wywołań.
 
 ## <a name="lock-convoys"></a>Konwojów blokady
 

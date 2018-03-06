@@ -19,32 +19,38 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 03d1bbe55ed1b355742f9cd2d3dedc1b66812bbc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c48e9f22322cd5ebebeff0d987c32d369f98d03
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
-Uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i ładuje zmienne środowiskowe w **katalogi VC ++** okno dialogowe.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Devenv /useenv  
-```  
-  
-## <a name="example"></a>Przykład  
- W następującym przykładzie uruchomiono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i ładuje zmienne środowiskowe w **katalogi VC ++** okno dialogowe.  
-  
-```  
-Devenv.exe /useenv  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+
+Uruchamia program Visual Studio i ładuje zmienne środowiskowe w **katalogi VC ++** okno dialogowe.
+
+> [!NOTE]
+> Ten przełącznik jest instalowany z **tworzenia klasycznych aplikacji w języku C++** obciążenia.
+
+## <a name="syntax"></a>Składnia
+
+```shell
+Devenv /useenv
+```
+
+## <a name="example"></a>Przykład
+
+W poniższym przykładzie uruchamiania programu Visual Studio i ładuje zmienne środowiskowe w **katalogi VC ++** okno dialogowe.
+
+```shell
+Devenv.exe /useenv
+```
+
+## <a name="see-also"></a>Zobacz także
+
+* [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

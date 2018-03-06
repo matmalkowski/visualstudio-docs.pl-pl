@@ -20,14 +20,14 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>Operatory (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]ma pełny zakres operatorów, łącznie z arytmetyczne logiczne, operator przypisania, jak również niektórych różne operatory. Wyjaśnienia dotyczące i przykłady zobacz Tematy w szczególnych operatorów.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ma pełny zakres operatorów, łącznie z arytmetyczne logiczne, operator przypisania, jak również niektórych różne operatory. Wyjaśnienia dotyczące i przykłady zobacz Tematy w szczególnych operatorów.  
   
 ## <a name="computational-operators"></a>Operatory obliczeniowe  
   
@@ -37,8 +37,8 @@ ms.lasthandoff: 10/27/2017
 |[Przyrost](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Dekrementacji](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Mnożenia](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
-|[Dzielenie](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Arytmetycznego modulo](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[dzielenie](../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Pozostałe arytmetyczne](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Dodanie](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Odejmowanie](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 10/27/2017
 |[Większa niż](../javascript/reference/comparison-operators-javascript.md)|>|  
 |[Mniejsze niż lub równe](../javascript/reference/comparison-operators-javascript.md)|\<=|  
 |[Większe lub równe](../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[Równości](../javascript/reference/comparison-operators-javascript.md)|==|  
+|[Equality](../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Nierówności](../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Logiczny AND](../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[Logiczne lub](../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
@@ -76,19 +76,19 @@ ms.lasthandoff: 10/27/2017
   
 |Opis|Symbol|  
 |-----------------|------------|  
-|[Przypisania](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
+|[Przypisanie](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
 |[Przydział złożony](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*= (takich jak += i & =)|  
   
 ## <a name="miscellaneous-operators"></a>Różne operatory  
   
 |Opis|Symbol|  
 |-----------------|------------|  
-|[Usuń](../javascript/reference/delete-operator-decrementjavascript.md)|Usuń|  
-|[TypeOf](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  
+|[delete](../javascript/reference/delete-operator-decrementjavascript.md)|Usuń|  
+|[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  
 |[void](../javascript/reference/void-operator-decrementjavascript.md)|void|  
 |[instanceof](../javascript/reference/instanceof-operator-decrementjavascript.md)|instanceof|  
-|[Nowy](../javascript/reference/new-operator-decrementjavascript.md)|new|  
-|[w](../javascript/reference/in-operator-decrementjavascript.md)|in|  
+|[new](../javascript/reference/new-operator-decrementjavascript.md)|new|  
+|[in](../javascript/reference/in-operator-decrementjavascript.md)|in|  
   
 ## <a name="equality-and-strict-equality"></a>Równości i ścisła równość  
  Różnica między == (równości) i === (Ścisła równość) jest operatora równości zostanie wymuszone wartości różnych typów przed sprawdzeniem pod kątem równości. Na przykład porównanie ciągu "1" o numerze 1 zostanie porównany jako true. Operator równości ograniczeniami z drugiej strony, będzie nie przekształcić wartości do różnych typów, a więc ciąg "1" nie zostanie porównany jako równe numer 1.  

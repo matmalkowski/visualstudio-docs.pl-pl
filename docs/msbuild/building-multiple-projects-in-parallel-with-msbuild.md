@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f0e4908760553331aec88388c76176aa9e0dc5
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 15f34d6e512da839166b9c8bb9165a6cefbc9598
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:  
@@ -44,7 +44,7 @@ Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie
  Poniższy przykład powoduje, że program MSBuild będzie używać trzech procesów roboczych. Jeśli używana jest ta konfiguracja, program MSBuild może kompilować trzy projekty w tym samym czasie.  
   
 ```  
-msbuild.exe myproj.proj childid=0 childid=1 childid=2   
+msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>Parametr zadania BuildInParallel  

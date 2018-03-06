@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: javascript
+ms.technology:
+- javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,15 +14,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f17d1ad03728077dc103cb67df9993c7b71c9fdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operator-summary-javascript"></a>Podsumowanie dla operatorów (JavaScript)
 W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operatory w swoich kategoriach.  
@@ -32,9 +33,9 @@ W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/incl
 |--------------|------------|  
 |[Dodanie](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Dekrementacji](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[Dzielenie](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[dzielenie](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[Przyrost](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Modulo](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[pozostałe](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Mnożenia](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Odejmowanie](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Jednoargumentowy negacji](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -45,10 +46,10 @@ W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/incl
 |--------------|------------|  
 |[Przecinkami](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Warunkowy (trójargumentowy)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
-|[Równości](../../javascript/reference/comparison-operators-javascript.md)|==|  
+|[Equality](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Większa niż](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[Większe lub równe](../../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[Tożsamości](../../javascript/reference/comparison-operators-javascript.md)|===|  
+|[Tożsamość](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Nierówności](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Mniej niż](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Mniejsze niż lub równe](../../javascript/reference/comparison-operators-javascript.md)|<=|  
@@ -75,13 +76,13 @@ W poniższych tabelach przedstawiono [!INCLUDE[javascript](../../javascript/incl
  [Złożone operatory przypisania](../../javascript/reference/compound-assignment-operators-javascript.md)  
   
 ## <a name="miscellaneous-operators"></a>Różne operatory  
- [Usuń](../../javascript/reference/delete-operator-decrementjavascript.md)  
+ [delete](../../javascript/reference/delete-operator-decrementjavascript.md)  
   
  [instanceof](../../javascript/reference/instanceof-operator-decrementjavascript.md)  
   
- [Nowy](../../javascript/reference/new-operator-decrementjavascript.md)  
+ [new](../../javascript/reference/new-operator-decrementjavascript.md)  
   
- [TypeOf](../../javascript/reference/typeof-operator-decrementjavascript.md)  
+ [typeof](../../javascript/reference/typeof-operator-decrementjavascript.md)  
   
  [void](../../javascript/reference/void-operator-decrementjavascript.md)  
   
