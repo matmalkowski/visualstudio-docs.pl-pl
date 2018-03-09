@@ -8,15 +8,15 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c0808635d0cd471f0fdaeb00e970ffde94a279c6
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *runsettings* pliku
 
-Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu *runsettings* pliku. Na przykład można zmienić wersji .NET Framework, na którym są uruchamiane testy, katalogu, w którym wyniki testu są dostarczane lub danych, które są zbierane podczas próby uruchomienia.
+Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu *runsettings* pliku. Na przykład można zmienić wersji .NET Framework, na którym są uruchamiane testy, katalog wyników testu lub dane zebrane podczas uruchomienia testu.
 
 > [!NOTE]
 > Nazwa pliku nie ma znaczenia, tak długo, jak użyć rozszerzenia "runsettings".
@@ -57,6 +57,10 @@ Poniżej przedstawiono typowe *runsettings* pliku. Każdy element pliku jest opc
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+  
+     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -129,6 +133,7 @@ W kolejnych sekcjach opisano elementy *runsettings* pliku.
 |`TreatTestAdapterErrorsAsWarnings`|false|fałsz, prawda|
 |`TestAdaptersPaths`||Jeden lub wiele ścieżek do katalogu, w którym znajdują się TestAdapters|
 |`MaxCpuCount`|1|Ten kontroluje stopień wykonywanie równoległe testu podczas testów jednostkowych uruchomione, przy użyciu dostępne rdzenie komputera. Aparat wykonywania testu uruchamiania jako proces unikatowe na każdym dostępne rdzenie i zapewnia kontener core każdego z testów do uruchomienia. Kontener może być zestawu, biblioteki DLL lub odpowiednie artefaktu. Kontener testu jest jednostka planowania. W każdym kontenerze testy są uruchamiane zgodnie ze struktury testowej. Jeśli istnieje wiele kontenerów, następnie jako przetwarza zakończenia wykonywania testów w kontenerze, otrzymują one następnego kontenera dostępności.<br /><br /> MaxCpuCount można:<br /><br /> n, gdzie 1 < = n < = liczba rdzeni: maksymalnie n procesów zostanie uruchomiony<br /><br /> n, gdzie n = dowolna inna wartość: liczba procesów uruchamiana będzie maksymalnie maksymalnie dostępne rdzenie komputera|
+|`TestSessionTimeout`||Umożliwia użytkownikom zakończyć sesję testową, gdy przekracza ona podanego limitu czasu. Test sesji i ustawienia, którego przekroczenie limitu czasu gwarantuje, że zasoby są również używane są ograniczone do określonym czasie. Ustawienie jest dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowszych.
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptery danych diagnostycznych (kolektory danych)
 
@@ -140,7 +145,7 @@ Moduł zbierający dane pokrycia kodu tworzy dziennik z zapisami, które częśc
 
 #### <a name="video-data-collector"></a>Moduł zbierający dane wideo
 
-Moduł zbierający dane wideo przechwytuje rejestrowania ekranu, gdy testy są uruchamiane. Rejestracji jest przydatne podczas rozwiązywania problemów testów interfejsu użytkownika. Moduł zbierający dane wideo jest dostępna w **programu Visual Studio 2017 wersji 15,5 cala** i wyższych.
+Moduł zbierający dane wideo przechwytuje rejestrowania ekranu, gdy testy są uruchamiane. Rejestracji jest przydatne podczas rozwiązywania problemów testów interfejsu użytkownika. Moduł zbierający dane wideo jest dostępna w **programu Visual Studio 2017 wersji 15,5 cala** i nowszych.
 
 Aby dostosować każdy inny rodzaj adaptera danych diagnostycznych, należy użyć pliku ustawień testu. Aby uzyskać więcej informacji, zobacz [Określanie ustawień testu testów programu Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
 

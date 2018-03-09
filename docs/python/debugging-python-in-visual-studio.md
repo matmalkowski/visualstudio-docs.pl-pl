@@ -2,7 +2,7 @@
 title: "Debugowanie kodu języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Wskazówki dotyczące funkcji debugowania w programie Visual Studio specjalnie z myślą o kod języka Python, w tym ustawianie punktów przerwania, wykonywanie krok po kroku, sprawdzania wartości, patrzeć wyjątków i debugowanie w oknie interaktywnym."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
 Program Visual Studio oferuje kompleksowe środowisko debugowania dla języka Python, dołączanie do uruchomionego procesu, w tym obliczenia wyrażenia w czujki i bezpośredniego systemu windows, sprawdzania zmiennych lokalnych, punkty przerwania, kroku instrukcje w/out/w, ustaw dalej Instrukcja i inne.
 
-Zobacz też poniższe tematy debugowania specyficzne dla scenariusza:
+Zobacz także następujące artykuły debugowania specyficzne dla scenariusza:
 
 - [Debugowanie zdalne systemu Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Zdalne debugowanie platformy Azure](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Zobacz też poniższe tematy debugowania specyficzne dla scenariusza:
 
 Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, krokowe wykonywanie kodu, sprawdzania wartości i obsługa wyjątków, zgodnie z opisem w poniższych sekcjach. Aby uzyskać szczegółowe informacje o debugerze programu Visual Studio, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-Rozpoczyna się od sesji debugowania **Debuguj > Rozpocznij debugowanie** polecenia, **Start** przycisku paska narzędzi lub klawisz F5. Te akcje Uruchom plik uruchomienia projektu (pokazano pogrubienia w Eksploratorze rozwiązań) z projektu aktywnego środowiska i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone we właściwościach projektu (zobacz [debugowania projektu opcje](#project-debugging-options). Jeśli jakiegoś powodu nie ma pliku uruchamiania Ustaw, jednak okno danych wyjściowych Python krótko pojawia się i znika. W takim przypadku kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik uruchamiania**.
+Rozpoczyna się od sesji debugowania **Debuguj > Rozpocznij debugowanie** polecenia, **Start** przycisku paska narzędzi lub klawisz F5. Te akcje Uruchom plik uruchomienia projektu (pokazano pogrubienia w Eksploratorze rozwiązań) z projektu aktywnego środowiska i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone we właściwościach projektu (zobacz [debugowania projektu opcje](#project-debugging-options). **Visual Studio 2017 wersji 15,6** i później ostrzega użytkownika, jeśli nie masz pliku uruchamiania Ustaw; wcześniejszych wersji może otworzyć okno danych wyjściowych z interpreter języka Python uruchomiona, lub w oknie danych wyjściowych krótko pojawia się i znika. W każdym przypadku, kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik uruchamiania**.
 
 > [!Note]
 > Debuger zawsze rozpoczyna się od aktywnego środowiska Python dla projektu. Zmian w środowisku, aby różne aktywne jeden zgodnie z opisem na [wybranie środowisku Python dla projektu](selecting-a-python-environment-for-a-project.md).
@@ -131,7 +131,7 @@ W tym momencie możesz sprawdzić stan programu, w tym stosu wywołań. Jednak p
 
 Pole wyboru dla każdej kontrolki wyjątku czy debugera *zawsze* dzieli, gdy jest on uruchamiany. Zaznacz to pole wyboru, jeśli chcesz podzielić częściej dla określonego wyjątku.
 
-Domyślnie większość wyjątki Przerwij, gdy program obsługi wyjątku nie można znaleźć w kodzie źródłowym. Aby zmienić to zachowanie, kliknij prawym przyciskiem myszy każdy wyjątek i zaznaczenie lub usunięcie zaznaczenia **kontynuować po nieobsługiwany w kodzie użytkownika**. Wyczyść to pole, jeśli chcesz podzielić rzadziej dla wyjątku.
+Domyślnie większość wyjątki Przerwij, gdy nie można odnaleźć programu obsługi wyjątków w kodzie źródłowym. Aby zmienić to zachowanie, kliknij prawym przyciskiem myszy każdy wyjątek i zaznaczenie lub usunięcie zaznaczenia **kontynuować po nieobsługiwany w kodzie użytkownika**. Wyczyść to pole, jeśli chcesz podzielić rzadziej dla wyjątku.
 
 Aby skonfigurować wyjątek, który nie ma na tej liście, kliknij przycisk **Dodaj** przycisk, aby dodać go. Nazwa musi odpowiadać Pełna nazwa wyjątku.
 
@@ -160,13 +160,13 @@ Domyślnie debuger programu rozpoczyna się od standardowego uruchamiania Python
 | Ścieżka interpretera | Zastępuje ścieżka skojarzona z bieżącym środowisku.  wartość może być przydatne w przypadku uruchamiania skryptu z niestandardowym interpreter. |
 | Zmienne środowiskowe | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci `NAME=VALUE`. Ponieważ to ustawienie jest stosowane, w górnej części istniejących zmiennych środowiskowych globalnej i po `PYTHONPATH` jest ustawiona zgodnie z ustawieniem ścieżki wyszukiwania może służyć do ręcznie przesłonić te inne zmienne. |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Natychmiastowe i interaktywne systemu windows
 
 Istnieją dwa okna interaktywnego, możesz użyć podczas sesji debugowania: okno programu Visual Studio natychmiastowego standardowe i okno interaktywne debugowania języka Python.
 
-W oknie bezpośrednim (**Debuguj > Windows > Immediate**) służy do szybkiej oceny wyrażeń języka Python i inspekcji lub przypisania zmiennych w uruchomiony program. Zobacz ogólne [oknie bezpośrednim](../ide/reference/immediate-window.md) tematu, aby uzyskać szczegółowe informacje.
+W oknie bezpośrednim (**Debuguj > Windows > Immediate**) służy do szybkiej oceny wyrażeń języka Python i inspekcji lub przypisania zmiennych w uruchomiony program. Zobacz ogólne [oknie bezpośrednim](../ide/reference/immediate-window.md) artykułu, aby uzyskać szczegółowe informacje.
 
 Okno interaktywne debugowania języka Python (**debugowania > Windows > Python debugowania interakcyjne**) jest bardziej zaawansowane funkcje, jak ułatwia pełnego [interaktywny REPL](python-interactive-repl-in-visual-studio.md) wystąpić dostępne podczas debugowania, w tym pisania i wykonywanie kodu. Automatycznie łączy się żaden proces uruchomiony w debugerze przy użyciu uruchamiania Standard języka Python (w tym procesy dołączonym za pośrednictwem **debugowania > dołączyć do procesu**). Nie, jednak jest dostępne w przypadku korzystania z debugowanie w trybie mieszanym C/C++.
 

@@ -2,7 +2,7 @@
 title: "Odwołanie okno środowiska Python — Visual Studio | Dokumentacja firmy Microsoft"
 description: "Szczegółowe informacje na każdej z kart, które są wyświetlane w oknie środowiska Python w programie Visual Studio."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odwołanie karty okno środowiska Python
 
@@ -55,7 +55,7 @@ Interakcyjne systemu windows są wykorzystywane w zwykłych przepływu pracy, pr
 
 Skrypty uruchamiania zawierają kod, który okno interaktywne ładuje i uruchamia się automatycznie, w tym Importy, definicje funkcji i dosłownie inaczej. Te skrypty są przywoływane na dwa sposoby:
 
-1. Po zainstalowaniu środowiska Visual Studio tworzy folder `Documents\Visual Studio 2017\Python Scripts\<environment>` gdzie &lt;środowiska & gt "jest zgodna z nazwą środowiska. Można łatwo przejść do folderu określonego środowiska o **Eksploruj interaktywne skrypty** polecenia. Po uruchomieniu okno interaktywne dla tego środowiska ładuje i działa niezależnie od `.py` znajdują się pliki w tym miejscu w kolejności alfabetycznej.
+1. Po zainstalowaniu środowiska Visual Studio tworzy folder `Documents\Visual Studio 2017\Python Scripts\<environment>` gdzie &lt;środowiska&gt; jest zgodna z nazwą środowiska. Można łatwo przejść do folderu określonego środowiska o **Eksploruj interaktywne skrypty** polecenia. Po uruchomieniu okno interaktywne dla tego środowiska ładuje i działa niezależnie od `.py` znajdują się pliki w tym miejscu w kolejności alfabetycznej.
 
 1. **Skryptów** kontroli w **Narzędzia > Opcje > Narzędzia Python Tools > interakcyjne Windows** kartę (zobacz [Opcje interakcyjne systemu windows](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) należy podać dodatkowe folder służący do uruchamiania skryptów, które są załadowane, a następnie uruchomienie we wszystkich środowiskach. Jednak ta funkcja nie działa w chwili obecnej.
 
@@ -80,9 +80,17 @@ Jeśli jest dostępna, zawiera szczegółowe informacje, zgodnie z opisem w poni
 
 *Również z etykietą "pip" we wcześniejszych wersjach.*
 
-Zarządza pakiety zainstalowane w środowisku, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności). Wyszukiwanie filtry obecnie zainstalowanych pakietów i [PyPI](https://pypi.python.org). Można również bezpośrednio wprowadzić dowolne `pip install` polecenie w polu wyszukiwania, takie jak tym flagi `--user` lub `--no-deps`.
+Zarządza pakiety zainstalowane w środowisku, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności).
 
-![Karta pakietów środowiska Python](media/environments-pip-tab.png)
+Pakiety, które są już zainstalowane są wyświetlane z formantami, aby zaktualizować (Strzałka w górę) i Odinstaluj (X koło) pakietu:
+
+![Karta pakietów środowiska Python](media/environments-pip-tab-controls.png)
+
+Wprowadzenie listę zainstalowanych pakietów, jak również pakiety, które mogą być instalowane z PyPI filtry terminu wyszukiwania.
+
+![Karta pakietów środowiska Python z wyszukiwania na "num"](media/environments-pip-tab.png)
+
+Można również bezpośrednio wprowadzić dowolne `pip install` polecenie w polu wyszukiwania, takie jak tym flagi `--user` lub `--no-deps`.
 
 Instalowanie pakietu tworzy oddzielne podfoldery w środowisku `Lib` folder w systemie plików. Na przykład, jeśli masz zainstalowany 3,6 Python w `c:\Python36`, pakiety są instalowane w `c:\Python36\Lib`; Jeśli masz zainstalowany w Anaconda3 `c:\Program Files\Anaconda3` , a następnie pakiety są instalowane w `c:\Program Files\Anaconda3\Lib`.
 
@@ -102,7 +110,9 @@ Wskazuje bieżący stan bazy danych uzupełniania IntelliSense:
 
 ![Karta IntelliSense środowiska Python](media/environments-intellisense-tab.png)
 
-Baza danych zawiera metadanych dla biblioteki wszystkie środowiska i przyspiesza IntelliSense i zmniejsza zużycie pamięci. Gdy program Visual Studio wykryje nowego środowiska (lub dodaj je), automatyczne rozpoczęcie do skompilowania bazy danych, analizując biblioteki plików źródłowych. Ten proces może potrwać od minutę na godzinę lub dłużej w zależności od tego, co jest zainstalowany. (Anaconda, na przykład zawiera wiele bibliotek i dopiero po pewnym czasie, aby skompilować bazy danych) Po wykonaniu tych czynności możesz uzyskać szczegółowe IntelliSense i nie trzeba ponownie Odśwież bazy danych (z **Odśwież DB** przycisk) aż do zainstalowania więcej bibliotek.
+W **programu Visual Studio 2017 wersji 15,5 cala** i wcześniej, IntelliSense zakończeń są zależne od bazy danych, która jest została skompilowana dla tej biblioteki. Tworzenie bazy danych jest realizowane w tle podczas biblioteki jest zainstalowany, ale może zająć trochę czasu i mogą być niekompletne podczas uruchamiania pisanie kodu. **Visual Studio 2017 wersji 15,6** i później używa szybszej metody, aby zapewnić zakończeń, które nie są zależne od bazy danych, chyba że zostaną ją włączyć.
+
+Gdy program Visual Studio wykryje nowego środowiska (lub dodaj je), automatyczne rozpoczęcie do skompilowania bazy danych, analizując biblioteki plików źródłowych. Ten proces może potrwać od minutę na godzinę lub dłużej w zależności od tego, co jest zainstalowany. (Anaconda, na przykład zawiera wiele bibliotek i dopiero po pewnym czasie, aby skompilować bazy danych) Po wykonaniu tych czynności możesz uzyskać szczegółowe IntelliSense i nie trzeba ponownie Odśwież bazy danych (z **Odśwież DB** przycisk) aż do zainstalowania więcej bibliotek.
 
 Biblioteki, dla których nie zostały skompilowane danych są oznaczone ikoną z **!**; Jeśli środowisko bazy danych nie jest zakończone, **!** jest także wyświetlany obok niej na liście głównego środowiska.
 
@@ -110,5 +120,5 @@ Biblioteki, dla których nie zostały skompilowane danych są oznaczone ikoną z
 
 - [Zarządzanie środowiska Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
-- [Używanie pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md) 
+- [Używanie pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)

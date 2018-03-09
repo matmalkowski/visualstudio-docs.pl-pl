@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Konfigurowanie repozytorium Git
 
-Git to system kontroli wersji rozproszonej, który umożliwia zespołom jednocześnie pracować na tym samym dokumentów. Oznacza to, że istnieje jeden serwer, który zawiera wszystkie pliki, ale zawsze, gdy repozytorium jest wyewidencjonowany z tego źródła centralnej, całe repozytorium został sklonowany lokalnie na komputerze.
+Git to system kontroli wersji rozproszonej, który umożliwia zespołom jednocześnie pracować na tym samym dokumentów. Oznacza to, istnieje pojedynczy serwer, który zawiera wszystkie pliki, ale zawsze, gdy repozytorium jest wyewidencjonowany z tego źródła centralnej, całe repozytorium został sklonowany lokalnie na komputerze.
 
-Istnieje wiele hostów zdalnych, które umożliwiają pracę z usługą Git kontroli wersji, ale najczęściej jest GitHub. W poniższym przykładzie użyto hosta GitHub, ale można użyć dowolnego hosta Git kontroli wersji w programie Visual Studio dla komputerów Mac.
+Istnieje wiele hostów zdalnych, które umożliwiają pracę z usługą Git kontroli wersji, jednak najczęściej hosta jest GitHub. W poniższym przykładzie użyto hosta GitHub, ale można użyć dowolnego hosta Git kontroli wersji w programie Visual Studio dla komputerów Mac.
 
-Jeśli chcesz użyć GitHub, upewnij się, że masz konto utworzone i skonfigurowane przed wykonaniem poniższych kroków. 
+Jeśli chcesz używać usługi GitHub, upewnij się, że masz konto utworzone i skonfigurowane przed wykonaniem kroków w tym artykule. 
 
 ## <a name="creating-a-remote-repo-on-github"></a>Tworzenie repozytorium zdalnego w serwisie GitHub
 
@@ -34,20 +34,22 @@ Aby skonfigurować repozytorium Git, wykonaj następujące czynności:
 
     ![Szczegóły zestawu z repozytorium git](media/version-control-git2.png)
 
-3. Umieść dalej podać opcję Wyświetl i skopiuj adres HTTPS lub SSH do repozytorium, który właśnie utworzony:
+3. Następnej strony daje możliwość wyświetlenia i skopiuj adres HTTPS lub SSH do repozytorium, które zostały utworzone:
 
-    ![Wyświetlanie i kopiowanie adresu](media/version-control-git3.png) konieczne będzie adres HTTPS do punktu Visual Studio for Mac tym repozytorium.
+    ![Wyświetlanie i kopiowanie adresu](media/version-control-git3.png)
+
+  Adres HTTPS do punktu Visual Studio dla komputerów Mac należy do tego repozytorium.
 
 
 ## <a name="publishing-an-existing-project"></a>Publikowanie istniejącego projektu
 
 4. Wróć do Otwórz projekt w Visual Studio dla komputerów Mac. 
 
-5. Na pasku Menu wybierz **kontrolą wersji > Publikuj w kontroli wersji...** :
+5. Na pasku Menu wybierz **kontrolą wersji > Publikuj w kontroli wersji...** Aby wyświetlić **wybierz repozytorium** okna dialogowego:
 
     ![Uruchom wyewidencjonowania w programie Visual Studio dla komputerów Mac](media/version-control-git4-sml.png)
 
-6. Spowoduje to wyświetlenie **wybierz repozytorium** okna dialogowego. Wybierz **zarejestrowany repozytoria** kartę i naciśnij klawisz **Dodaj** przycisk:
+6. Wybierz **zarejestrowany repozytoria** kartę i naciśnij klawisz **Dodaj** przycisk:
 
     ![](media/version-control-git5.png)
 
@@ -57,19 +59,19 @@ Aby skonfigurować repozytorium Git, wykonaj następujące czynności:
 
     Należy pamiętać, że istnieje również możliwość użycia SSH do nawiązania połączenia Git.
 
-8. Próba publikowanie aplikacji w Git, wybierz właśnie utworzony repozytorium i upewnij się, że zarówno **nazwy modułu** i **komunikat** pól tekstowych zostały zakończone:
+8. Próba do publikowania aplikacji Git, wybierz repozytorium, a następnie upewnij się, że zarówno **nazwy modułu** i **komunikat** pól tekstowych zostały zakończone:
 
     ![Próba opublikować projektu git](media/version-control-git7.png)
 
 9. Kliknij przycisk **OK**, a następnie **publikowania** z okna dialogowego alertu.
 
-10. Jeśli nie zostały już wprowadzone poświadczenia Git w programie Visual Studio dla Preferencje systemu Mac, wprowadź je teraz. Najpierw należy utworzyć Token dostępu, który jest używany zamiast hasła. Postępuj zgodnie z instrukcjami Git [Token dostępu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentacji, aby to zrobić.
+10. Jeśli nie zostały już wprowadzone poświadczenia Git w programie Visual Studio dla Preferencje systemu Mac, wprowadź je teraz. Najpierw należy utworzyć Token dostępu, który jest używany zamiast hasła. Jeśli nie utworzono token dostępu, postępuj zgodnie z instrukcjami Git [Token dostępu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentacji.
 
 11. Wprowadź nazwę użytkownika i osobisty Token dostępu i naciśnij klawisz **OK**:
 
     ![Wprowadź nazwę użytkownika i hasło dla git](media/version-control-git9-sml.png)
 
-12. Po kilku sekundach rozwiązania powinny być publikowane z jego zatwierdzeniem początkowej. To potwierdzić, przeglądając element menu kontroli wersji, który teraz powinny zostać wypełnione wiele opcji: 
+12. Po kilku sekundach rozwiązania powinny być publikowane z jego zatwierdzeniem początkowej. Upewnij się, że została opublikowana przez element menu kontroli wersji, który teraz powinny zostać wypełnione wiele opcji przeglądania: 
 
     ![Menu kontroli wersji](media/version-control-git10.png)
 

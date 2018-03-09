@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>Formatowanie kodu języka Python
 
@@ -30,9 +30,13 @@ Visual Studio umożliwia sformatowanie szybki kod do dopasowania wstępnie skonf
 - Aby sformatować zaznaczenia: Wybierz **Edytuj > Zaawansowane > Wybieranie formatu** lub naciśnij klawisze Ctrl + E, F.
 - Aby sformatować cały plik: Wybierz **Edytuj > Zaawansowane > dokumentu w formacie** lub naciśnij klawisze Ctrl + E, D.
 
-Opcje są ustawiane za pomocą **Narzędzia > Opcje > Edytor tekstu > Python > Formatowanie** i jego zagnieżdżonych karty i domyślnie są ustawione odpowiadające podzbiorem [8 program ten przewodnik po stylu](http://www.python.org/dev/peps/pep-0008/). **Ogólne** kartę Określa, kiedy stosowane jest formatowanie; trzy karty ustawienia zostały opisane w tym temacie.
+Opcje są ustawiane za pomocą **Narzędzia > Opcje > Edytor tekstu > Python > Formatowanie** i jego zagnieżdżonych karty. Musisz wybrać **Pokaż wszystkie ustawienia** opcje te są wyświetlane:
 
-[Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) dodaje również przydatne [wypełnienia akapitu komentarz](#fill-comment-paragraph-command) polecenie **Edytuj > Zaawansowane** menu zgodnie z opisem poniżej.
+![Opcje programu Visual Studio formatowania języka Python](media/options-editor-formatting.png)
+
+Opcje formatowania domyślnie są ustawione na zgodne z rozszerzeniem [8 program ten przewodnik po stylu](http://www.python.org/dev/peps/pep-0008/). **Ogólne** kartę Określa, kiedy stosowane jest formatowanie; ustawienia trzy karty są opisane w tym artykule.
+
+[Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) dodaje również przydatne [wypełnienia akapitu komentarz](#fill-comment-paragraph-command) polecenie **Edytuj > Zaawansowane** menu zgodnie z opisem w dalszej części artykułu.
 
 ## <a name="spacing"></a>Odstępy
 

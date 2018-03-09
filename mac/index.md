@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Wprowadzenie do programu Visual Studio dla komputerów Mac
 
-Visual Studio for Mac jest nowoczesnych, rozbudowanych IDE z wiele funkcji umożliwiających tworzenie mobile, pulpitu i aplikacji sieci web. Obsługuje programowanie z następujących czynności:
+Visual Studio for Mac jest nowoczesnych, rozbudowanych IDE z wiele funkcji umożliwiających tworzenie mobile, pulpitu i aplikacji sieci web. Obsługuje on następujące programowanie:
 
 * Telefon komórkowy z platformą .NET: Android, iOS, systemu tvOS, watchOS
 * Aplikacje komputerowe Mac
@@ -22,9 +22,9 @@ Visual Studio for Mac jest nowoczesnych, rozbudowanych IDE z wiele funkcji umoż
 * Aplikacje ASP.NET Core sieci Web
 * Gry środowiska Unity i platform
 
-Go zawiera zaawansowany edytor, debugowanie, natywnego platformy integracji z systemem iOS, Mac i Android i zintegrowanej kontroli źródła tylko kilka z wielu funkcji.
+Obejmuje funkcje, takie jak Zaawansowany edytor debugowania natywnego platformy integracji z systemem iOS, Mac i Android, a zintegrowanej kontroli źródła.
 
-W tym temacie ankiety różnych części programu Visual Studio dla komputerów Mac, podając informacje o niektórych funkcji, które ułatwiają zaawansowane narzędzie do tworzenia aplikacji dla wielu platform.
+W tym artykule ankiety różnych części programu Visual Studio dla komputerów Mac, podając informacje o niektórych funkcji, które ułatwiają zaawansowane narzędzie do tworzenia aplikacji dla wielu platform.
 
 ## <a name="installation"></a>Instalacja
 
@@ -36,7 +36,7 @@ Domyślnie programu Visual Studio for Mac obsługuje programowanie w języku C# 
 
 ### <a name="c"></a>C#
 
-C# jest najczęściej używane język do tworzenia aplikacji dla wielu platform w programie Visual Studio dla komputerów Mac. To zapewnia pełną obsługę wszystkich funkcji języka C# 7.
+C# jest najczęściej używane język do tworzenia aplikacji dla wielu platform w programie Visual Studio dla komputerów Mac. IDE ma pełną obsługę wszystkich funkcji języka C# 7.
 
 ### <a name="f"></a>F#
 
@@ -71,11 +71,11 @@ Aby rozpocząć, zapoznaj się aplikacji mobilnych [laboratorium praktycznego](h
 
 Visual Studio ma własną zintegrowane menedżera zestawu SDK systemu Android.
 
-W przypadku aplikacji systemu Android, programu Visual Studio for Mac obejmuje własną designer, który współpracuje z systemem Android `.axml` plików do wizualnego tworzenia interfejsów użytkownika. Visual Studio for Mac Otwórz tych plików w jego projektanta dla systemu Android, jak pokazano poniżej:
+W przypadku aplikacji systemu Android, programu Visual Studio for Mac obejmuje własną designer, który współpracuje z systemem Android `.axml` plików do wizualnego tworzenia interfejsów użytkownika. Visual Studio for Mac Otwórz tych plików w jego projektanta dla systemu Android, jak pokazano na poniższej ilustracji:
 
 ![](media/intro-image31.png)
 
-Aby uzyskać więcej informacji o Android Zobacz projektanta [Omówienie projektanta](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) dokumentu.
+Aby uzyskać więcej informacji w Projektancie systemu Android, zobacz [Omówienie projektanta](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) dokumentu.
 
 ### <a name="ios"></a>iOS
 
@@ -83,7 +83,7 @@ IOS Projektant jest w pełni zintegrowana z programem Visual Studio dla komputer
 
 ![](media/intro-image30.png)
 
-Aby uzyskać więcej informacji na temat używania systemu iOS projektanta dotyczą [projektanta](https://developer.xamarin.com/guides/ios/user_interface/designer) dokumentów.
+Aby uzyskać więcej informacji na temat używania projektanta dla systemu iOS, zobacz [projektanta](https://developer.xamarin.com/guides/ios/user_interface/designer) dokumentów.
 
 ### <a name="mac"></a>Mac
 
@@ -112,14 +112,14 @@ Inspektor Xamarin zapewnia interaktywne C# konsolę narzędzia do użytkowników
 
 ![](media/intro-inspector.png)
 
-Składa się z aplikacja autonomiczna, która udostępnia bogate C# konsolę, która może kierować różnych platform programowania (Android, iOS, Mac i z systemem Windows) oraz integrowanie debugowania przepływ pracy programu IDE.
+Składa się z aplikacja autonomiczna, która udostępnia bogate C# konsolę, która może kierować różnych programowania platform (Android, iOS, Mac i z systemem Windows), a także integrację z debugowania przepływ pracy programu IDE.
 
-Więcej informacji można znaleźć w [inspektora Xamarin](https://developer.xamarin.com/guides/cross-platform/inspector/) przewodnik.
+Aby uzyskać więcej informacji, zobacz [inspektora Xamarin](https://developer.xamarin.com/guides/cross-platform/inspector/) przewodnik.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* **Duży obraz** — Aby uzyskać przegląd wielu najważniejszych funkcji w programie Visual Studio dla komputerów Mac, zobacz Visual Studio dla komputerów Mac [samouczek IDE](~/ide-tour.md).
-* **Instalator** — Aby dowiedzieć się więcej o tym, jak pobrać i zainstalować program Visual Studio, zobacz [instalacji](~/installation.md) przewodnik.
+* **Pobierz samouczek** — Aby uzyskać przegląd wielu najważniejszych funkcji w programie Visual Studio dla komputerów Mac, zobacz Visual Studio dla komputerów Mac [samouczek IDE](~/ide-tour.md).
+* **Konfigurowanie** — Aby dowiedzieć się więcej o tym, jak pobrać i zainstalować program Visual Studio, zobacz [instalacji](~/installation.md) przewodnik.
 * **Samouczki platformy Xamarin** — Aby dowiedzieć się więcej na temat opracowywania kodu za pomocą platformy Xamarin, przejdź do Xamarin [Centrum deweloperów](https://developer.xamarin.com).
 * **Filmy wideo** — Aby dowiedzieć się więcej o innych funkcjach i aspektów programu Visual Studio dla komputerów Mac, zapoznaj się wideo na [Xamarin University](https://university.xamarin.com) witryny sieci Web.
 * **Laboratoria praktyczne** — aby rozpocząć pracę z różnych obciążeń uwzględnione w programie Visual Studio dla komputerów Mac, zapoznaj się z [praktyczne labs](https://github.com/Microsoft/vs4mac-labs).

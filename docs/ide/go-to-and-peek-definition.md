@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typu i element członkowski
 
@@ -70,7 +71,7 @@ Na przykład, jeśli uruchomisz **przejdź do definicji** polecenia dla <xref:Sy
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Wyświetlanie definicji źródła decompiled zamiast metadanych (C#)
 
-Nowość w **programu Visual Studio 2017 wersji 15,6 preview 2**, można ustawić opcję podczas wyświetlania definicji C# typu lub elementu członkowskiego, zobacz kod źródłowy decompiled kto ma kod źródłowy jest niedostępny. Aby włączyć tę funkcję, należy wybrać **narzędzia** > **opcje** na pasku menu. Następnie rozwiń **Edytor tekstu** > **C#** > **zaawansowane**i wybierz **umożliwiają nawigowanie do źródeł decompiled**.
+Nowość w **programu Visual Studio 2017 wersji 15,6**, można ustawić opcję podczas wyświetlania definicji C# typu lub elementu członkowskiego, zobacz kod źródłowy decompiled kto ma kod źródłowy jest niedostępny. Aby włączyć tę funkcję, należy wybrać **narzędzia** > **opcje** na pasku menu. Następnie rozwiń **Edytor tekstu** > **C#** > **zaawansowane**i wybierz **umożliwiają nawigowanie do źródeł decompiled**.
 
 ![Wyświetlanie definicji decompiled](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ Nowość w **programu Visual Studio 2017 wersji 15,6 preview 2**, można ustawi�
 
 ## <a name="see-also"></a>Zobacz także
 
-[Nawigowanie po kodzie](../ide/navigating-code.md)  
-[Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[Nawigowanie po kodzie](../ide/navigating-code.md)
+[porady: Podgląd i Edycja kodu za pomocą definicji wglądu (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

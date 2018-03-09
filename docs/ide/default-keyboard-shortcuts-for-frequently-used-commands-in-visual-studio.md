@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
 
@@ -66,7 +68,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |Edit.Delete|Delete [Globalny, Team Explorer]<br /><br /> lub Shift+Delete [Diagram sekwencji, Diagram aktywności UML, Diagram warstwy]<br /><br /> lub Ctrl+Delete [Diagram klas]|  
 |Edit.Find|Ctrl+F [Globalny]|  
 |Edit.FindAllReferences|Shift+F12 [Globalny]|  
-drzewo informacyjne katalogu. FindinFiles|Ctrl+Shift+F [Globalny]|  
+|Edit.FindinFiles|Ctrl+Shift+F [Globalny]|  
 |Edit.FindNext|F3 [globalne]|  
 |Edit.FindNextSelected|Ctrl+F3 [Globalny]|  
 |Edit.FormatDocument|Ctrl+K, Ctrl+D [Edytor tekstu]|  
@@ -82,7 +84,7 @@ drzewo informacyjne katalogu. FindinFiles|Ctrl+Shift+F [Globalny]|
 |Edit.LineDownExtendColumn|Shift+Alt+Strzałka w dół [Edytor tekstu]|  
 |Edit.LineOpenAbove|Ctrl+Enter [Edytor tekstu]|  
 |Edit.ListMembers|Ctrl+J [Edytor tekstu, Workflow Designer]<br /><br /> lub Ctrl+K, Ctrl+L [Workflow Designer]<br /><br /> lub Ctrl+K, L [Workflow Designer]|  
-drzewo informacyjne katalogu. Typu NavigateTo|Ctrl+, [Globalny]|  
+|Edit.NavigateTo|Ctrl+, [Globalny]|  
 |Edit.OpenFile|Ctrl+Shift+G [Globalny]|  
 |Edit.OvertypeMode|Insert [Edytor tekstu]|  
 |Edit.ParameterInfo|Ctrl+Shift+Spacja [Edytor tekstu, Workflow Designer]<br /><br /> lub Ctrl+K, Ctrl+P [Workflow Designer]<br /><br /> lub Ctrl+K, P [Workflow Designer]|  
@@ -93,7 +95,7 @@ drzewo informacyjne katalogu. Typu NavigateTo|Ctrl+, [Globalny]|
 |Edit.SelectAll|Ctrl+A [Globalny]|  
 |Edit.SelectCurrentWord|Ctrl+W [Edytor tekstu]|  
 |Edit.SelectionCancel|Esc [Edytor tekstu, Projektant raportów, Projektant ustawień, Windows Forms Designer, Edytor zasobów zarządzanych]|  
-drzewo informacyjne katalogu. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|  
+|Edit.SurroundWith|Ctrl+K, Ctrl+S [Globalny]|  
 |Edit.TabLeft|Shift+Tab [Edytor tekstu, Projektant raportów, Windows Forms Editor|  
 |Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L [Edytor tekstu]|  
 |Edit.ToggleBookmark|Ctrl+K, Ctrl+K [Edytor tekstu]|  
@@ -145,7 +147,7 @@ drzewo informacyjne katalogu. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |--------------|-------------------------------------|  
 |View.ClassView|Ctrl+Shift+C [Globalny]|  
 |View.EditLabel|F2 [globalne]|  
-|View.ErrorList|CTRL +\\, Ctrl + E [globalne]<br /><br /> lub Ctrl +\\, E [globalne]|  
+|View.ErrorList|Ctrl+\\, Ctrl+E [Global]<br /><br /> lub Ctrl +\\, E [globalne]|  
 |View.NavigateBackward|Ctrl+- [Globalny]|  
 |View.NavigateForward|Ctrl+Shift+- [Globalny]|  
 |View.ObjectBrowser|Ctrl+Alt+J [Globalny]|  
@@ -155,7 +157,7 @@ drzewo informacyjne katalogu. SurroundWith|Ctrl+K, Ctrl+S [Globalny]|
 |View.ServerExplorer|Ctrl+Alt+S [Globalny]|  
 |View.ShowSmartTag|Ctrl+. [Globalny]<br /><br /> lub Shift+Alt+F10 [Globalny, HTML Editor Design View]|  
 |View.SolutionExplorer|Ctrl+Alt+L [Globalny]|  
-widoku. TfsTeamExplorer|CTRL +\\, Ctrl + M [globalne]|  
+|View.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|  
 |View.Toolbox|Ctrl+Alt+X [Globalny]|  
 |View.ViewCode|Enter [Diagram klas]<br /><br /> lub F7 [Projektant ustawień]|  
 |View.ViewDesigner|Shift+F7 [HTML Editor Source View]|  

@@ -1,26 +1,25 @@
 ---
-title: 'Porady: wersja docelowa platformy .NET Framework | Dokumentacja firmy Microsoft'
+title: Docelowa wersja programu .NET Framework, w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: 
-ms.date: 12/08/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- targeting .NET Framework version [Visual Studio]
-- versions [Visual Studio], targeting .NET Framework version
+- targeting .NET Framework [Visual Studio]
+- .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: da2e236c39cce72670a47212aedabb87afa4d217
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Porady: wersja docelowa platformy .NET Framework
 
@@ -29,42 +28,42 @@ W tym dokumencie opisano, jak wersja docelowa platformy .NET Framework podczas t
 > [!IMPORTANT]
 > Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz [porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="targeting-a-version-when-you-create-a-project"></a>Ukierunkowywanie tworzonego projektu na konkretną wersję
+## <a name="to-target-a-version-when-you-create-a-project"></a>Aby ukierunkować tworzony projekt na konkretną wersję
 
-Podczas tworzenia projektu, docelowa wersja .NET Framework określa szablony, których można użyć.
+Podczas tworzenia projektu dostępne wersje programu .NET Framework są zależne od które wersje są zainstalowane, a następnie wybrany szablon w **nowy projekt** okno dialogowe.
 
-### <a name="to-target-a-version-when-you-create-a-project"></a>Aby ukierunkować tworzony projekt na konkretną wersję
+1. Na pasku menu wybierz **pliku** > **nowy** > **projektu...** .
 
-1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.
+1. Na liście zainstalowanych szablonów należy wybrać typ projektu, który chcesz utworzyć, a następnie wprowadź nazwę dla projektu.
 
-2.  Na liście w górnej części **nowy projekt** oknie dialogowym Wybierz wersję systemu .NET Framework, które mają projektu docelowego.
+1. Z **Framework** listy rozwijanej w dolnej części **nowy projekt** oknie dialogowym Wybierz wersję systemu .NET Framework, które mają projektu docelowego.
 
-3.  Na liście zainstalowanych szablonów, wybierz typ projektu, który chcesz utworzyć, nazwij projekt i wybierz **OK** przycisku.
+    Lista platform pokazuje tylko te wersje, które mają zastosowanie do wybranego szablonu. Niektóre typy projektu, takich jak .NET Core, nie wymagają .NET Framework. W takich przypadkach **Framework** listy rozwijanej jest ukryty.
 
-    Lista szablonów pokazuje tylko projekty, które są obsługiwane przez wybraną przez użytkownika wersję .NET Framework.
+    ![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](media/vside-newproject-framework.png)
 
-## <a name="changing-the-target-version"></a>Zmiana wersji docelowej
+1. Wybierz **OK** przycisku.
+
+## <a name="to-change-the-targeted-version"></a>Aby zmienić wersję docelową
 
 Docelowa wersja programu .NET Framework w projektach Visual Basic, C# lub Visual F # można zmienić, korzystając z następującej procedury.
 
 Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz [porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-### <a name="to-change-the-targeted-version"></a>Aby zmienić wersję docelową
-
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz zmienić, a następnie wybierz pozycję **właściwości**.
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz zmienić, a następnie wybierz pozycję **właściwości**.
 
     ![Właściwości Eksploratora rozwiązania programu Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-2. W lewej kolumnie okna właściwości, wybierz **aplikacji** kartę.
+1. W lewej kolumnie okna właściwości, wybierz **aplikacji** kartę.
 
     ![Visual Studio aplikacji właściwości aplikacji kartę](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
     > [!NOTE]
     > Po utworzeniu aplikacji platformy uniwersalnej systemu Windows, nie można zmienić docelowej wersji systemu Windows lub programu .NET Framework.
 
-3.  W **platformy docelowej** listy, wybierz wersję, która ma.
+1. W **platformy docelowej** listy, wybierz wersję, która ma.
 
-4.  W oknie dialogowym weryfikacji wybierz **tak** przycisku.
+1. W oknie dialogowym weryfikacji wybierz **tak** przycisku.
 
     Projekt zostaje wyładowany Gdy się ponownie ładuje, jest ukierunkowany na wybraną wersję .NET Framework.
 

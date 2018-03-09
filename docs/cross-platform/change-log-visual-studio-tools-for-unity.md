@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Dziennik zmian (Visual Studio Tools dla Unity)
 Visual Studio Tools for Unity dziennika zmian.
+
+## <a name="3604"></a>3.6.0.4
+ Wydanych 2018-03-05
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Wykrywanie wersji Mono stałej.
+
+-   **Integracja:**
+
+    -   Stałe problemy dotyczące synchronizacji z 2018.1 i wtyczki aktywacji.
+
+## <a name="3603"></a>3.6.0.3
+ Wydanych 2018-02-23
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Generowanie projektu:**
+
+    -   Dodano obsługę dla platformy .net Standard.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Stały wykrywania framework docelowej platformy Unity.
+
+-   **Debuger:**
+
+    -   Stałe podziału na wyjątki, które są generowane poza usercode.
+
+## <a name="3602"></a>3.6.0.2
+ Wydanych 2018-02-07
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Zaktualizuj powierzchni interfejsu API UnityMessage dla 2017.3.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Ponownie ładować tylko projekty na zewnętrzne zmiany (po zastosowaniu ograniczania).
+ 
+## <a name="3601"></a>3.6.0.1
+ Wydanych 2018-01-24
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Stałej pdb automatycznego do konwersji symbolu debugowania pliku mdb.
+    
+    -   Wywołanie pośrednie stałym EditorPrefs.GetBool wpływające na Inspektor podczas próby zmiany rozmiaru tablicy.
+ 
+## <a name="3600"></a>3.6.0.0
+ Wydanych 2018-01-10
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Generowanie projektu:**
+
+    -   Dodano obsługę 2018.1 MonoIsland odwołanie modelu.
+
+-   **Ocena:**
+
+    -   Dodano obsługę $exception identyfikator.
+
+-   **Debuger:**
+
+    -   Dodano obsługę atrybutów DebuggerHidden/DebuggerStepThrough o nowe środowisko uruchomieniowe platformy Unity.
+    
+-   **Kreatorzy:**
+
+    -   Wprowadzenie "Najnowszej" wersji dla kreatorów.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Generowanie projektu:**
+
+    -   Stałe obliczeń identyfikator guid projektu dla projektów player.
+
+-   **Debuger:**
+
+    -   Stałe wyścigu podczas obsługi zdarzenia podziału.
+    
+-   **Kreatorzy:**
+
+    -   Odśwież kontekst roslyn przed wstawieniem metody.
 
 ## <a name="3503"></a>3.5.0.3
  Wydanych 2018-01-09.

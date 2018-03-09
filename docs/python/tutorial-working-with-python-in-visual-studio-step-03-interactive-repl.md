@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 757534638c9e4b2b6cecd75f62997994bf14cc0c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 
@@ -31,7 +31,7 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 
 1. Otwórz okno interaktywne, klikając prawym przyciskiem myszy projekt środowiska Python w Eksploratorze rozwiązań (na przykład "Python 3,6 (32-bitowy)" pokazano na rysunku wcześniej) i wybierając **Otwórz okno interaktywne**. Możesz również wybrać **Widok > inne okna > Windows interakcyjne Python** z poziomu menu głównego programu Visual Studio.
 
-1. Otwiera okno interaktywne poniżej edytora z zwykle `>>>` wiersza REPL dla języka Python. Często mają być okno interaktywne większe, co można zrobić, przeciągając separatora między dwoma systemu windows:
+1. Otwiera okno interaktywne poniżej edytora ze standardem `>>>` wiersza REPL dla języka Python. **Środowiska** listy rozwijanej można wybrać określonego interpreter do pracy z. Często również mają być okno interaktywne większe, co można zrobić, przeciągając separatora między dwoma systemu windows:
 
     ![Okno interaktywne Python i przeciągając zmiany rozmiaru](media/vs-getting-started-python-11-interactive1b.png)
 

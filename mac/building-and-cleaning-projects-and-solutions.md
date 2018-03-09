@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 849b52cff3fa85bcfb0b10c43a490d1a5fb40760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5f9a128c1d69683421eb2dbcb351d8a107adeee
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań
 
-Wykonaj kroki opisane w tym temacie, aby dowiedzieć się, jak utworzyć, odbudować i wyczyść rozwiązanie i projektu.
+Wykonaj kroki opisane w tym artykule, aby uzyskać informacje o kompilacji, skompiluj ponownie i wyczyść rozwiązanie i projektu.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Aby utworzyć, odbudować, lub wyczyścić całego rozwiązania
 

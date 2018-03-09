@@ -2,7 +2,7 @@
 title: "Zarządzanie projektami Python aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Objaśnienie jego przeznaczenia projekty w programie Visual Studio, pokazuje, jak utworzyć projektów i zarządzanie nimi dla kodu języka Python i opisano dostępne szablony inny projekt dla języka Python."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 
@@ -52,13 +52,15 @@ Podczas opracowywania aplikacji zazwyczaj konieczne dodanie nowych plików o ró
 Każdy projekt Python ma jeden plik przypisanej rozruchu, czcionką pogrubioną w Eksploratorze rozwiązań. Uruchamiania jest plik, który jest uruchamiany po rozpoczęciu debugowania (F5 lub **Debuguj > Rozpocznij debugowanie**) lub po uruchomieniu projektu w oknie interaktywnym (Shift + Alt + F5 lub **debugowania > wykonanie projektu w języku Python Interakcyjne**). Aby go zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik uruchamiania**.
 
 > [!Tip]
-> Usuwanie plików wybranego uruchomienia z projektu i nie wybrać nową, systemem wyniki projektu w języku Python danych wyjściowych okna pojawiające się, ale następnie znika niemal natychmiast. Jeśli wystąpi ten problem, sprawdź, czy plik przypisanej uruchamiania. Również, aby zachować w oknie danych wyjściowych w takich przypadkach, kliknij prawym przyciskiem myszy projekt, wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **argumenty Interpreter** pola. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
+> Usuwanie plików wybranego uruchomienia z projektu i nie zaznaczenie nowego, Visual Studio będą wiedzieć, co Python pliku do uruchomienia z podczas próby uruchomienia projektu. W takim przypadku program Visual Studio 2017 wersji 15.6 i nowszych widoczny błąd; wcześniejszych wersji albo otwórz okno danych wyjściowych z interpreter języka Python uruchomiona, lub zobacz okno danych wyjściowych jest wyświetlana, ale następnie zniknąć niemal natychmiast. Jeśli wystąpiły którekolwiek z tych zachowań, sprawdź, czy plik przypisanej uruchamiania.
+>
+> Jeśli chcesz nie zamykaj okna dane wyjściowe jakiejkolwiek przyczyny, kliknij prawym przyciskiem myszy projekt, wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **Interpreter argumentów**  pola. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
 
 Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego. Aby skojarzyć projektu z innego środowiska (również w środowiskach wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła w projekcie, wybierz opcję **środowiska Python Dodaj lub usuń**, i Wybierz te, które chcesz. Aby zmienić aktywnego środowiska, kliknij prawym przyciskiem myszy wymagane środowisko i wybierz **aktywacji środowiska** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [wybierając środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
 
 ![Aktywowanie środowisko dla projektów języka Python](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Szablony projektu
 

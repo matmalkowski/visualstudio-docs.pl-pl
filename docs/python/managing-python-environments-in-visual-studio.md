@@ -2,7 +2,7 @@
 title: "Jak zarządzać środowiska Python i tłumaczy w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Jak używać okno środowiska Python w Visual Studio, aby zarządzać globalne i środowisk wirtualnych, konfigurowanie niestandardowych środowisk, instalowania tłumaczy Python, instalowanie pakietów, ustawianie ścieżki wyszukiwania i zarządzania środowiskami dla projektów programu Visual Studio."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 139916cbecd6e0c22062da9221d452c16309a564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Zarządzanie środowiska Python w programie Visual Studio
 
@@ -72,7 +72,7 @@ Powyższy obraz pokazuje, że program Visual Studio wykrył dwóch instalacji j�
 
 Domyślne środowisko pogrubioną czcionką jest (w tym przypadku część instalacji Anaconda), 3,6 Python, używający dla wszystkich nowych projektów programu Visual Studio. Polecenia w dolnej części okna dotyczą wybranego 3,6 Python interpreter, które jako użytkownik widzi jest instalacji określonych w `C:\Python36-32`. Jeśli nie widzisz środowisku spodziewasz się, zobacz [ręczne identyfikowanie tłumacza istniejących](#manually-identifying-an-existing-interpreter).
 
-Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. Inny formant może pojawić się odświeża IntelliSense bazy danych dla tego środowiska.
+Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. Inny formant może pojawić się odświeża IntelliSense bazy danych dla tego środowiska (zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab) szczegółowe informacje o bazie danych).
 
 Poniżej listy środowisk jest selektora listy rozwijanej dla **omówienie**, **pakiety**, i **IntelliSense** opcje opisane w [środowiska Python okno karty](python-environments-window-tab-reference.md). Ponadto po rozwinięciu **środowiska Python** okna dostatecznie szerokie, te opcje są wyświetlane jako kart, które może się okazać bardziej wygodne do pracy z:
 

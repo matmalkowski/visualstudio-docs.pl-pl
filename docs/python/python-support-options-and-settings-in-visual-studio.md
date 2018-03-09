@@ -2,7 +2,7 @@
 title: "Opcje i ustawienia dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Odwołanie do różnych ustawień w programie Visual Studio, które odnoszą się do kodu Python i projektów."
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 
@@ -36,19 +37,21 @@ Aby wyświetlić opcje języka Python, użyj **Narzędzia > Opcje** menu polece�
 
 ![Okno dialogowe z opcje języka Python, karta Ogólne](media/options-general.png)
 
-Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edytor tekstu > Python > Zaawansowane** kartę.
+Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edytor tekstu > Python > Zaawansowane** kartę i na **środowiska > czcionki i kolory** kartę w grupie "Edytor tekstu".
 
 > [!Note]
 > **Eksperymentalne** grupy zawiera opcje dla funkcji, które są nadal w fazie projektowania i nie opisano w tym miejscu. Są one często omówione w ogłoszenia na [engineering Python na blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Opcje ogólne
 
+(**Narzędzia > Opcje > Python** kartę.)
+
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
 | Pokaż okno danych wyjściowych podczas tworzenia środowisk wirtualnych| On | Usuń zaznaczenie, aby zapobiec wyświetlaniu w oknie danych wyjściowych. |
 | Pokaż okno dane wyjściowe podczas instalowania lub usuwania pakietów | On | Usuń zaznaczenie, aby zapobiec wyświetlaniu w oknie danych wyjściowych. |
 | Zawsze uruchamiaj pip jako administrator | Off | Zawsze eksponuje `pip install` operacje dla wszystkich środowisk. Podczas instalowania pakietów, Visual Studio monituje o uprawnienia administratora, jeśli środowisko znajduje się w obszarze chronionym systemu plików takich jak `c:\Program Files`. W tym wierszu, możesz zawsze podniesienia uprawnień `pip install` tylko ten jeden środowiska. Zobacz [kartę pakiety](python-environments-window-tab-reference.md#packages-tab). |
-| Automatyczne generowanie ukończenia DB przy pierwszym użyciu | On | Aby uzyskać [zakończeń IntelliSense](editing-python-code-in-visual-studio.md#intellisense) do pracy w bibliotece, Visual Studio należy wygenerować ukończenia bazy danych dla tej biblioteki. Tworzenie bazy danych jest realizowane w tle biblioteki jest zainstalowany, ale nie może być ukończone po rozpoczęciu pisania kodu. W przypadku wybrania tej opcji programu Visual Studio priorytetem ukończenia bazy danych biblioteki podczas pisania kodu, który korzysta z niego. |
+| Automatyczne generowanie ukończenia DB przy pierwszym użyciu | On | *Podczas korzystania z bazy danych IntelliSense dotyczy programu Visual Studio 2017 wersji 15.5 i starszych i nowszych wersjach.* Priorytetem ukończenia bazy danych biblioteki podczas pisania kodu, który korzysta z niego. Aby uzyskać więcej informacji, zobacz [środowisk okna odwołanie — karta Intellisense](python-environments-window-tab-reference.md). |
 | Ignoruj zmienne PYTHONPATH systemowe | On | PYTHONPATH jest domyślnie ignorowana, ponieważ program Visual Studio oferuje bardziej bezpośrednie sposób określ ścieżki wyszukiwania w środowiskach i projektów. Zobacz [ścieżki wyszukiwania](search-paths.md) szczegółowe informacje. |
 | Ścieżki wyszukiwania aktualizacji podczas dodawania plików połączonych | On | Gdy ustawiona, dodając [połączony plik](managing-python-projects-in-visual-studio.md#linked-files) z projektem aktualizacje [ścieżki wyszukiwania](search-paths.md) tak, aby IntelliSense mogą zawierać zawartość folderu połączony plik w jego ukończenia bazy danych. Usuń zaznaczenie tej opcji, aby wykluczyć takiej zawartości z bazy danych ukończenia. |
 | Ostrzegaj, gdy zaimportowane się, że nie można odnaleźć modułu | On | Wyczyść tę opcję, aby pominąć ostrzeżenia, gdy wiesz, zaimportowanego modułu nie jest obecnie dostępna, ale w przeciwnym razie nie ma wpływu na kod operacji. |
@@ -59,6 +62,8 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edyt
 ![Okno dialogowe z opcje języka Python, karta Ogólne](media/options-general.png)
 
 ## <a name="debugging-options"></a>Opcje debugowania
+
+(**Narzędzia > Opcje > Python > debugowanie** kartę.)
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edyt
 
 ## <a name="diagnostics-options"></a>Opcje diagnostyki
 
+(**Narzędzia > Opcje > Python > Diagnostyka** kartę.)
+
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
 | Obejmują analizy dzienników | On | Zawiera szczegółowe dzienniki odnoszących się do analizy zainstalowanego środowiska Python, podczas zapisywania do pliku diagnostyki lub skopiować je do Schowka za pomocą przycisków. Ta opcja może znacznie zwiększyć rozmiar wygenerowanego pliku, ale często jest wymagany do diagnozowania problemów IntelliSense. |
@@ -81,6 +88,8 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edyt
 ![Okno dialogowe, karta Diagnostyka opcje języka Python](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Interaktywne opcje systemu Windows
+
+(**Narzędzia > Opcje > Python > Windows interakcyjne** kartę.)
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edyt
 ![Okno dialogowe, karta interaktywnego okna Opcje języka Python](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Zaawansowane opcje edytora języka Python
+
+(**Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane** kartę.)
 
 ### <a name="completion-results"></a>Wyników zakończenia
 
@@ -105,7 +116,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edyt
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
-| Zatwierdzane przez wpisanie następujących znaków | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Te znaki wykonaj zazwyczaj identyfikator, który może wybrać z listy uzupełniania tak jest wygodne zatwierdzić zakończenia po prostu, wpisując znak. Można usunąć lub Dodaj do listy zgodnie z potrzebami określonych znaków.  |
+| Zatwierdzane przez wpisanie następujących znaków | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Te znaki wykonaj zazwyczaj identyfikator, który może wybrać z listy uzupełniania tak jest wygodne zatwierdzić zakończenia po prostu, wpisując znak. Można usunąć lub Dodaj do listy zgodnie z potrzebami określonych znaków.  |
 | Wprowadź zakończenia bieżącego zatwierdzeń | On | Po ustawieniu klawisza Enter wybiera i dotyczy obecnie wybranego zakończenia zgodnie z powyższym znaków (ale oczywiście nie znak Enter, więc nie można go bezpośrednio przejść do tej listy!). |
 | Dodaj nowy wiersz po naciśnięciu klawisza enter na końcu wpisaniu całego słowa | Off | Domyślnie po wpisaniu całe wyrazy, która jest wyświetlana w menu podręcznym uzupełniania i naciśnij klawisz Enter, zatwierdzeniu tego ukończenia. Przez ustawienie dla tej opcji, efektywnie zatwierdzeniu zakończeń po zakończeniu wpisywania identyfikatora, tak aby Enter Wstawia nowy wiersz. |
 
@@ -118,3 +129,11 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **Edyt
 | Na podstawie typów nazwy kolorów | On | Umożliwia kolorowania w kodzie języka Python. |
 
 ![Python Edytor okno dialogowe Opcje, karta Zaawansowane](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Opcje czcionek i kolorów
+
+(**Środowiska > czcionki i kolory** kartę w grupie "Edytor tekstu".)
+
+Opcje języka Python są wszystkie prefiksem "Python" i nie wymaga wyjaśnień. Domyślną czcionkę dla wszystkich motywy kolorów w Visual Studio jest regularnie Consolas 10 pkt (pogrubienie nie). Domyślne kolory różnią się motywu. Zazwyczaj zmienisz czcionkę lub kolor Jeśli trudne do odczytywania tekstu z ustawieniami domyślnymi.
+
+![Opcje języka Python czcionek i kolorów](media/options-fonts-and-colors.png)

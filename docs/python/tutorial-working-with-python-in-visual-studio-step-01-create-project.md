@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 17108b8ff993d88d2e5ed179c3167f43d2895d7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
 
@@ -30,7 +30,7 @@ Python to niezawodne, elastyczne, łatwe dowiedzieć się, bez używania we wszy
 Visual Studio obsługuje najwyższej jakości języka Python. W tym samouczku prowadzi użytkownika przez następujące kroki:
 
 - [Krok 0: instalacji](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Krok 1: Tworzenie projektu języka Python (w tym temacie)](#step-1-create-a-new-python-project)
+- [Krok 1: Tworzenie projektu języka Python (w tym artykule)](#step-1-create-a-new-python-project)
 - [Krok 2: Zapisywanie i wykonywanie kodu, aby zobaczyć Visual Studio IntelliSense w miejscu pracy](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Krok 3: Tworzenie więcej kodu w oknie interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [Krok 4: Uruchom program ukończone w debugerze programu Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

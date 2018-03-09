@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzenia programu Visual Studio
 
@@ -73,7 +73,7 @@ Jeśli chcesz wyłączyć aktualizacje automatyczne, należy wyłączyć funkcj�
 
 Nowość w **programu Visual Studio 2017 wersji 15 ustęp 3**, Visual Studio powiadamia użytkownika, jeśli podejrzewa, że rozszerzenie uczestniczyła w awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątku. Przy następnym uruchomieniu programu Visual Studio sprawdza stosu, począwszy od liścia i działają na bazie. Jeśli program Visual Studio Określa, że ramki należy moduł, który jest częścią zainstalowane i włączone rozszerzenie, pokazuje powiadomienie.
 
-Nowość w **programu Visual Studio 2017 wersji 15,6 preview 3**, Visual Studio również powiadamia użytkownika, jeśli podejrzewa, powoduje rozszerzenie interfejsu użytkownika przestanie odpowiadać.
+Nowość w **programu Visual Studio 2017 wersji 15,6**, Visual Studio również powiadamia użytkownika, jeśli podejrzewa, powoduje rozszerzenie interfejsu użytkownika przestanie odpowiadać.
 
 Gdy te powiadomienia są wyświetlane, możesz zignorować powiadomienie lub wykonać jedną z następujących czynności:
 

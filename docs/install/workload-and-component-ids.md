@@ -5,37 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
-ms.workload: multiple
-ms.openlocfilehash: ba73e3c53e03bf3d6deb65deea0aabd715fc69fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6a8b2ca8900c0f292d7e4bcc035e1eb58fd12a94
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 obciążenia i składnik identyfikatorów
 Kliknij nazwę edition w poniższej tabeli, aby wyświetlić dostępne obciążenia i identyfikatory składników należy zainstalować program Visual Studio przy użyciu wiersza polecenia lub określ jako zależności w manifeście VSIX.
 
-| **Edition** | **IDENTYFIKATOR** | **Opis** |
+| **Edition** | **ID** | **Opis** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Rozwiązania Microsoft DevOps wydajność i koordynacji przez wszystkie zespoły |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Narzędzia do zawodowych deweloperów i usług dla małych zespołów |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Bezpłatne, w pełni umieszczony IDE dla uczniów lub studentów, open source, a każdy Deweloper |
-| [Visual&nbsp;wersja próbna&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcje z Team Foundation Server i Visual Studio Team Services bez zestaw narzędzi Visual Studio |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcje z Team Foundation Server i Visual Studio Team Services bez zestaw narzędzi Visual Studio |
 | [Visual Studio pulpitu 2017 Express](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Kompilacja natywne i zarządzane aplikacje, takie jak WPF, WinForms i Win32 edycji kod obsługujący składni, kontroli kodu źródłowego i zarządzanie elementami pracy. Obsługuje C#, Visual Basic i Visual C++. |
-| [Visual&nbsp;kompilacji Studio&nbsp;narzędzia&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Tools kompilacji umożliwia tworzenie natywnego i zarządzanego MSBuild aplikacji bez konieczności środowiska IDE programu Visual Studio. Dostępne są opcje instalacji Kompilatory języka Visual C++ i bibliotek MFC, ATL i C + +/ CLI pomocy technicznej. |
-| [Visual&nbsp;Studio Test&nbsp;agenta&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |
-| [Visual&nbsp;Studio Test&nbsp;2017 kontrolera](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Dystrybuuj zautomatyzowanych testów na wielu komputerach |
+| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Tools kompilacji umożliwia tworzenie natywnego i zarządzanego MSBuild aplikacji bez konieczności środowiska IDE programu Visual Studio. Dostępne są opcje instalacji Kompilatory języka Visual C++ i bibliotek MFC, ATL i C + +/ CLI pomocy technicznej. |
+| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |
+| [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Dystrybuuj zautomatyzowanych testów na wielu komputerach |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
-| [Visual&nbsp;opinii Studio&nbsp;klienta&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
+| [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
 Aby uzyskać więcej informacji na temat używania tych list, zobacz [używania parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony i [jak: Migrowanie rozszerzalności projekty do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
 

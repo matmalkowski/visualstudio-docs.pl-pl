@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zwroty kroku migawki widoku przy użyciu funkcji IntelliTrace w programie Visual Studio
 
@@ -107,5 +107,7 @@ Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Obci�
 
     Obejście problemu:
     * Usuń wszystkie migawki poprzez zakończenie sesji debugowania. 
+
+* Podczas debugowania aplikacji, których proces ma dużą liczbę regiony pamięci unikatowy, takie jak aplikacja, która ładuje wiele bibliotek DLL, wzmocnienie wydajności z migawkami włączone może mieć wpływ na. Ten problem zostanie rozwiązany w przyszłej wersji systemu Windows. Jeśli występuje ten problem, dotrzeć do nas na stepback@microsoft.com. 
 
 * Podczas zapisywania pliku z **Debuguj > IntelliTrace > Zapisz IntelliTrace sesji** w trybie zdarzeń i migawki, dodatkowe dane przechwycone z migawek nie jest dostępny w pliku .itrace. Punkt przerwania i krok zdarzeń Zobacz tych samych informacji tak, jakby plik zapisaną w trybie tylko do zdarzeń funkcji IntelliTrace. 

@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 06/16/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,7 +13,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
-- solutions [Visual Studio], deleting
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 author: gewarren
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie projektów i rozwiązań
 
@@ -46,7 +45,7 @@ Trwa powiedział, rozwiązań i projektów nie wymagane do opracowywania aplikac
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Aby utworzyć projekt z szablonu projektu
 
-1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na stronie początkowej, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** wpisz lub wybierz **Tworzenie nowego projektu** łącze, aby otworzyć **nowy projekt** okno dialogowe. Można również wybrać **pliku**, **nowy**, **projektu...**  menu paska lub wybierz **nowy projekt** przycisk na pasku narzędzi.
+1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na stronie początkowej, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** wpisz lub wybierz **Tworzenie nowego projektu** łącze, aby otworzyć **nowy projekt** okno dialogowe. Można również wybrać **pliku** > **nowy** > **projektu...**  menu paska lub wybierz **nowy projekt** przycisk na pasku narzędzi.
 
   ![Strona początkowa](./media/vside-newproject1.png)
 
@@ -59,9 +58,9 @@ Trwa powiedział, rozwiązań i projektów nie wymagane do opracowywania aplikac
 
 1. Pokaż listę szablonów dla języka programowania, który ma być używany przez wybranie trójkąt obok nazwy języka, a następnie wybierz typ projektu.
 
-  W poniższym przykładzie przedstawiono szablony projektów dostępne dla projektów sieci web Visual C#.
+  W poniższym przykładzie przedstawiono dostępne dla projektów Visual C# .NET Core szablonów projektu.
 
-  ![Szablony projektu](./media/vside-newproject-projects-list.png)
+  ![Szablony projektu](./media/new-project-dialog-net-core.png)
 
 1. Wprowadź nazwę dla nowego projektu w **nazwa** pole. Użytkownik może zapisać projekt w domyślnej lokalizacji na komputerze, lub wybierz **Przeglądaj** przycisk, aby znaleźć lokalizację.
 
@@ -69,13 +68,13 @@ Trwa powiedział, rozwiązań i projektów nie wymagane do opracowywania aplikac
 
 1. Wybierz **OK** przycisk, aby utworzyć rozwiązania i projektu.
 
-1. Jeśli chcesz dodać dodatkowy projekt do rozwiązania, wybierz węzeł rozwiązania w Eksploratorze rozwiązań, a następnie na pasku menu wybierz **projektu**, **Dodaj nowy element**.
+1. Jeśli chcesz dodać dodatkowy projekt do rozwiązania, wybierz węzeł rozwiązania w Eksploratorze rozwiązań, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu
 
 Jeśli masz kolekcję plików kodu źródłowego, można łatwo dodać je do projektu.
 
-1. W menu, wybierz **pliku**, **nowy**, **projektu z istniejącego kodu**.
+1. W menu, wybierz **pliku** > **nowy** > **projektu z istniejącego kodu**.
 
 1. W **utworzyć projekt z istniejących plików kodu** kreatora, wybierz typ projektu w **jaki typ projektu chcesz utworzyć?** listy rozwijanej pola, a następnie wybierz pozycję **dalej**  przycisku.
 
@@ -86,21 +85,16 @@ Jeśli masz kolekcję plików kodu źródłowego, można łatwo dodać je do pro
 
 ## <a name="add-files-to-a-solution"></a>Dodawanie plików do rozwiązania
 
-Jeśli plik, który ma zastosowanie do wielu projektów, takich jak plik readme dla rozwiązania, lub innych plików, które logicznie na poziomie rozwiązania, a nie w określonym projekcie, następnie należy dodać je do rozwiązania, sam. Aby dodać element do rozwiązania, w menu kontekstowym (kliknij prawym przyciskiem myszy) w węźle rozwiązania **Eksploratora rozwiązań**, wybierz **Dodaj**, **nowy element**, lub **Dodaj**, **Istniejący element**.
+Jeśli plik, który ma zastosowanie do wielu projektów, takich jak plik readme dla rozwiązania, lub innych plików, które logicznie na poziomie rozwiązania, a nie w określonym projekcie, następnie należy dodać je do rozwiązania, sam. Aby dodać element do rozwiązania, w menu kontekstowym (kliknij prawym przyciskiem myszy) w węźle rozwiązania **Eksploratora rozwiązań**, wybierz **Dodaj** > **nowy element**, lub **Dodaj** > **istniejący element**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Tworzenie projektu platformy .NET, przeznaczonego dla określonej wersji programu .NET Framework
 
-Podczas tworzenia projektu można określić określonej wersji programu .NET Framework, która ma projektu do użycia. Aby określić wersji programu .NET framework, wybierz **.NET Framework** wersji menu rozwijane w **nowy projekt** okno dialogowe.
+Podczas tworzenia projektu można określić określonej wersji programu .NET Framework, która ma projektu do użycia. Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwijane w **nowy projekt** okno dialogowe.
 
-![Selektor wersji .NET framework](./media/vside-newproject-framework.png)
+![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> Jeśli tworzysz projekt z szablonu .NET Core, wersja platformy .NET, który można wybrać w listy rozwijanej jest ignorowana.
-
-> [!TIP]
-> Jeśli przed wybraniem szablon projektu jest ustawiona wersja programu .NET Framework, następnie Visual Studio będzie wyświetlana tylko szablony, które są zgodne z tą wersją .NET Framework.
-
-.NET Framework 3.5 zainstalowanego w systemie do wersji systemu .NET Framework starszych niż program .NET Framework 4 są wymagane.
+> .NET Framework 3.5 zainstalowanego w systemie do wersji systemu .NET Framework starszych niż program .NET Framework 4 są wymagane.
 
 ## <a name="create-empty-solutions"></a>Utwórz puste rozwiązania
 
@@ -108,9 +102,9 @@ Można również utworzyć pusty rozwiązania, które mają projektów. Może to
 
 ### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie
 
-1. W menu, wybierz **pliku**, **nowy**, **projektu...** .
+1. W menu, wybierz **pliku** > **nowy** > **projektu...** .
 
-1. W lewym (**szablony**) okienku wybierz **inne typy projektów**, **rozwiązań programu Visual Studio** na wyświetlonej liście.
+1. W lewym (**szablony**) okienku wybierz **inne typy projektów** > **rozwiązań programu Visual Studio** na wyświetlonej liście.
 
 1. W środkowym okienku wybierz **puste rozwiązanie**.
 
@@ -124,7 +118,7 @@ Jak wspomniano wcześniej, można również otworzyć pliki kodu bez koniecznoś
 
 Jeśli utworzysz. Projekt na podstawie NET bez określenia lokalizacji na dysku, jest tymczasowy projektu. Tymczasowe projekty umożliwiają eksperymentować projektów platformy .NET. W dowolnym momencie podczas pracy z projektem tymczasowe, można go zapisać czy odrzucić go.
 
-Aby utworzyć projekt tymczasowy, najpierw przejść do **narzędzia**, **opcje**, **projekty i rozwiązania**, **ogólne**i usuń zaznaczenie pola wyboru **Zapisać nowe projekty podczas tworzenia** wyboru. Następnie otwórz **nowy projekt** okna dialogowego w zwykły sposób.
+Aby utworzyć projekt tymczasowy, najpierw przejść do **narzędzia** > **opcje** > **projekty i rozwiązania**  >   **Ogólne**i usuń zaznaczenie pola wyboru **zapisać nowe projekty podczas tworzenia** wyboru. Następnie otwórz **nowy projekt** okna dialogowego w zwykły sposób.
 
 ## <a name="delete-a-solution-project-or-item"></a>Usuwanie rozwiązania, projektu lub elementu
 
@@ -146,4 +140,4 @@ Możesz usunąć rozwiązań i ich zawartość stałe, ale nie za pomocą środo
 [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)  
 [Repozytoria typu open source firmy Microsoft w witrynie GitHub](https://github.com/Microsoft)  
 [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)  
-[Przykłady kodu dewelopera](https://code.msdn.microsoft.com/)  
+[Przykłady kodu dewelopera](https://code.msdn.microsoft.com/)

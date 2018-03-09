@@ -2,7 +2,7 @@
 title: "Edytowanie kodu języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
 description: "Python edycji w programie Visual Studio oferuje IntelliSense, fragmentów kodu i funkcje nawigacji obok formatowania, linting i refaktoryzacji."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
@@ -39,7 +39,11 @@ Można również użyć przeglądarki obiektów Visual Studio (**Widok > inne ok
 
 ## <a name="intellisense"></a>IntelliSense
 
-Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Aby zwiększyć wydajność, IntelliSense zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [odwołania okno środowiska Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring).
+
+Aby zwiększyć wydajność, IntelliSense w **programu Visual Studio 2017 wersji 15,5 cala** i wcześniej zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017 wersji 15,6** i później używa różne sposoby, aby zapewnić zakończeń IntelliSense, które nie są zależne od bazy danych.
 
 ### <a name="completions"></a>Zakończeń
 
@@ -110,15 +114,41 @@ Aby dostosować kolory, przejdź do **Narzędzia > Opcje > środowiska > czcionk
 
 ## <a name="code-snippets"></a>Wstawki kodu
 
-Wstawki kodu są fragmenty kodu, który można wstawiać do plików, wpisując skrót i naciśnięcie klawisza Tab lub przy użyciu **Edytuj > IntelliSense > Wstaw fragment kodu** **z funkcji Otocz przez** poleceń. Na przykład wpisanie `class` po klucz generowane przez kartę rest klasy. Możesz wpisać zamiast nazwy i przechodzenia między wyróżnionych polach o karcie listy baz naciśnij klawisz Enter, aby rozpocząć, wpisując treści.
+Wstawki kodu są fragmenty kodu, który można wstawiać do plików, wpisując skrót i naciśnięcie klawisza Tab lub przy użyciu **Edytuj > IntelliSense > Wstaw fragment kodu** i **z funkcji Otocz przez** poleceń, Wybieranie **Python**, a następnie wybierając żądane fragment kodu.
 
-![Wstawki kodu](media/code-editing-code-snippets.png)
+Na przykład `class` jest skrót dla fragmentu kodu, która wstawia definicji klasy. Zobacz fragment znajdują się na liście automatycznego uzupełniania po wpisaniu `class`:
 
-Zostanie wyświetlony fragmenty kodu dostępnych w Menedżerze fragmentów kodu (**Narzędzia > Menedżerze fragmentów kodu**), wybierając żądane **Python** jako język:
+![Fragment kodu dotyczący skrótów — klasa](media/code-editing-code-snippet-class.png)
+
+Naciśnięcie klawisza Tab generuje rest klasy. Mogą być następnie typu na liście nazwy i typy podstawowe przechodzenia między wyróżnione pola z kartą, naciśnij klawisz Enter, aby rozpocząć, wpisując treści.
+
+![Najważniejsze funkcje w obszarach fragment kodu zakończenia](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Polecenia menu
+
+Jeśli używasz **Edytuj > IntelliSense > Wstaw fragment kodu** polecenia menu, musisz najpierw wybierz pozycję "Python", a następnie wybierz fragment:
+
+![Wybieranie fragment kodu za pomocą polecenia wstawiania wstawki kodu programu](media/code-editing-code-snippet-insert.png)
+
+**Edytuj > IntelliSense > z funkcji Otocz przez** polecenia, podobnie, umieszcza bieżące zaznaczenie w edytorze tekstu w wybranym elemencie strukturalnych. Na przykład załóżmy, że ma nieco kodu podobne do poniższych:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Wybierając ten kod i wybierając pozycję **z funkcji Otocz przez** polecenie wyświetla listę dostępnych fragmentów. Wybieranie `def` w miejscach listy wybranego kodu w ramach definicji funkcji, a można za pomocą klawisza Tab do przechodzenia między nazwą funkcji wyróżnione i argumenty:
+
+![Dla wstawki kodu za pomocą polecenia z funkcji Otocz przez](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Przejrzyj dostępne wstawki kodu programu
+
+Zostanie wyświetlony fragmenty kodu dostępnych w Menedżerze fragmentów kodu otworzyć za pomocą **Narzędzia > Menedżerze fragmentów kodu** polecenia menu i wybierając **Python** jako język:
 
 ![Menedżer wstawek kodu](media/code-editing-code-snippets-manager.png)
 
-Aby utworzyć własną fragmentów, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md). 
+Aby utworzyć własną fragmentów, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
 Jeśli piszesz fragment kodu dużą, którą chcesz udostępnić, możesz zająć się on wysłany w gist i [Daj nam znać](https://github.com/Microsoft/PTVS/issues). Firma Microsoft może istnieć możliwość uwzględniania go w przyszłej wersji programu Visual Studio.
 

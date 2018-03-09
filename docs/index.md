@@ -1,13 +1,14 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 description: "Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń."
-ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.topic: hub-page
+ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -90,7 +91,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Tworzenie</h3>
+                                                    <h3>Programowanie</h3>
                                                     <p>Zapisz i zarządzać kodem za pomocą edytora kodu.</p>
                                                 </div>
                                             </div>
@@ -204,7 +205,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Opracowywania oprogramowania</h3>
+                                                    <h3>DevOps</h3>
                                                     <p>Stale kompilacji wersji aplikacji w chmurze i implementować Agile rozwiązania z usługi VSTS.</p>
                                                 </div>
                                             </div>
@@ -263,7 +264,7 @@ ms.lasthandoff: 12/15/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Dane</h3>
-                                                    <p>Tworzenie aplikacji danych, które nawiązać połączenia z dowolną bazą danych lub usługi i dowolnego miejsca &#8212; lokalnej lub w chmurze. </p>
+                                                    <p>Tworzenie aplikacji danych, które łączyć się z dowolną bazą danych lub usługi i dowolnego miejsca&#8212;lokalnej lub w chmurze. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +536,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Magazyn danych i przetwarzania</h3>
+                                                    <h3>Magazynowanie i przetwarzanie danych</h3>
                                                     <p>Narzędzia i struktur umożliwiające opracowanie i przetestowanie rozwiązania danych przy użyciu programu SQL Server, usługi Azure Data Lake lub Hadoop.</p>
                                                 </div>
                                             </div>
@@ -554,7 +555,7 @@ ms.lasthandoff: 12/15/2017
                                         </div>
                                         </div>
                                           <div class="cardText">
-                                            <h3>Nauki dane i aplikacje analitycznych</h3>
+                                            <h3>Aplikacje do analizy i przetwarzania danych</h3>
                                             <p>Języki i narzędzia do tworzenia aplikacji analizy danych, w tym Python, R i F #.</p>
                                         </div>
                                       </div>
@@ -584,7 +585,7 @@ ms.lasthandoff: 12/15/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#windows">Systemu Windows</a>
+                        <a href="#windows">Windows</a>
                         <ul id="windows" class="cardsC">
                             <li>
                                 <div class="container intro">
@@ -769,7 +770,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Programowanie rozszerzenia usługi Visual Studio</h3>
+                                                    <h3>Programowanie rozszerzeń programu Visual Studio</h3>
                                                     <p>Tworzenie dodatków rozszerzających Visual Studio, takich jak polecenia, analizatorów kodu i okien narzędzi.</p>
                                                 </div>
                                             </div>
@@ -825,19 +826,19 @@ ms.lasthandoff: 12/15/2017
         <h2>Utrzymuj nam</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100">Blog</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Blog </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833101">W usłudze Twitter</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> W usłudze Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103">Przepełnienie stosu</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Przepełnienie stosu </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833104">Zgłaszanie problemów</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Zgłaszanie problemów </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105">Głos użytkownika</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Głos użytkownika </a>
             </li>
         </ul>
     </div>

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 94b37ef77e60db9c2040f74142155857fe2e60c6
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Ustawienia testu jednostkowego dla kodu języka Python
 
@@ -29,7 +29,7 @@ Testy jednostkowe są fragmenty kodu, które przetestować innych jednostek kodu
 
 Python często używa testów jednostkowych do weryfikacji scenariuszy podczas projektowania programu. Obsługa języka Python w programie Visual Studio obejmuje odnajdywania, wykonywanie i debugowanie testów jednostkowych w ramach procesu tworzenia, bez konieczności uruchamiania testów oddzielnie.
 
-Ten temat zawiera krótki konspektu jednostki testowanie możliwości programu Visual Studio z języka Python. Aby uzyskać więcej informacji na temat testowania ogólnie jednostek zobacz [kod testu jednostkowego](../test/unit-test-your-code.md).
+Ten artykuł zawiera krótki konspektu jednostki testowanie możliwości programu Visual Studio z języka Python. Aby uzyskać więcej informacji na temat testowania ogólnie jednostek zobacz [kod testu jednostkowego](../test/unit-test-your-code.md).
 
 |   |   |
 |---|---|

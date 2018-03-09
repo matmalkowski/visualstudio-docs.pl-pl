@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
@@ -30,7 +30,7 @@ Visual Studio zawiera szablony ułatwiające rozpoczęcie pracy tworzenia usług
 
 A [usługi w chmurze](http://go.microsoft.com/fwlink/?LinkId=306052) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na Visual maszyny odpowiednio do skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](python-web-application-project-templates.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy korzystać z [danych](http://go.microsoft.com/fwlink/?LinkId=401571) i [usługi aplikacji](http://go.microsoft.com/fwlink/?LinkId=401572) bibliotek, które mogą być zainstalowane z [ `pip install azure` ](http://pypi.org/project/azure).
 
-Ten temat zawiera szczegółowe informacje o szablonie projektu i innych pomoc techniczna w Visual Studio 2017 r (wcześniejszych wersji są podobne, lecz w edytorze). Aby uzyskać więcej informacji na temat pracy z platformą Azure w języku Python, odwiedź [Centrum deweloperów języka Python Azure](http://go.microsoft.com/fwlink/?linkid=254360).
+Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych pomoc techniczna w Visual Studio 2017 r (wcześniejszych wersji są podobne, lecz w edytorze). Aby uzyskać więcej informacji na temat pracy z platformą Azure w języku Python, odwiedź [Centrum deweloperów języka Python Azure](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 

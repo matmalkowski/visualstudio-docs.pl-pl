@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -231,7 +231,7 @@ Istnieją dwa sposoby, aby udostępnić biblioteki DLL języka Python.
 
 Pierwsza metoda działa, jeśli projekt Python i projektu C++ znajdują się w tym samym rozwiązaniu. Przejdź do Eksploratora rozwiązań, kliknij prawym przyciskiem myszy **odwołania** węzła w projekcie języka Python, a następnie wybierz **Dodaj odwołanie**. W wyświetlonym oknie dialogowym wybierz **projekty** wybierz opcję **superfastcode** projektu (lub korzystania z dowolnym wybraną nazwę), a następnie **OK**.
 
-Alternatywna metoda, opisane w poniższych krokach instaluje moduł globalnego środowiska Python, udostępnianie innych projektów języka Python. (Dlatego zazwyczaj wymaga aby odświeżyć bazy danych uzupełniania IntelliSense dla tego środowiska. Odświeżanie jest także niezbędne podczas usuwania modułu ze środowiska.)
+Alternatywna metoda, opisane w poniższych krokach instaluje moduł globalnego środowiska Python, udostępnianie innych projektów języka Python. (Dlatego zazwyczaj wymaga aby odświeżyć bazy danych uzupełniania IntelliSense dla tego środowiska w Visual Studio 2017 wersji 15.5 i starszych. Odświeżanie jest także niezbędne podczas usuwania modułu ze środowiska.)
 
 1. Jeśli używasz programu Visual Studio 2017 r, uruchom Instalatora programu Visual Studio wybierz **Modyfikuj**, wybierz pozycję **pojedynczych składników > kompilatorów kompilacji narzędzia i środowisk uruchomieniowych > zestaw narzędzi w wersji 140 Visual C++ 2015.3**. Ten krok jest niezbędny, ponieważ języka Python (dla systemu Windows) jest skompilowanej za pomocą programu Visual Studio 2015 (wersja 14.0) i oczekuje, że te narzędzia są dostępne podczas kompilowania rozszerzeń za pomocą metody opisanej w tym miejscu. (Należy pamiętać, że należy zainstalować 32-bitowej wersji środowiska Python i docelowymi biblioteki DLL, Win32, a nie x64).
 

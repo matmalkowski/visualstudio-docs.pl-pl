@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Opis konfiguracji kompilacji
 
 ## <a name="project-build-configurations"></a>Konfiguracje kompilacji projektu 
 
-Projekty może mieć wiele konfiguracji i przełączania między nimi umożliwia różne wyniki podczas kompilacji. Na przykład podczas korzystania z konfiguracji debugowania, dane wyjściowe uwzględni profilowanie symbole, dzięki czemu debugera do rozpoznania nazwy funkcji, parametry lub zmienne z ślad stosu awaria aplikacji. Przy użyciu konfiguracji debugowania, jednak prowadzi do rozmiaru pliku nadmuchany i dlatego nie będzie idealne dla aplikacji przeznaczonych do dystrybucji.
+Projekty mają wiele konfiguracji i przełączania między nimi umożliwia różne wyniki podczas kompilacji. Na przykład konfiguracji debugowania dane wyjściowe obejmują symbole debugowania, dzięki czemu debugera do rozpoznania nazwy funkcji, parametry lub zmienne z ślad stosu awaria aplikacji. Gdy te informacje są przydatne podczas programowania, prowadzi do rozmiaru pliku nadmuchany i nie nadaje się doskonale dla dystrybucji.
 
-Każdej z platform będzie mieć określone konfiguracje dla jego kompilacji. Programowanie Xamarin.Android zawsze będą mieć wyłącznie debugowania lub wersji konfiguracji. Xamarin.iOS ma więcej konfiguracje. Nowsze systemu iOS, które projekty będzie mieć tylko debugowania lub wersji konfiguracji, ale te opcje można ustawić dla dowolnego zainstalowanego symulatorze lub urządzenia.
+Dotyczy wszystkich platform określonych konfiguracji dla jego kompilacji. 
 
 ## <a name="solution-configurations"></a>Konfiguracje rozwiązania
 
-Podobnie konfiguracje projektu konfiguracje rozwiązania są używane do tworzenia konfiguracje niestandardowe dla całego projektu. Za pomocą **mapowania konfiguracji** w obszarze **kompilacji > konfiguracje** elementu, można przypisać konfiguracji docelowej, dla każdego elementu rozwiązania, jak przedstawiono poniżej:
+Podobnie konfiguracje projektu konfiguracje rozwiązania są używane do tworzenia konfiguracje niestandardowe dla całego projektu. Za pomocą **mapowania konfiguracji** w obszarze **kompilacji > konfiguracje** elementu, można przypisać konfiguracji docelowej, dla każdego elementu rozwiązania, jak pokazano na poniższej ilustracji:
 
 
  ![Opcje mapowania konfiguracji](media/projects-and-solutions-image3.png)
 
-Aby uzyskać więcej informacji, zapoznaj się [programu Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) wideo przez James Montemagno.
+Aby uzyskać więcej informacji o konfiguracji, zobacz [programu Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) wideo przez James Montemagno.
 
 ## <a name="run-configuration"></a>Uruchom konfigurację
 
@@ -49,7 +49,7 @@ Działania innych niż `MainLauncher` musi mieć `Exported=true` dodać atrybut 
 
 ## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Przykładowe dane, które mogą być uwzględnione w konfiguracji uruchomienia
 
-Na poniższej liście podano przykładowe dane, które mogłyby zostać włączone konfiguracje wykonywania:
+Poniższa lista zawiera przykładowe dane, które mogłyby zostać włączone konfiguracje wykonywania:
 
 * Regularne .NET projektu
     * Alternatywne uruchamianie aplikacji

@@ -1,10 +1,11 @@
 ---
 title: Docelowy program .NET Framework w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio omówienie wielowersyjności kodu
 
@@ -48,7 +50,7 @@ Docelowy Framework obejmuje następujące funkcje:
 
 Podczas pracy w projekcie, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dynamicznie zmienia środowisko projektowe w następujący sposób:
 
-- Filtruje elementy **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć decyzje, które nie są dostępne w docelowej wersji.
+- Filtruje elementy **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć decyzje, które nie są dostępne w Docelowa wersja.
 
 - Filtruje niestandardowe formanty w **przybornika** Usuń te, które nie są dostępne w docelowej wersji i Pokaż tylko najnowsze kontrolek dostępnych wiele formantów.
 
@@ -65,7 +67,11 @@ Podczas pracy w projekcie, który jest przeznaczony dla starszej wersji programu
 
 ## <a name="selecting-a-target-framework-version"></a>Wybieranie framework w wersji docelowej
 
-Podczas tworzenia projektu, wybierz element docelowy [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w **nowy projekt** okno dialogowe. Lista szablonów projektów dostępne są filtrowane na podstawie wybranego. W istniejącego projektu, można zmienić obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Podczas tworzenia projektu, wybierz docelową wersję platformy .NET w **nowy projekt** okno dialogowe. Lista dostępnych platform zawiera wersje zainstalowano framework, które mają zastosowanie do typu wybranego szablonu. Dla typów szablonów, które nie wymagają platformy .NET, na przykład szablony .NET Core **Framework** listy rozwijanej jest ukryty.
+
+![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](media/vside-newproject-framework.png)
+
+W istniejącego projektu, można zmienić obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Rozpoznawanie odwołania do zestawów systemu i użytkownika
 

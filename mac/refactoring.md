@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 
-Refaktoryzacji kodu jest sposób rozmieszczanie, restrukturyzacji i wyjaśnienia jednoczesnym zapewnieniu ogólnej zachowania kodu nie powoduje zmiany istniejącego kodu.
+Refaktoryzacji kodu jest sposób rozmieszczanie, restrukturyzacji i wyjaśnienia istniejącego kodu przy jednoczesnym zapewnieniu, które nie zmieniają się ogólną zachowania kodu.
 
-Tworzy zdrowsze baza kodu, co znacznie bardziej użyteczny, do odczytu i łatwy w obsłudze można lub inne dewelopera lub użytkownika, który może odwoływać się do kodu.
+Refaktoryzacja tworzy zdrowsze baza kodu, co użyteczny, który może zostać odczytany i łatwy w obsłudze można lub inne dewelopera lub użytkownika, który może odwoływać się do kodu.
 
-Program Visual Studio dla komputerów Mac dla integracji z Roslyn, platformy .NET kompilatora typu open source firmy Microsoft, umożliwia więcej refaktoryzacji operacji, a także pełni obsługi najnowszej wersji języka C#.
+Program Visual Studio dla komputerów Mac dla integracji z Roslyn, platformy .NET kompilatora open source firmy Microsoft, umożliwia więcej operacji refaktoryzacji.
 
 ## <a name="renaming"></a>Zmiana nazwy 
 

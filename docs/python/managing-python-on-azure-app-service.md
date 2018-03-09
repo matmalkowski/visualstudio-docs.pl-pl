@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie Python w usłudze aplikacji Azure
 
 [Usługa aplikacji Azure](https://azure.microsoft.com/services/app-service/) jest ofertę platformy jako usługa dla aplikacji sieci web, czy są one witryn dostępne za pośrednictwem przeglądarki, interfejsów API REST używany przez własnych klientów lub przetwarzania wyzwolenia zdarzenia. Usługa aplikacji w pełni obsługuje Hermetyzowanie przy użyciu języka Python do wdrożenia aplikacji.
 
-Można dostosowywać obsługi języka Python w usłudze Azure App Service jest dostępna jako zestaw usług aplikacji *lokacji rozszerzenia* czy każdy zawierać określonej wersji środowiska uruchomieniowego języka Python. Następnie można zainstalować wszystkie odpowiednie pakiety bezpośrednio do tego środowiska, zgodnie z opisem w tym temacie. Dostosowując środowiska w samej usługi aplikacji, nie należy do obsługi pakietów w projektach aplikacji sieci web lub przekaż je z kodu aplikacji.
+Można dostosowywać obsługi języka Python w usłudze Azure App Service jest dostępna jako zestaw usług aplikacji *lokacji rozszerzenia* czy każdy zawierać określonej wersji środowiska uruchomieniowego języka Python. Zgodnie z opisem w tym artykule można zainstalować wszystkie odpowiednie pakiety bezpośrednio do tego środowiska. Dostosowując środowiska w samej usługi aplikacji, nie należy do obsługi pakietów w projektach aplikacji sieci web lub przekaż je z kodu aplikacji.
 
 > [!Tip]
-> Chociaż usługi aplikacji — domyślnie ma Python 2.7 i języka Python 3.4 zainstalowane w głównym folderów na serwerze, nie można dostosować lub instalowania pakietów w tych środowiskach ani powinien zależeć od ich obecności. Należy zamiast tego polegać na rozszerzeniu lokacji, którą kontrolujesz, zgodnie z opisem w tym temacie.
+> Chociaż usługi aplikacji — domyślnie ma Python 2.7 i języka Python 3.4 zainstalowane w głównym folderów na serwerze, nie można dostosować lub instalowania pakietów w tych środowiskach ani powinien zależeć od ich obecności. Należy zamiast tego polegać na rozszerzeniu lokacji, którą kontrolujesz, zgodnie z opisem w tym artykule.
 
 > [!Important]
 > Procesach opisanych w tym miejscu są może ulec zmianie, a szczególnie w celu poprawy jakości. Zmiany są ogłaszane na [Python Engineering na blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).

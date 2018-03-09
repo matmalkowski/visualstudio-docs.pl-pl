@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
-ms.workload: multiple
-ms.openlocfilehash: 4b41304a893dbee45b7de08edb9a37e07ef8656d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dba4c71320f00e4e35bc7c8d115aa342eac23de3
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio kompilacji narzędzia 2017 składników katalogu
 
@@ -35,7 +37,7 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 ## <a name="msbuild-tools"></a>Narzędzia MSBuild
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.MSBuildTools
+**ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
 **Opis:** udostępnia narzędzia potrzebne do tworzenia aplikacji opartych na MSBuild.
 
@@ -43,14 +45,14 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Wymagane
-Microsoft.VisualStudio.Component.CoreBuildTools | Podstawowe narzędzia kompilacji programu Visual Studio | 15.0.27005.2 | Wymagane
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języka C# i Visual Basic Roslyn | 15.0.27019.1 | Wymagane
-Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.0.27019.1 | Optional
+Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języka C# i Visual Basic Roslyn | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.6.27406.0 | Optional
 
 ## <a name="net-core-build-tools"></a>Narzędzia kompilacji platformy .NET core
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
+**ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
 **Opis:** narzędzia do tworzenia aplikacji platformy .NET Core.
 
@@ -58,54 +60,68 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.0.27019.1 |
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.Net.Core.Component.SDK | .NET podstawowe narzędzia do programowania 1.0 1.1 | 15.0.26606.0 | Wymagane
+Microsoft.Net.Core.Component.SDK | Narzędzia do programowania .NET core 2.0 | 15.6.27406.0 | Wymagane
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet obiektów docelowych i zadań kompilacji | 15.0.26919.1 | Wymagane
-Microsoft.Net.Core.Component.SDK.1x | Oprogramowanie .NET core narzędzi programistycznych 1.0 1.1 dla komputerów typu Desktop | 15.0.26919.1 | Optional
+Microsoft.Net.Core.Component.SDK.1x | .NET podstawowe narzędzia do programowania 1.0 1.1 | 15.6.27406.0 | Optional
 
-## <a name="visual-c-build-tools"></a>Narzędzia kompilacji w usłudze Visual C++
+## <a name="nodejs-build-tools"></a>Narzędzia node.js kompilacji
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.VCTools
+**ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Opis:** tworzenia klasycznych aplikacji opartych na systemie Windows przy użyciu zestawu narzędzi Visual C++ ATL i opcjonalne funkcje, takie jak MFC i C + +/ CLI.
+**Opis:** tworzyć aplikacje skalowalne sieci przy użyciu środowiska Node.js, asynchroniczne sterowane zdarzeniami środowiska wykonawczego języka JavaScript. 
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ Build Tools podstawowe funkcje | 15.0.27005.2 | Wymagane
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizacji pakietu redystrybucyjnego Visual C++ 2017 r. | 15.0.27019.1 | Wymagane
-Microsoft.VisualStudio.Component.Windows10SDK | Środowisko wykonawcze systemu Windows Universal C | 15.0.26621.2 | Wymagane
+Microsoft.VisualStudio.Component.Node.Build | Obsługa środowiska node.js | 15.6.27406.0 | Wymagane
+
+## <a name="visual-c-build-tools"></a>Narzędzia kompilacji w usłudze Visual C++
+
+**ID:** Microsoft.VisualStudio.Workload.VCTools
+
+**Opis:** tworzenia aplikacji klasycznych systemu Windows przy użyciu zestawu narzędzi firmy Microsoft C++ ATL i MFC.
+
+### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
+
+Identyfikator składnika | Nazwa | Wersja | Typ zależności
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ Build Tools podstawowe funkcje | 15.6.27406.0 | Wymagane
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizacji pakietu redystrybucyjnego Visual C++ 2017 r. | 15.6.27406.0 | Wymagane
+Microsoft.VisualStudio.Component.Windows10SDK | Środowisko wykonawcze systemu Windows Universal C | 15.6.27406.0 | Wymagane
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Zalecane
-Microsoft.VisualStudio.Component.VC.CMake.Project | Narzędzia Visual C++ tools for CMake | 15.0.27019.1 | Zalecane
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Zestaw narzędzi v141 2017 VC ++ (x86, x64) | 15.0.27019.1 | Zalecane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [x86 i x64] | 15.0.27128.1 | Zalecane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.0.27128.1 | Zalecane
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.0.27128.1 | Zalecane
+Microsoft.VisualStudio.Component.VC.CMake.Project | Narzędzia Visual C++ tools for CMake | 15.6.27406.0 | Zalecane
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Zestaw narzędzi v141 2017 VC ++ (x86, x64) | 15.6.27406.0 | Zalecane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [x86 i x64] | 15.6.27406.0 | Zalecane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Zalecane
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Zalecane
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET i sieć web development | 15.0.27005.2 | Zalecane
-Microsoft.Component.VC.Runtime.UCRTSDK | Zestaw Windows Universal CRT SDK | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 zestawu SDK | 15.0.26621.2 | Optional
-Microsoft.Net.Component.4.6.1.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.6.1 | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.VC.140 | Zestaw narzędzi w wersji 140 2015.3 VC ++ dla komputerów typu desktop (x86, x64) | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL — Obsługa | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | Obsługa MFC i ATL (x86 i x64) | 15.0.27005.2 | Optional
-Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (eksperymentalne) | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI pomocy technicznej | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduły biblioteki standardowej (eksperymentalne) | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilatory w programie Visual C++ i bibliotek dla ARM | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory w programie Visual C++ i bibliotek dla ARM64 | 15.0.27019.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 SDK (10.0.15063.0) dla pulpitu C++ [x86 i x64] | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [ARM i ARM64] | 15.0.27128.1 | Optional
-Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK i Biblioteka UCRT | 15.0.27019.1 | Optional
+Microsoft.Component.VC.Runtime.UCRTSDK | Zestaw Windows Universal CRT SDK | 15.6.27309.0 | Optional
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 zestawu SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.1.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.6.1 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.140 | Zestaw narzędzi w wersji 140 2015.3 VC ++ dla komputerów typu desktop (x86, x64) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL — Obsługa | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.ATLMFC | Obsługa MFC i ATL (x86 i x64) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (eksperymentalne) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI pomocy technicznej | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduły biblioteki standardowej (eksperymentalne) | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilatory w programie Visual C++ i bibliotek dla ARM | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory w programie Visual C++ i bibliotek dla ARM64 | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 SDK (10.0.15063.0) dla pulpitu C++ [x86 i x64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [ARM i ARM64] | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.WinXP | Obsługa systemu Windows XP dla języka C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK i Biblioteka UCRT | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Obsługa systemu Windows XP dla języka C++ | 15.6.27406.0 | Optional
 
 ## <a name="web-development-build-tools"></a>Narzędzia kompilacji programowanie dla sieci Web
 
-**Identyfikator:** Microsoft.VisualStudio.Workload.WebBuildTools
+**ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
 **Opis:** zadania programu MSBuild i elementów docelowych dla tworzenia aplikacji sieci web.
 
@@ -113,29 +129,31 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK i Bi
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 zestawu SDK | 15.0.26621.2 | Wymagane
-Microsoft.Net.Component.4.6.1.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.6.1 | 15.0.26621.2 | Wymagane
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Narzędzia do programowania .NET framework 4.6.1 | 15.0.27005.2 | Wymagane
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Narzędzia kompilacji programowanie WCF | 15.0.27019.1 | Wymagane
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Narzędzia kompilacji programowanie dla sieci Web | 15.0.26323.1 | Wymagane
-Microsoft.Net.Component.4.5.1.TargetingPack | Pakiet docelowy .NET framework 4.5.1 | 15.0.26621.2 | Zalecane
-Microsoft.Net.Component.4.5.2.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.5.2 | 15.0.26621.2 | Zalecane
-Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 15.0.26621.2 | Zalecane
-Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 15.0.26621.2 | Zalecane
-Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.0.26621.2 | Zalecane
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Narzędzia deweloperskie programu .NET framework 4 — 4.6 | 15.0.26606.0 | Zalecane
-Microsoft.Net.Core.Component.SDK | .NET podstawowe narzędzia do programowania 1.0 1.1 | 15.0.26606.0 | Zalecane
+Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 zestawu SDK | 15.6.27406.0 | Wymagane
+Microsoft.Net.Component.4.6.1.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.6.1 | 15.6.27406.0 | Wymagane
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Narzędzia do programowania .NET framework 4.6.1 | 15.6.27406.0 | Wymagane
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Narzędzia kompilacji programowanie WCF | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Narzędzia kompilacji programowanie dla sieci Web | 15.6.27406.0 | Wymagane
+Microsoft.Net.Component.4.5.1.TargetingPack | Pakiet docelowy .NET framework 4.5.1 | 15.6.27406.0 | Zalecane
+Microsoft.Net.Component.4.5.2.TargetingPack | Pakiet określania wartości docelowej platformy .NET framework 4.5.2 | 15.6.27406.0 | Zalecane
+Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 15.6.27406.0 | Zalecane
+Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 15.6.27406.0 | Zalecane
+Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6.27406.0 | Zalecane
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Narzędzia deweloperskie programu .NET framework 4 — 4.6 | 15.6.27406.0 | Zalecane
+Microsoft.Net.Core.Component.SDK | Narzędzia do programowania .NET core 2.0 | 15.6.27406.0 | Zalecane
+Microsoft.VisualStudio.Component.AspNet45 | Zaawansowane funkcje platformy ASP.NET | 15.6.27428.1 | Zalecane
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet obiektów docelowych i zadań kompilacji | 15.0.26919.1 | Zalecane
-Microsoft.Net.Component.3.5.DeveloperTools | Narzędzia do programowania .NET framework 3.5 | 15.0.26621.2 | Optional
-Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 zestawu SDK | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 docelowego pakietu | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 zestawu SDK | 15.0.27128.1 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 docelowego pakietu | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 zestawu SDK | 15.0.26419.1 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 targeting pack | 15.0.26621.2 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Narzędzia do programowania .NET framework 4.6.2 | 15.0.26621.2 | Optional
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Narzędzia do programowania .NET framework 4.7.1 | 15.0.27019.1 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia do programowania .NET framework 4.7 | 15.0.27005.2 | Optional
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 zestawu SDK | 15.0.27406.0 | Zalecane
+Microsoft.Net.Component.3.5.DeveloperTools | Narzędzia do programowania .NET framework 3.5 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | .NET framework 4.6.2 zestawu SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 docelowego pakietu | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 zestawu SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 docelowego pakietu | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.SDK | .NET framework 4.7 zestawu SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | .NET framework 4.7 targeting pack | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Narzędzia do programowania .NET framework 4.6.2 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Narzędzia do programowania .NET framework 4.7.1 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia do programowania .NET framework 4.7 | 15.6.27406.0 | Optional
 
 ## <a name="unaffiliated-components"></a>Odłączony składników
 
@@ -143,7 +161,13 @@ Są to składniki, które nie są dołączone każde obciążenie, ale można wy
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-Microsoft.VisualStudio.Component.VC.Tools.14.11 | Zestaw narzędzi v14.11 wersji 15.4 2017 VC ++ | 15.0.27128.1
+Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 zestawu SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 zestawu SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 zestawu SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 zestawu SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.11 | Zestaw narzędzi v14.11 wersji 15.4 2017 VC ++ | 15.0.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.12 | Zestaw narzędzi v14.12 wersji 15,5 cala 2017 VC ++ | 15.0.27406.0
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

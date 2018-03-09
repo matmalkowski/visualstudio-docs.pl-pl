@@ -1,26 +1,26 @@
 ---
 title: "Skróty klawiaturowe w usłudze Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Porady dotyczące klawiatury dla programu Visual Studio
 
-Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiaturowe w tym temacie. Ten temat jest tylko podzestaw skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual Studio, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md).
+Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiaturowe w tym artykule.
+
+Skróty wymienione w tym miejscu są tylko podzestaw skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual Studio, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Zarządzanie oknem
 
@@ -83,7 +83,7 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 |Edytor powiększenia|Ctrl+Shift+> (In), Ctrl+Shift+< (Out)||
 |Blokowanie wybór|Przytrzymaj klawisz Alt i przeciągnij mysz, klawiszy Shift + Alt + Strzałka||
 |Przenieś wiersz w górę lub w dół|Alt + Strzałka w górę / Alt + Strzałka w dół||
-|Zduplikowany wiersz|Ctrl+E,V|Visual Studio 2017 15,6 w wersji preview 2|
+|Zduplikowany wiersz|Ctrl+E,V|Visual Studio 2017 wersji 15,6|
 |Rozwiń wybór|**Shift**+**Alt**+**=**|Visual Studio 2017 wersji 15,5 cala|
 |Wybór umowy|**Shift**+**Alt**+**-**|Visual Studio 2017 wersji 15,5 cala|
 |Przejdź do definicji|F12||

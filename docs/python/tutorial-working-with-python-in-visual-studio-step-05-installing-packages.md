@@ -2,7 +2,7 @@
 title: "Praca z języka Python w programie Visual Studio w kroku 5, instalowanie pakietów | Dokumentacja firmy Microsoft"
 description: "Krok 5 podstawowy samouczek do pracy z języka Python w programie Visual Studio, prezentacja programu Visual Studio funkcje zarządzania pakietami w środowisku Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86068e56013bc62adad59e403c1e4a16c2cdfee9
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
@@ -39,17 +39,19 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 
   ![Pakiety zainstalowane w środowisku](media/environments-installed-packages-blue.png)
 
-1. Zainstaluj `matplotlib` wprowadzając jej nazwę w polu wyszukiwania, następnie wybierz pozycję`pip install`
+1. Zainstaluj `matplotlib` wprowadzając jej nazwę w polu wyszukiwania, następnie wybierz pozycję `pip install`
 
   ![Instalowanie matplotlib w środowisku](media/environments-add-matplotlib1.png)
 
 1. Jeśli zostanie wyświetlony monit, w tym celu należy wyrazić zgodę na podniesienia uprawnień.
- 
-1. Po zainstalowaniu pakietu zostanie wyświetlony w oknie środowiska Python. **X** z prawej strony pakietu odinstalowuje go. 
+
+1. Po zainstalowaniu pakietu zostanie wyświetlony w oknie środowiska Python. **X** z prawej strony pakietu odinstalowuje go.
 
   ![Ukończenie instalacji matplotlib w środowisku](media/environments-add-matplotlib2.png)
 
   Pasek postępu małych poniżej środowiska wskazuje, że program Visual Studio tworzy bazę danych IntelliSense dla nowo zainstalowany pakiet. **IntelliSense** karta zawiera także szczegółowe informacje. Należy pamiętać, że przed zakończeniem tej bazy danych, funkcje IntelliSense, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
+
+  Należy pamiętać, że **programu Visual Studio 2017 wersji 15,6** i później używa metody różnych i szybsze do pracy z IntelliSense i wyświetli komunikat w tym celu **IntelliSense** kartę.
 
 1. Utwórz nowy projekt z **Plik > Nowy > Projekt**, wybierając szablon "Python aplikacji". W pliku kodu, który pojawia się Wklej następujący kod, który tworzy wave cosinus, takich jak poprzednich kroków samouczka tylko tym kreślone graficznie:
 

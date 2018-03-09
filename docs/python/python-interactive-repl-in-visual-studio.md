@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
 
@@ -38,7 +38,7 @@ Visual Studio zawiera szereg trybów REPL dla języka Python do wyboru:
 | IPython | REPL komunikuje się IPython wewnętrznej bazy danych | Polecenia IPython, udogodnień Pylab | Nie | Tak, wbudowane w REPL |
 | IPython bez Pylab | REPL komunikuje się IPython wewnętrznej bazy danych | Standardowe IPython | Nie | Tak, strona potwierdzenia | 
 
-W tym temacie opisano **standardowe** i **debugowania** REPL trybów. Aby uzyskać więcej informacji o trybach IPython, zobacz [przy użyciu IPython REPL](interactive-repl-ipython.md).
+W tym artykule opisano **standardowe** i **debugowania** REPL trybów. Aby uzyskać więcej informacji o trybach IPython, zobacz [przy użyciu IPython REPL](interactive-repl-ipython.md).
 
 Aby uzyskać szczegółowe wskazówki, wraz z przykładami, w tym interakcji w edytorze, np. Ctrl + Enter, zobacz [samouczek krok 3: Korzystanie z okna interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
