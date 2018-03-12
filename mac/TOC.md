@@ -8,7 +8,7 @@
 
 # [Konta użytkowników](user-accounts.md)
 ## [Logowanie](signing-in.md)
-## [Aktywacja](activation.md)
+## [Włączanie subskrypcji](activation.md)
 
 # [Dostosowywanie środowiska IDE](customizing-the-ide.md)
 ## [Rozszerzenie programu Visual Studio dla komputerów Mac](extending-visual-studio-mac.md)
