@@ -1,24 +1,21 @@
 ---
 title: "Porady: Definiowanie oraz stosowanie delegatów działania w Projektancie przepływów pracy | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-caps.latest.revision: "3"
-ms.author: sdanie
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 47bca660b28c82b870946fb436b92c13a5aab485
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: d5f1a84983156e1e12c2407b1d128511eb27284f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Porady: Definiowanie oraz stosowanie delegatów działania w Projektancie przepływów pracy
-[!INCLUDE[net_v45](../ide/includes/net_v45_md.md)]zawiera nowe projektanta out-of-box dla <xref:System.Activities.Statements.InvokeDelegate> działania. Tego projektanta pozwala przypisać delegatów do działania, która pochodzi z <xref:System.Activities.ActivityDelegate>, takich jak <xref:System.Activities.ActivityAction> lub <xref:System.Activities.ActivityFunc%601>.  
+[!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] zawiera nowe projektanta out-of-box dla <xref:System.Activities.Statements.InvokeDelegate> działania. Tego projektanta pozwala przypisać delegatów do działania, która pochodzi z <xref:System.Activities.ActivityDelegate>, takich jak <xref:System.Activities.ActivityAction> lub <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Zdefiniuj do delegata działania  
   
@@ -81,4 +78,4 @@ ms.lasthandoff: 12/22/2017
  Podczas wykonywania przepływu pracy konsoli będzie zawierać następujące informacje:  
   
  **1**   
-**ABC**
+**abc**

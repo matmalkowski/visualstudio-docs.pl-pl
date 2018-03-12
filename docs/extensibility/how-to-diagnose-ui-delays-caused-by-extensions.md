@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Porady: diagnozowanie interfejsu użytkownika opóźnienia powodowane przez rozszerzenia
 
@@ -157,6 +157,8 @@ Narzędzia PerfView przedstawiono szczegółowe wskazówki, w menu Pomoc, które
 
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+
+Umożliwia także nowy analizatorów statycznych programu Visual Studio dla rozszerzeń (pakiet NuGet [tutaj](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), który wytyczne dotyczące najlepsze rozwiązania dotyczące pisania wydajne rozszerzenia. Zobacz listę [analizatorów zestawu VS SDK](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) i [wątkowość analizatorów](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
 > Jeśli nie możesz rozwiązać problem z brakiem odpowiedzi z powodu zależności nie ma kontroli nad (np. Jeśli rozszerzenie musi wywołać synchroniczne usług VS w wątku interfejsu użytkownika), chcielibyśmy wiadomo o nim. Jeśli jesteś członkiem naszej programu Visual Studio partnera, można skontaktować się nam po przesłaniu żądania pomocy technicznej developer. W przeciwnym razie użyj narzędzia "Zgłosić Problem" do przesyłania opinii i obejmują `"Extension UI Delay Notifications"` w tytule. Podaj szczegółowy opis analizy również.

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 86068e56013bc62adad59e403c1e4a16c2cdfee9
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
@@ -56,9 +56,9 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 1. Utwórz nowy projekt z **Plik > Nowy > Projekt**, wybierając szablon "Python aplikacji". W pliku kodu, który pojawia się Wklej następujący kod, który tworzy wave cosinus, takich jak poprzednich kroków samouczka tylko tym kreślone graficznie:
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

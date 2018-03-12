@@ -1,64 +1,60 @@
 ---
 title: Wybierz warunek, okno dialogowe (starsze) | Dokumentacja firmy Microsoft
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
 - Select Condition dialog box
 ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
-caps.latest.revision: 
-author: ErikRe
-ms.author: erikre
-manager: erikre
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a780cb0089a83df8f91a8c27be6c2b2953e70399
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fd6239e9032521fb178e8e1b6e4a0920af77e0e0
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Wybierz warunek, okno dialogowe (starsze)
-W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszych [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
-  
- **Wybierz warunek** okno dialogowe służy do wybierania warunek reguły deklaratywne, który ma być przypisany do właściwości warunku działania. Te warunki reguły są widoczne jako właściwości na wykonywanie następujących czynności out-of-box Windows Workflow Foundation:  
-  
--   [Grupy ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
-  
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
-  
--   [Działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
-  
--   [Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
-  
- Informacje na temat dostępu do **wybierz warunek** okno dialogowe, zobacz [jak: utworzyć warunek reguły deklaratywne (starsze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
-  
- W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz warunek** okno dialogowe.  
-  
-|Element interfejsu użytkownika|Opis|  
-|----------------|-----------------|  
-|**Nowy...**|Kliknij, aby otworzyć [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Aby utworzyć nowy warunek reguły.|  
-|**Edytuj...**|Kliknij, aby otworzyć [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) można edytować wybraną regułę warunku.|  
-|**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe pozwala zmienić nazwę warunku wybranej reguły.|  
-|**Usuwanie**|Kliknij, aby usunąć warunek wybranej reguły.|  
-|**Podgląd warunku**|Wyświetla wyrażenie warunku dla warunku wybranej reguły.|  
-|**OK**|Kliknij, aby przypisać wybraną regułę warunek do warunku działania.|  
-  
- Aby uzyskać więcej informacji na temat tworzenia i edytowania warunków reguły, zobacz [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
-  
- Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Porady: tworzenie warunku reguły deklaratywne (starsze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
- [Za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009)   
- [Za pomocą działania grupy ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
- [Za pomocą działania IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   
- [Przy użyciu działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080)   
- [Za pomocą działania Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091)   
- [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+ **Wybierz warunek** okno dialogowe służy do wybierania warunek reguły deklaratywne, który ma być przypisany do właściwości warunku działania. Te warunki reguły są widoczne jako właściwości na wykonywanie następujących czynności out-of-box Windows Workflow Foundation:
+
+-   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+
+-   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+
+-   [Działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+
+-   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+
+ Informacje na temat dostępu do **wybierz warunek** okno dialogowe, zobacz [jak: utworzyć warunek reguły deklaratywne (starsze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+
+ W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz warunek** okno dialogowe.
+
+|Element interfejsu użytkownika|Opis|
+|----------------|-----------------|
+|**New...**|Kliknij, aby otworzyć [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Aby utworzyć nowy warunek reguły.|
+|**Edit...**|Kliknij, aby otworzyć [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) można edytować wybraną regułę warunku.|
+|**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe pozwala zmienić nazwę warunku wybranej reguły.|
+|**Usuwanie**|Kliknij, aby usunąć warunek wybranej reguły.|
+|**Podgląd warunku**|Wyświetla wyrażenie warunku dla warunku wybranej reguły.|
+|**OK**|Kliknij, aby przypisać wybraną regułę warunek do warunku działania.|
+
+ Aby uzyskać więcej informacji na temat tworzenia i edytowania warunków reguły, zobacz [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
+
+ Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).
+
+## <a name="see-also"></a>Zobacz także
+
+- [Edytor warunku reguły, okno dialogowe (starsza wersja)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)
+- [Instrukcje: Tworzenie warunku reguły deklaratywnej (starsza wersja)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)
+- [Za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009)
+- [Za pomocą działania grupy ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)
+- [Za pomocą działania IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)
+- [Przy użyciu działanie ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080)
+- [Za pomocą działania Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091)
+- [Starsza wersja projektanta pomocy interfejsu użytkownika programu Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

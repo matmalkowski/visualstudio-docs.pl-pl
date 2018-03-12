@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Jak działa sortowania wyników testów w widoku hierarchii
 
-  Widok hierarchii testy alfabetycznie w przeciwieństwie do sortowania wyników. Inne grupy za pomocą ustawień zwykle sortować wyniki testu wyników, a następnie alfabetycznie. Poniżej przedstawiono różne opcje grupowania według do porównania. Możesz podać swoją opinię na temat projektowania [ten problem GitHub](https://github.com/Microsoft/vstest/issues/1425).
+  Widok hierarchii testy alfabetycznie w przeciwieństwie do sortowania wyników. Inne grupy za pomocą ustawień zwykle sortować wyniki testu wyników, a następnie alfabetycznie. Aby wyświetlić innej grupy opcji na poniższej ilustracji do porównania. Możesz podać swoją opinię na temat projektowania [ten problem GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. W widoku hierarchii są przekazywane, nie powiodło się, zostało pominięte, a nie uruchomiono ikonami obok projektu, Namespace i klasa grupowania. Co oznaczają ikony
+
+  Ikony obok projektu, Namespace i klasa grupowania odzwierciedlają stan testów w ramach tej grupy. Zobacz poniższą tabelę.
+
+  ![Ikony hierarchii Eksploratora testów](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Funkcje
 

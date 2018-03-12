@@ -1,63 +1,61 @@
 ---
 title: "Porady: dodawanie komentarzy do przepływu pracy w Projektancie przepływów pracy | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
-caps.latest.revision: "7"
-ms.author: sdanie
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 0a508fe657be8e2a12c54bc7ae1a46f338273cd9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: eb7825f79ee54b02d764e4ad8754ee1382b5d41f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Porady: dodawanie komentarzy do przepływu pracy w Projektancie przepływów pracy
-Aby ułatwić tworzenie większych i bardziej skomplikowanych przepływów pracy, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] umożliwia deweloperowi dodawać adnotacje do następujących typów elementów w Projektancie:  
-  
--   <xref:System.Activities.Activity>  
-  
--   <xref:System.Activities.Statements.State>  
-  
--   <xref:System.Activities.Statements.Transition>  
-  
--   Klasy wyprowadzone z<xref:System.Activities.Statements.FlowNode>  
-  
--   <xref:System.Activities.Variable>  
-  
--   <xref:System.Activities.Argument>  
-  
+
+Aby ułatwić tworzenie większych i bardziej skomplikowanych przepływów pracy, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] umożliwia deweloperowi dodawać adnotacje do następujących typów elementów w Projektancie:
+
+-   <xref:System.Activities.Activity>
+
+-   <xref:System.Activities.Statements.State>
+
+-   <xref:System.Activities.Statements.Transition>
+
+-   Klasy wyprowadzone z <xref:System.Activities.Statements.FlowNode>
+
+-   <xref:System.Activities.Variable>
+
+-   <xref:System.Activities.Argument>
+
 > [!IMPORTANT]
->  Zawartość adnotacji są zapisywane w postaci zwykłego tekstu w pliku XAML skojarzonego z przepływem pracy i mogą zostać odczytane przez innych użytkowników. Należy zachować ostrożność podczas wprowadzania informacji poufnych w adnotacji.  
-  
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Dodawanie adnotacji do działania w Projektancie  
-  
-1. W Projektancie przepływów pracy, kliknij prawym przyciskiem myszy element w przepływie pracy projektanta i wybierz pozycję **adnotacje**, **Dodawanie adnotacji**.  
-  
-1. Dodaj tekst adnotacji w odpowiednim miejscu.  
-  
+> Zawartość adnotacji są zapisywane w postaci zwykłego tekstu w pliku XAML skojarzonego z przepływem pracy i mogą zostać odczytane przez innych użytkowników. Należy zachować ostrożność podczas wprowadzania informacji poufnych w adnotacji.
+
+### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Dodawanie adnotacji do działania w Projektancie
+
+1. W Projektancie przepływów pracy, kliknij prawym przyciskiem myszy element w przepływie pracy projektanta i wybierz pozycję **adnotacje**, **Dodawanie adnotacji**.
+
+1. Dodaj tekst adnotacji w odpowiednim miejscu.
+
    Element zawiera ikonę adnotacji. Kursor myszy na ikonie adnotacji Wyświetla tekst adnotacji.
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Wyświetlanie w Projektant działań adnotacja  
-  
-1.  Projektant działań, którego adnotacji wyświetlanie poza danym działaniem, kliknij polecenie **numeru Pin** ikonę w moduł definiowania układu adnotacji.  
-  
-   Adnotacja jest wyświetlany w Projektancie działania. Na poniższym zrzucie ekranu adnotacja "Rozpoczęcia działania w przepływie pracy" jest wyświetlany w Projektancie działania.  
-  
-   ![Widoczne w Projektancie działań adnotacja](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
-  
-1. Aby wyświetlić poza Projektant działań adnotacja, umieść kursor nad obszarem adnotacji w Projektancie działania, a następnie kliknij przycisk **Odepnij** ikony  
-  
-   ![Wyświetlane poza designe działań adnotacja](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
-  
+### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Wyświetlanie w Projektant działań adnotacja
+
+1.  Projektant działań, którego adnotacji wyświetlanie poza danym działaniem, kliknij polecenie **numeru Pin** ikonę w moduł definiowania układu adnotacji.
+
+   Adnotacja jest wyświetlany w Projektancie działania. Na poniższym zrzucie ekranu adnotacja "Rozpoczęcia działania w przepływie pracy" jest wyświetlany w Projektancie działania.
+
+   ![Widoczne w Projektancie działań adnotacja](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+
+1. Aby wyświetlić poza Projektant działań adnotacja, umieść kursor nad obszarem adnotacji w Projektancie działania, a następnie kliknij przycisk **Odepnij** ikony
+
+   ![Wyświetlane poza designe działań adnotacja](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+
 ### <a name="showing-or-hiding-all-annotations"></a>Pokazywanie lub ukrywanie wszystkie adnotacje
 
 1. Kliknij prawym przyciskiem myszy działanie, które ma adnotację. Wybierz **adnotacje**, **Pokaż wszystkie adnotacje**.
