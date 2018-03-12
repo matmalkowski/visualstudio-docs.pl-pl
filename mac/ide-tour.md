@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 0dfd77c36c9880f1510f240f0a6c8f490a055fc4
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5fdac97248ce76157012ef913ea9057a4076e3c5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac Tour
 
@@ -69,7 +69,7 @@ Aby uzyskać więcej informacji na temat używania odwołań w programie Visual 
 
 ## <a name="dependencies--packages"></a>Zależności / pakietów
 
-Wszystkie zależności zewnętrzne używane w aplikacji są przechowywane w folderze zależności lub pakietów, w zależności od tego, czy są w .net Core lub Xamarin.iOS/Xamarin.Android projektu. Te zwykle są zawarte w postaci NuGet lub składnika.
+Wszystkie zależności zewnętrzne używane w aplikacji są przechowywane w folderze zależności lub pakietów, w zależności od tego, czy są w .net Core lub Xamarin.iOS/Xamarin.Android projektu. Te zwykle są zawarte w formie NuGet.
 
 NuGet jest najbardziej popularnych Menedżer pakietów dla rozwoju platformy .NET. Z obsługą NuGet programu Visual Studio można łatwo wyszukiwać i dodawanie pakietów do projektu do aplikacji.
 

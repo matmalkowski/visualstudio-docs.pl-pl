@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 757534638c9e4b2b6cecd75f62997994bf14cc0c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 
@@ -100,7 +100,7 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 > [!div class="nextstepaction"]
 > [Uruchamianie kodu w debugerze](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>Przechodząc głębiej
+## <a name="going-deeper"></a>Przechodząc głębiej
 
 - [Przy użyciu okna interaktywnego](python-interactive-repl-in-visual-studio.md)
 - [Użycie IPython REPL](interactive-repl-ipython.md)

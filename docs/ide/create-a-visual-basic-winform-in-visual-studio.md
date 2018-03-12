@@ -1,5 +1,6 @@
 ---
-title: "Szybki Start: Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic | Dokumentacja firmy Microsoft"
+title: "Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic | Dokumentacja firmy Microsoft"
+description: "Informacje o sposobie tworzenia aplikacji formularzy systemu Windows w programie Visual Studio za pomocą Visual Basic, krok po kroku."
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
@@ -7,7 +8,7 @@ ms.suite:
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: 
-ms.topic: quickstart
+ms.topic: article
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
@@ -16,14 +17,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
-W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
+# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
+W tym krótkie wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
 
 Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 

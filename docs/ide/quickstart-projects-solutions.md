@@ -10,16 +10,19 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
 
 W tym szybkiego startu 10 minut firma Microsoft będzie Poznaj, co to oznacza, że tworzenie rozwiązania i projektu w programie Visual Studio. Przyjrzymy właściwości projektu, a niektóre z plików, które może zawierać. Utworzymy również odwołanie do projektu drugiego.
+
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 > [!TIP]
 > Firma Microsoft będzie można konstruowania rozwiązania i projektu od podstaw w tego przewodnika Szybki Start, jako edukacyjnych wykonywania zrozumienie pojęcia projektu. W ogólne, używając programu Visual Studio najprawdopodobniej użyjesz wielu szablony projektu Visual Studio oferuje podczas tworzenia nowego projektu.

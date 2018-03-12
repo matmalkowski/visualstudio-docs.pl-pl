@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definiowanie niestandardowego polecenia dla projektów języka Python
 
@@ -154,7 +154,7 @@ Wszystkie wartości atrybutów jest rozróżniana wielkość liter.
 | Argumenty | Optional | Określa ciąg argumentów (jeśli istnieje) ma zostać przypisany do obiektu docelowego. Należy pamiętać, że po TargetType `script`, argumenty są podane z programem Python nie `python.exe`. Ignorowane dla `code` TargetType. |
 | ExecuteIn | Tak | Określa środowisko, w którym uruchomienia polecenia:<ul><li>**Konsola**: (domyślnie) uruchamia docelowy i argumenty tak, jakby ich zostaną wprowadzone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, podczas gdy elementem docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: tej samej konsoli, ale oczekuje na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w oknie danych wyjściowych w programie Visual Studio. Jeśli element TargetType "pip", Visual Studio wykorzystuje docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [okna interaktywnego Python](interactive-repl.md); opcjonalna nazwa wyświetlana jest używany jako tytuł okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
 | WorkingDirectory | Optional | Folder, w którym można uruchomić polecenie. |
-| ErrorRegex<br>WarningRegEx | Optional | Używana tylko wtedy, gdy ExecuteIn jest `output`. Obie wartości Określ wyrażenie regularne, z którym program Visual Studio analizuje dane wyjściowe polecenia, aby wyświetlić błędy i ostrzeżenia w oknie Lista błędów. Jeśli nie zostanie określony, polecenie nie dotyczy w oknie Lista błędów. Aby uzyskać więcej informacji, w jaki Visual Studio oczekuje, zobacz [grup przechwytywania o nazwie](#named-capture-groups-for-regular-expression). |
+| ErrorRegex<br>WarningRegEx | Optional | Używana tylko wtedy, gdy ExecuteIn jest `output`. Obie wartości Określ wyrażenie regularne, z którym program Visual Studio analizuje dane wyjściowe polecenia, aby wyświetlić błędy i ostrzeżenia w oknie Lista błędów. Jeśli nie zostanie określony, polecenie nie dotyczy w oknie Lista błędów. Aby uzyskać więcej informacji, w jaki Visual Studio oczekuje, zobacz [grup przechwytywania o nazwie](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Optional | Listę wymagań dotyczących pakietu dla polecenia przy użyciu tego samego formatu co [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Uruchom PyLint** polecenia, na przykład Określa `pylint>=1.0.0`. Przed uruchomieniem polecenia, programu Visual Studio sprawdza, czy są zainstalowane wszystkie pakiety na liście. Aby zainstalować wszystkie brakujące pakiety programu Visual Studio korzysta pip. |
 | Środowisko | Optional | Ciąg zmiennych środowiskowych, aby zdefiniować przed uruchomieniem polecenia. Używa każdej zmiennej w postaci nazwa = wartość, gdy wiele zmiennych, oddzielając je średnikami. Zmienna z wieloma wartościami musi być zawarty w pojedynczym lub podwójnym cudzysłowie, podobnie jak w "Nazwa = wartość1; WARTOŚĆ2 ". |
 

@@ -7,23 +7,25 @@ ms.suite:
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
-W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web platformy ASP.NET Core C#. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web platformy ASP.NET Core C#.
+
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -86,6 +88,5 @@ Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że 
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)  
-[Wprowadzenie do języka C# i Visual Basic przy użyciu programu Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
-[Wprowadzenie do platformy ASP.NET Core stron Razor](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)
+* [Wprowadzenie do platformy ASP.NET Core stron Razor](/aspnet/core/tutorials/razor-pages/razor-pages-start)

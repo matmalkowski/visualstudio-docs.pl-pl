@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - ExceptionsShouldBePublic
 - CA1064
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7779be831b32572addb6198b5a5be46616cdb1b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b376de69c288a084ff3bb33aba1e1b8a0bc881e5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Wyjątki powinny być publiczne
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Opis reguły  
  Wystąpił wyjątek wewnętrzny jest widoczna tylko wewnątrz własnego wewnętrznego zakresu. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wewnętrzny wyjątek pochodzi z <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>, kod zewnętrzny nie ma wystarczającej ilości informacji, aby dowiedzieć się, co należy zrobić z wyjątkiem.  
   
- Jednak jeśli kod ma publiczny wyjątek, który później jest używana jako podstawa dla wewnętrznego wyjątku, jest uzasadnione przyjęto założenie, że kodu limit będą mogli czymś inteligentnego z wyjątkiem podstawowej. Wyjątek publicznego będą mieć więcej informacji niż dostarczanych przez T:System.Exception, T:System.SystemException lub T:System.ApplicationException.  
+ Jednak jeśli kod ma publiczny wyjątek, który później jest używana jako podstawa dla wewnętrznego wyjątku, jest uzasadnione przyjęto założenie, że kodu limit będą mogli czymś inteligentnego z wyjątkiem podstawowej. Publiczny wyjątek będzie zawierać więcej informacji niż dostarczanych przez <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Udostępnić wyjątek lub pochodzi z wewnętrznego wyjątku z publicznego wyjątek, który nie jest <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.  

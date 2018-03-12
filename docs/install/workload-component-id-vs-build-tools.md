@@ -17,11 +17,11 @@ ms.technology:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: dba4c71320f00e4e35bc7c8d115aa342eac23de3
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio kompilacji narzędzia 2017 składników katalogu
 
@@ -86,12 +86,12 @@ Microsoft.VisualStudio.Component.Node.Build | Obsługa środowiska node.js | 15.
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ Build Tools podstawowe funkcje | 15.6.27406.0 | Wymagane
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizacji pakietu redystrybucyjnego Visual C++ 2017 r. | 15.6.27406.0 | Wymagane
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Zestaw narzędzi v141 2017 VC ++ (x86, x64) | 15.6.27406.0 | Wymagane
 Microsoft.VisualStudio.Component.Windows10SDK | Środowisko wykonawcze systemu Windows Universal C | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Zalecane
 Microsoft.VisualStudio.Component.VC.CMake.Project | Narzędzia Visual C++ tools for CMake | 15.6.27406.0 | Zalecane
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Zestaw narzędzi v141 2017 VC ++ (x86, x64) | 15.6.27406.0 | Zalecane
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [x86 i x64] | 15.6.27406.0 | Zalecane
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Zalecane
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Zalecane

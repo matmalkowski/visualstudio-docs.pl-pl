@@ -1,19 +1,19 @@
 ---
-title: "Zarządzanie odwołaniami w projekcie"
+title: "Zarządzanie odwołaniami w projekcie w programie Visual Studio for Mac | Dokumentacja firmy Microsoft"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 30f6c99c6ac827b7da94fd228a7034e9ce0b0fac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 99f3ba9e5192bc17df23a93c9cad7e953797e9b4
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
-Visual Studio for Mac zawiera trzy metody dodawania dodatkowych odwołań do projektu:
+Program Visual Studio dla komputerów Mac udostępnia dwa sposoby Dodawanie dodatkowych odwołań do projektu:
 
 ![Odwołania do projektu](media/projects-and-solutions-image10.png)
 
@@ -21,7 +21,6 @@ Są to:
 
 * Odwołania
 * NuGets (dodanej za pomocą folderu pakietów)
-* Składniki
 
 Ponadto odwołania sieci Web i odwołania do natywnej można również dodać do każdego projektu.
 

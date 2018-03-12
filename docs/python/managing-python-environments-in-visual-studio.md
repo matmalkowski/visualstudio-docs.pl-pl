@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 139916cbecd6e0c22062da9221d452c16309a564
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Zarządzanie środowiska Python w programie Visual Studio
 
@@ -70,7 +70,7 @@ W obu przypadkach **środowiska Python** okno jako element równorzędny karty d
 
 Powyższy obraz pokazuje, że program Visual Studio wykrył dwóch instalacji języka Python 3,6 (32-bitowy) wraz z Anaconda 5.0.0.
 
-Domyślne środowisko pogrubioną czcionką jest (w tym przypadku część instalacji Anaconda), 3,6 Python, używający dla wszystkich nowych projektów programu Visual Studio. Polecenia w dolnej części okna dotyczą wybranego 3,6 Python interpreter, które jako użytkownik widzi jest instalacji określonych w `C:\Python36-32`. Jeśli nie widzisz środowisku spodziewasz się, zobacz [ręczne identyfikowanie tłumacza istniejących](#manually-identifying-an-existing-interpreter).
+Domyślne środowisko pogrubioną czcionką jest (w tym przypadku część instalacji Anaconda), 3,6 Python, używający dla wszystkich nowych projektów programu Visual Studio. Polecenia w dolnej części okna dotyczą wybranego 3,6 Python interpreter, które jako użytkownik widzi jest instalacji określonych w `C:\Python36-32`. Jeśli nie widzisz środowisku spodziewasz się, zobacz [ręczne identyfikowanie istniejącego środowiska](#manually-identifying-an-existing-environment).
 
 Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. Inny formant może pojawić się odświeża IntelliSense bazy danych dla tego środowiska (zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab) szczegółowe informacje o bazie danych).
 

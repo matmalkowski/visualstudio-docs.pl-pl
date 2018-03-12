@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Wprowadzenie do debugowania w programie Visual Studio
 Program Visual Studio udostępnia zaawansowany zestaw zintegrowanych kompilacji projektu oraz narzędzia debugowania. W tym temacie Dowiedz się, jak rozpocząć korzystanie z najprostszych zbiór debugowanie funkcji interfejsu użytkownika.  
+
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Kod nie działa. Pomóż mi, Visual Studio!  
  Więc możesz już znalezienia edytora i po utworzeniu kodu. Teraz ma się rozpocząć debugowanie kodu. W programie Visual Studio, podobnie jak w przypadku większości IDEs są dwie fazy do debugowania: kompilowanie kodu zdołały wychwycić i rozwiąż problemy projektu i kompilatora; i uruchamianie kodu w środowisku zdołały wychwycić i usuń błędy środowiska wykonawczego i dynamicznych.  
@@ -101,7 +105,7 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 
  Ustaw punkt przerwania, klikając na marginesie daleko wiersza miejscu podziału wystąpienia lub naciśnij klawisz **F9** można ustawić punktu przerwania w bieżącym wierszu kodu. Po uruchomieniu kodu wstrzyma (lub *podziału*) przed wykonaniem instrukcji ten wiersz kodu.  
 
- ![Visual Studio punktu przerwania](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")   
+ ![Visual Studio breakpoint](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")   
 
  Najczęstsze zastosowania dla punktów przerwania obejmują:  
 
@@ -118,15 +122,15 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 ### <a name="inspect-your-code-at-run-time"></a>Sprawdź kod w czasie wykonywania  
  Po kodzie uruchomionych trafienia punktu przerwania i wstrzymuje działanie, wiersz kodu oznaczone kolorem żółtym (bieżącej instrukcji) nie ma jeszcze wykonane. W tym momencie można wykonać bieżącej instrukcji, a następnie sprawdź zmienionymi wartościami. Można użyć kilku *krok* poleceń do wykonania kodu w debugerze. Kod oznaczone w przypadku wywołania metody, można krok do niego, naciskając **F11**. Możesz również *Przekrocz nad* wiersz kodu, naciskając klawisz **F10**. Aby uzyskać dodatkowe polecenia i szczegółowe informacje na temat krokowo kodu, przeczytaj [Przejdź kodu za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Visual Studio Uruchom &#45; kontroli wartość czasu](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Visual Studio run&#45;time value inspection](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  Na powyższej ilustracji, można odtwarzać instrukcja debugera jeden naciskając albo **F10** lub **F11** (ponieważ nie Brak wywołania metody, zarówno polecenia mają ten sam rezultat).
 
  Gdy debuger jest wstrzymana, można sprawdzić zmiennych i stosy, aby określić, co się dzieje wywołań. Czy wartości w zakresach, które chcesz wyświetlić? Są wykonywane w odpowiedniej kolejności wywołań?  
 
- ![Visual Studio Uruchom &#45; kontroli wartość czasu](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
+ ![Visual Studio run&#45;time value inspection](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- Umieść kursor nad zmienną do wartości i odwołania, które aktualnie znajdują się w temacie. Jeśli widzisz wartość, która Nieoczekiwane wyrażenie prawdopodobnie usterki w poprzednim lub wywoływania wierszach kodu.  Aby uzyskać bardziej szczegółowe informacje [więcej](../debugger/getting-started-with-the-debugger.md) o korzystanie z debugera. 
+ Umieść kursor nad zmienną do wartości i odwołania, które aktualnie znajdują się w temacie. Jeśli widzisz wartość, która Nieoczekiwane wyrażenie prawdopodobnie usterki w poprzednim lub wywoływania wierszach kodu.  Aby uzyskać bardziej szczegółowe informacje [więcej](../debugger/getting-started-with-the-debugger.md) o korzystanie z debugera.
 
  Ponadto program Visual Studio Wyświetla okno narzędzia diagnostyczne, w którym można obserwować aplikacji Procesora i wykorzystania pamięci w czasie. Później podczas programowania aplikacji można użyć tych narzędzi do wyszukania nieprzewidziane duże obciążenie lub pamięci alokacji Procesora. Używany w połączeniu z **czujki** okno i punktów przerwania, aby określić przyczynę nieoczekiwany duże obciążenie lub Publikuj zasobów.  Aby uzyskać więcej informacji, zobacz [profilowania samouczek funkcji](../profiling/profiling-feature-tour.md).
 
