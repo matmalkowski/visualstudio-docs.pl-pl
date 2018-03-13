@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/13/2018
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazów i ikon dla programu Visual Studio
-##  <a name="BKMK_ImageUseInVisualStudio"></a>Obraz używany w programie Visual Studio  
+##  <a name="BKMK_ImageUseInVisualStudio"></a> Obraz używany w programie Visual Studio  
  Przed utworzeniem kompozycji, rozważ przekształcenie Użyj 1000 + obrazy [Biblioteka obrazów w usłudze Visual Studio](http://www.microsoft.com/en-my/download/details.aspx?id=35825).  
   
 ### <a name="types-of-images"></a>Typy obrazów  
@@ -29,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
      **Uwaga:** obrazy są używane w systemie menu, nie należy tworzyć ikony dla każdego polecenia. Zapoznaj się [menu i poleceń programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) aby zobaczyć, czy polecenia należy uzyskać ikony.  
   
--   **Miniatury.** Obrazy używane w obszarze podglądu okna dialogowego, takie jak okna dialogowego Nowy projekt.  
+-   **Thumbnails.** Obrazy używane w obszarze podglądu okna dialogowego, takie jak okna dialogowego Nowy projekt.  
   
 -   **Okno dialogowe obrazów.** Obrazy, które są wyświetlane w oknach dialogowych lub kreatorów, jako opisową grafiki czy wskaźniki wiadomości. Użyj rzadko i tylko wtedy, gdy jest to niezbędne do zilustrowanie koncepcji trudne lub uzyskania uwagi użytkownika (alertu, ostrzeżenie).  
   
@@ -37,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **Kursory.** Służy do wskazania, czy operacja jest dozwolona, za pomocą myszy, gdy obiekt może zostać porzucony i tak dalej.  
   
-##  <a name="BKMK_IconDesign"></a>Ikona projektu  
+##  <a name="BKMK_IconDesign"></a> Ikona projektu  
   
 ### <a name="overview"></a>Omówienie  
  Ikony stylu modern, które czystą geometrii i 50/50 saldo plus/minus (jasny/ciemny) i użyj metafory bezpośrednie, zrozumiały dla korzysta z programu Visual Studio. Kluczowe ikonę Centrum punkty projektu wokół przejrzystości, uproszczenie i kontekstu.  
@@ -86,14 +88,14 @@ ms.lasthandoff: 12/22/2017
   
 |||  
 |-|-|  
-|**"Pokaż"**|**"View"**|  
+|**"Show"**|**"View"**|  
 |![Pokaż ikonę](../../extensibility/ux-guidelines/media/0404-07_show.png "0404 07_Show")|![Ikona widoku](../../extensibility/ux-guidelines/media/0404-08_view.png "0404 08_View")|  
   
  Wskazująca w prawo powiększanie ikonę szkła powinien reprezentują wyszukiwanie tylko, wyszukiwania i przeglądania. Wariant lewej ze znakiem plus lub minus powinien reprezentują tylko Powiększ / pomniejszyć.  
   
 |||  
 |-|-|  
-|**"Wyszukiwanie"**|**"Powiększenia"**|  
+|**"Wyszukiwanie"**|**"Zoom"**|  
 |![Ikona wyszukiwania](../../extensibility/ux-guidelines/media/0404-09_search.png "0404 09_Search")|![Ikona powiększenia](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404 10_Zoom")|  
   
  W widokach drzewa nie używać ikonę folderu i modyfikujący. Jeśli to możliwe, używaj tylko modyfikatora.  
@@ -101,7 +103,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**Poprawne drzewa widoku ikon**|**Ikony widoku drzewa nieprawidłowa**|  
-|![Ikona widoku drzewa poprawne &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404 11_TreeViewCorrect1") ![Popraw ikona widoku drzewa &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404 12_TreeViewCorrect2")|![Ikona widoku drzewa nieprawidłowa &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404 13_TreeViewIncorrect1") ![niepoprawne ikona widoku drzewa &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404 14_TreeViewIncorrect2")|  
+|![Ikona widoku drzewa poprawne &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404 11_TreeViewCorrect1") ![ikona widoku drzewa poprawne &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404 12_TreeViewCorrect2")|![Ikona widoku drzewa nieprawidłowa &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404 13_TreeViewIncorrect1") ![ikona widoku drzewa nieprawidłowa &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404 14_ TreeViewIncorrect2")|  
   
 ### <a name="style-details"></a>Styl Szczegóły  
   
@@ -147,7 +149,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**Poprawne stosunek ujemna dodatnie**|**Niepoprawne stosunek ujemna dodatnie**|  
-|![Popraw visual waga dla ikony &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404 26_VisualWeightCorrect1")<br /><br /> ![Popraw visual waga dla ikony &#40; 2 &#41; ] (../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404 27_VisualWeightCorrect2")<br /><br /> ![Popraw visual waga dla ikony &#40; 3 &#41; ] (../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404 28_VisualWeightCorrect3")|![Nieprawidłowa waga visual dla ikony](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 29_VisualWeightIncorrect")|  
+|![Popraw visual waga dla ikony &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404 26_VisualWeightCorrect1")<br /><br /> ![Popraw visual waga dla ikony &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404 27_VisualWeightCorrect2")<br /><br /> ![Popraw visual waga dla ikony &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404 28_VisualWeightCorrect3")|![Nieprawidłowa waga visual dla ikony](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404 29_VisualWeightIncorrect")|  
   
  Do tworzenia elementów bez ograniczania integralności elementu, należy użyć kształtów proste, można porównywać i kąty dopełniający. Jeśli to możliwe, należy użyć kątów 45 lub 90°.  
   
@@ -201,7 +203,7 @@ ms.lasthandoff: 12/22/2017
   
  **Małe (16 x 16) projektu** ikony powinna mieć nie więcej niż dwa elementy: jednego typu podstawowego i jeden modyfikator.  
   
- ![Przykłady małe (16 x 16) projektu ikony](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404 43_16x16Project1") ![ikona 16 x 16 projektu &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404 44_16x16Project2") ![ikona 16 x 16 projektu &#40; 3 &#41;] (../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404 45_16x16Project3")<br />Przykłady małych ikon projektu (16 x 16)
+ ![Przykłady małe (16 x 16) projektu ikony](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404 43_16x16Project1") ![ikona 16 x 16 projektu &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404 44_16x16Project2") ![ikona 16 x 16 projektu &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404 45_16x16Project3")<br />Przykłady małych ikon projektu (16 x 16)
   
  **Duże projektu (32 x 32)** ikony zawierać nie więcej niż cztery następujące elementy: jeden podstawowy, Modyfikatory jednej do dwóch i jeden język nakładki.  
   
@@ -248,7 +250,7 @@ ms.lasthandoff: 12/22/2017
   
  Aby uzyskać więcej informacji na temat używania kolorów w Visual Studio ikony, zobacz [przy użyciu kolorów w obrazach](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).  
   
-##  <a name="BKMK_UsingColorInImages"></a>W przypadku obrazów przy użyciu kolorów  
+##  <a name="BKMK_UsingColorInImages"></a> W przypadku obrazów przy użyciu kolorów  
   
 ### <a name="overview"></a>Omówienie  
  Ikony w programie Visual Studio są głównie monochromatyczny. Kolor jest zarezerwowana do przekazywania określonych informacji i nigdy nie dekoracji. Kolor jest używany:  
@@ -272,10 +274,10 @@ ms.lasthandoff: 12/22/2017
 ### <a name="base-palette"></a>Podstawowy palety  
  Wszystkie standardowe ikony zawiera trzy podstawowe kolorów. Ikony zawierają nie gradientach lub cieni z co najmniej dwa wyjątki dla ikony narzędzia 3D.  
   
-|Użycie|Nazwa|Wartość (motywu jasny)|Próbki|Przykład|  
+|Użycie|Nazwa|Wartość (motywu jasny)|Swatch|Przykład|  
 |-----------|----------|---------------------------|------------|-------------|  
 |Tło/ciemny|VS BG|424242 / 66,66,66|![Próbka 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Przykład podstawowego palety](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
-|Pierwszego planu/lekki|VS FG|F0EFF1 / 240,239,241|![Próbka F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|Pierwszego planu/lekki|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
 |Kontur|VS limit|F6F6F6 / 246,246,246|![Próbka F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  Oprócz podstawowego kolory każda z ikon może zawierać jeden dodatkowe kolor z palety rozszerzonej.  
@@ -285,7 +287,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="action-modifiers"></a>Modyfikatory akcji  
  Cztery kolory poniżej wskazują typy akcji wymaganych przez Modyfikatory akcji:  
   
-|Użycie|Nazwa|Wartość (wszystkie motywów)|Próbki|  
+|Użycie|Nazwa|Wartość (wszystkie motywów)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |Dodatnie|Zielony akcji VS|388A34 / 56,138,52|![Próbka 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Ujemne|Czerwony akcji VS|A1260D / 161,38,13|![Próbka A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
@@ -309,7 +311,7 @@ ms.lasthandoff: 12/22/2017
   
 |||||  
 |-|-|-|-|  
-|![Przejdź do pola ikona](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Przejdź do pola|![Umieścić w zadaniu wsadowym, Sprawdź &#45; w ikonę](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Wsadowej operacji zaewidencjonowania|![Ikona Edytor adres](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Edytor adresów|![Ikona Edytor skojarzenia](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 14_AssociationEditor")<br />Edytor skojarzenia|  
+|![Przejdź do pola ikona](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405 11_GoToField")<br />Przejdź do pola|![Umieścić w zadaniu wsadowym wyboru&#45;w ikonę](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405 12_BatchedCheckIn")<br />Wsadowej operacji zaewidencjonowania|![Ikona Edytor adres](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405 13_AddressEditor")<br />Edytor adresów|![Ikona Edytor skojarzenia](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405 14_AssociationEditor")<br />Edytor skojarzenia|  
   
  Ciemny złota jest używany głównie dla modyfikator "New".  
   
@@ -328,20 +330,20 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="folder"></a>Folder  
   
-|Użycie|Nazwa|Wartość (wszystkie motywów)|Próbki|Przykład|  
+|Użycie|Nazwa|Wartość (wszystkie motywów)|Swatch|Przykład|  
 |-----------|----------|--------------------------|------------|-------------|  
 |Foldery|Folder|DCB67A / 220,182,122|![Próbka DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Ikona kolor folderu](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio języki  
  Każdy z typowych języków lub platform dostępne w programie Visual Studio ma skojarzone kolor. Te kolory ikonę podstawowej lub Modyfikatory języka, pojawiające się w prawym górnym rogu złożone ikon.  
   
-|Użycie|Nazwa|Wartość (wszystkie motywów)|Próbki|  
+|Użycie|Nazwa|Wartość (wszystkie motywów)|Swatch|  
 |-----------|----------|--------------------------|------------|  
-|ASP, HTML, WPF|Niebieski HTML WPF ASP|0095D 7 / 0,149,215|![Próbka 0095 D 7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
+|ASP, HTML, WPF|ASP HTML WPF Blue|0095D 7 / 0,149,215|![Próbka 0095 D 7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|Purpurowy CPP|9B4F96 / 155,79,150|![Próbka 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |C#|CS zielony (zielony akcji VS)|388A34 / 56,138,52|![Próbka 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |CSS|Czerwony CSS|BD1E2D / 189,30,45|![Próbka BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
-|F#|Purpurowy FS|672878 / 103,40,120|![Próbka 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
+|F#|Purpurowy FS|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
 |JavaScript|Kolor pomarańczowy JS|F16421 / 241,100,33|![Próbka F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
 |VB|Niebieski VB (VS akcji niebieski)|00539C / 0,83,156|![Próbka 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |TypeScript|Kolor pomarańczowy usług terminalowych|E04C06 / 224,76,6|![Próbka E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
@@ -351,16 +353,16 @@ ms.lasthandoff: 12/22/2017
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Ikona Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![K & 35; ikona](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![& C &43; 43; ikona](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![P & 35; ikona](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Ikona Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
-|![Ikona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Ikona WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Ikona ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Ikona CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Ikona typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
+|![Ikona Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; ikona](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; ikona](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Ikona Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
+|![Ikona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![Ikona ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Ikona CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Ikona typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  Ikony IntelliSense używać palety kolorów wyłącznego. Kolorów te służą do użytkowników szybko rozróżnienie dwóch różnych elementów na liście podręcznego IntelliSense.  
   
-|Użycie|Nazwa|Wartość (wszystkie motywów)|Próbki|  
+|Użycie|Nazwa|Wartość (wszystkie motywów)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |Klasa zdarzeń|Kolor pomarańczowy akcji VS|C27D1A / 194,125,26|![Próbka C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|Metody rozszerzenia, delegat metody, moduł,|Purpurowy akcji VS|652D 90 / 101,45,144|![Próbka 652D 90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|Metody rozszerzenia, delegat metody, moduł,|Purpurowy akcji VS|652D90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Pola, elementu wartości wyliczeniowej, makra, struktury, typ wartości Unii, operatora, interfejs|Niebieski akcji VS|00539C / 0,83,156|![Próbka 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Obiekt|Zielony akcji VS|388A34 / 56,138,52|![Próbka 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Stała, wyjątku, element Enum, mapy, element mapy, Namespace, szablon, definicji typu|Tła (VS BG)|424242 / 66,66,66|![Próbka 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
@@ -375,13 +377,13 @@ ms.lasthandoff: 12/22/2017
 ### <a name="notifications"></a>Powiadomienia  
  Powiadomień w programie Visual Studio są używane do wskazywania stanu. Palety powiadomień używa następujących czterech kolorów, a także Opcje wypełnienia biały lub czarny pierwszego planu, w celu zdefiniowania powiadomienia o następujących poziomach stanu.  
   
-|Użycie|Nazwa|Wartość (wszystkie motywów)|Próbki|  
+|Użycie|Nazwa|Wartość (wszystkie motywów)|Swatch|  
 |-----------|----------|--------------------------|------------|  
 |Stan: neutralne|Niebieski powiadomienia (na niebiesko VS)|1BA1E2 / 27,161,226|![Próbka 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Stan: dodatnią|Zielony powiadomienia (zielony VS)|339933 / 51,153,51|![Próbka 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
 |Stan: ujemna|Powiadomienie czerwony (czerwony VS)|E51400 / 229,20,0|![Próbka E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
 |Stan: ostrzeżenie|Powiadomienia, żółty (kolor pomarańczowy VS)|FFCC00 / 255,204,0|![Próbka FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
-|Wypełnienie pierwszego planu|Czarne powiadomienia (czarny)|000000 / 0,0,0|![Próbka & 35; 000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
+|Wypełnienie pierwszego planu|Czarne powiadomienia (czarny)|000000 / 0,0,0|![Próbka &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
 |Wypełnienie pierwszego planu|Białe powiadomienia (biały)|FFFFFF / 255,255,255|![Próbka FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>Przykłady ikony powiadomień  
@@ -393,7 +395,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Ogólnie rzecz biorąc Visual Studio Online składa się z funkcji obsługiwanych w przeglądarce. Kolor może być różna w różnych środowiskach, ale styl jest taka sama.  
   
-|Grupa|Użycie|Nazwa|Wartość (wszystkie motywów)|Próbki|  
+|Grupa|Użycie|Nazwa|Wartość (wszystkie motywów)|Swatch|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|Tło|TFSO BG|656565/ 101, 101, 101|![Próbka 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Kontur|TFSO LIMIT|FFFFFF / 255 255, 255|![Próbka FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
@@ -416,7 +418,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="examples-of-visual-studio-online-icons"></a>Przykłady programu Visual Studio Online ikon  
   
-|TFS w trybie Online||||  
+|TFS Online||||  
 |----------------|-|-|-|  
 |![Ikona zespołu TFS Online](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405 49_TFSOnlineTeam")<br />Zespół usługi online|![Ikona informacji TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Informacje|![Ikona historii TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Historia|![Ikona gałęzi TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Odgałęzienie|  
   
