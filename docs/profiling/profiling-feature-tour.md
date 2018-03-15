@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profiling-feature-tour"></a>Przegląd funkcji profilowania
 
@@ -154,18 +154,21 @@ Jeśli potrzebne funkcje, takie jak instrumentacji, które nie są aktualnie dos
 
 Poniżej przedstawiono listę różnych narzędzi, których program Visual Studio oferuje i projekty różnych typów można używać ich z:
   
-|Narzędzia wydajności|System Windows desktop|Platforma UWP|ASP.NET/ASP.NET Core|  
-|----------------------|---------------------|------------------------------|-------------|  
-|[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak|  
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak (nie dla platformy .NET Core Core/ASP.NET)|  
-|[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak|  
-|[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|  
-|[PerfTips](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|  
-|[Performance Explorer](../profiling/performance-explorer.md)|Tak|Brak|Tak (nie dla platformy ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|.NET i Visual Studio Enterprise|.NET i Visual Studio Enterprise|.NET i Visual Studio Enterprise|
-|[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak| 
-|[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak, aby HTML, nie dla XAML|Brak|  
-|[Pamięć języka JavaScript](../profiling/javascript-memory.md)|Brak|tak, aby HTML, nie dla XAML|Brak|  
+|Narzędzia wydajności|System Windows desktop|Platforma UWP|ASP.NET/ASP.NET Core| 
+|----------------------|---------------------|-------------|-------------|  
+|[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak| 
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak (patrz uwaga)|Tak|Tak (patrz uwaga)|
+|[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak| 
+|[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|
+|[PerfTips](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|
+|[Performance Explorer](../profiling/performance-explorer.md)|Tak|Brak|Tak|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET z Visual Studio Enterprise|.NET z Visual Studio Enterprise|.NET z Visual Studio Enterprise|
+|[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak|
+|[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak, aby HTML, nie dla XAML|Brak| 
+|[Pamięć języka JavaScript](../profiling/javascript-memory.md)|Brak|tak, aby HTML, nie dla XAML|Brak|
+
+> [!NOTE]
+> Dla platformy .NET Core i ASP.NET Core narzędzia użycie procesora CPU aktualnie nie zawiera prawidłowych wyników z PBDs przenośnej. Zamiast tego użyj pełne pliki PDB.
 
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)

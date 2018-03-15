@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -39,7 +39,7 @@ Aby pisać kod dla składników zewnętrznych lub połączone usługi, projektu 
 
 Aby dodać odwołanie, węzła odwołań w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj odwołanie**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Dodaj odwołanie w Visual C &43; &#43; ] (../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
 
 Można wprowadzić odwołania do następujących typów składników i usług:
 
@@ -108,7 +108,7 @@ Domyślnie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyL
 
 Można tworzyć aplikacje, które odwołują się do projektów lub zestawów, które odnoszą się do innej wersji programu .NET Framework. Na przykład można utworzyć aplikacji, którego element docelowy [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)], który odwołuje się do zestawu, którego celem jest [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Jeśli tworzenie projektu, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nie można ustawić odwołanie projektu do projektu lub zestawu, którego celem jest nowsza wersja.
 
-Aby uzyskać więcej informacji, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Aby uzyskać więcej informacji, zobacz [omówienie wielowersyjności](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Odwołania do projektu do projektu
 
@@ -125,5 +125,5 @@ Odwołania do pliku są bezpośrednie odwołania do zestawów poza kontekstem pr
 
 ## <a name="see-also"></a>Zobacz także
 
-[Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)  
-[Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)
+[porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

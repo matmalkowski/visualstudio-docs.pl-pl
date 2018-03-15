@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 2098540adda6de1ab003a6a9d526519d1d753730
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora
 
@@ -29,22 +29,22 @@ Jeśli nie został już zainstalowany program Visual Studio, przejdź do [progra
 
 Nosi nazwę domyślny motyw kolorów dla programu Visual Studio 2017 **Blue**. Teraz Zmień, aby **ciemny**.
 
-1. Na pasku menu wybierz **narzędzia**, **opcje**.
+1. Na pasku menu wybierz **narzędzia** > **opcje**.
 
-1. Na **środowiska**, **ogólne** Strona opcji, zmień **motywu kolorów** zaznaczenie, aby **ciemny**, a następnie wybierz pozycję **OK** .
+1. Na **środowiska** > **ogólne** Strona opcji, zmień **motywu kolorów** zaznaczenie, aby **ciemny**, a następnie wybierz pozycję **OK**.
 
    Motyw kolorów dla całego środowiska IDE jest zmieniana na **ciemny**.
 
    ![VS ciemnego motywu](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Można zainstalować dodatkowe kompozycje wstępnie zdefiniowanych przez zainstalowanie **Visual Studio kolor motywu edytora** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia motywy kolorów dodatkowe są wyświetlane na liście rozwijanej kolor motywu.
+> Można zainstalować dodatkowe kompozycje wstępnie zdefiniowanych przez zainstalowanie **Visual Studio kolor motywu edytora** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia motywy kolorów dodatkowe są wyświetlane na liście rozwijanej kolor motywu.
 
 ## <a name="change-text-color"></a>Zmiana koloru tekstu
 
 Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pierwsze umożliwia otwieranie pliku XML, aby wyświetlić domyślne kolory.
 
-1. Na pasku menu wybierz **pliku**, **nowy**, **pliku...** .
+1. Na pasku menu wybierz **pliku** > **nowy** > **pliku...** .
 
 1. W **nowy plik** okna dialogowego, w obszarze **ogólne** kategorii, wybierz **pliku XML**, a następnie wybierz pozycję **Otwórz**.
 
@@ -80,7 +80,7 @@ Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pi
 
    ![Kolor czcionki pliku XML](media/quickstart-personalize-xml-file.png)
 
-1. Aby otworzyć **opcje** okno dialogowe, na pasku menu wybierz **narzędzia**, **opcje**.
+1. Aby otworzyć **opcje** oknie dialogowym wybierz **narzędzia** > **opcje** na pasku menu.
 
 1. W obszarze **środowiska**, wybierz **czcionki i kolory** kategorii.
 
@@ -102,9 +102,9 @@ Firma Microsoft przedstawione kilka sposobów dostosowywanie kolorów w Visual S
 
 ## <a name="see-also"></a>Zobacz także
 
-[Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)  
-[Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)  
-[Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
-[Dostosowywanie edytora](../ide/customizing-the-editor.md)  
-[Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)
+- [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)
+- [Szybki Start: Projekty i rozwiązania](../ide/quickstart-projects-solutions.md)
+- [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+- [Dostosowywanie edytora](../ide/customizing-the-editor.md)
+- [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

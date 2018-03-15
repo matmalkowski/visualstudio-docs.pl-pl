@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Szybki Start: Projekty i rozwiązania
 
@@ -185,10 +185,10 @@ Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Następnie należy p
 
 ## <a name="see-also"></a>Zobacz także
 
-[Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)  
-[Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)  
-[Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)  
-[Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)  
-[Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
+- [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora](../ide/quickstart-personalize-the-ide.md)
+- [Szybki Start: Kodowania w edytorze](../ide/quickstart-editor.md)
+- [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)
+- [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
+- [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)

@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 
@@ -55,7 +55,7 @@ Jeśli debugujesz, Zatrzymaj debugowanie. Przejdź do **Narzędzia > Opcje > Int
 
 To nie jest włączone domyślnie, ale IntelliTrace można przechwytywać migawki aplikacji w każdym zdarzeniu krok punktu przerwania i debuger i migawki te można wyświetlić w sesji debugowania historycznego. Migawka umożliwia widok z pełnym stanem aplikacji. Aby włączyć przechwytywania migawek, przejdź do **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **IntelliTrace zdarzenia i migawek**. Aby uzyskać więcej informacji, zobacz [wyświetlić migawki za pomocą kroku zwrotnego IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
 
-Migawki są dostępne w Visual Studio Enterprise 2017 wersji 15.5 lub nowszej, a wymaga systemu Windows 10 Anniversary aktualizacji lub nowszej.  Migawki nie są obecnie dostępne dla aplikacji .NET Core i ASP.NET Core.
+Migawki są dostępne w Visual Studio Enterprise 2017 wersji 15.5 lub nowszej, a wymaga systemu Windows 10 Anniversary aktualizacji lub nowszej.  W przypadku aplikacji .NET Core i ASP.NET Core Visual Studio Enterprise 2017 wersji 15.7 preview 1 jest wymagana.
 
 ## <a name="GoingFurther"></a> Informacji o wywołaniach i zbierania zdarzeń funkcji IntelliTrace
 

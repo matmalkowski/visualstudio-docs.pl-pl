@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 144410e0e9b5b8d5d40fee86a1573bd179aea44a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Można utworzyć polecenia menu wynikających z <xref:System.ComponentModel.Design.MenuCommand> lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekt i impementling obsługi zdarzeń odpowiednie. W większości przypadków można użyć <xref:System.ComponentModel.Design.MenuCommand>, ponieważ jest pakiet VSPackage szablon projektu, ale może od czasu do czasu może być konieczne użycie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -190,9 +190,9 @@ Można utworzyć polecenia menu wynikających z <xref:System.ComponentModel.Desi
   
     |Właściwość MenuCommand|Flaga OLECMDF|  
     |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
      Aby zmienić tekst polecenia, użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> właściwość <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiektu, jak pokazano w poniższym przykładzie.  
   
@@ -238,7 +238,7 @@ Można utworzyć polecenia menu wynikających z <xref:System.ComponentModel.Desi
   
     -   Jeśli polecenie jest częścią menu skrótów i jest domyślnie ukryty:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
     -   Jeśli polecenie używa `TEXTCHANGES` Flaga, ustaw `rgwz` elementu `pCmdText` parametru na nowy tekst polecenia i zestaw `cwActual` elementu `pCmdText` parametru do rozmiaru ciąg polecenia.  
   

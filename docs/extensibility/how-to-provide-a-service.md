@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Porady: udostępnianie usługi
 Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSPackage. Do świadczenia usług, pakiet VSPackage musi zarejestrować usługi z programem Visual Studio, a następnie Dodaj usługę.  
   
- <xref:Microsoft.VisualStudio.Shell.Package> Klasa implementuje zarówno <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> i <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>zawiera metody wywołania zwrotnego, które udostępniają usługi na żądanie.  
+ <xref:Microsoft.VisualStudio.Shell.Package> Klasa implementuje zarówno <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> i <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> zawiera metody wywołania zwrotnego, które udostępniają usługi na żądanie.  
   
  Aby uzyskać więcej informacji na temat usług, zobacz [Essentials usługi](../extensibility/internals/service-essentials.md) .  
   
@@ -35,7 +35,7 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
   
 #### <a name="implementing-a-service"></a>Wdrażanie usługi  
   
-1.  Tworzenie projektu VSIX (**Plik > Nowy > Projekt > Visual C# > Extensiblity > projektu VSIX**).  
+1.  Tworzenie projektu VSIX (**Plik > Nowy > Projekt > Visual C# > rozszerzalności > projektu VSIX**).  
   
 2.  Dodaj pakiet VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Dodaj > Nowy element > Visual C# elementów > rozszerzalności > pakiet programu Visual Studio**.  
   
@@ -47,7 +47,7 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
   
     -   Klasa, która implementuje zarówno usługi, jak i interfejs usługi.  
   
-     Poniższy przykład przedstawia bardzo proste wykonania trzech typów. Konstruktor klasy usługi, należy ustawić dostawcy usług.  
+     W poniższym przykładzie przedstawiono podstawową implementację trzech typów. Konstruktor klasy usługi, należy ustawić dostawcy usług.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -117,7 +117,7 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
     > [!NOTE]
     >  Visual Studio może odrzucać żądania do świadczenia usług. Robi to jeśli inny pakiet VSPackage już zawiera usługę.  
   
-3.  Teraz można pobrać usługi i używać jej metody. Poniżej opisano to w inicjatora, ale można pobrać usługi dowolnym chcesz korzystać z usługi.  
+3.  Teraz można pobrać usługi i używać jej metody. W poniższym przykładzie pokazano, przy użyciu usługi inicjatora, ale można pobrać usługi dowolnym chcesz korzystać z usługi.  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ Pakiet VSPackage może zapewnić usługi, które mogą używać inne pakiety VSP
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

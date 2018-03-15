@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 12dada9592f9bf0f838d967c654a5223460000fd
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Utwórz jednostki klas zastępczych metody testu za pomocą polecenia Utwórz testy jednostkowe
 
@@ -32,7 +32,7 @@ Visual Studio **tworzenia testów jednostkowych** polecenie umożliwia tworzenie
 
 * Obsługuje tylko kodu C# przeznaczonego dla programu .NET Framework.
 
-* Jest [extensible](#extend-framework)i obsługuje emitowanie testów w MSTest, MSTest V2, NUnit, xUnit format.
+* Rozszerzalność i obsługuje emisji testy w MSTest, MSTest V2, NUnit, xUnit format.
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -42,15 +42,16 @@ Aby rozpocząć, wybierz metodę, typu lub przestrzeni nazw w edytorze kodu w pr
 
 ## <a name="setting-unit-test-traits"></a>Ustawienie cech testów jednostkowych
 
-Jeśli planujesz uruchamianie tych testów wchodzi w skład procesu automatyzacji testów, warto rozważyć o teście utworzony w innym projekcie testowym (druga opcja w oknie dialogowym powyżej) i testów jednostkowych ustawienie cech dla testu jednostkowego. Umożliwi to łatwiej dołączania lub wykluczania tych określonych testów w ramach ciągłej integracji lub potoku ciągłego wdrażania. Cechy są ustawiane przez dodanie metadanych do testu jednostkowego bezpośrednio, jak pokazano poniżej. 
+Jeśli planujesz uruchamianie tych testów wchodzi w skład procesu automatyzacji testów, warto rozważyć o teście utworzony w innym projekcie testowym (druga opcja w oknie dialogowym powyżej) i testów jednostkowych ustawienie cech dla testu jednostkowego. Umożliwi to łatwiej dołączania lub wykluczania tych określonych testów w ramach ciągłej integracji lub potoku ciągłego wdrażania. Cechy są ustawiane przez dodanie metadanych do testu jednostkowego bezpośrednio, jak pokazano poniżej.
 
 ![Ustawienie cech testów jednostkowych](media/createunittest.png)
 
-<a name="extend-framework"></a>
 ## <a name="using-third-party-unit-test-frameworks"></a>Przy użyciu platform testów jednostkowych innych firm
 
-Program Visual Studio mogą być utworzone przy użyciu dowolnej struktury testowej testów jednostkowych. Aby zainstalować Dodaj inne struktury testu, wybierz **narzędzia | Rozszerzenia i aktualizacje**.
-Rozwiń węzeł **Online**, **galerii programu Visual Studio**, **narzędzia**i wybierz polecenie **testowanie**. 
+Program Visual Studio mogą być utworzone przy użyciu dowolnej struktury testowej testów jednostkowych. Aby zainstalować Dodawanie innych platform testów:
+
+1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+2. Rozwiń węzeł **Online** > **Visual Studio Marketplace** > **narzędzia**, a następnie wybierz pozycję **testowanie**.
 
 ![Przy użyciu innej platform testów](media/createunittestfx.png)
 
@@ -63,9 +64,9 @@ Test framework rozszerzenia są dostępne w programie Visual Studio Marketplace:
 
 Ta funkcja zawsze, gdy trzeba utworzyć testy jednostek, ale w szczególności, podczas testowania istniejącego kodu nie ma bardzo mało lub nie pokrycie testu, a nie dokumentacji. Innymi słowy przypadku Specyfikacja kodu ograniczony lub nie istnieje. Efektywne implementuje podejście podobne do [inteligentnych testów jednostkowych](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) charakteryzuje się obserwowanych zachowania kodu.
 
-Jednak ta funkcja jest równie mające zastosowanie do sytuacji, w którym rozpoczyna się przez napisanie kodu dewelopera, a użyty do ładowania początkowego testowania dyscypliny jednostek. W ramach przepływu kodowania deweloper może być szybko utworzyć jednostki testu szkieletu metody (z klasy odpowiedniego testu, a Projekt testowy odpowiedniego) dla określonej części kodu. 
+Jednak ta funkcja jest równie mające zastosowanie do sytuacji, w którym rozpoczyna się przez napisanie kodu dewelopera, a użyty do ładowania początkowego testowania dyscypliny jednostek. W ramach przepływu kodowania deweloper może być szybko utworzyć jednostki testu szkieletu metody (z klasy odpowiedniego testu, a Projekt testowy odpowiedniego) dla określonej części kodu.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie klas zastępczych metody testu jednostkowego z "Utwórz testy jednostkowe"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
-[Wpisy na blogu testy jednostkowe](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)
+- [Tworzenie klas zastępczych metody testu jednostkowego z "Utwórz testy jednostkowe"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Wpisy na blogu testy jednostkowe](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamiczne dodawanie elementów Menu
 Można dodać elementów menu w czasie wykonywania, określając `DynamicItemStart` polecenia flagi na przycisku definicji symbolu zastępczego w plik tabeli poleceń (vsct) programu Visual Studio, a następnie definiowanie (w kodzie) liczbę menu elementów do wyświetlenia i obsługi poleceń. Po załadowaniu pakiet VSPackage symbol zastępczy jest zastępowany dynamicznych elementów menu.  
@@ -43,7 +45,7 @@ Można dodać elementów menu w czasie wykonywania, określając `DynamicItemSta
   
 -   Polecenie dwie grupy, która zawiera menu kontrolera i inny, który zawiera elementy menu, liście rozwijanej  
   
--   Element menu jednego typu`MenuController`  
+-   Element menu jednego typu `MenuController`  
   
 -   Dwa przyciski, który działa jako symbol zastępczy dla elementów menu oraz innego, który zawiera ikonę i etykietkę narzędzia na pasku narzędzi.  
   
@@ -209,7 +211,7 @@ Można dodać elementów menu w czasie wykonywania, określając `DynamicItemSta
 ## <a name="adding-the-command"></a>Dodawanie polecenia  
  Konstruktor DynamicMenu jest skonfigurowanie poleceń menu, w tym menu dynamiczne i elementów menu.  
   
-1.  W DynamicMenuPackageGuids.cs Dodaj identyfikator GUID zestawu poleceń i identyfikator polecenia:  
+1.  W DynamicMenuPackage.cs Dodaj identyfikator GUID zestawu poleceń i identyfikator polecenia:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
@@ -342,7 +344,7 @@ Można dodać elementów menu w czasie wykonywania, określając `DynamicItemSta
 [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
 [ProvideAutoLoad(UIContextGuids.SolutionHasMultipleProjects)]  
-[Guid(DynamicMenuPackageGuids.PackageGuidString)]  
+[Guid(DynamicMenuPackage.PackageGuidString)]  
 public sealed class DynamicMenuItemsPackage : Package  
 {}  
 ```  

@@ -15,22 +15,16 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2186630e5c93254f38bfb4bcd05fc74d73ba67e2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8d3db09285e0a7bb76a38e03a1fee467a9891843
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="security-bibliography"></a>Bibliografia dotyczące zabezpieczeń
 
-Poniżej przedstawiono dostępne wybranych zasobów online i drukowania na temat tworzenia aplikacji bezpiecznego i konfigurowania bezpiecznej środowisk:  
-  
-## <a name="microsoft-web-sites"></a>Witryny sieci Web firmy Microsoft  
- [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=55529)  
- Dowiedz się, jak Microsoft działa, aby pomóc chronić aplikacje i systemy, z poziomu pulpitu do systemów poziomie sieci, linki do zasobów zabezpieczeń dla specjalistów IT, deweloperzy i użytkownicy.  
-  
- [Zasoby zabezpieczeń w witrynie MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
- Scenariusz prowadzi do dokumentacji zorientowane na deweloperów, przykłady kodu, artykuły techniczne i inne zasoby dotyczące tworzenia aplikacji bezpiecznego.  
-  
- [Zabezpieczenia w witrynie Microsoft TechNet](http://go.microsoft.com/fwlink/?LinkId=67991)  
- Zawiera łącza do najważniejszych informacji technicznych dotyczących zabezpieczeń dla specjalistów IT i "Użytkownicy zaawansowani".
+Poniżej przedstawiono wybranych zasobów, które zawierają informacje dotyczące tworzenia aplikacji bezpiecznego i konfigurowanie środowisk bezpiecznego:
+
+[Microsoft Security](https://www.microsoft.com/security/default.aspx)&mdash;Dowiedz się, jak firma Microsoft współpracuje zabezpieczać aplikacji i zabezpieczyć systemy, od pulpitu do sieci na poziomie systemów, linki do zasobów zabezpieczeń dla specjalistów IT, deweloperzy i użytkownicy.
+
+[Zasoby zabezpieczeń w witrynie MSDN](https://technet.microsoft.com/security/)&mdash;pomaga dokumentacji zorientowane na deweloperów, przykłady kodu, artykuły techniczne i inne zasoby dotyczące tworzenia aplikacji bezpiecznego.

@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypy i dziedziczenie
 W języku JavaScript `prototype` jest właściwością, funkcje i obiekty, które są tworzone za pomocą funkcji konstruktora. Prototyp funkcji jest obiektem. Znajduje podstawowe zastosowanie, gdy funkcja jest używana jako konstruktor.  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  `bicycle` Obiekt ma właściwości `wheels`, `engine`, `color`, i `pedals`, i jest prototyp `Vehicle.prototype`. Aparat JavaScript umożliwia znalezienie `pedals` właściwość `bicycle`, i pobiera ona łańcuch prototypu w celu znalezienia `wheels`, `engine`, i `color` właściwości `Vehicle`.  
   
 ### <a name="changing-an-objects-prototype"></a>Zmiana prototypu obiektu  
- W programie Internet Explorer 11, można zastąpić wewnętrzny prototypu obiektu lub funkcja nowe prototypu przy użyciu [__proto\_ \_ ](../../javascript/reference/proto-property-object-javascript.md) właściwości. Gdy używasz tej właściwości, dziedziczysz właściwości i metody nowego prototypu oraz inne właściwości i metody w łańcuchu jego prototypów.  
+W programie Internet Explorer 11, można zastąpić wewnętrzny prototypu obiektu lub funkcja nowe prototypu przy użyciu [ __proto__ ](../../javascript/reference/proto-property-object-javascript.md) właściwości. Gdy używasz tej właściwości, dziedziczysz właściwości i metody nowego prototypu oraz inne właściwości i metody w łańcuchu jego prototypów.  
+
+> [!WARNING]
+> `__proto__` Właściwości jest funkcją starszej wersji. Użyj [Object.getprototypeof —](../reference/object-getprototypeof-function-javascript.md) zamiast tego.
   
- Poniższy przykład przedstawia, jak zmienić prototyp obiektu. Ten przykład przedstawia, jak się zmieniają dziedziczone właściwości obiektu po zmianie jego prototypu.  
+Poniższy przykład przedstawia, jak zmienić prototyp obiektu. Ten przykład przedstawia, jak się zmieniają dziedziczone właściwości obiektu po zmianie jego prototypu.  
   
 ```JavaScript  
 function Friend() {  

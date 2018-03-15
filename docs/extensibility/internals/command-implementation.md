@@ -17,11 +17,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2704794e4683fb461dca971a3893ca831591ca0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e56fbdb6056ba02df0cafac73dd4baab60ab3be
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="command-implementation"></a>Wykonanie polecenia
 Aby zaimplementować polecenia w pakiet VSPackage, należy wykonać następujące zadania:  
@@ -62,28 +62,28 @@ if ( null != mcs )
 ## <a name="implementing-commands"></a>Implementacja poleceń  
  Istnieje wiele sposobów, aby zaimplementować poleceń. Polecenia menu statyczne, który jest zawsze wyświetlany taki sam sposób, jak i w tym samym menu polecenie, utworzyć polecenia przy użyciu <xref:System.ComponentModel.Design.MenuCommand> jak przedstawiono w przykładach w poprzedniej sekcji. Aby utworzyć polecenie statycznych, musisz podać program obsługi zdarzeń jest odpowiedzialny za wykonywania polecenia. Ponieważ polecenie jest zawsze włączone i są widoczne, nie należy podać jego stan dla programu Visual Studio. Jeśli chcesz zmienić stan polecenia w zależności od określonych warunków, można utworzyć polecenie jako wystąpienie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> klasy, a w jego konstruktora udostępniają program obsługi zdarzeń można wykonać polecenia i obsługi stanu zapytania do powiadamiania Visual Studio po zmianie stanu polecenia. Można też wdrożyć <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> jako część klasy poleceń lub, można zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Jeśli udostępniasz polecenia w ramach projektu. Dwa interfejsy i <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> wszystkie klasy mają metod, które powiadamiają o Visual Studio o zmianie stanu polecenia i innych metod, które zapewniają wykonanie polecenia.  
   
- Polecenie zostanie dodany do usługi polecenia, staje się jeden z łańcucha poleceń. Po zaimplementowaniu stan powiadomień i wykonywanie metod dla polecenia zajmie się tylko dla tego konkretnego polecenia i przekaż wszystkich innych przypadkach do innych poleceń w łańcuchu. Jeśli nie zostanie ona przekazać polecenie (zwykle przez zwrócenie <xref:Microsoft.VisualStudio.OLE.Interop.Constants>), programu Visual Studio może przestać działać prawidłowo.  
+ Polecenie zostanie dodany do usługi polecenia, staje się jeden z łańcucha poleceń. Po zaimplementowaniu stan powiadomień i wykonywanie metod dla polecenia zajmie się tylko dla tego konkretnego polecenia i przekaż wszystkich innych przypadkach do innych poleceń w łańcuchu. Jeśli nie zostanie ona przekazać polecenie (zwykle przez zwrócenie <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>), programu Visual Studio może przestać działać prawidłowo.  
   
 ## <a name="query-status-methods"></a>Metody stan zapytań  
  W przypadku wdrażania albo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metoda, sprawdź, czy identyfikator GUID zestaw, do której należy polecenie poleceń i identyfikator polecenia. Skorzystaj z następujących wskazówek:  
   
--   Jeśli identyfikator GUID nie został rozpoznany, implementacji w metodzie musi zwracać <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Jeśli identyfikator GUID nie został rozpoznany, implementacji w metodzie musi zwracać <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.  
   
--   Jeśli implementacji w metodzie rozpoznaje identyfikatora GUID, ale faktycznie nie została zaimplementowana polecenia, a następnie metoda powinna zwrócić <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+-   Jeśli implementacji w metodzie rozpoznaje identyfikatora GUID, ale nie została zaimplementowana polecenia, a następnie metoda powinna zwrócić <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
--   Implementacji w metodzie rozpoznaje zarówno identyfikator GUID i polecenia, a następnie metoda powinna ustawić pole flagi polecenie każdego polecenia (w `prgCmds` parametru) przy użyciu następujących flag:  
+-   Implementacji w metodzie rozpoznaje zarówno identyfikator GUID i polecenia, a następnie metoda powinna ustawić pole flagi polecenie każdego polecenia (w `prgCmds` parametru) przy użyciu następujących <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Jeśli polecenie jest obsługiwane.  
+    -   OLECMDF_SUPPORTED — Jeśli polecenie jest obsługiwane.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Jeśli polecenie nie powinny być widoczne.  
+    -   OLECMDF_INVISIBLE — Jeśli polecenie nie powinny być widoczne.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Jeśli polecenie jest włączone na i prawdopodobnie zostały sprawdzone.  
+    -   OLECMDF_LATCHED — Jeśli polecenie jest włączone na i prawdopodobnie zostały sprawdzone.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Jeśli polecenie jest włączone.  
+    -   OLECMDF_ENABLED — Jeśli polecenie jest włączone.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Jeśli polecenie ma być ukryty, jeśli wygląda na to, w menu skrótów.  
+    -   OLECMDF_DEFHIDEONCTXTMENU — polecenie powinien być ukryty, jeśli wygląda na to, w menu skrótów.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>Jeśli polecenie jest kontrolerem menu i nie jest włączona, ale swoją listę rozwijaną nie jest pusty i jest dostępny. (Ta flaga jest rzadko używana.)  
+    -   OLECMDF_NINCHED — Jeśli polecenie jest kontrolerem menu i nie jest włączona, ale swoją listę rozwijaną nie jest pusty i jest dostępny. (Ta flaga jest rzadko używana.)  
   
 -   Jeśli polecenie zostało zdefiniowane w pliku vsct z `TextChanges` Flaga, ustaw następujące parametry:  
   
@@ -93,7 +93,7 @@ if ( null != mcs )
   
  Upewnij się również czy bieżącego kontekstu nie jest funkcją automatyzacji chyba, że polecenie jest przeznaczony specjalnie do obsługi funkcji automatyzacji.  
   
- Aby wskazać, że obsługuje konkretnego polecenia, zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK>. W przypadku innych poleceń zwracają <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Aby wskazać, że obsługuje konkretnego polecenia, zwróć <xref:Microsoft.VisualStudio.VSConstants.S_OK>. W przypadku innych poleceń zwracają <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  W poniższym przykładzie metoda zapytania status najpierw sprawdza, czy kontekst nie jest funkcją automatyzacji, a następnie umożliwia znalezienie poprawny zestaw poleceń identyfikator GUID i identyfikator polecenia. Samo polecenie ustawiono włączony i obsługiwane. Wszystkie inne polecenia są obsługiwane.  
   
@@ -118,7 +118,7 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```  
   
 ## <a name="execution-methods"></a>Metody wykonywania  
- Implementacja metody badanie stanu jest podobny do implementacji metody execute. Najpierw upewnij się, że kontekst nie jest funkcją automatyzacji. Następnie sprawdź identyfikator GUID i identyfikator polecenia. Jeśli identyfikator GUID lub identyfikator polecenia nie został rozpoznany, zwraca <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+ Implementacja metody badanie stanu jest podobny do implementacji metody execute. Najpierw upewnij się, że kontekst nie jest funkcją automatyzacji. Następnie sprawdź identyfikator GUID i identyfikator polecenia. Jeśli identyfikator GUID lub identyfikator polecenia nie został rozpoznany, zwraca <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.  
   
  Do obsługi polecenia, wykonaj go i zwraca <xref:Microsoft.VisualStudio.VSConstants.S_OK> Jeśli wykonanie zakończy się powodzeniem. Polecenie odpowiada za wykrywanie błędów oraz powiadomienia; w związku z tym zwróciła kod błędu, jeśli wykonanie nie powiedzie się. W poniższym przykładzie pokazano implementowania metody wykonywania.  
   

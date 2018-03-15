@@ -1,5 +1,5 @@
 ---
-title: "__proto__ — właściwość (obiekt) (JavaScript) | Dokumentacja firmy Microsoft"
+title: "__proto__ właściwość (obiekt) (JavaScript) | Dokumentacja firmy Microsoft"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,17 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8659c7a4ece5e30378838f20341ec6712f77ca3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proto-property-object-javascript"></a>__proto__ właściwość (obiekt) (JavaScript)
 Zawiera odwołanie do wewnętrznego prototypu określonego obiektu.  
+
+> [!WARNING]
+> `__proto__` Właściwości jest funkcją starszej wersji. Użyj [Object.getprototypeof —](../reference/object-getprototypeof-function-javascript.md) zamiast tego.
   
 ## <a name="syntax"></a>Składnia  
   
@@ -112,4 +115,4 @@ if (console && console.log) {
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## <a name="see-also"></a>Zobacz też  
- [Prototypy i dziedziczenie](../../javascript/advanced/prototypes-and-prototype-inheritance.md)
+ [Prototypy i dziedziczenie oparte na prototypach](../../javascript/advanced/prototypes-and-prototype-inheritance.md)

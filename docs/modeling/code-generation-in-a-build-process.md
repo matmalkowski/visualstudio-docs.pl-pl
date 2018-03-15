@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [Transformacji tekstu](../modeling/code-generation-and-t4-text-templates.md) może być wywoływany jako część [proces kompilacji](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Istnieją zadania kompilacji, które są przeznaczone do przekształcania tekstu. Zadania kompilacji T4 uruchamiają szablon tekstowy czasu projektowania, a także kompilują szablony tekstowe czasu wykonywania (wstępnie przetworzone).  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  Oznacza to, że nie masz dostępu do elementów, jak nazwy plików projektu w taki sam sposób jak podczas tworzenia szablonu tekstowego w programie MSBuild. Można jednak [przekazania informacji o środowisku do szablonów tekstowych i procesory dyrektywy przy użyciu parametrów kompilacji](#parameters).  
   
-##  <a name="buildserver"></a>Skonfiguruj komputery  
+##  <a name="buildserver"></a> Skonfiguruj komputery  
  Aby włączyć zadania kompilacji na komputerze deweloperskim, należy zainstalować modelowania zestawu SDK dla programu Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -66,7 +66,7 @@ ms.lasthandoff: 02/09/2018
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`  
   
- \-lub -  
+ \- lub -  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`  
   
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Aby określić, że pliki tylko do odczytu powinny być zastąpione, wstaw tę właściwość:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  O ile nie dostosujesz kroku przetwarzania końcowego, zastąpienie pliku spowoduje, że na liście błędów zostanie zarejestrowane ostrzeżenie.  
   
@@ -172,7 +172,7 @@ ms.lasthandoff: 02/09/2018
 </ItemGroup>  
 ```  
   
- Jest przydatne folderu przekierowania`$(IntermediateOutputPath).`  
+ Jest przydatne folderu przekierowania `$(IntermediateOutputPath).`  
   
  Jeśli zostanie określona nazwa pliku wyjściowego, będzie ona miała wyższy priorytet nad rozszerzeniem określonym w dyrektywie wyjścia w szablonach.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Przekaż dane kontekstu kompilacji do szablonów  
+##  <a name="parameters"></a> Przekaż dane kontekstu kompilacji do szablonów  
  Można ustawić wartości parametrów w pliku projektu. Na przykład można przekazać [kompilacji](../msbuild/msbuild-properties.md) właściwości i [zmiennych środowiskowych](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -240,9 +240,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```  
   
 > [!NOTE]
->  `ResolveParameterValue`pobiera dane z `T4ParameterValues` tylko jeśli używasz programu MSBuild. Kiedy przekształcasz szablon przy użyciu Visual Studio, parametry mają wartości domyślne.  
+>  `ResolveParameterValue` pobiera dane z `T4ParameterValues` tylko jeśli używasz programu MSBuild. Kiedy przekształcasz szablon przy użyciu Visual Studio, parametry mają wartości domyślne.  
   
-##  <a name="msbuild"></a>W zestawie przy użyciu właściwości projektu i dyrektyw  
+##  <a name="msbuild"></a> W zestawie przy użyciu właściwości projektu i dyrektyw  
  Visual Studio makra podobnego do $(SolutionDir) nie działają w programie MSBuild. Zamiast tego można użyć właściwości projektu.  
   
  Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. W tym przykładzie definiuje właściwość o nazwie `myLibFolder`:  

@@ -4,28 +4,33 @@ ms.custom:
 ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 50f2612687a58857f4d05478db073070e2cc9936
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 557b64815360e61f77365f509f96f40bd37ffed6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 
 Program Visual Studio udostępnia wiele zaawansowanych funkcji, które ułatwiają analizowanie problemy z wydajnością w aplikacji. Ten temat zawiera szybko dowiedzieć się, niektóre podstawowe funkcje. W tym miejscu przyjrzymy się narzędzie w celu zidentyfikowania wąskich gardeł wydajności z powodu wysokiego użycia procesora CPU. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.
 
 Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyczną. Jeśli **użycie procesora CPU** narzędzia opisanego w tym miejscu nie zapewnia dane, które chcesz dodać, [innych narzędzi do profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być przydatne do Ciebie. W wielu przypadkach wąskie gardło aplikacji może być spowodowane przez inną niż Procesora, pamięci, renderowania interfejsu użytkownika lub czas żądania sieciowego. Centrum diagnostyki oferuje wiele innych opcji, aby rejestrować i analizować tego typu danych.
+
+> [!NOTE]
+> Dla platformy .NET Core i ASP.NET Core narzędzia użycie procesora CPU aktualnie nie zawiera prawidłowych wyników z PBDs przenośnej. Zamiast tego użyj pełne pliki PDB.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -158,7 +163,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
     > [!NOTE]
     > W języku Visual Basic, upewnij się, ma ustawioną wartość obiektu uruchamiania `Sub Main` (**właściwości > aplikacji > obiekt uruchomieniowy**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Krok 1: Zbieranie danych profilowania 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania 
   
 1.  Najpierw należy ustawić punkt przerwania w aplikacji w tym wierszu kodu w `Main` funkcji:
 
@@ -201,7 +206,7 @@ Centrum diagnostyki oferuje wiele innych opcji do zarządzania sesję diagnostyc
 
      W tym momencie można rozpocząć do analizowania danych.
 
-## <a name="Step2"></a>Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="Step2"></a> Krok 2: Analizowanie danych użycia procesora CPU
 
 Zalecamy rozpocząć analizowanie danych, sprawdzając listę funkcji zgodnie z użycia procesora CPU, identyfikowanie funkcji, które robią najbardziej pracy i następnie biorąc bliższe spojrzenie na każdym z nich.
 

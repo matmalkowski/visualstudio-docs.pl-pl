@@ -94,31 +94,35 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5466d764413283cb3f33525f12d7782c02ce6925
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: 6821edc51dced92b40386eb270546456654fbba3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby dla rozwiązywania problemów z błędami związanymi ze zintegrowanym środowiskiem deweloperskim
-Nie wszystkie komunikaty o błędach ma określonego skojarzonego tematu Pomocy. Jeśli informacje zawarte w komunikacie o błędzie pomaga w rozwiązaniu problemu, można znaleźć inne zasoby, takie jak artykuły bazy wiedzy, społeczność deweloperów lub Centrum pomocy technicznej.  
 
-## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy  
- Można wyszukiwać bazy wiedzy Knowledge Base (KB) online w artykułach dotyczących produktu. Nie wszystkie problemy dotyczące mają odpowiedni artykuł KB, ale zazwyczaj są udokumentowane błędów występujących duża liczba klientów. Dostęp do artykułów bazy wiedzy na [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web.  
+Nie wszystkie komunikaty o błędach ma określonego skojarzonego tematu Pomocy. Jeśli informacje zawarte w komunikacie o błędzie pomaga w rozwiązaniu problemu, można znaleźć inne zasoby, takie jak artykuły bazy wiedzy, społeczność deweloperów lub Centrum pomocy technicznej.
 
-## <a name="the-developer-community"></a>Społeczność deweloperów  
- Fora umożliwiają interakcję z innymi deweloperów, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, który nie może znaleźć rozwiązania dla pytania o problemie można opublikuj wpis na forum. Można także przeszukać grup dyskusyjnych, aby zobaczyć, czy inne ogłoszeniu o ten sam problem.  
+## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
 
- Dostępne fora, blogi, rozmowy i innych zasobów na [społeczności technicznych Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922) witryny sieci Web.  
+Można wyszukiwać bazy wiedzy Knowledge Base (KB) online w artykułach dotyczących produktu. Nie wszystkie problemy dotyczące mają odpowiedni artykuł KB, ale zazwyczaj są udokumentowane błędów występujących duża liczba klientów. Dostęp do artykułów bazy wiedzy na [Microsoft Support](https://support.microsoft.com) witryny sieci Web.
 
-## <a name="product-support"></a>Pomoc techniczna  
- Jeśli po wykonaniu inne zasoby nadal masz pytania, możesz skontaktować się usług pomocy technicznej firmy Microsoft, odwiedzając [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web. Aby uzyskać informacje o pomocy technicznej dostępne w Twoim rejonie, zobacz [Porozmawiaj z nami](../../ide/talk-to-us.md).
+## <a name="the-developer-community"></a>Społeczność deweloperów
+
+Fora umożliwiają interakcję z innymi deweloperów, a także pracowników firmy Microsoft. Jeśli wystąpi błąd, który nie może znaleźć rozwiązania dla pytania o problemie można opublikuj wpis na forum. Można także przeszukać grup dyskusyjnych, aby zobaczyć, czy inne ogłoszeniu o ten sam problem.
+
+Dostępne fora, blogi, rozmowy i innych zasobów na [społeczności technicznych Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) witryny sieci Web.
+
+## <a name="product-support"></a>Pomoc techniczna
+
+Jeśli po wykonaniu inne zasoby nadal masz pytania, możesz skontaktować się usług pomocy technicznej firmy Microsoft, odwiedzając [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web. Aby uzyskać informacje o pomocy technicznej dostępne w Twoim rejonie, zobacz [Porozmawiaj z nami](../../ide/talk-to-us.md).
 
  ## <a name="see-also"></a>Zobacz także
- * [Rozwiązywanie problemów z błędami serwera proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)
+
+* [Rozwiązywanie problemów z błędami serwera proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

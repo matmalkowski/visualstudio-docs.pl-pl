@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Konfigurowanie repozytorium Git
 
@@ -43,11 +43,15 @@ Aby skonfigurować repozytorium Git, wykonaj następujące czynności:
 
 ## <a name="publishing-an-existing-project"></a>Publikowanie istniejącego projektu
 
-4. Wróć do Otwórz projekt w Visual Studio dla komputerów Mac. 
+Jeśli masz istniejący projekt, który _nie jest_ już w kontroli wersji, wykonaj następujące kroki, aby skonfigurować ją w usłudze Git:
+
+4.  Wybierz nazwę rozwiązania z konsoli do rozwiązania w programie Visual Studio dla komputerów Mac. 
 
 5. Na pasku Menu wybierz **kontrolą wersji > Publikuj w kontroli wersji...** Aby wyświetlić **wybierz repozytorium** okna dialogowego:
 
     ![Uruchom wyewidencjonowania w programie Visual Studio dla komputerów Mac](media/version-control-git4-sml.png)
+
+    Jeśli ten element menu zostanie wyświetlone szarym w menu, upewnij się, że wybrana nazwa rozwiązania.  
 
 6. Wybierz **zarejestrowany repozytoria** kartę i naciśnij klawisz **Dodaj** przycisk:
 

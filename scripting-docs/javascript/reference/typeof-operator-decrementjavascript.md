@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>typeof — Operator (JavaScript)
 Zwraca ciąg określający typ danych wyrażenia.  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>Uwagi  
  *Wyrażenie* argument jest dowolne wyrażenie dla typu potrzebuje informacji.  
   
- `typeof` Operator zwraca informacje o typie jako ciąg. Brak sześciu możliwe wartości, które `typeof` zwraca: "number", "string," "boolean", "," "funkcji", a "undefined".  
+ `typeof` Operator zwraca informacje o typie jako ciąg. Istnieje siedem możliwe wartości, które `typeof` zwraca: "number", "string," "boolean", "obiektu" "działanie," "undefined" i "Nieznany".  
   
  Nawiasy są opcjonalne w `typeof` składni.  
+
+ Obiekt może zwrócić w XMLHTTPRequest nieznanego typu. Obiektu modelu COM o nie analogowy w języku JavaScript może również zwrócić nieznanego typu.
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład testy z typem danych zmiennych.  

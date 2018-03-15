@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
 W tym samouczku środowiska deweloperskiego C# przy użyciu platformy ASP.NET Core za pomocą programu Visual Studio będzie utworzenia aplikacji sieci web platformy ASP.NET Core C#, Dodaj do niej kod, Eksploruj niektóre funkcje IDE i uruchom aplikację.
@@ -167,12 +167,9 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
  ![Kliknij przycisk Zatrzymaj debugowanie na pasku narzędzi](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy wykonanie kroków tego samouczka!
+Gratulujemy wykonanie kroków tego samouczka! Mamy nadzieję, że znasz nieco o C#, platformy ASP.NET Core i środowiska IDE programu Visual Studio. Nawet więcej informacji, kontynuuj następujące samouczka.
 
-## <a name="see-also"></a>Zobacz także
-* [Wprowadzenie do platformy ASP.NET Core MVC i Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Wprowadzenie do platformy ASP.NET Core stron Razor](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [Nowości w języku C#](/dotnet/csharp/whats-new)
-* [Dokumentacja języka C#](/dotnet/csharp/language-reference/index)
-* [Podstawy języka C# dla początkujących bezwzględną](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) kursu wideo
+ > [!div class="nextstepaction"]
+ > [Wprowadzenie do platformy ASP.NET Core MVC i Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

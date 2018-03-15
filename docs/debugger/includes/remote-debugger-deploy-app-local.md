@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a55b2a12c9a45c5a3952e3e6f4e1627bec8ba520
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 37963e1ee5b7eeb0d07c36e0abe42c98eb6436fe
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **publikowania** (formularzy sieci Web **publikowania aplikacji sieci Web**).
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/27/2017
 5. Skopiuj katalog projektu ASP.NET z komputera programu Visual Studio do katalogu lokalnego skonfigurowane dla aplikacji ASP.NET (w tym przykładzie **C:\Publish**) na komputerze z systemem Windows Server. W tym samouczku przyjęto założenie, kopiowane są ręcznie, ale można użyć innych narzędzi, takich jak programu PowerShell, Xcopy lub Robocopy.
 
     > [!CAUTION]
-    >  Jeśli chcesz dokonać zmian kodu lub skompiluj ponownie, należy ponownie opublikować i powtórz ten krok. Plik wykonywalny skopiowane na komputer zdalny musi dokładnie odpowiadać lokalnego źródłowe i symboli.
+    >  Jeśli chcesz dokonać zmian kodu lub skompiluj ponownie, należy ponownie opublikować i powtórz ten krok. Plik wykonywalny skopiowane na komputer zdalny musi dokładnie odpowiadać lokalnego źródłowe i symboli.    Jeśli tego nie zrobi to otrzymasz `cannot find or open the PDB file` ostrzeżenie w programie Visual Studio, gdy próbują debugowanie tego procesu.
 
 6. W systemie Windows Server Sprawdź, że aplikację można uruchomić poprawnie, otwierając aplikację w przeglądarce.
 

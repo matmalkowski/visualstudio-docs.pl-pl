@@ -1,10 +1,6 @@
 ---
 title: "Uzyskiwanie dostępu do danych w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - "80025080"
@@ -13,18 +9,17 @@ helpviewer_keywords:
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -66,17 +61,17 @@ i więcej...
 Wielu dostawców bazy danych i stron trzecich obsługiwać integracji z programem Visual Studio pakietów NuGet. Można eksplorować oferty nuget.org lub za pomocą Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych integracji z programem Visual Studio jako rozszerzenie. Przeglądaj tych ofert w programie Visual Studio Marketplace, przechodząc do **narzędzia**, **rozszerzenia i aktualizacje** , a następnie wybierając **Online** w okienku po lewej stronie okno dialogowe. Aby uzyskać więcej informacji, zobacz [systemów zgodne bazy danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> Rozszerzona obsługa programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r. Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i później będą nadal działały z programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [powiadomienia zakończenia pomocy technicznej dla programu SQL Server 2005](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
+> Rozszerzona obsługa programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r. Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i później będą nadal działały z programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [powiadomienia zakończenia pomocy technicznej dla programu SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Języków .NET
 
 Wszystkie .NET dostępu do danych, w tym w .NET Core jest oparta na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Visual Studio ma kilka narzędzi i projektantów, które współpracują z ADO.NET umożliwiające nawiązywanie połączeń z bazami danych, manipulowania danymi i przedstawiają dane do użytkownika. Dokumentacja w tej sekcji opisano sposób używania tych narzędzi. Można również zaprogramować bezpośrednio przed ADO.NET— obiekty polecenia. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Dokumentacja dostępu do danych związane z platformy ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie platformy ASP.NET. Samouczek na platformie ASP.NET MVC przy użyciu programu Entity Framework, zobacz [wprowadzenie do programu Entity Framework 6 Code First przy użyciu MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Dokumentacja dostępu do danych związane z platformy ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie platformy ASP.NET. Samouczek na platformie ASP.NET MVC przy użyciu programu Entity Framework, zobacz [wprowadzenie do programu Entity Framework 6 Code First przy użyciu MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Uniwersalnych aplikacji platformy systemu Windows (UWP) w języku C# lub Visual Basic umożliwia dostęp do usługi Azure Storage i innymi usługami Azure zestaw Microsoft Azure SDK dla platformy .NET. Klasa Windows.Web.HttpClient umożliwia komunikację z dowolnej usługi RESTful. Aby uzyskać więcej informacji, zobacz [sposób nawiązywania połączenia z serwerem HTTP przy użyciu Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
-Do przechowywania danych na komputerze lokalnym zalecanym rozwiązaniem jest użycie SQLite, w którym jest uruchomiona w tym samym procesie co aplikacja. Jeśli warstwa relacyjnej obiektu mapowania (ORM) jest wymagana, można użyć programu Entity Framework. Aby uzyskać więcej informacji, zobacz [dostęp do danych](https://msdn.microsoft.com/windows/uwp/data-access/index) w Centrum deweloperów systemu Windows.
+Do przechowywania danych na komputerze lokalnym zalecanym rozwiązaniem jest użycie SQLite, w którym jest uruchomiona w tym samym procesie co aplikacja. Jeśli warstwa relacyjnej obiektu mapowania (ORM) jest wymagana, można użyć programu Entity Framework. Aby uzyskać więcej informacji, zobacz [dostęp do danych](/windows/uwp/data-access/index) w Centrum deweloperów systemu Windows.
 
 Jeśli łączysz się z usługami Azure, pamiętaj pobrać najnowszą [Azure SDK tools](https://azure.microsoft.com/downloads/).
 
@@ -92,8 +87,7 @@ W środowisku .NET wyświetlane są trzy opcje do modelowania i manipulację dan
 
 [LINQ do SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) mapowania obiektów relacyjnych wcześniejszych generacji. Sprawdza się w przypadku mniej złożonych scenariuszy, ale nie jest już aktywne programowanie.
 
-[Zbiory danych](../data-tools/dataset-tools-in-visual-studio.md)  
-Najstarsze trzy technologie modelowania. Jest on przeznaczony głównie dla szybkiego opracowywania aplikacji "formularzy nad danymi", w których są nie przetwarzania dużych ilości danych lub wykonywanie złożonych zapytań lub przekształcenia. Obiekt DataSet składa się z elementu DataTable i DataRow obiektów, które logicznie przypominają bardziej obiekty .NET obiektów bazy danych SQL. Stosunkowo proste aplikacje oparte na SQL źródła danych zestawy danych może nadal być dobrym rozwiązaniem.
+[Zestawy danych](../data-tools/dataset-tools-in-visual-studio.md) najstarsze trzy technologie modelowania. Jest on przeznaczony głównie dla szybkiego opracowywania aplikacji "formularzy nad danymi", w których są nie przetwarzania dużych ilości danych lub wykonywanie złożonych zapytań lub przekształcenia. Obiekt DataSet składa się z elementu DataTable i DataRow obiektów, które logicznie przypominają bardziej obiekty .NET obiektów bazy danych SQL. Stosunkowo proste aplikacje oparte na SQL źródła danych zestawy danych może nadal być dobrym rozwiązaniem.
 
 Nie jest wymagane, aby użyć dowolnego z tych technologii. W niektórych scenariuszach, szczególnie w przypadku, gdy ma kluczowe znaczenie, po prostu umożliwia obiektu DataReader odczytu z bazy danych i skopiuj wartości, które należy do obiektu kolekcji, takie jak listy\<T >.
 
@@ -116,30 +110,31 @@ Aby dowiedzieć się więcej o nawiązywaniu połączeń z bazami danych z aplik
 ## <a name="python"></a>Python
 
 Zainstaluj [Python obsługi w programie Visual Studio](../python/python-in-visual-studio.md) do tworzenia aplikacji Python. Dokumentację platformy Azure ma kilka samouczków na łączenie z danymi, takie jak następujące:
+
 - [Obsługa platformy Django i bazy danych SQL Azure](/azure/app-service/app-service-web-get-started-python)
 - [Obsługa platformy Django i MySQL na platformie Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Praca z [obiekty BLOB](/azure/storage/blobs/storage-quickstart-blobs-python), [pliki](/azure/storage/files/storage-python-how-to-use-file-storage), [kolejek](/azure/storage/queues/storage-python-how-to-use-queue-storage), i [tabele (DB kosmetyczka)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Dane, urządzeń i analiza](https://msdn.microsoft.com/data-and-devices) zawiera wprowadzenie do chmury inteligentnego firmy Microsoft, w tym Cortana Analytics Suite i obsługę Internetu rzeczy.
+[Platforma Microsoft AI](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;zawiera wprowadzenie do chmury inteligentnego firmy Microsoft, w tym Cortana Analytics Suite i obsługę Internetu rzeczy.
 
-[Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/) zawiera opis usługi Azure Storage i jak tworzyć aplikacje przy użyciu Azure blob, tabel, kolejek i plików.
+[Microsoft Azure Storage](/azure/storage/)&mdash;zawiera opis usługi Azure Storage i jak tworzyć aplikacje przy użyciu Azure blob, tabel, kolejek i plików.
 
-[Baza danych SQL Azure](https://azure.microsoft.com/documentation/services/sql-database/) opisano sposób podłączania do usługi Azure SQL Database, relacyjnej bazy danych jako usługa.
+[Baza danych SQL Azure](/azure/sql-database/)&mdash;opisano sposób podłączania do usługi Azure SQL Database, relacyjnej bazy danych jako usługa.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) opisano narzędzia, które upraszczają proces projektowania, eksploracji, testowania i wdrażania aplikacji połączonych danych i baz danych.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;opisano narzędzia, które upraszczają proces projektowania, eksploracji, testowania i wdrażania aplikacji połączonych danych i baz danych.
 
-[ADO.NET](/dotnet/framework/data/adonet/index) opis architektury ADO.NET i jak używać klas ADO.NET, aby zarządzać danych aplikacji i korzystać z źródła danych i XML.
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;opis architektury ADO.NET i jak używać klas ADO.NET, aby zarządzać danych aplikacji i korzystać z źródła danych i XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) opisuje sposób tworzenia aplikacji danych, które umożliwiają deweloperom program w odniesieniu do modelu koncepcyjnego zamiast bezpośrednio przed relacyjnej bazy danych.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;opisuje sposób tworzenia aplikacji danych, które umożliwiają deweloperom program w odniesieniu do modelu koncepcyjnego zamiast bezpośrednio przed relacyjnej bazy danych.
 
-[4.5 usługi danych WCF](/dotnet/framework/data/wcf/index) informacje dotyczące używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] do wdrożenia usług danych w Internecie lub intranecie, które implementują [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[4.5 usługi danych WCF](/dotnet/framework/data/wcf/index)&mdash;informacje dotyczące używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] do wdrożenia usług danych w Internecie lub intranecie, które implementują [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md) zawiera linki do tematów, w których opisano, jak działa dane w rozwiązaniach pakietu Office. W tym informacje o programowanie zorientowane na schemat, buforowanie danych i dostępu do danych po stronie serwera.
+[Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)&mdash;zawiera linki do tematów, w których opisano, jak działa dane w rozwiązaniach pakietu Office. W tym informacje o programowanie zorientowane na schemat, buforowanie danych i dostępu do danych po stronie serwera.
 
-[LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/) zawiera opis możliwości zapytania wbudowanych w języku C# i Visual Basic i wspólnego modelu do wykonywania zapytań relacyjnych baz danych, dokumentów XML, zestawy danych i kolekcji w pamięci.
+[LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/)&mdash;zawiera opis możliwości zapytania wbudowanych w języku C# i Visual Basic i wspólnego modelu do wykonywania zapytań relacyjnych baz danych, dokumentów XML, zestawy danych i kolekcji w pamięci.
 
-[Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) omówiono pracy z funkcjami programu .NET Framework XML debugowania XSLT danych XML i architektura zapytanie w języku XML.
+[Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;omówiono pracy z funkcjami programu .NET Framework XML debugowania XSLT danych XML i architektura zapytanie w języku XML.
 
-[Dokumenty XML i dane](/dotnet/standard/data/xml/index) zawiera omówienie kompleksowy, zintegrowany zestaw klas, które współpracują z dokumentów XML i danych w programie .NET Framework.
+[Dokumenty XML i dane](/dotnet/standard/data/xml/index)&mdash;zawiera omówienie kompleksowy, zintegrowany zestaw klas, które współpracują z dokumentów XML i danych w programie .NET Framework.

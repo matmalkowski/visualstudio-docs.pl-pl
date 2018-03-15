@@ -50,7 +50,6 @@
 ### [Uruchamianie testów jednostkowych dla aplikacji platformy UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [Dostosowywanie analizy pokrycia kodu](customizing-code-coverage-analysis.md)
-### [Analiza pokrycia kodu w testach weryfikacji kompilacji](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Rozwiązywanie problemów z pokryciem kodu](troubleshooting-code-coverage.md)
 ## [Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [Testy jednostkowe na żywo](live-unit-testing-intro.md)

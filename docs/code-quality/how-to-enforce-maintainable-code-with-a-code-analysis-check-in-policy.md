@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Porady: Wymuszanie kodu za pomocą zasad analizy kodu zaewidencjonowania
 
@@ -31,21 +31,21 @@ Administratorzy kontroli wersji programu Team Foundation można dodać reguły u
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Aby otworzyć Edytor zasad analizy kodu
 
-1. w **Team Explorer**, kliknij prawym przyciskiem myszy projektu zespołowego, kliknij przycisk **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.
+1. W **Team Explorer**, kliknij prawym przyciskiem myszy projektu zespołowego, kliknij przycisk **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.
 
-     The **Source Control** dialog box appears.
+     **Kontroli źródła** zostanie wyświetlone okno dialogowe.
 
-2 na **zasad ewidencjonowania** , a następnie kliknij pozycję **Dodaj**.
+2. Na **zasad ewidencjonowania** , a następnie kliknij pozycję **Dodaj**.
 
-     The **Add Check-in Policy** dialog box appears.
+     **Dodaj zasady ewidencjonowania** zostanie wyświetlone okno dialogowe.
 
-3. w **zasad ewidencjonowania** listy, wybierz **analizy kodu** pole wyboru, a następnie kliknij przycisk **OK**.
+3. W **zasad ewidencjonowania** listy, wybierz **analizy kodu** pole wyboru, a następnie kliknij przycisk **OK**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     **Edytor zasad analizy kodu** zostanie wyświetlone okno dialogowe.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Aby włączyć reguły utrzymanie analizy kodu
 
-1. w **Edytor zasad analizy kodu** okna dialogowego, w obszarze **ustawienia reguły**, rozwiń węzeł **reguły utrzymanie** węzła.
+1. W **Edytor zasad analizy kodu** okna dialogowego, w obszarze **ustawienia reguły**, rozwiń węzeł **reguły utrzymanie** węzła.
 
 2. Zaznacz pola wyboru dla następujących reguł:
 
@@ -63,5 +63,5 @@ Administratorzy kontroli wersji programu Team Foundation można dodać reguły u
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wartości metryk kodu](../code-quality/code-metrics-values.md)
-[tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Wartości metryk kodów](../code-quality/code-metrics-values.md)
+- [Tworzenie i używanie zasad ewidencjonowania analizy kodu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

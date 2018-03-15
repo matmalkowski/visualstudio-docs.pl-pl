@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 654dd237dab7f0f320c399e3da1b4f1d24537750
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -86,7 +86,8 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
 Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o środowiska IDE programu Visual Studio. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="next-steps"></a>Następne kroki
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o C#, platformy ASP.NET Core i środowiska IDE programu Visual Studio. Aby dowiedzieć się więcej, kontynuuj następujące samouczka.
 
-* [Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)
-* [Wprowadzenie do platformy ASP.NET Core stron Razor](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+> [!div class="nextstepaction"]
+> [Wprowadzenie do języka C# i ASP.NET w programie Visual Studio](tutorial-csharp-aspnet-core.md)

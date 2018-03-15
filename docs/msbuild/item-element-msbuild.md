@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Item — Element (MSBuild)
 Zawiera element zdefiniowane przez użytkownika i jego metadanych. Każdy element, który jest używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `ItemGroup` elementu.  
@@ -75,7 +75,7 @@ Teraz, jednak można przekazać `Version` metadanych jako atrybut, taki jak nast
 
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Include`|Atrybut wymagany.<br /><br /> Plik lub symbol wieloznaczny w celu dołączenia do listy elementów.|  
+|`Include`|Atrybut opcjonalny.<br /><br /> Plik lub symbol wieloznaczny w celu dołączenia do listy elementów.|  
 |`Exclude`|Atrybut opcjonalny.<br /><br /> Plik lub symbolu wieloznacznego, aby wykluczyć z listy elementów.|  
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
 |`Remove`|Atrybut opcjonalny.<br /><br /> Plik lub symbolu wieloznacznego, aby usunąć z listy elementów.<br /><br />|  
@@ -97,7 +97,7 @@ Teraz, jednak można przekazać `Version` metadanych jako atrybut, taki jak nast
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element GROUPING dla elementów.|  
 
 ## <a name="remarks"></a>Uwagi  
- `Item`elementy zdefiniować dane wejściowe w systemie kompilacji i są zgrupowane w kolekcji elementów na podstawie ich nazw kolekcji zdefiniowane przez użytkownika. Te kolekcji elementów mogą być używane jako parametry w celu [zadania](../msbuild/msbuild-tasks.md), który umożliwia poszczególnych elementów w kolekcjach wykonaj kroki procesu kompilacji. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
+ `Item` elementy zdefiniować dane wejściowe w systemie kompilacji i są zgrupowane w kolekcji elementów na podstawie ich nazw kolekcji zdefiniowane przez użytkownika. Te kolekcji elementów mogą być używane jako parametry w celu [zadania](../msbuild/msbuild-tasks.md), który umożliwia poszczególnych elementów w kolekcjach wykonaj kroki procesu kompilacji. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).  
 
  Przy użyciu notacji `@(` *Mojtyp* `)` umożliwia kolekcję elementów typu *Mojtyp* można rozszerzyć do Rozdzielana średnikami lista ciągów i przekazany do parametru. Jeśli parametr jest typu `string`, wartość parametru jest lista elementów, oddzielając je średnikami. Jeśli parametr jest tablicą ciągów (`string[]`), a następnie każdy element zostaną wstawione do tabeli na podstawie lokalizacji średnikami. Jeśli parametr zadania jest typu <xref:Microsoft.Build.Framework.ITaskItem> `[]`, wartość jest zawartość kolekcji elementów wraz z wszystkich metadanych dołączony. Aby ograniczyć każdego elementu przy użyciu znaków innych niż średnika, należy użyć składni `@(` *Mojtyp*`, '`*separatora*`')`.  
 

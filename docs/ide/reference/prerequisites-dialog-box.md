@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ea735e5e300d2b2cde301a4cf52424cabbba934
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
@@ -49,7 +49,7 @@ Wymagane składniki, które są widoczne w **wymagania wstępne** okno dialogowe
 |**.NET framework 3.5 z dodatkiem SP1**|Ten pakiet instaluje następujące czynności:<br /><br /> -.NET framework w wersji 2.0, 3.0 i 3.5.<br />-Obsługa wszystkich wersji systemu .NET Framework w 32-bitowych (x86) i (x64) 64-bitowych systemach operacyjnych.<br />— Pakiety językowe dla każdej wersji .NET Framework, który ma zainstalowany pakiet.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do systemu Windows Vista i .NET Framework 3.5 jest dołączana do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. .NET framework 3.5 jest wymagana dla wszystkich projektów Visual Basic i C#, które są kompilowane dla 32-bitowych systemów operacyjnych i która platforma docelowa ma wartość **.NET Framework 3.5**, a dla projektów Visual Basic i C# skompilowana dla wersji 64-bitowych systemy operacyjne. (IA64 nie jest obsługiwana.) Należy pamiętać, że projekty Visual Basic i C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [programu Visual Studio omówienie Wielowersyjności](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wymagania wstępne dotyczące aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Ten element jest wybrany domyślnie.|
 |**Microsoft .NET Framework 4.x**|Ten pakiet instaluje program .NET Framework 4.x x86 i x64 64.|
 |**Microsoft System CLR Types dla programu SQL Server 2014 (x64 i x86)**|Ten pakiet instaluje program Microsoft System CLR Types dla programu SQL Server 2014 dla x64 lub x86.|
-|**SQL Server 2008 R2 Express**|Ten pakiet instaluje program Microsoft SQL Server 2008 R2 Express, bezpłatna wersja programu Microsoft SQL Server 2008 R2, idealne bazy danych dla małych sieci web, serwera lub aplikacje. Może służyć bezpłatnie do prac deweloperskich i produkcji. Bezpłatny [rejestracji](http://go.microsoft.com/fwlink/?LinkId=130380) jest wymagana do dystrybucji programu SQL Server 2008 R2 Express z aplikacją.|
+|**SQL Server 2008 R2 Express**|Ten pakiet instaluje program Microsoft SQL Server 2008 R2 Express, bezpłatna wersja programu Microsoft SQL Server 2008 R2, idealne bazy danych dla małych sieci web, serwera lub aplikacje. Może służyć bezpłatnie do prac deweloperskich i produkcji.|
 |**SQL Server 2012 Express**|Ten pakiet instaluje program Microsoft SQL Server 2012 Express.|
 |**SQL Server 2012 Express LocalDB**|Ten pakiet instaluje program Microsoft SQL Server 2012 Express LocalDB.|
 |**Bibliotek języka Visual C++ Runtime "14" (ARM)**|Ten pakiet instaluje program Visual C++ środowiska wykonawczego biblioteki dla architektury Itanium, które zapewniają procedury programowania w języku systemu operacyjnego Microsoft Windows. Te procedury zautomatyzować wiele typowych zadań programowania, które nie są dostarczane przez języków C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki C Run-Time](/cpp/c-runtime-library/c-run-time-library-reference).|
@@ -58,7 +58,7 @@ Wymagane składniki, które są widoczne w **wymagania wstępne** okno dialogowe
 
 ## <a name="see-also"></a>Zobacz także
 
-[Strona publikowania, Projektant projektu](../../ide/reference/publish-page-project-designer.md)  
-[Wstępnie wymagane składniki wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)  
-[Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
-[Wielowersyjność kodu w programie Visual Studio ― przegląd](../../ide/visual-studio-multi-targeting-overview.md)
+- [Strona publikowania, Projektant projektu](../../ide/reference/publish-page-project-designer.md)
+- [Wstępnie wymagane składniki wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)
+- [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Wielowersyjność kodu w programie Visual Studio ― przegląd](../../ide/visual-studio-multi-targeting-overview.md)

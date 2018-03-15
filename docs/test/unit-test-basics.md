@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: c2a96315d7610e665ed32b669bea45f9318cffdb
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="unit-test-basics"></a>Teście jednostkowym
 
@@ -30,13 +30,13 @@ Możesz szybko generować projekty testowe i metod testowych w kodzie lub ręczn
 
 Eksplorator testów można również uruchomić innych firm i otwórz źródła platform testów jednostkowych, które zostały zaimplementowane interfejsy dodatek Eksploratora testów. Można dodać wiele z tych platform za pomocą Menedżera rozszerzenia programu Visual Studio i galerii Visual Studio. Zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)
 
-## <a name="quick-starts"></a>Przewodniki Szybki start
+## <a name="getting-started"></a>Wprowadzenie
 
 Aby obejrzeć wprowadzenie do testowania jednostek, które umożliwia przejście bezpośrednio do kodowania Zobacz jedną z poniższych tematów:
 
 - [Przewodnik: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Szybki Start: Test programowanie sterowane za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Pisanie testów jednostkowych dla C/C++ w programie Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -92,7 +92,7 @@ Często jest szybsze do generowania jednostkowy projekt testowy i klas zastępcz
 
 2.  Kliknij przycisk OK, aby zaakceptować wartości domyślne tworzenia testów jednostkowych lub zmiany wartości używane do tworzenia i nazwę jednostki Testowanie projektu i testów jednostkowych. Można wybrać kod, który jest domyślnie dodawany do metody testowe jednostki.
 
-     ![Prawo &#45; kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Prawo&#45;kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
 
 3.  Klas zastępczych testów jednostkowych są tworzone w nowym projekcie testowym jednostki dla wszystkich metod w klasie.
 
@@ -221,7 +221,7 @@ Pasek narzędzi Eksploratora testów ułatwia odnajdywanie, organizować i uruch
 
  Możesz wybrać **Uruchom wszystkie** do uruchomienia wszystkich testów, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia. Po uruchomieniu zestawu testów w dolnej części okna Eksploratora testów zostanie wyświetlone podsumowanie uruchomienia testu. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku. Wybierz **Otwórz Test** z menu kontekstowego (klawiatury: F12) do wyświetlenia kodu źródłowego dla wybranego testu.
 
- Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE &#95;parallelicon &#45; małych](../test/media/ute_parallelicon-small.png "UTE_parallelicon małych") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
+ Jeśli poszczególne testy nie ma żadnych zależności, które uniemożliwiają uruchomione w dowolnej kolejności, włącz wykonywanie równoległe testu z ![UTE&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png "małych UTE_parallelicon") przycisk przełączania na pasku narzędzi. To znacznie ograniczyć czas potrzebny na uruchamianie wszystkich testów.
 
 ### <a name="run-tests-after-every-build"></a>Uruchom testy po każdej kompilacji
 

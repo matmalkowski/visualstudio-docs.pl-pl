@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8ae88a819dca24af504c954a00c4f25a9d61d38c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bfb4139b0093c8bd59c62d0ea7711f21f2faf53b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać CTest dla języka C++ w programie Visual Studio
 
@@ -24,7 +24,7 @@ CMake (w tym CTest) jest zintegrowany z programu Visual Studio IDE domyślnie ja
 
 ## <a name="to-write-tests"></a>Aby napisać testy
 
-Obsługa CMake w programie Visual Studio nie może dotyczyć system projektu programu Visual Studio. W związku z tym zapisu i konfigurowanie CTest testów, tak samo jak w dowolnym środowisku CMake. Aby uzyskać więcej informacji o używaniu CMake w programie Visual Studio, zobacz [CMake Tools dla Visual C++](/cpp/ide/cmake-tools-for-visual-cpp). 
+Obsługa CMake w programie Visual Studio nie może dotyczyć system projektu programu Visual Studio. W związku z tym zapisu i konfigurowanie CTest testów, tak samo jak w dowolnym środowisku CMake. Aby uzyskać więcej informacji o używaniu CMake w programie Visual Studio, zobacz [CMake Tools dla Visual C++](/cpp/ide/cmake-tools-for-visual-cpp).
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>Aby uruchomić testy (Visual Studio 2017 wersji 15,6)
 
@@ -42,6 +42,6 @@ W **programu Visual Studio 2017 wersji 15,5 cala**, CTest nie jest zintegrowany 
 
 ![Uruchom testy CTest w 15,5 cala VS2017](media/cpp-cmake-run-tests.png "CTest uruchamiania testów w 15,5 cala")
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)

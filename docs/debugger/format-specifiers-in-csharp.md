@@ -32,14 +32,14 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1191884f0a20463f9d248a6acfca4337212b613
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: fee9e4c355c83ae44cf6147084c95a3b213bce5a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w C# w debugerze programu Visual Studio
-Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu. Można również użyć specyfikatory formatu w **Immediate** okna, **polecenia** okna, a nawet w systemie windows źródła. Jeśli zostanie wstrzymana na wyrażeniu w oknach, wyniki będą wyświetlane w etykietki danych. Etykietki danych będzie odzwierciedlać specyfikator formatu wyświetlania etykietek danych.  
+Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu. Umożliwia także specyfikatory formatu w **Immediate** okna, **polecenia** okna w [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w systemie windows źródła. Jeśli zostanie wstrzymana na wyrażeniu w oknach, wyniki będą wyświetlane w etykietki danych. Etykietki danych będzie odzwierciedlać specyfikator formatu wyświetlania etykietek danych.  
   
  Aby użyć specyfikatora formatu, wpisz wyrażenie rozdzielanych przecinkami. Po przecinku Dodaj odpowiednie specyfikator.  
   

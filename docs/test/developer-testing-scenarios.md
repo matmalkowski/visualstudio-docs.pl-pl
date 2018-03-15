@@ -14,31 +14,21 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0da910ddf48d0f270aa5e624628d0d6b937e9ae1
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0bb23bef0a860f11e1c4c57716a2bdd0c6dc2482
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Deweloper testowania narzędzi, scenariusze i funkcje
 
 Obsługa kodu kondycji z testowania jednostek. Program Visual Studio oferuje szeroką gamę zaawansowanych narzędzi i technik dla deweloperów do użycia podczas testowania aplikacji:
 
-**Scenariusze i funkcje:**
-
-* [Unikaj regresji i osiągnięcia pokrycia kodu z IntelliTest](#intellitest)
-* [Testowanie kodowanego interfejsu użytkownika i Selenium za pomocą interfejsu użytkownika](#ui-testing)
-* [Skuteczne testowanie jednostkowe na platformie pokrycia kodu w usłudze Visual Studio](#unit-testing)
-* [Testy jednostkowe za pomocą dowolnej architektury przy użyciu wysokiej wydajności Eksplorator testów](#test-explorer)
-* [Wprowadzenie do przeprowadzania testów jednostkowych](getting-started-with-unit-testing.md)
-
-<a name="intellitest"></a>
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>Unikaj regresji i osiągnięcia pokrycia kodu z IntelliTest
 
 W tradycyjnych jednostki testów każdy przypadek testowy reprezentuje użycia przykładowy scenariusz, a potwierdzenia uwzględnić relacji między danych wejściowych i wyjściowych.  Weryfikuje, że kilka takich scenariuszy może również być wystarczająca, ale doświadczonych programistów wie usterki znajomą nawet w dobrze przetestowany kodu, gdy jest to poprawny, ale dane wejściowe zastosowaniem powodować nieprawidłowe odpowiedzi.
 
-Zwiększenia zapotrzebowania i uniknąć regresji z IntelliTest.
-IntelliTest znacznie zmniejsza nakład pracy można tworzyć i obsługiwać testów jednostkowych dla nowego lub istniejącego kodu. 
+Zwiększenia zapotrzebowania i uniknąć regresji z IntelliTest. IntelliTest znacznie zmniejsza nakład pracy można tworzyć i obsługiwać testów jednostkowych dla nowego lub istniejącego kodu.
 
 ![IntelliTest w akcji](media/devtest-intellitest.png)
 
@@ -48,14 +38,13 @@ IntelliTest znacznie zmniejsza nakład pracy można tworzyć i obsługiwać test
 * [Rozpoczynanie pracy z IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Podręcznik dotyczący funkcji IntelliTest](intellitest-manual/index.md)
 
-<a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Testowanie kodowanego interfejsu użytkownika i Selenium za pomocą interfejsu użytkownika
 
 Test interfejsu użytkownika (UI) z najlepszymi rasy lub społeczności zatwierdzone testów interfejsu użytkownika.
 Kodowane testy interfejsu użytkownika umożliwiają tworzenie pełni zautomatyzowanych testów w celu zweryfikowania funkcji i zachowania interfejsu użytkownika.
 Ich można zautomatyzować testów interfejsu użytkownika w różnych technologii, w tym aplikacji opartych na języku XAML platformy uniwersalnej systemu Windows, aplikacje przeglądarki i aplikacje programu SharePoint.
 
-Wybierz najlepsze rasy kodowany testów interfejsu użytkownika lub ogólnego w przeglądarce testów UI z Selenium, Visual Studio udostępnia wszystkie narzędzia, które są potrzebne. 
+Wybierz najlepsze rasy kodowany testów interfejsu użytkownika lub ogólnego w przeglądarce testów UI z Selenium, Visual Studio udostępnia wszystkie narzędzia, które są potrzebne.
 
 ![Testowanie kodowanego interfejsu użytkownika za pomocą interfejsu użytkownika](media/devtest-codeduitest.png)
 
@@ -66,12 +55,11 @@ Wybierz najlepsze rasy kodowany testów interfejsu użytkownika lub ogólnego w 
 * [Testowanie aplikacji SharePoint z kodowanych testów interfejsu użytkownika](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Wprowadzenie do kodowanych testów interfejsu użytkownika z Visual Studio Enterprise (laboratorium)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
-<a name="unit-testing"></a>
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Skuteczne testowanie jednostkowe na platformie pokrycia kodu w usłudze Visual Studio
 
 Aby ustalić, jaka część kodu projektu jest rzeczywiście testowane przez kodowane testy, takie jak testy jednostkowe, służy funkcja pokrycia kodu programu Visual Studio. Aby skutecznie ochronić usterki, testy należy wykonywać lub obejmuje dużą część kodu.
 
-Analizy pokrycia kodu mogą dotyczyć zarówno kodów zarządzanych (CLI), jak i niezarządzanych (natywnych).
+Analizy pokrycia kodu może odnosić się do kodu (natywna) zarządzane i niezarządzane.
 
 Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu Eksploratora testów. Tabela wyników zawiera procent kodu, który został uruchomiony w każdym zestawie, każdej klasie i metodzie. Ponadto edytor źródła zawiera kod, który został przetestowany.
 
@@ -81,7 +69,6 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 * [Jednostka testowania, pokrycie kodu i analizy kodu klonowania z programem Visual Studio (laboratorium)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Dostosowywanie analizy pokrycia kodu](customizing-code-coverage-analysis.md)
 
-<a name="test-explorer"></a>
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Testy jednostkowe za pomocą dowolnej architektury przy użyciu wysokiej wydajności Eksplorator testów
 
 Przetestuj pomoc Eksploratora deweloperom tworzenia, zarządzania i uzyskać maksymalną korzyści z testowania jednostek.
@@ -100,6 +87,6 @@ Visual Studio także i otwiera drzwi testowania kart sieciowych, takich jak NUni
 ## <a name="see-also"></a>Zobacz także
 
 * [Wprowadzenie do przeprowadzania testów jednostkowych](getting-started-with-unit-testing.md)
-* [Przyspieszenie wykonywania testów jednostkowych w programie Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
+* [Przyspieszenia wykonywania testów jednostkowych w programie Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Wykonywanie testu równoległe i kontekstowej jednostki](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Jednostka testowania, pokrycie kodu i analizy kodu klonowania z programem Visual Studio (laboratorium)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

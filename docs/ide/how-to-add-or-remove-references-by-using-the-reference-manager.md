@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 83c90ee535830f6747a7f847ac649078be03451e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -41,15 +41,15 @@ Można użyć **Menedżera odwołań** okno dialogowe dodawania i zarządzania n
 
 **Menedżera odwołań** różne kategorie wyświetlane okno dialogowe z lewej strony, w zależności od typu projektu:
 
-- [Zestawy](#assemblies), z podgrupy Framework i rozszerzenia.
+- Zestawy z podgrupami Framework i Rozszerzenia.
 
-- [COM](#com), zawiera listę wszystkich składników modelu COM, które są dostępne dla przywołującego.
+- COM, zawiera listę wszystkich składników modelu COM, które są dostępne dla przywołującego.
 
-- [Rozwiązanie](#solution), z podgrupy projektów.
+- Rozwiązanie z podgrupą Projekty.
 
-- [Windows](#windows), z podgrupy rdzeni i rozszerzenia. Za pomocą można eksplorowania odwołań w SDK systemu Windows lub rozszerzenia SDK **przeglądarki obiektów**.
+- Okna z podgrupami Podstawowe i Rozszerzenia. Za pomocą można eksplorowania odwołań w SDK systemu Windows lub rozszerzenia SDK **przeglądarki obiektów**.
 
-- [Przeglądaj](#browse), z ostatnich podgrup.
+- Przeglądaj z podgrupą Ostatnie.
 
 ## <a name="adding-and-removing-a-reference"></a>Dodawanie i usuwanie odwołań
 
@@ -61,13 +61,13 @@ Można użyć **Menedżera odwołań** okno dialogowe dodawania i zarządzania n
 
    **Menedżera odwołań** otwiera i list odwołań dostępne przez grupę.
 
-## <a name="a-idassemblies-assemblies-tab"></a><a id="assemblies" />Karta zestawów
+## <a name="assemblies-tab"></a>Karta Zestawy
 
 **Zestawy** karcie wyświetlane są wszystkie zestawy .NET Framework, które są dostępne dla przywołującego. **Zestawy** kartę nie listy żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska czasu wykonywania. Jeśli wdrażania lub kopiowania aplikacji, która zawiera odwołanie do zestawu, który jest zarejestrowany w pamięci GAC, zestaw nie będą wdrożone lub skopiowane z aplikacją, bez względu na ustawienie kopii lokalnej. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md).
 
 Jeśli ręcznie Dodaj odwołanie do dowolnego zestawu (EnvDTE EnvDTE80, EnvDTE90, EnvDTE90a albo EnvDTE100), obszary nazw EnvDTE **Osadź typy międzyoperacyjne** właściwości odwołania do **False** w Okno właściwości. Ustawienie tej właściwości na **True** można Przyczyna kompilacji problemy z powodu niektórych właściwości EnvDTE, które nie mogą być osadzone.
 
-Wszystkie projekty pulpitu zawierają niejawne odwołanie do mscorlib. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]projekty zawierają niejawne odwołanie do właśnie Microsoft.VisualBasic. Wszystkie projekty zawiera niejawne odwołanie do właśnie System.Core, nawet jeśli zostanie ono usunięte z listy odwołania.
+Wszystkie projekty pulpitu zawierają niejawne odwołanie do mscorlib. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty zawierają niejawne odwołanie do właśnie Microsoft.VisualBasic. Wszystkie projekty zawiera niejawne odwołanie do właśnie System.Core, nawet jeśli zostanie ono usunięte z listy odwołania.
 
 Jeśli typ projektu nie obsługuje zestawów, karcie nie będą wyświetlane w **Menedżera odwołań** okno dialogowe.
 
@@ -75,25 +75,23 @@ Karta Zestawy zawiera dwie karty podrzędne:
 
 1. **Framework** Wyświetla wszystkie zestawy, które stanowią docelową platformę.
 
-    Projekty dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacje zawierają odwołania do wszystkich zestawów na docelowej [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] domyślnie po utworzeniu projektu. W projektach zarządzanych, tylko do odczytu węzła w folderze odwołań w **Eksploratora rozwiązań** wskazuje odwołanie do całego Framework. W związku z tym karcie Framework nie wyliczyć żadnego z zestawów w ramach i zamiast tego wyświetli następujący komunikat: "wszystkie zestawy Framework są już przywoływane. Użyj przeglądarki obiektów do eksplorowania odwołań w platformie. " Dla projektów pulpitu karcie Framework wylicza zestawów platformy docelowej, a użytkownika należy dodać odwołania wymagane przez tę aplikację.
+    Projekty dla aplikacji ze Sklepu Windows 8.x zawierają odwołania do wszystkich zestawów na docelowej [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] domyślnie po utworzeniu projektu. W projektach zarządzanych, tylko do odczytu węzła w folderze odwołań w **Eksploratora rozwiązań** wskazuje odwołanie do całego Framework. W związku z tym karcie Framework nie wyliczyć żadnego z zestawów w ramach i zamiast tego wyświetli następujący komunikat: "wszystkie zestawy Framework są już przywoływane. Użyj przeglądarki obiektów do eksplorowania odwołań w platformie. " Dla projektów pulpitu karcie Framework wylicza zestawów platformy docelowej, a użytkownika należy dodać odwołania wymagane przez tę aplikację.
 
 2. **Rozszerzenia** Wyświetla wszystkie zestawy, które zewnętrznych dostawców składników i formantów ma opracowany, aby rozszerzyć docelową platformę. W zależności od celu aplikacji użytkownika, może być konieczne użycie tych zestawów.
 
-    - Rozszerzenia jest wypełniane przez wyliczanie zestawów, które są zarejestrowane w następujących lokalizacjach:
+   Rozszerzenia jest wypełniane przez wyliczanie zestawów, które są zarejestrowane w następujących lokalizacjach:
 
-        ```
-        32-bit machine:
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```
+   komputer 32-bitowe:
+   - HKEY_CURRENT_USER\SOFTWARE\Microsoft\[identyfikator platformy docelowej] [wersja docelowego Frameworka] \v \AssemblyFoldersEx\[UserComponentName]\@domyślne = [Lokalizacja dysku zestawów]
+   - HKEY_LOCAL_MACHINE\Software\Microsoft\[identyfikator platformy docelowej] [wersja docelowego Frameworka] \v \AssemblyFoldersEx\[UserComponentName]\@domyślne = [Lokalizacja dysku zestawów]
 
-        Na przykład, jeśli projekt jest przeznaczony dla programu .NET Framework 4 na komputerze 32-bitowy, rozszerzenia wylicza zestawy, które są zarejestrowane pod \Microsoft\\. NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\. NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\. NETFramework\v3.0\AssemblyFoldersEx\\i \Microsoft\\. NETFramework\v2.0\AssemblyFoldersEx\\.
+   komputer 64-bitowe:
+   - HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[identyfikator platformy docelowej] [wersja docelowego Frameworka] \v \AssemblyFoldersEx\[UserComponentName]\@domyślne = [Lokalizacja dysku zestawów]
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[identyfikator platformy docelowej] [wersja docelowego Frameworka] \v \AssemblyFoldersEx\[UserComponentName]\@domyślne = [Lokalizacja dysku zestawów] i starszych wersje [Identyfikator docelowego Framework]
 
-Niektóre składniki na liście mogą nie być wyświetlane, w zależności od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji projektu. Taka sytuacja może wystąpić w następujących warunkach:
+   Na przykład, jeśli projekt jest przeznaczony dla programu .NET Framework 4 na komputerze 32-bitowy, rozszerzenia wylicza zestawy, które są zarejestrowane pod \Microsoft\\. NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\. NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\. NETFramework\v3.0\AssemblyFoldersEx\\i \Microsoft\\. NETFramework\v2.0\AssemblyFoldersEx\\.
+
+Niektóre składniki na liście mogą nie być wyświetlane, w zależności od wersji platformy .NET projektu. Taka sytuacja może wystąpić w następujących warunkach:
 
 - Składnik, który korzysta z najnowszej wersji programu .NET Framework jest niezgodna z projektu, który jest przeznaczony dla starszej wersji programu .NET Framework.
 
@@ -116,41 +114,41 @@ Niektóre składniki na liście mogą nie być wyświetlane, w zależności od [
 
     - Innych katalogów projektu w tym samym rozwiązaniu. (Te zestawy można znaleźć przy użyciu **projekty** kartę.)
 
-    \-lub -
+    \- lub -
 
 - Ustaw klucz rejestru, który określa lokalizację zestawów do wyświetlenia:
 
-    W przypadku 32-bitowym systemie operacyjnym należy dodać jedną z następujących kluczy rejestru.
+   W przypadku 32-bitowym systemie operacyjnym należy dodać jedną z następujących kluczy rejestru.
 
-    - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
+   - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-    - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
+   - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-    Dla 64-bitowym systemie operacyjnym należy dodać jedną z następujących kluczy rejestru w gałęzi rejestru w 32-bitowych.
+   Dla 64-bitowym systemie operacyjnym należy dodać jedną z następujących kluczy rejestru w gałęzi rejestru w 32-bitowych.
 
-    - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
+   - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-    - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
+   - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-    *VersionMinimum* jest najniższa wersja .NET Framework, która ma zastosowanie. Jeśli *VersionMinimum* jest w wersji 3.0, foldery określone w AssemblyFoldersEx dotyczą projektów przeznaczonych .NET Framework 3.0 i nowszych.
+   *VersionMinimum* jest najniższa wersja .NET Framework, która ma zastosowanie. Jeśli *VersionMinimum* jest w wersji 3.0, foldery określone w AssemblyFoldersEx dotyczą projektów przeznaczonych .NET Framework 3.0 i nowszych.
 
-    *AssemblyLocation* jest to katalog zestawy, które mają być wyświetlane w **Dodaj odwołanie** okno dialogowe, na przykład C:\MyAssemblies\\.
+   *AssemblyLocation* jest to katalog zestawy, które mają być wyświetlane w **Dodaj odwołanie** okno dialogowe, na przykład C:\MyAssemblies\\.
 
-    Tworzenie klucza rejestru w węźle HKEY_LOCAL_MACHINE zezwala wszystkim użytkownikom na zobacz zestawy w określonej lokalizacji w **Dodaj odwołanie** okno dialogowe. Tworzenie klucza rejestru w węźle HKEY_CURRENT_USER ma wpływ tylko ustawienia dla bieżącego użytkownika.
+   Tworzenie klucza rejestru w węźle HKEY_LOCAL_MACHINE zezwala wszystkim użytkownikom na zobacz zestawy w określonej lokalizacji w **Dodaj odwołanie** okno dialogowe. Tworzenie klucza rejestru w węźle HKEY_CURRENT_USER ma wpływ tylko ustawienia dla bieżącego użytkownika.
 
-    Otwórz **Dodaj odwołanie** ponownie okno dialogowe. Zestawy powinny pojawiać się na **.NET** kartę. Jeśli nie, upewnij się, że zestawy znajdują się w określonym *AssemblyLocation* katalogu, uruchom ponownie program Visual Studio i spróbuj ponownie.
+   Otwórz **Dodaj odwołanie** ponownie okno dialogowe. Zestawy powinny pojawiać się na **.NET** kartę. Jeśli nie, upewnij się, że zestawy znajdują się w określonym *AssemblyLocation* katalogu, uruchom ponownie program Visual Studio i spróbuj ponownie.
 
-## <a name="a-idcom-com-tab"></a><a id="com" />Karta COM
+## <a name="com-tab"></a>Karta COM
 
 Na karcie COM znajduje się lista wszystkich składników COM, które są dostępne dla odwołań. Jeśli chcesz dodać odwołanie do zarejestrowanej DLL modelu COM, zawierającej manifest wewnętrzny, najpierw wyrejestruj bibliotekę DLL. W przeciwnym razie Visual Studio dodaje odwołanie do zestawu jako formant ActiveX, a nie jako natywną DLL.
 
 Jeśli typ projektu nie obsługuje modelu COM, nie pojawi się na karcie **Menedżera odwołań** okno dialogowe.
 
-## <a name="a-idsolution-solution-tab"></a><a id="solution" />Karta rozwiązania
+## <a name="solution-tab"></a>Karta Rozwiązanie
 
 Na karcie Rozwiązanie znajduje się lista wszystkich zgodnych projektów w obrębie bieżącego rozwiązania, na karcie podrzędnej Projekty.
 
-Projekt może się odwoływać do innego projektu, który jest przeznaczony dla innej wersji platformy .NET Framework. Na przykład można utworzyć projektu którego element docelowy [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , ale który odwołuje się do zestawu, który jest został skompilowany dla platformy .NET Framework 2. Jednak nie może odwoływać się projekt .NET Framework 2 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Projekt może się odwoływać do innego projektu, który jest przeznaczony dla innej wersji platformy .NET Framework. Na przykład można utworzyć projektu którego element docelowy [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , ale który odwołuje się do zestawu, który jest został skompilowany dla platformy .NET Framework 2. Jednak nie może odwoływać się projekt .NET Framework 2 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [omówienie wielowersyjności](../ide/visual-studio-multi-targeting-overview.md).
 
 Projekt, którego celem jest [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest niezgodny z projektu, którego celem jest [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
 
@@ -158,15 +156,15 @@ Odwołanie do pliku jest tworzony zamiast odwołania projektu, jeśli jeden proj
 
 Projekt, którego celem jest [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] nie można dodać odwołania projektu do projektu przeznaczonego dla programu .NET Framework i na odwrót.
 
-## <a name="a-idwindows-windows-tab"></a><a id="windows" />Karta Windows
+## <a name="windows-tab"></a>Karta Windows
 
 Na karcie Windows są wymienione wszystkie zestawy SDK specyficzne dla platform, na których jest uruchamiany system operacyjny Windows.
 
 Można wygenerować plik WinMD w Visual Studio na dwa sposoby:
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]Aplikacja zarządzana projekty**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projekty aplikacji można wyjściowe pliki binarne WinMD przez ustawienie właściwości projektu &#124; Dane wyjściowe typu = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wprowadzi właściwości projektu &#124; Nazwa zestawu lub właściwości projektu &#124; Wartość Namespace, która jest odłączony od zestaw przestrzeni nazw w projekcie lub brak nie jest nadzbiorem obszaru nazw w projekcie, generowania ostrzeżeń kompilacji: "A.winmd" nie jest prawidłową winmd nazwę pliku dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieje w przestrzeni nazw sub nazwy pliku nie będzie można znajdować się w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Pulpitu projekt Visual Basic lub C# można korzystać tylko metadanych Winmd, które zostały wygenerowane za pomocą [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawów SDK, które są określane jako metadanych Winmd firmy i nie można wygenerować metadanych Winmd.
+- **Projekty zarządzanych aplikacji ze Sklepu Windows 8.x**: projektami aplikacji dla systemu Windows 8.x magazynu można wyjściowe pliki binarne WinMD przez ustawienie właściwości projektu &#124; typ danych wyjściowych = plik WinMD. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeżeli projekt składa się z przestrzeni nazw A.B i A.B.C, możliwe nazwy dla wygenerowanego WinMD to A.winmd i A.B.winmd. Jeśli użytkownik wprowadzi właściwości projektu &#124; Nazwa zestawu lub właściwości projektu &#124; Namespace wartość, która jest rozłączny z zestawu przestrzeni nazw w projekcie lub brak nie jest nadzbiorem obszaru nazw w projekcie, generowania ostrzeżeń kompilacji: nie jest "A.winmd" Nazwa pliku winmd prawidłowy dla tego zestawu. Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieje w przestrzeni nazw sub nazwy pliku nie będzie można znajdować się w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest „CSWSClassLibrary1”. Pulpit Visual Basic lub C# projektu można korzystać tylko metadanych Winmd, generowanych przez korzystanie z systemu Windows 8 zestawów SDK, które są określane jako firmy metadanych Winmd, i nie można wygenerować metadanych Winmd.
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]projektów natywnych aplikacji**: natywny plik WinMD, który składa się z tylko metadane. Jego realizacja istnieje w oddzielnym pliku DLL. Co może spowodować natywne pliki binarne, wybierając szablon projektu składnika środowiska wykonawczego systemu Windows w **nowy projekt** okno dialogowe lub uruchamiając od pustego projektu i modyfikowanie właściwości projektu, aby wygenerować plik WinMD. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.
+- **Projekty natywnych aplikacji systemu Windows 8.x magazynu**: natywny plik WinMD, który składa się z tylko metadane. Jego realizacja istnieje w oddzielnym pliku DLL. Co może spowodować natywne pliki binarne, wybierając szablon projektu składnika środowiska wykonawczego systemu Windows w **nowy projekt** okno dialogowe lub uruchamiając od pustego projektu i modyfikowanie właściwości projektu, aby wygenerować plik WinMD. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.
 
 Karta Windows składa się z dwóch podgrup.
 
@@ -174,7 +172,7 @@ Karta Windows składa się z dwóch podgrup.
 
 Podgrupa podstawowa zawiera listę wszystkich WinMD (dla elementów wykonawczych Windows) w zestawie SDK dla docelowej wersji systemu Windows.
 
-[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]Projekty aplikacji zawierają odwołania do wszystkich metadanych winmd w [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestaw SDK domyślnie po utworzeniu projektu. W projektach zarządzanych, tylko do odczytu węzła w folderze odwołań w **Eksploratora rozwiązań** wskazuje odwołanie do całej [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawu SDK. W związku z tym podgrupy Core Menedżera odwołań nie będzie żadnego z zestawów z wyliczenia [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawu SDK i zamiast tego zostanie wyświetlony komunikat: "Windows SDK istnieje już odwołanie. Użyj przeglądarki obiektów do eksplorowania odwołań w SDK systemu Windows."
+Projekty aplikacji systemu Windows 8.x magazynu zawierają odwołania do wszystkich metadanych winmd w zestawie SDK systemu Windows 8, domyślnie na tworzenie projektu. W projektach zarządzanych, tylko do odczytu węzła w folderze odwołań w **Eksploratora rozwiązań** wskazuje odwołanie do całego systemu Windows 8 SDK. W związku z tym podgrupy Core Menedżera odwołań nie wyliczyć żadnego z zestawów z zestawu SDK systemu Windows 8 i zamiast tego zostanie wyświetlony komunikat: "Windows SDK istnieje już odwołanie. Użyj przeglądarki obiektów do eksplorowania odwołań w SDK systemu Windows."
 
 W projektach pulpitu podgrupy Core nie jest wyświetlany domyślnie. Środowisko wykonawcze systemu Windows można dodać przez otwarcie menu skrótów węzła projektu wybieranie **Zwolnij projekt**, dodając następujący fragment kodu i ponownie otworzyć projekt (na węzeł projektu, wybierz **Załaduj ponownie projekt**). Gdy wywołanie **Menedżera odwołań** , podgrupy Core okno dialogowe.
 
@@ -188,7 +186,7 @@ Upewnij się wybrać **Windows** pole wyboru na tym podgrupy. Wówczas można u�
 
 ### <a name="extensions-subgroup"></a>Podgrupy rozszerzeń
 
-Rozszerzenia wyświetla pakiety SDK użytkownika, które rozszerzają docelową platformę Windows. Ta karta jest wyświetlana dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji tylko projekty. Projekty pulpitu nie zostanie wyświetlona na tej karcie, ponieważ mogą one wykorzystywać tylko pliki cookie winmd.
+Rozszerzenia wyświetla pakiety SDK użytkownika, które rozszerzają docelową platformę Windows. Ta karta jest wyświetlana dla systemu Windows 8.x magazynu aplikacji tylko dla projektów. Projekty pulpitu nie zostanie wyświetlona na tej karcie, ponieważ mogą one wykorzystywać tylko pliki cookie winmd.
 
 Zestaw SDK jest zbiorem plików, który program Visual Studio traktuje jako samodzielny składnik. Na karcie rozszerzenia zestawów SDK, które są stosowane do projektu, z których **Menedżera odwołań** wywołano okno dialogowe są wyświetlane jako pojedynczej wpisów. Dodane do projektu, cała zawartość zestawu SDK jest używane przez program Visual Studio taki sposób, że użytkownik nie musisz podejmować dalsze działania wykorzystać zawartość zestawu SDK w funkcji IntelliSense, przybornika, projektantów przeglądarki obiektów, kompilowanie, wdrażanie, debugowanie i pakowania. Aby uzyskać informacje o wyświetlaniu zestawu SDK na karcie rozszerzenia, zobacz [tworzenie zestaw Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
@@ -197,11 +195,11 @@ Zestaw SDK jest zbiorem plików, który program Visual Studio traktuje jako samo
 
 Jeśli typ projektu nie obsługuje **rozszerzenia**, nie jest wyświetlane w karcie **Menedżera odwołań** okno dialogowe.
 
-## <a name="a-idbrowse-browse-button"></a><a id="browse" />Przycisk Przeglądaj
+## <a name="browse-button"></a>Przycisk Przeglądaj
 
 Można użyć **Przeglądaj** przycisk, aby przeglądać składnika w systemie plików.
 
-Projekt może się odwoływać do składnika, który jest przeznaczony dla innej wersji platformy .NET Framework. Na przykład można tworzenia aplikacji którego element docelowy .NET Framework 4.7, który odwołuje się składnik, który jest przeznaczony dla platformy .NET Framework 4. Aby uzyskać więcej informacji, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Projekt może się odwoływać do składnika, który jest przeznaczony dla innej wersji platformy .NET Framework. Na przykład można tworzenia aplikacji którego element docelowy .NET Framework 4.7, który odwołuje się składnik, który jest przeznaczony dla platformy .NET Framework 4. Aby uzyskać więcej informacji, zobacz [omówienie wielowersyjności](../ide/visual-studio-multi-targeting-overview.md).
 
 Nie należy dodawać odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, ponieważ takie rozwiązanie może spowodować błędy kompilacji. Zamiast tego należy użyć **rozwiązania** karcie **Menedżera odwołań** okno dialogowe, aby utworzyć odwołania do projektu do projektu. To ułatwia programowanie zespołowe przez włączenie lepsze zarządzanie bibliotek klas, które możesz utworzyć w projektach. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzony](../ide/troubleshooting-broken-references.md).
 

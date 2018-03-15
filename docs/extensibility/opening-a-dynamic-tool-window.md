@@ -17,14 +17,14 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Otwieranie okna narzędzia dynamiczne
-Narzędzia windows zwykle są otwierane z polecenia w menu lub skrótu klawiaturowego równoważne. Czasami jednak może być konieczne okna narzędzia, która otwiera za każdym razem kontekście konkretnego interfejsu użytkownika ma zastosowanie i zostanie zamknięte po kontekstu interfejsu użytkownika nie ma zastosowania. Okna narzędzi, takich jak te są nazywane *dynamiczne* lub *automatycznie widoczne*.  
+Narzędzia windows zwykle są otwierane z polecenia w menu lub skrótu klawiaturowego równoważne. Czasami jednak może być konieczne okna narzędzia, która otwiera za każdym razem kontekście konkretnego interfejsu użytkownika ma zastosowanie i zostanie zamknięte po kontekstu interfejsu użytkownika nie ma zastosowania. Tego rodzaju okna narzędzi są nazywane *dynamiczne* lub *automatycznie widoczne*.  
   
 > [!NOTE]
 >  Lista wstępnie zdefiniowanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Dla  
@@ -40,21 +40,21 @@ Narzędzia windows zwykle są otwierane z polecenia w menu lub skrótu klawiatur
   
 1.  Tworzenie projektu VSIX o nazwie **DynamicToolWindow** i dodać szablon elementu okna narzędzia o nazwie **DynamicWindowPane.cs**. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  W pliku DynamicWindowPanePackage.cs odnaleźć deklaracji DynamicWindowPanePackage. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i atrybuty T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute zarejestrować okna narzędzia.  
+2.  W pliku DynamicWindowPanePackage.cs odnaleźć deklaracji DynamicWindowPanePackage. Dodaj <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> atrybutów, aby zarejestrować okna narzędzia.  
   
     ```vb  
-    [[ProvideToolWindow(typeof(DynamicWindowPane)]  
+    [ProvideToolWindow(typeof(DynamicWindowPane)]  
     [ProvideToolWindowVisibility(typeof(DynamicWindowPane), VSConstants.UICONTEXT.SolutionExists_string)]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     [ProvideToolWindow(typeof(DynamicToolWindow.DynamicWindowPane))]  
-    [Guid(DynamicWindowPanePackageGuids.PackageGuidString)]  
+    [Guid(DynamicWindowPanePackage.PackageGuidString)]  
     public sealed class DynamicWindowPanePackage : Package  
     {. . .}  
     ```  
   
-     Rejestruje to okna narzędzi o nazwie DynamicWindowPane jako przejściowa nie jest trwały, po zamknięciu programu Visual Studio i otworzyć ponownie okno. Zostanie otwarty DynamicWindowPane zawsze, gdy <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> ma zastosowanie, a w przeciwnym razie zamknięte.  
+     Atrybuty powyżej rejestru o nazwie DynamicWindowPane jako przejściowa okna, które nie jest trwały, po zamknięciu programu Visual Studio i ponownie otworzyć okno narzędzia. Zostanie otwarty DynamicWindowPane zawsze, gdy <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> ma zastosowanie, a w przeciwnym razie zamknięte.  
   
 3.  Skompiluj projekt i Rozpocznij debugowanie. Eksperymentalne wystąpienie powinny być wyświetlane. Nie powinna zostać wyświetlona okna narzędzia.  
   

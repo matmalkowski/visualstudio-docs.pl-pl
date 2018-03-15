@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie pierwszej aplikacji konsoli w programie Visual Studio za pomocą Visual Basic
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która działa w konsoli programu.
@@ -81,9 +81,8 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, a następnie poprosić dla dany
 
    ![Wyświetlana Hello World w oknie konsoli i naciśnij dowolny klawisz, aby kontynuować](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco dotyczące języka Visual Basic i Visual Studio IDE. Jeśli chcesz delve głębiej, kontynuuj samouczek w **samouczki** sekcji spisu treści.
+## <a name="next-steps"></a>Następne kroki
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco dotyczące języka Visual Basic i Visual Studio IDE. Aby dowiedzieć się więcej, kontynuuj następujące samouczka.
 
-## <a name="see-also"></a>Zobacz także
-* [Szybki Start: Tworzenie Windows "tekst Hello World" formularzy aplikacji w języku Visual Basic w programie Visual Studio](quickstart-visual-basic-winforms.md)
-* [Samouczek: Wprowadzenie do języka Visual Basic w programie Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense dla plików kodu programu Visual Basic](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Wprowadzenie do języka Visual Basic w programie Visual Studio](tutorial-visual-basic-console.md)

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 author: mikeblome
-ms.openlocfilehash: c7f7c9a4532175569fd32f964187eacab0a2017f
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: ed765134ebdbff2f7ea7b98736d5e57d62bb87fb
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak używać Google testu dla języka C++ w programie Visual Studio
 W **programu Visual Studio 2017 wersji 15,5 cala** i później, Google testu jest zintegrowany z programu Visual Studio IDE jako część domyślnego **Develoment pulpitu z C++** obciążenia. Aby sprawdzić, czy jest zainstalowany na tym komputerze, otwórz Instalator programu Visual Studio i Znajdź Google Test na liście składników obciążenia:
@@ -23,14 +24,14 @@ W **programu Visual Studio 2017 wersji 15,5 cala** i później, Google testu jes
 ![Zainstaluj usługi Google testu](media/cpp-google-component.png "zainstalować Google testu dla języka C++")
 
 ## <a name="add-a-google-test-project-to-the-solution"></a>Dodaj projekt testowy Google do rozwiązania
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj | Nowy projekt**. 
-2. W okienku po lewej stronie wybierz **Visual C++ | Test** , a następnie wybierz **projekt testowy Google** w środkowym okienku. 
-3. Nadaj nazwę projektu testowego, a następnie kliknij przycisk **OK**. 
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania i wybierz **Dodaj | Nowy projekt**.
+2. W okienku po lewej stronie wybierz **Visual C++ | Test** , a następnie wybierz **projekt testowy Google** w środkowym okienku.
+3. Nadaj nazwę projektu testowego, a następnie kliknij przycisk **OK**.
 
 ![Nowy projekt testowy Google](media/cpp-gtest-new-project.png "dodać nowy projekt testowy Google")
 
 ## <a name="configure-the-test-project"></a>Konfigurowanie projektu testowego
-W **przetestować konfigurację projektu** okna dialogowego wyświetlanego, możesz wybrać projekt ma zostać przetestowana. Po wybraniu projektu programu Visual Studio dodaje odwołanie do wybranego projektu. Jeśli żaden projekt, musisz ręcznie dodać odwołań do projektów, które mają zostać przetestowane. W przypadku wybrania między statycznych i dynamicznych łączenia plików binarnych testów Google, zagadnienia są takie same jak dla dowolnego programu C++. Aby uzyskać więcej informacji, zobacz [biblioteki dll w programie Visual C++](/cpp/build/dlls-in-visual-cpp). 
+W **przetestować konfigurację projektu** okna dialogowego wyświetlanego, możesz wybrać projekt ma zostać przetestowana. Po wybraniu projektu programu Visual Studio dodaje odwołanie do wybranego projektu. Jeśli żaden projekt, musisz ręcznie dodać odwołań do projektów, które mają zostać przetestowane. W przypadku wybrania między statycznych i dynamicznych łączenia plików binarnych testów Google, zagadnienia są takie same jak dla dowolnego programu C++. Aby uzyskać więcej informacji, zobacz [biblioteki dll w programie Visual C++](/cpp/build/dlls-in-visual-cpp).
 
  ![Konfigurowanie projektu testowego Google](media/cpp-gtest-config.png "skonfigurować projekt testowy Google")
 
@@ -47,11 +48,11 @@ W pliku .cpp testowego, Dodaj wszelkie potrzebne `#include` dyrektywy, aby wyśw
 ## <a name="write-and-run-tests"></a>Zapis i uruchamiania testów
 Teraz można przystąpić do zapisu i uruchamiać testy Google. Zobacz [Elementarz Test Google](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md) informacji o makra testu. Zobacz [uruchamiania testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md) informacji o odnajdywaniu, uruchamiania i grupowanie testów przy użyciu **Eksploratora testów**.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)
 
 
-  
+
 
 
 

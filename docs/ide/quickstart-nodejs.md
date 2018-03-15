@@ -1,5 +1,6 @@
 ---
 title: "Szybki Start: tworzenie pierwszej aplikacji Node.js za pomocą programu Visual Studio | Dokumentacja firmy Microsoft"
+description: "W tym szybkiego startu możesz utworzyć aplikację Node.js w programie Visual Studio"
 ms.custom: 
 ms.date: 11/15/2017
 ms.reviewer: 
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
@@ -29,21 +30,21 @@ W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowis
 ## <a name="create-a-project"></a>Tworzenie projektu
 Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
+1. Jeśli nie masz środowisko uruchomieniowe Node.js już zainstalowany, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
+
+    Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego można skonfigurować projektu do odwołania zainstalowanego środowiska uruchomieniowego.
+
 1. Otwórz program Visual Studio 2017 r.  
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .  
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .  
 
-3. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji sieci Web Node.js puste**, a następnie wybierz **OK**.   
+1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji sieci Web Node.js puste**, a następnie wybierz **OK**.   
 
      Jeśli nie widzisz **aplikacji sieci Web Node.js puste** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.  
 
      ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)  
 
-    Program Visual Studio tworzy i nowe rozwiązanie i otworzy w projekcie. **Server.js** otwarty w edytorze.
-
-4. Jeśli nie masz środowisko uruchomieniowe Node.js już zainstalowany, zainstaluj go z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
-
-    Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego można skonfigurować projektu do odwołania zainstalowanego środowiska uruchomieniowego.
+    Program Visual Studio tworzy i nowe rozwiązanie i otworzy w projekcie. *Server.js* zostanie otwarty w edytorze w okienku po lewej stronie.
 
 ## <a name="explore-the-ide"></a>Eksploruj IDE  
 
@@ -61,11 +62,11 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
    ![Wiersz polecenia node.js](../ide/media/quickstart-nodejs-command-prompt.png) 
 
-1. W **server.js** plik w edytorze (lewe okienko), wybierz `http.createServer` , a następnie naciśnij klawisz **F12** lub wybierz **przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie powoduje przejście do definicji `createServer` w index.d.ts funkcji.  
+1. W *server.js* plik w edytorze (lewe okienko), wybierz `http.createServer` , a następnie naciśnij klawisz **F12** lub wybierz **przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie powoduje przejście do definicji `createServer` w index.d.ts funkcji.  
 
    ![Menu kontekstowe przejdź do definicji](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. Umieść kursor na końcu ciągu w tym wierszu kodu, `res.end('Hello World\n');`i zmodyfikuj go, aby wygląda następująco:
+1. Otrzymano do *server.js*, następnie umieść kursor na końcu ciągu w tym wierszu kodu, `res.end('Hello World\n');`i zmodyfikuj go, aby wygląda następująco:
 
     `res.end('Hello World\n' + res.connection.`
 
@@ -88,6 +89,5 @@ Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że 
 
 ## <a name="next-steps"></a>Następne kroki 
 
-- Przejdź przez [samouczka dla środowiska Node.js](../nodejs/tutorial-nodejs.md)  
-- Dowiedz się więcej o [programu Visual Studio IDE](../ide/visual-studio-ide.md)  
-- Dowiedz się więcej o [narzędzia Node.js dla programu Visual Studio](https://github.com/Microsoft/nodejstools/wiki)
+- Przejdź przez [samouczek środowiska Node.js i Express](../nodejs/tutorial-nodejs.md)  
+- Przejdź przez [samouczek środowiska Node.js i bibliotece React.](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  
