@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 90d6ef6132f8844343388f35a441386c66b838c6
+ms.sourcegitcommit: 6871148ce356977b057febdb4d5a7655e7c295bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="what39s-new-in-visual-studio-2017"></a>Jaki &#39; s nowego w Visual Studio 2017 r.
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.5 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+# <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nowego w Visual Studio 2017 r.
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.6 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Szukasz do uaktualnienia z poprzedniej wersji programu Visual Studio? Oto co program Visual Studio 2017 można umożliwiają: bezkonkurencyjną wydajność dla dowolnego deweloperów, dowolną aplikację i dowolnej platformie. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemu Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, można elastyczne i wydajne współpracować z tej wersji!
 
 Oto ogólny — podsumowanie zmian, które wprowadziliśmy od poprzedniej wersji programu Visual Studio 2015:
@@ -140,7 +140,7 @@ Podczas pracy z projektu programu Visual Studio można skonfigurować i szybko p
 #### <a name="experience-improved-navigation-controls"></a>Środowisko ulepszone formanty nawigacji
 Środowisko nawigacji, aby pomóc Ci z zakresu od A do B z większego zaufania i przeszkadzał odświeżone.
 
-* **Nowość w 15.4**: **przejdź do definicji (Ctrl + kliknięcie lub F12)** &ndash; myszy użytkownicy mają łatwiejszy sposób, aby przejść do definicji elementu członkowskiego, naciskając klawisz **Ctrl** , a następnie klikając polecenie element członkowski. Naciśnięcie przycisku **Ctrl** i aktywowaniu symbol kodu zostanie underline go przekształcić łącza. Zobacz [przejdź do definicji i definicji wglądu](../ide/go-to-and-peek-definition.md) Aby uzyskać więcej informacji.  
+* **Nowość w 15.4**: **przejdź do definicji (Ctrl + kliknięcie lub F12)** &ndash; myszy użytkownicy mają łatwiejszy sposób, aby przejść do definicji elementu członkowskiego, naciskając klawisz **Ctrl** , a następnie klikając polecenie element członkowski . Naciśnięcie przycisku **Ctrl** i aktywowaniu symbol kodu zostanie underline go przekształcić łącza. Zobacz [przejdź do definicji i definicji wglądu](../ide/go-to-and-peek-definition.md) Aby uzyskać więcej informacji.  
 
 * **Przejdź do implementacji (Ctrl + F12)** &ndash; przechodzą z typu podstawowego lub Członkowskiego do jej różnych implementacji.
 
