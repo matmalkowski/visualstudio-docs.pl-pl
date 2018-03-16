@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 2152c5be13ca29da03d482aebc444b1ce30c1b97
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
 
@@ -36,12 +36,11 @@ Oprócz zainstalowanych struktur można napisać własny adapter testowy dla dow
 
 **Visual Studio 2017 wersji 15,5 cala**
 
-1) **Adapter testowy Google** jest uwzględniana jako część domyślnego **projektowania aplikacji w języku C++** obciążenia. Wybrano szablon projektu, które można dodać do rozwiązania za pomocą **Dodawanie nowego projektu** menu kontekstowego w węźle rozwiązania w **Eksploratora rozwiązań**i można skonfigurować za pomocą opcji **narzędzia | Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj Google testu w programie Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Adapter testowy Google** jest uwzględniana jako część domyślnego **tworzenia klasycznych aplikacji w języku C++** obciążenia. Wybrano szablon projektu, które można dodać do rozwiązania za pomocą **Dodawanie nowego projektu** menu kontekstowego w węźle rozwiązania w **Eksploratora rozwiązań**i można skonfigurować za pomocą opcji **narzędzia | Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj Google testu w programie Visual Studio](how-to-use-google-test-for-cpp.md).
 
-2) **Boost.Test** jest uwzględniana jako część domyślnego **projektowania aplikacji w języku C++** obciążenia. Jest zintegrowany z **Eksploratora testów** , ale obecnie nie ma szablonu projektu, dlatego należy go ręcznie skonfigurować. Aby uzyskać więcej informacji, zobacz [porady: Użyj Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** jest uwzględniana jako część domyślnego **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jest zintegrowany z **Eksploratora testów** , ale obecnie nie ma szablonu projektu, dlatego należy go ręcznie skonfigurować. Aby uzyskać więcej informacji, zobacz [porady: Użyj Boost.Test w programie Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-3) **CTest** pomocy technicznej jest dołączana do [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) składnika, który jest częścią programu **projektowania aplikacji w języku C++** obciążenia. Jednak CTest nie jest jeszcze pełni zintegrowana z **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [porady: Użyj CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
-
+- **CTest** pomocy technicznej jest dołączana do [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) składnika, który jest częścią programu **tworzenia klasycznych aplikacji w języku C++** obciążenia. Jednak CTest nie jest jeszcze pełni zintegrowana z **Eksploratora testów**. Aby uzyskać więcej informacji, zobacz [porady: Użyj CTest w programie Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 i starsze wersje**
 
@@ -96,16 +95,16 @@ Możesz dodać *cech* do testowania metod do określenia badanie właścicieli, 
 
 ### <a name="run-the-tests"></a>Uruchom testy
 
-1.  Na **testu** menu, wybierz **Windows**, **Eksploratora testów**. Na poniższej ilustracji przedstawiono projektu testowego, w których testów nie został jeszcze uruchomiony.
+1. Na **testu** menu, wybierz **Windows** > **Eksploratora testów**. Na poniższej ilustracji przedstawiono projektu testowego, w których testów nie został jeszcze uruchomiony.
 
-![Testowanie Explorer przed uruchomieniem testów](media/cpp-test-explorer.png "C++ narzędzia Eksplorator testów")
+   ![Testowanie Explorer przed uruchomieniem testów](media/cpp-test-explorer.png "C++ narzędzia Eksplorator testów")
 
-> [!NOTE]
-> Integracja CTest z **Eksploratora testów** nie jest jeszcze dostępna. Uruchom testy CTest z poziomu menu głównego CMake.
+   > [!NOTE]
+   > Integracja CTest z **Eksploratora testów** nie jest jeszcze dostępna. Uruchom testy CTest z poziomu menu głównego CMake.
 
-2. Jeśli wszystkie testy nie są widoczne w oknie, klikając prawym przyciskiem myszy jego węzła w kompilacji projektu testowego **Eksploratora rozwiązań** i wybierając polecenie **kompilacji** lub **odbudować**.
+1. Jeśli wszystkie testy nie są widoczne w oknie, klikając prawym przyciskiem myszy jego węzła w kompilacji projektu testowego **Eksploratora rozwiązań** i wybierając polecenie **kompilacji** lub **odbudować**.
 
-3.  W Eksploratorze testów, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, który chcesz uruchomić. Kliknij prawym przyciskiem myszy na test na inne opcje, w tym, uruchomienie jej w trybie debugowania punkty włączone. Po uruchomieniu wszystkich testów, okno zawiera testy, które przekazane i te, które nie powiodło się:
+1. W Eksploratorze testów, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, który chcesz uruchomić. Kliknij prawym przyciskiem myszy na test na inne opcje, w tym, uruchomienie jej w trybie debugowania punkty włączone. Po uruchomieniu wszystkich testów, okno zawiera testy, które przekazane i te, które nie powiodło się:
 
 ![Testowanie Explorer po uruchomieniu testów](media/cpp-test-explorer-passed.png "C++ Eksploratora testów po uruchomieniu testów")
 
