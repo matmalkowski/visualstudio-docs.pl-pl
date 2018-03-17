@@ -2,7 +2,7 @@
 title: "Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio | Dokumentacja firmy Microsoft"
 description: "Krótkie wprowadzenie do programu Visual Studio, która tworzy aplikację sieci web proste przy użyciu platformy Falcon przy użyciu języka Python."
 ms.custom: 
-ms.date: 01/08/2018
+ms.date: 03/14/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web języka Python
 
-To 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web języka Python. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
+To 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web języka Python. Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie. W Instalatorze, upewnij się wybrać **programowania Python** obciążenia.
 
 ## <a name="create-the-project"></a>Utwórz projekt
 

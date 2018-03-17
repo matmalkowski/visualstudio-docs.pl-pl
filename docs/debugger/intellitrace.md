@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,7 +58,7 @@ Można użyć funkcji IntelliTrace w Visual Studio Enterprise edition (ale nie w
 |||
 |-|-|
 |**Obsługiwane**|-Aplikacje Visual Basic i Visual C#, korzystających z programu .NET Framework 2.0 lub nowszych wersjach.<br/>Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, formularze systemu Windows, WCF, WPF, przepływu pracy systemu Windows, programu SharePoint 2010, SharePoint 2013 i aplikacje 64-bitowe.<br/>Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Aby debugować aplikacje Microsoft Azure przy użyciu funkcji IntelliTrace, zobacz [debugowania usługi chmury opublikowane za pomocą funkcji IntelliTrace i Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Ograniczona obsługa**|-.NET core i aplikacje platformy ASP.NET Core, obsługiwane w przypadku tylko zdarzenia<br />-Aplikacje F # na zasadach eksperymentalnych<br />-Aplikacje platformy uniwersalnej systemu Windows obsługuje tylko zdarzenia|
+|**Ograniczona obsługa**|-.NET core aplikacji platformy ASP.NET Core w obsługiwane i dla niektórych tylko zdarzenia (zdarzeń kontrolera MVC, ADO.NET i HTTPClicent) debugowania lokalnego. Autonomiczny moduł zbierający nie jest obsługiwana w przypadku aplikacji .NET Core i ASP.NET Core.<br />-Aplikacje F # na zasadach eksperymentalnych<br />-Aplikacje platformy uniwersalnej systemu Windows obsługuje tylko zdarzenia|
 |**Nieobsługiwane**|— C++ innych języków i skryptu<br />-Usługi systemu Windows, Silverlight, Xbox, lub [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikacji|
 
 > [!NOTE]

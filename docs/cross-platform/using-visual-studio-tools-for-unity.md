@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Używanie rozszerzenia Visual Studio Tools for Unity
 W tej sekcji omówiono sposób użycia programu Visual Studio Tools dla Unity w integracja i funkcje produktywności i sposobu użycia debuger programu Visual Studio do tworzenia aplikacji platformy Unity.
@@ -134,6 +134,12 @@ W tej sekcji omówiono sposób użycia programu Visual Studio Tools dla Unity w 
 
 > [!IMPORTANT]
 >  Ponieważ Visual Studio Tools for Unity i wystąpienia Unity komunikują się za pośrednictwem protokołu UDP gniazda sieci, Zapora może poprosić o nim. W takim przypadku musisz autoryzować połączenia, dzięki czemu pomocą rozszerzenia VSTU i Unity komunikują się.
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Rozwiązywanie problemów z połączeniem między Unity i Visual Studio
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>Upewnij się, że edytor dołączanie jest włączone
+
+Wybierz z Menu Unity **Edytuj > Preferencje** , a następnie wybierz **zewnętrznych narzędzi** kartę. Upewnij się, że **dołączanie edytor** pole wyboru jest włączone. Aby uzyskać więcej informacji, zapoznaj się [dokumentacji preferencje Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a> Debugowanie projektu przy użyciu odtwarzacza Unity
  Możesz połączyć Visual Studio Tools for Unity bezpośrednio do aplikacji platformy Unity uruchomiony w autonomicznej player, gdy nie używasz Edytor platformy Unity lub do debugowania problemów, które są specyficzne dla tej platformy.

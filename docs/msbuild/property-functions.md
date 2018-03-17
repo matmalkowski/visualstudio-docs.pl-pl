@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta do oceny skrypty programu MSBuild. Funkcje właściwości można tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań funkcje właściwości można używać poza elementów docelowych i są oceniane przed uruchomieniem żadnych docelowych.  
@@ -182,18 +182,18 @@ W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta
 |Long Modulo (długo, długi b)|Modulo dwa wyroby długie.|  
 |ciąg Escape(string unescaped)|Wyjścia ciągu zgodnie z regułami ucieczki w MSBuild.|  
 |ciąg Unescape (ciąg o znaczeniu zmienionym)|Unescape ciągu zgodnie z regułami ucieczki w MSBuild.|  
-|int BitwiseOr (int, int pierwszy, sekundy)|Wykonaj bitowej `OR` pierwszego i drugiego (pierwszy &#124; sekundę).|  
+|int BitwiseOr (int, int pierwszy, sekundy)|Wykonaj bitowej `OR` pierwszego i drugiego (pierwszy &#124; drugi).|  
 |int BitwiseAnd (int, int pierwszy, sekundy)|Wykonaj bitowej `AND` pierwszego i drugiego (pierwszy i drugi).|  
 |int BitwiseXor (int, int pierwszy, sekundy)|Wykonaj bitowej `XOR` pierwszego i drugiego (pierwszy ^ drugi).|  
 |int BitwiseNot(int first)|Wykonaj bitowej `NOT` (~ pierwszy).|  
-|wartość logiczna IsOsPlatform (ciąg platformString)|Określ, czy bieżąca Platforma systemu operacyjnego jest `platformString`. `platformString`musi być członkiem <xref:System.Runtime.InteropServices.OSPlatform>.|
+|wartość logiczna IsOsPlatform (ciąg platformString)|Określ, czy bieżąca Platforma systemu operacyjnego jest `platformString`. `platformString` musi być członkiem <xref:System.Runtime.InteropServices.OSPlatform>.|
 |bool IsOSUnixLike|Wartość true, jeśli bieżący system operacyjny jest systemu Unix.|
 |ciąg NormalizePath (ścieżka params ciąg [])|Pobiera pełną ścieżkę postaci kanonicznej podana ścieżka i gwarantuje, że zawiera on znaków separatora katalogu prawidłowe w bieżącym systemie operacyjnym.|
 |ciąg NormalizeDirectory (ścieżka params ciąg [])|Pobiera postaci kanonicznej pełną ścieżkę udostępnionego katalogu i zapewnia zawiera znak separatora właściwą dla bieżącego systemu operacyjnego, przy jednoczesnym zapewnieniu jej posiada na końcu ukośnik.|
 |ciąg EnsureTrailingSlash(string path)|Jeśli w podanej ścieżce nie ma ukośników, dodać go. Jeśli ścieżka jest pustym ciągiem, nie zostanie zmodyfikowana.|
 |ciąg GetPathOfFileAbove (plik ciąg, ciąg startingDirectory)|Wyszukuje plik na podstawie lokalizacji bieżącego pliku kompilacji lub na podstawie `startingDirectory`, jeśli określony.|
 |GetDirectoryNameOfFileAbove (startingDirectory ciąg, ciąg fileName)|Lokalizuje plik w katalogu określonym lub lokalizacji w strukturze katalogów powyżej tego katalogu.|
-|ciąg MakeRelative (nieistniejący ciąg, ciąg ścieżki)|Sprawia, że `path` względem `basePath`. `basePath`musi być bezwzględną katalogu. Jeśli `path` nie może być wykonane względną, jest zwracany dosłownego wyrażenia. Podobnie jak `Uri.MakeRelativeUri`.|
+|ciąg MakeRelative (nieistniejący ciąg, ciąg ścieżki)|Sprawia, że `path` względem `basePath`. `basePath` musi być bezwzględną katalogu. Jeśli `path` nie może być wykonane względną, jest zwracany dosłownego wyrażenia. Podobnie jak `Uri.MakeRelativeUri`.|
 |ciąg ValueOrDefault (conditionValue ciąg, ciąg defaultValue)|Zwraca ciąg w parametrze "defaultValue" tylko wtedy, gdy parametr "conditionValue" jest pusta, w przeciwnym razie, zwraca wartość conditionValue.|
 
 ##  <a name="nested-property-functions"></a>Funkcje zagnieżdżone właściwości  
@@ -211,7 +211,7 @@ W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta
  Funkcja ta właściwość ma następującą składnię:  
 
 ```  
-$[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
+$([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash  
@@ -229,7 +229,7 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
  Funkcja ta właściwość ma następującą składnię:  
 
 ```  
-$[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
+$([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```  
 
  Następujący kod jest przykładem tej składni.  
@@ -246,7 +246,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
  Funkcja ta właściwość ma następującą składnię:  
 
 ```  
-$([MSBuild]::GetPathOfFileAbove(dir.props)  
+$([MSBuild]::GetPathOfFileAbove(dir.props))  
 ```  
 
 ##  <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue  
@@ -292,7 +292,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
  Funkcja ta właściwość ma następującą składnię:  
 
 ```  
-$[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
+$([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```  
 
  Następujący kod jest przykładem tej składni.  
