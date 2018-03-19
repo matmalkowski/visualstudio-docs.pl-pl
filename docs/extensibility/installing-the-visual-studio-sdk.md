@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Instalacja programu Visual Studio SDK
 Visual Studio SDK jest opcjonalna funkcja w Instalatorze programu Visual Studio. Można także zainstalować zestawu SDK dla programu późniejsze.  
@@ -35,6 +35,6 @@ Visual Studio SDK jest opcjonalna funkcja w Instalatorze programu Visual Studio.
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Instalowanie programu Visual Studio SDK z poziomu wiersza polecenia  
-Podobnie jak w przypadku programu Visual Studio obciążenia lub składnik, można także zainstalować element z wiersza polecenia. Zobacz [używania parametrów wiersza polecenia, aby zainstalować program Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) szczegółowe informacje dotyczące przełączników odpowiedni wiersz polecenia oraz sposobu określania identyfikatory składnika lub obciążenia.
+Zgodnie z programu Visual Studio obciążenia lub składnik, można także zainstalować **tworzenia rozszerzenia programu Visual Studio** obciążenia (identyfikator: Microsoft.VisualStudio.Workload.VisualStudioExtension) w wierszu polecenia. Zobacz [używania parametrów wiersza polecenia, aby zainstalować program Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) szczegółowe informacje dotyczące przełączników odpowiedni wiersz polecenia i ogólne instrukcje na temat określania obciążenia lub składnik identyfikatorów.
   
  Należy pamiętać, że muszą używać Instalator programu Visual Studio, który odpowiada zainstalowanej wersji programu Visual Studio. Na przykład jeśli masz program Visual Studio Enterprise zainstalowanej na komputerze, możesz uruchomić Instalatora programu Visual Studio Enterprise (vs_enterprise.exe).

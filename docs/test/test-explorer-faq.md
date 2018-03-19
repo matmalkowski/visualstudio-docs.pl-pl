@@ -1,10 +1,7 @@
 ---
-title: "Testowanie Explorer — często zadawane pytania | Dokumentacja firmy Microsoft"
+title: "Eksplorator testów programu Visual Studio — często zadawane pytania | Dokumentacja firmy Microsoft"
 ms.date: 1/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Test Explorer
@@ -18,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -90,10 +87,10 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Flaga przy użyciu tego samego polecenia, można wyłączyć za pomocą wartości 0 zamiast 1 po dword.
-  
+
 ## <a name="see-also"></a>Zobacz także
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>  
-[Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
-[kod testu jednostkowego](unit-test-your-code.md)
-[na żywo — często zadawane pytania testy jednostkowe](live-unit-testing-faq.md)
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
+- [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Testowanie jednostek kodu](unit-test-your-code.md)
+- [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)

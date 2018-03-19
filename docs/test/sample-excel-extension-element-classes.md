@@ -1,22 +1,18 @@
 ---
 title: "Przykładowe rozszerzenie programu Excel: Klasy elementów | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd97702aec611a3818d478513a07ce03895729f3
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 91f3e3055d2ba98052ec2fd368db9aea08b81971
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Przykładowe rozszerzenie programu Excel: klasy elementów
 Rozszerzenie używa klas pochodzących z <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> i reprezentują komórki formantu w i kontroli arkusza [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].

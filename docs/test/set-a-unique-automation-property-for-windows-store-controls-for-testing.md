@@ -1,24 +1,21 @@
 ---
-title: "Ustawianie unikatowej właściwości automatyzacji dla formantów platformy uniwersalnej systemu Windows do testowania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Ustawianie unikatowej właściwości automatyzacji dla formantów platformy uniwersalnej systemu Windows do testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 47101649e3b30baad8c6edeb0c2d4899456294a1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 473404bbd3bbfbf6b7cd6cee589a98bc1da4746c
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla formantów platformy uniwersalnej systemu Windows do testowania
+
 Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows opartych na języku XAML, musi mieć właściwość unikatowy automatyzacji, która identyfikuje każdego formantu.
 
  Można przypisać unikatowej właściwości automatyzacji na podstawie typu kontrolki XAML w aplikacji. Poniżej przedstawiono sposób przypisać ten unikatowej właściwości automatyzacji w następujących sytuacjach:

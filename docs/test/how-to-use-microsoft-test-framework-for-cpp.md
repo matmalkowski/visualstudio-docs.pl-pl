@@ -1,22 +1,18 @@
 ---
 title: "Użyj jednostki Microsoft testowania Framework dla języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 00a20dbcabc8e1e0a6f72ec54badc5645a5c1cbb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a8d9ee2c53ba012f977c283eb3d7b81dbb3a9267
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj jednostki Microsoft testowania Framework dla języka C++ w programie Visual Studio
 

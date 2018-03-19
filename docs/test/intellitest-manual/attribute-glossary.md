@@ -1,11 +1,7 @@
 ---
 title: "Słownik atrybutu | Narzędzie Test Microsoft IntelliTest dewelopera | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0eab751276537de30de095d200fc0f0ffcb4ad43
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 474666d6243f8602c1da55ec113e459d5f2ec1d9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="attribute-glossary"></a>Słownik atrybutów
 
@@ -70,7 +66,7 @@ Ten atrybut potwierdza, że nie może być wartością, której działalność *
   }
   ```
 
-* **typu**
+* A **typu**
 
   ```
   // never consider null for Foo types

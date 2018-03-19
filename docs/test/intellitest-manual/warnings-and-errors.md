@@ -1,11 +1,7 @@
 ---
 title: "Ostrzeżenia i błędy | Narzędzie Test Microsoft IntelliTest dewelopera | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77f47c2d18b43c3ab08dac5fec6281892072ab36
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 522f575811fe79542b81169ff80d769f996e977d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
@@ -45,7 +41,7 @@ ms.lasthandoff: 01/09/2018
   * [Nieoczekiwany błąd podczas eksploracji](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)<p />
 
-* **Instrumentacji**
+* **Instrumentation**
   * [Niezinstrumentowanej metody o nazwie](#uninstrumented-method-called)
   * [Wywołano metodę zewnętrznych](#external-method-called)
   * [Wywołuje metody niemożliwej](#uninstrumentable-method-called)

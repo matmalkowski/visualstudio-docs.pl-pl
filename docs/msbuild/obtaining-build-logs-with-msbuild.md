@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Uzyskiwanie dzienników kompilacji za pomocą narzędzia MSBuild
 Za pomocą przełączników przy użyciu programu MSBuild, można określić, ile danych kompilacji, aby przeglądu i określa, czy chcesz zapisać dane kompilacji do jednego lub więcej plików. Można również określić niestandardowe rejestratora zbierania danych kompilacji. Aby uzyskać informacje dotyczące przełączników wiersza polecenia programu MSBuild, których nie opisano w tym temacie, zobacz [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
@@ -45,7 +45,7 @@ Za pomocą przełączników przy użyciu programu MSBuild, można określić, il
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>Zapisywanie dziennika kompilacji do pliku  
  Można użyć **/fileLogger** (**fl**) przełącznik, aby zapisać w pliku danych kompilacji. Poniższy przykład zapisuje dane kompilacji w pliku o nazwie `msbuild.log`.  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  Aby uzyskać więcej informacji, zobacz [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
-  
+
+## <a name="saving-a-binary-log"></a>Zapisywanie dziennik binarny
+
+Możesz zapisać dziennik w skompresowany, binarny format za pomocą **/binaryLogger** (**czarnej listy**) przełącznika. Ten dziennik zawiera szczegółowy opis procesu kompilacji i może zostać odczytany przez niektóre narzędzia analizy dzienników.
+
+W poniższym przykładzie binarny plik dziennika jest tworzony z nazwą `binarylogfilename`.
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+Aby uzyskać więcej informacji, zobacz [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+
 ## <a name="using-a-custom-logger"></a>Korzystając z niestandardowego urządzenia zapisującego ciąg akcji  
  Można pisać własne rejestratora przy tworzenia zarządzanego typu, który implementuje <xref:Microsoft.Build.Framework.ILogger> interfejsu. Można na przykład Rejestrator niestandardowych, na przykład wysłać błędy kompilacji w wiadomości e-mail, ich logowania do bazy danych lub dziennika je do pliku XML. Aby uzyskać więcej informacji, zobacz [rejestratory kompilacji](../msbuild/build-loggers.md).  
   

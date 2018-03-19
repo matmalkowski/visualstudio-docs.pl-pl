@@ -1,7 +1,7 @@
 ---
 title: "Debugowania z C++ za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddf6aadc6b2debcb7423df589fb11739039c6476
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fce20f8c17b52b109b469bd439905e0edd66c9d3
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>Debugowania z C++ za pomocą debugera programu Visual Studio
 
@@ -92,21 +92,21 @@ A *punktu przerwania* jest znacznika, która wskazuje, gdzie programu Visual Stu
     Wstrzymuje działanie debugera, którym można ustawić punktu przerwania. Żółta strzałka wskazuje instrukcji, których wykonanie debugera i aplikacji jest wstrzymana. Wiersz z `doWork` wywołanie funkcji nie ma jeszcze wykonane.
 
     > [!TIP]
-    > Jeśli masz punkt przerwania w pętli lub rekursji lub jeśli masz wiele punktów przerwania, które często kroków opisanych w, użyj [warunkowych punktów przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. Zaoszczędzić czas, a także ułatwia debugowanie problemów, które są trudne do odtworzenia.
+    > Jeśli masz punkt przerwania w pętli lub rekursji lub jeśli masz wiele punktów przerwania, które często kroków opisanych w, użyj [warunkowych punktów przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. Warunkowych punktów przerwania zaoszczędzić czas, a także ułatwia debugowanie problemów, które są trudne do odtworzenia.
 
     Podczas próby debugowania błędy związane z pamięcią w języku C++, umożliwia także punktów przerwania do zbadania wartości adresów (poszukaj NULL) i referencyjne liczby. 
 
 ## <a name="navigate-code"></a>Przejdź do kodu
 
-Istnieją różne polecenia nakazać debugera, aby kontynuować. Polecenie nawigacji przydatne kodu, które jest nowa w programie Visual Studio 2017 w tekście.
+Istnieją różne polecenia nakazać debugera, aby kontynuować. Polecenie nawigacji przydatne kodu, które jest nowa w programie Visual Studio 2017 zostanie przedstawiony.
 
-- Podczas wstrzymana na punkt przerwania, umieść kursor nad instrukcji `c1.push_back(20)` do zielonego **Uruchom, aby kliknij** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom, aby kliknij** przycisku.
+Podczas wstrzymana na punkt przerwania, umieść kursor nad instrukcji `c1.push_back(20)` do zielonego **Uruchom, aby kliknij** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom, aby kliknij** przycisku.
 
-    ![Uruchom, aby kliknij](../debugger/media/dbg-qs-run-to-click.png "Uruchom, aby kliknij")
+![Uruchom, aby kliknij](../debugger/media/dbg-qs-run-to-click.png "Uruchom, aby kliknij")
 
-    Aplikacja kontynuuje wykonywanie, wywoływania `doWork`i zatrzymuje się na wiersz kodu, gdy kliknięto przycisk.
+Aplikacja kontynuuje wykonywanie, wywoływania `doWork`i zatrzymuje się na wiersz kodu, gdy kliknięto przycisk.
 
-    Typowe polecenia klawiatury używany do kroków kodu obejmują **F10** i **F11**. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+Typowe polecenia klawiatury używany do kroków kodu obejmują **F10** i **F11**. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Sprawdź zmienne w etykietki danych
 
@@ -136,9 +136,7 @@ Aby uzyskać więcej informacji na temat używania edit-and-continue i ogranicze
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Aby dowiedzieć się więcej na temat debugera, zobacz [uruchomienia debugera i przejdź do kodu](../debugger/getting-started-with-the-debugger.md).
-- Aby dowiedzieć się więcej na temat punktów przerwania, zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).
+W tym samouczku kiedy znasz już sposobu uruchamiania debugera, kroki do kodu i sprawdzić zmiennych. Możesz pobrać wysokiego poziomu przyjrzeć się debuger funkcji oraz łącza do dodatkowych informacji.
 
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

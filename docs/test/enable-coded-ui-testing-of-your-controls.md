@@ -1,22 +1,18 @@
 ---
-title: "Włącz testowanie kodowanego interfejsu użytkownika dla Twoich formantów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Włącz testowanie kodowanego interfejsu użytkownika dla Twoich formantów w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5dc251880872ddf6c6cd3928cc917e4ca91d9001
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c6ad93e71c4208fb4d9ce9abd75e2bac554ba238
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich formantów
 

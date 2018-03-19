@@ -1,22 +1,21 @@
 ---
-title: "Testowanie aplikacji uniwersalnej systemu Windows z kodowanych testów interfejsu użytkownika | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Testowanie aplikacji uniwersalnej systemu Windows z kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: dd2ed23bbfacf1bfec1cc7cb531c1e0a0f9e20c4
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 889e29926d638e4e160c323e8d2673d858ab5c22
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Testowanie aplikacji uniwersalnej systemu Windows z kodowanych testów interfejsu użytkownika
 
@@ -60,7 +59,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
     End Class
     ```
 
-5.  Naciśnij klawisz F5, aby uruchomić aplikację platformy uniwersalnej systemu Windows.
+5.  Wybierz **F5** na uruchamianie aplikacji platformy uniwersalnej systemu Windows.
 
 ## <a name="create-and-run-a-coded-ui-test-for-the-uwp-app"></a>Tworzenie i uruchamianie kodowanego testu interfejsu użytkownika dla aplikacji platformy uniwersalnej systemu Windows
 
@@ -104,16 +103,16 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
 
 10. **Visual C#**
 
-     W Eksploratorze rozwiązań Otwórz plik UIMap.Designer.cs, aby wyświetlić dodany kod dla metody assert i kontrolek.
+     W Eksploratorze rozwiązań Otwórz *UIMap.Designer.cs* plik, aby wyświetlić dodany kod dla metody assert i kontrolek.
 
      **Visual Basic**
 
-     W Eksploratorze rozwiązań Otwórz plik CodedUITest1.vb i następnie w kodzie metody CodedUITestMethod1() testu, kliknij prawym przyciskiem myszy wywołanie metody potwierdzenia, który został dodany automatycznie `Me.UIMap.AssertMethod1()` i wybierz polecenie **przejdź do definicji**. Spowoduje to otwarcie pliku UIMap.Designer.vb w edytorze kodu, więc można wyświetlić widoku dodany kod dla metody assert i kontrolek.
+     W Eksploratorze rozwiązań Otwórz *CodedUITest1.vb* plików i następnie w kodzie metody CodedUITestMethod1() testu, kliknij prawym przyciskiem myszy wywołanie metody potwierdzenia, który został dodany automatycznie `Me.UIMap.AssertMethod1()` i wybierz polecenie **przejdź do Definicja**. Spowoduje to otwarcie *UIMap.Designer.vb* plik w edytorze kodu, aby wyświetlić widok dodany kod dla metody assert i kontrolek.
 
     > [!WARNING]
-    >  Nie należy modyfikować pliku UIMap.designer.cs lub UIMap.Designer.vb bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione zawsze, gdy test jest generowany.
+    > Nie należy modyfikować *UIMap.designer.cs* lub *UIMap.Designer.vb* pliku bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione zawsze, gdy test jest generowany.
 
-     **Assert — metoda**
+    **Assert — metoda**
 
     ```csharp
     public void AssertMethod1()
@@ -136,7 +135,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
     End Sub
     ```
 
-     **Kontrolki**
+    **Kontrolki**
 
     ```csharp
     #region Properties
@@ -244,7 +243,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
         Me.UIMap.AssertMethod1()
         ```
 
-     Po dodaniu kod, metody testowej CodedUITestMethod1 powinna wyglądać następująco:
+    Po dodaniu kod, metody testowej CodedUITestMethod1 powinna wyglądać następująco:
 
     ```csharp
     [TestMethod]
@@ -296,20 +295,20 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Pytanie: Dlaczego nie widzi opcji Zapisz moje kodowanego testu interfejsu użytkownika w Generuj kod dla kodowanego testu interfejsu użytkownika okna dialogowego? **
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Pytanie: Dlaczego nie widzi opcji Zapisz moje kodowanego testu interfejsu użytkownika w Generuj kod dla okna dialogowego kodowanego testu interfejsu użytkownika?
 
 **A**: możliwość rejestrowania nie jest obsługiwana dla aplikacji platformy uniwersalnej systemu Windows.
 
-#### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Pytanie: czy mogę tworzyć kodowanego testu interfejsu użytkownika dla mojej aplikacji platformy uniwersalnej systemu Windows oparte na WinJS? **
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Pytanie: czy można utworzyć kodowanego testu interfejsu użytkownika dla mojej aplikacji platformy uniwersalnej systemu Windows oparte na WinJS?
 
 **A**: nie są obsługiwane tylko XAML na podstawie aplikacji.
 
-#### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Pytanie: czy mogę tworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji platformy uniwersalnej systemu Windows w systemie, czy nie jest uruchomiona, Windows 8.1 lub Windows 10? **
+### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Pytanie: czy można utworzyć kodowane testy interfejsu użytkownika dla mojej aplikacji platformy uniwersalnej systemu Windows w systemie, czy nie jest uruchomiona, Windows 8.1 lub Windows 10?
 
 **A**: nie, szablonów projektu testu w kodowanego interfejsu użytkownika są dostępne tylko na Windows 8.1 i Windows 10. Aby utworzyć automatyzacji dla aplikacji uniwersalnych platformy systemu Windows (UWP), będziesz potrzebować systemu Windows 10.
 
 <a name="uwpapps"></a>
-#### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Pytanie: jak tworzyć kodowane testy interfejsu użytkownika dla aplikacji systemu Windows platformy Uniwersalnej? **
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Pytanie: jak tworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy systemu Windows (UWP)?
 
 **A**: w zależności od platformy, na którym w przypadku testowania aplikacji platformy uniwersalnej systemu Windows, tworzenie projektu testu w usłudze kodowanego interfejsu użytkownika w jeden z następujących sposobów:
 
@@ -319,7 +318,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
 
 Po utworzeniu projektu tworzenia testu pozostaje taki sam jak przed.
 
-#### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Pytanie: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer? **
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Pytanie: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
 
 **A**: kod wprowadzonych zmian w pliku UIMapDesigner.cs zostaną zastąpione zawsze Generuj kod przy użyciu UIMap — Konstruktor kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.
 

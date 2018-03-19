@@ -1,24 +1,20 @@
 ---
-title: "Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Stosowanie podkładek do izolowania aplikacji w celu testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e282fc834bddf961f11384db1ca0efd74db5e65e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: b2f096e7fafcebf5e30903590b569abfe564d9f9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
+# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Użyć podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 
 **Poprawki typy** są jednym z dwie technologie używane przez program Microsoft substytutów Framework do pozwalają łatwo odizolowanego składniki w ramach testu ze środowiska. Podkładek kierowanie wywołań określonych metod do kodu, który można zapisać jako część testu. Wiele metod zwraca różne wyniki zależy od warunków zewnętrznych, ale podkładki jest pod kontrolą testu i może zwrócić spójne wyniki przy każdym wywołaniu. Dzięki temu można łatwiej zapisu testów.
 

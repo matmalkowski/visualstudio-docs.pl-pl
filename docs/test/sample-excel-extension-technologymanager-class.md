@@ -1,22 +1,18 @@
 ---
 title: "Przykładowe rozszerzenie programu Excel: Klasa TechnologyManager | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb6fe0e966035945a5af6ee7d9d3ae056f18ca3c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: b69c9c9a6dfdf75c53f10334e7d95bbac2e123a8
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Przykładowe rozszerzenie programu Excel: klasa TechnologyManager
 

@@ -1,7 +1,7 @@
 ---
-title: "Instalowanie i konfigurowanie agentów testowych w Visual Studio | Dokumentacja firmy Microsoft"
+title: "Instalowanie agentów testowych i kontrolery testów dla programu Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>Instalowanie i konfigurowanie agentów testowych
+# <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolery testów
 
 Scenariusze testowania, korzystających z programu Visual Studio i Visual Studio Team Services (VSTS) lub Team Foundation Server (TFS) nie trzeba kontrolera testów. Agents for Visual Studio obsługują aranżacji komunikując się z programu VSTS lub TFS. Scenariusz można uruchomić ciągłego testów dla kompilacji, a następnie zwolnij przepływów pracy programu VSTS lub TFS.
 
@@ -32,7 +32,9 @@ Można także rozważyć czy lepiej używać jest [kompilacji lub zarządzania z
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj test controller i agenci testowi
 
-Możesz pobrać agentów dla programu Visual Studio 2017 z [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Wyszukaj *Agents for Visual Studio 2017* i wybierz opcję *agenta* lub *kontrolera*. Możesz pobrać agentów dla programu Visual Studio 2015 i Visual Studio 2013 z [starsze pliki do pobrania](https://www.visualstudio.com/vs/older-downloads/) strony.
+Możesz pobrać agentów dla programu Visual Studio 2017 z [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Przewiń do dołu strony i poszukaj *Agents for Visual Studio 2017*. Wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz pozycję *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
+
+Możesz pobrać agentów dla programu Visual Studio 2015 i Visual Studio 2013 z [starsze pliki do pobrania](https://www.visualstudio.com/vs/older-downloads/) strony.
 
 Te pliki instalacyjne są dostępne w postaci plików ISO prosta instalacja na maszynach wirtualnych.
 
@@ -59,10 +61,6 @@ W poniższej tabeli przedstawiono scenariusze obsługiwane przez agentów dla pr
 | Scenariusze obsługiwane przez agentów dla programu Visual Studio 2013 | Zamiast w programie TFS i programu VSTS |
 | --- | --- |
 | Przepływ pracy kompilacja-wdrażanie-testy w programie Visual Studio | Użytkownicy mogą używać [definicji kompilacji](/vsts/build-release/) (nie kompilacji XAML) dla kompilacji, wdrożyć i przetestować scenariusze w programie TFS. |
-| Obciążenia testowania (testowanie wydajności) przy użyciu lokalnych komputerach zdalnych | Użyj kontrolera testów i Test agentów 2013 aktualizacji 5 obciążenia testy lokalnie. Aby uzyskać więcej informacji, zobacz [przy użyciu kontrolera i testowania agentów testowych w teście obciążenia](https://msdn.microsoft.com/library/ff400223.aspx). |
+| Obciążenia testowania (testowanie wydajności) przy użyciu lokalnych komputerach zdalnych | Użyj kontrolera testów i Test agentów 2013 aktualizacji 5 obciążenia testy lokalnie. |
 | Zdalne wykonywanie testów automatycznych z Microsoft Test Manager za pomocą środowiska laboratoryjnego | Obecnie nie istnieje alternatywa dla tego scenariusza. Firma Microsoft zaleca zadanie Uruchom testy funkcjonalne służy w kompilacji i wydania definicje (nie w kompilacji XAML) można zdalnie wykonać testy. |
 | Deweloperzy zdalnego testy są wykonywane w programie Visual Studio | Nie jest już obsługiwana. |
-
-## <a name="see-also"></a>Zobacz także
-
-* [Konfigurowanie maszyn i zbierania informacji diagnostycznych](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

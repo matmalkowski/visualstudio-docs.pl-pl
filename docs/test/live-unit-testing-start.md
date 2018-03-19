@@ -1,9 +1,7 @@
 ---
 title: "Dowiedz się, jak do testowania kodu z aktywnego testu jednostkowego w Visual Studio 2017 | Dokumentacja firmy Microsoft | Dokumentacja firmy Microsoft"
 ms.date: 08/31/2017
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: get-started-article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a48fb38a9d9a65e93ccb6d696a0a118dbe455976
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: fe41dab64bcb0d2d33075759287dbacb99bd996f
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z Live testów jednostkowych programu Visual Studio
 

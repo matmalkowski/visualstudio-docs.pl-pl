@@ -2,11 +2,11 @@
 layout: LandingPage
 ms.topic: landing-page
 title: "Wykonywanie skryptów | Dokumentacja firmy Microsoft"
-ms.openlocfilehash: fceb85cc33acd89214f39e57aae3858d119d24cf
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="scripting-technologies"></a>Technologie skryptów
 
@@ -14,7 +14,7 @@ Ta strona zawiera linki do JavaScript, TypeScript, opartych na języku ECMAScrip
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-nodejs">
+        <a href="https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -32,7 +32,7 @@ Ta strona zawiera linki do JavaScript, TypeScript, opartych na języku ECMAScrip
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
+        <a href="https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -42,7 +42,7 @@ Ta strona zawiera linki do JavaScript, TypeScript, opartych na języku ECMAScrip
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozpoczynanie pracy z uniwersalnych aplikacji systemu Windows (UWP)</h3>
+                        <h3>Wprowadzenie do aplikacji uniwersalnych systemu Windows (UWP)</h3>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@ Ta strona zawiera linki do JavaScript, TypeScript, opartych na języku ECMAScrip
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/scripting/chakra-hosting/javascript-runtime-hosting">
+        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

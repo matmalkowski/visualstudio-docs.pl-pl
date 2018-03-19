@@ -1,22 +1,18 @@
 ---
 title: Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Dokumentacja firmy Microsoft
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 3761b49e0c75b8b4b6676e6525f77c40c88ccf33
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 17b3b159f6baea62a079da622ccf0b44dc43591b
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference
 

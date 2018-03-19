@@ -1,11 +1,7 @@
 ---
-title: "Teście jednostkowym | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Teście jednostkowym w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a96315d7610e665ed32b669bea45f9318cffdb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>Teście jednostkowym
 
@@ -113,7 +109,7 @@ Często jest szybsze do generowania jednostkowy projekt testowy i klas zastępcz
 3.  Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz **projektu testu jednostki** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki struktury testowej, która ma być używany. Aby przetestować `Accounts` projektu z naszym przykładzie, czy nazwa projektu `AccountsTests`.
 
     > [!WARNING]
-    >  Nie wszystkie platform testów jednostkowych innych firm i otwórz źródła Podaj szablon projektu Visual Studio. Zapoznaj się z dokumentem framework informacje na temat tworzenia projektu.
+    > Nie wszystkie platform testów jednostkowych innych firm i otwórz źródła Podaj szablon projektu Visual Studio. Zapoznaj się z dokumentem framework informacje na temat tworzenia projektu.
 
 4.  W jednostkowy projekt testowy Dodaj odwołanie do projektu kodu, w ramach testu, w tym przykładzie do projektu kont.
 

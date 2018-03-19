@@ -1,22 +1,18 @@
 ---
-title: "Test z kodowanych testów interfejsu użytkownika systemu Windows platformy uniwersalnej systemu Windows i aplikacji Phone 8.1 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Testowanie Windows platformy uniwersalnej systemu Windows i aplikacji Phone 8.1 przy kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: ba0366ce882d1a4c2b715e621343dcbc0db6f457
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 60515eb6d7dde34562895d357a7802592c20aecb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Test z kodowanych testów interfejsu użytkownika systemu Windows platformy uniwersalnej systemu Windows i aplikacji Phone 8.1
 
@@ -127,7 +123,7 @@ Użyj tego przewodnika tworzenia testów interfejsu użytkownika dla aplikacji p
      W Eksploratorze rozwiązań Otwórz plik CodedUITest1.vb. W CodedUITestMethod1() testowania kodu metody, kliknij prawym przyciskiem myszy wywołanie metody potwierdzenia, który został dodany automatycznie `Me.UIMap.AssertMethod1()` i wybierz polecenie **przejdź do definicji**. Spowoduje to otwarcie pliku UIMap.Designer.vb w edytorze kodu, aby wyświetlić kod, który dodaje metody assert i kontrolek.
 
     > [!WARNING]
-    >  Nie należy modyfikować pliku UIMap.designer.cs lub UIMap.Designer.vb bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione zawsze, gdy test jest generowany.
+    > Nie należy modyfikować pliku UIMap.designer.cs lub UIMap.Designer.vb bezpośrednio. Jeśli to zrobisz, zmiany w pliku zostaną zastąpione zawsze, gdy test jest generowany.
 
      **Assert — metoda**
 
@@ -389,4 +385,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  Microsoft Visual Studio Application Lifecycle Management blogu: [przy użyciu kodowanego interfejsu użytkownika do testowania aplikacji Windows Phone opartych na języku XAML](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
 
 ## <a name="see-also"></a>Zobacz także
- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
+
+- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)

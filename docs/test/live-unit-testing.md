@@ -1,21 +1,20 @@
 ---
 title: "Na żywo jednostki testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 2017-03-07
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7ab19350529e4bd1c7edf914a8a8ca049ace6054
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testy jednostkowe za pomocą programu Visual Studio 2017 na żywo
 
@@ -37,7 +36,7 @@ Testowanie jednostkowe na żywo współpracuje z trzech platform testowych popul
 </tr>
 <tr>
    <td>xUnit.net</td>
-   <td> 2.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio</td>
+   <td> xunit.runner.visualstudio version 2.2.0-beta3-build1187</td>
    <td>xunit 1.9.2</td> 
 </tr>
 <tr>
@@ -179,9 +178,9 @@ Możesz zastosować <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverag
 
 Aby wykluczyć poszczególnych metod z testów jednostkowych na żywo umożliwia także następujące atrybuty:
 
-- Dla xUnit:`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-- Dla NUnit:`[Category("SkipWhenLiveUnitTesting")]`
-- Dla przełącznika MSTest:`[TestCategory("SkipWhenLiveUnitTesting")]` 
+- Dla xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- Dla NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+- Dla przełącznika MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]` 
  
 ## <a name="see-also"></a>Zobacz także
 

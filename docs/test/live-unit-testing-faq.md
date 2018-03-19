@@ -1,9 +1,7 @@
 ---
 title: "Często zadawane pytania dotyczące testowania jednostek na żywo | Dokumentacja firmy Microsoft"
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Aktywne testy jednostkowe często zadawane pytania
 
@@ -26,12 +24,11 @@ ms.lasthandoff: 02/21/2018
 
 Aby dowiedzieć się więcej na temat nowych funkcji i ulepszeń, które zostały wprowadzone do testowania jednostki na żywo w programie Visual Studio 2017 wersji 15 ustęp 3, zobacz [What's New in Live testów jednostkowych](live-unit-testing-whats-new.md).
 
-
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Jakie platform testów jest obsługa Live testów jednostkowych i jakie są minimalne obsługiwane wersje?
 
 **Odpowiedź:**
 
-Testowanie jednostkowe na żywo współpracuje z trzech platform testowych popularnych jednostki wymienione w poniższej tabeli. Minimalna obsługiwana wersja ich kart i struktur również znajduje się w tabeli. Platformy testowania jednostki są wszystkie dostępne z NuGet.org.
+Testowanie jednostkowe na żywo współpracuje z trzech platform testowych popularnych jednostki wymienione w tabeli poniżej. Minimalna obsługiwana wersja ich kart i struktur również znajduje się w tabeli. Platformy testowania jednostki są wszystkie dostępne z NuGet.org.
 
 <table>
 <tr>
@@ -58,14 +55,13 @@ Testowanie jednostkowe na żywo współpracuje z trzech platform testowych popul
 
 Jeśli masz starszą testu MSTest na podstawie projektów tego odwołania `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszej pakietów MSTest NuGet, przeprowadź uaktualnienie do programu Visual Studio 2017 wersji 15.4.
 
-W niektórych przypadkach może być konieczne jawnie przywracania pakietów NuGet, odwołuje się projektów w rozwiązaniu Aby pracować na żywo testów jednostkowych. Można to zrobić za pomocą jawnego kompilacji rozwiązania (wybierz **kompilacji**, **Kompiluj ponownie rozwiązanie** z menu najwyższego poziomu programu Visual Studio) lub przez Przywracanie pakietów w rozwiązaniu (kliknij prawym przyciskiem myszy rozwiązanie i wybierz **przywracania pakietów NuGet**) przed włączeniem testów jednostkowych życia.
-
+W niektórych przypadkach może być konieczne jawnie przywracania pakietów NuGet, odwołuje się projektów w rozwiązaniu Aby pracować na żywo testów jednostkowych. Te pakiety można przywrócić albo wykonując jawne kompilacji rozwiązania (wybierz **kompilacji**, **Kompiluj ponownie rozwiązanie** z menu najwyższego poziomu programu Visual Studio), lub przez kliknięcie prawym przyciskiem myszy rozwiązanie i Wybieranie **przywracania pakietów NuGet** przed włączeniem testów jednostkowych życia.
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Działa na żywo testów jednostkowych z platformą .NET Core?
 
 **Odpowiedź:**
 
-Tak. Testowanie jednostkowe na żywo współpracuje z platformy .NET Core i .NET Framework. Obsługa .NET Core została ostatnio dodane w programie Visual Studio 2017 wersji 15 ustęp 3. Przeprowadź uaktualnienie do tej wersji programu Visual Studio, jeśli chcesz, aby na żywo testów jednostkowych obsługę .NET Core.
+Tak. Testowanie jednostkowe na żywo współpracuje z platformy .NET Core i .NET Framework. Obsługa .NET Core została ostatnio dodane w programie Visual Studio 2017 wersji 15 ustęp 3. Uaktualnienie do tej wersji programu Visual Studio, jeśli chcesz, aby na żywo testów jednostkowych obsługę .NET Core.
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Dlaczego nie testów jednostkowych na żywo działa po jej włączeniu?
 
@@ -75,9 +71,9 @@ Tak. Testowanie jednostkowe na żywo współpracuje z platformy .NET Core i .NET
 
 - Jeśli pakiety NuGet odwołuje się projektów w rozwiązaniu nie zostały przywrócone, Live testów jednostkowych nie będzie działać. Podczas jawnego kompilacji rozwiązania lub przywracanie pakietów NuGet w rozwiązaniu przed włączeniem Live testów jednostkowych powinno rozwiązać ten problem.
 
-- Jeśli używasz testów na podstawie przełącznika MSTest w projektach, upewnij się, że Usuń odwołanie do `Microsoft.VisualStudio.QualityTools.UnitTestFramework`i dodaj odwołania do najnowszych pakietów MSTest NuGet `MSTest.TestAdapter` (wymagana jest minimalna wersja 1.1.11) i `MSTest.TestFramework` (minimalna wersja 1.1.11 jest wymagane). Aby uzyskać więcej informacji, zobacz sekcję "Struktur testu obsługiwane" [Użyj Live testów jednostkowych w Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks) tematu.
+- Jeśli używasz testów na podstawie przełącznika MSTest w projektach, upewnij się, że Usuń odwołanie do `Microsoft.VisualStudio.QualityTools.UnitTestFramework`i dodaj odwołania do najnowszych pakietów MSTest NuGet `MSTest.TestAdapter` (wymagana jest minimalna wersja 1.1.11) i `MSTest.TestFramework` (minimalna wersja 1.1.11 jest wymagane). Aby uzyskać więcej informacji, zobacz sekcję "Struktur testu obsługiwane" [Użyj Live testów jednostkowych w Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks) artykułu.
 
-- Co najmniej jeden projekt w rozwiązaniu powinien mieć odwołanie NuGet albo bezpośrednie odwołanie do xUnit, NUnit lub MSTest struktury testowej. Ten projekt powinien odwoływać się również odpowiedniego pakietu NuGet kart testu Visual Studio. Adapter testowy programu Visual Studio można także odwoływać się za pośrednictwem `.runsettings` pliku. `.runsettings` Plik musi istnieć wpis podobny do poniższego:
+- Co najmniej jeden projekt w rozwiązaniu powinien mieć odwołanie NuGet albo bezpośrednie odwołanie do xUnit, NUnit, lub MSTest struktury testowej. Ten projekt powinien odwoływać się również odpowiedniego pakietu NuGet kart testu Visual Studio. Adapter testowy programu Visual Studio można także odwoływać się za pośrednictwem `.runsettings` pliku. `.runsettings` Plik musi istnieć wpis jak w następującym przykładzie:
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ Tak. Testowanie jednostkowe na żywo współpracuje z platformy .NET Core i .NET
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Dlaczego jest Live testów jednostkowych wyświetlany niepoprawny pokrycia po uaktualnieniu adapter testowy występujący w odwołaniu w projektach Visual Studio do obsługiwanej wersji?
 
@@ -174,7 +170,7 @@ Istnieje kilka różnic:
 
 **Odpowiedź:**
 
-Zobacz sekcję "Włączanie i wyłączanie projekty testowe i metod testowych" [Użyj Live testów jednostkowych w Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) tematu dla ustawienia specyficzne dla użytkownika. Jest to bardzo przydatne, gdy chcesz uruchomić określonego zestawu testów dla sesji edytowania określonego lub utrwalić osobistych preferencji.
+Zobacz sekcję "Włączanie i wyłączanie projekty testowe i metod testowych" [Użyj Live testów jednostkowych w Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) artykułu ustawienia specyficzne dla użytkownika. Jest to przydatne, gdy chcesz uruchomić określonego zestawu testów dla sesji edytowania określonego lub utrwalić osobistych preferencji.
  
 W przypadku ustawienia specyficzne dla danego rozwiązania, można zastosować <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atrybutu programowo, aby wykluczyć metod, właściwości, klasy lub struktury z są instrumentowane przez funkcję Live testów jednostkowych. Ponadto można również ustawić `<ExcludeFromCodeCoverage>` właściwości `true` w pliku projektu, aby wykluczyć całego projektu z jest instrumentowany. Testowanie jednostkowe na żywo ciągle będą uruchamiać testy, które nie zostały zinstrumentowane, ale nie będzie można zwizualizować ich pokrycia.
 
@@ -203,7 +199,7 @@ public class Class1
 
 **Odpowiedź:**
 
-Ten problem zostanie rozwiązany i nie istnieje w w programie Visual Studio 2017 wersji 15 ustęp 3. Przeprowadź uaktualnienie do tej wersji programu Visual Studio.
+Ten problem zostanie rozwiązany i nie istnieje w programie Visual Studio 2017 wersji 15 ustęp 3. Uaktualnienie do tej wersji programu Visual Studio.
 
 Dla starszych wersji programu Visual Studio 2017 jest znaną usterką, które mogą skutkować kompilacji na żywo testów jednostkowych awarie do osadzenia następujące dane nagłówek PE Win32:
 

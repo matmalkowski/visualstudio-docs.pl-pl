@@ -1,22 +1,18 @@
 ---
 title: "Porady: pisanie testów jednostkowych dla bibliotek DLL C++ | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9c1f7d3794bbb614b4879cb323d03cfb810c7934
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 40ec25b25c3aefd6cc5e759c70362cf7e5f1855e
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Porady: pisanie testów jednostkowych dla biblioteki DLL języka C++
 
@@ -184,9 +180,9 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
     ```
 
     > [!TIP]
-    >  Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego dodać nowego testu, zaktualizuj kod, dzięki czemu test zakończył się pomyślnie, a następnie dodaj innego testu i tak dalej.
+    > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego dodać nowego testu, zaktualizuj kod, dzięki czemu test zakończył się pomyślnie, a następnie dodaj innego testu i tak dalej.
     >
-    >  Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowy.
+    > Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowy.
 
 2.  Skompiluj rozwiązanie, a następnie w Eksploratorze testów, wybierz **Uruchom wszystkie**.
 
@@ -195,7 +191,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
      ![Niepowodzenia RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
-    >  Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast po jej napisano. Dzięki temu można uniknąć łatwe błąd zapisu testu, który nigdy nie zakończy się niepowodzeniem.
+    > Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast po jej napisano. Dzięki temu można uniknąć łatwe błąd zapisu testu, który nigdy nie zakończy się niepowodzeniem.
 
 3.  Tak, aby nowy test zakończył się pomyślnie, należy zwiększyć kod biblioteki DLL:
 
@@ -223,7 +219,7 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
      ![Eksplorator testów jednostkowych &#45; zakresu pomyślny](../test/media/utecpp12.png "UteCpp12")
 
     > [!TIP]
-    >  Opracuj kodu, dodając testy jednym naraz. Upewnij się, że wszystkie testy zostały zaliczone pomyślnie po każdej iteracji.
+    > Opracuj kodu, dodając testy jednym naraz. Upewnij się, że wszystkie testy zostały zaliczone pomyślnie po każdej iteracji.
 
 ##  <a name="debug"></a> Debuguj test się niepowodzeniem
 
@@ -314,9 +310,9 @@ Ten przewodnik opisuje sposób rozwijać natywnej biblioteki DLL C++ przy użyci
 2.  Skompiluj rozwiązanie, a następnie wybierz pozycję **Uruchom wszystkie**, aby upewnić się, że nie zostały wprowadzone wystąpił błąd.
 
     > [!TIP]
-    >  Dobry zestaw testów jednostkowych daje pewność, że nie użyto usterki po zmianie kodu.
+    > Dobry zestaw testów jednostkowych daje pewność, że nie użyto usterki po zmianie kodu.
     >
-    >  Zachowaj refaktoryzacji oddzielona od innych zmian.
+    > Zachowaj refaktoryzacji oddzielona od innych zmian.
 
 ## <a name="next-steps"></a>Następne kroki
 

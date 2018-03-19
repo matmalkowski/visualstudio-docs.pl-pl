@@ -1,11 +1,7 @@
 ---
 title: "Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
@@ -17,11 +13,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: bb69f8e8012fecef683f5b95bc4dd9aef7e26a3c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ec857cb2bf0aa8e5453180249ddeccf47236dcf1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla aplikacji platformy uniwersalnej systemu Windows
 
@@ -38,7 +34,7 @@ W poniższych procedurach opisano kroki tworzenia, uruchamiania i debugowania te
 
      Wyświetla okno dialogowe Nowy projekt.
 
-2.  W obszarze Szablony wybierz język programowania, który chcesz utworzyć testu jednostkowego w, a następnie wybierz pozycję się, że biblioteki testowej, która skojarzona jednostka uniwersalnych systemu Windows. Na przykład wybrać **Visual C#** , a następnie wybierz **uniwersalnych systemu Windows**, a następnie wybierz pozycję **Biblioteka testów jednostkowych (uniwersalna systemu Windows)**.
+2.  W obszarze Szablony wybierz język programowania do tworzenia testów jednostkowych w, a następnie wybierz, czy biblioteki testowej, która skojarzona jednostka uniwersalnych systemu Windows. Na przykład wybrać **Visual C#** , a następnie wybierz **uniwersalnych systemu Windows**, a następnie wybierz pozycję **Biblioteka testów jednostkowych (uniwersalna systemu Windows)**.
 
 3.  (Opcjonalnie) W **nazwa** pole tekstowe, wprowadź nazwę, którego chcesz użyć dla projektu.
 
@@ -100,9 +96,9 @@ W edytorze kodu edytowanie testu jednostkowego i Dodaj potwierdzeń i logiki wym
     > [!TIP]
     > Możesz wybrać jeden lub więcej testów jednostkowych wymienionych w Eksploratorze i kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom wybrane testy**.
     >
-    >  Ponadto istnieje możliwość **Debuguj zaznaczone testy**, **Otwórz testu**i użyj **właściwości** opcji.
+    > Ponadto istnieje możliwość **Debuguj zaznaczone testy**, **Otwórz testu**i użyj **właściwości** opcji.
     >
-    >  ![Unit Test Explorer &#45; uni test context menu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Unit Test Explorer &#45; uni test context menu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
     Jednostka uruchomień testów. Po zakończeniu Eksploratora testów Wyświetla stan testów, czas, który upłynął oraz link do źródła.
 

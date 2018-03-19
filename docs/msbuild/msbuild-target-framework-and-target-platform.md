@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określonej wersji programu .NET Framework i *platformy docelowej*, czyli architektura konkretnego oprogramowania.  Na przykład możesz zastosować aplikacji do uruchamiania na .NET Framework 2.0 na platformie 32-bitowego, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja platformy docelowej i platforma docelowa jest nazywany *kontekst docelowy*.  
@@ -67,14 +67,16 @@ Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określ
  A *platformy* jest kombinacja sprzętu i oprogramowania, które definiuje określonego środowiska. Na przykład  
   
 -   `x86` Określa 32-bitowy system operacyjny Windows jest uruchomiona na z procesorem Intel 80 x 86 lub jego odpowiednik.  
+
+-   `x64` Określa 64-bitowy system operacyjny Windows jest uruchomiona na z procesorem Intel x64 lub równoważnej.
   
 -   `Xbox` Określa platformę Microsoft konsoli Xbox 360.  
   
- A *platformy docelowej* czy platforma określonego projektu jest oparty na. Platforma docelowa jest określona w `Platform` kompilacji właściwość w pliku projektu. Za pomocą stron właściwości projektu można zmienić platformę docelową lub **programu Configuration Manager** w IDE.  
+ A *platformy docelowej* czy platforma określonego projektu jest oparty na. Platforma docelowa jest określona w `PlatformTarget` kompilacji właściwość w pliku projektu. Za pomocą stron właściwości projektu można zmienić platformę docelową lub **programu Configuration Manager** w IDE.  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określ
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

@@ -1,7 +1,7 @@
 ---
 title: "What's New in testy jednostkowe na żywo | Dokumentacja firmy Microsoft"
 ms.date: 10-11-2017
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -9,12 +9,13 @@ helpviewer_keywords:
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 8ccfeec23d0fbe6edd186f63e890fbfc0e75aeef
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5f979970b926e3a1a3d0ef7aee53f1e71e7fc0dc
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-in-live-unit-testing"></a>What's New in testy jednostkowe na żywo
 
@@ -57,9 +58,9 @@ Oprócz tych dodatków głównych Live testów jednostkowych zawiera następują
 - Dodano kilka elementów menu dodatkowe pod menu paska z testu/Live testów jednostkowych. **Resetuj wyczyść** powoduje usunięcie danych i generuje go ponownie. **Opcja** przechodzi do narzędzia/Opcje/Live jednostki testowanie/ogólne.
   
 - Można teraz używać następujące atrybuty określone w kodzie źródłowym chcesz wykluczyć metody testowe docelowych z testów jednostkowych na żywo:
-   - Dla xUnit:`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - Dla NUnit:`[Category("SkipWhenLiveUnitTesting")]`
-   - Dla przełącznika MSTest:`[TestCategory("SkipWhenLiveUnitTesting")]`
+   - Dla xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+   - Dla NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+   - Dla przełącznika MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Zobacz także
 [Wprowadzenie do testowania jednostek na żywo](live-unit-testing-intro.md)   

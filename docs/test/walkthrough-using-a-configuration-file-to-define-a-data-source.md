@@ -1,11 +1,7 @@
 ---
-title: "Wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -16,15 +12,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f04386c83f2fb310e56099368a5c587688ccd7
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1b8aa551c6f1127705b5c8e8531726097c40aebb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
 
-W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowanej w pliku app.config w celu przeprowadzania testów jednostkowych. Dowiesz się tworzenie pliku app.config, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:
+W tym przewodniku pokazano, jak używać źródła danych zdefiniowanej w *app.config* pliku w celu przeprowadzania testów jednostkowych. Dowiesz się tworzenie pliku app.config, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:
 
 -   Tworzenie pliku app.config.
 
@@ -47,7 +43,7 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 
 ## <a name="create-the-appconfig-file"></a>Tworzenie pliku App.config
 
-#### <a name="to-add-an-appconfig-file-to-the-project"></a>Aby dodać plik app.config do projektu
+### <a name="to-add-an-appconfig-file-to-the-project"></a>Aby dodać plik app.config do projektu
 
 1.  Jeśli projekt testowy już pliku app.config, przejdź do [definiują sekcję konfiguracji niestandardowej](#DefineCustomConfigurationSection).
 
@@ -60,7 +56,7 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 ##  <a name="DefineCustomConfigurationSection"></a> Definiują sekcję konfiguracji niestandardowej
  Zapoznaj się z plikiem app.config. Zawiera ona co najmniej deklaracja XML i elementu głównego.
 
-#### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Aby dodać sekcję konfiguracji niestandardowej w pliku app.config
+### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Aby dodać sekcję konfiguracji niestandardowej w pliku app.config
 
 1.  Element główny pliku app.config powinna być `configuration` elementu. Utwórz `configSections` w elemencie `configuration` elementu. `configSections` Powinien być pierwszym elementem w pliku app.config.
 
@@ -80,7 +76,7 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 ## <a name="define-connection-strings"></a>Zdefiniuj parametry połączenia
  Parametry połączenia zdefiniuj informacji specyficznych dla dostawcy do uzyskiwania dostępu do źródeł danych. Parametry połączenia zdefiniowane w plikach konfiguracji udostępnianie informacji o dostawcy danych do ponownego użycia w aplikacji. W tej sekcji utworzysz dwa parametry połączenia, które będą używane przez źródeł danych, które są zdefiniowane w sekcji konfiguracji niestandardowej.
 
-#### <a name="to-define-connection-strings"></a>Aby określić parametry połączenia
+### <a name="to-define-connection-strings"></a>Aby określić parametry połączenia
 
 1.  Po `configSections` elementu, Utwórz `connectionStrings` elementu.
 
@@ -124,7 +120,7 @@ W tym przewodniku przedstawiono metodę zastosowania źródła danych zdefiniowa
 
  W tej sekcji zostaną zdefiniowane dwóch źródeł danych do użycia w testu jednostkowego.
 
-#### <a name="to-define-data-sources"></a>Aby zdefiniować źródeł danych
+### <a name="to-define-data-sources"></a>Aby zdefiniować źródeł danych
 
 1.  Po `connectionStrings` elementu, Utwórz `microsoft.visualstudio.testtools` elementu. W tej sekcji został utworzony w Definiuj sekcji konfiguracji niestandardowej.
 
@@ -189,7 +185,7 @@ Plik app.config końcowego powinny wyglądać podobnie do poniższego:
 
 -   Użyj źródeł danych w dwie metody testowe, które umożliwia porównanie wartości w każdym źródle danych.
 
-#### <a name="to-create-a-microsoft-access-data-source"></a>Aby utworzyć źródło danych programu Microsoft Access
+### <a name="to-create-a-microsoft-access-data-source"></a>Aby utworzyć źródło danych programu Microsoft Access
 
 1.  Utwórz bazę danych programu Microsoft Access o nazwie `testdatasource.accdb`.
 
@@ -203,7 +199,7 @@ Plik app.config końcowego powinny wyglądać podobnie do poniższego:
 
 6.  Zmień parametry połączenia, aby wskazać lokalizację bazy danych. Zmień wartość `Data Source` do uwzględnienia lokalizacji bazy danych.
 
-#### <a name="to-create-a-microsoft-excel-data-source"></a>Aby utworzyć źródło danych programu Microsoft Excel
+### <a name="to-create-a-microsoft-excel-data-source"></a>Aby utworzyć źródło danych programu Microsoft Excel
 
 1.  Utwórz arkusz kalkulacyjny programu Microsoft Excel o nazwie `data.xlsx`.
 
@@ -217,7 +213,7 @@ Plik app.config końcowego powinny wyglądać podobnie do poniższego:
 
 6.  Zmień parametry połączenia, aby wskazać lokalizację arkusza kalkulacyjnego. Zmień wartość `dbq` do uwzględnienia lokalizacji arkusza kalkulacyjnego.
 
-#### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Aby utworzyć testu jednostkowego przy użyciu pliku app.config źródeł danych
+### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Aby utworzyć testu jednostkowego przy użyciu pliku app.config źródeł danych
 
 1.  Dodawanie testu jednostkowego do projektu testowego.
 

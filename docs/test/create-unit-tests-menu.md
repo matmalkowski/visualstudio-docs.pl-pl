@@ -1,11 +1,7 @@
 ---
-title: "Tworzenie testu jednostkowego klas zastępczych metody przy użyciu polecenia Utwórz testy jednostkowe | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Tworzenie testu jednostkowego metody klas zastępczych w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 12dada9592f9bf0f838d967c654a5223460000fd
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1620612bc27c41fcebfcc28b2844b3022fa482fa
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Utwórz jednostki klas zastępczych metody testu za pomocą polecenia Utwórz testy jednostkowe
 
@@ -48,7 +44,7 @@ Jeśli planujesz uruchamianie tych testów wchodzi w skład procesu automatyzacj
 
 ## <a name="using-third-party-unit-test-frameworks"></a>Przy użyciu platform testów jednostkowych innych firm
 
-Program Visual Studio mogą być utworzone przy użyciu dowolnej struktury testowej testów jednostkowych. Aby zainstalować Dodawanie innych platform testów:
+Program Visual Studio mogą być utworzone przy użyciu dowolnej struktury testowej testów jednostkowych. Aby zainstalować innych platform testów:
 
 1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
 2. Rozwiń węzeł **Online** > **Visual Studio Marketplace** > **narzędzia**, a następnie wybierz pozycję **testowanie**.

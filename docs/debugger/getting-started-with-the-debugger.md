@@ -1,7 +1,8 @@
 ---
-title: "Dowiedz się, jak debugować przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "Dowiedz się, jak debugować — Visual Studio | Dokumentacja firmy Microsoft"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Dowiedz się, jak debugować przy użyciu programu Visual Studio
 
@@ -34,6 +35,15 @@ Albo odczytanie wzdłuż, zobacz Funkcje debugera, lub można pobrać kompletne 
 |  ![Ikona aparatu film wideo](../install/media/video-icon.png "obejrzeć film wideo")  |    [Obejrzyj film](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) debugowania, który zawiera podobne kroki. |
 
 Mimo że aplikacja demonstracyjna C#, funkcje mają zastosowanie do języka C++, Visual Basic, JavaScript i innych języków obsługiwanych przez program Visual Studio (inaczej w przypadku gdy).
+
+W tym samouczku obejmują:
+
+> [!div class="checklist"]
+> * Uruchom debuger i trafień punktów przerwania.
+> * Dowiedz się więcej poleceń do wykonania kroków opisanych kodu w debugerze
+> * Sprawdź zmienne w etykietki danych i debugera systemu windows
+> * Sprawdź stosu wywołań
+> * Przy użyciu Pomocnika wyjątków
 
 ## <a name="start-the-debugger"></a>Uruchom debuger!
 
@@ -82,11 +92,11 @@ Aby debugować, należy uruchomić aplikację w debugerze procesu aplikacji.
 
 ## <a name="restart-your-app-quickly"></a>Szybkie ponowne uruchomienie aplikacji
 
-1. Kliknij przycisk **Uruchom ponownie** ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisku w pasku narzędzi debugowania (Ctrl + Shift + F5).
+Kliknij przycisk **Uruchom ponownie** ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisku w pasku narzędzi debugowania (Ctrl + Shift + F5).
 
-    Po naciśnięciu **ponowne uruchomienie**, można zaoszczędzić czas i zatrzymywanie aplikacji i ponowne uruchamianie debugera. Debuger wstrzymuje na pierwszy punkt przerwania, który zostaje trafiony za wykonywanie kodu.
+Po naciśnięciu **ponowne uruchomienie**, można zaoszczędzić czas i zatrzymywanie aplikacji i ponowne uruchamianie debugera. Debuger wstrzymuje na pierwszy punkt przerwania, który zostaje trafiony za wykonywanie kodu.
 
-    Debuger ponownie zatrzymuje się na punkt przerwania, należy ustawić w `MainWindow` konstruktora.
+Debuger ponownie zatrzymuje się na punkt przerwania, należy ustawić w `MainWindow` konstruktora.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Przejdź do kodu w debugerze przy użyciu poleceń krokowych
 
@@ -148,20 +158,20 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest on
 
 ## <a name="examine-the-call-stack"></a>Sprawdź stosu wywołań
 
-- Podczas wstrzymania w `Update` metody, kliknij przycisk **stos wywołań** okna, które jest domyślnie otwarty w dolnym okienku po prawej stronie.
+Podczas wstrzymania w `Update` metody, kliknij przycisk **stos wywołań** okna, które jest domyślnie otwarty w dolnym okienku po prawej stronie.
 
-     ![Sprawdź stos wywołań](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Sprawdź stos wywołań](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    **Stos wywołań** okno zawiera kolejność, w którym są pobierania wywoływane metody i funkcje. Górny wiersz zawiera bieżącą funkcję ( `Update` metody w aplikacji samouczka). Drugi wiersz wskazuje, że `Update` została wywołana z `Path.set` właściwości i tak dalej.
+**Stos wywołań** okno zawiera kolejność, w którym są pobierania wywoływane metody i funkcje. Górny wiersz zawiera bieżącą funkcję ( `Update` metody w aplikacji samouczka). Drugi wiersz wskazuje, że `Update` została wywołana z `Path.set` właściwości i tak dalej.
 
-    >  [!NOTE]
-    > **Stos wywołań** jest podobne do perspektywy debugowania w niektórych IDEs, takich jak Eclipse.
+>  [!NOTE]
+> **Stos wywołań** jest podobne do perspektywy debugowania w niektórych IDEs, takich jak Eclipse.
 
-    Stos wywołań jest dobrze do badania i zrozumienie przepływu wykonywania aplikacji.
+Stos wywołań jest dobrze do badania i zrozumienie przepływu wykonywania aplikacji.
 
-    Możesz kliknąć dwukrotnie linię kod Przyjrzyj się tej kodu źródłowego i zmienia także bieżącego zakresu kontrolowanym przez debuger. Ta akcja nie poprawić debugera.
+Możesz kliknąć dwukrotnie linię kod Przyjrzyj się tej kodu źródłowego i zmienia także bieżącego zakresu kontrolowanym przez debuger. Ta akcja nie poprawić debugera.
 
-    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okno, aby wykonać inne czynności. Na przykład można wstawić punktów przerwania do określonych funkcji, wcześniejsze debuger przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [porady: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
+Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okno, aby wykonać inne czynności. Na przykład można wstawić punktów przerwania do określonych funkcji, wcześniejsze debuger przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [porady: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Wyjdź
 
@@ -283,7 +293,9 @@ Załóżmy, że wszystko będzie gotowe badanie `Update` metody Data.cs, i chces
 
 Aby dowiedzieć się więcej na temat funkcji debugera, zobacz [debugera porady i wskazówki](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="next-steps"></a>Następne kroki
 
-[Debugowanie w programie Visual Studio](../debugger/index.md)  
-[Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+W tym samouczku kiedy znasz już sposobu uruchamiania debugera, kroki do kodu i sprawdzić zmiennych. Możesz pobrać wysokiego poziomu przyjrzeć się debuger funkcji oraz łącza do dodatkowych informacji.
+
+> [!div class="nextstepaction"]
+> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

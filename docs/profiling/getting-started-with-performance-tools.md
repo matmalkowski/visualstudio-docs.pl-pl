@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>Wprowadzenie do korzystania z narzędzia wydajności
 Ta sekcja zawiera omówienie pojęć i zadań, które będą stosowane podczas zbierania, wyświetlania i analizowania wydajności kodu za pomocą narzędzi wydajności Visual Studio.  
@@ -33,15 +33,14 @@ Ta sekcja zawiera omówienie pojęć i zadań, które będą stosowane podczas z
   
 -   Raporty wydajności zawierają widoki na różnych poziomach struktury aplikacji ze źródła wierszy kodu do procesów i danych wykonywania programu z funkcji wywołującego i o nazwie określonych funkcji, aby drzewie wywołań w całej aplikacji.  
   
-## <a name="common-tasks"></a>Typowe zadania  
+## <a name="common-tasks"></a>Wspólne zadania  
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
 |**Szybkie profilowanie aplikacji lub witryny sieci Web:** Użyj Kreatora wydajności, aby skonfigurować i uruchomić sesję profilowania dla rozwiązania Visual Studio lub witryny sieci Web.|-   [Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Porady: zbieranie danych wydajności dla witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Profil aplikacji z kreatorem:** Dowiedz się, aby utworzyć sesję wydajności za pomocą stron właściwości sesji wydajności.|-   [Porady: ręczne tworzenie sesji wydajności](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Wypróbuj:** zdobyć praktyczne doświadczenia przez profilowania przykładowej aplikacji.|-   [Wskazówki: Identyfikowanie problemów z wydajnością](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Omówienie](../profiling/overviews-performance-tools.md)   
  [Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)   
  [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)   

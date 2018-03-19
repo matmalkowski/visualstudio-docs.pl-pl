@@ -1,18 +1,18 @@
 ---
 title: "Testowanie aplikacji SharePoint z kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c6b07acadab2a798b386b95b3d5e11cc10083d3a
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: d70493b6ded2274aaf54257a83a7fd64292a1aa6
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testowanie aplikacji SharePoint z kodowanych testów interfejsu użytkownika
 

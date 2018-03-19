@@ -4,11 +4,11 @@ title: Debugowanie aplikacji w programie Visual Studio | Dokumentacja firmy Micr
 description: "Dowiedz się, jak używać programu Visual Studio 2017 do debugowania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń."
 ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 6c81a60b706a02a66fce176613fce1e0dae2496c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b2b168c1a91011abf1d3c3c8277fdaacc8fff1d8
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 
@@ -52,24 +52,6 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Przejdź do kodu za pomocą debugera</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
         <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
@@ -106,7 +88,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/how-to-use-intellitrace-step-back">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -116,25 +98,25 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Debugowanie aplikacji wielowątkowych</h3>
+                        <h3>Wyświetlić migawki IntelliTrace (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-live-azure-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o funkcji IntelliTrace (Visual Studio Enterprise)</h3>
+                        <h3>Debugowanie aplikacji w usłudze Azure App Service na żywo</h3>
                     </div>
                 </div>
             </div>
@@ -153,6 +135,24 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                     </div>
                     <div class="cardText">
                         <h3>Debuger porady i wskazówki</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Debugowanie aplikacji wielowątkowych</h3>
                     </div>
                 </div>
             </div>

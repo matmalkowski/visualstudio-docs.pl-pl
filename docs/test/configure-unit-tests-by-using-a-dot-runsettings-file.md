@@ -1,18 +1,18 @@
 ---
-title: "Konfigurowanie testów jednostkowych programu Visual Studio za pomocą *runsettings* pliku | Dokumentacja firmy Microsoft"
+title: "Konfigurowanie testów jednostkowych programu Visual Studio przy użyciu pliku runsettings | Dokumentacja firmy Microsoft"
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *runsettings* pliku
 
@@ -57,7 +57,7 @@ Poniżej przedstawiono typowe *runsettings* pliku. Każdy element pliku jest opc
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ Moduł zbierający dane pokrycia kodu tworzy dziennik z zapisami, które częśc
 
 Moduł zbierający dane wideo przechwytuje rejestrowania ekranu, gdy testy są uruchamiane. Rejestracji jest przydatne podczas rozwiązywania problemów testów interfejsu użytkownika. Moduł zbierający dane wideo jest dostępna w **programu Visual Studio 2017 wersji 15,5 cala** i nowszych.
 
-Aby dostosować każdy inny rodzaj adaptera danych diagnostycznych, należy użyć pliku ustawień testu. Aby uzyskać więcej informacji, zobacz [Określanie ustawień testu testów programu Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
+Aby dostosować każdy inny rodzaj adaptera danych diagnostycznych, należy użyć pliku ustawień testu.
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ Te ustawienia są specyficzne dla adaptera testu, który uruchamia metody testow
 
 ## <a name="see-also"></a>Zobacz także
 
-[Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
+- [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)

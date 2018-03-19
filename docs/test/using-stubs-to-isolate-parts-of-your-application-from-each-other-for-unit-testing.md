@@ -1,24 +1,21 @@
 ---
-title: "Stosowanie wycinków kodu do izolowania części aplikacji ze sobą w celu przeprowadzania testów jednostkowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Stosowanie wycinków kodu do izolowania poszczególnych części aplikacji w celu testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 21db86d03ca5963978a1057a03f451441d3c73b2
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 5639fd12180e77bd1ac9011745311c03f1d9abfe
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Stosowanie wycinków kodu do izolowania od siebie poszczególnych części aplikacji w celu przeprowadzania testów jednostkowych
+# <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Użyj klas zastępczych do izolowania części aplikacji ze sobą w celu przeprowadzania testów jednostkowych
+
 *Stub typy* są jednym z dwóch technologii dostępnych w ramach Microsoft Fakes umożliwia łatwe izolowanie testów z innymi składnikami, które wywołuje składnik. Odcinek jest niewielkim fragmentem kodu, który zajmuje miejsce innego składnika podczas testu. Korzyścią wynikającą z zastosowania wycinka są spójne wyniki, co ułatwia tworzenie testów. Testy można będzie uruchomić, nawet jeśli inne składniki jeszcze nie działają.
 
  Zawiera omówienie i szybki start-Podręcznik do elementów sztucznych, można znaleźć [izolowanie kodu w obszarze testów z Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
@@ -470,10 +467,6 @@ StubBehaviors.Current =
     BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="external-resources"></a>Zasoby zewnętrzne
-
-### <a name="guidance"></a>Wskazówki
- [Testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 2: testy jednostkowe: testowanie wewnątrz](http://go.microsoft.com/fwlink/?LinkID=255188)
-
 ## <a name="see-also"></a>Zobacz także
- [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+
+- [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

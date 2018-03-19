@@ -1,7 +1,7 @@
 ---
 title: Debugowanie ASP.NET - programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Debugowanie ASP.NET przy użyciu debuger programu Visual Studio
 
@@ -98,15 +98,15 @@ A *punktu przerwania* jest znacznika, która wskazuje, gdzie programu Visual Stu
 
 ## <a name="navigate-code"></a>Przejdź do kodu
 
-Istnieją różne polecenia nakazać debugera, aby kontynuować. Polecenie nawigacji przydatne kodu, które jest nowa w programie Visual Studio 2017 w tekście.
+Istnieją różne polecenia nakazać debugera, aby kontynuować. Polecenie nawigacji przydatne kodu, które jest nowa w programie Visual Studio 2017 zostanie przedstawiony.
 
-- Podczas wstrzymana na punkt przerwania, umieść kursor nad instrukcji `return c2` do zielonego **Uruchom, aby kliknij** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png) pojawia się, a następnie naciśnij klawisz **Uruchom, aby kliknij** przycisk.
+Podczas wstrzymana na punkt przerwania, umieść kursor nad instrukcji `return c2` do zielonego **Uruchom, aby kliknij** przycisk ![Uruchom kliknięcie](../debugger/media/dbg-tour-run-to-click.png) pojawia się, a następnie naciśnij klawisz **Uruchom, aby kliknij** przycisk.
 
-    ![Uruchom kliknij](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Uruchom kliknij](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    Aplikacja kontynuuje wykonywanie i zatrzyma się w wierszu kodu, gdy kliknięto przycisk.
+Aplikacja kontynuuje wykonywanie i zatrzyma się w wierszu kodu, gdy kliknięto przycisk.
 
-    Typowe polecenia klawiatury używany do kroków kodu obejmują **F10** i **F11**. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
+Typowe polecenia klawiatury używany do kroków kodu obejmują **F10** i **F11**. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Sprawdź zmienne w etykietki danych
 
@@ -136,9 +136,7 @@ Aby uzyskać więcej informacji na temat używania edit-and-continue i ogranicze
 
 ## <a name="next-steps"></a>Następne kroki
 
-- Aby dowiedzieć się więcej na temat debugera, zobacz [uruchomienia debugera i przejdź do kodu](../debugger/getting-started-with-the-debugger.md).
-- Aby dowiedzieć się więcej na temat punktów przerwania, zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).
+W tym samouczku kiedy znasz już sposobu uruchamiania debugera, kroki do kodu i sprawdzić zmiennych. Możesz pobrać wysokiego poziomu przyjrzeć się debuger funkcji oraz łącza do dodatkowych informacji.
 
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)

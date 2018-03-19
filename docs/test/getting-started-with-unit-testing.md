@@ -1,11 +1,7 @@
 ---
-title: "Wprowadzenie do przeprowadzania testów jednostkowych — Tworzenie planów testów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Rozpoczynanie pracy z jednostką testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9ed998150223010ccc7517852a6da20ec04fc6bc
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a95891afa4a5b05dcaa238bb06fcc57268542187
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do przeprowadzania testów jednostkowych
 

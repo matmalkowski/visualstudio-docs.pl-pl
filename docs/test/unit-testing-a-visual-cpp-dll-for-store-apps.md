@@ -1,22 +1,18 @@
 ---
-title: "Jak przetestować biblioteki DLL programu Visual C++ dla aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Jak przetestować biblioteki DLL programu Visual C++ dla aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: eeece55fa36a7fa4077a814142698288b395c01b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c92e8a1b362bf6593897de526ef1791603292a29
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL programu Visual C++
 
@@ -186,7 +182,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 1.  Dodaj nowego testu:
 
-    ```
+    ```cpp
     TEST_METHOD(RangeTest)
     {
         CRooterLib rooter;
@@ -198,13 +194,12 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
             Assert::AreEqual(expected, actual, tolerance);
         }
     };
-
     ```
 
     > [!TIP]
-    >  Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego dodać nowego testu, zaktualizuj kod, dzięki czemu test zakończył się pomyślnie, a następnie dodaj innego testu i tak dalej.
+    > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego dodać nowego testu, zaktualizuj kod, dzięki czemu test zakończył się pomyślnie, a następnie dodaj innego testu i tak dalej.
     >
-    >  Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowy.
+    > Użytkownicy zmiany ich wymagań, wyłącz testy, które nie są już prawidłowe. Zapisz nowe testy i ich działania pojedynczo, w taki sam sposób przyrostowy.
 
 2.  W Eksploratorze testów, wybierz **Uruchom wszystkie**.
 
@@ -213,7 +208,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
      ![Niepowodzenia RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
-    >  Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast po jej napisano. Dzięki temu można uniknąć łatwe błąd zapisu testu, który nigdy nie zakończy się niepowodzeniem.
+    > Upewnij się, że każdy test zakończy się niepowodzeniem, natychmiast po jej napisano. Dzięki temu można uniknąć łatwe błąd zapisu testu, który nigdy nie zakończy się niepowodzeniem.
 
 4.  Ulepszanie testowanego kodu tak, aby nowy test zakończył się pomyślnie. Dodaj następujący kod do **RooterLib.cpp**:
 
@@ -317,17 +312,16 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla bib
 
 1.  Uproszczenia obliczeń centralnej w `SquareRoot` funkcji:
 
-    ```
+    ```csharp
     // old code
     //result = result - (result*result - v)/(2*result);
     // new code
     result = (result + v/result) / 2.0;
-
     ```
 
 2.  Wybierz **Uruchom wszystkie** refactored metoda testowa i upewnij się, że nie wprowadzono regresji.
 
     > [!TIP]
-    >  Stabilna zestaw testów jednostkowych dobrej daje pewność, że nie użyto usterki po zmianie kodu.
+    > Stabilna zestaw testów jednostkowych dobrej daje pewność, że nie użyto usterki po zmianie kodu.
     >
-    >  Zachowaj refaktoryzacji oddzielona od innych zmian.
+    > Zachowaj refaktoryzacji oddzielona od innych zmian.

@@ -1,7 +1,7 @@
 ---
 title: "Użyj kompilacji lub zarządzania zleceniami dla automatycznego testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Użyj kompilacji i zarządzania zleceniami zamiast Lab Management dla testowanie automatyczne
 
@@ -43,7 +43,7 @@ Niektóre korzyści wynikające ze stosowania kompilacji lub zarządzania zlecen
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Samoobsługowe zarządzanie środowiska SCVMM
 
-[Centrum laboratoryjnego programu Microsoft Test Manager](https://msdn.microsoft.com/library/dd997438.aspx) obsługuje zarządzanie biblioteki szablonów środowiska, a także udostępnić środowisk na żądanie przy użyciu [serwer SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+[Centrum testów programu Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) obsługuje zarządzanie biblioteki szablonów środowiska, a także udostępnić środowisk na żądanie przy użyciu [serwer SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Samoobsługowe funkcje inicjowania obsługi administracyjnej Centrum laboratoryjnego ma dwa różne cele:
 

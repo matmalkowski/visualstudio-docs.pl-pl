@@ -1,7 +1,7 @@
 ---
-title: "Anatomia kodowanego testu interfejsu użytkownika | Dokumentacja firmy Microsoft"
+title: "Anatomia kodowanego testu interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft"
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 56de827abfc42f400be82763c046cdfc93054f2b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 71e513978eb8d84ef2b8ac5ebea4105382808222
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
 
@@ -266,8 +266,18 @@ public void MyTestCleanup()
 
 ## <a name="see-also"></a>Zobacz także
 
-<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls> <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls> <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
-[tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
-[najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
-[testowania Dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)
-[obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>
+- <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
+- [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
+- [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
+- [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
+- [Testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

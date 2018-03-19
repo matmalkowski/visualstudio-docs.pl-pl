@@ -1,11 +1,7 @@
 ---
-title: "Deweloper testowanie narzędzia, scenariusze i możliwości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: "Narzędzia do testowania w programie Visual Studio Developer | Dokumentacja firmy Microsoft"
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0bb23bef0a860f11e1c4c57716a2bdd0c6dc2482
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ae3b475cb6f50f9c6ec623b7dfc588ada9b27163
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Deweloper testowania narzędzi, scenariusze i funkcje
 

@@ -1,20 +1,20 @@
 ---
 title: "Korzystanie z członków Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych | Dokumentacja firmy Microsoft"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c841210c41e7b2b9870c80cc148006f3e63290d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1ae1f1bd4deb81b92ffc7a38c82164e5824b4d76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-the-mstest-framework-in-unit-tests"></a>Za pomocą środowiska MSTest w testach jednostkowych
+# <a name="use-the-mstest-framework-in-unit-tests"></a>Za pomocą architektury MSTest w testy jednostkowe
 
 [MSTest](<xref:Microsoft.VisualStudio.TestTools.UnitTesting>) framework obsługuje jednostki testowania w programie Visual Studio. Używać klas i członków <xref:Microsoft.VisualStudio.TestTools.UnitTesting> przestrzenią nazw, gdy są kodowania testów jednostkowych. Umożliwia także je podczas są korygowania testu jednostkowego, który został wygenerowany z kodu.
 
