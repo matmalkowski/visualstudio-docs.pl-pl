@@ -1,22 +1,18 @@
 ---
 title: "Pisanie testów jednostkowych dla C/C++ w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 2152c5be13ca29da03d482aebc444b1ce30c1b97
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ecb611d7ab816ed99e4bcce954466309f7436f76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla C/C++ w programie Visual Studio
 
