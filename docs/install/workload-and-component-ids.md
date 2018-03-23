@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio 2017 obciążenia i składnik identyfikatorów | Dokumentacja firmy Microsoft"
-description: "Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifeście VSIX"
-keywords: 
+title: Visual Studio 2017 obciążenia i składnik identyfikatorów | Dokumentacja firmy Microsoft
+description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifeście VSIX
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a8b2ca8900c0f292d7e4bcc035e1eb58fd12a94
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 967fdb78d603998ac992b3e3609bc607dc4ea0ff
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 obciążenia i składnik identyfikatorów
 Kliknij nazwę edition w poniższej tabeli, aby wyświetlić dostępne obciążenia i identyfikatory składników należy zainstalować program Visual Studio przy użyciu wiersza polecenia lub określ jako zależności w manifeście VSIX.
@@ -50,7 +50,7 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
 * Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 * [Przewodnik administratora usługi Visual Studio dla programu Visual Studio 2017 r.](visual-studio-administrator-guide.md)
 * [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
 * [Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.](command-line-parameter-examples.md)

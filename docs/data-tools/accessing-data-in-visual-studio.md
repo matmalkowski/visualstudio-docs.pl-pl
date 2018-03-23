@@ -1,5 +1,5 @@
 ---
-title: "Uzyskiwanie dostępu do danych w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Uzyskiwanie dostępu do danych w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -33,7 +33,7 @@ Następujące przedstawiono kilka z wielu systemów magazynu i bazy danych, któ
 
 ||||
 |-|-|-|
-|Baza danych SQL|DocumentDB|Magazyn (obiekty BLOB, tabel, kolejek, plików)|
+|Baza danych SQL|Azure Cosmos DB|Magazyn (obiekty BLOB, tabel, kolejek, plików)|
 |Magazyn danych SQL|Baza danych SQL Server Stretch|StorSimple|
 
 i więcej...
