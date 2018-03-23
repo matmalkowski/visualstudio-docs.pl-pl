@@ -1,24 +1,24 @@
 ---
-title: "Rozwiązywanie problemów z programu Visual Studio Emulator for Android | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązywanie problemów z programu Visual Studio Emulator for Android | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
+caps.latest.revision: ''
+author: mgmclemore
+ms.author: mamcle
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d99892d42190e64c54213c2b6b9e52fdd22dfd8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d333295461617eb8a85f0970bc82e33f5a2ec68
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android
 Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas korzystania z programu Visual Studio Emulator for Android.  
@@ -62,22 +62,22 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
 -   [Zasoby pomocy technicznej](#Support)  
   
-##  <a name="BeforeYouStart"></a>Przed rozpoczęciem  
+##  <a name="BeforeYouStart"></a> Przed rozpoczęciem  
  Przed rozpoczęciem rozwiązywania problemów, warto przejrzeć następujące tematy:  
   
 -   [Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
-##  <a name="NoInstall"></a>Emulator niepowodzeniu instalacji  
+##  <a name="NoInstall"></a> Emulator niepowodzeniu instalacji  
  Jeśli nie masz zainstalowanych funkcji Hyper-V, następujący komunikat zostanie wyświetlony, gdy użytkownik próbuje zainstalować emulator. Na komputerze, który obsługuje funkcji Hyper-v musi mieć i musi być włączona.  
   
- ![Android &#95; EMU &#95; Zainstaluj &#95; problem](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
+ ![Android&#95;Emu&#95;zainstalować&#95;problem](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
   
 > [!NOTE]
 >  Ten komunikat ma zastosowanie zarówno do programu Visual Studio Emulator for Android i Windows Phone Emulator. Windows 8.1 i Windows 10 obsługuje emulatora.  
   
  Jeśli ten komunikat zostanie wyświetlony, sprawdź [wymagania systemowe dla programu Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) aby zobaczyć, czy można uruchomić emulatora.  
   
-##  <a name="DomainNetwork"></a>Nie można nawiązać połączenia z miejsc docelowych sieci w domenie lub sieci firmowej  
+##  <a name="DomainNetwork"></a> Nie można nawiązać połączenia z miejsc docelowych sieci w domenie lub sieci firmowej  
  Visual Studio Emulator for Android pojawia się w sieci jako osobne urządzenia z adresu IP. Nie jest przyłączony do domeny systemu Windows i nie udostępnia poświadczenia domeny lub grupy roboczej na komputerze hosta.  
   
  Jeśli sieć wymaga autoryzacji domeny lub grupy roboczej do sieci podstawowej i łączności z Internetem, skontaktuj się z administratorem IT Wystąpił wyjątek. Ten wyjątek umożliwia programowanie jako maszynę granic i do akceptowania połączeń z urządzeniami sieciowymi przyłączone do domeny, takich jak emulator.  
@@ -94,7 +94,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
 4.  Na stronie sieci Znajdź wpisy adresów fizycznych.  
   
-##  <a name="ManualNetworkConfig"></a>Nie można połączyć się sieci miejsc docelowych, jeśli ustawienia sieciowe wymagają ręcznej konfiguracji  
+##  <a name="ManualNetworkConfig"></a> Nie można połączyć się sieci miejsc docelowych, jeśli ustawienia sieciowe wymagają ręcznej konfiguracji  
  Do nawiązania miejsc docelowych sieci z emulatora, sieć musi spełniać następujące wymagania:  
   
 -   DHCP. Emulator wymaga protokołu DHCP, ponieważ konfiguruje się jako osobne urządzenia w sieci za pomocą adresu IP.  
@@ -103,7 +103,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
  Jeśli sieć wymaga ręcznie skonfigurowane ustawienia, skontaktuj się z administratorem IT, aby ustalić, jak można włączyć łączności sieciowej dla emulatora.  
   
-##  <a name="SlowStart"></a>Emulator uruchamia się powoli, kończy się niepowodzeniem, aby uruchomić ze względu na przekroczenie limitu czasu lub wdrożenia aplikacji nie powiedzie się.  
+##  <a name="SlowStart"></a> Emulator uruchamia się powoli, kończy się niepowodzeniem, aby uruchomić ze względu na przekroczenie limitu czasu lub wdrożenia aplikacji nie powiedzie się.  
  W niektórych warunkach emulatora może zająć kilka minut, aby uruchomić lub nie została uruchomiona z powodu przekroczenia limitu czasu. Gdy emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: `App deployment failed. Please try again`. Ten błąd może spowodować następujące warunki.  
   
 -   Uruchomiona programu Visual Studio Emulator for Android z rozruchowego dysku VHD. Ta konfiguracja nie jest obsługiwana.  
@@ -118,7 +118,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
 -   Ogólnie rzecz biorąc współczynnik która wnosi wkład na pogorszenie wydajności w systemie. Rozpocznij rozwiązywanie problemów ze składnikiem ma najniższą częściowy w indeksie wydajności systemu Windows, który można znaleźć na stronie informacje o wydajności i narzędzia w Panelu sterowania.  
   
-##  <a name="NoStart2"></a>Emulator nie powiedzie się  
+##  <a name="NoStart2"></a> Emulator nie powiedzie się  
  Jeśli emulator działał wcześniej, ale nie obsługuje teraz, przejść przez następujące zadania. Jeśli używasz emulatora po raz pierwszy, zobacz [emulatora nie powiedzie się (pierwszym użyciu)](#NoStart) przed podjęciem próby następujące kroki.  
   
 -   Usuń wszystkie wystąpienia funkcji Hyper-V emulatora.  
@@ -141,7 +141,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
 -   Jeśli te czynności nie rozwiąże problemu, zobacz [emulatora nie powiedzie się (pierwszym użyciu)](#NoStart) uzyskać informacji o 3 oprogramowanie firm, które może zakłócać emulator.  
   
-##  <a name="NoStart"></a>Emulator nie powiedzie się (pierwszym użyciu)  
+##  <a name="NoStart"></a> Emulator nie powiedzie się (pierwszym użyciu)  
  Nie można uruchomić emulatora, należy przejść przez następujące zadania, aby zidentyfikować i rozwiązać problem.  
   
 -   Upewnij się, że zostały spełnione minimalne wymagania dotyczące sprzętu oraz czy ustawienia systemu BIOS są prawidłowe.  
@@ -212,7 +212,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
     2.  Dla karty vEthernet (Ethernet portu Windows Phone Emulator wewnętrznego przełącznika wewnętrznego) wybierz **właściwości** z menu kontekstowego.  
   
-         ![Karta wirtualna używana przez Hyper &#45; V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Karta wirtualna używana w funkcji Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Właściwości karty są wyświetlane tutaj.  
   
@@ -248,7 +248,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
      Teraz uruchom emulator. Powinien działać.  
   
-##  <a name="NoBoot"></a>Komputerowi nie uda się uruchomić po zainstalowaniu emulatora  
+##  <a name="NoBoot"></a> Komputerowi nie uda się uruchomić po zainstalowaniu emulatora  
  Ten problem może wystąpić, gdy są spełnione następujące warunki:  
   
 -   Komputer ma gigabajt płyty głównej.  
@@ -259,7 +259,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
  Aby uzyskać więcej informacji, zobacz następujący artykuł bazy wiedzy Knowledge Base: [rozruch awarii po zakończeniu instalacji roli funkcji Hyper-V w systemach gigabajt](https://support.microsoft.com/en-us/kb/2693144).  
   
-##  <a name="ADB"></a>Visual Studio zablokowała próba wdrożenia aplikacji na emulatorze lub emulatora nie jest wyświetlany jako cel debugowania w innych IDEs  
+##  <a name="ADB"></a> Visual Studio zablokowała próba wdrożenia aplikacji na emulatorze lub emulatora nie jest wyświetlany jako cel debugowania w innych IDEs  
  Jeśli emulator działa, ale nie ma zostać połączona z ADB (mostka debugowania systemu Android) lub pojawia się narzędzia korzystające z ADB (na przykład Android Studio lub Eclipse) dla systemu Android, może być konieczne dostosowanie, gdy emulator szuka ADB. Emulator używa klucza rejestru do zidentyfikowania lokalizacji podstawowego zestawu SDK systemu Android i wyszukuje plik \platform-tools\adb.exe w tym katalogu. Aby zmodyfikować tę ścieżkę zestawu SDK systemu Android emulatora:  
   
 -   Otwórz Edytor rejestru, wybierając **Uruchom** z menu kontekstowego przyciski Start, wpisując `regedit` w oknie dialogowym i wybierając polecenie **OK**.  
@@ -270,7 +270,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
  Ponowne uruchomienie emulatora i powinno być teraz możliwe emulator połączony ADB i skojarzone narzędzia dla systemu Android.  
   
-##  <a name="XamarinPlayer"></a>Emulator zawiesza się, ponieważ nie można skonfigurować UDP port  
+##  <a name="XamarinPlayer"></a> Emulator zawiesza się, ponieważ nie można skonfigurować UDP port  
  Może występować ten problem z powodu niezgodności z Xamarin Player. Emulator zawieszenie lub jeśli zostanie wyświetlony ten komunikat o błędzie "nie można nawiązać połączenia z programem system operacyjny urządzenia jest to emulator: nie można skonfigurować UDP port.  Niektóre funkcje mogą być wyłączone", może występować ten problem. Wykonaj następujące kroki.  
   
 1.  Odinstaluj program Xamarin Player.  
@@ -281,7 +281,7 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
 4.  Możesz spróbować odinstalowanie/ponowne instalowanie funkcji Hyper-V po usunięciu żadnych kart sieciowych z systemem innym niż fizycznych.  
   
-##  <a name="Skylake"></a>Nie można dołączyć debugera do projektu Xamarin  
+##  <a name="Skylake"></a> Nie można dołączyć debugera do projektu Xamarin  
  Jeśli korzystasz z systemu Windows 10 z procesorów Intel Skylake, aplikacje platformy Xamarin może zakończyć się niepowodzeniem do uruchomienia w emulatorze lub debuger programu Visual Studio nie może dołączyć do nich. Jest to spowodowane problemem z funkcją Hyper-V i Skylake procesorów. Aby uniknąć tego problemu, należy wykonać następujące kroki.  
   
 1.  Otwórz Menedżera funkcji Hyper-V, a następnie wybierz maszynę Wirtualną, dla emulatora profil, który czy przy użyciu.  
@@ -296,22 +296,22 @@ Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mog
   
 6.  Uruchom ponownie usługę (w obszarze **akcje**), a następnie spróbuj ponownie.  
   
-##  <a name="GooglePlay"></a>Emulator nie powiedzie się uruchomić aplikację, która używa usług Google Play  
+##  <a name="GooglePlay"></a> Emulator nie powiedzie się uruchomić aplikację, która używa usług Google Play  
  Emulator nie jest dostarczany z biblioteki dla usług Google Play. Przeciągnij i upuść instalacji plików zip oprogramowanie obsługuje jednak emulator.  
   
-##  <a name="DragAndDrop"></a>Przeciąganie i upuszczanie plików, APK lub pliku zip oprogramowanie nie działa  
+##  <a name="DragAndDrop"></a> Przeciąganie i upuszczanie plików, APK lub pliku zip oprogramowanie nie działa  
  Emulator używa ADB.exe ułatwiające transfer plików podczas przeciągania i upuszczania pliku na ekranie. Jeśli podczas próby przeciąganie i upuszczanie plików w przypadku wystąpienia błędu, prawdopodobnie oznacza to emulatora nie jest podłączony do ADB.exe. Aby rozwiązać, wykonaj kroki opisane w [programu Visual Studio zablokowała próba wdrożenia aplikacji na emulatorze lub emulatora nie jest wyświetlany jako cel debugowania w innych IDEs](#ADB).  
   
-##  <a name="Resolution"></a>Rozdzielczość zrzut ekranu jest nieprawidłowa  
+##  <a name="Resolution"></a> Rozdzielczość zrzut ekranu jest nieprawidłowa  
  Jeśli musisz wykonać zrzut ekranu przy użyciu karty zrzut ekranu w **dodatkowych narzędzi** okno i obraz wynikowy jest nieoczekiwany rozmiar, może być konieczne dostosowanie poziom powiększenia ekranu przed wybraniem **przechwytywania**. Emulator ma zrzuty ekranu w rozdzielczości ekranu na monitorze komputera hosta.  
   
-##  <a name="OpenGL"></a>Emulator nie powiedzie się do renderowania zawartości OpenGL  
+##  <a name="OpenGL"></a> Emulator nie powiedzie się do renderowania zawartości OpenGL  
  Emulator renderuje zawartość OpenGL przy użyciu komputera hosta procesora GPU i używa projektu kąt na konwertowanie tych wywołań programu DirectX. Jeśli aplikacja renderuje poprawnie na urządzeniu, ale niepoprawne w emulatorze, jest prawdopodobne, że urządzenie jest zmniejszenia nieprawidłowe wywołanie OpenGL (na przykład przy użyciu programu do cieniowania zmiennych, które nie są zgodne).  
   
-##  <a name="Multitouch"></a>Emulator nie odpowiada na gestów dotykowych wielu  
+##  <a name="Multitouch"></a> Emulator nie odpowiada na gestów dotykowych wielu  
  W niektórych przypadkach emulator uruchomi i nie odpowiadają wielodotyku albo za pomocą bezpośredniej interakcji z obsługą dotyku ekranu lub za pomocą narzędzia Obsługa wielodotyku na pasku narzędzi emulatora. Jeśli jest to możliwe, wybierz **Obróć** znajdującego się na pasku narzędzi emulator i spróbuj ponownie użyć wielodotyku. Jeśli problem będzie się powtarzać, przeczytaj [emulatora nie powiedzie się do renderowania zawartości OpenGL](#OpenGL) problem.  
   
-##  <a name="Support"></a>Zasoby pomocy technicznej  
+##  <a name="Support"></a> Zasoby pomocy technicznej  
  Jeśli komputer-host spełnia wymagania systemowe i nie wystąpi problem omówione w tym przewodniku rozwiązywania problemów:  
   
 -   Zadaj pytanie na temat używania StackOverflow [emulatora systemu android](http://stackoverflow.com/questions/tagged/android-emulator) i tagi visual studio.  

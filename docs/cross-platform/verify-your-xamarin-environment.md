@@ -1,23 +1,23 @@
 ---
-title: "Sprawdź środowisku Xamarin | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Sprawdź środowisku Xamarin | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 03b5723ca0cbc3e6b8864bd49d2301e0485ff451
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 28983dc88e4259fce783ee3e2d502d30ec0712d8
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdź środowisku Xamarin
 Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-platform/setup-and-install.md)), spędzają na kilka minut, sprawdź, czy wszystko jest gotowe do środowisko rozwoju Xamarin.  
@@ -33,7 +33,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalatora i zainstaluj](../cross-plat
   
  Następnie utwórz nowe rozwiązanie platformy Xamarin w programie Visual Studio przy użyciu **Plik > Nowy projekt**, następnie w oknie dialogowym Rozwiń **Szablony > inne języki > Visual C# > wieloplatformowych**, wybierz pozycję  **Pusta aplikacja (Native przenośne)**i kliknij przycisk OK. Spowoduje to utworzenie rozwiązania z projektu biblioteki klas przenośnych udostępnionego i poszczególnych projektów dla systemu Android, iOS i Windows:  
   
- ![Wyniki tworzenia nowego projektu z pustą aplikację &#40; Przenośna natywnego &#41; Szablon](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Sprawdź 1")  
+ ![Wyniki tworzenia nowego projektu z pustą aplikację &#40;natywnego przenośne&#41; szablonu](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Sprawdź 1")  
   
 > [!NOTE]
 >  Jeśli szablony nie są widoczne, [szablonów projektu Xamarin Brak? Spróbuj to](#missing) u dołu tej strony.  

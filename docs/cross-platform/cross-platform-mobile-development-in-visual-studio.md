@@ -1,24 +1,24 @@
 ---
-title: "Obsługujący wiele Platform Mobile Development w Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obsługujący wiele Platform Mobile Development w Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 12/06/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: ''
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 855ded366433f6ab3193d1046d9d5047449bd204
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Aplikacji mobilnych dla wielu Platform w programie Visual Studio
 
@@ -94,7 +94,7 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 
  Ponieważ te interfejsy API są międzyplatformowa, można udostępniać większość zapisu między wszystkich trzech platform. Pozwala to ograniczyć koszty rozwoju i konserwacji. Ponadto jest niepotrzebna od samego początku. Jeśli po utworzeniu innych typów aplikacji sieci web, można udostępniać te pliki aplikacji platformy Cordova bez konieczności modyfikowania lub zmodyfikowanie je w dowolny sposób.
 
- ![Obsługa wielu &#45; aplikacje hybrydowe dla urządzeń](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Obsługa wielu&#45;aplikacje hybrydowe dla urządzeń](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  Aby rozpocząć, zainstalować program Visual Studio 2015 i wybrać **HTML/JavaScript (Apache Cordova)** funkcji podczas instalacji. Jeśli używasz programu Visual Studio 2013, należy zainstalować Visual Studio Tools for Apache Cordova rozszerzenia. W obu przypadkach narzędzia Cordova automatycznie zainstalować wszystkie oprogramowania innych firm, które są wymagane do utworzenia aplikacji w wielu platform.
 
@@ -111,7 +111,7 @@ Za pomocą platformy Xamarin można kierować systemu Android, iOS i Windows w t
 |[Dowiedz się więcej o programie Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Tworzenie aplikacji dla systemu Android i Windows (C++)
- ![Użyj & C &43; 43; Aby tworzyć dla systemu Android, iOS i Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![Użyj C&#43; &#43; do kompilacji dla systemu Android, iOS i Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  Najpierw należy zainstalować program Visual Studio 2015 i Visual C++ for Cross Platform Mobile Development tools. Następnie można utworzyć aplikacji działania natywnego dla systemu Android lub aplikacji, która jest przeznaczony dla systemu Windows. Szablonów języka C++, które są przeznaczone dla systemu iOS nie są jeszcze dostępne. Android i Windows można kierować w tym samym rozwiązaniu Jeśli, a następnie udostępnić kod między nimi przy użyciu wielu platform statyczne lub dynamiczne biblioteki współużytkowanej.
 

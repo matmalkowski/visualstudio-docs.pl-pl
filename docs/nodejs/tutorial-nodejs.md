@@ -1,13 +1,13 @@
 ---
-title: "Tworzenie aplikacji Node.js i Express — Visual Studio | Dokumentacja firmy Microsoft"
+title: Tworzenie aplikacji Node.js i Express — Visual Studio | Dokumentacja firmy Microsoft
 description: W tym samouczku zostanie utworzona aplikacja Node.js i Express programu Visual Studio
-ms.custom: 
+ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-nodejs
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1ababcbc0903d474c2992b68e3571a71c4e88d99
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
@@ -46,12 +46,14 @@ Z tego samouczka, dowiesz się, jak:
 
     Jeśli użytkownik nie jest zainstalowany, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Nie wykrywa zainstalowane środowisko uruchomieniowe, można skonfigurować do odwołania zainstalowanego środowiska uruchomieniowego na stronie właściwości projektu (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
+    W tym samouczku przetestowano za pomocą języka Node.js 8.10.0.
+
 ## <a name="create-a-project"></a>Tworzenie projektu
 Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Otwórz program Visual Studio 2017 r.  
 
-1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .  
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...**.  
 
 1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz pozycję **Node.js**. W środkowym okienku wybierz **Azure Node.js Express 4 aplikacji w warstwie podstawowa**, a następnie wybierz pozycję **OK**.   
 
@@ -119,6 +121,8 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    Występuje błąd w wierszu kodu zawierającego `res.render`. Potrzebujemy go rozwiązać, zanim będzie można uruchomić aplikacji. Firma Microsoft Napraw błąd w następnej sekcji.
 
 ## <a name="use-intellisense"></a>Używanie IntelliSense
 
