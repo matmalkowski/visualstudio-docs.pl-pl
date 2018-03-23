@@ -1,23 +1,23 @@
 ---
-title: "Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5590e2a66fe2b6bdec192343f22338f257a8e5ba
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
 W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim na komputerze Mac, które opcjonalnie Visual Studio umożliwia maszynie wirtualnej systemu Windows na komputerach Mac. Jeśli jesteś deweloperem pracy przede wszystkim na komputerze z systemem Windows i należy skonfigurować dodatkowej Mac przeznaczony dla systemu iOS, znajduje się w [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) tematu.
@@ -38,7 +38,7 @@ W tym temacie jest przeznaczona dla deweloperów pracujących przede wszystkim n
 
 1.  Utwórz bezpłatne identyfikator firmy Apple w [mój identyfikator Apple ID](https://appleid.apple.com/) Jeśli nie masz już. Jest to niezbędne do instalowania i rejestrowania się w środowisku Xcode.
 
-2.  Pobierz i zainstaluj program Xcode z [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).
+2.  Pobierz i zainstaluj program Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/).
 
 3.  Pobierz i zainstaluj program Xamarin, postępując zgodnie z instrukcjami [Instalowanie i konfigurowanie Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 

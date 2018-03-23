@@ -1,22 +1,24 @@
 ---
 title: Napraw program Visual Studio 2017 | Dokumentacja firmy Microsoft
-description: "Dowiedz się, jak napraw instalację programu Visual Studio 2017 r."
-keywords: "Nie dodawaj lub Edytuj słowa kluczowe bez konsultacji z ekspert od optymalizacji pod kątem Wyszukiwarek."
+description: Dowiedz się, jak napraw instalację programu Visual Studio 2017 r.
+keywords: Nie dodawaj lub Edytuj słowa kluczowe bez konsultacji z ekspert od optymalizacji pod kątem Wyszukiwarek.
 author: PoulChapman
 ms.author: pchapman
 manager: ghogen
-ms.reviewer: 
+ms.reviewer: ''
 ms.date: 09/28/2017
 ms.topic: article
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.workload: pchapman
-ms.openlocfilehash: 9112042014f89e6e5c7e1293f890e14a882d34fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.workload:
+- multiple
+ms.openlocfilehash: e3ead2104ef89ed7b3b118e660c8f18a3e587a00
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="repair-visual-studio-2017"></a>Napraw program Visual Studio 2017 r.
 
@@ -27,7 +29,7 @@ Czasami instalację programu Visual Studio jest uszkodzony lub uszkodzony. Napra
      Na przykład na komputerze z systemem Windows 10 Anniversary Update, wybierz pozycję **Start**, a następnie przewiń do literę **V**, w którym znajduje się w **Instalator programu Visual Studio**.
 
      >[!NOTE]
-     Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2.  Kliknij lub naciśnij, aby uruchomić Instalatora, a następnie wybierz **więcej**, a następnie wybierz **naprawy**.
 
@@ -42,6 +44,6 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
-* [Aktualizacja programu Visual Studio 2017 r.](update-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
 * [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)
 * [Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017 r.](troubleshooting-installation-issues.md)

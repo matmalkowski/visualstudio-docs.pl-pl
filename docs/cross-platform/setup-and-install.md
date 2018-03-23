@@ -1,23 +1,23 @@
 ---
 title: Zainstaluj program Xamarin dla Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: bcaa49552c0e904b07cc90f3ae7e44aaa58a3895
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 
@@ -32,7 +32,7 @@ Tworzenie natywnych iOS, Android i Windows aplikacji ze wspólnego C# / kodu .NE
 Jeśli masz problemy po wykonaniu tego Instalatora i zainstaluj za pomocą platformy Xamarin, zgłoś zapytanie na [forums.xamarin.com](http://forums.xamarin.com/).
 
 > [!NOTE]
-> 31 marca 2016 r. wszystkie Xamarin jest dołączony do wszystkich wersji programu Visual Studio bez dodatkowych kosztów i nie wymaga oddzielnej licencji. Program Xamarin Studio Community dla komputerów Mac również jest bezpłatna dla uczniów lub studentów, OSS deweloperów i niewielkich zespołów. Należy pamiętać, że dla istniejącej instalacji programu Visual Studio, które są skonfigurowane przy użyciu wcześniejszych licencji Xamarin, musisz zaktualizować Xamarin do wersji 4.0.3.214 lub nowszej. Aby to zrobić, przejdź do **Narzędzia > Opcje > Xamarin > innych**, kliknij przycisk **Sprawdź** łącze i 4.0.3.214 pobierania aktualizacji. Po ponownym uruchomieniu programu Visual Studio, przejdź do **Narzędzia > Konto Xamarin...**  i powinna zostać wyświetlona zaktualizowany stan.
+> 31 marca 2016 r. wszystkie Xamarin jest dołączony do wszystkich wersji programu Visual Studio bez dodatkowych kosztów i nie wymaga oddzielnej licencji. Program Xamarin Studio Community dla komputerów Mac również jest bezpłatna dla uczniów lub studentów, OSS deweloperów i niewielkich zespołów. Należy pamiętać, że dla istniejącej instalacji programu Visual Studio, które są skonfigurowane przy użyciu wcześniejszych licencji Xamarin, musisz zaktualizować Xamarin do wersji 4.0.3.214 lub nowszej. Aby to zrobić, przejdź do **Narzędzia > Opcje > Xamarin > innych**, kliknij przycisk **Sprawdź** łącze i 4.0.3.214 pobierania aktualizacji. Po ponownym uruchomieniu programu Visual Studio, przejdź do **Narzędzia > Konto Xamarin...** i powinna zostać wyświetlona zaktualizowany stan.
 
 ##  <a name="prereq"></a> Wymagania wstępne
 
@@ -82,9 +82,9 @@ Jeśli masz problemy po wykonaniu tego Instalatora i zainstaluj za pomocą platf
 
 ##  <a name="mac"></a> Instalator Mac (Apple ID, Xcode i Xamarin)
 
-1.  Utwórz bezpłatne identyfikator firmy Apple w [https://appleid.apple.com](https://appleid.apple.com/) Jeśli nie masz już. Jest to niezbędne do instalowania i rejestrowania się w środowisku Xcode.
+1.  Utwórz bezpłatne identyfikator firmy Apple w [ https://appleid.apple.com ](https://appleid.apple.com/) Jeśli nie masz już. Jest to niezbędne do instalowania i rejestrowania się w środowisku Xcode.
 
-2.  Pobierz i zainstaluj program Xcode z [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/), i Dodaj identyfikator Apple ID, zgodnie z opisem na [Dodawanie Twoje konto xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+2.  Pobierz i zainstaluj program Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), i Dodaj identyfikator Apple ID, zgodnie z opisem na [Dodawanie Twoje konto xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
 3.  Pobierz i zainstaluj program Xamarin, postępując zgodnie z instrukcjami [Instalowanie i konfigurowanie Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 

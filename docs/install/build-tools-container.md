@@ -1,22 +1,24 @@
 ---
-title: "Zainstaluj narzędzia kompilacji do kontenera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zainstaluj narzędzia kompilacji do kontenera | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95f9c69ebca7dbdc7e576279b4e1ad3f17d2be25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 95b60369350ad099e53b143ff85adbcef250b8b9
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 
@@ -56,7 +58,7 @@ Visual Studio kompilacji narzędzia — i w większym stopniu Visual Studio — 
 
 **W systemie Windows 10**:
 
-1. [Rick — kliknij ikonę Docker dla systemu Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawień...** .
+1. [Rick — kliknij ikonę Docker dla systemu Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawień...**.
 2. [Polecenie demona](https://docs.docker.com/docker-for-windows/#docker-daemon) sekcji.
 3. [Przełącz **podstawowe** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) przycisk, aby **zaawansowane**.
 4. Dodaj następujące właściwości tablicy JSON zwiększenie miejsca na dysku do 120GB (więcej niż wystarczającego dla narzędzia kompilacji możliwości rozbudowy).

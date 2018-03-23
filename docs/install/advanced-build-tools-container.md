@@ -1,22 +1,24 @@
 ---
-title: "Zaawansowane przykład kontenerów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zaawansowane przykład kontenerów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b5497a6957c457300f7741e1e0d4acc68240020a
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="advanced-example-for-containers"></a>Przykład zaawansowane kontenerów
 
@@ -27,7 +29,7 @@ W poniższym przykładzie plik Dockerfile użyto tag obrazu microsoft/windowsser
 > [!NOTE]
 > Nie można zainstalować programu Visual Studio do microsoft/windowsservercore:10.0.14393.1593, który ma znane problemy uruchamiania Instalatora w kontenerze. Aby uzyskać więcej informacji, zobacz [znane problemy](build-tools-container-issues.md).
 
-Funkcja programu inicjującego 2017 narzędzia kompilacji instalujący określonej wersji utworzony w tym samym czasie co program inicjujący. Produkt nadal mogły zostać zaktualizowane za pośrednictwem kanału wersji, ale nie jest praktyczne scenariusz dla kontenerów, które będą zazwyczaj odbudować. Jeśli chcesz pobrać adresy URL dla określonego kanału można pobrać kanału https://aka.ms/vs/15/release/channel, otwórz plik JSON i zbadać adresów URL programu inicjującego. Aby uzyskać więcej informacji, zobacz [instalacji sieciowej programu Visual Studio Utwórz](create-a-network-installation-of-visual-studio.md).
+Funkcja programu inicjującego 2017 narzędzia kompilacji instalujący określonej wersji utworzony w tym samym czasie co program inicjujący. Produkt nadal mogły zostać zaktualizowane za pośrednictwem kanału wersji, ale nie jest praktyczne scenariusz dla kontenerów, które będą zazwyczaj odbudować. Jeśli chcesz pobrać adresy URL dla określonego kanału można pobrać kanału z https://aka.ms/vs/15/release/channel, otwórz plik JSON i zbadać adresów URL programu inicjującego. Aby uzyskać więcej informacji, zobacz [instalacji sieciowej programu Visual Studio Utwórz](create-a-network-installation-of-visual-studio.md).
 
 ```dockerfile
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.

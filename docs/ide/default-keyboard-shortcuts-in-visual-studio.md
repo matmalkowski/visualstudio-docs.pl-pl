@@ -1,11 +1,12 @@
 ---
-title: "Domyślne skróty klawiaturowe w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Domyślne skróty klawiaturowe w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyśle skróty klawiaturowe w Visual Studio
 Aby uzyskać więcej informacji o ułatwieniach dostępu klawiatury, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md) i [porady: Użyj klawiatury wyłącznie](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -59,22 +61,22 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |[Widok projektu edytora HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Projektant raportu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC Accelerator Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Edytor XML (tekst)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[Widok kodu edytora HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Diagram sekwencji](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Edytor okien dialogowych VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Projektant schematu XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
-##  <a name="bkmk_global"></a>Globalne
+##  <a name="bkmk_global"></a> Globalne
 
-###  <a name="bkmk_analyze"></a>Analizowanie
+###  <a name="bkmk_analyze"></a> Analizowanie
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |Analyze.NavigateBackward|Shift+Alt+3|  
 |Analyze.NavigateForward|Shift+Alt+4|  
 
-###  <a name="bkmk_architecture"></a>Architektura
+###  <a name="bkmk_architecture"></a> Architektura
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
 
-###  <a name="bkmk_build"></a>Kompilacji
+###  <a name="bkmk_build"></a> Kompilacji
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -83,13 +85,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Build.Compile|Ctrl+F7|  
 |Build.RunCodeAnalysisonSolution|Alt+F11|  
 
-###  <a name="bkmk_classview"></a>Menu kontekstowe widoku klasy
+###  <a name="bkmk_classview"></a> Menu kontekstowe widoku klasy
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|  
 
-###  <a name="bkmk_debug"></a>Debugowania
+###  <a name="bkmk_debug"></a> Debugowania
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -157,7 +159,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Debug.Watch3|Ctrl+Alt+W, 3|  
 |Debug.Watch4|Ctrl+Alt+W, 4|  
 
-###  <a name="bkmk_debugger"></a>Menu kontekstowe debugera
+###  <a name="bkmk_debugger"></a> Menu kontekstowe debugera
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -165,13 +167,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|  
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|  
 
-###  <a name="bkmk_diagnostics"></a>Centrum diagnostyki
+###  <a name="bkmk_diagnostics"></a> Centrum diagnostyki
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
 
-###  <a name="bkmk_edit"></a>Edytuj
+###  <a name="bkmk_edit"></a> Edytuj
 
 |Polecenia||  
 |--------------|-|  
@@ -230,7 +232,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|  
 |Edit.Undo|Ctrl+Z<br /><br /> lub<br /><br /> Alt+Backspace|  
 
-###  <a name="bkmk_editorContext"></a>Menu kontekstowe edytora
+###  <a name="bkmk_editorContext"></a> Menu kontekstowe edytora
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -241,7 +243,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|  
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> lub<br /><br /> Ctrl+K, T|  
 
-###  <a name="bkmk_file"></a>Plik
+###  <a name="bkmk_file"></a> Plik
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -257,7 +259,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |File.SaveSelectedItems|Ctrl+S|  
 |File.ViewinBrowser|Ctrl+Shift+W|  
 
-###  <a name="bkmk_help"></a>Pomoc
+###  <a name="bkmk_help"></a> Pomoc
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -266,19 +268,19 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Help.ViewHelp|Ctrl+F1|  
 |Help.WindowHelp|Shift+F1|  
 
-###  <a name="bkmk_loadtest"></a>Test obciążenia
+###  <a name="bkmk_loadtest"></a> Test obciążenia
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|  
 
-###  <a name="bkmk_otherContext"></a>Inne menu kontekstowe
+###  <a name="bkmk_otherContext"></a> Inne menu kontekstowe
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|  
 
-###  <a name="bkmk_project"></a>Projekt
+###  <a name="bkmk_project"></a> Projekt
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -290,14 +292,14 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Project.Publishselectedfiles|Alt+;, Alt+P|  
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|  
 
-###  <a name="bkmk_projectContext"></a>Projekt i rozwiązanie menu kontekstowe
+###  <a name="bkmk_projectContext"></a> Projekt i rozwiązanie menu kontekstowe
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Strzałka w dół|  
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Strzałka w górę|  
 
-###  <a name="bkmk_refactor"></a>Zrefaktoryzuj
+###  <a name="bkmk_refactor"></a> Zrefaktoryzuj
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -308,7 +310,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Refactor.Rename|Ctrl+R, Ctrl+R|  
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|  
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a>Eksplorator rozwiązań
+###  <a name="bkmk_solutionexplorerGLOBAL"></a> Eksplorator rozwiązań
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -316,7 +318,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> lub<br /><br /> Ctrl+[, Ctrl+P|  
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> lub<br /><br /> Ctrl+[, Ctrl+S|  
 
-###  <a name="bkmk_team"></a>Zespołu
+###  <a name="bkmk_team"></a> Zespołu
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -325,7 +327,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> lub<br /><br /> Ctrl+0, O|  
 |Team.TeamExplorerSearch|Ctrl+'|  
 
-###  <a name="bkmk_TFcontext"></a>Menu kontekstowe programu Team Foundation
+###  <a name="bkmk_TFcontext"></a> Menu kontekstowe programu Team Foundation
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -340,14 +342,14 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> lub<br /><br /> Ctrl+0, A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> lub<br /><br /> Ctrl+0, W|  
 
-###  <a name="bkmk_test"></a>Test
+###  <a name="bkmk_test"></a> Test
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
 |Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
 
-###  <a name="bkmk_testexplorerGLOBAL"></a>Eksplorator testów
+###  <a name="bkmk_testexplorerGLOBAL"></a> Eksplorator testów
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -357,7 +359,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TestExplorer.RunAllTests|Ctrl+R, A|  
 |TestExplorer.RunAllTestsInContext|Ctrl+R, T|  
 
-###  <a name="bkmk_tools"></a>Narzędzia  
+###  <a name="bkmk_tools"></a> Narzędzia  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -366,7 +368,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Tools.ForceGC|Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12|  
 |Tools.GoToCommandLine|Ctrl+/|  
 
-###  <a name="bkmk_view"></a>Widok  
+###  <a name="bkmk_view"></a> Widok  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -415,7 +417,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |View.ZoomIn|Ctrl+Shift+.|  
 |View.ZoomOut|Ctrl+Shift+,|  
 
-###  <a name="bkmk_window"></a>Okno  
+###  <a name="bkmk_window"></a> okno  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -446,14 +448,14 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Window.SolutionExplorerSearch|Ctrl+;|  
 |Window.WindowSearch|Alt+`|  
 
-###  <a name="bkmk_windowsazure"></a>Azure  
+###  <a name="bkmk_windowsazure"></a> Azure  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *, Ctrl+R|  
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *, Ctrl+D|  
 
-##  <a name="bkmk_ADONET"></a>Projektant modelu danych jednostki ADO.NET  
+##  <a name="bkmk_ADONET"></a> Projektant modelu danych jednostki ADO.NET  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -468,7 +470,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |View.EntityDataModelBrowser|Ctrl+1|  
 |View.EntityDataModelMappingDetails|Ctrl+2|  
 
-##  <a name="bkmk_classDiagram"></a>Diagram klas  
+##  <a name="bkmk_classDiagram"></a> Diagram klas  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -480,7 +482,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Edit.RemovefromDiagram|Usuwanie|  
 |View.ViewCode|Enter|  
 
-##  <a name="bkmk_codedUItest"></a>Edytor testu kodowanego interfejsu użytkownika  
+##  <a name="bkmk_codedUItest"></a> Edytor testu kodowanego interfejsu użytkownika  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -491,14 +493,14 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|  
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|  
 
-##  <a name="bkmk_dataset"></a>Edytor zestawu danych  
+##  <a name="bkmk_dataset"></a> Edytor zestawu danych  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |OtherContextMenus.ColumnContext.InsertColumn|Insert|  
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|  
 
-##  <a name="bkmk_diff"></a>Różnica podglądu  
+##  <a name="bkmk_diff"></a> Różnica podglądu  
 
 |||  
 |-|-|  
@@ -515,7 +517,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|  
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|  
 
-##  <a name="bkmk_DOM"></a>Eksplorator modelu DOM  
+##  <a name="bkmk_DOM"></a> Eksplorator modelu DOM  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -523,13 +525,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |DOMExplorer.SelectElement|Ctrl+B|  
 |DOMExplorer.ShowLayout|Ctrl+Shift+I|  
 
-##  <a name="bkmk_FSharp"></a>Interakcyjne F #  
+##  <a name="bkmk_FSharp"></a> Interakcyjne F #  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|  
 
-##  <a name="bkmk_graphDoc"></a>Edytor dokumentu wykresu  
+##  <a name="bkmk_graphDoc"></a> Edytor dokumentu wykresu  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -541,7 +543,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Usuwanie|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|  
 
-##  <a name="bkmk_graphicsDebugger"></a>Diagnostyki grafiki  
+##  <a name="bkmk_graphicsDebugger"></a> Diagnostyki grafiki  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -555,13 +557,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Graphics.ZoomIn|Shift+Alt+=|  
 |Graphics.ZoomOut|Shift+Alt+-|  
 
-##  <a name="bkmk_HTMLeditor"></a>Edytor HTML  
+##  <a name="bkmk_HTMLeditor"></a> Edytor HTML  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|  
 
-##  <a name="bkmk_HTMLeditorDesign"></a>Widok projektu edytora HTML  
+##  <a name="bkmk_HTMLeditorDesign"></a> Widok projektu edytora HTML  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -584,7 +586,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |View.ViewMarkup|Shift+F7|  
 |Window.PreviousTab|Ctrl+PgUp|  
 
-##  <a name="bkmk_HTMLeditorSource"></a>Widok kodu edytora HTML  
+##  <a name="bkmk_HTMLeditorSource"></a> Widok kodu edytora HTML  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -594,13 +596,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |View.ViewDesigner|Shift+F7|  
 |Window.PreviousTab|Ctrl+PgUp|  
 
-##  <a name="bkmk_layerDiagram"></a>Diagram warstwowy  
+##  <a name="bkmk_layerDiagram"></a> Diagram warstwowy  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |Edit.Delete|Shift+Delete|  
 
-##  <a name="bkmk_managedResources"></a>Edytor zarządzanych zasobów  
+##  <a name="bkmk_managedResources"></a> Edytor zarządzanych zasobów  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -615,7 +617,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Resources.Other|Ctrl+6|  
 |Resources.Strings|Ctrl+1|  
 
-##  <a name="bkmk_MergeEditor"></a>Scal okna edytora  
+##  <a name="bkmk_MergeEditor"></a> Scal okna edytora  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -623,7 +625,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|  
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|  
 
-##  <a name="bkmk_SchemaCompare"></a>Microsoft SQL Server Data Tools, porównaj schematu  
+##  <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, porównaj schematu  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -634,7 +636,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |SQL.SSDTSchemaCompareStop|Alt+Break|  
 |SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|  
 
-##  <a name="bkmk_TableDesigner"></a>Microsoft SQL Server Data Tools projektanta tabel  
+##  <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools projektanta tabel  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -645,7 +647,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |SQL.Rename|F2<br /><br /> lub<br /><br /> Ctrl+R, R<br /><br /> lub<br /><br /> Ctrl+R, Ctrl+R|  
 |ViewFileInScriptPanel|Shift+Alt+PgDn|  
 
-##  <a name="bkmk_TSQLeditor"></a>Microsoft SQL Server Data Tools, Edytor T-SQL  
+##  <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, Edytor T-SQL  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -666,7 +668,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TSqlEditorCloneQuery|Ctrl+Alt+N|  
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|  
 
-##  <a name="bkmk_linkfix"></a>Microsoft SQL Server Data Tools, Edytor PDW T-SQL  
+##  <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, Edytor PDW T-SQL  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -681,13 +683,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TSqlEditorCloneQuery|Ctrl+Alt+N|  
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|  
 
-##  <a name="bkmk_PageInspector"></a>Narzędzie Page Inspector  
+##  <a name="bkmk_PageInspector"></a> Narzędzie Page Inspector  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |PageInspector.Minimize|F12|  
 
-##  <a name="bkmk_QueryDesigner"></a>Projektant zapytań  
+##  <a name="bkmk_QueryDesigner"></a> Projektant zapytań  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -700,7 +702,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |QueryDesigner.Results|Ctrl+4|  
 |QueryDesigner.SQL|Ctrl+3|  
 
-##  <a name="bkmk_QueryResults"></a>Wyniki zapytania  
+##  <a name="bkmk_QueryResults"></a> Wyniki zapytania  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -708,7 +710,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |SQL.QueryResultsRefresh|Shift+Alt+R|  
 |SQL.QueryResultsStop|Alt+Break|  
 
-##  <a name="bkmk_ReportDesigner"></a>Projektant raportu  
+##  <a name="bkmk_ReportDesigner"></a> Projektant raportu  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -734,14 +736,14 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Edit.TabLeft|Shift+Tab|  
 |View.ReportData|Ctrl+Alt+D|  
 
-##  <a name="bkmk_SequenceDiagram"></a>Diagram sekwencji  
+##  <a name="bkmk_SequenceDiagram"></a> Diagram sekwencji  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|  
 |Edit.Delete|Shift+Del|  
 
-##  <a name="bkmk_SettingsDesigner"></a>Ustawienia projektanta  
+##  <a name="bkmk_SettingsDesigner"></a> Ustawienia projektanta  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -750,13 +752,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Edit.SelectionCancel|Esc|  
 |View.ViewCode|F7|  
 
-##  <a name="bkmk_SolutionExplorer"></a>Eksplorator rozwiązań  
+##  <a name="bkmk_SolutionExplorer"></a> Eksplorator rozwiązań  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|  
 
-##  <a name="bkmk_TeamExplorer"></a>Program Team Explorer  
+##  <a name="bkmk_TeamExplorer"></a> Team Explorer  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
@@ -781,19 +783,19 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|  
 |View.Refresh|F5|  
 
-##  <a name="bkmk_TFBuild"></a>Edytor szczegółów programu Team Foundation Build  
+##  <a name="bkmk_TFBuild"></a> Edytor szczegółów programu Team Foundation Build  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |View.Refresh|F5|  
 
-##  <a name="bkmk_TestExplorer"></a>Eksplorator testów  
+##  <a name="bkmk_TestExplorer"></a> Eksplorator testów  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |TestExplorer.OpenTest|F12|  
 
-##  <a name="bkmk_TextEditor"></a>Edytor tekstu  
+##  <a name="bkmk_TextEditor"></a> Edytor tekstu  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -903,38 +905,38 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
 
-##  <a name="bkmk_UMLactivityDiagram"></a>Diagram działania UML  
+##  <a name="bkmk_UMLactivityDiagram"></a> Diagram działania UML  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |Edit.Delete|Shift+Del|  
 
-##  <a name="bkmk_UMLclassDiagram"></a>Diagram klas UML  
+##  <a name="bkmk_UMLclassDiagram"></a> Diagram klas UML  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Shift+Del|  
 
-##  <a name="bkmk_UMLcomponentDiagram"></a>Diagram składnika UML  
+##  <a name="bkmk_UMLcomponentDiagram"></a> Diagram składnika UML  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Shift+Del|  
 
-##  <a name="bkmk_UMLusecaseDiagram"></a>Diagram przypadku użycia UML  
+##  <a name="bkmk_UMLusecaseDiagram"></a> Diagram przypadku użycia UML  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Shift+Del|  
 
-##  <a name="bkmk_vcaccelerator"></a>Edytor klawiszy skrótów VC  
+##  <a name="bkmk_vcaccelerator"></a> Edytor klawiszy skrótów VC  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |Edit.NewAccelerator|Insert|  
 |Edit.NextKeyTyped|Ctrl+W|  
 
-##  <a name="bkmk_vcdialogeditor"></a>Edytor okien dialogowych VC  
+##  <a name="bkmk_vcdialogeditor"></a> Edytor okien dialogowych VC  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -968,7 +970,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Format.TestDialog|Ctrl+T|  
 |Format.ToggleGuides|Ctrl+G|  
 
-##  <a name="bkmk_vcimageeditor"></a>Edytor obrazów VC  
+##  <a name="bkmk_vcimageeditor"></a> Edytor obrazów VC  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1010,13 +1012,13 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Image.ZoomIn|Ctrl+Shift+.<br /><br /> lub<br /><br /> Ctrl+Strzałka w górę|  
 |Image.ZoomOut|Ctrl+Shift+,<br /><br /> lub<br /><br /> Ctrl+strzałka w dół|  
 
-##  <a name="bkmk_vcstringeditor"></a>Edytor ciągów VC  
+##  <a name="bkmk_vcstringeditor"></a> Edytor ciągów VC  
 
 |Polecenie|Skrót klawiaturowy|  
 |-------------|-----------------------|  
 |Edit.NewString|Insert|  
 
-##  <a name="bkmk_viewDesigner"></a>Projektant widoków  
+##  <a name="bkmk_viewDesigner"></a> Projektant widoków  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1035,7 +1037,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |-------------|-----------------------|  
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|  
 
-##  <a name="bkmk_wfdesigner"></a>Projektant formularzy systemu Windows  
+##  <a name="bkmk_wfdesigner"></a> Projektant formularzy systemu Windows  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1064,7 +1066,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Edit.SizeControlUp|Ctrl+Shift+Strzałka w górę|  
 |Edit.TabLeft|Shift+Tab|  
 
-##  <a name="bkmk_workItemEditor"></a>Element roboczy edytora  
+##  <a name="bkmk_workItemEditor"></a> Element roboczy edytora  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1072,7 +1074,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Edit.RefreshWorkItem|F5|  
 |Team.NewLinkedWorkItem|Shift+Alt+L|  
 
-##  <a name="bkmk_WIqueryview"></a>Widok zapytania o elementy robocze  
+##  <a name="bkmk_WIqueryview"></a> Widok zapytania o elementy robocze  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1083,7 +1085,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Team.Refresh|F5|  
 |Window.Toggle|Shift+Alt+V|  
 
-##  <a name="bkmk_WIresultsview"></a>Widok wyników elementu roboczego  
+##  <a name="bkmk_WIresultsview"></a> Widok wyników elementu roboczego  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1096,7 +1098,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Team.Refresh|F5|  
 |Window.Toggle|Shift+Alt+V|  
 
-##  <a name="bkmk_workflowdesigner"></a>Projektant przepływów pracy  
+##  <a name="bkmk_workflowdesigner"></a> Projektant przepływów pracy  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1124,7 +1126,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|  
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|  
 
-##  <a name="bkmk_xamluidesigner"></a>Projektant XAML interfejsu użytkownika  
+##  <a name="bkmk_xamluidesigner"></a> Projektant XAML interfejsu użytkownika  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
@@ -1132,6 +1134,7 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|Ctrl+Alt+=|  
 |Design.ZoomOut|Ctrl+Alt+-|  
+|Opcje projektanta|Ctrl+Shift+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|Ctrl+Shift+R|  
 |Uruchamianie kodu projektu|Ctrl+F9|  
@@ -1145,14 +1148,14 @@ Każda sekcja w poniższej tabeli zawiera polecenia ze skrótami klawiaturowymi 
 |View.EdgeRightMoveRight|Ctrl+Shift+Alt+.|  
 |View.ShowPropertyMarkerMenu|Ctrl+Spacja|  
 
-##  <a name="bkmk_xmlTextEditor"></a>Edytor XML (tekst)  
+##  <a name="bkmk_xmlTextEditor"></a> Edytor XML (tekst)  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  
 |XML.StartXSLTDebugging|Alt+F5|  
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|  
 
-##  <a name="bkmk_xmlSchemaDesigner"></a>Projektant schematu XML  
+##  <a name="bkmk_xmlSchemaDesigner"></a> Projektant schematu XML  
 
 |Polecenia|Skróty klawiaturowe|  
 |--------------|------------------------|  

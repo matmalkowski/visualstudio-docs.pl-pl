@@ -1,11 +1,11 @@
 ---
-title: "Wskazówki: Pierwszy WPF pulpitu aplikację | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Pierwszy WPF pulpitu aplikację | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Wskazówki: Pierwszy WPF pulpitu aplikację
 
@@ -58,7 +58,7 @@ W tej sekcji utworzysz infrastruktury aplikacji, które zawiera projekt i okna g
 
      A **NavigationWindow** nie może zawierać inne elementy interfejsu użytkownika, takich jak **siatki**.
 
-1. W **właściwości** okna, rozwiń węzeł **typowe** węzła kategorii i wybierz polecenie **tytuł** właściwości, a następnie wprowadź `ExpenseIt` i naciśnij klawisz **Enter**  klucza.
+1. W **właściwości** okna, rozwiń węzeł **typowe** węzła kategorii i wybierz polecenie **tytuł** właściwości, a następnie wprowadź `ExpenseIt` i naciśnij klawisz **Enter** klucza.
 
      Zwróć uwagę, że **tytuł** atrybut w XAML okna zmiany aby pasowała do nowej wartości. Można zmodyfikować właściwości XAML w oknie XAML lub **właściwości** okna, a zmiany są synchronizowane.
 
@@ -136,7 +136,7 @@ W tej sekcji dodasz dwie strony i obraz do aplikacji.
     </Page>
     ```
 
-    W języku Visual Basic, pierwszy wiersz zostanie przez nieco inne:
+    W języku Visual Basic pierwszego wiersza mogą być nieco inne:
 
     ```xaml
     <Page x:Class="ExpenseItHome"
@@ -160,7 +160,7 @@ W tej sekcji dodasz dwie strony i obraz do aplikacji.
     </NavigationWindow>
     ```
 
-    W języku Visual Basic, pierwszy wiersz zostanie przez nieco inne:
+    W języku Visual Basic pierwszego wiersza mogą być nieco inne:
 
     ```xaml
     <NavigationWindow x:Class="MainWindow"
@@ -320,7 +320,7 @@ Układ zapewnia uporządkowanej sposób umieszczania elementów, a także zarzą
 
     1. Znajdź wiersz `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Zmień `Grid.Column="0"` do `Grid.Column="1"` i zmienić `Grid.Row="2"` do `Grid.Row="3"`.
 
-1. Tuż przed `<Border` element Dodaj następujący kod XAML, aby wyświetlić tytuł:
+1. Tuż przed `<Border` elementu, Dodaj następujący kod XAML, aby wyświetlić tytuł:
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
@@ -573,7 +573,7 @@ Układ zapewnia uporządkowanej sposób umieszczania elementów, a także zarzą
 
     -   `listHeaderTextStyle`: Do formatowania nagłówków **etykiety**.
 
-    -   `buttonStyle`: Do formatowania `Button` na **ExpenseItHome.xaml** pppage.
+    -   `buttonStyle`: Do formatowania `Button` na **ExpenseItHome.xaml** strony.
 
 1. Otwórz **ExpenseItHome.xaml** i Zastąp wszystko pomiędzy `<Grid>` i `</Grid>` elementy o następujących XAML:
 
@@ -674,7 +674,7 @@ Układ zapewnia uporządkowanej sposób umieszczania elementów, a także zarzą
 
 ### <a name="to-bind-data-to-a-control"></a>Wiązanie danych do formantu
 
-1. Otwórz **ExpenseItHome.xaml** i wybierz polecenie `<Grid>` elementu...
+1. Otwórz **ExpenseItHome.xaml** i wybierz polecenie `<Grid>` elementu.
 
 1. Dodaj następujący kod XAML:
 

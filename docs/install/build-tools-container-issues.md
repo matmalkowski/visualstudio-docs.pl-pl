@@ -1,22 +1,24 @@
 ---
-title: "Znane problemy dotyczące kontenerów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Znane problemy dotyczące kontenerów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6edcc59a2d726fbd76fee86b750f21dc468b727e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94b3acaeffc709978cc9c49645fd7e788abef177
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
 
@@ -34,7 +36,7 @@ Następujące znane problemy występować po zainstalowaniu programu Visual Stud
 
 ## <a name="build-tools-container"></a>Kontener narzędzia kompilacji
 
-Następujące znane problemy mogą wystąpić, jeśli używasz kontenera Build Tools. Aby sprawdzić, czy zostały rozwiązane problemy lub jeśli ma innych znanych problemach, odwiedź stronę https://developercommunity.visualstudio.com.
+Następujące znane problemy mogą wystąpić, jeśli używasz kontenera Build Tools. Zobacz, czy zostały rozwiązane problemy lub jeśli istnieją inne znanych problemów, odwiedź witrynę https://developercommunity.visualstudio.com.
 
 * Funkcja IntelliTrace nie może działać w [Niektóre scenariusze](https://github.com/Microsoft/vstest/issues/940) w kontenerze.
 

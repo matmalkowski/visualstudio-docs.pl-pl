@@ -1,23 +1,23 @@
 ---
 title: Visual Studio 2017 numery kompilacji i daty wydania | Dokumentacja firmy Microsoft
-description: "Lista wydanych wersji i numerów kompilacji dla programu Visual Studio 2017 r, sortować według daty."
-keywords: 
+description: Lista wydanych wersji i numerów kompilacji dla programu Visual Studio 2017 r, sortować według daty.
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/19/2018
+ms.date: 03/21/2018
 ms.topic: article
-helpviewer_keywords: 
+helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
-ms.service: 
+ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
-ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
+ms.openlocfilehash: a3c7f0c1ea828cb1d63875c1646d33d7b70612f6
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 numery kompilacji i daty wydania
 
@@ -25,6 +25,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 Podgląd 2.0 | Wersja zapoznawcza | 21 marca 2018 | 15.7.27520.0 |
 | 15.6.3 | Wydanie | 19 marca 2018 | 15.6.27428.2011 |
 | 15.7.0 Podgląd 1.0 | Wersja zapoznawcza | 13 marca 2018 | 15.7.27512.0 |
 | 15.6.2 | Wydanie | 13 marca 2018 | 15.6.27428.2005 |
@@ -124,7 +125,7 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
 * Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Przewodnik administratora w usłudze Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.](use-command-line-parameters-to-install-visual-studio.md)

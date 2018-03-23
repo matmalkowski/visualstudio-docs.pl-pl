@@ -1,12 +1,13 @@
 ---
-title: "Usunięcie programu Visual Studio 2017 | Dokumentacja firmy Microsoft"
-description: "Dowiedz się, jak usunąć Visual Studio, krok po kroku."
-ms.custom: 
+title: Usunięcie programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+description: Dowiedz się, jak usunąć Visual Studio, krok po kroku.
+ms.custom: ''
 ms.date: 09/12/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - uninstall
@@ -19,14 +20,15 @@ f1_keywords:
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
-ms.author: heaths
-manager: erickn
-ms.workload: multiple
-ms.openlocfilehash: a08a24be4f3f9e915a93c9beac7cf5e5c28eb7ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.author: tglee
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 409a1c83f0acbb32848a46e9df2f7eb2b3750e24
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remove-visual-studio"></a>Usuwanie programu Visual Studio
 
@@ -62,6 +64,6 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
-* [Aktualizacja programu Visual Studio 2017 r.](update-visual-studio.md)
-* [Modyfikowanie Visual Studio 2017 r.](modify-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
+* [Modify Visual Studio 2017](modify-visual-studio.md)
 * [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)

@@ -1,23 +1,24 @@
 ---
-title: "Porady: odblokować program Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: odblokować program Visual Studio | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 07/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Porady: odblokować programu Visual Studio
 
@@ -69,9 +70,8 @@ Jeśli nie ponownie wprowadzić swoje poświadczenia, token zaczyna Przejdź sta
 
 ### <a name="update-expired-licenses"></a>Aktualizacja wygasłego licencji
 
- Jeśli subskrypcja utraciła ważność całkowicie i nie ma praw dostępu do programu Visual Studio, możesz odnowić subskrypcję, lub dodać innego konta, które ma subskrypcję. Aby uzyskać więcej informacji o licencji są używane, przejdź do **pliku**, **ustawienia konta** i przyjrzyj się informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innego konta, należy dodać to konto do **wszystkich kont** listy po lewej stronie okna dialogowego, wybierając **Dodaj konto...**  łącza.
+ Jeśli subskrypcja utraciła ważność całkowicie i nie ma praw dostępu do programu Visual Studio, możesz odnowić subskrypcję, lub dodać innego konta, które ma subskrypcję. Aby uzyskać więcej informacji o licencji są używane, przejdź do **pliku**, **ustawienia konta** i przyjrzyj się informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innego konta, należy dodać to konto do **wszystkich kont** listy po lewej stronie okna dialogowego, wybierając **Dodaj konto...** łącza.
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)
- 

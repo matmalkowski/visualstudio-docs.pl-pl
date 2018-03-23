@@ -1,22 +1,22 @@
 ---
-title: "Praca z wieloma kontami użytkowników | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Praca z wieloma kontami użytkowników | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology: vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 535b01f8f0ef5840543013509d40b4b8393fa7f6
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -24,7 +24,7 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego, można dodać je wszy
 
 Po dodaniu wiele kont na jednej maszynie zestawu kont będzie mobilny Tobie, jeśli logujesz się do programu Visual Studio na innym komputerze. Należy pamiętać, że chociaż nazwy kont są przekazywane, poświadczenia nie jest. W związku z tym pojawi się monit o podanie poświadczeń dla tych kont innych próba użycia zasobów na nowym komputerze po raz pierwszy.
 
-W tym przewodniku pokazano, jak dodać wiele kont dla programu Visual Studio i jak sprawdzić, czy zasoby dostępne z tych kont są uwzględniane w takich jak umieszcza **dodać podłączonej usługi** okna dialogowego, **Eksploratora serwera** , i **Team Explorer**.
+W tym przewodniku pokazano, jak dodać wiele kont dla programu Visual Studio i jak sprawdzić, czy zasoby dostępne z tych kont są uwzględniane w takich jak umieszcza **dodać podłączonej usługi** okna dialogowego, **Eksploratora serwera**, i **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
 
@@ -51,9 +51,9 @@ Przy następnym otwarciu Eksploratora serwera, wyświetlane są zasoby dla tej s
 1. Wybierz węzeł projektu w Eksploratorze rozwiązań, a następnie wybierz **Dodaj, połączone usługi**. **Dodać podłączonej usługi** kreatora pojawi się i zawiera listę usług konta platformy Azure, która jest skojarzona z identyfikatorem logowania programu Visual Studio Należy pamiętać, że nie trzeba oddzielnie logowanie do platformy Azure. Jednak należy zalogować się do innych kont podczas pierwszej próby dostępu ich zasobów na danym komputerze.
 
     > [!WARNING]
-    > Jeśli po raz pierwszy tworzysz aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio na określonym komputerze, pojawi się monit Aby włączyć, przechodząc do Twojego urządzenia pod kątem trybu programowanie **ustawienia &#124;  Aktualizacje i zabezpieczeń &#124; Dla deweloperów** na tym komputerze. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development).
+    > Jeśli po raz pierwszy tworzysz aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio na określonym komputerze, pojawi się monit Aby włączyć, przechodząc do Twojego urządzenia pod kątem trybu programowanie **ustawienia &#124; aktualizacji i zabezpieczeń &#124; dla deweloperów** na komputer. Aby uzyskać więcej informacji, zobacz [Włącz swoje urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development).
 
-### <a name="access_azure"></a>Dostęp do usługi Azure Active Directory w projekcie sieci Web
+### <a name="access_azure"></a> Dostęp do usługi Azure Active Directory w projekcie sieci Web
 
 Usługi Azure AD umożliwia obsługę użytkowników końcowych jednej operacji logowania w aplikacji sieci web platformy ASP.NET MVC lub AD uwierzytelniania w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelnienia konta użytkownika; użytkowników, którzy mają dostęp do Twojej domeny usługi Active Directory umożliwia ich istniejących kont usługi Azure AD connect do aplikacji sieci web. Aplikacje pakietu Office 365 można również użyć uwierzytelniania domeny. Aby wyświetlić to działanie, tworzenie aplikacji sieci web (**pliku nowego projektu C#, chmury, aplikacja sieci Web ASP.NET**). W oknie dialogowym Nowy projekt ASP.NET wybierz **Zmień uwierzytelnianie**. Kreator uwierzytelniania zostanie wyświetlona i umożliwia wybranie jakiego rodzaju uwierzytelniania do użycia w aplikacji.
 

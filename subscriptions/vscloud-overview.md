@@ -1,27 +1,82 @@
 ---
-title: "Kupowanie subskrypcji chmury programu Visual Studio — omówienie"
+title: Jak kupić subskrypcję programu Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 1/17/2018
+Ms.date: 3/2/2018
 Ms.topic: Get-Started-Article
-Description: Learn about buying Visual Studio Cloud subscriptions through Visual Studio Marketplace
+Description: Rent Visual Studio Professional or Visual Studio Enterprise on a month-to-month or annual basis, with no long-term contract.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: dcc52779760b692f4759f9cd77cba5e702749c84
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 32b85d7d28dccf8a862848e692974561068186a9
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="buying-visual-studio-cloud-subscriptions---overview"></a>Kupowanie subskrypcji chmury programu Visual Studio — omówienie
+# <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupować subskrypcje w chmurze programu Visual Studio Professional i Visual Studio Enterprise
 
-Z naszych subskrypcje w chmurze można wynajmować Visual Studio, VSTS i korzyści subskrybenta, które wymagają bez długoterminowej umowy. Rozliczeń odbywa się za pośrednictwem subskrypcji platformy Microsoft Azure, obsługi płatności kartą kredytową, zakupy za pośrednictwem umowy Enterprise Agreement kontraktu *, i [Cloud Solution Provider](https://www.microsoft.com/solution-providers/search) partnerów. Jeśli nie masz subskrypcji platformy Azure, ale bez obaw — bezpłatnie do skonfigurowania i można to zrobić, gdy wprowadzasz pierwszego zakupu.
+Można również kupić [subskrypcji Visual Studio Professional i Visual Studio Enterprise](https://www.visualstudio.com/subscriptions/) z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Są to zwany subskrypcje w chmurze.
 
-Porównanie chmury [korzyści z subskrypcji i cenach](https://www.visualstudio.com/vs/pricing/).
+[Porównanie korzyści subskrypcji chmury i cen](https://www.visualstudio.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
-Przed zakupem, wykonaj następujące kroki, aby skonfigurował • pomyślne transakcji, aby rozliczyć swoje zakupy, będziesz potrzebować [subskrypcji platformy Azure](https://azure.microsoft.com/pricing/purchase-options/).  Możesz [Zarejestruj](https://portal.azure.com/) przed zakupem lub po wprowadzeniu pierwszego zakupu w witrynie Marketplace programu Visual Studio.  
 
-• Aby zarejestrować dla subskrypcji platformy Azure i dostawcy z portalu Marketplace programu Visual Studio, konieczne będzie [osobistego konta Microsoft](https://www.microsoft.com/account) lub [konto służbowe](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) Jeśli kupujesz dla organizacji, a ich Zarządzanie tożsamościami w usłudze Azure Active Directory (Azure AD).
+*   Aby rozliczyć swoje zakupy, konieczne będzie [subskrypcji platformy Azure](https://azure.microsoft.com/pricing/purchase-options/).
+Możesz [Zarejestruj](https://portal.azure.com) przed pierwszym zakupu lub podczas pierwszego zakupu w witrynie Marketplace programu Visual Studio.
+
+## <a name="how-to-buy-cloud-subscriptions"></a>Jak kupić subskrypcje w chmurze
+
+0.  Zaloguj się do [programu Visual Studio Marketplace > Subskrypcje](https://marketplace.visualstudio.com/subscriptions).
+
+0.  Wybierz subskrypcję, którą chcesz kupić, na przykład:
+
+    <img alt="Buy a Visual Studio subscription" src="_img/buy-vs-subscriptions/buy-vs-sub-start.png" style="border: 1px solid #CCCCCC" />
+
+0.  Wybierz subskrypcję platformy Azure na potrzeby rozliczeń. Można utworzyć nową subskrypcję platformy Azure, jeśli nie masz.
+
+    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+
+0.  Wybierz liczbę subskrypcji kupić.
+
+    <img alt="Select number of subscriptions" src="_img/buy-vs-subscriptions/buy-vs-sub-users.png" style="border: 1px solid #CCCCCC" />
+
+    Jeśli nie chcesz subskrypcje przypisane do użytkownika, wyczyść **Przypisz do mnie, ta subskrypcja**.
+
+0.  Potwierdź i Zakończ proces zakupu. Jeśli subskrypcja jest przypisany do siebie, użytkownik może odwiedzić [portal subskrybenta programu Visual Studio](https://my.visualstudio.com) do rozpoczęcia pobierania oprogramowania i przy użyciu innych korzyści dla subskrybentów.
+
+    <img alt="Finish purchase successfully" src="_img/buy-vs-subscriptions/buy-vs-sub-success.png" style="border: 1px solid #CCCCCC" />
+
+    <img alt="Go to Visual Studio subscriber portal" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+
+    Jeśli zakupiono więcej niż jedną subskrypcję, przejdź do [portalu administracyjnego subskrypcji w usłudze Visual Studio](https://manage.visualstudio.com/) można przypisać subskrypcji do innych użytkowników.
+
+    <img alt="Assign subscriptions to others" src="_img/buy-vs-subscriptions/buy-vs-sub-success-many.png" style="border: 1px solid #CCCCCC" />
+
+    <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
+
+<a name="manage-subscriptions"></a>
+##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Anuluj odnowienia subskrypcji chmury, które zostały zakupione
+
+
+*   Aby zmienić liczbę zakupionych subskrypcji:
+
+    <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
+
+*   Aby anulować te subskrypcje, Zmniejsz liczbę subskrypcji na wartość zero (0).
+Nie będą one odnowić na początku następnym okresie rozliczeniowym (pierwszy następnego miesiąca dla miesięczne subskrypcje w chmurze; 12 miesięcy później Roczne subskrypcje w chmurze).
+
+## <a name="buy-cloud-subscriptions-now"></a>Kup teraz subskrypcje w chmurze
+
+* [Visual co miesiąc Studio Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+* [Visual Studio Professional annual](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
+* [Visual co miesiąc Studio Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
+* [Visual Studio Enterprise annual](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+
+## <a name="related-resources"></a>Zasoby pokrewne
+
+* [Visual Studio subskrypcje administracji portalu](https://manage.visualstudio.com/)
+* [Obsługa subskrypcji w usłudze Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Visual Studio subskrypcję chmury rozliczeń — często zadawane pytania](vscloud-billing-faq.md)
+* [Visual Studio subskrypcję chmury zakupu dla dostawców usług kryptograficznych](vscloud-csp.md)
