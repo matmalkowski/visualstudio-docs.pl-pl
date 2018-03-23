@@ -1,8 +1,9 @@
-# [Subskrypcje programu Visual Studio](index.md) 
+# [Subskrypcje programu Visual Studio](index.md)
 ## Środowiska subskrybenta
 ### [Korzystanie z portalu dla subskrybentów](using-the-subscriber-portal.md)
 #### [Aktywacja subskrypcji detalicznych](activate-store-subscriptions.md)
 #### [Logowanie](signing-in.md)
+#### [Alternatywne tożsamości](vs-alternate-identity.md)
 ##### [Logowanie się przy użyciu aliasów](aliasing.md)
 #### [Zarządzanie subskrypcjami](manage-vs-subscriptions.md)
 ### [Pobieranie oprogramowania](subscriber-downloads.md)
@@ -14,9 +15,9 @@
 ### [Korzyści dla subskrybenta](subscriber-benefits.md)
 ## Używanie korzyści dla subskrybenta
 ### Narzędzia
-#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio IDE ](vs-ide-benefit.md)
 #### [Visual Studio Team Services](vs-vsts.md)
-#### [Środki na korzystanie z platformy Azure](vs-azure.md) 
+#### [Środki na korzystanie z platformy Azure](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
@@ -61,15 +62,17 @@
 #### [Wygasłe subskrypcje](handle-expired-license.md)
 #### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ## Uzyskiwanie subskrypcji programu Visual Studio
-### [Porównanie subskrypcji](compare-subscriptions.md)
+### [Porównanie opcji subskrypcji](https://www.visualstudio.com/vs/pricing)
 ### Kupowanie subskrypcji chmury
 #### [Omówienie](vscloud-overview.md)
-#### [Pierwszy zakup](vscloud-first-purchase.md)
-#### [Odnowienia](vscloud-renewals.md)
-#### [Dodatkowy zakup](vscloud-buy-more.md)
-#### [Anulowanie](vscloud-cancel.md)
-## Resources
+#### [Często zadawane pytania dotyczące rozliczeń](vscloud-billing-faq.md)
+#### [Zakupy dla dostawców rozwiązań w chmurze](vscloud-csp.md)
+### Subskrypcje oferowane w ramach programów
+#### [Microsoft Partner Network](program-mpn.md)
+#### [Zarządzanie subskrypcjami dla programu MPN](manage-mpn-subscriptions.md)
+#### [Microsoft for Startups](program-startups.md)
+## Zasoby
 ### [Postanowienia licencyjne programu Visual Studio](vs-license-terms.md)
-### [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](http://aka.ms/vslicensing)
 ### [Porównanie opcji i cen subskrypcji](https://www.visualstudio.com/vs/pricing)
 ### [Porównanie funkcji programu Visual Studio IDE](https://www.visualstudio.com/vs/compare)
