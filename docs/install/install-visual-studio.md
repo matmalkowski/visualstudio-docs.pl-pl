@@ -1,14 +1,14 @@
 ---
 title: Zainstaluj program Visual Studio 2017 | Dokumentacja firmy Microsoft
-description: "Dowiedz się, jak zainstalować program Visual Studio, krok po kroku."
-ms.custom: 
+description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee1291e2ca304ed770eeee28c4996f68d2d07adb
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 Nowy sposób, aby zainstalować program Visual Studio — Zapraszamy! W naszym najnowsza wersja ułatwiliśmy ułatwia wybierania i instalowania tylko potrzebnych funkcji, które są potrzebne. Minimalnego miejsca zajmowanego przez program Visual Studio również już zostać zmniejszony, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
@@ -65,7 +65,7 @@ Następnie uruchom plik inicjujący tak, aby zainstalować Instalator programu V
 1.  Z sieci **pobiera** folderu, kliknij dwukrotnie plik inicjujący, który pasuje do lub jest podobny do jednego z następujących plików:
 
   * **vs_enterprise.exe** dla programu Visual Studio Enterprise
-  * **vs_professional.exe** dla programu Visual Studio Professional
+  * **vs_professional.exe** for Visual Studio Professional
   * **vs_community.exe** for Visual Studio Community  <br><br>
 
   Jeśli zostanie wyświetlone powiadomienie kontroli konta użytkownika, kliknij przycisk **tak**.
@@ -141,8 +141,8 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 * Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
-* [Aktualizacja programu Visual Studio 2017 r.](update-visual-studio.md)
-* [Modyfikowanie Visual Studio 2017 r.](modify-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
+* [Modify Visual Studio 2017](modify-visual-studio.md)
 * [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)
 * [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
 * [Przewodnik administratora 2017 r w usłudze Visual Studio](visual-studio-administrator-guide.md)
