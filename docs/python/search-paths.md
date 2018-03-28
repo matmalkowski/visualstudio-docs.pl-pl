@@ -1,25 +1,26 @@
 ---
-title: "Jak Python ścieżki wyszukiwania są stosowane w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Jak Python ścieżki wyszukiwania są stosowane | Dokumentacja firmy Microsoft
+description: Przegląd używaniu Python ścieżki wyszukiwania w środowiskach i projektów programu Visual Studio.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2135515859ea32c8d134ec6c5824195c554ee97e
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 9ebb5ac043253db76cc9613ac67e5d980d911bd3
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak Visual Studio używa języka Python, ścieżki wyszukiwania
 
@@ -29,7 +30,7 @@ Typowy Usage Python `PYTHONPATH` zmiennej środowiskowej (lub `IRONPYTHONPATH`, 
 1. Folder zawierający kod języka Python, który jest uruchomiony.
 1. "Moduł ścieżki wyszukiwania" jako zdefiniowanej przez zmienną środowiskową zastosowania. (Zobacz [ścieżki wyszukiwania modułu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) i [zmiennych środowiskowych](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) w podstawowej dokumentacji języka Python.)
 
-Visual Studio ignoruje zmiennej środowiskowej ścieżki wyszukiwania, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* ustawiono dla całego systemu i w związku z tym zgłasza niektóre kwestie, które nie mogą być odbierane automatycznie: moduły do którego istnieje odwołanie, przeznaczone dla języka Python 2.7 lub Python 3.3? Są one będą zastąpienie modułów standardowa biblioteka? Zna dewelopera tego zachowania, czy jest próba złośliwego przejęcie kontroli?
+Visual Studio ignoruje zmiennej środowiskowej ścieżki wyszukiwania, jednak nawet wtedy, gdy zmienna jest ustawiana dla całego systemu. Jest on ignorowany, w rzeczywistości, dokładnie *ponieważ* ustawiono dla całego systemu i w związku z tym zgłasza niektóre kwestie, które nie mogą być odbierane automatycznie: moduły do którego istnieje odwołanie, przeznaczone dla języka Python 2.7 lub 3,6 Python? Są one będą zastąpienie modułów standardowa biblioteka? Zna dewelopera tego zachowania, czy jest próba złośliwego przejęcie kontroli?
 
 Program Visual Studio udostępnia w związku z tym określenie ścieżki wyszukiwania bezpośrednio w środowiskach i projektów. Kod, który uruchamiania lub debugowania w programie Visual Studio odbiera ścieżki wyszukiwania w wartości `PYTHONPATH` (i inne zmienne równoważne). Dodanie ścieżki wyszukiwania, Visual Studio bada bibliotek w tych lokalizacjach i kompilacji IntelliSense baz danych w ramach je w razie potrzeby (Visual Studio 2017 wersji 15.5 i starszych; konstruowanie bazy danych może potrwać pewien czas w zależności od liczby bibliotek).
 

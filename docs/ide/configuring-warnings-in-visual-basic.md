@@ -1,32 +1,34 @@
 ---
-title: "Konfigurowanie ostrzeżeń w Visual Basic | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Konfigurowanie ostrzeżeń w Visual Basic | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic:
+# <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilatora zawiera zestaw ostrzeżenia dotyczące kodu, który może powodować błędy środowiska wykonawczego. Tych informacji umożliwia zapis czyszcząca, szybciej, lepiej kodu przy użyciu mniejszej liczby błędów. Na przykład kompilator spowoduje wygenerowanie ostrzeżenia, gdy użytkownik próbuje wywołać elementu członkowskiego zmiennej obiektu nieprzypisane zwrócone z funkcji bez ustawienia zwracanej wartości, lub wykonać `Try` bloku błędów w logice przechwytują wyjątki.  
   
- Czasami kompilator zapewnia dodatkowe logiki w imieniu użytkownika, dzięki czemu użytkownik może skupić się na wykonywanego zadania, a nie na przewidywanie możliwych błędów. W poprzednich wersjach [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `Option Strict` zostało użyte do ograniczania dodatkową logikę który [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zapewnia kompilatora. Konfigurowanie ostrzeżeń umożliwia ograniczenie tę logikę w sposób bardziej szczegółowego, na poziomie ostrzeżeń indywidualnych.  
+ Czasami kompilator zapewnia dodatkowe logiki w imieniu użytkownika, dzięki czemu użytkownik może skupić się na wykonywanego zadania, a nie na przewidywanie możliwych błędów. W poprzednich wersjach [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], **Option Strict** zostało użyte do ograniczania dodatkową logikę który [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zapewnia kompilatora. Konfigurowanie ostrzeżeń umożliwia ograniczenie tę logikę w sposób bardziej szczegółowego, na poziomie ostrzeżeń indywidualnych.  
   
  Można dostosować projekt i wyłączyć ostrzeżenia nie zapewnienie im dostępu do aplikacji, włączając inne ostrzeżenia błędy w. Ta strona wyjaśniono, jak włączyć ostrzeżeń indywidualnych i wyłączyć.  
   
@@ -68,62 +70,62 @@ ms.lasthandoff: 12/22/2017
 ### <a name="implicit-conversion-warning"></a>Ostrzeżenie niejawna konwersja  
  Generowane w przypadku wystąpienia niejawnej konwersji. Obejmują one niejawną konwersję z typu liczbowego wewnętrznej na ciąg przy użyciu `&` operatora. Domyślne dla nowych projektów jest wyłączona.  
   
- IDENTYFIKATOR: 42016  
+ ID: 42016  
   
-### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Rozpoznanie późnego wiązania wywołania metody i ostrzeżenia rozpoznawanie przeciążenia  
+### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Powiązany wywołania metody i ostrzeżenie rozpoznawanie przeciążenia  
  Wygenerowany dla wystąpień z późnym wiązaniem. Domyślne dla nowych projektów jest wyłączona.  
   
- IDENTYFIKATOR: 42017  
+ ID: 42017  
   
-### <a name="operands-of-type-object-warnings"></a>Argumenty operacji typu Object ostrzeżeń  
- Generowane, gdy argumentów operacji typu `Object` wystąpić, który spowodować błąd `Option Strict On`. Domyślne dla nowych projektów jest na.  
+### <a name="operands-of-type-object-warnings"></a>Argumenty operacji typu "Object" ostrzeżeń  
+ Generowane, gdy argumentów operacji typu `Object` wystąpić, który spowodować błąd **Option Strict On**. Domyślne dla nowych projektów jest na.  
   
  Identyfikator: 42018 i 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>Deklaracje wymagają ostrzeżenia klauzuli "As"  
- Generowane, gdy zmienna, funkcji lub Brak deklaracji właściwości `As` klauzuli czy utworzono błąd `Option Strict On`. Zmienne, które nie mają typu przypisanego są rozpatrywane typu `Object`. Domyślne dla nowych projektów jest na.  
+ Generowane, gdy zmienna, funkcji lub Brak deklaracji właściwości `As` klauzuli czy utworzono błąd **Option Strict On**. Zmienne, które nie mają typu przypisanego są rozpatrywane typu `Object`. Domyślne dla nowych projektów jest na.  
   
  Identyfikator: 42020 (deklaracji zmiennej), 42021 (deklaracji funkcji) i 42022 (deklaracji właściwości).  
   
-### <a name="possible-null-reference-exception-warnings"></a>Ostrzeżenia wyjątek możliwe odwołanie o wartości Null  
+### <a name="possible-null-reference-exception-warnings"></a>Ostrzeżenia wyjątek możliwe odwołanie o wartości null  
  Generowane, gdy zmienna jest używana, zanim została do niej przypisana wartość. Domyślne dla nowych projektów jest na.  
   
- IDENTYFIKATOR: 42104, 42030  
+ ID: 42104, 42030  
   
 ### <a name="unused-local-variable-warning"></a>Nieużywane ostrzeżenie zmiennej lokalnej  
  Generowane, gdy zmienna lokalna jest zadeklarowane, ale nigdy nie jest określone. Domyślnie jest na.  
   
- IDENTYFIKATOR: 42024  
+ ID: 42024  
   
-### <a name="access-of-shared-member-through-instance-variable-warning"></a>Dostęp do elementu członkowskiego udostępnionych za pomocą ostrzeżenie zmiennej wystąpienia  
+### <a name="access-of-shared-member-through-instance-variable-warning"></a>Dostęp do udostępnionego elementu członkowskiego za pomocą ostrzeżenie zmiennej wystąpienia  
  Generowane, gdy dostęp do udostępnionego elementu członkowskiego za pośrednictwem wystąpienia może mieć efekty uboczne lub podczas uzyskiwania dostępu do udostępnionego elementu członkowskiego za pośrednictwem zmiennej wystąpienia nie jest prawa strona wyrażenia lub jest przekazywany jako parametr. Domyślne dla nowych projektów jest na.  
   
- IDENTYFIKATOR: 42025  
+ ID: 42025  
   
-### <a name="recursive-operator-or-property-access-warnings"></a>Operator rekursywny lub ostrzeżenia dostępu właściwości  
+### <a name="recursive-operator-or-property-access-warnings"></a>Ostrzeżenia dostępu operatora lub właściwość cykliczne  
  Generowane, gdy treść procedury używa tego samego operator lub właściwości, który jest zdefiniowany w. Domyślne dla nowych projektów jest na.  
   
  Identyfikator: 42004 (operator), 42026 (właściwość)  
   
-### <a name="function-or-operator-without-return-value-warning"></a>Funkcja lub Operator bez wartości zwracanej ostrzeżenia  
+### <a name="function-or-operator-without-return-value-warning"></a>Funkcja lub operator bez zwracają wartość Ostrzeżenie  
  Generowane, gdy funkcja lub operator nie ma określonej wartości zwracanej. Dotyczy to również pominięcie `Set` do niejawnego zmiennej lokalnej o takiej samej nazwie jak funkcja. Domyślne dla nowych projektów jest na.  
   
  Identyfikator: 42105 (funkcja), 42016 (operator)  
   
-### <a name="overloads-modifier-used-in-a-module-warning"></a>Modyfikator przeciążenia używany w Module ostrzeżenie  
+### <a name="overloads-modifier-used-in-a-module-warning"></a>Modyfikator przeciążenia używany w module ostrzeżenie  
  Generowane, gdy `Overloads` jest używany w `Module`. Domyślne dla nowych projektów jest na.  
   
- IDENTYFIKATOR: 42028  
+ ID: 42028  
   
-### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Zduplikowany lub nakładający się ostrzeżenia bloki Catch  
+### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Zduplikowany lub nakładający się ostrzeżenia bloki catch  
  Generowane, gdy `Catch` bloku nigdy nie został osiągnięty z powodu jego relacji z innymi `Catch` bloków, które zostały zdefiniowane. Domyślne dla nowych projektów jest na.  
   
- IDENTYFIKATOR: 42029, 42031  
+ ID: 42029, 42031  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Error — typy](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try... CATCH... Finally — instrukcja](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [/ nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
+ [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Domyślnie wyłączone ostrzeżenia kompilatora](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+ [Są domyślnie wyłączone ostrzeżenia kompilatora](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

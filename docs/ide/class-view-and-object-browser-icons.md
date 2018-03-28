@@ -1,11 +1,12 @@
 ---
-title: "Widok klas i przeglądarka obiektów ― ikony | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok klas i przeglądarka obiektów ― ikony | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - icons, in Object Browser
@@ -19,14 +20,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="class-view-and-object-browser-icons"></a>Widok klas i Przeglądarka obiektów ― Ikony
+# <a name="class-view-and-object-browser-icons"></a>Widok klas i przeglądarka obiektów
 
 **Widok klasy** i **przeglądarki obiektów** wyświetlane ikony, które reprezentują jednostek kodu, na przykład, obszary nazw, klasy, funkcje i zmienne. W poniższej tabeli przedstawiono i opisano ikon.
 
@@ -52,11 +54,11 @@ Następujące ikony sygnałowe dotyczą wszystkich poprzednich ikon i wskazują 
 
 |Ikona|Opis|
 |----------|-----------------|  
-|\<Brak ikony sygnału >|Publiczna. Dostępne z tego składnika w dowolnym miejscu i z każdego składnika, który odwołuje się on.|  
+|\<Brak ikony sygnału >|Public. Dostępne z tego składnika w dowolnym miejscu i z każdego składnika, który odwołuje się on.|  
 |![Sygnał chronione Symbol](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Chronione. Dostępne z zawierające klasy lub typu lub tych pochodzi od klasy lub typu zawierającego.|  
 |![Symbol prywatnego sygnału](../ide/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|Prywatny. Dostępne tylko w zawierający klasy lub typu.|  
 |![Sygnał zapieczętowany Symbol](../ide/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Zapieczętowany.|  
-|![Przyjazne sygnału &#47; Symbol wewnętrzny](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend/wewnętrznego. Dostępne tylko z projektu.|  
+|![Signal Friend&#47;Internal Symbol](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend/wewnętrznego. Dostępne tylko z projektu.|  
 |![Sygnał ikonę strzałki](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Skrót. Skrót do obiektu.|
 
 > [!NOTE]

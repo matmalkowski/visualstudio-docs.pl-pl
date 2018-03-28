@@ -1,10 +1,10 @@
 ---
-title: "Dodawanie obsługę innych języków w edytorze programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie obsługę innych języków w edytorze programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - syntax colorization
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -23,11 +23,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków edytora programu Visual Studio
 Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje Odczyt i nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.  
@@ -66,28 +66,28 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
   
 -   C#  
   
- Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy obsługa danego języka nie został jeszcze zainstalowany. Instalowanie obsługi specjalne w przypadku niektórych języków może zapewnić obsługę dodatkowych języków, takie jak IntelliSense lub inne funkcje zaawansowane języka, takie jak żarówki.  
+Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy obsługa danego języka nie został jeszcze zainstalowany. Instalowanie obsługi specjalne w przypadku niektórych języków może zapewnić obsługę dodatkowych języków, takie jak IntelliSense lub inne funkcje zaawansowane języka, takie jak żarówki.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Dodawanie obsługi języków nieobsługiwanych  
  Visual Studio 2015 Update 1 lub nowszym zapewniają obsługę języka w edytorze przy użyciu [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli Twoje ulubione język programowania nie jest aktualnie obsługiwana w edytorze programu Visual Studio, najpierw wyszukać w sieci web - już istnieje w pakiecie TextMate dla języka. Jeśli nie można odnaleźć jednego, jednak można dodać obsługę samodzielnie w Visual Studio 2015 Update 1 lub później, tworząc model pakietu TextMate gramatyki języka i fragmenty kodu.  
   
  Dodaj wszystkie nowe gramatyki TextMate dla programu Visual Studio w następującym folderze:  
   
- %userprofile%\\.vs\Extensions  
+ *%userprofile%\\.vs\Extensions*  
   
  W obszarze tej ścieżki podstawowej należy dodać do następujących folderów, jeśli mają one zastosowanie do sytuacji:  
   
 |Nazwa folderu|Opis|  
 |-----------------|-----------------|  
-|\\*\<Nazwa języka >*|Folder języka. Zastąp  *\<nazwy języka >* o nazwie języka. Na przykład **\Matlab**.|  
-|\Syntaxes|Folder gramatyki. Zawiera pliki JSON gramatyki dla języka, takie jak **Matlab.json**.|  
-|\Snippets|Folder fragmentów. Zawiera fragmenty kodu dla języka.|  
+|\\*\<Nazwa języka >*|Folder języka. Zastąp  *\<nazwy języka >* o nazwie języka. Na przykład *\Matlab*.|  
+|*\Syntaxes*|Folder gramatyki. Gramatyka zawiera *JSON* , takich jak pliki w języku *Matlab.json*.|  
+|*\Snippets*|Folder fragmentów. Zawiera fragmenty kodu dla języka.|  
   
- W systemie Windows % userprofile % jest rozpoznawane jako ścieżka: c:\Users\\*\<nazwa użytkownika >*. Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie ukryta.  
+ W systemie Windows *% userprofile %* jest rozpoznawane jako ścieżka: *c:\Users\\*\<nazwa użytkownika >*.* Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie ukryta.  
   
  Aby uzyskać więcej informacji o sposobie tworzenia TextMate gramatyki, zobacz [TextMate — wprowadzenie do języka gramatyki: osadzonych sposób dodawania wyróżnianie składni kodu źródłowego w formacie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [uwagi dotyczące tworzenia gramatyki języka i niestandardowe Motyw dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
   
-## <a name="see-also"></a>Zobacz też  
- [Visual Studio 2013, przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
+## <a name="see-also"></a>Zobacz także  
+ [Visual Studio 2013 przejdź do ulepszenia](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
  [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)   
- [Przewodnik: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Wskazówki: Wyświetlanie uzupełniania](../extensibility/walkthrough-displaying-statement-completion.md)

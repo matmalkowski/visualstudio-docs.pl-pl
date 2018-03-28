@@ -1,26 +1,26 @@
 ---
-title: "Przykładowe projekty do R narzędzi dla programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Indeks kolekcji próbek, aby rozpocząć korzystanie z języka R i Visual Studio."
-ms.custom: 
+title: Przykładowe projekty do R narzędzi dla programu Visual Studio | Dokumentacja firmy Microsoft
+description: Indeks kolekcji próbek, aby rozpocząć korzystanie z języka R i Visual Studio.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: f8bf96d4fcfdb29fdaf79fa5adba9b99375aaddd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d09999f8dd0e53dc8ae3ae61537eb182eaeb6d4
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio przykładowych projektach
 
@@ -36,11 +36,11 @@ Ta kolekcja przykładów pobiera pracę na R, R narzędzi dla programu Visual St
 
 W tym przykładzie przedstawiono szczegółowe wprowadzenie do języka R za pośrednictwem liczne komentarze w dwóch plikach źródłowych. Najlepsze środowisko, umieść kursor na początku pliku i naciśnij klawisze Ctrl + Enter, aby wysłać kod wiersza za-znajdują się na **R interakcyjne** okna. (Wiersze, które zainstalować pakiety może potrwać minutę lub dwie do ukończenia).
 
-- `1-Getting Started with R.R`obejmuje wiele podstawy R, w tym za pomocą pakietów, ładowanie i analizowanie danych i kreślenia.
+- `1-Getting Started with R.R` obejmuje wiele podstawy R, w tym za pomocą pakietów, ładowanie i analizowanie danych i kreślenia.
 
     ![Przykładowe dane wyjściowe z uruchomiono pobierania 1 R.R próbki](media/samples-getting-started-output.png)
 
-- `2-Introduction to ggplot2.R`wprowadza pakietu graficzne ggplot2 znane powierzchni atrakcyjność i proste składni. W tym przykładzie wizualizuje trzęsienie ziemi danych z Fidżi.
+- `2-Introduction to ggplot2.R` wprowadza pakietu graficzne ggplot2 znane powierzchni atrakcyjność i proste składni. W tym przykładzie wizualizuje trzęsienie ziemi danych z Fidżi.
 
     ![Przykładowe dane wyjściowe z 2 — wprowadzenie do ggplot2. Przykładowe R](media/samples-ggplot-output.png)
 
@@ -50,25 +50,25 @@ Ta kolekcja przykładów przedstawia sposób użycia R w celu tworzenia modeli u
 
 Zgodnie z przykładami dla wszystkich, otwórz plik, umieść kursor na początku, a następnie krokowo kodu wiersz po wierszu z klawiszy Ctrl + Enter. Pliki markdown w każdym folderze również zawierać dodatkowe szczegóły.
 
-- `Benchmarks`uruchamiają uzyska kilka obliczeń znacznym, równoległe algebraiczną skali liniowej, aby Pokaż wydajności, które są możliwe przy użyciu Microsoft R otwarte i biblioteki jądra matematyczne firmy Intel (MKL). Z danymi symulowane wzorców specjalnie porównać macierzach w jednym wątku lub dwa.
+- `Benchmarks` uruchamiają uzyska kilka obliczeń znacznym, równoległe algebraiczną skali liniowej, aby Pokaż wydajności, które są możliwe przy użyciu Microsoft R otwarte i biblioteki jądra matematyczne firmy Intel (MKL). Z danymi symulowane wzorców specjalnie porównać macierzach w jednym wątku lub dwa.
 
     ![Przykład testu porównawczego kreślenia](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS`Tworzy model prognozowania żądanie dzierżawy roweru na podstawie historycznych zestawu danych za pomocą programu Microsoft Server R. 
+- `Bike_Rental_Estimation_with_MRS` Tworzy model prognozowania żądanie dzierżawy roweru na podstawie historycznych zestawu danych za pomocą programu Microsoft Server R. 
 
-- `Data_Exploration`zawiera trzy skrypty:
+- `Data_Exploration` zawiera trzy skrypty:
 
-  - `Import Data from URL.R`Pokazuje, jak załadować plik danych identyfikowane przez adres URL do R.
-  - `Import Data from URL to xdf.R`Pokazuje, jak załadować plik danych identyfikowane przez adres URL do serwera R Microsoft jako xdf. (Wymaga PANI).
-  - `Using ggplot2.R`jest rozszerzeniem `A First Look at R/2-Introduction to ggplot2.R` próbki nadanie szerszej Przewodnik po funkcji ggplot2 w tym interakcyjne kreślenia 3D.
+  - `Import Data from URL.R` Pokazuje, jak załadować plik danych identyfikowane przez adres URL do R.
+  - `Import Data from URL to xdf.R` Pokazuje, jak załadować plik danych identyfikowane przez adres URL do serwera R Microsoft jako xdf. (Wymaga PANI).
+  - `Using ggplot2.R` jest rozszerzeniem `A First Look at R/2-Introduction to ggplot2.R` próbki nadanie szerszej Przewodnik po funkcji ggplot2 w tym interakcyjne kreślenia 3D.
 
       ![Dane wyjściowe przy użyciu ggplot2. Przykład R](media/samples-3d-interactive.png)
 
-- `Datasets`zawiera trzy `.csv` pliki używane przez inne przykłady
-- `Flight_Delays_Prediction_with_R`i `Flight_Delays_Prediction_with_MRS` pokazano, jak do prognozowania opóźnienia transmitowane przy użyciu języka R, uczenie maszynowe i na czas w przeszłości i pogody danych. 
-- `Machine learning`zawiera trzy próbki do uczenia się przewidzieć transmitowane opóźnienia, ceny obudowie i wynajem roweru. Razem te przykłady pokazują stosowanie R-Gratulacje, do rzeczywistych problemów. One również opisano, jak użyć kilku modeli uczenia popularnych maszyny i wdrażania ich jako usługi sieci Web platformy Azure przy użyciu [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) obszaru roboczego.
+- `Datasets` zawiera trzy `.csv` pliki używane przez inne przykłady
+- `Flight_Delays_Prediction_with_R` i `Flight_Delays_Prediction_with_MRS` pokazano, jak do prognozowania opóźnienia transmitowane przy użyciu języka R, uczenie maszynowe i na czas w przeszłości i pogody danych. 
+- `Machine learning` zawiera trzy próbki do uczenia się przewidzieć transmitowane opóźnienia, ceny obudowie i wynajem roweru. Razem te przykłady pokazują stosowanie R-Gratulacje, do rzeczywistych problemów. One również opisano, jak użyć kilku modeli uczenia popularnych maszyny i wdrażania ich jako usługi sieci Web platformy Azure przy użyciu [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) obszaru roboczego.
 
-- `R_MRO_MRS_Comparison`znajduje się porównanie sześciu części zawierającej podobieństwa i różnice R, otwórz R firmy Microsoft i Microsoft R Server z poleceniami, składni, konstrukcji i wydajności.
+- `R_MRO_MRS_Comparison` znajduje się porównanie sześciu części zawierającej podobieństwa i różnice R, otwórz R firmy Microsoft i Microsoft R Server z poleceniami, składni, konstrukcji i wydajności.
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-r-server"></a>Co to jest specjalna o Microsoft R otwarte i Microsoft R Server?
 

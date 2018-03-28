@@ -1,27 +1,27 @@
 ---
-title: "Zarządzanie projektami Python aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Objaśnienie jego przeznaczenia projekty w programie Visual Studio, pokazuje, jak utworzyć projektów i zarządzanie nimi dla kodu języka Python i opisano dostępne szablony inny projekt dla języka Python."
-ms.custom: 
+title: Zarządzanie projektami aplikacji Python | Dokumentacja firmy Microsoft
+description: Objaśnienie jego przeznaczenia projekty w programie Visual Studio, pokazuje, jak utworzyć projektów i zarządzanie nimi dla kodu języka Python i opisano dostępne szablony inny projekt dla języka Python.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: dccac11e0ffedf90b72812806b1161f7c270571b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="python-projects"></a>Projekty języka Python
 

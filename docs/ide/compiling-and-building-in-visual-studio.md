@@ -1,26 +1,28 @@
 ---
 title: Kompilowanie i tworzenia w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilowanie i tworzenia w programie Visual Studio
 
@@ -42,7 +44,7 @@ Dokumentacja w tej sekcji przechodzi w stan szczegółowe informacje o procesie 
 
 ## <a name="overview-of-building-from-the-ide"></a>Omówienie tworzenia z IDE  
 
-Podczas tworzenia projektu Visual Studio tworzone domyślne konfiguracje kompilacji projektu i rozwiązania, który zawiera projekt.  Te konfiguracje definiują sposób rozwiązania i projekty są wbudowane i wdrożone. Konfiguracje projektu w szczególności są unikatowe dla docelowej platformy (na przykład Windows pr Linux) i zbudować typu (np. debugowanie czy wydanie). Te konfiguracje można edytować, jednak, a można też utworzyć własne konfiguracji zgodnie z potrzebami.
+Podczas tworzenia projektu Visual Studio tworzone domyślne konfiguracje kompilacji projektu i rozwiązania, który zawiera projekt.  Te konfiguracje definiują sposób rozwiązania i projekty są wbudowane i wdrożone. Konfiguracje projektu w szczególności są unikatowe dla docelowej platformy (na przykład systemu Windows lub Linux) i zbudować typu (np. debugowanie czy wydanie). Te konfiguracje można edytować, jednak, a można też utworzyć własne konfiguracji zgodnie z potrzebami.
 
 Pierwszy wprowadzenie do tworzenia w środowisku IDE, zobacz [wskazówki: Kompilowanie aplikacji](walkthrough-building-an-application.md).  
 
@@ -56,6 +58,6 @@ Z tego miejsca można eksplorować wielu innych zadań:
 - [Ustawianie opcji kompilacji](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Tworzenie wielu projektów równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
 
-- [Kompilowanie (Kompilacja) projektów witryny sieci Web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
+- [Kompilowanie (Kompilacja) projektach witryny sieci Web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

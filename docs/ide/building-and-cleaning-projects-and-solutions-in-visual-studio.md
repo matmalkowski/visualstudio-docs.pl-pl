@@ -1,12 +1,12 @@
 ---
-title: "Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.BuildProjectPicker
@@ -23,25 +23,25 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: 
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9afb8bd1c11caf307365d03351ff174c61011765
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
+# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio
 Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie lub wyczyść wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Samouczek krok po kroku, zobacz [wskazówki: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
-> Interfejs użytkownika w posiadanej wersji programu Visual Studio może się różnić od co w tym temacie opisano, w zależności od ustawienia aktywne. Aby zmienić ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia**, **Import i eksport ustawień**, a następnie Wybierz **zresetować wszystkie ustawienia**.
+> Interfejs użytkownika w posiadanej wersji programu Visual Studio może się różnić od co w tym temacie opisano, w zależności od ustawienia aktywne. Aby zmienić ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz pozycję **zresetować wszystkie ustawienia**.
   
-### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Aby utworzyć, odbudować, lub wyczyścić całego rozwiązania  
+## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Aby utworzyć, odbudować, lub wyczyścić całego rozwiązania  
   
 1.  W **Eksploratora rozwiązań**, wybierz lub Otwórz rozwiązanie.  
   
@@ -56,69 +56,69 @@ Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie 
   
     -   Wybierz **czystą rozwiązania** do usunięcia żadnych plików pośrednich i wynikowych. Tylko do projektu i składnik plików po lewej nowe wystąpienia klasy obiektów i pliki wyjściowe mogą następnie zostać skompilowane.  
   
-### <a name="to-build-or-rebuild-a-single-project"></a>Aby utworzyć lub odbudować pojedynczego projektu  
+## <a name="to-build-or-rebuild-a-single-project"></a>Aby utworzyć lub odbudować pojedynczego projektu  
   
 1.  W **Eksploratora rozwiązań**, wybierz lub Otwórz projekt.  
   
-2.  Na pasku menu wybierz **kompilacji**i wybrać opcję **kompilacji *** ProjectName* lub **odbudować *** ProjectName*.  
+2.  Na pasku menu wybierz **kompilacji**i wybrać opcję **kompilacji** *ProjectName* lub **odbudować** *ProjectName*.  
   
-    -   Wybierz **kompilacji *** ProjectName* tworzenie tylko tych projektu składników, które zostały zmienione od czasu ostatniej kompilacji.  
+    -   Wybierz **kompilacji** *ProjectName* tworzenie tylko tych projektu składników, które zostały zmienione od czasu ostatniej kompilacji.  
   
-    -   Wybierz **odbudować *** ProjectName* "Wyczyść" Projekt i późniejszego kompilowania plików projektu i wszystkie składniki projektu.  
+    -   Wybierz **odbudować** *ProjectName* "Wyczyść" Projekt i późniejszego kompilowania plików projektu i wszystkie składniki projektu.  
   
-### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Tworzenie tylko projekt startowy i jego zależności  
+## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Tworzenie tylko projekt startowy i jego zależności  
   
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.  
+1.  Na pasku menu wybierz **narzędzia** > **opcje**.  
   
 2.  W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzeł, a następnie wybierz pozycję **skompilować i uruchomić** strony.  
   
-     **Skompilować i uruchomić, projekty i rozwiązania, opcje** zostanie otwarte okno dialogowe.  
+     **Skompilować i uruchomić** > **projekty i rozwiązania** > **opcje** zostanie otwarte okno dialogowe.  
   
 3.  Wybierz **tworzyć tylko projekty startowe i zależności przy uruchomieniu** pole wyboru.  
   
      Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednej z następujących czynności:  
   
-    -   Na pasku menu wybierz **debugowania**, **Start** (F5).  
+    -   Na pasku menu wybierz **debugowania** > **Start** (**F5**).  
   
-    -   Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie** (CTRL + SHIFT + B).  
+    -   Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie** (**Ctrl**+**Shift** +  **B**).  
   
     Jeśli to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i plików rozwiązania są tworzone po uruchomieniu dowolne z powyższych poleceń. Domyślnie to pole wyboru jest wyczyszczone.  
   
-### <a name="to-build-only-the-selected-visual-c-project"></a>Aby utworzyć tylko dla wybranego projektu Visual C++  
+## <a name="to-build-only-the-selected-visual-c-project"></a>Aby utworzyć tylko dla wybranego projektu Visual C++  
   
-1.  Wybierz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektu, a następnie na pasku menu wybierz **kompilacji**, **projektu tylko**i jedną z następujących poleceń:  
+Wybierz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektu, a następnie na pasku menu wybierz **kompilacji** > **projektu tylko**i jedną z następujących poleceń:  
+
+- **Tylko kompilację** *ProjectName*  
   
-    -   **Tylko kompilację** *ProjectName*  
+- **Skompiluj ponownie tylko** *ProjectName*  
   
-    -   **Skompiluj ponownie tylko** *ProjectName*  
+- **Wyczyść tylko** *ProjectName*  
   
-    -   **Wyczyść tylko** *ProjectName*  
+- **Link Only** *ProjectName*  
+
+Polecenia te dotyczą tylko [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wybranego, bez tworzenia, ponownie skompilować, czyszczenia lub łączenia wszystkie zależności projektu lub rozwiązania pliki projektu. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **projektu tylko** podmenu może zawierać więcej poleceń.  
   
-    -   **Link Only** *ProjectName*  
+## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować projekt C++ wielu elementów  
   
-    Polecenia te dotyczą tylko [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wybranego, bez tworzenia, ponownie skompilować, czyszczenia lub łączenia wszystkie zależności projektu lub rozwiązania pliki projektu. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **projektu tylko** podmenu może zawierać więcej poleceń.  
+W **Eksploratora rozwiązań**, wybierz wiele plików, które mają może być skompilowany akcje, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz pozycję **skompilować**.  
+
+Jeśli pliki mają zależności, plik zostanie skompilowany w kolejności zależności. Operacja kompilacji zakończy się niepowodzeniem, jeśli pliki wymagają prekompilowanego nagłówka, który nie jest dostępna podczas kompilowania. Operacja kompilacji używa bieżącej aktywnej konfiguracji rozwiązania.  
   
-### <a name="to-compile-multiple-c-project-items"></a>Aby skompilować projekt C++ wielu elementów  
+## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację  
   
-1.  W **Eksploratora rozwiązań**, wybierz wiele plików, które mają może być skompilowany akcje, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz pozycję **skompilować**.  
+Wykonaj jedną z następujących czynności:  
+
+- Na pasku menu wybierz **kompilacji** > **anulować**.  
   
-    Jeśli pliki mają zależności, plik zostanie skompilowany w kolejności zależności. Operacja kompilacji zakończy się niepowodzeniem, jeśli pliki wymagają prekompilowanego nagłówka, który nie jest dostępna podczas kompilowania. Operacja kompilacji używa bieżącej aktywnej konfiguracji rozwiązania.  
-  
-### <a name="to-stop-a-build"></a>Aby zatrzymać kompilację  
-  
-1.  Wykonaj jedną z następujących czynności:  
-  
-    -   Na pasku menu wybierz **kompilacji**, **anulować**.  
-  
-    -   Wybierz polecenie Ctrl + Break kluczy.  
+- Naciśnij klawisz **Ctrl**+**Podziel**.  
   
 ## <a name="see-also"></a>Zobacz także
 
-[Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)  
 [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)  
-[Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)  
+[Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)  
+[Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)  
 [Instrukcje: ustawienia konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
-[Dokumentacja kompilacji w języku C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)  
 [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)  
 [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)

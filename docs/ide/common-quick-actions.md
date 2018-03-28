@@ -1,11 +1,11 @@
 ---
 title: Typowe szybkie akcje | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,11 +15,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e8a0bf2e0dffa4e1cd5793f8cd638623288bbfa8
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -176,7 +176,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Akcje, które usunąć niepotrzebne kodu
 
-### <a name="remove-unnecesary-usingsimports"></a>Usuń niepotrzebnymi deklaracje Using/importów
+### <a name="remove-unnecessary-usingsimports"></a>Usuń zbędne deklaracje Using/importów
 
 **Usunąć niepotrzebne deklaracje Using/importów** szybkich akcji usunie wszystkie nieużywane `using` i `Import` instrukcji dla bieżącego pliku.  Po wybraniu tego elementu importów nieużywanej przestrzeni nazw zostaną natychmiast usunięte.
 
@@ -239,7 +239,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# i Visual Basic | Visual Studio 2017 wersji 15 ustęp 3 |
 
-### <a name="remove-type-from-default-value-expression"></a>Usuwanie typu z **domyślne** wyrażenie wartości
+### <a name="remove-type-from-default-value-expression"></a>Usuwanie typu z wyrażenie wartości domyślnej
 
 Ta akcja szybkie usuwa typu wartości wyrażenia wartości domyślnej i używa [domyślną literału](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) gdy kompilator może wnioskować o typie wyrażenia.
 
@@ -475,7 +475,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>Kod — przekształcenia
 
-### <a name="convert-if-construct-to-switch"></a>Konwertuj **Jeśli** konstrukcji **przełącznika**
+### <a name="convert-if-construct-to-switch"></a>Konwertuj konstrukcji "if" do "Przełącz"
 
 Ta akcja szybkiego umożliwia konwertowanie **if to inaczej** konstrukcji **przełącznika** utworzenia.
 
@@ -532,7 +532,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Konwertuj na ciągu interpolowanym
 
-[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) są łatwe express ciągi zawierające osadzone zmienne, podobnie jak  **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**  metody.  Ta akcja szybkie rozpoznaje przypadku ciągi połączonych lub przy użyciu **String.Format**, a zmiany użycie w ciągu interpolowanym.
+[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) są łatwe express ciągi zawierające osadzone zmienne, podobnie jak **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody.  Ta akcja szybkie rozpoznaje przypadku ciągi połączonych lub przy użyciu **String.Format**, a zmiany użycie w ciągu interpolowanym.
 
 ```csharp
 // Before
@@ -741,7 +741,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>Konwertuj `ReferenceEquals` do`is null`
+### <a name="convert-referenceequals-to-is-null"></a>Konwertuj "ReferenceEquals" na "ma wartość null"
 
 |  Identyfikator diagnostyczny | Właściwe języki |  Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |

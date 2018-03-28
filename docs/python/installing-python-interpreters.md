@@ -1,26 +1,26 @@
 ---
-title: "Wybieranie i instalowanie tłumaczy Python | Dokumentacja firmy Microsoft"
-description: "Pełna lista tłumaczy Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje o tym, gdzie można znaleźć instalatorów ich."
-ms.custom: 
+title: Wybieranie i instalowanie tłumaczy Python | Dokumentacja firmy Microsoft
+description: Pełna lista tłumaczy Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje o tym, gdzie można znaleźć instalatorów ich.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>Instalowanie tłumaczy Python
 
@@ -28,7 +28,7 @@ Domyślnie instalowanie Python obciążenia Programowanie w Visual Studio 2017 i
 
 Można też ręcznie zainstalują dowolną z tłumaczy wymienione w poniższej tabeli poza Instalator programu Visual Studio. Na przykład jeśli zainstalowano Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba ponownie zainstalować za pomocą Instalatora programu Visual Studio.
 
-Dla programu Visual Studio 2015 i starszych należy ręcznie zainstalować jedną tłumaczy.
+Dla **programu Visual Studio 2015 lub starszym**, należy ręcznie zainstalować jedną tłumaczy.
 
 Visual Studio (wszystkie wersje) automatycznie wykrywa każdego zainstalowana interpreter języka Python i jego środowiska, sprawdzając rejestru (następujące [514 program ten - Python rejestracji w rejestrze systemu Windows](https://www.python.org/dev/peps/pep-0514/)).
 

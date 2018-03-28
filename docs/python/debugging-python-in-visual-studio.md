@@ -1,27 +1,27 @@
 ---
-title: "Debugowanie kodu języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Wskazówki dotyczące funkcji debugowania w programie Visual Studio specjalnie z myślą o kod języka Python, w tym ustawianie punktów przerwania, wykonywanie krok po kroku, sprawdzania wartości, patrzeć wyjątków i debugowanie w oknie interaktywnym."
-ms.custom: 
+title: Debugowanie kodu Python | Dokumentacja firmy Microsoft
+description: Wskazówki dotyczące funkcji debugowania w programie Visual Studio specjalnie z myślą o kod języka Python, w tym ustawianie punktów przerwania, wykonywanie krok po kroku, sprawdzania wartości, patrzeć wyjątków i debugowanie w oknie interaktywnym.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -49,7 +49,7 @@ Zobacz także następujące artykuły debugowania specyficzne dla scenariusza:
 
 ## <a name="basic-debugging"></a>Debugowanie podstawowe
 
-Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, krokowe wykonywanie kodu, sprawdzania wartości i obsługa wyjątków, zgodnie z opisem w poniższych sekcjach. Aby uzyskać szczegółowe informacje o debugerze programu Visual Studio, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
+Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, krokowe wykonywanie kodu, sprawdzania wartości i obsługa wyjątków, zgodnie z opisem w poniższych sekcjach.
 
 Rozpoczyna się od sesji debugowania **Debuguj > Rozpocznij debugowanie** polecenia, **Start** przycisku paska narzędzi lub klawisz F5. Te akcje Uruchom plik uruchomienia projektu (pokazano pogrubienia w Eksploratorze rozwiązań) z projektu aktywnego środowiska i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone we właściwościach projektu (zobacz [debugowania projektu opcje](#project-debugging-options). **Visual Studio 2017 wersji 15,6** i później ostrzega użytkownika, jeśli nie masz pliku uruchamiania Ustaw; wcześniejszych wersji może otworzyć okno danych wyjściowych z interpreter języka Python uruchomiona, lub w oknie danych wyjściowych krótko pojawia się i znika. W każdym przypadku, kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik uruchamiania**.
 
@@ -198,3 +198,7 @@ Należy pamiętać, że standardowego debugera systemu windows, takich jak proce
 Okno interaktywne debugowania ma swój własny zestaw opcji, które są dostępne za pośrednictwem **Narzędzia > Opcje > Narzędzia Python Tools > debugowanie okna interaktywnego**. W odróżnieniu od regularne okno interaktywne Python ma osobnego wystąpienia dla każdego środowiska Python, istnieje tylko jedno okno interaktywne debugowania i zawsze używa interpreter języka Python dla debugowanego procesu. Zobacz [opcji - opcji debugowania](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Okno interaktywne opcje debugowania](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>Zobacz także
+
+Aby uzyskać szczegółowe informacje o debugerze programu Visual Studio, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).

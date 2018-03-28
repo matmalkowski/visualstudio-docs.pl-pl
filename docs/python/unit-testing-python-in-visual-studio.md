@@ -1,27 +1,27 @@
 ---
-title: "Testu jednostkowego dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Ustawienie testu jednostkowego dla kodu języka Python w programie Visual Studio do w pełni korzystać z funkcji Eksploratora testów do odnajdywania, uruchamiane i Debuguj testy."
-ms.custom: 
+title: Testu jednostkowego dla języka Python | Dokumentacja firmy Microsoft
+description: Ustawienie testu jednostkowego dla kodu języka Python w programie Visual Studio do w pełni korzystać z funkcji Eksploratora testów do odnajdywania, uruchamiane i Debuguj testy.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55b99e2f572b075c1e9ab1658c8a02b3fdd5ea88
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: d68b2b8a4060d3c77bed996aa0b20054d989487b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Ustawienia testu jednostkowego dla kodu języka Python
 

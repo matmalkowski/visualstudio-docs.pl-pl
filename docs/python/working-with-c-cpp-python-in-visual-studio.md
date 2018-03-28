@@ -1,28 +1,28 @@
 ---
-title: "Praca z C++ i języku Python w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Kroki procesu amd zapisu rozszerzenia C++ lub modułu dla języka Python w programie Visual Studio"
-ms.custom: 
+title: Praca z C++ i Python | Dokumentacja firmy Microsoft
+description: Kroki procesu amd zapisu rozszerzenia C++ lub modułu dla języka Python w programie Visual Studio
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: tutorial
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -50,6 +50,8 @@ Aby uzyskać więcej informacji, zobacz [instalowanie obsługę języka Python d
 ## <a name="create-the-python-application"></a>Tworzenie aplikacji Python
 
 1. Utwórz nowy projekt języka Python w programie Visual Studio, wybierając **Plik > Nowy > Projekt**. Wyszukaj "Python", wybierz **aplikacji Python** szablonu, nadaj mu odpowiednią nazwę i lokalizację, a następnie wybierz **OK**.
+
+1. Praca z C++ wymaga 32-bitowy interpreter języka Python (Python 3,6 zalecane). W **Eksploratora rozwiązań** okno programu Visual Studio rozwiń węzeł projektu, a następnie rozwiń węzeł **środowiska Python** węzła. Jeśli nie widzisz 32-bitowego środowiska domyślnie (albo w pogrubione lub etykietą z "domyślnej globalnej"), postępuj zgodnie z instrukcjami na [wybranie środowisku Python dla projektu](selecting-a-python-environment-for-a-project.md). Jeśli nie masz interpreter 32-bitowy, zainstalowane, zobacz [tłumaczy instalowanie Python](installing-python-interpreters.md).
 
 1. W projekcie `.py` plików, wklej następujący kod, który wzorców obliczenia tangens hiperboliczny (zaimplementowana bez korzystania z biblioteki matematyczne ułatwia porównanie). Możesz także wprowadzić kod ręcznie, aby zgłaszać niektóre [Python funkcje edytowania](editing-python-code-in-visual-studio.md).
 
@@ -208,7 +210,7 @@ Aby C++ DLL do rozszerzenia dla języka Python, najpierw zmodyfikować wyeksport
     };
     ```
 
-1. Dodaj metodę, która wywołuje Python ładuje moduł, który musi mieć nazwę `PyInit_<module-name>`, gdzie  *&lt;nazwa_modułu&gt;*  dokładnie odpowiada projektu C++ **ogólne > Nazwa docelowego** właściwości (to znaczy, że jest on zgodny nazwę pliku `.pyd` skompilowanego przez projekt).
+1. Dodaj metodę, która wywołuje Python ładuje moduł, który musi mieć nazwę `PyInit_<module-name>`, gdzie *&lt;nazwa_modułu&gt;* dokładnie odpowiada projektu C++ **ogólne > Nazwa docelowego** właściwości (to znaczy, że jest on zgodny nazwę pliku `.pyd` skompilowanego przez projekt).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {

@@ -1,16 +1,16 @@
 ---
-title: "Szablon projektu usługi chmury Azure dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Przegląd szablonu Visual Studio dla usług w chmurze Azure napisanych w języku Python w tym wdrażanie ról w zależności i rozwiązywania problemów."
-ms.custom: 
+title: Szablon projektu usługi chmury Azure dla języka Python | Dokumentacja firmy Microsoft
+description: Przegląd szablonu Visual Studio dla usług w chmurze Azure napisanych w języku Python w tym wdrażanie ról w zależności i rozwiązywania problemów.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,17 +18,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
 Visual Studio zawiera szablony ułatwiające rozpoczęcie pracy tworzenia usługi w chmurze Azure przy użyciu języka Python.
 
-A [usługi w chmurze](http://go.microsoft.com/fwlink/?LinkId=306052) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na Visual maszyny odpowiednio do skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](python-web-application-project-templates.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy korzystać z [danych](http://go.microsoft.com/fwlink/?LinkId=401571) i [usługi aplikacji](http://go.microsoft.com/fwlink/?LinkId=401572) bibliotek, które mogą być zainstalowane z [ `pip install azure` ](http://pypi.org/project/azure).
+A [usługi w chmurze](http://go.microsoft.com/fwlink/?LinkId=306052) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na maszyny wirtualne w razie potrzeby skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](python-web-application-project-templates.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy korzystać z [danych](http://go.microsoft.com/fwlink/?LinkId=401571) i [usługi aplikacji](http://go.microsoft.com/fwlink/?LinkId=401572) bibliotek, które mogą być zainstalowane z [ `pip install azure` ](http://pypi.org/project/azure).
 
 Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych pomoc techniczna w Visual Studio 2017 r (wcześniejszych wersji są podobne, lecz w edytorze). Aby uzyskać więcej informacji na temat pracy z platformą Azure w języku Python, odwiedź [Centrum deweloperów języka Python Azure](http://go.microsoft.com/fwlink/?linkid=254360).
 

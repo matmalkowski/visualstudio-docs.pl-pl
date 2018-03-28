@@ -1,28 +1,28 @@
 ---
-title: "Debugowanie w trybie mieszanym dla języka Python w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Jak można jednocześnie debugować C++ i języku Python w programie Visual Studio, w tym przechodzenie między środowisk, wyświetlanie wartości i wyrażeń evaluting."
-ms.custom: 
+title: Debugowanie w trybie mieszanym dla języka Python | Dokumentacja firmy Microsoft
+description: Jak można jednocześnie debugować C++ i języku Python w programie Visual Studio, w tym przechodzenie między środowisk, wyświetlanie wartości i wyrażeń evaluting.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Debugowanie razem Python i C++
 
@@ -66,7 +66,7 @@ Funkcje debugowania w trybie mieszanym zawierają następujące informacje, jak 
 
 1. Podczas uruchamiania debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego (zobacz [symboli do debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Musisz zainstalować symbole tylko raz w każdym środowisku danego języka Python. Symbole są automatycznie dołączane po zainstalowaniu obsługi języka Python za pomocą Instalatora programu Visual Studio 2017 r.
 
-1. Sprawdź kod źródłowy standard języka Python, osiągalny podczas debugowania, odwiedź [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), pobierz odpowiednie dla posiadanej wersji archiwum i wyodrębnij go do folderu. Można następnie punktu programu Visual Studio do określonych plików w tym folderze, w dowolnym momencie go monit.
+1. Sprawdź kod źródłowy standard języka Python, osiągalny podczas debugowania, odwiedź [ https://www.python.org/downloads/source/ ](https://www.python.org/downloads/source/), pobierz odpowiednie dla posiadanej wersji archiwum i wyodrębnij go do folderu. Można następnie punktu programu Visual Studio do określonych plików w tym folderze, w dowolnym momencie go monit.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Włącz debugowanie w trybie mieszanym w projekcie C/C++
 

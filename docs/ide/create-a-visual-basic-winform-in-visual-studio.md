@@ -1,13 +1,13 @@
 ---
-title: "Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic | Dokumentacja firmy Microsoft"
-description: "Informacje o sposobie tworzenia aplikacji formularzy systemu Windows w programie Visual Studio za pomocą Visual Basic, krok po kroku."
-ms.custom: 
+title: Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic | Dokumentacja firmy Microsoft
+description: Informacje o sposobie tworzenia aplikacji formularzy systemu Windows w programie Visual Studio za pomocą Visual Basic, krok po kroku.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 W tym krótkie wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
@@ -50,31 +50,31 @@ Po wybraniu szablonu projektu języka Visual Basic oraz nazwę pliku, Visual Stu
 
      ![Kliknij przycisk przybornika, aby otworzyć okno przybornika](../ide/media/vb-toolbox-toolwindow.png)  
 
-     (Jeśli nie widzisz opcji wysuwanego przybornika, można otworzyć go na pasku menu. Aby to zrobić, kliknij przycisk **widoku** > **przybornika**. Możesz również nacisnąć klawisz **Ctrl**+**Alt**+**X**.)
+     (Jeśli nie widzisz **przybornika** wysuwanego opcji, możesz otworzyć go na pasku menu. Aby to zrobić, kliknij przycisk **widoku** > **przybornika**. Możesz również nacisnąć klawisz **Ctrl**+**Alt**+**X**.)
 
-2. Kliknij przycisk **numeru Pin** ikonę, aby dock okno przybornika.
+2. Kliknij przycisk **numeru Pin** ikonę, aby dock **przybornika** okna.
 
      ![Kliknij ikonę numeru Pin, aby przypiąć okno przybornika do środowiska IDE](../ide/media/vb-pin-the-toolbox-window.png)  
 3. Kliknij przycisk **przycisk** kontroli, a następnie przeciągnij ją na formularzu.
 
      ![Dodawanie przycisku do formularza](../ide/media/vb-add-a-button-to-form1.png)
 
-4. W **wygląd** sekcji **właściwości** , wpisz "Kliknij tutaj", a następnie naciśnij klawisz **Enter**.
+4. W **wygląd** sekcji **właściwości** wpisz `Click this`, a następnie naciśnij klawisz **Enter**.
 
      ![Dodawanie tekstu na przycisk w formularzu](../ide/media/vb-button-control-text.png)  
 
-     (Jeśli nie widzisz okna właściwości, można otworzyć go na pasku menu. Aby to zrobić, kliknij przycisk **widoku** > **okna właściwości**. Możesz również nacisnąć klawisz **F4**.)
+     (Jeśli nie widzisz **właściwości** okna, możesz otworzyć go na pasku menu. Aby to zrobić, kliknij przycisk **widoku** > **okna właściwości**. Możesz również nacisnąć klawisz **F4**.)
 
-5. W **projekt** sekcji **właściwości** , zmienić nazwę z "Button1" na "btnClickThis", a następnie naciśnij klawisz **Enter**.
+5. W **projekt** sekcji **właściwości** okna, zmiana nazwy na podstawie **Button1** do `btnClickThis`, a następnie naciśnij klawisz **Enter**.
 
      ![Dodawanie funkcji do przycisk w formularzu](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Dodawanie etykiet do formularza
 Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formantu etykiety do wysyłania tekst.
 
-1. Wybierz **etykiety** kontrolować z okno przybornika, a następnie przeciągnij go do formularza i upuść je pod **kliknij** przycisku.
+1. Wybierz **etykiety** kontrolować z **przybornika** okna, a następnie przeciągnij go do formularza i upuść je pod **kliknij** przycisku.
 
-2. W **projekt** sekcji **właściwości** , zmienić nazwę z "Label1" na "lblHelloWorld", a następnie naciśnij klawisz **Enter**.
+2. W **projekt** sekcji **właściwości** okna, zmiana nazwy na podstawie **Label1** do `lblHelloWorld`, a następnie naciśnij klawisz **Enter**.
 
 ### <a name="add-code-to-the-form"></a>Dodawanie kodu do formularza
 
@@ -91,9 +91,9 @@ Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formant
 
      ![Kliknij przycisk Start do debugowania i uruchamiania aplikacji](../ide/media/vb-click-start-hello-world.png)
 
-   Nastąpi kilka rzeczy. W programie Visual Studio IDE zostanie otwarte okno narzędzia diagnostyczne i dane wyjściowe zostanie otwarte okno zbyt. Ale poza IDE, zostanie wyświetlone okno dialogowe Form1. Będzie ona zawierać Twojego **kliknij** przycisk i tekście "Label1".
+   Nastąpi kilka rzeczy. W programie Visual Studio IDE **narzędzi diagnostycznych** okno i **dane wyjściowe** okno zbyt. Ale poza IDE **Form1** zostanie wyświetlone okno dialogowe. Będzie ona zawierać Twojego **kliknij** przycisk i tekście **Label1**.
 
-2. Kliknij przycisk **kliknij** przycisk **Form1** okno dialogowe. Należy zauważyć, że tekst "Label1" zostanie zmieniony na "Hello World!".
+2. Kliknij przycisk **kliknij** przycisk **Form1** okno dialogowe. Zwróć uwagę, że **Label1** tekst zmienia się na **Hello World!**.
 
     ![Okno dialogowe Form1 zawierającego Label1 tekst ](../ide/media/vb-form1-dialog-hello-world.png)
 
