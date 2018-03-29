@@ -1,12 +1,8 @@
 ---
-title: "Za pomocą wyrażeń regularnych w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Za pomocą wyrażeń regularnych w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
-ms.translationtype: MT
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Za pomocą wyrażeń regularnych w programie Visual Studio
 
@@ -33,7 +29,9 @@ Visual Studio będzie korzystać [.NET Framework — nieprawidłowe wyrażenia](
 
 ## <a name="replacement-patterns"></a>Wzorce zamiany
 
-Informacji o wyrażeń regularnych, które są używane w wzorce zamiany znajduje się w temacie [podstawienia w wyrażeniach regularnych (Przewodnik .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions). Aby użyć grupy numerowanych przechwytywania, składnia jest `$1` można określić numeru grupy i `(x)` do określenia danej grupy. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` znajduje cztery dopasowań w następujący ciąg: **2b 1a 3c 4d**. Ciąg zastępczy `z$1` konwertuje tego ciągu do **z1 z2 z3 z4**.
+Aby użyć grupy numerowanych przechwytywania, należy ująć grupy nawiasów w wzorzec wyrażenia regularnego. Użyj `$number`, gdzie `number` jest liczbą całkowitą rozpoczyna się od 1, aby określić grupę określone, numerowana we wzorcu zastąpienia. Na przykład grupowanych wyrażenia regularnego `(\d)([a-z])` definiuje dwie grupy: pierwsza grupa zawiera pojedynczą cyfrą dziesiętną, a drugiej grupy pojedynczy znak między **a** i **z**. Wyrażenie znajduje cztery dopasowań w następujący ciąg: **2b 1a 3c 4d**. Ciąg zastępczy `z$1` odwołuje się do pierwszej grupy i konwertuje ciąg na **z1 z2 z3 z4**.
+
+Informacji o wyrażeń regularnych, które są używane w wzorce zamiany znajduje się w temacie [podstawienia w wyrażeniach regularnych (Przewodnik .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Przykłady wyrażeń regularnych
 
@@ -52,7 +50,7 @@ Oto kilka przykładów:
 |Zakotwicz dopasowanie ciągu do końca wiersza|\r?$|`End\r?$` Dopasowuje "Zakończ" tylko gdy znajduje się na końcu wiersza.|
 |Dopasowuje dowolny pojedynczy znak ze zbioru|[abc]|`b[abc]` Dopasowuje "ba", "bb" i "bc".|
 |Dopasowuje dowolny znak z zakresu znaków|[a-f]|`be[n-t]` Dopasowuje "trafień" w "między", "ben" w "poniżej" i "bes" w "obok", ale nie "poniżej".|
-|Przechwytuje i niejawnie numeruje wyrażenie zawarte w nawiasach|()|`([a-z])X\1` Dopasowuje "aXa" i "bXb", ale nie "aXb". ". "\1" odwołuje się do pierwszej grupy wyrażenie "[a-z]".|
+|Przechwytuje i niejawnie numeruje wyrażenie zawarte w nawiasach|()|`([a-z])X\1` Dopasowuje "aXa" i "bXb", ale nie "aXb". "\1" odwołuje się do pierwszej grupy wyrażenie "[a-z]".|
 |Unieważnienie dopasowania|(?! ABC)|`real (?!ity)` Dopasowuje "rzeczywiste" w "realność" i "naprawdę", ale nie w "rzeczywistości." Drugi "rzeczywistym" (ale nie pierwszy "rzeczywistego") również znalezione w "realityreal".|
 |Dopasowuje dowolny znak, który nie jest w danym zestawie znaków|[^abc]|`be[^n-t]` Dopasowuje "bef" w "before", "beh" w "za" i "etykietę" w "poniżej", ale nie "poniżej".|
 |Zgodne wyrażenie przed lub jeden po symbolu.|&#124;|`(sponge&#124;mud) bath` Dopasowuje "Gąbka łaźni" i "błocie Łaźnia."|

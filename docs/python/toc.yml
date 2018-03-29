@@ -1,0 +1,110 @@
+- name: Omówienie
+  href: overview-of-python-tools-for-visual-studio.md
+- name: Instalacja
+  href: installing-python-support-in-visual-studio.md
+  items:
+    - name: Instalowanie interpreterów języka Python
+      href: installing-python-interpreters.md
+- name: Przewodniki Szybki Start
+  items:
+    - name: Tworzenie aplikacji internetowej za pomocą platformy Flask
+      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+    - name: Tworzenie projektu z szablonu
+      href: quickstart-02-python-in-visual-studio-project-from-template.md
+    - name: Tworzenie projektu z istniejącego kodu
+      href: quickstart-01-project-from-existing.md
+    - name: Tworzenie projektu z repozytorium
+      href: quickstart-03-python-in-visual-studio-project-from-repository.md
+    - name: Tworzenie projektu z szablonu Cookiecutter
+      href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
+- name: Samouczki
+  items:
+    - name: 0 — Instalacja obsługi języka Python
+      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+    - name: 1 — Tworzenie nowego projektu w języku Python
+      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+    - name: 2 — Pisanie i uruchamianie kodu
+      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+    - name: 3 — Użycie okna interaktywnego REPL
+      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+    - name: 4 — Uruchamianie kodu w debugerze
+      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+    - name: 5 — Instalowanie pakietów i zarządzanie środowiskami Python
+      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+    - name: 6 — Praca z usługą Git
+      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+- name: Pojęcia
+  items:
+    - name: Projekty Python
+      href: managing-python-projects-in-visual-studio.md
+      items:
+        - name: Szablony projektów internetowych
+          href: python-web-application-project-templates.md
+        - name: Szablon projektów internetowych Django
+          href: python-django-web-application-project-template.md
+        - name: Szablon usługi w chmurze platformy Azure
+          href: python-azure-cloud-service-project-template.md
+    - name: Zestaw Azure SDK dla języka Python
+      href: azure-sdk-for-python.md
+- name: Przewodniki z instrukcjami
+  items:
+    - name: Zarządzanie środowiskami
+      href: managing-python-environments-in-visual-studio.md
+      items:
+        - name: Wybieranie interpretera dla projektu
+          href: selecting-a-python-environment-for-a-project.md
+        - name: Używanie pliku requirements.txt dla zależności
+          href: managing-required-packages-with-requirements-txt.md
+        - name: Ścieżki wyszukiwania
+          href: search-paths.md
+        - name: Dokumentacja okna środowiska
+          href: python-environments-window-tab-reference.md
+    - name: Edytowanie kodu
+      href: editing-python-code-in-visual-studio.md
+      items:
+        - name: Formatowanie kodu
+          href: formatting-python-code.md
+        - name: Refaktoryzacja kodu
+          href: refactoring-python-code.md
+        - name: Używanie narzędzia PyLint
+          href: linting-python-code.md
+    - name: Definiowanie niestandardowych poleceń menu
+      href: defining-custom-python-project-commands.md
+    - name: Środowisko Interactive Python (REPL)
+      href: python-interactive-repl-in-visual-studio.md
+      items:
+        - name: Używanie środowiska IPython REPL
+          href: interactive-repl-ipython.md
+    - name: Debugowanie
+      href: debugging-python-in-visual-studio.md
+      items:
+        - name: Debugowanie kodu na komputerach zdalnych z systemem Linux
+          href: debugging-python-code-on-remote-linux-machines.md
+    - name: Praca z usługą Azure App Service
+      items:
+        - name: Zarządzanie językiem Python w usłudze Azure App Service
+          href: managing-python-on-azure-app-service.md
+        - name: Publikowanie w usłudze Azure App Service
+          href: publishing-python-web-applications-to-azure-from-visual-studio.md
+        - name: Zdalne debugowanie na platformie Azure
+          href: debugging-remote-python-code-on-azure.md
+        - name: Rozwiązywanie problemów z debugowaniem zdalnym na platformie Azure
+          href: debugging-remote-python-code-on-azure-troubleshooting.md
+    - name: Interakcja z językiem C++
+      items:
+        - name: Tworzenie rozszerzenia C++ dla języka Python
+          href: working-with-c-cpp-python-in-visual-studio.md
+        - name: Debugowanie dla języków Python/C++ w trybie mieszanym
+          href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
+        - name: Symbole debugowania w trybie mieszanym
+          href: debugging-symbols-for-mixed-mode-c-cpp-python.md
+    - name: Profilowanie
+      href: profiling-python-code-in-visual-studio.md
+    - name: Testowanie jednostek
+      href: unit-testing-python-in-visual-studio.md
+    - name: Używanie rozszerzenia Cookiecutter
+      href: using-python-cookiecutter-templates.md
+- name: Tematy pomocy
+  items:
+    - name: Opcje
+      href: python-support-options-and-settings-in-visual-studio.md

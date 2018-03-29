@@ -1,6 +1,5 @@
 # [Dokumentacja programu Visual Studio](ide/index.md)
 # [Omówienie](ide/visual-studio-ide.md)
-## [Co nowego](ide/whats-new-in-visual-studio.md)
 # Instalacja
 ## [Instalowanie programu Visual Studio](install/install-visual-studio.md)
 ## [Logowanie do programu Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -449,6 +448,17 @@
 ### [Instalowanie programu Dotfuscator CE](ide/dotfuscator/install.md)
 ### [Uaktualnianie programu Dotfuscator CE](ide/dotfuscator/upgrades.md)
 # Resources
+## [Co nowego](ide/whats-new-in-visual-studio.md)
+## Informacje o wersji i wymagania systemowe
+### [Informacje o bieżącej wersji](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+### [Informacje o wersji zapoznawczej](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)
+### [Historia informacji o wersji](/visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default)
+### [Rytm wydawania](/visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default)
+### [Wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+### [Zgodność platformy](/visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default)
+### [Licencjonowanie](https://www.visualstudio.com/license-terms/)
+### [Kod dystrybucyjny](/visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default)
+### [Cykl życia pomocy technicznej i obsługi](/visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default)
 ## [Zgłaszanie problemu z programem Visual Studio](ide/how-to-report-a-problem-with-visual-studio-2017.md)
 ## [Zasoby dla rozwiązywania problemów z błędami środowiska IDE](ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 ## [Porozmawiaj z nami](ide/talk-to-us.md)
