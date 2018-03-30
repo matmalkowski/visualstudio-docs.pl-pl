@@ -1,29 +1,31 @@
 ---
-title: "Analizowanie użycia pamięci w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Analizowanie użycia pamięci w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profil w programie Visual Studio
 Wyszukiwanie przecieków pamięci i nieefektywne pamięci podczas debugowania kodu z debugera zintegrowane **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, należy wykonać co najmniej jeden *migawki* zarządzanego i natywnego pamięci sterty ułatwi zrozumienie wpływu użycia pamięci typy obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszane (.NET i natywnego) aplikacji.  
   
  Poniżej przedstawiono graficzne **narzędzia diagnostyczne** okna (dostępnej w programie Visual Studio 2015 Update 1 lub nowszy):  
   
- ![DiagnosticTools &#45; Aktualizację1](../profiling/media/diagnostictools-update1.png "aktualizację1 DiagnosticTools")  
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
  Mimo że można zbierać migawki pamięci w dowolnym momencie w **użycie pamięci** narzędzia, debuger programu Visual Studio można użyć do kontrolowania sposobu wykonuje aplikacji podczas badania problemów z wydajnością. Ustawianie punktów przerwania, wykonywanie krok po kroku, Przerwij wszystkie i inne akcje debuger może pomóc skupić się z badania wydajności ścieżki kodu, które są najbardziej odpowiednie. Wykonanie tych czynności uruchomionej aplikacji można wyeliminować szumu z kodu, który nie interesują użytkownika i może znacznie zmniejszyć ilość czasu, jaki zajmuje zdiagnozować problem.  
   
@@ -33,6 +35,12 @@ Wyszukiwanie przecieków pamięci i nieefektywne pamięci podczas debugowania ko
 >  **Niestandardowe Obsługa alokatora** natywnej pamięci profilera polega na zbieranie alokacji [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) dane zdarzeń emitowane przez w czasie wykonywania.  Allocators — w CRT i zestaw Windows SDK ma zostały adnotacji na poziomie źródła, dzięki czemu można przechwycić swoje dane alokacji.  Jeśli piszesz własne allocators —, a następnie ozdobione wszystkie funkcje, które zwraca wskaźnik do pamięci sterty nowoprzydzielonych [__declspec](/cpp/cpp/declspec)(alokatora), jak pokazano w następującym przykładzie myMalloc:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+W tym samouczku obejmują:
+
+> [!div class="checklist"]
+> * Twórz migawki pamięci
+> * Analizowanie danych użycia pamięci
 
 ## <a name="collect-memory-usage-data"></a>Zbieranie danych użycia pamięci
 
@@ -108,7 +116,7 @@ Do analizy użycia pamięci, kliknij jeden z łącza, które otwiera szczegóło
 ### <a name="managed-types-reports"></a>Zarządzane typy raportów  
  Wybierz łącze bieżącego **obiektów (Diff)** lub **alokacji (Diff)** komórka w tabeli podsumowania użycia pamięci.  
   
- ![Debuger 45; & raportu typu zarządzanego Ścieżki do katalogu głównego](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Raport typu zarządzanego debugera &#45; ścieżki do katalogu głównego](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  Górne okienko przedstawia liczbę i rozmiar typów w migawce, takich jak rozmiar wszystkich obiektów, do których odwołuje się typ (**rozmiarze włącznie**).  
   
@@ -145,7 +153,7 @@ Do analizy użycia pamięci, kliknij jeden z łącza, które otwiera szczegóło
   
 -   Wybierz łącze Zmień w komórce tabeli podsumowania **użycie pamięci** karcie na **narzędzia diagnostyczne** okna.  
   
-     ![Wybierz zmiany &#40; dif &#41; raportu f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+     ![Wybierz grupę zmian &#40;dif&#41;raport f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 -   Wybierz migawki w **Porównaj z** raport zarządzanym lub macierzystym listy.  
   
@@ -165,6 +173,9 @@ Do analizy użycia pamięci, kliknij jeden z łącza, które otwiera szczegóło
   
  [Visual C++ Blog: Pamięci profilowania w programie Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Zobacz też
- [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>Następne kroki
+
+W tym samouczku kiedy znasz już jak zbieranie i analizowanie danych użycia pamięci. Jeśli została już ukończona [samouczek profilera](../profiling/profiling-feature-tour.md), możesz pobrać krótki przegląd sposobu analizy użycia procesora CPU w aplikacjach.
+
+> [!div class="nextstepaction"]
+> [Analizowanie użycia procesora CPU](../profiling/beginners-guide-to-performance-profiling.md) 

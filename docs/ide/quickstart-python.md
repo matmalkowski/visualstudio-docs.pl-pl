@@ -1,7 +1,7 @@
 ---
 title: 'Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio | Dokumentacja firmy Microsoft'
-description: Krótkie wprowadzenie do programu Visual Studio, która tworzy aplikację sieci web proste przy użyciu platformy Flask za pomocą języka Python.
-ms.custom: ''
+description: W tego przewodnika Szybki Start możesz użyć programu Visual Studio do tworzenia aplikacji sieci web proste w języku Python przy użyciu platformy Flask.
+ms.custom: mvc
 ms.date: 03/21/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -13,15 +13,15 @@ dev_langs:
 - python
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fe5620bc764b421e22364ebdadb770c81831e7e2
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web języka Python
 

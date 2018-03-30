@@ -1,13 +1,13 @@
 ---
-title: "Przewodnik dla początkujących próbkowania Procesora w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Przewodnik dla początkujących próbkowania Procesora w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - performance tools, wizard
 - Performance Wizard
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3113a04ba6f6f893c285cf02f6f23cb5979dad1
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowanie Procesora
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **próbkowania** danych.
@@ -42,7 +42,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
 > [!TIP]
 >  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: Symbol Windows informacje](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a>Tworzenie i uruchamianie sesji wydajności  
+##  <a name="Step1"></a> Tworzenie i uruchamianie sesji wydajności  
  Aby pobrać dane, które należy przeanalizować, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesję. **Kreatora osiągów** pozwala wykonać obie czynności.  
   
  Jeśli to nie profilowanie aplikacji klasycznej systemu Windows lub aplikacji ASP.NET, należy użyć jednego z innych narzędzi do profilowania. Zobacz [narzędzia profilowania](../profiling/profiling-tools.md).  
@@ -68,7 +68,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
      Po zakończeniu działania aplikacji, **Podsumowanie** widok danych profilowania pojawia się w oknie głównym programu Visual Studio i ikona dla nowej sesji w **Eksplorator wydajności** okna.  
   
-##  <a name="Step2"></a>Krok 2: Analizowanie danych próbkowania  
+##  <a name="Step2"></a> Krok 2: Analizowanie danych próbkowania  
  Po zakończeniu pracy sesję wydajności **Podsumowanie** widok raportu profilowania pojawia się w oknie głównym w programie Visual Studio.  
   
  Zalecamy rozpocząć analizowanie danych, sprawdzając **aktywnej ścieżki** , a następnie na liście funkcji wykonywania najbardziej pracy i na koniec przez koncentrujących się na inne funkcje za pomocą **osi czasu Podsumowanie** . Można również wyświetlić profilowania sugestie i ostrzeżeń w **listy błędów** okna.  
@@ -83,7 +83,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
 1.  W **Podsumowanie** widoku **aktywnej ścieżki** pokazuje gałęzi drzewo wywołań aplikacji z najwyższym przykłady włącznie. Jest to ścieżka wykonywania, który był aktywny najbardziej podczas zbierania danych. Wysokiej wartości z wartościami granicznymi może wskazywać, algorytm generuje drzewo wywołań mogą być optymalizowane. Znajdź funkcji w kodzie najniższe w ścieżce. Należy zauważyć, że ścieżka mogą również obejmować lub funkcji systemu w modułach zewnętrznych.  
   
-     ![Aktywnej ścieżki profilera](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
+     ![Profiler Hot Path](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
   
     1.  **Przykłady z wartościami granicznymi** wskazuje ilość pracy została wykonana przez funkcję i wszystkie funkcje wywoływane przez go. Wysoka liczba włącznie wskaż funkcje, które są najbardziej kosztownych ogólne.  
   
@@ -113,7 +113,7 @@ Visual Studio, narzędzia profilowania służy do analizowania problemów z wyda
   
     -   Aby wyświetlić szczegółowe informacje na temat tego ostrzeżenia, kliknij prawym przyciskiem myszy błąd, a następnie kliknij przycisk **Pokaż błąd pomóc**  
   
-##  <a name="Step3"></a>Krok 3: Korygowanie kodu i uruchom ponownie sesję  
+##  <a name="Step3"></a> Krok 3: Korygowanie kodu i uruchom ponownie sesję  
  Po znaleźć i zoptymalizować jedną lub więcej funkcji, można powtórzyć przebiegu profilowania i porównywania danych, aby wyświetlić tą różnicą, że zmiany zostały wprowadzone na wydajność aplikacji.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Aby poprawić kod i ponownie uruchom profilera  

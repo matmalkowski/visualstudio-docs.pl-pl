@@ -1,7 +1,7 @@
 ---
-title: Szybki Start — Tworzenie projektu języka Python w programie Visual Studio przy użyciu szablonu | Dokumentacja firmy Microsoft
-description: Szybki Start, dzięki Python przez utworzenie projektu programu Visual Studio za pomocą wbudowanych szablonów dla Podstawowa aplikacja platformy Flask.
-ms.custom: ''
+title: Szybki Start — tworzenie za pomocą szablonu projektu języka Python | Dokumentacja firmy Microsoft
+description: W tym Szybki Start tworzenia projektu programu Visual Studio dla języka Python za pomocą wbudowanych szablonów dla Podstawowa aplikacja platformy Flask.
+ms.custom: mvc
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 41b677dc41202012ba09908edf3110961139f416
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu języka Python z szablonu w programie Visual Studio
 

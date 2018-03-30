@@ -1,7 +1,7 @@
 ---
-title: Szybki Start - w klonowania repozytorium kodu języka Python w programie Visual Studio | Dokumentacja firmy Microsoft
-description: Rozpoczynanie pracy szybko przy użyciu języka Python w klonowania repozytorium koans Python za pomocą programu Visual Studio Team Explorer.
-ms.custom: ''
+title: Szybki Start - w klonowania repozytorium kodu Python | Dokumentacja firmy Microsoft
+description: W tym szybkiego startu tworzenia projektu języka Python w programie Visual Studio w klonowania repozytorium koans Python za pomocą programu Visual Studio Team Explorer.
+ms.custom: mvc
 ms.date: 03/21/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae304db62a9ec17c0fe6359bbd315d628cbd5261
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: klonowanie repozytorium kodu języka Python w programie Visual Studio
 

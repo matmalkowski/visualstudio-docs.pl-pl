@@ -1,10 +1,10 @@
 ---
-title: "Wprowadzenie do języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Wprowadzenie do języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
 manager: ghogen
@@ -12,11 +12,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -32,7 +32,7 @@ Aby z niego skorzystać, potrzebujesz kopię programu Visual Studio 2017 wersji 
 
 Jeśli nie jest jeszcze uruchomiona, uruchom program Visual Studio.
 
-![IDE z Visual C &43; &#43; ustawienia stosowane](../ide/media/get-started-cpp-ide-layout.png "IDE z Visual C &43; &#43; zastosowane ustawienia")
+![IDE z Visual C&#43; &#43; zastosowane ustawienia](../ide/media/get-started-cpp-ide-layout.png "IDE z Visual C&#43; &#43; zastosowane ustawienia")
 
 Po otwarciu programu Visual Studio można wyświetlić trzy podstawowe części IDE: narzędzia systemu windows, menu i pasków narzędzi oraz obszaru głównego okna. Narzędzia systemu windows są zadokowane po lewej i prawej stronie okna aplikacji. **Szybkie uruchamianie** okno, na pasku menu i narzędzi Standardowy znajdują się u góry. Zawiera środek okna **— strona początkowa**. Po otwarciu rozwiązania lub projektu, w tym miejscu są wyświetlane edytory oraz projektantów. Podczas opracowywania aplikacji, większość czasu jest spędzana w tym obszarze centralnej.
 

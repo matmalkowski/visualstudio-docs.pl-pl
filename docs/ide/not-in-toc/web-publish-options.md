@@ -1,27 +1,27 @@
 ---
 title: Jakie opcje publikowania jest dla mnie odpowiednia? | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 
+caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # Jakie opcje publikowania jest dla mnie odpowiednia?
 
@@ -32,7 +32,7 @@ Z poziomu programu Visual Studio, aplikacji sieci Web mogą być publikowane bez
 - [System plików](#file-system)
 - [Niestandardowe elementy docelowe (usług IIS, FTP, itp.) ](#custom-targets), która obejmuje wszystkie serwery sieci web dowolnego.
 
-Na **publikowania** kartę, wybierz istniejący profil publikowania, zaimportować istniejący lub Utwórz nową przy użyciu opcji opisanych w tym miejscu.
+Na **publikowania** kartę, wybierz istniejący profil publikowania, zaimportować istniejący lub Utwórz nową przy użyciu opcji opisanych w tym miejscu. Aby skorzystać z samouczka opcje publikowania w IDE dla różnych typów aplikacji, zobacz [Pierwsze spojrzenie na wdrożenie](../../deployment/deploying-applications-services-and-components.md).
 
 ## Aplikacje sieci Web usługi aplikacji Azure
 

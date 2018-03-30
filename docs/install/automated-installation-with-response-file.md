@@ -1,26 +1,28 @@
 ---
-title: "Proces instalacji programu Visual Studio przy użyciu pliku odpowiedzi | Dokumentacja firmy Microsoft"
-description: "Dowiedz się, jak utworzyć plik odpowiedzi JSON, który pomaga zautomatyzować instalację programu Visual Studio"
+title: Proces instalacji programu Visual Studio przy użyciu pliku odpowiedzi | Dokumentacja firmy Microsoft
+description: Dowiedz się, jak utworzyć plik odpowiedzi JSON, który pomaga zautomatyzować instalację programu Visual Studio
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8bb0cfca6efe913b38a94daf0ed846699f0266cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2f1da58e8e0b28c266dd64113d203fa902fc2a36
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Sposób definiowania ustawień w pliku odpowiedzi
 Administratorzy, którzy wdrażają Visual Studio można określić plik odpowiedzi przy użyciu `--in` parametru, jak w poniższym przykładzie:

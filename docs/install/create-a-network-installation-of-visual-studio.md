@@ -1,25 +1,27 @@
 ---
-title: "Utworzyć sieciowej instalację programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Opisuje sposób tworzenia sieci punktu instalacji do wdrażania w przedsiębiorstwie programu Visual Studio"
+title: Utworzyć sieciowej instalację programu Visual Studio | Dokumentacja firmy Microsoft
+description: Opisuje sposób tworzenia sieci punktu instalacji do wdrażania w przedsiębiorstwie programu Visual Studio
 ms.date: 10/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4ab112faf1db5ebde4d92b34e349352187999fae
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017 r.
 
@@ -52,15 +54,15 @@ Musi mieć połączenie internetowe, aby ukończyć ten krok. Do utworzenia inst
    > [!TIP]
    > Upewnij się, uruchom polecenie z katalogu pobierania. Zwykle to jest `C:\Users\<username>\Downloads` na komputerze z systemem Windows 10.
 
-- Dla programu Visual Studio Enterprise Uruchom polecenie:
+- For Visual Studio Enterprise, run:
 
   ```vs_enterprise.exe --layout c:\vs2017offline```
 
-- Dla programu Visual Studio Professional Uruchom polecenie:
+- For Visual Studio Professional, run:
 
   ```vs_professional.exe --layout c:\vs2017offline```
 
-- Dla programu Visual Studio Community Uruchom polecenie:
+- For Visual Studio Community, run:
 
   ```vs_community.exe --layout c:\vs2017offline```
 
@@ -79,10 +81,10 @@ Host układu w udziale sieciowym, co może być uruchamiane z innych komputerów
 
 Dostępnych jest kilka opcji, w którym można dostosować układ sieci. Możesz utworzyć układ częściowej zawiera tylko określonego zestawu [ustawień regionalnych języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [obciążeń, składniki oraz ich zależności zalecane lub opcjonalne](workload-and-component-ids.md). Może to być przydatne, jeśli wiadomo, że zamierzasz wdrożyć tylko podzestaw obciążeń na klienckich stacjach roboczych. Typowe parametry wiersza polecenia dostosowywania układ obejmują:
 
-* ```--add```Aby określić [identyfikatorów obciążenia lub składnik](workload-and-component-ids.md).  Jeśli `--add` jest używana, tylko obciążeń i składniki określony za pomocą `--add` zostaną pobrane.  Jeśli `--add` jest nieużywane, obciążenia i wszystkie składniki zostaną pobrane.
-* ```--includeRecommended```Aby uwzględnić wszystkie składniki zalecane do określonego obciążenia identyfikatorów
-* ```--includeOptional```Aby uwzględnić wszystkie składniki zalecane i opcjonalne dla określonych obciążeń identyfikatorów.
-* ```--lang```Aby określić [ustawień regionalnych języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+* ```--add``` Aby określić [identyfikatorów obciążenia lub składnik](workload-and-component-ids.md).  Jeśli `--add` jest używana, tylko obciążeń i składniki określony za pomocą `--add` zostaną pobrane.  Jeśli `--add` jest nieużywane, obciążenia i wszystkie składniki zostaną pobrane.
+* ```--includeRecommended``` Aby uwzględnić wszystkie składniki zalecane do określonego obciążenia identyfikatorów
+* ```--includeOptional``` Aby uwzględnić wszystkie składniki zalecane i opcjonalne dla określonych obciążeń identyfikatorów.
+* ```--lang``` Aby określić [ustawień regionalnych języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
 
 Oto kilka przykładów sposobu tworzenia niestandardowego układu częściowej.
 
@@ -128,7 +130,7 @@ Po zainstalowaniu z układu zawartość, która jest zainstalowana są uzyskiwan
 
 Jeśli używasz `--wait` parametr, a następnie w zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest ustawiona na jedną z następujących wartości:
 
-  | **Wartość** | **Wynik** |
+  | **Wartość** | **Result** |
   | --------- | ---------- |
   | 0 | Operacja została wykonana pomyślnie |
   | 3010 | Operacja zakończyła się pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można go używać. |
@@ -143,7 +145,7 @@ Gdy będą dostępne aktualizacje produktu, może zaistnieć potrzeba [aktualiza
 > [!NOTE]
 > Bootstrappers 2017 usługi Visual Studio, które są dostępne na [VisualStudio.com](http://www.visualstudio.com) pobranie i zainstalowanie najnowszej wersji programu Visual Studio 2017 dostępny zawsze, gdy są uruchamiane. Jeśli już dziś Pobierz programu inicjującego Visual Studio i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio 2017, która jest dostępna w późniejszym czasie. W przypadku utworzenia układu, instalacja programu Visual Studio z tego układu instaluje określonej wersji programu Visual Studio, który istnieje w układzie. Mimo że nowszej wersji może istnieć w trybie online, otrzymasz wersji programu Visual Studio, która jest w układzie.
 
-Jeśli potrzebujesz do tworzenia układu dla starszej wersji programu Visual Studio 2017 r, można przejść do https://my.visualstudio.com na "rozwiązany" wersje programu Visual Studio 2017 bootstrappers pobrać.
+Jeśli potrzebujesz do tworzenia układu dla starszej wersji programu Visual Studio 2017 r, możesz przejść do https://my.visualstudio.com pobierania "fixed" wersje bootstrappers programu Visual Studio 2017 r.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Jak uzyskać pomoc techniczną dla Twojego Instalatora w trybie offline
 

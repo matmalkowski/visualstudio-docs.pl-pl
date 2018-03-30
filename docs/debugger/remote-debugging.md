@@ -2,12 +2,12 @@
 title: Zdalne debugowanie w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikacji Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalny debuger programu Visual Studio.
@@ -52,7 +52,7 @@ Jeśli po prostu chcesz pobrać i zainstalować zdalny debuger i nie wymagają �
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>(Opcjonalnie) Uruchamianie zdalnego debugera z udziału plików
+### <a name="fileshare_msvsmon"></a> (Opcjonalnie) Uruchamianie zdalnego debugera z udziału plików
 
 Zdalny debuger można znaleźć (**msvsmon.exe**) na komputerze przy użyciu programu Visual Studio Community, Professional lub Enterprise już zainstalowana. W niektórych scenariuszach Najprostszym sposobem konfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon.exe) z udziału plików. Ograniczenia użycia, zobacz stronę pomocy zdalny debuger (**Pomoc > użycia** w zdalnym debugerze).
 
@@ -69,7 +69,7 @@ Zdalny debuger można znaleźć (**msvsmon.exe**) na komputerze przy użyciu pro
 > [!TIP] 
 > Dla wiersza polecenia instalacji i informacje w wierszu polecenia, zobacz stronę pomocy, aby **msvsmon.exe** , wpisując ``msvsmon.exe /?`` w wierszu polecenia na komputerze z programem Visual Studio zainstalowany (lub przejdź do **Pomoc > użycia**w zdalnym debugerze).
   
-## <a name="requirements_msvsmon"></a>Wymagania
+## <a name="requirements_msvsmon"></a> Wymagania
 
 [!INCLUDE [remote-debugger-requirements](../debugger/includes/remote-debugger-requirements.md)]
   
@@ -77,7 +77,7 @@ Zdalny debuger można znaleźć (**msvsmon.exe**) na komputerze przy użyciu pro
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>Skonfigurować debugera zdalnego  
+### <a name="configure_msvsmon"></a> Skonfigurować debugera zdalnego  
 Po uruchomieniu go po raz pierwszy, można zmienić niektóre aspekty konfiguracji zdalnego debugera.
   
 -   Jeśli konieczne jest dodanie uprawnień dla innych użytkowników połączyć się ze zdalnym debugerem, wybierz **Narzędzia > uprawnienia**. Musisz mieć uprawnienia administratora, aby udzielić lub odmówić uprawnień.
@@ -94,7 +94,7 @@ Po uruchomieniu go po raz pierwszy, można zmienić niektóre aspekty konfigurac
      > [!WARNING]
      >  Istnieje możliwość uruchomienia narzędzi zdalnych w trybie Bez uwierzytelnienia, ale używanie tego trybu jest zdecydowanie odradzane. Po uruchomieniu w tym trybie nie ma zabezpieczeń sieci. Wybierz tryb bez uwierzytelniania tylko wtedy, gdy masz pewność, że sieć nie jest narażone złośliwego lub szkodliwy ruch.
 
-##  <a name="bkmk_configureService"></a>(Opcjonalnie) Konfigurowanie zdalnego debugera jako usługi
+##  <a name="bkmk_configureService"></a> (Opcjonalnie) Konfigurowanie zdalnego debugera jako usługi
 Do debugowania w programie ASP.NET oraz innych środowiskach serwera, należy Uruchom zdalny debuger jako Administrator lub, jeśli ma ona zawsze uruchomiona, uruchom zdalny debuger jako usługa.
   
  Jeśli chcesz skonfigurować debugera zdalnego jako usługi, wykonaj następujące kroki.  

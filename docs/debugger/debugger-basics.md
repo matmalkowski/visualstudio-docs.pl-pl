@@ -1,11 +1,12 @@
 ---
 title: Podstawowe informacje o debugerze | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - debugger, about debugger
 - debugger, roadmap
 ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="debugger-basics"></a>Podstawowe informacje o debugerze
 Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wykonawczego programu i Znajdź błędy logiczne. Debuger współpracuje z wszystkie języki programowania Visual Studio i ich skojarzonych bibliotek. Z debugera mogą być dzielone wykonanie kroków opisanych w kodzie i oceny zmiennych w aplikacji.  

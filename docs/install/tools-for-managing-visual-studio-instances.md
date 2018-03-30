@@ -1,25 +1,27 @@
 ---
-title: "Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "{{SYMBOL ZASTĘPCZY}}"
+title: Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio | Dokumentacja firmy Microsoft
+description: '{{PLACEHOLDER}}'
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ad0dfcdaf353d94b7d0ea255def0839069b0a39e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1931866f15f1902de659fcd8a43f05c82affc832
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio
 
@@ -33,7 +35,7 @@ Wprowadzono kilka narzędzi pomagających wykrywać i zarządzanie nimi zainstal
 Ponadto [ustawienia konfiguracji API](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć własne narzędzia przeszukiwania wystąpieniami programu Visual Studio.
 
 ## <a name="using-vswhereexe"></a>Przy użyciu vswhere.exe
-`vswhere.exe`jest automatycznie uwzględnione w Visual Studio 2017 wersji 15,2 lub powyżej, lub użytkownik może go pobrać z [strony wersjach](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` można pobrać informacji na temat narzędzia pomocy. Na przykład to polecenie przedstawia wszystkich wersji programu Visual Studio, w tym starsze wersje produktu i uwzględniane wersje wstępne i umieszcza wyniki w formacie JSON:
+`vswhere.exe` jest automatycznie uwzględnione w Visual Studio 2017 wersji 15,2 lub powyżej, lub użytkownik może go pobrać z [strony wersjach](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` można pobrać informacji na temat narzędzia pomocy. Na przykład to polecenie przedstawia wszystkich wersji programu Visual Studio, w tym starsze wersje produktu i uwzględniane wersje wstępne i umieszcza wyniki w formacie JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -57,7 +59,7 @@ Jak te wpisy nie są przechowywane w rejestrze globalnej, istnieją specjalne in
    ```
 
 > [!NOTE]
-> `<config>`odnosi się do wystąpienia programu Visual Studio, który chcesz przeglądać.
+> `<config>` odnosi się do wystąpienia programu Visual Studio, który chcesz przeglądać.
 
 Pojawi się monit o podanie nazwy hive, która staje się nazwa sieci izolowanej hive. Po wykonaniu tej czynności można przeglądać rejestru w gałęzi izolowanego utworzony.
 

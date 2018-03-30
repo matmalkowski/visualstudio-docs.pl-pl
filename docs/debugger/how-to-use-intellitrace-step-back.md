@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zwroty kroku migawki widoku przy użyciu funkcji IntelliTrace w programie Visual Studio
 
@@ -39,11 +39,11 @@ W tym samouczku obejmują:
 
 1. Otwórz projekt w programie Visual Studio Enterprise.
 
-1. Przejdź do **Narzędzia > Opcje > IntelliTrace** ustawienia, a następnie wybierz opcję **IntelliTrace zdarzenia i migawek**. 
+1. Otwórz **narzędzia** > **opcje** > **IntelliTrace** ustawienia, a następnie wybierz opcję **IntelliTrace zdarzeń i migawki** . 
 
     ![Włącz tryb zdarzeń funkcji IntelliTrace i migawki](../debugger/media/intellitrace-enable-snapshots.png "tryb migawki i włączyć zdarzeń funkcji IntelliTrace")
 
-1. Ustaw co najmniej jednego punktu przerwania w projekcie i Rozpocznij debugowanie (naciśnij klawisz **F5**), lub uruchomić debugowanie przy przechodzeniu przez kod (**F10** lub **F11**).
+1. W projekcie, ustawić co najmniej jednego punktu przerwania i Rozpocznij debugowanie (naciśnij klawisz **F5**), lub uruchomić debugowanie przy przechodzeniu przez kod (**F10** lub **F11**).
 
     IntelliTrace tworzy migawkę proces aplikacji w debugerze każdego zdarzenia krok i punktu przerwania. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna, oraz inne zdarzenia funkcji IntelliTrace. Aby otworzyć to okno, wybierz polecenie **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 

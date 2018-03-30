@@ -2,31 +2,31 @@
 title: Wprowadzenie do debugera w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Wprowadzenie do debugera programu Visual Studio
 Debuger programu Visual Studio jest łatwy w użyciu w dowolnym języku. W tym miejscu zostanie omówiony sposób debugowania prosty program C#, ale te same kroki można zastosować do kodu w innych językach, takich jak C++ i JavaScript.
 
 Aby obejrzeć film przedstawiający podobne funkcje, zobacz [wprowadzenie do debugera](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Debugowanie projektu podstawowe języka C#  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Debugowanie projektu podstawowe języka C#  
  Zacznijmy od prostą aplikację konsoli języka C# (**Plik > Nowy > Projekt**, a następnie wybierz pozycję **Visual C#** , a następnie **aplikacji konsoli**). Jeśli nigdy nie pracował z programu Visual Studio przed, zobacz [wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** metody tylko dodaje 1 do zmienna całkowitoliczbowa 10 razy i wynik do konsoli:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Aby uzyskać więcej informacji na temat punktów przerwania, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Sprawdź zmienne  
+##  <a name="BKMK_Inspect_Variables"></a> Sprawdź zmienne  
  Debugowanie często pociąga za sobą znajdowanie zmienne, które nie zawierają wartości, których można oczekiwać w określonym punkcie. Pokazano niektóre metody sprawdzić zmiennych.  
   
  Uruchom ponownie debugowanie. Zatrzymuje wykonanie przed `Console.WriteLine` kod jest wykonywany. Może spowodować jej do wykonania podczas przeglądania do przodu (kliknij **Debuguj > Step Over** lub **F10**). W takim przypadku można wybrano **Step Into** (**F11**) i zaakceptujesz takiego samego wyniku; wyjaśniamy różnica później. Wiersz z ostatnich nawias klamrowy metody powinny włączono żółty. Sprawdź okno konsoli. Powinny pojawić się **10**.  

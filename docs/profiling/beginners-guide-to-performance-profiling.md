@@ -1,13 +1,13 @@
 ---
-title: "Profilowanie wydajności aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Profilowanie wydajności aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profilowanie wydajności aplikacji w programie Visual Studio
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **użycie procesora CPU** kartę narzędzi diagnostycznych można uzyskać danych wydajności dla aplikacji. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.
@@ -43,6 +43,12 @@ W tym temacie omówiono Analiza użycia procesora CPU w normalnym przepływie pr
 
 > [!NOTE]
 > Dla platformy .NET Core i ASP.NET Core narzędzia użycie procesora CPU aktualnie nie zawiera prawidłowych wyników z PBDs przenośnej. Zamiast tego użyj pełne pliki PDB.
+
+W tym samouczku obejmują:
+
+> [!div class="checklist"]
+> * Zbieranie danych o użyciu procesora CPU
+> * Analizowanie danych użycia procesora CPU
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Zbieranie danych profilowania 
   
@@ -155,9 +161,10 @@ Użyj pola wyszukiwania można znaleźć węzła, którego szukasz, a następnie
 
 > [!TIP]
 > Jeśli profil zewnętrznego kodu, który wywołuje funkcje systemu Windows, należy upewnić się, czy masz najnowsze pliki PDB. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [Określ symboli (.pdb) i plików źródłowych w debugerze](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  
-## <a name="see-also"></a>Zobacz też  
- [Użycie pamięci](../profiling/memory-usage.md)  
- [Użycie procesora CPU](../profiling/cpu-usage.md)  
- [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przegląd funkcji profilowania](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>Następne kroki
+
+W tym samouczku kiedy znasz już jak zbieranie i analizowanie danych użycia procesora CPU. Jeśli została już ukończona [samouczek profilera](../profiling/profiling-feature-tour.md), możesz pobrać krótki przegląd sposobu analizy użycia pamięci w aplikacjach.
+
+> [!div class="nextstepaction"]
+> [Analizowanie użycia pamięci](../profiling/memory-usage.md) 

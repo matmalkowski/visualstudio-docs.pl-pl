@@ -1,13 +1,13 @@
 ---
-title: "Rozpocząć debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft"
+title: Rozpocząć debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Rozpocząć debugowanie aplikacji wielowątkowych w programie Visual Studio
 Program Visual Studio udostępnia wiele narzędzi i elementy interfejsu użytkownika, aby pomóc w debugowaniu aplikacji wielowątkowych. Ten samouczek przedstawia sposób użycia znaczników wątku **stosów równoległych** okna, **czujki równoległej** okna, warunkowych punktów przerwania, a punkty przerwania filtru. W tym samouczku zajmuje tylko kilka minut, ale jego wypełnieniu umożliwia zapoznanie się z funkcjami do debugowania aplikacji wielowątkowych.
@@ -319,7 +319,7 @@ Można Flaga wątków, które chcesz nadać szczególną uwagę. Flagowanie wąt
 
 Aby usuwanie oflagowania wątków, kliknąć prawym przyciskiem myszy jeden lub więcej wątków oflagowanych w **czujki równoległej** okna i wybierz polecenie **Unflag**.
 
-## <a name="bkmk_freeze"></a>Zamrażanie i odblokowania wykonywanie wątków 
+## <a name="bkmk_freeze"></a> Zamrażanie i odblokowania wykonywanie wątków 
 
 > [!TIP]
 > Możesz zablokować i odblokować (wstrzymywania i wznawiania) wątków, aby określić kolejność, w którym wątków wykonywania pracy. To może pomóc rozwiązać problemy ze współbieżnością, takich jak zakleszczenie i zastępować warunków.
@@ -340,7 +340,7 @@ Aby usuwanie oflagowania wątków, kliknąć prawym przyciskiem myszy jeden lub 
 
     Aplikacja może także utworzyć wystąpienia niektóre nowe wątki. Zwróć uwagę, że wszystkie nowe wątki są bez flagi i nie są zablokowane.
 
-## <a name="bkmk_follow_a_thread"></a>Wykonaj jeden wątek za pomocą warunkowe punkty przerwania
+## <a name="bkmk_follow_a_thread"></a> Wykonaj jeden wątek za pomocą warunkowe punkty przerwania
 
 Czasami może być przydatne do wykonania wykonywania jest jeden wątek w debugerze. Jedną z metod można to zrobić zamrażanie wątków, które nie są zainteresowane, ale w niektórych przypadkach warto wykonaj pojedynczego wątku bez zamrażanie innych wątków (do określonego usterek, na przykład reprodukcja). Do wykonania wątku bez zamrażanie inne wątki, można uniknąć dzielenia na kod z wyjątkiem w wątku, który chcesz. Można to zrobić przez ustawienie [warunkowych punktów przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
