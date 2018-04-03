@@ -1,7 +1,8 @@
 # [Dokumentacja wdrażania](index.md)
 # Omówienie
-## [Omówienie wdrożenia](deploying-applications-services-and-components.md)
+## [Omówienie wdrażania](deploying-applications-services-and-components-resources.md)
 # Przewodniki Szybki Start
+## [Pierwsze spojrzenie na wdrażanie](deploying-applications-services-and-components.md)
 ## [Wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md)
 ## [Wdrażanie w witrynie internetowej](quickstart-deploy-to-a-web-site.md)
 ## [Wdrażanie na platformie Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [<Signature>, element (Wdrażanie ClickOnce)](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting>, element (Wdrażanie ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Dokumentacja niezarządzanego interfejsu API ClickOnce](clickonce-unmanaged-api-reference.md)
-# Resources
-## [Wdrażanie aplikacji, usług i składników](deploying-applications-services-and-components-resources.md)
 

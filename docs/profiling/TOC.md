@@ -1,8 +1,8 @@
 
 # [Dokumentacja profilowania](index.md)
 # Omówienie
-## [Przewodnik po funkcjach profilowania](profiling-feature-tour.md)
 # Przewodniki Szybki Start
+## [Pierwsze spojrzenie na profilowanie](profiling-feature-tour.md)
 ## [Analizowanie użycia procesora CPU (zarządzane)](quickstart-cpu-usage-managed.md)
 ## [Analizowanie użycia procesora CPU (natywne)](quickstart-cpu-usage-native.md)
 ## [Analizowanie użycia procesora CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)
