@@ -1,8 +1,8 @@
 ---
 layout: HubPage
-hide_bc: 
+hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
-description: "Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń."
+description: Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
 ms.topic: hub-page
 ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
 ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
