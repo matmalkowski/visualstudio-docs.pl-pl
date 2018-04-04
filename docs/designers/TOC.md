@@ -20,6 +20,7 @@
 #### [Produkty i usługi związane z ułatwieniami dostępu (Blend)](accessibility-products-and-services-blend.md)
 ### [Skróty klawiaturowe w projektancie XAML](keyboard-shortcuts-for-xaml-designer.md)
 ### [Debugowanie lub wyłączanie kodu projektu w projektancie XAML](debugging-or-disabling-project-code-in-xaml-designer.md)
+### [Błędy i ostrzeżenia XAML](xaml-errors-warnings.md)
 ## [Tworzenie nowoczesnych aplikacji klasycznych przy użyciu platformy Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [Wprowadzenie do korzystania z platformy WPF](getting-started-with-wpf.md)
 #### [Wprowadzenie do WPF](introduction-to-wpf.md)

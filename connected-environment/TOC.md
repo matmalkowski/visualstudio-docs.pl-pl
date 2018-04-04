@@ -30,6 +30,7 @@
 
 # Instrukcje
 ##[Udostępnianie środowiska deweloperskiego](how-to/share-dev-environment.md)
+##[Korzystanie z niestandardowego źródła NuGet](how-to/use-a-custom-nuget-feed.md)
 ##[Use kubectl with Visual Studio Connected Environment (Używanie interfejsu kubectl z połączonym środowiskiem programu Visual Studio)](how-to/use-kubectl-with-vsce.md)
 
 # [Rozwiązywanie problemów](troubleshooting.md)
