@@ -1,31 +1,31 @@
 ---
-title: "Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio | Dokumentacja firmy Microsoft"
-description: 
-ms.custom: 
+title: Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio | Dokumentacja firmy Microsoft
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 Mamy rozwiązania najczęstszych błędów dotyczących sieci lub serwera proxy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwer proxy.
@@ -38,7 +38,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 - Uruchom ponownie program Visual Studio. Powinny być wyświetlane okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
 
-- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje problemu, może to oznaczać czy serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http: &#47; &#47;go.microsoft.com adresów, ale jest to spowodowane &#42;. adresy visualStudio.com. Na tych serwerach należy wziąć pod uwagę listę dozwolonych podobnej o następujących adresach URL, aby odblokować wszystkie logowania scenariusze w programie Visual Studio:
+- Jeśli ponowne uruchomienie programu Visual Studio nie rozwiązuje problemu, może to oznaczać czy serwer proxy nie jest wyświetlany monit o poświadczenia dla protokołu http:&#47;&#47;go.microsoft.com adresów, ale jest to spowodowane &#42;. visualStudio.com adresów. Na tych serwerach należy wziąć pod uwagę listę dozwolonych podobnej o następujących adresach URL, aby odblokować wszystkie logowania scenariusze w programie Visual Studio:
 
     - &#42;.windows.net
 
@@ -50,7 +50,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
     - &#42;.live.com
 
-- W przeciwnym razie można usunąć http: &#47; &#47;go.microsoft.com adres z listy dozwolonych, aby w oknie dialogowym uwierzytelniania serwera proxy zostaną wyświetlone dla obu http: &#47; &#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponowne uruchomienie.
+- W przeciwnym razie można usunąć http:&#47;&#47;go.microsoft.com adres z listy dozwolonych, dzięki czemu dialog uwierzytelniania serwera proxy zostaną wyświetlone dla obu http:&#47;&#47;go.microsoft.com adres i punkty końcowe serwera, gdy program Visual Studio ponowne uruchomienie.
 
     LUB
 
@@ -98,13 +98,13 @@ Włącz połączenia dla następujących adresów URL:
 
 - https:&#47;&#47;app.vsspsext.visualstudio.com
 
-- &#42;. azurewebsites.NET (dla połączeń Azure)
+- &#42;. azurewebsites.net (dla połączeń Azure)
 
 - &#42;.visualstudio.com
 
 - CDN.vsassets.IO (hosty sieci dostarczania zawartości lub CDN, zawartości)
 
-- &#42;. gallerycdn.vsassets.IO (rozszerzenia programu VSTS hostów)
+- &#42;. gallerycdn.vsassets.io (rozszerzenia programu VSTS hostów)
 
 - static2.sharepointonline.com (obsługuje zasoby używane przez program Visual Studio w zestawie sieci szkieletowej interfejsu użytkownika pakietu Office, takich jak czcionki)
 

@@ -15,14 +15,14 @@ helpviewer_keywords:
 - command-line
 author: tglee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f1da58e8e0b28c266dd64113d203fa902fc2a36
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 2bbfff39dce34bfa8595f4e34222e3e61ac67fb5
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Sposób definiowania ustawień w pliku odpowiedzi
 Administratorzy, którzy wdrażają Visual Studio można określić plik odpowiedzi przy użyciu `--in` parametru, jak w poniższym przykładzie:

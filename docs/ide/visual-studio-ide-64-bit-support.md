@@ -1,12 +1,7 @@
 ---
-title: "Obsługa 64-bitowego środowiska IDE programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obsługa 64-bitowego środowiska IDE programu Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-general
 ms.topic: article
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -17,15 +12,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e9fe08a05d26dc4d226ca53d929e9889a7c98c41
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: ede476b4217ccf730775799cfa3af400513e98fe
+ms.sourcegitcommit: 627708d128a91656e34ce5d8e061102da4c66b4d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Obsługa 64-bitowego środowiska IDE programu Visual Studio
 
-Program Visual Studio umożliwia konfigurowanie aplikacji pod kątem różnych platform, w tym platformach 64-bitowych. Aby uzyskać więcej informacji dotyczących obsługi 64-bitowej platformy w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps.md).
+Program Visual Studio umożliwia konfigurowanie aplikacji pod kątem różnych platform, w tym platformach 64-bitowych. Aby uzyskać więcej informacji dotyczących obsługi 64-bitowej platformy w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps).
 
 ## <a name="deploying-a-64-bit-application"></a>Wdrażanie aplikacji 64-bitowych
 

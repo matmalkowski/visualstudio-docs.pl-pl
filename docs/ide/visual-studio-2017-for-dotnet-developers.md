@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 wydajność przewodnik dla deweloperów platformy .NET
 
@@ -31,12 +31,7 @@ Jeśli pochodzących z innego środowiska IDE lub środowisko programistyczne, m
 - [Klawisze dostępu dla programu Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Galerii rozszerzeń programu Visual Studio](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-Poniżej przedstawiono popularne skróty programu Visual Studio. 
-
-> [!NOTE]
-> Niektóre rozszerzenia usunięcia powiązania powiązań kluczy programu Visual Studio domyślne, należy przywrócić je, aby użyć następujących poleceń. Przywróć domyślne Visual Studio z powiązań kluczy, przechodząc do: **Narzędzia > Import i eksport ustawień > zresetować wszystkie ustawienia** lub **Narzędzia > Opcje > klawiatury > Resetuj**.
+Poniżej przedstawiono popularne skróty programu Visual Studio: 
 
 | Skrót (wszystkie profile) | Polecenie | Opis |
 |-|-|-|
@@ -52,6 +47,9 @@ Poniżej przedstawiono popularne skróty programu Visual Studio.
 | **Ctrl+F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
 | **CTRL + K, D** (profil domyślny) lub **Ctrl + E, D** (profil C#) | Format dokumentu | Czyści formatowanie naruszeń w pliku są oparte na nowym wierszem, odstępy i ustawienia wcięć |
 | **CTRL +\\, E** (profil domyślny) lub **Ctrl + W, E** (profil C#) | Widok listy błędów | Zobacz wszystkie błędy w dokumencie, projektu lub rozwiązania |
+
+> [!NOTE]
+> Niektóre rozszerzenia usunięcia powiązania powiązań kluczy programu Visual Studio domyślne. Aby użyć następujących poleceń, Przywróć z powiązań kluczy programu Visual Studio domyślne, przechodząc do **Narzędzia > Import i eksport ustawień > zresetować wszystkie ustawienia** lub **Narzędzia > Opcje > klawiatury > Resetuj**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>I muszą mieć możliwość szybkiego przechodzenia do plików lub typów.
 Visual Studio 2017 ma funkcję _przejdź do wszystkich_ (**Ctrl + T**). Przejdź do wszystkich umożliwia szybkie przejście do pliku, typu, elementu członkowskiego lub deklaracji symbolu.

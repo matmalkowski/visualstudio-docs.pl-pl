@@ -1,11 +1,7 @@
 ---
 title: Typowe szybkie akcje | Dokumentacja firmy Microsoft
-ms.custom: ''
-ms.date: 11/30/2017
-ms.reviewer: ''
-ms.suite: ''
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e8a0bf2e0dffa4e1cd5793f8cd638623288bbfa8
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
-W sekcjach w tym temacie wymieniono niektóre typowe szybkie akcje, które mają zastosowanie do kodu zarówno C# i Visual Basic.
+W sekcjach w tym temacie wymieniono niektóre typowe szybkie akcje, które mają zastosowanie do kodu zarówno C# i Visual Basic. Te akcje są *kodu poprawki* wbudowanych [reguły analizatora](../code-quality/roslyn-analyzers-overview.md) w programie Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Akcje, które błędy
 
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>Zobacz także
 
-[Szybkie akcje](../ide/quick-actions.md)  
+[Szybkie akcje](../ide/quick-actions.md)

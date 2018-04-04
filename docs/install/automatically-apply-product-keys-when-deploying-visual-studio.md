@@ -1,28 +1,30 @@
 ---
-title: "Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3fbea34afa4e82ea360a0dfefe4f18dc74d11f19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 Można zastosować klucza produktu programowego jako część skrypt, który służy do automatyzowania wdrażania programu Visual Studio. Możesz ustawić klucz produktu na urządzeniu programowo podczas instalacji programu Visual Studio lub po zakończeniu instalacji.
 
 ## <a name="apply-the-license-after-installation"></a>Po zainstalowaniu Zastosuj licencji
- Zainstalowana wersja programu Visual Studio przy użyciu klucza produktu można aktywować przy użyciu `StorePID.exe` narzędzia na komputerach docelowych w trybie dyskretnym. `StorePID.exe`to narzędzie program, który instaluje z programu Visual Studio 2017 w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+ Zainstalowana wersja programu Visual Studio przy użyciu klucza produktu można aktywować przy użyciu `StorePID.exe` narzędzia na komputerach docelowych w trybie dyskretnym. `StorePID.exe` to narzędzie program, który instaluje z programu Visual Studio 2017 w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
 
  Uruchom `StorePID.exe` z podwyższonym poziomem uprawnień, albo za pomocą agenta programu System Center lub wiersza polecenia o podniesionych uprawnieniach. Po nim za pomocą klucza produktu i kod produktu firmy Microsoft (MPC).
 
@@ -41,7 +43,7 @@ Można zastosować klucza produktu programowego jako część skrypt, który sł
 
  Poniższa tabela zawiera listę kodów MPC dla każdej wersji programu Visual Studio:
 
-| Wersja programu Visual Studio                | MPC   |
+| Visual Studio Edition                | MPC   |
 |--------------------------------------|-------|
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |

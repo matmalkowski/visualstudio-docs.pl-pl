@@ -1,12 +1,13 @@
 ---
-title: "Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -14,13 +15,14 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
 Po zainstalowaniu programu Visual Studio 2017 z wiersza polecenia, można użyć różnych parametrów wiersza polecenia kontroli lub dostosowanie instalacji. W wierszu polecenia można wykonywać następujące czynności:
@@ -38,14 +40,14 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 ## <a name="list-of-command-line-parameters"></a>Lista parametrów wiersza polecenia  
  Visual Studio parametry wiersza polecenia jest rozróżniana wielkość liter.
 
-> Składnia:`vs_enterprise.exe [command] <options>...`
+> Składnia: `vs_enterprise.exe [command] <options>...`
 
 (Zastąp `vs_enterprise.exe` odpowiednio dla wersji produktu instalujesz.)
 
 >[!TIP]
 > Więcej przykładów dotyczących sposobu instalacji programu Visual Studio 2017 za pomocą wiersza polecenia, zobacz [przykłady parametru wiersza polecenia](command-line-parameter-examples.md) strony.)
 
-| **Polecenie** | **Opis** |
+| **polecenie** | **Opis** |
 | ----------------------- | --------------- |
 | (pusty) | Instaluje produkt. |
 | `modify` | Modyfikuje zainstalowany produkt. |

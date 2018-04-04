@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Community 2017 obciążenia i składnik identyfikatorów | Dokumentacja firmy Microsoft"
-description: "Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifeście VSIX"
-keywords: 
+title: Visual Studio Community 2017 obciążenia i składnik identyfikatorów | Dokumentacja firmy Microsoft
+description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifeście VSIX
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.date: 03/05/2017
-ms.topic: article
+manager: douge
+ms.date: 03/05/2018
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 00f5158448c71df8b3906cf9ea36ec00cbb26698
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 120d1a3e6d536660b1c829467f900282fea1efcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-community-2017-workload-and-component-ids"></a>Visual Studio Community 2017 obciążenia i składnik identyfikatorów
 
@@ -682,7 +682,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Opis:** tworzyć aplikacje skalowalne sieci przy użyciu środowiska Node.js, asynchroniczne sterowane zdarzeniami środowiska wykonawczego języka JavaScript. 
+**Opis:** tworzyć aplikacje skalowalne sieci przy użyciu środowiska Node.js, asynchroniczne sterowane zdarzeniami środowiska wykonawczego języka JavaScript.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 

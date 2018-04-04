@@ -1,38 +1,38 @@
 ---
 title: Visual Studio Emulator for Android | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: de44978f60b42ccd91c6d362738981adffb05de9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulator programu Visual Studio dla systemu Android
 Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urządzenie z systemem Android. Umożliwia środowisku wirtualnym, w którym można debugowania i testowania aplikacji systemu Android bez urządzenia fizycznego. Umożliwia także izolowane środowisko prototypów aplikacji.  
+
+> [!IMPORTANT]
+> W większości przypadków emulator systemu Google Android jest zalecane używanie zamiast programu Visual Studio Emulator for Android:
+> - Jeśli jesteś w musi zawierający systemu Android w wersji 7.0 lub nowszej, ponieważ nie ma żadnych planów publikowania Android — obrazy emulatora obrazy poza do użycia w programie Visual Studio Emulator for Android w wersji 6.0.
+> - Przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji platformy Apache Cordova w systemie Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
   
  Visual Studio Emulator for Android zaprojektowano w celu zapewnienia można porównywać pod względem wydajności do rzeczywistego urządzenia. Przed opublikowaniem aplikacji, jednak zaleca się przetestowanie aplikacji na urządzeniu fizycznym.  
   
  Można przetestować aplikację na profilu unikatowych urządzeń dla każdej platformy systemu Android, rozdzielczości ekranu i innych właściwości sprzętu obsługiwana w programie Visual Studio Emulator for Android.
-
-> [!NOTE]
-> Emulator systemu Google Android jest zalecane w następujących przypadkach:
-> - Przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji platformy Apache Cordova w systemie Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
-> - Kiedy wymaga obrazów emulatora zawierających Android 7.0 lub nowszej, ponieważ nie ma żadnych planów publikowania Android obrazy poza do użycia w Visual Studio Emulator for Android w wersji 6.0.
   
-##  <a name="Installing"></a>Instalowanie i odinstalowywanie  
+##  <a name="Installing"></a> Instalowanie i odinstalowywanie  
  Instalowanie programu  
   
  Visual Studio Emulator for Android to składnik wieloplatformowych narzędzi dostępnych w programie Visual Studio i zostanie zainstalowany podczas niestandardowej instalacji programu Visual Studio po wybraniu wieloplatformowych aplikacji mobilnych, a następnie popularne narzędzia i zestawy Software Development Kit a następnie w programie Visual Studio Emulator for Android.  
@@ -46,7 +46,7 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
   
  Po odinstalowaniu programu Visual Studio Emulator for Android funkcji Hyper-V wirtualne Ethernet karty sieciowe utworzone dla emulator używany nie są automatycznie usuwane. Można ręcznie usunąć te wirtualne karty sieciowe (jeśli jest nieużywany), otwórz Menedżera funkcji Hyper-V, wybierając jedną z obrazami VHD emulatora, wybierając kartę sieci i wybierając pozycję **Usuń** dla wszystkich przełączników, które pojawia się na tej karcie.  
   
-##  <a name="Requirements"></a>Wymagania systemowe i zgodności z poprzednimi wersjami  
+##  <a name="Requirements"></a> Wymagania systemowe i zgodności z poprzednimi wersjami  
  Ważne informacje o sprzętu, oprogramowania i wymagania dotyczące konfiguracji dla programu Visual Studio Emulator for Android zobacz następujący temat.  
   
 -   [Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
@@ -55,7 +55,7 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
   
  Nowe wersje emulatora są instalowane na starsze wersje (i w niektórych przypadkach mogą zastąpić starego obrazów, odrzucając ustawień, aplikacji i plików instalowanych w tych obrazów).  
   
-##  <a name="Networking"></a>Obsługa sieci w programie Visual Studio Emulator for Android  
+##  <a name="Networking"></a> Obsługa sieci w programie Visual Studio Emulator for Android  
  Sieciowe połączenie emulatora programu Visual Studio dla systemu Android zachowuje się jak połączenie komputera stacjonarnego z tę charakterystykę:  
   
 -   Emulator pojawia się w sieci jako osobne urządzenia z adresu IP.  
@@ -70,7 +70,7 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
   
  Aby uzyskać informacje na temat rozwiązywania problemów z sieci, zobacz [Rozwiązywanie problemów z programu Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
-##  <a name="Configuring"></a>Konfigurowanie programu Visual Studio Emulator for Android  
+##  <a name="Configuring"></a> Konfigurowanie programu Visual Studio Emulator for Android  
  Testowanie aplikacji systemu Android dla zgodności między różnicowanie różnych Android sprzętu może być wyzwaniem. Telefony i tablety na rynku obejmują szeroki zakres wersji i rozmiaru ekranu i są dostępne w wielu różnych konfiguracji sprzętu (RAM, procesory, architektura itp.). Visual Studio Emulator for Android upraszcza to przy użyciu profilów urządzeń. Nasze zbiór profilów urządzeń reprezentują najpopularniejszych sprzętu na rynku, w tym urządzeń Samsung, firmie, Sony i LG.  
   
  W programie Visual Studio 2015 można zainstalować, odinstalować i uruchomić profilów urządzeń za pomocą Menedżera emulatora. Dostęp do Menedżera emulatora, wybierając **narzędzia**, następnie **programu Visual Studio Emulator for Android**.  
@@ -81,10 +81,10 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
   
  Po zainstalowaniu zbiór profilów, które ma zostać celem tych nowych profilów można uruchomić bezpośrednio z Menedżera naciskając zielonego **odtwarzanie** przycisku. Zostanie również pojawią się one w menu rozwijanym docelowego debugowania w typu i platform przenośnych projektu programu Visual Studio.  
   
-##  <a name="FeaturesTest"></a>Funkcje, które można sprawdzić w emulatorze  
+##  <a name="FeaturesTest"></a> Funkcje, które można sprawdzić w emulatorze  
  Aby uzyskać szczegółowe informacje na temat funkcji, można sprawdzić w emulatorze, zobacz ten [wpis w blogu](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
   
-##  <a name="FeaturesNonTest"></a>Funkcje, których nie można sprawdzić w emulatorze  
+##  <a name="FeaturesNonTest"></a> Funkcje, których nie można sprawdzić w emulatorze  
  Poniższa lista zawiera funkcje platformy systemu Android że **nie** testu w emulatorze. Należy przetestować te funkcje na urządzeniu fizycznym.  
   
 -   Kompas  
@@ -95,7 +95,7 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
   
 -   Jasność. Zmiana poziomu jasności emulatora będzie nie wizualnie wpływu na sposób wyświetlania na ekranie urządzenia.  
   
-##  <a name="Support"></a>Zasoby pomocy technicznej  
+##  <a name="Support"></a> Zasoby pomocy technicznej  
  Jeśli komputer-host spełnia wymagania systemowe i nie wystąpi problem omówione w tym przewodniku rozwiązywania problemów:  
   
 -   Zadaj pytanie na temat używania StackOverflow [emulatora systemu android](http://stackoverflow.com/questions/tagged/android-emulator) i znacznika visual studio.  

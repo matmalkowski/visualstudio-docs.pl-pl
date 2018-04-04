@@ -1,9 +1,6 @@
 ---
-title: "Pomijanie ostrzeżeń analizy kodu w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pomijanie ostrzeżeń analizy kodu w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
+# <a name="suppress-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
 
 Często jest to przydatne w celu wskazania, że ostrzeżenie nie dotyczy. Oznacza to, aby członkowie zespołu, który kodu zostało sprawdzone i można pominąć to ostrzeżenie. Pomijanie (ISS) używa źródła <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybutu w celu pominięcia ostrzeżenia. Ten atrybut można umieścić blisko segment kodu, który wygenerował ostrzeżenia. Możesz dodać <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybutu w pliku źródłowym, wpisując je, lub za pomocą menu skrótów na ostrzeżenie w **listy błędów** dodać ją automatycznie.
 
@@ -94,7 +91,7 @@ Jeśli ze względu na wydajność strict dla minimalizując pomijanie w źródł
 
 Ze względu na łatwość pominięcie Nazwa reguły nie jest zalecane.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Pomijanie selektywnego naruszeń w treści metody
+## <a name="suppress-selective-violations-within-a-method-body"></a>Pomiń selektywnego naruszeń w treści metody
 
 Atrybuty do pomijania można zastosować do metody, ale nie może być osadzony w treści metody. Oznacza to, że wszystkie naruszenia określonej reguły są pomijane, jeśli dodasz <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut do metody.
 
@@ -160,7 +157,7 @@ Pominięcia na poziomie globalnych są jedynym sposobem na wyświetlanie komunik
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`zawsze zawiera nazwę elementu w pełni kwalifikowana.
+> `Target` zawsze zawiera nazwę elementu w pełni kwalifikowana.
 
 ## <a name="global-suppression-file"></a>Plik pominięć globalnych
 
@@ -168,4 +165,5 @@ Plik pominięć globalnych przechowuje pominięć pominięcia na poziomie global
 
 ## <a name="see-also"></a>Zobacz także
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Użyj analizatorów Roslyn](../code-quality/use-roslyn-analyzers.md)

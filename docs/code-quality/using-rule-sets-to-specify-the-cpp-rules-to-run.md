@@ -1,25 +1,25 @@
 ---
-title: "Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803af4716a62411d01683d2dcb8155f8f4b80384
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 400b3228c1039ff7b859f769949c0c82c1939954
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Użyj zestawów reguł do określania reguł C++ do uruchomienia
 
 W programie Visual Studio, można tworzyć i modyfikować niestandardowy *zestaw reguł* do określonego projektu potrzeb skojarzonych z analizy kodu. Aby utworzyć regułę niestandardową C++ zestaw, projektu C/C++ musi być otwarty w programie Visual Studio IDE. Możesz następnie otwórz zestaw standardowych reguł w edytorze zestawu reguł, a następnie dodaj lub usuń określone zasady i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu Określa, że naruszono reguły.
 

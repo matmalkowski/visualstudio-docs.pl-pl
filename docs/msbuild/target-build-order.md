@@ -1,26 +1,26 @@
 ---
-title: "Docelowa kolejność kompilacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Docelowa kolejność kompilacji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf76debbaca82f9f60769ff5b5b166e40156c4c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt docelowy jest zależna od dane wyjściowe inny element docelowy. Aby określić kolejność uruchamiania obiektów docelowych, można użyć tych atrybutów:  
@@ -31,7 +31,7 @@ Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt
   
 -   `DependsOnTargets`. To `Target` atrybut określa elementy docelowe, które należy uruchomić, zanim będzie można uruchomić ten element docelowy.  
   
--   `BeforeTargets`i `AfterTargets`. Te `Target` atrybuty określają, że ten element docelowy powinien być wykonywany przed lub po określone elementy docelowe (MSBuild 4.0).  
+-   `BeforeTargets` i `AfterTargets`. Te `Target` atrybuty określają, że ten element docelowy powinien być wykonywany przed lub po określone elementy docelowe (MSBuild 4.0).  
   
  Element docelowy nigdy nie jest uruchamiane dwa razy podczas kompilacji, nawet jeśli zależy od niego kolejnych docelowego w kompilacji. Po uruchomieniu elementu docelowego jej udziału kompilacja zostanie zakończona.  
   
@@ -109,11 +109,11 @@ Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt
 ## <a name="determining-the-target-build-order"></a>Określenie kolejności kompilacji docelowej  
  MSBuild określa kolejność kompilowania obiektów docelowych w następujący sposób:  
   
-1.  `InitialTargets`obiekty docelowe są uruchamiane.  
+1.  `InitialTargets` obiekty docelowe są uruchamiane.  
   
 2.  Obiekty docelowe w wierszu polecenia przez **/target** przełącznika są uruchamiane. Jeśli określono elementów docelowych w wierszu polecenia, a następnie `DefaultTargets` uruchamiane są elementy docelowe. Jeśli nie będzie obecne, pierwszy element docelowy napotkano jest uruchamiany.  
   
-3.  `Condition` Atrybut docelowy jest obliczane. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilacji.  
+3.  `Condition` Atrybut docelowy jest obliczane. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilacji.
   
 4.  Przed wykonaniem docelowy jego `DependsOnTargets` uruchamiane są elementy docelowe.  
   

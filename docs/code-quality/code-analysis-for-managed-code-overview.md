@@ -1,12 +1,8 @@
 ---
-title: "Analiza kodu dla zarządzanego kodu — omówienie | Dokumentacja firmy Microsoft"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Kod — analiza kodu dla kodu zarządzanego w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Analiza kodu dla kodu zarządzanego ― omówienie
+# <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla zarządzanego kodu
+
+Visual Studio 2017 analizuje kodu zarządzanego na dwa sposoby: z starszych *FxCop* analizy statycznej zarządzanych zestawów i z platformą kompilatora .NET *analizatorów*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów platformy kompilatora .NET, zobacz [analizatorów omówienie Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 Analiza kodu dla kodu zarządzanego analizuje zarządzanych zestawów i raportuje informacje o zestawy, takie jak naruszenia programowania i reguły projektowania określonymi w wytycznych projektowych programu Microsoft .NET Framework.
 
@@ -76,5 +74,6 @@ Zintegrowane funkcje systemu kompilacji służy do uruchamiania narzędzia anali
 
 ## <a name="see-also"></a>Zobacz także
 
-[Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[Porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Omówienie analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md)
+- [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d68b2b8a4060d3c77bed996aa0b20054d989487b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: eee1ec05a46050c5a994aa2d774a5be0090171f3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Ustawienia testu jednostkowego dla kodu języka Python
 
@@ -37,7 +37,7 @@ Ten artykuł zawiera krótki konspektu jednostki testowanie możliwości program
 
 ## <a name="discovering-and-viewing-tests"></a>Wykrywanie i wyświetlanie testów
 
-Konwencja, Visual Studio identyfikuje testy są jako metody, których nazwy rozpoczynają się od `test`. Aby wyświetlić ten problem, wykonaj następujące czynności:
+Konwencja, Visual Studio identyfikuje testów jako metody, których nazwy rozpoczynają się od `test`. Aby wyświetlić ten problem, wykonaj następujące czynności:
 
 1. Otwórz [projektów języka Python](managing-python-projects-in-visual-studio.md) załadowane w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj > Nowy element...** , a następnie wybierz pozycję **testu jednostkowego języka Python** następuje **Dodaj**.
 

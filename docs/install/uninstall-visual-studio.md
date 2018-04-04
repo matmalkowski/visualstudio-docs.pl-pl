@@ -1,26 +1,28 @@
 ---
 title: Odinstaluj program Visual Studio 2017 | Dokumentacja firmy Microsoft
-description: "Dowiedz się, jak odinstalować program Visual Studio, krok po kroku."
-ms.custom: 
+description: Dowiedz się, jak odinstalować program Visual Studio, krok po kroku.
+ms.custom: ''
 ms.date: 08/16/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3f2d472d5fc4b6581a9e94e1c2efacc2299eaca0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c6ce572e621e8e49159ce0bd204539cb3fc38a45
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="uninstall-visual-studio"></a>Odinstaluj program Visual Studio
 Ta strona przeprowadzi Cię przez odinstalowanie programu Visual Studio, naszych zintegrowany pakiet narzędzi wydajności dla deweloperów.  
@@ -32,7 +34,7 @@ Ta strona przeprowadzi Cię przez odinstalowanie programu Visual Studio, naszych
      ![Instalator programu Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "zlokalizować Instalator programu Microsoft Visual Studio")
 
      >[!NOTE]
-     Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     Na niektórych komputerach, Instalator programu Visual Studio może być wyświetlany poniżej literę **"M"** jako **Microsoft Visual Studio Instalatora**.<br/><br/> Alternatywnie Instalator programu Visual Studio można znaleźć w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2.  Kliknij, aby uruchomić Instalatora, kliknij polecenie ![ikona szczegółów](media/vs2017uninstall-UninstallIcon.png "wybierz ikonę Opcje") ikonę, a następnie kliknij przycisk **Odinstaluj**.  
 
@@ -61,6 +63,6 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
-* [Modyfikowanie Visual Studio 2017 r.](modify-visual-studio.md)
+* [Modify Visual Studio 2017](modify-visual-studio.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Usuwanie programu Visual Studio](remove-visual-studio.md)

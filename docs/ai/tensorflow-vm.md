@@ -1,7 +1,7 @@
 ---
 title: Uruchom modelu TensorFlow w chmurze
-description: "Uruchom modelu tensorflow na platformie azure głębokie uczenia maszyny wirtualnej"
-keywords: "AI, programu visual studio, głębokie uczenia maszyny wirtualnej"
+description: Uruchom modelu tensorflow na platformie azure głębokie uczenia maszyny wirtualnej
+keywords: AI, programu visual studio, głębokie uczenia maszyny wirtualnej
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -12,11 +12,11 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Uczenie modelu przy użyciu TensorFlow w chmurze
 
@@ -42,7 +42,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Pobierz przykładowy kod
 
-Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierający wprowadzenie do uczenia głębokie TensorFlow, CNTK, Theano i próbek.
+Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierający wprowadzenie głębokie uczenie na TensorFlow, CNTK, Theano i próbek.
 
 ## <a name="open-project"></a>Otwórz projekt
 

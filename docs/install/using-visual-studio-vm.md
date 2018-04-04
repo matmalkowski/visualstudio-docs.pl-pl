@@ -1,24 +1,24 @@
 ---
-title: "Za pomocą programu Visual Studio na maszynie wirtualnej platformy Azure | Dokumentacja firmy Microsoft"
-description: "Dowiedz się, jak używać programu Visual Studio na maszynie wirtualnej platformy Azure"
+title: Za pomocą programu Visual Studio na maszynie wirtualnej platformy Azure | Dokumentacja firmy Microsoft
+description: Dowiedz się, jak używać programu Visual Studio na maszynie wirtualnej platformy Azure
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - azure services
 - virtual machine; VM
 - installation
 - visual studio
 author: PhilLee-MSFT
-ms.author: phillee
-manager: sacalla
+ms.author: tglee
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4492a35c7d58aa92c2c3e86de5bd6be8f8ad9eca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a id="top"> </a> Visual Studio obrazów na platformie Azure
 Za pomocą programu Visual Studio w wstępnie skonfigurowane Azure maszyny wirtualnej (VM) jest szybki i łatwy sposób przejść z nic do środowiska projektowego w górę i uruchomiona. Obrazy systemu z różnymi konfiguracjami programu Visual Studio są dostępne w [portalu Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
@@ -28,12 +28,13 @@ Jesteś nowym użytkownikiem usługi Azure? [Utwórz bezpłatne konto platformy 
 ## <a name="what-configurations-and-versions-are-available"></a>Jakie konfiguracje i wersje są dostępne?
 Obrazy do najnowszej wersji głównych, Visual Studio 2017 i programu Visual Studio 2015, można znaleźć w portalu Azure Marketplace. Dla każdej wersji głównych Zobacz pierwotnie wydanej wersji (RTW) oraz najnowsze zaktualizowane wersje. Każda z tych wersji oferuje wersje programu Visual Studio Community i Visual Studio Enterprise. Te obrazy są aktualizowane co najmniej co miesiąc uwzględnienie najnowsze aktualizacje programu Visual Studio i systemu Windows. Podczas nazwy obrazów pozostają takie same, opis każdego obrazu zawiera wersję zainstalowanego produktu i "daty" obrazu.
 
-| Wersja              | Wersje            | Wersja produktu:     |
-|:-----------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: R (wersja 15,6) |    Enterprise, Community     |      Wersja 15.6.0     |
-|         Visual Studio 2017: RTW           |    Enterprise, Community     |      Wersja 15.0.10    |
-|   Visual Studio 2015: R (Update 3)   |    Enterprise, Community     |  Wersja 14.0.25431.01  |
-|         Visual Studio 2015: RTW           |             Brak             | (Wygasł obsługi) |
+| Wersja                                              | Wersje                     |     Wersja produktu:     |
+|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
+| Visual Studio 2017: R (wersja 15,6)                    |    Enterprise, Community     |      Wersja 15.6.4     |
+| Programu Visual Studio 2017: Najnowszej wersji zapoznawczej (wersja 15.7, wersja zapoznawcza 3) |    Enterprise, Community     |      Wersja 15.7.0     |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.10    |
+|   Visual Studio 2015: R (Update 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01  |
+|         Visual Studio 2015: RTW                              |             Brak             | (Wygasł obsługi) |
 
 > [!NOTE]
 > Zgodnie z zasadami obsługi firmy Microsoft wygasł pierwotnie pełnej wersji programu Visual Studio 2015 (RTW) obsługi. Visual Studio 2015 Update 3 jest tylko wersja pozostałych oferowane dla linii produktów Visual Studio 2015.
@@ -54,7 +55,7 @@ Używamy poniższego wiersza polecenia do zainstalowania programu Visual Studio,
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
        add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^ 
+       add Microsoft.Net.Component.4.7.TargetingPack ^
        add Microsoft.Net.Component.4.6.2.SDK ^
        add Microsoft.Net.Component.4.6.2.TargetingPack ^
        add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
@@ -75,14 +76,14 @@ System Azure oferuje szeroką gamę rozmiarów maszyn wirtualnych. Ponieważ pro
    * Standard_D2_v2
    * Standard_D2S_v2
    * Standard_D3_v2
-    
+
 Aby uzyskać więcej informacji na najnowszej rozmiary zobacz [rozmiary dla systemu Windows maszyny wirtualne na platformie Azure](/azure/virtual-machines/windows/sizes).
 
 Przy użyciu platformy Azure możesz przeprowadzić ponowne równoważenie początkowy wybór zmiana rozmiaru maszyny Wirtualnej. Można udostępnić nowej maszyny Wirtualnej o rozmiarze bardziej odpowiednie lub zmień rozmiar istniejącej maszyny Wirtualnej na inny komputer źródłowy. Aby uzyskać więcej informacji, zobacz [Zmień rozmiar maszyny Wirtualnej systemu Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Po uruchomieniu maszyny Wirtualnej, co to jest dalej?
 Visual Studio następuje modelu "bring your own license" na platformie Azure. Podobnie jak w przypadku instalacji na sprzęcie jest jednym z pierwszych kroków licencjonowania instalację programu Visual Studio. Aby odblokować programu Visual Studio, albo:
-- Zaloguj się przy użyciu konta Microsoft, który został skojarzony z subskrypcją programu Visual Studio 
+- Zaloguj się przy użyciu konta Microsoft, który został skojarzony z subskrypcją programu Visual Studio
 - Klucz produktu dołączony do początkowej zakupu odblokować program Visual Studio
 
 Aby uzyskać więcej informacji, zobacz [Zaloguj się do programu Visual Studio](../ide/signing-in-to-visual-studio.md) i [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).

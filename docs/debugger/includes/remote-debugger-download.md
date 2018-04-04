@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  Na urządzeniu lub serwera komputera, na którym chcesz debugować (zamiast komputerze z programem Visual Studio) Pobierz poprawną wersję narzędzi remote Tools.
 
     |Wersja|Łącze|Uwagi|
     |-|-|-|
-    |Visual Studio 2017 (Najnowsza wersja)|[Zdalne narzędzia](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x86 lub x64). Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
+    |Visual Studio 2017 (Najnowsza wersja)|[Zdalne narzędzia](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Zawsze pobierana wersja dopasowania system operacyjny urządzenia (x86 lub x64). Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
     |Visual Studio 2017 (starsze)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Zdalne narzędzia dla wcześniejszych wersji programu Visual Studio 2017 r są dostępne z My.VisualStudio.com. Jeśli zostanie wyświetlony monit, sprzężenia wolnego grupy programu Visual Studio Dev Essentials lub zaloguj się przy użyciu subskrypcji programu Visual Studio identyfikator. Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
     |Visual Studio 2015 Update 3|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, sprzężenia wolnego grupy programu Visual Studio Dev Essentials lub zaloguj się przy użyciu subskrypcji programu Visual Studio identyfikator. Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|
     |Visual Studio 2015 (older)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Jeśli zostanie wyświetlony monit, sprzężenia wolnego grupy programu Visual Studio Dev Essentials lub zaloguj się przy użyciu subskrypcji programu Visual Studio identyfikator. Jeśli jest włączony tryb zwiększone zabezpieczenia (Windows Server), należy dodać nowy zaufanych witryn w przypadku wyświetlenia monitu.|

@@ -1,12 +1,13 @@
 ---
 title: Zmienne (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Zmienne (JavaScript)
 W [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], zmienna zawiera wartość, na przykład "hello" lub 5. Użycie zmiennej, możesz odwoływać się do danych go reprezentuje, na przykład `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -46,9 +47,9 @@ var count = 0, amount = 100;
  Jeśli nie zainicjować zmiennej użytkownika w `var` instrukcja on automatycznie przyjmuje wartość `undefined`.  
   
 ## <a name="naming-variables"></a>Nazwy zmiennych  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]jest rozróżniana wielkość liter języka. Oznacza to, że nazwa zmiennej takich jak **Mójlicznik** różni się od nazwy zmiennej **Mójlicznik**. Nazwy zmiennych mogą być o dowolnej długości. Reguły tworzenia prawne nazwy zmiennych są następujące:  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] jest rozróżniana wielkość liter języka. Oznacza to, że nazwa zmiennej takich jak **Mójlicznik** różni się od nazwy zmiennej **Mójlicznik**. Nazwy zmiennych mogą być o dowolnej długości. Reguły tworzenia prawne nazwy zmiennych są następujące:  
   
--   Pierwszy znak musi być literą ASCII (wielkie i małe litery), lub znaku podkreślenia (_). Należy pamiętać, że wiele nie można użyć jako pierwszy znak.  
+-   Pierwszy znak musi być ASCII litery (wielkie lub małe litery), literą, która jest zgodna z konwencji nazewnictwa zmiennej Unicode lub znaku podkreślenia (_). Należy pamiętać, że wiele nie można użyć jako pierwszy znak.  
   
 -   Kolejne znaki muszą być litery, cyfry i znaki podkreślenia (_).  
   
@@ -103,7 +104,7 @@ var area = length * width;
 ```  
   
 ## <a name="coercion"></a>Koercja  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]jest słabo typizowana język, w przeciwieństwie do silnie typizowanego w językach C++. Oznacza to, że zmienne JavaScript ma wstępnie określoną typu. Zamiast tego typu zmienną jest typem wartości. To zachowanie umożliwia wartość jest traktowana tak, jakby była innego typu.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] jest słabo typizowana język, w przeciwieństwie do silnie typizowanego w językach C++. Oznacza to, że zmienne JavaScript ma wstępnie określoną typu. Zamiast tego typu zmienną jest typem wartości. To zachowanie umożliwia wartość jest traktowana tak, jakby była innego typu.  
   
  W [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], można wykonać operacji na wartości różnych typów nie powodując wyjątek. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Interpreter niejawnie konwertuje, lub *przekształca wynik dane*, jeden danych typów do drugiego, a następnie wykonuje operację. Reguły dotyczące koercja ciąg, liczbę i wartościami logicznymi są następujące:  
   
