@@ -1,149 +1,148 @@
 ---
 title: Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 03/30/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: ''
-author: conceptdev
-ms.author: crdun
+caps.latest.revision: 31
+author: charlespetzold
+ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 0ec6529e6a9c41d1b9a4fa99a79d756754df1f45
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika za pomocą platformy Xamarin w programie Visual Studio
-Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) i [Sprawdź środowisku Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym przewodniku przedstawiono sposób tworzenia aplikacji platformy Xamarin basic (pokazana poniżej) z natywnego warstwy interfejsu użytkownika. Udostępniony kod znajduje się w bibliotece klas przenośnych (PCL) natywnego interfejsu użytkownika, i projekty poszczególnych platform zawierają definicje interfejsu użytkownika.  
+
+Większość deweloperzy, którzy wybierz do pisania aplikacji dla urządzeń przenośnych i platform Xamarin i C# za pomocą platformy Xamarin.Forms. Platformy Xamarin.Forms definiuje interfejs użytkownika, który jest mapowany na kontrolki natywne w systemie iOS, Android i platformy uniwersalnej systemu Windows (UWP). Platformy Xamarin.Forms jest opisana w artykule [Dowiedz się podstawowe informacje dotyczące tworzenia aplikacji z platformy Xamarin.Forms w programie Visual Studio](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
+
+W tym artykule opisano różne podejścia, która obejmuje dostęp do interfejsów API natywnego interfejsu użytkownika dla każdej z platform. Praca z macierzystych interfejsów API jest znacznie trudniejsze podejścia, niż platformy Xamarin.Forms, ponieważ wymaga ona doskonałej znajomości każdej platformy. Zaletą jest to, że podczas udostępniania nadal podstawowej logiki biznesowej, można dostosować interfejsu użytkownika do konkretnej mocnych i możliwości poszczególnych platform.
+
+Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-install.md) i [Sprawdź środowisku Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym przewodniku przedstawiono sposób tworzenia Podstawowa aplikacja Xamarin z macierzystego warstwy interfejsu użytkownika. Udostępniony kod znajduje się w bibliotece .NET Standard natywnego interfejsu użytkownika, i projekty poszczególnych platform zawierają definicje interfejsu użytkownika. W tym miejscu to aplikacja, która będzie kompilacji systemem (od lewej do prawej) z systemem iOS i telefony z systemem Android i Windows 10 desktop.
   
- ![Aplikacja Xamarin w systemach Android i Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "kompilacji usługi Xamarin Plat między 1")  
+[![Aplikacja Xamarin w systemach iOS, Android i Windows](../cross-platform/media/cross-plat-xamarin-build-1.png "na wiele różnych Xamarin kompilacji 1")](../cross-platform/media/cross-plat-xamarin-build-1-Large.png#lightbox)
   
- Należy wykonać te czynności, aby go skompilować:  
+Należy wykonać te czynności, aby go skompilować:  
   
--   [Konfigurowanie rozwiązania](#solution)  
+- [Konfigurowanie rozwiązania](#solution)  
   
--   [Pisanie kodu usługi udostępnionych danych](#dataservice)  
+- [Pisanie kodu usługi udostępnionych danych](#dataservice)  
   
--   [Projektowanie interfejsu użytkownika dla systemu Android](#Android)  
+- [Projektowanie interfejsu użytkownika dla systemu Android](#Android)  
+
+- [Projektowanie interfejsu użytkownika dla systemu Windows](#Windows)  
   
--   [Projektowanie interfejsu użytkownika dla Windows Phone](#Windows)  
-  
--   [Następne kroki](#next)  
+- [Następne kroki](#next), który obejmuje projektowanie interfejsu użytkownika dla systemu iOS
   
 > [!TIP]
->  Dla tego projektu w można znaleźć kodu źródłowego pełną [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Dla tego projektu w można znaleźć kodu źródłowego pełną [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
->   Jeśli masz problemy lub wystąpiły błędy, Opublikuj pytania na [forums.xamarin.com](http://forums.xamarin.com). Wiele błędów można rozwiązać, aktualizując do SDK najnowsze wymagane przez program Xamarin, które są opisane w [informacje o wersji programu Xamarin](https://developer.xamarin.com/releases/) dla każdej platformy.    
+> Jeśli masz problemy lub wystąpiły błędy, Opublikuj pytania na [forums.xamarin.com](http://forums.xamarin.com). Wiele błędów można rozwiązać, aktualizując do SDK najnowsze wymagane przez program Xamarin, które są opisane w [informacje o wersji programu Xamarin](https://developer.xamarin.com/releases/) dla każdej platformy.    
   
 > [!NOTE]
->  Dokumentacja dla deweloperów w programie Xamarin oferuje kilka wskazówki szybkiego startu jak również nowości sekcje wymienione poniżej. Na tych stronach upewnij się, że wybrano "Visual Studio", w prawym górnym rogu strony, aby wyświetlić wskazówki dotyczące programu Visual Studio.  
+> Dokumentacja dla deweloperów w programie Xamarin oferuje kilka wskazówki szybkiego startu jak również nowości sekcje wymienione poniżej. Na tych stronach upewnij się, czy wybrano "Visual Studio", aby wyświetlić wskazówki specyficzne dla programu Visual Studio.  
 >   
 >  -   Xamarin aplikacji za pomocą natywnego interfejsu użytkownika:  
->   
->      -   [Witaj, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (prosta aplikacja z jednym ekranie)  
->     -   [Witaj, Android Wieloekranowy](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplikacja z nawigacją między ekranami)  
->     -   [Android wskazówki fragmenty](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (używanych do ekranów wzorzec/szczegół, między innymi)  
->     -   [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
->     -   [Witaj, iOS Multiscreen (wiele ekranów)](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
-> -   Z platformy Xamarin.Forms (udostępnionego UI) przy użyciu aplikacji Xamarin  
->   
->      -   [Witaj, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [Witaj, Xamarin.Forms (wiele ekranów)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+>     -   [Witaj, Android](/xamarin/android/get-started/hello-android/) (prosta aplikacja z jednym ekranie)  
+>     -   [Witaj, Android Wieloekranowy](/xamarin/android/get-started/hello-android-multiscreen/) (aplikacja z nawigacją między ekranami)  
+>     -   [Android wskazówki fragmenty](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (używanych do ekranów wzorzec/szczegół, między innymi)  
+>     -   [Witaj, iOS](/xamarin/ios/get-started/hello-iOS/)  
+>     -   [Witaj, iOS Multiscreen (wiele ekranów)](/xamarin/ios/get-started/hello-iOS-multiscreen/) 
+
+>  -   Z platformy Xamarin.Forms (udostępnionego UI) przy użyciu aplikacji Xamarin  
+>     -   [Witaj, Xamarin.Forms](/xamarin/xamarin-forms/get-started/hello-xamarin-forms/quickstart/)  
+>     -   [Witaj, Xamarin.Forms (wiele ekranów)](/xamarin/xamarin-forms/get-started/hello-xamarin-forms-multiscreen/)  
   
-##  <a name="solution"></a> Konfigurowanie rozwiązania  
- Te kroki tworzenia rozwiązania Xamarin z natywnego interfejsu użytkownika, który zawiera PCL dla udostępnionego kodu i dwa pakiety NuGet dodany.  
+<a name="solution" />
+
+##  <a name="set-up-your-solution"></a>Konfigurowanie rozwiązania  
+
+Program Visual Studio nie ma szablon rozwiązania do tworzenia natywnych aplikacji interfejsu użytkownika platformy .NET Standard biblioteki udostępnionej. Jednak nie jest trudne do rozwiązania w poszczególnych projektach kompilacji. Te kroki tworzenia rozwiązania Xamarin z projektów dla każdego typu platforma aplikacji i .NET Standard biblioteki udostępnionej kodu.  
   
-1.  W programie Visual Studio Utwórz nową **pusta aplikacja (Native przenośne)** rozwiązania i nadaj mu nazwę **WeatherApp**. Tego szablonu można znaleźć najłatwiej wprowadzając **natywnego przenośne** do pola wyszukiwania.  
+1.  W programie Visual Studio Utwórz nową **biblioteki klas (.NET Standard)** rozwiązania i nadaj mu nazwę **WeatherApp**. Tego szablonu można znaleźć najłatwiej wybierając **Visual C#** po lewej stronie, a następnie **.NET Standard**: 
+
+    ![Tworzenie rozwiązania .NET Standard](../cross-platform/media/cross-plat-xamarin-build-2.png "kompilacji usługi Xamarin i platform 2")
+
+    Po kliknięciu przycisku OK, **WeatherApp** rozwiązania składa się z jednego projektu o nazwie **WeatherApp**. 
+
+2.  Jeśli chcesz docelowy z systemem iOS, Dodaj projekt dla systemu iOS do rozwiązania. Kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksploratora rozwiązań** i wybierz **Dodaj** i **nowy projekt**.  W **nowy projekt** okna dialogowego, w oknie po lewej stronie wybierz **Visual C#**, a następnie **iOS** i **uniwersalnych**. (Jeśli nie jest, może być konieczne Zainstaluj program Xamarin, lub włączyć funkcję Visual Studio 2017, zobacz [Instalatora i zainstaluj](../cross-platform/setup-and-install.md).) Na liście szablonów wybierz **pojedynczego widoku aplikacji (iOS)**. Nadaj mu nazwę **WeatherApp.iOS**.
+
+3.  Jeśli chcesz przeanalizować systemu Android, Dodaj projekt systemu Android do rozwiązania. W **nowy projekt** okna dialogowego, w oknie po lewej stronie wybierz **Visual C#** i **Android**. Na liście szablonów wybierz **pusta aplikacja (Android)**. Nadaj mu nazwę **WeatherApp.Android**. 
+
+4. Jeśli chcesz przeanalizować platformy uniwersalnej systemu Windows, w **nowy projekt** okna dialogowego, w oknie po lewej stronie wybierz **Visual C#** i **uniwersalnych systemu Windows**. Na liście szablonów wybierz **pusta aplikacja (uniwersalna systemu Windows)** i nadaj mu nazwę **WeatherApp.UWP**.
   
-     Jeśli nie jest, może być konieczne Zainstaluj program Xamarin, lub włączyć funkcję Visual Studio 2015, zobacz [Instalatora i zainstaluj](../cross-platform/setup-and-install.md).  
+5. Dla każdej aplikacji projektów (z systemem iOS, Android i platformy uniwersalnej systemu Windows), kliknij prawym przyciskiem myszy **odwołania** sekcji **Eksploratora rozwiązań** i wybierz **Dodaj odwołanie**. W **Menedżera odwołań** okna dialogowego, w oknie po lewej stronie wybierz **projektu** i **rozwiązania**. Zobaczysz listę wszystkich projektów w rozwiązaniu z wyjątkiem odwołania, których zarządzasz projektu:
+
+   ![Ustawianie odwołania do projektu .NET Standard](../cross-platform/media/cross-plat-xamarin-build-3.png "kompilacji usługi Xamarin i platform 3")
+
+   Zaznacz pole wyboru obok pozycji **WeatherApp**. 
+
+   Po sprawdzeniu to pole dla poszczególnych projektów aplikacji, wszystkie projekty zawierają odwołania do biblioteki standardowej .NET i mogą udostępniać kodu w tej bibliotece.
   
-2.  Po kliknięciu przycisku OK spowoduje utworzenie rozwiązania, będziesz mieć liczbę pojedynczych projektów:  
+6. Dodaj **Newtonsoft.Json** pakiet NuGet do projektu .NET Standard, który zostanie użyty do przetwarzania informacji z usługi danych pogody:  
   
-    -   **WeatherApp (przenośny)**: PCL, w którym będzie pisania kodu, który jest współużytkowany przez platform, w tym wspólne logiki biznesowej i korzystanie z platformy Xamarin.Forms kodu interfejsu użytkownika.  
-  
-    -   **WeatherApp.Droid**: projekt, który zawiera natywnego kodu dla systemu Android. To jest ustawiony jako domyślny projekt startowy.  
-  
-    -   **WeatherApp.iOS**: projekt, który zawiera kod macierzysty z systemem iOS.  
-  
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt, który zawiera kod macierzysty Windows Phone.  
-  
-     W ramach każdego natywnego projektu mają dostęp do natywnej projektanta dla odpowiednich platform i można zaimplementować ekrany określonych platform.  
-  
-3.  Dodaj **Newtonsoft.Json** i pakiet NuGet do projektu PCL, który zostanie użyty do przetwarzania informacji z usługi danych pogody:  
-  
-    -   Kliknij prawym przyciskiem myszy **rozwiązania "WeatherApp"** w Eksploratorze rozwiązań i wybierz **Zarządzaj pakietami NuGet rozwiązania...**.  
+    -   Kliknij prawym przyciskiem myszy **WeatherApp** projektu w **Eksploratora rozwiązań** i wybierz **Zarządzaj pakietami NuGet...** .  
   
          W oknie NuGet wybierz **Przeglądaj** karcie i wyszukaj **Newtonsoft**.  
   
     -   Wybierz **Newtonsoft.Json**.  
   
-    -   Po prawej stronie okna, sprawdź **WeatherApp** projektu (dotyczy tylko projektów, w którym należy zainstalować pakiet).  
-  
     -   Upewnij się, **wersji** pole jest ustawione na **najnowsze stabilny** wersji.  
   
     -   Kliknij przycisk **zainstalować**.  
   
-    -   ![Znajdowanie i instalowanie pakietu Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
+7.  Powtórz kroki od 7 do znajdować i instalować **Microsoft.CSharp** pakiet w projekcie .NET Standard. Ta biblioteka jest koniecznych do używania języka C# `dynamic` typu danych przechowywanych w bibliotece .NET Standard.
   
-4.  Powtórz kroki od 3 do znajdować i instalować **Microsoft.Net.Http** pakietu.  
+8.  Skompiluj rozwiązanie i sprawdź, czy nie ma żadnych błędów kompilacji.  
   
-5.  Skompiluj rozwiązanie i sprawdź, czy nie ma żadnych błędów kompilacji.  
+<a name="dataservice" />
+
+## <a name="write-shared-data-service-code"></a>Pisanie kodu usługi udostępnionych danych  
+
+ **WeatherApp** projekt jest biblioteką .NET Standard. Ten projekt jest, gdzie będzie pisania kodu, który jest udostępniany na wszystkich platformach. Ponieważ każdy projekt aplikacji ma odwołanie do biblioteki .NET Standard, biblioteka jest dołączony do systemu iOS, Android i platformy uniwersalnej systemu Windows pakietów aplikacji.  
   
-##  <a name="dataservice"></a> Pisanie kodu usługi udostępnionych danych  
- **WeatherApp (przenośny)** projekt jest, gdzie będzie napisać kod biblioteki klas przenośnych (PCL), która jest współużytkowana przez wszystkie platformy. PCL jest automatycznie uwzględnione w pakiety aplikacji utworzony przez system iOS, Android i Windows Phone projektów.  
+ Poniższe kroki Dodaj kod do biblioteki .NET Standard dostęp do przechowywania danych pochodzących z tej usługi pogody:  
   
- Poniższe kroki następnie dodaj kod, aby PCL dostęp do przechowywania danych pochodzących z tej usługi pogody:  
+1.  Najpierw Załóż bezpłatne pogody klucz interfejsu API w [ http://openweathermap.org/appid ](http://openweathermap.org/appid). Ten klucz interfejsu API umożliwi aplikacji do uzyskiwania pogody dla dowolnego kodu pocztowego Stanów Zjednoczonych. (Go nie działa w przypadku kodów pocztowych poza Stanami Zjednoczonymi.)
   
-1.  Aby uruchomić ten przykład musi najpierw utworzysz wolnego klucz interfejsu API w [ http://openweathermap.org/appid ](http://openweathermap.org/appid).  
-  
-2.  Kliknij prawym przyciskiem myszy **WeatherApp** projekt i wybierz **Dodaj > klasy...**. W **Dodaj nowy element** okna dialogowego, nazwa pliku **Weather.cs**. Ta klasa będzie używane do przechowywania danych z usługi data pogody.  
+2.  Kliknij prawym przyciskiem myszy **WeatherApp** projekt i wybierz **Dodaj > klasy...** . W **Dodaj nowy element** okna dialogowego, nazwa pliku **Weather.cs**. Ta klasa będzie używane do przechowywania danych z usługi data pogody.  
   
 3.  Zastąp całą zawartość **Weather.cs** następującym kodem:  
   
     ```csharp  
-    namespace WeatherApp  
-    {  
-        public class Weather  
-        {  
-            public string Title { get; set; }  
-            public string Temperature { get; set; }  
-            public string Wind { get; set; }  
-            public string Humidity { get; set; }  
-            public string Visibility { get; set; }  
-            public string Sunrise { get; set; }  
-            public string Sunset { get; set; }  
-  
-            public Weather()  
-            {  
-                //Because labels bind to these values, set them to an empty string to  
-                //ensure that the label appears on all platforms by default.  
-                this.Title = " ";  
-                this.Temperature = " ";  
-                this.Wind = " ";  
-                this.Humidity = " ";  
-                this.Visibility = " ";  
-                this.Sunrise = " ";  
-                this.Sunset = " ";  
-            }  
-        }  
-    }  
+    namespace WeatherApp
+    {
+        public class Weather
+        {
+            // Because labels bind to these values, set them to an empty string to
+            // ensure that the label appears on all platforms by default.
+            public string Title { get; set; } = " ";
+            public string Temperature { get; set; } = " ";
+            public string Wind { get; set; } = " ";
+            public string Humidity { get; set; } = " ";
+            public string Visibility { get; set; } = " ";
+            public string Sunrise { get; set; } = " ";
+            public string Sunset { get; set; } = " ";
+        }
+    }
     ```  
   
-4.  Dodaj kolejną klasę do projektu PCL o nazwie **DataService.cs** , w którym będziesz używać do przetwarzania danych JSON z pogodą usługi danych.  
+4.  Dodaj kolejną klasę do .NET Standard projektu o nazwie **DataService.cs**. Użyjesz tej klasy do przetwarzania danych JSON usługi pogody danych.  
   
 5.  Zastąp całą zawartość **DataService.cs** następującym kodem:  
   
     ```csharp  
+    using System.Net.Http;  
     using System.Threading.Tasks;  
     using Newtonsoft.Json;  
-    using System.Net.Http;  
   
     namespace WeatherApp  
     {  
@@ -167,7 +166,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     }  
     ```  
   
-6.  Dodaj klasę innych do PCL o nazwie **Core** których będzie umieścić udostępnionych logiki biznesowej, takich jak logiki, który wchodzi w skład ciąg zapytania z kodem pocztowym, wywołuje usługę danych pogody i wypełnia wystąpienia **pogody**klasy.  
+6.  Dodaj klasę innych do biblioteki .NET Standard o nazwie **Core.cs**. Klasa będzie używana do tworzą ciąg zapytania z kodem pocztowym, wywołania tej usługi danych pogody i wypełniania wystąpienia **pogody** klasy.  
   
 7.  Zastąp zawartość **Core.cs** następującym kodem:  
   
@@ -182,7 +181,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
             public static async Task<Weather> GetWeather(string zipCode)  
             {  
                 //Sign up for a free API key at http://openweathermap.org/appid  
-                string key = "YOUR KEY HERE";  
+                string key = "YOUR API KEY HERE";  
                 string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="  
                     + zipCode + ",us&appid=" + key + "&units=imperial";  
 
@@ -192,7 +191,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
                     throw new ArgumentException("You must obtain an API key from openweathermap.org/appid and save it in the 'key' variable.");
                 }
   
-                dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);  
+                dynamic results = await DataService.GetDataFromService(queryString).ConfigureAwait(false);  
   
                 if (results["weather"] != null)  
                 {  
@@ -219,42 +218,43 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     }  
     ```  
   
-8.  Zastąp *SWÓJ klucz tutaj* w kodu przy użyciu klucza interfejsu API uzyskanym w kroku 1 (nadal wymaga cudzysłowów wokół niego).  
+8. Zamień na pierwsze wystąpienie *tutaj klucz interfejsu API YOUR* przy użyciu klucza interfejsu API uzyskane w kroku 1. Nadal wymaga cudzysłowów wokół niego!
   
-9. Usuń MyClass.cs w PCL, ponieważ firma Microsoft nie będzie go używać.  
+9. Usuń **MyClass.cs** w bibliotece programu .NET Standard, ponieważ nie będzie używany.  
   
-10. Tworzenie **WeatherApp** PCL projektu, aby się upewnić, że kod jest poprawny.  
+10. Tworzenie **WeatherApp** projektu, aby się upewnić, że kod jest poprawny.  
   
-##  <a name="Android"></a> Projektowanie interfejsu użytkownika dla systemu Android  
- Teraz firma Microsoft będzie Projektowanie interfejsu użytkownika, podłącz go do udostępnionego kodu, a następnie uruchom aplikację.  
+<a name="Android" />
+
+## <a name="design-ui-for-android"></a>Projektowanie interfejsu użytkownika dla systemu Android  
+
+ Teraz można zaprojektować interfejsu użytkownika, podłącz go do udostępnionego kodu, a następnie uruchom aplikację.  
   
 ### <a name="design-the-look-and-feel-of-your-app"></a>Projekt wyglądu i działania aplikacji  
   
-1.  W **Eksploratora rozwiązań**, rozwiń węzeł **WeatherApp.Droid**>**zasobów**>**układu** folderu i Otwórz **Main.axml**. Spowoduje to otwarcie pliku w Projektancie visual. (Jeśli zostanie wyświetlony błąd związany z języka Java, zobacz ten [wpis w blogu](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)  
+1.  W **Eksploratora rozwiązań**, rozwiń węzeł **WeatherApp.Droid > Zasoby > układu** folderu i Otwórz **Main.axml**. To polecenie powoduje otwarcie pliku w Projektancie visual. (Jeśli zostanie wyświetlony błąd związany z języka Java, zobacz ten [wpis w blogu](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)  
   
     > [!TIP]
-    >  Istnieje wiele plików w projekcie. Eksploracja ich jest poza zakres tego tematu, ale jeśli chcesz przejść do struktury projektu dla systemu Android nieco więcej, zobacz [część 2 nowości](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) Hello Android tematu na xamarin.com.  
+    >  Istnieje wiele plików w projekcie. Eksploracja ich jest poza zakres tego artykułu, ale jeśli chcesz przejść do struktury projektu dla systemu Android nieco więcej, zobacz [część 2 nowości](/xamarin/android/get-started/hello-android/hello-android-deepdive/) Hello Android artykułu.  
   
-2.  Wybierz i usuń przycisk domyślny, która jest wyświetlana w projektancie.  
+2.  Otwórz przybornika **Widok > innych okien > przybornika**.  
   
-3.  Otwórz przybornika **Widok > innych okien > przybornika**.  
-  
-4.  Z **przybornika**, przeciągnij **RelativeLayout** formantu do projektanta. Ten formant będzie używany jako kontenera nadrzędnego dla innych formantów.  
+3.  Z **przybornika**, przeciągnij **RelativeLayout** formantu do projektanta. Ten formant będzie używany jako kontenera nadrzędnego dla innych formantów.  
   
     > [!TIP]
     >  Jeśli w dowolnym momencie układ nie powiodła się ją poprawnie wyświetlić, Zapisz plik i przełączanie między **projekt** i **źródła** karty, aby odświeżyć.  
   
-5.  W **właściwości** ustaw **tła** właściwości (w grupie styl) `#545454`.  
+4.  W **właściwości** ustaw **tła** właściwości (w grupie styl) `#545454`.  Upewnij się, że w pozycji w **właściwości** oknie, w którym jest instalowana w tle **RelativeLayout**.
   
-6.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** formantu.  
+5.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** formantu.  
   
-7.  W **właściwości** okna, ustaw te właściwości (Uwaga: Aby posortować listę alfabetycznie za pomocą przycisku sortowania w pasku narzędzi okna właściwości może pomóc):  
+6.  W **właściwości** okna, ustaw te właściwości. (Ułatwia Aby posortować listę alfabetycznie za pomocą przycisku sortowania w pasku narzędzi okna właściwości.):  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Tekst**|**Wyszukiwanie według kod pocztowy**|  
     |**id**|`@+id/ZipCodeSearchLabel`|  
-    |**layout_marginLeft**|`10dp`|  
+    |**layout_marginStart**|`10dp`|  
     |**textColor**|`@android:color/white`|  
     |**textStyle**|`bold`|  
   
@@ -271,25 +271,25 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
         android:layout_width="wrap_content"  
         android:layout_height="wrap_content"  
         android:id="@+id/ZipCodeSearchLabel"  
-        android:layout_centerVertical="true"  
-        android:layout_marginLeft="10dp"  
+        android:layout_marginStart="10dp"  
         android:textColor="@android:color/white"  
         android:textStyle="bold" />  
   
     ```  
   
-8.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli i umieść je poniżej ZipCodeSearchLabel formantu. W tym celu upuszczania nowego formantu w odpowiednich krawędzi istniejącej kontrolce; pomaga powiększenie dla tego projektanta w pewnym stopniu.  
+7.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli i umieść je poniżej ZipCodeSearchLabel formantu. Usuwanie nowego formantu w odpowiednich krawędzi istniejącego formantu. Pomaga powiększenie w Projektancie nieco położenie formantu.  
   
-9. W **właściwości** okna, ustaw te właściwości:  
+8. W **właściwości** okna, ustaw te właściwości:  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Tekst**|**Kod pocztowy**|  
     |**id**|`@+id/ZipCodeLabel`|  
-    |**layout_marginLeft**|`10dp`|  
-    |**layout_marginTop**|`5dp`|  
+    |**layout_marginStart**|`10dp`|  
+    |**layout_marginTop**|`6dp`|  
+    |**textColor**|`@android:color/white`|  
   
-     Kod w **źródła** widok powinien wyglądać następująco:  
+    Oto, jak kod w **źródła** widok powinien wyglądać:  
   
     ```xml  
     <TextView  
@@ -298,20 +298,22 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
         android:layout_height="wrap_content"  
         android:layout_below="@id/ZipCodeSearchLabel"  
         android:id="@+id/ZipCodeLabel"  
-        android:layout_marginTop="5dp"  
-        android:layout_marginLeft="10dp" />  
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"  
+        android:textColor="@android:color/white" />  
     ```  
   
-10. Z **przybornika**, przeciągnij **numer** kontrolować na **RelativeLayout**, umieść ją poniżej **kod pocztowy** etykiety. Następnie ustaw następujące właściwości:  
+9. Z **przybornika**, przeciągnij **numer** kontrolować na **RelativeLayout**, umieść ją poniżej **kod pocztowy** etykiety. Następnie ustaw następujące właściwości:  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**id**|`@+id/zipCodeEntry`|  
-    |**layout_marginLeft**|`10dp`|  
+    |**layout_marginStart**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
     |**width**|`165dp`|  
+    |**textColor**|`@android:color/white`|  
   
-     Ponownie kod:  
+    **Numer** formant jest wpisuje użytkownika w 5 cyfrowy kod pocztowy w Stanach Zjednoczonych. Oto kod znaczników, który odpowiada tej kontrolki:  
   
     ```xml  
     <EditText  
@@ -320,142 +322,143 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
         android:layout_height="wrap_content"  
         android:layout_below="@id/ZipCodeLabel"  
         android:id="@+id/zipCodeEntry"  
-        android:layout_marginLeft="10dp"  
+        android:layout_marginStart="10dp"  
         android:layout_marginBottom="10dp"  
-        android:width="165dp" />  
+        android:width="165dp"  
+        android:textColor="@android:color/white" />  
     ```  
   
-11. Z **przybornika**, przeciągnij **przycisk** na **RelativeLayout** kontroli i umieść je z prawej strony zipCodeEntry formantu. Następnie ustaw te właściwości:  
+10. Z **przybornika**, przeciągnij **przycisk** na **RelativeLayout** kontroli i umieść je z prawej strony zipCodeEntry formantu. Następnie ustaw te właściwości:  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**id**|`@+id/weatherBtn`|  
     |**Tekst**|**Pobierz pogody**|  
-    |**layout_marginLeft**|`20dp`|  
+    |**layout_marginStart**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
     |**width**|`165dp`|  
   
     ```xml  
-    <Button    android:text="Get Weather"  
+    <Button
+        android:text="Get Weather"  
         android:layout_width="wrap_content"  
         android:layout_height="wrap_content"  
         android:layout_toRightOf="@id/zipCodeEntry"  
         android:id="@+id/weatherBtn"  
-        android:layout_marginLeft="20dp"  
+        android:layout_marginStart="20dp"  
         android:layout_alignBottom="@id/zipCodeEntry"  
         android:width="165dp" />  
     ```  
   
-12. Obecnie masz za mało środowisko do tworzenia podstawowy interfejs użytkownika za pomocą projektanta dla systemu Android. Interfejs użytkownika można także utworzyć przez dodanie znaczników bezpośrednio do pliku .asxml strony. Aby utworzyć pozostałe interfejsu użytkownika w ten sposób, przejdź do widoku źródłowego w projektancie, a następnie poza następujący kod znaczników *pod* `</RelativeLayout>` tag (tak, który znajduje się pod tagu... te elementy nie są zawarte w ReleativeLayout).  
+11. Teraz wiesz, aby utworzyć podstawowy interfejs użytkownika przy użyciu projektanta dla systemu Android. Interfejs użytkownika można także utworzyć przez dodanie znaczników bezpośrednio do pliku Main.axml strony. Pozostała część interfejsu użytkownika, który, przejdź do widoku źródłowego w Projektancie kompilacji, a następnie wklej następujący kod znaczników *pod* `</RelativeLayout>` tagu końcowego. (Ponieważ są to następujące elementy muszą być poniżej tagu *nie* zawartych w `RelativeLayout`.)  
   
     ```xml  
     <TextView  
-            android:text="Location"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/locationLabel"  
-            android:layout_marginLeft="10dp"  
-            android:layout_marginTop="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/locationText"  
-            android:layout_marginLeft="20dp"  
-            android:layout_marginBottom="10dp" />  
-        <TextView  
-            android:text="Temperature"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/tempLabel"  
-            android:layout_marginLeft="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/tempText"  
-            android:layout_marginBottom="10dp"  
-            android:layout_marginLeft="20dp" />  
-        <TextView  
-            android:text="Wind Speed"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/windLabel"  
-            android:layout_marginLeft="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/windText"  
-            android:layout_marginBottom="10dp"  
-            android:layout_marginLeft="20dp" />  
-        <TextView  
-            android:text="Humidity"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/humidtyLabel"  
-            android:layout_marginLeft="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/humidityText"  
-            android:layout_marginBottom="10dp"  
-            android:layout_marginLeft="20dp" />  
-        <TextView  
-            android:text="Visibility"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/visibilityLabel"  
-            android:layout_marginLeft="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/visibilityText"  
-            android:layout_marginBottom="10dp"  
-            android:layout_marginLeft="20dp" />  
-        <TextView  
-            android:text="Time of Sunrise"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/sunriseLabel"  
-            android:layout_marginLeft="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/sunriseText"  
-            android:layout_marginBottom="10dp"  
-            android:layout_marginLeft="20dp" />  
-        <TextView  
-            android:text="Time of Sunset"  
-            android:textAppearance="?android:attr/textAppearanceSmall"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/sunsetLabel"  
-            android:layout_marginLeft="10dp" />  
-        <TextView  
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"  
-            android:id="@+id/sunsetText"  
-            android:layout_marginBottom="10dp"  
-            android:layout_marginLeft="20dp" />  
-  
+        android:text="Location"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/locationLabel"  
+        android:layout_marginStart="10dp"  
+        android:layout_marginTop="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/locationText"  
+        android:layout_marginStart="20dp"  
+        android:layout_marginBottom="10dp" />  
+    <TextView  
+        android:text="Temperature"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/tempLabel"  
+        android:layout_marginStart="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/tempText"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginStart="20dp" />  
+    <TextView  
+        android:text="Wind Speed"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/windLabel"  
+        android:layout_marginStart="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/windText"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginStart="20dp" />  
+    <TextView  
+        android:text="Humidity"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/humidtyLabel"  
+        android:layout_marginStart="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/humidityText"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginStart="20dp" />  
+    <TextView  
+        android:text="Visibility"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/visibilityLabel"  
+        android:layout_marginStart="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/visibilityText"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginStart="20dp" />  
+    <TextView  
+        android:text="Time of Sunrise"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/sunriseLabel"  
+        android:layout_marginStart="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/sunriseText"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginStart="20dp" />  
+    <TextView  
+        android:text="Time of Sunset"  
+        android:textAppearance="?android:attr/textAppearanceSmall"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/sunsetLabel"  
+        android:layout_marginStart="10dp" />  
+    <TextView  
+        android:textAppearance="?android:attr/textAppearanceMedium"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/sunsetText"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginStart="20dp" />  
     ```  
   
-13. Zapisz plik i przejdź do **projekt** widoku. Twój interfejs użytkownika powinna wyglądać następująco:  
+12. Zapisz plik i przejdź do **projekt** widoku. Twój interfejs użytkownika powinna wyglądać następująco:  
   
      ![Interfejs użytkownika dla aplikacji systemu Android](../cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
   
-14. Otwórz **MainActivity.cs** i usuwania wierszy w *OnCreate* — metoda, która odwołuje się do przycisk domyślny, który został wcześniej usunięty. Kod powinien wyglądać następująco po wykonaniu tych czynności:  
+13. Otwórz **MainActivity.cs**. Oto, jak powinna wyglądać kodu:  
   
     ```  
     protected override void OnCreate (Bundle bundle)  
@@ -467,7 +470,7 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
     }  
     ```  
   
-15. Tworzenie projektu dla systemu Android, aby sprawdzić swoją pracę. Należy pamiętać, że kompilowanie dodaje sterowanie identyfikatorów **Resource.Designer.cs** plików, dzięki czemu mogą odwoływać się do formantów według nazwy w kodzie.  
+14. Tworzenie projektu dla systemu Android, aby sprawdzić swoją pracę. Proces kompilacji dodaje sterowanie identyfikatorów do **Resource.Designer.cs** plików, dzięki czemu mogą odwoływać się do formantów według nazwy w kodzie.  
   
 ### <a name="consume-your-shared-code"></a>Korzystać z udostępnionego kodu  
   
@@ -481,7 +484,9 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
   
     namespace WeatherApp.Droid  
     {  
-        [Activity(Label = "Sample Weather App", MainLauncher = true, Icon = "@drawable/icon")]  
+        [Activity(Label = "Sample Weather App", 
+                  Theme = "@android:style/Theme.Material.Light", 
+                  MainLauncher = true)]  
         public class MainActivity : Activity  
         {  
             protected override void OnCreate(Bundle bundle)  
@@ -514,138 +519,178 @@ Po wykonaniu kroków [Instalatora i zainstaluj](../cross-platform/setup-and-inst
         }  
     }  
     ```  
+
+    Zwróć uwagę, że działanie została podana motyw światła tła.
   
 ### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i sprawdzić, jak wygląda  
   
 1.  W **Eksploratora rozwiązań**, upewnij się, że **WeatherApp.Droid** projekt został ustawiony jako projekt startowy.  
   
 2.  Wybierz odpowiednie urządzenia lub emulatora docelowego, a następnie uruchomić aplikację, naciskając klawisz F5.  
+
+    > [!NOTE]
+    > Jeśli program Visual Studio wskazuje, że projekt systemu Android nie można odnaleźć pliku Newtonsoft.Json, dodać tego pakietu NuGet do projektu systemu Android. 
   
-3.  Na urządzeniu lub w emulatorze, wpisz prawidłowy kod pocztowy w Stanach Zjednoczonych, w polu edycji (na przykład: 60601) i naciśnij klawisz **uzyskać pogody**. Dane pogody dla regionu pojawia się w formantach.  
+3.  Na urządzeniu lub w emulatorze, wpisz prawidłowy kod pocztowy 5 cyfrowy Stanów Zjednoczonych w pole edycji, a następnie naciśnij klawisz **uzyskać pogody**. Dane pogody dla regionu pojawia się w formantach.  
   
-     ![Pogody aplikacji dla systemów Android i Windows Phone](../cross-platform/media/xamarin_getstarted_results.png "Xamarin_GetStarted_Results")  
+    [![Aplikacja Xamarin w systemie Android](../cross-platform/media/cross-plat-xamarin-build-1-android.png "Android kompilacji usługi Xamarin Plat między 1")](../cross-platform/media/cross-plat-xamarin-build-1-android-Large.png#lightbox)  
   
 > [!TIP]
 >  Kod źródłowy pełną dla tego projektu jest [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).  
   
-##  <a name="Windows"></a> Projektowanie interfejsu użytkownika dla Windows Phone  
- Teraz możemy będzie Projektowanie interfejsu użytkownika dla Windows Phone, podłącz go do udostępnionego kodu, a następnie uruchom aplikację.  
+<a name="Windows" /> 
+
+## <a name="design-ui-for-windows"></a>Projektowanie interfejsu użytkownika dla systemu Windows
+
+Następnym krokiem jest projektowanie interfejsu użytkownika dla systemu Windows, podłącz go do udostępnionego kodu, a następnie uruchom aplikację.  
   
 ### <a name="design-the-look-and-feel-of-your-app"></a>Projekt wyglądu i działania aplikacji  
- Proces projektowania natywnego interfejsu użytkownika Windows Phone w aplikacji platformy Xamarin nie różni się od innych natywnych aplikacji Windows Phone. Z tego powodu nie możemy przejść do tutaj używania projektanta. W tym odwoływać się do [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
+
+ Proces projektowania natywnego interfejsu użytkownika platformy uniwersalnej systemu Windows w aplikacji platformy Xamarin nie różni się od innych natywnych aplikacji platformy uniwersalnej systemu Windows. Z tego powodu Użyj projektanta nie omówione w tym miejscu. Aby uzyskać szczegółowe informacje, zapoznaj się [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
- Zamiast tego po prostu otwórz MainPage.xaml i Zastąp kod XAML z następujących czynności:  
+ Zamiast tego otworzyć **MainPage.xaml** i Zastąp całą zawartość XAML następujący kod:   
   
 ```xaml  
-<Page  
-    x:Class="WeatherApp.WinPhone.MainPage"  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-    xmlns:local="using:WeatherApp.WinPhone"  
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-    mc:Ignorable="d"  
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
-  
-    <Grid>  
-        <StackPanel HorizontalAlignment="Left" Height="40" Margin="10,0,0,0" VerticalAlignment="Top" Width="400">  
-            <TextBlock x:Name="pageTitle" Text="Weather App" FontSize="30" />  
-        </StackPanel>  
-        <StackPanel HorizontalAlignment="Left" Height="120" Margin="10,40,0,0" VerticalAlignment="Top" Width="400" Background="#FF545454">  
-  
-            <TextBlock x:Name="zipCodeSearchLabel" TextWrapping="Wrap" Text="Search by Zip Code" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0"/>  
-            <TextBlock x:Name="zipCodeLabel" TextWrapping="Wrap" Text="Zip Code" Margin="10,5,0,0" FontSize="14" Foreground="#FFA8A8A8"/>  
-            <StackPanel Orientation="Horizontal">  
-                <TextBox x:Name="zipCodeEntry" Margin="10,10,0,0" Text="" VerticalAlignment="Top" InputScope="Number" Width="165" />  
-                <Button x:Name="weatherBtn" Content="Get Weather" Width="165" Margin="20,0,0,0" Height="60" Click="GetWeatherButton_Click"/>  
-            </StackPanel>  
-        </StackPanel>  
-        <StackPanel Margin="10,175,0,0">  
-            <TextBlock x:Name="locationLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="locationText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="tempLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Temperature" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="tempText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="windLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Wind Speed" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="windText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="humidityLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Humidity" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="humidityText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="visibilityLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Temperature" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="visibilityText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="sunriseLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Time of Sunriweatherse" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="sunriseText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="sunsetLabel" HorizontalAlignment="Left" FontSize="14" Foreground="#FFA8A8A8" TextWrapping="Wrap" Text="Time of Sunset" VerticalAlignment="Top"/>  
-            <TextBlock x:Name="sunsetText" Margin="10,0,0,10" HorizontalAlignment="Left" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top"/>  
-        </StackPanel>  
-    </Grid>  
-</Page>  
+<Page
+    x:Class="WeatherApp.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeatherApp.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Height="40" Margin="10,0,0,0" Width="400">
+            <TextBlock Text="Weather App" FontSize="30" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Height="120" Margin="10,40,0,0" Width="400" 
+                    Background="#FF545454">
+
+            <TextBlock Text="Search by Zip Code" TextWrapping="Wrap" 
+                       HorizontalAlignment="Left" Margin="10,10,0,0"
+                       Foreground="White" FontSize="18" FontWeight="Bold" />
+            
+            <TextBlock Text="Zip Code" TextWrapping="Wrap" 
+                       Margin="10,5,0,0" FontSize="14" Foreground="#FFA8A8A8"/>
+            
+            <StackPanel Orientation="Horizontal">
+
+                <TextBox x:Name="zipCodeEntry" Text="" 
+                         Margin="10,10,0,0" VerticalAlignment="Top" 
+                         InputScope="Number" Width="165" />
+                
+                <Button x:Name="weatherBtn" Content="Get Weather" 
+                        Foreground="White" Width="165" Margin="20,0,0,0" Height="60" 
+                        Click="GetWeatherButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel Margin="10,175,0,0">
+            <StackPanel.Resources>
+                <Style x:Key="commonText" TargetType="TextBlock">
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                    <Setter Property="VerticalAlignment" Value="Top" />
+                    <Setter Property="TextWrapping" Value="Wrap" />
+                </Style>
+                
+                <Style x:Key="labelText" TargetType="TextBlock" BasedOn="{StaticResource commonText}">
+                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="Foreground" Value="#FFA8A8A8" />
+                </Style>
+
+                <Style x:Key="valueText" TargetType="TextBlock" BasedOn="{StaticResource commonText}">
+                    <Setter Property="FontSize" Value="18" />
+                    <Setter Property="Margin" Value="10, 0, 0, 10" />
+                </Style>
+            </StackPanel.Resources>
+            
+            <TextBlock Text="Location" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="locationText" Style="{StaticResource valueText}" />
+
+            <TextBlock Text="Temperature" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="tempText" Style="{StaticResource valueText}" />
+            
+            <TextBlock Text="Wind Speed" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="windText" Style="{StaticResource valueText}" />
+            
+            <TextBlock Text="Humidity" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="humidityText" Style="{StaticResource valueText}" />
+            
+            <TextBlock Text="Temperature" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="visibilityText" Style="{StaticResource valueText}" />
+            
+            <TextBlock Text="Time of Sunrise" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="sunriseText" Style="{StaticResource valueText}" />
+            
+            <TextBlock Text="Time of Sunset" Style="{StaticResource labelText}" />
+            <TextBlock x:Name="sunsetText" Style="{StaticResource valueText}" />
+        </StackPanel>
+    </Grid>
+</Page>
 ```  
-  
- W widoku Projekt interfejsu użytkownika powinien wyglądać następująco:  
-  
- ![Interfejs użytkownika aplikacji Windows Phone](../cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
   
 ### <a name="consume-your-shared-code"></a>Korzystać z udostępnionego kodu  
   
-1.  W projektancie, wybierz **uzyskać pogody** przycisku.  
+W **MainPage.xaml.cs** CodeBehind pliku, Dodaj następujący program obsługi zdarzeń dla przycisku: 
   
-2.  W **właściwości** okna, wybierz przycisk programu obsługi zdarzeń (![ikony procedury obsługi zdarzeń programu Visual Studio](../cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
-  
-     Ta ikona jest wyświetlana w górnym rogu **właściwości** okna.  
-  
-3.  Obok pozycji **kliknij** zdarzeń, typ **GetWeatherButton_Click**, a następnie naciśnij klawisz ENTER.  
-  
-     Spowoduje to wygenerowanie program obsługi zdarzeń o nazwie `GetWeatherButton_Click`. Edytor kodu otwiera i umieszcza kursor wewnątrz bloku kodu programu obsługi zdarzeń.  Uwaga: Jeśli nie można otworzyć edytora po naciśnięciu klawisza ENTER, wystarczy kliknąć dwukrotnie nazwę zdarzenia.  
-  
-4.  Zastąp następujący kod programu obsługi zdarzeń.  
-  
-    ```csharp  
-    private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)  
+```csharp  
+private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)  
+{  
+    if (!String.IsNullOrEmpty(zipCodeEntry.Text))  
     {  
-        if (!String.IsNullOrEmpty(zipCodeEntry.Text))  
-        {  
-            Weather weather = await Core.GetWeather(zipCodeEntry.Text);  
-            locationText.Text = weather.Title;  
-            tempText.Text = weather.Temperature;  
-            windText.Text = weather.Wind;  
-            visibilityText.Text = weather.Visibility;  
-            humidityText.Text = weather.Humidity;  
-            sunriseText.Text = weather.Sunrise;  
-            sunsetText.Text = weather.Sunset;  
-  
-            weatherBtn.Content = "Search Again";  
-        }  
+        Weather weather = await Core.GetWeather(zipCodeEntry.Text);  
+        locationText.Text = weather.Title;  
+        tempText.Text = weather.Temperature;  
+        windText.Text = weather.Wind;  
+        visibilityText.Text = weather.Visibility;  
+        humidityText.Text = weather.Humidity;  
+        sunriseText.Text = weather.Sunrise;  
+        sunsetText.Text = weather.Sunset;  
+
+        weatherBtn.Content = "Search Again";  
     }  
-    ```  
+}  
+```  
   
-     Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionego. Jest to sama metoda, która wywołuje w aplikacji systemu Android. Ten kod zawiera również dane pobrane z tej metody w formantach interfejsu użytkownika aplikacji.  
-  
-5.  W pliku MainPage.xaml.cs jest otwarty, Usuń wszystkie kodu wewnątrz **OnNavigatedTo** metody. Ten kod po prostu obsługiwany przycisk domyślny, który został usunięty, gdy firma Microsoft zawartość MainPage.xaml.  
+Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionego. `GetWeather` jest to metoda tej samej nazwie w aplikacji systemu Android. Ten kod zawiera również dane pobrane z tej metody w formantach interfejsu użytkownika aplikacji.  
   
 ### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i sprawdzić, jak wygląda  
   
-1.  W **Eksploratora rozwiązań**ustaw **WeatherApp.WinPhone** projekt jako projekt startowy.  
+1.  W **Eksploratora rozwiązań**ustaw **WeatherApp.UWP** projekt jako projekt startowy.  
+
+2.  W **platformy rozwiązania** listy rozwijanej wybierz pozycję **x86** i wybierz **komputera lokalnego** do wdrożenia aplikacji na pulpicie systemu Windows 10.
   
-2.  Uruchom aplikację, naciskając klawisz F5.  
+3.  Uruchom aplikację, naciskając klawisz F5.  
   
-3.  W emulator Windows Phone, wpisz prawidłowy kod pocztowy w Stanach Zjednoczonych, w polu edycji (na przykład: 60601) i naciśnij klawisz **uzyskać pogody**. Dane pogody dla regionu pojawia się w formantach.  
-  
-     ![Wersja systemu Windows uruchomionej aplikacji](../cross-platform/media/xamarin_getstarted_results_windows.png "Xamarin_GetStarted_Results_Windows")  
-  
+4.  Wpisz prawidłowy Stanów Zjednoczonych 5 cyfrowy kod pocztowy w pole edycji, a następnie naciśnij klawisz **uzyskać pogody**. Dane pogody dla regionu pojawia się na stronie.  
+
+    [![Aplikacja Xamarin na platformy uniwersalnej systemu Windows](../cross-platform/media/cross-plat-xamarin-build-1-uwp.png "kompilacji usługi Xamarin Plat między 1 platformy uniwersalnej systemu Windows")](../cross-platform/media/cross-plat-xamarin-build-1-uwp-Large.png#lightbox)  
+
 > [!TIP]
 >  Kod źródłowy pełną dla tego projektu jest [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).  
-  
-##  <a name="next"></a> Następne kroki  
+
+<a name="next" /> 
+
+## <a name="next-steps"></a>Następne kroki  
+
  **Dodawanie interfejsu użytkownika dla systemu iOS do rozwiązania**  
   
- W tym przykładzie należy rozszerzyć przez dodanie natywnego interfejsu użytkownika dla systemu iOS. W tym musisz nawiązać połączenia z komputerów Mac w sieci lokalnej, która ma Xcode i Xamarin zainstalowane. Gdy to zrobisz, może używać Projektanta iOS bezpośrednio w programie Visual Studio. Zobacz [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) dla ukończonej aplikacji.  
+ W tym przykładzie należy rozszerzyć przez dodanie natywnego interfejsu użytkownika dla systemu iOS. Do testowania kodu w systemie iOS, należy nawiązać Mac w sieci lokalnej, która ma Xcode i Xamarin zainstalowane. Po wykonaniu tej czynności, można użyć projektanta iOS bezpośrednio w programie Visual Studio. Zobacz [mobile przykłady repozytorium w usłudze GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) dla ukończonej aplikacji.  
   
- Należy także zapoznać się [Hello, iOS](http://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/hello,iOS_quickstart/) wskazówki (xamarin.com). Należy pamiętać, że na tej stronie można się, że "Visual Studio" jest zaznaczona w prawym górnym rogu strony na xamarin.com, tak więc poprawny zestaw instrukcji.  
+ Należy także zapoznać się [Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?tabs=vswin) wskazówki.   
   
  **Dodaj kod specyficzne dla platformy w projekcie udostępnionym**  
   
- Udostępniony kod w PCL jest niezależny od platformy, ponieważ PCL raz kompilacji i zawarte w każdy pakiet aplikacji dla poszczególnych platform. Jeśli chcesz zapisać udostępniony kod, który używa kompilacji warunkowej do izolowania kodu specyficzne dla platformy, możesz użyć *udostępnionego* projektu. Aby uzyskać więcej informacji, zobacz [opcje udostępniania nadawcy](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).  
+ Udostępniony kod w bibliotece .NET Standard jest niezależny od platformy. Biblioteki są kompilowane raz i zawarte w każdy pakiet aplikacji dla poszczególnych platform. Jeśli chcesz zapisać udostępniony kod, który używa kompilacji warunkowej do izolowania kodu specyficzne dla platformy, możesz użyć *udostępnionego* projektu. Aby uzyskać więcej informacji, zobacz [opcje udostępniania kodu](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Witryny dla deweloperów platformy Xamarin](http://developer.xamarin.com/)   
+
+ [Dokumentacja platformy Xamarin](http://docs.microsoft.com/xamarin)   
  [Centrum deweloperów systemu Windows](https://dev.windows.com/en-us)   
  [Plakat krótkimi opisami SWIFT i C#](http://aka.ms/scposter)

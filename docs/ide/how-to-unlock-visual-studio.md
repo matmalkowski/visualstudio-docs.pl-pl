@@ -7,18 +7,18 @@ ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Porady: odblokować programu Visual Studio
 
@@ -70,7 +70,7 @@ Jeśli nie ponownie wprowadzić swoje poświadczenia, token zaczyna Przejdź sta
 
 ### <a name="update-expired-licenses"></a>Aktualizacja wygasłego licencji
 
- Jeśli subskrypcja utraciła ważność całkowicie i nie ma praw dostępu do programu Visual Studio, możesz odnowić subskrypcję, lub dodać innego konta, które ma subskrypcję. Aby uzyskać więcej informacji o licencji są używane, przejdź do **pliku**, **ustawienia konta** i przyjrzyj się informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innego konta, należy dodać to konto do **wszystkich kont** listy po lewej stronie okna dialogowego, wybierając **Dodaj konto...** łącza.
+ Jeśli subskrypcja utraciła ważność całkowicie i nie ma praw dostępu do programu Visual Studio, możesz odnowić subskrypcję, lub dodać innego konta, które ma subskrypcję. Aby uzyskać więcej informacji o licencji są używane, przejdź do **pliku**, **ustawienia konta** i przyjrzyj się informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innego konta, należy dodać to konto do **wszystkich kont** listy po lewej stronie okna dialogowego, wybierając **Dodaj konto...**  łącza.
 
 ## <a name="see-also"></a>Zobacz także
 

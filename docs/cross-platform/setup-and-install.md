@@ -1,93 +1,94 @@
 ---
 title: Zainstaluj program Xamarin dla Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 04/13/2017
+ms.date: 03/30/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: asb3993
-ms.author: amburns
+author: charlespetzold
+ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 4dcd83ffb1076211f8d23aa4491f853d2b7d316f
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 
-Tworzenie natywnych iOS, Android i Windows aplikacji ze wspólnego C# / kodu .NET podstawowej za pomocą platformy Xamarin, należy spełnić następujące warunki:
+Tworzenie natywnych iOS, Android i Windows aplikacji ze wspólnego C# / kodu .NET podstawowej za pomocą platformy Xamarin, potrzebny następujący sprzęt i oprogramowanie:
 
--   Do pracy z systemem Windows i aplikacje dla systemu Android: komputera systemu Windows z programu Visual Studio 2017 lub 2015 za pomocą platformy Xamarin zainstalowane. Można również użyć programu Visual Studio 2013 zgodnie z instrukcjami dla [bezpośredniej instalacji Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).
+-   Do pracy z systemem Windows i aplikacje dla systemu Android: Programowanie komputerem z systemem Windows (nie maszynę wirtualną) z programu Visual Studio 2017 r (w tym funkcje tworzenia Xamarin) zainstalowany.  
 
--   Do pracy z aplikacjami systemu iOS: Mac z macOS Sierra 10.12 lub powyżej, z Xcode i Xamarin zainstalowane.
+-   Do pracy z aplikacjami systemu iOS: Mac z macOS Sierra 10.12 lub powyżej, z Xcode zainstalowany i programu Visual Studio for Mac zainstalowane.
 
- Można skonfigurować komputery z systemem Windows i Mac, w tym samym czasie, a podczas wykonywania tych instalatorów można przejść przez [Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) do odczytywania i obejrzyj materiałów niezbędne tła.
+Brak licencji oddzielne muszą korzystać z platformy Xamarin.
+ 
+Można skonfigurować komputery z systemem Windows i Mac, w tym samym czasie, a podczas wykonywania tych instalatorów można przejść przez [Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) do odczytywania i obejrzyj materiałów niezbędne tła.
 
 Jeśli masz problemy po wykonaniu tego Instalatora i zainstaluj za pomocą platformy Xamarin, zgłoś zapytanie na [forums.xamarin.com](http://forums.xamarin.com/).
 
-> [!NOTE]
-> 31 marca 2016 r. wszystkie Xamarin jest dołączony do wszystkich wersji programu Visual Studio bez dodatkowych kosztów i nie wymaga oddzielnej licencji. Program Xamarin Studio Community dla komputerów Mac również jest bezpłatna dla uczniów lub studentów, OSS deweloperów i niewielkich zespołów. Należy pamiętać, że dla istniejącej instalacji programu Visual Studio, które są skonfigurowane przy użyciu wcześniejszych licencji Xamarin, musisz zaktualizować Xamarin do wersji 4.0.3.214 lub nowszej. Aby to zrobić, przejdź do **Narzędzia > Opcje > Xamarin > innych**, kliknij przycisk **Sprawdź** łącze i 4.0.3.214 pobierania aktualizacji. Po ponownym uruchomieniu programu Visual Studio, przejdź do **Narzędzia > Konto Xamarin...** i powinna zostać wyświetlona zaktualizowany stan.
+<a name="prereq" /> 
 
-##  <a name="prereq"></a> Wymagania wstępne
+## <a name="pre-requisites"></a>Wymagania wstępne
 
 ###  <a name="for-targeting-windows-and-android"></a>Przeznaczony do systemu Windows i Android
 
-1.  Zalecane: fizycznych komputerem z systemem Windows (nie maszyn wirtualnych) systemem Windows 8 lub nowszym, aby uzyskać najlepszą wydajność emulatora systemu Android. (Czy możemy wymienić należy komputera fizycznego, a nie maszyna wirtualna?)
+Zobacz [Visual Studio 2017 produktu z rodziny System wymagania](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs) dla szczegółowe wymagania wstępne dotyczące instalowania programu Visual Studio 2017 r.
 
-2.  Można użyć komputera z systemem Windows 7 lub starszym, w którym to przypadku użyjesz Xamarin Player dla systemu Android jako emulator.
-
-3. Dla obu konfiguracji będzie można uruchamiać aplikacje bezpośrednio na podłączone urządzenia fizycznego.
+Visual 2017 należy zainstalować na komputerze fizycznym z systemem Windows (nie maszyny wirtualnej) systemem Windows 10 z wszystkie zainstalowane aktualizacje. 
 
 ### <a name="for-targeting-ios"></a>Przeznaczony dla systemu iOS
 
-1.  Mac lub Mac w sieci A mini macOS Sierra uruchomiony system macOS 10.12 lub nowszy (wymagane dla Xcode 8.3).
+Emulatory dla systemu iOS docelowych i urządzeń z komputera z systemem Windows musisz również sieciowych Mac lub Mac mini system macOS, 10.12 lub nowszy i Xcode 8.3. Zobacz [Instalatora i zainstaluj pakiet Visual Studio for Mac](/visualstudio/mac/installation.md) bardziej szczegółowe wymagania.
 
-2.  Korzystając z programu Visual Studio na komputerze z systemem Windows (7 +) jako środowiska deweloperskiego podstawowego, sieciowych Mac jest tylko do kompilowania i debugowania aplikacji systemu iOS, dołączyć do symulatora systemu iOS lub powiązanego urządzeń oraz za pomocą projektanta scenorysu w programie Visual Studio dla Projektowanie interfejsu użytkownika. Starsze modele Mac są całkowicie wystarczający dla tej roli dodatkowej.
+<a name="windows" /> 
 
-##  <a name="windows"></a> Instalator systemu Windows (Visual Studio i Xamarin)
+##  <a name="windows-setup-visual-studio-and-xamarin"></a>Instalator systemu Windows (Visual Studio i Xamarin)
 
-> [!TIP]
-> Te instrukcje dotyczą programu Visual Studio 2017 r. Dla programu Visual Studio 2015 [MSDN](setup-and-install.md). Aby Xamarin za pomocą programu Visual Studio 2013 (wymagana jest aktualizacja 2), postępuj zgodnie z instrukcjami dotyczącymi [bezpośredniej instalacji Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).
+Jeśli jeszcze nie został zainstalowany program Visual Studio 2017 r, wykonaj następujące czynności:
 
-1.  [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja; wersje Professional i Enterprise może służyć wypróbowania przez 30 dni, po których musisz kupić licencję.
+1.  [Pobierz i uruchom Instalatora programu dowolnej wersji programu Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional lub Enterprise). Visual Studio 2017 Community jest bezpłatna wersja. Wersje Professional i Enterprise są dostępne na podstawie wersji próbnej przez 30 dni, po których konieczne jest licencja.
 
-    - Jeśli masz już Visual Studio 2017 r zainstalowane, uruchom **Instalator programu Visual Studio** z **Start** menu.
+2.  Gdy **instalowanie** zostanie wyświetlone okno dialogowe, sprawdź następujące pola:    
+
+    - **Mobile i gier > Mobile Development z platformą .NET**. Ta opcja będzie również automatycznie wybierać różnych narzędzi dla systemu Android i Software Development Kit. 
+
+        ![Wybierz opcję programowania aplikacji mobilnych, gier i aplikacji mobilnych](../cross-platform/media/cross-plat-xamarin-setup-2a.png "na wiele różnych Xamarin Instalatora 2")
+
+    - (Opcjonalnie) **Windows > rozwoju platformy uniwersalnej systemu Windows**. 
+
+Jeśli już masz Visual Studio 2017 r zainstalowany, ale nie został jeszcze zainstalowany platformy Xamarin, wykonaj następujące czynności:
+
+1. Uruchom **Instalator programu Visual Studio** z **Start** menu.
 
 2.  W ramach Instalatora, kliknij przycisk **więcej** przycisk, a następnie wybierz pozycję **Modyfikuj**:
 
     ![Wybranie opcji Modyfikuj w instalacji programu Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1a.png "na wiele różnych Xamarin konfiguracji 1")
 
-3.  Sprawdź następujące pola:
+3.  Gdy **instalowanie** zostanie wyświetlone okno dialogowe, sprawdź **Mobile i gier > programowania aplikacji mobilnych z platformą .NET** i (opcjonalnie) **Windows > rozwoju platformy uniwersalnej systemu Windows**. **Programowania aplikacji mobilnych z platformą .NET** opcji należy również zaktualizować ewentualne istniejące instalacje Xamarin.
 
-    - **Mobile i gier > Mobile Development z platformą .NET**. Automatycznie wybierze różnych narzędzi dla systemu Android w obszarze popularne narzędzia i zestawy Software Development Kit. Tej opcji należy również zaktualizować ewentualne istniejące instalacje Xamarin.
+Podczas instalacji, możesz kontynuować Mac instrukcje dotyczące instalacji i przejść przez [Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 
-        ![Wybierz opcję programowania aplikacji mobilnych, gier i aplikacji mobilnych](../cross-platform/media/cross-plat-xamarin-setup-2a.png "na wiele różnych Xamarin Instalatora 2")
+5.  Po zakończeniu instalacji uruchom program Visual Studio i zaloguj się przy użyciu konta Microsoft, jeśli zostanie wyświetlony monit. To konto jest to samo konto, które są używane w systemie Windows.
 
-    - (Opcjonalnie) **Windows > rozwoju platformy uniwersalnej systemu Windows**. Te opcje include dla instalowanie obrazów emulatory, które będą miały dłużej; Możesz zawsze wrócić do Instalatora programu Visual Studio, aby je dodać później.
+6.  Do testowania aplikacji systemu Android, użyj [emulatora Android SDK](/xamarin/android/get-started/installation/android-emulator/) Jeśli nie masz urządzenia fizycznego systemu Android. 
 
-4.  Kliknij przycisk **Modyfikuj** przycisk i umożliwić uruchamianie procesu. Ponownie, potrwa to trochę czasu, w tym czasie można kontynuować Mac instrukcje instalacji i przejść przez [Dowiedz się więcej o programowanie przenośnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
+<a name="mac" />
 
-5.  Po zakończeniu instalacji uruchom Visual Studio i zaloguj się przy użyciu konta Microsoft w przypadku wyświetlenia monitu (jest to samo konto używane w systemie Windows).
+##  <a name="mac-setup-apple-id-xcode-and-xamarin"></a>Instalator Mac (Apple ID, Xcode i Xamarin)
 
-6.  Do testowania aplikacji systemu Android, użyj [emulatora Android SDK](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/) Jeśli nie masz urządzenia fizycznego. Zobacz uwagi poniżej.
-
-> [!NOTE]
-> **Emulatory na komputerach z systemem Windows**: ponieważ procesorów obsługuje tylko jeden technologii wirtualizacji w czasie, jest najlepszym rozwiązaniem jest tylko jeden używany na komputerze dewelopera. Istnieją trzy główne wirtualizacji komputerów PC, technologie są funkcji Hyper-V (wykorzystywane przez Visual Studio Emulator dla systemów Android i Windows Phone emulator), pole wirtualne (używane przez Genymotion) i HAXM firmy Intel (wykorzystywane przez emulatora Android SDK). Ze względu na różne problemy między funkcją Hyper-V i wirtualnych pole najlepiej używać emulatory tylko jednego typu na dowolnym danym komputerze, dlatego zalecenia powyżej, aby użyć funkcji Hyper-V w systemie Windows 8 lub nowszym komputerów i emulatory Intel HAXM w systemie Windows 7 i wcześniejszych oraz kiedy systemem Windows na komputerach Mac.
-
-##  <a name="mac"></a> Instalator Mac (Apple ID, Xcode i Xamarin)
-
-1.  Utwórz bezpłatne identyfikator firmy Apple w [ https://appleid.apple.com ](https://appleid.apple.com/) Jeśli nie masz już. Jest to niezbędne do instalowania i rejestrowania się w środowisku Xcode.
+1.  Utwórz bezpłatne identyfikator firmy Apple w [ https://appleid.apple.com ](https://appleid.apple.com/) Jeśli nie masz już. Ten identyfikator Apple ID jest niezbędne do instalowania i rejestrowania się w środowisku Xcode.
 
 2.  Pobierz i zainstaluj program Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), i Dodaj identyfikator Apple ID, zgodnie z opisem na [Dodawanie Twoje konto xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
-3.  Pobierz i zainstaluj program Xamarin, postępując zgodnie z instrukcjami [Instalowanie i konfigurowanie Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
+3.  Pobierz i zainstaluj program Visual Studio for Mac zgodnie z instrukcjami [Instalatora i zainstaluj pakiet Visual Studio for Mac](/visualstudio/mac/installation.md).
 
-4.  Po zakończeniu instalowania Xamarin na komputerach z systemem Windows i Mac, postępuj zgodnie z instrukcjami [połączenie z komputerem Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com), dzięki czemu można pracować z systemem iOS i Mac w programie Visual Studio na komputerze z systemem Windows.
+4.  Po zakończeniu instalowania Xamarin na komputerach z systemem Windows i Mac, postępuj zgodnie z instrukcjami [połączenie z komputerem Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) , dzięki czemu można pracować z systemem iOS i Mac w programie Visual Studio na komputerze z systemem Windows.
 
-    Należy pamiętać, że oba komputery muszą być w tej samej sieci lokalnej.
+Oba komputery muszą być w tej samej sieci lokalnej.

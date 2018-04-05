@@ -1,25 +1,25 @@
 ---
-title: "Tworzenie aplikacji sieci web platformy ASP.NET Core w języku C# za pomocą programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie aplikacji sieci web platformy ASP.NET Core w języku C# za pomocą programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 10/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 654dd237dab7f0f320c399e3da1b4f1d24537750
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: e8e7838d48f974caeb67ed09c193aaee4633d781
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 

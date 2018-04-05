@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.suite: ''
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 535b01f8f0ef5840543013509d40b4b8393fa7f6
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 73b3ae67cc4396a7fc9041cb5074c84ffa2aa73a
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -24,7 +24,7 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego, można dodać je wszy
 
 Po dodaniu wiele kont na jednej maszynie zestawu kont będzie mobilny Tobie, jeśli logujesz się do programu Visual Studio na innym komputerze. Należy pamiętać, że chociaż nazwy kont są przekazywane, poświadczenia nie jest. W związku z tym pojawi się monit o podanie poświadczeń dla tych kont innych próba użycia zasobów na nowym komputerze po raz pierwszy.
 
-W tym przewodniku pokazano, jak dodać wiele kont dla programu Visual Studio i jak sprawdzić, czy zasoby dostępne z tych kont są uwzględniane w takich jak umieszcza **dodać podłączonej usługi** okna dialogowego, **Eksploratora serwera**, i **Team Explorer**.
+W tym przewodniku pokazano, jak dodać wiele kont dla programu Visual Studio i jak sprawdzić, czy zasoby dostępne z tych kont są uwzględniane w takich jak umieszcza **dodać podłączonej usługi** okna dialogowego, **Eksploratora serwera** , i **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
 
