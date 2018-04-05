@@ -28,6 +28,7 @@
       "build_source_folder": "docs",
       "build_output_subfolder": "vsdocsdocs",
       "locale": "pl-pl",
+      "xref_query_tags": ["/dotnet"],
       "monikers": [],
       "xref_query_tags": [
         "/dotnet"
@@ -91,15 +92,6 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
       "branch_mapping": {}
-    },
-    {
-      "path_to_root": "dotnet-xref",
-      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
-      "branch": "live",
-      "branch_mapping": {
-        "live": "live",
-        "master": "master"
-      }
     },
     {
       "path_to_root": "_repo.en-us",
