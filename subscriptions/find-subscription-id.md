@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 2617bca3296a62c1d0899bf699457005ef75002c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="locating-your-subscription-id-for-visual-studio-subscriptions"></a>Lokalizowanie identyfikator subskrypcji dla subskrypcji programu Visual Studio
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 01/29/2018
 "Identyfikator subskrypcji" jest identyfikatorem GUID 32-cyfrowy skojarzone z subskrypcją lub program subskrybenta.  W niektórych sytuacjach zespołem pomocy technicznej może zwrócić subskrybenta, aby zapewnić ich identyfikator subskrybenta, aby zawęzić liczbę potencjalnych problemów z określonej subskrypcji. 
 
 ## <a name="how-to-find-your-subscription-id"></a>Jak znaleźć Identyfikatora subskrypcji
-1. Przejdź do [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
+1. Przejdź do [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
 2. Zaloguj się do subskrypcji.  (Uzyskaj Pomoc [logowanie](/visualstudio/subscriptions/signing-in).)
 3. Po zarejestrowaniu, zostanie wyświetlona lista subskrypcji skojarzonych z tym adresem e-mail, używanego do logowania.  Można wyświetlić:
     - Typ programu

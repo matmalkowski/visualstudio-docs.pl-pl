@@ -1,5 +1,5 @@
 ---
-title: "Zarządzanie prawami administratora w portalu administratora subskrypcji programu Visual Studio"
+title: Zarządzanie prawami administratora w portalu administratora subskrypcji programu Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Zarządzanie prawami administratora w portalu administratora subskrypcji programu Visual Studio
 
 ## <a name="overview"></a>Omówienie 
-W programie Visual Studio subskrypcje administratora portalu (https://manage.visualstudio.com) istnieją dwie role związane z zarządzaniem:
+W portalu administratora subskrypcji programu Visual Studio (https://manage.visualstudio.com), dostępne są dwie role zarządzania:
 
 **Administratorzy super:** po skonfigurowaniu organizacji, podstawowej lub skontaktuj się z powiadomienia staje się administratorem super domyślnie. Skontaktuj się z podstawowej lub powiadomienia można przypisać dodatkowych administratorów super lub Administratorzy. Oprócz Zarządzanie subskrypcjami dla poszczególnych subskrybentów, Administratorzy super można dodawać i usuwać innych administratorów i administratorów super. Jeśli istnieje więcej niż dwóch Administratorzy super w systemie, superadministrator umożliwia usunięcie wszystkich ostatnie dwa zabezpieczeń. 
 
