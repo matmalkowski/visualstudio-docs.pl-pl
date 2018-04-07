@@ -1,25 +1,30 @@
 ---
-title: "Zarządzanie subskrypcjami Visual Studio"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to get the most out of your Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Zarządzanie subskrypcjami Visual Studio
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Dowiedz się, jak maksymalne wykorzystanie subskrypcji programu Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
+
+Visual Studio [Portal subskrybenta](https://my.visualstudio.com) daje możliwość zarządzania wszystkie subskrypcje i program członkostwa w jednym miejscu.  Można wprowadzić zmiany w Twoim profilu, korzystać ze wszystkich zalet uwzględnionych w subskrypcji i przełączać się między subskrypcjami szybkie i łatwe.  
+
 ## <a name="signing-in-to-the-portal"></a>Logowanie do portalu
 Subskrypcja programu Visual Studio — Zapraszamy!  Subskrypcja zapewnia całe oprogramowanie i korzyści, które wymagają aby pozostać się na cały kod rzeczy, w tym oprogramowania, miesięczne środki na korzystanie z platformy Azure, narzędzia współpracy, szkolenie perks, obsługiwanych i inne — wszystkie najnowszej i najlepszej firmy Microsoft.  Aby można było korzystać z portalu, należy się zalogować.
+
 ### <a name="first-time-access"></a>Dostęp do czasu pierwszego
 Kroki, aby korzystać z subskrypcji po raz pierwszy zależą od tego, jak uzyskać subskrypcję.  
+
 #### <a name="microsoft-store"></a>Microsoft Store
 Jeśli zakupione za pośrednictwem Microsoft Store subskrypcji programu Visual Studio, kroki aktywacji można zainicjować z płatności **stronę potwierdzenia** lub **wiadomość E-mail z potwierdzeniem.**  
 1.  Na stronie"potwierdzenie" lub "Wiadomości E-mail z potwierdzeniem", wybierz polecenie **kliknij tutaj, aby zarejestrować się w**.  Nastąpi przekierowanie do https://my.visualstudio.com/subscriptions/activate.
@@ -48,46 +53,48 @@ Jeśli Twoja organizacja ma usługi Azure Active Directory, ale nie masz konta u
 5.  Wprowadź hasło
 6.  Kliknij przycisk **Zaloguj** 
 
-### <a name="managing-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
+## <a name="managing-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
 Portal subskrypcji programu Visual Studio, połączono subskrypcji programu Visual Studio i programów w jednym udoskonalone środowisko portalu.  Na przykład może być standardowe subskrypcji takich jak Visual Studio Enterprise do pracy i miesięczna subskrypcja programu Visual Studio Professional lub Visual Studio Dev Essentials członkostwo, które można korzystać w domu. 
-#### <a name="which-subscription-am-i-using"></a>Subskrypcji, której używam?
+
+### <a name="which-subscription-am-i-using"></a>Subskrypcji, której używam?
 Na stronie korzyści używanej subskrypcji wyraźnie pojawi się na transparencie niebieski.  Jest wyświetlany również w prawym górnym rogu strony.
 
-![Aktywną subskrypcją](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+   ![Aktywną subskrypcją](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
-#### <a name="to-switch-between-subscriptions-you-can"></a>Aby przełączyć między subskrypcji, możesz:
+### <a name="to-switch-between-subscriptions-you-can"></a>Aby przełączyć między subskrypcji, możesz:
 - Kliknij listę rozwijaną w górnym rogu i wybierz subskrypcję z listy
 - Kliknij kartę subskrypcje, a następnie kliknij odpowiednią subskrypcję
 
-![Przełączanie subskrypcji](_img\manage-vs-subscriptions\change-subscription-resized.png)
+   ![Przełączanie subskrypcji](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
-#### <a name="if-your-subscription-is-not-visible"></a>Jeśli Twoja subskrypcja nie jest widoczne...
+### <a name="if-your-subscription-is-not-visible"></a>Jeśli Twoja subskrypcja nie jest widoczne...
 - Mogą one ważność.  Tylko aktywne subskrypcje są wyświetlane w portalu subskrybenta.
 - Może być skojarzony z innego adresu e-mail. Na przykład jeśli Zaloguj się do subskrypcji Visual Studio Professional z Twojej pracy/adres e-mail i mieć członkostwo podstawowe informacje dotyczące programu Visual Studio Dev, skojarzone z Account Microsoft wyświetlany tylko subskrypcji odpowiadający adres e-mail używane do logowania do portalu subskrybenta.  Aby wyświetlić inne subskrypcji, należy się wylogować, a następnie zaloguj się przy użyciu innego adresu e-mail.
 - Jeśli firma kupuje subskrypcji przy użyciu licencji zbiorczej, administrator nie może mieć przypisany subskrypcji do użytkownika lub mogą mieć przypisane subskrypcji do innego użytkownika.  
 
-### <a name="renewing-my-subscriptions"></a>Odnawianie Moje subskrypcje
+## <a name="renewing-my-subscriptions"></a>Odnawianie Moje subskrypcje
 **Standardowa subskrypcji**
 - Microsoft Store: W przypadku zakupu subskrypcji [Microsoft Store](http://www.microsoft.com/store), możesz odnowić go tam również. 
 - Licencjonowania zbiorowego: Jeśli firma kupuje subskrypcji przy użyciu licencji zbiorczej, administrator skontaktuj się z odsprzedawcą odnowienia subskrypcji.
 
-**Subskrypcje - usług w chmurze** subskrypcje w chmurze nie muszą być odnowione.  Tak długo, jak jest płatnej subskrypcji, pozostaną aktywne. 
+**Subskrypcje usług w chmurze:** subskrypcje w chmurze nie muszą być odnowione.  Tak długo, jak jest płatnej subskrypcji, pozostaną aktywne. 
 
-**Subskrypcje zakupione w ramach programów -** Jeśli otrzymasz subskrypcję za pośrednictwem programu subskrypcji jest powiązany z uczestnictwa w programie.  Sprawdź dotrzeć do kontaktów programu, aby uzyskać dodatkowe informacje. 
+**Subskrypcje zakupione w ramach programów:** Jeśli otrzymasz subskrypcję za pośrednictwem programu subskrypcji jest powiązany z uczestnictwa w programie.  Sprawdź dotrzeć do kontaktów programu, aby uzyskać dodatkowe informacje. 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials -** Essentials deweloperów to bezpłatny program, a nie wygasają członkostwa.  
+**Visual Studio Dev Essentials:** Essentials deweloperów to bezpłatny program, a nie wygasają członkostwa.  
 
-### <a name="transferring-subscriptions"></a>Przenoszenie subskrypcji
+## <a name="transferring-subscriptions"></a>Przenoszenie subskrypcji
 Jeśli subskrypcji zostało zakupione w ramach licencjonowania zbiorowego firmy Microsoft, musisz ponownie przypisać je do osób w organizacji administrator należy wykonać tej operacji. Subskrypcje detaliczne można przenieść do innego użytkownika kontaktując się z działem.  Nie można dokonać transferu subskrypcji bezpłatnych lub "Nie do sprzedaży". 
 
 
-### <a name="managing-my-profile"></a>Zarządzanie Mój profil
+## <a name="managing-my-profile"></a>Zarządzanie Mój profil
+Subskrypcje portal umożliwia tworzenie i zarządzanie nimi profilu, aby ułatwić zarządzanie subskrypcjami.  Można wprowadzić zmiany w informaiton Twojej tożsamości i skojarzyć innych logowania tożsamości z istniejących kont platformy Azure i programu VSTS do subskrypcji przy użyciu alternatywnych tożsamości. 
 
-#### <a name="changing-profile-information"></a>Zmiana informacji o profilu
+### <a name="changing-profile-information"></a>Zmiana informacji o profilu
 Można łatwo zmienić informacje kontaktowe i preferencje w Twoim profilu.  
 1.  Kliknij nazwę w prawym górnym rogu portalu subskrybenta.
 2.  Kliknij przycisk **edytowanie profilu** przycisku.
@@ -97,7 +104,7 @@ Można łatwo zmienić informacje kontaktowe i preferencje w Twoim profilu.
 
 ![Edytowanie informacji o profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-#### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Łączenie mojej subskrypcji platformy Azure lub subskrypcji do istniejącej usługi VSTS
+### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Łączenie mojej subskrypcji platformy Azure lub subskrypcji do istniejącej usługi VSTS
 Zaloguj się do subskrypcji za pomocą osobistego konta Microsoft (MSA) i masz subskrypcję obejmującą Visual Studio Team Services lub Microsoft Azure przy użyciu służbowe konto zarządzane przez usługę Azure, można połączyć dwóch subskrypcji. To jest nazywany "alternatywne konto" i pozwala korzystać z kont usług zarządzanych logować się do subskrypcji, a jednocześnie ma dostęp do istniejących zasobów Azure, programu VSTS lub IDE, które są skojarzone z szkołę lub kont służbowych. 
 
 Nawet wtedy, gdy oba konta używają tego samego adresu e-mail, należy dodać konto robocze/służbowe dyskietki korzystanie z zalet w oba konta. 

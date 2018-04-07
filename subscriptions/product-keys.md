@@ -1,23 +1,22 @@
 ---
-title: "Przy użyciu kluczy produktu | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Przy użyciu kluczy produktu | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Informacje o sposobie uzyskiwania i zarządzania kluczami produktów w ramach subskrypcji programu Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2d3ca72182c26e2e43bcdf97ea6277a4dd1375f0
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Przy użyciu kluczy produktu w ramach subskrypcji programu Visual Studio
 
-## <a name="product-keys-overview"></a>Omówienie kluczy produktu
 Visual Studio subskrypcje zapewniają dostęp do produktów szeroki zakres Microsoft projektowanie, tworzenie, testowanie i ilustrujące aplikacji. Niektóre z tych produktów wymagają klucze produktu podczas instalacji, a niektóre z tych wymagają aktywacji.
 
 Visual Studio subskrypcje zwykle zawierają pięć kluczy produktów dla bieżącej wersji produktów systemu Windows i pakietu Office i trzech kluczy dla starszych wersji.
@@ -48,7 +47,7 @@ Nasze badanie zawiera większość subskrybentów są objęte liczba kluczy prod
 ## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie, a także klucze produktów
 Możesz muszą być podpisane subskrypcji programu Visual Studio Aby wyświetlić klucze produktu. Znaleziono kluczami produktów poszczególnych wybierając niebieski **uzyskać klucz** łączy dla określonego produktu na [pliki do pobrania](https://my.visualstudio.com/downloads) strony, jak pokazano poniżej.  Wszystkie klucze są także dostępne w agregacji na [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) strony. Gdy istnieje wiele kluczy dla pojedynczego produktu, uwagi będą wyświetlane w kolumnie o wersji do pobrania pomóc w określeniu, klucz, do którego powinien być używany.
 
-![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
+   ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
 
 Niektóre produkty pakietu wiele wersji tego produktu do jednego pobierania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
 Niektóre klucze są udostępniane automatycznie, takie jak klucze "statyczny", których można użyć jako wiele razy ponieważ aktywacja nie jest wymagana. Kluczy musi być żądane przez wybranie **uzyskać klucz** łącze dla produktu.
@@ -82,7 +81,7 @@ Aby potwierdzić klucz produktu:
 1.  Zaloguj się do subskrypcji programu Visual Studio.  Użytkownik musi zalogowany do pobrania produktów lub oświadczeń kluczy produktu. 
 2.  Polecenie [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartę.
 3.  Klucze produktu alfabetycznym według nazwy produktu.  Można albo przewiń w dół nazwa żądanego produktu, lub wyszukaj go przy użyciu pasek wyszukiwania w górnej części strony.  
-![Wyszukiwanie klucza produktu](_img\product-keys\visio-product-key-cropped.png)
+    ![Wyszukiwanie klucza produktu](_img\product-keys\visio-product-key-cropped.png)
 
 W tym przykładzie firma Microsoft była używana na pasku wyszukiwania można znaleźć klucza produktu programu Visio 2010.
 Jak widać, dostępne są różne wersje programu Visio 2010 na liście.  Jeden klucz został już przejęty Visio Standard 2010 i Visio Premium 2010 i mają cztery klucze pozostałych.  Klucze, które zostały przejęte obu kluczy handlowych i są wyświetlane na stronie.  Zwróć uwagę, zapisanie krótkie notatki o zarzucanym kluczy w **uwagi** kolumny.  Możesz użyć tej funkcji w połączeniu z daty w **Claimed** kolumny do śledzenia klucze zostały przejęte.  Może na przykład należy notatki podczas aktywacji przy użyciu klucza produktu.  
@@ -91,11 +90,11 @@ Jak widać, dostępne są różne wersje programu Visio 2010 na liście.  Jeden 
 Możesz wyeksportować listę wszystkich kluczy, które zostały przejęte, wraz z dużej liczby statycznych i innych kluczy, które są automatycznie oznaczane jako "przejęte" dla Ciebie.  
 
 > [!IMPORTANT] 
-> Jeśli subskrypcja wygaśnie, nie można żądać nowych kluczy lub wyeksportować z oświadczeniem keys.* * 
+> Jeśli subskrypcja wygaśnie, nie będzie oświadczeń nowych kluczy lub wyeksportować oświadczeniem kluczy. 
 
 Aby wyeksportować klucze, wystarczy kliknąć na **wyeksportować wszystkie klucze** łącza po prawej stronie kluczy produktu.  Zostanie utworzony plik .xml prawo KeysExport.xml i będziesz mieć możliwość otworzyć lub zapisać plik.  Należy otworzyć plik przy użyciu aplikacji może obsługiwać plików XML.  Na przykład można otworzyć pliku jako tylko do odczytu skoroszytu programu Excel.  
 
-## <a name="internet-demonstrations-via-terminal-services"></a>Pokazów Internet za pośrednictwem usług terminalowych
+## <a name="internet-demonstrations-via-terminal-services"></a>Pokazów Internet za pomocą usług terminalowych
 Korzystanie z subskrypcji programu Visual Studio, mogą zapewnić użytkownikom dostęp do Internetu pokazów programy za pomocą usług terminalowych (z systemem Windows Server 2003 lub Windows Server 2008) lub usług pulpitu zdalnego (Windows Server 2008 R2 lub nowszy). Maksymalnie 200 użytkowników anonimowych ma równoczesny dostęp użytkownika pokaz w ten sposób. Pokaz użytkownika nie mogą używać danych produkcyjnych. Subskrybentów usługi Visual Studio są licencjonowane do zaprezentowania swoich aplikacji dla użytkowników końcowych. Jedyny scenariusz, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio zakłócają aplikacja przykładowa gdy oprogramowanie jest licencjonowane za pomocą Visual jest tej prezentacji Internet za pomocą usług terminalowych (TS) lub usług pulpitu zdalnego (RDS) Subskrypcje Studio.
 
 Jest to oprócz praw i testowania, gdzie subskrybentów usługi Visual Studio można użyć jako wiele połączeń usług pulpitu zdalnego lub usług terminalowych w razie potrzeby.

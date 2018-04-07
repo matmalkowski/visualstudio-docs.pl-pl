@@ -50,6 +50,8 @@
 
 # [Pakiety robocze](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+## [Azure](azure-workload.md)
+### [Usługi połączone](connected-services.md)
 ## [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)

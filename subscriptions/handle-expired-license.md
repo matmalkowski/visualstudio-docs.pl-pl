@@ -1,19 +1,19 @@
 ---
-title: "Obsługa wygasłych licencji | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can handle expired Visual Studio subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: ffe9a2367d2ce0933e7f57831400fafb9aeac26e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Obsługa wygasłych licencji | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Dowiedz się, jak Administratorzy może obsłużyć wygasłych subskrypcji programu Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f4f1e049ce5f236fc1bce958d698b15637cb265d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="handling-expired-subscriptions"></a>Obsługa wygasłe subskrypcje
 
@@ -21,4 +21,8 @@ Gdy użytkownik subskrypcja utraciła ważność, wskazane jest to w portalu prz
 
 ![Lista wygasłych subskrypcji](_img\expired-subscriptions\expired-list.png) 
 
-Aby odnowić subskrypcji, skontaktuj się z odsprzedawcą licencjonowania zbiorowego lub sprzedawcy Twojej firmy Microsoft. Podaj numer umowy i numer konta zakupu. Ze sprzedawcą lub sprzedawcy Microsoft przeprowadzi Cię odnowienia ani zakupu subskrypcji dodatkowe procesu. Po zamówienie lub kontrakt został odnowiony, nowe subskrypcje są dostępne, a można przypisać do subskrybenci.
+**Aby odnowić subskrypcji**
+1.  Skontaktuj się z odsprzedawcą licencjonowania zbiorowego lub sprzedawcy Twojej firmy Microsoft. 
+2.  Podaj numer umowy i numer konta zakupu. 
+
+Ze sprzedawcą lub sprzedawcy Microsoft przeprowadzi Cię odnowienia ani zakupu subskrypcji dodatkowe procesu. Po zamówienie lub kontrakt został odnowiony, nowe subskrypcje są dostępne, a może być [przypisane do subskrybenci](/assign-license/). 

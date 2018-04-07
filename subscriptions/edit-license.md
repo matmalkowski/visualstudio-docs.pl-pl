@@ -1,25 +1,28 @@
 ---
-title: "Edytować subskrypcje w portalu administratora | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Edytować subskrypcje w portalu administratora | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Dowiedz się, jak Administratorzy mogą edytować przypisania subskrypcji.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edytowanie przypisania subskrypcji programu Visual Studio
 
+Jako administrator subskrypcji możesz mieć możliwość zmiany subskrypcje przypisane do osób w danej organizacji.  W tym artykule omówiono typy zmian może sprawić i niezbędne instrukcje. 
+
 ## <a name="making-changes-to-subscriber-information"></a>Wprowadzanie zmian do subskrybenta informacji
 Można edytować informacje abonenta naprawić błędy lub zaktualizować informacje. 
-**Należy pamiętać, że Edycja adres e-mail subskrybenta spowoduje, że wszelkie istniejące korzyści zostaną zresetowane.**
+> [!NOTE]
+> Edycja adres e-mail subskrybenta spowoduje, że wszelkie istniejące korzyści zostaną zresetowane.
 
 Aby edytować subskrybenta, wybierz wielokropek (...), które są wyświetlane obok abonenta adresu e-mail, po wskaźnika myszy nad nim. Pojawi się listy rozwijanej.  Wybierz **Edytuj** Aby zmodyfikować szczegóły abonenta. Możesz również kliknąć dwukrotnie w wierszu abonenta w siatce, aby otworzyć okno edycji.
 
@@ -53,7 +56,7 @@ Można edytować wielu subskrybentów jednocześnie przy użyciu procesu zbiorcz
 
     ![Edytowanie licencji — Edycja zbiorcza przekazywania pliku](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Po przesłaniu pliku pojawi się powiadomienie informujące, że było pomyślne. 
+5.  Po przesłaniu pliku pojawi się powiadomienie informujące, że było pomyślne. W tym momencie zmiany zostaną odzwierciedlone w informacji dotyczących subskrybenta. 
 
     ![Edytowanie licencji — Edycja zbiorcza przekazywania ukończone](_img\edit-license\edit-license-bulk-upload-complete.png)
 

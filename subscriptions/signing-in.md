@@ -1,19 +1,19 @@
 ---
 title: Logowanie do subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Jak zalogować się do subskrypcji programu Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Logowanie do subskrypcji programu Visual Studio
 
@@ -25,7 +25,7 @@ W tym artykule opisano trzy różne metody logowania:
 3. [Przy użyciu Account firmy Microsoft do logowania się na konto robocze/służbowe](#using-your-microsoft-account-to-sign-in-to-a-work-or-school-account)
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Logowanie się przy użyciu konta Microsoft (MSA)
-1. Odwiedź stronę [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Odwiedź stronę [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Wprowadź adres e-mail podany podczas konfigurowania lub zakupić subskrypcję programu Visual Studio.
     
    > [!NOTE] 
@@ -39,7 +39,7 @@ W tym artykule opisano trzy różne metody logowania:
 Gdy uzyskujesz dostęp do Twojej subskrypcji programu Visual Studio Dev Essentials po raz pierwszy, pojawi się na ekranie powitalnym.  Kliknij przycisk **Potwierdź** do zaakceptowania warunków i postanowień programu.
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Logowanie się przy użyciu konta służbowego 
-1. Odwiedź stronę [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Odwiedź stronę [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Wprowadź adres e-mail, do której przypisano nowej subskrypcji programu Visual Studio.
     
    > [!NOTE]
@@ -57,7 +57,7 @@ Można również sprawdzić z obecnie wybraną subskrypcję w prawym górnym rog
 
 ## <a name="using-your-microsoft-account-to-sign-in-to-a-work-or-school-account"></a>Przy użyciu Account firmy Microsoft do logowania się na konto służbowe
 
-1. Przejdź do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Przejdź do [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Wprowadź adres e-mail, który został przypisany do nowej subskrypcji programu Visual Studio 
 
    > [!NOTE]

@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i platformy React w programie Visual Studio
 Program Visual Studio umożliwia łatwe tworzenie projektu środowiska Node.js i korzystać z funkcji IntelliSense i innych wbudowanych funkcji, które obsługują Node.js. W tym samouczku dla programu Visual Studio utworzeniu projektu aplikacji sieci web Node.js za pomocą szablonu Visual Studio. Następnie można utworzyć prostej aplikacji przy użyciu platformy React. 
@@ -349,11 +349,20 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 
     Wiadomo, że debuger został dołączony poprawnie, gdy konsoli JavaScript i narzędzia DOM Explorer Otwórz w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzia F12 Edge i przeglądarki Chrome Developer Tools.
 
+    > [!NOTE]
+    > Jeśli nie dołączyć debuger i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja jest niedozwolona w bieżącym stanie." następnie użyj Menedżera zadań, aby zamknąć wszystkie wystąpienia przeglądarki Chrome przed rozpoczęciem Chrome w trybie debugowania. Rozszerzenia programu Chrome mogą być uruchomione i uniemożliwia trybu pełnego debugowania.
+
 1. Ponieważ kodu przy użyciu punktu przerwania już wykonane, Odśwież stronę przeglądarki trafienie punktu przerwania.
 
     Podczas wstrzymaniu w debugerze, można sprawdzić stan Twojej aplikacji kursora myszy nad zmienne i korzystanie z debugera systemu windows. Debuger może przejść przez krokowe wykonywanie kodu (**F5**, **F10**, i **F11**).
 
-    Można napotkać punkt przerwania w albo bundle.js aplikacji lub lokalizacji zamapowanych app.tsx, w zależności od stanu Twojego środowiska i przeglądarki. W obu przypadkach można wykonywać krokowo kodu i Sprawdź zmienne. (Jeśli chcesz podzielić kodu w *.tsx* pliku i nie można to zrobić, spróbuj użyć `debugger;` instrukcji lub ustaw punkty przerwania w narzędziach Developer Chrome.)
+    Można napotkać punkt przerwania w jednej *bundle.js aplikacji* lub lokalizacji zamapowanych *app.tsx*w zależności od stanu Twojego środowiska i przeglądarki. W obu przypadkach można wykonywać krokowo kodu i Sprawdź zmienne.
+
+    * Jeśli chcesz podzielić kodu w *app.tsx* i nie można to zrobić, użyj **dołączyć do procesu** zgodnie z opisem w poprzednich krokach można dołączyć debugera. Następnie otwórz dynamicznie generowanym *app.tsx* plików w Eksploratorze rozwiązań, otwierając **dokumentów skryptu** > **app.tsx**, ustaw punkt przerwania i Odśwież strony w przeglądarce.
+
+        Alternatywnie Jeśli chcesz podzielić kodu w *app.tsx* i nie można to zrobić, spróbuj użyć `debugger;` instrukcji w *app.tsx*, lub ustaw punkty przerwania w narzędziach Developer Chrome zamiast tego.
+
+    * Jeśli chcesz podzielić kodu w *bundle.js aplikacji* i nie można to zrobić, usuń plik mapy źródłowej *bundle.js.map aplikacji*.
 
     > [!TIP]
     > Po podłączeniu do procesu po raz pierwszy wykonać następujące kroki, możesz można szybko ponownie dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając **debugowania** > **ponownie dołączyć do procesu**.

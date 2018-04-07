@@ -1,19 +1,19 @@
 ---
 title: Visual Studio subskrypcje oferowane partnerów w sieci partnera firmy Microsoft (MPN)
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/16/2018
-Ms.topic: Get-Started-Article
-Description: Details on what subscriptions are offered, what rules apply, and how many subscriptions are offered in MPN.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: f63185ac2a83557b3de5234c847f75f714829322
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/16/2018
+ms.topic: Get-Started-Article
+description: Szczegółowe informacje na subskrypcje, które są oferowane, Zastosuj zasady i ile subskrypcje są oferowane w MPN.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 9593614b58f8f4c77ec24891cdb9ada33eac3e60
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio subskrypcje oferowane partnerów w sieci partnera firmy Microsoft (MPN)
 Partnerzy kto otrzymywanie kompetencja i który zakupu pakiet akcji w MPN to prawo do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane dla każdego użytkownika, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku partnerskiej firmy. 
@@ -21,12 +21,12 @@ Partnerzy kto otrzymywanie kompetencja i który zakupu pakiet akcji w MPN to pra
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Subskrypcje dla partnerów z kompetencja MPN
 Gdy partnera uzyskuje kompetencja — w silver lub złota poziomu — partnerów, tym core liczbę subskrypcji Visual Studio Enterprise. To rdzeń korzyści zmiany, jeśli co najmniej jeden kompetencja gold uzyskuje partnera. Subskrypcja programu Visual Studio Enterprise jest niestandardowe oferty, która jest w przybliżeniu równy [roczne subskrypcję chmury programu Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/), ale niektóre korzyści usunięte (wiele z nich są oferowane osobno do partnerzy jako ogólne MPN — korzyści, a nie w ramach subskrypcji programu Visual Studio Enterprise oferowanych przez MPN). 
 
-### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Podstawowe programu Visual Studio korzyści zdobywanie co najmniej jeden kompetencja dowolnego rodzaju
+### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Podstawowe zdobywanie co najmniej jeden kompetencja żadnej korzyści programu Visual Studio
 | Umiejętności zdobytych tylko na poziomie silver               | Co najmniej jeden kompetencja zdobytych na poziomie gold   | 
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 subskrypcji visual Studio Enterprise                   | 10 subskrypcji visual Studio Enterprise          |
 
-### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Wybierz uprawnienia korzyści dodatkowe programu Visual Studio
+### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Dodatkowe korzyści programu Visual Studio wybierz uprawnienia
 | Kompetencja                                  | Dodatkowe subskrypcje zdobytych za **silver** kompetencja | Dodatkowe subskrypcje zdobytych za **złota** kompetencja |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Projektowanie aplikacji                     | 5 subskrypcji visual Studio Enterprise                  | 25 subskrypcji visual Studio Enterprise               |
@@ -55,12 +55,12 @@ Subskrybentów usługi Visual Studio Professional (MPN) można również pobrać
 
 Subskrypcja programu Visual Studio Professional (MPN) nie obejmuje korzyści, miesięczne środki na korzystanie z platformy Azure, pomocy technicznej, szkolenia lub inne korzyści subskrybenta, które są dostępne w subskrypcji programu Visual Studio, które są oferowane komercyjnie VSTS.
 
-## <a name="internal-use-only-restriction"></a>Tylko ograniczenie użycia wewnętrzny
+## <a name="internal-use-only-restriction"></a>Wewnętrzny ograniczeń tylko do użytku
 MPN zasady określają, czy całe oprogramowanie oferowana jako korzyści programu można używać tylko wewnętrznie. Dotyczy to dostępna w przypadku używania poszczególnych subskrybentów programu Visual Studio i korzyści ogólnej licencji oprogramowania MPN oprogramowania. 
 
 Ograniczenie tylko do użytku wewnętrznego zasadniczo oznacza, że partnerów nie może używać oprogramowania jako część pracy, jak w przypadku stron spoza własnej organizacji. Tylko sposób tworzenia aplikacji, które będą używane przez pracowników partnera działa poprawnie, ale tworzenie aplikacji, która jest częścią projektu klienta będzie niemożliwe.
 
-## <a name="sign-in-required-with-visual-studio"></a>Zaloguj się wymagane z programem Visual Studio
+## <a name="sign-in-required-with-visual-studio"></a>Logowanie wymagane z programem Visual Studio
 Z subskrypcjami Visual Studio oferowane za pośrednictwem MPN użytkownik mający licencję zalogować się do programu Visual Studio przy użyciu tej samej tożsamości/logowanie użytego w celu aktywowania subskrypcji programu Visual Studio. Klucze produktu nie są dostępne, aby odblokować produkt, logowanie jest jedyną opcją dla uruchamiania programu Visual Studio. Subskrybent Visual Studio może działać w trybie offline przez maksymalnie 30 dni przed Visual Studio przestanie działać. Podczas pracy w trybie online programu Visual Studio dyskretnie odświeża stan licencji użytkownika, aby zapewnić subskrypcja jest nadal ważny.
 
 ## <a name="resources"></a>Zasoby

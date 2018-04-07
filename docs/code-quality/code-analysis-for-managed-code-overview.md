@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla zarządzanego kodu
 
@@ -33,11 +33,11 @@ Ręcznie lub automatycznie, można uruchomić analizy kodu w projekcie.
 
 Aby uruchomić kod — analiza za każdym razem w przypadku kompilowania projektu, zaznacz **Włącz analizę kodu podczas kompilacji** na stronie właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Aby ręczne przeprowadzanie analizy kodu w projekcie, na pasku menu wybierz **Analizuj** > **uruchamiania analizy kodu** > **Uruchom analizę kodu na <project>** . Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Aby ręczne przeprowadzanie analizy kodu w projekcie, na pasku menu wybierz **Analizuj** > **uruchamiania analizy kodu** > **Uruchom analizę kodu na \<projektu >**.
 
 ## <a name="rule-sets"></a>Zestawy reguł
 
-Reguły analizy kodu dla zarządzanego kodu są podzielone na *zestawów reguł*. Można użyć jednego z zestawów reguł standard Microsoft lub można utworzyć niestandardowego zestawu reguł do spełnienia konkretna potrzeba użycia. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
+Reguły analizy kodu dla zarządzanego kodu są podzielone na [zestawów reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Można użyć jednej z zestawów reguł standardowe firmy Microsoft, lub możesz [Tworzenie niestandardowego zestawu reguł](../code-quality/how-to-create-a-custom-rule-set.md) do zrealizowania konkretna potrzeba użycia.
 
 ## <a name="suppress-warnings"></a>Pomijanie ostrzeżeń
 
@@ -56,7 +56,7 @@ Public class MyClass
 Aby uzyskać więcej informacji, zobacz [tłumienie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany utrudnione numerem ostrzeżenia analizy kodu. Jeśli nie jest gotowa na rozwiązanie ostrzeżeń, aby tymczasowo wyłączyć analizy kodu, otwieranie stron właściwości projektu (**projektu** > ***projektu* właściwości...** ) i przejdź do **analizy kodu** kartę. Anuluj wybór **Włącz analizę kodu podczas kompilacji**, a następnie ponownie skompiluj projekt. Alternatywnie można wybrać różne, mniejszym zestawu reguł jest w celu uruchomienia kodu. Pamiętaj, aby włączyć analizę kodu na powrót po osiągnięciu gotowości do napraw ostrzeżenia.
+> Jeśli migrujesz projektu do programu Visual Studio 2017 może nagle być skierowany z dużą liczbą ostrzeżenia analizy kodu. Jeśli nie są gotowe do napraw ostrzeżenia i chcesz stać się wydajni od razu, możesz *linii bazowej* stanu analizy projektu. Z **Analizuj** menu, wybierz opcję **Uruchom analizę kodu i Pomiń aktywne problemy**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchom jako część zasad ewidencjonowania analizy kodu
 

@@ -1,23 +1,23 @@
 ---
-title: "Przy użyciu portalu subskrybenta - http://my.visualstudio.com | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Przy użyciu portalu subskrybenta - http://my.visualstudio.com | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: Więcej informacji na temat pełnego zakresu korzyści dostępne w portalu subskrypcji programu Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Przy użyciu portalu subskrybenta — Moje. <span> </span>visualstudio<span></span>com
 
-Portalu subskrypcje usługi Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), jest zasób w jednym mógł korzystać z pełnego zakresu korzyści zapewniane przez subskrypcję programu Visual Studio. 
+Portalu subskrypcje usługi Visual Studio [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs), jest zasób w jednym mógł korzystać z pełnego zakresu korzyści zapewniane przez subskrypcję programu Visual Studio. 
 
 Za pomocą portalu wymaga Zaloguj tożsamość skojarzoną z subskrypcją.  Może to być Twojego konta Microsoft (MSA) lub adres e-mail dostarczonego przez organizację, takie jak pracodawcy lub szkolnego.  Dowiedz się więcej o [logowanie](/visualstudio/subscriptions/signing-in).
 
@@ -29,7 +29,7 @@ Narzędzia i usługi uwzględnionych w subskrypcji są wyświetlane jako "Kafelk
 ### <a name="tools"></a>Narzędzia
 Kategoria narzędzia jest znajdziesz core narzędziami programistycznymi, takie jak Visual Studio IDE, Visual Studio Team Services, a także narzędzi dostarczanych przez naszych partnerów.  Widoczny będzie również usług, takich jak Azure i Centrum aplikacji programu Visual Studio.
 
-### <a name="professional-development"></a>Programowanie Professional
+### <a name="professional-development"></a>Profesjonalne programowanie
 Ta kategoria zawiera korzyści, takich jak szkolenia online firmy Microsoft i naszych partnerów, jak również subskrypcji MSDN Magazine, wszystkie, aby przejść z programistami i zaznajomieni wszystkie elementy kodu.  
 
 ### <a name="support"></a>Obsługa

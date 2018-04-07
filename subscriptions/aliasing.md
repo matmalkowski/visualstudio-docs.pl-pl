@@ -1,23 +1,23 @@
 ---
-title: "Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem z aliasami | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/2/2018
-Ms.topic: Get-Started-Article
-Description: Sign-in may fail if aliases or friendly names are used.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8c07bc8d3cf674d86c2152ff80f20e4fac003fc3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas aliasy użycia | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/02/2018
+ms.topic: Get-Started-Article
+description: Logowanie może zakończyć się niepowodzeniem, jeśli są używane aliasy nazwami lub przyjaznymi
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-with-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem z aliasami
+# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas aliasy użycia
 
-W zależności od typu konta używane do logowania, dostępnych subskrypcji mogą nie być poprawnie wyświetlane po zalogowaniu się do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jeden potencjalną przyczyną jest użycie "aliasów" lub "przyjazne nazwy" zamiast tożsamości logowania przypisaniu subskrypcji. Jest to "aliasów". 
+W zależności od typu konta używane do logowania, dostępnych subskrypcji mogą nie być poprawnie wyświetlane po zalogowaniu się do [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jeden potencjalną przyczyną jest użycie "aliasów" lub "przyjazne nazwy" zamiast tożsamości logowania przypisaniu subskrypcji. Jest to "aliasów". 
 
 ## <a name="what-is-aliasing"></a>Co to jest aliasów?
 
@@ -27,9 +27,9 @@ Wygładzanie może wystąpić, gdy firma ma usługi Online firmy Microsoft dla s
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Jako administrator jakie opcje są dostępne?
 
-Jako administrator, dostępne są dwie opcje, aby zapewnić subskrybenci pomyślnego logowania na [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
-1. Pierwsza opcja (zalecane), ma korzystać z konta katalogu jako przypisanego adresu w wolumin licencjonowania Service Center (VLSC). Zapoznaj się [przypisywanie subskrybentów z kontem katalogu](#assigning-subscribers-to-a-directory-account) w tym artykule, aby uzyskać więcej informacji.
-2. Druga opcja (mniej bezpieczna opcja), jest umożliwienie subskrybenci skojarzyć swój adres e-mail "Pracy lub szkoły" kontu "Osobiste" () Konta Microsoft lub zarządzanych kont usług). Zapoznaj się [określenie konta firmowego lub szkolnego jako konto osobiste ](#defining-a-work-or-school-account-as-a-personal-account ) w tym artykule, aby uzyskać więcej informacji.
+Jako administrator, dostępne są dwie opcje, aby zapewnić subskrybenci pomyślnego logowania na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
+- Pierwsza opcja (zalecane), ma korzystać z konta katalogu jako przypisanego adresu w wolumin licencjonowania Service Center (VLSC). Zapoznaj się [przypisywanie subskrybentów z kontem katalogu](#assigning-subscribers-to-a-directory-account) w tym artykule, aby uzyskać więcej informacji.
+- Druga opcja (mniej bezpieczna opcja), jest umożliwienie subskrybenci skojarzyć swój adres e-mail "Pracy lub szkoły" kontu "Osobiste" () Konta Microsoft lub zarządzanych kont usług). Zapoznaj się [określenie konta firmowego lub szkolnego jako konto osobiste ](#defining-a-work-or-school-account-as-a-personal-account ) w tym artykule, aby uzyskać więcej informacji.
 
 > [!NOTE]
 > Po migracji do nowej subskrypcji programu Visual Studio firmy [portalu zarządzania](https://manage.visualstudio.com), będzie można korzystać z nowych czynności administracyjnych, dzięki czemu zarówno katalogu i adresami poczty e-mail mają być dostarczone jako część Profil abonenta.  Dowiedz się więcej o [migracji](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -99,7 +99,7 @@ Ponieważ powitalnej wiadomości E-mail nie zostanie pomyślnie osiągnąć Twoj
 
 Witaj % SUBSKRYBENTA NAME %
 
-Przypisane subskrypcji programu Visual Studio.  Odwiedź stronę https://my.visualstudio.com i zaloguj się za pomocą programu % katalogu % adres do aktywowania i korzystać z subskrypcji. 
+Przypisane subskrypcji programu Visual Studio.  Odwiedź stronę https://my.visualstudio.comi zaloguj się przy użyciu adresu % adres katalogu % aktywować i dostępu do Twojej subskrypcji. 
 
 Jeśli masz problemy, skontaktuj się z zespołem pomocy technicznej (https://www.visualstudio.com/subscriptions/support/).
 
@@ -119,10 +119,10 @@ Należy korzystać z instrukcji przedstawionych w temacie [przypisywanie subskry
 > [!WARNING]
 > Firma Microsoft zaleca łączenie tożsamości "Pracy lub szkoły" z "Osobiste" tożsamości.  Ta akcja powoduje utraty własności i kontroli konta organizacji, a pracownik mogą w dalszym ciągu dostęp do określonych produktów lub usług, nawet po opuszczających firmę.  Odwołaj to [wpis w blogu](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/), od zespołu Microsoft Identity, aby uzyskać dodatkowe informacje.
 
-### <a name="defining-an-email-address-as-a-personal-account"></a>Określenie adresu E-mail jako konta osobistego
-Po przypisaniu subskrypcji z subskrybentem, otrzymają wiadomość e-mail z prośbą ich do https://my.visualstudio.com Aby skorzystać z zalet ich subskrypcji.  Podczas próby logowania, logowanie subskrypcja programu Visual Studio zakończy się niepowodzeniem z o błędzie informujący, że konto nie został rozpoznany.  Przed zalogowaniem się do obsługi https://my.visualstudio.com, poproś subskrybentom wykonaj te instrukcje.  Jeśli to konieczne, możesz użyć tej funkcji [szablonu](#notifying-your-subscribers-using-personal-accounts) do powiadamiania Twojego subskrybenta po przypisaniu subskrypcji.
+### <a name="defining-an-email-address-as-a-personal-account"></a>Określenie adresu e-mail jako konta osobistego
+Po przypisaniu subskrypcji z subskrybentem, otrzymają wiadomość e-mail z prośbą ich do https://my.visualstudio.com Aby skorzystać z zalet ich subskrypcji.  Podczas próby logowania, logowanie subskrypcja programu Visual Studio zakończy się niepowodzeniem z o błędzie informujący, że konto nie został rozpoznany.  Przed logowanie do https://my.visualstudio.com występują, poproś subskrybentom wykonaj te instrukcje.  Jeśli to konieczne, możesz użyć tej funkcji [szablonu](#notifying-your-subscribers-using-personal-accounts) do powiadamiania Twojego subskrybenta po przypisaniu subskrypcji.
 
-1. Przejdź do https://my.visualstudio.com, a następnie kliknij przycisk **Utwórz nowe konto Microsoft**.
+1. Przejdź do https://my.visualstudio.comi kliknij przycisk **Utwórz nowe konto Microsoft**.
 
 2. Wypełnij pola:
     - Wprowadź adres e-mail, która odebrała powitalnej wiadomości E-mail w Someone@example.com pole
@@ -161,7 +161,7 @@ Przypisano subskrypcji programu Visual Studio i może przekierowanie do zalogowa
 
 6. Powinien zostać wyświetlony swoje korzyści
 
-Uwaga: Podczas odwiedzania https://my.visualstudio.com w przyszłości, może zostać wyświetlony monit wybierz konto, które chcesz użyć (np. "Konto służbowe" lub "Osobiste konto").  Po wykonaniu powyższych czynności, należy skorzystać z opcji "Osobiste konto".
+Uwaga: Podczas odwiedzania https://my.visualstudio.com w przyszłości może pojawić się prośba wybierz konto, które chcesz użyć (np. "Konto służbowe" lub "Osobiste konto").  Po wykonaniu powyższych czynności, należy skorzystać z opcji "Osobiste konto".
 
 Jeśli masz problemy, skontaktuj się z zespołem pomocy technicznej (https://www.visualstudio.com/subscriptions/support/).
 

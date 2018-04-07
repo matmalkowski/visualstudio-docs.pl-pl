@@ -2,17 +2,17 @@
 title: Tworzenie środowiska programowania .NET Core z kontenerami przy użyciu Kubernetes w chmurze za pomocą programu Visual Studio — krok 6 — więcej informacji na temat tworzenia zespołu | Dokumentacja firmy Microsoft
 author: johnsta
 ms.author: johnsta
-ms.date: 02/20/2018
+ms.date: 04/05/2018
 ms.topic: get-started-article
 ms.technology: vsce-kubernetes
 description: Szybkie opracowywanie Kubernetes z kontenerów i mikrousług na platformie Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
 manager: ghogen
-ms.openlocfilehash: fb05df7782c23c6caa973e0c1ad3e9433e8b2470
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d8d81afbe4fbf99c52107c8afc6f1eb9938de792
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Rozpoczynanie pracy w środowisku połączonych z platformy .NET Core i Visual Studio
 

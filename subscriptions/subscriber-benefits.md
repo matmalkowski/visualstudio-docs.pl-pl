@@ -1,19 +1,19 @@
 ---
-title: "Subskrypcji programu Visual Studio — korzyści dla subskrybentów"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Subskrypcji programu Visual Studio — korzyści dla subskrybentów
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Więcej informacji na temat korzyści zawarte w ramach subskrypcji programu Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w ramach subskrypcji programu Visual Studio
 
@@ -22,9 +22,9 @@ Subskrypcje w Visual Studio oferują najbardziej kompleksowy zestaw zasoby umoż
 Korzyści są podzielone na trzy kategorie:
 
 ## <a name="tools"></a>Narzędzia
-Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym najważniejszych korzyści, takich jak [programu Visual Studio IDE](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts), i [Azure](/vs-azure) .  W zależności od poziomu subskrypcji systemu Windows i Office 365 Developer kont, Centrum aplikacji programu Visual Studio i korzyści z partnerami, takie jak WhiteSource Bolt i ModernRequirements będzie Zobacz też.
+Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym najważniejszych korzyści, takich jak [programu Visual Studio IDE](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/), i [Azure](/vs-azure/) .  W zależności od poziomu subskrypcji systemu Windows i Office 365 Developer kont, Centrum aplikacji programu Visual Studio i korzyści z partnerami, takie jak WhiteSource Bolt i ModernRequirements będzie Zobacz też.
 
-## <a name="professional-development"></a>Programowanie Professional
+## <a name="professional-development"></a>Profesjonalne programowanie
 Aby pomóc w przypadku ciągłe ulepszyć Twoje skillset i nadąża z najnowszych technologii, firma Microsoft zapewnić dostęp do niektórych najlepiej dostępne szkolenia online z liderów branży. Przykłady dużą dostępnej zawartości:
 - Wgląd w aplikację platformy Azure i rozwiązania Cosmos Azure DB przez Opsgility
 - Obsługujący wiele platform przenośnych Developer przez Xamarin University

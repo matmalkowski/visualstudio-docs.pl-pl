@@ -1,19 +1,19 @@
 ---
-title: "Przy użyciu subskrybenta pobiera elementy wizualne Studio subskrypcje | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Przy użyciu subskrybenta pobiera elementy wizualne Studio subskrypcje | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Dowiedz się, jak znaleźć i pobrać produktów firmy Microsoft, uwzględnionych w subskrypcji programu Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Przy użyciu subskrybenta pliki do pobrania w ramach subskrypcji programu Visual Studio
 W ramach swoje korzyści subskrybenta masz dostęp do szerokiej gamy modułu pobierania oprogramowania.  
@@ -34,7 +34,7 @@ Istnieje kilka przyczyn, dlaczego poszczególnych produktów nie mogą być dost
 ## <a name="what-do-i-get"></a>Co zrobić?
 Liczba i typ pliki do pobrania jest zależna od członkostwa poziomu i program subskrypcji.  Na przykład subskrybentów z subskrypcją standardowe Visual Studio Enterprise, może być dostępne dla nich niż subskrybentów, którzy uzyskują ich subskrypcji przy użyciu subskrypcji programu Microsoft Partner Network lub BizSpark różne pliki do pobrania.  Aby dowiedzieć się więcej o jakie pliki do pobrania są dostępne dla każdego poziomu subskrypcji, Pobierz listę [produktów przez korzyści poziom](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak znaleźć pliki do pobrania w portalu subskrybenta? 
 Tylko pliki do pobrania uwzględnionych w subskrypcji są wyświetlane dla Ciebie na [pobiera](https://my.visualstudio.com/downloads/featured) strony.  Jeśli masz więcej niż jedną subskrypcję lub członkostwo w programie, pliki do pobrania wyświetlane będą **najwyższy subskrypcji** przechowywania, nawet jeśli są aktualnie wyświetlane innej subskrypcji.  Na przykład jeśli masz subskrypcję programu Visual Studio Professional i Visual Studio Dev Essentials członkostwa zarówno skojarzone z tym samym identyfikatorze logowania, pliki do pobrania wyświetlane te uwzględniane w subskrypcji poziomu Professional, nawet jeśli jesteś obecnie Wyświetlanie korzyści programu deweloperów Essentials.  
