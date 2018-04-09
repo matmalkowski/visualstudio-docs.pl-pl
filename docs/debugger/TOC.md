@@ -7,7 +7,7 @@
 ## [Debugowanie aplikacji platformy ASP.NET](quickstart-debug-aspnet.md)
 # Samouczki
 ## [Naucz się debugować przy użyciu programu Visual Studio](getting-started-with-the-debugger.md)
-## [Uruchamianie kodu w języku Python w debugerze...](../python/vs-tutorial-01-04.md)
+## [Uruchamianie kodu w języku Python w debugerze...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Debugowanie działającej aplikacji platformy Azure](debug-live-azure-applications.md)
 ## [Wyświetlanie migawki za pomocą opcji cofania do poprzedniego kroku funkcji IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Przewodniki z instrukcjami
