@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definiowanie niestandardowego polecenia dla projektów języka Python
 
@@ -50,7 +50,7 @@ Każdego polecenia niestandardowych mogą odwoływać się do pliku Python, modu
 
 Aby zapoznać się z niestandardowych poleceń, w tej sekcji przeprowadzi Cię przez prosty przykład wykonywana bezpośrednio za pomocą python.exe pliku uruchomienia projektu. (Takiego polecenia skutecznie jest taka sama jak przy użyciu **Debuguj > Uruchom bez debugowania**.)
 
-1. Tworzenie nowego projektu o nazwie "Python-CustomCommands" przy użyciu szablonu "Python aplikacji". (Zobacz [Szybki Start: Tworzenie projektu języka Python z szablonu](quickstart-02-project-from-template.md) instrukcje, jeśli nie znasz już z procesem.)
+1. Tworzenie nowego projektu o nazwie "Python-CustomCommands" przy użyciu szablonu "Python aplikacji". (Zobacz [Szybki Start: Tworzenie projektu języka Python z szablonu](quickstart-02-python-in-visual-studio-project-from-template.md) instrukcje, jeśli nie znasz już z procesem.)
 
 1. W `Python_CustomCommands.py`, Dodaj kod `print("Hello custom commands")`.
 
@@ -152,7 +152,7 @@ Wszystkie wartości atrybutów jest rozróżniana wielkość liter.
 | Element TargetType | Tak | Określa atrybut docelowy zawiera i sposobie ich użycia wraz z argumentami atrybutu:<ul><li>**wykonywalny**: uruchomienia pliku wykonywalnego o nazwie w celu dołączania wartości argumentów, tak jakby wprowadzone bezpośrednio w wierszu polecenia. Wartość musi zawierać tylko nazwę programu bez argumentów.</li><li>**skrypt**: Uruchom `python.exe` z nazwą pliku w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Moduł**: Uruchom `python -m` następuje nazwa modułu w lokalizacji docelowej, a następnie z wartością w argumentach.</li><li>**Kod**: Uruchom kodu wbudowanego zawarte w lokalizacji docelowej. Wartość argumentów jest ignorowana.</li><li>**PIP**: Uruchom `pip` przy użyciu polecenia w lokalizacji docelowej, a następnie argumentów; jest ExecuteIn ma ustawioną wartość "output", jednak zakłada pip `install` poleceń i używa docelowy jako nazwę pakietu.</li></ul> |
 | docelowy | Tak | Nazwa pliku, nazwa modułu, kodu lub pip polecenia do użycia, w zależności od TargetType. |
 | Argumenty | Optional | Określa ciąg argumentów (jeśli istnieje) ma zostać przypisany do obiektu docelowego. Należy pamiętać, że po TargetType `script`, argumenty są podane z programem Python nie `python.exe`. Ignorowane dla `code` TargetType. |
-| ExecuteIn | Tak | Określa środowisko, w którym uruchomienia polecenia:<ul><li>**Konsola**: (domyślnie) uruchamia docelowy i argumenty tak, jakby ich zostaną wprowadzone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, podczas gdy elementem docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: tej samej konsoli, ale oczekuje na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w oknie danych wyjściowych w programie Visual Studio. Jeśli element TargetType "pip", Visual Studio wykorzystuje docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [okna interaktywnego Python](interactive-repl.md); opcjonalna nazwa wyświetlana jest używany jako tytuł okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
+| ExecuteIn | Tak | Określa środowisko, w którym uruchomienia polecenia:<ul><li>**Konsola**: (domyślnie) uruchamia docelowy i argumenty tak, jakby ich zostaną wprowadzone bezpośrednio w wierszu polecenia. Zostanie wyświetlone okno polecenia, podczas gdy elementem docelowym jest uruchomiona, a następnie automatycznie zamknięte.</li><li>**consolepause**: tej samej konsoli, ale oczekuje na naciśnięcie klawisza przed zamknięciem okna.</li><li>**dane wyjściowe**: docelowy działa i wyświetla wyniki w oknie danych wyjściowych w programie Visual Studio. Jeśli element TargetType "pip", Visual Studio wykorzystuje docelowy jako nazwę pakietu i dołącza argumentów.</li><li>**repl**: docelowy działa w [okna interaktywnego Python](python-interactive-repl-in-visual-studio.md); opcjonalna nazwa wyświetlana jest używany jako tytuł okna.</li><li>**Brak**: działa tak samo jak konsoli.</li></ul>|
 | WorkingDirectory | Optional | Folder, w którym można uruchomić polecenie. |
 | ErrorRegex<br>WarningRegEx | Optional | Używana tylko wtedy, gdy ExecuteIn jest `output`. Obie wartości Określ wyrażenie regularne, z którym program Visual Studio analizuje dane wyjściowe polecenia, aby wyświetlić błędy i ostrzeżenia w oknie Lista błędów. Jeśli nie zostanie określony, polecenie nie dotyczy w oknie Lista błędów. Aby uzyskać więcej informacji, w jaki Visual Studio oczekuje, zobacz [grup przechwytywania o nazwie](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Optional | Listę wymagań dotyczących pakietu dla polecenia przy użyciu tego samego formatu co [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Uruchom PyLint** polecenia, na przykład Określa `pylint>=1.0.0`. Przed uruchomieniem polecenia, programu Visual Studio sprawdza, czy są zainstalowane wszystkie pakiety na liście. Aby zainstalować wszystkie brakujące pakiety programu Visual Studio korzysta pip. |

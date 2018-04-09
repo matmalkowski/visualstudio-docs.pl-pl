@@ -42,22 +42,25 @@
 #### [Priorytetowa pomoc techniczna na forach*](vs-priority-support.md)
 #### [Obsługa Concierge](vs-concierge-chat.md)
 ## Zarządzanie subskrypcjami
-### Omówienie
-#### [Więcej informacji na temat zarządzania subskrypcjami](subscription-management-info.md)
-#### [Obowiązki administratora](admin-responsibilities.md)
-#### [Zarządzanie administratorami](managing-admins.md)
-#### [Uzyskiwanie dostępu do portalu](access-admin-portal.md)
-#### Dołączanie organizacji
-##### [Znajdowanie numeru PCN](find-pcn.md)
-##### [Zarządzanie wieloma numerami PCN](multiple-pcns.md)
-##### [Znajdowanie podstawowej osoby kontaktowej](find-primary-contact.md)
-##### [Znajdowanie identyfikatorów subskrypcji](find-subscription-id.md)
-### Korzystanie z portalu administracyjnego
+### [Obowiązki administratora](admin-responsibilities.md)
+### [Więcej informacji na temat zarządzania subskrypcjami](subscription-management-info.md)
+### Uzyskiwanie dostępu do portalu i zarządzanie administratorami
+#### [W przypadku licencjonowania zbiorowego](volume-license-admins.md)
+##### [Często zadawane pytania dotyczące migracji administratorów centrum VLSC](vlsc-admin-faq.md)
+##### Dołączanie organizacji
+###### [Komunikacja e-mail dotycząca dołączania](volume-license-onboarding-email.md)
+###### [Znajdowanie numeru PCN](find-pcn.md)
+###### [Znajdowanie podstawowej osoby kontaktowej](find-primary-contact.md)
+#### [W przypadku umowy MPSA](mpsa.md)
+#### [W przypadku subskrypcji chmury](cloud-admin.md)
+#### [Film wideo dotyczący dołączania](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+### [Korzystanie z portalu administracyjnego](using-admin-portal.md)
 #### [Przypisywanie subskrypcji](assign-license.md)
 #### [Ponowne wysyłanie wiadomości e-mail dotyczących przypisania](resend-assignment-email.md)
 #### [Edytowanie subskrypcji](edit-license.md)
 #### [Usuwanie subskrypcji](delete-license.md)
 #### [Wyszukiwanie subskrypcji](search-license.md)
+#### [Eksportowanie subskrypcji](exporting-subscriptions.md)
 #### [Nadmierne alokacje](handle-overclaimed-license.md)
 #### [Wygasłe subskrypcje](handle-expired-license.md)
 #### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
@@ -71,8 +74,11 @@
 #### [Microsoft Partner Network](program-mpn.md)
 #### [Zarządzanie subskrypcjami dla programu MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-## Zasoby
+## Resources
 ### [Postanowienia licencyjne programu Visual Studio](vs-license-terms.md)
 ### [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](http://aka.ms/vslicensing)
 ### [Porównanie opcji i cen subskrypcji](https://www.visualstudio.com/vs/pricing)
 ### [Porównanie funkcji programu Visual Studio IDE](https://www.visualstudio.com/vs/compare)
+### [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://www.visualstudio.com/support/support-overview-vs)
+### [Licencja zbiorcza i prawa używania produktu](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Microsoft Products and Services Agreement (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

@@ -53,6 +53,7 @@
 ## [Python: Tworzenie aplikacji internetowych](ide/quickstart-python.md)
 ## [Node.js: Tworzenie aplikacji internetowych](ide/quickstart-nodejs.md)
 ## [C#: Tworzenie aplikacji internetowych](ide/quickstart-aspnet-core.md)
+## [C#: Tworzenie aplikacji platformy uniwersalnej systemu Windows](ide/quickstart-uwp-csharp.md)
 ## [Visual Basic: Tworzenie aplikacji konsoli](ide/quickstart-visual-basic-console.md)
 # Samouczki
 ## [Język C++ w programie Visual Studio...](/cpp/build/vscpp-step-0-installation)

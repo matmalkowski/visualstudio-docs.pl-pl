@@ -2,24 +2,24 @@
 title: Debuger systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Więcej informacji na temat okna debugera programu Visual Studio
 
@@ -43,7 +43,7 @@ Podczas debugowania programu, można otworzyć większości oknach debugera. Aby
 |Moduły|CTRL+ALT+U|[Porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)|
 |Wątków GPU|-|[Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Zadania|CTR:+SHIFT+D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
-|Interakcyjne debugowania języka Python|SHIFT+ALT+I|[Interaktywny REPL Python](../python/interactive-repl.md)|
+|Interakcyjne debugowania języka Python|SHIFT+ALT+I|[Interaktywny REPL Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Konsola JavaScript|CTRL+ALT+V, C|[Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Eksplorator DOM|CTRL+ALT+V, D|[Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
