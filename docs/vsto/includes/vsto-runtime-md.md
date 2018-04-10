@@ -1,1 +1,1 @@
- Visual Studio Tools dla pakietu Office Runtime 
+ Visual Studio Tools for Office Runtime 

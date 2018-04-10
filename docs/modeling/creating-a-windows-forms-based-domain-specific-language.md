@@ -1,9 +1,9 @@
 ---
-title: "Tworzenie języka specyficznego dla domeny na podstawie formularzy systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie języka specyficznego dla domeny na podstawie formularzy systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 Formularze systemu Windows można użyć do wyświetlenia stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza systemu Windows z DSL, używając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania zestawu SDK.  
@@ -53,9 +53,9 @@ Wystąpienie DSL wyświetlanie interfejsu użytkownika formularza systemu Window
   
  W wystąpieniu głównego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zwróć uwagę następujące kwestie dotyczące rozwiązania DSL:  
   
--   `DslDefinition.dsl`nie zawiera żadnych elementów diagramu. Jest to spowodowane diagramy DSL nie będzie używać do wyświetlania wystąpienia modeli tego DSL. Zamiast tego formularza systemu Windows będzie powiązać modelu, a elementy na formularzu będzie wyświetlana modelu.  
+-   `DslDefinition.dsl` nie zawiera żadnych elementów diagramu. Jest to spowodowane diagramy DSL nie będzie używać do wyświetlania wystąpienia modeli tego DSL. Zamiast tego formularza systemu Windows będzie powiązać modelu, a elementy na formularzu będzie wyświetlana modelu.  
   
--   Oprócz `Dsl` i `DslPackage` projektów, rozwiązanie zawiera projekt trzeci o nazwie `UI.` **interfejsu użytkownika** projektu zawiera definicję formantu formularzy systemu Windows. `DslPackage`zależy od `UI`, i `UI` zależy od `Dsl`.  
+-   Oprócz `Dsl` i `DslPackage` projektów, rozwiązanie zawiera projekt trzeci o nazwie `UI.` **interfejsu użytkownika** projektu zawiera definicję formantu formularzy systemu Windows. `DslPackage` zależy od `UI`, i `UI` zależy od `Dsl`.  
   
 -   W `DslPackage` projektu, `UI\DocView.cs` zawiera kod, który wyświetla kontrolki formularza systemu Windows, który jest zdefiniowany w `UI` projektu.  
   
@@ -88,9 +88,9 @@ Wystąpienie DSL wyświetlanie interfejsu użytkownika formularza systemu Window
   
 4.  Użyj **klasy o nazwie domeny** narzędzia do tworzenia następujące klasy domeny:  
   
-    -   `Field`— Podać to właściwość dodatkowe domeny o nazwie `Size`.  
+    -   `Field` — Podać to właściwość dodatkowe domeny o nazwie `Size`.  
   
-    -   `Animal`— W oknie właściwości ustaw **modyfikator dziedziczenia** do **abstrakcyjny**.  
+    -   `Animal` — W oknie właściwości ustaw **modyfikator dziedziczenia** do **abstrakcyjny**.  
   
 5.  Użyj **klasy domeny** narzędzia do tworzenia następujące klasy:  
   
@@ -223,7 +223,7 @@ Schemat łącza między źródłami danych i widoków.
   
 3.  W **FarmApp Explorer**, otwórz menu skrótów na **farmy** węzła głównego, a następnie wybierz pozycję **Dodaj nowe kóz**.  
   
-     `Goat1`zostanie wyświetlony w **zwierząt** widoku.  
+     `Goat1` zostanie wyświetlony w **zwierząt** widoku.  
   
     > [!WARNING]
     >  Należy użyć menu skrótów na **farmy** węzła, nie **zwierząt** węzła.  

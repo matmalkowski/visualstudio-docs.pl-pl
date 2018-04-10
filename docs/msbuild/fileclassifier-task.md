@@ -1,11 +1,11 @@
 ---
-title: "Fileclassifier — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: FileClassifier Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f9eaf8655bba29fc0b56108c2ad62db6e3b6d48
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="fileclassifier-task"></a>FileClassifier — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> Zadań klasyfikuje zestaw zasobów źródła jako te, które zostaną osadzone w zestawie. Jeśli zasób nie jest Lokalizowalny, jest osadzony w zestawie aplikacji głównej; w przeciwnym razie jest osadzony w zestawie satelickim.  
@@ -36,9 +36,9 @@ ms.lasthandoff: 02/09/2018
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`CLREmbeddedResource`|Nieużywane.|  
-|`CLRResourceFiles`|Nieużywane.|  
-|`CLRSatelliteEmbeddedResource`|Nieużywane.|  
+|`CLREmbeddedResource`|Unused.|  
+|`CLRResourceFiles`|Unused.|  
+|`CLRSatelliteEmbeddedResource`|Unused.|  
 |`Culture`|Opcjonalne **ciąg** parametru.<br /><br /> Określa kulturę dla kompilacji. Ta wartość może być **null** Jeśli kompilacja jest niemożliwe do zlokalizowania. Jeśli **null**, wartością domyślną jest wartość małe **wartość CultureInfo.InvariantCulture** zwraca.|  
 |`MainEmbeddedFiles`|Opcjonalne **[ITaskItem]** parametru wyjściowego.<br /><br /> Określa zasoby niemożliwe do zlokalizowania, które są osadzone w zestawie głównym.|  
 |`OutputType`|Wymagane **ciąg** parametru.<br /><br /> Określa typ pliku do plików źródłowych określonej do osadzenia. Prawidłowe wartości to **exe**, **winexe**, lub **biblioteki**.|  

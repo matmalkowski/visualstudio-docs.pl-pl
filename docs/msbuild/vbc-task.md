@@ -1,11 +1,11 @@
 ---
-title: "Vbc — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Vbc Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-caps.latest.revision: 
+caps.latest.revision: 19
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 01b38f523a3a1c97798cdd629290791ab5e480f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączanych dynamicznie (dll) lub moduły kodu (modułu .netmodule). Aby uzyskać więcej informacji o vbc.exe, zobacz [kompilatora wiersza polecenia programu Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -43,7 +43,7 @@ Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączany
 |`BaseAddress`|Opcjonalne `String` parametru.<br /><br /> Określa adres podstawowy biblioteki dll. Ten parametr odpowiada [/baseAddress](/dotnet/visual-basic/reference/command-line-compiler/baseaddress) przełącznika kompilatora vbc.exe.|  
 |`CodePage`|Opcjonalne `Int32` parametru.<br /><br /> Określa stronę kodową do używania wszystkich plików kodu źródłowego w kompilacji. Ten parametr odpowiada [/CODEPAGE](/dotnet/visual-basic/reference/command-line-compiler/codepage) przełącznika kompilatora vbc.exe.|  
 |`DebugType`|Opcjonalne `String[]` parametru.<br /><br /> Powoduje, że kompilator generuje informacje o debugowaniu. Ten parametr może mieć następujące wartości:<br /><br /> -   `full`<br />-   `pdbonly`<br /><br /> Wartość domyślna to `full`, która umożliwia dołączanie debugera do działającego programu. Wartość `pdbonly` umożliwia debugowanie kodu źródłowego, gdy program jest uruchamiany w debugerze, ale wyświetla kod języka zestawu tylko wtedy, gdy jest uruchomiony program jest podłączony do debugera. Aby uzyskać więcej informacji, zobacz [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).|  
-|`DefineConstants`|Opcjonalne `String[]` parametru.<br /><br /> Definiuje warunkowe stałe kompilatora. Pary symboli i wartości są oddzielone średnikami i są określane za pomocą następującej składni:<br /><br /> *symbol1* `=` *value1* `;` *symbol2* `=` *value2*<br /><br /> Ten parametr odpowiada [/ define](/dotnet/visual-basic/reference/command-line-compiler/define) przełącznika kompilatora vbc.exe.|  
+|`DefineConstants`|Opcjonalne `String[]` parametru.<br /><br /> Definiuje warunkowe stałe kompilatora. Pary symboli i wartości są oddzielone średnikami i są określane za pomocą następującej składni:<br /><br /> *symbol1* `=` *wartość1* `;` *symbol2* `=` *wartość2*<br /><br /> Ten parametr odpowiada [/ define](/dotnet/visual-basic/reference/command-line-compiler/define) przełącznika kompilatora vbc.exe.|  
 |`DelaySign`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie zostanie umieszczone klucz publiczny w zestawie. Jeśli `false`, zadanie pełni podpisuje zestawu. Wartość domyślna to `false`. Ten parametr nie obowiązuje, chyba że używana z `KeyFile` parametru lub `KeyContainer` parametru. Ten parametr odpowiada [/DelaySign](/dotnet/visual-basic/reference/command-line-compiler/delaysign) przełącznika kompilatora vbc.exe.|  
 |`DisabledWarnings`|Opcjonalne `String` parametru.<br /><br /> Pomija określonych ostrzeżeń. Należy określić numeryczna część identyfikatora ostrzeżenie. Wiele ostrzeżeń są oddzielone średnikami. Ten parametr odpowiada [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) przełącznika kompilatora vbc.exe.|  
 |`DocumentationFile`|Opcjonalne `String` parametru.<br /><br /> Przetwarza komentarzy do dokumentacji w określonym pliku XML. Ten parametr zastępuje `GenerateDocumentation` atrybutu. Aby uzyskać więcej informacji, zobacz [/doc](/dotnet/visual-basic/reference/command-line-compiler/doc).|  

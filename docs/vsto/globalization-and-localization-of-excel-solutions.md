@@ -1,12 +1,12 @@
 ---
-title: "Lokalizacja i globalizacja rozwiązań w programie Excel | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Lokalizacja i globalizacja rozwiązań w programie Excel | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 66c997dd8de6801d790b7653ca414cac0996ddc9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Lokalizacja i globalizacja rozwiązań programu Excel
   Ta sekcja zawiera informacje o uwagi dotyczące rozwiązania programu Microsoft Office Excel, które będą uruchamiane na komputerach z systemem innym niż angielski ustawienia dla systemu Windows. Większością aspektów globalizacja i lokalizacja pakietu Microsoft Office są takie same, jak podczas tworzenia innych rodzajów rozwiązań za pomocą programu Visual Studio. Aby uzyskać ogólne informacje, zobacz [Globalizing i lokalizacja aplikacji](/visualstudio/ide/globalizing-and-localizing-applications).  

@@ -1,9 +1,9 @@
 ---
-title: "Dodawanie niestandardowej weryfikacji architektury do diagramów zależności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie niestandardowej weryfikacji architektury do diagramów zależności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej weryfikacji architektury do diagramów zależności
 W programie Visual Studio użytkowników można zweryfikować kodu źródłowego w projekcie modelu warstwy, dzięki czemu można zweryfikować, że kod źródłowy odpowiada zależności na diagramie zależności. Brak algorytmu weryfikacji standardowych, ale można zdefiniować rozszerzeń sprawdzania poprawności.  
@@ -120,7 +120,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
      Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
-##  <a name="programming"></a>Sprawdzanie poprawności programowania  
+##  <a name="programming"></a> Sprawdzanie poprawności programowania  
  Aby zdefiniować rozszerzenia weryfikacji warstwy, należy zdefiniować klasę, która ma następującą charakterystykę:  
   
 -   Formularz ogólny deklaracji jest w następujący sposób:  
@@ -189,7 +189,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
   
  Łącza od warstwy do elementów w kodzie mają kategorię "Reprezentuje".  
   
-##  <a name="debugging"></a>Debugowanie sprawdzania poprawności  
+##  <a name="debugging"></a> Debugowanie sprawdzania poprawności  
  Aby debugować rozszerzenie weryfikacji warstwy, naciśnij klawisze CTRL + F5. Otwiera eksperymentalne wystąpienie programu Visual Studio. W tym wystąpieniu otwarcia lub utworzenia modelu warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test z rozwiązaniem, która zawiera zależności  
@@ -216,7 +216,7 @@ W programie Visual Studio użytkowników można zweryfikować kodu źródłowego
 ### <a name="deploying-a-validation-extension"></a>Wdrażanie rozszerzenia sprawdzania poprawności  
  Aby zainstalować rozszerzenie sprawdzania poprawności na komputerze, na którym zainstalowano odpowiedniej wersji programu Visual Studio, otwórz plik VSIX na komputerze docelowym. Aby zainstalować na komputerze, na którym [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] jest zainstalowany, należy ręcznie wyodrębnić zawartość pliku VSIX do folderu rozszerzeń. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a>Przykładowy kod  
+##  <a name="example"></a> Przykładowy kod  
   
 ```csharp  
 using System;  

@@ -1,12 +1,12 @@
 ---
 title: Format specyfikatory debugera (C++) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w C++ w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **czujki** okna używanie specyfikatorów formatu.  
@@ -81,7 +81,7 @@ int main() {
 |s8|Ciąg UTF-8|\<Lokalizacja > "Jest â˜• Filiżanka kawy UTF-8"|"Jest ☕ Filiżanka kawy UTF-8"|
 |**s8b**|Ciąg UTF-8 (bez cudzysłowu)|\<Lokalizacja > "hello world"|Cześć ludzie|  
 |su|Ciąg Unicode (kodowania UTF-16)|\<Lokalizacja > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
-|Sub|Ciąg Unicode (UTF-16 kodowanie) (bez cudzysłowu)|\<Lokalizacja > L "hello world"|Cześć ludzie|  
+|sub|Ciąg Unicode (UTF-16 kodowanie) (bez cudzysłowu)|\<Lokalizacja > L "hello world"|Cześć ludzie|  
 |bstr|Ciągów BSTR|\<Lokalizacja > L "hello world"|L "hello world"|  
 |env|Blok środowiska (ciąg zakończone o podwójnej precyzji null)|\<Lokalizacja > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Ciąg UTF-32|\<Lokalizacja > U "hello world"|U "hello world"|  
@@ -112,18 +112,18 @@ int main() {
   
 |Specyfikator|Format|Oryginalnej wartości czujki|Wartość wyświetlana|  
 |---------------|------------|--------------------------|---------------------|  
-|**d, i**|decimal liczbę całkowitą ze znakiem|0xF000F065|-268373915|  
+|**d,i**|decimal liczbę całkowitą ze znakiem|0xF000F065|-268373915|  
 |**u**|niepodpisane dziesiętną liczbą całkowitą|0x0065|101|  
 |o|ósemkową liczby całkowitej bez znaku|0xF065|0170145|  
 |x,X|Szesnastkowa liczba całkowita|61541|0x0000f065|  
-|**g, h**|Prefiks długich i krótkich: d, i, u, o x X|00406042|0x0c22|  
-|**f**|podpisana zmiennoprzecinkowych|(3./2.), f|1.500000|  
-|**e**|Notacja naukowa podpisem|(3.0/2.0)|1.500000e+000|  
+|**l,h**|Prefiks długich i krótkich: d, i, u, o x X|00406042|0x0c22|  
+|**f**|podpisana zmiennoprzecinkowych|(3. / 2.), f|1.500000|  
+|**e**|Notacja naukowa podpisem|(3.0/2.0)|1.500000e + 000|  
 |**g**|podpisana zmiennoprzecinkowa lub podpisany notacji naukowej, zależności jest krótszy|(3.0/2.0)|1.5|  
 |c|pojedynczy znak|\<Lokalizacja >|101 "e"|  
 |s|Const char *|\<Lokalizacja >|"hello world"|  
 |su|wchar_t const *<br /><br /> Const char16_t\*|\<Lokalizacja >|L "hello world"|  
-|Sub|wchar_t const *<br /><br /> Const char16_t\*|\<Lokalizacja >|Cześć ludzie|  
+|sub|wchar_t const *<br /><br /> Const char16_t\*|\<Lokalizacja >|Cześć ludzie|  
 |s8|Const char *|\<Lokalizacja >|"hello world"|  
 |hr|Kod błędu HRESULT lub Win32. (Debuger teraz dekoduje wyników HRESULT automatycznie, więc to specyfikator nie jest wymagany w przypadku.|S_OK|S_OK|  
 |WC|Flaga klasy okna.|0x00000040,|WC_DEFAULTCHAR|  
@@ -135,11 +135,11 @@ int main() {
   
 |Symbol|Format|Oryginalnej wartości czujki|Wartość wyświetlana|  
 |------------|------------|--------------------------|---------------------|  
-|**ma**|64 znaki ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 bajtów w formacie szesnastkowym, a następnie 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|16 bajtów w formacie szesnastkowym, a następnie 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mw**|8 słowa|0x0012ffac|0X0012FFAC 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
-|**md**|4 doublewords|0x0012ffac|0X0012FFAC 00CB34B3 80943084 308A22FF 00002657|  
+|**ma**|64 ASCII characters|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
+|**m**|16 bajtów w formacie szesnastkowym, a następnie 16 znaków ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
+|**mb**|16 bajtów w formacie szesnastkowym, a następnie 16 znaków ASCII|0x0012ffac|0X0012FFAC B3 34 FF CB 00 84 30 94 80 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
+|**mw**|8 słowa|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
+|**md**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-bajtowych znaków (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
@@ -148,4 +148,4 @@ int main() {
   
 |Specyfikator|Format|Wyrażenie|Wartość wyświetlana|  
 |---------------|------------|----------------|---------------------|  
-|n|dziesiętną liczbą całkowitą|pBuffer [32]|Wyświetla `pBuffer` jako tablica 32 element.|
+|n|dziesiętną liczbą całkowitą|pBuffer[32]|Wyświetla `pBuffer` jako tablica 32 element.|

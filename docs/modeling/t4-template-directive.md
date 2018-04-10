@@ -1,9 +1,9 @@
 ---
-title: "T4 dotycząca Dyrektywa szablonu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: T4 dotycząca Dyrektywa szablonu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3c4e53c4d123a5a5de493059c68ef09685c903a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego T4 zazwyczaj rozpoczyna się od `template` dyrektywy, który określa sposób przetwarzania szablonu. Powinna istnieć nie więcej niż jedna dyrektywa szablonu w szablonie tekstowym i wszystkich plikach, które on uwzględnia.  
@@ -109,7 +109,7 @@ Content of myFile is:
  `language="VB"`  
   
  Prawidłowe wartości:  
- `C#`(ustawienie domyślne)  
+ `C#` (ustawienie domyślne)  
   
  `VB`  
   
@@ -219,7 +219,7 @@ This is the common footer.
  `linePragmas="false"`  
   
  Prawidłowe wartości:  
- `true`(ustawienie domyślne)  
+ `true` (ustawienie domyślne)  
   
  `false`  
   
@@ -232,7 +232,7 @@ This is the common footer.
  `visibility="internal"`  
   
  Prawidłowe wartości:  
- `public`(ustawienie domyślne)  
+ `public` (ustawienie domyślne)  
   
  `internal`  
   

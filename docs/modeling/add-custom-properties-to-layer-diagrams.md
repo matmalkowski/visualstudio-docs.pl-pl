@@ -1,9 +1,9 @@
 ---
-title: "Dodawanie właściwości niestandardowych do diagramów zależności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie właściwości niestandardowych do diagramów zależności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 Podczas pisania kodu rozszerzenie dla diagramów zależności wartości z żadnym elementem można przechowywać na diagramie zależności. Wartości będzie umieszczony po zapisaniu i ponownym otwarciu diagramu. Może także zawierać te właściwości są wyświetlane w **właściwości** okna tak, aby użytkownicy mogli widzieć i je edytować. Na przykład można zezwolić użytkownikom Określ wyrażenie regularne dla każdej warstwy, a napisać kod sprawdzania poprawności, aby sprawdzić, czy nazwy klasy w każdej warstwie jest zgodna z wzorcem określone przez użytkownika.  
@@ -31,7 +31,7 @@ Podczas pisania kodu rozszerzenie dla diagramów zależności wartości z żadny
 > [!IMPORTANT]
 >  Aby właściwości są wyświetlane, należy następującej zmiany na każdym komputerze, na którym ma właściwości warstwy, która będzie widoczna.  
 >   
->  1.  Uruchom program Notatnik, używając **Uruchom jako Administrator**. Otwórz`%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  1.  Uruchom program Notatnik, używając **Uruchom jako Administrator**. Otwórz `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 > 2.  Wewnątrz `Content` elementu, dodać:  
 >   
 >     ```xml  
@@ -65,11 +65,11 @@ public class MyProperty
   
  Można zdefiniować właściwości <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ani dla żadnej z jej klas pochodnych, które obejmują:  
   
--   `ILayerModel`-modelu  
+-   `ILayerModel` -modelu  
   
--   `ILayer`-poszczególnych warstw  
+-   `ILayer` -poszczególnych warstw  
   
--   `ILayerDependencyLink`-łącza między warstwami  
+-   `ILayerDependencyLink` -łącza między warstwami  
   
 -   `ILayerComment`  
   

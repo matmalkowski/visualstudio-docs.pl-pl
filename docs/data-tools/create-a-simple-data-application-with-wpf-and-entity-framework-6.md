@@ -1,10 +1,10 @@
 ---
 title: Tworzenie prostej aplikacji danych z WPF i Entity Framework 6 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych z WPF i Entity Framework 6
 
@@ -56,7 +56,7 @@ W tym przykładzie używa programu SQL Server Express LocalDB i przykładowej ba
   
 3.  W Menedżerze pakietów NuGet, kliknij polecenie **Przeglądaj** łącza. Entity Framework jest prawdopodobnie pakiet na liście. Kliknij przycisk **zainstalować** w okienku po prawej stronie i postępuj zgodnie z monitami. W oknie danych wyjściowych informuje, po zakończeniu instalacji.  
   
-     ![Pakiet NuGet Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
+     ![Entity Framework NuGet Package](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
   
 4.  Teraz możemy użyć programu Visual Studio, aby utworzyć model na podstawie bazy danych Northwind.  
   
@@ -118,7 +118,7 @@ Można napisać własny kod wiązania danych, ale jest znacznie łatwiejsze umo�
         </Grid.RowDefinitions>
     ```
 
-5.  Teraz Otwórz MainWindow.xaml, dzięki czemu wyświetlanych w projektancie. Spowoduje to okna źródeł danych są wyświetlane jako opcja w Visual Studio margines okna obok przybornika. Kliknij kartę, aby otworzyć okno lub #else naciśnij **Shift + Alt + D** lub wybierz **widoku &#124; Inne okna &#124; Źródła danych**. Zamierzamy do wyświetlania każdej właściwości w klasie klientów w jego własnej poszczególnych tekst. Najpierw kliknij strzałkę w polu kombi klientów i wybierz polecenie **szczegóły**. Następnie przeciągnij węzeł środkowej części powierzchni projektu, aby projektanta wie, czy chcesz, aby przejść w środkowej wiersza.  Jeśli użytkownik misplace go, można określić wiersz ręcznie później w kodzie XAML. Domyślnie przez formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można rozmieścić je jednak na formularzu, takich jak.  Na przykład może być uzasadnione, które mają zostać umieszczone na górze powyżej adres polu tekstowym Nazwa. Przykładowa aplikacja dla tego artykułu zmienia kolejność pól i rozmieszcza je na dwie kolumny.  
+5.  Teraz Otwórz MainWindow.xaml, dzięki czemu wyświetlanych w projektancie. Spowoduje to okna źródeł danych są wyświetlane jako opcja w Visual Studio margines okna obok przybornika. Kliknij kartę, aby otworzyć okno lub #else naciśnij **Shift + Alt + D** lub wybierz **widoku &#124; inne okna &#124; źródeł danych**. Zamierzamy do wyświetlania każdej właściwości w klasie klientów w jego własnej poszczególnych tekst. Najpierw kliknij strzałkę w polu kombi klientów i wybierz polecenie **szczegóły**. Następnie przeciągnij węzeł środkowej części powierzchni projektu, aby projektanta wie, czy chcesz, aby przejść w środkowej wiersza.  Jeśli użytkownik misplace go, można określić wiersz ręcznie później w kodzie XAML. Domyślnie przez formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można rozmieścić je jednak na formularzu, takich jak.  Na przykład może być uzasadnione, które mają zostać umieszczone na górze powyżej adres polu tekstowym Nazwa. Przykładowa aplikacja dla tego artykułu zmienia kolejność pól i rozmieszcza je na dwie kolumny.  
   
      ![Powiązanie źródła danych klientów do pojedynczych formantów](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata powiązania źródła danych klientów do pojedynczych formantów")  
   
@@ -130,7 +130,7 @@ Można napisać własny kod wiązania danych, ale jest znacznie łatwiejsze umo�
 
 6.  Kiedy klient jest widoczny w górnej połowie okna, chcemy zobaczyć jego zamówienia w dolnej połowie. Poniżej opisano zamówienia w kontrolce siatki pojedynczego widoku. Wzorzec szczegół wiązania z danymi będzie działać zgodnie z oczekiwaniami ważne jest możemy powiązać właściwość zamówień w klasie klienci nie do osobny węzeł zleceń. Należy zwrócić uwagę na poniższej ilustracji! Przeciągnij właściwość zamówień klasy klientów do dolnej części formularza tak, aby projektanta umieszcza je w wierszu 2:  
   
-     ![Przeciągnij zamówień klas jako siatkę](../data-tools/media/raddata-drag-orders-classes-as-grid.png "raddata zamówień przeciągania klas jako siatkę")  
+     ![Drag Orders classes as grid](../data-tools/media/raddata-drag-orders-classes-as-grid.png "raddata Drag Orders classes as grid")  
   
 7.  Visual Studio wygenerował żadnego kodu powiązania, który łączy kontrolek interfejsu użytkownika do zdarzeń w modelu. Wszystko, co należy zrobić, aby zobaczyć niektóre dane, jest napisanie kodu, aby wypełnić modelu. Pierwszy teraz przejdź do MainWindow.xaml.cs i dodać element członkowski danych klasy okna głównego dla kontekstu danych. Ten obiekt, który został wygenerowany dla nas, działa podobnie formant, który śledzi zmiany i zdarzeń w modelu. Również dodamy logiki inicjacji konstruktora. Na początku klasy Nasze powinien wyglądać następująco:  
   

@@ -1,9 +1,9 @@
 ---
-title: "Porady: modyfikowanie polecenia standardowe Menu języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: modyfikowanie polecenia standardowe Menu języka specyficznego dla domeny | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 Można zmodyfikować zachowanie niektórych standardowych poleceń, które są automatycznie zdefiniowane w Twojej DSL. Na przykład można zmodyfikować **Wytnij** tak, aby nie obejmuje informacji poufnych. Aby to zrobić, można zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs w projekcie DslPackage i pochodne <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ Można zmodyfikować zachowanie niektórych standardowych poleceń, które są a
 > [!NOTE]
 >  Jeśli chcesz utworzyć własne polecenia menu, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Jakie polecenia można zmodyfikować?  
+##  <a name="what"></a> Jakie polecenia można zmodyfikować?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Aby dowiedzieć się, co należy polecenia można modyfikować  
   
@@ -53,7 +53,7 @@ Można zmodyfikować zachowanie niektórych standardowych poleceń, które są a
     > [!NOTE]
     >  Zwykle nie należy edytować pliki, które zostały wygenerowane. Wszelkie zmiany zostaną utracone pliki są generowane przy następnym uruchomieniu.  
   
-##  <a name="extend"></a>Rozszerzenie klasy zestawu odpowiednie polecenie  
+##  <a name="extend"></a> Rozszerzenie klasy zestawu odpowiednie polecenie  
  Utwórz nowy plik zawierający z częściowa deklaracja klasy zestawu poleceń.  
   
 #### <a name="to-extend-the-command-set-class"></a>Aby rozszerzyć polecenia Set — klasa  
@@ -78,7 +78,7 @@ Można zmodyfikować zachowanie niektórych standardowych poleceń, które są a
   
      **Uwaga** Jeżeli plik szablonu klasy jest używany podczas tworzenia nowego pliku, należy usunąć zarówno w przestrzeni nazw, jak i nazwę klasy.  
   
-##  <a name="override"></a>Przesłaniaj metody polecenia  
+##  <a name="override"></a> Przesłaniaj metody polecenia  
  Większość używanych poleceń ma dwie metody skojarzone: metodę o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybko i nie wprowadzać zmian. `ProcessOnMenu`... jest wywoływane, gdy użytkownik klika polecenie i należy wykonać funkcja polecenia. Można zastąpić jedną lub obie te metody.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić polecenie pojawi się w menu  
@@ -137,15 +137,15 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. Kształt, że użytkownik kliknął prawym przyciskiem myszy zawsze znajduje się lista łączników i kształtów. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
   
--   `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.  
+-   `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`— użytkownik nie wybrał wielu kształtów  
+-   `this.IsSingleSelection()` — użytkownik nie wybrał wielu kształtów  
   
--   `this.SingleSelection`-kształtu lub diagram, który użytkownik kliknął prawym przyciskiem myszy  
+-   `this.SingleSelection` -kształtu lub diagram, który użytkownik kliknął prawym przyciskiem myszy  
   
--   `shape.ModelElement as MyLanguageElement`-element modelu reprezentowanego przez kształtu.  
+-   `shape.ModelElement as MyLanguageElement` -element modelu reprezentowanego przez kształtu.  
   
  Aby uzyskać więcej informacji o sposobie przejścia elementu element i o sposobach tworzenia obiektów i łączy, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   

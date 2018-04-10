@@ -1,9 +1,9 @@
 ---
-title: "Aktualizowanie łączników i kształtów w celu odzwierciedlenia modelu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Aktualizowanie łączników i kształtów w celu odzwierciedlenia modelu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 W języku specyficznego dla domeny, w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], możesz wprowadzić wygląd kształtu odzwierciedlają stan modelu źródłowego.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Tej metody można użyć zarówno dla właściwości domeny i z systemem innym niż magazynu funkcji, takich jak rozmiaru kształtu.  
   
-##  <a name="OnAssociatedProperty"></a>Użyj AssociateValueWith(), aby zaktualizować innych funkcji kształtu  
+##  <a name="OnAssociatedProperty"></a> Użyj AssociateValueWith(), aby zaktualizować innych funkcji kształtu  
  W przypadku niektórych funkcji kształtu, np. czy ma cień lub Styl strzałki łącznika nie istnieje wbudowana metoda ujawnienia funkcji jako właściwość domeny.  Zmiany tych funkcji nie są pod kontrolą systemu transakcji. W związku z tym nie jest odpowiedni je zaktualizować przy użyciu reguł, ponieważ zasady nie są wywoływane, gdy użytkownik wykonuje polecenie Undo.  
   
  Jednak takie funkcje można zaktualizować przy użyciu <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. W poniższym przykładzie Styl strzałki łącznika jest kontrolowany przez wartość właściwości domeny w relacji, która wyświetla łącznika:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`powinna być wywoływana raz dla każdej właściwości domeny, który chcesz zarejestrować. Po została wywołana, zmiany wprowadzone w określonej właściwości wywoła `OnAssociatedPropertyChanged()` w kształtów, które są dostępne właściwości elementu modelu.  
+ `AssociateValueWith()` powinna być wywoływana raz dla każdej właściwości domeny, który chcesz zarejestrować. Po została wywołana, zmiany wprowadzone w określonej właściwości wywoła `OnAssociatedPropertyChanged()` w kształtów, które są dostępne właściwości elementu modelu.  
   
  Nie jest konieczne do wywołania `AssociateValueWith()` dla każdego wystąpienia. Mimo że InitializeResources metody wystąpienia, jest wywoływana tylko jeden raz dla każdej klasy kształtu.

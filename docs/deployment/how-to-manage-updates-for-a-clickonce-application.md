@@ -1,12 +1,12 @@
 ---
-title: "Porady: Zarządzanie aktualizacji dla aplikacji ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Zarządzanie aktualizacji dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Porady: zarządzanie aktualizacji dla aplikacji ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje można sprawdzić aktualizacje automatyczne lub programowo. Deweloperzy masz dużą elastyczność określania, kiedy i jak aktualizacji są sprawdzane, czy aktualizacje są obowiązkowe i gdy aplikacja ma sprawdzać dostępność aktualizacji.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje można sprawdzić aktualizacje automatyczne lub programowo. Deweloperzy masz dużą elastyczność określania, kiedy i jak aktualizacji są sprawdzane, czy aktualizacje są obowiązkowe i gdy aplikacja ma sprawdzać dostępność aktualizacji.  
   
  Można skonfigurować aplikację do sprawdzania aktualizacji automatycznie przed uruchomieniem aplikacji lub w ustalonych odstępach czasu, po uruchomieniu aplikacji. Ponadto można określić minimalnej wymaganej wersji; oznacza to, że aktualizacja jest zainstalowana, jeśli jego wersja jest starsza niż wymagana wersja.  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  W **aktualizacji aplikacji** okna dialogowego upewnij się, że **aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru jest zaznaczone.  
   
-5.  W **zaktualizować lokalizację** wprowadź lokalizację aktualizacji z w pełni kwalifikowany adres URL przy użyciu formatu http://Hostname/ApplicationName lub ścieżkę UNC w formacie \\\Server\ApplicationName, lub kliknij przycisk **Przeglądaj** przycisk Przeglądaj w poszukiwaniu lokalizacji aktualizacji.  
+5.  W **zaktualizować lokalizację** wprowadź lokalizację aktualizacji z w pełni kwalifikowany adres URL w formacie http://Hostname/ApplicationName, lub ścieżkę UNC w formacie \\\Server\ApplicationName, lub kliknij przycisk **Przeglądaj** przycisk Przeglądaj w poszukiwaniu lokalizacji aktualizacji.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Aby wyszukać aktualizacje programowo  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  W **aktualizacji aplikacji** okna dialogowego upewnij się, że **aplikacja ma sprawdzać dostępność aktualizacji** pole wyboru jest wyczyszczone. (Opcjonalnie można zaznacz to pole wyboru w celu wyszukania aktualizacji programowo, a także umożliwić środowiska uruchomieniowego ClickOnce sprawdzał dostępność aktualizacji.)  
   
-5.  W **zaktualizować lokalizację** wprowadź lokalizację aktualizacji z w pełni kwalifikowany adres URL przy użyciu formatu http://Hostname/ApplicationName lub ścieżkę UNC w formacie \\\Server\ApplicationName, lub kliknij przycisk **Przeglądaj** przycisk Przeglądaj w poszukiwaniu lokalizacji aktualizacji. Lokalizacja aktualizacji jest, gdzie aplikacja będzie szukać zaktualizowana wersja tego samego.  
+5.  W **zaktualizować lokalizację** wprowadź lokalizację aktualizacji z w pełni kwalifikowany adres URL w formacie http://Hostname/ApplicationName, lub ścieżkę UNC w formacie \\\Server\ApplicationName, lub kliknij przycisk **Przeglądaj** przycisk Przeglądaj w poszukiwaniu lokalizacji aktualizacji. Lokalizacja aktualizacji jest, gdzie aplikacja będzie szukać zaktualizowana wersja tego samego.  
   
 6.  Utwórz przycisk, element menu lub innego elementu interfejsu użytkownika na formularzu systemu Windows, która będzie wybierać użytkowników, aby wyszukać aktualizacje. Z obsługi zdarzeń dla tego elementu należy wywołać metodę Sprawdź i zainstaluj aktualizacje. Przykładowy kod Visual Basic i Visual C# można znaleźć metody w [porady: Sprawdź, czy aplikacja aktualizacje programowo przy użyciu wdrażania interfejsu API ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

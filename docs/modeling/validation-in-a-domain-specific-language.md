@@ -1,9 +1,9 @@
 ---
-title: "Sprawdzanie poprawności języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Sprawdzanie poprawności języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia walidacji, aby sprawdzić, czy model utworzone przez użytkownika jest łatwy do rozpoznania. Na przykład jeśli Twoje DSL umożliwia użytkownikom rysowanie drzewa rodziny osób i ich elementów nadrzędnych, można zapisać ograniczenia, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementów nadrzędnych.  
@@ -57,7 +57,7 @@ Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczen
   
 1.  Włącz sprawdzanie poprawności w **Editor\Validation** węzła:  
   
-    1.  Otwórz **Dsl\DslDefinition.dsl**.  
+    1.  Open **Dsl\DslDefinition.dsl**.  
   
     2.  W Eksploratorze DSL rozwiń **edytor** a następnie wybierz węzeł **weryfikacji**.  
   
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  Programy obsługi są również nazywane po cofania lub ponownego wykonywania operacji, które mają wpływ na łącza lub elementów.  
   
-##  <a name="custom"></a>Kategorie walidacji niestandardowej  
+##  <a name="custom"></a> Kategorie walidacji niestandardowej  
  Oprócz kategorie weryfikacji standardowe, takie jak Menu i otworzyć można definiować własne kategorie. Można wywołać tych kategorii w kodzie programu. Użytkownik nie może wywołać je bezpośrednio.  
   
  Typowym zastosowaniem niestandardowe kategorie jest zdefiniowanie kategorię, która sprawdza, czy model spełnia warunki wstępne określonego narzędzia.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Alternatywy dla weryfikacji  
+##  <a name="alternatives"></a> Alternatywy dla weryfikacji  
  Ograniczenia walidacji raportów o błędach, ale nie należy zmieniać modelu. Jeśli jednak chcesz zapobiec modelu staje się nieprawidłowy, można użyć innych technik.  
   
  Jednak nie zaleca się skorzystanie z tych metod. Zazwyczaj najlepiej zezwala użytkownikowi na określenie, jak poprawić nieprawidłowy model.  
@@ -341,7 +341,7 @@ validationController.ValidateCustom
  **Wycofaj tę transakcję próbie nieprawidłowe zmiany.** W tym celu można również zdefiniować regułę, ale w niektórych przypadkach można zastąpić właściwości program obsługi jest **OnValueChanging()**, lub aby zastąpić metody, takie jak `OnDeleted().` można wycofać transakcji, użyj `this.Store.TransactionManager.CurrentTransaction.Rollback().` Aby uzyskać więcej informacji informacje, zobacz [obsługi zmiany wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Upewnij się, że użytkownik wie, że zmiana została dostosowana lub wycofana. Na przykład użyć`System.Windows.Forms.MessageBox.Show("message").`  
+>  Upewnij się, że użytkownik wie, że zmiana została dostosowana lub wycofana. Na przykład użyć `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   

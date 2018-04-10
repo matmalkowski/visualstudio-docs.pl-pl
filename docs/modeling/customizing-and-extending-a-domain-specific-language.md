@@ -1,9 +1,9 @@
 ---
-title: "Dostosowywanie i rozszerzanie języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dostosowywanie i rozszerzanie języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne poziomy, w których można zdefiniować narzędzi modelowania:  
@@ -33,7 +33,7 @@ Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne po
 > [!NOTE]
 >  Po zaktualizowaniu pliku definicji DSL, nie zapomnij kliknij **Przekształć wszystkie szablony** na pasku narzędzi Eksplorator rozwiązań przed skompilować ponownie rozwiązanie.  
   
-##  <a name="customShapes"></a>W tej sekcji  
+##  <a name="customShapes"></a> W tej sekcji  
   
 |Aby uzyskać ten efekt|Odwołuje się do tego tematu|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ Visual Studio modelowania i wizualizacja zestawu SDK (VMSDK) zapewnia różne po
 |Włącz kopiowanie, wycinanie i wklejanie|Ustaw **Włącz kopiowania/wklejania** właściwość **edytor** węzła w Eksploratorze DSL.|  
 |Kopiuj odwołanie łącza i ich cele zawsze, gdy element zostanie skopiowany. Na przykład skopiuj komentarze dołączone do elementu.|Ustaw **propaguje kopiowania** właściwości roli źródłowej (reprezentowane przez wiersz po jednej stronie relacji domeny na diagramie definicji DSL).<br /><br /> Napisz kod umożliwiający zastąpienie ProcessOnCopy, aby uzyskać bardziej złożone efekty.<br /><br /> Zobacz [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).|  
 |Usuń, zmienić elementu nadrzędnego lub ponowne łączenie powiązanych elementów, gdy element zostanie usunięty.|Ustaw **propaguje usunąć** wartość rolę w relacji. Bardziej złożone efekty zastępują `ShouldVisitRelationship` i `ShouldVisitRolePlayer` metod w `MyDslDeleteClosure` klas zdefiniowanych w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie sposób usuwania](../modeling/customizing-deletion-behavior.md)|  
-|Zachowaj kształt układu i wyglądu na kopiowanie i przeciągnij upuść.|Dodaj kształty i łączniki do skopiowanych `ElementGroupPrototype`. Najodpowiedniejszym metody do przesłonięcia`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).|  
+|Zachowaj kształt układu i wyglądu na kopiowanie i przeciągnij upuść.|Dodaj kształty i łączniki do skopiowanych `ElementGroupPrototype`. Najodpowiedniejszym metody do przesłonięcia `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).|  
 |Wklejanie kształtów w wybranej lokalizacji, np. w bieżącej pozycji kursora.|Zastąpienie `ClipboardCommandSet.ProcessOnCopy()` Aby użyć lokalizacji określonej wersji `ElementOperations.Merge().` zobacz [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).|  
 |Tworzyć linki do dodatkowych przy wklejeniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Przeciągania i upuszczania z diagramu, inne DSLs i Windows elementów|Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

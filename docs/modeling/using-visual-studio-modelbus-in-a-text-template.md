@@ -1,9 +1,9 @@
 ---
-title: "W szablonie tekstu przy użyciu ModelBus programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: W szablonie tekstu przy użyciu ModelBus programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 Jeśli pisania szablonów tekstowych, które zapoznały modelu, który zawiera [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] odwołuje się do ModelBus, można rozwiązać odwołania do modeli docelowych dostępu. W takim przypadku należy dostosować szablony tekstowe i do którego istnieje odwołanie języków specyficznego dla domeny (DSLs):  
@@ -78,7 +78,7 @@ Jeśli pisania szablonów tekstowych, które zapoznały modelu, który zawiera [
   
          Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-4.  In AdapterManager.tt:  
+4.  W AdapterManager.tt:  
   
     -   Zmień deklarację elementu AdapterManagerBase tak, aby dziedziczyła ona z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.  
   
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Utworzyć nowe DSL za pomocą szablonu rozwiązania minimalnego języka. Nazwa języka MBConsumer i Ustaw rozszerzenie nazwy pliku z ".consume".  
   
-2.  W projekcie DSL Dodaj odwołanie do zestawu MBProvider DSL. Kliknij prawym przyciskiem myszy `MBConsumer\Dsl\References` , a następnie kliknij przycisk **Dodaj odwołanie**. W **Przeglądaj** zlokalizuj`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  W projekcie DSL Dodaj odwołanie do zestawu MBProvider DSL. Kliknij prawym przyciskiem myszy `MBConsumer\Dsl\References` , a następnie kliknij przycisk **Dodaj odwołanie**. W **Przeglądaj** zlokalizuj `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      Dzięki temu można utworzyć kod, który używa innych DSL. Jeśli chcesz utworzyć odwołania do kilku DSLs, dodaj je również.  
   

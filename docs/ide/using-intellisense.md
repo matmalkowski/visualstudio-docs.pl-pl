@@ -1,9 +1,9 @@
 ---
 title: Visual Studio IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
 ms.topic: article
 f1_keywords:
@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>Korzystanie z IntelliSense w Visual Studio
 
@@ -67,7 +67,7 @@ Szybkie informacje wyświetlają pełną deklarację dla każdego identyfikatora
 
 Po wybraniu elementu członkowskiego **członków listy** polu Szybkie informacje jest także wyświetlany.
 
-![Informacje o parametrach w C & 35; plik kodu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Informacje o parametrach w C&#35; pliku kodu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
 Szybkie informacje można wywołać ręcznie, wybierając **Edytuj** > **IntelliSense** > **szybka podpowiedź**, naciskając **Ctrl**  +  **I**, lub wybierając **szybka podpowiedź** przycisk na pasku narzędzi edytora.
 

@@ -1,11 +1,11 @@
 ---
 title: AL (Assembly Linker) zadanie | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker) — Zadanie
 AL — zadanie jest zawijana AL.exe, narzędzie, które jest dystrybuowane z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie Assembly Linker jest używany do utworzenia zestawu z manifestu z jednego lub więcej plików, które moduły albo lub plików zasobów. Kompilatory i środowisk deweloperskich może już udostępniać tych funkcji, co często nie jest konieczne do użycia bezpośrednio tego zadania. Assembly Linker jest użyteczna dla deweloperów konieczności tworzenia w jednym zestawie z wielu plików składników, takich jak te, które mogą być tworzone z wielu języków programowania. To zadanie nie łączyć modułów w jednym zestawie pliku; indywidualne moduły muszą być rozproszone i jest dostępny w kolejności dla wynikowego zestawu można prawidłowo załadować. Aby uzyskać więcej informacji dotyczących AL.exe, zobacz [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -44,7 +44,7 @@ AL — zadanie jest zawijana AL.exe, narzędzie, które jest dystrybuowane z [!I
 |`Configuration`|Opcjonalne `String` parametru.<br /><br /> Określa ciąg `Configuration` pole w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację `/config[uration]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Copyright`|Opcjonalne `String` parametru.<br /><br /> Określa ciąg `Copyright` pole w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację `/copy[right]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Culture`|Opcjonalne `String` parametru.<br /><br /> Określa ciąg kultury do skojarzenia z zestawem. Aby uzyskać więcej informacji, zobacz dokumentację `/c[ulture]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`DelaySign`|Opcjonalne `Boolean` parametru.<br /><br /> `true`Aby umieścić tylko klucz publiczny w zestawie; `false` pełni podpisać zestawu. Aby uzyskać więcej informacji, zobacz dokumentację `/delay[sign]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`DelaySign`|Opcjonalne `Boolean` parametru.<br /><br /> `true` Aby umieścić tylko klucz publiczny w zestawie; `false` pełni podpisać zestawu. Aby uzyskać więcej informacji, zobacz dokumentację `/delay[sign]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Description`|Opcjonalne `String` parametru.<br /><br /> Określa ciąg `Description` pole w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację `/descr[iption]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EmbedResources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Osadza określonych zasobów obrazu, który zawiera manifest zestawu. To zadanie kopiuje zawartość pliku zasobu do obrazu. Elementy przekazany do tego parametru może być opcjonalne metadane dołączone o nazwie `LogicalName` i `Access`. `LogicalName` Metadanych służy do określania wewnętrzny identyfikator zasobu.  `Access` Metadanych może być ustawiony na `private` aby zasobu nie są widoczne dla innych zestawów. Aby uzyskać więcej informacji, zobacz dokumentację `/embed[resource]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EvidenceFile`|Opcjonalne `String` parametru.<br /><br /> Osadza określonego pliku w zestawie z nazwą zasobu `Security.Evidence`.<br /><br /> Nie można użyć `Security.Evidence` regularne zasobów. Ten parametr odpowiada `/e[vidence]` opcji [Al.exe (konsolidator zestawów)](/dotnet/framework/tools/al-exe-assembly-linker).|  

@@ -15,10 +15,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 6cb1ac5fa679b9cdd66bede0b0852704188585cc
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Wskazówki: Tworzenie niestandardowego procesora dyrektywy
 
@@ -658,7 +658,7 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
     |----------|----------|----------|
     |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
     |Class|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<Ścieżka do rozwiązania >**CustomDP\bin\Debug\CustomDP.dll|
+    |CodeBase|REG_SZ|**\<Path to Your Solution>**CustomDP\bin\Debug\CustomDP.dll|
 
      Jeśli zestaw znajduje się w pamięci podręcznej GAC, wartości powinny wyglądać tak:
 

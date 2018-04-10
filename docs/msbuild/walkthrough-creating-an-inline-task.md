@@ -1,27 +1,27 @@
 ---
-title: "Wskazówki: Tworzenie zadania wbudowanego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie zadania wbudowanego | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
-caps.latest.revision: 
+caps.latest.revision: 14
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: fb08d3f4774f0d21c44a29414955f30509456757
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Wskazówki: tworzenie zadania wbudowanego
 Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. W programie .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie masz Utwórz osobny zestaw do obsługi zadań. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).  
@@ -234,11 +234,11 @@ Zadania programu MSBuild są zazwyczaj tworzone przez kompilowanie klasy, która
   
  Ten kod definiuje zadania wbudowanego nosi nazwę RegX i ma trzy następujące parametry:  
   
--   `Expression`jest wymagany ciąg. parametr wejściowy, który ma wartość wyrażenia regularnego do dopasowania. W tym przykładzie wyrażenie odpowiada wyrazy "public" lub "protected".  
+-   `Expression` jest wymagany ciąg. parametr wejściowy, który ma wartość wyrażenia regularnego do dopasowania. W tym przykładzie wyrażenie odpowiada wyrazy "public" lub "protected".  
   
--   `Files`jest wymagany element listy wejściowej parametr ma wartość, która znajduje się lista plików, które mają być wyszukiwane dopasowania. W tym przykładzie `Files` ma ustawioną wartość `Compile` elementu, który zawiera pliki źródłowe projektu.  
+-   `Files` jest wymagany element listy wejściowej parametr ma wartość, która znajduje się lista plików, które mają być wyszukiwane dopasowania. W tym przykładzie `Files` ma ustawioną wartość `Compile` elementu, który zawiera pliki źródłowe projektu.  
   
--   `Result`to parametr wyjściowy, który ma wartość, która jest to lista plików, które mają zawartość, która odpowiada wyrażeniu regularnemu.  
+-   `Result` to parametr wyjściowy, który ma wartość, która jest to lista plików, które mają zawartość, która odpowiada wyrażeniu regularnemu.  
   
  Wartości parametrów wejściowych jest ustawiana, jeśli element docelowy TestBuild wywołuje zadań RegX. Zadanie RegX odczytuje każdego pliku i zwraca listę plików, które odpowiada wyrażeniu regularnemu. Ta lista jest zwracana jako `Result` parametru wyjściowego, który jest emitowany elementu MSBuild `MatchedFiles`.  
   

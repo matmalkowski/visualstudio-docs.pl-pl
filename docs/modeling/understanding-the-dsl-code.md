@@ -1,9 +1,9 @@
 ---
 title: Opis kodu DSL | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w generuje rozwiązania języka specyficznego dla domeny (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano wygenerowanego interfejsu API.  
@@ -59,7 +59,7 @@ Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w
 ## <a name="generated-files-in-dsl"></a>Pliki generowane Dsl  
  Następujące pliki generowane są wyświetlane w **Dsl** projektu.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  Schemat dla plików, który zawiera wystąpień programu DSL. Ten plik jest kopiowany do kompilowania (**bin**) katalogu. Po zainstalowaniu programu DSL, możesz skopiować ten plik, aby **11.0\Xml\Schemas programu Visual Studio \Program Files\Microsoft** , dzięki czemu można zweryfikować pliki modelu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań języka specyficznego dla domeny](../modeling/deploying-domain-specific-language-solutions.md).  
   
@@ -85,7 +85,7 @@ Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w
   
  `Connectors.cs`  
   
- Zawiera klasy dla łączników, które są elementów diagramu, które zwykle odpowiadają relacji odwołania. Każda klasa jest generowany na podstawie jeden łącznik w definicji DSL. Każda klasa łącznika jest pochodną<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
+ Zawiera klasy dla łączników, które są elementów diagramu, które zwykle odpowiadają relacji odwołania. Każda klasa jest generowany na podstawie jeden łącznik w definicji DSL. Każda klasa łącznika jest pochodną <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
   
  Aby kolor i niektórych innych zmiennej funkcje stylu w czasie wykonywania, kliknij prawym przyciskiem myszy na diagramie DSL definicji klasy, a następnie wskaż **dodać widoczne**.  
   
@@ -180,7 +180,7 @@ Interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpień DSL w
   
  Aby kolor i niektórych innych zmiennej funkcje stylu w czasie wykonywania, kliknij prawym przyciskiem myszy na diagramie DSL definicji klasy, a następnie wskaż **dodać widoczne**.  
   
- Aby styl dodatkowe funkcje zmienną w czasie wykonywania, zobacz na przykład <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
+ Aby styl dodatkowe funkcje zmienną w czasie wykonywania, zobacz na przykład <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
   
  `ToolboxHelper.cs`  
   

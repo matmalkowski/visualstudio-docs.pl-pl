@@ -1,30 +1,30 @@
 ---
-title: "Użycie wielu procesorów w projektach kompilacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Użycie wielu procesorów w projektach kompilacji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
-caps.latest.revision: 
+caps.latest.revision: 13
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: f8bf385b6ee34c532e70557c0f04754ba0c56bb9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Używanie wielu procesorów w projektach kompilacji
-Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesorami lub procesorami wielordzeniowymi. Dla każdego dostępnego procesora jest tworzony oddzielny proces kompilacji. Jeśli na przykład system ma cztery procesory, powstają cztery procesy kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]może jednocześnie przetwarzać tych kompilacji, a w związku z tym całkowity czas kompilacji zostanie zmniejszona. Jednak kompilowanie równoległe wprowadza pewne zmiany w przebiegu procesów kompilacji. Omówiono je w tym temacie.  
+Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesorami lub procesorami wielordzeniowymi. Dla każdego dostępnego procesora jest tworzony oddzielny proces kompilacji. Jeśli na przykład system ma cztery procesory, powstają cztery procesy kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może jednocześnie przetwarzać tych kompilacji, a w związku z tym całkowity czas kompilacji zostanie zmniejszona. Jednak kompilowanie równoległe wprowadza pewne zmiany w przebiegu procesów kompilacji. Omówiono je w tym temacie.  
   
 ## <a name="project-to-project-references"></a>Projekt do odwołania się do projektu  
  Gdy [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] napotka odwołanie projektu do projektu (P2P), podczas gdy używa równoległe kompilacje do tworzenia projektu, zbudował odwołanie tylko jeden raz. Jeśli dwa projekty mają to samo odwołanie P2P, nie będzie ono kompilowane osobno dla każdego projektu. Zamiast tego aparat kompilacji zwraca to samo odwołanie P2P do obu projektów, które go używają. Na przyszłe żądania o ten sam element docelowy w trakcie jednej sesji jest podawane to samo odwołanie P2P.  
@@ -33,7 +33,7 @@ Program MSBuild potrafi optymalnie wykorzystywać komputery z wieloma procesoram
  Wykrywanie cyklu działa tak samo jak w programie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, z wyjątkiem który teraz [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może raportować wykrywanie cyklu w innym czasie lub w kompilacji.  
   
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Błędy i wyjątki podczas kompilacji równoległych  
- W kompilacjach równoległych błędy i wyjątki mogą się wydarzyć o innym czasie niż podczas kompilacji nierównoległej i gdy jeden projekt nie jest kompilowany, druga kompilacja trwa dalej. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]nie spowoduje zatrzymania kompilacji dowolnego projektu, która tworzy równolegle z jedną, która nie powiodła się. Nadal innych projektów do kompilacji, dopóki nie powiedzie się lub nie. Jednak jeśli włączono opcję <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>, kompilacje nie będą zatrzymywane nawet mimo wystąpienia błędów.  
+ W kompilacjach równoległych błędy i wyjątki mogą się wydarzyć o innym czasie niż podczas kompilacji nierównoległej i gdy jeden projekt nie jest kompilowany, druga kompilacja trwa dalej. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie spowoduje zatrzymania kompilacji dowolnego projektu, która tworzy równolegle z jedną, która nie powiodła się. Nadal innych projektów do kompilacji, dopóki nie powiedzie się lub nie. Jednak jeśli włączono opcję <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A>, kompilacje nie będą zatrzymywane nawet mimo wystąpienia błędów.  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Projektu programu Visual C++ (.vcproj) i pliki rozwiązania (.sln)  
  Zarówno [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów (VCPROJ) i pliki rozwiązania (sln) mogą zostać przekazane do [zadanie programu MSBuild](../msbuild/msbuild-task.md). Dla [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów, VCWrapperProject jest wywoływana, a następnie wewnętrzną [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zostanie utworzony. Dla [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] rozwiązań SolutionWrapperProject jest tworzony i następnie wewnętrznej [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zostanie utworzony. W obu przypadkach powstały projekt jest traktowany tak samo jak każdy inny projekt programu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  

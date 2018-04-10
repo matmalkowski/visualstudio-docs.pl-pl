@@ -1,12 +1,12 @@
 ---
-title: "Rozwiązywanie problemów z rozwiązaniami SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązywanie problemów z rozwiązaniami SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami SharePoint
   Następujące problemy lub alertów może wystąpić, gdy debugowanie rozwiązań SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Łączniki (-)  
   
--   Ukośnik odwrotny (\\)  
+-   Backslash (\\)  
   
  Gdy projekt jest dostarczana, reguły walidacji sprawdza, czy właściwość ścieżka wdrożenia dla każdego pliku, który jest wdrażany zawiera tylko te prawidłowe znaki.  
   
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Ten problem występuje w przypadku zmiany nazwy wystąpienia listy zaimportowane, a następnie uruchom go [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Komunikat o błędzie  
- Błąd kompilacji: Wystąpił błąd podczas kroku wdrożenia "Aktywacja funkcji": plik Template\Features\\[*zaimportować projekt**funkcji**nazwa*] \Files\Lists \\[*starego**Nazwa listy*] \Schema.xml nie istnieje.  
+ Błąd kompilacji: Wystąpił błąd podczas kroku wdrożenia "Aktywacja funkcji": plik Template\Features\\[*zaimportować projekt**funkcji**nazwa*] \Files\Lists\\[*starego ** Nazwa listy*] \Schema.xml nie istnieje.  
   
 ### <a name="resolution"></a>Rozwiązanie  
  Po zaimportowaniu wystąpienia listy atrybut o nazwie CustomSchema jest dodane do pliku Elements.xml wystąpienia listy. Elements.XML zawiera ścieżkę niestandardowego pliku schema.xml dla wystąpienia listy. Jeśli zmienisz nazwę wystąpienia listy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ścieżkę wdrażania dla niestandardowego pliku schema.xml zmian, ale wartość atrybutu CustomSchema ścieżki nie jest aktualizowana. W związku z tym wystąpienia listy nie można odnaleźć pliku schema.xml w starej ścieżki, który jest określony przez atrybut CustomSchema, gdy funkcja jest aktywna.  

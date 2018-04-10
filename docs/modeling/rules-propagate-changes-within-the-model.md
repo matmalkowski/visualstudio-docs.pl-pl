@@ -1,9 +1,9 @@
 ---
-title: "Reguły Propaguj zmiany w modelu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Reguły Propaguj zmiany w modelu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: af086275f641e3237f8d22308c960ad30240b647
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagację zmiany jednego elementu na inny wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany do dowolnego elementu w magazynie, zasady nie zostały zaplanowane wykonywane zwykle, gdy peryferyjnych transakcja została przekazana. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu, lub usunięcie go. Zasady można dołączyć do określonych typów elementów, kształtów lub diagramy. Wiele wbudowanych funkcji zdefiniowanych przez zasady: na przykład zasady upewnij się, że diagram został zaktualizowany po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.  

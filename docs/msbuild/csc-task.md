@@ -1,11 +1,11 @@
 ---
-title: "CSC — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Csc Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a74f8c43d35104957b62fb3da93d2acbf6a9a303
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 Opakowuje CSC.exe i tworzy pliki wykonywalne (pliki .exe), bibliotek dołączanych dynamicznie (pliki dll) lub moduły kodu (pliki modułu .netmodule). Aby uzyskać więcej informacji o CSC.exe, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -45,7 +45,7 @@ Opakowuje CSC.exe i tworzy pliki wykonywalne (pliki .exe), bibliotek dołączany
 |`BaseAddress`|Opcjonalne `String` parametru.<br /><br /> Określa preferowany adres podstawowy, w którym można załadować biblioteki DLL. Domyślny adres podstawowy biblioteki DLL jest ustawiana przez [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] środowisko uruchomieniowe języka wspólnego. Aby uzyskać więcej informacji, zobacz [/baseAddress (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).|  
 |`CheckForOverflowUnderflow`|Opcjonalne `Boolean` parametru.<br /><br /> Określa, czy liczba całkowita arytmetyczne, który przepełnienie granic o typie danych powoduje, że wystąpił wyjątek w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [/ checked (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).|  
 |`CodePage`|Opcjonalne `Int32` parametru.<br /><br /> Określa stronę kodową do używania wszystkich plików kodu źródłowego w kompilacji. Aby uzyskać więcej informacji, zobacz [/CODEPAGE (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option).|  
-|`DebugType`|Opcjonalne `String` parametru.<br /><br /> Określa typ debugowania. `DebugType`może być `full` lub `pdbonly`. Wartość domyślna to `full`, co pozwala debuger jest dołączony do działającego programu. Określanie `pdbonly` źródła umożliwia debugowanie kodu, gdy program jest uruchamiany w debugerze, ale wyświetla asemblera tylko, jeśli uruchomiony program jest podłączony do debugera.<br /><br /> Ten parametr zastępuje `EmitDebugInformation` parametru.<br /><br /> Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).|  
+|`DebugType`|Opcjonalne `String` parametru.<br /><br /> Określa typ debugowania. `DebugType` może być `full` lub `pdbonly`. Wartość domyślna to `full`, co pozwala debuger jest dołączony do działającego programu. Określanie `pdbonly` źródła umożliwia debugowanie kodu, gdy program jest uruchamiany w debugerze, ale wyświetla asemblera tylko, jeśli uruchomiony program jest podłączony do debugera.<br /><br /> Ten parametr zastępuje `EmitDebugInformation` parametru.<br /><br /> Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).|  
 |`DefineConstants`|Opcjonalne `String` parametru.<br /><br /> Definiuje symbole preprocesora. Aby uzyskać więcej informacji, zobacz [/ define (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).|  
 |`DelaySign`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, określa, czy zestawem całkowicie podpisane. Jeśli `false`, określa, że chcesz umieścić klucz publiczny w zestawie.<br /><br /> Ten parametr nie obowiązuje, chyba że używana w trybie `KeyFile` lub `KeyContainer` parametru.<br /><br /> Aby uzyskać więcej informacji, zobacz [/DelaySign (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option).|  
 |`DisabledWarnings`|Opcjonalne `String` parametru.<br /><br /> Określa listę ostrzeżeń, które mają zostać wyłączone. Aby uzyskać więcej informacji, zobacz [/nowarn (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).|  
@@ -57,7 +57,7 @@ Opakowuje CSC.exe i tworzy pliki wykonywalne (pliki .exe), bibliotek dołączany
 |`KeyContainer`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę kontenera kluczy kryptograficznych. Aby uzyskać więcej informacji, zobacz [/KeyContainer (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/keycontainer-compiler-option).|  
 |`KeyFile`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę pliku zawierającego klucz kryptograficzny. Aby uzyskać więcej informacji, zobacz [/KeyFile (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/keyfile-compiler-option).|  
 |`LangVersion`|Opcjonalne `String` parametru.<br /><br /> Określa wersję języka. Aby uzyskać więcej informacji, zobacz [/langversion (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).|  
-|`LinkResources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Tworzy łącze do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zasobów w pliku wyjściowym; plik zasobu nie jest umieszczony w pliku wyjściowym.<br /><br /> Pozycji przekazanych do tego parametru może mieć wpisy opcjonalne metadanych o nazwie `LogicalName` i `Access`. `LogicalName`odpowiada `identifier` parametr `/linkresource` przełącznika, i `Access` odpowiada `accessibility-modifier` parametru. Aby uzyskać więcej informacji, zobacz [/linkresource (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
+|`LinkResources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Tworzy łącze do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zasobów w pliku wyjściowym; plik zasobu nie jest umieszczony w pliku wyjściowym.<br /><br /> Pozycji przekazanych do tego parametru może mieć wpisy opcjonalne metadanych o nazwie `LogicalName` i `Access`. `LogicalName` odpowiada `identifier` parametr `/linkresource` przełącznika, i `Access` odpowiada `accessibility-modifier` parametru. Aby uzyskać więcej informacji, zobacz [/linkresource (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
 |`MainEntryPoint`|Opcjonalne `String` parametru.<br /><br /> Określa lokalizację `Main` metody. Aby uzyskać więcej informacji, zobacz [/main (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option).|  
 |`ModuleAssemblyName`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę zestawu, którego częścią ma być ten moduł.|  
 |`NoConfig`|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, informuje kompilator, nie można skompilować przy użyciu pliku csc.rsp. Aby uzyskać więcej informacji, zobacz [/noconfig (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
@@ -70,7 +70,7 @@ Opakowuje CSC.exe i tworzy pliki wykonywalne (pliki .exe), bibliotek dołączany
 |`PdbFile`|Opcjonalne `String` parametru.<br /><br /> Określa nazwę pliku informacji debugowania. Domyślna nazwa to nazwa pliku wyjściowego z rozszerzeniem .pdb.|  
 |`Platform`|Opcjonalne `String` parametru.<br /><br /> Określa platformę procesora, które ma zostać skonfigurowany przy użyciu pliku wyjściowego. Ten parametr może mieć wartość `x86`, `x64`, lub `anycpu`. Wartość domyślna to `anycpu`. Aby uzyskać więcej informacji, zobacz [/platform (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Powoduje, że zadanie zaimportować informacje typu publicznego z określonych elementów do bieżącego projektu. Aby uzyskać więcej informacji, zobacz [/Reference (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Można określić [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] odwołania aliasu w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] przez dodanie metadanych `Aliases` do oryginalnego elementu "Reference". Na przykład, aby ustawić alias "LS1" w wierszu polecenia poniższy tekst CSC:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> należy użyć:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
-|`Resources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Osadza [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zasobów w pliku wyjściowym.<br /><br /> Pozycji przekazanych do tego parametru może mieć wpisy opcjonalne metadanych o nazwie `LogicalName` i `Access`. `LogicalName`odpowiada `identifier` parametr `/resource` przełącznika, i `Access` odpowiada `accessibility-modifier` parametru. Aby uzyskać więcej informacji, zobacz [/Resource (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
+|`Resources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Osadza [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zasobów w pliku wyjściowym.<br /><br /> Pozycji przekazanych do tego parametru może mieć wpisy opcjonalne metadanych o nazwie `LogicalName` i `Access`. `LogicalName` odpowiada `identifier` parametr `/resource` przełącznika, i `Access` odpowiada `accessibility-modifier` parametru. Aby uzyskać więcej informacji, zobacz [/Resource (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
 |`ResponseFiles`|Opcjonalne `String` parametru.<br /><br /> Określa plik odpowiedzi, który zawiera polecenia dla tego zadania. Aby uzyskać więcej informacji, zobacz [@ (Określ plik odpowiedzi)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).|  
 |`Sources`|Opcjonalne <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa co najmniej jeden [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plików źródłowych.|  
 |`TargetType`|Opcjonalne `String` parametru.<br /><br /> Określa format pliku wyjściowego pliku. Ten parametr może mieć wartość `library`, która tworzy bibliotekę kodu `exe`, co powoduje aplikacji konsoli, `module`, który tworzy moduł, lub `winexe`, co powoduje programu dla systemu Windows. Wartość domyślna to `library`. Aby uzyskać więcej informacji, zobacz [/TARGET (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).|  

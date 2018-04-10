@@ -1,11 +1,11 @@
 ---
-title: "Updatemanifestforbrowserapplication — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: UpdateManifestForBrowserApplication Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-caps.latest.revision: 
+caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: fcc1c9fe8b28b2055c73cad626cc02ef8a56aa98
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Zadanie zostanie uruchomione, aby dodać  **\<hostinbrowser — / >** element do manifestu aplikacji (*projectname*. exe.manifest) podczas [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] skompilować projekt.  
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 |`HostInBrowser`|Wymagane **logiczna** parametru.<br /><br /> Określa, czy można zmodyfikować manifest aplikacji do uwzględnienia  **\<hostinbrowser — / >** elementu. Jeśli **true**, nowy `<` **hostinbrowser — / >** element znajduje się w  **\<entryPoint / >** elementu. Należy pamiętać, że element jest uwzględnienie: Jeśli  **\<hostinbrowser — / >** element już istnieje, jest ono usuwane lub zastąpione. Zamiast tego dodatkowe  **\<hostinbrowser — / >** utworzeniu elementu. Jeśli **false**, manifest aplikacji nie jest modyfikowany.|  
   
 ## <a name="remarks"></a>Uwagi  
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] są uruchamiane przy użyciu [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] wdrożenia i, w związku z tym musi przez opublikowane wraz z pomocniczymi manifesty wdrażania i aplikacji. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]używa [generateapplicationmanifest —](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) zadań, aby wygenerować manifest aplikacji.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] są uruchamiane przy użyciu [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] wdrożenia i, w związku z tym musi przez opublikowane wraz z pomocniczymi manifesty wdrażania i aplikacji. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] używa [generateapplicationmanifest —](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) zadań, aby wygenerować manifest aplikacji.  
   
  Następnie, aby skonfigurować aplikację ma być obsługiwana przez przeglądarkę, element dodatkowy  **\<hostinbrowser — / >** muszą zostać dodane do manifestu aplikacji jako Pokaż w poniższym przykładzie:  
   

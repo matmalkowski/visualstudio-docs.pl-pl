@@ -1,9 +1,9 @@
 ---
 title: Dostosowywanie zachowania kopiowania | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznego dla domeny (DSL) utworzone za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania SDK, można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.  
@@ -54,7 +54,7 @@ W języku specyficznego dla domeny (DSL) utworzone za pomocą [!INCLUDE[vsprvs](
  **Przez kopiowanie i wklejanie szybko zduplikowane elementy.** Zwykły element, który został skopiowany nadal jest zaznaczone, a nie można wkleić ten sam typ elementu na niego.  
  Dodaj Element scalania dyrektywy do klasy domeny i ustaw ją do scalenia do przodu do klasy nadrzędnej. Będzie to mieć ten sam efekt operacji przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie Element tworzenia i przepływu](../modeling/customizing-element-creation-and-movement.md).  
   
- \-lub -  
+ \- lub -  
   
  Wybierz diagram przed wklejeniem elementów, przez zastąpienie `ClipboardCommandSet.ProcessOnPasteCommand()`. Dodaj ten kod w pliku użytkownika projektu DslPackage:  
   
@@ -79,7 +79,7 @@ partial class MyDslClipboardCommandSet
  **Utwórz dodatkowe łącza, gdy użytkownik wkleja na wybranego celu.** Na przykład pole komentarza wklejeniu na element, łącze się między nimi.  
  Dodaj dyrektywę scalania Element do klasy docelowej domeny i ustaw ją do przetworzenia przez dodawanie łączy scalania. Będzie to mieć ten sam efekt operacji przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie Element tworzenia i przepływu](../modeling/customizing-element-creation-and-movement.md).  
   
- \-lub -  
+ \- lub -  
   
  Zastąpienie `ClipboardCommandSet.ProcessOnPasteCommand()` utworzyć dodatkowe linki po wywołaniu metody podstawowej.  
   
@@ -216,7 +216,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Umożliwia użytkownikowi na przeciąganie i upuszczanie elementów.**  
  Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a>Dostosowywanie zachowania Kopiuj Link  
+##  <a name="customizeLinks"></a> Dostosowywanie zachowania Kopiuj Link  
  Gdy użytkownik kopiuje element, standardowe zachowanie jest wszelkie elementy osadzone są również kopiowane. Można zmodyfikować standard kopiowanie zachowanie. W definicji DSL, wybierz rolę po jednej stronie relacji i w zestawie okna właściwości **propaguje kopiowania** wartość.  
   
  ![Propaguje właściwości kopii roli domeny](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -290,12 +290,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Zdefiniuj dwie metody w klasie ElementOperations:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`która określa, czy element źródła może być przeciągnięto docelowego kształtu, łącznik lub diagram.  
+-   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` która określa, czy element źródła może być przeciągnięto docelowego kształtu, łącznik lub diagram.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`które łączy elementu źródłowego do docelowego.  
+-   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` które łączy elementu źródłowego do docelowego.  
   
 ### <a name="canmerge"></a>CanMerge()  
- `CanMerge()`jest wywołana w celu określenia uwag, które należy do użytkownika jako wskaźnik myszy porusza się na diagramie. Parametry metody są element, w którym znajduje się wskaźnik myszy, a dane dotyczące źródła, z którego wykonano operację przeciągania. Użytkownika można przeciągnąć z dowolnego miejsca na ekranie. W związku z tym obiekt źródłowy może mieć wiele różnych typów i mogą być zserializowane w różnych formatach. Jeśli źródło jest modelu DSL lub UML, parametr danych jest serializacji <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operacje przeciągania, kopiowania i przybornika używa ElementGroupPrototypes do reprezentowania fragmenty modeli.  
+ `CanMerge()` jest wywołana w celu określenia uwag, które należy do użytkownika jako wskaźnik myszy porusza się na diagramie. Parametry metody są element, w którym znajduje się wskaźnik myszy, a dane dotyczące źródła, z którego wykonano operację przeciągania. Użytkownika można przeciągnąć z dowolnego miejsca na ekranie. W związku z tym obiekt źródłowy może mieć wiele różnych typów i mogą być zserializowane w różnych formatach. Jeśli źródło jest modelu DSL lub UML, parametr danych jest serializacji <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operacje przeciągania, kopiowania i przybornika używa ElementGroupPrototypes do reprezentowania fragmenty modeli.  
   
  Element prototypu grupy może zawierać dowolną liczbę elementów i łącza. Typy elementów można zidentyfikować według ich identyfikatorów. Identyfikator GUID jest kształtu, który został przeciągnięty nie odpowiedniego elementu modelu. W poniższym przykładzie `CanMerge()` zwraca wartość true, jeśli klasa kształt z UML diagram zostanie przeciągnięty na tym diagramie.  
   

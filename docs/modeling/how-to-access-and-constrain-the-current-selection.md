@@ -1,9 +1,9 @@
 ---
-title: "Porady: dostęp i ograniczyć bieżące zaznaczenie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dostęp i ograniczyć bieżące zaznaczenie | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
 Podczas obsługi polecenia lub gestu pisania dla danego języka specyficznego dla domeny, należy określić element, jakie użytkownik kliknął prawym przyciskiem myszy. Można również uniemożliwić niektórych kształtów lub pola wybierane. Na przykład można rozmieścić, że gdy użytkownik kliknie ikonę dekoratora, kształtu, który go zawiera zamian zostanie wybrany. Zaznaczenie w ten sposób ograniczający zmniejsza liczbę obsługi, które trzeba zapisać. On również ułatwia dla użytkownika, który można kliknij w dowolnym miejscu w kształcie bez konieczności uniknąć dekorator.  
@@ -33,14 +33,14 @@ Podczas obsługi polecenia lub gestu pisania dla danego języka specyficznego dl
   
     |Element członkowski|Opis|  
     |------------|-----------------|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>— Metoda|Zwraca `true` elementy wybrane w Projektancie modeli w przypadku kształtu przedział; w przeciwnym razie `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>— Metoda|Zwraca `true` Jeśli diagramu jest wybrane w Projektancie modelu; w przeciwnym razie `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>— Metoda|Zwraca `true` Jeśli dokładnie jeden element jest wybrany w Projektancie modelu; w przeciwnym razie `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>— Metoda|Zwraca `true` Jeśli dokładnie jeden element jest wybrany w aktywnym oknie; w przeciwnym razie `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>Właściwość|Pobiera zbiór elementów wybrane w Projektancie modeli tylko do odczytu.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>Właściwość|Pobiera zbiór elementów wybrane w aktywnym oknie tylko do odczytu.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>Właściwość|Pobiera element podstawowy zaznaczenia w Projektancie modelu.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>Właściwość|Pobiera element podstawowy zaznaczenia w aktywnym oknie.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> — Metoda|Zwraca `true` elementy wybrane w Projektancie modeli w przypadku kształtu przedział; w przeciwnym razie `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> — Metoda|Zwraca `true` Jeśli diagramu jest wybrane w Projektancie modelu; w przeciwnym razie `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> — Metoda|Zwraca `true` Jeśli dokładnie jeden element jest wybrany w Projektancie modelu; w przeciwnym razie `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> — Metoda|Zwraca `true` Jeśli dokładnie jeden element jest wybrany w aktywnym oknie; w przeciwnym razie `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> Właściwość|Pobiera zbiór elementów wybrane w Projektancie modeli tylko do odczytu.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> Właściwość|Pobiera zbiór elementów wybrane w aktywnym oknie tylko do odczytu.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> Właściwość|Pobiera element podstawowy zaznaczenia w Projektancie modelu.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> Właściwość|Pobiera element podstawowy zaznaczenia w aktywnym oknie.|  
   
 2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Właściwość <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> klasy zapewnia dostęp do <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> obiekt reprezentujący okno projektanta modelu i udostępnia dodatkowe wybrane elementy w Projektancie modelu.  
   

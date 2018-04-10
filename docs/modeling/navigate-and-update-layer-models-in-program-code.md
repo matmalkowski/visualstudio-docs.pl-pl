@@ -1,9 +1,9 @@
 ---
 title: Nawigowanie i aktualizowanie modeli warstw w kodzie programu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - layer models, navigating in program code
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: e79479e97efd953c1366348454eee70773faf07a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Nawigowanie i aktualizowanie modeli warstw w kodzie programu
 W tym temacie opisano elementów i relacji w modelach warstwy, których można nawigowanie i aktualizowanie przy użyciu kodu programu. Aby uzyskać więcej informacji o zależnościach diagramy z punktu widzenia użytkownika, zobacz [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md) i [diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md).  
@@ -49,7 +49,7 @@ using (ILinkedUndoTransaction t =
 ## <a name="dependency-links"></a>Łączy współzależności  
  Łącze zależności jest reprezentowana przez obiekt. Może zostać przesłane w żadnym kierunku:  
   
- ![ILayerDependencyLink łączy dwie ILayers. ] (../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
+ ![An ILayerDependencyLink connects two ILayers.](../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
   
  Aby utworzyć łącze zależności, należy wywołać `source.CreateDependencyLink(target)`.  
   
@@ -94,12 +94,12 @@ IEnumerable<ILayerComment> comments =
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Właściwość kategorii wskazuje, jaki rodzaj artefaktu odwołuje się do, takich jak klasy, plik wykonywalny lub zestawu. Kategorie określa, jak identyfikator identyfikuje artefaktu docelowej.  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A>Tworzy odwołania do artefaktu z <xref:EnvDTE.Project> lub <xref:EnvDTE.ProjectItem>. To jest operacja asynchroniczna. W związku z tym zazwyczaj zawierają wywołania zwrotnego, która jest wywoływana po zakończeniu tworzenia.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> Tworzy odwołania do artefaktu z <xref:EnvDTE.Project> lub <xref:EnvDTE.ProjectItem>. To jest operacja asynchroniczna. W związku z tym zazwyczaj zawierają wywołania zwrotnego, która jest wywoływana po zakończeniu tworzenia.  
   
  Odwołania do artefaktu warstwa nie należy mylić z artefaktami w diagramy przypadków użycia.  
   
 ## <a name="shapes-and-diagrams"></a>Kształty i diagramów  
- Dwa obiekty są używane do reprezentowania każdego elementu w modelu warstwy: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>i <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Reprezentuje położenia i rozmiaru kształtu na diagramie. W modelach warstwy co `ILayerElement` ma jeden `IShape`i co `IShape` na zależność diagramu ma jeden `ILayerElement`. `IShape`Służy także do modeli UML. W związku z tym nie każdy `IShape` ma element warstwy.  
+ Dwa obiekty są używane do reprezentowania każdego elementu w modelu warstwy: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>i <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Reprezentuje położenia i rozmiaru kształtu na diagramie. W modelach warstwy co `ILayerElement` ma jeden `IShape`i co `IShape` na zależność diagramu ma jeden `ILayerElement`. `IShape` Służy także do modeli UML. W związku z tym nie każdy `IShape` ma element warstwy.  
   
  W ten sam sposób <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> jest wyświetlany na jednym <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.  
   
@@ -122,7 +122,7 @@ public void ... (...)
   
  ![Każdy ILayerElement jest przedstawiony przez IShape. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>i <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> są również używane do wyświetlania modeli UML. 
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> i <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> są również używane do wyświetlania modeli UML. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie poleceń i gestów do diagramów zależności](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   

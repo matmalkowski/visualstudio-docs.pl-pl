@@ -1,27 +1,27 @@
 ---
 title: Przetwarzanie wsadowe MSBuild | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: 
+caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 4411b82fc5a86e4f3eeae965fefd65e2c38d207e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe w programie MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementu i uruchom docelowej lub zadania z każdej z partii.  
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="target-batching"></a>Przetwarzanie wsadowe obiektów docelowych  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sprawdza, jeśli wejściami i wyjściami obiektu docelowego są aktualne przed uruchomieniem obiektu docelowego. Jeśli zarówno wejściami i wyjściami są aktualne, element docelowy zostanie pominięty. Jeśli zadanie wewnątrz elementu docelowego korzysta z przetwarzania wsadowego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi określić, czy wejścia i wyjścia dla każdej partii elementów jest aktualny. W przeciwnym razie element docelowy jest wykonywana za każdym razem, gdy jest kliknij przycisk.  
   
- W poniższym przykładzie przedstawiono `Target` element, który zawiera `Outputs` atrybutem %(*ItemMetaDataName*) notacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Dzieli `Example` na podstawie listy elementów w partiach `Color` element metadanych i analizować sygnatury czasowe plików wyjściowych dla każdej partii. Jeśli dane wyjściowe z partii nie są aktualne, element docelowy jest uruchamiany. W przeciwnym razie element docelowy został pominięty.  
+ W poniższym przykładzie przedstawiono `Target` element, który zawiera `Outputs` atrybutem %(*ItemMetaDataName*) notacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Dzieli `Example` na podstawie listy elementów w partiach `Color` element metadanych i analizować sygnatury czasowe plików wyjściowych dla każdej partii. Jeśli dane wyjściowe z partii nie są aktualne, element docelowy jest uruchamiany. W przeciwnym razie element docelowy został pominięty.  
   
 ```xml  
 <Project  

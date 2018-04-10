@@ -1,9 +1,9 @@
 ---
-title: "T4 dotycząca Dyrektywa zestawu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: T4 dotycząca Dyrektywa zestawu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstu w czasie projektowania `assembly` dyrektywy ładuje zestaw, dzięki czemu kod szablonu można użyć jej typów. Efekt jest podobny do dodawania odwołania do zestawu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu.  
@@ -65,7 +65,7 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstu w cz
   
 -   Zestaw zawierający DSL.  
   
-##  <a name="msbuild"></a>Za pomocą właściwości projektu w MSBuild i Visual Studio  
+##  <a name="msbuild"></a> Za pomocą właściwości projektu w MSBuild i Visual Studio  
  Visual Studio makra podobnego do $(SolutionDir) nie działają w programie MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.  
   
  Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. W tym przykładzie definiuje właściwość o nazwie `myLibFolder`:  

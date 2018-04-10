@@ -1,9 +1,9 @@
 ---
 title: Nawigowanie i aktualizowanie modelu w programie kod | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3e5b76c384f92e1b943e0e9e6a522d16b6a6cadc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Nawigowanie i aktualizowanie modelu w kodzie programu
 Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiania ich właściwości, tworzenie i usuwanie łącza między elementami. Wszystkie zmiany muszą być wprowadzane w obrębie transakcji. Jeśli elementy są wyświetlane na diagramie, diagramu będzie je "poprawić" automatycznie po zakończeniu transakcji.  
@@ -53,7 +53,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiania ich wła
   
  [Widok dokumentu i danych dokumentu](#docdata)  
   
-##  <a name="example"></a>Przykład definicji DSL  
+##  <a name="example"></a> Przykład definicji DSL  
  To jest główna część DslDefinition.dsl przykłady w tym temacie:  
   
  ![Diagram definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png "FamilyT_Person")  
@@ -73,7 +73,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiania ich wła
   
  Ponadto podczas pisania kodu w innym projekcie niż ten, w którym jest zdefiniowana z DSL, należy zaimportować zestaw jest konstruowany przez projekt Dsl.  
   
-##  <a name="navigation"></a>Nawigowanie po modelu  
+##  <a name="navigation"></a> Nawigowanie po modelu  
   
 ### <a name="properties"></a>Właściwości  
  Właściwości domeny, które można zdefiniować w definicji DSL stają się właściwości, które są dostępne w kodzie programu:  
@@ -140,7 +140,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiania ich wła
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a>Uzyskiwanie dostępu do informacji o klasie  
+##  <a name="metadata"></a> Uzyskiwanie dostępu do informacji o klasie  
  Możesz uzyskać informacje dotyczące klas, relacje i innych aspektów definicji DSL. Na przykład:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
@@ -161,7 +161,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiania ich wła
   
 -   ElementLink — wszystkie relacje są ElementLinks  
   
-##  <a name="transaction"></a>Dokonać zmian w transakcji  
+##  <a name="transaction"></a> Dokonać zmian w transakcji  
  Przy każdej zmianie kodu źródłowego w magazynie go zrobić wewnątrz transakcji. Dotyczy to wszystkich elementów modelu, relacje kształtów, diagramy i ich właściwości. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
   
  Najwygodniejsza metoda zarządzania transakcji jest i `using` instrukcji ujęta w `try...catch` instrukcji:  
@@ -194,7 +194,7 @@ catch (Exception ex)
   
  Aby zmiany były trwałe, należy `Commit` transakcji przed jego usunięcia. Jeśli wystąpi wyjątek, który nie zawiera wewnątrz transakcji, magazynie zostaną zresetowane do stanu przed wprowadzeniem zmian.  
   
-##  <a name="elements"></a>Tworzenie elementów modelu  
+##  <a name="elements"></a> Tworzenie elementów modelu  
  W tym przykładzie dodaje element do istniejącego modelu:  
   
 ```  
@@ -227,7 +227,7 @@ using (Transaction t =
   
  Po utworzeniu elementu w ten sposób kształt jest tworzony automatycznie (jeśli DSL ma diagramu). Prawdopodobnie jest automatycznie przypisywana lokalizację, z domyślnego kształtu, kolor i inne funkcje. Jeśli chcesz kontrolować jak i gdzie skojarzonego kształtu, zobacz [tworzenia elementu i jego kształtu](#merge).  
   
-##  <a name="links"></a>Tworzenie relacji łączy  
+##  <a name="links"></a> Tworzenie relacji łączy  
  Istnieją dwie relacje zdefiniowane w tym przykładzie definicji DSL. Definiuje każdej relacji *właściwości roli* w klasie na końcach relacji.  
   
  Istnieją trzy sposoby, w których można utworzyć wystąpienia relacji. Każda z tych trzech metod ma ten sam efekt:  
@@ -258,7 +258,7 @@ using (Transaction t =
   
  Po utworzeniu elementu w ten sposób jest tworzony automatycznie łącznika na diagramie, ale ma ona domyślnego kształtu, kolor i inne funkcje. Aby kontrolować sposób tworzenia łącznika skojarzony, zobacz [tworzenia elementu i jego kształtu](#merge).  
   
-##  <a name="deleteelements"></a>Usuwanie elementów  
+##  <a name="deleteelements"></a> Usuwanie elementów  
  Usuń element przez wywołanie metody `Delete()`:  
   
  `henry.Delete();`  
@@ -281,7 +281,7 @@ using (Transaction t =
   
  W niektórych przypadkach usunięcie powiedzie się istnienie blokady, elementu lub w elemencie zostaną usunięte przez propagacji. Można użyć `element.CanDelete()` do sprawdzenia, czy element może zostać usunięte.  
   
-##  <a name="deletelinks"></a>Usuwanie relacji łącza  
+##  <a name="deletelinks"></a> Usuwanie relacji łącza  
  Można usunąć relacji łącza przez usunięcie elementu z właściwością roli:  
   
  `henry.Children.Remove(edward); // or:`  
@@ -296,11 +296,11 @@ using (Transaction t =
   
  Jeśli rola ma liczebność od 0 do 1 lub 1.. 1, można ją ustawić, `null`, lub z inną wartością:  
   
- `edward.FamilyTreeModel = null;`lub:  
+ `edward.FamilyTreeModel = null;` lub:  
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a>Zmiana kolejności łączy relacji  
+##  <a name="reorder"></a> Zmiana kolejności łączy relacji  
  Łącza w określonej relacji powierzając jej ich konserwację lub celem elementu określonego modelu mają określonej kolejności. Pojawią się one w kolejności, w jakiej zostały dodane. Na przykład niniejszych zawsze da elementów podrzędnych w tej samej kolejności:  
   
  `foreach (Person child in henry.Children) ...`  
@@ -317,12 +317,12 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a>Blokady  
+##  <a name="locks"></a> Blokady  
  Zmiany może być niemożliwe przez blokady. Można ustawić blokady na poszczególne elementy, partycji i magazynu. Jeśli dowolne z tych poziomów blokada uniemożliwia rodzaju zmiany, które mają być, może być wyjątek przy próbie jego. Aby wykryć, czy blokady są skonfigurowane przy użyciu elementu. GetLocks(), czyli metody rozszerzenia, który jest zdefiniowany w przestrzeni nazw <xref:Microsoft.VisualStudio.Modeling.Immutability>.  
   
  Aby uzyskać więcej informacji, zobacz [Definiowanie zasad blokowania do tworzenia segmentów tylko do odczytu](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).  
   
-##  <a name="copy"></a>Kopiowanie i wklejanie  
+##  <a name="copy"></a> Kopiowanie i wklejanie  
  Można skopiować elementów lub grup elementów <xref:System.Windows.Forms.IDataObject>:  
   
 ```  
@@ -345,9 +345,9 @@ using (Transaction t = targetDiagram.Store.
 }  
 ```  
   
- `Merge ()`można zaakceptować albo `PresentationElement` lub `ModelElement`. Jeśli zostanie nadana `PresentationElement`, można również określić pozycji na diagramie docelowy jako trzeci parametr.  
+ `Merge ()` można zaakceptować albo `PresentationElement` lub `ModelElement`. Jeśli zostanie nadana `PresentationElement`, można również określić pozycji na diagramie docelowy jako trzeci parametr.  
   
-##  <a name="diagrams"></a>Nawigowanie i aktualizowanie diagramami  
+##  <a name="diagrams"></a> Nawigowanie i aktualizowanie diagramami  
  W DSL element modelu domeny, który reprezentuje pojęcia, takie jak osoby lub utworu, różni się od elementu kształtu, który reprezentuje informacje wyświetlane na diagramie. Element modelu domeny przechowuje ważne właściwości i relacje pojęcia. Element kształtu przechowuje rozmiar, pozycja i kolor widok obiektu na diagramie, a układ jego składniki.  
   
 ### <a name="presentation-elements"></a>Elementy prezentacji  
@@ -369,7 +369,7 @@ using (Transaction t = targetDiagram.Store.
   
  Kształty mogą mieć kształty podrzędne w dwóch zestawów. Kształt `NestedChildShapes` zestawu jest ograniczona do obwiedni jego elementu nadrzędnego. Kształt `RelativeChildShapes` listy może występować poza lub częściowo poza granicami nadrzędnego — na przykład etykieta lub portu. Nie ma diagramu `RelativeChildShapes` i nie `Parent`.  
   
-###  <a name="views"></a>Przechodzenie między kształtami i elementy  
+###  <a name="views"></a> Przechodzenie między kształtami i elementy  
  Elementy modelu domeny i kształtu są powiązane przez <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relacji.  
   
 ```csharp  
@@ -441,22 +441,22 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a>Właściwości łączników i kształtów  
+###  <a name="shapeProperties"></a> Właściwości łączników i kształtów  
  W większości przypadków nie jest to niezbędne do zapewnienia jawne zmiany do kształtów. Zmiana elementów modelu reguły "Napraw" zaktualizować kształty i łączniki. Aby uzyskać więcej informacji, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  
   
  Jednak zaleca się zmianę niektórych jawnej kształtów we właściwościach, które są niezależne od elementów modelu. Na przykład można zmienić właściwości:  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A>-Określa wysokość i szerokość kształtu.  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -Określa wysokość i szerokość kształtu.  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A>-pozycji względem kształtu nadrzędnego lub diagram  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -pozycji względem kształtu nadrzędnego lub diagram  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A>-zestaw pióra i pędzle używany do rysowania kształtu lub łącznika  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -zestaw pióra i pędzle używany do rysowania kształtu lub łącznika  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A>-sprawia, że kształt jest niewidoczne  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -sprawia, że kształt jest niewidoczne  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A>-powoduje, że kształt jest widoczna po`Hide()`  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> -powoduje, że kształt jest widoczna po `Hide()`  
   
-###  <a name="merge"></a>Tworzenie elementu i jego kształtu  
+###  <a name="merge"></a> Tworzenie elementu i jego kształtu  
  Podczas tworzenia elementu i połączyć ją do drzewa relacji osadzenia, kształt jest automatycznie tworzone i skojarzonych z nim. Jest to realizowane przez reguły "naprawy", które są wykonywane po zakończeniu transakcji. Kształt pojawi się w lokalizacji automatycznie przypisywany i jego kształtu, kolor i inne funkcje będą mają przypisane wartości domyślne. Aby kontrolować sposób tworzenia kształtu, można użyć funkcji scalania. Najpierw dodaj elementy, które mają zostać dodane do elementu elementgroup przy, a następnie scalić grupy do diagramu.  
   
  Tej metody:  
@@ -509,7 +509,7 @@ partial class MyDiagram
 ### <a name="use-transactions"></a>Użyj transakcji  
  Kształty, łączniki i diagramy są podtypów <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w magazynie. W związku z tym należy zmiany do nich tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
-##  <a name="docdata"></a>Wyświetlanie dokumentów i danych dokumentu  
+##  <a name="docdata"></a> Wyświetlanie dokumentów i danych dokumentu  
  ![Diagram klas typów standardowe diagram](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
 ## <a name="store-partitions"></a>Partycje magazynu  

@@ -1,9 +1,9 @@
 ---
 title: Jak... with szablony tekstowe | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 Szablony tekstowe w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wygodny sposób generowania tekstu dowolnego rodzaju. Szablony tekstowe służy do generowania tekstu w czasie wykonywania w ramach aplikacji i w czasie projektowania, aby wygenerować fragmenty kodu projektu. Ten temat zawiera podsumowanie najczęściej zadawane "Jak...?" pytania.  
@@ -79,7 +79,7 @@ Szablony tekstowe w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wy
   
      Aby uzyskać więcej informacji, zobacz [wprowadzenie języki specyficzne dla domeny](../modeling/getting-started-with-domain-specific-languages.md) i [generowania kodu języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Pobieranie danych z[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Pobieranie danych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Aby korzystać z usług w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], przez zestaw `hostSpecific` atrybutu i obciążenia `EnvDTE` zestawu. Na przykład:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Pytania ogólne  
   
-###  <a name="starting"></a>Co to jest najlepszy sposób, aby rozpocząć pisanie szablonu tekstowego?  
+###  <a name="starting"></a> Co to jest najlepszy sposób, aby rozpocząć pisanie szablonu tekstowego?  
   
 1.  Zapis określonych przykład wygenerowanego pliku.  
   

@@ -1,11 +1,11 @@
 ---
-title: "Odwołanie do MSBuild | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Odwołanie do MSBuild | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 9315229eb5d1f157c412fe0307249e45b8e66539
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] czy system kompilacji dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Poniższe linki prowadzą do tematów, które zawierają [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacje referencyjne.  
@@ -55,7 +55,7 @@ ms.lasthandoff: 02/09/2018
  [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)  
  W tym artykule opisano argumentów i parametrów, które mogą być używane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
   
- [. Pliki obiektów docelowych](../msbuild/msbuild-dot-targets-files.md)  
+ [.Targets Files](../msbuild/msbuild-dot-targets-files.md)  
  Zawiera opis. Plik elementów docelowych, który znajduje się w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)  

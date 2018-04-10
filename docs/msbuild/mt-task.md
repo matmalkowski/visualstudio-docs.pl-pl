@@ -1,11 +1,11 @@
 ---
-title: "MT — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: MT Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -24,17 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mt-task"></a>MT — Zadanie
 Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
@@ -49,7 +49,7 @@ Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji,
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Opcjonalne **String []** parametru.<br /><br /> Określa nazwę co najmniej jeden plik manifestu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/manifest** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**AdditionalOptions**|Opcjonalne **ciąg** parametru.<br /><br /> Listę opcji wiersza polecenia. Na przykład "*/option1 /option2 /option#*". Ten parametr umożliwia określenie opcji wiersza polecenia, które nie są reprezentowane przez inne **MT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**Element AssemblyIdentity**|Opcjonalne **ciąg** parametru.<br /><br /> Określa wartości atrybutu **assemblyIdentity** element manifestu. Określ rozdzieloną przecinkami listę, gdzie znajduje się pierwszy składnik jest wartością `name` atrybutu następuje pary nazwa/wartość, których formularz,  *\<nazwa atrybutu > = < attribute_value >*.<br /><br /> Aby uzyskać więcej informacji, zobacz **/identity** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**AssemblyIdentity**|Opcjonalne **ciąg** parametru.<br /><br /> Określa wartości atrybutu **assemblyIdentity** element manifestu. Określ rozdzieloną przecinkami listę, gdzie znajduje się pierwszy składnik jest wartością `name` atrybutu następuje pary nazwa/wartość, których formularz,  *\<nazwa atrybutu > = < attribute_value >*.<br /><br /> Aby uzyskać więcej informacji, zobacz **/identity** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ComponentFileName**|Opcjonalne **ciąg** parametru.<br /><br /> Określa nazwę biblioteki dołączanej, które mają zostać kompilacji z plików .rgs lub .tlb. Ten parametr jest wymagany, jeśli określono **RegistrarScriptFile** lub **TypeLibraryFile** MT parametrów zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/dll** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**DependencyInformationFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa plik informacji o zależnościach, używany przez program Visual Studio do śledzenia informacji o zależnościach kompilacji dla narzędzia manifestu.|  
 |**EmbedManifest**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, osadza plik manifestu w zestawie. Jeśli `false`, tworzy jako autonomiczny plik manifestu.|  
@@ -67,7 +67,7 @@ Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji,
 |**Źródeł**|Opcjonalne `ITaskItem[]` parametru.<br /><br /> Określa listę plików źródłowych manifestu rozdzielone spacjami.<br /><br /> Aby uzyskać więcej informacji, zobacz **/manifest** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**SuppressDependencyElement**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, generuje manifest bez zależności elementów. Jeśli ten parametr ma `true`, również określić **ManifestFromManagedAssemblyMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nodependency** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**SuppressStartupBanner**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości copyright i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**Katalog TrackerLogDirectory**|Opcjonalne `String` parametru.<br /><br /> Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.|  
+|**TrackerLogDirectory**|Opcjonalne `String` parametru.<br /><br /> Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.|  
 |**TypeLibraryFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa nazwę pliku (.tlb) biblioteki typów. Jeśli ten parametr jest określony, również określić **ComponentFileNameMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/TLB** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**UpdateFileHashes**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, oblicza wartość skrótu pliki w ścieżce określonej przez **UpdateFileHashesSearchPathMT** parametru zadania, a następnie aktualizuje wartość **skrótu** atrybutu **pliku** element manifestu za pomocą obliczoną wartością.<br /><br /> Aby uzyskać więcej informacji, zobacz **/hashupdate** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **UpdateFileHashesSearchPath** parametru w tej tabeli.|  
 |**UpdateFileHashesSearchPath**|Opcjonalne `String` parametru.<br /><br /> Określa ścieżkę wyszukiwania do użycia podczas aktualizacji plików skrótu. Użyj tego parametru z **UpdateFileHashesMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **UpdateFileHashes** parametru w tej tabeli.|  

@@ -1,9 +1,9 @@
 ---
-title: "Uzyskiwanie dostępu do modeli z szablonów tekstowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uzyskiwanie dostępu do modeli z szablonów tekstowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć plików raportów, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modeli języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablony tekstowe będzie działać w trybie eksperymentalne podczas debugowania programu DSL, a także będzie działać na komputerze, na którym wdrożono DSL.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   Mimo że język, w którym są zapisywane fragmenty kodu C#, można wygenerować tekst dowolnego rodzaju. Można również napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.  
   
--   Aby debugować szablonu, Dodaj `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przypadku wystąpienia wyjątku. Jeśli chcesz przerwać w debugerze w określonym w kodzie, Wstaw instrukcję`System.Diagnostics.Debugger.Break();`  
+-   Aby debugować szablonu, Dodaj `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przypadku wystąpienia wyjątku. Jeśli chcesz przerwać w debugerze w określonym w kodzie, Wstaw instrukcję `System.Diagnostics.Debugger.Break();`  
   
      Aby uzyskać więcej informacji, zobacz [debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  Jeśli zostanie znaleziony błąd, będzie zgłaszane w oknie błędy, a plik wyników będzie zawierać komunikat o błędzie.  
   
-##  <a name="Multiple"></a>Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego  
+##  <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego  
   
 > [!NOTE]
 >  Ta metoda umożliwia wyświetlenie wielu modeli w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Modele, które są powiązane przez odwołania ModelBus zamieszczono [przy użyciu programu Visual Studio ModelBus w szablonu tekstowego](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`wywołuje `LoopTemplate.t4`, a następnie dzieli wynikowy plik na jego segmentów. Zwróć uwagę, że ten szablon nie trzeba być modelowania szablonu, ponieważ nie odczytu modelu.  
+ `LoopSplitter.tt` wywołuje `LoopTemplate.t4`, a następnie dzieli wynikowy plik na jego segmentów. Zwróć uwagę, że ten szablon nie trzeba być modelowania szablonu, ponieważ nie odczytu modelu.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

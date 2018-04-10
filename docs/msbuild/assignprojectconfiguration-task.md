@@ -1,11 +1,11 @@
 ---
-title: "Assignprojectconfiguration — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: AssignProjectConfiguration Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -13,17 +13,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a4a803647afac9de77096e4a16d41987ff70c4f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration — Zadanie
 To zadanie akceptuje listy ciągów konfiguracji i przypisuje je do określonych projektów.  
@@ -35,7 +35,7 @@ To zadanie akceptuje listy ciągów konfiguracji i przypisuje je do określonych
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|Opcjonalne `string` parametru wyjściowego.<br /><br /> Zawiera ciąg XML zawierający konfigurację projektu dla każdego projektu. Konfiguracje są przypisane do nazwanego projektów.|  
 |`DefaultToVcxPlatformMapping`|Opcjonalne `string` parametru wyjściowego.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazwy platformy używane<br /><br /> przez większość typów do używanych przez .vcxproj plików.<br /><br /> Na przykład:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string`Parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowania nazw platformy .vcxproj do używania nazwy platformy przez większość typów.<br /><br /> Na przykład:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` Parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowania nazw platformy .vcxproj do używania nazwy platformy przez większość typów.<br /><br /> Na przykład:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
 |`CurrentProjectConfiguration`|Opcjonalne `string` parametru wyjściowego.<br /><br /> Zawiera konfigurację dla bieżącego projektu.|  
 |`CurrentProjectPlatform`|Opcjonalne `string` parametru wyjściowego.<br /><br /> Zawiera platformy dla bieżącego projektu.|  
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|Opcjonalne `bool` parametru wyjściowego.<br /><br /> Zawiera nieobsługiwaną flagę wskazującą, czy odwołania powinny zostać skompilowane, nawet jeśli zostały one wyłączone w konfiguracji projektu.|  

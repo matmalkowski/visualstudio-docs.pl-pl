@@ -1,29 +1,29 @@
 ---
-title: IDebugPortEvents2 | Dokumentacja firmy Microsoft
-ms.custom: 
+title: IDebugPortEvents2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugPortEvents2
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: 
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Ten interfejs powiadamia słuchacz (zazwyczaj sesji debugowania Menedżera [SDM] lub aparat debugowania) proces i program tworzenie i likwidacja na określonym porcie. Te informacje można przedstawić w czasie rzeczywistym widoku procesów i programy uruchomione na tym porcie.  
@@ -48,7 +48,7 @@ IDebugPortEvents2 : IUnknown
 |[Zdarzenia](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Wysyła zdarzenia, które opisują tworzenie i likwidacja procesów i programów na tym porcie.|  
   
 ## <a name="remarks"></a>Uwagi  
- `IDebugPortEvents2`Umożliwia również przez SDM debugowanie programów uruchamianych w ramach procesu, który jest już debugowany.  
+ `IDebugPortEvents2` Umożliwia również przez SDM debugowanie programów uruchamianych w ramach procesu, który jest już debugowany.  
   
  Port zdarzenia są przekazywane do SDM przez ten interfejs.  
   
@@ -57,7 +57,7 @@ IDebugPortEvents2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   

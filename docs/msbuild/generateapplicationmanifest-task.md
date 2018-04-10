@@ -1,11 +1,11 @@
 ---
-title: "Generateapplicationmanifest — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: GenerateApplicationManifest Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 
+caps.latest.revision: 24
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — Zadanie
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub natywny manifest. Natywny manifest opisuje składnika przez definiowanie unikatową tożsamość składnika i zidentyfikowaniu wszystkie pliki wchodzące w skład składnika i zestawów. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza natywny manifest wskazujący punkt wejścia aplikacji, a następnie określając poziom zabezpieczeń aplikacji.  
@@ -81,10 +81,10 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 |Nazwa metadanych|Opis|  
 |-------------------|-----------------|  
 |`DependencyType`|Wskazuje, czy zależność jest opublikowana i zainstalować aplikację lub wymagań wstępnych. Te metadane jest prawidłowa dla wszystkich zależności, ale nie jest używana w przypadku plików. Dostępne wartości to metadane są:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Wartością domyślną jest instalacja.|  
-|`AssemblyType`|Wskazuje, czy zależność jest zarządzanego lub zestaw macierzysty. Te metadane jest prawidłowa dla wszystkich zależności, ale nie jest używana w przypadku plików. Dostępne wartości to metadane są:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified`jest to wartość domyślna, co oznacza, że manifestu generator automatycznie zadecyduje o typie zestawu.|  
+|`AssemblyType`|Wskazuje, czy zależność jest zarządzanego lub zestaw macierzysty. Te metadane jest prawidłowa dla wszystkich zależności, ale nie jest używana w przypadku plików. Dostępne wartości to metadane są:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` jest to wartość domyślna, co oznacza, że manifestu generator automatycznie zadecyduje o typie zestawu.|  
 |`Group`|Wskazuje grupę do pobrania dodatkowych plików na żądanie. Nazwa grupy jest zdefiniowane przez aplikację i może być dowolnym ciągiem. Pustego ciągu oznacza, że plik nie jest częścią grupy pobierania, która jest ustawiona domyślnie. Plików w grupie nie są częścią pobrania początkowej aplikacji. Pliki w grupie tylko są pobierane, gdy wyraźnie zażąda aplikacji przy użyciu <xref:System.Deployment.Application>.<br /><br /> Te metadane jest prawidłowa dla wszystkich plików gdzie `IsDataFile` jest `false` i wszystkie zależności gdzie `DependencyType` jest `Install`.|  
 |`TargetPath`|Określa, jak ścieżka powinien być zdefiniowany w manifeście wygenerowany. Ten atrybut jest prawidłowy dla wszystkich plików. Jeśli ten atrybut nie jest określony, używana jest określenie elementu. Ten atrybut jest nieprawidłowy dla wszystkich plików i zależności z `DependencyType` wartość `Install`.|  
-|`IsDataFile`|A `Boolean` wartość metadanych, która wskazuje, czy plik jest plikiem danych. Plik danych jest specjalne, że jest migrowana między aktualizacjami aplikacji. Te metadane jest prawidłowa tylko dla plików. `False`jest to wartość domyślna.|  
+|`IsDataFile`|A `Boolean` wartość metadanych, która wskazuje, czy plik jest plikiem danych. Plik danych jest specjalne, że jest migrowana między aktualizacjami aplikacji. Te metadane jest prawidłowa tylko dla plików. `False` jest to wartość domyślna.|  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie użyto `GenerateApplicationManifest` zadań, aby wygenerować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji i `GenerateDeploymentManifest` zadań do generowania manifestu wdrożenia dla aplikacji z jednym zestawie. Następnie używa `SignFile` zadań do podpisywania manifestów.  
@@ -356,6 +356,6 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
   
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
- [Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)   
+ [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md)   
  [Signfile — zadanie](../msbuild/signfile-task.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

@@ -1,9 +1,9 @@
 ---
-title: "Integrowanie modeli przy użyciu programu Visual Studio Modelbus | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Integrowanie modeli przy użyciu programu Visual Studio Modelbus | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus udostępnia metody do tworzenia łączy między modelami i z innych narzędzi do modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Można utworzyć zintegrowany zestaw DSLs.  
@@ -29,14 +29,14 @@ ms.lasthandoff: 02/09/2018
   
 -   [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)  
   
--   [Modelowanie zestawu SDK dla programu Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
+-   [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Zapewnianie dostępu do DSL  
+##  <a name="provide"></a> Zapewnianie dostępu do DSL  
  Przed utworzeniem ModelBus odwołania do modelu lub swoich elementów, należy najpierw zdefiniować element ModelBusAdapter DSL. Najprostszym sposobem, w tym celu jest użycie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenie magistrali modelu, który dodaje polecenia do DSL projektanta.  
   
-###  <a name="expose"></a>Aby udostępnić definicji magistrali modelu DSL  
+###  <a name="expose"></a> Aby udostępnić definicji magistrali modelu DSL  
   
 1.  Pobierz i zainstaluj rozszerzenie magistrali modelu w usłudze Visual Studio, chyba że już zostały zainstalowane. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 02/09/2018
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Aby upewnić się, że element identyfikatory są zachowywane  
   
-1.  Otwórz DslDefinition.dsl.  
+1.  Open DslDefinition.dsl.  
   
 2.  W Eksploratorze DSL rozwiń **zachowanie serializacji Xml**, następnie **dane klasy**.  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Zastąpienie `ResolveElementReference` aby zlokalizować prawidłowe elementu z odwołania magistrali modelu.  
   
-##  <a name="editRef"></a>Uzyskiwanie dostępu do DSL z innego DSL  
+##  <a name="editRef"></a> Uzyskiwanie dostępu do DSL z innego DSL  
  Odwołania magistrali modelu można przechowywać we właściwości domeny w DSL i pisania kodu niestandardowego, który używa ich. Można także pozwolić użytkownikowi utworzenia odwołania magistrali modelu przez pobranie pliku modelu i w jego elemencie.  
   
  Aby włączyć DSL można używać odwołań do innego DSL, najpierw należy go *konsumenta* z odwołania magistrali modelu.  
@@ -383,7 +383,7 @@ ModelBusReference elementReferenceRestored =
   
  Główny rekord rozruchowy jest rozszeregować w dwóch etapach:  
   
--   `ModelBusReferencePropertySerializer`jest serializator standardowe, która zajmuje się nagłówka MBR. Używa standardowych DSL `SerializationContext` zbioru właściwości, który jest przechowywany w `ReferenceContext` przy użyciu klucza `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. W szczególności `SerializationContext` powinien zawierać wystąpienie `ModelBus`.  
+-   `ModelBusReferencePropertySerializer` jest serializator standardowe, która zajmuje się nagłówka MBR. Używa standardowych DSL `SerializationContext` zbioru właściwości, który jest przechowywany w `ReferenceContext` przy użyciu klucza `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. W szczególności `SerializationContext` powinien zawierać wystąpienie `ModelBus`.  
   
 -   Karta ModelBus dotyczy określonej karty część główny rekord rozruchowy. Może używać dodatkowych informacji przechowywanych w ReferenceContext z główny rekord rozruchowy. Proste karty opartych na plikach śledzi główny ścieżki plików przy użyciu kluczy `FilePathLoadContextKey` i `FilePathSaveContextKey`.  
   
@@ -506,7 +506,7 @@ private const string INVALID_REF_FORMAT =
   
 -   Nowy projekt `ModelBusAdapter` zostanie dodany do rozwiązania.  
   
--   Odwołanie do `ModelBusAdapter` jest dodawany do `DslPackage` projektu. `ModelBusAdapter`odwołuje się do `Dsl` projektu.  
+-   Odwołanie do `ModelBusAdapter` jest dodawany do `DslPackage` projektu. `ModelBusAdapter` odwołuje się do `Dsl` projektu.  
   
 -   W **DslPackage\source.extention.tt**, `|ModelBusAdapter|` jest dodawana jako składników MEF.  
   

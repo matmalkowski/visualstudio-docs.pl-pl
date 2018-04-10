@@ -1,11 +1,11 @@
 ---
-title: "Łączenie zadań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Link Task | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 
+caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="link-task"></a>Połącz — Zadanie
 Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora łączy pliki obiektów wspólnej obiektu pliku formatu (COFF) i biblioteki, aby utworzyć plik wykonywalny (.exe) lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).  
@@ -146,7 +146,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** - **clrimagetype: PURE**  
+    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
@@ -160,7 +160,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-    -   **Włączone** - **/CLRSupportLastError**  
+    -   **Enabled** - **/CLRSupportLastError**  
   
     -   **Wyłączone** - **/CLRSupportLastError:NO**  
   
@@ -300,7 +300,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **Włączone** -   **/FORCE**  
+    -   **Enabled** - **/FORCE**  
   
     -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
@@ -502,7 +502,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
     -   **PGUpdate**  
   
-         \-**/LTCG:PGUpdate**  
+         \- **/LTCG:PGUpdate**  
   
      Aby uzyskać więcej informacji, zobacz [opcję/LTCG (Generowanie kodu w czasie Link)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
@@ -552,7 +552,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Aby uzyskać więcej informacji, zobacz [/MIDL (Określanie MIDL wiersza polecenia opcji)](/cpp/build/reference/midl-specify-midl-command-line-options).  
   
--   **Parametru MinimumRequiredVersion**  
+-   **MinimumRequiredVersion**  
   
      Opcjonalne **ciąg** parametru.  
   
@@ -624,7 +624,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (zapobiec powiązanie biblioteki DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).  
   
--   **Profil**  
+-   **Profile**  
   
      Opcjonalne **logiczna** parametru.  
   
@@ -852,7 +852,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Aby uzyskać więcej informacji, zobacz [/tsaware (Utwórz Terminal aplikację świadomą serwera)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).  
   
--   **Katalog TrackerLogDirectory**  
+-   **TrackerLogDirectory**  
   
      Opcjonalne **ciąg** parametru.  
   

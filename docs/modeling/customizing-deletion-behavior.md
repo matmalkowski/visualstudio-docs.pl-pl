@@ -1,9 +1,9 @@
 ---
-title: "Dostosowywanie zachowania usunięcia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dostosowywanie zachowania usunięcia | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia również. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne zostaną usunięte. To zachowanie jest o nazwie *usunąć propagacji*. Można dostosować propagacji delete, na przykład ułożyć, że dodatkowe powiązane elementy są usuwane. Pisanie kodu programu, możesz wprowadzić propagacji delete są zależne od stanu modelu. Może również spowodować inne zmiany w odpowiedzi do usunięcia.  
@@ -40,7 +40,7 @@ Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia r
   
 -   [Rozdziel](#unmerge) — za pomocą operacji Rozdziel cofnąć operację scalania, który dołączony do elementu nadrzędnego elementu podrzędnego.  
   
-##  <a name="default"></a>Sposób usuwania domyślne  
+##  <a name="default"></a> Sposób usuwania domyślne  
  Domyślnie następujące zasady regulują propagacji usuwania:  
   
 -   Jeśli element zostanie usunięty, wszystkie elementy osadzone, również zostaną usunięte. Osadzone elementy są te, które są elementy docelowe relacji, dla których ten element jest źródłem osadzenia. Na przykład, jeśli istnieje relacja osadzania z **albumu** do **utworu**, a następnie usunięcie określonego albumu jego utworów muzycznych również zostaną usunięte.  
@@ -53,7 +53,7 @@ Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia r
   
 -   Co relacji, która jest połączona z elementu w ramach roli źródłowa lub docelowa jest usuwany. Właściwości roli elementu w ramach roli przeciwną nie zawiera już usuniętego elementu.  
   
-##  <a name="property"></a>Ustawienie opcji Propaguj usuwanie roli  
+##  <a name="property"></a> Ustawienie opcji Propaguj usuwanie roli  
  Może spowodować usunięcie na propagację wzdłuż relacja odwołania lub osadzonych podrzędnych do elementu nadrzędnego.  
   
 #### <a name="to-set-delete-propagation"></a>Aby ustawić propagacji delete  
@@ -78,7 +78,7 @@ Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia r
 > [!NOTE]
 >  Aby dodać kod programu do definicji DSL, Utwórz osobnym pliku kodu w **Dsl** projektu i zapisu częściowe definicje, aby rozszerzyć klasy w folderze wygenerowany kod. Aby uzyskać więcej informacji, zobacz [pisanie kodu, aby dostosować języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
-##  <a name="closure"></a>Definiowanie zamknięcia Delete  
+##  <a name="closure"></a> Definiowanie zamknięcia Delete  
  Operacja usunięcia używa klasy *YourModel *** DeleteClosure** Aby określić, które elementy, aby usunąć, biorąc pod uwagę wartości początkowe. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` , przejście na wykresie relacji. Można zastąpić te metody. ShouldVisitRolePlayer jest dostarczany z tożsamości łącza i elementu w jednej z ról łącza. Powinien on zwrócić jedną z następujących wartości:  
   
 -   **VisitorFilterResult.Yes**— element powinien zostać usunięty, i walkera powinno być kontynuowane, aby wypróbować inne łącza do elementu.  
@@ -131,16 +131,16 @@ partial class MusicLibDeleteClosure
   
  Jednak techniki przyjęto założenie, że usunięcie dotyczy tylko jej sąsiadami na wykresie relacji: nie można użyć tej metody, aby usunąć element w innej części modelu. Nie można używać go, jeśli chcesz dodać elementy lub wprowadzić inne zmiany w odpowiedzi na usunięcie.  
   
-##  <a name="ondeleting"></a>Przy użyciu OnDeleting i OnDeleted  
+##  <a name="ondeleting"></a> Przy użyciu OnDeleting i OnDeleted  
  Można zastąpić `OnDeleting()` lub `OnDeleted()` w klasie domeny lub w relacji domeny.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>jest wywoływana, gdy element ma zostać usunięty, ale przed jego relacje został odłączony. Nadal można nawigować do i z innych elementów i jest nadal w `store.ElementDirectory`.  
+1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> jest wywoływana, gdy element ma zostać usunięty, ale przed jego relacje został odłączony. Nadal można nawigować do i z innych elementów i jest nadal w `store.ElementDirectory`.  
   
      Jeśli niektóre elementy są usuwane w tym samym czasie, OnDeleting jest wywoływana przed wykonaniem operacji usuwania dla wszystkich z nich.  
   
-     `IsDeleting`ma wartość true.  
+     `IsDeleting` ma wartość true.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>jest wywoływane, gdy element został usunięty. Pozostaje w stercie CLR, aby cofania można przeprowadzić, jeśli jest to wymagane, ale jest rozłączony z innymi elementami i usunięta z `store.ElementDirectory`. W przypadku relacji role nadal odwoływać się do starego pełniących role.`IsDeleted` ma wartość true.  
+2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> jest wywoływane, gdy element został usunięty. Pozostaje w stercie CLR, aby cofania można przeprowadzić, jeśli jest to wymagane, ale jest rozłączony z innymi elementami i usunięta z `store.ElementDirectory`. W przypadku relacji role nadal odwoływać się do starego pełniących role.`IsDeleted` ma wartość true.  
   
 3.  OnDeleting i OnDeleted są wywoływane, gdy użytkownik wywoła cofania po utworzeniu elementu i usuwanie wcześniejszych jest powtarzany w operacji ponownego wykonywania. Użyj `this.Store.InUndoRedoOrRollback` w celu uniknięcia aktualizowanie elementów magazynu w tych przypadkach. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
@@ -198,7 +198,7 @@ partial class Artist
   
  Po wykonaniu <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> w elemencie OnDeleting i OnDeleted zostanie wywołana. Te metody są zawsze wykonywane wbudowanego - oznacza to, bezpośrednio przed i po usunięciu rzeczywistego. Jeśli Twój kod usuwa co najmniej dwa elementy, OnDeleting i OnDeleted zostanie wywołana w alternacyjne na wszystkich z nich z kolei.  
   
-##  <a name="rules"></a>Zasady usuwania i zdarzenia  
+##  <a name="rules"></a> Zasady usuwania i zdarzenia  
  Alternatywą dla programów obsługi OnDelete można określić zasady usuwania i usuwania zdarzenia.  
   
 1.  **Usuwanie** i **usunąć** reguły są wyzwalane tylko w ramach transakcji, a nie w cofania lub ponownego wykonywania. Można ustawić je do kolejki do wykonania po zakończeniu transakcji, w którym odbywa się usuwanie. Usuwanie reguły są zawsze wykonywane przed żadnych reguł usunięte, które znajdują się w kolejce.  
@@ -288,7 +288,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>Rozdziel  
+##  <a name="unmerge"></a> Rozdziel  
  Operacja dołączony do elementu nadrzędnego elementu podrzędnego jest nazywana *scalania*. Występuje, gdy nowy element lub grupę elementów jest utworzony z przybornika, lub przeniesione z innej części modelu lub kopiowane ze Schowka. Oraz tworzenie osadzania relacji między nadrzędnym a jego nowy element podrzędny, operacji scalania można również skonfigurować dodatkowe relacje, tworzenie elementów pomocniczych i ustawiania wartości właściwości w elementach. Operacja scalania jest hermetyzowany w elemencie scalania — dyrektywa (EMD).  
   
  EMD również hermetyzuje uzupełniające *Rozdziel* lub `MergeDisconnect` operacji. Jeśli masz klaster elementy zostały utworzone za pomocą scalania, zaleca się użyć skojarzonego Rozdziel można usunąć elementu z niego, jeśli chcesz pozostawić wszystkie pozostałe elementy w spójnym stanie. Operacja Rozdziel zazwyczaj będzie używać metod opisanych w poprzednich sekcjach.  

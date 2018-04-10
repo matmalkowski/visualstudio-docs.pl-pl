@@ -1,28 +1,28 @@
 ---
 title: Zadanie zapisu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-caps.latest.revision: 
+caps.latest.revision: 19
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e40239fac788dafec8c33a524e5d2251f4c5e1fd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania są zawarte w elementów docelowych. Biblioteka typowych zadań jest dołączana do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], i można również tworzyć własne zadania. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
@@ -65,7 +65,7 @@ namespace MyTasks
 </Project>  
 ```  
   
- Uruchomienie zadania one może również odbierać dane wejściowe z pliku projektu w przypadku utworzenia właściwości platformy .NET dla klasy zadania. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Ustawia właściwości bezpośrednio przed wywołaniem zadania `Execute` metody. Aby utworzyć właściwości ciągu, użyj kodu zadań takich jak:  
+ Uruchomienie zadania one może również odbierać dane wejściowe z pliku projektu w przypadku utworzenia właściwości platformy .NET dla klasy zadania. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Ustawia właściwości bezpośrednio przed wywołaniem zadania `Execute` metody. Aby utworzyć właściwości ciągu, użyj kodu zadań takich jak:  
   
 ```csharp
 using System;  

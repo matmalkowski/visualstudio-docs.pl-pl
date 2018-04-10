@@ -1,12 +1,12 @@
 ---
 title: Debugowanie kodu HTML i CSS w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie HTML i CSS w aplikacjach platformy uniwersalnej systemu Windows w programie Visual Studio
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
  Aby uzyskać informacje o innych JavaScript debugowania funkcje, takie jak korzystanie z okna konsoli języka JavaScript i ustawianie punktów przerwania, zobacz [Szybki Start: debugowanie JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowania aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a>Zapoznanie się na żywo modelu DOM  
+##  <a name="InspectingDOM"></a> Zapoznanie się na żywo modelu DOM  
  Narzędzia DOM Explorer przedstawiono widok służący do renderowanej strony, a następnie można użyć narzędzia DOM Explorer Aby zmienić wartości i od razu Zobacz wyniki. Umożliwia testowanie zmian bez zatrzymania i ponownego uruchomienia debugera. Kod źródłowy w projekcie nie powoduje zmiany interakcji ze strony za pomocą tej metody, więc po znalezieniu poprawki odpowiedni kod, wprowadź zmiany w kodzie źródłowym.  
   
 > [!TIP]
@@ -235,7 +235,7 @@ ms.lasthandoff: 01/19/2018
   
      Aby uzyskać więcej informacji na temat funkcji odświeżania, zobacz [odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a>Zaznaczanie elementów  
+##  <a name="SelectingElements"></a> Zaznaczanie elementów  
  Podczas debugowania aplikacji, możesz wybrać elementy modelu DOM na trzy sposoby:  
   
 -   Klikając elementy bezpośrednio w oknie Eksploratora modelu DOM (lub przy użyciu klawiszy strzałek).  

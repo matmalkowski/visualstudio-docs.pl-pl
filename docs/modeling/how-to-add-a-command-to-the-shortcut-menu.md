@@ -1,9 +1,9 @@
 ---
-title: "Porady: Dodawanie polecenia do Menu skrótów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Dodawanie polecenia do Menu skrótów | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Porady: dodawanie polecenia do menu skrótów
 Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki czemu użytkownicy mogą wykonywać zadania, specyficzne dla użytkownika DSL. Polecenia są wyświetlane w menu kontekstowym (skrót), po kliknięciu prawym przyciskiem myszy na diagramie. Polecenie można zdefiniować i pojawia się tylko z menu w określonych okolicznościach. Na przykład możesz wprowadzić polecenie widoczny tylko wtedy, gdy użytkownik kliknie określonych rodzajów element lub elementy w określone stany.  
@@ -51,7 +51,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
   
  W przeciwnym razie należy wziąć pod uwagę przy użyciu metody MEF do definiowania polecenia. Aby uzyskać więcej informacji, zobacz [rozszerzyć Twoje DSL przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Deklarowanie polecenia w Commands.Vsct  
+##  <a name="VSCT"></a> Deklarowanie polecenia w Commands.Vsct  
  Polecenia menu są zadeklarowane w DslPackage\Commands.vsct. Te definicje Określ etykiety elementów menu i gdzie są wyświetlane na pasku menu.  
   
  Plik, który można edytować Commands.vsct, importuje definicje z kilku pliki .h, które znajdują się w katalogu *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc. Obejmuje on też GeneratedVsct.vsct, które są generowane na podstawie definicję DSL.  
@@ -131,7 +131,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Zaktualizuj wersję pakietu w Package.tt  
+##  <a name="version"></a> Zaktualizuj wersję pakietu w Package.tt  
  Przy dodawaniu lub zmienić polecenie aktualizacji `version` parametr <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> który dotyczy klasy pakietu przed udostępnieniem nowej wersji języka specyficznego dla domeny.  
   
  Ponieważ klasa pakietu jest zdefiniowana w wygenerowanym pliku, należy zaktualizować atrybutu w pliku szablonu tekstowego, który generuje plik Package.cs.  
@@ -146,7 +146,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), dzięki 
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Zdefiniuj zachowanie polecenia  
+##  <a name="CommandSet"></a> Zdefiniuj zachowanie polecenia  
  Twoje DSL ma już niektóre polecenia, które zostały wdrożone w częściowej klasy, która jest zadeklarowana w DslPackage\GeneratedCode\CommandSet.cs. Aby dodać nowe polecenia, można rozszerzyć tę klasę przez tworzenie nowego pliku, który zawiera częściowa deklaracja tego samego rodzaju. Nazwa klasy jest zwykle  *\<YourDslName >*`CommandSet`. Warto rozpocząć od sprawdzenia nazwę klasy i zapoznanie się jego zawartość.  
   
  Jest pochodną klasy zestawu poleceń <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -224,15 +224,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. Kształt będący użytkownik kliknął prawym przyciskiem myszy zawsze znajduje się na tej liście. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
   
--   `this.IsDiagramSelected()` - `true`Jeśli użytkownik kliknął pustą część diagramu.  
+-   `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`— użytkownik nie wybrał wielu obiektów  
+-   `this.IsSingleSelection()` — użytkownik nie wybrał wielu obiektów  
   
--   `this.SingleSelection`-kształtu lub diagram, który użytkownik kliknął prawym przyciskiem myszy  
+-   `this.SingleSelection` -kształtu lub diagram, który użytkownik kliknął prawym przyciskiem myszy  
   
--   `shape.ModelElement as MyLanguageElement`-element modelu reprezentowanego przez kształtu.  
+-   `shape.ModelElement as MyLanguageElement` -element modelu reprezentowanego przez kształtu.  
   
  Generalnie, wprowadź `Visible` są zależne od wybranej właściwości i upewnij `Enabled` właściwości są zależne od stan wybranych elementów.  
   
@@ -299,7 +299,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 >  Jeśli zmienisz sekcji symbole pliku VSCT, należy również zmienić deklaracji do dopasowania. Należy również zwiększenie numeru wersji w Package.tt  
   
- Zarejestruj poleceń menu jako część tego zestawu poleceń. `GetMenuCommands()`jest wywoływana, gdy po zainicjowaniu diagramu:  
+ Zarejestruj poleceń menu jako część tego zestawu poleceń. `GetMenuCommands()` jest wywoływana, gdy po zainicjowaniu diagramu:  
   
 ```  
 protected override IList<MenuCommand> GetMenuCommands()  

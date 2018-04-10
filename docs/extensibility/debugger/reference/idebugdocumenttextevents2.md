@@ -1,29 +1,29 @@
 ---
-title: IDebugDocumentTextEvents2 | Dokumentacja firmy Microsoft
-ms.custom: 
+title: IDebugDocumentTextEvents2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugDocumentTextEvents2
 helpviewer_keywords:
 - IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-caps.latest.revision: 
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Ten interfejs jest używana do powiadamiania o zmianach w dokumencie źródłowym, które są dostarczane przez aparat debugowania programu Visual Studio.  
@@ -38,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
  Niemcy implementuje ten interfejs obsługuje wprowadzania zmian do kodu źródłowego. Ten interfejs jest zwykle implementowany na ten sam obiekt, który implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsu.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]uzyskuje ten interfejs poprzez wywołanie <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Interfejsu są uzyskiwane z wywołania <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Interfejsu uzyskuje się poprzez wywołanie [QueryInterface](/cpp/atl/queryinterface) metoda [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsu.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uzyskuje ten interfejs poprzez wywołanie <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Interfejsu są uzyskiwane z wywołania <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> metody. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Interfejsu uzyskuje się poprzez wywołanie [QueryInterface](/cpp/atl/queryinterface) metoda [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsu.  
   
 ## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
  W poniższej tabeli przedstawiono metody `IDebugDocumentTextEvents2`.  
@@ -60,7 +60,7 @@ IDebugDocumentTextEvents2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   

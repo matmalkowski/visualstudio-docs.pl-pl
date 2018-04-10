@@ -1,9 +1,9 @@
 ---
-title: "MSI i wdrażanie VSIX DSL | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: MSI i wdrażanie VSIX DSL | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
-Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]musi być zainstalowany na komputerze docelowym.  
+Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi być zainstalowany na komputerze docelowym.  
   
-##  <a name="which"></a>Wybór między VSIX i wdrożenia MSI  
+##  <a name="which"></a> Wybór między VSIX i wdrożenia MSI  
  Istnieją dwie metody wdrażania języka specyficznego dla domeny:  
   
 |Metoda|Zalety|  
@@ -28,7 +28,7 @@ Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia)|Bardzo łatwa do wdrożenia: kopiowania, a następnie wykonaj **.vsix** plik z projektu DslPackage.<br /><br /> Aby uzyskać więcej informacji, zobacz [instalowania i odinstalowywania DSL przy użyciu VSX](#Installing).|  
 |MSI (plik Instalatora)|— Umożliwia użytkownikowi otwieranie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] klikając dwukrotnie plik DSL.<br />-Kojarzy ikony typu pliku DSL w komputerze docelowym.<br />-Kojarzy XSD (schemat XML) z typem pliku DSL. Dzięki temu można uniknąć ostrzeżeń podczas ładowania pliku do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Instalacja projektu należy dodać do rozwiązania, aby utworzyć instalatora MSI.<br /><br /> Aby uzyskać więcej informacji, zobacz [wdrażanie DSL przy użyciu pliku MSI](#msi).|  
   
-##  <a name="Installing"></a>Instalowanie i odinstalowywanie DSL przy użyciu VSX  
+##  <a name="Installing"></a> Instalowanie i odinstalowywanie DSL przy użyciu VSX  
  Po zainstalowaniu programu DSL przez tę metodę użytkownika DSL plik można otworzyć z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale nie można otworzyć pliku z Eksploratora Windows.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Aby zainstalować DSL za pomocą VSX  
@@ -37,7 +37,7 @@ Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub
   
     1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DslPackage** projektu, a następnie kliknij przycisk **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\***YourProject***. DslPackage.vsix**  
+    2.  Locate the file **bin\\\*\\***YourProject***.DslPackage.vsix**  
   
 2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować DSL. Może to być własnym komputerze lub inny.  
   
@@ -65,7 +65,7 @@ Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Wdrażanie DSL w pliku MSI  
+##  <a name="msi"></a> Wdrażanie DSL w pliku MSI  
  Definiując plik MSI (Instalator Windows) dla sieci DSL, mogą umożliwiać użytkownikom otwieranie plików DSL z Eksploratora Windows. Można również skojarzyć ikonę i krótki opis z rozszerzeniem nazwy. Ponadto MSI można zainstalować XSD, który może służyć do sprawdzania poprawności DSL plików. Inne składniki można dodać do pliku MSI, który zostanie zainstalowany w tym samym czasie.  
   
  Aby uzyskać więcej informacji na temat plików MSI i innych opcji wdrażania, zobacz [wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md).  
