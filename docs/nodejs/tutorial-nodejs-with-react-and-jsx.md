@@ -19,7 +19,7 @@ ms.workload:
 - nodejs
 ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
 ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/06/2018
 ---
@@ -347,7 +347,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu Node.js po stronie serwera
 
     ![Dołączanie do procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png) 
 
-    Wiadomo, że debuger został dołączony poprawnie, gdy konsoli JavaScript i narzędzia DOM Explorer Otwórz w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzia F12 Edge i przeglądarki Chrome Developer Tools.
+    Wiadomo, że debuger został dołączony poprawnie, gdy konsoli JavaScript i narzędzia DOM Explorer Otwórz w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzia F12 Microsoft Edge i przeglądarki Chrome Developer Tools.
 
     > [!NOTE]
     > Jeśli nie dołączyć debuger i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja jest niedozwolona w bieżącym stanie." następnie użyj Menedżera zadań, aby zamknąć wszystkie wystąpienia przeglądarki Chrome przed rozpoczęciem Chrome w trybie debugowania. Rozszerzenia programu Chrome mogą być uruchomione i uniemożliwia trybu pełnego debugowania.

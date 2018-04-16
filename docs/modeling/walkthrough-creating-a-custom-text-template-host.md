@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Wskazówki: tworzenie niestandardowego hosta szablonu tekstowego
-A *szablonu tekstowego ** hosta* zapewnia środowisko, które umożliwia *aparat przekształcania szablonu tekstowego* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* wymagające pliku lub zestawu mogą żądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces transformacji szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
+A *szablonu tekstowego**hosta* zapewnia środowisko, które umożliwia *aparat przekształcania szablonu tekstowego* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* wymagające pliku lub zestawu mogą żądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces transformacji szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
   
  Jeśli chcesz użyć może zapisywać hosta niestandardowego *transformacji szablonu tekstowego* funkcje poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub jeśli chcesz zintegrować te funkcje narzędzi niestandardowych. Aby utworzyć niestandardowe hosta, należy utworzyć klasę, która dziedziczy <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentację poszczególnych metod, zobacz <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

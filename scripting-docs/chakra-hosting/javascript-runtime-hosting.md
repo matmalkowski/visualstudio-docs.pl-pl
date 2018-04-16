@@ -1,14 +1,14 @@
 ---
-title: "Hostowanie środowiska uruchomieniowego JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Hostowanie środowiska uruchomieniowego JavaScript | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

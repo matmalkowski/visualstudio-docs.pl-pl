@@ -1,14 +1,14 @@
 ---
-title: "Hostowanie środowiska uruchomieniowego JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Hostowanie środowiska uruchomieniowego JavaScript | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -70,11 +70,11 @@ Interfejsy API środowiska wykonawczego języka JavaScript (JsRT) zapewniają sp
 ## <a name="debugging-and-profiling"></a>Debugowanie i profilowania  
  Interfejsy API JsRT obsługuje debugowanie i profilowania za pomocą technologii wykonywanie aktywnych skryptów.  
   
- Począwszy od systemu Windows 10, aparat JavaScript Chakra obsługuje starszego aparatu i aparat krawędzi, a można wskazać w JsRT (zobacz [krawędzi przeznaczonych dla wersji programu vs. Starsze aparaty](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) szczegółowe informacje). Debugowanie skryptów w programie Visual Studio zmieniło między aparatu Edge i starszych. Z starszego aparatu, host musi podać [interfejs IDebugApplication](../winscript/reference/idebugapplication-interface.md) wskaźnika, który można uzyskać z [interfejs IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) wystąpienia. Z aparatem krawędzi `IDebugApplication` jest przestarzały i Chakra aparat natywny umożliwia i wykonywanie skryptów możliwości debugowania za pomocą debugera programu Visual Studio bez konieczności stosowania `IDebugApplication` od użytkownika.  
+ Począwszy od systemu Windows 10, aparat JavaScript Chakra obsługuje starszego aparatu i aparat krawędzi, a można wskazać w JsRT (zobacz [krawędzi przeznaczonych dla wersji programu vs. Starsze aparaty](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) szczegółowe informacje). Debugowanie skryptów w programie Visual Studio zmieniło między aparatu Microsoft Edge i starszych. Z starszego aparatu, host musi podać [interfejs IDebugApplication](../winscript/reference/idebugapplication-interface.md) wskaźnika, który można uzyskać z [interfejs IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) wystąpienia. Z aparatem krawędzi `IDebugApplication` jest przestarzały i Chakra aparat natywny umożliwia i wykonywanie skryptów możliwości debugowania za pomocą debugera programu Visual Studio bez konieczności stosowania `IDebugApplication` od użytkownika.  
   
  Aby wprowadzić możliwością debugowania skryptów w kontekście wykonywania, aparat Chakra ma rozpocząć korzystanie z mniej wydajne metody wykonywania kodu. Tak możliwością debugowania kodu zwykle działa wolniej niż bez możliwością debugowania kodu. W związku z tym ze starszego aparatu hosta mogą być uruchom debugowanie w kontekście wykonywania od samego początku, zapewniając `IDebugApplication` wskaźnik do góry `JsCreateContext`, lub można poczekać na debugowanie jest potrzebne, a następnie wywołać `JsStartDebugging`. Z aparatem krawędzi `JsCreateContext` nie przyjmuje `IDebugApplication` parametru, i w związku z tym skrypt jest możliwością debugowania tylko po `JsStartDebugging` jest wywoływana. Podczas debugowania za pomocą programu Visual Studio, musi być włączona opcja debugera "Skrypt".  
   
- W jednym z dwóch sposobów można sprofilować kodu JavaScript w kontekstu wykonywania. W wierszu polecenia programu Visual Studio profilera (vsperf.exe) może służyć w Windows 8.1 i nowszych wersjach z przełącznikiem /js, aby wygenerować raport, którego element docelowy uruchomienia kodu JavaScript w aplikacji. Lub host może bezpośrednio wywoływać `JsStartProfiling` i `JsStopProfiling` i podaj wywołania zwrotnego w celu profilowania samej siebie. Hosta można także sprawdzić stan pamięci sterty zebranych przez wywołanie metody `JsEnumerateHeap`. Profilowanie w JsRT działa w taki sam sposób między aparatu Edge i starszych. Jednakże, profilowanie API JsRT (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`, i `JsIsEnumeratingHeap`) nie są dostępne dla uniwersalnych aplikacji systemu Windows.  
+ W jednym z dwóch sposobów można sprofilować kodu JavaScript w kontekstu wykonywania. W wierszu polecenia programu Visual Studio profilera (vsperf.exe) może służyć w Windows 8.1 i nowszych wersjach z przełącznikiem /js, aby wygenerować raport, którego element docelowy uruchomienia kodu JavaScript w aplikacji. Lub host może bezpośrednio wywoływać `JsStartProfiling` i `JsStopProfiling` i podaj wywołania zwrotnego w celu profilowania samej siebie. Hosta można także sprawdzić stan pamięci sterty zebranych przez wywołanie metody `JsEnumerateHeap`. Profilowanie w JsRT działa w taki sam sposób między aparatu Microsoft Edge i starszych. Jednakże, profilowanie API JsRT (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`, i `JsIsEnumeratingHeap`) nie są dostępne dla uniwersalnych aplikacji systemu Windows.  
   
 <a name="Windows"></a>   
 ## <a name="jsrt-and-the-universal-windows-platform"></a>Platforma uniwersalna systemu Windows i JsRT  

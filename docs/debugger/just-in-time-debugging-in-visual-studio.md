@@ -1,24 +1,26 @@
 ---
 title: 'Porady: odpowiadanie na debuger Just In Time | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 05/23/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/22/2017
 ---
@@ -36,7 +38,7 @@ Możesz wykonać czynności, aby zapobiec Just in Time wyświetlaniu — okno di
 
 1. (Aplikacje sieci web) Jeśli próbujesz uruchomić aplikacji sieci web, możesz wyłączyć debugowanie skryptu.
 
-    Dla programu Internet Explorer lub Edge Wyłącz debugowanie skryptu w oknie dialogowym Opcje internetowe. Można uzyskać dostępu do tych ustawień od **Panelu sterowania** > **sieć i Internet** > **Opcje internetowe** (kroki szczegółowe zależą od użytkownika wersja systemu Windows i przeglądarka).
+    Dla programu Internet Explorer lub Microsoft Edge Wyłącz debugowanie skryptu w oknie dialogowym Opcje internetowe. Można uzyskać dostępu do tych ustawień od **Panelu sterowania** > **sieć i Internet** > **Opcje internetowe** (kroki szczegółowe zależą od użytkownika wersja systemu Windows i przeglądarka).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
