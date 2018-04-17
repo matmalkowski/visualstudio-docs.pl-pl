@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3f92c898b6eb8ba0f143e0a2069e35c70cc6e6b2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d748ef190ef60de5ae7f7300051bb1b524462d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu Outlook
-  W tym przewodniku przedstawiono sposób tworzenia dodatku VSTO dla programu Microsoft Office Outlook. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, która jest otwarta elementu programu Outlook. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  W tym przewodniku przedstawiono sposób tworzenia dodatku VSTO dla programu Microsoft Office Outlook. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, która jest otwarta elementu programu Outlook. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Kliknij przycisk **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Tworzy **FirstOutlookAddIn** projektu i otwiera **thisaddin —** pliku kodu w edytorze.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstOutlookAddIn** projektu i otwiera **thisaddin —** pliku kodu w edytorze.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-mail-message"></a>Pisanie kodu, który dodaje tekst do każdego nową wiadomość E-mail  
  Następnie dodaj kod do klasy ThisAddIn pliku kodu. Nowy kod używa modelu obiektów programu Outlook można dodać tekstu do każdego nową wiadomość e-mail. Domyślnie plik kodu klasy ThisAddIn zawiera następujące wygenerowanego kodu:  

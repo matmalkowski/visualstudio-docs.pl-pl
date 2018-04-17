@@ -1,12 +1,10 @@
 ---
-title: "Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 Dowiedz się, jak utworzyć Instalatora systemu Windows dla rozwiązań pakietu Office przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -225,7 +224,7 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
   
 4. W programie Notatnik, Zastąp tekst **swój identyfikator GUID tu** przez wklejenie identyfikator GUID w jego miejscu.  
   
-    **&lt;Właściwości&gt;**  element pliku jest podobny do następującego.  
+   **&lt;Właściwości&gt;** element pliku jest podobny do następującego.  
   
   
    ```xml  
@@ -237,7 +236,7 @@ W konfiguracji aplikacji musi zawierać nie tylko następujące składniki, ale 
   
 6. W **Zapisz jako** okno dialogowe, przejdź do Twojej **pulpitu** folderu.  
   
-7. W **Zapisz jako typ** wybierz **wszystkie pliki (&#42;. &#42;)**.  
+7. W **Zapisz jako typ** wybierz **wszystkie pliki (&#42;.&#42;)** .  
   
 8. W **nazwę pliku** wprowadź **programu Visual Studio 2010 Tools dla pakietu Office Runtime.prq**, a następnie wybierz pozycję **zapisać** przycisku.  
   
@@ -360,7 +359,7 @@ Instalacje użytkownika wymagają tylko jeden Instalator niezależnie od wersji 
   
 |Typ wartości<br /><br />|Nazwa<br /><br />|  
 |--------------|--------|  
-|Wartość ciągu<br /><br />|**FriendlyName**<br /><br />|  
+|Wartość ciągu<br /><br />|**friendlyName**<br /><br />|  
 |Wartość DWORD<br /><br />|**LoadBehavior**<br /><br />|  
 |Wartość ciągu<br /><br />|**Manifest**<br /><br />|  
   
@@ -491,7 +490,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
 13. Otwórz plik projektu rozwiązania w Notatniku. Projekty Visual Basic nazwa pliku jest ExcelWorkbook.vbproj. Dla projektów C# nazwa pliku jest ExcelWorkbook.csproj.  
   
-14. W pliku projektu, wyszukaj  **&lt;SolutionID&gt;**  elementu, skopiuj wartość do Schowka, a następnie zamknij Notatnik.  
+14. W pliku projektu, wyszukaj **&lt;SolutionID&gt;** elementu, skopiuj wartość do Schowka, a następnie zamknij Notatnik.  
   
    Tę wartość należy przekazać do aplikacji konsoli jako parametr.  
   
@@ -531,7 +530,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
   
 9. Na pasku menu wybierz **kompilacji**, **kompilacji OfficeAddInSetup**.  
   
-   Po zakończeniu kompilacji, można znaleźć pliku setup.exe z **OfficeAddInSetup** projektu w następującej lokalizacji: *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   Po zakończeniu kompilacji, można znaleźć pliku setup.exe z **OfficeAddInSetup** projektu w następującej lokalizacji: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\Express\SingleImage\DiskImages\ DYSK 1\**  
   
   
 ## <a name="see-also"></a>Zobacz też  

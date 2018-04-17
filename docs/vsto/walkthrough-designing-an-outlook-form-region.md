@@ -1,13 +1,10 @@
 ---
-title: "Wskazówki: Projektowanie regionów formularzy programu Outlook | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Projektowanie regionów formularzy programu Outlook | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Wskazówki: projektowanie regionów formularzy programu Outlook
   Regiony formularzy niestandardowe rozszerzenie standardowych lub niestandardowych formularzy programu Microsoft Office Outlook. W tym przewodniku projektowania regionów formularzy niestandardowych wyświetlany jako nową stronę w oknie inspektora w elemencie kontaktu. Ten region formularza wyświetla mapy każdego adresu, który znajduje się kontaktu, wysyłając informacje o adresach do systemu Windows Live lokalnego wyszukiwania witryny internetowej. Aby uzyskać informacje na temat regionów formularzy, zobacz [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -49,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)]lub [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
  ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") wersję wideo tego tematu, zobacz [wideo sposobu: Projektowanie regionów formularzy programu Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   

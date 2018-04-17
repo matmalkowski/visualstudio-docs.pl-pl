@@ -1,13 +1,10 @@
 ---
-title: "Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Rozwiązywanie problemów z błędami w rozwiązaniach pakietu Office
   Podczas wykonywania następujących zadań, podczas opracowywania rozwiązań pakietu Office w Visual Studio, mogą wystąpić problemy:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Debugowanie projektów](#debugging)  
   
-##  <a name="creating"></a>Tworzenie, uaktualnianie i otwierania projektów  
+##  <a name="creating"></a> Tworzenie, uaktualnianie i otwierania projektów  
  Mogą wystąpić następujące błędy podczas tworzenia lub otwierania projektów pakietu Office.  
   
 ### <a name="the-project-cannot-be-created"></a>Nie można utworzyć projektu  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Po zakończeniu uaktualniania projektu, można odinstalować programu Visual Studio 2005 Tools for Office Runtime drugi w wersji z na komputerze deweloperskim, jeśli nie jest on używany przez innych rozwiązań pakietu Office.  
   
-##  <a name="designers"></a>Przy użyciu projektantów  
+##  <a name="designers"></a> Przy użyciu projektantów  
  Mogą wystąpić następujące błędy podczas pracy z dokumentu, skoroszytu lub projektanta arkusza w projektach na poziomie dokumentu.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Projektant nie można poprawnie załadować  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Polecenie grafikę klip INSERT nie działa w projektancie programu Visual Studio  
  Gdy programu Excel lub Word jest otwarty w projektancie programu Visual Studio, klikając pozycję **grafikę klip** znajdującego się na **ilustracje** nie można otworzyć kartę na wstążce **grafikę klip** okienka zadań. Aby dodać klip grafik, musi otworzyć kopię skoroszytu lub dokument, który znajduje się w folderze głównym projektu (nie kopii, która znajduje się w folderze \bin) poza Visual Studio, należy dodać ten element klip, a następnie zapisz skoroszytu lub dokumentu.  
   
-##  <a name="code"></a>Pisanie kodu  
+##  <a name="code"></a> Pisanie kodu  
  Mogą wystąpić następujące błędy podczas pisania kodu w projektach pakietu Office.  
   
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Niektóre zdarzenia obiektów pakietu Office nie są dostępne przy użyciu języka C#  
@@ -128,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji na temat interfejsów zdarzeń w PIAs pakietu Office, zobacz [Przegląd klasy i interfejsy w podstawowe zestawy międzyoperacyjne pakietu Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Nie można odwołać Office PIA klas w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Nie można odwołać Office PIA klas w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  W projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], domyślnie nie zostanie skompilowany kod, który odwołuje się do klasy, która jest zdefiniowana w PIA pakietu Office. Klasy w PIAs zastosować konwencję nazewnictwa *objectname*klas, takich jak <xref:Microsoft.Office.Interop.Word.DocumentClass> i <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Na przykład następujący kod z projektów dodatku VSTO programu Word nie zostanie skompilowany.  
   
 ```vb  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Mimo że zaimportowano Word czy Excel przestrzeni nazw i mają dostęp do wszystkich klas w nim, należy pełnej kwalifikacji wszystkie typy z Word czy Excel, aby usunąć niejednoznaczność przestrzeni nazw.  
   
-##  <a name="building"></a>Tworzenie projektów  
+##  <a name="building"></a> Tworzenie projektów  
  Mogą wystąpić następujące błędy podczas kompilacji projektów pakietu Office.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Nie można utworzyć projektu poziomie dokumentu, który jest oparta na dokumentów z ograniczonymi uprawnieniami  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Błędy kompilatora są wykonywane po usunięciu namedrange — formant  
  Jeśli usuniesz <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu w arkuszu, który nie jest aktywny arkusz w Projektancie automatycznie wygenerowany kod nie może zostać usunięta z projektu i mogą wystąpić błędy kompilatora. Aby upewnić się, kod zostanie usunięty, należy zawsze wybierać arkusz zawierający <xref:Microsoft.Office.Tools.Excel.NamedRange> celu nadania mu aktywnego arkusza przed usunięciem formantu. Automatycznie wygenerowany kod nie zostanie usunięta po usunięciu formantu, może spowodować projektanta, aby usunąć kod aktywacji arkusza i wprowadzenie zmiany, tak aby arkusz jest oznaczony jako zmodyfikowane. Gdy zostanie ponownie skompilować projekt, kod zostanie usunięty.  
   
-##  <a name="debugging"></a>Debugowanie projektów  
+##  <a name="debugging"></a> Debugowanie projektów  
  Mogą wystąpić następujące błędy podczas debugowania w projektach pakietu Office.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Podczas publikowania i zainstalować na komputerze dewelopera rozwiązanie zostanie wyświetlony monit, aby odinstalować  

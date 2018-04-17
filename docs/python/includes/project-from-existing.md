@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 5423ccf6f441c5eca61e7994c2579e6dc068a38f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/16/2018
+---
 1. Uruchom program Visual Studio i wybierz **Plik > Nowy > Projekt**.
 
 1. W **nowy projekt** okno dialogowe, wyszukaj "Python", wybierz szablon "Z kodu Python istniejące", nadaj projektu, nazwy i lokalizacji, a następnie wybierz **OK**.

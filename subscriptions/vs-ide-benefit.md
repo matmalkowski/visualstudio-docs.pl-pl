@@ -1,60 +1,31 @@
 ---
-title: "Visual Studio IDE korzyści w subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/9/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to download and install the Visual Studio IDE included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: c1c7aba590d11e532b471c274e976faa21972cca
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio IDE korzyści w subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/09/2018
+ms.topic: Get-Started-Article
+description: Dowiedz się, jak pobrać i zainstalować Visual Studio IDE uwzględnione w ramach subskrypcji programu Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 678da5c2727e69e3a9f4da7c8f692f082c485e8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Za pomocą programu Visual Studio 2017 korzyści
 
-## <a name="overview"></a>Omówienie 
+Jako subskrybent Visual Studio masz dostęp do środowiska IDE programu Visual Studio.  Określonej wersji zależy od poziomu subskrypcji.  Korzyści będą wyświetlane jako Kafelek w kategorii narzędzi na [korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) strony portal subskrybenta.  
 
-Jako subskrybent Visual Studio masz dostęp do środowiska IDE programu Visual Studio.  Określonej wersji zależy od poziomu subskrypcji.  Korzyści będą wyświetlane jako Kafelek w kategorii narzędzi na [korzyści](https://my.visualstudio.com/benefits) strony portal subskrybenta.  
-
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                                  | Korzyść                            | Odnawialnymi?                                |
-|-------------------------------------------------------------------------------|------------------------------------|-------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Visual Studio Enterprise           | Tak                                       |
-| Visual Studio Enterprise annual                                               | Visual Studio Enterprise           | Tak                                       |
-| Visual co miesiąc Studio Enterprise                                              | Visual Studio Enterprise           | Tak                                       |
-| Visual Studio Professional Standard                                           | Visual Studio Professional         | Tak                                       |
-| Program Visual Studio Professional roczne                                             | Visual Studio Professional         | Tak                                       | 
-| Visual co miesiąc Studio Professional                                            | Visual Studio Professional         | Tak                                       |
-| Visual Studio Test Pro                                                        | Visual Studio Test Professional    | Tak                                       |
-| Platformy MSDN                                                                | Niedostępne                      |                                           |
-| Visual Studio Dev Essentials                                                  | Visual Studio Community            | Tak                                       |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               |Visual Studio Enterprise           | Tak                                       |
-| Visual Studio Enterprise - FTE                                                | Visual Studio Enterprise           | Tak                                       |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Visual Studio Enterprise           | Tak                                       |
-| Visual Studio Professional — sieci Microsoft Partner Network                        | Visual Studio Professional         | Tak                                       |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                                 | Visual Studio Professional         | Tak                                       |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Visual Studio Enterprise           | Tak                                       |
-| Visual Studio Enterprise – BizSpark                                           | Visual Studio Enterprise           | Tak                                       |
-| Microsoft Certified Trainer — oprogramowanie i usługi                             | Niedostępne                      |                                           |
-| Microsoft Certified Trainer — deweloperów usług & oprogramowania                   | Visual Studio Enterprise           | Tak                                       |
-
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
-
-(Visual Studio Enterprise, będzie można używać w tym przykładzie). 
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 
 *(Visual Studio Enterprise jest używany w tym przykładzie).*
 
 Aby pobrać IDE:
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs). 
+1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs). 
 2. Znajdź Kafelek programu Visual Studio IDE w sekcji narzędzia, a następnie kliknij polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.  Można również pobrać ją z [pobiera](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) strony. 
 
     ![Visual Studio Enterprise kafelka](_img\vs-ide-experience\vs-ide-tile.png)
@@ -85,8 +56,20 @@ Aby pobrać IDE:
 
     ![Rozpoczynanie korzystania z programu Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
 
-## <a name="faq"></a>Najczęściej zadawane pytania
-*Wyszukaj aktualizacje w tym miejscu*
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne chmury, miesięczne chmury)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | Dostępne       |  Tak          |
+| Program Visual Studio Professional (standardowy, roczne chmury, miesięczne chmury) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Dostępne                                             |  Tak         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Niedostępne                                              |  Brak          |
+| Visual Studio Dev Essentials | Brak  | Visual Studio Community |Tak |
+
+<sup>1</sup>*obejmuje: nie dla Wyobraź sobie odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, Microsoft o wartościach partnera (MVP) dyrektor Region (RD).    Wyklucza: MCT oprogramowania i usług.*
+
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Pomoc programu Visual Studio IDE, zapoznaj się z tych zasobów, należy:

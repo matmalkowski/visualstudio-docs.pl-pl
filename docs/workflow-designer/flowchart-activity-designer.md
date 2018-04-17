@@ -1,5 +1,5 @@
 ---
-title: "Schemat blokowy działania projektanta | Dokumentacja firmy Microsoft"
+title: Schemat blokowy działania projektanta | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd8875fe9215f3ee8f0f187b84c0d38833764e3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flowchart-activity-designer"></a>Schemat blokowy Projektant działań
 <xref:System.Activities.Statements.Flowchart> To działanie służy do tworzenia przepływów pracy, zdefiniuj i zarządzać związanymi z formantów złożonych przepływu. A <xref:System.Activities.Statements.Flowchart> można tworzyć w kodzie lub za pomocą [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Ten temat dokumenty [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] wystąpić. Projektant działań przepływu pracy projektanta przepływów pracy systemu Windows umożliwia deweloperom tworzyć przepływy pracy w sposób fizycznych.
@@ -44,5 +44,5 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>Zobacz także
 
 - [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)
-- [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
+- [Elementu FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
 - [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

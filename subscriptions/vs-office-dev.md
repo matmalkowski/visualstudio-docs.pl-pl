@@ -1,57 +1,32 @@
 ---
-title: "Korzyści dla deweloperów usługi Office 365 w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 11/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Office 365 Developer benefit included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 24d43f71aec3be05809fe79085cd7710f47f99ca
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Korzyści dla deweloperów usługi Office 365 w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 11/12/2018
+ms.topic: Get-Started-Article
+description: Więcej informacji na temat korzyści Office 365 Developer uwzględnione w ramach subskrypcji programu Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści subskrypcji dewelopera usługi Office 365 w ramach subskrypcji programu Visual Studio
-
-## <a name="overview"></a>Omówienie
+# <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Office 365 Developer korzyści subskrypcji w ramach subskrypcji programu Visual Studio
 
 Subskrybenci z wybranych subskrypcji Visual Studio Enterprise skorzystają subskrypcji dewelopera usługi Office 365.  Subskrypcji dewelopera Office 365 umożliwia tworzenie, testowania i wdrażania dodatków dla programu Microsoft Office i Microsoft SharePoint.  Świadczenie umożliwia dla jednego dzierżawcy i maksymalnie 25 użytkowników.
 
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                                  | Korzyść               | Odnawialnymi?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Włączone              |  Tak                                                               |
-| Visual Studio Enterprise annual                                               | Włączone              |  Tak                                                               |
-| Visual co miesiąc Studio Enterprise                                              | Niedostępne         |                                                                    |
-| Visual Studio Professional Standard                                           | Niedostępne         |                                                                    |
-| Program Visual Studio Professional roczne                                             | Niedostępne         |                                                                    | 
-| Visual co miesiąc Studio Professional                                            | Niedostępne         |                                                                    |
-| Visual Studio Test Pro                                                        | Niedostępne         |                                                                    |
-| Platformy MSDN                                                                | Niedostępne         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Włączone              |  Tak                                                               |
-| Visual Studio Enterprise - FTE                                                | Włączone              |  Tak                                                               |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Niedostępne         |                                                                    |
-| Visual Studio Professional — sieci Microsoft Partner Network                        | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                                 | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Włączone              |  Tak                                                               |
-| Microsoft Certified Trainer — oprogramowanie i usługi                             | Włączone              |  Tak                                                               |
-| Microsoft Certified Trainer — deweloperów usług & oprogramowania                   | Włączone              |  Tak                                                               |
-
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
-
 ## <a name="activation-steps"></a>Kroki aktywacji
 
-1. Odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) logować się do portalu subskrybenta.
+1. Odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) logować się do portalu subskrybenta.
+
 2. W zależności od Twojego konta nastąpi albo przekierowanie do strony logowania organizacji lub Account Microsoft strony logowania.   W obu przypadkach wprowadź nazwę użytkownika i hasło, a następnie kliknij przycisk **dalej**.
+
 3. Po ukończeniu procesu logowania powinna zostać wyświetlona strona korzyści z subskrypcji.  Jeśli masz więcej niż jedną subskrypcję, można przełączać się między subskrypcjami, klikając strzałkę listy rozwijanej w górnym prawym rogu poniżej Wstążki czarny.  Na kafelku korzyści subskrypcji dewelopera usługi Office 365 znajduje się w kategorii narzędzi.  Przewiń do momentu wyświetlenia na kafelku pakietu Office za pomocą strzałki po prawej stronie wiersza Kafelki. 
+
 4. W sekcji narzędzia Znajdź Kafelek subskrypcji dewelopera usługi Office 365.  Polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.   Po pobraniu kodu kliknij **Aktywuj**. 
 
     ![Kafelek korzyści deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
@@ -60,17 +35,13 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://m
 
     ![Konto deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-
 6.  Podaj wymagane informacje o którym będzie można za pomocą subskrypcji i kliknij przycisk **dalej**.  Informacje są używane do określenia dostępność subskrypcji i wszelkich podatków.  
 
     ![Informacje kontaktowe deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-
-
 7.  Utwórz nazwę użytkownika i hasło dla swojego konta.  
 
     ![Nazwa użytkownika deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-username-cropped.png)
-
 
 8.  Podaj numer telefonu i zdecyduj, czy chcesz otrzymać kod potwierdzenia, za pośrednictwem telefonu lub tekst.  Ułatwia to nam upewnić się, że konto jest tworzone przez prawdziwa osoba. Wprowadź kod odbierania i kliknij przycisk **dalej**.
 
@@ -82,22 +53,36 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://m
 
 11. W finalizowanie "Krok 3", użytkownik zostanie poproszony o wybranie "Formy płatności".  Dostępne są dwie opcje płatności.  Pierwsza opcja byłoby dodać **karty kredytowej** (jak wyświetlane poniżej), i drugą opcją jest **faktury**.  W obu przypadkach kolejności 0,00 jest przesyłany przez kliknięcie przycisku **złóż zamówienie**.   
 
-> [!NOTE]
-> Dla subskrybentów, którzy nie chcą podać dane karty kredytowej, wybierz **faktury** formy płatności.  Możesz też wybrać **płacić za roku** ograniczenie odbieranie faktury raz na rok.
+    > [!NOTE]
+    > Dla subskrybentów, którzy nie chcą podać dane karty kredytowej, wybierz **faktury** formy płatności.  Możesz też wybrać **płacić za roku** ograniczenie odbieranie faktury raz na rok.
 
 12. W tym momencie pomyślnie zostały zrealizowane korzyści z subskrypcji dewelopera usługi Office 365.  Zostanie wyświetlona strona potwierdzenia zamówienia.  Strona będzie udostępniać link do [strony logowania](https://portal.office.com "strony logowania usługi Office 365").  Zaleca się tworzenie zakładek dla strony do późniejszego użycia.  Należy również zarejestrować identyfikator użytkownika wyświetlany na stronie.  (Również otrzymasz powitalnej wiadomości e-mail na adres e-mail podany podczas konfigurowania konta).  Kliknij przycisk **uruchamiania Instalatora** aby kontynuować.  
 
     ![Potwierdzić zamówienia deweloperów świadczenia usługi Office 365](_img\vs-office-dev\vs-office-dev-confirm.png)
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | Włączone      |  Tak          |
+| Program Visual Studio Professional (standardowy, roczne w chmurze) | VL, Azure, Retail                                       | Niedostępne                                                            |NA         |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Niedostępne                                             |  NA         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Niedostępne                                              | NA         |
+| Visual Studio Dev Essentials | NA  | Niedostępne |NA |
+| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT oprogramowania i deweloperów usług, MCT oprogramowania i usług.    Wyklucza: Sieci Microsoft Partner Network (MPN), załóżmy, partnera firmy Microsoft ważnych (MVP) dyrektor Region (RD).*
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 ### <a name="q--how-do-i-set-up-my-office-365-developer-subscription-once-its-been-activated"></a>Pytanie: jak skonfigurować subskrypcję pakietu Office 365 Developer po jej aktywowaniu?
 Odpowiedź: Definiowanie korzyści z subskrypcji dla Office 365 Developer
 
-1. Aby skonfigurować korzyści z subskrypcji dewelopera usługi Office 365, możesz uruchomić ze strony "Dziękujemy za złożenie zamówienia", lub zaloguj się do portalu usługi Office, odwiedzając [https://portal.office.com](https://portal.office.com) w późniejszym czasie.  W takim przypadku Wybraliśmy **uruchamianie Instalatora** po stronie potwierdzenia.
+1. Aby skonfigurować korzyści z subskrypcji dewelopera usługi Office 365, możesz uruchomić ze strony "Dziękujemy za złożenie zamówienia", lub zaloguj się do portalu usługi Office, odwiedzając [ https://portal.office.com ](https://portal.office.com) w późniejszym czasie.  W takim przypadku Wybraliśmy **uruchamianie Instalatora** po stronie potwierdzenia.
 
-> [!NOTE]
-> Aby zalogować się do https://portal.office.com, należy użyć nowego pakietu Office 365 Developer subskrypcji identyfikator użytkownika utworzonego w kroku 7 powyżej.
+    > [!NOTE]
+    > Aby zalogować się do https://portal.office.com, będą musieli używać nowego pakietu Office 365 Developer subskrypcji identyfikator użytkownika utworzonego w kroku 7 powyżej.
 
 2. Po kliknięciu przycisku **uruchamianie Instalatora**, "Krok 1" poprosi połączenia do istniejącej domeny już następującą, lub aby kontynuować przy użyciu Instalatora dzierżawy podczas procesu realizacji.  W poniższym przykładzie postanowiliśmy zostały kontynuować korzystanie z naszego appsbyjane2017.onmicrosoft.com"domeny.
 
@@ -130,10 +115,10 @@ Odpowiedź: Definiowanie korzyści z subskrypcji dla Office 365 Developer
 ### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>Pytanie: jak zaktualizować liczby użytkowników z portalu administratora usługi Office 365?
 Odpowiedź: W przypadku, gdy nie przypisać wymaganą liczbę użytkowników podczas procesu realizacji i zwiększyć ten numer w późniejszym czasie, wykonaj poniższe kroki. 
 
-1. Aby zwiększyć liczbę użytkowników, po ukończeniu procesu realizacji, należy odwiedzić [https://portal.office.com](https://portal.office.com) i zaloguj się przy użyciu "Identyfikator użytkownika" utworzone podczas tworzenia dzierżawy.
+1. Aby zwiększyć liczbę użytkowników, po ukończeniu procesu realizacji, należy odwiedzić [ https://portal.office.com ](https://portal.office.com) i zaloguj się przy użyciu "Identyfikator użytkownika" utworzone podczas tworzenia dzierżawy.
 
-> [!NOTE]
-> Jeśli masz problem ze znalezieniem swojego konta w informacjach, Szukaj w "Potwierdzenie zamówienia" poczty e-mail wysyłanych z "Zespołu Microsoft Online Service" z tematem "potwierdzenie zamówienia: Dziękujemy za zakupu".  Alternatywnie można także przeszukać skrzynki odbiorczej, "treść: (Office 365 Enterprise E3 deweloperów MSDN)".
+    > [!NOTE]
+    > Jeśli masz problem ze znalezieniem swojego konta w informacjach, Szukaj w "Potwierdzenie zamówienia" poczty e-mail wysyłanych z "Zespołu Microsoft Online Service" z tematem "potwierdzenie zamówienia: Dziękujemy za zakupu".  Alternatywnie można także przeszukać skrzynki odbiorczej, "treść: (Office 365 Enterprise E3 deweloperów MSDN)".
 
 2. Po pomyślnym zalogowaniu, wybierz **Admin** kafelka. Nastąpi przekierowanie do Centrum"Admin".
 
@@ -145,8 +130,8 @@ Odpowiedź: W przypadku, gdy nie przypisać wymaganą liczbę użytkowników pod
 
 6. Wartość "Zakupu" jak wskazano na stronie "Subskrypcji" powinna teraz pasuje do wartości przesłane.
 
-> [!NOTE]
-> Przekracza wartość 25 "Całkowita liczba użytkowników" spowoduje błąd.
+    > [!NOTE]
+    > Przekracza wartość 25 "Całkowita liczba użytkowników" spowoduje błąd.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy w ramach subskrypcji pakietu Office Developer? Zapoznaj się z [obsługuje](https://developer.microsoft.com/office/support) zasobów na [Centrum deweloperów pakietu Office](https://developer.microsoft.com/office).

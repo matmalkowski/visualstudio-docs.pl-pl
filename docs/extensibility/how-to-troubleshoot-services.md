@@ -1,27 +1,23 @@
 ---
-title: "Porady: Rozwiązywanie problemów z usługami | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Rozwiązywanie problemów z usługami | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9efe3c1c7032f1db41272a03cf689e015a79522
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-troubleshoot-services"></a>Porady: Rozwiązywanie problemów z usługami
 Istnieje kilka typowych problemów, które mogą wystąpić podczas próby pobrania usługi:  
@@ -62,7 +58,7 @@ if (log == null) return;
   
     2.  Żaden identyfikator GUID nie zostały wyraźnie przypisane do interfejsu. W związku z tym system tworzy domyślny identyfikator GUID dla obiekt zgodnie z potrzebami.  
   
-3.  Upewnij się, że pakiet VSPackage, żądanie usługi zostały zlokalizowane. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Lokacje pakiet VSPackage, po jego konstruowanie i przed wywołaniem <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3.  Upewnij się, że pakiet VSPackage, żądanie usługi zostały zlokalizowane. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Lokacje pakiet VSPackage, po jego konstruowanie i przed wywołaniem <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Jeśli w Konstruktorze pakiet VSPackage, który wymaga usługi kodu, przenieś go do metody Initialize.  
   

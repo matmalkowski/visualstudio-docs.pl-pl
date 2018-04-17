@@ -1,18 +1,18 @@
 ---
-title: "Stan projektantów działań komputera | Dokumentacja firmy Microsoft"
+title: Stan projektantów działań komputera | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e93ba35830f3b0c08ea7957ab3fbcb6ea254a7a1
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bde93d8ac1907accf4f7d14da186aa43ccb169a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="state-machine-activity-designers"></a>Projektanci działań automatu stanów
 Projektant przepływu pracy systemu Windows zawiera szereg projektantów działań, których można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera projektantów działań dostarczane przez system, używany do tworzenia i Zarządzaj przepływami pracy komputera stanu. Poniższe tematy opisują te projektantów i zawierają wskazówki dotyczące sposobu ich używania.

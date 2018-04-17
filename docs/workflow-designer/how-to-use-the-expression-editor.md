@@ -1,5 +1,5 @@
 ---
-title: "Porady: używanie edytora wyrażeń | Dokumentacja firmy Microsoft"
+title: 'Porady: używanie edytora wyrażeń | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be43ad439c8868064fc7e0bab79e051abb991e0d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Porady: używanie edytora wyrażeń
 Edytor wyrażeń jest formant projektanta przepływów pracy systemu Windows, który jest używany w wielu działań przepływu pracy jako sposób wprowadzania i oceny tych wyrażeń. Edytor wyrażeń zapewnia pełni funkcjonalnymi IDE, edytowania IntelliSense, w tym kolorowania, ParamInfo, zygzaki sygnalizujące błędy, między innymi funkcjami. Po jego wprowadzeniu, kompilator sprawdza wyrażenie. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlony ikony błędu. Można również otworzyć edytora jako **edytora wyrażeń** okno dialogowe.

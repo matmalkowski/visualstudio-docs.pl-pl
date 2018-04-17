@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio Tools for Office Runtime ― Przegląd | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Visual Studio Tools for Office Runtime ― Przegląd | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f357e593c7fe1e3dc5e4803b93ac515911ed9f75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools dla pakietu Office Runtime ― Przegląd
   Do uruchamiania rozwiązań, które są tworzone za pomocą narzędzia Microsoft Office developer tools w programie Visual Studio, Visual Studio 2010 Tools for Office Runtime musi być zainstalowany na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie narzędzi Visual Studio Tools dla pakietu Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Oprogramowanie to zawiera dwa główne składniki:  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
  Środowisko uruchomieniowe można zainstalować na kilka różnych sposobów. Składniki środowiska dodawane podczas jego instalacji zależą od konfiguracji komputera. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
-##  <a name="officeextensions"></a>Opis rozszerzenia pakietu Office dla programu .NET Framework  
+##  <a name="officeextensions"></a> Opis rozszerzenia pakietu Office dla programu .NET Framework  
  Visual Studio 2010 Tools for Office Runtime obejmują rozszerzenia pakietu Office dla programu .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i nowszych. Rozwiązania przeznaczone dla poszczególnych wersji środowiska .NET Framework używają rozszerzeń odpowiednich dla danej wersji.  
   
  Rozszerzenia te składają się z zestawów, przy użyciu których rozwiązania automatyzują aplikacje pakietu Office i poszerzają ich funkcjonalność. Podczas tworzenia projektu pakietu Office program Visual Studio automatycznie dodaje odwołania do zestawów używanych dla typu projektu oraz docelowego środowiska .NET Framework projektu. Aby uzyskać więcej informacji na temat zestawów w rozszerzenia pakietu Office, zobacz [zestawy w Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  Wprowadzenie tej zmiany spowoduje, że informacje o typie dla wszystkich typów środowisk uruchomieniowych używanych w projekcie zostaną podczas kompilowania projektu osadzane w zestawie rozwiązania. W czasie wykonywania rozwiązanie będzie używać tych osadzonych informacji o typach, a nie informacji z zestawów, do których prowadzą odwołania.  
   
-##  <a name="UnmanagedLoader"></a>Opis modułu ładującego rozwiązań pakietu Office  
+##  <a name="UnmanagedLoader"></a> Opis modułu ładującego rozwiązań pakietu Office  
  Visual Studio Tools for Office runtime obejmuje kilka niezarządzanych bibliotek DLL, korzystających z aplikacji pakietu Office można załadować środowiska uruchomieniowego i rozwiązań pakietu Office. Nigdy nie powinna zajść konieczność bezpośredniej pracy z tymi bibliotekami, jednak wiedza o ich przeznaczeniu może pomóc lepiej zrozumieć architekturę rozwiązań opartych na pakiecie Office.  
   
  Aby uzyskać informacje o tych składników używanych podczas procesu obciążenia, zobacz [architektura poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md) i [architektura VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
  VSTOLoader.dll powoduje także kilka kwestii, które są specyficzne dla dodatków VSTO:  
   
--   Implementuje <xref:Extensibility.IDTExtensibility2> interfejsu. <xref:Extensibility.IDTExtensibility2>jest interfejsem COM, które należy wdrożyć wszystkie dodatki VSTO aplikacji pakietu Microsoft Office. Ten interfejs definiuje metody, które wywołuje aplikację do komunikowania się z dodatku VSTO.  
+-   Implementuje <xref:Extensibility.IDTExtensibility2> interfejsu. <xref:Extensibility.IDTExtensibility2> jest interfejsem COM, które należy wdrożyć wszystkie dodatki VSTO aplikacji pakietu Microsoft Office. Ten interfejs definiuje metody, które wywołuje aplikację do komunikowania się z dodatku VSTO.  
   
 -   Implementuje imanagedaddin — interfejs. Ten interfejs jest używany przez aplikacje pakietu Office, aby ułatwić obciążenia dodatków VSTO. Aby uzyskać więcej informacji, zobacz [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md).  
   

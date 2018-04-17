@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Wyświetlanie niestandardowych okienek zadań z wiadomościami E-Mail w programie Outlook | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Wyświetlanie niestandardowych okienek zadań z wiadomościami E-Mail w programie Outlook | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Wskazówki: wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym przewodniku pokazano, jak wyświetlić unikatowego wystąpienia niestandardowego okienka zadań z każdej wiadomości e-mail, który jest tworzony i otwierany. Użytkownicy, można wyświetlić lub ukryć niestandardowego okienka zadań za pomocą przycisku na Wstążce każdej wiadomości e-mail.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Utwórz **dodatek programu Outlook** projektu o nazwie **OutlookMailItemTaskPane**. Użyj **dodatek programu Outlook** szablonu projektu. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **OutlookMailItemTaskPane** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **OutlookMailItemTaskPane** projektu do **Eksploratora rozwiązań**.  
   
 ## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Projektowanie interfejsu użytkownika niestandardowego okienka zadań  
  Nie jest wizualnego projektanta dla niestandardowych okienek zadań, ale można zaprojektować kontrolkę użytkownika przy użyciu interfejsu użytkownika ma. Niestandardowego okienka zadań w tym dodatku VSTO ma prosty interfejs użytkownika, który zawiera <xref:System.Windows.Forms.TextBox> formantu. W dalszej części tego przewodnika kontrolki użytkownika zostaną dodane do niestandardowego okienka zadań.  

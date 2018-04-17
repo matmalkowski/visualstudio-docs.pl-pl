@@ -1,12 +1,10 @@
 ---
-title: "Porady: dodawanie formantów NamedRange do arkuszy | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dodawanie formantów NamedRange do arkuszy | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ef0ec1846a4ef75200fa6d37f137ca1ab1d70f48
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fff4299b694dacd00d5f32adced3ef5a6a10f1c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Porady: dodawanie formantów NamedRange do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów do arkusza w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu programu Microsoft Office Excel.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów, zobacz [namedrange — formant](../vsto/namedrange-control.md).  
   
-##  <a name="designtime"></a>Dodawanie formantów NamedRange w czasie projektowania  
+##  <a name="designtime"></a> Dodawanie formantów NamedRange w czasie projektowania  
  Istnieje kilka sposobów, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów do arkusza w projektach na poziomie dokumentu w czasie projektowania: z programu Excel w programie Visual Studio **przybornika**i z **źródeł danych** okna.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -76,17 +75,17 @@ ms.lasthandoff: 01/10/2018
   
      Z danymi <xref:Microsoft.Office.Tools.Excel.NamedRange> formant został dodany do arkusza. Aby uzyskać więcej informacji, zobacz [powiązania danych i formularze systemu Windows](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
-##  <a name="runtimedoclevel"></a>Dodawanie formantów NamedRange w czasie wykonywania w projektach na poziomie dokumentu  
+##  <a name="runtimedoclevel"></a> Dodawanie formantów NamedRange w czasie wykonywania w projektach na poziomie dokumentu  
  Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli programowo do arkusza w czasie wykonywania. Dzięki temu można utworzyć kontrolki hosta w odpowiedzi na zdarzenia. Utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z formanty hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Aby programowo dodać formantu NamedRange do arkusza  
   
-1.  W <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obsługi zdarzeń `Sheet1`, Wstaw następujący kod, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1** i ustawić jej <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwości`Hello world!`  
+1.  W <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obsługi zdarzeń `Sheet1`, Wstaw następujący kod, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1** i ustawić jej <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwości `Hello world!`  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
-##  <a name="runtimeaddin"></a>Dodawanie formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO  
+##  <a name="runtimeaddin"></a> Dodawanie formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO  
  Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> programowo sterowania wszystkie otwarte arkusza w projekcie dodatku narzędzi VSTO. Utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z formanty hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Aby programowo dodać formantu NamedRange do arkusza  

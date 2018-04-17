@@ -1,12 +1,10 @@
 ---
 title: Publikowanie kreatora (Office Development w Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office Development w Visual Studio)
   Użyj **Kreator publikowania** Aby skopiować pliki rozwiązania do określonej lokalizacji, Utwórz plik manifestu, a następnie utwórz program instalacyjny.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Ścieżka Universal Naming Convention (UNC), takich jak \\\ServerName\MyApplication\\.  
   
--   Adres URL witryny sieci web, takich jak http://www.microsoft.com/MyApplication.  
+-   Adres URL sieci Web lokacji, takich jak http://www.microsoft.com/MyApplication.  
   
  Domyślnie jest lokalizację publikowania *http://localhost/projectname/* usługi IIS są zainstalowane, czy katalog publish\, jeśli chcesz nie IIS zainstalowana.  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Publikowanie strony, Projektant projektu &#40; programowanie Office w Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Strona publikowania, Projektant projektu &#40;programowanie Office w Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
   
   

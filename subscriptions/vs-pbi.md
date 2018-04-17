@@ -1,54 +1,27 @@
 ---
-title: "Power BI Pro korzyści w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Power BI Pro subscription included with selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: d7470903db579dff7a4bc0fd17a26e6b5494d675
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Power BI Pro korzyści w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Więcej informacji o subskrypcji usługi Power BI Pro, uwzględnionych w wybranych subskrypcjach Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 4f50af635744e9633e09765dd2c1b08876e0b598
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w subskrypcji programu Visual Studio
 
-## <a name="overview"></a>Omówienie
 Przekształć dane w zaawansowane graficzne interpretacje można zbierać i zorganizować. 
-
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                                  | Korzyść               | Odnawialnymi?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Włączone              |  Tak                                                               |
-| Visual Studio Enterprise annual                                               | Włączone              |  Tak                                                               |
-| Visual co miesiąc Studio Enterprise                                              | Niedostępne         |                                                                    |
-| Visual Studio Professional Standard                                           | Niedostępne         |                                                                    |
-| Program Visual Studio Professional roczne                                             | Niedostępne         |                                                                    | 
-| Visual co miesiąc Studio Professional                                            | Niedostępne         |                                                                    |
-| Visual Studio Test Pro                                                        | Niedostępne         |                                                                    |
-| Platformy MSDN                                                                | Włączone              |  Tak                                                               |
-| Visual Studio Dev Essentials                                                  | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Włączone              |  Tak                                                               |
-| Visual Studio Enterprise - FTE                                                | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Niedostępne         |                                                                    |
-| Visual Studio Professional — sieci Microsoft Partner Network                        | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                                 | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Włączone              |  Tak                                                               |
-| Microsoft Certified Trainer — oprogramowanie i usługi                             | Włączone              |  Tak                                                               |
-| Microsoft Certified Trainer — deweloperów usług & oprogramowania                   | Włączone              |  Tak                                                               |
-
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 Aby korzystać z usługi Power BI Pro, musisz skonfigurować konto lub zaloguj się przy użyciu istniejącego konta. 
-1.  Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  W sekcji narzędzi na stronie korzyści Znajdź Kafelek usługi Power BI Pro. Polecenie **Pobierz** łącze w dolnej części fragmentu korzyści.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij przycisk **aktywować**. 
 
@@ -84,7 +57,8 @@ Aby korzystać z usługi Power BI Pro, musisz skonfigurować konto lub zaloguj s
 
 8.  Następna strona zostanie potwierdzić, że cen 0,00 ma subskrypcję Power BI Pro Developer (MSDN).  Kliknij przycisk **Dalej**.
 
-9.   Ponadto będziemy gromadzić pewne informacje dotyczące płatności.  Nie martw się — użytkownik nie zostanie obciążona żadnych czynności.  Zauważ, że cena jest nadal 0,00 USD.  Można wybrać karty kredytowej, konta bankowego lub faktury jako forma płatności.  Jeśli wybierzesz **faktury**, może być konieczne dla niektórych informacji zwrotnych na Dlaczego wolisz tej metody płatności.  Podaj informacje wymagane do formy płatności preferowany i kliknij przycisk **złóż zamówienie**.   
+9.  Ponadto będziemy gromadzić pewne informacje dotyczące płatności.  Nie martw się — użytkownik nie zostanie obciążona żadnych czynności.  Zauważ, że cena jest nadal 0,00 USD.  Można wybrać karty kredytowej, konta bankowego lub faktury jako forma płatności.  Jeśli wybierzesz **faktury**, może być konieczne dla niektórych informacji zwrotnych na Dlaczego wolisz tej metody płatności.  Podaj informacje wymagane do formy płatności preferowany i kliknij przycisk **złóż zamówienie**.  
+
     ![Informacje kontaktowe korzyści Power BI Pro](_img\vs-pbi\vs-pbi-payment-blurred-cropped.png)
 
 10. Następna strona potwierdza, że wszystko jest gotowe do uruchomienia przy użyciu usługi Power BI Pro.  Strona będzie udostępniać link do strony logowania.  Firma Microsoft zaleca rejestrowania łącze do strony logowania, a także swojego identyfikatora użytkownika.  (Również otrzymasz powitalnej wiadomości e-mail na adres e-mail podany podczas konfigurowania konta).  Może również zostać wyświetlony automatycznych okno Asystenta usługi Office 365, którego można użyć, jeśli masz pytania.  Kliknij przycisk **Rozpocznijmy** aby kontynuować.
@@ -94,8 +68,20 @@ Aby korzystać z usługi Power BI Pro, musisz skonfigurować konto lub zaloguj s
 
 11. Teraz, kiedy Twoje konto usługi Power BI Pro jest skonfigurowane, zobaczysz Centrum administracyjne usługi Office 365, w którym można zarządzać użytkownikami i domenami, instalacja oprogramowania Office i Dowiedz się więcej o usłudze Office 365.  To już wszystko!  Możesz rozpocząć pracę. 
 
-## <a name="faq"></a>Najczęściej zadawane pytania
-*Wyszukaj aktualizacje w tym miejscu*
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | Dostępne       |  Tak|
+| Program Visual Studio Professional (standardowy, roczne chmury, miesięczne chmury) | VL, Azure, Retail                                       | Niedostępne                                                            |NA         |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Niedostępne                                                            |NA         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Dostępne       |  Tak|
+| Visual Studio Dev Essentials | NA  | Niedostępne |NA|
+| Visual Studio Enterprise (miesięczne w chmurze) | Azure                                       | Niedostępne                                  |NA|
+
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP) dyrektor Region (RD).    Wyklucza: Sieci Microsoft Partner Network (MPN) ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
+
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej usługi Power BI Pro?  

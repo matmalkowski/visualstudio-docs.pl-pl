@@ -1,13 +1,10 @@
 ---
-title: "Namedrange — formant | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Namedrange — formant | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Range
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - NamedRange control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22adc003c10e95de0e701eb3f382d9e530b28acf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5273baec024da8eb339e8f3d12541fc6e98e97c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="namedrange-control"></a>NamedRange — Formant
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Kontroli jest zakresem, który ma unikatową nazwę, opisuje zdarzenia i może być powiązany z danymi. Aby uzyskać więcej informacji, zobacz [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Domyślnie utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z formanty hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- <xref:Microsoft.Office.Tools.Excel.NamedRange>Formanty może zawierać tylko zakresów określonych arkuszy. <xref:Microsoft.Office.Tools.Excel.NamedRange>formanty nie może mieć nazwy względne, które są stosowane do wszystkich arkuszy, a nie składają się z zakresów, obejmującej dwa lub więcej arkuszy w skoroszycie (zakresy 3-).  
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> Formanty może zawierać tylko zakresów określonych arkuszy. <xref:Microsoft.Office.Tools.Excel.NamedRange> formanty nie może mieć nazwy względne, które są stosowane do wszystkich arkuszy, a nie składają się z zakresów, obejmującej dwa lub więcej arkuszy w skoroszycie (zakresy 3-).  
   
 ## <a name="binding-data-to-the-control"></a>Wiązanie danych do kontrolki  
  Nazwany zakres wydają się być odpowiednimi kandydatami do złożonych danych powiązania, ponieważ może mieć wiele komórek. jednak zakres jest tylko Kolekcja komórek, których nie można łatwo można zamapować do określonej kolumny z zestawu danych. W związku z tym <xref:Microsoft.Office.Tools.Excel.NamedRange> formanty obsługują tylko proste powiązanie danych. <xref:Microsoft.Office.Tools.Excel.ListObject> Formantu można używać dla złożone powiązanie danych. Aby uzyskać więcej informacji, zobacz [ListObject — formant](../vsto/listobject-control.md).  

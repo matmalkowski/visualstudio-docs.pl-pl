@@ -2,25 +2,25 @@
 title: Postanowienia licencyjne subskrypcji programu Visual Studio
 author: evanwindom
 ms.author: jaunger
-Manager: evelynp
-ms.date: 10/3/2017
+manager: evelynp
+ms.date: 10/03/2017
 ms.topic: Get-Started-Article
 description: Postanowienia licencyjne subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 68e5a55156b3a5e67f047df585f20c83e808386a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/16/2018
 ---
 **POSTANOWIENIA LICENCYJNE DOTYCZĄCE OPROGRAMOWANIA FIRMY MICROSOFT DLA NASTĘPUJĄCYCH SUBSKRYPCJI PROGRAMU VISUAL STUDIO:**
 
 **VISUAL STUDIO ENTERPRISE, VISUAL STUDIO PROFESSIONAL, VISUAL STUDIO TEST PROFESSIONAL, PLATFORMY MSDN**
 
 _________________________________________________
-Niniejsze postanowienia licencyjne stanowią umowę między Microsoft Corporation (lub, w zależności od miejsca zamieszkania Licencjobiorcy, jednym z podmiotów stowarzyszonych Microsoft Corporation) a Licencjobiorcą. Licencjobiorca powinien zapoznać się z tymi postanowieniami. Dotyczą one wspomnianego wyżej oprogramowania. Mają one również zastosowanie do usług firmy Microsoft, a aktualizacje oprogramowania, z wyjątkiem w zakresie, które są dostarczane z dowolnego różne warunki.
+Niniejsze postanowienia licencyjne stanowią umowę między firmą Microsoft Corporation (lub, w zależności od miejsca zamieszkania Klienta, jednym z podmiotów stowarzyszonych firmy Microsoft Corporation) a Klientem. Licencjobiorca powinien zapoznać się z tymi postanowieniami. Dotyczą one wspomnianego wyżej oprogramowania. Mają one również zastosowanie do usług firmy Microsoft, a aktualizacje oprogramowania, z wyjątkiem w zakresie, które są dostarczane z dowolnego różne warunki.
 
 **ZA POMOCĄ OPROGRAMOWANIA, MUSISZ JE ZAAKCEPTOWAĆ. JEŚLI ICH NIE AKCEPTUJE, NIE NALEŻY UŻYWAĆ OPROGRAMOWANIA. ZAMIAST TEGO NALEŻY PRZYWRÓCIĆ GO DO DETALICZNEJ ZWROT LUB KREDYTOWEJ.** Nie można uzyskać zwrotu, skontaktuj się z Microsoft lub partnera firmy Microsoft obsługujący więcej informacji na temat zasad zwrotu kosztów firmy Microsoft. Zobacz [www.microsoft.com/worldwide](https://www.microsoft.com/worldwide). W Stanach Zjednoczonych i Kanady, zadzwoń do firmy MICROSOFT (800), lub zobacz [www.microsoft.com/info/nareturns.htm](https://www.microsoft.com/info/nareturns.htm).
 
@@ -35,7 +35,7 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
 
    b. Model licencji. Oprogramowanie jest licencjonowane na poszczególnych użytkowników.
 
-2. **PRAWA DO INSTALACJI I UŻYWANIA** 
+2. **PRAWA DO INSTALACJI I UŻYWANIA.** 
 
    a. **Ogólne.** Jeden użytkownik może zainstalować i używać kopii oprogramowania umożliwiające opracowanie i przetestowanie aplikacji. Nie można używać oprogramowania na urządzeniu lub serwer w środowisku produkcyjnym.
 
@@ -45,11 +45,11 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
 
    d. **Dołączone programy Microsoft.** Z wyjątkiem sytuacji opisanej w tej sekcji 2.e i 2.f. te postanowienia licencyjne dotyczą programów Microsoft uwzględnionych w subskrypcji oprogramowania. Jeśli postanowienia licencyjne, za pomocą dowolnego z tych programów dać innych praw, które jednoznacznie nie powodują konfliktów z tymi postanowieniami licencyjnymi, masz również tych praw.
 
-   e. **Produkt IoT z systemem Windows 10.** Wszystkie produkty IoT z systemem Windows i usług z oprogramowaniem podlegają warunkami licencji. Ponadto jeśli chcesz dystrybuować obraz systemu Windows 10 IoT Core środowiska uruchomieniowego ("obrazu środowiska uruchomieniowego"), a w przypadku dystrybucji w celu komercyjnych, najpierw musisz wykonać i spełniają warunki i postanowienia komercyjnych licencji firmy Microsoft lub przez firmę Microsoft stowarzyszona kraju. Przykłady celów handlowych obejmuje uruchomione operacje biznesowe, licencjonowanie, dzierżawy lub sprzedaży zawierającego obraz środowiska uruchomieniowego, przesyłanie obrazu środowiska uruchomieniowego w aplikacji dla klientów w celu przeprowadzenia oceny dystrybucji aplikacji Obraz środowiska uruchomieniowego do użytku komercyjnego produkty, przy użyciu obrazu środowiska uruchomieniowego w tworzenie i używanie produkty handlowe lub inne działania, których celem jest nabywania komercyjnych korzyści, aby inni użytkownicy. Aby uzyskać więcej informacji, przejdź do [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
+   e. **Produkt IoT z systemem Windows 10.** Wszystkie produkty IoT z systemem Windows i usług z oprogramowaniem podlegają warunkami licencji. Ponadto jeśli chcesz dystrybuować obraz systemu Windows 10 IoT Core środowiska uruchomieniowego ("obrazu środowiska uruchomieniowego"), a w przypadku dystrybucji w celu komercyjnych, najpierw musisz wykonać i spełniają warunki i postanowienia komercyjnych licencji firmy Microsoft lub przez firmę Microsoft stowarzyszona kraju. Przykłady celów handlowych obejmuje uruchomione operacje biznesowe, licencjonowanie, dzierżawy lub sprzedaży zawierającego obraz środowiska uruchomieniowego, przesyłanie obrazu środowiska uruchomieniowego w aplikacji dla klientów w celu przeprowadzenia oceny dystrybucji aplikacji Obraz środowiska uruchomieniowego do użytku komercyjnego produkty, przy użyciu obrazu środowiska uruchomieniowego w tworzenie i używanie produkty handlowe lub inne działania, których celem jest nabywania komercyjnych korzyści, aby inni użytkownicy. Aby uzyskać więcej informacji, przejdź do [ http://go.microsoft.com/fwlink/?LinkID=614849 ](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
 
    f. **Visual Studio Feature Pack Agents for Visual Studio 2015 IntelliTrace Collector for Visual Studio 2015, Software Development Kit (SDK), sterownik Development Kit (zestawy DDK), wersje Patterns and Practices i programy osób trzecich.** Subskrypcji mogą także zawierać składniki oprogramowania sklasyfikowanych jako "Programu Visual Studio pakiety Feature Pack", "Agents for Visual Studio 2015", "IntelliTrace Collector for Visual Studio 2015", "Zdalnego Tools for Visual Studio 2015" i wersji wstępnej do wersji próbnej oprogramowania, "Zestawów SDK" , "Zestawy DDK", "wzorców & rozwiązań" lub programami osób trzecich. Te są udostępniane użytkownikowi za pomocą programu Visual Studio do pobrania dla subskrybenta. Jeśli inne postanowienia pochodzą z programów i składników, następnie postanowienia te dotyczą także korzystania z nich.
 
-   G. **Usługi w subskrypcji.** Visual Studio subskrypcji usługi, co może obejmować pliki do pobrania, klucze produktów korzyści systemu Windows Azure, e-learning, działem pomocy technicznej, korzyści Sklepu Windows i innych usług, są dostępne tylko w przypadku, gdy subskrypcja jest nadal aktywne.
+   g. **Usługi w subskrypcji.** Visual Studio subskrypcji usługi, co może obejmować pliki do pobrania, klucze produktów korzyści systemu Windows Azure, e-learning, działem pomocy technicznej, korzyści Sklepu Windows i innych usług, są dostępne tylko w przypadku, gdy subskrypcja jest nadal aktywne.
 
    h. **Czcionki.** Oprogramowanie jest uruchomiona, można użyć jej czcionki do wyświetlania i drukowania zawartości. Mogą Państwo: (i) osadzania czcionek zawartości w dozwolonym przez ograniczenia osadzania czcionek; i (ii), tymczasowo pobierać je do drukarki lub innego urządzenia wyjściowego do drukowania zawartości pomocy.
 
@@ -82,7 +82,7 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
 
    f. **Funkcje internetowego.** Podczas używania funkcji internetowy nie można używać tych funkcji w sposób, który może zakłócać osobom korzystanie z nich lub próby uzyskania dostępu do usługi, danych, konta lub sieci, w sposób nieautoryzowany.
 
-   G. **Mapy Bing.** To oprogramowanie może zawierać stosowania mapy Bing. Można tylko dostępnych za pośrednictwem usługi mapy Bing, łącznie z geocodes, w ramach produktu, za pośrednictwem której zawartość jest dostarczana. Używanie klienta usługi mapy Bing podlega Bing Maps użytkownika końcowego warunki użytkowania dostępne pod adresem [http://go.microsoft.com/?linkid=9710837](http://go.microsoft.com/?linkid=9710837) mapy Bing poufności dostępne pod adresem i [http://go.microsoft.com/ fwlink /? LinkID = 248686](http://go.microsoft.com/fwlink/?LinkID=248686).
+   g. **Mapy Bing.** To oprogramowanie może zawierać stosowania mapy Bing. Można tylko dostępnych za pośrednictwem usługi mapy Bing, łącznie z geocodes, w ramach produktu, za pośrednictwem której zawartość jest dostarczana. Używanie klienta usługi mapy Bing podlega Bing Maps użytkownika końcowego warunki użytkowania dostępne pod adresem [ http://go.microsoft.com/?linkid=9710837 ](http://go.microsoft.com/?linkid=9710837) mapy Bing poufności dostępne pod adresem i [ http://go.microsoft.com/fwlink/?LinkID=248686 ](http://go.microsoft.com/fwlink/?LinkID=248686).
 
    h. **Składników innych firm.** Oprogramowanie może obejmować składników innych firm z oddzielnych uwagi prawne lub objętej inne umowy, jak mogą być opisane w pliku ThirdPartyNotices dołączonym do oprogramowania firmy Microsoft. Nawet jeśli takie składniki są regulowane przez inne umowy, ograniczenia i zrzeczenie odpowiedzialności na i wyłączenia odpowiedzialności za szkody poniżej również zastosowanie.
 
@@ -97,9 +97,9 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
        You may run, at any one time, only one instance of SQL Server 2014 Standard Edition in one physical or virtual operating system environment on one server solely to support the software. You do not need SQL Server CALs for this use.
 
 
-   b.  **Narzędzia.** Oprogramowanie zawiera niektóre elementy na liście narzędzia na [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Można kopiować i je zainstalować w sieci lub inne maszyny innej firmy. Należy pamiętać, że narzędzia są przeznaczone do użytku tymczasowego, że Microsoft nie można zastosować poprawki lub aktualizacji narzędzi oddzielnie od pozostałej części oprogramowania i że niektóre narzędzia z natury może umożliwić innym osobom maszyny, na których są one zainstalowana. W związku z tym należy usunąć wszystkie narzędzia zainstalowane po zakończeniu debugowania oraz wdrażanie aplikacji i baz danych. Użyj innej lub dostęp do narzędzi można zainstalować na dowolnym komputerze nie odpowiada firmy Microsoft.
+   b.  **Narzędzia.** Oprogramowanie zawiera niektóre elementy na liście narzędzia na [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Można kopiować i je zainstalować w sieci lub inne maszyny innej firmy. Należy pamiętać, że narzędzia są przeznaczone do użytku tymczasowego, że Microsoft nie można zastosować poprawki lub aktualizacji narzędzi oddzielnie od pozostałej części oprogramowania i że niektóre narzędzia z natury może umożliwić innym osobom maszyny, na których są one zainstalowana. W związku z tym należy usunąć wszystkie narzędzia zainstalowane po zakończeniu debugowania oraz wdrażanie aplikacji i baz danych. Użyj innej lub dostęp do narzędzi można zainstalować na dowolnym komputerze nie odpowiada firmy Microsoft.
 
-   c. **Serwer kompilacji.** Oprogramowanie zawiera niektóre elementy na liście serwera kompilacji w [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Możesz skopiować i zainstalować te elementy objęte oprogramowania, na maszynach w kompilacji. Użytkownikom w organizacji może korzystać z tych elementów na maszynach kompilacji wyłącznie na potrzeby kompilowania, tworzenie, weryfikowanie i archiwizowania aplikacji lub jakości lub wydajności testów jako część procesu kompilacji.
+   c. **Serwer kompilacji.** Oprogramowanie zawiera niektóre elementy na liście serwera kompilacji w [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Możesz skopiować i zainstalować te elementy objęte oprogramowania, na maszynach w kompilacji. Użytkownikom w organizacji może korzystać z tych elementów na maszynach kompilacji wyłącznie na potrzeby kompilowania, tworzenie, weryfikowanie i archiwizowania aplikacji lub jakości lub wydajności testów jako część procesu kompilacji.
 
    d. **Zakres licencji.** Możesz nie odtwarzać, dekompilować lub dezasemblowanie oprogramowania lub w przeciwnym razie próba uzyskania kodu źródłowego dla oprogramowania, z wyjątkiem i wyłącznie w zakresie: (i) dozwolonym przez prawo właściwe pomimo niniejszego ograniczenia; lub (ii) wymagane do debugowania zmiany żadnych bibliotek licencją GNU mniejszym ogólnej licencji publicznej, dołączone i połączone z przez oprogramowanie.
 
@@ -107,7 +107,7 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
 
    f. **Platform firmy Microsoft.** To oprogramowanie może zawierać składniki z Microsoft Windows; Microsoft Windows Server; Program Microsoft SQL Server; Program Microsoft Exchange; Microsoft Office; i Microsoft SharePoint. Te składniki zależą oddzielnych umów oraz ich własnych zasad pomocy technicznej produktów, zgodnie z opisem w znajdującą się w katalogu instalacyjnym dla tego składnika lub w folderze "Licenses" dołączonym do oprogramowania postanowienia licencyjne.
 
-   G. **Menedżerowie pakietu.** Oprogramowanie zawiera menedżerów pakietu, takich jak NuGet, dające opcję, aby pobrać inne pakiety oprogramowania firmy Microsoft i innych firm do korzystania z oprogramowania lub jesteś aplikacji. Te pakiety są w ich własnej licencji, a nie niniejszej Umowy. Microsoft nie dystrybucji licencję lub podaj żadnych gwarancji dla żadnych pakietów innych firm.
+   g. **Menedżerowie pakietu.** Oprogramowanie zawiera menedżerów pakietu, takich jak NuGet, dające opcję, aby pobrać inne pakiety oprogramowania firmy Microsoft i innych firm do korzystania z oprogramowania lub jesteś aplikacji. Te pakiety są w ich własnej licencji, a nie niniejszej Umowy. Microsoft nie dystrybucji licencję lub podaj żadnych gwarancji dla żadnych pakietów innych firm.
 
 5.  **DODATKOWE POSTANOWIENIA LICENCYJNE DLA USŁUG PULPITU ZDALNEGO SERWERA OKNA**
 
@@ -170,7 +170,7 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
 
     a. **Prawa do używania oraz dystrybucję.** Wymienione poniżej pliki kodu i tekst są "Kod dystrybucyjny". 
 
-    - *PAKIETU REDYSTRYBUCYJNEGO. Pliki TXT*. Użytkownik może kopiować i rozpowszechniać w postaci kodu obiektu kod przedstawiony w pliku redist.txt oprogramowania i na liście REDYSTRYBUCYJNEJ znajdujący się w [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) .
+    - *PAKIETU REDYSTRYBUCYJNEGO. Pliki TXT*. Użytkownik może kopiować i rozpowszechniać w postaci kodu obiektu kod przedstawiony w pliku redist.txt oprogramowania i na liście REDYSTRYBUCYJNEJ znajdujący się w [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409 ](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) .
 
     - *Przykładowy kod, szablony i style.* Można kopiować, modyfikować i rozpowszechniać źródła i obiektu w postaci kodu kodu oznaczone jako "test", "szablon", "style proste" i "style szkicu".
 
@@ -192,7 +192,7 @@ KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH, MASZ PRAWA PONIŻ
 
     a. **Oprogramowanie serwera.** Należy uzyskać firmy Microsoft napisane pobieraniu ujawnić osobie trzeciej wyniki dowolnego testu oprogramowanie serwera lub dodatkowego oprogramowania, które pochodzą z nim. Nie dotyczy programu .NET Framework (patrz poniżej).
 
-    b. **Testowanie testu wydajności programu Microsoft .NET.** Oprogramowanie zawiera jeden lub więcej składników programu .NET Framework ("Składniki platformy .NET"). Może przeprowadzania testów porównawczych wewnętrznego testowania tych składników. Użytkownik może ujawnić wyniki dowolnego testu tych składników, pod warunkiem, że spełniają warunki określone w [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406). Bez względu na inne umowy wiążące go z firmą Microsoft, jeśli ujawnić takie wyniki testów firmy Microsoft ma prawo ujawnić, wyniki testów porównawczych testów przeprowadzana produktów, które konkurują ze składnikiem .NET dotyczy pod warunkiem zgodności z tej samej warunki określone w [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406).
+    b. **Testowanie testu wydajności programu Microsoft .NET.** Oprogramowanie zawiera jeden lub więcej składników programu .NET Framework ("Składniki platformy .NET"). Może przeprowadzania testów porównawczych wewnętrznego testowania tych składników. Użytkownik może ujawnić wyniki dowolnego testu tych składników, pod warunkiem, że spełniają warunki określone w [ http://go.microsoft.com/fwlink/?LinkID=66406 ](http://go.microsoft.com/fwlink/?LinkID=66406). Bez względu na inne umowy wiążące go z firmą Microsoft, jeśli ujawnić takie wyniki testów firmy Microsoft ma prawo ujawnić, wyniki testów porównawczych testów przeprowadzana produktów, które konkurują ze składnikiem .NET dotyczy pod warunkiem zgodności z tej samej warunki określone w [ http://go.microsoft.com/fwlink/?LinkID=66406 ](http://go.microsoft.com/fwlink/?LinkID=66406).
 
 14. **ZAKRES LICENCJI.** Oprogramowanie jest licencjonowane, a nie sprzedawane. Na mocy niniejszej umowy Licencjobiorca uzyskuje tylko niektóre prawa do używania oprogramowania. Microsoft zastrzega sobie wszystkie pozostałe prawa. Licencjobiorca może korzystać z oprogramowania tylko w sposób wyraźnie dozwolony w niniejszej umowie. Nie dotyczy to sytuacji, w których pomimo niniejszego ograniczenia na mocy prawa właściwego przysługują mu dodatkowe uprawnienia. W takich przypadkach Licencjobiorca musi przestrzegać wszelkich ograniczeń technicznych oprogramowania zapewniających, że z oprogramowania będzie można korzystać wyłącznie w określony sposób. Aby uzyskać więcej informacji, zobacz [www.microsoft.com/licensing/userights](https://www.microsoft.com/licensing/userights). Licencjobiorca nie może: 
     - ujawnić wyników jakichkolwiek testów oprogramowania osobom trzecim bez uprzedniego Microsoft zapisywane zatwierdzenia, jednak nie dotyczy programu Microsoft .NET Framework (patrz sekcja 13b);
@@ -230,7 +230,7 @@ _________________________________
 
 <div style="text-align:center"><span>OGRANICZONA GWARANCJA</span></div>
 
-. **OGRANICZENIE GWARANCJI.** Jeśli zgodnie z instrukcjami oprogramowania wykona znacznie zgodnie z opisem w materiałów firmy Microsoft, które pojawi się w lub przy użyciu oprogramowania.
+A. **OGRANICZENIE GWARANCJI.** Jeśli zgodnie z instrukcjami oprogramowania wykona znacznie zgodnie z opisem w materiałów firmy Microsoft, które pojawi się w lub przy użyciu oprogramowania.
 Odwołania do "ograniczoną" się do gwarancji express obsługiwane przez firmę Microsoft. Ten gwarancji znajduje się także do innych praw i uprawnień, do których masz prawa, w tym z prawami i środki zgodnie z ustawowe gwarancje lokalne prawa konsumenta.
 
 B. **TERMIN GWARANCJI; ODBIORCA GWARANCJI; DŁUGOŚĆ ŻADNYCH DOMNIEMANYCH GWARANCJI. OGRANICZONA GWARANCJA OBEJMUJE OPROGRAMOWANIA PRZEZ JEDEN ROK PO UZYSKANĄ PRZEZ PIERWSZEGO UŻYTKOWNIKA. JEŚLI ZOSTANIE WYŚWIETLONY UZUPEŁNIEŃ, AKTUALIZACJI LUB ZASTĄPIENIA OPROGRAMOWANIA W TYM ROKU BĘDZIE UWZGLĘDNIONE W POZOSTAŁEJ CZĘŚCI GWARANCJI LUB 30 DNI, NASTĄPI DŁUŻEJ.** W pozostałej części gwarancji pierwszy użytkownik przesyła oprogramowania, zostanie zastosowana do adresata.
@@ -268,14 +268,14 @@ H. **OGRANICZENIE I WYŁĄCZENIE ODPOWIEDZIALNOŚCI ZA SZKODY DLA NARUSZENIA WAR
 
 
 _____
-<div style="text-align:center"><span style="color:white;">USŁUGI INTERNETOWE ZAŁĄCZNIKA</span></div>
-<div style="text-align:center"><span style="color:white;">DLA NASTĘPUJĄCEGO OPROGRAMOWANIA SUBSKRYPCJI PROGRAMU VISUAL STUDIO</span></div> 
+<div style="text-align:center"><span style="color:white;">USŁUGI INTERNETOWE ZAŁĄCZNIKA </span></div>
+<div style="text-align:center"><span style="color:white;">DLA NASTĘPUJĄCEGO OPROGRAMOWANIA SUBSKRYPCJI PROGRAMU VISUAL STUDIO </span></div> 
 
   
 
 **Visual Studio 2015 produkty:** 
 
-**DANE.** Oprogramowanie może zbierać informacje o Tobie i korzystanie z oprogramowania i wysyłać do firmy Microsoft. Firma Microsoft może używać tych informacji do świadczenia usług i ulepszania swoich produktów i usług. Użytkownik może zrezygnować z wielu z tych scenariuszy, ale nie wszystkich, zgodnie z opisem w dokumentacji produktu. Istnieją także niektóre funkcje w oprogramowania, które umożliwia zbieranie danych od użytkowników aplikacji. Korzystając z tych funkcji do włączenia zbierania danych w aplikacji, muszą być zgodne z prawem, umieszczając odpowiednie powiadomienia dla użytkowników aplikacji. Możesz dowiedzieć się więcej o zbieraniu danych i użyć w dokumentacji pomocy i poufności informacji w [http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Korzystanie z oprogramowania działa jako Twojej zgody na nich.
+**DANE.** Oprogramowanie może zbierać informacje o Tobie i korzystanie z oprogramowania i wysyłać do firmy Microsoft. Firma Microsoft może używać tych informacji do świadczenia usług i ulepszania swoich produktów i usług. Użytkownik może zrezygnować z wielu z tych scenariuszy, ale nie wszystkich, zgodnie z opisem w dokumentacji produktu. Istnieją także niektóre funkcje w oprogramowania, które umożliwia zbieranie danych od użytkowników aplikacji. Korzystając z tych funkcji do włączenia zbierania danych w aplikacji, muszą być zgodne z prawem, umieszczając odpowiednie powiadomienia dla użytkowników aplikacji. Możesz dowiedzieć się więcej o zbieraniu danych i użyć w dokumentacji pomocy i poufności informacji w [ http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409 ](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Korzystanie z oprogramowania działa jako Twojej zgody na nich.
 
   
 
@@ -321,7 +321,7 @@ _____
 
   
 
-**Program SQL Server 2014**
+**SQL Server 2014**
 
 **USŁUGI INTERNETOWE.** Razem z oprogramowaniem firma Microsoft udostępnia usługi internetowe. Firma Microsoft może w dowolnym czasie zmienić takie usługi lub zakończyć ich świadczenie.
 

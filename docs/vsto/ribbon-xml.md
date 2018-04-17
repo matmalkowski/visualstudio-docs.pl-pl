@@ -1,13 +1,10 @@
 ---
-title: "Wstążka XML | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wstążka XML | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
 dev_langs:
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76527949bcfc5b3023ebd75fe15726b02938d39e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-xml"></a>XML — Wstążka
   Element wstążki (XML) można dostosować za pomocą XML wstążki. Jeśli chcesz dostosować na Wstążce w taki sposób, który nie jest obsługiwany przez element wstążki (projektanta wizualnego), należy użyć elementu wstążki (XML). Porównanie co można zrobić z każdym elementem, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
  Istnieje wiele różnych typów metody wywołania zwrotnego, które można przypisać do formantów wstążki. Aby uzyskać pełną listę dostępnych metod wywołania zwrotnego dla każdego formantu, zobacz artykułu technicznego [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 3 z 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
-###  <a name="CallBackMethods"></a>Definiowanie metody wywołania zwrotnego  
+###  <a name="CallBackMethods"></a> Definiowanie metody wywołania zwrotnego  
  Zdefiniuj metody wywołania zwrotnego w klasie wstążki w pliku kodu wstążki. Metoda wywołania zwrotnego ma kilka wymagań:  
   
 -   Musi być zadeklarowany jako publiczny.  
@@ -98,7 +95,7 @@ ms.lasthandoff: 01/10/2018
  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a>Odwołanie do pliku XML wstążki  
+##  <a name="RibbonDescriptorFile"></a> Odwołanie do pliku XML wstążki  
  Można zdefiniować Twojej niestandardowa Wstążka przez dodanie elementów i atrybutów do pliku XML wstążki. Domyślnie plik XML wstążki zawiera następujący kod XML.  
   
 ```  
@@ -122,9 +119,9 @@ ms.lasthandoff: 01/10/2018
 |-------------|-----------------|  
 |**customUI**|Reprezentuje niestandardowa Wstążka w projekcie dodatku VSTO.|  
 |**Wstążka**|Reprezentuje wstążki.|  
-|**karty**|Reprezentuje zestaw karty wstążki.|  
+|**Karty**|Reprezentuje zestaw karty wstążki.|  
 |**Karta**|Reprezentuje pojedynczy karty wstążki.|  
-|**grupy**|Reprezentuje grupę formantów na karcie wstążki.|  
+|**Grupy**|Reprezentuje grupę formantów na karcie wstążki.|  
   
  Tych elementów mają atrybuty, które określają wygląd i zachowanie niestandardowa Wstążka. W poniższej tabeli opisano atrybuty domyślne w pliku XML wstążki.  
   
@@ -132,19 +129,19 @@ ms.lasthandoff: 01/10/2018
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|Określa metodę, która jest wywoływana podczas ładowania aplikacji wstążki.|  
 |**idMso**|**Karta**|Identyfikuje wbudowanej karty do wyświetlenia na Wstążce.|  
-|**id**|**grupy**|Identyfikuje grupę.|  
-|**etykiety**|**grupy**|Określa tekst wyświetlany w grupie.|  
+|**id**|**Grupy**|Identyfikuje grupę.|  
+|**Etykiety**|**Grupy**|Określa tekst wyświetlany w grupie.|  
   
  Domyślne elementy i atrybuty w pliku XML wstążki to mały podzbiór elementów i atrybutów, które są dostępne. Aby uzyskać pełną listę dostępnych elementów i atrybutów, zobacz artykuł techniczne [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 2 z 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a>Odwołania do klasy wstążki  
+##  <a name="RibbonExtensionClass"></a> Odwołania do klasy wstążki  
  Visual Studio wygeneruje klasy wstążki w pliku kodu wstążki. Metody wywołania zwrotnego dla formantów na Wstążce należy dodać do tej klasy. Ta klasa implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility> interfejsu.  
   
  W poniższej tabeli opisano metody domyślnej z tej klasy.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|`GetCustomUI`|Zwraca zawartość pliku XML wstążki. Aplikacje Microsoft Office wywołują tę metodę w celu uzyskania ciągu XML, który definiuje interfejs użytkownika programu niestandardowa Wstążka. Ta metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Uwaga:** `GetCustomUI` powinny być implementowane tylko do zwrócenia zawartości pliku XML wstążki; nie można stosować zainicjować dodatku VSTO programu. W szczególności nie należy wyświetlić okno dialogowe lub innych okien w Twojej `GetCustomUI` implementacji. W przeciwnym razie wartość niestandardowa Wstążka może nie działać poprawnie. Jeśli masz do uruchomienia kodu, który inicjuje użytkownika dodatku VSTO Dodaj kod, aby `ThisAddIn_Startup` obsługi zdarzeń.|  
+|`GetCustomUI`|Zwraca zawartość pliku XML wstążki. Aplikacje Microsoft Office wywołują tę metodę w celu uzyskania ciągu XML, który definiuje interfejs użytkownika programu niestandardowa Wstążka. Ta metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Uwaga:** `GetCustomUI` powinny być implementowane tylko do zwrócenia zawartości pliku XML wstążki; nie można stosować zainicjować dodatku VSTO programu.   W szczególności nie należy wyświetlić okno dialogowe lub innych okien w Twojej `GetCustomUI` implementacji. W przeciwnym razie wartość niestandardowa Wstążka może nie działać poprawnie. Jeśli masz do uruchomienia kodu, który inicjuje użytkownika dodatku VSTO Dodaj kod, aby `ThisAddIn_Startup` obsługi zdarzeń.|  
 |`OnLoad`|Przypisuje <xref:Microsoft.Office.Core.IRibbonControl> parametr `ribbon` pola. Aplikacje Microsoft Office wywołać tę metodę, gdy są ładowane niestandardowa Wstążka. To pole umożliwia dynamiczne aktualizowanie niestandardowa Wstążka. Aby uzyskać więcej informacji, zobacz artykuł techniczny [Dostosowywanie interfejsu użytkownika wstążki pakietu Office (2007) dla deweloperów (część 1 z 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Wywoływane przez `GetCustomUI` metodę, aby uzyskać zawartość pliku XML wstążki.|  
   

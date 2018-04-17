@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio Tools for Office Runtime ― scenariusze instalacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Visual Studio Tools for Office Runtime ― scenariusze instalacji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, installation scenarios
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c63f5e4cef88ed927326b69f1fa389e34b06c8b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f5671f078d6650842c704437ce04a625a4fcb944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla pakietu Office Runtime ― Scenariusze instalacji
   Visual Studio 2010 Tools dla pakietu Office Runtime można zainstalować na trzy sposoby:  
@@ -40,10 +37,10 @@ ms.lasthandoff: 01/10/2018
   
  W poniższej tabeli przedstawiono składniki środowiska uruchomieniowego są instalowane domyślnie w każdym ze scenariuszy instalacji czasu wykonywania. Więcej informacji na temat poszczególnych scenariuszy pojawi się później.  
   
-|Scenariusz instalacji środowiska uruchomieniowego|Program ładujący rozwiązanie Office|Rozszerzenia pakietu Office dla programu .NET Framework 3.5|Rozszerzenia pakietu Office[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Rozszerzenia pakietu Office[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
+|Scenariusz instalacji środowiska uruchomieniowego|Program ładujący rozwiązanie Office|Rozszerzenia pakietu Office dla programu .NET Framework 3.5|Rozszerzenia pakietu Office [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Rozszerzenia pakietu Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
 |-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
 |Z [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] i nowsze|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowana.|Tak|Tak|  
-|Z[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowana.|Nie|Nie|  
+|Z [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowana.|Nie|Nie|  
 |Z pakietu Office 2010 Service Pack 1 (SP1) lub nowszym|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowana.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowana.|Nie|  
 |Ze środowiskiem uruchomieniowym pakietu redystrybucyjnego|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowana.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowana.|Tak, jeśli [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] jest już zainstalowana.|  
   

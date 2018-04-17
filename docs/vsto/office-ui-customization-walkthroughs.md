@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], action panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2ae30b9b157cfcd26e709d39c05af4cc0605a5a1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8ab6fe6ee93eb775846bfd84c5269f3451db9b2a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Dostosowywanie interfejsu użytkownika pakietu Office ― Wskazówki
   Poniższe wskazówki wykazanie, że sposoby dostosowania użytkownika interfejsu aplikacji pakietu Microsoft Office przy użyciu Dostosowywanie na poziomie dokumentu i dodatków VSTO.  
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  [Wskazówki dotyczące korzystania z programu Excel](../vsto/walkthroughs-using-excel.md)   
  [Dane w wskazówki dotyczące rozwiązań pakietu Office](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Bezpieczeństwo i wdrożenie — wskazówki](../vsto/security-and-deployment-walkthroughs.md)   
- [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)   
  [Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)  
   

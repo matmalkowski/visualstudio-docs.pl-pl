@@ -1,23 +1,21 @@
 ---
-title: "Pamięci podręcznej schematu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pamięci podręcznej schematu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Pamięci podręcznej schematów
 Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %InstallRoot%\Xml\Schemas. Pamięci podręcznej schematu jest globalne dla wszystkich użytkowników na tym komputerze i zawiera standardowe schematów XML, które są używane do walidacji dokumentu IntelliSense i XML.  
@@ -41,10 +39,10 @@ Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %Insta
 |xenc.xsd|Schemat XML, do szyfrowania http://www.w3.org/2000/09/xmldsig#.|  
 |XHTML.xsd|Schemat dla XHTML http://www.w3.org/1999/xhtml.|  
 |XLINK.xsd|Schemat dla XLink1.0, http://www.w3.org/1999/xlink.|  
-|XML.xsd|Schemat opisujące XML: Space i atrybuty XML: lang, http://www.w3.org/XML/1998/namespace.|  
+|XML.xsd|Schemat opisujący atrybuty XML: Space i XML: lang, http://www.w3.org/XML/1998/namespace.|  
 |xmlsig.xsd|Schemat XML podpisów cyfrowych, http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Schematu XSD opisujący samego, http://www.w3.org/2001/XMLSchema.|  
-|XSLT.xsd|Przekształca schematu XML http://www.w3.org/1999/XSL/Transform.|  
+|xsdschema.xsd|Schemat XSD, opisujący http://www.w3.org/2001/XMLSchema.|  
+|XSLT.xsd|Przekształca schematu XML, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Aktualizowanie schematów w pamięci podręcznej  
  Edytor ładuje katalog pamięci podręcznej schematu, gdy pakiet edytora XML jest załadowany i oczekuje na zmiany podczas pracy. Jeśli schemat został dodany, jest automatycznie ładowany do indeksu w pamięci znanych schematów. Jeśli schemat został usunięty, zostanie ono automatycznie usunięte z indeksu w pamięci. Jeśli schemat został zaktualizowany, automatycznie unieważnia w pamięci podręcznej tego schematu.  
@@ -78,7 +76,7 @@ Edytor XML zawiera pamięci podręcznej schematu znajduje się w katalogu %Insta
   
 -   CommonApplicationData  
   
--   IDENTYFIKATOR LCID  
+-   LCID  
   
 Dokument katalogu może zawierać `Catalog` element, który wskazuje innych katalogów. Można użyć `Catalog` elementu do punktu centralnego katalogu, współużytkowane przez zespół lub firmy lub udostępnione partnerów biznesowych w wykazie online. `href` Atrybut jest URL http lub ścieżki pliku innych katalogów. Poniżej przedstawiono przykład `Catalog` elementu:  
   

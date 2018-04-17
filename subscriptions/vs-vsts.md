@@ -1,19 +1,19 @@
 ---
 title: VSTS korzyści dla subskrybentów programu Visual Studio | Dokumentacja firmy Microsoft
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Dowiedz się, jak skorzystać z programu Visual Studio Team Services (VSTS) jako subskrybent Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio Team Services (VSTS) korzyści dla subskrybentów programu Visual Studio
 
@@ -26,12 +26,14 @@ Po zalogowaniu do programu VSTS przy użyciu tożsamości, która została użyt
 ## <a name="eligibility"></a>Kwalifikujących się usług
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowy, roczne chmury, miesięczne chmury)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, MPN, BizSpark, niego<sup>1</sup>, ekwiwalentu pełnego wymiaru czasu  | Podstawowe, Test Manager zarządzania pakietami hosta samodzielnego CI/CD       |  Tak          |
-| Program Visual Studio Professional (standardowy, roczne chmury, miesięczne chmury) | VL, Azure, Retail                                       | Podstawowy                                                            |  Tak          |
+| Visual Studio Enterprise (standardowy, roczne chmury, miesięczne chmury)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup>, ekwiwalentu pełnego wymiaru czasu  | Podstawowe, Test Manager zarządzania pakietami hosta samodzielnego CI/CD       |  Tak          |
+| Program Visual Studio Professional (standardowy, roczne chmury, miesięczne chmury) | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej,                                        | Podstawowy                                                            |  Tak          |
 | Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Basic, Test Manager                                              |  Tak          |
 | Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Basic, Test Manager                                              |  Tak          |
 
-<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego) firmy Microsoft o wartościach partnera (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)* 
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego) firmy Microsoft o wartościach partnera (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT oprogramowania i deweloperów usług.   Wyklucza: MCT oprogramowania i usług, Wyobraź sobie.*
+
+
 
 Dowiedz się więcej o funkcjach programu VSTS:
 - [Podstawy](https://www.visualstudio.com/team-services/compare-features/)

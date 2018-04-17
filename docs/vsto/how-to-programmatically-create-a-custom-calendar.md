@@ -1,12 +1,10 @@
 ---
 title: 'Porady: programowane Tworzenie niestandardowego kalendarza | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 131b4a5e724ab5a9b4d98141a7a203a12e8e811d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 30b48837ccf3bca6ea50fa7429f04a93a6c425f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Porady: Programowane tworzenie niestandardowego kalendarza
   W tym przykładzie jest tworzony nowy folder kalendarza o nazwie **PersonalCalendar**, a następnie tworzy nowy element terminu i dodaje go do folderu Kalendarz. Następnie kod wyświetla folderu Kalendarz.  

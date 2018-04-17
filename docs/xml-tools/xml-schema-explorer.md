@@ -1,23 +1,21 @@
 ---
 title: Eksploratora schematu XML | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 84aead3cf496a28e67e6440fb77b8cbf4aca6462
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-explorer"></a>Eksploratora schematu XML
 Eksploratora schematu XML jest zintegrowany z programu Microsoft Visual Studio i edytora XML, aby umożliwić pracę z schematu XML definition language (XSD) schematów. Po otwarciu pliku schematu XML **zestawu schematu** węzeł jest dostępny w Eksploratorze schematu XML. Wszystkich schematów dołączone, importowany lub ponownie zdefiniowany dla pliku docelowego, a także wszystkie pliki, które są przywoływane przez `include` lub `import` instrukcji, również dostępna w Eksploratorze schematu XML.  

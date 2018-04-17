@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Wskazówki: tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający pokazuje, jak utworzyć dostosowania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowania poziomie dokumentu do zmiany całej aplikacji, na przykład po otwarciu dowolnego skoroszytu, wyświetlanie nowej karty wstążki.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Tworzenie projektu  
   
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Wybierz **Utwórz nowy dokument**i kliknij przycisk **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Tworzy **FirstWorkbookCustomization** projektu i dodaje następujące pliki do projektu.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstWorkbookCustomization** projektu i dodaje następujące pliki do projektu.  
   
     -   *FirstWorkbookCustomization*xlsx - reprezentuje skoroszytu programu Excel w projekcie. Zawiera wszystkie arkusze i wykresy.  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1 —** code pliku, a następnie kliknij przycisk **Widok projektanta**.  
   
-     \-lub -  
+     \- lub -  
   
      W **Eksploratora rozwiązań**, kliknij dwukrotnie **Sheet1 —** pliku kodu.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Wdrażanie dostosowań na poziomie dokumentu dla programu Excel: [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozwój rozwiązań Office ― omówienie &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Rozwiązania programu Excel](../vsto/excel-solutions.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)   

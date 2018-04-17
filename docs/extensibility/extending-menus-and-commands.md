@@ -1,27 +1,25 @@
 ---
-title: "Rozszerzanie menu i poleceń | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozszerzanie menu i poleceń | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, common tasks
 - VSPackages, menu tasks
 - .vsct files, common menu tasks
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
-caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 815aac693686dc59d6934b00fb456c3a1afce72c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 830748be6f2cedf57b94a9824bc0912820067718
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-menus-and-commands"></a>Rozszerzanie menu i poleceń
 Polecenia są sposób dodawania działań i procesów dla Visual Studio. W większości przypadków polecenia są wyświetlane w menu i pasków narzędzi. Szablon projektu pakiet VSPackage przedstawia sposobu wdrażania wykraczającego poza podstawowe polecenia. Aby nieco dłużej, ale nadal podstawowych implementacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  

@@ -1,30 +1,28 @@
 ---
-title: "Udostępnianie typów wizualnych projektantów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Udostępnianie typów wizualnych projektantów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-types-to-visual-designers"></a>Udostępnianie typów wizualnych projektantów
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]musi mieć dostęp do definicje klas i typów w czasie projektowania, aby wyświetlić wizualnego projektanta. Klasy są ładowane z wstępnie zdefiniowane zestawy, które obejmują pełne zależności zestawu bieżącego projektu (odniesienia oraz ich zależności). Może być również wymagany do dostępu do klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe wizualnych projektantów.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć dostęp do definicje klas i typów w czasie projektowania, aby wyświetlić wizualnego projektanta. Klasy są ładowane z wstępnie zdefiniowane zestawy, które obejmują pełne zależności zestawu bieżącego projektu (odniesienia oraz ich zależności). Może być również wymagany do dostępu do klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe wizualnych projektantów.  
   
  [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] systemów projektów zapewniają obsługę do uzyskiwania dostępu do wygenerowanych klas i typów za pośrednictwem tymczasowego przenośne pliki wykonywalne (PEs tymczasowe). Każdy plik generowane przez niestandardowe narzędzie można można skompilować do tymczasowego zestawu tak, aby typy mogą być ładowane z tych zestawów i widoczne dla projektantów. Dane wyjściowe narzędzia niestandardowego jest kompilowany do oddzielnych tymczasowych, a powodzenie lub niepowodzenie Ta kompilacja tymczasowego zależy tylko czy mogą być kompilowane wygenerowanego pliku. Nawet jeśli projekt nie może zbudować jako całość, poszczególnych PEs tymczasowego może nadal być dostępny dla projektantów.  
   
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  Narzędzi niestandardowych, które wykorzystać zalety tymczasowe środowiska Preinstalacyjnego należy wykonać następujące reguły:  
   
--   `GeneratesDesignTimeSource`musi być równa 1 w rejestrze.  
+-   `GeneratesDesignTimeSource` musi być równa 1 w rejestrze.  
   
      Kompilacja pliku wykonywalnego nie program nie działa bez tego ustawienia.  
   

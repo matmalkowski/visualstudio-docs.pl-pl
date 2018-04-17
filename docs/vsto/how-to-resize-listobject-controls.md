@@ -1,12 +1,10 @@
 ---
-title: "Porady: zmiana rozmiaru formantów ListObject | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: zmiana rozmiaru formantów ListObject | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ListObject control, resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e018ed60e60c63dd47b5d56b599ea0f0499f561c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 12a81e6bb4a0484b79ad42b8fbab77db97ea82c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-listobject-controls"></a>Porady: zmiana rozmiaru formantów ListObject
   Ustawianie rozmiaru <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolować po dodaniu go do programu Microsoft Office Excel; jednak warto zmienić w późniejszym czasie. Na przykład można zmienić listy dwie kolumny na trzy kolumny.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: Dodawanie kolumn do obiektów powiązanych z danymi listy w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
-##  <a name="designtime"></a>Zmiana rozmiaru formantu ListObject w czasie projektowania  
+##  <a name="designtime"></a> Zmiana rozmiaru formantu ListObject w czasie projektowania  
  Aby zmienić rozmiar listy, kliknij i przeciągnij uchwyt zmiany rozmiaru lub ponownie zdefiniować jego rozmiaru w **Zmień rozmiar listy** okno dialogowe.  
   
 #### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Aby zmienić rozmiar listy przy użyciu okna dialogowego Zmiana rozmiaru listy  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Kliknij przycisk **OK**.  
   
-##  <a name="runtimedoclevel"></a>Zmiana rozmiaru formantu ListObject w czasie wykonywania w projektach na poziomie dokumentu  
+##  <a name="runtimedoclevel"></a> Zmiana rozmiaru formantu ListObject w czasie wykonywania w projektach na poziomie dokumentu  
  Możesz zmienić rozmiar <xref:Microsoft.Office.Tools.Excel.ListObject> formantu w czasie wykonywania za pomocą <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> metody. Nie można użyć tej metody, aby przenieść <xref:Microsoft.Office.Tools.Excel.ListObject> formant do nowej lokalizacji w arkuszu. Nagłówki muszą znajdować się w tym samym wierszu, a po zmianie rozmiaru <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli musi nakładają się na oryginalnym obiekt listy. Po zmianie rozmiaru <xref:Microsoft.Office.Tools.Excel.ListObject> formant musi zawierać wiersz nagłówka i co najmniej jeden wiersz danych.  
   
 #### <a name="to-resize-a-list-object-programmatically"></a>Aby zmienić rozmiar obiektu listy programowo  
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
-##  <a name="runtimeaddin"></a>Zmiana rozmiaru ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO  
+##  <a name="runtimeaddin"></a> Zmiana rozmiaru ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO  
  Możesz zmienić rozmiar <xref:Microsoft.Office.Tools.Excel.ListObject> sterowania wszystkie otwarte arkusza w czasie wykonywania. Aby uzyskać więcej informacji o sposobie dodawania <xref:Microsoft.Office.Tools.Excel.ListObject> sterowania do arkusza za pomocą dodatku VSTO, zobacz [porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 #### <a name="to-resize-a-list-object-programmatically"></a>Aby zmienić rozmiar obiektu listy programowo  

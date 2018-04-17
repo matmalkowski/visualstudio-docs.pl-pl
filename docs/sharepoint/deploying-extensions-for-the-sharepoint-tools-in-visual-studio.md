@@ -1,13 +1,10 @@
 ---
-title: "Wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio
   Aby wdrożyć rozszerzenie narzędzia programu SharePoint, należy utworzyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX), który zawiera zestaw rozszerzenia i inne pliki, które chcesz dystrybuować z rozszerzeniem. Pakiet VSIX jest skompresowany plik znajdujący się standard otwarte konwencje pakietów (OPC). Pakiety VSIX z rozszerzeniem .vsix.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu lub elementu szablon projektu, a następnie wybierz **Zwolnij projekt**.  
   
-7.  Ponownie otwórz menu skrótów węzła projektu, a następnie wybierz pozycję **Edytuj***YourTemplateProjectName***.csproj** lub **Edytuj**  *YourTemplateProjectName***vbproj**.  
+7.  Ponownie otwórz menu skrótów węzła projektu, a następnie wybierz pozycję **Edytuj***YourTemplateProjectName***.csproj** lub **Edytuj***YourTemplateProjectName***. vbproj**.  
   
 8.  Znajdź następujące `VSTemplate` elementu w pliku projektu.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Omówienie modelu obiektu Wstążka | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie modelu obiektu Wstążka | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-object-model-overview"></a>Model obiektu Wstążka ― Omówienie
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Udostępnia silnie typizowany obiekt modelu, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania. Na przykład możesz można dynamicznie wypełnianie formantów menu lub pokazać lub ukryć kontrolki kontekstowej. Na Wstążce, ale tylko w przypadku, przed załadowaniem wstążki według aplikacji pakietu Office, można dodać kart, grup i kontrolek. Aby uzyskać informacje, zobacz [ustawienie właściwości że stają się tylko do odczytu](#SettingReadOnlyProperties).  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
   
  Ten model obiektu Wstążka składa się głównie z [klasy wstążki](#RibbonClass), [zdarzenia wstążki](#RibbonEvents), i [klasy formantów wstążki](#RibbonControlClasses).  
   
-##  <a name="RibbonClass"></a>Klasa wstążki  
+##  <a name="RibbonClass"></a> Klasa wstążki  
  Po dodaniu nowego **wstążki (projektanta wizualnego)** elementu do projektu programu Visual Studio dodaje **wstążki** klasy do projektu. **Wstążki** klasa dziedziczy <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> klasy.  
   
  Ta klasa jest wyświetlany jako częściowe klasy, która jest dzielone na Wstążce pliku kodu i pliku kodu projektanta wstążki.  
   
-##  <a name="RibbonEvents"></a>Zdarzenia wstążki  
+##  <a name="RibbonEvents"></a> Zdarzenia wstążki  
  **Wstążki** klasa zawiera trzy następujące zdarzenia:  
   
 |Zdarzenie|Opis|  
@@ -45,21 +42,21 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Umożliwia utworzenie pamięci podręcznej obrazów w dostosowywania wstążki po załadowaniu wstążki. Możesz uzyskać są bardziej wydajne nieznaczne podczas pisania kodu do pamięci podręcznej obrazów wstążki w tej obsłudze zdarzeń. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Uruchamiany po zamknięciu wystąpienia wstążki.|  
   
-##  <a name="RibbonControlClasses"></a>Formanty Wstążki  
+##  <a name="RibbonControlClasses"></a> Formanty Wstążki  
  <xref:Microsoft.Office.Tools.Ribbon> Przestrzeń nazw zawiera typ dla każdego formantu, który pojawi się w **formantów wstążki pakietu Office** grupy **przybornika**.  
   
  W poniższej tabeli przedstawiono typ dla każdego `Ribbon` formantu. Aby uzyskać opis każdego formantu, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
   
 |Nazwa formantu|Nazwa klasy|  
 |------------------|----------------|  
-|**Pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
+|**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Przycisk**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**Grupa przycisków**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**Lista rozwijana**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**Pole edycji**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Galerii**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**Galeria**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Grupy**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Etykieta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
@@ -87,14 +84,14 @@ ms.lasthandoff: 01/10/2018
 |Pobierz obraz wyświetlany w formancie.|Użyj właściwości obrazu.|  
 |Zmienianie etykiety formantu.|Użyj właściwości etykiety.|  
 |Dodawanie danych do formantu.|Użyj właściwości tagu.|  
-|Pobierz elementy w <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, lub<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>formant.|Użyj właściwości elementów.|  
+|Pobierz elementy w <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, lub<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> formant.|Użyj właściwości elementów.|  
 |Dodaj elementy do <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, lub <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> formantu.|Użyj właściwości elementów.|  
 |Dodawanie formantów do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Użyj właściwości elementów.<br /><br /> Do dodawania formantów do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po załadowaniu wstążki do aplikacji pakietu Office, musisz ustawić <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> właściwości **true** przed załadowaniem wstążki do aplikacji pakietu Office. Aby uzyskać informacje, zobacz [ustawienie właściwości że stają się tylko do odczytu](#SettingReadOnlyProperties).|  
 |Pobierz zaznaczonego elementu <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, lub <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Użyj właściwości SelectedItem. Aby uzyskać <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> właściwości.|  
 |Pobierz grupy <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> właściwości.|  
 |Określ liczbę wierszy i kolumn, które są widoczne w <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> i <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> właściwości.|  
   
-##  <a name="SettingReadOnlyProperties"></a>Ustawianie właściwości, które stają się tylko do odczytu  
+##  <a name="SettingReadOnlyProperties"></a> Ustawianie właściwości, które stają się tylko do odczytu  
  Niektóre właściwości można ustawić tylko przed ładuje wstążki. Istnieją trzy miejsca ustawić te właściwości:  
   
 -   W programie Visual Studio **właściwości** okna.  
@@ -131,7 +128,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a>Właściwości, które stają się tylko do odczytu  
+###  <a name="ReadOnlyProperties"></a> Właściwości, które stają się tylko do odczytu  
  W poniższej tabeli przedstawiono właściwości, które można ustawić tylko przed ładuje wstążki.  
   
 > [!NOTE]  
@@ -142,14 +139,14 @@ ms.lasthandoff: 01/10/2018
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Właściwość ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**Właściwości ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**właściwości controlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**Dynamiczne**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**Dynamic**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Globalne**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Grupy**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**Nazwa_obrazu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Element MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**Element maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Nazwa**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Stanowisko**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
@@ -186,7 +183,7 @@ ms.lasthandoff: 01/10/2018
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|*nadawca*|<xref:System.Object> Reprezentujący formant, który wywołał zdarzenie.|  
+|*Nadawca*|<xref:System.Object> Reprezentujący formant, który wywołał zdarzenie.|  
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> zawierający <xref:Microsoft.Office.Core.IRibbonControl>. Umożliwia dostęp do dowolnej właściwości, która nie jest dostępna w modelu obiektu Wstążka udostępniane przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Zobacz też  

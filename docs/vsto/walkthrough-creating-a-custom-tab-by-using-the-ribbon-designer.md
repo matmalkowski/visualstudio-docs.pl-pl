@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Wskazówki: tworzenie kart niestandardowych za pomocą Projektanta wstążki
   Za pomocą projektanta wstążki, można tworzenie kart niestandardowych, a następnie dodaj i ustawianie formantów na nim.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio zostanie otwarty nowy skoroszyt w Projektancie i dodaje **MyExcelRibbon** projektu do **Eksploratora rozwiązań**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Tworzenie okienka akcji  
+##  <a name="BKMK_CreateActionsPanes"></a> Tworzenie okienka akcji  
  Dodaj dwa okienka Akcje niestandardowe do projektu. Pokazywanie i ukrywanie okienka te akcje na karcie niestandardowe przyciski później zostaną dodane.  
   
 #### <a name="to-create-actions-panes"></a>Aby utworzyć okienka akcji  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Powtórz kroki od 1 do 5, aby utworzyć drugi okienka Akcje i etykiety. Ustaw **tekst** właściwości drugi etykiety w celu **2 okienka Akcje**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Tworzenie kart niestandardowych  
+##  <a name="BKMK_CreateCustomTab"></a> Tworzenie kart niestandardowych  
  Jednym z wytycznymi projektowania aplikacji pakietu Office jest użytkowników powinien zawsze mieć formantu interfejsu użytkownika aplikacji pakietu Office. Aby dodać tę możliwość dla okienka akcji, można dodać przyciski pokazać lub ukryć poszczególnych okienkach akcji z kart niestandardowych na Wstążce. Aby utworzyć kart niestandardowych, Dodaj **wstążki (projektanta wizualnego)** elementu do projektu. Projektant pomaga Dodaj formanty pozycji, ustaw właściwości kontrolki i obsługę zdarzeń formantu.  
   
 #### <a name="to-create-a-custom-tab"></a>Aby utworzyć kart niestandardowych  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Ustaw **etykiety** właściwości **ukrywanie okienka Akcje**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Wyświetlanie i ukrywanie okienka akcji za pomocą przycisków na karcie niestandardowe  
+##  <a name="BKMK_HideShowActionsPane"></a> Wyświetlanie i ukrywanie okienka akcji za pomocą przycisków na karcie niestandardowe  
  Ostatnim krokiem jest Dodaj kod, który odpowiada użytkownik. Dodawanie obsługi zdarzeń <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzenia dwóch przycisków i <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> zdarzeń przycisk przełącznika. Dodaj kod, aby te programy obsługi zdarzeń, aby umożliwić wyświetlanie i ukrywanie okienka akcji.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Aby ukryć i pokazać za pomocą przycisków na niestandardowej karcie okienka akcji  

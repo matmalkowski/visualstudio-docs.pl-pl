@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Złożone powiązanie danych w VSTO dodatku projektu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Złożone powiązanie danych w VSTO dodatku projektu | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95f8d2d30bb5d8bedfe70f0b15f9e956d91f4345
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 46225b8010ade4eaa7188f50ed7c31775e49b39d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Wskazówki: Złożone danych powiązania w projekcie dodatku narzędzi VSTO
   Dane można powiązać z formanty hosta i formantów formularzy systemu Windows w projektów dodatku VSTO. W tym przewodniku pokazano, jak dodawanie formantów do arkusza programu Microsoft Office Excel i powiązanie kontrolek z danymi w czasie wykonywania.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   Dostęp do działającego wystąpienia programu SQL Server 2005 lub SQL Server 2005 Express, która ma `AdventureWorksLT` przykładową bazę danych do niego dołączony. Możesz pobrać `AdventureWorksLT` bazy danych z [witryny sieci Web w witrynie CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Aby uzyskać więcej informacji na temat dołączania bazy danych zobacz następujące tematy:  
   

@@ -1,36 +1,32 @@
 ---
-title: "Folder — Element (szablony projektu Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Folder — Element (szablony projektu Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder — Element (szablony projektów Visual Studio)
 Określa folder, który zostanie dodany do projektu.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent >  
- \<Projekt >  
+ \<Project>  
  \<Folder >  
   
 ## <a name="syntax"></a>Składnia  
@@ -56,17 +52,17 @@ Określa folder, który zostanie dodany do projektu.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|`Folder`|Określa folder do dodania do projektu. `Folder`elementy mogą zawierać elementu podrzędnego `Folder` elementów.|  
+|`Folder`|Określa folder do dodania do projektu. `Folder` elementy mogą zawierać elementu podrzędnego `Folder` elementów.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Określa plik, aby dodać do projektu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Element podrzędny opcjonalne [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Element podrzędny opcjonalne [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Uwagi  
- `Folder`jest opcjonalne podrzędnym `Project`.  
+ `Folder` jest opcjonalne podrzędnym `Project`.  
   
  Można użyć dowolnej z następujących metod do organizowania elementów projektu do folderów w szablonie:  
   

@@ -1,18 +1,18 @@
 ---
-title: "Porady: Tworzenie biblioteki działań | Dokumentacja firmy Microsoft"
+title: 'Porady: Tworzenie biblioteki działań | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e3f84636273de253937ebf5c91cff066b9f85
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Porady: Tworzenie biblioteki działań
 Działania niestandardowe są używane do model procesów biznesowych konkretnego w przepływie pracy. Szablon biblioteki działań w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] została przekazana umożliwiają tworzenie takich działań niestandardowych sposób wizualny przy użyciu projektanta przepływów pracy systemu Windows.
@@ -36,7 +36,7 @@ Działania niestandardowe są używane do model procesów biznesowych konkretneg
 7.  W **rozwiązania** polu, wpisz nazwę opisową dla rozwiązania, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...**  otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
+    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie **Nowy projekt...** otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
 
 8.  Szablon projektu tworzy definicji działania w języku XAML. Projektant przepływu pracy systemu Windows otwiera i wyświetla obszar roboczy dla działania niestandardowego.
 

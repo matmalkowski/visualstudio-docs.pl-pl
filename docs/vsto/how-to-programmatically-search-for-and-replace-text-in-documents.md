@@ -1,12 +1,10 @@
 ---
-title: "Porady: programowane wyszukiwanie i zastępowanie tekstu w dokumentach | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: programowane wyszukiwanie i zastępowanie tekstu w dokumentach | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 658da08ee7d61651b02d7d42158637dad7ab16c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9967fb6bb0b9ecf377763c25037089bf600145c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>Porady: Programowane wyszukiwanie i zastępowanie tekstu w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find> Obiekt jest elementem członkowskim <xref:Microsoft.Office.Interop.Word.Selection> i <xref:Microsoft.Office.Interop.Word.Range> obiektów i można użyć dowolnego z nich do wyszukiwania tekstu w dokumentach programu Microsoft Office Word. Polecenie replace jest rozszerzeniem polecenie find.  
@@ -113,11 +112,11 @@ ms.lasthandoff: 01/10/2018
   
 2.  Użyj <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody <xref:Microsoft.Office.Interop.Word.Find> obiekt, aby zastąpić każdego znalezionego elementu. Aby określić elementy, które można zastąpić, użyj *Zastąp* parametru. Ten parametr może mieć jedną z następujących <xref:Microsoft.Office.Interop.Word.WdReplace> wartości:  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll>Zamienia wszystkie znalezione elementy.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> Zamienia wszystkie znalezione elementy.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone>zastępuje brak znaleziono elementów.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> zastępuje brak znaleziono elementów.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>Zamienia pierwszy znaleziony element.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> Zamienia pierwszy znaleziony element.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: programowane Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   

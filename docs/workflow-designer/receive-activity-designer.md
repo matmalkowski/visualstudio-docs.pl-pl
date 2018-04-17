@@ -1,5 +1,5 @@
 ---
-title: "Projektant działań odbierania | Dokumentacja firmy Microsoft"
+title: Projektant działań odbierania | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Odbieranie Projektant działań
 **Receive** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.Receive> działania. A <xref:System.ServiceModel.Activities.Receive> działania jest działaniem, który odbiera komunikat, który może być wbudowany typ takich jak <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> lub <xref:System.Xml.Linq.XElement>, lub kontrakt danych zdefiniowanym przez aplikację, kontraktu komunikatu lub klasy XML, który można serializować.
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|Określa zbiór znanych typów dla operacji usługi implementowanych przez ten <xref:System.ServiceModel.Activities.Receive> działania. Tej właściwości należy użyć w połączeniu z <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> ustawioną właściwość <xref:System.Runtime.Serialization.DataContractSerializer>. Jest ignorowana, jeśli <xref:System.Xml.Serialization.XmlSerializer> jest używany.<br /><br /> Kliknij przycisk wielokropka obok **element KnownTypes** w siatce właściwości do wyświetlenia **edytora kolekcji typu** okno dialogowe, z którym można dodać odpowiednie typy. Aby uzyskać więcej informacji na temat używania tego pola, zobacz [okno dialogowe Edytor kolekcji typu](../workflow-designer/type-collection-editor-dialog-box.md) tematu.|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|Określa <xref:System.Net.Security.ProtectionLevel> dla wiadomości.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> oznacza tylko uwierzytelnianie.<br />2. <xref:System.Net.Security.ProtectionLevel> oznacza podpisywania danych do zapewnienia integralności danych przesyłanych.<br />3. <xref:System.Net.Security.ProtectionLevel> oznacza szyfrowania i podpisywania danych, aby zapewnić poufności i integralności danych przesyłanych.|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Określa typ serializatora do użycia dla operacji usługi implementowane przez <xref:System.ServiceModel.Activities.Receive> działania. Wartość domyślna to <xref:System.Runtime.Serialization.DataContractSerializer>, który serializuje i deserializuje wystąpienia typu w strumieniu XML lub dokument, który używa kontraktu danych. <xref:System.Xml.Serialization.XmlSerializer> Można także jeśli większą kontrolę jest wymagane przez kod XML.|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Określa akcję nagłówek wiadomości. Jeśli nie jest jawnie ustawiona wartość domyślnie: https://tempuri.org/ {przestrzeń nazw kontraktu usługi} / {Nazwa kontraktu usługi} / {nazwa operacji}.|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Określa akcję nagłówek wiadomości. Jeśli nie jest jawnie ustawiona wartość domyślnie: https://tempuri.org/{service przestrzeń nazw kontraktu} / {Nazwa kontraktu usługi} / {nazwa operacji}.|
 
 ## <a name="see-also"></a>Zobacz także
 

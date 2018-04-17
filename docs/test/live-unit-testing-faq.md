@@ -1,8 +1,8 @@
 ---
-title: "Często zadawane pytania dotyczące testowania jednostek na żywo | Dokumentacja firmy Microsoft"
+title: Często zadawane pytania dotyczące testowania jednostek na żywo | Dokumentacja firmy Microsoft
 ms.date: 2017-10-03
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing FAQ
@@ -10,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f3e99a01371eeabe9b3959c8f744afa5a93a86c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Aktywne testy jednostkowe często zadawane pytania
 
@@ -38,7 +38,7 @@ Testowanie jednostkowe na żywo współpracuje z trzech platform testowych popul
 </tr>
 <tr>
    <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio version 2.2.0-beta3-build1187</td>
+   <td> 2.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio</td>
    <td>xunit 1.9.2</td>
 </tr>
 <tr>

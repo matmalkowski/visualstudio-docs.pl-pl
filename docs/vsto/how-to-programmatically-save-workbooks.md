@@ -1,12 +1,10 @@
 ---
-title: "Porady: programowane zapisywanie skoroszytów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: programowane zapisywanie skoroszytów | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - workbooks, saving backup copies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4d184d7122459b85b3ad20fbf8338a53f28bd6c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4f3421c5a00d062fb49cc73b8a7f2ba592dc5d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Porady: Programowane zapisywanie skoroszytów
   Istnieje kilka sposobów, aby zapisać skoroszyt. Skoroszyt programu bez zmiany ścieżki. Jeśli przed nie zapisano skoroszyt, należy zapisać skoroszyt, określając ścieżkę. Bez jawnego ścieżki program Microsoft Office Excel zapisuje plik w bieżącym folderze o nazwie, które podano podczas jej tworzenia. Można także zapisać kopię skoroszytu bez modyfikowania Otwórz skoroszyt w pamięci.  

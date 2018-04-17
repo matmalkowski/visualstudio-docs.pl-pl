@@ -1,24 +1,23 @@
 ---
-title: "Zwiększanie wydajności dodatku VSTO | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zwiększanie wydajności dodatku VSTO | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Zwiększanie wydajności dodatku VSTO
   Można zapewnić użytkownikom lepsze środowisko optymalizując dodatków VSTO, utworzonych na potrzeby aplikacji, aby szybko rozpocząć, zamknij pakietu Office, otwórz elementów i wykonywanie innych zadań. Jeśli Twoje dodatku VSTO dla programu Outlook, można także zmniejszyć ryzyko, że dodatek VSTO zostanie wyłączona z powodu niskiej wydajności. Można zwiększyć wydajność sieci dodatku VSTO zaimplementowanie następujących strategii:  
@@ -33,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji dotyczących sposobu optymalizacji dodatku VSTO dla programu Outlook, zobacz [kryteria wydajności zachować dodatków VSTO włączone](http://go.microsoft.com/fwlink/?LinkID=266503).  
   
-##  <a name="Load"></a>Załadować dodatków VSTO na żądanie  
+##  <a name="Load"></a> Załadować dodatków VSTO na żądanie  
  Można skonfigurować dodatku VSTO załadować tylko w następujących okolicznościach:  
   
 -   Po raz pierwszy użytkownik uruchamia aplikację po dodatku VSTO.  
@@ -82,11 +81,11 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Aby uzyskać informacje o sposobie tworzenia zdarzenia postkompilacyjnego w projekcie C#, zobacz [porady: Określanie zdarzeń kompilacji &#40; K & 35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Aby uzyskać informacje o sposobie tworzenia zdarzenia postkompilacyjnego w projekcie C#, zobacz [porady: Określanie zdarzeń kompilacji &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Aby dowiedzieć się, jak utworzyć zdarzenie mające miejsce po kompilacji w projektach Visual Basic, zobacz [porady: Określanie zdarzeń kompilacji &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Aby dowiedzieć się, jak utworzyć zdarzenie mające miejsce po kompilacji w projektach Visual Basic, zobacz [porady: Określanie zdarzeń kompilacji &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
-##  <a name="Publish"></a>Publikowanie rozwiązań pakietu Office przy użyciu Instalatora Windows  
+##  <a name="Publish"></a> Publikowanie rozwiązań pakietu Office przy użyciu Instalatora Windows  
  Rozwiązanie w przypadku publikowania za pomocą Instalatora Windows, Visual Studio 2010 Tools for Office Runtime pomija następujące kroki po załadowaniu w dodatku VSTO.  
   
 -   Sprawdzanie poprawności schematu manifestu.  
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu Instalatora Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Bypass"></a>Obejście wstążki odbicia  
+##  <a name="Bypass"></a> Obejście wstążki odbicia  
  W przypadku tworzenia rozwiązania przy użyciu [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], upewnij się, że użytkownicy zainstalowano najnowszą wersję programu Visual Studio 2010 Tools for Office Runtime, podczas wdrażania rozwiązania. Starsze wersje tego środowiska uruchomieniowego uwzględniane w zestawy rozwiązania, aby zlokalizować dostosowań Wstążki. Ten proces może spowodować dodatku VSTO załadować wolniej.  
   
  Alternatywnie można zapobiec dowolnej wersji programu Visual Studio 2010 Tools for Office Runtime za pomocą odbicia. Aby zidentyfikować dostosowań Wstążki. Aby użyć tej strategii, należy zastąpić `CreateRibbonExtensibility` metoda oraz obiekty jawnie zwracany wstążki. Jeśli Twoje dodatku VSTO nie zawiera żadnych dostosowań Wstążki, zwróć `null` wewnątrz metody.  
@@ -110,7 +109,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-##  <a name="Perform"></a>Wykonywanie operacji kosztowne w oddzielnych wykonanie wątku  
+##  <a name="Perform"></a> Wykonywanie operacji kosztowne w oddzielnych wykonanie wątku  
  Należy rozważyć przeprowadzanie (takich jak długotrwałych zadań, połączenia z bazą danych lub inne rodzaje połączeń sieciowych) w oddzielnym wątku. Aby uzyskać więcej informacji, zobacz [Obsługa wątkowości w pakiecie Office](../vsto/threading-support-in-office.md).  
   
 > [!NOTE]  

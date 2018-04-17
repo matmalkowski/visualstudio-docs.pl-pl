@@ -1,24 +1,24 @@
 ---
-title: "Projektanci działań migracji | Dokumentacja firmy Microsoft"
+title: Projektanci działań migracji | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86db81d54d332b8e28946e9577936e6738240b07
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 780b5f6a95991af4a782bbed12362381efae7430
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migration-activity-designers"></a>Projektanci działań migracji
 Projektantów działań migracji są używane do wywoływania 3.0/3.5 działań przepływu pracy z obiektów docelowych przepływu pracy [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Tematy zawarte w tej sekcji zawierają wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] projektantów działań.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Interop](../workflow-designer/interop-activity-designer.md)  
+ [Współdziałanie](../workflow-designer/interop-activity-designer.md)  
  Używany do tworzenia i konfigurowania <xref:System.Activities.Statements.Interop> działania.  
   
 ## <a name="reference"></a>Tematy pomocy  

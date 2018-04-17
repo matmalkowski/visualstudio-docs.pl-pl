@@ -1,12 +1,10 @@
 ---
-title: "Porady: programowane Aktualizowanie tekstu zakładki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: programowane Aktualizowanie tekstu zakładki | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Bookmark control, updating contents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: af3252f87bd3c7d6a6c6e75ae85cea4cd75bd1e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d041ff303a27d4eefee4f36776d5c5eda7c16b32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Porady: Programowane aktualizowanie tekstu zakładki
   Tekst można wstawiać do symbolu zastępczego zakładki w dokumencie programu Microsoft Office Word tak, aby można było odzyskać tekst w późniejszym czasie lub tekst w zakładki. Jeśli tworzysz dostosowania poziomie dokumentu, można także zaktualizować tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> formant, który jest powiązany z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -33,11 +32,11 @@ ms.lasthandoff: 01/10/2018
   
 -   A <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki hosta.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark>Formanty rozszerzyć natywnego <xref:Microsoft.Office.Interop.Word.Bookmark> obiektów przez włączenie wiązania z danymi i udostępnia zdarzenia. Aby uzyskać informacje o formantach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
+     <xref:Microsoft.Office.Tools.Word.Bookmark> Formanty rozszerzyć natywnego <xref:Microsoft.Office.Interop.Word.Bookmark> obiektów przez włączenie wiązania z danymi i udostępnia zdarzenia. Aby uzyskać informacje o formantach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
   
 -   Natywny <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark>obiekty nie mają możliwości powiązania zdarzenia lub dane.  
+     <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty nie mają możliwości powiązania zdarzenia lub dane.  
   
  Po przypisaniu tekst do zakładki to zachowanie różni się między <xref:Microsoft.Office.Interop.Word.Bookmark> i <xref:Microsoft.Office.Tools.Word.Bookmark>. Aby uzyskać więcej informacji, zobacz [formant zakładki](../vsto/bookmark-control.md).  
   

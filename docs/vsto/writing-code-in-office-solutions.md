@@ -1,13 +1,10 @@
 ---
-title: "Pisanie kodu w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pisanie kodu w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Pisanie kodu dla rozwiązań pakietu Office
   Brak niektórych aspektów pisanie kodu w projektach pakietu Office, które różnią się od innych typów projektów programu Visual Studio. Wiele z tych różnic dotyczące sposobu modele obiektów pakietu Office są widoczne dla kodu zarządzanego. Inne różnice są związane z projektu projektów pakietu Office.  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Aby uzyskać więcej informacji, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Zagadnienia dotyczące Namespace w rozwiązaniach pakietu Office  
- Nie można zmienić *domyślny obszar nazw* (lub *głównej przestrzeni nazw* w języku Visual Basic) programu Office project po utworzeniu projektu. Domyślny obszar nazw będzie zawsze zgodna z nazwą projektu, określone podczas tworzenia projektu. Jeśli zmienisz projekt, nie powoduje zmiany domyślnej przestrzeni nazw. Aby uzyskać więcej informacji o domyślnej przestrzeni nazw w projektach, zobacz [&#40; stron aplikacji, Projektant projektu K & 35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) i [&#40; stron aplikacji, Projektant projektu Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Nie można zmienić *domyślny obszar nazw* (lub *głównej przestrzeni nazw* w języku Visual Basic) programu Office project po utworzeniu projektu. Domyślny obszar nazw będzie zawsze zgodna z nazwą projektu, określone podczas tworzenia projektu. Jeśli zmienisz projekt, nie powoduje zmiany domyślnej przestrzeni nazw. Aby uzyskać więcej informacji o domyślnej przestrzeni nazw w projektach, zobacz [strony aplikacji, Projektant projektu &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) i [strony aplikacji, Projektant projektu &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Zmiana Namespace klas elementu hosta w projektów C#  
  Host elementu klasy (na przykład `ThisAddIn`, `ThisWorkbook`, lub `ThisDocument` klasy) mają własne przestrzenie nazw w projektach Visual C# pakietu Office. Domyślnie w przestrzeni nazw dla hosta elementów w projekcie jest zgodna z nazwą projektu, określone podczas tworzenia projektu.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Funkcja|Opis|Obsługa języka Visual Basic|Obsługa programu Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Parametry opcjonalne|Wiele metod Microsoft Office ma parametry, które nie są wymagane w przypadku wywołania metody. Jeśli nie przekazano żadnej wartości dla parametru, zostanie użyta domyślna wartość.|Visual Basic obsługuje następujące parametry opcjonalne.|Visual C# obsługuje następujące parametry opcjonalne w większości przypadków. Aby uzyskać więcej informacji, zobacz [następujące parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Przekazywanie parametrów przez odwołanie|Parametry opcjonalne w większości podstawowe zestawy międzyoperacyjne Microsoft Office może być przekazywany przez wartość. Jednak w niektórych podstawowe zestawy międzyoperacyjne parametry opcjonalne, które akceptują typy referencyjne muszą być przekazywane przez odwołanie.<br /><br /> Aby uzyskać więcej informacji na temat parametrów typu odwołanie i wartość, zobacz [przekazywanie argumentów według wartości i według odwołania &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (w języku Visual Basic) i [przekazywanie parametrów &#40; K & 35; Przewodnik programowania w języku &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Żadne dodatkowe czynności niezbędne do przekazania parametrów odwołania. Kompilator Visual Basic automatycznie przekazuje parametry przez odwołanie, gdy jest to konieczne.|Kompilator Visual C# w większości przypadków jest automatycznie przekazuje parametry przez odwołanie, gdy jest to konieczne. Aby uzyskać więcej informacji, zobacz [następujące parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Przekazywanie parametrów przez odwołanie|Parametry opcjonalne w większości podstawowe zestawy międzyoperacyjne Microsoft Office może być przekazywany przez wartość. Jednak w niektórych podstawowe zestawy międzyoperacyjne parametry opcjonalne, które akceptują typy referencyjne muszą być przekazywane przez odwołanie.<br /><br /> Aby uzyskać więcej informacji na temat parametrów typu odwołanie i wartość, zobacz [przekazywanie argumentów według wartości i według odwołania &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (w języku Visual Basic) i [przekazywanie parametrów &#40;C&#35; Przewodnik programowania w języku&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Żadne dodatkowe czynności niezbędne do przekazania parametrów odwołania. Kompilator Visual Basic automatycznie przekazuje parametry przez odwołanie, gdy jest to konieczne.|Kompilator Visual C# w większości przypadków jest automatycznie przekazuje parametry przez odwołanie, gdy jest to konieczne. Aby uzyskać więcej informacji, zobacz [następujące parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Właściwości sparametryzowane|Niektóre właściwości akceptują parametrów i działać jako funkcje tylko do odczytu.|Visual Basic obsługuje właściwości, które akceptują parametrów.|Visual C# obsługuje właściwości, które akceptują parametrów.|  
 |Późne powiązania|Późne wiązanie obejmuje określenie właściwości obiektów w czasie wykonywania, zamiast zmiennych Rzutowanie na typ obiektu, w czasie projektowania.|Visual Basic wykonuje późne wiązanie podczas **Option Strict** jest wyłączona. Gdy **Option Strict** jest włączona, należy jawnie przekonwertować obiekty i Użyj typów w <xref:System.Reflection> przestrzeni nazw, aby dostęp do elementów członkowskich z późnym wiązaniem. Aby uzyskać więcej informacji, zobacz [późne wiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md).|Visual C# wykonuje późne wiązanie w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Aby uzyskać więcej informacji, zobacz [późne wiązania w rozwiązaniach pakietu Office](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 |Funkcja|Opis|Obsługa języka Visual Basic i Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Indeksy tablicy|Dolnej granicy tablicy kolekcji aplikacji pakietu Microsoft Office rozpoczyna się od 1. Visual Basic i Visual C# Użyj tablic oparte na 0. Aby uzyskać więcej informacji, zobacz [tablice &#40; K & 35; Przewodnik programowania w języku &#41; ](/dotnet/csharp/programming-guide/arrays/index) i [tablic w języku Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Aby uzyskać dostęp do pierwszego elementu w kolekcji w modelu obiektów z aplikacji pakietu Microsoft Office, należy użyć indeks 1 zamiast 0.|  
+|Indeksy tablicy|Dolnej granicy tablicy kolekcji aplikacji pakietu Microsoft Office rozpoczyna się od 1. Visual Basic i Visual C# Użyj tablic oparte na 0. Aby uzyskać więcej informacji, zobacz [tablice &#40;C&#35; przewodnik programowania w języku&#41; ](/dotnet/csharp/programming-guide/arrays/index) i [tablic w języku Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Aby uzyskać dostęp do pierwszego elementu w kolekcji w modelu obiektów z aplikacji pakietu Microsoft Office, należy użyć indeks 1 zamiast 0.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   

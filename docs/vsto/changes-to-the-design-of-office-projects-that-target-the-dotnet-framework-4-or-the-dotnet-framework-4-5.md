@@ -1,12 +1,10 @@
 ---
-title: "Zmiany w projekcie projektów pakietu Office, które odnoszą się do programu .NET Framework 4 lub .NET Framework 4.5 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zmiany w projekcie projektów pakietu Office, które odnoszą się do programu .NET Framework 4 lub .NET Framework 4.5 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Zmiany w projektach związanych z pakietem Office tworzonych pod kątem oprogramowania .NET Framework w wersji 4 lub 4.5
   Począwszy od [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio wprowadzono pewne zmiany do projektu projektów pakietu Office przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym. Jeśli znasz projektów pakietu Office w poprzednich wersjach programu Visual Studio, należy pamiętać o tych zmianach przed opracowanie projektach pakietu Office przeznaczonych te wersje programu .NET Framework 4.0 lub nowszy. Domyślnie wszystkie projekty, które są tworzone przy użyciu programu Visual Studio 2013 lub nowszy dla środowiska .NET Framework 4.0 lub nowszy.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |Składnia metody GetVstoObject i HasVstoObject została zmieniona.|Obiekt Globals.Factory musi przejść do tych metod dostępu na obiektów macierzystych z podstawowe zestawy międzyoperacyjne (PIAs) lub można uzyskać dostępu do tych metod dla obiektu, który jest zwracany za pomocą właściwości Globals.Factory w projekcie. Aby uzyskać więcej informacji, zobacz [aktualizowanie programu Excel i Word projekty, których można dokonać migracji do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Zdarzenia Word formanty zawartości są skojarzone z nowych delegatów.|Należy zmodyfikować każdy kod obsługujący zdarzenia Word formantów zawartości do określenia nowych delegatów. Aby uzyskać więcej informacji, zobacz [aktualizowanie programu Excel i Word projekty, których można dokonać migracji do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Nazwa klasy OLEObject i OLEControl została zmieniona.|Należy zmodyfikować kodu, który używa wystąpieniami tych klas, aby użyć <xref:Microsoft.Office.Tools.Excel.ControlSite> lub <xref:Microsoft.Office.Tools.Word.ControlSite> zamiast obiektów. Aby uzyskać więcej informacji, zobacz [aktualizowanie programu Excel i Word projekty, których można dokonać migracji do programu .NET Framework 4 lub .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Host klasy elementów, takich jak `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, i `ThisAddIn`, nie zapewniają już metodę Dispose, którą można zastąpić.|Należy przenieść cały kod w zastąpienie metody Dispose obsługi zdarzeń zamknięcia systemu w klasie elementu hosta, na przykład `ThisAddIn_Shutdown`i Usuń zastąpienie metody Dispose z klasy elementu host.|  
+|Host klasy elementów, takich jak `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, i `ThisAddIn`, nie zapewniają już metodę Dispose, którą można zastąpić.|Należy przenieść cały kod w zastąpienie metody Dispose obsługi zdarzeń zamknięcia systemu w klasie elementu hosta, na przykład `ThisAddIn_Shutdown`i Usuń zastąpienie metody Dispose z klasy elementu host.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Migracja rozwiązań pakietu Office do programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

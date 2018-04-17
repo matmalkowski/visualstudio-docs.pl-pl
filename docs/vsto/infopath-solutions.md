@@ -1,12 +1,10 @@
 ---
-title: "Rozwiązania InfoPath | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązania InfoPath | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], InfoPath
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4e59b91ff6159af8f6e5736621c0443d3d96c8b5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9db28542e4141767be55241b98e0a6b762b0e236
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="infopath-solutions"></a>InfoPath — Rozwiązania
   Program Visual Studio udostępnia szablony projektów, które umożliwia tworzenie dodatków narzędzi VSTO dla programu Microsoft Office InfoPath 2013 i InfoPath 2010. InfoPath nie jest dostępna w pakiety Office 2016.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="automating-infopath-by-using-an-add-in"></a>Automatyzowanie programu InfoPath za pomocą dodatku  
  Aby uzyskać dostęp do modelu obiektów programu InfoPath z dodatku VSTO dla pakietu Office utworzone za pomocą narzędzi programowania pakietu Office w Visual Studio, użyj `Application` pole `ThisAddIn` klasy w projekcie. `Application` Pola zwraca <xref:Microsoft.Office.Interop.InfoPath.Application> obiekt reprezentujący bieżące wystąpienie programu InfoPath. Aby uzyskać więcej informacji, zobacz [programowania VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- Podczas wywoływania InfoPath object model z dodatku VSTO używasz typy, które zostały opublikowane w podstawowego zestawu międzyoperacyjnego dla programu InfoPath. Podstawowy zestaw międzyoperacyjny działa jako mostka między kodu zarządzanego w dodatku VSTO i model obiektów COM w InfoPath. Wszystkie typy w podstawowy zestaw międzyoperacyjny InfoPath są zdefiniowane w <xref:Microsoft.Office.Interop.InfoPath> przestrzeni nazw. Aby uzyskać więcej informacji na temat InfoPath podstawowy zestaw międzyoperacyjny zobacz [o Microsoft Office InfoPath podstawowego zestawu międzyoperacyjnego](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Aby uzyskać więcej informacji na temat podstawowe zestawy międzyoperacyjne ogólnie rzecz biorąc, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
+ Podczas wywoływania InfoPath object model z dodatku VSTO używasz typy, które zostały opublikowane w podstawowego zestawu międzyoperacyjnego dla programu InfoPath. Podstawowy zestaw międzyoperacyjny działa jako mostka między kodu zarządzanego w dodatku VSTO i model obiektów COM w InfoPath. Wszystkie typy w podstawowy zestaw międzyoperacyjny InfoPath są zdefiniowane w <xref:Microsoft.Office.Interop.InfoPath> przestrzeni nazw. Aby uzyskać więcej informacji na temat InfoPath podstawowy zestaw międzyoperacyjny zobacz [o Microsoft Office InfoPath podstawowego zestawu międzyoperacyjnego](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Aby uzyskać więcej informacji na temat podstawowe zestawy międzyoperacyjne ogólnie rzecz biorąc, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="customizing-the-user-interface-of-infopath-by-using-an-add-in"></a>Dostosowywanie interfejsu użytkownika programu InfoPath za pomocą dodatku  
  Podczas tworzenia dodatku VSTO dla programu InfoPath istnieje kilka różnych opcji dostosowania interfejsu użytkownika. W poniższej tabeli wymieniono niektóre z tych opcji.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Zobacz też  
  [O zestawu międzyoperacyjnego pakietu Microsoft Office InfoPath podstawowej](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Rozwój rozwiązań Office ― omówienie &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Przegląd szablonów projektu pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przegląd szablonów projektu pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Szablony projektów pakietu Office ― Omówienie
   Microsoft Office developer tools w programie Visual Studio obejmują szablony projektów do tworzenia następujących typów rozwiązań pakietu Office:  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Dodatków VSTO](#AppLevel)  
   
- Aby uzyskać szczegółowe porównanie tych typów rozwiązań pakietu Office, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Aby uzyskać szczegółowe porównanie tych typów rozwiązań pakietu Office, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Szablony projektów pakietu Office są dostępne w **nowy projekt** okna dialogowego, w obszarze **Office** węzła **Visual C#** i **Visual Basic**języka węzłów. Każdy szablon generuje projekt o konfiguracji odpowiedniej dla aplikacji docelowej, razem z odwołaniami do zestawów i ustawieniami debugowania.  
   
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Narzędzia programistyczne pakietu Office są dołączane do niektórych wydań programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera na potrzeby programowania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a>Dostosowywanie na poziomie dokumentu  
+##  <a name="DocLevel"></a> Dostosowywanie na poziomie dokumentu  
  **Office** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów ułatwiające rozpoczęcie pracy dostosowań na poziomie dokumentu dla programu Word i Excel:  
   
 -   **Dokument 2016 VSTO i programu Word 2013**  
@@ -94,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
-##  <a name="AppLevel"></a>Dodatków VSTO  
+##  <a name="AppLevel"></a> Dodatków VSTO  
  **Office i SharePoint** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów ułatwiające rozpoczęcie pracy Tworzenie dodatków narzędzi VSTO.  
   
 -   **Dodatku narzędzi VSTO programu Excel 2013 i 2016**  
@@ -160,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |Użytkownicy mogą otwierać i modyfikować dokument, chyba że ma on ustawiony atrybut tylko do odczytu. Wszelkie zapisane zmiany są przechowywane w oryginale.|Użytkownicy mogą otworzyć szablon, aby utworzyć kopię lokalną jako nowy dokument. Nie mogą oni modyfikować oryginału, chyba że otrzymają specjalne uprawnienia.|  
 |Po otwarciu dokumentu zgłasza <xref:Microsoft.Office.Tools.Word.Document.Open> zdarzeń.|Po otwarciu szablonu zgłasza <xref:Microsoft.Office.Tools.Word.Document.New> zdarzeń.|  
   
-##  <a name="Limitations"></a>Ograniczenia Szablony globalne i dodatki programu Excel (xla plików)  
+##  <a name="Limitations"></a> Ograniczenia Szablony globalne i dodatki programu Excel (xla plików)  
  Dokumentów, skoroszytów i szablony może nie działać poprawnie jako szablony globalne lub dodatków VSTO programu Excel (xla plików).  
   
 ## <a name="word-templates"></a>Szablony programu Word  

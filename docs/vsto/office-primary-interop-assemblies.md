@@ -1,12 +1,10 @@
 ---
-title: "Podstawowe zestawy międzyoperacyjne pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Podstawowe zestawy międzyoperacyjne pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>Podstawowe zestawy międzyoperacyjne pakietu Office
   Aby korzystać z funkcji aplikacji pakietu Microsoft Office z projektu pakietu Office, należy użyć podstawowy zestaw międzyoperacyjny (PIA) dla aplikacji. PIA umożliwia kodu zarządzanego do interakcji z modelu obiektowego oparte na modelu COM aplikacji pakietu Microsoft Office.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji na temat podstawowe zestawy międzyoperacyjne zobacz [podstawowe zestawy międzyoperacyjne](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
-##  <a name="separateassemblies"></a>Oddziel podstawowe zestawy międzyoperacyjne do tworzenia i uruchamiania projektów  
+##  <a name="separateassemblies"></a> Oddziel podstawowe zestawy międzyoperacyjne do tworzenia i uruchamiania projektów  
  Visual Studio będzie korzystać różne zestawy PIAs na komputerze dewelopera. Te zestawy różnych zestawów znajdują się w następujących lokalizacjach:  
   
 -   Folder w katalogu program files.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
  PIAs pakietu Office nie są wymagane na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office. Aby uzyskać więcej informacji, zobacz [projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md).  
   
-##  <a name="usingfeatures"></a>W jednym projekcie przy użyciu funkcji wiele aplikacji pakietu Microsoft Office  
+##  <a name="usingfeatures"></a> W jednym projekcie przy użyciu funkcji wiele aplikacji pakietu Microsoft Office  
  Każdy szablon projektu pakietu Office w Visual Studio jest przeznaczona do pracy z jedną aplikację Microsoft Office. Aby korzystać z funkcji wiele aplikacji pakietu Microsoft Office lub korzystanie z funkcji w aplikacji lub składnika, który nie ma projektu w programie Visual Studio, musi Dodaj odwołanie do PIAs wymagane.  
   
  W większości przypadków należy dodać odwołania do PIAs, zainstalowanych przez program Visual Studio w obszarze %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools dla katalogu Office\PIA\. Te wersje zestawy są wyświetlane na **Framework** karty **odwołania Menedżer** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: docelowy Office aplikacji za pośrednictwem podstawowe zestawy międzyoperacyjne](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Niektóre zestawy są automatycznie dodawane do projektu po dodaniu zestawie, do którego odwołuje się do nich. Na przykład odwołania do zestawów Office.dll i Microsoft.Vbe.Interop.dll są dodawane automatycznie podczas dodawania odwołania do zestawów programu Word, Excel, Outlook, Microsoft Forms lub wykres.  
   
-##  <a name="pialist"></a>Podstawowe zestawy międzyoperacyjne aplikacji pakietu Microsoft Office  
+##  <a name="pialist"></a> Podstawowe zestawy międzyoperacyjne aplikacji pakietu Microsoft Office  
  W poniższej tabeli przedstawiono podstawowe zestawy międzyoperacyjne, które są dostępne dla [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 |Office aplikacji lub składnika|Nazwa podstawowego zestawu międzyoperacyjnego|  
@@ -118,6 +117,6 @@ ms.lasthandoff: 01/10/2018
  [Rozwiązania projektu](../vsto/project-solutions.md)   
  [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)   
  [Przegląd modelu obiektów programu Word](../vsto/word-object-model-overview.md)   
- [Informacje ogólne &#40; programowanie Office w Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

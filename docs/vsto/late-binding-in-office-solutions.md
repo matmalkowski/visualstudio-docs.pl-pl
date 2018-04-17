@@ -1,12 +1,10 @@
 ---
-title: "Późne wiązania w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Późne wiązania w rozwiązaniach pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Późne powiązania w rozwiązaniach pakietu Office
   Niektóre typy modeli obiektów w aplikacji pakietu Office zawierają funkcje, które są dostępne za pośrednictwem funkcji późnego wiązania. Na przykład niektóre metody i właściwości może zwracać różne typy obiektów, w zależności od kontekstu aplikacji pakietu Office, a niektóre typy mogą uwidaczniać różne metody lub właściwości w różnych kontekstach.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  W większości przypadków dokumentacji referencyjnej zawiera typy zwracane wartości dla elementu członkowskiego, który zwraca <xref:System.Object>. Konwertowanie albo rzutowanie obiektu włącza IntelliSense dla obiekt w edytorze kodu.  
   
- Aby uzyskać informacje o konwersji w języku Visual Basic, zobacz [niejawnych i jawnych konwersji &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) i [funkcji CType &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Aby uzyskać informacje o konwersji w języku Visual Basic, zobacz [Konwersje jawne i niejawne &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) i [CType — funkcja &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Przykłady  
  Poniższy przykład kodu pokazuje, jak można rzutować obiektu określonego typu w projektach Visual Basic gdzie **Option Strict** znajduje się na. W tym typie projektu, należy jawnie rzutować <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> właściwości <xref:Microsoft.Office.Interop.Excel.Range>. W tym przykładzie wymaga projektu poziomie dokumentu programu Excel z arkusza klasę o nazwie `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Zobacz też  
  [Pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Przy użyciu typu dynamicznego &#40; K & 35; Przewodnik programowania w języku &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Używanie typu dynamicznego &#40;C&#35; przewodnik programowania w języku&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict — instrukcja](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Odbicie (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Odbicie (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

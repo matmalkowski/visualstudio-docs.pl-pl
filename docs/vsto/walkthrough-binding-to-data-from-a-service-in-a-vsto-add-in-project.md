@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Powiązanie z danymi z usług w VSTO dodatku projektu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Powiązanie z danymi z usług w VSTO dodatku projektu | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Wskazówki: Powiązanie z danymi z usług w projekcie dodatku narzędzi VSTO
   Dane można powiązać z formanty hosta w projektów dodatku VSTO. W tym przewodniku pokazano, jak dodawanie formantów do dokumentu programu Microsoft Office Word, powiązanie formantów danych pobranych z usługi zawartość w witrynie MSDN i reagowania na zdarzenia w czasie wykonywania.  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
 ## <a name="creating-a-new-project"></a>Tworzenie nowego projektu  
  Pierwszym krokiem jest utworzenie projektu dodatku VSTO programu Word.  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  W **adres** wpisz następujący adres URL:  
   
-     **http://Services.msdn.microsoft.com/ContentServices/ContentService.asmx**  
+     **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**  
   
 4.  Kliknij przycisk **Przejdź**.  
   

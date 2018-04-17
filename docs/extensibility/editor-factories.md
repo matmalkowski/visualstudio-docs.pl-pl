@@ -1,27 +1,23 @@
 ---
 title: Fabryki edytora | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0fb464d3eb9d7b39b853593c9458fe800296321
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 676918b6366837b6ee77cf27bd5fba9fbf608729
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editor-factories"></a>Fabryki edytora
 Fabryka edytora tworzy Edytor obiektów i umieszczane w ramkę okna, znany jako widoku fizycznego. Tworzy dane dokumentu i obiekty widoku dokumentów, które są niezbędne do utworzenia edytory i projektantów. Fabryka edytora jest wymagane do utworzenia edytorze podstawowych programu Visual Studio i dowolnego edytora standardowego. Opcjonalnie można utworzyć niestandardowego edytora z fabryką edytora.  

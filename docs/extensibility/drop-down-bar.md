@@ -1,27 +1,23 @@
 ---
 title: Rozwijany pasek | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cf01e8a416407c570076812bf18aa6b21c21583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="drop-down-bar"></a>Rozwijany pasek
 Pasek listy rozwijanej jest dostępne w górnej części okna kodu i zawiera dwie listy rozwijanej.  
@@ -29,7 +25,7 @@ Pasek listy rozwijanej jest dostępne w górnej części okna kodu i zawiera dwi
 ## <a name="drop-down-bar-interfaces"></a>Rozwijany pasek interfejsów  
  W [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], na przykład pasek lista rozwijana zawiera listami [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] elementów i [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] elementy członkowskie funkcje, jak pokazano na poniższej ilustracji.  
   
- ![Usuń &#45; dół paski](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
+ ![Upuść&#45;dół paski](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
 Rozwijany pasek  
   
  Podczas implementowania pasek listy rozwijanej, istnieją cztery interfejsów podstawowe znaczenie:  

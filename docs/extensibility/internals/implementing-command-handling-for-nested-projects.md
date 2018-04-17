@@ -1,27 +1,23 @@
 ---
-title: "Implementowanie obsługi polecenia zagnieżdżone projektów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Implementowanie obsługi polecenia zagnieżdżone projektów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3f02752fad6932bac90597d56f27257e78b84cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementowanie obsługi dla projektów zagnieżdżonego polecenia
 IDE może przekazać poleceń, które są przekazywane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsów zagnieżdżonych projektów lub projektów nadrzędnego mogą filtrować lub zastąpienie polecenia.  

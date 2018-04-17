@@ -1,27 +1,23 @@
 ---
-title: "Dodawanie katalogów do okna dialogowego Nowy projekt | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie katalogów do okna dialogowego Nowy projekt | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c4ad992785fdf8ab5ffdd3faa7043e2a0ee5411b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Dodawanie katalogów do okna dialogowego Nowy projekt
 Podczas tworzenia nowych typów projektów, możesz również zarejestrować nowy katalog w **nowy projekt** się okno dialogowe zawierające je do użycia jako szablon. W poniższym przykładzie wyjaśniono, jak zarejestrować nowego katalogu, znanej także jako węzeł. W tym przykładzie szablony udostępniane przez pakiet VSPackage CLSID_Package są rejestrowane. W rezultacie, z lewej strony **nowy projekt** okno dialogowe oferuje dodanego węzła o nazwie ustaleniami Folder_Label_ResID zasobów. Ten zasób jest ładowany z pakiet VSPackage satelitarnej biblioteki DLL.  

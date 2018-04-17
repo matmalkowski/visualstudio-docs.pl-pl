@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 36a83dc849260f9d58595e2f52bb422a1854b5ec
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fbdbcc8ae12e1b0f317b53a4f0ffd7e9b2885aec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Wskazówki: aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym przewodniku przedstawiono podstawy zapewniają sposób szybkie przełączanie opcji użytkownika, za pomocą przycisków radiowych w arkuszu programu Microsoft Office Excel. W takim przypadku opcji Zmień styl wykresu.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 ## <a name="adding-a-chart-to-a-worksheet"></a>Dodawanie wykresu do arkusza  
  Można utworzyć projektu skoroszyt programu Excel, który dostosowuje istniejącego skoroszytu. W tym przewodniku będzie Dodawanie wykresu do skoroszytu, a następnie użycie tego skoroszytu w nowego rozwiązania programu Excel. Źródło danych w ramach tego przewodnika ma postać arkusza o nazwie **danych wykresu**.  

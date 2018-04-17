@@ -1,18 +1,18 @@
 ---
-title: "Porady: tworzenie aplikacji Konsolowej przepływu pracy | Dokumentacja firmy Microsoft"
+title: 'Porady: tworzenie aplikacji Konsolowej przepływu pracy | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94058f15911ed0f72023ea4cd10c9a935f13ba44
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Porady: tworzenie aplikacji Konsolowej przepływu pracy
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Służy do tworzenia przepływów pracy dla wykonywania systemu lub człowieka procesów. Projektant przepływu pracy systemu Windows zapewnia powierzchnię projektu do tworzenia tych przepływów pracy. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Może służyć do tworzenia przepływów pracy za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub może być zintegrowane do innych aplikacji, które rehost projektanta.
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/12/2018
 7.  W **rozwiązania** wprowadź nazwę dla nowego rozwiązania. Kliknij przycisk **OK** do tworzenia aplikacji.
 
     > [!NOTE]
-    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt...**  otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
+    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie **Nowy projekt...** otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
 
 8.  Szablon projektu służy do tworzenia definicji przepływu pracy w języku XAML i definicji aplikacji konsoli jest w kodzie źródłowym. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Otwiera i wyświetla obszar roboczy utworzony przepływ pracy.
 

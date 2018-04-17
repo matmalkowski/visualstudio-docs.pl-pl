@@ -1,20 +1,20 @@
 ---
-title: "Przy użyciu wirtualnego wykres aktywności użytkownika dla testów obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Przy użyciu wirtualnego wykres aktywności użytkownika dla testów obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f7063775f093b08b859343fbc314399d0cc9fdd4
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7cf4d2d31bb037aba8af95caf5ffab1d7be2c132
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Wskazówki: korzystanie z wykresu działań użytkownika wirtualnego do izolowania problemów
 
@@ -119,7 +119,7 @@ Po testu obciążenia i zebrane dane o aktywności wirtualnego użytkownika, dan
 ## <a name="see-also"></a>Zobacz także
 
 - [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md)
+- [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Porady: Tworzenie ustawień testu dla rozproszonego testu obciążenia](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
 - [Zbierz informacje diagnostyczne przy użyciu ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)

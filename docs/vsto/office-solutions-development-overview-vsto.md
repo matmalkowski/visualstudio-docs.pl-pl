@@ -1,12 +1,10 @@
 ---
-title: "Rozwiązań Office Development ― omówienie (środowisko VSTO) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązań Office Development ― omówienie (środowisko VSTO) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Rozwój rozwiązań Office ― omówienie (środowisko VSTO)
   Przy użyciu programu Microsoft Office jako fronton dla rozwiązania, możesz można korzystać z znanych narzędzi, takich jak funkcje edytora tekstów, Word, funkcji analizy programu Excel i funkcje zarządzania pocztą e-mail programu Outlook i Microsoft Office interfejsy użytkownika . Można tworzyć rozwiązania programu Visual Studio, aby dostosować aplikacje pakietu Office i dodać konkretne funkcje niezbędne do procesów biznesowych. Na przykład można przekształcić Word generator kontraktu, który składana kontrakty się już istniejących części, których może być utworzona, można edytować lub nie można edytować. Przy użyciu programu Excel można utworzyć arkusz automatycznych budżetu dostosowanych do różnych projektów. Użytkownicy mogą również czerpać rozwiązań pakietu office w trybie offline, dzięki czemu częściej niż użycie architektury usługi sieci web złożonych rozwiązań.  
@@ -29,7 +28,7 @@ ms.lasthandoff: 01/10/2018
  Ten temat zawiera omówienie typów rozwiązań pakietu Office, które możesz utworzyć za pomocą programu Visual Studio Tools dla pakietu Office (środowisko VSTO) szablonów dostępnych Office developer Tools w programie Visual Studio. Aby uzyskać ogólne informacje o tym, jak tworzyć aplikacje za pomocą pakietu Office, zobacz [Office Developer Center](https://dev.office.com/).  
   
 ## <a name="choosing-an-office-project-type"></a>Wybieranie typu projektu pakietu Office  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Programowanie Office na podstawie VSTO zawiera następujące typy szablonów projektu:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Programowanie Office na podstawie VSTO zawiera następujące typy szablonów projektu:  
   
 -   **Dostosowywanie na poziomie dokumentu** są skojarzone z określonego dokumentu.  
   
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="document-level-customizations"></a>Dostosowania na poziomie dokumentów  
  Dostosowywanie na poziomie dokumentu składają się z zestawu, który jest skojarzony z pojedynczego dokumentu, skoroszytu lub szablonu w programie Microsoft Office Word i Microsoft Office Excel. Zestaw został załadowany po otwarciu skojarzonego dokumentu. Funkcje utworzone dostosowania są dostępne tylko wtedy, gdy jest otwarty skojarzonego dokumentu. Dostosowania nie można wprowadzić zmian na poziomie aplikacji, takich jak wyświetlanie nową kartę element lub wstążki menu po otwarciu dokumentu.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oferuje narzędzia ułatwiające tworzenie dostosowań na poziome dokumentu. Dokument, który można dostosować, jest hostowany jako powierzchnię projektu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], co umożliwia projektowanie dokumentu przez przeciąganie i upuszczanie formantów na niego. Wiele innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkcje są dostępne w projektach na poziomie dokumentu, takich jak formantów formularzy systemu Windows, powiązanie przeciągania i upuszczania danych i zintegrowane debugera.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oferuje narzędzia ułatwiające tworzenie dostosowań na poziome dokumentu. Dokument, który można dostosować, jest hostowany jako powierzchnię projektu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], co umożliwia projektowanie dokumentu przez przeciąganie i upuszczanie formantów na niego. Wiele innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkcje są dostępne w projektach na poziomie dokumentu, takich jak formantów formularzy systemu Windows, powiązanie przeciągania i upuszczania danych i zintegrowane debugera.  
   
  Aby uzyskać więcej informacji o dostosowywaniu zobacz następujące tematy:  
   
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="vsto-add-ins"></a>Dodatków VSTO  
  Dodatków VSTO składają się z zestawu, który jest skojarzony z aplikacją Microsoft Office. Zazwyczaj dodatku VSTO uruchamiane po skojarzona aplikacja jest uruchomiona, mimo że użytkownicy mogą również ładować dodatków VSTO po aplikacja jest już uruchomiona. Funkcje dodatków VSTO, tworzone są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]obejmuje narzędzia umożliwiające tworzenie dodatków narzędzi VSTO. Dodatek projekty obejmują automatycznie wygenerowane klasy, która reprezentuje dodatku VSTO. Ta klasa udostępnia właściwości i zdarzenia, których można uzyskiwać dostęp do modelu obiektów w aplikacji hosta i uruchomienia kodu po dodatku VSTO jest załadowany i zamknąć. Wiele innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkcje są dostępne w dodatku VSTO projektach, takich jak formularzy systemu Windows i zintegrowane debugera.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje narzędzia umożliwiające tworzenie dodatków narzędzi VSTO. Dodatek projekty obejmują automatycznie wygenerowane klasy, która reprezentuje dodatku VSTO. Ta klasa udostępnia właściwości i zdarzenia, których można uzyskiwać dostęp do modelu obiektów w aplikacji hosta i uruchomienia kodu po dodatku VSTO jest załadowany i zamknąć. Wiele innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkcje są dostępne w dodatku VSTO projektach, takich jak formularzy systemu Windows i zintegrowane debugera.  
   
  Aby uzyskać więcej informacji na temat dodatków VSTO zobacz następujące tematy:  
   
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Zabezpieczenia dla rozwiązań pakietu Office VSTO jest wymuszana przez szereg sprawdza, czy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sprawia, że podczas instalacji i ładuje rozwiązania. Kontrole te obejmują sprawdzania, czy lokalizacja manifestu rozmieszczenia jest zaufany lub określa, czy certyfikat używany do podpisywania manifest rozmieszczenia jest zaufany. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Architektura Dostosowywanie na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

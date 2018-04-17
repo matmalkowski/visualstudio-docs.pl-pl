@@ -1,53 +1,26 @@
 ---
-title: "Korzyści Opsgility w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn the Opsgility training benefit included with sekected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: cdaab75e85f1a628a5db29feec780f7c1d2a8db9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Korzyści Opsgility w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Dowiedz się Opsgility szkolenia korzyści dołączonego sekected subskrypcji programu Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Korzyści Opsgility w ramach subskrypcji programu Visual Studio
 
-## <a name="overview"></a>Omówienie
 Wybrane subskrypcje w Visual Studio to jeden rok dostęp do szkolenia na żądanie i 15% rabatu na prowadzone szkolenia, a także dostęp do wskazówki labs, ścieżki certyfikacji i inne.  
 
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                                  | Korzyść               | Odnawialnymi?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 12 miesięcy             |  Nie                                                                |
-| Visual Studio Enterprise annual                                               | 12 miesięcy             |  Nie                                                                |
-| Visual co miesiąc Studio Enterprise                                              | Niedostępne         |                                                                    |
-| Visual Studio Professional Standard                                           | 6 miesięcy              |  Nie                                                                |
-| Program Visual Studio Professional roczne                                             | 6 miesięcy              |  Nie                                                                | 
-| Visual co miesiąc Studio Professional                                            | Niedostępne         |                                                                    |
-| Visual Studio Test Pro                                                        | 6 miesięcy              |  Nie                                                                |
-| Platformy MSDN                                                                | 6 miesięcy              |  Nie                                                                |
-| Visual Studio Dev Essentials                                                  | 3 miesiące              |  Nie                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Niedostępne         |                                                                    |
-| Visual Studio Professional — sieci Microsoft Partner Network                        | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                                 | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Niedostępne         |                                                                    |
-| Microsoft Certified Trainer — oprogramowanie i usługi                             | Niedostępne         |                                                                    |
-| Microsoft Certified Trainer — deweloperów usług & oprogramowania                   | Niedostępne         |                                                                    |
-
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
-
 ## <a name="activation-steps"></a>Kroki aktywacji
-1.  Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Znajdź Kafelek Opsgility w sekcji narzędzi na stronie korzyści i kliknij przycisk **Aktywuj** łącze w dolnej części fragmentu korzyści.  
 
@@ -64,8 +37,19 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://m
 
     ![Strona główna korzyści Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
-## <a name="faq"></a>Najczęściej zadawane pytania
-*Wyszukaj aktualizacje w tym miejscu*
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | VL, Azure, Retail | 12 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Program Visual Studio Professional (standardowy, roczne w chmurze) | VL, Azure, Retail                                       | 6 miesięcy                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | 6 miesięcy                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | 6 miesięcy                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Dev Essentials | NA  | 3 miesiące |Nie.  Dostępne tylko dla nowych subskrybentów |
+| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+
+*Wyklucza: Sieci Microsoft Partner Network (MPN), ważnych partnera firmy Microsoft (MVP), Microsoft Certified Trainer, BizSpark, załóżmy, niego, ekwiwalentu pełnego wymiaru czasu*
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej Opsgility?  Zobacz następujące zasoby:

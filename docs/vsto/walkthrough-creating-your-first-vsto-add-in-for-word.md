@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Word | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Word | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Przewodnik: tworzenie pierwszego dodatku narzędzi VSTO dla programu Word
   Ten Przewodnik wprowadzający przedstawia sposób tworzenia dodatku VSTO dla programu Microsoft Office Word. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Kliknij przycisk **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Tworzy **FirstWordAddIn** projektu i otwarcie pliku kodu klasy ThisAddIn w edytorze.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstWordAddIn** projektu i otwarcie pliku kodu klasy ThisAddIn w edytorze.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Pisanie kodu, aby dodać tekstu do zapisanego dokumentu  
  Następnie dodaj kod do klasy ThisAddIn pliku kodu. Nowy kod używa modelu obiektów programu Word, aby dodawać tekst standardowy do każdego zapisany dokument. Domyślnie plik kodu klasy ThisAddIn zawiera następujące wygenerowanego kodu:  
@@ -137,7 +136,7 @@ ms.lasthandoff: 01/10/2018
 -   Wdrażanie dodatków narzędzi VSTO dla programu Word: [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozwój rozwiązań Office ― omówienie &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Rozwiązania programu Word](../vsto/word-solutions.md)   
  [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
  [Przegląd modelu obiektów programu Word](../vsto/word-object-model-overview.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Programowanie dostosowań na poziome dokumentu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Programowanie dostosowań na poziome dokumentu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -29,13 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>Programowanie dostosowań na poziome dokumentu
   Rozszerzając program Microsoft Office Word i Microsoft Office Excel za pomocą dostosowania na poziomie dokumentu, można wykonywać następujące zadania:  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  Niektóre aspekty pisanie kodu w projektach na poziomie dokumentu różnią się od innych typów projektów programu Visual Studio. Wiele z tych różnic przyczyną są sposobem Office modele obiektów są widoczne dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md).  
   
- Aby uzyskać ogólne informacje o poziomie dokumentu i innych typów rozwiązań, można utworzyć za pomocą narzędzi programowania pakietu Office w Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Aby uzyskać ogólne informacje o poziomie dokumentu i innych typów rozwiązań, można utworzyć za pomocą narzędzi programowania pakietu Office w Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Przy użyciu wygenerowane klasy w projektach na poziomie dokumentu  
  Podczas tworzenia projektu poziomie dokumentu programu Visual Studio automatycznie generuje klasę w projekcie, który można użyć, aby rozpocząć pisanie kodu. Program Visual Studio generuje różnych klas dla programu Word i Excel:  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`: pochodną <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.  
   
--   `Sheet` *n* : pochodną <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
+-   `Sheet` *n*: pochodną <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
  Te klasy podstawowej przekierować wszystkie wywołania ich elementy członkowskie do wewnętrznej implementacji interfejsów odpowiedniego elementu hosta w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Na przykład, jeśli wywołujesz <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> metody `ThisDocument` klasy <xref:Microsoft.Office.Tools.Word.DocumentBase> klasy przekierowuje tego wywołania do wewnętrznej implementacji <xref:Microsoft.Office.Tools.Word.Document> interfejsu w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   

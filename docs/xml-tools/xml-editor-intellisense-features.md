@@ -1,23 +1,21 @@
 ---
 title: Funkcje IntelliSense w edytorze XML | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc4a0e9cc3da9d2cfad86d1891514a68dd2b87fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 Edytor XML zawiera pełną funkcje IntelliSense porównywalna innych edytorów języka podany w programie Visual Studio. W tej sekcji opisano, jak za pomocą funkcji IntelliSense języka definicji schematu XML (XSD) i dokumentów XSLT.  
@@ -53,7 +51,7 @@ Aby uzyskać więcej informacji, zobacz [wskazówki: Korzystanie z IntelliSense 
   
  `<book>`  
   
- Edytor XML wypełnia tagu końcowego i umieszcza kursor po tagu początkowego. Poniżej przedstawiono przykład ("&#124;" zawiera informacje dotyczące pozycji kursora):  
+ Edytor XML wypełnia tagu końcowego i umieszcza kursor po tagu początkowego. Poniżej przedstawiono przykład ("&#124;" Uwagi dotyczące pozycji kursora):  
   
  `<book>`&#124;`</book>`  
   
@@ -67,13 +65,13 @@ Aby uzyskać więcej informacji, zobacz [wskazówki: Korzystanie z IntelliSense 
   
  Podobnie Edytor XML są wstawiane następującej składni XML automatycznie dla Ciebie:  
   
--   Zakończenie instrukcji przetwarzania:`?>`  
+-   Zakończenie instrukcji przetwarzania:  `?>`  
   
--   Koniec bloku CDATA:`]]>`  
+-   Koniec bloku CDATA: `]]>`  
   
--   Zakończenie komentarza:`-->`  
+-   Zakończenie komentarza: `-->`  
   
--   Zakończenie deklaracji DTD:`>`  
+-   Zakończenie deklaracji DTD: `>`  
   
 Edytor XML ma również możliwości wstawiania przestrzeń nazw deklaracji, jeśli zostanie wybrany element kwalifikowaną przestrzeni nazw lub atrybut z listy IntelliSense i przestrzeń nazw dla tego elementu lub atrybutu nie jest jeszcze w zakresie.  
   

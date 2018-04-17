@@ -1,5 +1,5 @@
 ---
-title: "Windows przepływu pracy programu Visual Studio (starsze) | Dokumentacja firmy Microsoft"
+title: Windows przepływu pracy programu Visual Studio (starsze) | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865b8adf9316851a29e6cf76d0fc308021e63a4c
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Windows przepływu pracy programu Visual Studio (starsze)
 Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dostarczonych przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] może służyć do docelowego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Projektant starszych jest wizualnego projektanta, który służy do tworzenia przepływu pracy. Możesz przeciągnąć działania z **przybornika** projektu powierzchni, a następnie skonfiguruj ich brak. Jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna edytora zajmuje obszaru głównego okna używane przez inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna edytora. Nazwa przepływu pracy jest wyświetlany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasek tytułu okna.

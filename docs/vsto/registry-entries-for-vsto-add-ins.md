@@ -1,12 +1,10 @@
 ---
-title: "Wpisy rejestru dotyczące dodatków VSTO | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wpisy rejestru dotyczące dodatków VSTO | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - registry entries [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4be05e4fb1b4fc74467f1607acaa3e84a6bdef95
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5e4c410a6f934c7b4fe4c6239bdfe07364af3152
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   Określony zbiór wpisów rejestru należy utworzyć podczas wdrażania dodatków VSTO, które są tworzone za pomocą programu Visual Studio. Te wpisy rejestru zawierają informacje, które umożliwia aplikacji Microsoft Office odnaleźć i załadować dodatku VSTO.  
@@ -77,11 +76,11 @@ ms.lasthandoff: 01/10/2018
 |Wpis|Typ|Wartość|  
 |-----------|----------|-----------|  
 |**Opis**|REG_SZ|Wymagany. Krótki opis dodatku VSTO.<br /><br /> Ten opis jest wyświetlany, gdy użytkownik wybierze dodatku VSTO w **Add-Ins** okienku **opcje** okno dialogowe w aplikacji pakietu Microsoft Office.|  
-|**FriendlyName**|REG_SZ|Wymagany. Opisowa nazwa dodatku VSTO, która jest wyświetlana w **dodatki COM** okno dialogowe w aplikacji pakietu Microsoft Office. Wartość domyślna to identyfikator dodatku narzędzi VSTO|  
+|**friendlyName**|REG_SZ|Wymagany. Opisowa nazwa dodatku VSTO, która jest wyświetlana w **dodatki COM** okno dialogowe w aplikacji pakietu Microsoft Office. Wartość domyślna to identyfikator dodatku narzędzi VSTO|  
 |**LoadBehavior**|REG_DWORD|Wymagany. Wartość, która określa, kiedy aplikacja próbuje załadować dodatku VSTO i bieżący stan dodatku VSTO (załadowany lub zwalnianie).<br /><br /> Domyślnie ten wpis jest ustawiony na 3, który określa, czy dodatku VSTO są ładowane podczas uruchamiania. Aby uzyskać więcej informacji, zobacz [wartości LoadBehavior](#LoadBehavior). **Uwaga:** Jeśli użytkownik wyłączy dodatku VSTO, ta akcja modyfikuje **LoadBehavior** wartość w gałęzi rejestru HKEY_CURRENT_USER. Dla każdego użytkownika, wartość **LoadBehavior** wartość w gałęzi HKEY_CURRENT_USER zastępuje domyślną **LoadBehavior** zdefiniowane w gałęzi HKEY_LOCAL_MACHINE.|  
-|**Manifest**|REG_SZ|Wymagany. Pełna ścieżka manifest wdrażania dodatku VSTO. Ścieżka może być lokalizacji na komputerze lokalnym, udziału sieciowego (UNC) lub serwera sieci Web (HTTP).<br /><br /> Jeśli używasz Instalatora systemu Windows do wdrożenia rozwiązania, należy dodać prefiks **file:///** do **manifestu** ścieżki. Należy także dołączyć ciąg **&#124; vstolocal** (to znaczy znaku kreski pionowej **&#124;** następuje **vstolocal**) na końcu tej ścieżki. Pozwala to zagwarantować, że rozwiązanie jest ładowany z folderu instalacji, a nie pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu Instalatora Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Uwaga:** podczas kompilowania dodatku VSTO na komputerze dewelopera Visual Studio automatycznie dołącza **&#124; vstolocal** ciąg do tego wpisu rejestru.|  
+|**Manifest**|REG_SZ|Wymagany. Pełna ścieżka manifest wdrażania dodatku VSTO. Ścieżka może być lokalizacji na komputerze lokalnym, udziału sieciowego (UNC) lub serwera sieci Web (HTTP).<br /><br /> Jeśli używasz Instalatora systemu Windows do wdrożenia rozwiązania, należy dodać prefiks **file:///** do **manifestu** ścieżki. Należy także dołączyć ciąg  **&#124;vstolocal** (to znaczy znaku kreski pionowej **&#124;** następuje **vstolocal**) na końcu tej ścieżki. Pozwala to zagwarantować, że rozwiązanie jest ładowany z folderu instalacji, a nie pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu Instalatora Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Uwaga:** podczas kompilowania dodatku VSTO na komputerze dewelopera Visual Studio automatycznie dołącza  **&#124;vstolocal** ciąg do tego wpisu rejestru.|  
   
-###  <a name="OutlookEntries"></a>Wpisy rejestru dotyczące regionów formularzy programu Outlook  
+###  <a name="OutlookEntries"></a> Wpisy rejestru dotyczące regionów formularzy programu Outlook  
  Jeśli tworzysz regionu formularza niestandardowego w dodatku VSTO dla programu Outlook, wpisy rejestru dodatkowe są używane do rejestrowania regionu formularza z programu Outlook. Te wpisy są tworzone w kluczu rejestru różnych dla każdej klasy wiadomości, który obsługuje regionu formularza. Te klucze rejestru znajdują się w następującej lokalizacji, gdzie *głównego* HKEY_CURRENT_USER lub HKEY_LOCAL_MACHINE.  
   
  *Główny*\Software\Microsoft\Office\Outlook\FormRegions\\*message — klasa*  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji na temat wpisów rejestru regionu formularza, zobacz [Określ lokalizację regionów formularzy w postaci niestandardowe](http://msdn.microsoft.com/library/office/ff868998.aspx). Aby uzyskać więcej informacji o regionach formularzy programu Outlook, zobacz [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md).  
   
-##  <a name="LoadBehavior"></a>Wartości LoadBehavior  
+##  <a name="LoadBehavior"></a> Wartości LoadBehavior  
  **LoadBehavior** wpis w *głównego*\Software\Microsoft\Office\\*Nazwa aplikacji*\Addins\\*dodatku Identyfikator* klucz zawiera bitowe połączenie wartości, które określają zachowanie czas wykonywania dodatku VSTO. Najniższy bit kolejności (wartości 0 i 1) wskazuje, czy dodatku VSTO jest obecnie zwalnianie lub załadować. Inne usługi bits sygnalizującego, kiedy aplikacja próbuje załadować dodatku VSTO.  
   
  Zazwyczaj **LoadBehavior** wpis ma być ustawiony na 0, 3 lub 16 (w dziesiętna) Jeśli dodatku VSTO jest zainstalowane na komputerach użytkowników końcowych. Domyślnie program Visual Studio ustawia **LoadBehavior** wpisu użytkownika dodatku VSTO z 3 podczas tworzenia lub opublikować go.  

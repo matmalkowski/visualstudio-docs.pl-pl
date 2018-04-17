@@ -3,17 +3,17 @@ title: Korzyści Pluralsight w ramach subskrypcji programu Visual Studio | Dokum
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 1/4/2018
+ms.date: 01/04/2018
 ms.topic: Get-Started-Article
 description: Więcej informacji o subskrypcji szkolenia Pluralsight uwzględnionych w subskrypcji programu Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 973909a6ebc2730bfa7f4b9a0c576960175a8b7e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 8f1a8485f71bb1d9162077730d3fca42478e45a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight w ramach subskrypcji programu Visual Studio
 
@@ -23,43 +23,16 @@ Poniższa tabela zawiera szczegółowe informacje, jakie korzyści z subskrypcji
 
  W zależności od typu subskrypcji, które są dostępne, nie wszystkie subskrybentów, którzy korzystali wcześniej Pluralsight subskrypcji realizowane za pośrednictwem subskrypcji programu Visual Studio będzie można zrealizować oferuje nowe Pluralsight korzyści. Jeśli nie masz uprawnień zrealizować dodatkowe korzyści szkolenia Pluralsight, otrzymasz powiadomienie podczas próby aktywowania korzyści w witrynie sieci Web Pluralsight.  
 
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                 | Korzyść               | Odnawialnymi?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Subskrypcja 6 miesięcy | Nie.  12 miesięcy ograniczone katalogów dostępna po wygaśnięciu. |
-| Visual Studio Enterprise annual                              | Subskrypcja 6 miesięcy | Nie.  12 miesięcy ograniczone katalogów dostępna po wygaśnięciu. |
-| Visual co miesiąc Studio Enterprise                             | Niedostępne         |                                                                    |
-| Visual Studio Professional Standard                          | Subskrypcja 3 miesiące | Nie.  12 miesięcy ograniczone katalogów dostępna po wygaśnięciu. |
-| Program Visual Studio Professional roczne                            | Subskrypcja 3 miesiące | Nie.  12 miesięcy ograniczone katalogów dostępna po wygaśnięciu. |
-| Visual co miesiąc Studio Professional                           | Niedostępne         |                                                                    |
-| Visual Studio Test Pro                                       | Subskrypcja 3 miesiące | Nie.  12 miesięcy ograniczone katalogów dostępna po wygaśnięciu. |
-| Platformy MSDN                                               | Subskrypcja 3 miesiące | Nie.  12 miesięcy ograniczone katalogów dostępna po wygaśnięciu. |
-| Visual Studio Dev Essentials                                 | Subskrypcja 3 miesiące | Nie.                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - FTE                               | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - MPN                               | Niedostępne         |                                                                    |
-| Visual Studio Professional — MPN                             | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                 | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – BizSpark                          | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — MCT oprogramowania i usług           | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — MCT oprogramowania i usług Developer | Niedostępne         |                                                                    |
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
- 
-
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 1. Aby aktywować subskrypcję, połącz się z [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i wybierz polecenie **Pobierz** łącza na kafelku korzyści Pluralsight znajduje się w sekcji programowanie Professional. 
 
     ![Korzyści Pluralsight kafelka](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
-> [!IMPORTANT]
-> Po kliknięciu łącza "Pobierz kod" w kafelku korzyści Pluralsight może zostać wyświetlony następujący komunikat:
->
-> **"Uwaga: Jeśli uprzednio aktywowano inną ofertę Pluralsight za pośrednictwem subskrypcji programu Visual Studio, ten kod może nie umożliwiają tworzenie nowego konta Pluralsight."**
+    > [!IMPORTANT]
+    > Po kliknięciu łącza "Pobierz kod" w kafelku korzyści Pluralsight może zostać wyświetlony następujący komunikat:
+    >
+    > **"Uwaga: Jeśli uprzednio aktywowano inną ofertę Pluralsight za pośrednictwem subskrypcji programu Visual Studio, ten kod może nie umożliwiają tworzenie nowego konta Pluralsight."**
 
 2. Otrzymasz powiadomienie, że kod kuponu zostały pomyślnie pobrane.  Kliknij przycisk **aktywować**.   
 
@@ -82,8 +55,8 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://
 
     ![Potwierdzenie Pluralsight korzyści](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
-> [!NOTE]
-> Jeśli Twoje konto nie jest uprawniony do zrealizowania nowe oferty, poczty e-mail, które otrzymujesz wyjaśnić, że wystąpił problem podczas tworzenia konta, ponieważ nie jest uprawniony.  Zawiera również informacje ułatwiające skontaktuj się z zespołem pomocy technicznej firmy Pluralsight, która może odpowiedzieć na wszystkie pytania, które mogą mieć o Twoim koncie.
+    > [!NOTE]
+    > Jeśli Twoje konto nie jest uprawniony do zrealizowania nowe oferty, poczty e-mail, które otrzymujesz wyjaśnić, że wystąpił problem podczas tworzenia konta, ponieważ nie jest uprawniony.  Zawiera również informacje ułatwiające skontaktuj się z zespołem pomocy technicznej firmy Pluralsight, która może odpowiedzieć na wszystkie pytania, które mogą mieć o Twoim koncie.
 
 6.  Po pomyślnym utworzeniu konta e-mail, które otrzymujesz zawierać nazwy użytkownika i należy utworzyć hasło.  Podaj hasło, wprowadź je ponownie w celu potwierdzenia, a następnie kliknij przycisk **zalogować się do Pluralsight**.
 
@@ -97,14 +70,31 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://
 
     ![Strona główna korzyści Pluralsight](_img\vs-pluralsight\vs-pluralsight-home.png)
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | VL, Azure, Retail | 6 miesięcy       |  Nie<sup>2</sup>|
+| Program Visual Studio Professional (standardowy, roczne w chmurze) | VL, Azure, Retail                                       | 3 miesiące                                                           |Nie<sup>2</sup>         |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | 3 miesiące                                                           |Nie<sup>2</sup>         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | 3 miesiące                                                           |Nie<sup>2</sup>         |
+| Visual Studio Dev Essentials | NA  | 3 miesiące |Nie|
+| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                  |NA|
+| Visual Studio Enterprise (niego<sup>1</sup> ) | Program                                       | Niedostępne                                  |NA|
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP), dyrektor Region (RD), partnera firmy Microsoft Wyobraź sobie sieci (MPN) ekwiwalentu pełnego wymiaru czasu.* 
+
+<sup>2</sup>*po upływie Pluralsight subskrypcji, może być uprawniony do 12 miesięcy dostęp do 50 wybranego szkolenia Pluralsight w jednym z trzech obszarach analizę.    Zobacz często zadawane pytania poniżej, aby uzyskać więcej informacji.*
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
+
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Pytanie: czy użytkownik ma subskrypcji Visual Studio Enterprise, ale kafelka Pluralsight nie jest widoczny na stronie korzyści. Co jest nie tak? 
 Odpowiedź: nie wszystkie subskrypcje Visual Studio Enterprise obejmują Pluralsight korzyści.  Sprawdź [tabeli eligility](#eligibility) tabeli, aby zobaczyć, czy subskrypcja jest uprawniona.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Pytanie: co się stanie, kiedy skończy się subskrypcję Pluralsight?  
 Odpowiedź: na koniec bezpłatna subskrypcja Pluralsight dostępne są dwie opcje:
-1. Pobierz bezpłatny dostęp 12-miesięczny (Sprawdź [tabeli eligility](#eligibility) tabeli, aby zobaczyć, czy subskrypcja jest uprawniona) do ograniczonego zestawu 50 kursy w jeden z trzech kluczowych obszarach, w tym: tworzenie aplikacji w chmurze; AI, uczenie maszynowe i danych. i deweloperzy w chmurze. Śledzenie wiadomości e-mail z Pluralsight do oświadczeń wolnego dostępu po wygaśnięciu. Widać [listę kursów](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) dostępnych w ramach każdej z częściowa biblioteki.
-2. Możesz kupić subskrypcję bezpośrednio z Pluralsight rabatem 10%, która zapewnia dostęp do katalogu ich pełną kursu.  Skontaktuj się z [Pluralsight](http://www.pluralsight.com) Aby uzyskać szczegółowe informacje.  
+- Pobierz bezpłatny dostęp 12-miesięczny (Sprawdź [tabeli eligility](#eligibility) tabeli, aby zobaczyć, czy subskrypcja jest uprawniona) do ograniczonego zestawu 50 kursy w jeden z trzech kluczowych obszarach, w tym: tworzenie aplikacji w chmurze; AI, uczenie maszynowe i danych. i deweloperzy w chmurze. Śledzenie wiadomości e-mail z Pluralsight do oświadczeń wolnego dostępu po wygaśnięciu. Widać [listę kursów](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) dostępnych w ramach każdej z częściowa biblioteki.
+- Możesz kupić subskrypcję bezpośrednio z Pluralsight rabatem 10%, która zapewnia dostęp do katalogu ich pełną kursu.  Skontaktuj się z [Pluralsight](http://www.pluralsight.com) Aby uzyskać szczegółowe informacje.  
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  [Centrum pomocy Pluralsight](https://help.pluralsight.com/help) biorąc szkolenia Pluralsight lub Pluralsight witryny sieci Web jest dostępna Pomoc. 

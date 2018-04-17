@@ -1,5 +1,5 @@
 ---
-title: "Elementu FlowSwitch&lt;T&gt; Projektant działań | Dokumentacja firmy Microsoft"
+title: Elementu FlowSwitch&lt;T&gt; Projektant działań | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 791067ff7e29a3eb63fd77e81a692f93edbda535
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: fb8c28f835fad4e70b213d13aaeb654780b72297
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flowswitchlttgt-activity-designer"></a>Elementu FlowSwitch&lt;T&gt; Projektant działań
 <xref:System.Activities.Statements.FlowSwitch%601> Działanie jest warunkowego węzła, który zapewnia rozgałęzianie przepływ kontroli w zależności od kryterium, gdy wymagane są więcej niż dwóch gałęziach alternatywnych. Jeśli rozgałęzianie przepływu wymaga dwóch ścieżek, użyj <xref:System.Activities.Statements.FlowDecision> działania zamiast tego.
@@ -45,4 +45,4 @@ ms.lasthandoff: 03/12/2018
 
 - [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)
 - [Schemat blokowy](../workflow-designer/flowchart-activity-designer.md)
-- [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
+- [Elementu FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

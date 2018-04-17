@@ -1,27 +1,23 @@
 ---
-title: "Porady: Implementowanie znaczników błąd | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Implementowanie znaczników błąd | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41c1bf063ea074df217934a00f73291a10e051d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1360f88dba797f96af766f65c9ee41abd6fc808
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-error-markers"></a>Porady: Implementowanie znaczników błąd
 Znaczniki błędów (lub czerwone faliste podkreślenie) są najbardziej trudne do zaimplementowania dostosowań edytora tekstu. Jednak korzyści, które umożliwiają użytkownikom VSPackage może znacznie ważniejsze niż koszt, aby zapewnić użytkownikom. Znaczniki błędów pisowni zaznaczenia tekstu, który z analizatora języka uzna niepoprawne o dowolnym kształcie lub faliste wiersz czerwony. Ten wskaźnik pomaga programistów, wyświetlając wizualnie niepoprawny kod.  

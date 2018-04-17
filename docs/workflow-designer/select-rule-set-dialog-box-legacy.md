@@ -1,5 +1,5 @@
 ---
-title: "Wybierz zestaw reguł, okno dialogowe (starsze) | Dokumentacja firmy Microsoft"
+title: Wybierz zestaw reguł, okno dialogowe (starsze) | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: cb2bc3f9-7730-4fb2-9f7b-303a9d9f0c8e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8d8675d7a3a94aa9bc4e72da6c52de65df3545
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Okno dialogowe Ustawianie reguły wybierz (starsze)
 W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -27,7 +27,7 @@ W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
-|**New...**|Kliknij, aby otworzyć [reguły ustawić okno dialogowe Edytor (starsze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) Aby utworzyć nowy warunek reguły.|
+|**Nowy...**|Kliknij, aby otworzyć [reguły ustawić okno dialogowe Edytor (starsze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) Aby utworzyć nowy warunek reguły.|
 |**Edit...**|Kliknij, aby otworzyć [reguły ustawić okno dialogowe Edytor (starsze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) można edytować wybraną regułę warunku.|
 |**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe pozwala zmienić wybrany zestaw reguł.|
 |**Usuwanie**|Kliknij, aby usunąć wybrany zestaw reguł.|

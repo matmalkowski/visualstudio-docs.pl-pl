@@ -1,12 +1,10 @@
 ---
-title: "Porady: dodawanie formantów zawartości do dokumentów programu Word | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dodawanie formantów zawartości do dokumentów programu Word | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b1dd59fc777c012f92baaf96302f7cf031ad151c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6edddf79bea7c3d4cd3cd5ef762dd9757509c754
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Porady: dodawanie formantów zawartości do dokumentów programu Word
   W projektów na poziomie dokumentu programu Word można dodać formantów zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektów dodatku VSTO programu Word można dodać formantów zawartości do otwartego dokumentu w czasie wykonywania.  
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać informacje o formantach zawartości, zobacz [formantów zawartości](../vsto/content-controls.md).  
   
-##  <a name="designtime"></a>Dodawanie formantów zawartości w czasie projektowania  
+##  <a name="designtime"></a> Dodawanie formantów zawartości w czasie projektowania  
  Istnieje kilka sposobów, aby dodać formantów zawartości do dokumentu w projektach na poziomie dokumentu w czasie projektowania:  
   
 -   Dodawanie zawartości formantu z **formanty Word** karcie **przybornika**.  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  W **formanty** grupy, kliknij ikonę zawartości formantu, który chcesz dodać.  
   
-##  <a name="runtimedoclevel"></a>Dodawanie formantów zawartości w czasie wykonywania w projektach na poziomie dokumentu  
+##  <a name="runtimedoclevel"></a> Dodawanie formantów zawartości w czasie wykonywania w projektach na poziomie dokumentu  
  Można dodawać zawartości formanty programowo do dokumentu w czasie wykonywania za pomocą metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy w projekcie. Każda metoda charakteryzuje się trzech przeciążeń, które umożliwiają dodawanie zawartości formantu w następujący sposób:  
   
 -   Dodawanie formantu w bieżącym zaznaczeniu.  
@@ -138,7 +137,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]  
   
-##  <a name="runtimeaddin"></a>Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO  
+##  <a name="runtimeaddin"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO  
  Można dodać formanty zawartości programowo do otwartego dokumentu w czasie wykonywania za pomocą dodatku VSTO. W tym celu należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> hosta elementu, który jest oparta na otwartego dokumentu, a następnie użyj metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu host. Każda metoda charakteryzuje się trzech przeciążeń, które umożliwiają dodawanie zawartości formantu w następujący sposób:  
   
 -   Dodawanie formantu w bieżącym zaznaczeniu.  

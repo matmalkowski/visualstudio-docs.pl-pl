@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Proste powiązanie danych w projektach na poziomie dokumentu | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Wskazówki: proste powiązanie danych w projektach na poziomie dokumentów
   W tym przewodniku przedstawiono podstawowe powiązanie danych w projektach na poziomie dokumentu. Jedno pole danych w bazie danych programu SQL Server jest powiązana z nazwanym zakresem w programie Microsoft Office Excel. Instruktaż także przedstawiono sposób dodawania kontrolek, które umożliwiają przewijać wszystkie rekordy w tabeli.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] lub [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   Dostęp do serwera z przykładowej bazy danych Northwind programu SQL Server.  
   
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Upewnij się, że pierwszy rekord jest wyświetlana w komórkach **A1** i **B1**.  
   
-3.  Kliknij przycisk  **>**  (`Button3`) znajdujący się i sprawdzić, czy następnego rekordu jest wyświetlany w komórce **A1** i **B1**.  
+3.  Kliknij przycisk **>** (`Button3`) znajdujący się i sprawdzić, czy następnego rekordu jest wyświetlany w komórce **A1** i **B1**.  
   
 4.  Klikaj inne przyciski przewijania, aby upewnić się, że rekord zmienia się zgodnie z oczekiwaniami.  
   

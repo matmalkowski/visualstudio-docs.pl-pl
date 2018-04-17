@@ -1,26 +1,27 @@
 ---
-title: "Priorytet świadczenia pomocy technicznej w subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/16/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Priority Support benefit included in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b62a60207f306c623d53f67fbe7e473c5ee8164d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Priorytet świadczenia pomocy technicznej w subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/16/2018
+ms.topic: Get-Started-Article
+description: Więcej informacji na temat korzyści priorytetów zawarte w subskrypcji programu Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Obsługa priorytetu w ramach subskrypcji programu Visual Studio
 
-## <a name="overview"></a>Omówienie 
 Priorytet obsługuje korzyści zapewnia dostęp do różnych Obsługa fora, gdzie można wyszukiwać istniejące wiadomości lub zapyta nowe pytania.  Jeśli Twoje pytanie nie zostanie odebrane przez społeczność dwa dni, zespół pomocy technicznej firmy Microsoft zapewni odpowiedzi.  
 
 Subskrybenci z wybranych subskrypcji programu Visual Studio mogą otrzymywać techniczną priorytet przez dużą liczbę fora obejmujące wiele tematów.
+
+## <a name="included-forums"></a>Fora dołączone
 
 ### <a name="net-framework"></a>.NET Framework
    - Instalator programu .NET framework i obsługi 
@@ -141,7 +142,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio mogą otrzymywać te
 
    - Testowanie przy użyciu programu Visual Studio Test Manager (MTM) 
 
-   - Visual Studio Unit Testing 
+   - Testy jednostkowe programu Visual Studio 
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
    - TFS — instalacji i administrowania 
@@ -194,37 +195,9 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio mogą otrzymywać te
    - Program SQL Server XML 
 
 
-
-### <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                 | Korzyść               | Odnawialnymi?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Włączone              | Tak                                                                |
-| Visual Studio Enterprise annual                              | Włączone              | Tak                                                                |
-| Visual co miesiąc Studio Enterprise                             | Niedostępne         |                                                                    |
-| Visual Studio Professional Standard                          | Włączone              | Tak                                                                |
-| Program Visual Studio Professional roczne                            | Włączone              | Tak                                                                | 
-| Visual co miesiąc Studio Professional                           | Niedostępne         |                                                                    |
-| Visual Studio Test Pro                                       | Włączone              | Tak                                                                |
-| Platformy MSDN                                               | Włączone              | Tak                                                                |
-| Visual Studio Dev Essentials                                 | Włączone              | Tak                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Włączone              | Tak                                                                |
-| Visual Studio Enterprise - FTE                               | Włączone              | Tak                                                                |
-| Visual Studio Enterprise - MPN                               | Niedostępne         |                                                                    |
-| Visual Studio Professional — MPN                             | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                | Włączone              | Tak                                                                |
-| Visual Studio Enterprise – Imagine (Premium)                 | Włączone              | Tak                                                                |
-| Visual Studio Enterprise – BizSpark                          | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — MCT oprogramowania i usług           | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — MCT oprogramowania i usług Developer | Niedostępne         |                                                                    |
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
-
-
 ## <a name="activation-steps"></a>Kroki aktywacji
 Uzyskiwanie dostępu do pomocy technicznej przed jest bardzo prosty. 
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek priorytetów w sekcji pomocy technicznej.  Polecenie **Pomoc**.
 
@@ -238,8 +211,20 @@ Uzyskiwanie dostępu do pomocy technicznej przed jest bardzo prosty.
 
     ![Przykład pomocy technicznej o priorytecie](_img/vs-priority-support/vs-priority-support-example.png)
 
-## <a name="faq"></a>Najczęściej zadawane pytania
-*Wyszukaj aktualizacje w tym miejscu*
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | Włączone       |  Tak          |
+| Program Visual Studio Professional (standardowy, roczne w chmurze) | VL, Azure, Retail                                       | Włączone                                                            |Tak |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Włączone                                                            |Tak |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | Włączone                                                            |Tak |
+| Visual Studio Dev Essentials | NA  | Włączone                                                            |Tak |
+| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+
+<sup>1</sup>*obejmuje: nie do sprzedaży (niego) Wyobraź sobie ekwiwalentu pełnego wymiaru czasu programu Visual Studio Industry Partner (VSIP).    Wyklucza: Sieci Microsoft Partner Network (MPN), MCT oprogramowania i usług, MCT oprogramowania i deweloperów usług, BizSpark, ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD).*
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcje, konta i rozliczeń dla programu Visual Studio subskrypcji, skontaktuj się z pomocą programu Visual Studio [subskrypcji pomocy technicznej](https://www.visualstudio.com/subscriptions/support/).

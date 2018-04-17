@@ -1,34 +1,30 @@
 ---
 title: Ukryty Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa824571b682d2c5654a4909becb0374bf987df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden — Element (szablony Visual Studio)
 Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateData >  
  \<Ukryte >  
   
@@ -59,7 +55,7 @@ Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj no
  Tekst musi być równa albo `true` lub `false`, wskazujące, czy szablon pojawi się w **nowy projekt** lub **Dodaj nowy element** okien dialogowych.  
   
 ## <a name="remarks"></a>Uwagi  
- `Hidden`to opcjonalny element.  
+ `Hidden` to opcjonalny element.  
   
  Jeśli określone, nie inne elementy podrzędne `TemplateData` elementu są wymagane.  
   

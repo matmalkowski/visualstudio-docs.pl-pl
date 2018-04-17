@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie menu skrótów dla zakładek | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie menu skrótów dla zakładek | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Wskazówki: tworzenie menu skrótów dla zakładek
   Ten przewodnik przedstawia sposób tworzenia menu skrótów <xref:Microsoft.Office.Tools.Word.Bookmark> formantów w dostosowaniu poziomie dokumentu dla programu Word. Po kliknięciu tekstu zakładki menu skrótów pojawia się i udostępnia opcje użytkownika dla formatowania tekstu.  
@@ -47,9 +46,9 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]lub[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Tworzenie projektu  
+##  <a name="BKMK_CreateProject"></a> Tworzenie projektu  
  Pierwszym krokiem jest utworzenie projektu dokument programu Word w programie Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **Moje Menu skrótów zakładki** projektu do **Eksploratora rozwiązań**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Dodawanie tekstu i zakładki w dokumencie  
+##  <a name="BKMK_addtextandbookmarks"></a> Dodawanie tekstu i zakładki w dokumencie  
  Dodaj część tekstu do dokumentu, a następnie dodaj dwie nakładające się zakładki.  
   
 #### <a name="to-add-text-to-your-document"></a>Aby dodać tekstu do dokumentu  
@@ -75,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Wybierz wyrazy "Tworzenie menu skrótów po kliknięciu prawym przyciskiem myszy tekst", a następnie kliknij przycisk **OK**.  
   
-     `bookmark1`zostanie dodany do dokumentu.  
+     `bookmark1` zostanie dodany do dokumentu.  
   
 3.  Dodaj inny <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolować wyrazy "kliknij prawym przyciskiem tekstu zakładki".  
   
-     `bookmark2`zostanie dodany do dokumentu.  
+     `bookmark2` zostanie dodany do dokumentu.  
   
     > [!NOTE]  
     >  Wyrazy "kliknij prawym przyciskiem tekst" są zarówno `bookmark1` i `bookmark2`.  
   
  Po dodaniu zakładki w dokumencie w czasie projektowania <xref:Microsoft.Office.Tools.Word.Bookmark> formant nie zostanie utworzony. Można zaprogramować przed kilka zdarzeń zakładki. Możesz pisać kod <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> zdarzeń zakładki tak, aby po kliknięciu tekstu zakładki, zostanie wyświetlone menu skrótów.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Dodawanie poleceń do Menu skrótów  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Dodawanie poleceń do Menu skrótów  
  Dodawanie przycisków do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokument.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Aby dodać polecenia do menu skrótów  
@@ -146,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Formatowanie tekstu zakładki  
+##  <a name="BKMK_formattextbkmk"></a> Formatowanie tekstu zakładki  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Formatowanie tekstu zakładki  
   

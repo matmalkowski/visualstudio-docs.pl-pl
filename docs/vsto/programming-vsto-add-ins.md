@@ -1,12 +1,10 @@
 ---
-title: "Programowanie dodatków VSTO | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Programowanie dodatków VSTO | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -34,13 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>Programowanie dodatków VSTO
   Rozszerzając przez utworzenie dodatków VSTO aplikacji pakietu Microsoft Office, można napisać kod bezpośrednio przed `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań takich jak uzyskiwanie dostępu do modelu obiektów programu Microsoft Office aplikacji hosta, dostosowywanie interfejsu użytkownika (UI), aplikacji i udostępnianie obiektów w Twojej dodatku VSTO do innych rozwiązań pakietu Office.  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Niektóre aspekty pisanie kodu w dodatku VSTO projektów różnią się od innych typów projektów programu Visual Studio. Wiele z tych różnic przyczyną są sposobem Office modele obiektów są widoczne dla kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [pisanie kodu dla rozwiązań pakietu Office](../vsto/writing-code-in-office-solutions.md).  
   
- Aby uzyskać ogólne informacje dotyczące dodatków narzędzi VSTO i innych typów rozwiązań można utworzyć za pomocą narzędzi programowania pakietu Office w Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Aby uzyskać ogólne informacje dotyczące dodatków narzędzi VSTO i innych typów rozwiązań można utworzyć za pomocą narzędzi programowania pakietu Office w Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-thisaddin-class"></a>Przy użyciu thisaddin — klasa  
  Można uruchomić pisania kodu dodatku VSTO w `ThisAddIn` klasy. Visual Studio automatycznie generuje tej klasy w ThisAddIn.vb (w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub plik kodu ThisAddIn.cs (w języku C#) w projekcie dodatku VSTO. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automatycznie tworzy tej klasy, podczas ładowania dodatku VSTO z aplikacji Microsoft Office.  
@@ -108,7 +107,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
 -   [Model obiektu Visio — omówienie](../vsto/visio-object-model-overview.md)  
   
-###  <a name="AccessingDocuments"></a>Uzyskiwanie dostępu do dokumentu, podczas uruchamiania aplikacji pakietu Office  
+###  <a name="AccessingDocuments"></a> Uzyskiwanie dostępu do dokumentu, podczas uruchamiania aplikacji pakietu Office  
  Nie wszystkie [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacje automatycznie otworzyć dokument podczas uruchamiania ich i żaden [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacji otworzyć dokument, po ponownym uruchomieniu. W związku z tym nie należy dodawać kod w `ThisAdd-In_Startup` obsługi zdarzeń, jeśli kod wymaga dokument jest otwarty. Zamiast tego należy dodać kodu na zdarzenie, który wywołuje aplikacji pakietu Office, gdy użytkownik tworzy lub otwiera dokument. W ten sposób można zagwarantować dokument jest otwarty, zanim kod działa na nim operacji.  
   
  Poniższy przykładowy kod działa z dokumentu programu Word, tylko wtedy, gdy użytkownik tworzy dokument lub otwiera istniejący dokument.  

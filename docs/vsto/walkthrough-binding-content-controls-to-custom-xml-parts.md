@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Wskazówki: powiązywanie kontrolek zawartości do niestandardowych części XML
   W tym przewodniku pokazano, jak można powiązać formantów zawartości w dostosowaniu poziomie dokumentu dla programu Word do danych XML, który jest przechowywany w dokumencie.  
@@ -64,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Tworzenie projektu dokument programu Word o nazwie **EmployeeControls**. Utwórz nowy dokument dla rozwiązania. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **EmployeeControls** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **EmployeeControls** projektu do **Eksploratora rozwiązań**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Dodawanie formantów zawartości do dokumentu  
  Utwórz tabelę, która zawiera trzy różne typy formantów zawartości, gdy użytkownik umożliwia wyświetlenie i edytowanie informacji na temat pracownika.  

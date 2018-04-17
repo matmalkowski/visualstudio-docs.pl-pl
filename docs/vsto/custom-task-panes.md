@@ -1,12 +1,10 @@
 ---
-title: "Niestandardowe okienka zadań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Niestandardowe okienka zadań | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Okienka zadań są panele interfejsu użytkownika, które są zazwyczaj zadokowane po jednej stronie okna w aplikacji pakietu Microsoft Office. Niestandardowe okienka zadań zapewniają sposób utworzyć własny okienka zadań i użytkownikom interfejs znany dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać kontrolki, których uruchamianie kodu w celu modyfikowania dokumentów ani nie wyświetlają danych ze źródła danych.  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automatycznie oczyszcza zasoby używane przez niestandardowego okienka zadań, gdy dodatku VSTO zostanie zwolniona. Nie wywołuj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> lub <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metod w `ThisAddIn_Shutdown` obsługi zdarzeń w projekcie. Te metody spowoduje zgłoszenie <xref:System.ObjectDisposedException>, ponieważ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] czyści zasoby wykorzystywane przez <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt przed `ThisAddIn_Shutdown` jest wywoływana. Aby uzyskać więcej informacji na temat `ThisAddIn_Shutdown`, zobacz [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Zarządzanie niestandardowych okienek zadań w wiele okien aplikacji  
+##  <a name="Managing"></a> Zarządzanie niestandardowych okienek zadań w wiele okien aplikacji  
  Podczas tworzenia niestandardowego okienka zadań w aplikacji, która używa wielu okien w celu wyświetlania dokumentów i innych elementów, należy wykonać dodatkowe czynności, aby upewnić się, że w okienku zadań jest widoczny, gdy użytkownik oczekuje.  
   
  Niestandardowe okienka zadań we wszystkich aplikacjach są skojarzone z okno ramowe dokumentu, który przedstawia widok dokumentu lub elementu dla użytkownika. W okienku zadań jest widoczny tylko wtedy, gdy skojarzone okno jest widoczne. Jednak nie wszystkie aplikacje używać okien ramowych dokumentu taki sam sposób.  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: Zarządzanie okienka zadań w dodatkach VSTO programu Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Program Outlook  
+##  <a name="Outlook"></a> Program Outlook  
  Podczas tworzenia niestandardowego okienka zadań dla programu Outlook, niestandardowego okienka zadań jest skojarzony z określonym okno Eksploratora lub Inspektora. Eksploratorów są systemu windows, które wyświetlanie zawartości folderu i inspektorzy są okna, które wyświetlania elementu, takie jak wiadomości e-mail lub zadania.  
   
  Jeśli chcesz wyświetlić niestandardowego okienka zadań z wielu Eksploratora lub Inspektora systemu windows, musisz utworzyć nowe wystąpienie klasy niestandardowego okienka zadań, po otwarciu okna Eksploratora lub Inspektora. W tym celu należy obsługiwać zdarzenie jest zgłaszane, gdy stworzono okno Eksploratora lub Inspektora, a następnie utwórz w okienku zadań w obsłudze zdarzeń. Można również obsługiwać zdarzenia Eksploratora i inspektora do ukrywania lub okienka zadań wyświetlana w zależności od tego, które okno jest widoczne.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Outlook windows niestandardowego okienka zadań nie zostaną jawnie usunięte, może zawierać wiele wystąpień niestandardowego okienka zadań. Outlook jest czasami odtwarzana systemu windows i windows odtwarzania zachowywanie odwołań do żadnych niestandardowych okienek zadań, które zostały dołączone do nich.  
   
-##  <a name="WordAndInfoPath"></a>Word, InfoPath i PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath i PowerPoint  
  Okno ramowe innego dokumentu wyświetlania każdego dokumentu programu Word, InfoPath i programu PowerPoint. Podczas tworzenia niestandardowego okienka zadań dla tych aplikacji niestandardowego okienka zadań są skojarzone tylko z określonego dokumentu. Jeśli użytkownik otwiera innego dokumentu, niestandardowego okienka zadań jest ukryta do momentu wyświetlenia dokumentu wcześniejszych ponownie.  
   
  Jeśli chcesz wyświetlić niestandardowego okienka zadań z wielu dokumentów, Utwórz nowe wystąpienie klasy niestandardowego okienka zadań, gdy użytkownik tworzy nowy dokument lub otwiera istniejący dokument. Aby to zrobić, obsługi zdarzeń, które są wywoływane, gdy dokument zostanie utworzone lub otwarte, a następnie utwórz w okienku zadań w obsłudze zdarzeń. Można również obsługiwać zdarzeń dokumentów, aby ukryć lub okienka zadań wyświetlana w zależności od tego, który dokument jest widoczny.  

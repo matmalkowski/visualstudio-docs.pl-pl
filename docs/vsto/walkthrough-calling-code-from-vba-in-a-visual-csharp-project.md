@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Wywoływanie kodu z VBA w projektach Visual C# | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Wywoływanie kodu z VBA w projektach Visual C# | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 109ae2e89cf30078c910ff313ea203c576906037
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Wskazówki: wywoływanie kodu z VBA w projektach Visual C#
   W tym przewodniku przedstawiono sposób wywołania metody w dostosowaniu poziomie dokumentu dla programu Microsoft Office Excel z języka Visual Basic dla kodu aplikacji (VBA) w skoroszycie. Procedura obejmuje trzy podstawowe kroki: dodanie metody `Sheet1` elementu klasa obsługująca, ujawnia metody do kodu z VBA w skoroszycie, a następnie wywołaj metodę z kodu VBA w skoroszycie.  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Kliknij przycisk **Zakończ**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwiera **WorkbookWithVBA** skoroszytu w Projektancie i dodaje **CallingCodeFromVBA** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **WorkbookWithVBA** skoroszytu w Projektancie i dodaje **CallingCodeFromVBA** projektu do **Eksploratora rozwiązań**.  
   
 ## <a name="trusting-the-location-of-the-workbook"></a>Ufające lokalizacji skoroszytu  
  Przed za udostępnianie kodu w rozwiązaniu do kodu z VBA w skoroszycie, muszą ufać VBA w skoroszycie do uruchomienia. Istnieje kilka sposobów, aby to zrobić. W tym przewodniku będzie wykonać to zadanie przez ufające lokalizacji skoroszytu w **Centrum zaufania** w programie Excel.  
@@ -185,7 +184,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Kliknij przycisk **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]generuje nowy interfejs o nazwie `ISheet1`, oraz modyfikuje definicji `Sheet1` klasy tak, aby ją implementuje `ISheet1` interfejsu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zostanie otwarte także **ISheet1.cs** plik w edytorze kodu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] generuje nowy interfejs o nazwie `ISheet1`, oraz modyfikuje definicji `Sheet1` klasy tak, aby ją implementuje `ISheet1` interfejsu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zostanie otwarte także **ISheet1.cs** plik w edytorze kodu.  
   
 5.  W **ISheet1.cs** pliku, Zastąp `ISheet1` interfejsu deklaracji z następującym kodem. Ten kod sprawia, że `ISheet1` interfejs publiczny i są one stosowane <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybutu, aby wyświetlić interfejs do modelu COM.  
   
@@ -253,6 +252,6 @@ ms.lasthandoff: 01/10/2018
  [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Porady: udostępnianie kodu z VBA w projektach Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Porady: udostępnianie kodu z VBA w Visual C & 35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Porady: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Przewodnik: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

@@ -1,12 +1,10 @@
 ---
-title: "Wskazówka: Synchronizacja niestandardowego okienka zadań z przyciskiem wstążki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówka: Synchronizacja niestandardowego okienka zadań z przyciskiem wstążki | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +23,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Wskazówka: synchronizacja niestandardowego okienka zadań z przyciskiem wstążki
   Ten przewodnik przedstawia sposób tworzenia niestandardowego okienka zadań użytkowników można ukryć lub wyświetlić, klikając przycisk przełącznika na Wstążce. Należy zawsze tworzyć elementu interfejsu użytkownika, takie jak przycisk, które można kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań, ponieważ aplikacje Microsoft Office nie umożliwiają domyślne użytkownikom na wyświetlanie lub ukrywanie niestandardowych okienek zadań.  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Utwórz projekt dodatku programu Excel o nazwie **SynchronizeTaskPaneAndRibbon**, za pomocą szablonu projektu dodatek programu Excel. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **SynchronizeTaskPaneAndRibbon** projektu do **Eksplorator rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera **ThisAddIn.cs** lub **ThisAddIn.vb** pliku kodu i dodaje **SynchronizeTaskPaneAndRibbon** projektu do **Eksplorator rozwiązań**.  
   
 ## <a name="adding-a-toggle-button-to-the-ribbon"></a>Dodawanie przycisku przełącznika do wstążki  
  Jednym z wytycznymi projektowania aplikacji pakietu Office jest użytkowników powinien zawsze mieć formantu interfejsu użytkownika aplikacji pakietu Office. Umożliwienie użytkownikom kontrolowania niestandardowego okienka zadań, można dodać przycisk przełączania wstążki, który pokazuje i ukrywa ją w okienku zadań. Aby utworzyć przycisk przełącznika, dodać **wstążki (projektanta wizualnego)** elementu do projektu. Projektant pomaga Dodaj formanty pozycji, ustaw właściwości kontrolki i obsługę zdarzeń formantu. Aby uzyskać więcej informacji, zobacz [projektanta wstążki](../vsto/ribbon-designer.md).  

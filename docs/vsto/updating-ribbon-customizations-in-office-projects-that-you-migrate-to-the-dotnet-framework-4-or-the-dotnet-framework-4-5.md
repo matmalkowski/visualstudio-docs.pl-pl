@@ -1,13 +1,10 @@
 ---
-title: "Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które można dokonać migracji do programu .NET Framework 4 lub .NET Framework 4.5 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które można dokonać migracji do programu .NET Framework 4 lub .NET Framework 4.5 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie dostosowań wstążki w projektach związanych z pakietem Office przenoszonych do oprogramowania .NET Framework w wersji 4 lub 4.5
   Jeśli projekt zawiera dostosowania wstążki, który został utworzony przy użyciu **wstążki (projektanta wizualnego)** elementu projektu, należy wprowadzić następujące zmiany w kodzie projektu zmiana platformy docelowej na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później.  
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Projekty Visual Basic, odszukaj `ThisRibbonCollection` klasy na końcu pliku. Deklaracja tej klasy należy zmodyfikować, tak aby nie będzie już dziedziczyć z Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection.  
   
-##  <a name="ribboncontrols"></a>Tworzenie wystąpień formantów wstążki  
+##  <a name="ribboncontrols"></a> Tworzenie wystąpień formantów wstążki  
  Należy zmodyfikować każdy kod dynamicznie tworzy formantów wstążki. W projektach przeznaczonych programu .NET Framework 3.5, formantów wstążki są klasy, które można utworzyć wystąpienie bezpośrednio w niektórych scenariuszach. W projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, tych kontrolek interfejsów, które nie można utworzyć wystąpienia bezpośrednio. Formanty należy utworzyć przy użyciu metod, które są udostępniane przez <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu.  
   
  Istnieją dwa sposoby <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> obiektu:  
@@ -151,14 +148,14 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a>Obsługa zdarzeń wstążki  
+##  <a name="ribbonevents"></a> Obsługa zdarzeń wstążki  
  Należy zmodyfikować każdy kod obsługujący zdarzenia formantów wstążki. W projektach przeznaczonych dla programu .NET Framework 3.5, te zdarzenia są obsługiwane przez ogólnego <xref:System.EventHandler%601> delegowanie. W projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, te zdarzenia są teraz obsługiwane przez inne delegatów.  
   
  W poniższej tabeli wymieniono zdarzenia Wstążki i obiektów delegowanych, które są skojarzone z nimi w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym.  
   
 |Zdarzenie|Delegat do użycia w [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i nowszym projektów|  
 |-----------|---------------------------------------------------------------------------------------------------|  
-|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>zdarzenia w klasie wygenerowanego wstążki|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
+|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> zdarzenia w klasie wygenerowanego wstążki|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   

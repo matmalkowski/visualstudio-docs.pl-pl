@@ -9,11 +9,11 @@ description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 
@@ -32,11 +32,13 @@ Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, można 
 
     Jeśli Twoja organizacja ma inny adres e-mail do odbierania wiadomości e-mail niż używanego do logowania, istnieje możliwość wprowadzania go tutaj. Wybierz hiperłącze, które wskazuje "Inny adres e-mail dla komunikacji niż logowania?". 
 
-    Jeśli chcesz, aby ten subskrybent ma nieprawidłowy plików do pobrania oprogramowania podczas logowania się do [Portal subskrypcji w usłudze Visual Studio](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że jest zaznaczone pole pliki do pobrania. Jeśli wybierzesz zaznaczenie tego pola wyboru, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści zawarte w subskrypcji. Gdy wszystko będzie gotowe, kliknij przycisk **Dodaj**.
+    **Dostęp do plików do pobrania:**  
+    Jeśli chcesz, aby ten subskrybent ma nieprawidłowy plików do pobrania oprogramowania podczas logowania się do [Portal subskrypcji w usłudze Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że jest zaznaczone pole pliki do pobrania. Jeśli wybierzesz zaznaczenie tego pola wyboru, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści zawarte w subskrypcji. 
+    
+    Po zakończeniu wybierania opcji dla tego subskrybenta, kliknij przycisk **Dodaj**.
 
     ![Wprowadź informacje abonenta](_img\assign-license-add\add-subscriber-1.png)
-
-    ![Wprowadź informacje abonenta](_img\assign-license-add\add-subscriber-2.png)
+    ![wprowadź informacje abonenta](_img\assign-license-add\add-subscriber-2.png)
 
 4.  Po dodaniu subskrybenta, wiadomości E-mail przypisania będą automatycznie wysyłane do nowych subskrybentów z dalszymi instrukcjami. Możesz wysłać wiadomości E-mail przypisania w dowolnym momencie ponownie zaznaczając subskrybenta i klikając przycisk **Wyślij ponownie** przycisk w menu u góry.
 
@@ -55,9 +57,7 @@ Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, można 
 **W celu zapewnienia sprawnego przekazywania, należy stosować poniższe najlepsze rozwiązania:**
     - Upewnij się, że żadne z pól formularza zawierać przecinków.
     - Usuwaj odstępy przed i po pól formularza, takich jak nazwy użytkowników.
-    - Upewnij się, że nie zawierają dodatkowe spacje między nazwami pierwszego lub ostatniego dwuczęściowej nazwy użytkowników (np. dwuczęściową imię, takie jak "Może Maggie" należy nie wpisać jako "Może Maggie", ponieważ system nie będzie ograniczać dodatkowe miejsce)
-
-    ![Zbiorcze Dodawanie szablonu](_img\assign-license-add\bulk-template.png)
+    - Upewnij się, że nie zawierają dodatkowe spacje między nazwami pierwszego lub ostatniego dwuczęściowej nazwy użytkowników (np. dwuczęściową imię, takie jak "Może Maggie" należy nie wpisać jako "Może Maggie", ponieważ system nie będzie ograniczać dodatkowe miejsce) ![zbiorcze Dodawanie szablonu](_img\assign-license-add\bulk-template.png)
 
 4.  Powrócić do portalu Visual Studio subskrypcje administracyjnej i w oknie dialogowym przekazać wielu subskrybentów, kliknij przycisk **Przeglądaj**. Przejdź do pliku programu Excel został zapisany i kliknij **OK**. Na ekranie pojawi się postępu przekazywania. 
 

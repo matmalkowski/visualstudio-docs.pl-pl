@@ -1,57 +1,30 @@
 ---
-title: "LinkedIn uczenia korzyści w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the LinkedIn Learning benefit included as part of a LinkedIn Premium subscription included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8ef318cb7cdefefc079b230f0e44fdeb5f0c2d8f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: LinkedIn uczenia korzyści w ramach subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Więcej informacji na temat korzyści LinkedIn Learning zawarte w ramach subskrypcji LinkedIn Premium zawarte w wybranych subskrypcjach Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn uczenia korzyści w ramach subskrypcji programu Visual Studio
+# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyści LinkedIn Learning w ramach subskrypcji programu Visual Studio
 
-## <a name="overview"></a>Omówienie
 Odblokowanie możliwości LinkedIn z dostępem do osób, szczegółowych informacji i umiejętności potrzebne do zawodowych z wyprzedzeniem.  Dowiedz się najwyżej w żądanie business, technologii i creative umiejętności z branży ekspertów.
 
 Wybrane subskrypcje Visual Studio obejmują subskrypcji LinkedIn Premium, co obejmuje uczenie LinkedIn.  Długość subskrypcji Premium zależy od typu subskrypcji programu Visual Studio, do których masz.
 Musisz mieć konto LinkedIn przeprowadzać korzyści LinkedIn Learning.  Jeśli nie masz już, będziesz mieć możliwość utwórz je aby aktywować subskrypcję Premium.  
 
-## <a name="eligibility"></a>Kwalifikujących się usług
-| Poziom subskrypcji / Program                                                  | Korzyść               | Odnawialnymi?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 6 miesięcy              |  Nie                                                                |
-| Visual Studio Enterprise annual                                               | 6 miesięcy              |  Nie                                                                |
-| Visual co miesiąc Studio Enterprise                                              | Niedostępne         |                                                                    |
-| Visual Studio Professional Standard                                           | 3 miesiące              |  Nie                                                                |
-| Program Visual Studio Professional roczne                                             | 3 miesiące              |  Nie                                                                | 
-| Visual co miesiąc Studio Professional                                            | Niedostępne         |                                                                    |
-| Visual Studio Test Pro                                                        | 3 miesiące              |  Nie                                                                |
-| Platformy MSDN                                                                | 3 miesiące              |  Nie                                                                |
-| Visual Studio Dev Essentials                                                  | 3 miesiące              |  Nie                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 miesięcy              |  Nie                                                                |
-| Visual Studio Enterprise - FTE                                                | Niedostępne         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | Niedostępne         |                                                                    |
-| Visual Studio Professional — sieci Microsoft Partner Network                        | Niedostępne         |                                                                    |
-| Visual Studio Enterprise — Wyobraź sobie (standardowy)                                 | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Niedostępne         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Niedostępne         |                                                                    |
-| Microsoft Certified Trainer — oprogramowanie i usługi                             | Niedostępne         |                                                                    |
-| Microsoft Certified Trainer — deweloperów usług & oprogramowania                   | Niedostępne         |                                                                    |
-
-<sup>1</sup>*zawiera nie na odsprzedaż (niego), ważnych partnera firmy Microsoft (MVP), dyrektor Region (RD), programu Visual Studio Industry Partner (VSIP)*   
-
-Nie masz pewności subskrypcji, której używasz?  Połączyć się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
-
 ## <a name="activation-steps"></a>Kroki aktywacji
 Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Zlokalizuj kafelka LinkedIn Learning kategorii edukacji, a następnie kliknij przycisk **otrzymać kod** łącza.
 
@@ -117,8 +90,25 @@ Aby aktywować subskrypcji LinkedIn Premium i uczenie LinkedIn korzyści:
 
     ![Strona główna Learning Learning LinkedIn](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
-## <a name="faq"></a>Najczęściej zadawane pytania
-*Wyszukaj aktualizacje w tym miejscu*
+## <a name="eligibility"></a>Kwalifikujących się usług
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnymi?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowy, roczne w chmurze)   | Licencjonowania zbiorowego, Azure, sprzedaży detalicznej, wybrane niego<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Program Visual Studio Professional (standardowy, roczne w chmurze) | VL, Azure, Retail                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Test Professional (standardowy)                         | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Platformy MSDN (standardowy)                                          | Licencjonowania zbiorowego, sprzedaży detalicznej                                              | 3 miesiące                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Dev Essentials | NA  | 3 miesiące |Nie.  Dostępne tylko dla nowych subskrybentów |
+| Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                                           |NA|
+
+<sup>1</sup>*obejmuje: nie do sprzedaży (niego), programu Visual Studio Industry Partner (VSIP).    Wyklucza: Sieci Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT oprogramowania i usług deweloperów, BizSpark, załóżmy, partnera firmy Microsoft ważnych (MVP) dyrektor Region (RD).  MCT oprogramowania i usług.*
+
+
+
+Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
+
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Pytanie: czy odnowić subskrypcję, Moje korzyści LinkedIn Learning również odnawia?
+Odpowiedź: nie oferta LinkedIn Learning jest dostępne tylko dla nowych subskrybentów. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu LinkedIn Learning?  Zobacz następujące zasoby:

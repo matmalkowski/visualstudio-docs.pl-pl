@@ -1,13 +1,10 @@
 ---
-title: "Projektant wstążek | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Projektant wstążek | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
 dev_langs:
@@ -29,14 +26,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cab4a223f8e2d33185f37bc6ad90397ace1d56e1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c1ab841be09122a3a9e1680bf2ae3ae1c6df9aac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest kanwy wizualnego projektu. Użyj projektanta wstążki, aby dodać niestandardowe karty, grup i kontroli do Wstążki aplikacji pakietu Microsoft Office.  
@@ -69,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
  Jeśli masz już **wstążki (projektanta wizualnego)** elementu z innego projektu, można ponownie użyć go w bieżącym projekcie przy użyciu **Dodaj istniejący element** okno dialogowe.  
   
-##  <a name="DesigningRibbonLayout"></a>Projektowanie wstążki  
+##  <a name="DesigningRibbonLayout"></a> Projektowanie wstążki  
  Istnieją trzy sposoby Otwórz projektanta wstążki:  
   
 -   W **Eksploratora rozwiązań**, kliknij dwukrotnie plik kodu wstążki.  
@@ -103,7 +100,7 @@ ms.lasthandoff: 01/10/2018
   
  Nie można przeciągnij formanty z jednej karty do innego na Wstążce. Jeśli chcesz przenieść formant do innej karty, należy użyć **Wytnij** polecenie, aby usunąć formant z jedną kartę, a następnie wklej kontrolki na inną kartę. Jeśli formant Wytnij i wklej go, program obsługi zdarzeń przestanie działać. Można ponownie połączyć program obsługi zdarzeń w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [okna właściwości](/visualstudio/ide/reference/properties-window).  
   
-###  <a name="AddTabToRibbon"></a>Dodawanie kart niestandardowych do wstążki  
+###  <a name="AddTabToRibbon"></a> Dodawanie kart niestandardowych do wstążki  
  Istnieją trzy sposoby dodawania niestandardowych kartę na Wstążce:  
   
 -   Dodaj kartę z **przybornika**.  
@@ -137,29 +134,29 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji o sposobie Dostosowywanie wbudowanej karty, zobacz [porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md).  
   
-###  <a name="AddGroupsToTab"></a>Dodawanie grup do karty  
+###  <a name="AddGroupsToTab"></a> Dodawanie grup do karty  
  Grupy organizację formantów na Wstążce. Dodaj grupy na znaki tabulacji. Do grupy, należy dodać inne formanty.  
   
-###  <a name="AddControlsToGroups"></a>Dodawanie formantów do grupy  
+###  <a name="AddControlsToGroups"></a> Dodawanie formantów do grupy  
  Dodaj jeden lub kilka formantów do grupy. W poniższej tabeli opisano każdego formantu.  
   
 |Formant|Opis|  
 |-------------|-----------------|  
-|**Pole**|Kontener, który umożliwia organizowanie formantów w grupie. Można dodać żadnego formantu, do pola, z wyjątkiem separatora, grupy lub kartę. Pole może być pozioma lub pionowa.|  
+|**Box**|Kontener, który umożliwia organizowanie formantów w grupie. Można dodać żadnego formantu, do pola, z wyjątkiem separatora, grupy lub kartę. Pole może być pozioma lub pionowa.|  
 |**Przycisk**|Przycisk, który rozpoczyna się akcja. Przycisk można dodać do grupy, Grupa przycisków, listy rozwijanej, Galeria, menu lub przycisku podziału.|  
 |**Grupa przycisków**|Grupy, która zawiera jeden lub więcej przycisków, przycisków przełączania menu, przyciski podziału i galerii. Grupa przycisków można dodać do grupy lub menu.|  
 |**CheckBox**|Pole jest zaznaczone lub wyczyszczone, aby włączyć lub wyłączyć opcję.|  
 |**ComboBox**|Pole edycji z listą dołączony. Użytkownicy mogą albo wpisz lub wybierz wybranych przez nich. Pola są wyświetlane bieżące zaznaczenie. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> właściwość, aby dodawać i usuwać elementy na czas wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|  
 |**Lista rozwijana**|Lista elementów, które użytkownik może wybrać. Użytkownik nie wpisz nowy element na liście rozwijanej.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> właściwości, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> dodawanie przycisków do listy właściwości. Jednak nie można dodawać i usuwać przyciski w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|  
 |**Pole edycji**|Pole, w którym użytkownik może wpisać tekst.|  
-|**Galerii**|Menu przedstawiający tablicą lub siatki visual opcji, z których użytkownicy mogą wybrać. Można kontrolować układ zaznaczeń w menu. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> i <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> właściwości, aby określić liczbę wierszy i kolumn, które będzie wyświetlał elementy i przyciski galerii.|  
+|**Galeria**|Menu przedstawiający tablicą lub siatki visual opcji, z których użytkownicy mogą wybrać. Można kontrolować układ zaznaczeń w menu. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> i <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> właściwości, aby określić liczbę wierszy i kolumn, które będzie wyświetlał elementy i przyciski galerii.|  
 |**Etykieta**|Tekst, który służy do identyfikowania formantów na Wstążce.|  
 |**Menu**|Listy rozwijanej, która może zawierać żadnego z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />-Galerii<br />-Menu<br />— Przycisk pokrętła<br />— Przełącznik<br />-Separatora<br /><br /> Aby dodać kontrolkę menu w Projektancie wstążki, kliknij strzałkę w dół w menu, aby ujawnić powierzchni projektowej menu. Można następnie przeciągnij formanty wstążki z **przybornika** na menu. Aby zorganizować formantów, przeciągnij je do odpowiednie pozycje.<br /><br /> Do dodawania formantów do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po załadowaniu wstążki do aplikacji pakietu Office, musisz ustawić <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> właściwości **true** przed załadowaniem wstążki. Aby dowiedzieć się, jak to zrobić, zobacz [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|  
 |**Separator**|Pasek alokowania używany do oddzielania elementów na liście. Po dodaniu do grupy, pasek jest pionowy. Po dodaniu do menu, paska jest poziomy.|  
 |**Przycisk podziału**|Przycisk menu dołączony. Przycisk podziału może zawierać żadnego z następujących kontrolek:<br /><br /> -Przycisk<br />— Pole wyboru<br />-Galerii<br />-Menu<br />— Przycisk pokrętła<br />— Przełącznik<br />-Separatora<br /><br /> Podobnie jak menu przycisku podziału ma własną powierzchnię projektu. Jednak w przeciwieństwie do menu, możesz aktualizować tylko elementy przycisku podziału przed załadowaniem wstążki do aplikacji pakietu Office. Aby uzyskać informacje o sposobie aktualizowania elementów przycisku podziału, zobacz [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|  
 |**ToggleButton**|Przycisk wyświetlony naciśnięcie lub nie naciśnięto symbolu.|  
   
-##  <a name="HandleEventsSetProperties"></a>Obsługa zdarzeń i ustawianie właściwości  
+##  <a name="HandleEventsSetProperties"></a> Obsługa zdarzeń i ustawianie właściwości  
  Projektant wstążki umożliwia ustawienie właściwości formantu w czasie projektowania przy użyciu **właściwości** okna. Ponadto wstążki udostępnia silnie typizowany obiekt modelu, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania.  
   
  Możesz kliknąć dwukrotnie żadnego formantu na projektanta, aby otworzyć program obsługi zdarzeń dla zdarzenia domyślne formantu. Programy obsługi zdarzeń dla wszystkich zdarzeń kontrolowania można tworzyć przy użyciu **właściwości** okna.  
@@ -168,7 +165,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby informacji na temat obsługi zdarzeń Wstążki i ustawienie właściwości formantów wstążki w czasie wykonywania, zobacz [Model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).  
   
-##  <a name="CustomizingMicrosoftOfficeButton"></a>Dostosowywanie widoku Zakulisowego  
+##  <a name="CustomizingMicrosoftOfficeButton"></a> Dostosowywanie widoku Zakulisowego  
  Projektant wstążki umożliwia dodawanie formantów do menu dostępnym po kliknięciu **pliku** kartę. W tym menu nosi nazwę widoku Backstage.  
   
  Nie możesz umieścić kontrolek przed lub po formantów wbudowanych za pomocą projektanta wstążki. Wbudowane funkcje sterowania jest już wyświetlany w widoku Backstage formantu. Jeśli chcesz umieścić kontrolek przed lub po formantów wbudowanych, należy użyć kodu XML wstążki. Aby uzyskać więcej informacji na temat **wstążki (XML)**, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md). Aby uzyskać więcej informacji dotyczących dostosowywania widoku Backstage, zobacz [wprowadzenie do pakietu Office 2010 Backstage widoku dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182189) i [dostosowywania widoku Backstage pakietu Office 2010 dla deweloperów](http://go.microsoft.com/fwlink/?LinkId=182188).  
@@ -177,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać informacje o sposobie dodawania formantów do widoku Backstage, zobacz [porady: dodawanie formantów do widoku Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
-##  <a name="Accessibility"></a>Ułatwienia dostępu w Projektancie wstążki  
+##  <a name="Accessibility"></a> Ułatwienia dostępu w Projektancie wstążki  
  Skróty klawiaturowe umożliwia przenoszenie formantów w Projektancie wstążki. Niektóre skróty klawiaturowe dotyczą wszystkich kontrolek, a niektóre dotyczą tylko formanty, które mają menu.  
   
  W poniższej tabeli przedstawiono skróty klawiaturowe, które są stosowane do wszystkich kontrolek.  

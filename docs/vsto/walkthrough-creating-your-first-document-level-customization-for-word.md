@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Wskazówki: tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
   Ten Przewodnik wprowadzający pokazuje, jak utworzyć dostosowania poziomie dokumentu dla programu Microsoft Office Word. Funkcje, które możesz utworzyć w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy określony dokument jest otwarty. Nie możesz użyć dostosowania poziomie dokumentu do zmiany całej aplikacji, na przykład po otwarciu dokumentu, wyświetlanie nowej karty wstążki.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Wybierz **Utwórz nowy dokument**i kliknij przycisk **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Tworzy **FirstDocumentCustomization** projektu i dodaje **FirstDocumentCustomization** dokument i ThisDocument pliku kodu do projektu. **FirstDocumentCustomization** automatycznie otworzyć dokumentu w projektancie.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstDocumentCustomization** projektu i dodaje **FirstDocumentCustomization** dokument i ThisDocument pliku kodu do projektu. **FirstDocumentCustomization** automatycznie otworzyć dokumentu w projektancie.  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>Zamknąć i ponownie otworzyć dokument w Projektancie  
  Jeśli celowo lub przypadkowo zamknięto dokumentu w Projektancie podczas tworzenia projektu, zostanie ponownie otwarty.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **ThisDocument** code pliku, a następnie kliknij przycisk **Widok projektanta**.  
   
-     \-lub -  
+     \- lub -  
   
      W **Eksploratora rozwiązań**, kliknij dwukrotnie **ThisDocument** pliku kodu.  
   
@@ -158,7 +157,7 @@ ms.lasthandoff: 01/10/2018
 -   Wdrażanie dostosowań na poziomie dokumentu dla programu Word: [wdrażania rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozwój rozwiązań Office ― omówienie &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Rozwiązania programu Word](../vsto/word-solutions.md)   
  [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Przegląd modelu obiektów programu Word](../vsto/word-object-model-overview.md)   

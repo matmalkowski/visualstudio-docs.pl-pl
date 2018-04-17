@@ -1,13 +1,10 @@
 ---
-title: "Rozwiązywanie problemów z wdrażaniem rozwiązań Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązywanie problemów z wdrażaniem rozwiązań Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań Office
   Ten temat zawiera informacje dotyczące rozwiązywania typowych problemów, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  .NET Framework, można dodać [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]i podstawowe zestawy międzyoperacyjne pakietu Office do pakiet Instalatora jako wymagań wstępnych, które zostały wdrożone za pomocą rozwiązania do pakietu Office. Aby uzyskać informacje o sposobie instalowania podstawowe zestawy międzyoperacyjne, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) i [porady: Zainstaluj Office podstawowe zestawy międzyoperacyjne](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>Publikowanie za pomocą "Localhost" może spowodować problemy z instalacją  
- Gdy używasz "http://localhost" jako lokalizację publikowania lub instalacji rozwiązań na poziomie dokumentu, **Kreator publikowania** nie konwertuje ciąg na nazwę komputera prawdziwe. W takim przypadku rozwiązanie należy zainstalować na komputerze dewelopera. Aby można było wdrożonej rozwiązań usług IIS na komputerze dewelopera, należy użyć pełni kwalifikowanej nazwy dla wszystkich lokalizacji FTP-HTTP/HTTPS zamiast localhost.  
+ Jeśli używasz "http://localhost" jako lokalizację publikowania lub instalacji rozwiązań na poziomie dokumentu, **Kreator publikowania** nie konwertuje ciąg na nazwę komputera prawdziwe. W takim przypadku rozwiązanie należy zainstalować na komputerze dewelopera. Aby można było wdrożonej rozwiązań usług IIS na komputerze dewelopera, należy użyć pełni kwalifikowanej nazwy dla wszystkich lokalizacji FTP-HTTP/HTTPS zamiast localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Pamięci podręcznej zestawów są ładowane zamiast aktualizowane zestawy  
  Fusion, moduł ładujący zestawu .NET Framework ładuje buforowaną kopię zestawy po ścieżce danych wyjściowych projektu znajduje się w sieciowym udziale plików, zestaw jest podpisany przy użyciu silnej nazwy i wersji zestawu dostosowania nie zmieniają się. Jeśli aktualizacja zestawu, który spełnia te warunki, aktualizacja nie będzie dłużej wyświetlane przy następnym uruchomieniu projektu, ponieważ jest załadowana kopia pamięci podręcznej.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Aby pobrać zestawów, zamiast ładowania zbuforowane kopie  
   
-1.  Na pasku menu wybierz **projektu**, *ProjectName***właściwości**.  
+1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**.  
   
 2.  Na **aplikacji** wybierz pozycję **informacji o zestawie**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>Ponowna instalacja rozwiązań pakietu Office powoduje, że Argument wyjątek poza zakresem  
  Podczas ponownej instalacji rozwiązania do pakietu Office, <xref:System.ArgumentOutOfRangeException> wyjątku może pojawić się następujący komunikat o błędzie: określony argument jest spoza zakresu prawidłowych wartości.  
   
- Ta sytuacja występuje, jeśli różni się małych i wielkich liter adresu URL dla lokalizacji instalacji. Na przykład ten błąd pojawią się po zainstalowaniu rozwiązania do pakietu Office z [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) po raz pierwszy, a następnie użyć [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) po raz drugi.  
+ Ta sytuacja występuje, jeśli różni się małych i wielkich liter adresu URL dla lokalizacji instalacji. Na przykład ten błąd pojawią się po zainstalowaniu rozwiązania do pakietu Office z [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) po raz pierwszy, a następnie użyć [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) po raz drugi.  
   
  Aby zapobiec wyświetlaniu komunikatu, należy użyć tej samej wielkości liter podczas instalowania rozwiązań pakietu Office.  
   

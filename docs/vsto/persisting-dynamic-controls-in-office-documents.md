@@ -1,12 +1,10 @@
 ---
 title: Utrwalanie dynamicznie formanty w dokumentach pakietu Office | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 220a6e2c0b7e4633f91e7391448d27dddb5895c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Przechowywanie formantów dynamicznych w dokumentach pakietu Office
   Formanty, które są dodawane w czasie wykonywania nie są zachowywane, gdy dokument lub skoroszyt jest zapisać i zamknąć. Dokładne jest różny dla kontrolki hosta i formantów formularzy systemu Windows. W obu przypadkach można dodać kod do rozwiązania, aby ponownie utworzyć formantów, gdy użytkownik ponownie otwiera dokument.  
@@ -75,9 +74,9 @@ ms.lasthandoff: 01/10/2018
   
 1.  Przechowywanie informacji dotyczących rozmiar, lokalizacja i stan formantów podczas zapisywania dokumentu lub zamknięty. W dostosowanie poziomie dokumentu można zapisać danych w pamięci podręcznej danych w dokumencie. W dodatku VSTO można zapisać tych danych z niestandardowym elementem XML w dokumencie.  
   
-2.  Utwórz ponownie formantów w zdarzenie jest zgłaszane, gdy dokument jest otwarty. W projektach na poziomie dokumentu, możesz to zrobić w `Sheet`  *n*  `_Startup` lub `ThisDocument_Startup` procedury obsługi zdarzeń. W projektów dodatku VSTO można wykonać w przypadku tego programy obsługi <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> lub <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.  
+2.  Utwórz ponownie formantów w zdarzenie jest zgłaszane, gdy dokument jest otwarty. W projektach na poziomie dokumentu, możesz to zrobić w `Sheet` *n* `_Startup` lub `ThisDocument_Startup` procedury obsługi zdarzeń. W projektów dodatku VSTO można wykonać w przypadku tego programy obsługi <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> lub <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> zdarzenia.  
   
-###  <a name="removingActiveX"></a>Usuwanie otoki ActiveX w dodatku  
+###  <a name="removingActiveX"></a> Usuwanie otoki ActiveX w dodatku  
  Po dodaniu dynamiczne formanty formularzy systemu Windows do dokumentów za pomocą dodatku VSTO uniemożliwia otoki ActiveX dla formantów znajdujących się w dokumencie przy następnym otwarciu w następujący sposób.  
   
 #### <a name="removing-activex-wrappers-when-the-document-is-opened"></a>Usuwanie otoki ActiveX po otwarciu dokumentu  
