@@ -1,29 +1,25 @@
 ---
 title: IDebugOutputStringEvent2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugOutputStringEvent2
 helpviewer_keywords:
 - IDebugOutputStringEvent2 interface
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f222df8aa2a6fc35db08ceae3e8f49dfe7537960
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac8a2072d801936d8035d5479c7d234082639818
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) z menedżerem sesji debugowania (SDM) do ciągu wyjściowego.  
@@ -59,7 +55,7 @@ IDebugOutputStringEvent2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   

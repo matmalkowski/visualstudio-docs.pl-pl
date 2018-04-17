@@ -1,23 +1,21 @@
 ---
-title: "Porady: Dodawanie węzłów wynik wyszukiwania zestawu schematu do obszaru roboczego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Dodawanie węzłów wynik wyszukiwania zestawu schematu do obszaru roboczego | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95b479a94d3d561541e0b33e710fddf55ecb71bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 13d13c659dc100320460f6e2fed33271c260663f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Porady: Dodawanie węzłów wynik wyszukiwania zestawu schematu do obszaru roboczego
 W tym temacie wyjaśniono, jak dodać węzłów, które są wyróżniane w Eksploratora schematu XML w wyniku wyszukiwanie słów kluczowych w obszarze roboczym.  

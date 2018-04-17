@@ -1,23 +1,21 @@
 ---
-title: "Dołączanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dołączanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c1c2331081115e9d622c7c643af999f983e425f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 437d281f0bd965cbe652cfe9961203ee7123b6d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attach"></a>Dołącz
 VSPerfCmd.exe **Attach** opcji rozpoczyna próbki profilowanie uruchomiony proces określony przez identyfikator PID procesu.  
@@ -43,7 +41,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Crosssession**  
  Włącza profilowanie aplikacji w sesji innej niż sesji logowania. Jeśli wymagane **Start** określono opcję z **Crosssession** opcji.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Inicjuje sesję wiersza polecenia profilera i ustawia określonej metody profilowania.  
   
  **TargetCLR**  
@@ -52,7 +50,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **GlobalOn GlobalOff**  
  Wznawia (**GlobalOn**) lub wstrzymuje (**GlobalOff**) profilowania, ale nie kończy się sesja profilowania.  
   
- **ProcessOn:** `PID` **ProcessOff:**`PID`  
+ **ProcessOn:** `PID` **ProcessOff:** `PID`  
  Wznawia (**ProcessOn**) lub wstrzymuje (**ProcessOff**) profilowania dla określonego procesu.  
   
 ## <a name="interval-options"></a>Opcje interwału  

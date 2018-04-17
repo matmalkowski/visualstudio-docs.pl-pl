@@ -1,29 +1,25 @@
 ---
 title: IDebugCodeContext2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Ten interfejs reprezentuje pozycję początkową instrukcji kodu. Dla większości architektur środowiska wykonawczego dzisiaj, kontekst kodu można traktować jako adresu w strumieniu wykonywania programu.  
@@ -49,14 +45,14 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Pobiera informacje o języku dla tego kontekstu kodu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Najważniejsza różnica między `IDebugCodeContext2` interfejsu i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfejsu jest to, że `IDebugCodeContext2` zawsze jest wyrównany do instrukcji. Oznacza to, że `IDebugCodeContext2` zawsze wskazuje na początku instrukcji, podczas gdy `IDebugMemoryContext2` mogą wskazywać na dowolnym bajtów pamięci w architekturze środowiska wykonawczego. `IDebugCodeContext2`jest zwiększany instrukcje, a nie rozmiaru magazynu podstawowego (zwykle bajtów).  
+ Najważniejsza różnica między `IDebugCodeContext2` interfejsu i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfejsu jest to, że `IDebugCodeContext2` zawsze jest wyrównany do instrukcji. Oznacza to, że `IDebugCodeContext2` zawsze wskazuje na początku instrukcji, podczas gdy `IDebugMemoryContext2` mogą wskazywać na dowolnym bajtów pamięci w architekturze środowiska wykonawczego. `IDebugCodeContext2` jest zwiększany instrukcje, a nie rozmiaru magazynu podstawowego (zwykle bajtów).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   

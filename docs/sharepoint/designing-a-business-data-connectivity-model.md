@@ -1,12 +1,10 @@
 ---
-title: "Projektowanie modelu łączności danych biznesowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Projektowanie modelu łączności danych biznesowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Projektowanie modelu łączności danych biznesowych
   Model usługi łączności danych biznesowych (BDC) można utworzyć przez dodanie jednostek i metody w pliku modelu. Jednostka opis kolekcji pól danych. Na przykład jednostka może reprezentować tabeli w bazie danych. Metoda wykonuje zadania, takie jak dodawanie, usuwanie i aktualizowanie danych reprezentowanego przez jednostek. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych do programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Program Visual Studio umożliwia kopiowanie deskryptory typu między parametrami w modelu. Na przykład można zdefiniować deskryptor typu o nazwie `CustomerTD` dla parametru zwrotnego z `GetCustomer` metody. Można skopiować `CustomerTD` deskryptor w typu **Eksplorator modelu BDC**, a następnie wklej tego parametr wejściowy deskryptor typu `CreateCustomer` metody. Zapobiega to konieczności więcej niż raz zdefiniować tego samego deskryptor typu.  
   
-##  <a name="MethodInstances"></a>Wystąpienia — metoda  
+##  <a name="MethodInstances"></a> Wystąpienia — metoda  
  Podczas tworzenia metody Visual Studio dodaje wystąpienia metody domyślnej. Wystąpienie metody jest odwołaniem do metody, a także wartości domyślne dla parametrów. Pojedynczej metody mogą mieć wiele wystąpień metody. Każde wystąpienie jest kombinacją podpis metody i zestaw wartości domyślnych. Aby uzyskać więcej informacji, zobacz [porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Po uruchomieniu projektu metody wystąpienia są wyświetlane na liście rozwijanej powyżej listy programu SharePoint. Użytkownicy mogą wybierać wystąpień metody, aby wyświetlić dane.  

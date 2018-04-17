@@ -1,27 +1,23 @@
 ---
-title: "Przy użyciu znaczników tekstu przy użyciu interfejsu API starszych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przy użyciu znaczników tekstu przy użyciu interfejsu API starszych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Przy użyciu znaczników tekstu przy użyciu interfejsu API starsza wersja
 Znacznik tekst jest przestawne zakres tekstu w buforze, który może mieć wpływ na wyświetlanie i zachowanie obszaru tekstu. Znaczniki zawierają punkty przerwania, zakładki faliste podkreślenie i regionów tylko do odczytu. Znacznikach tekstu zasadniczo różnią się od kolorowanie składni. Kolorowanie składni jest szybkim sposobem przekazywania składni języka, który jest skojarzony z obszaru tekstu. Kolorowanie składni zazwyczaj jest wymagany, gdy Windows odświeża ekranu, gdy szybkość jest istotna. Kolorowanie składni zmienia kolor tekstu. Inne właściwości tekstu, można zmienić znacznikach tekstu. Znaczniki tekst można "float" i zastosować specjalnego zachowania i kolorowania.  

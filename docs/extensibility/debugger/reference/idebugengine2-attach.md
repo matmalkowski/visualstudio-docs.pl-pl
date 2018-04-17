@@ -1,29 +1,25 @@
 ---
 title: IDebugEngine2::Attach | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Dołącza aparat debugowania (DE), programów lub programu. Wywoływane przez menedżera sesji debugowania (SDM), gdy DE jest uruchomiony w procesie do SDM.  
@@ -72,11 +68,11 @@ int Attach(
 ## <a name="remarks"></a>Uwagi  
  Istnieją trzy ze względu na dołączenie do programu, w następujący sposób:  
   
--   `ATTACH_REASON_LAUNCH`Wskazuje, że DE jest dołączania do programu, ponieważ użytkownik uruchomić proces, który go zawiera.  
+-   `ATTACH_REASON_LAUNCH` Wskazuje, że DE jest dołączania do programu, ponieważ użytkownik uruchomić proces, który go zawiera.  
   
--   `ATTACH_REASON_USER`Wskazuje, że użytkownik zażądał jawnie DE, aby dołączyć do programu (lub proces, który zawiera program).  
+-   `ATTACH_REASON_USER` Wskazuje, że użytkownik zażądał jawnie DE, aby dołączyć do programu (lub proces, który zawiera program).  
   
--   `ATTACH_REASON_AUTO`Wskazuje, że DE jest dołączenie do określonego programu, ponieważ jest on już debugowania innych programów w danym procesie. Jest to również automatyczne dołączanie.  
+-   `ATTACH_REASON_AUTO` Wskazuje, że DE jest dołączenie do określonego programu, ponieważ jest on już debugowania innych programów w danym procesie. Jest to również automatyczne dołączanie.  
   
  Gdy ta metoda jest wywoływana, DE musi wysłać tych zdarzeń w sekwencji:  
   

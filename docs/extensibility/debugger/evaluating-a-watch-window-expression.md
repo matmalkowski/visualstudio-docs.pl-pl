@@ -1,27 +1,25 @@
 ---
-title: "Obliczenie wyrażenia okna czujki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obliczenie wyrażenia okna czujki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: beb632b484659c3bc901142b35ab52d25b8067fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Obliczenie wyrażenia okno czujki
 > [!IMPORTANT]
@@ -35,13 +33,13 @@ ms.lasthandoff: 12/22/2017
   
 2.  Dla każdego wyrażenia na liście wymaga programu Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Aby przekonwertować wyrażenia przeanalizowany tekst wyrażenia.  
   
-3.  `IDebugExpressionContext2::ParseText`wywołania [przeanalizować](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) do wykonują rzeczywistą pracę z analizy tekstu i produktu [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.  
+3.  `IDebugExpressionContext2::ParseText` wywołania [przeanalizować](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) do wykonują rzeczywistą pracę z analizy tekstu i produktu [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.  
   
-4.  `IDebugExpressionContext2::ParseText`Tworzy [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiekt i naraża `IDebugParsedExpression` obiektu do niego. Mam`DebugExpression2` obiekt jest następnie zwracany do programu Visual Studio.  
+4.  `IDebugExpressionContext2::ParseText` Tworzy [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiekt i naraża `IDebugParsedExpression` obiektu do niego. Mam`DebugExpression2` obiekt jest następnie zwracany do programu Visual Studio.  
   
 5.  Visual Studio wywołania [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) można oszacować wyrażenia przeanalizowany.  
   
-6.  `IDebugExpression2::EvaluateSync`przekazuje wywołanie [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) rzeczywiste oceny i utworzyć [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który jest zwracany do programu Visual Studio.  
+6.  `IDebugExpression2::EvaluateSync` przekazuje wywołanie [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) rzeczywiste oceny i utworzyć [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który jest zwracany do programu Visual Studio.  
   
 7.  Visual Studio wywołania [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) można uzyskać wartość wyrażenia, który następnie jest wyświetlany na liście.  
   

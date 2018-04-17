@@ -1,27 +1,25 @@
 ---
-title: "Dodawanie kontrolera Menu do paska narzędzi | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie kontrolera Menu do paska narzędzi | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 63db98df400333216f5e753f8b6f82a61e785cd5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera Menu do paska narzędzi
 Ten przewodnik jest oparty na [Dodawanie paska narzędzi do okna narzędzia](../extensibility/adding-a-toolbar-to-a-tool-window.md) wskazówki i przedstawiono sposób dodawania kontrolera menu do paska narzędzi okna narzędzia. Kroki opisane w tym miejscu można zastosować też w pasku narzędzi, która jest tworzona w [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) wskazówki.  

@@ -1,12 +1,10 @@
 ---
-title: "Porady: Weryfikacja właściwości ustawień IIS | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Weryfikacja właściwości ustawień IIS | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - Web applications, setting properties
 - properties [debugger], setting with IIS administration tool
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a9bda1bdf3fadffedc71873ddec6733b68651a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b351f45d8e45116894d08f4a813e7c427f4cb5c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Porady: weryfikacja właściwości ustawień IIS
 Można ustawić właściwości dla aplikacji sieci Web za pomocą narzędzia administracyjnego IIS. Te właściwości muszą być ustawione poprawnie dla aplikacji do uruchomienia, więc weryfikacji tych ustawień jest często krokiem w rozwiązywaniu problemów.  

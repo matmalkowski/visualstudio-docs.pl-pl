@@ -1,7 +1,7 @@
 ---
-title: "Określanie typów sieci wirtualnych w scenariuszu testów obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Określanie typów sieci wirtualnych w scenariuszu testów obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, adding networks
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c301a8d72228ed450479fd39b010db5682ae6adc
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f40c1d26d1b8f28fd72bbcc5eb4842724e2d1e89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Określanie typów sieci wirtualnych w scenariuszu testu obciążenia
 
@@ -93,9 +93,9 @@ Emulacji sieci umożliwia deweloperom aplikacji opartych na sieci i testerów em
 > [!WARNING]
 > **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
 
- Istnieje również możliwość na typ wartości procentowe bezpośrednio do  **%**  kolumny zamiast przy użyciu suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, innych elementów nie zostanie automatycznie dostosowana.
+ Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny zamiast przy użyciu suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, innych elementów nie zostanie automatycznie dostosowana.
 
 > [!NOTE]
-> Suwaki są wyłączone, gdy łączna nie dodaje do 100% lub po wprowadzeniu wartości procentowe w  **%**  kolumny są miejsc dziesiętnych.
+> Suwaki są wyłączone, gdy łączna nie dodaje do 100% lub po wprowadzeniu wartości procentowe w **%** kolumny są miejsc dziesiętnych.
 
 Po wprowadzeniu wartości procentowe ręcznie, należy upewnić się, że suma wszystkich elementów jest 100%. Po zapisaniu mieszane, jeśli nie jest sumą 100%, pojawi się monit zaakceptować wartości procentowe są one lub aby powrócić i dopasować je. Jeśli wybierzesz je zaakceptować, ponieważ są one, zostaną obliczone proporcjonalnie do 100%.  Na przykład jeśli dwa elementy i ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawiona do 66,67% (80 podzielona przez 120) i drugiego elementu zostanie ustawiona do 33,33% (40 podzielona przez 120).

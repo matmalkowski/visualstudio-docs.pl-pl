@@ -1,23 +1,21 @@
 ---
-title: "Projektowanie interfejsów użytkownika | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Projektowanie interfejsów użytkownika | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 880da508-7573-4434-b3a0-d48cf003c0a9
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 078568d4711794b58500399e4e8a58505056fd88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3921e0fc47830a5ced7050bcfbd8ffb2871a2404
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-user-interfaces"></a>Projektowanie interfejsów użytkownika
 Można tworzyć i projektowania interfejsu użytkownika dla aplikacji za pomocą różnych narzędzi w programie Visual Studio.

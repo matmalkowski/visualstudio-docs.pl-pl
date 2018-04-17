@@ -1,27 +1,23 @@
 ---
-title: "Interfejsy oceny wyrażenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Interfejsy oceny wyrażenia | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ce9f82e88c6275000c17d40e2b1e1494683715
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be9582f965fe1d8a00c97548dbc5f458ae4e1198
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfejsy Obliczanie wyrażenia
 > [!IMPORTANT]
@@ -46,14 +42,14 @@ ms.lasthandoff: 12/22/2017
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Reprezentuje alias liczbowa zmiennej i umożliwia ewaluatora wyrażeń (EE) można uzyskać w domenie aplikacji alias.|  
 |[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|Reprezentuje obiekt array.|  
 |[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|Reprezentuje obiekt tablicy zarządzanej i umożliwia ewaluatora wyrażeń (EE), aby określić indeks podstawowej (dolną granicę) dla tablicy.|  
-|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|NIEMCY|Reprezentuje integrator, że wiązania debugowania symboli do rzeczywistego adresów w pamięci.|  
-|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|NIEMCY|Taki sam jak [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu ale zapewnia dostęp do typów, aliasy i wizualizatory niestandardowe.|  
+|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|Reprezentuje integrator, że wiązania debugowania symboli do rzeczywistego adresów w pamięci.|  
+|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|Taki sam jak [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu ale zapewnia dostęp do typów, aliasy i wizualizatory niestandardowe.|  
 |[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)|EE|Reprezentuje ewaluatora wyrażenia.|  
 |[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|Reprezentuje rozbudowaną wersją ewaluatora wyrażeń (EE).|  
 |[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|Reprezentuje ewaluatora wyrażeń (EE) z drzewo rozszerzone analizatora.|  
 |[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|Reprezentuje funkcję.|  
 |[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|Reprezentuje funkcję i zwiększa [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.|  
-|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|NIEMCY|Umożliwia ewaluatora wyrażeń (EE) wyświetlić komunikat w oknie danych wyjściowych debugera.|  
+|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|Umożliwia ewaluatora wyrażeń (EE) wyświetlić komunikat w oknie danych wyjściowych debugera.|  
 |[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|Reprezentuje obiekt kodu zarządzanego.|  
 |[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|Podstawowy interfejs, który reprezentuje dowolny symbol powiązany adres pamięci.|  
 |[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|Taki sam jak [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfejsu ale zapewnia dostęp do dodatkowych informacji.|  

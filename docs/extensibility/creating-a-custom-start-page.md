@@ -1,23 +1,21 @@
 ---
-title: "Tworzenie niestandardowej strony początkowej | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie niestandardowej strony początkowej | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie strony początkowej niestandardowych
 Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej strony początkowej.  
@@ -73,7 +71,7 @@ Wykonując kroki opisane w tym dokumencie można utworzyć niestandardowej stron
   
 1.  Kopiowanie pliku XAML oraz wszelkich obsługi plików tekstowych i znaczników pliki do **%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\**  folderu.  
   
-2.  Jeśli stronę początkową odwołuje się do formantów ani typów w zestawach, które nie są instalowane przez program Visual Studio, skopiuj zestawy, a następnie wklej je w *folder instalacji programu Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Jeśli stronę początkową odwołuje się do formantów ani typów w zestawach, które nie są instalowane przez program Visual Studio, skopiuj zestawy, a następnie wklej je w * folder instalacji programu Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Wpisz w wierszu polecenia programu Visual Studio **devenv/rootsuffix Exp** otworzyć eksperymentalne wystąpienie programu Visual Studio.  
   

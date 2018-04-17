@@ -1,27 +1,23 @@
 ---
-title: "Widok wskaźników instrukcji (IP) - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok wskaźników instrukcji (IP) - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: 7d91cc14-e8e9-4ebb-b14f-b9f0da770508
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 193497f6fd995c8e3a31b5228675130d97641ffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 035ddb85410b1b5d4b883425ecbb2af35c73c58f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Widok wskaźników instrukcji (IP) - dane próbkowania pamięci .NET
 Wyświetlanie adresów IP dla danych pamięci .NET alokacji profilowania zebrane przy użyciu metody pobierania próbek list instrukcje zestawu, które przydzielonej pamięci podczas przebiegu profilowania. Kolumny w widoku listy również rozmiaru i liczby alokacji.  

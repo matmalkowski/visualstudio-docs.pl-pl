@@ -2,18 +2,18 @@
 title: XAML błędy i ostrzeżenia | Dokumentacja firmy Microsoft
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
 ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e29417e1a993adfb2c4bb7c78a6f1ed0209cef
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 072792b224d72e0f733373d56457a7a7667573fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML błędy i ostrzeżenia
 

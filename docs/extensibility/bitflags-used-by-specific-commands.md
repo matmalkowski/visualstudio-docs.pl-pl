@@ -1,27 +1,23 @@
 ---
-title: "Używane przez określonego polecenia flag bitowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Używane przez określonego polecenia flag bitowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Używane przez określonego polecenia flag bitowych
 Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źródła może być modyfikowany przez ustawienie jednego lub więcej bitów w pojedynczej wartości. Te wartości są określane jako flag bitowych. Różne flag bitowych używany przez interfejs API dodatku typu Plug-in kontroli źródła są szczegółowo opisane w tym miejscu pogrupowane według funkcji, która używa ich.  
@@ -40,7 +36,7 @@ Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źród�
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Wtyczka do kontroli źródła powinien automatycznie wykrywa, czy plik jest tekstowy czy binarny.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ pliku jest tekst.|  
-|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest plikiem binarnym. **Uwaga:** `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` flagi wzajemnie się wykluczają. Należy ustawić dokładnie jedną lub nie.|  
+|`SCC_FILETYPE_BINARY`|0x04|Typ pliku jest plikiem binarnym. **Uwaga:** `SCC_FILETYPE_TEXT` i `SCC_FILETYPE_BINARY` flagi wzajemnie się wykluczają.   Należy ustawić dokładnie jedną lub nie.|  
 |`SCC_ADD_STORELATEST`|0x02|Przechowywanie tylko najnowszą wersję (nie wystąpiły).|  
   
 ## <a name="diff-flags"></a>Flagi różnicowego  
@@ -48,8 +44,8 @@ Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źród�
   
 |Flaga|Wartość|Opis|  
 |----------|-----------|-----------------|  
-|`SCC_DIFF_IGNORECASE`|0X0002|Ignoruj wielkość różnice.|  
-|`SCC_DIFF_IGNORESPACE`|0X0004|Ignoruj różnice biały znak. **Uwaga:** `SCC_DIFF_IGNORECASE` i `SCC_DIFF_IGNORESPACE` flagi są opcjonalne flag bitowych.|  
+|`SCC_DIFF_IGNORECASE`|0x0002|Ignoruj wielkość różnice.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice biały znak. **Uwaga:** `SCC_DIFF_IGNORECASE` i `SCC_DIFF_IGNORESPACE` flagi są opcjonalne flag bitowych.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD porównując zawartość całego pliku.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD przez sumy kontrolnej.|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD przez sygnatury czasowej pliku.|  
@@ -68,8 +64,8 @@ Zachowanie kilka funkcji w interfejsie API dodatku typu Plug-in kontroli źród�
 |Wartość opcji|Wartość|Opis|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Sprawdź, czy tylko jeden poziom katalogów dla katalogów (jest to wartość domyślna).|  
-|SCC_PDL_RECURSIVE|0X0001|Rekursywnie Sprawdź, czy wszystkie katalogi w ramach każdego danego katalogu.|  
-|SCC_PDL_INCLUDEFILES|0X0002|Dołącz nazwy pliku w procesie badania.|  
+|SCC_PDL_RECURSIVE|0x0001|Rekursywnie Sprawdź, czy wszystkie katalogi w ramach każdego danego katalogu.|  
+|SCC_PDL_INCLUDEFILES|0x0002|Dołącz nazwy pliku w procesie badania.|  
   
 ## <a name="openproject-flags"></a>Flagi OpenProject  
  Te flagi są używane przez [SccOpenProject](../extensibility/sccopenproject-function.md) w `dwFlags` parametru.  

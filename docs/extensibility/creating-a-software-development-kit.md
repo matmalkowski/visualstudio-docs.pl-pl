@@ -1,23 +1,21 @@
 ---
 title: Tworzenie zestawu Software Development Kit | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>Tworzenie zestawu Software Development Kit
 Zestaw software development kit (SDK) to kolekcja interfejsów API, które można odwoływać się do pojedynczego elementu w programie Visual Studio. **Menedżera odwołań** okno dialogowe wyświetla wszystkie zestawy SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu, interfejsy API są dostępne w programie Visual Studio.  
@@ -34,7 +32,7 @@ Zestaw software development kit (SDK) to kolekcja interfejsów API, które możn
   
 -   [Rozszerzenia SDK](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>Zestaw SDK platformy  
+##  <a name="PlatformSDKs"></a> Zestaw SDK platformy  
  Zestaw SDK platformy są wymagane do opracowywania aplikacji dla platformy. Na przykład [!INCLUDE[win81](../debugger/includes/win81_md.md)] zestawu SDK jest wymagany do opracowywania aplikacji dla [!INCLUDE[win81](../debugger/includes/win81_md.md)].  
   
 ### <a name="installation"></a>Instalacja  
@@ -62,7 +60,7 @@ Zestaw software development kit (SDK) to kolekcja interfejsów API, które możn
 |Architektura folderu|Obsługiwana architektura folderu może istnieć. Program Visual Studio obsługuje następujące architektur: x86, x64, ARM i neutral. Uwaga: Win32 mapuje x86 oraz AnyCPU mapuje neutralne.<br /><br /> Program MSBuild wyszukuje tylko w obszarze \CommonConfiguration\neutral zestawów SDK platformy.|  
 |SDKManifest.xml|Ten plik zawiera opis sposobu Visual Studio powinien korzystać z zestawu SDK. Szukaj w manifeście zestawu SDK dla [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **Nazwa wyświetlana:** wartość, która wyświetla przeglądarki obiektów na liście przeglądania.<br /><br /> **PlatformIdentity:** istnienie ten atrybut informuje program Visual Studio i MSBuild czy zestaw SDK jest zestawu SDK platformy i nie można skopiować odwołania dodane z niego lokalnie.<br /><br /> **TargetFramework:** ten atrybut jest używany przez program Visual Studio, aby upewnić się, że tylko projektów przeznaczonych takie same struktury określony w wartości tego atrybutu mogą korzystać z zestawu SDK.<br /><br /> **MinVSVersion:** ten atrybut jest używany przez program Visual Studio korzystać tylko z zestawów SDK, które mają zastosowanie do niej.<br /><br /> **Odwołanie:** ten atrybut musi mieć określony tylko te odwołania, zawierające formanty. Aby uzyskać informacje o sposobie określania, czy odwołanie zawiera formanty zobacz poniżej.|  
   
-##  <a name="ExtensionSDKs"></a>Rozszerzenia SDK  
+##  <a name="ExtensionSDKs"></a> Rozszerzenia SDK  
  W poniższych sekcjach opisano, co należy zrobić, aby wdrożyć rozszerzenie SDK.  
   
 ### <a name="installation"></a>Instalacja  
@@ -173,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson: Maksymalna docelową wersję platformy należy określić wersji platformy, na których zestawu SDK rozszerzenia nie będą działać. Na przykład v11.0 Microsoft Visual C++ Runtime Package ma być utworzone odwołanie, tylko w projektach systemu Windows 8. W związku z tym MaxPlatformVersion projektu systemu Windows 8 jest 8.0. Oznacza to, że Menedżera odwołań odfiltrowuje Microsoft Visual C++ Runtime Package dla projektu Windows 8.1 i MSBuild zgłasza błąd podczas [!INCLUDE[win81](../debugger/includes/win81_md.md)] go odwołań w projekcie. Uwaga: ten element jest obsługiwany w systemie [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
   
-7.  Element AppliesTo: Określa zestawy SDK, które są dostępne w Menedżerze odwołanie przez określenie odpowiednich typów projektów programu Visual Studio. Dziewięć wartości są rozpoznawane: WindowsAppContainer, VisualC VB, CSharp, WindowsXAML, JavaScript, zarządzane i natywne. Można użyć autorem zestawu SDK i ("+"), lub ("&#124;"), nie ("!") operatory, aby określić dokładnie zakres typów projektów, które mają zastosowanie do zestawu SDK.  
+7.  Element AppliesTo: Określa zestawy SDK, które są dostępne w Menedżerze odwołanie przez określenie odpowiednich typów projektów programu Visual Studio. Dziewięć wartości są rozpoznawane: WindowsAppContainer, VisualC VB, CSharp, WindowsXAML, JavaScript, zarządzane i natywne. Można użyć autorem zestawu SDK i ("+"), lub ("&#124;"), a nie ("!") operatory, aby określić dokładnie zakres typów projektów, które mają zastosowanie do zestawu SDK.  
   
      WindowsAppContainer identyfikuje projektów dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.  
   
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. Odwołanie do pliku: określona dla tylko tych odwołań, które zawiera formanty lub jest natywny metadanych Winmd. Aby uzyskać informacje o sposobie określania, czy odwołanie zawiera formanty, zobacz [Określanie lokalizacji elementy przybornika](#ToolboxItems) poniżej.  
   
-##  <a name="ToolboxItems"></a>Określanie lokalizacji elementy przybornika  
+##  <a name="ToolboxItems"></a> Określanie lokalizacji elementy przybornika  
  Element ToolBoxItems schematu SDKManifest.xml określa kategorii i lokalizacji elementy przybornika zarówno platformy i zestawy SDK rozszerzeń. Poniższe przykłady przedstawiają sposób określenia różnych lokalizacjach. Dotyczy on odwołania WinMD i bibliotek DLL.  
   
 1.  Umieść formanty w kategorii domyślnego przybornika.  

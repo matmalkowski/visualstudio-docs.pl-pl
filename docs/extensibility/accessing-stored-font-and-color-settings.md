@@ -2,28 +2,24 @@
 title: Dostęp do przechowywanej czcionek i kolorów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing stored settings
 - font and color control [Visual Studio SDK], persistence
 - colors, accessing stored settings
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78fc7c343cc570742d2d246a60d3093485800132
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 1280555a2b8a293fcdd0f86891a1d198ef3c99d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Dostęp do przechowywanej czcionek i kolorów
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) przechowuje zmodyfikowane ustawienia czcionek i kolorów w rejestrze. Można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu uzyskać dostępu do tych ustawień.

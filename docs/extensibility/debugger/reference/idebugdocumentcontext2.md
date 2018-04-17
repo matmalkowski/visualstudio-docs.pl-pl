@@ -1,29 +1,25 @@
 ---
 title: IDebugDocumentContext2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2
 helpviewer_keywords:
 - IDebugDocumentContext2
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7184b722d0331efbfcb83e2d63563ea1ae13acc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 06ff06086c0f293f70af7d9570cf72df4be85608
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Ten interfejs reprezentuje pozycji w pliku dokumentu źródłowego.  
@@ -51,7 +47,7 @@ IDebugDocumentContext2 : IUnknown
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugdocumentcontext2-getlanguageinfo.md)|Pobiera język skojarzone z tym kontekstem dokumentu.|  
 |[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Pobiera zakres instrukcji pliku tego kontekstu dokumentu.|  
 |[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)|Pobiera zakres źródłowy plik tego kontekstu dokumentu.|  
-|[Porównaj](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Porównuje tego kontekstu dokumentu do danej tablicy kontekstów dokumentu.|  
+|[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Porównuje tego kontekstu dokumentu do danej tablicy kontekstów dokumentu.|  
 |[Wyszukiwanie](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Przenosi kontekstu dokumentu przez daną liczbę instrukcji lub wierszy.|  
   
 ## <a name="requirements"></a>Wymagania  
@@ -59,7 +55,7 @@ IDebugDocumentContext2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)   

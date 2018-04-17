@@ -1,29 +1,25 @@
 ---
 title: DEBUG_ADDRESS_UNION | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc4e5c4bf075c69f4549e34185d407ba9fb95cd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0b0fcd662e3a4831b78ca55c139ce1511ea04b24
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 W tym artykule opisano różne rodzaje adresów.  
@@ -100,7 +96,7 @@ public struct DEBUG_ADDRESS_UNION {
   
  [C# tylko] W poniższej tabeli przedstawiono sposób interpretowania `unionmember` elementu członkowskiego dla każdego rodzaju adres. W przykładzie pokazano, jak to zrobić dla jednego rodzaju adres.  
   
-|`dwKind`|`unionmember`interpretowane jako|  
+|`dwKind`|`unionmember` interpretowane jako|  
 |--------------|----------------------------------|  
 |`ADDRESS_KIND_NATIVE`|[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)|  
 |`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`|[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)|  
@@ -142,7 +138,7 @@ namespace MyPackage
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Korzystanie z zasobów 3-w aplikacji lub gry | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Korzystanie z zasobów 3-w aplikacji lub gry | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -15,16 +13,16 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0e5d8625ab7925327a773bdab3183834f7af1117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przetwarzanie 3-zasobów i uwzględnić je w kompilacji.  
@@ -32,7 +30,7 @@ W tym artykule opisano, jak używasz [!INCLUDE[vsprvs](../code-quality/includes/
  Po użyciu narzędzi w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można utworzyć zasoby 3-w, następnym krokiem jest użycie ich w aplikacji. Ale przed użyciem, zasobów musi zostać przekształcone w formacie, który można poznać DirectX. W celu zmiany zasobów, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zawiera dostosowania kompilacji dla każdego rodzaju zawartości, który może go utworzyć. Uwzględnienie zasoby w kompilacji, musisz wykonać będzie skonfigurować projekt użyj opcji dostosowania kompilacji, dodać zasoby do projektu i skonfigurować zasoby, używać dostosowania kompilacji poprawne. Po wykonaniu tej można załadować zasoby do aplikacji i używać ich tworzenie i wypełnianie zasobów DirectX, tak jak w dowolnej aplikacji DirectX.  
   
 ## <a name="configuring-your-project"></a>Konfigurowanie projektu  
- Przed wdrożeniem 3-zasobów w ramach kompilacji, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi wiedzieć o rodzaju zasoby, które mają zostać wdrożone. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]już zna wielu popularnych typów plików, ale ponieważ jest używany przez niektóre rodzaje aplikacji 3-zasoby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie założono, że projekt zostanie skompilowany tych typów plików. Można ustalić [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] czy Twoja aplikacja korzysta z tego rodzaju zasoby przy użyciu *kompilacji dostosowania*— pliki, które informują [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sposobu przetwarzania różnych typów plików w przystępny sposób — są dostarczane dla każdego typu zasobu. Ponieważ te dostosowania są stosowane na podstawie na projekt, musisz wykonać będzie Dodaj odpowiednie dostosowania do projektu.  
+ Przed wdrożeniem 3-zasobów w ramach kompilacji, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi wiedzieć o rodzaju zasoby, które mają zostać wdrożone. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] już zna wielu popularnych typów plików, ale ponieważ jest używany przez niektóre rodzaje aplikacji 3-zasoby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie założono, że projekt zostanie skompilowany tych typów plików. Można ustalić [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] czy Twoja aplikacja korzysta z tego rodzaju zasoby przy użyciu *kompilacji dostosowania*— pliki, które informują [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sposobu przetwarzania różnych typów plików w przystępny sposób — są dostarczane dla każdego typu zasobu. Ponieważ te dostosowania są stosowane na podstawie na projekt, musisz wykonać będzie Dodaj odpowiednie dostosowania do projektu.  
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać do projektu dostosowania kompilacji  
   

@@ -1,23 +1,21 @@
 ---
-title: "Powiązanie danych WPF za pomocą LINQ do XML-Przegląd | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Powiązanie danych WPF za pomocą LINQ do XML-Przegląd | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 44f8e1bde92cec70264beea8e9a62205ec0c2e8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc0c3c54a79dd45af322256e19339b6ee54bf407
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Powiązanie danych WPF za pomocą LINQ do XML-Przegląd
 W tym temacie przedstawiono funkcje powiązania danych dynamicznych <xref:System.Xml.Linq> przestrzeni nazw. Te funkcje może służyć jako źródło danych dla elementów interfejsu użytkownika w systemie Windows Presentation Foundation (WPF).  

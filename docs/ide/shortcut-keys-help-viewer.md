@@ -1,31 +1,29 @@
 ---
-title: "Klawisze skrótów (Podgląd pomocy) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Klawisze skrótów (Podgląd pomocy) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 72325d21437d06c3e119da14c6fa34f5d8416e33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shortcut-keys-help-viewer"></a>Klawisze skrótów (Podgląd Pomocy)
 W Podglądzie pomocy firmy Microsoft można przejść za pomocą klawiszy skrótów w poniższej tabeli:  
   
-|Obszar|Naciśnięcie klawisza|Akcja|  
+|Obszar|Keystroke|Akcja|  
 |----------|---------------|------------|  
 |Ogólnego zastosowania|Miejsce|Użyj zamiast Enter dowolnego miejsca, z wyjątkiem pola edycji.|  
 |Ogólnego zastosowania|F1|Otwórz Pomoc na temat bieżącego elementu interfejsu użytkownika.|  

@@ -1,29 +1,25 @@
 ---
 title: IDebugBreakpointBoundEvent2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointBoundEvent2
 helpviewer_keywords:
 - IDebugBreakpointBoundEvent2
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acb8fa773014481ff39aa94dbfcfbd30e64cfb7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24b965e38a6cf154543a5754870828dde3410a2f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Ten interfejs informuje menedżera debugowania sesji (SDM) czy oczekującym punktem przerwania pomyślnie powiązano z załadować program.  
@@ -56,7 +52,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

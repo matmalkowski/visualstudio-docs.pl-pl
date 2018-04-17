@@ -1,12 +1,10 @@
 ---
-title: "Omówienie modelu obiektu Word | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie modelu obiektu Word | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a6f9163543272d784b0f8347acf275f74023ccf8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aae1d5648b2db72a4e5ddd6b792f2b3aed846e76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="word-object-model-overview"></a>Model obiektu Word — Omówienie
   Podczas opracowywania rozwiązań programu Word w Visual Studio, interakcji z modelu obiektów programu Word. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowego zestawu międzyoperacyjnego dla programu Word i są zdefiniowane w <xref:Microsoft.Office.Interop.Word> przestrzeni nazw.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Praca z tabelami](../vsto/working-with-tables.md)  
   
-##  <a name="understanding"></a>Opis modelu obiektów programu Word  
+##  <a name="understanding"></a> Opis modelu obiektów programu Word  
  Word zawiera setki obiektów, które mogą prowadzić interakcję. Te obiekty są zorganizowane w hierarchii, która jest ściśle zgodna interfejsu użytkownika. W górnej części hierarchii jest <xref:Microsoft.Office.Interop.Word.Application> obiektu. Ten obiekt reprezentuje bieżące wystąpienie programu Word. <xref:Microsoft.Office.Interop.Word.Application> Zawiera obiekt <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, i <xref:Microsoft.Office.Interop.Word.Range> obiektów. Każdy z tych obiektów zawiera wiele metod i właściwości, do których masz dostęp do manipulowania i interakcji z obiektem.  
   
  Na poniższej ilustracji przedstawiono jeden widok tych obiektów w hierarchii modelu obiektów programu Word.  
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
   
 -   Można określić nazwę zakładki w czasie projektowania.  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark>obiekty są zapisane w dokumencie i w związku z tym nie są usuwane w kod przestanie działać lub dokumentu jest zamknięty.  
+-   <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty są zapisane w dokumencie i w związku z tym nie są usuwane w kod przestanie działać lub dokumentu jest zamknięty.  
   
 -   Zakładki może być ukryty lub stają się widoczne, ustawiając <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> właściwość <xref:Microsoft.Office.Interop.Word.View> do obiektu **false** lub **true**.  
   
  Visual Studio rozszerza <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu podając <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki hosta. <xref:Microsoft.Office.Tools.Word.Bookmark> Kontroli hosta zachowuje się jak natywny <xref:Microsoft.Office.Interop.Word.Bookmark>, ale ma dodatkowych zdarzeń i możliwości wiązania danych. W ten sam sposób powiązania danych do formantu pola tekstowego na formularzu systemu Windows można powiązać danych formant zakładki w dokumencie. Aby uzyskać więcej informacji, zobacz [formant zakładki](../vsto/bookmark-control.md).  
   
-##  <a name="WordOMDocumentation"></a>Korzystając z dokumentacji modelu obiektów programu Word  
+##  <a name="WordOMDocumentation"></a> Korzystając z dokumentacji modelu obiektów programu Word  
  Aby uzyskać pełne informacje o modelu obiektów programu Word mogą odwoływać się do programu Word odwołanie podstawowy zestaw międzyoperacyjny (PIA) i Visual Basic for Applications (VBA) odwołania do modelu obiektu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odwołanie do podstawowego zestawu międzyoperacyjnego  

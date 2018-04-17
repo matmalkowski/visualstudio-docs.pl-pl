@@ -1,29 +1,27 @@
 ---
-title: "Wdrażanie i rejestrowanie dostawcy portu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wdrażanie i rejestrowanie dostawcy portu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 54d6a4ab90b5ad169c5c940f52322dfd9b4974a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Wdrażanie i rejestrowanie dostawcy portu
-Rolą port dostawcy jest śledzenie i podaj portów, które z kolei zarządzania procesami. W momencie port musi zostać utworzona dostawca portu zostanie uruchomiony przy użyciu CoCreate z identyfikatorem GUID dostawcy portu (manager debugowania sesji [SDM] będzie używać portu dostawcy wybrany przez użytkownika lub dostawcę port określony przez system projektów). Następnie wywoła SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) aby zobaczyć, czy żadnych portów może być dodany. Jeśli port można dodać, nowy port jest wymagany przez wywołanie [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie jej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, który opisuje. `AddPort`Zwraca nowy port reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu.  
+Rolą port dostawcy jest śledzenie i podaj portów, które z kolei zarządzania procesami. W momencie port musi zostać utworzona dostawca portu zostanie uruchomiony przy użyciu CoCreate z identyfikatorem GUID dostawcy portu (manager debugowania sesji [SDM] będzie używać portu dostawcy wybrany przez użytkownika lub dostawcę port określony przez system projektów). Następnie wywoła SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) aby zobaczyć, czy żadnych portów może być dodany. Jeśli port można dodać, nowy port jest wymagany przez wywołanie [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie jej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, który opisuje. `AddPort` Zwraca nowy port reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu.  
   
 ## <a name="discussion"></a>Omówienie  
  Port jest tworzony przez dostawcę portu, który jest skojarzony z serwerem maszyny lub debugowania. Serwer można wyliczyć dostawców za pośrednictwem portu[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) — metoda i dostawcy portu można wyliczyć jego portów za pomocą [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) metody.  

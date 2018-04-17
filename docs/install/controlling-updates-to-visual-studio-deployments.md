@@ -1,27 +1,25 @@
 ---
 title: Kontrolowanie aktualizacji do wdrożenia programu Visual Studio | Dokumentacja firmy Microsoft
-description: '{{PLACEHOLDER}}'
+description: '{{SYMBOL ZASTĘPCZY}}'
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53e2058d78e0dbbe6c74e65267e777d42d85adb7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 003f6c68db20e335f16324d81e8774f27284e62d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Formant aktualizacje do wdrożenia oparte na sieci programu Visual Studio
 

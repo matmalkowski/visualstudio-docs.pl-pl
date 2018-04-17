@@ -1,12 +1,10 @@
 ---
-title: "Office Development ― przykłady i wskazówki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Office Development ― przykłady i wskazówki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office Development ― Przykłady i wskazówki
   Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i wskazówki krok po kroku, ilustrujących składni, struktury i techniki stosowane do tworzenia rozwiązań Microsoft Office.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Zawiera linki do informacji o instalacji, szablony projektów, podstawowe zestawy międzyoperacyjne pakietu Office i what's new in programowanie Office.|  
+|[Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Zawiera linki do informacji o instalacji, szablony projektów, podstawowe zestawy międzyoperacyjne pakietu Office i what's new in programowanie Office.|  
 |[Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Wyjaśnia sposób zarządzanego kodu pracy rozwiązań pakietu Office z punktu widzenia projektanta i użytkownik końcowy i zawiera informacje o zarządzanych działania kodu z dokumentów pakietu Office i aplikacji.|  
 |[Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)|Zawiera listę często zadawanych pytań dotyczących programowania w języku programowanie Office w Visual Studio i zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.|  
 |[Projektowanie i tworzenie rozwiązań Office](../vsto/designing-and-creating-office-solutions.md)|Zawiera linki do informacji o sposobie tworzenia pakietu Microsoft Office i informacji na temat roli zestawów w rozwiązaniu.|  

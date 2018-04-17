@@ -1,12 +1,10 @@
 ---
-title: "Vsperfmon — | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Vsperfmon — | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPerfMon tool
 - command line, tools
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - performance tools, VSPerfMon tool
 - profilng tools,VSPerfCmd
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
-caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8700cf317e60f8f842186e04cc36f4037172aa2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 95f31e0742ffcba0c39bb0235b59d87ed683f4b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Vsperfmon — narzędzie służy do zbierania danych wydajności dla aplikacji; zwykle to narzędzie jest uruchamiana przez VSPerfCmd.exe. Vsperfmon — Wyświetla dodatkowe informacje o procesie dołączanie lub odłączanie, co nie jest możliwe za pomocą narzędzia VSPerfCmd. Aby wyświetlić te informacje, należy uruchomić vsperfmon — w osobnym oknie. Aby wywołać vsperfmon — użyj następującej składni:  
@@ -39,16 +37,16 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |Opcje|Opis|  
 |-------------|-----------------|  
 |**U**|Konsola przekierowane dane wyjściowe są zapisywane jako Unicode.  Musi to być pierwszą określoną opcją.|  
-|**Dane wyjściowe:** `<` *nazwę pliku*`>`|Przekierowuje do określonej nazwy pliku.|  
+|**Dane wyjściowe:** `<` *nazwy pliku* `>`|Przekierowuje do określonej nazwy pliku.|  
 |**ŚLEDZENIA**|Uruchamia monitor wydajności dla instrumentowane profilowanie.|  
 |**PRÓBKI**|Uruchamia monitor wydajności dla profilowanie próbkowania.|  
 |**POKRYCIA**|Uruchamia monitor wydajności dla kolekcji pokrycia kodu.|  
 |**WSPÓŁBIEŻNOŚĆ**|Uruchamia monitor wydajności dla profilowania kontencji zasobów.|  
 |**Użytkownik:** `[` *domeny* `\]` *nazwy użytkownika*|Umożliwia dostęp klienta do monitora wydajności z określonego konta.|  
 |**CROSSSESSION**|Włącza profilowanie krzyżowego sesji.|  
-|**LICZNIK**`:cfg`|Gdy jest używana metoda profilowania Instrumentacji (śledzenia), określa licznika Procesora, które będą zbierane w każdym punkcie instrumentacji. Można zebrać danych w wielu liczników określając wiele opcji licznika.<br /><br /> Użyj następującej składni, aby określić licznika (*cfg*) dane:<br /><br /> **CounterName** [**, Załaduj ponownie**[,**FriendlyName**]]<br /><br /> -   **CounterName** jest nazwą licznika zwracanym przez polecenie /QueryCounters narzędzia VSPerfCmd.<br />-   **Załaduj ponownie** jest interwałem próbkowania licznika zdarzeń. Nie używaj *Załaduj ponownie* przy użyciu metody instrumentacji.<br />— W przypadku **FriendlyName** zastępuje **CounterName** w narzędziach profilowania zgłosić nazw kolumn.|  
-|**WINCOUNTER**`:path`|Określa licznik wydajności systemu Windows, aby uwzględnić znak danych. `path`jest to ciąg licznika wydajności systemu Windows w formacie ścieżki licznika PDH. Na przykład:<br /><br /> \Processor(0)\\czas procesora (%)<br /><br /> \System\Context przełączniki/s|  
-|**AUTOMARK**`:n`|Określa interwał (w milisekundach) między znakami automatyczne, gdy używasz /WINCOUNTER. Zaokrąglone do najbliższych 500 MS.<br /><br /> Użyj wartości 0, aby wyłączyć automatyczne znaczniki. (domyślna 500 ms)|  
+|**LICZNIK** `:cfg`|Gdy jest używana metoda profilowania Instrumentacji (śledzenia), określa licznika Procesora, które będą zbierane w każdym punkcie instrumentacji. Można zebrać danych w wielu liczników określając wiele opcji licznika.<br /><br /> Użyj następującej składni, aby określić licznika (*cfg*) dane:<br /><br /> **CounterName** [**, Załaduj ponownie**[,**FriendlyName**]]<br /><br /> -   **CounterName** jest nazwą licznika zwracanym przez polecenie /QueryCounters narzędzia VSPerfCmd.<br />-   **Załaduj ponownie** jest interwałem próbkowania licznika zdarzeń. Nie używaj *Załaduj ponownie* przy użyciu metody instrumentacji.<br />— W przypadku **FriendlyName** zastępuje **CounterName** w narzędziach profilowania zgłosić nazw kolumn.|  
+|**WINCOUNTER** `:path`|Określa licznik wydajności systemu Windows, aby uwzględnić znak danych. `path` jest to ciąg licznika wydajności systemu Windows w formacie ścieżki licznika PDH. Na przykład:<br /><br /> \Processor(0)\\czas procesora (%)<br /><br /> \System\Context przełączniki/s|  
+|**AUTOMARK** `:n`|Określa interwał (w milisekundach) między znakami automatyczne, gdy używasz /WINCOUNTER. Zaokrąglone do najbliższych 500 MS.<br /><br /> Użyj wartości 0, aby wyłączyć automatyczne znaczniki. (domyślna 500 ms)|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzie VSInstr](../profiling/vsinstr.md)   

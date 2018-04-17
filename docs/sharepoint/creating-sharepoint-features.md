@@ -1,12 +1,10 @@
 ---
 title: Tworzenie funkcji SharePoint | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>Tworzenie funkcji SharePoint
   Funkcja programu SharePoint można użyć do grupowania powiązanych SharePoint — elementy projektu wdrożenia łatwiejsze. Można utworzyć funkcji, ustaw zakresy i oznaczyć za pomocą programu SharePoint Designer funkcji innych funkcji jako zależności. Projektant generuje również manifestu, który jest plik XML, który opisuje każdej funkcji.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|Tytuł|Opcjonalny. Tytuł domyślny funkcji ma ustawioną wartość *Nazwa rozwiązania**FeatureName*.|  
+|Tytuł|Opcjonalny. Tytuł domyślny funkcji ma ustawioną wartość *Nazwa rozwiązania ** FeatureName*.|  
 |Opis|Opcjonalny. Opis funkcji programu SharePoint.|  
 |Zakres|Wymagany. Jeśli funkcja jest tworzona przy użyciu **Eksploratora rozwiązań**, zakres jest domyślnie ustawiany na sieci Web.<br /><br /> -Farmy: Aktywacja funkcji dla całej farmy serwerów.<br /><br /> -Site: Aktywacja funkcji dla wszystkich witryn sieci web w zbiorze witryn.<br /><br /> -Web: Aktywacja funkcji dla określonej witryny sieci web.<br /><br /> -WebApplication: Aktywacja funkcji dla wszystkich witryn sieci web w aplikacji sieci web.|  
 |Elementy w rozwiązaniu|Wszystkie elementy programu SharePoint, które mogą zostać dodane do funkcji.|  

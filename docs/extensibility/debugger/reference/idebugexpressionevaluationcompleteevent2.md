@@ -1,29 +1,25 @@
 ---
 title: IDebugExpressionEvaluationCompleteEvent2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluationCompleteEvent2
 helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42dfc3ed4a4bff3e0c32d7155a74d74c1c6d0503
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7b57f59e3fbe0352229f64a2110e0c1e31e98012
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) z menedżerem sesji debugowania (SDM) po ukończeniu asynchronicznego wyrażenia.  
@@ -58,7 +54,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

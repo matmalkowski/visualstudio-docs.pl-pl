@@ -1,28 +1,25 @@
 ---
-title: Rozwiązywanie problemów z Azure zdalnego debugowania dla języka Python | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z Azure zdalnego debugowania dla języka Python
 description: Jak rozwiązywać problemy podczas próby debugowanie aplikacji Python uruchomionych w usłudze Azure App Service przy użyciu programu Visual Studio.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 92429ea893c4eccee75f3a70ffda44eac8f91aa9
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: d70c132ebc0857461b601b8a321d1203e710b08b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Zdalnego debugowania do rozwiązywania problemów z języka Python i platformą Azure
 

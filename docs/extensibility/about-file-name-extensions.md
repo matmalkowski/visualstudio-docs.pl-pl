@@ -1,26 +1,24 @@
 ---
-title: "Temat rozszerzeń nazw plików | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Temat rozszerzeń nazw plików | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8f504a70950ea9e808d50bd8b9bc7ef5dd92d699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2c940319cd0ce3204f6dd9bb62e731de49b8baac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-file-name-extensions"></a>Temat rozszerzeń nazw plików
 Podczas rejestrowania rozszerzenia pliku pakiet VSPackage, należy ją skojarzyć z wersją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jest to ważne w przypadku więcej niż jedną wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany na komputerze.  

@@ -1,29 +1,25 @@
 ---
 title: DEBUGPROP_INFO_FLAGS | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DEBUGPROP_INFO_FLAGS
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e154f6e2ac9ef18632af875c13b00c63a283d59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1d9ecaab348ca69a792c39a8cb74e998d8f3a6aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Określa, jakie informacje do pobrania dotyczące obiektu właściwości debugowania.  
@@ -125,7 +121,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
