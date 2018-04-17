@@ -1,12 +1,10 @@
 ---
-title: "Rozszerzanie właściwości, lista zadań, danych wyjściowych i opcje Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozszerzanie właściwości, lista zadań, danych wyjściowych i opcje Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Rozszerzanie właściwości, lista zadań, danych wyjściowych i opcje systemu Windows
 Można uzyskać dostępu do dowolnego okna narzędzia w programie Visual Studio. W tym przewodniku pokazano, jak zintegrować informacji na temat okna narzędzia nowy **opcje** strony i nowe ustawienie na **właściwości** strony, a także zapisać **listy zadań** i **dane wyjściowe** systemu windows.  
@@ -150,7 +148,7 @@ Można uzyskać dostępu do dowolnego okna narzędzia w programie Visual Studio.
   
      Jeśli okna narzędzia są dostępne dla użytkowników, elementy na liście będą reprezentowane przez TodoItems. Gdy użytkownik wybierze jeden z tych elementów w kontrolce ListBox, **właściwości** oknie będą wyświetlane informacje o elemencie.  
   
-     Aby udostępnić dane w **właściwości** okna, możesz przekształcić w danych właściwości publicznych, które mają dwa atrybuty specjalne, `Description` i `Category`. `Description`tekst wyświetlany w dolnej części jest **właściwości** okna. `Category`Określa, gdzie właściwość powinna występować, jeśli **właściwości** okno jest wyświetlane w **według kategorii** widoku. Na poniższej ilustracji **właściwości** okno **według kategorii** widoku **nazwa** właściwości w **pól ToDo** kategoria jest zaznaczone oraz opis **nazwa** właściwości są wyświetlane u dołu okna.  
+     Aby udostępnić dane w **właściwości** okna, możesz przekształcić w danych właściwości publicznych, które mają dwa atrybuty specjalne, `Description` i `Category`. `Description` tekst wyświetlany w dolnej części jest **właściwości** okna. `Category` Określa, gdzie właściwość powinna występować, jeśli **właściwości** okno jest wyświetlane w **według kategorii** widoku. Na poniższej ilustracji **właściwości** okno **według kategorii** widoku **nazwa** właściwości w **pól ToDo** kategoria jest zaznaczone oraz opis **nazwa** właściwości są wyświetlane u dołu okna.  
   
      ![Okno właściwości](../extensibility/media/t5properties.png "T5Properties")  
   

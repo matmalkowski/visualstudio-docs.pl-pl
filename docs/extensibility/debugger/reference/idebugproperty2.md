@@ -1,29 +1,25 @@
 ---
 title: IDebugProperty2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc1305fb8534dc8e14192268913290aef25f2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb0cd134d30da277ddc1f984e0cf9e57dd5e4963
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Ten interfejs reprezentuje właściwości ramki stosu, właściwości dokumentu programu lub pewne inne właściwości. Właściwość jest zazwyczaj wynikiem obliczania wyrażenia.  
@@ -41,7 +37,7 @@ IDebugProperty2 : IUnknown
  Niemcy implementuje ten interfejs do reprezentowania określonego typu wartości. Na przykład wartość może być wartość liczbową wyniku Obliczanie wyrażenia w kontekście pamięci służący do wyświetlania w pamięci lub lista rejestrów i ich wartości.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołanie [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) uzyskać ten interfejs, który reprezentuje wyniki oceny. `IDebugExpression2::EvaluateAsync`zwraca ten interfejs, wysyłając [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interfejsu SDM, która z kolei wywołuje [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) można pobrać właściwości.  
+ Wywołanie [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) uzyskać ten interfejs, który reprezentuje wyniki oceny. `IDebugExpression2::EvaluateAsync` zwraca ten interfejs, wysyłając [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interfejsu SDM, która z kolei wywołuje [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) można pobrać właściwości.  
   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) zwraca Podaj dokument skryptu skojarzonych w tym interfejsie.  
   
@@ -80,7 +76,7 @@ IDebugProperty2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   

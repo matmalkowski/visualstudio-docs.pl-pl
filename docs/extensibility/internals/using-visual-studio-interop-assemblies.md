@@ -1,27 +1,25 @@
 ---
-title: "Za pomocą programu Visual Studio zestawy międzyoperacyjne | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Za pomocą programu Visual Studio zestawy międzyoperacyjne | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Za pomocą programu Visual Studio zestawy międzyoperacyjne
 Visual Studio zestawy międzyoperacyjne Zezwalaj zarządzanym aplikacjom dostęp do interfejsów modelu COM, które zapewni możliwość rozszerzenia programu Visual Studio. Istnieją pewne różnice między proste interfejsy COM i ich wersje międzyoperacyjnego. Na przykład wyników HRESULT zazwyczaj są reprezentowane jako wartości int i muszą być obsługiwani w taki sam sposób jak wyjątki, a parametry (szczególnie parametrów out) są traktowane inaczej.  
@@ -32,7 +30,7 @@ Visual Studio zestawy międzyoperacyjne Zezwalaj zarządzanym aplikacjom dostęp
  Domyślnie <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> zgłasza wyjątek, gdy są przekazywane HRESULT, która ma wartość mniejszą niż zero. W przypadku, gdy taki wyników HRESULT są dopuszczalne wartości i nie powinien być wyjątek, wartości dodatkowych wyników HRESULT powinny zostać przekazane do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po sprawdzane są wartości. Jeśli HRESULT testowane odpowiada wartości HRESULT jawnie przekazany do <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, nie jest wyjątek.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe dla typowych wyników HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> i <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wyników HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>dostępne są także <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, które odpowiadają makra zakończyło się pomyślnie, a w modelu COM.  
+>  <xref:Microsoft.VisualStudio.VSConstants> Klasa zawiera stałe dla typowych wyników HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> i <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wyników HRESULT, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> i <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> dostępne są także <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> i <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, które odpowiadają makra zakończyło się pomyślnie, a w modelu COM.  
   
  Na przykład, należy wziąć pod uwagę następujące wywołanie funkcji, w którym <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> jest mniejsza od zera reprezentuje błąd dopuszczalne wartości zwracanej, ale inne HRESULT.  
   
@@ -47,7 +45,7 @@ Visual Studio zestawy międzyoperacyjne Zezwalaj zarządzanym aplikacjom dostęp
 ## <a name="returning-hresults-to-com-from-managed-code"></a>Zwracanie wyników HRESULT dla modelu COM z kodu zarządzanego  
  Jeśli wystąpi żaden wyjątek, zwraca kod zarządzany <xref:Microsoft.VisualStudio.VSConstants.S_OK> funkcji COM, które ją. Usługa międzyoperacyjna modelu COM obsługuje typowe wyjątki, które są silnie typizowane w kodzie zarządzanym. Na przykład metodę, która odbiera niedopuszczalne `null` zgłasza argument <xref:System.ArgumentNullException>.  
   
- Jeśli nie jesteś niektórych wyjątków ma zostać zgłoszony, ale wiesz HRESULT chcesz powrócić do modelu COM, można użyć <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodę, aby zgłosić wyjątek, odpowiednie. Dzieje się tak nawet w przypadku błędów niestandardowych, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>próbuje zamapować HRESULT przekazywania do silnie typizowanego wyjątku. Jeśli nie, zgłasza wyjątek ogólny COM zamiast tego. Ultimate wynik jest, że HRESULT są przekazywane do <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> z kodu zarządzanego jest zwracana do funkcji modelu COM, która ją.  
+ Jeśli nie jesteś niektórych wyjątków ma zostać zgłoszony, ale wiesz HRESULT chcesz powrócić do modelu COM, można użyć <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodę, aby zgłosić wyjątek, odpowiednie. Dzieje się tak nawet w przypadku błędów niestandardowych, na przykład <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> próbuje zamapować HRESULT przekazywania do silnie typizowanego wyjątku. Jeśli nie, zgłasza wyjątek ogólny COM zamiast tego. Ultimate wynik jest, że HRESULT są przekazywane do <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> z kodu zarządzanego jest zwracana do funkcji modelu COM, która ją.  
   
 > [!NOTE]
 >  Wyjątki wpłynąć na wydajność i są przeznaczone do wskazywania niewłaściwym warunków. Warunki, które często występują powinien być obsługiwany w tekście, zamiast zwrócony wyjątek.  

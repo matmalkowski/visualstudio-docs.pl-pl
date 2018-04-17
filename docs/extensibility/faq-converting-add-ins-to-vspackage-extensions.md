@@ -1,23 +1,21 @@
 ---
-title: "Często zadawane pytania: Konwertowanie dodatki do rozszerzeń pakiet VSPackage | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Często zadawane pytania: Konwertowanie dodatki do rozszerzeń pakiet VSPackage | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage
 Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visual Studio, musisz utworzyć rozszerzenia VSIX. Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące sposób konwertowania dodatku programu Visual Studio do rozszerzenia VSIX.  
@@ -41,7 +39,7 @@ Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visu
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Czy mogę przekonwertować dodatku projektu do projektu VSIX  
  Nie można przekonwertować projekt Dodaj bezpośrednio do projektu VSIX, ponieważ mechanizmów użycia w projektach VSIX nie są takie same, jak w projektach w dodatku. Szablon projektu VSIX oraz szablony elementów projektu zawiera wiele kodu, który ułatwia stosunkowo łatwa do uruchomienia i działa jako rozszerzenia VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>Jak rozpocząć tworzenie rozszerzenia VSIX  
+##  <a name="BKMK_StartDeveloping"></a> Jak rozpocząć tworzenie rozszerzenia VSIX  
  Oto, jak utworzyć VSIX, które ma polecenia menu:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby rozszerzenie VSIX, który ma polecenia menu  
@@ -56,7 +54,7 @@ Dodatki obecnie są przestarzałe. Aby utworzyć nowe rozszerzenie programu Visu
   
      Na **narzędzia** menu (w eksperymentalnym wystąpieniu) powinny pojawić się przycisk o nazwie **nazwa polecenia Moje**. Jeśli ten przycisk powinien zostać wyświetlony komunikat: **wewnątrz TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>Jak mogę uruchomić Moje kodu dodatku w pakiet VSPackage  
+##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w pakiet VSPackage  
  Dodatek zwykle działa w jednym z dwóch sposobów:  
   
 -   Wyzwalane za pomocą polecenia menu (kod znajduje się w `IDTCommandTarget.Exec` metody)  

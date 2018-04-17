@@ -1,12 +1,10 @@
 ---
-title: "Uruchomiona tabeli dokumentów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uruchomiona tabeli dokumentów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>Uruchomionej tabeli dokumentu
 IDE przechowuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struktury o nazwie uruchomionej tabeli dokumentów (Normalizacją). Ta lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy te dokumenty są obecnie edytowany. Dokument jest dowolny element, który jest trwały, w tym pliki w projekcie, lub głównego pliku projektu (na przykład plik .vcxproj).  
@@ -36,7 +34,7 @@ IDE przechowuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej str
 |Krótka nazwa dokumentu|Ciąg unikatowo identyfikujący obiekt danych dokumentu. Będzie to ścieżka bezwzględna do pliku dla systemu projektu, który zarządza plikami (na przykład C:\MyProject\MyFile). Ten ciąg jest również używane do projektów zapisanych w magazynach innych niż systemy plików, takich jak procedur przechowywanych w bazie danych. W takim przypadku system projektu można magazynowa unikatowy ciąg, który może rozpoznawać i prawdopodobnie analizy w celu ustalenia sposobu przechowywania dokumentu.|  
 |Właściciel hierarchii|Obiekt hierarchii, który jest właścicielem dokumentu, reprezentowany przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu.|  
 |Identyfikator elementu|Identyfikator elementu konkretny element w hierarchii. Ta wartość jest unikatowa wśród wszystkich dokumentów w hierarchii, która jest właścicielem tego dokumentu, ale wartość ta nie musi być unikatowe w obrębie różnych hierarchii.|  
-|Obiekt danych dokumentu|Co najmniej, to`IUnknown`<br /><br /> obiekt. IDE nie wymaga żadnych konkretnego interfejsu poza `IUnknown` interfejs dla obiekt danych dokumentu Edytor niestandardowy. Niemniej jednak w przypadku standardowego edytora implementacja edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfejsu jest wymagana do obsługi połączeń trwałości plik z projektu. Aby uzyskać więcej informacji, zobacz [zapisywania standardowego dokumentu](../../extensibility/internals/saving-a-standard-document.md).|  
+|Obiekt danych dokumentu|Co najmniej, to `IUnknown`<br /><br /> obiekt. IDE nie wymaga żadnych konkretnego interfejsu poza `IUnknown` interfejs dla obiekt danych dokumentu Edytor niestandardowy. Niemniej jednak w przypadku standardowego edytora implementacja edytor <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfejsu jest wymagana do obsługi połączeń trwałości plik z projektu. Aby uzyskać więcej informacji, zobacz [zapisywania standardowego dokumentu](../../extensibility/internals/saving-a-standard-document.md).|  
 |Flagi|Gdy wpisy są dodawane do Normalizacją można określić flagi określające, czy dokument zostanie zapisany, czy zastosowano blokady odczytu lub edycji i tak dalej. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> wyliczenia.|  
 |Edytuj liczbę blokad|Liczba blokad edycji. Zablokuj edycji oznacza, że niektóre Edytor ma dokument otwarty do edycji. Liczba blokad edycji przejścia do zera, użytkownik jest monitowany można zapisać dokumentu, jeśli został on zmodyfikowany. Na przykład zawsze po otwarciu dokumentu w edytorze przy użyciu **nowe okno** poleceń edycji blokady jest dodawany do tego dokumentu w Normalizacją. Aby blokady edycji należy ustawić dokumentu musi mieć hierarchii lub elementu identyfikatora.|  
 |Liczba blokady odczytu|Liczba blokady odczytu. Blokada odczytu wskazuje, że odczytu dokumentu za pomocą mechanizmu, takich jak kreatora. Blokada odczytu przechowuje dokumentu w Normalizacją wskazujące, że nie można edytować dokumentu. Można ustawić blokady odczytu, nawet jeśli dokument nie ma hierarchii lub elementu identyfikatora. Ta funkcja umożliwia otwieranie dokumentu w pamięci i wprowadź go Normalizacją bez dokumentu właścicielem żadnych hierarchii. Ta funkcja jest rzadko używana.|  

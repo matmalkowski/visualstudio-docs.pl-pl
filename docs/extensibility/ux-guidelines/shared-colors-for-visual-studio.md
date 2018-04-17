@@ -1,23 +1,21 @@
 ---
-title: "Udostępnione kolorów dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Udostępnione kolorów dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępniony kolorów dla programu Visual Studio
 Podczas projektowania interfejsu użytkownika, który korzysta z typowymi elementami powłoki programu Visual Studio lub chcesz z elementu interfejsu, aby były spójne z podobne funkcje, umożliwia istniejących nazw tokenu w plikach definicji pakietu wybierz i przypisz kolory. Dzięki temu, że Twój interfejs użytkownika jest zgodny z ogólną środowiska Visual Studio i aktualizowane automatycznie po motywów zostały dodane lub zaktualizowane.  
@@ -858,7 +856,7 @@ Menu rozwijane pole wyszukiwania może być nieco bardziej skomplikowane niż in
 | Łącze tła | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Gradientu dla tego tokenu nie jest używany w interfejsie użytkownika motywem.) |
 | Narzędzia (tekst łącza) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Widok drzewa  
+###  <a name="BKMK_TreeView"></a> Widok drzewa  
 Hierarchiczna schematu organizacyjnego którego kolory są kontrolowane przez nazwy kolorów w zaimplementować kilka okien narzędzi, w tym Eksploratorze rozwiązań, Eksploratora serwera i widoku klas `TreeView` kategorii. Wszystkie elementy w widoku drzewa ma kolory tła i tekstu. Elementy, które mają zagnieżdżone elementy podrzędne również mają symboli, które wskazują, czy element jest rozwinięte lub zwinięte.  
 
 ![Widok drzewa (poprawek)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Widok drzewa (poprawek)
@@ -1041,7 +1039,7 @@ Projektant manifestu zaprojektowano tak, aby ułatwić edytowanie pliku manifest
 
 ## <a name="command-structures"></a>Polecenie struktury  
 
-###  <a name="BKMK_CommandMenus"></a>Menu  
+###  <a name="BKMK_CommandMenus"></a> Menu  
 Menu może wystąpić w kilku miejscach w programie Visual Studio: na pasku menu głównego, osadzonych dokumentu lub narzędzia systemu windows lub kliknij prawym przyciskiem myszy w różnych miejscach w środowisku IDE. W sekcji odpowiedniego elementu omówiono implementacje menu skojarzone z inne elementy interfejsu użytkownika. Zawsze należy używać implementacji standardowe menu udostępniane przez środowisko Visual Studio. Jednak w sporadycznych przypadkach możesz utracić dostęp do standardowe menu programu Visual Studio. W takich sytuacjach należy stosować następujących nazw tokenu do upewnij się, że Twój interfejs użytkownika jest zgodny z innych menu w programie Visual Studio.  
 
 ![Visual Studio menu (poprawek)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Visual Studio menu (poprawek)
@@ -1282,7 +1280,7 @@ Grupy pasek poleceń składa się z zestawu pokrewnych formanty paska poleceń i
 | Narzędzia (tekst) | `Environment.CommandBarTextInactive` |
 | Obramowanie | Brak |
 
-####  <a name="BKMK_CommandComboBox"></a>Pola kombi pasek poleceń
+####  <a name="BKMK_CommandComboBox"></a> Pola kombi pasek poleceń
 
 > [!IMPORTANT]
 > Pola kombi są podobne do listy rozwijane, ale obejmuje region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionie można edytować tekst, Użyj kolorów tokeny zabezpieczające [polecenia paska listach rozwijanych](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ Grupy pasek poleceń składa się z zestawu pokrewnych formanty paska poleceń i
 
 **Przycisk rozwijany pasek polecenia: domyślna stanu**  
 
-![Kombi pole listy &#45; dół](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Przycisk rozwijany pasek polecenia
+![Upuść pole kombi&#45;klawisz](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Przycisk rozwijany pasek polecenia
 
 | Element | Nazwa tokenu: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ Grupy pasek poleceń składa się z zestawu pokrewnych formanty paska poleceń i
 | Tło | Brak |
 | Narzędzia (symbol) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Rozwijane pasek poleceń
+####  <a name="BKMK_CommandDropDown"></a> Rozwijane pasek poleceń
 
 > [!IMPORTANT]
 >  Listy rozwijane są podobne do pola kombi, ale brakuje regionów tekst do edycji. Jeśli z listy rozwijanej zawiera region można edytować tekst, Użyj kolorów tokeny zabezpieczające [polecenia superpaska pola kombi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ Grupy pasek poleceń składa się z zestawu pokrewnych formanty paska poleceń i
 
  **Pola wyboru z listy rozwijanej pasek poleceń: naciśnięty stanu**  
 
-![Usuń &#45; w dół do pola wyboru naciśnięty](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Naciśnięto polecenia paska pola wyboru z listy rozwijanej
+![Upuść&#45;w dół do pola wyboru naciśnięty](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Naciśnięto polecenia paska pola wyboru z listy rozwijanej
 
 | Element | Nazwa tokenu: Category.color |
 | --- | --- |

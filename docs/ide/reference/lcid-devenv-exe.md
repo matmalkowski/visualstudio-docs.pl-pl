@@ -1,12 +1,10 @@
 ---
-title: "— Identyfikator LCID (devenv.exe) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: — Identyfikator LCID (devenv.exe) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - LCID devenv switch
 - /lcid Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bdc04655ccfc8ca5f6c1e45e4378f15221b99f4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0588152e99fd6e81d47df691b4e84535cc7fbe9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Określa domyślny język używany do tekstu, waluty i inne wartości w ramach zintegrowane środowisko programistyczne (IDE).  
@@ -47,7 +45,7 @@ devenv {/LCID|/l} LocaleID
   
  W poniższej tabeli wymieniono LCID języków obsługiwanych przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Język|IDENTYFIKATOR LCID|  
+|Język|LCID|  
 |--------------|----------|  
 |Chiński uproszczony|2052|  
 |Chiński (tradycyjny)|1028|  

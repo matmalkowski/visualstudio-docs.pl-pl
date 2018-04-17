@@ -1,30 +1,26 @@
 ---
-title: "Lista stosu wywołań — polecenie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Lista stosu wywołań — polecenie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71095bd7ec4b856c5fbee73e13be27dcd9abdaf4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3b9a0f9c466325d476c01d4acf9b825193fb175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
 Wyświetla bieżący stos wywołań.  
@@ -49,28 +45,28 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  / Liczba:`number` [i] / / c:`number`  
  Opcjonalny. Maksymalna liczba stosy wywołań do wyświetlenia. Wartością domyślną jest nieograniczona.  
   
- / ShowTypes:`yes`&#124;`no` [i] / t:`yes`&#124;`no`  
+ / ShowTypes:`yes` &#124; `no` [i] / t:`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.  
   
- / ShowNames:`yes`&#124;`no` [i] / n:`yes`&#124;`no`  
+ / ShowNames:`yes` &#124; `no` [i] / n:`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.  
   
- / ShowValues:`yes`&#124;`no` [i] / v:`yes`&#124;`no`  
+ / ShowValues:`yes` &#124; `no` [i] / v:`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.  
   
- / ShowModule:`yes`&#124;`no` [i] / m:`yes`&#124;`no`  
+ / ShowModule:`yes` &#124; `no` [i] / m:`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane nazwy modułu. Wartość domyślna to `yes`.  
   
- / ShowLineOffset:`yes`&#124;`no` [i] /#:`yes`&#124;`no`  
+ / ShowLineOffset:`yes` &#124; `no` [i] /#:`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.  
   
- / ShowByteOffset:`yes`&#124;`no` [i] / b:`yes`&#124;`no`  
+ / ShowByteOffset:`yes` &#124; `no` [i] / b:`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane przesunięcia bajtów. Wartość domyślna to `no`.  
   
- / Pokażjęzyk:`yes`&#124;`no` [i] / l: wyświetlenie`yes`&#124;`no`  
+ / Pokażjęzyk:`yes` &#124; `no` [i] / l: wyświetlenie`yes`&#124;`no`  
  Opcjonalny. Określa, czy mają być wyświetlane w języku. Wartość domyślna to `no`.  
   
- / Uwzględnijwywołaniamiędzywątkami:`yes`&#124;`no` [i] / i:`yes`&#124;`no`  
+ / Uwzględnijwywołaniamiędzywątkami:`yes` &#124; `no` [i] / i:`yes`&#124;`no`  
  Opcjonalny. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.  
   
  / ShowExternalCode:`yes`&#124;`no`  

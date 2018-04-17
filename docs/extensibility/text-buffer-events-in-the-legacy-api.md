@@ -1,27 +1,23 @@
 ---
 title: Zdarzenia buforu tekstu w interfejsie API starszych | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Zdarzenia buforu tekstu w interfejsie API starsza wersja
 Obiekt buforu tekstu emituje szereg różnych zdarzeń, które pozwalają odpowiedzieć w różnych sytuacjach.  
@@ -52,8 +48,8 @@ Obiekt buforu tekstu emituje szereg różnych zdarzeń, które pozwalają odpowi
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Powiadamia klientów o zmianach w podstawowej bufor tekstowy we współrzędnych jednowymiarowa.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Powiadamia klientów o zmianach w podstawowej buforu tekstu w dwuwymiarowe współrzędne.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Powiadamia klientów o zmianach danych użytkownika.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Powiadamia klientów o ostatniej gestu zatwierdzania do wyzwolenia zdarzenia i zapewnia zakres zmiany tekstu. `IVsPreliminaryTextChangeCommitEvents` Interfejsu nie jest uruchamiany w odpowiedzi na cofnąć ani ponowić poleceń. Zdarzenia wyzwalać tylko dla buforów, które mają menedżera cofania. `IVsPreliminaryTextChangeCommitEvents`jest uruchamiany przed inne zdarzenia, takie jak lista pretty, aby mieć pewność, że inne zdarzenia nie należy zmieniać tekst, aby zmiany zostały zastosowane. VSPackage należy monitorować, albo `IVsPreliminaryTextChangeCommitEvents` interfejsu lub `IVsFinalTextChangeCommitEvents` interfejsu, ale nie oba.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Powiadamia klientów o ostatniej gestu zatwierdzania do wyzwolenia zdarzenia i zapewnia zakres zmiany tekstu. `IVsFinalTextChangeCommitEvents` Interfejsu nie jest uruchamiany w odpowiedzi na cofnąć ani ponowić poleceń. Zdarzenia wyzwalać tylko dla buforów, które mają menedżera cofania. `IVsFinalTextChangeCommitEvents`jest przeznaczony do użytku tylko usługi języka lub inne obiekty, które mają pełną kontrolę nad edycji. VSPackage należy monitorować, albo `IVsPreliminaryTextChangeCommitEvents` interfejsu lub `IVsFinalTextChangeCommitEvents` interfejsu, ale nie oba.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Powiadamia klientów o ostatniej gestu zatwierdzania do wyzwolenia zdarzenia i zapewnia zakres zmiany tekstu. `IVsPreliminaryTextChangeCommitEvents` Interfejsu nie jest uruchamiany w odpowiedzi na cofnąć ani ponowić poleceń. Zdarzenia wyzwalać tylko dla buforów, które mają menedżera cofania. `IVsPreliminaryTextChangeCommitEvents` jest uruchamiany przed inne zdarzenia, takie jak lista pretty, aby mieć pewność, że inne zdarzenia nie należy zmieniać tekst, aby zmiany zostały zastosowane. VSPackage należy monitorować, albo `IVsPreliminaryTextChangeCommitEvents` interfejsu lub `IVsFinalTextChangeCommitEvents` interfejsu, ale nie oba.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Powiadamia klientów o ostatniej gestu zatwierdzania do wyzwolenia zdarzenia i zapewnia zakres zmiany tekstu. `IVsFinalTextChangeCommitEvents` Interfejsu nie jest uruchamiany w odpowiedzi na cofnąć ani ponowić poleceń. Zdarzenia wyzwalać tylko dla buforów, które mają menedżera cofania. `IVsFinalTextChangeCommitEvents` jest przeznaczony do użytku tylko usługi języka lub inne obiekty, które mają pełną kontrolę nad edycji. VSPackage należy monitorować, albo `IVsPreliminaryTextChangeCommitEvents` interfejsu lub `IVsFinalTextChangeCommitEvents` interfejsu, ale nie oba.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostęp do buforu tekstu przy użyciu interfejsu API starsza wersja](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   

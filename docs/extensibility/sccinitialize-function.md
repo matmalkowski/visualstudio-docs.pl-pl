@@ -1,29 +1,25 @@
 ---
 title: Funkcja SccInitialize | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>Funkcja SccInitialize
 Ta funkcja inicjuje wtyczkę kontroli źródła i zapewnia możliwości i ograniczeń dotyczących zintegrowane środowisko programistyczne (IDE).  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  `lpCallerName` i `lpSccName` parametry włączyć IDE i wtyczkę kontroli źródła do wymiany nazwy. Te nazwy mogą być stosowane jedynie w celu rozróżnienia wielu wystąpień lub może faktycznie pojawią się one w menu lub w oknach dialogowych.  
   
- `lpAuxPathLabel` Parametr jest używany jako komentarz do identyfikowania ścieżkę pomocniczą projektu, który jest przechowywany w pliku rozwiązania przekazany do kontroli źródła wtyczek w wywołaniu ciąg [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]ciąg "SourceSafe projektu:"; inne źródła formantu dodatków plug-in powinien zaniechania przy użyciu tego określonego ciągu.  
+ `lpAuxPathLabel` Parametr jest używany jako komentarz do identyfikowania ścieżkę pomocniczą projektu, który jest przechowywany w pliku rozwiązania przekazany do kontroli źródła wtyczek w wywołaniu ciąg [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] ciąg "SourceSafe projektu:"; inne źródła formantu dodatków plug-in powinien zaniechania przy użyciu tego określonego ciągu.  
   
  `lpSccCaps` Parametru zapewnia kontrolę źródła wtyczki miejsce do przechowywania flag bitowych wskazującą możliwości podłączenia do firmy. (Aby uzyskać pełną listę możliwości flag bitowych, zobacz [flagi możliwości](../extensibility/capability-flags.md)). Na przykład jeśli wtyczka planów zapis wyniki do funkcję wywołania zwrotnego dostarczane przez obiekt wywołujący wtyczki ustawiał możliwości bit SCC_CAP_TEXTOUT. Spowoduje to sygnał IDE można utworzyć okna dla wyników kontroli wersji.  
   

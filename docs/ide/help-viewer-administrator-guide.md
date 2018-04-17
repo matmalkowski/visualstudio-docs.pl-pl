@@ -1,28 +1,26 @@
 ---
-title: "Przewodnik administratora programu Podgląd pomocy | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przewodnik administratora podglądu pomocy | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dfd290d4395daa6576f4e86d55cdf358a0cf3b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Przewodnik administratora podglądu pomocy
 Podgląd Pomocy umożliwia zarządzanie lokalnym instalacje pomocy dla środowisk sieci lub bez dostępu do Internetu. Lokalnej zawartości pomocy jest skonfigurowany na podstawie na komputerze. Domyślnie użytkownicy muszą mieć uprawnienia administratora do ich lokalnej pomocy instalacji aktualizacji.  
   
-Jeśli środowisko sieciowe umożliwia klientom dostęp do Internetu, można użyć pliku wykonywalnego menedżera zawartości pomocy do wdrożenia zawartość lokalnej pomocy z Internetu. Aby uzyskać więcej informacji na temat składni wiersza polecenia HlpCtntMgr.exe, zobacz [argumenty wiersza polecenia do menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
+Jeśli środowisko sieciowe umożliwia klientom dostęp do Internetu, możesz użyć **menedżera zawartości Pomocy** pliku wykonywalnego wdrożyć zawartość lokalnej pomocy z Internetu. Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza polecenia, zobacz [argumenty wiersza polecenia do menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
 
 Tworzenie punktu końcowego usługi w sieci intranet i podobne typy działań, zobacz informacji o tworzeniu zawartości, [SDK podglądu pomocy](../extensibility/internals/microsoft-help-viewer-sdk.md).  
   
@@ -37,21 +35,22 @@ Jeśli nie masz dostępu do Internetu w danym środowisku sieciowym, podglądu p
 - Zarządzanie zawartością 
   
 ## <a name="deploying-local-help-content-from-the-internet"></a>Wdrażanie lokalnej zawartości pomocy z Internetu  
-Mananger zawartości pomocy (HlpCtntMgr.exe) służy do wdrażania zawartości pomocy z Internetu na komputerach klienckich. Należy użyć następującej składni:  
+Można użyć **menedżera zawartości Pomocy** (*HlpCtntMgr.exe*) do wdrożenia lokalnego zawartość pomocy z Internetu na komputerach klienckich. Należy użyć następującej składni:  
   
 ```
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
   
-Aby uzyskać więcej informacji na temat składni wiersza polecenia HlpCtntMgr.exe, zobacz [argumenty wiersza polecenia do menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).  
+Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza polecenia, zobacz [argumenty wiersza polecenia do menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
 Wymagania:  
   
 -   Komputery klienckie muszą mieć dostęp do Internetu.  
   
 -   Użytkownicy muszą mieć uprawnienia administratora do aktualizacji, Dodaj lub usuń zawartość lokalnej pomocy, po zakończeniu instalacji.  
-  
- Ostrzeżenia:  
+
+
+Ostrzeżenia:  
   
 -   Domyślne źródło pomocy nadal być w trybie online.
   
@@ -64,7 +63,7 @@ W poniższym przykładzie instalowana zawartości w języku angielskim dla progr
   
 2.  Wpisz następujące polecenie:  
   
-     C:\Program pliki (x86) \Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation zainstalować/catalogname VisualStudio15/Locale en-us  
+     `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`  
   
 3.  Naciśnij klawisz **wprowadź**.  
   
@@ -78,7 +77,7 @@ Wymagania:
 -   Użytkownicy muszą mieć uprawnienia administratora do aktualizacji, Dodaj lub usuń zawartość lokalnej pomocy, po zakończeniu instalacji.  
   
     > [!TIP]
-    >  Jeśli użytkownicy nie mają uprawnień administratora, zaleca się wyłączenie karcie Zarządzanie zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [zastąpienia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+    >  Jeśli użytkownicy nie mają uprawnień administratora, zaleca się wyłączenie **zarządzania zawartością** karcie podglądu pomocy. Aby uzyskać więcej informacji, zobacz [zastąpienia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
 Ostrzeżenia:
   
@@ -97,7 +96,7 @@ Przed utworzeniem podstawowego zestawu zawartości, należy najpierw odinstalowa
   
 4.  Wybierz **aktualizacji** do odinstalowania.
   
-5.  Przejdź do %ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 i sprawdź, czy folder zawiera tylko catalogType.xml pliku.  
+5.  Przejdź do *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* i sprawdź, czy folder tylko zawiera plik *catalogType.xml*.  
   
  Po usunięciu wszystkich zainstalowanych wcześniej lokalnej pomocy programu Visual Studio zawartości, można przystąpić do pobierania podstawowego zestawu zawartości.  
   
@@ -108,22 +107,23 @@ Przed utworzeniem podstawowego zestawu zawartości, należy najpierw odinstalowa
 2.  W obszarze **zalecane dokumentacji** lub **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz pozycję **Dodaj**.  
   
 3.  Wybierz **aktualizacji**.  
-  
- Następnie należy do pakietu zawartości, dlatego może być wdrożony na komputerach klienckich.  
+
+
+Następnie należy do pakietu zawartości, dlatego może być wdrożony na komputerach klienckich.  
   
 #### <a name="to-package-the-content"></a>Do pakietu zawartości  
   
-1.  Utwórz folder do skopiowania zawartości do późniejszego wdrożenia. Na przykład: C:\VSHelp.  
+1.  Utwórz folder do skopiowania zawartości do późniejszego wdrożenia. Na przykład: *C:\VSHelp*.  
   
-2.  Otwórz cmd.exe z uprawnieniami administratora.  
+2.  Otwórz *cmd.exe* z uprawnieniami administratora.  
   
 3.  Przejdź do folderu, który został utworzony w kroku 1.  
   
 4.  Wpisz następujące polecenie:  
   
-     Xcopy %ProgramData%\Microsoft\HelpLibrary2 \< *nazwa_folderu*> \ /y /e /k /o  
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o ` 
   
-     Na przykład:`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
+     Na przykład: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
   
 ### <a name="deploying-the-content"></a>Wdrażanie zawartości  
   
@@ -131,9 +131,9 @@ Przed utworzeniem podstawowego zestawu zawartości, należy najpierw odinstalowa
   
 1.  Utwórz udział sieciowy i skopiuj zawartość pomocy do tej lokalizacji.  
   
-     Na przykład skopiuj zawartość C:\VSHelp do \\\myserver\VSHelp.  
+     Na przykład skopiuj zawartość *C:\VSHelp* do  *\\\myserver\VSHelp*.  
   
-2.  Utwórz plik .bat zawiera skrypt wdrażania zawartości pomocy. Ponieważ klient może prawdopodobnie mają blokady odczytu na dowolny plik usuwane w ramach powiadomienia wypychanego, powinny być zamknięty przed wypychania aktualizacji klienta. Na przykład:  
+2.  Utwórz *bat* plik zawiera skrypt wdrażania zawartości pomocy. Ponieważ klient może prawdopodobnie mają blokady odczytu na dowolny plik usuwane w ramach powiadomienia wypychanego, powinny być zamknięty przed wypychania aktualizacji klienta. Na przykład:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -141,10 +141,10 @@ Przed utworzeniem podstawowego zestawu zawartości, należy najpierw odinstalowa
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```  
   
-3.  Uruchom plik bat przeznaczone do zainstalowania zawartości pomocy na maszynach lokalnych.  
+3.  Uruchom *bat* plików na maszynach lokalnych, które chcesz zainstalować zawartości pomocy na.  
   
 ## <a name="see-also"></a>Zobacz także
-[Argumenty wiersza poleceń Menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Przesłonięcia Menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md)  
+[Argumenty wiersza polecenia do menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Zastąpienia menedżera zawartości pomocy](../ide/help-content-manager-overrides.md)  
 [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)  
 [Podgląd Pomocy zestawu SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

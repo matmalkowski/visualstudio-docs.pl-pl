@@ -1,27 +1,25 @@
 ---
 title: Elementy modelu projektu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4933e73df93c1f8a3bcf62e03b6883c0096f1d8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
 Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnić podstawowej struktury: modelu projektu dla danego typu projektu. W modelu projektu jest pakiet VSPackage, tworzysz, tworzenia obiektów, które spełniają swoje decyzje dotyczące projektu i współdziała z globalnej funkcji udostępnianych przez usługę IDE. Mimo że można kontrolować, jak element projektu jest trwały, na przykład nie kontrolujesz powiadomienia musi zostać utrwalony pliku. Gdy użytkownik umieszcza fokus w elemencie Otwórz projekt i wybiera **zapisać** na **pliku** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu paska, kodzie typ projektu musi przechwycić polecenie z IDE, utrwalić pliku, i Wyślij powiadomienie do środowiska IDE nie jest już zmiany pliku.  

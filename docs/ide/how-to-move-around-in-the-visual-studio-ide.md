@@ -1,12 +1,10 @@
 ---
-title: "Porady: poruszanie się w programie Visual Studio IDE | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: poruszanie się w programie Visual Studio IDE | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 175a22ecb56f8c41d76512309df2b0443a7481b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 90b10759ac6eead46ef9c131c98bcbed7a835c2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Porady: poruszanie się w środowisku IDE programu Visual Studio
 Zintegrowane środowisko programistyczne (IDE) została zaprojektowana do pozwalają na przenoszenie z okna i do pliku w różny sposób, w zależności od wymagań preferencji lub projekt. Można przechodzić między otwarte pliki w edytorze lub przechodzić kolejno przez wszystkie aktywne narzędzia windows w środowisku IDE. Możesz również przełączyć bezpośrednio do dowolnego Otwórz plik w edytorze, niezależnie od tego, w kolejności, w której został ostatnio używane. Te funkcje może pomóc zwiększyć produktywność podczas pracy w środowisku IDE.  
@@ -57,7 +55,7 @@ Można również przełączyć się do określonego pliku otwarty w edytorze, ni
   
 ![Nawigator IDE programu Visual Studio](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
   
-`Window.PreviousDocumentWindowNav`Umożliwia przeniesienie do ostatniego dostępu do pliku i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Ogólne ustawienia środowiska deweloperskiego przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav`.
+`Window.PreviousDocumentWindowNav` Umożliwia przeniesienie do ostatniego dostępu do pliku i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Ogólne ustawienia środowiska deweloperskiego przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav`.
   
 > [!NOTE]
 > Jeśli korzystasz z kombinacji ustawień nie ma już kombinację klawiszy skrótu przypisane do tego polecenia, można przypisać przy użyciu własnego polecenia niestandardowych **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
@@ -69,18 +67,18 @@ Można również przełączyć się do określonego pliku otwarty w edytorze, ni
     > [!TIP]
     >  Do odwracania kolejności, w którym można przejść przez **pliki Active** liście, naciśnij i przytrzymaj **Ctrl**+**Shift** kluczy i naciśnij klawisz **kartę**.  
   
-    \-lub -  
+    \- lub -  
   
 -   W prawym górnym rogu edytora wybierz **pliki Active** przycisk, a następnie wybierz plik z listy, aby przełączyć się do.  
   
-    \-lub -  
+    \- lub -  
   
 -   Na pasku menu wybierz **okna**, **Windows**.  
   
 -   Na liście, wybierz plik, który chcesz wyświetlić, a następnie wybierz pozycję **Aktywuj**.  
   
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Nawigacja pomiędzy narzędzia systemu Windows w środowisku IDE  
-**Nawigator IDE** również umożliwia przechodzenie między okna narzędzi, masz otwarty w IDE. Można użyć jednej z dwóch poleceń dostępu do **Nawigator IDE** aby przechodzić kolejno przez narzędzie systemu windows, w zależności od kolejności, w której chcesz przechodzenie między. `Window.PreviousToolWindowNav`Umożliwia przeniesienie do ostatniego dostępu do pliku i `Window.NextToolWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Ogólne ustawienia środowiska deweloperskiego przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav`.
+**Nawigator IDE** również umożliwia przechodzenie między okna narzędzi, masz otwarty w IDE. Można użyć jednej z dwóch poleceń dostępu do **Nawigator IDE** aby przechodzić kolejno przez narzędzie systemu windows, w zależności od kolejności, w której chcesz przechodzenie między. `Window.PreviousToolWindowNav` Umożliwia przeniesienie do ostatniego dostępu do pliku i `Window.NextToolWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Ogólne ustawienia środowiska deweloperskiego przypisuje **Shift**+**Alt**+**F7** do `Window.PreviousDocumentWindowNav` i **Alt** + **F7** do `Window.NextDocumentWindowNav`.
   
 > [!NOTE]
 > Jeśli korzystasz z kombinacji ustawień nie ma już kombinację klawiszy skrótu przypisane do tego polecenia, można przypisać przy użyciu własnego polecenia niestandardowych **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [zidentyfikowanie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

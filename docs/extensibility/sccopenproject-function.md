@@ -1,29 +1,25 @@
 ---
 title: Funkcja SccOpenProject | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>Funkcja SccOpenProject
 Ta funkcja otwiera istniejący projekt kontroli źródła lub tworzy nowy.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in] Funkcja wywołania zwrotnego opcjonalne do wyświetlania tekstu dane wyjściowe z wtyczkę kontroli źródła.  
   
  wartość elementu dwFlags  
- [in] Sygnały czy nowy projekt musi zostać utworzona, jeśli projekt jest nieznany w źródle kontrolować wtyczki. Wartość może być kombinacją `SCC_OP_CREATEIFNEW` i`SCC_OP_SILENTOPEN.`  
+ [in] Sygnały czy nowy projekt musi zostać utworzona, jeśli projekt jest nieznany w źródle kontrolować wtyczki. Wartość może być kombinacją `SCC_OP_CREATEIFNEW` i `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  Pierwszą akcją IDE może być konieczne przeprowadzenie może być wywołanie `SccOpenProject` funkcji lub [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Z tego powodu z nich mają identyczne `lpUser` parametru.  
   
- `lpAuxProjPath`i`lpProjName` są odczytywane z pliku rozwiązania lub są zwracane po wywołaniu `SccGetProjPath` funkcji. Parametry te zawierają ciągi, które kojarzy wtyczkę kontroli źródła z projektu i mają znaczenie tylko dla wtyczki. Jeśli takie ciągi nie znajdują się w pliku rozwiązania, a użytkownik nie ma został poproszony o Przeglądaj (który zwróci ciąg za pośrednictwem `SccGetProjPath` funkcji), IDE przekazuje puste ciągi dla obu `lpAuxProjPath` i `lpProjName`i oczekuje wartości tych aktualizacji Wtyczka gdy ta funkcja zwraca.  
+ `lpAuxProjPath` i`lpProjName` są odczytywane z pliku rozwiązania lub są zwracane po wywołaniu `SccGetProjPath` funkcji. Parametry te zawierają ciągi, które kojarzy wtyczkę kontroli źródła z projektu i mają znaczenie tylko dla wtyczki. Jeśli takie ciągi nie znajdują się w pliku rozwiązania, a użytkownik nie ma został poproszony o Przeglądaj (który zwróci ciąg za pośrednictwem `SccGetProjPath` funkcji), IDE przekazuje puste ciągi dla obu `lpAuxProjPath` i `lpProjName`i oczekuje wartości tych aktualizacji Wtyczka gdy ta funkcja zwraca.  
   
- `lpTextOutProc`jest wskaźnikiem do funkcji wywołania zwrotnego podał IDE na potrzeby wyświetlania danych wyjściowych polecenia wynik wtyczkę kontroli źródła. Ta funkcja wywołania zwrotnego jest szczegółowo opisane w [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` jest wskaźnikiem do funkcji wywołania zwrotnego podał IDE na potrzeby wyświetlania danych wyjściowych polecenia wynik wtyczkę kontroli źródła. Ta funkcja wywołania zwrotnego jest szczegółowo opisane w [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Gdy wykorzystać to wtyczka do kontroli źródła, musi mieć ustawiony `SCC_CAP_TEXTOUT` oflagowane w [SccInitialize](../extensibility/sccinitialize-function.md). Jeśli nie ustawiono tę flagę lub IDE nie obsługują tej funkcji, `lpTextOutProc` będzie `NULL`.  

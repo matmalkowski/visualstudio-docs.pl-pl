@@ -1,23 +1,21 @@
 ---
-title: "Uaktualnianie niestandardowe szablony projektów i elementów dla programu Visual Studio 2017 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uaktualnianie niestandardowe szablony projektów i elementów dla programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: af60281e7211e7b16e86200c02aef791d26da274
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowe szablony projektów i elementów dla programu Visual Studio 2017 r.
 
@@ -122,7 +120,7 @@ Zostanie przedstawiony punkty różnica między Visual Studio 2015 i wersji prog
   
 ```  
   
- Informacje dostarczane przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element pozostaje bez zmian.  **\<VSTemplateContainer >** element wskazuje plik .vstemplate szablonu skojarzone.  
+ Informacje dostarczane przez [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element pozostaje bez zmian. **\<VSTemplateContainer >** element wskazuje plik .vstemplate szablonu skojarzone.  
   
  Oto domyślny plik .vstemplate elementu utworzone w programie Visual Studio 2015:  
   
@@ -175,7 +173,7 @@ Zostanie przedstawiony punkty różnica między Visual Studio 2015 i wersji prog
   
 ```  
   
- Informacje dostarczane przez  **\<TemplateData >** element pozostaje bez zmian.  **\<VSTemplateContainer >** element wskazuje plik .vstemplate skojarzone szablonu  
+ Informacje dostarczane przez  **\<TemplateData >** element pozostaje bez zmian. **\<VSTemplateContainer >** element wskazuje plik .vstemplate skojarzone szablonu  
   
  Aby uzyskać więcej informacji na temat różnych elementów pliku .vstman zobacz [programu Visual Studio manifestu odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   

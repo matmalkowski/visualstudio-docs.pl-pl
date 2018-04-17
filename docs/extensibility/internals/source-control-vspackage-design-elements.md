@@ -1,27 +1,23 @@
 ---
-title: "Elementy projektu pakiet VSPackage kontroli źródła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Elementy projektu pakiet VSPackage kontroli źródła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234346aba360d70d3bbc673067d2634a5112d0f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb741a7dc7423c27baed2cd79476239f4e41a170
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementy projektu pakiet VSPackage kontroli źródła
 Tematy w tej sekcji opisano strukturę pakiet VSPackage musi zaimplementować głębokiej integracji kontroli źródła. Wyświetla listę również interfejsów usług, który źródła formantu pakiet VSPackage można zaimplementować i interfejsów i usług kontroli źródła pakiet VSPackage mogą korzystać z innych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składników w celu obsługi źródła kontrolować modelu i funkcjonalność.  

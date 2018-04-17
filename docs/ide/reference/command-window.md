@@ -1,13 +1,10 @@
 ---
 title: Polecenie Okno | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5093c409a86e4488ef7c572c9f4f847bd803bbfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-window"></a>Okno polecenia
 **Polecenia** okna jest używany do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). W żadnym menu mogą wykonywać zarówno poleceń menu i poleceń, które nie są wyświetlane. Aby wyświetlić **polecenia** okna, wybierz **inne okna** z **widoku** menu, a następnie wybierz **okno polecenia**.  
@@ -60,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 |Akcja|Lokalizacja kursora|Keybinding|  
 |------------|---------------------|----------------|  
-|Przełączanie po kolei listę poleceń, wprowadzony wcześniej.|Wierszu danych wejściowych|& STRZAŁKA W DÓŁ STRZAŁKA W GÓRĘ|  
+|Przełączanie po kolei listę poleceń, wprowadzony wcześniej.|Wierszu danych wejściowych|&AMP; STRZAŁKA W DÓŁ STRZAŁKA W GÓRĘ|  
 |Przewiń w górę okna.|Zawartość okna polecenia|CTRL + STRZAŁKA W GÓRĘ|  
 |Przewiń w dół okna.|Zawartość okna polecenia|Strzałka w dół lub CTRL + Strzałka w dół|  
   
@@ -86,13 +82,13 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  W tym przykładzie  
   
--   `Edit.ReplaceInFiles`to polecenie  
+-   `Edit.ReplaceInFiles` to polecenie  
   
--   `/case`i `/pattern:regex` parametry (poprzedzone znakiem ukośnika [/])  
+-   `/case` i `/pattern:regex` parametry (poprzedzone znakiem ukośnika [/])  
   
--   `regex`jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości  
+-   `regex` jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości  
   
--   `var[1-3]+`i `oldpar` parametrów  
+-   `var[1-3]+` i `oldpar` parametrów  
   
     > [!NOTE]
     >  Polecenie, parametr, przełącznika lub wartość zawierająca spacje musi mieć podwójny cudzysłów po obu stronach.  

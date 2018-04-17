@@ -3,20 +3,19 @@ title: Wprowadzenie do języka C++ w programie Visual Studio | Dokumentacja firm
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -52,7 +51,7 @@ Visual Studio będzie korzystać *projekty* organizowania kodu dla aplikacji i *
 
 1. Wybierz **OK** przycisk, aby utworzyć projekt aplikacji i rozwiązań.
 
-   HelloApp projektu i rozwiązania z podstawowych plików aplikacji konsoli systemu Windows są tworzone i ładowane automatycznie do **Eksploratora rozwiązań**. Plik HelloApp.cpp jest otwarty w edytorze kodu. Te elementy są wyświetlane w **Eksploratora rozwiązań**:
+   HelloApp projektu i rozwiązania z podstawowych plików aplikacji konsoli systemu Windows są tworzone i ładowane automatycznie do **Eksploratora rozwiązań**. *HelloApp.cpp* plik jest otwarty w edytorze kodu. Te elementy są wyświetlane w **Eksploratora rozwiązań**:
 
    ![Pliki rozwiązania w Eksploratorze rozwiązań](../ide/media/get-started-cpp-solution-explorer.png "plików rozwiązania w Eksploratorze rozwiązań")
 
@@ -62,7 +61,7 @@ Następnie dodaj kod, aby wyświetlić wyraz "Hello" w oknie konsoli.
 
 ### <a name="to-edit-code-in-the-editor"></a>Aby edytować kodu w edytorze
 
-1. W pliku HelloApp.cpp wprowadzić pusty wiersz przed wierszem `return 0;` , a następnie wprowadź ten kod:
+1. W *HelloApp.cpp* plików, należy wprowadzić pusty wiersz przed wierszem `return 0;` , a następnie wprowadź ten kod:
 
    ```cpp
    cout << "Hello\n";
@@ -76,9 +75,9 @@ Następnie dodaj kod, aby wyświetlić wyraz "Hello" w oknie konsoli.
 
    ![Błąd w oknie Lista błędów](../ide/media/get-started-cpp-error-list.png "błąd w oknie Lista błędów")
 
-   Brak deklaracji dla kodu [std::cout](/cpp/standard-library/iostream), który znajduje się w \<iostream > pliku nagłówka.
+   Brak deklaracji dla kodu [std::cout](/cpp/standard-library/iostream), który znajduje się w  *\<iostream >* pliku nagłówka.
 
-1. Aby uwzględnić iostream — nagłówek, wprowadź ten kod po `#include "stdafx.h"`:
+1. Aby uwzględnić *iostream* nagłówka, wprowadź ten kod po `#include "stdafx.h"`:
 
    ```cpp
    #include <iostream>
@@ -105,11 +104,11 @@ Można debugować HelloApp, aby zobaczyć, czy słowo "Hello" jest wyświetlany 
 
 ### <a name="to-debug-the-app"></a>Do debugowania aplikacji
 
-1. Można uruchomić debugera, wybierz **Debuguj > Rozpocznij debugowanie** na pasku menu.
+Można uruchomić debugera, wybierz **Debuguj > Rozpocznij debugowanie** na pasku menu.
 
-   ![Rozpocznij debugowanie polecenia menu debugowania](../ide/media/get-started-cpp-start-debugging-menu.png "Rozpocznij debugowanie polecenia menu debugowania")
+![Rozpocznij debugowanie polecenia menu debugowania](../ide/media/get-started-cpp-start-debugging-menu.png "Rozpocznij debugowanie polecenia menu debugowania")
 
-   Debuger uruchamia i uruchamia kod. W oknie konsoli (osobnym oknie przypominającą wiersza polecenia) pojawia się na kilka sekund, ale zamyka szybkie, gdy debuger przestanie działać. Aby wyświetlić tekst, należy ustawić punkt przerwania, aby zatrzymać wykonanie programu.
+Debuger uruchamia i uruchamia kod. W oknie konsoli (osobnym oknie przypominającą wiersza polecenia) pojawia się na kilka sekund, ale zamyka szybkie, gdy debuger przestanie działać. Aby wyświetlić tekst, należy ustawić punkt przerwania, aby zatrzymać wykonanie programu.
 
 ### <a name="to-add-a-breakpoint"></a>Aby dodać punkt przerwania
 
@@ -129,7 +128,7 @@ Można debugować HelloApp, aby zobaczyć, czy słowo "Hello" jest wyświetlany 
 
 1. Aby zatrzymać debugowanie, naciśnij klawisz **Shift + F5**.
 
-Aby uzyskać więcej informacji na temat debugowania projektu konsoli, zobacz [projekty startowe](../debugger/debugging-preparation-console-projects.md).
+Aby uzyskać więcej informacji na temat debugowania projektu konsoli, zobacz [konsoli projekty](../debugger/debugging-preparation-console-projects.md).
 
 ## <a name="build-a-release-version-of-the-app"></a>Tworzenie wersji aplikacji
 
@@ -149,12 +148,12 @@ Teraz, gdy upewnieniu się, że wszystko działa, można przygotować kompilacj�
 
 Po zakończeniu tej kompilacji, po utworzeniu aplikacji, które mogą kopiować i uruchamiać w dowolnym oknie wiersza polecenia. Nie może wykonać znacznie, ale jest bramy do elementów większa.
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Jeśli chcesz poznać więcej przykładów, zobacz [przykłady dotyczące programu Visual Studio](../ide/visual-studio-samples.md).
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Jeśli chcesz poznać więcej przykładów, zobacz [przykłady programu Visual Studio](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Projektowanie aplikacji w języku C++ w środowisku Visual Studio IDE](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
+[Do tworzenia klasycznych aplikacji C++ za pomocą środowiska IDE programu Visual Studio](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
 [Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Visual Studio — wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)  
+[Wskazówki dotyczące produktywności dla programu Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
 [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)  
-[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+[Wprowadzenie do programowania z użyciem programu Visual Studio](../ide/get-started-developing-with-visual-studio.md)

@@ -1,30 +1,26 @@
 ---
 title: Dodaj nowy element polecenie | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - project.addnewitem
 helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70290f588fe3fac83a5cf0b0ab0339d5e0741186
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c0a989ae54dbeaa7fd63348de64d412be25fd3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-new-item-command"></a>Dodaj nowy element — Polecenie
 Dodaje nowy element rozwiązania, takie jak htm, CSS, txt lub ramek do obecnego rozwiązania, a następnie go otwiera.  
@@ -40,7 +36,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  Opcjonalny. Nazwa i ścieżka pliku element, aby dodać do rozwiązania.  
   
 ## <a name="switches"></a>Przełączniki  
- / t:`templatename`  
+ / t: `templatename`  
  Opcjonalny. Określa typ pliku ma zostać utworzony. Jeśli nazwa szablonu nie jest określony, domyślnie jest utworzony plik tekstowy.  
   
  / T:`templatename` składnię argumentu odzwierciedla informacji zamieszczonych w **Dodaj nowy element rozwiązania** okno dialogowe. Należy wprowadzić pełną kategorii oraz typ pliku, oddzielając nazwy kategorii z typem plików przez ukośnik odwrotny (`\`) i otaczającej cały ciąg w cudzysłowie.  
@@ -51,7 +47,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 /t:"General\Style Sheet"  
 ```  
   
- / e:`editorname`  
+ / e: `editorname`  
  Opcjonalny. Nazwa edytora, w którym będzie można otworzyć pliku. Jeśli argument zostanie określony, ale zostanie podana żadna nazwa edytora, **Otwórz za pomocą** zostanie wyświetlone okno dialogowe.  
   
  / E:`editorname` składnię argumentu korzysta z nazw Edytor znajdujące się w **Otwieranie z okna dialogowego**, ujęty w cudzysłów.  

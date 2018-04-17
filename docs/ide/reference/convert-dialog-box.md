@@ -1,13 +1,10 @@
 ---
 title: Okno dialogowe Konwertowanie | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - jlca_Conversion_F1_3
 - JLCA_Conversion_F1
@@ -15,17 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: febbc4e398fb2611a2968c2dbd9a922b12f45e5f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63e32c53b667667e78b38760f8d4c1ad56dc7f94
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 **Przekonwertować** okno dialogowe służy do wybierania narzędzie konwersji, aby utworzyć nowy projekt na podstawie starej, takich jak tworzenie [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projektu z projektu programu Visual Basic 6. Można również użyć [programu Visual Studio projektu konwertera](https://github.com/ssvaidya/VSProjectConverter) do Uaktualnianie projektów utworzonych w poprzednich wersjach programu Visual Studio.   

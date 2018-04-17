@@ -1,27 +1,25 @@
 ---
 title: W programie Visual Studio SDK | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzeń programu Visual Studio, w tym architektura programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.  
@@ -110,7 +108,7 @@ Ogólny widok architektury programu Visual Studio
 ## <a name="visual-studio-services"></a>Usługi w programie Visual Studio  
  Usługa zawiera określony zbiór interfejsów dla składników można używać. Program Visual Studio oferuje zestaw usług, które mogą być używane przez wszystkie elementy, w tym rozszerzenia. Na przykład usługi Visual Studio umożliwiają narzędzia windows można wyświetlić lub ukryte dynamicznie, Włącz dostęp do pomocy paska stanu i zdarzeń interfejsu użytkownika. Edytor programu Visual Studio udostępnia usługi, które mogą być importowane przez rozszerzenia edytora. Aby uzyskać więcej informacji, zobacz [Using i dostarczanie usług](../../extensibility/using-and-providing-services.md).  
   
-## <a name="debugger"></a>Debuger  
+## <a name="debugger"></a>Debugger  
  Debuger jest interfejs użytkownika ze składnikami debugowania specyficzny dla języka. Po utworzeniu nowej usługi języka, należy utworzyć aparat debugowania określonych na utworzenie punktu zaczepienia w debugera. Aby uzyskać więcej informacji, zobacz [programu Visual Studio Extensibility debugera](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="source-control"></a>Kontrola źródła  

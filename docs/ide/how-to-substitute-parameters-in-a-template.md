@@ -1,24 +1,22 @@
 ---
-title: "Dodawanie nazwy parametrów do szablonów projektów i elementów w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie nazwy parametrów do szablonów projektów i elementów w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ecdd277a36cb1c074653edb2af7f1882e6d25ede
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: be187dfca5f31e33d8f451177ba68b4288e29a53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Porady: parametry zastępcze w szablonie
 

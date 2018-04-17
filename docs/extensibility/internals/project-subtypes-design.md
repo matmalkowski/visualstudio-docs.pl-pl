@@ -2,26 +2,22 @@
 title: Projekt podtypów projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 32
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Podtypów projektu
 Projekt podtypów umożliwiają VSPackages rozszerzanie projektów opartych na aparat kompilacji firmy Microsoft (MSBuild). Użycie agregacji umożliwia ponowne użycie zbiorczego podstawowego zarządzane systemu projektu w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jeszcze nadal dostosować zachowanie dla danego scenariusza.  
@@ -63,7 +59,7 @@ Podtyp wielopoziomowej projektu
  Agregacji podtypu projektu wielopoziomowe składa się z trzech poziomach, podstawowego projektu, który jest agregowana przez podtypu projektu, a następnie połączone przez podtypu projektu zaawansowane. Rysunek koncentruje się na niektórych interfejsów pomocniczych, które są dostarczane jako część [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] architektura podtypu projektu.  
   
 ##### <a name="deployment-mechanisms"></a>Mechanizmy wdrażania  
- Wśród wielu systemu projektu podstawowe funkcje przez podtypu projektu są mechanizmy wdrożenia. Podtyp projektu wpływ mechanizmów wdrażania zaimplementowanie interfejsy konfiguracji (takich jak <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) który są pobierane przez wywołanie metody QueryInterface na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. W przypadku gdy zarówno podtypu projektu i podtypu projektu zaawansowane dodać implementacje innej konfiguracji podstawowej projektu wywołuje `QueryInterface` na podtyp projektu zaawansowane `IUnknown`. Jeśli podtypu projektu wewnętrzny zawiera implementację konfiguracji, która żąda podstawowego projektu, podtypu projektu zaawansowane deleguje do implementacji pochodzącymi podtypem projektu wewnętrzny. Jako mechanizm utrwalić stanu z poziomu agregacji do innego wdrożenia wszystkie poziomy podtypów projektu <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> do utrwalenia kompilacji z systemem innym niż związane z danych XML w pliku projektu. Aby uzyskać więcej informacji, zobacz [przechowywanie danych w pliku projektu MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>jest implementowany jako mechanizmu pobierania rozszerzeń automatyzacji z podtypów projektu.  
+ Wśród wielu systemu projektu podstawowe funkcje przez podtypu projektu są mechanizmy wdrożenia. Podtyp projektu wpływ mechanizmów wdrażania zaimplementowanie interfejsy konfiguracji (takich jak <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) który są pobierane przez wywołanie metody QueryInterface na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. W przypadku gdy zarówno podtypu projektu i podtypu projektu zaawansowane dodać implementacje innej konfiguracji podstawowej projektu wywołuje `QueryInterface` na podtyp projektu zaawansowane `IUnknown`. Jeśli podtypu projektu wewnętrzny zawiera implementację konfiguracji, która żąda podstawowego projektu, podtypu projektu zaawansowane deleguje do implementacji pochodzącymi podtypem projektu wewnętrzny. Jako mechanizm utrwalić stanu z poziomu agregacji do innego wdrożenia wszystkie poziomy podtypów projektu <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> do utrwalenia kompilacji z systemem innym niż związane z danych XML w pliku projektu. Aby uzyskać więcej informacji, zobacz [przechowywanie danych w pliku projektu MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> jest implementowany jako mechanizmu pobierania rozszerzeń automatyzacji z podtypów projektu.  
   
  Poniższa ilustracja koncentruje się na implementacja rozszerzeń automatyzacji obiektu przeglądania konfiguracji projektu w szczególności używane przez projekt podtypów rozszerzenie systemu podstawowego projektu.  
   

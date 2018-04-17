@@ -1,12 +1,10 @@
 ---
-title: "Indeks podglądu pomocy programu Visual Studio Użyj | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Indeks podglądu pomocy programu Visual Studio Użyj | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7bc1b096a161ebca394abe4626c42db2ced883c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Znajdowanie tematów przy użyciu indeksu podglądu pomocy
 Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zainstalowanej zawartości. Każdego tematu może mieć więcej niż jedno słowo kluczowe skojarzone z nim, a każde słowo kluczowe może być skojarzony z więcej niż jednego tematu. Użyj tego indeksu w taki sam sposób jak w przypadku indeksu w książce.  

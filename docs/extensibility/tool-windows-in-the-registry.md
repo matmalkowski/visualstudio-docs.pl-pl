@@ -1,27 +1,23 @@
 ---
-title: "Narzędzia systemu Windows w rejestrze | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Narzędzia systemu Windows w rejestrze | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d3277a4e24b12d409654548b5670a4d47fa9539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 234a3f50865e77f2c6b5a4057e6766b26d7ff521
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-windows-in-the-registry"></a>Narzędzia systemu Windows w rejestrze
 VSPackages, które zapewniają narzędzia windows należy zarejestrować się [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jako narzędzie dostawców okna. Narzędzie okien utworzone za pomocą szablonu pakietu Visual Studio w tym domyślnie. Narzędzie okno dostawców ma kluczy rejestru systemu, które określają atrybuty widoczność, takie jak domyślny rozmiar okna narzędzia i lokalizacji, identyfikator GUID okna, która służy jako okienko narzędzi i styl dokowania.  

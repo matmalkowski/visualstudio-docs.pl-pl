@@ -1,27 +1,23 @@
 ---
 title: IDebugProgram3 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb827c875731134b9d8f9ea2833f3629ca0d3c36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Ten interfejs reprezentuje program, który działa w procesie i rozszerza [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) przez podanie informacji o wątku.  
@@ -50,7 +46,7 @@ IDebugProgram3 : IDebugProgram3
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Uwagi  
  Program jest kontenerem wątku uruchomiony w ramach określonej architektury środowiska wykonawczego podczas procesu składa się z jednego lub wielu programów.  

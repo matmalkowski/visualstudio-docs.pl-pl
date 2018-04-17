@@ -1,13 +1,10 @@
 ---
-title: "Porady: Tworzenie typów za pomocą projektanta klas | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Tworzenie typów za pomocą projektanta klas | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db46a4fa0faa568597deccddb528d8765e048e22
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22260ee75a1c64de842da41b292fbeebeb6cf6ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
 Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utworzyć na diagramie klas. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów](how-to-view-existing-types.md).  
@@ -39,7 +35,7 @@ Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utwo
   
 -   [Zastosuj atrybut niestandardowy do elementu członkowskiego typu](#CustAttributeMember)  
   
-##  <a name="CreateType"></a>Utwórz nowy typ  
+##  <a name="CreateType"></a> Utwórz nowy typ  
   
 1.  W przyborniku, w obszarze Projektanta klas przeciągnij jeden z nich do diagramu klasy:  
   
@@ -69,7 +65,7 @@ Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utwo
   
     |||  
     |-|-|  
-    |**Dla**|**Dodaj**|  
+    |**dla**|**Dodaj**|  
     |Klasy, klasy abstrakcyjne, struktury i obiekty struct|Metody, właściwości, pola, zdarzenia, konstruktory (metoda), destruktory (metoda) i stałe, które określają typ|  
     |Wyliczenia|Wartości pól, które tworzą wyliczenie|  
     |Interfejsy|Metody, właściwości i zdarzenia, które tworzą interfejs|  
@@ -78,7 +74,7 @@ Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utwo
   
      Zobacz [tworzenia elementów członkowskich](creating-and-configuring-type-members.md#CreateMembers).  
   
-##  <a name="CustAttributeType"></a>Zastosuj do typu atrybutu niestandardowego  
+##  <a name="CustAttributeType"></a> Zastosuj do typu atrybutu niestandardowego  
   
 1.  Kliknij typ kształtu na diagramie klasy.  
   
@@ -88,7 +84,7 @@ Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utwo
   
      Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.  
   
-##  <a name="CustAttributeMember"></a>Zastosuj atrybut niestandardowy do elementu członkowskiego typu  
+##  <a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu  
   
 1.  Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.  
   

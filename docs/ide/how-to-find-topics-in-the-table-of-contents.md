@@ -1,13 +1,10 @@
 ---
-title: "Użyj programu Visual Studio podglądu pomocy spis treści | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Użyj programu Visual Studio podglądu pomocy spis treści | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c97a2976f56ab4e5bb8273efc3da3adf9de6fa2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Porady: znajdowanie tematów w spisie treści
 W **zawartość** kartę, można użyć spisu treści (TOC) można znaleźć informacje. Spis treści jest rozwijana lista zawierająca wszystkie tematy zainstalowanych książek. Dostępność informacji o tym, jak przeglądanie spisu treści, zobacz [klawisze skrótów (Podgląd pomocy)](../ide/shortcut-keys-help-viewer.md).  

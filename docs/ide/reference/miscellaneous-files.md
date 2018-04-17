@@ -1,12 +1,10 @@
 ---
-title: "Różne pliki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Różne pliki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.newfile
 - VS.OpenWith
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - files [Visual Studio], outside of containers
 - files [Visual Studio], Miscellaneous Files folder
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cd45af08abd3d3523e2c88af13f46d81ebdb8e2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e020e1cc38898f830537afc2346fd20711cd587
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="miscellaneous-files"></a>Folder różnych plików
 Możesz chcieć użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytory pracy niezależnie z projektem lub rozwiązaniem. Gdy masz otwartego rozwiązania można otwierać i modyfikować pliki bez dodawania ich do rozwiązania lub projektu. Pliki, które chcesz pracować z niezależnie od kontenery są nazywane różne pliki. Różne pliki są zewnętrzne rozwiązania i projekty nie są uwzględnione w kompilacji i nie może zostać dołączony do rozwiązania pod kontrolą źródła.  

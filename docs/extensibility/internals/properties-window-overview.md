@@ -1,27 +1,23 @@
 ---
-title: "Przegląd okna właściwości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przegląd okna właściwości | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Omówienie okno właściwości
 **Właściwości** okna jest używana do wyświetlania właściwości dla obiekt wybrany w dwa główne typy dostępnych w systemie windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). Te dwa typy systemu windows są:  
@@ -44,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Zawiera listę kategorii do **właściwości** okna i mapy każdej właściwości do kategorii.|  
 |[Interfejs IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Udostępnia metody i właściwości do programowania narzędzia i inne aplikacje obsługujące automatyzację obiektu.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Zawiera przyciski wielokropek (...) o nazwie *konstruktorów* który okna modalnego okna dialogowego implementowane przez sam obiekt. Używany, gdy wartość nie jest łatwo typu przez użytkownika w polu tekstowym. Na przykład mogą być wykorzystane do otwarcia próbnika kolorów, który określa wartości RGB.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Zapewnia dostęp do obiektów używane do aktualizowania informacji wyświetlanych w **właściwości** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>jest implementowany przez VSPackages dla każdego okna zawierającego wybieranych obiektów powiązanych właściwości do wyświetlenia.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Zapewnia dostęp do obiektów używane do aktualizowania informacji wyświetlanych w **właściwości** okna. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> jest implementowany przez VSPackages dla każdego okna zawierającego wybieranych obiektów powiązanych właściwości do wyświetlenia.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Zawiera informacje o typie obiektu, takiego jak metody interfejsu i pola struktury.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Umożliwia VSPackages, aby otrzymywać powiadomienia o zdarzeniach zaznaczenia oraz do pobierania informacji na temat bieżącej hierarchii projektu, element, wartość elementu i kontekst interfejsu użytkownika poleceń.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Udostępnia środowisko z dostępem do wielokrotny.|  

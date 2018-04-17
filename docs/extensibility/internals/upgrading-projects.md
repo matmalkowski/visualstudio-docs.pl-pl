@@ -1,27 +1,25 @@
 ---
-title: "Uaktualnianie projektów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uaktualnianie projektów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>Uaktualnianie projektów
 Zmiany modelu projektu z jednej wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] do następnego może wymagać projektów i rozwiązań uaktualnienia, dzięki czemu mogą być uruchamiane na nowszą wersję. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Udostępnia interfejsy, które mogą służyć do implementowania obsługi uaktualniania do własnych projektów.  
@@ -57,7 +55,7 @@ Zmiany modelu projektu z jednej wersji [!INCLUDE[vsprvs](../../code-quality/incl
   
  Aby uzyskać więcej informacji na temat tworzenia kopii zapasowych i uaktualnianie projektów Zobacz komentarze dla IVsProjectUpgrade w vsshell2.idl.  
   
-## <a name="upgrading-custom-projects"></a>Uaktualnianie projektów niestandardowych
+## <a name="upgrading-custom-projects"></a> Uaktualnianie projektów niestandardowych
 Jeśli zmienisz informacje utrwalone w pliku projektu między różnymi wersjami programu Visual Studio produktu, a następnie wymaganych do obsługi, uaktualnianie pliku projektu ze starego do nowej wersji. Do obsługi uaktualniania umożliwiający uczestniczyć w **Kreator konwersji Visual Studio**, wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu. Ten interfejs zawiera jedynym mechanizmem uaktualniania kopiowania. W przypadku uaktualniania projektu odbywa się jako część rozwiązania otwiera. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Interfejs jest implementowany przez fabrykę projektów lub musi być co najmniej częściowa z fabryki projektu.  
   
  Stary mechanizm, który używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interfejsu nadal jest obsługiwany, ale koncepcyjnie uaktualnia system projektu jako część otwarciu projektu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Interfejsu w związku z tym jest wywoływana przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska, nawet jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejs o nazwie lub zaimplementowana. Takie podejście umożliwia użycie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> do wykonania kopii tylko części uaktualniania projektu i delegowanie reszty zadań do wykonania w miejscu (prawdopodobnie w nowej lokalizacji) przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interfejsu.  
@@ -92,7 +90,7 @@ Jeśli zmienisz informacje utrwalone w pliku projektu między różnymi wersjami
   
 5.  Użyj metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> publikowania uaktualnienia powiązane wiadomości dla użytkownika przy użyciu Kreatora migracji usługi Visual Studio.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>Interfejs jest używany do wykonania dowolnego rodzaju uaktualnienia pliku, który musi zostać przeprowadzona w ramach uaktualnienia projektu. Ten interfejs nie jest wywoływany z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale jest dostarczany jako mechanizm uaktualnienia plików, które są częścią system projektu, ale system projektu może nie być bezpośrednio uwagę. Na przykład tej sytuacji mogą wystąpić, jeśli kompilator powiązanych plików oraz właściwości nie są obsługiwane przez sam zespół deweloperów, obsługująca reszty system projektu.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> Interfejs jest używany do wykonania dowolnego rodzaju uaktualnienia pliku, który musi zostać przeprowadzona w ramach uaktualnienia projektu. Ten interfejs nie jest wywoływany z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale jest dostarczany jako mechanizm uaktualnienia plików, które są częścią system projektu, ale system projektu może nie być bezpośrednio uwagę. Na przykład tej sytuacji mogą wystąpić, jeśli kompilator powiązanych plików oraz właściwości nie są obsługiwane przez sam zespół deweloperów, obsługująca reszty system projektu.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>Implementacja IVsProjectUpgrade  
  Jeśli system projektu implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> , nie mogą uczestniczyć w **Kreator konwersji Visual Studio**. Jednak nawet w przypadku implementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu, można nadal delegować uaktualnienia pliku do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementacji.  

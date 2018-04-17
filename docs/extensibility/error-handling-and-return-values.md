@@ -1,27 +1,25 @@
 ---
-title: "Obsługa błędów i wartości zwracane | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obsługa błędów i wartości zwracane | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Studio SDK], handling
 - error handling
 - return values
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a1c9aa444860de2e20f51247ac53d16ceaad2b48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cfbeef2de041cfd71fbf163d7860d903a6cb59e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-handling-and-return-values"></a>Obsługa błędów i wartości zwracane
 Pakiety VSPackage i modelu COM przy użyciu takiej samej architekturze błędy. `SetErrorInfo` i `GetErrorInfo` funkcje są częścią interfejsu programowania aplikacji (API) Win32. Wszelkie pakiet VSPackage w zintegrowane środowisko programistyczne (IDE) mogą wywoływać te globalne API Win32, aby informacje o błędzie sformatowanego rekordu po otrzymaniu powiadomienia o błędach. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Zawiera zestawy międzyoperacyjne do zarządzania informacje o błędzie.  

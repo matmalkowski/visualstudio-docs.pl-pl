@@ -1,26 +1,24 @@
 ---
-title: "Sprawdzanie poprawności punktów przerwania w usłudze języka starszych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Sprawdzanie poprawności punktów przerwania w usłudze języka starszych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punkty przerwania w starsza wersja usługi języka
 Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w określonym punkcie podczas, gdy jest uruchamiana w debugerze. Użytkownika można umieścić punkt przerwania w żadnych wierszy w pliku źródłowym, ponieważ edytor nie ma informacji o to, co stanowi prawidłowej lokalizacji punktu przerwania. Po uruchomieniu debugera, wszystkie oznaczone punkty przerwania (nazywane oczekujących punktów przerwania) są powiązane z odpowiednią lokalizację w uruchomiony program. W tym samym czasie, które są weryfikowane punktów przerwania, aby upewnić się, że ich oznaczanie prawidłowy kod lokalizacji. Na przykład punkt przerwania w komentarz nie jest prawidłowa, ponieważ nie istnieje żaden kod w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowy punktów przerwania.  

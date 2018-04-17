@@ -1,31 +1,29 @@
 ---
-title: "Moduł wyliczający komunikatu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Moduł wyliczający komunikatu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6a24db9c50bd298f068c23af0b6bad5755ec252d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bc945908ac61a0eaa4df49c76725b2291686eac3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-enumerator"></a>Moduł wyliczający wiadomości
 Następujące flagi są używane do `TEXTOUTPROC` funkcji, która jest funkcja wywołania zwrotnego, która zapewnia IDE, gdy wywołuje [SccOpenProject](../extensibility/sccopenproject-function.md) (zobacz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) szczegółowe informacje dotyczące wywołania zwrotnego Funkcja).  
   
- Jeśli IDE jest pytanie, aby anulować proces, jego może otrzymywać wiadomości Anuluj. W takim przypadku źródło kontrolować wtyczki używa `SCC_MSG_STARTCANCEL` poprosić IDE, aby wyświetlić **anulować** przycisku. Po to mogą być wysyłane dowolny zbiór zwykłych wiadomości. Jeśli dowolny z tych zwraca `SCC_MSG_RTN_CANCEL`, a następnie wtyczki kończy działanie i zwraca. Wtyczka również sonduje `SCC_MSG_DOCANCEL` okresowo, aby określić, czy użytkownik anulował operację. Gdy wszystkie operacje są wykonywane, lub jeśli została anulowana przez użytkownika, wysyła wtyczki `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, oraz typy SCC_MSG_ERROR są używane do wiadomości, które są wyświetlane na liście przewijania wiadomości. `SCC_MSG_STATUS`to specjalny typ, który wskazuje, że tekst powinny być widoczne w pasku stanu lub obszar tymczasowy wyświetlania. Nie ona trwale na liście.  
+ Jeśli IDE jest pytanie, aby anulować proces, jego może otrzymywać wiadomości Anuluj. W takim przypadku źródło kontrolować wtyczki używa `SCC_MSG_STARTCANCEL` poprosić IDE, aby wyświetlić **anulować** przycisku. Po to mogą być wysyłane dowolny zbiór zwykłych wiadomości. Jeśli dowolny z tych zwraca `SCC_MSG_RTN_CANCEL`, a następnie wtyczki kończy działanie i zwraca. Wtyczka również sonduje `SCC_MSG_DOCANCEL` okresowo, aby określić, czy użytkownik anulował operację. Gdy wszystkie operacje są wykonywane, lub jeśli została anulowana przez użytkownika, wysyła wtyczki `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, oraz typy SCC_MSG_ERROR są używane do wiadomości, które są wyświetlane na liście przewijania wiadomości. `SCC_MSG_STATUS` to specjalny typ, który wskazuje, że tekst powinny być widoczne w pasku stanu lub obszar tymczasowy wyświetlania. Nie ona trwale na liście.  
   
 ## <a name="syntax"></a>Składnia  
   

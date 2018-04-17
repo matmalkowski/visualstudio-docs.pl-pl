@@ -1,29 +1,27 @@
 ---
-title: "Porady: Konfigurowanie projektów do wielu platform docelowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Konfigurowanie projektów do wielu platform docelowych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb2a945eb05703533c619c3dc1c8c31217dfe9f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Porady: konfigurowanie projektów do wielu platform docelowych
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]umożliwia rozwiązanie docelowy kilku różnych architektury Procesora lub platformy, na raz. Aby ustawić te właściwości są dostępne za pośrednictwem **programu Configuration Manager** okno dialogowe.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umożliwia rozwiązanie docelowy kilku różnych architektury Procesora lub platformy, na raz. Aby ustawić te właściwości są dostępne za pośrednictwem **programu Configuration Manager** okno dialogowe.  
   
 ## <a name="targeting-a-platform"></a>Przeznaczonych dla platformy  
  **Programu Configuration Manager** okno dialogowe umożliwia tworzenie i ustawianie konfiguracji rozwiązania i na poziomie projektu i platform. Każda kombinacja rozwiązanie na poziomie konfiguracji i elementy docelowe może mieć unikatowego zestawu właściwości skojarzone z nim, dzięki czemu można łatwo przełączać, na przykład konfiguracji wydanie którego element docelowy [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] platformy, konfiguracja wydania które elementy docelowe x86 platformy i konfiguracji debugowania, którego celem jest x86 platformy.  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  Na **kompilacji** menu, kliknij przycisk **programu Configuration Manager**.  
   
-2.  W **aktywne rozwiązanie platformy pole**, wybierz platformę rozwiązania do obiektu docelowego, lub wybierz  **\<nowy >** do utworzenia nowej platformie. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]zostanie skompilowany aplikacji pod kątem platformy, który jest ustawiony jako aktywnej platformy w **programu Configuration Manager** okno dialogowe.  
+2.  W **aktywne rozwiązanie platformy pole**, wybierz platformę rozwiązania do obiektu docelowego, lub wybierz  **\<nowy >** do utworzenia nowej platformie. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zostanie skompilowany aplikacji pod kątem platformy, który jest ustawiony jako aktywnej platformy w **programu Configuration Manager** okno dialogowe.  
   
 ## <a name="removing-a-platform"></a>Trwa usuwanie platformy  
  Gdy uznasz, że użytkownik nie ma potrzeby dla platformy, należy usunąć go za pomocą okna dialogowego programu Configuration Manager. Spowoduje to usunięcie wszystkich ustawień rozwiązań i projektów, które skonfigurowane dla tej kombinacji konfiguracji i docelowej.  

@@ -1,35 +1,31 @@
 ---
 title: NumberOfParentCategoriesToRollUp (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf100745a9dd6a388a9a29d52100aacb6c1b76b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (szablony Visual Studio)
 Określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt** okno dialogowe.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateData >  
  \<NumberOfParentCategoriesToRollUp >  
   
@@ -62,7 +58,7 @@ Określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt*
  Ta wartość określa liczbę kategorii nadrzędnych, zawierające szablonu w **nowy projekt** okno dialogowe.  
   
 ## <a name="remarks"></a>Uwagi  
- `NumberOfParentCategoriesToRollUp`to opcjonalny element.  
+ `NumberOfParentCategoriesToRollUp` to opcjonalny element.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie przedstawiono metadanych dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows. Jeśli szablon z metadanych jest umieszczane dwa poziomy folderu poniżej najwyższego poziomu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu węzła, będą wyświetlane w węźle najwyższego poziomu w **nowy projekt** okno dialogowe. Jeśli `NumberOfParentCategoriesToRollUp` nie jest ustawiona, szablon jest wyświetlany tylko w węźle w którym znajduje się fizycznie.  

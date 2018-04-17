@@ -1,26 +1,24 @@
 ---
 title: MSSCCPRJ. Plik SCC | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Plik SCC
 Gdy Visual Studio rozwiązania lub projektu znajduje się pod kontrolą źródła przy użyciu środowiska IDE, IDE otrzymuje dwa kluczowych informacji z kontroli źródła wtyczek w postaci ciągów. Te ciągi "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury", są nieprzezroczysta dla IDE, ale są one używane przez wtyczkę do zlokalizowania rozwiązania lub projektu w kontroli wersji. IDE zwykle uzyskuje te ciągi po raz pierwszy przez wywołanie metody [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a następnie zapisuje je w pliku rozwiązania lub projektu dla przyszłych połączeń w celu [SccOpenProject](../extensibility/sccopenproject-function.md). Osadzone w pliki rozwiązań i projektów ciągi "AuxPath" i "Nazwa_projektu.nazwa_modułu.nazwa_procedury" nie są automatycznie aktualizowane podczas użytkownika gałęzi rozwidlenia, albo kopiuje pliki rozwiązań i projektów, które znajdują się w kontroli wersji. Aby upewnić się, że pliki rozwiązań i projektów wskazują ich poprawnej lokalizacji w kontroli wersji, należy ręcznie zaktualizować ciągi. Ponieważ ciągi mają być nieprzezroczyste, jego mogą nie być wyczyść jak powinny być zaktualizowane.  
@@ -46,23 +44,23 @@ Gdy Visual Studio rozwiązania lub projektu znajduje się pod kontrolą źródł
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ilustracja MSSCCPRJ. Format pliku SCC  
  Poniżej przedstawiono przykładowe MSSCCPRJ. Format pliku SCC (numery wierszy są udostępniane tylko jako wskazówki i nie powinny znajdować się w treści pliku):  
   
- [Wiersza 1]`SCC = This is a Source Code Control file`  
+ [Wiersza 1] `SCC = This is a Source Code Control file`  
   
  [Wiersz 2]  
   
- [Wiersz 3]`[TestApp.sln]`  
+ [Wiersz 3] `[TestApp.sln]`  
   
- [Wiersz: 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Wiersz: 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Wiersz 5]`SCC_Project_Name = "$/TestApp"`  
+ [Wiersz 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Wiersz: 6]  
   
- [Wiersz 7]`[TestApp.csproj]`  
+ [Wiersz 7] `[TestApp.csproj]`  
   
- [Wiersz: 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Wiersz: 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Wiersz 9]`SCC_Project_Name = "$/TestApp"`  
+ [Wiersz 9] `SCC_Project_Name = "$/TestApp"`  
   
  Pierwszy wiersz stany zastosowanie pliku i służy jako podpis dla wszystkich plików tego typu. Ten wiersz powinien pojawić się dokładnie tak jak poniżej w MSSCCPRJ wszystkie. Pliki SCC:  
   

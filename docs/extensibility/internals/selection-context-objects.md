@@ -1,26 +1,24 @@
 ---
-title: "Wybór obiektów kontekstu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wybór obiektów kontekstu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 04ccc4a57ac7af144c134761119433b7533e9bec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-context-objects"></a>Wybór obiektów kontekstu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) używa obiekt kontekstu globalnego wyboru w celu określenia, co powinno być wyświetlane w IDE. Każde okno w IDE może mieć własną obiekt kontekstu wyboru do kontekst zaznaczenia globalnych. IDE aktualizuje kontekst zaznaczenia globalnych z wartościami z okna, gdy okno ma fokus. Aby uzyskać więcej informacji, zobacz [opinii użytkownikowi](../../extensibility/internals/feedback-to-the-user.md).  

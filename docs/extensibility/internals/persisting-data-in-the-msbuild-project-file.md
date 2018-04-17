@@ -1,27 +1,23 @@
 ---
 title: Utrwalanie danych w pliku projektu MSBuild | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu MSBuild
 Podtyp projektu może być konieczne do utrwalenia danych specyficznych dla podtypu do pliku projektu do późniejszego użycia. Podtyp projektu używa trwałości plik projektu do spełniać następujące wymagania:  
@@ -45,7 +41,7 @@ Podtyp projektu może być konieczne do utrwalenia danych specyficznych dla podt
 ## <a name="persisting-build-related-information"></a>Przechowywanie informacji dotyczących kompilacji  
  Trwałość danych jest przydatne w przypadku tworzenia projektu jest obsługiwana za pomocą programu MSBuild. MSBuild system obsługuje tabelę główną informacji dotyczących kompilacji. Podtypów projektu są zobowiązani do uzyskiwania dostępu do tych danych do pobierania i ustawiania wartości właściwości. Podtypów projektu można również rozszerzyć tabeli danych związanych z kompilacją przez dodanie dodatkowych właściwości utrwalenia i usuwając właściwości, więc nie są zachowywane.  
   
- Aby zmodyfikować danych MSBuild, podtypu projektu jest odpowiedzialny za pobieranie obiektu właściwości programu MSBuild z systemu podstawowego projektu za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>to interfejs została zaimplementowana na podstawowego systemu projektu i agregację kwerend podtypu projektu dla niego uruchamiając `QueryInterface`.  
+ Aby zmodyfikować danych MSBuild, podtypu projektu jest odpowiedzialny za pobieranie obiektu właściwości programu MSBuild z systemu podstawowego projektu za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> to interfejs została zaimplementowana na podstawowego systemu projektu i agregację kwerend podtypu projektu dla niego uruchamiając `QueryInterface`.  
   
  Poniższej procedury opisano kroki usuwanie przy użyciu właściwości <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   

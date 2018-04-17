@@ -1,13 +1,10 @@
 ---
-title: "Porady: Tworzenie skojarzenia między typami (Projektant klas) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Tworzenie skojarzenia między typami (Projektant klas) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4c994ffadf04c3205762d0018d18ad14ffd6c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d81e2f3bb671f5c88b08bf1cb26db42a6c4383a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Porady: Tworzenie skojarzenia między typami (Projektant klas)
 Linie skojarzenia w Konstruktorze klasy pokazują relacje klas na diagramie. Linia skojarzenia reprezentuje klasę, która jest typem właściwości lub polem innej klasy w projekcie. Linii skojarzeń zwykle używa się do ilustrowania najważniejszych relacji między klasami w projekcie.  
@@ -49,7 +45,7 @@ Podczas gdy można wyświetlić wszystkie pola i właściwości jako skojarzenia
   
 -   Na powierzchni diagramu kliknij etykietę linii skojarzenia i ją wyedytuj.  
   
- \-lub -  
+ \- lub -  
   
 1.  Kliknij kształt, który zawiera właściwość, która jest wyświetlana jako skojarzenie.  
   

@@ -1,30 +1,26 @@
 ---
 title: QUERYCHANGESFUNC | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43add362011b31ce695e9a8d9e77d6ca2dedb0e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d1df5f21ffed27c45ebee6315fcc29ee1dcc8fa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Jest to funkcja wywołania zwrotnego używane przez [SccQueryChanges](../extensibility/sccquerychanges-function.md) operacji wylicza Kolekcja nazw plików i sprawdź stan każdego pliku.  
@@ -56,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|Zatrzymaj przetwarzanie.|  
 |SCC_E_xxx|Wszystkie odpowiednie błąd SCC należy zatrzymać przetwarzania.|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a>Struktura QUERYCHANGESDATA  
+##  <a name="LinkQUERYCHANGESDATA"></a> Struktura QUERYCHANGESDATA  
  Struktura przekazana dla każdego pliku wygląda następująco:  
   
 ```cpp  

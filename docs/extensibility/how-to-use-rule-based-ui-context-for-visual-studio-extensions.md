@@ -1,21 +1,18 @@
 ---
-title: "Porady: Użyj kontekstu opartego na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Użyj kontekstu opartego na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Porady: Użyj kontekstu opartego na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio
 Program Visual Studio umożliwia ładowanie VSPackages podczas niektórych dobrze znanego <xref:Microsoft.VisualStudio.Shell.UIContext>s są uaktywnione. Jednak te konteksty interfejsu użytkownika nie są bardzo małe system, pozostawiając autorów rozszerzenia wybór nie, ale do pobrania dostępnych kontekstu interfejsu użytkownika, który uaktywnia przed punktem chcieli naprawdę pakiet VSPackage załadować. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -137,7 +134,7 @@ Program Visual Studio umożliwia ładowanie VSPackages podczas niektórych dobrz
 |ConfigSettingsStoreQuery:\<zapytania >|"zapytania" reprezentuje pełną ścieżkę do magazynu ustawienia konfiguracji, który musi mieć wartość inną niż zero. Zapytanie jest podzielony na "kolekcji" i "propertyName" w ostatnim ukośnika.|  
 |ActiveProjectFlavor:\<projectTypeGuid >|Termin będzie mieć wartość true, przy każdym języka jest aktualnie wybrany projekt (łącznie) i ma podtyp odpowiadał typowi danego projektu identyfikatora GUID.|  
 |ActiveEditorContentType:\<contentType >|Termin jest wartość true, jeśli wybrany dokument to edytor tekstów, z danym typem zawartości.|  
-|ActiveProjectCapability:\<wyrażenia >|Termin ma wartość true, gdy możliwości aktywnego projektu jest zgodna z podanego wyrażenia. Wyrażenie może to wyglądać jak VB &#124; CSharp|  
+|ActiveProjectCapability:\<wyrażenia >|Termin ma wartość true, gdy możliwości aktywnego projektu jest zgodna z podanego wyrażenia. Wyrażenie może być przypominać VB &#124; języka CSharp|  
 |SolutionHasProjectCapability:\<wyrażenia >|Podobny do powyżej, ale termin ma wartość true, gdy rozwiązanie ma załadowanego projektu, który pasuje do wyrażenia.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Termin będzie mieć wartość true, zawsze, gdy rozwiązanie zawiera projekt, który jest języka (łącznie) oraz jej podtyp odpowiadał typowi projektu dany identyfikator GUID.|
 

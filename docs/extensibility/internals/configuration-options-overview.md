@@ -1,26 +1,24 @@
 ---
-title: "Omówienie opcji konfiguracji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie opcji konfiguracji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 Projekty w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może obsługiwać wiele konfiguracji, które mogą być tworzone, debugowany, uruchamiania i/lub wdrożone. Konfiguracja jest opisane nazwany zestaw właściwości, zwykle przełączniki kompilatora i lokalizacje plików typu kompilacji. Domyślnie nowe rozwiązania zawiera dwie konfiguracje Debug i Release. Te konfiguracje mogą być stosowane przy użyciu ustawień domyślnych, lub zmodyfikować, aby spełniały określone wymagania rozwiązania lub projektu. Niektóre pakiety mogą być tworzone na dwa sposoby: edytorem ActiveX lub jako składnik w miejscu. Projekty nie trzeba jednak obsługuje wiele konfiguracji. Jeśli jest dostępny tylko jedną konfigurację, że konfiguracja jest mapowany do wszystkich konfiguracji rozwiązania.  
@@ -57,15 +55,15 @@ Interfejsy konfiguracji
   
  Kilka uwag odnoszących się do poprzedniego diagramu:  
   
--   `IDispatch`jest oznaczona jako opcjonalna w obiekcie konfiguracji. W szczególności jest opcjonalny do interfejsy Konfiguracja w obiekcie przeglądania.  
+-   `IDispatch` jest oznaczona jako opcjonalna w obiekcie konfiguracji. W szczególności jest opcjonalny do interfejsy Konfiguracja w obiekcie przeglądania.  
   
--   `IVsDebuggableProjectCfg`oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany do obsługi debugowania.  
+-   `IVsDebuggableProjectCfg` oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany do obsługi debugowania.  
   
--   `IVsProjectCfg2`oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany dla danych wyjściowych grupowanie pomocy technicznej.  
+-   `IVsProjectCfg2` oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany dla danych wyjściowych grupowanie pomocy technicznej.  
   
 -   `Config Provider` Obiekt jest oznaczony jako opcjonalny obiekt, ale ta opcja jest gdzie go zaimplementować. Obiekt może wdrożyć na obiekt project lub oddzielny obiekt.  
   
--   `IVsCfgProvider2`jest potrzebne do obsługi platform i edytowania konfiguracji. `IVsCfgProvider`wystarczy, jeśli nie należy implementować te funkcje.  
+-   `IVsCfgProvider2` jest potrzebne do obsługi platform i edytowania konfiguracji. `IVsCfgProvider` wystarczy, jeśli nie należy implementować te funkcje.  
   
 -   Niektóre z tych obiektów przedstawione na diagramie oddzielnych obiektów mogą być połączone w tej samej klasy, w przypadku, gdy praktyczne zgodnie z wymaganiami określonego projektu. W innych tematach w tej sekcji jednak te obiekty i interfejsy skojarzone z tymi obiektami, zostanie dokładnie omówione zgodnie ze scenariuszem przedstawione na diagramie.  
   

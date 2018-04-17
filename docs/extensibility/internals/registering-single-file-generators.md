@@ -1,26 +1,24 @@
 ---
 title: Rejestrowanie generatory pojedynczy plik | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 22261c7485f1779eb3613c7ef5af693feeb51fbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9b7d16a9e473028d85540f4447d9981382be0fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-single-file-generators"></a>Rejestrowanie generatory pojedynczego pliku
 Aby udostępnić narzędzia niestandardowego w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], musi być zarejestrowany tak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wystąpienie można dodać i kojarzy ją z typu określonego projektu.  
@@ -46,7 +44,7 @@ Aby udostępnić narzędzia niestandardowego w [!INCLUDE[vsprvs](../../code-qual
   
          Opcjonalny. Zawiera opis przyjazną dla użytkownika narzędzia niestandardowego. Ten parametr jest opcjonalny, ale zalecane.  
   
-    -   IDENTYFIKATOR CLSID  
+    -   CLSID  
   
          Wymagany. Określa identyfikator biblioteki klas składnika modelu COM, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   

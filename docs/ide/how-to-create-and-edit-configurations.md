@@ -1,12 +1,10 @@
 ---
 title: 'Porady: tworzenie i edycja konfiguracji | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2c91995c2e81f111fbbaa114a4b0d863f1d8397f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Porady: tworzenie i edycja konfiguracji
 Można utworzyć kilka konfiguracje kompilacji rozwiązania. Na przykład można skonfigurować kompilację debugowania, służącego do znajdowania i rozwiązywania problemów z testerów i można skonfigurować różne rodzaje kompilacje, które mogą być dystrybuowane do różnych klientów.  

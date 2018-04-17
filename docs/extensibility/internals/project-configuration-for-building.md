@@ -1,26 +1,24 @@
 ---
 title: Konfiguracja dla tworzenia projektu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>Konfiguracja projektu dla tworzenia
 Lista konfiguracje rozwiązania dla danego rozwiązania jest zarządzana przez okno dialogowe konfiguracji rozwiązania.  
@@ -51,9 +49,9 @@ Zależności projektu
 > [!NOTE]
 >  Projekty na liście swoich pól wyboru zaznaczone, które jest wyszarzone zostały dodane przez środowisko z powodu jawne zależności określony przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfejsy i nie można zmienić. Na przykład dodać odwołanie do projektu z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu do innego projektu automatycznie dodaje zależność kompilacji, która może być usunięta tylko przez usunięcie odwołania. Nie można wybrać projekty, których pola wyboru wyraźnie i wyszarzone, ponieważ w ten sposób spowoduje utworzenie pętli zależności (na przykład Project1 są zależne od projekcie 2 i są zależne od Project1 projekcie 2), który będzie zatrzymania kompilacji.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]procesów tworzenia obejmują typowe kompilacji i operacji łączy, które są wywoływane za pomocą jednego polecenia kompilacji. Mogą być również obsługiwane dwa procesy kompilacji: operacji czyszczenia, aby usunąć wszystkie elementy danych wyjściowych z ostatniej kompilacji i aktualne sprawdzanie, czy element danych wyjściowych w konfiguracji został zmieniony.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] procesów tworzenia obejmują typowe kompilacji i operacji łączy, które są wywoływane za pomocą jednego polecenia kompilacji. Mogą być również obsługiwane dwa procesy kompilacji: operacji czyszczenia, aby usunąć wszystkie elementy danych wyjściowych z ostatniej kompilacji i aktualne sprawdzanie, czy element danych wyjściowych w konfiguracji został zmieniony.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>Zwraca obiekty odpowiadające mu <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (zwrócony z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) do zarządzania procesu kompilacji. Aby zgłosić stan operacji kompilacji, sprawdzeniem, konfiguracje wykonywania wywołań do <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, interfejs implementowany przez środowisko i innych obiektów zainteresowani zdarzeń stanu kompilacji.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Zwraca obiekty odpowiadające mu <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (zwrócony z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) do zarządzania procesu kompilacji. Aby zgłosić stan operacji kompilacji, sprawdzeniem, konfiguracje wykonywania wywołań do <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, interfejs implementowany przez środowisko i innych obiektów zainteresowani zdarzeń stanu kompilacji.  
   
  Raz utworzone ustawienia konfiguracji można określić, czy można je uruchamiać pod kontrolą debugera. Konfiguracje wdrożenia <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> do obsługi debugowania.  
   

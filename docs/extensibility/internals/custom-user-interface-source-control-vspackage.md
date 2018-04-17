@@ -1,26 +1,24 @@
 ---
-title: "Niestandardowy interfejs użytkownika (VSPackage kontroli źródła) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Niestandardowy interfejs użytkownika (VSPackage kontroli źródła) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (VSPackage kontroli źródła)
 Pakiet VSPackage deklaruje elementy jego menu i ich domyślne stany poprzez plik tabeli poleceń w usłudze Visual Studio (vsct). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowane środowisko programistyczne (IDE) do momentu załadowania pakiet VSPackage wyświetla elementów menu w ich domyślne Stany. Następnie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda jest wywoływana, aby włączyć lub wyłączyć elementów menu.  
@@ -49,7 +47,7 @@ Pakiet VSPackage deklaruje elementy jego menu i ich domyślne stany poprzez plik
   
  Wymagane <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a także interfejsami opcjonalne skojarzone z kontroli źródła, nie są nazywane podczas VSPackage kontroli źródła jest nieaktywny.  
   
- Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchamia IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ustawia kontekst interfejsu użytkownika poleceń identyfikator bieżącego kontroli źródła domyślny identyfikator pakiet VSPackage. Powoduje to statycznych interfejsu użytkownika z kontroli źródła active pakiet VSPackage pojawią się w środowisku IDE bez faktycznie ładowania pakiet VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]wstrzymuje działanie na pakiet VSPackage zarejestrować za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> przed jego sprawia, że wszystkie wywołania pakiet VSPackage.  
+ Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uruchamia IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ustawia kontekst interfejsu użytkownika poleceń identyfikator bieżącego kontroli źródła domyślny identyfikator pakiet VSPackage. Powoduje to statycznych interfejsu użytkownika z kontroli źródła active pakiet VSPackage pojawią się w środowisku IDE bez faktycznie ładowania pakiet VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wstrzymuje działanie na pakiet VSPackage zarejestrować za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> przed jego sprawia, że wszystkie wywołania pakiet VSPackage.  
   
  W poniższej tabeli przedstawiono szczegółowe informacje o sposobie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE ukrywa różne elementy interfejsu użytkownika.  
   

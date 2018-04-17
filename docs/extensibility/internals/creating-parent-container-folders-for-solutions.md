@@ -1,26 +1,24 @@
 ---
-title: "Tworzenie folderów kontenera nadrzędnego dla rozwiązań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie folderów kontenera nadrzędnego dla rozwiązań | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Tworzenie folderów kontenera nadrzędnego dla rozwiązania
 Źródłowy formant wtyczek interfejsu API w wersji 1.2 użytkownik może określić lokalizację docelową kontroli źródła z jednym elementem głównym dla wszystkich projektów sieci Web w ramach rozwiązania. To z jednym elementem głównym jest nazywany skanowania Super Unified głównego (SUR).  
@@ -64,7 +62,7 @@ ms.lasthandoff: 12/22/2017
   
  SUR folderze i jego podfolderach są tworzone niezależnie od tego, czy operacja została anulowana lub kończy się niepowodzeniem z powodu błędu. Ich nie są automatycznie usuwane w warunkach Anuluj lub błędu.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ustawienia domyślne zachowanie w wersji 1.1, jeśli wtyczka do kontroli źródła nie może zwracać `SCC_CAP_CREATESUBPROJECT` i `SCC_CAP_GETPARENTPROJECT` flagi możliwości. Ponadto użytkownicy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można wybrać powrócić do zachowania w wersji 1.1, ustawiając wartość następującego klucza DWORD: 00000001:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ustawienia domyślne zachowanie w wersji 1.1, jeśli wtyczka do kontroli źródła nie może zwracać `SCC_CAP_CREATESUBPROJECT` i `SCC_CAP_GETPARENTPROJECT` flagi możliwości. Ponadto użytkownicy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można wybrać powrócić do zachowania w wersji 1.1, ustawiając wartość następującego klucza DWORD: 00000001:  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001  
   

@@ -1,12 +1,10 @@
 ---
 title: Pomocnicy zestawu SDK do debugowania | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 Te funkcje i deklaracje są funkcje globalne pomocy wykonywania aparatami debugowania, ewaluatorów wyrażeń i dostawców symbol w języku C++.  
@@ -265,7 +263,7 @@ HRESULT EnumMetricSections(
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
-|*[klucz rejestru]*|`HKEY_CURRENT_USER`lub `HKEY_LOCAL_MACHINE`.|  
+|*[klucz rejestru]*|`HKEY_CURRENT_USER` lub `HKEY_LOCAL_MACHINE`.|  
 |*[wersja głównego]*|Wersja programu Visual Studio (na przykład `7.0`, `7.1`, lub `8.0`). Jednak ten katalog główny może również zostać zmodyfikowany za pomocą **/rootsuffix** przełączyć się do **devenv.exe**. W przypadku VSIP, modyfikator jest zwykle **Exp**, więc głównej wersji może być na przykład 8.0Exp.|  
 |*[metryki głównego]*|Jest to `AD7Metrics` lub `AD7Metrics(Debug)`, w zależności od tego, czy używana wersja debugowania dbgmetric.lib. **Uwaga:** czy dbgmetric.lib jest używana, tę konwencję nazewnictwa powinien wywiązuje się Jeśli masz różnice między debug i release wersje, które musi mieć odzwierciedlenie w rejestrze.|  
 |*[typ metryki]*|Typ metryki do zapisania: `Engine`, `ExpressionEvaluator`, `SymbolProvider`itp. Są one wszystkie zdefiniowane jak dbgmetric.h jako `metricTypeXXXX`, gdzie `XXXX` jest nazwą określonego typu.|  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  Wszystkie identyfikatory GUID są przechowywane w formacie `{GUID}`. Na przykład `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Aparaty debugowania  
- Poniżej znajduje się organizacja metryki aparaty debugowania w rejestrze. `Engine`jest nazwa typu metryki dla aparatu debugowania i odpowiada *[typ metryki]* w powyższym poddrzewo rejestru.  
+ Poniżej znajduje się organizacja metryki aparaty debugowania w rejestrze. `Engine` jest nazwa typu metryki dla aparatu debugowania i odpowiada *[typ metryki]* w powyższym poddrzewo rejestru.  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[port dostawcy guid]*|Identyfikator GUID dostawcy port, jeśli istnieje. Wiele aparatami debugowania przy użyciu domyślnego portu dostawcy, a w związku z tym nie należy określać własne dostawcy. W tym przypadku podklucz `PortSupplier` będą nieobecne.|  
   
 ### <a name="port-suppliers"></a>Port dostawcy  
- Poniżej znajduje się organizacja metryki dostawcy portu w rejestrze. `PortSupplier`jest nazwa typu metryki dla dostawcy portu i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki dostawcy portu w rejestrze. `PortSupplier` jest nazwa typu metryki dla dostawcy portu i odpowiada *[typ metryki]*.  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten dostawca portu|  
   
 ### <a name="symbol-providers"></a>Symbol dostawców  
- Poniżej znajduje się organizacja metryki dostawcy symbol w rejestrze. `SymbolProvider`jest nazwa typu metryki dla dostawcy symboli i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki dostawcy symbol w rejestrze. `SymbolProvider` jest nazwa typu metryki dla dostawcy symboli i odpowiada *[typ metryki]*.  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje dostawcę tego symbolu|  
   
 ### <a name="expression-evaluators"></a>Ewaluatory wyrażeń  
- Poniżej znajduje się organizacja metryki ewaluatora wyrażenia w rejestrze. `ExpressionEvaluator`jest nazwa typu metryki dla ewaluatora wyrażeń i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki ewaluatora wyrażenia w rejestrze. `ExpressionEvaluator` jest nazwa typu metryki dla ewaluatora wyrażeń i odpowiada *[typ metryki]*.  
   
 > [!NOTE]
 >  Typem metryki dla `ExpressionEvaluator` nie jest zdefiniowany w dbgmetric.h, ponieważ zakłada się, że wszystkie zmiany metryki dla ewaluatorów wyrażeń zostanie wysłany za pomocą funkcji metryki ewaluatora wyrażenia odpowiednie (układ `ExpressionEvaluator` podklucz jest nieco skomplikowane, więc szczegóły są ukryte wewnątrz dbgmetric.lib).  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid aparatu debugowania]*|Identyfikator GUID aparat debugowania, który działa ta ewaluatora wyrażenia z|  
   
 ### <a name="expression-evaluator-extensions"></a>Rozszerzenia ewaluatora wyrażenia  
- Poniżej znajduje się organizacja metryki rozszerzenia ewaluatora wyrażenia w rejestrze. `EEExtensions`jest nazwa typu metryki dla wyrażenia rozszerzeń ewaluatora i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki rozszerzenia ewaluatora wyrażenia w rejestrze. `EEExtensions` jest nazwa typu metryki dla wyrażenia rozszerzeń ewaluatora i odpowiada *[typ metryki]*.  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[identyfikator guid rozszerzenia]*|Identyfikator GUID rozszerzenia ewaluatora wyrażenia|  
   
 ### <a name="exceptions"></a>Wyjątki  
- Poniżej znajduje się organizacja metryki wyjątków w rejestrze. `Exception`jest nazwa typu metryki dla wyjątków i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki wyjątków w rejestrze. `Exception` jest nazwa typu metryki dla wyjątków i odpowiada *[typ metryki]*.  
   
  `Exception`\  
   

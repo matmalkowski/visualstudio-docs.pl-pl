@@ -1,12 +1,10 @@
 ---
-title: "Informacje o parametrach w Service1 języka starszych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Informacje o parametrach w Service1 języka starszych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starsza wersja usługi języka
 Etykietka narzędzia informacje o parametrach IntelliSense zapewnia użytkownikom wskazówek, o których są one w konstrukcji języka.  
@@ -40,7 +38,7 @@ Etykietka narzędzia informacje o parametrach IntelliSense zapewnia użytkowniko
   
  Informacje o parametrach etykietki narzędzi są inicjowane przez usługę języka za pomocą polecenia zatrzymania. Przechwycenia znaków użytkownika, musi implementować obiekt usługi języka <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs, a następnie przekaż widoku tekstu wskaźnik do Twojej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementacji, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metody w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu. Filtr polecenia przechwytuje poleceń, które można wpisać w oknie kodu. Monitorowanie informacji o poleceniu wiedzieć, kiedy należy wyświetlić informacje o parametrach dla użytkownika. Ten sam filtr polecenie służy do uzupełniania instrukcji, znaczniki błędów i tak dalej.  
   
- Po wpisaniu słowem kluczowym, dla którego usługa języka zapewniają wskazówki dotyczące usługi języka utworzy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> obiektu i wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu powiadomiono IDE, aby wyświetlić wskazówki. Utwórz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> przy użyciu `VSLocalCreateInstance` i określając klasy coclass `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`jest funkcją zdefiniowaną w vsdoc.h pliku nagłówka, który wywołuje `QueryService` lokalnego rejestru i wywołania `CreateInstance` w tym obiekcie dla `CLSID_VsMethodTipWindow`.  
+ Po wpisaniu słowem kluczowym, dla którego usługa języka zapewniają wskazówki dotyczące usługi języka utworzy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> obiektu i wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metoda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu powiadomiono IDE, aby wyświetlić wskazówki. Utwórz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> przy użyciu `VSLocalCreateInstance` i określając klasy coclass `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` jest funkcją zdefiniowaną w vsdoc.h pliku nagłówka, który wywołuje `QueryService` lokalnego rejestru i wywołania `CreateInstance` w tym obiekcie dla `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Udostępnia wskazówkę — metoda  
  Zapewnienie Porada metody należy wywołać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metody w <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfejsu, przekazanie jej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfejsu.  

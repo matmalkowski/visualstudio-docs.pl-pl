@@ -1,26 +1,24 @@
 ---
-title: "Okno dialogowe Opcje środowiska | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Okno dialogowe Opcje środowiska | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
 ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 567d1c8248ff00a1387ccd1c40a8c8c658b551ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8ca71a3dd2daa3af52969c74333d9d81ef17b016
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 Można użyć strony **środowiska** folderu w **opcje** okno dialogowe, aby ustawić jak niektóre elementy zintegrowane środowisko programistyczne (IDE) Wyświetl i zachowania. Dostępne stron środowiska, z menu, wybierając **narzędzia**, **opcje**, a następnie wybierając **środowiska**.  

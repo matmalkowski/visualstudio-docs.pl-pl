@@ -1,12 +1,10 @@
 ---
 title: Opcje i opcje strony | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>Opcje i opcje strony
 Kliknięcie przycisku **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialogowe. Opcje w oknie dialogowym zbiorowo są określane jako strony opcji. Drzewie w okienku nawigacji zawiera opcje kategorie, a każda kategoria ma opcje strony. Po wybraniu stroną jego opcje są wyświetlane w okienku po prawej stronie. Te strony umożliwiają Zmień wartości opcji, które określają stan pakiet VSPackage.  
@@ -56,11 +54,11 @@ Kliknięcie przycisku **opcje** na **narzędzia** zostanie otwarte menu **opcje*
 ## <a name="option-attributes-and-layout"></a>Opcja atrybuty i układu  
  Interfejs użytkownika (UI), które ta strona zawiera określa wygląd opcje na stronie Opcje niestandardowe. Układ, etykietowania i opis opcji na stronie opcji ogólnych są określane przez następujące atrybuty:  
   
--   <xref:System.ComponentModel.CategoryAttribute>Określa kategorię opcji.  
+-   <xref:System.ComponentModel.CategoryAttribute> Określa kategorię opcji.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>Określa nazwę wyświetlaną opcji.  
+-   <xref:System.ComponentModel.DisplayNameAttribute> Określa nazwę wyświetlaną opcji.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>Określa opis opcji.  
+-   <xref:System.ComponentModel.DescriptionAttribute> Określa opis opcji.  
   
     > [!NOTE]
     >  Odpowiednik atrybutów, SRCategory LocDisplayName i SRDescription, użyj zasoby ciągów dla lokalizacji i są zdefiniowane w [próbki zarządzanego projektu](http://go.microsoft.com/fwlink/?LinkId=122774).  

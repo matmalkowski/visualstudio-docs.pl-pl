@@ -1,31 +1,29 @@
 ---
-title: "Previewimage — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Previewimage — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 56cef17add36ae1310b94421bfcf8a31951e00be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage — Element (szablony Visual Studio)
 Określa obrazek podglądu, jako nazwę pliku dla obrazu podglądu, która będzie wyświetlana w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateData >  
  \<Previewimage — >  
   
@@ -56,7 +54,7 @@ Określa obrazek podglądu, jako nazwę pliku dla obrazu podglądu, która będz
  Tekst musi być ciągiem, który reprezentuje nazwę pliku.  
   
 ## <a name="remarks"></a>Uwagi  
- `PreviewImage`to opcjonalny element.  
+ `PreviewImage` to opcjonalny element.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

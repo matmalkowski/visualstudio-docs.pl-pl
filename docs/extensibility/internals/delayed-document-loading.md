@@ -1,23 +1,21 @@
 ---
-title: "Opóźnione ładowanie dokumentu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Opóźnione ładowanie dokumentu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc10d7807633433b38fa8587d41c2ac3c0273ebe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delayed-document-loading"></a>Opóźnione ładowanie dokumentu
 Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojarzone dokumenty nie są ładowane bezpośrednio. Ramki okna dokumentu jest tworzony w stanie oczekiwania inicjowania i dokument symbolu zastępczego (o nazwie ramki stub) znajduje się w tabeli systemem dokumentu (Normalizacją).  
@@ -49,9 +47,9 @@ Gdy użytkownik ponownie otwiera rozwiązanie Visual Studio, większość skojar
   
  Ładowanie dokumentu niepotrzebnych można uniknąć, wywołując jedną z następujących metod, aby uzyskać odpowiednie właściwości: Aby uzyskać inne właściwości.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>., Ta metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> obiekt, który zawiera wartość dla <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Jeśli dokument nie została jeszcze zainicjowana.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Ta metoda zwraca <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> obiekt, który zawiera wartość dla <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> Jeśli dokument nie została jeszcze zainicjowana.  
   
  Można dowiedzieć się, gdy dokument został załadowany przez subskrybowanie zdarzeń Normalizacją, które jest wywoływane, gdy dokument jest w pełni zainicjowany. Dostępne są dwie możliwości:  
   

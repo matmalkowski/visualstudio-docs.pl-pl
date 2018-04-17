@@ -1,23 +1,21 @@
 ---
-title: "Wskazówki: Tworzenie SDK przy użyciu języka JavaScript | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie SDK przy użyciu języka JavaScript | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Wskazówki: Tworzenie SDK przy użyciu języka JavaScript
 Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visual Studio rozszerzenia (VSIX) przy użyciu języka JavaScript.  Instruktaż jest podzielona na następujące elementy:  
@@ -31,7 +29,7 @@ Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visua
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby użyć tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a>Aby utworzyć projekt zestawu SDK rozszerzenia SimpleMathVSIX  
+##  <a name="createSimpleMathVSIX"></a> Aby utworzyć projekt zestawu SDK rozszerzenia SimpleMathVSIX  
   
 1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
   
@@ -142,7 +140,7 @@ Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visua
   
 21. Uruchom ponownie program Visual Studio.  
   
-##  <a name="createSampleApp"></a>Do tworzenia przykładowej aplikacji, która korzysta z zestawu SDK  
+##  <a name="createSampleApp"></a> Do tworzenia przykładowej aplikacji, która korzysta z zestawu SDK  
   
 1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
   
@@ -315,7 +313,7 @@ Ten przewodnik zawiera wskazówki Tworzenie prostego matematyczne SDK jako Visua
   
 11. Wybierz klawisz F5, aby skompilować i uruchomić aplikację.  
   
-12. W aplikacji interfejsu użytkownika, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz  **=**  przycisku. Zostanie wyświetlone prawidłowego wyniku.  
+12. W aplikacji interfejsu użytkownika, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz **=** przycisku. Zostanie wyświetlone prawidłowego wyniku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

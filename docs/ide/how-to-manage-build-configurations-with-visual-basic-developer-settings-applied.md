@@ -1,12 +1,10 @@
 ---
-title: "Porady: Zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, building with Visual Basic settings
 - MSBuild, debug build
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b3f207a44aa195466cb19eef1ab13394202e5bd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Porady: zarządzanie konfiguracjami kompilacji z zastosowaniem ustawień dewelopera Visual Basic
 Domyślnie wszystkie opcje konfiguracji zaawansowanej kompilacji są ukryte z [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zastosowaniem ustawień dewelopera. W tym temacie wyjaśniono, jak ręcznie włączyć te ustawienia.  

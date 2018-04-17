@@ -1,26 +1,24 @@
 ---
 title: Flagi wiersza polecenia kompilatora VSCT | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6e2e1045adb451c7f4dd06b888fca356d26b7ff3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flagi wiersza polecenia kompilatora VSCT
 Kompilator Visual Studio polecenia tabeli (VSCT) zawiera przełączniki wiersza polecenia w celu zapewnienia pomyślnej kompilacji vsct plików.  
@@ -63,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Określ wszelkie dodatkowe zdefiniowanych symboli.|  
 |-I|Wskazują, że dodatkowy obejmują ścieżek, które powinny być używane podczas rozpoznawania odwołań do pliku.|  
 |-L|Określ <xref:System.Globalization.CultureInfo> nazwa kultury, na przykład "en US".|  
-|-E|Emituj obiektów C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C &#124; P &#124; N]:*filename*gdzie C = C#, H = nagłówka C++, N przestrzeń nazw =. Przestrzeń nazw jest wymagany dla języka C#.|  
+|-E|Emituj obiektów C# w określonej przestrzeni nazw dla elementów polecenia, a następnie [C&#124;H&#124;N]:*filename*gdzie C = C#, H = nagłówka C++, N przestrzeń nazw =. Przestrzeń nazw jest wymagany dla języka C#.|  
 |-v|Pełne dane wyjściowe.|  
   
  Przełącznika -L instruuje kompilator, aby wybrać grupę ciągów w celu utworzenia pliku binarnego .cto, który odpowiada danym <xref:System.Globalization.CultureInfo> nazwa kultury. Określona nazwa kultury powinna być zgodna atrybut Language co najmniej jednego [Element ciągów](../../extensibility/strings-element.md) w pliku vsct. Jeśli element ciągów nie ma języka atrybutu, został on odziedziczony po zawierający [CommandTable elementu](../../extensibility/commandtable-element.md).  

@@ -1,30 +1,26 @@
 ---
-title: "Projectitem — Element (szablony elementów Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Projectitem — Element (szablony elementów Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe9abece45efdc206e775bc8f5e79666e334001
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 886fc57258b4ccafaa4ab8d522fad632de455e17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem Element (szablony elementów Visual Studio)
 Określa plik, który znajduje się w szablonie elementu.  
@@ -32,7 +28,7 @@ Określa plik, który znajduje się w szablonie elementu.
 > [!NOTE]
 >  `ProjectItem` Element akceptuje różnych atrybutów w zależności od tego, czy szablon jest dla projektu lub elementu. W tym temacie opisano `ProjectItem` elementu dla elementu. Aby uzyskać informacje o `ProjectItem` element szablonów projektu, zobacz [projectitem — Element (Visual Studio projektu szablony)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent >  
  \<ProjectItem >  
   
@@ -77,7 +73,7 @@ Określa plik, który znajduje się w szablonie elementu.
  A `string` reprezentujący nazwę pliku w pliku zip szablonu.  
   
 ## <a name="remarks"></a>Uwagi  
- `ProjectItem`jest opcjonalne podrzędnym `TemplateContent`.  
+ `ProjectItem` jest opcjonalne podrzędnym `TemplateContent`.  
   
  `TargetFileName` Atrybut może służyć do zmiany nazwy plików z parametrami. Na przykład jeśli plik `MyFile.vb` istnieje w katalogu głównym pliku zip szablonu, ale ma nazwę pliku na podstawie nazwy pliku podanego przez użytkownika w **Dodaj nowy element** okno dialogowe, należy użyć następującego kodu XML:  
   

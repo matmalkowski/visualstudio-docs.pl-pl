@@ -1,28 +1,24 @@
 ---
 title: 'Porady: Tworzenie typu Zerowalnego (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cd01d0fd62e37ddca915caf367777b62a0aa6246
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Porady: tworzenie typu zerowalnego (Projektant klas)
 Niektórych typów wartości nie zawsze mieć lub muszą zdefiniowanej wartości. Jest typowym rozwiązaniem w przypadku baz danych, gdy niektóre pola nie można przypisać wartości. Na przykład można przypisać wartości null na wskazują, że jej nie został jeszcze przypisany wartość pole bazy danych.  
@@ -31,9 +27,9 @@ A *typ dopuszczający wartość null* jest typem wartości, które można rozsze
   
 Typy dopuszczające wartości null są wystąpieniami klasy <xref:System.Nullable%601> struktury. Każde wystąpienie typu dopuszczającego wartości null ma dwa publicznej właściwości tylko do odczytu, `HasValue` i `Value`:  
   
--   `HasValue`Typ jest `bool` i wskazuje, czy zmienna zawiera zdefiniowanej wartości. `True`oznacza, że zmienna zawiera wartość inną niż null. Możesz przetestować zdefiniowanych wartości przy użyciu instrukcji, takich jak `if (x.HasValue)` lub `if (y != null)`.  
+-   `HasValue` Typ jest `bool` i wskazuje, czy zmienna zawiera zdefiniowanej wartości. `True` oznacza, że zmienna zawiera wartość inną niż null. Możesz przetestować zdefiniowanych wartości przy użyciu instrukcji, takich jak `if (x.HasValue)` lub `if (y != null)`.  
   
--   `Value`jest tego samego typu jako typu bazowego. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, podczas uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku Nieprawidłowa operacja.  
+-   `Value` jest tego samego typu jako typu bazowego. Jeśli `HasValue` jest `True`, `Value` zawiera odpowiednią wartość. Jeśli `HasValue` jest `False`, podczas uzyskiwania dostępu do `Value` spowoduje zgłoszenie wyjątku Nieprawidłowa operacja.  
   
 Domyślnie w deklaracji zmiennej jako wartości null typu go nie ma zdefiniowanej wartości (`HasValue` jest `False`), inne niż domyślna wartość jego typem podstawowym wartość.  
   

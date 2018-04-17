@@ -1,29 +1,25 @@
 ---
 title: IDebugModule2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugModule2
 helpviewer_keywords:
 - IDebugModule2 interface
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ffa4044e6490f8de8228541787b7bf8ab80285a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac5c39ed386763689d504eda7a85e6a77fab4db3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Ten interfejs reprezentuje moduł — to znaczy jednostki pliku wykonywalnego programu — takich jak biblioteki DLL.  
@@ -50,7 +46,7 @@ IDebugModule2 : IUnknown
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Pobiera [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) opisujący ten moduł.|  
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|PRZESTARZAŁE. NIE UŻYWAJ. Ponownie ładuje symbole dla tego modułu.|  
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLETE. NIE UŻYWAJ. Ponownie ładuje symbole dla tego modułu.|  
   
 ## <a name="remarks"></a>Uwagi  
  Informacje o module mogą być wyświetlane w **modułów** okno środowiska IDE.  
@@ -60,7 +56,7 @@ IDebugModule2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -1,32 +1,30 @@
 ---
-title: "Implementowanie kolorowanie składni | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Implementowanie kolorowanie składni | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowanie składni
-Kiedy usługa języka udostępnia kolorowanie składni, analizator konwertuje wiersza tekstu na tablicę elementów colorable i zwraca odpowiadający te elementy colorable typy tokenów. Analizator powinien zwrócić token typy, które należą do listy elementów colorable. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Wyświetla każdy element colorable w oknie Kod zgodnie z atrybutów przypisane przez obiekt colorizer do odpowiedniego typu tokenu.  
+Kiedy usługa języka udostępnia kolorowanie składni, analizator konwertuje wiersza tekstu na tablicę elementów colorable i zwraca odpowiadający te elementy colorable typy tokenów. Analizator powinien zwrócić token typy, które należą do listy elementów colorable. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Wyświetla każdy element colorable w oknie Kod zgodnie z atrybutów przypisane przez obiekt colorizer do odpowiedniego typu tokenu.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]nie określono interfejsu analizatora, oraz implementacji analizator całkowicie od użytkownika. Jednak domyślna implementacja analizatora składni znajduje się w projekcie pakiet językowy programu Visual Studio. Dla zarządzanego kodu zarządzanego pakietu framework (MPF) zapewnia obsługę pełną Kolorowanie tekstu.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie określono interfejsu analizatora, oraz implementacji analizator całkowicie od użytkownika. Jednak domyślna implementacja analizatora składni znajduje się w projekcie pakiet językowy programu Visual Studio. Dla zarządzanego kodu zarządzanego pakietu framework (MPF) zapewnia obsługę pełną Kolorowanie tekstu.  
   
  Usługi w starszej wersji języka są zaimplementowane jako część pakiet VSPackage, ale jest nowsza sposób implementowania funkcji usługi języka Aby korzystać z rozszerzeń MEF. Aby dowiedzieć się więcej na temat nowych sposób implementowania kolorowania składni, zobacz [wskazówki: wyróżnianie tekstu](../../extensibility/walkthrough-highlighting-text.md).  
   

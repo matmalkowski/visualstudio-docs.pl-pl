@@ -1,12 +1,10 @@
 ---
-title: "Tworzenie szablonów sieci Web dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie szablonów sieci Web dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -14,12 +12,12 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f94823131e568b3f1f254ead9d760210a4c9c1e0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: dca5d5439b18fdb377dfe530af81331dd6e5c3fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>Porady: ręczne tworzenie szablonów sieci Web
 

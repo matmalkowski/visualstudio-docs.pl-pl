@@ -1,21 +1,19 @@
 ---
 title: Funkcje generacji w programie Visual Studio Code | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/11/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 83b222d0c6318b1664b28e3c0259c2ff6de9b00e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funkcje generowania kodu w programie Visual Studio
 
@@ -30,7 +28,7 @@ Istnieje wiele sposobów, które Visual Studio może pomóc Generowanie napraw i
 > [!NOTE]
 > Każda usługa języka w programie Visual Studio udostępnia własny kod możliwości generowania, niektóre funkcje są dostępne tylko w języku C#, a niektóre są dostępne w języku C# i Visual Basic.
 
-## <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz także
 
 [Fragmenty kodu](../ide/code-snippets.md)  
 [Szybkie akcje](../ide/quick-actions.md)  

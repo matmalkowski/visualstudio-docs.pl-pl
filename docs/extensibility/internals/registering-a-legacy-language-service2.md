@@ -1,27 +1,25 @@
 ---
-title: "Rejestrowanie klienta2 języka starszych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rejestrowanie klienta2 języka starszych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Zarejestrowanie starsza wersja usługi języka
 Poniższe sekcje zawierają listę wpisy rejestru dla różnych języków usługi opcje dostępne w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ Poniższe sekcje zawierają listę wpisy rejestru dla różnych języków usług
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|*\<IDENTYFIKATOR GUID >*|Identyfikator GUID usługi języka.|  
+|(Domyślnie)|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID usługi języka.|  
 |LangResID|REG_DWORD|0x0 0xffff|Ciąg identyfikatora zasobów (ResID) dla nazwy zlokalizowany tekst języka.|  
-|Package|REG_SZ|*\<IDENTYFIKATOR GUID >*|Identyfikator GUID pakietu VSPackage.|  
+|Package|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID pakietu VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Określa, czy **uzupełniania** opcje w **opcje** okno dialogowe są włączone.|  
 |ShowSmartIndent|REG_DWORD|0-1|Określa, czy wybrać opcję **inteligentne** wcięcia w **opcje** okno dialogowe jest włączona.|  
 |RequestStockColors|REG_DWORD|0-1|Określa, czy niestandardowego lub domyślnego kolory Kolor słów kluczowych.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nazwa na karcie przybornika, aby ustawić domyślną, gdy edytora jest aktywny.|  
 |Nazwa wyświetlana|REG_SZ|resID|Nazwa do wyświetlenia w **Otwórz za pomocą** okno dialogowe. Nazwa jest identyfikator zasobu ciągu lub nazwę w standardowym formacie.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Używany do **Otwórz za pomocą** polecenia menu. Jeśli nie chcesz listy domyślny edytor tekstu na liście dostępnych edytory dla określonego typu pliku, ta wartość 1.|  
-|LinkedEditorGUID|REG_SZ|*\<IDENTYFIKATOR GUID >*|Używane dla żadnej usługi języka, który można otworzyć pliku z obsługą stronę kodową. Na przykład po otwarciu pliku txt przy użyciu **Otwórz za pomocą** polecenia i opcje są dostępne za pomocą edytora kodu źródłowego z lub bez kodowania.<br /><br /> GUID określony nazwach podklucz jest strona kodowa fabryki edytora; połączony identyfikator GUID określony w ten wpis rejestru jest fabryki edytora regularne. Celem tego wpisu jest, że IDE nie można otworzyć pliku przy użyciu domyślnego edytora, IDE będzie próbować użyć edytora dalej na liście. Ten edytor dalej nie powinien być fabryki edytora stronę kodową, ponieważ tej fabryki edytora jest zasadniczo taki sam, jak fabryki edytora, które zakończyły się niepowodzeniem.|  
-|Package|REG_SZ|*\<IDENTYFIKATOR GUID >*|Identyfikator GUID pakietu VSPackage ResID nazwę wyświetlaną.|  
+|LinkedEditorGUID|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Używane dla żadnej usługi języka, który można otworzyć pliku z obsługą stronę kodową. Na przykład po otwarciu pliku txt przy użyciu **Otwórz za pomocą** polecenia i opcje są dostępne za pomocą edytora kodu źródłowego z lub bez kodowania.<br /><br /> GUID określony nazwach podklucz jest strona kodowa fabryki edytora; połączony identyfikator GUID określony w ten wpis rejestru jest fabryki edytora regularne. Celem tego wpisu jest, że IDE nie można otworzyć pliku przy użyciu domyślnego edytora, IDE będzie próbować użyć edytora dalej na liście. Ten edytor dalej nie powinien być fabryki edytora stronę kodową, ponieważ tej fabryki edytora jest zasadniczo taki sam, jak fabryki edytora, które zakończyły się niepowodzeniem.|  
+|Package|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID pakietu VSPackage ResID nazwę wyświetlaną.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
 |(Domyślnie)|REG_SZ||Nieużywane.|  
-|*\<IDENTYFIKATOR GUID >*|REG_SZ|""|Klucz do logicznych widoków obsługiwane. Może mieć jako wiele z tych zgodnie z potrzebami. Nazwa wpisu rejestru to, co jest ważne, nie wartość, która jest zawsze ciągiem pustym.|  
+|*\<IDENTYFIKATOR GUID &GT;*|REG_SZ|""|Klucz do logicznych widoków obsługiwane. Może mieć jako wiele z tych zgodnie z potrzebami. Nazwa wpisu rejestru to, co jest ważne, nie wartość, która jest zawsze ciągiem pustym.|  
   
 ### <a name="example"></a>Przykład  
   

@@ -1,12 +1,10 @@
 ---
 title: Projekty | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - custom tools [Visual Studio SDK]
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b2ca4edabcee9f561dea51ea4b579ce194d13fa8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projects"></a>Projekty
 W programie Visual Studio, projekty są kontenerami, które deweloperzy korzystać w celu uporządkowania plików kodu źródłowego i innych zasobów, które są widoczne w **Eksploratora rozwiązań**. Projekty są zazwyczaj pliki (na przykład pliku .csproj, które projektu C#), które przechowują odwołania do plików kodu źródłowego i zasobów, takich jak pliki map bitowych. Projekty umożliwiają organizowanie, tworzenia, debugowania i wdrażania kodu źródłowego, odwołuje się do usług sieci Web i baz danych i innych zasobów. VSPackages mogą rozszerzać system projektu programu Visual Studio przede wszystkim na trzy sposoby: *typy projektów*, *projektu podtypów*, i *narzędzi niestandardowych*.  

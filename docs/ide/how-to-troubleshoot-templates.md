@@ -1,22 +1,19 @@
 ---
-title: "Rozwiązywanie problemów z szablonu projektu programu Visual Studio i szablon elementu ładowania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązywanie problemów z szablonu projektu programu Visual Studio i szablon elementu ładowania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.openlocfilehash: 7e97185c6c494bc031d526915b547a5fd0fcd24d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Porady: Rozwiązywanie problemów z szablonami
 

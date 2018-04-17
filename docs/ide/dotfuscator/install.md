@@ -2,9 +2,10 @@
 title: Zainstaluj Dotfuscator Community Edition (CE) | Dokumentacja firmy Microsoft
 ms.date: 2017-06-22
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, Wywłaszczaniem, cenią sobie wcześniejsze rozwiązania w zakresie ochrony cenią sobie wcześniejsze, ochrona, community edition, Zaciemnienie, .NET wolny, Visual Studio 2017 r, zainstaluj"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, Wywłaszczaniem, cenią sobie wcześniejsze rozwiązania w zakresie ochrony cenią sobie wcześniejsze, ochrona, community edition, Zaciemnienie, .NET wolny, Visual Studio 2017 r, zainstaluj
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - install Dotfuscator
 - installing Dotfuscator
 - set up Dotfuscator
-description: "Dowiedz się, jak zainstalować bezpłatna wersja Community Dotfuscator uwzględnione w programie Visual Studio 2017 r."
+description: Dowiedz się, jak zainstalować bezpłatna wersja Community Dotfuscator uwzględnione w programie Visual Studio 2017 r.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 6e3151a7ce26fcc998df7fbce1cefda54249a384
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 871ec8c98bac4477ef95c85688484011027e2d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Zainstaluj Dotfuscator Community Edition (CE)
 
@@ -35,7 +36,7 @@ Jednak jest łatwo zainstalować Dotfuscator CE, nawet jeśli jest już zainstal
 
 > [!NOTE]
 > Oprócz wersji CE Dotfuscator zostały wydane z wersjami programu Visual Studio rozwiązania cenią sobie wcześniejsze okresowo zawiera zaktualizowane wersje w swojej witrynie sieci Web.
-> Jeśli chcesz pobrać **najnowszej wersji** bezpośrednio, zamiast instalować ją z programu Visual Studio,  **[kliknij tutaj, aby przejść do strony pobierania Dotfuscator] [ download]** .
+> Jeśli chcesz pobrać **najnowszej wersji** bezpośrednio, zamiast instalować ją z programu Visual Studio, **[kliknij tutaj, aby przejść do strony pobierania Dotfuscator] [ download]**.
 
 ## <a name="within-visual-studio"></a>W programie Visual Studio
 

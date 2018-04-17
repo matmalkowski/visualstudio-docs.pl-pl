@@ -1,29 +1,25 @@
 ---
 title: Funkcja SccAddFromScc | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce2d9d179fd46bcc63340c911437486e1a459195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfromscc-function"></a>Funkcja SccAddFromScc
 Ta funkcja umożliwia użytkownikowi przeglądanie w poszukiwaniu plików, które znajdują się już w systemie kontroli źródła i następnie wprowadzić te pliki częścią bieżącego projektu. Na przykład tej funkcji można uzyskać typowe pliku nagłówka w bieżącym projekcie bez kopiowania pliku. Zwracany tablica plików, `lplpFileNames`, zawiera listę plików, które użytkownik chce dodać do projektu IDE.  
@@ -66,9 +62,9 @@ SCCRTN SccAddFromScc (
   
  Po wywołaniu `SccAddFromScc` funkcja zwraca, wtyczkę przypisał wartości do `lpnFiles` i `lplpFileNames`, przydziału pamięci dla tablicy nazwy pliku, w razie potrzeby (należy pamiętać, że ten przydział zastępuje wskaźnika w `lplpFileNames`). Wtyczka do kontroli źródła jest odpowiedzialny za umieszczenie wszystkich plików w katalogu użytkownika lub w folderze określonej nazwy. Następnie IDE dodaje pliki do projektu IDE.  
   
- Na koniec IDE wywołania tej funkcji po raz drugi, przekazując `NULL` dla `lpnFiles`. To jest interpretowana jako specjalne sygnału przez wtyczkę, aby zwolnić pamięć przydzielona dla tablicy nazwy pliku w kontroli źródła`lplpFileNames``.`  
+ Na koniec IDE wywołania tej funkcji po raz drugi, przekazując `NULL` dla `lpnFiles`. To jest interpretowana jako specjalne sygnału przez wtyczkę, aby zwolnić pamięć przydzielona dla tablicy nazwy pliku w kontroli źródła `lplpFileNames``.`  
   
- `lplpFileNames`jest `char ***` wskaźnika. Wtyczka do kontroli źródła umieszczenie wskaźnika do tablicy wskaźników do nazwy pliku, w związku z tym przekazywania na liście w standardowy sposób dla tego interfejsu API.  
+ `lplpFileNames` jest `char ***` wskaźnika. Wtyczka do kontroli źródła umieszczenie wskaźnika do tablicy wskaźników do nazwy pliku, w związku z tym przekazywania na liście w standardowy sposób dla tego interfejsu API.  
   
 > [!NOTE]
 >  Początkowej wersji interfejsu API VSSCI nie dostarczył sposób wskazywania projektem docelowym dla dodanymi plikami. Aby uwzględnić to semantykę `lplpFIleNames` parametru zostały rozszerzone, aby stał się parametr/out, a nie parametru wyjściowego. Jeśli tylko jeden plik jest określony, oznacza to, że wartość wskazywana przez `lpnFiles` = 1, a następnie pierwszy element `lplpFileNames` zawiera folder docelowy. Do używania tych nowych semantykę wywołań IDE `SccSetOption` działać z `nOption`ustawiono parametr `SCC_OPT_SHARESUBPROJ`. Jeśli wtyczka do kontroli źródła nie obsługuje semantykę, zwraca `SCC_E_OPTNOTSUPPORTED`. Podczas stosowania tak wyłącza **Dodaj z kontroli źródła** funkcji. Jeśli wtyczka obsługuje **Dodaj z kontroli źródła** funkcji (`SCC_CAP_ADDFROMSCC`), a następnie obsługuje nowe semantyki i musi zwracać `SCC_I_SHARESUBPROJOK`.  

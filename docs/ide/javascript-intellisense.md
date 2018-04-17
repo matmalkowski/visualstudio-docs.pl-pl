@@ -1,12 +1,10 @@
 ---
 title: IntelliSense dla JavaScript | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/28/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -26,24 +24,25 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c958958ca3b0621a4e348ebcbc4cffaf35d3cce9
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]udostępnia zaawansowane JavaScript edytowania dodatkowych zabiegów. Obsługiwane przez usługi języka TypeScript, na podstawie, Visual Studio oferuje bardziej zaawansowane funkcje IntelliSense, obsługę nowoczesnych funkcji JavaScript, i poprawę wydajności funkcji, takich jak Przejdź do definicji refaktoryzacji itd.
+[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] udostępnia zaawansowane JavaScript edytowania dodatkowych zabiegów. Obsługiwane przez usługi języka TypeScript, na podstawie, Visual Studio oferuje bardziej zaawansowane funkcje IntelliSense, obsługę nowoczesnych funkcji JavaScript, i poprawę wydajności funkcji, takich jak Przejdź do definicji refaktoryzacji itd.
 
 > [!NOTE]
 > Usługa języka JavaScript w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] używa nowy aparat do usługi języka (o nazwie "Salsa"). Szczegółowe informacje znajdują się w tym temacie i możesz również przeczytać ten tekst [wpis w blogu](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). Nowe środowisko edytowania dotyczy również przede wszystkim Visual Studio Code. Zobacz [docs kodzie VS](https://code.visualstudio.com/docs/languages/javascript) Aby uzyskać więcej informacji.
 
 Aby uzyskać więcej informacji na temat ogólne funkcje IntelliSense programu Visual Studio, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Nowości w usługa języka JavaScript w[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Nowości w usługa języka JavaScript w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Począwszy od [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense wyświetla znacznie więcej informacji na listach parametrem i element członkowski.
 To nowe informacje są udostępniane przez usługi języka TypeScript, która używa analizy statycznej w tle, aby lepiej zrozumieć kodu.
@@ -90,7 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a>IntelliSense w oparciu o JSDoc
+### <a name="JsDoc"></a> IntelliSense w oparciu o JSDoc
 
 Gdzie wnioskowanie o typie nie dostarcza informacji odpowiedniego typu (lub do obsługi dokumentacji), informacje o typie można podać jawnie za pomocą adnotacji JSDoc.  Na przykład aby dać częściowo zadeklarowane obiektu określonego typu, możesz użyć `@type` tagów, jak pokazano poniżej:
 
@@ -116,7 +115,7 @@ function Foo(param1) {
 
 Zobacz [tego dokumentu](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) dla adnotacji JsDoc obecnie obsługiwane.
 
-### <a name="TsDeclFiles"></a>IntelliSense oparte na plikach deklaracji TypeScript
+### <a name="TsDeclFiles"></a> IntelliSense oparte na plikach deklaracji TypeScript
 
 Ponieważ JavaScript i TypeScript, teraz są oparte na tej samej usługi języka, są one możliwość interakcji w sposób bardziej zaawansowane funkcje. Na przykład można podać JavaScript IntelliSense dla wartości zadeklarowany w `.d.ts` pliku ([więcej informacji o](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), i typach interfejsów i klasy zadeklarowany w maszynie są dostępne do użycia w komentarzy JsDoc jako typy. 
 
@@ -124,7 +123,7 @@ Poniżej zostanie przedstawiony prosty przykład pliku definicji TypeScript udos
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a>Automatyczne nabycie definicji typu
+### <a name="Auto"></a> Automatyczne nabycie definicji typu
 
 W świecie TypeScript najbardziej popularnych bibliotek JavaScript mają swoje interfejsy API opisanego przez `.d.ts` plików i najbardziej typowych repozytorium dla definicji takich znajduje się na [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 

@@ -3,8 +3,7 @@ title: Stałe środowiska IDE | Dokumentacja firmy Microsoft
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -14,17 +13,16 @@ helpviewer_keywords:
 - IDE, constants
 - physical views
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0184cd4654f07b407a12ca12f0ff9da39c9ec890
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: e9c7e870b02dbe5a903ca8195954ffd5a8f63549
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-constants"></a>Stałe środowiska IDE
 
@@ -66,7 +64,7 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Metoda zwraca tę wartość, jeśli dokument ma format, który nie może być otwarty w edytorze.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Wartość HRESULT, która wskazuje, że użytkownik przycisku Wstecz w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kreatora.|
 
-## <a name="visual-studio-constants"></a>Visual Studio Constants
+## <a name="visual-studio-constants"></a>Stałe programu Visual Studio
 
 |Wartość|Opis|
 |-----------|-----------------|
@@ -77,7 +75,7 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Stała, która jest specyficzna dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dla komunikatu powiadomienia za pośrednictwem emisji <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> metody wskazujący, że metryki paska poleceń zostały zmienione.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Stała, która jest specyficzna dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wskazujące, że plik cookie nie została ustawiona.|
 |[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identyfikator elementu, który reprezentuje braku elementu projektu. Ta wartość jest używana, gdy nie ma żadnego bieżącego zaznaczenia.|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identyfikator elementu, który reprezentuje element główny hierarchii projektu i służy do identyfikowania całej hierarchii, w przeciwieństwie do pojedynczego elementu.|
+|[VSITEMID. Główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identyfikator elementu, który reprezentuje element główny hierarchii projektu i służy do identyfikowania całej hierarchii, w przeciwieństwie do pojedynczego elementu.|
 |[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] identyfikator elementu, który reprezentuje aktualnie zaznaczony element lub elementy, które mogą obejmować głównym hierarchii.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents

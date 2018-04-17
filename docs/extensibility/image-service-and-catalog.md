@@ -1,22 +1,19 @@
 ---
-title: "Obraz usługi i wykaz | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obraz usługi i wykaz | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalogu
 Ta cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące przyjmująca Usługa obrazów w usłudze Visual Studio i katalogu obrazu wprowadzone w programie Visual Studio 2015.  
@@ -108,7 +105,7 @@ Ta cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące przyjmująca 
 |||  
 |-|-|  
 |**Podelement**|**Definicja**|  
-|Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifestu|  
+|{1&gt;Importuj&lt;1}|Importuje symbole dany plik manifestu do użycia w bieżącym manifestu|  
 |Identyfikator GUID|Symbol reprezentuje identyfikator GUID i muszą być zgodne, identyfikator GUID formatowania|  
 |ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
 |String|Symbol reprezentuje wartość dowolny ciąg|  
@@ -193,7 +190,7 @@ Ta cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące przyjmująca 
 |Typ|[Wymagane] Typ zasobu natywnego XAML lub PNG|  
 |ID|[Wymagane] Część Identyfikatora całkowitą zasobów natywnych|  
   
- **Listy obrazów**  
+ **ImageList**  
   
  \<ImageList > element definiuje kolekcją obrazów, które mogą być zwracane w jednej taśmy. Pasek jest oparty na żądanie, zgodnie z potrzebami.  
   
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Przykłady  
  Kilka przykładów programu Visual Studio w witrynie GitHub zostały zaktualizowane w usłudze pokazują, jak korzystać z usługi obrazu w ramach różnych punktów rozszerzalności programu Visual Studio.  
   
- Sprawdź [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) dla najnowszej próbki.  
+ Sprawdź [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) dla najnowszej próbki.  
   
 ### <a name="tooling"></a>Narzędzia  
  Zestaw narzędzi pomocy technicznej dla usługi obraz został utworzony ułatwiających tworzenie/Aktualizowanie interfejsu użytkownika, który współpracuje z usługą obrazu. Aby uzyskać więcej informacji o poszczególnych narzędzi dokumentacji dołączoną narzędzi. Narzędzia są dołączane jako część [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  
@@ -982,7 +979,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphExtensionMethodProtected||ExtensionMethod|  
         |GlyphExtensionMethodPrivate||ExtensionMethod|  
         |GlyphExtensionMethodShortcut||ExtensionMethod|  
-        |GlyphXmlAttribute||Element XmlAttribute|  
+        |GlyphXmlAttribute||XmlAttribute|  
         |GlyphXmlChild||Element XmlElement|  
         |GlyphXmlDescendant||XmlDescendant|  
         |GlyphXmlNamespace||XmlNamespace|  

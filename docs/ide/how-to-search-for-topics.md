@@ -1,23 +1,21 @@
 ---
-title: "Porady: wyszukiwanie tematów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: wyszukiwanie tematów | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e76a1e87da99d8504620ed2881dcc60b8ce99a57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-search-for-topics"></a>Porady: wyszukiwanie tematów
 Funkcja wyszukiwania pełnotekstowego zlokalizować wszystkie tematy zawierające określonego wyrazu. Można również dostosować i dostosować wyszukiwanie przy użyciu symboli wieloznacznych wyrażenia, operatorów logicznych i operatory wyszukiwania zaawansowanego.  
@@ -69,7 +67,7 @@ Algorytm wyszukiwania stosuje określone kryteria, aby ułatwić rangę wyniki w
   
 3.  Zawartość, która zawiera zwiększeniu słów wyszukiwania znajduje się wyżej niż zawartość, która ma gęstość niższe słów kluczowych.  
   
-### <a name="stopwords">Wyrazy ignorowane podczas wyszukiwania (wyrazy)</a>
+### <a name="stopwords"> Wyrazy ignorowane podczas wyszukiwania (wyrazy) </a>
 Najczęściej występujące słowa lub numery, które są nazywane wyrazy, automatycznie są ignorowane podczas wyszukiwania pełnotekstowego. Na przykład jeśli możesz wyszukać frazę "przekazywania" wyniki wyszukiwania wyświetli tematy zawierające słowo "przebiegu" ale nie "do".  
   
 ## <a name="see-also"></a>Zobacz także

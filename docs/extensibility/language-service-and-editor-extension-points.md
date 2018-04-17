@@ -2,26 +2,22 @@
 title: Usługa języka i punkty rozszerzenia Edytora | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>Usługa języka i punkty rozszerzenia Edytora
 Edytor umożliwia punktów rozszerzenia, które można rozszerzyć jako części Managed Extensibility Framework (MEF), w tym większości funkcji usługi języka. Są to kategorie punktu rozszerzenia główne:  
@@ -47,9 +43,9 @@ Edytor umożliwia punktów rozszerzenia, które można rozszerzyć jako części
 ## <a name="extending-content-types"></a>Rozwijanie typów zawartości  
  Typy zawartości są definicje typów tekstu obsługiwane przez edytor, na przykład, "text", "kod" lub "CSharp". Zdefiniuj nowy typ zawartości przez deklarowanie zmiennej typu <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> podając unikatową nazwę nowego typu zawartości. Aby zarejestrować typ zawartości w edytorze, należy go wyeksportować wraz z następującymi atrybutami:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>jest nazwa typu zawartości.  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> jest nazwa typu zawartości.  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>jest nazwa typu zawartości, z którego pochodzi ten typ zawartości. Typ zawartości może dziedziczyć po wielu innych typów zawartości.  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> jest nazwa typu zawartości, z którego pochodzi ten typ zawartości. Typ zawartości może dziedziczyć po wielu innych typów zawartości.  
   
  Ponieważ <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> klasy jest zapieczętowany, możesz wyeksportować go z ma parametru typu.  
   
@@ -298,7 +294,7 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: powoduje formatu, które mają być widoczne w Interfejsie użytkownika  
   
- W Konstruktorze można zdefiniować nazwę wyświetlaną i wyglądu znacznika. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>Określa kolor wypełnienia i <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> Określa kolor obramowania. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> Jest nazwą Lokalizowalny Definicja formatu.  
+ W Konstruktorze można zdefiniować nazwę wyświetlaną i wyglądu znacznika. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> Określa kolor wypełnienia i <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> Określa kolor obramowania. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> Jest nazwą Lokalizowalny Definicja formatu.  
   
  Oto przykład definicji formatu:  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: rodzaj zawartości (na przykład "text" lub "code"), dla którego ozdób jest prawidłowy.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: rodzaj widoku tekstu, dla którego ten ozdób jest prawidłowy. Klasa <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> ma ustawioną tekstu wstępnie zdefiniowanego widoku ról. Na przykład <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> jest używany głównie dla tekstu widoki plików. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>Służy do widoków tekstu, czy użytkownik może edytować lub przejść za pomocą myszy i klawiatury. Przykłady <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> widoki są widoku edytora tekstu i **dane wyjściowe** okna.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: rodzaj widoku tekstu, dla którego ten ozdób jest prawidłowy. Klasa <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> ma ustawioną tekstu wstępnie zdefiniowanego widoku ról. Na przykład <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> jest używany głównie dla tekstu widoki plików. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> Służy do widoków tekstu, czy użytkownik może edytować lub przejść za pomocą myszy i klawiatury. Przykłady <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> widoki są widoku edytora tekstu i **dane wyjściowe** okna.  
   
  W poniższym przykładzie przedstawiono atrybuty eksportu dla dostawcy ozdób.  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: rodzaj zawartości (na przykład "text" lub "code"), dla którego ozdób użytkownika jest prawidłowy.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: rodzaj widoku tekstu, dla których ten tag lub ozdób są prawidłowe. Klasa <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> ma ustawioną tekstu wstępnie zdefiniowanego widoku ról. Na przykład <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> jest używany głównie dla tekstu widoki plików. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>Służy do widoków tekstu, czy użytkownik może edytować lub przejść za pomocą myszy i klawiatury. Przykłady <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> widoki są widoku edytora tekstu i **dane wyjściowe** okna.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: rodzaj widoku tekstu, dla których ten tag lub ozdób są prawidłowe. Klasa <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> ma ustawioną tekstu wstępnie zdefiniowanego widoku ról. Na przykład <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> jest używany głównie dla tekstu widoki plików. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> Służy do widoków tekstu, czy użytkownik może edytować lub przejść za pomocą myszy i klawiatury. Przykłady <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> widoki są widoku edytora tekstu i **dane wyjściowe** okna.  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: rodzaj tagu lub ozdób zdefiniowanej przez użytkownika. Należy dodać drugi <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> dla <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>przestarzała uzyskać <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> przestarzała uzyskać <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Ponadto należy zaimplementować dostawcę tego samego typu:  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>przestarzała uzyskać <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> przestarzała uzyskać <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Należy wyeksportować dostawcy wraz z następującymi atrybutami:  
   

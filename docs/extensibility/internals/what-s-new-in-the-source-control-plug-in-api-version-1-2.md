@@ -1,28 +1,26 @@
 ---
-title: "Jaki &#39; s Nowość w źródle kontrolować wtyczka interfejsu API w wersji 1.2 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Co&#39;s Nowość w źródle kontrolować wtyczka interfejsu API w wersji 1.2 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7f9272f034e8f8679fe832ecd628e64ab64af515
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 409c862244b47970629ab57c6417dfc7f3b10a1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Jaki &#39; s nowe w źródła formantu wtyczka interfejsu API wersji 1.2
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Co&#39;s Nowość w źródle kontrolować wtyczka interfejsu API w wersji 1.2
 W tej sekcji przedstawiono funkcje zaawansowane źródła kodu kontroli w interfejsie API dodatku typu Plug-in kontroli źródła w wersji 1.2. Poniższa lista zawiera nowe funkcje w wersji 1.2:  
   
 ## <a name="changes"></a>Zmiany  

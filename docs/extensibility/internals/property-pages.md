@@ -1,27 +1,25 @@
 ---
-title: "Strony właściwości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Strony właściwości | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>Strony właściwości
 Użytkownicy mogą wyświetlać i zmieniać właściwości zależne od konfiguracji i - niezależne projektu za pomocą stron właściwości. A **strony właściwości** przycisk jest aktywny w **właściwości** oknie lub na pasku narzędzi Eksplorator rozwiązań dla obiektów, które dostarczają widoku strony właściwości zaznaczonego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla projektów i rozwiązań. Jednak może również być udostępniane dla elementów projektu, które należy użyć właściwości zależne od konfiguracji. Ta funkcja może być używany, gdy pliki w projekcie wymagają ustawienia przełącznika kompilatora różnych kompilować się właściwie.  
@@ -50,7 +48,7 @@ Okno dialogowe strony właściwości projektu z pola struktury formatu i drzewa
   
  Każda kategoria wyświetlane w obszarze kategorią najwyższego poziomu reprezentuje strony oddzielne właściwości. Kategorii i podkategorii wpisy dostępne w oknie dialogowym są określane przez implementacji `ISpecifyPropertyPages` i `IVsPropertyPage`.  
   
- `IDispatch`obiekty dla elementów w kontenerze zaznaczenia, których właściwości, który będzie wyświetlany na wdrożenie stron właściwości `ISpecifyPropertyPages` wyliczyć listy identyfikatorów klas. Identyfikatory klas są przekazywane jako zmienne `ISpecifyPropertyPages` i służą do utworzenia wystąpienia strony właściwości. Lista identyfikatorów klas również jest przekazywana do `IVsPropertyPage` umożliwiające utworzenie struktury drzewa po lewej stronie okna dialogowego. Strony właściwości, a następnie Przekaż informacje z powrotem do `IDispatch` obiekt, który implementuje `ISpecifyPropertyPages` i wypełnia informacji dla każdej strony.  
+ `IDispatch` obiekty dla elementów w kontenerze zaznaczenia, których właściwości, który będzie wyświetlany na wdrożenie stron właściwości `ISpecifyPropertyPages` wyliczyć listy identyfikatorów klas. Identyfikatory klas są przekazywane jako zmienne `ISpecifyPropertyPages` i służą do utworzenia wystąpienia strony właściwości. Lista identyfikatorów klas również jest przekazywana do `IVsPropertyPage` umożliwiające utworzenie struktury drzewa po lewej stronie okna dialogowego. Strony właściwości, a następnie Przekaż informacje z powrotem do `IDispatch` obiekt, który implementuje `ISpecifyPropertyPages` i wypełnia informacji dla każdej strony.  
   
  Właściwości obiektu przeglądania są pobierane przy użyciu `IDispatch` dla każdego obiektu w kontenerze zaznaczenia.  
   
@@ -73,11 +71,11 @@ Właściwości strony — okno dialogowe Właściwości siatki
   
      Można określić projektu lub projektów ze strony właściwości rozwiązania, który zostanie uruchomiony, gdy użytkownik naciśnie klawisz F5 lub wybiera Uruchom z menu Kompiluj. Działa to w sposób podobny do starego aktywnego projektu w tym sensie, że jego nazwa jest wyświetlana w Eksploratorze rozwiązań pogrubioną czcionką.  
   
-     Projekt startowy można pobrać jako właściwości w modelu automatyzacji przez wywołanie metody `DTE.Solution.SolutionBuild.StartupProjects`. W pakiet VSPackage, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager`jest dostępna jako usługa przez `QueryService` na SID_SVsSolutionBuildManager. Aby uzyskać więcej informacji, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md) i [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+     Projekt startowy można pobrać jako właściwości w modelu automatyzacji przez wywołanie metody `DTE.Solution.SolutionBuild.StartupProjects`. W pakiet VSPackage, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager` jest dostępna jako usługa przez `QueryService` na SID_SVsSolutionBuildManager. Aby uzyskać więcej informacji, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md) i [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
 -   Konfiguracja aktywnego rozwiązania kompilacji  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]aktywne rozwiązanie konfiguracji dostępne w modelu automatyzacji zaimplementowanie `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfiguracja rozwiązania jest kolekcja, która zawiera jedną konfigurację projektu dla każdego projektu w rozwiązaniu (każdy projekt może mieć wielu konfiguracji na wielu platformach o różnych nazwach). Aby uzyskać więcej informacji dotyczących strony właściwości rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aktywne rozwiązanie konfiguracji dostępne w modelu automatyzacji zaimplementowanie `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfiguracja rozwiązania jest kolekcja, która zawiera jedną konfigurację projektu dla każdego projektu w rozwiązaniu (każdy projekt może mieć wielu konfiguracji na wielu platformach o różnych nazwach). Aby uzyskać więcej informacji dotyczących strony właściwości rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
 -   Obecnie wybranego projektu  
   

@@ -2,10 +2,7 @@
 title: Dodawanie obsługę innych języków w edytorze programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -15,19 +12,18 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8082a2d52929b8ec03d904bd365f15f143448037
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Dodawanie obsługi innych języków edytora programu Visual Studio
 Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje Odczyt i nawigować przez inny komputer języków i jak dodać obsługę innych języków w edytorze programu Visual Studio.  
@@ -44,7 +40,7 @@ Więcej informacji na temat sposobu edytorze programu Visual Studio obsługuje O
 |Bat|F#|Java|Język znaczników markdown|Rdzy|Visual Basic|  
 |Clojure|Przejdź|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
+|CoffeeScript|HTML|MNIEJ|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
 |Docker|Jade|Wprowadź|Ruby|TypeScript|YAML|  
   
@@ -73,7 +69,7 @@ Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy obsług
   
  Dodaj wszystkie nowe gramatyki TextMate dla programu Visual Studio w następującym folderze:  
   
- *%userprofile%\\.vs\Extensions*  
+ *% userprofile %\\. vs\Extensions*  
   
  W obszarze tej ścieżki podstawowej należy dodać do następujących folderów, jeśli mają one zastosowanie do sytuacji:  
   
@@ -83,7 +79,7 @@ Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy obsług
 |*\Syntaxes*|Folder gramatyki. Gramatyka zawiera *JSON* , takich jak pliki w języku *Matlab.json*.|  
 |*\Snippets*|Folder fragmentów. Zawiera fragmenty kodu dla języka.|  
   
- W systemie Windows *% userprofile %* jest rozpoznawane jako ścieżka: *c:\Users\\*\<nazwa użytkownika >*.* Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie ukryta.  
+ W systemie Windows *% userprofile %* jest rozpoznawane jako ścieżka: *c:\Users\\\<nazwa użytkownika >*. Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie ukryta.  
   
  Aby uzyskać więcej informacji o sposobie tworzenia TextMate gramatyki, zobacz [TextMate — wprowadzenie do języka gramatyki: osadzonych sposób dodawania wyróżnianie składni kodu źródłowego w formacie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [uwagi dotyczące tworzenia gramatyki języka i niestandardowe Motyw dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
   

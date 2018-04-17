@@ -1,31 +1,27 @@
 ---
 title: Polecenie CodeIndex | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 350708309cdc7a65b8c991454704dc9212f20ef8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6a5b01214a4b7283eefb92b3ce4f85687e813721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="codeindex-command"></a>Polecenie CodeIndex
+# <a name="codeindex-command"></a>CodeIndex — polecenie
 Użyj **CodeIndex** polecenia do zarządzania kodu indeksowania na Team Foundation Server. Na przykład można zresetować indeks, aby naprawić informacje wskaźników CodeLens lub wyłączyć funkcję indeksowania do badania problemów z wydajnością serwera.  
   
  **Wymagane uprawnienia**  
@@ -52,15 +48,15 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opcja**|**Opis**|  
 |----------------|---------------------|  
 |**/indexingStatus**|Pokazuje stan i konfigurację usługi indeksowania kodu.|  
-|**/setIndexing:**[na &#124; Wyłącz &#124; keepupOnly]|-   **na**: uruchomić indeksowania wszystkich grup zmian.<br />-   **Wyłącz**: Zatrzymaj indeksowanie wszystkich grup zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonej grupy zmian i uruchomić indeksowania tylko nowe grupy zmian.|  
-|**/ignoreList:**[Dodaj &#124; Usuń &#124; removeAll &#124; widok]`ServerPath`<br /><br /> Na początek, koniec lub obu końców ścieżki serwera, można użyć znaku wieloznacznego (*).|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodawanie pliku, który ma nie być indeksowane do listy plików została zignorowana.<br />-   **Usuń**: Usuń plik, który ma być indeksowany z listy plików została zignorowana.<br />-   **removeAll**: Wyczyść listy plików została zignorowana i uruchomić indeksowania wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|  
+|**/setIndexing:**[na &#124; poza &#124; keepupOnly]|-   **na**: uruchomić indeksowania wszystkich grup zmian.<br />-   **Wyłącz**: Zatrzymaj indeksowanie wszystkich grup zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonej grupy zmian i uruchomić indeksowania tylko nowe grupy zmian.|  
+|**/ignoreList:**[Dodaj &#124; Usuń &#124; removeAll &#124; widok] `ServerPath`<br /><br /> Na początek, koniec lub obu końców ścieżki serwera, można użyć znaku wieloznacznego (*).|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodawanie pliku, który ma nie być indeksowane do listy plików została zignorowana.<br />-   **Usuń**: Usuń plik, który ma być indeksowany z listy plików została zignorowana.<br />-   **removeAll**: Wyczyść listy plików została zignorowana i uruchomić indeksowania wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|  
 |**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Zawiera określoną liczbę plików, która przekracza określony rozmiar w KB. Następnie można użyć **/ignoreList** opcji, aby wykluczyć pliki indeksowania.|  
 |**/reindexAll**|Wyczyść wcześniej zindeksowanych danych i uruchom ponownie indeksowania.|  
 |**/destroyCodeIndex [/noPrompt]**|Usuwanie indeksu kodu i wszystkie zindeksowanych danych. Nie wymaga potwierdzenia, jeśli używasz **/noprompt** opcji.|  
-|**/temporaryDataSizeLimit**: [Widok &#124; <`SizeInGBs`> &#124; Wyłącz]|Kontroli ilości tymczasowe dane CodeLens tworzy podczas przetwarzania grupy zmian. Domyślny limit wynosi 2 GB.<br /><br /> -   **Widok**: Pokaż bieżący limit rozmiaru.<br />-   `SizeInGBs`: Zmienić limit rozmiaru.<br />-   **Wyłącz**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzana przed CodeLens przetwarza nowy zestaw zmian. Jeśli dane tymczasowe przekracza ten limit, CodeLens wstrzyma przetwarzania poza grupy zmian, nie nowe. CodeLens spowoduje ponowne uruchomienie przetwarzania po danych jest wyczyszczone, a spadnie poniżej tego limitu. Oczyszczanie jest uruchamiany automatycznie raz dziennie. Oznacza to, że dane tymczasowe może przekroczenia tego limitu do momentu wyczyszczenia zacznie działać.|  
-|**/indexHistoryPeriod**: [Widok &#124; wszystkie &#124; <`NumberOfMonths`>]|Formant, jak długo indeksu historii zmian. Ma to wpływ na ile historii CodeLens przedstawiono. Domyślny limit wynosi 12 miesięcy. Oznacza to, CodeLens przedstawia historię zmian tylko w ostatnich 12 miesięcy.<br /><br /> -   **Widok**: Pokaż bieżąca liczba miesięcy.<br />-   **wszystkie**: indeks cała historia zmian.<br />-   `NumberOfMonths`: Liczba miesięcy, używany do historii zmian indeksu zmienić.|  
-|**/collectionName:**`CollectionName`|Określa nazwę kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|  
-|**/collectionId:**`CollectionId`|Określa numer identyfikacyjny kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionName**.|  
+|**/temporaryDataSizeLimit**: [widok &#124; <`SizeInGBs`> &#124; Wyłącz]|Kontroli ilości tymczasowe dane CodeLens tworzy podczas przetwarzania grupy zmian. Domyślny limit wynosi 2 GB.<br /><br /> -   **Widok**: Pokaż bieżący limit rozmiaru.<br />-   `SizeInGBs`: Zmienić limit rozmiaru.<br />-   **Wyłącz**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzana przed CodeLens przetwarza nowy zestaw zmian. Jeśli dane tymczasowe przekracza ten limit, CodeLens wstrzyma przetwarzania poza grupy zmian, nie nowe. CodeLens spowoduje ponowne uruchomienie przetwarzania po danych jest wyczyszczone, a spadnie poniżej tego limitu. Oczyszczanie jest uruchamiany automatycznie raz dziennie. Oznacza to, że dane tymczasowe może przekroczenia tego limitu do momentu wyczyszczenia zacznie działać.|  
+|**/indexHistoryPeriod**: [widok &#124; wszystkie &#124; <`NumberOfMonths`>]|Formant, jak długo indeksu historii zmian. Ma to wpływ na ile historii CodeLens przedstawiono. Domyślny limit wynosi 12 miesięcy. Oznacza to, CodeLens przedstawia historię zmian tylko w ostatnich 12 miesięcy.<br /><br /> -   **Widok**: Pokaż bieżąca liczba miesięcy.<br />-   **wszystkie**: indeks cała historia zmian.<br />-   `NumberOfMonths`: Liczba miesięcy, używany do historii zmian indeksu zmienić.|  
+|**/collectionName:** `CollectionName`|Określa nazwę kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|  
+|**/collectionId:** `CollectionId`|Określa numer identyfikacyjny kolekcji projektów zespołowych, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionName**.|  
   
 ## <a name="examples"></a>Przykłady  
   

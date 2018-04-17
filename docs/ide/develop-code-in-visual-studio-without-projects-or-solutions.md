@@ -1,30 +1,28 @@
 ---
-title: "Opracuj kodu w programie Visual Studio bez projekty i rozwiązania | Dokumentacja firmy Microsoft"
+title: Opracuj kodu w programie Visual Studio bez projekty i rozwiązania | Dokumentacja firmy Microsoft
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 082e64d80080eec48c311254461b85812a969841
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Opracuj kodu w programie Visual Studio bez projektów i rozwiązań
 
 W Visual Studio 2017 r możesz otworzyć kodu z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, można, na przykład klonowanie repozytorium w usłudze GitHub, otwórz go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu. W razie potrzeby można określić zadania niestandardowej kompilacji i uruchomić parametrów za pomocą prostego pliki w formacie JSON.
 
-Po otwarciu plików kodu w programie Visual Studio Solution Explorer wyświetla wszystkie pliki w folderze. Możesz kliknąć dowolny plik, aby rozpocząć edycji. W tle Visual Studio rozpoczyna indeksowania pliki, aby włączyć IntelliSense, nawigacji i funkcje refaktoryzacji. Jak edytować, tworzenie, przenoszenie i usuwania plików programu Visual Studio automatycznie śledzenia zmian i stale aktualizuje jego indeks IntelliSense. Kod będzie wyświetlany z kolorowanie składni, a w wielu przypadkach obejmują podstawowe instrukcji IntelliSense.
+Po otwarciu plików kodu programu Visual Studio **Eksploratora rozwiązań** Wyświetla wszystkie pliki w folderze. Możesz kliknąć dowolny plik, aby rozpocząć edycji. W tle Visual Studio rozpoczyna indeksowania pliki, aby włączyć IntelliSense, nawigacji i funkcje refaktoryzacji. Jak edytować, tworzenie, przenoszenie i usuwania plików programu Visual Studio automatycznie śledzenia zmian i stale aktualizuje jego indeks IntelliSense. Kod będzie wyświetlany z kolorowanie składni, a w wielu przypadkach obejmują podstawowe instrukcji IntelliSense.
 
 ## <a name="open-any-code"></a>Otwórz każdy kod
 
@@ -32,7 +30,7 @@ Kod do programu Visual Studio można otworzyć w dowolnym z następujących spos
 
 - Na pasku menu programu Visual Studio wybierz **pliku** > **Otwórz** > **folderu**, a następnie przejdź do lokalizacji kodu.
 - W menu kontekstowym (kliknij prawym przyciskiem myszy) do folderu zawierającego kod, wybierz **Otwórz w programie Visual Studio** polecenia.
-- Wybierz **Otwórz Folder** łącza w Visual Studio — strona początkowa.
+- Wybierz **Otwórz Folder** łącza w programie Visual Studio **— strona początkowa**.
 - Jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Ctrl**+**Shift**+**Alt**+**O** w języku Visual Studio.
 - Otwórz kod z sklonowanego repozytorium GitHub.
 
@@ -46,7 +44,7 @@ Poniższy przykład pokazuje, jak można sklonować repozytorium GitHub, a nast�
 
    ![Przycisk powielania GitHub](./media/VSIDE_Code_Clone.png)
 
-1. W programie Visual Studio, wybierz **Team Explorer** kartę, aby otworzyć program Team Explorer. Jeśli karta nie jest widoczna, otwórz go z **widoku** > **Team Explorer**.
+1. W programie Visual Studio, wybierz **Team Explorer** kartę, aby otworzyć **Team Explorer**. Jeśli karta nie jest widoczna, otwórz go z **widoku** > **Team Explorer**.
 
 1. W programie Team Explorer w obszarze **lokalnego repozytoriów Git** wybierz **klonowania** polecenia, a następnie wklej adres URL strony GitHub w polu tekstowym.
 
@@ -54,11 +52,11 @@ Poniższy przykład pokazuje, jak można sklonować repozytorium GitHub, a nast�
 
 1. Wybierz **klonowania** przycisk sklonować pliki projektu do lokalnego repozytorium Git. W zależności od rozmiaru repozytorium ten proces może potrwać kilka minut.
 
-1. Po repozytorium ma został sklonowany w systemie, w programie Team Explorer, wybierz **Otwórz** polecenia w menu kontekstowym (kliknij prawym przyciskiem myszy) nowo sklonowanego repozytorium.
+1. Po repozytorium ma został sklonowany w systemie, w **Team Explorer**, wybierz **Otwórz** polecenia w menu kontekstowym (kliknij prawym przyciskiem myszy) nowo sklonowanego repozytorium.
 
    ![Sklonowanego repozytorium](./media/VSIDE_Code_Clone3.png)
 
-1. Wybierz **Pokaż widok folderu** polecenie, aby wyświetlić pliki w Eksploratorze rozwiązań
+1. Wybierz **Pokaż widok folderu** polecenie, aby wyświetlić pliki w **Eksploratora rozwiązań**.
 
    ![Pokaż widok folderu](./media/VSIDE_Code_Clone3_show.png)
 

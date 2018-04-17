@@ -2,11 +2,8 @@
 title: 'Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio XAML i C# | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 04/04/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -16,11 +13,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 7caba5278ec415aec036c501d4911bcd5c7f3c77
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio z XAML i C&#35;
 
@@ -95,7 +92,7 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, 
 
 ### <a name="add-an-event-handler"></a>Dodaj program obsługi zdarzeń
 
-Dźwięki "obsługi zdarzeń" skomplikowane, ale jest po prostu inną nazwę dla kodu, który jest wywoływany, gdy zdarzenie. W takim przypadku dodaje akcję "Witaj świecie!" button.
+Dźwięki "obsługi zdarzeń" skomplikowane, ale jest po prostu inną nazwę dla kodu, który jest wywoływany, gdy zdarzenie. W takim przypadku dodaje akcję "Witaj świecie!" przycisk.
 
 1. Kliknij dwukrotnie ikonę w obszarze roboczym projektowania formantu przycisku.
 

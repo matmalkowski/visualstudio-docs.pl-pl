@@ -1,35 +1,31 @@
 ---
 title: IDebugReference2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugReference2
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30f3b8351789adbb52651909cf9ff3b669934d66
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb5d5d8b3ab6e608a2454847fc9ec27e384777bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Ten interfejs reprezentuje odwołanie do właściwości ramki stosu lub pewne inne właściwości.  
   
 > [!NOTE]
->  `IDebugReference2`jest zarezerwowany do użytku w przyszłości i wszystkie jego metody powinna zwracać `E_NOTIMPL`.  
+>  `IDebugReference2` jest zarezerwowany do użytku w przyszłości i wszystkie jego metody powinna zwracać `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -58,7 +54,7 @@ IDebugReference2 : IUnknown
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Pobiera kontekst pamięci dla tego odwołania.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Pobiera rozmiar w bajtach tego odwołania.|  
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Ustawia tego typu odwołania.|  
-|[Porównaj](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Porównuje to odwołanie z inną.|  
+|[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Porównuje to odwołanie z inną.|  
   
 ## <a name="remarks"></a>Uwagi  
   
@@ -76,7 +72,7 @@ IDebugReference2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   

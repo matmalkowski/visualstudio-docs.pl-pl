@@ -1,28 +1,26 @@
 ---
-title: "Określanie, które Edytor otwiera plik w projekcie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Określanie, które Edytor otwiera plik w projekcie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f7c69bc08d0f1bb72a37b76fca2d402d73036deb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d8fe054fa8e630b2f6c54cb78ef75b6c10ff74d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Określanie otwieranym edytora plików w projekcie
 Po otwarciu pliku w projekcie, środowisko przechodzi przez proces sondowania, po pewnym czasie otwierania odpowiedniego edytora lub projektanta dla tego pliku. Procedury początkowej przez środowisko jest taki sam dla edytory standardowe i niestandardowe. Środowisko używają różnych kryteriów, podczas sondowania Edytor Otwórz plik i pakiet VSPackage musi koordynować ze środowiskiem w trakcie tego procesu.  

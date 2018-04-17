@@ -1,30 +1,26 @@
 ---
 title: Projekt typu Essentials | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aff6cc669d7df46acaa2cbcb129a6b13b7261d9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-type-essentials"></a>Essentials typ projektu
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obejmuje kilka typów projektów dla języków, takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Umożliwia również tworzenie własnych typów projektów.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obejmuje kilka typów projektów dla języków, takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umożliwia również tworzenie własnych typów projektów.  
   
  Jeśli chcesz dodać niestandardowe polecenia, edytory lub okna narzędzi do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], możesz to zrobić bez tworzenia nowego typu projektu. Więcej informacji znajduje się w następujących tematach:  
   
@@ -62,11 +58,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Typy projektów może obsługiwać danych innych niż pliki kodu źródłowego typowe, które w zestawie .exe lub .dll. Na przykład [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów baz danych zawierają odwołania do skryptu i zapytań plików przechowywanych na dysku i dodać polecenia do **Eksploratora rozwiązań** do wykonywania skryptów i zapytań dotyczących bazy danych, ale projektów nie obsługują Tworzenie zachowanie. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   Typ projektu nie ma użycie na wszystkich plików. Na przykład typ projektu może przechowywać wszystkie jej dane w bazie danych. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]udostępnia typy projektów pełną kontrolę nad jak stają się dostępne dane dla projektów i elementów projektu. Aby uzyskać więcej informacji, zobacz [decyzji projektowych typ projektu](../../extensibility/internals/project-type-design-decisions.md).  
+-   Typ projektu nie ma użycie na wszystkich plików. Na przykład typ projektu może przechowywać wszystkie jej dane w bazie danych. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia typy projektów pełną kontrolę nad jak stają się dostępne dane dla projektów i elementów projektu. Aby uzyskać więcej informacji, zobacz [decyzji projektowych typ projektu](../../extensibility/internals/project-type-design-decisions.md).  
   
 -   Podaj typów projektów *fabrykę projektów*, który jest obiektem, który tworzy wystąpienie projektu zawsze, gdy typ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informację, aby otworzyć lub utworzyć projekt, który jest oparty na tym typie projektu. Aby uzyskać więcej informacji, zobacz [tworzenia projektu wystąpień przez za pomocą fabryk projektów przez ustawienie](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Typy projektów podać szablonów dla projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]używa szablonów, gdy użytkownicy tworzyć nowe projekty i dodawania nowych elementów do istniejących projektów. Aby uzyskać więcej informacji, zobacz [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+-   Typy projektów podać szablonów dla projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używa szablonów, gdy użytkownicy tworzyć nowe projekty i dodawania nowych elementów do istniejących projektów. Aby uzyskać więcej informacji, zobacz [Dodawanie projekt oraz szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 -   Typy projektów może obsługiwać wiele konfiguracji, takich jak Debug i Release. Użytkownicy mogą zmieniać różne konfiguracje projektu za pomocą stron właściwości, które należy podać. Aby uzyskać więcej informacji, zobacz [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
   

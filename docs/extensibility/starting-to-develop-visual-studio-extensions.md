@@ -1,26 +1,24 @@
 ---
 title: Uruchamianie tworzenia rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Uruchamianie tworzenia rozszerzenia programu Visual Studio
 Jeśli rozszerzenia programu Visual Studio przed nigdy nie zostały zapisane, prawdopodobnie masz kilka pytań. Firma Microsoft zostały umieszczone niektóre z najczęściej następujące. Jeśli nie widzisz informacje, których szukasz, użyj przycisków opinii (**był pomocny tę stronę?** w dolnej części ekranu) aby poprosić o jaką mają.  
@@ -60,7 +58,7 @@ Jeśli rozszerzenia programu Visual Studio przed nigdy nie zostały zapisane, pr
   
 -   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>Szablony projektów, które są udostępniane przez VSSDK?  
+##  <a name="BKMK_ProjectTemplate"></a> Szablony projektów, które są udostępniane przez VSSDK?  
  Dwa główne typy rozszerzeń są pakiety VSPackage i MEF rozszerzenia. Ogólnie rzecz biorąc pakiet VSPackage rozszerzenia są używane dla rozszerzeń używających lub rozszerzyć poleceń, narzędzi systemu windows i projektów. Rozszerzenia MEF służą do rozszerzania lub Dostosuj edytorze programu Visual Studio.  
   
  W przypadku rozszerzenia Visual C# i Visual Basic VSSDK zapewnia pusty szablon projektu VSIX można użyć razem z nowych szablonów elementu utworzonych polecenia menu okna narzędzi i rozszerzenia edytora. Można również użyć tego szablonu szablony projektów pakietu fragmentów kodu i pozostałych artefaktów, w celu dystrybucji do innych użytkowników.  

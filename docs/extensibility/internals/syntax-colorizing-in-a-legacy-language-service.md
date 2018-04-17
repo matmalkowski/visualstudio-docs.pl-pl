@@ -1,28 +1,26 @@
 ---
-title: "Kolorowanie składni w usłudze języka starszych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kolorowanie składni w usłudze języka starszych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
 - colorization, supporting in language services [managed package framework]
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8ec6641859653d9f16137353ee2571006ae592c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d82a85958fd979a3d9d44375656b08356ef09d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Kolorowanie składni w starsza wersja usługi języka
 Kolorowanie składni to funkcja, która powoduje, że różne elementy języka programowania, który będzie wyświetlany w pliku źródłowym w różnych kolorach i style. Do obsługi tej funkcji, należy podać analizator lub skanera, który można określić typy elementów leksykalne lub tokenów w pliku. Wiele języków rozróżnienia słowa kluczowe, ograniczniki (na przykład lub nawiasy klamrowe nawiasy) i komentarze przez kolorowanie je na różne sposoby.  

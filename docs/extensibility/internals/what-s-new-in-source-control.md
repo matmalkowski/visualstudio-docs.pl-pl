@@ -1,32 +1,30 @@
 ---
-title: "Jaki &#39; s Nowość w kontroli źródła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Co&#39;s Nowość w kontroli źródła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>Jaki &#39; s Nowość w kontroli źródła
+# <a name="what39s-new-in-source-control"></a>Co&#39;s Nowość w kontroli źródła
 W [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] zapewniają rozwiązania kontroli źródła ściśle zintegrowane z zastosowaniem kontroli źródła pakiet VSPackage. Ta sekcja zawiera opis funkcji kontroli źródła VSPackages i omówiono kroki implementacji.  
   
 ## <a name="the-source-control-vspackage"></a>Pakiet VSPackage kontroli źródła  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsługuje dwa typy systemów kontroli źródła. We wszystkich wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], nadal można zintegrować oparty na interfejsach API dodatku typu Plug-in kontroli źródła wtyczek. Można również utworzyć pakiet VSPackage do kontroli źródła, która zapewnia integrację dokładnego, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ścieżka odpowiednie dla systemów kontroli źródła, które wymagają wysokiego poziomu wiedzy i autonomiczne.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa typy systemów kontroli źródła. We wszystkich wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], nadal można zintegrować oparty na interfejsach API dodatku typu Plug-in kontroli źródła wtyczek. Można również utworzyć pakiet VSPackage do kontroli źródła, która zapewnia integrację dokładnego, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ścieżka odpowiednie dla systemów kontroli źródła, które wymagają wysokiego poziomu wiedzy i autonomiczne.  
   
  Pakiet VSPackage można dodać niemal każdego rodzaju funkcje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kontroli źródła pakiet VSPackage udostępnia funkcję kontroli źródła pełną [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], w interfejsie użytkownika proponowane użytkownikowi do wewnętrznej komunikacji z systemu kontroli źródła.  
   

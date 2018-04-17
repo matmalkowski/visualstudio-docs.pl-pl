@@ -1,26 +1,24 @@
 ---
-title: "Obsługa projektu i właściwościami konfiguracji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obsługa projektu i właściwościami konfiguracji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Obsługa projektu i właściwości konfiguracji
 **Właściwości** okna w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) można wyświetlić właściwości projektu i konfiguracji. Strony właściwości można określić typu projektu co użytkownik może ustawiać właściwości aplikacji.  
@@ -32,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="persistence-of-project-and-configuration-properties"></a>Trwałość projektu i właściwości konfiguracji  
  Właściwości projektu i konfiguracji są zachowywane w pliku projektu, który ma rozszerzenie nazwy pliku skojarzone z typem projektu, na przykład, .csproj, vbproj i .myproj. Projekty języka zazwyczaj używany plik szablonu do wygenerowania pliku projektu. Istnieją jednak faktycznie na kilka sposobów skojarzenia typów projektów i szablony. Aby uzyskać więcej informacji, zobacz [opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Właściwości projektu i konfiguracji są tworzone przez dodawanie elementów do pliku szablonu. Te właściwości będą dostępne dla każdego projektu utworzone za pomocą typu projektu, który korzysta z tego szablonu. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]projekty i MPFProj używają [nie znajduje się w kompilacji: Przegląd MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schematu dla plików szablonów. Te pliki mają sekcji PropertyGroup dla każdej konfiguracji. Właściwości projektów zwykle są zachowywane w pierwszej sekcji PropertyGroup ma ustawioną wartość ciąg pusty argument konfiguracji.  
+ Właściwości projektu i konfiguracji są tworzone przez dodawanie elementów do pliku szablonu. Te właściwości będą dostępne dla każdego projektu utworzone za pomocą typu projektu, który korzysta z tego szablonu. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projekty i MPFProj używają [nie znajduje się w kompilacji: Przegląd MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schematu dla plików szablonów. Te pliki mają sekcji PropertyGroup dla każdej konfiguracji. Właściwości projektów zwykle są zachowywane w pierwszej sekcji PropertyGroup ma ustawioną wartość ciąg pusty argument konfiguracji.  
   
  Poniższy kod przedstawia początku podstawowy plik projektu programu MSBuild.  
   
@@ -62,9 +60,9 @@ ms.lasthandoff: 01/22/2018
   
  `SettingsPage` Klasy i `Microsoft.VisualStudio.Package.ProjectNode` klasy oferują tych metod, aby zachować właściwości projektu i konfiguracji:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`i `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` utrwalić właściwości projektu.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` i `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` utrwalić właściwości projektu.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalić właściwości konfiguracji.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalić właściwości konfiguracji.  
   
     > [!NOTE]
     >  Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` metody get i set właściwości projektu i konfiguracji z pliku projektu (MSBuild).  

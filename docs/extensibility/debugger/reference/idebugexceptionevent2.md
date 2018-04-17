@@ -1,29 +1,25 @@
 ---
 title: IDebugExceptionEvent2 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6dacbac1092e211ba129417bd4e47aea31b733
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f2cb866c12cacc2c0fcc81c3021e7cc5af448d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Aparat debugowania (DE) wysyła ten interfejs do menedżera sesji debugowania (SDM) podczas wyjątek w aktualnie wykonywanego programu.  
@@ -55,7 +51,7 @@ IDebugExceptionEvent2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Uwagi  
  Przed wysłaniem zdarzenia, DE sprawdza, czy to zdarzenie wyjątku wyznaczony wyjątek szansy pierwszej lub drugiej szansy przez poprzednie wywołanie [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Jeśli zostanie wyznaczona jako wyjątkach pierwszej szansy `IDebugExceptionEvent2` SDM jest wysyłane zdarzenie. Jeśli nie, DE daje aplikacji możliwość obsługi wyjątku. Jeśli podano bez obsługi wyjątków i jeśli wyjątek został wyznaczony jako wyjątek drugiej szansy `IDebugExceptionEvent2` SDM jest wysyłane zdarzenie. W przeciwnym razie DE wznawia wykonywanie programu i systemu operacyjnego lub środowisko uruchomieniowe obsługuje wyjątek.  

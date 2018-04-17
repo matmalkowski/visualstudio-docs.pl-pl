@@ -1,23 +1,21 @@
 ---
-title: "Wskazówki: Tworzenie zestawu SDK, w języku C++ | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie zestawu SDK, w języku C++ | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Wskazówki: Tworzenie zestawu SDK, w języku C++
 W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne biblioteki zestawu SDK, pakiet SDK jako Visual rozszerzenia Studio (VSIX), a następnie użyć jej do utworzenia aplikacji. Instruktaż jest podzielona na następujące kroki:  
@@ -31,7 +29,7 @@ W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne bibliot
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby użyć tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Aby utworzyć macierzystego i bibliotek środowiska uruchomieniowego systemu Windows  
+##  <a name="createClassLibrary"></a> Aby utworzyć macierzystego i bibliotek środowiska uruchomieniowego systemu Windows  
   
 1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
   
@@ -59,7 +57,7 @@ W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne bibliot
   
 9. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
   
-##  <a name="createVSIX"></a>Aby utworzyć projekt rozszerzenia NativeMathVSIX  
+##  <a name="createVSIX"></a> Aby utworzyć projekt rozszerzenia NativeMathVSIX  
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów **rozwiązania "NativeMath"**, a następnie wybierz pozycję **Dodaj**, **nowy projekt**.  
   
@@ -143,7 +141,7 @@ W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne bibliot
   
 18. Wybierz **zainstalować** przycisku, poczekaj na zakończenie instalacji, a następnie uruchom program Visual Studio.  
   
-##  <a name="createSample"></a>Aby utworzyć przykładową aplikację używającą biblioteki klas  
+##  <a name="createSample"></a> Aby utworzyć przykładową aplikację używającą biblioteki klas  
   
 1.  Na pasku menu wybierz **pliku**, **nowy**, **projektu**.  
   
@@ -171,7 +169,7 @@ W tym przewodniku pokazano, jak do utworzenia natywnego C++ matematyczne bibliot
   
 9. Wybierz klawisz F5, aby uruchomić aplikację.  
   
-10. W aplikacji, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz  **=**  przycisku.  
+10. W aplikacji, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz **=** przycisku.  
   
      Zostanie wyświetlone prawidłowego wyniku.  
   

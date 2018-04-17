@@ -1,12 +1,10 @@
 ---
-title: "Obsługa narzędzia do przeglądania Symbol | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Obsługa narzędzia do przeglądania Symbol | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzia do przeglądania Symbol
 **Przeglądarka obiektów**, **widoku klasy**, **przeglądarce wywołań** i **wyniki Znajdź Symbol** narzędzia zapewniają symbol Przeglądanie możliwości programu Visual Studio. Te narzędzia wyświetlanie widoków hierarchiczne drzewo symboli i prezentują jedynie relacje między symbolami w drzewie. Symbole może reprezentować przestrzeni nazw, obiektów, klas, elementy członkowskie klasy i inne elementy języka zawarte w różnych składników. Następujące składniki projektów programu Visual Studio, zewnętrznych [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] składniki i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  

@@ -1,33 +1,29 @@
 ---
-title: "Omówienie integracji kontroli źródła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie integracji kontroli źródła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli źródła
 Ta sekcja porównuje dwa sposoby integracji kontroli źródła programu Visual Studio; kontroli źródła wtyczek i pakiet VSPackage, który zapewnia rozwiązanie do kontroli źródła i zaznacza nowe funkcje kontroli źródła. Program Visual Studio umożliwia ręczne przełączanie między kontroli źródła VSPackages i plug-in kontroli źródła, a także automatyczne przełączanie oparte na rozwiązaniu.  
   
 ## <a name="source-control-integration"></a>Integracja kontroli źródła  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsługuje dwa typy opcji integracji kontroli źródła. We wszystkich wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], nadal można zintegrować wtyczki źródła formantu wtyczek interfejsu API (wcześniej również nazywany MSSCCI API), który udostępnia funkcje kontroli źródła podstawowe podczas korzystania z programu Visual Studio źródła kontrolki użytkownika interfejsu (w oparciu INTERFEJS UŻYTKOWNIKA). Kontroli źródła pakiet VSPackage, z drugiej strony, zawiera nowe, integracja głębokiego [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ścieżka odpowiedni w przypadku integracji kontroli źródła, która żąda wysoki stopień zaawansowania i autonomię w jego model kontroli źródła.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa typy opcji integracji kontroli źródła. We wszystkich wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], nadal można zintegrować wtyczki źródła formantu wtyczek interfejsu API (wcześniej również nazywany MSSCCI API), który udostępnia funkcje kontroli źródła podstawowe podczas korzystania z programu Visual Studio źródła kontrolki użytkownika interfejsu (w oparciu INTERFEJS UŻYTKOWNIKA). Kontroli źródła pakiet VSPackage, z drugiej strony, zawiera nowe, integracja głębokiego [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ścieżka odpowiedni w przypadku integracji kontroli źródła, która żąda wysoki stopień zaawansowania i autonomię w jego model kontroli źródła.  
   
  ![Informacje o formancie źródła](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ Ta sekcja porównuje dwa sposoby integracji kontroli źródła programu Visual S
 -   Jest łatwiejsze do wdrożenia wtyczka do kontroli źródła niż kontroli źródła pakiet VSPackage.  
   
 ## <a name="source-control-vspackage"></a>Pakiet VSPackage kontroli źródła  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Umożliwia głęboką integrację do programu Visual Studio z pełną kontrolę nad funkcja kontroli źródła i całkowite zastąpienie interfejsu użytkownika kontroli źródła dostarczane do programu Visual Studio. Pakiet VSPackage kontroli źródła jest zarejestrowana w programie Visual Studio i udostępnia funkcje kontroli źródła. Mimo że kilka kontroli źródła VSPackages można zarejestrować za pomocą programu Visual Studio, tylko jeden z nich mogą być aktywne w dowolnym momencie. Kontroli źródła pakiet VSPackage ma pełną kontrolę nad funkcja kontroli źródła i wyglądu w programie Visual Studio, gdy jest aktywny. Wszystkie inne kontroli źródła VSPackages, które mogą być rejestrowane w systemie nie są aktywne i nie będzie wyświetlany elementów interfejsu użytkownika w ogóle.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Umożliwia głęboką integrację do programu Visual Studio z pełną kontrolę nad funkcja kontroli źródła i całkowite zastąpienie interfejsu użytkownika kontroli źródła dostarczane do programu Visual Studio. Pakiet VSPackage kontroli źródła jest zarejestrowana w programie Visual Studio i udostępnia funkcje kontroli źródła. Mimo że kilka kontroli źródła VSPackages można zarejestrować za pomocą programu Visual Studio, tylko jeden z nich mogą być aktywne w dowolnym momencie. Kontroli źródła pakiet VSPackage ma pełną kontrolę nad funkcja kontroli źródła i wyglądu w programie Visual Studio, gdy jest aktywny. Wszystkie inne kontroli źródła VSPackages, które mogą być rejestrowane w systemie nie są aktywne i nie będzie wyświetlany elementów interfejsu użytkownika w ogóle.  
   
  Wdrożenie kontroli źródła pakiet VSPackage wymaga strategii "wszystkie lub żadne". Twórca kontroli źródła pakiet VSPackage należy zakupić znaczną ilość nakładu pracy w przypadku implementowania interfejsów kontroli źródła i nowe elementy interfejsu użytkownika (okien dialogowych, menu i pasków narzędzi) dotyczą funkcji kontroli źródła całego. Zobacz [tworzenie pakiet VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md) więcej szczegółów.  
   

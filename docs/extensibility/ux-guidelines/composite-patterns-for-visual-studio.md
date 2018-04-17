@@ -1,23 +1,21 @@
 ---
-title: "Wzorce złożone dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wzorce złożone dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone połączyć elementy projektu i interakcji w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio w zakresie spójności:  
@@ -32,7 +30,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
   
 -   [Wprowadzania dotykowego](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Wizualizacja danych  
+##  <a name="BKMK_DataVisualization"></a> Wizualizacja danych  
   
 ### <a name="overview"></a>Omówienie  
  Wykresy służą visual do agregacji i wizualizacji danych w celu zwiększenia podejmowania decyzji. Pozwalają one użytkowników z dużą ilością danych, ale małego oznacza Zobacz, co wymaga uwagi, i co może wymagać akcji, które muszą ponieść.  
@@ -85,7 +83,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
 |![Próbka 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Próbka B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Interfejs użytkownika i wgląd w obiekcie  
+##  <a name="BKMK_OnObjectUI"></a> Interfejs użytkownika i wgląd w obiekcie  
  W tej sekcji przedstawiono kontekst do wybierania, znanej także jako widok peek kodu, typ interfejsu użytkownika na obiekcie unikatowy dla programu Visual Studio.  
   
 ### <a name="overview"></a>Omówienie  
@@ -251,7 +249,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
   
 -   **Nigdy nie** wyświetlać zawartość na aktywowany, które można edytować lub zaprasza interakcji z użytkownikiem. To zachowanie może frustrować użytkowników, jeśli próby, przesuń kursor nad zawartości szczegółów standardowe zachowanie etykietka narzędzia jest natychmiast zamknąć, gdy kursor znajduje się już wzorca zawartości, który go utworzył.  
   
-##  <a name="BKMK_SelectionModels"></a>Wybór modeli  
+##  <a name="BKMK_SelectionModels"></a> Wybór modeli  
   
 ### <a name="overview"></a>Omówienie  
  Model wyboru to mechanizm służący do wskazywania i Potwierdź operacje na co najmniej jeden obiekt zainteresowania interfejsu użytkownika. W tym temacie omówiono wzorców interakcji zaznaczenia w edytory dokumentu programu Visual Studio: edytory tekstów, projektów i modelowania powierzchni.  
@@ -309,7 +307,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
 #### <a name="region-selection-box-selection"></a>Pole Region (pole wyboru)  
  Program Visual Studio obsługuje opcje regionu w edytorze tekstu, a jest to pole wyboru. Pole wyboru umożliwia użytkownikowi wybierz region tekstu, który nie jest zgodna z strumienia zwykły tekst. Podobnie jak w przypadku zaznaczenia tekstu standardowego, wybór musi być ciągłe. Pole wyboru jest inicjowane, przytrzymując klawisz Alt, przeciągając myszą. Pole wyboru może być też inicjowane, przytrzymując klawisz Alt i klawisze Shift podczas używania klawiszy strzałek w celu wskazuje region zaznaczenia. Pole wyboru używa wyróżnienie zaznaczenia normalne i zawiera punkt wstawiania kursora migający na końcu obszaru zaznaczenia.  
   
- ![Regionalne &#40; pole &#41; Zaznaczenie w programie Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
+ ![Regionalne &#40;pole&#41; wyboru w programie Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
   
  **Pole Region (pole) w programie Visual Studio**  
   
@@ -394,19 +392,19 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
   
  **Zaznaczenie główne z dwóch opcji dodatkowej**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Wygląd Wybieranie obiektu graficznego  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Wygląd Wybieranie obiektu graficznego  
  Uchwyty zaznaczenia są rysowane wokół obwiedni obiektu w układzie prostokątne kwadratów. Poniższej tabeli przedstawiono przykłady różnych stanów, które obiekt graficzny może mieć z uchwyt zmiany rozmiaru i wyglądu edycji w miejscu. Rozmiar dojść powinien powiązane krawędź okna i przy użyciu metryk krawędzi **GetSystemMetrics** interfejsu API.  
   
 |Stan|Wygląd|Szczegóły dotyczące programu Visual|  
 |-----------|----------------|--------------------|  
 |**Niezaznaczony**|Domyślny|![Domyślny stan przycisku](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
-|**Zaznaczenie główne**|O zmiennych rozmiarach|![Uchwyty zmiany rozmiaru zaznaczenia głównego z](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Zaznaczenie główne z zmienić rozmiar uchwytów &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
-|**Zaznaczenie główne**|Nie o zmiennych rozmiarach|![Uchwyty zmiany rozmiaru zaznaczenia głównego bez](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Zaznaczenie główne bez zmiany rozmiaru uchwytów &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
-|**Zaznaczenie główne**|Zablokowane|![Zaznaczenie główne zablokowane](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Zaznaczenie główne zablokowany &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
-|**Wybór dodatkowej**|O zmiennych rozmiarach|![Uchwyty zmiany rozmiaru dodatkowej wybór z](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Wybór dodatkowej z zmienić rozmiar uchwytów &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
-|**Wybór dodatkowej**|Nie o zmiennych rozmiarach|![Uchwyty zmiany rozmiaru wybór dodatkowej bez](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Wybór dodatkowej bez zmiany rozmiaru &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
-|**Wybór dodatkowej**|Zablokowane|![Wybór dodatkowej zablokowane](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Wybór dodatkowej zablokowany &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
-|**Aktywne interfejsu użytkownika**|Domyślny|![Stan aktywny UI](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Interfejs użytkownika stanu aktywnego &#40; powiększony &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
+|**Zaznaczenie główne**|O zmiennych rozmiarach|![Uchwyty zmiany rozmiaru zaznaczenia głównego z](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Uchwyty zmiany rozmiaru zaznaczenia głównego z &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
+|**Zaznaczenie główne**|Nie o zmiennych rozmiarach|![Uchwyty zmiany rozmiaru zaznaczenia głównego bez](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Uchwyty zmiany rozmiaru zaznaczenia głównego bez &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
+|**Zaznaczenie główne**|Zablokowane|![Zaznaczenie główne zablokowane](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Zaznaczenie główne zablokowane &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
+|**Wybór dodatkowej**|O zmiennych rozmiarach|![Uchwyty zmiany rozmiaru dodatkowej wybór z](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Uchwyty zmiany rozmiaru dodatkowej wybór z &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
+|**Wybór dodatkowej**|Nie o zmiennych rozmiarach|![Uchwyty zmiany rozmiaru wybór dodatkowej bez](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Wybór dodatkowej bez zmiany rozmiaru &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
+|**Wybór dodatkowej**|Zablokowane|![Wybór dodatkowej zablokowane](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Wybór dodatkowej zablokowane &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
+|**Aktywne interfejsu użytkownika**|Domyślny|![Stan aktywny UI](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Stan aktywny UI &#40;powiększony&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Modele wybór widoku  
   
@@ -475,7 +473,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
   
 -   Klawisz F2 aktywuje edycji w miejscu, w obecnie zaznaczonej komórce.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Trwałość i zapisywania ustawień  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Trwałość i zapisywania ustawień  
   
 ### <a name="overview"></a>Omówienie  
  Mimo że każdego składnika oprogramowania w programie Visual Studio jest zazwyczaj odpowiedzialny stanu i trwałości, Visual Studio automatycznie zapisuje ustawienia w niektórych przypadkach, takich jak z rozmiarów okna i pozycji. W poniższej tabeli jest kombinacją ustawień zapisanych automatycznie i ustawienia, które wymaga jawnego użytkownika lub zaprogramowane podjęcia działania.  
@@ -510,7 +508,7 @@ Wzorce złożone połączyć elementy projektu i interakcji w różnych konfigur
 #### <a name="profile-specific-layouts"></a>Układy specyficzne dla profilu  
  Każdy profil zawiera narzędzie układów okien, znane osoby określonego dewelopera porządkowanie (Visual C++ deweloperzy powinien pojawić się **Eksploratora rozwiązań** po lewej stronie IDE, gdy deweloperzy C# powinien pojawić się **Eksplorator rozwiązań** po prawej stronie). Załadowano układów okien specyficzne dla profilu po wybraniu profilu podczas uruchamiania. Autor pakietu należy określić układ okna najodpowiedniejsze do obsługi ich klienta, wiedząc, że zmiany wprowadzone przez użytkownika do konfiguracji okna następnie zostaną utrwalone.  
   
-##  <a name="BKMK_TouchInput"></a>Wprowadzania dotykowego  
+##  <a name="BKMK_TouchInput"></a> Wprowadzania dotykowego  
  Użytkownicy są coraz bardziej przy użyciu rozwoju firmy na urządzeniach touch. Istnieją jednak bariery, które utrudnia korzystanie z narzędzi programistycznych na urządzeniach touch. Użytkownicy będą oczekiwać naszych produktów, aby zapewnić środowisko touch niezawodnych i dokładne. Celem wytycznych ma ułatwić podjęcie decyzji o jakie funkcje dotykowe uwzględnienie i zachęca obsługi dotykowej spójne w Visual Studio oraz pokrewnych produktów.  
   
 ### <a name="levels-of-experience"></a>Poziomy doświadczenia  

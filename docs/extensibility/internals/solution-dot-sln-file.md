@@ -1,27 +1,25 @@
 ---
-title: "Rozwiązania (. Plik sln) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązania (. Plik sln) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73d6f7fb83e9420f59122135761ce44ea641fe57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-sln-file"></a>Rozwiązania (. Plik sln)
 Rozwiązanie to struktura służący do organizowania projekty w programie Visual Studio. Rozwiązania przechowuje informacje o stanie dla projektów w .sln (tekstowych, udostępnionych) i pliki .suo (opcje rozwiązania binarnego, specyficzne dla użytkownika). Aby uzyskać więcej informacji o .suo — pliki Zobacz [opcji użytkownika rozwiązania (. Pliku suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
@@ -96,7 +94,7 @@ EndGlobal
   
  Jeśli ma informacji do zapisania, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfejsu jest wywoływana za pomocą wskaźnika do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> Metoda następnie jest wywoływana przez środowisko w celu pobrania pary nazwa wartość z `IPropertyBag` interfejsu i zapisze informacje pliku sln.  
   
- `SaveSolutionProps`i `WriteSolutionProps` obiekty są nazywane rekursywnie przez środowisko można pobrać informacji o zapisane z `IPropertyBag` interfejsu, aż wszystkie zmiany wprowadzono w pliku sln. W ten sposób można upewnić się, że dane zostaną utrwalone z rozwiązania i dostępne następnym otwarciu rozwiązania.  
+ `SaveSolutionProps` i `WriteSolutionProps` obiekty są nazywane rekursywnie przez środowisko można pobrać informacji o zapisane z `IPropertyBag` interfejsu, aż wszystkie zmiany wprowadzono w pliku sln. W ten sposób można upewnić się, że dane zostaną utrwalone z rozwiązania i dostępne następnym otwarciu rozwiązania.  
   
  Aby sprawdzić, czy ma ona żadnych czynności, aby zapisać plik .sln wyliczeniu co załadowany pakiet VSPackage. Jest tylko w czasie ładowania, którego wysyłane są zapytania kluczy rejestru. Środowisko zna wszystkie pakiety załadowany ponieważ znajdują się w pamięci w czasie, który zapisano rozwiązania.  
   

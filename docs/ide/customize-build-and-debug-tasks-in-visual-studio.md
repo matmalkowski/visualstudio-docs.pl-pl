@@ -1,8 +1,8 @@
 ---
-title: "Dostosowywanie kompilacji i debugowanie zadań w programie Visual Studio przy użyciu tasks.vs.json i launch.vs.json | Dokumentacja firmy Microsoft"
+title: Dostosowywanie kompilacji i debugowanie zadań w programie Visual Studio przy użyciu tasks.vs.json i launch.vs.json | Dokumentacja firmy Microsoft
 ms.date: 02/21/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowanie zadań rozwoju "Otwórz Folder"
 
@@ -38,7 +38,7 @@ Dostosowywanie kodu bez projektu przy użyciu następujących *JSON* plików:
 Te *JSON* pliki znajdują się w ukrytym folderze o nazwie *.vs* w folderze głównym baza kodu. *Tasks.vs.json* i *launch.vs.json* pliki są tworzone przez program Visual Studio na zgodnie z potrzebami, po wybraniu **skonfigurować zadania** lub **debugowania Ustawienia uruchamiania i** do pliku lub folderu w **Eksploratora rozwiązań**. Te *JSON* pliki są ukryte, ponieważ użytkownicy zwykle nie chcesz sprawdzić ich do kontroli źródła. Jednak jeśli chcesz mieć możliwość sprawdzenia je do kontroli źródła, przeciągnij pliki w folderze głównym baza kodu, gdy są one widoczne.
 
 > [!TIP]
-> Aby wyświetlić ukryte pliki w programie Visual Studio, wybierz **Pokaż wszystkie pliki** przycisk na pasku narzędzi Eksplorator rozwiązań.
+> Aby wyświetlić ukryte pliki w programie Visual Studio, wybierz **Pokaż wszystkie pliki** znajdującego się na **Eksploratora rozwiązań** paska narzędzi.
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Definiowanie zadań z tasks.vs.json
 
@@ -54,7 +54,7 @@ Niestandardowe zadania można dodawać do pojedynczych plików lub do wszystkich
 
 Jeśli baza kodu używa narzędzia niestandardowej kompilacji, które nie rozpoznaje programu Visual Studio, nie można uruchomić i debugowania kodu w programie Visual Studio, dopóki nie zostaną wykonane, niektóre kroki konfiguracji. Program Visual Studio udostępnia *zadania kompilacji* w przypadku, gdy program Visual Studio można ustalić sposób tworzenia, ponowne skompilowanie i czyszczenie kodu. *Tasks.vs.json* kompilacji pozamałżeńskie pliku zadań narzędzi używanych przez baza kodu do kompilacji z pętli wewnętrzny programowania Visual Studio niestandardowe.
 
-Należy wziąć pod uwagę codebase, która składa się z jednego pliku C# o nazwie *hello.cs*. Pliku reguł programu make dla takich codebase może wyglądać następująco:
+Należy wziąć pod uwagę codebase, która składa się z jednego pliku C# o nazwie *hello.cs*. *Pliku reguł programu make* dla takich codebase może wyglądać następująco:
 
 ```makefile
 build: directory hello.exe
@@ -73,7 +73,7 @@ bin:
     md bin
 ```
 
-Dla takiego pliku reguł programu make zawierający kompilacji czystą i Odbuduj elementy docelowe, można określić następujące *tasks.vs.json* pliku. Zawiera trzy zadania kompilacji do tworzenia, ponownie skompilować i czyszczenia kodu za pomocą NMAKE jako narzędzie kompilacji.
+Na przykład *pliku reguł programu make* który zawiera kompilacji czystą i skompiluj ponownie elementy docelowe, można określić następujące *tasks.vs.json* pliku. Zawiera trzy zadania kompilacji do tworzenia, ponownie skompilować i czyszczenia kodu za pomocą NMAKE jako narzędzie kompilacji.
 
 ```json
 {
@@ -117,7 +117,7 @@ Dla takiego pliku reguł programu make zawierający kompilacji czystą i Odbuduj
 }
 ```
 
-Po zdefiniowaniu zadania kompilacji w *tasks.vs.json*, dodatkowy kontekst elementy menu są dodawane do odpowiednich plików w **Eksploratora rozwiązań**. Na przykład **kompilacji**, **odbudować**, i **wyczyść** opcje są dodawane do dowolnego menu kontekstowego *pliku reguł programu make* plików.
+Po zdefiniowaniu zadania kompilacji w *tasks.vs.json*, dodatkowy kontekst elementy menu są dodawane do odpowiednich plików w **Eksploratora rozwiązań**. Na przykład "kompilacji", "odbudować" i "Wyczyść" opcje są dodawane do dowolnego menu kontekstowego *pliku reguł programu make* plików.
 
 ![menu kontekstowe pliku reguł programu make z kompilacją, ponowne skompilowanie i czyszczenia](media/customize-build-rebuild-clean.png)
 
@@ -205,23 +205,23 @@ Można tworzyć zadania dla dowolnego pliku lub folderu, określając jej nazwę
 |-|-|
 |`"*"`| zadanie jest dostępna dla wszystkich plików i folderów w obszarze roboczym|
 |`"*/"`| zadanie jest dostępne dla wszystkich folderów w obszarze roboczym|
-|`"*.js"`| zadanie jest dostępny dla wszystkich plików z js rozszerzenia w obszarze roboczym|
-|`"/*.js"`| zadanie jest dostępny dla wszystkich plików z js rozszerzenia w katalogu głównym obszaru roboczego|
-|`"src/*/"`| zadanie jest dostępne dla wszystkich podfolderów folderu "src"|
-|`"makefile"`| zadanie jest dostępny dla wszystkich plików w pliku reguł programu make w obszarze roboczym|
-|`"/makefile"`| zadanie jest dostępne tylko w pliku reguł programu make w folderze głównym obszaru roboczego|
+|`"*.js"`| zadanie jest dostępny dla wszystkich plików z rozszerzeniem *js* w obszarze roboczym|
+|`"/*.js"`| zadanie jest dostępny dla wszystkich plików z rozszerzeniem *js* w folderze głównym obszaru roboczego|
+|`"src/*/"`| zadanie jest dostępne dla wszystkich podfolderów *src* folderu|
+|`"makefile"`| zadanie jest dostępna dla wszystkich *pliku reguł programu make* plików w obszarze roboczym|
+|`"/makefile"`| zadanie jest dostępne tylko dla *pliku reguł programu make* w folderze głównym obszaru roboczego|
 
 #### <a name="macros-for-tasksvsjson"></a>Makra dla tasks.vs.json
 
 |||
 |-|-|
 |`${env.<VARIABLE>}`| Określa wszelkie zmienna środowiskowa (na przykład ${env. ŚCIEŻKA} ${env.COMSPEC} itd.) dla wiersza polecenia dewelopera ustawiono. Aby uzyskać więcej informacji, zobacz [wiersz polecenia dla programu Visual Studio deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| Pełna ścieżka do folderu roboczego (na przykład "C:\sources\hello")|
-|`${file}`| Pełna ścieżka pliku lub folder wybrany do uruchomienia tego zadania przed (na przykład "C:\sources\hello\src\hello.js")|
-|`${relativeFile}`| Ścieżka względna do pliku lub folderu (na przykład "src\hello.js")|
-|`${fileBasename}`| Nazwa pliku bez ścieżki i rozszerzenia (na przykład "hello")|
-|`${fileDirname}`| Pełna ścieżka do pliku, z wyjątkiem nazwy pliku (na przykład "C:\sources\hello\src")|
-|`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład ".js")|
+|`${workspaceRoot}`| Pełna ścieżka do folderu roboczego (na przykład *C:\sources\hello*)|
+|`${file}`| Pełna ścieżka pliku lub folder wybrany do uruchomienia tego zadania przed (na przykład *C:\sources\hello\src\hello.js*)|
+|`${relativeFile}`| Ścieżka względna do pliku lub folderu (na przykład *src\hello.js*)|
+|`${fileBasename}`| Nazwa pliku bez ścieżki i rozszerzenia (na przykład *hello*)|
+|`${fileDirname}`| Pełna ścieżka do pliku, z wyjątkiem pliku (na przykład *C:\sources\hello\src*)|
+|`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład *js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Konfigurowanie debugowania z launch.vs.json
 

@@ -1,27 +1,25 @@
 ---
-title: "Pobieranie listy zainstalowanych fragmentów kodu (starsze) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pobieranie listy zainstalowanych fragmentów kodu (starsze) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 53d0a4fc5abc43bc446b3523cc7e8075eb7d4aa9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7ec48ee8ec7beffd66cec4266bc038b17a08a202
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Wskazówki: Pobieranie listy fragmentów kodu zainstalowanych (wykonanie starsza wersja)
 Fragment kodu jest fragment kodu, który można wstawiać do bufora źródłowego za pomocą polecenia menu, (co pozwala wybierania listę zainstalowanych wstawki) lub przez wybranie skrótów fragmentu w liście uzupełniania IntelliSense.  

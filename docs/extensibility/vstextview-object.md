@@ -1,30 +1,26 @@
 ---
 title: Obiekt VSTextView | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
 - VSTextView object, reference
 - views [Visual Studio SDK], reference
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f169c3302b3e6fd72e5017193e34836ed3e5340e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5be89d01a668fd05e70e73e31ffaf3742317c272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vstextview-object"></a>Obiekt VSTextView
 Widok tekstu jest oknem, które umożliwia użytkownikom wyświetlić i edytować tekst Unicode buforu tekstowego. Widok jest zasadniczo większość użytkowników zapoznaj się, jak edytor. Ponieważ widok jest oddzielony od buforu różnych warstw tekst (Zawijanie, zwijania tekstu i tak dalej), widok nie gwarantuje to dokładnie reprezentację tekstu w buforze. Aby uzyskać więcej informacji na temat widoku tekstu, zobacz [dostęp do theText widoku przy użyciu interfejsu API starsza wersja](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
@@ -38,7 +34,7 @@ Widok tekstu jest oknem, które umożliwia użytkownikom wyświetlić i edytowa�
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Standardowy interfejs OLE.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Standardowy interfejs OLE.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Umożliwia tworzenie złożonego akcje (to znaczy akcje, które są pogrupowane w jednostce pojedynczego Cofnij/ponów).|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Zapewnia podstawowe metody do zarządzania i dostęp do widoku. `IVsTextView`nie jest wątku bezpieczne.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Zapewnia podstawowe metody do zarządzania i dostęp do widoku. `IVsTextView` nie jest wątku bezpieczne.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Tworzy i którymi zarządza okienko okna.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Współdziała z warstwy tekstu.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Wykonuje operacje w widoku z innego wątku.|  

@@ -1,29 +1,25 @@
 ---
 title: Funkcja SccQueryInfo | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2838709d7c2c2ad6e6b1eeef36c2cc0018a1a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccqueryinfo-function"></a>Funkcja SccQueryInfo
 Ta funkcja uzyskuje informacje o stanie dla zestawu wybranych plików pod kontrolą źródła.  
@@ -69,11 +65,11 @@ SCCRTN SccQueryInfo(
   
  Korzystając z tej funkcji można wyewidencjonować plików, należy pamiętać, że `MSSCCI` stan wymagania:  
   
--   `SCC_STATUS_OUTBYUSER`jest ustawiona, jeśli bieżący użytkownik ma wyewidencjonowania pliku.  
+-   `SCC_STATUS_OUTBYUSER` jest ustawiona, jeśli bieżący użytkownik ma wyewidencjonowania pliku.  
   
--   `SCC_STATUS_CHECKEDOUT`Nie można ustawić, chyba że `SCC_STATUS_OUTBYUSER` jest ustawiona.  
+-   `SCC_STATUS_CHECKEDOUT` Nie można ustawić, chyba że `SCC_STATUS_OUTBYUSER` jest ustawiona.  
   
--   `SCC_STATUS_CHECKEDOUT`jest ustawiana tylko wtedy gdy plik jest wyewidencjonowany na wybrany katalog roboczy.  
+-   `SCC_STATUS_CHECKEDOUT` jest ustawiana tylko wtedy gdy plik jest wyewidencjonowany na wybrany katalog roboczy.  
   
 -   Jeśli plik jest wyewidencjonowany przez obecnego użytkownika w katalogu innym niż katalog roboczy `SCC_STATUS_OUTBYUSER` jest ustawiona, ale `SCC_STATUS_CHECKEDOUT` nie jest.  
   

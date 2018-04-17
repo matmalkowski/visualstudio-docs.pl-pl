@@ -1,34 +1,30 @@
 ---
-title: "Usługa Essentials | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Usługa Essentials | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>Usługa Essentials
-Usługa jest Umowa między dwoma VSPackages. Jeden pakiet VSPackage zawiera określony zbiór interfejsów dla innego pakiet VSPackage korzystać. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]jest to zbiór VSPackages udostępniająca usługi inne pakiety VSPackage.  
+Usługa jest Umowa między dwoma VSPackages. Jeden pakiet VSPackage zawiera określony zbiór interfejsów dla innego pakiet VSPackage korzystać. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest to zbiór VSPackages udostępniająca usługi inne pakiety VSPackage.  
   
  Na przykład można użyć usługi SVsActivityLog można uzyskać interfejsu IVsActivityLog, w którym można zapisać do dziennika aktywności. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dostępne są także niektóre wbudowane usługi, które nie zostały zarejestrowane. VSPackages można zastąpić wbudowanych lub innych usług, udostępniając zastąpienie usług. Zastąpienie tylko jedna usługa jest dozwolony dla usługi.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostępne są także niektóre wbudowane usługi, które nie zostały zarejestrowane. VSPackages można zastąpić wbudowanych lub innych usług, udostępniając zastąpienie usług. Zastąpienie tylko jedna usługa jest dozwolony dla usługi.  
   
  Usługi mają nie odnajdywania. W związku z tym musisz znać identyfikator usługi (SID), usługi, którą chcesz używać, i musi znać interfejsów, które zapewnia. Informacje te dokumentacji dla usługi.  
   
@@ -70,7 +66,7 @@ Czasami może być konieczne uzyskanie usługi okna narzędzia lub kontrolować 
   
 Większość usług programu Visual Studio można uzyskać przez wywołanie metody statycznych <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metody.  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>opiera się na usługi z pamięci podręcznej jest ulokowany dostawcy, który został zainicjowany po raz pierwszy żadnych pakiet VSPackage pochodzących z pakietu. Należy zagwarantować, że ten warunek jest spełniony, w przeciwnym razie należy przygotować usługę wartości null.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> opiera się na usługi z pamięci podręcznej jest ulokowany dostawcy, który został zainicjowany po raz pierwszy żadnych pakiet VSPackage pochodzących z pakietu. Należy zagwarantować, że ten warunek jest spełniony, w przeciwnym razie należy przygotować usługę wartości null.  
   
 Na szczęście <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> działa prawidłowo w większości przypadków.  
   

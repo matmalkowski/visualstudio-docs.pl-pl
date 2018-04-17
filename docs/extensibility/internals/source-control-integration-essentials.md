@@ -1,30 +1,28 @@
 ---
-title: "Podstawowe informacje dotyczące integracji kontroli źródła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Podstawowe informacje dotyczące integracji kontroli źródła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Essentials integracji kontroli źródła
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsługuje dwa typy integracji kontroli źródła: wtyczka do kontroli źródła zapewnia podstawowe funkcje, który jest utworzony przy użyciu API dodatku typu Plug-in kontroli źródła (znanego wcześniej jako interfejs API MSSCCI) i rozwiązania integracji kontroli źródła na podstawie pakiet VSPackage który zapewnia bardziej niezawodne funkcje.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa typy integracji kontroli źródła: wtyczka do kontroli źródła zapewnia podstawowe funkcje, który jest utworzony przy użyciu API dodatku typu Plug-in kontroli źródła (znanego wcześniej jako interfejs API MSSCCI) i rozwiązania integracji kontroli źródła na podstawie pakiet VSPackage który zapewnia bardziej niezawodne funkcje.  
   
 ## <a name="source-control-plug-in"></a>Wtyczka do kontroli źródła  
  Dodatek kontroli źródła są zapisywane jako bibliotekę DLL, która implementuje interfejs API dodatku typu Plug-in kontroli źródła. Funkcja integracji kontroli rejestracji i źródła jest zapewniana za pomocą interfejsu API. Ta metoda jest łatwiejsze do zaimplementowania niż kontroli źródła pakiet VSPackage i używa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika (UI) dla większości operacji kontroli źródła.  

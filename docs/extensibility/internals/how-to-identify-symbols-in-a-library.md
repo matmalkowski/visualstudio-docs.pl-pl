@@ -1,26 +1,24 @@
 ---
 title: 'Porady: Identyfikowanie symbole w bibliotece | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 60365f3722ae4e2c1f8b52dacc3df03840fb3304
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 310ba421120101ce545888bcf4c069ca454cf086
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Porady: Identyfikowanie symbole w bibliotece
 Przeglądanie symbol narzędzia wyświetlanie widoków hierarchiczna symboli. Symbole reprezentują przestrzeni nazw, obiektów, klas, elementy członkowskie klasy i inne elementy języka.  
@@ -31,7 +29,7 @@ Przeglądanie symbol narzędzia wyświetlanie widoków hierarchiczna symboli. Sy
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfoNode>  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.,  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
  Lokalizacja symbolu w hierarchii odróżnia symbolu. Umożliwia przeglądanie symbol narzędzia można przejść do określony symbol. Unikatowa, w pełni kwalifikowaną ścieżkę do symbolu Określa lokalizację. Każdy element w ścieżce jest węzłem. Ścieżka rozpoczyna się od węzła najwyższego poziomu i kończy określony symbol. Jeśli metoda M1 jest elementem członkowskim klasy C1 C1, a w przestrzeni nazw N1 pełną ścieżkę metody M1 jest N1. C1. M1. Ta ścieżka zawiera trzy węzły: N1, C1 i M1.  
   

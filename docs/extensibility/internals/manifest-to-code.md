@@ -1,22 +1,19 @@
 ---
 title: Manifestu do kodu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-to-code"></a>Manifestu do kodu
 Plik manifestu do narzędzia kodu to aplikacja konsolowa, która przyjmuje pliku .imagemanifest dla usługi Visual Studio obrazu i generuje lub pliku otoki dla odwołania do wartości manifestu obrazu w języku C++, C#, VB lub vsct plików dla rozszerzeń programu Visual Studio. Narzędzie to generuje otoki pliki, które mogą być używane dla żądania obrazów z programu Visual Studio obrazu usługi bezpośrednio lub przekazywania manifestu wartości za pośrednictwem interfejsów API, jeśli kod nie obsługuje własnego interfejsu użytkownika i renderowania.  

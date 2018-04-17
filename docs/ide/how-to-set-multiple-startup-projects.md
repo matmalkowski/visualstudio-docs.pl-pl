@@ -1,27 +1,23 @@
 ---
-title: "Porady: ustawianie wielu projektów startowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: ustawianie wielu projektów startowych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3d4ccb77a423ac254f5bba4846ffef3141c8de95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Porady: ustawianie wielu projektów startowych
 Program Visual Studio umożliwia określenie sposobu więcej niż jeden projekt jest uruchamiany, gdy uruchamiasz debuger.  

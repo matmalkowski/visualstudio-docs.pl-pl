@@ -1,32 +1,28 @@
 ---
-title: "Szablon zasad i w oknie właściwości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Szablon zasad i w oknie właściwości | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 759864533aa5bd3455a4e01c6642817107abb1a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-policy-and-the-properties-window"></a>Szablon zasad i w oknie właściwości
 Gdy projekt znajduje się wewnątrz szablonu projektu w przedsiębiorstwie, ten szablon projektu przedsiębiorstwa mogą wymusić zasady. Szablon zasad staje się ograniczający systemu, w którym można ustawić wartości domyślne dla właściwości, Ukryj właściwości, Dodaj właściwości i tak dalej.  
   
- Kontrola wyświetlania informacji w przy użyciu szablonu zasad **właściwości** okna różni się od wykonania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>obsługuje właściwości obiektów na poziomie składnika, podczas gdy szablonu zasad można ograniczyć właściwości obiektów na poziomie rozwiązania lub projektu. Innymi słowy  
+ Kontrola wyświetlania informacji w przy użyciu szablonu zasad **właściwości** okna różni się od wykonania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> obsługuje właściwości obiektów na poziomie składnika, podczas gdy szablonu zasad można ograniczyć właściwości obiektów na poziomie rozwiązania lub projektu. Innymi słowy  
   
 -   Implementacja metod na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> ustalenie, co jest wyświetlane w **właściwości** okna dla określonych obiektów  
   

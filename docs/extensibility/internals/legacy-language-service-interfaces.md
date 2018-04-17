@@ -1,31 +1,29 @@
 ---
-title: "Interfejsy usługi starszej wersji języka | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Interfejsy usługi starszej wersji języka | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b2861c4d6307442e1650b44d2b15f2a084ac7715
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy usługi starszej wersji języka
 Dla określonego języka programowania jednocześnie może istnieć tylko jedno wystąpienie usługi języka. Jednak usługa jeden język może obsługiwać więcej niż jeden z nich.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]kojarzy z dowolnego edytora określonego usługi języka. Dlatego w przypadku żądania operacji usługi języka, należy zidentyfikować odpowiedniego edytora jako parametr.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kojarzy z dowolnego edytora określonego usługi języka. Dlatego w przypadku żądania operacji usługi języka, należy zidentyfikować odpowiedniego edytora jako parametr.  
   
 ## <a name="common-interfaces-associated-with-language-services"></a>Wspólnych interfejsów związanych z usługami języka  
  Edytor pobiera usługi języka, wywołując <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> na odpowiedni pakiet VSPackage. Identyfikator przekazano to wywołanie usługi identyfikuje żądanej usługi języka.  
@@ -38,17 +36,17 @@ Dla określonego języka programowania jednocześnie może istnieć tylko jedno 
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock>(opcjonalnie)  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcjonalnie)  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Interfejs musi zostać wdrożone na wszystkich usług języka. Zawiera informacje dotyczące usługi języka, takie jak nazwa zlokalizowanego języka rozszerzeń nazw plików, które są skojarzone z usługi języka oraz jak pobierać colorizer.  
   
 ## <a name="additional-language-service-interfaces"></a>Interfejsy usługi dodatkowych języków  
- Można podać inne interfejsy przy użyciu usługi języka. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]żąda oddzielnego wystąpienia te interfejsy, dla każdego wystąpienia buforu tekstowego. W związku z tym należy zaimplementować każdego z tych interfejsów we własnym obiekcie. W poniższej tabeli przedstawiono interfejsów, które wymagają jedno wystąpienie każdego wystąpienia buforu tekstu.  
+ Można podać inne interfejsy przy użyciu usługi języka. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] żąda oddzielnego wystąpienia te interfejsy, dla każdego wystąpienia buforu tekstowego. W związku z tym należy zaimplementować każdego z tych interfejsów we własnym obiekcie. W poniższej tabeli przedstawiono interfejsów, które wymagają jedno wystąpienie każdego wystąpienia buforu tekstu.  
   
 |Interface|Opis|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Zarządza skojarzenia okna kodu, takie jak pasek listy rozwijanej. Ten interfejs można uzyskać za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> metody. Istnieje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> na okna kodu.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Kolorowania słów kluczowych języka i ograniczników. Ten interfejs można uzyskać za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metody. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>jest wywoływana w czasie malowania. Unikaj kolejkowego obliczeń wewnątrz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> lub wydajność może się pogorszyć.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Kolorowania słów kluczowych języka i ograniczników. Ten interfejs można uzyskać za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metody. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> jest wywoływana w czasie malowania. Unikaj kolejkowego obliczeń wewnątrz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> lub wydajność może się pogorszyć.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Zawiera elementy ToolTip parametru IntelliSense. Gdy usługa języka rozpoznaje znak, który wskazuje danych metody powinny być wyświetlane, takie jak nawias otwierający wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodę, aby powiadomić tekst widok usługi języka jest gotowy wyświetlić etykietkę informacji parametru. Widok tekstu następnie wywołuje do usługi języka przez przy użyciu metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfejsu można pobrać informacji wymaganych do wyświetlenia wskazówki.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Udostępnia instrukcji IntelliSense. Kiedy usługa języka jest gotowy do wyświetlenia listy uzupełniania, wywołuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody w widoku tekstu. Widok tekstu następnie wywołuje do usługi języka przez przy użyciu metod na <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> obiektu.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Umożliwia zmianę widoku tekstu przy użyciu programu obsługi poleceń. Klasy należy zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> również musi implementować interfejs <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Pobiera widoku tekstu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> obiektu badając <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> obiektu, która została przekazana do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metody. Powinny istnieć jedna <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> obiekt dla każdego widoku.|  

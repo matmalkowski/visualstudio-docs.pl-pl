@@ -1,27 +1,23 @@
 ---
-title: "Dodawanie elementów do Dodaj nowy element okien dialogowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie elementów do Dodaj nowy element okien dialogowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Dodawanie elementów do Dodaj nowy element okien dialogowych
 Dodawanie elementów do procesu **Dodaj nowy element** okno dialogowe rozpoczyna się od kluczy rejestru. Jak przedstawiono w następujących wpisach rejestru, w sekcji AddItemTemplates zawiera ścieżkę i nazwę katalogu, w które elementy udostępniona w **Dodaj nowy element** są umieszczane okno dialogowe.  
@@ -69,7 +65,7 @@ Dodawanie elementów do procesu **Dodaj nowy element** okno dialogowe rozpoczyna
  Na przykład w projektach Visual Basic, może być projekty sieci Web i projektów klienckich. Formularze sieci Web nie są przydatne elementy do dodania do projektu klienta i formularze systemu windows nie są przydatne elementy do dodania do projektu serwera sieci Web. W związku z tym można utworzyć jeden katalog szablonu, który zawiera wszystkie pliki dla obu typów projektów. Następnie zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, można ukryć elementy, które nie powinny być wyświetlane na podstawie typu projektu lub ustawienia projektu w projekcie.  
   
 ## <a name="filtering-project-items"></a>Filtrowanie elementów projektu  
- `IVsFilterAddProjectItemDlg2`udostępnia filtrowania elementów drzewa (lewe okienko) i pliki projektu (po prawej) w następujący sposób:  
+ `IVsFilterAddProjectItemDlg2` udostępnia filtrowania elementów drzewa (lewe okienko) i pliki projektu (po prawej) w następujący sposób:  
   
 -   Na podstawie zlokalizowanych nazw (podpisy wyświetlane w oknie dialogowym, który jest zawarty w pliku .vsdir) udzielane przez `IVsFilterAddProjectItemDlg`.  
   

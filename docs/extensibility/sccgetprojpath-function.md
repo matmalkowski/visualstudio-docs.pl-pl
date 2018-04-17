@@ -1,29 +1,25 @@
 ---
 title: Funkcja SccGetProjPath | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7ef5041b483e85e0806827f7d1188d432b476c5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetprojpath-function"></a>Funkcja SccGetProjPath
 Ta funkcja monituje użytkownika o ścieżkę projektu, który jest ciągiem, który jest przydatny tylko do wtyczkę kontroli źródła. Jest ona wywoływana, gdy użytkownik jest:  
@@ -98,14 +94,14 @@ SCCRTN SccGetProjPath (
 ## <a name="remarks"></a>Uwagi  
  Celem tej funkcji jest dla IDE w celu uzyskania parametry `lpProjName` i `lpAuxProjPath`. Po wtyczkę kontroli źródła monituje użytkownika o informacje, przekazuje te dwa ciągi do środowiska IDE. IDE będzie się powtarzać te ciągi w pliku rozwiązania i przekazuje je do [SccOpenProject](../extensibility/sccopenproject-function.md) zawsze, gdy użytkownik otwiera tego projektu. Te ciągi włączyć dodatek do śledzenia informacji skojarzone z projektem.  
   
- Podczas wywołania funkcji `lpAuxProjPath` jest ustawiony na pusty ciąg. `lProjName`może być pusta, lub może zawierać nazwy projektu IDE, która wtyczkę kontroli źródła może używać lub zignorować. Gdy funkcja zwraca wartość pomyślnie, wtyczkę zwraca dwa ciągi odpowiednie. IDE nie czyni żadnych założeń dotyczących te ciągi, nie będzie używać ich, a nie zezwoli użytkownikowi na modyfikowanie ich. Jeśli użytkownik chce zmienić ustawienia, wywoła IDE `SccGetProjPath` ponownie, przekazywanie w tej samej wartości otrzymała poprzednio. Dzięki temu wtyczki pełną kontrolę nad tych dwóch ciągów.  
+ Podczas wywołania funkcji `lpAuxProjPath` jest ustawiony na pusty ciąg. `lProjName` może być pusta, lub może zawierać nazwy projektu IDE, która wtyczkę kontroli źródła może używać lub zignorować. Gdy funkcja zwraca wartość pomyślnie, wtyczkę zwraca dwa ciągi odpowiednie. IDE nie czyni żadnych założeń dotyczących te ciągi, nie będzie używać ich, a nie zezwoli użytkownikowi na modyfikowanie ich. Jeśli użytkownik chce zmienić ustawienia, wywoła IDE `SccGetProjPath` ponownie, przekazywanie w tej samej wartości otrzymała poprzednio. Dzięki temu wtyczki pełną kontrolę nad tych dwóch ciągów.  
   
  Aby uzyskać `lpUser`, IDE może przekazać nazwę użytkownika lub po prostu może przekazywać do ciągu pustego wskaźnika. W przypadku nazwy użytkownika, wtyczkę kontroli źródła należy używać go jako domyślny. Jednak nie przekazano żadnej nazwy lub nazwy logowania nie powiodła się o podanej nazwie, wtyczkę należy Monituj użytkownika o logowania i hasło ponownie nazwę `lpUser` po otrzymaniu prawidłową nazwą logowania. Ponieważ wtyczki mogą zmienić tego ciągu, IDE zawsze spowoduje przydzielenie buforu o rozmiarze (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
 >  Pierwszą akcją, który wykonuje IDE może być wywołania `SccOpenProject` funkcji lub `SccGetProjPath` funkcji. W związku z tym obie z nich ma takie same `lpUser` parametr, który umożliwia logowania użytkownika w każdej chwili wtyczkę kontroli źródła. Nawet jeśli powrót z funkcji oznacza błąd, wtyczkę należy podać ten ciąg z prawidłową nazwą logowania.  
   
- `lpLocalPath`jest to katalog, w którym użytkownik przechowuje projektu. Może on być pustym ciągiem. Jeśli nie ma katalog nie jest obecnie zdefiniowane (jak w przypadku próby pobrania projektu z systemu kontroli źródła użytkownika) oraz jeśli `bAllowChangePath` jest `TRUE`, wtyczkę kontroli źródła można monit o podanie danych wejściowych lub użyć innej metody do umieszczenia jej ciąg do własnych `lpLocalPath`. Jeśli `bAllowChangePath` jest `FALSE`, wtyczka nie należy zmieniać ciągu, ponieważ użytkownik pracuje się już w określonym katalogu.  
+ `lpLocalPath` jest to katalog, w którym użytkownik przechowuje projektu. Może on być pustym ciągiem. Jeśli nie ma katalog nie jest obecnie zdefiniowane (jak w przypadku próby pobrania projektu z systemu kontroli źródła użytkownika) oraz jeśli `bAllowChangePath` jest `TRUE`, wtyczkę kontroli źródła można monit o podanie danych wejściowych lub użyć innej metody do umieszczenia jej ciąg do własnych `lpLocalPath`. Jeśli `bAllowChangePath` jest `FALSE`, wtyczka nie należy zmieniać ciągu, ponieważ użytkownik pracuje się już w określonym katalogu.  
   
  Jeśli użytkownik tworzy nowy projekt, które należy umieścić pod kontrolą źródła, wtyczkę kontroli źródła może nie powoduje utworzenia go w systemie kontroli źródła w czasie `SccGetProjPath` jest wywoływana. Zamiast tego ponownie przekazuje ciąg wraz z różną od zera wartość `pbNew`, wskazując, że projekt zostanie utworzony w systemie kontroli źródła.  
   
