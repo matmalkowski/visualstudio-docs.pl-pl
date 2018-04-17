@@ -1,12 +1,10 @@
 ---
 title: 'CA1412: Oznacz interfejsy ComSource jako IDispatch | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkComSourceInterfacesAsIDispatch
 - CA1412
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1412
 - MarkComSourceInterfacesAsIDispatch
 ms.assetid: 131a7563-0410-443c-a8f5-52104250cfb4
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2523397f59affa2d7e1e60e69e7ba2047438135
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cca84ed1470d43df2163de265e15a7efcbce0b62
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Oznacz interfejsy ComSource jako IDispatch
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Typ jest oznaczony atrybutem <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybut i co najmniej jeden określony interfejs nie jest oznaczony atrybutem <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> ustawić atrybutu `InterfaceIsDispatch` wartość.  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>Służy do identyfikowania interfejsów zdarzeń, które udostępnia klasy do klientów modelu COM (Component Object). Te interfejsy musi być udostępniany jako `InterfaceIsIDispatch` aby umożliwić klientom Visual Basic 6 COM otrzymywać powiadomienia o zdarzeniach. Domyślnie, jeśli interfejs nie jest oznaczony atrybutem <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutu jest uwidaczniany jako interfejs podwójny.  
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> Służy do identyfikowania interfejsów zdarzeń, które udostępnia klasy do klientów modelu COM (Component Object). Te interfejsy musi być udostępniany jako `InterfaceIsIDispatch` aby umożliwić klientom Visual Basic 6 COM otrzymywać powiadomienia o zdarzeniach. Domyślnie, jeśli interfejs nie jest oznaczony atrybutem <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutu jest uwidaczniany jako interfejs podwójny.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby naprawić naruszenie tej reguły, dodawania lub modyfikowania <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atrybutu, dzięki czemu jego wartość jest równa InterfaceIsIDispatch dla wszystkich interfejsów, które są określane za pomocą <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atrybutu.  

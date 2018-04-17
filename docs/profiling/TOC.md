@@ -1,6 +1,6 @@
 
 # [Dokumentacja profilowania](index.md)
-# Omówienie
+# [Omówienie](profiling-overview.md)
 # Przewodniki Szybki Start
 ## [Pierwsze spojrzenie na profilowanie](profiling-feature-tour.md)
 ## [Analizowanie użycia procesora CPU (zarządzane)](quickstart-cpu-usage-managed.md)
@@ -208,15 +208,15 @@
 ##### [Szybkie profilowanie witryny internetowej za pomocą polecenia VSPerfASPNETCmd](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [Zbieranie statystyk aplikacji dla aplikacji internetowych ASP.NET przy użyciu metody próbkowania profilera z wiersza polecenia](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [Instrukcje: dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [Zbieranie szczegółowych danych o chronometrażu dla aplikacji internetowej ASP.NET przy użyciu metody instrumentacji profilera z wiersza polecenia](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [Zbieranie szczegółowych danych o chronometrażu dla aplikacji internetowej ASP.NET przy użyciu metody instrumentacji profilera z wiersza polecenia](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [Instrukcje: instrumentacja statycznie skompilowanej aplikacji internetowej ASP.NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [Instrukcje: instrumentacja dynamicznie skompilowanej aplikacji internetowej ASP.NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [Instrukcje: instrumentacja dynamicznie skompilowanej aplikacji internetowej ASP.NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [Zbieranie danych współbieżności dla aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [Instrukcje: dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania danych współbieżności przy użyciu wiersza polecenia](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [Zbieranie danych pamięci z aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [Instrukcje: dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [Instrukcje: instrumentacja statycznie skompilowanej aplikacji internetowej ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [Instrukcje: instrumentacja dynamicznie skompilowanej aplikacji internetowej ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [Instrukcje: instrumentacja dynamicznie skompilowanej aplikacji internetowej ASP.NET i zbieranie danych pamięci przy użyciu wiersza polecenia profilera](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [Instrukcje: modyfikowanie plików Web.Config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji internetowych ASP.NET](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [Profilowanie wiersza polecenia usług](command-line-profiling-of-services.md)
 ##### [Zbieranie statystyk aplikacji dla usług przy użyciu metody próbkowania profilera](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)
