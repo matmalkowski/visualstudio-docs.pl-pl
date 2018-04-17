@@ -1,12 +1,10 @@
 ---
 title: Zachowanie funkcji dodawania adnotacji | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -20,16 +18,16 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 60cebdd015263ac5d05045e168d3f1063e0527a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9c061c12e7c34a67692af41b72ea7b04b6f06e07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-behavior"></a>Zachowanie funkcji dodawania adnotacji
 Oprócz Dodawanie adnotacji do [parametry funkcji i wartości zwracane](../code-quality/annotating-function-parameters-and-return-values.md), może dodawać adnotacje do właściwości całej funkcji.  
@@ -39,7 +37,7 @@ Oprócz Dodawanie adnotacji do [parametry funkcji i wartości zwracane](../code-
   
 |Adnotacja|Opis|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|Nie ma na celu autonomicznie; Zamiast tego jest predykat ma być używany z `_When_` adnotacji. Aby uzyskać więcej informacji, zobacz [określenie podczas i gdzie adnotacji stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Parametr jest dowolny ciąg, który jest także wyświetlany w `_Function_class_` adnotacji w deklaracji niektórych funkcji.  `_Called_from_function_class_`Zwraca wartość niezerową, jeśli funkcję, która jest aktualnie analizowany jest adnotowany przy użyciu `_Function_class_` mający taką samą wartość `name`; w przeciwnym razie zwraca wartość zero.|  
+|`_Called_from_function_class_(name)`|Nie ma na celu autonomicznie; Zamiast tego jest predykat ma być używany z `_When_` adnotacji. Aby uzyskać więcej informacji, zobacz [określenie podczas i gdzie adnotacji stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Parametr jest dowolny ciąg, który jest także wyświetlany w `_Function_class_` adnotacji w deklaracji niektórych funkcji.  `_Called_from_function_class_` Zwraca wartość niezerową, jeśli funkcję, która jest aktualnie analizowany jest adnotowany przy użyciu `_Function_class_` mający taką samą wartość `name`; w przeciwnym razie zwraca wartość zero.|  
 |`_Check_return_`|Oznacza wartość zwracaną i Stany wywołującego należy sprawdzić go. Narzędzie do sprawdzania zgłasza błąd, jeśli funkcja jest wywoływana w kontekście void.|  
 |`_Function_class_(name)`|`name` Parametr jest dowolny ciąg, który został wybrany przez użytkownika.  Istnieje w przestrzeni nazw, która różni się od innych przestrzeniach nazw. Funkcja, wskaźnik funkcji, lub — najbardziej korzyścią — typ wskaźnika funkcji mogą być oznaczone jako należące do co najmniej jedna klasa funkcji.|  
 |`_Raises_SEH_exception_`|Oznacza funkcję, która zawsze zgłasza wyjątek strukturalnej obsługi wyjątków strukturalnych, podlegają `_When_` i `_On_failure_` warunki. Aby uzyskać więcej informacji, zobacz [określenie podczas i gdzie adnotacji stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
@@ -54,8 +52,8 @@ Oprócz Dodawanie adnotacji do [parametry funkcji i wartości zwracane](../code-
 |----------------|-----------------|  
 |`_Always_(anno_list)`|Odpowiednikiem `anno_list _On_failure_(anno_list)`; oznacza to, że adnotacje w `anno_list` zastosować czy funkcja zakończy się pomyślnie.|  
 |`_On_failure_(anno_list)`|Ma być używany tylko wtedy, gdy `_Success_` służy również do adnotacji funkcja — albo jawnie lub niejawnie za pośrednictwem `_Return_type_success_` na jako element typedef. Gdy `_On_failure_` adnotacji jest obecny w funkcji lub wartość zwrotną, każdej adnotacji w `anno_list` (roku) zachowuje się tak, jakby był on zakodowane jako `_When_(!expr, anno)`, gdzie `expr` jest parametrem wymaganym `_Success_` adnotacji. Oznacza to, że domniemanych stosowania `_Success_` na wszystkie warunki po nie ma zastosowania do `_On_failure_`.|  
-|`_Return_type_success_(expr)`|Mogą być stosowane jako element TypeDef. Wskazuje, że wszystkie funkcje zwracające, wpisz i jawnie nie mają `_Success_` mają adnotacje, jak gdyby `_Success_(expr)`. `_Return_type_success_`Nie można użyć funkcji lub typedef wskaźnika funkcji.|  
-|`_Success_(expr)`|`expr`to wyrażenie zwracające r-wartości. Gdy `_Success_` adnotacji jest obecny w deklaracji funkcji lub definicji, każdej adnotacji (`anno`) w funkcji i w stanie po zachowuje się tak, jakby był on zakodowane jako `_When_(expr, anno)`. `_Success_` Adnotacji mogą być używane tylko w funkcji, nie na jego parametrów lub typ zwrotny. Może istnieć co najwyżej jedna `_Success_` adnotacja dla funkcji, a nie może być w dowolnym `_When_`, `_At_`, lub `_Group_`. Aby uzyskać więcej informacji, zobacz [określenie podczas i gdzie adnotacji stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
+|`_Return_type_success_(expr)`|Mogą być stosowane jako element TypeDef. Wskazuje, że wszystkie funkcje zwracające, wpisz i jawnie nie mają `_Success_` mają adnotacje, jak gdyby `_Success_(expr)`. `_Return_type_success_` Nie można użyć funkcji lub typedef wskaźnika funkcji.|  
+|`_Success_(expr)`|`expr` to wyrażenie zwracające r-wartości. Gdy `_Success_` adnotacji jest obecny w deklaracji funkcji lub definicji, każdej adnotacji (`anno`) w funkcji i w stanie po zachowuje się tak, jakby był on zakodowane jako `_When_(expr, anno)`. `_Success_` Adnotacji mogą być używane tylko w funkcji, nie na jego parametrów lub typ zwrotny. Może istnieć co najwyżej jedna `_Success_` adnotacja dla funkcji, a nie może być w dowolnym `_When_`, `_At_`, lub `_Group_`. Aby uzyskać więcej informacji, zobacz [określenie podczas i gdzie adnotacji stosuje](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

@@ -1,22 +1,22 @@
 ---
-title: "Instalowanie narzędzi AI programu Visual Studio"
-description: "Instalacja narzędzi AI programu Visual Studio"
+title: Instalowanie narzędzi AI programu Visual Studio
+description: Instalacja narzędzi AI programu Visual Studio
 keywords: AI, programu visual studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 93e28558b1d09ded8de5bc6c4eb45230435cb807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installation"></a>Instalacja
 
@@ -134,7 +134,7 @@ pip3.5 install -U numpy scipy
 
 > [!NOTE]
 >
-> Powyższe polecenia uaktualnień istniejących starych lub nieoficjalny (np. pakiety innych firm z http://www.lfd.uci.edu/~gohlke/pythonlibs/ dla systemu Windows) NumPy i SciPy najnowsze te oficjalnego.
+> Powyżej uaktualnień polecenia istniejących starych lub nieoficjalny (np. pakiety innych firm z http://www.lfd.uci.edu/~gohlke/pythonlibs/ dla systemu Windows) NumPy i SciPy najnowsze te oficjalnego.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Kognitywnych zestaw narzędzi firmy Microsoft (CNTK)
 

@@ -1,23 +1,21 @@
 ---
-title: "Ustaw podstawowych reguł poprawności dla zarządzanego kodu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Ustaw podstawowych reguł poprawności dla zarządzanego kodu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3b40f8844b76f7c5fafcadff6c3c20ac9b607dd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 Zestaw reguł podstawowe reguły poprawności koncentruje się na błędów logicznych i typowych pomyłek przy używaniu framework interfejsów API. Podstawowe reguły poprawności obejmują reguły w zestawie reguł reguł zalecanych Minimum. Aby uzyskać więcej informacji, zobacz [ustawić zarządzane zalecane reguły dla zarządzanego kodu](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) powinna zawierać tę regułę, ustaw, aby rozszerzyć listę ostrzeżeń, że minimalna zalecana raportu reguł.  
@@ -39,7 +37,7 @@ Zestaw reguł podstawowe reguły poprawności koncentruje się na błędów logi
 |[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Punkty wejścia P/Invoke powinny istnieć|  
 |[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invoke nie powinny być widoczne|  
 |[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Typy z automatycznym układem nie powinny być widoczne dla modelu COM|  
-|[CA1404 NALEŻY](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Wywołać GetLastError natychmiast po P/Invoke|  
+|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Wywołać GetLastError natychmiast po P/Invoke|  
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Typy podstawowe typu widocznego modelu COM powinny być widoczne dla modelu COM|  
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Metody rejestracji modelu COM powinny być zgodne.|  
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Poprawnie zadeklarować P/Invoke|  
@@ -47,7 +45,7 @@ Zestaw reguł podstawowe reguły poprawności koncentruje się na błędów logi
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Pola typu wartości powinny być przenośne|  
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Deklaracje P/Invoke powinny być przenośne|  
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Nie blokuj obiektów o słabej tożsamości|  
-|[CA2100 NALEŻY](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Sprawdź zapytania SQL w poszukiwaniu luk w zabezpieczeniach|  
+|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Sprawdź zapytania SQL w poszukiwaniu luk w zabezpieczeniach|  
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Określ kierowanie dla argumentów ciągu P/Invoke|  
 |[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Przejrzyj zabezpieczenia deklaratywne dla typów wartości|  
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Wskaźniki nie powinny być widoczne|  

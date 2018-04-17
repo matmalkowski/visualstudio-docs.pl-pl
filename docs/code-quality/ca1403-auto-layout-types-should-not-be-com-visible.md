@@ -1,12 +1,10 @@
 ---
-title: "CA1403: Typy automatycznego układu nie powinny być widoczne dla modelu COM | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA1403: Typy automatycznego układu nie powinny być widoczne dla modelu COM | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
 - CA1403
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1403
 - AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7da04d7ecda3e47239bd865812c6fbd05428ac09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a0b13ba365383b312b467940641b020d75478c46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typy automatycznego układu nie powinny być widoczne dla modelu COM
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Typ wartości widocznych składnika modelu COM (Object) jest oznaczony atrybutem <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> ustawić atrybutu <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.Runtime.InteropServices.LayoutKind>Układ typy są zarządzane przez środowisko uruchomieniowe języka wspólnego. Układ te typy, można zmienić między wersjami programu .NET Framework, która spowoduje zerwanie klientów modelu COM, w których jest oczekiwany określony układ. Należy pamiętać, że jeśli <xref:System.Runtime.InteropServices.StructLayoutAttribute> atrybut nie jest określony, C#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], i określ kompilatory C++ <xref:System.Runtime.InteropServices.LayoutKind> układu dla typów wartości.  
+ <xref:System.Runtime.InteropServices.LayoutKind> Układ typy są zarządzane przez środowisko uruchomieniowe języka wspólnego. Układ te typy, można zmienić między wersjami programu .NET Framework, która spowoduje zerwanie klientów modelu COM, w których jest oczekiwany określony układ. Należy pamiętać, że jeśli <xref:System.Runtime.InteropServices.StructLayoutAttribute> atrybut nie jest określony, C#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], i określ kompilatory C++ <xref:System.Runtime.InteropServices.LayoutKind> układu dla typów wartości.  
   
  O ile nie jest oznaczony jako inaczej, wszystkie typy nierodzajowe publiczne są widoczne dla modelu COM; wszystkie typy niepubliczne i rodzajowy nie są widoczne dla modelu COM. Aby ograniczyć liczbę fałszywych alarmów, ta zasada wymaga jednak widoczność modelu COM typu, który ma być jawnie podanym; muszą być oznaczone zestawu zawierającego <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> ustawioną `false` i typ musi być oznaczone <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną `true`.  
   

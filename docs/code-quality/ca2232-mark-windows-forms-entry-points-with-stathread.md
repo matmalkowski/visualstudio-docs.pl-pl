@@ -1,12 +1,10 @@
 ---
-title: "CA2232: Punkty wejścia formularzy systemu Windows znak za pomocą STAThread | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA2232: Punkty wejścia formularzy systemu Windows znak za pomocą STAThread | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2232
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe12ce5947a22414aaf07c59945fd667b106101f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d28300d33d02fa4ca11ee1b7110a10a677b64bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Oznacz punkty wpisu formularzy systemu Windows za pomocą STAThread
 |||  
@@ -37,10 +35,10 @@ ms.lasthandoff: 12/22/2017
  Odwołuje się do zestawu <xref:System.Windows.Forms> przestrzeni nazw, a jego punktu wejścia nie jest oznaczony atrybutem <xref:System.STAThreadAttribute?displayProperty=fullName> atrybutu.  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.STAThreadAttribute>Wskazuje jednowątkowego apartamentu COM wątkowość modelu dla aplikacji. Atrybut ten musi być obecny w punkcie wejścia każdej aplikacji korzystającej z Windows Forms; jeśli zostanie pominięty, składniki systemu Windows mogą nie działać poprawnie. Jeśli ten atrybut nie jest obecny, aplikacja używa modelu typu apartment wielowątkowe, który nie jest obsługiwana dla formularzy systemu Windows.  
+ <xref:System.STAThreadAttribute> Wskazuje jednowątkowego apartamentu COM wątkowość modelu dla aplikacji. Atrybut ten musi być obecny w punkcie wejścia każdej aplikacji korzystającej z Windows Forms; jeśli zostanie pominięty, składniki systemu Windows mogą nie działać poprawnie. Jeśli ten atrybut nie jest obecny, aplikacja używa modelu typu apartment wielowątkowe, który nie jest obsługiwana dla formularzy systemu Windows.  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]nie trzeba oznaczyć projektów, które używają struktury aplikacji **Main** metody za pomocą STAThread. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilatora zrobi to automatycznie.  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nie trzeba oznaczyć projektów, które używają struktury aplikacji **Main** metody za pomocą STAThread. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilatora zrobi to automatycznie.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby naprawić naruszenie tej reguły, Dodaj <xref:System.STAThreadAttribute> atrybutu do punktu wejścia. Jeśli <xref:System.MTAThreadAttribute?displayProperty=fullName> obecny jest atrybut, usuń go.  

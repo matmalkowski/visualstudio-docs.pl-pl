@@ -1,21 +1,19 @@
 ---
 title: 'CA3076: Wykonywanie skryptu niezabezpieczonych XSLT | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66d415b792558dce91de0205ee688fecb5caa182
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Wykonywanie skryptu niezabezpieczonych XSLT
 
@@ -34,11 +32,11 @@ Jeśli nimi wykonane arkusze stylów języka przekształcenia XSLT (Extensible) 
 
 **XSLT** jest standardem sieci World Wide Web konsorcjum W3C do transformacji danych XML. XSLT jest zwykle używana podczas zapisu arkusze stylów do transformacji danych XML w innych formatach, takich jak HTML, stała długość tekstu, tekst rozdzielany przecinkami lub innego formatu XML. Mimo że zabronione domyślnie, możesz ją włączyć dla projektu.
 
-Aby upewnić się, nie jest ujawniany ataku, ta zasada wyzwala po każdej zmianie XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> odbiera wystąpień niezabezpieczonych kombinacja <xref:System.Xml.Xsl.XsltSettings> i <xref:System.Xml.XmlResolver>, która pozwala na przetwarzanie złośliwy skrypt.
+Aby upewnić się, nie jest ujawniany ataku, ta zasada wyzwala po każdej zmianie XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> odbiera wystąpień niezabezpieczonych kombinacja <xref:System.Xml.Xsl.XsltSettings> i <xref:System.Xml.XmlResolver>, która pozwala na przetwarzanie złośliwy skrypt.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- Zastąp niezabezpieczonych argument XsltSettings XsltSettings. <xref:System.Xml.Xsl.XsltSettings.Default%2A> lub przy użyciu wystąpienia wyłączonego dokumentu wykonywania funkcji i skryptów.
+- Zastąp niezabezpieczonych argument XsltSettings XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> lub z wystąpieniem, które ma wyłączone dokumentu wykonywania funkcji i skryptów.
 
 - Zastąp <xref:System.Xml.XmlResolver> argument o wartości null lub <xref:System.Xml.XmlSecureResolver> wystąpienia.
 
@@ -48,7 +46,7 @@ Jeśli nie masz pewności, czy dane wejściowe jest znany jako z zaufanego źró
 
 ## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violation&mdash;uses XsltSettings.TrustedXslt
+### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Naruszenie&mdash;używa XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;  
@@ -69,7 +67,7 @@ namespace TestNamespace
 } 
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Solution&mdash;use XsltSettings.Default
+### <a name="solutionmdashuse-xsltsettingsdefault"></a>Rozwiązanie&mdash;Użyj XsltSettings.Default
 
 ```csharp
 using System.Xml;
@@ -144,4 +142,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Zobacz także
 
-[XSLT Security Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)
+[Zagadnienia dotyczące zabezpieczeń XSLT (Przewodnik .NET)](/dotnet/standard/data/xml/xslt-security-considerations)

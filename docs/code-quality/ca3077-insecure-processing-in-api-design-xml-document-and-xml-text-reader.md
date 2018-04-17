@@ -1,23 +1,21 @@
 ---
 title: 'CA3077: Przetwarzanie niezabezpieczonych projekt interfejsu API, dokument XML i czytnika tekstu XML | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0cd580ca1764c037cf4c209cc8a1aa7144ab4175
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f660ee98462b46e5ac5a8ab23cdf17288c995c87
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Przetwarzanie niezabezpieczonych projekt interfejsu API, dokument XML i czytnika tekstu XML
 |||  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Opis reguły  
  A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora składni XML można określić ważności dokumentu, zgodnie z definicją w [sieci World Wide Web konsorcjum W3C XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła ma właściwości i gdzie niezaufanych danych jest akceptowany w celu ostrzegania o deweloperów o możliwości wystąpienia [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:  
   
--   <xref:System.Xml.XmlDocument>lub <xref:System.Xml.XmlTextReader> klasy użyj domyślny program rozpoznawania nazw wartości dla przetwarzanie elementu DTD.  
+-   <xref:System.Xml.XmlDocument> lub <xref:System.Xml.XmlTextReader> klasy użyj domyślny program rozpoznawania nazw wartości dla przetwarzanie elementu DTD.  
   
 -   Żaden konstruktor nie jest zdefiniowany dla obiektu XmlDocument lub klasy pochodne klasy XmlTextReader lub nie bezpiecznego wartość jest używana w przypadku <xref:System.Xml.XmlResolver>.  
   

@@ -1,12 +1,10 @@
 ---
-title: "CA1041: Zapewnianie wiadomości ObsoleteAttribute | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA1041: Zapewnianie wiadomości ObsoleteAttribute | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1041
 - ProvideObsoleteAttributeMessage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ProvideObsoleteAttributeMessage
 - CA1041
 ms.assetid: be5bee69-d2d2-44e1-be2e-3ea451969003
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7536130842c78ca2c00bab1afc3caf842e02cba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc851ef4b4ef1cdca9bdb1f9692d3bbc7f0a795c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Zapewnianie wiadomości ObsoleteAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Typ lub element członkowski jest oznaczony przy użyciu <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybut, który nie ma jej <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> określona właściwość.  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.ObsoleteAttribute>Służy do oznaczania przestarzałe biblioteki typów i członków. Konsumenci biblioteki należy unikać użycia dowolnego typu lub elementu członkowskiego, który jest oznaczony jako przestarzały. Jest tak, ponieważ nie może być obsługiwany i po pewnym czasie zostaną usunięte z nowszej wersji biblioteki. Gdy typ lub element członkowski oznaczony za pomocą <xref:System.ObsoleteAttribute> jest kompilowana <xref:System.ObsoleteAttribute.Message%2A> właściwości atrybutu jest wyświetlany. Dostarcza to informacje użytkownika o przestarzałym typie lub elemencie członkowskim. Informacje te obejmują zazwyczaj jak długo przestarzałego typu lub elementu członkowskiego, które będą obsługiwane przez projektantów biblioteki i zastąpienia preferowany do użycia.  
+ <xref:System.ObsoleteAttribute> Służy do oznaczania przestarzałe biblioteki typów i członków. Konsumenci biblioteki należy unikać użycia dowolnego typu lub elementu członkowskiego, który jest oznaczony jako przestarzały. Jest tak, ponieważ nie może być obsługiwany i po pewnym czasie zostaną usunięte z nowszej wersji biblioteki. Gdy typ lub element członkowski oznaczony za pomocą <xref:System.ObsoleteAttribute> jest kompilowana <xref:System.ObsoleteAttribute.Message%2A> właściwości atrybutu jest wyświetlany. Dostarcza to informacje użytkownika o przestarzałym typie lub elemencie członkowskim. Informacje te obejmują zazwyczaj jak długo przestarzałego typu lub elementu członkowskiego, które będą obsługiwane przez projektantów biblioteki i zastąpienia preferowany do użycia.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby naprawić naruszenie tej reguły, Dodaj `message` parametr <xref:System.ObsoleteAttribute> konstruktora.  

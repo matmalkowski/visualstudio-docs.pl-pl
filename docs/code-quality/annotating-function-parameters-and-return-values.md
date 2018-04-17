@@ -1,12 +1,10 @@
 ---
-title: "Dodawanie adnotacji do parametrów funkcji i zwracanych wartości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie adnotacji do parametrów funkcji i zwracanych wartości | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 W tym artykule opisano typowe zastosowania adnotacji do parametrów funkcji proste — wartości skalarne i wskaźniki do struktur i klas — i większość typów buforów.  W tym artykule przedstawiono również typowe wzorce użycia dla adnotacji. Aby uzyskać dodatkowe adnotacje dotyczące funkcji, zobacz [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ W tym artykule opisano typowe zastosowania adnotacji do parametrów funkcji pros
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     W tym przykładzie, wywołujący zapewnia bufor `size` elementy `p1`.  `MyStringCopy`sprawia, że niektóre z tych elementów prawidłową. Co więcej `_Null_terminated_` adnotacji na `PWSTR` oznacza, że `p1` jest zakończony wartością null w stanie po.  W ten sposób liczbę elementów prawidłową jest nadal dobrze zdefiniowany, ale liczba określony element nie jest wymagana.  
+     W tym przykładzie, wywołujący zapewnia bufor `size` elementy `p1`.  `MyStringCopy` sprawia, że niektóre z tych elementów prawidłową. Co więcej `_Null_terminated_` adnotacji na `PWSTR` oznacza, że `p1` jest zakończony wartością null w stanie po.  W ten sposób liczbę elementów prawidłową jest nadal dobrze zdefiniowany, ale liczba określony element nie jest wymagana.  
   
      `_bytes_` Variant daje rozmiar w bajtach zamiast elementów. Użyj tego tylko wtedy, gdy rozmiar nie może być wyrażona jako elementy.  Na przykład `char` użyje ciągów `_bytes_` korzysta z wariantu tylko wtedy, gdy podobnych funkcji `wchar_t` czy.  
   

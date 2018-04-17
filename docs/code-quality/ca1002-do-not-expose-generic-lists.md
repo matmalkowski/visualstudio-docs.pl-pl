@@ -1,12 +1,10 @@
 ---
-title: "CA1002: Nie ujawniaj list ogólnych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA1002: Nie ujawniaj list ogólnych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotExposeGenericLists
 - CA1002
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1002
 - DoNotExposeGenericLists
 ms.assetid: 5caac810-1a79-47df-a27b-c46c5040bf34
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d98b088b663eca89b04ea264a582a062d324a473
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9aa12ea2d611d2e60e46665368b668e9c578db5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Nie ujawniaj list generycznych
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Typ zawiera widoczne na zewnątrz elementu członkowskiego, który jest <xref:System.Collections.Generic.List%601?displayProperty=fullName> wpisz zwraca <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu lub którego sygnatura zawiera <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametru.  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>jest kolekcją ogólnego, który zaprojektowano pod kątem wydajności i dziedziczenie nie. <xref:System.Collections.Generic.List%601?displayProperty=fullName>nie zawiera wirtualnych elementów członkowskich, które ułatwiają zmianę zachowania dziedziczonej klasie. Następujące kolekcje ogólne są przeznaczone dla dziedziczenia i powinny zostać ujawnione zamiast <xref:System.Collections.Generic.List%601?displayProperty=fullName>.  
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> jest kolekcją ogólnego, który zaprojektowano pod kątem wydajności i dziedziczenie nie. <xref:System.Collections.Generic.List%601?displayProperty=fullName> nie zawiera wirtualnych elementów członkowskich, które ułatwiają zmianę zachowania dziedziczonej klasie. Następujące kolekcje ogólne są przeznaczone dla dziedziczenia i powinny zostać ujawnione zamiast <xref:System.Collections.Generic.List%601?displayProperty=fullName>.  
   
 -   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>  
   

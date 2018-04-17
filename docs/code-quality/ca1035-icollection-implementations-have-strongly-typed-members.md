@@ -1,12 +1,10 @@
 ---
-title: "CA1035: Implementacje ICollection mają silnie typizowane elementy członkowskie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA1035: Implementacje ICollection mają silnie typizowane elementy członkowskie | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - ICollectionImplementationsHaveStronglyTypedMembers
 - CA1035
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1035
 - ICollectionImplementationsHaveStronglyTypedMembers
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3e595046442092c11b068b6df6fde2a9a56e705
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 82703b6572b1c491fba118360fc07ddda1b0c61f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementacje ICollection mają silnie typizowane elementy członkowskie
 |||  
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Opis reguły  
  Ta zasada wymaga <xref:System.Collections.ICollection> implementacje zapewnienie silnie typizowane elementy członkowskie, dzięki czemu użytkownicy nie są wymagane do rzutowania argumentów <xref:System.Object> wpisz przy korzystaniu z funkcji dostępnych za pośrednictwem interfejsu. Ta zasada przyjęto założenie, że typ, który zawiera <xref:System.Collections.ICollection> ma tak, aby zarządzać kolekcję wystąpień typu, który jest mocniejszy niż element <xref:System.Object>.  
   
- <xref:System.Collections.ICollection>implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejsu. Jeśli rozszerzenie obiektów w kolekcji <xref:System.ValueType?displayProperty=fullName>, należy podać element jednoznacznie dla <xref:System.Collections.IEnumerable.GetEnumerator%2A> w celu uniknięcia spadek wydajności, który jest spowodowany przez opakowanie. Nie jest to wymagane w przypadku obiektów kolekcji typu odwołania.  
+ <xref:System.Collections.ICollection> implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejsu. Jeśli rozszerzenie obiektów w kolekcji <xref:System.ValueType?displayProperty=fullName>, należy podać element jednoznacznie dla <xref:System.Collections.IEnumerable.GetEnumerator%2A> w celu uniknięcia spadek wydajności, który jest spowodowany przez opakowanie. Nie jest to wymagane w przypadku obiektów kolekcji typu odwołania.  
   
  Aby zaimplementować silnie typizowaną wersję elementu członkowskiego interfejsu, implementować członków interfejsu a jawnie przy użyciu nazw w formie `InterfaceName.InterfaceMemberName`, takich jak <xref:System.Collections.ICollection.CopyTo%2A>. Elementy członkowskie interfejsu jawnego Użyj typów danych, które są zadeklarowane w interfejsie. Implementowanie jednoznacznie elementów przy użyciu nazwy elementu członkowskiego interfejsu, takich jak <xref:System.Collections.ICollection.CopyTo%2A>. Deklarowanie silnie typizowane elementy członkowskie jako public i deklarować parametrów i zwracają wartości były silnego typu, który jest zarządzany przez kolekcję. Silne typy Zastąp słabszych typów, takich jak <xref:System.Object> i <xref:System.Array> który został zadeklarowany w interfejsie.  
   

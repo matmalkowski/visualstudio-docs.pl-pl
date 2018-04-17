@@ -1,12 +1,10 @@
 ---
-title: "CA2201: Nie wywołuj zastrzeżonych typów wyjątków | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA2201: Nie wywołuj zastrzeżonych typów wyjątków | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nie wywołuj zastrzeżonych typów wyjątków
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |Opis parametru|Wyjątek|  
 |---------------------------|---------------|  
-|`null`Odwołanie|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` Odwołanie|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |Poza dozwolonym zakresem wartości (na przykład indeks dla kolekcji lub listy)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |Nieprawidłowy `enum` wartość|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |Zawiera formatu, który nie spełnia wymagań parametru metody (np. ciąg formatu w celu `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |W przeciwnym razie jest nieprawidłowy|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Jeśli operacja jest nieprawidłowa dla bieżącego stanu obiektu throw<xref:System.InvalidOperationException?displayProperty=fullName>  
+ Jeśli operacja jest nieprawidłowa dla bieżącego stanu obiektu throw <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Po wykonaniu operacji na obiekcie, który został usunięty throw<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ Po wykonaniu operacji na obiekcie, który został usunięty throw <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Jeśli operacja nie jest obsługiwana (np. klastry obliczeniowe przesłoniętych **Stream.Write** w strumieniu otwarty do odczytu) throw<xref:System.NotSupportedException?displayProperty=fullName>  
+ Jeśli operacja nie jest obsługiwana (np. klastry obliczeniowe przesłoniętych **Stream.Write** w strumieniu otwarty do odczytu) throw <xref:System.NotSupportedException?displayProperty=fullName>  
   
- Podczas konwersji spowodowałaby przepełnienie (np. przeciążenia operatora rzutowania jawnego) throw<xref:System.OverflowException?displayProperty=fullName>  
+ Podczas konwersji spowodowałaby przepełnienie (np. przeciążenia operatora rzutowania jawnego) throw <xref:System.OverflowException?displayProperty=fullName>  
   
  W innych sytuacjach należy rozważyć utworzenie własnych typu pochodzącego od <xref:System.Exception> i który throw.  
   
