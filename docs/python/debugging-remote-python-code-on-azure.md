@@ -1,27 +1,24 @@
 ---
-title: Azure zdalnego debugowania języka Python | Dokumentacja firmy Microsoft
+title: Debugowanie zdalne z Python platformy Azure
 description: Jak skonfigurować usługę aplikacji Azure używać programu Visual Studio zdalne debugowanie aplikacji Python.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d74e4425bfcaefbd1bb13e368ee719acaa3bae80
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: c6666b16b2a00e505dcd6fe016a07ea896441bf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Zdalne debugowanie kodu Python na platformie Azure
 

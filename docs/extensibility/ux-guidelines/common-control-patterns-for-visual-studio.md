@@ -1,26 +1,24 @@
 ---
-title: "Wspólne wzorce formantu dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wspólne wzorce formantu dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Wspólne wzorce formantu dla programu Visual Studio
-##  <a name="BKMK_CommonControls"></a>Formanty standardowe  
+##  <a name="BKMK_CommonControls"></a> Formanty standardowe  
   
 ### <a name="overview"></a>Omówienie  
 Formanty standardowe tworzą większość interfejsu użytkownika w programie Visual Studio. Należy stosować najbardziej wspólnych kontrolek używanych w interfejsie programu Visual Studio [wytyczne interakcji z pulpitu systemu Windows](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Ten temat jest przeznaczony dla programu Visual Studio i obejmuje sytuacji specjalnych lub uzyskać szczegółowe informacje, które rozszerzyć tymi wytycznymi systemu Windows.  
@@ -52,10 +50,10 @@ Przede wszystkim należy wziąć pod uwagę podczas style formantów jest, czy f
   
 -   **Narzędzia systemu windows, edytory dokumentu, projektów i motywów okien dialogowych:** używać specjalnych wygląd kompozycji przy użyciu usługi kolorów.  
   
-###  <a name="BKMK_Scrollbars"></a>Paski przewijania  
+###  <a name="BKMK_Scrollbars"></a> Paski przewijania  
  Paski przewijania, należy stosować [paski przewijania typowe wzorce interakcji dla systemu Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx) , chyba że są one rozszerzone przy użyciu informacji o zawartości, takich jak w edytorze kodu.  
   
-###  <a name="BKMK_InputFields"></a>Pól wejściowych  
+###  <a name="BKMK_InputFields"></a> Pól wejściowych  
  Dla zachowania typowe interakcji, wykonaj [wytyczne pulpitu systemu Windows dla pól tekstowych](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Stylu wizualnego.  
@@ -78,7 +76,7 @@ Przede wszystkim należy wziąć pod uwagę podczas style formantów jest, czy f
   
      ![Popraw długość pola wejściowego: pole wejściowe jest uzasadnione szerokość oczekiwanej zawartości. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Popraw długość pola wejściowego: pole wejściowe jest uzasadnione szerokość oczekiwanej zawartości.
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Pola kombi oraz listy rozwijane  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pola kombi oraz listy rozwijane  
 Dla zachowania typowe interakcji, wykonaj [Windows Desktop wytyczne dotyczące listy rozwijane i pola kombi](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Stylu wizualnego.  
@@ -94,7 +92,7 @@ Pola kombi i listach rozwijanych należy ustalać w celu dopasowania do zawarto�
   
 ![Poprawne: listy rozwijanej jest dopasowywany do umożliwienia wzrostu tłumaczenia, ale nie niepotrzebnie długie. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Poprawne: listy rozwijanej jest dopasowywany do umożliwienia wzrostu tłumaczenia, ale nie niepotrzebnie długie. 
   
-###  <a name="BKMK_CheckBoxes"></a>Zaznaczanie pól  
+###  <a name="BKMK_CheckBoxes"></a> Zaznaczanie pól  
 Dla zachowania typowe interakcji, wykonaj [wytycznych pulpitu systemu Windows dla pola wyboru](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Stylu wizualnego.  
@@ -113,7 +111,7 @@ Dla zachowania typowe interakcji, wykonaj [wytycznych pulpitu systemu Windows dl
   
      ![Poprawne: pole wyboru jest wyrównywana z pierwszego wiersza tekstu. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Poprawne: pole wyboru jest wyrównywana z pierwszego wiersza tekstu.
   
-###  <a name="BKMK_RadioButtons"></a>Przyciski opcji  
+###  <a name="BKMK_RadioButtons"></a> Przyciski opcji  
 Dla zachowania typowe interakcji, wykonaj [Windows Desktop wytyczne dotyczące przycisków radiowych](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Stylu wizualnego.  
@@ -122,7 +120,7 @@ W oknach dialogowych narzędzia czy nie styl przycisków radiowych. Użyj styl p
 #### <a name="specialized-interactions"></a>Interakcje specjalne  
 Nie jest konieczne wykorzystywane są ramki grupy wybór opcji, chyba że należy przestrzegać rozróżnienie grup w układzie ścisłej.  
   
-###  <a name="BKMK_GroupFrames"></a>Grupy ramki  
+###  <a name="BKMK_GroupFrames"></a> Grupy ramki  
 Dla zachowania typowe interakcji, wykonaj [Windows Desktop wytyczne dotyczące grupy ramek](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Stylu wizualnego.  
@@ -136,7 +134,7 @@ W oknach dialogowych narzędzia nie stylu ramki grupy. Użyj styl podstawowy wew
   
 -   Czasami jest dopuszczalne do korzystania z linią poziomą zamiast kontener ramki grupy.  
   
-##  <a name="BKMK_TextControls"></a>Kontrolki tekstu
+##  <a name="BKMK_TextControls"></a> Kontrolki tekstu
 
 ### <a name="static-text-fields"></a>Statyczne pola tekstowe
 
@@ -217,7 +215,7 @@ Dynamiczny tekst może być używany jeden z dwóch sposobów, w oknie dialogowy
 
 Jeśli chcesz mieć możliwość kopiowania informacje użytkownicy dynamiczny tekst powinien być w pole tekstowe tylko do odczytu.
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>Przyciski i hiperłącza  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> Przyciski i hiperłącza  
   
 ### <a name="overview"></a>Omówienie  
 Formanty łącza i przycisków (hiperłącza) należy stosować [podstawowe wskazówki pulpitu systemu Windows na hiperłącza](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx) do użycia, terminologię, zmiany rozmiaru i odstępy.  
@@ -331,11 +329,11 @@ Postępuj zgodnie z [Windows Desktop wskazówki dotyczące tekst interfejsu uży
   
 -   Podkreślenia nie są wyświetlane na aktywowany. Zamiast tego opinię do użytkownika, czy łącze jest aktywne jest zmiana kolorów nieznaczne i kursora odpowiednie łącze.  
   
-##  <a name="BKMK_TreeViews"></a>Widok drzewa  
+##  <a name="BKMK_TreeViews"></a> Widok drzewa  
   
 Widok drzewa zapewniają sposób organizowania złożonych wymieniono w grupy nadrzędny podrzędny. Użytkownik może rozwinąć lub zwinąć grupy nadrzędne, aby pokazać lub ukryć podstawowe elementy podrzędne. Aby dostarczyć więcej akcji można wybrać każdego elementu w widoku drzewa.  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>Styl wizualny widoku drzewa  
+###  <a name="BKMK_TreeViewVisualStyle"></a> Styl wizualny widoku drzewa  
   
 #### <a name="expanders"></a>Ekspanderów znajdujących  
 Formanty widoku drzewa powinna być zgodna z projektu expander, używane przez system Windows i programu Visual Studio. Każdy węzeł będzie używał kontrolki expander Wyświetl lub Ukryj podstawowych elementów. Za pomocą kontrolki expander zapewnia spójność dla użytkowników, którzy mogą występować w widokach innego drzewa w ramach systemu Windows i programu Visual Studio.  
@@ -359,7 +357,7 @@ Paski przewijania zawsze powinien być ukryty, jeśli zawartość mieści się w
   
 ![Oba paski przewijania poziome i pionowe są wyświetlane, ponieważ zawartość przekroczenia limitu kontrolki widoku drzewa. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Oba paski przewijania poziome i pionowe są wyświetlane, ponieważ zawartość przekroczenia limitu kontrolki widoku drzewa.
   
-###  <a name="BKMK_TreeViewInteractions"></a>Interakcje widoku drzewa  
+###  <a name="BKMK_TreeViewInteractions"></a> Interakcje widoku drzewa  
   
 #### <a name="context-menus"></a>Menu kontekstowe  
 Węzła widoku drzewa może ujawnić opcje podmenu w menu kontekstowym. Zazwyczaj dzieje, gdy użytkownik kliknął prawym przyciskiem myszy element lub naciśnięty klawisz Menu na klawiaturze systemu Windows z wybranego elementu. Jest ważne, czy węzeł zyskuje fokus i wybrano. Dzięki temu użytkownikowi w poznaniu podmenu należy do elementu.  

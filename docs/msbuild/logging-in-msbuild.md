@@ -1,26 +1,22 @@
 ---
 title: Rejestrowanie w programie MSBuild | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c6392dcf887074ec36fb9c6434d2e9437da3f2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 44b7b20b4c8194c932315a051afa808a2ac26bbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="logging-in-msbuild"></a>Logowanie w programie MSBuild
 Rejestrowanie umożliwia można monitorować postęp kompilacji. Przechwytywanie rejestrowanie kompilacji zdarzenia, komunikaty ostrzeżeń i błędów w pliku dziennika.  

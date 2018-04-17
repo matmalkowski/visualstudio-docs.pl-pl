@@ -1,12 +1,9 @@
 ---
-title: "TARGET — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: TARGET — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe87cf8af6c5c2cbb63153f0d82988bd44800519
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 24397a88d90b86a28cdc1836792cc1dd5061a2e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="target-element-msbuild"></a>Target — Element (MSBuild)
 Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.  
@@ -100,7 +96,7 @@ Zawiera zestaw zadań związanych z [!INCLUDE[vstecmsbuild](../extensibility/int
 
  Jeśli użytkownik określi `Returns` na dowolnym `Target` element w projekcie, a następnie tylko te `Target`s, który ma `Returns` atrybutu rejestrowanie tych elementów.  
 
- A `Target` może zawierać zarówno `Outputs` atrybutu i `Returns` atrybutu.  `Outputs`jest używany z `Inputs` do ustalenia, czy element docelowy jest aktualny. `Returns`, jeśli jest obecny, wartość przesłania `Outputs` ustalenie, elementy, które są zwracane do wywoływania.  Jeśli `Returns` nie jest obecny, następnie `Outputs` będą dostępne dla kodu wywołującego, z wyjątkiem w tym przypadku opisanego wcześniej.  
+ A `Target` może zawierać zarówno `Outputs` atrybutu i `Returns` atrybutu.  `Outputs` jest używany z `Inputs` do ustalenia, czy element docelowy jest aktualny. `Returns`, jeśli jest obecny, wartość przesłania `Outputs` ustalenie, elementy, które są zwracane do wywoływania.  Jeśli `Returns` nie jest obecny, następnie `Outputs` będą dostępne dla kodu wywołującego, z wyjątkiem w tym przypadku opisanego wcześniej.  
 
  Przed MSBuild 4, który wtedy `Target` dołączony wiele odwołań do tego samego elementu w jego `Outputs`, zduplikowane pozycje są rejestrowane. W bardzo dużych kompilacji, który ma dużą liczbę wyjść i wiele zależnościami projektu, spowodowałoby dużej ilości pamięci do niewykorzystana, ponieważ zduplikowane elementy nie zostały użycia. Gdy `KeepDuplicateOutputs` atrybut ma ustawioną `true`, te duplikaty są rejestrowane.  
 

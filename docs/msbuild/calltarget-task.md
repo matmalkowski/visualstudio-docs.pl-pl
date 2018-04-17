@@ -1,12 +1,9 @@
 ---
-title: "Calltarget — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Calltarget — zadanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - CallTarget task [MSBuild]
 - MSBuild, CallTarget task
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 339882fadba46dc0a42c6796d135e761a3554e9c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: eb209524f5e116441743521591752e5f4d64adc6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calltarget-task"></a>CallTarget — Zadanie
 Wywołuje określone elementy docelowe w pliku projektu.  

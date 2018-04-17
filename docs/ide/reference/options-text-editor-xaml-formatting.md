@@ -1,13 +1,10 @@
 ---
 title: Opcje, Edytor tekstu, XAML, formatowanie | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -31,17 +28,16 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ba33419f0d1d69a65b494149798fefc8a7dcb6d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 401e0f6c5da01413042eb30f336a7e2081e84ba1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
 Użyj **formatowanie** strony właściwości, aby określić sposób formatowania elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń pozycję **Edytor tekstu**, **XAML**, **formatowanie** węzła.  
@@ -84,7 +80,7 @@ Można określić zdarzenia, które powodują automatyczne formatowanie.
 |||  
 |-|-|  
 |**Zawijaj tagi przekraczające określoną długość**|Określa, czy wiersze są ujęte w wierszu długości określonej przez **długość**.|  
-|**Długość**|Liczba znaków, które mogą zawierać wiersza. W razie potrzeby wiersze XAML może przekraczać długości określonej linii.|  
+|**długość**|Liczba znaków, które mogą zawierać wiersza. W razie potrzeby wiersze XAML może przekraczać długości określonej linii.|  
 
 ## <a name="attribute-spacing"></a>Odstępy atrybutów  
  Użyj tego ustawienia, aby kontrolować sposób rozmieszczenia atrybutów w dokumencie XAML  

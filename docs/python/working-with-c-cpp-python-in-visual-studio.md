@@ -1,16 +1,13 @@
 ---
-title: Praca z C++ i Python | Dokumentacja firmy Microsoft
+title: Praca z C++ i języku Python
 description: Kroki procesu amd zapisu rozszerzenia C++ lub modułu dla języka Python w programie Visual Studio
 ms.custom: ''
 ms.date: 04/03/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -18,11 +15,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: d7545f22f7fd19d37cfdbe90839ff83bd9d0ec38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -130,7 +127,7 @@ Aby uzyskać więcej informacji, zobacz [instalowanie obsługę języka Python d
     | --- | --- | --- |
     | Ogólne | Ogólne > nazwa docelowa | Określ nazwę modułu, jak chcesz odwołuje się do niego w języku Python w `from...import` instrukcje. W języku C++ będą używać tej samej nazwie, definiując modułu dla języka Python. Jeśli chcesz użyć nazwy projektu z nazwą modułu, pozostaw wartość domyślną `$(ProjectName)`. |
     | | Ogólne > celem rozszerzenia | .pyd |
-    | | Domyślne ustawienia projektu > typ konfiguracji | Dynamic Library (.dll) |
+    | | Domyślne ustawienia projektu > typ konfiguracji | Dynamiczna Biblioteka (dll) |
     | C/C++ > Ogólne | Dodatkowe katalogi dołączenia | Dodaj Python `include` folder na potrzeby instalacji, na przykład `c:\Python36\include`.  |
     | C/C++ > preprocesora | Definicje preprocesora | Dodaj `Py_LIMITED_API;` na początku ciąg (w tym średnik). Ta definicja ogranicza niektórych funkcji, można wywołać w języku Python i sprawia, że kod przenośną między różnymi wersjami programu Python. |
     | C/C++ > Generowanie kodu | Biblioteka środowiska uruchomieniowego | Biblioteki DLL wielowątkowych (/ MD) (zobacz poniżej ostrzeżenia) |
@@ -323,7 +320,7 @@ Istnieją różne sposoby tworzenia rozszerzenia języka Python, zgodnie z opise
 | --- | --- | --- | --- | --- |
 | Moduły rozszerzenia C/C++ dla języka CPython | 1991 | Standardowa biblioteka | [Szczegółową dokumentację i samouczki](https://docs.python.org/3/c-api/). Pełną kontrolę. | Kompilacja, przenośność, zarządzanie odwołania. Wysoka C wiedzy. |
 | [pybind11](https://github.com/pybind/pybind11) (zalecane dla języka C++) | 2015 |  | Biblioteka niewielka, tylko nagłówek do tworzenia powiązań Python z istniejącego kodu C++. Kilka zależności. Zgodność PyPy. | Nowsze, mniej dojrzała. Dużego wykorzystania funkcji C ++ 11. Krótką listę obsługiwanych kompilatory (Visual Studio jest dołączony). |
-| Cython (Recommnded dla języka C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Python-like. Wysoce dojrzała. Wysoka wydajność. | Kompilacja, nowej składni, nowy łańcuch narzędzi. |
+| Cython (Recommnded dla języka C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Notacji języka Python. Wysoce dojrzała. Wysoka wydajność. | Kompilacja, nowej składni, nowy łańcuch narzędzi. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Współdziała z prawie każdego kompilator języka C++. | Pakiet dużych i złożonych bibliotek; zawiera wiele obejścia kompilatory stary. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nie kompilacji szeroki dostępności. | Uzyskiwanie dostępu do i mutacja struktury C skomplikowane i błąd podatnych na błędy. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generowanie jednocześnie powiązania dla wielu języków. | Nadmierne obciążenie w przypadku języka Python tylko docelowy. |

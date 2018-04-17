@@ -1,12 +1,9 @@
 ---
-title: LC Task | Microsoft Docs
+title: LC — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#LC
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, LC task
 - LC task [MSBuild]
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
-caps.latest.revision: 15
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf308bb5693363406bb954cdb63ab5fd25772cb9
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 1c73be0f9ebdb10f6d9222d6d16b9d83b1dbb36b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lc-task"></a>LC — Zadanie
 LC.exe zawija generuje plik .license z .licx — plik. Aby uzyskać więcej informacji o LC.exe, zobacz [Lc.exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).  

@@ -1,24 +1,20 @@
 ---
-title: "Konfigurowanie obiektów docelowych i zadań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Konfigurowanie obiektów docelowych i zadań | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38e6145d351a9c026dd4bb5c4105a3606a71f591
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43249e976839ad216fc479427a1e160d2850abc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurowanie obiektów docelowych i zadań
 Można skonfigurować program MSBuild obiektów docelowych i zadań w celu uruchomienia poza procesem przy użyciu programu MSBuild, dzięki czemu można wskazać kontekstach, które różnią się od pierwszego są uruchomione na. Na przykład możesz zastosować 32-bitowej aplikacji .NET Framework 2.0 jest uruchomiona na komputerze deweloperskim na 64-bitowym systemie operacyjnym program .NET Framework 4.5. Możesz też określić komputerach przy użyciu programu .NET Framework 4 lub starszej. W połączeniu z 32 - lub 64-bitowości określoną wersję systemu .NET Framework jest nazywany *kontekst docelowy*.  
@@ -34,4 +30,4 @@ Można skonfigurować program MSBuild obiektów docelowych i zadań w celu uruch
  Aby utworzyć własny kontekst docelowy, należy odpowiednio ustawione tych argumentów i parametrów. Poszukaj w pliku Microsoft.Common.targets programu .NET Framework 4.5 i pliku Microsoft.Common.Tasks przykłady.  Aby uzyskać informacji na temat sposobu Utwórz niestandardowe zadanie, którego można używać z wielu kontekstów docelowej lub sposobu modyfikowania istniejących zadań, zobacz [porady: Konfigurowanie obiektów docelowych i zadań](../msbuild/how-to-configure-targets-and-tasks.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+ [Przeznaczanie dla wielu platform](../msbuild/msbuild-multitargeting-overview.md)

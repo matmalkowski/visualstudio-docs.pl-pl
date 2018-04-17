@@ -1,13 +1,10 @@
 ---
-title: 'Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio'
 description: W tego przewodnika Szybki Start możesz użyć programu Visual Studio do tworzenia aplikacji sieci web proste w języku Python przy użyciu platformy Flask.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 0666fa6fcb169ada6cb2a495e1c91290b127ce24
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web języka Python
 
@@ -121,7 +118,7 @@ Teraz możesz dodać bitowego kodu języka Python do wdrożenia aplikacji sieci 
 
 **Pytanie: Gdzie można dowiedzieć się więcej na temat platformy Flask?**
 
-**Odpowiedzi**: można znaleźć w dokumentacji platformy Flask, począwszy od [szybkiego startu Flask](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Odpowiedzi**: można znaleźć w dokumentacji platformy Flask, począwszy od [szybkiego startu Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 

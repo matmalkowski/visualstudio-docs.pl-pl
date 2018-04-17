@@ -1,24 +1,21 @@
 ---
-title: "Tworzenie szablonów projektów dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie szablonów projektów dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
 - project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0da7a7979b4fed6f58cdda6f1eafa55517e4df9b
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: d489d09238aba17352f528e73d8c81c2733c0b47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-project-templates"></a>Porady: Tworzenie szablonów projektów
 

@@ -1,27 +1,23 @@
 ---
-title: "Analizowanie danych użycia procesora CPU (zarządzany kod) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Analizowanie danych użycia procesora CPU (zarządzany kod) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 557b64815360e61f77365f509f96f40bd37ffed6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: e94aa17419cca3944f3a884b49069b29c4a24e8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analizowanie danych użycia procesora CPU w programie Visual Studio (zarządzany kod)
 

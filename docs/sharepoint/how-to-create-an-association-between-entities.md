@@ -1,13 +1,10 @@
 ---
-title: "Porady: Tworzenie skojarzenia między jednostkami | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Tworzenie skojarzenia między jednostkami | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 49b4d68a8d957462954c998d96e9309944cdb9f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c341586fbd2a22f38385a6c613058318f5c2d6a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Porady: tworzenie skojarzenia między jednostkami
   Można zdefiniować relacji między obiektami modelu łączności danych biznesowych (BDC) przez utworzenie skojarzenia. Program Visual Studio generuje metod, zapewniających konsumentów modelu z informacji na temat każdego skojarzenia. Te metody mogą być używane przez składniki web Part programu SharePoint, listy lub niestandardowych aplikacji, aby wyświetlić relacji danych w interfejsie użytkownika (UI).  

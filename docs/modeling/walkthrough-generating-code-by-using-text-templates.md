@@ -1,24 +1,22 @@
 ---
-title: "Wskazówki: Generowanie kodu przy użyciu szablonów tekstowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Generowanie kodu przy użyciu szablonów tekstowych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 46cbf0c6a28b10434ed364dffd77c4c01620d6ea
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7099edb08216cd91858a20e65c7bb2fede786977
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Wskazówki: generowanie kodu przy użyciu szablonów tekstowych
 Generowanie kodu służy do tworzenia kodu program, który jest silnie typizowane i jeszcze można łatwo zmienić po zmianie modelu źródłowego. Natomiast to alternatywny technice zapisywania całkowicie ogólny program, który akceptuje w pliku konfiguracji, który jest bardziej elastyczna, ale wyniki w kodzie, który nie jest tak łatwe do odczytu i zmienić, ani nie ma takich dobrą wydajność. W tym przewodniku przedstawiono takich korzyści.  
@@ -212,7 +210,7 @@ class Song {}
  Niestety, chociaż ten szablon generuje kod, generuje deklaracji klasy dla każdego węzła w przykładowy plik XML, dzięki czemu Jeśli istnieje kilka wystąpień `<song>` węzła, pojawi się kilka deklaracji utworu klasy.  
   
 ### <a name="read-the-model-file-then-generate-the-code"></a>Odczytanie pliku modelu, a następnie generowania kodu  
- Wiele szablonów tekstowych wykonaj wzorzec, w którym pierwsza część szablonu odczytuje plik źródłowy, a druga część generuje szablon. Należy odczytać wszystkich przykładowy plik Podsumowując typy węzłów, które zawiera, a następnie wygeneruj deklaracji klasy. Inny `<#@import#>` jest potrzebna, dzięki czemu możemy użyć`Dictionary<>:`  
+ Wiele szablonów tekstowych wykonaj wzorzec, w którym pierwsza część szablonu odczytuje plik źródłowy, a druga część generuje szablon. Należy odczytać wszystkich przykładowy plik Podsumowując typy węzłów, które zawiera, a następnie wygeneruj deklaracji klasy. Inny `<#@import#>` jest potrzebna, dzięki czemu możemy użyć `Dictionary<>:`  
   
 ```  
 <#@ template debug="false" hostspecific="true" language="C#" #>  

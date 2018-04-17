@@ -1,26 +1,22 @@
 ---
 title: Strona opcji Projektant XAML | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1158a9fb39f9f848aa6fd326fbff85238cd87013
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xaml-designer-options-page"></a>Strona opcji projektanta XAML
 
@@ -49,7 +45,7 @@ To ustawienie służy do kontrolowania, kiedy i jak projektanta XAML jest wyświ
 |||  
 |-|-|  
 |**Pionowe**|Źródło XAML jest wyświetlana po lewej stronie widoku XAML, a po drugiej stronie zostanie wyświetlona projektanta XAML.|  
-|**Poziomy**|Projektant XAML jest wyświetlana w górnej części widoku XAML i źródła XAML jest wyświetlana poniżej.|  
+|**poziomy**|Projektant XAML jest wyświetlana w górnej części widoku XAML i źródła XAML jest wyświetlana poniżej.|  
 |**Default**|Dokument XAML używa orientację podziału zalecane dla platformy docelowej projektu dokumentu. Dla większości platform, co jest równoważne **poziome**.|  
 
 ## <a name="zoom-by-using"></a>Powiększenie przy użyciu

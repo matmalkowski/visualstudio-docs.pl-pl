@@ -1,13 +1,10 @@
 ---
-title: "Rozszerzanie pakowania i wdrażania SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozszerzanie pakowania i wdrażania SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>Rozszerzanie pakowania i wdrażania SharePoint
   Można rozszerzyć pakowania i proces wdrażania dla projektów programu SharePoint.
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  Aby uzyskać wskazówki, który demonstruje sposób tworzenia kroku wdrożenia, zobacz [wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ##  <a name="creating-deployment-configurations"></a>Tworzenie konfiguracji wdrażania  
- Konfiguracja wdrożenia jest zestaw kroków wdrażania, który jest wykonywane dla danego projektu, ale może mieć wpływ na wszystkie SharePoint — elementy projektu. Każdy konfiguracji wdrożenia zawiera jeden zestaw kroków, które jest wykonywane podczas wdrażania projektu, a innego zestawu, który zostanie wykonany po wycofany projektu. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]obejmuje dwie konfiguracje wdrożenia wbudowanych, ale mogą także tworzyć własne. Podczas tworzenia konfiguracji wdrożenia może zawierać kroki wdrażania wbudowanych i kroki wdrażania, które można utworzyć.  
+ Konfiguracja wdrożenia jest zestaw kroków wdrażania, który jest wykonywane dla danego projektu, ale może mieć wpływ na wszystkie SharePoint — elementy projektu. Każdy konfiguracji wdrożenia zawiera jeden zestaw kroków, które jest wykonywane podczas wdrażania projektu, a innego zestawu, który zostanie wykonany po wycofany projektu. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] obejmuje dwie konfiguracje wdrożenia wbudowanych, ale mogą także tworzyć własne. Podczas tworzenia konfiguracji wdrożenia może zawierać kroki wdrażania wbudowanych i kroki wdrażania, które można utworzyć.  
   
  Aby uzyskać wskazówki, który demonstruje sposób tworzenia konfiguracji wdrażania, zobacz [wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   

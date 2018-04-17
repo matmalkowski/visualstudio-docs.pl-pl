@@ -1,23 +1,21 @@
 ---
 title: Uruchamianie | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3b8a584e8e024416ec9c3feca63297eed4497624
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11f9e850c43c615b6878bd1ff9e18be313bf1a79
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launch"></a>Uruchom
 **Uruchamianie** opcja uruchamiania przy użyciu metody próbkowania profilera i rozpoczyna się również określonej aplikacji.  
@@ -37,7 +35,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Prawidłowe opcje  
  Następujące opcje narzędzia VSPerfCmd można łączyć z **uruchamianie** opcji w jednym wierszu polecenia.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Inicjuje sesję wiersza polecenia profilera i ustawia określonej metody profilowania.  
   
  **GlobalOn**i **GlobalOff**  
@@ -55,7 +53,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Uruchamia określony aplikacji wiersza polecenia w nowym oknie.  
   
- **Argumenty:**`ArgList`  
+ **Argumenty:** `ArgList`  
  Określa listę argumenty do przekazania do aplikacji.  
   
  **LineOff**  
@@ -64,7 +62,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Opcje pobierania próbek  
  Można określić jedną z następujących opcji Interwał próbkowania na **uruchamianie** wiersza polecenia. Domyślny interwał próbkowania wynosi 10 000 000 cykli zegara procesora.  
   
- **Czasomierz**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Licznik**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**alokacji**&#124; **okres istnienia**]  
+ **Czasomierz**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Licznik**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**alokacji** &#124;  **okres istnienia**]  
  Określa liczbę i typ interwału próbkowania.  
   
 -   **Czasomierz** — przykłady co `Cycles` cykle zegara procesora nie zostało zatrzymane. Jeśli `Cycles` nie zostanie określony, 10 000 000 cykle są używane.  

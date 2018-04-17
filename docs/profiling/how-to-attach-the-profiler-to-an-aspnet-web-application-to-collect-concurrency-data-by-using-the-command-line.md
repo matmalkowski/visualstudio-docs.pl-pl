@@ -1,23 +1,21 @@
 ---
-title: "Porady: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych współbieżności przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych współbieżności przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 6242b23bc74589069dd29c37bebf36d045a97bc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: a735700fa24e3257dc4bf1073598d48b9e15c789
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji sieci Web ASP.NET w celu zbierania danych współbieżności użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia wiersza polecenia narzędzi profilowania umożliwia dołączanie profilera do aplikacji ASP.NET i zbieranie danych współbieżności procesie i wątku.  
@@ -36,23 +34,23 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
     -   [/Start](../profiling/start.md) opcji inicjowania profilera do zbierania danych kontencji zasobów.  
   
-    -   [/Output](../profiling/output.md)**:** `OutputFile` jest wymagany w przypadku opcji **/start**. `OutputFile`Określa nazwę i lokalizację profilowania pliku danych (Vsp).  
+    -   [/Output](../profiling/output.md)**:** `OutputFile` jest wymagany w przypadku opcji **/start**. `OutputFile` Określa nazwę i lokalizację profilowania pliku danych (Vsp).  
   
      Każda opcja, można użyć w poniższej tabeli z **/start** opcji.  
   
     |Opcja|Opis|  
     |------------|-----------------|  
     |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName`|Określa opcjonalne domenę i nazwę użytkownika konta, aby uzyskać dostęp do profilera.|  
-    |[/ crosssession](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesji logowania.|  
-    |[/wincounter](../profiling/wincounter.md) **:**`WinCounterPath`|Określa licznik wydajności systemu Windows, które będą zbierane podczas profilowania.|  
-    |[/automark](../profiling/automark.md) **:**`Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami kolekcji liczników wydajności systemu Windows. Wartość domyślna to 500.|  
-    |[/Events](../profiling/events-vsperfcmd.md) **:**`Config`|Określa zdarzenia funkcji Śledzenie zdarzeń systemu Windows (), które mają być zbierane podczas profilowania. Zdarzenia ETW są gromadzone w pliku oddzielne (ETL).|  
+    |[/crosssession](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesji logowania.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności systemu Windows, które będą zbierane podczas profilowania.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami kolekcji liczników wydajności systemu Windows. Wartość domyślna to 500.|  
+    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenia funkcji Śledzenie zdarzeń systemu Windows (), które mają być zbierane podczas profilowania. Zdarzenia ETW są gromadzone w pliku oddzielne (ETL).|  
   
 2.  Uruchamianie aplikacji platformy ASP.NET w typowy sposób.  
   
 3.  Dołączanie profilera do procesu roboczego ASP.NET, wpisując następujące polecenie:**VSPerfCmd / dołączyć:** `PID` [**/targetclr:**`Version`]  
   
-    -   `PID`Określa identyfikator lub nazwa procesu roboczego ASP.NET. Identyfikatory wszystkich procesów uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.  
+    -   `PID` Określa identyfikator lub nazwa procesu roboczego ASP.NET. Identyfikatory wszystkich procesów uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.  
   
     -   [/targetclr](../profiling/targetclr.md) **:** `Version` Określa wersję środowisko uruchomieniowe języka wspólnego (CLR) do profilu po załadowaniu więcej niż jedną wersję środowiska uruchomieniowego w aplikacji. Ten parametr jest opcjonalny.  
   
@@ -80,7 +78,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 2.  Zamknij profilera, wpisując następujące polecenie w wierszu polecenia:  
   
-     **VSPerfCmd** [ /shutdown  ](../profiling/shutdown.md)  
+     **VSPerfCmd** [ /shutdown](../profiling/shutdown.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

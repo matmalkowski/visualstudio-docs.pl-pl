@@ -1,12 +1,10 @@
 ---
-title: "Projektowanie i tworzenie rozwiązań pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Projektowanie i tworzenie rozwiązań pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Projektowanie i tworzenie rozwiązań Office
   Program Visual Studio udostępnia szablony projektów, które umożliwia tworzenie wielu różnych typów rozwiązań pakietu Office. Ta sekcja dokumentacji opisano szablony projektów i zawiera wskazówki dotyczące tworzenia projektów pakietu Office. Aby dowiedzieć się, jak wdrożyć dostosowania interfejsu kodu i użytkownika, po utworzeniu projektu, zobacz [opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md).  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  Jeśli używasz ClickOnce do wdrażania rozwiązania Visual Studio zmienia docelowej platformy .NET Framework dla projektu, upewnij się, czy też wybrać odpowiednią wersję programu .NET Framework w **wymagania wstępne** okno dialogowe. To pole wyboru nie ulega zmianie automatycznie zmienić platformę docelową projektu. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wymagań wstępnych na komputerach użytkowników końcowych do uruchamiania rozwiązań pakietu Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
->  Nie może wskazać .NET Framework 3.5 lub starszej w projektach pakietu Office, które utworzono za pomocą [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office, utworzonych przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] wymagane funkcje, które zostały najpierw wprowadzone w systemie[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+>  Nie może wskazać .NET Framework 3.5 lub starszej w projektach pakietu Office, które utworzono za pomocą [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office, utworzonych przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] wymagane funkcje, które zostały najpierw wprowadzone w systemie [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
 ### <a name="understanding-when-the-office-pias-are-required-on-end-user-computers"></a>Opis, gdy na komputerach użytkowników końcowych wymagane są PIAs pakietu Office  
  Domyślnie podstawowe zestawy międzyoperacyjne pakietu Office (PIAs) nie są zainstalowane na komputerach użytkowników końcowych, jeśli **Osadź typy międzyoperacyjne** właściwość każdego odwołania PIA pakietu Office, w projekcie jest ustawiona na **True**, która jest to wartość domyślna. W tym scenariuszu informacji o typie dla typów PIA, które są używane w tym rozwiązaniu są osadzone w zestawie rozwiązania podczas kompilowania projektu. W czasie wykonywania osadzonego typu informacje są używane zamiast PIAs do wywoływania aplikacji pakietu Office oparte na modelu COM object model. Aby uzyskać więcej informacji dotyczących sposobu typów z PIAs są osadzone w ramach rozwiązania, zobacz [równoważność typów i osadzone typy międzyoperacyjne](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  

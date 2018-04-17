@@ -1,15 +1,12 @@
 ---
-title: Omówienie obsługi języka Python w programie Visual Studio w systemie Windows | Dokumentacja firmy Microsoft
+title: Omówienie obsługi języka Python w programie Visual Studio w systemie Windows
 description: Podsumowanie funkcji w programie Visual Studio, dzięki czemu najlepsze IDE języka Python w systemie Windows (znanej także jako narzędzia Python Tools for Visual Studio i narzędzi PTVS)
 ms.custom: ''
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 799476fa7e9506ecb1a078e349ccb44c7426a944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
 
@@ -174,13 +171,15 @@ A. Python to zwykle interpretacji języka, z którym jest on uruchamiany na żą
 Funkcje języka Python można zainstalować w następujących wersjach programu Visual Studio zgodnie z opisem w [Przewodnik instalacji](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (wszystkie wersje)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (wszystkie wersje)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (wszystkie wersje)
 - Visual Studio 2013 Community Edition
 - Visual Studio Express 2013 for Web, aktualizacja 2 lub nowszy
 - Visual Studio Express 2013 for pulpitu, aktualizacja 2 lub nowszy
 - Visual Studio 2013 (Pro edition lub nowszy)
 - Program Visual Studio 2012 (Pro edition lub nowszy)
 - Visual Studio 2010 z dodatkiem SP1 (Pro edition lub nowszy; .NET 4.5 wymagana)
+
+Visual Studio 2015 i starsze wersje są dostępne pod adresem [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
 
 > [!Important]
 > Funkcje są w pełni obsługiwane i utrzymywana w najnowszej wersji programu Visual Studio. Funkcje są dostępne w starszych wersjach, ale nie są zachowywane aktywnie.

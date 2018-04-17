@@ -1,27 +1,23 @@
 ---
-title: "Zastępowanie ustawień ToolsVersion | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zastępowanie ustawień ToolsVersion | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1efc774b4eb0c98ef6c5de36864dfc092133b52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 46f9c7c9f0c05bc70bcda9a0c068d0a7eab6d288
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overriding-toolsversion-settings"></a>Zastępowanie ustawień ToolsVersion
 Można zmienić zestaw narzędzi dla projektów i rozwiązań w jeden z trzech sposobów:  
@@ -86,7 +82,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 4.  Zostaną wyświetlone następujące dane wyjściowe. Dla `projectA`, `/toolsversion:3.5` zastępuje ustawienie w wierszu polecenia `ToolsVersion=12.0` w `Project` tagu.  
   
-     `ProjectB`Metoda jest wywoływana przez zadanie w `projectA`. To zadanie ma `ToolsVersion=2.0`, która zastępuje innych `ToolsVersion` ustawienia `projectB`.  
+     `ProjectB` Metoda jest wywoływana przez zadanie w `projectA`. To zadanie ma `ToolsVersion=2.0`, która zastępuje innych `ToolsVersion` ustawienia `projectB`.  
   
     ```  
     Output:  

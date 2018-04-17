@@ -1,27 +1,25 @@
 ---
 title: Polecenia programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c4fc6746648e57903bd0da45bc15758b30a60801
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-commands"></a>Visual Studio — Polecenia
 Visual Studio — polecenia umożliwiają Wywołaj polecenie z **polecenia** okna, **Immediate** okna, lub **Find/Command** pole. W każdym przypadku oznacza większe niż znak (`>`) służy do wskazywania polecenia, a nie operacji wyszukiwania lub debugowania do wykonania.  
@@ -71,10 +69,10 @@ Visual Studio — polecenia umożliwiają Wywołaj polecenie z **polecenia** okn
 |[Ustaw bieżącą ramkę stosu](../../ide/reference/set-current-stack-frame-command.md)|Umożliwia wyświetlenie ramki stosu w szczególności.|  
 |[Ustaw bieżący wątek](../../ide/reference/set-current-thread-command.md)|Umożliwia wyświetlenie określonego wątku.|  
 |[Ustaw radix —](../../ide/reference/set-radix-command.md)|Określa liczbę bajtów do wyświetlenia.|  
-|[Powłoki](../../ide/reference/shell-command.md)|Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, jakby polecenie zostało wykonane w wierszu polecenia.|  
+|[powłoki](../../ide/reference/shell-command.md)|Uruchamia programy z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, jakby polecenie zostało wykonane w wierszu polecenia.|  
 |[ShowWebBrowser, polecenie](../../ide/reference/showwebbrowser-command.md)|Wyświetla adres URL, określ w oknie przeglądarki sieci Web albo w ramach zintegrowane środowisko programistyczne (IDE) lub zewnętrzne względem programu IDE.|  
 |[Start](../../ide/reference/start-command.md)|Rozpoczyna się proces debugowania i pozwala określić sposób obsługi błędów.|  
-|[Ścieżka](../../ide/reference/symbol-path-command.md)|Ustawia listę katalogów dla debugera do wyszukiwania symboli.|  
+|[Path](../../ide/reference/symbol-path-command.md)|Ustawia listę katalogów dla debugera do wyszukiwania symboli.|  
 |[Przełącz punkt przerwania](../../ide/reference/toggle-breakpoint-command.md)|Włącza punkt przerwania lub wyłączyć, w zależności od bieżącego stanu w bieżącej lokalizacji w pliku.|  
 |[Czujka, polecenie](../../ide/reference/watch-command.md)|Tworzy i otwiera określone wystąpienie programu **czujki** okna.|  
   

@@ -2,11 +2,8 @@
 title: Resolvecomreference — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07381c84ec7213fe17aabb1db91cc1ab3be6188d
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 18065f0cd39ab70a9847ba14e4cc225e536b6b18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference — Zadanie
 Przyjmuje listę nazw bibliotek typu lub .tlb — pliki i usuwa te biblioteki typów do lokalizacji na dysku.  
@@ -58,7 +54,7 @@ Przyjmuje listę nazw bibliotek typu lub .tlb — pliki i usuwa te biblioteki ty
   
 ## <a name="remarks"></a>Uwagi  
   
-## <a name="typelibnames-item-metadata"></a>TypeLibNames Item Metadata  
+## <a name="typelibnames-item-metadata"></a>Metadane elementu TypeLibNames  
  W poniższej tabeli opisano dostępne metadane elementu dla elementów przekazanego do `TypeLibNames` parametru.  
   
 |Metadane|Opis|  
@@ -69,7 +65,7 @@ Przyjmuje listę nazw bibliotek typu lub .tlb — pliki i usuwa te biblioteki ty
 |`LocaleIdentifier`|Opcjonalny element metadanych.<br /><br /> Identyfikator ustawień regionalnych (lub identyfikator LCID) dla biblioteki typów. Podany jako wartość 32-bitowego, która identyfikuje człowieka język preferowany przez użytkownika, regionu lub aplikacji. Jeśli ten element metadanych nie jest określona, zadanie używa domyślny identyfikator ustawień regionalnych "0".|  
 |`WrapperTool`|Opcjonalny element metadanych.<br /><br /> Określa narzędzie otoki, który służy do generowania otoki zestawu dla tego typu biblioteki. Jeśli ten element metadanych nie jest określona, zadanie korzysta z domyślnym narzędziem otoki z "tlbimp". Są dostępne, bez uwzględniania wielkości liter wyboru typelibs:<br /><br /> -   `Primary`: Użyj tego narzędzia otoki, jeśli chcesz użyć już wygenerowany podstawowego zestawu międzyoperacyjnego dla składnika modelu COM. Korzystając z tego narzędzia otoki, nie należy określać katalog wyjściowy otoki ponieważ który spowoduje niepowodzenie wykonania zadania.<br />-   `TLBImp`: Użyj tego narzędzia otoki, gdy chcesz wygenerować zestawu międzyoperacyjnego dla składnika modelu COM.<br />-   `AXImp`: Użyj tego narzędzia otoki, gdy chcesz wygenerować zestawu międzyoperacyjnego dla formantu ActiveX.|  
   
-## <a name="typelibfiles-item-metadata"></a>TypeLibFiles Item Metadata  
+## <a name="typelibfiles-item-metadata"></a>Metadane elementu TypeLibFiles  
  W poniższej tabeli opisano dostępne metadane elementu dla elementów przekazanego do `TypeLibFiles` parametru.  
   
 |Metadane|Opis|  

@@ -1,12 +1,9 @@
 ---
-title: GetWinFXPath Task | Microsoft Docs
+title: Getwinfxpath — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - GetWinFXPath task [WPF MSBuild]
 - obtaining the path to the current .NET Framework runtime [WPF MSBuild]
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
-caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2adb5bed33a789301422910301a8788a8b0d069f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 80a2fff3a30d09cdf0b9b3012e7a96fb11453fb5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> Zadań zwraca katalogu bieżącego [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] środowiska wykonawczego.  

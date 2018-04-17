@@ -1,12 +1,10 @@
 ---
-title: "Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnienia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnienia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], resource strings
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 144d81b2835479ee8cfdff0657814070cff813db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 58c8d74e29144a525eb33031fb98e25051d0305f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Porady: korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień
   Przy użyciu pliku zasobu, można podać zlokalizowanych nazw, definiowanie właściwości i stosować obiektów tor uprawnienia, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby podać te informacje, należy dodać **zasobów łączności danych biznesowych** elementu do projektu, który zawiera **modelu łączności danych biznesowych** elementu. Następnie określisz nazwy, właściwości oraz uprawnienia, edytując kod XML w pliku zasobu.  

@@ -1,27 +1,24 @@
 ---
-title: Szablony aplikacji w sieci Web dla języka Python | Dokumentacja firmy Microsoft
+title: Szablony aplikacji sieci Web dla języka Python
 description: Przegląd szablonów programu Visual Studio dla aplikacji sieci web napisanych w języku Python za pomocą struktury Bottle, Flask i Django, łącznie z konfiguracji debugowania i publikowania w usłudze Azure App Service.
 ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c406aec010e45ea37de15366adfd014b5aa74f6b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 76204573b5717e9424fc9444e4f918bae8c93d81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 

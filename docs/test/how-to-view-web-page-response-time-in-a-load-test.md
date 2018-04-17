@@ -1,7 +1,7 @@
 ---
-title: "Czas odpowiedzi strony w teście obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Czas odpowiedzi strony w teście obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, response times
 - response times in load tests
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 055bb9b9ae369cd6b62741f7d23295c34b7d1d32
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 42cde7bda2c97d0e64589d0679b14a93d97c66cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony Web w czasie testu obciążenia za pomocą analizatora testów obciążenia
 
@@ -56,7 +56,7 @@ Po uruchomieniu testu wydajności sieci Web mocno obciążony w teście obciąż
     |**90%**|90-procentowy czas odpowiedzi. To wskazuje, że 90% stron szybciej niż ta liczba odpowiedzi i 10% stron odpowiedział wolniej.<br /><br /> Domyślnie te dane nie są zbierane. Do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł ustawień, aby zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **AllIndividualDetails**.|
     |**95%**|95. percentyl czas odpowiedzi. To wskazuje, że 95% stron szybciej niż ta liczba odpowiedzi i 5% stron odpowiedział wolniej.|
     |**99%**|99-ty percentyl czas odpowiedzi. To wskazuje, że 99% stron szybciej niż ta liczba odpowiedzi i 1% stron odpowiedział wolniej.<br /><br /> Domyślnie te dane nie są zbierane. Do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł ustawień, aby zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **AllIndividualDetails**.|
-    |**Max**|Strona maksymalny czas odpowiedzi.<br /><br /> Domyślnie te dane nie są zbierane. Do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł ustawień, aby zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **AllIndividualDetails**.|
+    |**Maksymalna**|Strona maksymalny czas odpowiedzi.<br /><br /> Domyślnie te dane nie są zbierane. Do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł ustawień, aby zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **AllIndividualDetails**.|
     |**Odchylenie standardowe**|Domyślnie dane odchylenie standardowe nie są zbierane. Do zbierania tych danych w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł ustawień, aby zmienić. W **właściwości** okna, aby uzyskać **magazynowania szczegółów chronometrażu** właściwości, wybierz opcję **AllIndividualDetails**.|
     |**Czas strony**|Średni czas odpowiedzi dla wszystkich żądań, które zostały wprowadzone na stronie sieci Web.|
     |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:** cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy cel został zdefiniowany dla żądania w teście wydajności sieci Web.|

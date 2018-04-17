@@ -1,12 +1,9 @@
 ---
-title: FindAppConfigFile Task | Microsoft Docs
+title: Findappconfigfile — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - FindAppConfigFile task [MSBuild]
 - MSBuild, FindAppConfigFile task
 ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
-caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd77102f1fcee56cb690dc5934dcf158763bd9f2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f24a96a32bd221dfe4144dbe13836156daf01630
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile — Zadanie
 Umożliwia znalezienie pliku app.config, w podanych list.  

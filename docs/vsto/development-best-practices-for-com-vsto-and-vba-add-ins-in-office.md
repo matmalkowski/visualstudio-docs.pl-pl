@@ -1,23 +1,24 @@
 ---
-title: "Programowanie najlepszych rozwiązań dla modelu COM, VSTO i VBA dodatków pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Programowanie najlepszych rozwiązań dla modelu COM, VSTO i VBA dodatków pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
   Jeśli tworzysz COM VSTO lub VBA dodatków pakietu Office, należy przestrzegać zaleceń programowanie opisane w tym artykule.   Zapewni:
@@ -62,7 +63,7 @@ Klienci prośbę o niezależnym dostawcom oprogramowania, aby zapewnić oświadc
 
 Zapewnienie oświadczenia dotyczące pomocy technicznej dla aplikacji klienckich pakietu Office (na przykład programu Word lub Excel), najpierw sprawdź, czy dodatki uruchomione w bieżącej wersji pakietu Office, a następnie przekazać do udostępnienia aktualizacji, jeśli dodatek przerwy w przyszłej wersji. Nie masz do testowania dodatki, gdy firma Microsoft udostępnia nowej kompilacji lub aktualizacji pakietu Office. Microsoft zmieniają się rzadko platformą rozszerzeń COM, VSTO i VBA w pakiecie Office, a te zmiany zostaną dobrze udokumentowane.
 
->Ważne: Firma Microsoft udostępnia listę obsługiwanych dodatków gotowości raportów, a informacje kontaktowe niezależnego dostawcy oprogramowania. Aby pobrać dodatek na liście, zobacz [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Ważne: Firma Microsoft udostępnia listę obsługiwanych dodatków gotowości raportów, a informacje kontaktowe niezależnego dostawcy oprogramowania. Aby pobrać dodatek na liście, zobacz [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Przy użyciu procesu monitora debugować instalacji lub ładowania problemów
 Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub obciążenia, może być związana z problemów z dostępem do plików i rejestru. Użyj [Monitor procesu](/sysinternals/downloads/procmon) lub podobnego narzędzia debugowania do logowania i porównania zachowania dla środowiska pracy, aby łatwiej zidentyfikować problem.

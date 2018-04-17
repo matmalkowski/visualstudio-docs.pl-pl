@@ -1,12 +1,10 @@
 ---
-title: "Lokalizowanie rozwiązań SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Lokalizowanie rozwiązań SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
   Proces przygotowywania aplikacji, dzięki czemu mogą być używane na całym świecie nosi nazwę lokalizacji. Lokalizacja jest tłumaczenie zasobów na określoną kulturę. Aby uzyskać więcej informacji, zobacz [Globalizing i lokalizacja aplikacji](/visualstudio/ide/globalizing-and-localizing-applications). Ten temat zawiera omówienie dotyczące lokalizowanie rozwiązań programu SharePoint.  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>Lokalizacja kodu  
  Oprócz lokalizowanie funkcji ciągów i [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] znaczników, masz również do zlokalizowania ciągi komunikatów i ciągów błędów, które są widoczne w kodzie rozwiązania. Zlokalizowane informacyjne i komunikaty o błędach są zawarte w zestawy satelickie. Zestawy satelickie zawierają ciągi, które są widoczne dla użytkowników, takich jak [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] wyjątki, takich jak wiadomości tekstowe i danych wyjściowych.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]wykorzystuje standardowe model gwiazdy .NET Framework. Koncentrator lub zestawu głównego programu zawiera zasoby język domyślny. Partnerzy lub zestawy satelickie zawierają zasoby specyficzne dla języka. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie zasobów](http://go.microsoft.com/fwlink/?LinkId=179280). Zestawy satelickie są kompilowane z plików zasobów (resx). Po dodaniu plików źródłowych określonego języka do projektu i pakietu rozwiązania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiluje pliki zasobów do zestawów satelickich o nazwie *Nazwa projektu*. resources.dll.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wykorzystuje standardowe model gwiazdy .NET Framework. Koncentrator lub zestawu głównego programu zawiera zasoby język domyślny. Partnerzy lub zestawy satelickie zawierają zasoby specyficzne dla języka. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie zasobów](http://go.microsoft.com/fwlink/?LinkId=179280). Zestawy satelickie są kompilowane z plików zasobów (resx). Po dodaniu plików źródłowych określonego języka do projektu i pakietu rozwiązania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kompiluje pliki zasobów do zestawów satelickich o nazwie *Nazwa projektu*. resources.dll.  
   
  Podobnie jak w przypadku znacznika ASPX lokalizowanie kodu aplikacji programu SharePoint, dodając oddzielny plik zasobów — elementy projektu do projektu. jeden język domyślny i jeden dla każdego zlokalizowanego języka. Jednakże jak wspomniano wcześniej, jeśli masz już plików zasobów dla lokalizowanie znacznika ASPX, można użyć ponownie je dla Lokalizacja kodu. Jeśli musisz utworzyć pliki zasobów, nadaj nazwę wybraną dołączany z rozszerzeniem .resx pliku zasobów języka domyślnego. Nazwy plików zlokalizowanych zasobów takiej samej nazwie dołączony kultury specyficzny dla języka [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Ustaw dla właściwości Build Action każdego pliku zasobu osadzonego zasobu, aby włączyć tworzenie zestawów satelickich zasobów.  
   

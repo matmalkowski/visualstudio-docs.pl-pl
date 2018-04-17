@@ -1,12 +1,10 @@
 ---
-title: "Porady: pobieranie danych dla wbudowanego węzła SharePoint w Eksploratorze serwera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: pobieranie danych dla wbudowanego węzła SharePoint w Eksploratorze serwera | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cf70fe2e24f88ba64ab648d18d93907de0ddbfaf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f448ec8d7cfe22495aa3f7b2ce9191f106205c33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Porady: pobieranie danych dla wbudowanego węzła SharePoint w Eksploratorze serwera
   Dla każdego wbudowanego węzła SharePoint w **Eksploratora serwera**, można pobrać danych dla podstawowy składnik programu SharePoint, która reprezentuje węzeł. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  

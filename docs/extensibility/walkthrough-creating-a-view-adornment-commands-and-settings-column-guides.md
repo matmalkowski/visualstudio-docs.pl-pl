@@ -1,23 +1,21 @@
 ---
-title: "Tworzenie ozdób widoku, poleceń i ustawienia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie ozdób widoku, poleceń i ustawienia | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Wskazówki: Tworzenie ozdób widoku, poleceń i ustawień (prowadnice kolumn)
 Można rozszerzyć Edytor tekstu/kodu programu Visual Studio z poleceniami i efekty widoku.  W tym temacie opisano Rozpoczynanie pracy z funkcją popularnych rozszerzenia prowadnice kolumn.  Przewodniki kolumny są wizualnie światła linii w widoku edytora tekstu w celu zarządzania kodu do określonej szerokości.  W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisy na blogu lub usterek raportów.  
@@ -54,13 +52,13 @@ Można rozszerzyć Edytor tekstu/kodu programu Visual Studio z poleceniami i efe
   
 -   Brak `ColumnGuideCommands` obiekt, który implementuje poleceń użytkownika i przechwytuje się programy obsługi poleceń dla polecenia zadeklarowany w pliku vsct.  
   
- **VSIX**.  Użyj **plik &#124; Nowy...**  polecenie, aby utworzyć projekt.  Wybierz węzeł rozszerzalności w języku C# w lewym okienku nawigacji, a następnie wybierz pozycję **projektu VSIX** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuides i wybierz polecenie **OK** Aby utworzyć projekt.  
+ **VSIX**.  Użyj **pliku &#124; nowych...**  polecenie, aby utworzyć projekt.  Wybierz węzeł rozszerzalności w języku C# w lewym okienku nawigacji, a następnie wybierz pozycję **projektu VSIX** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuides i wybierz polecenie **OK** Aby utworzyć projekt.  
   
- **Wyświetl ozdób**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **Dodaj &#124; Nowy element...**  polecenie, aby dodać nowy element ozdób widoku.  Wybierz **rozszerzalności &#124; Edytor** w okienku nawigacji po lewej stronie i wybierz polecenie **ozdób okienka ekranu edytor** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideAdornment jako nazwa elementu, a następnie wybierz pozycję **Dodaj** ją dodać.  
+ **Wyświetl ozdób**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **dodać &#124; nowy element...**  polecenie, aby dodać nowy element ozdób widoku.  Wybierz **rozszerzalności &#124; edytor** w okienku nawigacji po lewej stronie i wybierz polecenie **ozdób okienka ekranu edytor** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideAdornment jako nazwa elementu, a następnie wybierz pozycję **Dodaj** ją dodać.  
   
  Spowoduje to szablon elementu dodanie dwóch plików do projektu (a także odwołań i tak dalej): ColumnGuideAdornment.cs i ColumnGuideAdornmentTextViewCreationListener.cs.  Szablony tylko Rysuj prostokąt purpurowy w widoku.  Poniżej będzie zmienić kilka wierszy w widoku tworzenie odbiornika i Zastąp zawartość ColumnGuideAdornment.cs.  
   
- **Polecenia**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **Dodaj &#124; Nowy element...**  polecenie, aby dodać nowy element ozdób widoku.  Wybierz **rozszerzalności &#124; Pakiet VSPackage** w okienku nawigacji po lewej stronie i wybierz polecenie **polecenia niestandardowych** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideCommands jako nazwa elementu, a następnie wybierz pozycję **Dodaj** ją dodać.  Oprócz kilka odwołań polecenia i pakietu dodać ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs i ColumnGuideCommandsPackage.vsct.  Poniżej spowoduje zastąpienie zawartości imię i nazwisko plików do definiowania i wykonania polecenia.  
+ **Polecenia**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **dodać &#124; nowy element...**  polecenie, aby dodać nowy element ozdób widoku.  Wybierz **rozszerzalności &#124; pakiet VSPackage** w okienku nawigacji po lewej stronie i wybierz polecenie **polecenia niestandardowych** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideCommands jako nazwa elementu, a następnie wybierz pozycję **Dodaj** ją dodać.  Oprócz kilka odwołań polecenia i pakietu dodać ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs i ColumnGuideCommandsPackage.vsct.  Poniżej spowoduje zastąpienie zawartości imię i nazwisko plików do definiowania i wykonania polecenia.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Konfigurowanie odbiornika tworzenia widoku tekstu  
  Otwórz ColumnGuideAdornmentTextViewCreationListener.cs w edytorze.  Ten kod implementuje obsługi dla zawsze, gdy program Visual Studio tworzy widoki tekstu.  Brak atrybutów, które kontrolują, gdy program obsługi jest wywoływana w zależności od właściwości widoku.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`ma szczegółowej, aby pobrać <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> widoku kodu.  Jeśli śledzenie za pośrednictwem `GetActiveTextView`, `GetActiveView`, i `GetTextViewFromVsTextView`, można zobaczyć, jak to zrobić.  Poniżej znajduje się odpowiedni kod, pobieranej, począwszy od bieżącego zaznaczenia, uzyskiwanie ramki wyboru, a następnie uzyskiwanie widoku ramki dokumentu jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, następnie konfigurowania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interfejsu IVsTextView, a następnie uzyskiwanie hostem widoku i na koniec element IWpfTextView:  
+ `GetCurrentEditorColumn` ma szczegółowej, aby pobrać <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> widoku kodu.  Jeśli śledzenie za pośrednictwem `GetActiveTextView`, `GetActiveView`, i `GetTextViewFromVsTextView`, można zobaczyć, jak to zrobić.  Poniżej znajduje się odpowiedni kod, pobieranej, począwszy od bieżącego zaznaczenia, uzyskiwanie ramki wyboru, a następnie uzyskiwanie widoku ramki dokumentu jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, następnie konfigurowania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interfejsu IVsTextView, a następnie uzyskiwanie hostem widoku i na koniec element IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  Z bieżącej kolumny w strony w przypadku, gdy użytkownik kliknie, kod po prostu wywołuje w Menedżer ustawień, aby dodać lub usunąć kolumny.  Menedżer ustawień generowane zdarzenie wszystkie `ColumnGuideAdornment` nasłuchiwania obiektów.  Wyzwala zdarzenie, te obiekty aktualizacji poglądów tekst skojarzony z nowych ustawień przewodnik kolumny.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Wywoływanie polecenia w oknie polecenia  
- Przykładowe przewodniki kolumny umożliwia użytkownikom wywołać dwa polecenia w oknie polecenia rodzaj rozszerzalności.  Jeśli używasz **widoku &#124; Inne okna &#124; Polecenie okna** polecenia, można wyświetlić okno polecenia.  Pozwala na interakcję z okna poleceń wprowadzając "Edytuj", a z uzupełnianie nazw poleceń i przekazując argument 120, masz następujące:  
+ Przykładowe przewodniki kolumny umożliwia użytkownikom wywołać dwa polecenia w oknie polecenia rodzaj rozszerzalności.  Jeśli używasz **widoku &#124; inne okna &#124; okno polecenia** polecenia, można wyświetlić okno polecenia.  Pozwala na interakcję z okna poleceń wprowadzając "Edytuj", a z uzupełnianie nazw poleceń i przekazując argument 120, masz następujące:  
   
 ```  
 > Edit.AddColumnGuide 120  

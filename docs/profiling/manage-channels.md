@@ -1,29 +1,25 @@
 ---
-title: "Zarządzanie kanałami | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zarządzanie kanałami | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
 helpviewer_keywords:
 - Concurrency Visualizer, Manage Channels
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3915606f9bfaaf2a747ecd5ede0195116c346f0b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 829ced6a6c2d3367f5c9a76d80bef42a1c126ba9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-channels"></a>Zarządzanie kanałami
 W **Widok wątków** w narzędzia Concurrency Visualizer można organizować kanały procesu, aby zbadać konkretnych wzorców. Można sortować kanały, przenieś je w górę i w dół i Ukryj lub je wyświetlić.  

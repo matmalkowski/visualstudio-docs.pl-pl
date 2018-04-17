@@ -1,12 +1,9 @@
 ---
-title: "Otherwise — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Otherwise — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - <Otherwise> Element [MSBuild]
 - Otherwise Element [MSBuild]
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b824b8be8b3697673d0d1f09a20b6a7c1cee58
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 10699e0e8da9042cf06736fe41ffef7f4712a983
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise — Element (MSBuild)
 Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkich `When` obliczać elementy `false`.  

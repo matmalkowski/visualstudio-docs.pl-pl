@@ -1,12 +1,9 @@
 ---
 title: ResumeTracking | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - ResumeTracking
 apilocation:
@@ -15,17 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af99ba7e34de4db27f503ba4a7608373fee7d4cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ee3b8151452cf26710801f3c83fdf217e65be0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Wznawia śledzenia w bieżącym kontekście.  

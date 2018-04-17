@@ -1,12 +1,10 @@
 ---
-title: "Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania rozszerzeń narzędzi SharePoint
   Po utworzeniu rozszerzeń dla narzędzi SharePoint w Visual Studio możesz rozpocząć od implementowanie interfejsów rozszerzeń, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków będą też używać innych typów dostarczone przez narzędzia programu SharePoint do implementowania funkcji w Twoje rozszerzenie. W niektórych scenariuszach może również używać typów w innych modeli obiektu zapewniane przez Visual Studio i SharePoint. Należy zrozumienie przeznaczenia każdego z tych modeli obiektów i jak mogą z nich korzystać ze sobą do tworzenia rozszerzeń dla narzędzi SharePoint.  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Rozszerzanie narzędzi SharePoint zaimplementowanie rozszerzalności interfejsów  
- Visual Studio używa Framework Managed Extensibility (MEF) w .NET Framework 4, aby zapewnić modelu rozszerzeń dla narzędzi SharePoint. MEF to interfejs API (zaimplementowana w zestawie System.ComponentModel.Composition), umożliwia aplikacji udostępnianie punkty rozszerzeń i odnaleźć i załadować rozszerzeń w czasie wykonywania. Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework &#40; MEF &#41; ](/dotnet/framework/mef/index).  
+ Visual Studio używa Framework Managed Extensibility (MEF) w .NET Framework 4, aby zapewnić modelu rozszerzeń dla narzędzi SharePoint. MEF to interfejs API (zaimplementowana w zestawie System.ComponentModel.Composition), umożliwia aplikacji udostępnianie punkty rozszerzeń i odnaleźć i załadować rozszerzeń w czasie wykonywania. Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index).  
   
  Aby rozszerzyć narzędzia programu SharePoint, implementować interfejsów rozszerzeń, które są dostępne w programie Visual Studio. Należy także zastosować <xref:System.ComponentModel.Composition.ExportAttribute>, oraz dodatkowe SharePoint specyficzne dla narzędzia atrybutów w razie potrzeby implementacji interfejsu. W poniższej tabeli wymieniono interfejsów, które można zaimplementować w celu rozszerzenia narzędzia programu SharePoint.  
   
@@ -88,7 +87,7 @@ ms.lasthandoff: 01/10/2018
  Aby uzyskać więcej informacji na temat integracji modelu obiektów, zobacz [omówienie modelu automatyzacji](/visualstudio/extensibility/internals/automation-model-overview) i [odwołania do zestawu SDK programu Visual Studio](/visualstudio/extensibility/visual-studio-sdk-reference).  
   
 ### <a name="sharepoint-object-models"></a>Modele obiektów programu SharePoint  
- Rozszerzeń narzędzi SharePoint można użyć interfejsy API programu SharePoint, aby zmodyfikować witryny programu SharePoint lub pobrać dane z witryny programu SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zapewniają dwa różne obiekty modele: modelu obiektów serwera i modelu obiektów klienta.  
+ Rozszerzeń narzędzi SharePoint można użyć interfejsy API programu SharePoint, aby zmodyfikować witryny programu SharePoint lub pobrać dane z witryny programu SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zapewniają dwa różne obiekty modele: modelu obiektów serwera i modelu obiektów klienta.  
   
  Interfejsy API można użyć w modelu obiektu, albo w rozszerzeniu narzędzia programu SharePoint, ale każdy model obiektów ma niektóre zalety i wady w kontekście rozszerzeń narzędzi SharePoint. Aby uzyskać więcej informacji, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   

@@ -1,12 +1,10 @@
 ---
 title: Obiekty hosta i informacje o formantach hosta | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -38,13 +36,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 84e0b2cf74eb8c0d3faca8d1c28d3bea91c87f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>Przegląd obiektów hosta i kontrolek hosta
   Obiekty hosta i formantów hosta są typy, które pomagają modelu programowania rozwiązań pakietu Office, które są tworzone za pomocą narzędzi programowania pakietu Office w Visual Studio. Obiekty hosta i formantów hosta upewnij się, interakcji z modeli obiektów Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, więcej takich jak interakcji z obiektów zarządzanych, takich jak formanty formularzy systemu Windows.  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> Element hosta nie działa jako kontener dla formantów interfejsu użytkownika. Zamiast tego projektanta dla tego elementu hosta działa jako składnik na pasku zadań, co pozwala na przeciągnij składnik, takich jak <xref:System.Data.DataSet>, na jego powierzchnię projektu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
   
- Obiekty hosta nie można utworzyć programowo w projektach na poziomie dokumentu. Zamiast tego należy użyć `ThisDocument`, `ThisWorkbook`, lub `Sheet`  *n*  klasy, które Visual Studio automatycznie generuje w projekcie w czasie projektowania. Te wygenerowane klasy pochodzi od elementów hosta i stanowią punkt wejścia kodu. Aby uzyskać więcej informacji, zobacz [programowe ograniczenia elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Obiekty hosta nie można utworzyć programowo w projektach na poziomie dokumentu. Zamiast tego należy użyć `ThisDocument`, `ThisWorkbook`, lub `Sheet` *n* klasy, które Visual Studio automatycznie generuje w projekcie w czasie projektowania. Te wygenerowane klasy pochodzi od elementów hosta i stanowią punkt wejścia kodu. Aby uzyskać więcej informacji, zobacz [programowe ograniczenia elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>Opis elementów hosta w projektów dodatku VSTO  
  Podczas tworzenia dodatku VSTO, nie masz dostępu do żadnych elementów hosta domyślnie. Jednak możesz wygenerować <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, i <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementów w programach Word i dodatków VSTO programu Excel w czasie wykonywania.  

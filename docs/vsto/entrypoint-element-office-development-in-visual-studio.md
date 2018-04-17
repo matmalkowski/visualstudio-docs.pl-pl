@@ -1,12 +1,10 @@
 ---
-title: "&lt;punkt wejścia&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;punkt wejścia&gt; elementu (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - entryPoint element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2416a50707d36295a6ddb1c2388f6ee9ef37b113
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punkt wejścia&gt; elementu (Office Development w Visual Studio)
   Każdy `entryPoint` elementu `vstav3` przestrzeni nazw identyfikuje zestawu dostosowania, który powinien być uruchomiony, jeśli to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikacja jest zainstalowana.  
@@ -46,12 +45,12 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------|  
 |`class`|Wymagany. Identyfikuje zestawem dostosowania do wykonania. Składnia dla tego atrybutu jest *NamespaceName.ClassName*.|  
   
- `entryPoint`ma następujący element.  
+ `entryPoint` ma następujący element.  
   
 ### <a name="assemblyidentity"></a>element assemblyIdentity  
  Wymagany. `assemblyIdentity` Element `vstav3` przestrzeni nazw, który odwołuje się do istniejącego `assemblyIdentity` element [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest aplikacji.  
   
- Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [&#60; assemblyIdentity &#62; Element &#40; &#41; aplikacji ClickOnce ](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
+ Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ &#60;assemblyIdentity&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   

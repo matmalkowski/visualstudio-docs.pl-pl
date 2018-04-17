@@ -1,30 +1,28 @@
 ---
 title: Pliki .NET nazewnictwa konwencje dla EditorConfig | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa .NET dla EditorConfig
 
-Konwencje nazewnictwa dotyczą nazw elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, że publiczne elementy członkowskie muszą być kapitalizacji lub że metod asynchronicznych musi kończyć się "Async". Te zasady można wymusić, określając je w [pliku .editorconfig](../ide/create-portable-custom-editor-options.md). Naruszenia reguły nazewnictwa się na liście błędów lub propozycją pod nazwą, w zależności od ważności wybranej reguły. Nie istnieje potrzeba aby skompilować projekt, aby wyświetlić naruszenia.
+Konwencje nazewnictwa dotyczą nazw elementów kodu, takich jak klasy, właściwości i metody. Na przykład można określić, że publiczne elementy członkowskie muszą być kapitalizacji lub że metod asynchronicznych musi kończyć się "Async". Te zasady można wymusić, określając je w [pliku .editorconfig](../ide/create-portable-custom-editor-options.md). Naruszenia reguły nazewnictwa są wyświetlane w **listy błędów** lub propozycją pod nazwą, w zależności od ważności wybranej reguły. Nie istnieje potrzeba aby skompilować projekt, aby wyświetlić naruszenia.
 
-Konwencje nazewnictwa powinna być wyświetlana z określonych najbardziej do najmniej specyficznych dla w pliku .editorconfig. Pierwsza reguła napotkano, który można zastosować jest tylko regułę, która została zastosowana.
+Konwencje nazewnictwa powinna być wyświetlana z określonych najbardziej do najmniej specyficznych w *.editorconfig* pliku. Pierwsza reguła napotkano, który można zastosować jest tylko regułę, która została zastosowana.
 
 Dla każdego konwencji nazewnictwa należy określić symbole, których on obowiązuje, styl nazewnictwa i ważność wymuszania Konwencji, za pomocą właściwości opisanych poniżej. Kolejność właściwości nie jest ważna.
 
@@ -147,15 +145,15 @@ Ważność | Efekt
 ------------ | -------------
 Brak lub dyskretnej | Gdy nie trwa występuje ten styl, nie pokazuj żadnych użytkownikowi; jednak automatycznie wygenerowany kod następuje tym stylem.
 Sugestia | Gdy nie trwa występuje ten styl, Pokaż go do użytkownika jako sugestia jako podstawowej kropki na pierwszych dwóch znaków. Go nie ma znaczenia w czasie kompilacji.
-ostrzeżenie | Gdy nie trwa występuje ten styl, Pokaż ostrzeżenie kompilatora na liście błędów.
-Błąd | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora na liście błędów.
+ostrzeżenie | Gdy nie trwa występuje ten styl, Pokaż ostrzeżenie kompilatora w **listy błędów**.
+Błąd | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora w **listy błędów**.
 
 > [!NOTE]
-> Nie masz skompilować projekt, aby zobaczyć naruszenia reguły nazewnictwa. Pojawią się one edycji kodu na liście błędów lub jako sugestię.
+> Nie masz skompilować projekt, aby zobaczyć naruszenia reguły nazewnictwa. Widnieją edycji kodu w **listy błędów** lub sugestię.
 
 ## <a name="example"></a>Przykład
 
-Następujący plik .editorconfig zawiera konwencji nazewnictwa, która określa, że właściwości publiczne, metody pól, zdarzeń i delegatów należy wpisać wielkimi literami. Zwróć uwagę, że tę konwencję nazewnictwa określa wiele rodzajów symbolu, aby zastosować regułę, użyj przecinka, aby oddzielić wartości.
+Następujące *.editorconfig* plik zawiera konwencji nazewnictwa, która określa, że właściwości publiczne, metody pól, zdarzeń i delegatów należy wpisać wielkimi literami. Zwróć uwagę, że tę konwencję nazewnictwa określa wiele rodzajów symbolu, aby zastosować regułę, użyj przecinka, aby oddzielić wartości.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-Poniższy zrzut ekranu przedstawia wynik tę konwencję nazewnictwa w edytorze. Dwie zmienne publiczne zostały nazwane bez użycia wielkich liter pierwszej litery. Jedna jest `const`, a drugi `readonly`. Ponieważ reguła nazewnictwa ma zastosowanie tylko do *tylko do odczytu* symbole tylko `readonly` zmienna pokazuje sugestia reguły nazewnictwa.
+Poniższy zrzut ekranu przedstawia wynik tę konwencję nazewnictwa w edytorze. Dwie zmienne publiczne zostały nazwane bez użycia wielkich liter pierwszej litery. Jedna jest `const`, a drugi `readonly`. Ponieważ reguła nazewnictwa ma zastosowanie tylko do `readonly` symbole tylko `readonly` zmienna pokazuje sugestia reguły nazewnictwa.
 
 ![Sugestia reguły nazewnictwa](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ Teraz Zmieńmy ważności naruszenia można `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Jeżeli Zamknij i otwórz ponownie pliku kodu zamiast wyświetlanie uwag w obszarze naruszenie Nazwa wyświetlana zielona dowolnym kształcie i ostrzeżenie na liście błędów:
+Jeżeli Zamknij i otwórz ponownie pliku kodu zamiast wyświetlanie uwag w obszarze naruszenie Nazwa wyświetlana zielona dowolnym kształcie i ostrzeżenie w **listy błędów**:
 
 ![Ostrzeżenie reguły nazewnictwa](media/editorconfig-naming-rule-warning.png)
 

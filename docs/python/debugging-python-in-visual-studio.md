@@ -1,27 +1,24 @@
 ---
-title: Debugowanie kodu Python | Dokumentacja firmy Microsoft
+title: Debugowanie kodu języka Python
 description: Wskazówki dotyczące funkcji debugowania w programie Visual Studio specjalnie z myślą o kod języka Python, w tym ustawianie punktów przerwania, wykonywanie krok po kroku, sprawdzania wartości, patrzeć wyjątków i debugowanie w oknie interaktywnym.
 ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4434a854bf2b7da12ca1a05b9996593abd94660e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -147,7 +144,7 @@ Domyślnie debuger programu rozpoczyna się od standardowego uruchamiania Python
 | --- | --- |
 | Standardowa uruchamiania Python | Używa debugowania kod napisany w języku Python przenośny, który jest zgodny z języka CPython, IronPython i odmiany takich jak Stackless Python. Zapewnia najlepsze środowisko do debugowania czyste kodu języka Python. Po dołączeniu do działającego `python.exe` proces, uruchom ten jest używany. Uruchom ten zawiera również [debugowanie w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) języka CPython, co umożliwia bezproblemowe krok między kodu C/C++ i kodem języka Python. |
 | Uruchamianie sieci Web | Uruchamia domyślnej przeglądarki na uruchamianie i włącza debugowanie szablonów. Zobacz [debugowania szablonów sieci Web](python-web-application-project-templates.md#debugging) sekcji, aby uzyskać więcej informacji. |
-| Django Web launcher | Taki sam jak uruchamianie sieci Web i wyświetlane tylko dla zapewnienia zgodności. |
+| Uruchamianie sieci Django Web | Taki sam jak uruchamianie sieci Web i wyświetlane tylko dla zapewnienia zgodności. |
 | IronPython (.NET) launcher | Używa debugera platformy .NET, które działa wyłącznie z IronPython, ale umożliwia przechodzenie między żadnego projektu języka .NET, w tym C# i VB. Uruchamianie tego programu jest używana, gdy dołączanie do uruchomionego procesu .NET, który jest hostem IronPython. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opcje uruchamiania (ścieżki wyszukiwania, argumenty uruchomienia i zmiennych środowiskowych)

@@ -1,25 +1,21 @@
 ---
 title: 'Krok 1: Tworzenie projektu i dodawanie etykiet do formularza | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 992541fe80067a6255ae0909edba0bf8f239c004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Utworzenie projektu i dodawanie etykiet do formularza
 Jako pierwsze kroki w opracowywaniu kwizu tworzenia projektu i dodawanie etykiet, przycisk i innych formantów do formularza. Można również ustawić właściwości dla każdego dodawanego formantu. Projekt będzie zawierać formularz, kontrolek i (później w samouczku) kodu. Przycisk uruchamiania testu, problemy kwizu Pokaż etykiety i innych kontrolek wyświetlić odpowiedzi kwizu i czasu, który pozostaje na zakończenie kwizu.  
@@ -104,11 +100,11 @@ Rozmiar czcionki przedstawiający okno właściwości
   
      Separator wierszy umożliwia rozmieść je i wiersz w górę.  
   
-11. Ustaw wartość etykiety drugi **tekst** właściwości  **+**  (znak plus).  
+11. Ustaw wartość etykiety drugi **tekst** właściwości **+** (znak plus).  
   
 12. Ustaw wartość etykiety trzeci **(nazwa)** właściwości **plusRightLabel**.  
   
-13. Ustaw wartość etykiety czwarty **tekst** właściwości  **=**  (znak równości).  
+13. Ustaw wartość etykiety czwarty **tekst** właściwości **=** (znak równości).  
   
 14. Dodaj **NumericUpDown** sterowania z przybornika, skonfigurować jego rozmiar czcionki **18**i ustaw jego szerokość **100**.  
   
@@ -133,7 +129,7 @@ Pierwszy wiersz kwizu matematycznego
   
      Separator wierszy umożliwia zapewniają wystarczająco dużo odległość między dwa wiersze.  
   
-3.  Zmień wartość **tekst** właściwości Etykieta drugi  **-**  (znak minus).  
+3.  Zmień wartość **tekst** właściwości Etykieta drugi **-** (znak minus).  
   
 4.  Nazwa z pierwszą etykietą znaku zapytania **minusLeftLabel**.  
   

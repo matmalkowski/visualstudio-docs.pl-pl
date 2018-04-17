@@ -1,28 +1,26 @@
 ---
-title: "Porady: dostosowywanie diagramów klasy (Projektant klas) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dostosowywanie diagramów klasy (Projektant klas) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ab6776ccdf8f3abe98190855ec41dc226677db61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5a2f58626008ba50f436f7836fe13ca92fcce155
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Porady: dostosowywanie diagramów klasy (Projektant klas)
 Można zmienić sposób wyświetlania informacji na diagramach klas. Można dostosować cały diagram lub poszczególne typy na powierzchni projektowej.  
@@ -54,7 +52,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
 -   [Usuwanie kształtu typu i jego kod źródłowy](how-to-customize-class-diagrams.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a>Powiększanie i diagramu klas  
+##  <a name="ZoomInOut"></a> Powiększanie i diagramu klas  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -67,7 +65,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
     > [!NOTE]
     >  Zmiana powiększenia nie wpływa na skalę wydruku diagramu klasy.  
   
-##  <a name="CustomizeGroupingSorting"></a>Dostosowywanie grupowanie i sortowanie elementy członkowskie typu  
+##  <a name="CustomizeGroupingSorting"></a> Dostosowywanie grupowanie i sortowanie elementy członkowskie typu  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -81,7 +79,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
     3.  **Sortuj alfabetycznie** Wyświetla elementy wchodzące w skład jednostki jako jedną listę porządku alfabetycznym. Lista jest sortowana w kolejności rosnącej.  
   
-##  <a name="HideCompartments"></a>Ukryj przedziałów w typie  
+##  <a name="HideCompartments"></a> Ukryj przedziałów w typie  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -91,7 +89,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
      Wybrany przedział znika z kontenera typu.  
   
-##  <a name="HideMembers"></a>Ukryj poszczególne elementy na typ  
+##  <a name="HideMembers"></a> Ukryj poszczególne elementy na typ  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -101,7 +99,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
      Wybrany element członkowski znika z kontenera typu.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a>Pokaż ukryte przedziałów i elementów członkowskich w typie  
+##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Pokaż ukryte przedziałów i elementów członkowskich w typie  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -111,7 +109,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
      Wszystkie ukryte przedziały i elementy członkowskie pojawiają się w kontenerze typu.  
   
-##  <a name="HideAssociationAndInheritance"></a>Ukryj relacji  
+##  <a name="HideAssociationAndInheritance"></a> Ukryj relacji  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -123,7 +121,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
      Wszystkie ukryte przedziały i elementy członkowskie pojawiają się w kontenerze typu.  
   
-##  <a name="DisplayAssociationAndInheritance"></a>Pokaż ukryte relacji  
+##  <a name="DisplayAssociationAndInheritance"></a> Pokaż ukryte relacji  
   
 1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
@@ -131,7 +129,7 @@ Sekcje, które zawierają składowe typu, na przykład sekcja Właściwości w k
   
  Kliknij przycisk **Pokaż wszystkie elementy członkowskie** linie asocjacji, a następnie kliknij przycisk **Pokaż klasa podstawowa** lub **Pokaż klas pochodnych** linii dziedziczenia.  
   
-##  <a name="RemoveCodeAndShape"></a>Usunąć kształt z diagramu klas  
+##  <a name="RemoveCodeAndShape"></a> Usunąć kształt z diagramu klas  
 Możesz usunąć kształt typu z diagramu klasy bez wpływu na podstawowy kod typu. Usuwanie kształtów typu z diagramu klasy dotyczy tylko tego diagramu: podstawowy kod, który określa typ, i inne diagramy, które wyświetlają typ, nie są modyfikowane.  
   
 1.  Na diagramie klasy zaznacz kształt typu, który chcesz usunąć z diagramu.  
@@ -140,7 +138,7 @@ Możesz usunąć kształt typu z diagramu klasy bez wpływu na podstawowy kod ty
   
      Kształt typu i wszystkie linie skojarzeń lub dziedziczenia połączone z kształtem nie są już wyświetlane na diagramie.  
   
-##  <a name="DeleteTypeShapeAndCode"></a>Usuwanie kształtu typu i jego kod źródłowy  
+##  <a name="DeleteTypeShapeAndCode"></a> Usuwanie kształtu typu i jego kod źródłowy  
   
 1.  Kliknij prawym przyciskiem myszy kształt na powierzchni projektowej.  
   

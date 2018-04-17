@@ -2,11 +2,8 @@
 title: Generatebootstrapper — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-caps.latest.revision: 13
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3feb529b76b9de8c70b87954e928a75158361f6b
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d7b04cbc20876f1a286d40d3e37e7d9e8e2211c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — Zadanie
 Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jego wymagań wstępnych. Służy on jako pojedynczego Instalatora, która integruje się oddzielne pliki instalacyjne dla wszystkich składników tworzących aplikacji.  

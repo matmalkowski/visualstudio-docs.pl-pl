@@ -1,21 +1,19 @@
 ---
-title: "Właściwości role domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Właściwości role domeny | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61537deec73a5da8d647639a588641d7cf773da3
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje o rolach domeny, zobacz [opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -38,7 +36,7 @@ Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać i
 |Kategoria|Kategorii, pod którym wygenerowanej właściwości pojawia się w **właściwości** okna w Projektancie wygenerowany. Jeśli ta właściwość jest pusta, a następnie wygenerowanej właściwości jest wyświetlany w obszarze **różne** kategorii|< Brak\>|
 |Opis|Opis, który jest używany do kod dokumentów i jest używany w Interfejsie użytkownika wygenerowanego projektanta.<br /><br /> Opis jest wyświetlany w etykietce narzędzia IntelliSense dla wygenerowanej właściwości dla klasy obiektu pełniącego rolę.|`Description for` *Pełna nazwa roli*|
 |Nazwa wyświetlana|Nazwa, która jest wyświetlana w Projektancie wygenerowany dla roli domeny.|Skorygowaną wartość właściwości Name.|
-|Słowo kluczowe pomocy|Optional-słowo kluczowe służący do indeksu Pomocy F1 dla roli domeny.|\<none>|
+|Słowo kluczowe pomocy|Optional-słowo kluczowe służący do indeksu Pomocy F1 dla roli domeny.|\<Brak >|
 |Wyświetlana nazwa właściwości|Nazwa, która jest wyświetlana w Projektancie wygenerowany dla właściwości wygenerowanego roli.|Skorygowaną wartość właściwości nazwy właściwości.|
 
 > [!NOTE]

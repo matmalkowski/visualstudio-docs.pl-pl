@@ -1,13 +1,10 @@
 ---
-title: "Porady: Ustawianie uprawnień | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Ustawianie uprawnień | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9058ecf8f69a757eea33a57c028b488731628c
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 72106d2cd7483bc9775cee92accdef17daee737b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-permissions"></a>Porady: Ustawianie uprawnień
 
@@ -68,7 +65,7 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
 2. Kliknij prawym przyciskiem myszy folder, a następnie kliknij przycisk **właściwości**.
 
-      **\<Nazwa folderu > właściwości** zostanie wyświetlone okno dialogowe.
+     **\<Nazwa folderu > właściwości** zostanie wyświetlone okno dialogowe.
 
 3. Kliknij przycisk **zabezpieczeń** kartę.
 

@@ -1,26 +1,23 @@
 ---
-title: "Zdalnych obszarów roboczych z R Tools for Visual Studio | Dokumentacja firmy Microsoft"
-description: "Jak skonfigurować zdalnych obszarów roboczych R i nawiązać z nią w programie Visual Studio."
-ms.custom: 
+title: Zdalnych obszarów roboczych dla języka R
+description: Jak skonfigurować zdalnych obszarów roboczych R i nawiązać z nią w programie Visual Studio.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 52122b3b3a92ff7df292764e75175070e0b6b1db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2534bc3d437737062d2731c81b0997f77209bca9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setting-up-remote-workspaces"></a>Konfigurowanie zdalnego obszary robocze
 
@@ -89,7 +86,7 @@ Aby zainstalować certyfikat na komputerze zdalnym, uruchom `certlm.msc` (Mened�
 
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Udzielanie uprawnień do odczytu klucza prywatnego certyfikatu SSL
 
-Po zaimportowaniu certyfikatu udzielić `NETWORK SERVICE` uprawnienia do odczytu klucza prywatnego, zgodnie z opisem w poniższych instrukcjach konta. `NETWORK_SERVICE`to konto służy do uruchamiania brokera usług R to usługa, która kończy przychodzących połączeń SSL na serwerze.
+Po zaimportowaniu certyfikatu udzielić `NETWORK SERVICE` uprawnienia do odczytu klucza prywatnego, zgodnie z opisem w poniższych instrukcjach konta. `NETWORK_SERVICE` to konto służy do uruchamiania brokera usług R to usługa, która kończy przychodzących połączeń SSL na serwerze.
 
 1. Uruchom `certlm.msc` (Menedżer certyfikatów) z wiersza polecenia z uprawnieniami administratora.
 1. Rozwiń węzeł **osobiste > Certyfikaty**, kliknij prawym przyciskiem myszy certyfikat, a wybierz **wszystkie zadania > Zarządzaj kluczami prywatnymi**.
@@ -149,7 +146,7 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć interpreter języka R z
 
 1. Pobierz i zainstaluj jedną z następujących czynności:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [Otwórz program Microsoft R](https://mran.microsoft.com/open/)
     - [Sieci CRAN R dla systemu Windows](https://cran.r-project.org/bin/windows/base/)
 
     Mają identyczną funkcjonalność, ale Microsoft R Otwórz korzyści z dodatkowy sprzęt przyspieszony bibliotek algebraiczną liniowy dzięki uprzejmości [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl).
@@ -174,7 +171,7 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć interpreter języka R z
 
 1. Pobierz i zainstaluj jedną z następujących czynności:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [Otwórz program Microsoft R](https://mran.microsoft.com/open/)
     - [Sieci CRAN R dla systemu Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
     Mają identyczną funkcjonalność, ale Microsoft R Otwórz korzyści z dodatkowy sprzęt przyspieszony bibliotek algebraiczną liniowy dzięki uprzejmości [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl).

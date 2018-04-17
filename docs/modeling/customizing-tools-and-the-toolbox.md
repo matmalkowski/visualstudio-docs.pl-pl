@@ -1,10 +1,8 @@
 ---
-title: "Dostosowywanie przybornika i narzędzia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dostosowywanie przybornika i narzędzia | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0644aa33d0e091fc3a2ff856109fe9661e2dc805
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 Zdefiniuj elementy przybornika dla elementów, które chcesz zezwolić użytkownikom na wprowadzanie do ich modeli. Istnieją dwa rodzaje narzędzia: element narzędzia i połączenia. W Projektancie wygenerowanego użytkownika można wybrać elementu narzędzia przeciągnij kształtów na diagramie, a narzędzie połączenia, aby narysować łącza między kształtami można wybrać. Ogólnie rzecz biorąc narzędzia elementu zezwala użytkownikom na dodawanie wystąpienia klas domeny do ich modeli i narzędzia połączeń daj dodać wystąpienia relacji domeny.  
@@ -36,7 +34,7 @@ Zdefiniuj elementy przybornika dla elementów, które chcesz zezwolić użytkown
   
 -   [Dostosowywanie narzędzia połączeń](#connections)  
   
-##  <a name="ToolboxDef"></a>Sposób definiowania przybornika  
+##  <a name="ToolboxDef"></a> Sposób definiowania przybornika  
  W Eksploratorze DSL rozwiń węzeł edytora i węzłów podrzędnych. Zwykle zobaczysz hierarchii podobny to:  
   
 ```  
@@ -93,7 +91,7 @@ Editor
   
      Jeśli nie ma narzędzia, Zatrzymaj eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W oknach **Start** menu, uruchom **zresetować Microsoft Visual Studio 2010 eksperymentalne wystąpienie programu**. Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**. Następnie ponownie przetestuj DSL.  
   
-##  <a name="customizing"></a>Dostosowywanie narzędzia — Element  
+##  <a name="customizing"></a> Dostosowywanie narzędzia — Element  
  Domyślnie narzędzie utworzy jedno wystąpienie określonej klasy, ale można używać różnych kodowań to na dwa sposoby:  
   
 -   Należy zdefiniować Element scalania dyrektywy w innych klas, włączenie je, aby zaakceptować nowe wystąpienia tej klasy, a umożliwiając im Utwórz dodatkowe linki, podczas tworzenia nowego elementu. Na przykład można zezwolić użytkownikowi na Dodaj komentarz na inny element, a przez to tworzyć łącza między dwoma.  
@@ -104,7 +102,7 @@ Editor
   
 -   Napisać kod, aby dostosować narzędzie, dzięki czemu można tworzyć grupy elementów. Narzędzie jest zainicjowana za pomocą metod ToolboxHelper.cs, którą można zastąpić. Aby uzyskać więcej informacji, zobacz [tworzenia grup z elementów za pomocą narzędzia](#groups).  
   
-##  <a name="groups"></a>Tworzenie grup elementów za pomocą narzędzia  
+##  <a name="groups"></a> Tworzenie grup elementów za pomocą narzędzia  
  Narzędzie każdy element zawiera prototyp elementów, które powinien zostać utworzony. Domyślnie każdy element narzędzie tworzy pojedynczy element, ale istnieje również możliwość utworzenia grupy obiektów powiązanych z jednego narzędzia. Aby to zrobić, należy zainicjować narzędzie z <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> zawiera elementy powiązane.  
   
  Poniższy przykład pochodzi z DSL, w którym jest typem tranzystor. Każdy tranzystor ma trzy terminale nazwanego. Za pomocą narzędzia elementu tranzystory przechowuje prototyp zawierający cztery elementy modelu i trzy łącza relacji. Gdy użytkownik przeciąga narzędzia na diagramie, prototyp jest utworzyć wystąpienia i połączony z katalogiem głównym modelu.  
@@ -154,7 +152,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a>Dostosowywanie narzędzia połączeń  
+##  <a name="connections"></a> Dostosowywanie narzędzia połączeń  
  Zwykle narzędzie elementu można utworzyć podczas tworzenia nowej klasy łącznika. Alternatywnie można przeciążać jedno narzędzie, zezwalając typy punktów końcowych w celu określenia typu relacji. Na przykład można zdefiniować jedno narzędzie połączenia, które można tworzyć relacji osoby osoby oraz relacje miasta osoby.  
   
  Połączenia narzędzia wywołania konstruktorów połączenia. Użyj konstruktorów połączenia, aby określić, jak użytkownicy można połączyć elementy w Projektancie wygenerowany. Konstruktorzy połączenia Określ elementy, które mogą być połączone i typ łącza, który jest tworzony między nimi.  

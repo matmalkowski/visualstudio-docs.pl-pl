@@ -1,28 +1,26 @@
 ---
-title: "DA0006: Zastąp metodę Equals typami wartości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0006: Zastąp metodę Equals typami wartości | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
 - vs.performance.DA0006
 - vs.performance.rules.DA0006
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b8b821075221486dce02876a2abe8cc3aed27ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 890b9fbcb0a4945f5468eab40cc763f9006449b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę equals typami wartości
 |||  

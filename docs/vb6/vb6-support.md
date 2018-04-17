@@ -1,8 +1,8 @@
 ---
-title: "Obsługuje instrukcji w języku Visual Basic 6.0 | Dokumentacja firmy Microsoft"
+title: Obsługuje instrukcji w języku Visual Basic 6.0 | Dokumentacja firmy Microsoft
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Obsługuje instrukcji w języku Visual Basic 6.0 w systemie Windows
 
@@ -33,7 +33,7 @@ Zespół programu Visual Basic przywiązuje dużą wagę do "Ją po prostu dzia�
 - Windows Server 2012 R2 w tym
 - Windows Server 2008 R2 w tym
 
-Celem zespołu Visual Basic jest, że aplikacje Visual Basic 6.0 nadal działać w obsługiwanych wersjach systemu Windows. Zgodnie z opisem w tym dokumencie środowisko uruchomieniowe Visual Basic 6.0 core będą obsługiwane dla pełnego okresu istnienia obsługiwanych wersji systemu Windows, czyli pięciu lat. dostępne podstawowe wsparcie następuje pięciu lat. rozszerzonej pomocy technicznej (http://support.microsoft.com/gp/lifepolicy). Na pasku pomocy technicznej będzie ograniczony do poważnych regresji i ważnych kwestiach dotyczących zabezpieczeń dla istniejących aplikacji.
+Celem zespołu Visual Basic jest, że aplikacje Visual Basic 6.0 nadal działać w obsługiwanych wersjach systemu Windows. Zgodnie z opisem w tym dokumencie, środowisko uruchomieniowe Visual Basic 6.0 core będą obsługiwane dla pełnej okres istnienia obsługiwanych wersji systemu Windows, czyli pięciu lat. dostępne podstawowe wsparcie następuje pięciu lat. rozszerzonej pomocy technicznej (http://support.microsoft.com/gp/lifepolicy). Na pasku pomocy technicznej będzie ograniczony do poważnych regresji i ważnych kwestiach dotyczących zabezpieczeń dla istniejących aplikacji.
 
 ## <a name="technical-summary"></a>Podsumowanie informacji technicznych
 
@@ -61,7 +61,7 @@ Visual Basic 6.0 składa się z tych kluczy materiałów:
 
 - Obsługiwane pliki środowiska uruchomieniowego — — rozszerzone pliki do rozprowadzania z aplikacji
 
-   Ta lista rozszerzonej składa się z klucza formantów, biblioteki i narzędzia, które są zainstalowane na komputerze dewelopera z nośnika programu IDE lub z witryny Microsoft.com. Zazwyczaj VB6 IDE tych kontrolek na komputerze dewelopera domyślnie instalowany. Deweloper nadal musi wykonać ponowną dystrybucję tych plików z aplikacji. Obsługiwane wersje plików jest dostępne w trybie online w Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkID=142927).
+   Ta lista rozszerzonej składa się z klucza formantów, biblioteki i narzędzia, które są zainstalowane na komputerze dewelopera z nośnika programu IDE lub z witryny Microsoft.com. Zazwyczaj VB6 IDE tych kontrolek na komputerze dewelopera domyślnie instalowany. Deweloper nadal musi wykonać ponowną dystrybucję tych plików z aplikacji. Obsługiwane wersje plików jest dostępna online w Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkID=142927).
 
 - Pliki środowiska uruchomieniowego nieobsługiwane
 
@@ -73,8 +73,8 @@ Aby szczegółowych informacji na temat plików znajdujących się w każdej gru
 
 Obsługa i/lub wysyłania pliki binarne środowiska wykonawczego Visual Basic 6.0 w obsługiwanych wersjach systemu Windows nie zmienia zasady udzielania pomocy technicznej dla środowiska IDE programu Visual Basic 6.0 lub programu Visual Studio 6.0 IDE jako całość. Przenieść tych produktów poza obowiązuje wsparcie 8 kwietnia 2008 roku.
 
-Szczegółowe informacje o cyklu pomocy technicznej produktów firmy Microsoft można znaleźć w http://support.microsoft.com/gp/lifepolicy. W ramach tego cyklu pomocy technicznej firma Microsoft będzie obsługuje środowisko uruchomieniowe Visual Basic 6.0 w obsługiwanych wersjach systemu Windows przez czas ich istnienia obsługi tych systemów operacyjnych. Oznacza to, na przykład obsługiwane w systemie Windows Server 2003 do czerwca, 2008, aby uzyskać wsparcie podstawowe i czerwca 2013 rozszerzonej pomocy technicznej środowisko uruchomieniowe Visual Basic 6.0.
-Aby uzyskać więcej informacji na cykl pomocy technicznej lub Aby uzyskać informacje na temat dodatkowe opcje pomocy technicznej odwiedź naszą stronę pomocy technicznej w http://www.microsoft.com/support.
+Szczegółowe informacje o cyklu pomocy technicznej produktów firmy Microsoft można znaleźć w folderze http://support.microsoft.com/gp/lifepolicy. W ramach tego cyklu pomocy technicznej firma Microsoft będzie obsługuje środowisko uruchomieniowe Visual Basic 6.0 w obsługiwanych wersjach systemu Windows przez czas ich istnienia obsługi tych systemów operacyjnych. Oznacza to, na przykład obsługiwane w systemie Windows Server 2003 do czerwca, 2008, aby uzyskać wsparcie podstawowe i czerwca 2013 rozszerzonej pomocy technicznej środowisko uruchomieniowe Visual Basic 6.0.
+Więcej szczegółów na cykl pomocy technicznej lub Aby uzyskać informacje na temat dodatkowe opcje pomocy technicznej, można znaleźć pod adresem naszą stronę pomocy technicznej w http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>64-bitowego systemu Windows
 
@@ -149,7 +149,7 @@ Ta sekcja zawiera dodatkowe informacje dotyczące systemów operacyjnych, które
 
 
 > [!NOTE]
-> &#42;  Obsługa środowiska uruchomieniowego VB6 jest ograniczona przez cykl pomocy technicznej systemu Windows.  Na przykład jeśli docelowy system operacyjny jest objęte wsparciem dodatkowym, VB6 nie może mieć wyższego poziomu wsparcia niż wsparciem dodatkowym.  [Systemu Windows obsługuje cyklu życia faktów dotyczących](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) zawiera cykl życia dodatkowe informacje o bieżących i poprzednich wersjach systemu Windows.
+> &#42;Obsługa środowiska uruchomieniowego VB6 jest ograniczona przez cykl pomocy technicznej systemu Windows.  Na przykład jeśli docelowy system operacyjny jest objęte wsparciem dodatkowym, VB6 nie może mieć wyższego poziomu wsparcia niż wsparciem dodatkowym.  [Systemu Windows obsługuje cyklu życia faktów dotyczących](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) zawiera cykl życia dodatkowe informacje o bieżących i poprzednich wersjach systemu Windows.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Użycie środowiska wykonawczego Visual Basic 6.0 wewnątrz VBA i pakietu Office
 
@@ -186,15 +186,15 @@ Jeśli napotkasz problem z aplikacji Visual Basic 6.0 uruchomionej na jednym z s
 |dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
 |dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
 |dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
-|ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   Olepro32.dll|
+|ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     Olethk32.dll|
 |expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
 |hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
 |hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
 |imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
 |iprop.dll|       msdaosp.dll|     odbccr32.dll|   secur32.dll|
-|itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
-|itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
+|ITIRCL.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
+|ITSS.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
 |mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
 |mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
 |mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
@@ -222,7 +222,7 @@ Jeśli napotkasz problem z aplikacji Visual Basic 6.0 uruchomionej na jednym z s
 
 | | | | |
 |---|---|---|---|
-|dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
+|dao350.dll|   msexch35.dll| msjter35.dll| Msrepl35.dll|
 |mdac_typ.exe| msexcl35.dll| msjtor35.dll| mstext35.dll|
 |mschart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
 |msdaerr.dll|  msjint35.dll| mspdox35.dll| odbctl32.dll|

@@ -1,13 +1,10 @@
 ---
 title: Na tym komputerze nie zainstalowano programu Microsoft Office | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.OfficeNotInstalled
 dev_langs:
@@ -15,14 +12,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58c3290cd27d498e4dbd00114bf1b2f0f289efec
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 45a15b1680fbc12c9493833e01a6d8e90085faad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-office-is-not-installed-on-this-computer"></a>Program Microsoft Office nie jest zainstalowany na tym komputerze
   Program Visual Studio nie można odnaleźć aplikacji Microsoft Office, która odnosi się do typu projektu. Jeśli tworzysz projektów dodatku VSTO oznacza to, nie można debugować ani uruchomić projekt. Jeśli chcesz utworzyć projekt poziomie dokumentu, oznacza to, że nie można utworzyć projektu.  

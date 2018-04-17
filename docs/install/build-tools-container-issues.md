@@ -2,11 +2,8 @@
 title: Znane problemy dotyczące kontenerów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
@@ -14,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c433716b0a5623fa9b4f098952b4c951d8b52e12
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 4052be27d5be1298f78c3e736fd5039cf69f7c07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
 

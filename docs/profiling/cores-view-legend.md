@@ -1,29 +1,25 @@
 ---
-title: "Widok rdzeni — Legenda | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok rdzeni — Legenda | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
 helpviewer_keywords:
 - Concurrency Visualizer, Cores View Legend
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7ae3c6bee8b75fd99edc7da150e71ef7394d63
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3dd5947cc2f1eef3477add1bd747ff43f5828b41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cores-view-legend"></a>Widok rdzeni — Legenda
 Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera kolumny, które zawierają liczby przełączeń kontekstu różnych rdzeniach, przełączeń kontekstu całkowitej i procent przełączeń kontekstu przecinających rdzenie. Wiersze w legendzie są sortowane według liczby przełączeń kontekstu różnych rdzeniach, w kolejności malejącej.  

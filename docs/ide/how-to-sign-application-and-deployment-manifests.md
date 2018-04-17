@@ -1,12 +1,10 @@
 ---
-title: "Porady: podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a883995f95c5eaab86a14f07f9372614078d3c79
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisywanie aplikacji i manifestów wdrożenia
 Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifestów aplikacji i wdrażania muszą być podpisane przy użyciu pary kluczy publiczny/prywatny i podpisany przy użyciu technologii Authenticode. Można podpisać manifestów przy użyciu certyfikatu z magazynu certyfikatów systemu Windows lub pliku klucza.  
@@ -38,7 +36,7 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifes
  Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: utworzyć parę klucz prywatny-publiczny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]obsługuje tylko te klucza pliki wymiany informacji osobistych (PFX), które mają rozszerzenie pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów bieżącego użytkownika systemu Windows, klikając **wybierz z magazynu** na **podpisywanie** strony właściwości projektu.  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje tylko te klucza pliki wymiany informacji osobistych (PFX), które mają rozszerzenie pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów bieżącego użytkownika systemu Windows, klikając **wybierz z magazynu** na **podpisywanie** strony właściwości projektu.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Do podpisania aplikacji i wdrażania manifesty przy użyciu certyfikatu  
   

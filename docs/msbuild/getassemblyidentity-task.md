@@ -1,12 +1,9 @@
 ---
-title: GetAssemblyIdentity Task | Microsoft Docs
+title: Getassemblyidentity — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GetAssemblyIdentity task
 - GetAssemblyIdentity task [MSBuild]
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
-caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 995f77fac8e62e963207408a1e127a557906d10e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 528b27c46897b3e58498b113bc558e7303ca2896
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity — Zadanie
 Pobiera tożsamości zestawu z określonych plików i wyświetla informacje o tożsamości.  
@@ -51,7 +47,6 @@ Pobiera tożsamości zestawu z określonych plików i wyświetla informacje o to
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
     <ItemGroup>  
         <MyAssemblies Include="File1.dll;File2.dll" />  
     </ItemGroup>  

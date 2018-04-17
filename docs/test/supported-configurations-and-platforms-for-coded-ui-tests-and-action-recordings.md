@@ -2,19 +2,19 @@
 title: Konfiguracje oraz platformy kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 2015-10-04
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ceb36ded51c39b8f8eb5cdb906343c3a11d4d83
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
-ms.translationtype: HT
+ms.openlocfilehash: 82d44d08353ed048ff51c90ea9a4b5c061a2dc2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 
@@ -34,7 +34,7 @@ W poniższej tabeli wymieniono obsługiwane konfiguracje oraz platformy zakodowa
 |Systemy operacyjne|[!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10|
 |Obsługa wersji 32-/64-bitowej|32-bitowego systemu Windows uruchomiona 32-bitowych [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] można testować aplikacje 32-bitowe.<br /><br /> 64-bitowego systemu Windows uruchomiona 32-bitowych [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] można przetestować aplikacje WOW 32-bitowy, który ma Synchronization.n interfejsu użytkownika.<br /><br /> 64-bitowego systemu Windows uruchomiona 32-bitowych [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] można przetestować formularzy systemu Windows i aplikacje WPF, którego nie ma interfejsu użytkownika synchronizacji 64-bitowych.|
 |Architektura|x86 i x64 **Uwaga:** programu Internet Explorer nie jest obsługiwane w trybie 64-bitowym z wyjątkiem podczas uruchamiania [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszy.|
-|.NET|.NET 2.0, 3.0, 3.5, 4 i 4.5. **Uwaga:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] zarówno programu Visual Studio będzie wymagać .NET 4 do działania.   Jednak aplikacje opracowane za pomocą wymienionych wersji środowiska .NET są obsługiwane.|
+|.NET|.NET 2.0, 3.0, 3.5, 4 i 4.5. **Uwaga:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] zarówno programu Visual Studio będzie wymagać .NET 4 do działania. Jednak aplikacje opracowane za pomocą wymienionych wersji środowiska .NET są obsługiwane.|
 
 > [!NOTE]
 >  *Interfejs użytkownika synchronizacji* to funkcja, której odtwarzanie jest weryfikowana w kolejce wiadomości każdej kontrolki. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.

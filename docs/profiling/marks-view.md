@@ -1,30 +1,26 @@
 ---
-title: "Widok znaczników | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok znaczników | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
 helpviewer_keywords:
 - profiling tools, Marks view
 - profiling tools reports, Marks view
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 561affd955385f6797774e08d52c6949763a4eae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b0e8bf7883a51f853d0dcec4df28b7640b9712fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="marks-view"></a>Widok znaczników
 W widoku znaczniki wyświetlane próbkowania i zdarzenia ETW, które zostały wstawione do aplikacji.  
@@ -52,4 +48,4 @@ W widoku znaczniki wyświetlane próbkowania i zdarzenia ETW, które zostały ws
 ## <a name="see-also"></a>Zobacz też  
  [Przegląd raportu wydajności](../profiling/performance-report-overview.md)   
  [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91; NIB &#93; Okno kontroli zbierania danych](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [&#91;NIB&#93; okno kontroli zbierania danych](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

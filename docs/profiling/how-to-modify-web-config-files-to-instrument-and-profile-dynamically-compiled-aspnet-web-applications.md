@@ -1,23 +1,21 @@
 ---
-title: "Porady: modyfikowanie plików Web.Config w celu Instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: modyfikowanie plików Web.Config w celu Instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 0c827df346b6521303d5d42c3423b513ed497086
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 427a0d0de82ba5957422fdd9b2db6067ece2f4f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Porady: modyfikowanie plików Web.Config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci ASP.NET
 Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilowane metody Instrumentacji w narzędziach profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i .NET danych o okresie istnienia obiektu z dynamicznie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.  
@@ -65,7 +63,7 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
     |--------------------|---------------------|  
     |**Nazwa**|**Microsoft.VisualStudio.Enterprise.ASPNetHelper**|  
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
-    |**kultury**|**Neutralna**|  
+    |**Kultury**|**Neutralna**|  
   
 7.  Dodaj **codeBase** element jako element podrzędny **dependentAssembly** elementu.  
   
@@ -76,7 +74,7 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
     |**Wersja**|**10.0.0.0**|  
     |**href**|`PathToASPNetHelperDll`|  
   
-     `PathToASPNetHelperDll`jest Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll adres URL pliku. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany w domyślnej lokalizacji **href** wartość powinna być`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
+     `PathToASPNetHelperDll` jest Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll adres URL pliku. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany w domyślnej lokalizacji **href** wartość powinna być `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
   
 ```  
     <configuration>  
@@ -141,8 +139,8 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
-    |**klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder`**\VSInstr.Exe**|  
+    |**Klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.exe**|  
   
 4.  Dodaj inny **dodać** element jako element podrzędny **appSettings** elementu.  
   
@@ -150,10 +148,10 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
-    |**klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
+    |**Klucz**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
     |**value**|`PerformanceToolsFolder`|  
   
-     `PerformanceToolsFolder`jest to ścieżka profilera plików wykonywalnych. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany w lokalizacji domyślnej, wartość będzie **10.0\Team C:\Program Files\Microsoft Visual Studio Tools narzędzia**  
+     `PerformanceToolsFolder` jest to ścieżka profilera plików wykonywalnych. Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany w lokalizacji domyślnej, wartość będzie **10.0\Team C:\Program Files\Microsoft Visual Studio Tools narzędzia**  
   
 ```  
     <configuration>  
@@ -223,5 +221,5 @@ Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skompilo
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Instrumentacja dynamicznie skompilowanej ASP.NET aplikacji i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Porady: Instrumentacja dynamicznie skompilowanej ASP.NET aplikacji i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Porady: Instrumentacja dynamicznie skompilowanej ASP.NET aplikacji i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)   
+ [Porady: Instrumentacja dynamicznie skompilowanej ASP.NET aplikacji i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

@@ -1,13 +1,10 @@
 ---
-title: "Eksplorator wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Eksplorator wydajności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 06/19/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - performance tools [Visual Studio ALM]
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d5c1455f0b6dcaa4d453d6d35a55de937938a8c
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: cbaded26298656a3adb4f0260f3156ade7a2fe6e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="performance-explorer"></a>Eksplorator wydajności
 

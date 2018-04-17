@@ -1,12 +1,9 @@
 ---
-title: "OUTPUT — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: OUTPUT — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - <Output> Element [MSBuild]
 - Output Element [MSBuild]
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3836c4d4235831f705c9ebbf9252311153d6b44b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 59d5352bb2ed3eb7e5e79eacb2c2e0e55a9aad20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="output-element-msbuild"></a>Output — Element (MSBuild)
 Magazyny wartości danych wyjściowych zadania w elementów i właściwości.  

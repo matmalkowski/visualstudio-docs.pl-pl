@@ -1,30 +1,26 @@
 ---
-title: "Skróty klawiaturowe i myszy w oknie Diagram klas i okno Szczegóły klasy (Projektant klas) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Skróty klawiaturowe i myszy w oknie Diagram klas i okno Szczegóły klasy (Projektant klas) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a064c19dd12c0ba2e14ce3278cf7a1b36147a5d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 98ead50019e5ad654492a9758a61a280528aac68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Skróty przy użyciu klawiatury i myszy w oknie Diagram klas i Szczegóły klasy (Projektant klas)
 Klawiatury oprócz myszy można użyć do wykonania akcji nawigacji w Projektancie klas i w **szczegółów klasy** okna.
@@ -77,7 +73,7 @@ Obsługiwane są następujące akcje klawiatury w diagramach klas:
 |ALT + SHIFT + B|Wewnątrz kształty typów + kształtów typu.|Jeśli listę typów podstawowych jest wyświetlany dla kształtu typu i ma więcej niż jeden element, to Przełącza stan rozszerzenia listy (Zwiń/Rozwiń).|  
 |DELETE|Typ i komentarza kształtów|Wywołuje **usunąć z diagramu** polecenia.|  
 ||Na wszystkich innych urządzeń.|Wywołuje **usunąć z kodu** polecenia (elementy członkowskie, parametry, skojarzenia, dziedziczenia, etykiet interfejsów typu lizak).|  
-|CTRL + DELETE|Wszystkie konteksty|Wywołuje **usunąć z kodu** polecenia wyboru.|  
+|CTRL+DELETE|Wszystkie konteksty|Wywołuje **usunąć z kodu** polecenia wyboru.|  
 |TAB|Wszystkie konteksty|Przechodzi do następnego podrzędnych w tym samym elemencie nadrzędnym (obsługuje zawijania).|  
 |SHIFT+TAB|Wszystkie konteksty|Powoduje przejście do poprzedniego podrzędnych w tym samym elemencie nadrzędnym (obsługuje zawijania).|  
 |MIEJSCA|Wszystkie konteksty|Włącza/wyłącza wybór dla bieżącego elementu.|  
@@ -103,4 +99,4 @@ Za pomocą następujących klawiszy Przejdź okno Szczegóły klasy:
 |Strzałka w prawo|Jeśli kursor znajduje się w kolumnie Nazwa, naciskając klawisz strzałki w prawo rozwija bieżący węzeł w hierarchii (jeśli jest zwinięte).|  
   
 ## <a name="see-also"></a>Zobacz także
-[Tworzenie i konfigurowanie typów członków](creating-and-configuring-type-members.md)
+[Tworzenie i konfigurowanie składowych typu](creating-and-configuring-type-members.md)

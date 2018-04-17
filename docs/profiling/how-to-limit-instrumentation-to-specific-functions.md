@@ -1,27 +1,23 @@
 ---
-title: "Porady: ograniczanie Instrumentacji do określonych funkcji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: ograniczanie Instrumentacji do określonych funkcji | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cc476dc43562e5226ebd6564dfb2733f1d57ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a7c5cc56dec707fadc30602fb1b912d17f1dc8f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Porady: ograniczanie instrumentacji do określonych funkcji
 Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną funkcję przez ustawienie opcji **zaawansowane** strony **sesji wydajności** lub docelowego stron właściwości binarnej:  
@@ -45,9 +41,9 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
   
 3.  W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni, aby wpisać nazwę funkcji, które mają być dokumentu:  
   
-     **/ include:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+     **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec`jest to nazwa przestrzeni nazw i funkcji. Ma format `Namespace` **::**`FunctionName`. Użyj średnika, aby oddzielić wiele funkcji. Użyj gwiazdki (\*) można określać symboli wieloznacznych dla co najmniej jeden znak. Na przykład **/ include: MyNS::\***  określa wszystkich funkcji w obszarze nazw MyNS.  
+     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma format `Namespace` **::**`FunctionName`. Użyj średnika, aby oddzielić wiele funkcji. Użyj gwiazdki (\*) można określać symboli wieloznacznych dla co najmniej jeden znak. Na przykład **/ include: MyNS::\***  określa wszystkich funkcji w obszarze nazw MyNS.  
   
     > [!NOTE]
     >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnego narzędzi profilowania (zazwyczaj \Team Tools\Performance katalogu narzędzia w obszarze [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
@@ -64,9 +60,9 @@ Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną fun
   
 4.  W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni, aby wpisać nazwę funkcji, które mają być dokumentu:  
   
-     **/ include:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+     **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec`jest to nazwa przestrzeni nazw i funkcji. Ma format `Namespace` **::**`FunctionName`. Użyj średnika, aby oddzielić wiele funkcji. Użyj gwiazdki (\*) można określać symboli wieloznacznych dla co najmniej jeden znak. Na przykład **/ include: MyNS::\***  określa wszystkich funkcji w obszarze nazw MyNS.  
+     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma format `Namespace` **::**`FunctionName`. Użyj średnika, aby oddzielić wiele funkcji. Użyj gwiazdki (\*) można określać symboli wieloznacznych dla co najmniej jeden znak. Na przykład **/ include: MyNS::\***  określa wszystkich funkcji w obszarze nazw MyNS.  
   
     > [!NOTE]
     >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnego narzędzi profilowania (zazwyczaj \Team Tools\Performance katalogu narzędzia w obszarze [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  

@@ -1,29 +1,25 @@
 ---
-title: "Porady: tworzenie tych samych plików źródłowych z różnymi opcjami | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: tworzenie tych samych plików źródłowych z różnymi opcjami | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
 - project properties, modifying
 - Hello World example [Visual Studio]
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dfebbfe5507afe523a15cce99e0e1f47aa9183f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1105c9122d47e405ad309531abd4913484991fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami różnych kompilacji. Na przykład można utworzyć kompilację debugowania z informacji o symbolach lub kompilacji wydania bez informacji o symbolu, ale z włączonymi optymalizacjami. Lub w przypadku kompilowania projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. W takich przypadkach większość opcji kompilacji nie zmieniają się; tylko kilka opcji nie zostaną zmienione na sterowanie konfigurację kompilacji. Z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], użyj właściwości i warunki do tworzenia konfiguracji różnych kompilacji.  
@@ -53,7 +49,7 @@ Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami r
     ```  
   
 ## <a name="specifying-properties-on-the-command-line"></a>Określanie właściwości w wierszu polecenia  
- Po zapisaniu pliku projektu do akceptowania konfiguracji z wieloma musisz mieć możliwość zmiany tych konfiguracjach zawsze, gdy skompilowanie projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]udostępnia tę możliwość, zezwalając właściwości należy określić przy użyciu wiersza polecenia **/property** lub **/p** przełącznika.  
+ Po zapisaniu pliku projektu do akceptowania konfiguracji z wieloma musisz mieć możliwość zmiany tych konfiguracjach zawsze, gdy skompilowanie projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia tę możliwość, zezwalając właściwości należy określić przy użyciu wiersza polecenia **/property** lub **/p** przełącznika.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Aby ustawić właściwości projektu w wierszu polecenia  
   

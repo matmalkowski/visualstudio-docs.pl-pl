@@ -1,23 +1,21 @@
 ---
 title: Plik DslDefinition.dsl | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opisano klasy i relacje języka specyficznego dla domeny, wraz z diagramu, kształtów, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka specyficznego dla domeny kod, który definiuje te narzędzia jest generowany zgodnie z informacjami w pliku DslDefinition.dsl.  
@@ -38,7 +36,7 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
  Ta sekcja definiuje każdej relacji w modelu. Element źródłowy i docelowy reprezentować dwie strony relacji.  
   
  Types  
- Ta sekcja definiuje każdego typu i jego przestrzeni nazw. Właściwości domeny ma dwa typy. `DomainEnumerations`zdefiniowanych w modelu oraz generowanie typów do DomainModel.cs. `ExternalTypes`odwołuje się do typów, które są zdefiniowane w innym miejscu (takich jak `String` lub `Int32`) i nie generują żadnych czynności.  
+ Ta sekcja definiuje każdego typu i jego przestrzeni nazw. Właściwości domeny ma dwa typy. `DomainEnumerations` zdefiniowanych w modelu oraz generowanie typów do DomainModel.cs. `ExternalTypes` odwołuje się do typów, które są zdefiniowane w innym miejscu (takich jak `String` lub `Int32`) i nie generują żadnych czynności.  
   
  Kształty  
  Ta sekcja definiuje kształtów, które opisują sposób wyświetlania modelu w projektancie. Te kształty geometryczne są mapowane na klasy modelu w sekcji diagramu.  
@@ -135,7 +133,7 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
 </DomainClass>  
 ```  
   
- `NamedElement`jest podstawą kilka innych klas takich jak `Component`, który zawiera właściwości oprócz `Name` właściwość, która ono odziedziczone po `NamedElement`. Węzeł podrzędny baseclass — zawiera odwołanie do krótkiej nazwy. Ponieważ przywoływany klasa znajduje się w tej samej przestrzeni nazw, tylko jego nazwa jest wymagana w monikerze:  
+ `NamedElement` jest podstawą kilka innych klas takich jak `Component`, który zawiera właściwości oprócz `Name` właściwość, która ono odziedziczone po `NamedElement`. Węzeł podrzędny baseclass — zawiera odwołanie do krótkiej nazwy. Ponieważ przywoływany klasa znajduje się w tej samej przestrzeni nazw, tylko jego nazwa jest wymagana w monikerze:  
   
 ```  
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">  
@@ -473,7 +471,7 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
       <XmlClassData ...>...</XmlClassData>  
 ```  
   
--   ConnectorHasDecorators jest relacja osadzania między `Connector` i `Decorator`. `UseFullForm`ustawiono tak, aby nazwa relacji pojawi się z listą właściwości dla każdego łącza z obiektu łącznika. Jednak `OmitElement` również została ustawiona, aby nie `RoleElementName` umieszcza wielu linki, które są osadzone wewnątrz `Connector`:  
+-   ConnectorHasDecorators jest relacja osadzania między `Connector` i `Decorator`. `UseFullForm` ustawiono tak, aby nazwa relacji pojawi się z listą właściwości dla każdego łącza z obiektu łącznika. Jednak `OmitElement` również została ustawiona, aby nie `RoleElementName` umieszcza wielu linki, które są osadzone wewnątrz `Connector`:  
   
 ```  
 <Connector Name="AssociationLink" ...>  
@@ -489,7 +487,7 @@ W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLU
 ## <a name="shapes-and-connectors"></a>Kształty i łączniki  
  Definicje kształt i łącznika atrybuty i węzłów podrzędnych dziedziczyć klasy domeny, oprócz następujących czynności:  
   
--   `Color`i `Line``Style` atrybutów.  
+-   `Color` i `Line``Style` atrybutów.  
   
 -   **ExposesFillColorAsProperty** i kilku atrybutów podobne. Te atrybuty logiczne wprowadź odpowiednią zmienną właściwości przez użytkownika. Ogólnie rzecz biorąc, kliknięcie języka kształt na diagramie, właściwości wyświetlanych w **właściwości** okna są wystąpienia klasy domeny, do którego kształt jest zamapowany. Jeśli `ExposesFillColorAsProperty` ma wartość true, właściwość kształt pojawia się również.  
   

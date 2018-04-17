@@ -1,12 +1,10 @@
 ---
-title: "Porady: udostępnianie kodu z VBA w projektach Visual Basic | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: udostępnianie kodu z VBA w projektach Visual Basic | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d3d007024cdca160c194285da8f0a741100253d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Porady: udostępnianie kodu z VBA w projektach Visual Basic
   Można udostępnianie kodu w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu Visual Basic dla kodu aplikacji (VBA), jeśli chcesz, aby dwa typy kodu do oddziaływać na siebie.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Proces programu Visual Basic różni się od procesu Visual C#. Aby uzyskać więcej informacji, zobacz [porady: udostępnianie kodu z VBA w Visual C & 35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Proces programu Visual Basic różni się od procesu Visual C#. Aby uzyskać więcej informacji, zobacz [porady: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Proces jest inny kod w klasie elementu hosta niż dla kodu innych klas:  
   
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: wywołać VSTO kodu z VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
-##  <a name="HostItemCode"></a>Udostępnianie kodu w klasie elementu hosta  
+##  <a name="HostItemCode"></a> Udostępnianie kodu w klasie elementu hosta  
  Aby włączyć kod VBA wywoła kod Visual Basic w klasie elementu hostów, ustaw **EnableVbaCallers** właściwości elementu hosta do **True**.  
   
  Aby uzyskać wskazówki, który demonstruje sposób ujawnia metody klasy elementu hosta, a następnie wywołać ją z kodu VBA, zobacz [wskazówki: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Aby uzyskać informacje o obiektach hosta, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Skompiluj projekt.  
   
-##  <a name="NonHostItem"></a>Udostępnianie kodu, który nie znajduje się w klasie elementu hosta  
+##  <a name="NonHostItem"></a> Udostępnianie kodu, który nie znajduje się w klasie elementu hosta  
  Aby włączyć kod VBA wywoła kod Visual Basic, który nie znajduje się w klasie elementu hosta, należy zmodyfikować kod, aby nie jest widoczna w VBA.  
   
 #### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Aby udostępnianie kodu, który nie znajduje się w klasie elementu hosta w VBA  
@@ -125,6 +124,6 @@ ms.lasthandoff: 01/10/2018
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   
  [Łączenie VBA i dostosowywanie na poziomie dokumentu](../vsto/combining-vba-and-document-level-customizations.md)   
  [Wskazówki: Wywoływanie kodu z VBA w projektach Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Porady: udostępnianie kodu z VBA w Visual C & 35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Porady: udostępnianie kodu z VBA w Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

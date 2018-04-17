@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Wywoływanie Client Object Model SharePoint w rozszerzeniu Eksploratora serwera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Wywoływanie Client Object Model SharePoint w rozszerzeniu Eksploratora serwera | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Wskazówki: wywoływanie Client Object Model SharePoint w rozszerzeniu Eksploratora serwera
   W tym przewodniku pokazano, jak wywoływanie SharePoint client object model z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektów klienta programu SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ Znajomość następujące pojęcia jest przydatna, ale nie jest to wymagane, aby
   
 6.  W **nazwa** wpisz **WebPartNode**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **WebPartNode** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartNode** projektu do **Eksploratora rozwiązań**.  
   
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia  
   
@@ -96,7 +95,7 @@ Znajomość następujące pojęcia jest przydatna, ale nie jest to wymagane, aby
   
 5.  W **nazwa** wprowadź **WebPartNodeExtension**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **WebPartNodeExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartNodeExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 6.  Usuń plik kodu Class1 z projektu.  
   
@@ -287,6 +286,6 @@ Znajomość następujące pojęcia jest przydatna, ale nie jest to wymagane, aby
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)   
- [Tworzenie ikony lub innego obrazu &#40; edytor obrazów dla ikon &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Tworzenie ikony lub innego obrazu &#40;edytor obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

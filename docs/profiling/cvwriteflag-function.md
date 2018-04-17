@@ -1,12 +1,10 @@
 ---
-title: "Cvwriteflag — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Cvwriteflag — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteFlagExVA
 - cvmarkers/CvWriteFlagExW
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - CvWriteFlagExA method
 - CvWriteFlagExVW method
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7d40b0072228c649bc6b7774fda9a4cc14fee410
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f792407d61f3f1d5ccea0796694447c33433d4af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag — Funkcja
 Zapisuje plik śledzenia Concurrency Visualizer flagę.  

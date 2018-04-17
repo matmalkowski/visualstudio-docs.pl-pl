@@ -1,27 +1,23 @@
 ---
-title: "Określenie niestandardowych zdarzeń kompilacji w Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Określenie niestandardowych zdarzeń kompilacji w Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede663f1053f6a3261de542b31b73fc9c8a10bb8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 68068a88744484e0f9d1849a430a32fd3f4c1899
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Określenie niestandardowych zdarzeń kompilacji w programie Visual Studio
 Określając zdarzeń niestandardowej kompilacji, możesz automatycznie uruchamiać polecenia przed rozpoczęciem kompilacji lub po jej zakończeniu. Na przykład możesz uruchomić plik .bat przed kompilacji uruchamia lub skopiuj nowe pliki do folderu po zakończeniu kompilacji. Zdarzenia kompilacji uruchomić tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.  
@@ -41,9 +37,9 @@ Określając zdarzeń niestandardowej kompilacji, możesz automatycznie uruchami
   
 -   Dodaj `call` instrukcji, aby wszystkie zdarzenia kompilacji który uruchamiać pliki bat.  
   
-     Przykład:`call C:\MyFile.bat`  
+     Przykład: `call C:\MyFile.bat`  
   
-     Przykład:`call C:\MyFile.bat call C:\MyFile2.bat`  
+     Przykład: `call C:\MyFile.bat call C:\MyFile2.bat`  
   
 -   Ścieżki pliku należy ująć w cudzysłowy.  
   
@@ -56,7 +52,7 @@ Określając zdarzeń niestandardowej kompilacji, możesz automatycznie uruchami
      Przykład: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`  
   
     > [!NOTE]
-    >  `%I`Powyższy kod powinien być `%%I` w partii skryptów.  
+    >  `%I` Powyższy kod powinien być `%%I` w partii skryptów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)   

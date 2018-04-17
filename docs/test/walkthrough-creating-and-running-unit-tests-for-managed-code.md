@@ -1,8 +1,8 @@
 ---
-title: "Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: 'Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu w programie Visual Studio | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 74e364b9ea3660c8daa58b75bb6ba74f9af26c69
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu
 
@@ -234,7 +234,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Usuń kod i ponownie uruchomić testy
  **Analizuj wyniki testów**
 
- Wynik testu zawiera komunikat zawierający opis błędu. Dla `AreEquals` metody komunikat wyświetlany przez możesz oczekiwanym ((**Oczekiwano\<*XXX*>**parametru) i co faktycznie otrzymano (  **Rzeczywiste\<*YYY* >**  parametru). Oczekiwaną saldo zrezygnować z saldo początkowe, ale zamiast tego wzrosła o ilość wycofanie.
+ Wynik testu zawiera komunikat zawierający opis błędu. Dla `AreEquals` metody komunikat wyświetlany przez możesz oczekiwanym ((**Oczekiwano\<*XXX*>**parametru) i co faktycznie otrzymano ( **Rzeczywiste\<*YYY* >** parametru). Oczekiwaną saldo zrezygnować z saldo początkowe, ale zamiast tego wzrosła o ilość wycofanie.
 
  Ponowne testy kodu debetowa pokazuje, że test jednostkowy zakończyła się pomyślnie, w poszukiwaniu błędów. Ilość wycofanie jest dodawany do saldo konta, gdy powinna być odjęta.
 

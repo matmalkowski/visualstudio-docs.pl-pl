@@ -1,29 +1,25 @@
 ---
-title: "span:: ~ span — destruktor | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'span:: ~ span — destruktor | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::~span
 helpviewer_keywords:
 - Concurrency::diagnostic::span::~span destructor
 ms.assetid: 9ff61542-9be7-4e81-bfe5-5d2c6eb112c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c9224cdc9eae6f3c62a756bccbc789efce55b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 09cbdde2b801f1676ced82e1b2c47e935c48af37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="spanspan-destructor"></a>span::~span — Destruktor
 Niszczy `span` obiektu i zwalnia jego zasoby.  

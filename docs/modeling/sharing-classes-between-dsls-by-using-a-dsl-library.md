@@ -1,21 +1,19 @@
 ---
-title: "Udostępnianie klas między DSLs przy użyciu biblioteki DSL | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Udostępnianie klas między DSLs przy użyciu biblioteki DSL | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a58726bdc4e6e139963ae8cca2d12f26e0696246
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1164b0a96a10e7fa9cda3f8082bb052a0b445e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania zestawu SDK, można utworzyć definicji DSL niekompletne, który można zaimportować do innej DSL. Dzięki temu można współczynnika typowych części podobnych modeli.  
@@ -44,7 +42,7 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i model
   
 6.  Skompiluj projekt.  
   
-7.  Podczas dystrybucji DSL dla użytkowników w sieci, należy podać zarówno w skompilowanym zestawie (dynamicznie DLL), jak i plik `DslDefinition.dsl`. Skompilowanego zestawu można znaleźć w folderze w`Dsl\bin\*`  
+7.  Podczas dystrybucji DSL dla użytkowników w sieci, należy podać zarówno w skompilowanym zestawie (dynamicznie DLL), jak i plik `DslDefinition.dsl`. Skompilowanego zestawu można znaleźć w folderze w `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>Aby zaimportować bibliotekę DSL  
   

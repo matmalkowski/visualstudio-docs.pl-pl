@@ -1,12 +1,10 @@
 ---
-title: "Zagadnienia dotyczące rozwiązania typu piaskownica | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zagadnienia dotyczące rozwiązania typu piaskownica | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Uwagi dotyczące rozwiązania typu piaskownica
   *Rozwiązania piaskownicy* to funkcja programu Microsoft SharePoint 2010, umożliwiający użytkownikom kolekcji lokacji przekazać swoje własne rozwiązania niestandardowego kodu. Typowe rozwiązania typu piaskownica jest użytkownikom przekazywanie ich własnych składników Web Part.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Aplikacja trybie piaskownicy programu SharePoint działa w bezpieczny, monitorowanego procesu, który ma dostęp do ograniczonej części kolektywu serwerów sieci Web. Program Microsoft SharePoint 2010 używa kombinacji funkcji, galerie rozwiązania rozwiązanie monitorowania i strukturze weryfikacji, aby umożliwić rozwiązań w trybie piaskownicy.  
   
 ## <a name="specifying-project-trust-level"></a>Określanie poziomu zaufania projektu  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]obsługuje rozwiązania w trybie piaskownicy za pośrednictwem właściwości projektu logiczną o nazwie *rozwiązania typu piaskownica*. Tej właściwości można ustawić w dowolnym momencie w projekcie, lub można ją określić podczas tworzenia projektu w **Kreator dostosowania programu SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsługuje rozwiązania w trybie piaskownicy za pośrednictwem właściwości projektu logiczną o nazwie *rozwiązania typu piaskownica*. Tej właściwości można ustawić w dowolnym momencie w projekcie, lub można ją określić podczas tworzenia projektu w **Kreator dostosowania programu SharePoint**.  
   
 > [!NOTE]  
 >  Zmiana *rozwiązania typu piaskownica* właściwość projektu po jego utworzeniu może spowodować błędy sprawdzania poprawności.  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
  3.0 WSS rozwiązania można można wdrożyć tylko na poziomie farmy. Oznacza to, że potencjalnie szkodliwego lub destabilizing rozwiązania mogą być wdrożone dotyczący całej farmy sieci Web i wszystkich zbiorów witryn i aplikacji działających na jego podstawie. Jednak przy użyciu rozwiązań w trybie piaskownicy, można wdrożyć rozwiązanie do obszaru podrzędnego farmy, w określonym zbiorze witryn. Aby zapewnić dodatkową ochronę, zestawu rozwiązania nie został załadowany w głównym [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] procesu (w3wp.exe). Zamiast tego jest ładowany w oddzielnych procesach (SPUCWorkerProcess.exe). Ten proces jest monitorowane i implementuje przydziałów i ograniczania przepustowości do ochrony farmy z rozwiązań w trybie piaskownicy, wykonujących szkodliwych działań, takie jak uruchomienie ścisłej pętle, używające cykli Procesora.  
   
 ## <a name="site-collection-solution-gallery"></a>Galeria rozwiązania kolekcji witryn  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 jest funkcją, która nazywa się "kolekcji rozwiązania galerii witryn." Możesz korzystać z tej funkcji na stronie Administracja centralna programu SharePoint 2010 lub przez otwarcie **Akcje witryny** menu, wybierając **ustawienia lokacji**, a następnie wybierając **rozwiązań** łącze w obszarze **galerie** w witrynie programu SharePoint. Galerie rozwiązania są repozytoria rozwiązania, które umożliwiają administratorom kolekcji lokacji zarządzanie rozwiązaniami w zbiorach witryn.  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 jest funkcją, która nazywa się "kolekcji rozwiązania galerii witryn." Możesz korzystać z tej funkcji na stronie Administracja centralna programu SharePoint 2010 lub przez otwarcie **Akcje witryny** menu, wybierając **ustawienia lokacji**, a następnie wybierając **rozwiązań** łącze w obszarze **galerie** w witrynie programu SharePoint. Galerie rozwiązania są repozytoria rozwiązania, które umożliwiają administratorom kolekcji lokacji zarządzanie rozwiązaniami w zbiorach witryn.  
   
  Galeria rozwiązania jest przechowywane w katalogu głównym witryny programu SharePoint w sieci Web biblioteki dokumentów. Galeria rozwiązań zastępuje szablony stron i obsługuje pakietów rozwiązania. Po przekazaniu pliku pakietu (wsp) rozwiązania programu SharePoint jest przetwarzany jako rozwiązanie w trybie piaskownicy.  
   
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Obsługa wszystkich składników Web Part, które pochodzą z`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Obsługa wszystkich składników Web Part, które pochodzą z `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Części sieci Web  
   

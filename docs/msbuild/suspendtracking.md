@@ -1,12 +1,9 @@
 ---
 title: SuspendTracking | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - SuspendTracking
 apilocation:
@@ -15,17 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - SuspendTracking
 ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7f7923f476d6c6bee4f8a5d6eda0c6c7b6fb87
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7320f2a109da838124c08e8d036089ee0b49ca10
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 Wstrzymuje śledzenia w bieżącym kontekście.  

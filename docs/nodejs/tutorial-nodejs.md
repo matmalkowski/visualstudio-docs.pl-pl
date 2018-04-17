@@ -3,28 +3,24 @@ title: Tworzenie aplikacji Node.js i Express — Visual Studio | Dokumentacja fi
 description: W tym samouczku zostanie utworzona aplikacja Node.js i Express programu Visual Studio
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
-Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
+Ten samouczek dotyczący tworzenia Visual Studio przy użyciu środowiska Node.js i Express służy do utworzyć prostą aplikację sieci web Node.js, Dodaj kod, Eksploruj niektóre funkcje IDE i uruchomić aplikację. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).
 
 Z tego samouczka, dowiesz się, jak:
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ Z tego samouczka, dowiesz się, jak:
 ## <a name="create-a-project"></a>Tworzenie projektu
 Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
-1. Otwórz program Visual Studio 2017 r.  
+1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .  
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
 
-1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz pozycję **Node.js**. W środkowym okienku wybierz **Azure Node.js Express 4 aplikacji w warstwie podstawowa**, a następnie wybierz pozycję **OK**.   
+1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz pozycję **Node.js**. W środkowym okienku wybierz **Azure Node.js Express 4 aplikacji w warstwie podstawowa**, a następnie wybierz pozycję **OK**.
 
-     Jeśli nie widzisz **Azure Node.js Express 4 aplikacji w warstwie podstawowa** szablon projektu, należy zainstalować **programowanie Node.js** obciążenia pierwszego. 
+     Jeśli nie widzisz **Azure Node.js Express 4 aplikacji w warstwie podstawowa** szablon projektu, należy zainstalować **programowanie Node.js** obciążenia pierwszego.
 
     Visual Studio tworzy nowe rozwiązanie i otwiera projektu. *App.js* plik projektu zostanie otwarty w edytorze (lewe okienko).
 
@@ -130,11 +126,11 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Po `data` ciągu, wpisz `: get` i IntelliSense zostanie wyświetlona `getData` funkcji. Wybierz `getData`.
 
-    ![Używanie IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![Używanie IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Usuń przecinkiem (`,`) przed `"data"` i wyróżnianie składni zielony na wyrażeniu. Umieść kursor nad wyróżnianie składni.
 
-    ![Błąd składni w widoku](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![Błąd składni w widoku](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     Ostatni wiersz ten komunikat informuje, że interpreter języka JavaScript Oczekiwano przecinka (`,`).
 
@@ -152,15 +148,15 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio należy zawiesić kodu uruchomionej, aby móc przeglądać wartości zmiennych, ani zachowanie pamięci lub czy jest pobieranie uruchamiana gałąź kodu. 
+    Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio należy zawiesić kodu uruchomionej, aby móc przeglądać wartości zmiennych, ani zachowanie pamięci lub czy jest pobieranie uruchamiana gałąź kodu.
 
-    ![Ustaw punkt przerwania](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![Ustaw punkt przerwania](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 1. Wybierz cel debugowania na pasku narzędzi debugowania.
 
-    ![Wybierz cel debugowania](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![Wybierz cel debugowania](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. Naciśnij klawisz **F5** (**debugowania** > **Rozpocznij debugowanie**) do uruchomienia aplikacji.
 
@@ -178,15 +174,15 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
 1. Kliknij przyciski do wyświetlania różnych obrazów.
 
-    ![Aplikacja uruchomiona w przeglądarce](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![Aplikacja uruchomiona w przeglądarce](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. Zamknij przeglądarkę sieci web.  
+1. Zamknij przeglądarkę sieci web.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Opcjonalnie) Publikowanie w usłudze Azure App Service
 
 1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **publikowania**.
 
-   ![Publikowanie w usłudze Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![Publikowanie w usłudze Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Wybierz **usługi Microsoft Azure App Service**.
 
@@ -198,11 +194,11 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     Na pomyślne wdrożenie aplikacji otwiera w przeglądarce uruchomionej w usłudze Azure App Service. Kliknij przycisk, aby wyświetlić obraz.
 
-   ![Aplikacji uruchomionej w usłudze Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Aplikacji uruchomionej w usłudze Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 Gratulujemy wykonanie kroków tego samouczka!
 
-## <a name="next-steps"></a>Następne kroki 
+## <a name="next-steps"></a>Następne kroki
 
 W tym samouczku przedstawiono sposób tworzenia i uruchamiania aplikacji Node.js przy użyciu Express i trafiony punkt przerwania korzystanie z debugera.
 

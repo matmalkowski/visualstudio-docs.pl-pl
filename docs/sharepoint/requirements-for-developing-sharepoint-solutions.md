@@ -1,13 +1,10 @@
 ---
-title: "Wymagania związane z opracowywaniem rozwiązań SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wymagania związane z opracowywaniem rozwiązań SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, requirements
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4591bef62d9e3d639e6dfca44c0b2625a8e02de5
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2cb92476d64abebb0dae24109e57940a19505cc1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>Wymagania związane z opracowywaniem rozwiązań SharePoint
  
@@ -75,4 +72,4 @@ Umożliwiające tworzenie rozwiązań programu SharePoint, musi mieć wystarczaj
 
 ## <a name="see-also"></a>Zobacz też
 
-[Wprowadzenie &#40; Projektowanie SharePoint w Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+[Wprowadzenie &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)

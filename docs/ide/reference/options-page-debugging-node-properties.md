@@ -1,25 +1,21 @@
 ---
-title: "Strona opcji, debugowanie — właściwości węzła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Strona opcji, debugowanie — właściwości węzła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 40589b9d429d1d405e09d51ae76ddd8786b78a78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Strona opcji, debugowanie — Właściwości węzła
 W poniższych tabelach opisano stron (lub kolekcji właściwości) które są skojarzone z **debugowanie** kategorii, `DTE.Properties("Debugging", <Property Page>)` z **opcje** okno dialogowe.  
@@ -90,4 +86,4 @@ W poniższych tabelach opisano stron (lub kolekcji właściwości) które są sk
  [Strona opcji, Edytor tekstu — właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Ogólne, debugowanie, opcje — Okno dialogowe](../../debugger/general-debugging-options-dialog-box.md)   
  [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Just-In-Time, Debugging, Options Dialog Box](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Just-In-Time, debugowanie, opcje — Okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)

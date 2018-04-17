@@ -1,12 +1,9 @@
 ---
-title: "Choose — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Choose — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Choose
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - <Choose> Element [MSBuild]
 - Choose Element [MSBuild]
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b74b872ab297c31ae59c826fe0e880a8b8a9c80
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9cd1f77b889a4c0299fef323b1dfc718cdda8219
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-element-msbuild"></a>Choose — Element (MSBuild)
 Oblicza elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementów i/lub `PropertyGroup` elementy do oceny.  
@@ -62,14 +58,14 @@ Oblicza elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementów i/l
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[W przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementy do oceny, czy wszystkie warunki `When` obliczać elementy `false`. Może być zero lub jeden `Otherwise` elementów w `Choose` elementu, a musi być ostatnim elementem.|  
+|[w przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementy do oceny, czy wszystkie warunki `When` obliczać elementy `false`. Może być zero lub jeden `Otherwise` elementów w `Choose` elementu, a musi być ostatnim elementem.|  
 |[Kiedy](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwe blok kodu dla `Choose` element, aby wybrać. Może istnieć co najmniej jeden `When` elementów w `Choose` elementu.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[W przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Określa blok kodu do wykonania, jeśli wszystkie warunki `When` obliczać elementy `false`.|  
+|[w przeciwnym razie](../msbuild/otherwise-element-msbuild.md)|Określa blok kodu do wykonania, jeśli wszystkie warunki `When` obliczać elementy `false`.|  
 |[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
 |[Kiedy](../msbuild/when-element-msbuild.md)|Określa możliwe blok kodu dla `Choose` element, aby wybrać.|  
 

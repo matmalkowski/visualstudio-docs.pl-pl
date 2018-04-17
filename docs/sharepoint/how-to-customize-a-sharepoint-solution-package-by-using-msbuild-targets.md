@@ -1,13 +1,10 @@
 ---
-title: "Porady: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Wskazówki: Dostosowywanie pakietu rozwiązania SharePoint przy użyciu docelowych elementów MSBuild
   Przy użyciu docelowych elementów MSBuild w wierszu polecenia, można dostosować, jak program Visual Studio tworzy pliki pakietu programu SharePoint (wsp). Na przykład można dostosować właściwości programu MSBuild, aby zmienić katalog pośredni pakowania i grup elementów MSBuild określające wyliczany plików.  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Otwórz projekt, otwórz menu skrótów, a następnie wybierz **Zwolnij projekt**.  
   
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, a następnie wybierz **Edytuj***ProjectName***vbproj** lub **Edytować***ProjectName***.csproj**.  
+4.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, a następnie wybierz **Edytuj***ProjectName***vbproj** lub **Edytuj***ProjectName*** .csproj**.  
   
 5.  Po `Import` wiersz pod koniec pliku projektu, Dodaj następujący wiersz.  
   

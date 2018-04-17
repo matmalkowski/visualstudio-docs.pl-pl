@@ -1,26 +1,24 @@
 ---
-title: "Działanie procesora GPU (ten proces) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Działanie procesora GPU (ten proces) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuexecution
 - vs.cv.threads.timeline.gpuactivity
 ms.assetid: 0956edbf-9bcd-4afe-9287-fda628648ca0
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2b395d47e6b338559b6f0bb22c8aef88ba183cd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 44d676fc69142e0ab8de4f63637b81578a0e2a00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gpu-activity-this-process"></a>Aktywności procesora GPU (ten proces)
 **Aktywności procesora GPU (ten proces)** segmentów w widoku wątków w Concurrency Visualizer reprezentują razy podczas przetwarzania żądania w imieniu bieżącego procesu procesora GPU. Te żądania są wysyłane do procesora GPU jako pamięci (DMA) dostępu do pakietów. Długość segmentu reprezentuje czas procesora GPU zostało przetwarzania pakietów DMA imieniu bieżącego procesu.  

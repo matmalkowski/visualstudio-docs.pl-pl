@@ -1,23 +1,21 @@
 ---
 title: Argumenty | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13243c0f7d0553b386d1a890e4d2be0272e9a27a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8e9130609c9e16e16b572edfdfa34d758f2eaa2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="args"></a>Args
 VSPerfCmd.exe **argumentów** opcji określa listę argumentów, które są przekazywane do aplikacji docelowej z **uruchamianie** podpolecenia.  
@@ -35,7 +33,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  Lista argumentów do aplikacji docelowej z **uruchamianie** polecenia.  
   
 ## <a name="required-options"></a>Wymagane opcje  
- **Uruchom:**`AppName`  
+ **Uruchom:** `AppName`  
  Uruchamia określony aplikację i rozpocznie się profilowania za pomocą metody pobierania próbek.  
   
 ## <a name="example"></a>Przykład  

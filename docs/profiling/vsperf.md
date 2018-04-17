@@ -1,23 +1,21 @@
 ---
 title: VSPerf | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ea6214987e12b8c5cf7e563b666822989d3a7015
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 03d354476e0c822704d6fca619c5dca4cc109285
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Użyj **VsPerf** narzędzie wiersza polecenia do:  
@@ -28,7 +26,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
   
  Aby uzyskać więcej informacji o opcjach profilowania, zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a>W tym temacie  
+##  <a name="BKMK_In_this_topic"></a> W tym temacie  
  W tym temacie opisano opcje używane z `vsperf.exe` narzędzia wiersza polecenia. Temat zawiera następujące sekcje:  
   
  [Tylko aplikacje platformy uniwersalnej systemu Windows](#BKMK_windows_store_apps_only)  
@@ -37,7 +35,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
   
  [Wszystkie aplikacje](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a>Tylko aplikacje platformy uniwersalnej systemu Windows  
+##  <a name="BKMK_windows_store_apps_only"></a> Tylko aplikacje platformy uniwersalnej systemu Windows  
  Te opcje są stosowane tylko do aplikacji platformy uniwersalnej systemu Windows.  
   
 |||  
@@ -48,7 +46,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**/noclr**|Opcjonalny. Nie zbieraj danych CLR.<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja rozwiąże nie symbole zarządzane.|  
 |**/listapps**|Lista zainstalowanych nazwy aplikacji i PackageFullNames.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Aplikacje systemu Windows 8 i tylko aplikacje systemu Windows Server 2012  
+##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje systemu Windows 8 i tylko aplikacje systemu Windows Server 2012  
  Te opcje nie działają w aplikacji platformy uniwersalnej systemu Windows.  
   
 |||  
@@ -57,12 +55,12 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**przełącznika/args: {ExecutableArguments}**|Określa argumenty wiersza polecenia do przekazania **/uruchamianie** docelowej.|  
 |**/ Console**|Uruchamia **/uruchamianie** docelowego w nowym oknie polecenia.|  
   
-##  <a name="BKMK_All_applications"></a>Wszystkie aplikacje  
+##  <a name="BKMK_All_applications"></a> Wszystkie aplikacje  
  Te opcję stosowania do aplikacji systemu Windows 8 lub Windows Server 2012.  
   
 |||  
 |-|-|  
-|**/ dołączyć: {PID &#124; Parametr} [, PID &#124; Parametr]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy działających aplikacji procesu.|  
+|**/ dołączyć: {PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy działających aplikacji procesu.|  
 |**/ file:{ReportName}**|Opcjonalny. Określa plik wyjściowy (zastępuje istniejący plik).<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.|  
 |**/ pause**|Wstrzymaj zbieranie danych.|  
 |**/Resume**|Wznowienie zbierania danych.|  

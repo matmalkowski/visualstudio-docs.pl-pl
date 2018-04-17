@@ -1,7 +1,7 @@
 ---
-title: "Przeglądarka testu mieszanego dla obciążenia testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Przeglądarka testu mieszanego dla obciążenia testowania w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, web browser types
 - load tests, scenarios
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: bae150fcd528166121f49a7018be0a71d7cbf37f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: be0bd036c907f852028f6a9cccc798742e624184
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edytowanie mieszanki testów, aby określić, które Web typów przeglądarek w obciążeniu scenariusza testu
 
@@ -72,10 +72,10 @@ ms.lasthandoff: 03/19/2018
 > [!WARNING]
 > **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
 
- Istnieje również możliwość na typ wartości procentowe bezpośrednio do  **%**  kolumny zamiast przy użyciu suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, innych elementów nie zostanie automatycznie dostosowana.
+ Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny zamiast przy użyciu suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, innych elementów nie zostanie automatycznie dostosowana.
 
 > [!NOTE]
-> Suwaki są wyłączone, gdy łączna nie dodaje do 100% lub po wprowadzeniu wartości procentowe w  **%**  kolumny są miejsc dziesiętnych.
+> Suwaki są wyłączone, gdy łączna nie dodaje do 100% lub po wprowadzeniu wartości procentowe w **%** kolumny są miejsc dziesiętnych.
 
  Po wprowadzeniu wartości procentowe ręcznie, należy upewnić się, że suma wszystkich elementów jest 100%. Po zapisaniu mieszane, jeśli nie jest sumą 100%, pojawi się monit zaakceptować wartości procentowe są one lub do Przejdź wstecz i dostosować je. Jeśli wybierzesz je zaakceptować, ponieważ są one, zostaną obliczone proporcjonalnie do 100%.  Na przykład jeśli dwa elementy i ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawiona do 66,67% (80 podzielona przez 120) i drugiego elementu zostanie ustawiona do 33,33% (40 podzielona przez 120).
 

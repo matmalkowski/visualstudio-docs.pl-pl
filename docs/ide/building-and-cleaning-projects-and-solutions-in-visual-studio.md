@@ -2,12 +2,9 @@
 title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.BuildProjectPicker
 - vs.batchbuild
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9afb8bd1c11caf307365d03351ff174c61011765
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 190bcbbb990c0dce447e4153d747fb9f4d6156d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio
 Korzystając z procedur opisanych w tym temacie, kompilacji, skompiluj ponownie lub wyczyść wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Samouczek krok po kroku, zobacz [wskazówki: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).  
@@ -94,7 +90,7 @@ Wybierz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektu, a na
   
 - **Wyczyść tylko** *ProjectName*  
   
-- **Link Only** *ProjectName*  
+- **Połącz tylko** *ProjectName*  
 
 Polecenia te dotyczą tylko [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wybranego, bez tworzenia, ponownie skompilować, czyszczenia lub łączenia wszystkie zależności projektu lub rozwiązania pliki projektu. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **projektu tylko** podmenu może zawierać więcej poleceń.  
   

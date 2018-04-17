@@ -1,11 +1,9 @@
 ---
 title: Tworzenie modeli dla aplikacji | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -22,14 +20,14 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d56897b7381bd8d7f7a276e64c32ca83d5a969
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9f6da9b6e70280cc4d22264356fb0c63d2fe71ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
@@ -56,7 +54,7 @@ W celu wizualizacji architektura systemu lub istniejący kod, należy utworzyć 
 |[Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)<br /><br /> [Używanie modeli w elastyczne programowanie](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Użyj modele, aby ułatwić zrozumienie i zmienić systemu podczas jego tworzenia.|  
 |[Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)|Organizowanie modeli w projekcie dużych lub średnia.|  
   
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 [Visual Studio wizualizacji & modelowania Forum narzędzia](http://go.microsoft.com/fwlink/?LinkId=184720)  
 [Forum rozszerzalności programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

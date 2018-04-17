@@ -1,29 +1,25 @@
 ---
-title: "Porady: Tworzenie projektu zawierającego zasoby | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Tworzenie projektu zawierającego zasoby | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
 - resources [Visual Studio], compiling with MSBuild
 - projects [.NET Framework], building
 - MSBuild, building a project with resources
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca7978c4b50794b0c165ce8251da989a1653364
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1932a49af8d6a7ebd6a72ec42700bf51554990bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Porady: kompilacja projektu zawierającego zasoby
 Jeśli tworzysz zlokalizowane wersje projektu, wszystkie elementy interfejsu użytkownika muszą być rozdzielane do plików zasobów dla różnych języków. Jeśli projekt używa tylko ciągi, pliki zasobów można użyć plików tekstowych. Alternatywnie można użyć pliki .resx jako pliki zasobów.  

@@ -1,23 +1,21 @@
 ---
 title: PF | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 548a4cedf715faf998912500bf3e2390ac07070b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb0f9088b5c5ac40c1edf96eaac14616891ba722
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** opcja umożliwia ustawienie profilowania zdarzenia, które jest próbkowany błędów stron i opcjonalnie powoduje zmianę liczby błędów stron w interwale próbkowania w domyślnej 10.  
@@ -44,10 +42,10 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Wymagane opcje  
  **PF** można określić tylko w wierszu polecenia, która zawiera jeden z następujących opcji.  
   
- **Uruchom:**`AppName`  
+ **Uruchom:** `AppName`  
  Uruchamia profilera i aplikacji określonej przez AppName.  
   
- **Dołącz:**`PID`  
+ **Dołącz:** `PID`  
  Dołącza określony AppName proces profilera.  
   
 ## <a name="invalid-options"></a>Nieprawidłowe opcje  
@@ -62,7 +60,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
  **Licznik:** `Name`[`,Reload`[`,FriendlyName`]]  
  Ustawia zdarzeń pobierania próbek wydajności procesora CPU licznika określony przez `Name` i ustawia interwał próbkowania `Reload`.  
   
- **Wykaz Globalny**[**:**{**alokacji**&#124; **Okres istnienia**}]  
+ **Wykaz Globalny**[**:**{**alokacji**&#124;**okres istnienia**}]  
  Umożliwia zbieranie danych pamięci .NET. Domyślnie (**alokacji**), dane są zbierane w każdym zdarzeniu alokacji pamięci. Gdy **okres istnienia** parametr jest określony, również zbieranych danych w każdym zdarzeniu kolekcji pamięci.  
   
 ## <a name="example"></a>Przykład  

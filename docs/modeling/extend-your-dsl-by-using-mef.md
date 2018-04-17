@@ -2,20 +2,18 @@
 title: Rozszerzanie programu DSL za pomocą MEF | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 66fb2c371f67d0da13ac88fee22225970557216f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 Języka specyficznego dla domeny (DSL) można rozszerzyć za pomocą Managed Extensibility Framework (MEF). Użytkownik lub inni deweloperzy będą mogli zapisać rozszerzenia DSL bez zmiany definicji DSL i kod programu. Takie rozszerzenia obejmują poleceń menu, przeciągnij i upuść programów obsługi i sprawdzania poprawności. Użytkownicy będą mogli do zainstalowania programu DSL, a następnie opcjonalnie zainstalować rozszerzenia dla niego.  

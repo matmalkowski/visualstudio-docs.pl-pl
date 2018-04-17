@@ -1,23 +1,21 @@
 ---
-title: "Zbieranie danych pamięci z usług .NET Framework za pomocą wiersza polecenia profilera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zbieranie danych pamięci z usług .NET Framework za pomocą wiersza polecenia profilera | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: a20c3cff1ee86e0dc0a9530e9ac75aabe881bacb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: f13961a0431f1321a4fb203c349fa782a1686bab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury i opcji zbierania danych pamięci alokacji i obiekt okres istnienia dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usługi przy użyciu metody próbkowania w wierszu polecenia.  

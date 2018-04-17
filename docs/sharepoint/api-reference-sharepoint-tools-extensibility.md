@@ -1,13 +1,10 @@
 ---
-title: "Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dokumentacja interfejsu API (rozszerzalność narzędzi SharePoint) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a44f54e80ec3b4c91198666ed7066e6308d3e602
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0aca731f3f57b7c7024135a3d06d7b17481ba924
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Odwołanie API (Rozszerzalność Narzędzi SharePoint)
   Ta sekcja zawiera dokumentacji interfejsu API dla Rozszerzanie narzędzi SharePoint w Visual Studio.  
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
  Zawiera typy, które służy do dostosowywania zachowania weryfikacji funkcji i pakiet w projekcie programu SharePoint.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do &#40; Rozszerzalność narzędzi SharePoint &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [Odwołanie &#40;rozszerzalność narzędzi SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Omówienie programu SharePoint modelu programowania rozszerzeń narzędzi](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Rozszerzanie systemu projektu SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   

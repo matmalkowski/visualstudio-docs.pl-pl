@@ -2,26 +2,22 @@
 title: Profilowanie funkcji samouczek | Dokumentacja firmy Microsoft
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 20b405140fcb410e22089bd616aec0411a218bc1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profiling-feature-tour"></a>Przegląd funkcji profilowania
 
@@ -161,7 +157,7 @@ Poniżej przedstawiono listę różnych narzędzi, których program Visual Studi
 |[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak| 
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|
 |[PerfTips](../profiling/perftips.md)|Tak|tak w języku XAML, nie dla HTML|Tak|
-|[Performance Explorer](../profiling/performance-explorer.md)|Tak|Brak|Tak|
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET z Visual Studio Enterprise|.NET z Visual Studio Enterprise|.NET z Visual Studio Enterprise|
 |[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak|
 |[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak, aby HTML, nie dla XAML|Brak| 

@@ -1,12 +1,9 @@
 ---
-title: "Bscmake — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Bscmake — zadanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.task.bscmake
 - VC.Project.VCBscMakeTool.PreserveSBR
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), tasks
 - BscMake task (MSBuild (Visual C++))
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 011ac0344326b7b45d266717c9bdc7d823d93140
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5bdf1cc5370a126eb09a8af1fa05c25134bedf77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bscmake-task"></a>BscMake — Zadanie
 > [!IMPORTANT]
@@ -45,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 |---------------|-----------------|  
 |**AdditionalOptions**|Opcjonalne **ciąg** parametru.<br /><br /> Lista opcje określone w wierszu polecenia. Na przykład "/*opcja 1* /*option2* /*opcji #*". Ten parametr umożliwia określenie opcji, które nie są reprezentowane przez inne **BscMake** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [opcje BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**OutputFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa nazwę pliku, która zastępuje domyślną nazwę pliku wyjściowego.<br /><br /> Aby uzyskać więcej informacji, zobacz **/o** opcji [opcje BSCMAKE](/cpp/build/reference/bscmake-options).|  
-|**PreserveSBR**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, wymusza nieprzyrostowa kompilacji. Pełne, nieprzyrostowa kompilacji występuje niezależnie od tego, czy istnieje plik .bsc i uniemożliwia obcinania plików SBR.<br /><br /> Aby uzyskać więcej informacji, zobacz  **/n**  opcji [opcje BSCMAKE](/cpp/build/reference/bscmake-options).|  
+|**PreserveSBR**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, wymusza nieprzyrostowa kompilacji. Pełne, nieprzyrostowa kompilacji występuje niezależnie od tego, czy istnieje plik .bsc i uniemożliwia obcinania plików SBR.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji [opcje BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**Źródeł**|Opcjonalne **[ITaskItem]** parametru.<br /><br /> Określa tablicę elementów MSBuild pliku źródłowego, które mogą być używane i emitowane przez zadania.|  
 |**SuppressStartupBanner**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości copyright i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji [opcje BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**Katalog TrackerLogDirectory**|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  

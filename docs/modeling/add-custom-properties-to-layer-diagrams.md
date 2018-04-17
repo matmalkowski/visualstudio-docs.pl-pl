@@ -2,22 +2,20 @@
 title: Dodawanie właściwości niestandardowych do diagramów zależności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: fbdf0587b6bba938ddc178842939c14c9079a2a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 Podczas pisania kodu rozszerzenie dla diagramów zależności wartości z żadnym elementem można przechowywać na diagramie zależności. Wartości będzie umieszczony po zapisaniu i ponownym otwarciu diagramu. Może także zawierać te właściwości są wyświetlane w **właściwości** okna tak, aby użytkownicy mogli widzieć i je edytować. Na przykład można zezwolić użytkownikom Określ wyrażenie regularne dla każdej warstwy, a napisać kod sprawdzania poprawności, aby sprawdzić, czy nazwy klasy w każdej warstwie jest zgodna z wzorcem określone przez użytkownika.  

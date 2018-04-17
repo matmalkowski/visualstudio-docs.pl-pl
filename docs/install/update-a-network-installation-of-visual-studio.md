@@ -3,25 +3,23 @@ title: Aktualizowanie instalacji sieciowej programu Visual Studio | Dokumentacja
 description: Informacje o sposobie aktualizowania instalacji programu Visual Studio za pośrednictwem sieci przy użyciu polecenia — układ
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f30a3290387da6b963115c07585dac0f8441502
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c195affae41feb7a8c57ff380aa8565f2b1b5658
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizacja instalacji sieciowej programu Visual Studio
 

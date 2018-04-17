@@ -1,12 +1,9 @@
 ---
-title: "Strona usług, Projektant projektu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Strona usług, Projektant projektu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/18/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -14,14 +11,14 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218f75c57d27cd424324eff8987561e9bee25e93
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f37d6b448ea7ce3a8662d0372cf61b35363f4648
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
@@ -56,7 +53,7 @@ Aby uzyskać dostęp do **usług** wybierz węzeł projektu w **Eksploratora roz
  Używana tylko z uwierzytelniania formularzy. Określa lokalizację usługi uwierzytelniania.  
   
  **Opcjonalnie: Dostawca poświadczeń**  
- Używana tylko z uwierzytelniania formularzy. Wskazuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementacji, którego będzie używać usługa uwierzytelniania, aby wyświetlić okno dialogowe logowania, gdy wywołuje aplikację `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> — metoda i przekazuje pustych ciągów ani `null` parametrów. Jeśli to pole pozostanie puste, należy podać prawidłową nazwę użytkownika i hasło, aby <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Należy określić jako nazwa typu kwalifikowana zestawu dostawcy poświadczeń. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawu](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa kwalifikowana zestawu typu wygląda podobnie do poniższego przykładu:`MyNamespace.MyLoginClass, MyAssembly`  
+ Używana tylko z uwierzytelniania formularzy. Wskazuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementacji, którego będzie używać usługa uwierzytelniania, aby wyświetlić okno dialogowe logowania, gdy wywołuje aplikację `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> — metoda i przekazuje pustych ciągów ani `null` parametrów. Jeśli to pole pozostanie puste, należy podać prawidłową nazwę użytkownika i hasło, aby <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Należy określić jako nazwa typu kwalifikowana zestawu dostawcy poświadczeń. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawu](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa kwalifikowana zestawu typu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`  
   
  **Lokalizacja usługi ról**  
  Określa lokalizację usługi ról.  

@@ -2,20 +2,18 @@
 title: T4 dotycząca Dyrektywa zestawu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 2d0588688a6545471cfaa480d0efac868fe708de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstu w czasie projektowania `assembly` dyrektywy ładuje zestaw, dzięki czemu kod szablonu można użyć jej typów. Efekt jest podobny do dodawania odwołania do zestawu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu.  

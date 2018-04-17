@@ -2,11 +2,8 @@
 title: Formaturl — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - MSBuild, FormatUrl task
 - FormatUrl task [MSBuild]
 ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
-caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b353984812b8ce586054771355f023d433312b3
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 3e14c00820363c79383a445d6a632a0e7b6602c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="formaturl-task"></a>FormatUrl — Zadanie
 Konwertuje adres URL poprawny format adresu URL.  

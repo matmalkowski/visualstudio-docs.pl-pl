@@ -1,26 +1,23 @@
 ---
-title: "Interaktywny REPL przy użyciu narzędzi R dla programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Jak używać interaktywne środowisko REPL dla inVisual Studio R, który jest zintegrowany z okna edytora."
-ms.custom: 
+title: Interaktywny REPL dla języka R
+description: Jak używać interaktywne środowisko REPL dla inVisual Studio R, który jest zintegrowany z okna edytora.
+ms.custom: ''
 ms.date: 06/28/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: dc9ae4d0024fc9c03a68651ea6a2cf476ea4a00d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f40c5a7d00672422d861fad3caf16b0285949b6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-the-r-interactive-window"></a>Praca z okno interaktywne R
 
@@ -61,7 +58,7 @@ Polecenia paska narzędzi są następujące, z których większość mają odpow
 | --- | --- | --- | --- |
 | ![Przycisk resetowania](media/repl-toolbar-01-reset.png) | Resetowanie | Ctrl+Shift+F10 | Resetuje sesji okna interaktywnego, czyszcząc wszystkie zmienne i historii. |
 | ![Przycisk Wyczyść](media/repl-toolbar-02-clear.png) | Wyczyść | Ctrl+L | Czyści wyświetlanego w oknie interaktywnym; nie ma wpływu na zmienne sesji lub z historii. |
-| ![Przyciski historii](media/repl-toolbar-03-history.png) | Poprzednie polecenie historii<br/>Następne polecenie historii | W górę, dół<br/>Alt+Up, Alt-Down | Przewija historii, z pewnymi rodzajami zachowań dla bloków kodu wiele wierszy. Zobacz [historii](#history). |
+| ![Przyciski historii](media/repl-toolbar-03-history.png) | Poprzednie polecenie historii<br/>Następne polecenie historii | W górę, dół<br/>Alt + Strzałka w górę, dół Alt | Przewija historii, z pewnymi rodzajami zachowań dla bloków kodu wiele wierszy. Zobacz [historii](#history). |
 | ![Przycisk obszaru roboczego obciążenia](media/repl-toolbar-04-load-workspace.png) | Obszar roboczy obciążenia | n/d | Ładuje poprzedniej zapisane obszaru roboczego (zobacz [obszarów roboczych i sesje](#workspaces-and-sessions). |
 | ![Obszar roboczy przycisk Zapisz jako](media/repl-toolbar-05-save-workspace-as.png)| Zapisz obszar roboczy jako | n/d | Zapisuje bieżący stan sesji jako obszaru roboczego (zobacz [obszarów roboczych i sesje](#workspaces-and-sessions). |
 | ![Przycisk skryptu źródło R](media/repl-toolbar-06-source-r-script.png) | Skrypt źródła R | Ctrl+Shift+S | Wywołania `source` z aktualnie aktywnego skryptu języka R w edytorze programu Visual Studio, która uruchamia kod.  Ten przycisk jest wyświetlany tylko wtedy, gdy plik R jest otwarty w edytorze programu Visual Studio. | 

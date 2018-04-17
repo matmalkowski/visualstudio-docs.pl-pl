@@ -1,23 +1,21 @@
 ---
-title: "Krok 7: Zachowanie widoczności par | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 7: Zachowanie widoczności par | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b1aa3a18f8632890cd41a5ee7cb64e3d7c744888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eaa39aa35217ab55daa8739a76d75ae2a741afae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowanie widoczności par
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast wprowadzania ikony znikają przez włączenie czasomierza (przy użyciu `Start()` metody), gry powinien zresetowanie tak, aby go jest już rejestrowanie informacji o wszystkich etykiet za pomocą `firstClicked` i `secondClicked` odwoływać się do zmiennych, bez potrzeby resetowania kolory dwie etykiety, które zostały wybrane.  

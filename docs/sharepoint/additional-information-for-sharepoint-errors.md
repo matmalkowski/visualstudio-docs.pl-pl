@@ -1,12 +1,10 @@
 ---
-title: "Dodatkowe informacje na temat błędów SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodatkowe informacje na temat błędów SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.errors.general
 - VS.SharePointTools.Project.Errors.General
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 45bf01c0d153eca484a480fa4aff25bb2e68769a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów SharePoint
   Możesz znaleźć pomocy w rozwiązywaniu problemów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint błędów i ostrzeżeń w Rozwiązywanie problemów z tematów i fora publicznego Microsoft Developer Network (MSDN).  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
 |Termin|Definicja|  
 |----------|----------------|  
 |[Projektowanie SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Udostępnia forum pytania dotyczące programowanie SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Fora programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Udostępnia forum odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Visual Studio Forums](http://go.microsoft.com/fwlink/?LinkID=150452)|Udostępnia forum odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Microsoft Pomoc i obsługa techniczna](http://go.microsoft.com/fwlink/?LinkID=108287)|Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do pobrania i aktualizacji, audycji pomocy technicznej i innych usług.|  
   
  Jeśli nadal nie możesz znaleźć odpowiedzi, które są potrzebne, są dostępne opcje pomocy technicznej online, takie jak skontaktowaniu się z pomocą techniczną firmy Microsoft lub artykułach bazy wiedzy. Aby uzyskać więcej informacji, zobacz [Microsoft Help i pomocy technicznej](http://go.microsoft.com/fwlink/?LinkID=155371) strony.  

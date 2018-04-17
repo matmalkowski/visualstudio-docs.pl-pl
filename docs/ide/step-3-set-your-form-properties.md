@@ -1,28 +1,26 @@
 ---
-title: "Krok 3: Ustawienie właściwości formularza | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 3: Ustawienie właściwości formularza | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
-caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e703372a3b59ceee439b234e02e4a2d5a3cb6275
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e4c3c33d42e4350db8626542001d4c2dcab5bb5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawienie właściwości formularza
 Następnie użyj **właściwości** okno, aby zmienić wygląd formularza.  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 1 wideo](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie podglądu obrazów w C# - wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 1 wideo](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Aby ustawić właściwości formularza  
   

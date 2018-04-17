@@ -1,26 +1,24 @@
 ---
-title: "Widoki danych pamięci .NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widoki danych pamięci .NET | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method views
 - profiling tools,.NET memory profiling views
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8fa1fb6dbaed5ed43f9a7eb3e69b52e91f43bd7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cb504b326987771ce68707b81cec099c8280f67c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-memory-data-views"></a>.NET Widoki danych pamięci
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, który zawiera dane profilowania pamięci .NET.  

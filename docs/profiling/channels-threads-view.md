@@ -1,29 +1,25 @@
 ---
-title: "Kanały (Widok wątków) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kanały (Widok wątków) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
 - Concurrency Visualizer, Channels (Threads View)
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d0796b1d2d3ecbe3ff08cc1eb4cfe79153f738
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: debb1b6bfd9c40af247b39539896c7b447faabf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="channels-threads-view"></a>Kanały (Widok wątków)
 Narzędzia Concurrency Visualizer przedstawiono cztery rodzaje kanałów: wątku kanały, kanały dysku znacznika kanałów i kanały procesora GPU.  

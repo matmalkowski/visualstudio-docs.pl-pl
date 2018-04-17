@@ -1,7 +1,7 @@
 ---
-title: "Określanie agentów testowych stosowanych w obciążenia przetestować scenariusze w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Określanie agentów testowych stosowanych w obciążenia przetestować scenariusze w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test agents, load tests
 - load tests, scenarios
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1871078022efb153c1ceea9bdeb29cb9552179ab
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: dd6ca0c9b92f8eaa27c2a8726cc9d2cea49636b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Porady: określanie agentów testowych stosowanych w scenariuszach testów obciążenia
 
@@ -65,6 +65,6 @@ Jeżeli maszynie agenta testowego ma więcej niż 75 procent wykorzystania proce
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Wskazówki: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md)
-- [Kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md)
+- [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
+- [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

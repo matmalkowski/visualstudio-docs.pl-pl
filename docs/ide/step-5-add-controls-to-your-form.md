@@ -1,28 +1,26 @@
 ---
-title: "Krok 5: Dodawanie formantów do formularza | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 5: Dodawanie formantów do formularza | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
-caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7cf60293ca2d0a0ebd18dc9715d2954bd1128b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0636ec38846fbfd591e0c8b6f22af6fd8e043008
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
 W tym kroku zostanie Dodaj formanty, takie jak `PictureBox` kontroli i `CheckBox` sterowania do formularza. Następnie dodaj przyciski do formularza.  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 2 wideo](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: Tworzenie podglądu obrazów w C# — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 2 wideo](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-add-controls-to-your-form"></a>Do dodawania formantów do formularza  
   

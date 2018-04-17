@@ -1,23 +1,21 @@
 ---
-title: "Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 21d10bd4edb8d6335d2f559cfcacd1a45e518173
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Poradnik: Oglądanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 Po utworzeniu projektu w programie Visual Studio IDE, można przejrzeć informacje o tej kompilacji w **dane wyjściowe** okna. Za pomocą tych informacji, można na przykład rozwiązać niepowodzenie kompilacji. Dla projektów C++ można również wyświetlić tych samych informacji w pliku txt, który został utworzony i zapisany automatycznie. Dla kodu zarządzanego projektów, można skopiować i wkleić informacje z **dane wyjściowe** okna do .txt plik i zapisać ją samodzielnie. Umożliwia także IDE do określenia, jakie informacje mają być wyświetlane o każdej kompilacji.  

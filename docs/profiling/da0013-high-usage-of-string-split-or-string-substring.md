@@ -1,12 +1,10 @@
 ---
-title: "DA0013: Znaczące wykorzystanie String.Split lub String.Substring | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0013: Znaczące wykorzystanie String.Split lub String.Substring | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - vs.performance.13
 - vs.performance.rules.DA0013
 ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de4419e5d83630a09aa3caa2afcd2318266520bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6fd50e084753e57793447e6cf3bc5c1c3f070e80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie String.Split lub String.Substring
 |||  

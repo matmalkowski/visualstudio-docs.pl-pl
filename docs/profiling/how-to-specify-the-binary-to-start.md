@@ -1,13 +1,10 @@
 ---
-title: "Porady: Określanie plików binarnych do uruchomienia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Określanie plików binarnych do uruchomienia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
 helpviewer_keywords:
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dbedfaa008b83ac45cea9afaa6bac2a254e77e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 56da81bb1149ba927647a11d3b860d19a8bae43f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Porady: określanie plików binarnych do uruchomienia
 

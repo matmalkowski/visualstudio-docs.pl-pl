@@ -1,27 +1,25 @@
 ---
-title: "W usłudze języka starsza wersja programu Word ukończenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: W usłudze języka starsza wersja programu Word ukończenia | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a4ab4bd29c753fc03787fbbadbe106d2d8862b10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 72ddf4e7c755fdecf562f4c190abfb145e6f9819
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Zakończenie programu Word w starsza wersja usługi języka
 Uzupełnianie Word wypełnia brakujących znaków na częściowo typu wyrazu. Jeśli istnieje tylko jeden ukończenia możliwe, wyraz zostało zakończone, po wprowadzeniu znak zakończenia. Jeśli częściowe word odpowiada więcej niż jedną z możliwości, jest wyświetlona lista możliwe uzupełnienia. Znak zakończenia może być dowolny znak, który nie jest używany dla identyfikatorów.  

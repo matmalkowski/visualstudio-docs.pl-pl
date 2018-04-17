@@ -2,20 +2,18 @@
 title: Integrowanie modeli przy użyciu programu Visual Studio Modelbus | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: be0aaa9a5eed5dea28a993318afaf0630471c3c2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus udostępnia metody do tworzenia łączy między modelami i z innych narzędzi do modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Można utworzyć zintegrowany zestaw DSLs.  
@@ -29,7 +27,7 @@ ms.lasthandoff: 04/10/2018
   
 -   [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)  
   
--   [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
+-   [Modelowanie zestawu SDK dla programu Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -71,7 +69,7 @@ ms.lasthandoff: 04/10/2018
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Aby upewnić się, że element identyfikatory są zachowywane  
   
-1.  Open DslDefinition.dsl.  
+1.  Otwórz DslDefinition.dsl.  
   
 2.  W Eksploratorze DSL rozwiń **zachowanie serializacji Xml**, następnie **dane klasy**.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Formanty zawartości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Formanty zawartości | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
 - VST.Toolbox.RichTextContentControl
@@ -40,13 +38,14 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają Ci dokumentów projektowych i szablony, które mają następujące funkcje:  
@@ -128,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 |Uruchomienia kodu po zawartości formant został dodany do dokumentu w wyniku Powtórz lub cofnąć operacji.|Obsługa <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> zdarzeń formantu.|  
 |Uruchom kod bezpośrednio przed zawartości formantu zostanie usunięty z dokumentu.|Obsługa <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> zdarzeń formantu.|  
   
-##  <a name="Protection"></a>Ochrona części dokumentów za pomocą formantów zawartości  
+##  <a name="Protection"></a> Ochrona części dokumentów za pomocą formantów zawartości  
  W przypadku ochrony części dokumentu, można uniemożliwić użytkownikom zmienianie lub usuwanie zawartości w tej części dokumentu. Istnieje kilka sposobów części dokumentu można chronić za pomocą formantów zawartości.  
   
  Jeśli obszar, który chcesz chronić znajduje się wewnątrz formantu zawartości, można użyć właściwości zawartości formantu, aby uniemożliwić użytkownikom edytowanie lub usuwanie formantu:  
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji o sposobie używania formantów zawartości do ochrona części dokumentów, zobacz [porady: ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a>Wiązanie danych z formantami zawartości  
+##  <a name="DataBinding"></a> Wiązanie danych z formantami zawartości  
  Można wyświetlić dane w dokumentach przez powiązanie formantu zawartości ze źródłem danych. Po zaktualizowaniu źródła danych formantu zawartości odzwierciedla zmiany. Można również zapisać zmiany w źródle danych.  
   
  Formanty zawartości udostępniają następujące opcje powiązania danych:  
@@ -166,7 +165,7 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>Tablica|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Brak|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Tablica|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Brak|  
   
  W poziomie dokumentu i projektów dodatku VSTO można powiązać zawartości formantu ze źródłem danych programowo przy użyciu <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metody <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> właściwości formantu. Jeśli to zrobisz, podaj ciąg **tekst** do *propertyName* parametr <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metody. **Tekst** właściwość jest właściwością domyślną danych powiązanie formantów zawartości.  
   
@@ -231,7 +230,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
  Aby ustalić, kiedy użytkownik edytuje zawartość formantu zawartości, można powiązać formant z niestandardowym elementem XML, a następnie obsługi <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> zdarzeń. To zdarzenie jest wywoływane, gdy użytkownik zmieni zawartość formantu, który jest powiązany z niestandardowym elementem XML. Aby uzyskać wskazówki, który demonstruje sposób powiązania formantu zawartości do niestandardowych części XML, zobacz [wskazówki: wiązanie formantów zawartości do niestandardowych części XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a>Formanty zawartości pól wyboru w projekty programu Word  
+###  <a name="checkbox"></a> Formanty zawartości pól wyboru w projekty programu Word  
  Word 2010 wprowadzono nowy typ zawartości formantu, który reprezentuje pole wyboru. Jednak [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nie ma odpowiedniego typu CheckBoxContentControl do użycia w projektach pakietu Office. Można utworzyć formantu zawartości pola wyboru w [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] lub projekt Word 2010, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> metodę w celu utworzenia <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu i przekazać <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> wartość metodę, aby określić formantu zawartości pola wyboru. W poniższym przykładzie pokazano, jak to zrobić.  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

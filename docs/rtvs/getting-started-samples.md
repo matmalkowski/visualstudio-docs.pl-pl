@@ -1,26 +1,23 @@
 ---
-title: Przykładowe projekty do R narzędzi dla programu Visual Studio | Dokumentacja firmy Microsoft
+title: R przykładowych projektach
 description: Indeks kolekcji próbek, aby rozpocząć korzystanie z języka R i Visual Studio.
 ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6d09999f8dd0e53dc8ae3ae61537eb182eaeb6d4
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 658146e390dbad2f97fcc82f5da1f33128fdfce3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio przykładowych projektach
 

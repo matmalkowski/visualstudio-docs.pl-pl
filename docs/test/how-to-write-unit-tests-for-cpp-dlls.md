@@ -1,18 +1,18 @@
 ---
-title: "Pisanie testów jednostkowych dla biblioteki DLL języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Pisanie testów jednostkowych dla biblioteki DLL języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 11/04/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 519d1ae3c38e3366eb898ff1fe050533f1b5e221
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6dd3ad0f38887e7c4458835f62dcb245804b8568
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Pisanie testów jednostkowych dla biblioteki DLL języka C++ w programie Visual Studio
 
@@ -154,7 +154,7 @@ ms.lasthandoff: 03/19/2018
 ## <a name="see-also"></a>Zobacz także
 
 - [Pisanie testów jednostkowych dla C/C++](writing-unit-tests-for-c-cpp.md)
-- [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
+- [Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
 - [Przewodnik: tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importowanie i eksportowanie](/cpp/build/importing-and-exporting)

@@ -1,12 +1,9 @@
 ---
-title: WriteLinesToFile Task | Microsoft Docs
+title: Writelinestofile — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - WriteLinesToFile task [MSBuild]
 - MSBuild, WriteLinesToFile task
 ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
-caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 664eea1bf25b4d0ea5b0bd357f61212cc50b8cdf
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 65404b93fcdb47d3d26d7780fe33167b19605209
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile — Zadanie
 Zapisuje ścieżek określonych elementów do określonego pliku.  

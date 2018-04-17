@@ -1,37 +1,30 @@
 ---
-title: "I porady dotyczące wydajności programu Visual Studio | Dokumentacja firmy Microsoft"
+title: I porady dotyczące wydajności programu Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Wydajność programu Visual Studio — porady i wskazówki
+# <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio wydajności porady i wskazówki
 
 Visual Studio wydajności zalecenia są przeznaczone dla sytuacje małej ilości pamięci, które mogą wystąpić w rzadkich przypadkach. W takich sytuacjach może zoptymalizować niektóre funkcje programu Visual Studio, które nie może być używany. Poniższe porady nie są przeznaczone jako ogólne zalecenia.
 
 > [!NOTE]
-> Jeśli masz trudności z używaniem produktu z powodu problemów dotyczących pamięci, Daj nam znać za pomocą narzędzia opinii.
+> Daj nam znać, jeśli masz trudności z używaniem produktu z powodu problemów dotyczących pamięci, za pomocą [narzędzie opinii](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Optymalizowanie środowiska
 
-- **Użyj 64-bitowy system operacyjny**
+- **Użyj 64-bitowego systemu operacyjnego**
 
     Po uaktualnieniu do wersji 64-bitowe systemu z 32-bitowej wersji systemu Windows, należy rozwinąć ilość dostępnej pamięci wirtualnej dla programu Visual Studio, od 2 do 4 GB. Dzięki temu Visual Studio do obsługi obciążeń znacznie większe, mimo że jest to proces 32-bitowy.
 
@@ -86,7 +79,7 @@ Niektóre narzędzia lub rozszerzenia może ją wyłączyć, aby zwiększyć wyd
 
 ### <a name="managed-language-services-roslyn"></a>Usługi językowe zarządzanych (Roslyn)
 
-Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Roslyn"), zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Roslyn"), zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Wyłącz Pełna analiza rozwiązania**
 
@@ -108,7 +101,7 @@ Aby uzyskać informacje dotyczące wydajności platformy kompilatora .NET ("Rosl
 
     Rozszerzenia są dodawane do programu Visual Studio składniki dodatkowe oprogramowanie, które udostępnia nowych funkcji lub rozszerzanie funkcjonalności istniejących. Rozszerzenia często może być źródłem problemów zasobów pamięci. Jeśli występują problemy z pamięcią zasobów, spróbuj wyłączyć rozszerzenia co w czasie, aby zobaczyć, jak wpływa na scenariuszu lub przepływ pracy.
 
-    Aby wyłączyć rozszerzenia, przejdź do **narzędzia | Rozszerzenia i aktualizacje**i Wyłącz określone rozszerzenie.
+    Aby wyłączyć rozszerzenia, przejdź do **narzędzia** > **rozszerzenia i aktualizacje**i Wyłącz określone rozszerzenie.
 
 - **Wyłącz projektanta XAML**
 
@@ -128,8 +121,9 @@ Aby wymusić wyrzucania elementów bezużytecznych, użyj klawiszy skrótu: **Ct
 
 Jeśli wymuszanie wyrzucanie elementów bezużytecznych niezawodnie sprawia, że scenariusz pracy pliku raportu za pomocą narzędzia opinii programu Visual Studio to zachowanie jest prawdopodobnie usterki.
 
-Aby uzyskać szczegółowy opis moduł garbage collector środowiska CLR, zobacz [podstawowych z wyrzucanie elementów bezużytecznych](/dotnet/standard/garbage-collection/fundamentals).
+Aby uzyskać szczegółowy opis moduł garbage collector środowiska CLR, zobacz [podstawy dotyczące wyrzucania elementów bezużytecznych](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Optymalizacja wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio blogu — rozwiązania obciążenia szybsze z programu Visual Studio 2017 wersji 15,6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

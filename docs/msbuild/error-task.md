@@ -2,11 +2,8 @@
 title: Error — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Error
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Error task [MSBuild]
 - MSBuild, Error task
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
-caps.latest.revision: 20
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1452fc4ba26b9d6483bbdfe296f22cbb9a7f6cea
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d2cae930f1d4cd07c63d7c40e966363ea92c1a84
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-task"></a>Error — Zadanie
 Zatrzymuje kompilację i rejestruje błąd oparte na obliczane instrukcji warunkowej.  

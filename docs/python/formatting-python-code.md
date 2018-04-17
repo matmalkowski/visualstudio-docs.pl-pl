@@ -1,27 +1,24 @@
 ---
-title: Formatowanie kodu Python | Dokumentacja firmy Microsoft
+title: Formatowanie kodu języka Python
 description: Jak automatycznie sformatować kodu języka Python w programie Visual Studio, w tym odstępów, instrukcji, zawijania i komentarze.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b43ad38f3fc1b09f96e751b8b244ac1e52735b1
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: bd6264c42d8bd4f585d4166fa7cc46b621aa52cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="formatting-python-code"></a>Formatowanie kodu języka Python
 

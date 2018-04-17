@@ -1,13 +1,10 @@
 ---
-title: "Port, migrowanie i uaktualnianie projektów programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Port, migrowanie i uaktualnianie projektów programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/14/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - projects, conversion
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65d1a8edac3de969528b6d27ed540d791d3d08f6
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 40b0e68d269599d88831c3a9af1240a56ea02bd1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrowanie i uaktualnianie projektów programu Visual Studio
 

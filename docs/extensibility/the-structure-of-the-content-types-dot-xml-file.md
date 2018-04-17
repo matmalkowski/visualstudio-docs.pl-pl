@@ -1,28 +1,26 @@
 ---
 title: Struktura pliku XML [Content_types] | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura pliku XML [Content_types]
 Zawiera informacje o rodzajach zawartość pakietu VSIX. Do zainstalowania pakietu Visual Studio korzysta z pliku XML [Content_Types], ale nie jest instalowana w samym pliku.  
@@ -49,7 +47,7 @@ Zawiera informacje o rodzajach zawartość pakietu VSIX. Do zainstalowania pakie
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|http://schemas.openformats.org/Package/2006/Content-Types|Lokalizacja schematu typy zawartości.|  
+|http://schemas.openformats.org/package/2006/content-types|Lokalizacja schematu typy zawartości.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  `Types` Element może zawierać dowolną liczbę `Default` elementów.  
@@ -72,7 +70,7 @@ Zawiera informacje o rodzajach zawartość pakietu VSIX. Do zainstalowania pakie
 |---------------|-----------------|  
 |txt|zwykły tekst|  
 |pkgdef|zwykły tekst|  
-|XML|tekstu/xml|  
+|xml|tekstu/xml|  
 |vsixmanifest|tekstu/xml|  
 |htm i html|tekst i html|  
 |RTF|Aplikacja/rtf|  

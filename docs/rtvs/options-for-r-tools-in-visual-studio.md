@@ -1,31 +1,28 @@
 ---
-title: "Opcje narzędzia R w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Dokumentacja dotycząca opcji w programie Visual Studio dla języka R i skojarzone funkcji."
-ms.custom: 
+title: Opcje narzędzia R
+description: Dokumentacja dotycząca opcji w programie Visual Studio dla języka R i skojarzone funkcji.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
 - vs.toolsoptionspages.r_tools.#150
-ms.topic: article
+ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2a2671c5a234d4a30d64823794880dc648d219b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3a80b787d1d2631afbdac90092f9fd251758dcf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Narzędzia języka R w opcjach programu Visual Studio
 
@@ -105,7 +102,7 @@ Te opcje umożliwiają kontrolowanie sposobu obsługi wartości w [Explorer zmie
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Przeglądarka strony HTML | `External` | Określa, gdzie zawartości, takich jak `ggvis` wykres, lub `shiny` aplikacji jest renderowany. `Internal`Pokazuje danych wyjściowych HTML w oknie narzędzia w programie Visual Studio; `External` wyświetla danych wyjściowych HTML w domyślnej przeglądarce. |
+| Przeglądarka strony HTML | `External` | Określa, gdzie zawartości, takich jak `ggvis` wykres, lub `shiny` aplikacji jest renderowany. `Internal` Pokazuje danych wyjściowych HTML w oknie narzędzia w programie Visual Studio; `External` wyświetla danych wyjściowych HTML w domyślnej przeglądarce. |
 
 ### <a name="logging"></a>Rejestrowanie
 
@@ -117,9 +114,9 @@ Te opcje umożliwiają kontrolowanie sposobu obsługi wartości w [Explorer zmie
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Przeglądarka Podgląd markdown | `External` | Określa, gdzie danych wyjściowych RMarkdown HTML jest wyświetlany. `Internal`zawiera dokumentu RMarkdown HTML okna narzędzia w programie Visual Studio; `External` Wyświetla RMarkdown HTML za pomocą domyślnej przeglądarki. |
+| Przeglądarka Podgląd markdown | `External` | Określa, gdzie danych wyjściowych RMarkdown HTML jest wyświetlany. `Internal` zawiera dokumentu RMarkdown HTML okna narzędzia w programie Visual Studio; `External` Wyświetla RMarkdown HTML za pomocą domyślnej przeglądarki. |
 
-### <a name="r-engine"></a>R Engine
+### <a name="r-engine"></a>Aparat R
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |

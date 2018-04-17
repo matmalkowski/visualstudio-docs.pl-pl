@@ -1,11 +1,8 @@
 ---
-title: "Opcje, Edytor tekstu, ogólne | Dokumentacja firmy Microsoft"
+title: Opcje, Edytor tekstu, ogólne | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -48,58 +45,71 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccc9628b5757f1ab4533b084736602274d8c92
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d215503d182078196337e6ad1110e41b0e888865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
-To okno dialogowe umożliwia zmianę ustawienia globalne [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze kodu i tekstu. Aby wyświetlić to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu** folder, a następnie kliknij przycisk **ogólne**.  
-  
+
+To okno dialogowe umożliwia zmianę ustawienia globalne dla edytora kodu i tekstu Visual Studio. Aby wyświetlić to okno dialogowe, zaznacz **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu** folder, a następnie wybierz **ogólne**.
+
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="settings"></a>Ustawienia  
- Przeciągnij i upuść edycji tekstu  
- Po wybraniu umożliwia przenoszenie tekstu, wybierając ją i przeciągając myszą do innej lokalizacji w ramach bieżącego dokumentu lub otwartego dokumentu.  
-  
- Automatyczne wyróżnianie ogranicznika  
- Po wybraniu znaki ogranicznik, oddzielające parametry lub pary wartości elementu, a także pasujących nawiasów klamrowych, są wyróżnione.  
-  
- Śledzenie zmian  
- Po wybraniu edytora kodu pionowym wierszem żółty pojawia się w margines zaznaczania, aby oznaczyć kod, który zmienił się od czasu ostatniego został zapisany plik. Po zapisaniu zmian pionowych linii stają się zielony.  
-  
- Autowykrywanie kodowania bez podpisu UTF-8  
- Domyślnie Edytor wykrywa kodowania, wyszukując znaczniki kolejności bajtów lub tagi zestawu znaków. Jeśli nie zostanie znaleziony w bieżącym dokumencie, edytora kodu próbuje Autowykrywanie kodowania UTF-8 przez zeskanowanie sekwencji bajtów. Aby wyłączyć automatyczne wykrywanie kodowania, usuń zaznaczenie tej opcji.  
-  
-## <a name="display"></a>Monitor  
- Margines zaznaczania  
- Po wybraniu Wyświetla pionowego marginesu wzdłuż lewej krawędzi obszaru tekstu w edytorze. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby wybrać kolejnych wierszy tekstu.  
-  
-|Margines zaznaczania na|Margines zaznaczania wyłączone|  
-|-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn — zrzut ekranu](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff — zrzut ekranu](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
-  
- Margines wskaźnika  
- Po wybraniu Wyświetla pionowego marginesu poza lewą krawędzią obszaru tekstu w edytorze. Po kliknięciu tego marginesie są wyświetlane ikonę i etykietkę narzędzia, które są powiązane z tekstu. Na przykład punkt przerwania lub zadanie skróty listy są wyświetlane w margines wskaźnika. Wskaźnik marginesu informacji nie do drukowania.  
-  
- Pionowy pasek przewijania  
- Po wybraniu Wyświetla pionowy pasek przewijania, dzięki czemu można przewiń w górę i w dół do widoku elementy, które wykraczają poza obszar wyświetlania edytora. Jeśli pionowe paski przewijania nie są dostępne, można użyć Page Up, Page Down i klucze kursora do przewijania.  
-  
- Poziomy pasek przewijania  
- Po wybraniu Wyświetla poziomy pasek przewijania, dzięki czemu można przewiń z bok Wyświetl elementy, które wykraczają poza obszar wyświetlania edytora. Jeśli poziomych pasków przewijania są niedostępne, można klawiszy strzałek przewijania.  
-  
- Podświetlenie bieżącej linii  
- Po wybraniu Wyświetla szare pole w pobliżu wiersza kodu, w którym znajduje się kursor.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Opcje, Edytor tekstu, wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)   
- [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)   
- [Opcje, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md)   
- [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [Dopasowywanie edytora](../../ide/customizing-the-editor.md)   
- [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+
+## <a name="settings"></a>Ustawienia
+
+### <a name="drag-and-drop-text-editing"></a>Przeciągnij i upuść edycji tekstu
+
+Po wybraniu umożliwia przenoszenie tekstu, wybierając ją i przeciągając myszą do innej lokalizacji w ramach bieżącego dokumentu lub otwartego dokumentu.
+
+### <a name="automatic-delimiter-highlighting"></a>Automatyczne wyróżnianie ogranicznika
+
+Po wybraniu znaki ogranicznik, oddzielające parametry lub pary wartości elementu, a także pasujących nawiasów klamrowych, są wyróżnione.
+
+### <a name="track-changes"></a>Śledzenie zmian
+
+Po wybraniu edytora kodu pionowym wierszem żółty pojawia się w margines zaznaczania, aby oznaczyć kod, który zmienił się od czasu ostatniego został zapisany plik. Po zapisaniu zmian pionowych linii stają się zielony.
+
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>Autowykrywanie kodowania bez podpisu UTF-8
+
+Domyślnie Edytor wykrywa kodowania, wyszukując znaczniki kolejności bajtów lub tagi zestawu znaków. Jeśli nie zostanie znaleziony w bieżącym dokumencie, edytora kodu próbuje Autowykrywanie kodowania UTF-8 przez zeskanowanie sekwencji bajtów. Aby wyłączyć automatyczne wykrywanie kodowania, usuń zaznaczenie tej opcji.
+
+## <a name="display"></a>Monitor
+
+### <a name="selection-margin"></a>Margines zaznaczania
+
+Po wybraniu Wyświetla pionowego marginesu wzdłuż lewej krawędzi obszaru tekstu w edytorze. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby wybrać kolejnych wierszy tekstu.
+
+|Margines zaznaczania na|Margines zaznaczania wyłączone|
+|-------------------------|--------------------------|
+|![HTMLpageSelectionMarginOn — zrzut ekranu](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff — zrzut ekranu](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
+
+### <a name="indicator-margin"></a>Margines wskaźnika
+
+Po wybraniu Wyświetla pionowego marginesu poza lewą krawędzią obszaru tekstu w edytorze. Po kliknięciu tego marginesie są wyświetlane ikonę i etykietkę narzędzia, które są powiązane z tekstu. Na przykład punkt przerwania lub zadanie skróty listy są wyświetlane w margines wskaźnika. Wskaźnik marginesu informacji nie do drukowania.
+
+### <a name="vertical-scroll-bar"></a>Pionowy pasek przewijania
+
+Po wybraniu Wyświetla pionowy pasek przewijania, dzięki czemu można przewiń w górę i w dół do widoku elementy, które wykraczają poza obszar wyświetlania edytora. Jeśli pionowe paski przewijania nie są dostępne, można użyć Page Up, Page Down i klucze kursora do przewijania.
+
+### <a name="horizontal-scroll-bar"></a>Poziomy pasek przewijania
+
+Po wybraniu Wyświetla poziomy pasek przewijania, dzięki czemu można przewiń z bok Wyświetl elementy, które wykraczają poza obszar wyświetlania edytora. Jeśli poziomych pasków przewijania są niedostępne, można klawiszy strzałek przewijania.
+
+### <a name="highlight-current-line"></a>Podświetlenie bieżącej linii
+
+Po wybraniu Wyświetla szare pole w pobliżu wiersza kodu, w którym znajduje się kursor.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Opcje, Edytor tekstu, wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)
+- [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Opcje, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md)
+- [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
+- [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

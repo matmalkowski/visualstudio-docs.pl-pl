@@ -1,12 +1,10 @@
 ---
 title: Zdarzenia w projektach pakietu Office | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -34,13 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 31d7e8483865ed03830376012e780bac87fdda07
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3136bf1ac0937b60b5f0dec1b0be673e3127a470
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="events-in-office-projects"></a>Zdarzenia w projektach pakietu Office
   Każdy szablon projektu pakietu Office automatycznie generuje kilka programów obsługi zdarzeń. Programy obsługi zdarzeń dla dostosowań na poziome dokumentu są nieco inne niż programy obsługi zdarzeń dla dodatków VSTO.  
@@ -106,25 +105,25 @@ ms.lasthandoff: 01/10/2018
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Kolejność zdarzeń w projektach na poziomie dokumentu programu Excel  
  **Uruchamiania** są wywoływane programy obsługi zdarzeń w projektach programu Excel, w następującej kolejności:  
   
-1.  `ThisWorkbook_Startup`.,  
+1.  `ThisWorkbook_Startup`.  
   
-2.  `Sheet1_Startup`.,  
+2.  `Sheet1_Startup`.  
   
-3.  `Sheet2_Startup`.,  
+3.  `Sheet2_Startup`.  
   
-4.  `Sheet3_Startup`.,  
+4.  `Sheet3_Startup`.  
   
 5.  Inne arkuszy w kolejności.  
   
  **Zamknięcia** są wywoływane programy obsługi zdarzeń w rozwiązaniu skoroszytu, w następującej kolejności:  
   
-1.  `ThisWorkbook_Shutdown`.,  
+1.  `ThisWorkbook_Shutdown`.  
   
-2.  `Sheet1_Shutdown`.,  
+2.  `Sheet1_Shutdown`.  
   
-3.  `Sheet2_Shutdown`.,  
+3.  `Sheet2_Shutdown`.  
   
-4.  `Sheet3_Shutdown`.,  
+4.  `Sheet3_Shutdown`.  
   
 5.  Inne arkuszy w kolejności.  
   

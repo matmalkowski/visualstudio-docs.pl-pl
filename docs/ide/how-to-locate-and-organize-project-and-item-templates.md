@@ -1,12 +1,9 @@
 ---
-title: "Organizowanie szablonów w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Organizowanie szablonów w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -15,12 +12,12 @@ helpviewer_keywords:
 - templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.openlocfilehash: 2fd69213664f83533a4e7da9c2bf3c898c00a63f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Porady: lokalizowanie i organizowanie szablonów projektów i elementów
 
@@ -43,7 +40,7 @@ Na przykład następujący katalog zawiera szablony projektów użytkownika dla 
    C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C# \
 
 > [!TIP]
-> Można ustawić lokalizacji dla szablonów użytkownika w **narzędzia** > **opcje** > **projekty i rozwiązania**  >  ** Lokalizacje**.
+> Można ustawić lokalizacji dla szablonów użytkownika w **narzędzia** > **opcje** > **projekty i rozwiązania**  >   **Lokalizacje**.
 
 ### <a name="installed-templates"></a>Zainstalowane szablony
 

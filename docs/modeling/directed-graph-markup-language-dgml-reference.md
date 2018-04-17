@@ -1,21 +1,19 @@
 ---
-title: "Przekierowanie Graph Markup Language) dokumentacja języka (DGML | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przekierowanie Graph Markup Language) dokumentacja języka (DGML | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizacji i wykonywać analizy złożoność i jest używany format, aby utrwalić map kodu w programie Visual Studio. Używa XML proste do opisania zarówno cykliczne, jak i acykliczne wykresy ukierunkowanej. Wykres kierowany jest zestawem węzłów połączonych przez łącza lub krawędzie. Węzły i łącza mogą być używane do reprezentacji struktur sieciowych, takich jak elementy projektu oprogramowania.  
@@ -25,7 +23,7 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
 > [!NOTE]
 >  Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasy kolory](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>Składnia DGML  
+##  <a name="DGML"></a> Składnia DGML  
  W poniższej tabeli opisano typy elementów, które są używane w DGML:  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -34,15 +32,15 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
   
      Na poniższej liście opisano opcjonalne atrybuty, które mogą obejmować:  
   
-     `Background`-Kolor tła mapy  
+     `Background` -Kolor tła mapy  
   
-     `BackgroundImage`-Lokalizacja pliku obrazu do użycia jako tło w formie mapy.  
+     `BackgroundImage` -Lokalizacja pliku obrazu do użycia jako tło w formie mapy.  
   
-     `GraphDirection`— Jeśli mapy jest równa układu drzewa (`Sugiyama`), Rozmieść węzłów, dzięki czemu większość łącza przepływu w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight`, lub `RightToLeft`. Zobacz [zmiany układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `GraphDirection` — Jeśli mapy jest równa układu drzewa (`Sugiyama`), Rozmieść węzłów, dzięki czemu większość łącza przepływu w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight`, lub `RightToLeft`. Zobacz [zmiany układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `Layout`-Ustawienia mapy następujących układów: `None`, `Sugiyama` (drzewa układ), `ForceDirected` (szybkie klastry) lub `DependencyMatrix`. Zobacz [zmiany układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `Layout` -Ustawienia mapy następujących układów: `None`, `Sugiyama` (drzewa układ), `ForceDirected` (szybkie klastry) lub `DependencyMatrix`. Zobacz [zmiany układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `NeighborhoodDistance`-Gdy mapy ustawiono układ drzewa lub układ szybkie klastry, wyświetlenie tylko tych węzłów, które są przez określoną liczbę (1-7) łącza od wybranych węzłów. Zobacz [zmiany układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `NeighborhoodDistance` -Gdy mapy ustawiono układ drzewa lub układ szybkie klastry, wyświetlenie tylko tych węzłów, które są przez określoną liczbę (1-7) łącza od wybranych węzłów. Zobacz [zmiany układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
      Przykład:  
   
@@ -91,23 +89,23 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
   
      Element ten musi zawierać następujące atrybuty:  
   
-     `Id`— Unikatowa nazwa węzła i wartość domyślną `Label` atrybut, jeśli nie oddzielne `Label` jest określony atrybut. Ta nazwa musi być zgodna `Source` lub `Target` atrybut łącza, która odwołuje się on.  
+     `Id` — Unikatowa nazwa węzła i wartość domyślną `Label` atrybut, jeśli nie oddzielne `Label` jest określony atrybut. Ta nazwa musi być zgodna `Source` lub `Target` atrybut łącza, która odwołuje się on.  
   
      Na poniższej liście opisano niektóre z opcjonalnych atrybutów, z których można skorzystać:  
   
-     `Label`— Nazwa wyświetlana węzła.  
+     `Label` — Nazwa wyświetlana węzła.  
   
      Atrybuty stylu. Zobacz [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category`-Nazwa kategorii, który identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.  
+     `Category` -Nazwa kategorii, który identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.  
   
-     `Property`-Nazwa właściwości, która identyfikuje elementów, które mają taką samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.  
+     `Property` -Nazwa właściwości, która identyfikuje elementów, które mają taką samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.  
   
-     `Group`— Jeśli węzeł zawiera inne węzły, ustaw ten atrybut `Expanded` lub `Collapsed` aby pokazać lub ukryć jego zawartość. Musi istnieć `<Link/>` element, który zawiera `Category="Contains"` atrybutu i określa węzła nadrzędnego jako węzeł źródłowy i podrzędnym jako węzeł docelowy. Zobacz [grupować elementy kodu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
+     `Group` — Jeśli węzeł zawiera inne węzły, ustaw ten atrybut `Expanded` lub `Collapsed` aby pokazać lub ukryć jego zawartość. Musi istnieć `<Link/>` element, który zawiera `Category="Contains"` atrybutu i określa węzła nadrzędnego jako węzeł źródłowy i podrzędnym jako węzeł docelowy. Zobacz [grupować elementy kodu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
   
-     `Visibility`-Ustawioną wartość tego atrybutu `Visible`, `Hidden`, lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [Ukryj lub Pokaż węzły i linki](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
+     `Visibility` -Ustawioną wartość tego atrybutu `Visible`, `Hidden`, lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [Ukryj lub Pokaż węzły i linki](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
   
-     `Reference`— Wartość tego atrybutu, aby utworzyć łącze do dokumentu lub adresu URL. Zobacz [dokumenty lub połączyć adresy URL elementy kodu i linki](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
+     `Reference` — Wartość tego atrybutu, aby utworzyć łącze do dokumentu lub adresu URL. Zobacz [dokumenty lub połączyć adresy URL elementy kodu i linki](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
   
      Przykład:  
   
@@ -154,19 +152,19 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
   
      Element ten musi zawierać następujące atrybuty:  
   
-     `Source`-Węzeł źródłowy łącza  
+     `Source` -Węzeł źródłowy łącza  
   
-     `Target`-Węzeł docelowy łącza  
+     `Target` -Węzeł docelowy łącza  
   
      Na poniższej liście opisano niektóre z opcjonalnych atrybutów, z których można skorzystać:  
   
-     `Label`-Nazwę wyświetlaną łącza  
+     `Label` -Nazwę wyświetlaną łącza  
   
      Atrybuty stylu. Zobacz [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category`-Nazwa kategorii, który identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.  
+     `Category` -Nazwa kategorii, który identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.  
   
-     `Property`-Nazwa właściwości, która identyfikuje elementów, które mają taką samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.  
+     `Property` -Nazwa właściwości, która identyfikuje elementów, które mają taką samą wartość właściwości. Aby uzyskać więcej informacji, zobacz `<Property/>` elementu.  
   
      Przykład:  
   
@@ -209,13 +207,13 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
   
      Element ten musi zawierać następujące atrybuty:  
   
-     `Id`— Unikatowa nazwa kategorii i wartość domyślną `Label` atrybut, jeśli nie oddzielne `Label` jest określony atrybut.  
+     `Id` — Unikatowa nazwa kategorii i wartość domyślną `Label` atrybut, jeśli nie oddzielne `Label` jest określony atrybut.  
   
      Na poniższej liście opisano niektóre z opcjonalnych atrybutów, z których można skorzystać:  
   
-     `Label`— Przyjazne czytnika nazwę kategorii.  
+     `Label` — Przyjazne czytnika nazwę kategorii.  
   
-     `BasedOn`Kategoria nadrzędna, z którego `<Category/>` bieżącego elementu dziedziczy.  
+     `BasedOn` Kategoria nadrzędna, z którego `<Category/>` bieżącego elementu dziedziczy.  
   
      W tym przykładzie dla tego elementu `FailedTest` dziedziczy kategorii jego `Stroke` atrybutu z `PassedTest` kategorii. Zobacz sekcję "Aby utworzyć hierarchiczne kategorie" w [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -266,9 +264,9 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
   
      Element ten musi zawierać następujące atrybuty:  
   
-    -   `Id`-Unikatową nazwę właściwości i wartość domyślną `Label` atrybut, jeśli nie oddzielne `Label` jest określony atrybut.  
+    -   `Id` -Unikatową nazwę właściwości i wartość domyślną `Label` atrybut, jeśli nie oddzielne `Label` jest określony atrybut.  
   
-    -   `DataType`— Typ danych przechowywanych we właściwości  
+    -   `DataType` — Typ danych przechowywanych we właściwości  
   
      Jeśli chcesz, aby właściwość pojawią się w **właściwości** okna, użyj `Label` właściwości w celu określenia nazwy wyświetlanej właściwości.  
   
@@ -301,7 +299,7 @@ Kierowane Graph Markup Language (DGML) opisano informacje używane do wizualizac
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Aliasy dla często używanych ścieżek  
+###  <a name="AddAlias"></a> Aliasy dla często używanych ścieżek  
  Zamienianie najczęściej używanych ścieżek na aliasy pomaga zredukować rozmiar pliku .dgml i czas wymagany do załadowania lub zapisania pliku. Aby utworzyć alias, Dodaj `<Paths></Paths>` sekcji na końcu pliku .dgml. W tej sekcji należy dodać `<Path/>` element do definiowania aliasu dla ścieżki:  
   
 ```xml  

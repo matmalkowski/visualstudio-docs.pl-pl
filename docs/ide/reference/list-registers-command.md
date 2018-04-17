@@ -1,13 +1,10 @@
 ---
-title: "Lista rejestrów — polecenie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Lista rejestrów — polecenie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listregisters
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016de257d1ce4e6d2aa95284adbe762a5c54eacf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4bd4dac2cc8faf6d98ee130e0796254035b1ca2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
 Wyświetla wartość wybranego rejestruje i umożliwia zmodyfikowanie listy rejestrów do wyświetlenia.  
@@ -39,7 +35,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```  
   
 ## <a name="switches"></a>Przełączniki  
- / Wyświetlić [{`register`&#124;`registerGroup`} ...]  
+ / Wyświetlić [{`register`&#124;`registerGroup`}...]  
  Wyświetla wartości z określonego `register` lub `registerGroup`. Jeśli nie `register` lub `registerGroup` jest określona, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie jest określony, zachowanie jest takie same. Na przykład:  
   
  `Debug.ListRegisters /Display eax`  
@@ -51,10 +47,10 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
  / List  
  Wyświetla wszystkie grupy rejestru na liście.  
   
- / Obejrzyj [{`register`&#124;`registerGroup`} ...]  
+ / Obejrzyj [{`register`&#124;`registerGroup`}...]  
  Dodaje co najmniej jeden `register` lub `registerGroup` wartości do listy.  
   
- / Unwatch [{`register`&#124;`registerGroup`} ...]  
+ / Unwatch [{`register`&#124;`registerGroup`}...]  
  Usuwa jeden lub więcej `register` lub `registerGroup` wartości z listy.  
   
 ## <a name="remarks"></a>Uwagi  

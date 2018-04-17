@@ -1,26 +1,24 @@
 ---
-title: "Dostosowywanie wydajności widoków raportów narzędzi | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dostosowywanie wydajności widoków raportów narzędzi | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, customizing report views
 - reports, customizing profiling report views
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b31f426720cf410d45bf28be3b0278fe6af2bc38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6f4f57a766f4c66d493f7e54c9db53cd0442c158
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-performance-tools-report-views"></a>Dostosowywanie wydajności widoków raportów narzędzi
 W tej sekcji omówiono sposób dostosowywania raportów, które są generowane z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania.  

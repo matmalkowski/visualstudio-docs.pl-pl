@@ -1,12 +1,10 @@
 ---
-title: "Importowanie elementów z istniejącej witryny SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Importowanie elementów z istniejącej witryny SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,24 +20,25 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Importowanie elementów z istniejącej witryny SharePoint
   Importowanie pakietu rozwiązań SharePoint szablon projektu umożliwia ponowne użycie elementów, takich jak pola z istniejących witryn programu SharePoint i typy zawartości w ramach nowego [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint. Mimo że można uruchomić najbardziej importowanych rozwiązań bez żadnych modyfikacji, brak pewnych ograniczeń i zagadnień do uwzględnienia, zwłaszcza, jeśli można modyfikować po zaimportowaniu ich elementów.  
   
 > [!NOTE]  
->  Aby zaimportować przepływy pracy wielokrotnego użytku, należy użyć szablonu projektu importowania przepływu pracy wielokrotnego użytku. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Wytyczne dotyczące importowania wielokrotnych przepływów danych](../sharepoint/guidelines-for-importing-reusable-workflows.md).  
+>  Aby zaimportować przepływy pracy wielokrotnego użytku, należy użyć szablonu projektu importowania przepływu pracy wielokrotnego użytku. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Wytyczne dotyczące importowania wielokrotnych przepływów danych](../sharepoint/guidelines-for-importing-reusable-workflows.md).  
   
 ## <a name="supported-sharepoint-solutions"></a>Rozwiązań SharePoint obsługiwane  
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]Importowanie rozwiązania utworzone w w pełni obsługuje [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] Importowanie rozwiązania utworzone w w pełni obsługuje [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]nie obsługuje importowania rozwiązań utworzonych w następujących aplikacji:  
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] nie obsługuje importowania rozwiązań utworzonych w następujących aplikacji:  
   
 -   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
  Na przykład po zaimportowaniu definicji listy ExpenseForms definicji listy o tej nazwie jest wyświetlany w obszarze **listy definicji** folderu w **Eksploratora rozwiązań** wraz z jego Elements.xml i Pliki Schema.XML. Jednak jego powiązanych formularzy ASPX, jak i HTML może być umieszczany w folderze o nazwie **ExpenseForms** w obszarze **inne pliki zaimportowane** folderu. Aby ukończyć importowania, przenosić tych plików w obszarze definicji listy ExpenseForms w **Eksploratora rozwiązań** i zmienić **DeploymentType** właściwości dla każdego pliku z **NoDeployment** do **ElementFile**.  
   
- Podczas importowania odbiorcy zdarzeń, plik Elements.xml jest kopiowany do poprawnej lokalizacji, ale należy ręcznie dołączyć zestawu w pakiecie rozwiązań, dzięki którym wdrażania z rozwiązaniem. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]jak to zrobić, zobacz [porady: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Podczas importowania odbiorcy zdarzeń, plik Elements.xml jest kopiowany do poprawnej lokalizacji, ale należy ręcznie dołączyć zestawu w pakiecie rozwiązań, dzięki którym wdrażania z rozwiązaniem. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to zrobić, zobacz [porady: Dodawanie i usuwanie zestawów dodatkowych](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Podczas importowania przepływy pracy, formularzy programu InfoPath są kopiowane do **inne pliki zaimportowane** folderu. Jeśli plik wsp zawiera szablon sieci Web, jest ona ustawiona jako strony początkowej w **Eksploratora rozwiązań**.  
   
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
  Podczas importowania rozwiązań, niektóre atrybuty opcjonalna funkcja zostały pominięte w manifeście importowanych funkcji. Jeśli chcesz przywrócić te atrybuty w nowym pliku funkcji, zidentyfikuj brakujące atrybuty porównując oryginalnego pliku funkcji do manifestu nowych funkcji i postępuj zgodnie z instrukcjami w temacie [porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Wykrywanie konfliktów wdrożenia nie jest wykonywana na wystąpienia listy wbudowanych  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]nie przeprowadza wykrywanie konfliktów wdrożenia wystąpienia listy wbudowanych (to znaczy domyślnego wystąpienia listy dostarczanych z programem SharePoint). Aby uniknąć zastępowania wystąpienia listy wbudowanych w programie SharePoint odbywa się nie wykonuje wykrywania konfliktów. Listę wbudowanych, którą wystąpienia są nadal wdrożonych aktualizacji, ale są nigdy nie usunięto lub zastąpione. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nie przeprowadza wykrywanie konfliktów wdrożenia wystąpienia listy wbudowanych (to znaczy domyślnego wystąpienia listy dostarczanych z programem SharePoint). Aby uniknąć zastępowania wystąpienia listy wbudowanych w programie SharePoint odbywa się nie wykonuje wykrywania konfliktów. Listę wbudowanych, którą wystąpienia są nadal wdrożonych aktualizacji, ale są nigdy nie usunięto lub zastąpione. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="importing-sharepoint-server-2010-workflows"></a>Importowanie przepływów pracy programu SharePoint Server 2010  
- W przypadku zaimportowania przepływ pracy utworzony w [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], nie będzie działał prawidłowo po jej wdrożeniu. Przepływ pracy nie działa poprawnie, ponieważ brakuje niektórych zestawów i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływy pracy zawierają InfoPath forms, które nie są obecnie obsługiwane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązań przepływu pracy. Jednak zaimportować [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływów pracy może również działać prawidłowo po zmianie niektóre elementy, takie jak dodanie odwołania do [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] zestawów i ponowne łączenie formularzy programu InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Importowanie przepływów pracy programu SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).  
+ W przypadku zaimportowania przepływ pracy utworzony w [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], nie będzie działał prawidłowo po jej wdrożeniu. Przepływ pracy nie działa poprawnie, ponieważ brakuje niektórych zestawów i [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływy pracy zawierają InfoPath forms, które nie są obecnie obsługiwane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązań przepływu pracy. Jednak zaimportować [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] przepływów pracy może również działać prawidłowo po zmianie niektóre elementy, takie jak dodanie odwołania do [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] zestawów i ponowne łączenie formularzy programu InfoPath. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Importowanie przepływów pracy programu SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).  
   
 ## <a name="item-name-character-limit"></a>Za długa nazwa elementu  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ma limit 260 znaków całkowita dla projektu i nazw elementów projektu, łącznie ze ścieżką. Podczas importowania rozwiązanie, jeśli nazwa elementu przekracza ten limit, jest komunikat o błędzie:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma limit 260 znaków całkowita dla projektu i nazw elementów projektu, łącznie ze ścieżką. Podczas importowania rozwiązanie, jeśli nazwa elementu przekracza ten limit, jest komunikat o błędzie:  
   
  **Określona ścieżka i nazwa pliku jest zbyt długa. W pełni kwalifikowanej nazwy pliku musi być mniejsza niż 260 znaków, a nazwa katalogu musi być mniejsza niż 248 znaków.**  
   

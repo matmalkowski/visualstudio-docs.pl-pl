@@ -1,10 +1,8 @@
 ---
-title: "Porady: tworzenie rozwiązania języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: tworzenie rozwiązania języka specyficznego dla domeny | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5adfe90d88f46f4a3c31c1ddb6eb860403d57fe4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c2b14b407a6274e444ff50a6693b20b7ec763e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalistycznej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania.  
@@ -81,7 +79,7 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalistyczn
     > [!NOTE]
     >  Jeśli zostanie wyświetlony komunikat z ostrzeżeniem, nie uruchamianie szablonów tekstowych ze źródeł niezaufanych, kliknij **OK**. Można ustawić tej wiadomości nie pojawiają się ponownie.  
   
-##  <a name="settings"></a>Strony kreatora projektanta DSL  
+##  <a name="settings"></a> Strony kreatora projektanta DSL  
  Możesz pozostawić kilka pól takie same jak wartości domyślnych. Jednak należy się upewnić, że ustawiona w polu rozszerzenie pliku.  
   
 ### <a name="solution-settings-page"></a>Strona Ustawienia rozwiązania  
@@ -103,11 +101,11 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalistyczn
   
 -   Wpisz rozszerzenie inny plik.  
   
-     \-lub -  
+     \- lub -  
   
 -   Resetuj [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eksperymentalne wystąpienie. Będą to wszystkie DSLs, które zostały wcześniej utworzone wyrejestrować. Na **Start** menu, kliknij przycisk **wszystkie programy**, **zestawu SDK programu Microsoft Visual Studio 2010**, **narzędzia**, a następnie **resetowania Microsoft Visual Studio 2010 eksperymentalne wystąpienie**. Można ponownie utworzyć innych DSLs, których chcesz użyć ponownie.  
   
-     \-lub -  
+     \- lub -  
   
 -   Jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pełni zainstalowano rozszerzenia, która używa tego rozszerzenia pliku na komputerze, należy go odinstalować. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzenia**.  
   

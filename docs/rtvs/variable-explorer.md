@@ -1,26 +1,23 @@
 ---
-title: Eksplorator zmiennej w R Tools for Visual Studio | Dokumentacja firmy Microsoft
-description: "Zmiennej Explorer w programie Visual Studio zawiera wszystkie zmienne w danym zakresie w bieżącej sesji R."
-ms.custom: 
+title: Zmienna Eksploratora dla R
+description: Zmiennej Explorer w programie Visual Studio zawiera wszystkie zmienne w danym zakresie w bieżącej sesji R.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 41dab5fa99f4f725ef3aadc76b2b2441cb2c4abb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5d563d2a466181068a3495aaca70469f16dca27a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="variable-explorer"></a>Eksplorator zmiennej
 

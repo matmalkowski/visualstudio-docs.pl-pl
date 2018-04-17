@@ -2,11 +2,8 @@
 title: Getframeworksdkpath — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkSdkPath
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - GetFrameworkSdkPath task [MSBuild]
 - MSBuild, GetFrameworkSdkPath task
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
-caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 390df225104b8469e82d605c24e54e1025c60f37
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f274aec61ea583887650a6bd3548a184b151daae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath — Zadanie
 Pobiera ścieżkę do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  

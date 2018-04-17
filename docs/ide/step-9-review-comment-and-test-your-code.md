@@ -1,23 +1,21 @@
 ---
-title: "Krok 9: Sprawdź, komentowanie i testowanie kodu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 9: Sprawdź, komentowanie i testowanie kodu | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
-caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b46e51ac48ffab06bf17508f6c99ccc2fd7fa7c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzenie, komentowanie i testowanie kodu
 Obok możesz dodać komentarz do kodu. Należy pamiętać, że nie powoduje zmiany zachowania programu jest komentarz. Ułatwi osobie, która odczytuje swój kod, aby zrozumieć, jakie operacje. Dodawanie komentarzy w kodzie jest dobrym nawyk umożliwia pobranie do. W środowisku Visual C#, dwa przekazywania ukośniki (/ /) zaznacz wiersz jako komentarz. W języku Visual Basic pojedynczego cudzysłowu (') służy do zaznacz wiersz jako komentarz. Po dodaniu komentarza, należy przetestować programu. Jest dobrym rozwiązaniem jest uruchamianie i testowanie kodu często podczas pracy w projektach, aby można było catch i rozwiązywania problemów z wcześniej, zanim ten kod pobiera bardziej skomplikowane. Ta metoda jest wywoływana *iteracyjne testowanie*.  
@@ -46,7 +44,7 @@ Obok możesz dodać komentarz do kodu. Należy pamiętać, że nie powoduje zmia
   
      Instrukcje są programy wykonywanie czynności, jakie wprowadzać. W środowisku Visual C#, instrukcję zawsze kończy się średnikiem. W języku Visual Basic koniec wiersza jest końca instrukcji. (Nie średnik jest niezbędne w języku Visual Basic). Informuje powyższych instrukcji z `PictureBox` kontrolce załadować plik, który użytkownik wybrał z **OpenFileDialog** składnika.  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 5 wideo](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie podglądu obrazów w C# — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 5 wideo](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-add-comments"></a>Aby dodać komentarze  
   

@@ -1,12 +1,9 @@
 ---
-title: Vbc Task | Microsoft Docs
+title: Vbc — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-caps.latest.revision: 19
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b38f523a3a1c97798cdd629290791ab5e480f8
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 54b7fd44304b60a25a1e22ea1ab5331cc670dfc3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączanych dynamicznie (dll) lub moduły kodu (modułu .netmodule). Aby uzyskać więcej informacji o vbc.exe, zobacz [kompilatora wiersza polecenia programu Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  

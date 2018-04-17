@@ -1,23 +1,21 @@
 ---
-title: "Właściwości magazynu obliczeniowej i niestandardowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Właściwości magazynu obliczeniowej i niestandardowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny języka specyficznego dla domeny (DSL) mogą być wyświetlane dla użytkownika na diagramie i w Eksploratorze z języka i można uzyskać, sprawdzając kod programu. Jednak właściwości różnią się w taki sposób, że ich wartości są przechowywane.  
@@ -84,7 +82,7 @@ Wszystkie właściwości domeny języka specyficznego dla domeny (DSL) mogą by�
   
 10. Testowanie właściwości. Upewnij się, że próby **Cofnij** i **wykonaj ponownie**.  
   
-##  <a name="setters"></a>Niestandardowe ustawiających i transakcji  
+##  <a name="setters"></a> Niestandardowe ustawiających i transakcji  
  W metodzie zestaw właściwości niestandardowe magazynu nie trzeba otworzyć transakcji, ponieważ metoda nazywa się zwykle w aktywnej transakcji.  
   
  Metoda Set może jednak również nazywane czy użytkownik wywołuje cofania lub ponownego wykonywania, czy transakcja jest wycofywana. Gdy <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ma wartość true, Set, metoda powinna zachowywać się w następujący sposób:  

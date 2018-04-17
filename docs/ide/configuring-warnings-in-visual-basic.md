@@ -2,28 +2,24 @@
 title: Konfigurowanie ostrzeżeń w Visual Basic | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilatora zawiera zestaw ostrzeżenia dotyczące kodu, który może powodować błędy środowiska wykonawczego. Tych informacji umożliwia zapis czyszcząca, szybciej, lepiej kodu przy użyciu mniejszej liczby błędów. Na przykład kompilator spowoduje wygenerowanie ostrzeżenia, gdy użytkownik próbuje wywołać elementu członkowskiego zmiennej obiektu nieprzypisane zwrócone z funkcji bez ustawienia zwracanej wartości, lub wykonać `Try` bloku błędów w logice przechwytują wyjątki.  
@@ -125,7 +121,7 @@ ms.lasthandoff: 03/28/2018
 ## <a name="see-also"></a>Zobacz także  
  [Error — typy](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try... CATCH... Finally — instrukcja](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
+ [/ nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Są domyślnie wyłączone ostrzeżenia kompilatora](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

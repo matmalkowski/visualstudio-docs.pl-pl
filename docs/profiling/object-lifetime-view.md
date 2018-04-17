@@ -1,13 +1,10 @@
 ---
 title: Widok okresu istnienia obiektu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - performance reports, objects lifetime view
 - profiling tools, Lifetime view
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8fa19da70b55e4a519153898a800bb259983c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d179ee70e07a704ef1191edb0e4b47bc61664834
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="object-lifetime-view"></a>Widok okresu istnienia obiektu
 Widok okresu istnienia obiektu, jest dostępna, gdy **również zbieranie danych o okresie istnienia obiektu platformy .NET** jest zaznaczony na stronach właściwości sesji wydajności.  

@@ -1,12 +1,10 @@
 ---
-title: "Rozszerzanie elementów projektu SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozszerzanie elementów projektu SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e990896720916048ab449c7ccb5a927577861256
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cc202b2e3e303f8f6e92b82bbfbc6f5525966bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-project-items"></a>Rozszerzanie pozycji projektu SharePoint
   Tworzenie rozszerzenia elementu projektu umożliwia dodawanie funkcji do typu elementu projektu SharePoint, która jest już zainstalowana w programie Visual Studio. Na przykład można utworzyć rozszerzenia wbudowanych **odbiorcy zdarzeń** lub **definicji listy** elementy projektu w programie Visual Studio lub można utworzyć rozszerzenia dla typu elementu niestandardowego projektu. Można również utworzyć rozszerzenie dla wszystkich typów elementów projektu SharePoint.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identyfikatory elementów projektu SharePoint  
  Każdy element projektu SharePoint ma odpowiedni identyfikator ciągu. Identyfikator elementu projektu należy sprawdzić, czy należy wykonać następujące zadania:  
   
--   Tworzenie rozszerzenia elementu projektu. W takim przypadku należy podać identyfikator dla elementu projektu, który ma zostać rozszerzony do konstruktora obiektu <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Aby utworzyć rozszerzenia elementu projektu wszystkie typy, należy przekazać  **\***  wartość ciągu.  
+-   Tworzenie rozszerzenia elementu projektu. W takim przypadku należy podać identyfikator dla elementu projektu, który ma zostać rozszerzony do konstruktora obiektu <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Aby utworzyć rozszerzenia elementu projektu wszystkie typy, należy przekazać **\*** wartość ciągu.  
   
 -   Dodaj element projektu do projektu programowo. W takim przypadku należy podać identyfikator elementu projektu do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> metody.  
   

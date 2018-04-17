@@ -1,13 +1,10 @@
 ---
-title: Modify Visual Studio 2017 | Microsoft Docs
+title: Modyfikowanie Visual Studio 2017 | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak zmodyfikuj program Visual Studio, krok po kroku.
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -20,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3145b1fef86b6d9540e105557bdf40d291049a52
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 960a32aed9ed88b4d03aee5977bc81b45d7b2573
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie Visual Studio 2017 przez dodanie lub usunięcie obciążeń i składniki
 Nie tylko ma wprowadziliśmy łatwiej można spersonalizować Visual Studio, aby dopasować zadań, należy wykonać, wprowadziliśmy również go łatwiej zbyt Dostosowywanie programu Visual Studio. Aby to zrobić, Uruchom nowe Instalator programu Visual Studio i wprowadź żądane zmiany.

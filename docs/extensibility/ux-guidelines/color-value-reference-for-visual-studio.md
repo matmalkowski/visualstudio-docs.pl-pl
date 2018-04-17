@@ -1,24 +1,24 @@
 ---
-title: "Kolor wartości odwołania dla programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Odwołanie: Kody Hex do tworzenia nowych tokenów kolor Visual Studio"
-keywords: "kolor, szesnastkowy kod, odcień, motywem interfejsu użytkownika, motywów"
+title: Kolor wartości odwołania dla programu Visual Studio | Dokumentacja firmy Microsoft
+description: 'Odwołanie: Kody Hex do tworzenia nowych tokenów kolor Visual Studio'
+keywords: kolor, szesnastkowy kod, odcień, motywem interfejsu użytkownika, motywów
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Kolor wartości odwołania dla programu Visual Studio
 Ten temat jest odwołanie do tworzenia nowych tokenów kolorów. Podczas tworzenia nowego interfejsu użytkownika, można użyć podobne kolory z istniejącego interfejsu użytkownika, aby wybrać kolorów motywu każdego głównego i nazwy kolorów systemu dla tego elementu motywów duży kontrast. 
@@ -162,9 +162,9 @@ Korzystając z tego podręcznika, pamiętaj:
 | Tło: wciśnięty | ![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` | ![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` | ![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "Wyróżnij, próbek")<br />`Highlight` |
 | Pierwszy plan: wyłączone | ![Próbka #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "próbnika #FFA2A4A5")<br />`#FFA2A4A5` | ![Próbka #FF656565](../../extensibility/ux-guidelines/media/656565.png "próbnika #FF656565")<br />`#FF656565` | ![Próbka #FFA2A4A5](../../extensibility/ux-guidelines/media/A2A4A5.png "próbnika #FFA2A4A5")<br />`#FFA2A4A5` | ![Próbka GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText próbki")<br />`GrayText` |
 | Tło: wyłączone | ![Próbka #FFF5F5F5](../../extensibility/ux-guidelines/media/F5F5F5.png "próbnika #FFF5F5F5")<br />`#FFF5F5F5` | ![Próbka #FF252526](../../extensibility/ux-guidelines/media/252526.png "próbnika #FF252526")<br />`#FF252526` | ![Próbka #FFF6F6F6](../../extensibility/ux-guidelines/media/F6F6F6.png "próbnika #FFF6F6F6")<br />`#FFF6F6F6` | ![Okno próbnika](../../extensibility/ux-guidelines/media/HCWindow.png "próbnika okna")<br />`Window` |
-| Obramowanie: hover | ![Próbka #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "próbnika #FFC9DEF5")<br />`#FFC9DEF5` | ![Próbka #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "próbnika #FF3E3E40")<br />`#FF3E3E40` |![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br /> `#FFFEFEFE` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
-| Obramowanie: wciśnięty | ![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` | ![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` |![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br /> `#FF007ACC` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
-| Obramowanie: wyłączone | ![Próbka #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB próbki")<br />`#FFCCCEDB` | ![Próbka #FF434346](../../extensibility/ux-guidelines/media/434346.png "próbnika #FF434346")<br />`#FF434346` | ![Próbka #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "próbnika #FFC6C6C6")<br />`#FFC6C6C6` | ![Próbka WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame próbki")<br />`WindowFrame` |
+| Obramowanie: hover | ![Próbka #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "próbnika #FFC9DEF5")<br />`#FFC9DEF5` | ![ Próbka #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "próbnika #FF3E3E40")<br />`#FF3E3E40` |![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br /> `#FFFEFEFE` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
+| Obramowanie: wciśnięty | ![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` | ![ Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br />`#FF007ACC` |![Próbka #FF007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #FF007ACC")<br /> `#FF007ACC` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
+| Obramowanie: wyłączone | ![Próbka #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB próbki")<br />`#FFCCCEDB` | ![ Próbka #FF434346](../../extensibility/ux-guidelines/media/434346.png "próbnika #FF434346")<br />`#FF434346` | ![Próbka #FFC6C6C6](../../extensibility/ux-guidelines/media/C6C6C6.png "próbnika #FFC6C6C6")<br />`#FFC6C6C6` | ![Próbka WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame próbki")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>Elementów formantu siatki właściwości
 
@@ -309,7 +309,7 @@ Korzystając z tego podręcznika, pamiętaj:
 | Narzędzia (tekst): hover | ![Próbka #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #FF1E1E1E")<br />`#FF1E1E1E` | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #FF1E1E1E")<br />`#FF1E1E1E` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
 | Tło: hover | ![Próbka #FFC9DEF5](../../extensibility/ux-guidelines/media/C9DEF5.png "próbnika #FFC9DEF5")<br />`#FFC9DEF5` | ![Próbka #FF606060](../../extensibility/ux-guidelines/media/606060.png "próbnika #FF606060")<br />`#FF606060` | ![Próbka #FFFDF4BF](../../extensibility/ux-guidelines/media/FDF4BF.png "próbnika #FFFDF4BF")<br />`#FFFDF4BF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "Wyróżnij, próbek")<br />`Highlight` |
 | Narzędzia (tekst): wciśnięty | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
-| Tło: wciśnięty | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "Wyróżnij, próbek")<br />`Highlight` |
+| Tło: wciśnięty | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![ Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "Wyróżnij, próbek")<br />`Highlight` |
 | Narzędzia (tekst): wybrane | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF próbki")<br />`#FFFFFFFF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
 | Tło: wybrane | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Próbka #FF3399FF](../../extensibility/ux-guidelines/media/3399FF.png "próbnika #FF3399FF")<br />`#FF3399FF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "Wyróżnij, próbek")<br />`Highlight` |
 
@@ -398,7 +398,7 @@ Korzystając z tego podręcznika, pamiętaj:
 | Tło | ![Próbka #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE próbki")<br />`#FEFEFE` | ![próbka #252526](../../extensibility/ux-guidelines/media/252526.png "próbnika #252526")<br />`#252526` | ![Próbka #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE próbki")<br />`#FEFEFE` | ![Formant próbnika](../../extensibility/ux-guidelines/media/HCControl.png "próbnika formantu")<br />`Control` |
 | Obramowanie | ![próbka #717171](../../extensibility/ux-guidelines/media/717171.png "próbnika #717171")<br />`#717171` | ![próbka #999999](../../extensibility/ux-guidelines/media/999999.png "próbnika #999999")<br />`#999999` | ![próbka #717171](../../extensibility/ux-guidelines/media/717171.png "próbnika #717171")<br />`#717171` | ![Próbka ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark próbki")<br />`ControlDark` |
 | Tekst | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "próbnika #F1F1F1")<br />`#F1F1F1` | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
-| Symbolu | ![próbka](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "próbnika #F1F1F1")<br />`#F1F1F1` | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
+| Symbolu | ![ próbka](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "próbnika #F1F1F1")<br />`#F1F1F1` | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 
 ### <a name="disabled"></a>Wyłączone
 

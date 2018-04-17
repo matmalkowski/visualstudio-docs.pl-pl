@@ -1,12 +1,10 @@
 ---
-title: "Porady: dodawanie formantów do dokumentów pakietu Office formularzy systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dodawanie formantów do dokumentów pakietu Office formularzy systemu Windows | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ebd26c78e30e522b3d961d42226fc42825eb2a2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Porady: dodawanie formantów formularzy Windows do dokumentów pakietu Office
   Formanty formularzy systemu Windows można dodać do programu Microsoft Office Excel i Microsoft Office Word dokumentów w czasie projektowania w projektach na poziomie dokumentu. W czasie wykonywania można dodawać formanty w dostosowaniach na poziomie dokumentu i w dodatkach VSTO. Na przykład można dodać <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> sterowania do arkusza, dzięki czemu użytkownicy mogą wybrać z listy opcji.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: Dodaj formanty do powierzchni dokumentu w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
-##  <a name="designtime"></a>Dodawanie formantów w czasie projektowania  
+##  <a name="designtime"></a> Dodawanie formantów w czasie projektowania  
  Istnieje kilka sposobów Dodaj formanty formularzy systemu Windows do dokumentów w projektach na poziomie dokumentu w czasie projektowania.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -102,8 +101,8 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Po wybraniu formantu w programie Excel, zobaczysz **=EMBED("WinForms.Control.Host","")** w **pasek formuły**. Ten tekst jest i nie należy go usunąć.  
   
-##  <a name="runtimedoclevel"></a>Dodawanie formantów w czasie wykonywania w projektach na poziomie dokumentu  
- Formanty formularzy systemu Windows można dodać programistycznie do dokumentu, w czasie wykonywania. W programie Word, należy użyć metod <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> właściwość `ThisDocument` klasy. W programie Excel, użyj metody <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> właściwość `Sheet`  *n*  klasy. Każda metoda ma kilka przeciążeń, które można określić lokalizacji formantu na różne sposoby.  
+##  <a name="runtimedoclevel"></a> Dodawanie formantów w czasie wykonywania w projektach na poziomie dokumentu  
+ Formanty formularzy systemu Windows można dodać programistycznie do dokumentu, w czasie wykonywania. W programie Word, należy użyć metod <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> właściwość `ThisDocument` klasy. W programie Excel, użyj metody <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> właściwość `Sheet` *n* klasy. Każda metoda ma kilka przeciążeń, które można określić lokalizacji formantu na różne sposoby.  
   
  Po dodaniu formantu formularzy systemu Windows do dokumentu w czasie wykonywania formantu nie jest trwały dokumentu, gdy dokument zostanie zamknięty. Kontrolki można odtworzyć przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]  
   
-##  <a name="runtimeaddin"></a>Dodawanie formantów w czasie wykonywania w dodatkach VSTO  
+##  <a name="runtimeaddin"></a> Dodawanie formantów w czasie wykonywania w dodatkach VSTO  
  Można dodać formanty formularzy systemu Windows programowo do otwartego dokumentu w czasie wykonywania. Po pierwsze Generowanie elementu hosta, który jest oparty na otwartego dokumentu lub arkusza. Następnie w programie Word, należy użyć metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość nowego elementu host. W programie Excel, użyj metody <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> właściwość nowego elementu host. Każda metoda ma kilka przeciążeń, które można określić lokalizacji formantu na różne sposoby.  
   
  Po dodaniu formantu formularzy systemu Windows do dokumentu w czasie wykonywania formantu nie jest trwały dokumentu, gdy dokument zostanie zamknięty. Kontrolki można odtworzyć przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  

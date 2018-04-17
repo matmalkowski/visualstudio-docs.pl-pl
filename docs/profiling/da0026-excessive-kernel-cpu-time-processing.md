@@ -1,27 +1,25 @@
 ---
-title: "DA0026: Nadmierne Procesora w trybie jądra czasu przetwarzania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0026: Nadmierne Procesora w trybie jądra czasu przetwarzania | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
 - vs.performance.26
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bf419874b0758f56927b570e292b42f35137d53a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3f7ab000e4f63c96c91038546145b85004bcc1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Nadmierne przetwarzanie czasu procesora CPU w trybie jądra
 |||  

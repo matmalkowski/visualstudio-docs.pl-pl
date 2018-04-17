@@ -1,12 +1,10 @@
 ---
-title: "Porady: używanie wyłącznie klawiatury | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: używanie wyłącznie klawiatury | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 08/22/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -17,19 +15,20 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 351170b59b9b02c1059bd20fe7ad21981b280aee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Porady: używanie wyłącznie klawiatury
 > [!TIP]
 > Aby dowiedzieć się więcej o najnowszych aktualizacji ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 wersji 15 ustęp 3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]udostępnia wiele domyślne kombinacje klawiszy skrótu umożliwia łatwe do nawigowania i kodu w ramach zintegrowane środowisko programistyczne (IDE). Pełną listę klawiszy skrótu używanych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na skróty klawiaturowe dostępne dla innych produktów firmy Microsoft, zobacz [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia wiele domyślne kombinacje klawiszy skrótu umożliwia łatwe do nawigowania i kodu w ramach zintegrowane środowisko programistyczne (IDE). Pełną listę klawiszy skrótu używanych w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na skróty klawiaturowe dostępne dla innych produktów firmy Microsoft, zobacz [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
 
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

@@ -1,26 +1,24 @@
 ---
-title: "Zbieranie danych współbieżności dla aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zbieranie danych współbieżności dla aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - profiling tools,concurrency method
 ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 6f20e045eb6f0b801cffafb3224971bec2354cc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 0e8360c88f0471b41c7b12f1b27d42370d9d3efb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania umożliwia zbieranie danych kontencji zasobów.  
@@ -41,7 +39,7 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
 |**Profil przy użyciu metody pobierania próbek**|-   [Zbieranie statystyk aplikacji za pomocą próbkowania](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
 |**Profil pamięci alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Problemy z profilowania współbieżności  

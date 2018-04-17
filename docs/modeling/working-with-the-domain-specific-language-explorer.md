@@ -1,23 +1,21 @@
 ---
-title: "Praca z Eksploratora języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Praca z Eksploratora języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3a70d43f2261dbb2af7f71b1fe2520bb96b53414
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d7558d086d12817f715bdded323c04bda90b69b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Praca z eksploratorem języka specyficznego dla domeny
 **DSL Explorer** wyświetla kilka rodzajów informacji w widoku drzewa. Aby uzyskać więcej informacji na temat większości pozycji w Eksploratorze DSL, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).  

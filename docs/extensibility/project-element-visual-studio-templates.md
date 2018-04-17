@@ -1,37 +1,33 @@
 ---
-title: "Project — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Project — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>Project — Element (szablony Visual Studio)
 Określa plików lub katalogów do dodania do projektu.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent >  
- \<Projekt >  
+ \<Project>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -71,13 +67,13 @@ Określa plików lub katalogów do dodania do projektu.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Element wymagany.|  
   
 ## <a name="remarks"></a>Uwagi  
- `Project`jest elementem podrzędnym opcjonalne `TemplateContent`.  
+ `Project` jest elementem podrzędnym opcjonalne `TemplateContent`.  
   
  `Project` Element jest używany do zmiennoprzecinkową projektu i w związku z tym jest prawidłowy tylko w szablonach projektu.  
   
- `Project`elementy mogą mieć [folderu](../extensibility/folder-element-visual-studio-project-templates.md) elementów podrzędnych lub [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementów podrzędnych, ale nie ich kombinacjami `Folder` i `ProjectItem` elementów podrzędnych.  
+ `Project` elementy mogą mieć [folderu](../extensibility/folder-element-visual-studio-project-templates.md) elementów podrzędnych lub [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementów podrzędnych, ale nie ich kombinacjami `Folder` i `ProjectItem` elementów podrzędnych.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia nazwę pliku projektu, na podstawie nazwy wprowadzony przez użytkownika w **nowy projekt** okno dialogowe. Użyj `TargetFileName` atrybut, jeśli chcesz podać nazwę pliku alternatywnego plików projektu utworzonych na podstawie tego szablonu.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia nazwę pliku projektu, na podstawie nazwy wprowadzony przez użytkownika w **nowy projekt** okno dialogowe. Użyj `TargetFileName` atrybut, jeśli chcesz podać nazwę pliku alternatywnego plików projektu utworzonych na podstawie tego szablonu.  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie przedstawiono metadane szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.  

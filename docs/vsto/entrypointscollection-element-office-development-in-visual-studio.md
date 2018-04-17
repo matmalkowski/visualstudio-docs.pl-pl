@@ -1,12 +1,10 @@
 ---
-title: "&lt;entrypointscollection —&gt; — Element (Office Development w Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;entrypointscollection —&gt; — Element (Office Development w Visual Studio) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 478731cde6c1ac08ca0d197f918e2fee4a8673ee
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 357e2b4d7aedb82b63676055f1ad1215171a25cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entrypointscollection —&gt; — Element (Office Development w Visual Studio)
   `entryPointsCollection` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `entryPoints` elementy skojarzone z rozwiązań pakietu Office.  
@@ -47,10 +46,10 @@ ms.lasthandoff: 01/10/2018
   
  `entryPointsCollection` Element nie ma żadnych atrybutów.  
   
- `entryPointsCollection`zawiera następujące elementy.  
+ `entryPointsCollection` zawiera następujące elementy.  
   
 ### <a name="entrypoints"></a>punkty wejścia  
- Wymagany. Rola `entryPoints` element `vstav3` przestrzeni nazw jest zdefiniowany w [&#60; punkty wejścia &#62; Element &#40; programowanie Office w Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Wymagany. Rola `entryPoints` element `vstav3` przestrzeni nazw jest zdefiniowany w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   

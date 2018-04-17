@@ -1,23 +1,20 @@
 ---
-title: "Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework do zbierania danych pamięci przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework do zbierania danych pamięci przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebe5012ea623e82064dda2b1408d3aaf66de2c38
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 3db82ba869923b98bbe0f99a3a0c1c604d0f101d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
 
@@ -62,7 +59,7 @@ Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystki
     |Opcja|Opis|
     |------------|-----------------|
     |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Określa nazwę domeny i nazwę konta, który jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces jest uruchomiony jako użytkownik innego niż zalogowanego użytkownika. Właściciel procesu znajduje się w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań systemu Windows.|
-    |[/ crosssession &#124; /CS](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesji. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Idenitifer sesji to wymienione w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań systemu Windows. **/CS** może być określony jako skrót **/crosssession**.|
+    |[/ crosssession &#124; /cs](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesji. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Idenitifer sesji to wymienione w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań systemu Windows. **/CS** może być określony jako skrót **/crosssession**.|
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności systemu Windows, które będą zbierane podczas profilowania.|
     |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami kolekcji liczników wydajności systemu Windows. Domyślna to 500 ms.|
 
@@ -70,7 +67,7 @@ Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystki
 
 5. Dołączanie profilera do aplikacji docelowej. Wpisz:
 
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
+     **VSPerfCmd**[/ dołączyć](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
     - `PID` Określa identyfikator procesu aplikacji docelowej. `ProcessName` Określa nazwę procesu. Należy pamiętać, że jeśli określisz `ProcessName` i działa wiele procesów, które mają taką samą nazwę, są nieprzewidywalne wyniki. Identyfikatory wszystkich procesów uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.
 
@@ -106,7 +103,7 @@ Aby zakończyć sesję profilowania, profilera musi być odłączony od wszystki
 
 2. Zamknij profilera. Wpisz:
 
-     **VSPerfCmd** [ /shutdown  ](../profiling/shutdown.md)
+     **VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
 
 3. (Opcjonalnie) Wyczyść profilowania zmiennych środowiskowych. Wpisz:
 

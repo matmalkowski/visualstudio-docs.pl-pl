@@ -1,12 +1,10 @@
 ---
-title: "Tworzenie składników Web Part dla SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie składników Web Part dla SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Tworzenie części sieciowych dla SharePoint
   Przy użyciu składników web Part, można zmodyfikować zawartość, wyglądu i zachowania stron witryny programu SharePoint za pomocą przeglądarki. Formanty po stronie serwera, które są uruchamiane wewnątrz strony sieci web są składniki Web Part: są blokami konstrukcyjnymi stron, które znajdują się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: składnikami Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  Aby uzyskać więcej informacji o rozwiązaniach w trybie piaskownicy, zobacz [różnice między rozwiązaniami w trybie piaskownicy oraz rozwiązaniami farmy](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>Tworzenie składników Web Part starszego stylu w oparciu o program SharePoint  
- Szablony programu Visual Studio służy do tworzenia niestandardowych [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web Part programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]części sieci Web są tworzone nad [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktura składników web part i są zalecane typu dla nowych projektów.  
+ Szablony programu Visual Studio służy do tworzenia niestandardowych [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web Part programu SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] części sieci Web są tworzone nad [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktura składników web part i są zalecane typu dla nowych projektów.  
   
  W bardzo mało przypadków może być konieczne tworzenie składnika web part za pomocą starszej stylu oparty na programie SharePoint składnik web part. Visual Studio umożliwia tworzenie tych typów części sieci web, ale Visual Studio nie zapewnia żadnych szablonów, które są zaprojektowane specjalnie, aby można je utworzyć.  
   

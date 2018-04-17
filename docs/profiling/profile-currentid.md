@@ -1,27 +1,23 @@
 ---
 title: PROFILE_CURRENTID | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9b90d7a56fb0f52846a580e2e9504b2fec5c5c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e11076168dbcdbdd8cc617ab305f3f25550fcb1e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID zwraca pseudo-token identyfikator wątku lub identyfikator procesu w wywołaniu funkcji NameProfile, StartProfile StopProfile, SuspendProfile i ResumeProfile. Użyj, aby spowodować, że funkcja do działania na bieżącego wątku lub procesu, a nie w szczególności wskazanych jeden.  

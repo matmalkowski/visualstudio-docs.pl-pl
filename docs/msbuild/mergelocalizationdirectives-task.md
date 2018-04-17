@@ -1,12 +1,9 @@
 ---
-title: MergeLocalizationDirectives Task | Microsoft Docs
+title: Mergelocalizationdirectives — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MergeLocalizationDirectives task [WPF MSBuild]
 - moving localization comments and attributes to a separate file [WPF MSBuild]
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
-caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e53bcb94c753659848b336be243a2c582fc0c2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: ec2d67970860f7216081809c2bc633b77fd8692e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Zadań łączy atrybuty lokalizacji i komentarze co najmniej jednego [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w jednym pliku dla całego zestawu.  

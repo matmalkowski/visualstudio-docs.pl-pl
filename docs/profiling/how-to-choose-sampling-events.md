@@ -1,13 +1,10 @@
 ---
-title: "Porady: Wybieranie zdarzeń pobierania próbek | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Wybieranie zdarzeń pobierania próbek | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - performance counter sample event
 - performance tools, sample events
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8475544d6ecb822a25a423b73543d7364d79da10
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 04cf11c9ec69eed8524bbfce884539b0586458c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-choose-sampling-events"></a>Porady: wybieranie zdarzeń pobierania próbek
 Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania zbiera dane dotyczące wydajności w przedziale czasu, który jest określony jako liczba cykli procesora, które są używane przez PROFILOWANEGO procesu. Domyślna liczba cykli w interwale jest 10 000 000, czyli około 0,01 sekund na 1 komputerze GH. Można zmienić liczby cykli w interwale, i można zmienić zdarzenie próbkowania. Dostępne są następujące zdarzenia próbkowania:  

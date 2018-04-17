@@ -1,27 +1,24 @@
 ---
-title: Praca z języka Python, krok 1, tworzenia projektu | Dokumentacja firmy Microsoft
+title: Praca z języka Python, krok 1, tworzenia projektu
 description: Krok 1 z podstawowy samouczek dotyczący Praca z języka Python w programie Visual Studio, zwijania całego samouczek opisujące warunki wstępne i przejście przez proces tworzenia nowego projektu języka Python.
 ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c97af84d02b1dcf6fb60f8dad06bf3bd6975a4e3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 60ae75a7b8b77559b649d5b3f29145ef41e82f50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
 

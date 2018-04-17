@@ -1,24 +1,22 @@
 ---
-title: "Model wymagania użytkownika | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Model wymagania użytkownika | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1401328b53f03d6ff1121e93ac7e56ebba0e585e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3837c6876c8eb1beecea13fb501a78c764555d9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 
@@ -59,7 +57,7 @@ Można utworzyć kilka widoków różne wymagania dotyczące użytkowników.  Ka
   
  Zwróć uwagę, że większość typów diagram mogą być używane do innych celów. Omówienie typów diagramu, zobacz [tworzenia modeli dla aplikacji](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>Wyświetlanie reguły biznesowe
+##  <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe
 
 Reguła biznesowa jest wymaganie, który nie jest skojarzony z konkretnego przypadku użycia i powinien być uwzględniony w całym systemie.  
   
@@ -79,7 +77,7 @@ Reguła biznesowa jest wymaganie, który nie jest skojarzony z konkretnego przyp
 |--------------------|----------|  
 |Jak wdrażać kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Opisujące jakości wymagania dotyczące usługi
+##  <a name="QoSRequirements"></a> Opisujące jakości wymagania dotyczące usługi
 
 Istnieje kilka kategorii wymagania jakości usługi. Obejmują one następujące czynności:  
   

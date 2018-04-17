@@ -1,27 +1,24 @@
 ---
-title: Praca z języka Python, krok 3 w oknie interaktywny REPL | Dokumentacja firmy Microsoft
+title: Praca z języka Python, krok 3, okno interaktywne REPL
 description: Krok 3 samouczka core do pracy z języka Python w programie Visual Studio, obejmujące okno Python interaktywny REPL.
 ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437dc0b64c3fb9b1a92c4651ad66e5cec867d66b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 7136deb4ee040f3828ee1221bb9f53df78022bb7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 

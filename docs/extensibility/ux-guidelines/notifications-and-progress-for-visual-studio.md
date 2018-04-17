@@ -1,28 +1,24 @@
 ---
-title: "Powiadomienia i postępu dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Powiadomienia i postępu dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Powiadomienia i postępu dla programu Visual Studio
-##  <a name="BKMK_NotificationSystems"></a>Systemy powiadomień  
+##  <a name="BKMK_NotificationSystems"></a> Systemy powiadomień  
   
 ### <a name="overview"></a>Omówienie  
  Istnieje kilka sposobów, aby poinformować użytkownika, co dzieje się w programie Visual Studio dotyczące ich zadań rozwoju oprogramowania.  
@@ -61,14 +57,14 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="notification-methods"></a>Metody powiadamiania  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>Modalne błąd komunikatu w oknach dialogowych  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> Modalne błąd komunikatu w oknach dialogowych  
  Komunikat Błąd modalne okno dialogowe służy do wyświetlania komunikat o błędzie, który wymaga zatwierdzenia lub akcji użytkownika.  
   
  ![Modalne komunikat](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901 01_ModalErrorMessage")  
   
  **Okno dialogowe wiadomości modalnej błąd alerty użytkownika nieprawidłowe parametry połączenia z bazą danych**  
   
-####  <a name="BKMK_IDEStatusBar"></a>Pasek stanu środowiska IDE  
+####  <a name="BKMK_IDEStatusBar"></a> Pasek stanu środowiska IDE  
  Prawdopodobieństwo, że użytkownicy zauważyć tekst na pasku stanu są powiązane z ich obsługi wszechstronne komputera i określonej doświadczenia z platformy Windows. Zwykle klientów programu Visual Studio wystąpić w obydwu tych obszarach chociaż nawet wiedzę użytkowników systemu Windows może pominąć zmian w pasku stanu. W związku z tym na pasku stanu najlepiej nadaje się do celów informacyjnych lub jako nadmiarowe wskazówki dla informacje przedstawione w innym miejscu. Dowolny rodzaj krytyczne informacje, że użytkownik musi zostać rozpoznany natychmiast należy podać w oknie dialogowym lub w oknie narzędzia powiadomienia.  
   
  Pasek stanu programu Visual Studio zaprojektowano w celu umożliwienia różne informacje mają być wyświetlane. Scenariusz jest podzielony na regiony dla opinii, Projektant pasek postępu, animacji i klienta.  
@@ -81,24 +77,24 @@ ms.lasthandoff: 02/01/2018
   
  **Kolory paska stanu środowiska IDE**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>Osadzony informacyjny  
+####  <a name="BKMK_EmbeddedInfobar"></a> Osadzony informacyjny  
  Można pasek informacyjny w górnej części okna dokumentu lub okna narzędzia informują użytkownika o stanu lub warunek. Można również zaoferować poleceń, dzięki czemu użytkownik może mieć sposób łatwo podjęcia odpowiednich działań. Pasek informacyjny jest standardowa powłoka kontrolą. Unikaj tworzenia własnych, co będzie działać i występować niespójne z innymi osobami w IDE. Zobacz [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) dla wskazówki dotyczące użycia i szczegóły implementacji.  
   
  ![Osadzone informacyjnym](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901 03_EmbeddedInfobar")  
   
  **Pasek informacyjny osadzony w oknie dokumentu, alerty użytkownika, który jest IDE w trybie debugowania historycznego i edytor nie będzie odpowiadać w taki sam sposób jak w trybie standardowym debugowania.**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>Zmiany kursora myszy  
+####  <a name="BKMK_MouseCursorChanges"></a> Zmiany kursora myszy  
  W przypadku zmiany kursora myszy, Użyj kolorów, które są powiązane z usługą VSColor i są już skojarzone z kursora. Kursor zmiany mogą służyć do wskazywania trwającą operacją, a także trafień stref, w którym użytkownik jest umieszczony nad docelowych, które mogą być przeciągnięte, upuszczone na lub używany do wybierania obiektu.  
   
  Tylko wtedy, gdy wszystkie dostępne czas procesora CPU musi być zarezerwowana dla operacji uniemożliwia wyrażanie żadnych dalszych danych wejściowych użytkownika za pomocą kursora myszy zajęty oczekiwania. W większości przypadków z dobrze napisanych aplikacji przy użyciu wielowątkowość powinna być rzadko razy, gdy użytkownicy nie będą mogli wykonywania innych operacji.  
   
  Należy pamiętać o tym, czy kursor zmiany są przydatne, nadmiarowe wskazówki informacje przedstawione w innym miejscu. Nie należy polegać na zmianę kursora jako jedyny sposób komunikowania się z użytkownikiem, szczególnie w przypadku próby przekazania coś, co jest ważne, czy użytkownik musi adresów.  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>Wskaźniki postępu  
+####  <a name="BKMK_NotSysProgressIndicators"></a> Wskaźniki postępu  
  Wskaźniki postępu są ważne w przypadku przekazywania opinii użytkowników podczas procesów, które przyjmują więcej niż kilka sekund. Wskaźniki postępu mogą być wyświetlane w miejscu (obok punkt uruchamiania działania w toku), na pasku stanu osadzone, modalnego okna dialogowego lub na pasku stanu programu Visual Studio. Postępuj zgodnie ze wskazówkami w [wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) dotyczące ich użycie i wdrożenie.  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Visual Studio powiadomienia okna  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio powiadomienia okna  
  Okno programu Visual Studio powiadomienia powiadamia deweloperów o licencjonowania, środowisko (Visual Studio), rozszerzenia i aktualizacje. Użytkownicy, można odrzucić indywidualne powiadomienia lub zignorować określonych typów powiadomień. Na liście ignorowanych powiadomień jest zarządzana w **Narzędzia > Opcje** strony.  
   
  Okno powiadomień nie jest obecnie rozszerzonego.  
@@ -107,33 +103,33 @@ ms.lasthandoff: 02/01/2018
   
  **Okno narzędzia usługi Visual Studio powiadomienia**  
   
-####  <a name="BKMK_ErrorList"></a>Lista błędów  
+####  <a name="BKMK_ErrorList"></a> Lista błędów  
  Powiadomienie w liście błędów wskazują błędów i ostrzeżeń, które wystąpiły podczas kompilacji i lub proces kompilacji i umożliwia użytkownikowi nawigację w kodzie do tego określonego kodu błędu.  
   
  ![Lista błędów](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901 08_ErrorList")  
   
  **Lista błędów w programie Visual Studio**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>Paski stanu osadzonych  
+####  <a name="BKMK_EmbeddedStatusBars"></a> Paski stanu osadzonych  
  Ponieważ pasek stanu IDE jest dynamiczny, jego kontekst regionu klienta ustawiono aktywne okno dokumentu i informacje o aktualizacji w kontekście użytkownika i/lub odpowiedzi systemu, trudno Obsługa ciągłego wyświetlania informacji o lub nadaj stanu dla długoterminowego asynchroniczne procesów. Na przykład na pasku stanu IDE nie jest odpowiedni dla powiadomień wyników uruchomienia testu dla wielu działa i/lub wybrane elementy można natychmiast wykonać elementu. Należy zachować takie informacje o stanie w kontekście okna dokumentu lub narzędzia gdzie użytkownika powoduje, że zaznaczenie lub rozpoczyna się proces.  
   
  ![Pasek stanu osadzonych](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901 09_EmbeddedStatusBar")  
   
  **Pasek stanu osadzonym w programie Visual Studio**  
   
-####  <a name="BKMK_WindowsTray"></a>Powiadomień na pasku zadań systemu Windows  
+####  <a name="BKMK_WindowsTray"></a> Powiadomień na pasku zadań systemu Windows  
  Zegar systemu Windows jest obok system w obszarze powiadomień na pasku zadań systemu Windows. Wielu narzędzi i składników oprogramowania Podaj ikony w tym obszarze, dzięki czemu użytkownik może uzyskać menu kontekstowe dla zadania systemowe, takie jak zmiana rozdzielczości ekranu lub uzyskiwania aktualizacji oprogramowania.  
   
  Powiadomień z poziomu środowiska powinny być udostępniane w Centrum powiadomień usługi Visual Studio nie obszaru powiadomień systemu Windows.  
   
-####  <a name="BKMK_NotificationBubbles"></a>Dymki powiadomień  
+####  <a name="BKMK_NotificationBubbles"></a> Dymki powiadomień  
  Dymki powiadomień może występować jako informacyjny w edytorze/projektanta lub jako część obszaru powiadomień systemu Windows. Użytkownik przewiduje te dymki jako problemy, które mogą rozwiązać później, czyli korzyści niekrytyczne powiadomień. Dymki nie mają zastosowania do kluczowych informacji, które użytkownik może rozwiązać od razu. Jeśli używasz dymki powiadomień w programie Visual Studio, wykonaj [Windows Desktop wskazówki dotyczące powiadomień dymki](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
  ![Powiadomienie w dymku](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901 07_NotificationBubbles")  
   
  **Bąbelków powiadomień w obszarze powiadomień systemu Windows używane dla programu Visual Studio**  
   
-##  <a name="BKMK_ProgressIndicators"></a>Wskaźniki postępu  
+##  <a name="BKMK_ProgressIndicators"></a> Wskaźniki postępu  
   
 ### <a name="overview"></a>Omówienie  
  Wskaźniki postępu są ważnym elementem systemu powiadomień nadanie opinie użytkowników. Informują one użytkownika, gdy ukończy procesy i działania. Typy wskaźników znanych obejmują paski postępu, kursory Obracająca i animowany ikon. Typ i położenia wskaźnika postępu zależy od kontekstu, w tym, co jest raportowane i jak długo procesu lub operacji spowoduje przejście do wykonania.  
@@ -287,7 +283,7 @@ ms.lasthandoff: 02/01/2018
   
  **Okna wyjściowego ze stanem ciągły proces, a następnie zaczekaj do obsługi komunikatów**  
   
-##  <a name="BKMK_Infobars"></a>Infobars  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Omówienie  
  Infobars Przypisz użytkownika wskaźnik blisko punktu ich uwagi i za pomocą kontroli udostępnionych pasek informacyjny zapewnia spójność wyglądu i interakcji.  
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>Błąd sprawdzania poprawności  
+##  <a name="BKMK_ErrorValidation"></a> Błąd sprawdzania poprawności  
  Gdy użytkownik wprowadza informacje, które nie jest akceptowane, np. gdy zostanie pominięty wymaganego pola lub danych została wprowadzona w nieprawidłowy format, lepszym rozwiązaniem jest użycie kontroli poprawności lub opinii w pobliżu formantu zamiast blokowania okna dialogowego błędu menu podręczne.  
   
 ### <a name="field-validation"></a>Sprawdzanie poprawności pola  
  Weryfikacja formularza i pola składa się z trzech składników: formantu, ikonę i etykietkę narzędzia. Gdy kilka typów formantów użyć tej funkcji, pola tekstowego będzie służyć jako przykład.  
   
- ![Sprawdzanie poprawności pola &#40; puste &#41; ] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
+ ![Pole weryfikacji &#40;puste&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
   
  Jeśli pole jest wymagane, powinien istnieć znaku wodnego tekst z informacją  **\<wymagany >** i tło pola powinna być jasny żółty (VSColor: `Environment.ControlEditRequiredBackground`) i pierwszego planu powinna być szary (VSColor: `Environment.ControlEditRequiredHintText`):  
   
@@ -515,13 +511,13 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Tekst ostrzeżenia w miejscu  
  W przypadku miejsca można umieścić komunikat o błędzie bliski formantu w stan błędu to zalecane jest stosowanie tylko tooltip.  
   
- ![W &#45; miejsce ostrzeżenie](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
+ ![W&#45;umieść ostrzeżenie](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
   
  **Tekst ostrzeżenia w miejscu**  
   
 #### <a name="watermarks"></a>Znaki wodne  
  Czasami całego kontrolki lub okna jest w stanie błędu. W takiej sytuacji należy użyć znaku wodnego wskazująca błąd.  
   
- ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Znak wodny](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
   
  **Sprawdzanie poprawności pola znaku wodnego**

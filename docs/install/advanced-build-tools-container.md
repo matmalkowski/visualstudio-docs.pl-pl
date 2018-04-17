@@ -2,11 +2,8 @@
 title: Zaawansowane przykład kontenerów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -14,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 469b8933d5bd7f60a611161e5a871e8cfa4536f7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: cb4978bd6c1251d6b93339802e2b9d551ed38e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-example-for-containers"></a>Przykład zaawansowane kontenerów
 

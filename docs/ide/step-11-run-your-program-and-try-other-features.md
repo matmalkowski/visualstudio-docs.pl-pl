@@ -1,30 +1,28 @@
 ---
-title: "Krok 11: Uruchom Program i próbowanie innych funkcji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 11: Uruchom Program i próbowanie innych funkcji | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
-caps.latest.revision: "12"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c53c542741cc64c0d60a94116acf7de4ff7f61ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b089ca2c295f8128dadc9f0650540e5fef5f239a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Uruchom Program i próbowanie innych funkcji
 Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła w elemencie PictureBox. Aby dowiedzieć się więcej, spróbuj zwiększyć program zmiana koloru formularza, dostosowywanie przycisków i pola wyboru i zmiana właściwości formularza.  
   
  Aby pobrać ukończoną wersję przykładu, zobacz [przykładowy samouczek pełny obraz podglądu](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 5 wideo](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie podglądu obrazów w C# — wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 5 wideo](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Aby uruchomić program i kolor tła  
   

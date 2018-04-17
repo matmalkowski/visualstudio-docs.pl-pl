@@ -1,12 +1,10 @@
 ---
-title: "Aliasy poleceń programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Aliasy poleceń programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - aliases, Visual Studio commands
 - Visual Studio, commands
@@ -16,23 +14,23 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 05699b5791bf8493ac8dd19c6f3dbd28ab5b2ce1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polecenia** okna skracając tekst potrzebne do wykonania polecenia. Na przykład zamiast wprowadzania `>File.OpenFile` do wyświetlenia **Otwórz plik** okno dialogowe, można użyć wstępnie zdefiniowanych alias `>of`.  
   
  Typ `alias` w **polecenia**okno, aby wyświetlić listę aliasów bieżący oraz ich definicje. Typ `>cls` aby wyczyścić zawartość **polecenia** okna. Jeśli chcesz zobaczyć aliasu dla określonego polecenia, wpisz `alias <command name>`.  
   
- Możesz łatwo utworzyć aliasu dla jednego z poleceń Visual Studio (z lub bez argumentów). Na przykład składnia aliasów `File.NewFile MyFile.txt` jest `alias MyAlias File.NewFile MyFile.txt`. Usunięciem aliasy z`alias <alias name> /delete`  
+ Możesz łatwo utworzyć aliasu dla jednego z poleceń Visual Studio (z lub bez argumentów). Na przykład składnia aliasów `File.NewFile MyFile.txt` jest `alias MyAlias File.NewFile MyFile.txt`. Usunięciem aliasy z `alias <alias name> /delete`  
   
  Poniższa tabela zawiera listę wstępnie zdefiniowane aliasy poleceń Visual Studio. Niektóre nazwy polecenia mają więcej niż jeden alias wstępnie zdefiniowane. Kliknij łącza poniżej, aby wyświetlić szczegółowych tematów poprawnej składni, argumentów i przełączników dla tych poleceń, nazw poleceń.  
   
@@ -69,7 +67,7 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |Zakończ|Zakończ|File.Exit|  
 |Wybieranie formatu|format|Edit.FormatSelection|  
 |Pełny ekran|Pełny ekran|View.FullScreen|  
-|[Uruchomienie, polecenie](../../ide/reference/start-command.md)|K|Debug.Start|  
+|[Uruchomienie, polecenie](../../ide/reference/start-command.md)|g|Debug.Start|  
 |[Przejdź do, polecenie](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|  
 |Przejdź do nawiasu klamrowego|GotoBrace|Edit.GotoBrace|  
 |F1Help|Pomoc|Help.F1Help|  
@@ -81,7 +79,7 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |Usuń wiersz|LineDel|Edit.LineDelete|  
 |Lista składników|Wyświetlanie członków|Edit.ListMembers|  
 |okno zmiennych lokalnych|Zmienne lokalne|Debug.Locals|  
-|[Zapisuj dane wyjściowe okna Polecenie, polecenie](../../ide/reference/log-command-window-output-command.md)|Dziennik|Tools.LogCommandWindowOutput|  
+|[Zapisuj dane wyjściowe okna Polecenie, polecenie](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|  
 |Tryb oznaczania okno polecenia|Oznacz|Tools.CommandWindowMarkMode|  
 |okno pamięci|Memory1 pamięci|Debug.Memory1|  
 |Okno pamięci 2|Memory2|Debug.Memory2|  
@@ -95,7 +93,7 @@ Aliasy umożliwiają wprowadzanie polecenia do **Find/Command** pole lub **polec
 |[Otwórz plik, polecenie](../../ide/reference/open-file-command.md)|jest on otwarty|File.OpenFile|  
 |[Otwórz projekt, polecenie](../../ide/reference/open-project-command.md)|OP|File.OpenProject|  
 |Zwiń do definicji/Stop zwijania|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|  
-|Przekrocz|P|Debug.StepOver|  
+|Przekrocz|p|Debug.StepOver|  
 |Informacje o parametrach|ParamInfo|Edit.ParameterInfo|  
 |Wyjdź|Oczyść|Debug.StepOut|  
 |Poprzednia zakładka|PrevBook|Edit.PreviousBookmark|  

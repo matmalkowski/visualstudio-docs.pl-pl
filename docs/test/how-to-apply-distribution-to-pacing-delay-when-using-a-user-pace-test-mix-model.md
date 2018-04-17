@@ -1,19 +1,19 @@
 ---
-title: "Zastosuj rozkład do opóźnienia kroku obciążenia testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Zastosuj rozkład do opóźnienia kroku obciążenia testowania w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 047a8fd8dea60ca86c39922f8cd0aed6e65ec6d3
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5140a3ca9cb8274a9b6d9f74260adadfed6201ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model"></a>Porady: stosowanie opóźnienia między rozpowszechnianiem a tempem podczas stosowania mieszanki testów z uwzględnieniem tempa użytkownika
 
@@ -53,6 +53,6 @@ Wartość **Zastosuj rozkład opóźnienia tempo** można ustawić na wartość 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Wskazówki: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md)
-- [Kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md)
+- [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
+- [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

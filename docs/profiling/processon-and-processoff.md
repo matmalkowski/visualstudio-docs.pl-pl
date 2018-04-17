@@ -1,23 +1,21 @@
 ---
 title: ProcessOn i ProcessOff | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8a94b52ba8d2fc0ce4208014e40ab3821ecb1e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 743893d61de8589f15d8a1380f8a49af21308b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="processon-and-processoff"></a>ProcessOn i ProcessOff
 VSPerfCmd.exe **ProcessOff** i **ProcessOn** podpoleceń wstrzymywanie i wznawianie, profilowanie dla określonego procesu w sesji profilowania z wiersza polecenia. **ProcessOff** zatrzymuje profilowanie proces i **ProcessOn** uruchamia profilowanie procesu.  
@@ -51,19 +49,19 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="valid-subcommands"></a>Nieprawidłowa podpoleceń polecenia.  
  **ProcessOn** i **ProcessOff** można określić wiersze poleceń, zawierające następujących podpoleceń polecenia.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Inicjuje sesję profilowania wiersza polecenia i ustawia określonej metody profilowania.  
   
- **Uruchom:**`AppName`  
+ **Uruchom:** `AppName`  
  Uruchamia określony aplikację i rozpocznie się profilowania za pomocą metody pobierania próbek.  
   
- **Dołącz:**`PID`  
+ **Dołącz:** `PID`  
  Rozpoczyna się profilowania określony proces.  
   
- **GlobalOff**&#124; **GlobalOn**  
+ **GlobalOff**&#124;**GlobalOn**  
  Zatrzymuje i uruchamia profilowanie dla wszystkich procesów w sesji profilowania z wiersza polecenia.  
   
- {**ThreadOff**&#124; **ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
  Zatrzymuje i uruchamia profilowanie dla określonego wątku (tylko w przypadku metody Instrumentacji).  
   
 ## <a name="example"></a>Przykład  

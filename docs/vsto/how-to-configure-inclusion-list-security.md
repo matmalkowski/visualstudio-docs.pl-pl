@@ -1,12 +1,10 @@
 ---
-title: "Porady: Konfigurowanie zabezpieczeń listy dołączania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Konfigurowanie zabezpieczeń listy dołączania | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b95b85f028ac003cedb05248b6884c24ca32008
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Porady: konfigurowanie zabezpieczeń listy dołączania
   Jeśli użytkownik ma uprawnienia administratora, możesz skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufany monit kontroli czy użytkownicy końcowi otrzymują możliwość instalowania rozwiązań pakietu Office przez zapisanie decyzji dotyczącej zaufania lista dołączania. Aby uzyskać informacje o listach dołączania, zobacz [ufające rozwiązań pakietu Office przy użyciu listy dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -58,10 +57,10 @@ ms.lasthandoff: 01/10/2018
     |Podklucz wartość ciągu|Wartość|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**Wyłączone**|  
-    |**Mój komputer**|**Włączone**|  
-    |**LocalIntranet**|**Włączone**|  
-    |**TrustedSites:**|**Włączone**|  
+    |**UntrustedSites**|**wyłączone**|  
+    |**Mój komputer**|**włączone**|  
+    |**LocalIntranet**|**włączone**|  
+    |**TrustedSites:**|**włączone**|  
   
      Domyślnie **Internet** ma wartość **AuthenticodeRequired** i **UntrustedSites** ma wartość **wyłączone**.  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
     |Podklucz wartość ciągu|Wartość|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Wyłączone**|  
+    |**UntrustedSites**|**wyłączone**|  
     |**Internet**|**AuthenticodeRequired**|  
     |**Mój komputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
@@ -173,11 +172,11 @@ ms.lasthandoff: 01/10/2018
   
     |Podklucz wartość ciągu|Wartość|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Wyłączone**|  
-    |**Internet**|**Wyłączone**|  
-    |**Mój komputer**|**Wyłączone**|  
-    |**LocalIntranet**|**Wyłączone**|  
-    |**TrustedSites:**|**Wyłączone**|  
+    |**UntrustedSites**|**wyłączone**|  
+    |**Internet**|**wyłączone**|  
+    |**Mój komputer**|**wyłączone**|  
+    |**LocalIntranet**|**wyłączone**|  
+    |**TrustedSites:**|**wyłączone**|  
   
 #### <a name="to-disable-the-inclusion-list-programmatically"></a>Aby wyłączyć programowo listy dołączania  
   

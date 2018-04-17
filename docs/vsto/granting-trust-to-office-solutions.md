@@ -1,12 +1,10 @@
 ---
-title: "Udzielanie zaufania do rozwiązań pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Udzielanie zaufania do rozwiązań pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 41ecf50a7306025913f228500036d133918dd31b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d3e89f9d864e80c3f3343b0d352105365e95e82
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="granting-trust-to-office-solutions"></a>Udzielanie zaufania do rozwiązań pakietu Office
   Udzielanie zaufania do rozwiązań pakietu Office oznacza modyfikowanie zasad zabezpieczeń każdego komputera docelowego zaufania zestawu rozwiązania, manifest aplikacji i manifest wdrażania oraz dokumentu. Zaufania może zostać przydzielony do rozwiązania pakietu Office przez użytkownika lub użytkownika końcowego.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="Signing"></a>Manifesty ufające rozwiązania przez podpisywanie aplikacji i wdrażania  
+##  <a name="Signing"></a> Manifesty ufające rozwiązania przez podpisywanie aplikacji i wdrażania  
  Wszystkich aplikacji i wdrażania manifesty dla pakietu Office rozwiązań muszą być podpisane przy użyciu certyfikatu, który identyfikuje wydawcy. Certyfikaty stanowią podstawę dla podejmowania decyzji dotyczących zaufania.  
   
  Tymczasowy certyfikat jest tworzony i przyznane zaufania w czasie kompilacji, więc rozwiązanie zostanie uruchomiona podczas debugowania jego. W przypadku publikowania rozwiązania, które jest podpisany przy użyciu certyfikatu tymczasowe, użytkownik końcowy wyświetli monit o podjęcie decyzji zaufania.  
@@ -43,8 +42,8 @@ ms.lasthandoff: 01/10/2018
   
  Jeśli projektant podpisuje rozwiązania przy użyciu tymczasowego certyfikatu, administrator może ponownie podpisać dostosowania przy użyciu znanego i zaufanego certyfikatu przy użyciu Generowanie manifestu i narzędzia do edycji (mage.exe), które jest jednym z narzędzi programu Microsoft .NET Framework. Aby uzyskać więcej informacji na temat podpisywania rozwiązania, zobacz [porady: rozwiązań pakietu Office znak](../vsto/how-to-sign-office-solutions.md) i [jak: logowania aplikacji i manifestów wdrożenia](/visualstudio/ide/how-to-sign-application-and-deployment-manifests).  
   
-##  <a name="TrustPrompt"></a>Ufające rozwiązania przy użyciu wiersza zaufania ClickOnce  
- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]monituje użytkownika końcowego dokonanie wyboru zaufania, jeśli nie zasady całej organizacji, które ufają certyfikatu tego rozwiązania. Jeżeli użytkownik końcowy przyznaje zaufania do rozwiązania, tworzony jest wpisu listy dołączania, który zawiera adres URL i klucza publicznego do przechowywania tej decyzji dotyczącej zaufania. Podczas dostosowywania zaufanych jest uruchamiana później, użytkownik końcowy nie jest monitowany ponownie.  
+##  <a name="TrustPrompt"></a> Ufające rozwiązania przy użyciu wiersza zaufania ClickOnce  
+ [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] monituje użytkownika końcowego dokonanie wyboru zaufania, jeśli nie zasady całej organizacji, które ufają certyfikatu tego rozwiązania. Jeżeli użytkownik końcowy przyznaje zaufania do rozwiązania, tworzony jest wpisu listy dołączania, który zawiera adres URL i klucza publicznego do przechowywania tej decyzji dotyczącej zaufania. Podczas dostosowywania zaufanych jest uruchamiana później, użytkownik końcowy nie jest monitowany ponownie.  
   
  Administratorzy mogą wyłączyć [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufany monit ani nie wymaga się, że monit wystąpić tylko w przypadku rozwiązania, które są podpisane za pomocą certyfikatu Authenticode. Aby uzyskać więcej informacji na temat zmiany tych ustawień dla stref Mój komputer, LocalIntranet Internet, TrustedSites: i UntrustedSites, zobacz [porady: Konfigurowanie zachowania monitu o zaufanie ClickOnce](/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior).  
   

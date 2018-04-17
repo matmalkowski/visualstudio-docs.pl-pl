@@ -1,12 +1,10 @@
 ---
 title: Typowe zadania w programowaniu pakietu Office | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Niestandardowe zadania w programowaniu pakietu Office
   W tym temacie zaprojektowano w celu ułatwienia odpowiedzi na następujące kategorie często zadawane pytania dotyczące programowania rozwiązań pakietu Office przy użyciu programu Visual Studio.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Zadania wdrażania](#deployment).  
   
-##  <a name="projects"></a>Ogólne zadania i ustawienia  
+##  <a name="projects"></a> Ogólne zadania i ustawienia  
   
 -   [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Porady: Pokaż błędy interfejsu użytkownika dodatku](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
-##  <a name="ui"></a>Zadań dostosowania interfejsu użytkownika  
+##  <a name="ui"></a> Zadań dostosowania interfejsu użytkownika  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Formanty w dokumentach i arkuszy  
   
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Porady: Dodawanie poleceń do menu skrótów](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
-##  <a name="excel"></a>Zadań automatyzacji programu Excel  
+##  <a name="excel"></a> Zadań automatyzacji programu Excel  
   
 -   [Porady: programowane wyświetlanie ciągu w komórce arkusza](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
@@ -143,7 +142,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Porady: programowane sortowanie danych w arkuszach](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
-##  <a name="word"></a>Zadań automatyzacji programu Word  
+##  <a name="word"></a> Zadań automatyzacji programu Word  
   
 -   [Porady: programowane tworzenie nowych dokumentów](../vsto/how-to-programmatically-create-new-documents.md).  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Porady: programowane zliczanie znaków w dokumentach](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
-##  <a name="data"></a>Zadania danych  
+##  <a name="data"></a> Zadania danych  
   
 ### <a name="data-bound-controls"></a>Formanty powiązane z danymi  
   
@@ -207,17 +206,17 @@ ms.lasthandoff: 01/10/2018
   
 -   [Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
-##  <a name="server"></a>Zadania dotyczące dokumentów po stronie serwera zarządzania  
+##  <a name="server"></a> Zadania dotyczące dokumentów po stronie serwera zarządzania  
   
 -   [Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
 -   [Porady: dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
-##  <a name="security"></a>Zadań związanych z zabezpieczeniami  
+##  <a name="security"></a> Zadań związanych z zabezpieczeniami  
   
 -   [Porady: podpisywanie rozwiązań pakietu Office](../vsto/how-to-sign-office-solutions.md).  
   
-##  <a name="deployment"></a>Zadania wdrażania  
+##  <a name="deployment"></a> Zadania wdrażania  
   
 -   [Porady: publikowanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
@@ -234,7 +233,7 @@ ms.lasthandoff: 01/10/2018
 -   [Porady: Zmienianie ścieżki instalacji rozwiązania do pakietu Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Funkcje dostępne w aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
   

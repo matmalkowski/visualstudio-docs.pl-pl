@@ -1,27 +1,25 @@
 ---
-title: "DA0022: Wysoki stopień odzyskiwania pamięci Gen 2 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0022: Wysoki stopień odzyskiwania pamięci Gen 2 | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0022
 - vs.performance.rules.DA0022
 - vs.performance.22
 ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7110f5f145607d89af71f05c94cf154264b232f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0ec4c7448293cd6bf269a7824db57b1d804d4971
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Wysoki stopień odzyskiwania pamięci Gen 2
 |||  

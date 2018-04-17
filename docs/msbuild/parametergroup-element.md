@@ -1,12 +1,9 @@
 ---
-title: "Parametergroup — Element | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Parametergroup — Element | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - <ParameterGroup> element [MSBuild]
 - ParameterGroup element [MSBuild]
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba8ea083a5479a71d39eefbc5de7a93696d06d8f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ea94e55a7f1449c1a8c6df9887f6fbe089209252
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parametergroup-element"></a>Parametergroup — Element
 Zawiera opcjonalną listę parametrów, które będą znajdować się na zadania, które są generowane przez `UsingTask``TaskFactory`. Aby uzyskać więcej informacji, zobacz [usingtask — Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -51,7 +47,7 @@ Zawiera opcjonalną listę parametrów, które będą znajdować się na zadania
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Parameter](../msbuild/parameter-element.md)|Zawiera informacje na temat określonego parametru dla zadania, które są generowane przez `UsingTask``TaskFactory`. Nazwa elementu jest nazwą parametru.|  
+|[Parametr](../msbuild/parameter-element.md)|Zawiera informacje na temat określonego parametru dla zadania, które są generowane przez `UsingTask``TaskFactory`. Nazwa elementu jest nazwą parametru.|  
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 

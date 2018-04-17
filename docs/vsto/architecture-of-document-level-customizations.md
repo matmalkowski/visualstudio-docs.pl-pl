@@ -1,13 +1,10 @@
 ---
-title: "Architektura dostosowań na poziome dokumentu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Architektura dostosowań na poziome dokumentu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,17 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowywania na poziomie dokumentu
-  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]zawiera projekty do tworzenia dostosowań na poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań na poziome dokumentu:  
+  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera projekty do tworzenia dostosowań na poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań na poziome dokumentu:  
   
 -   [Opis dostosowania](#UnderstandingCustomizations)  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Aby uzyskać ogólne informacje o tworzeniu dostosowań na poziome dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md), [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), i [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+ Aby uzyskać ogólne informacje o tworzeniu dostosowań na poziome dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [pobierania pracy programowania dostosowań na poziome dokumentu dla programu Word ](../vsto/getting-started-programming-document-level-customizations-for-word.md), i [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
-##  <a name="UnderstandingCustomizations"></a>Opis dostosowania  
+##  <a name="UnderstandingCustomizations"></a> Opis dostosowania  
  Korzystając z narzędzia Office developer tools w programie Visual Studio do dostosowania na poziomie dokumentu kompilacji, możesz utworzyć zestawu zarządzanego kodu, który jest skojarzony z określonego dokumentu. Dokument lub skoroszyt z połączonego zestawu jest nazywany udało rozszerzenia kodu. Aby uzyskać więcej informacji, zobacz [projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md).  
   
  Po otwarciu dokumentu zestaw jest ładowany przez aplikację Microsoft Office. Po zestaw jest ładowany, dostosowań można odpowiadanie na zdarzenia, gdy dokument jest otwarty. Dostosowanie także wywołać object model do automatyzacji i rozszerzenie aplikacji, podczas gdy dokument jest otwarty i może używać dowolnej klasy w [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- Zestaw komunikuje się z aplikacji składników COM za pomocą podstawowego zestawu międzyoperacyjnego aplikacji. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md) i [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Zestaw komunikuje się z aplikacji składników COM za pomocą podstawowego zestawu międzyoperacyjnego aplikacji. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md) i [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Jeśli użytkownik otwiera wiele dostosowań na poziome dokumentu w tym samym czasie, każdy zestaw jest ładowany w domenie innej aplikacji. Oznacza to, że jedno rozwiązanie, która działa nieprawidłowo nie może spowodować niepowodzenie innych rozwiązaniach. Dostosowywanie na poziomie dokumentu zostały zaprojektowane do pracy z pojedynczego dokumentu w domenie pojedynczej aplikacji. Nie są one przeznaczone do komunikacji między dokumentu. Aby uzyskać więcej informacji o domenach aplikacji, zobacz [domen aplikacji](/dotnet/framework/app-domains/application-domains).  
   
@@ -102,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby użytkownicy końcowi użyj opcji dostosowania w tych formatach plików, tworzenie i wdrażanie dostosowania, które korzysta z jednego z obsługiwanych formatów plików określone w powyższej tabeli. Po zainstalowaniu dostosowań, użytkownicy końcowi mogą Zapisz dokument w dokumencie XML programu Word (* xml) format lub dokument programu Word 2003 XML (\*xml) format i dostosowanie będą nadal działać zgodnie z oczekiwaniami.  
   
-##  <a name="Components"></a>Składniki dostosowania  
+##  <a name="Components"></a> Składniki dostosowania  
  Głównymi składnikami dostosowanie są dokumentu i zestawu. Oprócz tych składników istnieje kilka części, które odgrywa ważną rolę w sposób aplikacji Microsoft Office odnaleźć i załadować dostosowania.  
   
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifest rozmieszczenia i Manifest aplikacji  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowCustomizationsWork"></a>Jak działają dostosowania z aplikacjami pakietu Microsoft Office  
+##  <a name="HowCustomizationsWork"></a> Jak działają dostosowania z aplikacjami pakietu Microsoft Office  
  Po otwarciu dokumentu, który jest częścią Dostosowywanie programu Microsoft Office, aplikacja używa manifest wdrażania połączonego z dokumentu do lokalizowania i ładowania najnowszej wersji zestawu dostosowania. Lokalizacja manifestu rozmieszczenia jest przechowywany w właściwości niestandardowego dokumentu o nazwie _AssemblyLocation. Ciąg, który identyfikuje tej lokalizacji są wstawiane do właściwości podczas kompilowania rozwiązania.  
   
  Punkty manifestu wdrożenia do manifestu aplikacji, następnie wskazujący najbardziej bieżącego zestawu. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia w rozwiązaniach pakietu Office i aplikacji](../vsto/application-and-deployment-manifests-in-office-solutions.md).  

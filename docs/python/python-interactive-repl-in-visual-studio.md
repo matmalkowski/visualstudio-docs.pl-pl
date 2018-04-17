@@ -1,27 +1,24 @@
 ---
-title: Okno interaktywne języka Python (REPL) | Dokumentacja firmy Microsoft
+title: Okno interaktywne języka Python (REPL)
 description: Jak używać okno interaktywne (REPL) dla języka Python kodu w programie Visual Studio dla rozwoju szybkie kodu.
 ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3492bdc10b94a58804ab31c71d2bdc7a66a77509
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: ad13db08bb9af31fcbe3f0f9d7faef4743ccb688
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Praca z okno interaktywne Python
 

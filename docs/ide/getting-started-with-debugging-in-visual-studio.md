@@ -1,25 +1,21 @@
 ---
 title: Wprowadzenie do debugowania w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Wprowadzenie do debugowania w programie Visual Studio
 Program Visual Studio udostępnia zaawansowany zestaw zintegrowanych kompilacji projektu oraz narzędzia debugowania. W tym temacie Dowiedz się, jak rozpocząć korzystanie z najprostszych zbiór debugowanie funkcji interfejsu użytkownika.  
@@ -49,7 +45,7 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 
  ![Dane wyjściowe programu Visual Studio i listy błędów](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- Kliknij przycisk błąd w wierszu **listy błędów** okno i skok do wiersza, ten błąd występuje w. (Lub Włącz numery wierszy, klikając w **Szybkie uruchamianie** paska w prawym górnym, wpisując "numerów linii" do niego i naciskając klawisz Enter. Jest to najszybszy sposób na uzyskanie dostępu do **opcje** wpis okna, gdzie można włączyć numerów wierszy. Dowiedz się, jak używać **Szybkie uruchamianie** pasek i zaoszczędzić dużo kliknięć interfejsu użytkownika!)  
+ Kliknij przycisk błąd w wierszu **listy błędów** okno i skok do wiersza, ten błąd występuje w. (Lub Włącz numery wierszy, klikając w **Szybkie uruchamianie** paska w prawym górnym, wpisując "numerów linii" go, a naciśnięcie przycisku **Enter**. Jest to najszybszy sposób na uzyskanie dostępu do **opcje** wpis okna, gdzie można włączyć numerów wierszy. Dowiedz się, jak używać **Szybkie uruchamianie** pasek i zaoszczędzić dużo kliknięć interfejsu użytkownika!)  
 
  ![Visual Studio edytor z numery wierszy](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -77,7 +73,7 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 ### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Użyj żarówki do naprawienia lub zrefaktoryzuj kod  
  Żarówki to nowa funkcja programu Visual Studio, które umożliwiają Refaktoryzuj wbudowanego kodu. Są one łatwe rozwiązać typowe ostrzeżenia szybkie i skuteczne. Dostęp do nich, kliknij prawym przyciskiem myszy wężyk ostrzeżenie (lub naciśnij klawisz **Ctrl +**. Podczas kursora myszy nad wężyk), a następnie wybierz **szybkie akcje**.  
 
- ![Opcje języka Visual Studio żarówki szybkie](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Visual Studio żarówki szybkich](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  Zostanie wyświetlona lista możliwych poprawki lub refactors, które można zastosować do wiersza kodu.  
 
@@ -85,9 +81,9 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 
  Żarówki można tam, gdzie analizatorów kodu określić istnieje możliwość napraw zrefaktoryzuj, lub zwiększyć kodu. Kliknij w każdym wierszu kodu, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe i wybierz **szybkie akcje** (lub ponownie, jeśli wolisz wydajności, naciśnij klawisz **Ctrl +**.). Jeśli są dostępne opcje refaktoryzacji lub ulepszenia, będą one wyświetlane; w przeciwnym razie komunikat `No quick options available here` będą wyświetlane w ramką lewym dolnym rogu IDE.  
 
- ![Visual Studio żarówki żadna opcja tekst](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Visual Studio żarówka się tekst nie opcji](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
- Z obsługą, można szybko użyj klawiszy strzałek i **Ctrl +**. Sprawdź, czy opcja szybkiego refaktoryzacji możliwości i czyszczenie kodu!  
+ Z obsługą, można szybko użyj klawiszy strzałek i **Ctrl +**. Aby sprawdzić szybkich refaktoryzacji możliwości i czyszczenie kodu!  
 
  Aby uzyskać więcej informacji dotyczących żarówki, przeczytaj [szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md).  
 
@@ -117,29 +113,29 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 
 4.  Podczas pisania kodu języka C lub C++ Użyj punktów przerwania, aby zatrzymać kod, więc można zbadać wartości adresów (poszukaj NULL) oraz liczby odwołań podczas debugowania dla błędów związanych z pamięcią.  
 
- Aby uzyskać więcej informacji na temat używania punktów przerwania, przeczytaj [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
+ Aby uzyskać więcej informacji na temat używania punktów przerwania, przeczytaj [używanie punktów przerwania](../debugger/using-breakpoints.md).  
 
 ### <a name="inspect-your-code-at-run-time"></a>Sprawdź kod w czasie wykonywania  
  Po kodzie uruchomionych trafienia punktu przerwania i wstrzymuje działanie, wiersz kodu oznaczone kolorem żółtym (bieżącej instrukcji) nie ma jeszcze wykonane. W tym momencie można wykonać bieżącej instrukcji, a następnie sprawdź zmienionymi wartościami. Można użyć kilku *krok* poleceń do wykonania kodu w debugerze. Kod oznaczone w przypadku wywołania metody, można krok do niego, naciskając **F11**. Możesz również *Przekrocz nad* wiersz kodu, naciskając klawisz **F10**. Aby uzyskać dodatkowe polecenia i szczegółowe informacje na temat krokowo kodu, przeczytaj [Przejdź kodu za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Visual Studio run&#45;time value inspection](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
+ ![Visual Studio Uruchom&#45;czasu kontroli wartość](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  Na powyższej ilustracji, można odtwarzać instrukcja debugera jeden naciskając albo **F10** lub **F11** (ponieważ nie Brak wywołania metody, zarówno polecenia mają ten sam rezultat).
 
  Gdy debuger jest wstrzymana, można sprawdzić zmiennych i stosy, aby określić, co się dzieje wywołań. Czy wartości w zakresach, które chcesz wyświetlić? Są wykonywane w odpowiedniej kolejności wywołań?  
 
- ![Visual Studio run&#45;time value inspection](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
+ ![Visual Studio Uruchom&#45;czasu kontroli wartość](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
  Umieść kursor nad zmienną do wartości i odwołania, które aktualnie znajdują się w temacie. Jeśli widzisz wartość, która Nieoczekiwane wyrażenie prawdopodobnie usterki w poprzednim lub wywoływania wierszach kodu.  Aby uzyskać bardziej szczegółowe informacje [więcej](../debugger/getting-started-with-the-debugger.md) o korzystanie z debugera.
 
- Ponadto program Visual Studio Wyświetla okno narzędzia diagnostyczne, w którym można obserwować aplikacji Procesora i wykorzystania pamięci w czasie. Później podczas programowania aplikacji można użyć tych narzędzi do wyszukania nieprzewidziane duże obciążenie lub pamięci alokacji Procesora. Używany w połączeniu z **czujki** okno i punktów przerwania, aby określić przyczynę nieoczekiwany duże obciążenie lub Publikuj zasobów.  Aby uzyskać więcej informacji, zobacz [profilowania samouczek funkcji](../profiling/profiling-feature-tour.md).
+ Ponadto Wyświetla Visual Studio **narzędzia diagnostyczne** okna, w którym można obserwować użycia Procesora i pamięci aplikacji w czasie. Później podczas programowania aplikacji można użyć tych narzędzi do wyszukania nieprzewidziane duże obciążenie lub pamięci alokacji Procesora. Używany w połączeniu z **czujki** okno i punktów przerwania, aby określić przyczynę nieoczekiwany duże obciążenie lub Publikuj zasobów.  Aby uzyskać więcej informacji, zobacz [profilowania samouczek funkcji](../profiling/profiling-feature-tour.md).
 
 ### <a name="run-unit-tests"></a>Uruchom testy jednostkowe  
  Testy jednostkowe są pierwszą linię obrony przed usterki kodu, ponieważ, jeśli zostaną prawidłowo wykonane, sprawdzają one jeden kod, zwykle jednej funkcji "jednostki" i są zwykle znacznie łatwiejsze do debugowania niż debugowanie programu pełna. Visual Studio instaluje struktur testowania jednostki firmy Microsoft dla kodu zarządzane i natywne. Do tworzenia testów jednostkowych, uruchom je i raportuje o wynikach tych testów, należy użyć framework testowania jednostki. Testów jednostkowych Uruchom ponownie podczas wprowadzania zmian, aby przetestować czy kodzie nadal działa poprawnie. Korzystając z programu Visual Studio Enterprise edition, można uruchomić testy automatycznie po każdej kompilacji.  
 
  Aby rozpocząć, przeczytaj [Generowanie testów jednostek dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).  
 
- Aby dowiedzieć się więcej na temat testów jednostkowych w Visual Studio i sposób ich mogą pomóc tworzyć lepsze jakości kodu, przeczytaj [teście jednostkowym](../test/unit-test-basics.md).  
+ Aby dowiedzieć się więcej na temat testów jednostkowych w Visual Studio i sposób ich mogą pomóc tworzyć lepsze jakości kodu, przeczytaj [testu jednostkowego podstawy](../test/unit-test-basics.md).  
 
 ### <a name="perform-static-code-analysis"></a>Wykonaj statycznej analizy kodu  
  "Statycznej analizy kodu" jest dobrego sposobu informujący o tym "automatyczne sprawdzenie dostępności mój kod dla typowych problemów, które mogą prowadzić do błędów czasu wykonywania lub problemów w przystawce Zarządzanie kodu". Pobierz w celu przejrzenia po zostały wyczyszczone oczywiste błędy kompilacji uniemożliwia uruchomiony i zająć trochę czasu w celu rozwiązania ostrzeżeń, które może ona powodować. Będzie zaoszczędzić niektórych problemów występujących, a także dowiedzieć się kilka technik styl kodu.  
@@ -156,6 +152,6 @@ Najprostszym sposobem, aby skompilować projekt jest naciśnij **F7**, ale możn
 
  ![Visual Studio kod analizy ostrzeżenia hover](../ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
-## <a name="see-also"></a>Zobacz też  
- [Przegląd funkcji debugera](../debugger/debugger-feature-tour.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)  
  [Dowiedz się więcej o korzystaniu z debugera](../debugger/getting-started-with-the-debugger.md)

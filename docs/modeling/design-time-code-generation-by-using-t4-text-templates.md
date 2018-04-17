@@ -1,10 +1,8 @@
 ---
-title: "Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych plików w sieci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Zazwyczaj pisania szablonów, aby różnią kodu, które generują one zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje na temat wymagań aplikacji.  
@@ -124,7 +122,7 @@ Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych
   
  Należy zauważyć, że instrukcje są ujęte w `<#...#>`i jednego wyrażenia w `<#=...#>`. Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).  
   
- Jeśli piszesz generowania kodu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` dyrektywa musi zawierać `language="VB"`. `"C#"`jest ustawieniem domyślnym.  
+ Jeśli piszesz generowania kodu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` dyrektywa musi zawierać `language="VB"`. `"C#"` jest ustawieniem domyślnym.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debugowanie szablonu tekstowego T4 czasu projektowania  
  Debugowanie szablonu tekstowego:  
@@ -140,7 +138,7 @@ Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych
  Szablon zostaną uruchomione i zatrzymane o punktów przerwania. Możesz sprawdzić zmienne i wykonywać krokowo kodu w zwykły sposób.  
   
 > [!TIP]
->  `debug="true"`sprawia, że wygenerowany kod mapowania dokładniej szablonu tekstowego, wstawiając numerowanie dyrektywy w wygenerowanym kodzie więcej wierszy. Pozostawienie go punktów przerwania może spowodować zatrzymanie uruchomienia w nieodpowiednim stanie.  
+>  `debug="true"` sprawia, że wygenerowany kod mapowania dokładniej szablonu tekstowego, wstawiając numerowanie dyrektywy w wygenerowanym kodzie więcej wierszy. Pozostawienie go punktów przerwania może spowodować zatrzymanie uruchomienia w nieodpowiednim stanie.  
 >   
 >  Ale nawet wtedy, gdy nie debugowania, można pozostawić klauzuli w dyrektywie template. Powoduje to niewielkie spadek wydajności.  
   
@@ -275,7 +273,7 @@ Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu i innych
   
  Typ `this.Host` (w języku VB, `Me.Host`) jest `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
   
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Pobieranie danych z[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Pobieranie danych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Aby korzystać z usług w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ustaw `hostSpecific` atrybutu i obciążenia `EnvDTE` zestawu. Można następnie użyć IServiceProvider.GetCOMService() dostęp do innych usług i DTE. Na przykład:  
   
 ```scr  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Szablonu tekstowego działa w domenie aplikacji i usług są używane przez przekazywanie. W takim przypadku GetCOMService() jest bardziej niezawodna niż GetService().  
   
-##  <a name="Regenerating"></a>Automatyczne ponowne generowanie kodu  
+##  <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu  
  Zazwyczaj kilka plików w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania są generowane z jednego modelu wejściowego. Każdy plik jest generowany na podstawie własnych szablonu, ale szablonów, które wszystkie odnoszą się do tego samego modelu.  
   
  W przypadku zmiany modelu źródłowego, należy ponownie uruchom wszystkie szablony w rozwiązaniu. W tym celu należy ręcznie wybrać **Przekształć wszystkie szablony** na **kompilacji** menu.  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>Konwertowanie istniejącego pliku do szablonu  
+##  <a name="Converting"></a> Konwertowanie istniejącego pliku do szablonu  
  Przydatna funkcja szablonów jest, że wyglądają bardzo podobnie pliki, które generują one wraz z kodu wstawionego program. Sugeruje to przydatne metody tworzenia szablonu. Najpierw utwórz zwykły plik jako prototyp, takich jak [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plików i stopniowego wprowadzenia generowania kodu, który różni się plik wynikowy.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Aby przekonwertować istniejącego pliku szablonu czasu projektowania  

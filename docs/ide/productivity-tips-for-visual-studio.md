@@ -1,22 +1,19 @@
 ---
-title: "Wskazówki dotyczące produktywności dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wskazówki dotyczące produktywności dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności dla programu Visual Studio
 
@@ -28,7 +25,7 @@ Uzyskać informacji o typowych skróty klawiaturowe, zobacz [klawiatury porady](
 
 Szybsze pisanie kodu przy użyciu następujących funkcji.
 
-- **Użyj poleceń wygody**. Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład w **programu Visual Studio 2017 wersji 15,6** i później, możesz wybrać polecenie łatwo zduplikowany wiersz kodu bez konieczności skopiuj go, zmienić położenie kursora, a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij klawisz **Ctrl**+**E**,**V**. Użytkownik może szybko rozwiń lub Zwiń zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **rozwiń wybór** lub **Edytować** > **zaawansowane** > **wybór umowy**, lub naciskając klawisz **Shift** + **Alt** +  **=**  lub **Shift**+**Alt** +  **-**  (dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowsze).
+- **Użyj poleceń wygody**. Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład w **programu Visual Studio 2017 wersji 15,6** i później, możesz wybrać polecenie łatwo zduplikowany wiersz kodu bez konieczności skopiuj go, zmienić położenie kursora, a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij klawisz **Ctrl**+**E**,**V**. Użytkownik może szybko rozwiń lub Zwiń zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **rozwiń wybór** lub **Edytować** > **zaawansowane** > **wybór umowy**, lub naciskając klawisz **Shift** + **Alt** + **=** lub **Shift**+**Alt** + **-** (dostępne w **programu Visual Studio 2017 wersji 15,5 cala** i nowsze).
 
 - **Używanie IntelliSense**. Po wprowadzeniu kodu w edytorze, zostanie wyświetlone informacje funkcji IntelliSense, takie jak listy elementów członkowskich, informacje o parametrach szybka podpowiedź, pomoc podpisu i całe słowo. Obsługuje te funkcje dopasowywania rozmytego tekstu; na przykład listy wyników dla członków listy zawiera nie tylko wpisy rozpoczynających się od znaków czy zostały wprowadzone, ale także wpisów, zawierające kombinację znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
 

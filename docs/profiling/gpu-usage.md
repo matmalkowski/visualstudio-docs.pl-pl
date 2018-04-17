@@ -1,23 +1,20 @@
 ---
-title: "Użycie procesora GPU | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Użycie procesora GPU | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: a7c9ca5624ecdafb4079bb58d69ff72727104c1e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 Użyj narzędzia użycie procesora GPU w Centrum diagnostyki i wydajności usługi Visual Studio, aby lepiej zrozumieć wykorzystanie sprzętu wysokiego poziomu aplikacji Direct3D. Służy on do ustalenia, czy wydajność aplikacji jest powiązane z procesora CPU lub powiązane z procesora GPU i uzyskanie szczegółowe informacje na temat używania platformy sprzętu bardziej efektywnie. Użycie procesora GPU obsługuje aplikacje, które używają Direct3D 12, Direct3D 11 i Direct3D 10; nie obsługuje innych interfejsów API, takich jak Direct2D lub OpenGL grafiki.  
@@ -68,11 +65,11 @@ Użyj narzędzia użycie procesora GPU w Centrum diagnostyki i wydajności usłu
   
 2.  W górnej części raportu wybierz sekcji z jednego z wykresy, które przedstawiono ten problem, które chcesz zbadać. Wybór może być maksymalnie 3 sekundy długie. dłużej sekcje są obcinane na początku.  
   
-     ![Po &#45; kolekcji, wybierz zakres, aby wyświetlić szczegóły](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![Post&#45;kolekcji, wybierz zakres, aby wyświetlić szczegóły](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  W dolnej części raportu, wybierz **wyświetlić szczegóły** łącze w **.. Kliknij przycisk poniżej, aby wyświetlić szczegóły użycia procesora graficznego dla tego zakresu** komunikat, aby wyświetlić szczegółowe osi czasu zaznaczenia.  
   
-     ![Po &#45; kolekcji z wybrany zakres](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![Post&#45;kolekcji z wybrany zakres](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Zostanie otwarty nowy dokument z kartami zawiera raport. Raport użycia procesora GPU pomaga uruchomienia zdarzeń grafiki na Procesorze, po osiągnięciu procesora GPU i jak długo trwa ją wykonać na procesor GPU. Te informacje mogą pomóc w określeniu wąskich gardeł i możliwości zwiększona równoległości w kodzie.  
 
@@ -138,7 +135,7 @@ Począwszy od programu Visual Studio 2017 tych danych można otworzyć za pomoc�
   
  Za pomocą tego ustawienia można odłożyć danych profilowania, dodatkowe łącze staje się dostępna w dolnej części okna narzędzia użycie procesora GPU podczas uruchamiania aplikacji w obszarze narzędzia użycie procesora GPU. Aby rozpocząć zbieranie informacji o profilowania, wybierz polecenie **Start** łącze w **Start zbieranie dodatkowych szczegółowych danych użycia procesora GPU** wiadomości.  
   
-##  <a name="hwsupport"></a>Sprzęt i obsłudze sterowników  
+##  <a name="hwsupport"></a> Sprzęt i obsłudze sterowników  
  Obsługiwane są następujące GPU sprzęt i sterowniki:  
   
 |Dostawcy|Opis elementu procesora GPU|Wymagana wersja sterownika|  

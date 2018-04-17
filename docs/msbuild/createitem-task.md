@@ -2,11 +2,8 @@
 title: Createitem — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-caps.latest.revision: 15
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f3851380e4cb7820a10b203a5e7a1b6c96287b
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: abd6376b4554afd63a755acedc9b08d2f89296c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="createitem-task"></a>CreateItem — Zadanie
 Wypełnia kolekcji elementów z elementów wejściowych. Dzięki temu elementów do skopiowania z listy jeden do innego.  

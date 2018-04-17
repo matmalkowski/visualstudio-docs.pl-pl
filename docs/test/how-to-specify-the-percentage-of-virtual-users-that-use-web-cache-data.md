@@ -1,19 +1,19 @@
 ---
-title: "Określ wartość procentową z wirtualnych użytkowników sprawdzający dane pamięci podręcznej sieci Web użycia dla obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Określ wartość procentową z wirtualnych użytkowników sprawdzający dane pamięci podręcznej sieci Web użycia dla obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c1aa64c0ecee9f214d1bd892c62ba79090d2ce15
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 76d611af76877a9638ed2815a7d8dc5f77e45c8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Porady: określanie wartości procentowej użytkowników wirtualnych korzystających z danych pamięci podręcznej sieci Web
 
@@ -47,7 +47,7 @@ Jeśli jesteś witryny sieci Web, która ma znaczących zwracany użytkowników,
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
-- [Wskazówki: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md)
-- [Kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md)
+- [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
+- [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
 - [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
 - [Edytowanie wzorców obciążenia w celu modelowania aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)

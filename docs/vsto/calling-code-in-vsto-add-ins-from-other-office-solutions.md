@@ -1,12 +1,10 @@
 ---
-title: "Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c21ea9555a125503230faa92a5e6508c192a8175
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1f256cf8fd0b5c89a0d9e6a9733680aac9257cd4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
   Obiekt mogą uwidaczniać w Twojej dodatku VSTO do innych rozwiązań, łącznie z innych rozwiązań Microsoft Office. Jest to przydatne, jeśli dodatek VSTO udostępnia usługi, który chcesz włączyć innych rozwiązań do użycia. Na przykład jeśli masz dodatku VSTO dla programu Microsoft Office Excel wykonuje obliczenia na danych finansowych z usługi sieci Web, inne rozwiązania można wykonać tych obliczeń przez wywołanie dodatku VSTO programu Excel w czasie wykonywania.  
@@ -87,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Można również udostępnić [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interfejsu przez ustawienie <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybut na wartość AutoDispatch lub AutoDual <xref:System.Runtime.InteropServices.ClassInterfaceType> wyliczenia. Jeśli to zrobisz, nie trzeba zadeklarować metody w oddzielnych interfejsu. Jednak kod VBA może wywołać wszystkie publiczne i niestatycznej metody w klasie, w tym metody uzyskane z klas podstawowych, takich jak <xref:System.Object>. Ponadto poza procesem klientów, którzy używają wczesne powiązania nie można wywołać klasy.  
   
-###  <a name="outofproc"></a>Udostępnianie klasy klientom poza procesem.  
+###  <a name="outofproc"></a> Udostępnianie klasy klientom poza procesem.  
  Jeśli chcesz udostępnić klasę w Twojej dodatku VSTO dla klientów poza procesem, powinien pochodzić z klasy <xref:System.Runtime.InteropServices.StandardOleMarshalObject> aby upewnić się, że klientów poza procesem można wywołać obiektu dostępnego dodatku VSTO. W przeciwnym razie próbuje pobrać wystąpienia obiektu uwidocznione w kliencie poza procesem mogą nieoczekiwanie zakończyć się niepowodzeniem.  
   
  Jest to spowodowane wszystkie wywołania object model aplikacji pakietu Office, muszą być wprowadzane w głównym wątku interfejsu użytkownika, ale wywołania z klienta poza procesem obiektu pojawią się w dowolnego wątku RPC (zdalne wywołania procedur). Mechanizm kierowania modelu COM w programie .NET Framework nie przełączy wątków, a zamiast tego będzie podejmować próby zorganizowania wywołania obiektu na wątek przychodzący RPC zamiast głównego wątku interfejsu użytkownika. Jeśli obiekt jest wystąpieniem klasy, która jest pochodną <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, przychodzące wywołania obiektu są automatycznie przekazywane do wątku, której został utworzony obiekt narażonych, będzie głównym wątku interfejsu użytkownika w aplikacji hosta.  

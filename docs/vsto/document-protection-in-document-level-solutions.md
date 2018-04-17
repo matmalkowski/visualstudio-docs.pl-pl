@@ -1,12 +1,10 @@
 ---
-title: "Ochrona w rozwiązaniach na poziomie dokumentu dokumentu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Ochrona w rozwiązaniach na poziomie dokumentu dokumentu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 815bd65f9e1a0182736b2cc68d06c5f289fd4f68
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrona dokumentów w rozwiązaniach na poziomie dokumentu
   Można użyć funkcji ochrony w projektach na poziomie dokumentu Microsoft Office Word i Microsoft Office Excel. Te funkcje zablokować nieuprawnionym użytkownikom wprowadzanie zmian do części chronionego dokumentu.  

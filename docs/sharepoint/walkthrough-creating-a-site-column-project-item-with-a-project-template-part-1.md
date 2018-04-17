@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1 | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Wskazówki: tworzenie elementu projektu kolumn witryny z Szablonem projektu, Część 1
   SharePoint — projekty są kontenerami dla jednego lub więcej elementów projektu programu SharePoint. System projektu programu SharePoint w Visual Studio można rozszerzyć przez utworzenie własnych typów elementów projektu SharePoint i kojarzenie je za pomocą szablonu projektu. W tym przewodniku określi typu elementu projektu do tworzenia kolumny witryny, a następnie zostanie utworzony szablon projektu, który może służyć do tworzenia nowego projektu, który zawiera elementu projektu kolumn witryny.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Jest to autonomiczny wskazówki. Po ukończeniu tego przewodnika, można zwiększyć przez dodanie kreatora do szablonu projektu elementu projektu. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze dewelopera w tym przewodniku:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  W **nazwa** wprowadź **SiteColumnProjectItem**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **SiteColumnProjectItem** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **SiteColumnProjectItem** projektu do **Eksploratora rozwiązań**.  
   
 #### <a name="to-create-the-project-template-project"></a>Aby utworzyć projekt szablonu projektu  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  W **nazwa** wprowadź **SiteColumnProjectTemplate**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **SiteColumnProjectTemplate** projektu do rozwiązania.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **SiteColumnProjectTemplate** projektu do rozwiązania.  
   
 6.  Usuń plik kodu Class1 z projektu.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  W **nazwa** wprowadź **ProjectItemTypeDefinition** , a następnie wybierz **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **ProjectItemTypeDefinition** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **ProjectItemTypeDefinition** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 5.  Usuń plik kodu Class1 z projektu.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Dodaje `ProjectItem` elementy dla każdego filethat obiektu zawarte w każdym wystąpieniu projektu.  
   
-    -   Używa przestrzeni nazw "http://schemas.microsoft.com/developer/vstemplate/2005". Inne pliki projektu, w tym rozwiązaniu użycie tej przestrzeni nazw "http://schemas.microsoft.com/developer/msbuild/2003". W związku z tym komunikaty ostrzegawcze schematu XML, który zostanie wygenerowany, ale można je pominąć w tym przewodniku.  
+    -   Używa przestrzeni nazw "http://schemas.microsoft.com/developer/vstemplate/2005". Inne pliki projektu, w tym rozwiązaniu "http://schemas.microsoft.com/developer/msbuild/2003" przestrzeni nazw. W związku z tym komunikaty ostrzegawcze schematu XML, który zostanie wygenerowany, ale można je pominąć w tym przewodniku.  
   
      Aby uzyskać więcej informacji o zawartość plików .vstemplate, zobacz [odwołanie do schematu szablonu Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   

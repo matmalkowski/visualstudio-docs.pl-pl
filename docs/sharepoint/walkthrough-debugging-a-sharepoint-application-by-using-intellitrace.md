@@ -1,13 +1,10 @@
 ---
-title: "Wskazówki: Debugowanie aplikacji programu SharePoint przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Debugowanie aplikacji programu SharePoint przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Wskazówki: debugowanie aplikacji SharePoint przy użyciu narzędzia IntelliTrace
 
@@ -58,7 +55,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Tworzenie odbiornika funkcji</a>
+## <a name="BKMK_CreateReceiver"></a> Tworzenie odbiornika funkcji
 
 Najpierw należy utworzyć pusty projekt SharePoint ma odbiorca funkcji.
 
@@ -76,7 +73,7 @@ Najpierw należy utworzyć pusty projekt SharePoint ma odbiorca funkcji.
 
 4. Otwórz menu skrótów dla Feature1.feature, a następnie wybierz pozycję **dodać odbiorcy zdarzeń** można dodać modułu kodu funkcji.
 
-## <a name="BKMK_AddCode">Dodaj kod, aby odbiorca funkcji</a>
+## <a name="BKMK_AddCode"></a> Dodaj kod, aby odbiorca funkcji
 
 Następnie dodaj kod, aby dwie metody w Odbiorca funkcji: `FeatureActivated` i `FeatureDeactivating`. Te metody wyzwolenia zawsze, gdy funkcja jest aktywowany lub dezaktywowany w programie SharePoint, odpowiednio.
 
@@ -250,7 +247,7 @@ Następnie dodaj kod, aby dwie metody w Odbiorca funkcji: `FeatureActivated` i `
     }
     ```
 
-## <a name="BKMK_Test1">Projekt testowy</a>
+## <a name="BKMK_Test1"></a> Projekt testowy
 
 Kod zostanie dodany do Odbiorca funkcji i modułów zbierających dane jest uruchomiona, wdrażanie i uruchamianie rozwiązania programu SharePoint, aby sprawdzić, czy działa on prawidłowo.
 
@@ -277,7 +274,7 @@ Kod zostanie dodany do Odbiorca funkcji i modułów zbierających dane jest uruc
 
      Program obsługi zdarzeń FeatureDeactivating() zgłasza błąd.
 
-## <a name="BKMK_CollectDiagnosticData">Gromadzenie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Gromadzenie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent
 
 Po zainstalowaniu programu Microsoft Monitoring Agent na komputerze z programem SharePoint, rozwiązań programu SharePoint można debugować przy użyciu danych, które jest bardziej szczegółowy niż ogólne informacje, które zwraca IntelliTrace. Agent działa poza Visual Studio przy użyciu poleceń cmdlet programu PowerShell do przechwycenia informacji o debugowaniu podczas sekwencji rozwiązania programu SharePoint.
 
@@ -300,9 +297,9 @@ Po zainstalowaniu programu Microsoft Monitoring Agent na komputerze z programem 
 
 3. W oknie programu PowerShell, uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć plik .iTrace, zatrzymać monitorowanie i uruchom ponownie rozwiązanie programu SharePoint.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">Debugowanie i Usuń rozwiązania SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Debugowanie i Usuń rozwiązania SharePoint
 
 Teraz można wyświetlić plik dziennika funkcji IntelliTrace w programie Visual Studio można znaleźć i napraw błąd w rozwiązaniu programu SharePoint.
 

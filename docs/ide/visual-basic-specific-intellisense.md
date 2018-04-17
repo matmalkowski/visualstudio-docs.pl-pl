@@ -1,24 +1,23 @@
 ---
 title: Visual Basic IntelliSense | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e99bda20d8591f314a75ee74e1b162e5fd64be81
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 44ff32ed0452efb5e413d730a69293147fec4c7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense dla plików kodu programu Visual Basic
 
@@ -34,7 +33,7 @@ Porady dotyczące składni Wyświetlanie składni instrukcji, która wpisywania.
 
      Na przykład jeśli wpiszesz `goto` i miejsca, IntelliSense wyświetla listę etykiet zdefiniowanych w menu rozwijanym. Obejmują innych obsługiwanych słów kluczowych `Exit`, `Implements`, `Option`, i `Declare`.
 
-- Ukończenia `Enum` i`Boolean`
+- Ukończenia `Enum` i `Boolean`
 
     Po instrukcji będzie odwoływać się do elementu członkowskiego wyliczenia, IntelliSense wyświetla listę elementów członkowskich `Enum`. Po instrukcji odnoszą się do `Boolean`, IntelliSense wyświetla menu rozwijanego PRAWDA / FAŁSZ.
 

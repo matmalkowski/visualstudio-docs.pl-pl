@@ -1,12 +1,10 @@
 ---
-title: "Porady: Instalowanie narzędzi Visual Studio Tools for Office Runtime pakietu redystrybucyjnego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Instalowanie narzędzi Visual Studio Tools for Office Runtime pakietu redystrybucyjnego | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f76191ca8b41f252e5009c0d3e7e09415f6f081
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 552ef84dc5b4bba8b9f63173d41a43a4efd82a14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Porady: instalowanie pakietu redystrybucyjnego Visual Studio Tools dla pakietu Office Runtime
   Visual Studio 2010 Tools for Office Runtime musi być zainstalowany na każdym komputerze z konsolą rozwiązania, które są tworzone za pomocą narzędzia Microsoft Office developer tools w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Środowisko wykonawcze jest instalowana automatycznie podczas instalowania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]i Microsoft Office. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
      [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Zawiera pakiety językowe. Jeśli instalacja systemu Windows jest ustawiony na języku innym niż angielski, można wyświetlić wiadomości w czasie wykonywania w języku używanym dla systemu Windows. Podobnie jeśli użytkownicy końcowi instalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , a następnie uruchom rozwiązań w przypadku instalacji systemu Windows, które są ustawione na język niż angielski, środowiska uruchomieniowego komunikaty będą wyświetlane w języku systemu Windows. W niektórych przypadkach może być konieczne dodatkowe pakiety językowe. Na przykład może być konieczne dodatkowe pakiety językowe, jeśli kopii systemu Windows korzysta z więcej niż jedno ustawienie języka lub przełączanie na inny język, po zainstalowaniu już [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Można znaleźć pakietów językowych w [Microsoft Visual Studio 2010 Tools dla pakietu Microsoft Office System (wersja 4.0 środowiska wykonawczego) Language Pack](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [Porady: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Porady: zainstalować podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   

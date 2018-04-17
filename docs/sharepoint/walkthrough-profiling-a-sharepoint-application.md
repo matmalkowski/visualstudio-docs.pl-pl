@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Profilowanie aplikacji SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Profilowanie aplikacji SharePoint | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Wskazówki: Profilowanie aplikacji SharePoint
   W tym przewodniku przedstawiono sposób korzystania z narzędzi profilowania w programie Visual Studio do optymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest odbiorcy zdarzeń funkcji programu SharePoint, zawierający pętli bezczynności, który powoduje spadek wydajności odbiorcy zdarzeń funkcji. Profilera Visual Studio można znaleźć i wyeliminować najdroższych (najwolniejsze wykonywania) część projektu, znanej także jako *aktywnej ścieżki*.  
@@ -43,9 +42,9 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje systemu Microsoft Windows i programu SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].,  
+-   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
 ## <a name="creating-a-sharepoint-project"></a>Tworzenie projektu programu SharePoint  
  Najpierw utwórz projekt programu SharePoint.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Wybierz **Zakończ** przycisku. Projekt zostanie wyświetlony w **Eksploratora rozwiązań**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Dodawanie funkcji i funkcji odbiorcy zdarzeń  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Dodawanie funkcji i funkcji odbiorcy zdarzeń  
  Następnie dodaj funkcji do projektu wraz z obsługiwanego odbiornika dla funkcji. Odbiornik zdarzeń będzie zawierać kod do profilowania.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Aby dodać funkcję i odbiorcy zdarzeń funkcji  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Zapisz projekt.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Konfigurowanie i wdrażanie aplikacji programu SharePoint  
+##  <a name="BKMK_ConfigSharePointApp"></a> Konfigurowanie i wdrażanie aplikacji programu SharePoint  
  Teraz, projekt SharePoint jest gotowy, ją skonfigurować i wdrożyć go na serwerze programu SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Aby skonfigurować i wdrożyć aplikację programu SharePoint  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      Kreator Włącza profilowanie aplikacji na serwerze, wyświetla **Eksplorator wydajności** okna, a następnie kompilacji, wdraża i uruchamia aplikację programu SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a>Uruchamianie aplikacji programu SharePoint  
+##  <a name="BKMK_RunSPApp"></a> Uruchamianie aplikacji programu SharePoint  
  Uaktywnij funkcję w programie SharePoint, wyzwalania `FeatureActivation` zdarzeń kod wymagany do uruchomienia.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      Po zamknięciu programu SharePoint, profilera tworzy i Wyświetla przykładowy raport profilowania i zapisuje go jako plik Vsp w **ProfileTest** folder tego projektu.  
   
-##  <a name="BKMK_ViewResults"></a>Wyświetlanie i interpretowaniu wyników profilowania  
+##  <a name="BKMK_ViewResults"></a> Wyświetlanie i interpretowaniu wyników profilowania  
  Teraz, gdy zostało uruchomione i profilowane aplikacji programu SharePoint, należy wyświetlić wyniki testów.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>Aby wyświetlić i interpretuj wyniki profilowania  

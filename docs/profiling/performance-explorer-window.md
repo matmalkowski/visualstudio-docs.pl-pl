@@ -1,13 +1,10 @@
 ---
-title: "Okno Eksploratora wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Okno Eksploratora wydajności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
 - vs.performance.explorer
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b3c7111ddda71d070456c409b95f53c04f0063
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 553f93922af58b98542dee10f48f1242fe8d6429
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
 

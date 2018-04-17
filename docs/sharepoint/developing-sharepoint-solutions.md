@@ -1,13 +1,10 @@
 ---
-title: "Tworzenie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
   Kilka szablonów typ projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint i elementy lokacji. Aby uzyskać listę typów projektów dostępne w temacie [projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej przedstawiono opis elementów i właściwości elementu projektu SharePoint.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  Gdy funkcja zostanie dodany do projektu SharePoint, pojawi się w **Eksploratora rozwiązań** węzła przy użyciu domyślnego nazwij funkcji*x*.feature, gdzie *x* to unikatowa liczba. Po wdrożeniu funkcji programu SharePoint Server administratorem programu SharePoint można aktywować, udostępniając użytkowników witryny programu SharePoint.  
   
 #### <a name="package-node"></a>Węzeł pakietów  
- **Pakietu** węzła zawiera pojedynczy plik, która służy jako mechanizm dystrybucji projektu SharePoint. Ten plik, znany jako *rozwiązania**pakietu*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest możliwe, wielokrotnego użytku plik, który zawiera zestaw funkcji, definicje witryny i zestawy, które są stosowane do witryny programu SharePoint i że można włączyć lub wyłączyć indywidualnie. **Pakietu** węzła zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu na serwerze z programem SharePoint administratora programu SharePoint można go zainstalować i aktywować jego funkcje.  
+ **Pakietu** węzła zawiera pojedynczy plik, która służy jako mechanizm dystrybucji projektu SharePoint. Ten plik, znany jako *rozwiązania ** pakietu*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest możliwe, wielokrotnego użytku plik, który zawiera zestaw funkcji, definicje witryny i zestawy, które są stosowane do witryny programu SharePoint i że można włączyć lub wyłączyć indywidualnie. **Pakietu** węzła zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu na serwerze z programem SharePoint administratora programu SharePoint można go zainstalować i aktywować jego funkcje.  
   
  Można wyświetlić lub zmienić zawartość pakietu w Projektancie pakiet, klikając węzeł pakietu lub otwieranie menu skrótów, a następnie wybierając **Otwórz**. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów rozwiązania SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[Instrukcje: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Opisuje sposób zmapowane katalogi do dodania do projektu w celu zapewnienia dostępu do zasobów programu SharePoint.|  
 |[Uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)|W tym artykule opisano problemy związane z rozwiązań w trybie piaskownicy.|  
 |[Zabezpieczenia dla rozwiązań SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|W tym artykule opisano zagadnienia dotyczące zabezpieczeń związane z opracowywaniem rozwiązań SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Okno dialogowe selektora URL &#40; Projektowanie SharePoint w Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|W tym artykule opisano okno dialogowe, którego można użyć, aby dodać ścieżkę odwołania do zasobów w projekcie, lub na lokalnym serwerze programu SharePoint.|  
+|[Okno dialogowe selektora URL &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|W tym artykule opisano okno dialogowe, którego można użyć, aby dodać ścieżkę odwołania do zasobów w projekcie, lub na lokalnym serwerze programu SharePoint.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wprowadzenie &#40; Projektowanie SharePoint w Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [Wprowadzenie &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Rozwiązania pakowania i wdrażania SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

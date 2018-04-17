@@ -1,12 +1,10 @@
 ---
-title: "Podpisywanie pakietów VSIX | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Podpisywanie pakietów VSIX | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - signature
 - signing
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 84166ed96fb49567f4ede3e8e0c4b7e8ba3cc814
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
 Zestawy rozszerzenia nie muszą być podpisane, zanim zostaną one uruchomione w programie Visual Studio, ale jest dobrym rozwiązaniem, aby to zrobić.  

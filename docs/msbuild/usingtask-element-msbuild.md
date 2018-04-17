@@ -2,11 +2,8 @@
 title: Usingtask — Element (MSBuild) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UsingTask
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - UsingTask element [MSBuild]
 - <UsingTask> element [MSBuild]
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
-caps.latest.revision: 23
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d87029365d5e527f886dc3c86ff260a0cbb612
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f6cdee06c83fe58aec6d50847d5342244d62861e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask — Element (MSBuild)
 Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) elementu do zestawu zawierającego implementację zadania.  

@@ -1,12 +1,10 @@
 ---
-title: "Tworzenie rozwiązań przepływu pracy programu SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie rozwiązań przepływu pracy programu SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
 - VS.SharePointTools.Workflow.WorkflowName
@@ -22,16 +20,17 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bb0dce0aa162260ca784593ec34ee5c39acd1f31
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Tworzenie rozwiązań przepływu pracy SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]udostępnia narzędzia do tworzenia niestandardowych przepływów pracy, które Zarządzanie cyklem życia dokumenty i elementy listy w witrynie sieci Web programu SharePoint. Elementy dostarczone obejmują projektanta, zestaw kontrolek działania i niezbędne odwołania zestawów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zawiera również **Kreator dostosowania programu SharePoint**, aby utworzyć i skonfigurować przepływy pracy.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] udostępnia narzędzia do tworzenia niestandardowych przepływów pracy, które Zarządzanie cyklem życia dokumenty i elementy listy w witrynie sieci Web programu SharePoint. Elementy dostarczone obejmują projektanta, zestaw kontrolek działania i niezbędne odwołania zestawów. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zawiera również **Kreator dostosowania programu SharePoint**, aby utworzyć i skonfigurować przepływy pracy.  
   
  Aby uzyskać listę wymagań wstępnych dotyczących tworzenia projektów programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], zobacz [wymagania dotyczące opracowywania rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Aby uzyskać więcej informacji na temat programu SharePoint, zobacz [Microsoft produktów i technologii SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).  
   
@@ -124,12 +123,12 @@ ms.lasthandoff: 01/10/2018
  Może również zbierać informacje od użytkowników przy użyciu właściwości elementu w bibliotece programu SharePoint lub na liście. Plik kodu głównego (Workflow1.cs lub Workflow1.vb) deklaruje wystąpienia klasy Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties o nazwie `workflowProperties`. Użyj `workflowProperties` obiekt, aby uzyskać dostęp do właściwości biblioteki lub listy w kodzie. Na przykład zobacz [wskazówki: tworzenie i debugowanie rozwiązania przepływu pracy SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).  
   
 ## <a name="debugging-a-sharepoint-workflow-template"></a>Debugowanie szablonu przepływu pracy programu SharePoint  
- Można debugować projektu przepływu pracy SharePoint takie same jak debugować innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty oparte na sieci Web. Po rozpoczęciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] korzysta z ustawień określonych w **Kreator dostosowania programu SharePoint** Otwórz odpowiednią witrynę sieci Web programu SharePoint i automatyczne kojarzenie szablonu przepływu pracy z odpowiednią bibliotekę lub listę. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dołącza również [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuger [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] proces o nazwie w3wp.exe.  
+ Można debugować projektu przepływu pracy SharePoint takie same jak debugować innych [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty oparte na sieci Web. Po rozpoczęciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] korzysta z ustawień określonych w **Kreator dostosowania programu SharePoint** Otwórz odpowiednią witrynę sieci Web programu SharePoint i automatyczne kojarzenie szablonu przepływu pracy z odpowiednią bibliotekę lub listę. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dołącza również [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuger [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] proces o nazwie w3wp.exe.  
   
  Aby przetestować przepływ pracy, należy go ręcznie uruchomić. Aby uzyskać więcej informacji, zobacz sekcję "Debugowanie przepływach pracy" w [debugowanie rozwiązań SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugowaniem aplikacji sieci Web, zobacz [debugowanie aplikacji sieci Web i skryptu](/visualstudio/debugger/debugging-web-applications-and-script).  
   
 ## <a name="deploying-a-sharepoint-workflow-template"></a>Wdrażanie szablonu przepływu pracy programu SharePoint  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Wdrażanie projektów przepływu pracy programu SharePoint podobnie jak inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint — projekty. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Wdrażanie projektów przepływu pracy programu SharePoint podobnie jak inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint — projekty. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).  
   
 ## <a name="importing-globally-reusable-workflows"></a>Importowanie przepływów pracy do wielokrotnego użytku globalnego  
  Oprócz tworzenia wielokrotnych przepływów danych specyficzne dla lokacji, programu SharePoint Designer umożliwia tworzenie *globalnie wielokrotnych przepływów danych*, które są przepływy pracy, które mogą być używane przez wszystkie witryny programu SharePoint. Projekt importowania przepływu pracy wielokrotnego użytku w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aktualnie nie importuje globalny wielokrotnych przepływów danych. Jednak można albo użyj programu SharePoint Designer do konwertowania do wielokrotnego użytku globalnego przepływu pracy do przepływu pracy wielokrotnego użytku, lub importowanie przepływu pracy jako nieprzekonwertowane deklaracyjnego przepływu pracy. Aby uzyskać więcej informacji, zobacz [Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).  

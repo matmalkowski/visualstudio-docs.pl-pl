@@ -1,25 +1,23 @@
 ---
-title: "Dostosowywanie magazynu plików i serializacja XML | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dostosowywanie magazynu plików i serializacja XML | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 Gdy użytkownik zapisuje wystąpienia, lub *modelu*, języka specyficznego dla domeny (DSL) w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pliku XML jest tworzony lub aktualizowany. Plik można załadować ponownie, aby odtworzyć modelu w magazynie.  
@@ -144,13 +142,13 @@ Gdy użytkownik zapisuje wystąpienia, lub *modelu*, języka specyficznego dla d
   
     2.  W oknie właściwości ustaw **jest klucz Moniker** do `true`.  
   
--   \-lub -  
+-   \- lub -  
   
      Tworzenie nowej klasy domeny, przy użyciu **klasy o nazwie domeny** narzędzia.  
   
      To narzędzie tworzy nową klasę, który ma właściwość domeny o nazwie Name. **Jest nazwa elementu** i **jest klucz Moniker** właściwości tej właściwości domeny są inicjowane na `true`.  
   
--   \-lub -  
+-   \- lub -  
   
      Utwórz relację dziedziczenia z klasy domeny do innej klasy, która ma właściwość klucza krótkiej nazwy.  
   
@@ -275,7 +273,7 @@ Gdy użytkownik zapisuje wystąpienia, lub *modelu*, języka specyficznego dla d
 |Jest niestandardowe|Ustaw tę wartość na **True** Aby napisać własny kod serializacji i deserializacji dla tej klasy domeny.<br /><br /> Skompiluj rozwiązanie i zbadaj błędy, aby odnaleźć szczegółowe instrukcje.|  
 |Klasa domeny|Klasa domeny, którego dotyczy ten węzeł danych klasy. Tylko do odczytu.|  
 |Nazwa elementu|Nazwa węzła XML dla elementów tej klasy. Wartość domyślna to małe wersji nazwy klasy domeny.|  
-|Nazwa atrybutu krótkiej nazwy|Nazwa atrybutu używanego w elementach moniker zawiera odwołanie. Jeżeli pole pozostanie puste, nazwa właściwości klucza lub identyfikator jest używany.<br /><br /> W tym przykładzie jest "name":`<personMoniker name="/Mike Nash"/>`|  
+|Nazwa atrybutu krótkiej nazwy|Nazwa atrybutu używanego w elementach moniker zawiera odwołanie. Jeżeli pole pozostanie puste, nazwa właściwości klucza lub identyfikator jest używany.<br /><br /> W tym przykładzie jest "name":  `<personMoniker name="/Mike Nash"/>`|  
 |Nazwa elementu krótkiej nazwy|Nazwa elementu xml używane do krótkie, które odwołują się do elementów tej klasy.<br /><br /> Wartość domyślna to małe wersji z "Moniker" sufiksem nazwy klasy. Na przykład `personMoniker`.|  
 |Nazwa typu krótkiej nazwy|Nazwa typu xsd wygenerowany dla monikerów elementy tej klasy. Trwa XSD **kod Dsl\Generated\\\*Schema.xsd**|  
 |Identyfikator serializacji|Jeśli PRAWDA, identyfikatora GUID elementu znajduje się w pliku. Musi to być wartość true, jeśli nie ma właściwości, który jest oznaczony jako **jest klucz Moniker** i DSL definiuje relacji odwołania do tej klasy.|  

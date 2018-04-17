@@ -1,12 +1,9 @@
 ---
-title: XmlPeek Task | Microsoft Docs
+title: Xmlpeek — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - XmlPeek task [MSBuild]
 - MSBuild, XmlPeek task
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
-caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da868989d889f04966f106f2f1c1c065c4a88db6
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 76eefa66092320362c28034ae36fbd07ad198903
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xmlpeek-task"></a>XmlPeek — Zadanie
 Zwraca wartości określonych przez zapytanie XPath z pliku XML.  

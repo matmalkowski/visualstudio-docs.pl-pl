@@ -1,29 +1,25 @@
 ---
 title: Raport profilu wykonania | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.execution
 helpviewer_keywords:
 - Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263ff80703a680ab799e373fad62c05ced62028f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b2f878efffd658cbfa243ae4947613603db59777
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="execution-profile-report"></a>Raport profilu wykonania
 Raport profilu wykonania jest profil próbkowania tradycyjnych. Pobierane są mniej więcej co milisekund okresach po wątek jest uruchomiony na rdzenia logicznego i Concurrency Visualizer kompilacje drzewo wywołań typowe przez sortowanie skumulowany zbiór stosy próbki. Dane w tej tabeli może wpłynąć na bieżącego zakresu czasu i ukrytych wątków, a te filtry, które mogą być stosowane:  

@@ -1,29 +1,25 @@
 ---
-title: "marker_series::marker_series — Konstruktor | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: marker_series::marker_series — Konstruktor | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::marker_series
 helpviewer_keywords:
 - Concurrency::diagnostic::marker_series constructor
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a9e6029ed579a6e7464eae8a198948c49fed58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 868554d7f8d3b1d2058dcdd623be4ce18811e0c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series — Konstruktor
 Inicjuje nowe wystąpienie klasy `marker_series` klasy.  

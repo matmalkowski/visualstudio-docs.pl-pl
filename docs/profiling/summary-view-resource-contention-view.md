@@ -1,27 +1,23 @@
 ---
-title: "Widok podsumowania — widok Kontencji zasobów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok podsumowania — widok Kontencji zasobów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b74d2f83a184a69b4dba957e8e3195e679a140d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="summary-view---resource-contention-view"></a>Widok podsumowania — widok Kontencji zasobów
 Widok podsumowania przedstawia informacje o zdarzeniach w aplikacji, w którym wątku lub procesu zostało zawieszone, podczas gdy oczekiwano dostęp do zasobu.  
@@ -48,6 +44,6 @@ Widok podsumowania przedstawia informacje o zdarzeniach w aplikacji, w którym w
   
 |Kolumny|Opis|  
 |------------|-----------------|  
-|**IDENTYFIKATOR**|Identyfikator wątku.|  
+|**ID**|Identyfikator wątku.|  
 |**Nazwa**|Nazwa procesu, który jest właścicielem wątku.|  
 |**% Rywalizacji**|Procent wszystkich zdarzenia rywalizacji danych profilowania, które zostały rywalizacji za pośrednictwem tego zasobu.|

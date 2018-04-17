@@ -1,26 +1,24 @@
 ---
-title: "Filtr widoku raportów wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Filtr widoku raportów wydajności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
 - Profiler Report View filter, profiling tools
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 47c4a754b680b032b790f225b1cbc4a75a69fc08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="performance-report-view-filter"></a>Filtr widoku raportów wydajności
 Filtr widoku raportów profilera okna znajduje się u góry okna Raport wydajności. Jeśli nie widzisz, kliknij przycisk **Pokaż filtru** przycisku.  

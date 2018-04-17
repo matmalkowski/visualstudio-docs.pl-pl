@@ -1,25 +1,21 @@
 ---
-title: "Krok 6: Nazw formantom przycisków | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 6: Nazw formantom przycisków | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0d5c402439ccb30b4803a4b1863254287bc7c2dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 Istnieje tylko jeden element PictureBox w formularzu. Podczas dodawania go IDE automatycznie o nazwie go **pictureBox1**. Istnieje tylko jedno pole wyboru, o nazwie **pole wyboru 1**. Najszybciej jak napisać kod i ten kod będzie odnosić się do pola wyboru i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza to, gdy zostanie wyświetlony **pictureBox1** lub **pole wyboru 1** w kodzie.  
@@ -29,7 +25,7 @@ Istnieje tylko jeden element PictureBox w formularzu. Podczas dodawania go IDE a
   
  Istnieją cztery przyciski w formularzu i nazwane IDE **button1**, **button2**, **button3**, i **button4**. Tylko na podstawie ich bieżącej nazwy, nie wiadomo, przycisk **Zamknij** przycisk i która jest **Pokaż obraz** przycisku. Dlatego warto zapewniając większą przyjazność nazw formantom przycisków.  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 3 wideo](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie podglądu obrazów w C# — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 3 wideo](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-name-your-button-controls"></a>Do nazw formantom przycisków  
   
@@ -45,7 +41,7 @@ Okno właściwości o nazwie closeButton
   
 3.  Kliknij dwukrotnie **Pokaż obraz** przycisk w formularzu. Alternatywnie, wybierz **Pokaż obraz** znajdującego się na formularzu, a następnie wybierz klawisz ENTER. Po wykonaniu czynności IDE spowoduje otwarcie dodatkowe karty w oknie głównym o nazwie **pliku Form1.cs** (**Form1.vb** Jeśli używasz programu Visual Basic). Ta karta przedstawia pliku kodu za formularz, jak pokazano na poniższej ilustracji.  
   
-     ![Karta pliku Form1.CS z Visual C & 35; Kod](../ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
+     ![Karta pliku Form1.CS z Visual C&#35; kod](../ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
 Karta pliku Form1.CS z kodu Visual C#  
   
 4.  Skoncentruj się na tej części kodu. (Wybierz **VB** karcie poniżej, jeśli używasz programu Visual Basic, aby wyświetlić wersję języka Visual Basic kodu.)  

@@ -1,12 +1,10 @@
 ---
-title: "Porady: ręczne tworzenie sesji wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: ręczne tworzenie sesji wydajności | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
 - vs.performance.wizard.exepage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - performance sessions, creating
 - performance tools, creating performance sessions
 ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 763e123fcae809e174238ab2f204bec537dbf868
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a5cc5f63f812a04437d04749faa5fbf84fbbd24b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Porady: ręczne tworzenie sesji wydajności
 Można ręcznie utworzyć sesję wydajności. Nie trzeba otworzyć projekt w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).  

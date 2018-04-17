@@ -2,11 +2,8 @@
 title: Komunikat zadania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Message
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, Message task
 - Message task [MSBuild]
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
-caps.latest.revision: 23
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442ce8ab8a137f6ca359a4ff8ebc6fcd7e2272cc
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f119f171afb462f55e95f7178e44eb8bbb682863
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-task"></a>Komunikat — Zadanie
 Rejestruje komunikat podczas kompilacji.  

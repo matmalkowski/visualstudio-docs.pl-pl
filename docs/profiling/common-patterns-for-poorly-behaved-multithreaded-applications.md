@@ -1,27 +1,24 @@
 ---
-title: "Wspólne wzorce dla nieprawidłowo działających aplikacji wielowątkowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wspólne wzorce dla nieprawidłowo działających aplikacji wielowątkowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 6896cdfd4257df55ce2e891bbfd9618b3c525e1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -37,7 +34,7 @@ Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może na
 
 Aby uzyskać więcej informacji, zobacz "Wydajności wzorzec 1: Identyfikowanie rywalizacji blokad" w Hazim Shafi [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu w witrynie MSDN blog sieci Web.
 
-![Lock Contention](../profiling/media/lockcontention_2.png "LockContention_2")
+![Blokowanie rywalizacji](../profiling/media/lockcontention_2.png "LockContention_2")
 
 ## <a name="uneven-workload-distribution"></a>Rozkład normalny obciążenia
 

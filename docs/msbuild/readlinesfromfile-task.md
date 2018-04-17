@@ -1,12 +1,9 @@
 ---
-title: ReadLinesFromFile Task | Microsoft Docs
+title: Readlinesfromfile — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ReadLinesFromFile
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, ReadLinesFromFile task
 - ReadLinesFromFile task [MSBuild]
 ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
-caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b33923902b21d0c577143c0c7642adf8b2b2c67c
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: df5715d50ce3151999f935a0ef4ba02a0c84ae9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile — Zadanie
 Odczytuje listę elementów z pliku tekstowego.  

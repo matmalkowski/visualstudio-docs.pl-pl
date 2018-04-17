@@ -1,15 +1,12 @@
 ---
-title: Szybki Start — Tworzenie projektu języka Python z istniejącego kodu | Dokumentacja firmy Microsoft
+title: Szybki Start — Tworzenie projektu języka Python z istniejącego kodu
 description: W tego przewodnika Szybki Start dla języka Python z istniejącego folderu, przy użyciu szablonu wygodny tworzenia projektu programu Visual Studio.
 ms.custom: mvc
 ms.date: 01/08/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b31cda03c2ca233e90e1ba0194d83845805e28f3
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: df7bb8ef3c5e70bec3d6e4126c3ebe66aa53bc52
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Szybki Start: Tworzenie projektu języka Python z istniejącego kodu
 

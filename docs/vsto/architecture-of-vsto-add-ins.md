@@ -1,12 +1,10 @@
 ---
-title: "Architektura dodatków narzędzi VSTO | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Architektura dodatków narzędzi VSTO | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 94c8a9fa83cd4a37918c22ae0e38ab23c3ca94d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatków VSTO utworzone za pomocą narzędzia Office developer tools w programie Visual Studio architektury funkcjami, które wyróżnić stabilności i zabezpieczeń, a następnie włącz je, aby ściśle współpracować z programem Microsoft Office. W tym temacie opisano następujące aspekty dodatków VSTO:  
@@ -37,19 +36,19 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Aby uzyskać ogólne informacje o tworzeniu dodatków VSTO, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) i [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+ Aby uzyskać ogólne informacje o tworzeniu dodatków VSTO, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [pobierania VSTO pracy programowania dodatków](../vsto/getting-started-programming-vsto-add-ins.md).  
   
-##  <a name="UnderstandingAddIns"></a>Opis dodatków VSTO  
+##  <a name="UnderstandingAddIns"></a> Opis dodatków VSTO  
  Korzystając z narzędzia Office developer tools w programie Visual Studio do tworzenia dodatku VSTO, możesz utworzyć zestawu zarządzanego kodu, który jest ładowany przez aplikację Microsoft Office. Po zestaw jest ładowany, dodatku VSTO może odpowiadać na zdarzenia, które są generowane w aplikacji (na przykład po kliknięciu elementu menu). Dodatku VSTO także wywołać object model automatyzacji i rozszerzenie aplikacji i może używać dowolnej klasy w [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- Zestaw komunikuje się z aplikacji składników COM za pomocą podstawowego zestawu międzyoperacyjnego aplikacji. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md) i [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Zestaw komunikuje się z aplikacji składników COM za pomocą podstawowego zestawu międzyoperacyjnego aplikacji. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md) i [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  W przypadku instalowania wielu dodatków narzędzi VSTO dla aplikacji każdy dodatek VSTO jest ładowany w domenie innej aplikacji. Oznacza to, że jeden VSTO dodatek, który zachowuje się niepoprawnie nie może spowodować innych VSTO dodatki się niepowodzeniem. Pomaga również upewnij się, że po zamknięciu aplikacji wszystkie dodatku VSTO zestawy są usuwane z pamięci. Aby uzyskać więcej informacji o domenach aplikacji, zobacz [domen aplikacji](/dotnet/framework/app-domains/application-domains).  
   
 > [!NOTE]  
 >  Dodatków VSTO, utworzonych przy użyciu programu Visual Studio Office developer tools są przeznaczone do użycia tylko wtedy, gdy host aplikacji Microsoft Office jest uruchomiona przez użytkownika końcowego. Jeśli aplikacja jest uruchomiona programowo (na przykład przy użyciu automatyzacji), dodatku VSTO może nie działać zgodnie z oczekiwaniami.  
   
-##  <a name="AddinComponents"></a>Składniki dodatków VSTO  
+##  <a name="AddinComponents"></a> Składniki dodatków VSTO  
  Chociaż zestaw dodatku VSTO jest głównym składnikiem, istnieje kilka składników, które odgrywa ważną rolę w sposób aplikacji Microsoft Office odnaleźć i załadować dodatków narzędzi VSTO.  
   
 ### <a name="registry-entries"></a>Wpisy rejestru  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowAddinsWork"></a>Jak działają dodatkach VSTO z aplikacjami pakietu Microsoft Office  
+##  <a name="HowAddinsWork"></a> Jak działają dodatkach VSTO z aplikacjami pakietu Microsoft Office  
  Gdy użytkownik uruchamia aplikację Microsoft Office, aplikacja używa manifest wdrażania i manifest aplikacji do lokalizowania i ładowania najnowszej wersji zestawu dodatku VSTO. Na poniższej ilustracji przedstawiono podstawowej architektury tych dodatków VSTO.  
   
  ![Architektura dodatków pakietu office 2007](../vsto/media/office07addin.png "Architektura dodatków pakietu Office 2007")  

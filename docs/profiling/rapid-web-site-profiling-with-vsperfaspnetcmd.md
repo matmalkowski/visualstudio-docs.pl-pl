@@ -1,26 +1,23 @@
 ---
-title: "Profilowanie szybkie witryny sieci Web za pomocą VSPerfASPNETCmd | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Profilowanie szybkie witryny sieci Web za pomocą VSPerfASPNETCmd | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd26d5b17d6dbd2e2c1dbacb1a23d81ffe733fdf
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f54a4d164819d3a36d4c95d0506b933797235231
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
 
@@ -44,13 +41,13 @@ Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikac
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>W celu zbierania statystyk aplikacji przy użyciu metody pobierania próbek
  Próbkowanie to domyślne metody profilowania **VSPerfASPNETCmd** narzędzia i nie muszą być określone w wierszu polecenia. Następujący wiersz polecenia służy do zbierania statystyk aplikacji z określonej aplikacji sieci Web:
 
- **vsperfaspnetcmd***podanym adresem URL* 
+ **vsperfaspnetcmd***podanym adresem URL*
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Do zbierania danych o chronometrażu przy użyciu metody Instrumentacji
 
 Użyj następującego polecenia do zbierania danych o chronometrażu z dynamicznie skompilowanej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web:
 
-**polecenie vsperfaspnetcmd/trace***podanym adresem URL* 
+**polecenie vsperfaspnetcmd/trace***podanym adresem URL*
 
 Jeśli chcesz profilu plików dll statycznie skompilowanej aplikacji sieci Web musi Instrumentacja plików za pomocą [VSInstr](../profiling/vsinstr.md) narzędzia wiersza polecenia. Polecenie vsperfaspnetcmd/trace obejmuje dane z instrumentowanych plików.
 

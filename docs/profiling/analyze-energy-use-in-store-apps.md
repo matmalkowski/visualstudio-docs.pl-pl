@@ -1,33 +1,31 @@
 ---
-title: "Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 56c5644c72c6e78ffcdb8e2febb38f8b3fdfd746
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analiza zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zużycie energii aplikacji platformy uniwersalnej systemu Windows na tablecie niskiego poboru energii urządzenia z systemem całość lub część czasu na ich własnych baterii. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii można zwiększyć wdrożenia aplikacji i korzystać przez klientów.  
   
-##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a>Co to jest profiler zużycia energii, jak działa i jest mierzony  
+##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Co to jest profiler zużycia energii, jak działa i jest mierzony  
  Profiler Zużycie energii przechwytuje działania wyświetlacza, procesora i połączeń sieciowych urządzenia podczas sesji profilowania. Następnie generuje szacunki zużycia mocy na potrzeby wykonania tych działań i całkowitej ilości energii dla sesji profilowania.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ Visual Studio **zużycie energii** profilera pomaga analizować zasilania i zuż
   
  Na przykład w pełni naładowana bateria w tablecie zawiera pewną ilość zmagazynowanej energii. Gdy energia jest zużywana na potrzeby wykonywania zadań, takich jak komunikacja przez sieć, obliczanie wartości czy wyświetlanie grafiki, moc z baterii jest zużywana z różną szybkością. Dla dowolnego okresu mierzone jest także łączne zużycie mocy.  
   
-##  <a name="BKMK_Identify_scenarios_with_user_marks"></a>Określenie scenariuszy użytkownika, znaczniki  
+##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Określenie scenariuszy użytkownika, znaczniki  
  Możesz dodać *znaczniki użytkownika* do profilowania dane, aby ułatwić określenie obszarów na linijce osi czasu.  
   
  ![Znaczniki użytkownika na osi czasu](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -78,7 +76,7 @@ if (performance && performance.mark) {
   
  *markDescription* jest ciąg znaków zawierający komunikat wyświetlany w etykietce narzędzia znacznik użytkownika.  
   
-##  <a name="BKMK_Configure_your_environment_for_profiling"></a>Skonfiguruj środowisko do profilowania  
+##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Skonfiguruj środowisko do profilowania  
  Można uzyskać dobrą szacuje, należy do profilu aplikacji na urządzeniu zasilane małej jest są zasilane z baterii jego zużycie energii. Ponieważ program Visual Studio nie jest uruchamiane na większości tych urządzeń, należy podłączyć komputer programu Visual Studio do urządzenia za pomocą narzędzi Visual Studio remote tools. Aby podłączyć urządzenie zdalne, należy skonfigurować zarówno projekt programu Visual Studio, jak i urządzenie zdalne. Zobacz [aplikacji platformy uniwersalnej systemu Windows uruchom na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) Aby uzyskać więcej informacji.  
   
 > [!TIP]
@@ -86,7 +84,7 @@ if (performance && performance.mark) {
 > -   Profiluj urządzenie docelowe zasilane z baterii.  
 > -   Zamknij inne aplikacje, które mogą używać tych samych zasobów (sieci, procesora lub wyświetlacza).  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a>Zbieranie danych profilu energii dla aplikacji  
+##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Zbieranie danych profilu energii dla aplikacji  
   
 1.  Na **debugowania** menu, wybierz **Start diagnostycznych bez debugowania**.  
   
@@ -105,7 +103,7 @@ if (performance && performance.mark) {
   
      Program Visual Studio analizuje zebrane dane i wyświetla wyniki.  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>Zbieranie danych profilu energii dla zainstalowanych aplikacji  
+##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Zbieranie danych profilu energii dla zainstalowanych aplikacji  
  Narzędzie zużycia energii można uruchomić tylko na aplikacji platformy uniwersalnej systemu Windows, które są uruchamiane z rozwiązania Visual Studio lub są instalowane z Microsoft Store. Gdy rozwiązanie jest otwarty w programie Visual Studio, domyślny obiekt docelowy jest **projekt startowy**. Aby określić zainstalowaną aplikację jako obiekt docelowy:  
   
 1.  Wybierz **zmiany docelowego** , a następnie wybierz **zainstalowanych aplikacji**.  
@@ -118,7 +116,7 @@ if (performance && performance.mark) {
   
  Aby zatrzymać profilowanie, przełączyć się do programu Visual Studio (Alt + Tab), a następnie wybierz pozycję **zatrzymać zbieranie** na stronie Centrum diagnostyki.  
   
-##  <a name="BKMK_Analyze_energy_profile_data"></a>Analizowanie danych profilu energii  
+##  <a name="BKMK_Analyze_energy_profile_data"></a> Analizowanie danych profilu energii  
  Dane profilu energetycznego są wyświetlane w oknie dokumentu programu Visual Studio:  
   
  ![Strona raportu profilera energii](../profiling/media/energyprof_all.png "ENERGYPROF_All")  
@@ -136,10 +134,10 @@ if (performance && performance.mark) {
   
  Znajdź obszar, w którym wzrosła moc zużywana przez zasoby. Powiąż ten obszar wzrostu z działaniem aplikacji. Następnie użyj pasków sterowania na osi czasu, aby powiększyć ten obszar. Jeśli są koncentruje się na użycie sieci, rozwiń **sieci** w węźle **zasobów (włączone/wyłączone)** wykres tak, aby porównać połączenie sieciowe jest otwarty, aby podczas odbierania lub przesyłania aplikacji w czasie dane za pośrednictwem połączenia. Skrócenie czasu niepotrzebnego otwarcia połączenia sieciowego to bardzo efektywny sposób optymalizacji.  
   
-##  <a name="BKMK_Optimize_energy_use"></a>Optymalizacja zużycia energii  
+##  <a name="BKMK_Optimize_energy_use"></a> Optymalizacja zużycia energii  
  Połączenia sieciowe generują koszty energii nie tylko podczas przesyłania danych, ale także podczas inicjowania, obsługi i wyłączania połączenia. Niektóre sieci obsługują połączenie przez pewien czas po zakończeniu wysyłania lub odbierania danych, aby umożliwić transmisję większej ilości danych za pośrednictwem jednego połączenia. Można użyć **zasobów (włączone/wyłączone)** okienko, aby zbadać sposób aplikacji współdziała z połączeniem.  
   
- ![Zasoby &#40; na &#47; Wyłącz &#41; Okienko](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")  
+ ![Zasoby &#40;na&#47;poza&#41; okienko](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")  
   
  Jeśli **sieci** i **transferu danych** paski widoczne czy połączenie jest otwarte przez dłuższe okresy sporadycznie przesyłać szereg pakiety danych w małych, można partii danych do wysyłania w jednym transmisji skrócić czas, który jest otwarty w sieci, a w związku z tym ograniczenia kosztów energii.  
   
@@ -147,7 +145,7 @@ if (performance && performance.mark) {
   
  Koszty energii zużywanej przez wyświetlacz trudniej jest kontrolować. Większości ekranów potrzebuje więcej energii do wyświetlania jasnych kolorów niż do wyświetlania kolorów ciemniejszych, więc użycie ciemnego tła stanowi jedyny sposób zmniejszenia kosztów.  
   
-##  <a name="BKMK_Other_resources"></a>Inne zasoby  
+##  <a name="BKMK_Other_resources"></a> Inne zasoby  
   
 -   **Stan połączenia i kosztów zarządzania** sekcje dla [C# / VB/C++ i XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) i [JavaScript i HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) w Centrum deweloperów systemu Windows opisano interfejsów API systemu Windows, które zapewniają informacje łączność sieci używaną przez aplikację do minimalizuje to koszt ruchu sieciowego.  
   

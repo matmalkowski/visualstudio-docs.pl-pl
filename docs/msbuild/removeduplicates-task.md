@@ -1,12 +1,9 @@
 ---
-title: "Removeduplicates — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Removeduplicates — zadanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/01/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, RemoveDuplicates task
 - RemoveDuplicates task [MSBuild]
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce3271b84d4d6bbb4f7905294d0c9fad678c1b8f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f80fbff39f8db777ece495d1f777862b33821ccb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — Zadanie
 Usuwa zduplikowane elementy z kolekcji określony element.  

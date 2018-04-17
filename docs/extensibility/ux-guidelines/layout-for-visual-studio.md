@@ -1,28 +1,26 @@
 ---
-title: "Układ dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Układ dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 Większość okien dialogowych programu Visual Studio jest [układu okna dialogowego narzędzia](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), okna dialogowe, które są unthemed standardzie wykonaj [zasad układu okna dialogowego pulpitu systemu Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Podczas przenoszenia programu Visual Studio odświeżyć jej interfejsu użytkownika, niektóre większa okien dialogowych mają nowy projekt, który określa je jako Definiowanie produktu środowiska. Te [układu okna dialogowego motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd kompozycji.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Układ okna dialogowego narzędzia  
+##  <a name="BKMK_UtilityDialogLayout"></a> Układ okna dialogowego narzędzia  
   
 -   Wszystkich kontrolek w oknie dialogowym narzędzia należy rozpocząć od górnego/lewego i przepływu w dół.  
   
@@ -104,7 +102,7 @@ Większość okien dialogowych programu Visual Studio jest [układu okna dialogo
   
 -   Długość powinna być doświadczenia szerokości dla użytkownika przeanalizować i do odczytu. Okno dialogowe średnia powinna być co najwyżej 550 pikseli szerokości.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Przyciski poleceń wewnętrzne  
+####  <a name="BKMK_InteriorCommandButtons"></a> Przyciski poleceń wewnętrzne  
  W oknach dialogowych bardziej złożonych wewnętrznej kontroli może mieć własną przycisków powiązane, które mogą mieć wpływ na którym przycisków zatwierdzania okna dialogowego znajdują się.  
   
 -   Wyrównanie w pionie (kolumna) wnętrza przyciski, gdy użycie **OK**/**anulować** poziomie są ukierunkowane w prawym dolnym rogu.  
@@ -124,7 +122,7 @@ Większość okien dialogowych programu Visual Studio jest [układu okna dialogo
 #### <a name="browse-button"></a>[Przeglądaj] przycisk  
  **[Przeglądaj]**  przyciski znajdujące się poniżej pola tekstowego powinna pełnych "Przeglądaj..." w całości, w tym wielokropka. Jeśli miejsca jest mocno lub dostępnych jest wiele **[Przeglądaj]**  przyciski na ekranie przycisku można zmniejszyć do właśnie wielokropka.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Układ okna dialogowego motywów  
+##  <a name="BKMK_ThemedDialogLayout"></a> Układ okna dialogowego motywów  
  Motywem okien dialogowych w programie Visual Studio mają jaśniejszy wygląd i oferują więcej biały znak. Typografii zawiera więcej nacisk i odsetek, oferując więcej Otwórz odstępy i różnic rozmiary czcionek i wagi. Jeśli to możliwe, chrome i paska tytułu zostały zredukowane lub usunięte. Układ tych okien dialogowych, należy wykonać ten wzorzec podstawowe:  
   
 1.  Tło okna dialogowego jest białe.  

@@ -1,26 +1,24 @@
 ---
-title: "Strona opcji, środowisko — właściwości węzła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Strona opcji, środowisko — właściwości węzła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3cd05ebf4c0161611789214295003eced4ca0d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzone z **środowiska** kategorii, `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdego podsekcji to wywołanie, które umożliwia dostęp do właściwości kolekcji, a tabeli w każdym podsekcja zawiera listę właściwości w kolekcji.  
@@ -54,7 +52,7 @@ W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzo
   
 |Nazwa elementu właściwości|Wartość|Opis|  
 |------------------------|-----------|-----------------|  
-|ReuseSavedActiveDocWindow|Get/Set (wartość logiczna)|Określa, czy otwieranie nowego pliku ponownie bieżące okno dokumentu, jeśli bieżący dokument zostanie zapisany. `false`oznacza, że zawsze otwieraj dla każdego dokumentu otworzyć nowe okno dokumentu.|  
+|ReuseSavedActiveDocWindow|Get/Set (wartość logiczna)|Określa, czy otwieranie nowego pliku ponownie bieżące okno dokumentu, jeśli bieżący dokument zostanie zapisany. `false` oznacza, że zawsze otwieraj dla każdego dokumentu otworzyć nowe okno dokumentu.|  
 |DetectFileChangesOutsideIDE|Get/Set (wartość logiczna)|Określa, czy środowisko automatycznie ładuje ponownie pliki otwarte w IDE, gdy system operacyjny powiadamia IDE pliki zostały zmienione na dysku.|  
 |AutoloadExternalChanges|Get/Set (wartość logiczna)|Określa, czy wykrył, że zewnętrzne zmiany na otwieranie dokumentów automatycznie załadować ponownie zmodyfikowany plik, jeśli otwartego dokumentu nie jest modyfikowany. Jeśli otwarty dokument zostanie zmodyfikowany, a ta właściwość jest `true`, a następnie monituje IDE, jak gdyby ta właściwość `false`.|  
 |InitializeOpenFileFromCurrentDocument|Get/Set (wartość logiczna)|Określa, czy <xref:EnvDTE.DTEClass.OpenFile%2A> polecenia nasiona nazwy katalogów i plików z ostatnich dokumentów aktywnych lub z ostatnim miejscu otworzyć plik.|  
@@ -64,7 +62,7 @@ W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzo
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (wartość logiczna)|Zapisuje dokumenty w formacie Unicode, gdy nie można zapisać danych w stronie kodowej.|  
 |DontShowGlobalUndoChangeLossDialog|Get/Set (wartość logiczna)|Wyświetli ostrzeżenie, gdy globalne cofanie modyfikuje inne pliki edytowany.|  
 |AllowEditingReadOnlyFiles|Get/Set (wartość logiczna)|Umożliwia edytowanie plików tylko do odczytu, ale zapewnia ostrzeżenie po próba je zapisać.|  
-|DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>., Pozycja w karcie również w celu wstawienia otwartego dokumentu.|  
+|DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Pozycja w karcie również w celu wstawienia otwartego dokumentu.|  
   
 ## <a name="extension-manager"></a>Menedżer rozszerzeń  
  `DTE.Properties("Environment", "ExtensionManager")`  
@@ -158,7 +156,7 @@ W tym dokumencie opisano stron (lub kolekcji właściwości) które są skojarzo
 |------------------------|-----------|-----------------|  
 |Strona główna|Pobierz/Ustaw (ciąg)|Reprezentuje adres URL strony głównej.|  
 |SearchPage|Pobierz/Ustaw (ciąg)|Reprezentuje adres URL strony wyszukiwania.|  
-|ViewSourceIn|Get/Set (Wyliczenie)|<xref:EnvDTE.vsBrowserViewSource>(Źródło, projekt, zewnętrzny).|  
+|ViewSourceIn|Get/Set (Wyliczenie)|<xref:EnvDTE.vsBrowserViewSource> (Źródło, projekt, zewnętrzny).|  
 |ViewSourceExternalProgram|Pobierz/Ustaw (ciąg)|Ścieżka podglądu źródła zewnętrznego.|  
   
 ## <a name="see-also"></a>Zobacz też  

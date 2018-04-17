@@ -1,12 +1,9 @@
 ---
-title: "XSD — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: XSD — zadanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.task.xsd
 - VC.Project.VCXMLDataGeneratorTool.Namespace
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - XSD task (MSBuild (Visual C++))
 - MSBuild (Visual C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0324b3e72cfffb73e22b3995cfc9458631e7d5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 77abc3b0d933be0e9677a4d89e0463a5fc7b4926
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Zawijania narzędzie definicji schematu XML (xsd.exe), które generuje pliki schematu lub klasy ze źródła.  

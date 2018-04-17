@@ -1,23 +1,21 @@
 ---
 title: Licznik | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5974c2f5a1acccebfb9385b91eface6fdc7ba278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c0c7bdd4360eb7f8af6a12a95bd0e3545db6086
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="counter"></a>Licznik
 **Licznika** opcji zbiera dane z liczników wydajności procesora (sprzęt).  
@@ -51,13 +49,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Wymagane opcje  
  Opcja licznik może służyć tylko z jednym z następujących opcji:  
   
- **Start:**`Trace`  
+ **Uruchom:** `Trace`  
  Inicjuje przy użyciu metody Instrumentacji profilera.  
   
- **Uruchom:**`AppName`  
+ **Uruchom:** `AppName`  
  Uruchamia określonej aplikacji i profilera. Profiler musi zostać zainicjowany przy użyciu metody pobierania próbek.  
   
- **Dołącz:**`PID`  
+ **Dołącz:** `PID`  
  Uruchamia profilera i dołącza go do proces określony przez identyfikator procesu. Profiler musi zostać zainicjowany przy użyciu metody pobierania próbek.  
   
 ## <a name="example"></a>Przykład  

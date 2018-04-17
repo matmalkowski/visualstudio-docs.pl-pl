@@ -1,24 +1,22 @@
 ---
 title: Debugowanie szablonu tekstowego T4 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 Można ustawić punktów przerwania w szablonach tekstowych. Debugowanie szablonu tekstowego czasu projektowania, Zapisz plik tekstowy szablonu, a następnie wybierz **debugowania szablon T4** menu skrótów w pliku w Eksploratorze rozwiązań. Debugowanie szablonu tekstowego środowiska wykonawczego, po prostu debugowania aplikacji, do którego on należy.  
@@ -72,7 +70,7 @@ Można ustawić punktów przerwania w szablonach tekstowych. Debugowanie szablon
 |Dyrektywa include dla pliku "{0}" powoduje nieskończoną pętlę.|Wyświetlane, gdy cykliczne zawiera dyrektywy, które są określone (na przykład pliku zawiera plik B, w tym pliku A).|Nie określaj cykliczne dyrektyw.|  
 |Uruchamianie transformacji:|Dołącza ten ciąg, aby wszystkie błędy lub ostrzeżenia, które są generowane podczas wykonywania transformacji.|Nie dotyczy.|  
 |Znaleziono nieoczekiwany tag początkowy lub końcowy w bloku. Upewnij się, że użytkownik został poprawnie wpisany tag początkowy lub końcowy i że nie masz żadnych zagnieżdżonych bloków w szablonie.|Wyświetlane, gdy użytkownik ma nieoczekiwany \<# lub #>. Oznacza to jeśli masz \<# po innym Otwórz tagu, który nie został zamknięty lub użytkownik ma #> gdy niezamknięty tag Otwórz przed nią nie istnieje. Komunikat zawiera numer wiersza niedopasowanych tagu.|Usuń niedopasowanych tag początkowy lub końcowy lub użyj znaku ucieczki.|  
-|Dyrektywa został określona w niewłaściwym formacie. Dyrektywa zostanie zignorowana. Określ dyrektywę w formacie`<#@ name [parametername="parametervalue"]*  #>`|Wyświetlane przez parser, jeśli nie określono dyrektywę w poprawnym formacie. Komunikat zawiera dyrektywy niepoprawny numer wiersza.|Upewnij się, wszystkie dyrektywy są w formie `<#@ name [parametername="parametervalue"]*  #>`. Aby uzyskać więcej informacji, zobacz [dyrektywy szablonu tekstowego T4](../modeling/t4-text-template-directives.md).|  
+|Dyrektywa został określona w niewłaściwym formacie. Dyrektywa zostanie zignorowana. Określ dyrektywę w formacie `<#@ name [parametername="parametervalue"]*  #>`|Wyświetlane przez parser, jeśli nie określono dyrektywę w poprawnym formacie. Komunikat zawiera dyrektywy niepoprawny numer wiersza.|Upewnij się, wszystkie dyrektywy są w formie `<#@ name [parametername="parametervalue"]*  #>`. Aby uzyskać więcej informacji, zobacz [dyrektywy szablonu tekstowego T4](../modeling/t4-text-template-directives.md).|  
 |Nie można załadować zestawu "{0}" dla zarejestrowanego procesora dyrektywy "{1}"<br /><br /> {2}|Występuje, gdy nie można załadować procesora dyrektywy przez hosta. Komunikat identyfikuje zestawu udostępniane dla procesora dyrektywy i nazwę procesora dyrektywy.|Upewnij się procesora dyrektywy jest poprawnie zarejestrowana i czy zestaw istnieje.|  
 |Nie można odnaleźć typu "{0}" w zestawie "{1}" dla zarejestrowanego procesora dyrektywy "{2}"<br /><br /> {3}|Występuje, gdy nie można załadować typu procesora dyrektywy z jej zestawu. Komunikat zawiera nazwę typu, zestawów i procesora dyrektywy.|Vshost umożliwia znalezienie informacji procesora dyrektywy (nazwa zestawu i typ) w rejestrze. Upewnij się, procesora dyrektywy jest poprawnie zarejestrowana i czy typ istnieje w zestawie.|  
 |Wystąpił problem podczas ładowania zestawu "{0}"|Występuje, gdy występuje problem podczas ładowania zestawu. Komunikat zawiera nazwę zestawu.|Można określić zestawów, aby można było załadować \<@# assembly #> dyrektywy oraz procesory dyrektywy. Komunikat o błędzie, znajdujący się na ten ciąg powinien zawierać więcej danych na Dlaczego nie można załadować zestawu.|  

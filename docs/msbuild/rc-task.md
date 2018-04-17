@@ -1,12 +1,9 @@
 ---
-title: RC Task | Microsoft Docs
+title: RC — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
 - vc.task.rc
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 700d94742f06605b385577bb92d252ef54e6b3f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rc-task"></a>RC — Zadanie
 Opakowuje narzędzia kompilatora zasobów systemu Windows firmy Microsoft rc.exe. **RC** zadań kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionek, do pliku zasobów (.res). Aby uzyskać więcej informacji, zobacz "Kompilator zasobów" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
@@ -52,7 +48,7 @@ Opakowuje narzędzia kompilatora zasobów systemu Windows firmy Microsoft rc.exe
 |**ShowProgress**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, wyświetlane są komunikaty, które raport dotyczący postępu kompilatora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/v** opcji [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN.|  
 |**Źródło**|Wymagane `ITaskItem[]` parametru.<br /><br /> Określa tablicę elementów MSBuild pliku źródłowego, które mogą być używane i emitowane przez zadania.|  
 |**SuppressStartupBanner**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości copyright i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, wpisz **/?** Opcja wiersza polecenia, a następnie zobacz **/nologo** opcji.|  
-|**TrackerLogDirectory**|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
+|**Katalog TrackerLogDirectory**|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
 |**UndefinePreprocessorDefinitions**|Usuń definicję symboli preprocesora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/u** opcji [przy użyciu RC (wiersza polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN. Zobacz też **PreprocessorDefinitions** w tej tabeli.|  
   
 ## <a name="remarks"></a>Uwagi  

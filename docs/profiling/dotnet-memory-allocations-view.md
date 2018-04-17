@@ -1,13 +1,10 @@
 ---
-title: "Widok alokacji pamięci .NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok alokacji pamięci .NET | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - profiling tools, Allocation view
 - profiling tools reports, Allocation view
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e191509b7b0ed80447399eeb533c4a318ad8c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef4e52257941192b12a2f7eb57393a536ab02e32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
 Widok alokacji zawiera typy, które zostały utworzone podczas przebiegu profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżek wykonywania funkcji, które spowodowało alokacje typu.  
@@ -53,7 +49,7 @@ Widok alokacji zawiera typy, które zostały utworzone podczas przebiegu profilo
 |**Ścieżka modułu**|Ścieżka moduł zawierający typu lub funkcji.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla typu lub funkcji.|  
 |**Numer wiersza — funkcja**|Numer wiersza początku tej definicji typu lub funkcji w pliku źródłowym.|  
-|**Poziom**|Wskazuje, czy dane dla typu lub funkcji.|  
+|**poziom**|Wskazuje, czy dane dla typu lub funkcji.|  
 |**Alokacje włącznie**|— Dla funkcji, całkowita liczba obiektów o typie elementu nadrzędnego, które zostały utworzone przez funkcję. Liczba ta obejmuje obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  
 |**% Alokacji włącznie**|— Dla funkcji odsetek wszystkich obiektów utworzonych w przebiegu profilowania, które były włącznie alokacje typu nadrzędnego przez funkcję.<br />— W przypadku typu procent całkowitej liczby obiektów, które zostały utworzone w przebiegu, który profilowania były wystąpienia typu.|  
 |**Wyłączny alokacji**|— Dla funkcji, liczbę obiektów, które zostały utworzone podczas wykonywania bezpośrednio w górnej części stosu wywołań funkcji. Ta liczba nie ma obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  

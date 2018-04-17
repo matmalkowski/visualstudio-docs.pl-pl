@@ -2,24 +2,22 @@
 title: Właściwości diagramów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: e4d92b560269d1b9c1a207ffdc7fca114db2694b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-diagrams"></a>Właściwości diagramów
 Można ustawić właściwości, które określają wygląd diagramy w Projektancie wygenerowany. Na przykład można określić domyślnego koloru tekstu na diagramie.  
@@ -33,20 +31,20 @@ Można ustawić właściwości, które określają wygląd diagramy w Projektanc
 |Kolor wypełnienia|Kolor wypełnienia diagramu.|biały|  
 |Kolor tekstu|Kolor tekstu, który jest wyświetlany na diagramie.|czarne|  
 |Modyfikator dostępu|Modyfikator dostępu klasy (wewnętrzny lub publiczny).|Public|  
-|Atrybuty niestandardowe|Można dodawać atrybuty do klasy wygenerowanego kodu.|\<none>|  
+|Atrybuty niestandardowe|Można dodawać atrybuty do klasy wygenerowanego kodu.|\<Brak >|  
 |Generuje o podwójnej precyzji pochodnych|Jeśli `True`, zarówno klasy podstawowej i częściowej klasy (obsługuje dostosowywania przy użyciu zastąpień) zostanie wygenerowany. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ma niestandardowy konstruktora|Jeśli `True`, niestandardowe konstruktora znajdzie się w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Inheritance Modifier|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana z diagramu (`none`, `abstract` lub `sealed`).|Brak|  
+|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana z diagramu (`none`, `abstract` lub `sealed`).|Brak|  
 |Diagram podstawowego|Klasa podstawowa tego diagramu.|(Brak)|  
 |Nazwa|Nazwa tego diagramu.|Bieżąca nazwa|  
 |Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym diagramie.|Bieżącej przestrzeni nazw|  
 |Reprezentowane — klasa|Klasa domeny głównego reprezentuje tego diagramu.|Bieżącej klasy głównym, jeśli to konieczne|  
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym elementem.|\<none>|  
+|Uwagi|Nieformalne uwagi, które są skojarzone z tym elementem.|\<Brak >|  
 |Kolor wypełnienia ujawnia jako właściwość|Jeśli `True`, użytkownik może ustawić kolor wypełnienia diagramu projektanta wygenerowany. Aby to ustawić, kliknij prawym przyciskiem myszy kształtu diagramu, a następnie kliknij przycisk **dodać Explosed**.|False|  
 |Opisuje kolor tekstu jako właściwość|Jeśli `True`, użytkownik może ustawić kolor tekstu diagramu w Projektancie wygenerowany. Aby to ustawić, kliknij prawym przyciskiem myszy kształtu diagramu, a następnie kliknij przycisk **dodać Explosed**.|False|  
-|Opis|Opis, który służy do dokumentów wygenerowanych projektanta.|\<none>|  
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego diagramu.|\<none>|  
-|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego diagramu.|\<none>|  
+|Opis|Opis, który służy do dokumentów wygenerowanych projektanta.|\<Brak >|  
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego diagramu.|\<Brak >|  
+|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego diagramu.|\<Brak >|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

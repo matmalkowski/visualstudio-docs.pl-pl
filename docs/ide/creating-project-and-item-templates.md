@@ -1,12 +1,9 @@
 ---
-title: "Szablony Visual Studio dla projektów i pliki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Szablony Visual Studio dla projektów i pliki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], project
 - templates [Visual Studio], item
@@ -14,12 +11,12 @@ helpviewer_keywords:
 - project templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3959b01fdfc0ff77bdd5a3ffa0c96366b9da87d7
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
@@ -27,21 +24,21 @@ Szablony projektu i elementu zapewniają klas zastępczych wielokrotnego użytku
 
 ## <a name="visual-studio-templates"></a>szablony Visual Studio
 
-Wiele wstępnie zdefiniowanych projekt oraz szablony elementów są zainstalowane z programem Visual Studio. Na przykład Visual Basic i C# **aplikacji formularzy systemu Windows** i **biblioteki klas** szablonów, które są wyświetlane w **nowy projekt** okno dialogowe są szablony projektów. Szablony elementów są wyświetlane w **Dodaj nowy element** okna dialogowego pole i obejmują elementy, takie jak pliki kodu, pliki XML, stron HTML i arkuszy stylów.
+Wiele wstępnie zdefiniowanych projekt oraz szablony elementów są zainstalowane z programem Visual Studio. Na przykład Visual Basic i C# **aplikacji formularzy systemu Windows** i **biblioteki klas** szablonów, które są wyświetlane w **nowy projekt** okno dialogowe są szablony projektów. Element Pokaż szablony w **Dodaj nowy element** okna dialogowego pole i obejmują elementy, takie jak pliki kodu, pliki XML, stron HTML i arkuszy stylów.
 
-Te szablony stanowią punkt wyjścia dla użytkowników, aby rozpocząć tworzenie projektów ani rozszerzyć istniejących projektów. Szablony projektów dostarczają pliki, które są wymagane dla określonego typu projektu, zawierają odwołania do standardowego zestawu i ustawiają domyślne opcje kompilatora i właściwości projektu. Szablony elementów może należeć do zakresu złożonością z pojedynczego pusty plik zawierający określone rozszerzenie pliku, do elementów wielu plików, który zawiera, na przykład, pliki kodu źródłowego, których szkieletu kodu plików projektanta informacje i zasoby osadzone.
+Te szablony stanowią punkt wyjścia dla użytkowników, aby rozpocząć tworzenie projektów ani rozszerzyć istniejących projektów. Szablony projektów dostarczają pliki, które są wymagane dla określonego typu projektu, zawierają odwołania do standardowego zestawu i ustawiają domyślne opcje kompilatora i właściwości projektu. Szablony elementów można dostosować w zakresie rozwiązania od jednego pusty plik zawierający określone rozszerzenie pliku, wielu plików kodu źródłowego z kodem stub plików projektanta informacje i zasoby osadzone.
 
-Oprócz zainstalowanych szablonów w **nowy projekt** i **Dodaj nowy element** okien dialogowych, można tworzyć własne szablony, lub pobierania i użyj tworzone przez społeczność. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
+Za pomocą szablonów zainstalowanych w **nowy projekt** i **Dodaj nowy element** okien dialogowych, tworzyć własne szablony, lub pobranie i użycie szablony utworzone przez społeczność. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Zawartość szablonu
 
 Wszystkie szablony projektów i elementów, czy zainstalowane z programem Visual Studio lub utworzone przez użytkownika, funkcji przy użyciu tych samych zasad i mieć spisu treści. Wszystkie szablony zawierają następujące elementy:
 
-- Pliki, które można utworzyć, jeśli jest używany szablon. Dotyczy to plików kodu źródłowego, zasobów osadzonych, plików projektu i tak dalej.
+- Pliki, które można utworzyć, jeśli jest używany szablon. Te pliki zawierają pliki kodu źródłowego, zasoby osadzone, pliki projektu i tak dalej.
 
-- Jeden plik .vstemplate. Ten plik zawiera metadanych, który zawiera informacje potrzebne do wyświetlenia szablonu w **nowy projekt** i **Dodaj nowy element** okien dialogowych i utworzyć projektu lub elementu z szablonu. Aby uzyskać więcej informacji na temat plików .vstemplate zobacz [parametrów szablonu](../ide/template-parameters.md).
+- Jeden *.vstemplate* zawierający metadane wymagane do wyświetlenia szablonu w **nowy projekt** i **Dodaj nowy element** okien dialogowych i tworzenia projektu lub elementu z szablon. Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [parametrów szablonu](../ide/template-parameters.md).
 
-Jeśli te pliki są skompresowane w pliku .zip i umieszcza w prawidłowym folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
+Jeśli te pliki są skompresowane w *.zip* plików i umieścić w prawidłowym folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
 
 - Szablony projektu są wyświetlane w **nowy projekt** okno dialogowe.
 
@@ -51,7 +48,7 @@ Aby uzyskać więcej informacji o folderach szablonów, zobacz [porady: lokalizo
 
 ## <a name="starter-kits"></a>Zestawy początkowe
 
-Zestawy startowe są rozszerzone przez szablony, które mogą być współużytkowane z innymi członkami społeczności. Zestaw startowy zawiera przykłady kodu, które kompilują, dokumentację i inne zasoby, aby pomóc użytkownikom poznać nowe narzędzia i techniki programowania, podczas tworzenia użytecznych, rzeczywistych aplikacji. Podstawowe zawartości i procedury zestawu startowego są identyczne z tymi szablonami. Aby uzyskać więcej informacji, zobacz [porady: tworzenie Starter Kit](../ide/how-to-create-starter-kits.md).
+Zestawy startowe są rozszerzone przez szablony, które mogą być współużytkowane z innymi członkami społeczności. Zestawy początkowe obejmują przykłady kodu można skompilować dla dokumentacji i inne zasoby, aby ułatwić użytkownikom uzyskać nowych narzędzi i technik programowania podczas kompilowania aplikacji przydatne, rzeczywistych. Podstawowa zawartość i procedury dotyczące Starter Kit są takie same, jak w przypadku szablonów. Aby uzyskać więcej informacji, zobacz [porady: tworzenie Starter Kit](../ide/how-to-create-starter-kits.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -2,23 +2,21 @@
 title: Sprawdzanie poprawności języka specyficznego dla domeny | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 94be1947136d2e118cf4a015e6c962eb45e94eae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia walidacji, aby sprawdzić, czy model utworzone przez użytkownika jest łatwy do rozpoznania. Na przykład jeśli Twoje DSL umożliwia użytkownikom rysowanie drzewa rodziny osób i ich elementów nadrzędnych, można zapisać ograniczenia, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementów nadrzędnych.  
@@ -57,7 +55,7 @@ Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczen
   
 1.  Włącz sprawdzanie poprawności w **Editor\Validation** węzła:  
   
-    1.  Open **Dsl\DslDefinition.dsl**.  
+    1.  Otwórz **Dsl\DslDefinition.dsl**.  
   
     2.  W Eksploratorze DSL rozwiń **edytor** a następnie wybierz węzeł **weryfikacji**.  
   

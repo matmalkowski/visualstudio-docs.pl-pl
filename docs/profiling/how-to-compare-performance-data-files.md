@@ -1,30 +1,26 @@
 ---
-title: "Porady: porównywanie plików danych wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: porównywanie plików danych wydajności | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
 - profiling tools, how to compare profiler result files
 - profiler result files, how to compare
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e16202fb1b35a48925297e35840a60b65f0488
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 488020c4be8b03a48b8cb705972f4665ea40ca98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-compare-performance-data-files"></a>Porady: porównywanie plików danych wydajności
 Możesz porównać wyniki dwa pliki danych innego profilera (Vsp lub vsps), tworzenie raportu porównania ("Diff") lub widoku. Porównanie przedstawia różnice, regresji wydajności i ulepszenia, które nastąpiły jednej sesji profilowania.  

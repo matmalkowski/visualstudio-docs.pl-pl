@@ -1,12 +1,9 @@
 ---
-title: "Tworzenie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie projektów i rozwiązań
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 ![Rozwiązanie lub projekt hierarchii](./media/vside-proj-soln.png)
 
-Można wyświetlić Twojego rozwiązania i projekty, które znajdują się w oknie narzędzia o nazwie **Eksploratora rozwiązań**. Poniższy zrzut ekranu przedstawia przykład rozwiązania w Eksploratorze rozwiązań (platformy UWP BikeSharing.Xamarin), która zawiera dwa projekty: BikeSharing.Clients.Core i BikeSharing.Clients.Windows. Każdy projekt zawiera wiele plików, folderów i odwołań. Nazwa projektu pogrubione jest *projekt startowy*; oznacza to, że w projekcie, który rozpoczyna się po uruchomieniu aplikacji. Można określić, który projekt jest projekt startowy.
+Można wyświetlić Twojego rozwiązania i projekty, które znajdują się w oknie narzędzia o nazwie **Eksploratora rozwiązań**. Poniższy zrzut ekranu przedstawia przykład rozwiązania **Eksploratora rozwiązań** (**BikeSharing.Xamarin UWP**) zawiera dwa projekty: **BikeSharing.Clients.Core** i **BikeSharing.Clients.Windows**. Każdy projekt zawiera wiele plików, folderów i odwołań. Nazwa projektu pogrubione jest *projekt startowy*; oznacza to, że w projekcie, który rozpoczyna się po uruchomieniu aplikacji. Można określić, który projekt jest projekt startowy.
 
 ![Eksplorator rozwiązań z projektami](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ Trwa powiedział, rozwiązań i projektów nie wymagane do opracowywania aplikac
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Aby utworzyć projekt z szablonu projektu
 
-1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na stronie początkowej, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** wpisz lub wybierz **Tworzenie nowego projektu** łącze, aby otworzyć **nowy projekt** okno dialogowe. Można również wybrać **pliku** > **nowy** > **projektu...**  menu paska lub wybierz **nowy projekt** przycisk na pasku narzędzi.
+1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na **— strona początkowa**, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** wpisz lub wybierz **Tworzenie nowego projektu** łącze, aby otworzyć **nowy Projekt** okno dialogowe. Można również wybrać **pliku** > **nowy** > **projektu...**  menu paska lub wybierz **nowy projekt** przycisk na pasku narzędzi.
 
   ![Strona początkowa](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ Trwa powiedział, rozwiązań i projektów nie wymagane do opracowywania aplikac
 
 1. Wybierz **OK** przycisk, aby utworzyć rozwiązania i projektu.
 
-1. Jeśli chcesz dodać dodatkowy projekt do rozwiązania, wybierz węzeł rozwiązania w Eksploratorze rozwiązań, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+1. Jeśli chcesz dodać dodatkowy projekt do rozwiązania, wybierz węzeł rozwiązania w **Eksploratora rozwiązań**, a następnie na pasku menu wybierz pozycję **projektu** > **Dodaj nowy element**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu
 
@@ -122,10 +119,10 @@ Aby utworzyć projekt tymczasowy, najpierw przejść do **narzędzia** > **opcje
 
 ## <a name="delete-a-solution-project-or-item"></a>Usuwanie rozwiązania, projektu lub elementu
 
-Możesz usunąć rozwiązań i ich zawartość stałe, ale nie za pomocą środowiska IDE programu Visual Studio. Usuwanie elementów w programie Visual Studio tylko usuwa je z bieżącego rozwiązania lub projektu. Aby trwale usunąć rozwiązania lub innego składnika z systemu, użyj Eksploratora plików można usunąć folderu, który zawiera pliki rozwiązania .sln i .suo. Jednak przed trwałe usunięcie rozwiązania, zalecane jest, wykonać kopię zapasową wszelkich projektów lub pliki w przypadku, gdy należy je ponownie.
+Możesz usunąć rozwiązań i ich zawartość stałe, ale nie za pomocą środowiska IDE programu Visual Studio. Usuwanie elementów w programie Visual Studio tylko usuwa je z bieżącego rozwiązania lub projektu. Aby trwale usunąć rozwiązania lub innego składnika z systemu, użyj Eksploratora plików, można usunąć folderu, który zawiera *.sln* i *.suo* pliki rozwiązania. Jednak przed trwałe usunięcie rozwiązania, zalecane jest, wykonać kopię zapasową wszelkich projektów lub pliki w przypadku, gdy należy je ponownie.
 
 > [!NOTE]
-> Plik .suo jest ukryty plik, który nie jest wyświetlany w obszarze domyślne ustawienia Eksploratora plików. Aby wyświetlić ukryte pliki na **widoku** menu w Eksploratorze plików wybierz **ukryte elementy** wyboru.
+> *.Suo* plik jest plikiem ukrytym, które nie są wyświetlane w obszarze domyślne ustawienia Eksploratora plików. Aby wyświetlić ukryte pliki na **widoku** menu w Eksploratorze plików wybierz **ukryte elementy** wyboru.
 
 ### <a name="to-permanently-delete-a-solution"></a>Aby trwale usunąć rozwiązania
 

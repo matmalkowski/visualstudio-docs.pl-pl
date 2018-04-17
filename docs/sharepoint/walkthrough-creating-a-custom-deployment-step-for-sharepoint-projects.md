@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Wskazówki: Tworzenie niestandardowego kroku wdrożenia dla projektów SharePoint
   Podczas wdrażania projektu SharePoint Visual Studio wykonuje serię kroków wdrożenia w określonej kolejności. Visual Studio obejmuje wiele kroków wdrażania wbudowanych, ale mogą także tworzyć własne.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wybierz **projektu VSIX** szablonu, nazwy projektu **UpgradeDeploymentStep**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **UpgradeDeploymentStep** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **UpgradeDeploymentStep** projektu do **Eksploratora rozwiązań**.  
   
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wybierz **biblioteki klas** projektu szablonu, nazwy projektu **DeploymentStepExtension**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **DeploymentStepExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **DeploymentStepExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 5.  Usuń plik kodu Class1 z projektu.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Wybierz **Zakończ** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]tworzy projekt EmployeesListDefinition.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt EmployeesListDefinition.  
   
 8.  Otwórz menu skrótów projektu EmployeesListDefinition, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy element**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **Domyślne (pusta)** jest wybierany w **tworzenie na podstawie listy można dostosowywać:** listy.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Tworzy element listy pracowników z kolumnę tytułu i SIS pusty i otworzy w Projektancie listy.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy element listy pracowników z kolumnę tytułu i SIS pusty i otworzy w Projektancie listy.  
   
 12. W Projektancie listy na **kolumn** , wybierz pozycję **wpisz nazwę nowej lub istniejącej kolumny** wiersza, a następnie dodaj następujących kolumn w **Nazwa wyświetlana kolumna** listy:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Zostanie otwarty Edytor właściwości/projektanta.  
   
-4.  Na **widoków** , wybierz pozycję **E-Mail** kolumny, a następnie wybierz pozycję  **<**  klucza można przenieść tej kolumny z **wybrane kolumny**listy, aby **dostępne kolumny** listy.  
+4.  Na **widoków** , wybierz pozycję **E-Mail** kolumny, a następnie wybierz pozycję **<** klucza można przenieść tej kolumny z **wybrane kolumny**listy, aby **dostępne kolumny** listy.  
   
      Ta akcja usuwa te pola z domyślny widok **pracowników** listy w witrynie programu SharePoint.  
   

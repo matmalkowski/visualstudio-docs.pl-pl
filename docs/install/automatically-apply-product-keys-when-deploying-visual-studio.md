@@ -3,10 +3,8 @@ title: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Vis
 ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
@@ -14,11 +12,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f6a8e00d15e49aeab990c797197fec445db45b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 Można zastosować klucza produktu programowego jako część skrypt, który służy do automatyzowania wdrażania programu Visual Studio. Możesz ustawić klucz produktu na urządzeniu programowo podczas instalacji programu Visual Studio lub po zakończeniu instalacji.
@@ -43,7 +41,7 @@ Można zastosować klucza produktu programowego jako część skrypt, który sł
 
  Poniższa tabela zawiera listę kodów MPC dla każdej wersji programu Visual Studio:
 
-| Visual Studio Edition                | MPC   |
+| Wersja programu Visual Studio                | MPC   |
 |--------------------------------------|-------|
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |

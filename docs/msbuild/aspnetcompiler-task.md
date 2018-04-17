@@ -2,11 +2,8 @@
 title: Przy użyciu aspnetcompiler — zadanie wstępnej kompilacji aplikacji programu ASP.NET | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, AspNetCompiler task
 - AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
-caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b1528cd71c689876cd2c496e9cfdaaf0a97f0186
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: eb1732b61f151c15f82c7e594be3e5bcb99be263
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler — Zadanie
 `AspNetCompiler` Zadań opakowuje aspnet_compiler.exe, narzędzie do wstępnego kompilowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji.  

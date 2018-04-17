@@ -1,28 +1,26 @@
 ---
-title: "DA0004: Znaczące wykorzystanie czasu procesora | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0004: Znaczące wykorzystanie czasu procesora | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
 - vs.performance.DA0004
 - vs.performance.4
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2612be6fd6980b6134c283ae0f6e6edf4155c955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b5a1c001a5a0f23d008345ebd5f0c228c166c49f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Znaczące wykorzystanie czasu procesora
 |||  

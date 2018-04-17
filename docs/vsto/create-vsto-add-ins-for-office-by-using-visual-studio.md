@@ -1,24 +1,23 @@
 ---
-title: "Tworzenie dodatków narzędzi VSTO dla pakietu Office przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie dodatków narzędzi VSTO dla pakietu Office przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
   Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, które rozszerzają pakietu Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   [Microsoft Office Developer Center](http://go.microsoft.com/fwlink/?LinkId=83467) zawiera łącza do artykułów technicznych, przykłady kodu, pliki do pobrania, informacji społeczności, pomocy technicznej i inne dokumentacji dostosowań pakietu Office i aplikacje biznesowe pakietu Office (OBAs ).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Zawiera linki do informacji na temat sposobu konfigurowania komputera do tworzenia rozwiązań pakietu Office rozpocząć tworzenie rozwiązań pakietu Office oraz Nowości dotyczące programowanie Office w Visual Studio.  
   
  [Uaktualnianie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
  Zawiera łącza do tematów, które zapewniają szczegółowe instrukcje dotyczące wykonywania typowych zadań ani aplikacji przykładowych.  
   
- [Informacje ogólne &#40; programowanie Office w Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Zawiera linki do szczegółowych informacji o podstawowe zestawy międzyoperacyjne pakietu Office, manifesty elementy interfejsu użytkownika i komunikaty o błędach.  
   
- [Zarządzane odniesienia &#40; programowanie Office w Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Zarządzana dokumentacja &#40;programowanie Office w Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  Zawiera linki do informacji na temat interfejsu API w przestrzeni nazw i typy, które są używane w pakiecie Office projektów przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Dla dokumentacji interfejsu API o obszary nazw i typy, które są używane w projektach pakietu Office, które odnoszą się do programu .NET Framework 3.5, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [odwołania zarządzane przez System 2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Niezarządzany wykaz interfejsów API &#40; programowanie Office w Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Niezarządzany wykaz interfejsów API &#40;programowanie Office w Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Zawiera linki do informacji na temat interfejsy modelu COM, które służy do wykonywania działań takich jak obciążenia i zwolnić zarządzane VSTO dodatki w aplikacjach pakietu Office.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

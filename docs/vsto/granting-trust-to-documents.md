@@ -1,12 +1,10 @@
 ---
-title: "Udzielanie zaufania do dokumentów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Udzielanie zaufania do dokumentów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5c8cb7bc19c4668c9315c516430ffe8a8ff30ddc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="granting-trust-to-documents"></a>Udzielanie zaufania do dokumentów
   Projekt poziomie dokumentu ma te same wymagania zabezpieczeń jako projektów na poziomie aplikacji: podpisywanie manifestów przy użyciu certyfikatu lub klikając wiersz zaufania. Ponadto dokumentu lub skoroszytu musi znajdować się w katalogu, który jest oznaczony jako zaufanej lokalizacji.  

@@ -1,23 +1,21 @@
 ---
-title: "Samouczek 3: Tworzenie pasujący gier | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Samouczek 3: Tworzenie pasujący gier | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
-caps.latest.revision: "13"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5625ae1e666e6e59873d030e6732ef3ef3e6a35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3d0e538304e2d9c3fb5ca71747fd1ed2ab2a5fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie pasującego gry
 W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary ukrytych ikon. Dowiesz się, jak:  

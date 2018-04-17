@@ -1,26 +1,24 @@
 ---
-title: "Caller — widok wywoływany - dane próbkowania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Caller — widok wywoływany - dane próbkowania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Caller/Callee view
 - Caller/Callee view
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 81c10d85b9dc88115e7dbc57a03a6da4362fa945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 33a50984b338a5964c81d1f90319956531a644a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="caller--callee-view---sampling-data"></a>Obiekt wywołujący / wywoływany widok - dane próbkowania
 Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.  

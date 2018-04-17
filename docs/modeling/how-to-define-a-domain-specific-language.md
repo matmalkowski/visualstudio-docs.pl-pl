@@ -1,10 +1,8 @@
 ---
-title: "Sposób definiowania języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Sposób definiowania języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -16,22 +14,22 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 57ae6465ec8d9fbbe85ff1f040d69b227c6a76fe
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5cff720949f6b521b35fb68154ff3b3b43f14a8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie Visual Studio z szablonu. Część klucza rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition.dsl. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodanie do tych elementów, można dodać kod program, aby dostosować DSL bardziej szczegółowo.
 
 Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej witrynie: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a>Wybieranie rozwiązania szablonu  
+##  <a name="templates"></a> Wybieranie rozwiązania szablonu  
  Aby zdefiniować DSL, należy zainstalować następujące składniki:  
   
 |||  
@@ -123,7 +121,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Usuń lub zmień innych klas ze swoimi potrzebami.  
   
-##  <a name="patterns"></a>Wzorce definiowania DSL  
+##  <a name="patterns"></a> Wzorce definiowania DSL  
  Zaleca się tworzenie DSL przez dodanie lub dostosowanie funkcji jeden lub dwa jednocześnie. Dodawanie funkcji, uruchamiania DSL i przetestować go, a następnie dodaj jeden lub dwa więcej funkcji. Typowa funkcja Twoje DSL może wyglądać następująco:  
   
 -   Klasa domeny, relacja osadzania łączący element modelu kształtu wymagane do wyświetlania elementów klas na diagram i narzędzia elementu, który pozwala użytkownikom na tworzenie elementów.  
@@ -150,7 +148,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
 > [!NOTE]
 >  "Modelu" odwołuje się do wystąpienia programu DSL użytkownikom tworzenie i zwykle wyświetlane jako diagram. W tym temacie omówiono diagramu definicji DSL i diagramy modelu, które są wyświetlane, gdy jest używany z DSL.  
   
-##  <a name="classes"></a>Definiowanie klas domeny  
+##  <a name="classes"></a> Definiowanie klas domeny  
  Klasy domeny reprezentują koncepcji sieci DSL. Wystąpienia są *elementy modelu*. Na przykład w **MusicLibrary** DSL może mieć klasy domeny o nazwie **albumu** i **utworu**.  
   
  Aby utworzyć klasę domeny, możesz przeciągnąć z **klasy o nazwie domeny** narzędzia do diagramu, a następnie zmienić nazwę klasy.  
@@ -232,7 +230,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
 7.  **Zapisz plik, zamknij go i otwórz go ponownie**. Wszystkie wystąpienia utworzone powinny być widoczne w Eksploratorze po rozwiń węzły.  
   
-##  <a name="shapes"></a>Definiowanie kształtów na diagramie  
+##  <a name="shapes"></a> Definiowanie kształtów na diagramie  
  Możesz zdefiniować klasy elementów, które są wyświetlane na diagramie ikon prostokąty lub wielokropków.  
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Aby zdefiniować klasę elementów, które są wyświetlane jako kształtów na diagramie  
@@ -328,7 +326,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Po przetestowaniu najpierw kształtu, można dopasować niektóre jego właściwości i dodać niektórych bardziej zaawansowanych funkcji. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="references"></a>Definiowanie relacji odwołania  
+##  <a name="references"></a> Definiowanie relacji odwołania  
  Można zdefiniować relacji między dowolnej klasy domeny źródłowej i wszystkie klasy domeny docelowej. Relacje odwołania są zwykle wyświetlane na diagramie łączników, które są linie między kształtami.  
   
  Na przykład albumów muzycznych i artystów są wyświetlane jako kształtów na diagramie, można zdefiniować relacji o nazwie ArtistsAppearedOnAlbums zawierającego łącze do albumów, na których pracowali artystów. Zobacz przykład pokazany na rysunku.  
@@ -410,7 +408,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Po przetestowaniu najpierw łącznika, można dopasować niektóre jego właściwości i dodać niektórych bardziej zaawansowanych funkcji. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="compartments"></a>Definiowanie kształtów, które zawierają listy: przedziału kształtów  
+##  <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: przedziału kształtów  
  Kształt Przedział zawiera jedną lub więcej list elementów. Na przykład w DSL biblioteki utworów muzycznych, można użyć kształtów przedziału do reprezentowania utworów muzycznych albumów. W przypadku każdego albumu znajduje się lista utworów.  
   
  ![Przedziału kształtu](../modeling/media/compartmentshape.png "CompartmentShape")  
@@ -538,7 +536,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
 7.  Wybierz łącze lub element w kształcie Przedział. Zarówno łącza, a element powinien zniknąć.  
   
-##  <a name="ports"></a>Definiowanie porty na granicy innego kształtu  
+##  <a name="ports"></a> Definiowanie porty na granicy innego kształtu  
  Port jest kształtu, który znajduje się na granicy innego kształtu.  
   
  Porty mogą również służyć do zapewnienia punktu połączenia środka innego kształtu, do którego użytkownik może wykonywać rysowanie łączników. W takim przypadku należy przezroczystego kształtu portu.  
@@ -561,7 +559,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Aby uzyskać więcej informacji, zobacz [kształtów właściwości portu](../modeling/properties-of-port-shapes.md).  
   
-##  <a name="swimlanes"></a>Definiowanie DSL, który ma ścieżek  
+##  <a name="swimlanes"></a> Definiowanie DSL, który ma ścieżek  
  Ścieżek są poziomej lub pionowej partycji diagramu. Każdy tor odnosi się do elementu modelu. Definicja DSL wymaga jednej klasy domeny dla elementów tor.  
   
  Najlepszym sposobem tworzenia DSL ze ścieżek jest do tworzenia nowego rozwiązania DSL i wybierz szablon rozwiązania przepływ zadań. W definicji DSL klasy aktora jest mapowany na tor klasy domeny. Zmień nazwę tego i innych klas do projektu.  
@@ -572,7 +570,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Aby uzyskać więcej informacji, zobacz [właściwości ścieżek](../modeling/properties-of-swimlanes.md).  
   
-##  <a name="addTypes"></a>Dodawanie typów właściwości  
+##  <a name="addTypes"></a> Dodawanie typów właściwości  
   
 ### <a name="domain-enumerations-and-literals"></a>Literały i wyliczenia domeny  
  Wyliczenia domena jest typem z kilku wartości literału.  
@@ -588,7 +586,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Aby dodać typ, kliknij prawym przyciskiem myszy katalogu głównego modelu w Eksploratorze DSL, a następnie kliknij przycisk **dodać nowy typ zewnętrznej**. W oknie właściwości ustaw nazwę **kolor** oraz przestrzeń nazw **System.Drawing**. Ten typ jest teraz wyświetlany w Eksploratorze DSL w obszarze **typów domeny**. Można go, gdy ustawiony typ właściwości domeny.  
   
-##  <a name="custom"></a>Dostosowywanie DSL  
+##  <a name="custom"></a> Dostosowywanie DSL  
  Za pomocą metod opisanych w tym temacie, można szybko utworzyć DSL podającą notacji, czytelnej postaci XML i podstawowe narzędzia, które są wymagane do generowania kodu i pozostałych artefaktów.  
   
  Istnieją dwie metody rozszerzania definicji DSL:  
@@ -608,7 +606,7 @@ Jeśli jesteś nowym użytkownikiem DSLs, zaleca się pracę za pośrednictwem *
   
  Zobacz też [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
   
-##  <a name="trouble"></a>Rozwiązywanie problemów  
+##  <a name="trouble"></a> Rozwiązywanie problemów  
  W poniższej tabeli wymieniono niektóre z najczęściej występujących problemów występujących podczas projektowania DSL, oraz sugestie dotyczące ich rozwiązania. Więcej porad jest dostępna w [Extensibililty Forum narzędzi wizualizacji](http://go.microsoft.com/fwlink/?LinkId=186074).  
   
 |Problem|Sugestia|  

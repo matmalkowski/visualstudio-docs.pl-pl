@@ -1,29 +1,25 @@
 ---
-title: "Cvreleaseprovider — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Cvreleaseprovider — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvReleaseProvider
 helpviewer_keywords:
 - CvReleaseProvider method
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd65b5b90112e42c4503a650baa4a362b020566
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a62e590f930baa3e0684fbbf36356cfc607e930
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider — Funkcja
 Dostawca znacznika wersjach. Zwalnianie dostawcy znacznika nie wpłynie na utworzonej wcześniej znacznika serii tego dostawcy. Znacznika serie mają być wersji oddzielnie przez wywołanie CvReleaseMarkerSeries. Błąd zwolnienia dostawcy spowoduje przeciek pamięci.  

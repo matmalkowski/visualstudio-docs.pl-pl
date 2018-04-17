@@ -1,23 +1,21 @@
 ---
 title: LineOff | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ebab610e9f684cf55054fae6916e6d1b1fb40d67
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 42cceb5c2bc756a976cd1df2a0c74f5313a6df79
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lineoff"></a>LineOff
 Domyślnie profilera zbiera źródła kodu wiersza numer wiersza numer przesunięcia danych i gdy używana jest metoda profilowania próbkowania. VSPerfCmd **LineOff** opcji wyłącza zbieranie danych numer wiersza podczas VSPerfCmd są używane do uruchamiania aplikacji. Dane profilowania zbieranych funkcji poziomie podczas **LineOff** jest określona.  
@@ -36,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ## <a name="required-options"></a>Wymagane opcje  
  **LineOff** opcji można użyć tylko w wierszu polecenia, który zawiera **uruchamianie** opcji.  
   
- **Uruchom:**`AppName`  
+ **Uruchom:** `AppName`  
  Uruchamia określony aplikację i rozpocznie się profilowania za pomocą metody pobierania próbek.  
   
 ## <a name="example"></a>Przykład  

@@ -1,27 +1,23 @@
 ---
-title: MSBuild | Microsoft Docs
+title: MSBuild | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: 59
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 970eb8f942a2a9bdd04b0bd5cf823ddba2f74931
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również nazywany MSBuild, udostępnia schematu XML dla pliku projektu, która kontroluje sposób platformy kompilacji przetwarza i tworzy oprogramowania. Visual Studio będzie korzystać program MSBuild, ale nie jest zależny od programu Visual Studio. Wywołując msbuild.exe w pliku projektu lub rozwiązania, możesz organizować i kompilacji produktów w środowiskach, w którym nie jest zainstalowany program Visual Studio.  
@@ -73,7 +69,7 @@ ms.lasthandoff: 04/10/2018
   
 -   [Przy użyciu programu MSBuild w programie Visual Studio](#BKMK_VisualStudio)  
   
--   [Multitargeting](#BKMK_Multitargeting)  
+-   [Przeznaczanie dla wielu platform](#BKMK_Multitargeting)  
   
 ##  <a name="BKMK_CommandPrompt"></a> Przy użyciu programu MSBuild w wierszu polecenia  
  Aby uruchomić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wierszu polecenia, przekazać plik projektu do MSBuild.exe, wraz z niej odpowiednie opcje wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych elementów docelowych i ustaw inne opcje, które kontrolują proces kompilacji. Na przykład czy użyć następującej składni wiersza polecenia do tworzenia pliku `MyProj.proj` z `Configuration` ustawioną właściwość `Debug`.  

@@ -2,24 +2,22 @@
 title: Dostosowywanie zachowania usunięcia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
 - Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: a4aa237fc7021e49dc8756cbafbb5b61b62d128c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia również. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne zostaną usunięte. To zachowanie jest o nazwie *usunąć propagacji*. Można dostosować propagacji delete, na przykład ułożyć, że dodatkowe powiązane elementy są usuwane. Pisanie kodu programu, możesz wprowadzić propagacji delete są zależne od stanu modelu. Może również spowodować inne zmiany w odpowiedzi do usunięcia.  

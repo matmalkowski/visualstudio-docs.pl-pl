@@ -1,21 +1,19 @@
 ---
 title: T4 Dyrektywa Include | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4cfa7742a75b24288ef3617d8195a75e13d8e817
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-include-directive"></a>Dyrektywa T4 Include
 W szablonie tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mogą zawierać tekst z innego pliku przy użyciu `<#@include#>` dyrektywy. Możesz umieścić `include` dyrektywy w dowolnym miejscu szablonu tekstowego przed pierwszym bloku funkcji klasy `<#+ ... #>`. Pliki załączone może również zawierać `include` dyrektywy i innych dyrektyw. To pozwala na udostępnianie kodu szablonu i standardowych wzorców tekstu szablonu między szablonami.  
@@ -26,13 +24,13 @@ W szablonie tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath`może być ścieżką bezwzględną, lub względem bieżącego pliku szablonu.  
+-   `filePath` może być ścieżką bezwzględną, lub względem bieżącego pliku szablonu.  
   
      Ponadto określonych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzeń można określić ich własnych katalogów do wyszukiwania plików dołączanych. Na przykład po zainstalowaniu wizualizacji i modelowania SDK (narzędzia DSL) następujący folder zostanie dodany do listy include: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Te dodatkowe foldery dołączania mogą zależeć od rozszerzenia dołączanego pliku. Na przykład narzędzia DSL zawierają folder jest dostępna wyłącznie dla w tym pliki mające rozszerzenie pliku`.tt`  
+     Te dodatkowe foldery dołączania mogą zależeć od rozszerzenia dołączanego pliku. Na przykład narzędzia DSL zawierają folder jest dostępna wyłącznie dla w tym pliki mające rozszerzenie pliku `.tt`  
   
--   `filePath`może zawierać zmienne środowiskowe rozdzielany z "%". Na przykład:  
+-   `filePath` może zawierać zmienne środowiskowe rozdzielany z "%". Na przykład:  
   
     ```  
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
@@ -111,7 +109,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a>Za pomocą właściwości projektu MSBuild i Visual Studio  
+##  <a name="msbuild"></a> Za pomocą właściwości projektu MSBuild i Visual Studio  
  Mimo że można użyć makra programu Visual Studio podobnego do $(SolutionDir) w dyrektywy include, nie działają one w programie MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.  
   
  Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. W tym przykładzie definiuje właściwość o nazwie `myIncludeFolder`:  

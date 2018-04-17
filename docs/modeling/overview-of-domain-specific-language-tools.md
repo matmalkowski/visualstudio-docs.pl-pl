@@ -1,23 +1,21 @@
 ---
-title: "Omówienie narzędzia języka specyficznego dla domeny | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie narzędzia języka specyficznego dla domeny | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89ff0565bf33936f15c18c0964fc9fb2f64ab9b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd105ae8553d39a6fe1a1bd23136d5027da17ec3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 Narzędzia języka specyficznego dla domeny (narzędzia DSL), które znajdują się w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]systemowi projektowania języka specyficznego dla domeny, a następnie wygenerować wszystkie czynności, które użytkownicy muszą mieć do tworzenia modeli, które są oparte na języku.  
@@ -45,7 +43,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które znajdują s
   
 -   Minimalny WPF  
   
--   Minimal Windows.Forms  
+-   Minimalny Windows.Forms  
   
 -   Biblioteka DSL  
   
@@ -53,7 +51,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które znajdują s
   
  Kreator tworzy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania, które ma w następujących projektach:  
   
--   Dsl  
+-   DSL  
   
      Projekt Dsl definiuje języka specyficznego dla domeny i jej narzędzi edycji i przetwarzania.  
   

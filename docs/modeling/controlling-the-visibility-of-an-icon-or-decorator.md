@@ -1,21 +1,19 @@
 ---
-title: "Kontrolowanie widoczności ikony lub Dekoratora | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kontrolowanie widoczności ikony lub Dekoratora | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 835d9d356a06c831bb3decf6d0a5a6a4b5620302
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7682bbb448caa6dbd1938dfc6dcdb6d89c083680
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 A *dekoratora* jest ikona albo wiersza tekstu wyświetlanego na kształt języka specyficznego dla domeny (DSL). Możesz ustawić dekoratora występują a znikają w zależności od stanu właściwości w modelu. Na przykład na kształt reprezentujący osoby, może mieć inne ikony, które znajdują się w zależności od danej osoby, płci, liczbę elementów podrzędnych i tak dalej.  

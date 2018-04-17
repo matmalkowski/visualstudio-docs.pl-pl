@@ -1,27 +1,24 @@
 ---
 title: Widok interakcji warstwy | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
 helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7246d9ac119885e8a6f736d853cf0b842b84f8c9
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 31d425ce23e3987b0a57dc8228d1030fbdb80c9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tier-interactions-view"></a>Widok interakcji warstwowych
 
@@ -45,7 +42,7 @@ Widok interakcji przedstawia warstwy danych o interakcji między dwa okienka:
 |------------|-----------------|
 |**Nazwa**|— Dla wiersza najwyższego poziomu, nazwa PROFILOWANEGO procesu lub strony sieci Web.<br />— Dla wiersza połączenia bazy danych, nazwę serwera, który jest hostem bazy danych.|
 |**Bazy danych**|Nazwa bazy danych (tylko wiersze połączenia bazy danych).|
-|**Count**|Całkowita liczba żądań, które są generowane przez proces, strony sieci Web lub połączenia z bazą danych.|
+|**Liczba**|Całkowita liczba żądań, które są generowane przez proces, strony sieci Web lub połączenia z bazą danych.|
 |**Całkowity czas**|Łączny czas, który jest podczas wykonywania żadnych jedno żądanie z procesu, strony sieci Web lub połączenia z bazą danych.|
 |**Maksymalny czas, który upłynął**|Maksymalny czas wykonywania żadnych jedno żądanie z procesu, strony sieci Web lub połączenia z bazą danych.|
 |**Minimalny czas, który upłynął**|Minimalny czas, który jest podczas wykonywania żadnych jedno żądanie z procesu, strony sieci Web lub połączenia z bazą danych.|

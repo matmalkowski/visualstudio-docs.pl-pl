@@ -1,12 +1,10 @@
 ---
-title: "Porady: dane w dokumencie chroniony hasłem z pamięci podręcznej | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dane w dokumencie chroniony hasłem z pamięci podręcznej | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Porady: dane z pamięci podręcznej w dokumentach zabezpieczonych hasłem
   Możesz dodać dane do pamięci podręcznej danych w dokumencie lub skoroszytu, który jest chroniony hasłem, zmiany w pamięci podręcznej danych nie są zapisane automatycznie. Można zapisać zmian w pamięci podręcznej danych przez zastąpienie dwie metody w projekcie.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Do pamięci podręcznej danych w skoroszycie programu Excel, która jest chroniona hasłem  
   
-1.  W `ThisWorkbook` klasy lub jednej z `Sheet`  *n*  klas, zaznacz pola publicznego lub właściwości pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [buforowanie danych](../vsto/caching-data.md).  
+1.  W `ThisWorkbook` klasy lub jednej z `Sheet` *n* klas, zaznacz pola publicznego lub właściwości pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [buforowanie danych](../vsto/caching-data.md).  
   
 2.  Zastąpienie <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metoda `ThisWorkbook` klasy i usuwanie ochrony z tego skoroszytu.  
   

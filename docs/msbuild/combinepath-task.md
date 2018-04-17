@@ -2,11 +2,8 @@
 title: Combinepath — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - MSBuild, CombinePath task
 - CombinePath task [MSBuild]
 ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
-caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cea49adc8348c6531159fecab67e7de38bffa706
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 079c92e5f08deb414b612bf318e508b7adf50522
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combinepath-task"></a>CombinePath — Zadanie
 Scala określonych ścieżek w pojedynczą ścieżkę.  

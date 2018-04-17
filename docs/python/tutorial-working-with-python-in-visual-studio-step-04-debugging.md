@@ -1,27 +1,24 @@
 ---
-title: Praca z języka Python, krok 4, debugowanie | Dokumentacja firmy Microsoft
+title: Praca z języka Python, krok 4, debugowania
 description: Krok 4 samouczka core do pracy z języka Python w programie Visual Studio, obejmujące sposób uruchamiania w debugerze kodu języka Python.
 ms.custom: mvc
 ms.date: 03/08/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f29f310997b685369142e21cc71df8a21871cd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: df55dbc9630487a01a769f62d8477dbcc53a5579
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 
@@ -97,7 +94,7 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 
 1. Aby kontynuować, program działa do momentu osiągnięcia następnego punktu przerwania, użyj **Kontynuuj** (F5). Ponieważ ma punkt przerwania w `for` pętli, Podziel przy następnej iteracji.
 
-1. Krokowe wykonywanie setki iteracji pętli może być niewygodny, więc Visual Studio umożliwia dodanie *warunku* do punktu przerwania. Debuger następnie wstrzymuje program na punkt przerwania, tylko wtedy, gdy warunek jest spełniony. Na przykład można użyć warunku z punktu przerwania na `for` instrukcję, tak że wstrzymuje tylko gdy wartość `i` przekracza 1600. Aby ustawić ten warunek, kliknij prawym przyciskiem myszy red punktu przerwania kropki (.), a następnie wybierz **warunki...** (Alt+F9,C). W **ustawienia punktów przerwania** menu podręczne, zostanie wyświetlone, wprowadź `i > 1600` jako wyrażenie i wybierz **Zamknij**. Naciśnij klawisz F5, aby kontynuować i sprawdź, czy program ma być uruchamiany dużo iteracji, zanim następnej przerwy.
+1. Krokowe wykonywanie setki iteracji pętli może być niewygodny, więc Visual Studio umożliwia dodanie *warunku* do punktu przerwania. Debuger następnie wstrzymuje program na punkt przerwania, tylko wtedy, gdy warunek jest spełniony. Na przykład można użyć warunku z punktu przerwania na `for` instrukcję, tak że wstrzymuje tylko gdy wartość `i` przekracza 1600. Aby ustawić ten warunek, kliknij prawym przyciskiem myszy red punktu przerwania kropki (.), a następnie wybierz **warunki...** (Alt + F9, C). W **ustawienia punktów przerwania** menu podręczne, zostanie wyświetlone, wprowadź `i > 1600` jako wyrażenie i wybierz **Zamknij**. Naciśnij klawisz F5, aby kontynuować i sprawdź, czy program ma być uruchamiany dużo iteracji, zanim następnej przerwy.
 
     ![Ustawienie warunku punktu przerwania](media/vs-getting-started-python-21-debugging4.png)
 

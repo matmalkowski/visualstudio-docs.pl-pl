@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Tworzenie rozszerzenia projektu SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie rozszerzenia projektu SharePoint | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Wskazówki: tworzenie rozszerzenia projektu SharePoint
   W tym przewodniku ilustruje sposób tworzenia rozszerzeń dla projektów programu SharePoint. Aby odpowiedzieć na poziomie projektu zdarzenia, takie jak po projektu jest dodany, usunięty lub zmieniono jego nazwę, można użyć rozszerzenia projektu. Można również dodać niestandardowe właściwości lub reagować, gdy wartość właściwości zostanie zmieniona. W przeciwieństwie do rozszerzenia elementu projektu rozszerzenia projektu nie może być skojarzony z określonym typem projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenia ładuje po otwarciu dowolnego rodzaju projektu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  W **nazwa** wprowadź **ProjectExtension**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **ProjectExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **ProjectExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 5.  Usuń plik kodu Class1 z projektu.  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku source.extension.vsixmanifest, a następnie wybierz **Otwórz** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otwiera plik w Projektancie manifestu. Informacje wyświetlane w **metadanych** karta jest także wyświetlany w **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymaga pliku extension.vsixmanifest. Aby uzyskać więcej informacji dotyczących tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otwiera plik w Projektancie manifestu. Informacje wyświetlane w **metadanych** karta jest także wyświetlany w **rozszerzenia i aktualizacje**. Wszystkie pakiety VSIX wymaga pliku extension.vsixmanifest. Aby uzyskać więcej informacji dotyczących tego pliku, zobacz [odwołania 1.0 schematu rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  W **nazwa produktu** wprowadź **właściwości projektu niestandardowej**.  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Uruchom kompilację debugowania projektu przez wybranie **F5** klucza lub, w menu pasek wybierania **debugowania**, **Rozpocznij debugowanie**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 projektu i rozpoczyna eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenia do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 projektu i rozpoczyna eksperymentalne wystąpienie programu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Utwórz projekt rozwiązania farmy programu SharePoint i użyć wartości domyślnych dla innych wartości w kreatorze.  
   

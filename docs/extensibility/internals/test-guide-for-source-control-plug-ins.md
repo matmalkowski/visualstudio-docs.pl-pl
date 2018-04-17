@@ -1,12 +1,10 @@
 ---
-title: "Testowanie przewodnik plug-in kontroli źródła | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Testowanie przewodnik plug-in kontroli źródła | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - testing, source control plug-ins
 - source control plug-ins, test guide
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 37af6a289b59b6066a71836e4d44e380b584ec70
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik po testowym dla plug-in kontroli źródła
 Ta sekcja zawiera wskazówki dotyczące testowania z wtyczka do kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Podano szeroką gamę omówienie najczęściej obszarów testowych, jak również niektórych bardziej skomplikowanych obszarów, które mogą powodować problemy. W tym omówieniu nie stanowi wyczerpującej listy przypadków testowych.  

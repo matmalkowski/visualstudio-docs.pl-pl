@@ -1,27 +1,23 @@
 ---
-title: "Filtrowanie widoków raportów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Filtrowanie widoków raportów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a591f93c2cfb4cc744d8bde3a7d48a7c678d28a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filtering-report-views"></a>Filtrowanie widoków raportów
 Filtry można stosować do profilowania pliki danych, aby ograniczyć dane profilowania, który jest wyświetlany w widokach raport o wydajności i wyeksportowane pliki raportu. Można ograniczyć raportu do danych między wartości sygnatur czasowych, i umożliwia ograniczenie danych do określonych procesów i wątków. Można zapisać do pliku filtrów i utworzenie filtru na inny plik danych profilowania przez zaimportowanie zapisany filtr.  

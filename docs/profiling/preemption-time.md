@@ -1,29 +1,25 @@
 ---
-title: "Czas wywłaszczania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Czas wywłaszczania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.preemption
 helpviewer_keywords:
 - Concurrency Visualizer, Preemption Time
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ee0f1be5d687c145bc2c8af448b30ec364df2f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95c313026fee449d0420543fbc139d0365a63cf8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="preemption-time"></a>Czas wywłaszczania
 Te segmenty na osi czasu są skojarzone z blokowaniem czas, który jest skategoryzowany jako wywłaszczanie. Ta kategoria oznacza, że wątek przełączono się z powodu jednego z następujących powodów:  

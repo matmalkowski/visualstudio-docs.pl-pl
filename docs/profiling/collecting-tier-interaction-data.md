@@ -1,13 +1,10 @@
 ---
-title: "Zbieranie danych o interakcji między warstwy | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zbieranie danych o interakcji między warstwy | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c586b027bec7e480b3dc3b2b378b0ce9600a7d4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 79bcd9093202d4685078694f3f51cccc08f0be33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami
 

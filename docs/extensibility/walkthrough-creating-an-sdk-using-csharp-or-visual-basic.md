@@ -1,23 +1,21 @@
 ---
-title: "Wskazówki: Tworzenie SDK przy użyciu języka C# lub Visual Basic | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie SDK przy użyciu języka C# lub Visual Basic | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2106c26e8320e64a641197528c6b91223ef20342
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Wskazówki: Tworzenie SDK przy użyciu języka C# lub Visual Basic
 W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne za pomocą Visual C# i następnie pakietu SDK jako Visual Studio rozszerzenia (VSIX). Będzie wykonaj następujące procedury:  
@@ -31,7 +29,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby użyć tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Można utworzyć składnika środowiska wykonawczego systemu Windows SimpleMath  
+##  <a name="createClassLibrary"></a> Można utworzyć składnika środowiska wykonawczego systemu Windows SimpleMath  
   
 1.  Na pasku menu wybierz **pliku**, **nowy**, **nowy projekt**.  
   
@@ -59,7 +57,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne
   
 9. W **Eksploratora rozwiązań**, otwórz menu skrótów **SimpleMath** węzła projektu, a następnie wybierz **kompilacji**.  
   
-##  <a name="createVSIX"></a>Aby utworzyć projekt rozszerzenia SimpleMathVSIX  
+##  <a name="createVSIX"></a> Aby utworzyć projekt rozszerzenia SimpleMathVSIX  
   
 1.  Menu skrótów dla **rozwiązania "SimpleMath"** węzła, wybierz **Dodaj**, **nowy projekt**.  
   
@@ -154,7 +152,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne
   
 30. Wybierz **zainstalować** przycisku, poczekaj na zakończenie instalacji i ponownym uruchomieniu programu Visual Studio.  
   
-##  <a name="createSample"></a>Aby utworzyć przykładową aplikację używającą biblioteki klas  
+##  <a name="createSample"></a> Aby utworzyć przykładową aplikację używającą biblioteki klas  
   
 1.  Na pasku menu wybierz **pliku**, **nowy**, **nowy projekt**.  
   
@@ -168,7 +166,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne
   
 6.  W okienku szczegółów wybierz **proste SDK matematyczne** rozszerzenia.  
   
-     Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** łącze, aby otworzyć http://www.msdn.microsoft.com, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.  
+     Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** łącze, aby otworzyć http://www.msdn.microsoft.com, ponieważ określony w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.  
   
 7.  W **Menedżera odwołań** okno dialogowe, wybierz opcję **proste SDK matematyczne** pole wyboru, a następnie wybierz pozycję **OK** przycisku.  
   
@@ -237,7 +235,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty SDK biblioteki matematyczne
   
 12. Wybierz klawisz F5, aby uruchomić aplikację.  
   
-13. W aplikacji, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz  **=**  przycisku.  
+13. W aplikacji, wprowadź wszelkie dwóch liczb, wybierz operację, a następnie wybierz **=** przycisku.  
   
      Zostanie wyświetlone prawidłowego wyniku.  
   

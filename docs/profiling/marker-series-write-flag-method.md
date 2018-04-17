@@ -1,29 +1,25 @@
 ---
-title: "marker_series::write_flag — metoda | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: marker_series::write_flag — metoda | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
 helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beb882a336b5eeb95a9da554cc1377addf7e5772
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c979a2c37f786a4766952189cb300f32beff363c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag — Metoda
 Zapisuje plik śledzenia Concurrency Visualizer flagę.  

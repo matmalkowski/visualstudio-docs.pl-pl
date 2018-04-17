@@ -1,27 +1,23 @@
 ---
-title: "Porady: wstrzymywanie i wznowienie zbierania danych o wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: wstrzymywanie i wznowienie zbierania danych o wydajności | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d2fa0dd28d22e04b4df5942c3a3585693ede33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3643f931133151e6257c0820864ffe678e3a0fda
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Porady: wstrzymywanie i wznowienie zbierania danych o wydajności
 W oknie strony sesji profilowania można kontrolować zbierania danych profilowania interaktywnie.  

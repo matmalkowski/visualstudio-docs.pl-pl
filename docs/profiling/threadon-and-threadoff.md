@@ -1,23 +1,21 @@
 ---
 title: ThreadOn i ThreadOff | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2170eb467a7adbb8fd70a3063d8c772559b54350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 58d875acbc4b5afc569661b9351173084ee51b54
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn i ThreadOff
 VSPerfCmd.exe **ThreadOff** i **ThreadOn** podpoleceń polecenia są dostępne tylko w sesji profilowania wiersza polecenia, korzystających z metody instrumentacji. **ThreadOff** i **ThreadOn** wstrzymywanie i wznawianie profilowania dla określonego wątku. **ThreadOff** zatrzymuje profilowanie wątku i **ThreadOn** uruchamia profilowanie wątku.  
@@ -48,13 +46,13 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Prawidłowe opcje  
  **ThreadOn** i **ThreadOff** można określić wiersze poleceń, zawierające następujących podpoleceń polecenia.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Inicjuje sesję profilowania wiersza polecenia i ustawia określonej metody profilowania.  
   
- **GlobalOff**&#124; **GlobalOn**  
+ **GlobalOff**&#124;**GlobalOn**  
  Zatrzymuje i uruchamia profilowanie dla wszystkich procesów w sesji profilowania z wiersza polecenia.  
   
- {**ProcessOff**&#124; **ProcessOn**}**:**`TID`  
+ {**ProcessOff**&#124;**ProcessOn**}**:**`TID`  
  Zatrzymuje i uruchamia profilowanie dla określonego procesu.  
   
 ## <a name="example"></a>Przykład  

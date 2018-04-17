@@ -1,22 +1,22 @@
 ---
-title: "Edytowanie kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Edytowanie kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 Edytor kodowanego testu interfejsu użytkownika pozwala łatwo zmodyfikować kodowanych testów interfejsu użytkownika. Za pomocą edytora testu interfejsu użytkownika na stałe, można znaleźć, Wyświetl i Edytuj właściwości metody testowe i działania interfejsu użytkownika. Ponadto można użyć mapy formantów interfejsu użytkownika do wyświetlania i edytowania ich kontroli.

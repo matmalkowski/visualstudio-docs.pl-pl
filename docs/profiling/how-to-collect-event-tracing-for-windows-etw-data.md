@@ -1,13 +1,10 @@
 ---
-title: "Porady: zbieranie zdarzeń śledzenia dla danych systemu Windows (ETW) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: zbieranie zdarzeń śledzenia dla danych systemu Windows (ETW) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
 helpviewer_keywords:
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - performance tools, enabling event trace providers
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 059c2099ab3d321d6ecff587814273a8de22a84e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8001f62a7fdc85a251e33eb03765d620d3bb87d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Porady: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)
 

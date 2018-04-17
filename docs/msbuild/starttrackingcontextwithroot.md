@@ -1,12 +1,9 @@
 ---
 title: StartTrackingContextWithRoot | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - StartTrackingContextWithRoot
 apilocation:
@@ -15,17 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContextWithRoot
 ms.assetid: f6ef2b76-8035-4a14-8195-aa221c46ef48
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1844901da84c91cc35df18c9867897c634705a39
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fcd31ee92733508f4980236d0c6dbd7dff15c128
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Rozpoczyna kontekst śledzenia przy użyciu pliku odpowiedzi, określając znacznika głównego.  
@@ -37,13 +33,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```  
   
 #### <a name="parameters"></a>Parametry  
- [in]`intermediateDirectory`  
+ [in] `intermediateDirectory`  
  Katalog, w którym będą przechowywane w dzienniku śledzenia.  
   
- [in]`taskName`  
+ [in] `taskName`  
  Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.  
   
- [in]`rootMarkerResponseFile`  
+ [in] `rootMarkerResponseFile`  
  Nazwa ścieżki pliku odpowiedzi, który zawiera znacznik główny. Nazwa głównego służy do grupy wszystkich śledzenia dla kontekstu razem.  
   
 ## <a name="return-value"></a>Wartość zwracana  

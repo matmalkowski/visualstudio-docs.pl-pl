@@ -2,9 +2,6 @@
 title: Jak zgłosić Problem z programu Visual Studio 2017 | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/11/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +10,11 @@ manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 809f9121be867785e6d92966ccf92b012740daab
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: a87d48007abc08044d41d6bb65f5511b955c45bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 

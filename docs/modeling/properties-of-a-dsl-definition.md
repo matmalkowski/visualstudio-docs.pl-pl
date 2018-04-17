@@ -1,23 +1,21 @@
 ---
-title: "Właściwości definicji DSL | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Właściwości definicji DSL | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5ccf6937aa3c317feb81a907348d41e4d322d346
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 94e14dffe32024143f0ad33031738ccf37d301bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>Właściwości definicji DSL
 Definiowanie właściwości DslDefinition *języka specyficznego dla domeny* definicji właściwości, takie jak numerów wersji. Właściwości DslDefinition są wyświetlane w **właściwości** okna po kliknięciu Otwórz obszar wykresu w *projektanta języka specyficznego dla domeny*.  
@@ -29,17 +27,17 @@ Definiowanie właściwości DslDefinition *języka specyficznego dla domeny* def
 |Właściwość|Opis|Domyślny|  
 |--------------|-----------------|-------------|  
 |Modyfikator dostępu|Określa, czy modyfikator dostępu dla klasy domeny jest publiczny lub wewnętrzny.|public|  
-|Atrybuty niestandardowe|Niestandardowe zdefiniowane przez atrybuty dla klasy domeny.<br /><br /> **Uwaga** użyj przycisku przeglądania, aby dodać atrybut.|\<none>|  
+|Atrybuty niestandardowe|Niestandardowe zdefiniowane przez atrybuty dla klasy domeny.<br /><br /> **Uwaga** użyj przycisku przeglądania, aby dodać atrybut.|\<Brak >|  
 |Nazwa firmy|Nazwa bieżącego nazwę firmy w rejestrze systemu.|Bieżąca nazwa firmy|  
 |Nazwa|Nazwa klasy tej domeny.|Bieżąca nazwa|  
 |Przestrzeń nazw|Przestrzeń nazw powiązane z tą klasą domeny.|Bieżącej przestrzeni nazw|  
-|Identyfikator Guid pakietu|Identyfikator guid [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakietu wygenerowany dla tej DSL.|\<none>|  
-|Namespace pakietu|W obszarze nazw [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakietu wygenerowany dla tej DSL.|\<none>|  
-|Nazwa produktu|Nazwa produktu, który zostanie zarejestrowany dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakietu wygenerowany dla tej DSL.|\<none>|  
-|Uwagi|Notatki skojarzone z tą klasą domeny.|\<none>|  
-|Opis|Opis dla tej klasy domeny.|\<none>|  
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w Projektancie wygenerowany dla tej klasy domeny.|\<none>|  
-|Słowo kluczowe pomocy|Słowo kluczowe Pomocy skojarzone z tą klasą domeny.|\<none>|  
+|Identyfikator Guid pakietu|Identyfikator guid [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakietu wygenerowany dla tej DSL.|\<Brak >|  
+|Namespace pakietu|W obszarze nazw [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakietu wygenerowany dla tej DSL.|\<Brak >|  
+|Nazwa produktu|Nazwa produktu, który zostanie zarejestrowany dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakietu wygenerowany dla tej DSL.|\<Brak >|  
+|Uwagi|Notatki skojarzone z tą klasą domeny.|\<Brak >|  
+|Opis|Opis dla tej klasy domeny.|\<Brak >|  
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w Projektancie wygenerowany dla tej klasy domeny.|\<Brak >|  
+|Słowo kluczowe pomocy|Słowo kluczowe Pomocy skojarzone z tą klasą domeny.|\<Brak >|  
 |Kompilacja|Numer kompilacji przyrostowej dla tej definicji języka specyficznego dla domeny.|0|  
 |Wersja główna|Numer kompilacji przyrostowej głównych dla tej definicji języka specyficznego dla domeny.|1|  
 |Wersja pomocnicza|Numer kompilacji przyrostowej pomocnicze dla tej definicji języka specyficznego dla domeny.|0|  

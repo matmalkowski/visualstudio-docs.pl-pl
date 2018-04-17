@@ -1,12 +1,10 @@
 ---
 title: -ProjectConfig (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - /projectconfig Devenv switch
 - configurations, rebuilding
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6069ed9b15ed49f2f7c7a5113f1377cebdd031fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 26883d4149047df980763da8bdda764f8ad802b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 Określa konfigurację kompilacji projektu ma być stosowany podczas kompilacji, czyszczenia, odbudować lub wdrożenia projektu o nazwie w `/project` argumentu.  
@@ -59,10 +57,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  `SolutionName`  
  Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.  
   
- / Project`ProjName`  
+ / Project `ProjName`  
  Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu do pliku projektu lub nazwa wyświetlana projektu lub pełną ścieżkę i nazwę pliku projektu.  
   
- / projectconfig`ProjConfigName`  
+ / projectconfig `ProjConfigName`  
  Opcjonalny. Nazwa projektu konfiguracja ma zostać zastosowany do kompilacji `/project` o nazwie.  
   
 ## <a name="remarks"></a>Uwagi  

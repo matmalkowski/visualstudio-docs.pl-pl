@@ -3,10 +3,8 @@ title: Użyj parametrów wiersza polecenia, aby zainstalować program Visual Stu
 ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: e3b347d257e5eeb5b5672223fc06941f5513583b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
 Po zainstalowaniu programu Visual Studio 2017 z wiersza polecenia, można użyć różnych parametrów wiersza polecenia kontroli lub dostosowanie instalacji. W wierszu polecenia można wykonywać następujące czynności:
@@ -113,7 +111,7 @@ Listę obciążenia i identyfikatory składników posortowane według produktu V
 | EN US | Angielski |
 | es-ES | Hiszpański |
 | fr-FR | Francuski |
-| it-IT | Włoski |
+| IT-IT | Włoski |
 | ja-JP | japoński |
 | ko-KR | koreański |
 | pl-PL | polski |
@@ -126,7 +124,7 @@ Listę obciążenia i identyfikatory składników posortowane według produktu V
 ## <a name="error-codes"></a>Kody błędów
 W zależności od wyniku operacji `%ERRORLEVEL%` zmiennej środowiskowej zostanie ustawiona do jednej z następujących wartości:
 
-| **Wartość** | **Result** |
+| **Wartość** | **wynik** |
 | --------- | ---------- |
 | 0 | Operacja została wykonana pomyślnie |
 | 1602 | Operacja została anulowana |

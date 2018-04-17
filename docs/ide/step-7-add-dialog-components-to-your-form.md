@@ -1,30 +1,28 @@
 ---
-title: "Krok 7: Dodawanie składników okna dialogowego do formularza | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 7: Dodawanie składników okna dialogowego do formularza | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
-caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da81862b736605b93d4429e0e574ca5558a529c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a395ffd1e0e25cbafa31a765d74d130e8f7d6485
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 Aby włączyć program do otwierania plików obrazu, w którym można wybrać kolor tła, w tym kroku należy dodać **OpenFileDialog** składnika i **ColorDialog** składnika do formularza.  
   
  Składnik jest formantu w pewnym sensie. Użyj przybornika, aby dodać składnik do formularza i ustawić jej właściwości, za pomocą **właściwości** okna. Ale w przeciwieństwie do formantu, dodanie składnika do formularza nie dodaje widocznego elementu, który użytkownik może zobaczyć na formularzu. Zamiast tego zawiera niektóre zachowania, które mogą być uruchamiane z kodem. Jest to składnik, którego kliknięcie spowoduje otwarcie **Otwórz plik** okno dialogowe.  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 3 wideo](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie podglądu obrazów w C# — wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 3 wideo](http://go.microsoft.com/fwlink/?LinkId=205213) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-add-dialog-components-to-your-form"></a>Aby dodać składniki okna dialogowego do formularza  
   

@@ -1,12 +1,10 @@
 ---
-title: "Porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Porady: wdrażanie, publikowanie oraz aktualizowanie rozwiązań SharePoint na serwerze zdalnym
   Oprócz wdrażania rozwiązań programu SharePoint na system lokalny, lokacje zdalne lub lokalnych witryn programu SharePoint można opublikować rozwiązań w trybie piaskownicy programu SharePoint. Zdalny proces publikowania kopiuje plik wsp na serwer programu SharePoint, instaluje rozwiązanie i pozwala Aktywuj. Możesz również uaktualnić zdalnej instalacji rozwiązania programu SharePoint, po wprowadzeniu zmian do niego.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów w trybie piaskownicy projektu programu SharePoint, który chcesz opublikować, a następnie wybierz pozycję **publikowania**.  
   
-2.  W **publikowania** okno dialogowe Wybierz **publikowania do witryny SharePoint** przycisk opcji, a następnie wprowadź adres URL dla online witryny publikowania, takie jak na poniższym przykładzie: **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  W **publikowania** okno dialogowe Wybierz **publikowania do witryny SharePoint** przycisk opcji, a następnie wprowadź adres URL dla online witryny publikowania, takie jak na poniższym przykładzie: **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Wybierz **Otwórz stronę galerii rozwiązań w przeglądarce po opublikowaniu** przycisk opcji, aby wyświetlić listę rozwiązań w **galerii rozwiązań** strony po opublikowaniu.  
   

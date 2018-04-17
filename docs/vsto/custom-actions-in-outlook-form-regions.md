@@ -1,12 +1,10 @@
 ---
-title: "Akcje niestandardowe w programie Outlook tworzą regionów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Akcje niestandardowe w programie Outlook tworzą regionów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, kliknięciu **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przycisków akcji. Każdy z tych akcji tworzy nowy element poczty i wypełnienie pól elementów przy użyciu informacji z oryginalnego elementu.  
@@ -42,8 +41,8 @@ ms.lasthandoff: 01/10/2018
 |Właściwość|Opis|  
 |--------------|-----------------|  
 |**AddressLike**|Określa, jak formularz docelowy zostaną rozwiązane.|  
-|**Treści**|Określa, jak treść elementu jest dołączany do formularza docelowego.|  
-|**Włączone**|Wskazuje, czy włączono akcji niestandardowej. Jeśli ta właściwość jest ustawiona na **false**, akcji niestandardowej jest wyłączona.|  
+|**Body**|Określa, jak treść elementu jest dołączany do formularza docelowego.|  
+|**włączone**|Wskazuje, czy włączono akcji niestandardowej. Jeśli ta właściwość jest ustawiona na **false**, akcji niestandardowej jest wyłączona.|  
 |**— Metoda**|Określa typ odpowiedzi dostępne podczas wykonywania akcji niestandardowej. Akcja niestandardowa można wysyłać formularza, otwórz formularz lub Monituj użytkownika, czy chcą wysłać lub otworzyć formularz.|  
 |**Nazwa**|Określa nazwę wewnętrzny, który służy do akcji niestandardowej w kodzie odwołania.|  
 |**ShowOnRibbon**|Wskazuje, czy mają być wyświetlane na Wstążce oryginalnego elementu akcji niestandardowej.|  

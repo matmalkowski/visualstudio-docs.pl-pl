@@ -1,28 +1,24 @@
 ---
-title: "Porady: Określanie środowiska wykonawczego .NET Framework | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Określanie środowiska wykonawczego .NET Framework | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
 ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a060315c17dfc351aaa3cba5fec52fdcfc3f9b0c
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: b6845f1b4339718f46b2706c0e1ac380fd84c045
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Porady: Określanie środowiska wykonawczego .NET Framework
 

@@ -1,12 +1,10 @@
 ---
 title: 'Porady: programowane Dodawanie wierszy i kolumn do tabel Word | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], adding to Word tables
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bcad8104f5267f86c6538077f6f53abbac986d52
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5058665c0c6d882e41d534d51a398ae90e0e03e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Porady: Programowane dodawanie wierszy i kolumn do tabel programu Word
   W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Można użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiekt do dodania wierszy do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Columns> obiekt, aby dodać kolumny.  

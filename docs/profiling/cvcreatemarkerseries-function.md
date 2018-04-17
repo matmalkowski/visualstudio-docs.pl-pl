@@ -1,12 +1,10 @@
 ---
-title: "Cvcreatemarkerseries — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Cvcreatemarkerseries — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateMarkerSeriesA
 - cvmarkers/CvCreateMarkerSeriesW
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CvCreateMarkerSeriesA method
 - CvCreateMarkerSeriesW method
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dd1fdd7760fce5e40422cf017a4f5f7e2623263f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b34814c4591d745d846c39c38d19e072e648cfca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries — Funkcja
 Tworzy serię znacznika dla podanego dostawcy.  

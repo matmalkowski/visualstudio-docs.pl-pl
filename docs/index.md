@@ -4,11 +4,11 @@ hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
 ms.topic: hub-page
-ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4dcf3ff02db54d1a0d6b2e45d3418caf1d908783
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -265,6 +265,25 @@ ms.lasthandoff: 03/08/2018
                                                 <div class="cardText">
                                                     <h3>Dane</h3>
                                                     <p>Tworzenie aplikacji danych, które łączyć się z dowolną bazą danych lub usługi i dowolnego miejsca&#8212;lokalnej lub w chmurze. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Współpraca</h3>
+                                                    <p>Udostępnić, edytowanie i debugowanie kodu w środowisku współpracy, w czasie rzeczywistym. </p>
                                                 </div>
                                             </div>
                                         </div>

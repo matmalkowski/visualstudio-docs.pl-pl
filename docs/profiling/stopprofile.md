@@ -1,27 +1,23 @@
 ---
 title: StopProfile | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
 ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36da7be52d9b40c8f2e8c837bb137e8e1d9c296f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 62db57e80e1070d1b78b053808a2e1fc05731da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` Funkcja ustawia licznik 0 (wyłączone) dla określonego poziomu profilowania.  

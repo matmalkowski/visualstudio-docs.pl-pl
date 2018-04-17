@@ -1,13 +1,10 @@
 ---
-title: "Ogólne odniesienia (Office Development w Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Ogólne odniesienia (Office Development w Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Ogólne odniesienia (Office Development w Visual Studio)
   Ta sekcja zawiera szczegółowe informacje techniczne dotyczące projekty Microsoft Office w Visual Studio.  
@@ -40,14 +37,14 @@ ms.lasthandoff: 01/10/2018
  [Manifesty wdrożenia dla rozwiązań Office](../vsto/deployment-manifests-for-office-solutions.md)  
  W tym artykule opisano, jak manifesty wdrożenia są używane rozwiązań pakietu Office.  
   
- [Dokumentacja interfejsu użytkownika &#40; programowanie Office w Visual Studio &#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [Dokumentacja interfejsu użytkownika &#40;programowanie Office w Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  Wyświetla listę tematów, w których opisano opcje, które znajdują się w różnych oknach dialogowych, windows i innych interfejsów użytkownika.  
   
- [Komunikaty o błędach &#40; programowanie Office w Visual Studio &#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
+ [Komunikaty o błędach &#40;programowanie Office w Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  Wyświetla listę tematów dotyczących komunikatów o błędach dla projektów pakietu Office.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Wprowadzenie &#40; programowanie Office w Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Zawiera linki do informacji o instalacji, szablony projektów, podstawowe zestawy międzyoperacyjne pakietu Office i what's new in programowanie Office.  
   
  [Office Development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  

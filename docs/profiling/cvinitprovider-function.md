@@ -1,29 +1,25 @@
 ---
-title: "CvInitProvider — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: CvInitProvider — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvInitProvider
 helpviewer_keywords:
 - CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15abebb58382674bc7943d7949dfddbc62524c91
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 00aa6f44fc33a4bbaf950b929a1b57a4a13eb6dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider — Funkcja
 Inicjuje dostawcę znacznika. Musi zostać wywołana przed jakichkolwiek innych funkcji zestawu SDK wizualizatora współbieżności.  

@@ -2,11 +2,8 @@
 title: Makedir — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MakeDir task [MSBuild]
 - MSBuild, MakeDir task
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
-caps.latest.revision: 14
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d229cbfa4adbd315454906d0b4f634e6e62015e3
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f9f5baf2af249a0763be566fa8c69119625b6924
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="makedir-task"></a>MakeDir — Zadanie
 Tworzy katalogi i w razie potrzeby dominujące katalogów.  

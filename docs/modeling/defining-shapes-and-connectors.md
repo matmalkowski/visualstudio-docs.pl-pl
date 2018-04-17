@@ -1,26 +1,24 @@
 ---
-title: "Definiowanie kształty i łączniki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Definiowanie kształty i łączniki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a1a1043515afb8d7567459e1adae23f1d4fcfde9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d915487a9cbddb9678a6b9aa37d990e7b70527e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 Istnieje kilka typów podstawowych kształtów, które mogą być używane do wyświetlania informacji na diagramie języka specyficznego dla domeny (DSL).  
   
-##  <a name="shapeTypes"></a>Podstawowe typy łączników i kształtów  
+##  <a name="shapeTypes"></a> Podstawowe typy łączników i kształtów  
  DSL diagram zawiera zbiór *kształtów* powiązane liniami lub *łączniki*.  Zwykle, ale nie zawsze:  
   
 -   Kształty są widoczne reprezentację elementy modelu.  
@@ -44,5 +42,5 @@ Istnieje kilka typów podstawowych kształtów, które mogą być używane do wy
 |Ścieżek|Ścieżek partycji diagramu na segmenty pozioma lub pionowa. Tor zawsze pozostaje poniżej innych kształtów na diagramie.<br /><br /> Zazwyczaj elementem nadrzędnym elementy modelu tor w modelu głównym, a inne elementy są elementem nadrzędnym na nich. Na przykład utworzyć DSL na podstawie szablonu rozwiązania przepływ zadań.|  
 |Łączniki|Linii między kształtami zazwyczaj reprezentuje relacji odwołania. Można ustawić opcje Tworzenie łącznika prostej lub prostoliniowego i mają różne typy grot strzałki.|  
   
-##  <a name="shapeInheritance"></a>Dziedziczenie kształtu  
+##  <a name="shapeInheritance"></a> Dziedziczenie kształtu  
  Kształt może dziedziczyć z innego kształtu. Jednak kształty muszą być tego samego rodzaju. Na przykład kształt geometrii może dziedziczyć geometrii kształtu. Kształty dziedziczone mają przedziałów i dekoratory ich kształtu podstawowego. Łączniki mogą dziedziczyć łączników.

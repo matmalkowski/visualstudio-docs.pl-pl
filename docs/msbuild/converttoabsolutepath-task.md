@@ -1,12 +1,9 @@
 ---
-title: "Converttoabsolutepath — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Converttoabsolutepath — zadanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ConvertToAbsolutePath
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - ConvertToAbsolutePath task [MSBuild]
 - MSBuild, ConvertToAbsolutePath task
 ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8637ba20fd6d5525293d9346c85a3365d700c3f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 90b7031b973a1a8f8c2941a2a85174e162f5b463
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath — Zadanie
 Konwertuje ścieżki względnej, lub odwołanie, ścieżką bezwzględną.  

@@ -1,20 +1,20 @@
 ---
-title: "Właściwości scenariusza testów obciążenia programu Visual Studio | Dokumentacja firmy Microsoft"
+title: Właściwości scenariusza testów obciążenia programu Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7bbda0aeeab1182d2f94300bee557d3973944c6f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 144a875822034ef3ae10a4f0cb5f1771ebf61fb7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="load-test-scenario-properties"></a>Właściwości scenariusza testów obciążenia
 
@@ -44,7 +44,7 @@ Zmienić ustawienia właściwości scenariusza testów obciążenia w programie 
 |**Przełączania IP**|Wartość logiczna, która służy do określania, czy używane jest przełączanie IP.<br /><br />Przełączania IP umożliwia agenta testowego do wysyłania żądań do serwera przy użyciu szereg różnych adresów IP. Symuluje to wywołania, które pochodzą z różnych klientów. Ważne jest przełączania IP, gdy przetestować farmy sieci Web ze zrównoważonym obciążeniem. Większość modułów równoważenia obciążenia ustanowić koligację między klientem a serwerem sieci Web określonego za pomocą adresu IP klienta. Jeśli wszystkie żądania są one pochodzą z jednego klienta, usługi równoważenia obciążenia nie będą Równoważenie obciążenia. Uzyskanie Równoważenie obciążenia dobrej w kolektywie serwerów sieci Web, ważne jest, że żądania pochodzą z zakresu adresów IP.<br /><br />Funkcja przełączania adresów IP jest dostępna w przypadku używania agenta testowego.|
 |**Maksymalnej liczby iteracji testu**|Wartość liczbowa służąca do określenia maksymalnej liczby testów, jakie mają zostać wykonane w scenariuszu. Wartość 0 oznacza brak maksimum.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie iteracji testowych dla scenariuszy](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Procent nowych użytkowników**|Wartość liczbowa określająca procent nowych użytkowników lub gości w scenariuszu.<br /><br />Aby uzyskać więcej informacji, zobacz [porady: Określanie wartości procentowej użytkowników wirtualnych sieci Web użycia pamięci podręcznej danych](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
-|**Think Profile**|Określa, czy będzie używać tego scenariusza **rozkładu normalnego**, lub jeśli reakcji profil jest **na** lub **poza**.<br /><br />Aby uzyskać więcej informacji, zobacz [edytowanie czasów reakcji w sposób symulować witryny sieci Web człowieka opóźnienia](../test/edit-think-times-in-load-test-scenarios.md).|
+|**Wziąć pod uwagę profilu**|Określa, czy będzie używać tego scenariusza **rozkładu normalnego**, lub jeśli reakcji profil jest **na** lub **poza**.<br /><br />Aby uzyskać więcej informacji, zobacz [edytowanie czasów reakcji w sposób symulować witryny sieci Web człowieka opóźnienia](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Chronometraż
 

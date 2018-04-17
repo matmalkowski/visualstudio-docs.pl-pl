@@ -1,29 +1,25 @@
 ---
-title: "span::span — Konstruktor | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: span::span — Konstruktor | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::span
 helpviewer_keywords:
 - Concurrency::diagnostic::span constructor
 ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d212e5185944bf63d032bd59f40a4a730af9ee6f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb076ee33d67e5eba6c58922c191f3abbd5154fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
 Inicjuje nowe wystąpienie klasy `span` klasy.  

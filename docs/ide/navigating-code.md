@@ -1,12 +1,10 @@
 ---
 title: Nawigowanie po kodzie w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
 - code editor, go to
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4a0ad83754d16a60d70ed823b07545c9cb837f6f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c36702aad29bbfe7b81ca38cf2bda162fbf5c99e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code"></a>Przejdź do kodu
 
@@ -68,7 +67,7 @@ Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu. Możesz uży
 
 Dane wejściowe        | Funkcja 
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Shift + F12**  
+**Keyboard** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Shift + F12**  
 **Myszy**    | Wybierz **Znajdź wszystkie odwołania** z menu kontekstowego  
 
 ## <a name="reference-highlighting"></a>Podświetlanie odwołań
@@ -99,7 +98,7 @@ Przejdź do definicji przejście do definicji wybranego elementu. Aby uzyskać w
 
 Dane wejściowe        | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **F12**
+**Keyboard** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **F12**
 **Myszy**    | Kliknij prawym przyciskiem myszy na nazwie typu i wybierz **przejdź do definicji** lub naciśnij klawisz **Ctrl** i kliknij na nazwie typu (nowe dla programu Visual Studio 2017 wersji 15.4)
 
 ## <a name="peek-definition"></a>Definicji wglądu
@@ -108,7 +107,7 @@ Podgląd wyświetla definicji definicji elementu wybranego w oknie bez konieczno
 
 Dane wejściowe        | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Alt + F12**
+**Keyboard** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Alt + F12**
 **Myszy**    | Kliknij prawym przyciskiem myszy na nazwie typu i wybierz **definicji wglądu** lub naciśnij klawisz **Ctrl** i kliknij na nazwie typu (Jeśli masz **Otwórz definicję w widoku peek** zaznaczoną opcją)
 
 ## <a name="go-to-implementation"></a>Przejdź do implementacji
@@ -117,7 +116,7 @@ Przy użyciu przejdź do implementacji, można przejść z klasy podstawowej lub
 
 Dane wejściowe        | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Ctrl + F12**
+**Keyboard** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Ctrl + F12**
 **Myszy**    | Kliknij prawym przyciskiem myszy na nazwie typu i wybierz **przejdź do implementacji**
 
 ## <a name="call-hierarchy"></a>Hierarchia wywołań
@@ -126,7 +125,7 @@ Możesz wyświetlić wywołania do i z metody w [okno hierarchii wywołań](../i
 
 Dane wejściowe        | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Ctrl + K**, **klawisze Ctrl + T**
+**Keyboard** | Umieść kursor tekstu gdzieś w nazwie typu, a następnie naciśnij klawisz **Ctrl + K**, **klawisze Ctrl + T**
 **Myszy**    | Kliknij prawym przyciskiem myszy na nazwę elementu członkowskiego i wybierz **Widok hierarchii wywołań**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Next — metoda i poprzednich — metoda polecenia (Visual Basic)

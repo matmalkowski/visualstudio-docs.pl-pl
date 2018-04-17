@@ -1,13 +1,10 @@
 ---
 title: Zestawy w Visual Studio Tools for Office Runtime | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,20 +12,20 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22750553e714c0aa02577ee95753e7d5b2bf13f4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 34ce422757ad7e7f7152920252eff6e0c2277261
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools dla pakietu Office Runtime
   Podczas tworzenia projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zestawy, które są używane dla docelowej platformy .NET Framework projektu i typ projektu. Istnieją różne zestawy w rozszerzenia pakietu Office dla programu .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aby uzyskać więcej informacji na temat rozszerzeń pakietu Office, zobacz [Visual Studio Tools for Office Runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Zestawy w rozszerzeniach Office programu .NET Framework 4 i[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- Poniższa tabela zawiera listę zestawów, które znajdują się w Office rozszerzenia [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dokumentacja obszary nazw i typy w farmie znajduje się w temacie [odwołania zarządzane &#40; programowanie Office w Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
+## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Zestawy w rozszerzeniach Office programu .NET Framework 4 i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+ Poniższa tabela zawiera listę zestawów, które znajdują się w Office rozszerzenia [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dokumentacja obszary nazw i typy w farmie znajduje się w temacie [odwołania zarządzane &#40;programowanie Office w Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
 |Nazwa zestawu|Opis|  
 |-------------------|-----------------|  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Zapewnia następujące typy:<br /><br /> -Podstawowa klasy dla wygenerowanej `ThisDocument` klasy w projektów na poziomie dokumentu dla programu Word.<br />-Formanty formularzy systemu Windows używanych w dokumentach w projekty programu Word.|  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Zestawy w rozszerzenia pakietu Office dla programu .NET Framework 3.5  
- Poniższa tabela zawiera listę zestawów, które znajdują się w Office rozszerzeń dla programu .NET Framework 3.5. Dokumentacja obszary nazw i klasy w farmie, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Poniższa tabela zawiera listę zestawów, które znajdują się w Office rozszerzeń dla programu .NET Framework 3.5. Dokumentacja obszary nazw i klasy w farmie, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 |Nazwa zestawu|Opis|  
 |-------------------|-----------------|  

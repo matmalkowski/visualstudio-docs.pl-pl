@@ -1,12 +1,10 @@
 ---
-title: "Porady: programowane otwieranie dokumentów programu Visio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: programowane otwieranie dokumentów programu Visio | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a558e0cd069c91a490f039198b59aa3a89c83662
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a837b4b12420c65817b6dfb156e0fe47fcdba6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Porady: Programowane otwieranie dokumentów programu Visio
   Istnieją dwie metody otwieranie istniejących dokumentów Microsoft Office Visio: otwarte i OpenEx. Metoda OpenEx jest taki sam jak metody Open, ale zawiera argumenty, w których element wywołujący można określić sposób otwierania dokumentu.  

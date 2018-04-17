@@ -1,28 +1,25 @@
 ---
-title: Szablon projektu sieci web Django dla języka Python | Dokumentacja firmy Microsoft
+title: Szablon projektu sieci web Django dla języka Python
 description: Przegląd szablonów programu Visual Studio dla aplikacji sieci web napisanych w języku Python za pomocą środowiska Django.
 ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 941ec5191e440be95d66da983508de36cef6d4fd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 27218e6c1774c1d6e75894da854ee8e34392d49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="django-web-project-template"></a>Szablon projektu sieci web Django
+# <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 
 [Django](https://www.djangoproject.com/) to struktura Python wysokiego poziomu przeznaczone do rozwoju szybkie, bezpieczne i skalowalne sieci web. Obsługa języka Python w programie Visual Studio zapewnia szablon projektu, aby skonfigurować strukturę aplikacji sieci web opartych na Django. Aby użyć szablonu w programie Visual Studio, wybierz opcję **Plik > Nowy > Projekt**, wyszukaj "Django" i wybierz **projektu sieci Web Django** szablonu. Projekt wynikowy zawiera schematyczny kod, a także domyślnej bazy danych SQLite. **Pusty projekt sieci Web Django** szablon jest podobny, ale nie ma bazy danych.
 

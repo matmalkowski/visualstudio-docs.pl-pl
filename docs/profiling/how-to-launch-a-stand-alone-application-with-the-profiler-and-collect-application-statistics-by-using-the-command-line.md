@@ -1,23 +1,21 @@
 ---
-title: "Porady: uruchamianie aplikacji autonomicznej z Profilerem i zbieranie statystyk aplikacji przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: uruchamianie aplikacji autonomicznej z Profilerem i zbieranie statystyk aplikacji przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7840b2a28d5d2aff350af7c86f19332c7b8dd087
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b8afcf8b16925e0bfa9bc473f6f3d0410bd7130
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Porady: uruchamianie aplikacji autonomicznej z profilerem i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania narzędzia wiersza polecenia do uruchomienia aplikacji autonomicznej (klient) i zbieranie statystyk wydajności za pomocą metody pobierania próbek.  
@@ -49,15 +47,15 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
     -   [/Start](../profiling/start.md)**: Przykładowe** opcji inicjowania profilera.  
   
-    -   [/Output](../profiling/output.md)**:** `OutputFile` jest wymagany w przypadku opcji **/start**. `OutputFile`Określa nazwę i lokalizację profilowania pliku danych (Vsp).  
+    -   [/Output](../profiling/output.md)**:** `OutputFile` jest wymagany w przypadku opcji **/start**. `OutputFile` Określa nazwę i lokalizację profilowania pliku danych (Vsp).  
   
      Można użyć dowolnego z następujących opcji z **/start:sample** opcji.  
   
     |Opcja|Opis|  
     |------------|-----------------|  
-    |[/wincounter](../profiling/wincounter.md) **:**`WinCounterPath`|Określa licznik wydajności systemu Windows, które będą zbierane podczas profilowania.|  
-    |[/automark](../profiling/automark.md) **:**`Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami kolekcji liczników wydajności systemu Windows. Domyślna to 500 ms.|  
-    |[/Events](../profiling/events-vsperfcmd.md) **:**`Config`|Określa zdarzenia funkcji Śledzenie zdarzeń systemu Windows (), które mają być zbierane podczas profilowania. Zdarzenia ETW są gromadzone w pliku oddzielne (ETL).|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności systemu Windows, które będą zbierane podczas profilowania.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami kolekcji liczników wydajności systemu Windows. Domyślna to 500 ms.|  
+    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenia funkcji Śledzenie zdarzeń systemu Windows (), które mają być zbierane podczas profilowania. Zdarzenia ETW są gromadzone w pliku oddzielne (ETL).|  
   
 3.  Uruchomienie aplikacji docelowej. Typ:**VSPerfCmd przełącznik/Launch:** `appName` [`Options`] [`Sample Event`]  
   
@@ -65,17 +63,17 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
     |Opcja|Opis|  
     |------------|-----------------|  
-    |[przełącznika/args](../profiling/args.md) **:**`Arguments`|Określa ciąg, który zawiera argumenty wiersza polecenia do przekazania do aplikacji docelowej.|  
+    |[przełącznika/args](../profiling/args.md) **:** `Arguments`|Określa ciąg, który zawiera argumenty wiersza polecenia do przekazania do aplikacji docelowej.|  
     |[/ Console](../profiling/console.md)|Uruchamia aplikację wiersza polecenia docelowego w osobnym oknie.|  
   
      Domyślnie wydajności, dane są pobierane co zegara procesora nie zostało zatrzymane 10 000 000 cykle. Jest to około jednej godziny co 10 sekund na procesor 1GHz. Można określić jedną z następujących opcji, aby zmienić interwał cyklu zegara lub określić zdarzenia różnych próbkowania.  
   
     |Zdarzenie próbkowania|Opis|  
     |------------------|-----------------|  
-    |[/ Timer](../profiling/timer.md) **:**`Interval`|Powoduje interwał próbkowania liczby cykli zegara nie zostało zatrzymane, które są określone przez `Interval`.|  
+    |[/ Timer](../profiling/timer.md) **:** `Interval`|Powoduje interwał próbkowania liczby cykli zegara nie zostało zatrzymane, które są określone przez `Interval`.|  
     |[PF](../profiling/pf.md)[**:**`Interval`]|Zmiany zdarzenie próbkowania błędów strony. Jeśli `Interval` jest określony, ustawia liczbę błędów stron między próbkami. Domyślna to 10.|  
     |[sys](../profiling/sys-vsperfcmd.md)[**:**`Interval`]|Zdarzenie próbkowania wywołań systemowych zmiany z procesu jądra systemu operacyjnego (syscalls). Jeśli `Interval` jest określony, ustawia liczbę wywołań między próbkami. Domyślna to 10.|  
-    |[/ licznika](../profiling/counter.md) **:**`Config`|Zmiany zdarzenie próbkowania i interwał licznika wydajności procesora i interwał, w którym są określone w `Config`.|  
+    |[/ licznika](../profiling/counter.md) **:** `Config`|Zmiany zdarzenie próbkowania i interwał licznika wydajności procesora i interwał, w którym są określone w `Config`.|  
   
 ## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
  Po uruchomieniu aplikacji docelowej zbieranie danych można kontrolować przy uruchamianie i zatrzymywanie zapisywanie danych w pliku danych profilera przy użyciu **VSPerfCmd.exe** opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonania programu, takie jak uruchamianie lub zamykanie aplikacji.  
@@ -105,7 +103,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
   
 2.  Zamknij profilera. Wpisz:  
   
-     **VSPerfCmd** [ /shutdown  ](../profiling/shutdown.md)  
+     **VSPerfCmd** [ /shutdown](../profiling/shutdown.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   

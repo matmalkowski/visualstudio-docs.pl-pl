@@ -1,12 +1,9 @@
 ---
-title: "Importgroup — Element | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Importgroup — Element | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,23 +13,22 @@ helpviewer_keywords:
 - <ImportGroup> element [MSBuild]
 - ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567df29941439a760d1537906a3d22d22db9f7e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cb1c5085f4b93cca11a1a39bd12a796c92a10e18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importgroup-element"></a>Importgroup — Element
 Zawiera kolekcję `Import` elementów, które są zgrupowane w opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  
 
  \<Project>  
- \<ImportGroup>  
+ \<Importgroup — >  
 
 ## <a name="syntax"></a>Składnia  
 

@@ -2,11 +2,8 @@
 title: Lib — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -25,17 +22,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 2ff55341bd41854f9d181613b3364b20873bdbaa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 Zawijania narzędzie Microsoft 32-bitowy Library Manager lib.exe. Library Manager tworzy i którymi zarządza biblioteki plików obiektów wspólnej obiektu pliku formatu (COFF). Library Manager może tworzyć pliki eksportu i Importuj biblioteki do definicji odwołania wyeksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](/cpp/build/reference/lib-reference) i [systemem LIB](/cpp/build/reference/running-lib).  
@@ -56,16 +52,16 @@ Zawijania narzędzie Microsoft 32-bitowy Library Manager lib.exe. Library Manage
 |**IgnoreSpecificDefaultLibraries**|Opcjonalne **String []** parametru.<br /><br /> Usuwa określony bibliotek z listy bibliotek tego lib.exe wyszukuje podczas rozpoznawania odwołań zewnętrznych.<br /><br /> Ten parametr odpowiada **/nodefaultlib** opcji lib.exe pobierającej `library` argumentu.|  
 |**LinkLibraryDependencies**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, określa, czy biblioteka wyników z odwoływanych projektów jest automatycznie konsolidowana.|  
 |**LinkTimeCodeGeneration**|Opcjonalne `Boolean` parametru.<br /><br /> Jeśli `true`, określa generowanie łączonych kodów czasowych.<br /><br /> Ten parametr odpowiada **/LCTG** opcji lib.exe.|  
-|**MinimumRequiredVersion**|Opcjonalne **ciąg** parametru.<br /><br /> Określa minimalną wymaganą wersję podsystemu. Określ listę rozdzielanych przecinkami liczby dziesiętne w zakresie od 0 do 65 535.|  
+|**Parametru MinimumRequiredVersion**|Opcjonalne **ciąg** parametru.<br /><br /> Określa minimalną wymaganą wersję podsystemu. Określ listę rozdzielanych przecinkami liczby dziesiętne w zakresie od 0 do 65 535.|  
 |**ModuleDefinitionFile**|Opcjonalne **ciąg** parametru.<br /><br /> Określa nazwę pliku definicji modułu (.def).<br /><br /> Ten parametr odpowiada **/DEF** opcji lib.exe pobierającej `filename` argumentu.|  
 |**Nazwa**|Opcjonalne **ciąg** parametru.<br /><br /> Podczas tworzenia biblioteki importowanej, określa nazwę biblioteki dll, dla której jest tworzona biblioteki importu.<br /><br /> Ten parametr odpowiada **/NAME** opcji lib.exe pobierającej `filename` argumentu.|  
 |**OutputFile**|Opcjonalne **ciąg** parametru.<br /><br /> Zastępuje domyślną nazwę i lokalizację programu tego lib.exe tworzy.<br /><br /> Ten parametr odpowiada **/OUT** opcji lib.exe pobierającej `filename` argumentu.|  
 |**RemoveObjects**|Opcjonalne **String []** parametru.<br /><br /> Pomija określony obiekt z biblioteki wyjściowej. Lib.exe tworzy bibliotekę wyjściową, łącząc wszystkie obiekty (zarówno w plikach obiektu lub biblioteki), a następnie usuwając wszystkie obiekty, które są określone przez tę opcję.<br /><br /> Ten parametr odpowiada **lub usuwanie** opcji lib.exe pobierającej `membername` argumentu.|  
 |**Źródeł**|Wymagane `ITaskItem[]` parametru.<br /><br /> Określa listę plików źródłowych, rozdzielając je spacjami.|  
-|**SubSystem**|Opcjonalne **ciąg** parametru.<br /><br /> Określa środowisko dla pliku wykonywalnego. Wybór podsystemu wpływa na symbol punktu wejścia lub funkcję punktu wejścia.<br /><br /> Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.<br /><br /> -   **Console** - **/SUBSYSTEM:CONSOLE**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Native** - **/SUBSYSTEM:NATIVE**<br />-   **Aplikacja EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **Sterownik usługi rozruchu interfejsu EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Aby uzyskać więcej informacji, zobacz [/Subsystem (Określ podsystem)](/cpp/build/reference/subsystem-specify-subsystem).|  
+|**SubSystem**|Opcjonalne **ciąg** parametru.<br /><br /> Określa środowisko dla pliku wykonywalnego. Wybór podsystemu wpływa na symbol punktu wejścia lub funkcję punktu wejścia.<br /><br /> Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.<br /><br /> -   **Konsola** - **opcji**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Native** - **/SUBSYSTEM:NATIVE**<br />-   **Aplikacja EFI** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **Sterownik usługi rozruchu interfejsu EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Aby uzyskać więcej informacji, zobacz [/Subsystem (Określ podsystem)](/cpp/build/reference/subsystem-specify-subsystem).|  
 |**SuppressStartupBanner**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości copyright i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji na [systemem LIB](/cpp/build/reference/running-lib).|  
 |**TargetMachine**|Opcjonalne **ciąg** parametru.<br /><br /> Określa platformę docelową dla tego programu lub DLL.<br /><br /> Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformy docelowej)](/cpp/build/reference/machine-specify-target-platform).|  
-|**TrackerLogDirectory**|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
+|**Katalog TrackerLogDirectory**|Opcjonalne **ciąg** parametru.<br /><br /> Określa katalog dziennika śledzenia.|  
 |**TreatLibWarningAsErrors**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, powoduje, że **LIB** zadanie, aby nie generować pliku wyjściowego, jeśli lib.exe generuje ostrzeżenie. Jeśli `false`, jest generowany plik wyjściowy.<br /><br /> Aby uzyskać więcej informacji, zobacz **wx** opcji na [systemem LIB](/cpp/build/reference/running-lib).|  
 |**UseUnicodeResponseFiles**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, instruuje system projektu generuje pliki odpowiedzi w kodowaniu UNICODE, gdy jest zduplikowany bibliotekarza. Określ `true` gdy pliki w projekcie posiadają ścieżki UNICODE.|  
 |**Pełne**|Opcjonalne **logiczna** parametru.<br /><br /> Jeśli `true`, są wyświetlane szczegółowe informacje o postępie sesji; dotyczy to również nazw plików .obj dodawany. Informacje są wysyłane na wyjście standardowe i mogą zostać przekierowane do pliku.<br /><br /> Aby uzyskać więcej informacji, zobacz **/VERBOSE** opcji [systemem LIB](/cpp/build/reference/running-lib).|  

@@ -1,23 +1,21 @@
 ---
-title: "Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bec543b7adbf4ea27dca40be4ba51dc0eb622669
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0b25a69293e98ffb56c3536683837d1320fea319
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 Podczas otwierania modelu w wersji programu Visual Studio, która nie obsługuje tworzenia modelu, model zostanie otwarty w trybie tylko do odczytu. W tym trybie można zmienić układ diagramy, ale nie można zmienić modelu na model.  
@@ -54,7 +52,7 @@ Podczas otwierania modelu w wersji programu Visual Studio, która nie obsługuje
   
  Można zapisać zmian. Jeśli chcesz zmiany były widoczne dla innych użytkowników, musisz co najmniej wysłać zaktualizowane **.layout** plików.  
   
-##  <a name="RelatedTopics"></a>Tematy pokrewne  
+##  <a name="RelatedTopics"></a> Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  

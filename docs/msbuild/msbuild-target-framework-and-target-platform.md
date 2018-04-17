@@ -1,24 +1,20 @@
 ---
 title: Platforma docelowa programu MSBuild i platformy docelowej | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: fec736106d55d97e8df4ec71407b0e01af319b88
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określonej wersji programu .NET Framework i *platformy docelowej*, czyli architektura konkretnego oprogramowania.  Na przykład możesz zastosować aplikacji do uruchamiania na .NET Framework 2.0 na platformie 32-bitowego, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja platformy docelowej i platforma docelowa jest nazywany *kontekst docelowy*.  
@@ -92,4 +88,4 @@ Projekt można wbudować do uruchomienia na *platformy docelowej*, czyli określ
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+ [Przeznaczanie dla wielu platform](../msbuild/msbuild-multitargeting-overview.md)

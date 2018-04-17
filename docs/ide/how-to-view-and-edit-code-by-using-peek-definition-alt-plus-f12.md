@@ -1,21 +1,19 @@
 ---
-title: "Za pomocą definicji wglądu w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Za pomocą definicji wglądu w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881d7569e1d8052c6bdd9db1b521b848ab54df7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)
 

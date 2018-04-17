@@ -1,29 +1,25 @@
 ---
-title: "Raport bazujący na widocznym zakresie czasu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Raport bazujący na widocznym zakresie czasu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
 helpviewer_keywords:
 - Concurrency Visualizer, Report Based on Visible Time Range
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a71ebbae22f9eafdb6c7a31cad07bb077d034736
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="report-based-on-visible-time-range"></a>Raport bazujący na widocznym zakresie czasu
 Widok profil zawiera raporty, które są oparte na aktualnie widocznym zakresie czasu i kanałów. Aby wyświetlić szczegóły dotyczące różnych podzestawy danych, kliknij przycisk elementów w legendzie.  

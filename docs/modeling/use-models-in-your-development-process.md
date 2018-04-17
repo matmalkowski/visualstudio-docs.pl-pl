@@ -2,22 +2,20 @@
 title: Używanie modeli w procesie tworzenia aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e75a3a56ddc272f296ef5cca5afcfd360d4ba1
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: ee68a7db3691c7245dbe17fd4c23b948734f215a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 
@@ -136,7 +134,7 @@ Różne rodzaje diagram są przydatne do opisu projektu na różnych poziomach a
 |------------------|---------------|
 |**Filmy wideo**|![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak wideo: sposobu tworzenia i użyj modeli i diagramów UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML z programu Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak seria: UML narzędzi i rozszerzeń (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Fora**|- [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Blogi**|[Visual Studio ALM i Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Artykuły techniczne i arkuszy**|[Centrum architektura MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Zobacz także

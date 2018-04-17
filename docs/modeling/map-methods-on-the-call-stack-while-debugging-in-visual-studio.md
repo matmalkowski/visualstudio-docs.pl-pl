@@ -2,8 +2,6 @@
 title: Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
@@ -29,14 +27,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f959d7318a8adc91b1742cbb23d514f59406672
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9ad5108a801b02125c3627933d1891372f3369a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 Utwórz mapę kodu wizualne śledzenie stosu wywołań podczas debugowania kodu. Można robić notatki na mapie, żeby śledzić, jak zachowuje się kod, przez co można skoncentrować się na wyszukiwaniu błędów.  

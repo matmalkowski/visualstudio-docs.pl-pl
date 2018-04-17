@@ -1,23 +1,20 @@
 ---
-title: "Zbieranie dodatkowych danych o wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zbieranie dodatkowych danych o wydajności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 913f5043cf02f2fe78ffeefa83d5fd185740eb4c
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ced539224e7b609eeca7503057d9a1c161202734
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-additional-performance-data"></a>Zbieranie dodatkowych danych o wydajności
 

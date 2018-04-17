@@ -1,29 +1,25 @@
 ---
 title: Widok wykorzystania | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
 helpviewer_keywords:
 - Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36a3d46186d98dbcd3d89ebb97003ba6e24fb3b7
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: a05ff165d19744faabca783a369501cb11b6b3e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 **Widok wykorzystania** Wyświetla informacje dotyczące Procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz **Analizuj** > **współbieżności Wizualizator** można uruchomić narzędzia concurrency visualizer). Pokazuje użycie średni core przez proces przeanalizowane, proces bezczynny, proces systemu i innych procesów uruchomionych w systemie, wraz z upływem czasu. Nie wyświetla, które określonym rdzeniu jest aktywny w danym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego jej użycia. Widok jest generowany przez podzielenie profilowania czasu na segmenty w krótkim czasie. Dla każdego segmentu wykres zawiera średnią liczbę wątków procesu, które są wykonywane na rdzeni logicznych podczas tego interwału.  

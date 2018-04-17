@@ -1,7 +1,7 @@
 ---
-title: "Przypisywanie ról kontrolerowi testu i Agent testowy dla automatycznego testowania w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Przypisywanie ról kontrolerowi testu i Agent testowy dla automatycznego testowania w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/20/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - testing, walkthroughs, test controller and test agents
 - test agent, walkthrough
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b078d5ea1adcc0d40d9f0d570febf6592c090669
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 932a6fe470812fc647cad653fb95ba7ca8997ab0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról kontrolera testów i Agent testowy
 

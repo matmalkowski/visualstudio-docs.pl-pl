@@ -1,12 +1,9 @@
 ---
 title: StartTrackingContext | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - StartTrackingContext
 apilocation:
@@ -15,17 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContext
 ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aba760e72cb2edf0d35927d76665be610626897
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 52c564ea06adbb7e7edd957bf4fb23e30cdf2510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Uruchom kontekst śledzenia.  
@@ -37,10 +33,10 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```  
   
 #### <a name="parameters"></a>Parametry  
- [in]`intermediateDirectory`  
+ [in] `intermediateDirectory`  
  Katalog, w którym będą przechowywane w dzienniku śledzenia.  
   
- [in]`taskName`  
+ [in] `taskName`  
  Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.  
   
 ## <a name="return-value"></a>Wartość zwracana  

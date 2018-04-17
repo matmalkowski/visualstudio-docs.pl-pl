@@ -1,13 +1,10 @@
 ---
-title: "Wprowadzenie (rozwój SharePoint w Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wprowadzenie (rozwój SharePoint w Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +14,21 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81874b1b17f7e0ced2325170ee8cfafdf85413d9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e887109c1edb6bad2ee130c6623d5b7538167ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>Wprowadzenie (Rozwój SharePoint w Visual Studio)
   Ta sekcja pomoże Ci rozpocząć pracę z [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwiające tworzenie rozwiązań programu SharePoint, które korzystają z [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
   
  Aby informacji na temat programu SharePoint 2013 i dodatki programu SharePoint, zobacz [programu SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [dodatki kompilacji programu SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
- SharePoint oferuje platforma współpracy opartych na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zawiera wiele szablony do tworzenia witryn programu SharePoint i zawartość, w tym definicje list, przepływy pracy modele usługi łączności danych biznesowych i definicje witryny projektu. Ponadto można tworzyć rozszerzeń dla projektów programu SharePoint i narzędzi w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+ SharePoint oferuje platforma współpracy opartych na sieci Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zawiera wiele szablony do tworzenia witryn programu SharePoint i zawartość, w tym definicje list, przepływy pracy modele usługi łączności danych biznesowych i definicje witryny projektu. Ponadto można tworzyć rozszerzeń dla projektów programu SharePoint i narzędzi w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ## <a name="in-this-section"></a>W tej sekcji  
   

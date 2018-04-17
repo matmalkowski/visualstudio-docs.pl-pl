@@ -1,26 +1,24 @@
 ---
-title: "Widok drzewa wywołań - dane próbkowania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok drzewa wywołań - dane próbkowania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3759133ef7a2be2a7c4c7d04d1b2d444269b7005
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 59c3743784de3354d793dd382fd6a5402f911b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---sampling-data"></a>Widok drzewa wywołań - dane próbkowania
 Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji.  
@@ -50,7 +48,7 @@ Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały
 |**Nazwa funkcji**|Pełna nazwa funkcji.|  
 |**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres funkcji.|  
-|**Poziom**|Długość tej funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**poziom**|Długość tej funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
 |**Wyłącznych próbek**|Liczba próbek, które zostały zebrane w tej funkcji, gdy została wywołana przez funkcję nadrzędnego w drzewie wywołań. Ta liczba nie obejmuje przykłady, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|  
 |**% Wyłącznych próbek**|Procent wszystkich próbek w przebiegu profilowania, które zostały wyłącznych próbek w tej funkcji, gdy została wywołana przez funkcję nadrzędnego w drzewie wywołań.|  
 |**Przykłady włącznie**|Liczba próbek, które zostały zebrane w tej funkcji, gdy została wywołana przez funkcję nadrzędnego w drzewie wywołań. Ta liczba uwzględnia również przykłady, które zostały zebrane w funkcjach, które zostały wywołane przez funkcję.|  

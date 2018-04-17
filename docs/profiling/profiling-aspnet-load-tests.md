@@ -1,23 +1,21 @@
 ---
-title: "Profilowanie testów obciążenia ASP.NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Profilowanie testów obciążenia ASP.NET | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: a742732817f926b9ea1b74b31ab97acfb9e8f4ec
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: b51cca1ed0e0247dc538978818a4b35159e08e74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilowanie testów obciążenia ASP.NET
 Można zbierać dane z profilowania automatycznego [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] testów, które działają w projektach witryny sieci Web ASP.NET sieci web. Można zebrać danych o interakcji między próbkowania i warstwy. Więcej informacji znajduje się w następujących tematach:  

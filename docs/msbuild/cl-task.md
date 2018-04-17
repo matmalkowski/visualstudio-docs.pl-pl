@@ -2,11 +2,8 @@
 title: CL — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
 - vc.task.cl
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f587eded84863a36fb2c293680cebd7668864c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cl-task"></a>CL — Zadanie
 Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wykonywalne (.exe), pliki biblioteki dołączanej (dynamicznie dll) lub plików kodu modułu (modułu .netmodule). Aby uzyskać więcej informacji, zobacz [— opcje kompilatora](/cpp/build/reference/compiler-options).  
@@ -81,7 +77,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **NoListing** - *\<none>*  
+    -   **NoListing** - *\<Brak >*  
   
     -   **AssemblyCode** - **/FA**  
   
@@ -89,7 +85,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **AssemblyAndSourceCode** - **/FAs**  
   
-    -   **All** - **/FAcs**  
+    -   **Wszystkie** -   **/facs**  
   
      Aby uzyskać więcej informacji, zobacz **/FA**, **/FAC**, **/FAS**, i **/facs** opcje w [/FA, /Fa (wyświetlanie listy plików)](/cpp/build/reference/fa-fa-listing-file).  
   
@@ -181,7 +177,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **false** - *\<none>*  
+    -   **FALSE** - *\<Brak >*  
   
     -   **true** - **/clr**  
   
@@ -211,7 +207,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **OldStyle** - **/Z7**  
   
-    -   **ProgramDatabase** - **/Zi**  
+    -   **ProgramDatabase** -   **/zi**  
   
     -   **EditAndContinue** - **/ZI**  
   
@@ -275,7 +271,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Wiersz** - **/errorReport:prompt**  
   
-    -   **Queue** - **/errorReport:queue**  
+    -   **Kolejka** - **/errorReport:queue**  
   
     -   **Wyślij** -   **/errorreport: Send**  
   
@@ -289,7 +285,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **false** - *\<none>*  
+    -   **FALSE** - *\<Brak >*  
   
     -   **Async** - **/EHa**  
   
@@ -315,7 +311,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **Neither** - *\<none>*  
+    -   **Ani** - *\<Brak >*  
   
     -   **Rozmiar** -   **/OS**  
   
@@ -339,9 +335,9 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-    -   **Precise** - **/fp:precise**  
+    -   **Dokładne** -   **/FP: precise**  
   
-    -   **Strict** - **/fp:strict**  
+    -   **Ściśle** -   **/FP: strict**  
   
     -   **Fast** - **/fp:fast**  
   
@@ -405,7 +401,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **Domyślna** - *\<Brak >*  
   
-    -   **Disabled** - **/Ob0**  
+    -   **Wyłączone** - **/Ob0**  
   
     -   **OnlyExplicitInline** - **/Ob1**  
   
@@ -487,7 +483,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **MinSpace** - **/O1**  
   
-    -   **MaxSpeed** - **/O2**  
+    -   **MaxSpeed** -   **/O2**  
   
     -   **Full** - **/Ox**  
   
@@ -671,7 +667,7 @@ Zawijania narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
      Aby uzyskać więcej informacji, zobacz [/nologo (Pomiń transparent początkowy) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
   
--   **TrackerLogDirectory**  
+-   **Katalog TrackerLogDirectory**  
   
      Opcjonalne `String` parametru.  
   

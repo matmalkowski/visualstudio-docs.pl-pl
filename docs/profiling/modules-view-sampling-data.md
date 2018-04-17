@@ -1,26 +1,24 @@
 ---
-title: "Widok modułów - dane próbkowania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok modułów - dane próbkowania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 - sampling profiling method,Modules view
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 80bb263f395930b77ff31cbc68f4f9695879756a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modules-view---sampling-data"></a>Widok modułów - dane próbkowania
 Widok modułów pobierania próbek danych wydajności wyświetla dane są grupowane według modułów, które zostały poddane próbkowaniu w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznej. Próbki funkcji modułu są wyświetlane poniżej tego węzła modułu.  

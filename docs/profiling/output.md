@@ -1,23 +1,21 @@
 ---
-title: "Dane wyjściowe | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dane wyjściowe | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b7452ad6aa8d7f190eebbc35d4be087c14dcd51a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 06d8518e6ea5e5cc4dbfbe3ae51d9fb1b06757a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="output"></a>Dane wyjściowe
 **Dane wyjściowe** opcji określa nazwę pliku danych profilowania dla sesji wydajności. **Dane wyjściowe** musi być używany z **Start** opcji.  
@@ -35,7 +33,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Wymagane opcje  
  **Dane wyjściowe** opcji należy używać z **Start** opcji.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Określa nazwę pliku wyjściowego.  
   
 ## <a name="example"></a>Przykład  

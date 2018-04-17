@@ -1,27 +1,24 @@
 ---
-title: Debugowanie kodu Python na komputerach zdalnych systemu Linux | Dokumentacja firmy Microsoft
+title: Debugowanie kodu Python na komputerach zdalnych systemu Linux
 description: Jak używać programu Visual Studio do debugowania kodu Python działającymi na komputerach zdalnych systemu Linux, łącznie z czynności konfiguracyjne niezbędne, zabezpieczeń i rozwiązywania problemów.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c56d404116c100ff306597a017f68a591b296306
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 03a4f1e6dadb85a2ffdb451543e25fee9c6f0150
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Zdalne debugowanie kodu języka Python w systemie Linux
 

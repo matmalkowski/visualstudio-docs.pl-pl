@@ -1,12 +1,9 @@
 ---
-title: GenerateApplicationManifest Task | Microsoft Docs
+title: Generateapplicationmanifest — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 24
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d4d4d88f2e9562636b9679ad942fdd8ac8588a22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — Zadanie
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub natywny manifest. Natywny manifest opisuje składnika przez definiowanie unikatową tożsamość składnika i zidentyfikowaniu wszystkie pliki wchodzące w skład składnika i zestawów. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza natywny manifest wskazujący punkt wejścia aplikacji, a następnie określając poziom zabezpieczeń aplikacji.  
@@ -356,6 +352,6 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
   
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
- [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md)   
+ [Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)   
  [Signfile — zadanie](../msbuild/signfile-task.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

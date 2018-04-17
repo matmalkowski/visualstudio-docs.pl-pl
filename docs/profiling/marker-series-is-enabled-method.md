@@ -1,29 +1,25 @@
 ---
-title: "marker_series::is_enabled — metoda | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: marker_series::is_enabled — metoda | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::is_enabled
 helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::is_enabled method
 ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1189c84cd3e7399cae7aaecb79e14aab3cd20d3a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 398305d571a0e53f6d5c3f7a6709039e2d7ab18f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled — Metoda
 Określa, czy dowolnej sesji jest włączony dostawca.  

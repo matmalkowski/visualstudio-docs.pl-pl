@@ -1,12 +1,9 @@
 ---
-title: "Xdcmake — zadanie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Xdcmake — zadanie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (Visual C++))
 - MSBuild (Visual C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab068fde2d0d30d0043fabad116e08dbc182d52d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f513580dfbb17ce21bc12252d1c1dd67304216ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xdcmake-task"></a>XDCMake — Zadanie
 Zawijania narzędzie dokumentacji XML (xdcmake.exe), które scala pliki dokumentacji XML (.xdc) w pliku XML.  

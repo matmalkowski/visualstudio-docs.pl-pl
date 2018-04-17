@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Wskazówki: importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym przewodniku pokazano, jak zaimportować SharePoint niestandardowej strony wzorcowej oraz strony witryny, która ma obrazu na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Musi mieć następujące składniki w tym przewodniku:  
   
--   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Obsługiwane wersje programu [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Program Visual Studio.  
   
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Otwórz witrynę programu SharePoint, aby wyświetlić elementy wdrożone.  
   
- Alternatywny sposób importowanie plików do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je do programu SharePoint jest dodanie plików w modułach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Porady: importowanie tematu lub strony wzorcowej](../sharepoint/how-to-import-a-master-page-or-theme.md) i [przy użyciu modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Alternatywny sposób importowanie plików do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i wdrażać je do programu SharePoint jest dodanie plików w modułach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Porady: importowanie tematu lub strony wzorcowej](../sharepoint/how-to-import-a-master-page-or-theme.md) i [przy użyciu modułów podczas dołączania plików rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   

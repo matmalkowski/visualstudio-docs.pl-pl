@@ -1,26 +1,24 @@
 ---
 title: Wzorce aplikacji dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
-##  <a name="BKMK_WindowInteractions"></a>Interakcje okna  
+##  <a name="BKMK_WindowInteractions"></a> Interakcje okna  
   
 ### <a name="overview"></a>Omówienie  
 Dwa typy okno główne używane w programie Visual Studio są edytory dokumentu i okien narzędzi. Rzadkich, ale możliwe, są duże Niemodalne okna dialogowe. Mimo że są to wszystkie niemodalne w powłoce, ich wzorców są różni. W tej sekcji omówiono różnica między okna dokumentów, okien narzędzi i Niemodalne okna dialogowe. Wzorce modalnego okna dialogowego są objęte [okna](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
@@ -42,7 +40,7 @@ Wziąć pod uwagę dokładnie informacje dotyczące typu kontenera należy. Typo
 | **Wystąpienia** | *Mająca wiele wystąpień*<br /><br /> Wiele edytorów można otworzyć na tym samym czasie i edytowania różnych plików, gdy niektóre edytory również umożliwić tego samego pliku były otwarte w edytorze więcej niż jeden (przy użyciu **okna &gt; nowe okno** polecenia).<br /><br /> Pojedynczy Edytor może edytować jednego lub wielu plików jednocześnie (Projektant projektu). | *Jeden lub kilku instance*<br /><br /> Zawartość zmienia do uwzględnienia kontekstu (jak przeglądarka właściwości) lub Wypchnij fokus/kontekstu do innych okien (Lista zadań, Solution Explorer).<br /><br /> Zarówno w jednym wystąpieniu, jak i w wielu wystąpień narzędzia windows powinna być skojarzona z okna dokumentów aktywnych, chyba że przekonujący powód nie ma pozycji. | *Jednego wystąpienia* |  
 | **Przykłady** | **Edytory tekstów**, takich jak Edytor kodu<br /><br /> **Projektowanie powierzchni**, takie jak projektanta formularza lub powierzchni modelowania<br /><br /> **Kontrolowanie układów podobne do okien dialogowych**, takich jak projektanta manifestu | **Eksploratora rozwiązań** zapewnia rozwiązanie i projekty zawarty w rozwiązaniu<br /><br /> **Eksploratora serwera** udostępnia hierarchiczny widok połączeń serwerów i danych, które użytkownik wybierze opcję Otwórz okno. Otwiera obiekt z bazy danych hierarchii, takie jak zapytania, zostanie otwarte okno dokumentu i umożliwia użytkownikom edytowanie zapytania.<br /><br /> **Przeglądarka właściwości** Wyświetla właściwości dla obiekt wybrany w oknie dokumentu lub innego okna narzędzia. Właściwości są prezentowane w widoku siatki hierarchiczna lub złożonych formantów okna dialogowego przypominającej i Zezwalaj użytkownikowi na ustawianie wartości tych właściwości. | |  
   
-##  <a name="BKMK_ToolWindows"></a>Okna narzędzi  
+##  <a name="BKMK_ToolWindows"></a> Okna narzędzi  
   
 ### <a name="overview"></a>Omówienie  
 Narzędzia systemu windows obsługuje pracy użytkownika, który odbywa się w dokumencie systemu windows. One może służyć do wyświetlania hierarchii, która reprezentuje obiekt główny podstawowych programu Visual Studio udostępnia i można manipulować.  
@@ -149,7 +147,7 @@ Przykładem listy można nawigować narzędzia windows są Eksploratora rozwiąz
 | Rejestruje ||  
 | Wątki ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>Konwencje dokumentów edytora  
+##  <a name="BKMK_DocumentEditorConventions"></a> Konwencje dokumentów edytora  
   
 ### <a name="document-interactions"></a>Interakcje z dokumentu  
 "Także dokumentu" jest największą ilością miejsca w środowisku IDE i których użytkownik ma skupione ich uwagi do wykonywania swoich zadań, wspierana przez dodatkowe narzędzia systemu windows. Edytory dokumentu reprezentują podstawowe jednostki pracy, który użytkownik otwiera i zapisuje w programie Visual Studio. Zachowują silne zorientować się zaznaczenie związany z Eksploratora rozwiązań lub innych okien aktywnej hierarchii. Użytkownik powinien mieć możliwość wskazywał jeden z tych hierarchii systemu windows i wiedzieć, gdzie znajduje się dokument i jej zależności do rozwiązania, projektu lub innego obiektu głównego udostępniane przez pakiet programu Visual Studio.  
@@ -257,7 +255,7 @@ Istnieje kilka typów innych niż edytora, które również za pomocą dokumentu
   
 -   Użytkownicy musi mieć możliwość interakcji z formantów przy użyciu klawiatury, aktywacja edytora i TAB formantów lub przy użyciu standardowych klawiszy skrótu.  
   
-##  <a name="BKMK_Dialogs"></a>Okna dialogowe  
+##  <a name="BKMK_Dialogs"></a> Okna dialogowe  
   
 ### <a name="introduction"></a>Wprowadzenie  
 Okien dialogowych w programie Visual Studio zwykle powinny obsługiwać osobne jednostki pracy użytkownika, a następnie odrzucone.  
@@ -313,12 +311,12 @@ Należy wziąć pod uwagę różnice między te podstawowe typy okien dialogowyc
   
 -   [Kreatorzy](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) są przydatne w przypadku kierowanie użytkownika za pomocą logicznej sekwencji kroki do wykonania zadania. Szereg opcji są oferowane w kolejnych panele, czasami wprowadzenie różnych przepływów pracy ("gałęzie") zależy od wyboru dokonanego w poprzednim panelu.  
   
-####  <a name="BKMK_SimpleDialogs"></a>Proste okien dialogowych  
+####  <a name="BKMK_SimpleDialogs"></a> Proste okien dialogowych  
 Proste okno dialogowe jest prezentacji kontrolek w jednym oknie modalne. Ta prezentacja może obejmować zmian sterowania złożonego wzorców, takich jak selektor pól. W oknach dialogowych proste wykonaj standardowe ogólny układ, a także wszystkie określone układu wymagane do grupowania sterowania złożonego.
   
 ![> Utwórz silnej nazwy klucza jest przykład prostego okna dialogowego w programie Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704 01_CreateStrongNameKey")<br />Tworzenie silnej nazwy klucza jest przykład prostego okna dialogowego w programie Visual Studio.
   
-####  <a name="BKMK_LayeredDialogs"></a>Okna dialogowe warstwowej  
+####  <a name="BKMK_LayeredDialogs"></a> Okna dialogowe warstwowej  
 Warstwowego okien dialogowych obejmują karty, pulpity nawigacyjne i osadzone drzewa. Są one używane w celu zmaksymalizowania wykorzystania nieruchomości, gdy istnieje wiele grup formantów w elementu interfejsu użytkownika. Grupowania są warstwie, dzięki czemu użytkownik może wybrać grupowania można wyświetlić w dowolnym momencie.  
   
 W przypadku najbardziej oczywistym mechanizm przełączanie między grupowania jest formant karty. Brak dostępnych kilka rozwiązań alternatywnych. Zobacz Ustawianie priorytetów i tworzenie warstw sposobu wybierz najbardziej odpowiedni styl.  
@@ -327,7 +325,7 @@ W przypadku najbardziej oczywistym mechanizm przełączanie między grupowania j
   
 ![Narzędzia > Opcje jest przykładem warstwowego okna dialogowego w programie Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704 02_ToolsOptions")<br />Narzędzia > Opcje jest przykładem warstwowego okna dialogowego w programie Visual Studio.
   
-####  <a name="BKMK_Wizards"></a>Kreatorzy  
+####  <a name="BKMK_Wizards"></a> Kreatorzy  
 Kreatorzy są przydatne w przypadku kierowanie użytkownika za pomocą logicznej sekwencji kroków w celu wykonania zadania. Szereg opcji dostępnych w kolejnych panele, a użytkownik należy kontynuować za pomocą danego kroku przed przejściem do następnego. Gdy dostępne są wystarczające domyślne **Zakończ** przycisk jest aktywny.  
   
  Modalne kreatorzy są używane do zadań które:  
@@ -408,7 +406,7 @@ Nie używaj klawiszy dostępu dla **OK**, **anulować**, lub **pomocy** przycisk
 #### <a name="imagery"></a>Obrazów  
 Oszczędne używać obrazów w oknach dialogowych. Nie używaj duże ikony w oknach dialogowych jedynie w celu użycia miejsca. Obrazy należy używać tylko wtedy, gdy są one ważnym przekazywania wiadomości dla użytkownika, takich jak ikon ostrzeżenie lub stan animacji.  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>Określanie priorytetu i Układanie warstwowo  
+###  <a name="BKMK_PrioritizingAndLayering"></a> Określanie priorytetu i Układanie warstwowo  
   
 #### <a name="prioritizing-your-ui"></a>Określanie priorytetu interfejsu użytkownika  
 Może być konieczne wyświetlić niektórych elementów interfejsu użytkownika programu forefront i umieścić bardziej zaawansowanych zachowanie i (w tym polecenia zasłoniętej) opcje w oknach dialogowych. Przełącz najczęściej używane funkcje programu forefront, tworząc miejsca i czyniąc ją widoczne domyślnie w Interfejsie użytkownika etykietę tekstową, gdy okno dialogowe jest wyświetlane.  
@@ -423,7 +421,7 @@ Brak zalety i wady różnych metod Układanie warstwowo interfejsu użytkownika 
 | Mechanizm przełączania | Korzyści i zastosowania | Wady i nieodpowiednie użycie |  
 | --- | --- | --- |  
 | Formantu karty | Logicznie grupują strony okna dialogowego w zestawy pokrewne<br /><br />Przydatne w przypadku mniej niż 5 (lub liczba kart, które mieszczą się w jednym wierszu w oknie dialogowym) stron pokrewnych formantów w oknie dialogowym<br /><br />Karta etykiety musi być krótka: jeden lub dwa wyrazy, które można łatwo zidentyfikować zawartości<br /><br />Typowe styl okna dialogowego systemu<br /><br />Przykład: **pliku Explorer &gt; właściwości elementów** | Tworzenie etykiety krótki opis może być trudne<br /><br />Zazwyczaj nie skalowania poza pięć kart w jednym oknie dialogowym<br /><br />Nieodpowiednie, jeśli masz zbyt wiele kart jednego wiersza (Użyj technikę alternatywnych warstwy)<br /><br />Nie rozszerzonego |  
-| Pasek boczny nawigacji | Proste przełączania urządzenia, które może obsłużyć więcej kategorii niż karty<br /><br />Płaska lista kategorii (żadna hierarchia)<br /><br />Rozszerzalny<br /><br />Przykład: **dostosować... &gt;Dodaj polecenie** | Nie dobre wykorzystanie miejsca w poziomie, jeśli ma mniej niż trzech grup<br /><br />Zadania mogą być lepiej dostosowane do listy rozwijanej |  
+| Pasek boczny nawigacji | Proste przełączania urządzenia, które może obsłużyć więcej kategorii niż karty<br /><br />Płaska lista kategorii (żadna hierarchia)<br /><br />Rozszerzalny<br /><br />Przykład: **dostosować... &gt; Dodaj polecenie** | Nie dobre wykorzystanie miejsca w poziomie, jeśli ma mniej niż trzech grup<br /><br />Zadania mogą być lepiej dostosowane do listy rozwijanej |  
 | Formant drzewa | Umożliwia nieograniczone kategorii<br /><br />Umożliwia grupowanie i/lub hierarchia kategorii<br /><br />Rozszerzalny<br /><br />Przykład: **narzędzia &gt; opcje** | Wielokrotnie zagnieżdżone hierarchie może spowodować nadmierne przewijanie w poziomie<br /><br />Visual Studio ma overabundance widok drzewa |  
 | Kreator | Ułatwia przeprowadzi użytkownika przez kroki zadań, kolejny przez zadanie zostało zakończone: Kreator przedstawia zadania wysokiego poziomu i poszczególnych paneli reprezentują podzadania potrzebne do wykonania zadania ogólnej<br /><br />Przydatne w przypadku zadania przecina granice interfejsu użytkownika, jak kiedy użytkownik w przeciwnym razie musi użycie wiele edytorów i narzędzia systemu windows do ukończenia tego zadania<br /><br />Przydatne, gdy zadanie wymaga rozgałęzianie<br /><br />Przydatne w przypadku zadania zawiera zależności między krokami<br /><br />Przydatne w przypadku kilku podobne zadania związane z rozwidlenia decyzji co może być prezentowana w jedno okno, aby zmniejszyć liczbę różnych podobne okien dialogowych | Nieodpowiednie dla dowolnego zadania, które nie wymagają sekwencyjnego przepływu pracy<br /><br />Użytkownicy mogą stać się zalewowi i mylić przez kreatora bez zbyt wiele kroków<br /><br />Kreatorzy z założenia mają ograniczoną nieruchomości ekranu |  
   
@@ -437,7 +435,7 @@ Alternatywnie interfejsu użytkownika, który oferuje wszystkie funkcje dostępn
 ##### <a name="adaptive-ui"></a>Adaptacyjną interfejsu użytkownika  
 Wyświetlenie lub ukrycie interfejsu użytkownika na podstawie użycia lub komputera własnym zgłoszonego przez użytkownika jest innego sposobu prezentowania niezbędne interfejsu użytkownika innych części są ukryte. Nie jest to zalecane w programie Visual Studio, jako algorytmów dotyczących decydowania, kiedy do wyświetlenia lub ukrycia interfejsu użytkownika mogą być istotne znaczenie, a zasady zawsze będą nieprawidłowe dla niektórych zestawu przypadków.  
   
-##  <a name="BKMK_Projects"></a>Projekty  
+##  <a name="BKMK_Projects"></a> Projekty  
   
 ### <a name="projects-in-the-solution-explorer"></a>Projekty w Eksploratorze rozwiązań  
 Większości projektów sklasyfikowanych jako odwołania na, opartych na katalogu lub mieszane. Wszystkie trzy projekty są obsługiwane jednocześnie w Eksploratorze rozwiązań. Katalog główny środowiska użytkownika w pracy z projektami odbywa się w tym oknie. Chociaż inny projekt węzły są odwołania, katalog lub projektów typu trybu mieszanego, Brak wspólnego wzorca interakcji, który ma zostać zastosowany jako punkt początkowy przed rozbieżności do wzorców użytkownika określonego projektu.  
@@ -508,19 +506,19 @@ Użytkownik zawsze może być możliwe ustalenie wpływ operacji przeciągania i
 | Nie modyfikatora | Akcja | Przenieś | Łącze |  
 | Nie modyfikatora | docelowy | Dodaje odwołanie do elementu | Dodaje odwołanie do elementu |  
 | Nie modyfikatora | Źródło | Usuwa odwołania do oryginalnego elementu | Zachowuje oryginalnego elementu |  
-| Nie modyfikatora | Wynik | `DROPEFFECT_MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
+| Nie modyfikatora | Wynik | `DROPEFFECT_MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
 | SHIFT + przeciągania | Akcja | Przenieś | Nie listy |  
 | SHIFT + przeciągania | docelowy | Dodaje odwołanie do elementu | Nie listy |  
 | SHIFT + przeciągania | Źródło | Usuwa odwołania do oryginalnego elementu | Nie listy |  
-| SHIFT + przeciągania | Wynik | `DROPEFFECT_MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | Nie listy |  
+| SHIFT + przeciągania | Wynik | `DROPEFFECT_MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | Nie listy |  
 | CTRL + przeciągania | Akcja | Kopiuj | Nie listy |  
 | CTRL + przeciągania | docelowy | Dodaje odwołanie do elementu | Nie listy |  
 | CTRL + przeciągania | Źródło | Zachowuje odwołania do oryginalnego elementu | Nie listy |  
-| CTRL + przeciągania | Wynik | `DROPEFFECT_COPY`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | Nie listy |  
+| CTRL + przeciągania | Wynik | `DROPEFFECT_COPY` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | Nie listy |  
 | Ctrl + Shift + przeciągania | Akcja | Łącze | Łącze |  
 | Ctrl + Shift + przeciągania | docelowy | Dodaje odwołanie do elementu | Dodaje odwołanie do elementu |  
 | Ctrl + Shift + przeciągania | Źródło | Zachowuje odwołania do oryginalnego elementu | Zachowuje oryginalnego elementu |  
-| Ctrl + Shift + przeciągania | Wynik | `DROPEFFECT_LINK`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
+| Ctrl + Shift + przeciągania | Wynik | `DROPEFFECT_LINK` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
 | Ctrl + Shift + przeciągania | Uwaga | Taka sama jak zachowanie przeciągania i upuszczania skróty w Eksploratorze Windows. ||  
 | Wycinanie i wklejanie | Akcja | Przenieś | Łącze |  
 | Wycinanie i wklejanie | docelowy | Dodaje odwołanie do elementu | Dodaje odwołanie do elementu |  
@@ -538,15 +536,15 @@ Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (a ta
 | --- | --- | --- | --- |  
 | Nie modyfikatora | Akcja | Przenieś | Przenieś |  
 | Nie modyfikatora | docelowy | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |  
-| Nie modyfikatora | Źródło | Usuwa odwołania do oryginalnego elementu | Usuwa odwołania do oryginalnego elementu | | Nie modyfikatora | Wynik | `DROPEFFECT_MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
+| Nie modyfikatora | Źródło | Usuwa odwołania do oryginalnego elementu | Usuwa odwołania do oryginalnego elementu | | Nie modyfikatora | Wynik | `DROPEFFECT_MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
 | SHIFT + przeciągania | Akcja | Przenieś | Przenieś |  
 | SHIFT + przeciągania | docelowy | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |  
 | SHIFT + przeciągania | Źródło | Usuwa odwołania do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
-| SHIFT + przeciągania | Wynik | `DROPEFFECT_MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
+| SHIFT + przeciągania | Wynik | `DROPEFFECT_MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
 | CTRL + przeciągania | Akcja | Kopiuj | Kopiuj |  
 | CTRL + przeciągania | docelowy | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |  
 | CTRL + przeciągania | Źródło | Zachowuje odwołania do oryginalnego elementu | Zachowuje odwołania do oryginalnego elementu |  
-| CTRL + przeciągania | Wynik | `DROPEFFECT_COPY`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_COPY`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
+| CTRL + przeciągania | Wynik | `DROPEFFECT_COPY` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_COPY` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |  
 | Ctrl + Shift + przeciągania | | Nie listy | Nie listy |  
 | Wycinanie i wklejanie | Akcja | Przenieś | Przenieś |  
 | Wycinanie i wklejanie | docelowy | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |  
@@ -565,19 +563,19 @@ Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (a ta
 | Nie modyfikatora | Akcja | Przenieś | Przenieś |
 | Nie modyfikatora | docelowy | Dodaje odwołanie do elementu | Kopiuje element do lokalizacji docelowej |
 | Nie modyfikatora | Źródło | Usuwa odwołania do oryginalnego elementu | Usuwa odwołania do oryginalnego elementu |
-| Nie modyfikatora | Wynik | `DROPEFFECT_ MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE`jest zwracana jako akcja `::Drop` i elementu zostaną usunięte z oryginalnej lokalizacji w magazynie |
+| Nie modyfikatora | Wynik | `DROPEFFECT_ MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE` jest zwracana jako akcja `::Drop` i elementu zostaną usunięte z oryginalnej lokalizacji w magazynie |
 | SHIFT + przeciągania | Akcja | Przenieś | Przenieś |
 | SHIFT + przeciągania | docelowy | Dodaje odwołanie do elementu | Kopiuje element do lokalizacji docelowej |
 | SHIFT + przeciągania | Źródło | Usuwa odwołania do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji | 
-| SHIFT + przeciągania | Wynik | `DROPEFFECT_ MOVE`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE`jest zwracana jako akcja `::Drop` i elementu zostaną usunięte z oryginalnej lokalizacji w magazynie |
+| SHIFT + przeciągania | Wynik | `DROPEFFECT_ MOVE` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE` jest zwracana jako akcja `::Drop` i elementu zostaną usunięte z oryginalnej lokalizacji w magazynie |
 | CTRL + przeciągania | Akcja | Kopiuj | Kopiuj |
 | CTRL + przeciągania | docelowy | Dodaje odwołanie do elementu | Kopiuje element do lokalizacji docelowej |
 | CTRL + przeciągania | Źródło | Zachowuje odwołania do oryginalnego elementu | Zachowuje oryginalnego elementu |
-| CTRL + przeciągania | Wynik | `DROPEFFECT_ COPY`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ COPY`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
+| CTRL + przeciągania | Wynik | `DROPEFFECT_ COPY` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ COPY` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
 | Ctrl + Shift + przeciągania | Akcja | Łącze | Łącze |
 | Ctrl + Shift + przeciągania | docelowy | Dodaje odwołanie do elementu | Dodaje odwołanie do oryginalnego elementu źródłowego |
 | Ctrl + Shift + przeciągania | Źródło | Zachowuje odwołania do oryginalnego elementu | Zachowuje oryginalnego elementu |
-| Ctrl + Shift + przeciągania | Wynik | `DROPEFFECT_ LINK`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ LINK`jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
+| Ctrl + Shift + przeciągania | Wynik | `DROPEFFECT_ LINK` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ LINK` jest zwracana jako akcja `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
 | Wycinanie i wklejanie | Akcja | Przenieś | Przenieś |
 | Wycinanie i wklejanie | docelowy | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
 | Wycinanie i wklejanie | Źródło | Usuwa odwołania do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |

@@ -1,12 +1,10 @@
 ---
-title: "Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - HasVstoObject method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5cd29d7de596704087eb1326791e4fc9df9921a6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0f95c7cb0dfa5fb867807e32366157839725db85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania
   Dodatku VSTO służy do dostosowywania dokumentów programu Word i skoroszytów programu Excel w następujący sposób:  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
-##  <a name="AddControls"></a>Dodawanie formantów zarządzanego do dokumentów i arkuszy  
+##  <a name="AddControls"></a> Dodawanie formantów zarządzanego do dokumentów i arkuszy  
  Po wygenerowaniu <xref:Microsoft.Office.Tools.Word.Document> lub <xref:Microsoft.Office.Tools.Excel.Worksheet>, można dodawać formanty do dokumentu lub arkuszu, które są rozszerzone obiekty reprezentują. Aby to zrobić, użyj właściwości kontrolki <xref:Microsoft.Office.Tools.Word.Document> lub <xref:Microsoft.Office.Tools.Excel.Worksheet>. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Formanty formularzy systemu Windows można dodać lub *hostowania formantów*. Formanty hosta jest udostępniane przez formant [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] który opakowuje odpowiedniego formantu w Word czy Excel podstawowego zestawu międzyoperacyjnego. Formanty hosta przedstawia wszystkie zachowania obiekt natywny pakietu Office, ale również informuje o zdarzeniach i może być powiązana z danymi przy użyciu modelu powiązanie danych formularzy systemu Windows. Aby uzyskać więcej informacji, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
-##  <a name="HasVstoObject"></a>Określanie, czy obiekt pakietu Office został rozszerzony  
+##  <a name="HasVstoObject"></a> Określanie, czy obiekt pakietu Office został rozszerzony  
  Aby ustalić, czy rozszerzonej obiekt został już wygenerowany dla danego obiektu Office macierzystego, należy użyć metody HasVstoObject. Ta metoda zwraca **true** przypadku rozszerzonej obiekt został już wygenerowany; w przeciwnym razie zwraca **false**.  
   
  Użyj metody Globals.Factory.HasVstoMethod. Przekazywanie Word czy Excel obiekt natywny, takich jak <xref:Microsoft.Office.Interop.Word.Document> lub <xref:Microsoft.Office.Interop.Excel.Worksheet>, które mają zostać przetestowane dla obiekt rozszerzonej.  

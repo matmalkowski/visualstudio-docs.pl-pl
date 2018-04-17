@@ -1,12 +1,10 @@
 ---
-title: "Pakowanie i wdrażanie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pakowanie i wdrażanie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>Rozwiązania pakowania i wdrażania SharePoint
   Zwykle rozwiązania SharePoint jest wdrażana na serwerze programu SharePoint przy użyciu rozwiązania pliku pakietu (wsp). Organizowanie elementów projektu SharePoint w funkcji i utworzyć pakiet do wdrożenia funkcji programu SharePoint, można użyć programu Visual Studio.  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [Wdrażanie plików rozwiązań SharePoint](#DeployingFiles)  
   
-##  <a name="Creating"></a>Tworzenie funkcji i pakietów  
+##  <a name="Creating"></a> Tworzenie funkcji i pakietów  
  Można grupować powiązane elementy programu SharePoint w Visual Studio *funkcji*. Na przykład funkcja dla definicji listy kontaktów może zawierać wystąpienia listy i definicji listy. Można połączyć tych dwóch elementów w jednym funkcji do celów wdrożenia. Aby uzyskać więcej informacji o funkcjach, zobacz [bloków konstrukcyjnych: funkcje](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  Następnie można utworzyć SharePoint pakietu rozwiązań (wsp) zawierać wiele funkcji, definicje witryny zestawów i inne pliki w jednym pakiecie, służący do przechowywania plików w formacie potrzebne do wdrożenia plików na serwerze programu SharePoint. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: rozwiązań](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
-##  <a name="Tools"></a>Funkcja i utworzenie pakietu narzędzia pomocy technicznej  
+##  <a name="Tools"></a> Funkcja i utworzenie pakietu narzędzia pomocy technicznej  
  Narzędzia deweloperskie programu SharePoint w Visual Studio umożliwia szybko organizować pliki programu SharePoint w funkcji i pakietów rozwiązania łatwiejsze wdrożenia. Można użyć następujących narzędzi do konfigurowania funkcji i rozwiązań pakietu.  
   
 -   Funkcja projektanta i projektanta pakietu.  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>Eksplorator rozwiązań  
  Przejdź do otwierania plików projektu SharePoint, można użyć Eksploratora rozwiązań. Użyj menu kontekstowego w Eksploratorze rozwiązań, aby dodać funkcje, odbiorcy zdarzeń funkcji oraz funkcji zasobów. Ponadto można otworzyć funkcji projektantów i projektantów pakiet do konfigurowania funkcji i pakietów dla wdrożenia.  
   
-##  <a name="Deploying"></a>Wdrażanie rozwiązań SharePoint  
+##  <a name="Deploying"></a> Wdrażanie rozwiązań SharePoint  
  Po dostosowaniu funkcji i pakietów w programie Visual Studio, można utworzyć pliku wsp do wdrożenia na serwerach programu SharePoint. Visual Studio umożliwia debugowania i testowania WSP tylko na serwerze programu SharePoint na komputerze dewelopera. Aby uzyskać więcej informacji na temat wdrażania rozwiązań SharePoint na serwerze zdalnym programu SharePoint, zobacz [wdrażanie rozwiązania](http://go.microsoft.com/fwlink/?LinkID=169194).  
   
  Można również dostosować procedury wdrażania na komputerze dewelopera. Aby uzyskać więcej informacji, zobacz [wdrażanie, publikowanie i uaktualnianie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
-##  <a name="DeployingFiles"></a>Wdrażanie plików rozwiązań SharePoint  
+##  <a name="DeployingFiles"></a> Wdrażanie plików rozwiązań SharePoint  
  Zazwyczaj podczas dodawania elementu projektu SharePoint do rozwiązania programu SharePoint, wszystkie wymagane pliki są uwzględniane. Pliki, które mogą być kompilowana (pliki kodu) są wbudowane w zestawie danych wyjściowych rozwiązania. Jednak również należy dodać do projektu SharePoint nie można skompilować dla plików, na przykład, XML, txt lub pliki zasobów. Te pliki nie są automatycznie spakowane w rozwiązaniu. Aby upewnić się, że są one umieszczone, albo Dodaj pliki do mapowanej folderu lub elementu projektu SharePoint.  
   
  Po wdrożeniu rozwiązania pliki dodane do folderów mapowanych automatycznie są kopiowane do gałęzi programu SharePoint. Pliki dodane do elementu projektu SharePoint są wdrażane do lokalizacji, która została określona w **lokalizacja wdrożenia** na podstawie właściwości dla każdego pliku, co jest ustawieniem częściowo **typu wdrożenia** właściwości. Domyślnie **typu wdrożenia** wartość właściwości jest **NoDeployment**, co oznacza, że plik nie jest wdrażany z rozwiązaniem. Należy ustawić inną wartość dla właściwości, które można dołączyć plik w pakiecie.  

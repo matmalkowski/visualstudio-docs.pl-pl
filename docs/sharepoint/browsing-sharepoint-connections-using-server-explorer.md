@@ -1,13 +1,10 @@
 ---
-title: "Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SharePointExplorer.SharePointConnection
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ea474f2439b6da519563f08ffe4ddc2f6dcef30
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ca6e7ff8d046ae94d6016c01b346bce592b2fcf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Przeglądanie połączeń SharePoint za pomocą eksploratora serwera
   Możesz teraz przeglądać lokalnych połączeń SharePoint w **Eksploratora serwera**. Przy użyciu tej metody, można przejść za pośrednictwem składników witryny programu SharePoint w systemie. Składniki witryny programu SharePoint, takie jak definicje list i typów zawartości, są wyświetlane w węźle, o nazwie **połączeń SharePoint** w widoku drzewa **Eksploratora serwera**. Aby wyświetlić **Eksploratora serwera**, na pasku menu wybierz **widoku**, **Eksploratora serwera**. Oprócz wyświetlania składników witryny programu SharePoint, można usunąć elementy, przeglądania właściwości lub Odśwież widok drzewa za pomocą poleceń menu skrótów.  

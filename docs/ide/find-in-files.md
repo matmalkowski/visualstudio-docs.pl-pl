@@ -1,12 +1,9 @@
 ---
-title: "Znajdź w plikach | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Znajdź w plikach | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e7e181883fff125349949f081826157f2a3aa36f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
 
@@ -37,7 +35,7 @@ Można użyć dowolnej z następujących metod można wyświetlić **Znajdź w p
 
 ## <a name="to-display-find-in-files"></a>Aby wyświetlić Znajdź w plikach
 
-1. Na pasku menu wybierz **Edytuj**, **Znajdź i Zamień**.
+1. Na pasku menu wybierz **Edytuj** > **Znajdź i Zamień**.
 
 1. Wybierz **Znajdź w plikach**.
 
@@ -71,16 +69,20 @@ Określa, że podfoldery **Szukaj w** folderu zostaną przeszukane.
 
 Można rozwinąć lub zwinąć **dostępne opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
 
-Uwzględnij wielkość liter  
+**Wielkość liter**  
+
 Po wybraniu **znaleźć wyników** wyszukiwanie będzie uwzględniana wielkość liter
 
-Uwzględnij całe wyrazy  
+**Uwzględnij całe wyrazy**  
+
 Po wybraniu **znaleźć wyników** windows zwróci tylko całe wyrazy dopasowań.
 
-Używanie wyrażeń regularnych  
+**Używanie wyrażeń regularnych**  
+
 Jeśli to pole wyboru jest zaznaczone, można użyć notacji specjalne wzorce tekstu do dopasowania w **Znajdź** lub **Zamień** pól tekstowych. Aby uzyskać listę tych notacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Obejrzyj następujące typy plików  
+**Obejrzyj następujące typy plików**  
+
 Ta lista wskazuje typy plików do przeszukiwania w **Szukaj w** katalogów. Jeśli to pole jest puste, wszystkie pliki w **Szukaj w** katalogi będą wyszukiwane.
 
 Wybierz dowolną pozycję na liście, wprowadź ciąg wyszukiwania wstępnie skonfigurowane, które zostaną znalezione pliki określonego typu.
@@ -89,16 +91,20 @@ Wybierz dowolną pozycję na liście, wprowadź ciąg wyszukiwania wstępnie sko
 
 Można rozwinąć lub zwinąć **powoduje opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
 
-Znajdź okno wyników 1  
+**Znajdź okno wyników 1**  
+
 Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 1 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 1 wyniki**.
 
-Znajdź okno wyników 2  
+**Znajdź okno wyników 2**
+
 Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 2 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 2 wyniki**.
 
-Wyświetl tylko nazwy plików  
+**Wyświetl tylko nazwy plików**
+
 Wyświetla listę plików zawierających wyszukiwania odpowiada zamiast wyświetlanie wyszukiwania dopasowuje się.
 
-Dołączanie wyników  
+**Dołączanie wyników**
+
 Dołącza wyniki wyszukiwania do wyników poprzedniego wyszukiwania.
 
 ## <a name="see-also"></a>Zobacz także

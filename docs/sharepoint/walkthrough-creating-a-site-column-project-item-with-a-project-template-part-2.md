@@ -1,25 +1,24 @@
 ---
-title: "Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2 | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, gdy będą oni używać szablonu można utworzyć nowy projekt, który zawiera element projektu. Informacje zbierane można zainicjować elementu projektu.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Debugowanie i testowanie kreatora.  
   
 > [!NOTE]  
->  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Możesz pobrać przykład, który zawiera projekty ukończone, kodu i innych plików w ramach tego przewodnika z następującej lokalizacji: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać tego przewodnika, należy najpierw utworzyć rozwiązanie SiteColumnProjectItem, wykonując [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu, część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Kolumny witryny w programie SharePoint. Aby uzyskać więcej informacji, zobacz [kolumn](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Opis składników Kreatora  
+##  <a name="wizardcomponents"></a> Opis składników Kreatora  
  Kreator przedstawionej w tym przewodniku zawiera kilka składników. W poniższej tabeli opisano te składniki.  
   
 |Składnik|Opis|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Na liście szablony projektów, wybierz **Biblioteka kontrolek użytkownika WPF**, nazwij projekt **ProjectTemplateWizard**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **ProjectTemplateWizard** projektu do rozwiązania i otwarcie pliku UserControl1.xaml domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **ProjectTemplateWizard** projektu do rozwiązania i otwarcie pliku UserControl1.xaml domyślne.  
   
 6.  Usuń plik UserControl1.xaml z projektu.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wybierz **biblioteki klas** projektu szablonu, nazwy projektu **SharePointCommands**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **SharePointCommands** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **SharePointCommands** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 5.  Usuń plik kodu Class1 z projektu.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Jeśli projektujesz projektu Visual Basic zaimportować ProjectTemplateWizard przestrzeni nazw do projektu przy użyciu **projektanta projektu**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie zaimportowane przestrzenie nazw &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie zaimportowane przestrzenie nazw &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Aby skonfigurować projekt SharePointCommands  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wybierz strzałkę obok pozycji **Dodaj** przycisk, a następnie wybierz pozycję **Dodaj jako Link** opcji z menu.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje plik kodu do **SharePointCommands** projektu jako łącze. Plik kodowy znajduje się w **ProjectTemplateWizard** również skompilować projekt, ale kod w pliku **SharePointCommands** projektu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje plik kodu do **SharePointCommands** projektu jako łącze. Plik kodowy znajduje się w **ProjectTemplateWizard** również skompilować projekt, ale kod w pliku **SharePointCommands** projektu.  
   
 5.  W **SharePointCommands** projekt, Dodaj inny plik kodu, który ma nazwę polecenia.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — Element &#40; Szablony Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — Element &#40;szablony Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Zapisz i zamknij plik.  
   

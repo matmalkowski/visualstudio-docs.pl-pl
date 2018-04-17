@@ -1,29 +1,27 @@
 ---
 title: 'Porady: Instalowanie autonomiczny profilera | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
 - profiling tools, stand-alone profiler
 ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bf0c454e649f45975a4d45300923dbd155511136
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ed9ff72372c05f32973adefeaa5df746e541728e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Porady: instalowanie autonomiczny profilera
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]zawiera autonomiczny profilera, który można uruchomić bez konieczności instalowania na podstawie wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko deweloperskie. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci Web w środowisku produkcyjnym.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zawiera autonomiczny profilera, który można uruchomić bez konieczności instalowania na podstawie wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko deweloperskie. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci Web w środowisku produkcyjnym.  
   
 > [!NOTE]
 >  Gdy jest używany autonomiczny profilera do zbierania danych wydajności dla witryny sieci Web ASP.NET [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) narzędzie Linia zaleca się za pośrednictwem [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia.  

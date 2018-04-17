@@ -1,12 +1,9 @@
 ---
-title: ResourcesGenerator Task | Microsoft Docs
+title: Resourcesgenerator — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ResourcesGenerator task [WPF MSBuild]
 - ResourcesGenerator task [WPF MSBuild], parameters
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
-caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27ce9d8f507be900d76fe6a9c5a5fdc1876527bc
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 2591bef1dc286acd11db4840b43410265d7aa063
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator — Zadanie
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> Zadań osadza co najmniej jeden zasób (.ico jpg, bmp, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym, a inne typy rozszerzeń) w plik .resources.  

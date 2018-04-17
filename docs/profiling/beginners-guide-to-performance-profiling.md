@@ -2,11 +2,8 @@
 title: Profilowanie wydajności aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: e19b88e5031222f45f0d5f71167c13ef5ef65d7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profilowanie wydajności aplikacji w programie Visual Studio
 Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **użycie procesora CPU** kartę narzędzi diagnostycznych można uzyskać danych wydajności dla aplikacji. Narzędzia diagnostyczne są obsługiwane dla .NET development w Visual Studio, w tym aplikacji ASP.NET i programowania w języku macierzystym/C++.

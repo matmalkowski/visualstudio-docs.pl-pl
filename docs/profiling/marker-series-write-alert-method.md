@@ -1,29 +1,25 @@
 ---
-title: "marker_series::write_alert — metoda | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: marker_series::write_alert — metoda | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
 helpviewer_keywords:
 - Concurrency::diagnostic:marker_series::write_alert method
 ms.assetid: 9d5465c7-f862-47a7-b249-4116605075a6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15ee5decdcc710df913d06646824dd53ebd5f094
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 89caefeb72bdfda3e75f13dc944e1ff5e5722deb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert — Metoda
 Zapisuje plik śledzenia Concurrency Visualizer alertu.  

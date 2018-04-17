@@ -1,28 +1,26 @@
 ---
-title: "Porady: odwołania informacji o symbolach w systemie Windows | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: odwołania informacji o symbolach w systemie Windows | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
 - profiling tools, symbol servers
 - symbol servers
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
-caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6578a6fe623afe8ceb20f9db32e7fa005f06618c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c781da02480bb09bce0f69eb92736df6fe83d50a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Porady: odwołania do informacji o symbolach w systemie Windows
 Visual Studio Profiling Tools pliki symboli (.pdb) są używane do rozpoznawania nazw symbolicznych, takich jak funkcja nazw plików binarnych programu. Można wykonaj następujące kroki, aby automatycznie pobrać i aktualizować pliki .pdb poprawne dla wersji systemu Windows na komputerze lokalnym.  

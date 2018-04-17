@@ -1,7 +1,7 @@
 ---
-title: "Analizowanie wyników testów obciążenia oraz błędów w programie Visual Studio | Dokumentacja firmy Microsoft"
+title: Analizowanie wyników testów obciążenia oraz błędów w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.pageresult
 - vs.test.load.dialog.column
@@ -20,13 +20,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2757f5a09e3abbcc924f94ccdcb008f671a3a8d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1ef22fcdfeb1b3ccf0005940ca2f7201545482f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli analizatora testu obciążenia
 
@@ -124,8 +124,8 @@ Większość wartości liczbowe wyświetlane w tabeli liczników wydajności kum
 |**Całkowita liczba**|Całkowita liczba transakcji, które odbyły się podczas testu obciążenia.|Tak|
 |**Czas transakcji**|Czas do wykonania transakcji podczas uruchomienia testu obciążenia. Dla testów wydajności sieci Web, wziąć pod uwagę w obliczeniach zawarty jest czas. Jednostki są sekund.|Nie|
 |**Czas odpowiedzi**|Czas odpowiedzi transakcji w teście wydajności sieci Web w uruchomieniu testu obciążenia. Czas odpowiedzi różni się od czasu transakcji w tym czas odpowiedzi nie zawiera żadnych Pomyśl czas, który wystąpił podczas wykonywania tej transakcji. Jednostki są sekund.|Nie|
-|**Ave. Czas transakcji**|Średni czas trwania transakcji. Teraz obejmuje czasów reakcji. Na przykład jeśli masz trzech żądań i każdy ma czasu namysłu, teraz będzie zawierać te czasy reakcji i rzeczywisty czas do wykonania żądania.|Nie|
-|**Ave. Czas odpowiedzi**|Średni czas odpowiedzi transakcji testu wydajności sieci Web w uruchomieniu testu obciążenia. Czas odpowiedzi różni się od czasu transakcji w tym czas odpowiedzi nie zawiera żadnych Pomyśl czas, który wystąpił podczas wykonywania tej transakcji. Jednostki są sekund.|Nie|
+|**Średnio Czas transakcji**|Średni czas trwania transakcji. Teraz obejmuje czasów reakcji. Na przykład jeśli masz trzech żądań i każdy ma czasu namysłu, teraz będzie zawierać te czasy reakcji i rzeczywisty czas do wykonania żądania.|Nie|
+|**Średnio Czas odpowiedzi**|Średni czas odpowiedzi transakcji testu wydajności sieci Web w uruchomieniu testu obciążenia. Czas odpowiedzi różni się od czasu transakcji w tym czas odpowiedzi nie zawiera żadnych Pomyśl czas, który wystąpił podczas wykonywania tej transakcji. Jednostki są sekund.|Nie|
 |**Minimalny czas odpowiedzi**|Nie ma czasów reakcji.|Nie|
 |**Czas odpowiedzi maksymalna**|Nie ma czasów reakcji.|Nie|
 |**Czas odpowiedzi środkowej**|Nie ma czasów reakcji.|Nie|
@@ -170,7 +170,7 @@ Błędy tabeli grup błędów według typu i podtypu błędu. Aby wyświetlić t
 |**Typ**|Typ błędu. Na przykład HttpError.|
 |**SubType**|Podtyp błędu. Na przykład LoadTestException.|
 |**Tekst**|Tekst komunikatu o błędzie. Na przykład 404 — NotFound.|
-|**Stack**|W tej kolumnie są puste lub słowo **stosu** jest formatowana jako hiperłącze. Można wybrać hiperłącza do przeglądania śladu stosu błędu.|
+|**Stos**|W tej kolumnie są puste lub słowo **stosu** jest formatowana jako hiperłącze. Można wybrać hiperłącza do przeglądania śladu stosu błędu.|
 |**Szczegóły**|W tej kolumnie są puste lub słowo **TestLog** jest formatowana jako hiperłącze. To łącze ułatwia odizolowanie błędy w teście obciążenia. Na przykład wybranie **TestLog** link błędu żądania testu wydajności sieci Web będzie otwarcie wyników dla testu wydajności sieci Web w wydajności sieci Web testów Podgląd wyników i zaznacz błąd żądania.|
 
 > [!NOTE]

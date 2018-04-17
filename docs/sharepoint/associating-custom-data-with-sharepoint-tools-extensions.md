@@ -1,12 +1,10 @@
 ---
-title: "Kojarzenie danych niestandardowych z programem SharePoint rozszerzeń narzędzi | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kojarzenie danych niestandardowych z programem SharePoint rozszerzeń narzędzi | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8868300375d34664ba267b473f24d2c6a91ddd55
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
   Niestandardowe dane można dodać do niektórych obiektów w rozszerzeń narzędzi SharePoint. Jest to przydatne, gdy znajdują się dane w jednym z rozszerzenia, które ma dostęp do później z poziomu innego kodu w Twoje rozszerzenie. Zamiast Implementowanie niestandardowych sposób przechowywania i uzyskać dostęp do danych, można skojarzyć dane z obiektu w rozszerzenia i następnie pobierają dane z tego samego obiektu później.  
@@ -73,9 +72,9 @@ ms.lasthandoff: 01/10/2018
   
  Można pobrać niestandardowych danych z obiektu w rozszerzeniu narzędzia programu SharePoint, należy pobrać <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości tego obiektu i skorzystaj z jednej z następujących metod:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>., Ta metoda zwraca **true** Jeśli obiekt danych nie istnieje, lub **false** Jeśli nie istnieje. Ta metoda służy do pobierania wystąpień typów wartości i typy referencyjne.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Ta metoda zwraca **true** Jeśli obiekt danych nie istnieje, lub **false** Jeśli nie istnieje. Ta metoda służy do pobierania wystąpień typów wartości i typy referencyjne.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>., Ta metoda zwraca dane obiektu, jeśli jej zakończenia, lub **null** Jeśli nie istnieje. Ta metoda służy tylko do pobierania wystąpień typów referencyjnych.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Ta metoda zwraca dane obiektu, jeśli jej zakończenia, lub **null** Jeśli nie istnieje. Ta metoda służy tylko do pobierania wystąpień typów referencyjnych.  
   
  Poniższy przykład kodu Określa, czy obiekt danych jest już skojarzony z elementem projektu. Jeśli obiekt danych nie jest już skojarzony z elementem projektu, a następnie kod dodaje obiekt do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości elementu projektu. Aby wyświetlić ten przykład w kontekście większego przykładu, zobacz [porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   

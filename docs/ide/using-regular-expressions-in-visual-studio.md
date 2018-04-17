@@ -1,6 +1,6 @@
 ---
 title: Za pomocą wyrażeń regularnych w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 03/26/2018
+ms.date: 03/26/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - regular expressions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
-ms.translationtype: HT
+ms.openlocfilehash: b2cd32695eb07217205048040cc888e097b4fe5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Za pomocą wyrażeń regularnych w programie Visual Studio
 
@@ -52,7 +52,7 @@ Oto kilka przykładów:
 |Dopasowuje dowolny znak z zakresu znaków|[a-f]|`be[n-t]` Dopasowuje "trafień" w "między", "ben" w "poniżej" i "bes" w "obok", ale nie "poniżej".|
 |Przechwytuje i niejawnie numeruje wyrażenie zawarte w nawiasach|()|`([a-z])X\1` Dopasowuje "aXa" i "bXb", ale nie "aXb". "\1" odwołuje się do pierwszej grupy wyrażenie "[a-z]".|
 |Unieważnienie dopasowania|(?! ABC)|`real (?!ity)` Dopasowuje "rzeczywiste" w "realność" i "naprawdę", ale nie w "rzeczywistości." Drugi "rzeczywistym" (ale nie pierwszy "rzeczywistego") również znalezione w "realityreal".|
-|Dopasowuje dowolny znak, który nie jest w danym zestawie znaków|[^abc]|`be[^n-t]` Dopasowuje "bef" w "before", "beh" w "za" i "etykietę" w "poniżej", ale nie "poniżej".|
+|Dopasowuje dowolny znak, który nie jest w danym zestawie znaków|[^ abc]|`be[^n-t]` Dopasowuje "bef" w "before", "beh" w "za" i "etykietę" w "poniżej", ale nie "poniżej".|
 |Zgodne wyrażenie przed lub jeden po symbolu.|&#124;|`(sponge&#124;mud) bath` Dopasowuje "Gąbka łaźni" i "błocie Łaźnia."|
 |Ucieczki znaku po ukośniku odwrotnym| \\ |`\^` Dopasowuje znak ^.|
 |Określ liczbę wystąpień poprzedniego znaku lub grupy|{x}, gdzie x to liczba wystąpień|`x(ab){2}x` Dopasowuje "xababx" i `x(ab){2,3}x` pasuje do "xababx" i "xabababx", ale nie "xababababx".|

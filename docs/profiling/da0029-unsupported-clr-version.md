@@ -1,12 +1,10 @@
 ---
-title: "DA0029: Nieobsługiwana wersja CLR | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0029: Nieobsługiwana wersja CLR | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.29
 - vs.performance.rules.DA0029
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - vs.performance.DA0029
 - vs.performance.rules.DA0029
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e11b053b867679f65052af5dea93799e4b356892
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: edac5685e6a053f5fed9fb72ecc454dde0312df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nieobsługiwana wersja CLR
 |||  

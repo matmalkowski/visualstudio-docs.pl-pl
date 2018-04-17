@@ -1,23 +1,21 @@
 ---
-title: "Opracowywanie testów na podstawie modelu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Opracowywanie testów na podstawie modelu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 Aby ułatwić organizowanie testów systemu i jej elementów można użyć wymagań i architektury modeli. Takie rozwiązanie pomaga, sprawdź, czy test wymagań, które są ważne dla użytkowników oraz innych zainteresowanych osób i ułatwia szybkie aktualizowanie testów zmiany wymagań. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można również Obsługa łącza między modelami i testy.  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  Z testowania punktu widzenia modelu wymagania są widoczne jako skróconą formą testy. Dlatego jest ważne zachować relację między testów i modelu w projekcie.  
   
-##  <a name="Attaching"></a>Dołączanie przypadków testowych do modelowania elementów  
+##  <a name="Attaching"></a> Dołączanie przypadków testowych do modelowania elementów  
  Jeśli projekt używa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], testy można połączyć elementy w modelu. Pozwala szybko znaleźć testów, który wpływa zmiana w wymaganiach i pomaga śledzić zakresu, do którego zostały zrealizowane wymagania.  
   
  Testy można połączyć wszelkiego rodzaju elementu. Oto kilka przykładów:  

@@ -3,12 +3,9 @@ title: Rozwiązywania problemów związanych z siecią, podczas instalowania lub
 description: ''
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -21,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 2a2bf89073549d794e13e5907d4044a24b653656
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 Mamy rozwiązania najczęstszych błędów dotyczących sieci lub serwera proxy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwer proxy.

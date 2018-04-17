@@ -1,22 +1,20 @@
 ---
-title: "Analizowanie użycia pamięci w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Analizowanie użycia pamięci w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: "13"
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: aac1c901f98d63b8cf77b41a165548cccede4f21
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2c9ed13bdb2bc94ca3ace19a6ffd4673525f1bc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 Użyj zintegrowanych debugera **użycie pamięci** narzędzia diagnostycznego, aby znaleźć przecieki pamięci i użycie pamięci nieefektywne. Narzędzie umożliwia wykorzystanie pamięci, należy wykonać co najmniej jeden *migawki* sterty pamięci zarządzanego i natywnego. Można zbierać migawki .NET, Tryb natywny lub mieszane (.NET i natywnego) aplikacji.  

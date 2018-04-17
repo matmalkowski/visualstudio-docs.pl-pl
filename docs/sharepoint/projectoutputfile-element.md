@@ -1,13 +1,10 @@
 ---
-title: "Projectoutputfile — Element | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Projectoutputfile — Element | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectOutputFile element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b57f00960629d65f264f22532a16202d6ae5d7a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 52898168eb0debf047613a03702647195ab7d3cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile — Element
   Reprezentuje dane wyjściowe oddzielny projekt zawierający element projektu po wdrożeniu programu SharePoint.  
@@ -48,7 +45,7 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------|  
 |**Identyfikator projektu**|Wymagane **xs:string** atrybutu.<br /><br /> Identyfikator GUID projektu zależnych, który zawiera dane wyjściowe, które chcesz dołączyć. Odpowiada to **ProjectGuid** elementu w pliku projektu zależnych.|  
 |**ProjectPath**|Wymagane **xs:string** atrybutu.<br /><br /> Ścieżka względna, łącznie z nazwą pliku projektu, zależnych projektu, którego dane wyjściowe, które chcesz dołączyć. Ta ścieżka jest określana względem folderze głównym projektu programu SharePoint, który zawiera element projektu programu SharePoint.|  
-|**Docelowy**|Opcjonalne **xs:string** atrybutu.<br /><br /> Ścieżka, gdzie ma zostać wdrożona na serwerze programu SharePoint odnoszącego się do folderu głównego wdrożenia wyjście projektu zależnych. Folder główny wdrożenia jest określana przez typ wdrożenia, określony przez **typu** atrybutu.<br /><br /> Aby uzyskać więcej informacji, zobacz opisy **Deployment ścieżkę** i **główny wdrożenia** właściwości programu SharePoint projektu elementów w [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**docelowy**|Opcjonalne **xs:string** atrybutu.<br /><br /> Ścieżka, gdzie ma zostać wdrożona na serwerze programu SharePoint odnoszącego się do folderu głównego wdrożenia wyjście projektu zależnych. Folder główny wdrożenia jest określana przez typ wdrożenia, określony przez **typu** atrybutu.<br /><br /> Aby uzyskać więcej informacji, zobacz opisy **Deployment ścieżkę** i **główny wdrożenia** właściwości programu SharePoint projektu elementów w [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Typ**|Wymagane **xs:string** atrybutu.<br /><br /> Typ wdrożenia do użycia dla danych wyjściowych projektu zależnych. Aby uzyskać więcej informacji na temat możliwych wartości, zobacz opis **typu wdrożenia** właściwości SharePoint — elementy projektu w [opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

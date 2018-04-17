@@ -1,27 +1,24 @@
 ---
 title: Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio | Dokumentacja firmy Microsoft
-description: '{{PLACEHOLDER}}'
+description: '{{SYMBOL ZASTĘPCZY}}'
 ms.date: 08/14/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2c0f6d6884590cfb793aa522984ed7f008c37f
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 494292566772a392597f9689945ddb2d5221cade
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio
 

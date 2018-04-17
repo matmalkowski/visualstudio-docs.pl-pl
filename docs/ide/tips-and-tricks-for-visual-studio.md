@@ -1,26 +1,25 @@
 ---
-title: "Skróty klawiaturowe w usłudze Visual Studio | Dokumentacja firmy Microsoft"
+title: Skróty klawiaturowe w usłudze Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>Porady dotyczące klawiatury dla programu Visual Studio
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Skróty klawiaturowe dla programu Visual Studio
 
 Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiaturowe w tym artykule.
 
-Skróty wymienione w tym miejscu są tylko podzestaw skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz, zobacz [domyślne skróty klawiaturowe w programie Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual Studio, zobacz [dostępności porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md).
+> [!TIP]
+> Skróty wymienione w tym miejscu są tylko podzestaw skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="window-management"></a>Zarządzanie oknem
 
@@ -39,9 +38,9 @@ Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual St
 |-|-|
 |Przenieś/Dock zmiennoprzecinkową systemu Windows|Win + Strzałka w lewo / Win + Strzałka w prawo|
 |Maksymalizowanie/zminimalizować systemu Windows|Win + Strzałka w górę / Win + Strzałka w dół|
-|Pokaż listę skoku|Win+Alt+n|
-|Uruchom nowe wystąpienie|Win+Shift+n|
-|Przełączanie między systemu Windows|Win+n|
+|Pokaż listę skoku|Win + Alt + N|
+|Uruchom nowe wystąpienie|Win + Shift + N|
+|Przełączanie między systemu Windows|Win + N|
 
 ## <a name="visual-studio-search"></a>Visual Studio wyszukiwania
 
@@ -78,10 +77,10 @@ Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual St
 |Selektor wstawek|CTRL + K, X lub?, karta (VB)||
 |Otocz przez|Ctrl+K,S||
 |Pokaż szybkie informacje|Ctrl+K,I||
-|Przejdź do|Ctrl+,||
+|Przejdź do|**CTRL**+**,**||
 |Przejdź wyróżnione odwołań|Ctrl + Shift + w górę (poprzedni), Ctrl + Shift + Strzałka w dół (dalej)||
-|Edytor powiększenia|Ctrl+Shift+> (In), Ctrl+Shift+< (Out)||
-|Blokowanie wybór|Przytrzymaj klawisz Alt i przeciągnij mysz, klawiszy Shift + Alt + Strzałka||
+|Edytor powiększenia|**CTRL**+**Shift** + **>** (w) **Ctrl**+**Shift** + **<** (Out)||
+|Blokowanie wybór|Przytrzymaj **Alt** i przeciągnij mysz, klawiszy Shift + Alt + Strzałka||
 |Przenieś wiersz w górę lub w dół|Alt + Strzałka w górę / Alt + Strzałka w dół||
 |Zduplikowany wiersz|Ctrl+E,V|Visual Studio 2017 wersji 15,6|
 |Rozwiń wybór|**Shift**+**Alt**+**=**|Visual Studio 2017 wersji 15,5 cala|
@@ -91,16 +90,16 @@ Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual St
 |Przejdź do definicji stosu|Ctrl + Shift + 8 (wstecz), Ctrl + Shift + 7 (dalej)||
 |Zamknij okno Wybieranie definicji|Esc||
 |Podwyższ poziom okna definicji wglądu do karty zwykłego dokumentu|Ctrl+Alt+Home||
-|Przechodzenie między wiele definicji wglądu systemu windows|Ctrl+Alt+- i Ctrl+Alt+=||
-|Przechodzenie między wiele podglądu wyników|F8 i Shift + F8||
+|Przechodzenie między wiele definicji wglądu systemu windows|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+**=**||
+|Przechodzenie między wiele podglądu wyników|**F8** i **Shift**+**F8**||
 |Przełącz między okna edytora kodu i wgląd definicji|Shift + Esc||
 
 ## <a name="toolbars"></a>Paski narzędzi
 
 |||
 |-|-|
-|Dodawanie przycisków|Kliknij przycisk przepełnienie paska narzędzi|
-|Pola wyszukiwania w standardowym pasku narzędzi|Ctrl+D|
+|Dodawanie przycisków|Wybierz przycisk przepełnienie paska narzędzi|
+|Pola wyszukiwania w standardowym pasku narzędzi|**Ctrl**+**D**|
 |Znajdź tryb polecenia pole tekstowe|Typ ">"|
 |Utwórz nowy alias|> alias polecenia NewAlias|
 
@@ -125,9 +124,6 @@ Aby dowiedzieć się, jak zoptymalizować ułatwień dostępu programu Visual St
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Ułatwienia dostępu porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)
 - [Skróty klawiaturowe (VSTS i TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio — porady i wskazówki blogu](http://blogs.msdn.com/b/zainnab)
-- [Przybornika programu Visual Studio na kanale 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Visual Studio Connect Bugs](http://connect.microsoft.com/VisualStudio)

@@ -1,13 +1,10 @@
 ---
-title: "Porady: dodawanie formantów zakładek do dokumentów programu Word | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: dodawanie formantów zakładek do dokumentów programu Word | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ebe8536887f2f60876b64407ffb96cdaf4618c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a33160ba534a1ee6bd56238cffaa2064e4332ec1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Porady: dodawanie formantów zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentów w projekcie w czasie projektowania lub w czasie wykonywania. W dodatku VSTO projektów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do otwartego dokumentu w czasie wykonywania.  
@@ -43,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Word.Bookmark> formantów, zobacz [formant zakładki](../vsto/bookmark-control.md).  
   
-##  <a name="designtime"></a>Dodawanie formantów zakładek w czasie projektowania  
+##  <a name="designtime"></a> Dodawanie formantów zakładek w czasie projektowania  
  Istnieje kilka sposobów, aby dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów do dokumentów w projektach na poziomie dokumentu w czasie projektowania:  
   
 -   W programie Visual Studio **przybornika**.  
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  W **zakładki** okno dialogowe, wpisz nazwę nowej zakładki, a następnie kliknij przycisk **Dodaj**.  
   
-##  <a name="runtimedoclevel"></a>Dodawanie formantów zakładek w czasie wykonywania w projektach na poziomie dokumentu  
+##  <a name="runtimedoclevel"></a> Dodawanie formantów zakładek w czasie wykonywania w projektach na poziomie dokumentu  
  Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> steruje programowo do dokumentu w czasie wykonywania za pomocą metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy w projekcie. Istnieją dwa przeciążenia metody, których można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli w następujący sposób:  
   
 -   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> w określonym zakresie.  
@@ -101,7 +98,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Jeśli chcesz utworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli z istniejącego <xref:Microsoft.Office.Interop.Word.Bookmark>, użyj <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> — metoda i przekaż istniejące <xref:Microsoft.Office.Interop.Word.Bookmark>.  
   
-##  <a name="runtimeaddin"></a>Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO  
+##  <a name="runtimeaddin"></a> Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO  
  Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów programowo do otwartego dokumentu w czasie wykonywania za pomocą dodatku VSTO. W tym celu należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> hosta elementu, który jest oparta na otwartego dokumentu, a następnie użyj metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu host. Istnieją dwa przeciążenia metody, których można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli w następujący sposób:  
   
 -   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> w określonym zakresie.  

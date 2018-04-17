@@ -1,25 +1,23 @@
 ---
 title: Pisanie szablonu tekstowego T4 | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład szablon, który tworzy stronę sieci web będzie zawierać "\<html >..." i wszystkich innych standardowych części strony HTML. Wstawione do szablonu są *kontrolować bloki*, które są fragmenty kodu programu. Bloki sterujące zawierają zmienne wartości i umożliwiają warunkowość oraz powtarzalność części tekstu.  
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a>W tym kodu i tekstu  
+###  <a name="Include"></a> W tym kodu i tekstu  
  Dyrektywa `include` wstawia tekst z innego pliku szablonu. Na przykład poniższa dyrektywa spowoduje wstawienie zawartości pliku `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **Ładowanie pliku jako model można nawigować**. Bardziej zaawansowaną metodą jest odczyt danych jako modelu, po którym może się poruszać kod źródłowy szablonu tekstu. Na przykład można wczytać plik XML i nawigować po nim przy użyciu wyrażeń XPath. Można także użyć [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) utworzyć zestaw klas, z którymi mogą odczytywać dane XML.  
   
- **Przeprowadź edycję pliku modelu na diagramie lub formularza.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]udostępnia narzędzia, które można edytować modelu w postaci diagramu lub formularza systemu Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tworzy również zestaw silnie typizowanych klas, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowania kodu języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Przeprowadź edycję pliku modelu na diagramie lub formularza.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia narzędzia, które można edytować modelu w postaci diagramu lub formularza systemu Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tworzy również zestaw silnie typizowanych klas, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowania kodu języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Względne ścieżki plików w szablonach czasu projektowania  
  W [tekstu w czasie projektowania szablonu](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jeśli chcesz odwołać plik w lokalizacji względnej wobec szablonu tekstowego, użyj `this.Host.ResolvePath()`. Ponadto w dyrektywie `hostspecific="true"` trzeba ustawić wartość `template`:  

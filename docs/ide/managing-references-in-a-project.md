@@ -1,13 +1,8 @@
 ---
-title: "Zarządzanie odwołaniami w projekcie | Dokumentacja firmy Microsoft"
-ms.custom: 
-ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Zarządzanie odwołaniami w projekcie
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
+# <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
 Aby pisać kod dla składników zewnętrznych lub połączone usługi, projektu najpierw musi zawierać odwołanie do niej. Odwołanie jest zasadniczo wpis w pliku projektu, który zawiera informacje, że program Visual Studio musi zlokalizować składnik lub usługa.
 
-Aby dodać odwołanie, węzła odwołań w Eksploratorze rozwiązań kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj odwołanie**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Można dodać odwołania, kliknij prawym przyciskiem myszy **odwołania** lub **zależności** w węźle **Eksploratora rozwiązań** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **odwołania**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie i usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
-Można wprowadzić odwołania do następujących typów składników i usług:
+Można dodać odwołania do następujących typów składników i usług:
 
 - Biblioteki klas .NET framework lub zestawów
 
@@ -81,11 +76,11 @@ Jeśli okaże się, że zestawu SDK rozszerzenia przywoływane przez aplikację 
 
 1. Uruchom ponownie program Visual Studio, a następnie otwórz aplikację.
 
-1. Kliknij prawym przyciskiem myszy **odwołania** węzła w projekcie, który spowodował błąd i wybierz polecenie **Dodaj odwołanie**.
+1. Kliknij prawym przyciskiem myszy **odwołania** lub **zależności** węzła w projekcie, który spowodował błąd i wybierz polecenie **Dodaj odwołanie**.
 
 1. Kliknij przycisk **Windows** kartę, a następnie **rozszerzenia** podrzędna, następnie usuń zaznaczenie pól wyboru dla starego rozszerzenia SDK, a następnie sprawdź, czy pola wyboru nowego rozszerzenia SDK. Kliknij przycisk **OK**.
 
-## <a name="adding-a-reference-at-design-time"></a>Dodawanie odwołania w czasie projektowania
+## <a name="add-a-reference-at-design-time"></a>Dodaj odwołanie w czasie projektowania
 
 Po wprowadzeniu odwołania do zestawu w projekcie programu Visual Studio wyszukuje zestawu w następujących lokalizacjach:
 
@@ -94,7 +89,9 @@ Po wprowadzeniu odwołania do zestawu w projekcie programu Visual Studio wyszuku
 - Innych katalogów projektu w tym samym rozwiązaniu. (Te zestawy można znaleźć na **projekty** kartę.)
 
 > [!NOTE]
-> Wszystkie projekty zawierają domniemanych odwołanie do biblioteki mscorlib. Projekty Visual Basic zawierają domniemanych odwołanie do `Microsoft.VisualBasic`. Wszystkie projekty zawierają domniemanych odwołanie do `System.Core`, nawet jeśli `System.Core` zostanie usunięty z listy odwołania.
+> - Wszystkie projekty zawierają domniemanych odwołanie do biblioteki mscorlib.
+> - Wszystkie projekty zawierają domniemanych odwołanie do `System.Core`, nawet jeśli `System.Core` zostanie usunięty z listy odwołania.
+> - Projekty Visual Basic zawierają domniemanych odwołanie do `Microsoft.VisualBasic`.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Odwołania do składników współużytkowanych w czasie wykonywania
 
@@ -104,9 +101,9 @@ W przypadku wdrożenia aplikacji, która zawiera odwołanie do niestandardowych 
 
 Domyślnie <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> właściwość jest ustawiona na **False** zestawem lub składnikiem znajduje się w globalnej pamięci podręcznej zestawów lub jest on składnikiem framework. W przeciwnym razie wartość jest równa **True**. Odwołania projektu do projektu jest zawsze ustawiona **True**.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odwołanie do projektu lub zestawu, którego celem jest inna wersja programu .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odwołanie się do projektu lub zestawu, którego celem jest inna wersja programu .NET Framework
 
-Można tworzyć aplikacje, które odwołują się do projektów lub zestawów, które odnoszą się do innej wersji programu .NET Framework. Na przykład można utworzyć aplikacji, którego element docelowy [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)], który odwołuje się do zestawu, którego celem jest [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Jeśli tworzenie projektu, który jest przeznaczony dla starszej wersji programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nie można ustawić odwołanie projektu do projektu lub zestawu, którego celem jest nowsza wersja.
+Można tworzyć aplikacje, które odwołują się do projektów lub zestawów, które odnoszą się do innej wersji programu .NET Framework. Na przykład można utworzyć aplikację którego element docelowy .NET Framework 4.6, które odwołuje się do zestawu, którego celem jest środowisko .NET Framework 4.5. Jeśli tworzysz projekt, który jest przeznaczony dla starszej wersji programu .NET Framework, nie można ustawić odwołanie projektu do projektu lub zestawu, którego celem jest nowsza wersja.
 
 Aby uzyskać więcej informacji, zobacz [omówienie wielowersyjności](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -125,5 +122,5 @@ Odwołania do pliku są bezpośrednie odwołania do zestawów poza kontekstem pr
 
 ## <a name="see-also"></a>Zobacz także
 
-[Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)
-[porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)
+- [Porady: Dodawanie i usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

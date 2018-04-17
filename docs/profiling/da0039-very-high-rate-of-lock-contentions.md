@@ -1,27 +1,25 @@
 ---
 title: 'DA0039: Bardzo wysoka liczba rywalizacji blokad | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
 - vs.performance.rules.DA0039
 ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eeec11274df74b65e1991e3a0fd3b9132bb4bcb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a54343417a8f53d9714601921b06dc41c2ea001d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Bardzo wysoka liczba rywalizacji blokad
 |||  

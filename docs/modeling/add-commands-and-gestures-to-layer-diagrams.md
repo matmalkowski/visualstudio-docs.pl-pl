@@ -1,24 +1,22 @@
 ---
-title: "Dodawanie poleceń i gestów do diagramów zależności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie poleceń i gestów do diagramów zależności | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 276098a2c288f98441e8a111ed8807e22d5cfda2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na wykresach zależności w Visual Studio. Rozszerzenia te można spakować do programu Visual Studio integracji rozszerzenia (VSIX) dystrybuowanej do innych użytkowników programu Visual Studio.  
@@ -88,7 +86,7 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
 |**Dokumentacja**|**Co to umożliwia**|  
 |-------------------|------------------------------------|  
-|Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Tworzenie i edytowanie warstwy|  
+|Program Visual Studio Files\Microsoft [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Tworzenie i edytowanie warstwy|  
 |Microsoft.VisualStudio.Uml.Interfaces|Tworzenie i edytowanie warstwy|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Modyfikowanie kształtów na diagramach|  
 |System.ComponentModel.Composition|Zdefiniuj składników za pomocą Managed Extensibility Framework (MEF)|  
@@ -109,7 +107,7 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
      Aby go odinstalować, użyj **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
-##  <a name="command"></a>Definiowanie polecenia Menu  
+##  <a name="command"></a> Definiowanie polecenia Menu  
  Można dodać więcej definicji polecenia menu do istniejącego gestu lub polecenie projektu. Każde polecenie jest zdefiniowane przez klasę, która ma następującą charakterystykę:  
   
 -   Klasa jest zadeklarowany w następujący sposób:  
@@ -124,11 +122,11 @@ Można zdefiniować poleceń menu kontekstowego i gestów programów obsługi na
   
 -   Metody, które implementują `ICommandExtension` są następujące:  
   
-    -   `string Text {get;}`-Etykietę wyświetlaną w menu.  
+    -   `string Text {get;}` -Etykietę wyświetlaną w menu.  
   
-    -   `void QueryStatus(IMenuCommand command)`-wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określa, czy polecenie powinno być widoczne i włączone dla użytkownika bieżącego zaznaczenia.  
+    -   `void QueryStatus(IMenuCommand command)` -wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określa, czy polecenie powinno być widoczne i włączone dla użytkownika bieżącego zaznaczenia.  
   
-    -   `void Execute(IMenuCommand command)`-wywoływana, gdy użytkownik wybierze polecenie.  
+    -   `void Execute(IMenuCommand command)` -wywoływana, gdy użytkownik wybierze polecenie.  
   
 -   Aby sprawdzić bieżące zaznaczenie, można importować `IDiagramContext`:  
   
@@ -214,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a>Definiowanie procedury obsługi gestów  
+##  <a name="gesture"></a> Definiowanie procedury obsługi gestów  
  Procedury obsługi gestów reaguje, gdy użytkownik przeciąga elementów na diagramie zależności, a użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.  
   
  Do istniejącego polecenia lub projektu VSIX procedury obsługi gestów można dodać pliku kodu, który definiuje procedury obsługi gestów:  

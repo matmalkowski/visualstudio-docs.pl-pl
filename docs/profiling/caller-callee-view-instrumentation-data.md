@@ -1,27 +1,23 @@
 ---
-title: "Widok wywołujący wywoływany - dane Instrumentacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok wywołujący wywoływany - dane Instrumentacji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dafa487a8f81248250f8e1fd0d6c52e90982f76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f294e81b8ce38dd5661fa49aa71231d0daed30ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Widok wywołujący/wywoływany - dane Instrumentacji
 Widok wywołujący/wywoływany Wyświetla profilowania informacje o wybranej funkcji i jej funkcji nadrzędnej i podrzędnej w drzewie wywołań. Widok wywołujący/wywoływany zawiera trzy siatki.  

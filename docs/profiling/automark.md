@@ -1,23 +1,21 @@
 ---
 title: AutoMark | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fc5b0e69d5df203bc78cbfaf9981c550192a824
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cf11dd16dcf9724e0913eed07ae13b285a2d382e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automark"></a>AutoMark
 **AutoMark** opcji określa liczbę milisekund między zbierania zdarzeń liczników wydajności oprogramowania systemu Windows. Liczniki wydajności systemu Windows są określone w **WinCounter** opcji.  
@@ -35,7 +33,7 @@ VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
  Określa liczbę milisekund między operacjami zbierania zdarzeń liczników wydajności systemu Windows.  
   
 ## <a name="required-options"></a>Wymagane opcje  
- **WinCounter:**`Path`  
+ **WinCounter:** `Path`  
  Określa licznik wydajności systemu Windows do zbierania. Korzystając z metody instrumentacji, można określić wiele liczników systemu Windows. Korzystając z metody pobierania próbek, można określić tylko jeden licznik oprogramowania. **WinCounter** opcja musi być określona w wierszu polecenia, który zawiera **Start** opcji.  
   
 ## <a name="example"></a>Przykład  

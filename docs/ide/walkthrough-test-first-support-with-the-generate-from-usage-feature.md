@@ -1,27 +1,25 @@
 ---
-title: "Wskazówki: Wcześniejsze testowanie Programowanie przy użyciu funkcji generowania z użycia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Wcześniejsze testowanie Programowanie przy użyciu funkcji generowania z użycia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 10/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 dev_langs:
 - VB
 - CSharp
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8bf7a4a4f78ca0de8594a95681c6a5118f1083cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Wskazówki: Wcześniejsze testowanie Programowanie przy użyciu funkcji generowania z użycia
 
@@ -70,7 +68,7 @@ W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../ide/visua
   
      ![Szybkie akcje w języku Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 
-     ![Szybkie akcje w & 35; ] (../ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Szybkie akcje w języku C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
   
 4.  Wybierz lub kliknij żarówkę szybkie akcje. Zostanie wyświetlony komunikat o błędzie stwierdzający, że typ `Automobile` nie jest zdefiniowany. Jest również wyświetlana rozwiązania.  
   

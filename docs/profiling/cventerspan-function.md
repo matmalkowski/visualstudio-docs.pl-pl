@@ -1,12 +1,10 @@
 ---
-title: "Cventerspan — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Cventerspan — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
 - cvmarkers/CvEnterSpanW
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - CvEnterSpanExVW method
 - CvEnterSpanExW method
 ms.assetid: 91689e9c-6733-44b9-b36a-8b9b2eef7d1d
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ded4d3227ab3840f393f35832160405ba0195c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ef42f0cb74413225b42c8bf729f82dbe86351933
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan — Funkcja
 Oznacza początek nowy zakres.  

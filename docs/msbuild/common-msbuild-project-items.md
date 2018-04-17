@@ -1,12 +1,9 @@
 ---
-title: "Elementy projektu MSBuild wspólnego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Elementy projektu MSBuild wspólnego | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f48ccd08b0891581f12c055fc12860214926d76
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 622bb24d046da8e15cf5f11de8ea1d930d09da75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element nazwany odnosi się do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżki i numery wersji. Wszystkie typy w projektów [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku Microsoft.Build.CommonTypes.xsd.  
@@ -141,7 +137,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
  Reprezentuje projektu programu FxCop, aby zaimportować.  
   
-### <a name="import"></a>Import  
+### <a name="import"></a>{1&gt;Importuj&lt;1}  
  Reprezentuje zestawy, których przestrzenie nazw powinny być importowane przez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora.  
   
 ## <a name="see-also"></a>Zobacz też  

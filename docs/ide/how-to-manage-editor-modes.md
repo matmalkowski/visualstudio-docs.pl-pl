@@ -1,12 +1,10 @@
 ---
-title: "Pełny ekran programu Visual studio i tryb obszaru wirtualnego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pełny ekran programu Visual studio i tryb obszaru wirtualnego | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 70daed24f72e6bf9efc0c81fc309c4b893285c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 22c303dd662cac2af4df8652bf001b4b699b23ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-editor-modes"></a>Porady: Zarządzanie trybami edytora
 Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyświetlania.  

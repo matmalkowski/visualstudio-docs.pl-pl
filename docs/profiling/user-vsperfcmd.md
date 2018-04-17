@@ -1,23 +1,21 @@
 ---
-title: "Użytkownik (VSPerfCmd) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Użytkownik (VSPerfCmd) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36d9b6cf0f3b80916b8cc02279c2397f2f3d075b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0e80311e0e623d122be7f4f33616a12f52921906
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="user-vsperfcmd"></a>Użytkownik (VSPerfCmd)
 **Użytkownika** opcja określa nazwę domeny i nazwę konta, który jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces jest uruchomiony jako użytkownik innego niż zalogowanego użytkownika. Właściciel procesu znajduje się w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań systemu Windows.  
@@ -40,7 +38,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Wymagane opcje  
  **Użytkownika** opcja może być używana tylko z **Start** opcji.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Inicjuje profilera do określonej metody profilowania.  
   
 ## <a name="example"></a>Przykład  

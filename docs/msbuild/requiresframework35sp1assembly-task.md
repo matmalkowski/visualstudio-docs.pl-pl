@@ -2,11 +2,8 @@
 title: Requiresframework35sp1assembly — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - RequiresFramework35SP1Assembly task [MSBuild]
 - MSBuild, RequiresFramework35SP1Assembly task
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
-caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e95632e1b339e7b86253763fa65237165eb05618
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 439c42043eff69cd4f7e9e2afd2ad46499bf6063
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly — Zadanie
 Określa, czy aplikacja wymaga platformy .NET Framework 3.5 SP1.  

@@ -5,20 +5,17 @@ keywords: Nie dodawaj lub Edytuj słowa kluczowe bez konsultacji z ekspert od op
 author: PoulChapman
 ms.author: tglee
 manager: douge
-ms.reviewer: ''
 ms.date: 09/28/2017
 ms.topic: conceptual
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: acc8697b74a45bcf21eb312c9c3d47e6105646a9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 355b5267efd024112891f51b3c3b8ed719fd408c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="repair-visual-studio-2017"></a>Napraw program Visual Studio 2017 r.
 

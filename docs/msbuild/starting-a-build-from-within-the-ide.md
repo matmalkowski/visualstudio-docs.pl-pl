@@ -2,25 +2,21 @@
 title: Uruchamianie kompilacji w środowisku IDE | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 307d05c9f35309d97b3813dfaa4cc4db1cf1f91c
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 2a913b44bccddd24d4a09ddc285a74713e4f4e40
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Uruchamianie kompilacji w środowisku IDE
 Systemów projektów niestandardowych należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> można uruchomić kompilacji. W tym temacie opisano to i opisano procedury.  

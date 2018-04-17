@@ -1,26 +1,24 @@
 ---
 title: NameProfile | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
 - NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: be7e6b2e29ed74fe57016bb286b54742b0add632
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1111ad05df4d9ae74556d940438046aaccad116f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` Funkcja przypisuje ciąg określony proces lub wątek.  
@@ -47,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 -   Dane ciągu pszName zawiera spację  
   
--   Dane ciągu pszName zawiera żadnego z następujących znaków:,. ' ~! @# $% ^ & * () = [] {} &#124; \\? / <>  
+-   Dane ciągu pszName zawiera żadnego z następujących znaków:,. ' ~! @# $% ^ & * () = [] {}&#124;\\? / <>  
   
  `Level`  
   

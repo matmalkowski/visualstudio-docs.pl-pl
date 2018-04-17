@@ -1,12 +1,9 @@
 ---
-title: "Import — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Import — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d13f376068d7f5f32a55768dbd02520152f0a30
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1a3ec67938bacf45adb0524cdb3ebe73fa3809a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="import-element-msbuild"></a>Import — Element (MSBuild)
 Importuje zawartość pliku jeden projekt do innego pliku projektu.  
@@ -66,7 +62,7 @@ Importuje zawartość pliku jeden projekt do innego pliku projektu.
 ## <a name="remarks"></a>Uwagi  
  Za pomocą `Import` elementu, można użyć ponownie kod, który jest wspólny dla wielu plików projektu. Ułatwia utrzymanie kodu, ponieważ wszelkie aktualizacje wprowadzone do udostępnionego kodu uzyskać propagowane do wszystkich projektów, które go zaimportować.  
 
- Według Konwencji projektu udostępnionego zaimportowane pliki są zapisywane jako pliki .targets, ale są standardowe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]nie uniemożliwiają importowanie projektu, który ma rozszerzenie nazwy pliku różne, ale zalecane jest użycie rozszerzenia .targets w celu zachowania spójności.  
+ Według Konwencji projektu udostępnionego zaimportowane pliki są zapisywane jako pliki .targets, ale są standardowe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie uniemożliwiają importowanie projektu, który ma rozszerzenie nazwy pliku różne, ale zalecane jest użycie rozszerzenia .targets w celu zachowania spójności.  
 
  Ścieżki względne w projektach importowanych interpretowania względem katalogu projektu importowania. W związku z tym jeśli plik projektu jest importowany do wielu plików projektu w różnych lokalizacjach, ścieżek względnych w zaimportowanego pliku projektu zostanie potraktowany inaczej dla każdego zaimportowanego projektu.  
 

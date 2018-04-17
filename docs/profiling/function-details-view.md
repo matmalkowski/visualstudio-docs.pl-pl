@@ -1,30 +1,26 @@
 ---
-title: "Widok szczegółów funkcji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok szczegółów funkcji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
 - Function Details view
 - Profiling Tools, Function Details view
 ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81133dadb79cc4fba24b66e97f7384232b6171ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7078b1d5b831ded10ad3d0f474e0656d8e99ddb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
 **Widok szczegółów funkcji** wyświetlane są następujące informacje:  

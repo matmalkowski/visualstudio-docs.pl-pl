@@ -2,26 +2,23 @@
 title: Utworzyć sieciowej instalację programu Visual Studio | Dokumentacja firmy Microsoft
 description: Opisuje sposób tworzenia sieci punktu instalacji do wdrażania w przedsiębiorstwie programu Visual Studio
 ms.date: 10/17/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85d839c76d272a0a90a37fa16fc812596c3198e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8fe10a67ccb62e41edec12f40db639b30bd2a3bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017 r.
 
@@ -58,7 +55,7 @@ Musi mieć połączenie internetowe, aby ukończyć ten krok. Do utworzenia inst
 
   ```vs_enterprise.exe --layout c:\vs2017offline```
 
-- For Visual Studio Professional, run:
+- Dla programu Visual Studio Professional Uruchom polecenie:
 
   ```vs_professional.exe --layout c:\vs2017offline```
 
@@ -130,7 +127,7 @@ Po zainstalowaniu z układu zawartość, która jest zainstalowana są uzyskiwan
 
 Jeśli używasz `--wait` parametr, a następnie w zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest ustawiona na jedną z następujących wartości:
 
-  | **Wartość** | **Result** |
+  | **Wartość** | **wynik** |
   | --------- | ---------- |
   | 0 | Operacja została wykonana pomyślnie |
   | 3010 | Operacja zakończyła się pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można go używać. |

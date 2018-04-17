@@ -1,28 +1,26 @@
 ---
-title: "DA0001: Używaj StringBuilder do konkatenacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0001: Używaj StringBuilder do konkatenacji | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0001
 - vs.performance.rules.DAUseStringBuilder
 - vs.performance.1
 - vs.performance.rules.DA0001
 ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8e7393d3a42193c5d25eadc40fcbc02a38cfcdfd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 601bb8145ad2e8467e078a3aee95a243236e5433
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Używaj StringBuilder do łączenia
 |||  

@@ -1,29 +1,25 @@
 ---
-title: AssignProjectConfiguration Task | Microsoft Docs
+title: Assignprojectconfiguration — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 - C++
 - jsharp
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
-caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a4a803647afac9de77096e4a16d41987ff70c4f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 457e0efa3a05f9ebbc3a2a99f6412e0ea49bfaf0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration — Zadanie
 To zadanie akceptuje listy ciągów konfiguracji i przypisuje je do określonych projektów.  

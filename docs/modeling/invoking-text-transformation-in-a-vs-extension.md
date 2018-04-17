@@ -2,20 +2,18 @@
 title: Wywoływanie transformacji tekstu w rozszerzeniu VS | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ae354bafe55a6d5b23caf244f7ff119a107a9b2e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 21044b77c2c7d4215d570557fc7701d9af57bfdf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Wywoływanie transformacji tekstu w rozszerzeniu VS
 Jeśli piszesz rozszerzenia programu Visual Studio, takich jak polecenia menu lub [języka specyficznego dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), można użyć usługi tworzenia szablonów tekstowych do transformacji szablonów tekstowych. Pobierz <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> usługi i rzutować obiekt <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  

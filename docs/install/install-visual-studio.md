@@ -3,11 +3,8 @@ title: Zainstaluj program Visual Studio 2017 | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 84aff338342d00c173176493b5509372e3a868c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 Nowy sposób, aby zainstalować program Visual Studio — Zapraszamy! W naszym najnowsza wersja ułatwiliśmy ułatwia wybierania i instalowania tylko potrzebnych funkcji, które są potrzebne. Minimalnego miejsca zajmowanego przez program Visual Studio również już zostać zmniejszony, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
@@ -142,7 +139,7 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 * [Update Visual Studio 2017](update-visual-studio.md)
-* [Modify Visual Studio 2017](modify-visual-studio.md)
+* [Modyfikowanie Visual Studio 2017 r.](modify-visual-studio.md)
 * [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)
 * [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
 * [Przewodnik administratora 2017 r w usłudze Visual Studio](visual-studio-administrator-guide.md)

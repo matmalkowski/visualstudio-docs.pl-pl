@@ -1,12 +1,10 @@
 ---
-title: "Porady: zapełnianie dokumentów danymi z usług | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: zapełnianie dokumentów danymi z usług | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eb06e77cf45a3c912f569686cdbe246baece8a03
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d2d042e5ca30d8aea7fc152c457b380c7c7f4f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Porady: zapełnianie dokumentów danymi z usług
   Dostęp do danych działa tak samo w projektach na poziomie dokumentu, Microsoft Office, co w projektach formularzy systemu Windows. Użyj tego samego narzędzia i kodu można wyświetlić dane w ramach rozwiązania i formanty formularzy systemu Windows nawet służy do wyświetlania danych. Ponadto można korzystać formantów o nazwie formanty hosta, które są w Microsoft Office Excel i Microsoft Office Word natywnego obiekty, które zostały rozszerzone za pomocą zdarzeń i możliwość powiązania danych. Aby uzyskać więcej informacji, zobacz [elementów hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md).  

@@ -1,25 +1,21 @@
 ---
 title: 'Krok 6: Dodawanie problemu odejmowania | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d13e5a8e7bb1e15b1eef57fc6bcff55ef21cc729
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 4660d4b1ad5f4aa5200fb8c64cfa24f6a02d49a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
 W szóstego części tego samouczka możesz Dodawanie problemu odejmowania i Dowiedz się, jak wykonywać następujące zadania:
@@ -59,7 +55,7 @@ W szóstego części tego samouczka możesz Dodawanie problemu odejmowania i Dow
 
      Pokazuje tooltip **(+ 2 overload(s))**, co oznacza, że można wywołać `Next()` metody są dwa inne sposoby. Przeciążenia zawierają różne liczby i typy argumentów, aby mogły działać inaczej od siebie nawzajem. Na przykład metoda może przyjmować jeden argument, a jeden z jego przeciążenia może zająć się liczba całkowita i ciąg. Możesz wybrać poprawne przeciążenia oparte na co chcesz wykonania. Po dodaniu kod, aby `StartTheQuiz()` metody, więcej informacji jest wyświetlana w oknie IntelliSense jak wprowadzasz `randomizer.Next(`. Pozwala przełączać przeciążeń, wybierz klawiszy Strzałka w górę i Strzałka w dół, jak pokazano na poniższej ilustracji:
 
-     ![Przeciążenie dla następnego &#40; &#41; metody w technologii IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") przeciążenia dla metody Next() w IntelliSense
+     ![Przeciążenie następny&#40; &#41; metody w technologii IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") przeciążenia dla metody Next() w IntelliSense
 
      W takim przypadku chcesz wybrać ostatniego przeciążenia, ponieważ można określić wartości minimalną i maksymalną.
 

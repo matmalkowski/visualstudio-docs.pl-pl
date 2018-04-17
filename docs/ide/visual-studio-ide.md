@@ -1,25 +1,23 @@
 ---
-title: "Omówienie programu Visual Studio 2017 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Omówienie programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/05/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
 - MSDNSTART
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd54f6f26a76f750454db06c16c3b04c08a873eb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 6525b9d0bd0d5b394f09f0acd01b40a73bfc3bf2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -227,7 +225,7 @@ Jeśli masz konto usługi Visual Studio Team Services lub Team Foundation Server
 
 Na poniższej ilustracji przedstawiono okno programu Team Explorer rozwiązania, które znajduje się w VSTS.
 
-![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
+![Program Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
 Można również zautomatyzować procesu kompilacji do kompilacji kodu, który zaznaczono devs Twojego zespołu w kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania (VSTS i TFS)](/vsts/build-release/index).
 
@@ -273,4 +271,4 @@ Gratulujemy ukończenia samouczka środowiska IDE programu Visual Studio! Mamy n
 * [Pobieranie programu Visual Studio](https://www.visualstudio.com/downloads/)
 * [Blog programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
 * [Fora usługi Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
-* [Microsoft Virtual Academy](https://mva.microsoft.com/)
+* [Wirtualna Akademia firmy Microsoft](https://mva.microsoft.com/)

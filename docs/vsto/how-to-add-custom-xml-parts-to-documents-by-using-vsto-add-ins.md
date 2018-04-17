@@ -1,12 +1,10 @@
 ---
-title: "Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], custom XML parts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b2c9fec7370e5b4f9bab8ac7773ba1a18f36d261
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Porady: dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
   Dane XML można przechowywać w następujących typów dokumentów, tworząc z niestandardowym elementem XML w dodatku VSTO:  

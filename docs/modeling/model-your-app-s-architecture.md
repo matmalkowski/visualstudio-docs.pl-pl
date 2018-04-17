@@ -1,25 +1,23 @@
 ---
-title: Model aplikacji &#39; architektura s | Dokumentacja firmy Microsoft
-ms.custom: 
+title: Model aplikacji&#39;architektura s | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3d77abff4595502ab27f56be10cb973361eef413
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 65a49873056878be9651aa7580618e778f217651
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="model-your-app39s-architecture"></a>Model aplikacji &#39; architektura s
+# <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektura s
 Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia użytkowników musi, możesz utworzyć modeli w programie Visual Studio jako część opisie ogólną strukturę i zachowania systemu oprogramowania lub aplikacji. Przy użyciu modeli, można również opisać wzorców, które są używane w projekcie. Te modele pomagają zrozumieć istniejącej architektury, omówiono w nim zmiany i wyraźnie komunikacji zamiaru.  
   
  Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -35,7 +33,7 @@ Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia u�
   
 -   [Wzorce projektowe](#Patterns) i konwencje używane w projektach składników. Wzorzec w tym artykule opisano sposób postępowania w osiąganiu celu programowania. Przy użyciu tego samego wzorce w projekcie, zespół może zmniejszyć koszt wprowadzanie zmian i tworzenia nowego oprogramowania.  
   
-##  <a name="Structure"></a>Projekt wysokiego poziomu  
+##  <a name="Structure"></a> Projekt wysokiego poziomu  
  Ogólny projekt zawiera opis głównych składników systemu i sposób ich interakcji ze sobą w celu osiągnięcia celów projektu. Działania na poniższej liście są zaangażowane w tworzenie projektu wysokiego poziomu, ale niekoniecznie w określonej kolejności.  
   
  Aby zaktualizować istniejący kod może zacząć głównych składników opisano w nim. Upewnij się, zrozumieć wszelkie zmiany wymagań użytkownika, a następnie dodaje lub modyfikuje interakcje między składnikami. Jeśli tworzysz nowy system Rozpocznij zrozumienie najważniejszych funkcji potrzeb użytkowników. Następnie eksplorować sekwencji interakcji dla przypadków użycia głównego i następnie skonsolidować sekwencji do projektowania składnika.  
@@ -48,7 +46,7 @@ Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia u�
   
 -   Model danych składników i interfejsów. Diagramy klas opisujących informacje przekazywane między składnikami i przechowywane wewnątrz składników może wykonywać Rysowanie.  
   
-##  <a name="Requirements"></a>Zapoznanie się z wymaganiami  
+##  <a name="Requirements"></a> Zapoznanie się z wymaganiami  
  Ogólny projekt kompletna aplikacja jest najbardziej efektywne opracowany wraz z wymagań modelu lub innych opis potrzeb użytkowników. Aby uzyskać więcej informacji o modelach wymagania, zobacz [modelu wymagania użytkownika](../modeling/model-user-requirements.md).  
   
  W przypadku systemu, które tworzysz składnika w systemie większy, część lub wszystkie wymagania użytkownika dotyczące może zostać zawarte w interfejsów programistycznych.  
@@ -67,7 +65,7 @@ Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia u�
   
  Szczegółów, które należy umieścić w wymagania lub model architektury zależy od skali projektu i rozmiaru i dystrybucji zespołu. Mały zespół projektu krótki może go nie więcej niż powstawać diagramu klas rozwiązań biznesowych oraz niektóre wzorców projektowych; dużego projektu rozproszone na więcej niż jeden region potrzebny znacznie więcej szczegółów.  
   
-##  <a name="BigDecisions"></a>Wzorce architektury  
+##  <a name="BigDecisions"></a> Wzorce architektury  
  Wczesnym etapie programowania należy wybrać najważniejszych technologii i elementy, od których zależy projektu. Obszary, w których należy te opcje są następujące:  
   
 -   Podstawowa Wybór technologii, takich jak wybór między bazę danych i system plików i wybór między sieciowych aplikacji klienta sieci Web i tak dalej.  
@@ -80,7 +78,7 @@ Aby pomóc w zapewnieniu, że z oprogramowania systemu lub aplikacji spełnia u�
   
  Wybrane wpływa na sposób używania i interpretować architektury modelu. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klas może reprezentować relacji lub klucze obce w bazie danych w systemie, która jest oparta na plikach XML, skojarzenia może wskazują odsyłacze korzystających z języka XPath. W rozproszonym systemie komunikatów na diagramie sekwencji może reprezentować wiadomości umieszczonego; w aplikacji niezależne reprezentują wywołania funkcji.  
   
-##  <a name="Patterns"></a>Wzorce projektowe  
+##  <a name="Patterns"></a> Wzorce projektowe  
  Wzorzec projektowy jest konspekt sposobu projektowania określonej proporcji oprogramowania, szczególnie taki, który występuje w innej części systemu. Przez przyjęcie podejścia uniform w projekcie, można zmniejszyć koszt projektu, zapewnienia spójności interfejsu użytkownika i zmniejszenie kosztów zrozumienie i zmiana kodu.  
   
  Niektóre wzorce projektowe ogólne, takie jak obserwatora są dobrze znanych i powszechnie stosowane. Istnieją ponadto wzorców, które mają zastosowanie tylko do projektu. Na przykład w sieci Web systemu sprzedaży, będzie kilka operacji w kodzie gdzie zmian w kolejności klienta. W celu zapewnienia był wyświetlany na każdym etapie stanu zlecenia, wszystkie czynności musi występować po konkretnego protokołu aktualizacji bazy danych.  

@@ -1,27 +1,23 @@
 ---
-title: "Widok wywołujący wywoływany - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok wywołujący wywoływany - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 275ec14b1b6a0d43d2c8fdb88bbf1056db86d097
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d803cf59bb26f46cfcf3c7bd536f987db26055ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania pamięci .NET
 Widok wywołujący/wywoływany wyświetla danych dla wybranej funkcji i jej nadrzędne i podrzędne funkcji profilowania pamięci platformy .NET. Widok wywołujący/wywoływany zawiera trzy siatki.  
@@ -45,7 +41,7 @@ Widok wywołujący/wywoływany wyświetla danych dla wybranej funkcji i jej nadr
 |**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres funkcji.|  
 |**Typ**|Kontekst funkcji:<br /><br /> **0** -bieżącą funkcję<br /><br /> **1** — funkcja, która wywołuje bieżącą funkcję<br /><br /> **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
-|**Poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
 |**Alokacje włącznie**|— Dla bieżącej funkcji, liczba obiektów przydzielonych za pomocą funkcji w przebiegu profilowania. Liczba ta obejmuje obiekty, które zostały utworzone w funkcjach wywoływanych.<br />— Dla funkcji wywołującego, liczba przydziałów włącznie bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />— Dla funkcji wywoływany, liczbę obiektów, które zostały przydzielone wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba obejmuje przydziałów, które zostały dokonane przez funkcje, które zostały wywołane przez funkcję wywoływany.|  
 |**% Alokacji włącznie**|Procent wszystkich obiektów, które zostały utworzone w przebiegu, który profilowania były alokacji włącznie tej funkcji.|  
 |**Wyłączny alokacji**|— Dla bieżącej funkcji, liczbę obiektów, które zostały utworzone, gdy funkcja została uruchomiona kodu treść funkcji (oznacza to, gdy funkcja znajdowała się w górnej części stosu wywołań). Liczba nie obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez funkcję.<br />— Dla funkcji wywołującego, liczba przydziałów wyłącznego bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />— Dla funkcji wywoływany, liczbę obiektów, które zostały utworzone przez wystąpień tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba nie obejmuje obiekty, które zostały utworzone przez funkcje, które zostały wywołane przez funkcję wywoływany.|  

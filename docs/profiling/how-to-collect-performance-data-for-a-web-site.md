@@ -1,13 +1,10 @@
 ---
-title: "Porady: zbieranie danych wydajności dla witryny sieci Web | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: zbieranie danych wydajności dla witryny sieci Web | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9cefe31201a3b67ba176a56fed58bbe155bcf0
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 5d98bb70bcd02b90f978122f752757b3231564b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Porady: zbieranie danych wydajności dla witryny sieci Web
 
@@ -84,9 +81,9 @@ Można użyć **kreatora osiągów** do gromadzenia danych wydajności [!INCLUDE
 
     - Witryny sieci Web opartej na serwerze (IIS), wpisz adres URL takich jak **http://localhost/MySite/default.aspx**. Powoduje to [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji na komputerze lokalnym w katalogu głównym aplikacji, witryna do profilowania i default.aspx strony w tej witrynie ma zostać uruchomiony w programie Internet Explorer, aby rozpocząć sesję.
 
-    - Dla witryny sieci Web opartą na plikach, wpisz ścieżkę, np. plik / / /**c:\WebSites\MySite\default.aspx**. Powoduje to [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji znajdujących się na stronę http://localhost:nnnn/MySite/default.aspx ma zostać uruchomiony w programie Internet Explorer, aby rozpocząć sesję i c:\webSites\MySite do profilowania.
+    - Dla witryny sieci Web opartą na plikach, wpisz ścieżkę, np. plik / / /**c:\WebSites\MySite\default.aspx**. Powoduje to [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji znajduje się w c:\webSites\MySite do profilowania i strona http://localhost:nnnn/MySite/default.aspx ma zostać uruchomiony w programie Internet Explorer, aby rozpocząć sesję.
 
-    - Dla zewnętrznych witryn, które mają zostać zebrane dane JavaScript na wpisz adres URL, na przykład http://www.contoso.com.
+    - Dla zewnętrznych witryn, które mają zostać zebrane dane JavaScript, wpisz adres URL, na przykład http://www.contoso.com.
 
      Aby uzyskać więcej informacji, Wyświetl strony właściwości dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] docelowy plik binarny.
 

@@ -1,32 +1,28 @@
 ---
-title: "Zapisywanie i eksportowanie wydajności narzędzi danych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zapisywanie i eksportowanie wydajności narzędzi danych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37306636da74637cb950ca1502b94a750a51ccba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: da2f15eee4e5fab64e0847f8e6d964c03b954833
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Zapisywanie i eksportowanie wydajności narzędzi danych
 W tym temacie opisano sposób zapisania i wyeksportowane pliki danych wydajności.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a>Porady: zapisywanie plików danych wydajności jako pliki raportu analizy  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Porady: zapisywanie plików danych wydajności jako pliki raportu analizy  
  Możesz zapisać filtrowane lub niefiltrowane widoki profilowania pliki danych (Vsp) jako pliki raportu analizy (vsps). Plik raportu analizy mogą być wyświetlane w oknie widoku raportu i jest znacznie mniejszy niż oryginalny plik Vsp. Nie można jednak zastosować filtr do danych pliku vsps. W Eksploratorze wydajności można utworzyć pliku raportu analizy, bez konieczności otwierania pliku w zintegrowane środowisko programistyczne (IDE), lub można otwierać i plik Vsp filtru i następnie zapisz wyniki.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Aby zapisać raport analizy wydajności z Eksploratora wydajności  
@@ -71,7 +67,7 @@ W tym temacie opisano sposób zapisania i wyeksportowane pliki danych wydajnośc
   
 6.  Kliknij przycisk **wyeksportować**.  
   
-     Każdy widok raport jest zapisywany do osobnego pliku o nazwie \<prefiks > _\<nazwy widoku raportu >.\< CSV &#124; xml >  
+     Każdy widok raport jest zapisywany do osobnego pliku o nazwie \<prefiks > _\<nazwy widoku raportu >.\< CSV&#124;xml >  
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Raporty wydajności można eksportować z okno widoku raportu  
   
@@ -91,7 +87,7 @@ W tym temacie opisano sposób zapisania i wyeksportowane pliki danych wydajnośc
   
 8.  Kliknij przycisk **wyeksportować**.  
   
-     Każdy widok raport jest zapisywany do osobnego pliku o nazwie \<prefiks > _\<nazwy widoku raportu >.\< CSV &#124; xml >  
+     Każdy widok raport jest zapisywany do osobnego pliku o nazwie \<prefiks > _\<nazwy widoku raportu >.\< CSV&#124;xml >  
   
 ## <a name="see-also"></a>Zobacz też  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   

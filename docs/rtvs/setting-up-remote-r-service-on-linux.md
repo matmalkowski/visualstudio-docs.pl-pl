@@ -1,30 +1,24 @@
 ---
-title: "Konfigurowanie usługi zdalnej R w systemie Linux | Dokumentacja firmy Microsoft"
-description: "Jak skonfigurować usługi zdalnej R Ubuntu i podsystemu systemu Windows dla systemu Linux."
-ms.custom: 
+title: Konfigurowanie usługi zdalnej R w systemie Linux
+description: Jak skonfigurować usługi zdalnej R Ubuntu i podsystemu systemu Windows dla systemu Linux.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
-author:
-- kraigb
-- karthiknadig
-ms.author:
-- kraigb
-- karthiknadig
-manager: ghogen
+ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+ms.reviewer: karthiknadig
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 80f7f82baf194070ff3e34bcbf8776f9109c925d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ea41a192a5a39c0245bcb6d67f45331b7b021116
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-r-service-for-linux"></a>Usługa zdalnego R dla systemu Linux
 
@@ -50,7 +44,7 @@ W tej sekcji opisano następujące opcje:
 
 W każdym przypadku komputer zdalny musi mieć jedną z następujących tłumaczy R zainstalowane:
 
-- [Microsoft R Open](https://mran.microsoft.com/open/)
+- [Otwórz program Microsoft R](https://mran.microsoft.com/open/)
 - [Sieci CRAN R dla systemu Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
 ### <a name="physical-ubuntu-computer"></a>Komputer fizyczny Ubuntu
@@ -100,7 +94,7 @@ W każdym przypadku komputer zdalny musi mieć jedną z następujących tłumacz
 1. Zaloguj się do [portalu Azure](https://portal.azure.com).
 1. Przejdź do maszyny wirtualnej, a następnie wybierz **Dodaj**.
 1. Na liście dostępnych obrazów maszyn wirtualnych Wyszukaj i wybierz jedną z następujących czynności:
-    - Ubuntu Server:`Ubuntu Server 16.04 LTS`
+    - Ubuntu Server: `Ubuntu Server 16.04 LTS`
     - Połączenie analiz danych maszyny Wirtualnej: `Linux Data Science` (zobacz [danych maszyny wirtualnej nauki](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) szczegółowe informacje)
 1. Wartość modelu wdrażania `Resource manager` i wybierz **Utwórz**.
 1. Wybierz nazwę dla maszyny Wirtualnej, podaj nazwę użytkownika i hasło (wymagane jest hasło, jako SSH publicznego klucza logowania nie jest obsługiwane).

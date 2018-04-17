@@ -1,12 +1,9 @@
 ---
-title: "ItemGroup — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: ItemGroup — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - ItemGroup element [MSBuild]
 - <ItemGroup> element [MSBuild]
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c202e58c8e28bd446dba54ecf7b9afcab49b7b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8495669be8ff83584e0eba793c183822643e0b13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup — Element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Każdy element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `ItemGroup` elementu.  
@@ -65,7 +61,7 @@ Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-elem
 |Element|Opis|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|Wymaganego głównego elementu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
-|[Docelowy](../msbuild/target-element-msbuild.md)|W programie .NET Framework 3.5, `ItemGroup` element może występować wewnątrz `Target` elementu. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).|  
+|[docelowy](../msbuild/target-element-msbuild.md)|W programie .NET Framework 3.5, `ItemGroup` element może występować wewnątrz `Target` elementu. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).|  
   
 ## <a name="remarks"></a>Uwagi  
   

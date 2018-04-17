@@ -1,23 +1,21 @@
 ---
 title: Zdarzenia (VSPerfCmd) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cfbeaa9c11bdb24b561e0dfdc10e8ab2a10053a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3f7201c65a6ac3b5c7b58c547898589ffdcba9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="events-vsperfcmd"></a>Zdarzenia (VSPerfCmd)
 VSPerfCmd.exe **zdarzenia** opcja kontroluje rejestrowanie zdarzeń śledzenia dla systemu Windows (ETW). Dane funkcji ETW są zapisywane do pliku etl, który różni się od pliku danych profilera. Dane mogą być wyświetlane w raporcie przy użyciu [VSPerfReport](../profiling/vsperfreport.md) polecenia/Summary: ETW.  
@@ -31,7 +29,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametry  
- **Na**&#124; **Wyłączanie**  
+ **Na**&#124;**wyłączone**  
  Uruchamia lub zatrzymuje zbieranie danych zdarzeń.  
   
  `Guid`  
@@ -44,7 +42,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  "0 x"-prefiksem wartość flagi szesnastkowa, która jest definiowana za pomocą dostawcy zdarzeń.  
   
  `Level`  
- Określa ilość zbieranych danych. `Level`jest zdefiniowany przez dostawcę zdarzeń.  
+ Określa ilość zbieranych danych. `Level` jest zdefiniowany przez dostawcę zdarzeń.  
   
  **Zdarzenia** opcji rozumie następujące jądra słowa kluczowe jako nazwy dostawcy:  
   
@@ -57,7 +55,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Obraz**  
  Obraz obciążenia i zwolnić zdarzenia  
   
- **Dysku**  
+ **dysku**  
  We/Wy dysku zdarzenia  
   
  **Plik**  
@@ -72,7 +70,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Sieci**  
  Zdarzenia sieci  
   
- **Rejestru**  
+ **Registry**  
  Zdarzenia dostępu do rejestru  
   
  Należy pamiętać, że dostawca jądra można włączyć tylko. Nie można wyłączyć ani jej flag można modyfikować, dopóki zamknięcie monitora.  

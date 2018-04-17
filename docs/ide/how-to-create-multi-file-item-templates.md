@@ -1,24 +1,22 @@
 ---
-title: "Tworzenie szablonów elementów wielu plików dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie szablonów elementów wielu plików dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: d80c0a604455d8c6e76d9c55bdf3a0d2dacfe743
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Porady: Tworzenie szablonów elementów wielu plików
 

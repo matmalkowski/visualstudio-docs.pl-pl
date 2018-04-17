@@ -1,28 +1,24 @@
 ---
 title: 'Porady: kompilacja przyrostowa | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaebea1fea86339badd7882c7436087ae555b7b5
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: ee9034d6dcd4b9484d727bd55111c998fc09a968
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-incrementally"></a>Porady: kompilacja przyrostowa
 Podczas kompilowania dużych projektów, należy wcześniej wbudowanej składników, które są nadal aktualne nie zostały odbudowane. Jeśli wszystkie elementy docelowe są tworzone za każdym razem każdej kompilacji będzie trwać bardzo długo. Aby włączyć kompilacji przyrostowej (kompilacji, w którym tylko tych obiektów docelowych, które nie zostały utworzone przed lub elementów docelowych, które są nieaktualne, są odbudować), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) można porównać sygnatury czasowe plików wejściowych ze znacznikami czasu plików wyjściowych i określanie, czy pominąć, kompilacji lub częściowo odbudować obiektu docelowego. Jednak musi być mapowanie jeden do jednego między wejścia i wyjścia. Aby włączyć elementy docelowe zidentyfikować ten bezpośredniego mapowania można użyć transformacji. Aby uzyskać więcej informacji na transformacje, zobacz [przekształca](../msbuild/msbuild-transforms.md).  

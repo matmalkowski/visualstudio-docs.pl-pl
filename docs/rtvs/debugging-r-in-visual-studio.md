@@ -1,26 +1,23 @@
 ---
-title: "Debugowanie za pomocą narzędzia R dla programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Visual Studio zapewnia pełne środowisko debugowania R punktów przerwania w tym, Dołącz, wywołaj stosu i sprawdzania zmiennych."
-ms.custom: 
+title: Debugowanie kodu języka R
+description: Visual Studio zapewnia pełne środowisko debugowania R punktów przerwania w tym, Dołącz, wywołaj stosu i sprawdzania zmiennych.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 185896840be089c8a74e018e3fd66fa2816c5d76
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ee8ed2cef9296b0d73be01f1bc5d2438c931d7eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-r-in-visual-studio"></a>R debugowania w programie Visual Studio
 

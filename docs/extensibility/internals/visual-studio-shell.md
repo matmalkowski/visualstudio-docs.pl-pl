@@ -1,26 +1,24 @@
 ---
 title: Visual Studio Shell | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9240df0a4f551ab4fa47fc2ceacaf0654dc562e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71b624cee0e55f95f90a86eac943828bbc26ac97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Powłoki jest podstawowym agenta integracji w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Powłoka udostępnia funkcje niezbędne umożliwiające VSPackages do udostępniania usług wspólnej. Ponieważ architektury celem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ma uprawnienia nabywa podstawowe funkcje w VSPackages, powłoka jest framework zapewnienia podstawowej funkcjonalności i obsługę techniczną, cross komunikacji między jego składnika VSPackages.  
@@ -44,9 +42,9 @@ ms.lasthandoff: 12/22/2017
   
     -   Bieżący projekt  
   
-    -   Bieżący element projektu lub identyfikator bieżącego elementu<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+    -   Bieżący element projektu lub identyfikator bieżącego elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   Bieżące zaznaczenie dla **właściwości** okna lub`SelectionContainer`  
+    -   Bieżące zaznaczenie dla **właściwości** okna lub `SelectionContainer`  
   
     -   Kontekst interfejsu użytkownika lub identyfikatory CmdUIGuids sterowania widoczności poleceń, menu i pasków narzędzi  
   

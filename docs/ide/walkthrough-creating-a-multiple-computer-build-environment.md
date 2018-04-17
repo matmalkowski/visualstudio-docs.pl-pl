@@ -1,26 +1,23 @@
 ---
-title: "Wskazówki: Tworzenie wielu komputerach środowisko kompilacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie wielu komputerach środowisko kompilacji | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b4394b0f06dbcf995e8924833870a455bba348
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: d4c2efa01078cb089055cb48fbb80e9c1ffcde0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Wskazówki: tworzenie środowiska kompilacji na wielu komputerach
 
@@ -66,7 +63,7 @@ W tym przewodniku została zweryfikowana względem następujących systemów ope
 
 - Program Visual Studio z obciążeniem tworzenia klasycznych aplikacji .NET, które są zainstalowane.
 
-## <a name="InstallingSoftware">Instalowanie oprogramowania na komputerach</a>
+## <a name="InstallingSoftware"></a> Instalowanie oprogramowania na komputerach
 
 Najpierw należy skonfigurować komputer hosta, a następnie ponowne skonfigurowanie komputera kompilacji.
 
@@ -76,7 +73,7 @@ Instalując program Visual Studio na komputerze-hoście, tworzenia plików i ust
 
 2. Na komputerze kompilacji należy zainstalować program .NET Framework 4.5. Aby sprawdzić, czy jest zainstalowany, upewnij się, że wartość rejestru klucza HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version rozpoczyna się od "4.5".
 
-## <a name="CopyingFiles">Kopiowanie plików z hosta na komputerze kompilacji</a>
+## <a name="CopyingFiles"></a> Kopiowanie plików z hosta na komputerze kompilacji
 
 Ta sekcja obejmuje kopiowanie określonych plików, kompilatory narzędzia kompilacji, zasoby MSBuild i ustawień rejestru z komputera hosta na komputerze kompilacji. W poniższych instrukcjach przyjęto, że po zainstalowaniu programu Visual Studio w domyślnej lokalizacji na komputerze hosta; Jeśli zainstalowano w innej lokalizacji, w związku z tym odpowiedniego dostosowania kroków.
 
@@ -208,7 +205,7 @@ Należy zauważyć, że nazwa folderu Program Files zależy od systemu operacyjn
 
     - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-##  <a name="CreatingRegistry">Tworzenie ustawień rejestru</a>
+##  <a name="CreatingRegistry"></a> Tworzenie ustawień rejestru
  Należy utworzyć wpisy rejestru, aby skonfigurować ustawienia dla programu MSBuild.
 
 #### <a name="to-create-registry-settings"></a>Aby utworzyć ustawienia rejestru
@@ -232,7 +229,7 @@ Należy zauważyć, że nazwa folderu Program Files zależy od systemu operacyjn
 
     - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder
 
-    - %RegistryRoot%\VisualStudio\11.0@Source Directories
+    - % RegistryRoot %\VisualStudio\11.0@Source katalogów
 
     - %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir
 
@@ -270,7 +267,7 @@ Należy zauważyć, że nazwa folderu Program Files zależy od systemu operacyjn
 
     - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables">Ustawianie zmiennych środowiskowych na komputerze kompilacji</a>
+## <a name="SettingEnvVariables"></a> Ustawianie zmiennych środowiskowych na komputerze kompilacji
 
 Aby użyć MSBuild na komputerze kompilacji, należy ustawić zmienne środowiskowe ścieżki. Vcvarsall.bat można użyć do ustawienia zmiennych, lub można ręcznie skonfigurować je.
 
@@ -308,7 +305,7 @@ Aby użyć MSBuild na komputerze kompilacji, należy ustawić zmienne środowisk
 
     - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC">Instalowanie programu MSBuild zestawów do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji</a>
+## <a name="InstallingMSBuildToGAC"></a> Instalowanie programu MSBuild zestawów do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji
 
 MSBuild wymaga niektóre dodatkowe zestawy GAC na komputerze kompilacji, należy zainstalować.
 
@@ -329,7 +326,7 @@ MSBuild wymaga niektóre dodatkowe zestawy GAC na komputerze kompilacji, należy
     > [!NOTE]
     > Ponowne uruchomienie komputera może być wymagane dla zestawu do w pełni zainstalowane w pamięci GAC.
 
-## <a name="BuildingProjects">Tworzenie projektów</a>
+## <a name="BuildingProjects"></a> Tworzenie projektów
 
 Team Foundation Build można użyć do tworzenia [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projektów i rozwiązań lub można je kompilować w wierszu polecenia. Korzystając z Team Foundation Build do kompilacji projektów, wywołuje MSBuild pliku wykonywalnego, umożliwiająca architektura systemu. W wierszu polecenia można użyć MSBuild 32-bitowy lub 64-bitowego programu MSBuild, a przez ustawienie zmiennej środowiskowej PATH lub bezpośrednio wywoływania MSBuild architektury pliku wykonywalnego, można wybrać architektura programu MSBuild.
 
@@ -344,7 +341,7 @@ Aby uzyskać więcej informacji o sposobie używania programu MSBuild w wierszu 
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl">Tworzenie środowiska kompilacji, dzięki czemu może być wyewidencjonowany do kontroli źródła</a>
+## <a name="CreatingForSourceControl"></a> Tworzenie środowiska kompilacji, dzięki czemu może być wyewidencjonowany do kontroli źródła
 
 Można utworzyć środowiska kompilacji, które mogą być wdrażane na różnych komputerach i nie wymaga GAC'ing plików lub modyfikowania ustawień rejestru. Poniższe kroki są tylko jeden sposób, w tym celu. Dostosować te kroki, aby unikatowych parametrów, środowiska kompilacji.
 

@@ -1,23 +1,21 @@
 ---
-title: "Uruchomione narzędzia profilowania z lub bez debuger | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Uruchomione narzędzia profilowania z lub bez debuger | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 31ae64a24cab971ff54a92ec447371ad24bb7c24
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchomione narzędzia profilowania z lub bez debugera
 Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre z nich (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchomić z lub bez debugera. Narzędzia non debugera wydajności są przeznaczone do uruchamiania na wersji konfiguracji, gdy debuger zintegrowane narzędzia są przeznaczone do uruchamiania na konfiguracji debugowania.  
@@ -39,7 +37,7 @@ Visual Studio teraz oferuje możliwość wyboru wydajności narzędzi, niektóre
   
      Debugowania braku kompilacje niektóre funkcje optymalizacji, które zapewniają kompilacjami wydania, na przykład ze śródwierszowaniem wywołania funkcji i stałych oczyszczania nieużywane kod ścieżki i zmiennych zapisywanie w sposób, który nie może być używana przez debuger. Debuger się zmienia się razy wydajności, ponieważ wykonywania pewnych operacji, które są niezbędne do debugowania (na przykład przechwytywaniu wyjątków i zdarzeń ładowania modułu). Numery wydajności w narzędziach zintegrowane debugera są mniej dokładne, bez uwzględnienia optymalizacje debugera, ale nadal mogą być przydatne w porównaniu z innych względnych pomiarów podczas debugowania. Numery wydajności w przypadku wersji konfiguracji przy użyciu narzędzi z systemem innym niż debugera są bardziej dokładne.
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieranie danych profilowania podczas debugowania  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania  
  Poniższa sekcja zawiera debugowania lokalnego. Można znaleźć informacje o debugowaniu na urządzeniu lub debugowanie zdalne w kolejnych sekcjach.  
   
 1.  Otwórz projekt chcesz debugować, następnie kliknij przycisk **Debug / Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).  

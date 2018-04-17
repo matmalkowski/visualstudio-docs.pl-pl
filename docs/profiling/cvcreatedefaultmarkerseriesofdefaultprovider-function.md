@@ -1,29 +1,25 @@
 ---
-title: "Cvcreatedefaultmarkerseriesofdefaultprovider — funkcja | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Cvcreatedefaultmarkerseriesofdefaultprovider — funkcja | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
 helpviewer_keywords:
 - CvCreateDefaultMarkerSeriesOfDefaultProvider method
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fae064fab478de88f6b5f66c41df7e4e57d4ead
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d7b04dcd76eea45264257fca354f321493afed0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider — Funkcja
 Tworzy domyślny znacznik serii domyślnego dostawcy.  

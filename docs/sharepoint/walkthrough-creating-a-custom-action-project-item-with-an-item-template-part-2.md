@@ -1,25 +1,24 @@
 ---
-title: "Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 2 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 2 | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Wskazówki: tworzenie niestandardowej akcji elementu projektu z Szablonem elementu, Część 2
   Po zdefiniowaniu niestandardowego typu elementu projektu SharePoint i skojarzyć go z szablonu elementów programu Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, gdy będą oni używać szablonu można dodać nowe wystąpienie elementu projektu do projektu. Informacje zbierane można zainicjować elementu projektu.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wybierz **Biblioteka kontrolek użytkownika WPF** projektu szablonu, nazwy projektu **ItemTemplateWizard**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **ItemTemplateWizard** projektu do rozwiązania.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **ItemTemplateWizard** projektu do rozwiązania.  
   
 6.  Usuń element UserControl1 z projektu.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — Element &#40; Szablony Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Aby uzyskać więcej informacji na temat `WizardExtension` elementu, zobacz [wizardextension — Element &#40;szablony Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Zapisz i zamknij plik.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      **Ustawień listy** zostanie wyświetlona strona.  
   
-4.  W obszarze **komunikacji** pozycji w górnej części strony, wybierz **SharePoint Developer Center** łącza, upewnij się, że przeglądarka otworzy http://msdn.microsoft.com/sharepoint/ witryny sieci Web default.aspx, a następnie zamknij przeglądarkę.  
+4.  W obszarze **komunikacji** pozycji w górnej części strony, wybierz **SharePoint Developer Center** łącza, upewnij się, że przeglądarka otwiera witrynę sieci Web http://msdn.microsoft.com/sharepoint/default.aspx, a następnie zamknij przeglądarkę.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim  
  Po zakończeniu testowania elementu projektu, należy usunąć szablonu elementu projektu z eksperymentalne wystąpienie programu Visual Studio.  

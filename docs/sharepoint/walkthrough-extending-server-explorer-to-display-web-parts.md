@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci Web | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Wskazówki: rozszerzanie Eksploratora serwera do potrzeb wyświetlania elementów sieci web
   W programie Visual Studio, można użyć **połączeń SharePoint** węzła **Eksploratora serwera** Aby wyświetlić składniki w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie są wyświetlane domyślnie niektórych składników. W tym przewodniku będzie można rozszerzyć **Eksploratora serwera** tak, aby Wyświetla Galeria składników Web Part na każdy jest połączony witryny programu SharePoint.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Wybierz **projektu VSIX** szablonu, nazwy projektu **WebPartNode**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **WebPartNode** projektu do **Eksploratora rozwiązań**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartNode** projektu do **Eksploratora rozwiązań**.  
   
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Na liście szablony projektów, wybierz **biblioteki klas**, nazwij projekt **WebPartNodeExtension**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **WebPartNodeExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartNodeExtension** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 5.  Usuń plik kodu Class1 z projektu.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Na liście szablony projektów, wybierz **biblioteki klas**, nazwij projekt **WebPartCommands**, a następnie wybierz pozycję **OK** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje **WebPartCommands** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje **WebPartCommands** projektu do rozwiązania i otwarcie pliku kodu Class1 domyślne.  
   
 6.  Usuń plik kodu Class1 z projektu.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Wybierz strzałkę obok pozycji **Dodaj** przycisk, a następnie wybierz pozycję **Dodaj jako Link** w wyświetlonym menu.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dodaje pliki kodu do projektu WebPartCommands jako łącza. W związku z tym pliki kodu znajdują się w projekcie WebPartNodeExtension, ale również kompilowane w projekcie WebPartCommands kodu w plikach.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje pliki kodu do projektu WebPartCommands jako łącza. W związku z tym pliki kodu znajdują się w projekcie WebPartNodeExtension, ale również kompilowane w projekcie WebPartCommands kodu w plikach.  
   
 5.  Otwórz menu skrótów **WebPartCommands** ponownie projekt i wybierz polecenie **Dodaj odwołanie**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Wybierz **zasobów** karcie, a następnie wybierz pozycję **ten projekt nie zawiera domyślnego pliku zasobów. Kliknij tutaj, aby utworzyć** łącza.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Tworzy plik zasobów i otwarcie go w projektancie.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy plik zasobów i otwarcie go w projektancie.  
   
 4.  W górnej części projektanta, wybierz strzałkę **dodawania zasobów** menu polecenie, a następnie wybierz pozycję **dodać nową ikonę** w wyświetlonym menu.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Wskazówki: Wywoływanie Client Object Model SharePoint w rozszerzeniu Eksploratora serwera](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons)   
- [Tworzenie ikony lub innego obrazu &#40; edytor obrazów dla ikon &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Tworzenie ikony lub innego obrazu &#40;edytor obrazów dla ikon&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

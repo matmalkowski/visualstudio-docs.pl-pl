@@ -1,23 +1,21 @@
 ---
-title: "Podstawowe informacje dotyczące środowiska użytkownika dla programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Podstawowe informacje dotyczące środowiska użytkownika dla programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawowe informacje dotyczące środowiska użytkownika dla programu Visual Studio
 ## <a name="best-practices"></a>Najlepsze praktyki  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Wymuszanie użytkownikowi odczytywanie tekst objaśnienia przed odrzuceniu interfejsu użytkownika jest uruchomiony wzorca w programie Visual Studio. Łącza poprawnie zaprojektowane, wideo należy wyświetlić etykietkę zawierającą dodatkowe informacje na aktywowanie i klikając pozycję "&times;" należy odrzucić komunikat bez konieczności dalszej interakcji.
 
 
- ![Wyjaśniające tekst anty &#45; wzorzec & 45; niepoprawna](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Wzorzec nieprawidłowe łącze wideo
+ ![Tekst objaśniający anty&#45;wzorzec &#45; niepoprawne](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Wzorzec nieprawidłowe łącze wideo
   
 #### <a name="result"></a>Wynik  
  Zamiast przycisku Zamknij proste (jednego kliknięcia) użytkownik będzie zmuszony po prostu zignoruj interfejsu użytkownika w każdym miejscu, które są wyświetlane linki wideo przy użyciu dwóch kliknięć.  
@@ -116,7 +114,7 @@ Wymuszanie użytkownikowi odczytywanie tekst objaśnienia przed odrzuceniu inter
 #### <a name="alternatives"></a>Alternatywne  
  Poprawny projekt w takiej sytuacji może być zgodne ze wzorcem wspólnej programu Internet Explorer, pakietu Office i programu Visual Studio: przy aktywowaniu, użytkownik może wyświetlić opis etykietki narzędzia i jedno kliknięcie powoduje ukrycie interfejsu użytkownika.  
   
- ![Wyjaśniające tekst anty &#45; wzorzec & 45; poprawne](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Popraw wzorzec Explanatorytextanti")<br />Wzorzec prawidłowe łącze wideo
+ ![Tekst objaśniający anty&#45;wzorzec &#45; poprawne](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Popraw wzorzec Explanatorytextanti")<br />Wzorzec prawidłowe łącze wideo
   
 ### <a name="using-command-bars-for-settings"></a>Za pomocą pasków poleceń ustawień  
  **Rysunek A** reprezentuje ten układ wzorzec: umieszczanie ustawienie poniżej przycisku polecenia, który dotyczy nie tylko polecenia. W tym szkicu istnieją polecenia oprócz Rozpocznij debugowanie — widok w przeglądarce, uruchom bez debugowania i Step Into, takich jak — która szanuje wybrane ustawienie.  

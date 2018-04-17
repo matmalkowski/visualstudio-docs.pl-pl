@@ -1,23 +1,21 @@
 ---
-title: "Odłącz | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Odłącz | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 02ff1bd3e3db51a444d371e2e803f77ef1429676
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 375847f1e11ffa7a831951e0019a603fd134415b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="detach"></a>Odłącz
 VSPerfCmd.exe **Detach** opcji rozłącza profilera z określonych procesów lub wszystkich procesów, jeśli żaden nie jest określony. Profilowanie muszą zostać zainicjowane przy użyciu metody pobierania próbek.  
@@ -37,9 +35,9 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
   
 #### <a name="parameters"></a>Parametry  
  `PIDs|ProcessNames`  
- `PID`Identyfikatorem systemu liczbowego jednego lub więcej procesów.  
+ `PID` Identyfikatorem systemu liczbowego jednego lub więcej procesów.  
   
- `ProcessNames`-nazwę procesu. Korzystający z wielu wystąpień nazwanych procesu, wyniki są nieprzewidywalne.  
+ `ProcessNames` -nazwę procesu. Korzystający z wielu wystąpień nazwanych procesu, wyniki są nieprzewidywalne.  
   
  Wiele procesów należy oddzielić przecinkami.  
   

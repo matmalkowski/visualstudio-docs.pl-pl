@@ -1,26 +1,24 @@
 ---
-title: "Sesja wydajności — omówienie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Sesja wydajności — omówienie | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
 - performance sessions
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e0631838abf8ccea06661bbf381337d7aa62082d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — Omówienie
 W tym omówieniu przedstawiono podstawowe profilowania. Deweloperzy, którzy dopiero zaczynasz korzystać z wydajności pracy zostanie wyświetlony jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędziach profilowania pomoże im szybko stać się wydajność i zwiększyć wydajność ich kodu. Deweloperzy, którzy są w profilowania można zapoznać się z określonych funkcji w narzędziach profilowania i procesów.  

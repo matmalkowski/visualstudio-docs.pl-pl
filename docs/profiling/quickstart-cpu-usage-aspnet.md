@@ -1,27 +1,23 @@
 ---
-title: "Analizowanie danych użycia procesora CPU (ASP.NET) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Analizowanie danych użycia procesora CPU (ASP.NET) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 16bdbcbc66673f872215a7b3812c4c6f7f1724b3
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a8f18bfa747e7563861ff28d969dd5771c4e00be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
 

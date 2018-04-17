@@ -1,28 +1,25 @@
 ---
-title: "Linting R kodu za pomocą narzędzia R dla programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Jak pracować z R, włącznie z opcjami linting obsługę linting kompilacji w Visual Studio."
-ms.custom: 
+title: Kod linting R
+description: Jak pracować z R, włącznie z opcjami linting obsługę linting kompilacji w Visual Studio.
+ms.custom: ''
 ms.date: 01/15/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 30f508fbaa6de816f8b0adb336fea66b82f992a6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f36384e8e8c15210299e497ece67cf689a1a289d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Kod linting R w programie Visual Studio
 
@@ -42,7 +39,7 @@ Często Zmień opcje linting zależnie od potrzeb projektu lub pliku. Na przykł
 
 | Opcja | Wartość domyślna | Efekt linting |
 | --- | --- | --- |
-| Enforce \<- | `True` | Określa, kiedy `<-` nie jest używany do przypisania. |
+| Wymuszanie \<- | `True` | Określa, kiedy `<-` nie jest używany do przypisania. |
 
 ## <a name="naming-group"></a>Grupy nazewnictwa
 

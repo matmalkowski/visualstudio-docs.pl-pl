@@ -1,12 +1,9 @@
 ---
-title: FindInList Task | Microsoft Docs
+title: Findinlist — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - FindInList task [MSBuild]
 - MSBuild, FindInList task
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
-caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf4f6b8f07da67af061c101f7f7b6500de48f73
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 1752f90ed3c08536eb4200f7e880b800f07d7d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="findinlist-task"></a>FindInList — Zadanie
 Wymienionych na liście umożliwia znalezienie elementu, który ma specyfikacja_elementu dopasowania.  

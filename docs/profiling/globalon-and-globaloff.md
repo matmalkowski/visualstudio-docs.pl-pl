@@ -1,23 +1,21 @@
 ---
 title: GlobalOn i GlobalOff | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9998f0f4d46a37b1eccd3cdf5dc48dd994f651a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ceef6ca8a472c5ea87228d8b40963c31e82c6c45
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn i GlobalOff
 VSPerfCmd.exe **GlobalOff** i **GlobalOn** opcje wstrzymywanie i wznawianie profilowania dla wszystkich procesów i wątków w sesji profilowania z wiersza polecenia.  
@@ -52,19 +50,19 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="valid-options"></a>Prawidłowe opcje  
  **GlobalOn** i **GlobalOff** można określić w wierszu polecenia, który zawiera również następujące opcje.  
   
- **Start:**`Method`  
+ **Uruchom:** `Method`  
  Inicjuje sesję wiersza polecenia profilera i ustawia określonej metody profilowania.  
   
- **Uruchom:**`AppName`  
+ **Uruchom:** `AppName`  
  Uruchamia określony aplikację i rozpocznie się profilowania za pomocą metody pobierania próbek.  
   
- **Dołącz:**`PID`  
+ **Dołącz:** `PID`  
  Rozpoczyna się profilowania określony proces.  
   
- {**ProcessOff**&#124; **ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
  Zatrzymuje i uruchamia profilowanie dla określonego procesu.  
   
- {**ThreadOff**&#124; **ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
  Zatrzymuje i uruchamia profilowanie dla określonego procesu (tylko w przypadku metody Instrumentacji).  
   
 ## <a name="example"></a>Przykład  

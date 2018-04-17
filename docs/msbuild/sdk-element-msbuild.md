@@ -1,12 +1,9 @@
 ---
-title: "Zestaw SDK — Element (MSBuild) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zestaw SDK — Element (MSBuild) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/25/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -22,11 +19,11 @@ ms.author: jeffkl
 manager: angerlic
 ms.workload:
 - multiple
-ms.openlocfilehash: e82a66835ca3b104df325009f7253fafbc429eab
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 536c114343c18b33da37acad41e4cd6281f0320f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-element-msbuild"></a>Zestaw SDK — Element (MSBuild)
 Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zestawu SDK.  

@@ -1,12 +1,10 @@
 ---
-title: "Automatyzowanie programu Excel za pomocą obiektów rozszerzonych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Automatyzowanie programu Excel za pomocą obiektów rozszerzonych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 85f1d3b869d98f12bff1c7bb3ca1be5d2ea0a090
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 63c200a3d3a6a64dfc100cc9365f142a8dddae4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Excel w programie Visual Studio, można użyć *hosta elementów* i *kontrolki hosta*s w ramach rozwiązań. Są to obiekty, które rozszerzają niektórych obiektów często używane w modelu obiektów programu Excel (to znaczy obiektu modelu udostępnianym przez podstawowy zestaw międzyoperacyjny dla programu Excel), takich jak <xref:Microsoft.Office.Interop.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Range> obiektów. Obiekty rozszerzone przypominają obiektami programu Excel, które są oparte na, ale ich dodać dodatkowe funkcje, takie jak nowe zdarzenia i możliwości wiązania danych do obiektów.  
@@ -40,11 +39,11 @@ ms.lasthandoff: 01/10/2018
 ## <a name="excel-host-items"></a>Obiekty hosta programu Excel  
  Projekty programu Excel umożliwiają dostęp do wielu elementów hosta:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>., Reprezentuje zawiera ten element hosta arkusza w projekcie. Działa również jako kontener dla zarządzane formanty, łącznie z formantami hosta i formantów formularzy systemu Windows i przechowuje informacje o formantach w jego powierzchnię. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Reprezentuje zawiera ten element hosta arkusza w projekcie. Działa również jako kontener dla zarządzane formanty, łącznie z formantami hosta i formantów formularzy systemu Windows i przechowuje informacje o formantach w jego powierzchnię. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>., Ten element hosta reprezentuje skoroszytu w projekcie i działa jako kontener dla składników, które są udostępniane przez wszystkich arkuszy w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Workbook>. Ten element hosta reprezentuje skoroszytu w projekcie i działa jako kontener dla składników, które są udostępniane przez wszystkich arkuszy w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>., Ten host elementu arkuszu programu Excel, która zawiera tylko wykres i opisuje zdarzenia.  
+-   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Ten host elementu arkuszu programu Excel, która zawiera tylko wykres i opisuje zdarzenia.  
   
      Po dodaniu wykresu w arkuszu w czasie projektowania, jako nowego arkusza w projekcie dostosowania na poziomie dokumentu programu Microsoft Office Excel Visual Studio automatycznie tworzy <xref:Microsoft.Office.Tools.Excel.ChartSheet> element hosta.  
   

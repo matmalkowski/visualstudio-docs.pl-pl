@@ -1,27 +1,25 @@
 ---
-title: "DA0018: limitach pamięci zarządzanych aplikacji 32-bitowych uruchomionej w procesie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0018: limitach pamięci zarządzanych aplikacji 32-bitowych uruchomionej w procesie | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
 - vs.performance.rules.DA0018
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e826619a9b8b6b9109c28381b6b9f05cb37b4094
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9ea3e16dedeeee19c9878d5d77962e592c00e511
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplikacja 32-bitowa działająca w limitach pamięci zarządzanych przez proces
 |||  

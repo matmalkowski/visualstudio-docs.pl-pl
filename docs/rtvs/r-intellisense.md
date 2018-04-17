@@ -1,26 +1,23 @@
 ---
-title: "IntelliSense dla kodu języka R w programie Visual Studio | Dokumentacja firmy Microsoft"
-description: "Visual Studio IntelliSense wyświetla informacje o funkcji, elementach członkowskich obiektu, fragmentów kodu i zakończeń, pisania kodu języka R."
-ms.custom: 
+title: IntelliSense dla kodu języka R
+description: Visual Studio IntelliSense wyświetla informacje o funkcji, elementach członkowskich obiektu, fragmentów kodu i zakończeń, pisania kodu języka R.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: de74bd82efc3a0ecc07d31fc830ffabb1d45093c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a5ba810cc1dc988a72de1e9e596578bca1ae85e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intellisense"></a>IntelliSense
 

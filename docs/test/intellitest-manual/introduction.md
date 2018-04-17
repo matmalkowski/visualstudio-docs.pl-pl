@@ -1,20 +1,20 @@
 ---
-title: "Omówienie | Narzędzie Test Microsoft IntelliTest dewelopera | Dokumentacja firmy Microsoft"
+title: Omówienie | Narzędzie Test Microsoft IntelliTest dewelopera | Dokumentacja firmy Microsoft
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 82b5c991bd1e8b98215513d006698aaac5cb0aa2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: c5e95091b9305e6802976d19570783459cc47179
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie programu Microsoft IntelliTest
 
@@ -76,7 +76,7 @@ Po skompilowany i wykonywane, IntelliTest generuje zestawu testów, takie jak na
 5. "Hello\0"
 6. "Hello\0\0"
 7. "Hello\0World!"
-8. "Hello World!"
+8. "Witaj świecie!"
 
 Odczyt [generowania testów jednostkowych z Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) zrozumieć, w którym są zapisywane wygenerowane testy. Kod wygenerowany test powinien zawierać testu, takie jak następujący kod:
 

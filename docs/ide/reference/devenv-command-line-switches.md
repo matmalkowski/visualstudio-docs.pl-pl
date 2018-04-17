@@ -1,8 +1,8 @@
 ---
-title: "Przełączniki wiersza polecenia devenv programu Visual Studio | Dokumentacja firmy Microsoft"
+title: Przełączniki wiersza polecenia devenv programu Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 02/28/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - switches, Devenv
 - command-line switches, Devenv
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b507ff8710e3257f2da61a32baa81a18441c3aff
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 3adde520b76de347da025c819ec39dce50660f2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 
@@ -61,15 +61,15 @@ Następujące przełączniki wiersza polecenia Wyświetl IDE i wykonać zadania 
 |Przełącznik wiersza polecenia|Opis|
 |-------------------------|-----------------|
 |[/ Polecenia](../../ide/reference/command-devenv-exe.md)|Uruchamia IDE i wykonuje określone polecenie.|
-|[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Ładuje plik wykonywalny C++ pod kontrolą debugera. Ten parametr nie jest dostępny dla plików wykonywalnych języka Visual Basic lub C#. Aby uzyskać więcej informacji, zobacz [automatyczne uruchamianie procesu w debugerze](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
+|[/ DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Ładuje plik wykonywalny C++ pod kontrolą debugera. Ten parametr nie jest dostępny dla plików wykonywalnych języka Visual Basic lub C#. Aby uzyskać więcej informacji, zobacz [automatyczne uruchamianie procesu w debugerze](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/ LCID lub/l](../../ide/reference/lcid-devenv-exe.md)|Określa domyślny język dla IDE. Jeśli określony język nie jest uwzględniony w instalacji programu Visual Studio, to ustawienie jest ignorowane.|
 |[Zaloguj](../../ide/reference/log-devenv-exe.md)|Powoduje uruchomienie programu Visual Studio i rejestruje wszystkie działania w pliku dziennika.|
 |[/ Run lub /r](../../ide/reference/run-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie.|
-|[/Runexit](../../ide/reference/runexit-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie, minimalizuje IDE, gdy rozwiązanie jest uruchamiany i zamyka IDE po rozwiązaniu zakończył działanie.|
+|[/ Runexit](../../ide/reference/runexit-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie, minimalizuje IDE, gdy rozwiązanie jest uruchamiany i zamyka IDE po rozwiązaniu zakończył działanie.|
 |[/ UseEnv](../../ide/reference/useenv-devenv-exe.md)|Powoduje, że IDE używać zmiennych środowiskowych PATH, INCLUDE i LIB dla kompilacji C++, a nie ustawienia określone w sekcji katalogi VC ++ **projekty** opcje w **opcje** okno dialogowe. Ten przełącznik jest instalowany z **tworzenia klasycznych aplikacji w języku C++** obciążenia. Aby uzyskać więcej informacji, zobacz [Ustawianie ścieżki i zmiennych środowiskowych dla kompilacji wiersza polecenia](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
-|[/Edit](../../ide/reference/edit-devenv-exe.md)|Otwiera określone pliki w działającej instancji tej aplikacji. Jeśli nie Brak uruchomionych wystąpień, uruchamia nowe wystąpienie z układem uproszczony okna.|
-|[/SafeMode](../../ide/reference/safemode-devenv-exe.md)|Visual Studio jest uruchamiany w trybie awaryjnym, ładuje tylko z domyślnego środowiska i usługami i wysłane wersje pakietów innych producentów.|
-|[/ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|Czyści wszystkie tagi SkipLoading dodane do VSPackages przez użytkowników, którzy chcą uniknąć obciążania problem VSPackages.|
+|[/ Edit](../../ide/reference/edit-devenv-exe.md)|Otwiera określone pliki w działającej instancji tej aplikacji. Jeśli nie Brak uruchomionych wystąpień, uruchamia nowe wystąpienie z układem uproszczony okna.|
+|[/ SafeMode](../../ide/reference/safemode-devenv-exe.md)|Visual Studio jest uruchamiany w trybie awaryjnym, ładuje tylko z domyślnego środowiska i usługami i wysłane wersje pakietów innych producentów.|
+|[/ ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|Czyści wszystkie tagi SkipLoading dodane do VSPackages przez użytkowników, którzy chcą uniknąć obciążania problem VSPackages.|
 |[/ Instalacji](../../ide/reference/setup-devenv-exe.md)|Wymusza Visual Studio, aby scalić metadanych zasobów, które opisują menu, paski narzędzi i grupy poleceń, z VSPackages wszystkie dostępne. To polecenie musi uruchomić jako administrator.|
 
 Następujące przełączniki wiersza polecenia nie są wyświetlane IDE.
@@ -79,11 +79,11 @@ Następujące przełączniki wiersza polecenia nie są wyświetlane IDE.
 |[/?](../../ide/reference/q-devenv-exe.md)|Wyświetla Pomoc dla przełączników devenv w **okno wiersza polecenia**.<br /><br /> **Devenv /?**|
 |[/ Kompilacji](../../ide/reference/build-devenv-exe.md)|Tworzy określonego rozwiązania lub projektu, zgodnie z konfiguracją określonego rozwiązania.<br /><br /> **/ Build myproj.csproj Devenv**|
 |[/ Clean](../../ide/reference/clean-devenv-exe.md)|Usuwa wszystkie pliki utworzone za pomocą polecenia kompilacji bez wpływu na pliki źródłowe.<br /><br /> **Devenv myproj.csproj / clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Tworzy rozwiązania, oraz pliki niezbędne do wdrożenia, zgodnie z konfiguracją rozwiązania.<br /><br /> **Devenv myproj.csproj / deploy**|
-|[/Diff](../../ide/reference/diff.md)|Porównuje dwa pliki. Przyjmuje cztery parametry: SourceFile, TargetFile, SourceDisplayName (opcjonalny), TargetDisplayName (opcjonalnie).|
+|[/ Wdrożenia](../../ide/reference/deploy-devenv-exe.md)|Tworzy rozwiązania, oraz pliki niezbędne do wdrożenia, zgodnie z konfiguracją rozwiązania.<br /><br /> **Devenv myproj.csproj / deploy**|
+|[/ Diff](../../ide/reference/diff.md)|Porównuje dwa pliki. Przyjmuje cztery parametry: SourceFile, TargetFile, SourceDisplayName (opcjonalny), TargetDisplayName (opcjonalnie).|
 |[/ Out](../../ide/reference/out-devenv-exe.md)|Pozwala określić plik błędy podczas kompilowania.<br /><br /> **/ Build myproj.csproj Devenv/out log.txt**|
-|[/Project](../../ide/reference/project-devenv-exe.md)|Projekt do kompilacji, czyszczenia lub wdrożenia. Ten przełącznik może zostać użyty tylko wtedy, gdy należy dostarczyć także/Build, / rebuild, / clean, lub / deploy — przełącznik.|
-|[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Określa konfigurację projektu do kompilacji lub wdrożenia. Ten przełącznik może zostać użyty tylko wtedy, gdy należy dostarczyć także przełącznika/Project.|
+|[/ Projektu](../../ide/reference/project-devenv-exe.md)|Projekt do kompilacji, czyszczenia lub wdrożenia. Ten przełącznik może zostać użyty tylko wtedy, gdy należy dostarczyć także/Build, / rebuild, / clean, lub / deploy — przełącznik.|
+|[/ ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Określa konfigurację projektu do kompilacji lub wdrożenia. Ten przełącznik może zostać użyty tylko wtedy, gdy należy dostarczyć także przełącznika/Project.|
 |[/ Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Czyści a potem kompiluje określonego rozwiązania lub projektu, zgodnie z konfiguracją określonego rozwiązania.|
 |[/ ResetSettings](../../ide/reference/resetsettings-devenv-exe.md)|Przywraca ustawienia domyślne programu Visual Studio. Opcjonalnie resetuje ustawienia do pliku określonego .vssettings.|
 |[/ Upgrade](../../ide/reference/upgrade-devenv-exe.md)|Uaktualnia plik określonego rozwiązania i wszystkie jego pliki projektu lub plik określony projekt do bieżącego formatu Visual Studio tych plików.|

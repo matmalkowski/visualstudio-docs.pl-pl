@@ -1,27 +1,23 @@
 ---
 title: Widok funkcji - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9dcf9ab34e5d0441f3c1ce3a47d5e148c9394d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af42e9bcaee2d2d7b25f292c5ad9834dfe9b5bcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="functions-view---contention-data"></a>Widok funkcji - dane Kontencji
 Raport funkcji wyświetlania list danych kontencji funkcje w zostały zablokowane przebiegu profilowania pochodzący z wykonania podczas przebiegu profilowania.  

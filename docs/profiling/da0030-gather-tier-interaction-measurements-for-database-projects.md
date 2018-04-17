@@ -1,27 +1,25 @@
 ---
-title: "DA0030: Gromadzenie pomiarów interakcji warstwowej dla projektów bazy danych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'DA0030: Gromadzenie pomiarów interakcji warstwowej dla projektów bazy danych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0030
 - vs.performance.rules.DA0030
 - vs.performance.30
 ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a41357670b7f9c634de57f66bd292320d354dbc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a6345f4ff0e53fe251130d2ead8fe7ac974ec5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Gromadzenie pomiarów interakcji warstwowej dla projektów bazy danych
 |||  

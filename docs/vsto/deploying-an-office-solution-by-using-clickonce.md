@@ -1,12 +1,10 @@
 ---
-title: "Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Jeśli korzystasz z technologii ClickOnce, można wdrożyć rozwiązania pakietu Office w mniejszej liczby kroków. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym w sytuacjach, gdy na jednym komputerze rozwiązania będzie używało kilka osób, warto rozważyć użycie Instalatora Windows (pliku .msi).  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  Aby uzyskać więcej informacji na temat sposobu wdrażania rozwiązania do pakietu Office, tworząc plik Instalatora Windows, zobacz [wdrażania rozwiązania do pakietu Office przy użyciu Instalatora Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a>Publikowanie rozwiązania  
- Rozwiązania można opublikować za pomocą **Kreator publikowania** lub **projektanta projektu**. W tej procedurze użyjesz **projektanta projektu** ponieważ zapewnia pełny zestaw opcji publikowania. Zobacz [publikowania kreatora &#40; programowanie Office w Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Publikowanie rozwiązania  
+ Rozwiązania można opublikować za pomocą **Kreator publikowania** lub **projektanta projektu**. W tej procedurze użyjesz **projektanta projektu** ponieważ zapewnia pełny zestaw opcji publikowania. Zobacz [Kreator publikowania &#40;programowanie Office w Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Aby opublikować rozwiązanie  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. Skopiuj pliki rozwiązania do lokalizacji instalacji określonej wcześniej w tej procedurze.  
   
-##  <a name="Trust"></a>Zdecyduj, jak chcesz udzielić zaufania do rozwiązania  
+##  <a name="Trust"></a> Zdecyduj, jak chcesz udzielić zaufania do rozwiązania  
  Zanim rozwiązanie będzie można uruchomić na komputerach użytkowników, administrator musi udzielić zaufania albo użytkownicy muszą odpowiedzieć na monit o udzielenie zaufania podczas instalacjo rozwiązania. Aby administrator przyznał zaufanie rozwiązaniu, musi podpisać manifest za pomocą certyfikatu identyfikującego znanego i zaufanego wydawcę. Zobacz [ufające rozwiązania przez podpisywanie aplikacji i wdrażania manifesty](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Jeśli wdrażasz dostosowania poziomie dokumentu i chcesz umieścić dokument do folderu na komputerze użytkownika lub udostępnić dokument w witrynie programu SharePoint, upewnij się, że Office ufa lokalizację dokumentu. Zobacz [udzielanie zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="Helping"></a>Pomaganie użytkownikom zainstalować rozwiązania  
+##  <a name="Helping"></a> Pomaganie użytkownikom zainstalować rozwiązania  
  Użytkownicy mogą zainstalować rozwiązanie przez uruchomienie programu instalacyjnego, otwarcie manifestu wdrażania lub — w przypadku dostosowania na poziomie dokumentu — bezpośrednie otwarcie dokumentu. Według najlepszych praktyk rozwiązanie należy instalować przy użyciu programu instalacyjnego. Dwa podejścia nie upewnij się, że wstępnie wymagane oprogramowanie zostało zainstalowane. Jeśli użytkownicy chcą otwierać dokument z lokalizacji instalacji, muszą ją dodać do listy zaufanych lokalizacji w Centrum zaufania w aplikacji pakietu Office.  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Otwieranie dokumentu z dostosowaniem na poziomie dokumentu  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Aby zmiany zaczęły obowiązywać, należy ponownie uruchomić usługę publikowania w sieci World Wide Web lub poczekać na wykonanie cyklu odświeżania w procesie roboczym. Należy następnie opróżnić pamięć podręczną dysku w przeglądarce i spróbować ponownie otworzyć plik .vsto.  
   
-##  <a name="Put"></a>Umieścić dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowań na poziome dokumentu)  
+##  <a name="Put"></a> Umieścić dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowań na poziome dokumentu)  
  Możesz skopiować dokument rozwiązania na komputerze użytkownika końcowego dla nich przy tworzeniu akcji po wdrożeniu. Dzięki temu użytkownik nie musi ręcznie skopiować dokument z lokalizacji instalacji do komputera po zainstalowaniu rozwiązania. Należy utworzyć klasę, która definiuje akcję po wdrożeniu, tworzenie i publikowanie rozwiązania zmodyfikuj manifest aplikacji i ponowne podpisywanie manifestu aplikacji i wdrażania.  
   
  W poniższych procedurach założono, że nazwa projektu to **ExcelWorkbook** i opublikuj rozwiązania pod kątem **C:\publish** katalogu na komputerze.  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Skopiuj plik ExcelWorkbook.vsto **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ katalogu.  
   
-##  <a name="SharePoint"></a>Umieścić dokumentu rozwiązanie na serwerze, na którym działa program SharePoint (tylko dostosowań na poziome dokumentu)  
+##  <a name="SharePoint"></a> Umieścić dokumentu rozwiązanie na serwerze, na którym działa program SharePoint (tylko dostosowań na poziome dokumentu)  
  Dostosowanie na poziomie dokumentu można opublikować użytkownikom końcowym za pomocą programu SharePoint. Gdy użytkownicy przejdą do witryny programu SharePoint i otworzą dokument, środowisko uruchomieniowe automatycznie zainstaluje rozwiązanie z udostępnionego folderu sieciowego na komputerze lokalnym. Po lokalnym zainstalowaniu rozwiązania dostosowanie nadal będzie działać, nawet, jeśli dokument skopiowano w inne miejsce, na przykład na pulpit.  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Aby umieścić dokument na serwerze z programem SharePoint  
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              Gdy użytkownicy otwierają dokument z poziomu witryny programu SharePoint, następuje otwarcie dokumentu i zainstalowanie dostosowania. Użytkownicy mogą wtedy skopiować dokument na swoje komputery. Dostosowanie będzie nadal działać, ponieważ właściwości w dokumencie wskazują jego lokalizację sieciową.  
   
-##  <a name="Custom"></a>Tworzenie niestandardowego Instalatora  
+##  <a name="Custom"></a> Tworzenie niestandardowego Instalatora  
  Można utworzyć niestandardowego Instalatora dla rozwiązań pakietu Office, a nie za pomocą programu instalacyjnego, który jest tworzony podczas publikowania rozwiązania. W niestandardowym instalatorze instalacja może być inicjowana przez skrypt logowania albo plik wsadowy może instalować rozwiązanie bez udziału użytkownika. Scenariusze te działają najlepiej, jeśli na komputerach użytkowników końcowych są już zainstalowane wstępnie wymagane składniki.  
   
  W ramach procesu niestandardowej instalacji należy wywołać narzędzie instalatora rozwiązań dla pakietu Office (VSTOInstaller.exe), który domyślnie znajduje się w następującej lokalizacji:  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|Nie można odinstalować rozwiązanie.|  
 |-500|Operacja została anulowana, ponieważ nie można zainstalować lub odinstalować rozwiązania albo nie można pobrać manifestu wdrażania.|  
   
-##  <a name="Update"></a>Publikowanie aktualizacji  
+##  <a name="Update"></a> Publikowanie aktualizacji  
  Aby zaktualizować rozwiązania, można go opublikować ponownie za pomocą **projektanta projektu** lub **Kreator publikowania**, a następnie skopiuj zaktualizowane rozwiązanie do lokalizacji instalacji. Podczas kopiowania plików do lokalizacji instalacji trzeba koniecznie zaznaczyć opcję zastąpienia poprzednich plików.  
   
  Przy następnym uruchomieniu sprawdza rozwiązania aktualizacji go zawarto a automatycznie ładować nowej wersji.  
   
-##  <a name="Location"></a>Zmień lokalizację instalacji rozwiązania  
+##  <a name="Location"></a> Zmień lokalizację instalacji rozwiązania  
  Po opublikowaniu rozwiązania można dodać lub zmienić ścieżkę instalacji. Często powody takiej zmiany są następujące:  
   
 -   Program instalacyjny został skompilowany przed ustaleniem ścieżki instalacji.  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Uruchom program instalacyjny bez parametru /url. Rozwiązanie zostanie zainstalowane w podanej lokalizacji.  
   
-##  <a name="Roll"></a>Wycofywanie rozwiązania do wcześniejszej wersji  
+##  <a name="Roll"></a> Wycofywanie rozwiązania do wcześniejszej wersji  
  Wycofanie rozwiązania powoduje, że użytkownicy wrócą do korzystania z jego starszej wersji.  
   
 #### <a name="to-roll-back-a-solution"></a>Aby wycofać rozwiązanie  

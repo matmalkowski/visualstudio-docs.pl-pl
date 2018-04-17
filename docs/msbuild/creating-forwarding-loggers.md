@@ -2,26 +2,22 @@
 title: Tworzenie przekazywania rejestratorów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
-caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd9afd2c2ac4e7dab63ec94392f83c8268ea6ed
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 013a6f7484f5815841e41c02dc46a26a23a53596
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-forwarding-loggers"></a>Tworzenie przekazywania rejestratorów
 Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając wybranie zdarzenia, które chcesz monitorować podczas kompilacji projektów w systemie wieloprocesorowym. Przez włączenie przekazywania rejestratorów, można zapobiec niechciane zdarzenia z przeciążając uda się rozpoznać rejestratora centralnego, spowalniając czas kompilacji i przeładowania dziennika.  

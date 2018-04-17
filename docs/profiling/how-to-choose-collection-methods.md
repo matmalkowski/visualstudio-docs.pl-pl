@@ -1,27 +1,24 @@
 ---
 title: 'Porady: Wybieranie metod kolekcji | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b63d3492f7a5af940507febfca32161c075b863
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: b48095fc2a5ed3c827c3fe109db93c95ab45177d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-choose-collection-methods"></a>Porady: wybieranie metod kolekcji
 
@@ -38,7 +35,7 @@ Można użyć sesję wydajności **metody** właściwości w celu określenia na
 |Opcja|Opis|
 |------------|-----------------|
 |**Próbkowanie Procesora**|Zbieranie statystyk aplikacji, które są przydatne do początkowej analizy i analizować problemy wykorzystanie procesora CPU.|
-|**Instrumentation**|Zbiera dane chronometrażu, które są przydatne do ukierunkowanej analizy i analizowania problemów z wydajnością wejścia/wyjścia.|
+|**Instrumentacji**|Zbiera dane chronometrażu, które są przydatne do ukierunkowanej analizy i analizowania problemów z wydajnością wejścia/wyjścia.|
 |**Alokacja pamięci platformy .NET**|Zbiera [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] danych alokacji pamięci przy użyciu metoda profilowania próbkowania.|
 |**Współbieżność**|Zbiera dane kontencji zasobów liczbowych.|
 

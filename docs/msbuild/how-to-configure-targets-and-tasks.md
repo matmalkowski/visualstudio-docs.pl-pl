@@ -1,24 +1,20 @@
 ---
-title: "Porady: Konfigurowanie obiektów docelowych i zadań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Konfigurowanie obiektów docelowych i zadań | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cb7a1234e6fafe9c2f9f3b795e05424c25dfb7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6b6416ae909d126ceafc83e9aa22eb872a8d619a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Porady: konfigurowanie obiektów docelowych i zadań
 Do uruchomienia w środowisku, które ich elementami docelowymi, niezależnie od środowiska na komputerze deweloperskim można ustawić wybranego zadania programu MSBuild. Na przykład gdy używasz 64-bitowym komputerze do tworzenia aplikacji danej architektury 32-bitowych obiektów docelowych wybranych zadań są uruchamiane w procesie 32-bitowych.  
@@ -105,7 +101,7 @@ Do uruchomienia w środowisku, które ich elementami docelowymi, niezależnie od
  W przeciwieństwie do innych parametrów zadania `MSBuildRuntime` i `MSBuildArchitecture` nie są widoczne dla samo zadanie.  Można zapisać zadania, które jest świadome kontekst, w której jest uruchamiane, musisz przetestować kontekście wywoływania programu .NET Framework lub właściwości kompilacji służy do przekazywania informacji kontekstu za pomocą innych parametrów zadania.  
   
 > [!NOTE]
->  `UsingTask`atrybuty można skonfigurować przy użyciu właściwości zestaw narzędzi i środowiska.  
+>  `UsingTask` atrybuty można skonfigurować przy użyciu właściwości zestaw narzędzi i środowiska.  
   
  `MSBuildRuntime` i `MSBuildArchitecture` parametry zapewniają najbardziej elastyczny sposób, aby ustawić kontekst docelowy, ale także najbardziej ograniczonym w zakresie.  Z jednej strony ponieważ są ustawione na wystąpienie zadania, sama i nie są oceniane, aż zadanie zostanie uruchomiony, mogą dziedziczyć wartości z pełnego zakresu właściwości dostępne pod adresem zarówno w czasie oceny, jak i w czasie kompilacji.  Z drugiej strony parametry te dotyczą tylko konkretne wystąpienie zadań w określonej lokalizacji docelowej.  
   

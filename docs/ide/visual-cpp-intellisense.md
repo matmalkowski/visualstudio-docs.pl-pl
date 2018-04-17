@@ -1,23 +1,20 @@
 ---
 title: Visual C++ IntelliSense | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: bfebee340a880cdef1b8721bd5f57e3be5db8e47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense dla programu Visual C++
 
@@ -39,7 +36,7 @@ Po ponownym uruchomieniu, wpisując słowa kluczowego, typu, funkcji, nazwa zmie
 
 Listę ikon i ich znaczenie, zobacz [Widok klas i przeglądarka obiektów ― ikony](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C &43; &#43; Okno programu Word zakończenia](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43; &#43; okna całe słowo](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
 Lista elementów członkowskich jest wywoływana po raz pierwszy pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli naciśniesz **Ctrl**+**J** po, który zawiera wszystkie elementy członkowskie niezależnie od dostępności. Jeśli wywołanie raz trzeci go jeszcze większą listę elementów programu jest wyświetlany. Można wyłączyć listy członków w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
 
@@ -61,7 +58,7 @@ Po umieszczeniu kursora myszy na zmienną małych okno jest wyświetlane w tekś
 
 Zygzaki pod elementem programu (zmiennej, słowo kluczowe, nawias klamrowy, wpisz nazwę i tak dalej) wywołać uwagę błąd lub potencjalnych błędów w kodzie. Zielony wężyk pojawia się podczas pisania deklaracja przekazująca dalej w celu odnotowania, konieczność zapisania implementacji. Purpurowa wężyk w projekcie udostępnionym jest wyświetlany błąd w kodzie, który nie jest obecnie aktywny, na przykład podczas pracy w kontekście systemu Windows, ale coś wprowadź, która byłaby błędu w kontekście systemu Android. Czerwona falista wskazuje błąd kompilatora lub ostrzeżenie w aktywnej kod, który należy rozwiązać.
 
-![Visual C &43; &#43; Błąd zygzaki](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43; &#43; zygzaki sygnalizujące błędy](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
 
 ### <a name="code-colorization-and-fonts"></a>Kolorowanie kodu i czcionek
 
@@ -99,7 +96,7 @@ Należy zauważyć, że:
 
 Po otwarciu pojedynczego pliku poza żadnego projektu nadal otrzymywać IntelliSense. Można włączyć lub wyłączyć określonej funkcji IntelliSense w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++**  >  **Zaawansowane**. Aby skonfigurować IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików poza projektami** sekcji.
 
-![Visual C &43; &#43; pojedynczy plik intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43; &#43; intellisense pojedynczy plik](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
 Domyślnie IntelliSense używane tylko standardowe obejmują pojedynczy plik katalogów można znaleźć plików nagłówka. Aby dodać dodatkowe katalogi, otwórz menu skrótów w węźle rozwiązania i Dodaj katalog na **debugowania kodu źródłowego** listy, jak przedstawiono na poniższej ilustracji:
 

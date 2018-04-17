@@ -1,26 +1,23 @@
 ---
-title: "Instalowanie narzędzi R dla programu Visual Studio | Dokumentacja firmy Microsoft"
-description: "Jak zainstalować narzędzia R dla programu Visual Studio w programie Visual Studio 2017 i programu Visual Studio 2015, łącznie z instalacji w trybie offline."
-ms.custom: 
+title: Instalowanie narzędzi R
+description: Jak zainstalować narzędzia R dla programu Visual Studio w programie Visual Studio 2017 i programu Visual Studio 2015, łącznie z instalacji w trybie offline.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
 dev_langs:
 - R
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: e996add7a17a60673fe5e6323be9c13e4b0fb785
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Instalowanie narzędzi R dla programu Visual Studio
 
@@ -62,7 +59,7 @@ Z programem Visual Studio 2015 musisz zainstalować interpreter języka R i narz
 
 RTVS wymaga 64-bitowej instalacji r wersji 3.2.1 lub nowszego z co najmniej jednego z następujących źródeł:
 
-- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Otwórz program Microsoft R](https://mran.microsoft.com/download/)
 - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
 - [SIECI CRAN R](https://cran.r-project.org/bin/windows/base/)
 

@@ -1,27 +1,23 @@
 ---
-title: "Widok drzewa wywołań - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widok drzewa wywołań - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c81f9b5ff7d0bad9c0a05bd4b43374ac9451cf1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0beae2d3f95fdf06120898eb7ec75731c69a35d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Widok drzewa wywołań - dane próbkowania pamięci .NET
 Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji. Korzeń drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcja zawiera wszystkie funkcje, które mu i danych alokacji pamięci .NET o wywołania tych funkcji.  
@@ -46,7 +42,7 @@ Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały
 |**Nazwa funkcji**|Pełna nazwa funkcji.|  
 |**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres funkcji.|  
-|**Poziom**|Głębokość funkcji w drzewie wywołań.|  
+|**poziom**|Głębokość funkcji w drzewie wywołań.|  
 |**Alokacje włącznie**|Liczba obiektów, które zostały przydzielone wystąpień tej funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Liczba ta obejmuje przydziałów, które zostały dokonane za pomocą funkcji podrzędnych.|  
 |**% Alokacji włącznie**|Procent wszystkich obiektów, które zostały utworzone w przebiegu, który profilowania były alokacji włącznie tej funkcji.|  
 |**Wyłączny alokacji**|Liczba obiektów, które zostały przydzielone wystąpień tej funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Ta liczba nie obejmuje przydziałów, które zostały dokonane za pomocą funkcji podrzędnych.|  

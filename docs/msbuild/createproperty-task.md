@@ -2,11 +2,8 @@
 title: CreateProperty — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - CreateProperty task [MSBuild]
 - MSBuild, CreateProperty task
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
-caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1dbd799bd709347bb0c60b34a7ebb19546b6f54
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 461e2111f81919e7f6da72e540d8becfb9ed1c2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="createproperty-task"></a>CreateProperty — Zadanie
 Wypełnia właściwości z wartości przekazane. Dzięki temu wartości do skopiowania z jedną właściwość lub ciągu na inny.  

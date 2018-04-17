@@ -1,12 +1,9 @@
 ---
-title: Touch Task | Microsoft Docs
+title: Touch — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Touch
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, Touch task
 - Touch task [MSBuild]
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
-caps.latest.revision: 17
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81b9f1c539265453d474c1d7998de7e7bc78af4d
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 1d484340e4823dc73898f3ab0eaf8afffe1c1c18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="touch-task"></a>Touch — Zadanie
 Ustawia czas dostępu i modyfikacji plików.  

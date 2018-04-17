@@ -1,10 +1,8 @@
 ---
-title: "Tworzenie diagramów zależności z kodu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie diagramów zależności z kodu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, dependency diagrams
 - dependency diagrams
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18477479255ff7af8216d093830c6c0d60fa50dc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9acc63c676463743ad598736f1d095f0ced0b388
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności w kodzie
 
@@ -32,7 +30,7 @@ Diagram zależności umożliwia organizowanie elementów rozwiązania Visual Stu
 
 [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
 
-##  <a name="CreateDiagram"></a>Utwórz diagram zależności
+##  <a name="CreateDiagram"></a> Utwórz diagram zależności
 
 Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera projekt modelowania.
 
@@ -78,7 +76,7 @@ Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera 
 
 ![Diagram zależności wygenerowane z mapy kodu](media/dependency-validation-01.png)
   
-##  <a name="CreateLayers"></a>Tworzenie warstw z artefaktów  
+##  <a name="CreateLayers"></a> Tworzenie warstw z artefaktów  
  Warstwy możesz tworzyć z elementów rozwiązania Visual Studio, takich jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Powoduje to automatyczne tworzenie łączy między warstwami i elementami, uwzględniając je w procesie walidacji warstwy.  
   
  Możesz również połączyć warstwy z elementami, które nie obsługują walidacji, takimi jak dokumenty programu Word lub prezentacji programu PowerPoint, tak aby można było skojarzyć warstwy ze specyfikacjami lub planami. Możesz również połączyć warstwy z plikami projektów współużytkowanymi przez wiele aplikacji, ale proces walidacji nie uwzględni warstw wyświetlanych z nazwami rodzajowymi, takimi jak „Warstwa 1” i „Warstwa 2”.  
@@ -107,7 +105,7 @@ Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera 
   
 -   Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.  
   
-##  <a name="Managing"></a>Zarządzanie łącza między warstwami i artefaktów  
+##  <a name="Managing"></a> Zarządzanie łącza między warstwami i artefaktów  
   
 1.  Na diagramie zależności, otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza**.  
   
@@ -123,7 +121,7 @@ Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera 
 |Tworzenie nowej warstwy z istniejącego łącza artefaktu|Przeciągnij łącze artefaktu do pustego obszaru na diagramie.|  
 |Sprawdź, czy połączony artefakt obsługuje sprawdzenia poprawności względem diagram zależności.|Przyjrzyj się **weryfikacji obsługuje** kolumny łącza artefaktu.|  
   
-##  <a name="Discovering"></a>Odtwarzanie istniejącej zależności  
+##  <a name="Discovering"></a> Odtwarzanie istniejącej zależności  
  Zależność istnieje wszędzie tam, gdzie artefakt, który jest skojarzony z jedną warstwą zawiera odwołanie do artefaktu skojarzonego z inną warstwą. Na przykład klasa w jednej warstwie deklaruje zmienną, która zawiera klasę w innej warstwie. Możesz odtwarzać istniejące zależności dla artefaktów, które są połączone z warstwami na diagramie.  
   
 > [!NOTE]
@@ -133,7 +131,7 @@ Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera 
   
  Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.  
   
-##  <a name="EditDependencies"></a>Edycja warstw i zależności, aby pokazać projektowi  
+##  <a name="EditDependencies"></a> Edycja warstw i zależności, aby pokazać projektowi  
  Aby opisano zmiany, które mają być system lub docelowej architektury, należy edytować diagram zależności:  
   
 |**Aby**|**Wykonaj te kroki**|  
@@ -144,10 +142,10 @@ Przed utworzeniem diagramu zależności, upewnij się, że rozwiązanie zawiera 
 |Określanie, że artefakty skojarzone z warstwą nie mogą należeć do określonych przestrzeni nazw|Typ przestrzeni nazw na warstwie **zabronione przestrzenie nazw** właściwości. Użyj średnika (**;**) do oddzielania przestrzenie nazw.|  
 |Określanie, że artefakty skojarzone z warstwą muszą należeć do jednej z określonych przestrzeni nazw|Typ przestrzeni nazw na warstwie **wymagane obszary nazw** właściwości. Użyj średnika (**;**) do oddzielania przestrzenie nazw.|  
   
-##  <a name="EditLayout"></a>Zmień sposób wyświetlania elementów na diagramie  
+##  <a name="EditLayout"></a> Zmień sposób wyświetlania elementów na diagramie  
  Możesz zmieniać rozmiar, kształt, kolor i położenie warstw lub kolor zależności, edytując ich właściwości.  
   
-##  <a name="Codemaps"></a>Odnajdywanie wzorców i zależności w mapie kodu  
+##  <a name="Codemaps"></a> Odnajdywanie wzorców i zależności w mapie kodu  
  Podczas tworzenia diagramów zależności, można również tworzyć **code map**. Te diagramy ułatwia odnajdywanie wzorców i zależności podczas eksplorowania kodu. Użyj Eksploratora rozwiązań, widoku klasy lub przeglądarki obiektów do eksplorowania zestawy, obszary nazw i klasy — które często odnoszą się również z istniejącymi warstwami. Aby uzyskać więcej informacji na temat mapy kodu zobacz:  
   
 -   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  

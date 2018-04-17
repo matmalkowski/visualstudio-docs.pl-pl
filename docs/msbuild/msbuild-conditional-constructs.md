@@ -1,12 +1,9 @@
 ---
 title: Konstrukcje warunkowe MSBuild | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - Otherwise Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f018ec733248f6663e2cf2292599df9d2afdc81c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e1e642cf3e4578d42489578bdafb15134276c6ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia mechanizm dla dowolnego / lub przetwarzania z [wybierz](../msbuild/choose-element-msbuild.md), [podczas](../msbuild/when-element-msbuild.md), i [w przeciwnym razie](../msbuild/otherwise-element-msbuild.md) elementów.  
@@ -40,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="using-the-choose-element"></a>Przy użyciu Choose — Element  
  `Choose` Element zawiera szereg `When` elementy o `Condition` atrybuty, które są sprawdzane w kolejności od góry do dołu, dopóki jeden daje w wyniku `true`. Jeśli istnieje więcej niż jedna `When` daje w wyniku element `true`, tylko pierwszy z nich jest używana. `Otherwise` Elementu, jeśli istnieje, zostanie obliczone w razie żadnego warunku w `When` daje w wyniku element `true`.  
   
- `Choose`elementy mogą być używane jako elementy podrzędne `Project`, `When` i `Otherwise` elementy. `When`i `Otherwise` elementy mogą mieć `ItemGroup`, `PropertyGroup`, lub `Choose` elementy podrzędne.  
+ `Choose` elementy mogą być używane jako elementy podrzędne `Project`, `When` i `Otherwise` elementy. `When` i `Otherwise` elementy mogą mieć `ItemGroup`, `PropertyGroup`, lub `Choose` elementy podrzędne.  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie użyto `Choose` i `When` elementy albo / lub przetwarzania. W zależności od wartości są ustawione właściwości i elementów dla projektu `Configuration` właściwości.  

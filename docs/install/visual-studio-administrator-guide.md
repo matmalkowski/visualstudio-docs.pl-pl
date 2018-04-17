@@ -3,11 +3,8 @@ title: Przewodnik administratora w usłudze Visual Studio | Dokumentacja firmy M
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
 ms.custom: ''
 ms.date: 05/15/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -19,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a695adfed363cebf693978e7ef3bca7904beff
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: e202e28304ff19f93b085a74b191fe017601ec5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Przewodnik administratora w usłudze Visual Studio 2017
 

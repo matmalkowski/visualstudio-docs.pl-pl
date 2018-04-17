@@ -1,13 +1,10 @@
 ---
 title: Widok podsumowania | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - profiling tools, Summary view
 - Summary view
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d10c3c69cccfe6b91d15d6cac6e5a599c766481
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcji lub obiektów do uruchomienia profilowania. Ten widok udostępnia oś czasu wykresu i dwa lub więcej list najdroższych funkcji lub obiektów oparte na metryk wydajności metodę profilowania. Dane w tym widoku zależy od metody profilowania, która została użyta (próbkowania, Instrumentacji lub współbieżności) i czy został zebrany alokacji pamięci .NET.  

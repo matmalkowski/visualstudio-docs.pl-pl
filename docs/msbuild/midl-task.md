@@ -2,11 +2,8 @@
 title: Midl — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 69b46143ed997e4f23600ff3a5d389adc62fa62e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL) midl.exe. Aby uzyskać więcej informacji, zobacz "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
@@ -96,7 +92,7 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
     |-----------|--------------------------|  
     |**Podpisany**|**/CHAR podpisany**|  
     |**Bez znaku**|**/CHAR bez znaku**|  
-    |**Ascii**|**/CHAR ascii7**|  
+    |**ASCII**|**/CHAR ascii7**|  
   
      Aby uzyskać więcej informacji, zobacz **/char** opcji "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
@@ -234,7 +230,7 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
      Aby uzyskać więcej informacji, zobacz **/iid** opcji "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **LocaleID**  
+-   **Identyfikator ustawień regionalnych**  
   
      Opcjonalne **int** parametru.  
   
@@ -306,7 +302,7 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<none>*|  
+    |**NotSet**|*\<Brak >*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -340,14 +336,14 @@ Zawijania narzędzie kompilatora Microsoft interfejsu Definition Language (MIDL)
   
     |Wartość|Opcja wiersza polecenia|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<none>*|  
+    |**NotSet**|*\<Brak >*|  
     |**Win32**|**/ ENV win32**|  
     |**Itanium**|**/ ENV ia64**|  
-    |**X64**|**/env x64**|  
+    |**X64**|**/ ENV x64**|  
   
      Aby uzyskać więcej informacji, zobacz **/ENV** opcji "Odwołania do wiersza polecenia MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
--   **TrackerLogDirectory**  
+-   **Katalog TrackerLogDirectory**  
   
      Opcjonalne `String` parametru.  
   

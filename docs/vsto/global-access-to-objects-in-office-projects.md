@@ -1,12 +1,10 @@
 ---
-title: "Globalny dostęp do obiektów w projektach pakietu Office | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Globalny dostęp do obiektów w projektach pakietu Office | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bdfc9b62e6dc94560693c072526e1f2989ddec15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globalny dostęp do obiektów w projektach pakietu Office
   Podczas tworzenia projektu pakietu Office Visual Studio automatycznie generuje klasę o nazwie `Globals` w projekcie. Można użyć `Globals` klasę, aby uzyskiwać dostęp do wielu elementów innego projektu w czasie wykonywania z dowolnego kodu w projekcie.  
@@ -46,9 +45,9 @@ ms.lasthandoff: 01/10/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="how-to-use-the-globals-class"></a>Sposób użycia klasy globalne  
- `Globals`to statyczny klasa, która przechowuje odwołania do niektórych elementów w projekcie. Za pomocą `Globals` klasy, są dostępne następujące elementy kodu w projekcie w czasie wykonywania:  
+ `Globals` to statyczny klasa, która przechowuje odwołania do niektórych elementów w projekcie. Za pomocą `Globals` klasy, są dostępne następujące elementy kodu w projekcie w czasie wykonywania:  
   
--   `ThisWorkbook` i `Sheet`  *n*  klas w projekcie skoroszytu lub szablon programu Excel. Dostęp do tych obiektów przy użyciu `Globals.ThisWorkbook` i `Sheet`  *n*  właściwości.  
+-   `ThisWorkbook` i `Sheet` *n* klas w projekcie skoroszytu lub szablon programu Excel. Dostęp do tych obiektów przy użyciu `Globals.ThisWorkbook` i `Sheet` *n* właściwości.  
   
 -   `ThisDocument` Klasy w projekcie dokument lub szablon programu Word. Dostęp do obiektu przy użyciu `Globals.ThisDocument` właściwości.  
   

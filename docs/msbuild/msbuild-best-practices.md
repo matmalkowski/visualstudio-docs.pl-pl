@@ -1,27 +1,23 @@
 ---
-title: "MSBuild najlepszych rozwiązań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: MSBuild najlepszych rozwiązań | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - best practices, MSBuild
 - MSBuild, best practices
 ms.assetid: 90ef8693-e921-410a-a377-fe4d13f58c48
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c2a1e55c9a43a8e94ed577fc8de135d76e12da5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 98d85a336a1741f6495959249fe605332d85aac2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-best-practices"></a>Najlepsze praktyki w programie MSBuild
 Zaleca się następujące najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild:  

@@ -1,23 +1,21 @@
 ---
-title: "Krok 8: Wpisywanie kodu pokazu z obsługi zdarzeń obrazu przycisku | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Krok 8: Wpisywanie kodu pokazu z obsługi zdarzeń obrazu przycisku | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
-caps.latest.revision: "24"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b7c76492e3d07b0c32edb4ea91a5b3c152f1a206
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d72997e827db9842761aadbb70a7e464995d2d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Wpisywanie kodu dla obsługi zdarzeń pokazywania przycisków obrazowych
 W tym kroku należy **Pokaż obraz** przycisk pracy w następujący sposób:  
@@ -28,7 +26,7 @@ W tym kroku należy **Pokaż obraz** przycisk pracy w następujący sposób:
   
  IDE ma zaawansowane narzędzie IntelliSense, która ułatwia pisanie kodu. Po wprowadzeniu kodu IDE otwiera okno z sugerowanych zakończeń częściowe wyrazy, które należy wprowadzić. Próbuje określić, co chcesz zrobić dalej i automatycznie przejdzie do ostatniego elementu, który możesz wybrać z listy. Można użyć w górę lub strzałkę w dół, aby przenieść na liście, lub można zachować wpisywanie listy, aby ograniczyć zakres pozycji. Po wyświetleniu wybór, które chcesz wybrać klawisz TAB, aby go wybrać. Alternatywnie możesz zignorować sugestii, jeśli nie są wymagane.  
   
- ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 4 wideo](http://go.microsoft.com/fwlink/?LinkId=205215) lub [samouczek 1: Tworzenie podglądu obrazów w C# — wideo 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 4 wideo](http://go.microsoft.com/fwlink/?LinkId=205215) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Do pisania kodu dla programu obsługi zdarzeń obraz przycisku  
   
@@ -36,12 +34,12 @@ W tym kroku należy **Pokaż obraz** przycisk pracy w następujący sposób:
   
 2.  Typ `i` na pusty wiersz między dwa nawiasy klamrowe {}. (W języku Visual Basic, wpisz w pustym wierszu między prywatnego podprocedur.. i End Sub.) **IntelliSense** zostanie otwarte okno, jak pokazano na poniższej ilustracji.  
   
-     ![IntelliSense w języku Visual C & 35; Kod](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
+     ![IntelliSense z Visual C&#35; kod](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
 IntelliSense z kodem Visual C#  
   
 3.  **IntelliSense** okna powinna wyróżnianie wyraz **Jeśli**. (Jeśli nie, wprowadź jedną małą literę `f`, i będzie ono.) Zwróć uwagę, jak trochę *tooltip* obok pola **IntelliSense** z opisu, zostanie wyświetlone okno **fragment kodu dotyczący if — instrukcja**. (W języku Visual Basic, etykietkę narzędzia również stwierdza, że jest fragment, ale treść nieco inne.) Aby użyć tego fragment, dlatego wybierz klawisz TAB, aby wstawić **Jeśli** w kodzie. Następnie wybierz klawisz TAB, aby ponownie użyć **Jeśli** fragment kodu. (W przypadku wybrania w innym miejscu i **IntelliSense** okna zniknął, backspace za pośrednictwem **i** i ponownie, wpisz i **IntelliSense** ponownie zostanie otwarte okno.)  
   
-     ![& Visual C# 35; Kod](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Visual C&#35; kod](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Kod Visual C#  
   
 4.  Następnie użyj IntelliSense, aby wprowadzić więcej kod, aby otworzyć **Otwieranie pliku** okno dialogowe. Jeśli użytkownik wybrał **OK** przycisku, element PictureBox ładuje plik wybranego użytkownika. Poniższe kroki pokazują, jak wprowadzić kod i wiele kroków, ale jest kilka naciśnięcia klawiszy:  
