@@ -2,12 +2,9 @@
 title: Zdalne debugowanie C# i VB projektu programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a7c6892eb43191c69608e66b05f8177777e3e006
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Zdalne debugowanie projektu C# lub Visual Basic w programie Visual Studio
 Debugowanie aplikacji Visual Studio, która została wdrożona na innym komputerze, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, skonfigurować projekt do nawiązania połączenia z komputerem zdalnym z programu Visual Studio, a następnie uruchom aplikację.
@@ -50,14 +46,14 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 i nowsze (nie phone) i wer
 > [!TIP]
 > W niektórych scenariuszach może być najbardziej efektywny do uruchamiania zdalnego debugera z udziału plików. Aby uzyskać więcej informacji, zobacz [uruchamiania zdalnego debugera z udziału plików](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Konfigurowanie zdalnego debugera
+## <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Jeśli należy dodać uprawnienia dla dodatkowych użytkowników do zmiany trybu uwierzytelniania lub numer portu dla zdalnego debugera, zobacz [skonfigurować debugera zdalnego](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a>Zdalne debugowanie projektu
+## <a name="remote_csharp"></a> Zdalne debugowanie projektu
 Debuger nie może wdrożyć Visual C# lub Visual Basic aplikacje klasyczne z komputerem zdalnym, ale nadal można je zdalnie w następujący sposób debugowania. W poniższej procedurze przyjęto, że chcesz debugować go na komputerze o nazwie **MJO DL**, jak pokazano na poniższej ilustracji.
   
 1.  Utwórz projekt WPF o nazwie **MyWpf**.  
@@ -97,7 +93,7 @@ Debuger nie może wdrożyć Visual C# lub Visual Basic aplikacje klasyczne z kom
   
 13. Jeśli zostanie wyświetlony monit, wprowadź poświadczenia sieci, aby połączyć z komputerem zdalnym.  
   
-     Wymagane poświadczenia się różnić w zależności od konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny, można wprowadzić nazwę domeny i hasła. Na komputerze z systemem innym niż domeny, wprowadzić nazwę komputera i nazwę konta użytkownika prawidłowy tak samo, jak  **MJO-DL\name@something.com** , oraz prawidłowe hasło.
+     Wymagane poświadczenia się różnić w zależności od konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny, można wprowadzić nazwę domeny i hasła. Na komputerze z systemem innym niż domeny, wprowadzić nazwę komputera i nazwę konta użytkownika prawidłowy tak samo, jak **MJO-DL\name@something.com**, oraz prawidłowe hasło.
 
      Powinny być widoczne czy głównego okna aplikacji WPF jest otwarty na komputerze zdalnym.
   

@@ -1,12 +1,10 @@
 ---
-title: "Kod zabezpieczeń dostępu dla aplikacji ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kod zabezpieczeń dostępu dla aplikacji ClickOnce | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
 - vb.XBAProjectPropertiesSecurity.HowTo
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - ClickOnce applications, code access security policies
 - security, ClickOnce
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
-caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 33e6e376f27dd2cb0a1ccd30a785345c8f7668dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 ClickOnce — aplikacje są oparte na programie .NET Framework i obowiązują ograniczenia zabezpieczeń dostępu kodu. Dlatego jest ważne, że rozumiesz konsekwencje kod dostępu zabezpieczeń i w związku z tym zapisu aplikacji ClickOnce.  

@@ -1,24 +1,20 @@
 ---
-title: "Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
 Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyper-V, technologii wirtualizacji systemu Windows 8 i nowszych. Aby uruchomić emulatora, komputer musi spełniać wymagań dotyczących uruchamiania funkcji Hyper-V, zgodnie z opisem w tym temacie.  
@@ -30,7 +26,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
  Ten temat zawiera następujące sekcje.  
   
--   [Quick Checklist](#Checklist)  
+-   [Lista kontrolna szybkiego](#Checklist)  
   
 -   [Wymagania systemowe](#System)  
   
@@ -103,7 +99,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
 -   [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
-##  Wymagania dotyczące funkcji Hyper-V  
+##  <a name="HyperV"></a> Wymagania dotyczące funkcji Hyper-V  
  Wymagania dotyczące funkcji Hyper-V w systemie BIOS  
   
  System BIOS komputera musi obsługiwać następujące wymagania i musi być włączone:  
@@ -132,7 +128,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
 > [!IMPORTANT]
 >  Po dołączeniu do grupy, wylogowania lub ponownie uruchomić system, aby zmiany zostały wprowadzone.  
   
- ![Przyłączanie funkcji Hyper- &#45; Grupy zabezpieczeń Administratorzy V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Sprzęganie Hyper&#45;grupy zabezpieczeń Administratorzy V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Aby samodzielnie ręcznie dodać do grupy, otwórz lokalnych użytkowników i grup przystawki. Aby uzyskać więcej informacji, zobacz [dodać konto użytkownika do grupy](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (W tym temacie Windows 7 jest również zastosowanie do systemu Windows 8).  
   
@@ -148,7 +144,7 @@ Visual Studio Emulator for Android działa jako maszyny wirtualnej w funkcji Hyp
   
 -   C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+-   C:\Program pliki (x86) \Microsoft Visual Studio Emulator for Android  
   
 -   %localappdata%\Microsoft\VisualStudioEmulator  
   

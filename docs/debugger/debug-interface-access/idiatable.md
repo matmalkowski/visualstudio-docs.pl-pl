@@ -1,29 +1,25 @@
 ---
-title: "Idiatable — | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Idiatable — | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f596d2c51c5d5e543ed67212662c5096ea2e4eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93eedd9579f264b218e9c05c29dc3848fb3ceb9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiatable"></a>IDiaTable
 Wylicza DIA tabeli źródła danych.  
@@ -72,7 +68,7 @@ IDiaTable : IEnumUnknown
  Pierwsza funkcja `ShowTableNames`, wyświetla nazwy wszystkich tabel w sesji. Druga funkcja `GetTable`, przeszukuje wszystkie tabele dla tabeli, który implementuje interfejs określony. Trzeci funkcji `UseTable`, przedstawia sposób użycia `GetTable` funkcji.  
   
 > [!NOTE]
->  `CDiaBSTR`jest klasa, która opakowuje `BSTR` i automatycznie obsługuje zwalnianie ciąg, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
+>  `CDiaBSTR` jest klasa, która opakowuje `BSTR` i automatycznie obsługuje zwalnianie ciąg, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  

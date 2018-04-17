@@ -1,26 +1,24 @@
 ---
 title: Kontekst oceny | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, context
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9a490ef7c4ea42fe85c291ee913d7ad5e1cda1bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 266fe85bedeea2c7e3dae7726d113d66a4b2b1e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluation-context"></a>Kontekst oceny
 > [!IMPORTANT]
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 |`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfejsu, który określa bieżącego punktu wykonania. To można znaleźć metody, który zawiera kod wykonywany.|  
 |`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interfejsu, który może służyć do znajdowania wartości i typ symbolu podanej nazwy.|  
   
- `IDebugParsedExpression::EvaluateSync`Zwraca [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejs reprezentujący wartość wynikową i jej typie.  
+ `IDebugParsedExpression::EvaluateSync` Zwraca [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejs reprezentujący wartość wynikową i jej typie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyrażenie klucza ewaluatora interfejsów](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   

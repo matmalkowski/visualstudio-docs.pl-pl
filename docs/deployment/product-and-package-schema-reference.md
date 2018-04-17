@@ -1,12 +1,10 @@
 ---
-title: "Produkt i pakiet — odwołanie do schematu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Produkt i pakiet — odwołanie do schematu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c4df5288f05f14c146c934c8d9d5b916a4bb2fc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="product-and-package-schema-reference"></a>Produkt i pakiet — odwołanie do schematu
 A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Przykłady zależności zewnętrzne [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale służy do instalowania składników zależnych od kultury zależności, takich jak zlokalizowane zestawy, umów licencyjnych i dokumentacji.  
@@ -54,7 +52,7 @@ A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętr
 ## <a name="remarks"></a>Uwagi  
  Schemat pakietu jest używane przez Setup.exe, program szczątkowy wygenerowany przez zadanie bootstrapping MS Build, zawierający ilością logiki ustalony własnych. Schemat dysków wszystkich aspektów procesu instalacji.  
   
- `InstallChecks`testy tego setup.exe należy wykonać istnienie danego pakietu. `PackageFiles`Wyświetla listę wszystkich pakietów, które proces instalacji może być konieczne zainstalowanie, jeśli podany test nie. Każdy wpis polecenia w obszarze polecenia wykonuje jeden z testów opisanego przez `InstallChecks`i określa, która `PackageFile` do uruchamiania w przypadku testu nie. Można użyć `Strings` elementu do zlokalizowania nazw produktów i komunikaty o błędach, tak aby jedna instalacja jednego binarne umożliwia zainstalowanie aplikacji dowolną liczbę języków.  
+ `InstallChecks` testy tego setup.exe należy wykonać istnienie danego pakietu. `PackageFiles` Wyświetla listę wszystkich pakietów, które proces instalacji może być konieczne zainstalowanie, jeśli podany test nie. Każdy wpis polecenia w obszarze polecenia wykonuje jeden z testów opisanego przez `InstallChecks`i określa, która `PackageFile` do uruchamiania w przypadku testu nie. Można użyć `Strings` elementu do zlokalizowania nazw produktów i komunikaty o błędach, tak aby jedna instalacja jednego binarne umożliwia zainstalowanie aplikacji dowolną liczbę języków.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje pliku kompletnego produktu do instalacji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  

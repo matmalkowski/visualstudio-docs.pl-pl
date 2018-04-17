@@ -1,30 +1,26 @@
 ---
 title: Compiland | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - compiland symbol
 - compilands, compiland symbol
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6420c235098414d09de2f0c269ebf85333d5c1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compiland"></a>Jednostka kompilacji
 Istnieje `SymTagCompiland` symboli dla każdego Compiland połączony plik .exe. Compiland informacje są dzielone symbole z `SymTagCompiland` tagu, który można pobrać bez ładowania symboli dodatkowe compiland oraz symboli z `SymTagCompilandDetails` tag, które mogą wymagać ładowania symboli dodatkowych.  
@@ -34,7 +30,7 @@ Istnieje `SymTagCompiland` symboli dla każdego Compiland połączony plik .exe.
   
 |Właściwość|Typ danych|Opis|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Jeśli włączono Edytuj i Kontynuuj w kompilacji.|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Jeśli włączono Edytuj i Kontynuuj w kompilacji.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol dla pliku .exe.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Identyfikator nadrzędnego leksykalne symbolu.|  
 |[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Nazwa pliku biblioteki lub obiektu, gdy obiekt został załadowany z.|  

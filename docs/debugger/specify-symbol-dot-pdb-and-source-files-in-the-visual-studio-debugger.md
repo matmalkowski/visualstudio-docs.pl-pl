@@ -1,12 +1,10 @@
 ---
-title: "Określ symboli (.pdb) i plików źródłowych w debugerze | Dokumentacja firmy Microsoft"
+title: Określ symboli (.pdb) i plików źródłowych w debugerze | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
 - VS.ToolsOptionsPages.Debugger.Symbols
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - pdb files
 - debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbef364c316f51be8996e79f63a493b51e619f1e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7e2549cfe71ef05d611251bbc8a017bd4891df3e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określ symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik bazy danych (.pdb) programu skrót pliku symboli, mapuje identyfikatorów, które należy utworzyć w kodzie źródłowym dla klas, metod i inny kod, aby identyfikatory, które są używane w skompilowanych plików wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger użyje tych informacji do określenia dwóch kluczowych informacji:
@@ -49,7 +47,7 @@ Plik symboli zawiera także oryginalną lokalizację plików źródłowych i opc
 > [!TIP]
 > Jeśli chcesz debugować kodu spoza projektu kodu źródłowego, takie jak kod systemu Windows lub kod innych firm wywołania projektu, należy określić lokalizację .pdb (i opcjonalnie plików źródłowych kod zewnętrzny), a tych plików muszą być dokładnie odpowiada kompilacji t on plików wykonywalnych.  
  
-##  <a name="BKMK_Find_symbol___pdb__files"></a>Gdy debuger wyszukiwania plików symboli? 
+##  <a name="BKMK_Find_symbol___pdb__files"></a> Gdy debuger wyszukiwania plików symboli? 
   
 1.  Lokalizacja określona w pliku DLL lub pliku wykonywalnym.  
   
@@ -66,17 +64,17 @@ Plik symboli zawiera także oryginalną lokalizację plików źródłowych i opc
 > [!NOTE]
 > Przed programu Visual Studio 2012 podczas debugowania kodu zarządzanego na urządzeniu zdalnym trzeba umieścić pliki symboli na komputerze zdalnym. Począwszy od programu Visual Studio 2012, wszystkie pliki symboli musi znajdować się na komputerze lokalnym lub w lokalizacji [określona w opcjach debugera](#BKMK_Specify_symbol_locations_and_loading_behavior).  
   
-##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a>Dlaczego pliki symboli są wymagane dokładnie odpowiadać pliki wykonywalne?  
+##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Dlaczego pliki symboli są wymagane dokładnie odpowiadać pliki wykonywalne?  
 Debuger będzie ładował tylko plik .pdb dla pliku wykonywalnego, który dokładnie pasuje do pliku .pdb, który z kolei został utworzony podczas kompilowania pliku wykonywalnego (czyli .pdb musi być plikiem oryginalnym lub kopią oryginalnego pliku .pdb). Ponieważ kompilator jest zoptymalizowany pod kątem szybkości kompilacji, oprócz swojego głównego zadania utworzenia prawidłowego i efektywnego kodu, można zmienić układ pliku wykonywalnego, nawet jeśli nie zmienił się sam kod. Aby uzyskać więcej informacji, zobacz [Dlaczego Visual Studio wymaga symbol debugera dokładnej zgodności plików pliki binarne, które zostały skompilowane?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
   
-##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>Konfigurowanie, gdy debuger wyszukuje pliki symboli i zachowania ładowania symboli
+##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Konfigurowanie, gdy debuger wyszukuje pliki symboli i zachowania ładowania symboli
  Podczas debugowania projektu w programie Visual Studio IDE debuger ładuje automatycznie pliki symboli, które znajdują się w katalogu projektu. Można określić ścieżki alternatywnej wyszukiwania i symboli z serwerów Microsoft, Windows i składników innych firm w **Narzędzia > Opcje > debugowanie > symbole**. Można również określić określone moduły, które mają debugera automatyczne ładowanie symboli dla elementu. Można też następnie zmienić te ustawienia ręcznie podczas aktywnego debugowania.  
   
 1.  W programie Visual Studio Otwórz **Narzędzia > Opcje > debugowanie > symbole** strony.  
   
-     ![Narzędzia &#45; Opcje &#45; Debugowanie &#45; Strona symbole](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
+     ![Narzędzia &#45; opcje &#45; debugowanie &#45; strony symbole](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
   
-2.  Wybierz folder ![narzędzia &#47; Opcje &#47; Debugowanie &#47; Ikona folderu symbole](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") ikony. Można edytować tekst jest wyświetlany w **symboli (.pdb) lokalizacje** pole.  
+2.  Wybierz folder, ![narzędzia&#47; opcje&#47; debugowanie&#47;ikonę folderu symbole](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") ikony. Można edytować tekst jest wyświetlany w **symboli (.pdb) lokalizacje** pole.  
   
 3.  Wpisz adres URL lub ścieżkę katalogu serwera symboli lub lokalizację symboli. Uzupełnianie instrukcji pomaga w znalezieniu właściwego formatu.
 
@@ -105,8 +103,8 @@ Po wybraniu ładuje tabele eksportu bibliotek DLL. Informacje symboliczne z tabe
   
 Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, użyj `dumpbin /exports`. Symbole są dostępne dla dowolnej 32-bitowej systemowej biblioteki DLL. Przeczytaj `dumpbin /exports` danych wyjściowych widać nazwy funkcji dokładne, w tym znaków innych niż alfanumeryczne. Jest to przydatne przy ustawianiu punktu przerwania w funkcji. Nazwy funkcji tabel eksportu biblioteki DLL mogą być pojawić się obcięte gdzie indziej w debugerze. Wywołania są wymienione w kolejności wywołań, z bieżącą funkcją (najgłębiej zagnieżdżoną) na początku. Aby uzyskać więcej informacji, zobacz [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>Serwery symboli użycia można znaleźć plików symboli nie na komputerze lokalnym  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]serwery symboli, które implementują protokół symsrv mogą pobrać pliki symboli debugowania. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) i [narzędzia do debugowania dla systemu Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) są dwa narzędzia, które można wdrożyć serwery symboli. Określ serwery symbol do użycia w VS **opcje** okno dialogowe.  
+###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Serwery symboli użycia można znaleźć plików symboli nie na komputerze lokalnym  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] serwery symboli, które implementują protokół symsrv mogą pobrać pliki symboli debugowania. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) i [narzędzia do debugowania dla systemu Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) są dwa narzędzia, które można wdrożyć serwery symboli. Określ serwery symbol do użycia w VS **opcje** okno dialogowe.  
   
  Serwery symboli, z których możesz korzystać, obejmują:  
   
@@ -127,7 +125,7 @@ Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, uż
 > [!NOTE]
 >  Jeśli używasz serwera symboli innego niż publiczne serwery symboli Microsoft, upewnij się, że serwer symboli i jego ścieżka są godne zaufania. Pliki symboli mogą zawierać dowolny kod wykonywalny, dlatego możesz być narażony na zagrożenia bezpieczeństwa.  
   
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a>Znajdź i załaduj symbole podczas debugowania  
+###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Znajdź i załaduj symbole podczas debugowania  
  W dowolnym momencie, gdy debuger jest w trybie przerwania, można załadować symbole dla modułu, który wcześniej został wykluczony przez opcje debugera lub których kompilator nie mógł odnaleźć. Możesz załadować symbole z menu skrótów okien Stos wywołań, Moduły, Elementy lokalne, Automatyczne i wszystkich okien Czujka. Jeśli debuger przerwie działanie na kodzie, który nie zawiera dostępnych plików symboli lub źródłowych, pojawi się okno dokumentu. Tutaj można znaleźć informacje o brakujących plikach i podjąć działania w celu odszukania i załadowania ich.
   
  **Znajdowanie symboli ze stronami dokumentu nie załadowano symboli**  
@@ -156,7 +154,7 @@ Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, uż
   
 -   Aby zawsze pokazuj dezasemblację, gdy nie znajdują się pliki źródła lub symbol, wybierz **okno dialogowe Opcje** połączyć, a następnie wybierz oba **włączyć debugowanie poziomu adres** i **Pokaż dezasemblację, jeśli źródło nie jest dostępny**.  
   
-     ![Opcje &#47; Debugowanie &#47; Opcje ogólne dezasemblacji](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
+     ![Opcje &#47; debugowanie &#47; Opcje ogólne dezasemblacji](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
   
  **Zmień symbol opcje z menu skrótów**  
   
@@ -169,7 +167,7 @@ Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, uż
 |**Ustawienia symboli...**|Otwiera **debugowanie**/**symbole** strony VS **opcje** okno dialogowe.|  
 |**Zawsze ładuj automatycznie**|Dodaje plik symboli do listy plików, które są ładowane automatycznie przez debuger.|  
   
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a>Ustawianie opcji kompilatora pliki symboli  
+###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Ustawianie opcji kompilatora pliki symboli  
  Podczas kompilacji projektu z VS IDE i użyć standardowego **debugowania** konfigurację kompilacji, C++ i zarządzanych kompilatory utworzyć pliki symboli w odpowiednich dla kodu. Możesz również ustawić opcje kompilatora w wierszu polecenia, aby tworzyć pliki symboli.  
   
  **Opcje języka C++**  
@@ -196,13 +194,13 @@ Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, uż
   
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debuger używa ścieżka do pliku PDB w pliku EXE lub DLL można znaleźć pliku project.pdb. Jeśli debuger nie może znaleźć pliku PDB w tej lokalizacji lub ścieżka jest nieprawidłowa, debuger wyszukuje ścieżkę zawierającą plik EXE i następnie określone ścieżki symboli w **opcje** okno dialogowe. Ta ścieżka jest zazwyczaj **debugowanie** folderu w **symbole** węzła. Debuger nie załaduje pliku .pdb, który nie pasuje do debugowanego pliku wykonywalnego. Jeśli debuger nie może znaleźć pliku PDB **znajdowanie symboli** zostanie wyświetlone okno dialogowe, które umożliwia wyszukiwania symboli lub dodać dodatkowych lokalizacji do ścieżki wyszukiwania.  
   
- **Aplikacje sieci Web**  
+ **aplikacje sieci Web**  
   
  Plik konfiguracyjny aplikacji (Web.config) musi być ustawiony w tryb debugowania. Tryb debugowania powoduje, że ASP.NET generuje symbole dla dynamicznie generowanych plików i umożliwia debugerowi dołączenie do aplikacji ASP.NET. Visual Studio to automatycznie ustawia podczas uruchamiania debugowania, jeśli projekt został utworzony z szablonu projektów sieci Web.  
   
-##  <a name="BKMK_Find_source_files"></a>Znajdź pliki źródłowe  
+##  <a name="BKMK_Find_source_files"></a> Znajdź pliki źródłowe  
   
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a>Gdy debuger wyszukuje pliki źródłowe  
+###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Gdy debuger wyszukuje pliki źródłowe  
  Debuger szuka plików źródłowych w następujących lokalizacjach:  
   
 1.  Pliki otwarte w środowisku IDE wystąpienia programu Visual Studio, które uruchomiło debugera.  
@@ -213,23 +211,23 @@ Aby zobaczyć, jakie symboli są dostępne w tabeli eksportu biblioteki dll, uż
   
 4.  Informacje źródłowe z .pdb modułu. Może to być lokalizacja pliku źródłowego, gdy moduł został skompilowany, lub może to być polecenie do serwera źródłowego.  
   
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a>Znajdź i załadować plików źródłowych przy użyciu stron załadowano symbole Source/No nr  
+###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Znajdź i załadować plików źródłowych przy użyciu stron załadowano symbole Source/No nr  
  Gdy debuger dzieli wykonywania w lokalizacji, w którym plik źródłowy nie jest dostępne, zostaną wyświetlone **załadować źródła nie** lub **nie załadowano symboli** stron, które mogą pomóc Ci znaleźć pliku źródłowego. **Nie załadowano symboli** jest wyświetlany, gdy debuger nie może odnaleźć pliku symboli (.pdb) dla pliku wykonywalnego ukończyć jej wyszukiwania. Strona Brak symboli zawiera opcje wyszukiwania pliku. Jeśli plik .pdb zostanie znaleziony po wykonaniu jednej z opcji i debuger może pobrać plik źródłowy przy użyciu informacji w pliku symboli, źródło jest wyświetlane. W przeciwnym razie **załadować źródła nie** zostanie wyświetlona strona zawierający opis problemu. Na stronie są wyświetlane łącza do opcji mogących wykonywać akcje, które mogą rozwiązać problem.  
   
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a>Dodawanie ścieżki wyszukiwania plików źródła do rozwiązania  
+###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Dodawanie ścieżki wyszukiwania plików źródła do rozwiązania  
  Możesz określić sieć lub katalogi lokalne, aby w nich wyszukiwać pliki źródłowe.  
   
 1.  Wybierz rozwiązanie w Eksploratorze rozwiązań, a następnie wybierz pozycję **właściwości** z menu skrótów.  
   
 2.  W obszarze **wspólne właściwości** węzła, wybierz **debugowania plików źródłowych**.  
   
-3.  Kliknij folder ![narzędzia &#47; Opcje &#47; Debugowanie &#47; Ikona folderu symbole](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") ikony. Można edytować tekst jest wyświetlany w **katalogi zawierające kod źródłowy** listy.  
+3.  Kliknij folder ![narzędzia&#47; opcje&#47; debugowanie&#47;ikonę folderu symbole](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") ikony. Można edytować tekst jest wyświetlany w **katalogi zawierające kod źródłowy** listy.  
   
 4.  Dodaj ścieżkę, którą chcesz przeszukać.  
   
  Należy zauważyć, że przeszukiwany jest tylko określony katalog. Musisz dodać wpisy do wszystkich podkatalogów, które chcesz przeszukać.  
   
-###  <a name="BKMK_Use_source_servers"></a>Użyj serwerów źródłowych  
+###  <a name="BKMK_Use_source_servers"></a> Użyj serwerów źródłowych  
  Gdy na komputerze lokalnym nie ma kodu źródłowego lub plik .pdb nie pasuje do kodu źródłowego, możesz użyć Serwera źródłowego, aby pomóc w debugowaniu aplikacji. Serwer źródłowy przyjmuje żądania dotyczące plików i zwraca rzeczywiste pliki. Serwer źródłowy jest uruchamiany za pomocą pliku DLL, o nazwie srcsrv.dll. Serwer źródłowy odczytuje plik .pdb aplikacji, który zawiera wskazówki do repozytorium kodu źródłowego, a także polecenia używane do pobierania kodu źródłowego z repozytorium. Możesz ograniczyć, jakie polecenia mogą być wykonywane z pliku .pdb aplikacji, poprzez wymienienie dozwolonych poleceń wewnątrz pliku o nazwie srcsrv.ini, który musi być umieszczony w tym samym katalogu, co srcsrv.dll i devenv.exe.  
   
 > [!IMPORTANT]

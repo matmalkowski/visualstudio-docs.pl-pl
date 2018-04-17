@@ -1,10 +1,11 @@
 ---
-title: "Możliwości Dotfuscator | Dokumentacja firmy Microsoft"
+title: Możliwości Dotfuscator | Dokumentacja firmy Microsoft
 ms.date: 2017-10-10
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, Wywłaszczaniem, cenią sobie wcześniejsze rozwiązań cenią sobie wcześniejsze ochrony, ochronie, community edition, Zaciemnienie, .NET wolny, Visual Studio 2017 r."
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, Wywłaszczaniem, cenią sobie wcześniejsze rozwiązań cenią sobie wcześniejsze ochrony, ochronie, community edition, Zaciemnienie, .NET wolny, Visual Studio 2017 r.
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -12,15 +13,15 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: "Dowiedz się więcej możliwości bezpłatna wersja Community Dotfuscator uwzględnione w programie Visual Studio 2017 r."
+description: Dowiedz się więcej możliwości bezpłatna wersja Community Dotfuscator uwzględnione w programie Visual Studio 2017 r.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 2c2c7decf192f11c12b52b64374719c8ef5edece
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 91d2e379c37567a88e29eb504ad7bc09723d3fc6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-of-dotfuscator"></a>Możliwości Dotfuscator
 

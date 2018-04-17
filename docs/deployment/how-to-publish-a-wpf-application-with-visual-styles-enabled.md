@@ -1,23 +1,21 @@
 ---
-title: "Porady: publikowanie aplikacji WPF przy włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: publikowanie aplikacji WPF przy włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 Style wizualne umożliwić wyświetlanie formantów standardowych można zmieniać w oparciu o motywu wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), dlatego należy je włączyć ręcznie. Włączanie style wizualne dla aplikacji WPF i opublikować rozwiązania spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu i proces publikowania aplikacji WPF przy włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat stylów wizualnych, zobacz [omówienie Visual Style](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji o komunikat o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +32,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
  Następnie można przenieść opublikowane pliki do lokalizacji, z którego mają zostać użytkowników końcowych do zainstalowania aplikacji.  
   
-##  <a name="BKMK_publishsolwovs"></a>Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych  
+##  <a name="BKMK_publishsolwovs"></a> Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych  
   
 1.  Upewnij się, że projekt nie ma włączonej funkcji stylów wizualnych. Najpierw sprawdź plik manifestu projektu dla następującego pliku XML. Następnie jeśli istnieje plik XML, ujmij XML znacznika komentarza.  
   
@@ -48,7 +46,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Aby otworzyć pliku manifestu w projektach Visual Basic  
   
-    1.  Na pasku menu wybierz **projektu**, *ProjectName***właściwości**, gdzie *ProjectName* to nazwa projektu WPF.  
+    1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**, gdzie *ProjectName* to nazwa projektu WPF.  
   
          Są wyświetlane na stronach właściwości projektu WPF.  
   
@@ -58,7 +56,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Aby otworzyć pliku manifestu w projekcie C#  
   
-    1.  Na pasku menu wybierz **projektu**, *ProjectName***właściwości**, gdzie *ProjectName* to nazwa projektu WPF.  
+    1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**, gdzie *ProjectName* to nazwa projektu WPF.  
   
          Są wyświetlane na stronach właściwości projektu WPF.  
   
@@ -73,7 +71,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
   
 2.  Tworzenie i publikowanie rozwiązania. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Utwórz plik manifestu  
+##  <a name="BKMK_CreateManifest"></a> Utwórz plik manifestu  
   
 1.  Wklej następujący kod XML w pliku Notatnika.  
   
@@ -94,7 +92,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
     > [!NOTE]
     >  W pozostałych procedurach założono, że nazwa tego pliku jest **themes.manifest** oraz że plik jest zapisywany w katalogu C:\temp na komputerze.  
   
-##  <a name="BKMK_embedmanifest"></a>Osadzanie pliku manifestu w pliku wykonywalnego opublikowanych rozwiązania  
+##  <a name="BKMK_embedmanifest"></a> Osadzanie pliku manifestu w pliku wykonywalnego opublikowanych rozwiązania  
   
 1.  Otwórz **wiersz polecenia programu Visual Studio**.  
   
@@ -107,7 +105,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
     > -   Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      Rozwiązania została opublikowana do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Nie trzeba używać nazwy lub lokalizacji katalogu opisane powyżej. Nazwy i lokalizacje opisane powyżej są używane tylko w celu zilustrowania kroki wymagane do opublikowania rozwiązania.  
   
@@ -123,7 +121,7 @@ Style wizualne umożliwić wyświetlanie formantów standardowych można zmienia
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Podpisać manifestów aplikacji i wdrażania  
+##  <a name="BKMK_signappdeplyman"></a> Podpisać manifestów aplikacji i wdrażania  
   
 1.  W wierszu polecenia Uruchom następujące polecenie, aby usunąć `.deploy` rozszerzenia pliku wykonywalnego w bieżącym katalogu.  
   

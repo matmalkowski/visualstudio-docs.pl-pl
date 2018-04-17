@@ -1,12 +1,10 @@
 ---
-title: "Ca2100: należy Przeglądnąć zapytania SQL w poszukiwaniu luk w zabezpieczeniach | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Ca2100: należy Przeglądnąć zapytania SQL w poszukiwaniu luk w zabezpieczeniach | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - Review SQL queries for security vulnerabilities
 - ReviewSqlQueriesForSecurityVulnerabilities
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - CA2100
 - ReviewSqlQueriesForSecurityVulnerabilities
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 06d214a8726ea03cc16aff8391db1acceb3f91f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 76e1ed96221242676557011b69e0547144d34ffa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Należy przejrzeć zapytania SQL w poszukiwaniu luk w zabezpieczeniach
 |||  
@@ -48,13 +46,13 @@ ms.lasthandoff: 12/22/2017
   
  Następujące [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] typy implementować <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argument ciągu konstruktorów.  
   
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName>i<xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> I <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>  
   
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName>i<xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> I <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>  
   
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName>i<xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> I <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>  
   
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName>i<xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> I <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>  
   
  Zwróć uwagę, że stosowania metody ToString typu jawnie lub niejawnie naruszenia tej reguły do utworzenia ciągu zapytania. Poniżej przedstawiono przykład.  
   

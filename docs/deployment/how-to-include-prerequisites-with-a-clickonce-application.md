@@ -1,23 +1,21 @@
 ---
-title: "Porady: uwzględnianie wstępnie wymaganych składników za pomocą aplikacji ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: uwzględnianie wstępnie wymaganych składników za pomocą aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7283ce590770c1ed2d14ffb79ec71d594c8b21f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
 Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy najpierw pobrać pakietów Instalatora dla tych wymagań wstępnych na komputerze deweloperskim. Podczas publikowania aplikacji i wybierz **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co Moja aplikacja**, wystąpi błąd, jeśli pakietów Instalatora nie ma w **pakiety** folderu.  
@@ -25,7 +23,7 @@ Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE
 > [!NOTE]
 >  Aby dodać pakiet Instalatora programu .NET Framework, zobacz [.NET Framework — przewodnik wdrażania dla deweloperów](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a>Aby dodać pakiet Instalatora przy użyciu plik Package.xml  
+##  <a name="Package"></a> Aby dodać pakiet Instalatora przy użyciu plik Package.xml  
   
 1.  Otwórz w Eksploratorze plików **pakiety** folderu.  
   
@@ -38,7 +36,7 @@ Przed rozpoczęciem dystrybucji, wstępnie wymaganego oprogramowania z [!INCLUDE
 4.  Zlokalizuj **nazwa** element, który zawiera **http://go.microsoft.com/fwlink**i skopiuj adres URL. Obejmują **LinkID** części.  
   
     > [!NOTE]
-    >  Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** plików w folderze głównym dla wymagań wstępnych i Znajdź  **fwlink** ciągu.  
+    >  Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** plików w folderze głównym dla wymagań wstępnych i Znajdź **fwlink** ciągu.  
   
     > [!IMPORTANT]
     >  Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele **nazwa** elementy zawierają **fwlink**, pozostałe kroki należy powtórzyć dla każdego z nich.  

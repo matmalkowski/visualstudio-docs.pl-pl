@@ -1,23 +1,21 @@
 ---
 title: 'Porady: tworzenie cieniowania gradientu geometrii | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6ec140a434ebee19eb64292d38216d567a60d8bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Porady: tworzenie modułu cieniującego gradientu geometrycznego
 Ten dokument pokazuje, jak używać projektanta programu do cieniowania i język programu do cieniowania wykres skierowane do tworzenia cieniowania geometrycznego w gradientu. Ten program do cieniowania skaluje stałej wartości kolorów RGB przez wysokość każdego punktu obiektu w przestrzeni świata.  
@@ -68,7 +66,7 @@ Ten dokument pokazuje, jak używać projektanta programu do cieniowania i język
   
  Na poniższej ilustracji przedstawiono programu do cieniowania, które jest opisane w tym dokumencie stosowana do sceny 3-w przedstawionej w [porady: Model terenu 3-](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się wraz z wysokość punktu na świecie.  
   
- ![Efekt gradientu zastosować do 3 &#45; D terenu modelu](../designers/media/digit-gradient-effect-result.png "cyfrę-gradientu-efekt-wynik")  
+ ![Efekt gradientu stosowane do 3&#45;modelu terenu D](../designers/media/digit-gradient-effect-result.png "cyfrę-gradientu-efekt-wynik")  
   
  Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania 3-w modelu, zobacz [porady: dotyczą programu do cieniowania 3-w modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

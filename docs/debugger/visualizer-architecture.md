@@ -1,28 +1,26 @@
 ---
 title: Architektura wizualizatora | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
-caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2cf2e4b68ba8902d5b93935ea188243fb36d68f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 42410fede088c02992f223efc209c9edd7fc23b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visualizer-architecture"></a>Architektura wizualizatora
 Architektura wizualizatora debuger ma dwie części:  
@@ -71,7 +69,7 @@ Architektura wizualizatora debuger ma dwie części:
   
  Powiadomienia dostawcy obiektów można użyć jednej <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>. Albo interfejsu API powoduje wywołanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A> obiektu źródłowego. Wywołanie <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName> wypełnia <xref:System.IO.Stream?displayProperty=fullName>, reprezentuje serializacji formularza jest wizualizowanego obiektu.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>deserializuje dane formularza obiektu, który można następnie wyświetlić w utworzeniu za pomocą interfejsu użytkownika do <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>wypełnia dane jako nieprzetworzone `Stream`, które należy wykonać deserializacji samodzielnie. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>działa przez wywołanie metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> uzyskać zserializowana `Stream`, a następnie podczas deserializacji danych. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> gdy obiekt nie jest możliwy do serializacji przez .NET i wymaga niestandardowej serializacji. W takim przypadku należy również zmienić <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> metody.  
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> deserializuje dane formularza obiektu, który można następnie wyświetlić w utworzeniu za pomocą interfejsu użytkownika do <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> wypełnia dane jako nieprzetworzone `Stream`, które należy wykonać deserializacji samodzielnie. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName> działa przez wywołanie metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> uzyskać zserializowana `Stream`, a następnie podczas deserializacji danych. Użyj <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName> gdy obiekt nie jest możliwy do serializacji przez .NET i wymaga niestandardowej serializacji. W takim przypadku należy również zmienić <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> metody.  
   
  Jeśli tworzysz wizualizatora tylko do odczytu, komunikacja jednokierunkowa z <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> lub <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A> jest wystarczająca. Jeśli tworzysz wizualizatora, który obsługuje edycję obiektów danych, należy to robić więcej. Musi być możliwe do odesłania obiekt danych od dostawcy obiektu do obiektu źródłowego również. W poniższej tabeli przedstawiono dostawcy obiektów i interfejsów API źródłowy obiekt używany w tym celu:  
   
@@ -81,7 +79,7 @@ Architektura wizualizatora debuger ma dwie części:
   
  Zwróć uwagę, ponownie, że istnieją dwa interfejsy API, których można użyć dostawcy obiektów. Zawsze wysłaniu danych z dostawcy obiektu do obiektu źródła jako `Stream`, ale <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> wymaga, aby serializacji obiektu do `Stream` samodzielnie.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A>pobiera obiekt, który podasz, serializuje go do `Stream`, następnie wywołuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> do wysyłania `Stream` do <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> pobiera obiekt, który podasz, serializuje go do `Stream`, następnie wywołuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> do wysyłania `Stream` do <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.  
   
  Przy użyciu jednej z metod Zamień tworzy nowy obiekt danych w debugowanym obiekcie, który zastępuje wizualizowanego obiektu. Jeśli chcesz zmienić zawartość oryginalnego obiektu bez zastąpienia, użyj jednej z metod transferu pokazano w poniższej tabeli. Te interfejsy API transferu danych w obu kierunkach w tym samym czasie bez zastępowania obiektu, który jest wizualizowanego:  
   

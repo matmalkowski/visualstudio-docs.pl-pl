@@ -1,25 +1,24 @@
 ---
-title: "Elementy (właściwość klasy XElement dynamiczny) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Elementy (właściwość klasy XElement dynamiczny) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: XElement.Elements
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
+apiname:
+- XElement.Elements
 apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8c8bca4053da38738068c14fc20b43acc6c775ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d7c68611dc8377d9fc32f6eedbbfd0114959cf08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elementy (właściwość klasy XElement dynamiczny)
 Pobiera indeksatora używane do pobierania elementy podrzędne bieżącego elementu, które odpowiada określonym rozwiniętą nazwą.  

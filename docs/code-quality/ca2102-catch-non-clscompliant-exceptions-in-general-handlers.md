@@ -1,30 +1,26 @@
 ---
-title: "CA2102: Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA2102: Przechwytuj wyjątki bez atrybutu CLSCompliant w ogólnych procedurach obsługi | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
 helpviewer_keywords:
 - CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cff8d36cd80a31cf05ca461730d51703afc106ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Przechwytuj wyjątki inne niż CLSCompliant w ogólnej obsłudze wyjątków
 |||  
@@ -40,9 +36,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Opis reguły  
  Blok catch, która obsługuje <xref:System.Exception> przechwytuje wszystkie wyjątki zgodne specyfikacja języka wspólnego (CLS). Jednak nie przechwytuje wyjątków zgodne niezgodny ze specyfikacją CLS. CLS nie może zostać wygenerowany wyjątki zgodne z kodu natywnego lub zarządzanego kodu, który został wygenerowany przez Microsoft pośredniego (MSIL) języka asemblera. Zwróć uwagę, że C# i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatory nie zezwalaj na niezgodny ze specyfikacją CLS wyjątki zgodne, zostanie wygenerowany i [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nie przechwytuje wyjątków zgodne niezgodny ze specyfikacją CLS. Jeśli celem użycia bloku catch można obsłużyć wszystkie wyjątki, należy użyć następującej składni bloku catch ogólne.  
   
--   C#:`catch {}`  
+-   C#: `catch {}`  
   
--   C++: `catch(...) {}` lub`catch(Object^) {}`  
+-   C++: `catch(...) {}` lub `catch(Object^) {}`  
   
  Nieobsługiwany system inny niż — wyjątek niezgodny z CLS staje się problem z zabezpieczeniami, usunięcie wcześniej dozwolone uprawnienia w bloku catch. Ponieważ wyjątki zgodne niezgodny ze specyfikacją CLS nie są przechwytywane, złośliwy metodę, która zgłasza wyjątek zgodne z systemem innym niż CLS można uruchomić z podwyższonym poziomem uprawnień.  
   

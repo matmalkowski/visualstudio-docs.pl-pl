@@ -1,27 +1,25 @@
 ---
 title: Zasoby w VSPackages | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>Zasoby w VSPackages
 Zlokalizowane zasoby można osadzić w natywnej satelitarnej biblioteki DLL interfejsu użytkownika, zarządzanych satelitarnej biblioteki dll, lub zarządzanych pakiet VSPackage sam.  
@@ -85,7 +83,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Uwagi dotyczące implementacji  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Ładowanie opóźnienia VSPackages, jeśli to możliwe. Konsekwencją osadzenia pliku CTO w pakiet VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi załadować takie VSPackages w pamięci podczas instalacji, który jest podczas tworzenia tabeli polecenia scalone. Zasoby można wyodrębnić z pakiet VSPackage, sprawdzając metadanych bez uruchamiania kodu w pakiecie VSPackage. Pakiet VSPackage nie został zainicjowany w tej chwili, dzięki czemu utrata wydajności jest minimalny.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ładowanie opóźnienia VSPackages, jeśli to możliwe. Konsekwencją osadzenia pliku CTO w pakiet VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi załadować takie VSPackages w pamięci podczas instalacji, który jest podczas tworzenia tabeli polecenia scalone. Zasoby można wyodrębnić z pakiet VSPackage, sprawdzając metadanych bez uruchamiania kodu w pakiecie VSPackage. Pakiet VSPackage nie został zainicjowany w tej chwili, dzięki czemu utrata wydajności jest minimalny.  
   
  Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] żądań zasobu z pakiet VSPackage po zakończeniu instalacji, tego pakietu prawdopodobnie już załadowany i zainicjowany, dzięki czemu utrata wydajności jest minimalny.  
   

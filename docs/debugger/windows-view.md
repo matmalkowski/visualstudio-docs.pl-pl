@@ -1,36 +1,32 @@
 ---
 title: Widok okien | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bea2801baab38f84b8af8f2154f2be4f05dc205f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-view"></a>Widok okien
 Przy pierwszym otwarciu Spy ++, widoku systemu Windows wyświetla drzewo wszystkie okna i formantów w systemie. Nazwa okna obsługi i klasa są wyświetlane. Bieżące okno pulpitu jest w górnej części drzewa. Inne systemu windows są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchii standardowego okna. Okna równorzędne są wyświetlane na listach expansible poniżej ich elementów nadrzędnych.  
   
  Na poniższym rysunku przedstawiono typowy widok Spy ++ systemu Windows z najwyższy węzeł rozwinięty.  
   
- ![Spy &43; &#43; Widok okien](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
+ ![Spy&#43; &#43; widoku systemu Windows](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
 Widok okien Spy ++  
   
  Bieżące okno pulpitu jest w górnej części drzewa. Inne systemu windows są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchii standardowe okno z tego samego poziomu systemu windows uporządkowanych według kolejności. Można rozwinąć lub zwinąć dowolnego węzła nadrzędnego drzewa, klikając pozycję + lub - symbol obok węzła.  

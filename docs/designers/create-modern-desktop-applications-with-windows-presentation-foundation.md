@@ -1,23 +1,21 @@
 ---
 title: Tworzenie nowoczesnych aplikacji klasycznych z technologii Windows Presentation Foundation | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d6c7295-ff64-4681-b01c-5056e8504569
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 830814b2103d101f04cee036befccf01df1e81dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f81f3ce7b25ee09871cb94bca3369302ae280810
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>Tworzenie nowoczesnych aplikacji klasycznych z technologii Windows Presentation Foundation
 

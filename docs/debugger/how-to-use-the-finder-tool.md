@@ -1,32 +1,28 @@
 ---
-title: "Porady: Korzystanie z narzędzia wyszukiwania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Korzystanie z narzędzia wyszukiwania | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8feed3e948c6dba91edccb36162656589539a0a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
 Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzie wyszukiwania można również Znajdź okno podrzędne wyłączone i wykrycia, które okno, aby wyróżnić, jeśli wyłączono podrzędnych przedziały czasu nakładają na.  
   
- ![Spy &43; &#43; Okno dialogowe Znajdź okno](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
+ ![Spy&#43; &#43; Znajdź okno dialogowe](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
 Narzędzia wyszukiwania w oknie dialogowym Znajdź okno  
   
  Na ilustracji powyżej przedstawiono okno dialogowe Znajdź okno po wykonaniu kroku 3 poniżej.  

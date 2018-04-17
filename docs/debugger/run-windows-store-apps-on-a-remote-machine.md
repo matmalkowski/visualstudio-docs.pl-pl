@@ -1,28 +1,26 @@
 ---
 title: Uruchamianie aplikacji platformy uniwersalnej systemu Windows na zdalnym komputerze | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Uruchamianie aplikacji platformy uniwersalnej systemu Windows na komputerze zdalnym w programie Visual Studio
   
@@ -45,17 +43,17 @@ Pre twórcy wersją aktualizacji systemu Windows komputerów z systemem Windows 
   
 - Systemem Windows 10 w wersji starszej niż Windows 10 Creator aktualizacji komputerów z systemem Windows 10, należy najpierw [zainstalować i uruchomić składniki zdalnego debugowania](#BKMK_download).
   
-##  <a name="BKMK_Security"></a>Zabezpieczeń  
+##  <a name="BKMK_Security"></a> Zabezpieczeń  
 Domyślnie **uniwersalnego (nieszyfrowanego protokołu)** jest używany w systemie Windows 10. Protokół ten należy używać tylko w sieciach zaufanych. Połączenie debugowania jest narażony na złośliwych użytkowników, którzy może przechwytywać i zmiany danych są przekazywane między opracowywania i komputer zdalny.
   
 > [!WARNING]
 >  Brak żadnych zabezpieczeń sieci po ustawieniu trybu uwierzytelniania **uniwersalnego (nieszyfrowanego protokołu)** lub **Brak**. Te tryby należy wybrać tylko wtedy, gdy masz pewność, że sieć nie jest narażone z złośliwego lub szkodliwy ruch.  
   
-##  <a name="BKMK_DirectConnect"></a>Jak połączyć się bezpośrednio przy użyciu kabla USB 
+##  <a name="BKMK_DirectConnect"></a> Jak połączyć się bezpośrednio przy użyciu kabla USB 
 
 W systemie Windows 10 można wdrożyć na urządzeniu połączenie USB, wybierając **urządzenia** zamiast **maszyny zdalnej** jako cel wdrożenia (można to zrobić w **standardowe** paska narzędzi lub na stronie właściwości debugowania).
 
-##  <a name="BKMK_ConnectVS"></a>Konfigurowanie projektu programu Visual Studio zdalne debugowanie  
+##  <a name="BKMK_ConnectVS"></a> Konfigurowanie projektu programu Visual Studio zdalne debugowanie  
  Należy określić urządzenie zdalne, aby nawiązać połączenie we właściwościach projektu. Procedura zależy od języka programowania. Możesz wpisać nazwę sieciową urządzenie zdalne lub możesz wybrać je z **połączenia zdalnego** okno dialogowe.  
   
  ![Wybierz okno dialogowe połączenia zdalnego debugera](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ W systemie Windows 10 można wdrożyć na urządzeniu połączenie USB, wybieraj
 > [!TIP]
 >  Jeśli masz problemy z połączeniem urządzenie zdalne, spróbuj wprowadzić adres IP urządzenia. Aby określić adres IP urządzenia, Otwórz okno polecenia, a następnie wpisz **ipconfig**. Adres IP jest wymieniony jako **adres IPv4**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Wybierz urządzenie zdalne dla projektów C# i Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Wybierz urządzenie zdalne dla projektów C# i Visual Basic  
   
 1.  Wybierz nazwę projektu w Eksploratorze rozwiązań, a następnie wybierz pozycję **właściwości** z menu skrótów.  
   
@@ -77,7 +75,7 @@ W systemie Windows 10 można wdrożyć na urządzeniu połączenie USB, wybieraj
 
     ![Właściwości projektu zdalne debugowanie zarządzane](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Wybierz urządzenie zdalne dla projektów języka JavaScript i C++  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Wybierz urządzenie zdalne dla projektów języka JavaScript i C++  
   
 1.  Wybierz nazwę projektu w Eksploratorze rozwiązań, a następnie wybierz pozycję **właściwości** z menu skrótów.  
   
@@ -87,19 +85,19 @@ W systemie Windows 10 można wdrożyć na urządzeniu połączenie USB, wybieraj
   
 4.  Wprowadź nazwę sieci urządzenie zdalne w **Nazwa maszyny** wpisz lub wybierz strzałkę w dół w polu, aby wybrać urządzenie z **wybierz połączenia zdalnego debugera** okno dialogowe.  
 
-    ![& C &43; 43; właściwości do zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; właściwości do zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Pobierz i zainstaluj narzędzia zdalnej (wstępne twórców aktualizacja)
+## <a name="BKMK_download"></a> Pobierz i zainstaluj narzędzia zdalnej (wstępne twórców aktualizacja)
 
 Jeśli korzystasz z wersji pre twórcy wersje aktualizacji systemu Windows 10, wykonaj te instrukcje. W przeciwnym razie można pominąć tę sekcję.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Konfigurowanie zdalnego debugera
+### <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Uruchom sesję debugowania zdalnego  
+##  <a name="BKMK_RunRemoteDebug"></a> Uruchom sesję debugowania zdalnego  
  Uruchom, Zatrzymaj, a nawigowanie po sesji debugowania zdalnego tak samo jak sesji lokalnej. W wersji pre twórcy wersje aktualizacji systemu Windows 10 upewnij się, że Monitor debugera zdalnego działa na urządzeniu zdalnym.  
   
  Następnie wybierz pozycję **Rozpocznij debugowanie** na **debugowania** menu (klawiatury: F5). Projekt jest ponownie kompilowana, następnie wdrożyć i uruchomić na urządzeniu zdalnym. Debuger wstrzymuje wykonywanie w punktów przerwania i można przejść do, za pośrednictwem i z kodu. Wybierz **Zatrzymaj debugowanie** zakończyć sesję debugowania i zamknij aplikację zdalnego.

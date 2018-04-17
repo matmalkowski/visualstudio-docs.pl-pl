@@ -1,28 +1,26 @@
 ---
 title: Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze
 Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jest aplikacją, która symuluje aplikacji platformy uniwersalnej systemu Windows. Zazwyczaj można debugować na komputerze lokalnym, podłączonego urządzenia lub komputerze zdalnym. W niektórych scenariuszach może być do symulatora programu Visual Studio należy używać do emulowania różnych ekranu fizycznego rozmiaru i rozdzielczość. Można również Symulowanie zdarzeń obrotu i touch typowe i symulować właściwości połączenia sieciowego.
@@ -34,12 +32,12 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jes
 > [!IMPORTANT]
 >  Symulator programu Visual Studio 2015 nie zawiera przycisk używanie funkcji geolokalizacji. Jest to spowodowane symulator systemu Windows 10 nie obejmuje używanie funkcji geolokalizacji symulacji.
   
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a>Ustaw symulator jako element docelowy  
+##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Ustaw symulator jako element docelowy  
  Uruchamianie aplikacji platformy uniwersalnej systemu Windows w symulatorze, wybierz **symulatora** z listy rozwijanej obok pozycji listy **Rozpocznij debugowanie** przycisk debugera **standardowe** paska narzędzi. Ta opcja jest dostępna tylko jeśli aplikacji **Min platformy docelowej. Wersja** jest mniejsza niż system operacyjny na komputerze deweloperskim. 
   
  ![Działających w symulatorze](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
-##  <a name="BKMK_Choose_an_interaction_mode"></a>Wybierz tryb interakcji  
+##  <a name="BKMK_Choose_an_interaction_mode"></a> Wybierz tryb interakcji  
  Można wybrać następujące tryby interakcji  
   
 -   ![Tryb myszy](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") tryb myszy: ustawia gesty myszy trybu interakcji. Gesty myszy obejmują kliknięć, dwukrotne kliknięcia i drags.  
@@ -78,10 +76,10 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jes
   
     -   Naciśnij przycisk po lewej stronie i Obróć kółka myszy do przodu (od siebie) do obracania obiektu do ruchu wskazówek zegara.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a>Włącz lub wyłącz zawsze w trybie top  
+##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Włącz lub wyłącz zawsze w trybie top  
  Możesz ustawić okno symulator, aby być zawsze na wierzchu. **Przełącznika znajdujących się na górze okna** przycisk Włącza lub wyłącza **zawsze na wierzchu** tryb okna symulatora.  
   
-##  <a name="BKMK_Change_the_device_orientation"></a>Zmiana orientacji urządzenia  
+##  <a name="BKMK_Change_the_device_orientation"></a> Zmiana orientacji urządzenia  
  Możesz przełączyć orientacji urządzenia pomiędzy pionowy i poziomej przez obrócenie symulatora 90 stopni w dowolnym kierunku.  
   
 > [!NOTE]
@@ -90,7 +88,7 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jes
 > [!NOTE]
 >  Jeśli tak, aby krawędź symulator jest większy niż jest wyświetlany na ekranie obracania symulatorze, symulator jest automatycznie dopasowane do ekranu. Symulator nie zmieni się rozmiar oryginalny rozmiar obrócenie go ponownie.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a>Zmiana rozmiaru ekranu symulowane i rozwiązania  
+##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Zmiana rozmiaru ekranu symulowane i rozwiązania  
  Aby zmienić rozmiar symulowane ekranu i rozpoznawania, wybierz **zmienić rozpoznawania** znajdującego się na palecie i wybierz z listy nowy rozmiar i rozdzielczość.  
   
  Rozmiar ekranu i rozwiązania, które są wyświetlane jako *cali szerokości ekranu, pikseli szerokość i wysokość pikseli*. Uwaga symulowane zarówno do rozmiaru ekranu i rozdzielczości. Współrzędne lokalizacji w symulatorze są tłumaczone na współrzędne rozmiaru wybranego urządzenia i rozwiązywania.  
@@ -98,7 +96,7 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jes
 > [!NOTE]
 >  Wersje skalowanie obrazów rastrowych można zapisać w aplikacji i systemu Windows załadowanie prawidłowy obraz dla bieżącej skali. Aby uzyskać więcej informacji, zobacz [wprowadzenie projektu i interfejsu użytkownika](/windows/uwp/layout/design-and-ui-intro). Jednak, że system Windows wybiera inny obraz, aby dopasować rozdzielczość w przypadku zmiany rozpoznawania symulator, należy zatrzymać i uruchomić ponownie sesję debugowania, aby wyświetlić nowy obraz.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Przechwyć zrzut ekranu aplikacji do przesłania do Microsoft Store  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Przechwyć zrzut ekranu aplikacji do przesłania do Microsoft Store  
  Podczas przesyłania aplikacji Microsoft Store należy dołączyć zrzuty ekranu aplikacji.  
   
 > [!NOTE]
@@ -110,7 +108,7 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jes
   
      ![Menu kontekstowe ustawienia zrzut ekranu](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-##  <a name="BKMK_Simulate_network_connection_properties"></a>Symulowanie właściwości połączenia sieciowego  
+##  <a name="BKMK_Simulate_network_connection_properties"></a> Symulowanie właściwości połączenia sieciowego  
  Można ułatwić użytkownikom aplikacji, zarządzania kosztami połączeniach sieci taryfowych utrzymując pogłębianie wiedzy na temat połączenia koszt lub dane planu stanu zmiany w sieci i włączanie aplikacji dzięki tym informacjom można uniknąć ponoszenia dodatkowych kosztów dla mobilnych lub przekroczenie limit transferu określone dane. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) interfejsów API pozwala odpowiedzieć [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) i [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) zdarzenia, które logują. Zobacz [Szybki Start: Zarządzanie sieci taryfowej koszt ograniczenia](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Debugowanie lub testowanie kodu z uwzględnieniem kosztów sieci, symulator może naśladować właściwości sieci, które są dostępne za pośrednictwem [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) obiektu zwróconego przez [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
@@ -147,7 +145,7 @@ Symulator Visual Studio dla aplikacji platformy uniwersalnej systemu Windows jes
   
  [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach platformy UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Przejdź symulatora za pomocą klawiatury  
+##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Przejdź symulatora za pomocą klawiatury  
  Symulator narzędzi można przechodzić przez naciśnięcie przycisku **klawisze CTRL + ALT + Strzałka w górę** Aby przełączyć fokus w oknie symulatora do narzędzi symulatora. Użyj **Strzałka w górę** i **Strzałka w dół** można przenieść między przyciskami paska narzędzi.  
   
  Symulator można zamknąć, naciskając klawisz **CTRL + ALT + F4**.  

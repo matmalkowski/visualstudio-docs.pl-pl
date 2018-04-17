@@ -1,13 +1,10 @@
 ---
-title: "&lt;RelatedProducts&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;RelatedProducts&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9fafc77df0bc557952bd5e197f3c950a3d028e3e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elementu (programu inicjującego)
 `RelatedProducts` Element definiuje innych produktów, które zależą od lub są objęte bieżącego produktu.  
@@ -61,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  `DependsOnProduct` Elementu oznacza, że bieżący produkt zależy od wskazanego produktu i że wskazanego produktu powinien być zainstalowany przed bieżącym. Jest elementem podrzędnym `RelatedProducts` elementu. A `RelatedProducts` element może mieć co najmniej jeden `DependsOnProduct` elementów.  
   
- `DependsOnProduct`ma następującego atrybutu.  
+ `DependsOnProduct` ma następującego atrybutu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="includesproduct"></a>IncludesProduct  
  `IncludesProduct` Elementu oznacza, że produkt jest uwzględniona w bieżącej instalacji nie wymagają osobnej instalacji. Jest elementem podrzędnym `RelatedProducts` elementu. A `RelatedProducts` element może mieć co najmniej jeden `IncludesProduct` elementów.  
   
- `IncludesProduct`ma następującego atrybutu.  
+ `IncludesProduct` ma następującego atrybutu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  

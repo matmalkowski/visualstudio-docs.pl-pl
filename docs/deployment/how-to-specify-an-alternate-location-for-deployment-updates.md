@@ -1,12 +1,10 @@
 ---
-title: "Porady: Określanie alternatywnej lokalizacji aktualizacji wdrażania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: Określanie alternatywnej lokalizacji aktualizacji wdrażania | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 107fb4680b2ee5600c2cee847ebb3d2b5efd7da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Porady: określanie alternatywnej lokalizacji aktualizacji wdrażania
 Można zainstalować programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji początkowo z dysku CD lub udziału plików, ale aplikacja musi sprawdzić okresowej aktualizacji w sieci Web. Alternatywnej lokalizacji aktualizacji można określić w manifeście wdrażania, aby aplikację można aktualizować się z sieci Web po początkowej instalacji.  
@@ -50,9 +48,9 @@ Można zainstalować programu [!INCLUDE[ndptecclick](../deployment/includes/ndpt
   
 1.  Otwórz wiersz polecenia .NET Framework.  
   
-2.  Ustaw lokalizację aktualizacji przy użyciu następującego polecenia. W tym przykładzie **HelloWorld.exe.application** to ścieżka do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji, która ma zawsze rozszerzenie .application, i **http://adatum.com/Update/Path** jest adres URL które [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będzie sprawdzać dostępność aktualizacji aplikacji.  
+2.  Ustaw lokalizację aktualizacji przy użyciu następującego polecenia. W tym przykładzie **HelloWorld.exe.application** to ścieżka do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji, która ma zawsze rozszerzenie .application, i **http://adatum.com/Update/Path** jest adres URL tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będzie sprawdzać dostępność aktualizacji aplikacji.  
   
-     **Obraz — aktualizacja HelloWorld.exe.application http://adatum.com/Update/Path - ProviderUrl**  
+     **Obraz — aktualizacja HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
 3.  Zapisz plik.  
   

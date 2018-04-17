@@ -2,10 +2,7 @@
 title: Wprowadzenie do narzędzi Visual Studio Tools for Unity | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 04/07/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 author: conceptdev
@@ -13,11 +10,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 3cac4d31611ae1facdf7ac2ba628e06622f10b59
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
 W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Unity i skonfigurować projektu Unity do pracy z programem Visual Studio.
@@ -47,7 +44,7 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
 
      [Pobierz Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)
 
--   For Visual Studio 2012 Professional or Visual Studio 2012 Premium:
+-   Dla programu Visual Studio 2012 Professional lub Visual Studio 2012 Premium:
 
      [Pobierz program Visual Studio 2012 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)
 

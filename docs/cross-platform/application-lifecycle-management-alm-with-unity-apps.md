@@ -2,22 +2,19 @@
 title: Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 author: dantogno
 ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 05196d7c9e6b1b441db61f599dcfe39c4d5cba56
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
 Tworzenie aplikacji dla platformy nowoczesnych obejmuje wiele działań więcej niż tylko pisania kodu. Te działania określone jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i obejmują planowania i śledzenia elementów pracy, projektowania i wdrażania kodu, zarządzanie repozytorium kodu źródłowego, uruchomionych kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testów jednostkowych i interfejsu użytkownika), systemem różne rodzaje diagnostyki w środowiskach produkcyjnych i rozwoju i monitorowanie zachowania wydajności i użytkownika aplikacji w czasie rzeczywistym za pomocą telemetrii i analiza.
@@ -104,7 +101,7 @@ Opis łącza:  **[poprawy jakości kodu](/visualstudio/test/improve-code-quality
 |[Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak|Można analizować kodu skryptu C# w programie Visual Studio.|
 |[Znajdowanie zduplikowanego kodu za pomocą narzędzia do wykrywania klonu kodu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak|Można analizować kodu skryptu C# w programie Visual Studio.|
 |[Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak|Można analizować kodu skryptu C# w programie Visual Studio.|
-|[Performance Explorer](../profiling/performance-explorer.md)|Nie|Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (Unity witryny sieci Web).|
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (Unity witryny sieci Web).|
 |[Analiza problemów pamięci .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie mają punkty zaczepienia w ramach Mono (używano Unity) do profilowania. Użyj [profilera Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja Unity).|
 
 ## <a name="release-management"></a>Release Management

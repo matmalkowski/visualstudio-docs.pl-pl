@@ -1,19 +1,19 @@
 ---
-title: "Wyświetlanie danych w programie Blend | Dokumentacja firmy Microsoft"
+title: Wyświetlanie danych w programie Blend | Dokumentacja firmy Microsoft
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bec94556432d4f62cf44963f6949d56473b0d48d
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 8de735002d0caab7e716e48d52279b6c4d694eb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="display-data-in-blend"></a>Wyświetlanie danych w programie Blend
 

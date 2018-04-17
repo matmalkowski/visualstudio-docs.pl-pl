@@ -1,27 +1,25 @@
 ---
-title: "Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Wdrażanie aplikacji, która będzie debugowany po uruchomieniu przez inną aplikację lub metody.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Jak wdrożyć aplikację platformy uniwersalnej systemu Windows  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak wdrożyć aplikację platformy uniwersalnej systemu Windows  
  Ręczne wdrażanie aplikacji jest prosty proces:  
   
 1.  Jeśli wdrażasz do zdalnego urządzenia, określ nazwę lub adres IP urządzenia, na stronie właściwości projektu Projekt startowy aplikacji. (Kroki są wymienione w dół dalsze w tym temacie).  
@@ -50,7 +48,7 @@ ms.lasthandoff: 01/19/2018
   
 3.  Na **kompilacji** menu, wybierz **wdrażania**  
   
-##  <a name="BKMK_How_to_specify_a_remote_device"></a>Jak określać urządzenie zdalne  
+##  <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określać urządzenie zdalne  
 
 **Wymagania wstępne**  
   
@@ -81,7 +79,7 @@ Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplika
   
  **Określanie zdalnego urządzenia na stronie projektu JavaScript lub Visual C++**  
   
- ![& C &43; 43; właściwości do zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; właściwości do zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Wybierz **zdalnego debugera** z **debugera, aby uruchomić** listy.  
   
@@ -95,7 +93,7 @@ Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplika
   
 2.  Wprowadź nazwę sieci urządzenie zdalne w **maszyny zdalnej** lub kliknij przycisk **znaleźć** aby wybrać urządzenie z **wybierz połączenia zdalnego debugera** okno dialogowe.  
   
-##  <a name="BKMK_Deployment_options"></a>Opcje wdrażania  
+##  <a name="BKMK_Deployment_options"></a> Opcje wdrażania  
  Można ustawić następujące opcje wdrażania na stronie właściwości debugowania projektu startowego.  
   
  **Zezwalaj na sprzężenie zwrotne sieci**  

@@ -1,23 +1,21 @@
 ---
-title: "Pierwsze kroki z użyciem WPF | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Pierwsze kroki z użyciem WPF | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fd2062cf7050bb0effaa1d044d50561e82ba10f
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 96a32e9cfa502b0ea591dda9feeaf4cc2e256849
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-wpf"></a>Pierwsze kroki z użyciem WPF
 Windows Presentation Foundation (WPF) to platforma interfejsu użytkownika, która tworzy aplikacje klienta. Platformy programistycznej WPF obsługuje szeroką gamę funkcje tworzenia aplikacji, w tym modelu aplikacji, zasobów, formantów, grafiki, układ, wiązania z danymi, dokumentów i zabezpieczeń. Jest to podzbiór platformy .NET, więc jeśli aplikacje zostały wcześniej wbudowana z programu .NET Framework za pomocą programu ASP.NET lub program Windows Forms, środowisko programowania należy się zapoznać. WPF używa Extensible Application Markup Language (XAML), aby zapewnić deklaratywne modelu programowania aplikacji. Ta sekcja zawiera tematy dotyczące wprowadzić i ułatwiające rozpoczęcie pracy z użyciem WPF.  

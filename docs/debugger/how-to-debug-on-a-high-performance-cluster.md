@@ -1,12 +1,10 @@
 ---
-title: "Porady: debugowanie w klastrze wysokiej wydajności | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: debugowanie w klastrze wysokiej wydajności | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - cluster debugging
 - high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 18a8d66da62fd480934c750a6b809465022c5d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d90037fbf147dd0234ee356f217ab97e5af87a01
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Porady: debugowanie w klastrze o wysokiej wydajności
 Debugowanie programu przetwarzanie wieloprocesorowe w klastrze wysokiej wydajności jest podobne do debugowania zwykłego programu na komputerze zdalnym. Istnieje jednak kilka dodatkowych kwestii dotyczących. Wymagania ogólne ustawienia zdalnego, zobacz [zdalnego debugowania](../debugger/remote-debugging.md).  
@@ -70,7 +68,7 @@ Debugowanie programu przetwarzanie wieloprocesorowe w klastrze wysokiej wydajno�
   
      —lub—  
   
-     `ProcessID =`*yourprocessIDnumber*  
+     `ProcessID =` *yourprocessIDnumber*  
   
      Do utworzenia bardziej złożonych filtrów, możesz łączyć klauzule przy użyciu `&`, operator i `||`, OR operator `!`, operator i nawiasy.  
   
@@ -84,11 +82,11 @@ Debugowanie programu przetwarzanie wieloprocesorowe w klastrze wysokiej wydajno�
   
 3.  W **filtru punktu przerwania** okno dialogowe, wpisz:  
   
-     `ThreadName =`*yourthreadname*  
+     `ThreadName =` *yourthreadname*  
   
      —lub—  
   
-     `ThreadID =`*yourthreadIDnumber*  
+     `ThreadID =` *yourthreadIDnumber*  
   
      Do utworzenia bardziej złożonych filtrów, możesz łączyć klauzule przy użyciu `&`, operator i `||`, OR operator `!`, operator i nawiasy.  
   

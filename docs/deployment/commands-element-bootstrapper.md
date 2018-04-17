@@ -1,13 +1,10 @@
 ---
-title: "&lt;Polecenia&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;Polecenia&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Polecenia&gt; elementu (programu inicjującego)
 `Commands` Testy opisanego przez elementy podrzędne implementuje element `InstallChecks` elementu i oświadcza, które pakiety [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programu inicjującego należy zainstalować, jeśli test zakończy się niepowodzeniem.  
@@ -76,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Reboot`|Opcjonalny. Określa, czy jeśli żadnych pakietów, zwróci kod zakończenia ponownego uruchomienia komputera należy ponownie uruchomić system. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Defer`., Ponowne uruchomienie jest odroczona do przyszłości.<br /><br /> `Immediate`., Powoduje natychmiastowego ponownego uruchomienia, jeśli jeden z pakietów zwrócony kod zakończenia ponownego uruchomienia.<br /><br /> `None`., Powoduje, że żądania ponownego uruchomienia mają być ignorowane.<br /><br /> Wartość domyślna to `Immediate`.|  
+|`Reboot`|Opcjonalny. Określa, czy jeśli żadnych pakietów, zwróci kod zakończenia ponownego uruchomienia komputera należy ponownie uruchomić system. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Defer`. Ponowne uruchomienie jest odroczona do przyszłości.<br /><br /> `Immediate`. Powoduje natychmiastowego ponownego uruchomienia, jeśli jeden z pakietów zwrócony kod zakończenia ponownego uruchomienia.<br /><br /> `None`. Powoduje, że żądania ponownego uruchomienia mają być ignorowane.<br /><br /> Wartość domyślna to `Immediate`.|  
   
 ## <a name="command"></a>Polecenie  
  `Command` Element jest elementem podrzędnym `Commands` elementu. A `Commands` element może mieć co najmniej jeden `Command` elementów. Element ma następujące atrybuty.  
@@ -96,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="bypassif"></a>BypassIf  
  `BypassIf` Element jest elementem podrzędnym `InstallConditions` elementu oraz opis dodatnią warunek, pod którym nie mają zostać wykonane polecenie. Każdy `InstallConditions` element może mieć wartość zero lub więcej `BypassIf` elementów.  
   
- `BypassIf`ma następujące atrybuty.  
+ `BypassIf` ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="failif"></a>FailIf  
  `FailIf` Element jest elementem podrzędnym `InstallConditions` elementu oraz opis dodatnią warunku, pod którym instalacja powinna zostać przerwana. Każdy `InstallConditions` element może mieć wartość zero lub więcej `FailIf` elementów.  
   
- `FailIf`ma następujące atrybuty.  
+ `FailIf` ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -119,15 +115,15 @@ ms.lasthandoff: 12/22/2017
 |`Schedule`|Opcjonalny. Nazwa `Schedule` znacznik definiujący, kiedy należy ocenić tę regułę.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes` Element jest elementem podrzędnym `Command` elementu. `ExitCodes` Elementu zawiera jeden lub więcej `ExitCode` elementów, które określają, co należy wykonać instalację w odpowiedzi kod zakończenia z pakietem. Może istnieć jeden opcjonalny `ExitCode` element poniżej `Command` elementu. `ExitCodes`nie ma żadnych atrybutów.  
+ `ExitCodes` Element jest elementem podrzędnym `Command` elementu. `ExitCodes` Elementu zawiera jeden lub więcej `ExitCode` elementów, które określają, co należy wykonać instalację w odpowiedzi kod zakończenia z pakietem. Może istnieć jeden opcjonalny `ExitCode` element poniżej `Command` elementu. `ExitCodes` Nie ma żadnych atrybutów.  
   
 ## <a name="exitcode"></a>exitCode  
- `ExitCode` Element jest elementem podrzędnym `ExitCodes` elementu. `ExitCode` Określa instalację zrobić w odpowiedzi kod zakończenia z pakietem. `ExitCode`nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
+ `ExitCode` Element jest elementem podrzędnym `ExitCodes` elementu. `ExitCode` Określa instalację zrobić w odpowiedzi kod zakończenia z pakietem. `ExitCode` nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Value`|Wymagany. Wartość kodu zakończenia, do której należy `ExitCode` element ma zastosowanie.|  
-|`Result`|Wymagany. Sposób instalacji powinny reagować na ten kod zakończenia. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Success`., Flagi za pomyślnie zainstalowanym pakietem.<br /><br /> `SuccessReboot`., Flagi za pomyślnie zainstalowanym pakietem i instruuje ponownego uruchomienia systemu.<br /><br /> `Fail`., Flagi pakietu, ponieważ nie powiodło się.<br /><br /> `FailReboot`., Flagi pakietu, ponieważ nie powiodło się i instruuje ponownego uruchomienia systemu.|  
+|`Result`|Wymagany. Sposób instalacji powinny reagować na ten kod zakończenia. Na poniższej liście przedstawiono prawidłowe wartości:<br /><br /> `Success`. Flagi za pomyślnie zainstalowanym pakietem.<br /><br /> `SuccessReboot`. Flagi za pomyślnie zainstalowanym pakietem i instruuje ponownego uruchomienia systemu.<br /><br /> `Fail`. Flagi pakietu, ponieważ nie powiodło się.<br /><br /> `FailReboot`. Flagi pakietu, ponieważ nie powiodło się i instruuje ponownego uruchomienia systemu.|  
 |`String`|Opcjonalny. Wartość do użytkownika w odpowiedzi na ten kod zakończenia.|  
 |`FormatMessageFromSystem`|Opcjonalny. Określa, czy użyć dostarczane przez system błąd odpowiadający kod zakończenia lub wartość podana w `String`. Prawidłowe wartości to `true`, co oznacza, że do użycia dostarczane przez system błąd i `false`, co oznacza, że użyć ciągu podał `String`. Wartość domyślna to `false`. Jeśli ta właściwość jest `false`, ale `String` nie jest ustawiony dostarczane przez system błąd będą używane.|  
   

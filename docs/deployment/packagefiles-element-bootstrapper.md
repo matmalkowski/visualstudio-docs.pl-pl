@@ -1,13 +1,10 @@
 ---
-title: "&lt;PackageFiles&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;PackageFiles&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f58a9d2ca9bf77a2119e0b2a2716c96676889568
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elementu (programu inicjującego)
 `PackageFiles` Element zawiera `PackageFile` elementów, które określają pakiety instalacyjne wykonywane w `Command` elementu.  
@@ -57,7 +53,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile` Element jest elementem podrzędnym `PackageFiles` elementu. A `PackageFiles` element musi mieć co najmniej jeden `PackageFile` elementu.  
   
- `PackageFile`ma następujące atrybuty.  
+ `PackageFile` ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  

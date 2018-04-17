@@ -1,11 +1,8 @@
 ---
-title: "Dodawanie formantów niestandardowych do okna źródeł danych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dodawanie formantów niestandardowych do okna źródeł danych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie formantów niestandardowych do okna źródeł danych
 Gdy przeciągnąć element z **źródeł danych** okna do powierzchni projektu, można utworzyć formantu powiązanego z danymi, można wybrać typ formantu, który można utworzyć. Każdy element w oknie ma listy wyświetla formantów, które są dostępne. Zbiór kontrolki skojarzone z każdym elementem zależy od typu danych elementu. Jeśli formant, który ma zostać utworzony, nie ma na liście, można postępuj zgodnie z instrukcjami w tym temacie, aby dodać kontrolki do listy.  
@@ -37,7 +33,7 @@ Gdy przeciągnąć element z **źródeł danych** okna do powierzchni projektu, 
 > [!NOTE]
 >  Okna dialogowe i dostępne polecenia menu mogą różnić się od opisanych w pomocy, w zależności od wersji lub aktywne ustawienia. Aby zmienić ustawienia, na **narzędzia** menu, wybierz opcję **Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a>Dostosowywanie na liście można powiązać formantów dla typu danych  
+##  <a name="customizinglist"></a> Dostosowywanie na liście można powiązać formantów dla typu danych  
  Aby dodać lub usunąć formantów z listy dostępnych formantów dla elementów w **źródeł danych** okna, które ma typ danych, wykonaj następujące kroki.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Aby wybrać formantów był wyświetlany dla typu danych  
@@ -71,7 +67,7 @@ Gdy przeciągnąć element z **źródeł danych** okna do powierzchni projektu, 
   
      Formanty wybranym **skojarzonych formantów** pola wyświetlone w menu rozwijanym elementu.  
   
-##  <a name="addingcontrols"></a>Dodawanie formantów do listy skojarzonych formantów dla typu danych  
+##  <a name="addingcontrols"></a> Dodawanie formantów do listy skojarzonych formantów dla typu danych  
  Jeśli chcesz skojarzyć z typem danych formantu, ale nie ma formantu **skojarzonych formantów** okno, należy dodać kontrolki do listy. Formant musi znajdować się w bieżącym rozwiązaniu lub w przywoływanym zestawie. Musi być także dostępna w **przybornika**, i mieć atrybut, który określa zachowanie wiązania danych formantu.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Aby dodać kontrolki do listy skojarzonych formantów  

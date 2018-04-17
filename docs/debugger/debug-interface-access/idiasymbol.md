@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol — | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Idiasymbol — | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 112fe38d556b8d97f888a25039c49ca9473e1329
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Opisuje właściwości instancji symbolu.  
@@ -267,7 +263,7 @@ IDiaSymbol : IUnknown
  Ten przykład przedstawia sposób wyświetlania zmiennych lokalnych dla funkcji pod danym adresem względnym wirtualnego. Pokazuje też, jak symbole różne typy są ze sobą powiązane.  
   
 > [!NOTE]
->  `CDiaBSTR`jest klasa, która opakowuje `BSTR` i automatycznie obsługuje zwalnianie ciąg, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
+>  `CDiaBSTR` jest klasa, która opakowuje `BSTR` i automatycznie obsługuje zwalnianie ciąg, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
   
 ```C++  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  
@@ -342,7 +338,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- `Header:`Dia2.h  
+ `Header:` dia2.h  
   
  Biblioteki: diaguids.lib  
   

@@ -1,13 +1,10 @@
 ---
 title: Debug Interface Access SDK | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger [DIA SDK]
 - DIA SDK
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ae5afe3b5eacaad31ae7b4fcd6aeb092aa37300c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-interface-access-sdk"></a>Zestaw SDK dostępu do interfejsu debugowania
 Microsoft debugowania interfejsu dostępu Software Development Kit (DIA SDK) zapewnia dostęp do debugowania informacje przechowywane w plikach bazy danych (.pdb) program generowane przez postcompiler narzędzi firmy Microsoft. Ponieważ format pliku PDB wygenerowany za pomocą narzędzi postcompiler ulega poprawki stałej, udostępnianie format jest niepraktyczne. Przy użyciu interfejsu API DIA, można tworzyć aplikacje, które wyszukiwać i przeglądać informacje o debugowaniu przechowywane w pliku PDB. Takie aplikacje można na przykład raport informacje zwrotne śledzenia stosu i analizowanie danych dotyczących wydajności.  

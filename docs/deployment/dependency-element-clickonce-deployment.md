@@ -1,13 +1,10 @@
 ---
-title: "&lt;zależności&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;zależności&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +23,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależności&gt; elementu (wdrażania ClickOnce)
 Identyfikuje wersji aplikacji do zainstalowania i lokalizacja manifestu aplikacji.  
@@ -98,7 +94,7 @@ Identyfikuje wersji aplikacji do zainstalowania i lokalizacja manifestu aplikacj
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Name`|Wymagany. Określa nazwę aplikacji.|  
-|`Version`|Wymagany. Określa numer wersji aplikacji, w następującym formacie:`major.minor.build.revision`|  
+|`Version`|Wymagany. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
 |`publicKeyToken`|Wymagany. Określa 16-znakowym ciągiem szesnastkowym reprezentujący ostatnich 8 bajtów skrótu SHA-1 klucza publicznego, pod którą jest podpisany aplikacji lub zestawu. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub większej.|  
 |`processorArchitecture`|Wymagany. Określa procesor. Prawidłowe wartości to `x86` dla 32-bitowego systemu Windows i `IA64` dla 64-bitowego systemu Windows.|  
 |`Language`|Opcjonalny. Identyfikuje kodów języków dwie części zestawu. Na przykład EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
@@ -107,7 +103,7 @@ Identyfikuje wersji aplikacji do zainstalowania i lokalizacja manifestu aplikacj
 ## <a name="hash"></a>hash  
  `hash` Element jest opcjonalny element podrzędny `file` elementu. `hash` Element nie ma żadnych atrybutów.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]używa algorytmicznego skrót wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żadne pliki nie zostały zmieniły po wdrożeniu. Jeśli `hash` element nie jest dołączana, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` element nie jest zalecane.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] używa algorytmicznego skrót wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żadne pliki nie zostały zmieniły po wdrożeniu. Jeśli `hash` element nie jest dołączana, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` element nie jest zalecane.  
   
 ## <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
  `dsig:Transforms` Element jest elementem podrzędnym wymagane `hash` elementu. `dsig:Transforms` Element nie ma żadnych atrybutów.  

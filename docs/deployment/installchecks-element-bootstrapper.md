@@ -1,13 +1,10 @@
 ---
-title: "&lt;InstallChecks&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;InstallChecks&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <InstallChecks> element [bootstrapper]
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dfd01eb4aa67af9e23a7c8c348bcacb263ccb6f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elementu (programu inicjującego)
 `InstallChecks` Elementu obsługuje uruchamianie różnych testów w komputerze lokalnym, aby upewnić się, że wszystkie odpowiednie wymagania wstępne dla aplikacji zostały zainstalowane.  
@@ -88,9 +84,9 @@ ms.lasthandoff: 12/22/2017
 |`ProcessorArchitecture`|Opcjonalny. Procesor komputera celem tej instalacji. Wartość domyślna to `msil`.|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- Ten element jest elementem podrzędnym opcjonalne `InstallChecks`. Dla każdego wystąpienia `ExternalCheck`, inicjujący wykonania nazwanego programu zewnętrznego w oddzielnych procesach i przechowywać we właściwości wskazywanym przez jego kod zakończenia `Property`. `ExternalCheck`przydaje się wdrażanie złożonych zależności lub gdy jest jedynym sposobem, aby sprawdzić obecność składnika można go utworzyć.  
+ Ten element jest elementem podrzędnym opcjonalne `InstallChecks`. Dla każdego wystąpienia `ExternalCheck`, inicjujący wykonania nazwanego programu zewnętrznego w oddzielnych procesach i przechowywać we właściwości wskazywanym przez jego kod zakończenia `Property`. `ExternalCheck` przydaje się wdrażanie złożonych zależności lub gdy jest jedynym sposobem, aby sprawdzić obecność składnika można go utworzyć.  
   
- `ExternalCheck`nie zawiera żadnych elementów i ma następujące atrybuty.  
+ `ExternalCheck` nie zawiera żadnych elementów i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -101,20 +97,20 @@ ms.lasthandoff: 12/22/2017
 ## <a name="filecheck"></a>FileCheck  
  Ten element jest elementem podrzędnym opcjonalne `InstallChecks`. Dla każdego wystąpienia `FileCheck`, inicjujący określi, czy istnieje wskazanego pliku i zwraca numer wersji pliku. Jeśli plik nie ma numer wersji, inicjujący ustawia właściwość o nazwie `Property` na 0. Jeśli plik nie istnieje, `Property` nie jest ustawiony na żadnej wartości.  
   
- `FileCheck`nie zawiera żadnych elementów i ma następujące atrybuty.  
+ `FileCheck` nie zawiera żadnych elementów i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Ta właściwość może być przywoływany testu poniżej `InstallConditions` element, który jest elementem podrzędnym elementu `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<polecenia > elementu](../deployment/commands-element-bootstrapper.md).|  
 |`FileName`|Wymagany. Nazwa znajduje się w pliku.|  
 |`SearchPath`|Wymagany. Dysku lub folder, w którym można wyszukać plik. Musi to być ścieżką względną, jeśli `SpecialFolder` przypisano; w przeciwnym razie musi być ścieżką bezwzględną.|  
-|`SpecialFolder`|Opcjonalny. Folder, który ma specjalne znaczenie do systemu Windows lub do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Wartość domyślna to interpretować `SearchPath` jako ścieżkę bezwzględną. Prawidłowe wartości są następujące:<br /><br /> `AppDataFolder`., Folder dane aplikacji dla tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; specyficzne dla bieżącego użytkownika.<br /><br /> `CommonAppDataFolder`., Folder dane aplikacji, używane przez wszystkich użytkowników.<br /><br /> `CommonFilesFolder`., Folder plików wspólnych dla bieżącego użytkownika.<br /><br /> `LocalDataAppFolder`., Folder dane aplikacji z systemem innym niż roamingu.<br /><br /> `ProgramFilesFolder`., Standardowa folderu Program Files aplikacje 32-bitowe.<br /><br /> `StartUpFolder`., Folder, który zawiera wszystkie aplikacje uruchamiane podczas uruchamiania systemu.<br /><br /> `SystemFolder`., Folder zawierający system 32-bitowych bibliotek DLL.<br /><br /> `WindowsFolder`., Folder zawierający instalacji systemu Windows.<br /><br /> `WindowsVolume`., Dysk lub partycję, która zawiera instalacji systemu Windows.|  
+|`SpecialFolder`|Opcjonalny. Folder, który ma specjalne znaczenie do systemu Windows lub do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Wartość domyślna to interpretować `SearchPath` jako ścieżkę bezwzględną. Prawidłowe wartości są następujące:<br /><br /> `AppDataFolder`. Folder dane aplikacji dla tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji; specyficzne dla bieżącego użytkownika.<br /><br /> `CommonAppDataFolder`. Folder dane aplikacji, używane przez wszystkich użytkowników.<br /><br /> `CommonFilesFolder`. Folder plików wspólnych dla bieżącego użytkownika.<br /><br /> `LocalDataAppFolder`. Folder dane aplikacji z systemem innym niż roamingu.<br /><br /> `ProgramFilesFolder`. Standardowa folderu Program Files aplikacje 32-bitowe.<br /><br /> `StartUpFolder`. Folder, który zawiera wszystkie aplikacje uruchamiane podczas uruchamiania systemu.<br /><br /> `SystemFolder`. Folder zawierający system 32-bitowych bibliotek DLL.<br /><br /> `WindowsFolder`. Folder zawierający instalacji systemu Windows.<br /><br /> `WindowsVolume`. Dysk lub partycję, która zawiera instalacji systemu Windows.|  
 |`SearchDepth`|Opcjonalny. Głębokość w do wyszukania podfoldery dla wskazanego pliku. Wyszukiwanie jest pierwszy głębokość. Wartość domyślna to 0, co ogranicza wyszukiwanie do folderu najwyższego poziomu, określony przez `SpecialFolder` i **SearchPath**.|  
   
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  Ten element jest elementem podrzędnym opcjonalne `InstallChecks`. Dla każdego wystąpienia `MsiProductCheck`, inicjujący sprawdza, czy określony instalacji Instalator systemu Microsoft Windows zostało uruchomione, dopóki zostanie zakończona. Wartość właściwości jest ustawiana w zależności od stanu tego zainstalowany produkt. Wskazuje wartość dodatnią produkt jest zainstalowany, 0 lub wartość -1 wskazuje, nie jest zainstalowany. (Zobacz funkcji zestawu SDK Instalatora Windows MsiQueryFeatureState, aby uzyskać więcej informacji.) . Jeśli Instalator Windows nie jest zainstalowany na komputerze, `Property` nie jest ustawiona.  
   
- `MsiProductCheck`nie zawiera żadnych elementów i ma następujące atrybuty.  
+ `MsiProductCheck` nie zawiera żadnych elementów i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -125,24 +121,24 @@ ms.lasthandoff: 12/22/2017
 ## <a name="registrycheck"></a>RegistryCheck  
  Ten element jest elementem podrzędnym opcjonalne `InstallChecks`. Dla każdego wystąpienia `RegistryCheck`, inicjujący sprawdza, czy określony klucz rejestru istnieje, i czy ma określoną wartość.  
   
- `RegistryCheck`nie zawiera żadnych elementów i ma następujące atrybuty.  
+ `RegistryCheck` nie zawiera żadnych elementów i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Ta właściwość może być przywoływany testu poniżej `InstallConditions` element, który jest elementem podrzędnym elementu `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<polecenia > elementu](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Wymagany. Nazwa klucza rejestru.|  
-|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartość domyślna to aby zwrócić tekst wartości domyślnej. `Value`musi być ciągiem lub wartością DWORD.|  
+|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartość domyślna to aby zwrócić tekst wartości domyślnej. `Value` musi być ciągiem lub wartością DWORD.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  Ten element jest elementem podrzędnym opcjonalne `InstallChecks`. Dla każdego wystąpienia `RegistryFileCheck`, inicjujący pobiera wersję określony plik, najpierw próby pobrania ścieżki do pliku z określonym kluczu rejestru. Jest to szczególnie przydatne, jeśli chcesz odszukać pliku w katalogu określonym jako wartości w rejestrze.  
   
- `RegistryFileCheck`nie zawiera żadnych elementów i ma następujące atrybuty.  
+ `RegistryFileCheck` nie zawiera żadnych elementów i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`Property`|Wymagany. Nazwa właściwości do przechowywania wyniku. Ta właściwość może być przywoływany testu poniżej `InstallConditions` element, który jest elementem podrzędnym elementu `Command` elementu. Aby uzyskać więcej informacji, zobacz [ \<polecenia > elementu](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Wymagany. Nazwa klucza rejestru. Jego wartość jest interpretowana jako ścieżka do pliku, chyba że `File` ustawiono atrybut. Jeśli ten klucz nie istnieje, `Property` nie jest ustawiona.|  
-|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartość domyślna to aby zwrócić tekst wartości domyślnej. `Value`musi być ciągiem.|  
+|`Value`|Opcjonalny. Nazwa wartości rejestru do pobrania. Wartość domyślna to aby zwrócić tekst wartości domyślnej. `Value` musi być ciągiem.|  
 |`FileName`|Opcjonalny. Nazwa pliku. Jeśli jest określony, wartość uzyskane z klucza rejestru jest założono, że to ścieżka katalogu, a ta nazwa jest dołączany do niego. Jeśli nie zostanie określony, wartość zwracana z rejestru jest założono, że to pełna ścieżka do pliku.|  
 |`SearchDepth`|Opcjonalny. Głębokość w do wyszukania podfoldery dla wskazanego pliku. Wyszukiwanie jest pierwszy głębokość. Wartość domyślna to 0, co ogranicza wyszukiwanie do folderu najwyższego poziomu, określonym przez wartość klucza rejestru.|  
   

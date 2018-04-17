@@ -1,27 +1,25 @@
 ---
 title: Dokument dziennika grafiki | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
 - vs.graphics.experiment
 - vs.graphics.vsglog
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b5119045a7a1552a89f273963f94d30a4063e73b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
 Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły podczas, gdy aplikacja była uruchomiona w obszarze sesję diagnostyki grafiki. Po rejestrowane, można sprawdzić dziennik w analizatora grafiki programu Visual Studio do diagnozowania problemów renderowania i wydajność.  
@@ -80,7 +78,7 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły pod
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Ścieżka**|Ścieżka pliku .vsglog. **Uwaga:** w obszarze przechwytywania starszej wersji, ta właściwość jest używana.|  
+|**Path**|Ścieżka pliku .vsglog. **Uwaga:** w obszarze przechwytywania starszej wersji, ta właściwość jest używana.|  
   
  **Informacje o module**  
  Wyświetla nazwę i wersję bibliotek dołączanych dynamicznie (dll), które zostały załadowane przez aplikację podczas sesji przechwytywania.  
@@ -102,7 +100,7 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły pod
 |Właściwość|Opis|  
 |--------------|-----------------|  
 |**Data/godzina ostatniej modyfikacji**|Data i godzina, że aplikacja została skompilowana.|  
-|**Ścieżka**|Ścieżka aplikacji.|  
+|**Path**|Ścieżka aplikacji.|  
 |**Identyfikator procesu**|Identyfikator procesu, który zostało przekazane do aplikacji.|  
 |**Wersja**|Wersja aplikacji.|  
   

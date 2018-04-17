@@ -1,12 +1,10 @@
 ---
-title: "Porady: debugowanie przy użyciu źródła Code Center Premium | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: debugowanie przy użyciu źródła Code Center Premium | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Code Center Premium
 - debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ef757e71f557febab74f4575635993cf77214250
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Porady: debugowanie przy użyciu źródła Code Center Premium
 Z [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] debugera, można debugować bezpiecznego udostępnionego źródła z Microsoft MSDN Code Center Premium.  
@@ -57,7 +55,7 @@ Z [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] debugera
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Pamiętaj dołączyć końcowy ukośnik **/**  na końcu ścieżki.  
+    >  Pamiętaj dołączyć końcowy ukośnik**/** na końcu ścieżki.  
   
      Przenieś te lokalizacje na początku listy, aby upewnić się, czy pierwszy załadowano symbole te.  
   
@@ -114,7 +112,7 @@ Z [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] debugera
      `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Pamiętaj dołączyć końcowy ukośnik **/**  na końcu ścieżki.  
+    >  Pamiętaj dołączyć końcowy ukośnik**/** na końcu ścieżki.  
   
 4.  Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności  
   
@@ -136,7 +134,7 @@ Z [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] debugera
   
 1.  Połącz czytnika kart inteligentnych i włóż kartę uzyskanego z inicjatywy udostępnionego źródła.  
   
-2.  Uruchom Internet Explorer wprowadź następujący adres URL:`https://codepremium.msdn.microsoft.com`  
+2.  Uruchom Internet Explorer wprowadź następujący adres URL: `https://codepremium.msdn.microsoft.com`  
   
 3.  Przeglądaj w poszukiwaniu źródła, które ma.  
   

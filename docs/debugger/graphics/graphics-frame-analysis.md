@@ -1,25 +1,22 @@
 ---
 title: Analiza ramek grafiki | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 95544a030870feaace585d62a8027c17dbc56c64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D gier i aplikacji.  
@@ -75,7 +72,7 @@ Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do anal
 #### <a name="timeline"></a>Oś czasu  
  Oś czasu zawiera omówienie chronometrażu wywołanie rysowania względem siebie. Ponieważ paski większych odpowiada wydłużenie czasu rysowania, służy ona odnajdywanie najdroższych wywołań rysowania w ramce. Gdy przechwyconej ramce zawiera dużą liczbę wywołań rysowania, wiele rysowania przez wywołania są połączone w jeden pasek o długości to suma tych Rysuj wywołania.  
   
- ![Oś czasu przedstawia rysowania &#45; wywołać kosztów. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![Oś czasu przedstawia rysowania&#45;wywołać kosztów. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Wskaźnik na pasku zdarzenie wywołanie rysowania, które odpowiada pasku. Na pasku zaznaczenie powoduje, że listy zdarzeń, które mają być synchronizowane tego zdarzenia.  
   
@@ -137,7 +134,7 @@ Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do anal
   
  Analiza ramek ogranicza liczbę ponownych prób do 10. Jeśli platformy zarządzania energii lub bramkowanie zegara, może spowodować analizy ramek zakończyć się niepowodzeniem i zgłoś błąd, ponieważ został przekroczony limit ponownych prób. Można ograniczyć ten problem, resetując danej platformy zarządzania energią i zegara szybkości ograniczania się mniej aktywnego, jeśli umożliwia platformie.  
   
-##  <a name="HardwareSupport"></a>Obsługa sprzętu  
+##  <a name="HardwareSupport"></a> Obsługa sprzętu  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Sygnatury czasowe i zamknięcia.  
  Sygnatury czasowe są obsługiwane na wszystkich platformach, które obsługują analizy ramek. Głębokość okluzji zapytania — wymagane dla pikseli zamknięte liczników — są obsługiwane na platformach, które obsługuje funkcji na poziomie 9.2 lub nowszej.  
@@ -175,7 +172,7 @@ Użyj analizy ramek grafiki w analizatora grafiki programu Visual Studio do anal
 ### <a name="warp"></a>WARP  
  Analiza ramek jest przeznaczona do użycia profilu i poprawia wydajność renderowania na sprzęcie prawdziwe. Nie uniemożliwia uruchomiony analizy ramek na urządzenia WARP, ale nie jest zazwyczaj zastanowić wykonywania ponieważ WARP systemem wysokiej klasy procesora CPU jest mniejsza niż nawet obsługą najmniej GPU nowoczesnych i WARP wydajność może się znacznie różnić w zależności od określonego Procesora jest on uruchomiony.  
   
-##  <a name="Variants"></a>Elementy Variant  
+##  <a name="Variants"></a> Elementy Variant  
  Każdej zmiany, która sprawia, że analiza ramek na sposób renderowania ramki podczas odtwarzania nosi nazwę *variant*. Wariantów, które sprawdza, czy analiza ramek odpowiadają wspólnego, stosunkowo łatwa zmiany, które można zmienić w celu ulepszenia wydajności renderowania lub visual jakości aplikacji, na przykład, zmniejszenie jego rozmiar tekstury, za pomocą metody kompresji tekstury lub włączenie różne rodzaje wygładzanie. Wariantów zastąpić kontekstu zwykle renderowania i parametrów aplikacji. Poniżej przedstawiono podsumowanie:  
   
 |Variant|Opis|  

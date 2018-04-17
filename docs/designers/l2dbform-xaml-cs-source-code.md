@@ -1,23 +1,21 @@
 ---
-title: "Kod źródłowy L2DBForm.XAML.CS | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Kod źródłowy L2DBForm.XAML.CS | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e477801883abde205a1667b444575c0f831b930f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7493ce758628ee8f5d20fccc9653505c74ac3875
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.XAML.CS
 Ten temat zawiera zawartość i opis kodu źródłowego C# w pliku L2DBForm.xaml.cs. Klasy częściowe L2XDBForm zawarte w tym pliku mogą być podzielone trzy części logiczne: elementy członkowskie danych i `OnRemove` i `OnAddBook` przycisk kliknięcie uchwytów zdarzeń.  

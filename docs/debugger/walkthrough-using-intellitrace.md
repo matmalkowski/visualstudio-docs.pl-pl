@@ -1,32 +1,28 @@
 ---
-title: "Wyświetl zdarzenia przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wyświetl zdarzenia przy użyciu funkcji IntelliTrace | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc3067ea154c8b9a5f6e180f397c5421f2be470
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: bb117eeaf972788118b9b7284bfd2ae6aca44936
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Wyświetl zdarzenia przy użyciu funkcji IntelliTrace w programie Visual Studio
 Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategorie zdarzeń, lub wywołania funkcji poszczególnych zdarzeń, można użyć funkcji IntelliTrace. Poniższe procedury pokazują, jak to zrobić.  
   
  Można użyć funkcji IntelliTrace w Visual Studio Enterprise edition, ale nie wersji Professional lub społeczności.  
   
-##  <a name="GettingStarted"></a>Konfigurowanie funkcji Intellitrace  
+##  <a name="GettingStarted"></a> Konfigurowanie funkcji Intellitrace  
  Możesz spróbować debugowanie z tylko zdarzenia funkcji IntelliTrace. Zdarzenia IntelliTrace są zdarzeń debugera, wyjątki zdarzenia .NET Framework i innych zdarzeń systemu. Należy włączyć lub wyłączyć określonych zdarzeń w celu kontrolowania zdarzenia tego rekordów funkcji IntelliTrace, przed rozpoczęciem debugowania. Aby uzyskać więcej informacji, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Włącz zdarzenia funkcji IntelliTrace dla dostępu do plików. Przejdź do **Narzędzia > Opcje > IntelliTrace > zdarzeń funkcji IntelliTrace** strony, a następnie rozwiń **pliku** kategorii. Sprawdź **pliku** kategorii zdarzeń. To powoduje, że wszystkie pliku (dostęp, close, Usuń) można sprawdzić.
@@ -53,7 +49,7 @@ Dodatkowo do zebrania informacji dotyczących określonych zdarzeń lub kategori
     }  
     ```  
   
-3.  Ustaw punkt przerwania w`Console.WriteLine("done");`  
+3.  Ustaw punkt przerwania w `Console.WriteLine("done");`  
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Rozpocznij debugowanie i wyświetlać zdarzenia funkcji IntelliTrace
   

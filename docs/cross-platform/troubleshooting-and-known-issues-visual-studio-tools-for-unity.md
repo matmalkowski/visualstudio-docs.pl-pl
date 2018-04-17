@@ -1,23 +1,20 @@
 ---
-title: "Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity) | Dokumentacja firmy Microsoft"
-ms.custom: 
-ms.date: 10/25/2017
-ms.reviewer: 
-ms.suite: 
+title: Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity) | Dokumentacja firmy Microsoft
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 03329be39ba94984424999c2878b060f01ccd6de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 W tej sekcji możesz znaleźć rozwiązania typowych problemów z programu Visual Studio Tools for Unity, opisy znanych problemów i Dowiedz się, jak można zwiększyć Visual Studio Tools for Unity raportowanie błędów.
@@ -51,6 +48,17 @@ Fmod —, istnieje obejście tego problemu, można przekazać inicjowania FMOD_S
 ### <a name="incompatible-project-in-visual-studio"></a>Niezgodne projektu programu Visual Studio
 Najpierw upewnij się, że program Visual Studio jest ustawiony jako edytora skryptu zewnętrznego w Unity (Edycja/preferencje/zewnętrznych narzędzi). Sprawdź, czy dodatek Visual Studio jest zainstalowany w Unity (Pomoc/informacje musi zawierać wiadomości, takich jak Microsoft Visual Studio Tools for Unity jest włączona na dole). Następnie sprawdź, czy rozszerzenie jest poprawnie zainstalowany w programie Visual Studio (Pomoc/informacje).
 
+### <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Dodatkowe przeładowania lub Visual Studio utraty wszystkie otwarte okna
+Pamiętaj nigdy nie touch pliki projektu bezpośrednio z zasobów procesora lub innego narzędzia. Jeśli naprawdę musisz modyfikowania pliku projektu, uwidaczniamy interfejsu API w tym. Sprawdź, czy [odwołań do zestawów w sekcji problemy](#Assembly-reference-issues).
+
+Jeśli wystąpią dodatkowe przeładowania lub utracie Visual Studio wszystkie otwarte okna na Załaduj ponownie, upewnij się, że masz właściwe .NET przeznaczonych dla pakietów zainstalowanych. Sprawdź, czy w poniższej sekcji o struktur, aby uzyskać więcej informacji.
+
+
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>W systemie Windows programu Visual Studio zapyta, można pobrać platformę docelową Unity
+Visual Studio Tools for Unity wymaga programu .NET framework 3.5, który nie jest instalowany domyślnie w systemie Windows 8 lub Windows 10. Aby rozwiązać ten problem, postępuj zgodnie z instrukcjami, aby pobrać i zainstalować program .NET framework 3.5.
+
+Korzystając z nowego środowiska uruchomieniowego Unity, .NET określania wartości docelowej pakiety w wersji 4.6 i 4.7.1 są również wymagane. Istnieje możliwość używania Instalatora VS2017 szybko zainstalować je (modyfikowanie użytkownika VS2017 instalacji, pojedynczych składników, kategorii .NET, wybierz wszystkie 4.x przeznaczonych dla pakietów).
+
 ### <a name="assembly-reference-issues"></a>Problemy z odwołania zestawu
 Jeśli Twój projekt jest złożone reference-wise lub jeśli chcesz to lepiej kontrolować ten krok generowania, możesz użyć naszych [interfejsu API](../cross-platform/customize-project-files-created-by-vstu.md) do manipulowania wygenerowana zawartość projekt lub rozwiązanie. Można również użyć [pliki odpowiedzi](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) w Twojej Unity projektu i firma Microsoft będzie przetwarzać je.
 
@@ -58,7 +66,7 @@ Jeśli Twój projekt jest złożone reference-wise lub jeśli chcesz to lepiej k
 Jeśli program Visual Studio nie może znaleźć lokalizację źródła dla określonego punktu przerwania zostanie wyświetlone ostrzeżenie wokół punkt przerwania. Sprawdź, czy zachowanie, którego używasz poprawnie załadowany/używane w bieżącym sceny Unity.
 
 ### <a name="breakpoints-not-hit"></a>Punkty przerwania nie trafień.
- Sprawdź, czy zachowanie, którego używasz poprawnie załadowany/używane w bieżącym sceny Unity. Zamknij Unity i Visual Studio, a następnie usunięcie wszystkich wygenerowanych plików (*.csproj, *.sln) i cały folder biblioteki.
+Sprawdź, czy zachowanie, którego używasz poprawnie załadowany/używane w bieżącym sceny Unity. Zamknij Unity i Visual Studio, a następnie usunięcie wszystkich wygenerowanych plików (*.csproj, *.sln) i cały folder biblioteki.
 
 ### <a name="unable-to-attach"></a>Nie można dołączyć
 -   Spróbuj tymczasowo wyłączyć programu antywirusowego lub tworzyć reguły wykluczania dla wersji programu VS i Unity.
@@ -69,22 +77,9 @@ Jeśli program Visual Studio nie może znaleźć lokalizację źródła dla okre
 ### <a name="unable-to-debug-android-players"></a>Nie można debugować odtwarzacze systemu Android
 Używamy multiemisji wykrywania player, (która jest używana przez Unity domyślnego mechanizmu), ale po używamy regularne połączenia TCP, można dołączyć debugera. Faza wykrywania jest głównym problemem w przypadku urządzeń z systemem Android.
 
-USB jest nadrzędne szybkiego do debugowania, ale nie jest zgodne z mechanizmu odnajdywania player Unity.
-Wi-Fi jest bardziej elastyczne, ale bardzo wolno w porównaniu do USB z powodu opóźnień. Widzieliśmy Brak prawidłowego obsługę multiemisji dla niektórych routerów lub urządzenia (są dobrze znanych dla tej serii węzła).
+Wi-Fi jest uniwersalny, lecz bardzo wolno w porównaniu z USB z powodu opóźnień. Widzieliśmy Brak prawidłowego obsługę multiemisji dla niektórych routerów lub urządzenia (są dobrze znanych dla tej serii węzła).
 
-Można spróbować następującej przy użyciu USB, aby zobaczyć otwartych portów na urządzeniu podłączonym (z player w górę i uruchomione, tak aby były widoczne portem debugowania, zawsze w formie 56xxx):
-
-```shell
-adb shell netstat
-```
-
-Przekazuj port na komputerze lokalnym:
-
-```shell
-adb forward tcp:56xxx tcp:56xxx
-```
-
-Następnie należy połączyć pomocą rozszerzenia VSTU przy użyciu 127.0.0.1:56xxx przekazywane portu.
+USB jest nadrzędne szybkie do debugowania i Visual Studio Tools for Unity teraz jest w stanie wykryć urządzenia USB i zwróć się do serwera adb właściwe przekazywanie portów do debugowania.
 
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrowanie z UnityVS do narzędzi Visual Studio Tools for Unity
  W przypadku migrowania z UnityVS do programu Visual Studio Tools for Unity, należy wygenerować nowy rozwiązań programu Visual Studio dla projektów Unity.
@@ -96,9 +91,6 @@ Następnie należy połączyć pomocą rozszerzenia VSTU przy użyciu 127.0.0.1:
 2.  Zaimportuj programu Visual Studio Tools dla pakietu Unity do projektu platformy Unity. Aby uzyskać informacje o tym, jak zaimportować pakiet pomocą rozszerzenia VSTU, zobacz Konfigurowanie narzędzi Visual Studio Tools for Unity na [wprowadzenie](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) strony.
 
 3.  Generuj nowe pliki rozwiązań i projektów. Jeśli chcesz wygenerować je teraz, w edytorze Unity w menu głównym wybierz **programu Visual Studio Tools**, **wygenerować plików projektu**. W przeciwnym razie pomiń ten krok, jeśli chcesz; Visual Studio Tools for Unity wygeneruje nowe pliki automatycznie po wybraniu **programu Visual Studio Tools**, **Otwórz w programie Visual Studio**.
-
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>W systemie Windows programu Visual Studio zapyta, można pobrać platformę docelową Unity
- Visual Studio Tools for Unity wymaga programu .net framework 3.5, który nie jest instalowany domyślnie w systemie Windows 8 lub Windows 10. Aby rozwiązać ten problem, postępuj zgodnie z instrukcjami, aby pobrać i zainstalować program .net framework 3.5.
 
 ## <a name="known-issues"></a>Znane problemy
  Istnieją znane problemy w programie Visual Studio Tools for Unity wynikających z współdziałania debugera z Unity w starszej wersji kompilatora C#. Pracujemy nad pomóc w rozwiązaniu tych problemów, ale w tym czasie mogą wystąpić następujące problemy:

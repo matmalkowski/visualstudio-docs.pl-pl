@@ -1,26 +1,24 @@
 ---
-title: "Okno dialogowe Opcje wiadomości | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Okno dialogowe Opcje wiadomości | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
 - Spy++, message options
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45878b19619f5a3842d235242603293d990a510a
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba1a2e4153e09bfd1af1c23b66587e0fc23b0280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-options-dialog-box"></a>Opcje komunikatów — Okno dialogowe
 Użyj tego okna dialogowego, aby wybrać wiadomości, które są wymienione w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, wybierz **komunikaty dziennika** z **Spy** menu.  

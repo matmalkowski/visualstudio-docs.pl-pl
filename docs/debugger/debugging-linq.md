@@ -1,12 +1,10 @@
 ---
 title: Debugowanie LINQ | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]obsługuje debugowania języka zintegrowane zapytania (LINQ) kodu, z pewnymi ograniczeniami. Najbardziej debugowania funkcje działają w instrukcjach LINQ, w tym wykonywanie krok po kroku, ustawianie punktów przerwania i wyświetlania wyników w oknach debugera. W tym temacie opisano głównych ograniczenia debugowanie LINQ.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje debugowania języka zintegrowane zapytania (LINQ) kodu, z pewnymi ograniczeniami. Najbardziej debugowania funkcje działają w instrukcjach LINQ, w tym wykonywanie krok po kroku, ustawianie punktów przerwania i wyświetlania wyników w oknach debugera. W tym temacie opisano głównych ograniczenia debugowanie LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Wyświetlanie wyników LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników LINQ  
  Wyniki instrukcji LINQ można wyświetlać przy użyciu etykietek danych, okno czujki i QuickWatch — okno dialogowe. Korzystając z okna źródła, w przypadku wstrzymania wskaźnik myszy na zapytania w oknie źródła i pojawi się etykietki danych. Można skopiować zmienną LINQ i wklej go do okna czujki lub QuickWatch — okno dialogowe.  
   
  W składniku LINQ zapytania nie jest oceniany, podczas tworzenia lub zadeklarowana, ale tylko wtedy, gdy jest używany w zapytaniu. Zapytanie nie ma w związku z tym wartość, dopóki nie będzie oceniana. Pełny opis tworzenia zapytań i oceny, zobacz [wprowadzenie do kwerend LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) lub [Your pierwszego zapytania LINQ zapisu](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Obliczenia zapytanie może powodować efekty uboczne, które zmian do wartości danych lub stan programu. Nie wszystkie zapytania ma efekty uboczne. Aby ustalić, czy zapytanie może być bezpiecznie oceniana bez efekty uboczne, trzeba poznać kod, który implementuje zapytania.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Wykonywanie krok po kroku i LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Wykonywanie krok po kroku i LINQ  
  Podczas debugowania kodu LINQ krokowe wykonywanie ma pewne różnice funkcjonalne, których należy wiedzieć o.  
   
 ### <a name="linq-to-sql"></a>LINQ do SQL  
@@ -108,7 +106,7 @@ End Function
   
  Poprawione zapytania wywołuje funkcję `IsEven` w każdym przebiegu za pośrednictwem `items`. Można czy każdy element spełnia określony warunek, i można przejrzeć kod w oknach debugera `IsEven`. Predykat w tym przykładzie jest dość proste. Jednak jeśli predykat trudniejsze, z którym masz debugowania, ta metoda może być bardzo przydatne.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Edytuj i Kontynuuj nie są obsługiwane dla LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytuj i Kontynuuj nie są obsługiwane dla LINQ  
  Edytuj i Kontynuuj obsługuje zmiany do kwerend LINQ z ograniczeniami. Aby uzyskać więcej informacji, zobacz [zmiany obsługiwane EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Zobacz też  

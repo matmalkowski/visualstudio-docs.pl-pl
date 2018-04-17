@@ -1,23 +1,21 @@
 ---
-title: "Porady: eksportowanie tekstury, który ma wstępnie przemnożone alfa | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: eksportowanie tekstury, który ma wstępnie przemnożone alfa | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f0c8267d1153cf5ea112573e8af5c82ad7e8e805
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8407c34918a4c83b50ba2ee22260c7fef23d335d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Porady: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa
 Potok zawartości obrazu można wygenerować wstępnie przemnożone tekstury alfa z obrazu źródłowego. Mogą to być umożliwia łatwiejsze i bardziej niezawodna niż tekstury, które nie zawierają wstępnie przemnożone alfa.  

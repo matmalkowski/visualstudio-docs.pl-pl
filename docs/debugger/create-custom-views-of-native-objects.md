@@ -1,29 +1,25 @@
 ---
-title: "Tworzenie niestandardowych widoków obiektów macierzystych w debugerze | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie niestandardowych widoków obiektów macierzystych w debugerze | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze programu Visual Studio
 Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświetla typy natywne w oknach zmiennych debugera (na przykład **czujki** okna, **zmiennych lokalnych** okna, a następnie w  **Etykietki danych**.
@@ -37,7 +33,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 > -   Robią w aplikacji pulpitu systemu Windows w trybie zgodności zarządzanego debugowanie w trybie mieszanym (**Narzędzia > Opcje > debugowanie > Ogólne > Użyj trybu zgodności zarządzanej**).  
 > -   Debugowania w aplikacji pulpitu systemu Windows w trybie macierzystym zgodności (**Narzędzia > Opcje > debugowanie > Ogólne > Użyj natywnego trybu zgodności**).  
   
-##  <a name="BKMK_Why_create_visualizations_"></a>Dlaczego tworzenie wizualizacji Natvis?  
+##  <a name="BKMK_Why_create_visualizations_"></a> Dlaczego tworzenie wizualizacji Natvis?  
  W ramach Natvis służy do tworzenia reguł wizualizacji dla typów tworzonego, deweloperzy mogą zobaczyć je łatwo podczas debugowania.  
   
  Na przykład na poniższej ilustracji przedstawiono zmiennej typu [Windows::UI::Xaml::Controls::TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) która jest wyświetlana w debugerze bez żadnych niestandardowych wizualizacje zastosowane.  
@@ -50,7 +46,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  ![Pole tekstowe danych przy użyciu wizualizatora](../debugger/media/dbg_natvis_textbox_visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
   
-##  <a name="BKMK_Using_Natvis_files"></a>Używających plików Natvis  
+##  <a name="BKMK_Using_Natvis_files"></a> Używających plików Natvis  
  .natvis są pliki XML z rozszerzeniem .natvis. Schemat jest zdefiniowany w **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
   
  Podstawowa struktura pliku .natvis jest co najmniej jeden `Type` elementów, gdzie każdy `Type` element reprezentuje wpisem wizualizacji dla typu, w której w pełni kwalifikowana nazwa jest określona w `Name` atrybutu.  
@@ -81,7 +77,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  Pliki Natvis, które są ładowane z .pdb mają zastosowanie tylko do typów modułu, do którego odwołuje się pliku pdb. Na przykład, jeśli wpis dla typu o nazwie definiuje Module1.pdb `Test`, ten wpis stosowane tylko do **testu** klasy w Module1.dll. Jeśli inny moduł również definiuje klasę o nazwie **testu**, jego Module1.pdb natvis wpis nie ma zastosowania do niego.  
   
-##  <a name="BKMK_natvis_location"></a>Wdrażanie plików .natvis  
+##  <a name="BKMK_natvis_location"></a> Wdrażanie plików .natvis  
  Jeśli pliku .natvis ma zastosowanie tylko do typów, które tworzysz projekt programu Visual Studio, nie trzeba wykonywać żadnych czynności; .natvis znajduje się w .pdb. Jednak można dodać .natvis pliki do katalogu użytkownika lub w katalogu systemu, jeśli chcesz, aby zastosować do wielu projektów.  
   
  Kolejność, w których .natvis pliki są oceniane następująco:  
@@ -103,7 +99,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  Użyj **.natvisreload** poleceń podczas uaktualniania pliku natvis do nowszej wersji (na przykład, jeśli jest on wyewidencjonowany do kontroli źródła i chcesz wykrycie ostatnich zmian, że osoba else wprowadzone w pliku). Zalecane jest, aby edytować pliki natvis za pomocą edytora xml programu Visual Studio.  
   
-##  <a name="BKMK_Expressions_and_formatting"></a>Wyrażenia i formatowanie  
+##  <a name="BKMK_Expressions_and_formatting"></a> Wyrażenia i formatowanie  
  Wizualizacje Natvis Użyj wyrażenia języka C++, aby określić elementy danych do wyświetlenia. Oprócz rozszerzenia i ograniczenia dotyczące wyrażeń języka C++ w debugerze, które są opisane w [kontekstu — Operator (C++)](../debugger/context-operator-cpp.md), należy zwrócić uwagę następujące różnice:  
   
 -   Wyrażenia Natvis są obliczane w kontekście obiektu wizualizowanego, nie bieżącej ramki stosu. Na przykład, jeśli używasz `x` w wyrażeniu Natvis identyfikator odwołuje się do pola o nazwie `x` w obiekcie wizualizowanego nie do zmiennej lokalnej o nazwie `x` w funkcji aktualnie wykonywane. Nie masz dostępu do zmiennych lokalnych w wyrażeniach Natvis, mimo że można uzyskać dostępu do zmiennych globalnych.  
@@ -133,12 +129,12 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  ![Okno czujki z widokiem proste](../debugger/media/watch-simpleview.png "SimpleView czujki")  
   
-##  <a name="BKMK_Diagnosing_Natvis_errors"></a>Diagnozowanie błędów Natvis  
+##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnozowanie błędów Natvis  
  Diagnostyka Natvis służy do rozwiązywania składni oraz błędy analizy. Debuger wystąpią błędy we wpisie wizualizacji, ignoruje błędy i wyświetla albo typu w postaci raw lub pobrania inną wizualizację odpowiedni. Aby zrozumieć, dlaczego jest ignorowana wpis wizualizacji i podstawowe błędy są można włączyć diagnostyki Natvis **Narzędzia > Opcje > debugowanie > okno danych wyjściowych > Natvis komunikaty diagnostyczne (tylko C++)** Opcja. Błędy są wyświetlane w **dane wyjściowe** okna.  
   
-##  <a name="BKMK_Syntax_reference"></a>Odwołania do składni Natvis  
+##  <a name="BKMK_Syntax_reference"></a> Odwołania do składni Natvis  
   
-###  <a name="BKMK_AutoVisualizer"></a>AutoVisualizer element  
+###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer element  
  `AutoVisualizer` Element węzła głównego pliku .natvis i zawiera przestrzeń nazw `xmlns:` atrybutu.  
   
 ```xml
@@ -149,7 +145,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 </AutoVisualizer>  
 ```  
   
-###  <a name="BKMK_Type"></a>Typ elementu  
+###  <a name="BKMK_Type"></a> Typ elementu  
  Typ podstawowy wygląda następująco:  
   
 ```xml
@@ -182,7 +178,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  Należy pamiętać, że parametry szablonu może być przywoływany w zapisie wizualizacji przy użyciu makra $T1, $T2 i tak dalej. Aby uzyskać przykłady makr, zobacz pliki .natvis dostarczanego z programem Visual Studio.  
   
-####  <a name="BKMK_Visualizer_type_matching"></a>Dopasowywanie typu wizualizatora  
+####  <a name="BKMK_Visualizer_type_matching"></a> Dopasowywanie typu wizualizatora  
  W przypadku niepowodzenia wpis wizualizacji do sprawdzania poprawności dalej wizualizacji dostępne jest używany.  
   
 #### <a name="inheritable-attribute"></a>Atrybut dziedziczonych  
@@ -221,7 +217,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 </Type>  
 ```  
   
-####  <a name="BKMK_Versioning"></a>Wersja elementu  
+####  <a name="BKMK_Versioning"></a> Wersja elementu  
  Użyj `Version` elementu do wizualizacji zakresu określone moduły i ich wersji, która nazwa kolizji można zminimalizować i różne wizualizacje mogą być używane dla różnych wersji typów. Na przykład:  
   
 ```xml
@@ -248,7 +244,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 </Type>  
 ```  
   
-###  <a name="BKMK_Condition_attribute"></a>Atrybut warunku  
+###  <a name="BKMK_Condition_attribute"></a> Atrybut warunku  
  Opcjonalny `Condition` atrybut jest dostępna dla wielu elementów wizualizacji i określa, kiedy należy użyć reguły wizualizacji. Jeśli wyrażenie w elemencie atrybut condition jest rozpoznawana jako `false`, a następnie reguła wizualizacji określone przez element nie zostanie zastosowana. Czy jest spełniony, czy istnieje nie `Condition` atrybutu, a następnie reguła wizualizacji zostanie zastosowana do typu. Można użyć tego atrybutu dla `if-else` logiki wpisów wizualizacji. Na przykład ma dwa następujące wizualizacji `DisplayString` elementy na typ wskaźnika inteligentnego:  
   
 ```xml
@@ -285,7 +281,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  Można użyć `IncludeView` i `ExcludeView` atrybuty dla typów, a także na poszczególne elementy.  
   
-###  <a name="BKMK_DisplayString"></a>Klasa DisplayString  
+###  <a name="BKMK_DisplayString"></a> Klasa DisplayString  
  A `DisplayString` element określa ciąg, który będzie wyświetlany jako wartość zmiennej. Akceptowane są dowolne ciągi mieszanym za pomocą wyrażeń. Wszystkie elementy wewnątrz nawiasów klamrowych jest interpretowany jako wyrażenie. Na przykład `DisplayString` wpis podobnie do następującej:  
   
 ```xml
@@ -304,7 +300,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 > [!NOTE]
 >  `DisplayString` Element jest jedynym elementem, który akceptuje dowolne ciągi i składni nawias klamrowy. Wszystkie inne elementy wizualizacji akceptuje tylko wyrażeń, które są oceniane przez debuger.  
   
-###  <a name="BKMK_StringView"></a>StringView  
+###  <a name="BKMK_StringView"></a> StringView  
  `StringView` Element definiuje wyrażenie, którego wartość ma do wysłania do wizualizatora tekst. Na przykład, załóżmy, że mamy następujące wizualizację dla `ATL::CStringT` typu:  
   
 ```xml
@@ -333,7 +329,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 > [!NOTE]
 >  Należy pamiętać, że wyrażenie `{m_pszData,su}` obejmuje specyfikatora formatu w C++ `su` do wyświetlania wartości w postaci ciągu Unicode. Zobacz [specyfikatory formatu w C++](../debugger/format-specifiers-in-cpp.md) Aby uzyskać więcej informacji.  
   
-###  <a name="BKMK_Expand"></a>Rozwiń węzeł  
+###  <a name="BKMK_Expand"></a> Rozwiń węzeł  
  `Expand` Węzeł służy do dostosowywania elementów podrzędnych zwizualizowanego typu, kiedy użytkownik rozwija go w zmiennych systemu windows. Przyjmuje listę węzły podrzędne, które definiują elementy podrzędne.  
   
  `Expand` Węzeł jest opcjonalne.  
@@ -342,8 +338,8 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
 -   Jeśli `Expand` węzeł został określony bez węzłów podrzędnych w nim, typ nie będzie można rozwijać w oknach debugera.  
   
-####  <a name="BKMK_Item_expansion"></a>Element rozszerzenia  
- `Item` Element jest najprostsza i najbardziej typowych elementu do użycia w `Expand` węzła. `Item`Definiuje pojedynczym elemencie podrzędnym. Na przykład, załóżmy, że masz `CRect` klasy z `top`, `left`, `right`, i `bottom` jako jego pól i następujący wpis wizualizacji:  
+####  <a name="BKMK_Item_expansion"></a> Element rozszerzenia  
+ `Item` Element jest najprostsza i najbardziej typowych elementu do użycia w `Expand` węzła. `Item` Definiuje pojedynczym elemencie podrzędnym. Na przykład, załóżmy, że masz `CRect` klasy z `top`, `left`, `right`, i `bottom` jako jego pól i następujący wpis wizualizacji:  
   
 ```xml
 <Type Name="CRect">  
@@ -365,7 +361,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 > [!NOTE]
 >  Jeśli wyrażenie element elementu wskazuje typ złożony, `Item` sam węzeł jest rozwijania.  
   
-####  <a name="BKMK_ArrayItems_expansion"></a>Rozszerzenia ArrayItems  
+####  <a name="BKMK_ArrayItems_expansion"></a> Rozszerzenia ArrayItems  
  Użyj `ArrayItems` węzeł, aby zinterpretować typu jako tablica i wyświetl jego poszczególne elementy debuger programu Visual Studio. Wizualizacja dla `std::vector` jest dobrym przykładem:  
   
 ```xml
@@ -413,13 +409,13 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 </Type>  
 ```  
   
- `Direction`Określa, czy tablica jest kolejności wierszy lub kolumn. `Rank`Określa rangę tablicy. `Size` Element akceptuje niejawne `$i` parametr, który zastępuje go przez indeks wymiaru, aby znaleźć długości tablicy w tym wymiarze. Na przykład w poprzednim przykładzie powyżej wyrażenie `_M_extent.M_base[0]` nadać długość wymiar 0th `_M_extent._M_base[1]` 1 i tak dalej.  
+ `Direction` Określa, czy tablica jest kolejności wierszy lub kolumn. `Rank` Określa rangę tablicy. `Size` Element akceptuje niejawne `$i` parametr, który zastępuje go przez indeks wymiaru, aby znaleźć długości tablicy w tym wymiarze. Na przykład w poprzednim przykładzie powyżej wyrażenie `_M_extent.M_base[0]` nadać długość wymiar 0th `_M_extent._M_base[1]` 1 i tak dalej.  
   
  Oto jak dwuwymiarowa `Concurrency::array` obiektu wygląda w debugerze:  
   
  ![Tablicą dwuwymiarową o rozszerzeniu ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
   
-####  <a name="BKMK_IndexListItems_expansion"></a>Rozszerzenia IndexListItems  
+####  <a name="BKMK_IndexListItems_expansion"></a> Rozszerzenia IndexListItems  
  Można użyć `ArrayItems` rozszerzenia, tylko wtedy, gdy elementy tablicy są określone połączone ze sobą w pamięci. Debuger pobiera do następnego elementu po prostu zwiększając jego wskaźnik do bieżącego elementu. Do obsługi przypadkach konieczne do manipulowania indeks węzeł wartość `IndexListItems` węzły można użyć. Oto wizualizacji przy użyciu `IndexListItems` węzła:  
   
 ```xml
@@ -439,7 +435,7 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
   
  Jedyną różnicą między `ArrayItems` i `IndexListItems` jest to, że `ValueNode` oczekuje pełne wyrażenie i<sup>th</sup> element z niejawnych `$i` parametru.  
   
-####  <a name="BKMK_LinkedListItems_expansion"></a>Rozszerzenia LinkedListItems  
+####  <a name="BKMK_LinkedListItems_expansion"></a> Rozszerzenia LinkedListItems  
  Jeśli zwizualizowanego typu reprezentuje listy połączonej, Debuger można wyświetlić jego elementy podrzędne za pomocą `LinkedListItems` węzła. Poniżej przedstawiono wizualizację dla `CAtlList` typu za pomocą tej funkcji:  
   
 ```xml
@@ -457,14 +453,14 @@ Framework programu Visual Studio Natvis pozwala dostosować Visual Studio Wyświ
 </Type>  
 ```  
   
- `Size` Element odwołuje się do długość listy. `HeadPointer`wskazuje pierwszy element `NextPointer` odwołuje się do następnego elementu i `ValueNode` odnosi się do wartości elementu.  
+ `Size` Element odwołuje się do długość listy. `HeadPointer` wskazuje pierwszy element `NextPointer` odwołuje się do następnego elementu i `ValueNode` odnosi się do wartości elementu.  
   
--   `NextPointer` i `ValueNode` wyrażenia są obliczane w kontekście elementu węzła listy połączonej, a nie nadrzędnego typu listy. W powyższym przykładzie `CAtlList` ma `CNode` klasy (znalezione w `atlcoll.h`) reprezentujący węzeł listy połączonej. `m_pNext`i `m_element` pól tego `CNode` klasy, a nie `CAtlList` klasy.  
+-   `NextPointer` i `ValueNode` wyrażenia są obliczane w kontekście elementu węzła listy połączonej, a nie nadrzędnego typu listy. W powyższym przykładzie `CAtlList` ma `CNode` klasy (znalezione w `atlcoll.h`) reprezentujący węzeł listy połączonej. `m_pNext` i `m_element` pól tego `CNode` klasy, a nie `CAtlList` klasy.  
   
 -   `ValueNode` Może być puste lub mieć `this` do odwoływania się do węzeł listy połączonej.  
   
 #### <a name="customlistitems-expansion"></a>Rozszerzenia CustomListItems  
- `CustomListItems` Rozszerzenia umożliwia pisanie niestandardowej logiki do przechodzenia przez to struktura danych, takich jak tablica skrótów. Należy używać `CustomListItems` do wizualizacji danych można wyrazić za pomocą wyrażeń C++ jest struktury, w których wszystkie elementy potrzebne do oceny, ale jeszcze nie spełniają pleśnią dla `ArrayItems`, `TreeItems`, lub`LinkedListItems.`  
+ `CustomListItems` Rozszerzenia umożliwia pisanie niestandardowej logiki do przechodzenia przez to struktura danych, takich jak tablica skrótów. Należy używać `CustomListItems` do wizualizacji danych można wyrazić za pomocą wyrażeń C++ jest struktury, w których wszystkie elementy potrzebne do oceny, ale jeszcze nie spełniają pleśnią dla `ArrayItems`, `TreeItems`, lub `LinkedListItems.`  
   
  Wizualizator dla CAtlMap jest doskonałym przykładem where `CustomListItems` jest odpowiedni.  
   
@@ -517,7 +513,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
 - `TreeTraverse_Next // Returns nodes in a tree`
 - `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
   
-####  <a name="BKMK_TreeItems_expansion"></a>Rozszerzenia TreeItems  
+####  <a name="BKMK_TreeItems_expansion"></a> Rozszerzenia TreeItems  
  Jeśli zwizualizowanego typu reprezentuje drzewa, Debuger można zaprezentuje drzewa i wyświetlić jego elementy podrzędne za pomocą `TreeItems` węzła. Poniżej przedstawiono wizualizację dla `std::map` typu za pomocą tej funkcji:  
   
 ```xml
@@ -539,10 +535,10 @@ Obsługiwane są następujące funkcje wewnętrzne:
   
  Składnia jest podobny do `LinkedListItems` węzła. `LeftPointer`, `RightPointer`, i `ValueNode` są obliczane w kontekście klasy węzła drzewa, i `ValueNode` może być puste lub mieć `this` do odwoływania się do samego węzła drzewa.  
   
-####  <a name="BKMK_ExpandedItem_expansion"></a>Rozszerzenia ExpandedItem  
+####  <a name="BKMK_ExpandedItem_expansion"></a> Rozszerzenia ExpandedItem  
  `ExpandedItem` Element może być użyty do generowania widok podrzędny zagregowane przez wyświetlanie właściwości podstawowe elementy członkowskie klasy lub dane, tak jakby były dzieci zwizualizowanego typu. Określone wyrażenie jest obliczane i węzłów podrzędnych wyniku są dołączane do listy podrzędnych zwizualizowanego typu. Załóżmy na przykład, będziemy mieć typ wskaźnika inteligentnego `auto_ptr<vector<int>>`, które są zwykle wyświetlane jako:  
   
- ![Auto &#95; ptr &#60; wektor &#60; int &#62; &#62; domyślne rozszerzenie](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![automatycznie&#95;ptr&#60;wektor&#60;int&#62; &#62; domyślne rozszerzenie](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  Zobaczyć wartości wektora, należy przejść do szczegółów dwa poziomy w oknie zmiennej przechodzącej przez _Myptr elementu członkowskiego. Dodając `ExpandedItem` elementu, można wyeliminować `_Myptr` zmienną z hierarchii i bezpośrednio wyświetlanie elementów wektora::  
   
@@ -555,7 +551,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
 </Type>  
 ```  
   
- ![Auto &#95; ptr &#60; wektor &#60; int &#62; &#62; Rozszerzenia ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![automatycznie&#95;ptr&#60;wektor&#60;int&#62; &#62; rozszerzenia ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  Poniższy przykład przedstawia sposób agregacji właściwości z klasy podstawowej w klasie pochodnej. Załóżmy, że `CPanel` pochodną klasy `CFrameworkElement`. Zamiast powtarzające się właściwości, które pochodzą od podstawy `CFrameworkElement` klasy, `ExpandedItem` węzeł pozwala te właściwości, które mają być dołączane do listy podrzędnych `CPanel` klasy. **Nd** specyfikatora formatu, który wyłącza wizualizacji dopasowania dla klasy pochodnej, niezbędne jest w tym miejscu. W przeciwnym razie wyrażenie `*(CFrameworkElement*)this` powoduje, że `CPanel` wizualizacji ma zostać zastosowany ponownie, ponieważ wizualizacji domyślny typ reguły dopasowywania uważają, że najbardziej odpowiednie. Przy użyciu **nd** specyfikator formatu powoduje, że debuger do użycia wizualizacji klasy podstawowej lub rozszerzenia domyślną klasę podstawową klasę podstawową powodował wizualizacji.  
   
@@ -569,7 +565,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
 </Type>  
 ```  
   
-####  <a name="BKMK_Synthetic_Item_expansion"></a>Syntetyczne rozszerzenia elementu  
+####  <a name="BKMK_Synthetic_Item_expansion"></a> Syntetyczne rozszerzenia elementu  
  Gdzie `ExpandedItem` element zapewnia bardziej płaski widok danych przez wyeliminowanie hierarchiami `Synthetic` węzeł będzie odwrotnie. Umożliwia tworzenie elementu podrzędnego sztuczne (to znaczy elementu podrzędnego nie będący wynikiem wyrażenia). Ten element podrzędny mogą zawierać elementy podrzędne własnych. W poniższym przykładzie wizualizację dla `Concurrency::array` wpisz używa `Synthetic` węzła w celu wyświetlania komunikatów diagnostycznych dla użytkownika:  
   
 ```xml
@@ -592,7 +588,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
   
  ![CONCURRENCY::Array o rozszerzeniu syntetycznych element](../debugger/media/dbg_natvis_expand_synthetic.png "DBG_NATVIS_Expand_Synthetic")  
   
-###  <a name="BKMK_HResult"></a>HResult  
+###  <a name="BKMK_HResult"></a> HResult  
  `HResult` Element umożliwia dostosowanie informacji, która jest wyświetlana dla wyniku HRESULT w oknach debugera. `HRValue` Element musi zawierać wartość HRESULT, która ma być dostosowane 32-bitowych. `HRDescription` Element zawiera informacje, które jest wyświetlane w debugerze.  
   
 ```  
@@ -603,7 +599,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
 </HResult>  
 ```  
   
-###  <a name="BKMK_UIVisualizer"></a>UIVisualizer  
+###  <a name="BKMK_UIVisualizer"></a> UIVisualizer  
  A `UIVisualizer` element rejestruje graficznego wizualizatora wtyczki z debugera. Dodatek wizualizatora graficznego tworzy okno dialogowe lub inny interfejs do wyświetlenia w taki sposób, który jest jego typu danych zmiennej lub obiektu. Dodatek wizualizatora musi być utworzone jako [pakiet VSPackage](../extensibility/internals/vspackages.md) i musi zostać udostępniona usługa, która może być zużyte przez debuger. Pliku .natvis zawiera informacje rejestracyjne dotyczące dodatek plug-in, takie jak jego nazwa, identyfikator GUID usługi udostępniane i typy, które można wyświetlać wizualizację.  
   
  Oto przykład elementu UIVisualizer:  
@@ -620,7 +616,7 @@ Obsługiwane są następujące funkcje wewnętrzne:
 </AutoVisualizer>  
 ```  
   
- A `UIVisualizer` jest identyfikowany przez `ServiceId`  -  `Id` atrybutu pary. `ServiceId`Identyfikator GUID usługi udostępniane przez pakiet wizualizatora `Id` to unikatowy identyfikator, który może służyć do odróżnienia wizualizatorów, jeśli usługa zawiera więcej niż jeden wizualizatora. W powyższym przykładzie tę samą usługę wizualizatora zawiera dwa wizualizatorów.  
+ A `UIVisualizer` jest identyfikowany przez `ServiceId`  -  `Id` atrybutu pary. `ServiceId` Identyfikator GUID usługi udostępniane przez pakiet wizualizatora `Id` to unikatowy identyfikator, który może służyć do odróżnienia wizualizatorów, jeśli usługa zawiera więcej niż jeden wizualizatora. W powyższym przykładzie tę samą usługę wizualizatora zawiera dwa wizualizatorów.  
   
  `MenuName` Atrybut jest, co użytkownicy widzą jako nazwa wizualizatora po otwarciu listy rozwijanej obok ikonę lupy w oknach zmiennych debugera, na przykład:  
   
@@ -637,6 +633,6 @@ Obsługiwane są następujące funkcje wewnętrzne:
  Można zobaczyć przykład UIVisualizer w rozszerzeniu czujki obraz używany do wyświetlania map bitowych w pamięci: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer element  
- `CustomVisualizer`jest punktem rozszerzalności, który określa rozszerzenie VSIX, który może zapisać do kontrolowania wizualizację w kodu uruchamianego w programie Visual Studio. Aby uzyskać więcej informacji na temat pisania rozszerzenia VSIX, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md). Pisanie wizualizatora niestandardowego jest znacznie większą niż zapisywania definicji XML natvis, ale jest wolny od ograniczeń, o jaką natvis obsługuje lub nie obsługuje. Niestandardowe wizualizatory mają dostęp do pełnego zestawu debugera rozszerzalności interfejsów API, która może służyć do zapytania i zmodyfikować obiekt debugowany proces lub komunikowania się z innymi składnikami programu Visual Studio.  
+ `CustomVisualizer` jest punktem rozszerzalności, który określa rozszerzenie VSIX, który może zapisać do kontrolowania wizualizację w kodu uruchamianego w programie Visual Studio. Aby uzyskać więcej informacji na temat pisania rozszerzenia VSIX, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md). Pisanie wizualizatora niestandardowego jest znacznie większą niż zapisywania definicji XML natvis, ale jest wolny od ograniczeń, o jaką natvis obsługuje lub nie obsługuje. Niestandardowe wizualizatory mają dostęp do pełnego zestawu debugera rozszerzalności interfejsów API, która może służyć do zapytania i zmodyfikować obiekt debugowany proces lub komunikowania się z innymi składnikami programu Visual Studio.  
   
  Można użyć `Condition`, `IncludeView`, i `ExcludeView` atrybutów w elementach CustomVisualizer.

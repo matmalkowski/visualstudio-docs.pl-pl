@@ -1,12 +1,10 @@
 ---
-title: "CA2116: Metody APTCA powinny wywoływać tylko metody APTCA | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA2116: Metody APTCA powinny wywoływać tylko metody APTCA | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA powinny wywoływać tylko metody APTCA
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  Gdy atrybut APTCA jest obecny w pełni zaufanych zestawów i zestawu wykonuje kod w innym zestawie, który nie zezwala na częściowo zaufane obiekty wywołujące, możliwe jest zabezpieczeń wykorzystać. Jeśli dwie metody `M1` i `M2` spełniać następujące warunki, złośliwe obiekty wywołujące za pomocą metody `M1` obejść linkdemand niejawne pełne zaufanie, chroniącego `M2`:  
   
--   `M1`Metoda publiczna jest zadeklarowany w pełni zaufany zestawu, który ma atrybut APTCA.  
+-   `M1` Metoda publiczna jest zadeklarowany w pełni zaufany zestawu, który ma atrybut APTCA.  
   
--   `M1`wywołuje metodę `M2` poza `M1`w zestawie.  
+-   `M1` wywołuje metodę `M2` poza `M1`w zestawie.  
   
 -   `M2`w zestawie nie ma atrybutu APTCA i, w związku z tym nie powinien być wykonywany przez lub w imieniu wywołań, które są częściowo zaufany.  
   

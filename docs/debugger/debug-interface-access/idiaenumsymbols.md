@@ -1,29 +1,25 @@
 ---
-title: "Idiaenumsymbols — | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Idiaenumsymbols — | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols interface
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4e6384e6822c03190d3650d2a1371f7b9fffe59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Wylicza różne symbole zawarte w źródle danych.  
@@ -63,7 +59,7 @@ IDiaEnumSymbols : IUnknown
  W tym przykładzie pokazano, jak uzyskać `IDiaEnumSymbols` interfejs, a następnie użyj tego wyliczenia do listy typów zdefiniowanych przez użytkownika (UDTs).  
   
 > [!NOTE]
->  `CDiaBSTR`jest klasa, która opakowuje `BSTR` i automatycznie obsługuje zwalnianie ciąg, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
+>  `CDiaBSTR` jest klasa, która opakowuje `BSTR` i automatycznie obsługuje zwalnianie ciąg, gdy podczas tworzenia wystąpienia wykracza poza zakres.  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  

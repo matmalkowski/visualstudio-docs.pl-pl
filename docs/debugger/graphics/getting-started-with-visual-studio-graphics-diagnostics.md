@@ -1,23 +1,20 @@
 ---
 title: Wprowadzenie do korzystania z diagnostyki grafiki programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 11de8cc6cf559d82ffa7ac543e396644057346c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do korzystania z diagnostyki grafiki programu Visual Studio
 W tej sekcji umożliwią przygotowanie do użycia diagnostyki grafiki po raz pierwszy, a następnie należy przechwycić ramki z aplikacji Direct3D i sprawdzić ich w analizatorze grafiki.  
@@ -32,7 +29,7 @@ W tej sekcji umożliwią przygotowanie do użycia diagnostyki grafiki po raz pie
   
  Aby uzyskać informacje na temat instalowania narzędzi graficznych, zobacz [zainstalować graficznych narzędzi dla systemu Windows 10](#InstallGraphicsTools).  
   
-##  <a name="InstallGraphicsTools"></a>Instalowanie narzędzi graficznych dla systemu Windows 10  
+##  <a name="InstallGraphicsTools"></a> Instalowanie narzędzi graficznych dla systemu Windows 10  
  W systemie Windows 10 infrastruktury diagnostyki grafiki są dostarczane przez opcjonalna funkcja systemu Windows o nazwie *narzędzi graficznych*. Ta funkcja jest wymagana do przechwytywania i odtwarzanie informacji graficznych w systemie Windows 10, niezależnie od tego, czy aplikacja przechwytywanym obiektów docelowych poprzedniej wersji systemu windows lub używa wersji programu Direct3D. Można wybrać opcję instalacji funkcja narzędzi graficznych wcześniejsze; w przeciwnym razie będzie zainstalowana na żądanie pierwszy uruchomieniu sesji diagnostyki grafiki w programie Visual Studio.  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Aby zainstalować narzędzi graficznych dla systemu Windows 10  

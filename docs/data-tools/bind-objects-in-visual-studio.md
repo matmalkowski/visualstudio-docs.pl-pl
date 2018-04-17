@@ -1,11 +1,8 @@
 ---
-title: "Powiązanie obiektów w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Powiązanie obiektów w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 71922f3fb6dffb63c1a6c5ed1b12e5cbce402323
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 Program Visual Studio udostępnia czasu projektowania narzędzi do pracy z obiektami niestandardowych jako źródło danych w aplikacji. Jeśli chcesz przechowywać dane z bazy danych w obiekcie powiązanemu z kontrolek interfejsu użytkownika, zalecane podejście jest użycie programu Entity Framework do generowania klasy lub klas. Programu Entity Framework auto generuje wszystkich umożliwiającego śledzenie zmian kodu, co oznacza, że zmiany wprowadzone w lokalnych obiektów automatycznie są zachowywane w bazie danych w przypadku wywołania AcceptChanges w obiekcie DbSet. Aby uzyskać więcej informacji, zobacz [dokumentację programu Entity Framework](https://ef.readthedocs.org/en/latest/).  

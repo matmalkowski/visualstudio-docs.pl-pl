@@ -1,16 +1,13 @@
 ---
-title: "Ogólne właściwości projektu (Android C++) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Ogólne właściwości projektu (Android C++) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 10/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
 author: corob
 ms.author: mblome
-manager: ghogen
+manager: douge
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
 - VC.Project.VCConfiguration.IntermediateDirectory
@@ -25,11 +22,11 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 6ec191d4f5deefd959c4647ae98a1626a0bd1d36
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6e4f7da0c8d1727446c23ad25db2bf64228cbc9a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-project-properties-android-c"></a>Ogólne właściwości projektu (Android C++)
 
@@ -45,4 +42,4 @@ Zestaw narzędzi platformy | Określa zestaw narzędzi używanych do kompilowani
 Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Dynamicznymi (.so)** -dynamicznymi (.so)<br>**Biblioteka statyczna (.a)** — biblioteka statyczna (tj.)<br>**Narzędzie** — narzędzie<br>**Pliku reguł programu make** -pliku reguł programu make<br>
 Docelowy poziom interfejsu API | Celem tej konfiguracji systemu android poziom interfejsu API zestawu NDK.
 Użyj STL | Określa, która standardowa biblioteka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**Biblioteka statyczna środowiska uruchomieniowego języka C++ (gabi ++ _statyczny adres)**<br>**Biblioteka udostępniona środowiska uruchomieniowego języka C++ (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**LLVM libc ++ biblioteka statyczna (_statyczny adres c ++)**<br>**LLVM libc ++ biblioteki udostępnionej (_shared c ++)**<br>
-Tryb przycisku przewijania | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**Wyłączone**<br>
+Tryb przycisku przewijania | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**wyłączone**<br>

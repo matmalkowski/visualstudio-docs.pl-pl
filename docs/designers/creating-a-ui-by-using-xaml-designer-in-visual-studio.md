@@ -1,28 +1,26 @@
 ---
-title: "Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
 - VS.XamlEditor
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: eee5da84104e559d8e95ef022e4496cd3942627f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiające, projektowanie opartych na języku XAML systemu Windows i aplikacje sieci Web. Interfejsy użytkownika można tworzyć dla aplikacji, przeciągając formantów z **przybornika** i ustawianie właściwości w **właściwości** okna. Można również edytować XAML bezpośrednio w widoku XAML.  
@@ -45,12 +43,12 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
  Linie przyciągania są *granice wyrównanie* pojawiających się jako linia przerywana czerwony wierszy wyświetlanych po wyrównania krawędzi formantów lub kiedy są wyrównane linii bazowych tekstu. Wyrównanie granice są wyświetlane tylko wtedy, gdy **przyciąganie do linii wyrównania** jest włączona.  
   
  **Szyny siatki**  
- `Grid`szyny są używane do zarządzania wierszy i kolumn w [siatki](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Można tworzyć i usuwać wiersze i kolumny, a można dostosować ich względne szerokości i wysokości. Pionowy szyny siatki, które pojawia się po lewej stronie obszaru roboczego, jest używany dla wierszy i linia pozioma, który jest wyświetlany u góry, służy do kolumny.  
+ `Grid` szyny są używane do zarządzania wierszy i kolumn w [siatki](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Można tworzyć i usuwać wiersze i kolumny, a można dostosować ich względne szerokości i wysokości. Pionowy szyny siatki, które pojawia się po lewej stronie obszaru roboczego, jest używany dla wierszy i linia pozioma, który jest wyświetlany u góry, służy do kolumny.  
   
  **Definiowania układu siatki**  
  A `Grid` modułu definiowania układu kodu jest wyświetlany jako trójkąt, który ma do niego dołączony na linii pionowych lub poziomych `Grid` kolei. Przeciągnięcie `Grid` modułu definiowania układu kodu, szerokości lub wysokości wierszy lub kolumn sąsiadujących aktualizacji podczas przesuwania myszy.  
   
- `Grid`modułu definiowania układu kodu są używane do kontrolowania szerokość i wysokość `Grid`dla wierszy i kolumn. Można dodać nowej kolumny lub wiersza, klikając w `Grid` szyny. Po dodaniu nowego wiersza wierszy lub kolumn dla `Grid` panelu, które ma dwie lub więcej kolumn lub wierszy, minimalnej narzędzi pojawi się poza kolei, który służy do ustawiania szerokości i wysokości jawnie. Mini narzędzi pozwala ustawić opcje rozmiaru dla `Grid` wierszy i kolumn.  
+ `Grid` modułu definiowania układu kodu są używane do kontrolowania szerokość i wysokość `Grid`dla wierszy i kolumn. Można dodać nowej kolumny lub wiersza, klikając w `Grid` szyny. Po dodaniu nowego wiersza wierszy lub kolumn dla `Grid` panelu, które ma dwie lub więcej kolumn lub wierszy, minimalnej narzędzi pojawi się poza kolei, który służy do ustawiania szerokości i wysokości jawnie. Mini narzędzi pozwala ustawić opcje rozmiaru dla `Grid` wierszy i kolumn.  
   
  **Uchwyty zmiany rozmiaru**  
  Zmień rozmiar uchwytów znajdują się w zaznaczonych formantów i umożliwiają rozmiar formantu. Podczas zmiany rozmiaru formantu wartości szerokości i wysokości wyświetlane są zwykle ułatwiające rozmiar formantu. Aby uzyskać więcej informacji na temat manipulowanie formanty w widoku Projekt, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md).  
@@ -70,7 +68,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs visual ułatwiaj
   
  Te polecenia są dostępne na tym narzędzi:  
   
- **Powiększenie**  
+ **Zoom**  
  Powiększenie umożliwia rozmiaru powierzchnię projektu. Powiększenie z 12,5% 800%, lub wybrać opcje, takie jak **Dopasuj do wyboru** i **dopasowania do wszystkich**.  
   
  **Pokaż/Ukryj siatkę przyciągania**  

@@ -1,11 +1,8 @@
 ---
 title: Zapisywanie danych w bazie danych | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych w bazie danych
 Zestaw danych znajduje się w pamięci kopia danych. Jeśli zmodyfikujesz danych jest dobrym rozwiązaniem, aby zapisać te zmiany w bazie danych. Można to robić na jeden z trzech sposobów:  
@@ -158,7 +155,7 @@ W poniższej tabeli przedstawiono możliwe wartości <xref:System.Data.DataRowVe
   
  Możesz utworzyć podzbiór zmienionych rekordów przy użyciu `GetChanges` metody tabeli danych (<xref:System.Data.DataTable.GetChanges%2A>) lub zestawu danych (<xref:System.Data.DataSet.GetChanges%2A>) samej siebie. Jeśli należy wywołać metodę dla tabeli danych zwraca kopii tabeli z tylko zmienionych rekordów. Podobnie jeśli należy wywołać metodę dla zestawu danych, możesz uzyskać nowy zestaw danych z tylko zmienionych rekordów w nim.  
   
- `GetChanges`samodzielnie zwraca wszystkie zmienionych rekordów. Z kolei, przekazując żądaną <xref:System.Data.DataRowState> jako parametr `GetChanges` metody, można określić podzbiór zmienionych rekordów mają: nowo dodany rekordów i rekordów, które są oznaczone do usunięcia, odłączyć rekordów lub zmodyfikowanych rekordów.  
+ `GetChanges` samodzielnie zwraca wszystkie zmienionych rekordów. Z kolei, przekazując żądaną <xref:System.Data.DataRowState> jako parametr `GetChanges` metody, można określić podzbiór zmienionych rekordów mają: nowo dodany rekordów i rekordów, które są oznaczone do usunięcia, odłączyć rekordów lub zmodyfikowanych rekordów.  
   
  Pobieranie podzbiór zmienionych rekordów jest przydatne, gdy chcesz wysyłać do innego składnika do przetwarzania rekordów. Zamiast przesyłania całego zestawu danych, można zmniejszyć koszty komunikowania się z innych składników, pobierając tylko te rekordy, które wymaga składnika.   
   

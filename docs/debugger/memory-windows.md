@@ -1,13 +1,10 @@
 ---
-title: "Wyświetl pamięci dla zmiennych w debugerze | Dokumentacja firmy Microsoft"
+title: Wyświetl pamięci dla zmiennych w debugerze | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], Memory window
 - buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e5e2c43f48a1a91c35c770f5f7150972bebb1a1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Używanie okien pamięci w debugerze programu Visual Studio
 **Pamięci** okna zapewnia wgląd do obszaru pamięci, która jest używana przez aplikację. **Czujki** okna, **QuickWatch** okno dialogowe **automatycznych** okno i **zmiennych lokalnych** okna Pokaż zawartość zmiennych, które są przechowywane w określonych lokalizacjach w pamięci. Ale **pamięci** okno zawiera obraz na dużą skalę. Ten widok może być wygodną metodą badanie dużej części danych (buforów lub dużych ciągów, na przykład), które nie są wyświetlane poprawnie w innych oknach. Jednak **pamięci** okno nie jest ograniczona do wyświetlania danych. Wyświetla wszystkie elementy w obszarze pamięci, czy zawartość jest danych, kodu lub losowych bity pamięci w pamięci nieprzypisane.  

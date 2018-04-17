@@ -1,26 +1,23 @@
 ---
-title: "Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektant O-R) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8a0c6702a965ae2733d2461cf30f5fd91f27dba3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (Projektanta obiektów relacyjnych)
 [Składnika LINQ to SQL narzędzia w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenia pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zapewnia niektórych danych rzeczywistych na przedstawiają sposób używania dziedziczenia w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -55,10 +52,10 @@ ms.lasthandoff: 12/22/2017
   
     |Nazwa kolumny|Typ danych|Dopuszcza wartości null|  
     |-----------------|---------------|-----------------|  
-    |**IDENTYFIKATOR**|**int**|**Wartość false**|  
+    |**ID**|**int**|**wartość false**|  
     |**Typ**|**int**|**Wartość true**|  
-    |**Imię**|**nvarchar(200)**|**Wartość false**|  
-    |**Nazwisko**|**nvarchar(200)**|**Wartość false**|  
+    |**Imię**|**Nvarchar(200)**|**wartość false**|  
+    |**Nazwisko**|**Nvarchar(200)**|**wartość false**|  
     |**Menedżer**|**int**|**Wartość true**|  
   
 3.  Wartość w kolumnie identyfikator jako klucz podstawowy.  
@@ -76,10 +73,10 @@ ms.lasthandoff: 12/22/2017
   
     ||||||  
     |-|-|-|-|-|  
-    |**IDENTYFIKATOR**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|  
-    |**1**|**1**|**Anna**|**Wallace**|**WARTOŚĆ NULL**|  
-    |**2**|**1**|**Artur**|**Grilo**|**WARTOŚĆ NULL**|  
-    |**3**|**1**|**Yael**|**Peled**|**WARTOŚĆ NULL**|  
+    |**ID**|**Typ**|**Imię**|**Nazwisko**|**Menedżer**|  
+    |**1**|**1**|**Anna**|**Wallace**|**NULL**|  
+    |**2**|**1**|**Artur**|**Grilo**|**NULL**|  
+    |**3**|**1**|**Yael**|**Peled**|**NULL**|  
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|  
     |**5**|**2**|**Andreasowi**|**Hauser**|**1**|  
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|  

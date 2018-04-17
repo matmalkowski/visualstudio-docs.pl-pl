@@ -1,23 +1,21 @@
 ---
-title: "Wskazówki: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4498f819dae42c1f010fa97891511253624d7b97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Wskazówki: używanie diagnostyki grafiki do debugowania cieniowania obliczenia
 W tym przewodniku przedstawiono sposób użycia narzędzia diagnostyki grafiki w programie Visual Studio do sprawdzania, czy cieniowania obliczenia, które generuje niepoprawnych wyników.  
@@ -56,7 +54,7 @@ W tym przewodniku przedstawiono sposób użycia narzędzia diagnostyki grafiki w
   
 2.  Sprawdź **listy zdarzeń grafiki** zdarzenia rysowania, który renderuje zestawu danych. Aby ułatwić, wprowadź `Draw` w **wyszukiwania** polu w prawym górnym rogu **listy zdarzeń grafiki** okna. Filtruje listę, tak aby zawierała tylko zdarzenia, które mają "Rysuj" w ich tytułów. W tym scenariuszu użytkownik stwierdzi, że rysowania te zdarzenia wystąpił:  
   
-     ![Na liście zdarzeń &#40; EL &#41; Pokazuje Rysuj zdarzenia. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![Na liście zdarzeń &#40;EL&#41; pokazuje rysowania zdarzenia. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Obejrzyj obiektu docelowego renderowania w karcie dokument dziennika grafiki przenieść za pomocą każdego zdarzenia rysowania.  
   
@@ -102,11 +100,11 @@ W tym przewodniku przedstawiono sposób użycia narzędzia diagnostyki grafiki w
   
 6.  Zbadanie kodu źródłowego programu do cieniowania obliczeniowe dla kroku życie obliczeń. W tym scenariuszu należy określić, czy źródło błędu jest tutaj.  
   
-     ![Debugowanie ForceCS &#95; Proste obliczeniowego programu do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Debugowanie ForceCS&#95;prosty obliczeniowe programu do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  Po określeniu lokalizacji błędu, można zatrzymać debugowanie i zmodyfikować kod źródłowy cieniowania obliczenia, aby poprawnie obliczyć odległość między cząstki wchodzącymi w interakcje. W tym scenariuszu należy zmienić wiersza `float2 diff = N_position + P_position;` do `float2 diff = N_position - P_position;`:  
   
- ![Poprawiony obliczeń &#45; kod programu do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![Poprawiony obliczeń&#45;kodu programu do cieniowania. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  W tym scenariuszu ponieważ programów do cieniowania obliczeniowe są kompilowane w czasie wykonywania, można tylko ponownym uruchomieniu aplikacji po wprowadzeniu zmian, aby sprawdzić ich wpływ na symulacyjnych. Nie masz odbudować aplikacji. Po uruchomieniu aplikacji, można wykryć poprawne działanie teraz symulacji.  
   

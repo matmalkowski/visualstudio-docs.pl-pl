@@ -1,12 +1,9 @@
 ---
-title: "Błąd: Usługi zdalnego debugera Visual Studio na komputerze docelowym nie można połączyć z powrotem do tego komputera | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Błąd: Usługi zdalnego debugera Visual Studio na komputerze docelowym nie można połączyć z powrotem do tego komputera | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4553bceb8757b49c6d21f4bbe85e47f90e5b4dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cbf99ebb249cc6a1bddf81be5177be4c537cf56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
 Ten błąd oznacza, że usługa zdalnego debugera Visual Studio jest uruchomiona na koncie użytkownika, który nie może uwierzytelnić, gdy próbuje połączyć się z komputerem, który jest debugowany z.  

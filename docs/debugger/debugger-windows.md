@@ -2,24 +2,20 @@
 title: Debuger systemu Windows w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 779dcc39a18495d1022aaea5e14c8b82432efd53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Więcej informacji na temat okna debugera programu Visual Studio
 
@@ -38,14 +34,14 @@ Podczas debugowania programu, można otworzyć większości oknach debugera. Aby
 |Stosy wywołań|CTRL+ALT+C|[Porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md)|
 |Natychmiastowe|CTRL+ALT+I|[Okno bezpośrednie](../ide/reference/immediate-window.md)|
 |Stosów równoległych|CTR:+SHIFT+D, S|[Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)|
-|Czujki równoległej|CTR:+SHIFT+D, (1, 2, 3, 4)|[Pobierz uruchomić debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Czujki równoległej|KONT.: + SHIFT + D, (1, 2, 3, 4)|[Pobierz uruchomić debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Wątki|CTRL+ALT+H|[Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md)|
 |Moduły|CTRL+ALT+U|[Porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)|
 |Wątków GPU|-|[Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Zadania|CTR:+SHIFT+D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
+|Zadania|KONT.: + SHIFT + D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
 |Interakcyjne debugowania języka Python|SHIFT+ALT+I|[Interaktywny REPL Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Konsola JavaScript|CTRL+ALT+V, C|[Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Eksplorator DOM|CTRL+ALT+V, D|[Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Eksplorator DOM|CTRL + ALT + V D|[Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Eksplorator właściwości na żywo|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Procesy|CTRL+ALT+Z|[Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)|

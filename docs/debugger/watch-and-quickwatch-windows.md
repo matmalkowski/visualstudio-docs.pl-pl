@@ -2,12 +2,9 @@
 title: Ustaw czujki na zmiennych w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Ustaw czujki na zmiennych czujki i QuickWatch Windows w programie Visual Studio
 Podczas debugowania, można użyć **czujki** i **QuickWatch** systemu windows, aby obejrzeć zmiennych i wyrażeń.  Różnica jest to, że **czujki** można wyświetlić w oknie kilku zmiennych podczas **QuickWatch** okno wyświetla pojedynczą zmienną w czasie. 
@@ -122,7 +119,7 @@ int main()
   
  ![Obejrzyj błąd wyrażenia](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a>Odświeżanie wartości czujki, które są nieaktualne  
+##  <a name="bkmk_refreshWatch"></a> Odświeżanie wartości czujki, które są nieaktualne  
  W pewnych okolicznościach, można napotkać ikony odświeżania (strzałka cykliczne) gdy wyrażenie jest obliczane w **czujki** okna.  Na przykład, jeśli masz obliczania właściwości wyłączone (**Narzędzia > Opcje > debugowanie > Włącz obliczanie właściwości i inne niejawne wywołania funkcji**), i mieć następujący kod:  
   
 ```csharp  
@@ -153,7 +150,7 @@ static void Main(string[] args)
   
  Jeśli widzisz ikonę, która jest koło dwa faliste wiersze, które przypominają wątków wyrażenie nie zostało obliczone z powodu potencjalnego zależności między wątkami. Innymi słowy oceny kodu wymaga inne wątki w tymczasowego uruchomienia aplikacji. Podczas pracy w trybie przerwania, zwykle zostały zatrzymane wszystkie wątki w aplikacji. Stosowanie innych wątków, aby uruchomić tymczasowo może mieć nieoczekiwane wpływ na stan programu i powoduje, że debuger do ignorowania zdarzenia, takie jak punkty przerwania i wyjątków zgłaszanych na tych wątków.  
   
-##  <a name="bkmk_sideEffects"></a>Efekty uboczne i wyrażenia  
+##  <a name="bkmk_sideEffects"></a> Efekty uboczne i wyrażenia  
  Niektóre wyrażenia obliczenia można zmienić wartość zmiennej lub inaczej nie wpływa na stan programu. Na przykład obliczenie wyrażenia następujące zmienia wartość `var1`:  
   
 ```  
@@ -168,7 +165,7 @@ var1 = var2
   
  Podczas obliczania właściwości lub niejawne wywołania funkcji jest wyłączone, możesz wymusić oceny przy użyciu **ac** format modyfikator (C# tylko). Zobacz [sformatować Specyfikatory w języku C#](../debugger/format-specifiers-in-csharp.md).  
   
-## <a name="bkmk_objectIds"></a>Za pomocą identyfikatorów obiektów w oknie wyrażeń kontrolnych (C# i Visual Basic)  
+## <a name="bkmk_objectIds"></a> Za pomocą identyfikatorów obiektów w oknie wyrażeń kontrolnych (C# i Visual Basic)  
 
  Brak razy, aby przyjrzeć się zachowaniu określonego obiektu. Na przykład można śledzić obiekt odwołuje się do zmiennej lokalnej po tej zmiennej wykroczyła poza zakres. W języku C# i Visual Basic można utworzyć obiektu identyfikatory dla określonych wystąpień typów referencyjnych i używać ich w oknie wyrażeń kontrolnych i warunków punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i skojarzone z obiektem.  
   
@@ -217,7 +214,7 @@ public class Program
   
 2.  Rozpocznij debugowanie, a podczas wykonywania zatrzyma się punkt przerwania, odnaleźć zmiennej w **zmiennych lokalnych** okna, kliknij go prawym przyciskiem myszy i wybierz **wprowadzić identyfikator obiektu**.  
   
-3.  Powinny pojawić się  **$**  plus liczbą **zmiennych lokalnych** okna, które reprezentuje identyfikator obiektu.  
+3.  Powinny pojawić się **$** plus liczbą **zmiennych lokalnych** okna, które reprezentuje identyfikator obiektu.  
   
 4.  Dodaj identyfikator obiektu do okna czujki.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Wdrażanie składników COM za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wdrażanie składników COM za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrożenie starszych składników modelu COM został tradycyjnie trudne. Składniki należy zarejestrować globalnie i w związku z tym może spowodować niepożądane skutki uboczne między aplikacjami nakładające się. Ta sytuacja zwykle nie jest problem w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub side-by-side zgodny. Program Visual Studio umożliwia wdrażanie izolowane składniki modelu COM systemu Windows XP lub wyższej systemu operacyjnego.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]udostępnia mechanizm łatwego i bezpiecznego wdrażania aplikacji platformy .NET. Jednak aplikacje użyć starszego składniki modelu COM, należy wykonać dodatkowe kroki w celu ich wdrożenia. W tym temacie opisano sposób wdrażania izolowane składniki COM i odwołać natywnego składników (na przykład z programu Visual Basic 6.0 lub Visual C++).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] udostępnia mechanizm łatwego i bezpiecznego wdrażania aplikacji platformy .NET. Jednak aplikacje użyć starszego składniki modelu COM, należy wykonać dodatkowe kroki w celu ich wdrożenia. W tym temacie opisano sposób wdrażania izolowane składniki COM i odwołać natywnego składników (na przykład z programu Visual Basic 6.0 lub Visual C++).  
   
- Aby uzyskać więcej informacji na temat izolowane składniki COM wdrażania, zobacz "Uprość wdrożenia aplikacji z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i COM bez rejestrowania" w [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Aby uzyskać więcej informacji na temat izolowane składniki COM wdrażania, zobacz "Uprość wdrożenia aplikacji z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i COM bez rejestrowania" w [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM bez rejestrowania  
  COM bez rejestrowania jest to nowa technologia, wdrażania i aktywowanie izolowane składniki COM. Działa on umieszczenie biblioteki typów wszystkich składników i informacji o rejestracji, który zazwyczaj jest zainstalowany w rejestrze systemu do pliku XML manifestu, nazywany przechowywane w tym samym folderze co aplikacja.  
@@ -44,7 +42,7 @@ Wdrożenie starszych składników modelu COM został tradycyjnie trudne. Składn
  Gdy manifestu generator napotka izolowanego odwołania COM, wylicza wszystkie `CoClass` wpisów w bibliotece typów składnika dopasowywania każdego wpisu z jej odpowiednie dane rejestracji i generowania manifestu definicje dla modelu COM klasy w pliku biblioteki typów.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Wdrażanie składników COM bez rejestrowania za pomocą aplikacji ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]technologii wdrażania jest dobrze nadaje się do wdrażania izolowane składniki modelu COM, ponieważ zarówno [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i COM bez rejestrowania wymagają, aby składnik miał manifest, aby można było wdrożyć.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologii wdrażania jest dobrze nadaje się do wdrażania izolowane składniki modelu COM, ponieważ zarówno [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i COM bez rejestrowania wymagają, aby składnik miał manifest, aby można było wdrożyć.  
   
  Zazwyczaj autora składnika powinien zapewnić manifestu. Jeśli nie, jednak może generować automatycznie manifestu składnika modelu COM jest Visual Studio. Generowanie manifestu jest wykonywane podczas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] proces publikowania; Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md). Ta funkcja pozwala również na lepsze wykorzystanie starszych składników, które utworzone w starszej środowiskach programistycznych, takich jak Visual Basic 6.0.  
   

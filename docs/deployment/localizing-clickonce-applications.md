@@ -1,12 +1,10 @@
 ---
 title: Lokalizowanie aplikacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e14305b9a1c45c5a050e83fbcc5d20e49ca2a5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 Lokalizacja to proces polegający na wprowadzaniu odpowiednich dla określonej kultury aplikacji. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowanie waluty, dostosowanie rozmiaru formantów w formularzu, i formanty dublowania od prawej do lewej w razie potrzeby.  
@@ -60,7 +58,7 @@ Lokalizacja to proces polegający na wprowadzaniu odpowiednich dla określonej k
 ## <a name="generate-one-deployment-for-each-culture"></a>Generowanie jednego wdrożenia dla każdego kultury  
  W tej strategii wdrażania generowania wielu wdrożeń. W każdym wdrożeniu obejmują tylko zestawu satelickiego potrzebne dla określonej kultury i Oznacz jako specyficzne dla kultury tego wdrożenia.  
   
- Aby użyć tej metody w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ustaw **publikowania języka** właściwości na **publikowania** kartę do odpowiedniego regionu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zostaną uwzględnione zestawu satelickiego wymagane dla regionu, wybierz i pominie wszystkie zestawy satelickie na wdrożenie.  
+ Aby użyć tej metody w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ustaw **publikowania języka** właściwości na **publikowania** kartę do odpowiedniego regionu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zostaną uwzględnione zestawu satelickiego wymagane dla regionu, wybierz i pominie wszystkie zestawy satelickie na wdrożenie.  
   
  To samo można wykonywać za pomocą narzędzia MageUI.exe w programie Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Użyj **wypełnij** znajdującego się na **pliki** kartę manifest aplikacji w taki sposób, aby wykluczyć wszystkie zestawy satelickie z katalogu aplikacji, a następnie ustaw **kultury**na **nazwa** kartę manifeście wdrażania w MageUI.exe. Kroki te obejmują nie tylko prawidłowe satelicki, ale także ustawić `language` atrybutu `assemblyIdentity` elementu w manifeście wdrażania do odpowiedniego kultury.  
   

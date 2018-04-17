@@ -1,12 +1,10 @@
 ---
-title: "Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania Visual Studio | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - executable files, importing
 - executable files, debugging outside of projects
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ded5dfaec889e32bbf4c65f8e6a2335fd8c97a7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d73b122bf882ee1ccf7ce7e35e8a36cd91f2eb07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio
 Czasami może chcesz debugować plik wykonywalny (.exe plik), który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Może być utworzony poza plik wykonywalny [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub pliku wykonywalnego otrzymany od kogoś innego.  

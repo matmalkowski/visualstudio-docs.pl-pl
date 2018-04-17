@@ -1,12 +1,10 @@
 ---
-title: "Włącz debugowanie aplikacji ASP.NET | Dokumentacja firmy Microsoft"
+title: Włącz debugowanie aplikacji ASP.NET | Dokumentacja firmy Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debugowanie aplikacji ASP.NET w programie Visual Studio
 
@@ -142,7 +140,7 @@ Jeśli korzystasz z lokalnego serwera sieci web usług IIS, wykonaj następując
     > [!NOTE]
     > Jeśli używasz systemu Windows Server 2008 R2 można zainstalować programu ASP.NET 4 zamiast za pomocą tego polecenia:
 
-     **C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Otwórz **internetowych usług informacyjnych (IIS) Manager**. (W lewym okienku w Menedżerze serwera wybierz **IIS**. Kliknij prawym przyciskiem myszy serwer, a następnie wybierz **Internet Information Services (IIS) Manager**.)
 
@@ -215,9 +213,9 @@ Jeśli korzystasz z lokalnego serwera sieci web usług IIS, wykonaj następując
 
   
 ## <a name="robust-programming"></a>Niezawodne programowanie  
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]automatycznie wykrywa zmiany wprowadzone w plikach Web.config i zastosowanie nowych ustawień konfiguracji. Nie trzeba ponownie uruchomić komputer lub uruchom ponownie serwer usług IIS, aby zmiany zaczęły obowiązywać.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] automatycznie wykrywa zmiany wprowadzone w plikach Web.config i zastosowanie nowych ustawień konfiguracji. Nie trzeba ponownie uruchomić komputer lub uruchom ponownie serwer usług IIS, aby zmiany zaczęły obowiązywać.  
   
-Witryny sieci Web może zawierać wiele katalogów wirtualnych i podkatalogów, a pliki Web.config mogą istnieć w każdej z nich. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]aplikacje dziedziczyć ustawień z plików Web.config na wyższych poziomach ścieżkę adresu URL. Pliki konfiguracji hierarchiczna umożliwiają zmianę ustawień dla wielu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji w tym samym czasie, takie jak w przypadku wszystkich aplikacji pod nią w hierarchii. Jednak jeśli `debug` jest ustawiona w pliku niżej w hierarchii, zastępuje on wyższej wartości.  
+Witryny sieci Web może zawierać wiele katalogów wirtualnych i podkatalogów, a pliki Web.config mogą istnieć w każdej z nich. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacje dziedziczyć ustawień z plików Web.config na wyższych poziomach ścieżkę adresu URL. Pliki konfiguracji hierarchiczna umożliwiają zmianę ustawień dla wielu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji w tym samym czasie, takie jak w przypadku wszystkich aplikacji pod nią w hierarchii. Jednak jeśli `debug` jest ustawiona w pliku niżej w hierarchii, zastępuje on wyższej wartości.  
   
 Na przykład można określić `debug="true"` www.microsoft.com/aaa/Web.config i dowolnej aplikacji, w tym folderze aaa lub w dowolnym podfolderze aaa dziedziczy to ustawienie. Jeśli Twoje [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacja znajduje się na www.microsoft.com/aaa/bbb, dziedziczy on, że ustawienie, podobnie jak wszelkie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji w www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd i tak dalej. Jedynym wyjątkiem jest jedną z tych aplikacji zastępuje ustawienie za pomocą własnego niższe pliku Web.config.  
   

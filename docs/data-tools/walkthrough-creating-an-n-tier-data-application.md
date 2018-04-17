@@ -1,11 +1,8 @@
 ---
-title: "Wskazówki: Tworzenie aplikacji warstwowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Tworzenie aplikacji warstwowych | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 *N-warstwowa* dane aplikacji są aplikacjom dostęp do danych i są podzielone na kilka logicznych warstw, lub *warstw*. Rozdzielić składniki aplikacji odrębny warstw zwiększa łatwość konserwacji i skalowalność aplikacji. Robi to przez włączenie ułatwia przyjęcie nowych technologii, które można zastosować do pojedynczej warstwie bez konieczności ponownego zaprojektowania całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji warstwy środkowej i warstwy danych. Warstwy środkowej obejmują zazwyczaj Warstwa dostępu do danych, warstwy logiki biznesowej i udostępniane składniki, takie jak uwierzytelniania i weryfikacji. Warstwa danych zawiera relacyjnej bazy danych. Aplikacje warstwowe zwykle przechowuj poufnych informacji w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji od użytkowników końcowych, którzy uzyskują dostęp do warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).  

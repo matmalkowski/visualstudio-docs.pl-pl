@@ -1,11 +1,8 @@
 ---
-title: "Usługi Windows Communication Foundation oraz usługi danych WCF w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Usługi Windows Communication Foundation oraz usługi danych WCF w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -34,26 +31,26 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e1e44eeff16277b21a530bf4c5debcb02de7633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communication Foundation (WCF) i [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologii firmy Microsoft do tworzenia aplikacji rozproszonych. Ten temat zawiera wprowadzenie do usługi z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektywy. Pełną dokumentację można znaleźć [4.5 usługi danych WCF](/dotnet/framework/data/wcf/index).  
   
 ## <a name="what-is-wcf"></a>Co to jest WCF?  
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]to ujednoliconego platforma do tworzenia bezpiecznego, niezawodne, transakcyjne i interoperacyjne aplikacji rozproszonych. Zastępuje starsze technologii komunikacji międzyprocesowej, takich jak usługi sieci Web ASMX, .NET Remoting, usługi przedsiębiorstwa (DCOM) i usługi MSMQ. Usługi WCF, połączono funkcji tych technologii w ujednoliconego modelu programowania. Upraszcza to środowisko rozwoju aplikacji rozproszonych.  
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] to ujednoliconego platforma do tworzenia bezpiecznego, niezawodne, transakcyjne i interoperacyjne aplikacji rozproszonych. Zastępuje starsze technologii komunikacji międzyprocesowej, takich jak usługi sieci Web ASMX, .NET Remoting, usługi przedsiębiorstwa (DCOM) i usługi MSMQ. Usługi WCF, połączono funkcji tych technologii w ujednoliconego modelu programowania. Upraszcza to środowisko rozwoju aplikacji rozproszonych.  
   
 #### <a name="what-are-wcf-data-services"></a>Co to są usługi danych WCF  
- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]jest to standardowy implementacji protokołu Open Data (OData).  Usługi danych WCF umożliwia udostępnianie danych tabelarycznych jako zestaw interfejsów API REST, umożliwiając zwrócić dane przy użyciu standardowych poleceń HTTP, takich jak GET, POST, PUT lub usunąć. Po stronie serwera usługi danych WCF są zastępowane przez [ASP.NET Web API](http://www.asp.net/web-api) do tworzenia nowych usług OData. Biblioteka klienta usługi danych WCF w dalszym ciągu jest dobrym rozwiązaniem w przypadku używania usługi OData w aplikacji .NET w programie Visual Studio (**projektu &#124; Dodaj odwołanie do usługi**). Aby uzyskać więcej informacji, zobacz [4.5 usługi danych WCF](http://go.microsoft.com/fwlink/?LinkID=119952).  
+ [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] jest to standardowy implementacji protokołu Open Data (OData).  Usługi danych WCF umożliwia udostępnianie danych tabelarycznych jako zestaw interfejsów API REST, umożliwiając zwrócić dane przy użyciu standardowych poleceń HTTP, takich jak GET, POST, PUT lub usunąć. Po stronie serwera usługi danych WCF są zastępowane przez [ASP.NET Web API](http://www.asp.net/web-api) do tworzenia nowych usług OData. Biblioteka klienta usługi danych WCF w dalszym ciągu jest dobrym rozwiązaniem w przypadku używania usługi OData w aplikacji .NET w programie Visual Studio (**projektu &#124; Dodaj odwołanie do usługi**). Aby uzyskać więcej informacji, zobacz [4.5 usługi danych WCF](http://go.microsoft.com/fwlink/?LinkID=119952).  
   
 ### <a name="wcf-programming-model"></a>Model programowania WCF  
  Model programowania WCF jest oparty na komunikacji między dwiema jednostkami: usługi WCF i klienta WCF. Model programowania są umieszczane w <xref:System.ServiceModel> przestrzeni nazw w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -86,7 +83,7 @@ Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communi
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
 ## <a name="wcf-tools-in-visual-studio"></a>Narzędzia WCF w programie Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]udostępnia narzędzia umożliwiające tworzenie zarówno usługi WCF i klienci WCF. Aby uzyskać wskazówki, który demonstruje narzędzi, zobacz [wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia narzędzia umożliwiające tworzenie zarówno usługi WCF i klienci WCF. Aby uzyskać wskazówki, który demonstruje narzędzi, zobacz [wskazówki: Tworzenie prostego usługi WCF w formularzach systemu Windows](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
   
 ### <a name="creating-and-testing-wcf-services"></a>Tworzenie i testowanie usługi WCF  
  Można użyć usługi WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonów jako podstawę do szybkiego tworzenia własnej usługi. Host automatycznie usługi WCF i testowanie klienta WCF można następnie użyć do debugowania i testowania usługi. Te narzędzia razem zapewniają szybki i wygodny debugowania i testowania cyklu i wyeliminowanie konieczności zatwierdzenia w modelu hostingu na wczesnym etapie.  
@@ -113,7 +110,7 @@ Program Visual Studio udostępnia narzędzia do pracy z systemem Windows Communi
  Aby dowiedzieć się więcej na temat klienta testowego WCF, zobacz [klienta testowego WCF (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
   
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Uzyskiwanie dostępu do usług WCF w programie Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]upraszcza zadanie tworzenia klienci WCF, automatyczne generowanie serwera proxy i punktu końcowego dla usług, które można dodać przy użyciu **Dodaj odwołanie do usługi** okno dialogowe. Wszystkie informacje o konfiguracji niezbędne są dodawane do pliku app.config. Większość czasu, wszystkie punkty, które musisz wykonać jest utworzenia wystąpienia usługi do jej używania.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] upraszcza zadanie tworzenia klienci WCF, automatyczne generowanie serwera proxy i punktu końcowego dla usług, które można dodać przy użyciu **Dodaj odwołanie do usługi** okno dialogowe. Wszystkie informacje o konfiguracji niezbędne są dodawane do pliku app.config. Większość czasu, wszystkie punkty, które musisz wykonać jest utworzenia wystąpienia usługi do jej używania.  
   
  **Dodaj odwołanie do usługi** okno dialogowe umożliwia wprowadź adres dla usługi lub wyszukaj usługi, która jest zdefiniowana w rozwiązaniu. Okno dialogowe zwraca listę usług i operacji dostarczonych przez tych usług. Umożliwia on również zdefiniowanie przestrzeni nazw za pomocą którego można będzie odwoływać się do usługi w kodzie.  
   

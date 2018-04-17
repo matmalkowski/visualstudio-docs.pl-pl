@@ -1,21 +1,18 @@
 ---
-title: "Modyfikowanie stylu obiektów w programie Blend | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Modyfikowanie stylu obiektów w programie Blend
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 627e2c3f6d81eed00923b6fc15fef453ae7634ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modyfikowanie stylu obiektów w programie Blend
 
@@ -26,8 +23,6 @@ Jeśli chcesz ponownie użyć ustawień lub grupy ustawień, utwórz zasób wiel
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pędzle: Zmodyfikować wygląd obiektu
 
 Jeśli chcesz zmienić jego wygląd, zastosuj pędzla do obiektu.
-
-**Obejrzyj krótki klip wideo:** ![przycisk Odtwórz](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Edytor pędzle](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Malowanie identycznych obrazu lub wzorca na obiekt
 
@@ -47,8 +42,6 @@ Tworzenie pędzla visual z formantu, takie jak przycisk. Na poniższych ilustrac
 
 ![Pędzel Visual](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Pędzel Visual sąsiadująco](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-**Obejrzyj krótki klip wideo:** ![przycisk Odtwórz](../designers/media/bldadminconsoleinitialconfigicon.PNG) [pędzle kafelka](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
-
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Szablony i style: utworzyć spójny wygląd i zachowanie różnych formantów
 
 Można zaprojektować wygląd i zachowanie formantu jeden raz i dotyczą tego projektu innych kontrolek tak, aby nie trzeba zachować je oddzielnie.
@@ -59,7 +52,7 @@ Można zaprojektować wygląd i zachowanie formantu jeden raz i dotyczą tego pr
 
 ### <a name="create-a-template-or-style"></a>Tworzenie szablonu lub stylu
 
-Ma dwa sposoby tworzenia szablonu. Dowolny obiekt można przekonwertować na kompozycję do formantu lub można utworzyć nowy szablon formant.
+Dostępne są dwa sposoby tworzenia szablonu. Dowolny obiekt można przekonwertować na kompozycję do formantu lub można utworzyć nowy szablon formant.
 
 Aby przekonwertować szablon formantu dowolnego obiektu, wybierz obiekt, a następnie na **narzędzia** menu, wybierz **należy do formantu**.
 
@@ -81,7 +74,7 @@ W **tworzenia zasobów stylu** okno dialogowe, można albo nazwę stylu lub szab
 
 > [!NOTE]
 > Nie można utworzyć style lub szablonów dla każdego typu formantu. Jeśli ich nie obsługuje formantu, przycisk stron nadrzędnych nie pojawi się powyżej obszaru roboczego.
-> Aby powrócić do edytowania zakresu głównego dokumentu, kliknij przycisk **zwracać zasięg** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Aby powrócić do edytowania zakresu głównego dokumentu, kliknij przycisk **zwracać zasięg** ![zwracać zakresu ikonę](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stosowanie stylu lub szablonie do formantu
 
@@ -91,7 +84,7 @@ Kliknij prawym przyciskiem myszy obiekt w [oś czasu i obiekty](../designers/cre
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonie formantu
 
-Wybierz kontrolkę i w [właściwości](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) panelu, Znajdź **styl** lub **szablonu** właściwości. Wybierz **zaawansowane opcje** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png), a następnie kliknij przycisk **zresetować** menu skrótów.
+Wybierz kontrolkę i w [właściwości](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) panelu, Znajdź **styl** lub **szablonu** właściwości. Wybierz **zaawansowane opcje**, a następnie kliknij przycisk **zresetować** menu skrótów.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Stany wizualne: Zmienianie wyglądu formantu oparte na stanie
 
@@ -101,13 +94,11 @@ Formanty mogą mieć inny wygląd visual na podstawie interakcji użytkownika. N
 
 **Obejrzyj krótki klip wideo:** ![przycisk Odtwórz](../designers/media/bldadminconsoleinitialconfigicon.PNG) [zarządzania stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a>Zasoby: Tworzenie kolory, style i szablony i używać ich ponownie później
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Zasoby: Tworzenie kolory, style i szablony i używać ich ponownie później
 
 Wszystko, co można przekształcić w projekcie do zasobu. Zasób jest tylko obiekt, który można użyć ponownie w różnych miejscach w aplikacji. Można na przykład utworzyć kolor jeden raz, stał się zasób, a następnie użyć koloru w kilku obiektach. Aby zmienić kolor wszystkich tych obiektów, można zmienić kolor zasobów.
 
 ![Konwertuj kolor na zasób przycisku](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Utwórz zasób koloru — okno dialogowe](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
-
-**Obejrzyj krótki klip wideo:** ![przycisk Odtwórz](../designers/media/bldadminconsoleinitialconfigicon.PNG) [krótki touch zasobów](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
 
 ## <a name="see-also"></a>Zobacz także
 

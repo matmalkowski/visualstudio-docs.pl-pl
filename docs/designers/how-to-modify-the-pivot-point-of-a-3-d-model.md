@@ -1,23 +1,21 @@
 ---
 title: 'Porady: modyfikowanie punktu obrotu 3-w modelu | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 603b3f57bb2b9a1e9c99a4ca3870c38bc569d620
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 499ee5aeae9f4f1d76a463dda43d89f5284c9007
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Porady: modyfikowanie punktu obrotu modelu 3-D
 W tym dokumencie przedstawiono sposób użycia w edytorze modeli, aby zmodyfikować *punktu przestawnego* 3-w modelu. Punkt pivot jest punktem przestrzeni definiująca środek matematyczne obiektu obrotu i skalowania.  

@@ -1,12 +1,10 @@
 ---
-title: "CA2118: Przegląd wykorzystania SuppressUnmanagedCodeSecurityAttribute | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA2118: Przegląd wykorzystania SuppressUnmanagedCodeSecurityAttribute | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Przegląd wykorzystania SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Publiczne lub chronione typ lub element członkowski ma <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atrybutu.  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>Zmienia domyślne zachowanie systemu zabezpieczeń dla członków, których wykonanie kodu niezarządzanego, przy użyciu wywołania COM interop lub platformy. Ogólnie rzecz biorąc, system sprawia, że [dane i modelowanie](/dotnet/framework/data/index) dla uprawnień kodu niezarządzanego. To żądanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza co wywołującego w stosie wywołań uprawnień. Gdy obecny jest atrybut zapewnia system [Linkdemand](/dotnet/framework/misc/link-demands) uprawnienia: uprawnienia bezpośredniego obiektu wywołującego są zaznaczone, gdy obiekt wywołujący jest kompilacji JIT.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Zmienia domyślne zachowanie systemu zabezpieczeń dla członków, których wykonanie kodu niezarządzanego, przy użyciu wywołania COM interop lub platformy. Ogólnie rzecz biorąc, system sprawia, że [dane i modelowanie](/dotnet/framework/data/index) dla uprawnień kodu niezarządzanego. To żądanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza co wywołującego w stosie wywołań uprawnień. Gdy obecny jest atrybut zapewnia system [Linkdemand](/dotnet/framework/misc/link-demands) uprawnienia: uprawnienia bezpośredniego obiektu wywołującego są zaznaczone, gdy obiekt wywołujący jest kompilacji JIT.  
   
  Atrybut ten jest używany głównie w celu zwiększenia wydajności; jednak wzrost wydajności powoduje znaczące zagrożenia dla bezpieczeństwa. Jeśli umieścisz atrybutu na publiczne elementy członkowskie, które wywołują metod natywnych wywołań w stosie wywołań (inne niż bezpośredniego obiektu wywołującego) nie ma potrzeby kodu niezarządzanego uprawnienia do wykonywania kodu niezarządzanego. W zależności od publicznego elementu członkowskiego działania i obsługi danych wejściowych może mieć niezaufanym wywołań funkcji dostępu zazwyczaj ograniczone do zaufanego kodu.  
   

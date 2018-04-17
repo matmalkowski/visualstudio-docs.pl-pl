@@ -1,12 +1,10 @@
 ---
-title: "Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -29,16 +27,16 @@ helpviewer_keywords:
 - _CRTDBG_MAP_ALLOC
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c02fea4639d130840f3f5dbbd9e77693c676d304
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, która była przydzielona wcześniej, są najbardziej delikatny i twardych do wykrycia błędów w aplikacji C/C++. Przeciek pamięci może pozostać niezauważone w pierwszej, ale wraz z upływem czasu, przeciek pamięci progresywnego może spowodować objawy zakresu spadek wydajności do awarii po uruchomieniu aplikacji za mało pamięci. Gorsze ulatniający aplikacji, która używa wszystkich dostępną pamięć, może spowodować inna aplikacja awarię, tworzenie pomyłek, które odpowiada aplikacji. Przecieki pamięci nieszkodliwe może być nawet pozornie objawowych innych problemów, które powinno zostać naprawione.  
@@ -190,7 +188,7 @@ Oznacza to, że ujawnione przydział został w wierszu 20 debug_new.cpp.
   
 3.  W **czujki** wpisz `_crtBreakAlloc` w w **nazwa** kolumny.  
   
-     Jeśli używane są wielowątkowe wersja DLL biblioteki CRT (opcja / / MD), należy uwzględnić w operatorze kontekstu:`{,,ucrtbased.dll}_crtBreakAlloc`  
+     Jeśli używane są wielowątkowe wersja DLL biblioteki CRT (opcja / / MD), należy uwzględnić w operatorze kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
 4.  Naciśnij klawisz **ZWRACAĆ**.  
   
@@ -223,7 +221,7 @@ _CrtMemCheckpoint( &s1 );
   
 ```  
   
- `_CrtMemCheckpoint`wypełnia struktury migawki bieżący stan pamięci.  
+ `_CrtMemCheckpoint` wypełnia struktury migawki bieżący stan pamięci.  
   
  Do wyjściowego zawartość **_crtmemstate —** struktury należy przekazać do struktury `_ CrtMemDumpStatistics` funkcji:  
   
@@ -232,7 +230,7 @@ _CrtMemDumpStatistics( &s1 );
   
 ```  
   
- `_ CrtMemDumpStatistics`generuje zrzutu pamięci stan, który wygląda następująco:  
+ `_ CrtMemDumpStatistics` generuje zrzutu pamięci stan, który wygląda następująco:  
   
 ```  
 0 bytes in 0 Free Blocks.  
@@ -256,7 +254,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );  
 ```  
   
- `_CrtMemDifference`porównuje stanów pamięci `s1` i `s2` i zwraca wynik (`s3`) czyli różnica `s1` i `s2`.  
+ `_CrtMemDifference` porównuje stanów pamięci `s1` i `s2` i zwraca wynik (`s3`) czyli różnica `s1` i `s2`.  
   
  Wyszukiwanie przecieków pamięci jeden technika rozpoczyna się przez umieszczenie `_CrtMemCheckpoint` wywołania na początku i na końcu aplikację, następnie za pomocą `_CrtMemDifference` porównanie wyników. Jeśli `_CrtMemDifference` pokazuje przeciek pamięci, możesz dodać więcej `_CrtMemCheckpoint` wywołania do dzielenia programie za pomocą wyszukiwanie binarne, dopóki nie mają odizolowane źródło systemu.  
   

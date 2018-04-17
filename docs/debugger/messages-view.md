@@ -1,36 +1,32 @@
 ---
-title: "Widoku komunikatów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Widoku komunikatów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messages-view"></a>Widok komunikatów
 Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wyświetla ten strumień komunikatu. Uchwyt okna, kod wiadomości i wiadomości są wyświetlane. Można utworzyć widoku komunikatów dla wątku lub procesu również. Dzięki temu można wyświetlić komunikaty wysyłane do wszystkich okien należących do określonych proces lub wątek, który jest szczególnie przydatne w przypadku przechwytywania komunikaty inicjowania okna.  
   
  Typowe okno widoku komunikatów pojawia się poniżej. Należy pamiętać, że pierwsza kolumna zawiera uchwytu okna, a druga kolumna zawiera kod wiadomości (wyjaśniono w [kody komunikatów](../debugger/message-codes.md)). Komunikat dekodowane parametrów i zwracanych wartości są po prawej stronie.  
   
- ![Spy &43; &#43; Widoku komunikatów](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
+ ![Spy&#43; &#43; widoku komunikatów](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
 Widok komunikatów narzędzia Spy ++  
   
 ## <a name="procedures"></a>Procedury  

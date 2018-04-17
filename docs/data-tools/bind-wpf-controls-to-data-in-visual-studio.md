@@ -1,11 +1,8 @@
 ---
-title: "Powiązanie formantów WPF z danymi w Visual Studio — część 1 | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Powiązanie formantów WPF z danymi w Visual Studio — część 1 | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4c059013703a73a83a9a6f35b3c89f7b27c523d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązanie formantów WPF z danymi w Visual Studio
 Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] kontrolki. Aby utworzyć takie formanty powiązane z danymi, można przeciągnij elementy z **źródeł danych** okna na [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W tym temacie opisano niektóre z najbardziej typowych zadań, narzędzia i klasy, które umożliwia tworzenie powiązanych z danymi [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] aplikacji.  
@@ -64,7 +61,7 @@ Można wyświetlić dane dla użytkowników aplikacji przez wiązanie danych do 
   
 -   Tworzy wiązania danych dla formantu. Jeśli przeciągniesz element do istniejącego formantu w projektancie, XAML powiąże formant z elementem. Przeciągnięcie elementu do kontenera XAML tworzy kontrolkę, które zostały wybrane do przeciąganego elementu i do elementu tworzy ona powiązanie formantu. Formant nie zostanie utworzony w nowej <xref:System.Windows.Controls.Grid>.  
   
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]do pliku CodeBehind również wprowadza następujące zmiany:  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pliku CodeBehind również wprowadza następujące zmiany:  
   
 -   Tworzy <xref:System.Windows.FrameworkElement.Loaded> programu obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element zawierający formant. Program obsługi zdarzeń wypełnia tabelę z danymi, pobiera <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwsze dane elementu bieżącego elementu. Jeśli <xref:System.Windows.FrameworkElement.Loaded> obsługi zdarzeń już istnieje, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dodaje ten kod do istniejącego programu obsługi zdarzeń.  
   
@@ -96,7 +93,7 @@ Visual Studio wprowadza następujące zmiany w pliku powiązanym z kodem:
 > [!NOTE]
 >  Niestandardowe klasy musi być publiczny i domyślnie ma konstruktora bez parametrów. One can'tbe zagnieżdżone klasy, które mają "kropkę" w ich składni. Aby uzyskać więcej informacji, zobacz [XAML oraz klas niestandardowych dla WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] który wykonuje następujące czynności:  
   
 -   Dodaje nowy <xref:System.Windows.Data.CollectionViewSource> zasobów kontenera, w którym możesz przeciągnąć element. <xref:System.Windows.Data.CollectionViewSource> To obiekt, który może służyć do nawigowania i wyświetlić dane w obiekcie.  
   

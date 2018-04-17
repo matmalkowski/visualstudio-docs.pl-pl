@@ -1,23 +1,20 @@
 ---
-title: "Nie można usunąć wybranej klasy, ponieważ jest używany jako typ zwracany dla co najmniej jedną metodę DataContext | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Nie można usunąć wybranej klasy, ponieważ jest używany jako typ zwracany dla co najmniej jedną metodę DataContext | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 78107218af8c4b32e1cace3137fa15fe31fcbc52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 0b5781508083524a5cf7374a12fd962f0fe34aaf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Nie można usunąć wybranej klasy, ponieważ jest używany jako typ zwracany dla co najmniej jedną metodę DataContext
 Typ zwracany co najmniej jednego <xref:System.Data.Linq.DataContext> metod jest klasa wybranej jednostki. Usuwanie klasę jednostki, który jest używany jako typ zwracany dla <xref:System.Data.Linq.DataContext> metoda spowoduje kompilacji projektu, aby zakończyć się niepowodzeniem. Aby usunąć klasy wybranej jednostki, należy zidentyfikować <xref:System.Data.Linq.DataContext> metody, które go używać i wartość zwracanym typem klasy inną jednostkę.  

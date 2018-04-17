@@ -1,30 +1,26 @@
 ---
-title: "Wskazówki: Pisanie wizualizatora w C# | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Pisanie wizualizatora w C# | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 7520072d719d7941acff57b871b8b1d1c69d0d7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Wskazówki: Pisanie wizualizatora w C# #
 W tym przewodniku pokazano, jak napisać prosty wizualizatora przy użyciu języka C#. Wizualizator, które będą tworzone w tym przewodniku Wyświetla zawartość ciągu przy użyciu okno komunikatu formularzy systemu Windows. Ten Wizualizator prosty ciąg nie jest szczególnie przydatna w sobie, ale zawiera podstawowe kroki, które należy wykonać, aby utworzyć wizualizatorów bardziej użyteczna w przypadku innych typów danych.  
@@ -59,7 +55,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 2.  Zmień nazwę z Class1.cs, wpisując tekst opisowy, takich jak DebuggerSide.cs.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia deklaracji klasy w DebuggerSide.cs odpowiadające nową nazwę pliku.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.cs odpowiadające nową nazwę pliku.  
   
 3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** menu skrótów.  
   
@@ -89,7 +85,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`ma co metoda abstrakcyjna (`Show`), który należy zastąpić.  
+ `DialogDebuggerVisualizer` ma co metoda abstrakcyjna (`Show`), który należy zastąpić.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Aby przesłonić metodę DialogDebuggerVisualizer.Show  
   

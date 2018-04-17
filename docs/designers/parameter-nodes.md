@@ -1,23 +1,21 @@
 ---
-title: "Parametr węzłów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Parametr węzłów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d01c655924bfbeae525c91ffb231f4d2b3d2c38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f4e7519690fe3e68e4c062cd915e15208a2e926e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-nodes"></a>Węzły parametrów
 W projektancie programu do cieniowania parametru węzły reprezentują wejścia do programu do cieniowania, które są poza kontrolą aplikacji na podstawie na rysunku, na przykład, właściwości materiału, światła kierunkowe, pozycja kamery i czasu. Nie może zmienić te parametry z każdego wywołania rysunku, można użyć tego samego programu do cieniowania umożliwiają inny wygląd obiektu.  

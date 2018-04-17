@@ -1,11 +1,8 @@
 ---
-title: "Powiązanie formantów WPF z usługi danych WCF | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Powiązanie formantów WPF z usługi danych WCF | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązanie formantów WPF z usługi danych WCF
 W tym przewodniku spowoduje utworzenie aplikacji WPF, który zawiera formanty powiązane z danymi. Formanty są powiązane z rekordy klientów, które znajdują się w [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Dodasz również przycisków, których klienci mogą używać do wyświetlania i aktualizowania rekordów.  
@@ -247,11 +244,11 @@ Obiekt serwera proxy usługi używany do ładowania danych sprzedaży z usługi.
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Przejdź rekordy sprzedaży  
-Dodaj kod, który umożliwia przewijanie rekordów sprzedaży przy użyciu  **\<**  i  **>**  przycisków.  
+Dodaj kod, który umożliwia przewijanie rekordów sprzedaży przy użyciu **\<** i **>** przycisków.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Aby umożliwić użytkownikom przechodzenie rekordy sprzedaży  
   
-1.  W projektancie, kliknij dwukrotnie  **<**  przycisk na powierzchni okna.  
+1.  W projektancie, kliknij dwukrotnie **<** przycisk na powierzchni okna.  
   
      Visual Studio otworzy plik CodeBehind i tworzy nowy `backButton_Click` programu obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń.  
   
@@ -260,7 +257,7 @@ Dodaj kod, który umożliwia przewijanie rekordów sprzedaży przy użyciu  **\<
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Powrót do projektanta, a następnie kliknij dwukrotnie  **>**  przycisku.  
+3.  Powrót do projektanta, a następnie kliknij dwukrotnie **>** przycisku.  
   
      Visual Studio otworzy plik CodeBehind i tworzy nowy `nextButton_Click` programu obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń.  
   
@@ -302,7 +299,7 @@ Skompiluj i uruchom aplikację, aby sprawdzić, czy można wyświetlać i aktual
   
     -   Pola tekstowe wyświetlać różne pola danych z pierwszego rekordu sprzedaży ma identyfikator zamówienia **71774**.  
   
-    -   Możesz kliknąć  **>**  lub  **<**  przyciski poruszać się po inne rekordy sprzedaży.  
+    -   Możesz kliknąć **>** lub **<** przyciski poruszać się po inne rekordy sprzedaży.  
   
 5.  W jednym z rekordów sprzedaży, wpisz dowolny tekst w **komentarz** , a następnie kliknij przycisk **zapisać zmiany**.  
   

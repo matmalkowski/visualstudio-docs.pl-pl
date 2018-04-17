@@ -1,11 +1,8 @@
 ---
 title: Dodawanie walidacji do warstwowego zestawu danych | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a3f37b734bb9d109634fc272fca3140d40c040f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: addcbd4640acd86cc40097742dcdfd515308f256
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Dodawanie walidacji do warstwowego zestawu danych
 Dodawanie walidacji do zestawu danych, który jest dzielony stanowi rozwiązanie warstwowe zasadniczo jest taka sama jak dodawanie walidacji do pojedynczego pliku zestawu danych (dataset w jednym projekcie). Sugerowane lokalizacją sprawdzaniu poprawności danych jest podczas <xref:System.Data.DataTable.ColumnChanging> i/lub <xref:System.Data.DataTable.RowChanging> zdarzenia tabeli danych.  
@@ -62,7 +59,7 @@ End Sub
 2.  Kliknij dwukrotnie kolumnę, którą chcesz zweryfikować. Ta akcja tworzy <xref:System.Data.DataTable.ColumnChanging> obsługi zdarzeń.  
   
     > [!NOTE]
-    >  Projektant obiektów Dataset nie tworzy automatycznie program obsługi zdarzeń dla zdarzenia C#. Kodu, które są niezbędne do obsługi zdarzeń w języku C# jest uwzględniony w następnej sekcji. `SampleColumnChangingEvent`zostanie utworzona i argumentów podłączono do <xref:System.Data.DataTable.ColumnChanging> zdarzenia w <xref:System.Data.DataTable.EndInit%2A> metody.  
+    >  Projektant obiektów Dataset nie tworzy automatycznie program obsługi zdarzeń dla zdarzenia C#. Kodu, które są niezbędne do obsługi zdarzeń w języku C# jest uwzględniony w następnej sekcji. `SampleColumnChangingEvent` zostanie utworzona i argumentów podłączono do <xref:System.Data.DataTable.ColumnChanging> zdarzenia w <xref:System.Data.DataTable.EndInit%2A> metody.  
   
 3.  Dodaj kod, aby sprawdzić, czy `e.ProposedValue` zawiera dane, które spełnia wymagania aplikacji. Jeśli proponowaną wartość jest nieodpowiednia, należy ustawić kolumny, aby wskazać, że zawiera on wystąpił błąd.  
   

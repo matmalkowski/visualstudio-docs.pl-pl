@@ -1,12 +1,10 @@
 ---
-title: "Wskazówki: Pisanie wizualizatora w Visual Basic | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Pisanie wizualizatora w Visual Basic | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ad673736334daec79860b9832a056c17781a082
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7076e85701551e884c3126c7acd235b45a81aff5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
 Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Wizualizator, które będą tworzone w tym przewodniku Wyświetla zawartość ciągu przy użyciu okno komunikatu formularzy systemu Windows. Ten Wizualizator prostego ciągu jest prosty przykład pokazanie, sposób tworzenia wizualizatorów dla innych typów danych bardziej odpowiednie do projektów.  
@@ -58,7 +56,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
 2.  Zmień nazwę z Class1.vb, wpisując tekst opisowy, takich jak DebuggerSide.vb.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia deklaracji klasy w DebuggerSide.vb odpowiadające nową nazwę pliku.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia deklaracji klasy w DebuggerSide.vb odpowiadające nową nazwę pliku.  
   
 3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Moje wizualizatora pierwszy**i w menu skrótów kliknij **Dodaj odwołanie**.  
   
@@ -90,7 +88,7 @@ Ten przewodnik przedstawia sposób zapisania proste wizualizatora przy użyciu [
     Inherits DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`ma co metoda abstrakcyjna, `Show`, który należy zastąpić.  
+ `DialogDebuggerVisualizer` ma co metoda abstrakcyjna, `Show`, który należy zastąpić.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Aby przesłonić metodę DialogDebuggerVisualizer.Show  
   

@@ -1,24 +1,22 @@
 ---
-title: "Wskazówki analizowanie zarządzanego kodu pod względem wad kodu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wskazówki analizowanie zarządzanego kodu pod względem wad kodu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: Analizowanie zarządzanego kodu dla kodu usterki
 
@@ -112,7 +110,7 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 
    1. Dodaj kod `using System.Runtime.Serialization;` na początku pliku Class1.cs.
 
-   1. Następnie dodaj konstruktora`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Następnie dodaj konstruktora `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032: Implementowanie standardowych konstruktorów wyjątków](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następujący Konstruktor do tej klasy: demo() publiczny
 

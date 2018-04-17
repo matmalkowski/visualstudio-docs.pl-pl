@@ -2,12 +2,9 @@
 title: Zdalne debugowanie projektu Visual C++ | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
 Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalnej na komputerze, których będą wdrażać aplikacji, należy skonfigurować z projektem, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchom aplikację.
@@ -50,14 +46,14 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 i nowsze (nie phone) i wer
 > [!TIP]
 > W niektórych scenariuszach może być najbardziej efektywny do uruchamiania zdalnego debugera z udziału plików. Aby uzyskać więcej informacji, zobacz [uruchamiania zdalnego debugera z udziału plików](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Konfigurowanie zdalnego debugera
+## <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Jeśli należy dodać uprawnienia dla dodatkowych użytkowników do zmiany trybu uwierzytelniania lub numer portu dla zdalnego debugera, zobacz [skonfigurować debugera zdalnego](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Zdalne debugowanie projektu Visual C++  
+## <a name="remote_cplusplus"></a> Zdalne debugowanie projektu Visual C++  
  W poniższej procedurze, nazwa i ścieżka projektu jest C:\remotetemp\MyMfc i nazwa komputera zdalnego jest **MJO DL**.  
   
 1.  Tworzenie aplikacji MFC o nazwie **mymfc.**  
@@ -96,7 +92,7 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 i nowsze (nie phone) i wer
   
 10. Jeśli zostanie wyświetlony monit, wprowadź poświadczenia sieci, aby połączyć z komputerem zdalnym.  
   
-     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny, możesz wybrać certyfikat zabezpieczeń, lub wprowadź nazwę domeny i hasło. Na komputerze z systemem innym niż domeny, wprowadzić nazwę komputera i nazwę konta użytkownika prawidłowy tak samo, jak  **MJO-DL\name@something.com** , oraz prawidłowe hasło.  
+     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń sieci. Na przykład na komputerze domeny, możesz wybrać certyfikat zabezpieczeń, lub wprowadź nazwę domeny i hasło. Na komputerze z systemem innym niż domeny, wprowadzić nazwę komputera i nazwę konta użytkownika prawidłowy tak samo, jak **MJO-DL\name@something.com**, oraz prawidłowe hasło.  
   
 11. Na komputerze programu Visual Studio powinny być widoczne czy wykonanie jest zatrzymana na punkt przerwania.  
   

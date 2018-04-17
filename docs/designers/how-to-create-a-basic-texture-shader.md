@@ -1,23 +1,21 @@
 ---
 title: 'Porady: tworzenie cieniowania tekstury podstawowej | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 52e909e911a552b69930ef6a60257fca29a0794d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 43c2520761c1f16bb6111e5f6db25d2c37fce56c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Porady: tworzenie cieniowania tekstury podstawowej
 Ten dokument przedstawia sposób umożliwiają utworzenie cieniowania tekstury jednym Designer programu do cieniowania i języka programu do cieniowania wykres skierowane (DGSL). Ten program do cieniowania Ustawia kolor końcowy bezpośrednio do RGB i wartości alfa, które są pobierane z tekstury.  

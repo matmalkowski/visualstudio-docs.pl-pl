@@ -1,12 +1,10 @@
 ---
-title: "Zaufane Omówienie wdrożenia aplikacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zaufane Omówienie wdrożenia aplikacji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - trusted application deployment
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
-caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 34e83d6b035ba6ea91190fa89b9e1a63366e7907
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 46a43a372a8a8c4de407d4063ea2a625ede38b14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień za pomocą technologii zaufane wdrożenia aplikacji.  
@@ -40,7 +38,7 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deploy
   
 |Obiekt lub roli|Opis|  
 |--------------------|-----------------|  
-|Administrator|Jednostka organizacyjna, która jest odpowiedzialna za aktualizacji i obsługę komputerów klienckich|  
+|administrator|Jednostka organizacyjna, która jest odpowiedzialna za aktualizacji i obsługę komputerów klienckich|  
 |Menedżera zaufania|Podsystem w środowisko uruchomieniowe języka wspólnego (CLR) obowiązek stosować zabezpieczeń aplikacji klienta.|  
 |Wydawcy|Jednostka, która zapisuje i obsługiwanej aplikacji.|  
 |Narzędzie wdrażania|Jednostka, która pakietów i rozpowszechnia aplikacji dla użytkowników.|  

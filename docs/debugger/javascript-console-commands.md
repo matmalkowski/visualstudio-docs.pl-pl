@@ -1,28 +1,25 @@
 ---
-title: "Konsola JavaScript poleceń w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Konsola JavaScript poleceń w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli języka JavaScript w programie Visual Studio
   
@@ -69,7 +66,7 @@ ms.lasthandoff: 01/19/2018
   
 |Polecenie|Opis|Przykład|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|Zwraca określony element w oknie konsoli. `$0`Zwraca element aktualnie wybrane w programie DOM Explorer `$1` zwraca wybranego wcześniej w modelu DOM Explorer i tak dalej, aż czwartym elementem poprzednio wybranego elementu.|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|Zwraca określony element w oknie konsoli. `$0` Zwraca element aktualnie wybrane w programie DOM Explorer `$1` zwraca wybranego wcześniej w modelu DOM Explorer i tak dalej, aż czwartym elementem poprzednio wybranego elementu.|$3|  
 |`$(id)`|Zwraca element według identyfikatora. To polecenie skrótów dla `document.getElementById(id)`, gdzie `id` jest ciągiem, który reprezentuje identyfikatorem elementu.|`$("contenthost")`|  
 |`$$(selector)`|Zwraca tablicę elementów spełniających określony selektor przy użyciu składni selektora CSS. To polecenie skrótów dla `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Umożliwia zmienianie kontekstu dla wyrażenia w oknie najwyższego poziomu domyślnej strony okna określonej ramce. Wywoływanie `cd()` bez parametrów zwraca kontekst do okna najwyższego poziomu.|`cd();`<br /><br /> `cd(myframe);`|  
@@ -89,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Badanie obiektów w oknie konsoli JavaScript  
  Możesz użyć dowolnego obiektu, który znajduje się w zakresie, korzystając z okna konsoli języka JavaScript. Aby sprawdzić obiekt poza zakresem w oknie konsoli, należy użyć `console.log` , `console.dir`, lub innych poleceń z poziomu kodu. Alternatywnie możesz użyć obiektu z okna konsoli, gdy znajduje się w zakresie ustawiając punkt przerwania w kodzie (**punktu przerwania** > **wstawić punktu przerwania**).  
   
-##  <a name="ConsoleLog"></a>Formatowanie danych wyjściowych console.log  
+##  <a name="ConsoleLog"></a> Formatowanie danych wyjściowych console.log  
  W przypadku przekazania wiele argumentów `console.log`, konsoli będzie traktować jako tablica argumentów i łączenie danych wyjściowych.  
   
 ```javascript  
@@ -103,7 +100,7 @@ console.log(user.first, user.last);
   
 ```  
   
- `console.log`obsługuje również wzorce podstawienia "printf" do formatowania danych wyjściowych. Jeśli używasz wzorce podstawienia w pierwszym argumencie dodatkowe argumenty będzie używany do zastępowania określonego wzorce w kolejności, które są używane.  
+ `console.log` obsługuje również wzorce podstawienia "printf" do formatowania danych wyjściowych. Jeśli używasz wzorce podstawienia w pierwszym argumencie dodatkowe argumenty będzie używany do zastępowania określonego wzorce w kolejności, które są używane.  
   
  Obsługiwane są następujące wzorce podstawienia:  
   

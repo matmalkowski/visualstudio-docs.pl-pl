@@ -1,12 +1,10 @@
 ---
 title: '&lt;plik&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;plik&gt; elementu (aplikacji ClickOnce)
 Identyfikuje wszystkie pliki nonassembly pobrane i używane przez aplikację.  
@@ -95,7 +93,7 @@ Identyfikuje wszystkie pliki nonassembly pobrane i używane przez aplikację.
 |`name`|Wymagany. Określa nazwę pliku.|  
 |`size`|Wymagany. Określa rozmiar w bajtach pliku.|  
 |`group`|Opcjonalny, w przypadku `optional` atrybut jest określony lub nie ustawiono `false`; Jeśli wymagane `optional` jest `true`. Nazwa grupy, do której należy ten plik. Nazwa może być dowolną wartością ciągu Unicode, wybierany przez projektanta i służy do pobierania plików na żądanie z <xref:System.Deployment.Application.ApplicationDeployment> klasy.|  
-|`optional`|Opcjonalny. Określa, czy ten plik musi uruchomić pobieranie, gdy aplikacja jest pierwszym lub czy plik powinien znajdować się tylko na serwerze do momentu aplikacja żąda ją na żądanie. Jeśli `false` lub niezdefiniowana, plik jest pobierany podczas najpierw uruchomić lub zainstalować aplikacji. Jeśli `true`, `group` musi być określona dla manifest aplikacji jest nieprawidłowy. `optional`nie może mieć wartości true Jeśli `writeableType` zostanie określony z wartością `applicationData`.|  
+|`optional`|Opcjonalny. Określa, czy ten plik musi uruchomić pobieranie, gdy aplikacja jest pierwszym lub czy plik powinien znajdować się tylko na serwerze do momentu aplikacja żąda ją na żądanie. Jeśli `false` lub niezdefiniowana, plik jest pobierany podczas najpierw uruchomić lub zainstalować aplikacji. Jeśli `true`, `group` musi być określona dla manifest aplikacji jest nieprawidłowy. `optional` nie może mieć wartości true Jeśli `writeableType` zostanie określony z wartością `applicationData`.|  
 |`writeableType`|Opcjonalny. Określa, że ten plik jest plikiem danych. Obecnie jest jedyną poprawną wartością `applicationData`.|  
   
 ## <a name="typelib"></a>biblioteki typów  
@@ -160,7 +158,7 @@ Identyfikuje wszystkie pliki nonassembly pobrane i używane przez aplikację.
 ## <a name="hash"></a>hash  
  `hash` Element jest opcjonalny element podrzędny `file` elementu. `hash` Element nie ma żadnych atrybutów.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]używa algorytmicznego skrót wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żadne pliki nie zostały zmieniły po wdrożeniu. Jeśli `hash` element nie jest dołączana, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` element nie jest zalecane.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] używa algorytmicznego skrót wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żadne pliki nie zostały zmieniły po wdrożeniu. Jeśli `hash` element nie jest dołączana, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` element nie jest zalecane.  
   
  Jeśli manifestu zawiera plik, który nie jest wartość skrótu, że manifestu nie może być cyfrowo podpisać, ponieważ użytkownicy nie może zweryfikować zawartości pliku bez haszowania.  
   

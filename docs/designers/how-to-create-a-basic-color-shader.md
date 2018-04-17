@@ -1,23 +1,21 @@
 ---
 title: 'Porady: tworzenie cieniowania kolor podstawowy | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7c0992b8db46155a709f58714dfd427882674d2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 762b9076e36b53102abc89284ca06da2e6cdf56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Porady: tworzenie cieniowania koloru podstawowego
 Ten dokument przedstawia sposób umożliwiają utworzenie cieniowania koloru Designer programu do cieniowania i języka programu do cieniowania wykres skierowane (DGSL). Ten program do cieniowania Ustawia kolor końcowy stałej wartości kolorów RGB.  
@@ -54,7 +52,7 @@ Ten dokument przedstawia sposób umożliwiają utworzenie cieniowania koloru Des
 > [!NOTE]
 >  Na ilustracji kolor pomarańczowy określono lepiej wykazać efekt programu do cieniowania.  
   
- ![Wykres programu do cieniowania i jego wynik 3 &#45; modelu D](../designers/media/digit-flat-color-effect.png "cyfrę płaski — kolor-efekt uboczny")  
+ ![Wykres programu do cieniowania i jego wynik 3&#45;modelu D](../designers/media/digit-flat-color-effect.png "cyfrę płaski — kolor-efekt uboczny")  
   
  Niektórych kształtów udostępniać lepsze podglądy niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat wersji preview programów do cieniowania w projektancie programu do cieniowania, zobacz [Designer programu do cieniowania](../designers/shader-designer.md).  
   

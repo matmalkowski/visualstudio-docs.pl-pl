@@ -1,26 +1,23 @@
 ---
-title: "Zdalne debugowanie platformy ASP.NET Core w usługach IIS i platformy Azure | Dokumentacja firmy Microsoft"
+title: Zdalne debugowanie platformy ASP.NET Core w usługach IIS i platformy Azure | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 021b9c9fe0e4e921e339db432fdf6d248624c92c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017 r.
 
@@ -63,7 +60,7 @@ Debugowanie między dwoma komputerami połączone za pośrednictwem serwera prox
 
 4. Otwórz plik About.cshtml.cs i ustaw punkt przerwania `OnGet` — metoda (w szablonach starsze HomeController.cs zamiast tego otworzyć i ustawić punkt przerwania `About()` metody).
 
-## <a name="remote_debug_azure_app_service"></a>Zdalne debugowanie platformy ASP.NET Core w usłudze aplikacji Azure
+## <a name="remote_debug_azure_app_service"></a> Zdalne debugowanie platformy ASP.NET Core w usłudze aplikacji Azure
 
 W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do pełni wystąpienia usług IIS. Jednak jest ustawień konfiguracji programu IIS i nie można go dostosować. Aby uzyskać szczegółowe instrukcje, zobacz [wdrażanie aplikacji sieci web platformy ASP.NET Core na platformie Azure przy użyciu programu Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Umożliwia dostosowywanie usług IIS, należy spróbować debugowania [maszyny Wirtualnej Azure](#BKMK_azure_vm).) 
 
@@ -83,7 +80,7 @@ W programie Visual Studio można szybko publikowanie i debugowanie aplikacji do 
 
     To już wszystko! Pozostałe kroki w tym temacie dotyczą zdalnego debugowania na maszynie Wirtualnej platformy Azure.
 
-## <a name="remote_debug_azure_vm"></a>Zdalne debugowanie platformy ASP.NET Core na maszynie Wirtualnej platformy Azure
+## <a name="remote_debug_azure_vm"></a> Zdalne debugowanie platformy ASP.NET Core na maszynie Wirtualnej platformy Azure
 
 Można utworzyć Azure maszyny Wirtualnej systemu Windows Server i następnie zainstalować i skonfigurowanie usług IIS i innych składników oprogramowania wymagane. Trwa dłużej niż wdrażanie w usłudze Azure App Service i wymaga wykonaj pozostałe kroki w tym samouczku.
 
@@ -109,15 +106,15 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 1. Zainstaluj [.NET Core systemu Windows serwer obsługujący](https://aka.ms/dotnetcore-2-windowshosting) pakietu przez system operacyjny. Instaluje pakiet podstawowego środowiska wykonawczego platformy .NET, biblioteka programu .NET Core i moduł platformy ASP.NET Core. Aby uzyskać dodatkowe szczegółowe instrukcje, zobacz [publikowania w usługach IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Jeśli system nie ma połączenia internetowego, Uzyskaj i zainstaluj  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  przed zainstalowaniem pakietu Hosting .NET Core systemu Windows Server.
+    > Jeśli system nie ma połączenia internetowego, Uzyskaj i zainstaluj *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* przed zainstalowaniem pakietu Hosting .NET Core systemu Windows Server.
 
 3. Ponowne uruchomienie systemu (lub wykonać **net stop została /y** następuje **net start w3svc** z wiersza polecenia, aby pobrać zmiany systemowej PATH).
 
-### <a name="BKMK_install_webdeploy"></a>(Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
+### <a name="BKMK_install_webdeploy"></a> (Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a>Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
+### <a name="BKMK_deploy_asp_net"></a> Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
 
 1. Otwórz **Internet Information Services (IIS) Manager** i przejdź do **witryny**.
 
@@ -129,7 +126,7 @@ Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawni
 
     Jeśli nie widzisz jednego z tych użytkowników z dostępem, przejść przez kroki, aby dodać konta IUSR jako użytkownik z uprawnieniami Odczyt i wykonywanie.
 
-### <a name="bkmk_webdeploy"></a>(Opcjonalnie) Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
+### <a name="bkmk_webdeploy"></a> (Opcjonalnie) Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
 
 Jeśli zainstalowano za pomocą Instalatora platformy sieci Web narzędzia Web Deploy, można wdrożyć aplikacji bezpośrednio z programu Visual Studio.
 
@@ -169,18 +166,18 @@ Jeśli nie używasz narzędzia Web Deploy, należy opublikować i wdrażanie apl
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a>Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
+### <a name="BKMK_msvsmon"></a> Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Konfigurowanie zdalnego debugera w systemie Windows Server
+### <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera w systemie Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Jeśli należy dodać uprawnienia dla dodatkowych użytkowników do zmiany trybu uwierzytelniania lub numer portu dla zdalnego debugera, zobacz [skonfigurować debugera zdalnego](../debugger/remote-debugging.md#configure_msvsmon).
 
-### <a name="BKMK_attach"></a>Dołączanie do aplikacji platformy ASP.NET z komputera programu Visual Studio
+### <a name="BKMK_attach"></a> Dołączanie do aplikacji platformy ASP.NET z komputera programu Visual Studio
 
 1. Na komputerze programu Visual Studio Otwórz **MyASPApp** rozwiązania.
 2. W programie Visual Studio, kliknij przycisk **Debuguj > dołączyć do procesu** (Ctrl + Alt + P).
@@ -211,7 +208,7 @@ Jeśli nie używasz narzędzia Web Deploy, należy opublikować i wdrażanie apl
 
     Punkt przerwania powinien trafienie w programie Visual Studio.
 
-### <a name="bkmk_openports"></a>Rozwiązywanie problemów: Otwórz wymagane porty w systemie Windows Server
+### <a name="bkmk_openports"></a> Rozwiązywanie problemów: Otwórz wymagane porty w systemie Windows Server
 
 W większości konfiguracji są otwarte porty wymagane przez instalację programu ASP.NET i zdalnego debugera. Jednak w przypadku rozwiązywania problemów wdrożenia aplikacji znajduje się za zaporą, może być konieczne Sprawdź, czy porty są otwarte.
 

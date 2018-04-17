@@ -1,12 +1,10 @@
 ---
-title: "Debugowanie aplikacji ASP.NET wdrożonej | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Debugowanie aplikacji ASP.NET wdrożonej | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 06/30/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - ASP.NET, debugging Web applications
 - XML Web services, debugging
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 072c5cde6a4a0af81397863db36bbf861b7ef0ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 036b5b5df360631ad10deaff7f63b51cf55cbd3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debugowanie ASP.NET wdrożonej aplikacji
 Aby użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowania wdrożonych aplikacji, należy dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego przetwarzania i upewnij się, że debuger ma dostęp do symboli dla aplikacji. Należy również zlokalizuj i Otwórz pliki źródłowe dla aplikacji. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [porady: znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), i [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  

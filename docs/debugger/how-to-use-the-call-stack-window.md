@@ -1,13 +1,10 @@
 ---
-title: "Wyświetl stos wywołań w debugerze programu Visual Studio | Dokumentacja firmy Microsoft"
+title: Wyświetl stos wywołań w debugerze programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +26,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a55f940c6310300b458f4497f8659bfc0897d4b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Wyświetl stos wywołań i korzystanie z okna stosu wywołań w debugerze programu Visual Studio
 
@@ -71,7 +67,7 @@ Kod użytkownika nie jest kodu, który nie jest wyświetlany podczas [tylko mój
   
 **[\<Kod zewnętrzny >]**  
   
-## <a name="bkmk_switch"></a>Przełącz do innej ramki stosu (zmienianie kontekstu debugera)
+## <a name="bkmk_switch"></a> Przełącz do innej ramki stosu (zmienianie kontekstu debugera)
   
 1.  W **stos wywołań** okna, kliknij prawym przyciskiem myszy ramek stosu, którego kod i dane, które chcesz wyświetlić.
 
@@ -113,9 +109,9 @@ Jeśli używasz Visual Enterprise Studio (tylko), można wyświetlić map kodu d
 
 ## <a name="change-the-optional-information-displayed"></a>Zmień wyświetlane informacje opcjonalne  
   
--   Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \<**  *informacji, które mają*  **>** .  
+-   Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \< ***informacji, które mają***>**.  
   
-## <a name="bkmk_symbols"></a>Załadować symbole dla modułu
+## <a name="bkmk_symbols"></a> Załadować symbole dla modułu
 W **stos wywołań** okna, można załadować symboli dla kodu, który nie ma obecnie załadować symboli debugowania. Symbole można .NET Framework lub symbole systemu pobrane z serwerów symboli publicznych firmy Microsoft lub symbole w ścieżce symboli na komputerze, który debugowania.  
   
 Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

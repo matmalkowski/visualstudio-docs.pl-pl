@@ -1,23 +1,21 @@
 ---
-title: "Za pomocą programu Microsoft Monitoring Agent | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Za pomocą programu Microsoft Monitoring Agent | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e1a0bb0567b4ff76bd6dfac1c28fe1eccd7f48c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacji pod kątem błędów, problemy z wydajnością lub innych problemów można monitorować lokalnie za pomocą **programu Microsoft Monitoring Agent**. Zdarzenia diagnostyczne od agenta można zapisać do pliku dziennika (.iTrace) IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub społeczności) do debugowania problemów z wszystkich narzędzi diagnostycznych programu Visual Studio. IntelliTrace danych diagnostycznych i danych metody może również zbierać, uruchamiając agenta **śledzenia** tryb. Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) i [System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). Po zainstalowaniu programu Microsoft Monitoring Agent polecenia alter środowiska systemu docelowego.  
@@ -35,10 +33,10 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 3.  [Krok 3: Zapisz rejestrowane zdarzenia](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a>Krok 1: Konfigurowanie programu Microsoft Monitoring Agent  
+##  <a name="SetUpMonitoring"></a> Krok 1: Konfigurowanie programu Microsoft Monitoring Agent  
  Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [Instalowanie programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
   
-###  <a name="SetUpStandaloneMMA"></a>Skonfiguruj agenta autonomiczny  
+###  <a name="SetUpStandaloneMMA"></a> Skonfiguruj agenta autonomiczny  
   
 1.  Upewnij się, że:  
   
@@ -67,7 +65,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
-####  <a name="PowerShell2"></a>Pytanie: co zrobić, jeśli na komputerze programu Windows PowerShell 2.0?  
+####  <a name="PowerShell2"></a> Pytanie: co zrobić, jeśli na komputerze programu Windows PowerShell 2.0?  
  **Odpowiedź:** zdecydowanie zalecane jest użycie programu PowerShell 3.0. W przeciwnym razie należy zaimportować polecenia cmdlet programu PowerShell agenta monitorowania firmy Microsoft każdorazowo po uruchomieniu programu PowerShell. Nie masz również dostęp do zawartości pomocy do pobrania.  
   
 1.  Otwórz **programu Windows PowerShell** lub **programu Windows PowerShell ISE** okno wiersza polecenia z uprawnieniami administratora.  
@@ -78,7 +76,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 3.  [Można znaleźć w witrynie TechNet](http://technet.microsoft.com/systemcenter/default) można pobrać najnowszej zawartości pomocy.  
   
-####  <a name="FullPermissionsITLog"></a>Pytanie: jak skonfigurować uprawnienia dla puli aplikacji?  
+####  <a name="FullPermissionsITLog"></a> Pytanie: jak skonfigurować uprawnienia dla puli aplikacji?  
  **A:** użyć Windows **icacls** polecenie lub użyj Eksploratora Windows (lub Eksploratora plików). Na przykład:  
   
 -   Aby skonfigurować uprawnienia z systemu Windows **icacls** polecenia:  
@@ -109,7 +107,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
     7.  Upewnij się, że pula aplikacji ma **odczytu & wykonać** uprawnienia.  
   
-##  <a name="MonitorEvents"></a>Krok 2: Rozpocząć monitorowanie aplikacji  
+##  <a name="MonitorEvents"></a> Krok 2: Rozpocząć monitorowanie aplikacji  
  Za pomocą programu Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. Jeśli używasz programu System Center 2012, zobacz [monitorowania aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
   
 1.  Na serwerze sieci web Otwórz **programu Windows PowerShell** lub **programu Windows PowerShell ISE** okno wiersza polecenia z uprawnieniami administratora.  
@@ -148,7 +146,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
-####  <a name="Minimizing"></a>Pytanie: jak uzyskać większość danych bez spowolnieniem mojej aplikacji?  
+####  <a name="Minimizing"></a> Pytanie: jak uzyskać większość danych bez spowolnieniem mojej aplikacji?  
  **Odpowiedź:** Microsoft Monitoring Agent może zbierać duże ilości danych i wpływa na wydajność aplikacji, w zależności od zbierania danych i sposobu zbierania. Oto niektóre sposoby uzyskania większość danych bez spowolnieniem aplikacji:  
   
 -   Dla aplikacji sieci web i aplikacji programu SharePoint agent rejestruje dane dla każdej aplikacji, które współużytkują określoną pulę aplikacji. Może to spowolnić dowolnej aplikacji, który współużytkuje tej samej puli aplikacji, mimo że można ograniczyć kolekcji do modułów dla jednej aplikacji. Aby uniknąć spowolnieniem inne aplikacje, host każdej aplikacji w odrębnej puli aplikacji.  
@@ -229,7 +227,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
  Agent rejestruje wartości `id`, `Employee.Id`, `Employee.Name` i `Employee` obiektu zwróconego z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż czy miał wartość null lub nie. Agent również nie zapisuje dane dotyczące zmiennych lokalnych w `AlterEmployee` metody tylko innych metod tych zmiennych lokalnych jako parametry, w którym są rejestrowane jako parametry metody.  
   
-##  <a name="SaveEvents"></a>Krok 3: Zapisz rejestrowane zdarzenia  
+##  <a name="SaveEvents"></a> Krok 3: Zapisz rejestrowane zdarzenia  
  Po znalezieniu błąd lub problem z wydajnością, zapisać zarejestrowane zdarzenia dziennika funkcji IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy jest on rejestrowane zdarzenia. Jeśli używasz programu System Center 2012, zobacz [monitorowania aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Zapisz zdarzenia zarejestrowane, ale nadal monitorowania  
@@ -241,7 +239,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
      **CheckPoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \-lub -  
+     \- lub -  
   
      **CheckPoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -271,7 +269,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
      **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \-lub -  
+     \- lub -  
   
      **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -283,7 +281,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
      **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \-lub -  
+     \- lub -  
   
      **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   

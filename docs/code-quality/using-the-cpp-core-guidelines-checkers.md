@@ -1,22 +1,19 @@
 ---
-title: "Przy użyciu programy C++ podstawowe wskazówki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Przy użyciu programy C++ podstawowe wskazówki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 6c745a1ff473b2e9b7917a45fda1e077de76ec42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Przy użyciu programy wytyczne Core C++
 Wskazówki Core C++ są przenośny zestaw wskazówki, reguł i najlepsze rozwiązania dotyczące pisania kodu w języku C++ utworzone przez ekspertów C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł jako część jej narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakietu NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
@@ -164,7 +161,7 @@ Te makra odpowiadają zestawów reguł i rozwiń w postaci rozdzielonej spacjami
 
  Opcja wiersza polecenia umożliwia tymczasowo wyłączyć, określając analizę kodu dla pliku `/analyze-`. Daje to ostrzeżenie *D9025 zastępowanie "/ analyze" z "/ analyze-'*, który przypomina o tym, aby ponownie włączyć dalszej analizy kodu.
 
- ## <a name="corecheck_per_file"></a>Włączenie sprawdzania C++ podstawowe wskazówki dotyczące plików określonego projektu
+ ## <a name="corecheck_per_file"></a> Włączenie sprawdzania C++ podstawowe wskazówki dotyczące plików określonego projektu
 Czasami mogą być przydatne do analizy kodu fokus i użyj środowiska IDE programu Visual Studio. Następujący przykładowy scenariusz może służyć do dużych projektów, aby zapisać czas kompilacji i łatwiejsze do wyników filtrowania:
 
 1.  W powłoce poleceń programu ustawić `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
@@ -172,7 +169,7 @@ Czasami mogą być przydatne do analizy kodu fokus i użyj środowiska IDE progr
 3.  Załadowanie projektu i otwórz jej właściwości.
 4.  Włącz analizę kodu, wybierz odpowiednią regułę zestawów, ale nie należy włączać rozszerzenia analizy kodu.
 5.  Przejdź do pliku, który ma być analizowane za pomocą sprawdzanie wskazówki Core C++ i otwórz jej właściwości.
-6.  Wybierz **C / C ++ \Command opcji wiersza** i Dodaj`/analyze:plugin EspXEngine.dll`
+6.  Wybierz **C / C ++ \Command opcji wiersza** i Dodaj `/analyze:plugin EspXEngine.dll`
 7.  Wyłącz użycie prekompilowanego nagłówka (**C / C ++ \Precompiled nagłówki**). Jest to konieczne, ponieważ aparat rozszerzenia może próbować odczytywać wewnętrznych informacji prekompilowanego nagłówka (PCH); Jeśli PCH skompilowane z domyślne opcje projektu, nie będzie zgodny.
 8.  Skompiluj ponownie projekt. Typowe kontroli PREFast należy uruchomić we wszystkich plikach. Ponieważ sprawdzanie wskazówki Core C++ nie jest domyślnie włączona, należy wykonać tylko na pliku, który jest skonfigurowany do używania go.
 
@@ -218,22 +215,22 @@ Jeśli używasz systemu kompilacji, które nie korzystają z programu MSBuild na
 Należy ustawić kilka zmienne środowiskowe i odpowiednie opcje wiersza polecenia dla kompilatora. Najlepiej do pracy w środowisku "natywny wiersz polecenia narzędzi", dzięki czemu nie trzeba wyszukiwać określone ścieżki dla kompilatora, Dołącz katalogi itp.
 
 1.  **Zmienne środowiskowe**
-  - `set esp.extensions=cppcorecheck.dll`Ta wartość informuje aparat można załadować modułu C++ podstawowe wskazówki.
-  - `set esp.annotationbuildlevel=ignore`Powoduje wyłączenie logikę, która przetwarza adnotacji SAL. Adnotacje nie wpływają na analizy kodu w module sprawdzania C++ podstawowe wskazówki dotyczące, ale ich przetwarzanie zajmuje czasu (czasami długo). To ustawienie jest opcjonalne, lecz zdecydowanie zalecane.
-  - `set caexcludepath=%include%`Zdecydowanie zaleca się wyłączenie ostrzeżenia, które wyzwalać na standardowych nagłówków. Możesz dodać więcej ścieżek, na przykład ścieżki do wspólnych nagłówków w projekcie.
+  - `set esp.extensions=cppcorecheck.dll` Ta wartość informuje aparat można załadować modułu C++ podstawowe wskazówki.
+  - `set esp.annotationbuildlevel=ignore` Powoduje wyłączenie logikę, która przetwarza adnotacji SAL. Adnotacje nie wpływają na analizy kodu w module sprawdzania C++ podstawowe wskazówki dotyczące, ale ich przetwarzanie zajmuje czasu (czasami długo). To ustawienie jest opcjonalne, lecz zdecydowanie zalecane.
+  - `set caexcludepath=%include%` Zdecydowanie zaleca się wyłączenie ostrzeżenia, które wyzwalać na standardowych nagłówków. Możesz dodać więcej ścieżek, na przykład ścieżki do wspólnych nagłówków w projekcie.
 2.  **Opcje wiersza polecenia**
-  - `/analyze`Analiza kodu umożliwia (Rozważ też użycie / analyze: tylko i / analyze: quiet).
-  - `/analyze:plugin EspXEngine.dll`Ta opcja ładuje aparat rozszerzenia analizy kodu do PREfast. Ten aparat ładuje z kolei sprawdzanie wskazówki Core C++.
+  - `/analyze`  Analiza kodu umożliwia (Rozważ też użycie / analyze: tylko i / analyze: quiet).
+  - `/analyze:plugin EspXEngine.dll` Ta opcja ładuje aparat rozszerzenia analizy kodu do PREfast. Ten aparat ładuje z kolei sprawdzanie wskazówki Core C++.
 
 
 
 ## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki obsługi wytyczne  
- Podstawowa biblioteka obsługi zaprojektowano w celu ułatwienia postępuj zgodnie z wytycznymi Core. GSL zawiera definicje, które umożliwiają Zamień podatnych konstrukcje bezpieczniejszych alternatyw. Na przykład można zastąpić `T*, length` para parametrów z `span<T>` typu. GSL znajduje się w temacie [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, więc można wyświetlić źródła, dodawać komentarze lub współtworzenia. Projekt można znaleźć w folderze [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+ Podstawowa biblioteka obsługi zaprojektowano w celu ułatwienia postępuj zgodnie z wytycznymi Core. GSL zawiera definicje, które umożliwiają Zamień podatnych konstrukcje bezpieczniejszych alternatyw. Na przykład można zastąpić `T*, length` para parametrów z `span<T>` typu. GSL znajduje się w temacie [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, więc można wyświetlić źródła, dodawać komentarze lub współtworzenia. Projekt można znaleźć w folderze [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a>Użyj wytycznych Sprawdź Core C++ w projektach Visual Studio 2015  
-  Jeśli używasz programu Visual Studio 2015 zestawów reguł analizy kodu C++ Core Sprawdź nie są instalowane domyślnie. Należy wykonać dodatkowe kroki, aby można było włączyć sprawdzanie Core C++ narzędzi analizy kodu programu Visual Studio 2015. Firma Microsoft zapewnia obsługę projektów programu Visual Studio 2015 przy użyciu pakietu Nuget. Pakiet nosi nazwę Microsoft.CppCoreCheck i jest dostępny w [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga się, że co najmniej zainstalowanego programu Visual Studio 2015 Update 1.  
+ ## <a name="vs2015_corecheck"></a> Użyj wytycznych Sprawdź Core C++ w projektach Visual Studio 2015  
+  Jeśli używasz programu Visual Studio 2015 zestawów reguł analizy kodu C++ Core Sprawdź nie są instalowane domyślnie. Należy wykonać dodatkowe kroki, aby można było włączyć sprawdzanie Core C++ narzędzi analizy kodu programu Visual Studio 2015. Firma Microsoft zapewnia obsługę projektów programu Visual Studio 2015 przy użyciu pakietu Nuget. Pakiet nosi nazwę Microsoft.CppCoreCheck i jest dostępny w [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga się, że co najmniej zainstalowanego programu Visual Studio 2015 Update 1.  
   
- Pakiet instaluje inny pakiet jako zależność, tylko nagłówek wskazówek dotyczących pomocy technicznej biblioteki (GSL). GSL jest również dostępna w witrynie GitHub pod [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
+ Pakiet instaluje inny pakiet jako zależność, tylko nagłówek wskazówek dotyczących pomocy technicznej biblioteki (GSL). GSL jest również dostępna w witrynie GitHub pod [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).  
 
  Ze względu na sposób, w jaki są ładowane reguł analizy kodu należy zainstalować pakiet Microsoft.CppCoreCheck NuGet do każdego projektu C++, który chcesz sprawdzić w programie Visual Studio 2015.  
   

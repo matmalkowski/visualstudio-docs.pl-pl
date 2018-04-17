@@ -1,23 +1,21 @@
 ---
-title: "Węzły stałej | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Węzły stałej | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1edbe90bf9f1002392374a17b8dd85270ec2fef5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b3d9858605beb52c7a242f7589d4045e423a54b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 W projektancie programu do cieniowania stałych węzły reprezentują wartości literałów i interpolowane atrybuty wierzchołków w obliczeniach cieniowania pikseli. Ponieważ wierzchołek atrybuty są interpolowane — różni się od tak, dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera innej wersji stałej. Dzięki temu każdego piksela unikatowego wyglądu.  
@@ -33,7 +31,7 @@ W projektancie programu do cieniowania stałych węzły reprezentują wartości 
 |----------|-------------|----------------|  
 |**Wektor kamery**|Wektor prowadzący od bieżącego piksela do kamery w przestrzeni świata.<br /><br /> Możesz użyć tego do obliczenia odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do kamery.|Brak|  
 |**Stała kolorów**|Wartość stałą koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość koloru.|  
-|**Stałe**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarną.|**Output**<br /> Wartość skalarną.|  
+|**Stała**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarną.|**Output**<br /> Wartość skalarną.|  
 |**Stała 2D**|Stała wektora z dwoma składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Wartość wektora.|**Output**<br /> Wartość wektora.|  
 |**Stała 3D**|Wektor z trzema składowymi stałą.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wartość wektora.|**Output**<br /> Wartość wektora.|  
 |**Stała 4D**|Stała czterema składowymi wektora.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektora.|  

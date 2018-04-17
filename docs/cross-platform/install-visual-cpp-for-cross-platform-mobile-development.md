@@ -1,26 +1,22 @@
 ---
 title: Zainstaluj Visual C++ for Cross Platform Mobile Development | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b9f87e95a2d4088bb72890ef3f9508d9c5e02abc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64bdc654bc1bcd6721cc29052a9409e00f6afd07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Zainstaluj Visual C++ for Cross Platform Mobile Development
 [Visual C++ dla wielu Platform Mobile Development](http://go.microsoft.com/fwlink/p/?LinkId=536383) jest instalowalnych składników programu Visual Studio 2015. Zawiera szablony programu Visual Studio i platform, a instaluje narzędzia wieloplatformowe i zestawy SDK, aby rozpocząć się szybko, bez konieczności zlokalizować, pobieranie i skonfigurować je samodzielnie. Te narzędzia Visual Studio umożliwia łatwe tworzenie, edytowanie, debugowania i testowania projektów i platform. W tym temacie opisano sposób instalowania narzędzi i oprogramowanie innych firm wymagane umożliwiające tworzenie wieloplatformowych aplikacji za pomocą programu Visual Studio. Omówienie składnika, zobacz [Visual C++ i Platform przenośnych](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
@@ -31,7 +27,7 @@ ms.lasthandoff: 02/09/2018
  [Zainstaluj narzędzia dla systemu iOS](#InstallForiOS)   
  [Zainstaluj lub zaktualizuj ręcznie zależności](#ThirdParty)  
   
-##  <a name="Requirements"></a>Wymagania  
+##  <a name="Requirements"></a> Wymagania  
   
 -   Wymagania instalacji można znaleźć [wymagania dotyczące programu Visual Studio 2015 System](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -46,10 +42,10 @@ ms.lasthandoff: 02/09/2018
   
 -   Kompilowanie kodu dla systemu iOS wymaga Identyfikatora firmy Apple, konto dewelopera programu z systemem iOS i komputera Mac, który można uruchomić [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) lub nowszego systemu operacyjnego X Mavericks lub nowszy. Instalacja proste kroki opisane w artykule [Zainstaluj narzędzia dla systemu iOS](#InstallForiOS).  
   
-##  <a name="GetTheTools"></a>Pobierz narzędzia  
+##  <a name="GetTheTools"></a> Pobierz narzędzia  
  Visual C++ dla wielu Platform Mobile Development jest dostępna w wersjach programu Visual Studio Community, Professional i Enterprise składnik do zainstalowania. Aby uzyskać Visual Studio, przejdź do [Visual Studio 2015 pliki do pobrania](http://go.microsoft.com/fwlink/p/?linkid=517106) strony i pobierania programu Visual Studio 2015 Update 2 lub nowszym.  
   
-##  <a name="InstallTheTools"></a>Instalowanie narzędzi  
+##  <a name="InstallTheTools"></a> Instalowanie narzędzi  
  Instalator programu Visual Studio 2015 obejmuje możliwość zainstalowania Visual C++ dla aplikacji mobilnych dla wielu Platform. Spowoduje to zainstalowanie wymaganych narzędzi języka C++, szablonów i składników dla programu Visual Studio, GCC i Clang procesami potrzebne dla systemu Android kompilacji debugowania i składniki do komunikowania się z komputerów Mac na potrzeby opracowywania aplikacji systemu iOS. Instaluje również narzędzia innych firm i zestawy SDK, które są wymagane do obsługi systemu iOS i tworzenia aplikacji systemu Android. Większość tych narzędzi innych firm są wymagane do obsługi platformy Android oprogramowania typu open source.  
   
 -   Native Development Kit (zestawu NDK systemu android) jest wymagany do kompilowania kodu C++, przeznaczonego dla platformy systemu Android.  
@@ -64,7 +60,7 @@ ms.lasthandoff: 02/09/2018
   
 2.  W wybrane funkcje, rozwiń węzeł **Cross Platform Mobile Development** i sprawdź **Visual C++ Mobile Development**.  
   
-     ![Wybierz & Visual C &43; 43; Mobile Development](../cross-platform/media/cppmdd_install_vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Wybierz program Visual C&#43; &#43; Mobile Development](../cross-platform/media/cppmdd_install_vcmdd.png "CPPMDD_Install_VCMDD")  
   
      Domyślnie po wybraniu **Visual C++ Mobile Development**, **języki programowania** opcja jest ustawiona do zainstalowania **Visual C++**i **typowe narzędzia i zestawy SDK** opcje są ustawione na zainstalowanie wymaganych składników innych firm. Jeśli potrzebne są dostępne dodatkowe składniki. Domyślnie **Microsoft Visual Studio Emulator for Android** jest zaznaczony. Składniki, które są już zainstalowane są wyświetlane jako nieaktywne na liście.  
   
@@ -86,10 +82,10 @@ ms.lasthandoff: 02/09/2018
   
 5.  Otwórz program Visual Studio. Jeśli po raz pierwszy, uruchomienia programu Visual Studio, może upłynąć trochę czasu na konfigurowanie i zaloguj się. Po wykonaniu tych czynności w Visual Studio **narzędzia** menu, wybierz opcję **rozszerzenia i aktualizacje**, **aktualizacje**. Jeśli istnieje, że Visual Studio aktualizacje dostępne dla programu Visual C++ dla wielu Platform Mobile Development lub programu Microsoft Visual Studio Emulator for Android, zainstaluj je.  
   
-##  <a name="InstallForiOS"></a>Zainstaluj narzędzia dla systemu iOS  
+##  <a name="InstallForiOS"></a> Zainstaluj narzędzia dla systemu iOS  
  Visual C++ for Cross Platform Mobile Development służy do edytowania, debugowania i wdrażania kodu dla systemu iOS w narzędziu iOS Simulator lub urządzenia z systemem iOS, ale z powodu ograniczeń licencji kod muszą zostać skompilowane na zdalnie na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, należy skonfigurować i skonfigurować agenta zdalnego opartym na systemie Aby uzyskać szczegółowe instrukcje dotyczące instalacji i wymagania wstępne opcje konfiguracji, zobacz [Instalowanie i Konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Jeśli tworzysz nie dla systemu iOS, możesz pominąć ten krok.  
   
-##  <a name="ThirdParty"></a>Zainstaluj lub zaktualizuj ręcznie zależności  
+##  <a name="ThirdParty"></a> Zainstaluj lub zaktualizuj ręcznie zależności  
  Jeśli nie chcesz zainstalować jedną lub więcej zależności innych firm za pomocą Instalatora programu Visual Studio podczas instalowania opcja Visual C++ programowania aplikacji mobilnych, można zainstalować je później za pomocą kroków w [zainstalować narzędzia](#InstallTheTools). Można również zainstalować lub zaktualizować je niezależnie od programu Visual Studio.  
   
 > [!CAUTION]
@@ -137,4 +133,4 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="see-also"></a>Zobacz też  
  [Zainstaluj i skonfiguruj narzędzia do kompilacji przy użyciu systemu iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
- [Visual C++ Cross-Platform Mobile](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
+ [Visual C++ i Platform przenośnych](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

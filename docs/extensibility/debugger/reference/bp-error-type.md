@@ -1,29 +1,25 @@
 ---
 title: BP_ERROR_TYPE | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - BP_ERROR_TYPE
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c50e5cb9f9ba1edf09a30b13373a680ff8e5a3f2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 676ec19fec1406d85e6a7d9e66865b2794f72aa6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Określa typ błędu punktu przerwania.  
@@ -100,14 +96,14 @@ public enum enum_BP_ERROR_TYPE {
 ## <a name="remarks"></a>Uwagi  
  Te wartości mogą być łączone z bitowego `OR` i używane do `dwType` członkiem [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury. Przekazany jako parametr [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metody.  
   
- Typ błędu przerwania składa się z typu i ważności. Oznacza, że typ błędu przerwania nigdy nie tylko typem (na przykład `BPET_TYPE_ERROR`,) lub ważności (na przykład `BPET_SEV_GENERAL`) przez samego siebie. `BPET_GENERAL_WARNING`i `BPET_GENERAL_ERROR` podać wstępnie zdefiniowanych wartości ogólne punktów przerwania ostrzeżeń i błędów.  
+ Typ błędu przerwania składa się z typu i ważności. Oznacza, że typ błędu przerwania nigdy nie tylko typem (na przykład `BPET_TYPE_ERROR`,) lub ważności (na przykład `BPET_SEV_GENERAL`) przez samego siebie. `BPET_GENERAL_WARNING` i `BPET_GENERAL_ERROR` podać wstępnie zdefiniowanych wartości ogólne punktów przerwania ostrzeżeń i błędów.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

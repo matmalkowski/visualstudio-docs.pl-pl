@@ -1,13 +1,10 @@
 ---
-title: "Porady: wyświetlanie dokumentów skryptu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: wyświetlanie dokumentów skryptu | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Script Explorer
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7daecd0974abd5be733e7cec3426045c1f859eb8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 62c62212e72561817b58cf1496fff20a05745277
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-script-documents"></a>Porady: wyświetlanie dokumentów skryptu
 W starszych wersjach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], w oknie Eksploratora skryptu pojawił się wygenerowanych ze skryptu po stronie serwera plików skryptu po stronie klienta. Okno Eksploratora skryptu często został ukryty, dzięki czemu dostępności skryptu po stronie klienta nie jest zawsze widoczne.  
@@ -35,7 +31,7 @@ W starszych wersjach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 
   
  Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy są w trybie debugowania lub w trybie przerwania. Pojawią się one w **dokumentów skryptu** węzła.  
   
- Pliki skryptów po stronie serwera są zawsze widoczne. Pojawią się one w  **\<Pathname witryny sieci Web >** węzła. Nazwa węzła podobny w tym przykładzie:`c:\...\Website2\`  
+ Pliki skryptów po stronie serwera są zawsze widoczne. Pojawią się one w  **\<Pathname witryny sieci Web >** węzła. Nazwa węzła podobny w tym przykładzie: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera  
   

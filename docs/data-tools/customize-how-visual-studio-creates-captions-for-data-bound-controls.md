@@ -1,28 +1,25 @@
 ---
-title: "Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio
 Gdy przeciągnij elementy z [Data Sources — okno](add-new-data-sources.md) do konstruktora, szczególną uwagę wejścia play: nazwy kolumn w etykietach podpis są ponownie sformatowany na ciąg był bardziej czytelny, gdy dwie lub więcej wyrazów okaże się, że połączone ze sobą. Można dostosować sposób tworzenia etykiety, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.  
@@ -44,14 +41,14 @@ W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości r
   
 |Element rejestru|Wartość domyślna|Wyjaśnienie|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Dopasowuje małą literę, a następnie wielkie litery lub znaku podkreślenia.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Dopasowuje małą literę, a następnie wielkie litery lub znaku podkreślenia.|  
 |**SmartCaptionReplacement**|$1 $2|$1 reprezentuje znaków dopasowana w pierwszym nawiasów wyrażenia, a $2 — wszystkie znaki dopasowywane w nawiasach drugi. Zastąpienie jest pierwsze dopasowanie, spacji i drugi dopasowania.|  
-|**SmartCaptionSuffix**|:|Reprezentuje znak dołączany do zwracany ciąg. Na przykład, jeśli podpis jest `Company Name`, sufiks ułatwia`Company Name:`|  
+|**SmartCaptionSuffix**|:|Reprezentuje znak dołączany do zwracany ciąg. Na przykład, jeśli podpis jest `Company Name`, sufiks ułatwia `Company Name:`|  
   
 > [!CAUTION]
 > Należy zachować ostrożność w Edytorze rejestru żadnego działania. Utwórz kopię zapasową rejestru przed rozpoczęciem edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Microsoft nie gwarantuje, że można rozwiązać problemy powodujące przez niewłaściwego używania Edytora rejestru. Używasz Edytora rejestru na własne ryzyko.  
 >   
->  Instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracanie rejestru zawiera następujący artykuł bazy wiedzy: [Opis rejestru systemu Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (adresem http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  Instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracanie rejestru zawiera następujący artykuł bazy wiedzy: [Opis rejestru systemu Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Aby zmodyfikować zachowanie podpisów inteligentne okna źródeł danych  
   

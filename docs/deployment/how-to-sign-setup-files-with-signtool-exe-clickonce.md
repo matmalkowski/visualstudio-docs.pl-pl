@@ -1,12 +1,10 @@
 ---
-title: "Porady: podpisywanie plików konfiguracji przy SignTool.exe (ClickOnce) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: podpisywanie plików konfiguracji przy SignTool.exe (ClickOnce) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - ClickOnce applications, re-signing setup.exe
 - ClickOnce deployment, re-signing setup.exe
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
-caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 38fec52a9ca4c152a8bb1065e2d33aa1ea52c97f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4be6438f16ddf86afdc8139491d081bcd2fce7a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Porady: podpisywanie plików konfiguracji przy użyciu narzędzia SignTool.exe (ClickOnce)
 SignTool.exe służący do podpisywania program instalacyjny (setup.exe). Ten proces zapewnia, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  

@@ -1,27 +1,24 @@
 ---
-title: "Utwórz plik bazy danych i za pomocą projektanta tabeli w programie Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Utwórz plik bazy danych i za pomocą projektanta tabeli w programie Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Utwórz bazę danych i dodawanie tabel w programie Visual Studio
 Visual Studio umożliwia tworzenie i aktualizowanie pliku lokalnej bazy danych w programu SQL Server Express LocalDB. Można również utworzyć bazę danych, wykonując instrukcje języka Transact-SQL w **Eksplorator obiektów SQL Server** okna narzędzia w programie Visual Studio. W tym temacie firma Microsoft Tworzenie pliku MDF i dodać tabelami i kluczami przy użyciu projektanta tabel.

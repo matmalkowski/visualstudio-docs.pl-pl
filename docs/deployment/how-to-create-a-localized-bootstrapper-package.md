@@ -1,27 +1,25 @@
 ---
-title: "Porady: tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
 - prerequisites, creating localized bootstrapper packages
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
-caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c7190e12190ac35ce906d8dc61f113ae01481c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Porady: tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego zlokalizowane wersje pakietu programu inicjującego można utworzyć przez utworzenie dwóch większej liczby plików dla poszczególnych ustawień regionalnych: postanowień licencyjnych dotyczących oprogramowania, plik (na przykład eula.rtf) oraz manifest pakietu (plik package.xml).  
@@ -59,11 +57,11 @@ Po utworzeniu pakietu programu inicjującego zlokalizowane wersje pakietu progra
     |Hiszpański|ES|  
     |Francuski|FR|  
     |Włoski|go|  
-    |koreański|Ko|  
-    |japoński|Japonia|  
+    |koreański|ko|  
+    |japoński|ja|  
     |polski|pl|  
     |portugalski (Brazylia)|pt-BR|  
-    |Rosyjski|RU|  
+    |Rosyjski|ru|  
     |turecki|TR|  
   
 2.  Utwórz plik zawierający postanowienia licencyjne dotyczące oprogramowania dla pakietu programu inicjującego i umieszcza je w nowym folderze.  

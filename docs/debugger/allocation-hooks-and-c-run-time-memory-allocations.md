@@ -1,13 +1,10 @@
 ---
-title: "Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - allocation hooks
 - hooks, allocation
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b123e0e03f33f54e6d4fe82313c9a017e3baafff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 932beab91e5f98023196e3feff2dec11e6a8b179
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C
 Bardzo ważne ograniczenie funkcji punktów zaczepienia alokacji jest, że jawnie należy zignorować `_CRT_BLOCK` blokach (wewnętrznie wprowadzone przez funkcje biblioteki wykonawczej języka C alokacji pamięci) nawiązując wszelkie wywołania funkcji biblioteki wykonawczej języka C, których alokacji pamięć. `_CRT_BLOCK` Bloki można zignorować przez dołączenie kodu, takie jak funkcji punktów zaczepienia na początku alokacji z następujących:  

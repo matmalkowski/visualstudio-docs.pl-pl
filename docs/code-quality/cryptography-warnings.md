@@ -1,23 +1,21 @@
 ---
-title: "Ostrzeżenia kryptografii | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Ostrzeżenia kryptografii | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5270a9b2cb2801d80dc9a087821e73d6c54bfe1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ed273485df4e8bbd3b76dfd39fa38ec697052bb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cryptography-warnings"></a>Ostrzeżenia kryptografii
 Ostrzeżenia kryptografii obsługuje bezpieczniejsze bibliotek i aplikacji za pośrednictwem prawidłowe użycie kryptograficzne. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.  

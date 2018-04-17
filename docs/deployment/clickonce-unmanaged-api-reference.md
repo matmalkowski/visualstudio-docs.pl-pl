@@ -1,12 +1,10 @@
 ---
-title: "Dokumentacja interfejsu API niezarządzany ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Dokumentacja interfejsu API niezarządzany ClickOnce | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Niezarządzany wykaz interfejsów API ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]niezarządzane publiczne interfejsy API z dfshim.dll.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] niezarządzane publiczne interfejsy API z dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  Czyści lub odinstalowuje wszystkie aplikacje online z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pamięci podręcznej aplikacji.  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca wartość HRESULT reprezentujący błąd. Zwraca HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER), jeśli bufor jest za mały.  
   
 ### <a name="remarks"></a>Uwagi  
- Wskaźniki nie może mieć wartości null. `pcwzActivationUrl`i `pcwzPathToDeploymentManifest` nie może być pusta.  
+ Wskaźniki nie może mieć wartości null. `pcwzActivationUrl` i `pcwzPathToDeploymentManifest` nie może być pusta.  
   
  Odpowiada wywołujący oczyścić adresem URL aktywacji. Na przykład dodawanie specjalne znaków, gdzie są one potrzebne lub usuwanie ciągu zapytania.  
   

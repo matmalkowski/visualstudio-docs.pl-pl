@@ -1,23 +1,20 @@
 ---
-title: "Procedury przechowywane w celu przeprowadzenia aktualizacji, wstawiania i usuwania w składniku Linq to SQL Projektanta obiektów relacyjnych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Procedury przechowywane w celu przeprowadzenia aktualizacji, wstawiania i usuwania w składniku Linq to SQL Projektanta obiektów relacyjnych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 20669a4ec19865e99a9498e87e896aa645321257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 69071f0a49b5e2a8b0261aaf64b97cefaeb9aa9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawienia i usunięcia (Projektanta obiektów relacyjnych)
 Procedury składowane można dodać do Projektanta obiektów relacyjnych i wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One również pozwala zastąpić domyślną [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowanie środowiska uruchomieniowego, które wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klasami jednostki bazy danych (na przykład podczas wywoływania metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).  
@@ -26,7 +23,7 @@ Procedury składowane można dodać do Projektanta obiektów relacyjnych i wykon
 >  Jeśli Twoja procedura składowana zwraca wartości, które muszą zostać odesłany do klienta (na przykład obliczania wartości w procedurze składowanej), utwórz parametry wyjściowe w Twojej procedur składowanych. Jeśli nie możesz użyć parametrów wyjściowych, zapis zastępuje implementację metody częściowej, zdejmując to zadanie wygenerowany przez Projektanta obiektów relacyjnych. Elementy członkowskie, baza danych wygenerowała wartości muszą należy ustawić odpowiednie wartości po pomyślnym ukończeniu operacji INSERT lub UPDATE. Aby uzyskać więcej informacji, zobacz [obowiązki deweloperów w zastępowanie domyślne zachowanie](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]uchwyty baza danych wygenerowała wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazę danych) i kolumn znaczników czasu. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości generowanych przez bazę danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
+>  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] uchwyty baza danych wygenerowała wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazę danych) i kolumn znaczników czasu. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości generowanych przez bazę danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Konfigurowanie zachowania aktualizacji klasy jednostki  
  Domyślnie logika zaktualizować bazę danych (wstawienia, aktualizacje i usunięcia) ze zmianami, które zostały wprowadzone w danych w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas jednostek jest zapewniana przez [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] środowiska wykonawczego. Środowisko uruchomieniowe tworzy domyślne polecenia INSERT, UPDATE i DELETE, które są oparte na schemat tabeli (kolumny i informacje o kluczu podstawowym). Jeśli domyślne zachowanie jest niepożądane, można skonfigurować zachowanie aktualizacji przypisując określonych procedur składowanych do wykonania niezbędnych operacji wstawienia, aktualizacje i usunięcia wymagane do obsługi danych w tabeli. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład po z klasami jednostki mapowania do widoków. Ponadto podczas bazy danych wymaga dostępu do tabeli za pomocą procedur składowanych można zastąpić domyślne zachowanie aktualizacji.  

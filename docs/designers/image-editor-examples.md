@@ -1,23 +1,21 @@
 ---
-title: "Edytor obrazów przykłady | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Edytor obrazów przykłady | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6c257b39f6bb320ce39ca34278d6eff29a3f4615
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 70f28b5cc261447e5306d055b6050c322f06c9e0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-editor-examples"></a>Przykłady Edytora obrazów
 Artykuły w tej sekcji dokumentacji zawierają przykłady, które pokazują, jak za pomocą edytora obrazów.  

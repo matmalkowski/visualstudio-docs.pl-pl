@@ -1,13 +1,10 @@
 ---
-title: "Przejdź do kodu za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft"
+title: Przejdź do kodu za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Przejdź do kodu za pomocą debugera programu Visual Studio
 Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który ułatwi szybsze i łatwiejsze do znalezienia i rozwiąż problemy w aplikacji. Podczas nawigacji kodu w debugerze, można sprawdzić stan aplikacji lub Dowiedz się więcej o przepływ wykonania.  
@@ -47,7 +43,7 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
   
  Większość funkcji debugera, takie jak wyświetlanie wartości zmiennych w oknie zmienne lokalne lub obliczenia wyrażenia w oknie wyrażeń kontrolnych są dostępne tylko wtedy, gdy debuger został wstrzymany (nazywane również *tryb przerwania*). Gdy debuger jest wstrzymana, swój stan aplikacji jest wstrzymana podczas zmienne, funkcje i obiekty pozostają w pamięci. Podczas pracy w trybie przerwania należy zbadać położenia elementów członkowskich i stanów szukać naruszenia lub usterki. Dla niektórych typów projektów może również wprowadzać zmiany do aplikacji w trybie przerwania. Aby obejrzeć film przedstawiający tych funkcji, zobacz [wprowadzenie do debugera](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Wykonywanie kodu, wiersz po wierszu  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Wykonywanie kodu, wiersz po wierszu  
  Aby zatrzymać w każdym wierszu kodu (każda instrukcja) podczas debugowania, użyj **F11** skrót klawiaturowy (lub **debugowania** > **Step Into** menu).  
   
 > [!TIP]
@@ -75,7 +71,7 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
   
  Wizualne śledzenie stosu wywołań podczas Wkraczanie do funkcji, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a>Krokowo kodu, pomijanie funkcji  
+##  <a name="BKMK_Step_over_Step_out"></a> Krokowo kodu, pomijanie funkcji  
  Podczas uruchamiania kodu w debugerze, często będą okazuje się, że nie chcesz wyświetlać, co dzieje się w określonej funkcji (nie zależy Ci na jego temat lub znasz jej działania, takie jak kod biblioteki dobrze przetestowany). Używać tych poleceń, aby przejść przez kod (funkcje nadal wykonywać, oczywiście, ale debuger nakłada się na nich).  
   
 |Polecenie klawiatury|Polecenia menu|Opis|  
@@ -86,7 +82,7 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
 > [!TIP]
 >  Aby znaleźć punkt wejścia w aplikacji należy uruchomić z **F10** lub **F11**. Polecenia te często są przydatne podczas sprawdzania stanu Twojej aplikacji i dowiedzieć się więcej o przepływie jej wykonanie w trakcie.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Uruchom w określonej lokalizacji lub funkcji  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Uruchom w określonej lokalizacji lub funkcji  
  Często preferowaną metodą debugowania kodu, te metody są przydatne, gdy wiesz dokładnie kodu, które chcesz sprawdzić lub co najmniej wiadomo, które chcesz rozpocząć debugowania.  
   
 -   **Ustaw punkty przerwania w kodzie**  
@@ -132,7 +128,7 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
   
      ![Wybierz punkty przerwania — okno dialogowe](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Przesuń wskaźnik do wykonywania przepływ zmian  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Przesuń wskaźnik do wykonywania przepływ zmian  
  Gdy debuger jest wstrzymana, można przenieść wskaźnik instrukcji można ustawić następnej instrukcji na wykonanie kodu. Żółty grot strzałki na marginesie źródłowego lub dezasemblacji okno oznacza lokalizację następną instrukcję do wykonania. Przez przeniesienie tego grot strzałki, można pominąć części kodu lub powrócić do wiersza, który został wcześniej wykonywane. Możesz użyć tego w sytuacjach, takich jak pominięcie części kodu, który zawiera usterkę, znane.  
   
  ![Przesuń wskaźnik](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
@@ -190,5 +186,5 @@ Zapoznaj się z poleceń i skrótów, przejdź do kodu w debugerze i który uła
   
 3.  Wybierz **załadować symbole** w menu kontekstowym.  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a>Wkraczać do właściwości i operatory w kodzie zarządzanym  
+##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Wkraczać do właściwości i operatory w kodzie zarządzanym  
  Kroki debugera nad właściwościami i operatorami w kodzie zarządzanym domyślnie. W większości przypadków ta zapewnia lepsze debugowania. Aby włączyć Przechodzenie do właściwości lub operatorów, należy wybrać **debugowania** > **opcje**. Na **debugowanie** > **ogólne** wyczyść **Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** pole wyboru

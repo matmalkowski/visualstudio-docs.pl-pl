@@ -1,26 +1,24 @@
 ---
 title: Projektant programu do cieniowania | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9aeef6cb38643dd8c1bbf862a396f8632d2630df
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shader-designer"></a>Shader Designer
 W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do cieniowania Designer do tworzenia, modyfikowania i eksportowanie niestandardowych efektów wizualnych, które są nazywane *programów do cieniowania*.  
@@ -71,7 +69,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
 |------------------|-----------------|  
 |**Wybierz**|Umożliwia interakcję z węzłów i krawędzi na wykresie. W tym trybie można wybierz węzeł i Przenieś lub usuń je, a można ustanowienia krawędzi lub podziel je.|  
 |**Przesuwanie**|Umożliwia przenoszenie wykres programu do cieniowania względem ramki okna. Aby kadrować, wybierz punkt na powierzchni projektu i przenosić.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby aktywować **przesuwanie** tymczasowo w trybie.|  
-|**Powiększenie**|Umożliwia wyświetlanie bardziej lub mniej wykres programu do cieniowania szczegółów względem ramki okna. W **powiększenie** tryb, wybierz punkt na powierzchni projektu i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby powiększyć lub pomniejszyć za pomocą kółka myszy.|  
+|**Zoom**|Umożliwia wyświetlanie bardziej lub mniej wykres programu do cieniowania szczegółów względem ramki okna. W **powiększenie** tryb, wybierz punkt na powierzchni projektu i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby powiększyć lub pomniejszyć za pomocą kółka myszy.|  
 |**Dopasuj widok do rozmiaru**|Wyświetla wykres pełnego programu do cieniowania ramki okna.|  
 |**Tryb renderowania w czasie rzeczywistym**|Po włączeniu renderowania w czasie rzeczywistym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ponownie rysuje powierzchnię projektu nawet wtedy, gdy jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|  
 |**Podgląd z kuli**|Po włączeniu modelu kuli jest używany do podglądu programu do cieniowania. Można włączyć podgląd tylko jeden kształt naraz.|  
@@ -116,7 +114,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
   
 -   Na **tryby projektanta programu do cieniowania** narzędzi wybierz żądanego kształtu.  
   
-####  <a name="WWS_MaterialParameters"></a>Parametry materiału i tekstury  
+####  <a name="WWS_MaterialParameters"></a> Parametry materiału i tekstury  
  Wiele programów do cieniowania polegają na tekstury i właściwości materiału, aby wygenerować unikatowego wyglądu dla każdego rodzaju obiektów w aplikacji. Aby wyświetlić programu do cieniowania wyglądu w aplikacji, należy ustawić tekstury i właściwości materiału, które są używane do renderowania w wersji zapoznawczej odpowiadające tekstury i parametrów, których można użyć w aplikacji.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Aby powiązać różnych tekstury rejestr tekstury lub zmodyfikować innych istotnych parametrów  

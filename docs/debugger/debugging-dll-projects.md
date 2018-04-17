@@ -1,12 +1,10 @@
 ---
-title: "Debugowanie projektów DLL | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Debugowanie projektów DLL | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - DLLs, debugging
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b7e897b69770f42bac9757f061f96a67fc9b99f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debugowanie projektów DLL z programu Visual Studio
 Następujące szablony programu Visual Studio Utwórz biblioteki DLL:  
@@ -43,17 +41,17 @@ Następujące szablony programu Visual Studio Utwórz biblioteki DLL:
      Debugowanie Biblioteka formantów formularzy systemu Windows jest podobny do debugowania projektu biblioteki klas. W większości przypadków będzie wywoływać sterowania systemu Windows z innego projektu. Podczas debugowania projektu wywoływania wykonywanie kodu formantu systemu Windows, ustaw punkty przerwania i wykonywać inne operacje debugowania. Aby uzyskać więcej informacji, zobacz [formantów formularzy systemu Windows](/dotnet/framework/winforms/controls/index).  
 
   
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a>Tworzenie wersji do debugowania  
+##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Tworzenie wersji do debugowania  
  Niezależnie od tego, jak rozpocząć debugowanie upewnij się, najpierw utworzyć biblioteki DLL wersji do debugowania i upewnij się, że wersja do debugowania jest w tej lokalizacji, w którym aplikacja oczekuje go znaleźć. Może to wyglądać oczywista, ale Jeśli zapomnisz ten krok, aplikacja może znaleźć inną wersję biblioteki dll i załaduj go. Program następnie będzie kontynuował pracę, gdy zastanawiasz się, dlaczego nigdy nie został trafiony punkt przerwania. Podczas debugowania, możesz sprawdzić, które biblioteki DLL program został załadowany, otwierając debugera **modułów** okna. **Modułów** okna wyświetla każdy plik DLL lub EXE załadowany w procesie debugowania. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md).  
  Dla debugera do dołączenia do kodu w języku C++ kod musi wysyłać `DebuggableAttribute`. Można dodać tego kodu automatycznie przez łączenie z [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) — opcja konsolidatora.  
   
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a>Debugowanie w trybie mieszanym  
+##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debugowanie w trybie mieszanym  
  Aplikacja wywołująca, która wywołuje biblioteki DLL może być napisane w kodu zarządzanego i kodu natywnego. Jeśli chcesz debugować zarówno sieci zarządzanej biblioteki DLL jest wywoływany przez kod natywny, zarządzane i natywnego debugery zarówno należy włączyć. Można wybrać w  **\<projektu > strony właściwości** lub oknie dialogowym. Jak to zrobić, zależy od tego, czy uruchomić debugowanie z projektu DLL lub wywołującym projekt aplikacji. Aby uzyskać więcej informacji, zobacz [porady: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).  
   
-##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>Zmienianie konfiguracji domyślnej  
+##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Zmienianie konfiguracji domyślnej  
  Po utworzeniu projektu aplikacji konsolowej przy użyciu szablonu projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia konfiguracji Debug i Release. W razie potrzeby możesz zmienić te ustawienia. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [ustawienia projektu C# debugowania konfiguracji](../debugger/project-settings-for-csharp-debug-configurations.md), [ustawienia projektu dla konfiguracji debugowania Visual Basic ](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), i [porady: Ustaw wartość Debug i Release konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).  
   
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a>Sposoby debugowania biblioteki DLL  
+##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Sposoby debugowania biblioteki DLL  
  Każdy z projektów w tej sekcji tworzy bibliotekę DLL. Nie można uruchomić biblioteki DLL bezpośrednio; musi zostać wywołany przez aplikację, zwykle EXE. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie projekty Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects). Aplikacja wywołująca mogą mieścić jeden z następujących kryteriów:  
   
 -   Aplikacji utworzonej w innym projekcie w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania zawierającego biblioteki klas.  
@@ -64,7 +62,7 @@ Następujące szablony programu Visual Studio Utwórz biblioteki DLL:
   
 -   Aplikacji sieci Web, która zawiera stronę sieci Web, który osadza plik DLL.  
   
-###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a>Debugowanie aplikacji wywołującej  
+###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugowanie aplikacji wywołującej  
 Aby debugować biblioteki DLL, uruchomić debugowanie aplikacji wywołującej, zwykle albo pliku EXE lub aplikacji sieci Web. Istnieje kilka sposobów jego debugowania.  
   
 -   Jeśli projekt aplikacji wywołującej, można otworzyć tego projektu i rozpocząć wykonywania z **debugowania** menu. Aby uzyskać więcej informacji, zobacz [wprowadzenie do debugera](../debugger/getting-started-with-the-debugger.md).  
@@ -77,7 +75,7 @@ Aby debugować biblioteki DLL, uruchomić debugowanie aplikacji wywołującej, z
   
 Przed rozpoczęciem debugowania aplikacji wywołującej, zwykle można ustawić punkt przerwania w bibliotece klas. Aby uzyskać więcej informacji, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md). Gdy punkt przerwania zostaje trafiony, można przejrzeć kod, obserwowania akcji w każdym wierszu, dopóki nie można ustalić przyczynę problemu. Aby uzyskać więcej informacji, zobacz [Przejdź kodu w debugerze](../debugger/navigating-through-code-with-the-debugger.md).
   
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a>W oknie bezpośrednim  
+###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> W oknie bezpośrednim  
  Będziesz w stanie ocenić funkcje i metody w bibliotece DLL bez wywoływania aplikacji. Jak debugowanie w czasie projektowania i używasz **Immediate** okna. Aby debugować w ten sposób, wykonaj wykonaj te kroki po otwarciu projektu biblioteki DLL:  
   
 1.  Otwórz debuger **Immediate** okna.  
@@ -106,7 +104,7 @@ Przed rozpoczęciem debugowania aplikacji wywołującej, zwykle można ustawić 
   
      Punkt przerwania zostanie uruchomiona i będzie można wykonywać krokowo `Test`. Po odejściu wykonywania `Test`, debuger będzie w trybie projektowania.
 
-## <a name="vxtskdebuggingdllprojectsexternal"></a>Debugowanie zewnętrznej biblioteki DLL z projektu C++
+## <a name="vxtskdebuggingdllprojectsexternal"></a> Debugowanie zewnętrznej biblioteki DLL z projektu C++
 
 Jeśli projekt jest debugowany zewnętrznej biblioteki DLL, funkcje debugowania (takich jak krokowe wykonywanie kodu) będzie zależeć od [konfiguracji debugowania biblioteki dll](#vxtskdebuggingdllprojectsbuildingadebugversion) go został utworzony i czy [plik PDB](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) i innych wymaganych plików dla biblioteki DLL są dostępne.
 

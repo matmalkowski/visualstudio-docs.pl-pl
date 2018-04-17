@@ -2,23 +2,19 @@
 title: Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: ''
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f6eea5a99245249a244dbb7cd31e61799f7c0103
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: e2af3c9ada788c195cffb811cbfded9c43604c7a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
 Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych przeznaczonych dla systemu Android, iOS i Windows za pomocą języka C# .NET i Visual Studio. Xamarin umożliwia dużej części kodu mogą być współużytkowane przez platformy, tylko na niewielkim odsetku muszą być specyficzne dla platformy. Aby uzyskać więcej informacji na Xamarin się w temacie [Visual Studio i Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -100,7 +96,7 @@ Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych przeznaczony
 |[Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak||  
 |[Znajdowanie zduplikowanego kodu za pomocą narzędzia do wykrywania klonu kodu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak||  
 |[Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak||  
-|[Performance Explorer](../profiling/performance-explorer.md)|Nie|Użyj [profilera Xamarin](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) za pomocą platformy Xamarin Studio zamiast tego. Należy pamiętać, że Xamarin Profiler jest obecnie w wersji zapoznawczej i jeszcze nie działa dla celów systemu Windows.|  
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [profilera Xamarin](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) za pomocą platformy Xamarin Studio zamiast tego. Należy pamiętać, że Xamarin Profiler jest obecnie w wersji zapoznawczej i jeszcze nie działa dla celów systemu Windows.|  
 |[Analiza problemów pamięci .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie mają punkty zaczepienia do Mono framework do profilowania.|  
   
 ## <a name="release-management"></a>Release Management  

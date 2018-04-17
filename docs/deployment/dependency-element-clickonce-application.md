@@ -1,12 +1,10 @@
 ---
-title: "&lt;zależności&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;zależności&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależności&gt; elementu (aplikacji ClickOnce)
 Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplikacji.  
@@ -98,7 +96,7 @@ Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplika
 ### <a name="dependentos"></a>dependentOS  
  Opcjonalny. Zawiera `osVersionInfo` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jedna z tych musi istnieć dla `dependency` elementu, ale nie oba.  
   
- `dependentOS`obsługuje następujące atrybuty.  
+ `dependentOS` obsługuje następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -124,7 +122,7 @@ Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplika
 ### <a name="dependentassembly"></a>dependentAssembly  
  Opcjonalny. Zawiera `assemblyIdentity` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jedna z tych musi istnieć dla `dependency` elementu, ale nie oba.  
   
- `dependentAssembly`ma następujące atrybuty.  
+ `dependentAssembly` ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -140,7 +138,7 @@ Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplika
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`name`|Wymagany. Określa nazwę aplikacji.|  
-|`version`|Wymagany. Określa numer wersji aplikacji w następującym formacie:`major.minor.build.revision`|  
+|`version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcjonalny. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnich 8 bajtów `SHA-1` wartość klucza publicznego, pod którą jest podpisany aplikacji lub zestawu skrótu. Klucz publiczny używany do podpisywania katalogu musi być 2048 bitów lub większej.|  
 |`processorArchitecture`|Opcjonalny. Określa procesora. Prawidłowe wartości to `x86` dla 32-bitowego systemu Windows i `I64` dla 64-bitowego systemu Windows.|  
 |`language`|Opcjonalny. Identyfikuje części dwóch kodów języków, takich jak pl-pl, zestawu.|  
@@ -148,7 +146,7 @@ Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplika
 ### <a name="hash"></a>hash  
  `hash` Element jest opcjonalny element podrzędny `assemblyIdentity` elementu. `hash` Element nie ma żadnych atrybutów.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]używa algorytmicznego skrót wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żadne pliki nie zostały zmieniły po wdrożeniu. Jeśli `hash` element nie jest dołączana, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` element nie jest zalecane.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] używa algorytmicznego skrót wszystkich plików w aplikacji w celu sprawdzenia zabezpieczeń, aby upewnić się, że żadne pliki nie zostały zmieniły po wdrożeniu. Jeśli `hash` element nie jest dołączana, to sprawdzenie nie zostanie wykonane. W związku z tym pominięcie `hash` element nie jest zalecane.  
   
 ### <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
  `dsig:Transforms` Element jest elementem podrzędnym wymagane `hash` elementu. `dsig:Transforms` Element nie ma żadnych atrybutów.  

@@ -1,13 +1,10 @@
 ---
-title: "&lt;Ciągi&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: '&lt;Ciągi&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
 - MSBuild.GenerateBootstrapper.ProductCultureNotFound
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d6a7d9ec23995fa2ea7114afa9b785c4fd4e6e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Ciągi&gt; elementu (programu inicjującego)
 Definiuje zlokalizowanych ciągów dla nazwy produktu, nazwy pakietu i komunikaty o błędach instalacji.  
@@ -51,7 +47,7 @@ Definiuje zlokalizowanych ciągów dla nazwy produktu, nazwy pakietu i komunikat
 ## <a name="string"></a>String  
  `String` Element jest elementem podrzędnym `Strings` elementu. A `Strings` element może mieć co najmniej jeden `String` elementów.  
   
- `String`ma następującego atrybutu.  
+ `String` ma następującego atrybutu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  

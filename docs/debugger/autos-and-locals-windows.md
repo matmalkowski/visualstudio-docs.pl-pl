@@ -1,13 +1,10 @@
 ---
-title: "Sprawdź zmienne w automatycznych i zmiennych lokalnych w systemie Windows | Dokumentacja firmy Microsoft"
+title: Sprawdź zmienne w automatycznych i zmiennych lokalnych w systemie Windows | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Sprawdź zmienne w automatycznych i zmiennych lokalnych Windows w programie Visual Studio
 **Automatycznych** okna (podczas debugowania, **CTRL + ALT + V, A**, lub **debugowania > Windows > automatycznych**) i **zmiennych lokalnych** okna (podczas debugowania **CTRL + ALT + V, L**, lub **Debuguj > Windows > Zmienne lokalne**) są bardzo przydatne, gdy chcesz sprawdzić wartości zmiennych podczas debugowania. **Zmiennych lokalnych** wyświetlane zmienne zdefiniowane w zakresie lokalnego jest zazwyczaj funkcji lub metody, który jest aktualnie wykonywany. **Automatycznych** okna są wyświetlane zmienne używane wokół bieżącego wiersza (miejsce, w której debuger został zatrzymany). Dokładnie zmienne, które są wyświetlane w tym oknie różni się w różnych językach. Zobacz [co zmienne są wyświetlane w oknie automatycznych?](#bkmk_whatvariables) poniżej.  
@@ -37,7 +33,7 @@ Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
-## <a name="bkmk_whatvariables"></a>Jakie zmienne są wyświetlane w oknie automatycznych?  
+## <a name="bkmk_whatvariables"></a> Jakie zmienne są wyświetlane w oknie automatycznych?  
  Można użyć **automatycznych** okna w kodzie C#, Visual Basic i C++. **Automatycznych** okna nie obsługuje języka JavaScript lub F #.  
   
  W języku C# i Visual Basic **automatycznych** okno wyświetla dowolnej zmiennej używany w bieżącym lub poprzedniego wiersza. Jeśli na przykład deklarować zmiennych i ustaw je w następujący sposób:
@@ -81,7 +77,7 @@ Tablice i obiekty są wyświetlane w oknach zmiennych automatycznych i zmiennych
   
  Można również sprawdzić wartości zwracanych funkcje i metody w pewnych okolicznościach. Zobacz [widoku wartości zwracanych z wywołań metody](#bkmk_returnValue) poniżej.  
   
-##  <a name="bkmk_returnValue"></a>Widok wartości zwracanych z wywołań metody.  
+##  <a name="bkmk_returnValue"></a> Widok wartości zwracanych z wywołań metody.  
  Kod .NET i C++ należy zbadać wartości zwracanych podczas kroku za pośrednictwem lub poza wywołania metody. Ta funkcja jest przydatna, gdy wynikiem wywołania metody nie jest przechowywana w zmiennej lokalnej, na przykład, gdy metoda jest używany jako parametr lub jako do wartości zwracanej innej metody.  
   
  Poniższy kod C# dodaje zwracane wartości dwie funkcje:  

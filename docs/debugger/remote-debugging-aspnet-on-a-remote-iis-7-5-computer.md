@@ -1,25 +1,21 @@
 ---
-title: "Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS | Dokumentacja firmy Microsoft"
+title: Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS | Dokumentacja firmy Microsoft
 ms.custom: remotedebugging
 ms.date: 07/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 1c8d2cfb57d3e96b845bc243575eb63af88720c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona do usług IIS, zainstalować i uruchomić narzędzia zdalnej na komputerze, których wdrożono aplikację, a następnie dołącz do uruchomionej aplikacji z programu Visual Studio.
@@ -44,7 +40,7 @@ Zdalny debuger jest obsługiwana w systemie Windows Server, począwszy od system
 
 2. Otwórz plik HomeController.cs i ustaw punkt przerwania `About()` metody.
 
-## <a name="bkmk_configureIIS"></a>Instalowanie i konfigurowanie usług IIS w systemie Windows Server
+## <a name="bkmk_configureIIS"></a> Instalowanie i konfigurowanie usług IIS w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -61,7 +57,7 @@ Jeśli korzystasz z programu Internet Explorer, możesz dodać zaufanych witryn,
 
 Podczas pobierania oprogramowania może otrzymywać żądania udzielenia uprawnienie do ładowania różnych skrypty witryny sieci web i zasobów. W większości przypadków te dodatkowe zasoby nie są wymagane do zainstalowania oprogramowania.
 
-## <a name="BKMK_deploy_asp_net"></a>Zainstaluj program ASP.NET 4.5 w systemie Windows Server
+## <a name="BKMK_deploy_asp_net"></a> Zainstaluj program ASP.NET 4.5 w systemie Windows Server
 
 Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program ASP.NET w usługach IIS, zobacz [IIS 8.0 przy użyciu programu ASP.NET 3.5 i ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -76,11 +72,11 @@ Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program 
 
 2. Ponowne uruchomienie systemu (lub wykonać **net stop została /y** następuje **net start w3svc** z wiersza polecenia, aby pobrać zmiany systemowej PATH).
 
-## <a name="BKMK_install_webdeploy"></a>(Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
+## <a name="BKMK_install_webdeploy"></a> (Opcjonalnie) Instalacja narzędzia Web Deploy 3,6 w systemie Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
+## <a name="BKMK_deploy_asp_net"></a> Konfiguruj witrynę sieci Web platformy ASP.NET na komputerze serwera systemu Windows
 
 1. Otwórz Eksploratora Windows i Utwórz nowy folder **C:\Publish**, których później będą wdrażać projektu programu ASP.NET.
 
@@ -98,7 +94,7 @@ Jeśli chcesz, aby uzyskać szczegółowe informacje, aby zainstalować program 
 
 8. Z witryną wybrane w Menedżerze usług IIS, wybierz **Edytuj uprawnienia**i upewnij się, że IUSR, IIS_IUSRS lub nazwą użytkownika skonfigurowaną dla puli aplikacji jest autoryzowanym użytkownikiem z prawami Odczyt i wykonywanie. Jeśli żaden z tych użytkowników nie jest obecny, Dodaj konta IUSR jako użytkownik z uprawnieniami Odczyt i wykonywanie.
 
-## <a name="bkmk_webdeploy"></a>(Opcjonalnie) Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
+## <a name="bkmk_webdeploy"></a> (Opcjonalnie) Publikowanie i wdrażanie aplikacji przy użyciu narzędzia Web Deploy w programie Visual Studio
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -125,7 +121,7 @@ Można również publikowanie i wdrażanie aplikacji przy użyciu systemu plikó
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
+## <a name="BKMK_msvsmon"></a> Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
 
 W tym samouczku używamy programu Visual Studio 2017 r.
 
@@ -134,7 +130,7 @@ W tym samouczku używamy programu Visual Studio 2017 r.
 > [!TIP]
 > W niektórych scenariuszach może być najbardziej efektywny do uruchamiania zdalnego debugera z udziału plików. Aby uzyskać więcej informacji, zobacz [uruchamiania zdalnego debugera z udziału plików](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Konfigurowanie zdalnego debugera w systemie Windows Server
+## <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera w systemie Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -143,7 +139,7 @@ W tym samouczku używamy programu Visual Studio 2017 r.
 
 Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zobacz [uruchamiania zdalnego debugera jako usługi](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="BKMK_attach"></a>Dołączanie do aplikacji platformy ASP.NET z komputera programu Visual Studio
+## <a name="BKMK_attach"></a> Dołączanie do aplikacji platformy ASP.NET z komputera programu Visual Studio
 
 1. Na komputerze programu Visual Studio Otwórz **MyASPApp** rozwiązania.
 2. W programie Visual Studio, kliknij przycisk **Debuguj > dołączyć do procesu** (Ctrl + Alt + P).
@@ -171,7 +167,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 
     Punkt przerwania powinien trafienie w programie Visual Studio.
 
-## <a name="bkmk_openports"></a>Rozwiązywanie problemów: Otwórz wymagane porty w systemie Windows Server
+## <a name="bkmk_openports"></a> Rozwiązywanie problemów: Otwórz wymagane porty w systemie Windows Server
 
 W większości konfiguracji są otwarte porty wymagane przez instalację programu ASP.NET i zdalnego debugera. Jednak należy sprawdzić, czy porty są otwarte.
 

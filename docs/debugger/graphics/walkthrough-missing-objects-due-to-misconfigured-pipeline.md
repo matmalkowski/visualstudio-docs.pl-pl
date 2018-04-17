@@ -1,23 +1,21 @@
 ---
-title: "Wskazówki: Brak obiektów spowodowany błędnie skonfigurowanym potokiem | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Brak obiektów spowodowany błędnie skonfigurowanym potokiem | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8b6809f3238c4d239d6d07f0df35d9b4a035d945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 172effd2abffd6a7467a2fcb3490e39331910d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Wskazówki: brak obiektów spowodowany błędnie skonfigurowanym potokiem
 W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do sprawdzania, czy obiekt, który jest nieobecnego z powodu programu do cieniowania pikseli unset.  
@@ -88,7 +86,7 @@ W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qua
 1.  Znajdź `PSSetShader` wywołanie, która odnosi się do nieistniejącego obiektu. W **listy zdarzeń grafiki** okna, wprowadź "Rysowanie; PSSetShader"w **wyszukiwania** polu w prawym górnym rogu **listy zdarzeń grafiki** okna. Filtruje listę, tak aby zawierało tylko zdarzenia "PSSetShader" i zdarzenia, które mają "Rysuj" w ich tytułów. Wybierz pierwsze `PSSetShader` wywołania wyświetlany przed wywołanie rysowania Brak obiektu.  
   
     > [!NOTE]
-    >  `PSSetShader`nie będzie dłużej wyświetlane w **listy zdarzeń grafiki** okna, jeśli nie została ustawiona podczas tej ramki. Zazwyczaj dzieje się tak tylko, jeśli program do cieniowania pikseli tylko w jednym jest używana dla wszystkich obiektów lub `PSSetShader` wywołania przypadkowo został pominięty w trakcie tej ramki. W obu przypadkach zaleca się, że wyszukiwanie kodu źródłowego aplikacji dla `PSSetShader` wywołania i użyj tradycyjnych debugowania technik w celu badania zachowanie tych wywołań.  
+    >  `PSSetShader` nie będzie dłużej wyświetlane w **listy zdarzeń grafiki** okna, jeśli nie została ustawiona podczas tej ramki. Zazwyczaj dzieje się tak tylko, jeśli program do cieniowania pikseli tylko w jednym jest używana dla wszystkich obiektów lub `PSSetShader` wywołania przypadkowo został pominięty w trakcie tej ramki. W obu przypadkach zaleca się, że wyszukiwanie kodu źródłowego aplikacji dla `PSSetShader` wywołania i użyj tradycyjnych debugowania technik w celu badania zachowanie tych wywołań.  
   
 2.  Otwórz **stosu wywołań zdarzeń grafiki** okna. Na **diagnostyki grafiki** narzędzi wybierz **stosu wywołań zdarzeń grafiki**.  
   
@@ -101,7 +99,7 @@ W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-qua
   
  Aby rozwiązać ten problem, należy przypisać programu do cieniowania pikseli poprawne za pomocą pierwszego parametru metody `ID3D11DeviceContext::PSSetShader` wywołanie interfejsu API.  
   
- ![& Poprawiony C &43; 43; Kod źródłowy](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+ ![Poprawiony C&#43; &#43; kod źródłowy](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
  Po rozwiązaniu kodu można skompilować go ponownie i uruchomić aplikację ponownie, aby sprawdzić, czy renderowanie problem został rozwiązany:  
   

@@ -1,26 +1,23 @@
 ---
-title: "Porady: tworzenie LINQ w klasach SQL zamapowane do tabel i widoków (Projektant O-R) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: tworzenie LINQ w klasach SQL zamapowane do tabel i widoków (Projektant O-R) | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cc3c70ca70170de630dc28a10ff5d1352a610bfb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Porady: tworzenie LINQ w klasach SQL zamapowane do tabel i widoków (Projektanta obiektów relacyjnych)
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]klasy, które są mapowane na bazę danych, tabele i widoki są nazywane *klas jednostek*. Mapuje klasy jednostka rekordu, natomiast poszczególne właściwości klasy jednostki mapowania poszczególnych kolumn, które tworzą rekord. Tworzenie klas jednostek, które są oparte na tabele lub widoki przeciągając tabele lub widoki z **Eksploratora serwera**/**Eksploratora bazy danych** na [LINQ do SQL narzędzi w Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Generuje klas i stosuje konkretnym [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atrybutów w celu włączenia [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkcji (przesyłanie danych i możliwości edycji <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje o [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas, zobacz [LINQ w modelu obiektu SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klasy, które są mapowane na bazę danych, tabele i widoki są nazywane *klas jednostek*. Mapuje klasy jednostka rekordu, natomiast poszczególne właściwości klasy jednostki mapowania poszczególnych kolumn, które tworzą rekord. Tworzenie klas jednostek, które są oparte na tabele lub widoki przeciągając tabele lub widoki z **Eksploratora serwera**/**Eksploratora bazy danych** na [LINQ do SQL narzędzi w Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Generuje klas i stosuje konkretnym [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atrybutów w celu włączenia [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkcji (przesyłanie danych i możliwości edycji <xref:System.Data.Linq.DataContext>). Aby uzyskać szczegółowe informacje o [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] klas, zobacz [LINQ w modelu obiektu SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
   
 > [!NOTE]
 >  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Jest mapowania relacyjnego prostego obiektu, ponieważ obsługuje on tylko relacje 1:1 mapowania. Innymi słowy Klasa jednostki może mieć tylko relacji mapowania 1:1 z tabeli bazy danych lub widoku. Mapowanie złożonych, takie jak mapowania klasy jednostki z wieloma tabelami, nie jest obsługiwana. Jednak możesz mapować klasę jednostki do widoku, który łączy wiele powiązanych tabel.  

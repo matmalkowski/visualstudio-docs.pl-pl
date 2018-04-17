@@ -1,12 +1,10 @@
 ---
-title: "Wymagania wstępne dotyczące wdrażania aplikacji | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wymagania wstępne dotyczące wdrażania aplikacji | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
 Aby upewnić się, że aplikacja będzie zainstalować i uruchomić pomyślnie, należy najpierw upewnić, że wszystkie składniki, od których zależy aplikacja są już zainstalowane na komputerze docelowym. Na przykład większość aplikacji utworzony za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zależy od [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; poprawną wersję środowiska CLR musi być obecny na komputerze docelowym, przed zainstalowaniem aplikacji.  
@@ -48,7 +46,7 @@ Aby upewnić się, że aplikacja będzie zainstalować i uruchomić pomyślnie, 
   
 -   Minimalna wersja wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC), jak określono w zestawie zależności deklaracji w manifeście zestawu.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]wykrywa brakujące wymagania wstępne i wymagania wstępne można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: instalowanie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wykrywa brakujące wymagania wstępne i wymagania wstępne można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: instalowanie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Aby zmienić wartości w manifestach wygenerowane za pomocą narzędzi takich jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów i ponowne podpisywanie manifestów aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
@@ -78,9 +76,9 @@ Aby upewnić się, że aplikacja będzie zainstalować i uruchomić pomyślnie, 
 |---------------------------|-----------------|  
 |**-?, -h, — pomoc**|Wyświetla okno dialogowe Pomoc.|  
 |**— adres url, - componentsurl**|Pokazuje przechowywanych adresu URL i adresu url składników dla tego zestawu w górę.|  
-|**-url =**`location`|Ustawia adres URL, w którym będzie szukać Setup.exe [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.|  
-|**-componentsurl =**`location`|Ustawia adres URL, w którym Setup.exe będzie szukać zależności, takich jak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji dostawcy witryny. Przesłania **- componentsurl** ustawienie. Gdy `false`, pliki do pobrania zależności z adresu URL określonego przez **- componentsurl**.|  
+|**-url =** `location`|Ustawia adres URL, w którym będzie szukać Setup.exe [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.|  
+|**-componentsurl =** `location`|Ustawia adres URL, w którym Setup.exe będzie szukać zależności, takich jak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji dostawcy witryny. Przesłania **- componentsurl** ustawienie. Gdy `false`, pliki do pobrania zależności z adresu URL określonego przez **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Obsługa systemu operacyjnego  
  Inicjujący Instalatora programu Visual Studio nie jest obsługiwana instalacja Server Core systemu Windows Server 2008 lub Windows Server 2008 R2 Server Core, będące środowisku małej konserwacji serwera z ograniczoną funkcjonalnością. Na przykład opcja instalacji Server Core obsługuje tylko profilu .NET Framework 3.5 Server Core, więc nie można uruchomić funkcji programu Visual Studio, które są zależne od pełnego .NET Framework.  

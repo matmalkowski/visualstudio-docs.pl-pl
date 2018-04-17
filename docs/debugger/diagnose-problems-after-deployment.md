@@ -1,23 +1,21 @@
 ---
-title: "Diagnozowanie problemów po wdrożeniu | Dokumentacja firmy Microsoft"
-ms.custom: 
-ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Diagnozowanie problemów po wdrożeniu | Dokumentacja firmy Microsoft
+ms.custom: ''
+ms.date: 04/10/2018
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
-caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc5ffb60e10f28fc33654a78f3f8486e42a2ed85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnozowanie problemów po wdrożeniu
 Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy użyciu funkcji IntelliTrace, obejmują informacje o kompilacji z Twojej wersji, aby umożliwić programowi Visual Studio automatycznie znaleźć poprawnych plików źródłowych i pliki symboli, które są wymagane do debugowania dziennika funkcji IntelliTrace.  
@@ -34,18 +32,14 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
 -   Visual Studio Enterprise (ale nie w wersji Professional lub społeczności), aby przejrzeć dane diagnostyczne i debugowanie kodu przy użyciu funkcji IntelliTrace  
 
-##  <a name="SetUpBuild"></a>Krok 1: Obejmują informacje o Twojej wersji kompilacji  
+##  <a name="SetUpBuild"></a> Krok 1: Obejmują informacje o Twojej wersji kompilacji  
  Konfigurowanie procesu kompilacji do tworzenia manifestu kompilacji (plik BuildInfo.config) dla projektu sieci web i obejmują tego manifestu z Twojej wersji. Tego manifestu zawiera informacje dotyczące projektu kontroli źródła, a system kompilacji, które zostały użyte do utworzenia określonej kompilacji. Informacje te pomagają Visual Studio Znajdź pasujące źródło i symbole po otwarciu dziennika IntelliTrace, aby przejrzeć zarejestrowane zdarzenia.  
 
-###  <a name="AutomatedBuild"></a>Tworzenie manifestu kompilacji dla kompilacji zautomatyzowanych za pomocą programu Team Foundation Server  
-
- Wykonaj następujące kroki, czy używasz kontroli wersji Team Foundation lub Git.
-  
- **Krok 2:** [krok 2: wersji aplikacji](#DeployRelease)  
+###  <a name="AutomatedBuild"></a> Tworzenie manifestu kompilacji dla kompilacji zautomatyzowanych za pomocą programu Team Foundation Server  
   
  Wykonaj następujące kroki, czy używasz kontroli wersji Team Foundation lub Git.  
  
- ####  <a name="TFS2017"></a>Team Foundation Server 2017
+ ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
  Skonfiguruj definicję kompilacji, aby dodać lokalizacje źródłowe, kompilacji i symboli do manifestu kompilacji (plik BuildInfo.config). Team Foundation Build automatycznie tworzy ten plik i umieszczenie go w folderze wyjściowym projektu.
   
@@ -72,8 +66,10 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
      Każdy, kto może uzyskiwać dostęp do serwera sieci web jest widoczny te lokalizacje w manifeście kompilacji. Upewnij się, że serwer źródłowy jest zabezpieczone.
   
 6.  Uruchom nową kompilację.  
+  
+    Przejdź do [krok 2: wersji aplikacji](#DeployRelease)  
 
-####  <a name="TFS2013"></a>Team Foundation Server 2013  
+####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Skonfiguruj definicję kompilacji, aby dodać lokalizacje źródłowe, kompilacji i symboli do manifestu kompilacji (plik BuildInfo.config). Team Foundation Build automatycznie tworzy ten plik i umieszczenie go w folderze wyjściowym projektu.  
 
 1.  [Edytuj definicję kompilacji lub Utwórz nową definicję kompilacji.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -116,9 +112,9 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
 6.  Uruchom nową kompilację.  
 
- **Krok 2:** [krok 2: wersji aplikacji](#DeployRelease)  
+    Przejdź do [krok 2: wersji aplikacji](#DeployRelease)  
 
-####  <a name="TFS2012_2010"></a>Team Foundation Server 2012 lub 2010  
+####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 lub 2010  
  Wykonaj następujące kroki, aby automatycznie utworzyć manifestu kompilacji (plik BuildInfo.config) dla projektu i umieścić plik w folderze wyjściowym projektu. Plik jest wyświetlany jako "*ProjectName*. BuildInfo.config"w folderze wyjściowym, ale jest zmieniona"BuildInfo.config"w folderze wdrożenia po opublikowaniu aplikacji.  
 
 1.  Zainstalowanie programu Visual Studio 2013 (dowolna wersja) na serwerze kompilacji Team Foundation.  
@@ -141,9 +137,9 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
 4.  Uruchom nową kompilację.  
 
- **Krok 2:** [krok 2: wersji aplikacji](#DeployRelease)  
+    Przejdź do [krok 2: wersji aplikacji](#DeployRelease)  
 
-###  <a name="ManualBuild"></a>Tworzenie manifestu kompilacji dla kompilacji ręcznej przy użyciu programu Visual Studio  
+###  <a name="ManualBuild"></a> Tworzenie manifestu kompilacji dla kompilacji ręcznej przy użyciu programu Visual Studio  
  Wykonaj następujące kroki, aby automatycznie utworzyć manifestu kompilacji (plik BuildInfo.config) dla projektu i umieścić plik w folderze wyjściowym projektu. Plik jest wyświetlany jako "*ProjectName*. BuildInfo.config"w folderze wyjściowym, ale jest zmieniona"BuildInfo.config"w folderze wdrożenia po opublikowaniu aplikacji.  
 
 1.  W **Eksploratora rozwiązań**, zwolnienie projektu sieci web.  
@@ -168,9 +164,9 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
 4.  Uruchom nową kompilację.  
 
- **Krok 2:** [krok 2: wersji aplikacji](#DeployRelease)  
+    Przejdź do [krok 2: wersji aplikacji](#DeployRelease)  
 
-###  <a name="MSBuild"></a>Tworzenie manifestu kompilacji dla kompilacji ręcznej przy użyciu narzędzia MSBuild.exe  
+###  <a name="MSBuild"></a> Tworzenie manifestu kompilacji dla kompilacji ręcznej przy użyciu narzędzia MSBuild.exe  
  Dodaj te argumenty kompilacji podczas uruchamiania kompilacji:  
 
  **/p:GenerateBuildInfoConfigFile = true**  
@@ -179,7 +175,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
  **/p:BuildSymbolStorePath =**\<*ścieżka do symboli*>  
 
-##  <a name="DeployRelease"></a>Krok 2: Wersji aplikacji  
+##  <a name="DeployRelease"></a> Krok 2: Wersji aplikacji  
  Jeśli używasz [pakietu Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) utworzony przez procesu kompilacji, aby wdrożyć aplikację, manifest kompilacji zostanie automatycznie zmieniona na "*ProjectName*. BuildInfo.config"do"BuildInfo.config"i jest umieszczany w tym samym folderze z pliku Web.config aplikacji na serwerze sieci web.  
 
  Jeśli używasz innych metod do wdrożenia aplikacji, upewnij się, że manifest kompilacji jest zmieniana ze "*ProjectName*. BuildInfo.config"do"BuildInfo.config"i jest umieszczany w tym samym folderze z pliku Web.config aplikacji na serwerze sieci web.  
@@ -187,7 +183,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 ## <a name="step-3-monitor-your-app"></a>Krok 3: Monitorowanie aplikacji  
  Konfigurowanie monitorowania wydajności aplikacji na serwerze sieci web tak, aby monitorować aplikację do problemów, rejestrowania zdarzeń diagnostycznych i zapisać zdarzeń do pliku dziennika funkcji IntelliTrace. Zobacz [monitorować Twojej wersji dla problemów z wdrażaniem](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a>Krok 4: Znajdziesz problem  
+##  <a name="InvestigateEvents"></a> Krok 4: Znajdziesz problem  
  Visual Studio Enterprise należy na komputerze dewelopera lub innym komputerze, aby przejrzeć zarejestrowane zdarzenia i debugowanie kodu przy użyciu funkcji IntelliTrace. Można również użyć narzędzi, takich jak CodeLens, mapy debugera i mapy kodu, aby zdiagnozować problem.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Otwieranie dziennika IntelliTrace i pasującego rozwiązania  
@@ -208,7 +204,7 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
      W przeciwnym wypadku wybierz inny lub utwórz nowy obszar roboczy. Program Visual Studio będzie mapować całą gałąź do tego obszaru roboczego.  
 
-     ![& Otwórz z kontroli źródła 45; Utwórz nowy obszar roboczy](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Otwórz z kontroli źródła &#45; Utwórz nowy obszar roboczy](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
 
      Aby utworzyć obszaru roboczego z określonego mapowania lub nazwy, która nie jest nazwą komputera, wybierz **Zarządzaj**.  
 
@@ -254,26 +250,26 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
      Teraz można przejrzeć inne zarejestrowane wartości, stos wywołań, lub użyj **IntelliTrace** okna [przechodzenie wstecz lub do przodu "w czasie" między inne zarejestrowane zdarzenia](../debugger/intellitrace.md), kodu powiązanego i rejestrowane w wartości te punkty w czasie. [Co to jest tych pozostałych zdarzeń i informacji w dzienniku funkcji IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a>Co można zrobić, w tym miejscu?  
+###  <a name="WhatElse"></a> Co można zrobić, w tym miejscu?  
 
 -   [Uzyskaj więcej informacji o tym kodzie](../ide/find-code-changes-and-other-history-with-codelens.md). Można znaleźć odniesienia do tego kodu, historii zmian, powiązanych usterek, elementy robocze, przeglądy kodu lub testów jednostkowych, - all bez opuszczania edytora - użyj wskaźników CodeLens w edytorze.  
 
-     ![CodeLens &#45; Wyświetlanie odwołania do tego kodu](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens &#45; wyświetlić odwołania do tego kodu](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
-     ![CodeLens &#45; Wyświetl historię zmian przez ten kod](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![CodeLens &#45; widoku Historia dla tego kodu zmian](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
 -   [Mapowanie Twoje miejsce w kodzie podczas debugowania kodu.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Aby wizualnie śledzić metody, które zostały wywołane podczas sesji debugowania, mapuj stos wywołań.  
 
      ![Mapowanie stosu wywołań podczas debugowania](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
 
-###  <a name="FAQ"></a>FUNKCJA PYTANIA I ODPOWIEDZI  
+###  <a name="FAQ"></a> FUNKCJA PYTANIA I ODPOWIEDZI  
 
-####  <a name="WhyInclude"></a>Pytanie: Dlaczego zawierają informacje o projekcie, kontroli źródła, kompilacji i symbole z mojej wersji?  
+####  <a name="WhyInclude"></a> Pytanie: Dlaczego zawierają informacje o projekcie, kontroli źródła, kompilacji i symbole z mojej wersji?  
  Visual Studio wykorzystuje te informacje można znaleźć rozwiązania zgodnego i źródła dla wersji, który próbujesz debugować. Po otwarciu dziennika funkcji IntelliTrace i wybierz zdarzenie, aby rozpocząć debugowanie, Visual Studio będzie korzystać symboli można znaleźć i wyświetlić kod którym wystąpiło zdarzenie. Można przyjrzeć się wartości, które zostały zarejestrowane i Przenieś przodu lub do tyłu przez wykonanie kodu.  
 
  Jeśli używasz programu TFS, a tych informacji nie jest w manifeście kompilacji (plik BuildInfo.config), programu Visual Studio wyszukuje zgodne źródło i symbole z aktualnie połączonych TFS. Jeśli program Visual Studio nie może znaleźć poprawne TFS lub zgodne źródło, zostanie wyświetlony monit o wybranie innego TFS.  
 
-####  <a name="InvalidConfigFile"></a>Pytanie: dziennika funkcji IntelliTrace brakuje informacji o Moje wdrożonej aplikacji. Dlaczego to możliwe? Co mam zrobić?  
+####  <a name="InvalidConfigFile"></a> Pytanie: dziennika funkcji IntelliTrace brakuje informacji o Moje wdrożonej aplikacji. Dlaczego to możliwe? Co mam zrobić?  
  Taka sytuacja może wystąpić podczas wdrażania na komputerze projektowym lub nie masz połączenia do programu TFS podczas wdrażania.  
 
 1.  Przejdź do folderu wdrożenia projektu.  
@@ -377,17 +373,17 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a>Pytanie: Dlaczego Visual Studio mówi się, że nie kwalifikuje się Moje wybranego obszaru roboczego?  
+####  <a name="IneligibleWorkspace"></a> Pytanie: Dlaczego Visual Studio mówi się, że nie kwalifikuje się Moje wybranego obszaru roboczego?  
  **Odpowiedź:** wybranego obszaru roboczego nie ma żadnych mapowań między folderu kontroli źródła i folder lokalny. Aby utworzyć mapowanie dla tego obszaru roboczego, wybierz **Zarządzaj**. W przeciwnym wypadku wybierz już zmapowany obszar roboczy lub utwórz nowy.  
 
  ![Otwórz z kontroli źródła z nie zamapowanego obszarem roboczym](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a>Pytanie: Dlaczego nie można kontynuować do momentu I wybierz kolekcję zespołu lub innej kolekcji?  
+####  <a name="ChooseTeamProject"></a> Pytanie: Dlaczego nie można kontynuować do momentu I wybierz kolekcję zespołu lub innej kolekcji?  
  **Odpowiedź:** taka sytuacja może wystąpić dla żadnej z następujących powodów:  
 
 -   Program Visual Studio nie jest połączony z TFS.  
 
-     ![& Otwórz z kontroli źródła 45; niepodłączone](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![Otwórz z kontroli źródła &#45; niepołączone](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
 
 -   Program Visual Studio nie znalazł rozwiązania lub projektu w obecnej kolekcji zespołu.  
 
@@ -397,12 +393,12 @@ Aby zdiagnozować problemy w aplikacji sieci web ASP.NET po wdrożeniu przy uży
 
      Określony TFS może już nie mieć pasującego źródła lub może już nawet nie istnieć, być może dlatego, że nastąpiła migracja do nowego TFS. Jeśli określone wystąpienie programu TFS nie istnieje, w programie Visual Studio może upłynąć limit czasu po około minucie, a następnie pojawi się monit o podłączenie do innej kolekcji. Aby kontynuować, należy połączyć się z właściwym serwerem TFS.  
 
-     ![& Otwórz z kontroli źródła 45; Migracja](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Otwórz z kontroli źródła &#45; migracji](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
-####  <a name="WhatWorkspace"></a>Pytanie: co to jest obszar roboczy?  
+####  <a name="WhatWorkspace"></a> Pytanie: co to jest obszar roboczy?  
  **A:** Twojego [obszaru roboczego jest przechowywana kopia źródła](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) , mogą tworzyć i przetestować go oddzielnie przed wyboru w pracy. Jeśli nie masz jeszcze obszaru roboczego, który jest specjalnie zmapowany na znalezione rozwiązania lub projekt, program Visual Studio wyświetli monit, aby wybrać dostępny obszar roboczy lub utworzyć nowy obszar roboczy z nazwą komputera jako domyślną nazwą obszaru roboczego.  
 
-####  <a name="UntrustedSymbols"></a>Pytanie: Dlaczego uzyskać ten komunikat o niezaufanych symbole?  
+####  <a name="UntrustedSymbols"></a> Pytanie: Dlaczego uzyskać ten komunikat o niezaufanych symbole?  
  ![Debugowanie przy użyciu ścieżki symboli niezaufanych? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **Odpowiedź:** ten komunikat jest wyświetlany, gdy ścieżki symboli w pliku manifestu kompilacji (\<*ProjectName*>. BuildInfo.config) nie jest uwzględniony na liście zaufanych symbol ścieżek. Możesz dodać ścieżkę do listy ścieżek symboli w opcjach debugera.

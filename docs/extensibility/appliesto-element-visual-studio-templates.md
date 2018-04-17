@@ -1,23 +1,21 @@
 ---
-title: "AppliesTo — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: AppliesTo — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo — Element (szablony Visual Studio)
 Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Możliwości są ujawniane przez typy projektu za pośrednictwem hierarchii jako właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.  
@@ -26,7 +24,7 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
  Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwołać poprawnej wersji, zobacz [odwołania do zestawów dostarczane w Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateData >  
  \<Element AppliesTo >  
   
@@ -56,9 +54,9 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
  Prawidłową składnię wyrażeń definiuje się następująco:  
   
--   Wyrażenie możliwości, takie jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit) ".  
+-   Wyrażenie możliwości, takie jak "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   "&#124;" jest operatora OR.  
+-   "&#124;" Jest operatora OR.  
   
 -   "&" I "+" znaki są oba operatory i.  
   
@@ -68,10 +66,10 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
   
 -   Wyrażenie o wartości null lub puste jest interpretowane jako zgodność.  
   
--   Możliwości projektu może być dowolny znak z wyjątkiem następujących zarezerwowanych znaków: "" :;,+-*/\\! ~ &#124; & %$@^()={} <> []? \t\b\n\r  
+-   Możliwości projektu może być dowolny znak z wyjątkiem następujących zarezerwowanych znaków: "" :;,+-*/\\! ~&#124;& %$@^()={} <> []? \t\b\n\r  
   
 ## <a name="example"></a>Przykład  
- W przykładzie poniżej widać trzy różne szablony. `Template1`ma zastosowanie do wszystkich typów projektów C# lub innego typu projektu, który obsługuje `WindowsAppContainer` możliwości. `Template2`ma zastosowanie do wszystkich projektów C# dowolnego rodzaju. `Template3`ma zastosowanie do projektów C#, które nie są `WindowsAppContainer` projektów.  
+ W przykładzie poniżej widać trzy różne szablony. `Template1` ma zastosowanie do wszystkich typów projektów C# lub innego typu projektu, który obsługuje `WindowsAppContainer` możliwości. `Template2` ma zastosowanie do wszystkich projektów C# dowolnego rodzaju. `Template3` ma zastosowanie do projektów C#, które nie są `WindowsAppContainer` projektów.  
   
 ```xml  
 <!--  Template 1 -->  

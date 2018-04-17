@@ -1,23 +1,21 @@
 ---
-title: "Skróty klawiaturowe i klawisze modyfikujące w programie Blend | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Skróty klawiaturowe i klawisze modyfikujące w programie Blend | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c934ae4869867b0680999514cbaae99c74c3d2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3913d582836caaa7ae5721c213c38ee71ebc2fa3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Skróty klawiaturowe i klawisze modyfikujące w programie Blend
 Skróty klawiaturowe można przyspieszyć pracę dzięki zmniejszeniu akcję, która wymaga wielu kliknięcia przycisku myszy, aby skrót klawiaturowy pojedynczego. Skróty klawiaturowe w [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] są dostępne w następujących dwóch kategorii:  

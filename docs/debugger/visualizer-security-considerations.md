@@ -1,12 +1,10 @@
 ---
-title: "Zagadnienia dotyczące zabezpieczeń internetowych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zagadnienia dotyczące zabezpieczeń internetowych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - visualizers, security
 - security [Visual Studio], visualizers
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d5075e55f1db35f7a588094a7c398c9d4c25483c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 63ae399fdc6b9accdef412d4f4d13fe8db7aed75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visualizer-security-considerations"></a>Zagadnienia dotyczące zabezpieczeń internetowych
 Pisanie wizualizatora polega na potencjalne zagrożenia. Nie znanego wykorzystać nie istnieje dla tych potencjalnych zagrożeń, ale deweloperów powinien mieć świadomość ich i podjąć odpowiednie środki ostrożności, zgodnie z opisem w tym miejscu, w celu ochrony przed lukami w przyszłości.  

@@ -1,13 +1,10 @@
 ---
 title: JIT Optymalizacja i debugowanie | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 31bbad33da65450375c5f3d6fba9b47b9eb55c8a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 **Jak działają funkcje optymalizacji programu .NET:** Jeśli próbujesz debugowania kodu, łatwiej gdy kod jest **nie** zoptymalizowane. To dlatego, jeśli kod jest zoptymalizowany, kompilatora i środowiska uruchomieniowego dokonać zmian emitowany kodu procesora CPU, aby działa szybciej, ale ma mniej bezpośredniego mapowania do oryginalnego kodu źródłowego. Oznacza to, że debugery są często informujące wartości zmiennych lokalnych i kodu wykonywanie krok po kroku, a punkty przerwania może nie działać zgodnie z oczekiwaniami.

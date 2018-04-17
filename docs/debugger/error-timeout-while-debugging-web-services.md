@@ -1,11 +1,9 @@
 ---
-title: "Błąd: Przekroczono limit czasu podczas debugowania usług sieci Web | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Błąd: Przekroczono limit czasu podczas debugowania usług sieci Web | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -15,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, Web application errors
 - XML Web services, timeout while debugging
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25b53910dd51dc9535ee2e9e6009fb435bd70735
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d095278ca684d8e2f6bc5b2e764b997ed88b7d33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Błąd: przekroczono limit czasu podczas debugowania usług sieci Web
 Gdy są Wkraczanie do usługi XML sieci Web, z kodu wywołującego, wywołanie może czasami limit czasu, w wyniku że nie będzie można kontynuować debugowania. Może zostać wyświetlony komunikat błędu, takich jak ta.  

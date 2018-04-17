@@ -2,23 +2,20 @@
 title: Tworzenie prostej aplikacji danych z WPF i Entity Framework 6 | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 420b0999709f7e419c6c05df18bd03d7a1475b57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych z WPF i Entity Framework 6
 
@@ -56,7 +53,7 @@ W tym przykładzie używa programu SQL Server Express LocalDB i przykładowej ba
   
 3.  W Menedżerze pakietów NuGet, kliknij polecenie **Przeglądaj** łącza. Entity Framework jest prawdopodobnie pakiet na liście. Kliknij przycisk **zainstalować** w okienku po prawej stronie i postępuj zgodnie z monitami. W oknie danych wyjściowych informuje, po zakończeniu instalacji.  
   
-     ![Entity Framework NuGet Package](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
+     ![Pakiet NuGet Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
   
 4.  Teraz możemy użyć programu Visual Studio, aby utworzyć model na podstawie bazy danych Northwind.  
   
@@ -130,7 +127,7 @@ Można napisać własny kod wiązania danych, ale jest znacznie łatwiejsze umo�
 
 6.  Kiedy klient jest widoczny w górnej połowie okna, chcemy zobaczyć jego zamówienia w dolnej połowie. Poniżej opisano zamówienia w kontrolce siatki pojedynczego widoku. Wzorzec szczegół wiązania z danymi będzie działać zgodnie z oczekiwaniami ważne jest możemy powiązać właściwość zamówień w klasie klienci nie do osobny węzeł zleceń. Należy zwrócić uwagę na poniższej ilustracji! Przeciągnij właściwość zamówień klasy klientów do dolnej części formularza tak, aby projektanta umieszcza je w wierszu 2:  
   
-     ![Drag Orders classes as grid](../data-tools/media/raddata-drag-orders-classes-as-grid.png "raddata Drag Orders classes as grid")  
+     ![Przeciągnij zamówień klas jako siatkę](../data-tools/media/raddata-drag-orders-classes-as-grid.png "raddata zamówień przeciągania klas jako siatkę")  
   
 7.  Visual Studio wygenerował żadnego kodu powiązania, który łączy kontrolek interfejsu użytkownika do zdarzeń w modelu. Wszystko, co należy zrobić, aby zobaczyć niektóre dane, jest napisanie kodu, aby wypełnić modelu. Pierwszy teraz przejdź do MainWindow.xaml.cs i dodać element członkowski danych klasy okna głównego dla kontekstu danych. Ten obiekt, który został wygenerowany dla nas, działa podobnie formant, który śledzi zmiany i zdarzeń w modelu. Również dodamy logiki inicjacji konstruktora. Na początku klasy Nasze powinien wyglądać następująco:  
   

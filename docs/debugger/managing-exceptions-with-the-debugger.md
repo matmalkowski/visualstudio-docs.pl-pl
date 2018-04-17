@@ -1,13 +1,10 @@
 ---
-title: "Zarządzanie wyjątkami za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zarządzanie wyjątkami za pomocą debugera programu Visual Studio | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera programu Visual Studio
 
@@ -145,7 +141,7 @@ W przypadku wybrania wyjątek **ustawienia wyjątków** okna, spowoduje przerwan
   
  ![Przywróć ustawienia domyślne w ustawieniach wyjątek](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Poinformuj debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika  
+##  <a name="BKMK_UserUnhandled"></a> Poinformuj debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika  
  Jeśli debugowania kodu .NET lub JavaScript z [tylko mój kod](../debugger/just-my-code.md), można ustalić debugera nie, aby przerwać na wyjątki, które nie są obsługiwane w kodzie użytkownika, ale są obsługiwane w innym miejscu.  
   
 1.  W **ustawienia wyjątków** okna, otwórz menu kontekstowe okna prawym przyciskiem myszy, a następnie wybierając **Pokaż kolumny**. (Jeśli wyłączysz **tylko mój kod**, nie zobaczysz tego polecenia.)  
@@ -156,7 +152,7 @@ W przypadku wybrania wyjątek **ustawienia wyjątków** okna, spowoduje przerwan
   
  Na przykład aplikacji sieci web ASP.NET obsługi wyjątków, konwertując je na kod stanu HTTP 500 ([obsługi wyjątków w interfejsu API platformy ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), które mogą nie pomóc określić źródło wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()` który zgłasza <xref:System.FormatException>. Wykonanie dzieli w następujący sposób:  
   
- ![podziały na użytkownika &#45; wyjątek unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![dzieli na użytkownika&#45;wyjątek unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Dodawanie i usuwanie wyjątków  
  Można dodawać i usuwać wyjątków. Dowolnego typu wyjątku można usunąć z każdej kategorii, wybierając wyjątek i klikając **usunąć** przycisk (znak minus) na **ustawienia wyjątków** paska narzędzi lub klikając prawym przyciskiem myszy wyjątek i Wybieranie **usunąć** z menu kontekstowego. Usuwanie wyjątek ma ten sam efekt jako mający wyjątku nie jest zaznaczona, czyli, że debuger nie będę powodować utraty, gdy jest on generowany.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 Można ustawić warunki na wyjątki w **ustawienia wyjątków** okno dialogowe. Obecnie obsługiwane warunki obejmować nazwy modułu do dołączania lub wykluczania dla wyjątku. Przez ustawienie nazwy modułu warunków, użytkownik może przerwać wyjątek tylko w określonym kodem modułów, lub można uniknąć dzielenia na konkretnym modułów.
 
 > [!NOTE]
-> Dodawanie warunków do wyjątku jest nowa w programie[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Dodawanie warunków do wyjątku jest nowa w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Aby dodać warunkowego wyjątki, wybierz **Edytuj warunek** ikonę w oknie dialogowym Ustawienia wyjątków polu lub kliknij prawym przyciskiem myszy wyjątek i wybierz polecenie **edytowanie warunków**.
 

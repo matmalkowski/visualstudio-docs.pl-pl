@@ -1,13 +1,10 @@
 ---
-title: "Wskazówki: Ręczne wdrażanie aplikacji ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Wskazówki: Ręczne wdrażanie aplikacji ClickOnce | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce
 Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, lub należy korzystać z funkcji zaawansowanego wdrożenia, takich jak wdrażanie zaufanej aplikacji należy za pomocą narzędzia wiersza polecenia Mage.exe tworzenia Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Ten przewodnik zawiera opis sposobu tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia przy użyciu wiersza polecenia wersji (Mage.exe) lub wersji graficznego (MageUI.exe) generowania manifestu i narzędzia do edycji.  
@@ -70,7 +66,7 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 -   Sprawdź, czy aplikacja wymaga wymagań wstępnych na komputerze klienckim.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje wdrożone w programie Visual Studio może obejmować programu inicjującego wymagań wstępnych instalacji (setup.exe) z wdrożeniem. W tym przewodniku tworzy dwa manifesty wymagane dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Programu inicjującego wymagań wstępnych można utworzyć przy użyciu [generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wdrożone w programie Visual Studio może obejmować programu inicjującego wymagań wstępnych instalacji (setup.exe) z wdrożeniem. W tym przewodniku tworzy dwa manifesty wymagane dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Programu inicjującego wymagań wstępnych można utworzyć przy użyciu [generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Aby wdrożyć aplikację za pomocą narzędzia wiersza polecenia Mage.exe  
   
@@ -128,7 +124,7 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 10. Skopiuj wszystkie pliki w katalogu wdrożenia do wdrożenia docelowego lub nośnika. Może to być folderem na witryny sieci Web lub witryny FTP, udziału plików lub dysku CD.  
   
-11. Zapewnić użytkownikom adres URL, UNC lub nośnik fizyczny wymagane do zainstalowania aplikacji. Należy podać adres URL lub ścieżką UNC, należy zapewnić użytkownikom pełną ścieżkę do manifestu wdrożenia. Na przykład jeśli jest wdrażana AppToDeploy http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL byłaby http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Zapewnić użytkownikom adres URL, UNC lub nośnik fizyczny wymagane do zainstalowania aplikacji. Należy podać adres URL lub ścieżką UNC, należy zapewnić użytkownikom pełną ścieżkę do manifestu wdrożenia. Na przykład, jeśli jest wdrażana AppToDeploy http://webserver01/ w katalogu AppToDeploy Pełna ścieżka adresu URL byłaby http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Aby wdrożyć aplikację za pomocą narzędzia graficzne MageUI.exe  
   
@@ -203,7 +199,7 @@ Jeśli nie można wdrożyć za pomocą programu Visual Studio z [!INCLUDE[ndptec
   
 28. Skopiuj wszystkie pliki w katalogu wdrożenia do wdrożenia docelowego lub nośnika. Może to być folderem na witryny sieci Web lub witryny FTP, udziału plików lub dysku CD.  
   
-29. Zapewnić użytkownikom adres URL, UNC lub nośnik fizyczny wymagane do zainstalowania aplikacji. Należy podać adres URL lub ścieżką UNC, należy nadać użytkownikom pełną ścieżkę manifest wdrażania. Na przykład jeśli jest wdrażana AppToDeploy http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL byłaby http://webserver01/AppToDeploy/AppToDeploy.application.  
+29. Zapewnić użytkownikom adres URL, UNC lub nośnik fizyczny wymagane do zainstalowania aplikacji. Należy podać adres URL lub ścieżką UNC, należy nadać użytkownikom pełną ścieżkę manifest wdrażania. Na przykład, jeśli jest wdrażana AppToDeploy http://webserver01/ w katalogu AppToDeploy Pełna ścieżka adresu URL byłaby http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Jeśli zajdzie potrzeba wdrożenia nowej wersji aplikacji, Utwórz nowy katalog o nazwie po nowej wersji — na przykład 1.0.0.1—and skopiować nowych plików aplikacji do nowego katalogu. Następnie należy wykonać poprzednie kroki, aby utworzyć i nowych manifest aplikacji i zaktualizuj i zalogują się manifest wdrażania. Należy wskazać nowszej wersji tego samego w obu Mage.exe `-New` i `-Update` wywołań, jako [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tylko aktualizuje nowsze wersje najważniejszych całkowitą lewej. Jeśli używasz MageUI.exe, można zaktualizować manifest wdrażania, otwierając go, wybierając **odwołanie do aplikacji** kartę, klikając pozycję **wybierz manifestu** przycisk, a następnie wybierając zaktualizowane manifest aplikacji.  

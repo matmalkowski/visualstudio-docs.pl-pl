@@ -1,12 +1,10 @@
 ---
 title: Wybieranie strategii aktualizacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - updates, ClickOnce
 - ClickOnce deployment, update strategies
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c1099ea3a37491e28929e3452c6364a904aee4d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Wybieranie strategii aktualizacji ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Umożliwia automatyczne stosowanie aktualizacji. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja okresowo odczytuje jej wdrożenia pliku manifestu w celu sprawdzenia, czy aktualizacje aplikacji są dostępne. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Umożliwia automatyczne stosowanie aktualizacji. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja okresowo odczytuje jej wdrożenia pliku manifestu w celu sprawdzenia, czy aktualizacje aplikacji są dostępne. Jeśli są dostępne, jest pobierana i uruchamiana nowa wersja aplikacji. W celu zwiększenia wydajności pobierane są tylko pliki, które uległy zmianie.  
   
  Podczas projektowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy określić strategii, która aplikacja będzie używać do sprawdzania dostępności aktualizacji. Istnieją trzy podstawowe strategie, których można użyć: sprawdzanie, czy są dostępne aktualizacje podczas uruchamiania aplikacji, sprawdzanie, czy są dostępne aktualizacje po uruchomieniu aplikacji (za pomocą wątku działającego w tle) oraz utworzenie interfejsu użytkownika do obsługi aktualizacji.  
   
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
  Możesz również zablokować aktualizacji sprawdzanie przez usunięcie `<Subscription>` tag w manifeście wdrażania.  
   
 ## <a name="permission-elevation-and-updates"></a>Podniesienie uprawnień i aktualizacje  
- Jeśli nowa wersja [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja wymaga wyższego poziomu zaufania, aby uruchomić od poprzedniej wersji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pojawi się monit, prośbą, jeśli chce, aby otrzymać wyższy poziom zaufania aplikacji. Jeśli użytkownik odmówi udzielenia wyższego poziomu zaufania, aktualizacja nie zostanie zainstalowana. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]pojawi się monit do zainstalowania aplikacji ponownie, po ponownym uruchomieniu dalej. Jeśli użytkownik odmówi w tym punkcie udzielenia wyższego poziomu zaufania, a aktualizacja nie będzie oznaczona jako wymagana, zostanie uruchomiona stara wersja aplikacji. Jeśli jednak aktualizacja będzie wymagana, aplikacja nie zostanie uruchomiona ponownie, dopóki użytkownik nie zaakceptuje wyższego poziomu zaufania.  
+ Jeśli nowa wersja [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja wymaga wyższego poziomu zaufania, aby uruchomić od poprzedniej wersji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pojawi się monit, prośbą, jeśli chce, aby otrzymać wyższy poziom zaufania aplikacji. Jeśli użytkownik odmówi udzielenia wyższego poziomu zaufania, aktualizacja nie zostanie zainstalowana. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pojawi się monit do zainstalowania aplikacji ponownie, po ponownym uruchomieniu dalej. Jeśli użytkownik odmówi w tym punkcie udzielenia wyższego poziomu zaufania, a aktualizacja nie będzie oznaczona jako wymagana, zostanie uruchomiona stara wersja aplikacji. Jeśli jednak aktualizacja będzie wymagana, aplikacja nie zostanie uruchomiona ponownie, dopóki użytkownik nie zaakceptuje wyższego poziomu zaufania.  
   
  Użytkownicy nie będą monitowani o poziomy zaufania w przypadku użycia zaufanego wdrożenia aplikacji. Aby uzyskać więcej informacji, zobacz [zaufane Omówienie wdrożenia aplikacji](../deployment/trusted-application-deployment-overview.md).  
   

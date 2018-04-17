@@ -1,12 +1,10 @@
 ---
 title: '&lt;fileAssociation&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - <fileAssociation> element [ClickOnce application manifest]
 - manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4da80f852526afa4692b7ecd6eefea3cc3c3de7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elementu (aplikacji ClickOnce)
 Określa rozszerzenie pliku do skojarzenia z aplikacją.  
@@ -54,7 +52,7 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
 ## <a name="remarks"></a>Uwagi  
  Ten element musi zawierać odwołanie do przestrzeni nazw XML "urn: schemas-microsoft-com:clickonce.v1". Jeśli `<fileAssociation>` element jest używany, musi występować po `<application>` elementu nadrzędnego [ \<zestawu > elementu](../deployment/assembly-element-clickonce-application.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nie spowoduje zastąpienie istniejącego skojarzenia plików. Jednak aplikacji ClickOnce, mogą zastąpić rozszerzenie pliku dla bieżącego użytkownika. Po odinstalowaniu tej aplikacji ClickOnce ClickOnce usuwa skojarzenie pliku dla użytkownika i skojarzenie dla poszczególnych komputerów active ponownie.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie spowoduje zastąpienie istniejącego skojarzenia plików. Jednak aplikacji ClickOnce, mogą zastąpić rozszerzenie pliku dla bieżącego użytkownika. Po odinstalowaniu tej aplikacji ClickOnce ClickOnce usuwa skojarzenie pliku dla użytkownika i skojarzenie dla poszczególnych komputerów active ponownie.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje `fileAssociation` elementów w aplikacji manifestu dla aplikacji edytora tekstu, wdrożenie za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ten przykładowy kod zawiera również [ \<pliku > Element](../deployment/file-element-clickonce-application.md) wymagane przez `defaultIcon` atrybutu.  

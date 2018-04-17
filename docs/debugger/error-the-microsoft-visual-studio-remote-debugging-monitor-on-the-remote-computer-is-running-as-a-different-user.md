@@ -1,11 +1,9 @@
 ---
-title: "Błąd: Program Microsoft Visual Studio Monitor debugera zdalnego na komputerze zdalnym pracuje jako inny użytkownik | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Błąd: Program Microsoft Visual Studio Monitor debugera zdalnego na komputerze zdalnym pracuje jako inny użytkownik | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - Remote Debugging Monitor
 - remote debugging, Remote Debugging Monitor
 - msvsmon.exe
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f6575dc0d0a71481efff1da7808c7fbc62f94e56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: aefcb3f358d6dc22b7ea8bcca1c43e79cd9c4414
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Błąd: Monitor debugera zdalnego Microsoft Visual (MSVSMON.EXE) na komputerze zdalnym pracuje jako inny użytkownik
 Podczas próby czy zdalne debugowanie, może pojawić się następujący komunikat o błędzie:  

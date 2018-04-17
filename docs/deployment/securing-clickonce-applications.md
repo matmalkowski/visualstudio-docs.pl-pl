@@ -1,12 +1,10 @@
 ---
 title: Zabezpieczanie aplikacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: "45"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikacje obowiązują ograniczenia zabezpieczeń dostępu kodu w programie .NET Framework, aby ograniczyć dostęp przez kod ma do chronionych zasobów i operacji. Z tego powodu, ważne jest, że rozumiesz konsekwencje zabezpieczenia dostępu kodu, aby zapisać Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednio. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje obowiązują ograniczenia zabezpieczeń dostępu kodu w programie .NET Framework, aby ograniczyć dostęp przez kod ma do chronionych zasobów i operacji. Z tego powodu, ważne jest, że rozumiesz konsekwencje zabezpieczenia dostępu kodu, aby zapisać Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednio. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.  
   
  Ponadto technologia ClickOnce używa certyfikatów w celu weryfikowania autentyczności wydawcy aplikacji oraz podpisywania aplikacji i manifestów wdrożenia, co ma na celu zagwarantowanie, że pliki nie zostały w nieuprawniony sposób zmodyfikowane. Podpisywanie to opcjonalny krok, który ułatwia zmienianie plików aplikacji po wygenerowaniu manifestów. Jednak bez podpisanych manifestów trudno jest zagwarantować, że instalator aplikacji nie zostanie zmodyfikowany w wyniku ataku przeprowadzonego przez osobę z wewnątrz organizacji. Z tego powodu zaleca się podpisywanie aplikacji i manifestów wdrożenia, ponieważ pomaga to w zabezpieczaniu aplikacji.  
   
@@ -45,11 +43,11 @@ ms.lasthandoff: 12/22/2017
  Uprawnienia domyślne są określane na podstawie lokalizacji, z której została wdrożona oryginalna wersja aplikacji; aktualizacje aplikacji będą dziedziczyć te uprawnienia. Jeśli aplikacja jest skonfigurowana do sprawdzania, czy w sieci Web lub lokalizacji sieciowej są dostępne aktualizacje, oryginalna instalacja może otrzymać uprawienia dla strefy Internet lub Intranet, a nie uprawnienia pełnego zaufania. Aby zapobiec monitowaniu użytkowników, administrator systemu może określić zasady wdrażania technologii ClickOnce definiujące określonego wydawcę aplikacji jako zaufane źródło. Na komputerach, na których zostaną wdrożone te zasady, uprawnienia będą udzielane automatycznie i użytkownicy nie będą monitowani. Aby uzyskać więcej informacji, zobacz [zaufane Omówienie wdrożenia aplikacji](../deployment/trusted-application-deployment-overview.md). Aby skonfigurować zaufane wdrożenie aplikacji, certyfikat można zainstalować na poziomie komputera lub przedsiębiorstwa. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Zasady zabezpieczeń dostępu kodu  
- Uprawnienia aplikacji są określane przez ustawienia [ \<trustinfo — > Element](../deployment/trustinfo-element-clickonce-application.md) elementu manifest aplikacji. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie generuje tych informacji zgodnie z ustawieniami projektu **zabezpieczeń** strony właściwości. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji otrzymuje tylko określone uprawnienia, które żądania. Na przykład w sytuacji, gdy dostęp do plików wymaga uprawnień pełnego zaufania, a aplikacja żąda uprawnienia dostępu do pliku, zostanie jej udzielone tylko uprawnienie dostępu do plików, a nie uprawnienia pełnego zaufania. Podczas tworzenia Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy upewnić się, że żądania tylko określone uprawnienia, które są wymagane przez aplikację. W większości przypadków można użyć stref Internet lub Lokalny intranet, aby ograniczyć aplikację do częściowego zaufania. Aby uzyskać więcej informacji, zobacz [porady: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Jeśli aplikacja wymaga uprawnień niestandardowych, można utworzyć strefę niestandardową. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Uprawnienia aplikacji są określane przez ustawienia [ \<trustinfo — > Element](../deployment/trustinfo-element-clickonce-application.md) elementu manifest aplikacji. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie generuje tych informacji zgodnie z ustawieniami projektu **zabezpieczeń** strony właściwości. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji otrzymuje tylko określone uprawnienia, które żądania. Na przykład w sytuacji, gdy dostęp do plików wymaga uprawnień pełnego zaufania, a aplikacja żąda uprawnienia dostępu do pliku, zostanie jej udzielone tylko uprawnienie dostępu do plików, a nie uprawnienia pełnego zaufania. Podczas tworzenia Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, należy upewnić się, że żądania tylko określone uprawnienia, które są wymagane przez aplikację. W większości przypadków można użyć stref Internet lub Lokalny intranet, aby ograniczyć aplikację do częściowego zaufania. Aby uzyskać więcej informacji, zobacz [porady: ustawienie strefy zabezpieczeń dla aplikacji ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Jeśli aplikacja wymaga uprawnień niestandardowych, można utworzyć strefę niestandardową. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Dołączenie uprawnienia, które nie wchodzi w skład domyślnego zestawu uprawnień dla strefy, z której została wdrożona aplikacja, spowoduje, że użytkownik końcowy będzie w czasie instalacji lub aktualizacji monitowany o udzielenie uprawnienia. Aby zapobiec monitowaniu użytkowników, administrator systemu może określić zasady wdrażania technologii ClickOnce definiujące określonego wydawcę aplikacji jako zaufane źródło. Na komputerach, na których zostaną wdrożone te zasady, uprawnienia będą udzielane automatycznie i użytkownicy nie będą monitowani.  
   
- Deweloper jest odpowiedzialny za zagwarantowanie, że jego aplikacja będzie działać z odpowiednimi uprawnieniami. Jeśli aplikacja w czasie wykonywania zażąda uprawnień spoza strefy, może wystąpić wyjątek zabezpieczeń. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Umożliwia debugowanie aplikacji w strefie zabezpieczeń docelowej. i zawiera informacje pomocne w tworzeniu bezpiecznych aplikacji. Aby uzyskać więcej informacji, zobacz [porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Deweloper jest odpowiedzialny za zagwarantowanie, że jego aplikacja będzie działać z odpowiednimi uprawnieniami. Jeśli aplikacja w czasie wykonywania zażąda uprawnień spoza strefy, może wystąpić wyjątek zabezpieczeń. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia debugowanie aplikacji w strefie zabezpieczeń docelowej. i zawiera informacje pomocne w tworzeniu bezpiecznych aplikacji. Aby uzyskać więcej informacji, zobacz [porady: debugowanie aplikacji ClickOnce z ograniczonymi uprawnieniami](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Aby uzyskać więcej informacji o zabezpieczeniach dostępu kodu i ClickOnce, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
@@ -63,10 +61,10 @@ ms.lasthandoff: 12/22/2017
 ## <a name="aspnet-form-based-authentication"></a>Uwierzytelnianie oparte na formularzach ASP.NET  
  Jeśli chcesz kontrolować wdrożeń, które każdy użytkownik może uzyskać dostęp, należy włączyć anonimowy dostęp do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje wdrożone na serwerze sieci Web. Zamiast tego należy umożliwić użytkownikom dostęp do zainstalowanych wdrożeń na podstawie tożsamości użytkownika, używając uwierzytelniania systemu Windows.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nie obsługuje uwierzytelnianie oparte na formularzach ASP.NET, ponieważ używa ona trwałe pliki cookie; te stanowią zagrożenie dla bezpieczeństwa, ponieważ znajdują się w pamięci podręcznej programu Internet Explorer i może być zaatakowane. W związku z tym jeśli wdrażasz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, żadnym scenariuszu uwierzytelniania, oprócz uwierzytelniania systemu Windows nie jest obsługiwany.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie obsługuje uwierzytelnianie oparte na formularzach ASP.NET, ponieważ używa ona trwałe pliki cookie; te stanowią zagrożenie dla bezpieczeństwa, ponieważ znajdują się w pamięci podręcznej programu Internet Explorer i może być zaatakowane. W związku z tym jeśli wdrażasz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, żadnym scenariuszu uwierzytelniania, oprócz uwierzytelniania systemu Windows nie jest obsługiwany.  
   
 ## <a name="passing-arguments"></a>Przekazywanie argumentów  
- Kwestią dodatkowe zabezpieczenia występuje, gdy trzeba przekazać argumenty do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Umożliwia deweloperom podać ciąg zapytania, aby aplikacje wdrożone za pośrednictwem sieci Web. Ciąg zapytania ma formę serii par nazwa-wartość umieszczonych na końcu adresu URL używanego do uruchamiania aplikacji:  
+ Kwestią dodatkowe zabezpieczenia występuje, gdy trzeba przekazać argumenty do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Umożliwia deweloperom podać ciąg zapytania, aby aplikacje wdrożone za pośrednictwem sieci Web. Ciąg zapytania ma formę serii par nazwa-wartość umieszczonych na końcu adresu URL używanego do uruchamiania aplikacji:  
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   

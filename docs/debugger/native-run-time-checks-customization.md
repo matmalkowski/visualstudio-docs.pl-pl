@@ -1,13 +1,10 @@
 ---
-title: "Natywny środowiska wykonawczego sprawdza dostosowania | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Natywny środowiska wykonawczego sprawdza dostosowania | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - customizing CRT error checking
 - native run-time checks, customizing
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c0318a5a711fd99338fb3d4e812cb3b07c449fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-run-time-checks-customization"></a>Dostosowanie macierzystego sprawdzania w trakcie wykonywania
 Podczas kompilacji z **/RTC** (sprawdzania w trakcie wykonywania) lub użyj `runtime_checks` pragma, biblioteki wykonawczej języka C zapewnia macierzystego sprawdzania w trakcie wykonywania. W niektórych przypadkach można dostosować sprawdzanie czasu wykonywania:  
@@ -58,7 +54,7 @@ Podczas kompilacji z **/RTC** (sprawdzania w trakcie wykonywania) lub użyj `run
  Jeśli używasz niestandardowego funkcję raportowania, należy użyć `_RTC_SetErrorType` do skojarzenia z typem raportu wystąpił błąd.  
   
 ## <a name="query-for-information-about-run-time-checks"></a>Zapytanie o informacji na temat sprawdzania w trakcie wykonywania  
- `_RTC_NumErrors`Zwraca liczbę typów błędów wykrytych przez sprawdzanie błędów czasu wykonywania. Aby uzyskać krótki opis każdego błędu, można pętli z zakresu od 0 do wartość zwracaną `_RTC_NumErrors`, przekazując wartość iteracji, aby `_RTC_GetErrDesc` na każdej pętli. Aby uzyskać więcej informacji, zobacz [_rtc_numerrors —](/cpp/c-runtime-library/reference/rtc-numerrors) i [_rtc_geterrdesc —](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
+ `_RTC_NumErrors` Zwraca liczbę typów błędów wykrytych przez sprawdzanie błędów czasu wykonywania. Aby uzyskać krótki opis każdego błędu, można pętli z zakresu od 0 do wartość zwracaną `_RTC_NumErrors`, przekazując wartość iteracji, aby `_RTC_GetErrDesc` na każdej pętli. Aby uzyskać więcej informacji, zobacz [_rtc_numerrors —](/cpp/c-runtime-library/reference/rtc-numerrors) i [_rtc_geterrdesc —](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Użyj macierzystego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)   

@@ -1,23 +1,21 @@
 ---
-title: "Bezpośrednie klawisze modyfikujące wyboru w programie Blend | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Bezpośrednie klawisze modyfikujące wyboru w programie Blend | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9845a7db8d71e802cc24160d16e5382717c0c28b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 416ef58413be9ca7d763eb0d1f32cb7fe3355be5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące narzędzie wyboru bezpośrednio w programie Blend
 Poniższa tabela zawiera listę skrótów, które umożliwiają zmodyfikuj istniejące ścieżki **Zaznaczanie bezpośrednie** narzędzie ![ ] (../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") . Aby dodać lub usunąć punkty na ścieżce, lub Dołącz dwa istniejące ścieżki, użyj **pióra** narzędzia.  

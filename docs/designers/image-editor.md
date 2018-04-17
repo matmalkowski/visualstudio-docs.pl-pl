@@ -1,26 +1,24 @@
 ---
-title: "Edytor obrazów | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Edytor obrazów | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
-caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 80dbd85aff0fa673297ad5899ca96abbc11d2510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-editor"></a>Edytor obrazów
 W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytor obrazów do wyświetlania i modyfikowania zasobów tekstury i obrazów.  
@@ -32,10 +30,10 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
   
 |Nazwa formatu|Rozszerzenie nazwy pliku|  
 |-----------------|-------------------------|  
-|Portable Network Graphics|PNG|  
+|Portable Network Graphics|.png|  
 |JPEG|jpg, JPEG, jpe, jfif|  
 |Bezpośrednie powierzchni rysowania|.DDS|  
-|Graphics Interchange Format|GIF|  
+|Graphics Interchange Format|.gif|  
 |Mapy bitowej|BMP, dib|  
 |Format TIF|tif, TIFF|  
 |TGA (Targa)|.TGA|  
@@ -105,7 +103,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
 |**Nieprawidłowe zaznaczenie**|Umożliwia wybór nieregularne obszaru obrazu. Po wybraniu regionu, można wycinanie, kopiowanie, przenoszenia, skalowania, Obróć, przerzuć lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|  
 |**Wybór Różdżka**|Umożliwia wybór obszaru podobnie kolorze obrazu. *Tolerancji*— to znaczy maksymalną różnicę między sąsiadujących ze sobą kolorów, w których są one uznawane za podobne — można skonfigurować, aby uwzględnić mniejszy lub szerszego zakresu kolorów podobne. Po wybraniu regionu, można wycinanie, kopiowanie, przenoszenia, skalowania, Obróć, przerzuć lub go usunąć. W przypadku aktywnego zaznaczenia narzędzi do rysowania dotyczą tylko wybranego regionu.|  
 |**Przesuwanie**|Umożliwia przenoszenie obrazu względem ramki okna. W **przesuwanie** tryb, wybierz punkt na obrazie, a następnie przenieś.<br /><br /> Możesz tymczasowo aktywować **przesuwanie** tryb, przytrzymując klawisz Ctrl.|  
-|**Powiększenie**|Umożliwia wyświetlanie mniej więcej szczegółów obrazu względem ramki okna. W **powiększenie** tryb, wybierz punkt na obrazie i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> Można powiększanie lub pomniejszanie, przytrzymując klawisz Ctrl podczas możesz użyć kółka myszy lub kliknij znak Plus (+) lub Minus (-).|  
+|**Zoom**|Umożliwia wyświetlanie mniej więcej szczegółów obrazu względem ramki okna. W **powiększenie** tryb, wybierz punkt na obrazie i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> Można powiększanie lub pomniejszanie, przytrzymując klawisz Ctrl podczas możesz użyć kółka myszy lub kliknij znak Plus (+) lub Minus (-).|  
 |**Powiększ do rzeczywistego rozmiaru**|Wyświetla obraz przy użyciu relacji między piksele obrazu i pikseli ekranu 1:1.|  
 |**Dopasuj widok do rozmiaru**|Wyświetla pełny obraz ramki okna.|  
 |**Powiększ do szerokości**|Wyświetla całą szerokość obrazu ramki okna.|  
@@ -129,7 +127,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
 |**Pędzel**|Używa zaznaczenie aktywnego koloru do rysowania pociągnięcie wygładzanie. Można ustawić kolor i grubość pociągnięć w **właściwości** okna.|  
 |**Aerografu**|Używa zaznaczenie aktywnego koloru do rysowania pociągnięcie wygładzanie miesza wraz z obrazu, który staje się bardziej nasycenia w funkcji czasu. Można ustawić kolor i grubość pociągnięć w **właściwości** okna.|  
 |**Kroplomierz**|Ustawia kolor wybranego piksela zaznaczenie aktywnego koloru.|  
-|**Wypełnienia**|Używa wybór kolorów active w celu wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienia wraz z każdego piksela podłączonego do niego pikseli tego samego koloru, którym jest ten sam kolor sam. W przypadku zastosowania wypełnienie wewnątrz aktywnego zaznaczenia dotyczy region jest ograniczane przez zaznaczenie.<br /><br /> Domyślnie zaznaczenie aktywnego koloru mieszania wraz z odpowiednim region obrazu zgodnie z jego składnika alfa. Aby użyć opcji aktywnego koloru zastąpić dotyczy regionu, naciśnij i przytrzymaj klawisz Shift, korzystając z narzędzia.|  
+|**wypełnienia**|Używa wybór kolorów active w celu wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienia wraz z każdego piksela podłączonego do niego pikseli tego samego koloru, którym jest ten sam kolor sam. W przypadku zastosowania wypełnienie wewnątrz aktywnego zaznaczenia dotyczy region jest ograniczane przez zaznaczenie.<br /><br /> Domyślnie zaznaczenie aktywnego koloru mieszania wraz z odpowiednim region obrazu zgodnie z jego składnika alfa. Aby użyć opcji aktywnego koloru zastąpić dotyczy regionu, naciśnij i przytrzymaj klawisz Shift, korzystając z narzędzia.|  
 |**Gumka**|Ustawia pikseli całkowicie przezroczysty kolor, jeśli obraz obsługuje kanał alfa. W przeciwnym razie Ustawia kolor tła active pikseli.|  
 |**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i szerokość konturu w **właściwości** okna.<br /><br /> Aby narysować podstawowy, który ma taki sam, szerokość i wysokość, naciśnij i przytrzymaj klawisz Shift podczas rysowania.|  
 |**Tekst**|Używa kolor pierwszego planu zaznaczenia do rysowania tekstu. Kolor tła jest określana przez opcję Kolor tła. Przezroczyste tło wartość alfa zaznaczenia kolor tła musi być 0. Gdy obszaru tekstu jest aktywny, można określić, czy tekst jest rysowany z pociągnięcie wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Italics**, lub **podkreślona**— w **właściwości** okna. Zawartość i wyglądu tekstu jest zakończona po obszaru tekstu nie są już aktywne.|  
@@ -144,10 +142,10 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
   
 |Narzędzie|Opis|  
 |----------|-----------------|  
-|**Ołówka**, **pędzla**, **aerografu**, **wiersza**, **prostokąt**, **prostokątzaokrąglony**, **Elipsy**, **tekstu**|Aby dopasować wybór aktywnego koloru wraz z obrazu, w **właściwości** okna, rozwiń węzeł **kanałów** grupa właściwości i zestaw **rysowania** wyboru na  **Alpha** kanału, a następnie narysuj normalnie.<br /><br /> Rysowanie za pomocą wyboru aktywnego koloru i pozostaw wartość alfa obrazu w miejscu, wyczyść **rysowania** wyboru z **alfa** kanału, a następnie narysuj normalnie.|  
-|**Wypełnienia**|Aby dopasować wybór aktywnego koloru wraz z obrazu, wystarczy wybrać obszar, aby wypełnić.<br /><br /> Aby użyć opcji aktywnego koloru — łącznie z wartością kanału alfa — Aby zastąpić obraz, naciśnij i przytrzymaj klawisz Shift, a następnie wybierz obszar, aby wypełnić.|  
+|**Ołówka**, **pędzla**, **aerografu**, **wiersza**, **prostokąt**, **prostokąt zaokrąglony** , **Elipsy**, **tekstu**|Aby dopasować wybór aktywnego koloru wraz z obrazu, w **właściwości** okna, rozwiń węzeł **kanałów** grupa właściwości i zestaw **rysowania** wyboru na  **Alpha** kanału, a następnie narysuj normalnie.<br /><br /> Rysowanie za pomocą wyboru aktywnego koloru i pozostaw wartość alfa obrazu w miejscu, wyczyść **rysowania** wyboru z **alfa** kanału, a następnie narysuj normalnie.|  
+|**wypełnienia**|Aby dopasować wybór aktywnego koloru wraz z obrazu, wystarczy wybrać obszar, aby wypełnić.<br /><br /> Aby użyć opcji aktywnego koloru — łącznie z wartością kanału alfa — Aby zastąpić obraz, naciśnij i przytrzymaj klawisz Shift, a następnie wybierz obszar, aby wypełnić.|  
   
-###  <a name="ImageProperties"></a>Właściwości obrazu  
+###  <a name="ImageProperties"></a> Właściwości obrazu  
  Można użyć **właściwości** okno, aby określić różne właściwości obrazu. Na przykład można ustawić właściwości szerokości i wysokości rozmiaru.  
   
  W poniższej tabeli opisano właściwości obrazu.  
@@ -208,7 +206,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../code-quality/inclu
 |CTRL|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|  
 |CTRL|SHIFT||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|  
   
-####  <a name="ToolProperties"></a>Właściwości narzędzia  
+####  <a name="ToolProperties"></a> Właściwości narzędzia  
  Gdy narzędzie jest zaznaczony, można użyć **właściwości** okno, aby określić szczegółowe informacje o jego wpływ na obrazie. Na przykład można ustawić grubość **ołówka** narzędzia lub kolor **pędzla** narzędzia.  
   
  Można ustawić zarówno kolor pierwszego planu i kolor tła. Obsługuje zarówno kanału alfa zapewnienie nieprzezroczystość zdefiniowane przez użytkownika. Ustawienia są stosowane do wszystkich narzędzi. Jeśli używasz myszy, lewego przycisku myszy odpowiada kolor pierwszego planu, a następnie prawym przyciskiem myszy odpowiada kolor tła.  

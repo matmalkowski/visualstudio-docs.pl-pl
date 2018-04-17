@@ -1,11 +1,8 @@
 ---
-title: "Powiązanie formantów WPF z zestawem danych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Powiązanie formantów WPF z zestawem danych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązanie formantów WPF z zestawem danych
 W tym przewodniku spowoduje utworzenie aplikacji WPF, który zawiera formanty powiązane z danymi. Formanty są powiązane z rekordów produktów, które znajdują się w zestawie danych. Zostanie również dodawanie przycisków do przeglądania produktów i Zapisz zmiany w rekordach produktu.  
@@ -183,11 +180,11 @@ Znajomość następujące pojęcia jest również przydatna, ale nie są wymagan
 7.  W **właściwości** okna, zaznacz pole wyboru obok pozycji **IsReadOnly** właściwości.  
   
 ## <a name="navigating-product-records"></a>Nawigowanie po rekordów produktu  
- Dodaj kod, który umożliwia przewijanie rekordów produktu za pomocą  **\<**  i  **>**  przycisków.  
+ Dodaj kod, który umożliwia przewijanie rekordów produktu za pomocą **\<** i **>** przycisków.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Aby umożliwić użytkownikom Przejdź rekordów produktu  
   
-1.  W projektancie, kliknij dwukrotnie  **<**  przycisk na powierzchni okna.  
+1.  W projektancie, kliknij dwukrotnie **<** przycisk na powierzchni okna.  
   
      Visual Studio otworzy plik CodeBehind i tworzy nowy `backButton_Click` programu obsługi zdarzeń dla <xref:System.Windows.Controls.Primitives.ButtonBase.Click> zdarzeń.  
   
@@ -201,7 +198,7 @@ Znajomość następujące pojęcia jest również przydatna, ale nie są wymagan
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Powrót do projektanta i kliknij dwukrotnie  **>**  przycisku.  
+4.  Powrót do projektanta i kliknij dwukrotnie **>** przycisku.  
   
 5.  Dodaj następujący kod do `nextButton_Click` obsługi zdarzeń:  
   
@@ -236,7 +233,7 @@ Dodaj kod, który umożliwia użytkownikom zapisać zmiany rekordów produktu za
   
     -   Pola tekstowe są wyświetlane dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma produktu 713 identyfikator i nazwa **Long kopertą Jersey Logo, S**.  
   
-    -   Możesz kliknąć  **>**  lub  **<**  przyciski poruszać się po inne rekordy produktu.  
+    -   Możesz kliknąć **>** lub **<** przyciski poruszać się po inne rekordy produktu.  
   
 2.  W jednym z rekordów produktu, zmień **rozmiar** wartość, a następnie kliknij przycisk **zapisać zmiany**.  
   

@@ -1,12 +1,10 @@
 ---
-title: "CA1816: Wywołaj GC. Metodę SuppressFinalize poprawnie | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'CA1816: Wywołaj GC. Metodę SuppressFinalize poprawnie | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Wywołaj poprawnie GC.SuppressFinalize
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   Wywołuje metodę <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> i przekazuje inną niż ta (Me w języku Visual Basic).  
   
 ## <a name="rule-description"></a>Opis reguły  
- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Metody umożliwia użytkownikom zwolnić zasoby w dowolnym momencie przed obiektu stać się dostępne dla wyrzucanie elementów bezużytecznych. Jeśli <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda jest wywoływana, on zwalniają zasoby obiektu. Dzięki temu finalizacji niepotrzebne. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>powinny wywoływać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , moduł zbierający elementy bezużyteczne nie wywołuje finalizatora obiektu.  
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Metody umożliwia użytkownikom zwolnić zasoby w dowolnym momencie przed obiektu stać się dostępne dla wyrzucanie elementów bezużytecznych. Jeśli <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda jest wywoływana, on zwalniają zasoby obiektu. Dzięki temu finalizacji niepotrzebne. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> powinny wywoływać <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> , moduł zbierający elementy bezużyteczne nie wywołuje finalizatora obiektu.  
   
  Aby zapobiec konieczności ponownego zaimplementowania typów pochodnych z finalizatory <xref:System.IDisposable> i wywołać go, niezapieczętowane typy bez finalizatory powinny wywoływać nadal <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   

@@ -1,30 +1,28 @@
 ---
-title: "Rozwiązywanie problemów dotyczących analizy kodu | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Rozwiązywanie problemów dotyczących analizy kodu | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a0773c429ad8e738e0de280b4fe2abbf2fa6e5c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d50bbe4a5969d0614370e0aa0e1a15455b6a458a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Rozwiązywanie problemów związanych z analizą kodu
 Ten temat zawiera informacje dotyczące rozwiązywania problemów następujące analizy kodu programu Visual Studio.  
   
 -   [Zmiany w Visual Studio 2010 reguły zestawu są nie zostaną uwzględnione w poprzednich wersjach programu Visual Studio](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a>Zmiany w Visual Studio 2010 reguły zestawu są nie zostaną uwzględnione w poprzednich wersjach programu Visual Studio  
+##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Zmiany w Visual Studio 2010 reguły zestawu są nie zostaną uwzględnione w poprzednich wersjach programu Visual Studio  
  Po utworzeniu zestawu reguł w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] zawierający zestaw reguł podrzędnych, zmiana zestawu reguł podrzędnych mogą nie zostać zastosowane w uruchamia analizy kodu na komputerach, które korzystają z wcześniejszych wersji programu Visual Studio. Aby rozwiązać ten problem, możesz wymusić ponowne zapisywanie adresów nadrzędnego zestawu reguł, który jest zestaw reguł, który zawiera zestaw reguł podrzędnych.  
   
 1.  Otwórz zestawu reguł nadrzędnego [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  

@@ -1,12 +1,10 @@
 ---
-title: "Przygotowanie debugowania: Typy projektów Visual C++ | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Przygotowanie debugowania: Typy projektów Visual C++ | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8cc51e55af477edfac65b79ca29e26b720510c55
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e02be24447d5383388be0a7208bf84e36333732f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Przygotowanie debugowania: Typy projektów Visual C++
 W tej sekcji opisano sposób debugowania typów podstawowych projektów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] szablony projektu.  
   
  Należy pamiętać, że tych typów projektów, które utworzyć biblioteki DLL jako ich dane wyjściowe zostały zgrupowane jako [debugowanie projektów DLL](../debugger/debugging-dll-projects.md) z powodu wspólne funkcje mają.  
   
-##  <a name="BKMK_In_this_topic"></a>W tym temacie  
+##  <a name="BKMK_In_this_topic"></a> W tym temacie  
  [Zalecane ustawienia właściwości](#BKMK_Recommended_Property_Settings)  
   
  [Projekty Win32](#BKMK_Win32_Projects)  
@@ -45,16 +43,16 @@ W tej sekcji opisano sposób debugowania typów podstawowych projektów utworzon
   
  [Aplikacje Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a>Zalecane ustawienia właściwości  
+##  <a name="BKMK_Recommended_Property_Settings"></a> Zalecane ustawienia właściwości  
  Taki sam sposób dla wszystkich niezarządzanych scenariuszach debugowania można ustawić niektórych właściwości. Poniższe tabele Wyświetl zalecane ustawienia właściwości. Ustawienia niewymienione w tym może się różnić między typami inny projekt niezarządzane. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Właściwości konfiguracji &#124; C/C++ &#124; Węzeł optymalizacji  
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Właściwości konfiguracji &#124; C/C++ &#124; węzła optymalizacji  
   
 |Nazwa właściwości|Ustawienie|  
 |-------------------|-------------|  
 |**Optymalizacja**|Ustaw **wyłączone (/ 0 d).** Kod zoptymalizowany jest trudniej debugowania, ponieważ nie odpowiadają wygenerowanego instrukcje bezpośrednio w kodzie źródłowym. Jeśli program zawiera usterkę, która jest wyświetlana tylko w zoptymalizowanym kodzie, możesz włączyć to ustawienie, ale należy pamiętać, że kodem przedstawionym w **dezasemblacji** okna jest generowany na podstawie zoptymalizowane źródła, które mogą być niezgodne elementy wyświetlane w źródle systemu Windows. Inne funkcje, takie jak wykonywanie krok po kroku, może nie działać zgodnie z oczekiwaniami.|  
   
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Właściwości konfiguracji &#124; Konsolidatora &#124; Debugowanie węzła  
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Właściwości konfiguracji &#124; konsolidatora &#124; węzła debugowania  
   
 |Nazwa właściwości|Ustawienie|  
 |-------------------|-------------|  
@@ -62,14 +60,14 @@ W tej sekcji opisano sposób debugowania typów podstawowych projektów utworzon
   
  [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a>Projekty Win32  
+##  <a name="BKMK_Win32_Projects"></a> Projekty Win32  
  Win32 — aplikacje są napisane w języka C lub C++ tradycyjnych programów systemu Windows. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest prosta.  
   
  Win32 — aplikacje obejmują aplikacje MFC i ATL projektów. Użyj interfejsów API systemu Windows i może używać MFC lub ATL, ale nie należy używać środowisko uruchomieniowe języka wspólnego (CLR). One jednak wywołać kodu zarządzanego, która używa środowiska CLR.  
   
  W poniższej procedurze wyjaśniono sposób debugowania projektu Win32 z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Innym sposobem debugowania aplikacji Win32 jest uruchomienie aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i Dołącz do niej. Aby uzyskać więcej informacji, zobacz [dołączyć do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>Debugowanie aplikacji C lub C++ Win32  
+###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Debugowanie aplikacji C lub C++ Win32  
   
 1.  Otwórz projekt w programie Visual Studio.  
   
@@ -77,7 +75,7 @@ W tej sekcji opisano sposób debugowania typów podstawowych projektów utworzon
   
 3.  Debugowanie za pomocą techniki opisane w [podstawy debugera](../debugger/debugger-basics.md).  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>Aby ręcznie ustawić konfiguracji debugowania  
+###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Aby ręcznie ustawić konfiguracji debugowania  
   
 1.  Na **widoku** menu, kliknij przycisk **strony właściwości**.  
   
@@ -99,7 +97,7 @@ W tej sekcji opisano sposób debugowania typów podstawowych projektów utworzon
   
  [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Aplikacje Windows Forms (.NET)  
+##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikacje Windows Forms (.NET)  
  **Aplikacji formularzy systemu Windows (.NET)** szablon tworzy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikacji formularzy systemu Windows. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie projektu aplikacji Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przebiega podobnie jak w zarządzanych aplikacjach formularzy systemu Windows.  

@@ -1,27 +1,23 @@
 ---
-title: "Lista zdarzeń grafiki | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Lista zdarzeń grafiki | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Użyj listy zdarzeń grafiki w analizatora grafiki programu Visual Studio do eksplorowania zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramka gry lub aplikacji.  
@@ -75,8 +71,8 @@ Użyj listy zdarzeń grafiki w analizatora grafiki programu Visual Studio do eks
 |----------|-----------------------|  
 |(Brak ikony)|Zdarzenia ogólne<br /> Wszystkie zdarzenia, które nie jest zdarzeń zdefiniowanych przez użytkownika, grupy zdarzeń zdefiniowanych przez użytkownika lub rysowania zdarzeń.|  
 |![Ikona zdarzenia rysowania](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Zdarzenie rysowania<br /> Oznacza zdarzenie rysowania, który wystąpił podczas przechwyconej ramce.|  
-|![&#45;użytkownika; Ikona znacznika zdarzeń zdefiniowanych](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupa zdarzeń zdefiniowanych przez użytkownika<br /> Grupuje pokrewne zdarzenia, zgodnie z definicją w aplikacji.|  
-|![&#45;użytkownika; Ikona znacznika zdarzeń zdefiniowanych](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Znacznik zdarzeń zdefiniowanych przez użytkownika<br /> Oznacza określonej lokalizacji, zgodnie z definicją w aplikacji.|  
+|![Użytkownik&#45;zdefiniowane Ikona znacznika zdarzenia](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupa zdarzeń zdefiniowanych przez użytkownika<br /> Grupuje pokrewne zdarzenia, zgodnie z definicją w aplikacji.|  
+|![Użytkownik&#45;zdefiniowane Ikona znacznika zdarzenia](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Znacznik zdarzeń zdefiniowanych przez użytkownika<br /> Oznacza określonej lokalizacji, zgodnie z definicją w aplikacji.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Oznaczanie zdarzeń zdefiniowanych przez użytkownika w aplikacji  
  Zdarzenia zdefiniowane przez użytkownika są specyficzne dla aplikacji. Można używać ich do skorelowania istotnych zdarzeń występujących w aplikacji ze zdarzeniami w listy zdarzeń grafiki. Na przykład można utworzyć zdarzenia zdefiniowane przez użytkownika grup w celu zorganizowania zdarzenia powiązane — takich jak te, które renderują interfejsu użytkownika — na grupy i hierarchie są tak, aby łatwiej przeglądać listę zdarzeń, lub można utworzyć znaczniki, gdy niektóre rodzaje obiektów rysowane, dzięki czemu można łatwo znaleźć listy zdarzeń grafiki wydarzenia.  
@@ -106,7 +102,7 @@ Użyj listy zdarzeń grafiki w analizatora grafiki programu Visual Studio do eks
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Zawiera zasób historii Visual Studio 2017 i większa **historii zasobów** okna.  Wybieranie ikona monitorowania ![ikona monitorowania](media/gfx_watch.png) obok wpisu w **listy zdarzeń** powoduje wyświetlenie okna **historii zasobów** okna pokazano poniżej:
+## Zawiera zasób historii Visual Studio 2017 i większa **historii zasobów** okna.  Wybieranie ikona monitorowania ![ikona monitorowania](media/gfx_watch.png) obok wpisu w **listy zdarzeń** powoduje wyświetlenie okna **historii zasobów** okna pokazano poniżej:
 
 ![Historia zasobów](media/gfx_diag_resource_history.png)
 

@@ -1,12 +1,10 @@
 ---
-title: "Porady: wychodzenia z kodu zarządzanego gdy ramek natywnych brakuje oknie stosu wywołań | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: wychodzenia z kodu zarządzanego gdy ramek natywnych brakuje oknie stosu wywołań | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -21,18 +19,17 @@ helpviewer_keywords:
 - stepping, out of managed code
 - managed code, stepping out of
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7599c99c9375cda7b5f24432db8c137c5c4357df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5c64016f5ca0613a2986ec8a0bf305d88ecffd64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Porady: wychodzenia z kodu zarządzanego gdy w oknie stosu wywołań brakuje ramek natywnych
 Jeśli kod ma ramek natywnych, które nie są widoczne w **stos wywołań** okna, wykonywanie krok po kroku z kodu zarządzanego może spowodować nieoczekiwane wyniki. Jako rozwiązanie alternatywne można użyć zamiast punkt przerwania **Wyjdź**.  

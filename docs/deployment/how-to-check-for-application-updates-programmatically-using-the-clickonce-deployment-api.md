@@ -1,12 +1,10 @@
 ---
-title: "Porady: sprawdzanie aktualizacji aplikacji programowo przy użyciu wdrażania interfejsu API ClickOnce | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: 'Porady: sprawdzanie aktualizacji aplikacji programowo przy użyciu wdrażania interfejsu API ClickOnce | Dokumentacja firmy Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Porady: sprawdzanie aktualizacji aplikacji w sposób programowy za pomocą wdrażania interfejsu API technologii ClickOnce
 ClickOnce udostępnia dwa sposoby aktualizacji aplikacji po jej wdrożeniu. W metodzie pierwszy można skonfigurować wdrożenie ClickOnce, aby sprawdzał dostępność aktualizacji w określonych odstępach czasu. W drugiej metody, można napisać kod, który używa <xref:System.Deployment.Application.ApplicationDeployment> klasy, aby wyszukać aktualizacje na podstawie zdarzenia, takie jak żądanie użytkownika.  
@@ -50,7 +48,7 @@ ClickOnce udostępnia dwa sposoby aktualizacji aplikacji po jej wdrożeniu. W me
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Aby wdrożyć aplikację, która sprawdza, czy aktualizacje programowo przy użyciu Mage.exe  
   
--   Postępuj zgodnie z instrukcjami dotyczącymi wdrażania aplikacji za pomocą Mage.exe zgodnie z objaśnieniem w [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Podczas wywoływania metody Mage.exe Aby wygenerować manifest wdrażania, upewnij się, że przełącznik wiersza polecenia `providerUrl`i określić adres URL, w którym ClickOnce ma sprawdzać dostępność aktualizacji. Jeśli aplikacja zostanie zaktualizowana z [http://www.adatum.com/MyApp](http://www.adatum.com/MyApp), na przykład połączenia, aby wygenerować manifest wdrażania może wyglądać następująco:  
+-   Postępuj zgodnie z instrukcjami dotyczącymi wdrażania aplikacji za pomocą Mage.exe zgodnie z objaśnieniem w [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Podczas wywoływania metody Mage.exe Aby wygenerować manifest wdrażania, upewnij się, że przełącznik wiersza polecenia `providerUrl`i określić adres URL, w którym ClickOnce ma sprawdzać dostępność aktualizacji. Jeśli aplikacja zostanie zaktualizowana z [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), na przykład połączenia, aby wygenerować manifest wdrażania może wyglądać następująco:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

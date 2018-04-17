@@ -1,12 +1,10 @@
 ---
-title: "Wyświetlanie wartości danych w edytorze kodu etykietek danych | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wyświetlanie wartości danych w edytorze kodu etykietek danych | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c098e4b4ae94c5145a193e1903aa04a0eb757b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w etykietek danych w edytorze kodu
 Etykietki danych Podaj wygodny sposób wyświetlania informacji na temat zmiennych w programie podczas debugowania. Etykietki danych działa tylko w trybie przerwania i tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania.
@@ -75,7 +73,7 @@ Etykietki danych Podaj wygodny sposób wyświetlania informacji na temat zmienny
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Aby rozwinąć zmiennej, aby zobaczyć jego elementy  
   
--   W etykietki danych, należy umieścić wskaźnik myszy  **+**  znak poprzedzający nazwę zmiennej.  
+-   W etykietki danych, należy umieścić wskaźnik myszy **+** znak poprzedzający nazwę zmiennej.  
   
     Zmienna rozwijany, aby wyświetlić jego elementy w formie drzewa.
 

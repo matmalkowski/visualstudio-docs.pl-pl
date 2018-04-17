@@ -1,11 +1,8 @@
 ---
-title: "Wypełnianie zbiorów danych przy użyciu TableAdapters | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Wypełnianie zbiorów danych przy użyciu TableAdapters | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: efd40aa9e702ce855438e29f65e5bcd221bae9a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zbiorów danych przy użyciu TableAdapters
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstawie co najmniej jednego zapytania lub procedur składowanych, które określisz. TableAdapters można również wykonywać dodawania, aktualizacji i usuwania bazy danych, aby zachować zmiany wprowadzone do zestawu danych. Można również wydać polecenia globalne, które nie są związane z żadną z tabel.  
@@ -120,10 +117,10 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych, na podstaw
   
 |Element członkowski|Opis|  
 |------------|-----------------|  
-|`UpdateAll`— Metoda|Zapisuje wszystkie dane ze wszystkich tabel danych.|  
-|`BackUpDataSetBeforeUpdate`Właściwość|Określa, czy należy utworzyć kopię zapasową zestawu danych, przed wykonaniem `TableAdapterManager.UpdateAll` metody. Wartość logiczna.|  
+|`UpdateAll` — Metoda|Zapisuje wszystkie dane ze wszystkich tabel danych.|  
+|`BackUpDataSetBeforeUpdate` Właściwość|Określa, czy należy utworzyć kopię zapasową zestawu danych, przed wykonaniem `TableAdapterManager.UpdateAll` metody. Wartość logiczna.|  
 |*tableName* `TableAdapter` właściwości|Reprezentuje `TableAdapter`. Wygenerowany `TableAdapterManager` zawiera właściwość dla każdego `TableAdapter` zarządza. Na przykład zestaw danych z tabeli Klienci i zamówienia jest generowana za pomocą `TableAdapterManager` zawierający `CustomersTableAdapter` i `OrdersTableAdapter` właściwości.|  
-|`UpdateOrder`Właściwość|Określa kolejność poszczególnych insert, update i polecenia usuwania. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, które wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych.|
+|`UpdateOrder` Właściwość|Określa kolejność poszczególnych insert, update i polecenia usuwania. Ustaw tę wartość na jedną z wartości w `TableAdapterManager.UpdateOrderOption` wyliczenia.<br /><br /> Domyślnie `UpdateOrder` ustawiono **InsertUpdateDelete**. Oznacza to, które wstawia, a następnie aktualizuje i usuwa są wykonywane dla wszystkich tabel w zestawie danych.|
 
 ## <a name="security"></a>Zabezpieczenia  
 Jeśli używasz polecenia danych z ustawioną właściwość CommandType <xref:System.Data.CommandType.Text>, należy dokładnie sprawdzić informacje wysyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą stanowić próbę wysyłania (Wstaw) zmodyfikowany lub dodatkowe instrukcje SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze Sprawdź, czy informacje są prawidłowe. Najlepszym rozwiązaniem jest zawsze używaj zapytań sparametryzowanych lub procedur składowanych, gdy jest to możliwe.  

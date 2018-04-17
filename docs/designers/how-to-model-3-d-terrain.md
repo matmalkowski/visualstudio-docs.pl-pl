@@ -1,23 +1,21 @@
 ---
 title: 'Porady: Model 3-terenu | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cccd65c62d8b5a0f75052c3121e313507ad5d8b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ec1cf2d86ddb052b1f12310fb80d192aee080596
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-model-3-d-terrain"></a>Porady: model terenu 3-D
 Ten dokument przedstawia sposób umożliwiają utworzenie modelu terenu 3-w edytorze modeli.  
@@ -39,7 +37,7 @@ Ten dokument przedstawia sposób umożliwiają utworzenie modelu terenu 3-w edyt
   
  Po zakończeniu modelu powinien wyglądać następująco:  
   
- ![3 &#45; sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")  
+ ![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")  
   
  Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.  
   
@@ -67,7 +65,7 @@ Ten dokument przedstawia sposób umożliwiają utworzenie modelu terenu 3-w edyt
   
  Model terenu zostało ukończone. Oto ponownie ostatecznego modelu z cieniowaniem Phong stosowane:  
   
- ![3 &#45; sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")  
+ ![3&#45;sceny D, pokazujący model terenu](../designers/media/digit-terrain-model.png "cyfrę terenu modelu")  
   
  Ten model terenu można użyć do zaprezentowania efekt gradientu programu do cieniowania, które jest opisane w [porady: tworzenie do cieniowania gradientu geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
