@@ -1,12 +1,10 @@
 ---
 title: 'Porady: Definiowanie typu elementu projektu SharePoint | Dokumentacja firmy Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 24ead19b6e79b2f6003847483877cdcaf3440890
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4a0470e84b6c85fdb0786cdee27a2d208a594c0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Porady: definiowanie typu elementu projektu SharePoint
   Definiowanie typu elementu projektu, gdy chcesz utworzyć niestandardowego elementu projektu SharePoint. Aby uzyskać więcej informacji, zobacz [Definiowanie typów elementów projektu SharePoint niestandardowe](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
@@ -41,11 +40,11 @@ ms.lasthandoff: 01/10/2018
   
 4.  Do klasy, Dodaj następujące atrybuty:  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>., Ten atrybut umożliwia Visual Studio, aby odnaleźć i załadować Twojego <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> typu konstruktora atrybutu.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Ten atrybut umożliwia Visual Studio, aby odnaleźć i załadować Twojego <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji. Przekaż <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> typu konstruktora atrybutu.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>., W definicji typu elementu projektu ten atrybut określa identyfikator ciągu dla nowego elementu projektu. Zalecane jest użycie formatu *nazwa firmy*. *Nazwa funkcji* można mieć pewność, że wszystkie elementy projektu mają unikatową nazwę.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. W definicji typu elementu projektu ten atrybut określa identyfikator ciągu dla nowego elementu projektu. Zalecane jest użycie formatu *nazwa firmy*. *Nazwa funkcji* można mieć pewność, że wszystkie elementy projektu mają unikatową nazwę.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>., Ten atrybut Określa ikonę dla tego elementu projektu w **Eksploratora rozwiązań**. Ten atrybut jest opcjonalna. Jeśli nie zastosować do klasy, Visual Studio Wyświetla domyślną ikonę dla elementu projektu. Jeśli ten atrybut zostanie ustawiony, należy przekazać w pełni kwalifikowana nazwa ikony lub mapy bitowej osadzonego w tym zestawem.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Ten atrybut Określa ikonę dla tego elementu projektu w **Eksploratora rozwiązań**. Ten atrybut jest opcjonalna. Jeśli nie zastosować do klasy, Visual Studio Wyświetla domyślną ikonę dla elementu projektu. Jeśli ten atrybut zostanie ustawiony, należy przekazać w pełni kwalifikowana nazwa ikony lub mapy bitowej osadzonego w tym zestawem.  
   
 5.  W implementacji <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metody, użyj członkami *projectItemTypeDefinition* parametru Definiowanie zachowania typu elementu projektu. Ten parametr jest <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> obiekt, który zapewnia dostęp do zdarzeń zdefiniowanych w <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfejsów. Aby uzyskać dostęp do określonego wystąpienia typu elementu projektu, obsługę <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> zdarzenia, takie jak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> i <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
   

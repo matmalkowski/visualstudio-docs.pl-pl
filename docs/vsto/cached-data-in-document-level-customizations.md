@@ -1,12 +1,10 @@
 ---
 title: Buforowane dane w dostosowaniach na poziomie dokumentu | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dane z pamięci podręcznej dostosowywane na poziomie dokumentu
   Podstawowym celem dostosowań na poziome dokumentu jest do oddzielania danych z widoku w dokumentach pakietu Office. Danych odwołuje się do informacji przechowywanych w dokumencie, łącznie z liczb i tekstu. Widok odwołuje się do interfejsu użytkownika i model obiektów programu Microsoft Office Word i Microsoft Office Excel.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Aby uzyskać więcej informacji o dostosowywaniu na poziomie dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) i [architektura dostosowań na poziome dokumentu](../vsto/architecture-of-document-level-customizations.md).  
+ Aby uzyskać więcej informacji o dostosowywaniu na poziomie dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [architektura poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>Omówienie modelu programowania dane z pamięci podręcznej  
  Wyspy danych może zawierać dowolny obiekt w rozwiązaniu spełnia określone wymagania. Te obiekty obejmują <xref:System.Data.DataSet> obiektów, <xref:System.Data.DataTable> obiektów, a drugi obiekt, który może być serializowany przez <xref:System.Xml.Serialization.XmlSerializer> klasy. Aby uzyskać więcej informacji, zobacz zobacz [buforowanie danych](../vsto/caching-data.md).  

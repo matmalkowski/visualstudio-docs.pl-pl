@@ -1,12 +1,10 @@
 ---
-title: "Zabezpieczenia dla rozwiązań SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Zabezpieczenia dla rozwiązań SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia dla rozwiązań SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zawiera następujące funkcje w celu poprawy zabezpieczeń aplikacji programu SharePoint.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zawiera następujące funkcje w celu poprawy zabezpieczeń aplikacji programu SharePoint.  
   
 ## <a name="safe-control-entries"></a>Wpisy kontroli bezpieczne  
  Każdy element projektu SharePoint utworzone w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma **bezpieczne wpisy kontroli** właściwość, która reprezentuje sejfie formanty kolekcji. Jego **bezpieczne** podwłaściwości umożliwia określenie formantów, które należy wziąć pod uwagę bezpieczne. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [określenie bezpiecznych składników Web Part](http://go.microsoft.com/fwlink/?LinkId=177521).  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  *Skrypt iniekcji* jest wstawienie potencjalnie złośliwego kodu do formantów lub strony sieci Web. Aby lepiej chronić witryny programu SharePoint 2010, przed uruchomienie skryptu, współautorzy nie można wyświetlić ani edytować części sieci Web lub ich właściwości domyślnie. To zachowanie jest kontrolowana przez SafeControl — atrybut o nazwie SafeAgainstScript. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], atrybut ten element projektu **bezpieczne wpisy kontroli** podwłaściwości **bezpieczne skryptu przed**. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [porady: Oznacz kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Kontrola konta użytkownika 7 Vista i Windows  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] dołączyć do nich to funkcja zabezpieczeń, znane jako kontroli konta użytkownika (UAC). Umożliwiające tworzenie rozwiązań programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systemów kontroli konta użytkownika, użytkownik musi uruchomić [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] administrator systemu. Z **Start** menu, otwórz menu skrótów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wybierz pozycję **Uruchom jako administrator**.  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] dołączyć do nich to funkcja zabezpieczeń, znane jako kontroli konta użytkownika (UAC). Umożliwiające tworzenie rozwiązań programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] i [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systemów kontroli konta użytkownika, użytkownik musi uruchomić [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] administrator systemu. Z **Start** menu, otwórz menu skrótów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], a następnie wybierz pozycję **Uruchom jako administrator**.  
   
  Aby skonfigurować [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] skrót do zawsze Uruchom jako administrator, otwórz menu skrótów, wybierz pozycję **właściwości**, wybierz **zaawansowane** przycisk **właściwości**— okno dialogowe, a następnie wybierz **Uruchom jako administrator** pole wyboru.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Utworzenie elementu szablonów i szablonów projektu dla elementów projektu SharePoint | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Utworzenie elementu szablonów i szablonów projektu dla elementów projektu SharePoint | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Tworzenie szablonów elementów i szablonów projektu dla elementów projektu SharePoint
   Podczas definiowania niestandardowego typu elementu projektu SharePoint można skojarzyć go z elementu lub szablon projektu, dzięki czemu inne deweloperzy mogą używać elementu projektu w programie Visual Studio. Można również utworzyć Kreatora szablonu.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  Szablony elementów i szablonów projektu są pliki zip, które zawierają pliki, które są używane przez program Visual Studio do tworzenia projektu lub elementu projektu. Aby uzyskać więcej informacji na temat podstawy szablonów elementów i szablonów projektu, zobacz [szablony tworzenie projektów i elementów](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a>Tworzenie szablonów elementów  
+##  <a name="creatingitemtemplates"></a> Tworzenie szablonów elementów  
  Podczas tworzenia szablonu elementów dla elementu projektu SharePoint są niektóre pliki, które są zawsze wymagane i opcjonalne pliki, które mogą być używane przez niektórych typów elementów projektu. Aby uzyskać wskazówki, który demonstruje sposób definiowania typu elementu projektu SharePoint i utworzyć szablon elementu dla niego, zobacz [wskazówki: Tworzenie elementu projektu akcji niestandardowych z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  W poniższej tabeli wymieniono pliki wymagane do utworzenia szablonu elementów dla elementu projektu SharePoint.  
