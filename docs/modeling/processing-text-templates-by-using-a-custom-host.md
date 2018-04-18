@@ -2,23 +2,21 @@
 title: Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: af3e5b50095b30a912f6de7b67ba8a40f99127f8
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: aac285701dae7c17d9398de7de0f778530a0e5ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
 *Transformacji szablonu tekstowego* przetworzyć przyjmuje *szablonu tekstowego* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. Możesz wywołać aparat przekształcania tekstu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia, lub z poziomu aplikacji autonomicznej uruchomiona na komputerze, na którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany. Jednak należy podać *hosta tworzenia szablonów tekstowych*. Ta klasa łączy szablon ze środowiskiem, znajdując zasoby, takie jak zestawy i dołączane pliki, oraz zajmując się obsługą danych wyjściowych i komunikatów o błędach.  

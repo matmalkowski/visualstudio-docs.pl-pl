@@ -328,7 +328,7 @@ Jeśli chcesz poznać zależności w kodzie wizualizacji je przez utworzenie map
 
 -   Wyłączanie automatycznego dodawania elementów nadrzędnych z **obejmują nadrzędnych** przycisk na pasku narzędzi mapy kodu.  
 
--   Przeprowadź edycję pliku mapy kodu bezpośrednio do usuń węzły i łącza, które nie są potrzebne. Zmiana mapy nie wpływa na kod źródłowy. Zobacz [mapy Dostosuj kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Przeprowadź edycję pliku mapy kodu bezpośrednio do usuń węzły i łącza, które nie są potrzebne. Zmiana mapy nie wpływa na kod źródłowy. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Przyciski pominięcia kompilacji i obejmują nadrzędnych](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 

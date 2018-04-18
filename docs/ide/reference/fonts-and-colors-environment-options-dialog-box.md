@@ -1,12 +1,10 @@
 ---
-title: "Czcionki i kolory, środowisko, opcje ― Okno dialogowe | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Czcionki i kolory, środowisko, opcje ― Okno dialogowe | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a089bc9fe61d1ddc8e4510c4da03235c7ab782ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia określenia niestandardowego schematu czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowane środowisko programistyczne (IDE). Dostęp do tego okna dialogowego, klikając **narzędzia / Opcje**, a następnie wybierając **środowiska / czcionki i kolory**. Jeśli ta strona nie ma na liście, wybierz **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
@@ -128,7 +126,7 @@ Wyświetla listę elementów, dla których można zmienić kolor pierwszego plan
 |**Obszar bez pokrycia**|Kod, który ma nie pasuje do żadnego testu jednostkowego.|  
 |**Obszar częściowo pokryty**|Kod, który ma zostać częściowo objętych testu jednostkowego.|  
 |**Pokrycie dotknięciu obszaru**|Kod, który ma zostać całkowicie objęte testu jednostkowego.|  
-|**Komentarz CSS**|Komentarz w kaskadowych arkuszy stylów. Na przykład:<br /><br /> / * komentarza\*/|  
+|**Komentarz CSS**|Komentarz w kaskadowych arkuszy stylów. Na przykład:<br /><br /> / * komentarza \*/|  
 |**CSS — słowo kluczowe**|Słowa kluczowe w kaskadowego arkusza stylów.|  
 |**Nazwa właściwości CSS**|Nazwa właściwości, takie jak tła.|  
 |**Wartość właściwości CSS**|Wartość przypisana do właściwości, takie jak niebieski.|  
@@ -145,7 +143,7 @@ Wyświetla listę elementów, dla których można zmienić kolor pierwszego plan
 |**Tekst dezasemblacji**|Kolor tekstu używany do wyświetlania kod operacji i danych wewnątrz **dezasemblacji** okna.|  
 |**Wykluczone kodu**|Kod, który nie może być skompilowany, na warunkowego dyrektywy preprocesora takich jak `#if`.|  
 |**Identyfikator**|Identyfikatory w kodzie, takich jak nazwy klasy, nazwy metod i nazwy zmiennych.|  
-|**Słowo kluczowe**|Słowa kluczowe dla danego języka, które są zastrzeżone. Na przykład: klasa i przestrzeni nazw.|  
+|**Keyword**|Słowa kluczowe dla danego języka, które są zastrzeżone. Na przykład: klasa i przestrzeni nazw.|  
 |**Adres pamięci**|Kolor tekstu używany do wyświetlania kolumny adres wewnątrz **pamięci** okna.|  
 |**Zmienione pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz **pamięci** okna.|  
 |**Danych pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz M**szyfrowanie** okna.|  
@@ -192,7 +190,7 @@ Wyświetla listę elementów, dla których można zmienić kolor pierwszego plan
 |**Atrybut XML**|Nazwy atrybutów.|  
 |**Cudzysłowy atrybutu XML**|Znaki cudzysłowu dla atrybutów XML.|  
 |**Wartość atrybutu XML**|Zawartość atrybutów XML.|  
-|**Sekcja Cdata XML**|Zawartość \<! [ CDATA [...]] >.|  
+|**Sekcja Cdata XML**|Zawartość \<![CDATA[...]]>.|  
 |**Komentarz XML**|Zawartość \<!---->.|  
 |**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!--,-->,?\>, \<! [,]] >, a [,].|  
 |**Atrybut dokumentu XML**|Wartość dokumentacji xml atrybutów, takich jak \<param name = "I" > gdzie "I" pokolorowane.|  
@@ -230,7 +228,7 @@ Wyświetla listę elementów, dla których można zmienić kolor pierwszego plan
  **Bold**  
  Wybierz tę opcję, aby wyświetlić tekst wybranego **wyświetlania elementów** pogrubioną czcionką. Pogrubiony tekst jest łatwiej zidentyfikować w edytorze.  
   
- **Próbki**  
+ **próbki**  
  Przedstawia przykład styl czcionki, rozmiaru i schemat kolorów **Pokaż ustawienia dla** i **wyświetlania elementów** wybrane. To pole służy Podgląd wyników, Eksperymentując z różnymi opcjami formatowania.  
   
 ## <a name="see-also"></a>Zobacz też  

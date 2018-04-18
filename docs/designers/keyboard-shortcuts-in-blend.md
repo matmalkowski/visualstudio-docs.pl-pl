@@ -1,23 +1,21 @@
 ---
-title: "Skróty klawiaturowe w programie Blend | Dokumentacja firmy Microsoft"
-ms.custom: 
+title: Skróty klawiaturowe w programie Blend | Dokumentacja firmy Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 46fdb4f670bf6b893d721c01254ab780aa8ac405
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Skróty klawiaturowe w programie Blend
 ## <a name="project-shortcuts"></a>Skróty projektu  
@@ -28,7 +26,7 @@ ms.lasthandoff: 12/22/2017
 |Otwórz projekt lub rozwiązanie (nie lokacja)|CTRL + SHIFT + O|  
 |Zamknij rozwiązanie|CTRL + SHIFT + C|  
 |Zapisywanie kopii rozwiązania lub lokacji|CTRL + SHIFT + P|  
-|Dodaj istniejący element do projektu|CTRL + I|  
+|Dodaj istniejący element do projektu|CTRL+I|  
 |Dodaj odwołanie do biblioteki DLL (WPF)|ALT + SHIFT + R|  
 |Tworzenie projektu|CTRL + SHIFT + B|  
 |Testowanie projektu lub lokacji|F5|  
@@ -37,12 +35,12 @@ ms.lasthandoff: 12/22/2017
   
 |Wymagana czynność|Zrób to|  
 |----------------|-------------|  
-|Przełączanie między otwarte dokumenty|CTRL + TAB|  
+|Przełączanie między otwarte dokumenty|CTRL+TAB|  
 |Zapisuje aktywny dokument|CTRL+S|  
 |Zapisz wszystkie dokumenty|CTRL + SHIFT + S|  
 |Zamyka aktywny dokument.|CTRL + W|  
 |Zamknij wszystkie otwarte dokumenty|CTRL + SHIFT + W|  
-|Cofa ostatnią czynność.|CTRL + Z|  
+|Cofa ostatnią czynność.|CTRL+Z|  
 |Wykonaj ponownie ostatnią akcję, która została cofnąć|CTRL + Y lub CTRL + SHIFT + Z|  
 |Utwórz adnotację czasu projektowania|CTRL + SHIFT + T|  
 |Wytnij|CTRL+X|  
@@ -60,7 +58,7 @@ ms.lasthandoff: 12/22/2017
 |Duplikowanie obiektów|Naciśnij klawisz ALT, przeciągnij obiekt|  
 |Zmienić elementu nadrzędnego obiektu|Przeciągnij obiekt w panelu układu, a następnie naciśnij klawisz ALT|  
 |Edytowanie tekstu w formancie|F2 (ESC, aby zamknąć)|  
-|Edytuj formantu (WPF)|CTRL + E|  
+|Edytuj formantu (WPF)|CTRL+E|  
 |Wprowadź wybrane obiekty tej samej szerokości|CTRL + SHIFT + 1|  
 |Ustawianie wybrane obiekty tej samej wysokości|CTRL + SHIFT + 2|  
 |Mieć ten sam rozmiar wybranych obiektów|CTRL + SHIFT + 9|  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
 |Przenieś zaznaczony obiekt do przodu|CTRL + SHIFT +]|  
 |Przenieś do przodu|CTRL +]|  
 |Przenieś zaznaczony obiekt do tyłu|CTRL + SHIFT + [|  
-|Przesuń do tyłu|CTRL + [|  
+|Przesuń do tyłu|CTRL+[|  
 |Formantu użytkownika z zaznaczonych obiektów (WPF)|F8|  
 |Proporcje obiektów|Naciśnij i przytrzymaj klawisz SHIFT podczas przenoszenia obiektu|  
 |Obracanie obiektu o 15 stopni|Naciśnij i przytrzymaj klawisz SHIFT podczas obracania obiektu|  
@@ -86,11 +84,11 @@ ms.lasthandoff: 12/22/2017
 |Ścieżka wycinka zlecenia|CTRL + SHIFT + 7|  
 |Ścieżkę złożoną|CTRL + 8|  
 |Zwolnij złożony ścieżki|CTRL + SHIFT + 8|  
-|Blokowanie wybór|CTRL + L|  
+|Blokowanie wybór|CTRL+L|  
 |Odblokuj wszystkie obiekty|CTRL + SHIFT + L|  
 |Pokaż zaznaczenie|CTRL + T|  
 |Ukryj zaznaczenia|CTRL + 3|  
-|Wybierz wszystkie obiekty|CTRL + A|  
+|Wybierz wszystkie obiekty|CTRL+A|  
 |Wyczyść zaznaczenie wszystkich obiektów|CTRL + SHIFT + A|  
   
 ## <a name="view-shortcuts"></a>Wyświetlanie skrótów  
@@ -103,7 +101,7 @@ ms.lasthandoff: 12/22/2017
 |Powiększanie lub pomniejszanie w obszarze roboczym|Obróć koło myszy|  
 |Przenieś obszar roboczy w lewo lub w prawo|Klawisz SHIFT i Obróć koło myszy|  
 |Przenieś obszar roboczy w górę lub w dół|CTRL i kółka myszy obracania|  
-|Dopasuj zaznaczenie do rozmiaru ekranu|CTRL + 0|  
+|Dopasuj zaznaczenie do rozmiaru ekranu|CTRL+0|  
 |Wyświetlić obszar roboczy w rzeczywistym rozmiarze|CTRL + 1|  
 |Pokaż lub Ukryj dojść|F9|  
 |Pokaż lub Ukryj granicami obiektu|CTRL + SHIFT + H|  
