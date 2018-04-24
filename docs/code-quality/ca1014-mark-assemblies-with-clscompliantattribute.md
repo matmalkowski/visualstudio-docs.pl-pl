@@ -1,10 +1,8 @@
 ---
-title: 'CA1014: Oznacz zestawy atrybutem CLSCompliant | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1014
 - MarkAssembliesWithClsCompliant
@@ -17,41 +15,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0cd4c7927dea9ae876cb1cb53d44ddc7f9c6bba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc4d1309723fd6a7246d7e684fc91099ea841537
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Oznacz zestawy za pomocą CLSCompliantAttribute
-|||  
-|-|-|  
-|TypeName|MarkAssembliesWithClsCompliant|  
-|CheckId|CA1014|  
-|Kategoria|Microsoft.Design|  
-|Zmiana kluczowa|Bez podziału|  
-  
-## <a name="cause"></a>Przyczyna  
- Zestaw nie ma <xref:System.CLSCompliantAttribute?displayProperty=fullName> atrybut zastosowany do niego.  
-  
-## <a name="rule-description"></a>Opis reguły  
- The Common Language Specification (CLS) definiuje ograniczenia nazw, typów danych i reguł, z którymi muszą być zgodne zestawy, jeśli zostaną użyte w językach programowania. Dobry projekt mówią, że wszystkie zestawy jawnie wskazać zgodności ze specyfikacją CLS z <xref:System.CLSCompliantAttribute>. Jeśli ten atrybut nie jest obecny w zestawie, zestaw nie jest zgodne.  
-  
- Istnieje możliwość zgodne ze specyfikacją CLS zestaw zawiera typy, lub wpisz elementów członkowskich, które nie są zgodne.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, Dodaj atrybut do zestawu. Zamiast oznaczenie całego zestawu jako niezgodne, należy określić, typu lub elementy członkowskie typu nie są zgodne i Oznacz jako takie tych elementów. Jeśli to możliwe powinno zapewniać alternatywnym, zgodnym ze specyfikacją CLS dla niezgodne elementy członkowskie, umożliwiając najszerszych możliwych odbiorców dostęp do wszystkich funkcji programu zestawu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły. Jeśli nie chcesz, aby zestawu, aby było zgodne, zastosuj atrybut i ustaw dla niego wartość `false`.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono zestawu, który ma <xref:System.CLSCompliantAttribute?displayProperty=fullName> atrybut zastosowany, który deklaruje element zgodne ze specyfikacją CLS.  
-  
+|||
+|-|-|
+|TypeName|MarkAssembliesWithClsCompliant|
+|CheckId|CA1014|
+|Kategoria|Microsoft.Design|
+|Zmiana kluczowa|Bez podziału|
+
+## <a name="cause"></a>Przyczyna
+ Zestaw nie ma <xref:System.CLSCompliantAttribute?displayProperty=fullName> atrybut zastosowany do niego.
+
+## <a name="rule-description"></a>Opis reguły
+ The Common Language Specification (CLS) definiuje ograniczenia nazw, typów danych i reguł, z którymi muszą być zgodne zestawy, jeśli zostaną użyte w językach programowania. Dobry projekt mówią, że wszystkie zestawy jawnie wskazać zgodności ze specyfikacją CLS z <xref:System.CLSCompliantAttribute>. Jeśli ten atrybut nie jest obecny w zestawie, zestaw nie jest zgodne.
+
+ Istnieje możliwość zgodne ze specyfikacją CLS zestaw zawiera typy, lub wpisz elementów członkowskich, które nie są zgodne.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, Dodaj atrybut do zestawu. Zamiast oznaczenie całego zestawu jako niezgodne, należy określić, typu lub elementy członkowskie typu nie są zgodne i Oznacz jako takie tych elementów. Jeśli to możliwe powinno zapewniać alternatywnym, zgodnym ze specyfikacją CLS dla niezgodne elementy członkowskie, umożliwiając najszerszych możliwych odbiorców dostęp do wszystkich funkcji programu zestawu.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły. Jeśli nie chcesz, aby zestawu, aby było zgodne, zastosuj atrybut i ustaw dla niego wartość `false`.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie przedstawiono zestawu, który ma <xref:System.CLSCompliantAttribute?displayProperty=fullName> atrybut zastosowany, który deklaruje element zgodne ze specyfikacją CLS.
+
  [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
  [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:System.CLSCompliantAttribute?displayProperty=fullName>   
- [Niezależność od języka i składniki niezależne od języka](/dotnet/standard/language-independence-and-language-independent-components)
+ [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
+
+## <a name="see-also"></a>Zobacz też
+ <xref:System.CLSCompliantAttribute?displayProperty=fullName> [Niezależność od języka i elementy niezależne od języka](/dotnet/standard/language-independence-and-language-independent-components)
