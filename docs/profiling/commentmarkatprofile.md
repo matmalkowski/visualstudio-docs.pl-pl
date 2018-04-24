@@ -2,8 +2,7 @@
 title: CommentMarkAtProfile | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - CommentMarkAtProfile
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769c5a25a1e394becd935859a732e30ff1ed3220
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4484e5fdee3158b61e7d1ae6d33966141e2a6a5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metody wstawia wartość sygnatury czasowej, znacznik liczbowych i ciąg komentarza w pliku Vsp. Wartość znacznika czasu może być używana do synchronizowania zdarzenia zewnętrzne. Dla tego znaku i komentarza do wstawienia profilowanie dla wątku, który zawiera funkcję CommentMarkAtProfile musi mieć wartość ON.  

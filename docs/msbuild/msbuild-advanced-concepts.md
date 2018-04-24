@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c7fba8cdf6e27dd1fa582e366af3bce8232d3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da69a99e00c84514b51c958215baf6a87e498f17
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-advanced-concepts"></a>Pojęcia zaawansowane dotyczące programu MSBuild
 Dokumenty w tej sekcji opisano sposób korzystania z zaawansowanych technik zwiększające kompilacje, które są uruchamiane przy użyciu programu MSBuild.  

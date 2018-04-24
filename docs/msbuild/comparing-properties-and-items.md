@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b879a8c4767f87b15df4dab17291c6367fb6a91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="comparing-properties-and-items"></a>Porównanie właściwości i elementów
 Właściwości programu MSBuild i elementy jest używany zarówno do przekazywania informacji do zadania, oceny warunków i przechowywać wartości, które można odwoływać się w pliku projektu.  

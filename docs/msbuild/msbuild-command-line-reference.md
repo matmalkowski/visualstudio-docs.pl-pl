@@ -3,7 +3,7 @@ title: Informacje dotyczące wiersza polecenia programu MSBuild | Dokumentacja f
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - MSBuild, command line reference
 - msbuild.exe
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceecae39a04182b456c3b49d92c69a10297781bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 536a19e26fa935f26201692d539c6ecd51270d32
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-command-line-reference"></a>Informacje w wierszu polecenia programu MSBuild
 Korzystając z programu MSBuild.exe tworzenia pliku projektu lub rozwiązania, mogą obejmować kilka przełączników, aby określić różne aspekty procesu.  

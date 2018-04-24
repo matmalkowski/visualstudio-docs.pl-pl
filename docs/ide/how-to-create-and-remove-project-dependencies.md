@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9798df83536634797a101e09ca1638d6fa22e1f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b9a655f61c7e91a1626038781601401a539bbb1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Porady: tworzenie lub usuwanie zależności projektu
+# <a name="how-to-create-and-remove-project-dependencies"></a>Porady: tworzenie i usuwanie zależności projektu
 Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być konieczne, aby najpierw utworzyć niektórych projektów, aby wygenerować kod używany przez inne projekty. Gdy projekt korzysta z pliku wykonywalnego kod wygenerowany przez inny projekt, projekt, który generuje kod jest określany jako zależności projektu z projektu, który wykorzystuje kod. Takie relacji zależności można zdefiniować w **zależności projektu** okno dialogowe.  
 
 ### <a name="to-assign-dependencies-to-projects"></a>Aby przypisać zależności do projektów  
 
-1.  W Eksploratorze rozwiązań wybierz projekt.  
+1.  W **Eksploratora rozwiązań**, wybierz projekt.  
 
 2.  Na **projektu** menu, wybierz **zależności projektu**.  
 
@@ -48,7 +48,7 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
 
 ### <a name="to-remove-dependencies-from-projects"></a>Aby usunąć zależności z projektów  
 
-1.  W Eksploratorze rozwiązań wybierz projekt.  
+1.  W **Eksploratora rozwiązań**, wybierz projekt.  
 
 2.  Na **projektu** menu, wybierz **zależności projektu**.  
 
@@ -61,9 +61,9 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
 
 4.  W **zależy od** pola, usuń zaznaczenie pola wyboru obok inne projekty, które nie są już zależności tego projektu.  
 
-## <a name="see-also"></a>Zobacz też  
- [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Kompilowanie i tworzenia](../ide/compiling-and-building-in-visual-studio.md)   
- [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)   
- [Zarządzanie właściwościami projektu i rozwiązania](managing-project-and-solution-properties.md)
+## <a name="see-also"></a>Zobacz także  
+ [Tworzenie i wyczyścić projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
+ [Kompilowanie i kompilacji](../ide/compiling-and-building-in-visual-studio.md)   
+ [Zrozumienie konfiguracje kompilacji](../ide/understanding-build-configurations.md)   
+ [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
 

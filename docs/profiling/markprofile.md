@@ -2,8 +2,7 @@
 title: MarkProfile | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 113f71d7bf5be7953c4873725086f03905a21c54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5e4f93446c49120afb43202f457af39439ca1bc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` Metody wstawia znacznik profil w pliku Vsp. Profilowanie dla wątku zawierający `MarkProfile` funkcja musi być ON znaku do wstawienia.  

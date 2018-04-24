@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65aa95f5e4178805bc1b6d9cddbcd15fc9159c99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9dd1ce6aa91054ffee2f82386c016acc0fe5ba7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Porady: zmiana czcionek i kolorów w Visual Studio
 
@@ -33,7 +33,7 @@ Można dostosować kolor IDE ramki i narzędzia systemu windows w programie Visu
 
 1. Na liście opcji wybierz **środowiska** > **ogólne**.
 
-1. W **motywu kolorów** listy, wybierz albo domyślne **Blue** motywu, **ciemny** lub **światła**.
+1. W **motywu kolorów** listy, wybierz albo domyślne **Blue** motywu, **ciemny**, lub **światła**.
 
 > [!NOTE]
 > Po zmianie motywu kolorów tekst w IDE przywraca domyślne lub wcześniej dostosowane czcionki oraz rozmiary.
@@ -43,7 +43,7 @@ Można dostosować kolor IDE ramki i narzędzia systemu windows w programie Visu
 
 ## <a name="use-windows-high-contrast-colors"></a>Użyj kolorów systemu Windows duży kontrast
 
-Wybierz **lewy Alt** + **przesunięcia w lewo** + **PrtScn** kluczy.
+Wybierz **lewy Alt**+**przesunięcia w lewo**+**PrtScn** kluczy.
 
 > [!WARNING]
 > Ta opcja umożliwia ustawienie duży kontrast dla wszystkich aplikacji i interfejsu użytkownika na bieżącym komputerze.
@@ -61,7 +61,7 @@ Można zmienić rozmiar czcionki i tekst dla wszystkich systemów windows i okna
 1. W **Pokaż ustawienia dla** wybierz **czcionki środowiska**.
 
     > [!TIP]
-    > Jeśli chcesz zmienić czcionkę dla okna narzędzi tylko w **Pokaż ustawienia dla** wybierz **[wszystkie okna narzędzi tekstu]**.
+    > Jeśli chcesz zmienić czcionkę dla okna narzędzi tylko w **Pokaż ustawienia dla** wybierz **wszystkie okna narzędzi tekstu**.
 
 1. W **czcionki** wybierz czcionkę.
 
@@ -69,5 +69,6 @@ Można zmienić rozmiar czcionki i tekst dla wszystkich systemów windows i okna
 
 ## <a name="see-also"></a>Zobacz także
 
-[Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-[porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
+
+[Porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

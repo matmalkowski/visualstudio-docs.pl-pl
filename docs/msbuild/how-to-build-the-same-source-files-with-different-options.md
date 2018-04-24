@@ -10,16 +10,16 @@ helpviewer_keywords:
 - project properties, modifying
 - Hello World example [Visual Studio]
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1105c9122d47e405ad309531abd4913484991fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 Podczas tworzenia projektów często kompilacji tej samej składniki z opcjami różnych kompilacji. Na przykład można utworzyć kompilację debugowania z informacji o symbolach lub kompilacji wydania bez informacji o symbolu, ale z włączonymi optymalizacjami. Lub w przypadku kompilowania projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. W takich przypadkach większość opcji kompilacji nie zmieniają się; tylko kilka opcji nie zostaną zmienione na sterowanie konfigurację kompilacji. Z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], użyj właściwości i warunki do tworzenia konfiguracji różnych kompilacji.  

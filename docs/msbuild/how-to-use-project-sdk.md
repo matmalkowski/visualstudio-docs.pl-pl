@@ -6,16 +6,16 @@ ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
-author: jeffkl
-ms.author: jeffkl
-manager: angerlic
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a05f650a6547c9b855049f66e8e57e8d1c2c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Porady: Użyj zestawów SDK projektu programu MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 wprowadzono koncepcję "Projekt zestawu SDK", który upraszcza przy użyciu software development kit wymagających właściwości i obiekty docelowe do zaimportowania.

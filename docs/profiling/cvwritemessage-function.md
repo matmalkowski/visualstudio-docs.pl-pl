@@ -2,8 +2,7 @@
 title: Cvwritemessage — funkcja | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteMessageW
@@ -29,11 +28,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 633133212b0e296e69419b3e71fc27b172e7d2e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fdfe02fc58717d6e526e89a27dda0881e42d54a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage — Funkcja
 Zapisuje komunikat do pliku śledzenia wizualizatora współbieżności.  

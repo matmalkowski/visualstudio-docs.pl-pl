@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContext
 ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c564ea06adbb7e7edd957bf4fb23e30cdf2510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35fef17924d0ef4bc431742258d12b03667a25bc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Uruchom kontekst śledzenia.  

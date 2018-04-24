@@ -1,23 +1,20 @@
 ---
 title: Szablon projektu sieci web Django dla języka Python
 description: Przegląd szablonów programu Visual Studio dla aplikacji sieci web napisanych w języku Python za pomocą środowiska Django.
-ms.custom: ''
 ms.date: 07/13/2017
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 27218e6c1774c1d6e75894da854ee8e34392d49b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c5b64e6f14ef8a6d8015f27252374e54a6dd764
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 

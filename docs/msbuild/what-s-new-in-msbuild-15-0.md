@@ -5,16 +5,16 @@ ms.date: 03/01/2017
 ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a92dda7b9fe85f70fb6307410de91735cb9e43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1757dc778c45d3b9c6afd7f289b6598728dc7687
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-msbuild-15"></a>What's New in 15 MSBuild
 MSBuild jest teraz dostępna jako część [.NET Core SDK](https://www.microsoft.com/net/download/core) i można tworzyć projektów .NET Core w systemie Windows, macOS i Linux.  

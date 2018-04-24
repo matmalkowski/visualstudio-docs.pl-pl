@@ -3,7 +3,7 @@ title: Updatemanifest — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, UpdateManifest task
 - UpdateManifest task [MSBuild]
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58976744fddb59cfc9c6ef80de759a03196904e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9bc52232d8917835883c8390a24cb049b04fed94
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest — Zadanie
 Aktualizuje wybrane właściwości w manifeście i poddały.  

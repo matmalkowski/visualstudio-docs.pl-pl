@@ -3,7 +3,7 @@ title: Markupcompilepass1 — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], parameters
 - converting XAML projects to compiled binary format [WPF MSBuild]
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4f9216ac2a04a907e78c9119b06cebf929f729b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0abf8f5b2c77281325853f744f54513fb897ecc6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 — Zadanie
 

@@ -1,9 +1,9 @@
 ---
-title: Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio | Dokumentacja firmy Microsoft
-description: '{{SYMBOL ZASTĘPCZY}}'
+title: Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio
+description: Więcej informacji na temat narzędzia, których można użyć do wykrywania i zarządzanie instalacji programu Visual Studio na komputerach klienckich.
 ms.date: 08/14/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,15 +14,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 494292566772a392597f9689945ddb2d5221cade
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1701ff4d17815bc70444fe360ebf1acf61ea2af4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio
 
+Istnieje kilka narzędzi, których można użyć do wykrywania instalacji programu Visual Studio na komputerach klienckich i za zarządzanie instalacje programu.
+
 ## <a name="detecting-existing-visual-studio-instances"></a>Wykrywanie istniejącego wystąpienia programu Visual Studio
+
 Wprowadzono kilka narzędzi pomagających wykrywać i zarządzanie nimi zainstalowanych wystąpieniami programu Visual Studio na komputerach klienckich:
 
 * [VSWhere](https://github.com/microsoft/vswhere): plik wykonywalny wbudowanych w programie Visual Studio lub dostępne oddzielne dystrybucji, która pomaga znaleźć lokalizacji wszystkich wystąpień programu Visual Studio na określonym komputerze.
@@ -32,7 +35,8 @@ Wprowadzono kilka narzędzi pomagających wykrywać i zarządzanie nimi zainstal
 Ponadto [ustawienia konfiguracji API](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć własne narzędzia przeszukiwania wystąpieniami programu Visual Studio.
 
 ## <a name="using-vswhereexe"></a>Przy użyciu vswhere.exe
-`vswhere.exe` jest automatycznie uwzględnione w Visual Studio 2017 wersji 15,2 lub powyżej, lub użytkownik może go pobrać z [strony wersjach](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` można pobrać informacji na temat narzędzia pomocy. Na przykład to polecenie przedstawia wszystkich wersji programu Visual Studio, w tym starsze wersje produktu i uwzględniane wersje wstępne i umieszcza wyniki w formacie JSON:
+
+`vswhere.exe` jest automatycznie uwzględnione w programie Visual Studio 2017 wersji 15.2 lub nowszej lub użytkownik może go pobrać z [strony wersjach](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` można pobrać informacji na temat narzędzia pomocy. Na przykład to polecenie przedstawia wszystkich wersji programu Visual Studio, w tym starsze wersje produktu i uwzględniane wersje wstępne i umieszcza wyniki w formacie JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -43,6 +47,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Edycja rejestru dla wystąpienia programu Visual Studio
+
 W programie Visual Studio 2017 r ustawień rejestru są przechowywane w prywatnej lokalizacji, która umożliwia wielu wystąpień side-by-side tej samej wersji programu Visual Studio na tym samym komputerze.
 
 Jak te wpisy nie są przechowywane w rejestrze globalnej, istnieją specjalne instrukcje dotyczące używania Edytora rejestru, aby zmienić ustawienia rejestru:
@@ -55,8 +60,8 @@ Jak te wpisy nie są przechowywane w rejestrze globalnej, istnieją specjalne in
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-> [!NOTE]
-> `<config>` odnosi się do wystąpienia programu Visual Studio, który chcesz przeglądać.
+  > [!NOTE]
+  > `<config>` odnosi się do wystąpienia programu Visual Studio, który chcesz przeglądać.
 
 Pojawi się monit o podanie nazwy hive, która staje się nazwa sieci izolowanej hive. Po wykonaniu tej czynności można przeglądać rejestru w gałęzi izolowanego utworzony.
 
@@ -64,13 +69,16 @@ Pojawi się monit o podanie nazwy hive, która staje się nazwa sieci izolowanej
 > Przed ponownym uruchomieniu programu Visual Studio musi zwolnić gałąź izolowanym, utworzony. Aby to zrobić, wybierz Plik -> Zwolnij gałąź rejestru z poziomu menu głównego Regedit. (Jeśli nie zrobisz, następnie plik jest zablokowany i nie będzie można uruchomić programu Visual Studio)
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
+
 * [Przewodnik Administratorzy programu Visual Studio](visual-studio-administrator-guide.md)

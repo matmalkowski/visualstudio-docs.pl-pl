@@ -15,16 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a278a2206d7d2c5791a441552f30f196e925e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 Visual Studio hostów [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialny za projektu prawie każdego projektu w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mogą być pomyślnie użyć formatu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]nawet wtedy, gdy projektu zostało utworzone przez innego narzędzia i ma niestandardowy proces kompilacji.  
@@ -143,7 +143,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  W **Eksploratora rozwiązań**, otwórz menu skrótów projektu niedostępne, a następnie wybierz **Załaduj ponownie projekt**.  
   
 ## <a name="intellisense-and-validation"></a>Technologia IntelliSense i walidacja  
- Edytowanie plików projektu za pomocą edytora XML, IntelliSense i sprawdzanie poprawności jest wymuszany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plików schematów. Te pliki zostaną zainstalowane w pamięci podręcznej schematu, która znajduje się w  *\<katalogu instalacyjnego programu Visual Studio >*\Xml\Schemas\1033\MSBuild.  
+ Edytowanie plików projektu za pomocą edytora XML, IntelliSense i sprawdzanie poprawności jest wymuszany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plików schematów. Te pliki zostaną zainstalowane w pamięci podręcznej schematu, która znajduje się w  *\<katalogu instalacyjnego programu Visual Studio >* \Xml\Schemas\1033\MSBuild.  
   
  Podstawowe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] typy są definiowane w Microsoft.Build.Core.xsd i popularne typy używane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są zdefiniowane w Microsoft.Build.CommonTypes.xsd. Aby dostosować schematów, tak aby było możliwe IntelliSense i sprawdzanie poprawności dla nazwy typu elementu niestandardowego, właściwości i zadań, możesz edytować Microsoft.Build.xsd lub utworzyć własny schemat, który zawiera schematów CommonTypes lub Core. Jeśli utworzysz własny schemat, należy przekierować XML edytora, aby znaleźć za pomocą **właściwości** okna.  
   

@@ -1,5 +1,5 @@
 ---
-title: Jak korzystać z funkcji Otocz przez z fragmentów kodu | Dokumentacja firmy Microsoft
+title: Sposób korzystania z funkcji Otocz przez wstawki kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0081d0d0e417f57a5fe9f0e2f52bb4f319e35e9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 044eb79eec4d0ee4ee4684c2e01ea73a94fef7ba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Porady: Użyj Otocz wstawki kodu
 
@@ -26,7 +26,7 @@ Poniższe procedury opisują sposób korzystania z funkcji Otocz przez wstawki k
 
 1. W programie Visual Studio IDE Otwórz plik, który chcesz edytować.
 
-1. W edytorze kodu, zaznacz tekst otaczającego.
+1. W **edytora kodu**, zaznacz tekst, który ma przestrzenny.
 
 1. Typ **Ctrl**+**K**, **Ctrl**+**S**.
 
@@ -36,7 +36,7 @@ Poniższe procedury opisują sposób korzystania z funkcji Otocz przez wstawki k
 
 1. W programie Visual Studio IDE Otwórz plik, który chcesz edytować.
 
-1. W edytorze kodu, zaznacz tekst otaczającego.
+1. W **edytora kodu**, zaznacz tekst, który ma przestrzenny.
 
 1. Z **Edytuj** menu, wybierz opcję **IntelliSense** , a następnie wybierz **z funkcji Otocz przez** polecenia.
 
@@ -48,7 +48,7 @@ Poniższe procedury opisują sposób korzystania z funkcji Otocz przez wstawki k
 
 1. W programie Visual Studio IDE Otwórz plik, który chcesz edytować.
 
-1. W edytorze kodu, zaznacz tekst otaczającego.
+1. W **edytora kodu**, zaznacz tekst, który ma przestrzenny.
 
 1. Kliknij prawym przyciskiem myszy zaznaczonego tekstu, a następnie wybierz **z funkcji Otocz przez** polecenie z menu kontekstowego.
 
@@ -59,4 +59,4 @@ Poniższe procedury opisują sposób korzystania z funkcji Otocz przez wstawki k
 ## <a name="see-also"></a>Zobacz także
 
 [Wstawki kodu C#](../ide/visual-csharp-code-snippets.md)  
-[Selektor fragmentów kodu](../ide/reference/code-snippet-picker.md)
+[Selektor wstawek kodu](../ide/reference/code-snippet-picker.md)

@@ -1,6 +1,5 @@
 ---
-title: Generowanie tekstu czasu wykonywania z szablonów tekstowych T4 | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +16,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 30956435c321a45a3a1ee32a305080d35b073293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5cfc884cc595e1e95df4b309bfaeb0e12949d34
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 

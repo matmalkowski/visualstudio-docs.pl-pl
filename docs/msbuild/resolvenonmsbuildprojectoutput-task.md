@@ -3,7 +3,7 @@ title: Resolvenonmsbuildprojectoutput — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, ResolveNonMSBuildProjectOutput task
 - ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab0c330634fcd830e797ee5b94136532a4dd5bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f26798c4fd76cdb7ec06c843f50e177f94a68bb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput — Zadanie
 Określa pliki wyjściowe dla innych niż MSBuild odwołania do projektu.  

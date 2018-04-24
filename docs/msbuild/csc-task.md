@@ -3,7 +3,7 @@ title: CSC — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86a5aa1b9be17948ac735f7ede148f2a2d398f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d35f1dee5c2f3d4f91a6d59e001bc9f16fd7b52a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 Opakowuje CSC.exe i tworzy pliki wykonywalne (pliki .exe), bibliotek dołączanych dynamicznie (pliki dll) lub moduły kodu (pliki modułu .netmodule). Aby uzyskać więcej informacji o CSC.exe, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).  

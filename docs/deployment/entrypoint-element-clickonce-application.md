@@ -2,9 +2,8 @@
 title: '&lt;punkt wejścia&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - <entryPoint> element [ClickOnce application manifest]
 - manifests [ClickOnce], entryPoint element
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd263d8137b380519477d16079e8ed8b1547fbbe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: beb140a64a415ab1a42f8157e2fafb1d20f9569a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punkt wejścia&gt; elementu (aplikacji ClickOnce)
 Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana na komputerze klienckim.  
@@ -59,32 +58,32 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../d
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Opcjonalny. Ta wartość nie jest używana przez program .NET Framework.|  
+|`name`|Opcjonalna. Ta wartość nie jest używana przez program .NET Framework.|  
   
  `entryPoint` zawiera następujące elementy.  
   
 ## <a name="assemblyidentity"></a>element assemblyIdentity  
- Wymagany. Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ \<assemblyIdentity > elementu](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Wymagana. Rola `assemblyIdentity` i jego atrybuty jest zdefiniowany w [ \<assemblyIdentity > elementu](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  `processorArchitecture` Atrybutu tego elementu i `processorArchitecture` zdefiniowanych w atrybucie `assemblyIdentity` w innym miejscu w aplikacji manifestu musi być zgodna.  
   
 ## <a name="commandline"></a>Wiersz polecenia  
- Wymagany. Musi być elementem podrzędnym elementu `entryPoint` elementu. Nie ma elementów podrzędnych, a ma następujące atrybuty.  
+ Wymagana. Musi być elementem podrzędnym elementu `entryPoint` elementu. Nie ma elementów podrzędnych, a ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`file`|Wymagany. Lokalnego odwołania do zestawu uruchamiania dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ta wartość nie może zawierać ukośnika (/) ani ukośnika odwrotnego (\\) separatorów ścieżek.|  
-|`parameters`|Wymagany. Opisuje akcję wykonywaną z punktem wejścia. Jest jedyną poprawną wartością `run`; Jeśli zostanie podany ciąg pusty, `run` zakłada, że.|  
+|`file`|Wymagana. Lokalnego odwołania do zestawu uruchamiania dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ta wartość nie może zawierać ukośnika (/) ani ukośnika odwrotnego (\\) separatorów ścieżek.|  
+|`parameters`|Wymagana. Opisuje akcję wykonywaną z punktem wejścia. Jest jedyną poprawną wartością `run`; Jeśli zostanie podany ciąg pusty, `run` zakłada, że.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- Opcjonalny. Jeśli jest włączone, określa, czy to wdrożenie zawiera składnik, który będzie wdrażany w ramach hosta niestandardowego, a nie jest aplikacją samodzielną.  
+ Opcjonalna. Jeśli jest włączone, określa, czy to wdrożenie zawiera składnik, który będzie wdrażany w ramach hosta niestandardowego, a nie jest aplikacją samodzielną.  
   
  Jeśli ten element jest obecny, `assemblyIdentity` i `commandLine` elementy nie mogą również być obecne. Jeśli są one [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zgłosi błąd sprawdzania poprawności podczas instalacji.  
   
  Ten element ma żadnych atrybutów i elementów podrzędnych.  
   
 ## <a name="customux"></a>customUX  
- Opcjonalny. Określa, że aplikacja jest zainstalowany i obsługiwanego przez instalatora niestandardowego i nie utworzenia wpisu menu Start, skrótu lub Dodaj lub usuń wpis programy.  
+ Opcjonalna. Określa, że aplikacja jest zainstalowany i obsługiwanego przez instalatora niestandardowego i nie utworzenia wpisu menu Start, skrótu lub Dodaj lub usuń wpis programy.  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  

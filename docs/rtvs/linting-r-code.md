@@ -1,25 +1,24 @@
 ---
 title: Kod linting R
 description: Jak pracować z R, włącznie z opcjami linting obsługę linting kompilacji w Visual Studio.
-ms.custom: ''
 ms.date: 01/15/2018
-ms.technology:
-- devlang-r
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 dev_langs:
 - R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
-ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f36384e8e8c15210299e497ece67cf689a1a289d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Kod linting R w programie Visual Studio
 

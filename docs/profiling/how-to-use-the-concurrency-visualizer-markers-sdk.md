@@ -2,8 +2,7 @@
 title: 'Porady: Korzystanie ze znaczników wizualizatora współbieżności SDK | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 947649abaec3819fafec3fc83d596a84f0996ef5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 521b522ba6e18951b74d1febaaf8b3364bbd93b6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Porady: korzystanie ze znaczników wizualizatora współbieżności SDK
 W tym temacie przedstawiono sposób użycia zestawu wizualizatora współbieżności SDK do tworzenia zakresów i zapisać flagi, wiadomości i alerty.  

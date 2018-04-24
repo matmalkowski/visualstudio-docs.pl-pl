@@ -2,8 +2,7 @@
 title: 'Porady: Instalowanie autonomiczny profilera | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9ff72372c05f32973adefeaa5df746e541728e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Porady: instalowanie autonomiczny profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zawiera autonomiczny profilera, który można uruchomić bez konieczności instalowania na podstawie wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Ta sytuacja występuje, gdy komputer nie obsługuje lub nie może mieć zainstalowane środowisko deweloperskie. Na przykład nie należy instalować Środowisko deweloperskie na serwerze sieci Web w środowisku produkcyjnym.  

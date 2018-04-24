@@ -1,12 +1,9 @@
 ---
 title: Szybki Start - w klonowania repozytorium kodu języka Python
 description: W tym szybkiego startu tworzenia projektu języka Python w programie Visual Studio w klonowania repozytorium koans Python za pomocą programu Visual Studio Team Explorer.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80b840e14332498e86f7136f19ea6b7b106812b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: klonowanie repozytorium kodu języka Python w programie Visual Studio
 
@@ -28,7 +25,7 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
 2. Uruchom program Visual Studio.
 
-3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można nawiązać połączenia z usługi GitHub lub Visual Studio Team Services lub sklonować repozytorium. (Jeśli nie widzisz **Connect** strony pokazano poniżej, wybierz ikonę plug na górnym pasku narzędzi, który umożliwia przejście do strony.)
+3. Wybierz **Widok > Team Explorer** otworzyć **Team Explorer** okna, w którym można nawiązać połączenia z usługi GitHub lub Visual Studio Team Services lub sklonować repozytorium. (Jeśli nie widzisz **Connect** strony pokazano poniżej, wybierz ikonę plug na górnym pasku narzędzi, który umożliwia przejście do strony.)
 
     ![Zespół przedstawiający okno Eksploratora Visual Studio Team Services, GitHub i klonowanie repozytorium](media/team-explorer.png)
 
@@ -39,7 +36,7 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
 5. Po ukończeniu klonowania repozytorium nazwa pojawi się **lokalnego repozytoria Git** listy. Kliknij dwukrotnie tę nazwę, aby przejść do pulpitu nawigacyjnego repozytorium w **Team Explorer**.
 
-6. W obszarze **rozwiązań**, wybierz pozycję **nowy...** .
+6. W obszarze **rozwiązań**, wybierz pozycję **nowy**.
 
     ![Okno Eksploratora zespołu, tworzenia nowego projektu z klonu](media/team-explorer-new-project.png)
 
@@ -49,7 +46,7 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
 9. W **Eksploratora rozwiązań**, rozwiń węzeł `python3` węzła, kliknij prawym przyciskiem myszy `contemplate_koans.py`i wybierz **Ustaw jako plik uruchamiania**. W tym kroku opisano Visual Studio plik, który należy używać, gdy uruchamiania projektu.
 
-10. Wybierz **projektu > Koans właściwości...**  z menu wybierz **ogólne** , a następnie ustaw **katalog roboczy** do "python3". Ten krok jest niezbędny, ponieważ domyślnie program Visual Studio Ustawia katalog roboczy katalogu głównym projektu, a nie lokalizacja pliku uruchamiania (`python3\contemplate_koans.py`, który można wyświetlić w oknie właściwości projektu). Kod programu szuka pliku `koans.txt` folderu roboczego, tak zmieniając tę wartość jest widoczny błąd w czasie wykonywania.
+10. Wybierz **projektu > właściwości Koans** z menu wybierz **ogólne** , a następnie ustaw **katalog roboczy** do "python3". Ten krok jest niezbędny, ponieważ domyślnie program Visual Studio Ustawia katalog roboczy katalogu głównym projektu, a nie lokalizacja pliku uruchamiania (`python3\contemplate_koans.py`, który można wyświetlić w oknie właściwości projektu). Kod programu szuka pliku `koans.txt` folderu roboczego, tak zmieniając tę wartość jest widoczny błąd w czasie wykonywania.
 
     ![Ustawianie katalogu roboczego dla projektów języka Python](media/projects-set-working-directory.png)
 

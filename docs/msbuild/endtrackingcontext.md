@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - EndTrackingContext
 ms.assetid: c2c5d794-8dc8-4594-8717-70dc79a0e75d
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c64ad01018494d66ba181af371ae8cd15fb6f4d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 935df371b912d51ef6a5d88fdae4e9e11c449049
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Bieżący kontekst śledzenia end.  

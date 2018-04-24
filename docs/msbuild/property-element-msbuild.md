@@ -3,7 +3,7 @@ title: Property — Element (MSBuild) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - <Property> Element [MSBuild]
 - Property Element [MSBuild]
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fdabde0da74ca2ae0c7417c3cc0c82016b0149d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f98e1cc8b3ce016580e477dfa648a493df1c1e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="property-element-msbuild"></a>Property — Element (MSBuild)
 Zawiera nazwę użytkownika zdefiniowanych właściwości i wartości. Dla każdej właściwości używane w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny `PropertyGroup` elementu.  

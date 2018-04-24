@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a913b44bccddd24d4a09ddc285a74713e4f4e40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Uruchamianie kompilacji w środowisku IDE
 Systemów projektów niestandardowych należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> można uruchomić kompilacji. W tym temacie opisano to i opisano procedury.  

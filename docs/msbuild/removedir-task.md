@@ -3,7 +3,7 @@ title: Removedir — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - RemoveDir task [MSBuild]
 - MSBuild, RemoveDir task
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b4bb218b06130ecfdbc29661eca1bb9e7610a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af7c5f47edfb41f34637fc715b0d4008833c304c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="removedir-task"></a>RemoveDir — Zadanie
 Usuwa określone katalogi i wszystkie jego pliki i podkatalogi.  

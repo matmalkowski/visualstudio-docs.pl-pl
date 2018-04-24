@@ -2,19 +2,18 @@
 title: Profilowanie Przegląd — Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: mvc
 ms.date: 03/27/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: overview
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b0ae80d663e011d8e60670b13b6bb931a3b8b3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Omówienie profilowania w programie Visual Studio
 

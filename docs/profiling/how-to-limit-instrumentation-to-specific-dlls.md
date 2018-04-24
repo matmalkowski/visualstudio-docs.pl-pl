@@ -2,8 +2,7 @@
 title: 'Porady: ograniczanie Instrumentacji do określonych bibliotek DLL | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
@@ -12,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933aeda1875360b86b910fb4a122b0501a6eadae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ca2c966c395edf189cbab04c20cdb77c6b0e4e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Porady: ograniczanie instrumentacji do określonych bibliotek DLL
 
@@ -38,7 +37,7 @@ Za pomocą metody profilowania instrumentacji, można ograniczyć zbierania dany
 
 7. Z **Dodawanie projektu docelowego** wybierz projekt wykonywalny, który ma być używany do wykonywania biblioteki DLL.
 
-     Opcjonalny. Wszystkie projekty biblioteki DLL, które mają można dodać do profilu.
+     Opcjonalna. Wszystkie projekty biblioteki DLL, które mają można dodać do profilu.
 
 8. Aby zapobiec zbierania danych dla dodany projekt, kliknij prawym przyciskiem myszy nazwę projektu, a następnie wyczyść **dokumentu** pole wyboru.
 
@@ -56,7 +55,7 @@ Za pomocą metody profilowania instrumentacji, można ograniczyć zbierania dany
 
     - Wpisz ścieżkę i nazwę pliku wykonywalnego (.exe), który wykonuje .dll w **ścieżka pliku wykonywalnego**. Można również kliknąć przycisk wielokropka (...), aby zlokalizować plik w **pliku wykonywalnego do uruchomienia** okno dialogowe.
 
-    - Opcjonalny. Wpisz argumenty wiersza polecenia, które mają być przekazywane do pliku wykonywalnego w **argumenty wiersza polecenia**. Jeśli to konieczne, należy określić katalog roboczy dla aplikacji w **katalog roboczy**.
+    - Opcjonalna. Wpisz argumenty wiersza polecenia, które mają być przekazywane do pliku wykonywalnego w **argumenty wiersza polecenia**. Jeśli to konieczne, należy określić katalog roboczy dla aplikacji w **katalog roboczy**.
 
     - Kliknij przycisk **Dalej**.
 
@@ -64,7 +63,7 @@ Za pomocą metody profilowania instrumentacji, można ograniczyć zbierania dany
 
 6. Kliknij przycisk **Zakończ** aby zakończyć działanie kreatora i wyświetlić nowej sesji wydajności w **Eksplorator wydajności** okna.
 
-7. Opcjonalny. Aby dodać więcej plików dll, kliknij prawym przyciskiem myszy **celów** , a następnie wybierz **dodać docelowy binarne**. Wybierz pliki z **dodać docelowy binarne** okno dialogowe.
+7. Opcjonalna. Aby dodać więcej plików dll, kliknij prawym przyciskiem myszy **celów** , a następnie wybierz **dodać docelowy binarne**. Wybierz pliki z **dodać docelowy binarne** okno dialogowe.
 
     > [!NOTE]
     > Nie należy określać plik wykonywalny (.exe), który korzysta z bibliotek DLL.

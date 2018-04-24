@@ -1,23 +1,20 @@
 ---
 title: Obszary robocze R
 description: Jak kontrolować, gdy kod języka R jest uruchamiana za pomocą obszarów roboczych w programie Visual Studio.
-ms.custom: ''
 ms.date: 01/24/2018
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5eb1ab76c41d82ae64457be192dccf7176843722
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a562b26dbe48df33928409b518dc6a9ceed6eb0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Kontrolowanie, których R kod jest uruchamiany z obszarami roboczymi
 

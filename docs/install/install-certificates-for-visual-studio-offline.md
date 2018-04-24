@@ -1,10 +1,9 @@
 ---
 title: Zainstaluj certyfikaty wymagane do instalacji w trybie offline program Visual Studio | Dokumentacja firmy Microsoft
-description: W tym artykule opisano kroki niezbędne do zainstalowania certyfikatów dla programu Visual Studio instalacji w trybie offline
+description: Informacje o sposobie instalowania certyfikatów dla programu Visual Studio instalacji w trybie offline.
 ms.date: 08/30/2017
-ms.reviewer: tims
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a5098c1db884dc02291433757111a2ad203857
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d6b30f3b264e5bdffc5f9c0f36ba17e67e8a5d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Zainstaluj certyfikaty wymagane do instalacji w trybie offline program Visual Studio
 
@@ -81,7 +80,7 @@ Trzy. Pliki p12, w tym folderze każdego zawierają certyfikatu pośredniego i c
     * Certyfikat pośredniego: **PCA podpisywania kodu firmy Microsoft**
         * Wymagane we wszystkich systemach. Należy pamiętać, że systemy dla wszystkich aktualizacji z witryny Windows Update nie mogą mieć tego certyfikatu.
     * Certyfikat główny: **główny urząd certyfikacji firmy Microsoft**
-        * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+        * Wymagana. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Dlaczego są certyfikaty z folderu certyfikaty nie są instalowane automatycznie?
 
@@ -114,15 +113,18 @@ Jeśli nazwy certyfikatów nie były w **wystawiony** kolumn, musi być zainstal
 Po zainstalowaniu certyfikatów, wdrażania programu Visual Studio można kontynuować, korzystając z instrukcji z [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) sekcji "Tworzenie instalacji sieciowej programu Visual Studio" strona.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
+
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

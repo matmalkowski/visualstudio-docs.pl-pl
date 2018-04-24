@@ -1,23 +1,20 @@
 ---
 title: Okno Pomoc dla języka R
 description: Pomoc dla R jest zintegrowana bezpośrednio okno interaktywne programu Visual Studio za pośrednictwem? Polecenie.
-ms.custom: ''
-ms.date: 001/24/2018
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 069fb5d38f6cc7c5f9b3fdb835667f7624401ed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6153a59e1875bf7b1dd81e794e0d15a37d47c2f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Pomoc w R narzędzi dla programu Visual Studio
 

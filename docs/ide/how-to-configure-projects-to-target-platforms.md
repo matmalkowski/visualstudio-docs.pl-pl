@@ -20,21 +20,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfccc6fcbfbd3f5844421a97b6ad9e7c40bd0c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc85686b9b60692a625e3e09403e0e7b571f2b2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Porady: konfigurowanie projektów do platform docelowych
+# <a name="how-to-configure-projects-to-target-platforms"></a>Porady: Konfigurowanie projektów do platform docelowych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia konfigurowanie aplikacji pod kątem różnych platform, w tym platformach 64-bitowych. Aby uzyskać więcej informacji na 64-bitowej platformy obsługi w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zobacz [aplikacji 64-bitowych](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
-## <a name="targeting-platforms-with-the-configuration-manager"></a>Wybieranie platform z programu Configuration Manager  
+## <a name="target-platforms-with-the-configuration-manager"></a>Platformy docelowe z programu Configuration Manager  
  **Programu Configuration Manager** pozwala szybko dodać nowa platforma do obiektu docelowego projektu. W przypadku wybrania jednej z platform dołączonego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], właściwości projektu zostaną zmodyfikowane, aby skompilować projekt dla wybranej platformy.  
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt pod kątem platformy 64-bitowych  
   
-1.  Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+1.  Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.  
   
 2.  W **platformy aktywne rozwiązanie** listy, wybierz 64-bitowej platformy dla rozwiązania do obiektu docelowego, a następnie wybierz pozycję **Zamknij** przycisku.  
   
@@ -51,8 +51,8 @@ ms.lasthandoff: 04/16/2018
   
  Właściwości dla wszystkich projektów przeznaczonych dla platformy 64-bitowej są aktualizowane i następnej kompilacji projektu zostanie zoptymalizowana dla platformy 64-bitowych.  
   
-## <a name="targeting-platforms-in-the-project-designer"></a>Wybieranie platform w Projektancie projektu  
- W Projektancie projektu umożliwia także różne platformy projektu docelowe. W przypadku wybrania jednej z platform uwzględnione na liście w **nowa platforma rozwiązania** okno dialogowe nie działa w przypadku rozwiązania, można utworzyć nazwy konfiguracji niestandardowej i zmodyfikuj ustawienia w **Projektant projektu**  pod kątem poprawne platformy.  
+## <a name="target-platforms-in-the-project-designer"></a>Platformy docelowe w Projektancie projektu  
+ **Projektanta projektu** także sposób pod kątem różnych platform z projektu. W przypadku wybrania jednej z platform uwzględnione na liście w **nowa platforma rozwiązania** okno dialogowe nie działa w przypadku rozwiązania, można utworzyć nazwy konfiguracji niestandardowej i zmodyfikuj ustawienia w **Projektant projektu**  pod kątem poprawne platformy.  
   
  Wykonanie tego zadania zależy od języka programowania, którego używasz. Zobacz poniższe łącza, aby uzyskać więcej informacji:  
   
@@ -60,10 +60,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Aby uzyskać [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów, zobacz [strona kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Aby uzyskać [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów, zobacz [/CLR (kompilacja języka wspólnego środowiska uruchomieniowego)](/cpp/build/reference/clr-common-language-runtime-compilation).  
+-   Aby uzyskać [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów, zobacz [/CLR (kompilacja środowiska CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
-## <a name="see-also"></a>Zobacz też  
- [Opis o platformach kompilacji](../ide/understanding-build-platforms.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Informacje o platformach kompilacji](../ide/understanding-build-platforms.md)   
  [/ platform (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64-bit — aplikacje](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Obsługa 64-bitowego środowiska IDE programu Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
+ [Techniczną usługi Visual Studio IDE 64-bitowych](../ide/visual-studio-ide-64-bit-support.md)

@@ -3,7 +3,7 @@ title: SetThreadCount | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SetThreadCount
 apilocation:
@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - SetThreadCount
 ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12861a869121daedf59f39a4c0e516abce6a7b70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 059c3015bf542dda6a420c80620bc74c9ee6ca6b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Ustawia liczbę wątków globalne i przypisuje tej liczby do bieżącego wątku.  

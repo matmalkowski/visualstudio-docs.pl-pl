@@ -3,7 +3,7 @@ title: Odwołanie do zadania MSBuild WPF | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914434b9b7083d52cb332696802d8c0cd88051db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30acdaddc132a40c37bc489b07ae3b7f2843b215
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="wpf-msbuild-task-reference"></a>Odwołanie do zadania WPF MSBuild
 Proces kompilacji systemu Windows Presentation Foundation (WPF) rozszerza Microsoft build engine (MSBuild) za sprawą dodatkowego zestawu zadania kompilacji, w tym na kompilowanie zakładek i zasobów procesowych zadań.  

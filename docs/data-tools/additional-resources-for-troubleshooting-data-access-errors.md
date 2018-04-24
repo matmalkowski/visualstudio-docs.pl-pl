@@ -1,8 +1,7 @@
 ---
-title: Dodatkowe zasoby dotyczące rozwiązywania problemów z danych dostęp błędy | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -227,37 +226,32 @@ robots: noindex,nofollow
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 04d7d9922e15ae61709e21f3b220564c64ec6e08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bed8ea08496d8751c093d448c5138b97db39dd3d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych
-Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na forach publicznego Microsoft Developer Network (MSDN). W poniższej tabeli wymieniono dostępne w witrynie MSDN forach związanych z danymi.  
-  
- [Danych formularzy systemu Windows kontrolek i wiązania danych](http://go.microsoft.com/fwlink/?LinkId=160179)  
- Zapewnia forum pytania i ogólnych dyskusjach dostępu do danych w formularzach systemu Windows.  
-  
- [Forum zestawu danych ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180)  
- Udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach zestawów danych.  
-  
- [ADO.NET Entity Framework i LINQ do jednostek](http://go.microsoft.com/fwlink/?LinkId=191520)  
- Zapewnia forum pytania dotyczące i ogólnych dyskusjach Entity Framework aplikacji i składników LINQ to Entities języka.  
-  
- [Forum usług danych WCF](http://go.microsoft.com/fwlink/?LinkId=160181)  
- Zapewnia forum pytania i ogólnych dyskusjach usług danych.  
-  
- [Forum dostępu danych serwera SQL](http://go.microsoft.com/fwlink/?LinkID=160184)  
- Zapewnia forum pytania i ogólnych dyskusjach uzyskiwania dostępu do danych w programie Microsoft SQL Server.  
-  
- [LINQ do SQL Forum](http://go.microsoft.com/fwlink/?LinkId=160183)  
- Udostępnia forum pytania i ogólnych dyskusjach Linq do SQL.  
-  
- [Forum dostawcy danych ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182)  
- Udostępnia forum odpowiedzi na pytania o i ogólne omówienie różnych dostawców danych programu .NET Framework.  
-  
- Aby uzyskać informacje dotyczące rozwiązywania problemów z łącznością z programem SQL Server, zobacz [Rozwiązywanie problemów z połączenia z aparatem bazy danych serwera SQL jak](http://go.microsoft.com/fwlink/?LinkID=246151).  
-  
-## <a name="see-also"></a>Zobacz też  
- [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+
+Pomoc w rozwiązywaniu problemów błędy i ostrzeżenia można znaleźć na forach publicznego Microsoft Developer Network (MSDN). W poniższej tabeli wymieniono dostępne w witrynie MSDN forach związanych z danymi.
+
+ [Formanty danych formularzy systemu Windows i wiązania z danymi](http://go.microsoft.com/fwlink/?LinkId=160179) udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach dostępu do danych w formularzach systemu Windows.
+
+ [Forum zestawu danych ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180) udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach zestawów danych.
+
+ [ADO.NET Entity Framework i LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach Entity Framework aplikacji i składników LINQ to Entities języka.
+
+ [Forum usług danych WCF](http://go.microsoft.com/fwlink/?LinkId=160181) udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach usług danych.
+
+ [Forum dostępu danych serwera SQL](http://go.microsoft.com/fwlink/?LinkID=160184) udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach uzyskiwanie dostępu do danych w programie Microsoft SQL Server.
+
+ [LINQ do SQL Forum](http://go.microsoft.com/fwlink/?LinkId=160183) udostępnia forum odpowiedzi na pytania o i ogólnych dyskusjach Linq do SQL.
+
+ [Forum dostawcy danych ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182) udostępnia forum odpowiedzi na pytania o i ogólne omówienie różnych dostawców danych programu .NET Framework.
+
+ Aby uzyskać informacje dotyczące rozwiązywania problemów z łącznością z programem SQL Server, zobacz [Rozwiązywanie problemów z połączenia z aparatem bazy danych serwera SQL jak](http://go.microsoft.com/fwlink/?LinkID=246151).
+
+## <a name="see-also"></a>Zobacz też
+
+- [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

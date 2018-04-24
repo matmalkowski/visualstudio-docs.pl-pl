@@ -2,8 +2,7 @@
 title: Widok linii | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.lines
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c5565ea8cecb50166536d399fd5a1e7b4f4dd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433bcbc46814c49a30836d8a7f0d9ec10e571ea6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lines-view"></a>Widok linii
 Widok linii jest dostępna tylko w przypadku dane zebrane przy użyciu metody próbkowania profilera. Widok nie jest dostępna dla danych, które zostały zebrane przy użyciu Instrumentacji.  

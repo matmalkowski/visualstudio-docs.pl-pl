@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5e2984e9da7d3df4187c1a32b481ed0a70c876d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd8616e1f16e12ab07bd30a2d88f728bc79212f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Porady: określanie ikony aplikacji (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Porady: Określanie ikony aplikacji (Visual Basic, C#)
 
-`Icon` Właściwości dla projektu określa plik ikony (.ico) który będzie wyświetlany dla skompilowanej aplikacji w Eksploratorze plików, a na pasku zadań systemu Windows.
+`Icon` Właściwości dla projektu określa plik ikony (*.ico*) który będzie wyświetlany dla aplikacji skompilowanych w **Eksploratora plików** i na pasku zadań systemu Windows.
 
 `Icon` Właściwości można uzyskać w **aplikacji** okienku **projektanta projektu**; zawiera listę ikony, które zostały dodane do projektu jako zasoby lub plików zawartości.
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 
 1. Gdy **projektanta projektu** zostanie wyświetlone, wybierz **aplikacji** kartę.
 
-1. **(Visual Basic)**  &mdash;w **ikona** listy, wybierz plik ikony (.ico).
+1. **(Visual Basic)**  &mdash;w **ikona** wybierz ikonę (*.ico*) pliku.
 
     **C#**&mdash;pobliżu **ikona** wybierz  **\<Przeglądaj >** przycisk, a następnie przejdź do lokalizacji pliku ikony, która ma.
 

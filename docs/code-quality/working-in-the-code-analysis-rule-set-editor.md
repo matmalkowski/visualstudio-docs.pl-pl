@@ -1,5 +1,5 @@
 ---
-title: Użyj edytorze zestawu reguł analizy kodu w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Użyj edytorze zestawu reguł analizy kodu w programie Visual Studio
 ms.date: 04/-4/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1a49cd8f0376a8a144f1a6f889bac0c5963b6e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bd9f02142b803cc9a09fce79cb687ea521dea9e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Edytor zestawu reguł analizy kodu
 
@@ -50,7 +50,7 @@ W poniższej tabeli opisano formantów na pasku narzędzi Edytor zestawu reguł.
 |---------------------|-----------------|
 |**Rozwiń wszystko**|Zawiera reguły we wszystkich grupach.|
 |**Zwiń wszystko**|Ukrywa reguł we wszystkich grupach.|
-|**Grupuj według**|Określa pole, według której reguły są grupowane. Kliknij przycisk  **\<Brak >** pokazanie reguły bez grupy.|
+|**Group By**|Określa pole, według której reguły są grupowane. Kliknij przycisk  **\<Brak >** pokazanie reguły bez grupy.|
 |**Opcje kolumny**|Określa reguły pola do wyświetlenia.|
 |**Ukryj reguł, które nie mają zastosowanie do bieżącego rozwiązania**|Pokazuje lub ukrywa reguł, które nie są tego samego typu docelowego jako rozwiązanie.|
 |**Pokaż reguły, które mogą generować błędy analizy kodu**|Pokazuje lub ukrywa reguł, które są przypisane akcji błędu.|

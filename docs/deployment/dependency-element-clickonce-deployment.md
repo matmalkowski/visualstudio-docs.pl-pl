@@ -2,9 +2,8 @@
 title: '&lt;zależności&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -23,16 +22,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e217413a428c8c22712ac3a90836b1ea4fbc35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależności&gt; elementu (wdrażania ClickOnce)
 Identyfikuje wersji aplikacji do zainstalowania i lokalizacja manifestu aplikacji.  
@@ -78,27 +77,27 @@ Identyfikuje wersji aplikacji do zainstalowania i lokalizacja manifestu aplikacj
  `dependency` Element najczęściej wyraża zależności dla aplikacji głównej zestawów zawartych w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Jeśli aplikacja Main.exe zużywa zestawu o nazwie DotNetAssembly.dll, ten zestaw musi być wymienione w sekcji zależności. Zależności, jednak może również express innych typów zależności, takich jak zależności na określoną wersję środowiska CLR, zestawu w globalnej pamięci podręcznej zestawów (GAC) lub obiektów COM. Ponieważ jest to technologia rozmieszczania bezobsługowego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie może zainicjować pobranie i zainstalowanie tych typów zależności, ale uniemożliwia uruchomienie aplikacji co najmniej jeden określony zależności nie istnieją.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Wymagany. Ten element zawiera `assemblyIdentity` elementu. W poniższej tabeli przedstawiono atrybuty `dependentAssembly` obsługuje.  
+ Wymagana. Ten element zawiera `assemblyIdentity` elementu. W poniższej tabeli przedstawiono atrybuty `dependentAssembly` obsługuje.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`preRequisite`|Opcjonalny. Określa, że ten zestaw powinna już istnieć w pamięci GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`oraz określonego zestawu nie istnieje w pamięci GAC, aplikacji nie powiedzie się.|  
-|`visible`|Opcjonalny. Określa tożsamość aplikacji najwyższego poziomu, wraz z jego zależnościami. Używana wewnętrznie przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do zarządzania przechowywania danych aplikacji i aktywacji.|  
-|`dependencyType`|Wymagany. Relacja między tym zależności i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik reprezentuje osobnej instalacji z bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
-|`codebase`|Opcjonalny. Pełna ścieżka do manifestu aplikacji.|  
-|`size`|Opcjonalny. Rozmiar manifest aplikacji w bajtach.|  
+|`preRequisite`|Opcjonalna. Określa, że ten zestaw powinna już istnieć w pamięci GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`oraz określonego zestawu nie istnieje w pamięci GAC, aplikacji nie powiedzie się.|  
+|`visible`|Opcjonalna. Określa tożsamość aplikacji najwyższego poziomu, wraz z jego zależnościami. Używana wewnętrznie przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do zarządzania przechowywania danych aplikacji i aktywacji.|  
+|`dependencyType`|Wymagana. Relacja między tym zależności i aplikacji. Prawidłowe wartości to:<br /><br /> -   `install`. Składnik reprezentuje osobnej instalacji z bieżącej aplikacji.<br />-   `preRequisite`. Składnik jest wymagany przez bieżącą aplikację.|  
+|`codebase`|Opcjonalna. Pełna ścieżka do manifestu aplikacji.|  
+|`size`|Opcjonalna. Rozmiar manifest aplikacji w bajtach.|  
   
 ## <a name="assemblyidentity"></a>element assemblyIdentity  
- Wymagany. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
+ Wymagana. Ten element jest elementem podrzędnym `dependentAssembly` elementu. Zawartość `assemblyIdentity` musi być taka sama, jak opisano w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. W poniższej tabeli przedstawiono atrybuty `assemblyIdentity` elementu.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagany. Określa nazwę aplikacji.|  
-|`Version`|Wymagany. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
-|`publicKeyToken`|Wymagany. Określa 16-znakowym ciągiem szesnastkowym reprezentujący ostatnich 8 bajtów skrótu SHA-1 klucza publicznego, pod którą jest podpisany aplikacji lub zestawu. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub większej.|  
-|`processorArchitecture`|Wymagany. Określa procesor. Prawidłowe wartości to `x86` dla 32-bitowego systemu Windows i `IA64` dla 64-bitowego systemu Windows.|  
-|`Language`|Opcjonalny. Identyfikuje kodów języków dwie części zestawu. Na przykład EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
-|`type`|Opcjonalny. Dla zapewnienia zgodności z systemem Windows side-by-side zainstalować technologii. Jest to jedyna wartość dozwolonych `win32`.|  
+|`Name`|Wymagana. Określa nazwę aplikacji.|  
+|`Version`|Wymagana. Określa numer wersji aplikacji, w następującym formacie: `major.minor.build.revision`|  
+|`publicKeyToken`|Wymagana. Określa 16-znakowym ciągiem szesnastkowym reprezentujący ostatnich 8 bajtów skrótu SHA-1 klucza publicznego, pod którą jest podpisany aplikacji lub zestawu. Klucz publiczny używany do podpisywania musi wynosić 2048 bitów lub większej.|  
+|`processorArchitecture`|Wymagana. Określa procesor. Prawidłowe wartości to `x86` dla 32-bitowego systemu Windows i `IA64` dla 64-bitowego systemu Windows.|  
+|`Language`|Opcjonalna. Identyfikuje kodów języków dwie części zestawu. Na przykład EN-US, który oznacza dla języka angielskiego (US). Wartość domyślna to `neutral`. Tego elementu jest `asmv2` przestrzeni nazw.|  
+|`type`|Opcjonalna. Dla zapewnienia zgodności z systemem Windows side-by-side zainstalować technologii. Jest to jedyna wartość dozwolonych `win32`.|  
   
 ## <a name="hash"></a>hash  
  `hash` Element jest opcjonalny element podrzędny `file` elementu. `hash` Element nie ma żadnych atrybutów.  

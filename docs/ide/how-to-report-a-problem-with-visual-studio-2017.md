@@ -1,5 +1,5 @@
 ---
-title: Jak zgłosić Problem z programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Jak zgłosić problem z programu Visual Studio 2017 | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/11/2018
 ms.topic: conceptual
@@ -10,11 +10,11 @@ manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: a87d48007abc08044d41d6bb65f5511b955c45bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 
@@ -70,19 +70,19 @@ Pliki zrzutu śledzenia i sterty są przydatne NAS diagnozowania problemów. Cen
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Zgłoś problem za pomocą Instalator programu Visual Studio
 
-Jeśli nie można ukończyć instalacji programu Visual Studio lub nie masz dostępu do narzędzia opinię w programie Visual Studio, może zgłosić problem przy użyciu Instalator programu Visual Studio. Aby to zrobić, wybierz ikonę opinii w prawym górnym rogu Instalator programu Visual Studio.
+Jeśli nie można ukończyć instalacji programu Visual Studio lub nie masz dostępu do narzędzia opinię w programie Visual Studio, może zgłosić problem przy użyciu **Instalator programu Visual Studio**. Aby to zrobić, wybierz ikonę opinii w prawym górnym rogu **Instalator programu Visual Studio**.
 
  ![Można karty, aby przycisk Podaj opinii w Instalator programu Visual Studio, aby otworzyć narzędzie opinii](../install/media/report-a-problem.png)
 
 ### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Wyszukaj problemy i rozwiązania przy użyciu programu Visual Studio społeczność deweloperów
 
-Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje ryzyko, że problem już został zgłoszony i rozwiązanie opublikowane w społeczność deweloperów programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) strony.
+Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje ryzyko, że problem już został zgłoszony i rozwiązanie opublikowane w społeczność deweloperów programu Visual Studio. Aby uzyskać więcej informacji, zobacz [społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) strony.
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Podaj opinię o produkcie lub sugestię
 
 Jeśli nie masz problem do raportu, ale chcesz wyrazić opinię o produkcie lub sugestię jest miejsce do tego zbyt. Aby uzyskać więcej informacji, zobacz [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) strony.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Porozmawiaj z nami](../ide/talk-to-us.md)
 * [Społeczność deweloperów usługi Visual Studio](https://developercommunity.visualstudio.com/)

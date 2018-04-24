@@ -2,8 +2,7 @@
 title: AutoMark | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf11dd16dcf9724e0913eed07ae13b285a2d382e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d9a482d3ed09f12c623986e604951b7d7855e6e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="automark"></a>AutoMark
 **AutoMark** opcji określa liczbę milisekund między zbierania zdarzeń liczników wydajności oprogramowania systemu Windows. Liczniki wydajności systemu Windows są określone w **WinCounter** opcji.  

@@ -3,7 +3,7 @@ title: SETENV — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vc.task.setenv
 dev_langs:
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), tasks
 - SetEnv task (MSBuild (Visual C++))
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c939d3d7a7f503e3f43d1b11047f0105a3ffa3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec47adec3a9c979a21a543f2c073c440384b26d1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="setenv-task"></a>SetEnv — Zadanie
 Ustawia lub usuwa wartość zmiennej określonego środowiska.  

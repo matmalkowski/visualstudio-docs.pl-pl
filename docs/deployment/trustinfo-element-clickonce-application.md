@@ -2,9 +2,8 @@
 title: '&lt;trustinfo —&gt; — Element (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], trustInfo element
 - <trustInfo> element [ClickOnce application manifest]
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d683ca2dde02ec63a00f870e1c1b9fd775983f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 516ed9ae36b97a75e5185c69b89fadf587ddeaa7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustinfo —&gt; — Element (aplikacji ClickOnce)
 Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomienia na komputerze klienckim.  
@@ -72,38 +71,38 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
  `trustInfo` Element jest wymagany i znajduje się w `asm.v2` przestrzeni nazw. Nie ma żadnych atrybutów, a zawiera następujące elementy.  
   
 ## <a name="security"></a>zabezpieczenia  
- Wymagany. Ten element jest elementem podrzędnym `trustInfo` elementu. Zawiera on `applicationRequestMinimum` elementu i nie ma żadnych atrybutów.  
+ Wymagana. Ten element jest elementem podrzędnym `trustInfo` elementu. Zawiera on `applicationRequestMinimum` elementu i nie ma żadnych atrybutów.  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- Wymagany. Ten element jest elementem podrzędnym `security` element i zawiera `PermissionSet`, `assemblyRequest`, i `defaultAssemblyRequest`elementy. Ten element nie ma żadnych atrybutów.  
+ Wymagana. Ten element jest elementem podrzędnym `security` element i zawiera `PermissionSet`, `assemblyRequest`, i `defaultAssemblyRequest`elementy. Ten element nie ma żadnych atrybutów.  
   
 ## <a name="permissionset"></a>PermissionSet  
- Wymagany. Ten element jest elementem podrzędnym `applicationRequestMinimum` element i zawiera `IPermission` elementu. Ten element ma następujące atrybuty.  
+ Wymagana. Ten element jest elementem podrzędnym `applicationRequestMinimum` element i zawiera `IPermission` elementu. Ten element ma następujące atrybuty.  
   
 -   `ID`  
   
-     Wymagany. Identyfikuje zestaw uprawnień. Ten atrybut może mieć dowolną wartość. Odwołuje się identyfikator `defaultAssemblyRequest` i `assemblyRequest` atrybutów.  
+     Wymagana. Identyfikuje zestaw uprawnień. Ten atrybut może mieć dowolną wartość. Odwołuje się identyfikator `defaultAssemblyRequest` i `assemblyRequest` atrybutów.  
   
 -   `version`  
   
-     Wymagany. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
+     Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
   
 ## <a name="ipermission"></a>IPermission  
- Opcjonalny. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odpowiadają właściwości klasy uprawnień. Aby sprawdzić składnię określonego uprawnienia, zobacz temat przykłady wymienione w pliku Security.config —.  
+ Opcjonalna. Ten element jest elementem podrzędnym `PermissionSet` elementu. `IPermission` Elementu pełni identyfikuje klasy uprawnień w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element ma następujące atrybuty, ale mogą mieć dodatkowe atrybuty, które odpowiadają właściwości klasy uprawnień. Aby sprawdzić składnię określonego uprawnienia, zobacz temat przykłady wymienione w pliku Security.config —.  
   
 -   `class`  
   
-     Wymagany. Identyfikuje klasy uprawnień przy użyciu silnej nazwy. Na przykład następujący kod identyfikuje `FileDialogPermission` typu.  
+     Wymagana. Identyfikuje klasy uprawnień przy użyciu silnej nazwy. Na przykład następujący kod identyfikuje `FileDialogPermission` typu.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 -   `version`  
   
-     Wymagany. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
+     Wymagana. Identyfikuje wersję uprawnienia. Ta wartość jest zazwyczaj `1`.  
   
 -   `Unrestricted`  
   
-     Wymagany. Określa, czy aplikacja musi nieograniczony przyznawania to uprawnienie. Jeśli `true`, przyznaj uprawnienie jest bezwarunkowe. Jeśli `false`, lub jeśli zdefiniowano ten atrybut jest ograniczone w zależności od zdefiniowanych atrybutów specyficzne uprawnienia `IPermission` tagu. Wykonaj następujące uprawnienia:  
+     Wymagana. Określa, czy aplikacja musi nieograniczony przyznawania to uprawnienie. Jeśli `true`, przyznaj uprawnienie jest bezwarunkowe. Jeśli `false`, lub jeśli zdefiniowano ten atrybut jest ograniczone w zależności od zdefiniowanych atrybutów specyficzne uprawnienia `IPermission` tagu. Wykonaj następujące uprawnienia:  
   
     ```  
     <IPermission  
@@ -119,32 +118,32 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
      W tym przykładzie deklaracja <xref:System.Security.Permissions.EnvironmentPermission> ogranicza aplikację do odczytywania tylko zmiennej środowiskowej USERNAME, podczas gdy deklaracja <xref:System.Security.Permissions.FileDialogPermission> daje aplikacji bez ograniczeń użycia wszystkich <xref:System.Windows.Forms.FileDialog> klasy.  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- Opcjonalny. Określa zestaw uprawnień do wszystkich zestawów. Ten element jest elementem podrzędnym `applicationRequestMinimum` element a ma następującego atrybutu.  
+ Opcjonalna. Określa zestaw uprawnień do wszystkich zestawów. Ten element jest elementem podrzędnym `applicationRequestMinimum` element a ma następującego atrybutu.  
   
 -   `permissionSetReference`  
   
-     Wymagany. Określa identyfikator zestaw uprawnień będący uprawnienia domyślne. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
+     Wymagana. Określa identyfikator zestaw uprawnień będący uprawnienia domyślne. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- Opcjonalny. Określa uprawnienia dla określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` element i ma następujące atrybuty.  
+ Opcjonalna. Określa uprawnienia dla określonego zestawu. Ten element jest elementem podrzędnym `applicationRequestMinimum` element i ma następujące atrybuty.  
   
 -   `Name`  
   
-     Wymagany. Określa nazwę zestawu.  
+     Wymagana. Określa nazwę zestawu.  
   
 -   `permissionSetReference`  
   
-     Wymagany. Określa identyfikator zestaw uprawnień, który wymaga tego zestawu. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
+     Wymagana. Określa identyfikator zestaw uprawnień, który wymaga tego zestawu. Zestaw uprawnień jest zadeklarowana w `PermissionSet` elementu.  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- Opcjonalny. Ten element jest elementem podrzędnym `security` element i zawiera `requestedExecutionLevel` elementu. Ten element nie ma żadnych atrybutów.  
+ Opcjonalna. Ten element jest elementem podrzędnym `security` element i zawiera `requestedExecutionLevel` elementu. Ten element nie ma żadnych atrybutów.  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- Opcjonalny. Określa poziom zabezpieczeń, w którym aplikacja żądań do wykonania. Ten element nie ma elementów podrzędnych i ma następujące atrybuty.  
+ Opcjonalna. Określa poziom zabezpieczeń, w którym aplikacja żądań do wykonania. Ten element nie ma elementów podrzędnych i ma następujące atrybuty.  
   
 -   `Level`  
   
-     Wymagany. Wskazuje, że żąda poziom zabezpieczeń aplikacji. Możliwe wartości to:  
+     Wymagana. Wskazuje, że żąda poziom zabezpieczeń aplikacji. Możliwe wartości to:  
   
      `asInvoker`, żądanie żadne dodatkowe uprawnienia. Ten poziom nie wymaga żadnych dodatkowych zaufania wyświetla monit o.  
   
@@ -156,7 +155,7 @@ Opisuje minimalne uprawnienia zabezpieczeń wymagane do zastosowania do uruchomi
   
 -   `uiAccess`  
   
-     Opcjonalny. Wskazuje, czy aplikacja wymaga dostępu do elementów interfejsu użytkownika chronionych. Wartości są albo `true` lub `false`, a wartość domyślna to false. Tylko podpisane aplikacje powinien mieć wartość true.  
+     Opcjonalna. Wskazuje, czy aplikacja wymaga dostępu do elementów interfejsu użytkownika chronionych. Wartości są albo `true` lub `false`, a wartość domyślna to false. Tylko podpisane aplikacje powinien mieć wartość true.  
   
 ## <a name="remarks"></a>Uwagi  
  Jeśli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja prosi o więcej uprawnień niż komputer kliencki będzie zezwalał na domyślnie języka wspólnego menedżera zaufania w czasie wykonywania będzie monitować użytkownika, jeśli chce udzielić aplikacji tym podwyższonego poziomu zaufania. Jeśli użytkownik nie, aplikacja nie zostanie uruchomiona; w przeciwnym razie będzie uruchamiane z żądanych uprawnień.  

@@ -2,8 +2,7 @@
 title: Odwołanie do biblioteki C++ | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Concurrency Visualizer SDK, C++ Library Reference
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5eaf7af07ad859da57be27717c82a3db6fbfa869
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6eecf12f554a8a6143f9c040916da9f0e318b1f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C++
 Ta sekcja zawiera informacje dotyczące zestawu SDK wizualizatora współbieżności.  

@@ -2,8 +2,7 @@
 title: Wizualizatora współbieżności SDK | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d23903d7438d185250ddb4c3eca54ee2c290c865
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7268e786c7d68d642778f0c0dca31de170b424b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 Przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w Concurrency Visualizer, mogą dodawać kod źródłowy. Dodatkowe dane można skojarzyć z fazy i zdarzeń w kodzie. Te dodatkowe wizualizacje są określane jako *znaczniki*.  Przewodnik wprowadzający dla [wprowadzenie do zestawu SDK wizualizatora współbieżności](http://go.microsoft.com/fwlink/?LinkId=235405).  

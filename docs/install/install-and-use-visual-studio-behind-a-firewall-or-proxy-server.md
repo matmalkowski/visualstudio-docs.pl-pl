@@ -1,10 +1,10 @@
 ---
 title: Zainstalować i używać programu Visual Studio i usług Azure za serwerem zapory lub serwera proxy | Dokumentacja firmy Microsoft
-description: ''
+description: Przejrzyj domeny adresów URL, porty i protokoły, które może być listą dozwolonych adresów IP lub otworzyć, jeśli Twoja organizacja korzysta z zapory lub serwera proxy
 ms.custom: ''
 ms.date: 02/12/2018
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aca7e7ee5e7861028a5aa80fe54d02e71cf0458e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Zainstalować i używać programu Visual Studio i usług Azure za serwerem zapory lub serwera proxy
+
 Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Zapora lub serwer proxy, będą adresów URL domen, które możesz chcieć "dozwolone" i porty i protokoły, które można otworzyć, tak aby było możliwe najlepsze doświadczenia, podczas instalacji i używania Visual Stu dio i usług Azure.
 
 * **[Zainstaluj program Visual Studio](#install-visual-studio)**: te tabele zawierają domeny adresów URL do listy dozwolonych adresów IP tak, aby mieć dostęp do wszystkich składników i obciążeń, które mają.
@@ -31,10 +32,13 @@ Jeśli Ty lub Twoja organizacja korzysta z środki bezpieczeństwa, takie jak Za
 * **[Użyj programu Visual Studio i usług Azure](#use-visual-studio-and-azure-services)**: tabela zawiera adresy URL domeny do listy dozwolonych adresów IP i portów i protokołów, aby otworzyć tak, aby mieć dostęp do wszystkich funkcji i usług, które mają.
 
 ## <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
+
 ### <a name="urls-to-whitelist"></a>Adresy URL do listy dozwolonych adresów IP
+
 Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i serwerów ich pobierania, Oto adresów URL domen, które możesz chcieć dozwolonych jako zaufane w interfejsie użytkownika lub w skryptach wdrożenia.
 
 #### <a name="microsoft-domains"></a>Microsoft domains
+
 | Domain | Cel |
 | ------ | ------- |
 | go.microsoft.com | Rozpoznawanie adresu URL instalacji |
@@ -54,6 +58,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i se
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Domeny inne niż firmy Microsoft
+
 | Domain | Instaluje te obciążenia |
 | ------ | ------- |
 | archive.apache.org |  Tworzenie przenośnych za pomocą języka JavaScript (Cordova) |
@@ -69,7 +74,9 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i se
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Program Visual Studio i usług Azure
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Adresy URL do listy dozwolonych adresów IP i portów i protokołów, aby otworzyć
+
 Aby upewnić się, że masz dostęp do wszystkich składników, które są potrzebne, korzystając z programu Visual Studio lub usług Azure za serwerem zapory lub serwera proxy, w tym miejscu są adresy URL powinny listy dozwolonych adresów IP i portów i protokołów, które można otworzyć.
 
 | Usługa lub scenariusza | Punkt końcowy DNS | Protokół | Port | Opis |
@@ -113,18 +120,21 @@ Aby upewnić się, że masz dostęp do wszystkich składników, które są potrz
 |Tworzenie pakietów usługi | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | Protokół HTTPS | 443 | *. Npmjs.org, *. nuget.org, i *. nodejs.org są tylko wymagane dla kompilacji niektórych scenariuszy zadań (np. Instalator narzędzie NuGet, węzła narzędzie Instalatora) lub jeśli zamierzasz używać publicznego upstreams ze źródła danych.  Trzy domeny są wymagane dla functinality podstawowe usługi Packaigng. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Rozwiązywanie problemów związanych z siecią
+
 Czasami może być uruchamiany w błędy związane z siecią lub serwera proxy podczas instalowania lub użyć programu Visual Studio za zaporą lub serwer proxy. Aby uzyskać więcej informacji o rozwiązaniach takie komunikaty o błędach, zobacz [rozwiązywania problemów związanych z siecią, podczas instalowania lub użyć programu Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md) strony.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej dla Ciebie:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
+
 * [Rozwiązywania problemów dotyczących sieci w programie Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)

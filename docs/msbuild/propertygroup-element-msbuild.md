@@ -3,7 +3,7 @@ title: PropertyGroup — Element (MSBuild) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - <PropertyGroup> element [MSBuild]
 - PropertyGroup element [MSBuild]
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9958335335efc007a7f2410612929fd3ac8bdca4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8df7de09fe90b0825d1b990b18b3a7d2309e4a08
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup — Element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [właściwości](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być elementem podrzędnym elementu `PropertyGroup` elementu.  

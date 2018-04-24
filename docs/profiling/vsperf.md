@@ -2,8 +2,7 @@
 title: VSPerf | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d354476e0c822704d6fca619c5dca4cc109285
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b0b0941959b0d70fa5dfb0ae72aed181b1cd42e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Użyj **VsPerf** narzędzie wiersza polecenia do:  
@@ -43,7 +42,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |**App: {AppName}**|Uruchamia profilera i czeka na określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` wyświetlanie nazwy aplikacji i Pełna_nazwa_pakietu zainstalowane aplikacje.|  
 |**/ pakietu: {Pełna_nazwa_pakietu}**|Uruchamia profilera i czeka na określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` wyświetlanie nazwy aplikacji i Pełna_nazwa_pakietu zainstalowane aplikacje.|  
 |**/js**|Wymagana dla profilowania aplikacji JavaScript.<br /><br /> Zbieranie danych wydajności z aplikacji JavaScript.<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.|  
-|**/noclr**|Opcjonalny. Nie zbieraj danych CLR.<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja rozwiąże nie symbole zarządzane.|  
+|**/noclr**|Opcjonalna. Nie zbieraj danych CLR.<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja rozwiąże nie symbole zarządzane.|  
 |**/listapps**|Lista zainstalowanych nazwy aplikacji i PackageFullNames.|  
   
 ##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikacje systemu Windows 8 i tylko aplikacje systemu Windows Server 2012  
@@ -61,7 +60,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |||  
 |-|-|  
 |**/ dołączyć: {PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy działających aplikacji procesu.|  
-|**/ file:{ReportName}**|Opcjonalny. Określa plik wyjściowy (zastępuje istniejący plik).<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.|  
+|**/ file:{ReportName}**|Opcjonalna. Określa plik wyjściowy (zastępuje istniejący plik).<br /><br /> Używana tylko z przełącznika/Package lub / dołączyć.|  
 |**/ pause**|Wstrzymaj zbieranie danych.|  
 |**/Resume**|Wznowienie zbierania danych.|  
 |**/ stop**|Zatrzymaj zbieranie danych i zakończenie procesów docelowych.|  

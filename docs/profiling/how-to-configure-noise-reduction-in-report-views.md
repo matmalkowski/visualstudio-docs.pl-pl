@@ -2,8 +2,7 @@
 title: 'Porady: Konfigurowanie redukcji szumu w widoku raportu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c877a0da825062103b0dae36ce4b5c4de9875802
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa2ec4a797b7018a7a9e017760afd8849912cd35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Porady: konfigurowanie redukcji szumu w widoku raportu
 Raporty wydajności można skonfigurować dla redukcji szumu poprzez ograniczenie ilości danych, które są prezentowane w widoku drzewa wywołań i Widok alokacji. Za pomocą redukcji szumu, problemy z wydajnością są lepiej widoczne. Jest to przydatne podczas analizowania wydajności raportów.  

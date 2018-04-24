@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d80c0a604455d8c6e76d9c55bdf3a0d2dacfe743
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Porady: Tworzenie szablonów elementów wielu plików
 
@@ -38,7 +38,7 @@ Można utworzyć szablon elementów wielu plików tak samo, jak szablon elementu
 
 1. Utwórz szablon elementu po czy ręcznie utworzyć szablon elementu pojedynczego pliku, ale zawierają każdego pliku, który stanowi elementów wielu plików.
 
-1. W pliku .vstemplate XML, Dodaj `ProjectItem` elementu dla poszczególnych plików, a następnie dodaj `TargetFileName` atrybutu do tego elementu. Ustaw wartość `TargetFileName` atrybutu $fileinputname$. *FileExtension*, gdzie *FileExtension* jest rozszerzeniem pliku jest zawarta w szablonie. Na przykład:
+1. W *.vstemplate* XML plików, dodawanie `ProjectItem` elementu dla poszczególnych plików, a następnie dodaj `TargetFileName` atrybutu do tego elementu. Ustaw wartość `TargetFileName` atrybutu *$fileinputname$. FileExtension*, gdzie *FileExtension* jest rozszerzeniem pliku jest zawarta w szablonie. Na przykład:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -57,13 +57,13 @@ Można utworzyć szablon elementów wielu plików tak samo, jak szablon elementu
 
 1. Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz pozycję **przesyłają** > **skompresowanego folderu (zip)**.
 
-   Wybrane pliki są kompresowane do pliku zip.
+   Wybrane pliki są skompresowane w *.zip* pliku.
 
-1. Skopiuj plik zip do lokalizacji szablonu elementu użytkownika. Domyślnie, katalog jest %USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ItemTemplates. Aby uzyskać więcej informacji, zobacz [porady: Znajdź i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopiuj *zip* plik do lokalizacji szablonu elementu użytkownika. Domyślnie, katalog jest *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Zamknij program Visual Studio, a następnie otwórz go ponownie.
 
-1. Utwórz nowy projekt, ani otworzyć istniejącego projektu, a następnie wybierz **projektu** > **Dodaj nowy element...**  lub naciśnij klawisz **Ctrl** + **Shift** + **A**.
+1. Utwórz nowy projekt, ani otworzyć istniejącego projektu, a następnie wybierz **projektu** > **Dodaj nowy element** lub naciśnij klawisz **Ctrl** +  **SHIFT**+**A**.
 
    Szablon elementów wielu plików jest wyświetlany w **Dodaj nowy element** okno dialogowe.
 
@@ -96,7 +96,7 @@ W poniższym przykładzie przedstawiono szablon formularzy systemu Windows. Gdy 
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)  
-[Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)  
+[Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)  
+[Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)  
 [Parametry szablonu](../ide/template-parameters.md)  
-[Instrukcje: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)
+[Porady: parametry zastępcze w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)

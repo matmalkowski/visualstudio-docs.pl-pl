@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 827d8e13249ec3c7a9effc909a881bf434e356b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51d17894025800acd9c8ab0736ebe92d7f790fc7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="file-tracking"></a>Śledzenie plików
 Plik śledzenia rejestruje wywołań do systemu plików dla procesu i jego procesy podrzędne. Programy kontroli przez wywołanie funkcji wymienionych poniżej, kiedy należy włączyć rejestrowanie i wyłączyć i określ plik dziennika, który będzie używany.  

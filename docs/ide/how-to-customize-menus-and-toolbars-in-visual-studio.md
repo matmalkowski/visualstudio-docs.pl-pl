@@ -30,21 +30,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c28218f7dd2e695508fabb6410d05530438e94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9de1cef61395e6b2fd4c1a38000ead2367143e4e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Porady: Dostosowywanie menu i pasków zadań w Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Porady: Dostosowywanie menu i pasków zadań w programie Visual Studio
 Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu paska menu i pasków narzędzi, ale również przez dodawanie i usuwanie poleceń w dowolnym danym narzędzi lub paska menu.  
   
 > [!WARNING]
 >  Po dostosowaniu paska narzędzi lub menu, upewnij się, że pole wyboru pozostanie wybrany w **Dostosuj** okno dialogowe. W przeciwnym razie zmiany nie są zachowywane po zamknięciu i ponownym otwarciu Visual Studio.
   
-## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a>Dodawanie, usuwanie lub przenoszenie menu na pasku menu  
+## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Dodać, usunąć lub przenieść menu na pasku menu  
   
-1.  Na pasku menu wybierz **narzędzia**, **Dostosuj**.  
+1.  Na pasku menu wybierz **narzędzia** > **Dostosuj**.  
   
      **Dostosuj** zostanie otwarte okno dialogowe.  
   
@@ -58,9 +58,9 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
   
     -   Aby przenieść menu na pasku menu, wybierz w menu **formanty** listy, a następnie wybierz pozycję **Przenieś w górę** lub **Przenieś w dół** przycisku.  
   
-## <a name="adding-removing-or-moving-a-toolbar"></a>Dodawanie, usuwanie lub przenoszenie paska narzędzi  
+## <a name="add-remove-or-move-a-toolbar"></a>Dodać, usunąć lub przenieść pasek narzędzi  
   
-1.  Na pasku menu wybierz **narzędzia**, **Dostosuj**.  
+1.  Na pasku menu wybierz **narzędzia** > **Dostosuj**.  
   
      **Dostosuj** zostanie otwarte okno dialogowe.  
   
@@ -80,11 +80,11 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
         Możesz również przeciągnąć pasek narzędzi za jego lewą krawędź, aby przenieść go w dowolne miejsce w głównym obszarze dokowania.  
   
         > [!NOTE]
-        >  Aby uzyskać więcej informacji o sposobie poprawić użyteczność i dostępności pasków narzędzi, zobacz [porady: Ustawianie opcji ułatwień dostępu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).  
+        >  Aby uzyskać więcej informacji o sposobie poprawić użyteczność i dostępności pasków narzędzi, zobacz [porady: opcje ułatwień dostępu IDE ustawić](../ide/reference/how-to-set-ide-accessibility-options.md).  
   
 ## <a name="customizing_menu">Dostosowywanie menu lub pasek narzędzi</a>
   
-1.  Na pasku menu wybierz **narzędzia**, **Dostosuj**.  
+1.  Na pasku menu wybierz **narzędzia** > **Dostosuj**.  
   
     **Dostosuj** zostanie otwarte okno dialogowe.  
   
@@ -104,9 +104,9 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
   
     -   Do grupy poleceń w linii poziomej, wybierz polecenie pierwszy w **formanty** wybierz **Modyfikuj zaznaczenie** przycisk, a następnie wybierz pozycję **Rozpocznij grupę** w wyświetlonym menu.  
   
-## <a name="resetting-a-menu-or-a-toolbar"></a>Resetowanie menu lub paska narzędzi  
+## <a name="reset-a-menu-or-a-toolbar"></a>Resetowanie menu lub pasek narzędzi  
   
-1.  Na pasku menu wybierz **narzędzia**, **Dostosuj**.  
+1.  Na pasku menu wybierz **narzędzia** > **Dostosuj**.  
   
     **Dostosuj** zostanie otwarte okno dialogowe.  
   
@@ -120,4 +120,4 @@ Visual Studio można dostosowywać, nie tylko przez dodawanie i usuwanie menu pa
 
 ## <a name="see-also"></a>Zobacz także
 [Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)  
-[Dopasowywanie edytora](../ide/customizing-the-editor.md)
+[Dostosowywanie edytora](../ide/customizing-the-editor.md)

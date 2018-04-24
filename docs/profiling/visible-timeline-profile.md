@@ -2,8 +2,7 @@
 title: Profil widocznej osi czasu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.activelegend
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a84787555442f4fd895556ece8991c2ce2c6d49f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9917aa941dc867819f1e83bd24ced884614a8db
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visible-timeline-profile"></a>Profil widocznej osi czasu
 Profil widocznej osi czasu dla widoku wątków blokuje zawiera informacje statystyczne i linki do raportów. Można powiększać, pomniejszyć, przewijane w poziomie, Ukryj kanały lub Pokaż kanały, numery w legendzie active zmienić do uwzględnienia, co to jest aktualnie w widoku. Aby wyświetlić raport dotyczący elementu w legendzie, kliknij element.  

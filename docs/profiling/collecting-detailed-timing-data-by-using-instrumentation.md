@@ -2,8 +2,7 @@
 title: Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f16376ca9fe86dcb7d68cc7a0ca7e4f2d36db2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4ae0813b2405fe81b5c6c92fbd2cfed0a6faee2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metody Instrumentacji w narzędziach profilowania injects profilowania kodu do kopii modułu. Każdy wpis, zakończenia i wywołanie funkcji funkcji w module kod rejestruje podczas przebiegu profilowania. Metoda Instrumentacji jest przydatne do zbierania czasu szczegółowe informacje o sekcji kodu i zrozumienie wpływu wejściowymi i wyjściowymi operacje na wydajność aplikacji.  

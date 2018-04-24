@@ -1,9 +1,10 @@
 ---
-title: Znane problemy dotyczące kontenerów | Dokumentacja firmy Microsoft
+title: Znane problemy dotyczące kontenerów
+description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania programu Visual Studio kompilacji 2017 narzędzia do kontenera systemu Windows.
 ms.custom: ''
-ms.date: 10/18/2017
-ms.technology:
-- vs-acquisition
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
@@ -11,11 +12,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4052be27d5be1298f78c3e736fd5039cf69f7c07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b33bae8474e2ed047766d8c749b088216820f095
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
 
@@ -27,9 +28,12 @@ Następujące znane problemy występować po zainstalowaniu programu Visual Stud
 
 * Nie można zainstalować programu Visual Studio do kontenera oparte na microsoft/windowsservercore:10.0.14393.1593 obrazu. Obrazy z systemu Windows w wersji starszej lub nowszej powinna działać.
 * Nie można zainstalować zestaw Windows SDK w wersji wcześniejszej niż 10.0.14393. Niektóre pakiety nie można zainstalować i obciążeń, które są zależne od tych pakietów nie będzie działać.
-* Należy podać `-m 2GB` (lub więcej) podczas tworzenia obrazu. Niektóre obciążenia wymagają więcej pamięci niż domyślna 1 GB, podczas instalacji.
-* Należy skonfigurować Docker do dysków o większych niż domyślne 20 GB.
-* Należy podać `--norestart` w wierszu polecenia. Zgodnie z tym próba ponownego uruchomienia kontenera systemu Windows z poziomu kontenera zwraca `ERROR_TOO_MANY_OPEN_FILES` do hosta.
+* Przekaż `-m 2GB` (lub więcej) podczas tworzenia obrazu. Niektóre obciążenia wymagają więcej pamięci niż domyślna 1 GB, podczas instalacji.
+* Skonfiguruj Docker do dysków o większych niż domyślne 20 GB.
+* Przekaż `--norestart` w wierszu polecenia. Zgodnie z tym próba ponownego uruchomienia kontenera systemu Windows z poziomu kontenera zwraca `ERROR_TOO_MANY_OPEN_FILES` do hosta.
+* Jeśli obraz jest oparty bezpośrednio na program microsoft/windowsservercore, .NET Framework nie może poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Zarządzany kod może nie działać po zakończeniu instalacji. Zamiast tego, na podstawie obrazu [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Na przykład może zostać wyświetlony błąd podczas kompilowania przy użyciu programu MSBuild, takich jak:
+
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.TARGETS(84,5): błąd MSB6003: nie można uruchomić pliku wykonywalnego "csc.exe" określonego zadania. Nie można załadować pliku lub zestawu ' System.IO.FileSystem, wersja = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a' lub jednej z jego zależności. W systemie nie można odnaleźć określonego pliku.
 
 ## <a name="build-tools-container"></a>Kontener narzędzia kompilacji
 
@@ -38,13 +42,15 @@ Następujące znane problemy mogą wystąpić, jeśli używasz kontenera Build T
 * Funkcja IntelliTrace nie może działać w [Niektóre scenariusze](https://github.com/Microsoft/vstest/issues/940) w kontenerze.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 

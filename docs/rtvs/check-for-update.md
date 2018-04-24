@@ -1,23 +1,20 @@
 ---
 title: Bieżąca wersja narzędzia R
 description: Jak sprawdzić wersję R narzędzi dla programu Visual Studio i zainstaluj aktualizacje.
-ms.custom: ''
 ms.date: 01/24/2018
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: ade64c0fade1e3ead83efb7b798708a1611e956e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 20811c10ddad6df18512f23aa1312f154c2e294b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="rtvs-current-version"></a>Bieżąca wersja RTVS
 

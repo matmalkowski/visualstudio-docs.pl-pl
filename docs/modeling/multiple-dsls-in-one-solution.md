@@ -1,6 +1,5 @@
 ---
-title: Wiele DSLs w jedno rozwiązanie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wiele języków DSL w jednym rozwiązaniu
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,56 +8,57 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7614189f73880bcf07f418e3bd72400f460f721
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aeb20a43c3311fff7aa66d37128003d81a5b18c2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
-Można spakować DSLs kilka w ramach jednego rozwiązania, dzięki czemu są one zainstalowane ze sobą.  
-  
- Kilka technik umożliwia integrację wielu DSLs. Aby uzyskać więcej informacji, zobacz [integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) i [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md) i [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).  
-  
-### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Aby utworzyć więcej niż jeden DSL w tym samym rozwiązaniu  
-  
-1.  Utwórz dwa lub więcej rozwiązań DSL i projektu VSIX, a następnie dodać wszystkie projekty do jednego rozwiązania.  
-  
-    -   Aby utworzyć nowy projekt VSIX: W **nowy projekt** okno dialogowe, wybierz opcję **Visual C#**, **rozszerzalności**, **projektu VSIX**.  
-  
-    -   Utwórz dwa lub więcej rozwiązań DSL w katalog rozwiązania VSIX.  
-  
-         Dla każdego DSL Otwórz nowe wystąpienie programu Visual Studio. Utwórz nowy DSL i określ tego samego folderu rozwiązania jako rozwiązanie VSIX.  
-  
-         Upewnij się, tworzenie każdego DSL z rozszerzeniem innej nazwy pliku.  
-  
-    -   Zmiana nazwy **Dsl** i **DslPackage** projekty, dzięki czemu są one różne. Na przykład: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
-  
-    -   W każdym **DslPackage\*\source.extension.tt**, zaktualizuj ten wiersz do poprawnej nazwy projektu Dsl:  
-  
-         `string dslProjectName = "Dsl2";`  
-  
-    -   W rozwiązaniu VSIX, Dodaj Dsl * i DslPackage\* projektów.  
-  
-         Można umieścić w osobnym folderze rozwiązania każdej pary.  
-  
-2.  Łączenie manifestach VSIX DSLs:  
-  
-    1.  Otwórz * YourVsixProject ***\source.extension.manifest**.  
-  
-    2.  Dla każdego DSL wybierz **Dodaj zawartość** i dodać:  
-  
-        -   `Dsl*` projekt jako **składników MEF**  
-  
-        -   `DslPackage*` projekt jako **składników MEF**  
-  
-        -   `DslPackage*` projekt jako **pakiet programu VS**  
-  
-3.  Skompiluj rozwiązanie.  
-  
- Wynikowa VSIX zainstaluje zarówno DSLs. Można przetestować je za pomocą F5 lub wdrożyć * YourVsixProject ***\bin\Debug\\\*.vsix**.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)
+Można spakować DSLs kilka w ramach jednego rozwiązania, dzięki czemu są one zainstalowane ze sobą.
+
+ Kilka technik umożliwia integrację wielu DSLs. Aby uzyskać więcej informacji, zobacz [integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) i [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md) i [Dostosowywanie zachowania kopii](../modeling/customizing-copy-behavior.md).
+
+### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Aby utworzyć więcej niż jeden DSL w tym samym rozwiązaniu
+
+1.  Utwórz dwa lub więcej rozwiązań DSL i projektu VSIX, a następnie dodać wszystkie projekty do jednego rozwiązania.
+
+    -   Aby utworzyć nowy projekt VSIX: W **nowy projekt** okno dialogowe, wybierz opcję **Visual C#**, **rozszerzalności**, **projektu VSIX**.
+
+    -   Utwórz dwa lub więcej rozwiązań DSL w katalog rozwiązania VSIX.
+
+         Dla każdego DSL Otwórz nowe wystąpienie programu Visual Studio. Utwórz nowy DSL i określ tego samego folderu rozwiązania jako rozwiązanie VSIX.
+
+         Upewnij się, tworzenie każdego DSL z rozszerzeniem innej nazwy pliku.
+
+    -   Zmiana nazwy **Dsl** i **DslPackage** projekty, dzięki czemu są one różne. Na przykład: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+
+    -   W każdym **DslPackage\*\source.extension.tt**, zaktualizuj ten wiersz do poprawnej nazwy projektu Dsl:
+
+         `string dslProjectName = "Dsl2";`
+
+    -   W rozwiązaniu VSIX, Dodaj Dsl * i DslPackage\* projektów.
+
+         Można umieścić w osobnym folderze rozwiązania każdej pary.
+
+2.  Łączenie manifestach VSIX DSLs:
+
+    1.  Otwórz * YourVsixProject ***\source.extension.manifest**.
+
+    2.  Dla każdego DSL wybierz **Dodaj zawartość** i dodać:
+
+        -   `Dsl*` projekt jako **składników MEF**
+
+        -   `DslPackage*` projekt jako **składników MEF**
+
+        -   `DslPackage*` projekt jako **pakiet programu VS**
+
+3.  Skompiluj rozwiązanie.
+
+ Wynikowa VSIX zainstaluje zarówno DSLs. Można przetestować je za pomocą F5 lub wdrożyć * YourVsixProject ***\bin\Debug\\\*.vsix**.
+
+## <a name="see-also"></a>Zobacz też
+
+- [Integrowanie modeli za pomocą Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
+- [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)

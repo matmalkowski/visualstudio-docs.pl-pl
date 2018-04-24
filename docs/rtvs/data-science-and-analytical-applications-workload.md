@@ -1,22 +1,20 @@
 ---
 title: Obciążenie nauki dane i aplikacje analitycznych
 description: 'Obciążenie nauki dane i aplikacje analityczne w programie Visual Studio łączy Python, R, F # i ich dystrybucje odpowiednich środowiska uruchomieniowego tym Anaconda.'
-ms.custom: ''
 ms.date: 01/24/2018
-ms.technology:
-- devlang-r
-- devlang-python
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs - vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5b2a1eccfbf90784d19ded18667e8b336d920892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Obciążenie nauki dane i aplikacje analitycznych
 

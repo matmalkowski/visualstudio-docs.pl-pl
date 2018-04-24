@@ -1,23 +1,22 @@
 ---
-title: Visual Studio 2017 numery kompilacji i daty wydania | Dokumentacja firmy Microsoft
+title: Visual Studio 2017 numery kompilacji i daty wydania
 description: Lista wydanych wersji i numerów kompilacji dla programu Visual Studio 2017 r, sortować według daty.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/10/2018
+ms.date: 04/18/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 1874ab8f88f87546ceef12432e93ba03a65ad496
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 numery kompilacji i daty wydania
 
@@ -25,7 +24,9 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.6.6 | Wydanie | 10 kwietnia 2018 | 15.6.27428.2037 | 
+| 15.7.0 Podgląd 4.0 | Wersja zapoznawcza | 18 kwietnia 2018 | 15.7.27617.1 |
+| 15.6.6 | Wydanie | 10 kwietnia 2018 | 15.6.27428.2037 |
+| 15.0.12 | Wydanie | 10 kwietnia 2018 | 15.0.26228.30 |
 | 15.7.0 Podgląd 3.0 | Wersja zapoznawcza | 9 kwietnia 2018 | 15.7.27604.0 |
 | 15.6.5 | Wydanie | 4 kwietnia 2018 | 15.6.27428.2027 |
 | 15.6.4 | Wydanie | 22 marca 2018 | 15.6.27428.2015 |
@@ -126,8 +127,8 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 

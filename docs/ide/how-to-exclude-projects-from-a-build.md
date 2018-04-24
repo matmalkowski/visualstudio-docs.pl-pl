@@ -11,13 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fcfe1170c3b5503baa1515227a954080d10ed09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a09f18ccb491474c5db20724ccea501fc94c14a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Poradnik: Wykluczanie projektów z kompilacji
+# <a name="how-to-exclude-projects-from-a-build"></a>Porady: wykluczanie projektów z kompilacji
 Można tworzyć rozwiązania bez tworzenia wszystkie projekty, które zawiera. Może na przykład wykluczyć projektu, który dzieli kompilacji. Można następnie zbudować projekt po możesz zbadać i adres problemy.  
   
  Projekt można wykluczyć, wykonując następujących metod:  
@@ -26,11 +26,11 @@ Można tworzyć rozwiązania bez tworzenia wszystkie projekty, które zawiera. M
   
 -   Tworzenie konfiguracji rozwiązania, która nie zawiera projektu.  
   
- Aby uzyskać więcej informacji, zobacz [opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).  
+ Aby uzyskać więcej informacji, zobacz [konfiguracje kompilacji omówienie](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Aby tymczasowo usunąć projekt z aktywnej konfiguracji rozwiązania  
   
-1.  Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+1.  Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.  
   
 2.  W **projektu kontekstów** tabeli, Znajdź projektu, które chcesz wykluczyć z kompilacji.  
   
@@ -40,7 +40,7 @@ Można tworzyć rozwiązania bez tworzenia wszystkie projekty, które zawiera. M
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Aby utworzyć konfigurację rozwiązania, która nie obejmuje projektu  
   
-1.  Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+1.  Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.  
   
 2.  W **aktywnej konfiguracji rozwiązania** wybierz  **\<nowy >**.  
   
@@ -52,9 +52,9 @@ Można tworzyć rozwiązania bez tworzenia wszystkie projekty, które zawiera. M
   
 6.  Na **standardowe** narzędzi, sprawdź, czy nowa konfiguracja rozwiązania jest aktywna konfiguracja w **konfiguracje rozwiązania** pole.  
   
-7.  Na pasku menu wybierz **kompilacji**, **Kompiluj ponownie rozwiązanie**.  
+7.  Na pasku menu wybierz **kompilacji** > **Kompiluj ponownie rozwiązanie**.  
   
-## <a name="see-also"></a>Zobacz też  
- [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Zrozumienie konfiguracje kompilacji](../ide/understanding-build-configurations.md)   
  [Porady: tworzenie i edycja konfiguracji](../ide/how-to-create-and-edit-configurations.md)   
- [Instrukcje: Równoczesne kompilowanie wielu konfiguracji](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Porady: równoczesne kompilowanie wielu konfiguracji](../ide/how-to-build-multiple-configurations-simultaneously.md)

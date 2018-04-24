@@ -2,19 +2,18 @@
 title: Analizowanie użycia pamięci w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1c7f9420c2e5a9d3225ae0e8ab0d9023afb275
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profil w programie Visual Studio
 Wyszukiwanie przecieków pamięci i nieefektywne pamięci podczas debugowania kodu z debugera zintegrowane **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, należy wykonać co najmniej jeden *migawki* zarządzanego i natywnego pamięci sterty ułatwi zrozumienie wpływu użycia pamięci typy obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszane (.NET i natywnego) aplikacji.  

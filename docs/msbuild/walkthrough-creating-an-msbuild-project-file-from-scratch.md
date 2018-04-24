@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01e917d0e46c6e5a5d91473332062a75ff1e33d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0a6fdb894c7dd2177afc7ced375b575de7d9532
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Wskazówki: tworzenie pliku projektu MSBuild od zera
 Języki programowania, które odnoszą się do programu .NET Framework Użyj pliki projektu MSBuild do opisu i kontrolować proces kompilacji aplikacji. Podczas tworzenia pliku projektu MSBuild za pomocą programu Visual Studio odpowiedniego pliku XML jest automatycznie dodawane do pliku. Jednak może być dobrze zrozumieć sposób organizowania XML i jak można zmienić do kontrolowania kompilacji.  

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8497c937006d53bf6cd6f8f5b1a773fdf44137
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dae51959313a7108c54466dff08b3641525818cd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 W wersjach programu MSBuild przed wersji 15 Jeśli chcesz podać nowych, niestandardowych właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy zdefiniować właściwości w *.props* pliku, a następnie zaimportować jawnie *.props* pliku w każdym projekcie w rozwiązaniu, między innymi.
@@ -76,7 +76,7 @@ Załóżmy, że ta struktura standardowego rozwiązania:
     \Project2Tests
 ````
 
-Może być pożądane mają wspólne właściwości wszystkich projektów *(1)*, typowe właściwości *src* projekty *(2-src)*i wspólnych właściwości  *Testowanie* projekty *(2 test)*.
+Może być pożądane mają wspólne właściwości wszystkich projektów *(1)*, typowe właściwości *src* projekty *(2-src)* i wspólnych właściwości  *Testowanie* projekty *(2 test)*.
 
 Dla programu MSBuild poprawnie scalić pliki "wewnętrzna" (*2-src* i *2 test*) z pliku "zewnętrzna" (*1*), weź pod uwagę raz program MSBuild wyszukuje *Directory.Build.props* pliku przestaje dalsze skanowanie. Aby kontynuować skanowania i scalić z zewnętrznym plikiem, umieść to w oba pliki wewnętrzny:
 

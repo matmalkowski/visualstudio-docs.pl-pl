@@ -1,12 +1,9 @@
 ---
 title: Pomiaru wydajności kodu języka Python
 description: Jak używać profilera Visual Studio Aby sprawdzić wydajność Python code podczas usnig tłumaczy na podstawie języka CPython.
-ms.custom: ''
 ms.date: 01/09/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be39e1b9f8c30447ac227a1dcc86890afad9701c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f0bd25221f975cd8df122af51af20d125a43a65
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-python-code"></a>Profilowanie kodu języka Python
 

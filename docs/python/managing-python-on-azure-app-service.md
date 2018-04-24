@@ -1,12 +1,9 @@
 ---
 title: Instalowanie tłumaczy Python i bibliotek w usłudze Azure App Service
 description: Jak zainstalować interpreter języka Python i bibliotek w usłudze Azure App Service i konfigurowanie aplikacji sieci web, aby poprawnie odwoływać się do tego interpreter.
-ms.custom: ''
 ms.date: 09/13/2017
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -15,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 31028de1c077712b56b27c96003b5fd88eb68cbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Zarządzanie językiem Python w usłudze Azure App Service
 

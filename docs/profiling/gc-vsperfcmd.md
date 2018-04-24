@@ -2,8 +2,7 @@
 title: GC (VSPerfCmd) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a31b65326da8ffb5747278dc18fb492cb068f9f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23ab79ddf73b8481f8393ac39696bc0a5ee74c75
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 **GC** opcja umożliwia zbieranie danych .NET Framework pamięci alokacji i obiektu okres istnienia. **GC** opcja może być używana tylko z metoda profilowania próbkowania i tylko **uruchamianie** opcji.  

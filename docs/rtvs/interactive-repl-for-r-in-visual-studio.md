@@ -1,23 +1,20 @@
 ---
 title: Interaktywny REPL dla języka R
 description: Jak używać interaktywne środowisko REPL dla inVisual Studio R, który jest zintegrowany z okna edytora.
-ms.custom: ''
 ms.date: 06/28/2017
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f40c5a7d00672422d861fad3caf16b0285949b6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12d5ae929c34b100ed83ea23823e88f7efbc5d14
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-the-r-interactive-window"></a>Praca z okno interaktywne R
 

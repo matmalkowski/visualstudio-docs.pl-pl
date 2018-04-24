@@ -1,10 +1,8 @@
 ---
-title: 'CA1901: Deklaracje P Invoke powinny być przenośne | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1901: Deklaracje P Invoke powinny być przenośne'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -17,65 +15,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c58860c09ab1ef0bb1f6cac15c380fe22dfc93
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45adbedf9318c70b1e73088765cf5487d997d1e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje P/Invoke powinny być przenośne
-|||  
-|-|-|  
-|TypeName|PInvokeDeclarationsShouldBePortable|  
-|CheckId|CA1901|  
-|Kategoria|Microsoft.Portability|  
-|Zmiana kluczowa|Dzielenie - P/Invoke jest widoczna poza zestaw. Bez podziału — Jeśli P/Invoke nie jest widoczna poza zestaw.|  
-  
-## <a name="cause"></a>Przyczyna  
- Ta zasada oblicza rozmiar każdego parametru i wartość zwracaną P/Invoke i sprawdza, czy ich rozmiar przekazywane do kodu niezarządzanego na platformach 32-bitowe i 64-bitowych, jest poprawny. Najbardziej typowe naruszenie tej reguły jest do przekazania liczby całkowitej stałym rozmiarze, gdy wymagane jest zależny od platformy, wielkości wskaźnika zmiennej.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Jedną z poniższych scenariuszy narusza tę regułę występuje:  
-  
--   Zwracana wartość lub parametr jest typu jako liczba całkowita stałym rozmiarze, gdy należy wpisać jako `IntPtr`.  
-  
--   Zwracana wartość lub parametr jest typu `IntPtr` po powinny być typizowane jako liczba całkowita stałym rozmiarze.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- To naruszenie można rozwiązać przy użyciu `IntPtr` lub `UIntPtr` do reprezentowania uchwytów zamiast `Int32` lub `UInt32`.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie należy pominąć to ostrzeżenie.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano naruszenie tej reguły.  
-  
-```csharp  
-internal class NativeMethods  
-{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, IntPtr nIconIndex);  
-}  
-```  
-  
- W tym przykładzie `nIconIndex` parametru jest zadeklarowany jako `IntPtr`, które wynosi 4 bajty szerokości na 32-bitowej platformy i 8 bajtów szerokości na 64-bitowej platformy. W deklaracji niezarządzane poniżej, można stwierdzić, że `nIconIndex` jest liczbą całkowitą bez znaku 4-bajtowych na wszystkich platformach.  
-  
-```csharp  
-HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
-    UINT nIconIndex);  
-```  
-  
-## <a name="example"></a>Przykład  
- Aby naprawić naruszenie, zmień deklarację do następującego:  
-  
-```csharp  
-internal class NativeMethods{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, uint nIconIndex);  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
+|||
+|-|-|
+|TypeName|PInvokeDeclarationsShouldBePortable|
+|CheckId|CA1901|
+|Kategoria|Microsoft.Portability|
+|Zmiana kluczowa|Dzielenie - P/Invoke jest widoczna poza zestaw. Bez podziału — Jeśli P/Invoke nie jest widoczna poza zestaw.|
+
+## <a name="cause"></a>Przyczyna
+ Ta zasada oblicza rozmiar każdego parametru i wartość zwracaną P/Invoke i sprawdza, czy ich rozmiar przekazywane do kodu niezarządzanego na platformach 32-bitowe i 64-bitowych, jest poprawny. Najbardziej typowe naruszenie tej reguły jest do przekazania liczby całkowitej stałym rozmiarze, gdy wymagane jest zależny od platformy, wielkości wskaźnika zmiennej.
+
+## <a name="rule-description"></a>Opis reguły
+ Jedną z poniższych scenariuszy narusza tę regułę występuje:
+
+-   Zwracana wartość lub parametr jest typu jako liczba całkowita stałym rozmiarze, gdy należy wpisać jako `IntPtr`.
+
+-   Zwracana wartość lub parametr jest typu `IntPtr` po powinny być typizowane jako liczba całkowita stałym rozmiarze.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ To naruszenie można rozwiązać przy użyciu `IntPtr` lub `UIntPtr` do reprezentowania uchwytów zamiast `Int32` lub `UInt32`.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie należy pominąć to ostrzeżenie.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie pokazano naruszenie tej reguły.
+
+```csharp
+internal class NativeMethods
+{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, IntPtr nIconIndex);
+}
+```
+
+ W tym przykładzie `nIconIndex` parametru jest zadeklarowany jako `IntPtr`, które wynosi 4 bajty szerokości na 32-bitowej platformy i 8 bajtów szerokości na 64-bitowej platformy. W deklaracji niezarządzane poniżej, można stwierdzić, że `nIconIndex` jest liczbą całkowitą bez znaku 4-bajtowych na wszystkich platformach.
+
+```csharp
+HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
+    UINT nIconIndex);
+```
+
+## <a name="example"></a>Przykład
+ Aby naprawić naruszenie, zmień deklarację do następującego:
+
+```csharp
+internal class NativeMethods{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, uint nIconIndex);
+}
+```
+
+## <a name="see-also"></a>Zobacz też
  [Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)

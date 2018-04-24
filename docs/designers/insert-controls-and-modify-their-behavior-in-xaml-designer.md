@@ -1,5 +1,5 @@
 ---
-title: Wstawianie kontrolek i modyfikowanie ich zachowania w Projektancie XAML | Dokumentacja firmy Microsoft
+title: Wstawianie kontrolek i modyfikowanie ich zachowania w programie Projektant XAML
 ms.date: 11/04/2016
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08d9f47189e9308d54cf554f20e764c7f1396003
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b2572194d2eb154822355f8dffef506fb1c3ffb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Wstawianie kontrolek i modyfikowanie ich zachowania w programie Projektant XAML
 

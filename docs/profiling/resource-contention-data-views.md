@@ -2,8 +2,7 @@
 title: Widok danych Kontencji zasobów | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbb916de2e867830770dfccf265bf2fc08839342
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 320ccc34840cb56646a52f82dc2eb8985fdb5da6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resource-contention-data-views"></a>Widok danych kontencji zasobów
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów profilera plików danych, które zawierają dane profilowania rywalizacji wątku.  

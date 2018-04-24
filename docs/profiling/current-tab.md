@@ -2,8 +2,7 @@
 title: Aktualna karta | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5628091ed462a08173bbaef7dcb5b873e1ec18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7855ddd258faf6b5c7b4b7825a67171d0fce0818
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="current-tab"></a>Aktualna karta
 Klikając **bieżącego** karcie, można wyświetlić stosu wywołań (jeśli jest dostępny) to najbardziej zbliżony do bieżącego punktu zaznaczenie na osi czasu Jeśli segment wątku procesora CPU jest zaznaczony.  W takim przypadku punkt wyboru jest reprezentowana przez czarną strzałkę lub karetkę powyżej osi czasu. Po wybraniu segment blokujący karetkę nie jest wyświetlana, ponieważ nie było żadnych wykonywania. Jednak nadal jest podświetlona segmentu i zostanie wyświetlony stos wywołań.  

@@ -1,11 +1,9 @@
 ---
 title: Wybierając środowisko dla projektu
 description: W Eksploratorze rozwiązań programu Visual Studio można przypisać określone interpreter języka Python (Środowisko) zawsze na użytek żadnym konkretnym projektem, ignorowanie domyślnego środowiska. Można również tworzyć i zarządzać środowiskami wirtualnymi.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.technology:
-- devlang-python
-ms.devlang: python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 50be456682594b881671a63364f45745ebb85409
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Zaznaczanie interpreter języka Python i środowiska do użycia w projekcie
 
@@ -108,7 +106,7 @@ W Eksploratorze rozwiązań rozwiń węzeł w danym środowisku, aby szybko wyś
 
 Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowisko i wybierz **zainstaluj pakiet języka Python...**  Aby przełączyć się do **pakiety** karcie **środowiska Python** okna. Wprowadź wyszukiwania termin (zazwyczaj nazwa pakietu) i Visual Studio zawiera pasujące pakiety.
 
-W programie Visual Studio pakietów (i zależności) są pobierane z [indeksu pakietów języka Python (PyPI)](https://pypi.python.org/pypi), gdzie można także przeszukać dostępnych pakietów. Pasek stanu programu Visual Studio i okno dane wyjściowe zawierają informacje o instalacji. Aby odinstalować pakiet, kliknij prawym przyciskiem wybierz **Usuń**.
+W programie Visual Studio pakietów (i zależności) są pobierane z [indeksu pakietów języka Python (PyPI)](https://pypi.org), gdzie można także przeszukać dostępnych pakietów. Pasek stanu programu Visual Studio i okno dane wyjściowe zawierają informacje o instalacji. Aby odinstalować pakiet, kliknij prawym przyciskiem wybierz **Usuń**.
 
 Należy pamiętać, że wyświetlane wpisy nie zawsze są dokładne i instalowaniem i odinstalowywaniem nie może być niezawodne lub są dostępne. Visual Studio korzysta z Menedżera pakietów pip, jeśli jest dostępny i pobiera i instaluje je w razie potrzeby. Program Visual Studio umożliwia także easy_install Menedżera pakietów. Pakiety zainstalowane przy użyciu `pip` lub `easy_install` również są wyświetlane w wierszu polecenia.
 

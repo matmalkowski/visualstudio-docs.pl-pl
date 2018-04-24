@@ -2,8 +2,7 @@
 title: Wdrażanie składników COM za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 Wdrożenie starszych składników modelu COM został tradycyjnie trudne. Składniki należy zarejestrować globalnie i w związku z tym może spowodować niepożądane skutki uboczne między aplikacjami nakładające się. Ta sytuacja zwykle nie jest problem w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub side-by-side zgodny. Program Visual Studio umożliwia wdrażanie izolowane składniki modelu COM systemu Windows XP lub wyższej systemu operacyjnego.  

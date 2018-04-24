@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ea9217e0b7025c2c802d1a632e16ca30d99336a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7a388f14040cedd7fd05fd7ffdbb47ba7a8ff09
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="model-editor"></a>Edytor modelu
 
-Tym dokumencie opisano sposób pracy z wyświetlanie, tworzenie i modyfikowanie modeli 3-w edytorze programu Visual Studio modelu.
+Ten dokument zawiera opis sposobu pracy w edytorze programu Visual Studio modelu można wyświetlać, tworzyć i modyfikować modeli 3D.
 
-Edytor modelu może być użyty do tworzenia podstawowych modeli trójwymiarowych od początku lub do wyświetlania i modyfikowania bardziej złożonych modeli trójwymiarowych, utworzonych przy użyciu profesjonalnych narzędzi do modelowania trójwymiarowego. Edytor modelu obsługuje kilka formatów modeli 3-W, które są używane w rozwoju aplikacji DirectX.
+Edytor modelu do utworzenia podstawowego modeli 3D od początku, lub do wyświetlania i modyfikowania bardziej skomplikowane modeli 3D, które zostały utworzone przy użyciu kompletne 3D modelowania narzędzia. Edytor modelu obsługuje kilka formatów modelu 3D, które są używane do rozwoju aplikacji DirectX.
 
 ## <a name="supported-formats"></a>Obsługiwane formaty
 
@@ -36,9 +36,9 @@ W edytorze modeli obsługiwanych formatach modelu:
 
 ## <a name="get-started"></a>Wprowadzenie
 
-Ta sekcja zawiera opis sposobu dodawania 3-w modelu do projektu programu Visual Studio i przedstawiono podstawowe informacje wymagane do rozpoczęcia pracy.
+Ta sekcja zawiera opis sposobu dodawania modelu 3D do projektu programu Visual Studio i przedstawiono podstawowe informacje wymagane do rozpoczęcia pracy.
 
-### <a name="to-add-a-3-d-model-to-your-project"></a>Aby dodać model 3-W do projektu
+### <a name="to-add-a-3d-model-to-your-project"></a>Aby dodać do projektu modelu 3D
 
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz dodać obraz do, a następnie wybierz pozycję **Dodaj** > **nowy element**.
 
@@ -57,19 +57,19 @@ Ta sekcja zawiera opis sposobu dodawania 3-w modelu do projektu programu Visual 
 
 ### <a name="axis-orientation"></a>Orientacja osi
 
-Visual Studio obsługuje co orientacji 3-osi i ładuje informacje orientacji osi z modelu formatów plików, które obsługują tę. Jeśli nie orientacji osi jest określony, domyślnie Visual Studio używa praworęczny układ współrzędnych. **Wskaźnik osi** zawiera bieżącej orientacji osi w prawym dolnym rogu powierzchnię projektu. Na **wskaźnik osi**, red reprezentuje osi x zielony reprezentuje osi y i niebieski reprezentuje osi z.
+Visual Studio obsługuje co orientacji osi 3D i ładuje informacje orientacji osi z modelu formatów plików, które obsługują tę. Jeśli nie orientacji osi jest określony, domyślnie Visual Studio używa praworęczny układ współrzędnych. **Wskaźnik osi** zawiera bieżącej orientacji osi w prawym dolnym rogu powierzchnię projektu. Na **wskaźnik osi**, red reprezentuje osi x zielony reprezentuje osi y i niebieski reprezentuje osi z.
 
-### <a name="begin-your-3-d-model"></a>Rozpocznij modelu 3-w
+### <a name="begin-your-3d-model"></a>Rozpocznij modelu 3D
 
-W edytorze modeli każdego nowego obiektu zawsze zaczyna się jako jeden z podstawowych kształtów 3-w — lub *podstawowych*— wbudowanych w edytorze modeli. Aby utworzyć nowe i wyjątkowe obiekty, dodaj prymityw do sceny, a następnie zmień jego kształt, modyfikując jego wierzchołki. W przypadku złożonych kształtów dodaj dodatkowe wierzchołki za pomocą wyciągnięcia lub podpodziału, a następnie zmodyfikuj je. Aby uzyskać informacje o sposobie dodawania obiektu podstawowego do sceny, zobacz [tworzenie i importowanie obiektów 3-](#Adding3DObjects). Aby uzyskać informacje o tym, jak dodać więcej wierzchołków do obiektu, zobacz [modyfikowanie obiektów](#ModifyingObjects).
+W edytorze modeli każdego nowego obiektu zawsze zaczyna się jako jeden z podstawowych kształtów 3D — lub *podstawowych*— wbudowanych w edytorze modeli. Aby utworzyć nowe i wyjątkowe obiekty, dodaj prymityw do sceny, a następnie zmień jego kształt, modyfikując jego wierzchołki. W przypadku złożonych kształtów dodaj dodatkowe wierzchołki za pomocą wyciągnięcia lub podpodziału, a następnie zmodyfikuj je. Aby uzyskać informacje o sposobie dodawania obiektu podstawowego do sceny, zobacz [tworzenie i importowanie obiektów 3W](#Adding3DObjects). Aby uzyskać informacje o tym, jak dodać więcej wierzchołków do obiektu, zobacz [modyfikowanie obiektów](#ModifyingObjects).
 
 ## <a name="work-with-the-model-editor"></a>Praca z edytorze modeli
 
-W poniższych sekcjach opisano sposób używania Edytora modelu do pracy z modelami trójwymiarowymi.
+W poniższych sekcjach opisano sposób użycia w edytorze modeli do pracy z modeli 3D.
 
 ### <a name="model-editor-toolbars"></a>Paski narzędzi Edytora modelu
 
-Na paskach narzędzi Edytora modelu są dostępne polecenia ułatwiające pracę z modelami 3-W.
+Edytorze modeli paski narzędzi zawierają polecenia ułatwiające pracę z modeli 3D.
 
 Polecenia, które mają wpływ na stan edytorze modeli znajdują się na **tryb edytorze modeli** paska narzędzi w oknie głównym programu Visual Studio. Przy użyciu skryptu polecenia i narzędzia do modelowania znajdują się na **edytorze modeli** narzędzi na powierzchni projektowej edytorze modeli.
 
@@ -82,7 +82,7 @@ Poniższa tabela zawiera opis elementów na **tryb edytorze modeli** narzędzi, 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
 |**Wybierz**|Umożliwia wybór punktów, krawędzi, powierzchni lub obiektów w scenie, w zależności od aktywnego trybu zaznaczenia.|
-|**Przesuwanie**|Umożliwia ruch sceny 3-W względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby aktywować **przesuwanie** tymczasowo w trybie.|
+|**Przesuwanie**|Umożliwia przenoszenie scenę 3D względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby aktywować **przesuwanie** tymczasowo w trybie.|
 |**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W **powiększenie** tryb, wybierz punkt sceny i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> W **wybierz** tryb, możesz można powiększyć lub pomniejszyć za pomocą kółka myszy, gdy naciśnij i przytrzymaj klawisz Ctrl.|
 |**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:** w tym trybie nie ma efektu, jeśli **rzutowanie** projekcji jest włączona.|
 |**Świecie lokalnych**|Po włączeniu tego elementu przekształcenia wybranego obiektu występują w przestrzeni kuli ziemskiej. W przeciwnym razie przekształcenia na zaznaczonym obiekcie występują w przestrzeni lokalnej.|
@@ -99,7 +99,7 @@ Poniższa tabela zawiera opis elementów na **tryb edytorze modeli** narzędzi, 
 |**Przybornik**|Alternatywnie pokazuje lub ukrywa **przybornika**.|
 |**Konspekt dokumentu**|Alternatywnie pokazuje lub ukrywa **konspekt dokumentu** okna.|
 |**Właściwości**|Alternatywnie pokazuje lub ukrywa **właściwości** okna.|
-|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa platformy WARP (Windows Advanced Rasterization Platform) programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Zarządzanie sceny**<br /><br /> **Importujuj**<br /> Importuje obiekty z innego pliku modelu 3-W do bieżącej sceny.<br /><br /> **Dołącz do elementu nadrzędnego**<br /> Ustanawia pierwszy z wielu zaznaczonych obiektów jako nadrzędny dla pozostałych zaznaczonych obiektów.<br /><br /> **Odłącz od elementu nadrzędnego**<br /> Odłącza zaznaczony obiekt od jego obiektu nadrzędnego. Wybrany obiekt staje się *główny obiekt* sceny. Obiekt główny nie ma obiektu nadrzędnego.<br /><br /> **Tworzenie grupy**<br /> Grupuje zaznaczone obiekty jako obiekty równorzędne.<br /><br /> **Scalanie obiektów**<br /> Łączy zaznaczone obiekty w jeden obiekt.<br /><br /> **Utwórz nowy obiekt z wybranej części wielokąta**<br /> Usuwa z bieżącego obiektu wybrane powierzchnie i dodaje do sceny nowy obiekt zawierający te powierzchnie.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć rozwiązanie wielokąta**<br /> Przerzuca wybrane wielokąty, tak że kolejność ich wierzchołków i normalnych powierzchni jest odwrócona.<br /><br /> **Usuń wszystkie animacji**<br /> Usuwa dane animacji z obiektów.<br /><br /> **Przeprowadzić triangulację**<br /> Konwertuje zaznaczony obiekt na trójkąty.<br /><br /> **Widok**<br /><br /> Odrzucanie tylnych ścian<br /> Włącza lub wyłącza odrzucanie tylnych ścian.<br /><br /> **Szybkość klatek**<br /> Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.<br /><br /> Ta opcja jest przydatna podczas włączania **tryb renderowania w czasie rzeczywistym** opcji.<br /><br /> **Pokaż wszystko**<br /> Pokazuje wszystkie obiekty w scenie. Spowoduje to zresetowanie **Hidden** właściwości obiektu do **False**.<br /><br /> **Pokaż wektorów Face**<br /> Pokazuje normalną każdej powierzchni.<br /><br /> **Pokaż brak materiałów**<br /> Wyświetla specjalną teksturę na obiektach, które nie mają przypisanych materiałów.<br /><br /> **Pokaż Pivot**<br /> Włącza lub wyłącza wyświetlanie znacznika osi 3-W w punkcie obrotu aktywnego zaznaczenia.<br /><br /> **Wyświetlanie węzłów symbolu zastępczego**<br /> Pokazuje węzły zastępcze. Węzeł zastępczy jest tworzony podczas grupowania obiektów.<br /><br /> **Pokaż wierzchołka zwykłego**<br /> Pokazuje normalną każdego wierzchołka. **Porada:** można **skryptów** przycisk, aby ponownie uruchomić skrypt ostatni.|
+|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie z D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Renderowanie z D3D11WARP**<br /> Używa platformy WARP (Windows Advanced Rasterization Platform) programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Zarządzanie sceny**<br /><br /> **Importujuj**<br /> Importuje obiekty z innego pliku modelu 3D do bieżącej sceny.<br /><br /> **Dołącz do elementu nadrzędnego**<br /> Ustanawia pierwszy z wielu zaznaczonych obiektów jako nadrzędny dla pozostałych zaznaczonych obiektów.<br /><br /> **Odłącz od elementu nadrzędnego**<br /> Odłącza zaznaczony obiekt od jego obiektu nadrzędnego. Wybrany obiekt staje się *główny obiekt* sceny. Obiekt główny nie ma obiektu nadrzędnego.<br /><br /> **Tworzenie grupy**<br /> Grupuje zaznaczone obiekty jako obiekty równorzędne.<br /><br /> **Scalanie obiektów**<br /> Łączy zaznaczone obiekty w jeden obiekt.<br /><br /> **Utwórz nowy obiekt z wybranej części wielokąta**<br /> Usuwa z bieżącego obiektu wybrane powierzchnie i dodaje do sceny nowy obiekt zawierający te powierzchnie.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć rozwiązanie wielokąta**<br /> Przerzuca wybrane wielokąty, tak że kolejność ich wierzchołków i normalnych powierzchni jest odwrócona.<br /><br /> **Usuń wszystkie animacji**<br /> Usuwa dane animacji z obiektów.<br /><br /> **Przeprowadzić triangulację**<br /> Konwertuje zaznaczony obiekt na trójkąty.<br /><br /> **Widok**<br /><br /> Odrzucanie tylnych ścian<br /> Włącza lub wyłącza odrzucanie tylnych ścian.<br /><br /> **Szybkość klatek**<br /> Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.<br /><br /> Ta opcja jest przydatna podczas włączania **tryb renderowania w czasie rzeczywistym** opcji.<br /><br /> **Pokaż wszystko**<br /> Pokazuje wszystkie obiekty w scenie. Spowoduje to zresetowanie **Hidden** właściwości obiektu do **False**.<br /><br /> **Pokaż wektorów Face**<br /> Pokazuje normalną każdej powierzchni.<br /><br /> **Pokaż brak materiałów**<br /> Wyświetla specjalną teksturę na obiektach, które nie mają przypisanych materiałów.<br /><br /> **Pokaż Pivot**<br /> Włącza lub wyłącza wyświetlanie znacznik osi 3D w punkcie pivot aktywnego zaznaczenia.<br /><br /> **Wyświetlanie węzłów symbolu zastępczego**<br /> Pokazuje węzły zastępcze. Węzeł zastępczy jest tworzony podczas grupowania obiektów.<br /><br /> **Pokaż wierzchołka zwykłego**<br /> Pokazuje normalną każdego wierzchołka. **Porada:** można **skryptów** przycisk, aby ponownie uruchomić skrypt ostatni.|
 
 Oto **edytorze modeli** narzędzi:
 
@@ -121,13 +121,13 @@ W następnej tabeli opisano elementy na **edytorze modeli** narzędzi, które s�
 
 ### <a name="control-the-view"></a>Kontrolki widoku
 
-Scena 3-W jest renderowana zgodnie z widokiem. Można go traktować jako wirtualną kamerę, która ma pozycję i orientację. Aby zmienić położenie i ukierunkowanie, użyj elementów sterujących widok na **tryb edytorze modeli** paska narzędzi.
+Scenę 3D jest renderowany zgodnie z widoku, który można traktować jako wirtualny kamera, która ma położenie i orientacji. Aby zmienić położenie i ukierunkowanie, użyj elementów sterujących widok na **tryb edytorze modeli** paska narzędzi.
 
 W poniższej tabeli opisano formanty widoku podstawowego.
 
 |Formant widoku|Opis|
 |------------------|-----------------|
-|**Przesuwanie**|Umożliwia ruch sceny 3-W względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby aktywować **przesuwanie** tymczasowo w trybie.|
+|**Przesuwanie**|Umożliwia przenoszenie scenę 3D względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybie można naciśnij i przytrzymaj klawisz Ctrl, aby aktywować **przesuwanie** tymczasowo w trybie.|
 |**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W **powiększenie** tryb, wybierz punkt sceny i następnie przenieś go do prawej w dół, aby powiększyć lub mieszczą się w lewej lub do powiększenia.<br /><br /> W **wybierz** tryb, możesz można powiększyć lub pomniejszyć za pomocą kółka myszy, gdy naciśnij i przytrzymaj klawisz Ctrl.|
 |**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:** w tym trybie nie ma efektu, jeśli **rzutowanie** projekcji jest włączona.|
 |**Obiekt ramki**|Umieszcza zaznaczony obiekt w ramce, tak aby znajdował się w środku widoku.|
@@ -139,17 +139,17 @@ Widok jest ustanowiony przez wirtualną kamerę, ale jest również określony p
 |**Perspektywa**|W rzutowaniu perspektywicznym obiekty, które są oddalone od punktu obserwacji, wyglądają na mniejsze, i ostatecznie zbiegają się do jednego punktu w odległości.|
 |**Ortogonalnym**|W rzutowaniu prostopadłym obiekty wydają się mieć taki sam rozmiar, niezależnie od ich odległości od punktu obserwacji. Nie są wyświetlane żadne zbieżności. Gdy **rzutowanie** projekcji włączone, nie można użyć **orbicie** trybu arbitralnie pozycji widok.|
 
-Przydatne może okazać się wyświetlenie sceny trójwymiarowej ze znanego położenia i kąta, na przykład, gdy chcesz porównać dwie podobne sceny. W tym scenariuszu Edytor modelu zawiera kilka wstępnie zdefiniowanych widoków. Aby użyć wstępnie zdefiniowanego widoku na **tryb edytorze modeli** narzędzi wybierz **widoku**, a następnie wybierz wstępnie zdefiniowanego widoku mają — przodu Wstecz, lewo, prawo, top lub bottom. W tych widokach kamera wirtualna patrzy bezpośrednio na źródło sceny. Na przykład, jeśli wybierzesz **góry widoku**, aparat wirtualnego analizuje pochodzenia sceny z bezpośrednio nad nim.
+Może być przydatna do wyświetlania scenę 3D z pozycji znanych i kąt, na przykład, gdy chcesz porównać dwóch podobnych sceny. W tym scenariuszu Edytor modelu zawiera kilka wstępnie zdefiniowanych widoków. Aby użyć wstępnie zdefiniowanego widoku na **tryb edytorze modeli** narzędzi wybierz **widoku**, a następnie wybierz wstępnie zdefiniowanego widoku mają — przodu Wstecz, lewo, prawo, top lub bottom. W tych widokach kamera wirtualna patrzy bezpośrednio na źródło sceny. Na przykład, jeśli wybierzesz **góry widoku**, aparat wirtualnego analizuje pochodzenia sceny z bezpośrednio nad nim.
 
 ### <a name="view-additional-geometry-details"></a>Wyświetl geometrii dodatkowe szczegóły
 
-Aby lepiej zrozumieć obiekt lub scenę 3-W, można wyświetlić dodatkowe szczegóły geometrii, np. normalne wierzchołka, normalne powierzchni, punkty obrotu aktywnego zaznaczenia i inne szczegóły. Aby włączyć lub wyłączyć je na **edytorze modeli** narzędzi wybierz **skryptów**, **widoku**, a następnie wybierz odpowiedni.
+Aby lepiej zrozumieć obiektu 3D lub sceny, można wyświetlić szczegóły geometrii dodatkowe, takie jak normalne wierzchołków, wektorów na powierzchni, pivot punkty aktywne zaznaczenie i inne szczegóły. Aby włączyć lub wyłączyć je na **edytorze modeli** narzędzi wybierz **skryptów**, **widoku**, a następnie wybierz odpowiedni.
 
-### <a name="create-and-import-3-d-objects"></a>Tworzenie i importowanie obiektów 3-w
+### <a name="create-and-import-3d-objects"></a>Tworzenie i importowanie obiektów 3W
 
-Aby dodać wstępnie zdefiniowany kształt 3-sceny w **przybornika**, wybierz jedną, a następnie przenieś go do powierzchni projektu. Nowe kształty są umieszczane w źródle sceny. Edytor modelu udostępnia siedmiu kształtów: **stożkowy**, **modułu**, **Cylinder**, **dysku**, **płaszczyzny**,  **Kuli**, i **Teapot**.
+Aby dodać wstępnie zdefiniowany kształt 3D sceny w **przybornika**, wybierz jedną, a następnie przenieś go do powierzchni projektu. Nowe kształty są umieszczane w źródle sceny. Edytor modelu udostępnia siedmiu kształtów: **stożkowy**, **modułu**, **Cylinder**, **dysku**, **płaszczyzny**,  **Kuli**, i **Teapot**.
 
-Do zaimportowania 3-obiekt z pliku, na **edytorze modeli** narzędzi wybierz **zaawansowane**, **zarządzania sceny**, **zaimportować**, a następnie określ plik, który chcesz zaimportować.
+Można zaimportować obiektu 3D z pliku, na **edytorze modeli** narzędzi wybierz **zaawansowane**, **zarządzania sceny**, **zaimportować**, a następnie określ plik, który chcesz zaimportować.
 
 ### <a name="transform-objects"></a>obiekty przekształceń
 
@@ -184,7 +184,7 @@ Może się to okazać przydatne w pracy z obiektami za pomocą przyciągania do 
 
 Punkt obrotu obiektu definiuje środek obrotu i skalowania. Można zmienić punkt obrotu obiektu, aby zmienić wpływ przekształceń obrotu i skalowania na obiekt. Na **tryb edytorze modeli** narzędzi wybierz **tryb Pivot** do trybu pivot Włącz (lub wyłączona). Po włączeniu trybu obrotu, w punkcie obrotu wybranego obiektu pojawia się mały wskaźnik osi. Następnie można użyć **tłumaczenia** i **obrotu** narzędzi do manipulacji punktu obrotu.
 
-Aby demonstracyjne, który przedstawia sposób użycia punktu obrotu, zobacz [porady: modyfikowanie punktu obrotu 3-w modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+Aby demonstracyjne, który przedstawia sposób użycia punktu obrotu, zobacz [porady: modyfikowanie punktu obrotu 3W modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Tryby lokalne i świata
 
@@ -192,7 +192,7 @@ Translacja i obrotu może wystąpić w jednym współrzędnych lokalnych (lub *l
 
 ### <a name="modify-objects"></a>Modyfikowanie obiektów
 
-Kształt obiektu 3-W można zmienić, przenosząc lub usuwając jego wierzchołki, krawędzie i powierzchnie. Domyślnie w edytorze modeli jest w *tryb obiektu*, dzięki czemu można wybrać i Przekształć całą obiektów. Aby wybrać punkty, krawędzie lub powierzchnie, wybierz odpowiedni tryb wyboru. Na **tryb edytorze modeli** narzędzi wybierz **tryby wyboru**, a następnie wybierz żądany tryb.
+Kształt obiektu 3D można zmienić, przeniesienie lub usunięcie jego wierzchołków, krawędzi i powierzchni. Domyślnie w edytorze modeli jest w *tryb obiektu*, dzięki czemu można wybrać i Przekształć całą obiektów. Aby wybrać punkty, krawędzie lub powierzchnie, wybierz odpowiedni tryb wyboru. Na **tryb edytorze modeli** narzędzi wybierz **tryby wyboru**, a następnie wybierz żądany tryb.
 
  Dodatkowe wierzchołki można utworzyć za pomocą wyciągnięcia lub podpodziału. Wyciągnięcie duplikuje wierzchołki powierzchni (zestaw współpłaszczyznowych wierzchołków), które pozostają połączone przez zduplikowane wierzchołki. Podpodział dodaje wierzchołki, aby utworzyć wiele płaszczyzn tam, gdzie do tej pory była jedna. Aby utworzyć nowe powierzchnie, dodawane są nowe wierzchołki — jeden w środku oryginalnej powierzchni i jeden w połowie każdej krawędzi — które następnie są łączone z oryginalnymi wierzchołkami. Liczba dodanych powierzchni jest równa liczbie krawędzi oryginalnej powierzchni. W obu przypadkach można przesuwać, obracać i skalować nowe wierzchołki, aby zmienić geometrię obiektu.
 
@@ -256,7 +256,7 @@ W zależności od tego, co obsługuje materiał, można zmienić jego właściwo
 
 Aby usunąć wszystkie materiały z obiektu na **edytorze modeli** narzędzi wybierz **skryptów**, **materiałów**, **Usuń materiałów**.
 
-Można użyć **Designer programu do cieniowania** można utworzyć niestandardowego programu do cieniowania materiały, które można zastosować do obiekty sceny 3. Aby uzyskać informacje o sposobie tworzenia niestandardowych programu do cieniowania materiałów, zobacz [Designer programu do cieniowania](../designers/shader-designer.md). Informacji dotyczących sposobu stosowania niestandardowego programu do cieniowania materiały do obiektu, zobacz [porady: dotyczą programu do cieniowania 3-w modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Można użyć **Designer programu do cieniowania** można utworzyć niestandardowego programu do cieniowania materiałów, które można stosować do obiektów na scenie 3D. Aby uzyskać informacje o sposobie tworzenia niestandardowych programu do cieniowania materiałów, zobacz [Designer programu do cieniowania](../designers/shader-designer.md). Informacji dotyczących sposobu stosowania niestandardowego programu do cieniowania materiały do obiektu, zobacz [porady: dotyczą programu do cieniowania modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Zarządzanie sceną
 
@@ -329,6 +329,6 @@ Aby usunąć skojarzenie nadrzędny podrzędny między dwoma obiektami, wybierz 
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Omówienie narzędzia programu Visual Studio, które służą do pracy z zasobów graficznych, takich jak tekstury i obrazów, 3-modele i programu do cieniowania efekty.|
+|[Praca z zasobami 3D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Omówienie narzędzia programu Visual Studio, które służą do pracy z zasobów graficznych, takich jak tekstury i obrazów, modeli 3D i efektów programu do cieniowania.|
 |[Edytor obrazów](../designers/image-editor.md)|Informacje dotyczące używania edytora obrazów programu Visual Studio do pracy z tekstury i obrazów.|
 |[Projektant cieniowania](../designers/shader-designer.md)|Informacje dotyczące używania projektanta programu do cieniowania programu Visual Studio do pracy z programów do cieniowania.|

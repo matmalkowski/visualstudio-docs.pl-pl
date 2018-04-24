@@ -16,11 +16,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49008836057ce6e5b67a0795bc5c6572ef6f7935
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4b36800ea291c6f1bc0948a46b67c4e3549f349
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Dodawanie Menu skrótów okna narzędzi
 W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest menu wyświetlanym po kliknięciu przycisku, pola tekstowego lub tło okna. Polecenia menu skrótów działają tak samo, jak polecenia w innym menu i pasków narzędzi. Aby obsługiwać menu skrótów, określ go w pliku vsct i wyświetl ją w odpowiedzi na kliknij prawym przyciskiem myszy.  
@@ -36,7 +36,7 @@ W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest 
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>Tworzenie pakietu Menu skrótów okna narzędzi  
   
-1.  Tworzenie projektu VSIX o nazwie `TWShortcutMenu` i dodać szablon okna narzędzia o nazwie **ShortCutMenu** do niego. Aby uzyskać więcej informacji na temat tworzenia okna narzędzia, zobacz [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1.  Tworzenie projektu VSIX o nazwie `TWShortcutMenu` i dodać szablon okna narzędzia o nazwie **ShortcutMenu** do niego. Aby uzyskać więcej informacji na temat tworzenia okna narzędzia, zobacz [Tworzenie rozszerzenia z okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="specifying-the-shortcut-menu"></a>Określanie Menu skrótów  
  Menu skrótów, takich jak wskazano w ramach tego przewodnika użytkownicy będą mogli wybrać z listy kolorów, które są używane do wypełnienia tła okna narzędzia.  
@@ -114,7 +114,7 @@ W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest 
     </Buttons>  
     ```  
   
-5.  W ShortcutMenuPackageGuids.cs Dodaj zestawu definicji polecenia identyfikatora GUID, menu skrótów i elementów menu.  
+5.  W ShortcutMenuCommand.cs Dodaj zestawu definicji polecenia identyfikatora GUID, menu skrótów i elementów menu.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -143,7 +143,7 @@ W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest 
     ```csharp  
     protected override void Initialize()  
     {  
-        commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
+        var commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
         Content = new ShortcutMenuControl(commandService);  
     }  
     ```  
@@ -170,12 +170,12 @@ W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest 
         if (null !=commandService)  
         {  
             // Create an alias for the command set guid.  
-            Guid guid = new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet);  
+            Guid guid = new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet);  
   
             // Create the command IDs.   
-            var red = new CommandID(guid, ShortcutMenuPackageGuids.cmdidRed);  
-            var yellow = new CommandID(guid, ShortcutMenuPackageGuids.cmdidYellow);  
-            var blue = new CommandID(guid, ShortcutMenuPackageGuids.cmdidBlue);  
+            var red = new CommandID(guid, ShortcutMenuCommand.cmdidRed);  
+            var yellow = new CommandID(guid, ShortcutMenuCommand.cmdidYellow);  
+            var blue = new CommandID(guid, ShortcutMenuCommand.cmdidBlue);  
   
             // Add a command for each command ID.  
             commandService.AddCommand(new MenuCommand(ChangeColor, red));  
@@ -234,8 +234,8 @@ W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest 
         if (null != commandService)  
         {  
             CommandID menuID = new CommandID(  
-                new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet),  
-                ShortcutMenuPackageGuids.ColorMenu);  
+                new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet),  
+                ShortcutMenuCommand.ColorMenu);  
             Point p = this.PointToScreen(e.GetPosition(this));  
             commandService.ShowContextMenu(menuID, (int)p.X, (int)p.Y);  
         }  
@@ -253,13 +253,13 @@ W tym przewodniku umieszcza menu skrótów okna narzędzia. Menu skrótów jest 
   
         switch (mc.CommandID.ID)  
         {  
-            case ShortcutMenuPackageGuids.cmdidRed:  
+            case ShortcutMenuCommand.cmdidRed:  
                 MyToolWindow.Background = Brushes.Red;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidYellow:  
+            case ShortcutMenuCommand.cmdidYellow:  
                 MyToolWindow.Background = Brushes.Yellow;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidBlue:  
+            case ShortcutMenuCommand.cmdidBlue:  
                 MyToolWindow.Background = Brushes.Blue;  
                 break;  
         }  

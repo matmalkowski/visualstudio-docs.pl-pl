@@ -2,8 +2,7 @@
 title: Widok podsumowania - dane pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1df9005224a583dae06774a4394bcd68bdd1621c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 174f8612dd4f0678d8bbdc8be5c6a9b37cfc8b61
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="summary-view---net-memory-data"></a>Widok podsumowania - dane pamięci .NET
 Widok podsumowania Wyświetla informacje o funkcji .NET i typy, które przydzielone najwięcej pamięci i typy, które zostały utworzone na większości czas przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem łącza powiadomień i listy raport, zobacz [widoku podsumowania](../profiling/summary-view.md).  

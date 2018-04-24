@@ -1,9 +1,9 @@
 ---
 title: Wyłącz lub Przenieś pamięć podręczną pakietów | Dokumentacja firmy Microsoft
-description: Wyłączanie, włączanie lub przenieść pamięć podręczną pakietów dla wdrożeń programu Visual Studio.
+description: Dowiedz się, jak wyłączanie, włączanie lub Przenieś pamięć podręczną pakietów dla wdrożeń programu Visual Studio.
 ms.date: 04/14/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8518aa7be7094a0e8142b5d0f270962c18ca60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b5b6c605577bede4e6820216397a12d5980a04d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="disable-or-move-the-package-cache"></a>Wyłącz lub Przenieś pamięć podręczną pakietów
 
@@ -32,7 +32,7 @@ Instalator pobierze je w razie potrzeby, więc jeśli chcesz zapisać lub odzysk
 
 Aby zainstalować, zmodyfikować lub napraw program Visual Studio lub innych produktów z nowym Instalatorem, możesz uruchomić Instalatora z `--nocache` przełącznika Instalatora.
 
-```
+```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
@@ -40,7 +40,7 @@ Aby zainstalować, zmodyfikować lub napraw program Visual Studio lub innych pro
 
 Jeśli chcesz ponownie włączyć pamięć podręczną, Przekaż `--cache` zamiast tego. Tylko pakiety, które są wymagane będą buforowane, więc należy przywrócić wszystkie pakiety należy naprawić Visual Studio przed odłączyć od sieci.
 
-```
+```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
@@ -53,16 +53,18 @@ Typowa konfiguracja systemu jest mieć systemu Windows zainstalowaną na dysk SS
 Obecnie można tylko w tym przypadku ustawienia `CachePath` [zasad rejestru](set-defaults-for-enterprise-deployments.md) przed zainstalować, zmodyfikować lub napraw program Visual Studio.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
- * [Instalowanie programu Visual Studio](install-visual-studio.md)
- * [Ustawianie wartości domyślnych do wdrożeń w przedsiębiorstwie](set-defaults-for-enterprise-deployments.md)
- * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
+* [Ustawianie wartości domyślnych do wdrożeń w przedsiębiorstwie](set-defaults-for-enterprise-deployments.md)
+* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

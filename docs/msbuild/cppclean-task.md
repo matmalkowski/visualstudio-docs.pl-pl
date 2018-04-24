@@ -3,7 +3,7 @@ title: Cppclean — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
 dev_langs:
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CPPClean task
 - CPPClean task (MSBuild (Visual C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c833640958cefd2ac4f7e798ca3db09cc8819e8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a871effd2b7560cc34ae8e2a91c0b55f63bcfe44
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
 Usuwa pliki tymczasowe, które MSBuild tworzy podczas tworzenia projektu Visual C++. Proces usuwania plików kompilacji jest znany jako *czyszczenia*.  

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 970eb8f942a2a9bdd04b0bd5cf823ddba2f74931
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 26646ecef952a6f4ff761f4e7239fc6e7e920ea1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również nazywany MSBuild, udostępnia schematu XML dla pliku projektu, która kontroluje sposób platformy kompilacji przetwarza i tworzy oprogramowania. Visual Studio będzie korzystać program MSBuild, ale nie jest zależny od programu Visual Studio. Wywołując msbuild.exe w pliku projektu lub rozwiązania, możesz organizować i kompilacji produktów w środowiskach, w którym nie jest zainstalowany program Visual Studio.  

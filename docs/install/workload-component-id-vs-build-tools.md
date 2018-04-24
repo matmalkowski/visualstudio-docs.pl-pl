@@ -1,5 +1,5 @@
 ---
-title: Visual Studio kompilacji narzędzia 2017 obciążenia i składnik identyfikatorów | Dokumentacja firmy Microsoft
+title: Visual Studio kompilacji narzędzia 2017 obciążenia i składnik identyfikatorów
 description: Użyj identyfikatorów obciążenia i składników programu Visual Studio do tworzenia klasycznych aplikacji opartych na systemie Windows
 keywords: ''
 author: TerryGLee
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 415ad88d9ef51a5002c7e64dcd4abf76f97167c3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 677e0b9ea2bd809307e2fd59569f3109f62f0c4a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio kompilacji narzędzia 2017 składników katalogu
 
@@ -46,7 +46,7 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Wymagane
-Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.Component.CoreBuildTools | Podstawowe narzędzia kompilacji programu Visual Studio | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języka C# i Visual Basic Roslyn | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.6.27406.0 | Optional
 
@@ -170,13 +170,15 @@ Microsoft.VisualStudio.Component.VC.Tools.14.11 | Zestaw narzędzi v14.11 wersji
 Microsoft.VisualStudio.Component.VC.Tools.14.12 | Zestaw narzędzi v14.12 wersji 15,5 cala 2017 VC ++ | 15.0.27406.0
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 

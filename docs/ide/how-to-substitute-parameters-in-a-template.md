@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: be187dfca5f31e33d8f451177ba68b4288e29a53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Porady: parametry zastępcze w szablonie
 
@@ -34,7 +34,7 @@ Poniższej sekcji przedstawiono sposób zmodyfikować szablonu, aby zastąpić n
     namespace $safeprojectname$
     ```
 
-1. W pliku .vstemplate szablonu, Znajdź `ProjectItem` element, który zawiera ten plik.
+1. W *.vstemplate* pliku szablonu, Znajdź `ProjectItem` element, który zawiera ten plik.
 
 1. Ustaw `ReplaceParameters` atrybutu `true` dla `ProjectItem` elementu:
 
@@ -44,7 +44,7 @@ Poniższej sekcji przedstawiono sposób zmodyfikować szablonu, aby zastąpić n
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)  
+[Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)  
 [Parametry szablonu](../ide/template-parameters.md)  
 [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem, element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+[Projectitem — element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

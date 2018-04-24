@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - WriteAllTLogs
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dcfb45d9ba6cbab1df06e88451e0fa433231d16c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8de6a67be8390f2b4353b05eea489c07e095b092
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 Zapisuje dzienniki śledzenia dla wszystkich wątków i konteksty.  

@@ -2,8 +2,7 @@
 title: Porównywanie plików danych wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e970ab16ee209fe91734a8e1a6c039cb7b7f1f05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b56982cdef9c27beb4e5aeb82fa9d9741e87fbd7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="comparing-performance-data-files"></a>Porównywanie plików danych wydajności
 Funkcji porównywania plików danych narzędzi profilowania służy do wybierania dwa pliki raportu (. VSP notebooka. VSPS) pliki oraz Generowanie raportu, który przedstawia różnice, regresji wydajności i ulepszenia, które nastąpiły jednej sesji profilowania.  

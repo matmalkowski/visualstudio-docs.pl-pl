@@ -9,16 +9,16 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98a1632fcf278751c05707ef862d3d4e30aac28e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb8e8ba51f4aaeed0242147d46fd282b95452d91
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Porady: wykluczanie plików z kompilacji
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżony zbiór katalogi jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dołączyć jako dane wejściowe dla kompilacji. Na liście wejść można jawnie wykluczyć tego pliku lub katalogu. W projekcie, który ma być uwzględniony w niektórych warunkach również może być plikiem. Można jawnie deklarować warunków, w których pliku jest uwzględniona w kompilacji.  

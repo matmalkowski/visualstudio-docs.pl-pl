@@ -1,12 +1,9 @@
 ---
 title: Praca z języka Python, krok 6, Praca z usługą git
 description: Krok 6 podstawowy samouczek do pracy z języka Python w programie Visual Studio, obejmujące funkcje związane z Git programu Visual Studio.
-ms.custom: mvc
 ms.date: 01/16/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b26c723687e6dd47ed1877c3b3bea61b31b972d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93c8ba2ecaaacdd8dd2b0bbf9972df5d5f514c10
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Praca z usługą Git
 

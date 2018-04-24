@@ -2,8 +2,7 @@
 title: Narzędzia przy użyciu profilowania z wiersza polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command line, performance tools
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b64bf3733fc99a63a3b8334174a59db8c1e5f29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b26df4fd2c96d7a18fd553abffc8bb33714d5cfc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Korzystanie z narzędzi do profilowania z wiersza polecenia
 Można użyć narzędzia wiersza polecenia z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilowania narzędzia do profilu aplikacji w wierszu polecenia i w celu zautomatyzowania profilowania za pomocą plików wsadowych i skryptów. Można również generować pliki raportu w wierszu polecenia. Lekkie autonomiczny profilera służy do zbierania danych na komputerach, które nie mają [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowane.  

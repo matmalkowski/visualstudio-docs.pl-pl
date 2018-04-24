@@ -3,7 +3,7 @@ title: Lib — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -22,16 +22,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff55341bd41854f9d181613b3364b20873bdbaa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69dec38691969eafa92a13dea0333fbc17060354
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 Zawijania narzędzie Microsoft 32-bitowy Library Manager lib.exe. Library Manager tworzy i którymi zarządza biblioteki plików obiektów wspólnej obiektu pliku formatu (COFF). Library Manager może tworzyć pliki eksportu i Importuj biblioteki do definicji odwołania wyeksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](/cpp/build/reference/lib-reference) i [systemem LIB](/cpp/build/reference/running-lib).  

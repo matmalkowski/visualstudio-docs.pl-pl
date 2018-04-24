@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - StartTrackingContextWithRoot
 ms.assetid: f6ef2b76-8035-4a14-8195-aa221c46ef48
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcd31ee92733508f4980236d0c6dbd7dff15c128
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da93697f273257d166bf377e9c84b03d59d06f78
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Rozpoczyna kontekst śledzenia przy użyciu pliku odpowiedzi, określając znacznika głównego.  

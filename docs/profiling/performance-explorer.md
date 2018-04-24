@@ -2,8 +2,7 @@
 title: Eksplorator wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 06/19/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbaded26298656a3adb4f0260f3156ade7a2fe6e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 450681f03bcb9bd24272d7bcdc7da34ed015587a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-explorer"></a>Eksplorator wydajności
 

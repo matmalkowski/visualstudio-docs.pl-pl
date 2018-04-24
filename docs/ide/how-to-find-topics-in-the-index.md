@@ -1,5 +1,5 @@
 ---
-title: Indeks podglądu pomocy programu Visual Studio Użyj | Dokumentacja firmy Microsoft
+title: Użyj programu Visual Studio podglądu pomocy indeksu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc1b096a161ebca394abe4626c42db2ced883c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>Znajdowanie tematów przy użyciu indeksu podglądu pomocy
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Znajdowanie tematów przy użyciu indeksu podglądu pomocy
 Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zainstalowanej zawartości. Każdego tematu może mieć więcej niż jedno słowo kluczowe skojarzone z nim, a każde słowo kluczowe może być skojarzony z więcej niż jednego tematu. Użyj tego indeksu w taki sam sposób jak w przypadku indeksu w książce.  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>Aby znaleźć temat przy użyciu indeksu  

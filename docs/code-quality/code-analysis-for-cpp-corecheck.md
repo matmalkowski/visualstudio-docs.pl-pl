@@ -1,23 +1,21 @@
 ---
-title: Visual Studio C++ podstawowe wskazówki sprawdzania odwołania | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Visual Studio C++ podstawowe wskazówki sprawdzania odwołania
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d68ed1d7002ac0e92d3a8c3e32226cb3a38c3f0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ podstawowe wskazówki dotyczące sprawdzania odwołania
 
@@ -170,7 +168,7 @@ Zobacz [C++ podstawowe wskazówki: F.6: Jeśli funkcja nie może zgłosić, Zade
 [C26474 NO_IMPLICIT_CAST](C26474.md) nie rzutowanie pomiędzy typami wskaźnika podczas konwersji może być niejawnej. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md) nie należy używać funkcji stylu C rzutowania. Zobacz [C++ podstawowe wskazówki dotyczące ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).
- 
+
 [C26490 NO_REINTERPRET_CAST](c26490.md) nie używaj `reinterpret_cast`. Zobacz [C++ podstawowe wskazówki dotyczące Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26491 NO_STATIC_DOWNCAST](c26490.md) nie używaj `static_cast` downcasts. Zobacz [C++ podstawowe wskazówki dotyczące Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
@@ -178,7 +176,7 @@ Zobacz [C++ podstawowe wskazówki: F.6: Jeśli funkcja nie może zgłosić, Zade
 [C26492 NO_CONST_CAST](c26492.md) nie używaj `const_cast` do rzutowania z usuwaniem `const`. Zobacz [C++ podstawowe wskazówki dotyczące Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26493 NO_CSTYLE_CAST](c26493.md) rzutowania w stylu języka C nie jest używany. Zobacz [C++ podstawowe wskazówki dotyczące Type.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
- 
+
 [C26494 VAR_USE_BEFORE_INIT](c26494.md) zmiennej "% Zmienna %" nie jest zainicjowany. Zawsze można zainicjować obiektu. Zobacz [C++ podstawowe wskazówki dotyczące Type.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26495 MEMBER_UNINIT](c26495.md) zmiennej "% Zmienna %" nie jest zainicjowany. Zawsze można zainicjować zmiennej członkowskiej. Zobacz [C++ podstawowe wskazówki dotyczące Type.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).

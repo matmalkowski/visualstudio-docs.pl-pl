@@ -2,8 +2,7 @@
 title: Zdarzenia sterty niestandardowych ETW natywnego | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/24/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
@@ -13,11 +12,11 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b927260f505640eb6dc3c74d00dc3ee382d9f76
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Zdarzenia sterty niestandardowych natywnego ETW
 

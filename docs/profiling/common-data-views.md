@@ -2,8 +2,7 @@
 title: Widok typowych danych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957a7e17c22e46a550fa2f9682c7fb055026b68d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="common-data-views"></a>Widok typowych danych
 Ta sekcja zawiera informacje na temat widoków i raportów profilera plików danych, które są wspólne dla wszystkich metod profilowania.  

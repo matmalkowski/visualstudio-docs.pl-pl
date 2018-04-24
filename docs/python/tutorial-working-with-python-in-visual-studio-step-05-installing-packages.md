@@ -1,12 +1,9 @@
 ---
 title: Praca z języka Python, krok 5, instalowanie pakietów
 description: Krok 5 podstawowy samouczek do pracy z języka Python w programie Visual Studio, prezentacja programu Visual Studio funkcje zarządzania pakietami w środowisku Python.
-ms.custom: mvc
 ms.date: 03/05/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31e7bff4eec7939481a6fa6091fdc1333d6ac646
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73de2a4c58a24a603f1d5d54138d5762e3ae9971
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 

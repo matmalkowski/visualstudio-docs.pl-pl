@@ -2,8 +2,7 @@
 title: Analizowanie danych użycia procesora CPU (C++) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 12/05/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebe10dbcf5b03288ae4d0e6d2fb93444abe1064a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52483a920d47b5728645ae195bc1837c7ccc565b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 

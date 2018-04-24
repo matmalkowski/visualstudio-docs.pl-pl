@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, concepts
 ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d80d5ad85ab503be2e0c395c26177ae1439574
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd43d79950a39702108383f7408e1a37960e7c06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-concepts"></a>Pojęcia dotyczące programu MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia podstawowe schematu XML, który służy do kontrolowania sposobu platformy kompilacji Kompilacje oprogramowania. Aby określić składniki w kompilacji i sposób ich ma zostać utworzony, użyj programu MSBuild tych czterech części: właściwości, elementy, zadań i elementów docelowych.  

@@ -1,13 +1,9 @@
 ---
 title: Tryb mieszany debugowania dla języka Python
 description: Jak można jednocześnie debugować C++ i języku Python w programie Visual Studio, w tym przechodzenie między środowiskami, wyświetlanie wartości i obliczaniu wyrażeń.
-ms.custom: ''
 ms.date: 01/16/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -15,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 40ab75cfd35f3d748d5e000ff1a45d2999fc649e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Debugowanie razem Python i C++
 

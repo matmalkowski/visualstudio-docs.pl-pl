@@ -1,12 +1,9 @@
 ---
 title: Zestaw Azure SDK dla języka Python
 description: Zestaw Azure SDK for Python można łatwo korzystać z usług Microsoft Azure z Python aplikacji działających na dowolnej platformie.
-ms.custom: ''
 ms.date: 01/22/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -15,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 56ccd85dd5dfd9ce6f82a68ef18df303631987b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91f51f91008552e602991505f28ef4f076692f52
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 

@@ -2,8 +2,7 @@
 title: Widok rdzeni — narzędzie do powiększania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe315ca892401e406e70a5f13b818fba53558fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f8cb142fa56f739cae28367beda40a7c285145d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view-zoom-tool"></a>Narzędzie do powiększania widoku rdzeni
 Formant powiększania jest suwak, który można powiększać i pomniejszać na osi czasu, dzięki czemu można skupić się na obszarów. Ten formant powiększa na środka bieżącego widoku, więc dostosowanie widoku przed powiększania.  

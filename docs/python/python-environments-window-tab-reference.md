@@ -1,11 +1,9 @@
 ---
 title: Odwołanie okno środowiska Python
 description: Szczegółowe informacje na każdej z kart, które są wyświetlane w oknie środowiska Python w programie Visual Studio.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.technology:
-- devlang-python
-ms.devlang: python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dcfb786f487f73665bd36f641075e0d31902ade6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odwołanie karty okno środowiska Python
 

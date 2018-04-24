@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Określanie zdarzeń kompilacji (C#) | Dokumentacja firmy Microsoft'
+title: 'Porady: Określanie kompilacji zdarzeń (C#) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,20 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9daf9de3790a9ba2b0700ceac39aaca12de5e3f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7cf26e6f8565f08b7e272ec663e0db91ae3d545c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-build-events-c"></a>Porady: określanie zdarzeń kompilacji (C#)
+# <a name="how-to-specify-build-events-c"></a>Porady: Określanie kompilacji zdarzeń (C#)
 Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchamiane przed rozpoczęciem kompilacji lub po zakończeniu kompilacji. Zdarzenia kompilacji są wykonywane tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.  
   
- Po utworzeniu projektu zdarzenia prekompilacyjnego są dodawane do pliku o nazwie PreBuildEvent.bat i zdarzenia postkompilacyjnego są dodawane do pliku o nazwie PostBuildEvent.bat. Jeśli chcesz upewnić się, sprawdzanie błędów, należy dodać własne polecenia Sprawdzanie błędów do kroków kompilacji.  
+ Po utworzeniu projektu zdarzenia prekompilacyjnego zostaną dodane do pliku o nazwie *PreBuildEvent.bat* i zdarzenia postkompilacyjnego są dodawane do pliku o nazwie *PostBuildEvent.bat*. Jeśli chcesz upewnić się, sprawdzanie błędów, należy dodać własne polecenia Sprawdzanie błędów do kroków kompilacji.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określać zdarzenia Prekompilacyjnego i mające miejsce po kompilacji  
+## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określać zdarzenia prekompilacyjnego i mające miejsce po kompilacji  
   
 #### <a name="to-specify-a-build-event"></a>Aby określić zdarzenia kompilacji  
   
@@ -43,24 +43,25 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
 4.  W **wiersz polecenia zdarzenia prekompilacyjnego** Określ składni zdarzenia kompilacji.  
   
     > [!NOTE]
-    >  Jeśli projekt jest aktualny i kompilacji nie zostanie wywołany, nie należy uruchamiać zdarzenia prekompilacyjnego.  
+    > Jeśli projekt jest aktualny i kompilacji nie zostanie wywołany, nie należy uruchamiać zdarzenia prekompilacyjnego.  
   
 5.  W **wiersz polecenia zdarzenia po kompilacji** Określ składni zdarzenia kompilacji.  
   
     > [!NOTE]
-    >  Dodaj `call` instrukcję przed wszystkie postkompilacyjnego polecenia, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Dodaj `call` instrukcję przed wszystkie postkompilacyjnego polecenia, które uruchamiają *bat* plików. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6.  W **uruchomić zdarzenie mające miejsce po kompilacji** Określ na jakich warunkach, aby uruchomić zdarzenie mające miejsce po kompilacji.  
   
     > [!NOTE]
-    >  Aby dodać długiej składni lub wybierz dowolne makra z kompilacji [prekompilacyjnego zdarzeń/po kompilacji — zdarzenie wiersza polecenia okno dialogowe](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), kliknij przycisk oznaczony wielokropkiem (**...** ) do wyświetlenia w polu edycji.  
+    > Aby dodać długiej składni lub wybierz dowolne makra z kompilacji [okno dialogowe wiersza polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), kliknij przycisk oznaczony wielokropkiem (**...** ) do wyświetlenia w polu edycji.  
   
-     Składnia zdarzeń kompilacji może zawierać dowolne polecenie, które jest prawidłowa, w wierszu polecenia lub w pliku bat. Nazwa pliku wsadowego powinien być poprzedzony `call` aby upewnić się, że wszystkie kolejne polecenia są wykonywane.  
+     Składnia zdarzeń kompilacji może zawierać dowolne polecenie, które jest prawidłowa, w wierszu polecenia lub w *bat* pliku. Nazwa pliku wsadowego powinien być poprzedzony `call` aby upewnić się, że wszystkie kolejne polecenia są wykonywane.  
   
-     **Uwaga** Jeśli Twoje zdarzenia prekompilacyjnego lub mające miejsce po kompilacji nie zakończy się pomyślnie, można zakończyć kompilacji przez akcję zdarzeń zamknąć przy użyciu kodu innego niż zero (0), wskazujący pomyślne akcji.  
+    > [!NOTE]
+    > Jeśli Twoje zdarzenia prekompilacyjnego lub mające miejsce po kompilacji nie zakończy się pomyślnie, można zakończyć kompilacji przez akcję zdarzeń zamknąć przy użyciu kodu innego niż zero (0), wskazujący pomyślne akcji.  
   
 ## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Przykład: Jak zmiana informacji manifestu za pomocą zdarzenie mające miejsce po kompilacji  
- Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjnego w manifeście aplikacji za pomocą polecenia .exe, która jest wywoływana z zdarzenia postkompilacyjnego (. exe.manifest pliku w katalogu projektu). Minimalna wersja systemu operacyjnego jest liczbą czteroczęściową, takich jak 4.10.0.0. Aby to zrobić, zmieni polecenie `<dependentOS>` sekcji manifestu:  
+ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjnego w manifeście aplikacji przy użyciu *.exe* polecenia, która jest wywoływana z zdarzenia postkompilacyjnego ( *. exe.manifest* w pliku katalog projektu). Minimalna wersja systemu operacyjnego jest liczbą czteroczęściową, takich jak 4.10.0.0. Aby to zrobić, zmieni polecenie `<dependentOS>` sekcji manifestu:  
   
 ```  
 <dependentOS>  
@@ -76,7 +77,7 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
   
 2.  W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **Windows**, a następnie kliknij przycisk **aplikacji konsoli** szablonu. Nazwij projekt `ChangeOSVersionCS`.  
   
-3.  W pliku Program.cs Dodaj następujący wiersz do drugiego `using` instrukcje w górnej części pliku:  
+3.  W *Program.cs*, Dodaj następujący wiersz do drugiego `using` instrukcje w górnej części pliku:  
   
     ```  
     using System.Xml;  
@@ -134,11 +135,11 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
     }  
     ```  
   
-     Polecenie przyjmuje dwa argumenty: ścieżka manifest aplikacji (czyli folderze w którym proces kompilacji tworzy manifestu, zwykle Projectname.publish) i nowa wersja systemu operacyjnego.  
+     Polecenie przyjmuje dwa argumenty: ścieżka manifest aplikacji (oznacza to, że folder, w którym proces kompilacji tworzy manifestu, zwykle *Projectname.publish*), a nowa wersja systemu operacyjnego.  
   
 5.  Skompiluj projekt. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-6.  Skopiuj plik .exe do katalogu, takie jak `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Kopiuj *.exe* pliku do katalogu, takie jak *C:\TEMP\ChangeOSVersionVB.exe*.  
   
  Następnie wywołaj tego polecenia zdarzenia po kompilacji, aby zmodyfikować manifest aplikacji.  
   
@@ -150,11 +151,11 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
   
 3.  W projekcie wybrana w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-4.  W Projektancie projektu zlokalizować **publikowania** strony i ustaw **publikowania lokalizacji** do `C:\TEMP\`.  
+4.  W **projektanta projektu**, zlokalizuj **publikowania** strony i ustaw **publikowania lokalizacji** do *C:\TEMP*.  
   
 5.  Publikowanie projektu, klikając **opublikować teraz**.  
   
-     Plik manifestu zostanie utworzony i umieścić w `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Aby wyświetlić plik manifestu, kliknij prawym przyciskiem myszy plik, kliknij przycisk **Otwórz za pomocą**, wybierz pozycję **wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.  
+     Plik manifestu zostanie utworzony i umieścić w *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Aby wyświetlić plik manifestu, kliknij prawym przyciskiem myszy plik, kliknij przycisk **Otwórz za pomocą**, wybierz pozycję **wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.  
   
      Wyszukaj w pliku `<osVersionInfo>` elementu. Na przykład może być wersji:  
   
@@ -162,7 +163,7 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  W Projektancie projektu, kliknij przycisk **zdarzeń kompilacji** i kliknij polecenie **Edytuj postkompilacyjnego** przycisku.  
+6.  W **projektanta projektu**, kliknij przycisk **zdarzeń kompilacji** i kliknij polecenie **Edytuj postkompilacyjnego** przycisku.  
   
 7.  W **wiersz polecenia zdarzenia po kompilacji** wpisz następujące polecenie:  
   
@@ -170,7 +171,7 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
   
      Podczas tworzenia projektu, to polecenie spowoduje zmianę minimalnej wersji systemu operacyjnego w manifeście aplikacji na 5.1.2600.0.  
   
-     Ponieważ `$(TargetPath)` makro wyraża pełnej ścieżki pliku wykonywalnego tworzone `$(TargetPath)`manifest określa manifest aplikacji utworzony w katalogu bin. Publikowanie skopiuje tego manifestu ustawionych wcześniej lokalizację publikowania.  
+     Ponieważ `$(TargetPath)` makro wyraża pełnej ścieżki pliku wykonywalnego tworzone `$(TargetPath)` *manifest* będzie określać utworzone w manifeście aplikacji *bin* katalogu. Publikowanie skopiuje tego manifestu ustawionych wcześniej lokalizację publikowania.  
   
 8.  Ponownie opublikować projekt. Przejdź do **publikowania** i kliknij przycisk **opublikować teraz**.  
   
@@ -182,8 +183,8 @@ Korzystanie ze zdarzeń kompilacji Aby określić polecenie, które są uruchami
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Strona zdarzenia kompilacji, Projektant projektu (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [Okno dialogowe wiersza polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Porady: Określanie zdarzeń kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
- [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
+ [Porady: Określanie kompilacji zdarzenia (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Kompilowanie i kompilacji](../ide/compiling-and-building-in-visual-studio.md)

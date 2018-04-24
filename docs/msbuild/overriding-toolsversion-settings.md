@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f9c7c9f0c05bc70bcda9a0c068d0a7eab6d288
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25d4254e8f45da6a476207740cfa28e1db2253e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="overriding-toolsversion-settings"></a>Zastępowanie ustawień ToolsVersion
 Można zmienić zestaw narzędzi dla projektów i rozwiązań w jeden z trzech sposobów:  

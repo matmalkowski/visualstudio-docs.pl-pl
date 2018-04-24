@@ -2,8 +2,7 @@
 title: Widok wskaźników instrukcji (IP) - dane Kontencji | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce158a47c9556bf6b29c929ea1e042eedf1f759c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4109282bea850e7bca6154a56d0023c5ebb1c746
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) - dane Kontencji
 Adresy IP widok danych kontencji Wyświetla listę danych instrukcje zestawu, które zostały zablokowane w przebiegu profilowania.  

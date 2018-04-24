@@ -1,12 +1,9 @@
 ---
 title: Edytowanie kodu języka Python
 description: Python edycji w programie Visual Studio oferuje IntelliSense, fragmentów kodu i funkcje nawigacji obok formatowania, linting i refaktoryzacji.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df65b6e1b37d926bdd70e01c881a99f3de1b189b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 

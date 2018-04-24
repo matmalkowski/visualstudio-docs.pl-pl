@@ -2,8 +2,7 @@
 title: Tylko mój kod (Widok wątków) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.jmc
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac951897a78c2d41c6fc90753d460270dcd130c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee84fdab07bd88027dc00be80b1acc009658d8ad
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="just-my-code-threads-view"></a>Tylko mój kod (Widok wątków)
 Wybranie tej opcji spowoduje filtrowanie stos wywołań, aby wyświetlić tylko kodu oraz jeden poziom funkcji o nazwie.  

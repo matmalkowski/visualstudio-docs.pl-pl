@@ -1,6 +1,5 @@
 ---
-title: Tworzenie formantu użytkownika formularzy systemu Windows z powiązaniem danych | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Tworzenie formantu użytkownika formularzy systemu Windows z powiązanie danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie formantu użytkownika formularzy systemu Windows obsługującego złożone powiązanie danych
 
@@ -111,7 +110,7 @@ Ten krok powoduje dodanie <xref:System.Windows.Forms.DataGridView> do kontrolki 
 ## <a name="add-the-required-data-binding-attribute"></a>Dodaj wymagany atrybut wiązania danych
 
 Złożone formantów tego wiązania danych pomocy technicznej, można zaimplementować <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>Aby zaimplementować atrybutu ComplexBindingProperties
 
 1. Przełącznik **ComplexDataGridView** formantu do widoku kodu. (Na **widoku** menu, wybierz opcję **kodu**.)
@@ -173,7 +172,7 @@ Formanty powiązane z danymi można utworzyć, przeciągając elementy z **źró
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Aby utworzyć formantów powiązanych z danymi
 
-Przeciągnij głównym **klientów** węzła z **źródeł danych** okna na formularzu. Sprawdź, czy **ComplexDataGridView** kontroli jest używana do wyświetlania danych tabeli.  
+Przeciągnij głównym **klientów** węzła z **źródeł danych** okna na formularzu. Sprawdź, czy **ComplexDataGridView** kontroli jest używana do wyświetlania danych tabeli.
 
 ## <a name="running-the-application"></a>Uruchamianie aplikacji
 
@@ -191,6 +190,6 @@ Istnieje kilka kroków, które można wykonać po Tworzenie formantu, który obs
 
 ## <a name="see-also"></a>Zobacz także
 
-[Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Kontrolki formularzy Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Powiązywanie formantów formularzy systemu Windows z danymi w Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Kontrolki formularzy Windows Forms](/dotnet/framework/winforms/controls/index)

@@ -1,6 +1,5 @@
 ---
-title: Używanie modeli w procesie tworzenia aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Używanie modeli w procesie tworzenia aplikacji
 ms.date: 11/04/2016
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee68a7db3691c7245dbe17fd4c23b948734f215a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b814f35e8c93ff8204fe39943dbaafbce03376a0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 
@@ -139,11 +138,11 @@ Różne rodzaje diagram są przydatne do opisu projektu na różnych poziomach a
 
 ## <a name="see-also"></a>Zobacz także
 
-[Używanie modeli w elastyczne programowanie](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
-[tworzenia modeli dla aplikacji](../modeling/create-models-for-your-app.md)
-[modelu wymagania użytkownika](../modeling/model-user-requirements.md)
-[modelu aplikacji Architektura](../modeling/model-your-app-s-architecture.md)
-[opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)
-[struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
+- [Używanie modeli w elastyczne programowanie](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
+- [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)
+- [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)
+- [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)
+- [Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

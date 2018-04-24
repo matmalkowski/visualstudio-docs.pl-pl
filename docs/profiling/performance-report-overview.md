@@ -2,8 +2,7 @@
 title: Przegląd raportu wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, about performance rerports
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 132bac5164289c18fe0cd379686db7eb6213589a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-overview"></a>Przegląd raportu wydajności
 Można wyświetlić danych profilowania w sesji wydajności **raport wydajności** okno programu Visual Studio Team System programowanie Edition zintegrowane środowisko programistyczne (IDE). Dane profilowania jest zapisywany w pliku Vsp i vsps plików. Podgląd raportów umożliwiają przeglądać i analizować problemy z wydajnością aplikacji.  

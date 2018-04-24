@@ -2,8 +2,7 @@
 title: Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.settings
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 719adce78c2a1a5ec1d9a15eea69769c476c6170
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 Za pomocą **Zaawansowane ustawienia** okno dialogowe w narzędzia Concurrency Visualizer można kontrolować, jak zbierane są dane śledzenia.  Okno dialogowe zawiera karty symbole, tylko mój kod, buforowanie, filtrowanie, CLR zdarzenia, znaczniki, dostawców i plików.  

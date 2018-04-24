@@ -2,8 +2,7 @@
 title: Widok linii - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2863c5c3441240593035a933a6224d95c0b4474
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb92e37a8bc1543cfdf2efa142768d9edbea4f69
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Widok linii - dane próbkowania pamięci .NET
 Widok linii dla platformy .NET pamięci alokacji profilowania danych przy użyciu metody próbkowania wymieniono instrukcje, które przydzielonej pamięci podczas przebiegu profilowania. Kolumny także rozmiaru i liczby alokacji.  

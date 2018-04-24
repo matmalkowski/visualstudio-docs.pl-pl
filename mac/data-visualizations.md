@@ -1,17 +1,16 @@
 ---
-title: "Debugowanie — wizualizacji danych"
-description: "Debugowanie jest typowe i konieczne, część programowania. Visual Studio for Mac zawiera całego zestawu funkcji Łatwe debugowanie. W tym artykule analizuje wizualizacji danych, które mogą być wyświetlane podczas sprawdzania obiektów w debugerze."
+title: Debugowanie — wizualizacji danych
+description: Debugowanie jest typowe i konieczne, część programowania. Visual Studio for Mac zawiera całego zestawu funkcji Łatwe debugowanie. W tym artykule analizuje wizualizacji danych, które mogą być wyświetlane podczas sprawdzania obiektów w debugerze.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1c228718dc528e0ab34c9af328aee1c8259fa8b5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="data-visualizations"></a>Wizualizacji danych
 
@@ -92,11 +91,11 @@ Poniżej przedstawiono niektóre inne typy, które również mieć własne wizua
 
  ![Inne wizualizacji](media/data-visualizations-image23.png)
 
-*   **Elementy podstawowe**
+*   **Typy pierwotne**
     *   Wyświetli nieprzetworzone wartości typu pierwotnego.
-*   **Wyliczenia**
+*   **Enum**
     *   Zostanie wyświetlona wartość pola bez kwalifikatora typu wyliczenia.
-*   **Krotki**
+*   **krotki**
     *   Wyświetlane w formacie ()
 *   **Wartość null**
     *   Pokazuje wartość "null".

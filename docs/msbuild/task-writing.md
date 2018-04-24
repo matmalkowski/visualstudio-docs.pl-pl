@@ -9,16 +9,16 @@ helpviewer_keywords:
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 837adb53301d7fe870d50c9ee40f4b1391d3bb46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03c08fcc8baa0e892678cc376056a35c0f09101f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 Zadania Podaj kod uruchamiany podczas procesu kompilacji. Zadania są zawarte w elementów docelowych. Biblioteka typowych zadań jest dołączana do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], i można również tworzyć własne zadania. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  

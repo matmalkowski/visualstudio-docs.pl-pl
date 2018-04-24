@@ -1,9 +1,9 @@
 ---
-title: Utworzyć sieciowej instalację programu Visual Studio | Dokumentacja firmy Microsoft
-description: Opisuje sposób tworzenia sieci punktu instalacji do wdrażania w przedsiębiorstwie programu Visual Studio
+title: Utworzyć sieciowej instalację programu Visual Studio
+description: Dowiedz się, jak utworzyć punkt instalacji sieci do wdrażania programu Visual Studio w obrębie przedsiębiorstwa.
 ms.date: 10/17/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe10a67ccb62e41edec12f40db639b30bd2a3bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017 r.
 
@@ -47,7 +47,7 @@ Musi mieć połączenie internetowe, aby ukończyć ten krok. Do utworzenia inst
 
    > [!IMPORTANT]
    > Pełny układ Visual Studio 2017 wymaga co najmniej 35 GB miejsca na dysku i może zająć trochę czasu, aby pobrać.  Zobacz [Dostosowywanie układ sieci](#customizing-the-network-layout) sekcji, aby uzyskać więcej informacji na temat sposobu tworzenia układu ze składnikami, które chcesz zainstalować.
-
+   >
    > [!TIP]
    > Upewnij się, uruchom polecenie z katalogu pobierania. Zwykle to jest `C:\Users\<username>\Downloads` na komputerze z systemem Windows 10.
 
@@ -110,7 +110,6 @@ Jeśli chcesz zaktualizować istniejący układ pełnego układ, użyj wszystkic
 
 ```vs_enterprise.exe --layout c:\VS2017Layout --all```
 
-
 ## <a name="deploying-from-a-network-installation"></a>Wdrażanie z sieci
 
 Administratorzy mogą wdrożyć program Visual Studio na klienckich stacjach roboczych, jako część skryptu instalacji. Lub użytkowników, którzy mają prawa administratora można uruchomić Instalatora bezpośrednio z udziału do zainstalowania programu Visual Studio na komputerze.
@@ -151,15 +150,18 @@ Jeśli wystąpi problem z instalacją w trybie offline, chcemy wiadomo o nim. Na
 Mamy zbyt inne dostępne opcje pomocy technicznej. Aby uzyskać listę, zobacz nasze [Porozmawiaj z nami](../ide/how-to-report-a-problem-with-visual-studio-2017.md) strony.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
+
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
 * [Przewodnik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

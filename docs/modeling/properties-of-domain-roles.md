@@ -1,19 +1,18 @@
 ---
-title: Właściwości role domeny | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Właściwości ról w domenie
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać informacje o rolach domeny, zobacz [opis modeli, klasy i relacje](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ Właściwości w poniższej tabeli są skojarzone z rolą domeny. Aby uzyskać i
 |Wyświetlana nazwa właściwości|Nazwa, która jest wyświetlana w Projektancie wygenerowany dla właściwości wygenerowanego roli.|Skorygowaną wartość właściwości nazwy właściwości.|
 
 > [!NOTE]
->  Wartość domyślna nazwa wyświetlana opiera się na wartości właściwości skojarzonej, ponieważ w wyniku dopełnienia spacjami przed każdego znaku wielkimi literami, który jest poprzedzony znakiem małe i który nie następuje innego wielką literą.
+> Wartość domyślna nazwa wyświetlana opiera się na wartości właściwości skojarzonej, ponieważ w wyniku dopełnienia spacjami przed każdego znaku wielkimi literami, który jest poprzedzony znakiem małe i który nie następuje innego wielką literą.
 
 ## <a name="see-also"></a>Zobacz też
- [Właściwości relacji domeny](../modeling/properties-of-domain-relationships.md)
+
+- [Właściwości relacji domeny](../modeling/properties-of-domain-relationships.md)

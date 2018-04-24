@@ -1,23 +1,20 @@
 ---
 title: Wizualizacja danych za pomocą języka R
 description: Jak do wykreślenia danych z programów R w programie Visual Studio przy użyciu systemu windows kreślenia.
-ms.custom: ''
 ms.date: 06/29/2017
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 93de31c6602377269c2b9125e74f2de0dba776be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Tworzenie danych wizualnych geograficzne z języka R
 

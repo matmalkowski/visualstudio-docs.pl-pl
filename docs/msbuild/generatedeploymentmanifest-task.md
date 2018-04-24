@@ -3,7 +3,7 @@ title: Generatedeploymentmanifest — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
@@ -14,16 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0fb82935cc9ca8f35f5f766f50105ccceb1406
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1eb989972f8cfd2e44516b798c25e5f579e5f66
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest — Zadanie
 

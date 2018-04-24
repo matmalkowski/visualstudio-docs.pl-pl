@@ -2,8 +2,7 @@
 title: Tworzenie aplikacji ClickOnce z wiersza polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4488f32b135d766f494bc94946fbf77d42eb1e95
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza poleceń
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], nawet jeśli są one tworzone w zintegrowane środowisko programistyczne (IDE) można tworzyć projektów z wiersza polecenia. W rzeczywistości, można ponownie utworzyć projekt utworzone za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, który zawiera tylko [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zainstalowane. Dzięki temu można odtworzyć za pomocą zautomatyzowanego procesu kompilacji, na przykład w centralnej kompilacji laboratorium lub przy użyciu zaawansowanych skryptów techniki poza zakres tworzenia projektu.  
@@ -162,9 +161,9 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Opcja adresu URL|Opis|  
 |----------------|-----------------|  
 |`PublishURL`|Wymagane, jeśli w przypadku publikowania aplikacji ClickOnce do witryny sieci Web.|  
-|`InstallURL`|Opcjonalny. Ustaw tę opcję adresu URL, jeśli witryna instalacji różni się od `PublishURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestawu `InstallURL` do adresu URL sieci Web.|  
-|`SupportURL`|Opcjonalny. Ustaw tę opcję adresu URL, jeśli witrynę pomocy technicznej jest inna niż `PublishURL`. Na przykład można ustawić `SupportURL` do witryny sieci Web pomocy technicznej firmy.|  
-|`UpdateURL`|Opcjonalny. Ustaw tę opcję adresu URL, jeśli lokalizacja aktualizacji jest inna niż `InstallURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestawu `UpdateURL` do adresu URL sieci Web.|  
+|`InstallURL`|Opcjonalna. Ustaw tę opcję adresu URL, jeśli witryna instalacji różni się od `PublishURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestawu `InstallURL` do adresu URL sieci Web.|  
+|`SupportURL`|Opcjonalna. Ustaw tę opcję adresu URL, jeśli witrynę pomocy technicznej jest inna niż `PublishURL`. Na przykład można ustawić `SupportURL` do witryny sieci Web pomocy technicznej firmy.|  
+|`UpdateURL`|Opcjonalna. Ustaw tę opcję adresu URL, jeśli lokalizacja aktualizacji jest inna niż `InstallURL`. Na przykład można ustawić `PublishURL` ścieżka FTP i zestawu `UpdateURL` do adresu URL sieci Web.|  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   

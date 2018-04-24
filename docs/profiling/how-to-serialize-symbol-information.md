@@ -2,8 +2,7 @@
 title: 'Porady: Serializuj informacje dotyczące symboli | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aca984dda2d83b09bfed969f4e5e21a6b6759867
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69c59395eb74f2c79c6a7d7e1b9c56f420e9705a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-serialize-symbol-information"></a>Porady: serializacja informacji o symbolach
 Symbole, które muszą mieć do analizowania aplikacji może serializować. Symbol serializacji dodaje symboli do pliku Vsp. Dodanie informacji o symbolach w pliku Vsp, inne analizowanie raportu dotyczącego wydajności bez uzyskiwania dostępu do oryginalnego symboli. Symbole nie są serializowane, musisz oryginalnego instrumentowanych .exe i .pdb, pliki do analizowania pliku Vsp.  

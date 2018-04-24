@@ -2,8 +2,7 @@
 title: CommentMarkProfile | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - CommentMarkProfile
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c28017d1997bf926a9bad5d885c180916053b201
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae602e6f28fc30c20c5b1f3c466d2e7afe458b8f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` Funkcja wstawia znacznik liczbowych i ciągu tekstowego w pliku Vsp. Dla tego znaku i komentarza do wstawienia, profilowanie dla wątku, który zawiera `CommentMarkProfile` funkcji musi mieć wartość ON.  

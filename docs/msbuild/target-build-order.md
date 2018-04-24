@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 875e51b2ce91c1a430b2e521fc392def4a53f6a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe jeden obiekt docelowy jest zależna od dane wyjściowe inny element docelowy. Aby określić kolejność uruchamiania obiektów docelowych, można użyć tych atrybutów:  

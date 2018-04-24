@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Professional 2017 obciążenia i składnik identyfikatorów | Dokumentacja firmy Microsoft
+title: Visual Studio Professional 2017 obciążenia i składnik identyfikatorów
 description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifeście VSIX
 keywords: ''
 author: TerryGLee
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b8746491934adf276f16b25aaad3ff42c9dcc3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 694ba2cfb381432ce5f7343dbc065c89c323a3cf
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 składników katalogu
 
@@ -40,7 +40,7 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Visual Studio core edytora (dołączony do programu Visual Studio Professional 2017)
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+**Identyfikator:** Microsoft.VisualStudio.Workload.CoreEditor
 
 **Opis:** środowisko powłoki core Visual Studio, w tym kod obsługujący składni edycji, kontroli kodu źródłowego i elementu roboczego zarządzania.
 
@@ -78,13 +78,13 @@ Microsoft.NetCore.ComponentGroup.Web | Narzędzia do programowania .NET core 2.0
 Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analytics tools | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Biblioteki Azure dla platformy .NET | 15.0.26208.0 | Wymagane
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure Compute Emulator | 15.0.26621.2 | Wymagane
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulator obliczeń platformy Azure | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulator usługi Azure Storage | 15.6.27413.0 | Wymagane
 Microsoft.VisualStudio.Component.CloudExplorer | Eksplorator chmury | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Wymagane
 Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.FSharp | Obsługa języka F # | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Wymagane
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Obsługa języka JavaScript i TypeScript | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Wymagane
@@ -166,13 +166,13 @@ Microsoft.Net.Core.Component.SDK | Narzędzia do programowania .NET core 2.0 | 1
 Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analytics tools | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Biblioteki Azure dla platformy .NET | 15.0.26208.0 | Zalecane
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure Compute Emulator | 15.0.26621.2 | Zalecane
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulator obliczeń platformy Azure | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulator usługi Azure Storage | 15.6.27413.0 | Zalecane
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure podstawowe narzędzia usługi w chmurze | 15.6.27309.0 | Zalecane
 Microsoft.VisualStudio.Component.CloudExplorer | Eksplorator chmury | 15.6.27309.0 | Zalecane
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Zalecane
 Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 15.6.27309.0 | Zalecane
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Zalecane
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Zalecane
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Zalecane
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Obsługa języka JavaScript i TypeScript | 15.6.27309.0 | Zalecane
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Zalecane
@@ -292,7 +292,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET podstawowe narzędzia do programowani
 Microsoft.NetCore.ComponentGroup.DevelopmentTools | Narzędzia do programowania .NET core 2.0 | 15.6.27421.1 | Optional
 Microsoft.VisualStudio.Component.FSharp | Obsługa języka F # | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.FSharp.Desktop | Obsługa pulpitu języka F # | 15.6.27323.2 | Optional
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
@@ -499,7 +499,7 @@ Microsoft.NetCore.ComponentGroup.Web | Narzędzia do programowania .NET core 2.0
 Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analytics tools | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Wymagane
 Microsoft.VisualStudio.Component.FSharp | Obsługa języka F # | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Wymagane
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Obsługa języka JavaScript i TypeScript | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Wymagane
@@ -524,7 +524,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET i sieć web d
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Narzędzia zadań Webjob platformy Microsoft Azure | 15.6.27309.0 | Zalecane
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Biblioteki Azure dla platformy .NET | 15.0.26208.0 | Zalecane
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure Compute Emulator | 15.0.26621.2 | Zalecane
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulator obliczeń platformy Azure | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulator usługi Azure Storage | 15.6.27413.0 | Zalecane
 Microsoft.VisualStudio.Component.CloudExplorer | Eksplorator chmury | 15.6.27309.0 | Zalecane
 Microsoft.VisualStudio.Component.DiagnosticTools | Narzędzia profilowania platformy .NET | 15.6.27421.1 | Zalecane
@@ -568,7 +568,7 @@ Microsoft.NetCore.ComponentGroup.Web | Narzędzia do programowania .NET core 2.0
 Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analytics tools | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Wymagane
 Microsoft.VisualStudio.Component.FSharp | Obsługa języka F # | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Wymagane
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Obsługa języka JavaScript i TypeScript | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Wymagane
@@ -626,7 +626,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analyt
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Wymagane
 Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.FSharp | Obsługa języka F # | 15.6.27406.0 | Wymagane
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Wymagane
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Obsługa języka JavaScript i TypeScript | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Wymagane
@@ -657,7 +657,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | Narzędzia deweloperskie pr
 Microsoft.VisualStudio.Component.AspNet45 | Zaawansowane funkcje platformy ASP.NET | 15.6.27428.1 | Zalecane
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Biblioteki Azure dla platformy .NET | 15.0.26208.0 | Zalecane
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure Compute Emulator | 15.0.26621.2 | Zalecane
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulator obliczeń platformy Azure | 15.0.26621.2 | Zalecane
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulator usługi Azure Storage | 15.6.27413.0 | Zalecane
 Microsoft.VisualStudio.Component.CloudExplorer | Eksplorator chmury | 15.6.27309.0 | Zalecane
 Microsoft.VisualStudio.Component.DiagnosticTools | Narzędzia profilowania platformy .NET | 15.6.27421.1 | Zalecane
@@ -681,7 +681,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ## <a name="nodejs-development"></a>Programowanie node.js
 
-**ID:** Microsoft.VisualStudio.Workload.Node
+**Identyfikator:** Microsoft.VisualStudio.Workload.Node
 
 **Opis:** tworzyć aplikacje skalowalne sieci przy użyciu środowiska Node.js, asynchroniczne sterowane zdarzeniami środowiska wykonawczego języka JavaScript.
 
@@ -705,7 +705,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Zestaw narzędzi v141 2017 V
 
 ## <a name="officesharepoint-development"></a>Programowanie Office i SharePoint
 
-**ID:** Microsoft.VisualStudio.Workload.Office
+**Identyfikator:** Microsoft.VisualStudio.Workload.Office
 
 **Opis:** dodatków VSTO dodatki Tworzenie pakietu Office i programu SharePoint oraz rozwiązań programu SharePoint przy użyciu języka C#, VB i JavaScript.
 
@@ -727,7 +727,7 @@ Microsoft.Net.Core.Component.SDK | Narzędzia do programowania .NET core 2.0 | 1
 Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analytics tools | 15.0.26621.2 | Wymagane
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Narzędzia łączności i publikowanie | 1.10.50912.1 | Wymagane
 Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla kontenerów | 15.6.27309.0 | Wymagane
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Wymagane
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Wymagane
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Obsługa języka JavaScript i TypeScript | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Wymagane
@@ -801,7 +801,7 @@ Microsoft.Net.Core.Component.SDK | Narzędzia do programowania .NET core 2.0 | 1
 Microsoft.VisualStudio.Component.AppInsights.Tools | Narzędzia Developer Analytics tools | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Biblioteki Azure dla platformy .NET | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure Compute Emulator | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulator obliczeń platformy Azure | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulator usługi Azure Storage | 15.6.27413.0 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure podstawowe narzędzia usługi w chmurze | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.ClassDesigner | Projektant klas | 15.0.26208.0 | Optional
@@ -810,7 +810,7 @@ Microsoft.VisualStudio.Component.DockerTools | Narzędzia programistyczne dla ko
 Microsoft.VisualStudio.Component.Graphics | Edytory modelu obrazu i 3W | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | Grafika debugera i profilera procesora GPU programu DirectX | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafika narzędzi Windows 8.1 SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.IISExpress | Usługi IIS Express  | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostyka JavaScript | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Zarządzane podstawowe obciążenie pulpitu | 15.6.27323.2 | Optional
 Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 15.6.27309.0 | Optional
@@ -991,13 +991,15 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilatory w programie Visual
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) dla pulpitu C++ [ARM i ARM64] | 15.6.27406.0
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 

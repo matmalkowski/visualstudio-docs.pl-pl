@@ -14,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0666fa6fcb169ada6cb2a495e1c91290b127ce24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web języka Python
 
@@ -79,7 +79,7 @@ W tym miejscu umożliwia następujące kroki instalowania biblioteki platformy F
 
 **Pytanie: Gdzie dowiedzieć się więcej na temat innych dostępnych pakietów języka Python?**
 
-**Odpowiedzi**: odwiedź [indeksu pakietów języka Python](https://pypi.python.org/pypi) (pypi.python.org).
+**Odpowiedzi**: odwiedź [indeksu pakietów języka Python](https://pypi.org/) (pypi.org).
 
 ## <a name="add-a-code-file"></a>Dodawanie plików kodu
 

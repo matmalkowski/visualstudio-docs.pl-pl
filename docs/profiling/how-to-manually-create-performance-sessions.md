@@ -2,8 +2,7 @@
 title: 'Porady: ręczne tworzenie sesji wydajności | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cc5f63f812a04437d04749faa5fbf84fbbd24b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbcd319ac2a2a4a1a327388c22a57d28515a2247
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Porady: ręczne tworzenie sesji wydajności
 Można ręcznie utworzyć sesję wydajności. Nie trzeba otworzyć projekt w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).  

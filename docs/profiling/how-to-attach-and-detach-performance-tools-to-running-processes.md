@@ -2,8 +2,7 @@
 title: 'Porady: dołączanie lub odłączanie narzędzi wydajności do uruchomionego procesu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6cb7b108d67e5b525b6bda2519cfd37328f4373
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Porady: dołączanie lub odłączanie narzędzi wydajności do uruchomionego procesu
 Profiler może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i gromadzenia danych wydajności. Ta metoda służy do profilowania procesu, gdy chce się uniknąć zbierania danych dotyczących czasu ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.  

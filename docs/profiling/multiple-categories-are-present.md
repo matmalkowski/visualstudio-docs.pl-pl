@@ -2,8 +2,7 @@
 title: Obecne są liczne kategorie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce165520d4580b755ffae2fcd1fa5c4106039fee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7362f0a7495a75bc1d34d7f839bf0397787b6173
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
 Wybrano sekcja, która zawiera więcej niż jednego rodzaju aktywności związanej z danym okresie. Powiadomienia, że są wyświetlane dwa kolory i jeden w pionie skumulowany z drugiej strony. Kolory reprezentują tylko górny dwa najczęściej używane działania w danym okresie. Częstotliwości tych dwóch działań są wyświetlane względem siebie jako trzecich lub połowy pionowy pasek. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji widoku wątków.  

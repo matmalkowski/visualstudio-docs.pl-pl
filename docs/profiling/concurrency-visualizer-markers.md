@@ -2,8 +2,7 @@
 title: Znaczniki CONCURRENCY Visualizer | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6706b7eca5600932b8fd78ea4d046f52f3b93fcf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-markers"></a>Znaczniki Concurrency Visualizer
 Narzędzia Concurrency Visualizer znaczniki są ikony, które reprezentują zdarzenia w aplikacji.  Zwykle aplikacja generuje te zdarzenia do wyznaczenia fazy lub wystąpień w aplikacji.  Zdarzenia mogą być generowane przez aplikację lub biblioteki i środowisk uruchomieniowych, który korzysta z aplikacji.  

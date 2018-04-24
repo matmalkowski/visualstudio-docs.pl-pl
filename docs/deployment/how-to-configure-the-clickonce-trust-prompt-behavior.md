@@ -2,8 +2,7 @@
 title: 'Porady: Konfigurowanie zachowania monitu o zaufanie ClickOnce | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce applications, trust prompt
 - ClickOnce deployment, trust prompt
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a399a9f075249f2457c431385132476b173191
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d37e5fa465a5e19b1bfb7577f6ab06c61782f775
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Porady: konfigurowanie funkcji zaufanego monitowania technologii ClickOnce
 Możesz określić wiersz zaufania ClickOnce do formantu, czy użytkownicy końcowi otrzymują możliwość instalowania aplikacji ClickOnce, takie jak aplikacje systemu Windows Presentation Foundation, aplikacje konsoli, przeglądarce WPF w aplikacji formularzy systemu Windows aplikacje i rozwiązań pakietu Office. Możesz skonfigurować wiersz zaufania poprzez ustawienie kluczy rejestru na komputerze użytkownika końcowego.  

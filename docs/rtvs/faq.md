@@ -1,23 +1,20 @@
 ---
 title: R Tools for Visual Studio — często zadawane pytania
 description: Często zadawane pytania na R w programie Visual Studio.
-ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 758ac1496b8f6172a6d0af704c9d2b6361ed833a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="frequently-asked-questions"></a>Często zadawane pytania
 

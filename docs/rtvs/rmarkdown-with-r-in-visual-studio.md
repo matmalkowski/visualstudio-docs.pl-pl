@@ -1,23 +1,20 @@
 ---
 title: R Markdown
 description: Jak utworzyć R Markdown dokumenty w Visual Studio do tworzenia wysokiej jakości raportów, prezentacji i pulpitów nawigacyjnych.
-ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- devlang-r
-dev_langs:
-- R
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7237238931db51d90d8e2699446bdae5b61a368
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc8ffe0f6d3cdc0cd572c39dedb5f059e63525cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-r-markdown-documents"></a>Tworzenie dokumentów R Markdown
 

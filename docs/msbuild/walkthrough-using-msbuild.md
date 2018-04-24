@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16fdcaeb1750b822d71f753c95c915a14f9ed393
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Wskazówki: używanie programu MSBuild
 MSBuild to platforma kompilacji dla firmy Microsoft i Visual Studio. W tym przewodniku przedstawiono bloków konstrukcyjnych programu MSBuild i pokazano, jak napisać, manipulowanie nimi oraz debugowania projektów MSBuild. Poznasz:

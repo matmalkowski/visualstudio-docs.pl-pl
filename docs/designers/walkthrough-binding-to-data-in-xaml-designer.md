@@ -1,6 +1,5 @@
 ---
-title: 'Wskazówki: Powiązanie z danymi w Projektancie XAML | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Powiązanie z danymi w Projektancie XAML
 ms.date: 11/04/2016
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -14,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a770bd8224906ccd45a2d3f4be9e169368bb20cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Wskazówki: Powiązanie z danymi w Projektancie XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Wskazówki: Powiązanie z danymi w Projektancie XAML
 
 W Projektancie XAML za pomocą obszaru roboczego i w oknie właściwości można ustawić właściwości powiązania danych. Przykład, w tym przewodniku pokazano, jak wiązanie danych do formantu. W szczególności przewodnika pokazano, jak utworzyć prostą klasę koszyka zakupów zawierający [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) o nazwie `ItemCount`, a następnie powiązać `ItemCount` właściwości **tekst** właściwości z [blok tekstu](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) formantu.
 
@@ -100,5 +99,5 @@ W Projektancie XAML za pomocą obszaru roboczego i w oknie właściwości można
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Konwerter wartości, okno dialogowe Dodawanie](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Konwerter wartości, okno dialogowe Dodawanie](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

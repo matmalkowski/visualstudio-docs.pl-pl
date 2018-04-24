@@ -2,8 +2,7 @@
 title: Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody Instrumentacji z wiersza polecenia profilera | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b00f190b34ecee171881ad85ef8624b329fc23ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3864702edf15a60a7b3cbf161a2313a65dcf40fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z wiersza polecenia profilera
 W tej sekcji opisano procedury i opcji zbierania wydajności szczegółowe dane dla usług systemu Windows przy użyciu metody Instrumentacji z wiersza polecenia.  

@@ -1,9 +1,7 @@
 ---
-title: Analiza kodu dla C/C++ — omówienie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Analiza kodu dla C/C++ — Omówienie
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -21,40 +19,40 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90b586a9a131e6c1ef19f591f1348ff5125e9701
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4068b4956d0337a3b3c46693b54b0df165439a7f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — omówienie
 
-Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady ich kodu źródłowego C/C++. Przepełnienia buforów, które nie zostały zainicjowane pamięci obejmują typowe błędy kodowania zgłoszone przez narzędzie, wyłuskań wskaźnika o wartości null i przecieków pamięci i zasobów.  
-  
-## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)  
- Aby umożliwić fizycznych deweloperom korzystać z narzędzia do analizy, jego jest w pełni zintegrowana w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Podczas procesu tworzenia ostrzeżenia dla kodu źródłowego generowane są wyświetlane na liście błędów. Można nawigować do kodu źródłowego, który spowodował ostrzeżenia i można wyświetlić dodatkowe informacje na temat przyczyny i możliwe rozwiązania problemu.  
-  
-## <a name="pragma-support"></a>#pragma pomocy technicznej  
- Deweloperzy mogą używać `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla poszczególnych wierszach kodu. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie właściwości analizy kodu dla projektów C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
-  
-## <a name="annotation-support"></a>Obsługa adnotacji  
- Adnotacje poprawić analizy kodu. Adnotacje zawierają dodatkowe informacje o warunkach przed i po o parametrów funkcji i zwracanych typów. Aby uzyskać więcej informacji, zobacz [porady: Określanie dodatkowych informacji kodu za pomocą __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
-  
-## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Uruchom narzędzie do analizy jako część zasad ewidencjonowania  
- Możesz wymagać, że wszystkie źródła kodu zaewidencjonowane spełniają określone zasady. W szczególności chcesz upewnij się, że krokiem ostatniej kompilacji lokalnego uruchomienia analizy. Aby uzyskać więcej informacji na temat włączania zasad analizy kodu zaewidencjonowania zobacz [tworzenie i przy użyciu zasad analizy kodu zaewidencjonowania](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
-  
-## <a name="team-build-integration"></a>Integracja kompilacji Team  
- Można użyć zintegrowane funkcje systemu kompilacji, aby uruchomić narzędzie do analizy kodu na potrzeby [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proces kompilacji. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania](/vsts/build-release/index).  
-  
-## <a name="command-line-support"></a>Obsługa wiersza polecenia  
- Oprócz pełnej integracji środowiska programistycznego programiści mogą również wykorzystać narzędzie do analizy w wierszu polecenia, jak pokazano w poniższym przykładzie:  
-  
+Narzędzie do analizy kodu C/C++ informacje dla deweloperów o możliwych wady ich kodu źródłowego C/C++. Przepełnienia buforów, które nie zostały zainicjowane pamięci obejmują typowe błędy kodowania zgłoszone przez narzędzie, wyłuskań wskaźnika o wartości null i przecieków pamięci i zasobów.
+
+## <a name="ide-integrated-development-environment-integration"></a>Integracja IDE (zintegrowane środowisko programistyczne)
+ Aby umożliwić fizycznych deweloperom korzystać z narzędzia do analizy, jego jest w pełni zintegrowana w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Podczas procesu tworzenia ostrzeżenia dla kodu źródłowego generowane są wyświetlane na liście błędów. Można nawigować do kodu źródłowego, który spowodował ostrzeżenia i można wyświetlić dodatkowe informacje na temat przyczyny i możliwe rozwiązania problemu.
+
+## <a name="pragma-support"></a>#pragma pomocy technicznej
+ Deweloperzy mogą używać `#pragma` dyrektywy Traktuj ostrzeżenia jako błędy; Włącz lub wyłącz ostrzeżenia i pomijanie ostrzeżeń dla poszczególnych wierszach kodu. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie właściwości analizy kodu dla projektów C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+
+## <a name="annotation-support"></a>Obsługa adnotacji
+ Adnotacje poprawić analizy kodu. Adnotacje zawierają dodatkowe informacje o warunkach przed i po o parametrów funkcji i zwracanych typów. Aby uzyskać więcej informacji, zobacz [porady: Określanie dodatkowych informacji kodu za pomocą __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Uruchom narzędzie do analizy jako część zasad ewidencjonowania
+ Możesz wymagać, że wszystkie źródła kodu zaewidencjonowane spełniają określone zasady. W szczególności chcesz upewnij się, że krokiem ostatniej kompilacji lokalnego uruchomienia analizy. Aby uzyskać więcej informacji na temat włączania zasad analizy kodu zaewidencjonowania zobacz [tworzenie i przy użyciu zasad analizy kodu zaewidencjonowania](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+
+## <a name="team-build-integration"></a>Integracja kompilacji Team
+ Można użyć zintegrowane funkcje systemu kompilacji, aby uruchomić narzędzie do analizy kodu na potrzeby [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proces kompilacji. Aby uzyskać więcej informacji, zobacz [kompilacji i wydania](/vsts/build-release/index).
+
+## <a name="command-line-support"></a>Obsługa wiersza polecenia
+ Oprócz pełnej integracji środowiska programistycznego programiści mogą również wykorzystać narzędzie do analizy w wierszu polecenia, jak pokazano w poniższym przykładzie:
+
  `C:\>cl /analyze Sample.cpp`
 
 ## <a name="see-also"></a>Zobacz także
 
-[Analiza jakości sterowników za pomocą narzędzi analizy kodu](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)  
-[Analiza kodu dla sterowników ostrzeżenia](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)
+[Analiza jakości sterowników za pomocą narzędzi analizy kodu](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
+[kod analizy ostrzeżenia sterowniki](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

@@ -3,7 +3,7 @@ title: Rozwiązywanie problemów z błędami obiektów docelowych w programie .N
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
 - MSBuild.ResolveAssemblyReference.FailedToResolveReferenceBecausePrimaryAssemblyInExclusionList
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - multitargeting
 - .NET Framework Client Profile
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9db2379a56107db969c4e5b37e2f94457b34ed19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6376abc29f6f06541b9cd7f3d181b97ab7b38e5f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
 W tym temacie opisano błędy MSBuild, które mogą występować z powodu odwołania problemy i jak można usunąć te błędy.  

@@ -1,10 +1,8 @@
 ---
-title: 'CA1726: Używaj preferowanych terminów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1726: Używaj preferowanych terminów'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -16,58 +14,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e37ed041d03e82a63929a7bc525c73ea4062333
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41cb61db3916bdb5879931de28d6b87ccdde4853
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
-|||  
-|-|-|  
-|TypeName|UsePreferredTerms|  
-|CheckId|CA1726|  
-|Kategoria|Microsoft.Naming|  
-|Zmiana kluczowa|Dzielenie — po zestawów<br /><br /> Dzielenie non - po w parametrach typu|  
-  
-## <a name="cause"></a>Przyczyna  
- Nazwa widocznego na zewnątrz identyfikatora zawiera termin, dla którego istnieje alternatywny, preferowany zamiennik. Nazwa zawiera również termin flagi lub flagi.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Ta zasada analizuje identyfikator na tokeny. Każdego pojedynczego token i ciągłe kombinacja podwójną tokenu jest porównywany terminów, które są wbudowane w regule i w sekcji uznane za przestarzałe żadnych niestandardowych słowników. W poniższej tabeli przedstawiono warunki, które są wbudowane w zasady i ich preferowanego alternatyw.  
-  
-|Przestarzałe termin|Preferowany termin|  
-|-------------------|--------------------|  
-|nie są|AreNot|  
-|Anulowane|Anulowane|  
-|Nie można|Nie można|  
-|ComPlus|EnterpriseServices|  
-|Couldnt|CouldNot|  
-|Didnt|DidNot|  
-|Numer nie|Nie|  
-|Nie|Nie|  
-|Flaga lub flagi|Nie ma żadnego warunku zastąpienia. Nie używać.|  
-|nie|HadNot|  
-|Nie|HasNot|  
-|nie zostało to jeszcze|HaveNot|  
-|Indeksy|Indeksy|  
-|nie jest|IsNot|  
-|Logowanie|Logowanie|  
-|Wyloguj|Wyloguj|  
-|Shouldnt|ShouldNot|  
-|Logować|Logowanie|  
-|Wyrejestrowanie|Wyloguj się|  
-|Wasnt|WasNot|  
-|nie zostały|WereNot|  
-|Nie można|Iść|  
-|Wouldnt|WouldNot|  
-|Zapisywalne|Zapisywalny|  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, Zamień termin na preferowany termin alternatywny.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy nazwa identyfikatora jest zamierzone i dotyczy w szczególności pierwotny termin zamiast preferowanych terminów.  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
+|||
+|-|-|
+|TypeName|UsePreferredTerms|
+|CheckId|CA1726|
+|Kategoria|Microsoft.Naming|
+|Zmiana kluczowa|Dzielenie — po zestawów<br /><br /> Dzielenie non - po w parametrach typu|
+
+## <a name="cause"></a>Przyczyna
+ Nazwa widocznego na zewnątrz identyfikatora zawiera termin, dla którego istnieje alternatywny, preferowany zamiennik. Nazwa zawiera również termin flagi lub flagi.
+
+## <a name="rule-description"></a>Opis reguły
+ Ta zasada analizuje identyfikator na tokeny. Każdego pojedynczego token i ciągłe kombinacja podwójną tokenu jest porównywany terminów, które są wbudowane w regule i w sekcji uznane za przestarzałe żadnych niestandardowych słowników. W poniższej tabeli przedstawiono warunki, które są wbudowane w zasady i ich preferowanego alternatyw.
+
+|Przestarzałe termin|Preferowany termin|
+|-------------------|--------------------|
+|nie są|AreNot|
+|Anulowane|Anulowane|
+|Nie można|Nie można|
+|ComPlus|EnterpriseServices|
+|Couldnt|CouldNot|
+|Didnt|DidNot|
+|Numer nie|Nie|
+|Nie|Nie|
+|Flaga lub flagi|Nie ma żadnego warunku zastąpienia. Nie używać.|
+|nie|HadNot|
+|Nie|HasNot|
+|nie zostało to jeszcze|HaveNot|
+|Indeksy|Indeksy|
+|nie jest|IsNot|
+|Logowanie|Logowanie|
+|Wyloguj|Wyloguj|
+|Shouldnt|ShouldNot|
+|Logować|Logowanie|
+|Wyrejestrowanie|Wyloguj się|
+|Wasnt|WasNot|
+|nie zostały|WereNot|
+|Nie można|Iść|
+|Wouldnt|WouldNot|
+|Zapisywalne|Zapisywalny|
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, Zamień termin na preferowany termin alternatywny.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy nazwa identyfikatora jest zamierzone i dotyczy w szczególności pierwotny termin zamiast preferowanych terminów.
+
+## <a name="related-rules"></a>Powiązanych reguł
  [Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)

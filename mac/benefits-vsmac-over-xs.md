@@ -1,18 +1,19 @@
 ---
-title: "Zalety programu Visual Studio dla komputerów Mac w programie Xamarin Studio | Dokumentacja firmy Microsoft"
+title: Zalety programu Visual Studio dla komputerów Mac w programie Xamarin Studio
+description: ''
+ms.topic: overview
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Zalety programu Visual Studio dla komputerów Mac w programie Xamarin Studio 
- 
+
 Visual Studio for Mac została zastąpiona Xamarin Studio jako w pełni funkcjonalnego środowiska IDE na komputerach Mac. Zapewnia funkcje, które umożliwiają opracowywanie aplikacji sieci web i usług, i platform mobilnych i klasycznych aplikacji i gier. Ponadto ułatwia integrowanie z Azure błyskawicznie, czy oznacza to publikowanie na platformie Azure lub tworzenie usługi Azure Functions. Ma ona wszystko, czego można oczekiwać od nowoczesnych IDE, w tym edytorze źródła kompletne, zaawansowany debuger obszaru roboczego można dostosowywać, integracja z usługą git i sformatowanego rozszerzenia systemu, wszystkie zaprojektowane w sposób macierzysty dla komputerów Mac. 
 
 Oto niektóre inne funkcje: 
@@ -48,7 +49,7 @@ Obsługa platformy .NET Core obejmuje poniższe elementy:
 
 ## <a name="web-development"></a>Projektowanie witryn sieci Web  
 
-### <a name="aspnet-core"></a>Platformy ASP.NET Core 
+### <a name="aspnet-core"></a>ASP.NET Core 
 
 Visual Studio for Mac zawiera szablony platformy ASP.NET Core dla projektów MVC i interfejsu API sieci Web poza pole.
  
@@ -153,7 +154,7 @@ Gdy funkcji i platform Xamarin były zawsze najwyższej jakości funkcji program
 
 ### <a name="ios-and-mac"></a>iOS i Mac 
 
-* [iOS podpisywania aktualizacji przepływu pracy](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
+* [iOS podpisywania aktualizacji przepływu pracy ](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
     * Tworzenie tożsamości podpisywania i zainstaluj je do lokalnej łańcucha kluczy. 
     * Utwórz profile aprowizacji. 
     * Dodaj tożsamości podpisywania do istniejącego profilu.
@@ -161,7 +162,7 @@ Gdy funkcji i platform Xamarin były zawsze najwyższej jakości funkcji program
 * iOS 11, watchOS 4 i systemu tvOS 2 będą tylko obsługiwane w programie Visual Studio dla komputerów Mac, nie Xamarin Studio 
 * System MacOS wysokiej Sierra będą tylko obsługiwane w programie Visual Studio dla komputerów Mac, nie Xamarin Studio 
 
-### <a name="cross-platform"></a>Różne platformy 
+### <a name="cross-platform"></a>Wiele platform 
 
 * [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/) (**Podgląd**) 
 * [Xamarin IoT](https://developer.xamarin.com/guides/cross-platform/iot/) (**Podgląd**) 

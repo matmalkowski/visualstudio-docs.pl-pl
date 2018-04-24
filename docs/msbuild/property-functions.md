@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b02591886ae1d140efb2239361ce13ee43727df7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 62b214e5ceefa691787b9dee2a5b3332c6fcbee6
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta do oceny skrypty programu MSBuild. Funkcje właściwości można tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań funkcje właściwości można używać poza elementów docelowych i są oceniane przed uruchomieniem żadnych docelowych.  
@@ -103,6 +103,10 @@ W wersji systemu .NET Framework 4 i 4.5 funkcje właściwości może być użyta
 -   System.TimeSpan  
 
 -   System.Text.RegularExpressions.Regex  
+
+-   System.UriBuilder
+
+-   System.Version
 
 -   Microsoft.Build.Utilities.ToolLocationHelper  
 

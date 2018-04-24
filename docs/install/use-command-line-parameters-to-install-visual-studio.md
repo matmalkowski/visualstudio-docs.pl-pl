@@ -1,10 +1,10 @@
 ---
-title: Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio | Dokumentacja firmy Microsoft
+title: Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
+description: Informacje o sposobie używania parametrów wiersza polecenia, aby kontrolować lub dostosować instalację programu Visual Studio.
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b347d257e5eeb5b5672223fc06941f5513583b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
+
 Po zainstalowaniu programu Visual Studio 2017 z wiersza polecenia, można użyć różnych parametrów wiersza polecenia kontroli lub dostosowanie instalacji. W wierszu polecenia można wykonywać następujące czynności:
 
 - Rozpocznij instalację z określonymi opcjami wstępnie wybrane.
@@ -35,7 +36,8 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>Lista parametrów wiersza polecenia  
+## <a name="list-of-command-line-parameters"></a>Lista parametrów wiersza polecenia
+
  Visual Studio parametry wiersza polecenia jest rozróżniana wielkość liter.
 
 > Składnia: `vs_enterprise.exe [command] <options>...`
@@ -101,9 +103,11 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--noWeb` | **Nowość w 15 ustęp 3, opcjonalnie**: Instalator pobierze teraz żadnej zawartości, który jest instalowany z Internetu.  Cała zawartość, który jest instalowany musi być dostępny w układzie w trybie offline.  Układu nie ma zawartości, instalacja zakończy się niepowodzeniem.  Aby uzyskać więcej informacji, zobacz [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista identyfikatorów obciążenia i identyfikatory składników
+
 Listę obciążenia i identyfikatory składników posortowane według produktu Visual Studio, zobacz [obciążenia 2017 r w usłudze Visual Studio i identyfikatory składników](workload-and-component-ids.md) strony.
 
 ## <a name="list-of-language-locales"></a>Lista ustawień regionalnych języka
+
 | **Ustawienia regionalne języka** | **Język** |
 | ----------------------- | --------------- |
 | cs-CZ | czeski |
@@ -122,6 +126,7 @@ Listę obciążenia i identyfikatory składników posortowane według produktu V
 | zh-TW | Chiński — tradycyjny |
 
 ## <a name="error-codes"></a>Kody błędów
+
 W zależności od wyniku operacji `%ERRORLEVEL%` zmiennej środowiskowej zostanie ustawiona do jednej z następujących wartości:
 
 | **Wartość** | **wynik** |
@@ -136,16 +141,18 @@ W zależności od wyniku operacji `%ERRORLEVEL%` zmiennej środowiskowej zostani
 Każda operacja generuje kilka plików dziennika w `%TEMP%` katalogu, który wskazuje postęp instalacji. Sortowanie folderu według daty i wyszukaj pliki, które zaczynają się od `dd_bootstrapper`, `dd_client`, i `dd_setup` dla programu inicjującego, Instalator aplikacji i ustawień aparatu, odpowiednio.
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
+
 Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+
 * Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
 * Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), zadawać pytania i odpowiedzi.
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą naszych [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio).  (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
 
 ## <a name="see-also"></a>Zobacz także
 
- * [Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.](command-line-parameter-examples.md)
- * [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
- * [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
+* [Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.](command-line-parameter-examples.md)
+* [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
+* [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)

@@ -1,17 +1,16 @@
 ---
-title: Zainstaluj program Visual Studio for Mac | Dokumentacja firmy Microsoft
-description: "Instrukcje dotyczące instalowania programu Visual Studio for Mac i dodatkowe składniki wymagane dla aplikacji dla wielu platform."
+title: Zainstaluj program Visual Studio dla komputerów Mac
+description: Instrukcje dotyczące instalowania programu Visual Studio for Mac i dodatkowe składniki wymagane dla aplikacji dla wielu platform.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 9069e85f5d0bf0d6b8031065619b48f7302b7411
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Konfigurowanie i instalowanie oprogramowania Visual Studio dla komputerów Mac
 
@@ -101,15 +100,15 @@ Instalacja programu Visual Studio for Mac pozwala rozpocząć pisanie kodu dla a
 
 ### <a name="ios"></a>iOS
 
-1. [Witaj, z systemem iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+1. [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Inicjowania obsługi administracyjnej urządzeniu](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(do uruchamiania aplikacji na urządzeniu).
 
 
 ### <a name="android"></a>Android
 
 1. [Za pomocą platformy Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Zestaw SDK systemu android Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Konfigurowanie urządzeń środowiska deweloperskiego](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+2. [Emulator zestawu SDK systemu Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Konfigurowanie urządzenia na potrzeby programowania](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenie gier środowiska Unity
 

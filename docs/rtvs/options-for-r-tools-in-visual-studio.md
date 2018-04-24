@@ -1,10 +1,10 @@
 ---
 title: Opcje narzędzia R
 description: Dokumentacja dotycząca opcji w programie Visual Studio dla języka R i skojarzone funkcji.
-ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- devlang-r
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: reference
 dev_langs:
 - R
 f1_keywords:
@@ -12,17 +12,16 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
 - vs.toolsoptionspages.r_tools.#150
-ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3a80b787d1d2631afbdac90092f9fd251758dcf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d284355af0d5ec406a5d355bf670a520d1a83e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Narzędzia języka R w opcjach programu Visual Studio
 

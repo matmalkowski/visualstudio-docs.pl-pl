@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Określanie zdarzeń kompilacji (Visual Basic) | Dokumentacja firmy Microsoft'
+title: 'Porady: Określanie kompilacji zdarzenia (Visual Basic) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87727728c2a307475e9640b1212dec1bc0eaae99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 976db0262666da2ba0c275d9dae9530faf3f5c38
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Porady: określanie zdarzeń kompilacji (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Porady: Określanie kompilacji zdarzenia (Visual Basic)
 Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skryptów, makr lub innych działań jako część procesu kompilacji. Zdarzenia prekompilacyjnego występują przed kompilacji; zdarzenia postkompilacyjnego występują po kompilacji.  
   
  Tworzenie zdarzenia są określone w **zdarzeń kompilacji** okno dialogowe, dostępne z **skompilować** strony **Projektant projektu**.  
@@ -31,7 +31,7 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
 > [!NOTE]
 >  Visual Basic Express nie obsługuje zapisu zdarzeń kompilacji. Jest to obsługiwane tylko w pełną wersję programu Visual Studio.  
   
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określać zdarzenia Prekompilacyjnego i mające miejsce po kompilacji  
+## <a name="how-to-specify-pre-build-and-post-build-events"></a>Jak określać zdarzenia prekompilacyjnego i mające miejsce po kompilacji  
   
 #### <a name="to-specify-a-build-event"></a>Aby określić zdarzenia kompilacji  
   
@@ -44,13 +44,13 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
 4.  Wprowadź argumenty wiersza polecenia dla akcji kompilacji przed lub po kompilacji, a następnie kliknij przycisk **OK**.  
   
     > [!NOTE]
-    >  Dodaj `call` instrukcję przed wszystkie postkompilacyjnego polecenia, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    >  Dodaj `call` instrukcję przed wszystkie postkompilacyjnego polecenia, które uruchamiają *bat* plików. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
     >  Jeśli Twoje zdarzenia prekompilacyjnego lub mające miejsce po kompilacji nie zakończy się pomyślnie, można zakończyć kompilacji przez akcję zdarzeń zamknąć przy użyciu kodu innego niż zero (0), wskazujący pomyślne akcji.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Przykład: Jak zmienić manifestu informacji za pomocą zdarzenie mające miejsce po kompilacji  
- Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjnego w manifeście aplikacji za pomocą polecenia .exe wywoływana z zdarzenia postkompilacyjnego (. exe.manifest pliku w katalogu projektu). Minimalna wersja systemu operacyjnego jest liczbą czteroczęściową, takich jak 4.10.0.0. Aby to zrobić, zmieni polecenie `<dependentOS>` sekcji manifestu:  
+ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjnego w aplikacji manifestu za pomocą *.exe* polecenia wywoływane z zdarzenia postkompilacyjnego ( *. exe.manifest* pliku w projekcie katalog). Minimalna wersja systemu operacyjnego jest liczbą czteroczęściową, takich jak 4.10.0.0. Aby to zrobić, zmieni polecenie `<dependentOS>` sekcji manifestu:  
   
 ```  
 <dependentOS>  
@@ -66,7 +66,7 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
   
 2.  W **nowy projekt** okna dialogowego, **Visual Basic** węzła, wybierz opcję **Windows** , a następnie **aplikacji konsoli** szablonu. Nazwij projekt `ChangeOSVersionVB`.  
   
-3.  W Module1.vb, Dodaj następujący wiersz do drugiego `Imports` instrukcje w górnej części pliku:  
+3.  W *Module1.vb*, Dodaj następujący wiersz do drugiego `Imports` instrukcje w górnej części pliku:  
   
     ```  
     Imports System.Xml  
@@ -115,11 +115,11 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
     End Sub  
     ```  
   
-     Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżka do manifestu aplikacji (oznacza to, że folder w którym proces kompilacji tworzy manifestu, zwykle Projectname.publish). Drugi argument jest nowa wersja systemu operacyjnego.  
+     Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżka do manifestu aplikacji (oznacza to, że folder, w którym proces kompilacji tworzy manifestu, zwykle  *<Projectname>.publish*). Drugi argument jest nowa wersja systemu operacyjnego.  
   
 5.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-6.  Skopiuj plik .exe do katalogu, takie jak `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Kopiuj *.exe* pliku do katalogu, takie jak *C:\TEMP\ChangeOSVersionVB.exe*.  
   
  Następnie wywołaj tego polecenia zdarzenia po kompilacji, aby zmienić manifest aplikacji.  
   
@@ -128,14 +128,13 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
 1.  Tworzenie aplikacji systemu Windows dla projektu do opublikowania. Z **pliku** menu, kliknij przycisk **nowy**, a następnie kliknij przycisk **projektu**.  
   
 2.  W **nowy projekt** okna dialogowego, **Visual Basic** węzła, wybierz opcję **klasycznego pulpitu systemu Windows** , a następnie **aplikacji formularzy systemu Windows** szablon. Nazwij projekt `VBWinApp`.  
-  
 3.  W projekcie wybrana w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-4.  W Projektancie projektu, przejdź do **publikowania** strony i ustaw **publikowania lokalizacji** do `C:\TEMP\`.  
+4.  W **projektanta projektu**, przejdź do **publikowania** strony i ustaw **publikowania lokalizacji** do *C:\TEMP*.  
   
 5.  Publikowanie projektu, klikając **opublikować teraz**.  
   
-     Plik manifestu zostanie utworzony i umieścić w `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Aby wyświetlić plik manifestu, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą**, następnie kliknij przycisk **wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.  
+     Plik manifestu zostanie utworzony i umieścić w *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Aby wyświetlić plik manifestu, kliknij prawym przyciskiem myszy plik, a następnie kliknij przycisk **Otwórz za pomocą**, następnie kliknij przycisk **wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.  
   
      Wyszukaj w pliku `<osVersionInfo>` elementu. Na przykład może być wersji:  
   
@@ -143,7 +142,7 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  W Projektancie projektu, przejdź do **skompilować** i kliknij polecenie **zdarzeń kompilacji** przycisk, aby otworzyć **zdarzeń kompilacji** okno dialogowe.  
+6.  W **projektanta projektu**, przejdź do **skompilować** i kliknij polecenie **zdarzeń kompilacji** przycisk, aby otworzyć **zdarzeń kompilacji** okno dialogowe.  
   
 7.  W **wiersz polecenia zdarzenia po kompilacji** wprowadź następujące polecenie:  
   
@@ -151,7 +150,7 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
   
      Podczas tworzenia projektu, to polecenie spowoduje zmianę minimalnej wersji systemu operacyjnego w manifeście aplikacji na 5.1.2600.0.  
   
-     `$(TargetPath)` Makro wyraża pełnej ścieżki pliku wykonywalnego tworzona. W związku z tym $(TargetPath) manifest określa manifest aplikacji utworzony w katalogu bin. Publikowanie skopiuje tego manifestu ustawionych wcześniej lokalizację publikowania.  
+     `$(TargetPath)` Makro wyraża pełnej ścieżki pliku wykonywalnego tworzona. W związku z tym *manifest $(TargetPath)* będzie określać utworzone w manifeście aplikacji *bin* katalogu. Publikowanie skopiuje tego manifestu ustawionych wcześniej lokalizację publikowania.  
   
 8.  Ponownie opublikować projekt. Przejdź do **publikowania** i kliknij przycisk **opublikować teraz**.  
   
@@ -168,4 +167,4 @@ Zdarzenia kompilacji w języku Visual Basic mogą służyć do uruchamiania skry
 [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
 [Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)   
 [Okno dialogowe wiersza polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
-[Instrukcje: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)
+[Porady: Określanie kompilacji zdarzeń (C#)](../ide/how-to-specify-build-events-csharp.md)

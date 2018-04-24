@@ -2,8 +2,7 @@
 title: Widok modułów - dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0df8bca5648dddaa9449480db14b781f55ea9d41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aba425823de9f6c9e935e987e2f574ac0733d262
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów - dane próbkowania pamięci .NET
 Widok modułów danych alokacji pamięci .NET, które są zbierane za pomocą metody pobierania próbek grupuje dane pamięci przez moduły, które zostały wykonane w przebiegu profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznej. Funkcji modułu są wyświetlane poniżej tego węzła modułu.  

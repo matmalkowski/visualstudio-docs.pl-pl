@@ -3,7 +3,7 @@ title: Assignculture — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c70378ff2953fd246aeb829376f2f2bf2aa685
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 26adf9bd97e10e25402db100ebb0140917ac6143
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="assignculture-task"></a>AssignCulture — Zadanie
 To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kultury identyfikator. Na przykład nazwa pliku Form1.fr fr.resx ma osadzonych kultury identyfikator "fr-fr", dlatego to zadanie spowoduje utworzenie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie również tworzy listę nazw plików z kulturą usunięte z nazwy pliku.  

@@ -1,6 +1,5 @@
 ---
-title: 'Porady: Otwieranie modelu z pliku w kodzie programu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Porady: otwieranie modelu z pliku w kodzie programu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,129 +8,129 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: def58efd27dc87b35b50969630e3129b999fc98a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 832cd34b2461a07e895272816324e41508fdbbd5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
-Możesz otworzyć DSL modeli w dowolnej aplikacji.  
-  
- Z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia, w tym celu można użyć ModelBus. ModelBus udostępnia standardowy mechanizm dla odwołania do elementów w modelu lub model i znajdowanie modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
-  
-## <a name="target-framework"></a>Platforma docelowa  
- Ustaw **platformy docelowej** projektu aplikacji do **.NET Framework 4**.  
-  
-#### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową  
-  
-1.  Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu dla aplikacji, w którym chcesz odczytać modelu DSL.  
-  
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.  
-  
-3.  W oknie właściwości projektu na **aplikacji** ustaw **platformy docelowej** do **.NET Framework 4**.  
-  
+Możesz otworzyć DSL modeli w dowolnej aplikacji.
+
+ Z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia, w tym celu można użyć ModelBus. ModelBus udostępnia standardowy mechanizm dla odwołania do elementów w modelu lub model i znajdowanie modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli przy użyciu programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+
+## <a name="target-framework"></a>Platforma docelowa
+ Ustaw **platformy docelowej** projektu aplikacji do **.NET Framework 4**.
+
+#### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową
+
+1.  Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu dla aplikacji, w którym chcesz odczytać modelu DSL.
+
+2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
+
+3.  W oknie właściwości projektu na **aplikacji** ustaw **platformy docelowej** do **.NET Framework 4**.
+
 > [!NOTE]
->  Może być konieczne nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym Tworzenie projektu. Platforma docelowa nie może być **.NET Framework 4 Client Profile**.  
-  
-## <a name="references"></a>Odwołania  
- Należy dodać te odwołania do Twojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt aplikacji:  
-  
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
-  
-    -   Jeśli nie widzisz taki komunikat w obszarze **.NET** karcie **Dodaj odwołania** okno dialogowe, kliknij przycisk **Przeglądaj** karcie i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
-  
--   Używanemu zestawowi DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa jest zwykle w postaci: *NazwaFirmy*. *YourProject*`.Dsl.dll`.  
-  
-## <a name="important-classes-in-the-dsl"></a>Ważne klas w DSL  
- Aby można było tworzyć kod, który odczytuje z DSL, należy wiedzieć, nazwy niektórych klas generowanych przez użytkownika DSL. W rozwiązaniu DSL, otwórz **Dsl** projektu i Znajdź **GeneratedCode** folderu. Alternatywnie kliknij dwukrotnie zestawu DSL w projekcie **odwołania**i otwórz DSL przestrzeń nazw w **przeglądarki obiektów**.  
-  
- Są to klasy, które należy zidentyfikować:  
-  
--   *YourDslRootClass* — jest to nazwa klasy głównym w Twojej `DslDefinition.dsl`.  
-  
--   *YourDslName* `SerializationHelper` — ta klasa jest zdefiniowana w `SerializationHelper.cs` w projekcie DSL.  
-  
--   *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie DSL.  
-  
-## <a name="reading-from-a-file"></a>Odczytywanie z pliku  
- Poniższy przykład zaprojektowano w celu odczytu DSL, w którym klasy ważne są następujące:  
-  
--   FamilyTreeModel  
-  
--   FamilyTreeSerializationHelper  
-  
--   FamilyTreeDomainModel  
-  
- Klasa domeny w tym DSL jest osoby.  
-  
-```  
-using System;  
-using Microsoft.VisualStudio.Modeling;  
-using Company.FamilyTree; // Your DSL namespace  
-  
-namespace StandaloneReadDslConsole  
-{ class Program  
-  { static void Main(string[] args)  
-    {  
-      // The path of a DSL model file:  
-      string dslModel = @"C:\FamilyTrees\Tudor.ftree";  
-      // Set up the Store to read your type of model:  
-      Store store = new Store(  
-        typeof(Company.FamilyTree.FamilyTreeDomainModel));  
-      // The Model type generated by the DSL:  
-      FamilyTreeModel familyTree;  
-      // All Store changes must be in a Transaction:  
-      using (Transaction t =   
-        store.TransactionManager.BeginTransaction("Load model"))  
-      {  
-        familyTree =   
-           FamilyTreeSerializationHelper.Instance.  
-              LoadModel(store, dslModel, null, null, null);  
-        t.Commit(); // Don't forget this!  
-      }  
-      // Now we can read the model:  
-      foreach (Person p in familyTree.People)  
-      {  
-        Console.WriteLine(p.Name);   
-        foreach (Person child in p.Children)  
-        {  
-          Console.WriteLine("    " + child.Name);  
-        }  
-} } } }  
-```  
-  
-## <a name="saving-to-a-file"></a>Zapisywanie do pliku  
- Dodaje do poprzedniego kodu sprawia, że zmiany w modelu i jest zapisywany do pliku.  
-  
-```  
-using (Transaction t =  
-  store.TransactionManager.BeginTransaction("update model"))  
-{  
-  // Create a new model element:  
-  Person p = new Person(store);  
-  // Set its embedding relationship:  
-  p.FamilyTreeModel = familyTree;  
-  // - same as: familyTree.People.Add(p);  
-  // Set its properties:  
-  p.Name = "Edward VI";  
-  t.Commit(); // Don't forget this!  
-}  
-// Save the model:  
-try  
-{  
-  SerializationResult result = new SerializationResult();  
-  FamilyTreeSerializationHelper.Instance  
-    .SaveModel(result, familyTree, @"C:\FamilyTrees\Tudor-upd.ftree");  
-  // Report any error:  
-  if (result.Failed)  
-  {  
-    foreach (SerializationMessage message in result)  
-    {  
-      Console.WriteLine(message);  
-    }  
-  }  
-}  
-catch (System.IO.IOException ex)  
-{ ... }  
+>  Może być konieczne nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym Tworzenie projektu. Platforma docelowa nie może być **.NET Framework 4 Client Profile**.
+
+## <a name="references"></a>Odwołania
+ Należy dodać te odwołania do Twojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt aplikacji:
+
+-   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
+
+    -   Jeśli nie widzisz taki komunikat w obszarze **.NET** karcie **Dodaj odwołania** okno dialogowe, kliknij przycisk **Przeglądaj** karcie i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+
+-   Używanemu zestawowi DSL, który można znaleźć w folderze bin projektu DSL. Jego nazwa jest zwykle w postaci: *NazwaFirmy*. *YourProject*`.Dsl.dll`.
+
+## <a name="important-classes-in-the-dsl"></a>Ważne klas w DSL
+ Aby można było tworzyć kod, który odczytuje z DSL, należy wiedzieć, nazwy niektórych klas generowanych przez użytkownika DSL. W rozwiązaniu DSL, otwórz **Dsl** projektu i Znajdź **GeneratedCode** folderu. Alternatywnie kliknij dwukrotnie zestawu DSL w projekcie **odwołania**i otwórz DSL przestrzeń nazw w **przeglądarki obiektów**.
+
+ Są to klasy, które należy zidentyfikować:
+
+-   *YourDslRootClass* — jest to nazwa klasy głównym w Twojej `DslDefinition.dsl`.
+
+-   *YourDslName* `SerializationHelper` — ta klasa jest zdefiniowana w `SerializationHelper.cs` w projekcie DSL.
+
+-   *YourDslName* `DomainModel` — ta klasa jest zdefiniowana w `DomainModel.cs` w projekcie DSL.
+
+## <a name="reading-from-a-file"></a>Odczytywanie z pliku
+ Poniższy przykład zaprojektowano w celu odczytu DSL, w którym klasy ważne są następujące:
+
+-   FamilyTreeModel
+
+-   FamilyTreeSerializationHelper
+
+-   FamilyTreeDomainModel
+
+ Klasa domeny w tym DSL jest osoby.
+
+```
+using System;
+using Microsoft.VisualStudio.Modeling;
+using Company.FamilyTree; // Your DSL namespace
+
+namespace StandaloneReadDslConsole
+{ class Program
+  { static void Main(string[] args)
+    {
+      // The path of a DSL model file:
+      string dslModel = @"C:\FamilyTrees\Tudor.ftree";
+      // Set up the Store to read your type of model:
+      Store store = new Store(
+        typeof(Company.FamilyTree.FamilyTreeDomainModel));
+      // The Model type generated by the DSL:
+      FamilyTreeModel familyTree;
+      // All Store changes must be in a Transaction:
+      using (Transaction t =
+        store.TransactionManager.BeginTransaction("Load model"))
+      {
+        familyTree =
+           FamilyTreeSerializationHelper.Instance.
+              LoadModel(store, dslModel, null, null, null);
+        t.Commit(); // Don't forget this!
+      }
+      // Now we can read the model:
+      foreach (Person p in familyTree.People)
+      {
+        Console.WriteLine(p.Name);
+        foreach (Person child in p.Children)
+        {
+          Console.WriteLine("    " + child.Name);
+        }
+} } } }
+```
+
+## <a name="saving-to-a-file"></a>Zapisywanie do pliku
+ Dodaje do poprzedniego kodu sprawia, że zmiany w modelu i jest zapisywany do pliku.
+
+```
+using (Transaction t =
+  store.TransactionManager.BeginTransaction("update model"))
+{
+  // Create a new model element:
+  Person p = new Person(store);
+  // Set its embedding relationship:
+  p.FamilyTreeModel = familyTree;
+  // - same as: familyTree.People.Add(p);
+  // Set its properties:
+  p.Name = "Edward VI";
+  t.Commit(); // Don't forget this!
+}
+// Save the model:
+try
+{
+  SerializationResult result = new SerializationResult();
+  FamilyTreeSerializationHelper.Instance
+    .SaveModel(result, familyTree, @"C:\FamilyTrees\Tudor-upd.ftree");
+  // Report any error:
+  if (result.Failed)
+  {
+    foreach (SerializationMessage message in result)
+    {
+      Console.WriteLine(message);
+    }
+  }
+}
+catch (System.IO.IOException ex)
+{ ... }
 ```

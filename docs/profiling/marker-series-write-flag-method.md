@@ -2,8 +2,7 @@
 title: marker_series::write_flag — metoda | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c979a2c37f786a4766952189cb300f32beff363c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6469e6f1b2e32993dbca196b0d4b86999569d71d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag — Metoda
 Zapisuje plik śledzenia Concurrency Visualizer flagę.  

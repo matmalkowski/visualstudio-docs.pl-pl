@@ -1,20 +1,18 @@
 ---
-title: Zestaw reguł mieszanych reguł zalecanych | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Zestaw reguł Mixed Recommended Rules
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfecf4019244e02816686783171cb34cd0c0c1d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b84c218ad6a369cfc5d9f06a5f5833fb277692ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Zestaw reguł Mixed Recommended Rules
 
@@ -215,7 +213,7 @@ Microsoft mieszanych zalecane reguły dotyczą najczęstszych i najpoważniejszy
 |[C28253](../code-quality/c28253.md)|Niespójna adnotacja dla funkcji: parametr ma inny adnotacje w tym wystąpieniu.|
 |[C28254](../code-quality/c28254.md)|(dynamic_cast <>) nie jest obsługiwane w adnotacjach|
 |[C28262](../code-quality/c28262.md)|Znaleziono błąd składni w adnotacji w funkcji dla adnotacji|
-|[C28263](../code-quality/c28263.md)|Znaleziono błąd składni w adnotacji warunkowej dla adnotacji — wewnętrzne| 
+|[C28263](../code-quality/c28263.md)|Znaleziono błąd składni w adnotacji warunkowej dla adnotacji — wewnętrzne|
 |[C28267](../code-quality/c28267.md)|Znaleziono błąd składni w adnotacjach adnotacji w funkcji.|
 |[C28272](../code-quality/c28272.md)|Adnotacja dla funkcji, parametr Rozpatrując jest niespójny z deklaracją funkcji|
 |[C28273](../code-quality/c28273.md)|W przypadku funkcji wskazówek są niezgodne z deklaracją funkcji|

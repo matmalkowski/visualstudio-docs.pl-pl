@@ -1,17 +1,16 @@
 ---
-title: Odinstalowanie programu Visual Studio for Mac | Dokumentacja firmy Microsoft
+title: Odinstalowanie programu Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące odinstalowywania programu Visual Studio dla komputerów Mac oraz narzędzia pokrewne.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 985905c81acc5816c2b7a37debb4f5af3d93e94f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: b3da59c949204f7363276ce9631604af9fadcad6
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowanie programu Visual Studio dla komputerów Mac
 

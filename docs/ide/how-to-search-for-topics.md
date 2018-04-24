@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e76a1e87da99d8504620ed2881dcc60b8ce99a57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>Porady: wyszukiwanie tematów
 Funkcja wyszukiwania pełnotekstowego zlokalizować wszystkie tematy zawierające określonego wyrazu. Można również dostosować i dostosować wyszukiwanie przy użyciu symboli wieloznacznych wyrażenia, operatorów logicznych i operatory wyszukiwania zaawansowanego.  
   
-Aby otworzyć kartę Wyszukiwanie, wybierz **wyszukiwania** karty w oknie Podgląd pomocy, lub jeśli użytkownik jest użytkownikiem klawiatury, wybierz **Ctrl + E**.  
+Aby otworzyć **wyszukiwania** , wybierz pozycję **wyszukiwania** karcie w **podglądu pomocy** okna, jeśli jesteś użytkownikiem klawiatury, wybierz polecenie **Ctrl** + **E**.  
   
 ## <a name="to-perform-a-full-text-search"></a>Aby wykonać wyszukiwanie pełnotekstowe 
 1.  W polu wyszukiwania wpisz wyraz, który ma zostać znaleziona.  

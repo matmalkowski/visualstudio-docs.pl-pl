@@ -2,8 +2,7 @@
 title: Odwołanie do reguły wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef77220fa80cda468c5af9e9b1c91a82e6f8677
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7707dad3e839ccc1bd306cb840555d1091e75a8a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-rules-reference"></a>Zasady wydajności — Odwołanie
 Zasady wydajności narzędzi profilowania zapewniają dodatkowe ostrzeżenia i informacje o wydajności aplikacji. Reguły wydajności analizowanie danych w przebiegu profilowania, zebrane ze źródeł, takich jak liczniki wydajności procesora i systemu Windows. Reguła komunikaty są wyświetlane w oknie dane wyjściowe błędów [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane środowisko deweloperskie. Komunikaty są wyświetlane z jedną z następujących poziomów reguły:  

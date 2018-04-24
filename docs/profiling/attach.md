@@ -2,8 +2,7 @@
 title: Dołączanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 437d281f0bd965cbe652cfe9961203ee7123b6d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98e18456ad4665359e33d7a9b5f064585f8195be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="attach"></a>Dołącz
 VSPerfCmd.exe **Attach** opcji rozpoczyna próbki profilowanie uruchomiony proces określony przez identyfikator PID procesu.  

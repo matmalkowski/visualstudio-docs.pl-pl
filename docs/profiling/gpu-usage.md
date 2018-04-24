@@ -2,19 +2,18 @@
 title: Użycie procesora GPU | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c9ca5624ecdafb4079bb58d69ff72727104c1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9926846ceaba3591a3e89f2eba0fa2d3888e9302
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 Użyj narzędzia użycie procesora GPU w Centrum diagnostyki i wydajności usługi Visual Studio, aby lepiej zrozumieć wykorzystanie sprzętu wysokiego poziomu aplikacji Direct3D. Służy on do ustalenia, czy wydajność aplikacji jest powiązane z procesora CPU lub powiązane z procesora GPU i uzyskanie szczegółowe informacje na temat używania platformy sprzętu bardziej efektywnie. Użycie procesora GPU obsługuje aplikacje, które używają Direct3D 12, Direct3D 11 i Direct3D 10; nie obsługuje innych interfejsów API, takich jak Direct2D lub OpenGL grafiki.  

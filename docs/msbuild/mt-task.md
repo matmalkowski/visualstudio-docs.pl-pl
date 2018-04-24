@@ -3,7 +3,7 @@ title: MT — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -21,16 +21,16 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d990de8959ec508aeab0550e32e84e753d3a6bb1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da1cc8b65ac43e05c692d1fe7a5af4d8ea6fe381
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mt-task"></a>MT — Zadanie
 Zawijania narzędzie Microsoft Manifest mt.exe. Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  

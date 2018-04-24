@@ -1,5 +1,5 @@
 ---
-title: 'Porady: podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft'
+title: 'Porady: podpisania manifestów aplikacji i wdrażania | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,34 +20,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a883995f95c5eaab86a14f07f9372614078d3c79
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3696762d950c913effb10d1ce15f22bd2cfc075
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisywanie aplikacji i manifestów wdrożenia
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Porady: podpisania manifestów aplikacji i wdrażania
 Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifestów aplikacji i wdrażania muszą być podpisane przy użyciu pary kluczy publiczny/prywatny i podpisany przy użyciu technologii Authenticode. Można podpisać manifestów przy użyciu certyfikatu z magazynu certyfikatów systemu Windows lub pliku klucza.  
   
- Aby uzyskać więcej informacji dotyczących wdrażania ClickOnce, zobacz [zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md).  
+ Aby uzyskać więcej informacji dotyczących wdrażania ClickOnce, zobacz [ClickOnce zabezpieczeń i wdrażania](../deployment/clickonce-security-and-deployment.md).  
   
- Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na .exe. Aby uzyskać więcej informacji zobacz sekcję "Generowanie niepodpisane manifesty" tego dokumentu.  
+ Podpisywanie manifestów ClickOnce jest opcjonalne dla *.exe*— na podstawie aplikacji. Aby uzyskać więcej informacji zobacz sekcję "Generuj manifestów bez znaku" tego dokumentu.  
   
- Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: utworzyć parę klucz prywatny-publiczny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
+ Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [porady: tworzenie pary kluczy publiczno prywatnych](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje tylko te klucza pliki wymiany informacji osobistych (PFX), które mają rozszerzenie pfx. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów bieżącego użytkownika systemu Windows, klikając **wybierz z magazynu** na **podpisywanie** strony właściwości projektu.  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje tylko te klucza pliki wymiany informacji osobistych (PFX), które mają *PFX* rozszerzenia. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów bieżącego użytkownika systemu Windows, klikając **wybierz z magazynu** na **podpisywanie** strony właściwości projektu.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Do podpisania aplikacji i wdrażania manifesty przy użyciu certyfikatu  
   
-1.  Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typ **właściwości projektu** w **Szybkie uruchamianie** okna, lub naciśnij klawisze ALT + ENTER wewnątrz **Eksploratora rozwiązań** okno). Na **podpisywanie** wybierz opcję **podpisania manifestów ClickOnce** pole wyboru.  
+1.  Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typ **właściwości projektu** w **Szybkie uruchamianie** okna lub naciśnij przycisk **Alt**+**Enter** wewnątrz **Eksploratora rozwiązań** okno). Na **podpisywanie** wybierz opcję **podpisania manifestów ClickOnce** pole wyboru.  
   
 2.  Kliknij przycisk **wybierz z magazynu** przycisku.  
   
      **Wybierz certyfikat** zostanie wyświetlone okno dialogowe i wyświetla zawartość magazynu certyfikatów systemu Windows.  
   
     > [!TIP]
-    >  Jeśli klikniesz przycisk **kliknij tutaj, aby wyświetlić właściwości certyfikatu**, **szczegóły certyfikatu** zostanie wyświetlone okno dialogowe. To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawierają dodatkowe opcje. Możesz kliknąć **certyfikaty** Aby wyświetlić dodatkowe informacje pomocy.  
+    >  Jeśli klikniesz przycisk **kliknij tutaj, aby wyświetlić właściwości certyfikatu**, **szczegóły certyfikatu** zostanie wyświetlone okno dialogowe. To okno dialogowe zawiera szczegółowe informacje o certyfikacie i zawierają dodatkowe opcje. Możesz kliknąć **certyfikaty** Aby wyświetlić dodatkowe informacje.  
   
 3.  Wybierz certyfikat, który ma być używany do podpisywania manifestów.  
   
@@ -61,14 +61,14 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifes
   
      **Wybierz plik** zostanie wyświetlone okno dialogowe.  
   
-3.  W **okno dialogowe Wybieranie pliku** przejdź do lokalizacji pliku klucza (pfx), który chcesz użyć, a następnie kliknij pozycję **Otwórz**.  
+3.  W **wybierz plik** okno dialogowe, przejdź do lokalizacji pliku klucza (*PFX*), który chcesz użyć, a następnie kliknij przycisk **Otwórz**.  
   
     > [!NOTE]
-    >  Ta opcja obsługuje tylko pliki mające rozszerzenie pfx. Jeśli masz plik klucza lub certyfikat w innym formacie, zapisz go w magazynie certyfikatów systemu Windows i wybierz certyfikat jest opisane w poprzedniej procedurze. Cel wybranego certyfikatu powinien zawierać podpisywania kodu.  
+    >  Ta opcja obsługuje tylko pliki mające *PFX* rozszerzenia. Jeśli masz plik klucza lub certyfikat w innym formacie, zapisz go w magazynie certyfikatów systemu Windows i wybierz certyfikat jest opisane w poprzedniej procedurze. Cel wybranego certyfikatu powinien zawierać podpisywania kodu.  
   
-     **Wprowadź hasło, aby otworzyć plik** zostanie wyświetlone okno dialogowe. (Jeśli plik PFX jest już przechowywany w magazynie certyfikatów systemu Windows lub hasło nie jest chroniony, pojawi nie się monit o wprowadzenie hasła.)  
+     **Wprowadź hasło, aby otworzyć plik** zostanie wyświetlone okno dialogowe. (Jeśli *PFX* plik jest już przechowywany w magazynie certyfikatów systemu Windows lub nie jest chroniony hasłem, nie będzie zostanie monit o wprowadzenie hasła.)  
   
-4.  Wprowadź hasło, aby uzyskać dostęp do pliku klucza, a następnie naciśnij klawisz ENTER.  
+4.  Wprowadź hasło, aby uzyskać dostęp do pliku klucza i naciśnij klawisz **Enter**.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Do podpisania aplikacji i wdrażania manifesty przy użyciu certyfikatu testowego  
   
@@ -78,8 +78,8 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifes
   
 3.  W **utworzyć certyfikatu testu** okna dialogowego wprowadź hasło, aby pomóc w zabezpieczeniu certyfikatu testowego.  
   
-## <a name="generating-unsigned-manifests"></a>Trwa generowanie manifestów bez znaku  
- Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na .exe. W poniższych procedurach przedstawiono sposób generowania niepodpisane manifestów ClickOnce.  
+## <a name="generate-unsigned-manifests"></a>Generowanie manifestów bez znaku  
+ Podpisywanie manifestów ClickOnce jest opcjonalne dla *.exe*— na podstawie aplikacji. W poniższych procedurach przedstawiono sposób generowania niepodpisane manifestów ClickOnce.  
   
 > [!IMPORTANT]
 >  Manifesty niepodpisane uprościć projektowania i testowania aplikacji. Jednak manifestów bez znaku powodować znaczne zagrożenia bezpieczeństwa w środowisku produkcyjnym. Tylko należy wziąć pod uwagę przy użyciu manifestów bez znaku, gdy aplikacja ClickOnce działa na komputerach w sieci intranet, które są całkowicie odizolowane od Internetu lub innych źródeł złośliwego kodu.  
@@ -92,7 +92,7 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifes
   
 2.  Na **podpisywanie** wyczyść **podpisania manifestów ClickOnce** pole wyboru.  
   
-3.  Zresetowanie wersji publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer poprawki wersji publikacji zawsze po opublikowaniu aplikacji. Aby uzyskać więcej informacji, zobacz [porady: Ustaw wersję publikowania ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Zresetowanie wersji publikacji, tak że tylko jedna wersja aplikacji jest dostępna. Domyślnie program Visual Studio automatycznie zwiększa numer poprawki wersji publikacji zawsze po opublikowaniu aplikacji. Aby uzyskać więcej informacji, zobacz [porady: wersji publikacji ClickOnce zestawu](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4.  Publikowanie aplikacji.  
   
@@ -107,8 +107,8 @@ Jeśli chcesz opublikować aplikację przy użyciu wdrażania ClickOnce, manifes
   
 3.  Publikowanie aplikacji.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)   
  [Porady: tworzenie pary kluczy publiczno prywatnych](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [Strona podpisywania, Projektant projektu](../ide/reference/signing-page-project-designer.md)   
- [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)
+ [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)

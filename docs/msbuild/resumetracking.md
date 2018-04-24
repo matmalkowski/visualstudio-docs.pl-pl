@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3b8151452cf26710801f3c83fdf217e65be0ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9651197d24e96f58551bca5cfde5ec60b25bfa09
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Wznawia śledzenia w bieżącym kontekście.  

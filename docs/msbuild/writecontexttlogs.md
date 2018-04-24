@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - WriteContextTLogs
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cec743a1cca7ca9a5d9b428a16e3be4456d334b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcfd22d45eaffea926989dc87d8f0f587a925fe7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 Zapisuje pliki dzienników dla bieżącego kontekstu.  

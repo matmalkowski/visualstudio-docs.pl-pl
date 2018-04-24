@@ -3,7 +3,7 @@ title: Getframeworkpath — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkPath
 dev_langs:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4bb2c17e0bbfa624782c3c31e02ef55746385c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03747e9271b9eea71236a4ec3fea373b992f9068
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath — Zadanie
 Pobiera ścieżkę do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawów.  

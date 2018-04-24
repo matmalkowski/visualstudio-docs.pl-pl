@@ -2,8 +2,7 @@
 title: Raport dotyczący operacji (Widok wątków) na dysku | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.diskoperations
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd14526384a7338e70996e9a5f63b3f61c67fe97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afe999ea56dbbdfd2179307f69ec12df92c612e9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
 Raport dotyczący operacji dysku zawiera operacje We/Wy dysku w kanałach dysku.  
