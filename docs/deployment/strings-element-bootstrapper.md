@@ -2,8 +2,7 @@
 title: '&lt;Ciągi&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -16,16 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d6a7d9ec23995fa2ea7114afa9b785c4fd4e6e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df186776e9f1fe431343c8643e5186ff522dfff6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Ciągi&gt; elementu (programu inicjującego)
 Definiuje zlokalizowanych ciągów dla nazwy produktu, nazwy pakietu i komunikaty o błędach instalacji.  
@@ -51,7 +50,7 @@ Definiuje zlokalizowanych ciągów dla nazwy produktu, nazwy pakietu i komunikat
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagany. Nazwa ciągu.|  
+|`Name`|Wymagana. Nazwa ciągu.|  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu określa wszystkie angielskiej wersji językowej ciągów dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Instalatora.  

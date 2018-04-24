@@ -2,9 +2,8 @@
 title: '&lt;zależności&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -24,16 +23,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależności&gt; elementu (aplikacji ClickOnce)
 Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplikacji.  
@@ -94,54 +93,54 @@ Identyfikuje platformy lub zestawu zależności, która jest wymagana dla aplika
  `dependency` Element nie ma żadnych atrybutów i zawiera następujące elementy podrzędne.  
   
 ### <a name="dependentos"></a>dependentOS  
- Opcjonalny. Zawiera `osVersionInfo` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jedna z tych musi istnieć dla `dependency` elementu, ale nie oba.  
+ Opcjonalna. Zawiera `osVersionInfo` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jedna z tych musi istnieć dla `dependency` elementu, ale nie oba.  
   
  `dependentOS` obsługuje następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`supportUrl`|Opcjonalny. Określa adres URL pomocy technicznej platformy zależnej. Ten adres URL jest pokazywana użytkownikowi, jeśli zostanie znaleziony wymagane platformy.|  
-|`description`|Opcjonalny. W tym artykule opisano, w postaci czytelny dla człowieka opisanego przez system operacyjny `dependentOS` elementu.|  
+|`supportUrl`|Opcjonalna. Określa adres URL pomocy technicznej platformy zależnej. Ten adres URL jest pokazywana użytkownikowi, jeśli zostanie znaleziony wymagane platformy.|  
+|`description`|Opcjonalna. W tym artykule opisano, w postaci czytelny dla człowieka opisanego przez system operacyjny `dependentOS` elementu.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Wymagany. Ten element jest elementem podrzędnym `dependentOS` element i zawiera `os` elementu. Ten element nie ma żadnych atrybutów.  
+ Wymagana. Ten element jest elementem podrzędnym `dependentOS` element i zawiera `os` elementu. Ten element nie ma żadnych atrybutów.  
   
 ### <a name="os"></a>system operacyjny  
- Wymagany. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.  
+ Wymagana. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`majorVersion`|Wymagany. Określa główny numer wersji systemu operacyjnego.|  
-|`minorVersion`|Wymagany. Określa podrzędny numer wersji systemu operacyjnego.|  
-|`buildNumber`|Wymagany. Określa numer kompilacji systemu operacyjnego.|  
-|`servicePackMajor`|Wymagany. Określa numer główne usługi pakietu systemu operacyjnego.|  
-|`servicePackMinor`|Opcjonalny. Określa numer drobne usługi pakietu systemu operacyjnego.|  
-|`productType`|Opcjonalny. Określa wartość typu produktu. Prawidłowe wartości to `server`, `workstation`, i `domainController`. Na przykład dla systemu Windows 2000 Professional, ta wartość atrybutu jest `workstation`.|  
-|`suiteType`|Opcjonalny. Identyfikuje pakiet produktów, dostępne w systemie lub typ konfiguracji systemu. Prawidłowe wartości to `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, i `terminal`. Na przykład dla systemu Windows 2000 Professional, ta wartość atrybutu jest `professional`.|  
+|`majorVersion`|Wymagana. Określa główny numer wersji systemu operacyjnego.|  
+|`minorVersion`|Wymagana. Określa podrzędny numer wersji systemu operacyjnego.|  
+|`buildNumber`|Wymagana. Określa numer kompilacji systemu operacyjnego.|  
+|`servicePackMajor`|Wymagana. Określa numer główne usługi pakietu systemu operacyjnego.|  
+|`servicePackMinor`|Opcjonalna. Określa numer drobne usługi pakietu systemu operacyjnego.|  
+|`productType`|Opcjonalna. Określa wartość typu produktu. Prawidłowe wartości to `server`, `workstation`, i `domainController`. Na przykład dla systemu Windows 2000 Professional, ta wartość atrybutu jest `workstation`.|  
+|`suiteType`|Opcjonalna. Identyfikuje pakiet produktów, dostępne w systemie lub typ konfiguracji systemu. Prawidłowe wartości to `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, i `terminal`. Na przykład dla systemu Windows 2000 Professional, ta wartość atrybutu jest `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
- Opcjonalny. Zawiera `assemblyIdentity` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jedna z tych musi istnieć dla `dependency` elementu, ale nie oba.  
+ Opcjonalna. Zawiera `assemblyIdentity` elementu. `dependentOS` i `dependentAssembly` elementy wykluczają się wzajemnie: jedna z tych musi istnieć dla `dependency` elementu, ale nie oba.  
   
  `dependentAssembly` ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`dependencyType`|Wymagany. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install`. `install` Zestawu jest instalowany jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. A `prerequisite` zestawu musi znajdować się w globalnej pamięci podręcznej zestawów (GAC) przed [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można zainstalować aplikacji.|  
-|`allowDelayedBinding`|Wymagany. Określa, czy zestaw może być załadowany programowo w czasie wykonywania.|  
-|`group`|Opcjonalny. Jeśli `dependencyType` atrybut ma ustawioną `install`, określa grupę nazwane zestawy tylko instalację na żądanie. Aby uzyskać więcej informacji, zobacz [wskazówki: Pobieranie zestawów na żądanie z ClickOnce wdrażania interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli ustawiono `framework` i `dependencyType` atrybut ma ustawioną `prerequisite`, określa zestaw jako część programu .NET Framework. Podczas instalowania na assemby globalnej pamięci podręcznej (GAC) nie jest zaznaczone dla tego zestawu [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] i nowszych wersjach.|  
+|`dependencyType`|Wymagana. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install`. `install` Zestawu jest instalowany jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. A `prerequisite` zestawu musi znajdować się w globalnej pamięci podręcznej zestawów (GAC) przed [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można zainstalować aplikacji.|  
+|`allowDelayedBinding`|Wymagana. Określa, czy zestaw może być załadowany programowo w czasie wykonywania.|  
+|`group`|Opcjonalna. Jeśli `dependencyType` atrybut ma ustawioną `install`, określa grupę nazwane zestawy tylko instalację na żądanie. Aby uzyskać więcej informacji, zobacz [wskazówki: Pobieranie zestawów na żądanie z ClickOnce wdrażania interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Jeśli ustawiono `framework` i `dependencyType` atrybut ma ustawioną `prerequisite`, określa zestaw jako część programu .NET Framework. Podczas instalowania na assemby globalnej pamięci podręcznej (GAC) nie jest zaznaczone dla tego zestawu [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] i nowszych wersjach.|  
 |`codeBase`|Wymagany, gdy `dependencyType` atrybut ma ustawioną `install`. Ścieżka do zestawu zależnego. Może być ścieżką bezwzględną lub ścieżką względną wobec kodu manifestu podstawowej. Ta ścieżka musi być prawidłowym identyfikatorem URI w kolejności dla manifest zestawu jest nieprawidłowy.|  
 |`size`|Wymagany, gdy `dependencyType` atrybut ma ustawioną `install`. Rozmiar zestawu zależnego w bajtach.|  
   
 ### <a name="assemblyidentity"></a>element assemblyIdentity  
- Wymagany. Ten element jest elementem podrzędnym `dependentAssembly` element i ma następujące atrybuty.  
+ Wymagana. Ten element jest elementem podrzędnym `dependentAssembly` element i ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Wymagany. Określa nazwę aplikacji.|  
-|`version`|Wymagany. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|  
-|`publicKeyToken`|Opcjonalny. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnich 8 bajtów `SHA-1` wartość klucza publicznego, pod którą jest podpisany aplikacji lub zestawu skrótu. Klucz publiczny używany do podpisywania katalogu musi być 2048 bitów lub większej.|  
-|`processorArchitecture`|Opcjonalny. Określa procesora. Prawidłowe wartości to `x86` dla 32-bitowego systemu Windows i `I64` dla 64-bitowego systemu Windows.|  
-|`language`|Opcjonalny. Identyfikuje części dwóch kodów języków, takich jak pl-pl, zestawu.|  
+|`name`|Wymagana. Określa nazwę aplikacji.|  
+|`version`|Wymagana. Określa numer wersji aplikacji w następującym formacie: `major.minor.build.revision`|  
+|`publicKeyToken`|Opcjonalna. Określa ciąg szesnastkowy 16 znaków, który reprezentuje ostatnich 8 bajtów `SHA-1` wartość klucza publicznego, pod którą jest podpisany aplikacji lub zestawu skrótu. Klucz publiczny używany do podpisywania katalogu musi być 2048 bitów lub większej.|  
+|`processorArchitecture`|Opcjonalna. Określa procesora. Prawidłowe wartości to `x86` dla 32-bitowego systemu Windows i `I64` dla 64-bitowego systemu Windows.|  
+|`language`|Opcjonalna. Identyfikuje części dwóch kodów języków, takich jak pl-pl, zestawu.|  
   
 ### <a name="hash"></a>hash  
  `hash` Element jest opcjonalny element podrzędny `assemblyIdentity` elementu. `hash` Element nie ma żadnych atrybutów.  

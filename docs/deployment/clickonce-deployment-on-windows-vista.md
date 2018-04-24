@@ -2,8 +2,7 @@
 title: Wdrożenie ClickOnce w systemie Windows Vista | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - manifest generation
 - Windows, ClickOnce deployment
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe7e05162977daf1e19df6bf1de7402a6163785
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c546d7e4287fc47a3770baa306a43a1631be2f06
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Wdrożenie ClickOnce w systemie Windows Vista
 Tworzenie aplikacji w programie Visual Studio Kontrola konta użytkownika (UAC) w systemie Windows Vista zazwyczaj generuje manifest osadzonych zakodowane jako dane binarne dane XML w pliku wykonywalnego aplikacji. Ponieważ aplikacji ClickOnce i COM bez rejestrowania wymaga manifest zewnętrznych, Visual Studio generuje plik dla tych typów projektów zawierających dane funkcji Kontrola konta użytkownika zamiast osadzonych manifestu. Domyślnie program Visual Studio używa informacji z pliku o nazwie app.manifest do generowania informacji manifestu kontroli konta użytkownika zewnętrznego (w przypadku wdrażania ClickOnce i COM bez rejestrowania) lub aby osadzić go w pliku wykonywalnego aplikacji (dla wszystkich innych przypadkach). Program Visual Studio udostępnia następujące opcje do generowania manifestu:  

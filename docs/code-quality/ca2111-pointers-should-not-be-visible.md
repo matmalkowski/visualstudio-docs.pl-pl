@@ -1,10 +1,8 @@
 ---
-title: 'CA2111: Wskaźniki nie powinny być widoczne | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA2111: Wskaźniki nie powinny być widoczne'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -17,44 +15,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc47d1ff109cf4e90191a436b95f2236b86d3333
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Wskaźniki nie powinny być widoczne
-|||  
-|-|-|  
-|TypeName|PointersShouldNotBeVisible|  
-|CheckId|CA2111|  
-|Kategoria|Microsoft.Security|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- A public lub protected <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> pole nie jest tylko do odczytu.  
-  
-## <a name="rule-description"></a>Opis reguły  
- <xref:System.IntPtr> i <xref:System.UIntPtr> typów wskaźnika, które są używane do uzyskiwania dostępu do pamięci niezarządzanej. Jeśli wskaźnik nie jest prywatny, wewnętrzny lub tylko do odczytu, złośliwy kod może zostać zmieniona wartość wskaźnika potencjalnie zezwalania na dostęp do dowolnego miejsca w pamięci lub powodujące błędy aplikacji lub systemu.  
-  
- Jeśli zamierzasz bezpieczny dostęp do typu, który zawiera pole wskaźnika, zobacz [CA2112: typy zabezpieczone nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Zabezpiecz wskaźnik czyniąc ją tylko do odczytu, wewnętrzny ani prywatny.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Pomiń ostrzeżenie od tej reguły, jeśli użytkownik nie należy polegać na wartość wskaźnika.  
-  
-## <a name="example"></a>Przykład  
- Poniższy kod przedstawia wskaźniki narusza, które spełniają reguły. Powiadomienie, że wskaźniki-prywatnych również narusza regułę [CA1051: nie deklaruj widocznych pól wystąpień](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
-  
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
- [CA2112: Typy zabezpieczone nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
-  
- [CA1051: Nie deklaruj widocznych pól wystąpienia](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:System.IntPtr?displayProperty=fullName>   
- <xref:System.UIntPtr?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|PointersShouldNotBeVisible|
+|CheckId|CA2111|
+|Kategoria|Microsoft.Security|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ A public lub protected <xref:System.IntPtr?displayProperty=fullName> lub <xref:System.UIntPtr?displayProperty=fullName> pole nie jest tylko do odczytu.
+
+## <a name="rule-description"></a>Opis reguły
+ <xref:System.IntPtr> i <xref:System.UIntPtr> typów wskaźnika, które są używane do uzyskiwania dostępu do pamięci niezarządzanej. Jeśli wskaźnik nie jest prywatny, wewnętrzny lub tylko do odczytu, złośliwy kod może zostać zmieniona wartość wskaźnika potencjalnie zezwalania na dostęp do dowolnego miejsca w pamięci lub powodujące błędy aplikacji lub systemu.
+
+ Jeśli zamierzasz bezpieczny dostęp do typu, który zawiera pole wskaźnika, zobacz [CA2112: typy zabezpieczone nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Zabezpiecz wskaźnik czyniąc ją tylko do odczytu, wewnętrzny ani prywatny.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Pomiń ostrzeżenie od tej reguły, jeśli użytkownik nie należy polegać na wartość wskaźnika.
+
+## <a name="example"></a>Przykład
+ Poniższy kod przedstawia wskaźniki narusza, które spełniają reguły. Powiadomienie, że wskaźniki-prywatnych również narusza regułę [CA1051: nie deklaruj widocznych pól wystąpień](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+
+ [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+
+## <a name="related-rules"></a>Powiązanych reguł
+ [CA2112: Typy zabezpieczone nie powinny ujawniać pól](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+
+ [CA1051: Nie deklaruj widocznych pól wystąpienia](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+
+## <a name="see-also"></a>Zobacz też
+ <xref:System.IntPtr?displayProperty=fullName><xref:System.UIntPtr?displayProperty=fullName>

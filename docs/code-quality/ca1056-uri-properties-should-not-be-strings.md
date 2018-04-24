@@ -1,10 +1,8 @@
 ---
-title: 'CA1056: Właściwości identyfikatora URI nie powinny być ciągami | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1056: Właściwości identyfikatora URI nie powinny być ciągami'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UriPropertiesShouldNotBeStrings
 - CA1056
@@ -17,44 +15,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cda8af664b6ad71ce90aa7d0bf3bbe06aefc3ab0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1f28bf1dc0829b80c53aface1c11de2b44cdbb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: Właściwości identyfikatora URI nie powinny być ciągami
-|||  
-|-|-|  
-|TypeName|UriPropertiesShouldNotBeStrings|  
-|CheckId|CA1056|  
-|Kategoria|Microsoft.Design|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- Typ deklaruje właściwości ciągu, których nazwa zawiera "uri", "Identyfikator Uri", "urn", "Urn", "url" lub "Url".  
-  
-## <a name="rule-description"></a>Opis reguły  
- Ta zasada dzieli nazwę właściwości na tokeny na podstawie Konwencji Pascal wielkość liter i sprawdza, czy każdy token jest równa "uri", "Identyfikator Uri", "urn", "Urn", "url" lub "Url". Jeśli istnieje dopasowanie, reguła przyjęto założenie, że właściwość reprezentuje identyfikator uniform resource identifier (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. <xref:System.Uri?displayProperty=fullName> Klasa udostępnia tych usług w sposób bezpieczny i bezpieczne.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, zmień wartość właściwości do <xref:System.Uri> typu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli właściwość nie reprezentuje identyfikator URI.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono typu `ErrorProne`, który narusza tę regułę, a typem, `SaferWay`, odpowiadającej reguły.  
-  
+|||
+|-|-|
+|TypeName|UriPropertiesShouldNotBeStrings|
+|CheckId|CA1056|
+|Kategoria|Microsoft.Design|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Typ deklaruje właściwości ciągu, których nazwa zawiera "uri", "Identyfikator Uri", "urn", "Urn", "url" lub "Url".
+
+## <a name="rule-description"></a>Opis reguły
+ Ta zasada dzieli nazwę właściwości na tokeny na podstawie Konwencji Pascal wielkość liter i sprawdza, czy każdy token jest równa "uri", "Identyfikator Uri", "urn", "Urn", "url" lub "Url". Jeśli istnieje dopasowanie, reguła przyjęto założenie, że właściwość reprezentuje identyfikator uniform resource identifier (URI). Reprezentacja ciągu identyfikatora URI jest podatna na analizowanie i kodowanie błędów i może prowadzić do powstawania luk w zabezpieczeniach. <xref:System.Uri?displayProperty=fullName> Klasa udostępnia tych usług w sposób bezpieczny i bezpieczne.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, zmień wartość właściwości do <xref:System.Uri> typu.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli właściwość nie reprezentuje identyfikator URI.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie przedstawiono typu `ErrorProne`, który narusza tę regułę, a typem, `SaferWay`, odpowiadającej reguły.
+
  [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
  [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]
- [!code-cpp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CPP/ca1056-uri-properties-should-not-be-strings_1.cpp)]  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
- [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)  
-  
- [CA1055: Wartości zwracane identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)  
-  
- [CA2234: Przekaż obiekty System.Uri zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)  
-  
+ [!code-cpp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CPP/ca1056-uri-properties-should-not-be-strings_1.cpp)]
+
+## <a name="related-rules"></a>Powiązanych reguł
+ [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+
+ [CA1055: Wartości zwracane identyfikatora URI nie powinny być ciągami](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+
+ [CA2234: Przekaż obiekty System.Uri zamiast ciągów](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+
  [CA1057: Przeciążenia identyfikatora URI w postaci ciągu wywołują przeciążenia metody System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

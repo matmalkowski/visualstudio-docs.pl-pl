@@ -2,8 +2,7 @@
 title: Debugowanie XAML w Blend | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] debugowanie XAML w aplikacji. Podczas kompilowania projektu błędy są wyświetlane w **wyniki** panelu. Kliknij dwukrotnie błędu można znaleźć znacznika związane z błędem. Jeśli potrzebujesz więcej miejsca do pracy można ukryć **wyniki** panelu, naciskając klawisz F12.  

@@ -10,10 +10,10 @@ ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: 8f0f3c79fbeba38ab2bcd5c7e572e9a51dd7dd81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 #  <a name="the-microsoft-e-learning-benefit-in-visual-studio-subscriptions"></a>Korzyści Microsoft E-learning w subskrypcji programu Visual Studio
 

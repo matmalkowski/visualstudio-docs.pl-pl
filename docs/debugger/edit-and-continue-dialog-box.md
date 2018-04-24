@@ -2,8 +2,7 @@
 title: Edytuj i Kontynuuj — okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.welcome
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c47d29e274b93957e35ef516090b42337ef923
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c2b8e9051a127a7338bc5d1ae6bd82b2e65ba3f4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-dialog-box"></a>Edytuj i kontynuuj — okno dialogowe
 (Tylko kod natywny) To okno dialogowe pojawia się po zakończeniu edycji kodu podczas debugowania i **Edytuj i Kontynuuj** rozpoznaje, że można zastosować zmian w kodzie. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  

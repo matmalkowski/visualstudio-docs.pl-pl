@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bca2835a17ddf26245e00ea2e9217360a89ba15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ff36af9a034f3a369369a0916f468826c053d05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Porady: śledzenie kodu dostosowując pasek przewijania
 
@@ -23,7 +23,7 @@ Podczas pracy z plikami kodu długie, może być trudne do wszystko, co należy 
 
 1. Pasek przewijania można skonfigurować do wyświetlenia zmian w kodzie, punkty przerwania, błędy i zakładki.
 
-    Otwórz **paska przewijania** Strona opcji, wybierając **narzędzia** > **opcje** > **Edytor tekstu**  >  **Wszystkie języki** lub określonego języka lub wprowadzając **paska przewijania** w oknie Szybkie uruchamianie.
+    Otwórz **paska przewijania** Strona opcji, wybierając **narzędzia** > **opcje** > **Edytor tekstu**  >  **Wszystkie języki** lub określonego języka lub wprowadzając **paska przewijania** w **Szybkie uruchamianie** okna.
 
 2. Wybierz **Pokaż adnotacje na pionowym pasku przewijania**, następnie wybierz adnotacje, aby wyświetlić.
 
@@ -45,7 +45,7 @@ Podczas pracy z plikami kodu długie, może być trudne do wszystko, co należy 
 
     Na **paska przewijania** opcji wybierz opcję **tryb użyj paska dla pionowego paska przewijania** lub **tryb Użyj mapy dla pionowego paska przewijania**. Można wybrać szerokość w **omówienie źródła** listy rozwijanej.
 
-    Oto przykład wyszukiwania wygląd mapy tryb jest włączony i szerokość jest ustawiona na wartość średnią:
+    Poniżej przedstawiono wygląd przykład wyszukiwania mapy tryb jest włączony i ma ustawioną wartość szerokości **średni**:
 
     ![Pasek przewijania w trybie mapy](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 

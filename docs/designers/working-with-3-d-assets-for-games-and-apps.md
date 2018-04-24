@@ -1,9 +1,7 @@
 ---
-title: Praca z 3-zasoby do gier i aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Praca z zasobami 3D do gier i aplikacji
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -13,46 +11,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b110f5f1a5ecc16d8cafe5f80630da05ed29b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd99cad3b63df1cf7ab3bcecb347df53f7408832
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="working-with-3-d-assets-for-games-and-apps"></a>Praca z obiektami 3-D do gier i aplikacji
-W tym dokumencie opisano [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia, które służą do tworzenia lub modyfikowania 3-modeli, tekstury i programów do cieniowania, na podstawie DirectX gier i aplikacji.  
-  
-## <a name="directx-app-development-in-visual-studio"></a>Tworzenie aplikacji DirectX w programie Visual Studio  
- Aplikacja DirectX zwykle łączy logiki programowania, interfejsu API programu DirectX i programy wysoki poziom cieniowania języka (HLSL), wraz z audio i 3-visual zasoby do prezentowania rozbudowanych, interakcyjnych multimedialnym środowisko.[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zawiera narzędzia służące do pracy z obrazami i tekstury, 3-modele i programów do cieniowania bez opuszczania IDE, aby użyć innego narzędzia. Narzędzia Visual Studio są szczególnie nadaje się do tworzenia *symbolu zastępczego* zasoby, które służy do testowania kodu lub tworzenie prototypów przed Komisji zasoby gotowe do produkcji i sprawdzanie i modyfikowanie gotowe do produkcji zasoby podczas debugowania aplikacji.  
-  
- Poniżej przedstawiono więcej informacji na temat typów zasobów, które można pracować w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-### <a name="images-and-textures"></a>Obrazy i tekstury  
- Obrazy i tekstury umożliwiają kolor visual szczegółowo gier i aplikacji. W 3-grafiki tekstury są dostępne w różnych formatach, typy i mają geometrię do obsługi różnych celów. Na przykład mapy normalne zapewnienia bardziej szczegółowe oświetlenia 3-modeli wektorów powierzchni każdego piksela i mapy modułu zapewniają tekstury we wszystkich kierunkach do celów, takich jak niebo pakującej, odbić i mapowanie kulistego tekstury. Tekstury zapewniają MCI mapy do obsługi wydajne renderowanie na różnych poziomach szczegółów i może obsługiwać różne kanałów i kolor uporządkowania. Tekstury mogą być przechowywane w różnych formatach skompresowany, które zajmują mniej dedykowanego pamięci grafiki i wydajniej pomocy GPU dostępu tekstury.  
-  
- Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytor obrazów do pracy z obrazami i tekstury w wielu typowych typy i formaty.  
-  
-### <a name="3-d-models"></a>modele 3-D  
- Modele 3-Tworzenie miejsca i kształtu w gier i aplikacji. Minimalny, modeli kodowania pozycja punkty przestrzeni 3-w — które są określane jako *wierzchołków*— wraz z indeksowanie danych, aby zdefiniować linie lub trójkąty reprezentujących kształtu modelu. Dodatkowe dane mogą być skojarzone z tymi wierzchołków — na przykład kolor informacje, wektory normalne lub atrybuty specyficzne dla aplikacji. Każdy model można również zdefiniować atrybuty obiektu całej — na przykład, które program do cieniowania jest używana do obliczania wygląd obiektu powierzchni, lub tekstury, które są stosowane do niego.  
-  
- Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze modeli do pracy z 3-w modelach w wielu typowych formatach.  
-  
-### <a name="shaders"></a>Programów do cieniowania  
- Programów do cieniowania są programy małe, specyficznego dla domeny, które działają w jednostce przetwarzania graficznych (GPU). Modele 3-w jaki sposób określić programów do cieniowania na ekranie przekształceniem kształtów i jak jest pokolorowane każdego piksela tych kształtów. Tworzenie programu do cieniowania i zastosowaniu go do obiektu w aplikacji lub gry, można przypisać obiektu unikatowego wyglądu.  
-  
- Można użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do cieniowania Designer, który jest narzędzie do projektowania programu do cieniowania oparte na wykresie, aby utworzyć niestandardowe efekty wizualne bez wiedzy o HLSL programowania w języku.  
-  
+# <a name="work-with-3d-assets-for-games-and-apps"></a>Korzystanie z zasobów 3D do gier i aplikacji
+
+Ten dokument zawiera opis narzędzi Visual Studio, które służy do tworzenia lub modyfikowania modeli 3D, tekstury i programów do cieniowania, na podstawie DirectX gier i aplikacji.
+
+## <a name="directx-app-development-in-visual-studio"></a>Tworzenie aplikacji DirectX w programie Visual Studio
+ Aplikacja DirectX zwykle łączy logiki programowania, interfejsu API programu DirectX i programy wysoki poziom cieniowania języka (HLSL), wraz z audio i 3D visual zasoby do prezentowania rozbudowanych, interakcyjnych multimedialnym środowisko. Visual Studio zawiera narzędzia, których można użyć do pracy z obrazów i tekstury 3D modeli i programów do cieniowania bez opuszczania IDE, aby użyć innego narzędzia. Narzędzia Visual Studio są szczególnie nadaje się do tworzenia *symbolu zastępczego* zasoby, które służy do testowania kodu lub tworzenie prototypów przed Komisji zasoby gotowe do produkcji i sprawdzanie i modyfikowanie gotowe do produkcji zasoby podczas debugowania aplikacji.
+
+ Poniżej przedstawiono więcej informacji na temat typów zasobów, które można pracować w programie Visual Studio.
+
+### <a name="images-and-textures"></a>Obrazy i tekstury
+ Obrazy i tekstury umożliwiają kolor visual szczegółowo gier i aplikacji. W grafiki 3D tekstury są dostępne w różnych formatach, typy i mają geometrię do obsługi różnych celów. Na przykład mapy normalnej zapewniają wektorów powierzchni każdego piksela dla bardziej szczegółowe oświetlenia modeli 3D, a mapy modułu zapewniają tekstury we wszystkich kierunkach do celów, takich jak niebo pakującej, odbić i mapowanie kulistego tekstury. Tekstury zapewniają MCI mapy do obsługi wydajne renderowanie na różnych poziomach szczegółów i może obsługiwać różne kanałów i kolor uporządkowania. Tekstury mogą być przechowywane w różnych formatach skompresowany, które zajmują mniej dedykowanego pamięci grafiki i wydajniej pomocy GPU dostępu tekstury.
+
+ Edytor obrazów programu Visual Studio umożliwia pracę z obrazami i tekstury w wielu typowych typy i formaty.
+
+### <a name="3d-models"></a>Modele 3D
+ Modele 3D Tworzenie miejsca i kształtu w gier i aplikacji. Minimalny, modeli kodowania pozycja punkty w przestrzeni 3D — które są nazywane *wierzchołków*— wraz z indeksowanie danych, aby zdefiniować linie lub trójkąty reprezentujących kształtu modelu. Dodatkowe dane mogą być skojarzone z tymi wierzchołków — na przykład kolor informacje, wektory normalne lub atrybuty specyficzne dla aplikacji. Każdy model można również zdefiniować atrybuty obiektu całej — na przykład, które program do cieniowania jest używana do obliczania wygląd obiektu powierzchni, lub tekstury, które są stosowane do niego.
+
+ Można użyć edytora modelu programu Visual Studio do pracy z modeli 3D w wielu typowych formatach.
+
+### <a name="shaders"></a>Programów do cieniowania
+ Programów do cieniowania są programy małe, specyficznego dla domeny, które działają w jednostce przetwarzania graficznych (GPU). Programów do cieniowania ustalić sposób 3D modeli na ekranie przekształceniem kształtów i jak jest pokolorowane każdego piksela tych kształtów. Tworzenie programu do cieniowania i zastosowaniu go do obiektu w aplikacji lub gry, można przypisać obiektu unikatowego wyglądu.
+
+ Projektanta programu Visual Studio programu do cieniowania, która jest narzędzie do projektowania programu do cieniowania oparte na wykresie, służy do tworzenia niestandardowych efektów wizualnych bez wiedzy o programowaniu HLSL.
+
 > [!NOTE]
->  Aby uzyskać więcej informacji dotyczących sposobu uruchamiania programu DirectX programowania, zobacz [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Aby uzyskać więcej informacji o tym, jak można debugować aplikacji DirectX, zobacz [diagnostyki grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
-  
-## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa programu DirectX do renderowania 2- i 3-zasobów. Można wybrać programu DirectX 11 renderowania lub renderowania oprogramowania Windows Advanced rasteryzacji platformy (WARP). Moduł renderowania programu DirectX 11 Umożliwia renderowanie wysokiej wydajności, przyspieszane sprzętowo programu DirectX 11 i DirectX 10 GPU. Moduł renderowania WARP pomaga, upewnij się, że zasobów pracy z szeroką gamę komputerów — dotyczy to również komputery, które nie mają grafiki nowoczesne urządzenia i komputery, które zostały zintegrowane sprzętu grafiki. Aby uzyskać więcej informacji na temat WARP, zobacz [przewodnik Windows Advanced rasteryzacji platformy (WARP)](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
-  
-## <a name="related-topics"></a>Tematy pokrewne  
-  
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Praca z obrazami i teksturami](../designers/working-with-textures-and-images.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z obrazami i tekstury.|  
-|[Praca z modelami 3-D](../designers/working-with-3-d-models.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do pracy z 3-modeli.|  
-|[Praca z cieniowaniem](../designers/working-with-shaders.md)|Informacje dotyczące używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programu do cieniowania Designer do tworzenia i modyfikowania efekty niestandardowego programu do cieniowania.|  
-|[Korzystanie z obiektów 3-D w grach i aplikacjach](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano sposób użycia zasobów, które utworzono za pomocą edytora obrazów, edytorze modeli lub projektanta programu do cieniowania w aplikacji lub gry.|
+> Aby uzyskać więcej informacji dotyczących sposobu uruchamiania programu DirectX programowania, zobacz [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Aby uzyskać więcej informacji o tym, jak można debugować aplikacji DirectX, zobacz [diagnostyki grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+
+## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX
+ Visual Studio używa programu DirectX do renderowania zasobów 2W i 3W. Można wybrać programu DirectX 11 renderowania lub renderowania oprogramowania Windows Advanced rasteryzacji platformy (WARP). Moduł renderowania programu DirectX 11 Umożliwia renderowanie wysokiej wydajności, przyspieszane sprzętowo programu DirectX 11 i DirectX 10 GPU. Moduł renderowania WARP pomaga, upewnij się, że zasobów pracy z szeroką gamę komputerów — dotyczy to również komputery, które nie mają grafiki nowoczesne urządzenia i komputery, które zostały zintegrowane sprzętu grafiki. Aby uzyskać więcej informacji na temat WARP, zobacz [przewodnik Windows Advanced rasteryzacji platformy (WARP)](http://go.microsoft.com/fwlink/p/?LinkId=224634).
+
+## <a name="related-topics"></a>Tematy pokrewne
+
+|Tytuł|Opis|
+|-----------|-----------------|
+|[Praca z obrazami i teksturami](../designers/working-with-textures-and-images.md)|Opisuje sposób pracy z obrazami i tekstury za pomocą programu Visual Studio.|
+|[Praca z modelami 3D](../designers/working-with-3-d-models.md)|Opisuje sposób pracy z modeli 3D za pomocą programu Visual Studio.|
+|[Praca z cieniowaniem](../designers/working-with-shaders.md)|Informacje dotyczące używania projektanta programu do cieniowania programu Visual Studio do tworzenia i modyfikowania efekty niestandardowego programu do cieniowania.|
+|[Korzystanie z zasobów 3D w aplikacji lub gry](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano sposób użycia zasobów, które utworzono za pomocą edytora obrazów, edytorze modeli lub projektanta programu do cieniowania w aplikacji lub gry.|

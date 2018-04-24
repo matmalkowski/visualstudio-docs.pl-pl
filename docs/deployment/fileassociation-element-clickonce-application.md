@@ -2,9 +2,8 @@
 title: '&lt;fileAssociation&gt; elementu (aplikacji ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - <fileAssociation> element [ClickOnce application manifest]
 - manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da80f852526afa4692b7ecd6eefea3cc3c3de7e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1f59ef1d00951d4c49c1bcb19c6c9122e281c3ca
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elementu (aplikacji ClickOnce)
 Określa rozszerzenie pliku do skojarzenia z aplikacją.  
@@ -44,10 +43,10 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`extension`|Wymagany. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
-|`description`|Wymagany. Opis typów plików do użytku przez powłokę.|  
-|`progid`|Wymagany. Nazwa, który unikatowo identyfikuje typ pliku.|  
-|`defaultIcon`|Wymagany. Określa ikonę do używania plików dla tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<pliku > Element](../deployment/file-element-clickonce-application.md) w [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
+|`extension`|Wymagana. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
+|`description`|Wymagana. Opis typów plików do użytku przez powłokę.|  
+|`progid`|Wymagana. Nazwa, który unikatowo identyfikuje typ pliku.|  
+|`defaultIcon`|Wymagana. Określa ikonę do używania plików dla tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<pliku > Element](../deployment/file-element-clickonce-application.md) w [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ten element musi zawierać odwołanie do przestrzeni nazw XML "urn: schemas-microsoft-com:clickonce.v1". Jeśli `<fileAssociation>` element jest używany, musi występować po `<application>` elementu nadrzędnego [ \<zestawu > elementu](../deployment/assembly-element-clickonce-application.md).  

@@ -3,7 +3,7 @@ title: Xmlpoke — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - XmlPoke task [MSBuild]
 - MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3490198ea20ab1edc640487ef929a70369a6cb86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05bef838c905b12ba76d22bec901ae4eb3382c5f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — Zadanie
 Ustawia wartości określonych przez zapytanie XPath do pliku XML.  

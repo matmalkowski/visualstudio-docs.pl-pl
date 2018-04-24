@@ -2,8 +2,7 @@
 title: 'Porady: wykluczanie lub uwzględnianie krótkich funkcji z Instrumentacji | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, instrument events
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864d4ccf6f211469b876b3452e69c23caceccd7e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12f77ae6260fa7401f8afa8030f551227baf50fa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Porady: wykluczanie lub uwzględnianie krótkich funkcji z instrumentacji
 Domyślnie wykluczyć narzędzi profilowania *małe funkcje* z Instrumentacji. Małe funkcje są krótkich funkcji, które nie wprowadzaj żadnych wywołania funkcji. Z wyjątkiem tych małe funkcje zapewnia mniejsze koszty Instrumentacji i w związku z tym ulepszone szybkości instrumentacji. Wyłączenie małe funkcje zmniejsza rozmiar pliku (Vsp) dane profilowania wydajności i czasu, który jest wymagany do analizy. Jeśli małe funkcje zostaną wykluczone, czas, który jest przeznaczony na małe funkcje liczy się od czasu wyłącznego i włącznie z ich funkcji nadrzędnej. Małe funkcje można wykluczyć lub zawarte w Instrumentacji, zgodnie z opisem w poniższej procedurze.  

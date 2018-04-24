@@ -1,6 +1,5 @@
 ---
-title: Uaktualnij plików .mdf | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Uaktualnij plików .mdf
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91a58a3605873f309b44f3d22ef4fbc2ca8c12f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c1807614d08d7e3256067fdca2dd0a7fc96277d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnij plików .mdf
 
@@ -45,73 +44,73 @@ Może też pojawić się prośba uaktualnić plik bazy danych, który został ut
 > Po uaktualnieniu plik mdf, który został utworzony w LocalDB 2014 r. (wersja 12) 32-bitowych do LocalDB 2016 (V13) lub nowszym, nie można ponownie otworzyć plik w 32-bitowej wersji bazy danych LocalDB.
 
 Przed rozpoczęciem uaktualniania bazy danych, należy wziąć pod uwagę następujące kryteria:
-  
--   Nie uaktualniaj, jeśli chcesz pracować nad projektem w starszej wersji i nowszej wersji programu Visual Studio.  
-  
--   Nie uaktualniaj, jeśli aplikacja będzie używany w środowiskach korzystających z programu SQL Server Express zamiast LocalDB.  
-  
--   Nie uaktualniaj Jeśli aplikacja korzysta z połączenia zdalne, ponieważ LocalDB nie akceptuje tych postanowień.  
-  
--   Nie uaktualniaj, jeśli aplikacja opiera się na Internet Information Services (IIS).  
-  
--   Rozważ uaktualnienie, jeśli chcesz testować aplikacje baz danych w środowisku piaskownicy, ale nie chcesz administrować bazy danych.  
-  
+
+-   Nie uaktualniaj, jeśli chcesz pracować nad projektem w starszej wersji i nowszej wersji programu Visual Studio.
+
+-   Nie uaktualniaj, jeśli aplikacja będzie używany w środowiskach korzystających z programu SQL Server Express zamiast LocalDB.
+
+-   Nie uaktualniaj Jeśli aplikacja korzysta z połączenia zdalne, ponieważ LocalDB nie akceptuje tych postanowień.
+
+-   Nie uaktualniaj, jeśli aplikacja opiera się na Internet Information Services (IIS).
+
+-   Rozważ uaktualnienie, jeśli chcesz testować aplikacje baz danych w środowisku piaskownicy, ale nie chcesz administrować bazy danych.
+
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>Aby uaktualnić plik bazy danych, aby użyć wersji bazy danych LocalDB
-  
-1.  W **Eksploratora serwera**, wybierz pozycję **Połącz z bazą danych** przycisku.  
-  
-2.  W **Dodawanie połączenia** okna dialogowego wprowadź następujące informacje:  
-  
-    -   **Źródło danych**: `Microsoft SQL Server (SqlClient)`  
-  
-    -   **Nazwa serwera**:  
-  
-        -   Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB`.  Ta wartość umożliwi określenie ProjectV12 lub ProjectV13, w zależności od wersji programu Visual Studio jest zainstalowany i utworzenia pierwszego wystąpienia bazy danych LocalDB. **MSSQLLocalDB** w węźle **Eksplorator obiektów SQL Server** pokazuje wersji wskazuje.  
-  
-        -   Do korzystania z określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, gdzie V12 jest LocalDB 2014, a V13 LocalDB 2016.  
-  
-    -   **Dołącz plik bazy danych**: ścieżka fizyczna głównego pliku *.mdf.  
-  
-    -   **Nazwa logiczna**: nazwa, która ma być używany z plikiem.  
-  
-3.  Wybierz **OK** przycisku.  
-  
-4.  Po wyświetleniu monitu wybierz **tak** przycisk, aby uaktualnić pliku.  
-  
-    Bazy danych jest uaktualniany, jest dołączony do aparatu bazy danych LocalDB i nie jest zgodny ze starszą wersją programu LocalDB.  
-  
+
+1.  W **Eksploratora serwera**, wybierz pozycję **Połącz z bazą danych** przycisku.
+
+2.  W **Dodawanie połączenia** okna dialogowego wprowadź następujące informacje:
+
+    -   **Źródło danych**: `Microsoft SQL Server (SqlClient)`
+
+    -   **Nazwa serwera**:
+
+        -   Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB`.  Ta wartość umożliwi określenie ProjectV12 lub ProjectV13, w zależności od wersji programu Visual Studio jest zainstalowany i utworzenia pierwszego wystąpienia bazy danych LocalDB. **MSSQLLocalDB** w węźle **Eksplorator obiektów SQL Server** pokazuje wersji wskazuje.
+
+        -   Do korzystania z określonej wersji: `(localdb)\ProjectsV12` lub `(localdb)\ProjectsV13`, gdzie V12 jest LocalDB 2014, a V13 LocalDB 2016.
+
+    -   **Dołącz plik bazy danych**: ścieżka fizyczna głównego pliku *.mdf.
+
+    -   **Nazwa logiczna**: nazwa, która ma być używany z plikiem.
+
+3.  Wybierz **OK** przycisku.
+
+4.  Po wyświetleniu monitu wybierz **tak** przycisk, aby uaktualnić pliku.
+
+    Bazy danych jest uaktualniany, jest dołączony do aparatu bazy danych LocalDB i nie jest zgodny ze starszą wersją programu LocalDB.
+
 Można również zmodyfikować połączenie programu SQL Server Express do użycia LocalDB Otwieranie menu skrótów dla połączenia, a następnie wybierając **zmodyfikować połączenie**. W **zmodyfikować połączenie** okno dialogowe Zmień nazwę serwera, aby `(LocalDB)\MSSQLLocalDB`. W **właściwości zaawansowane** okna dialogowego upewnij się, że **wystąpienia użytkownika** ustawiono **False**.
 
-### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>Aby uaktualnić plik bazy danych, aby użyć wersji programu SQL Server Express  
-  
-1.  Menu skrótów dla połączenia z bazą danych, wybierz **zmodyfikować połączenie**.  
-  
-2.  W **zmodyfikować połączenie** okno dialogowe, wybierz opcję **zaawansowane** przycisku.  
-  
-3.  W **właściwości zaawansowane** okno dialogowe, wybierz opcję **OK** przycisk bez zmiany nazwy serwera.  
-  
-    Plik bazy danych jest uaktualniona w celu dopasowania bieżącej wersji programu SQL Server Express.  
-  
-### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Do pracy z bazy danych w programie Visual Studio, ale zachować zgodność z programu SQL Server Express  
-  
--   W programie Visual Studio Otwórz projekt bez jego uaktualnieniem.  
-  
-    -   Aby uruchomić projekt, zaznacz **F5** klucza.  
-  
-    -   Aby edytować bazy danych, otwórz plik .mdf w **Eksploratora rozwiązań**, rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.  
-  
-### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby program SQL Server Express domyślny aparat bazy danych  
-  
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.  
-  
-2.  W **opcje** okna dialogowego rozwiń **narzędzi bazy danych** opcje, a następnie wybierz **połączenia danych**.  
-  
-3.  W **nazwa wystąpienia serwera SQL** tekst pola, określ nazwę wystąpienia programu SQL Server Express lub LocalDB, którego chcesz używać. Jeśli nie jest nazwane wystąpienie, określ `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`.  
-  
-4.  Wybierz **OK** przycisku.  
-  
+### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>Aby uaktualnić plik bazy danych, aby użyć wersji programu SQL Server Express
+
+1.  Menu skrótów dla połączenia z bazą danych, wybierz **zmodyfikować połączenie**.
+
+2.  W **zmodyfikować połączenie** okno dialogowe, wybierz opcję **zaawansowane** przycisku.
+
+3.  W **właściwości zaawansowane** okno dialogowe, wybierz opcję **OK** przycisk bez zmiany nazwy serwera.
+
+    Plik bazy danych jest uaktualniona w celu dopasowania bieżącej wersji programu SQL Server Express.
+
+### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Do pracy z bazy danych w programie Visual Studio, ale zachować zgodność z programu SQL Server Express
+
+-   W programie Visual Studio Otwórz projekt bez jego uaktualnieniem.
+
+    -   Aby uruchomić projekt, zaznacz **F5** klucza.
+
+    -   Aby edytować bazy danych, otwórz plik .mdf w **Eksploratora rozwiązań**, rozwiń węzeł w **Eksploratora serwera** do pracy z bazą danych.
+
+### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby program SQL Server Express domyślny aparat bazy danych
+
+1.  Na pasku menu wybierz **narzędzia**, **opcje**.
+
+2.  W **opcje** okna dialogowego rozwiń **narzędzi bazy danych** opcje, a następnie wybierz **połączenia danych**.
+
+3.  W **nazwa wystąpienia serwera SQL** tekst pola, określ nazwę wystąpienia programu SQL Server Express lub LocalDB, którego chcesz używać. Jeśli nie jest nazwane wystąpienie, określ `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`.
+
+4.  Wybierz **OK** przycisku.
+
     SQL Server Express będzie domyślny aparat bazy danych dla aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Uzyskiwanie dostępu do danych w programie Visual Studio](accessing-data-in-visual-studio.md)
+- [Uzyskiwanie dostępu do danych w programie Visual Studio](accessing-data-in-visual-studio.md)

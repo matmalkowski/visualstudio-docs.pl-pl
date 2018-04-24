@@ -3,7 +3,7 @@ title: MOVE — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, Move task
 - Move task [MSBuild]
 ms.assetid: d1405347-1309-4f18-b565-905408093d59
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec221ecf78bb39f9e733534d728d26ec2ae5421
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5abd32476f5a1348c5120e2804a87656298f52
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="move-task"></a>Move — Zadanie
 Przenosi pliki do nowej lokalizacji.  

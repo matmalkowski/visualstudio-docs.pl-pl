@@ -2,8 +2,7 @@
 title: Wprowadzenie (Debug Interface Access SDK) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c3c6df3fc92370d939771a7e94334db7f2cfc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Wprowadzenie (Zestaw SDK dostępu do interfejsu debugowania)
 Debugowanie interfejsu dostępu (DIA) zestawu SDK udostępnia z dokumentacją instruktażowy i przykładowe, która ilustruje sposób korzystania z interfejsu API DIA. Umożliwia interfejsy i metody w DIA SDK niestandardowe aplikacje otwierania plików PDB i .dbg i wyszukiwania ich zawartość symbole, wartości atrybutów, adresy i inne informacje debugowania. Zestaw SDK udostępnia tabele odwołań dla właściwości skojarzone z symbole znajdujące się w aplikacji w języku C++.  
@@ -33,7 +32,7 @@ Debugowanie interfejsu dostępu (DIA) zestawu SDK udostępnia z dokumentacją in
   
 -   Visual Studio zintegrowane środowisko deweloperskie (IDE) do kompilowania próbki  
   
- DIA SDK zazwyczaj jest zainstalowany program Visual Studio i jego domyślna lokalizacja to *[dysk]*\Program Files\Microsoft 9.0\DIA programu Visual Studio SDK. W ramach instalacji, msdia90.dll, który implementuje DIA SDK, jest automatycznie rejestrowane, wszystkie punkty, które należy wykonać w celu używania go ma zawierać `dia2.h` w programie i łącze do `diaguids.lib`.  
+ DIA SDK zazwyczaj jest zainstalowany program Visual Studio i jego domyślna lokalizacja to *[dysk]* \Program Files\Microsoft 9.0\DIA programu Visual Studio SDK. W ramach instalacji, msdia90.dll, który implementuje DIA SDK, jest automatycznie rejestrowane, wszystkie punkty, które należy wykonać w celu używania go ma zawierać `dia2.h` w programie i łącze do `diaguids.lib`.  
   
  Nagłówek: include\dia2.h  
   

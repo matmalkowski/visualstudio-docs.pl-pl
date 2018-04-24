@@ -2,8 +2,7 @@
 title: Debugowanie za pomocą debugera just in Time | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 07/06/17
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bfaed6a788d61f239fb8fb69095549fe5c20d6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie za pomocą debugera just in Time programu Visual Studio
 Debugowanie Just In Time uruchamia program Visual Studio automatycznie po wyjątku lub awarii w aplikacji, która działa poza Visual Studio. Dzięki temu można przetestować aplikację, gdy nie jest uruchomiony program Visual Studio i rozpocząć debugowanie przy użyciu programu Visual Studio, gdy występuje problem.

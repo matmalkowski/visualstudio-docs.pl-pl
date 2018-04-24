@@ -1,10 +1,8 @@
 ---
-title: 'CA2138: Jawne metody nie mogą wywoływać metod z atrybutem suppressunmanagedcodesecurity | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA2138: Jawne metody nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2138
 ms.assetid: a14c4d32-f079-4f3a-956c-a1657cde0f66
@@ -13,33 +11,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd12cf43425c863b72c7a77b8ccd8884c0ad7d2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10cded476edadfa6141ec68a84d74c4d8704aa35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Jawne metody nie mogą wywoływać metod z atrybutem SuppressUnmanagedCodeSecurity
-|||  
-|-|-|  
-|TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|  
-|CheckId|CA2138|  
-|Kategoria|Microsoft.Security|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- Metoda przezroczysty zabezpieczeń wywołuje metodę, która jest oznaczony atrybutem <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Ta zasada wyzwala na przezroczysty — metoda, która wywołuje bezpośrednio do kodu macierzystego, na przykład za pomocą przy użyciu elementu P/Invoke (Wywołanie platformy) wywołań. P/Invoke i COM interop metody, które są oznaczone ikoną z <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu spowodować LinkDemand wykonywana względem metody wywołującej. Ponieważ kod o przezroczystym zabezpieczeń nie mogą spełniać LinkDemands, kod także nie można wywołać metody, które są oznaczone atrybutem atrybutu SuppressUnmanagedCodeSecurity lub metody klasy, który jest oznaczony atrybutem atrybutu SuppressUnmanagedCodeSecurity. Metoda zakończy się niepowodzeniem lub żądanie zostanie przekonwertowany na pełne żądanie.  
-  
- Naruszeń tej reguły prowadzić do <xref:System.MethodAccessException> w modelu przezroczystości zabezpieczeń poziomu 2 i pełne żądanie dla <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> w modelu przezroczystość poziomu 1.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby rozwiązać naruszenie tej reguły, Usuń <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu i oznacz metodę z <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły.  
-  
-## <a name="example"></a>Przykład  
+|||
+|-|-|
+|TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
+|CheckId|CA2138|
+|Kategoria|Microsoft.Security|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Metoda przezroczysty zabezpieczeń wywołuje metodę, która jest oznaczony atrybutem <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu.
+
+## <a name="rule-description"></a>Opis reguły
+ Ta zasada wyzwala na przezroczysty — metoda, która wywołuje bezpośrednio do kodu macierzystego, na przykład za pomocą przy użyciu elementu P/Invoke (Wywołanie platformy) wywołań. P/Invoke i COM interop metody, które są oznaczone ikoną z <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu spowodować LinkDemand wykonywana względem metody wywołującej. Ponieważ kod o przezroczystym zabezpieczeń nie mogą spełniać LinkDemands, kod także nie można wywołać metody, które są oznaczone atrybutem atrybutu SuppressUnmanagedCodeSecurity lub metody klasy, który jest oznaczony atrybutem atrybutu SuppressUnmanagedCodeSecurity. Metoda zakończy się niepowodzeniem lub żądanie zostanie przekonwertowany na pełne żądanie.
+
+ Naruszeń tej reguły prowadzić do <xref:System.MethodAccessException> w modelu przezroczystości zabezpieczeń poziomu 2 i pełne żądanie dla <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> w modelu przezroczystość poziomu 1.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby rozwiązać naruszenie tej reguły, Usuń <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atrybutu i oznacz metodę z <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute> atrybutu.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="example"></a>Przykład
  [!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]

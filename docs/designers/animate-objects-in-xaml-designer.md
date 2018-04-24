@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 067ab2427bd0195a7919b6cd2bf909c2e60a5c54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46b08815a320faf7043d860b4cd96f4120409854
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animowanie obiektów w projektancie XAML
 

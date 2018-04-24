@@ -1,10 +1,8 @@
 ---
-title: 'CA1050: Deklaruj typy w przestrzeniach nazw | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1050: Deklaruj typy w przestrzeni nazw'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1050
 - DeclareTypesInNamespaces
@@ -17,40 +15,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47c63d066127780b629a93572593ed729651c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 174f30b8f4e58d7289b93cd9f5a8a8253c7a4fba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Deklaruj typy w przestrzeni nazw
-|||  
-|-|-|  
-|TypeName|DeclareTypesInNamespaces|  
-|CheckId|CA1050|  
-|Kategoria|Microsoft.Design|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- Typu publiczne lub chronione jest zdefiniowany poza zakresem nazwanych przestrzeni nazw.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Typ został zadeklarowany w przestrzeni nazw, aby uniknąć konfliktów nazw, jak i sposób organizowania powiązanych typów w hierarchii obiektów. Typy, które są poza nazwanych przestrzeni nazw znajdują się w globalnej przestrzeni nazw, która nie może być przywoływany w kodzie.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, umieść typ w przestrzeni nazw.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Chociaż nie trzeba pominąć ostrzeżenie od tej reguły, jest bezpieczne, gdy zestaw nigdy nie będzie można używać razem z innych zestawów.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono biblioteki, która ma typ niepoprawnie zadeklarowany poza obszar nazw i typ, który ma taką samą nazwę zadeklarowana w przestrzeni nazw.  
-  
+|||
+|-|-|
+|TypeName|DeclareTypesInNamespaces|
+|CheckId|CA1050|
+|Kategoria|Microsoft.Design|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Typu publiczne lub chronione jest zdefiniowany poza zakresem nazwanych przestrzeni nazw.
+
+## <a name="rule-description"></a>Opis reguły
+ Typ został zadeklarowany w przestrzeni nazw, aby uniknąć konfliktów nazw, jak i sposób organizowania powiązanych typów w hierarchii obiektów. Typy, które są poza nazwanych przestrzeni nazw znajdują się w globalnej przestrzeni nazw, która nie może być przywoływany w kodzie.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, umieść typ w przestrzeni nazw.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Chociaż nie trzeba pominąć ostrzeżenie od tej reguły, jest bezpieczne, gdy zestaw nigdy nie będzie można używać razem z innych zestawów.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie przedstawiono biblioteki, która ma typ niepoprawnie zadeklarowany poza obszar nazw i typ, który ma taką samą nazwę zadeklarowana w przestrzeni nazw.
+
  [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
-  
-## <a name="example"></a>Przykład  
- Biblioteka, która została zdefiniowana wcześniej aplikację. Należy pamiętać, że typ, który jest zadeklarowana poza przestrzeni nazw jest tworzone, gdy nazwa `Test` nie jest kwalifikowana przez przestrzeni nazw. Należy zauważyć, że dostęp do `Test` wpisz `Goodspace`, wymagana jest nazwa przestrzeni nazw.  
-  
+ [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+
+## <a name="example"></a>Przykład
+ Biblioteka, która została zdefiniowana wcześniej aplikację. Należy pamiętać, że typ, który jest zadeklarowana poza przestrzeni nazw jest tworzone, gdy nazwa `Test` nie jest kwalifikowana przez przestrzeni nazw. Należy zauważyć, że dostęp do `Test` wpisz `Goodspace`, wymagana jest nazwa przestrzeni nazw.
+
  [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

@@ -2,8 +2,7 @@
 title: Wysyłać komunikaty diagnostyczne w oknie danych wyjściowych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -29,11 +28,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Wysyłać komunikaty diagnostyczne w oknie danych wyjściowych
 Można pisać wiadomości środowiska wykonawczego **dane wyjściowe** przy użyciu okna `Debug` klasy lub `Trace` klasy, które wchodzą w skład z <xref:System.Diagnostics> biblioteki klas. Jeśli tylko dane wyjściowe w wersji do debugowania programu, należy użyć klasy debugowania. Klasa śledzenia należy użyć, jeśli dane wyjściowe w wersjach zarówno Debug i Release.  

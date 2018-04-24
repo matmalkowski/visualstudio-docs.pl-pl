@@ -2,9 +2,8 @@
 title: 'Błąd: Debugowanie nie jest&#39;t możliwe ponieważ w systemie jest włączony debuger jądra | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce2526adc75e7b42ee0aadac5c716b1d0382f35e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Błąd: Debugowanie nie jest&#39;t możliwe ponieważ w systemie jest włączony debuger jądra
 Podczas debugowania kodu zarządzanego, mogą pojawić się następujący komunikat o błędzie:  

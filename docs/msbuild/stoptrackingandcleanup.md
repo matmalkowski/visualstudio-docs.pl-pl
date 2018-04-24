@@ -12,16 +12,16 @@ apitype: COM
 helpviewer_keywords:
 - StopTrackingAndCleanup
 ms.assetid: 9f8c5994-2dfc-43c3-a5fb-89b2f8990429
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9811b3be8962f219c020961f061c8c1776804235
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 731e8091a91c49c8e17dbcd00c3aea32001115a0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 Zatrzymuje wszystkie śledzenia i zwalnia wszystkie pamięci używane w sesji śledzenia.  

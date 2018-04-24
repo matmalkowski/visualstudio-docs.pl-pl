@@ -2,8 +2,7 @@
 title: 'Porady: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, prerequisites
 - ClickOnce deployment, URLs
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86d4b765dc5e6c56fdc8e7a3b082afaa72accf49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4fe4deb04dbcc29a04036973d479803ee4667c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Porady: określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kilka wymagań wstępnych, które muszą być dostępne na komputerze klienckim, aby przetestować wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do uruchomienia aplikacji. Obejmują one wymagana minimalna wersja [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], wersja systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jednak nie może zainstalować żadnego z tych wymagań wstępnych. Jeśli nie ma wymagań wstępnych, po prostu przerywa instalacji i wyświetla okno dialogowe wyjaśniający, dlaczego nie można zainstalować.  
@@ -67,7 +66,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kilka wymaga
       </dependency>  
     ```  
   
-5.  Opcjonalny. Dla aplikacji przeznaczonych dla platformy .NET Framework 4, otwórz plik manifestu wdrożenia (pliku .application) dla sieci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.  
+5.  Opcjonalna. Dla aplikacji przeznaczonych dla platformy .NET Framework 4, otwórz plik manifestu wdrożenia (pliku .application) dla sieci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.  
   
 6.  Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:  
   

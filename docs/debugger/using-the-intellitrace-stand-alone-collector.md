@@ -2,8 +2,7 @@
 title: Za pomocą autonomicznego modułu zbierającego IntelliTrace | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9533c2a79a8fb692e970cf2f59d4be6feaaefc5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 410b8a979334edd1c333a43851f996da2b69bd03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 **Autonomiczny moduł zbierający IntelliTrace** pozwala na zbieranie danych diagnostycznych funkcji IntelliTrace dla aplikacji na serwerach produkcyjnych lub w innych środowiskach bez instalowania programu Visual Studio na komputerze docelowym i bez zmiany docelowe środowiska systemu. Autonomiczny moduł zbierający IntelliTrace działa w przypadku aplikacji sieci web programu SharePoint, WPF i formularze systemu Windows. Po zakończeniu zbierania danych po prostu usuń moduł zbierający, aby go odinstalować.  

@@ -2,8 +2,7 @@
 title: 'Porady: Dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], publishing
 - publishing, ClickOnce
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cfbe5ac94f2c740b1424f9bdc5a215ee571ef5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 743d7f259da4129eda578808d1ce04619104a3f1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Porady: dostosowywanie domyślnej strony sieci Web dla aplikacji ClickOnce
 Podczas publikowania aplikacji ClickOnce w sieci Web, strony sieci Web jest automatycznie generowany i opublikowani razem aplikacji. Domyślna strona zawiera nazwę aplikacji i łącza do zainstalowania aplikacji, instalowanie wymagań wstępnych lub dostępu do pomocy w witrynie MSDN.  
@@ -47,7 +46,7 @@ Podczas publikowania aplikacji ClickOnce w sieci Web, strony sieci Web jest auto
   
 3.  Dostosowywanie strony zgodnie z potrzebami i zapisz go.  
   
-4.  Opcjonalny. Aby zapobiec zastępowaniu strony sieci Web Publikowanie dostosowanego programu Visual Studio, usuń zaznaczenie pola wyboru **automatycznego generowania strony sieci web wdrożenia po każdej publikowania** w oknie dialogowym Opcje publikowania.  
+4.  Opcjonalna. Aby zapobiec zastępowaniu strony sieci Web Publikowanie dostosowanego programu Visual Studio, usuń zaznaczenie pola wyboru **automatycznego generowania strony sieci web wdrożenia po każdej publikowania** w oknie dialogowym Opcje publikowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia ClickOnce i wdrażania](../deployment/clickonce-security-and-deployment.md)   

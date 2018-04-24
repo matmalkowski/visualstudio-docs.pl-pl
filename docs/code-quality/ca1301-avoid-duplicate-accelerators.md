@@ -1,10 +1,8 @@
 ---
-title: 'CA1301: Należy unikać duplikowania akceleratorów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1301: Należy unikać duplikowania akceleratorów'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1301
 - AvoidDuplicateAccelerators
@@ -17,39 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9e2855827fb0befe69dafe08981b10a12d0700
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a323ce01201dd4a3650d6da0ddde8edfeea0512
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Należy unikać duplikowania akceleratorów
-|||  
-|-|-|  
-|TypeName|AvoidDuplicateAccelerators|  
-|CheckId|CA1301|  
-|Kategoria|Microsoft.Globalization|  
-|Zmiana kluczowa|Bez podziału|  
-  
-## <a name="cause"></a>Przyczyna  
- Rozszerzenie typu <xref:System.Windows.Forms.Control?displayProperty=fullName> i zawiera co najmniej dwa formantami najwyższego poziomu, które mają identyczne dostępu do kluczy, które są przechowywane w pliku zasobów.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Kiedy wiele formantów ma zduplikowany klucz dostępu, jego zachowanie nie jest dobrze zdefiniowane. Użytkownik może nie umożliwiać dostęp do danego formantu przy użyciu klucza dostępu i kontroli innego niż ten, który ma może być włączone.  
-  
- Bieżąca implementacja tej reguły ignoruje elementów menu. Jednak elementów menu na tym samym podmenu nie powinna mieć klucze dostępu identyczne.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, zdefiniuj dostępu unikatowy kluczy dla wszystkich kontrolek.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia minimalny formularz, który zawiera dwa formantów, które mają klucze dostępu identyczne. Klucze są przechowywane w pliku zasobu nie jest wyświetlany; jednak ich wartości są wyświetlane w komentarze limit `checkBox.Text` wierszy. Zachowanie duplikowania akceleratorów można zbadać przez wymianę `checkBox.Text` wiersze z ich odpowiedniki komentarze wychodzących. Jednak w takim przypadku przykładzie nie wygeneruje ostrzeżenie z reguły.  
-  
- [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index)
+|||
+|-|-|
+|TypeName|AvoidDuplicateAccelerators|
+|CheckId|CA1301|
+|Kategoria|Microsoft.Globalization|
+|Zmiana kluczowa|Bez podziału|
+
+## <a name="cause"></a>Przyczyna
+ Rozszerzenie typu <xref:System.Windows.Forms.Control?displayProperty=fullName> i zawiera co najmniej dwa formantami najwyższego poziomu, które mają identyczne dostępu do kluczy, które są przechowywane w pliku zasobów.
+
+## <a name="rule-description"></a>Opis reguły
+ Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Kiedy wiele formantów ma zduplikowany klucz dostępu, jego zachowanie nie jest dobrze zdefiniowane. Użytkownik może nie umożliwiać dostęp do danego formantu przy użyciu klucza dostępu i kontroli innego niż ten, który ma może być włączone.
+
+ Bieżąca implementacja tej reguły ignoruje elementów menu. Jednak elementów menu na tym samym podmenu nie powinna mieć klucze dostępu identyczne.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, zdefiniuj dostępu unikatowy kluczy dla wszystkich kontrolek.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="example"></a>Przykład
+ Poniższy przykład przedstawia minimalny formularz, który zawiera dwa formantów, które mają klucze dostępu identyczne. Klucze są przechowywane w pliku zasobu nie jest wyświetlany; jednak ich wartości są wyświetlane w komentarze limit `checkBox.Text` wierszy. Zachowanie duplikowania akceleratorów można zbadać przez wymianę `checkBox.Text` wiersze z ich odpowiedniki komentarze wychodzących. Jednak w takim przypadku przykładzie nie wygeneruje ostrzeżenie z reguły.
+
+ [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
+
+## <a name="see-also"></a>Zobacz też
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index)

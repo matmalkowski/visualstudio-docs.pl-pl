@@ -2,8 +2,7 @@
 title: '&lt;PackageFiles&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -13,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f58a9d2ca9bf77a2119e0b2a2716c96676889568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f900e1e86c20e4ce59984f2a7a6ff91e9014129d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elementu (programu inicjującego)
 `PackageFiles` Element zawiera `PackageFile` elementów, które określają pakiety instalacyjne wykonywane w `Command` elementu.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|Opcjonalny. Jeśli ustawiono `false`, Instalator pobierze tylko pliki, do których odwołuje się z `Command` elementu. Jeśli ustawiono `true`, wszystkie pliki zostaną pobrane.<br /><br /> Jeśli ustawioną `IfNotHomesite`, Instalator będzie działają tak samo, jakby `False` Jeśli `ComponentsLocation` ma ustawioną wartość `HomeSite`, a w przeciwnym razie będą zachowywać się takie same tak, jakby `True`. To ustawienie może być przydatne umożliwia pakiety, które same bootstrappers do wykonania ich zachowania w przypadku scenariusza HomeSite.<br /><br /> Wartość domyślna to `true`.|  
+|`CopyAllPackageFiles`|Opcjonalna. Jeśli ustawiono `false`, Instalator pobierze tylko pliki, do których odwołuje się z `Command` elementu. Jeśli ustawiono `true`, wszystkie pliki zostaną pobrane.<br /><br /> Jeśli ustawioną `IfNotHomesite`, Instalator będzie działają tak samo, jakby `False` Jeśli `ComponentsLocation` ma ustawioną wartość `HomeSite`, a w przeciwnym razie będą zachowywać się takie same tak, jakby `True`. To ustawienie może być przydatne umożliwia pakiety, które same bootstrappers do wykonania ich zachowania w przypadku scenariusza HomeSite.<br /><br /> Wartość domyślna to `true`.|  
   
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile` Element jest elementem podrzędnym `PackageFiles` elementu. A `PackageFiles` element musi mieć co najmniej jeden `PackageFile` elementu.  
@@ -57,11 +56,11 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagany. Nazwa pliku pakietu. Jest to nazwa, która `Command` element będzie stanowiła odwołanie podczas definiuje warunki, w których instaluje pakiet. Ta wartość jest również używany jako klucz w `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzi takich jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używać do opisywania pakietu.|  
-|`HomeSite`|Opcjonalny. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora.|  
-|`CopyOnBuild`|Opcjonalny. Określa, czy program inicjujący skopiuj plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true.|  
+|`Name`|Wymagana. Nazwa pliku pakietu. Jest to nazwa, która `Command` element będzie stanowiła odwołanie podczas definiuje warunki, w których instaluje pakiet. Ta wartość jest również używany jako klucz w `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzi takich jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używać do opisywania pakietu.|  
+|`HomeSite`|Opcjonalna. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora.|  
+|`CopyOnBuild`|Opcjonalna. Określa, czy program inicjujący skopiuj plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true.|  
 |`PublicKey`|Zaszyfrowany klucz publiczny podpisu certyfikatu pakietu. Jeśli wymagane `HomeSite` jest używany; w przeciwnym razie opcjonalne.|  
-|`Hash`|Opcjonalny. Skrót SHA1 pliku pakietu. Służy to sprawdzenie integralności plik w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, nie można zainstalować pakietu.|  
+|`Hash`|Opcjonalna. Skrót SHA1 pliku pakietu. Służy to sprawdzenie integralności plik w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, nie można zainstalować pakietu.|  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykładowy kod definiuje pakietów dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pakietu redystrybucyjnego i jego zależności, takich jak Instalator Windows.  

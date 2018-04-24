@@ -2,8 +2,7 @@
 title: Przetworzyć wyszukiwania — okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process Search
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab606ecf245b0c2e2e33935a620a4593bce16ebf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5f133833114398ceb257fcceeaab7e7f4f5da2c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="process-search-dialog-box"></a>Wyszukiwanie procesów — Okno dialogowe
 To okno dialogowe służy do znajdowania i wybierz węzeł dla określonego procesu w [widok procesy](../debugger/processes-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **procesów** okno widoku. Następnie wybierz pozycję **Znajdź proces** z **wyszukiwania** menu.  

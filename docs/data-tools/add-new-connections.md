@@ -1,6 +1,5 @@
 ---
-title: Dodaj nowe połączenia | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Dodaj nowe połączenia
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Dodaj nowe połączenia
 
@@ -37,9 +36,9 @@ Aby utworzyć połączenie z bazą danych, kliknij przycisk **Dodawanie połącz
 
 ![Ikona nowego połączenia Eksploratora serwera](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata ikona nowego połączenia Eksploratora serwera")
 
-Spowoduje to wyświetlenie **Dodawanie połączenia** okno dialogowe. W tym miejscu możemy wprowadzony nazwę wystąpienia bazy danych LocalDB programu SQL Server.  
+Spowoduje to wyświetlenie **Dodawanie połączenia** okno dialogowe. W tym miejscu możemy wprowadzony nazwę wystąpienia bazy danych LocalDB programu SQL Server.
 
-![Dodaj nowe połączenie](../data-tools/media/raddata-add-new-connection-dialog.png "raddata okno dialogowe Dodawanie nowego połączenia")  
+![Dodaj nowe połączenie](../data-tools/media/raddata-add-new-connection-dialog.png "raddata okno dialogowe Dodawanie nowego połączenia")
 
 ## <a name="change-the-provider"></a>Zmienianie dostawcy
 
@@ -57,4 +56,4 @@ Jeśli test zakończy się powodzeniem, możesz przystąpić do tworzenia *źró
 
 ## <a name="see-also"></a>Zobacz także
 
-[Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

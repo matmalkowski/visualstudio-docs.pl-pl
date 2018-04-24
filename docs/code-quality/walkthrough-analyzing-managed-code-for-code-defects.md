@@ -1,6 +1,5 @@
 ---
 title: Wskazówki analizowanie zarządzanego kodu pod względem wad kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: Analizowanie zarządzanego kodu dla kodu usterki
 
@@ -61,21 +60,21 @@ Ten przewodnik zawiera kroki procesu za pomocą analizy kodu do analizowania pon
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Do analizowania zarządzanego projektu pod względem wad kodu
 
 1. Wybierz projekt CodeAnalysisManagedDemo **Eksploratora rozwiązań**.
-  
+
 1. Na **projektu** menu, kliknij przycisk **właściwości**.
-  
+
      Zostanie wyświetlona strona właściwości CodeAnalysisManagedDemo.
-  
+
 1. Wybierz **analizy kodu** kartę.
-  
+
 1. Upewnij się, że **Włącz analizę kodu podczas kompilacji** jest zaznaczony.
-  
+
 1. Z **Uruchom ten zestaw reguł** listy rozwijanej wybierz **Microsoft wszystkie reguły**.
-  
+
 1. Na **pliku** menu, kliknij przycisk **zapisać wybrane elementy**, a następnie zamknij na stronach właściwości.
-  
+
 1. Na **kompilacji** menu, kliknij przycisk **kompilacji CodeAnalysisManagedDemo**.
-  
+
     Ostrzeżenia kompilacji projektu CodeAnalysisManagedDemo są wyświetlane w **listy błędów** i **dane wyjściowe** systemu windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Rozwiąż problemy dotyczące analizy kodu

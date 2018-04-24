@@ -1,9 +1,7 @@
 ---
-title: 'Porady: dotyczą programu do cieniowania 3-w modelu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Porady: zastosowanie programu do cieniowania do modelu 3D'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: gewarren
@@ -11,38 +9,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6af4b0cc0c86acbb53e93c6ced4a4b7291e7de03
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c01b8921d851a5410923b84959f12131349535d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Porady: stosowanie cieniowania do modelu 3-D
-Tym dokumencie przedstawiono sposób użycia w edytorze modeli do zastosowania do cieniowania skierowane wykres programu do cieniowania języka (DGSL) do 3-w modelu.  
-  
- W tym dokumencie przedstawiono tego działania:  
-  
--   Stosowanie do cieniowania do modelu 3-w  
-  
-## <a name="applying-a-shader-to-a-3-d-model"></a>Stosowanie do cieniowania do modelu 3-w  
- Efekt cieniowania można stosować do 3-w modelu, aby nadać jej wygląd interesujące.  
-  
- Przed rozpoczęciem upewnij się, że **właściwości** okno jest wyświetlane.  
-  
-#### <a name="to-apply-a-shader-to-a-3-d-model"></a>Aby zastosować do cieniowania do modelu 3-w  
-  
-1.  Rozpocznij z 3-sceny, który zawiera co najmniej jednego modelu. Jeśli nie masz odpowiedniego sceny 3-w, utwórz ją zgodnie z opisem w [porady: Tworzenie podstawowego modelu 3-](../designers/how-to-create-a-basic-3-d-model.md). Możesz również muszą mieć cieniowania DGSL, którą można zastosować do modelu. Jeśli nie masz odpowiedniego programu do cieniowania, utwórz go zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania kolor](../designers/how-to-create-a-basic-color-shader.md) i upewnij się, że zapisane do pliku przed kontynuowaniem.  
-  
-2.  W **wybierz** tryb, wybierz model, który chcesz zastosować programu do cieniowania, a następnie w **właściwości** okna w **Filename** właściwość **efektu**  właściwości grupa, określ DGSL programu do cieniowania, który chcesz zastosować do modelu.  
-  
- Oto modelu, który ma wpływ kolor podstawowy stosowane:  
-  
- ![3&#45;sceny D, pokazujący efekt kolor podstawowy](../designers/media/digit-3d-model-effect.png "cyfrę 3W — Model-efekt uboczny")  
-  
- Po zainstalowaniu programu do cieniowania do modelu, można otworzyć go w projektancie programu do cieniowania, wybierając modelu, a następnie w **właściwości** okna w **(zaawansowane)** właściwość **efekt**grupy właściwości, wybierając wielokropek (**...** ) przycisku.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie podstawowego modelu 3-w](../designers/how-to-create-a-basic-3-d-model.md)   
- [Porady: tworzenie cieniowania kolor podstawowy](../designers/how-to-create-a-basic-color-shader.md)   
- [Edytor modelu](../designers/model-editor.md)   
- [Projektant cieniowania](../designers/shader-designer.md)
+# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Porady: zastosowanie programu do cieniowania do modelu 3D
+
+W tym artykule przedstawiono sposób użycia w edytorze modeli do zastosowania do cieniowania skierowane wykres programu do cieniowania języka (DGSL) do modelu 3D.
+
+## <a name="apply-a-shader-to-a-3d-model"></a>Zastosowanie programu do cieniowania do modelu 3D
+
+Efekt cieniowania można stosować do modelu 3D, aby nadać jej wygląd interesujące.
+
+Przed rozpoczęciem upewnij się, że **właściwości** okno jest wyświetlane.
+
+1. Zaczynać sceny 3W, która zawiera co najmniej jednego modelu. Jeśli nie masz odpowiedniego scenę 3D, utwórz go zgodnie z opisem w [porady: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md). Możesz również muszą mieć cieniowania DGSL, którą można zastosować do modelu. Jeśli nie masz odpowiedniego programu do cieniowania, utwórz go zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania kolor](../designers/how-to-create-a-basic-color-shader.md) i upewnij się, że zapisane do pliku przed kontynuowaniem.
+
+2. W **wybierz** tryb, wybierz model, który chcesz zastosować programu do cieniowania, a następnie w **właściwości** okna w **Filename** właściwość **efektu**  właściwości grupa, określ DGSL programu do cieniowania, który chcesz zastosować do modelu.
+
+Oto modelu, który ma wpływ kolor podstawowy stosowane:
+
+![3&#45;sceny D, pokazujący efekt kolor podstawowy](../designers/media/digit-3d-model-effect.png)
+
+Po zainstalowaniu programu do cieniowania do modelu, można otworzyć go w projektancie programu do cieniowania, wybierając modelu, a następnie w **właściwości** okna w **(zaawansowane)** właściwość **efekt**grupy właściwości, wybierając wielokropek (**...** ) przycisku.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Porady: Tworzenie podstawowego modelu 3D](../designers/how-to-create-a-basic-3-d-model.md)
+- [Instrukcje: tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)
+- [Edytor modelu](../designers/model-editor.md)
+- [Projektant cieniowania](../designers/shader-designer.md)

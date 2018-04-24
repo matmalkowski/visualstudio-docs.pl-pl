@@ -2,17 +2,17 @@
 layout: LandingPage
 author: gewarren
 ms.author: gewarren
-title: "Użyj narzędzia danych w programie Visual Studio umożliwiające tworzenie rozwiązań danych | Dokumentacja firmy Microsoft"
-description: "Więcej informacji na temat narzędzia do rozwiązania danych w programie Visual Studio."
+title: Użyj narzędzia danych w programie Visual Studio umożliwiające tworzenie rozwiązań danych
+description: Więcej informacji na temat narzędzia do rozwiązania danych w programie Visual Studio.
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: a3b0473237595dee29de024c7cbc04b6db82c93a
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f8dbea90a21da05b67fdc730a6965d3f295807ca
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Użyj narzędzia danych w programie Visual Studio umożliwiające tworzenie rozwiązań danych
 
@@ -113,7 +113,7 @@ Dowiedz się, jak za pomocą narzędzi danych programu Visual Studio umożliwiaj
 
 ---
 
-<hr>    
+<hr>
 <h2>Tematy pomocy</h2>
 
 <ul class="panelContent cardsW">

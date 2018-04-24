@@ -2,8 +2,7 @@
 title: '&lt;Pakiet&gt; elementu (programu inicjującego) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -13,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c00bdae8c257b0dc09077ffc10b146329af797f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c04676f03f4734a25601e772208939e0b3f8482d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pakiet&gt; elementu (programu inicjującego)
 `Package` Element to element XML najwyższego poziomu w pliku pakietu.  
@@ -147,9 +146,9 @@ ms.lasthandoff: 04/16/2018
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Culture`|Wymagany. Określa kulturę używaną do tego pakietu, który określa język do zastosowania. Ten atrybut jest kluczem do `Strings` element, który zawiera listę ciągów specyficzne dla kultury dla nazw produktów i komunikaty o błędach podczas instalacji.|  
-|`Name`|Wymagany. Nazwa pakietu, takich jak wyświetlana dla deweloperów w ramach narzędzia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten atrybut jest kluczem do `Strings` element, który powinien zawierać `String` element z `Name` i `Culture` ustawić właściwości, aby dopasować `Name` i `Culture` właściwości `Package`.|  
-|`LicenseAgreement`|Opcjonalny. Określa nazwę pliku w pakiecie dystrybucji, które zawiera umowę licencyjną użytkownika oprogramowania (EULA).  Ten plik może być zwykły tekst (txt) lub tekst sformatowany. (RTF)|  
+|`Culture`|Wymagana. Określa kulturę używaną do tego pakietu, który określa język do zastosowania. Ten atrybut jest kluczem do `Strings` element, który zawiera listę ciągów specyficzne dla kultury dla nazw produktów i komunikaty o błędach podczas instalacji.|  
+|`Name`|Wymagana. Nazwa pakietu, takich jak wyświetlana dla deweloperów w ramach narzędzia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten atrybut jest kluczem do `Strings` element, który powinien zawierać `String` element z `Name` i `Culture` ustawić właściwości, aby dopasować `Name` i `Culture` właściwości `Package`.|  
+|`LicenseAgreement`|Opcjonalna. Określa nazwę pliku w pakiecie dystrybucji, które zawiera umowę licencyjną użytkownika oprogramowania (EULA).  Ten plik może być zwykły tekst (txt) lub tekst sformatowany. (RTF)|  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykładowy kod przedstawia plik pełny pakiet dla redystrybuowanie [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  

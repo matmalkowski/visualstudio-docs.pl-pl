@@ -2,8 +2,7 @@
 title: Symbole i tagi symboli | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69d2f5c2182f32a95ca95d24c5319b164f27f1ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72f4cb4b6ed35e880e1cb26980420f4e951ffc16
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="symbols-and-symbol-tags"></a>Symbole i tagi symboli
 Informacje o debugowaniu o skompilowany program znajduje się w pliku bazy danych (.pdb) program jako symbole, które są dostępne za pośrednictwem interfejsów API zestawu SDK debugowania interfejsu dostępu (DIA). Wszystkie symbole [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) i [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) właściwości. `symTag` Właściwość wskazuje typ symbolu, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia. `symIndexId` Właściwość jest `DWORD` wartość, która zawiera identyfikator unikatowy dla każdego wystąpienia symbolu.  

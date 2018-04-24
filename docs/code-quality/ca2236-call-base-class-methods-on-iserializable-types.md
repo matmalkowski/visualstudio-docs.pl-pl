@@ -1,10 +1,8 @@
 ---
-title: 'CA2236: Wywołanie metod klasy podstawowej typu ISerializable | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA2236: Wywołanie metod klasy bazowej typu ISerializable'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2236
 - CallBaseClassMethodsOnISerializableTypes
@@ -17,53 +15,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1679772ea95fbaf0a13a91572ad81f0b987a2e31
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7bc90dfd0cf786bbd4e2494a6c65e2c19ff4eb6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Wywołanie metod klasy bazowej typu ISerializable
-|||  
-|-|-|  
-|TypeName|CallBaseClassMethodsOnISerializableTypes|  
-|CheckId|CA2236|  
-|Kategoria|Microsoft.Usage|  
-|Zmiana kluczowa|Bez podziału|  
-  
-## <a name="cause"></a>Przyczyna  
- Typ pochodzi z typu, który implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> dotyczy interfejsu i jeden z następujących warunków:  
-  
--   Typ implementuje konstruktora serializacji, czyli konstruktora z <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Sygnatura parametru, ale nie wywołuje konstruktor serializacji typu podstawowego.  
-  
--   Typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody, ale nie wywołuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody typu podstawowego.  
-  
-## <a name="rule-description"></a>Opis reguły  
- W procesie niestandardowej serializacji, typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody do serializacji swoich pól i Konstruktor serializacji można zdeserializować pola. Jeśli typ pochodzi z typu, który implementuje <xref:System.Runtime.Serialization.ISerializable> interfejsu, typ podstawowy <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> — metoda i serializacja konstruktora powinna być wywoływana do serializacji/dezaktywuje-serialize pola typu podstawowego. W przeciwnym razie wartość typu nie można serializować i deserializowany poprawnie. Jeśli typ pochodny nie dodaje żadnych nowych pól, typ musi implementować <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody ani Konstruktor serializacji lub zadzwoń typ podstawowy równoważnych.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, wywołanie typu podstawowego <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> pochodnych metody lub serializacji konstruktora z odpowiedniej metody typu lub konstruktora.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono spełniająca reguły przez wywołanie konstruktora serializacji typu pochodnego i <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody klasy podstawowej.  
-  
+|||
+|-|-|
+|TypeName|CallBaseClassMethodsOnISerializableTypes|
+|CheckId|CA2236|
+|Kategoria|Microsoft.Usage|
+|Zmiana kluczowa|Bez podziału|
+
+## <a name="cause"></a>Przyczyna
+ Typ pochodzi z typu, który implementuje <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> dotyczy interfejsu i jeden z następujących warunków:
+
+-   Typ implementuje konstruktora serializacji, czyli konstruktora z <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Sygnatura parametru, ale nie wywołuje konstruktor serializacji typu podstawowego.
+
+-   Typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metody, ale nie wywołuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody typu podstawowego.
+
+## <a name="rule-description"></a>Opis reguły
+ W procesie niestandardowej serializacji, typ implementuje <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody do serializacji swoich pól i Konstruktor serializacji można zdeserializować pola. Jeśli typ pochodzi z typu, który implementuje <xref:System.Runtime.Serialization.ISerializable> interfejsu, typ podstawowy <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> — metoda i serializacja konstruktora powinna być wywoływana do serializacji/dezaktywuje-serialize pola typu podstawowego. W przeciwnym razie wartość typu nie można serializować i deserializowany poprawnie. Jeśli typ pochodny nie dodaje żadnych nowych pól, typ musi implementować <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody ani Konstruktor serializacji lub zadzwoń typ podstawowy równoważnych.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, wywołanie typu podstawowego <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> pochodnych metody lub serializacji konstruktora z odpowiedniej metody typu lub konstruktora.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie przedstawiono spełniająca reguły przez wywołanie konstruktora serializacji typu pochodnego i <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metody klasy podstawowej.
+
  [!code-vb[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/VisualBasic/ca2236-call-base-class-methods-on-iserializable-types_1.vb)]
- [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/CSharp/ca2236-call-base-class-methods-on-iserializable-types_1.cs)]  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
- [CA2240: Zaimplementuj poprawnie interfejs ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)  
-  
- [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)  
-  
- [CA2238: Zaimplementuj poprawnie metody serializacji](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
-  
- [CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
-  
- [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
-  
- [CA2239: Określ metody deserializacji dla pól opcjonalnych](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
-  
+ [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/CSharp/ca2236-call-base-class-methods-on-iserializable-types_1.cs)]
+
+## <a name="related-rules"></a>Powiązanych reguł
+ [CA2240: Zaimplementuj poprawnie interfejs ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+
+ [CA2229: Zaimplementuj konstruktory serializacji](../code-quality/ca2229-implement-serialization-constructors.md)
+
+ [CA2238: Zaimplementuj poprawnie metody serializacji](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+
+ [CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+
+ [CA2237: Oznacz typy ISerializable za pomocą atrybutu SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+
+ [CA2239: Określ metody deserializacji dla pól opcjonalnych](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+
  [CA2120: Zabezpiecz konstruktory serializacji](../code-quality/ca2120-secure-serialization-constructors.md)

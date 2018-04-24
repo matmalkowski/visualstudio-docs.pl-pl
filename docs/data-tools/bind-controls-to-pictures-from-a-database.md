@@ -1,6 +1,5 @@
 ---
-title: Powiązywanie formantów z obrazami z bazy danych | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Powiązywanie formantów z obrazami z bazy danych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,32 +18,34 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 29d902f16051bd04079115baf87e33ac49d77396
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 722eb290e9018ef92608c8d554a371c94ba63caa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie formantów z obrazami z bazy danych
-Można użyć **źródeł danych** okna do powiązania obraz w bazie danych z formantem w aplikacji. Na przykład można powiązać obraz <xref:System.Windows.Controls.Image> kontroli w aplikacji WPF lub do <xref:System.Windows.Forms.PictureBox> formantu w aplikacji formularzy systemu Windows.  
-  
-Obrazy w bazie danych są zwykle przechowywane jako tablice typu byte. Elementy w **źródeł danych** okna, które są przechowywane jako tablice typu byte mieć kontrolę wpisz wartość **Brak** domyślnie, ponieważ tablice typu byte mogą zawierać nic proste tablicę bajtów do pliku wykonywalnego dużych aplikacji. Można utworzyć formantu powiązanego z danymi elementu tablicy bajtów w **źródeł danych** okna, który reprezentuje obraz, należy wybrać formant do utworzenia.  
-  
-W poniższej procedurze przyjęto, że **źródeł danych** okno jest już wypełniony elementu, który jest powiązany z obrazu. 
-  
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Aby powiązać obrazu w bazie danych do formantu  
-  
-1.  Upewnij się, że chcesz dodać kontrolki do powierzchni projektu jest otwarty w Projektancie WPF lub Projektant formularzy systemu Windows.  
-  
-2.  W **źródeł danych** okna, rozwiń odpowiednią tabelę lub obiekt, aby wyświetlić właściwości lub kolumny.  
-  
-3.  Wybierz kolumny lub właściwości zawierającego dane obrazu, a z listy kontrolka listy rozwijanej wybierz jedną z poniższych formantów:  
-  
-    -   Projektant WPF jest otwarty, wybierz opcję **obrazu**.  
-  
-    -   Jeśli projektant formularzy systemu Windows jest otwarty, wybierz **PictureBox**.  
-  
-    -   Alternatywnie można wybrać inny formant, który obsługuje powiązanie danych i które można wyświetlić obrazy. Jeśli formant, który ma być używany, nie jest na liście dostępnych formantów, należy dodać go do listy, a następnie zaznacz go. Aby uzyskać więcej informacji, zobacz [dodawanie formantów niestandardowych do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
-  
+
+Można użyć **źródeł danych** okna do powiązania obraz w bazie danych z formantem w aplikacji. Na przykład można powiązać obraz <xref:System.Windows.Controls.Image> kontroli w aplikacji WPF lub do <xref:System.Windows.Forms.PictureBox> formantu w aplikacji formularzy systemu Windows.
+
+Obrazy w bazie danych są zwykle przechowywane jako tablice typu byte. Elementy w **źródeł danych** okna, które są przechowywane jako tablice typu byte mieć kontrolę wpisz wartość **Brak** domyślnie, ponieważ tablice typu byte mogą zawierać nic proste tablicę bajtów do pliku wykonywalnego dużych aplikacji. Można utworzyć formantu powiązanego z danymi elementu tablicy bajtów w **źródeł danych** okna, który reprezentuje obraz, należy wybrać formant do utworzenia.
+
+W poniższej procedurze przyjęto, że **źródeł danych** okno jest już wypełniony elementu, który jest powiązany z obrazu.
+
+## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Aby powiązać obrazu w bazie danych do formantu
+
+1.  Upewnij się, że chcesz dodać kontrolki do powierzchni projektu jest otwarty w Projektancie WPF lub Projektant formularzy systemu Windows.
+
+2.  W **źródeł danych** okna, rozwiń odpowiednią tabelę lub obiekt, aby wyświetlić właściwości lub kolumny.
+
+3.  Wybierz kolumny lub właściwości zawierającego dane obrazu, a z listy kontrolka listy rozwijanej wybierz jedną z poniższych formantów:
+
+    -   Projektant WPF jest otwarty, wybierz opcję **obrazu**.
+
+    -   Jeśli projektant formularzy systemu Windows jest otwarty, wybierz **PictureBox**.
+
+    -   Alternatywnie można wybrać inny formant, który obsługuje powiązanie danych i które można wyświetlić obrazy. Jeśli formant, który ma być używany, nie jest na liście dostępnych formantów, należy dodać go do listy, a następnie zaznacz go. Aby uzyskać więcej informacji, zobacz [dodawanie formantów niestandardowych do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+
 ## <a name="see-also"></a>Zobacz także
-[Powiązanie formantów WPF z danymi w Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+
+- [Powiązanie formantów WPF z danymi w Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

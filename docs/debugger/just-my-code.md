@@ -2,8 +2,7 @@
 title: Debugowanie kodu użytkownika przy użyciu tylko mój kod | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf41b8d264d353b6c47acd2e0a762a57d46412e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b59072f17ecfa810bec422770aeff24e0d8e2d99
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Określ, czy w celu debugowania tylko kodu użytkownika przy użyciu tylko mój kod w programie Visual Studio
 Można skonfigurować programu Visual Studio automatycznie Przekrocz nad systemu, framework i inne wywołania niezwiązanych z użytkownikiem i zwinąć tych wywołań w oknie stosu wywołań. Funkcja, która włącza lub wyłącza to zachowanie jest nazywany *tylko mój kod*. W tym temacie opisano sposób użycia tylko mój kod w językach C#, Visual Basic, C++ i JavaScript projektów.
@@ -120,10 +119,10 @@ W przypadku większości języków programowania tylko mój kod jest domyślnie 
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Funkcja|Wymagany. Określa co najmniej jedną funkcję jako funkcje niezwiązanych z użytkownikiem.|  
-|`Name`|Wymagany. ECMA-262 sformatowany wyrażenie regularne określające nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Debuger informuje, że wszystkie metody w `MyNS::MyClass` są uważane za kod niezwiązany z użytkownikiem. Dopasowanie jest rozróżniana wielkość liter.|  
-|`Module`|Opcjonalny. ECMA-262 sformatowany określić pełną ścieżkę do modułu zawierającego funkcję wyrażenia regularnego. Dopasowanie jest rozróżniana wielkość liter.|  
-|`Action`|Wymagany. Jedną z następujących wartości z uwzględnieniem wielkości liter:<br /><br /> -   `NoStepInto`  -informuje debugera Przekrocz nad dopasowane funkcji.<br />-   `StepInto`  -informuje debugera, aby wkraczać do funkcji dopasowane inne zastępowanie `NoStepInto` dopasowane funkcji.|  
+|Funkcja|Wymagana. Określa co najmniej jedną funkcję jako funkcje niezwiązanych z użytkownikiem.|  
+|`Name`|Wymagana. ECMA-262 sformatowany wyrażenie regularne określające nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Debuger informuje, że wszystkie metody w `MyNS::MyClass` są uważane za kod niezwiązany z użytkownikiem. Dopasowanie jest rozróżniana wielkość liter.|  
+|`Module`|Opcjonalna. ECMA-262 sformatowany określić pełną ścieżkę do modułu zawierającego funkcję wyrażenia regularnego. Dopasowanie jest rozróżniana wielkość liter.|  
+|`Action`|Wymagana. Jedną z następujących wartości z uwzględnieniem wielkości liter:<br /><br /> -   `NoStepInto`  -informuje debugera Przekrocz nad dopasowane funkcji.<br />-   `StepInto`  -informuje debugera, aby wkraczać do funkcji dopasowane inne zastępowanie `NoStepInto` dopasowane funkcji.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie zachowania stosu wywołań  
  Można określić moduły, pliki źródłowe i funkcje, które mają być traktowane jako kodu innych użytkowników w stosy wywołań, określając je w `*.natjmc` plików.  
@@ -158,21 +157,21 @@ W przypadku większości języków programowania tylko mój kod jest domyślnie 
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagany. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (znak zero lub jeden) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> Określa, że debuger na traktowanie wszystkich modułów w `\3rdParty\UtilLibs` na dowolnym dysku jako kod zewnętrzny.|  
-|`Company`|Opcjonalny. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnego. Ten atrybut służy do odróżniania modułów.|  
+|`Name`|Wymagana. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (znak zero lub jeden) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> Określa, że debuger na traktowanie wszystkich modułów w `\3rdParty\UtilLibs` na dowolnym dysku jako kod zewnętrzny.|  
+|`Company`|Opcjonalna. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnego. Ten atrybut służy do odróżniania modułów.|  
   
  **Atrybuty elementu**  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagany. Pełna ścieżka pliku źródłowego lub plików, które mają być traktowane jako kod zewnętrzny. Można używać symboli wieloznacznych Windows `?` i `*` określając ścieżkę.|  
+|`Name`|Wymagana. Pełna ścieżka pliku źródłowego lub plików, które mają być traktowane jako kod zewnętrzny. Można używać symboli wieloznacznych Windows `?` i `*` określając ścieżkę.|  
   
  **Atrybuty elementu — funkcja**  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagany. Pełna nazwa funkcji, które mają być traktowane jako kod zewnętrzny.|  
-|`Module`|Opcjonalny. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcje o takiej samej nazwie.|  
+|`Name`|Wymagana. Pełna nazwa funkcji, które mają być traktowane jako kod zewnętrzny.|  
+|`Module`|Opcjonalna. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcje o takiej samej nazwie.|  
 |`ExceptionImplementation`|Jeśli wartość `true`, stos wywołań Wyświetla funkcja, która zgłosiła wyjątek od tej funkcji.|  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> Tylko mój kod JavaScript  

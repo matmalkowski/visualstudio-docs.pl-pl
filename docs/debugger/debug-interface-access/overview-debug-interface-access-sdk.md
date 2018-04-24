@@ -2,8 +2,7 @@
 title: Omówienie (Debug Interface Access SDK) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6494ebe261128ba700cbb92467db78a3d77a3600
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 807690edaf5626e3ec007a005717622592c14ce9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Przegląd (Zestaw SDK dostępu do interfejsu debugowania)
 Umożliwia dostęp do informacji debugowania Microsoft DIA SDK. DIA SDK zawiera oparte na modelu COM zestawu interfejsów API, która eliminuje potrzebę ponownego zapisywania kodu przy każdej zmianie Microsoft format informacji debugowania. DIA SDK umożliwia także odczytywać wybrane grupy poprzednie wersje informacji o debugowaniu w plikach .pdb i .dbg generowane przez [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] w wersji 5.0 lub nowszej.  

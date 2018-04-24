@@ -1,6 +1,5 @@
 ---
-title: Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 ms.date: 07/17/2017
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd36d0cc4a3aba697e7c9b54e1a73c5404f7fcbb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c7c5ab82c45ed183b8e6a6ae2031b50e2a086c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 
@@ -118,7 +117,7 @@ Panel ten umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Ponad
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wstawianie kontrolek i modyfikowanie ich zachowania](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)  
-[Animowanie obiektów](../designers/animate-objects-in-xaml-designer.md)  
-[Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)  
-[Projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+- [Wstawianie kontrolek i modyfikowanie ich zachowania](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)
+- [Animowanie obiektów](../designers/animate-objects-in-xaml-designer.md)
+- [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)
+- [Projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

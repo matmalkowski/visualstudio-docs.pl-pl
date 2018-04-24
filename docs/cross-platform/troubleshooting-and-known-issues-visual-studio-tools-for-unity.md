@@ -10,11 +10,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 03329be39ba94984424999c2878b060f01ccd6de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb1da2ec2c41fcbec78864868d116bcd1684a5b2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 W tej sekcji możesz znaleźć rozwiązania typowych problemów z programu Visual Studio Tools for Unity, opisy znanych problemów i Dowiedz się, jak można zwiększyć Visual Studio Tools for Unity raportowanie błędów.
@@ -37,8 +37,11 @@ To powinno rozwiązać problem. W przypadku, gdy problem nadal występuje, uruch
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problemy z zabarwienie VS2015 i IntelliSense lub kod.
+### <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Problemy z programu Visual Studio 2015 i IntelliSense lub kod zabarwienie.
 Należy próbować uaktualniania programu Visual Studio 2015 do aktualizacji 3.
+
+### <a name="shader-files-without-code-coloration-when-using-visual-studio-2017"></a>Pliki programu do cieniowania bez zabarwienie kodu, korzystając z programu Visual Studio 2017 r.
+Upewnij się, że obciążenie "Pulpitu programowanie z C++" jest zainstalowany w programie Visual Studio 2017 r. C/C++ analizator używany dla kodu zabarwienie jest powiązane z tym obciążenia.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio zawiesza się.
 Kilka wtyczek Unity, takich jak analizy, fmod —, STUDZIENKĘ (Universal odtwarzacz), ZFBrowser lub osadzonej przeglądarce są przy użyciu macierzystych wątków. Jest problem, gdy dodatek kończy się dołączanie Wątek macierzysty do środowiska wykonawczego, która następnie blokowania wywołań do systemu operacyjnego. Oznacza to, Unity nie można przerwać wątek dla debugera (lub Załaduj ponownie domeny) i zawieszenie.
@@ -53,6 +56,12 @@ Pamiętaj nigdy nie touch pliki projektu bezpośrednio z zasobów procesora lub 
 
 Jeśli wystąpią dodatkowe przeładowania lub utracie Visual Studio wszystkie otwarte okna na Załaduj ponownie, upewnij się, że masz właściwe .NET przeznaczonych dla pakietów zainstalowanych. Sprawdź, czy w poniższej sekcji o struktur, aby uzyskać więcej informacji.
 
+###  <a name="the-debugger-does-not-break-on-exceptions"></a>Debuger nie dzielone na wyjątki
+Przy użyciu starszej wersji środowiska uruchomieniowego Unity (odpowiednik .NET 3.5), debuger będzie zawsze Przerwij, gdy jest nieobsługiwany wyjątek (= spoza bloku try/catch). Jeśli wyjątek jest obsługiwany, debuger użyje okno Ustawienia wyjątków można określić, czy podziału jest wymagane, czy nie.
+
+Nowe środowisko uruchomieniowe (.NET 4.6 odpowiednik) Unity wprowadzono nowy sposób zarządzania wyjątków użytkownika i w związku z tym wszystkie wyjątki są widoczne jako "obsługiwane przez użytkownika", nawet jeśli znajdują się poza blokiem try/catch. Dlatego trzeba jawnie zaznacz je w oknie Ustawienia wyjątków debugera do dzielenia.
+
+W oknie Ustawienia wyjątków (debugowanie > Windows > Ustawienia wyjątków), rozwiń węzeł kategorii wyjątków (na przykład wspólnego języka środowiska uruchomieniowego wyjątków oznacza wyjątki .NET) i zaznacz pole wyboru dla specyficznego wyjątku, aby CATCH w ramach tej kategorii (na przykład System.NullReferenceException). Można również wybrać cały kategorię wyjątków.
 
 ### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>W systemie Windows programu Visual Studio zapyta, można pobrać platformę docelową Unity
 Visual Studio Tools for Unity wymaga programu .NET framework 3.5, który nie jest instalowany domyślnie w systemie Windows 8 lub Windows 10. Aby rozwiązać ten problem, postępuj zgodnie z instrukcjami, aby pobrać i zainstalować program .NET framework 3.5.

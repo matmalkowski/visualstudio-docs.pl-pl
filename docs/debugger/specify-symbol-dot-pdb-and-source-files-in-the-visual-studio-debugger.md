@@ -2,8 +2,7 @@
 title: Określ symboli (.pdb) i plików źródłowych w debugerze | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2549cfe71ef05d611251bbc8a017bd4891df3e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0a77ef00ee549006f9b4c6efb255c23543d6746
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określ symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik bazy danych (.pdb) programu skrót pliku symboli, mapuje identyfikatorów, które należy utworzyć w kodzie źródłowym dla klas, metod i inny kod, aby identyfikatory, które są używane w skompilowanych plików wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger użyje tych informacji do określenia dwóch kluczowych informacji:

@@ -1,10 +1,8 @@
 ---
-title: 'CA1003: Użyj wystąpień obsługi zdarzeń generycznych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1003: Użyj wystąpień obsługi zdarzeń generycznych'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseGenericEventHandlerInstances
 - CA1003
@@ -17,57 +15,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6804adbaa360f6523d9cc3d98d555fb13142dd8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32eb25cb6bc3fc998f57a6ca6e4dad2e088f25ad
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Użyj wystąpień obsługi zdarzeń generycznych
-|||  
-|-|-|  
-|TypeName|UseGenericEventHandlerInstances|  
-|CheckId|CA1003|  
-|Kategoria|Microsoft.Design|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- Typ zawiera delegata zwracającego typ void, którego sygnatura zawiera dwa parametry (pierwszy obiekt i drugi typ, który można przypisać do EventArgs) i celów zestawu zawierającego [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
-  
-## <a name="rule-description"></a>Opis reguły  
- Przed [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], aby przekazać niestandardowe informacje do obsługi zdarzeń nowe delegowanie musiały zadeklarowana, który określa klasę, który został utworzony na podstawie <xref:System.EventArgs?displayProperty=fullName> klasy. Nie jest to już PRAWDA w [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], który wprowadzono <xref:System.EventHandler%601?displayProperty=fullName> delegowanie. Ten delegat ogólny umożliwia każdej klasy, która jest pochodną <xref:System.EventArgs> do można używać razem z obsługi zdarzeń.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby naprawić naruszenie tej reguły, Usuń delegata i zastąp jego użycie przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegowanie. Jeśli delegat zostanie wygenerowana automatycznie przez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora, zmiany składni deklaracji zdarzenia do użycia <xref:System.EventHandler%601?displayProperty=fullName> delegowanie.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Nie pomijaj ostrzeżeń dla tej reguły.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie przedstawiono delegata, który narusza zasady. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przykład komentarze opisują sposób modyfikowania przykład spełniają reguły. Na przykład C# przykład następuje pokazujący modyfikacji kodu.  
-  
+|||
+|-|-|
+|TypeName|UseGenericEventHandlerInstances|
+|CheckId|CA1003|
+|Kategoria|Microsoft.Design|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Typ zawiera delegata zwracającego typ void, którego sygnatura zawiera dwa parametry (pierwszy obiekt i drugi typ, który można przypisać do EventArgs) i celów zestawu zawierającego [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+
+## <a name="rule-description"></a>Opis reguły
+ Przed [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], aby przekazać niestandardowe informacje do obsługi zdarzeń nowe delegowanie musiały zadeklarowana, który określa klasę, który został utworzony na podstawie <xref:System.EventArgs?displayProperty=fullName> klasy. Nie jest to już PRAWDA w [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], który wprowadzono <xref:System.EventHandler%601?displayProperty=fullName> delegowanie. Ten delegat ogólny umożliwia każdej klasy, która jest pochodną <xref:System.EventArgs> do można używać razem z obsługi zdarzeń.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby naprawić naruszenie tej reguły, Usuń delegata i zastąp jego użycie przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegowanie. Jeśli delegat zostanie wygenerowana automatycznie przez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora, zmiany składni deklaracji zdarzenia do użycia <xref:System.EventHandler%601?displayProperty=fullName> delegowanie.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie przedstawiono delegata, który narusza zasady. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przykład komentarze opisują sposób modyfikowania przykład spełniają reguły. Na przykład C# przykład następuje pokazujący modyfikacji kodu.
+
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
- [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład usuwa poprzedni przykład, który spełnia reguły i zastępuje jego użycia w deklaracji obiektu delegowanego `ClassThatRaisesEvent` i `ClassThatHandlesEvent` metody przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegowanie.  
-  
- [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
- [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
-  
- [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
-  
- [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
-  
- [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)  
-  
- [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
-  
- [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
-  
- [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)  
-  
-## <a name="see-also"></a>Zobacz też  
+ [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
+
+## <a name="example"></a>Przykład
+ Poniższy przykład usuwa poprzedni przykład, który spełnia reguły i zastępuje jego użycia w deklaracji obiektu delegowanego `ClassThatRaisesEvent` i `ClassThatHandlesEvent` metody przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegowanie.
+
+ [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
+
+## <a name="related-rules"></a>Powiązanych reguł
+ [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+
+ [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+
+ [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+
+ [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002-do-not-expose-generic-lists.md)
+
+ [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+
+ [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+
+ [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
+
+## <a name="see-also"></a>Zobacz też
  [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)

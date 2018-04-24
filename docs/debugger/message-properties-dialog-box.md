@@ -2,8 +2,7 @@
 title: Okno dialogowe Właściwości komunikatu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1264638a911d332929265f5f154d390eba2566
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b241550d2bb9c72240b68c7b6e338cd9f56043c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="message-properties-dialog-box"></a>Właściwości komunikatu — Okno dialogowe
 Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego komunikatu. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku komunikatów](../debugger/messages-view.md) okna. Zaznacz dowolny węzeł komunikat w drzewie, a następnie wybierz pozycję **właściwości** z **widoku** menu.  

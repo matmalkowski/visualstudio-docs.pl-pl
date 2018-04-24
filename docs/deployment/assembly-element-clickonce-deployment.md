@@ -2,9 +2,8 @@
 title: '&lt;zestaw&gt; elementu (wdrażania ClickOnce) | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -14,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <assembly> element [ClickOnce deployment manifest]
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6035fd2ce15be113233077d66e3eba44764a2f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ab58cb90f9486c3a233d5173db340be3ee5f034
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;zestaw&gt; elementu (wdrażania ClickOnce)
 Element najwyższego poziomu dla manifest wdrażania.  
@@ -44,7 +43,7 @@ Element najwyższego poziomu dla manifest wdrażania.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagany. Ten atrybut musi mieć ustawioną `1.0`.|  
+|`manifestVersion`|Wymagana. Ten atrybut musi mieć ustawioną `1.0`.|  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje `assembly` elementu w manifeście wdrażania dla aplikacji wdrożone przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ten przykładowy kod jest częścią większego przykładu udostępnionego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  

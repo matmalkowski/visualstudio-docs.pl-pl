@@ -2,8 +2,7 @@
 title: Edytuj i Kontynuuj — okno dialogowe komunikat błędu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 06/22/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -21,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 148fea0484bbcdfe16339ccc1b5e876506a76838
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b521eafcc62a49f2dd2a4c327158070bdbe62ce
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Komunikat o błędzie Edytuj i kontynuuj — Okno dialogowe
 To okno dialogowe pojawia się podczas debugowania w języku, który obsługuje Edytuj i Kontynuuj, ale **Edytuj i Kontynuuj** nie jest dostępna tylko dla typu zmiany kodu zostały wykonane. Komunikat o błędzie wewnątrz pola zawiera bardziej szczegółowy opis. Możliwe przyczyny przy przeglądaniu to okno dialogowe, które obejmują:  

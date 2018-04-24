@@ -1,10 +1,8 @@
 ---
-title: 'CA1719: Nazwy parametrów nie powinny odpowiadać nazwom elementu członkowskiego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1719: Nazwy parametrów nie powinny odpowiadać nazwom elementów członkowskich'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
 - CA1719
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402744debf3ad94ff303a5d27a39b67d41faa341
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f91f32057b4adbe7747ea2b596c3654b93041692
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Nazwy parametrów nie powinny odpowiadać nazwom elementów członkowskich
-|||  
-|-|-|  
-|TypeName|ParameterNamesShouldNotMatchMemberNames|  
-|CheckId|CA1719|  
-|Kategoria|Microsoft.Naming|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- Nazwa elementu członkowskiego widoczne na zewnątrz odpowiada porównania bez uwzględniania wielkości liter nazwę jednego z jego parametrów.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Nazwa parametru powinna przekazywać znaczenie parametru, a nazwa elementu członkowskiego — znaczenie elementu członkowskiego. W projekcie rzadko są one takie same. Nazywanie parametru tak samo jak nazwa jego elementu członkowskiego jest nieintuicyjne i utrudnia korzystanie z biblioteki.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Wybierz nazwę parametru, który nie jest zgodna z nazwą elementu członkowskiego.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- W nowych wdrożeniach, Brak znanego scenariusze wystąpić, gdy należy pominąć ostrzeżenie od tej reguły. Dla wysyłania bibliotek, może być konieczne pominąć ostrzeżenie od tej reguły.  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
-  
+|||
+|-|-|
+|TypeName|ParameterNamesShouldNotMatchMemberNames|
+|CheckId|CA1719|
+|Kategoria|Microsoft.Naming|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ Nazwa elementu członkowskiego widoczne na zewnątrz odpowiada porównania bez uwzględniania wielkości liter nazwę jednego z jego parametrów.
+
+## <a name="rule-description"></a>Opis reguły
+ Nazwa parametru powinna przekazywać znaczenie parametru, a nazwa elementu członkowskiego — znaczenie elementu członkowskiego. W projekcie rzadko są one takie same. Nazywanie parametru tak samo jak nazwa jego elementu członkowskiego jest nieintuicyjne i utrudnia korzystanie z biblioteki.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Wybierz nazwę parametru, który nie jest zgodna z nazwą elementu członkowskiego.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ W nowych wdrożeniach, Brak znanego scenariusze wystąpić, gdy należy pominąć ostrzeżenie od tej reguły. Dla wysyłania bibliotek, może być konieczne pominąć ostrzeżenie od tej reguły.
+
+## <a name="related-rules"></a>Powiązanych reguł
+ [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
+ [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
  [CA1707: Identyfikatory nie powinny zawierać podkreśleń](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)

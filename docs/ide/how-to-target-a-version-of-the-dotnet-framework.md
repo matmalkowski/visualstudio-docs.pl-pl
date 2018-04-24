@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73cec2f27bfc2e29b9b9faa34c9c24ca2273210e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Porady: wersja docelowa platformy .NET Framework
 
 W tym dokumencie opisano, jak wersja docelowa platformy .NET Framework podczas tworzenia projektu oraz jak zmienić wersję docelową w istniejących Visual Basic, C# lub Visual F # projektu.
 
 > [!IMPORTANT]
-> Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz [porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz [porady: modyfikowanie docelowego framework i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Aby ukierunkować tworzony projekt na konkretną wersję
 
 Podczas tworzenia projektu dostępne wersje programu .NET Framework są zależne od które wersje są zainstalowane, a następnie wybrany szablon w **nowy projekt** okno dialogowe.
 
-1. Na pasku menu wybierz **pliku** > **nowy** > **projektu...** .
+1. Na pasku menu wybierz **pliku** > **nowy** > **projektu**.
 
 1. Na liście zainstalowanych szablonów należy wybrać typ projektu, który chcesz utworzyć, a następnie wprowadź nazwę dla projektu.
 
@@ -45,13 +45,13 @@ Podczas tworzenia projektu dostępne wersje programu .NET Framework są zależne
 
 Docelowa wersja programu .NET Framework w projektach Visual Basic, C# lub Visual F # można zmienić, korzystając z następującej procedury.
 
-Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz [porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz [porady: modyfikowanie docelowego framework i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów projektu, który chcesz zmienić, a następnie wybierz pozycję **właściwości**.
 
     ![Właściwości Eksploratora rozwiązania programu Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-1. W lewej kolumnie okna właściwości, wybierz **aplikacji** kartę.
+1. W lewej kolumnie **właściwości** okna, wybierz **aplikacji** kartę.
 
     ![Visual Studio aplikacji właściwości aplikacji kartę](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
@@ -65,12 +65,12 @@ Aby dowiedzieć się, jak zmienić docelową wersję dla projektów C++, zobacz 
     Projekt zostaje wyładowany Gdy się ponownie ładuje, jest ukierunkowany na wybraną wersję .NET Framework.
 
     > [!NOTE]
-    > Jeśli kod zawiera odwołania do innej wersji platformy .NET Framework niż docelowa, podczas kompilacji lub uruchamiania kodu mogą się pojawić komunikaty o błędach. Aby usunąć te błędy, należy zmodyfikować odwołania. Zobacz [Rozwiązywanie problemów z błędami obiektów docelowych w programie .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+    > Jeśli kod zawiera odwołania do innej wersji platformy .NET Framework niż docelowa, podczas kompilacji lub uruchamiania kodu mogą się pojawić komunikaty o błędach. Aby usunąć te błędy, należy zmodyfikować odwołania. Zobacz [Framework .NET Rozwiązywanie problemów z błędami obiektów docelowych](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wielowersyjność kodu w programie Visual Studio ― przegląd](../ide/visual-studio-multi-targeting-overview.md)  
-[Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
+[Visual Studio omówienie wielowersyjności kodu](../ide/visual-studio-multi-targeting-overview.md)  
+[Rozwiązywanie problemów z błędami obiektów docelowych w programie .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
 [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)  
 [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+[Porady: modyfikowanie docelowego framework i zestawu narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

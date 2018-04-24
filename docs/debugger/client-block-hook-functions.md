@@ -2,8 +2,7 @@
 title: Funkcje punktu zaczepienia bloku klienta | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 711f7de86617f6574427a65c6efcef62c558306b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eccc1781174394da333d2fc703fec0b4d31e522a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="client-block-hook-functions"></a>Funkcje punktu zaczepienia bloku klienta
 Jeśli chcesz zweryfikować lub zgłosić zawartości danych przechowywanych w `_CLIENT_BLOCK` blokuje, można napisać funkcję specjalnie do tego celu. Funkcja, który można zapisać musi mieć prototyp podobny do następującego, zgodnie z definicją w CRTDBG. H:  

@@ -2,8 +2,7 @@
 title: Lista zdarzeń grafiki | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3640a1bbb06de7b05eeb62f847504690921b324
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Użyj listy zdarzeń grafiki w analizatora grafiki programu Visual Studio do eksplorowania zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramka gry lub aplikacji.  
@@ -112,7 +111,7 @@ Kolumny|Opis
 ---|---
 **Typ** | Zawiera typ wpisu, zwykle *Utwórz*, *odczytu* i *zapisu*.  
 **Widok** | Pokazuje miniatur zasobu w tej chwili.  Dwukrotnie kliknij miniaturę, aby otworzyć widok szczegółów zasobów w tym czasie.  
-**Zdarzenia**| Pokazuje wywołanie metody wystąpienia, który wygenerował zdarzenie.  Wszelkie dodatkowe historii na poszczególne elementy można wyświetlić, wybierając ikonę czujki ![ikona monitorowania](media/gfx_watch.png) odpowiednie wiersza.  Ponadto dowolny element, który jest rysowana na niebiesko, takich jak `m_commandList` na zrzucie ekranu powyżej, można wybrać więcej szczegółów.
+**Event**| Pokazuje wywołanie metody wystąpienia, który wygenerował zdarzenie.  Wszelkie dodatkowe historii na poszczególne elementy można wyświetlić, wybierając ikonę czujki ![ikona monitorowania](media/gfx_watch.png) odpowiednie wiersza.  Ponadto dowolny element, który jest rysowana na niebiesko, takich jak `m_commandList` na zrzucie ekranu powyżej, można wybrać więcej szczegółów.
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Zobacz też  

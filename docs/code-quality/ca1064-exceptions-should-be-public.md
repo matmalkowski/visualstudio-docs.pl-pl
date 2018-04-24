@@ -1,10 +1,8 @@
 ---
-title: 'CA1064: Wyjątki powinny być publiczne | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1064: Wyjątki powinny być publiczne'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1064
 - ExceptionsShouldBePublic
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d110c03cc09124f672cb6be7421b60d2014bd58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73daa2d834342cf9d4759d569cd637661696e34d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Wyjątki powinny być publiczne
-|||  
-|-|-|  
-|TypeName|ExceptionsShouldBePublic|  
-|CheckId|CA1064|  
-|Kategoria|Microsoft.Design|  
-|Zmiana kluczowa|Bez podziału|  
-  
-## <a name="cause"></a>Przyczyna  
- Wyjątek niepublicznych pochodzi bezpośrednio z <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Wystąpił wyjątek wewnętrzny jest widoczna tylko wewnątrz własnego wewnętrznego zakresu. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wewnętrzny wyjątek pochodzi z <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>, kod zewnętrzny nie ma wystarczającej ilości informacji, aby dowiedzieć się, co należy zrobić z wyjątkiem.  
-  
- Jednak jeśli kod ma publiczny wyjątek, który później jest używana jako podstawa dla wewnętrznego wyjątku, jest uzasadnione przyjęto założenie, że kodu limit będą mogli czymś inteligentnego z wyjątkiem podstawowej. Publiczny wyjątek będzie zawierać więcej informacji niż dostarczanych przez <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Udostępnić wyjątek lub pochodzi z wewnętrznego wyjątku z publicznego wyjątek, który nie jest <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Pomiń komunikat od tej reguły, gdy we wszystkich przypadkach, że prywatnej wyjątek zostanie przechwycony wewnętrzny zakres.  
-  
-## <a name="example"></a>Przykład  
- Na przykład metody pierwszy, FirstCustomException generowane tej reguły, ponieważ klasa wyjątków pochodzi bezpośrednio z wyjątków i wewnętrzny. Reguła nie zostanie wywołane w klasie SecondCustomException, ponieważ mimo że klasa również pochodzi bezpośrednio z wyjątków, klasa jest zadeklarowany jako publiczny. Klasa innych również nie uruchomi reguły, ponieważ nie pochodzi bezpośrednio z <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, lub <xref:System.ApplicationException?displayProperty=fullName>.  
-  
+|||
+|-|-|
+|TypeName|ExceptionsShouldBePublic|
+|CheckId|CA1064|
+|Kategoria|Microsoft.Design|
+|Zmiana kluczowa|Bez podziału|
+
+## <a name="cause"></a>Przyczyna
+ Wyjątek niepublicznych pochodzi bezpośrednio z <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.
+
+## <a name="rule-description"></a>Opis reguły
+ Wystąpił wyjątek wewnętrzny jest widoczna tylko wewnątrz własnego wewnętrznego zakresu. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wewnętrzny wyjątek pochodzi z <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>, kod zewnętrzny nie ma wystarczającej ilości informacji, aby dowiedzieć się, co należy zrobić z wyjątkiem.
+
+ Jednak jeśli kod ma publiczny wyjątek, który później jest używana jako podstawa dla wewnętrznego wyjątku, jest uzasadnione przyjęto założenie, że kodu limit będą mogli czymś inteligentnego z wyjątkiem podstawowej. Publiczny wyjątek będzie zawierać więcej informacji niż dostarczanych przez <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Udostępnić wyjątek lub pochodzi z wewnętrznego wyjątku z publicznego wyjątek, który nie jest <xref:System.Exception>, <xref:System.SystemException>, lub <xref:System.ApplicationException>.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Pomiń komunikat od tej reguły, gdy we wszystkich przypadkach, że prywatnej wyjątek zostanie przechwycony wewnętrzny zakres.
+
+## <a name="example"></a>Przykład
+ Na przykład metody pierwszy, FirstCustomException generowane tej reguły, ponieważ klasa wyjątków pochodzi bezpośrednio z wyjątków i wewnętrzny. Reguła nie zostanie wywołane w klasie SecondCustomException, ponieważ mimo że klasa również pochodzi bezpośrednio z wyjątków, klasa jest zadeklarowany jako publiczny. Klasa innych również nie uruchomi reguły, ponieważ nie pochodzi bezpośrednio z <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, lub <xref:System.ApplicationException?displayProperty=fullName>.
+
  [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

@@ -1,6 +1,5 @@
 ---
-title: 'Porady: Tworzenie lub aktualizowanie standardowych zasad analizy kodu zaewidencjonowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
@@ -50,10 +49,10 @@ Po określeniu zasad ewidencjonowania dla zarządzanego kodu członków zespołu
 
 Wybierz lub wyczyść następujące opcje:
 
-    |Opcja|Opis|  
-    |------------|-----------------|  
-    |**Wymuś zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania.**|Kod — analiza można uruchomić tylko na plików określonych w plikach konfiguracji rozwiązania i projektu. Ta zasada gwarantuje analizy całego kodu, który jest częścią rozwiązania.|  
-    |**Wymuszanie analiza kodu C/C++ (/ analyze)**|Wymaga się, że wszystkie projekty języka C lub C++ zostać skompilowane z / analyze — opcja kompilatora do uruchamiania analizy kodu przed ich mogą zostać zaewidencjonowane.|  
+    |Opcja|Opis|
+    |------------|-----------------|
+    |**Wymuś zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania.**|Kod — analiza można uruchomić tylko na plików określonych w plikach konfiguracji rozwiązania i projektu. Ta zasada gwarantuje analizy całego kodu, który jest częścią rozwiązania.|
+    |**Wymuszanie analiza kodu C/C++ (/ analyze)**|Wymaga się, że wszystkie projekty języka C lub C++ zostać skompilowane z / analyze — opcja kompilatora do uruchamiania analizy kodu przed ich mogą zostać zaewidencjonowane.|
     |**Wymuszanie analizy kodu dla zarządzanego kodu**|Wymaga wszystkich projektów zarządzanych przeprowadzanie analizy kodu i kompilacji przed ich mogą zostać zaewidencjonowane.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Aby określić zestaw reguł zarządzanych

@@ -2,8 +2,7 @@
 title: Korzystanie z atrybutu DebuggerTypeProxy | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89a3ea96e3ceb473db753a0e238a75d5cdd0e106
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af0f2521b2276d28b07a4712009c4c4ae85a4d2d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Korzystanie z atrybutu DebuggerTypeProxy
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub podstawiony typu i zmiany sposobu typ jest wyświetlana w oknach debugera. Po wyświetleniu zmiennej, która jest serwer proxy serwera proxy oznacza oryginalnego typu w **wyświetlić**. Okno zmiennych debugera zawiera tylko publiczne elementy członkowskie typu serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.  

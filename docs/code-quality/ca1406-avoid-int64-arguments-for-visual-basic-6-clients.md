@@ -1,10 +1,8 @@
 ---
-title: 'CA1406: Unikaj argumentów Int64 dla klientów w języku Visual Basic 6 | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1406: Unikaj argumentów Int64 dla klientów programu Visual Basic 6'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidInt64ArgumentsForVB6Clients
 - CA1406
@@ -17,47 +15,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b07be7368269701b2b77fa633464095cc509779
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36c8ceb93f4784fa3ff50343b8b9cd7770e69533
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Unikaj argumentów Int64 dla klientów programu Visual Basic 6
-|||  
-|-|-|  
-|TypeName|AvoidInt64ArgumentsForVB6Clients|  
-|CheckId|CA1406|  
-|Kategoria|Microsoft.Interoperability|  
-|Zmiana kluczowa|Kluczowa|  
-  
-## <a name="cause"></a>Przyczyna  
- W szczególności oznaczony jako widoczna do składnika modelu COM (Object) typu deklaruje element członkowski tego przyjmuje <xref:System.Int64?displayProperty=fullName> argumentu.  
-  
-## <a name="rule-description"></a>Opis reguły  
- Visual Basic 6 COM klienci nie mają dostępu 64-bitowych liczb całkowitych.  
-  
- Domyślnie widoczne dla modelu COM są następujące: zestawy, typy publiczne elementów członkowskich wystąpienia publicznego w publicznych typach i wszystkie elementy członkowskie typów publicznych wartości. Aby ograniczyć liczbę fałszywych alarmów, ta zasada wymaga jednak widoczność modelu COM typu, który ma być jawnie podanym; muszą być oznaczone zestawu zawierającego <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> ustawioną `false` i typ musi być oznaczone <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną `true`.  
-  
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby usunąć naruszenie tej reguły dla parametru o wartości zawsze może być wyrażona jako całkowite 32-bitowych, należy zmienić typ parametru do <xref:System.Int32?displayProperty=fullName>. Jeśli wartość parametru może być większy niż może zostać wyrażona jako całkowite 32-bitowych, należy zmienić typ parametru na <xref:System.Decimal?displayProperty=fullName>. Należy pamiętać, że oba <xref:System.Single?displayProperty=fullName> i <xref:System.Double?displayProperty=fullName> tracić dokładność w górnym zakresy <xref:System.Int64> — typ danych. Jeśli element członkowski ma nie być widoczne dla modelu COM, oznacz go z <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną `false`.  
-  
-## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli ma pewności, że klienci Visual Basic 6 COM nie uzyska dostępu do typu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia typu, który narusza zasady.  
-  
+|||
+|-|-|
+|TypeName|AvoidInt64ArgumentsForVB6Clients|
+|CheckId|CA1406|
+|Kategoria|Microsoft.Interoperability|
+|Zmiana kluczowa|Kluczowa|
+
+## <a name="cause"></a>Przyczyna
+ W szczególności oznaczony jako widoczna do składnika modelu COM (Object) typu deklaruje element członkowski tego przyjmuje <xref:System.Int64?displayProperty=fullName> argumentu.
+
+## <a name="rule-description"></a>Opis reguły
+ Visual Basic 6 COM klienci nie mają dostępu 64-bitowych liczb całkowitych.
+
+ Domyślnie widoczne dla modelu COM są następujące: zestawy, typy publiczne elementów członkowskich wystąpienia publicznego w publicznych typach i wszystkie elementy członkowskie typów publicznych wartości. Aby ograniczyć liczbę fałszywych alarmów, ta zasada wymaga jednak widoczność modelu COM typu, który ma być jawnie podanym; muszą być oznaczone zestawu zawierającego <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> ustawioną `false` i typ musi być oznaczone <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną `true`.
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
+ Aby usunąć naruszenie tej reguły dla parametru o wartości zawsze może być wyrażona jako całkowite 32-bitowych, należy zmienić typ parametru do <xref:System.Int32?displayProperty=fullName>. Jeśli wartość parametru może być większy niż może zostać wyrażona jako całkowite 32-bitowych, należy zmienić typ parametru na <xref:System.Decimal?displayProperty=fullName>. Należy pamiętać, że oba <xref:System.Single?displayProperty=fullName> i <xref:System.Double?displayProperty=fullName> tracić dokładność w górnym zakresy <xref:System.Int64> — typ danych. Jeśli element członkowski ma nie być widoczne dla modelu COM, oznacz go z <xref:System.Runtime.InteropServices.ComVisibleAttribute> ustawioną `false`.
+
+## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli ma pewności, że klienci Visual Basic 6 COM nie uzyska dostępu do typu.
+
+## <a name="example"></a>Przykład
+ Poniższy przykład przedstawia typu, który narusza zasady.
+
  [!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
- [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]  
-  
-## <a name="related-rules"></a>Powiązanych reguł  
- [CA1413: Unikaj pól niepublicznych w typach wartości widocznych dla modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
-  
- [CA1407: Unikaj składowych statycznych w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
-  
- [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
-  
-## <a name="see-also"></a>Zobacz też  
- [Współdziałanie z kodem niezarządzanym](/dotnet/framework/interop/index)   
- [Long, typ danych](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+ [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
+
+## <a name="related-rules"></a>Powiązanych reguł
+ [CA1413: Unikaj pól niepublicznych w typach wartości widocznych dla modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+
+ [CA1407: Unikaj składowych statycznych w typach widocznych dla modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+
+ [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+
+## <a name="see-also"></a>Zobacz też
+ [Współdziałanie z niezarządzanych kodu](/dotnet/framework/interop/index) [Long — typ danych](/dotnet/visual-basic/language-reference/data-types/long-data-type)

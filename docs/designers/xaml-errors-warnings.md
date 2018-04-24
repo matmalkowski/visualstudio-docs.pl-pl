@@ -1,5 +1,5 @@
 ---
-title: XAML błędy i ostrzeżenia | Dokumentacja firmy Microsoft
+title: XAML błędy i ostrzeżenia
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -9,11 +9,11 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072792b224d72e0f733373d56457a7a7667573fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b252fe651355000f63c47c5b45cf6d0e9db4d776
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML błędy i ostrzeżenia
 
@@ -23,11 +23,11 @@ Podczas tworzenia pliku XAML, Visual Studio analizę kodu podczas pisania. Węż
 
 W tle wielu narzędzi analizować XAML równolegle. Błędy XAML są podzielone na jeden z następujących trzech typów oparte na narzędzie wykryto błąd:
 
-|**Wykrył błąd**|**Błąd formatu kodu**|  
-|--------------------------------|-----------------|  
-|Usługa języka XAML (edytora XAML)|XLSxxxx|  
-|XAML Designer|XDGxxxx|  
-|XAML Edytuj i Kontynuuj|XECxxxx|  
+|**Wykrył błąd**|**Błąd formatu kodu**|
+|--------------------------------|-----------------|
+|Usługa języka XAML (edytora XAML)|XLSxxxx|
+|XAML Designer|XDGxxxx|
+|XAML Edytuj i Kontynuuj|XECxxxx|
 
 > [!Note]
 > Nie wszystkie błędy lub ostrzeżenia mają odpowiedni kod. Takie błędy są zwykle błędy projektanta XAML.
