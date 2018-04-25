@@ -1,10 +1,10 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 5423ccf6f441c5eca61e7994c2579e6dc068a38f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37079cfaa1204cd8ce7a77e1e2f5aa91ea844ea5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 1. Uruchom program Visual Studio i wybierz **Plik > Nowy > Projekt**.
 
