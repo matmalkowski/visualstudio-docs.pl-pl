@@ -194,4 +194,6 @@
 ##### [UidManager, zadanie](uidmanager-task.md)
 ##### [UpdateManifestForBrowserApplication, zadanie](updatemanifestforbrowserapplication-task.md)
 ### [Znaki specjalne wyjścia](special-characters-to-escape.md)
+## [Programowe korzystanie z programu MSBuild](msbuild-api.md)
+### [Aktualizacja do programu MSBuild 15](updating-an-existing-application.md)
 ## [Słownik programu MSBuild](msbuild-glossary.md)
