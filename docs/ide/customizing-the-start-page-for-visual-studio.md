@@ -1,7 +1,7 @@
 ---
-title: Zainstaluj strony początkowej niestandardowych lub zmień element startowy w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Zainstaluj strony początkowej niestandardowych lub zmień element startowy w programie Visual Studio
 ms.date: 02/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9863fdfbfb73e49d0539ba1060f1e1c56888599c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5e32a311bcd60542df80518c791b1fbe413a7b2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Dostosowanie strony początkowej dla programu Visual Studio
 
@@ -52,4 +52,4 @@ Aby zainstalować strony początkowej niestandardowych, otwórz *.vsix* pliku, l
 
 ## <a name="see-also"></a>Zobacz także
 
-[Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+- [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)

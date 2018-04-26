@@ -1,6 +1,5 @@
 ---
-title: Przy użyciu ustawień EditorConfig w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Przy użyciu ustawień EditorConfig w programie Visual Studio
 ms.date: 12/13/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +7,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: fe1653df6fc1d71dc4497c6e7e0a9adae9fa0b44
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Utwórz Edytor przenośny, niestandardowe ustawienia z EditorConfig
 
@@ -158,8 +158,8 @@ Zakres z Konwencji EditorConfig można kontrolować przez ustawienie ```root=tru
 
 ## <a name="see-also"></a>Zobacz także
 
-[Konwencje styl kodu platformy .NET](../ide/editorconfig-code-style-settings-reference.md)  
-[Konwencje nazewnictwa platformy .NET](../ide/editorconfig-naming-conventions.md)  
-[Obsługa EditorConfig usługi języka](../extensibility/supporting-editorconfig.md)  
-[EditorConfig.org](http://editorconfig.org/)  
-[Pisanie kodu w edytorze](writing-code-in-the-code-and-text-editor.md)
+- [Konwencje styl kodu platformy .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Konwencje nazewnictwa platformy .NET](../ide/editorconfig-naming-conventions.md)
+- [Obsługa EditorConfig usługi języka](../extensibility/supporting-editorconfig.md)
+- [EditorConfig.org](http://editorconfig.org/)
+- [Pisanie kodu w edytorze](writing-code-in-the-code-and-text-editor.md)

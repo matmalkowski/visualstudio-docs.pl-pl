@@ -9,14 +9,15 @@ ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6adcdd2d1bead72c1ff615731aa26be664f1f455
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 46eb04100f455bbd1d8dc26ad2b7c1a67e2da50d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Porady: Dodawanie walidacji do klas jednostek
 *Sprawdzanie poprawności* klas jednostek jest proces potwierdzania wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także do reguły dla aplikacji. Sprawdzanie poprawności danych, aby wysyłać aktualizacje do podstawowej bazy danych jest dobrym rozwiązaniem, które zmniejsza błędy. Zmniejsza liczbę rund między aplikacją i bazy danych.

@@ -1,5 +1,6 @@
 ---
-title: Rozpocząć debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft
+title: Dowiedz się debugować aplikacje wielowątkowe
+description: Debugowanie za pomocą stosów równoległych i czujki równoległej systemu windows w programie Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.technology: vs-ide-debug
@@ -18,13 +19,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb178a0a048a3696fc2c1ec642127906c8b83424
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Rozpocząć debugowanie aplikacji wielowątkowych w programie Visual Studio
+# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Rozpocząć debugowanie wielowątkowe aplikacje w programie Visual Studio
 Program Visual Studio udostępnia wiele narzędzi i elementy interfejsu użytkownika, aby pomóc w debugowaniu aplikacji wielowątkowych. Ten samouczek przedstawia sposób użycia znaczników wątku **stosów równoległych** okna, **czujki równoległej** okna, warunkowych punktów przerwania, a punkty przerwania filtru. W tym samouczku zajmuje tylko kilka minut, ale jego wypełnieniu umożliwia zapoznanie się z funkcjami do debugowania aplikacji wielowątkowych.
 
 |         |         |

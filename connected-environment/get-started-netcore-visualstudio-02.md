@@ -1,18 +1,19 @@
 ---
 title: Utwórz Środowisko deweloperskie .NET Core z kontenerów przy użyciu Kubernetes w chmurze za pomocą programu Visual Studio — krok 2 — Tworzenie aplikacji sieci web platformy ASP.NET | Dokumentacja firmy Microsoft
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Szybkie opracowywanie Kubernetes z kontenerów i mikrousług na platformie Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
-manager: ghogen
-ms.openlocfilehash: 3f60fc076d7b42a3c667455b5474572ed7e22991
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: d28661e8f252201a200c7e5f254d337edb6fe9e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Rozpoczynanie pracy w środowisku połączonych z platformy .NET Core i Visual Studio
 

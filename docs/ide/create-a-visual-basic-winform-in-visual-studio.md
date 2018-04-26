@@ -1,10 +1,10 @@
 ---
-title: Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic | Dokumentacja firmy Microsoft
+title: Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
 description: Informacje o sposobie tworzenia aplikacji formularzy systemu Windows w programie Visual Studio za pomocą Visual Basic, krok po kroku.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.devlang: vb
 author: TerryGLee
@@ -14,51 +14,54 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d51c92307a7ac266da042d33a7669a3ac629b21e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 603fe9c8aaa328e0ae1b42f385a0f8f2b5867955
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Tworzenie Windows aplikacji formularzy w programie Visual Studio za pomocą Visual Basic
+
 W tym krótkie wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację języka Visual Basic, która ma interfejs użytkownika systemu Windows (UI).
 
 Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
-Najpierw utworzysz projekt aplikacji Visual Basic. Typ projektu zawiera wszystkie pliki szablonu, które będą potrzebne, zanim nawet dodano niczego.  
 
-1. Otwórz program Visual Studio 2017 r.  
+Najpierw utworzysz projekt aplikacji Visual Basic. Typ projektu zawiera wszystkie pliki szablonu, które będą potrzebne, zanim nawet dodano niczego.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .  
+1. Otwórz program Visual Studio 2017 r.
 
-3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **klasycznego pulpitu systemu Windows**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows (.NET Framework)**. Nadaj nazwę plikowi `HelloWorld`.  
+2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
 
-     Jeśli nie widzisz **aplikacji formularzy systemu Windows (.NET Framework)** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia**  >  **Pobierz narzędzia i funkcje...** . Uruchamia Instalator programu Visual Studio. Wybierz **tworzenia klasycznych aplikacji .NET** obciążenia, a następnie wybierz **Modyfikuj**.  
+3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **klasycznego pulpitu systemu Windows**. W środkowym okienku wybierz **aplikacji formularzy systemu Windows (.NET Framework)**. Nadaj nazwę plikowi `HelloWorld`.
 
-     ![Obciążenie .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)  
+     Jeśli nie widzisz **aplikacji formularzy systemu Windows (.NET Framework)** projektu szablonu, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia**  >  **Pobierz narzędzia i funkcje...** . Uruchamia Instalator programu Visual Studio. Wybierz **tworzenia klasycznych aplikacji .NET** obciążenia, a następnie wybierz **Modyfikuj**.
+
+     ![Obciążenie .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
-Po wybraniu szablonu projektu języka Visual Basic oraz nazwę pliku, Visual Studio otwiera formularza. Formularz jest interfejs użytkownika systemu Windows. Utworzymy aplikację "Hello World" przez dodawanie formantów do formularza, a następnie będzie uruchomić aplikację.   
 
-### <a name="add-a-button-to-the-form"></a>Dodawanie przycisku do formularza  
+Po wybraniu szablonu projektu języka Visual Basic oraz nazwę pliku, Visual Studio otwiera formularza. Formularz jest interfejs użytkownika systemu Windows. Utworzymy aplikację "Hello World" przez dodawanie formantów do formularza, a następnie będzie uruchomić aplikację.
+
+### <a name="add-a-button-to-the-form"></a>Dodawanie przycisku do formularza
 
 1. Kliknij przycisk **przybornika** można otworzyć okna wysuwanego przybornika.
 
-     ![Kliknij przycisk przybornika, aby otworzyć okno przybornika](../ide/media/vb-toolbox-toolwindow.png)  
+     ![Kliknij przycisk przybornika, aby otworzyć okno przybornika](../ide/media/vb-toolbox-toolwindow.png)
 
      (Jeśli nie widzisz **przybornika** wysuwanego opcji, możesz otworzyć go na pasku menu. Aby to zrobić, kliknij przycisk **widoku** > **przybornika**. Możesz również nacisnąć klawisz **Ctrl**+**Alt**+**X**.)
 
 2. Kliknij przycisk **numeru Pin** ikonę, aby dock **przybornika** okna.
 
-     ![Kliknij ikonę numeru Pin, aby przypiąć okno przybornika do środowiska IDE](../ide/media/vb-pin-the-toolbox-window.png)  
+     ![Kliknij ikonę numeru Pin, aby przypiąć okno przybornika do środowiska IDE](../ide/media/vb-pin-the-toolbox-window.png)
 3. Kliknij przycisk **przycisk** kontroli, a następnie przeciągnij ją na formularzu.
 
      ![Dodawanie przycisku do formularza](../ide/media/vb-add-a-button-to-form1.png)
 
 4. W **wygląd** sekcji **właściwości** wpisz `Click this`, a następnie naciśnij klawisz **Enter**.
 
-     ![Dodawanie tekstu na przycisk w formularzu](../ide/media/vb-button-control-text.png)  
+     ![Dodawanie tekstu na przycisk w formularzu](../ide/media/vb-button-control-text.png)
 
      (Jeśli nie widzisz **właściwości** okna, możesz otworzyć go na pasku menu. Aby to zrobić, kliknij przycisk **widoku** > **okna właściwości**. Możesz również nacisnąć klawisz **F4**.)
 
@@ -67,6 +70,7 @@ Po wybraniu szablonu projektu języka Visual Basic oraz nazwę pliku, Visual Stu
      ![Dodawanie funkcji do przycisk w formularzu](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Dodawanie etykiet do formularza
+
 Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formantu etykiety do wysyłania tekst.
 
 1. Wybierz **etykiety** kontrolować z **przybornika** okna, a następnie przeciągnij go do formularza i upuść je pod **kliknij** przycisku.
@@ -84,6 +88,7 @@ Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formant
      ![Dodaj kod, aby formularz formularza](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
+
 1. Kliknij przycisk **Start** przycisk, aby uruchomić aplikację.
 
      ![Kliknij przycisk Start do debugowania i uruchamiania aplikacji](../ide/media/vb-click-start-hello-world.png)
@@ -94,8 +99,9 @@ Teraz, gdy dodaliśmy kontrolkę przycisku, aby utworzyć akcję Dodajmy formant
 
     ![Okno dialogowe Form1 zawierającego Label1 tekst ](../ide/media/vb-form1-dialog-hello-world.png)
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco dotyczące języka Visual Basic i Visual Studio IDE. Jeśli chcesz delve głębiej, kontynuuj samouczek w **samouczki** sekcji spisu treści.  
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco dotyczące języka Visual Basic i Visual Studio IDE. Jeśli chcesz delve głębiej, kontynuuj samouczek w **samouczki** sekcji spisu treści.
 
-## <a name="see-also"></a>Zobacz także   
+## <a name="see-also"></a>Zobacz także
+
 * [Szybki Start: Tworzenie aplikacji konsoli w programie Visual Studio za pomocą Visual Basic](quickstart-visual-basic-console.md)
-* [Dowiedz się więcej na temat języka Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  
+* [Dowiedz się więcej na temat języka Visual Basic IntelliSense](visual-basic-specific-intellisense.md)

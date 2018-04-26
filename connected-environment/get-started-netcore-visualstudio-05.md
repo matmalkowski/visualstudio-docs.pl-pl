@@ -1,18 +1,19 @@
 ---
 title: Tworzenie środowiska programowania .NET Core z kontenerami przy użyciu Kubernetes w chmurze za pomocą programu Visual Studio — krok 5 - wywołanie innego kontenera | Dokumentacja firmy Microsoft
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Szybkie opracowywanie Kubernetes z kontenerów i mikrousług na platformie Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Rozpoczynanie pracy w środowisku połączonych z platformy .NET Core i Visual Studio
 
@@ -30,7 +31,7 @@ Ze względu na czas możemy pobrać przykładowy kod z repozytorium GitHub. Prze
 1. Otwórz projekt `mywebapi` w *osobne okno programu Visual Studio*.
 1. Wybierz **połączone środowisko AKS** z listy rozwijanej Ustawienia uruchamiania podczas została wcześniej `webfrontend` projektu. Zamiast tworzyć nowe środowisko deweloperskie teraz, wybierz ten sam już utworzone. Przed pozostaw domyślnie ustawiony miejsce `mainline` i kliknij przycisk **OK**. W oknie dane wyjściowe mogą pojawić się rozpocznie "rozgrzewki" nowej usługi w środowisku projektowania aby przyspieszyć rzeczy się po rozpoczęciu debugowania, Visual Studio
 1. Naciśnij klawisz F5 i poczekaj, aż usługi do tworzenia i wdrażania. Będzie wiadomo, że jest gotowa przy pomarańczowy pasek stanu programu Visual Studio
-1. Zwróć uwagę na punkt końcowy adres URL wyświetlany w **połączone środowisko AKS** okienka w **dane wyjściowe** okna, jego będzie wyglądać jak http://localhost:\<numer_portu\>. Wydaje się, jak kontenera działa lokalnie, ale faktycznie jest uruchomiona w naszym środowisku programistycznym na platformie Azure.
+1. Zwróć uwagę na punkt końcowy adres URL wyświetlany w **połączone środowisko AKS** okienka w **dane wyjściowe** okna, ekran będzie wyglądać podobnie jak http://localhost: \<numer_portu\>. Wydaje się, jak kontenera działa lokalnie, ale faktycznie jest uruchomiona w naszym środowisku programistycznym na platformie Azure.
 1. Gdy `mywebapi` jest gotowy, otwórz przeglądarkę z adresem localhost i Dołącz `/api/values` do adresu URL do wywołania interfejsu API GET domyślny dla `ValuesController`. 
 1. Jeśli wszystkie kroki zostały wprowadzone pomyślnie, można wyświetlić na odpowiedź z `mywebapi` usługi, która wygląda następująco.
 

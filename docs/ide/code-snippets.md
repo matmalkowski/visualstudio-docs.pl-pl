@@ -1,7 +1,7 @@
 ---
-title: Wstawki kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wstawki kodu
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 520aa870f85ddc3768720eafb17b0109fb270393
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>Wstawki kodu
 
@@ -95,10 +95,10 @@ Jeśli zmienisz `newPropertyValue` do `m_property`, następnie każde wystąpien
 
 ## <a name="see-also"></a>Zobacz także
 
-[Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)  
-[Porady: rozprowadzanie wstawek kodu](../ide/how-to-distribute-code-snippets.md)  
-[Najlepsze rozwiązania dotyczące korzystania z wstawek kodu](../ide/best-practices-for-using-code-snippets.md)  
-[Rozwiązywanie problemów z wstawki kodu programu](../ide/troubleshooting-snippets.md)  
-[Wstawki kodu C#](../ide/visual-csharp-code-snippets.md)  
-[Wstawki kodu programu Visual C++ kod](../ide/visual-cpp-code-snippets.md)  
-[Odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md)
+- [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)
+- [Porady: rozprowadzanie wstawek kodu](../ide/how-to-distribute-code-snippets.md)
+- [Najlepsze rozwiązania dotyczące korzystania z wstawek kodu](../ide/best-practices-for-using-code-snippets.md)
+- [Rozwiązywanie problemów z wstawki kodu programu](../ide/troubleshooting-snippets.md)
+- [Wstawki kodu C#](../ide/visual-csharp-code-snippets.md)
+- [Wstawki kodu programu Visual C++ kod](../ide/visual-cpp-code-snippets.md)
+- [Odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md)

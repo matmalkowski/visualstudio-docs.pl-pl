@@ -1,6 +1,7 @@
 ---
 title: Jak utworzyć i zastosować zasobu
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5fd3c3b5842a9d2a68fde3c20b1a0c76af7c0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1a162c66f4a014d50da7ad7bd3cd5da9edd6e43
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i zastosować zasobu
 Szablony elementów w Projektancie XAML i style są przechowywane w wielokrotnego użytku jednostek nazywanych zasobów. Style umożliwiają ustawianie właściwości elementu i ponowne użycie tych ustawień, aby uzyskać spójny wygląd przez wiele elementów. A [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) określa wygląd formantu i mogą być również stosowane jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: formanty stylów](http://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: kontrolować szablony](http://go.microsoft.com/fwlink/?LinkID=247982).

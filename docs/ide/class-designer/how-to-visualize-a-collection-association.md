@@ -1,9 +1,8 @@
 ---
-title: 'Porady: wizualizacja skojarzeń kolekcji (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Porady: wizualizacja skojarzeń kolekcji (Projektant klas)'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -18,26 +17,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf7f8c7971b78247e87def172eca169b38b6b80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Porady: wizualizacja skojarzeń kolekcji (Projektant klas)
-Właściwości i pola, które są kolekcjami innych typów mogą być wyświetlane na diagramie klas jako kolekcję skojarzeń. W odróżnieniu od skojarzenie regularne Wyświetla pole lub właściwość jako wiersz łączenie klasa będąca właścicielem z typem pola, skojarzeń kolekcji jest wyświetlany jako wiersz łączenia klasa będąca właścicielem typu modułu zbierającego.  
-  
-### <a name="to-create-a-collection-association"></a>Aby utworzyć skojarzenie kolekcji  
-  
-1.  W kodzie należy utworzyć właściwości lub pola, którego typ jest kolekcją jednoznacznie.  
-  
-2.  Na diagramie klas rozwiń klasy tak, aby właściwości i pola.  
-  
-3.  W klasie, kliknij prawym przyciskiem myszy pole lub właściwość, a następnie wybierz pozycję **wyświetlić jako kolekcję skojarzeń**.  
-  
-     Właściwość lub pole jest wyświetlany jako linia asocjacji połączenie typu modułu zbierającego.  
-  
+
+Właściwości i pola, które są kolekcjami innych typów mogą być wyświetlane na diagramie klas jako kolekcję skojarzeń. W odróżnieniu od skojarzenie regularne Wyświetla pole lub właściwość jako wiersz łączenie klasa będąca właścicielem z typem pola, skojarzeń kolekcji jest wyświetlany jako wiersz łączenia klasa będąca właścicielem typu modułu zbierającego.
+
+## <a name="to-create-a-collection-association"></a>Aby utworzyć skojarzenie kolekcji
+
+1.  W kodzie należy utworzyć właściwości lub pola, którego typ jest kolekcją jednoznacznie.
+
+2.  Na diagramie klas rozwiń klasy tak, aby właściwości i pola.
+
+3.  W klasie, kliknij prawym przyciskiem myszy pole lub właściwość, a następnie wybierz pozycję **wyświetlić jako kolekcję skojarzeń**.
+
+     Właściwość lub pole jest wyświetlany jako linia asocjacji połączenie typu modułu zbierającego.
+
 ## <a name="see-also"></a>Zobacz także
-[Porady: Tworzenie skojarzenia między typami](how-to-create-associations-between-types.md)   
-[Projektowanie klas i typów](designing-classes-and-types.md)   
-[Wyświetlanie typów i relacji](viewing-types-and-relationships.md)
+
+- [Porady: Tworzenie skojarzenia między typami](how-to-create-associations-between-types.md)
+- [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)
+- [Wyświetlanie typów i relacji](viewing-types-and-relationships.md)

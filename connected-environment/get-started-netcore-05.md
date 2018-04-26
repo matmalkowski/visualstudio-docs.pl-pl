@@ -1,18 +1,19 @@
 ---
 title: Utwórz Środowisko deweloperskie .NET Core z kontenerów przy użyciu Kubernetes w chmurze — krok 5 - wywołanie innego kontenera | Dokumentacja firmy Microsoft
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Szybkie opracowywanie Kubernetes z kontenerów i mikrousług na platformie Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
-manager: ghogen
-ms.openlocfilehash: 15ca1db26bc57aafa704a57b4464b31a1ada8c92
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 6ef3a79d0b79feae64adcaebe31daa48ba75ab75
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>Rozpoczynanie pracy w środowisku połączonych z platformą .NET Core
 
@@ -29,7 +30,7 @@ Ze względu na czas możemy pobrać przykładowy kod z repozytorium GitHub. Prze
 ## <a name="run-mywebapi"></a>Uruchom *mywebapi*
 1. Otwórz folder `mywebapi` w *osobnym oknie kodzie VS*.
 1. Naciśnij klawisz F5 i poczekaj, aż usługi do tworzenia i wdrażania. Użytkownik wie, że jest gotowy, gdy zostanie wyświetlony pasek debugowania kodu programu VS.
-1. Zwróć uwagę adresu URL punktu końcowego, ekran będzie wyglądać podobnie jak http://localhost:\<numer_portu\>. **Porada: Kodzie VS paska stanu spowoduje wyświetlenie aktywne adresu URL.** Wydaje się, jak kontenera działa lokalnie, ale faktycznie jest uruchomiona w naszym środowisku programistycznym na platformie Azure. Przyczyna adres hosta lokalnego jest ponieważ `mywebapi` nie ma zdefiniowanych żadnych publicznych punktów końcowych i można uzyskać tylko z wewnątrz Kubernetes wystąpienia. Dla wygody użytkownika i ułatwienia interakcji z usługą prywatnych z komputera lokalnego połączone środowiska tworzy tymczasowy tunelu SSH w kontenerze działające na platformie Azure.
+1. Zwróć uwagę adresu URL punktu końcowego, ekran będzie wyglądać podobnie jak http://localhost: \<numer_portu\>. **Porada: Kodzie VS paska stanu spowoduje wyświetlenie aktywne adresu URL.** Wydaje się, jak kontenera działa lokalnie, ale faktycznie jest uruchomiona w naszym środowisku programistycznym na platformie Azure. Przyczyna adres hosta lokalnego jest ponieważ `mywebapi` nie ma zdefiniowanych żadnych publicznych punktów końcowych i można uzyskać tylko z wewnątrz Kubernetes wystąpienia. Dla wygody użytkownika i ułatwienia interakcji z usługą prywatnych z komputera lokalnego połączone środowiska tworzy tymczasowy tunelu SSH w kontenerze działające na platformie Azure.
 1. Gdy `mywebapi` jest gotowe, Otwórz w przeglądarce adres hosta lokalnego. Dołącz `/api/values` do adresu URL do wywołania interfejsu API GET domyślny dla `ValuesController`. 
 1. Jeśli wszystkie kroki zostały wprowadzone pomyślnie, można wyświetlić na odpowiedź z `mywebapi` usługi.
 

@@ -1,6 +1,7 @@
 ---
 title: 'CA1063: Należy prawidłowo zaimplementować interfejs IDisposable'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Należy prawidłowo zaimplementować interfejs IDisposable
 
@@ -60,7 +61,7 @@ Wszystkie typy IDisposable powinny poprawnie implementować wzorzec Dispose.
 
 Sprawdź swój kod, aby ustalić, które z następujących rozwiązań naprawi to naruszenie.
 
-- Usuń interfejs IDisposable z listy interfejsów implementowanych przez {0}, które override implementację metody Dispose klasy podstawowej.
+- Usuń interfejs IDisposable z listy interfejsów implementowanych przez {0} i override implementację metody Dispose klasy podstawowej.
 
 - Usuń finalizator z typu {0}, Przesłoń metodę Dispose (bool disposing) i umieść logikę finalizowania w ścieżce kodu, w którym "disposing" ma wartość false.
 
@@ -68,13 +69,13 @@ Sprawdź swój kod, aby ustalić, które z następujących rozwiązań naprawi t
 
 - Upewnij się, że {0} jest zadeklarowany jako publiczny i zapieczętowany.
 
-- Zmień nazwę "Dispose" {0} i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
+- Zmień nazwę {0} do "Dispose" i upewnij się, że jest on zadeklarowany jako publiczny i zapieczętowany.
 
 - Upewnij się, że {0} jest zadeklarowany jako chroniony, wirtualny i niezapieczętowany.
 
-- Tak, aby wywołuje metody Dispose(true), następnie wywołuje GC, należy zmodyfikować {0}. Metodę SuppressFinalize w bieżącym wystąpieniu obiektu ("this" lub "Me" w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), a następnie zwraca.
+- Modyfikowanie {0} tak, aby Dispose(true), następnie wywołuje GC. Metodę SuppressFinalize w bieżącym wystąpieniu obiektu ("this" lub "Me" w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), a następnie zwraca.
 
-- Tak, aby wywołuje metody Dispose(false), a następnie zwraca, należy zmodyfikować {0}.
+- Modyfikowanie {0} tak, aby wywołuje metody Dispose(false), a następnie zwraca.
 
 - Jeśli tworzysz niezamknięty typ, który deklaruje i implementuje interfejs IDisposable, upewnij się, że implementacja interfejsu IDisposable zgodny ze wzorcem opisanego wcześniej w tej sekcji.
 

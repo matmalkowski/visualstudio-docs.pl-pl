@@ -1,9 +1,9 @@
 ---
-title: Dotfuscator Community Edition (CE) | Dokumentacja firmy Microsoft
-ms.date: 2017-10-10
+title: Dotfuscator Community Edition (CE)
+ms.date: 10/10/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, Wywłaszczaniem, cenią sobie wcześniejsze rozwiązań cenią sobie wcześniejsze ochrony, ochronie, community edition, Zaciemnienie, .NET wolny, Visual Studio 2017 r.
 helpviewer_keywords:
@@ -16,12 +16,13 @@ helpviewer_keywords:
 description: Dowiedz się, jak możesz chronić aplikacje .NET z bezpłatna wersja Community Dotfuscator uwzględnione w programie Visual Studio 2017 r.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e8e7fb56580e3b0b5a9db8e46d9b98b7c157f9f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -70,8 +71,8 @@ Aby dowiedzieć się, jak udoskonalanie Dotfuscator, zobacz [strony uaktualnieni
 
 Aby rozpocząć korzystanie z CE Dotfuscator z programu Visual Studio, wpisz `dotfuscator` do **Szybkie uruchamianie** pasek wyszukiwania (Ctrl + Q).
 
-* Jeśli Dotfuscator CE jest już zainstalowany, pojawi się *Menu* opcję, aby uruchomić interfejs użytkownika Dotfuscator CE. Aby uzyskać więcej informacji, zobacz [na stronie wprowadzenie pełnej Podręcznik użytkownika CE Dotfuscator][get-started].
-* Jeśli Dotfuscator CE nie jest jeszcze zainstalowany, pojawi się odpowiedni *zainstalować* opcji. Zobacz [strona instalacji] [ install] szczegółowe informacje.
+* Jeśli zainstalowano Dotfuscator CE **Szybkie uruchamianie** wywołuje *Menu* opcję, aby uruchomić interfejs użytkownika Dotfuscator CE. Aby uzyskać więcej informacji, zobacz [na stronie wprowadzenie pełnej Podręcznik użytkownika CE Dotfuscator][get-started].
+* Jeśli nie zainstalowano jeszcze Dotfuscator CE, **Szybkie uruchamianie** wyświetlenie odpowiedniego *zainstalować* opcji. Zobacz [strona instalacji] [ install] szczegółowe informacje.
 
 Można także uzyskać **najnowszej wersji** CE Dotfuscator z [strony Dotfuscator pliki do pobrania na preemptive.com][download].
 
@@ -79,33 +80,33 @@ Można także uzyskać **najnowszej wersji** CE Dotfuscator z [strony Dotfuscato
 
 Tę stronę i jego podstrony stanowią ogólne omówienie funkcji Dotfuscator CE, jak również [instrukcje dotyczące instalowania narzędzia][install].
 
-Zobacz [pełny przewodnik użytkownika CE Dotfuscator w preemptive.com] [ full] szczegółowe instrukcje dotyczące obsługi, w tym [sposobu uruchamiania przy użyciu interfejsu użytkownika Dotfuscator CE] [get-started].
+Zobacz [pełny przewodnik użytkownika CE Dotfuscator w preemptive.com] [ full] szczegółowe instrukcje dotyczące obsługi, w tym [sposobu uruchamiania przy użyciu interfejsu użytkownika Dotfuscator CE] [ get-started].
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-[software-protection]: https://www.preemptive.com/software-protection
-[obfuscation]: https://www.preemptive.com/obfuscation
-[app-protection]: https://www.preemptive.com/application-protection
-[sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-[net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-[download]: https://www.preemptive.com/products/dotfuscator/downloads
+- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+- [software-protection]: https://www.preemptive.com/software-protection
+- [obfuscation]: https://www.preemptive.com/obfuscation
+- [app-protection]: https://www.preemptive.com/application-protection
+- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
+- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
+- [download]: https://www.preemptive.com/products/dotfuscator/downloads
 
-[install]: install.md
-[capabilities]: capabilities.md
-[upgrades]: upgrades.md
+- [install]: install.md
+- [capabilities]: capabilities.md
+- [upgrades]: upgrades.md
 
-[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-[renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-[tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-[debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-[shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

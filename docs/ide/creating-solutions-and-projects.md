@@ -1,7 +1,7 @@
 ---
-title: Tworzenie projektów i rozwiązań w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Tworzenie projektów i rozwiązań w programie Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie projektów i rozwiązań
 
@@ -134,7 +134,7 @@ Możesz usunąć rozwiązań i ich zawartość stałe, ale nie za pomocą środo
 
 ## <a name="see-also"></a>Zobacz także
 
-[Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)  
-[Repozytoria typu open source firmy Microsoft w witrynie GitHub](https://github.com/Microsoft)  
-[Przykłady programu Visual Studio](../ide/visual-studio-samples.md)  
-[Przykłady kodu dewelopera](https://code.msdn.microsoft.com/)
+- [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)
+- [Repozytoria typu open source firmy Microsoft w witrynie GitHub](https://github.com/Microsoft)
+- [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)
+- [Przykłady kodu dewelopera](https://code.msdn.microsoft.com/)

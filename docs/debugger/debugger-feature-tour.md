@@ -1,6 +1,6 @@
 ---
-title: Debuger programu Visual Studio samouczek funkcji - | Dokumentacja firmy Microsoft
-description: Przewodnik po debuger programu Visual Studio
+title: Pierwsze spojrzenie na debugera
+description: Zająć krótki przegląd różnych funkcji debuger programu Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Szybki Start: Pierwsze spojrzenie na debuger programu Visual Studio
+# <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debuger programu Visual Studio
 
 W tym temacie przedstawiono funkcje debugera programu Visual Studio. Jeśli chcesz z niego skorzystać, otwierając własną aplikację w programie Visual Studio, możesz to zrobić, lub można skorzystać z przykładowych aplikacji przy użyciu [przewodnik dla początkujących](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Podczas debugowania, kliknij prawym przyciskiem myszy obiekt, a następnie wybie
 
 ![Okno czujki](../debugger/media/dbg-tour-watch-window.png "okno czujki")
 
-W tym przykładzie ma czujki, ustawiać `File` obiekt, aby sprawdzić jego wartość zmienić podczas przeglądania przez debuger. W przeciwieństwie do innych zmiennych systemu windows **czujki** systemu windows zawsze pokazuj zmienne możesz obserwowanie (one jest wyszarzona kiedy poza zakresem).
+W tym przykładzie ma czujki, ustawiać `f` obiekt, aby sprawdzić jego wartość zmienić podczas przeglądania przez debuger. W przeciwieństwie do innych zmiennych systemu windows **czujki** systemu windows zawsze pokazuj zmienne możesz obserwowanie (one jest wyszarzona kiedy poza zakresem).
 
 Aby uzyskać więcej informacji, zobacz [ustawić czujki, przy użyciu czujki i QuickWatch systemu Windows](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Można znaleźć i wyświetlić migawki za pomocą **krok do tyłu** i **krok do
 
 Aby uzyskać więcej informacji, zobacz [wyświetlić migawki IntelliTrace krok zwrotnego pomocą](../debugger/how-to-use-intellitrace-step-back.md) strony.
 
-## <a name="more-features-to-look-at"></a>Więcej funkcji, aby przyjrzeć się
+## <a name="next-steps"></a>Następne kroki
 
--   [Debuger porady i wskazówki](../debugger/debugger-tips-and-tricks.md) Dowiedz się, jak zwiększyć wydajność pracy z debugera.
+W tym samouczku już wcześniej krótki przegląd wiele funkcji debugera. Możesz przeglądać więcej informacji na temat tych funkcji za pomocą przykładowej aplikacji
 
--   [Edytuj i Kontynuuj](../debugger/edit-and-continue.md) dla podzbioru języków (C#, C++, Visual Basic), funkcja Edytuj i Kontynuuj umożliwia edytowanie kodu w trakcie sesji debugowania.
-
--   [Debuguj aplikacje wielowątkowe](../debugger/debug-multithreaded-applications-in-visual-studio.md) opisano, jak można debugować aplikacji wielowątkowych. 
-
--   [Zdalne debugowanie](../debugger/remote-debugging.md) opisano, jak można debugować aplikacje działające na innych komputerach lub urządzeniach. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) zawiera opis funkcji IntelliTrace w Visual Studio Enterprise. Służy on do rejestrowania i śledzenia historii wykonywania kodu.
-
--   [Użycie sieci](../profiling/network-usage.md) opisuje profilowania narzędzie, które umożliwia debugowanie usług sieci web i innych zasobów sieciowych w systemie Windows aplikacji Uniwersalnej. Narzędzie do sprawdzenia ładunków.
-
--   [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) opisuje debugowania programu Microsoft interfejsu dostępu Software Development Kit (DIA SDK). DIA SDK udostępnia informacje przechowywane w plikach bazy danych (.pdb) program wygenerowany przez Microsoft postcompiler narzędzia debugowania.  
-
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie w programie Visual Studio](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Naucz się debugować przy użyciu programu Visual Studio](../debugger/getting-started-with-the-debugger.md)

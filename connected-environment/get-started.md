@@ -1,18 +1,19 @@
 ---
 title: Utwórz Środowisko deweloperskie z kontenerami przy użyciu Kubernetes w chmurze | Dokumentacja firmy Microsoft
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Szybkie opracowywanie Kubernetes z kontenerów i mikrousług na platformie Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, containers
-manager: ghogen
-ms.openlocfilehash: ebbea0c4d571fb1c273d2f121a82e545b74ba5d6
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: f0861604ccff8ade8204c4129f0ffee689908f3a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-vs-connected-environment"></a>Rozpoczynanie pracy w środowisku połączonych VS
 

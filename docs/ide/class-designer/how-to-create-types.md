@@ -1,9 +1,8 @@
 ---
-title: 'Porady: Tworzenie typów za pomocą projektanta klas | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Porady: tworzenie typów za pomocą Projektanta klas'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -20,83 +19,79 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22260ee75a1c64de842da41b292fbeebeb6cf6ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d59c158bf8f532fa73a4eb2c22309218f80718e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
-Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utworzyć na diagramie klas. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów](how-to-view-existing-types.md).  
-  
--   [Utwórz nowy typ](#CreateType)  
-  
--   [Zastosuj do typu atrybutu niestandardowego](#CustAttributeType)  
-  
--   [Zastosuj atrybut niestandardowy do elementu członkowskiego typu](#CustAttributeMember)  
-  
-##  <a name="CreateType"></a> Utwórz nowy typ  
-  
-1.  W przyborniku, w obszarze Projektanta klas przeciągnij jeden z nich do diagramu klasy:  
-  
-    -   **Klasa** lub **klasy abstrakcyjnej**  
-  
-    -   **Enum**  
-  
-    -   **Interface**  
-  
-    -   **Struktura** (VB) lub **struktury** (C#)  
-  
-    -   **Delegat**  
-  
-    -   **Moduł** (tylko VB)  
-  
-2.  Nadaj nazwę typowi. Następnie wybierz jego poziom dostępu.  
-  
-3.  Wybierz plik, do którego chcesz dodać kod początkowy dla typu:  
-  
-    -   Aby utworzyć nowy plik i dodać ją do bieżącego projektu, zaznacz **Utwórz nowy plik** i nazwę pliku.  
-  
-    -   Aby dodać kod do istniejącego pliku, wybierz **dodać do istniejącego pliku**.  
-  
-         Jeśli rozwiązanie zawiera projekt, który udostępnia kod wielu aplikacjom, możesz dodać nowy typ do diagramu klas do projektu aplikacji, ale tylko jeśli odpowiedni plik klasa znajduje się w tym samym projekcie aplikacji lub znajduje się w projekcie udostępnionym.  
-  
-4.  Teraz dodaj inne elementy, aby zdefiniować typ:  
-  
-    |||  
-    |-|-|  
-    |**dla**|**Dodaj**|  
-    |Klasy, klasy abstrakcyjne, struktury i obiekty struct|Metody, właściwości, pola, zdarzenia, konstruktory (metoda), destruktory (metoda) i stałe, które określają typ|  
-    |Wyliczenia|Wartości pól, które tworzą wyliczenie|  
-    |Interfejsy|Metody, właściwości i zdarzenia, które tworzą interfejs|  
-    |Delegate|Parametry, które definiują obiekt delegowany|  
-    |Moduł|Metody, właściwości, pola, zdarzenia, konstruktory (metoda) i stałe, które określają moduł|  
-  
-     Zobacz [tworzenia elementów członkowskich](creating-and-configuring-type-members.md#CreateMembers).  
-  
-##  <a name="CustAttributeType"></a> Zastosuj do typu atrybutu niestandardowego  
-  
-1.  Kliknij typ kształtu na diagramie klasy.  
-  
-2.  W oknie właściwości obok **atrybuty niestandardowe** właściwości dla typu, kliknij przycisk wielokropka (...).  
-  
-3.  Dodaj jeden lub więcej atrybutów niestandardowych, jeden na wiersz. Nie otaczaj ich nawiasami kwadratowymi.  
-  
-     Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.  
-  
-##  <a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu  
-  
-1.  Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.  
-  
-2.  W oknie właściwości można znaleźć elementu członkowskiego **atrybuty niestandardowe** właściwości.  
-  
-3.  Dodaj jeden lub więcej atrybutów niestandardowych, jeden na wiersz. Nie otaczaj ich nawiasami kwadratowymi.  
-  
-     Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.  
-  
+# <a name="how-to-create-types-by-using-class-designer"></a>Porady: Tworzenie typów za pomocą projektanta klas
+
+Projektowanie nowych typów języka C# i Visual Basic, projekty, należy je utworzyć na diagramie klas. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów](how-to-view-existing-types.md).
+
+##  <a name="CreateType"></a> Utwórz nowy typ
+
+1.  W **przybornika**w obszarze **Projektant klas**, przeciągnij je do diagramu klas:
+
+    -   **Klasa** lub **klasy abstrakcyjnej**
+
+    -   **Enum**
+
+    -   **Interface**
+
+    -   **Struktura** (VB) lub **struktury** (C#)
+
+    -   **Delegate**
+
+    -   **Moduł** (tylko VB)
+
+2.  Nadaj nazwę typowi. Następnie wybierz jego poziom dostępu.
+
+3.  Wybierz plik, do którego chcesz dodać kod początkowy dla typu:
+
+    -   Aby utworzyć nowy plik i dodać ją do bieżącego projektu, zaznacz **Utwórz nowy plik** i nazwę pliku.
+
+    -   Aby dodać kod do istniejącego pliku, wybierz **dodać do istniejącego pliku**.
+
+         Jeśli rozwiązanie zawiera projekt, który udostępnia kod wielu aplikacjom, możesz dodać nowy typ do diagramu klas do projektu aplikacji, ale tylko jeśli odpowiedni plik klasa znajduje się w tym samym projekcie aplikacji lub znajduje się w projekcie udostępnionym.
+
+4.  Teraz dodaj inne elementy, aby zdefiniować typ:
+
+    |||
+    |-|-|
+    |**dla**|**Dodaj**|
+    |Klasy, klasy abstrakcyjne, struktury i obiekty struct|Metody, właściwości, pola, zdarzenia, konstruktory (metoda), destruktory (metoda) i stałe, które określają typ|
+    |Wyliczenia|Wartości pól, które tworzą wyliczenie|
+    |Interfejsy|Metody, właściwości i zdarzenia, które tworzą interfejs|
+    |Delegate|Parametry, które definiują obiekt delegowany|
+    |Moduł|Metody, właściwości, pola, zdarzenia, konstruktory (metoda) i stałe, które określają moduł|
+
+     Zobacz [tworzenia elementów członkowskich](creating-and-configuring-type-members.md#create-members).
+
+##  <a name="CustAttributeType"></a> Zastosuj do typu atrybutu niestandardowego
+
+1.  Kliknij typ kształtu na diagramie klasy.
+
+2.  W **właściwości**obok pola **atrybuty niestandardowe** właściwości dla typu, kliknij przycisk wielokropka (...).
+
+3.  Dodaj jeden lub więcej atrybutów niestandardowych, jeden na wiersz. Nie otaczaj ich nawiasami kwadratowymi.
+
+     Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.
+
+##  <a name="CustAttributeMember"></a> Zastosuj atrybut niestandardowy do elementu członkowskiego typu
+
+1.  Kliknij nazwę składowej w jej kształcie typu na diagramie klasy lub kliknij jej wiersz w oknie Szczegóły klasy.
+
+2.  W **właściwości**, Znajdź element członkowski **atrybuty niestandardowe** właściwości.
+
+3.  Dodaj jeden lub więcej atrybutów niestandardowych, jeden na wiersz. Nie otaczaj ich nawiasami kwadratowymi.
+
+     Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.
+
 ## <a name="see-also"></a>Zobacz także
-[Porady: Tworzenie dziedziczenia pomiędzy typami](how-to-create-inheritance-between-types.md)  
-[Porady: Tworzenie skojarzenia między typami](how-to-create-associations-between-types.md)
-[tworzenie i konfigurowanie typów członków](creating-and-configuring-type-members.md)   
-[Praca z diagramami klas](working-with-class-diagrams.md)   
-[Projektowanie klas i typów](designing-classes-and-types.md)
+
+- [Porady: Tworzenie dziedziczenia pomiędzy typami](how-to-create-inheritance-between-types.md)
+- [Porady: Tworzenie skojarzenia między typami](how-to-create-associations-between-types.md)
+- [Tworzenie i konfigurowanie składowych typu](creating-and-configuring-type-members.md)
+- [Praca z diagramami klas](working-with-class-diagrams.md)
+- [Projektowanie klas i typów](designing-and-viewing-classes-and-types.md)
