@@ -1,7 +1,9 @@
 ---
-title: 'Porady: tworzenie warunku reguły deklaratywne (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — jak: utworzyć warunek reguły deklaratywne (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Porady: tworzenie warunku reguły deklaratywne (starsze)
-W tym temacie opisano sposób zadeklarować warunek reguły za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows, którego element docelowy [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Instrukcja warunku daje w wyniku **True** lub **False**. Warunek reguły deklaratywne jest instrukcja warunku, który jest tworzony przy użyciu [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) i przechowywane w formacie XML z przepływem pracy. Może uwzględniać predykaty porównana stanu przepływu pracy i algebraiczną Boolean, łączącą wielu predykatów.
+W tym temacie opisano, jak zadeklarować warunek reguły przy użyciu projektanta przepływów pracy programu starszej wersji systemu Windows, którego element docelowy .NET Framework w wersji 3.5 lub WinFX.
 
- Warunki reguły deklaratywne są używane w następujących działań out-of-box Windows Workflow Foundation:
+Instrukcja warunku daje w wyniku **True** lub **False**. Warunek reguły deklaratywne jest instrukcja warunku, który jest tworzony przy użyciu [okno dialogowe Edytor warunku reguły (starsze)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) i przechowywane w formacie XML z przepływem pracy. Może uwzględniać predykaty porównana stanu przepływu pracy i algebraiczną Boolean, łączącą wielu predykatów.
+
+Warunki reguły deklaratywne są używane w następujących działań out-of-box Windows Workflow Foundation:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ W tym temacie opisano sposób zadeklarować warunek reguły za pomocą projektan
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Aby utworzyć warunek reguły deklaratywne przy użyciu Edytor warunku reguły
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Aby utworzyć warunek reguły deklaratywne przy użyciu Edytor warunku reguły
 
 1.  W działaniu **właściwości** okna, kliknij przycisk **warunku** właściwości lub **UntilCondition** właściwości, w zależności od działania.
 

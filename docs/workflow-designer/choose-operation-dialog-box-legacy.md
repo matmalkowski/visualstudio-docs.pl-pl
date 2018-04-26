@@ -1,7 +1,9 @@
 ---
-title: Wybierz operację, okno dialogowe (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — wybierz operację, okno dialogowe (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Design.OperationPickerDialog.UI
 ms.assetid: bc3ec902-7797-494e-af48-e70c97eb6779
@@ -10,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4bd8318c4b10dab878ffd96667ce7057e653ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fed4353771edc5f9cc1bb239424b0e7015acd84a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Wybierz operację, okno dialogowe (starsze)
 
-W tym temacie opisano sposób użycia **wybierz operację** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+W tym temacie opisano sposób użycia **wybierz operację** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
  **Wybierz operacji** okno dialogowe służy do wybierania operacji do skojarzenia z <xref:System.Workflow.Activities.ReceiveActivity> działania lub <xref:System.Workflow.Activities.SendActivity> działania. Aby uzyskać więcej informacji o korzystaniu z tego okna dialogowego z tych działań, zobacz [jak: Implementowanie operacja kontraktu usługi WCF (starsze)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) i [jak: wywołaj operację kontraktu usługi WCF (starsze)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).
 

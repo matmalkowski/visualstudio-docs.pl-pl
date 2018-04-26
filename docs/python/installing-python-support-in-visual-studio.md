@@ -1,6 +1,6 @@
 ---
 title: Instalowanie obsługi języka Python
-description: Szczegółowe instrukcje dotyczące sposobu instalowania narzędzi Python Tools dla programu Visual Studio (PTVS) w Visual Studio 2017 r. 2015, 2013, 2012 i 2010, łącznie z opcjami i lokalizację instalacji.
+description: Jak zainstalować narzędzia Python Tools dla programu Visual Studio (PTVS) w Visual Studio 2017 r. 2015, 2013, 2012 i 2010, łącznie z opcjami i lokalizację instalacji.
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a998a2a62915d1ce998e30202f4b4fd0838975a3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalowanie obsługi języka Python w programie Visual Studio w systemie Windows
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio w systemie Windows
 
 Aby zainstalować obsługę języka Python dla programu Visual Studio (znanej także jako narzędzi Python Tools for Visual Studio lub PTVS), postępuj zgodnie z instrukcjami w sekcji odpowiadający posiadanej wersji programu Visual Studio:
 

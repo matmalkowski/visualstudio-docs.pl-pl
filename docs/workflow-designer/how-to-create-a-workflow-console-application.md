@@ -1,29 +1,32 @@
 ---
-title: 'Porady: tworzenie aplikacji Konsolowej przepływu pracy | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: tworzenie aplikacji Konsolowej przepływu pracy'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6461a644bdedd3d391059cd8a3a17f887e77c6b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Porady: tworzenie aplikacji Konsolowej przepływu pracy
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] Służy do tworzenia przepływów pracy dla wykonywania systemu lub człowieka procesów. Projektant przepływu pracy systemu Windows zapewnia powierzchnię projektu do tworzenia tych przepływów pracy. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Może służyć do tworzenia przepływów pracy za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub może być zintegrowane do innych aplikacji, które rehost projektanta.
 
- W tym temacie opisano sposób użycia [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] do tworzenia przepływu pracy w aplikacji konsoli.
+Windows Workflow Foundation (WF) służy do tworzenia przepływów pracy dla wykonywania systemu lub człowieka procesów. Projektant przepływu pracy systemu Windows zapewnia powierzchnię projektu do tworzenia tych przepływów pracy. Projektanta przepływów pracy można używać do tworzenia przepływów pracy z poziomu programu Visual Studio lub może być zintegrowany inne aplikacje, które rehost projektanta.
 
-### <a name="to-create-a-workflow-console-application"></a>Do tworzenia aplikacji konsolowej przepływu pracy
+W tym temacie opisano, jak za pomocą projektanta przepływów pracy programu Visual Studio 2010 tworzenia przepływu pracy w aplikacji konsoli.
 
-1.  Uruchom [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+## <a name="to-create-a-workflow-console-application"></a>Do tworzenia aplikacji konsolowej przepływu pracy
 
-2.  Na **pliku** menu wskaż **nowy**, a następnie wybierz **projektu...** .
+1.  Uruchom program Visual Studio 2010.
+
+2.  Na **pliku** menu wskaż **nowy**, a następnie wybierz **projektu**.
 
      **Nowy projekt** zostanie otwarte okno dialogowe.
 
@@ -38,9 +41,9 @@ ms.lasthandoff: 04/16/2018
 7.  W **rozwiązania** wprowadź nazwę dla nowego rozwiązania. Kliknij przycisk **OK** do tworzenia aplikacji.
 
     > [!NOTE]
-    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie **Nowy projekt...** otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
+    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w programie Visual Studio 2010, kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt** otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
 
-8.  Szablon projektu służy do tworzenia definicji przepływu pracy w języku XAML i definicji aplikacji konsoli jest w kodzie źródłowym. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Otwiera i wyświetla obszar roboczy utworzony przepływ pracy.
+8.  Szablon projektu służy do tworzenia definicji przepływu pracy w języku XAML i definicji aplikacji konsoli jest w kodzie źródłowym. Projektant przepływu pracy otwiera i wyświetla obszar roboczy dla przepływu pracy, który został utworzony.
 
 9. Utworzenie przepływu pracy, przeciągnij działania lub innych elementów przepływu pracy z **przybornika** na powierzchnię projektu w przepływie pracy.
 

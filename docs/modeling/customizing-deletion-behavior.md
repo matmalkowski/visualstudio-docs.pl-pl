@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0461ff028925081285dafdc4f782b7c58c28a32c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9942d9903188785af1658a37515092c3ce1ad2dd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usunięcie elementu zwykle powoduje, że powiązanych elementów do usunięcia również. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne zostaną usunięte. To zachowanie jest o nazwie *usunąć propagacji*. Można dostosować propagacji delete, na przykład ułożyć, że dodatkowe powiązane elementy są usuwane. Pisanie kodu programu, możesz wprowadzić propagacji delete są zależne od stanu modelu. Może również spowodować inne zmiany w odpowiedzi do usunięcia.

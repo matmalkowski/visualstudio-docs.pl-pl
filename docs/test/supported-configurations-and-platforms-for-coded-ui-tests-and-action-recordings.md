@@ -1,8 +1,9 @@
 ---
-title: Konfiguracje oraz platformy kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika w programie Visual Studio
 ms.date: 2015-10-04
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
@@ -10,18 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 82d44d08353ed048ff51c90ea9a4b5c061a2dc2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 
 W poniższej tabeli wymieniono obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika dla programu Visual Studio Enterprise. Te konfiguracje mają zastosowanie również do rejestrowania akcji utworzone za pomocą [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)].
 
 > [!NOTE]
->  Proces kodowanego testu interfejsu użytkownika musi mieć takie same uprawnienia, jak aplikacja poddawana testom.
+> Proces kodowanego testu interfejsu użytkownika musi mieć takie same uprawnienia, jak aplikacja poddawana testom.
+
 
  **Wymagania**
 
@@ -37,7 +39,8 @@ W poniższej tabeli wymieniono obsługiwane konfiguracje oraz platformy zakodowa
 |.NET|.NET 2.0, 3.0, 3.5, 4 i 4.5. **Uwaga:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] zarówno programu Visual Studio będzie wymagać .NET 4 do działania. Jednak aplikacje opracowane za pomocą wymienionych wersji środowiska .NET są obsługiwane.|
 
 > [!NOTE]
->  *Interfejs użytkownika synchronizacji* to funkcja, której odtwarzanie jest weryfikowana w kolejce wiadomości każdej kontrolki. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.
+> *Interfejs użytkownika synchronizacji* to funkcja, której odtwarzanie jest weryfikowana w kolejce wiadomości każdej kontrolki. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.
+
 
 ## <a name="platform-support"></a>Obsługa platformy
 

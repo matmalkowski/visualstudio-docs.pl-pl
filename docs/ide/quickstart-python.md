@@ -1,44 +1,41 @@
 ---
-title: 'Szybki Start: tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio'
-description: W tego przewodnika Szybki Start możesz użyć programu Visual Studio do tworzenia aplikacji sieci web proste w języku Python przy użyciu platformy Flask.
-ms.custom: mvc
+title: 'Szybki Start: tworzenie aplikacji sieci web języka Python za pomocą programu Visual Studio'
+description: W tego przewodnika Szybki Start możesz użyć programu Visual Studio i platformy Flask do tworzenia aplikacji sieci web proste w języku Python.
 ms.date: 03/21/2018
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
-dev_langs:
-- python
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 3c57dab3ac6ca4ee28b568a6fb8004f5559dfed2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web języka Python
+# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web platformy Python za pomocą programu Visual Studio
 
 To 5 – 10 min wprowadzenie do programu Visual Studio jako IDE języka Python utworzysz prostą aplikację sieci web języka Python w ramach struktury platformy Flask. Tworzenie projektu za pomocą odrębny kroki, które ułatwiają Dowiedz się więcej o podstawowych funkcji programu Visual Studio.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) bezpłatnie go zainstalować. W Instalatorze, upewnij się wybrać **programowania Python** obciążenia.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) bezpłatnie go zainstalować. W Instalatorze, upewnij się wybrać **programowania Python** obciążenia.
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
-Poniższe kroki Utwórz pustą *projektu* służy jako kontener dla aplikacji:
+Poniższe kroki, Utwórz pusty projekt, który służy jako kontener dla aplikacji:
 
 1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **Plik > Nowy > Projekt...** .
+1. Na pasku menu u góry wybierz **Plik > Nowy > Projekt**.
 
 1. W **nowy projekt** oknie dialogowym wpisz "Python projekt sieci Web" w polu wyszukiwania w prawym górnym rogu, wybierz **projektu sieci Web** na liście środkowej nadaj nazwę, takie jak "HelloPython" projektu, a następnie wybierz **OK**.
 
     ![Okno dialogowe nowego projektu z projektu sieci Web języka Python wybrane](media/quickstart-python-00-web-project.png)
 
-    Jeśli nie widzisz szablony projektów języka Python, Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **Narzędzia > Pobierz narzędzia i funkcje...**  otworzyć Instalator programu Visual Studio. Wybierz **programowania Python** obciążenia, a następnie wybierz **Modyfikuj**.
+    Jeśli nie widzisz szablony projektów języka Python, Anuluj poza **nowy projekt** okna dialogowego polu, a na pasku menu u góry wybierz pozycję **Narzędzia > Pobierz narzędzia i funkcje** otworzyć **programu Visual Studio Instalator**. Wybierz **programowania Python** obciążenia, a następnie wybierz **Modyfikuj**.
 
     ![Obciążenie programowania Python w Instalatorze programu Visual Studio](../python/media/installation-python-workload.png)
 
@@ -48,15 +45,15 @@ Poniższe kroki Utwórz pustą *projektu* służy jako kontener dla aplikacji:
 
 **Pytanie: Jakie są zalety tworzenia projektu w programie Visual Studio dla aplikacji Python?**
 
-**Odpowiedzi**: Python aplikacje są zazwyczaj definiowane przy użyciu tylko plików i folderów, ale to prostą strukturę może być uciążliwe, jak aplikacje większy i może obejmować automatycznie generowanej pliki JavaScript dla aplikacji sieci web i tak dalej. Projektu programu Visual Studio pomaga zarządzać tym złożoności. Projekt ( `.pyproj` pliku) identyfikuje źródła i pliki zawartości skojarzonej z projektem, zawiera informacje o kompilacji dla każdego pliku przechowuje informacje o integracji z systemami kontroli źródła i pomaga organizować aplikacji do składników logicznych.
+**Odpowiedzi**: Python aplikacje są zazwyczaj definiowane przy użyciu tylko plików i folderów, ale to prostą strukturę może być uciążliwe, jak aplikacje większy i może obejmować automatycznie generowanej pliki JavaScript dla aplikacji sieci web i tak dalej. Projektu programu Visual Studio pomaga zarządzać tym złożoności. Projekt ( *.pyproj* pliku) identyfikuje źródła i pliki zawartości skojarzonej z projektem, zawiera informacje o kompilacji dla każdego pliku przechowuje informacje o integracji z systemami kontroli źródła i pomaga organizowanie na logiczne składniki aplikacji.
 
 **Pytanie: Co to jest "Rozwiązanie" wyświetlany w Eksploratorze rozwiązań?**
 
-**Odpowiedzi**: programu Visual Studio *rozwiązania* jest kontenerem, który ułatwia zarządzanie dla jednego lub więcej projektów powiązanych jako grupa i przechowuje ustawienia konfiguracji, które nie są specyficzne dla projektu. Projekty w rozwiązaniu można także odwoływać siebie, tak, aby uruchamiania jednego projektu (aplikacji Python) automatycznie tworzy drugi projektu (takiej jak rozszerzenie C++ używane w aplikacji Python).
+**Odpowiedzi**: rozwiązanie programu Visual Studio jest kontenerem, który ułatwia zarządzanie dla jednego lub więcej projektów powiązanych jako grupa i przechowuje ustawienia konfiguracji, które nie są specyficzne dla projektu. Projekty w rozwiązaniu można także odwoływać siebie, tak, aby uruchamiania jednego projektu (aplikacji Python) automatycznie tworzy drugi projektu (takiej jak rozszerzenie C++ używane w aplikacji Python).
 
 ## <a name="install-the-flask-library"></a>Zainstaluj biblioteki platformy Flask
 
-Aplikacje sieci Web w języku Python prawie zawsze używa jednego z wielu dostępnych bibliotek języka Python do obsługi szczegółów niskiego poziomu, takich jak routing żądań sieci web i kształtowania odpowiedzi. W tym celu program Visual Studio oferuje szeroką gamę *szablony* dla aplikacji sieci web, z których jedna używasz w dalszej części tego przewodnika Szybki Start.
+Aplikacje sieci Web w języku Python prawie zawsze używa jednego z wielu dostępnych bibliotek języka Python do obsługi szczegółów niskiego poziomu, takich jak routing żądań sieci web i kształtowania odpowiedzi. W tym celu program Visual Studio oferuje różne szablony dla aplikacji sieci web, z których jedna używasz w dalszej części tego przewodnika Szybki Start.
 
 W tym miejscu umożliwia następujące kroki instalowania biblioteki platformy Flask do domyślnego "globalnego środowiska" używającej dla tego projektu programu Visual Studio.
 
@@ -64,9 +61,9 @@ W tym miejscu umożliwia następujące kroki instalowania biblioteki platformy F
 
     ![Eksploratora rozwiązań przedstawiający domyślnego środowiska](media/quickstart-python-02-default-environment.png)
 
-1. Kliknij prawym przyciskiem myszy środowisko i wybierz **zainstaluj pakiet języka Python...** . To polecenie powoduje otwarcie **środowiska Python** okno na **pakiety** kartę.
+1. Kliknij prawym przyciskiem myszy środowisko i wybierz **zainstaluj pakiet języka Python**. To polecenie powoduje otwarcie **środowiska Python** okno na **pakiety** kartę.
 
-1. W polu wyszukiwania wprowadź "flask" i wybierz **pip zainstalować flask z PyPI**. Zaakceptuj wszystkie wyświetla monit o uprawnienia administratora i obserwować **dane wyjściowe** okna w programie Visual Studio dla postępu. (Monit podniesienia uprawnień spowodowany folder pakietów globalnego środowiska znajduje się w obszarze chronionym jak `c:\program files`.)
+1. W polu wyszukiwania wprowadź "flask" i wybierz **pip zainstalować flask z PyPI**. Zaakceptuj wszystkie wyświetla monit o uprawnienia administratora i obserwować **dane wyjściowe** okna w programie Visual Studio dla postępu. (Monit podniesienia uprawnień spowodowany folder pakietów globalnego środowiska znajduje się w obszarze chronionym jak *C:\Program Files*.)
 
     ![Instalowanie biblioteki platformy Flask](media/quickstart-python-03-install-package.png)
 
@@ -79,17 +76,17 @@ W tym miejscu umożliwia następujące kroki instalowania biblioteki platformy F
 
 **Pytanie: Gdzie dowiedzieć się więcej na temat innych dostępnych pakietów języka Python?**
 
-**Odpowiedzi**: odwiedź [indeksu pakietów języka Python](https://pypi.org/) (pypi.org).
+**Odpowiedzi**: odwiedź [indeksu pakietów języka Python](https://pypi.python.org/pypi).
 
 ## <a name="add-a-code-file"></a>Dodawanie plików kodu
 
 Teraz możesz dodać bitowego kodu języka Python do wdrożenia aplikacji sieci web minimalny.
 
-1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj > Nowy element...** .
+1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj > Nowy element**.
 
-1. W wyświetlonym oknie dialogowym wybierz **pusty plik Python**, nadaj jej nazwę `app.py`i wybierz **Dodaj**. Visual Studio automatycznie otwiera plik w oknie edytora.
+1. W wyświetlonym oknie dialogowym wybierz **pusty plik Python**, nadaj jej nazwę *app.py*i wybierz **Dodaj**. Visual Studio automatycznie otwiera plik w oknie edytora.
 
-1. Skopiuj poniższy kod i wklej ją do `app.py`:
+1. Skopiuj poniższy kod i wklej ją do *app.py*:
 
     ```python
     from flask import Flask
@@ -114,27 +111,27 @@ Teraz możesz dodać bitowego kodu języka Python do wdrożenia aplikacji sieci 
         app.run('localhost', 4449)
     ```
 
-1. Można zauważyć, że **Dodaj > Nowy element...**  okno dialogowe zawiera wiele innych typów plików, które można dodać do projektu języka Python, włączając klasy języka Python, pakiet języka Python, testu jednostkowego języka Python i plikach web.config. Ogólnie rzecz biorąc te *elementu szablony*, jak są nazywane, to doskonały sposób, aby szybko utworzyć pliki przydatne schematyczny kod.
+1. Można zauważyć, że **Dodaj > Nowy element** wiele innych typów plików, które można dodać do projektu języka Python, takich jak klasy języka Python, pakiet języka Python, testu jednostkowego języka Python, wyświetla okno dialogowe *web.config* pliki i inne. Ogólnie rzecz biorąc te szablony elementów, jak są nazywane, są to dobry sposób na szybkie tworzenie plików przydatne schematyczny kod.
 
 **Pytanie: Gdzie można dowiedzieć się więcej na temat platformy Flask?**
 
-**Odpowiedzi**: można znaleźć w dokumentacji platformy Flask, począwszy od [szybkiego startu Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
+**Odpowiedzi**: można znaleźć w dokumentacji platformy Flask, począwszy od [szybkiego startu Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Kliknij prawym przyciskiem myszy `app.py` w **Eksploratora rozwiązań** i wybierz **Ustaw jako plik uruchamiania**. To polecenie Określa plik kodu, można uruchomić w języku Python podczas uruchamiania aplikacji.
+1. Kliknij prawym przyciskiem myszy *app.py* w **Eksploratora rozwiązań** i wybierz **Ustaw jako plik uruchamiania**. To polecenie Określa plik kodu, można uruchomić w języku Python podczas uruchamiania aplikacji.
 
     ![Ustawienie pliku uruchomienia projektu w Eksploratorze rozwiązań](media/quickstart-python-05-set-as-startup-file.png)
 
 1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**. Następnie wybierz **debugowania** kartę i ustawić **numer portu** właściwości `4449`. Ten krok zapewnia, że Visual Studio spowoduje uruchomienie przeglądarki z `localhost:4449` odpowiadające `app.run` argumenty w kodzie.
 
-1. Wybierz **Debuguj > Rozpocznij bez debugowanie** (Ctrl + F5), który zapisuje zmiany do plików i uruchamia aplikację.
+1. Wybierz **Debuguj > Uruchom bez debugowania** (**Ctrl**+**F5**), który zapisuje zmiany do plików i aplikacji.
 
 1. Okno polecenia pojawi się komunikat o "* uruchomionych w https://localhost:4449/", a oknie przeglądarki powinien zostać otwarty do `localhost:4449` w przypadku, gdy zostanie wyświetlony komunikat "Hello, Python!" Żądanie GET jest także wyświetlany w oknie wiersza polecenia z stanu 200.
 
     Jeśli przeglądarce nie zostanie uruchomiony automatycznie, uruchom wybraną przeglądarkę i przejdź do `localhost:4449`.
 
-    Jeśli zostanie wyświetlony tylko Python interakcyjne powłoki w oknie wiersza polecenia lub okno miga na ekranie krótko, upewnij się, że ustawiona `app.py` jako plik uruchamiania w kroku 1.
+    Jeśli zostanie wyświetlony tylko Python interakcyjne powłoki w oknie wiersza polecenia lub okno miga na ekranie krótko, upewnij się, że ustawiona *app.py* jako plik uruchamiania w kroku 1.
 
 1. Przejdź do `localhost:4449/hello` do przetestowania, czy dekoratora dla `/hello` działa także zasobów. Żądanie GET zostanie wyświetlony ponownie, w oknie wiersza polecenia ze stanem 200. Możesz spróbować niektóre inne również adres URL, aby sprawdzić, czy przedstawiają 404 kodów stanu w oknie wiersza polecenia.
 
@@ -148,7 +145,7 @@ Teraz możesz dodać bitowego kodu języka Python do wdrożenia aplikacji sieci 
 
 Gratulujemy programem pierwszej aplikacji Python z programu Visual Studio, w których znasz nieco jako IDE języka Python za pomocą programu Visual Studio!
 
-Ponieważ kroki, które należy przestrzegać w tego przewodnika Szybki Start są dość ogólny, prawdopodobnie zostały odgadnąć może i powinno zostać zautomatyzowane. Takie automatyzacji to rola programu Visual Studio *szablony projektu*. Kliknij przycisk poniżej do pokazania, która tworzy aplikację sieci web podobny do tego, który został utworzony w tym artykule, ale przy użyciu mniejszej liczby kroków.
+Ponieważ kroki, które należy przestrzegać w tego przewodnika Szybki Start są dość ogólny, prawdopodobnie zostały odgadnąć może i powinno zostać zautomatyzowane. Takie automatyzacji jest rola szablony projektu Visual Studio. Kliknij przycisk poniżej do pokazania, która tworzy aplikację sieci web podobny do tego, który został utworzony w tym artykule, ale przy użyciu mniejszej liczby kroków.
 
 > [!div class="nextstepaction"]
 > [Szybki Start — tworzenie za pomocą szablonu projektu języka Python](../python/quickstart-02-python-in-visual-studio-project-from-template.md)

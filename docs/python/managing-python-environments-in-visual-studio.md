@@ -1,6 +1,6 @@
 ---
-title: Jak zarządzać środowiska Python i tłumaczy
-description: Jak używać okno środowiska Python w Visual Studio, aby zarządzać globalne i środowisk wirtualnych, konfigurowanie niestandardowych środowisk, instalowania tłumaczy Python, instalowanie pakietów, ustawianie ścieżki wyszukiwania i zarządzania środowiskami dla projektów programu Visual Studio.
+title: Zarządzanie środowiska Python i tłumaczy
+description: Użyj okno środowiska Python, aby zarządzać globalnych, wirtualne i środowisk conda, zainstalować tłumaczy Python i pakietów i przypisywanie środowisk do projektów programu Visual Studio.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>Zarządzanie środowiska Python w programie Visual Studio
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiska Python w programie Visual Studio
 
 Python *środowiska* jest kontekst, w którym można uruchomić kod języka Python i zawiera globalny, wirtualne i środowisk conda. Środowisko składa się z tłumacza, biblioteki (zazwyczaj Python standardowa biblioteka) i zestaw zainstalowanych pakietów. Te składniki wspólnie określają, które konstrukcji języka i składni są prawidłowe, jakiego systemu operacyjnego funkcje są dostępne, a które pakietów, należy użyć.
 

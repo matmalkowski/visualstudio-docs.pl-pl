@@ -1,7 +1,9 @@
 ---
-title: 'Porady: Tworzenie zestawu reguł działania PolicyActivity (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Tworzenie zestawu reguł działania PolicyActivity (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
 - Rule Set Editor dialog box
@@ -14,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57142fc21bc9db03a338f20a27e20b8af51b48cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Porady: Tworzenie zestawu reguł działania PolicyActivity (starsze)
 
-W tym temacie opisano sposób tworzenia działania reguły ustawić za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows, którego element docelowy [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+W tym temacie opisano sposób tworzenia działania reguły ustawić za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows, którego element docelowy .NET Framework w wersji 3.5 lub WinFX.
 
  Po przeciągnięciu **zasad** elementu działania z **przybornika** na powierzchnię projektu przepływu pracy można wybrać istniejącą regułę lub utworzyć nową regułę, ustaw dla [działania PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) działania. Wybierz istniejącą regułę skonfigurowane za pomocą [reguły ustawić okno dialogowe Wybieranie (starsze)](../workflow-designer/select-rule-set-dialog-box-legacy.md) i utworzyć zestawy reguł za pomocą [reguły ustawić okno dialogowe Edytor (starsze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!NOTE]
 > Możesz otworzyć [reguły ustawić okno dialogowe Edytor (starsze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) okno dialogowe bezpośrednio przez dwukrotne kliknięcie [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) działanie, które znajduje się na powierzchnię projektu przepływu pracy.
 
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Aby wybrać lub utworzyć zestaw reguł dla działania działania PolicyActivity
+## <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Aby wybrać lub utworzyć zestaw reguł dla działania działania PolicyActivity
 
 1.  Kliknij prawym przyciskiem myszy [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), a następnie kliknij przycisk **właściwości** otworzyć **właściwości** okna.
 

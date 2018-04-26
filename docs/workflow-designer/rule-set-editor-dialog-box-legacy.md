@@ -1,7 +1,9 @@
 ---
-title: Okno dialogowe Edytor (starsze) zestawu reguł | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — okno dialogowe Edytor (starsze) zestawu reguł
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Okno dialogowe Edytor (starsze) zestawu reguł
-W tym temacie opisano sposób użycia **Edytor ustawić reguły** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Edytor ustawić reguły** okno dialogowe służy do tworzenia i modyfikowania [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) zestawy, które są serializowane w pliku Rules reguły.
+W tym temacie opisano sposób użycia **Edytor ustawić reguły** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
+
+**Edytor ustawić reguły** okno dialogowe służy do tworzenia i modyfikowania [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) zestawy, które są serializowane w pliku Rules reguły.
 
 > [!NOTE]
 > Jeśli chcesz otworzyć plik Rules o **Edytor XML z kodowaniem**, należy najpierw zamknąć skojarzone okna Projektanta dla przepływu pracy lub działania.
 
- Informacje na temat dostępu do **Edytor ustawić reguły** okno dialogowe, zobacz [porady: tworzenie działania PolicyActivity zestawu reguł (starsze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Informacje na temat dostępu do **Edytor ustawić reguły** okno dialogowe, zobacz [porady: tworzenie działania PolicyActivity zestawu reguł (starsze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> W edytorze zasad starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] używany docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] nie obsługuje przeznaczanie dla wielu platform.
+> W edytorze zasad starszych projektanta przepływów pracy służący do docelowego .NET Framework w wersji 3.5 lub WinFX nie obsługuje przeznaczanie dla wielu platform.
 
- W poniższej tabeli opisano elementy interfejsu użytkownika **Edytor ustawić reguły** okno dialogowe.
+W poniższej tabeli opisano elementy interfejsu użytkownika **Edytor ustawić reguły** okno dialogowe.
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|

@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c0490e69ef63dc109ef0563d27a6412f7b54746
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7b97151ba98a4d854802d96205aefa59fbbdbfac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagację zmiany jednego elementu na inny wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany do dowolnego elementu w magazynie, zasady nie zostały zaplanowane wykonywane zwykle, gdy peryferyjnych transakcja została przekazana. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu, lub usunięcie go. Zasady można dołączyć do określonych typów elementów, kształtów lub diagramy. Wiele wbudowanych funkcji zdefiniowanych przez zasady: na przykład zasady upewnij się, że diagram został zaktualizowany po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.

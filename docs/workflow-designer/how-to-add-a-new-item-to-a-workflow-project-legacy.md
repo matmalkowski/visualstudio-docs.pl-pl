@@ -1,7 +1,9 @@
 ---
-title: 'Porady: Dodawanie nowego elementu do projektu przepływu pracy (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Dodawanie nowego elementu do projektu przepływu pracy (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Porady: Dodawanie nowego elementu do projektu przepływu pracy (starsze)
-Po utworzeniu projektu przepływu pracy przy użyciu starszej wersji projektanta przepływów pracy Windows dostarczonych przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] który dotyczy, albo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], możesz dodać [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] elementów i innych znanych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elementy sieci Projekt.
 
- W poniższej tabeli wymieniono [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] elementy dodane do projektu przepływu pracy.
+Po utworzeniu projektu przepływu pracy za pomocą projektanta przepływów pracy Windows dostępne w programie Visual Studio 2010, który jest przeznaczony dla programu .NET Framework w wersji 3.5 lub WinFX starszego można dodawać elementów Windows Workflow Foundation (WF) i innych znanych Visual Studio elementy do projektu.
+
+W poniższej tabeli wymieniono elementy programu Windows Workflow Foundation, które można dodać do projektu przepływu pracy.
 
 |Element|Opis|
 |----------|-----------------|
@@ -33,7 +36,7 @@ Po utworzeniu projektu przepływu pracy przy użyciu starszej wersji projektanta
 |Przepływ pracy automatu stanów (kod)|Przepływ pracy automatu stanów z definicją przepływu pracy w kodu projektanta pliku i kodem użytkownika w osobnym pliku kodu.|
 |Przepływ pracy automatu stanów (z separacją kodu)|Przepływ pracy automatu stanów z definicją przepływu pracy, wyrażoną w przepływie pracy znaczników i kodem użytkownika w osobnym pliku kodu.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Aby dodać nowy element do projektu przepływu pracy
 
 1.  Na **projektu** menu, kliknij przycisk **Dodaj nowy element**.
 

@@ -1,7 +1,9 @@
 ---
-title: Projektant działań InvokeMethod | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Projektant działań InvokeMethod
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b612966da1244c745edbe8a5c92b1b300554a388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokemethod-activity-designer"></a>Projektant działań InvokeMethod
+
 **InvokeMethod** Projektant służy do tworzenia i konfigurowania <xref:System.Activities.Statements.InvokeMethod> działania.
 
 ## <a name="the-invokemethod-activity"></a>Działanie InvokeMethod
- <xref:System.Activities.Statements.InvokeMethod> Wywołuje publiczną metodę określonego obiektu lub typu.
+
+<xref:System.Activities.Statements.InvokeMethod> Wywołuje publiczną metodę określonego obiektu lub typu.
 
 ### <a name="using-the-invokemethod-activity-designer"></a>Przy użyciu narzędzia Projektant działań InvokeMethod
- **InvokeMethod** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** kartę [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub klawiszy CTRL + ALT + X.)
+ **InvokeMethod** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub klawiszy CTRL + ALT + X.)
 
- **InvokeMethod** Projektant działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni gdziekolwiek działań zwykle są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.InvokeMethod> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **InvokeMethod** Projektant działań lub **DisplayName** pola siatki właściwości.
+ **InvokeMethod** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy w przypadku gdy zabezpieczając działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.InvokeMethod> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **InvokeMethod** Projektant działań lub **DisplayName** pola siatki właściwości.
 
 ### <a name="the-invokemethod-properties"></a>Właściwości InvokeMethod
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeMethod> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre mogą być edytowane [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]powierzchnię projektanta.
+ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeMethod> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre mogą być edytowane na powierzchni Designerdesigner przepływu pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

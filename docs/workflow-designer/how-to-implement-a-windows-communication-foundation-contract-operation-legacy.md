@@ -1,25 +1,28 @@
 ---
-title: 'Porady: Implementowanie systemu Windows Communication Foundation kontrakt operacji (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Implementowanie systemu Windows Communication Foundation kontrakt operacji (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Porady: Implementowanie systemu Windows Communication Foundation kontrakt operacji (starsze)
-W tym temacie opisano sposób wykonania [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] kontraktu operację za pomocą projektanta przepływów pracy starszej wersji systemu Windows, przeznaczonego dla [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Po przeciąganie **ReceiveActivity** działania z przybornika do powierzchni projektu przepływu pracy, albo utworzysz nową [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] kontraktu lub zaimportować istniejący kontrakt i wykonania operacji. Wybierz lub Utwórz umowy i jego operacji za pomocą [wybierz okno dialogowe operacji (starsze)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+W tym temacie opisano, jak do zaimplementowania operacja kontraktu usługi Windows Communication Foundation (WCF), za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows, którego element docelowy .NET Framework w wersji 3.5 lub WinFX.
 
-### <a name="to-implement-a-wcf-contract-operation"></a>Aby zaimplementować operację kontraktu usługi WCF
+Po przeciąganie **ReceiveActivity** działania z przybornika do powierzchni projektu przepływu pracy, albo utworzysz nową [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] kontraktu lub zaimportować istniejący kontrakt i wykonania operacji. Wybierz lub Utwórz umowy i jego operacji za pomocą [wybierz okno dialogowe operacji (starsze)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+
+## <a name="to-implement-a-wcf-contract-operation"></a>Aby zaimplementować operację kontraktu usługi WCF
 
 1.  Kliknij dwukrotnie **ReceiveActivity** działania w projektancie, lub kliknij przycisk wielokropka obok **właściwości ServiceOperationInfo** właściwości w **właściwości** okienka.
 

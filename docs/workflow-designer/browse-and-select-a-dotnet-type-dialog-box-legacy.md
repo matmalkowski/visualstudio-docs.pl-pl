@@ -1,7 +1,9 @@
 ---
-title: Wyszukaj i wybierz typ .NET dialogowe (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Wyszukaj i wybierz typ .NET dialogowe (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23e311aa8e87fe799bc8ea22a22ffd8e789b3dcd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Wyszukaj i wybierz typ .NET dialogowe (starsze)
-W tym temacie opisano sposób użycia **Wyszukaj i wybierz typ .NET** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+W tym temacie opisano sposób użycia **Wyszukaj i wybierz typ .NET** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
  W **właściwości** okna, po wybraniu właściwości, które pobranie typu .NET Framework w przywoływanym zestawie wielokropek **[...]**  pojawia się na końcu właściwości pola tekstowego. Kliknięcie przycisku **[...]**  otwiera **Wyszukaj i wybierz typ .NET** okno dialogowe. W tym oknie można wybrać typu z zestawów występujących w odwołaniach w widoku drzewa. Na przykład, jeśli używasz Projektant działań w **właściwości** okna, kliknij przycisk **klasa podstawowa** wielokropka **[...]**  aby wybrać inną klasę podstawową dla działania z drzewa odwołania do zestawów.
 

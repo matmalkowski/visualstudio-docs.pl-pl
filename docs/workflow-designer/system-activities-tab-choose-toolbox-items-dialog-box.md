@@ -1,7 +1,9 @@
 ---
-title: Karta węzła System.Activities wybierz elementy przybornika — okno dialogowe | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — karta węzła System.Activities wybierz elementy przybornika — okno dialogowe
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
@@ -11,14 +13,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82303d173a3d5a066919f8597e4636d63a005f02
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Karta węzła System.Activities wybierz elementy przybornika — okno dialogowe
-Ta karta **wybierz elementy przybornika** okno dialogowe zostanie wyświetlona lista [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] działań, szablony i elementy dostępne dla Ciebie. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu lub klikając prawym przyciskiem myszy **przybornika** i wybierając **wybierz elementy**do wyświetlenia **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **elementu System.Activities** kartę. Fabrycznej lista zawiera działania przepływu pracy z zestawów węzła System.Activities, System.ServiceModel.Activities i System.Activities.Core.Presentation; jednak tylko dostarczane przez system działania wyświetlane i działań dodane za pośrednictwem innych zestawów wyświetlane w **przybornika** są domyślnie wybrane. Ostatnio dodane działania są automatycznie sprawdzane i są wyświetlane w **przybornika** po kliknięciu **OK** w oknie dialogowym. Ponadto te elementy są wyświetlane w **przybornika** pod nową kategorię, która odpowiada przestrzeni nazw, w którym znajduje się działanie / / szablon elementu.
+
+Ta karta **wybierz elementy przybornika** okno dialogowe zostanie wyświetlona lista działania Windows Workflow Foundation (WF), szablony i elementy dostępne do Ciebie. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu lub klikając prawym przyciskiem myszy **przybornika** i wybierając **wybierz elementy**do wyświetlenia **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **elementu System.Activities** kartę. Fabrycznej lista zawiera działania przepływu pracy z zestawów węzła System.Activities, System.ServiceModel.Activities i System.Activities.Core.Presentation; jednak tylko dostarczane przez system działania wyświetlane i działań dodane za pośrednictwem innych zestawów wyświetlane w **przybornika** są domyślnie wybrane. Ostatnio dodane działania są automatycznie sprawdzane i są wyświetlane w **przybornika** po kliknięciu **OK** w oknie dialogowym. Ponadto te elementy są wyświetlane w **przybornika** pod nową kategorię, która odpowiada przestrzeni nazw, w którym znajduje się działanie / / szablon elementu.
 
 > [!WARNING]
 > Jeśli próbujesz dodać zestawu, który nie zawiera żadnych działań przepływu pracy, zostanie wyświetlone okno dialogowe błędu, wyjaśniający, że zestaw nie zawiera żadnych działań.
@@ -35,12 +38,20 @@ Ta karta **wybierz elementy przybornika** okno dialogowe zostanie wyświetlona l
 
  Kolumny w tym oknie dialogowym zawiera następujące informacje:
 
- Nazwa listy nazwy działania przepływu pracy są obecnie zarejestrowane na komputerze lokalnym.
+ Nazwa
 
- Namespace Wyświetla hierarchii obszaru nazw Biblioteka klas programu .NET Framework, który definiuje strukturę działania.
+ Wyświetla nazwy działania przepływu pracy, w obecnie zarejestrowane na komputerze lokalnym.
 
- Nazwa zestawu Wyświetla nazwę i wersję zestawu .NET Framework, który zawiera działanie.
+ Przestrzeń nazw
 
- Katalog zawiera lokalizację zestawu .NET Framework, który zawiera działania przepływu pracy. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache.
+ Wyświetla hierarchię przestrzeni nazw Biblioteka klas programu .NET Framework, która definiuje strukturę działania.
+
+ Nazwa zestawu
+
+ Wyświetla nazwę i wersję zestawu .NET Framework, który zawiera działanie.
+
+ Katalog
+
+ Wyświetla lokalizację zestawu .NET Framework, który zawiera działania przepływu pracy. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache.
 
  Aby posortować wymienione składniki, wybierz nagłówek dowolnej kolumny.

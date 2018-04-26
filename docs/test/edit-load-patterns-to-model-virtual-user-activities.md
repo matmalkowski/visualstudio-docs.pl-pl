@@ -1,5 +1,5 @@
 ---
-title: Wzorce obciążenia testowania w programie Visual Studio obciążenia | Dokumentacja firmy Microsoft
+title: Wzorce obciążenia testowania w programie Visual Studio obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelowania aktywności wirtualnych użytkowników
 
@@ -43,7 +44,8 @@ Wzorcu obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzorc
  Na przykład obciążenia kroku z **początkowej użytkownika** licznik równy jeden, **maksymalna liczba użytkowników** 100, **krok czas trwania (w sekundach)** 10, a **liczbę użytkowników** 1 tworzy wzorca obciążenia użytkownika, który rozpoczyna się od 1, zwiększy się o 1 co 10 sekund, dopóki nie osiągnie 100 użytkowników.
 
 > [!NOTE]
->  Jeśli test całkowity czas trwania jest krótszy niż czas, który jest wymagany do kroku maksymalnie maksymalne obciążenie użytkownikami, testu zatrzyma się po czas trwania i nie osiąga maksymalna liczba użytkowników docelowych.
+> Jeśli test całkowity czas trwania jest krótszy niż czas, który jest wymagany do kroku maksymalnie maksymalne obciążenie użytkownikami, testu zatrzyma się po czas trwania i nie osiąga maksymalna liczba użytkowników docelowych.
+
 
  Celem krok umożliwia zwiększenie obciążenia, dopóki serwer osiągnie punkt gdzie wydajności znacznie zmniejsza. W miarę wzrostu obciążenia serwera po pewnym czasie będzie brakować zasobów. Obciążenie kroku jest sposób określenia liczby użytkowników, w którym dzieje się tak. Z wykonywania krokowego obciążenia masz również monitorowanie zasobów agenta ściśle, aby upewnić się, że agenci mogą wytwarzać żądaną obciążenia.
 
@@ -117,12 +119,14 @@ Wzorcu obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzorc
  Po utworzeniu testu obciążenia z **załadować Test Kreatora nowego**, można użyć **edytorze testu obciążenia** można zmienić właściwości wzorca obciążenia skojarzone ze scenariuszem do poziomu, które spełniają cele testu.
 
 > [!NOTE]
->  Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia i ich opisy, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+
 
  Wzorzec obciążenia określa liczbę wirtualnych użytkowników active podczas testu obciążenia i szybkości, jaką nowi użytkownicy są dodawani. Możesz wybrać spośród trzech wzorców dostępne: krok wzorzec, stała i opartego na celach. Aby uzyskać więcej informacji, zobacz [określenie liczby wirtualnych użytkowników z wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
->  Możesz również zmienić właściwości obciążenia programowo przy użyciu wtyczki testu obciążenia. Aby uzyskać więcej informacji, zobacz [porady: tworzenie wtyczek testu obciążenia](../test/how-to-create-a-load-test-plug-in.md).
+> Możesz również zmienić właściwości obciążenia programowo przy użyciu wtyczki testu obciążenia. Aby uzyskać więcej informacji, zobacz [porady: tworzenie wtyczek testu obciążenia](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>Aby zmienić wzorca obciążenia
 

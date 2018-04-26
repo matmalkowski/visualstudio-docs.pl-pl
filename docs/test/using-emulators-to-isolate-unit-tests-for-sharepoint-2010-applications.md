@@ -1,6 +1,7 @@
 ---
-title: Izolowanie testów jednostkowych aplikacji Sharepoint 2010 przy użyciu emulatorów | Dokumentacja firmy Microsoft
+title: Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
 Pakiet Microsoft.SharePoint.Emulators zawiera zestaw bibliotek, które ułatwiają tworzenie testów jednostkowych izolowanych aplikacji Microsoft SharePoint 2010. Użyj emulatory [podkładek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolacji platformę, by utworzyć lekkie obiekty w pamięci, które imitują najczęściej obiekty i metody interfejsu API programu SharePoint. Jeśli metoda programu SharePoint nie jest emulowana, lub aby zmienić domyślne zachowanie emulatora, można utworzyć elementów sztucznych podkładek do udostępniania wyników, które mają.
@@ -302,7 +303,8 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Oto modyfikacji istniejących metody testowej `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, implementującej delegata substytutami. Wymagane zmiany są wywoływane w komentarzach:
 
 > [!IMPORTANT]
->  Testowanie metody, które jawnie tworzyć sztuczne elementy throw podkładek `ShimNotSupported` wyjątku, gdy test jest uruchomiony `EmulationMode.Passthrough` kontekstu. Aby uniknąć tego problemu, należy użyć zmiennej można ustawić `EmulationMode` wartość i zastępowania jakiegokolwiek kodu elementów sztucznych `if` instrukcji sprawdzający wartość.
+> Testowanie metody, które jawnie tworzyć sztuczne elementy throw podkładek `ShimNotSupported` wyjątku, gdy test jest uruchomiony `EmulationMode.Passthrough` kontekstu. Aby uniknąć tego problemu, należy użyć zmiennej można ustawić `EmulationMode` wartość i zastępowania jakiegokolwiek kodu elementów sztucznych `if` instrukcji sprawdzający wartość.
+
 
 ```csharp
 // class level field to set emulation mode

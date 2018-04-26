@@ -20,12 +20,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7ee92121e57b7c3f6391d290ff0c5fde0d689e3c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c6f192f476b6b3adb1f8d7e664e769314bad9a46
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Language (.dgml) mapy. Na przykład można edytować elementy, aby określić niestandardowe style, przypisać właściwości i kategorii elementy kodu i linki, lub Podłącz dokumenty lub adresy URL do elementów kodu lub do łącza. Aby uzyskać więcej informacji o elementach DGML, zobacz [skierowane do Graph Markup Language) dokumentacja języka (DGML](../modeling/directed-graph-markup-language-dgml-reference.md).

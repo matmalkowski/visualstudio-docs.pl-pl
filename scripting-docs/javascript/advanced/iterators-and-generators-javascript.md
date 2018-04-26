@@ -1,27 +1,28 @@
 ---
 title: Iteratory i generatory (JavaScript) | Dokumentacja firmy Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 68ef5b2f-0349-492b-b557-73ff2a2f90cf
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85c27969609a38b87b15c727e9c8aef89ee77032
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a566e870c6e9589daed86d42e3fb933374cbb17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="iterators-and-generators-javascript"></a>Iteratory i generatory (JavaScript)
 Iteratora jest obiekt, który służy do przechodzenia obiektu kontenera, takie jak listy. W języku JavaScript, nie jest unikatowe, wbudowanego obiektu obiektu iteratora, ale jest obiekt, który implementuje `next` metody dostępu do następnego elementu w obiekcie kontenera.  
@@ -106,7 +107,7 @@ console.log(si.next().value);
   
 ```  
   
- W generatorze, wyrażenie argumentu yield kończy wywołanie `next` i zwraca `IteratorResult` obiektu o dwie właściwości `done` (`done=false`) i `value` (`value=operand`). `operand`jest opcjonalna i jeśli brak następnie jego wartość jest niezdefiniowana.  
+ W generatorze, wyrażenie argumentu yield kończy wywołanie `next` i zwraca `IteratorResult` obiektu o dwie właściwości `done` (`done=false`) i `value` (`value=operand`). `operand` jest opcjonalna i jeśli brak następnie jego wartość jest niezdefiniowana.  
   
  W generatorze `return` instrukcji kończy generatora zwracając `IteratorResult` z `done=true` wraz z wynik opcjonalny argument dla właściwości value.  
   
@@ -134,13 +135,13 @@ console.log(si2.next().value);
 // b  
 ```  
   
- Można również utworzyć generatory bardziej zaawansowanych, przekazując argument `next` i przy użyciu argumentu do modyfikowania stanu generatora. `next`staje się wartość wyniku wcześniej wykonanego `yield` wyrażenia. W poniższym przykładzie, gdy przekazać wartości od 100 do `next` metody, Zresetuj wartość indeksu wewnętrzny generatora.  
+ Można również utworzyć generatory bardziej zaawansowanych, przekazując argument `next` i przy użyciu argumentu do modyfikowania stanu generatora. `next` staje się wartość wyniku wcześniej wykonanego `yield` wyrażenia. W poniższym przykładzie, gdy przekazać wartości od 100 do `next` metody, Zresetuj wartość indeksu wewnętrzny generatora.  
   
 ```  
 function* strIter() {  
     var str = "jobob";  
     var idx = 0;  
-    while(idx , str.length) {  
+    while(idx < str.length) {  
         var modify = yield str[idx++];  
         if(modify == 100) {  
             idx = 0;  

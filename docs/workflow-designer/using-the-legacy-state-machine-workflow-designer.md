@@ -1,7 +1,9 @@
 ---
-title: Za pomocą projektanta przepływów pracy maszyny stanu starszych | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — za pomocą projektanta przepływów pracy maszyny stanu starszych
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Za pomocą projektanta przepływów pracy maszyny stanu starszych
-Podczas tworzenia nowego projektu maszyny stanu przepływu pracy w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] który dotyczy, albo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], możesz użyć **Aplikacja konsoli przepływu pracy maszyny stanu** lub  **Stan: Biblioteka przepływu pracy automatu** szablonu projektu starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant maszyny stanu jest przedstawiany jako przepływem pracy starszego interfejsu użytkownika projektanta. Uzyskać informacji o szablonach projektu maszyny stanu starszej wersji, zobacz [jak: utworzyć stanu komputera przepływu pracy aplikacji konsoli (starsze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [porady: Tworzenie biblioteki przepływu pracy (starsze)maszynystanu](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- Przepływ pracy automatu stanów składa się z zestawem stanów. Jednego stanu jest oznaczona jako stanu początkowego. Każdy stan może odbierać zdarzenia w określonym zestawie. Na podstawie zdarzenia, przejście może się do innego stanu. Przepływ pracy automatu stanów może mieć stan końcowy. Po nawiązaniu przejście do stanu końcowego zakończeniu przepływu pracy.
+Podczas tworzenia nowego projektu przepływu pracy stan komputera w programie Visual Studio 2010, przeznaczonego dla programu .NET Framework w wersji 3.5 lub WinFX, możesz użyć **Aplikacja konsoli przepływu pracy maszyny stanu** lub  **Stan: Biblioteka przepływu pracy automatu** szablonu projektu starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant maszyny stanu jest przedstawiany jako przepływem pracy starszego interfejsu użytkownika projektanta. Uzyskać informacji o szablonach projektu maszyny stanu starszej wersji, zobacz [jak: utworzyć stanu komputera przepływu pracy aplikacji konsoli (starsze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [porady: Tworzenie biblioteki przepływu pracy (starsze)maszynystanu](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+Przepływ pracy automatu stanów składa się z zestawem stanów. Jednego stanu jest oznaczona jako stanu początkowego. Każdy stan może odbierać zdarzenia w określonym zestawie. Na podstawie zdarzenia, przejście może się do innego stanu. Przepływ pracy automatu stanów może mieć stan końcowy. Po nawiązaniu przejście do stanu końcowego zakończeniu przepływu pracy.
 
 ## <a name="state-machine-designer-views"></a>Widoki projektanta automatu stanów
  Projektant maszyny stanu jest dowolne projektanta, co oznacza, że działania mogą być przenoszone między za darmo na powierzchni projektu. Projektant maszyny stanu ma dwa widoki: *stanu* widoku i *sterowane zdarzeniami* widoku.

@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie projektami aplikacji Python
-description: Objaśnienie jego przeznaczenia projekty w programie Visual Studio, pokazuje, jak utworzyć projektów i zarządzanie nimi dla kodu języka Python i opisano dostępne szablony inny projekt dla języka Python.
+description: Celem projekty w programie Visual Studio, tworzenie i zarządzanie projektami dla kodu języka Python i szablonów projektu różnych dostępnych dla języka Python.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7dcefe4a9d303c6d52fa88f478dc59c9c2cafe3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f7425755f72929cbf2574d6420d9c2ec4c62dc20
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="python-projects"></a>Projekty Python
+# <a name="python-projects-in-visual-studio"></a>Projekty języka Python w programie Visual Studio
 
 Python aplikacje są zazwyczaj definiowane przy użyciu tylko plików i folderów, ale ta struktura może stać się złożona jako aplikacje większy i może obejmować automatycznie generowanej pliki JavaScript dla aplikacji sieci web i tak dalej. Projektu programu Visual Studio pomaga zarządzać tym złożoności. Projekt ( `.pyproj` pliku) identyfikuje źródła i pliki zawartości skojarzonej z projektem, zawiera informacje o kompilacji dla każdego pliku przechowuje informacje o integracji z systemami kontroli źródła i pomaga organizować aplikacji do składników logicznych.
 

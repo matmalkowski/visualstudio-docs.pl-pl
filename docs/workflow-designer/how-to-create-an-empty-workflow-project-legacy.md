@@ -1,7 +1,9 @@
 ---
-title: 'Porady: Tworzenie projektu pusty przepływu pracy (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Tworzenie projektu pusty przepływu pracy (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - projects, empty workflow
 - empty workflow projects
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aa51df35a1187c8d327a401d77c12e4532f4eb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Porady: Tworzenie projektu pusty przepływu pracy (starsze)
-Wykonaj następujące kroki, aby utworzyć pusty projekt przepływu pracy przy użyciu starszej wersji projektanta przepływów pracy Windows pochodzącymi [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
-### <a name="to-create-an-empty-workflow-project"></a>Aby utworzyć projekt pusty przepływu pracy
+Wykonaj następujące kroki, aby utworzyć pusty projekt przepływu pracy przy użyciu starszej wersji projektanta przepływów pracy Windows pochodzącymi z programu Visual Studio 2010. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
+
+## <a name="to-create-an-empty-workflow-project"></a>Aby utworzyć projekt pusty przepływu pracy
 
 1.  Uruchom program Visual Studio.
 
@@ -32,7 +35,7 @@ Wykonaj następujące kroki, aby utworzyć pusty projekt przepływu pracy przy u
 3.  Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okno, aby uzyskać dostępu do starszych projektanta.
 
     > [!NOTE]
-    > Domyślna opcja [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacje, które odnoszą się do [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] i nie używa starszej wersji projektanta.
+    > Jest domyślną opcją w Visual Studio 2010 **.NET Framework 4**. Ta opcja jest używana do tworzenia aplikacji systemu Windows Workflow Foundation (WF) przeznaczonych dla platformy .NET Framework 4 i nie używa starszej wersji projektanta.
 
 4.  W **typów projektów** okienku, wybierz pozycję Visual C# lub Visual Basic (w obszarze **inne języki**), a następnie wybierz **przepływu pracy**.
 

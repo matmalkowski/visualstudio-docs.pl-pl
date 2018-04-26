@@ -1,7 +1,9 @@
 ---
-title: Okno dialogowe Edytor warunku reguły (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — okno dialogowe Edytor warunku reguły (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b74956dc12e19a5594585e8d356b77ae5549b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f723894f175cbf031c3a2ac61ed9eaec8e1c94f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Okno dialogowe Edytor warunku reguły (starsze)
 
-W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
 Tworzenie i modyfikowanie warunków reguł deklaratywne przy użyciu **Edytor warunku reguły** okno dialogowe. Te warunki reguły są widoczne jako właściwości na wykonywanie następujących czynności out-of-box Windows Workflow Foundation:
 

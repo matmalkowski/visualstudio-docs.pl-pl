@@ -1,7 +1,9 @@
 ---
-title: 'Porady: Użyj projektanta zmiennych | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Użyj projektanta zmiennych'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5ea858c6ebe448b7faf77533395a044bcc2fb32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc180df4a9be83c0f0b755bffd7ed40009b41497
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-variable-designer"></a>Porady: Użyj projektanta zmiennych
+
 Projektanta zmiennych służy do tworzenia zmiennych do użycia w instrukcjach warunkowe i scenariusze powiązania danych. Projektant jest dostępne po kliknięciu **zmienne** przycisk w lewym dolnym rogu obszaru projektowania. Projektant zawiera listę zmiennych, które znajdują się w formie tabelarycznej i można sortować według poszczególnych nagłówków kolumn, z wyjątkiem **domyślne** kolumny. Każdej zmiennej zawiera nazwę, typ zmiennej, zakresu i wartość domyślną (jeśli istnieje). Nazwa i domyślne wartości są pola edycji, a typie i zakresie są listach rozwijanych. Zakres jest działania, które zostały wybrane podczas projektanta zmiennych. Jeśli nie można utworzyć zmiennej w zakresie zaznaczenia, zakres jest domyślnie do najbliższej działania nadrzędnego zaznaczenia umożliwiający zmiennych mogą być tworzone w swoim zakresie. Aby uzyskać więcej informacji, zobacz [zmiennych i argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
  Kolejność sortowania nie została zastosowana, dopóki użytkownik jawnie używa sortowania formantów, zamyka i ponownie otwiera projektanta zmiennych lub tworzy innej zmiennej.
 
-### <a name="to-create-a-new-variable"></a>Aby utworzyć nową zmienną
+## <a name="to-create-a-new-variable"></a>Aby utworzyć nową zmienną
 
-1.  Otwórz rozwiązanie przepływu pracy lub działania w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
+1.  Otwórz rozwiązanie przepływu pracy lub działania w programie Visual Studio.
 
 2.  W obszarze roboczym Projekt wybierz działanie w przepływie pracy.
 

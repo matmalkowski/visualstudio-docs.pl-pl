@@ -1,7 +1,9 @@
 ---
-title: Tworzenie projektu przepływu pracy | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Tworzenie projektu przepływu pracy
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - Visual Studio 2010 Workflow Designer, creating a workflow project
@@ -12,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10805edce0379ae7bfd6666afc787690dd45689
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f65cc826b59e7ee5c0645a8c1204a193f58f001
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-workflow-project"></a>Tworzenie projektu przepływu pracy
 
-Przepływy pracy, [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] usług przepływu pracy, niestandardowych działań i działania niestandardowego można utworzyć Designer przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablony projektu. W tej sekcji opisano sposób tworzenia bibliotek i aplikacje z szablonami projektu dostępne w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+Przepływy pracy, usługi przepływu pracy systemu Windows Communication Foundation (WCF), niestandardowych działań i projektantów działań niestandardowych mogą być tworzone za pomocą szablonów projektu programu Visual Studio. Ta sekcja zawiera opis sposobu tworzenia bibliotek i aplikacji z szablonami projektu dostępne w programie Visual Studio.
 
-Pierwsze cztery tematach opisano sposób korzystania z szablonów przepływu pracy na **nowy projekt** okna. Te szablony mogą uzyskiwać przez otwarcie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] i wybierając **pliku** -> **nowy** -> **projektu...** , a następnie **przepływu pracy** kategorii z **zainstalowane szablony** po lewej stronie, w obszarze albo **Visual Basic** lub **Visual C#** węzła.
+Pierwsze cztery tematach opisano sposób korzystania z szablonów przepływu pracy na **nowy projekt** okna. Te szablony mogą uzyskiwać otwierania programu Visual Studio 2010 i wybierając **pliku** > **nowy** > **projektu**, a następnie  **Przepływ pracy** kategorii z **zainstalowane szablony** po lewej stronie, w obszarze albo **Visual Basic** lub **Visual C#** węzła.
 
-Ostatni temacie opisano sposób dodawania działań przepływu pracy, projektantów i usług lub innych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu elementy do istniejącego przepływu pracy (lub innych).
+Ostatni temacie opisano sposób dodawania działań przepływu pracy, projektantów i usług lub innych projektów elementy do istniejącego przepływu pracy (lub innych) programu Visual Studio.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 

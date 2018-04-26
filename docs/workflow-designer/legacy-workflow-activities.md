@@ -1,7 +1,9 @@
 ---
-title: Działania przepływu pracy starszego | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — starsze działania przepływu pracy
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>Działania przepływu pracy w starszej wersji
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] zawiera zestaw domyślne działania udostępniające funkcje dla przepływu sterowania, warunki obsługi zdarzeń, zarządzanie stanem i komunikacji z aplikacjami i usługami. Podczas projektowania przepływów pracy, można użyć działania dostarczane przez system, które są udostępniane przez projektanta przepływów pracy systemu Windows lub utworzeniu własnych działań niestandardowych.
+Windows Workflow Foundation (WF) zawiera domyślny zestaw działań, które zapewnienia funkcji przepływu sterowania, warunki obsługi zdarzeń, zarządzanie stanem i komunikacji z aplikacjami i usługami. Podczas projektowania przepływów pracy, można użyć działania dostarczane przez system, które są udostępniane przez projektanta przepływów pracy systemu Windows lub utworzeniu własnych działań niestandardowych.
 
- W poniższej tabeli wymieniono [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] zestawu działań out-of-box framework. Wiele, ale nie wszystkich tych działań są reprezentowane przez projektantów działań, które są dostępne z **przybornika** z [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Aby utworzyć działanie, przeciągnij jego projektanta z **przybornika** i upuść ją na powierzchni projektu.
+W poniższej tabeli wymieniono zestawu działań out-of-box framework Windows Workflow Foundation. Wiele, ale nie wszystkich tych działań są reprezentowane przez projektantów działań, które są dostępne z **przybornika** z projektanta przepływów pracy. Aby utworzyć działanie, przeciągnij jego projektanta z **przybornika** i upuść ją na powierzchni projektu.
 
 |Działanie|Opis|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|Odpowiada na żądanie usługi sieci Web do przepływu pracy. Aby uzyskać więcej informacji, zobacz [za pomocą działania WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65092).|
 |<xref:System.Workflow.Activities.WhileActivity>|Umożliwia przepływu pracy w pętli do momentu spełnienia warunku. Aby uzyskać więcej informacji, zobacz [za pomocą działania Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091).|
 
- Aby uzyskać więcej informacji na temat tworzenia niestandardowych działań, zobacz [tworzenia działań niestandardowych](http://go.microsoft.com/fwlink?LinkID=65023) i [przy użyciu narzędzia Projektant działań starszych](../workflow-designer/using-the-legacy-activity-designer.md).
+Aby uzyskać więcej informacji na temat tworzenia niestandardowych działań, zobacz [tworzenia działań niestandardowych](http://go.microsoft.com/fwlink?LinkID=65023) i [przy użyciu narzędzia Projektant działań starszych](../workflow-designer/using-the-legacy-activity-designer.md).
 
 ## <a name="see-also"></a>Zobacz także
 

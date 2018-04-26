@@ -1,5 +1,5 @@
 ---
-title: Sieci Web API testu wydajności w programie Visual Studio | Dokumentacja firmy Microsoft
+title: API testu wydajności sieci Web w programie Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7cbc7375cbf416d82a56c140479925569dad8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Porady: korzystanie z API testu wydajności sieci Web
 
@@ -23,7 +24,8 @@ Można napisać kod dla testów wydajności sieci Web. Testu wydajności sieci W
  Aby programowo utworzyć i zapisać deklaratywne testów wydajności sieci Web umożliwia także interfejsu API testu wydajności sieci Web. Aby to zrobić, użyj <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> klasy.
 
 > [!TIP]
->  Użyj przeglądarki obiektów do sprawdzenia <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw. Edytory Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense dla kodowania z klas w przestrzeni nazw.
+> Użyj przeglądarki obiektów do sprawdzenia <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw. Edytory Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense dla kodowania z klas w przestrzeni nazw.
+
 
  Można również utworzyć wtyczek dla testów obciążenia. Aby uzyskać więcej informacji, zobacz [porady: za pomocą interfejsu API Test obciążenia](../test/how-to-use-the-load-test-api.md) i [porady: tworzenie wtyczek testu obciążenia](../test/how-to-create-a-load-test-plug-in.md).
 

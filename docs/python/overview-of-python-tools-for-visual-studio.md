@@ -1,6 +1,6 @@
 ---
 title: Omówienie obsługi języka Python w programie Visual Studio w systemie Windows
-description: Podsumowanie funkcji w programie Visual Studio, dzięki czemu najlepsze IDE języka Python w systemie Windows (znanej także jako narzędzia Python Tools for Visual Studio i narzędzi PTVS)
+description: Podsumowanie funkcji języka Python w programie Visual Studio, dzięki czemu najlepsze IDE języka Python w systemie Windows (znanej także jako narzędzi Python Tools for Visual Studio, PTVS).
 ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a23835ddeb143c723f4275ec337168dc783664b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Praca z języka Python w programie Visual Studio (z systemem Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Praca z języka Python w programie Visual Studio w systemie Windows
 
 Python to niezawodne, elastyczne, łatwe dowiedzieć się, bez używania we wszystkich systemach operacyjnych i obsługiwanych przez społeczność deweloperów silne i wiele bibliotek wolnego popularnych język programowania. Python obsługuje wszystkie środki projektowanie, łącznie z aplikacji sieci web, usług sieci web, aplikacji klasycznych, skrypty i obliczanie naukowe i jest używany przez wiele uczelni, służące zwykłych deweloperzy i deweloperów podobne. Dodatkowe informacje na temat języka na [python.org](https://www.python.org) i [języka Python dla początkujących](https://www.python.org/about/gettingstarted/).
 

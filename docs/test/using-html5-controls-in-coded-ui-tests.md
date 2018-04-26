@@ -1,6 +1,7 @@
 ---
-title: Korzystanie z kontrolek HTML5 w kodowanych testów interfejsu użytkownika w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika w programie Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b440ce0a9f9cf935020ca7ddf0cf392a0d47ad54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -23,10 +24,12 @@ Kodowane testy interfejsu użytkownika obejmuje obsługę, niektóre z formantó
 -   Visual Studio Enterprise
 
 > [!WARNING]
->  W wersjach wcześniejszych niż program Internet Explorer 10 było możliwe do uruchomienia kodowanych testów interfejsu użytkownika w porównaniu do programu Internet Explorer wyższym poziomie uprawnień. Podczas uruchamiania kodowane testy interfejsu użytkownika w programie Internet Explorer 10, zarówno kodowanego testu interfejsu użytkownika, jak i programu Internet Explorer musi być na tym samym poziomie uprawnień. Jest to spowodowane bardziej bezpieczne funkcje kontenera aplikacji w programie Internet Explorer 10.
+> W wersjach wcześniejszych niż program Internet Explorer 10 było możliwe do uruchomienia kodowanych testów interfejsu użytkownika w porównaniu do programu Internet Explorer wyższym poziomie uprawnień. Podczas uruchamiania kodowane testy interfejsu użytkownika w programie Internet Explorer 10, zarówno kodowanego testu interfejsu użytkownika, jak i programu Internet Explorer musi być na tym samym poziomie uprawnień. Jest to spowodowane bardziej bezpieczne funkcje kontenera aplikacji w programie Internet Explorer 10.
+
 
 > [!WARNING]
->  Jeśli tworzysz kodowanego testu interfejsu użytkownika w programie Internet Explorer 10, może nie zostać uruchomiony przy użyciu programu Internet Explorer 9 lub Internet Explorer 8. Jest to spowodowane programu Internet Explorer 10 zawiera formanty HTML5, takie jak Audio i wideo, ProgressBar oraz Slider. Te formanty HTML5 nie są rozpoznawane przez Internet Explorer 9 i Internet Explorer 8. Podobnie test interfejsu użytkownika kodowany za pomocą Internet Explorer 9 może zawierać niektóre formanty języka HTML5, które również nie zostaną rozpoznane przez Internet Explorer 8.
+> Jeśli tworzysz kodowanego testu interfejsu użytkownika w programie Internet Explorer 10, może nie zostać uruchomiony przy użyciu programu Internet Explorer 9 lub Internet Explorer 8. Jest to spowodowane programu Internet Explorer 10 zawiera formanty HTML5, takie jak Audio i wideo, ProgressBar oraz Slider. Te formanty HTML5 nie są rozpoznawane przez Internet Explorer 9 i Internet Explorer 8. Podobnie test interfejsu użytkownika kodowany za pomocą Internet Explorer 9 może zawierać niektóre formanty języka HTML5, które również nie zostaną rozpoznane przez Internet Explorer 8.
+
 
 ## <a name="supported-html5-controls"></a>Formanty obsługiwanych języków HTML5.
  Kodowane testy interfejsu użytkownika obejmują obsługę rekordu, odtwarzania i sprawdzania poprawności następujących formantów HTML5:
@@ -80,7 +83,8 @@ string Volume
  **Właściwości filtru:** właściwości filtru `HtmlAudio` są `Src`, `Class`, `ControlDefinition` i `TagInstance`.
 
 > [!NOTE]
->  Czas wyszukiwania i Wstrzymaj może być istotne. Podczas odtwarzania kodowanego testu interfejsu użytkownika będzie czekać w określonym czasie `(TimeSpan)` przed wstrzymaniem audio. Jeśli przez niektóre specjalne okoliczności upływie określonego czasu przed szukaniem polecenia Wstrzymaj, zostanie wygenerowany wyjątek.
+> Czas wyszukiwania i Wstrzymaj może być istotne. Podczas odtwarzania kodowanego testu interfejsu użytkownika będzie czekać w określonym czasie `(TimeSpan)` przed wstrzymaniem audio. Jeśli przez niektóre specjalne okoliczności upływie określonego czasu przed szukaniem polecenia Wstrzymaj, zostanie wygenerowany wyjątek.
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Formant wideo
  **Formant wideo:** poprawnie zarejestrowana i odtwarzania akcji w formancie wideo HTML5.
@@ -110,7 +114,8 @@ string VideoWidth
  **Właściwości filtru:** właściwości filtru `HtmlVideo` są `Src`, `Poster`, `Class`, `ControlDefinition` i `TagInstance`.
 
 > [!NOTE]
->  Jeśli rewind lub szybkie przewijanie do przodu wideo przy użyciu-30s lub +30s etykiet, to zostaną zagregowane się w odpowiednim czasie.
+> Jeśli rewind lub szybkie przewijanie do przodu wideo przy użyciu-30s lub +30s etykiet, to zostaną zagregowane się w odpowiednim czasie.
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Suwak
  **Kontrolka suwaka:** poprawnie zarejestrowana i odtwarzania akcji na suwaku HTML5.

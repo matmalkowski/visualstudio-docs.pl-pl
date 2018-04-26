@@ -1,7 +1,9 @@
 ---
-title: Projektant działań kompensacji | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — kompensacji Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
@@ -10,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="compensate-activity-designer"></a>Projektant działań wyrównania
+
 **Compensate** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Compensate> działania.
 
 ## <a name="the-compensate-activity"></a>Działanie Compensate
@@ -25,12 +28,12 @@ ms.lasthandoff: 04/16/2018
  <xref:System.Activities.Statements.CompensationToken> Określonego przez <xref:System.Activities.Statements.Compensate.Target%2A> umożliwia jawnie potwierdzić lub kompensacji <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> z <xref:System.Activities.Statements.CompensableActivity> zostało pomyślnie ukończone.
 
 ### <a name="using-the-compensate-activity-designer"></a>Przy użyciu kompensacji Projektant działań
- **Compensate** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karcie po lewej stronie [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+ **Compensate** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz pozycję **przybornika** karcie po lewej stronie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku**menu lub CTRL + ALT + X.)
 
- **Compensate** Projektant działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni we wszystkich działań zwykle są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.Compensate> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z Compensate. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **Compensate** Projektant działań lub **DisplayName** pola siatki właściwości.
+ **Compensate** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.Compensate> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z Compensate. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **Compensate** Projektant działań lub **DisplayName** pola siatki właściwości.
 
 ### <a name="the-compensate-properties"></a>Kompensacji właściwości
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CancellationScope> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości lub na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni, ale <xref:System.Activities.Statements.Compensate.Target%2A> należy edytować właściwości w siatce właściwości.
+ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CancellationScope> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> Właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy. Edytuj <xref:System.Activities.Statements.Compensate.Target%2A> właściwości w siatce właściwości.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

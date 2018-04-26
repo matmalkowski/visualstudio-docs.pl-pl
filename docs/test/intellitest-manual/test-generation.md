@@ -1,6 +1,7 @@
 ---
-title: Testowanie w generacji | Narzędzie Test Microsoft IntelliTest dewelopera | Dokumentacja firmy Microsoft
+title: Testowanie w generacji | Narzędzie Test Microsoft IntelliTest Developer
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Generowanie testu
 
-W tradycyjnych testy jednostkowe wymaga kilku składników opracować testu:
+W tradycyjnych testy jednostkowe testu składa się z kilka kwestii:
+
+* A [sekwencję wywołań — metoda](test-generation.md#test-generators)
+* Argumenty, które metody są wywoływane; argumenty [test dane wejściowe](input-generation.md)
+* Weryfikacja to oczekiwane zachowanie przetestowanej aplikacji poprzez podanie zestawu [potwierdzeń](#assumptions-and-assertions)
+
+Poniżej przedstawiono przykład struktury testu:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-Uruchomienie testu zawiera różne aspekty:
-
-* Naprawia on [sekwencję wywołań — metoda](test-generation.md#test-generators)
-* Naprawia on argumenty, które metody są wywoływane; argumenty [test dane wejściowe](input-generation.md)
-* Sprawdza poprawność to oczekiwane zachowanie aplikacji przetestowane przez zestaw z informacją o [potwierdzeń](#assumptions-and-assertions)
 
 IntelliTest często automatycznie można określić wartości argumentów istotne dla ogólnej [sparametryzowanych testów jednostkowych](#parameterized-unit-testing), które zapewniają sekwencję wywołań metody i potwierdzenia.
 
@@ -116,7 +117,7 @@ public partial class ListTest {
 
 IntelliTest zawiera wiele atrybutów sprawdzania poprawności ułatwia wyjątki klasyfikacji do oczekiwane wyjątki i nieoczekiwanego wyjątku.
 
-Oczekiwano wyjątki wygenerowania ujemna przypadków testowych z odpowiednią adnotacją, taką jak **ExpectedException (typeof (*xxx*))**podczas generowania wyjątków nieoczekiwany w przypadku braku przypadków testowych.
+Oczekiwano wyjątki wygenerowania ujemna przypadków testowych z odpowiednią adnotacją, taką jak **ExpectedException (typeof (*xxx*))** podczas generowania wyjątków nieoczekiwany w przypadku braku przypadków testowych.
 
 ```
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Masz opinię?
 
-Publikowania własnych pomysłów i funkcji żądań na  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publikowania własnych pomysłów i funkcji żądań na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

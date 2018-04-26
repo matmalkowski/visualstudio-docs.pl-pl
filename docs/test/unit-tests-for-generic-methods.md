@@ -1,6 +1,7 @@
 ---
-title: Testy jednostkowe metod ogólnych w Visual Studio | Dokumentacja firmy Microsoft
+title: Testy jednostkowe metod ogólnych w Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  Każdym uruchomieniu testu SizeOfLinkedListTest jego TestHelper metoda jest wywoływana dwa razy. Instrukcja assert musi zwrócić wartość true, zawsze dla testu do przekazania. Jeśli test ma wynik negatywny, może nie być wyczyść czy wywołanie określony `<int>` lub wywołania określonej `<char>` spowodował niepowodzenie. Aby znaleźć odpowiedzi, należy zbadać stos wywołań, lub można ustawić punktów przerwania w metodę testu, a następnie debugowania podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [porady: debugowanie podczas uruchamiania testu w rozwiązaniu ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Każdym uruchomieniu testu SizeOfLinkedListTest jego TestHelper metoda jest wywoływana dwa razy. Instrukcja assert musi zwrócić wartość true, zawsze dla testu do przekazania. Jeśli test ma wynik negatywny, może nie być wyczyść czy wywołanie określony `<int>` lub wywołania określonej `<char>` spowodował niepowodzenie. Aby znaleźć odpowiedzi, należy zbadać stos wywołań, lub można ustawić punktów przerwania w metodę testu, a następnie debugowania podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [porady: debugowanie podczas uruchamiania testu w rozwiązaniu ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Przykład 2: Za pomocą ograniczenia typu
  Ten przykład przedstawia testu jednostkowego dla metody ogólnej, który używa ograniczenia typu, który nie został spełniony. Pierwsza sekcja zawiera kod z projektu kodu w obszarze testu. Ograniczenie typu zostanie wyróżniona.

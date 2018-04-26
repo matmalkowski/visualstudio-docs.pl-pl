@@ -1,7 +1,9 @@
 ---
-title: Projektant działań StateMachine | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Projektant działań StateMachine
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
@@ -11,20 +13,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2e036c1921f5c6219947de9109f3a94092fa5395
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="statemachine-activity-designer"></a>Obiekt StateMachine Projektant działań
+
 <xref:System.Activities.Statements.StateMachine> Działanie zawiera kolekcję stanów i modele przepływów pracy za pomocą modelu maszyny znanego stanu.
 
 ## <a name="using-the-statemachine-activity-designer"></a>Przy użyciu narzędzia Projektant działań StateMachine
- Aby dodać <xref:System.Activities.Statements.StateMachine> działania, przeciągnij **StateMachine** Projektant działań z **automatu stanów** sekcji **przybornika** i upuść ją do przepływu pracy systemu Windows Powierzchnię projektanta. Aby dodać stan podrzędnych do tego <xref:System.Activities.Statements.StateMachine> działania, przeciągnij <xref:System.Activities.Statements.State> lub <xref:System.Activities.Core.Presentation.FinalState> z **przybornika** i upuść ją na **StateMachine**.
+
+Aby dodać <xref:System.Activities.Statements.StateMachine> działania, przeciągnij **StateMachine** Projektant działań z **automatu stanów** sekcji **przybornika** i upuść ją do przepływu pracy systemu Windows Powierzchnię projektanta. Aby dodać stan podrzędnych do tego <xref:System.Activities.Statements.StateMachine> działania, przeciągnij <xref:System.Activities.Statements.State> lub <xref:System.Activities.Core.Presentation.FinalState> z **przybornika** i upuść ją na **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Obiekt StateMachine właściwości działania w Projektancie przepływów pracy
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.StateMachine> właściwości, które można ustawić za pomocą projektanta przepływów pracy i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości i niektóre można edytowane na powierzchnię projektanta.
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.StateMachine> właściwości, które można ustawić za pomocą projektanta przepływów pracy i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości i niektóre można edytowane na powierzchnię projektanta.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

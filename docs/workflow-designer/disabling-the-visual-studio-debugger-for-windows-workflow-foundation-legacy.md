@@ -1,7 +1,9 @@
 ---
-title: Wyłączenie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — wyłączanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Wyłączenie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)
 
-W tym temacie opisano sposób wyłączania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera przy użyciu pliku konfiguracji podczas kompilowania [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji w Projektancie przepływów pracy starszej wersji systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+W tym temacie opisano, jak wyłączyć debuger programu Visual Studio przy użyciu pliku konfiguracji, podczas tworzenia aplikacji systemu Windows Workflow Foundation (WF) w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
- Domyślnie [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] debugera dla [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] jest włączona dla procesu hosta. Aby wyłączyć debugowanie przepływu pracy, musisz jawnie wyłączyć ją, dodając wpis "DisableWorkflowDebugging"  **\<przełączniki >** element  **\<system.diagnostics >**sekcji pliku konfiguracji hosta.
+ Domyślnie program Visual Studio Debugger dla Windows Workflow Foundation (WF) jest włączona dla procesu hosta. Aby wyłączyć debugowanie przepływu pracy, musisz jawnie wyłączyć ją, dodając wpis "DisableWorkflowDebugging"  **\<przełączniki >** element  **\<system.diagnostics >** sekcji pliku konfiguracji hosta.
 
  Poniższy przykład przedstawia sposób modyfikowania hosta pliku konfiguracji, aby wyłączyć debugowanie przepływu pracy.
 

@@ -1,5 +1,6 @@
 ---
-title: Port, migrowanie i uaktualnianie projektów programu Visual Studio
+title: Port, migrowanie i uaktualnianie projektów
+description: Odwołanie w Visual Studio 2017 obsługę projektów utworzonych w starszych wersjach programu Visual Studio i jak Visual Studio decyduje o tym, kiedy zachodzi potrzeba migracji projektu.
 ms.date: 03/14/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -18,13 +19,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrowanie i uaktualnianie projektów programu Visual Studio
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu dla Visual Studio 2017 r.
 
 Każda nowa wersja programu Visual Studio obsługuje ogólnie większość typów poprzednich projektów, plików i innych zasobów. Można pracować z nimi [jako użytkownik zawsze mieć](../ide/solutions-and-projects-in-visual-studio.md), i pod warunkiem, że nie są zależne od funkcji nowszą, programu Visual Studio zazwyczaj próbuje wstecz zachowania zgodności z poprzednimi wersjami, takich jak Visual Studio 2015, Visual Studio 2013, i Visual Studio 2012. (Zobacz [wersji](https://www.visualstudio.com/vs/release-notes/) dla funkcji, które są specyficzne dla których wersji.)
 

@@ -1,6 +1,7 @@
 ---
-title: 'Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu w programie Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie i Uruchamianie testów jednostek dla kodu zarządzanego w programie Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b60317f46fc8676d51618e5c79545e752008072
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla zarządzanego kodu
 
@@ -45,10 +46,12 @@ W tym przewodniku będzie kroku użytkownika przez proces tworzenia, uruchamiani
  [Użyj testów jednostkowych, aby poprawić kod](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
->  W tym przewodniku zastosowano frameworka testów jednostkowych Microsoft dla kodu zarządzanego. Eksplorator testów również można uruchomić testy z innej jednostki testu struktur, co ma kart sieciowych w Eksploratorze testów. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)
+> W tym przewodniku zastosowano frameworka testów jednostkowych Microsoft dla kodu zarządzanego. Eksplorator testów również można uruchomić testy z innej jednostki testu struktur, co ma kart sieciowych w Eksploratorze testów. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)
+
 
 > [!NOTE]
->  Aby uzyskać informacje o sposobie uruchamiania testów z wiersza polecenia, zobacz [wskazówki: za pomocą narzędzia wiersza polecenia testowego](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+> Aby uzyskać informacje o sposobie uruchamiania testów z wiersza polecenia, zobacz [wskazówki: za pomocą narzędzia wiersza polecenia testowego](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -234,7 +237,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Usuń kod i ponownie uruchomić testy
  **Analizuj wyniki testów**
 
- Wynik testu zawiera komunikat zawierający opis błędu. Dla `AreEquals` metody komunikat wyświetlany przez możesz oczekiwanym ((**Oczekiwano\<*XXX*>**parametru) i co faktycznie otrzymano ( **Rzeczywiste\<*YYY* >** parametru). Oczekiwaną saldo zrezygnować z saldo początkowe, ale zamiast tego wzrosła o ilość wycofanie.
+ Wynik testu zawiera komunikat zawierający opis błędu. Dla `AreEquals` metody komunikat wyświetlany przez możesz oczekiwanym ((**Oczekiwano\<*XXX*>** parametru) i co faktycznie otrzymano ( **Rzeczywiste\<*YYY* >** parametru). Oczekiwaną saldo zrezygnować z saldo początkowe, ale zamiast tego wzrosła o ilość wycofanie.
 
  Ponowne testy kodu debetowa pokazuje, że test jednostkowy zakończyła się pomyślnie, w poszukiwaniu błędów. Ilość wycofanie jest dodawany do saldo konta, gdy powinna być odjęta.
 

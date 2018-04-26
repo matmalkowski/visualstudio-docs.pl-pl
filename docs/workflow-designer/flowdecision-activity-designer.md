@@ -1,7 +1,9 @@
 ---
-title: Projektant działań elementu FlowDecision | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Projektant działań elementu FlowDecision
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
@@ -10,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccddd294b11b6d7c4eee7f48fa00b77b1148717
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="flowdecision-activity-designer"></a>Projektant działań elementu FlowDecision
+
 <xref:System.Activities.Statements.FlowDecision> Węzeł jest węzłem warunkowego udostępniający gałąź przepływu sterowania do jednej z dwóch rozwiązań alternatywnych, na podstawie tego, czy określony warunek jest spełniony. Jeśli przepływ wymaga więcej niż dwa oddziały, należy użyć <xref:System.Activities.Statements.FlowSwitch%601> zamiast tego.
 
 ## <a name="the-flowdecision-node"></a>Węzeł elementu FlowDecision
- Użyj <xref:System.Activities.Statements.FlowDecision> podczas przepływu można rozgałęzionych na dwie ścieżki. A <xref:System.Activities.Statements.FlowDecision> węzeł ma <xref:System.Activities.Statements.FlowDecision.Condition%2A> i <xref:System.Activities.Statements.FlowNode> skojarzone z każdym z dwóch możliwych wyników: <xref:System.Activities.Statements.FlowDecision.True%2A> lub <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> Jest obliczane i wartość tej oceny określa następnej <xref:System.Activities.Statements.FlowNode> do przetworzenia w ciągu <xref:System.Activities.Statements.Flowchart>.
+
+Użyj <xref:System.Activities.Statements.FlowDecision> podczas przepływu można rozgałęzionych na dwie ścieżki. A <xref:System.Activities.Statements.FlowDecision> węzeł ma <xref:System.Activities.Statements.FlowDecision.Condition%2A> i <xref:System.Activities.Statements.FlowNode> skojarzone z każdym z dwóch możliwych wyników: <xref:System.Activities.Statements.FlowDecision.True%2A> lub <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> Jest obliczane i wartość tej oceny określa następnej <xref:System.Activities.Statements.FlowNode> do przetworzenia w ciągu <xref:System.Activities.Statements.Flowchart>.
 
 ### <a name="using-the-flowdecision-designer"></a>Przy użyciu narzędzia Projektant elementu FlowDecision
- **Elementu FlowDecision** designer znajduje się w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** Karta na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+ **Elementu FlowDecision** designer znajduje się w **schemat blokowy** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** Karta w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **Elementu FlowDecision** projektanta mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni w **schemat blokowy** Projektant działań. Spowoduje to utworzenie <xref:System.Activities.Statements.FlowDecision> etykietą **decyzji** w <xref:System.Activities.Statements.Flowchart> działania. Myszy przez projektanta i **True** i **False** kwadratowe dla dwóch gałęziach uchwytów.
+ **Elementu FlowDecision** projektanta mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy w ramach **schemat blokowy** Projektant działań. Spowoduje to utworzenie <xref:System.Activities.Statements.FlowDecision> etykietą **decyzji** w <xref:System.Activities.Statements.Flowchart> działania. Myszy przez projektanta i **True** i **False** kwadratowe dla dwóch gałęziach uchwytów.
 
  Po przeciąganie **elementu FlowDecision** projektanta i innych projektantów na **schemat blokowy**, węzły mogą być połączone ze sobą, aby określić kolejność wykonywania. Utwórz łącze między węzłem źródła (w tym **True** i **False** gałęzi z **elementu FlowDecision**) i do węzła docelowego myszą projektanta węzła źródłowego i uchwytów kwadratowe na każdej stronie. Jednym z kwadratowych uchwytów kliknij i przeciągnij go, przytrzymując przycisk myszy, aby jeden dojść, które jest wyświetlany w podobny sposób wokół docelowego węzła, gdy mysz nad nim. Zwolnij przycisk myszy, a tworzone jest połączenie między te dwa węzły, które jest reprezentowany jako strzałka z projektanta źródła do projektanta docelowego.
 

@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do języka R
+title: Wprowadzenie do korzystania z samouczka R
 description: Wskazówki dotyczące użycia języka R w programie Visual Studio, w tym tworzenia projektu, okno interaktywne kodu, edytowanie i debugowanie.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ec2ce9a399c363427ef80087c1db1e8ef68d2c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="getting-started-with-r-tools-for-visual-studio"></a>Pierwsze kroki z narzędziami R dla programu Visual Studio
+# <a name="get-started-with-r-tools-for-visual-studio"></a>Wprowadzenie do języka R narzędzi dla programu Visual Studio
 
 Po utworzeniu R narzędzi dla programu Visual Studio (RTVS) zainstalowany (zobacz [instalacji](installing-r-tools-for-visual-studio.md)), możesz szybko uzyskać smak doświadczenia, które zapewniają te narzędzia. 
 

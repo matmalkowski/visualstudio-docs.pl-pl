@@ -1,5 +1,5 @@
 ---
-title: Dane funkcji IntelliTrace w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Dane funkcji IntelliTrace w programie Visual Studio
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Porady: gromadzenie danych IntelliTrace pomocnych w debugowaniu trudnych problemów
 
@@ -71,7 +72,7 @@ Przed wykonaniem kroków tej procedury należy otworzyć ustawień testu z Micro
 
 5.  Wybierz **ogólne** kartę. Wybierz **tylko zdarzenia IntelliTrace** do rejestrowania znaczących zdarzeń diagnostycznych, które ma minimalny wpływ na wydajność podczas testowania.
 
-     **-**lub -
+     **-** lub -
 
      Wybierz **zdarzeń funkcji IntelliTrace i informacji o wywołaniach** do rejestrowania zdarzeń diagnostycznych i metody poziom śledzenia, który zawiera informacje wywołania. Ten poziom śledzenia może podczas wykonywania testów odczuwalnie obciążać system.
 

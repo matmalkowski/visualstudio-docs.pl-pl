@@ -1,27 +1,30 @@
 ---
-title: 'Porady: wywoływanie Windows Communication Foundation kontraktu operacji (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektanta przepływów pracy — porady: wywoływanie Windows Communication Foundation kontraktu operacji (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c97b62f7ddfbe46ac5ede4aefba53e50020f3b65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b39d2132b29ec1f8fbfd8339bdb8f81e6f752a0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Porady: wywoływanie Windows Communication Foundation kontraktu operacji (starsze)
-W tym temacie opisano sposób wywołania [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] kontraktu operację za pomocą projektanta przepływów pracy starszej wersji systemu Windows, przeznaczonego dla [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Po przeciąganie **SendActivity** działania z przybornika do powierzchni projektu przepływu pracy, musisz zaimportować istniejący kontrakt i określić, która operacja zostanie wywołany niż **SendActivity** działanie. Wybierz umowy i jego operacji za pomocą [wybierz okno dialogowe operacji (starsze)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+W tym temacie opisano, jak do wywołania operacji kontraktu usługi Windows Communication Foundation (WCF), za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows, którego element docelowy .NET Framework w wersji 3.5 lub WinFX.
 
- Również, korzystając z pliku konfiguracji z usługą, należy określić <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> Identyfikuje konfiguracji punktu końcowego działanie send będzie używana do łączenia usługi przepływu pracy.
+Gdy zostanie przeciągnięty **SendActivity** działania z przybornika na powierzchnię projektu przepływu pracy zaimportować istniejący kontrakt. Określić, która operacja jest wywoływana od tego **SendActivity** działania. Wybierz kontrakt i jego operacji za pomocą [wybierz okno dialogowe operacji (starsze)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
-### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Aby wywołać operację kontraktu usługi WCF z działania SendActivity
+Ponadto jeśli plik konfiguracji korzystają z usługą, należy określić <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> Identyfikuje konfiguracji punktu końcowego działanie send będzie używana do łączenia usługi przepływu pracy.
+
+## <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Aby wywołać operację kontraktu usługi WCF z działania SendActivity
 
 1.  Kliknij dwukrotnie **SendActivity** działania w projektancie, lub kliknij przycisk wielokropka obok **właściwości ServiceOperationInfo** właściwości w **właściwości** okienka.
 
@@ -35,13 +38,13 @@ W tym temacie opisano sposób wywołania [!INCLUDE[indigo1](../workflow-designer
 
 5.  W obszarze **dostępne operacje**, wybierz operację, aby wywołać, a następnie kliknij przycisk **OK**.
 
-### <a name="to-specify-a-channel-token"></a>Aby określić tokenu kanału
+## <a name="to-specify-a-channel-token"></a>Aby określić tokenu kanału
 
 1.  Wybierz <xref:System.Workflow.Activities.SendActivity> działania w projektancie.
 
 2.  W **właściwości** okienka, określ nazwę <xref:System.Workflow.Activities.ChannelToken>. Ta nazwa jest unikatowo identyfikuje tokenu kanału.
 
-3.  Rozwiń węzeł tokenu kanału i określ nazwę punktu końcowego klienta będą używać w <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> pola. Konfiguracja punktu końcowego o tej samej nazwie w pliku konfiguracji będzie służyć do konfigurowania kanału.
+3.  Rozwiń węzeł tokenu kanału i określ nazwę punktu końcowego klienta będą używać w <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> pola. Konfiguracja punktu końcowego o tej samej nazwie w pliku konfiguracji jest używany do konfigurowania kanału.
 
 4.  Tworzenie konfiguracji punktu końcowego w pliku konfiguracji, jeśli już istnieje. Aby uzyskać więcej informacji o konfigurowaniu klienta, zobacz [Przegląd klienta programu WCF](/dotnet/framework/wcf/wcf-client-overview).
 

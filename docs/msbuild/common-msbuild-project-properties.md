@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli przedstawiono często używane właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach TARGETS, które zapewnia MSBuild.  
@@ -69,9 +69,10 @@ W poniższej tabeli przedstawiono często używane właściwości, które są zd
 |FileAlignment|Określa w bajtach, where były wyrównane w sekcjach pliku wyjściowego. Prawidłowe wartości to 512, 1024, 2048, 4096, 8192. Ta właściwość jest odpowiednikiem `/filealignment` przełącznika kompilatora.|  
 |FrameworkPathOverride|Określa lokalizację pliku mscorlib.dll i pliku microsoft.visualbasic.dll. Ten parametr jest odpowiednikiem `/sdkpath` przełącznika kompilatora vbc.exe.|  
 |GenerateDocumentation|(Tylko w języku Visual Basic) Parametrów typu boolean wskazującą, czy dokumentacji jest generowany przez kompilację. Jeśli `true`, kompilacja generuje informacje o dokumentacji i umieszczenie go w pliku XML z nazwą pliku wykonywalnego lub biblioteki utworzonym przez zadanie kompilacji.|
-|IntermediateOutputPath|Ścieżka wyjściowa pełnej pośrednie wynikające z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład \obj\debug\\. Jeśli ta właściwość nie zostanie zastąpiona, następnie ustawienie `BaseIntermediateOutputPath` nie ma wpływu.|  
+|IntermediateOutputPath|Ścieżka wyjściowa pełnej pośrednie wynikające z `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład \obj\debug\\.|  
 |KeyContainerName|Nazwa kontenera klucza silnej nazwy.|  
 |KeyOriginatorFile|Nazwa pliku klucza silnej nazwy.|  
+|MSBuildProjectExtensionsPath|Określa ścieżkę, gdzie znajdują się rozszerzenia projektu. Domyślnie ten ma taką samą wartość jak `BaseIntermediateOutputPath`.|  
 |ModuleAssemblyName|Nazwa modułu skompilowanego jest włączona do zestawu. Właściwość jest odpowiednikiem `/moduleassemblyname` przełącznika kompilatora.|  
 |NoLogo|Wartość logiczna, która wskazuje, czy logo kompilatora, które ma zostać wyłączone. Ta właściwość jest odpowiednikiem `/nologo` przełącznika kompilatora.|  
 |NoStdLib|Wartość logiczna, która wskazuje, czy w celu uniknięcia odwołanie do biblioteki standardowej (mscorlib.dll). Wartość domyślna to `false`.|  

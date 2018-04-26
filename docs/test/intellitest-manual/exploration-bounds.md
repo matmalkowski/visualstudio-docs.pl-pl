@@ -1,8 +1,9 @@
 ---
-title: Granice eksploracji | Narzędzie Test Microsoft IntelliTest dewelopera | Dokumentacja firmy Microsoft
+title: Granice eksploracji | Narzędzie Test Microsoft IntelliTest Developer
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>Granice eksploracji
 
@@ -57,7 +58,7 @@ Zazwyczaj Przyczyna przekroczenie limitu czasu jest IntelliTest próbuje znaleź
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-Liczba megabajtów który [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) ma można obliczyć danych wejściowych, które spowodują wykonanie inną ścieżkę podjąć. Jest to opcja **PexSettingsAttributeBase** i jego typów pochodnych.
+Liczba megabajtów który [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) ma można obliczyć danych wejściowych, które spowodują wykonanie inną ścieżkę podjąć. Jest to opcja *PexSettingsAttributeBase** i jego typów pochodnych.
 
 Bardziej IntelliTest Eksploruje ścieżek wykonania programu, tym bardziej złożone, które stają się systemów ograniczenia, które IntelliTest tworzy na podstawie przepływu sterowania i przepływu danych programu. W zależności od dostępności pamięci komputera można ustawić tej wartości, aby umożliwić IntelliTest w celu spełnienia bardziej złożonych systemów ograniczenia.
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 TH emaximum Liczba uruchomień IntelliTest zostanie ponowiona podczas eksploracji testu.
 
-Motywacją za to eksploracji powiązany jest dowolny kod, który będzie zawierać pętli lub rekursji może być nieskończona liczba ścieżek wykonywania, czy w związku z tym IntelliTest musi być ograniczona podczas [wejściowych generowania](input-generation.md). 
+Motywacją za to eksploracji powiązany jest dowolny kod, który będzie zawierać pętli lub rekursji może być nieskończona liczba ścieżek wykonywania, czy w związku z tym IntelliTest musi być ograniczona podczas [wejściowych generowania](input-generation.md).
 
-Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następujący sposób: 
+Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następujący sposób:
 
 * Program IntelliTest zostanie do wywołania metody test sparametryzowany **MaxRuns** czasów dane wejściowe innego testu.
-* Jeśli wykonanie kodu jest deterministyczna, IntelliTest potrwa ścieżka wykonywania różnych każdego. 
-  Jednak w niektórych warunkach wykonanego kodu może skorzystać z ścieżka wykonywania już trwało przed, z różnych danych wejściowych. 
+* Jeśli wykonanie kodu jest deterministyczna, IntelliTest potrwa ścieżka wykonywania różnych każdego. Jednak w niektórych warunkach wykonanego kodu może skorzystać z ścieżka wykonywania już trwało przed, z różnych danych wejściowych.
 * IntelliTest zlicza liczbę ścieżek wykonywania unikatowy znajdzie; Ta liczba jest ograniczone przez **MaxRunsWithUniquePaths** opcji.
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następ
 
 Maksymalna liczba kolejnych jest uruchamiana bez nowego testu jest emitowany.
 
-Gdy IntelliTest często można znaleźć wiele interesujące dane wejściowe testu w krótkim czasie, po chwili go nie znajdzie żadnego więcej nowe dane wejściowe testu i będzie emitować już testów jednostkowych. Ta opcja konfiguracji umieszcza powiązanej na liczbę kolejnych prób IntelliTest mogą działać bez emitowanie nowego testu. Po przekroczeniu jej spowoduje zatrzymanie badań. 
+Gdy IntelliTest często można znaleźć wiele interesujące dane wejściowe testu w krótkim czasie, po chwili go nie znajdzie żadnego więcej nowe dane wejściowe testu i będzie emitować już testów jednostkowych. Ta opcja konfiguracji umieszcza powiązanej na liczbę kolejnych prób IntelliTest mogą działać bez emitowanie nowego testu. Po przekroczeniu jej spowoduje zatrzymanie badań.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ Motywacją za to eksploracji powiązany jest dowolny kod zawierający pętli lub
 Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następujący sposób: 
 
 * Program IntelliTest zostanie do wywołania metody test sparametryzowany **MaxRuns** czasów dane wejściowe innego testu.
-* Jeśli wykonanie kodu jest deterministyczna, IntelliTest potrwa ścieżka wykonywania różnych każdego. 
-  Jednak w niektórych warunkach wykonanego kodu może skorzystać z ścieżka wykonywania już trwało przed, z różnych danych wejściowych. 
+* Jeśli wykonanie kodu jest deterministyczna, IntelliTest potrwa ścieżka wykonywania różnych każdego. Jednak w niektórych warunkach wykonanego kodu może skorzystać z ścieżka wykonywania już trwało przed, z różnych danych wejściowych. 
 * IntelliTest zlicza liczbę ścieżek wykonywania unikatowy znajdzie; Ta liczba jest ograniczone przez **MaxRunsWithUniquePaths** opcji.
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są powiązane w następ
 
 Maksymalna liczba wyjątków, które można napotkano przed eksploracji jest zatrzymany.
 
-Motywacją za to eksploracji powiązany jest zatrzymanie eksploracji kodu, który zawiera wiele usterek.
-Jeśli program IntelliTest znajdzie zbyt wiele błędów w kodzie, Eksploracja została zatrzymana.
+Motywacją za to eksploracji powiązany jest zatrzymanie eksploracji kodu, który zawiera wiele usterek. Jeśli program IntelliTest znajdzie zbyt wiele błędów w kodzie, Eksploracja została zatrzymana.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 Wykonanie ścieżek, które przekraczają granice skonfigurowanej ścieżki [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), i [MaxConditions](#maxconditions) są ignorowane.
 
-Motywacją za to eksploracji powiązany jest radzenia sobie z testów niepowodujący (najprawdopodobniej). Gdy program IntelliTest osiągnie eksploracji powiązany, takich jak [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), lub [MaxConditions](#maxconditions), zakłada się test nie będzie niepowodujący procesu czy nie spowoduje przepełnienie stosu później.
-Takie przypadki testowe może spowodować problemy z innych platform testów, a ten atrybut zapewnia sposób zapobiec IntelliTest emitowanie przypadków testowych dla procesów potencjalnie niepowodujący lub przypadków testowych, które będą powodować przepełnienia stosu.
+Motywacją za to eksploracji powiązany jest radzenia sobie z testów niepowodujący (najprawdopodobniej). Gdy program IntelliTest osiągnie eksploracji powiązany, takich jak [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), lub [MaxConditions](#maxconditions), zakłada się test nie będzie niepowodujący procesu czy nie spowoduje przepełnienie stosu później. Takie przypadki testowe może spowodować problemy z innych platform testów, a ten atrybut zapewnia sposób zapobiec IntelliTest emitowanie przypadków testowych dla procesów potencjalnie niepowodujący lub przypadków testowych, które będą powodować przepełnienia stosu.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +181,10 @@ W zależności od bieżącej [TestEmissionFilter](#testemissionfilter) ustawieni
 
 **TestEmissionBranchHits** ustawienie określa, jeśli IntelliTest tylko należy rozważyć, czy cały objęte gałąź (**TestEmissionBranchHits = 1**), jeśli test objętych usługą, jego raz lub dwa razy ( **TestEmissionBranchHits = 2**) i tak dalej.
 
-**TestEmissionBranchHits = 1** spowoduje utworzenie zestawu testów niewielkie, która będzie obejmować wszystkie gałęzie IntelliTest może skontaktować. W szczególności ten zestaw testów również obejmować wszystkie bloki podstawowe i instrukcjach osiągnął. 
+**TestEmissionBranchHits = 1** spowoduje utworzenie zestawu testów niewielkie, która będzie obejmować wszystkie gałęzie IntelliTest może skontaktować. W szczególności ten zestaw testów również obejmować wszystkie bloki podstawowe i instrukcjach osiągnął.
 
 Wartość domyślna dla tej opcji to **TestEmissionBranchHits = 2**, generująca bardziej obszerne zestaw testów, który jest również lepiej dostosowane do wykrywania błędów w przyszłości regresji.
 
 ## <a name="got-feedback"></a>Masz opinię?
 
-Publikowania własnych pomysłów i funkcji żądań na  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publikowania własnych pomysłów i funkcji żądań na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

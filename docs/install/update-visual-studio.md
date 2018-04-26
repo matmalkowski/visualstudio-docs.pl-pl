@@ -1,7 +1,7 @@
 ---
 title: Aktualizacja programu Visual Studio 2017 r.
 description: Informacje o aktualizacji programu Visual Studio do najnowszej wersji, krok po kroku.
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualizacja do najnowszej wersji programu Visual Studio 2017 r.
 
@@ -53,6 +53,9 @@ Jeśli jest dostępna aktualizacja, brak odpowiednich flagę powiadomienia w pro
 
      Nadal aktualizacji. Po zakończeniu ponownego uruchomienia programu Visual Studio.
 
+     > [!NOTE]
+     > Po uruchomieniu programu Visual Studio w trybie administratora, należy ręcznie ponownie program Visual Studio po aktualizacji.    
+
 ### <a name="use-the-ide"></a>Za pomocą środowiska IDE
 
 Możesz sprawdzić dostępność aktualizacji i zainstaluj aktualizację na pasku menu programu Visual Studio.
@@ -66,6 +69,9 @@ Możesz sprawdzić dostępność aktualizacji i zainstaluj aktualizację na pask
 3. Gdy **aktualizacji** zostanie otwarte okno dialogowe, wybierz **Aktualizuj**.
 
    Aktualizacja będzie kontynuowana zgodnie z opisem w poprzedniej sekcji, a następnie Visual Studio ponownego uruchomienia po pomyślnym ukończeniu aktualizacji.
+
+   > [!NOTE]
+   > Po uruchomieniu programu Visual Studio w trybie administratora, należy ręcznie ponownie program Visual Studio po aktualizacji.  
 
 ### <a name="use-the-visual-studio-installer"></a>Użyj Instalatora programu Visual Studio
 

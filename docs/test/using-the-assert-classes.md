@@ -1,8 +1,9 @@
 ---
-title: Używanie klas potwierdzenia w celu testowania w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Używanie klas potwierdzenia w celu testowania w programie Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -13,17 +14,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff40f25e9beffa848185fe2c1f95df96928543d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-assert-classes"></a>Korzystać z klas potwierdzeń
 
 Aby sprawdzić określonych funkcji, należy użyć klas potwierdzeń UnitTestingFramework przestrzeni nazw. Kod metody w kodzie rozwoju wywiera metody testowej jednostki, ale tylko wtedy, gdy obejmują Assert-instrukcje zgłasza poprawność działania kodu.
 
 ## <a name="kinds-of-asserts"></a>Typy z potwierdzeń
+
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Przestrzeń nazw zawiera kilka rodzajów klas potwierdzeń:
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
@@ -47,7 +49,7 @@ Aby sprawdzić określonych funkcji, należy użyć klas potwierdzeń UnitTestin
  AssertInconclusiveException jest generowany, gdy test powstaje niejednoznacznego. Zwykle Dodaj instrukcję Assert.Inconclusive do testu, które są nadal działa na wskazująca, że nie jest jeszcze gotowy do uruchomienia.
 
 > [!NOTE]
->  Strategia alternatywnych byłoby oznaczyć testu, który nie jest gotowy do uruchomienia z atrybutem Ignoruj. Ma to jednak wadą, który nie może łatwo wygenerować raport liczby testów się, że masz jeszcze na wdrożenie.
+> Strategia alternatywnych jest aby oznaczyć testu, który nie jest gotowy do uruchomienia z atrybutem Ignoruj. Ma to jednak wadą, który nie może łatwo wygenerować raport liczby testów się, że masz jeszcze na wdrożenie.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
 

@@ -1,9 +1,8 @@
 ---
-title: Profilowanie XSLT | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Profilowanie XSLT
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
@@ -11,49 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab34eead94f6d70fb18a8c6a6a2194abba460c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b2ff66c51e749dedb7887388feeed12ef7c7223
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-xslt"></a>Profilowanie XSLT
-Debuger programu Visual Studio umożliwia debugowanie XSLT. Debuger obsługuje ustawianie punktów przerwania, wyświetlanie stanów wykonania XSLT, i tak dalej. Profilowanie XSLT jest dostępna w programie Visual Studio Team System i Professional Edition.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Co nowego w debugerze XSLT](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- Zawiera opis funkcji, które są nowe w tej wersji debuger XSLT.  
-  
- [Instrukcje: Rozpoczynanie debugowania kodu XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
- Opisuje sposób uruchamiania debugera XSLT.  
-  
- [Instrukcje: Używanie punktów przerwania w języku XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
- Informacje dotyczące używania punktów przerwania w arkuszu stylów.  
-  
- [Instrukcje: Ocena wyrażenia XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
- Opisuje, jak można oszacować wyrażenia XPath przy użyciu **QuickWatch** okno dialogowe.  
-  
- [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
- Pokazuje, jak można debugować arkusz stylów XSLT.  
-  
- [Szablony domyślne XSLT](../xml-tools/xslt-default-templates.md)  
- W tym artykule opisano, jak debuger XSLT obsługuje szablony domyślne.  
-  
- [Interfejs użytkownika debugera (XSLT)](../xml-tools/debugger-user-interface-xslt.md)  
- Opisuje debuger XSLT systemu windows i oknach dialogowych.  
-  
- [Profiler XSLT](../xml-tools/xslt-profiler.md)  
- Opisuje sposób dostępu profilera XSLT.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Edytowanie arkuszy stylów XSLT](../xml-tools/editing-xslt-style-sheets.md)  
- W tym artykule omówiono za pomocą edytora XML do edycji arkuszy stylów.  
-  
- [Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML](../xml-tools/security-considerations-when-working-with-xml-data.md)  
- W tym artykule omówiono problemy z zabezpieczeniami, które należy znać podczas pracy w edytorze XML lub debuger XSLT.  
-  
- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)  
- Wprowadza debuger programu Visual Studio.  
-  
- [Odwołanie XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
- Udostępnia materiałów referencyjnych XSLT elementy i funkcje.
+
+Debuger programu Visual Studio umożliwia debugowanie XSLT. Debuger obsługuje ustawianie punktów przerwania, wyświetlanie stanów wykonania XSLT, i tak dalej.
+
+> [!NOTE]
+> Debuger XSLT jest dostępna tylko w wersji Enterprise programu Visual Studio 2017 r.
+
+## <a name="xslt-profiler"></a>Profilera XSLT
+
+[Profilera XSLT](../xml-tools/xslt-profiler.md) to narzędzie, które umożliwia deweloperom mierzyć, oceny i docelowa problemów związanych z wydajnością w kodzie XSLT, tworząc szczegółowych raportów wydajności XSLT.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+
+- [Edytowanie arkuszy stylów XSLT](../xml-tools/editing-xslt-style-sheets.md) omówiono za pomocą edytora XML do edycji arkuszy stylów.
+- [Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML](../xml-tools/security-considerations-when-working-with-xml-data.md) omówiono problemy z zabezpieczeniami, które należy znać podczas pracy w edytorze XML lub debuger XSLT.
+- [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md) wprowadza debuger programu Visual Studio.
+- [Odwołanie XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) zapewnia materiałów referencyjnych XSLT elementy i funkcje.

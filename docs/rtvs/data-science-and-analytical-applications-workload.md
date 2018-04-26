@@ -1,6 +1,6 @@
 ---
 title: Obciążenie nauki dane i aplikacje analitycznych
-description: 'Obciążenie nauki dane i aplikacje analityczne w programie Visual Studio łączy Python, R, F # i ich dystrybucje odpowiednich środowiska uruchomieniowego tym Anaconda.'
+description: 'Obciążenia programu Visual Studio Thsi łączy Python, R, F # i ich dystrybucje odpowiednich środowiska uruchomieniowego tym Anaconda.'
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs - vs-python
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29812965a364b6de272f0e365f49552e4627361f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="data-science-and-analytical-applications-workload"></a>Obciążenie nauki dane i aplikacje analitycznych
+# <a name="install-data-science-support-in-visual-studio"></a>Zainstaluj obsługę nauki danych w programie Visual Studio
 
 Obciążenie nauki dane i aplikacje analitycznych, wybierz i zainstaluj przez Instalator programu Visual Studio, połączono trzech językach i dystrybucji ich odpowiednich środowiska uruchomieniowego:
 

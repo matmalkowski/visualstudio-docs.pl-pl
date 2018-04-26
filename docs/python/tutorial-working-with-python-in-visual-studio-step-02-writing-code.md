@@ -1,6 +1,6 @@
 ---
-title: Praca z języka Python, krok 2, pisania i uruchamiania kodu
-description: Krok 2 samouczka core do pracy z języka Python w programie Visual Studio, obejmujące sposób edycji i uruchomić program Hello World proste, następuje bardziej interesującego kod, który demonstruje edycję programu Visual Studio i funkcje IntelliSense.
+title: Praca z samouczka Python, krok 2, pisania i uruchamiania kodu
+description: Krok 2 przewodnika podstawowe możliwości języka Python w programie Visual Studio, w tym edytowanie kodu i uruchamianie projektu.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 660c2d8cd1070fc368111113ef96ff6b1c7d1cf6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Pisania i uruchamiania kodu
 

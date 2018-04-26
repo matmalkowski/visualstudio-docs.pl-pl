@@ -1,7 +1,9 @@
 ---
-title: Projektant szablonów ReceiveAndSendReply | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Projektant szablonów ReceiveAndSendReply
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81edeb04abacedb81ad52da17369759ba9f1f222
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 525b7deb0b40ee6952c803c9c98b212c6ed0d224
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receiveandsendreply-template-designer"></a>Projektant szablonów ReceiveAndSendReply
 
 **ReceiveAndSendReply** szablon zostanie użyty do utworzenia pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań w ramach <xref:System.Activities.Statements.Sequence> działanie, które są skorelowane w ramach wymiany komunikatów żądań i odpowiedzi wzorzec na serwerze.
 
 ## <a name="the-receiveandsendreply-template"></a>Szablon ReceiveAndSendReply
- Dodawanie **ReceiveAndSendReply** szablonu realizuje trzy funkcje oprócz tworzenia <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań z <xref:System.Activities.Statements.Sequence> działania:
+
+Dodawanie **ReceiveAndSendReply** szablonu realizuje trzy funkcje oprócz tworzenia <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań z <xref:System.Activities.Statements.Sequence> działania:
 
 1.  Konfiguruje <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> właściwości <xref:System.ServiceModel.Activities.Receive> działania.
 
@@ -31,16 +34,16 @@ ms.lasthandoff: 04/16/2018
 3.  Tworzy <xref:System.ServiceModel.Activities.CorrelationHandle> jako zmienną w działaniu nadrzędnym.
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>Przy użyciu narzędzia Projektant ReceiveAndSendReply szablonu
- **ReceiveAndSendReply** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**  karcie [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+ **ReceiveAndSendReply** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**  kartę w Projektancie przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **ReceiveAndSendReply** Projektant działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni we wszystkich działań są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działanie, które można skonfigurować za pomocą **wysyłania** Projektant działań i skorelowane <xref:System.ServiceModel.Activities.SendReply> który można skonfigurować przy użyciu projektanta SendReplyToReceive.
+ **ReceiveAndSendReply** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działanie, które można skonfigurować za pomocą **wysyłania** Projektant działań i skorelowane <xref:System.ServiceModel.Activities.SendReply> który można skonfigurować przy użyciu projektanta SendReplyToReceive.
 
  Aby uzyskać więcej informacji o korzystaniu z **Receive** projektanta, aby skonfigurować <xref:System.ServiceModel.Activities.Receive> działania, zobacz [Receive](../workflow-designer/receive-activity-designer.md) tematu.
 
  Aby uzyskać więcej informacji o korzystaniu z **SendReplyToReceive** projektanta, aby skonfigurować <xref:System.ServiceModel.Activities.SendReply> działania, zobacz następującą sekcję.
 
 ### <a name="properties-of-sendreply"></a>Właściwości SendReply
- W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.SendReply> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre mogą być edytowane [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchnię projektanta.
+ W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.SendReply> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre mogą być edytowane na powierzchni projektanta projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

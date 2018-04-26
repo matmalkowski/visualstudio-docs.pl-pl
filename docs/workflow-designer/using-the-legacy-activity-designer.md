@@ -1,7 +1,9 @@
 ---
-title: Przy użyciu narzędzia Projektant działań starszych | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — przy użyciu narzędzia Projektant działań starsza wersja
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, configuring
 - custom activities
@@ -15,19 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c69c2dfdd6fb81bcb6a544f27da0874a7dc99331
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdf7ae585697db19293362a31c5751d44c7421c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-activity-designer"></a>Przy użyciu narzędzia Projektant działań starsza wersja
-W tym temacie opisano sposób używania Projektant działań w starszej wersji projektanta przepływów pracy systemu Windows. Jeśli za pomocą starszej wersji projektanta [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Projektant działań umożliwia tworzenie własnych niestandardowych działań.
+W tym temacie opisano sposób używania Projektant działań w starszej wersji projektanta przepływów pracy systemu Windows. Jeśli .NET Framework w wersji 3.5 lub WinFX za pomocą starszej wersji projektanta.
+
+Projektant działań umożliwia tworzenie własnych niestandardowych działań.
 
 ## <a name="creating-a-custom-activity"></a>Tworzenie niestandardowego działania
- Wykonaj następujące kroki, aby utworzyć niestandardowe działanie przy użyciu narzędzia Projektant działań:
+
+Wykonaj następujące kroki, aby utworzyć niestandardowe działanie przy użyciu narzędzia Projektant działań:
 
 1.  Na **projektu** menu, kliknij przycisk **Dodaj działanie**.
 
@@ -39,10 +43,11 @@ W tym temacie opisano sposób używania Projektant działań w starszej wersji p
 
 3.  Wpisz nazwę działania lub pozostaw nazwę domyślną, a następnie kliknij przycisk **Dodaj**.
 
- Można również utworzyć zestaw niestandardowych działań przez utworzenie nowego projektu typu **biblioteki działań przepływów pracy**. Aby uzyskać więcej informacji o tym typie projektu, zobacz [porady: Tworzenie biblioteki działań przepływów pracy (starsze)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+Można również utworzyć zestaw niestandardowych działań przez utworzenie nowego projektu typu **biblioteki działań przepływów pracy**. Aby uzyskać więcej informacji o tym typie projektu, zobacz [porady: Tworzenie biblioteki działań przepływów pracy (starsze)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Konfigurowanie działania
- Gdy Projektant działań jest aktywny, można użyć przeglądarki właściwości do skonfigurowania właściwości wymienionych w poniższej tabeli.
+
+Gdy Projektant działań jest aktywny, można użyć przeglądarki właściwości do skonfigurowania właściwości wymienionych w poniższej tabeli.
 
 |Właściwość|Komentarze|
 |--------------|--------------|
@@ -52,7 +57,8 @@ W tym temacie opisano sposób używania Projektant działań w starszej wersji p
 |**włączone**|Ustaw **True** domyślnie, aby umożliwić działanie wykonywania i sprawdzania poprawności. Ustaw **False** wyłączyć działanie wykonywania i sprawdzania poprawności. Aby informacji na temat działania wykonywania i sprawdzania poprawności, zobacz [opracowywania działań przepływu pracy](http://go.microsoft.com/fwlink?LinkID=65024).|
 
 ## <a name="adding-child-activities"></a>Dodawanie działań podrzędnych
- Działanie projektujesz można przeciągnąć działań podrzędnych z przybornika. Następnie można skonfigurować każde działanie podrzędne w przeglądarce właściwości.
+
+Działanie projektujesz można przeciągnąć działań podrzędnych z przybornika. Następnie można skonfigurować każde działanie podrzędne w przeglądarce właściwości.
 
 ## <a name="see-also"></a>Zobacz także
 

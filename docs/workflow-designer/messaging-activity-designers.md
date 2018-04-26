@@ -1,21 +1,24 @@
 ---
-title: Wiadomości projektantów działań | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — projektantów działań do obsługi komunikatów
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="messaging-activity-designers"></a>Projektanci działań do obsługi komunikatów
-Komunikatów projektantów działań są używane do tworzenia i konfigurowania działania obsługi komunikatów, które wysyłania i odbierania [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] wiadomości z poziomu [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji. [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] Pięć wprowadza wiadomości działań i projektanta przepływów pracy programu Windows zapewnia dwie nowe projektantów szablonu umożliwiające zarządzanie wiadomości w przepływie pracy. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] projektantów działań i szablonu.
+
+Komunikatów projektantów działań są używane do tworzenia i konfigurowania działania obsługi komunikatów, które wysyłania i odbierania wiadomości Windows Communication Foundation (WCF) z poziomu aplikacji systemu Windows Workflow Foundation (WF). .NET Framework 4 wprowadza pięć działania obsługi wiadomości i projektanta przepływów pracy systemu Windows zapewnia dwie nowe projektantów szablonu umożliwiające zarządzanie wiadomości w przepływie pracy. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące sposobu używania projektanta przepływów pracy działania i projektantom szablonu.
 
 ## <a name="reference"></a>Tematy pomocy
  <xref:System.Activities.Activity>

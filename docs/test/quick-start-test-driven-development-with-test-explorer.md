@@ -1,6 +1,7 @@
 ---
-title: Test na tworzenie za pomocą narzędzia Eksplorator testów w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Testowanie programowanie sterowane za pomocą narzędzia Eksplorator testów w programie Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki Start: Test programowanie sterowane za pomocą narzędzia Eksplorator testów
 
@@ -60,10 +61,12 @@ Firma Microsoft zaleca utworzenie testów jednostkowych, aby zapewnić działani
  **Aby debugować testu:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz pozycję **Debuguj zaznaczone testy**.
 
 > [!IMPORTANT]
->  Wyniki, które są wyświetlane są dla ostatniego uruchomienia. Na pasku kolorowe wyniki wyświetlany tylko wyniki uruchomionych testów. Na przykład uruchomić wiele testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom tylko testy pomyślne, następnie na pasku wyników wyświetli wszystkie zielony.
+> Wyniki, które są wyświetlane są dla ostatniego uruchomienia. Na pasku kolorowe wyniki wyświetlany tylko wyniki uruchomionych testów. Na przykład uruchomić wiele testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom tylko testy pomyślne, następnie na pasku wyników wyświetli wszystkie zielony.
+
 
 > [!NOTE]
->  Jeśli pojawi się żaden test, upewnij się, który zainstalowany adapter w celu nawiązania Eksploratora testów struktury testowej, którego używasz. Aby uzyskać więcej informacji, zobacz [przy użyciu różnych platform testów z Eksploratora testów](#frameworks).
+> Jeśli pojawi się żaden test, upewnij się, który zainstalowany adapter w celu nawiązania Eksploratora testów struktury testowej, którego używasz. Aby uzyskać więcej informacji, zobacz [przy użyciu różnych platform testów z Eksploratora testów](#frameworks).
+
 
 ##  <a name="walkthrough"></a> Wskazówki: Korzystanie z metody tworzenia testów jednostkowych
  W tym przewodniku pokazano, jak opracowanie metodę przetestowany w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Można łatwo dostosować go dla innych języków i korzystania z innych platform testu, takie jak NUnit łącze. Aby uzyskać więcej informacji, zobacz [przy użyciu różnych platform testów](#frameworks).
