@@ -1,9 +1,8 @@
 ---
-title: Znajdowanie i używanie rozszerzeń programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Znajdowanie i używanie rozszerzeń programu Visual Studio
 ms.date: 06/07/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -17,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682c5d889fa39b5e808e68da6d57bf54504db8b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a5b562aa6fe4a64f92d66ad0a6fff0395e5314a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzeń programu Visual Studio
 

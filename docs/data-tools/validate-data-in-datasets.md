@@ -19,14 +19,15 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71d651d2e2d6c84b5858bb4687bf74aa503d014c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8986ce9e2ee1ff171a524b0a402a1e44b70ca06
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-data-in-datasets"></a>Sprawdzanie poprawności danych w zestawach danych
 Sprawdzanie poprawności danych jest proces potwierdzania wartości wprowadzanego do obiektów danych są zgodne z ograniczeniami w ramach schematu zestawu danych. Proces weryfikacji również potwierdza, że te wartości są następujące reguły, które zostały utworzone dla aplikacji. Jest dobrym rozwiązaniem, aby sprawdzić poprawność danych przed ich wysłaniem aktualizacje do źródłowej bazy danych. Zmniejsza to błędy, a także potencjalnych liczby rund między aplikacją i bazy danych.

@@ -1,9 +1,9 @@
 ---
-title: Selektor wstawek kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Selektor wstawek kodu
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01cfc51591264b258518f4c90276a7ece11250
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippet-picker"></a>Selektor wstawek kodu
 
@@ -47,15 +47,17 @@ W większości języków programowania Visual Studio, można użyć **Menedżerz
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
-Nazwa elementu  
+Nazwa elementu
+
 Pole edycji tekstu, które wyświetla nazwę elementu wybranego w **listy elementów**. Aby wykonać wyszukiwanie przyrostowe dla elementu, który ma, Rozpocznij wpisując jej nazwę w tym polu. Dodawaj litery do momentu żądany element jest zaznaczony **listy elementów**.
 
-Lista elementów  
+Lista elementów
+
 Lista dostępnych dla wstawiania lub listy folderów zawierających wstawki kodu wstawki kodu. Aby wstawić fragment lub rozwiń folder, wybierz element ma i naciśnij klawisz Enter.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu](../../ide/best-practices-for-using-code-snippets.md)  
-[Wstawki kodu IntelliSense języka Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)  
-[Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu](../../ide/best-practices-for-using-code-snippets.md)
+- [Wstawki kodu IntelliSense języka Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Ustawianie zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)
+- [Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../../ide/how-to-use-surround-with-code-snippets.md)

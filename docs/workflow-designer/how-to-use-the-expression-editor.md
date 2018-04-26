@@ -1,7 +1,9 @@
 ---
-title: 'Porady: używanie edytora wyrażeń | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: używanie edytora wyrażeń'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -10,16 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e14a967b9721973d8d545e10f58cab3c68b8e15
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Porady: używanie edytora wyrażeń
+
 Edytor wyrażeń jest formant projektanta przepływów pracy systemu Windows, który jest używany w wielu działań przepływu pracy jako sposób wprowadzania i oceny tych wyrażeń. Edytor wyrażeń zapewnia pełni funkcjonalnymi IDE, edytowania IntelliSense, w tym kolorowania, ParamInfo, zygzaki sygnalizujące błędy, między innymi funkcjami. Po jego wprowadzeniu, kompilator sprawdza wyrażenie. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlony ikony błędu. Można również otworzyć edytora jako **edytora wyrażeń** okno dialogowe.
 
- Wyrażenia są wartości literałów lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kod powiązany z argumentów lub właściwości. Zawierają one elementy wartość (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami umożliwiające uzyskanie nową wartość. Wyrażenia są napisane przy użyciu składni VB.NET, nawet jeśli aplikacja programu przy użyciu języka C#. To oznacza, że wielkość liter nie ma znaczenia, porównanie odbywa się przy użyciu równa się pojedynczy znak ("="), zamiast ("=="), operatorów logicznych są wyrazy "i" i "lub" zamiast symboli "& &" i "&#124;&#124;", i **nic**  jest używany zamiast **null**. Aby uzyskać więcej informacji na temat wyrażenia i operatory w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oraz niektóre przykłady, zobacz [operatory i wyrażenia w Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+ Wyrażenia są wartości literału lub kod Visual Basic powiązany z argumentów lub właściwości. Zawierają one elementy wartość (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami umożliwiające uzyskanie nową wartość. Wyrażenia są napisane przy użyciu składni VB.NET, nawet jeśli aplikacja programu przy użyciu języka C#. To oznacza, że wielkość liter nie ma znaczenia, porównanie odbywa się przy użyciu równa się pojedynczy znak ("="), zamiast ("=="), operatorów logicznych są wyrazy "i" i "lub" zamiast symboli "& &" i "&#124;&#124;", i **nic**  jest używany zamiast **null**. Aby uzyskać więcej informacji na temat wyrażenia i operatory w języku Visual Basic i niektóre przykłady, zobacz [operatory i wyrażenia w Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
 
  **Edytora wyrażeń** działa w następujący sposób:
 
@@ -30,11 +33,11 @@ Edytor wyrażeń jest formant projektanta przepływów pracy systemu Windows, kt
 -   Jeśli można skupić się na edytorze wyrażenie w Projektancie rehosted przepływu pracy, następnie ją zachowuje się jak pole tekstowe. Gdy fokus jest stracił w Projektancie rehosted przepływów pracy, Edytor wyrażeń ponownie wygląda jak regularne blok tekstu.
 
 > [!NOTE]
-> IntelliSense dla edytora wyrażeń jest dostępna tylko wewnątrz elementu [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. W obu [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] i scenariusze rehosted kompilator sprawdza wyrażenie po jest wprowadzana i edytora wyrażeń Wyświetla ikonę błędu, jeśli wyrażenie jest nieprawidłowe.
+> IntelliSense dla edytora wyrażeń jest dostępna tylko w ramach programu Visual Studio 2010. W Visual Studio 2010 i scenariusze rehosted kompilator sprawdza wyrażenie po jest wprowadzana i edytora wyrażeń Wyświetla ikonę błędu, jeśli wyrażenie jest nieprawidłowe.
 
-### <a name="using-the-expression-editor"></a>Za pomocą edytora wyrażeń
+## <a name="use-the-expression-editor"></a>Użyj edytora wyrażeń
 
-1.  W [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], otwórz projekt nowego lub istniejącego przepływu pracy.
+1.  W programie Visual Studio 2010 Otwórz projekt nowego lub istniejącego przepływu pracy.
 
 2.  Dodaj na przykład <xref:System.Activities.Statements.Assign> działania do przepływu pracy.
 

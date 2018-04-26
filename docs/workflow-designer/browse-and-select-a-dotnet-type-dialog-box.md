@@ -1,7 +1,9 @@
 ---
-title: Wyszukaj i wybierz typ .NET dialogowe | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Wyszukaj i wybierz typ .NET okno dialogowe
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukaj i wybierz typ .NET okno dialogowe
 
@@ -34,7 +36,7 @@ W **właściwości** projektantów, takich jak projektanta zmiennych, po wybrani
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Wybranie wartości lub typ referencyjny z przeglądarki typu
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Aby wybrać typ wartości lub odwołania z przeglądarki typu
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Aby wybrać typ wartości lub odwołania z przeglądarki typu
 
 1.  W **nazwy typu** wprowadź nazwę typu, który ma być używany.
 
@@ -44,7 +46,7 @@ W **właściwości** projektantów, takich jak projektanta zmiennych, po wybrani
 
     -   Wpisz małej liczby znaków w **nazwy typu** pole, aby jednoznacznie zidentyfikować typ, który ma być używany, a następnie naciśnij klawisz enter, aby wybrać typ
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Aby wybrać typu ogólnego z przeglądarki typu
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>Aby wybrać typu ogólnego z przeglądarki typu
 
 1.  W **nazwy typu** , wpisz nazwę typu, który ma być używany.
 

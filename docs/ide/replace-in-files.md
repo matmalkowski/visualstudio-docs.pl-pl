@@ -1,7 +1,7 @@
 ---
-title: Visual Studio Znajdź i Zamień w plikach | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Visual Studio Znajdź i Zamień w plikach
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8b3dbf5582d7f19af6ee8506caacff4a14f9b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="replace-in-files"></a>Zastąp w plikach
 
 **Zastąp w plikach** umożliwia wyszukiwanie kodu określonego zestawu plików dla ciągu lub wyrażenia i zmienić niektórych lub wszystkich znalezionych dopasowań. Znalezionych dopasowań oraz działania podjęte są wymienione w **znaleźć wyników** wybrany w oknie **powoduje opcje**.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia**, **Import i eksport ustawień**, a następnie Wybierz **zresetować wszystkie ustawienia**.
+> Okna dialogowe i widzisz polecenia menu mogą różnić się od opisanych w **pomocy** w zależności od wersji lub aktywne ustawienia. Aby zmienić ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz pozycję **zresetować wszystkie ustawienia**.
 
 Można użyć dowolnej z następujących metod można wyświetlić **Zastąp w plikach** w **Znajdź i Zamień** okna.
 
@@ -39,18 +39,18 @@ Można użyć dowolnej z następujących metod można wyświetlić **Zastąp w p
 
    — lub —
 
-Jeśli **Znajdź i Zamień** okno jest już otwarty, na pasku narzędzi, wybierz **Zastąp w plikach**.
+  Jeśli **Znajdź i Zamień** okno jest już otwarty, na pasku narzędzi, wybierz **Zastąp w plikach**.
 
 ## <a name="find-what"></a>Znajdź
 
-Aby wyszukać nowe ciąg tekstowy lub wyrażenie, należy określić w polu. Aby wyszukiwać dowolne ciągi 20, które można przeszukiwać ostatnio, otwarcie listy rozwijanej i wybierz ciąg. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisku, jeśli chcesz używać jednego lub wielu wyrażeń regularnych w wyszukiwanym ciągu. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Aby wyszukać nowe ciąg tekstowy lub wyrażenie, należy określić w polu. Aby wyszukiwać dowolne ciągi 20, które można przeszukiwać ostatnio, otwarcie listy rozwijanej i wybierz ciąg. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisku, jeśli chcesz używać jednego lub wielu wyrażeń regularnych w wyszukiwanym ciągu. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
 > **Konstruktor wyrażeń** przycisk zostanie włączona tylko, jeśli wybrano **należy użyć wyrażeń regularnych** w obszarze **dostępne opcje**.
 
 ## <a name="replace-with"></a>Zamień
 
-Aby zastąpić wystąpienia ciągu w **Znajdź** pole z innego ciągu, wpisz ciąg zastępczy w **Zamień** pole. Aby usunąć wystąpienia ciągu w **Znajdź** pozostaw to pole puste. Otwórz listę, aby wyświetlić 20 ciągów, dla których Przeszukano ostatnio. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisku, jeśli chcesz używać jednego lub wielu wyrażeń regularnych w ciągu zastąpienia. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Aby zastąpić wystąpienia ciągu w **Znajdź** pole z innego ciągu, wpisz ciąg zastępczy w **Zamień** pole. Aby usunąć wystąpienia ciągu w **Znajdź** pozostaw to pole puste. Otwórz listę, aby wyświetlić 20 ciągów, dla których Przeszukano ostatnio. Wybierz sąsiadujących **Konstruktor wyrażeń** przycisku, jeśli chcesz używać jednego lub wielu wyrażeń regularnych w ciągu zastąpienia. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="look-in"></a>Szukaj w
 
@@ -63,34 +63,40 @@ Opcja wybrana z **Szukaj w** listy rozwijanej określa, czy **Zastąp w plikach*
 
 Można rozwinąć lub zwinąć **dostępne opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
 
-Uwzględnij wielkość liter  
+**Wielkość liter**
+
 Po wybraniu **znaleźć wyników** windows będą wyświetlane tylko wystąpienia **Znajdź** ciąg, który jest zgodny zarówno przez zawartość, jak i w przypadku. Na przykład, wyszukaj "MyObject" z **wielkość liter** wybrane będzie zwracać "MyObject", ale nie "myobject" lub "MYOBJECT."
 
-Uwzględnij całe wyrazy  
+**Uwzględnij całe wyrazy**
+
 Po wybraniu **znaleźć wyników** windows będą wyświetlane tylko wystąpienia **Znajdź** parametry, które są dopasowywane w kompletne wyrazy. Na przykład wyszukaj "MyObject" zwróci "MyObject", ale nie "CMyObject" lub "MyObjectC."
 
-Używanie wyrażeń regularnych  
-Gdy to pole wyboru jest zaznaczone, można użyć notacji specjalne wzorce tekstu w **Znajdź** lub **Zamień** pól tekstowych. Aby uzyskać listę tych notacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+**Używanie wyrażeń regularnych**
 
-Obejrzyj następujące typy plików  
-Ta lista wskazuje typy plików do przeszukiwania w **Szukaj w** katalogów. Jeśli to pole pozostanie puste, wszystkie pliki w **Szukaj w** katalogi będą wyszukiwane.
+Gdy to pole wyboru jest zaznaczone, można użyć notacji specjalne wzorce tekstu w **Znajdź** lub **Zamień** pól tekstowych. Aby uzyskać listę tych notacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Wybierz dowolną pozycję na liście, wprowadź ciąg wyszukiwania wstępnie skonfigurowane, które zostaną znalezione pliki określonego typu.
+**Obejrzyj następujące typy plików**
+
+Ta lista wskazuje typy plików do przeszukiwania w **Szukaj w** katalogów. Jeśli to pole pozostanie puste, wszystkie pliki w **Szukaj w** katalogi będą wyszukiwane. Wybierz dowolną pozycję na liście, wprowadź ciąg wyszukiwania wstępnie skonfigurowane, które zostaną znalezione pliki określonego typu.
 
 ## <a name="result-options"></a>Opcje wyników
 
 Można rozwinąć lub zwinąć **powoduje opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
 
-Znajdź okno wyników 1  
+**Znajdź wyniki 1** okna
+
 Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 1 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 1 wyniki**.
 
-Znajdź okno wyników 2  
+**Znajdź 2 wyniki** okna
+
 Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 2 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 2 wyniki**.
 
-Wyświetl tylko nazwy plików  
-Gdy to pole wyboru jest zaznaczone, windows wyniki Znajdź listę pełnej nazwy i ścieżki dla wszystkich plików, które zawierają ciąg wyszukiwania. Jednak wyniki nie będą zawierać wiersz kodu, w którym pojawi się ciąg. To pole wyboru jest dostępne dla Znajdź w plikach tylko.
+**Wyświetl tylko nazwy plików**
 
-Kontynuuj modyfikowanie otwartych plików po Zamień wszystkie  
+Gdy to pole wyboru jest zaznaczone, **znaleźć wyników** windows listy pełnej nazwy i ścieżki dla wszystkich plików, które zawierają ciąg wyszukiwania. Jednak wyniki nie będą zawierać wiersz kodu, w którym pojawi się ciąg. To pole wyboru jest dostępne dla **Znajdź w plikach** tylko.
+
+**Kontynuuj modyfikowanie otwartych plików po Zamień wszystkie**
+
 Po wybraniu pozostawia otwarte wszystkie pliki, w których zostały wprowadzone wymiany, więc można cofnąć lub zapisać zmiany. Ograniczenia pamięci może ograniczyć liczbę plików, które mogą pozostawać otwarte po operacji Zastąp.
 
 > [!CAUTION]
@@ -98,6 +104,6 @@ Po wybraniu pozostawia otwarte wszystkie pliki, w których zostały wprowadzone 
 
 ## <a name="see-also"></a>Zobacz także
 
-[Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)  
-[Znajdź w plikach](../ide/find-in-files.md)  
-[Visual Studio — polecenia](../ide/reference/visual-studio-commands.md)
+- [Znajdź i Zamień tekst](../ide/finding-and-replacing-text.md)
+- [Znajdź w plikach](../ide/find-in-files.md)
+- [Visual Studio — polecenia](../ide/reference/visual-studio-commands.md)

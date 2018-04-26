@@ -1,5 +1,5 @@
 ---
-title: Zawierają nagrania ekranu i głosu podczas testów przy użyciu ustawień testów w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Zawierają nagrania ekranu i głosu podczas testów przy użyciu ustawień testów w programie Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3888f9c07c02fa640c451f84f58243369ce1fda6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 827b76f3b4b40f59fe22b3c5424c6d8c13087809
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Porady: uwzględnianie podczas testów nagrań głosu i zawartości ekranu przy użyciu ustawień testów
 

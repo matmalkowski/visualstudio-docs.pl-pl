@@ -1,7 +1,9 @@
 ---
-title: ExistsInCollection&lt;T&gt; Projektant działań | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — ExistsInCollection&lt;T&gt; Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; Projektant działań
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > Projektant działań
+
 **ExistsInCollection\<T >** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.ExistsInCollection%601> działania.
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection < T\> działania
+## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > działania
  <xref:System.Activities.Statements.ExistsInCollection%601> Działania określa, czy określony element istnieje w określonej kolekcji.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Przy użyciu ExistsInCollection\<T > Projektant działań
- **ExistsInCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+ **ExistsInCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **ExistsInCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni we wszystkich działań są zwykle umieszczane, takich jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.ExistsInCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z ExistsInCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Go można zmienić w siatce właściwości.)  <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **ExistsInCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
+ **ExistsInCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.ExistsInCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z ExistsInCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Go można zmienić w siatce właściwości.)  <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **ExistsInCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection < T\> właściwości
+### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > Właściwości
  W poniższej tabeli przedstawiono <xref:System.Activities.Statements.ExistsInCollection%601> właściwości oraz opis korzystania z nich w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|

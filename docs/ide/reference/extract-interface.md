@@ -1,7 +1,7 @@
 ---
-title: Wyodrębnij interface Refaktoryzacja w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wyodrębnij interface Refaktoryzacja w programie Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7abdc017c4d57e17685671539a4b053e6241b424
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6afc2acab36be88b4eb554d1900e6b314e395bd9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnij refaktoryzacji — interfejs
 
@@ -81,4 +81,4 @@ Dotyczy to refaktoryzacji:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Refaktoryzacja](../refactoring-in-visual-studio.md)

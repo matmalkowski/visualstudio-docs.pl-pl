@@ -1,10 +1,9 @@
 ---
-title: Opcje, Edytor tekstu, rozszerzenie pliku | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Opcje, edytor tekstu, rozszerzenie pliku
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -18,41 +17,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a87480bfe7a2d60df9ccd94ac0711c71de9223
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b5fc6249477cdab9a4c13608a260820a801e081
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
-Opcje tego okna dialogowego pozwala określić, jak wszystkie pliki z określonych rozszerzeń plików będzie obsługiwany przez program Visual Studio zintegrowane środowisko programistyczne (IDE). Dla każdego **rozszerzenia** że należy wprowadzić, możesz wybrać środowisko edycji. Dzięki temu można wybrać edytor IDE lub designer Otwórz dokumenty określonego typu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **Edytor tekstu** , a następnie wybierz węzeł **rozszerzenie pliku**.  
-  
- Po wybraniu opcji "z kodowaniem", wyświetli się okno dialogowe przy każdym otwarciu dokumentu tego typu, który służy do wybierania schemat kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersje dokumentów projektu do użycia na różnych platformach lub w różnych językach docelowej.  
-  
+Opcje tego okna dialogowego pozwala określić, jak wszystkie pliki z określonych rozszerzeń plików będzie obsługiwany przez program Visual Studio zintegrowane środowisko programistyczne (IDE). Dla każdego **rozszerzenia** że należy wprowadzić, możesz wybrać środowisko edycji. Dzięki temu można wybrać edytor IDE lub designer Otwórz dokumenty określonego typu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **Edytor tekstu** , a następnie wybierz węzeł **rozszerzenie pliku**.
+
+ Po wybraniu opcji "z kodowaniem", wyświetli się okno dialogowe przy każdym otwarciu dokumentu tego typu, który służy do wybierania schemat kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersje dokumentów projektu do użycia na różnych platformach lub w różnych językach docelowej.
+
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="uielement-list"></a>Lista elementów UI  
- **Rozszerzenie**  
- Wpisz rozszerzenie pliku, którego edycji środowisko IDE chcesz zdefiniować.  
-  
- **Edytor**  
- Wybierz edytor IDE lub projektanta, w które dokumenty przy użyciu tego pliku zostanie otwarta rozszerzenia. Po wybraniu opcji "z kodowaniem", wyświetli się okno dialogowe przy każdym otwarciu takiego dokumentu, który służy do wybierania schemat kodowania.  
-  
- **Dodaj**  
- Dodaje wpis zawierający określony **rozszerzenia** i **edycji środowisko** do listy rozszerzeń.  
-  
- **Usuń**  
- Usuwa wybranego wpisu z listy rozszerzeń.  
-  
- **Lista rozszerzeń**  
- Wyświetla listę wszystkich rozszerzeń, dla których określono środowisko edycji.  
-  
- **Mapuj pliki bez rozszerzenia, aby**  
- Wybierz tę opcję, jeśli chcesz określić sposób obsługi plików bez rozszerzenia IDE.  
-  
- **Opcje pliku bez rozszerzenia**  
- Udostępnia tę samą listę jako **edytor**. Wybierz edytor IDE lub designer Otwórz dokumenty bez rozszerzeń plików.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+
+
+## <a name="uielement-list"></a>Lista elementów UI
+ **Rozszerzenie**
+
+ Wpisz rozszerzenie pliku, którego edycji środowisko IDE chcesz zdefiniować.
+
+ **Edytor**
+
+ Wybierz edytor IDE lub projektanta, w które dokumenty przy użyciu tego pliku zostanie otwarta rozszerzenia. Po wybraniu opcji "z kodowaniem", wyświetli się okno dialogowe przy każdym otwarciu takiego dokumentu, który służy do wybierania schemat kodowania.
+
+ **Dodaj**
+
+ Dodaje wpis zawierający określony **rozszerzenia** i **edycji środowisko** do listy rozszerzeń.
+
+ **Usuń**
+
+ Usuwa wybranego wpisu z listy rozszerzeń.
+
+ **Lista rozszerzeń**
+
+ Wyświetla listę wszystkich rozszerzeń, dla których określono środowisko edycji.
+
+ **Mapuj pliki bez rozszerzenia, aby**
+
+ Wybierz tę opcję, jeśli chcesz określić sposób obsługi plików bez rozszerzenia IDE.
+
+ **Opcje pliku bez rozszerzenia**
+
+ Udostępnia tę samą listę jako **edytor**. Wybierz edytor IDE lub designer Otwórz dokumenty bez rozszerzeń plików.
+
+## <a name="see-also"></a>Zobacz też
+
+- [Instrukcje: Zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)

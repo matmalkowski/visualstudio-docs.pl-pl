@@ -1,9 +1,9 @@
 ---
-title: Typy plików projektu i rozwiązania | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Typy plików projektu i rozwiązania
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - File Properties.CopyToOutputDirectory
 - File Properties.CustomToolNamespace
@@ -25,11 +25,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc172d53e326d5bb20668f6919e887eca39f582
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3786d6f38e4f87aa05a51b0a6112613bda65e56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="project-and-solution-file-types"></a>Typy plików projektu i rozwiązania
 
@@ -52,4 +52,4 @@ Aby uzyskać więcej informacji na temat typów plików w projektach C++, zobacz
 
 ## <a name="see-also"></a>Zobacz także
 
-[Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)

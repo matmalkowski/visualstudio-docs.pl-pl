@@ -1,7 +1,9 @@
 ---
-title: Powiąż z działaniem&#39;s właściwości — okno dialogowe (starsze) | Dokumentacja firmy Microsoft
+title: Powiązać projektanta przepływów pracy — działania&#39;s właściwości — okno dialogowe (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Powiąż z działaniem&#39;s właściwości — okno dialogowe (starsze)
-W tym temacie opisano sposób użycia **powiązać z właściwością działania** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Powiązanie do działania właściwości — okno dialogowe (starsze)
+
+W tym temacie opisano sposób użycia **powiązać z właściwością działania** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
  Typ wystąpienia właściwości zależności może być powiązana do publicznej właściwości lub zdarzenia innego działania. Aby uzyskać więcej informacji na temat powiązanie działania, zobacz [przy użyciu właściwości zależności](http://go.microsoft.com/fwlink?LinkID=65007).
 

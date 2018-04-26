@@ -1,9 +1,9 @@
 ---
-title: 'Samouczek 3: Tworzenie pasujący gier | Dokumentacja firmy Microsoft'
+title: 'Samouczek 3: Tworzenie pasującego gry'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,39 +11,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d0e538304e2d9c3fb5ca71747fd1ed2ab2a5fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie pasującego gry
 W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary ukrytych ikon. Dowiesz się, jak:  
-  
+
 -   Przechowywanie obiekty, takie jak ikony, w `List` obiektu.  
-  
+
 -   Użyj `foreach` pętli języka Visual C# lub `For Each` pętli w języku Visual Basic do iteracji elementów na liście.  
-  
+
 -   Śledzić stan formularza za pomocą zmiennych odwołania.  
-  
+
 -   Stworzyć program obsługi zdarzeń w celu reagowania na zdarzenia, którego możesz używać z wieloma obiektami.  
-  
+
 -   Stworzyć czasomierz, który odlicza czas do zera, a następnie uruchamia zdarzenie dokładnie jeden raz po uruchomieniu.  
-  
+
  Po zakończeniu samouczka program będzie wyglądać tak, jak na poniższej ilustracji.  
-  
+
  ![Gry utworzone w tym samouczku](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 Gra tworzona w ramach tego samouczka  
-  
+
  Aby pobrać ukończoną wersję przykładu, zobacz [przykładowy samouczek pełne dopasowanie gry](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
-  
+
 > [!NOTE]
 >  W tym samouczku omówiono zarówno Visual C#, jak i Visual Basic, więc skoncentruj się na informacjach specyficznych dla języka programowania, którego używasz.  
-  
+
  Jeśli masz problem lub pytania dotyczące programowania, spróbuj zadać pytanie na jednym z forów MSDN. Zobacz [Forum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) i [Forum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Dostępne są tam również wspaniałe, bezpłatne materiały szkoleniowe wideo. Aby dowiedzieć się więcej na temat programowania w języku Visual Basic, zobacz [podstawy języka Visual Basic: Programowanie dla początkujących bezwzględną](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat programowania w języku języka Visual C#, zobacz [podstawy języka C#: Programowanie dla początkujących bezwzględną](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
-  
+
 ## <a name="related-topics"></a>Tematy pokrewne  
-  
+
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Krok 1. Tworzenie projektu i dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Rozpocznij od utworzenia projektu i dodaniu `TableLayoutPanel` formantu, aby zachować formanty prawidłowo wyrównane.|  

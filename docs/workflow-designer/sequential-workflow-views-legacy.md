@@ -1,7 +1,9 @@
 ---
-title: Widoki sekwencyjnego przepływu pracy (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — widoki sekwencyjnego przepływu pracy (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Widoki sekwencyjnego przepływu pracy (starsze)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] zawiera starsze projektanta przepływów pracy systemu Windows, który może służyć do docelowego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Umożliwia tworzenie graficznie [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji przy użyciu znanych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika. [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacje składają się z etapów procesu przepływu pracy nazywane działaniami. Aby utworzyć przepływ pracy, napisz działań na powierzchni projektu przez przeciąganie ich projektanci odpowiednich działań z **przybornika** na powierzchnię projektu.
+Program Visual Studio 2010 udostępnia starszej wersji projektanta przepływu pracy systemu Windows, który może służyć do docelowego .NET Framework w wersji 3.5 lub WinFX.
 
- Po utworzeniu sekwencyjnego przepływu pracy, który jest [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), dostępne są trzy widoki przepływu pracy. Widoki te są dostępne z **przepływu pracy** menu i z menu kontekstowego na powierzchni projektu.
+Projektant przepływu pracy umożliwia graficznie tworzenie aplikacji systemu Windows Workflow Foundation (WF) przy użyciu znanych interfejsu użytkownika programu Visual Studio. Aplikacje systemu Windows Workflow Foundation (WF) składają się z etapów procesu przepływu pracy nazywane działaniami. Aby utworzyć przepływ pracy, napisz działań na powierzchni projektu przez przeciąganie ich projektanci odpowiednich działań z **przybornika** na powierzchnię projektu.
 
- W poniższej tabeli wymieniono nazwę i opis każdego widoku.
+Po utworzeniu sekwencyjnego przepływu pracy, który jest [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), dostępne są trzy widoki przepływu pracy. Widoki te są dostępne z **przepływu pracy** menu i z menu kontekstowego na powierzchni projektu.
+
+W poniższej tabeli wymieniono nazwę i opis każdego widoku.
 
 |Opcja menu, karta|Opis|
 |----------------------|-----------------|

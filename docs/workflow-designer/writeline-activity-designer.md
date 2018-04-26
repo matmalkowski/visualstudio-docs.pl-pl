@@ -1,7 +1,9 @@
 ---
-title: Projektant działań WriteLine | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Projektant działań WriteLine
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b52bf3401e609076043f42a8df3544313d6e8a74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0cfe187a77a956c9ebca2649b33dba9218f0fb4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="writeline-activity-designer"></a>Projektant działań WriteLine
+
 **WriteLine** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.WriteLine> działania.
 
 ## <a name="the-writeline-activity"></a>Działanie WriteLine
- <xref:System.Activities.Statements.WriteLine> Działania zapisuje tekst w określonym <xref:System.IO.TextWriter> obiektu. Jeśli nie <xref:System.IO.TextWriter> jest określony, <xref:System.Activities.Statements.WriteLine> zapisuje tekst do konsoli.
+
+<xref:System.Activities.Statements.WriteLine> Działania zapisuje tekst w określonym <xref:System.IO.TextWriter> obiektu. Jeśli nie <xref:System.IO.TextWriter> jest określony, <xref:System.Activities.Statements.WriteLine> zapisuje tekst do konsoli.
 
 ### <a name="using-the-writeline-activity-designer"></a>Przy użyciu narzędzia Projektant działań WriteLine
- **WriteLine** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karty [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
+ **WriteLine** Projektant działań można znaleźć w **podstawowych** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika**karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **WriteLine** Projektant działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni we wszystkich działań zwykle są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.WriteLine> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z WriteLine. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **WriteLine** Projektant działań lub **DisplayName** pola siatki właściwości.
+ **WriteLine** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.WriteLine> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z WriteLine. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **WriteLine** Projektant działań lub **DisplayName** pola siatki właściwości.
 
 ### <a name="the-writeline-properties"></a>Właściwości WriteLine
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.WriteLine> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre z nich można edytowane na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]powierzchnię projektanta.
+ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.WriteLine> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości i niektóre z nich można edytowane na powierzchni Designerdesigner przepływu pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

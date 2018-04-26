@@ -1,9 +1,10 @@
 ---
-title: Visual Studio 2017 dla deweloperów platformy .NET | Dokumentacja firmy Microsoft
+title: Visual Studio 2017 dla deweloperów platformy .NET
 description: Omówienie funkcji programu Visual Studio 2017 ułatwia pisanie szybciej lepsze kodu platformy .NET.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -11,15 +12,15 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b7625a074732949e9fb876627dbff1abf005982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 wydajność przewodnik dla deweloperów platformy .NET
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) zwiększa wydajność niż kiedykolwiek deweloperów! Firma Microsoft poprawia wydajność i niezawodność dla uruchomienia rozwiązania i obciążenia, wykrywania testów i wpisując opóźnienia. Firma Microsoft również został dodany i ulepszone funkcje umożliwiające szybsze pisanie kodu lepsze. Oto niektóre z tych funkcji: Nawigacja do zestawów decompiled, zmiennej nazwy sugestie podczas wpisywania, widok hierarchii w Eksploratorze testów, przejdź do wszystkich (**Ctrl + T**) można przejść do deklaracji pliku/typu/elementu członkowskiego/symbol inteligentnego pomocnika wyjątków, konfiguracja styl kodu i wymuszanie i wiele poprawek refaktoryzacje i kod. 
+[Visual Studio 2017](https://www.visualstudio.com/downloads/) zwiększa wydajność niż kiedykolwiek deweloperów! Firma Microsoft poprawia wydajność i niezawodność dla uruchomienia rozwiązania i obciążenia, wykrywania testów i wpisując opóźnienia. Firma Microsoft również został dodany i ulepszone funkcje umożliwiające szybsze pisanie kodu lepsze. Oto niektóre z tych funkcji: Nawigacja do zestawów decompiled, zmiennej nazwy sugestie podczas wpisywania, widok hierarchii w Eksploratorze testów, przejdź do wszystkich (**Ctrl + T**) można przejść do deklaracji pliku/typu/elementu członkowskiego/symbol inteligentnego pomocnika wyjątków, konfiguracja styl kodu i wymuszanie i wiele poprawek refaktoryzacje i kod.
 
 Postępuj zgodnie z tego przewodnika, aby zoptymalizować wydajność.
 
@@ -31,7 +32,7 @@ Jeśli pochodzących z innego środowiska IDE lub środowisko programistyczne, m
 - [Klawisze dostępu dla programu Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-Poniżej przedstawiono popularne skróty programu Visual Studio: 
+Poniżej przedstawiono popularne skróty programu Visual Studio:
 
 | Skrót (wszystkie profile) | Polecenie | Opis |
 |-|-|-|
@@ -61,7 +62,7 @@ Visual Studio 2017 ma funkcję _przejdź do wszystkich_ (**Ctrl + T**). Przejdź
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Mojego zespołu wymusza stosowanie reguł stylu kodu na naszych codebase.
 Plik .editorconfig umożliwia skodyfikować Konwencji kodowania i je działają podczas podróży z źródła.
-- Zaleca się zainstalowanie [rozszerzenia usług języka EditorConfig](https://aka.ms/editorconfig) do dodawania i edytowania pliku .editorconfig w programie Visual Studio. 
+- Zaleca się zainstalowanie [rozszerzenia usług języka EditorConfig](https://aka.ms/editorconfig) do dodawania i edytowania pliku .editorconfig w programie Visual Studio.
 - Zapoznaj się z [dokumentacji](https://aka.ms/editorconfigDocs) dla programu .NET wszystkie opcje Konwencji kodowania.
 - Zobacz [tego gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) dla .editorconfig przykład.
 
@@ -70,10 +71,10 @@ Plik .editorconfig umożliwia skodyfikować Konwencji kodowania i je działają 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Potrzebuję więcej poprawki refaktoryzacje i kod.
 Visual Studio 2017 pochodzi z dużą refaktoryzacje kodu generowania akcji i kodu poprawki. Czerwone zygzaki reprezentuje błędy, zygzaki zielony reprezentują ostrzeżenia i wielokropek szarego reprezentują sugestie kodu. Możesz poprawki kodu dostępu, klikając ikonę żarówka/śrubokręt lub naciskając klawisz **Ctrl +.** lub **Alt + wprowadź**. Każda poprawka jest dostarczany z okna podglądu, pokazujący różnicowego kodu na żywo, działania poprawkę.
 
-- Popularne Szybkie rozwiązania i refaktoryzacje obejmują: 
+- Popularne Szybkie rozwiązania i refaktoryzacje obejmują:
   - *Zmiana nazwy*
   - *Wyodrębnianie metody*
-  - *Zmiana sygnatury metody* 
+  - *Zmiana sygnatury metody*
   - *Generowanie konstruktora*
   - *Generowanie metody*
   - *Typ przenoszenia pliku*
@@ -81,8 +82,8 @@ Visual Studio 2017 pochodzi z dużą refaktoryzacje kodu generowania akcji i kod
   - *Dodaj parametr*
   - *Usuń zbędne deklaracji Using*
   - Więcej informacji, zobacz Zobacz nasze [dokumentacji](https://aka.ms/refactorings)
-- Pisanie własnych poprawka refaktoryzacji lub kod z [analizatorów Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix). 
-- Kilka członków społeczności, musieli napisać *wolnego* rozszerzeń, których dodanie dodatkowych kodu inspekcji: 
+- Pisanie własnych poprawka refaktoryzacji lub kod z [analizatorów Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
+- Kilka członków społeczności, musieli napisać *wolnego* rozszerzeń, których dodanie dodatkowych kodu inspekcji:
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -93,10 +94,10 @@ Visual Studio 2017 pochodzi z dużą refaktoryzacje kodu generowania akcji i kod
 Visual Studio 2017 ma wiele funkcji, które ułatwiają wyszukiwanie i przejdź baza kodu. Przeczytaj więcej na temat [kodu funkcji nawigacji](../ide/navigating-code.md)
 
 | Funkcja | Skrót | Szczegóły/ulepszenia |
-|- | - | -| 
+|- | - | -|
 | Znajdź wszystkie odwołania | **Shift+F12**| Wyniki są kolorowane i można grupować według projektu, definicji itp. Można również "zablokować" wyników. |
 | Przejdź do implementacji | **Ctrl+F12** | Możesz użyć przejdź do definicji w `override` — słowo kluczowe, aby przejść do zastąpionym elementem członkowskim |
-| Przejdź do definicji | **F12** lub **Ctrl + kliknięcie**| Naciśnij i przytrzymaj **Ctrl** podczas klikania do navgiate do definicji | 
+| Przejdź do definicji | **F12** lub **Ctrl + kliknięcie**| Naciśnij i przytrzymaj **Ctrl** podczas klikania do navgiate do definicji |
 | Definicji wglądu | **Alt+F12** | Widok wbudowanej definicji |
 | Struktura wizualizatora | Szary, kropkami linie między nawiasy klamrowe | Aktywowanie Zobacz struktury kodu |
 | Nawigacja do decompiled zestawów | **F12** lub **Ctrl + kliknięcie** | Przejdź do źródła zewnętrznego (decompiled z ILSpy), należy włączyć funkcję: **Narzędzia > Opcje > Edytor tekstu > C# > Zaawansowane > Włącz nawigacji do źródeł decompiled**. |
@@ -112,8 +113,8 @@ Wprowadziliśmy wiele ulepszeń testowania czynności w programie Visual Studio 
 ![Widok hierarchii Explorer tekstu w programie Visual Studio](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>Chcę Debuguj kod.
-Dodano wiele możliwości nowe funkcje debugowania w programie Visual Studio 2017 r. 
-- *Uruchom, aby kliknij* służy do aktywowania obok wiersza kodu, kliknij zieloną ikonę "play", który pojawia się i uruchomić program, dopóki nie osiągnie tego wiersza. 
+Dodano wiele możliwości nowe funkcje debugowania w programie Visual Studio 2017 r.
+- *Uruchom, aby kliknij* służy do aktywowania obok wiersza kodu, kliknij zieloną ikonę "play", który pojawia się i uruchomić program, dopóki nie osiągnie tego wiersza.
 - Nowy *pomocnika wyjątków* naraża najważniejsze informacje, takie jak zmienna, która jest wartość "null" w NullReferenceException na najwyższym poziomie w oknie dialogowym.
 - [Krok wstecz](../debugger/how-to-use-intellitrace-step-back.md) debugowanie umożliwia wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości.
 - [Migawki debugowanie](/azure/application-insights/app-insights-snapshot-debugger) umożliwia badanie stanu aplikacji sieci web w tej chwili Wystąpił wyjątek (musi być na platformie Azure).
@@ -121,8 +122,8 @@ Dodano wiele możliwości nowe funkcje debugowania w programie Visual Studio 201
 ![Nowy Pomocnik wyjątków w VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Chcę użyć kontroli wersji z projektami.
-Git lub TFVC służy do przechowywania i zaktualizuj kod w programie Visual Studio. 
-- Organizowanie lokalne zmiany z *Team Explorer* i używać na pasku stanu do śledzenia oczekujących zatwierdzeń i zmiany. 
+Git lub TFVC służy do przechowywania i zaktualizuj kod w programie Visual Studio.
+- Organizowanie lokalne zmiany z *Team Explorer* i używać na pasku stanu do śledzenia oczekujących zatwierdzeń i zmiany.
 - Konfigurowanie ciągłej integracji i dostarczania dla projektów w programie Visual Studio z naszych [ciągłego dostarczania Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozszerzenia i przyjmuje przepływu pracy agile developer.
 
 ![Kontroli źródła w programie Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)

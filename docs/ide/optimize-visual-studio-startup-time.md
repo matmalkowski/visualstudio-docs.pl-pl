@@ -1,5 +1,5 @@
 ---
-title: Zwiększyć czas uruchamiania programu Visual Studio | Dokumentacja firmy Microsoft
+title: Zwiększyć czas uruchamiania programu Visual Studio
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optymalizuj czas uruchamiania programu Visual Studio
 
@@ -45,7 +46,7 @@ Okno dialogowe wyświetla okna narzędzia i rozszerzenia, które mają wpływ na
 
 2. Wybierz rozszerzenia, aby wyłączyć, a następnie wybierz pozycję **wyłączyć** przycisku.
 
-Można zawsze ponownie włączyć rozszerzenie dla przyszłych sesji za pomocą Menedżera rozszerzenia lub w oknie dialogowym Zarządzanie wydajnością programu Visual Studio.
+Można zawsze ponownie włączyć rozszerzenie dla przyszłych sesji przy użyciu **Menedżera rozszerzenia** lub **zarządzanie wydajnością programu Visual Studio** okno dialogowe.
 
 ## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Aby zmienić ustawienia okna narzędzia, aby zwiększyć czas uruchamiania
 

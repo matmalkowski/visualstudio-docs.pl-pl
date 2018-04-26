@@ -1,9 +1,9 @@
 ---
-title: Wstawki kodu C# | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wstawki kodu C#
 ms.date: 06/05/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
 - code snippets [C#]
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ee8b5adc7d0c7c40f80cdfed7cc873b092d5eb1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="c-code-snippets"></a>Wstawki kodu C#
 
@@ -75,7 +75,7 @@ Domyślnie poniższe fragmenty kodu są zawarte w programie Visual Studio dla C#
 
 ## <a name="see-also"></a>Zobacz także
 
-[Funkcje fragmentów kodu](../ide/code-snippet-functions.md)  
-[Fragmenty kodu](../ide/code-snippets.md)  
-[Parametry szablonu](../ide/template-parameters.md)  
-[Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../ide/how-to-use-surround-with-code-snippets.md)
+- [Funkcje fragmentów kodu](../ide/code-snippet-functions.md)
+- [Fragmenty kodu](../ide/code-snippets.md)
+- [Parametry szablonu](../ide/template-parameters.md)
+- [Instrukcje: Użycie fragmentów kodu polecenia Otocz przez](../ide/how-to-use-surround-with-code-snippets.md)

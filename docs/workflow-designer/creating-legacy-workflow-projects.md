@@ -1,7 +1,9 @@
 ---
-title: Tworzenie projektów przepływu pracy starszego | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Tworzenie projektów przepływu pracy starsza wersja
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Tworzenie projektów przepływu pracy starsza wersja
-Ta sekcja zawiera opis sposobu tworzenia projektów przepływu pracy za pomocą projektanta przepływów pracy Windows podał vs2010 starszego. Starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] celów [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Zawiera informacje o sposobie używania szablonów projektu przepływu pracy, które są wymienione w poniższej tabeli.
+
+Ta sekcja zawiera opis sposobu tworzenia projektów przepływu pracy przy użyciu starszej wersji projektanta przepływów pracy Windows pochodzącymi z programu Visual Studio 2010. .NET Framework w wersji 3.5 lub WinFX jest przeznaczony dla starszej wersji projektanta przepływów pracy. Zawiera informacje o sposobie używania szablonów projektu przepływu pracy, które są wymienione w poniższej tabeli.
 
 |Szablon projektu|Opis|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ Ta sekcja zawiera opis sposobu tworzenia projektów przepływu pracy za pomocą 
 |Aplikacja konsoli przepływu pracy automatu stanów|Projekt służący do tworzenia aplikacji konsolowej przepływu pracy stan maszyny.|
 |Biblioteka przepływu pracy automatu stanów|Projekt do tworzenia biblioteki przepływu pracy stan maszyny.|
 |Projekt pusty przepływu pracy|Pusty projekt do tworzenia aplikacji przepływu pracy.|
-
-## <a name="in-this-section"></a>W tej sekcji
- [Instrukcje: Tworzenie projektów przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [Instrukcje: Tworzenie biblioteki sekwencyjnego przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [Instrukcje: Tworzenie biblioteki działań przepływów pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [Instrukcje: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [Instrukcje: Tworzenie pustego projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [Instrukcje: Konfigurowanie właściwości projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy (starsza wersja)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Zobacz także
 

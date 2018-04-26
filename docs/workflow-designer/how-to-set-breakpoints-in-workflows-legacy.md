@@ -1,7 +1,9 @@
 ---
-title: 'Porady: Ustawianie punktów przerwania w przepływach pracy (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Ustawianie punktów przerwania w przepływach pracy (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Porady: Ustawianie punktów przerwania w przepływach pracy (starsze)
-W tym temacie opisano, jak można ustawić punktów przerwania w [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] kompilacji aplikacji za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] gdy Twoje [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] aplikacja musi docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Jeśli używasz starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] do tworzenia [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] aplikacji, można ustawić punktów przerwania w kodzie C# i Visual Basic, jak w programie Visual Studio. Zgodnie z oczekiwaniami, w każdym punkcie przerwania ustawionych powoduje zatrzymanie wykonywania przepływu pracy.
+W tym temacie opisano, jak można ustawić punktów przerwania w systemie Windows Workflow Foundation (WF) kompilacji aplikacji za pomocą projektanta przepływów pracy programu starszej wersji systemu Windows. Gdy aplikacja Windows Workflow Foundation wymaga objęcie .NET Framework w wersji 3.5 lub WinFX za pomocą starszej wersji projektanta przepływu pracy.
+
+ Jeśli używasz starszej wersji projektanta przepływów pracy w Visual Studio 2010 do tworzenia aplikacji systemu Windows Workflow Foundation, tak jak w programie Visual Studio można ustawić punktów przerwania w C# i Visual Basic code. Zgodnie z oczekiwaniami, w każdym punkcie przerwania ustawionych powoduje zatrzymanie wykonywania przepływu pracy.
 
  Punkt przerwania ma trzy stany: *oczekujące*, *powiązany*, i *błąd*. Po ustawieniu punkt przerwania jest oczekujące i jest reprezentowany przez pusty czerwona ikona. Po załadowaniu typu przepływu pracy środowiska uruchomieniowego związane i jest reprezentowany przez stałe czerwona ikona. Jeśli określisz niepoprawny format dla punktu przerwania, podobnie jak w przypadku nazwy działania, która nie jest prawidłowy, pojawi się okno błędu. Punkt przerwania nadal został dodany do okna punkt przerwania, ale jest on oznaczony małą "x".
 

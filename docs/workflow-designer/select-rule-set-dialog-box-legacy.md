@@ -1,7 +1,9 @@
 ---
-title: Wybierz zestaw reguł, okno dialogowe (starsze) | Dokumentacja firmy Microsoft
+title: Wybierz projektanta przepływów pracy — okno dialogowe (starsze) zestawu reguł
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Okno dialogowe Ustawianie reguły wybierz (starsze)
-W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Wybierz zestaw reguł** okno dialogowe służy do wybierania zestaw reguł, który można używać z [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) działania. Informacje na temat dostępu do **wybierz zestaw reguł** okno dialogowe, zobacz [porady: tworzenie działania PolicyActivity zestawu reguł (starsze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
- W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz zestaw reguł** okno dialogowe.
+**Wybierz zestaw reguł** okno dialogowe służy do wybierania zestaw reguł, który można używać z [działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) działania. Informacje na temat dostępu do **wybierz zestaw reguł** okno dialogowe, zobacz [porady: tworzenie działania PolicyActivity zestawu reguł (starsze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz zestaw reguł** okno dialogowe.
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w
  Aby uzyskać więcej informacji o sposobie tworzenia i edytowania zestawów reguł, zobacz [reguły ustawić okno dialogowe Edytor (starsze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> W edytorze zasad starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] używany docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] nie obsługuje przeznaczanie dla wielu platform.
+> W edytorze zasad starszych projektanta przepływów pracy służący do docelowego .NET Framework w wersji 3.5 lub WinFX nie obsługuje przeznaczanie dla wielu platform.
 
  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).
 

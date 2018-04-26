@@ -1,9 +1,9 @@
 ---
-title: Zaloguj się do programu Visual Studio | Dokumentacja firmy Microsoft
+title: Zaloguj się do programu Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Zaloguj się do programu Visual Studio
 
@@ -43,7 +43,7 @@ Poniżej przedstawiono pełną listę można oczekiwać i co można zrobić po z
 
 Po uruchomieniu programu Visual studio po raz pierwszy, użytkownik jest proszony o Zaloguj się i dostarczają niektóre informacje podstawowe rejestracji. Należy wybrać konta Microsoft lub konta służbowego, najlepiej reprezentuje należy. Jeśli nie masz żadnego z tych kont, możesz bezpłatnie utworzyć konto Microsoft. Zobacz [jak zarejestrować do konta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Program Visual Studio te ustawienia są przechowywane i synchronizuje je w zalogowali się do wszystkich środowisk programu Visual Studio. Aby uzyskać listę ustawień, które są synchronizowane, zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md). Można zmienić ustawienia później, po otwarciu **narzędzia**, **opcje** menu w programie Visual Studio.
+Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Program Visual Studio te ustawienia są przechowywane i synchronizuje je w zalogowali się do wszystkich środowisk programu Visual Studio. Aby uzyskać listę ustawień, które są synchronizowane, zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md). Można zmienić ustawienia później, po otwarciu **narzędzia** > **opcje** menu w programie Visual Studio.
 
 Po podaniu ustawień program Visual Studio uruchomi się, zaloguje cię i umożliwi rozpoczęcie pracy. Aby sprawdzić, czy użytkownik jest zalogowany, poszukaj nazwy w prawym górnym rogu środowiska Visual Studio.
 
@@ -53,7 +53,7 @@ Jeśli nie wylogujesz, automatycznie zalogowano Cię do programu Visual Studio p
 
 ## <a name="to-change-your-profile-information"></a>Aby zmienić informacje w profilu
 
-1. Przejdź do **pliku**, **ustawienia konta** i wybierz polecenie **profilu zarządzania Visual Studio** łącza.
+1. Przejdź do **pliku** > **ustawienia konta** i wybierz polecenie **profilu zarządzania Visual Studio** łącza.
 
 1. W oknie przeglądarki wybierz **edytowanie profilu** i zmienić ustawienia, które mają.
 
@@ -61,9 +61,9 @@ Jeśli nie wylogujesz, automatycznie zalogowano Cię do programu Visual Studio p
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Jeśli wystąpią problemy podczas logowania, zobacz [kont obsługuje stronę](https://www.visualstudio.com/subscriptions/support/) Aby uzyskać pomoc.
+Jeśli wystąpią problemy podczas logowania, zobacz [kont Obsługa](https://www.visualstudio.com/subscriptions/support/) stronę, aby uzyskać pomoc.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)
+* [Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)

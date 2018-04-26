@@ -1,6 +1,7 @@
 ---
-title: Debugowanie aplikacji wielowątkowych za pomocą okna wątki | Dokumentacja firmy Microsoft
-ms.custom: H1HackMay2017
+title: Debugowanie aplikacji wielowątkowych
+description: Debugowanie za pomocą okna wątki i narzędzi lokalizacji debugowania w programie Visual Studio
+ms.custom: ''
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09fccc98f52c80a00c2c6a215742ae25b2fc7a4d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 37a9161011031c53ed16a9ab0918eb498f5fa270
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Wskazówki: Debugowanie aplikacji wielowątkowych w programie Visual Studio za pomocą okna wątki
 Program Visual Studio udostępnia **wątków** okna i innych użytkowników interface elementy, aby pomóc w debugowaniu aplikacji wielowątkowych. Ten samouczek przedstawia sposób użycia **wątków** okna i **debugowania lokalizacji** paska narzędzi. Aby uzyskać informacje na temat innych narzędzi, zobacz [rozpocząć debugowanie aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). W tym samouczku zajmuje tylko kilka minut, ale jego wypełnieniu umożliwia zapoznanie się z funkcjami do debugowania aplikacji wielowątkowych.   

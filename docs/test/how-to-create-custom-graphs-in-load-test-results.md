@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Tworzenie wykresów niestandardowych w wynikach testów obciążenia w programie Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Porady: Tworzenie wykresów niestandardowych w wynikach testów obciążenia w programie Visual Studio'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 38249ef2a655f2dc30ad5536f1d47f94cff54181
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 633c309193c23834b4848e189fdf677f0abc8ef0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Porady: tworzenie wykresów niestandardowych w wynikach testów obciążenia
 

@@ -1,27 +1,32 @@
 ---
-title: Projektant działań stan końcowy | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — Projektant działań stan końcowy
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6360be9522fd8a3640780407cb5252da41515536
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d89e9f81bb7dc8237069a79784eadc0e5d375d6e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="finalstate-activity-designer"></a>Projektant działań stan końcowy
+
 <xref:System.Activities.Core.Presentation.FinalState> Projektant służy do tworzenia <xref:System.Activities.Statements.State> kończy się wystąpieniem komputera stanu.
 
 ## <a name="using-the-finalstate-activity-designer"></a>Przy użyciu narzędzia Projektant działań stan końcowy
- **Stan końcowy** Projektant służy do tworzenia <xref:System.Activities.Statements.State> który jest wstępnie skonfigurowana jako powodujący przerwanie stan komputera stanu. A <xref:System.Activities.Statements.State> utworzonego przy użyciu <xref:System.Activities.Core.Presentation.FinalState> ma Projektant działań jego <xref:System.Activities.Statements.State.IsFinal%2A> ustawioną właściwość **true**, nie ma <xref:System.Activities.Statements.State.Exit%2A> działania i żadnych przejść pochodzącego od niego. Aby użyć <xref:System.Activities.Core.Presentation.FinalState> Projektant działań, aby dodać <xref:System.Activities.Statements.State> przeciągnij działanie, które jest wstępnie konfigurowany jako powodujący przerwanie stan w automacie stanów **stan końcowy** Projektant działań z **automatu stanów**części **przybornika** i upuścić projektanta przepływów pracy. <xref:System.Activities.Core.Presentation.FinalState> Projektant działań mogą być upuszczone na <xref:System.Activities.Statements.StateMachine> i przejść, dodane później; lub przejście może zostać utworzony jako <xref:System.Activities.Core.Presentation.FinalState> Projektant działań zostało porzucone. Aby uzyskać więcej informacji na temat tworzenia przejścia, zobacz [przejścia](../workflow-designer/transition-activity-designer.md).
+
+**Stan końcowy** Projektant służy do tworzenia <xref:System.Activities.Statements.State> który jest wstępnie skonfigurowana jako powodujący przerwanie stan komputera stanu. A <xref:System.Activities.Statements.State> utworzonego przy użyciu <xref:System.Activities.Core.Presentation.FinalState> ma Projektant działań jego <xref:System.Activities.Statements.State.IsFinal%2A> ustawioną właściwość **true**, nie ma <xref:System.Activities.Statements.State.Exit%2A> działania i żadnych przejść pochodzącego od niego. Aby użyć <xref:System.Activities.Core.Presentation.FinalState> Projektant działań, aby dodać <xref:System.Activities.Statements.State> przeciągnij działanie, które jest wstępnie konfigurowany jako powodujący przerwanie stan w automacie stanów **stan końcowy** Projektant działań z **automatu stanów**części **przybornika** i upuścić projektanta przepływów pracy. <xref:System.Activities.Core.Presentation.FinalState> Projektant działań mogą być upuszczone na <xref:System.Activities.Statements.StateMachine> i przejść, dodane później; lub przejście może zostać utworzony jako <xref:System.Activities.Core.Presentation.FinalState> Projektant działań zostało porzucone. Aby uzyskać więcej informacji na temat tworzenia przejścia, zobacz [przejścia](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Właściwości stanu aktywności w Projektancie przepływów pracy
- W poniższej tabeli przedstawiono właściwości, które można ustawić za pomocą <xref:System.Activities.Core.Presentation.FinalState> projektanta i opisuje, jak są używane w projektancie. Niektóre z tych właściwości można edytować w siatce właściwości i niektóre można edytowane na powierzchnię projektanta.
+
+W poniższej tabeli przedstawiono właściwości, które można ustawić za pomocą <xref:System.Activities.Core.Presentation.FinalState> projektanta i opisuje, jak są używane w projektancie. Niektóre z tych właściwości można edytować w siatce właściwości i niektóre można edytowane na powierzchnię projektanta.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

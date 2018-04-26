@@ -1,9 +1,8 @@
 ---
-title: 'Porady: zmiana czcionek i kolorów w Visual Studio | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Porady: zmiana czcionek i kolorów w Visual Studio'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -14,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd1ce6aa91054ffee2f82386c016acc0fe5ba7c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Porady: zmiana czcionek i kolorów w Visual Studio
 
@@ -69,6 +68,5 @@ Można zmienić rozmiar czcionki i tekst dla wszystkich systemów windows i okna
 
 ## <a name="see-also"></a>Zobacz także
 
-[Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
-
-[Porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

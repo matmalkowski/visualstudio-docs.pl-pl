@@ -1,6 +1,6 @@
 ---
-title: Praca z języka Python, krok 4, debugowania
-description: Krok 4 samouczka core do pracy z języka Python w programie Visual Studio, obejmujące sposób uruchamiania w debugerze kodu języka Python.
+title: Praca z debugowaniem samouczek języka Python, krok 4.
+description: Krok 4 przewodnika podstawowe możliwości języka Python w programie Visual Studio, obejmujące sposób uruchamiania w debugerze kodu języka Python.
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d76ed2511ae5b8b51a08baf1e0c638c2e0fae73f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 

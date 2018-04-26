@@ -1,10 +1,9 @@
 ---
-title: -Out (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: -Out (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
 - Devenv, /out switch
@@ -21,40 +20,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af8d41a8a401e3087845e6d698163626f120a52e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa180f4cec8fb072ca6d69dc096b714f30e06c0c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
-Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, utworzyć, odbudować lub wdrożyć rozwiązanie.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-devenv /out FileName  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `FileName`  
- Wymagany. Ścieżka i nazwa pliku do odbierania błędy podczas kompilowania pliku wykonywalnego.  
-  
-## <a name="remarks"></a>Uwagi  
- Jeśli określono nazwę pliku, który nie istnieje, plik jest tworzony automatycznie. Jeśli plik już istnieje, wyniki są dołączane do istniejącej zawartości pliku.  
-  
- Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okno i konstruktora rozwiązania widok **dane wyjściowe** okna. Ta opcja jest przydatna, jeśli są uruchomione nienadzorowanej kompilacji i powinny być wyświetlane wyniki.  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie jest uruchamiany `MySolution` i zapisuje błędy do pliku `MyErrorLog.txt`.  
-  
-```  
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [/ Uruchom (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
- [/ Wdróż (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, utworzyć, odbudować lub wdrożyć rozwiązanie.
+
+## <a name="syntax"></a>Składnia
+
+```
+devenv /out FileName
+```
+
+## <a name="arguments"></a>Argumenty
+ `FileName`
+
+ Wymagana. Ścieżka i nazwa pliku do odbierania błędy podczas kompilowania pliku wykonywalnego.
+
+## <a name="remarks"></a>Uwagi
+ Jeśli określono nazwę pliku, który nie istnieje, plik jest tworzony automatycznie. Jeśli plik już istnieje, wyniki są dołączane do istniejącej zawartości pliku.
+
+ Błędy kompilacji wiersza polecenia są wyświetlane w **polecenia** okno i konstruktora rozwiązania widok **dane wyjściowe** okna. Ta opcja jest przydatna, jeśli są uruchomione nienadzorowanej kompilacji i powinny być wyświetlane wyniki.
+
+## <a name="example"></a>Przykład
+ W tym przykładzie jest uruchamiany `MySolution` i zapisuje błędy do pliku `MyErrorLog.txt`.
+
+```
+devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
+```
+
+## <a name="see-also"></a>Zobacz też
+
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/ Uruchom (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [/ Kompilacji (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/ Wdróż (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

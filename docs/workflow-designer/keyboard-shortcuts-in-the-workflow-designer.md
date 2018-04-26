@@ -1,7 +1,9 @@
 ---
-title: Skróty klawiaturowe w Projektancie przepływów pracy | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — skróty klawiaturowe w Projektancie przepływów pracy
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływów pracy
 
@@ -22,11 +24,11 @@ Wszystkie podstawowe funkcje projektanta przepływów pracy systemu Windows mog�
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Nawigowanie po projektanta przepływów pracy za pomocą klawiatury
 
-Wewnątrz [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], skróty globalne i debugowania skróty dotyczą [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Ponadto szereg [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] określonych skróty klawiaturowe zostały utworzone. W [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], wszystkie skróty klawiaturowe można ponownie zamapować. Jednak w aplikacji rehosted te skróty klawiaturowe są zapisane na stałe.
+Visual Studio 2010 skróty globalne i debugowania skróty dotyczą projektanta przepływów pracy. Ponadto liczba projektanta przepływów pracy określonych skróty klawiaturowe zostały utworzone. W programie Visual Studio 2010 wszystkie skróty klawiaturowe mogą być mapowane ponownie. Jednak w aplikacji rehosted te skróty klawiaturowe są zapisane na stałe.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Skróty klawiaturowe projektanta przepływów pracy
 
-W poniższej tabeli przedstawiono domyślne skróty klawiaturowe przypisane do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] poleceń.
+W poniższej tabeli przedstawiono domyślne skróty klawiaturowe przypisane do poleceń projektanta przepływów pracy.
 
 |Skrót|Cel|
 |--------------|-------------|
@@ -46,7 +48,7 @@ W poniższej tabeli przedstawiono domyślne skróty klawiaturowe przypisane do [
 
 ### <a name="flowchart"></a>Schemat blokowy
 
-Na poniższej liście przedstawiono gestów użyty do utworzenia schematu blokowego przez klawiatury. W pozostałej części [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], działania są dodawane do powierzchni projektanta przy użyciu skrótów globalne przybornika wyposażone w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+Na poniższej liście przedstawiono gestów użyty do utworzenia schematu blokowego przez klawiatury. Tak jak pozostałe projektanta przepływów pracy działania są dodawane do powierzchni projektanta przy użyciu skrótów globalne przybornika wyposażone w Visual Studio 2010.
 
 - Aby przenieść działanie, wybierz działanie, a następnie użyj klawiszy strzałek, aby zmienić jego położenie.
 
@@ -74,7 +76,7 @@ Uwagi dotyczące łączenia działań przez klawiatury:
 
 ### <a name="expression-editing"></a>Edytowanie wyrażeń
 
-Domyślnie domyślne skróty klawiaturowe dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] zastosować edycji tekstu w edytorze wyrażenie w [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], zastosowanie mają poniższe ograniczenia:
+Domyślnie domyślne skróty klawiaturowe do edycji tekstu w języku Visual Basic stosowane w edytorze wyrażenie w Projektancie przepływów pracy, z następującymi ograniczeniami:
 
 - Ponowne mapowanie skróty klawiaturowe dla poniższych poleceń nie ma znaczenia. Domyślne skróty klawiaturowe można używać tylko dostępu do tych poleceń podczas edycji wyrażenia.
 
@@ -85,4 +87,4 @@ Domyślnie domyślne skróty klawiaturowe dla [!INCLUDE[vbprvb](../code-quality/
    - Cofnij
    - Wykonaj ponownie
 
-- Aby ponownie zamapować skróty klawiaturowe dla polecenia wewnątrz edycji wyrażenia [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], Edytuj skróty w [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] zakresu. Zmiany wprowadzone w zakresie edytora tekstów nie automatycznie dotyczą [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Jeśli chcesz ponownie zamapować skróty w obu miejscach, należy zastosować zmiany dwukrotnie (raz dla każdego zakresu).
+- Aby ponownie zamapować skróty klawiaturowe dla wyrażenia poleceń edycji w Projektancie przepływów pracy w Visual Studio 2010, należy edytować skróty w zakresie projektanta przepływów pracy. Zmiany wprowadzone w zakresie edytora tekstów nie automatycznie dotyczą projektanta przepływów pracy. Jeśli chcesz ponownie zamapować skróty w obu miejscach, należy zastosować zmiany dwukrotnie (raz dla każdego zakresu).

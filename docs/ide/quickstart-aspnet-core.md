@@ -1,7 +1,9 @@
 ---
-title: Tworzenie aplikacji sieci web platformy ASP.NET Core w języku C# za pomocą programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Tworzenie aplikacji sieci web platformy ASP.NET Core w języku C# za pomocą programu Visual Studio
+description: Informacje o sposobie tworzenia aplikacji sieci web platformy ASP.NET Core w programie Visual Studio w języku C#, krok po kroku.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,17 +14,17 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core
 
 W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web platformy ASP.NET Core C#.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -30,7 +32,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
 1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **Visual C#**, a następnie wybierz **.NET Core**. W środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET Core**, a następnie wybierz **OK**.
 
@@ -40,7 +42,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
 1. W **nową aplikację sieci Web Core ASP.NET** okno dialogowe, wybierz opcję **ASP.NET Core 2.0** z górnego menu rozwijanego. (Jeśli nie widzisz **ASP.NET Core 2.0** na liście, zainstaluj go, wykonując **Pobierz** łącza, które powinny być wyświetlane w żółty pasek w górnej części okna dialogowego.) Wybierz **OK**.
 
-   ![Nowe dialogbox aplikacji sieci Web platformy ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
+   ![Okno dialogowe Nowy aplikacji sieci Web platformy ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
 
 ## <a name="explore-the-ide"></a>Eksploruj IDE
 
@@ -68,7 +70,7 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Typ proje
 
    ![Lista błędów](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. W oknie edytora umieść kursor na jednej osi, który zawiera błąd, a następnie wybierz żarówkę szybkie akcje na lewym marginesie. Z menu rozwijanego wybierz **przy użyciu systemu;** dodawania tej dyrektywy do góry pliku i napraw błędy.
+1. W oknie edytora, umieść kursor na jednej osi, który zawiera błąd, a następnie wybierz **żarówki szybkie akcje** na lewym marginesie. Z menu rozwijanego wybierz **przy użyciu systemu;** dodawania tej dyrektywy do góry pliku i napraw błędy.
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 

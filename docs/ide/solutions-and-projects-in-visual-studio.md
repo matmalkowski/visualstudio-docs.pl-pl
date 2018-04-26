@@ -1,7 +1,7 @@
 ---
-title: Rozwiązania i projekty w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Rozwiązania i projekty w programie Visual Studio
 ms.date: 10/5/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11441c826a316d995e75f2b6c79232f19985c17b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6be610e60c35ef22306398f56375bfa6185e1e0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -39,33 +39,33 @@ ms.lasthandoff: 04/16/2018
 Po utworzeniu aplikacji witryny sieci Web, itp. dodatek programu Visual Studio rozpoczyna *projektu*. W tym sensie logicznej projekt zawiera wszystkie pliki kodu źródłowego, ikony, obrazów, plików danych, itp., które są kompilowane do pliku wykonywalnego, biblioteki lub witryny sieci Web. Projekt zawiera także ustawienia kompilatora i inne pliki konfiguracyjne, które mogą być wymagane przez różne usługi lub składniki, które komunikuje się z programem.
 
 > [!NOTE]
-> Nie trzeba użyć rozwiązań lub projektów programu Visual Studio do edytowania, tworzenie i debugowanie kodu. Można po prostu otwórz folder, który zawiera plików źródłowych w programie Visual Studio i rozpocznij edycję. Zobacz [Opracuj kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Aby uzyskać więcej informacji.
+> Nie trzeba użyć rozwiązań lub projektów programu Visual Studio do edytowania, tworzenie i debugowanie kodu. Można po prostu otwórz folder, który zawiera plików źródłowych w programie Visual Studio i rozpocznij edycję. Aby uzyskać więcej informacji, zobacz [Opracuj kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-Projekt jest zdefiniowany w pliku XML z rozszerzeniem, takim jak vbproj, .csproj lub .vcxproj. Ten plik zawiera hierarchię folderów wirtualnych i ścieżek dla wszystkich elementów w projekcie. Zawiera ona także ustawienia kompilacji.
+Projekt jest zdefiniowany w pliku XML z rozszerzeniem, takich jak *vbproj*, *.csproj*, lub *.vcxproj*. Ten plik zawiera hierarchię folderów wirtualnych i ścieżek dla wszystkich elementów w projekcie. Zawiera ona także ustawienia kompilacji.
 
 > [!TIP]
-> Aby przyjrzeć się zawartość pliku projektu w programie Visual Studio, najpierw zwolnić projekt wybierając nazwę projektu w Eksploratorze rozwiązań i wybierając pozycję **zwolnienie projektu** z menu kontekstowego lub kliknij prawym przyciskiem myszy. Następnie ponownie otworzyć menu kontekstowe i wybierz **Edytuj \<projectname\>**.
+> Aby przyjrzeć się zawartość pliku projektu w programie Visual Studio, najpierw zwolnić projekt, wybierając nazwę projektu w **Eksploratora rozwiązań** i wybierając polecenie **zwolnienie projektu** z menu kontekstowego lub kliknij prawym przyciskiem myszy. Następnie ponownie otworzyć menu kontekstowe i wybierz **Edytuj \<projectname\>**.
 
-W programie Visual Studio pliku projektu jest wykorzystywane przez Eksploratora rozwiązań do wyświetlania zawartości projektu i ustawień. Podczas kompilowania projektu aparat MSBuild zużywa plik projektu do tworzenia pliku wykonywalnego. Można również dostosować projektów produkcji inne rodzaje danych wyjściowych.
+W programie Visual Studio, plik projektu jest używany przez **Eksploratora rozwiązań** do wyświetlania zawartości projektu i ustawień. Podczas kompilowania projektu aparat MSBuild zużywa plik projektu do tworzenia pliku wykonywalnego. Można również dostosować projektów produkcji inne rodzaje danych wyjściowych.
 
 ## <a name="solutions"></a>Rozwiązania
 
-Projekt jest zawarty w *rozwiązania*. Rozwiązanie zawiera jeden lub więcej projektów pokrewnych, oraz informacje o kompilacji, ustawienia okna programu Visual Studio i różne pliki, które nie są skojarzone z danym projekcie. Rozwiązanie opisanego przez plik tekstowy (rozszerzenie .sln) z własną unikatową formacie. go jest zwykle nie mają być edytowane ręcznie.
+Projekt jest zawarty w *rozwiązania*. Rozwiązanie zawiera jeden lub więcej projektów pokrewnych, oraz informacje o kompilacji, ustawienia okna programu Visual Studio i różne pliki, które nie są skojarzone z danym projekcie. Rozwiązanie opisanego przez plik tekstowy (rozszerzenie *.sln*) z własną unikatową format; nie jest on przeznaczony do można edytowane ręcznie.
 
 Rozwiązanie ma skojarzoną *.suo* plik przechowujący ustawień, preferencji i informacje o konfiguracji dla każdego użytkownika, który działał w projekcie.
 
-## <a name="creating-new-projects"></a>Tworzenie nowych projektów
+## <a name="create-new-projects"></a>Utwórz nowe projekty
 
-Najprostszym sposobem tworzenia nowego projektu jest zacząć od szablonu projektu dla określonego typu aplikacji lub witryny sieci Web. Szablon projektu składa się z podstawowego zestawu wstępnie wygenerowanego kodu plików, pliki konfiguracji, zasoby i ustawienia. Te szablony są widoczne w **nowy projekt** lub **nowej witryny sieci Web** okno dialogowe po wybraniu **pliku**, **nowy**,  **Projekt** lub **pliku**, **nowe**, **witryny sieci Web**. Aby uzyskać więcej informacji, zobacz [tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md).
+Najprostszym sposobem tworzenia nowego projektu jest zacząć od szablonu projektu dla określonego typu aplikacji lub witryny sieci Web. Szablon projektu składa się z podstawowego zestawu wstępnie wygenerowanego kodu plików, pliki konfiguracji, zasoby i ustawienia. Te szablony są widoczne w **nowy projekt** lub **nowej witryny sieci Web** okno dialogowe po wybraniu **pliku** > **nowy**  >  **Projektu** lub **pliku** > **nowe** > **witryny sieci Web**. Aby uzyskać więcej informacji, zobacz [tworzenia rozwiązań i projektów](../ide/creating-solutions-and-projects.md).
 
-Istnieje również możliwość utworzenia niestandardowych szablonów projektów i elementów. Aby uzyskać więcej informacji, zobacz [szablony tworzenie projektów i elementów](../ide/creating-project-and-item-templates.md).
+Istnieje również możliwość utworzenia niestandardowych szablonów projektów i elementów. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md).
 
-## <a name="managing-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksploratorze rozwiązań
+## <a name="manage-projects-in-solution-explorer"></a>Zarządzanie projektami w Eksploratorze rozwiązań
 
-Po utworzeniu nowego projektu można użyć **Eksploratora rozwiązań** do wyświetlania i zarządzania projektu i rozwiązania i ich skojarzonych elementów. Na poniższej ilustracji przedstawiono Eksplorator rozwiązań z rozwiązaniem C#, który zawiera dwa projekty.
+Po utworzeniu nowego projektu można użyć **Eksploratora rozwiązań** do wyświetlania i zarządzania projektu i rozwiązania i ich skojarzonych elementów. Na poniższej ilustracji pokazano **Eksploratora rozwiązań** z rozwiązaniem C#, który zawiera dwa projekty.
 
 ![Eksplorator rozwiązań](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
 
 ## <a name="see-also"></a>Zobacz także
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

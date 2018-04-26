@@ -1,7 +1,7 @@
 ---
-title: Zainstaluj Pomoc programu Visual Studio w trybie offline | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Zainstaluj Pomoc programu Visual Studio w trybie offline
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 
@@ -24,7 +24,7 @@ Kilka produktów można wyświetlić zawartości pomocy w podglądu pomocy firmy
 
 Podgląd pomocy jest opcjonalna instalacja składników programu Visual Studio. Aby zainstalować go za pośrednictwem Instalator programu Visual Studio, wykonaj następujące kroki:
 
-1. Otwórz **Instalator programu Visual Studio** z Start menu lub, jeśli masz program Visual Studio Otwórz można **narzędzia**, **Pobierz narzędzia i funkcje...**  otworzyć Instalator programu Visual Studio.
+1. Otwórz **Instalator programu Visual Studio** z Start menu lub, jeśli masz program Visual Studio Otwórz można **narzędzia** > **Pobierz narzędzia i funkcje** otworzyć Visual Instalator Studio.
 
 1. Wybierz **pojedynczych składników** , a następnie wybierz **podglądu pomocy** w obszarze **kodu narzędzia** sekcji.
 
@@ -38,7 +38,7 @@ Innym sposobem z łatwością zainstalować podglądu pomocy firmy Microsoft jes
 
    ![Szybkie uruchamianie pole](media/help_viewer_quick_launch.png)
 
-1. Wybierz wynik instalacji o nazwie **podglądu pomocy (składnik Indiviual)**.
+1. Wybierz działanie o nazwie **podglądu pomocy (składnik Indiviual)**.
 
 1. W otwartym oknie dialogowym wybierz **zainstalować** przycisku.
 
@@ -50,5 +50,5 @@ Innym sposobem z łatwością zainstalować podglądu pomocy firmy Microsoft jes
 
 ## <a name="see-also"></a>Zobacz także
 
-[Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)  
-[Podgląd pomocy i zawartości w trybie offline dla programu SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)
+- [Podgląd pomocy i zawartości w trybie offline dla programu SQL Server](/sql/sql-server/sql-server-help-installation)

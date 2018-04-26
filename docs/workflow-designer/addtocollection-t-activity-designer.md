@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt; Projektant działań | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — AddToCollection<T> Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; Projektant działań
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Projektant działań
+
 **AddToCollection\<T >** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.AddToCollection%601> działania.
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection < T\> działania
- <xref:System.Activities.Statements.AddToCollection%601> Działania dodaje element do kolekcji.
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > działania
+
+<xref:System.Activities.Statements.AddToCollection%601> Działania dodaje element do kolekcji.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Przy użyciu AddToCollection\<T > Projektant działań
- **AddToCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
- **AddToCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzuconych do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] powierzchni we wszystkich działań zwykle są umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.AddToCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z AddToCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Można to zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **AddToCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
+**AddToCollection\<T >** Projektant działań można znaleźć w **kolekcji** kategorii **przybornika**, które jest dostępne po kliknięciu  **Przybornik** karcie projektanta przepływów pracy (można także wybrać **narzędzi** z **widoku** menu lub CTRL + ALT + X.)
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection < T\> właściwości
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.AddToCollection%601> właściwości oraz opis korzystania z nich w projektancie.
+**AddToCollection\<T >** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są umieszczone, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Porzucanie **AddToCollection\<T >** tworzy Projektant działań <xref:System.Activities.Statements.AddToCollection%601> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z AddToCollection < Int32\>. (Domyślnie *elementu TypeArgument* jest **Int32**. Elementu TypeArgument można zmienić w siatce właściwości.) <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **AddToCollection < T\>**  Projektant działań lub **DisplayName** pola siatki właściwości. Inne właściwości, należy edytować na siatce właściwości.
+
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > Właściwości
+
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.AddToCollection%601> właściwości oraz opis korzystania z nich w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|

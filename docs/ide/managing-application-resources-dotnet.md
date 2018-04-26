@@ -1,9 +1,8 @@
 ---
-title: Zarządzanie zasobami aplikacji (.NET) | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Zarządzanie zasobami aplikacji (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -20,19 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
+# <a name="manage-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
 Pliki zasobów to pliki, które są częścią aplikacji, ale nie są kompilowane, na przykład pliki ikon lub plików audio. Ponieważ te pliki nie są częścią procesu kompilacji, trzeba je zmienić bez konieczności ponownego kompilowania Twoje pliki binarne. Jeśli planujesz do zlokalizowania aplikacji, należy użyć plików zasobów dla wszystkich ciągów i innych zasobów, które muszą zostać zmienione po lokalizowanie aplikacji.
 
-Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych .NET, zobacz [zasobów w aplikacjach pulpitu](/dotnet/framework/resources/index).
+Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych .NET, zobacz [zasobów w aplikacjach klasycznych](/dotnet/framework/resources/index).
 
-## <a name="working-with-resources"></a>Praca z zasobów
+## <a name="work-with-resources"></a>Praca z zasobów
 
 W projekcie kodu zarządzanego Otwórz okno właściwości projektu. Można otworzyć okno właściwości przez:
 
@@ -40,7 +39,7 @@ W projekcie kodu zarządzanego Otwórz okno właściwości projektu. Można otwo
 - Wpisz "właściwości projektu" w **Szybkie uruchamianie** okna
 - Wybieranie **Alt**+**Enter** w **Eksploratora rozwiązań** okna
 
-Wybierz **zasobów** kartę. Można dodać plik .resx, jeśli projektu nie zawierają jedną już, dodać i usunąć różnych rodzajów zasobów i modyfikowanie istniejących zasobów.
+Wybierz **zasobów** kartę. Możesz dodać *.resx* plik, jeśli projektu nie zawierają jedną już, dodać i usunąć różnych rodzajów zasobów i modyfikowania istniejących zasobów.
 
 ## <a name="resources-in-other-project-types"></a>Zasoby w innych typów projektów
 
@@ -51,4 +50,4 @@ Zasoby są zarządzane w różny sposób w projektach platformy .NET niż w inny
 
 ## <a name="see-also"></a>Zobacz także
 
-[Zasoby w aplikacjach klasycznych (.NET Framework)](/dotnet/framework/resources/index)
+- [Zasoby w aplikacjach klasycznych (.NET Framework)](/dotnet/framework/resources/index)

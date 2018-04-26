@@ -1,7 +1,9 @@
 ---
-title: Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — wywoływania debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsze)
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera do debugowania [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji w Projektancie przepływów pracy starszej wersji systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Ogólnie rzecz biorąc można debugowania starszych przepływów pracy, tak samo, jak debugować programów napisanych w innych językach programowania Visual Studio. Możesz rozpocząć [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] debugera dla programu Windows Workflow Foundation w następujący sposób:
+W tym temacie opisano sposób debugowanie aplikacji Windows Workflow Foundation (WF) w starszej wersji projektanta przepływów pracy systemu Windows przy użyciu debuger programu Visual Studio. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
+
+Ogólnie rzecz biorąc można debugowania starszych przepływów pracy, tak samo, jak debugować programów napisanych w innych językach programowania Visual Studio. Można uruchomić programu Visual Studio Debugger dla systemu Windows Workflow Foundation w następujący sposób:
 
 -   Wybierz **dołączyć do procesu** na **debugowania** menu, aby wybrać działającego wystąpienia przepływu pracy z dostępnych procesów.
 
 -   Naciśnij klawisz **F5** uruchomione wystąpienie przepływu pracy lub kontynuować działanie po został trafiony punkt przerwania.
 
 ## <a name="stepping-through-code"></a>Krokowe wykonywanie kodu
- Debuger obsługuje jedną z najbardziej typowych procedur debugowania, wykonywanie krok po kroku, który jest wykonywany jednego wiersza kodu w czasie. Istnieją trzy polecenia krokowe wykonywanie kodu:
+
+Debuger obsługuje jedną z najbardziej typowych procedur debugowania, wykonywanie krok po kroku, który jest wykonywany jednego wiersza kodu w czasie. Istnieją trzy polecenia krokowe wykonywanie kodu:
 
 -   **Krok w**: można przejść do działania przy użyciu **F11**. Kroki debugera do dowolnego obsługi, który jest zdefiniowany. Jeśli obsługa nie jest zdefiniowana, Przekrocz nad działania lub z działań złożonych, które zawierają inne działania, Wkrocz pierwszy wykonywanego działania. Wykonywanie krok po kroku do programów obsługi kodu w projektancie nie jest obsługiwane dla następujących działań: **IfElseActivity**, **Działanie WhileActivity**, **grupy ConditionedActivityGroup**, lub **Działanie ReplicatorActivity**. Aby debugować obsługi skojarzone z tych działań, możesz umieścić jawne punkty przerwania w kodzie.
 
@@ -51,7 +55,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
  Aby skonfigurować projekt startowy w Eksploratorze rozwiązań, kliknij prawym przyciskiem myszy nazwę projektu i wybierz **Ustaw jako projekt startowy**. Aby ustawić ścieżkę do hosta w **uruchomienia programu zewnętrznego** właściwości, kliknij dwukrotnie plik projektu przepływu pracy **właściwości** węzła w Eksploratorze rozwiązań i wybierz **debugowania** Karta. W obszarze **Akcja uruchamiania**, wybierz pozycję **uruchomienia programu zewnętrznego** i wprowadź ścieżkę do pliku .exe, który jest hostem chcesz debugować przepływ pracy.
 
- Jeśli aplikacja hosta jest ustawiony jako projekt startowy, tylko debuger programu Visual Studio jest wywoływany do debugowania. [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] debugera dla programu Windows Workflow Foundation nie jest wywoływany. Jeśli używany jest debuger programu Visual Studio, tylko języka C# lub punktów przerwania kodu języka Visual Basic są osiągane; nie są osiągane punktów przerwania ustawionych w Projektancie przepływów pracy. Na przykład punkt przerwania ustawiony na <xref:System.Workflow.Activities.ParallelActivity> trafień jest działanie w projektancie, jeśli [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] używany jest debuger dla programu Windows Workflow Foundation, ale nie podczas korzystania debuger programu Visual Studio.
+ Jeśli aplikacja hosta jest ustawiony jako projekt startowy, tylko debuger programu Visual Studio jest wywoływany do debugowania. Nie można wywołać programu Visual Studio Debugger dla systemu Windows Workflow Foundation Jeśli używany jest debuger programu Visual Studio, tylko języka C# lub punktów przerwania kodu języka Visual Basic są osiągane; nie są osiągane punktów przerwania ustawionych w Projektancie przepływów pracy. Na przykład punkt przerwania ustawiony na <xref:System.Workflow.Activities.ParallelActivity> działania w Projektancie zostaje trafiony użycie programu Visual Studio Debugger dla systemu Windows Workflow Foundation, ale nie w przypadku, gdy używasz debuger programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 

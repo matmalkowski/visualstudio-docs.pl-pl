@@ -1,9 +1,9 @@
 ---
-title: Co to jest nowa w programie Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Co to jest nowa w programie Visual Studio 2017 r.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c2ce39143bbc4be2e7dc2e077d93ee7a1fff52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nowego w Visual Studio 2017 r.
+# <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;nowego w Visual Studio 2017 r.
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.6 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Szukasz do uaktualnienia z poprzedniej wersji programu Visual Studio? Oto co program Visual Studio 2017 można umożliwiają: bezkonkurencyjną wydajność dla dowolnego deweloperów, dowolną aplikację i dowolnej platformie. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemu Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, można elastyczne i wydajne współpracować z tej wersji!
 
@@ -299,7 +299,7 @@ Jeśli chcesz sugestii dotyczących jak możemy ulepszyć program Visual Studio,
 ### <a name="track-your-issue-in-connect"></a>Śledzenie problemu w programie Connect  
  Jeśli chcesz śledzić stan opinii programu Visual Studio, przejdź do [Connect](http://connect.microsoft.com/) i zgłoś ten błąd wystąpił. Po raport go może zwrócić nawiązywanie śledzić jego stan.  
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 * [Visual Studio 2017 informacje o wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Co to jest nowe w programie Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nowości w języku C#](/dotnet/csharp/whats-new)  

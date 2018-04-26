@@ -1,7 +1,9 @@
 ---
-title: Debugowanie przepływów pracy na komputerze zdalnym (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — debugowania przepływów pracy na komputerze zdalnym (starsze)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging remotely
 - debugging workflows, remotely
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3058d61d2aff0369fd52e1f03726a91a2267c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 391180cd76fe5e0cccca802ba1cbfb78277dabc1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Debugowanie przepływów pracy na komputerze zdalnym (starsze)
-W tym temacie opisano sposób debugowania zdalnego starszych [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji utworzonych przy użyciu starszej wersji projektanta przepływu pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] gdy aplikacja potrzebuje docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Po zainstalowaniu [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], jedną z opcji instalacji składnika jest zainstalowanie [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] debugera dla [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]. Spowoduje to zainstalowanie składników debugowania zdalnego. Te zdalnego debugowania składniki muszą być zainstalowane na komputerze, który ma być przeznaczona dla debugowania zdalnego przepływu pracy.
+W tym temacie opisano, jak do debugowania zdalnego starsze aplikacje systemu Windows Workflow Foundation (WF), utworzonych przy użyciu starszej wersji projektanta przepływów pracy systemu Windows. Jeśli aplikacja wymaga objęcie .NET Framework w wersji 3.5 lub WinFX, należy użyć starszego projektanta przepływów pracy.
+
+ Po zainstalowaniu programu Visual Studio jest jedną z opcji instalacji składników do zainstalowania programu Visual Studio Debugger dla Windows Workflow Foundation (WF). Spowoduje to zainstalowanie składników debugowania zdalnego. Te zdalnego debugowania składniki muszą być zainstalowane na komputerze, który ma być przeznaczona dla debugowania zdalnego przepływu pracy.
 
  Ponadto zestaw, który zawiera definicję przepływu pracy starszego przepływu pracy, który debugowania na zdalnym komputerze musi być zainstalowany w globalnej pamięci podręcznej zestawów (GAC) z komputera lokalnego, który jest debugowany z. Na przykład jeśli starszych przepływu pracy jest uruchomiony na komputerze zdalnym A, a debugowany z komputera lokalnego B, definicji przepływu pracy musi znajdować się w pamięci podręcznej GAC komputera B. Dzięki temu projektanta do deserializacji i wyświetlać na komputerze B znacznik przepływu pracy przepływu pracy, który jest uruchamiany zdalnie na komputerze A. Aby uzyskać więcej informacji o pamięci podręcznej GAC Zobacz bibliotece MSDN.
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] debugowanie zdalne działa tak samo, jak zdalnego debugowania dla innych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] składników. Aby uzyskać więcej informacji, zobacz [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] zdalnego debugowania w bibliotece MSDN.
+ Debugowanie zdalne programu Windows Workflow Foundation działa tak samo, jako zdalne debugowanie dla innych składników programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual Studio debugowanie zdalne w bibliotece MSDN.
 
 ## <a name="see-also"></a>Zobacz także
 

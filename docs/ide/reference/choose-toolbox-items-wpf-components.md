@@ -1,9 +1,9 @@
 ---
-title: Wybierz elementy paska narzędzi, składniki WPF | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wybierz elementy paska narzędzi, składniki WPF
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 
@@ -36,16 +36,20 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę dost�
 
 Kolumn w **składników WPF** karta zawiera następujące informacje:
 
-Nazwa  
+**Nazwa**
+
 Wyświetla listę nazw formantów WPF, dla których wpisy znajdują się w rejestrze komputera.
 
-Przestrzeń nazw  
+**Namespace**
+
 Wyświetla hierarchię [interfejsu API programu .NET Framework klasy](/dotnet/api/?view=netframework-4.7) przestrzeni nazw, która definiuje strukturę składnika. Sortowanie według tej kolumny listy składników dostępnych w każdym .NET Framework zainstalowany na tym komputerze.
 
-Nazwa zestawu  
+**Nazwa zestawu**
+
 Wyświetla nazwę zestawu .NET Framework, który zawiera przestrzeń nazw dla każdego składnika. Sortowanie według tej kolumny do tworzenia listy nazw zawarte w każdej zestawu .NET Framework zainstalowana na danym komputerze.
 
-Katalog  
+**Katalog**
+
 Wyświetla lokalizację zestawu .NET Framework. Domyślna lokalizacja dla wszystkich zestawów to Global Assembly Cache. Aby uzyskać więcej informacji na Global Assembly Cache, zobacz [Praca z zestawami i Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista elementów UI
@@ -54,15 +58,15 @@ Wyświetla lokalizację zestawu .NET Framework. Domyślna lokalizacja dla wszyst
 
 Filtruje listę formantów WPF opartych na ciąg, do którego należy podać w polu tekstowym. Wyświetlane są wszystkie dopasowania z dowolnego z czterech kolumn.
 
-### <a name="clear"></a>Wyczyść
+**Wyczyść**
 
 Czyści ciąg filtru.
 
-### <a name="browse"></a>Przeglądaj
+**Przeglądaj**
 
 Otwiera **Otwórz** okno dialogowe, które umożliwia przejście do zestawów, które zawierają formantów WPF. Umożliwia ładowanie zestawów, które nie znajdują się w globalnej pamięci podręcznej zestawów.
 
-### <a name="language"></a>Język
+**Język**
 
 Pokazuje zlokalizowanego języka zestawu, którego zawiera wybrany formant WPF.
 
@@ -80,5 +84,5 @@ Formanty bezpośrednio w widoku XAML można odwoływać się przez mapowanie prz
 
 ## <a name="see-also"></a>Zobacz także
 
-[Przybornik](../../ide/reference/toolbox.md)  
-[Wprowadzenie do korzystania z platformy WPF](../../designers/getting-started-with-wpf.md)
+- [Przybornik](../../ide/reference/toolbox.md)
+- [Wprowadzenie do korzystania z platformy WPF](../../designers/getting-started-with-wpf.md)

@@ -1,6 +1,6 @@
 ---
 title: Instalowanie narzędzi R
-description: Jak zainstalować narzędzia R dla programu Visual Studio w programie Visual Studio 2017 i programu Visual Studio 2015, łącznie z instalacji w trybie offline.
+description: Jak zainstalować narzędzia R w Visual Studio 2017 i programu Visual Studio 2015, łącznie z instalacji w trybie offline.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 894fc583e402f5fe5ceb5af2803239bd29ffa00d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26f0618397ef1ccfdd23983afdde28eccb59ef29
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Instalowanie narzędzi R dla programu Visual Studio
 

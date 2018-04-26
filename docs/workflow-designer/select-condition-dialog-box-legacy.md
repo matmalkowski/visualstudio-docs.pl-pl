@@ -1,7 +1,9 @@
 ---
-title: Wybierz warunek, okno dialogowe (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — okno dialogowe Wybierz warunek (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Wybierz warunek, okno dialogowe (starsze)
-W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Wybierz warunek** okno dialogowe służy do wybierania warunek reguły deklaratywne, który ma być przypisany do właściwości warunku działania. Te warunki reguły są widoczne jako właściwości na wykonywanie następujących czynności out-of-box Windows Workflow Foundation:
+W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszej wersji projektanta przepływów pracy systemu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
+
+**Wybierz warunek** okno dialogowe służy do wybierania warunek reguły deklaratywne, który ma być przypisany do właściwości warunku działania. Te warunki reguły są widoczne jako właściwości na wykonywanie następujących czynności out-of-box Windows Workflow Foundation:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w stars
 
 -   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- Informacje na temat dostępu do **wybierz warunek** okno dialogowe, zobacz [jak: utworzyć warunek reguły deklaratywne (starsze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+Informacje na temat dostępu do **wybierz warunek** okno dialogowe, zobacz [jak: utworzyć warunek reguły deklaratywne (starsze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
- W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz warunek** okno dialogowe.
+W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz warunek** okno dialogowe.
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|

@@ -1,9 +1,9 @@
 ---
-title: Wprowadzenie do języka Visual Basic w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Wprowadzenie do języka Visual Basic w programie Visual Studio
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
+
 W tym samouczku Visual Basic (VB), zostanie utworzone i uruchomione kilka aplikacji w innej konsoli za pomocą programu Visual Studio oraz Eksplorowanie niektóre funkcje programu Visual Studio [zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
 
 Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
+
 W tym miejscu jest szybkie często zadawane pytania na przedstawiono niektóre podstawowe pojęcia.
+
 ### <a name="what-is-visual-basic"></a>Co to jest Visual Basic?
+
 Visual Basic jest bezpieczny język programowania, który ma bardzo łatwe dowiedzieć się więcej. Jest on uzyskiwany z BASIC, co oznacza "Dla początkujących uniwersalny symboliczne Kod instrukcji".
+
 ### <a name="what-is-visual-studio"></a>Co to jest program Visual Studio?
-Visual Studio to zestaw zintegrowanych programowanie wydajności narzędzi dla deweloperów. Go traktować jako program, który służy do tworzenia programy i aplikacje.  
+
+Visual Studio to zestaw zintegrowanych programowanie wydajności narzędzi dla deweloperów. Go traktować jako program, który służy do tworzenia programy i aplikacje.
+
 ### <a name="what-is-a-console-app"></a>Co to jest aplikacja konsoli?
+
 Aplikacja konsoli dane wejściowe i alias wyświetla dane wyjściowe w oknie wiersza polecenia konsoli.
+
 ### <a name="what-is-net-core"></a>Co to jest oprogramowanie .NET Core?
+
 Oprogramowanie .NET core to ewolucyjny następny krok programu .NET Framework. Gdzie programu .NET Framework zezwalały na udostępnianie kodu w językach programowania .NET Core dodaje umożliwiają udostępnianie kodu na platformach. Nawet lepiej jest typu open source. (.NET Framework i .NET Core obejmuje bibliotek wbudowane funkcje, jak również środowisko uruchomieniowe języka wspólnego (CLR), która działa jako maszynę wirtualną do uruchamiania kodu).
 
 ## <a name="start-developing"></a>Rozpocząć tworzenie
+
 Czy chcesz rozpocząć tworzenie? Chodźmy!
 
 ### <a name="create-a-project"></a>Tworzenie projektu
+
 Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu zawiera wszystkie pliki szablonu, które będą potrzebne, zanim nawet dodano niczego!
 
 1. Otwórz program Visual Studio 2017 r.
@@ -62,11 +74,13 @@ Jeśli nie widzisz **aplikacji konsoli (.NET Core)** szablon projektu, możesz p
    ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
+
 1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje...** .
 
 2. Uruchamia Instalator programu Visual Studio. Wybierz **aplikacji dla wielu platform .NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.   
 
 ## <a name="create-a-what-is-your-name-application"></a>Tworzenie aplikacji "Co to jest nazwa użytkownika"
+
 Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a następnie wyświetli wraz z datą i godziną. Oto jak:
 
 1. Jeśli go nie jest jeszcze otwarty, następnie otwórz Twojej *WhatIsYourName* projektu.
@@ -93,6 +107,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
 5. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
 ## <a name="create-a-calculate-this-application"></a>Utwórz aplikację "Obliczyć to"
+
 1. Otwórz program Visual Studio 2017 r, a następnie na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
 
 2. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *CalculateThis*.  
@@ -123,6 +138,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
     ![Okno konsoli przedstawiający CaluculateThis aplikacji, która zawiera monity w akcje, które należy podjąć.](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>Następne kroki
+
 Gratulujemy wykonanie kroków tego samouczka! Aby zapoznać się jeszcze bardziej Visual Basic i Visual Studio IDE, zobacz następujące strony.
 
 * [Przewodnik po Visual Basic](/dotnet/visual-basic/index)

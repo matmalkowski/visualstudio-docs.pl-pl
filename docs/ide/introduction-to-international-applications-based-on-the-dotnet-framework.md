@@ -1,9 +1,8 @@
 ---
-title: Wprowadzenie do aplikacji międzynarodowych oparte na programie .NET Framework | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Wprowadzenie do aplikacji międzynarodowych na podstawie .NET Framework
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - strings [Visual Studio], localizing
@@ -28,27 +27,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2bbf16622e0f4bf1ca1478521881c42c34af56d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 773e6a2f351c0256fee17b1e07ff37fe9567198b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Wprowadzenie do aplikacji międzynarodowych na podstawie .NET Framework
-W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wyróżnić dwie części do tworzenia aplikacji gotowych: lokalizacja, proces tłumaczenie zasobów dla określonej kultury i globalizacja, proces projektowania aplikacji, które można dostosować do innych kultur. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
-  
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Model lokalizacji składa się z głównego zestawu, który zawiera zarówno kod aplikacji, jak i zasoby rezerwowe — ciągi, obrazy i inne obiekty, dla języka, w którym aplikacja jest przeznaczony głównie. Każda aplikacja zlokalizowanych będzie mieć zestawy satelickie lub zestawów, które zawierają zlokalizowanych zasobów. Ponieważ główny zestaw zawsze zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zestawie zlokalizowanych satelity <xref:System.Resources.ResourceManager> próbuje załadować go w hierarchiczny sposób, po pewnym czasie nastąpi powrót do zasobu w zestawie głównym. System rezerwowy zasobów jest omówiona szczegółowo w temacie większa [hierarchiczna organizacja zasobów do lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).  
-  
- Jeden zasób lokalizacji, należy rozważyć użycie jest słownik wszystkie usługi Microsoft są zlokalizowane produktów. Ten plik CSV zawiera ponad 12 000 terminy w języku angielskim oraz tłumaczenia warunki do 59 w różnych językach. Słownik jest dostępny do pobrania na [tłumaczeń terminologii Microsoft](http://go.microsoft.com/fwlink/?LinkId=128146) strony sieci Web.  
-  
- System projektu dla aplikacji formularzy systemu Windows można wygenerować plików zasobów dla obu powrotu i każdego potrzebne dodatkowe kultury interfejsu użytkownika. Plik zasobów rezerwowego jest wbudowana w zestawie głównym, a pliki zasobów specyficzne dla kultury następnie są wbudowane w zestawy satelickie, po jednej dla każdego kultury interfejsu użytkownika. Podczas tworzenia projektu, pliki zasobów są kompilowane z formatu XML usługi Visual Studio (resx) na format binarny pośredniego (.resources), które następnie są osadzone w zestawy satelickie.  
-  
- System projektu dla formularzy systemu Windows i formularzy sieci Web pozwala na tworzenie plików zasobów przy użyciu szablonu pliku zasobu zestawu, dostępu do zasobów i skompilowanie projektu. Zestawy satelickie zostanie utworzony wraz z głównym zestawu.  
-  
- Podczas zlokalizowanej aplikacji, jej wygląd jest określana przez dwie wartości kultury. (A *kultury* jest zestawem preferencji użytkownika związanych z języka i środowiska oraz konwencje kultury użytkownika.) Ustawienie kultury interfejsu użytkownika określa, jakie zasoby zostaną załadowane. Kultura interfejsu użytkownika jest ustawiony jako `UICulture` w plikach Web.config i dyrektywy strony i <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> w kodzie języka Visual Basic lub C#. Ustawienie kultury Określa format wartości, takich jak dat, liczb, waluty i tak dalej. Kultura jest ustawiony jako `Culture` w plikach Web.config i dyrektywy strony <xref:System.Globalization.CultureInfo.CurrentCulture%2A> w kodzie języka Visual Basic lub C#.  
-  
-## <a name="see-also"></a>Zobacz też  
- <xref:System.Globalization>   
- <xref:System.Resources>   
- [Globalizacja i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md)   
- [Zabezpieczenia a zlokalizowane zestawy satelickie](../ide/security-and-localized-satellite-assemblies.md)
+
+W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wyróżnić dwie części do tworzenia aplikacji gotowych: lokalizacja, proces tłumaczenie zasobów dla określonej kultury i globalizacja, proces projektowania aplikacji, które można dostosować do innych kultur. Aby uzyskać ogólne informacje dotyczące projektowania aplikacji międzynarodowych odbiorców, zobacz [najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
+
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Model lokalizacji składa się z głównego zestawu, który zawiera zarówno kod aplikacji, jak i zasoby rezerwowe — ciągi, obrazy i inne obiekty, dla języka, w którym aplikacja jest przeznaczony głównie. Każda aplikacja zlokalizowanych będzie mieć zestawy satelickie lub zestawów, które zawierają zlokalizowanych zasobów. Ponieważ główny zestaw zawsze zawiera zasoby rezerwowe, jeśli zasób nie zostanie znaleziony w zestawie zlokalizowanych satelity <xref:System.Resources.ResourceManager> próbuje załadować go w hierarchiczny sposób, po pewnym czasie nastąpi powrót do zasobu w zestawie głównym. System rezerwowy zasobów jest omówiona szczegółowo w temacie większa [hierarchiczna organizacja zasobów do lokalizacji](../ide/hierarchical-organization-of-resources-for-localization.md).
+
+ Jeden zasób lokalizacji, należy rozważyć użycie jest słownik wszystkie usługi Microsoft są zlokalizowane produktów. Ten plik CSV zawiera ponad 12 000 terminy w języku angielskim oraz tłumaczenia warunki do 59 w różnych językach. Słownik jest dostępny do pobrania na [tłumaczeń terminologii Microsoft](http://go.microsoft.com/fwlink/?LinkId=128146) strony sieci Web.
+
+ System projektu dla aplikacji formularzy systemu Windows można wygenerować plików zasobów dla obu powrotu i każdego potrzebne dodatkowe kultury interfejsu użytkownika. Plik zasobów rezerwowego jest wbudowana w zestawie głównym, a pliki zasobów specyficzne dla kultury następnie są wbudowane w zestawy satelickie, po jednej dla każdego kultury interfejsu użytkownika. Podczas tworzenia projektu, pliki zasobów są kompilowane z formatu XML usługi Visual Studio (resx) na format binarny pośredniego (.resources), które następnie są osadzone w zestawy satelickie.
+
+ System projektu dla formularzy systemu Windows i formularzy sieci Web pozwala na tworzenie plików zasobów przy użyciu szablonu pliku zasobu zestawu, dostępu do zasobów i skompilowanie projektu. Zestawy satelickie zostanie utworzony wraz z głównym zestawu.
+
+ Podczas zlokalizowanej aplikacji, jej wygląd jest określana przez dwie wartości kultury. (A *kultury* jest zestawem preferencji użytkownika związanych z języka i środowiska oraz konwencje kultury użytkownika.) Ustawienie kultury interfejsu użytkownika określa, jakie zasoby zostaną załadowane. Kultura interfejsu użytkownika jest ustawiony jako `UICulture` w plikach Web.config i dyrektywy strony i <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> w kodzie języka Visual Basic lub C#. Ustawienie kultury Określa format wartości, takich jak dat, liczb, waluty i tak dalej. Kultura jest ustawiony jako `Culture` w plikach Web.config i dyrektywy strony <xref:System.Globalization.CultureInfo.CurrentCulture%2A> w kodzie języka Visual Basic lub C#.
+
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Globalization>
+- <xref:System.Resources>
+- [Globalizowanie i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)
+- [Zabezpieczenia a zlokalizowane zestawy satelickie](../ide/security-and-localized-satellite-assemblies.md)

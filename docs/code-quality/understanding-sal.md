@@ -1,6 +1,7 @@
 ---
 title: Poznanie SAL
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
@@ -9,11 +10,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 928ecfc2ebe652ae307d506d0747746d02c7c269
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 82d6719ee57000ebec8ad88a90543031e0d3eeb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 Język Microsoft kodu źródłowego adnotacji (SAL) zawiera zestaw adnotacje, które można użyć do opisania używaniu funkcji jego parametrów, założeń, które ułatwia ich temat i gwarancji, które ułatwia po jej zakończeniu. Adnotacje są zdefiniowane w pliku nagłówka `<sal.h>`. Visual Studio analizy kodu dla języka C++ używa adnotacji SAL do modyfikowania jej analiza funkcji. Aby uzyskać więcej informacji na temat SAL 2.0 dla systemu Windows dla deweloperów sterowników, zobacz [SAL 2.0 adnotacje dla sterowników systemu Windows](http://go.microsoft.com/fwlink/?LinkId=250979).

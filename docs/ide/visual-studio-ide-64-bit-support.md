@@ -1,6 +1,7 @@
 ---
-title: Obsługa 64-bitowego środowiska IDE programu Visual Studio | Dokumentacja firmy Microsoft
+title: Obsługa 64-bitowego środowiska IDE programu Visual Studio
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e6067e3280a998f4b2296f880471080bd7bb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b911a6529e3e32075ca8599c921ae8369afb691
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Obsługa 64-bitowego środowiska IDE programu Visual Studio
 
@@ -32,5 +33,5 @@ Program Visual Studio umożliwia konfigurowanie aplikacji pod kątem różnych p
 
 ## <a name="debugging-a-64-bit-application"></a>Debugowanie aplikacji 64-bitowych
 
-[Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)
-[przy użyciu plików zrzutu](../debugger/using-dump-files.md)
+- [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)
+- [Przy użyciu plików zrzutu](../debugger/using-dump-files.md)

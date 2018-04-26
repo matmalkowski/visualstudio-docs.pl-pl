@@ -1,6 +1,7 @@
 ---
 title: 'Porady: tworzenie i modyfikacja poziomów MIP'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1a12810d64e4e61230d1832e0394f0bad91cf3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Porady: tworzenie i modyfikacja poziomów MIP
 W tym dokumencie przedstawiono sposób użycia **edytor obrazów** do generowania i zmodyfikować *poziomów Mipmapy* dla przestrzeni tekstury elementu szczegóły na poziomie (LoD).

@@ -1,9 +1,9 @@
 ---
-title: 'Samouczek 1: Tworzenie podglądu obrazów | Dokumentacja firmy Microsoft'
+title: 'Samouczek 1: Tworzenie podglądu obrazów'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie podglądu obrazów
 W tym samouczku tworzenia programu, który ładuje obraz z pliku i wyświetla go w oknie. Sposób przeciągnij formanty, takie jak przycisków i pola obrazu na formularzu, ich właściwości i używanie kontenerów aby sprawnie zmienić rozmiar formularza. Można również rozpocząć pisanie kodu. Dowiesz się, jak:  
-  
+
 -   Utwórz nowy projekt.  
-  
+
 -   Test (debugowanie) aplikacji.  
-  
+
 -   Dodawanie podstawowych formantach, takich jak przyciski i pola wyboru do formularza.  
-  
+
 -   Umieść formanty formularza za pomocą układów.  
-  
+
 -   Dodaj **Otwórz plik** i **kolor** okien dialogowych do formularza.  
-  
+
 -   Pisanie kodu za pomocą wstawki kodu programu IntelliSense i kod.  
-  
+
 -   Zapis metody obsługi zdarzeń.  
-  
+
  Po zakończeniu program będzie wyglądać podobnie jak na poniższej ilustracji.  
-  
+
  ![Obraz, który można utworzyć w tym samouczku](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Obraz, który można utworzyć w tym samouczku  
-  
+
  Aby pobrać ukończoną wersję przykładu, zobacz [przykładowy samouczek pełny obraz podglądu](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-  
+
  ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [jak i. Tworzenie podglądu obrazów w języku Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [jak i. Tworzenie podglądu obrazów w języku C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio. Visual C# i Visual Basic są przedstawione w tym samouczku, dlatego skupić się na informacje specyficzne dla języka programowania, którego używasz.  
 >   
 >  Aby wyświetlić kod w języku Visual Basic, wybierz pozycję **VB** w górnej części bloki kodu, a następnie wyświetlić kodu Visual C#, wybierz **C#** kartę. Jeśli interesuje Cię szkoleniowe dotyczące języka Visual C++, zobacz [wprowadzenie](../ide/getting-started-with-cpp-in-visual-studio.md) i [samouczek języka C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Jeśli chcesz się dowiedzieć, jak pisać aplikacje Visual C# lub Visual Basic platformy uniwersalnej systemu Windows, zobacz [aplikacji platformy uniwersalnej systemu Windows kompilacji](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>Tematy pokrewne  
-  
+
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Krok 1. Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Rozpocznij od utworzenia projektu aplikacji formularzy systemu Windows.|  

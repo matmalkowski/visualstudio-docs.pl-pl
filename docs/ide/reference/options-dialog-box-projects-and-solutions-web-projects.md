@@ -1,10 +1,9 @@
 ---
-title: Opcje — okno dialogowe, projekty i rozwiązania, projekty sieci Web | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 ms.date: 07/14/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba7c35cc61867930a94500d00195c246bfd39969
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79863ec5038b420bcfa00ed67fe105c28cf9fff7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 
@@ -26,16 +25,20 @@ Ustawia projekty sieci Web będzie używany do tworzenia aplikacji w ramach serw
 Domyślnie uruchamianie projektu sieci Web w programie Visual Studio korzysta z serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwerów sieci Web w programie Visual Studio dla projektów sieci Web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
 
 > [!NOTE]
->  Opcje dostępne w oknach dialogowych i nazwy i lokalizacje poleceń menu, które zostanie wyświetlone, może się różnić od co to jest opisany w pomocy, w zależności od wersji lub aktywne ustawienia. Ta strona pomocy został zapisany z **sieci Web ustawienia** pamiętać. Aby wyświetlić lub zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="settings"></a>Ustawienia  
+> Opcje dostępne w oknach dialogowych i nazwy i lokalizacje poleceń menu, które zostanie wyświetlone, może się różnić od co to jest opisany w pomocy, w zależności od wersji lub aktywne ustawienia. Ta strona pomocy został zapisany z **sieci Web ustawienia** pamiętać. Aby wyświetlić lub zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-**Użyj 64-bitowej wersji programu IIS Express dla projektów i stron sieci web**  
+
+## <a name="settings"></a>Ustawienia
+
+**Użyj 64-bitowej wersji programu IIS Express dla projektów i stron sieci web**
+
 Wybierz tę opcję, aby używać programu IIS Express zamiast serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [wprowadzenie do usług IIS Express](http://go.microsoft.com/?linkid=9747914) i [usług IIS Express omówienie](http://go.microsoft.com/?linkid=9747915).
 
-**Ostrzegaj przed uruchomieniem aplikacji sieci web, jeśli na liście błędów znajdują się błędy**  
+**Ostrzegaj przed uruchomieniem aplikacji sieci web, jeśli na liście błędów znajdują się błędy**
+
 Jeśli ta opcja jest ustawiona, zostanie wyświetlone ostrzeżenie, jeśli próby uruchomienia aplikacji sieci web, gdy nie kompiluje się bez błędów.
 
-## <a name="see-also"></a>Zobacz też  
-[Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)  
-[Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie](options-dialog-box-projects-and-solutions-web-projects.md)
+## <a name="see-also"></a>Zobacz też
+
+- [Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)
+- [Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie](options-dialog-box-projects-and-solutions-web-projects.md)

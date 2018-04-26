@@ -1,10 +1,9 @@
 ---
-title: Find — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Find — Polecenie
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.find
 helpviewer_keywords:
@@ -16,72 +15,60 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4f20be9aafaa6002ba329b7dd14c132dbfcab70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31810189ec7127548f68a3732afc701e8a7bac08
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-command"></a>Find — Polecenie
-Wyszukuje pliki przy użyciu podzbiór opcje dostępne na **Znajdź w plikach** karcie **Znajdź i Zamień** okna.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]   
-[/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `findwhat`  
- Wymagany. Tekst do dopasowania.  
-  
-## <a name="switches"></a>Przełączniki  
- /Case lub /c  
- Opcjonalny. Dopasowań występuje tylko w przypadku wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.  
-  
- / doc lub /d  
- Opcjonalny. Wyszukuje tylko bieżącego dokumentu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.  
-  
- /markall lub/m  
- Opcjonalny. Umieszcza grafiki w każdym wierszu, zawierający zgodność wyszukiwania w bieżącym dokumencie.  
-  
- / Open lub /o  
- Opcjonalny. Przeszukuje wszystkie otwarte dokumenty, tak jakby były to jeden dokument. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.  
-  
- / Options lub /t  
- Opcjonalny. Wyświetla listę bieżące ustawienia opcji wyszukiwania, a nie przeprowadza wyszukiwanie.  
-  
- /proc lub /p  
- Opcjonalny. Wyszukuje bieżącą procedurę. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.  
-  
- / Reset lub/e  
- Opcjonalny. Zwraca opcje Znajdź do ustawień domyślnych i nie wykonuje wyszukiwanie.  
-  
- /SEL lub/s  
- Opcjonalny. Wyszukuje tylko bieżące zaznaczenie. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.  
-  
- /Up lub /u  
- Opcjonalny. Wyszukiwanie od bieżącej lokalizacji w pliku kierunku początku pliku. Domyślnie wyszukiwanie rozpoczyna się w bieżącej lokalizacji w pliku i wyszukiwania pod koniec pliku.  
-  
- /regex lub /r  
- Opcjonalny. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji reprezentujących wzorce tekstu, a nie literał znaków. Pełną listę znaków wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).  
-  
- /Wild lub/l  
- Opcjonalny. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji do reprezentowania znaków ani sekwencji znaków.  
-  
- opcji lub /w  
- Opcjonalny. Wyszukuje tylko całe wyrazy.  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie wykonuje wyszukiwanie z uwzględnieniem wielkości liter dla słowa "somestring" w aktualnie wybranej części kodu.  
-  
-```  
->Edit.Find somestring /sel /case  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Find/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Wyszukuje pliki przy użyciu podzbiór opcje dostępne na **Znajdź w plikach** karcie **Znajdź i Zamień** okna.
+
+## <a name="syntax"></a>Składnia
+
+```
+Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
+[/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
+```
+
+## <a name="arguments"></a>Argumenty
+ `findwhat` Wymagane. Tekst do dopasowania.
+
+## <a name="switches"></a>Przełączniki
+ /Case lub /c opcjonalne. Dopasowań występuje tylko w przypadku wielkich i małych liter dokładnie odpowiadać określone w `findwhat` argumentu.
+
+ / doc lub /d opcjonalne. Wyszukuje tylko bieżącego dokumentu. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+
+ /markall lub/m opcjonalne. Umieszcza grafiki w każdym wierszu, zawierający zgodność wyszukiwania w bieżącym dokumencie.
+
+ / Open lub /o opcjonalne. Przeszukuje wszystkie otwarte dokumenty, tak jakby były to jeden dokument. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+
+ / Options lub /t opcjonalne. Wyświetla listę bieżące ustawienia opcji wyszukiwania, a nie przeprowadza wyszukiwanie.
+
+ /proc lub /p opcjonalne. Wyszukuje bieżącą procedurę. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+
+ / Reset lub /e opcjonalne. Zwraca opcje Znajdź do ustawień domyślnych i nie wykonuje wyszukiwanie.
+
+ /SEL lub /s opcjonalne. Wyszukuje tylko bieżące zaznaczenie. Określ tylko jeden zakres wyszukiwania dostępnych `/doc`, `/proc`, `/open`, lub `/sel`.
+
+ /Up lub /u opcjonalne. Wyszukiwanie od bieżącej lokalizacji w pliku kierunku początku pliku. Domyślnie wyszukiwanie rozpoczyna się w bieżącej lokalizacji w pliku i wyszukiwania pod koniec pliku.
+
+ /regex lub /r opcjonalne. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji reprezentujących wzorce tekstu, a nie literał znaków. Pełną listę znaków wyrażenia regularnego, zobacz [wyrażeń regularnych](../../ide/using-regular-expressions-in-visual-studio.md).
+
+ /Wild lub /l opcjonalne. Używa wstępnie zdefiniowane znaki specjalne w `findwhat` argument jako notacji do reprezentowania znaków ani sekwencji znaków.
+
+ opcji lub /w opcjonalne. Wyszukuje tylko całe wyrazy.
+
+## <a name="example"></a>Przykład
+ W tym przykładzie wykonuje wyszukiwanie z uwzględnieniem wielkości liter dla słowa "somestring" w aktualnie wybranej części kodu.
+
+```
+>Edit.Find somestring /sel /case
+```
+
+## <a name="see-also"></a>Zobacz też
+
+- [Okno Polecenie](../../ide/reference/command-window.md)
+- [Find/Command — pole](../../ide/find-command-box.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

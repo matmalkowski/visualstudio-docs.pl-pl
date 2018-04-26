@@ -1,7 +1,9 @@
 ---
-title: Okno dialogowe konfiguracji motywu (starsze) | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — okno dialogowe konfiguracji motywu (starsze)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07ae376a09afd73c5744f7d1587c637a4b55410d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Okno dialogowe konfiguracji motywu (starsze)
-W tym temacie opisano sposób użycia **konfiguracji motywu** okno dialogowe w starszej wersji projektanta przepływów pracy programu Windows. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Motyw definiuje kolory tła i pierwszego planu, style, ikony i inne elementy wizualne przepływu pracy. Możesz zapisać kompozycje do ponownego użycia przez inne przepływy pracy.
+W tym temacie opisano sposób użycia **konfiguracji motywu** okno dialogowe w starszej wersji projektanta przepływów pracy programu Windows. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
- Możesz tworzyć i edytować motywów przy użyciu **konfiguracji motywu** okno dialogowe. Aby otworzyć okno dialogowe, wybierz **Utwórz nowy motyw** na **przepływu pracy** menu lub kliknij prawym przyciskiem myszy projekt przepływu pracy powierzchni i wybierz pozycję **Utwórz nowy motyw**.
+Motyw definiuje kolory tła i pierwszego planu, style, ikony i inne elementy wizualne przepływu pracy. Możesz zapisać kompozycje do ponownego użycia przez inne przepływy pracy.
 
- W poniższej tabeli opisano elementy interfejsu użytkownika **konfiguracji motywu** okno dialogowe.
+Możesz tworzyć i edytować motywów przy użyciu **konfiguracji motywu** okno dialogowe. Aby otworzyć okno dialogowe, wybierz **Utwórz nowy motyw** na **przepływu pracy** menu lub kliknij prawym przyciskiem myszy projekt przepływu pracy powierzchni i wybierz pozycję **Utwórz nowy motyw**.
+
+W poniższej tabeli opisano elementy interfejsu użytkownika **konfiguracji motywu** okno dialogowe.
 
 |Element interfejsu użytkownika|Opis|
 |----------------|-----------------|

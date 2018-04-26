@@ -1,10 +1,9 @@
 ---
-title: Ogólne, środowisko, opcje ― Okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Ogólne, środowisko, opcje — Okno dialogowe
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Ogólne, środowisko, opcje — Okno dialogowe
 
@@ -67,17 +66,27 @@ Używa sprzętowego przyspieszania grafiki, jeśli jest dostępna, a nie przyspi
 
 ## <a name="other"></a>Inne
 
-**Elementy(ów) w menu okna** dostosowuje liczbę systemu windows, które pojawiają się na liście Windows **okna** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10.
+**Elementy(ów) w menu okna**
 
-**Elementy(ów) w ostatnio używane listy** dostosowuje liczbę ostatnio używanych projektów i pliki, które znajdują się w **pliku** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10. Jest to prosty sposób na pobranie ostatnio używanych projektów i pliki.
+Dostosowuje liczbę systemu windows, które pojawiają się na liście Windows **okna** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10.
 
-**Pokaż pasek stanu** Wyświetla pasek stanu. Pasek stanu znajduje się w dolnej części okna IDE i wyświetla informacje o postępie trwających operacji.
+**Elementy(ów) na listach ostatnio używanych**
 
-**Przycisk Zamknij dotyczy tylko aktywnego okna narzędzi** Określa, że w przypadku **Zamknij** przycisk zostanie kliknięty tylko aktywnego okna narzędzia został zamknięty i nie wszystkie z okna narzędzi w zestawie dokowanych. Domyślnie ta opcja jest zaznaczona.
+Dostosowuje liczbę ostatnio używanych projektów i pliki, które znajdują się w **pliku** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10. Jest to prosty sposób na pobranie ostatnio używanych projektów i pliki.
 
-**Przycisk Ukryj automatycznie dotyczy tylko aktywnego okna narzędzi** Określa, że w przypadku **automatyczne ukrywanie** przycisku, okna narzędzia, który ma fokus jest ukrywane automatycznie i nie wszystkie okna narzędzi w zestawie dokowanych. Domyślnie ta opcja nie wybrano żadnych działań.
+**Pokaż pasek stanu**
+
+Wyświetla pasek stanu. Pasek stanu znajduje się w dolnej części okna IDE i wyświetla informacje o postępie trwających operacji.
+
+**Przycisk Zamknij dotyczy tylko aktywnego okna narzędzi**
+
+Określa, że w przypadku **Zamknij** przycisk zostanie kliknięty tylko aktywnego okna narzędzia został zamknięty i nie wszystkie z okna narzędzi w zestawie dokowanych. Domyślnie ta opcja jest zaznaczona.
+
+**Przycisk Ukryj automatycznie dotyczy tylko aktywnego okna narzędzi**
+
+Określa, że w przypadku **automatyczne ukrywanie** przycisku, okna narzędzia, który ma fokus jest ukrywane automatycznie i nie wszystkie okna narzędzi w zestawie dokowanych. Domyślnie ta opcja nie wybrano żadnych działań.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)
-[dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+- [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

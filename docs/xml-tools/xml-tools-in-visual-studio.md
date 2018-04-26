@@ -1,9 +1,8 @@
 ---
-title: Narzędzia XML w Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Narzędzia XML w Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -35,11 +34,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f823a42d5a89dd22fd273a2971a3b323487a525b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w Visual Studio
 
@@ -51,40 +50,24 @@ Kod XML jest fundament wiele funkcji programu Visual Studio i .NET Framework. Na
 
 Aby uzyskać więcej informacji, zobacz <xref:System.Xml?displayProperty=fullName> dokumentacji.
 
-## <a name="in-this-section"></a>W tej sekcji
-
-[Praca z danymi XML](../xml-tools/working-with-xml-data.md)  
-W tym artykule omówiono rolę XML w taki sposób, w danych jest obsługiwany w programie Visual Studio.
-
-[Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)  
-Zawiera łącza do innych tematów dotyczących za pomocą debugera programu Visual Studio do debugowania XSLT.
-
 ## <a name="reference"></a>Tematy pomocy
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)  
-Przedstawia [edytora XML](http://go.microsoft.com/fwlink/?LinkId=228249) drzewo za pomocą analizy [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) dla wszystkich dokumentów XML.
+[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) przedstawia [edytora XML](http://go.microsoft.com/fwlink/?LinkId=228249) drzewo za pomocą analizy [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) dla wszystkich dokumentów XML.
 
-[Odwołanie XML standardów](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD) języka definicji schematu XML (XSD) i XSLT.
+[Odwołanie XML standardów](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD) języka definicji schematu XML (XSD) i XSLT.
 
-<xref:System.Xml?displayProperty=fullName>  
-Zawiera opis klas i inne elementy wchodzące w skład <xref:System.Xml> przestrzeni nazw i łącza do bardziej szczegółowych informacji na temat każdego elementu.
+<xref:System.Xml?displayProperty=fullName> Zawiera opis klas i inne elementy wchodzące w skład <xref:System.Xml> przestrzeni nazw i łącza do bardziej szczegółowych informacji na temat każdego elementu.
 
-<xref:System.Xml.Serialization?displayProperty=fullName>  
-Zawiera opis klas i inne elementy wchodzące w skład <xref:System.Xml.Serialization> przestrzeni nazw i linki do bardziej szczegółowych informacji o każdym elemencie.
+<xref:System.Xml.Serialization?displayProperty=fullName> Zawiera opis klas i inne elementy wchodzące w skład <xref:System.Xml.Serialization> przestrzeni nazw i linki do bardziej szczegółowych informacji o każdym elemencie.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
-[Model DOM (XML Document Object Model)](/dotnet/standard/data/xml/xml-document-object-model-dom)  
-Opisuje sposób <xref:System.Xml.XmlDocument> i W3C Document Object Model (podstawowe), poziom 1 i poziom 2 przestrzeń nazw pomocy technicznej specyfikacji wykonania jego skojarzonych klas.
+[XML modelu DOM (Document Object)](/dotnet/standard/data/xml/xml-document-object-model-dom) w tym artykule opisano sposób <xref:System.Xml.XmlDocument> i W3C Document Object Model (podstawowe), poziom 1 i poziom 2 przestrzeń nazw pomocy technicznej specyfikacji wykonania jego skojarzonych klas.
 
 [Przetwarzanie danych XML za pomocą XmlReader i XmlWriter](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
 
-[Przekształcenia XSLT](/dotnet/standard/data/xml/xslt-transformations)  
-Opisuje sposób <xref:System.Xml.Xsl.XslCompiledTransform> klasa implementuje zalecenie XSLT 1.0.
+[Przekształcenia XSLT](/dotnet/standard/data/xml/xslt-transformations) w tym artykule opisano sposób <xref:System.Xml.Xsl.XslCompiledTransform> klasa implementuje zalecenie XSLT 1.0.
 
-[Przetwarzanie danych XML przy użyciu modelu danych XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)  
-Opisuje sposób <xref:System.Xml.XPath.XPathNavigator> klasy może przetwarzać dane XML przechowywane w <xref:System.Xml.XPath.XPathDocument> lub <xref:System.Xml.XmlDocument> obiektu. <xref:System.Xml.XPath.XPathNavigator> Klasy jest oparta na XQuery 1.0 i XPath 2.0 Model danych i może służyć do nawigowania i edytowanie danych XML.
+[Przetwarzanie danych XML przy użyciu modelu danych XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) w tym artykule opisano sposób <xref:System.Xml.XPath.XPathNavigator> klasy może przetwarzać dane XML przechowywane w <xref:System.Xml.XPath.XPathDocument> lub <xref:System.Xml.XmlDocument> obiektu. <xref:System.Xml.XPath.XPathNavigator> Klasy jest oparta na XQuery 1.0 i XPath 2.0 Model danych i może służyć do nawigowania i edytowanie danych XML.
 
-[Model SOM (XML Schema Object Model)](/dotnet/standard/data/xml/xml-schema-object-model-som)  
-W tym artykule opisano klasy używane do tworzenia i manipulowania schematów XML, zapewniając <xref:System.Xml.Schema.XmlSchema> klasy obciążenia i Edytuj schematu.
+[Model obiektu schematu XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) opisano klasy używane do tworzenia i manipulowania schematów XML, zapewniając <xref:System.Xml.Schema.XmlSchema> klasy obciążenia i Edytuj schematu.

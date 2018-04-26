@@ -1,8 +1,9 @@
 ---
-title: Opcje, Edytor tekstu, C#, IntelliSense | Dokumentacja firmy Microsoft
+title: Opcje, edytor tekstu, C#, IntelliSense
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 helpviewer_keywords:
@@ -17,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 37640cd6bd2928a2e2261afb3ed9e859830d0225
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
@@ -86,5 +87,5 @@ Użyj **IntelliSense** Strona opcji, aby zmodyfikować ustawienia, które wpływ
 
 ## <a name="see-also"></a>Zobacz także
 
-[Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)  
-[Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)
+- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

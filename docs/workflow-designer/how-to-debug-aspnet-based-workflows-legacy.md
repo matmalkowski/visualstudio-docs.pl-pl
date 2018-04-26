@@ -1,7 +1,9 @@
 ---
-title: 'Porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsze)
-W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]— na podstawie [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacje, które odnoszą się do jednego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] w Projektancie przepływów pracy starszej wersji systemu Windows.
 
- Można debugować starszych przepływy pracy, które są uruchamiane w ASP.NET lub starszego przepływów pracy, które są publikowane jako usługę sieci Web przez dołączenie do procesu, w którym jest hostowany przepływ pracy.
+W tym temacie opisano, jak do debugowania aplikacji oparty na programie ASP.NET Windows Workflow Foundation (WF) obiektu docelowego albo programu .NET Framework w wersji 3.5 lub WinFX w starszej wersji projektanta przepływów pracy systemu Windows.
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>Aby debugować przepływ pracy oparty na programie ASP.NET
+Można debugować starszych przepływy pracy, które są uruchamiane w ASP.NET lub starszego przepływów pracy, które są publikowane jako usługę sieci Web przez dołączenie do procesu, w którym jest hostowany przepływ pracy.
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>Aby debugować przepływ pracy oparty na programie ASP.NET
 
 1.  Włącz debugowanie aplikacji ASP.NET przez ustawienie **debug = true** w pliku web.config.
 

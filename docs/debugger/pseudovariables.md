@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables w debugerze programu Visual Studio
 Pseudovariables są warunki, używany do wyświetlania pewne informacje w oknie zmiennej lub **QuickWatch** okno dialogowe. Możesz wprowadzić pseudovariable w taki sam sposób jak wprowadzasz normalnym zmiennej. Pseudovariables zmienne nie są jednak i nazwy zmiennych w programie nie są zgodne.  
@@ -49,7 +49,7 @@ $handles
 |`$` *registername*<br /><br /> lub<br /><br /> `@` *registername*|Wyświetla zawartość rejestru *registername*.<br /><br /> Zazwyczaj można wyświetlić zawartość rejestru właśnie, wprowadzając nazwę rejestru. Tylko wtedy, należy użyć następującej składni jest, gdy nazwa rejestru overloads nazwę zmiennej. Jeśli nazwa rejestru jest taka sama jak nazwa zmiennej w bieżącym zakresie, debuger interpretuje nazwy jako nazwy zmiennej. Kiedy jest `$` *registername* lub `@` *registername* polega na pod ręką.|  
 |`$clk`|Wyświetla czas w cykle zegara.|  
 |`$user`|Wyświetla struktury zawierającej informacje o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje o haśle nie jest wyświetlana.|  
-|`$exceptionstack`|Wyświetla ślad stosu wyjątku bieżącego środowiska uruchomieniowego systemu Windows. `$ exceptionstack` działa tylko w aplikacji platformy uniwersalnej systemu Windows. `$ exceptionstack` nieobsługiwane wyjątki C++ i KLIKA|  
+|`$exceptionstack`|Wyświetla ślad stosu wyjątku bieżącego środowiska uruchomieniowego systemu Windows. `$ exceptionstack` działa tylko w aplikacji platformy uniwersalnej systemu Windows. `$ exceptionstack` nieobsługiwane wyjątki C++ i SEH|  
 |`$ReturnValue`|Wyświetla wartość zwracaną przez metodę .NET Framework.|  
   
  W języku C# i Visual Basic można użyć pseudovariables przedstawione w tej tabeli:  

@@ -1,18 +1,20 @@
 ---
-title: 'Porady: dodawanie działań do przybornika | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: dodawanie działań do przybornika'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb101f5dff84f7e8d586ce33c63adbe30fa0dbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Porady: dodawanie działań do przybornika
 
@@ -27,7 +29,7 @@ Można dodawać do **przybornika** w rozwiązaniu na kilka różnych sposobów. 
 3.  Skompiluj projekt. Jeśli kompilacja zakończyła się pomyślnie, nową kategorię w **przybornika** o nazwie "\<*Nazwa projektu*>" jest wyświetlana z działań niestandardowych do tej kategorii.
 
     > [!NOTE]
-    > Jeśli zresetowania przybornika działań niestandardowych zostaną usunięte, nawet jeśli rozwiązanie opiera się ponownie. Aby wypełnić przybornika działań niestandardowych po został zresetowany, uruchom ponownie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+    > Jeśli zresetowania przybornika działań niestandardowych zostaną usunięte, nawet jeśli rozwiązanie opiera się ponownie. Ponownie wypełnić przybornika działań niestandardowych po został zresetowany, uruchom ponownie program Visual Studio 2010.
 
     > [!NOTE]
     > Przybornik można wyświetlić tylko jedno działanie o danej nazwie. Jeśli dwa działania z różnych zestawów mają taką samą nazwę klasy, jest wyświetlany tylko jeden z nich.

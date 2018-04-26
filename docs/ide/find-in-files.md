@@ -1,7 +1,7 @@
 ---
-title: Znajdź w plikach | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Znajdź w plikach
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7e181883fff125349949f081826157f2a3aa36f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
 
@@ -69,19 +69,19 @@ Określa, że podfoldery **Szukaj w** folderu zostaną przeszukane.
 
 Można rozwinąć lub zwinąć **dostępne opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
 
-**Wielkość liter**  
+**Wielkość liter**
 
 Po wybraniu **znaleźć wyników** wyszukiwanie będzie uwzględniana wielkość liter
 
-**Uwzględnij całe wyrazy**  
+**Uwzględnij całe wyrazy**
 
 Po wybraniu **znaleźć wyników** windows zwróci tylko całe wyrazy dopasowań.
 
-**Używanie wyrażeń regularnych**  
+**Używanie wyrażeń regularnych**
 
 Jeśli to pole wyboru jest zaznaczone, można użyć notacji specjalne wzorce tekstu do dopasowania w **Znajdź** lub **Zamień** pól tekstowych. Aby uzyskać listę tych notacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-**Obejrzyj następujące typy plików**  
+**Obejrzyj następujące typy plików**
 
 Ta lista wskazuje typy plików do przeszukiwania w **Szukaj w** katalogów. Jeśli to pole jest puste, wszystkie pliki w **Szukaj w** katalogi będą wyszukiwane.
 
@@ -91,7 +91,7 @@ Wybierz dowolną pozycję na liście, wprowadź ciąg wyszukiwania wstępnie sko
 
 Można rozwinąć lub zwinąć **powoduje opcje** sekcji. Można zaznaczyć lub wyczyścić następujące opcje:
 
-**Znajdź okno wyników 1**  
+**Znajdź okno wyników 1**
 
 Po wybraniu wyniki wyszukiwania bieżącego zastąpi zawartość **znaleźć 1 wyniki** okna. To okno zostanie otwarty automatycznie do wyświetlania wyników wyszukiwania. Aby otworzyć to okno ręcznie, zaznacz **inne okna** z **widoku** menu i wybierz polecenie **znaleźć 1 wyniki**.
 
@@ -109,6 +109,6 @@ Dołącza wyniki wyszukiwania do wyników poprzedniego wyszukiwania.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)  
-[Zastąp w plikach](../ide/replace-in-files.md)  
-[Visual Studio — polecenia](../ide/reference/visual-studio-commands.md)
+- [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)
+- [Zastąp w plikach](../ide/replace-in-files.md)
+- [Visual Studio — polecenia](../ide/reference/visual-studio-commands.md)

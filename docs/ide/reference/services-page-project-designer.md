@@ -1,9 +1,9 @@
 ---
-title: Strona usług, Projektant projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Strona usług, Projektant projektu
 ms.date: 01/18/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37d6b448ea7ce3a8662d0372cf61b35363f4648
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 320c1d89713aaa17fd883c90d86cdf4874d75e60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
@@ -30,44 +30,54 @@ Aby uzyskać dostęp do **usług** wybierz węzeł projektu w **Eksploratora roz
 
 ## <a name="task-list"></a>Lista zadań
 
-[Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
+[Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+
 ## <a name="uielement-list"></a>Lista elementów UI
 
- **Konfiguracja**  
- Ten formant nie jest możliwa na tej stronie. Opis tego formantu, zobacz [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) lub [strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Platformy**  
- Ten formant nie jest możliwa na tej stronie. Opis tego formantu, zobacz [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) lub [strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Włącz usługi aplikacji klienta**  
- Zaznacz, aby włączyć usługi aplikacji klienta. Należy określić lokalizacji usług na **usług** stronę, aby korzystać z usługi aplikacji klienta.  
-  
- **Uwierzytelnianie systemu Windows**  
- Wskazuje, że dostawca uwierzytelniania będzie używać uwierzytelniania systemu Windows, czyli tożsamość dostarczane przez system operacyjny Windows.  
-  
- **Uwierzytelnianie formularzy**  
- Wskazuje, że dostawca uwierzytelniania korzystają z uwierzytelniania formularzy. Oznacza to, aplikacja musi udostępniają interfejs użytkownika dla nazwy logowania. Aby uzyskać więcej informacji, zobacz [porady: Implementowanie logowania użytkownika z usługi aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).  
-  
- **Lokalizacja usługi uwierzytelniania**  
- Używana tylko z uwierzytelniania formularzy. Określa lokalizację usługi uwierzytelniania.  
-  
- **Opcjonalnie: Dostawca poświadczeń**  
- Używana tylko z uwierzytelniania formularzy. Wskazuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementacji, którego będzie używać usługa uwierzytelniania, aby wyświetlić okno dialogowe logowania, gdy wywołuje aplikację `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> — metoda i przekazuje pustych ciągów ani `null` parametrów. Jeśli to pole pozostanie puste, należy podać prawidłową nazwę użytkownika i hasło, aby <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Należy określić jako nazwa typu kwalifikowana zestawu dostawcy poświadczeń. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawu](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa kwalifikowana zestawu typu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`  
-  
- **Lokalizacja usługi ról**  
- Określa lokalizację usługi ról.  
-  
- **Lokalizacja usługi ustawień sieci Web**  
- Określa lokalizację usługi profilu (ustawień sieci Web).  
-  
- **Zaawansowane**  
- Otwiera [Zaawansowane ustawienia dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md), która umożliwia zastąpienie zachowania domyślnego. Na przykład można użyć tego okna dialogowego bazy danych dla magazynu offline zamiast lokalnego systemu plików. Aby uzyskać więcej informacji, zobacz [Zaawansowane ustawienia dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
-  
+ **Konfiguracja**
+
+ Ten formant nie jest możliwa na tej stronie. Opis tego formantu, zobacz [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) lub [strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Platformy**
+
+ Ten formant nie jest możliwa na tej stronie. Opis tego formantu, zobacz [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) lub [strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Włącz usługi aplikacji klienta**
+
+ Zaznacz, aby włączyć usługi aplikacji klienta. Należy określić lokalizacji usług na **usług** stronę, aby korzystać z usługi aplikacji klienta.
+
+ **Uwierzytelnianie systemu Windows**
+
+ Wskazuje, że dostawca uwierzytelniania będzie używać uwierzytelniania systemu Windows, czyli tożsamość dostarczane przez system operacyjny Windows.
+
+ **Uwierzytelnianie formularzy**
+
+ Wskazuje, że dostawca uwierzytelniania korzystają z uwierzytelniania formularzy. Oznacza to, aplikacja musi udostępniają interfejs użytkownika dla nazwy logowania. Aby uzyskać więcej informacji, zobacz [porady: Implementowanie logowania użytkownika z usługi aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+
+ **Lokalizacja usługi uwierzytelniania**
+
+ Używana tylko z uwierzytelniania formularzy. Określa lokalizację usługi uwierzytelniania.
+
+ **Opcjonalnie: Dostawca poświadczeń**
+
+ Używana tylko z uwierzytelniania formularzy. Wskazuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementacji, którego będzie używać usługa uwierzytelniania, aby wyświetlić okno dialogowe logowania, gdy wywołuje aplikację `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> — metoda i przekazuje pustych ciągów ani `null` parametrów. Jeśli to pole pozostanie puste, należy podać prawidłową nazwę użytkownika i hasło, aby <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Należy określić jako nazwa typu kwalifikowana zestawu dostawcy poświadczeń. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawu](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa kwalifikowana zestawu typu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
+
+ **Lokalizacja usługi ról**
+
+ Określa lokalizację usługi ról.
+
+ **Lokalizacja usługi ustawień sieci Web**
+
+ Określa lokalizację usługi profilu (ustawień sieci Web).
+
+ **Zaawansowane**
+
+ Otwiera [Zaawansowane ustawienia dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md), która umożliwia zastąpienie zachowania domyślnego. Na przykład można użyć tego okna dialogowego bazy danych dla magazynu offline zamiast lokalnego systemu plików. Aby uzyskać więcej informacji, zobacz [Zaawansowane ustawienia dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md).
+
 ## <a name="see-also"></a>Zobacz także
 
-[Usługi aplikacji klienta](/dotnet/framework/common-client-technologies/client-application-services)   
-[Zaawansowane ustawienia dla usług — okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
-[Porady: Konfigurowanie usług aplikacji klienta](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
-[Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
-[Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
+- [Usługi aplikacji klienckich](/dotnet/framework/common-client-technologies/client-application-services)
+- [Zaawansowane ustawienia dla usług, okno dialogowe](../../ide/reference/advanced-settings-for-services-dialog-box.md)
+- [Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Strona kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -1,6 +1,7 @@
 ---
-title: 'Wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych w programie Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych w programie Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
 
@@ -71,7 +72,8 @@ W tym przewodniku pokazano, jak używać źródła danych zdefiniowanej w *app.c
 ```
 
 > [!NOTE]
->  Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz. Ustaw wersję do 9.0.0.0, jeśli używasz programu Visual Studio .NET Framework 3.5. Jeśli używasz programu Visual Studio .NET Framework 2.0, Ustaw wersję do 8.0.0.0.
+> Nazwa zestawu musi odpowiadać kompilacji programu Microsoft Visual Studio .NET Framework, którego używasz. Ustaw wersję do 9.0.0.0, jeśli używasz programu Visual Studio .NET Framework 3.5. Jeśli używasz programu Visual Studio .NET Framework 2.0, Ustaw wersję do 8.0.0.0.
+
 
 ## <a name="define-connection-strings"></a>Zdefiniuj parametry połączenia
  Parametry połączenia zdefiniuj informacji specyficznych dla dostawcy do uzyskiwania dostępu do źródeł danych. Parametry połączenia zdefiniowane w plikach konfiguracji udostępnianie informacji o dostawcy danych do ponownego użycia w aplikacji. W tej sekcji utworzysz dwa parametry połączenia, które będą używane przez źródeł danych, które są zdefiniowane w sekcji konfiguracji niestandardowej.

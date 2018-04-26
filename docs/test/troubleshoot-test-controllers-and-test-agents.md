@@ -1,7 +1,7 @@
 ---
-title: Rozwiązywanie problemów z kontrolerów testów i agentów testowych w Visual Studio | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z kontrolerów testów i agentów testowych w Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów związanych z kontrolerami testów i agentami testowymi w testach obciążenia
 
@@ -27,7 +28,8 @@ W tym artykule omówiono niektóre typowe problemy, które mogą wystąpić podc
  Po uruchomieniu testu obciążenia może pojawić się błędy podczas próby połączenia z komputerem agenta testowego i zbierania liczników wydajności. Usługa Rejestr zdalny jest usługa odpowiedzialna za przekazywanie danych licznika wydajności z komputerem zdalnym. W niektórych systemach operacyjnych usługa Rejestr zdalny nie zostanie uruchomiona automatycznie. Aby rozwiązać ten problem, należy ręcznie uruchomić usługę Rejestr zdalny.
 
 > [!NOTE]
->  Można uzyskać dostępu do usługi Rejestr zdalny w **Panelu sterowania.** Wybierz **narzędzia administracyjne** , a następnie wybierz **usług**.
+> Można uzyskać dostępu do usługi Rejestr zdalny w **Panelu sterowania.** Wybierz **narzędzia administracyjne** , a następnie wybierz **usług**.
+
 
  Inną przyczyną tego problemu jest, że nie masz wystarczających uprawnień do odczytu liczników wydajności. Dla uruchomień testów lokalnego konto użytkownika, który jest uruchomiony test musi być członkiem grupy Użytkownicy zaawansowani lub wyższy lub być członkiem grupy Użytkownicy monitora wydajności. Zdalne testu jest uruchomiony, konto kontrolera jest skonfigurowany do uruchamiania jako musi być członkiem grupy Użytkownicy zaawansowani lub nowszej, lub być członkiem grupy Użytkownicy monitora wydajności.
 
@@ -87,7 +89,8 @@ W tym artykule omówiono niektóre typowe problemy, które mogą wystąpić podc
  Ten błąd może być spowodowany przez zainstalowanie na komputerze, który ma więcej niż jedną kartę sieciową z kontrolerem testów.
 
 > [!NOTE]
->  Istnieje również możliwość pomyślnego zainstalowania agentów testowych i nie zobaczyć ten problem, dopóki nie zostanie podjęta próba uruchomienia testu.
+> Istnieje również możliwość pomyślnego zainstalowania agentów testowych i nie zobaczyć ten problem, dopóki nie zostanie podjęta próba uruchomienia testu.
+
 
  Aby naprawić ten błąd, możesz powiązać kontrolera testu do jednej z kart sieciowych. Należy ustawić `BindTo` właściwość kontrolera testów, a następnie zmień agenta testowego do odwoływania się do kontrolera testów przez IP adresów zamiast według nazwy. Kroki są zawarte w poniższych procedur.
 

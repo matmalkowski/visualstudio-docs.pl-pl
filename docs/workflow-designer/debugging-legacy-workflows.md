@@ -1,7 +1,9 @@
 ---
-title: Debugowanie przepływów pracy starszego | Dokumentacja firmy Microsoft
+title: Projektant przepływu pracy — debugowania przepływów pracy starsza wersja
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Debugowanie przepływów pracy starsza wersja
 
-Jeśli używasz starszej wersji projektanta przepływów pracy systemu Windows w [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] do tworzenia [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] czy target.NET Framework 3.0 lub 3.5 może debugować przepływy pracy, takich jak inny program Ustawianie punktów przerwania, dołączanie do procesu i badanie aplikacji wątki i stosu wywołań. Istnieje również możliwość debugowania zdalnego.
+Jeśli używasz starszej wersji projektanta przepływów pracy systemu Windows w programie Visual Studio umożliwiające tworzenie aplikacji systemu Windows Workflow Foundation (WF), że target.NET Framework 3.0 lub 3.5 można debugować przepływy pracy, takich jak dowolnego innego programu przez ustawienie punktów przerwania, dołączanie do procesu, i sprawdzeniu wątków i stosu wywołań. Istnieje również możliwość debugowania zdalnego.
 
 > [!NOTE]
 > Jeśli wiele wersji programu Visual Studio zostały zainstalowane i odinstalować na komputerze, debugowanie WF3 może zakończyć się niepowodzeniem z jednym z dwóch następujące możliwości:
@@ -32,7 +34,7 @@ Jeśli używasz starszej wersji projektanta przepływów pracy systemu Windows w
 >
 > W przypadku jednego z tych scenariuszy podczas debugowania środowiska .NET Framework 3.0 lub 3.5 przepływy pracy, wykonaj naprawę instalacji programu Visual Studio.
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] integruje się z następujących standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowania systemu windows:
+ Windows Workflow Foundation integruje się z następujących standardowych oknach debugowania programu Visual Studio:
 
 -   **Punkt przerwania**: działa zgodnie z oczekiwaniami, ale Określ działanie dla nazwy funkcji.
 

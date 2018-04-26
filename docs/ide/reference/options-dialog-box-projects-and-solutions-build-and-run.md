@@ -1,10 +1,9 @@
 ---
-title: Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie
 ms.date: 07/14/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
 - VS.ToolsOptionsPag.Projects.Build_and_Run
@@ -18,44 +17,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e7b0e56f536ce4dc6d62df933be044ab1ed7d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2bd6056c332725b4c44a56480fa21a064c52095d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, tworzenie i uruchamianie
 
 W tym oknie można określić maksymalną liczbę projektów Visual C++ lub C#, które można tworzyć w tym samym czasie, niektóre domyślne kompilacji zachowania i niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, zaznacz **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i wybierz **skompilować i uruchomić**.
-  
-**Maksymalna liczba równoległych projektu kompilacji**  
-Określa maksymalną liczbę projektów Visual C++ i C#, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów jest automatycznie ustawiana liczby procesorów komputera. Wartość maksymalna to 32.  
 
-**Tworzyć tylko projekty startowe i zależności przy uruchomieniu**  
-Tworzy tylko projekt startowy i jego zależności użycia klucza, wybierz opcję F5 **debugowania > Start** polecenia menu lub odpowiednich poleceń na **kompilacji** menu. Jeżeli wyczyszczone, wszystkie projekty i zależności są kompilacji. 
+**Maksymalna liczba równoległych projektu kompilacji**
 
-**Przy starcie, gdy projekty są nieaktualne**  
+Określa maksymalną liczbę projektów Visual C++ i C#, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów jest automatycznie ustawiana liczby procesorów komputera. Wartość maksymalna to 32.
+
+**Tworzyć tylko projekty startowe i zależności przy uruchomieniu**
+
+Tworzy tylko projekt startowy i jego zależności użycia klucza, wybierz opcję F5 **debugowania > Start** polecenia menu lub odpowiednich poleceń na **kompilacji** menu. Jeżeli wyczyszczone, wszystkie projekty i zależności są kompilacji.
+
+**Przy starcie, gdy projekty są nieaktualne**
+
 *Dotyczy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tylko projekty.*
 
 Podczas uruchamiania projektu z F5 lub **debugowania > Start** polecenia domyślne ustawienie **Monituj o kompilacji** wyświetla komunikat, jeśli konfiguracja projektu jest nieaktualny. Wybierz **kompilacji zawsze** Aby skompilować projekt, za każdym razem, gdy jest uruchomiony. Wybierz **nigdy nie kompilacji** Aby pominąć wszystkie kompilacje automatyczne uruchomienie projektu.
 
-**Przy starcie, gdy kompilacji lub występują błędy wdrażania**  
+**Przy starcie, gdy kompilacji lub występują błędy wdrażania**
+
 *Dotyczy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tylko projekty.*
 
 Podczas uruchamiania projektu z F5 lub **debugowania > Start** polecenia domyślne ustawienie **Prompt uruchomić** wyświetla komunikat, jeśli projekt powinny być uruchamiane, nawet jeśli kompilacja nie powiodła się. Wybierz **uruchamiania starej wersji** do automatycznego uruchomienia ostatniego dobra kompilacja, co może spowodować niezgodność między uruchomiony kod i kod źródłowy. Wybierz **nie uruchamiaj** do Pomiń komunikat.
 
-**Dla nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy**  
-Gdy ta opcja jest ustawiona, nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy.  
+**Dla nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy**
 
-**Szczegółowości danych wyjściowych kompilacji projektu programu MSBuild**  
-Określa, ile informacji jest wyświetlana w **dane wyjściowe** okna dla kompilacji.  
+Gdy ta opcja jest ustawiona, nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy.
 
-**Poziom szczegółowości pliku dziennika MSBuild projektu kompilacji**  
+**Szczegółowości danych wyjściowych kompilacji projektu programu MSBuild**
+
+Określa, ile informacji jest wyświetlana w **dane wyjściowe** okna dla kompilacji.
+
+**Poziom szczegółowości pliku dziennika MSBuild projektu kompilacji**
+
 *Dotyczy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tylko projekty.*
 
-Określa, ile informacje są zapisywane w pliku dziennika kompilacji, który znajduje się pod adresem \\... \\ *ProjectName*\Debug\\*ProjectName*. dziennika.  
+Określa, ile informacje są zapisywane w pliku dziennika kompilacji, który znajduje się pod adresem \\... \\ *ProjectName*\Debug\\*ProjectName*. dziennika.
 
-## <a name="see-also"></a>Zobacz także  
-[Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)  
-[Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)  
-[Okno dialogowe Opcje, projekty i rozwiązania, projekty sieci Web](options-dialog-box-projects-and-solutions-web-projects.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)
+- [Okno dialogowe Opcje, projekty i rozwiązania](projects-and-solutions-options-dialog-box.md)
+- [Okno dialogowe Opcje, projekty i rozwiązania, projekty sieci Web](options-dialog-box-projects-and-solutions-web-projects.md)

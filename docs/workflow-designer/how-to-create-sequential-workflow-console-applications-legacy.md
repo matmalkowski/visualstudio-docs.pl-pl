@@ -1,7 +1,9 @@
 ---
-title: 'Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, console applications
 - sequential workflows, console applications
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26b479fb5f926d6dff0e1db05fe36fc4354ec89d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fb4e048fdf8eb8fee541f84656a29427b5a07a1d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsze)
-Wykonaj następujące kroki, aby utworzyć projekt aplikacji konsoli usługi sekwencyjnego przepływu pracy przy użyciu starszej wersji projektanta przepływów pracy Windows udostępniane przez [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
-### <a name="to-create-a-sequential-workflow-console-application"></a>Do tworzenia aplikacji konsolowej sekwencyjnego przepływu pracy
+Wykonaj następujące kroki, aby utworzyć projekt aplikacji konsoli usługi sekwencyjnego przepływu pracy za pomocą starszego projektanta przepływów pracy Windows podane przez Visual Studio 2010. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
+
+## <a name="to-create-a-sequential-workflow-console-application"></a>Do tworzenia aplikacji konsolowej sekwencyjnego przepływu pracy
 
 1.  Uruchom program Visual Studio.
 
@@ -32,7 +35,7 @@ Wykonaj następujące kroki, aby utworzyć projekt aplikacji konsoli usługi sek
 3.  Wybierz opcję **.NET Framework 3.0** opcji lub **.NET Framework 3.5** opcji na liście rozwijanej listy w górnej części **nowy projekt** okno, aby uzyskać dostępu do starszych projektanta.
 
     > [!NOTE]
-    > Domyślna opcja [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] jest **.NET Framework 4**. Ta opcja służy do tworzenia [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacje, które odnoszą się do [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] i nie używa starszej wersji projektanta.
+    > Jest domyślną opcją w Visual Studio 2010 **.NET Framework 4**. Ta opcja jest używana do tworzenia aplikacji systemu Windows Workflow Foundation (WF) przeznaczonych dla platformy .NET Framework 4 i nie używa starszej wersji projektanta.
 
 4.  W **typów projektów** okienku, wybierz projekty Visual C# lub projekty Visual Basic (w obszarze **inne języki**), a następnie wybierz **przepływu pracy**.
 

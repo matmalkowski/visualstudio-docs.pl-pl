@@ -1,7 +1,9 @@
 ---
-title: Funkcji powłoki projektanta przepływów pracy | Dokumentacja firmy Microsoft
+title: Funkcji powłoki projektanta przepływów pracy
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>Funkcji powłoki projektanta przepływów pracy
 
@@ -27,7 +29,7 @@ Projektant przepływu pracy systemu Windows składa się z trzech głównych obs
  Mapą przeglądową wyświetla małą wersję działanie całego bieżącego głównego nawigacją, w tym wszystkich jego elementów podrzędnych i wszystkie ich rozwinięte elementy podrzędne. Ma okienka ekranu, prostokąt z pomarańczowy obramowania, co powoduje część działania aktualnie wyświetlany w edytorze. Przeciąganie prostokątem mapą przeglądową Przewija projektanta przepływów pracy i zmiany widoku edytora.
 
 > [!NOTE]
-> [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Zostaje zwirtualizowany interfejsu użytkownika. Projektanci działań są renderowane tylko wtedy, gdy jest to wymagane. Jeśli nigdy nie został wystawiony na powierzchni projektowej część przepływu pracy, część pojawia się jako białe na mapie omówienie. Przewijanie wokół mapą przeglądową całkowicie rysuje przepływ pracy.
+> Interfejs użytkownika projektanta przepływów pracy jest zwirtualizowanych. Projektanci działań są renderowane tylko wtedy, gdy jest to wymagane. Jeśli nigdy nie został wystawiony na powierzchni projektowej część przepływu pracy, część pojawia się jako białe na mapie omówienie. Przewijanie wokół mapą przeglądową całkowicie rysuje przepływ pracy.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopiowanie lub zapisywanie przepływów pracy jako obrazów
  Przepływy pracy można skopiować format mapy bitowej lub zapisane w formacie mapy bitowej lub wektora. Kopiowanie lub zapisywania obraz umożliwia eksportowanie widoku całego działania w bieżącym głównym stron nadrzędnych, w tym wszystkich jego elementów podrzędnych i wszystkich ich rozwinięte elementów podrzędnych do innego programu.
@@ -36,4 +38,4 @@ Projektant przepływu pracy systemu Windows składa się z trzech głównych obs
 
 ## <a name="fonts-and-colors"></a>Czcionki i kolory
 
-Czcionki używane w [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] wewnątrz [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] są kontrolowane przez czcionkę środowiska. Kolory wyświetlane w [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] zmienić, jeśli używasz schemat kolorów Duży kontrast dla motywu systemu operacyjnego. Należy ponownie uruchomić [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] po wprowadzeniu zmian w ustawieniach czcionek i kolorów, aby zmiany zostały wprowadzone [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Czcionki używane w Projektancie przepływów pracy w Visual Studio 2010 są kontrolowane przez czcionkę środowiska. Kolory wyświetlane w Projektancie przepływów pracy zmienić, jeśli używasz schemat kolorów Duży kontrast dla motywu systemu operacyjnego. Po wprowadzeniu zmian w ustawieniach czcionek i kolorów, aby zmiany zostały wprowadzone w Projektancie przepływów pracy, należy ponownie uruchomić program Visual Studio 2010.

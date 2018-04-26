@@ -1,29 +1,29 @@
 ---
-title: Rozwiązywanie problemów z szablonu projektu programu Visual Studio i szablon elementu ładowania | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Rozwiązywanie problemów z szablonu projektu programu Visual Studio i szablon elementu ładowania
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7e952f8eb445787a2a574ae3431ba6ad8728248
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bb6a10e92bf8f26ffbcb81796b3c5c8371600b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Porady: Rozwiązywanie problemów z szablonami
 
 Jeśli szablon nie może załadować w środowisku programistycznym, istnieje kilka sposobów, aby zlokalizować ten problem.
 
-## <a name="validate-the-vstemplate-file"></a>Sprawdź poprawność pliku .vstemplate
+## <a name="validate-the-vstemplate-file"></a>Sprawdź poprawność pliku vstemplate
 
-Jeśli *.vstemplate* pliku w szablonie nie pasuje do schematu szablonu Visual Studio, szablon nie może występować w **nowy projekt** okno dialogowe.
+Jeśli *vstemplate* pliku w szablonie nie stosować się do schematu szablonu Visual Studio, szablon nie może występować w **nowy projekt** okno dialogowe.
 
-### <a name="to-validate-the-vstemplate-file"></a>Aby sprawdzić poprawność pliku .vstemplate
+### <a name="to-validate-the-vstemplate-file"></a>Aby sprawdzić poprawność pliku vstemplate
 
 1. Zlokalizuj *zip* plik, który zawiera szablon.
 
@@ -31,14 +31,14 @@ Jeśli *.vstemplate* pliku w szablonie nie pasuje do schematu szablonu Visual St
 
 1. Na **pliku** menu w programie Visual Studio, wybierz **Otwórz** > **pliku**.
 
-1. Wybierz *.vstemplate* pliku szablonu, a następnie wybierz pozycję **Otwórz**.
+1. Wybierz *vstemplate* pliku szablonu, a następnie wybierz pozycję **Otwórz**.
 
-1. Upewnij się, że plik XML *.vstemplate* pliku zgodnego ze schematu szablonu. Aby uzyskać więcej informacji na temat *.vstemplate* schematu, zobacz [odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md).
+1. Upewnij się, że plik XML *vstemplate* pliku zgodnego ze schematu szablonu. Aby uzyskać więcej informacji na temat *vstemplate* schematu, zobacz [odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Aby uzyskać pomoc techniczną IntelliSense podczas tworzenia *.vstemplate* plików, dodawanie `xmlns` atrybutu `VSTemplate` element i przypisz jej wartość http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Aby uzyskać pomoc techniczną IntelliSense podczas tworzenia *vstemplate* plików, dodawanie `xmlns` atrybutu `VSTemplate` element i przypisz jej wartość http://schemas.microsoft.com/developer/vstemplate/2005.
 
-1. Zapisz i Zamknij *.vstemplate* pliku.
+1. Zapisz i Zamknij *vstemplate* pliku.
 
 1. Wybierz pliki zawarte w szablonie, kliknij prawym przyciskiem myszy i wybierz polecenie **przesyłają** > **skompresowanego folderu (zip)**. Wybrane pliki są skompresowane w *.zip* pliku.
 
@@ -52,7 +52,7 @@ Można włączyć rejestrowania diagnostycznego w celu odnajdywania szablonu, wy
 
 ## <a name="see-also"></a>Zobacz także
 
-[Rozwiązywanie problemów z odnajdywania szablonu (rozszerzalność)](../extensibility/troubleshooting-template-discovery.md)  
-[Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)  
-[Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)  
-[Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)
+- [Rozwiązywanie problemów z odnajdywania szablonu (rozszerzalność)](../extensibility/troubleshooting-template-discovery.md)
+- [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+- [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,27 +1,29 @@
 ---
-title: 'Porady: Tworzenie biblioteki działań | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Tworzenie biblioteki działań'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Porady: Tworzenie biblioteki działań
-Działania niestandardowe są używane do model procesów biznesowych konkretnego w przepływie pracy. Szablon biblioteki działań w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] została przekazana umożliwiają tworzenie takich działań niestandardowych sposób wizualny przy użyciu projektanta przepływów pracy systemu Windows.
+Działania niestandardowe są używane do model procesów biznesowych konkretnego w przepływie pracy. Szablon biblioteki działań w programie Visual Studio 2010 została przekazana umożliwiają tworzenie takich działań niestandardowych sposób wizualny przy użyciu projektanta przepływów pracy systemu Windows.
 
 ### <a name="to-create-a-workflow-activity-library"></a>Aby utworzyć biblioteki działań przepływów pracy
 
-1.  Uruchom [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Uruchom program Visual Studio 2010.
 
-2.  Na **pliku** menu wskaż **nowy**, a następnie wybierz **projektu...** .
+2.  Na **pliku** menu wskaż **nowy**, a następnie wybierz **projektu**.
 
      **Nowy projekt** zostanie otwarte okno dialogowe.
 
@@ -36,7 +38,7 @@ Działania niestandardowe są używane do model procesów biznesowych konkretneg
 7.  W **rozwiązania** polu, wpisz nazwę opisową dla rozwiązania, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie **Nowy projekt...** otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
+    > Jeśli chcesz dodać Aplikacja konsoli przepływu pracy do istniejącego rozwiązania, otworzyć tego rozwiązania w programie Visual Studio 2010, kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj**, następnie  **Nowy projekt** otworzyć **nowy projekt** okno dialogowe. Należy postępować zgodnie z powyższym opisem w tej procedurze.
 
 8.  Szablon projektu tworzy definicji działania w języku XAML. Projektant przepływu pracy systemu Windows otwiera i wyświetla obszar roboczy dla działania niestandardowego.
 

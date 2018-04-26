@@ -1,26 +1,25 @@
 ---
-title: Ustaw motyw kolorów i czcionek w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Ustaw motyw kolorów i czcionek w programie Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7024213ca383ee5934df1d413501065b383f7981
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki Start: Personalizowanie środowiska IDE programu Visual Studio i edytora
 
-W przypadku tego przewodnika Szybki Start 5 – 10 min możemy dostosować motywu kolorów programu Visual Studio i dwa kolory tekstu w edytorze tekstu.
+W przypadku tego przewodnika Szybki Start 5 – 10 min możemy dostosować motywu kolorów w Visual Studio i kolory dwóch tekstu w **Edytor tekstu**.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [programu Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
+Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="set-the-color-theme"></a>Ustaw motywu kolorów
 
@@ -35,13 +34,13 @@ Nosi nazwę domyślny motyw kolorów dla programu Visual Studio 2017 **Blue**. T
    ![VS ciemnego motywu](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Można zainstalować dodatkowe kompozycje wstępnie zdefiniowanych przez zainstalowanie **Visual Studio kolor motywu edytora** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia motywy kolorów dodatkowe są wyświetlane na liście rozwijanej kolor motywu.
+> Można zainstalować dodatkowe kompozycje wstępnie zdefiniowanych przez zainstalowanie **Visual Studio kolor motywu edytora** z [programu Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia motywy kolorów dodatkowe są wyświetlane w **motywu kolorów** listy rozwijanej.
 
 ## <a name="change-text-color"></a>Zmiana koloru tekstu
 
 Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pierwsze umożliwia otwieranie pliku XML, aby wyświetlić domyślne kolory.
 
-1. Na pasku menu wybierz **pliku** > **nowy** > **pliku...** .
+1. Na pasku menu wybierz **pliku** > **nowy** > **pliku**.
 
 1. W **nowy plik** okna dialogowego, w obszarze **ogólne** kategorii, wybierz **pliku XML**, a następnie wybierz pozycję **Otwórz**.
 
@@ -73,7 +72,7 @@ Firma Microsoft będzie teraz dostosować niektóre kolory tekstu edytora. Po pi
    </Catalog>
    ```
 
-   Zwróć uwagę, że numery wierszy są kolor niebieski turkusowy i atrybutów xml są jasny kolor niebieski. Zamierzamy zmienić kolor tekstu dla tych elementów.
+   Zwróć uwagę, że numery wierszy są kolor niebieski turkusowy i atrybutów XML są jasny kolor niebieski. Zamierzamy zmienić kolor tekstu dla tych elementów.
 
    ![Kolor czcionki pliku XML](media/quickstart-personalize-xml-file.png)
 

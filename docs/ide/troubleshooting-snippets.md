@@ -1,10 +1,9 @@
 ---
-title: Rozwiązywanie problemów z fragmentów | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Rozwiązywanie problemów z wstawkami kodu programu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - IntelliSense Code Snippets, troubleshooting
 - troubleshooting IntelliSense Code Snippets
@@ -15,28 +14,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ffc44bdc47265a9e0b4fec27ee2c68bef8f14a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd0151ff22146d745c42204ec66b9f5d35c2c8b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="troubleshooting-snippets"></a>Rozwiązywanie problemów z wstawkami kodu programu
-Problemy z wstawki kodu IntelliSense są zazwyczaj spowodowane dwa problemy: uszkodzony fragment pliku lub Zła zawartość pliku fragment kodu.  
-  
-## <a name="common-problems"></a>Typowe problemy  
-  
-### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Fragment kodu nie mogą być przeciągnięte z Eksploratora plików do pliku źródłowego programu Visual Studio  
-  
--   Kod XML w pliku fragment może być uszkodzony. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zlokalizować problemów w strukturze XML.  
-  
--   Fragment pliku może nie być zgodne ze schematem fragment kodu. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zlokalizować problemów w strukturze XML.  
-  
-### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kod ma błędy kompilatora, które nie są wyróżnione  
-  
--   Być może brakuje odwołania projektu. Sprawdź dokumentację dotyczącą fragment kodu. Jeśli na komputerze nie znaleziono odwołania, należy go zainstalować. Wstawianie wstawek należy dodać do projektu wszystkie niezbędne odwołania. Jeśli informacje, które mogą być zgłaszane do twórcy fragment jako błąd Brak fragmentu.  
-  
--   Zmienna może być niezdefiniowana. Niezdefiniowany zmiennych w fragment powinien być zaznaczony. Jeśli nie, które mogą być zgłaszane do twórcy fragment jako błąd.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Fragmenty kodu](../ide/code-snippets.md)
+
+Problemy z wstawki kodu IntelliSense są zazwyczaj spowodowane dwa problemy: uszkodzony fragment pliku lub Zła zawartość pliku fragment kodu.
+
+## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Fragment kodu nie mogą być przeciągnięte z Eksploratora plików do pliku źródłowego programu Visual Studio
+
+-   Kod XML w pliku fragment może być uszkodzony. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zlokalizować problemów w strukturze XML.
+
+-   Fragment pliku może nie być zgodne ze schematem fragment kodu. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zlokalizować problemów w strukturze XML.
+
+## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kod ma błędy kompilatora, które nie są wyróżnione
+
+-   Być może brakuje odwołania projektu. Sprawdź dokumentację dotyczącą fragment kodu. Jeśli na komputerze nie znaleziono odwołania, należy go zainstalować. Wstawianie wstawek należy dodać do projektu wszystkie niezbędne odwołania. Jeśli informacje, które mogą być zgłaszane do twórcy fragment jako błąd Brak fragmentu.
+
+-   Zmienna może być niezdefiniowana. Niezdefiniowany zmiennych w fragment powinien być zaznaczony. Jeśli nie, które mogą być zgłaszane do twórcy fragment jako błąd.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Fragmenty kodu](../ide/code-snippets.md)

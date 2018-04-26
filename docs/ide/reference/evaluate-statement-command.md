@@ -1,10 +1,9 @@
 ---
-title: Evaluate statement — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Evaluate Statement — Polecenie
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
 helpviewer_keywords:
@@ -16,53 +15,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe960ec84830ce76095577f7d8ee2f0c9c4ccbe8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="evaluate-statement-command"></a>Evaluate Statement — Polecenie
-Oblicza i wyświetla podanej instrukcji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.EvaluateStatement text   
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `text`  
- Wymagany. Instrukcja do oceny.  
-  
-## <a name="remarks"></a>Uwagi  
- Okno służy do wprowadzania **EvaluateStatement** polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.  
-  
- W **polecenia** okna, znak równości (=) jest interpretowana jako operator porównania. Na przykład, jeśli wartości zmiennych `a` i `b` są różne, a następnie polecenie  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- Zwraca wartość `false`.  
-  
- W **Immediate** okna, natomiast znak równości (=) jest interpretowana jako operatora przypisania. Tak na przykład, polecenie  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- zostanie przypisana do zmiennej `a` wartość zmiennej `b`.  
-  
-## <a name="example"></a>Przykład  
-  
-```  
->Debug.EvaluateStatement(a+b)  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Print — polecenie](../../ide/reference/print-command.md)   
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Find/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Oblicza i wyświetla podanej instrukcji.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.EvaluateStatement text
+```
+
+## <a name="arguments"></a>Argumenty
+ `text` Wymagane. Instrukcja do oceny.
+
+## <a name="remarks"></a>Uwagi
+ Okno służy do wprowadzania **EvaluateStatement** polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.
+
+ W **polecenia** okna, znak równości (=) jest interpretowana jako operator porównania. Na przykład, jeśli wartości zmiennych `a` i `b` są różne, a następnie polecenie
+
+```
+>Debug.EvaluateStatement(a=b)
+```
+
+ Zwraca wartość `false`.
+
+ W **Immediate** okna, natomiast znak równości (=) jest interpretowana jako operatora przypisania. Tak na przykład, polecenie
+
+```
+>Debug.EvaluateStatement(a=b)
+```
+
+ zostanie przypisana do zmiennej `a` wartość zmiennej `b`.
+
+## <a name="example"></a>Przykład
+
+```
+>Debug.EvaluateStatement(a+b)
+```
+
+## <a name="see-also"></a>Zobacz też
+
+- [Drukuj, polecenie](../../ide/reference/print-command.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno Polecenie](../../ide/reference/command-window.md)
+- [Find/Command — pole](../../ide/find-command-box.md)
+- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

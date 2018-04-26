@@ -2,6 +2,7 @@
 title: 'Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio XAML i C# | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio z XAML i C&#35;
 
@@ -31,7 +32,7 @@ Najpierw utwórz projekt platformy uniwersalnej systemu Windows. Typ projektu za
 
 1. Otwórz program Visual Studio 2017 r.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 3. W lewym okienku **nowy projekt** okna dialogowego rozwiń **Visual C#**, a następnie wybierz pozycję **uniwersalnych systemu Windows**. W środkowym okienku wybierz **pusta aplikacja (uniwersalna systemu Windows)**. Następnie, nazwij projekt *HelloWorld* i wybierz polecenie **OK**.
 
@@ -54,7 +55,7 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, 
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Dodawanie przycisku do obszaru projektowania
 
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie **MainPage.xaml** otwarcie widoku podziału.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *MainPage.xaml* otwarcie widoku podziału.
 
   ![Otwórz MainPage.xaml z Eksploratora rozwiązań ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, 
 
   ![Kliknij przycisk przybornika, aby otworzyć okno wysuwanego przybornika](../ide/media/uwp-toolbox.png)
 
-  (Jeśli nie widzisz opcji przybornika, można otworzyć go na pasku menu. Aby to zrobić, wybierz **widoku** > **narzędzi**. Możesz również nacisnąć klawisz **Ctrl**+**Alt**+**X**.)
+  (Jeśli nie widzisz **przybornika** opcji, możesz otworzyć go na pasku menu. Aby to zrobić, wybierz **widoku** > **narzędzi**. Możesz również nacisnąć klawisz **Ctrl**+**Alt**+**X**.)
 
 3. Kliknij przycisk **numeru Pin** ikonę, aby dock okno przybornika.
 
@@ -76,17 +77,17 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, 
 
    ![Formantu przycisku kliknij i przeciągnij go do obszaru projektowania](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Na kodu w edytorze XAML można zobaczyć, czy przycisk został dodany, za:
+  Jeśli przyjrzymy się kod w **edytora XAML**, zobaczysz, że przycisk został dodany, za:
 
   ![Formantu przycisku kliknij i przeciągnij go do obszaru projektowania](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Dodaj etykietę do przycisku
 
-1. W edytorze XAML, zmień wartość przycisk zawartości z "Button" na "Hello World!"
+1. W **edytora XAML**, zmień wartość przycisk zawartości z "Button" na "Hello World!"
 
    ![Zmień wartość zawartości przycisku na Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Należy zauważyć, że przycisk w Projektancie XAML zmiany zbyt.
+2. Należy zauważyć, że przycisk w **projektanta XAML** zmiany zbyt.
 
    ![Przycisk zmiany Hello World w obszarze roboczym projekt](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Dźwięki "obsługi zdarzeń" skomplikowane, ale jest po prostu inną nazwę dla
 
 1. Kliknij dwukrotnie ikonę w obszarze roboczym projektowania formantu przycisku.
 
-2.  Edytuj kod obsługi zdarzeń w *MainPage.xaml.cs*, strony związane z kodem.
+2. Edytuj kod obsługi zdarzeń w *MainPage.xaml.cs*, strony związane z kodem.
 
  Jest to, gdzie interesujący rzeczy. Domyślny program obsługi zdarzeń wygląda następująco:
 
@@ -121,7 +122,7 @@ Dźwięki "obsługi zdarzeń" skomplikowane, ale jest po prostu inną nazwę dla
 
 #### <a name="what-did-we-just-do"></a>Co tak jak?
 
-Kod używa niektórych interfejsów API systemu Windows w celu utworzenia obiektu syntezy mowy i nadaje mu po część tekstu, aby podać. (Aby uzyskać więcej informacji na temat używania SpeechSynthesis, zobacz <xref:System.Speech.Synthesis>.)
+Kod używa niektórych interfejsów API systemu Windows w celu utworzenia obiektu syntezy mowy i nadaje mu po część tekstu, aby podać. (Aby uzyskać więcej informacji na temat używania `SpeechSynthesis`, zobacz <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 

@@ -1,10 +1,9 @@
 ---
-title: Lista dezasemblacji — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Lista dezasemblacji — Polecenie
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
 helpviewer_keywords:
@@ -16,54 +15,61 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3007b5d675ab8e48406fdaaa69c4858554968920
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c92b5d72b38ffe44eebd8dfc7e84f676e858f649
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
-Rozpoczyna się proces debugowania i pozwala określić sposób obsługi błędów.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Debug.ListDisassembly [/count:number] [/endaddress:expression]  
-[/codebytes:yes|no] [/source:yes|no] [/symbolnames:yes|no]  
-[/linenumbers:yes|no]  
-```  
-  
-## <a name="switches"></a>Przełączniki  
- Każdy przełącznik może być wywoływany przy użyciu jego ukończenia formularza lub krótkich fragmentów.  
-  
- / count: `number` [i] / / c: `number` [i] /length: `number` [i] / l: wyświetlenie `number`  
- Opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.  
-  
- /endaddress: `expression` [i] / e: `expression`  
- Opcjonalny. Adres, w którym należy zatrzymać dezasemblacji.  
-  
- /codebytes:`yes` &#124; `no` [i] /bytes:`yes` &#124; `no` [i] / b:`yes`&#124;`no`  
- Opcjonalny. Wskazuje, czy mają być wyświetlane bajtów kodu. Wartość domyślna to `no`.  
-  
- / source:`yes` &#124; `no` [i] / s:`yes`&#124;`no`  
- Opcjonalny. Wskazuje, czy można wyświetlić kodu źródłowego. Wartość domyślna to `no`.  
-  
- /symbolnames:`yes` &#124; `no` [i] /names:`yes` &#124; `no` [i] / n:`yes`&#124;`no`  
- Opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes`.  
-  
- [/ linenumbers:`yes`&#124;`no`]  
- Opcjonalny. Umożliwia wyświetlanie numery wierszy związane z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes` /linenumbers przełącznika.  
-  
-## <a name="example"></a>Przykład  
-  
-```  
->Debug.ListDisassembly  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Lista stosu wywołań — polecenie](../../ide/reference/list-call-stack-command.md)   
- [Lista wątków — polecenie](../../ide/reference/list-threads-command.md)   
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
- [Okno polecenia](../../ide/reference/command-window.md)   
- [Find/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+Rozpoczyna się proces debugowania i pozwala określić sposób obsługi błędów.
+
+## <a name="syntax"></a>Składnia
+
+```
+Debug.ListDisassembly [/count:number] [/endaddress:expression]
+[/codebytes:yes|no] [/source:yes|no] [/symbolnames:yes|no]
+[/linenumbers:yes|no]
+```
+
+## <a name="switches"></a>Przełączniki
+ Każdy przełącznik może być wywoływany przy użyciu jego ukończenia formularza lub krótkich fragmentów.
+
+ / count: `number` [i] / / c: `number` [i] /length: `number` [i] / l: wyświetlenie `number`
+
+ Opcjonalna. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
+
+ /endaddress: `expression` [i] / e: `expression`
+
+ Opcjonalna. Adres, w którym należy zatrzymać dezasemblacji.
+
+ /codebytes:`yes` &#124; `no` [i] /bytes:`yes` &#124; `no` [i] / b:`yes`&#124;`no`
+
+ Opcjonalna. Wskazuje, czy mają być wyświetlane bajtów kodu. Wartość domyślna to `no`.
+
+ / source:`yes` &#124; `no` [i] / s:`yes`&#124;`no`
+
+ Opcjonalna. Wskazuje, czy można wyświetlić kodu źródłowego. Wartość domyślna to `no`.
+
+ /symbolnames:`yes` &#124; `no` [i] /names:`yes` &#124; `no` [i] / n:`yes`&#124;`no`
+
+ Opcjonalna. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes`.
+
+ [/ linenumbers:`yes`&#124;`no`]
+
+ Opcjonalna. Umożliwia wyświetlanie numery wierszy związane z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes` /linenumbers przełącznika.
+
+## <a name="example"></a>Przykład
+
+```
+>Debug.ListDisassembly
+```
+
+## <a name="see-also"></a>Zobacz też
+
+- [Lista stosu wywołań, polecenie](../../ide/reference/list-call-stack-command.md)
+- [Lista wątków, polecenie](../../ide/reference/list-threads-command.md)
+- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno Polecenie](../../ide/reference/command-window.md)
+- [Find/Command — pole](../../ide/find-command-box.md)
+- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

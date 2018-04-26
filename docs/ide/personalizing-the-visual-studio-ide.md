@@ -1,20 +1,19 @@
 ---
-title: Dostosowywanie środowiska IDE programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Dostosowywanie środowiska IDE programu Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -24,7 +23,7 @@ Visual Studio można spersonalizować na różne sposoby najlepiej obsługuje w�
 
 Wiele opcji personalizacji dostępnych za pośrednictwem [opcje środowiska](../ide/reference/environment-options-dialog-box.md) okno dialogowe. Istnieją dwa sposoby dostęp do tego okna dialogowego:
 
-- Na pasku menu wybierz **narzędzia**, **opcje**, a jeśli jeszcze nie jest rozwinięty, rozwiń węzeł **środowiska** węzła.
+- Na pasku menu wybierz **narzędzia** > **opcje**, a jeśli jeszcze nie jest rozwinięty, rozwiń węzeł **środowiska** węzła.
 
 - Typ `environment` w **Szybkie uruchamianie** polu i wybierz polecenie **środowiska--> Ogólne** z listy wyników.
 
@@ -41,7 +40,7 @@ Aby zmienić opcje kolorowania w edytorze, wpisz `environment` w **Szybkie uruch
 
 Możesz zmienić wielkość liter w menu głównym między **Pisownia tytułów** ("plik") i **wersaliki** ("plik"). Typ `environment` w **Szybkie uruchamianie** wybierz opcję **środowiska--> Ogólne**, a następnie zmień **dotyczą stylów wielkość tytułu paska menu** opcji.
 
-### <a name="customzing-menus-and-toolbars"></a>Customzing menu i pasków narzędzi
+### <a name="customze-menus-and-toolbars"></a>Customze menu i pasków narzędzi
 
 Aby dodać lub usunąć elementy menu lub pasek narzędzi, zobacz [porady: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
@@ -55,9 +54,9 @@ Można zdefiniować i zapisać wiele układów okien i przełączać się międz
 
 ## <a name="external-tools"></a>Narzędzia zewnętrzne
 
-Można dostosować **narzędzia** menu, aby uruchomić zewnętrznych narzędzi, aby uzyskać więcej informacji, zobacz [Zarządzanie narzędziami zewnętrznymi](../ide/managing-external-tools.md).
+Można dostosować **narzędzia** menu można uruchomić narzędzi zewnętrznych. Aby uzyskać więcej informacji, zobacz [Zarządzanie narzędziami zewnętrznymi](../ide/managing-external-tools.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-[Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)  
-[Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE — omówienie](../ide/visual-studio-ide.md)
+- [Szybki Start: Pierwsze spojrzenie na środowiska IDE programu Visual Studio](../ide/quickstart-ide-orientation.md)

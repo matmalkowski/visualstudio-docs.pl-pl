@@ -1,20 +1,22 @@
 ---
-title: Jak zgłosić problem z programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+title: Jak zgłosić problem z programu Visual Studio 2017 r.
+description: Dowiedz się, jak zgłosić problem z programu Visual Studio 2017 do firmy Microsoft, aby firma Microsoft może zdiagnozować i rozwiązać ten problem.
 ms.custom: ''
 ms.date: 03/11/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem z programu Visual Studio 2017 r.
 
@@ -28,7 +30,7 @@ Jeśli jeszcze tego nie zrobiono, zaloguj się do programu Visual Studio przed z
 2. Jeśli użytkownik nie jest zarejestrowany, wybierz **logowania**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu.
 3. Postępuj zgodnie z instrukcjami na ekranie do logowania.
 
- ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png "Zaloguj się zgłosić problem")  
+ ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png "Zaloguj się zgłosić problem")
 
 ## Wyszukiwanie i głosów dla podobnych problemów <a name="search_and_vote"></a>
 

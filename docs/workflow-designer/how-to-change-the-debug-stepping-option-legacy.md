@@ -1,7 +1,9 @@
 ---
-title: 'Porady: Zmień opcję krokowe wykonywanie debugowania (starsze) | Dokumentacja firmy Microsoft'
+title: 'Projektant przepływu pracy — porady: Zmień opcję krokowe wykonywanie debugowania (starsze)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - branch stepping
 - debugging, stepping options
@@ -14,28 +16,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aedb8e738dc2e6ca2b066dd9a2cd42e332bbd8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31047cedd4e8772b9ebab4ef238a8fe32bc07663
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Porady: Zmień opcję krokowe wykonywanie debugowania (starsze)
-W tym temacie opisano, jak zmienić opcję wykonywania krokowego debugowania dla [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacji w Projektancie przepływów pracy starszej wersji systemu Windows, które mają równoczesnych akcje. Użyj starszego [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Podczas debugowania starsze działania mające równoczesnych wykonywania, takie jak **ParallelActivity** lub **grupy ConditionedActivityGroup**, można użyć jednej z dwóch opcji do wykonania kroków opisanych w kodzie.
+W tym temacie opisano, jak zmienić debugowania krokowe wykonywanie opcję dla aplikacji Windows Workflow Foundation (WF) w Projektancie przepływów pracy starszej wersji systemu Windows, które mają równoczesnych akcje. Starsze projektanta przepływów pracy należy używać wtedy, gdy konieczne objęcie .NET Framework w wersji 3.5 lub WinFX.
 
- Wykonaj następujące kroki, aby zmienić debugowania krokowe wykonywanie opcja w projekcie przepływem pracy starszego.
+Podczas debugowania starsze działania mające równoczesnych wykonywania, takie jak **ParallelActivity** lub **grupy ConditionedActivityGroup**, można użyć jednej z dwóch opcji do wykonania kroków opisanych w kodzie.
+
+Wykonaj następujące kroki, aby zmienić debugowania krokowe wykonywanie opcja w projekcie przepływem pracy starszego.
 
 ## <a name="procedures"></a>Procedury
 
-#### <a name="to-change-the-debug-stepping-option"></a>Aby zmienić opcję debugowania wykonywania krokowego
+### <a name="to-change-the-debug-stepping-option"></a>Aby zmienić opcję debugowania wykonywania krokowego
 
 1.  Uruchom program Visual Studio.
 
-2.  Otwórz istniejący projekt przepływem pracy starszego lub Utwórz nowy projekt, który wykorzystuje równoczesnych działań i który jest przeznaczony dla jednego [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] lub [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+2.  Otwórz istniejący projekt starszych przepływu pracy lub Utwórz nowy projekt używającego równoczesnych działań i którego element docelowy .NET Framework w wersji 3.5 lub WinFX.
 
-3.  Na **przepływu pracy** menu w starszych [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wskaż pozycję **debugowania**, a następnie wskaż **opcje krokowe wykonywanie**.
+3.  Na **przepływu pracy** menu w starszej wersji projektanta przepływów pracy, wskaż pozycję **debugowania**, a następnie wskaż **krokowe wykonywanie opcje**.
 
 4.  Wybierz opcję **wystąpienia** lub **gałęzi**.
 

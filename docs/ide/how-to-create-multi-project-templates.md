@@ -1,9 +1,8 @@
 ---
-title: Tworzenie szablonów wielu projektów dla programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Tworzenie szablonów wielu projektów dla programu Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b3902dd2b6f4dfac72d61d2c4d81937dcbbfdd07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Porady: Tworzenie szablonów wielu projektów
 
@@ -26,15 +25,15 @@ Szablon projektu wielu ma co najmniej dwa szablony projektów i szablonu główn
 
 Szablony wielu projektów zachowywać się inaczej niż szablony pojedynczego projektu. Mają one unikatowe następujące właściwości:
 
-- Poszczególnych projektów w szablonie wielu projektów nie można przypisać nazwy w **nowy projekt** okno dialogowe. Zamiast tego należy użyć `ProjectName` atrybutu `ProjectTemplateLink` element *.vstemplate* plik, aby określić nazwę dla każdego projektu.
+- Poszczególnych projektów w szablonie wielu projektów nie można przypisać nazwy w **nowy projekt** okno dialogowe. Zamiast tego należy użyć `ProjectName` atrybutu `ProjectTemplateLink` element *vstemplate* plik, aby określić nazwę dla każdego projektu.
 
-- Szablony wielu projektów mogą zawierać projektów dla różnych języków, ale cały szablonu mogą być przełączane tylko w jednej kategorii. Określ kategorię szablonu w `ProjectType` elementu *.vstemplate* pliku.
+- Szablony wielu projektów mogą zawierać projektów dla różnych języków, ale cały szablonu mogą być przełączane tylko w jednej kategorii. Określ kategorię szablonu w `ProjectType` elementu *vstemplate* pliku.
 
 Szablon wielu projektów musi zawierać następujące elementy skompresowane w *.zip* pliku:
 
-- Katalog główny *.vstemplate* dla całego szablonu wielu projektów. Ten katalog główny *.vstemplate* zawierający metadane który **nowy projekt** okno dialogowe wyświetla i określa, gdzie można znaleźć *.vstemplate* pliki projektów w szablon. Ten plik musi znajdować się w katalogu głównym *.zip* pliku.
+- Katalog główny *vstemplate* dla całego szablonu wielu projektów. Ten katalog główny *vstemplate* zawierający metadane który **nowy projekt** okno dialogowe wyświetla i określa, gdzie można znaleźć *vstemplate* pliki projektów w szablon. Ten plik musi znajdować się w katalogu głównym *.zip* pliku.
 
-- Co najmniej dwa foldery zawierające pliki, które są wymagane dla szablonu kompletnego projektu. Foldery obejmują wszystkie pliki kodu dla projektu, a także *.vstemplate* w pliku projektu.
+- Co najmniej dwa foldery zawierające pliki, które są wymagane dla szablonu kompletnego projektu. Foldery obejmują wszystkie pliki kodu dla projektu, a także *vstemplate* w pliku projektu.
 
 Na przykład szablonów wielu projektów *zip* plik, który zawiera dwa projekty mają następujące pliki i katalogi:
 
@@ -46,7 +45,7 @@ Na przykład szablonów wielu projektów *zip* plik, który zawiera dwa projekty
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.VB*
 
-Katalog główny *.vstemplate* plik szablonu wielu projektów różni się od szablonu pojedynczych projektów w następujący sposób:
+Katalog główny *vstemplate* plik szablonu wielu projektów różni się od szablonu pojedynczych projektów w następujący sposób:
 
 - `Type` Atrybutu `VSTemplate` element ma wartość `ProjectGroup` zamiast `Project`. Na przykład:
 
@@ -55,7 +54,7 @@ Katalog główny *.vstemplate* plik szablonu wielu projektów różni się od sz
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- `TemplateContent` Element zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementów, które definiują ścieżki do *.vstemplate* pliki uwzględnione projektów. Na przykład:
+- `TemplateContent` Element zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementów, które definiują ścieżki do *vstemplate* pliki uwzględnione projektów. Na przykład:
 
     ```xml
     <TemplateContent>
@@ -93,7 +92,7 @@ Katalog główny *.vstemplate* plik szablonu wielu projektów różni się od sz
 
 1. Wyodrębnij zawartość każdego projektu *.zip* pliku do podkatalogu odpowiedniego utworzony.
 
-1. W katalogu podstawowego, Utwórz plik XML z *.vstemplate* rozszerzenia pliku. Ten plik zawiera metadanych dla szablonów wielu projektów. Zobacz przykład poniżej dla struktury pliku. Należy określić ścieżkę względną do każdego projektu *.vstemplate* pliku.
+1. W katalogu podstawowego, Utwórz plik XML z *.vstemplate* rozszerzenia pliku. Ten plik zawiera metadanych dla szablonów wielu projektów. Zobacz przykład poniżej dla struktury pliku. Należy określić ścieżkę względną do każdego projektu *vstemplate* pliku.
 
 1. Wybierz katalog podstawowy, a z menu kliknij prawym przyciskiem myszy lub kontekstu wybierz **przesyłają** > **skompresowanego folderu (zip)**.
 
@@ -105,10 +104,10 @@ Katalog główny *.vstemplate* plik szablonu wielu projektów różni się od sz
 
 ## <a name="two-project-example"></a>Przykład dwa projektu
 
-W tym przykładzie przedstawiono podstawowe głównego wielu projektów *.vstemplate* pliku. W tym przykładzie szablon ma dwa projekty `My Windows Application` i `My Class Library`. `ProjectName` Atrybutu `ProjectTemplateLink` element Określa nazwę, która znajduje się w projekcie.
+W tym przykładzie przedstawiono podstawowe głównego wielu projektów *vstemplate* pliku. W tym przykładzie szablon ma dwa projekty `My Windows Application` i `My Class Library`. `ProjectName` Atrybutu `ProjectTemplateLink` element Określa nazwę, która znajduje się w projekcie.
 
 > [!TIP]
-> Jeśli `ProjectName` atrybut nie jest określony, nazwa *.vstemplate* plik jest używany jako nazwa projektu.
+> Jeśli `ProjectName` atrybut nie jest określony, nazwa *vstemplate* plik jest używany jako nazwa projektu.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -170,8 +169,8 @@ W tym przykładzie użyto `SolutionFolder` elementu, aby podzielić na dwie grup
 
 ## <a name="see-also"></a>Zobacz także
 
-[Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)  
-[Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)  
-[Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)  
-[SolutionFolder — element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
-[Projecttemplatelink — element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+- [Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)
+- [SolutionFolder — element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [Projecttemplatelink — element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

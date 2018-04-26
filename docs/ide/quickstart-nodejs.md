@@ -1,10 +1,9 @@
 ---
-title: 'Szybki Start: tworzenie pierwszej aplikacji Node.js za pomocą programu Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js'
 description: W tym szybkiego startu możesz utworzyć aplikację Node.js w programie Visual Studio
-ms.custom: ''
 ms.date: 11/15/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -15,14 +14,15 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c1c40d3d62abb855906b7b61a75c698d21622d1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afc2accc5572ecacc90222a865230daa9b311044
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Program Visual Studio umożliwia tworzenie pierwszej aplikacji Node.js
-W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli program Visual Studio nie został już zainstalowany, zainstaluj go bezpłatnie [tutaj](http://www.visualstudio.com).  
+
+W tej 5 – 10 min wprowadzenie do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz prostą aplikację sieci web Node.js. Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 Najpierw utworzysz projekt aplikacji sieci web Node.js.
@@ -31,37 +31,37 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     Ogólnie rzecz biorąc Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego można skonfigurować projektu do odwołania zainstalowanego środowiska uruchomieniowego.
 
-1. Otwórz program Visual Studio 2017 r.  
+1. Otwórz program Visual Studio 2017 r.
 
-1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .  
+1. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
-1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji sieci Web Node.js puste**, a następnie wybierz **OK**.   
+1. W **nowy projekt** okno dialogowe, w lewym okienku rozwiń **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji sieci Web Node.js puste**, a następnie wybierz **OK**.
 
-     Jeśli nie widzisz **aplikacji sieci Web Node.js puste** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.  
+     Jeśli nie widzisz **aplikacji sieci Web Node.js puste** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe. Uruchamia Instalator programu Visual Studio. Wybierz **programowanie Node.js** obciążenia, a następnie wybierz **Modyfikuj**.
 
-     ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)  
+     ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
     Program Visual Studio tworzy i nowe rozwiązanie i otworzy w projekcie. *Server.js* zostanie otwarty w edytorze w okienku po lewej stronie.
 
-## <a name="explore-the-ide"></a>Eksploruj IDE  
+## <a name="explore-the-ide"></a>Eksploruj IDE
 
 1. Spójrz na **Eksploratora rozwiązań** w okienku po prawej stronie.
 
-   ![Eksplorator rozwiązań](../ide/media/quickstart-nodejs-solution-explorer.png)  
+   ![Eksplorator rozwiązań](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - Wyróżnione czcionką pogrubioną jest projekt używa tej nazwy należy nadać w **nowy projekt** okno dialogowe. Na dysku ten projekt jest reprezentowana przez plik .njsproj w folderze projektu.
+  - Wyróżnione czcionką pogrubioną jest projekt używa tej nazwy należy nadać w **nowy projekt** okno dialogowe. Na dysku, ten projekt jest reprezentowana przez *.njsproj* pliku w folderze projektu.
 
-  - Na najwyższym poziomie to rozwiązanie, które domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez plik .sln miejsca na dysku jest kontenerem dla jednego lub więcej powiązanych projektów.
+  - Na najwyższym poziomie to rozwiązanie, które domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub więcej projektów powiązanych.
 
   - Węzeł npm zawiera wszystkie pakiety zainstalowane npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm wyszukiwanie i instalowanie pakietów npm za pomocą okna dialogowego.
 
 1. Jeśli chcesz zainstalować pakiet npm lub node.js polecenia z wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz pozycję **Otwórz wiersz polecenia w tym miejscu**.
 
-   ![Wiersz polecenia node.js](../ide/media/quickstart-nodejs-command-prompt.png) 
+   ![Wiersz polecenia node.js](../ide/media/quickstart-nodejs-command-prompt.png)
 
-1. W *server.js* plik w edytorze (lewe okienko), wybierz `http.createServer` , a następnie naciśnij klawisz **F12** lub wybierz **przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie powoduje przejście do definicji `createServer` w index.d.ts funkcji.  
+1. W *server.js* plik w edytorze (lewe okienko), wybierz `http.createServer` , a następnie naciśnij klawisz **F12** lub wybierz **przejdź do definicji** z menu kontekstowego (kliknij prawym przyciskiem myszy). To polecenie powoduje przejście do definicji `createServer` działać w *index.d.ts*.
 
-   ![Menu kontekstowe przejdź do definicji](../ide/media/quickstart-nodejs-gotodefinition.png)  
+   ![Menu kontekstowe przejdź do definicji](../ide/media/quickstart-nodejs-gotodefinition.png)
 
 1. Otrzymano do *server.js*, następnie umieść kursor na końcu ciągu w tym wierszu kodu, `res.end('Hello World\n');`i zmodyfikuj go, aby wygląda następująco:
 
@@ -69,22 +69,23 @@ Najpierw utworzysz projekt aplikacji sieci web Node.js.
 
     Należy wpisać `connection.`, IntelliSense udostępnia opcje umożliwiające automatyczne zakończenia kod.
 
-   ![Funkcja automatycznego uzupełniania IntelliSense](../ide/media/quickstart-nodejs-intellisense.png)  
+   ![Funkcja automatycznego uzupełniania IntelliSense](../ide/media/quickstart-nodejs-intellisense.png)
 
 1. Wybierz **port lokalny**, a następnie wpisz `);` do wykonania instrukcji, dzięki czemu wygląda następująco:
 
     `res.end('Hello World\n' + res.connection.localPort);`
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
-1. Naciśnij klawisz **Ctrl + F5** (lub **Debuguj > Uruchom bez debugowania**) do uruchomienia aplikacji. Aplikacja zostanie otwarty w przeglądarce.  
+
+1. Naciśnij klawisz **Ctrl**+**F5** (lub **Debuguj > Uruchom bez debugowania**) do uruchomienia aplikacji. Aplikacja zostanie otwarty w przeglądarce.
 
 1. W oknie przeglądarki pojawi się "Hello World" oraz numer portu lokalnego.
 
-1. Zamknij przeglądarkę sieci web.  
+1. Zamknij przeglądarkę sieci web.
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o środowiska IDE programu Visual Studio. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.  
+Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz nieco o środowiska IDE programu Visual Studio. Jeśli chcesz delve głębiej do jego możliwości, kontynuuj samouczek w **samouczki** sekcji spisu treści.
 
-## <a name="next-steps"></a>Następne kroki 
+## <a name="next-steps"></a>Następne kroki
 
-- Przejdź przez [samouczek środowiska Node.js i Express](../nodejs/tutorial-nodejs.md)  
-- Przejdź przez [samouczek środowiska Node.js i bibliotece React.](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  
+- Przejdź przez [samouczek środowiska Node.js i Express](../nodejs/tutorial-nodejs.md)
+- Przejdź przez [samouczek środowiska Node.js i bibliotece React.](../nodejs/tutorial-nodejs-with-react-and-jsx.md)

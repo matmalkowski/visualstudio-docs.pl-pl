@@ -1,9 +1,9 @@
 ---
-title: Visual Studio projektu i elementu parametrów do szablonu | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Visual Studio projektu i elementu parametrów do szablonu
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
-Przy użyciu parametrów w szablonach, można zamienić wartości kluczowych części szablonu, na przykład nazwy klas i przestrzenie nazw, przy tworzeniu wystąpienia szablonu. Te parametry są zastępowane przez Kreatora szablonu, który działa w tle, gdy użytkownik wybierze **OK** lub **Dodaj** w **nowy projekt** lub **Dodaj nowy element**  okien dialogowych.
+Można zastąpić wartości w szablonie, podczas tworzenia wystąpienia klasy szablonu. Aby skonfigurować tę funkcję, użyj *parametrów szablonu*. Parametry szablonu może być używany do zastąpienia wartości, takie jak nazwy klas i przestrzenie nazw w szablonie. Kreator szablonu, który działa w tle, gdy użytkownik dodaje nowy element lub projektu zastępuje te parametry.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarowanie i włączanie parametrów szablonu
 
@@ -38,7 +38,7 @@ Parametry szablonu są zadeklarowane w formacie $*parametru*$. Na przykład:
 
 1. Ustaw atrybut `ReplaceParameters` elementu `ProjectItem` na `true`.
 
-1. W pliku kodu dla elementu projektu dołącz parametry, tam gdzie jest to potrzebne. Na przykład, następujący parametr określa, że bezpieczna nazwa projektu będzie używana dla przestrzeni nazw w pliku:
+1. W pliku kodu dla elementu projektu dołącz parametry, tam gdzie jest to potrzebne. Na przykład następujący parametr określa, czy nazwa projektu bezpieczne jest używana dla przestrzeni nazw w pliku:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ W pliku .vstemplate szablonu projektu, obejmują `ReplaceParameters="true"` atry
 
 ## <a name="see-also"></a>Zobacz także
 
-[Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)  
-[Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+- [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
+- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)

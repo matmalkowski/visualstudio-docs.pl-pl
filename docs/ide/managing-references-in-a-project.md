@@ -1,6 +1,7 @@
 ---
 title: Zarządzanie odwołaniami w projekcie
 ms.date: 04/11/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -22,11 +23,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
@@ -54,7 +55,7 @@ Można dodać odwołania do następujących typów składników i usług:
 
 Uniwersalne projekty platformy systemu Windows (UWP) można utworzyć odwołania do innych projektów uniwersalnych systemu Windows w rozwiązaniu lub Windows 8.1 projektów lub plików binarnych, pod warunkiem, że te projekty nie należy używać interfejsów API, które są przestarzałe w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [przenieść z systemem Windows 8 środowiska wykonawczego platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
 
-Jeśli wybierzesz przekierować projekty Windows 8.1 do systemu Windows 10, zobacz [portu, migracji i uaktualniania projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Jeśli wybierzesz przekierować projekty Windows 8.1 do systemu Windows 10, zobacz [portu, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ### <a name="extension-sdk-references"></a>Odwołania do zestawu SDK rozszerzenia
 
@@ -89,9 +90,9 @@ Po wprowadzeniu odwołania do zestawu w projekcie programu Visual Studio wyszuku
 - Innych katalogów projektu w tym samym rozwiązaniu. (Te zestawy można znaleźć na **projekty** kartę.)
 
 > [!NOTE]
-> - Wszystkie projekty zawierają domniemanych odwołanie do biblioteki mscorlib.
+> - Wszystkie projekty zawierają domniemanych odwołanie do **mscorlib**.
 > - Wszystkie projekty zawierają domniemanych odwołanie do `System.Core`, nawet jeśli `System.Core` zostanie usunięty z listy odwołania.
-> - Projekty Visual Basic zawierają domniemanych odwołanie do `Microsoft.VisualBasic`.
+> - Projekty Visual Basic zawierają domniemanych odwołanie do <xref:Microsoft.VisualBasic>.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Odwołania do składników współużytkowanych w czasie wykonywania
 
@@ -111,7 +112,7 @@ Aby uzyskać więcej informacji, zobacz [omówienie wielowersyjności](../ide/vi
 
 Odwołania projektu do projektu są odwołania do projektów, które zawierają zestawy; można je utworzyć za pomocą **projektu** kartę. Program Visual Studio można znaleźć zestawu, w przypadku podania ścieżki do projektu.
 
-Jeśli masz projektu, który spowoduje utworzenie zestawu należy odwołania do projektu i nie używać odwołanie pliku (patrz poniżej). Zaletą odwołanie projektu do projektu jest tworzy zależność między projektami w systemie kompilacji. Zależne projekt zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania odwołaniem do projektu. Odwołanie pliku nie tworzy zależność kompilacji, dzięki czemu można Skompiluj projekt odwołujący się bez tworzenia projektu zależne i odwołania może stać się nieaktualne. (To znaczy projektu można odwoływać się wcześniej skompilowany wersja projektu.) Może to spowodować różne wersje pojedynczego pliku DLL jest wymagany w katalogu bin, który nie jest możliwe. Gdy wystąpi konflikt, zostanie wyświetlony komunikat o takich jak "Ostrzeżenie: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie 'Plik'.". Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami uszkodzony](../ide/troubleshooting-broken-references.md) i [porady: tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md).
+Jeśli masz projektu, który spowoduje utworzenie zestawu należy odwołania do projektu i nie używać odwołanie pliku (patrz poniżej). Zaletą odwołanie projektu do projektu jest tworzy zależność między projektami w systemie kompilacji. Zależne projekt zostanie skompilowany, jeśli została zmieniona od czasu ostatniego konstruowania odwołaniem do projektu. Odwołanie pliku nie tworzy zależność kompilacji, dzięki czemu można Skompiluj projekt odwołujący się bez tworzenia projektu zależne i odwołania może stać się nieaktualne. (To znaczy projektu można odwoływać się wcześniej skompilowany wersja projektu.) Może to spowodować różne wersje pojedynczego pliku DLL jest wymagana w *bin* katalogu, który nie jest możliwe. Gdy wystąpi konflikt, zostanie wyświetlony komunikat o takich jak "Ostrzeżenie: nie można skopiować zależności 'Plik' w projekcie 'projekt' do katalogu uruchomienia, ponieważ zastąpiłaby ona odwołanie 'Plik'.". Aby uzyskać więcej informacji, zobacz [rozwiązywanie uszkodzenie odwołań](../ide/troubleshooting-broken-references.md) i [porady: tworzenie i usuwanie zależności projektu](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Zamiast odwołania projektu do projektu odwołanie pliku jest tworzony, jeśli wersja docelowej platformy .NET Framework jeden projekt jest wersji 4.5 i wersję docelową innych projektów jest w wersji 2, 3, 3.5 lub 4.0.

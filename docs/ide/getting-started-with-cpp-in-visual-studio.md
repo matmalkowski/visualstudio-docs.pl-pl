@@ -1,7 +1,9 @@
 ---
-title: Wprowadzenie do języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Wprowadzenie do języka C++ w programie Visual Studio
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
@@ -11,11 +13,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -152,8 +154,8 @@ Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Jeśli chcesz pozna�
 
 ## <a name="see-also"></a>Zobacz także
 
-[Do tworzenia klasycznych aplikacji C++ za pomocą środowiska IDE programu Visual Studio](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Wskazówki dotyczące produktywności dla programu Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
-[Przykłady programu Visual Studio](../ide/visual-studio-samples.md)  
-[Wprowadzenie do programowania z użyciem programu Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+- [Do tworzenia klasycznych aplikacji C++ za pomocą środowiska IDE programu Visual Studio](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Wskazówki dotyczące produktywności dla programu Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Przykłady programu Visual Studio](../ide/visual-studio-samples.md)
+- [Wprowadzenie do programowania z użyciem programu Visual Studio](../ide/get-started-developing-with-visual-studio.md)

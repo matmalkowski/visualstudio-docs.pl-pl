@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2766f6487b6cf2fb39140eb9678afc9999e39545
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 915a65129b3131bf599903681b1e504d5d16d902
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 Podczas pisania kodu rozszerzenie dla diagramów zależności wartości z żadnym elementem można przechowywać na diagramie zależności. Wartości będzie umieszczony po zapisaniu i ponownym otwarciu diagramu. Może także zawierać te właściwości są wyświetlane w **właściwości** okna tak, aby użytkownicy mogli widzieć i je edytować. Na przykład można zezwolić użytkownikom Określ wyrażenie regularne dla każdej warstwy, a napisać kod sprawdzania poprawności, aby sprawdzić, czy nazwy klasy w każdej warstwie jest zgodna z wzorcem określone przez użytkownika.

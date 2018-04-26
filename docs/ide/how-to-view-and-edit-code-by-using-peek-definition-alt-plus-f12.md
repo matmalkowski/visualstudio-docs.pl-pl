@@ -1,7 +1,7 @@
 ---
-title: Za pomocą definicji wglądu w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Za pomocą definicji wglądu w programie Visual Studio
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: wyświetlanie i edytowanie kodu za pomocą definicji wglądu (Alt + F12)
 
@@ -65,7 +65,7 @@ Po rozpoczęciu edycji wewnątrz **definicji wglądu** okna, pliku, który modyf
 
 1. Kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
 
-   ![Ustawienie opcji definicji wglądu kliknięcia myszą](../ide/media/editor_options_peek_view.png)  
+   ![Ustawienie opcji definicji wglądu kliknięcia myszą](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Skróty klawiaturowe dla definicji wglądu
 
@@ -85,6 +85,6 @@ Można użyć tych skrótów klawiaturowych z **definicji wglądu** okno:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Przejdź do kodu](../ide/navigating-code.md)  
-[Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)  
-[Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)
+- [Przejdź do kodu](../ide/navigating-code.md)
+- [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)
+- [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)

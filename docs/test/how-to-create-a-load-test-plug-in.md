@@ -1,5 +1,5 @@
 ---
-title: Tworzenie testu obciążenia wtyczki w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Tworzenie wtyczki w programie Visual Studio testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Porady: tworzenie wtyczki testu obciążenia
 
@@ -102,7 +103,8 @@ Można utworzyć wtyczkę testu obciążeniowego służącą do uruchamiania kod
 Poniższy kod pokazuje wtyczkę testu obciążeniowego, która uruchamia niestandardowy kod po wystąpieniu zdarzenia LoadTestFinished. Jeśli kod jest uruchamiany na agencie testowym na zdalnym komputerze, a agent testowy nie ma usługi SMTP localhost, test obciążeniowy pozostanie w stanie „W toku”, ponieważ pojawi się okno komunikatu.
 
 > [!NOTE]
->  Poniższy kod wymaga, aby dodać odwołanie do przestrzeni nazw System.Windows.Forms.
+> Poniższy kod wymaga, aby dodać odwołanie do przestrzeni nazw System.Windows.Forms.
+
 
 ```csharp
 using System;

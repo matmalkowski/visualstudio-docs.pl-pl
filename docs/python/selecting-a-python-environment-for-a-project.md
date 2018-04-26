@@ -1,6 +1,6 @@
 ---
-title: Wybierając środowisko dla projektu
-description: W Eksploratorze rozwiązań programu Visual Studio można przypisać określone interpreter języka Python (Środowisko) zawsze na użytek żadnym konkretnym projektem, ignorowanie domyślnego środowiska. Można również tworzyć i zarządzać środowiskami wirtualnymi.
+title: Wybieranie interpreter języka Python i środowisko dla projektu
+description: Jak przypisać środowiska Python dla projektu programu Visual Studio, a także instrukcje dotyczące tworzenia środowisk wirtualnych.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Zaznaczanie interpreter języka Python i środowiska do użycia w projekcie
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Jak przypisać środowiska Python, który jest używany w projekcie
 
 Cały kod w projekcie języka Python działa w kontekście określonego środowiska. Visual Studio również korzysta z tego środowiska do debugowania, importowanie i zakończeń — członek, sprawdzanie składni i innych zadań, które wymagają środowisku.
 

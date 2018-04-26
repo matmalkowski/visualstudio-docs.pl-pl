@@ -1,10 +1,9 @@
 ---
-title: -ResetSettings (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: -ResetSettings (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
@@ -15,39 +14,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22dd925755e996a927664e0a9a5846fc10247882
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdec487781928c22a34e5e7586700ed0e91a31a7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
-Przywraca [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ustawienia domyślne i automatycznie uruchamia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Opcjonalnie resetuje ustawienia do pliku określonego .vssettings.  
-  
- Ustawienia domyślne są określane przez profil, który zostało zaznaczone, gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] najpierw została uruchomiona.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-Devenv /ResetSettings SettingsFile  
-```  
-  
-## <a name="arguments"></a>Argumenty  
- `SettingsFile`  
- Pełna ścieżka i nazwa pliku .vssettings do zastosowania do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
- Aby przywrócić profilu ogólne ustawienia środowiska deweloperskiego, należy użyć `General`.  
-  
-## <a name="remarks"></a>Uwagi  
- Jeśli nie `SettingsFile` jest określony, pojawi się monit wybierz domyślną kolekcję ustawień przy następnym uruchomieniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="example"></a>Przykład  
- Następujące polecenie w wierszu stosuje ustawienia przechowywane w pliku `MySettings.vssettings`.  
-  
-```  
-Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)   
- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+
+Przywraca ustawienia domyślne programu Visual Studio i powoduje automatyczne uruchomienie programu Visual Studio IDE. Opcjonalnie resetuje ustawienia do określonej *vssettings* pliku.
+
+Ustawienia domyślne są określane przez profil, który został wybrany, gdy najpierw została uruchomiona Visual Studio.
+
+## <a name="syntax"></a>Składnia
+
+```
+Devenv /ResetSettings SettingsFile
+```
+
+## <a name="arguments"></a>Argumenty
+
+`SettingsFile`
+
+Pełna ścieżka i nazwa *vssettings* pliku w celu zastosowania do programu Visual Studio.
+
+Aby przywrócić profilu ogólne ustawienia środowiska deweloperskiego, należy użyć `General`.
+
+## <a name="remarks"></a>Uwagi
+
+Jeśli nie `SettingsFile` jest określona, zostanie wyświetlony monit o wybierz domyślną kolekcję ustawień przy następnym uruchomieniu programu Visual Studio.
+
+## <a name="example"></a>Przykład
+
+Następujące polecenie w wierszu stosuje ustawienia przechowywane w pliku `MySettings.vssettings`.
+
+```
+Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
+```
+
+## <a name="see-also"></a>Zobacz też
+
+- [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

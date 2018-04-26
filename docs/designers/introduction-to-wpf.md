@@ -1,6 +1,7 @@
 ---
 title: Wprowadzenie do WPF
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
@@ -12,11 +13,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 96855f9050eda640b0f5dc9c44dbc67a3ec6b328
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 
@@ -670,6 +671,6 @@ Analizujemy Ciebie najważniejsze funkcje WPF. Teraz nadszedł czas, tworzenie p
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Rozpoczynanie pracy z użyciem WPF](../designers/getting-started-with-wpf.md)
+- [Rozpoczynanie pracy z aparatem WPF](../designers/getting-started-with-wpf.md)
 - [Windows Presentation Foundation](/dotnet/framework/wpf/index)
 - [Zasoby społeczności WPF](/dotnet/framework/wpf/getting-started/community-feedback)
