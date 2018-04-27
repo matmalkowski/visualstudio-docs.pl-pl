@@ -295,6 +295,7 @@
 #### [Nie można dołączyć do procesu](unable-to-attach-to-the-process.md)
 #### [Okno dialogowe Komunikat o błędzie funkcji Edytuj i kontynuuj](edit-and-continue-error-message-dialog-box.md)
 #### [Błąd: Limit czasu obliczania funkcji został przekroczony. Konieczne było przerwanie procesu w niebezpieczny sposób](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Błąd: proces docelowy zakończył działanie z kodem „code” podczas obliczania funkcji „function”](error-evaluating-the-function-process-exited.md)
 #### [Błąd: Nie można połączyć się z serwerem SQL na zdalnym komputerze](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Błąd: Nie można uzyskać dostępu do interfejsu debugowania programu SQL Server](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Błąd: Program SQL nie może odnaleźć składnika SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)
