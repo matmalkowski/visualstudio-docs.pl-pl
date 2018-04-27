@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu języka Python z szablonu w programie Visual Studio
 
@@ -59,7 +59,7 @@ Po wprowadzeniu [zainstalowane obsługę języka Python w Visual Studio 2017](in
 
 **Odpowiedzi**: Z obciążeniem Python zainstalowany, program Visual Studio oferuje różne szablony projektów, między innymi [Flask i Django oraz Bottle platformy sieci web](../python/python-web-application-project-templates.md), usług w chmurze Azure, różnych uczenia maszynowego scenariusze, a nawet szablonu do utworzenia projektu z istniejącej struktury folderu zawierającego aplikację języka Python. Możesz przejść do nich za pośrednictwem **Plik > Nowy > Projekt...**  okno dialogowe, wybierając **Python** węzeł języka i jego węzły podrzędne.
 
-Program Visual Studio oferuje również różnych plików lub *elementu szablony* do szybkiego tworzenia klasy języka Python, pakiet języka Python, testu jednostkowego języka Python i plikach web.config. Jeśli masz projektów języka Python, otwórz dostęp szablonów elementów za pomocą **projektu > Dodaj nowy element...**  polecenia menu.
+Program Visual Studio oferuje również różnych plików lub *elementu szablony* do szybkiego tworzenia klasy języka Python, pakiet języka Python, testu jednostkowego języka Python, `web.config` plików i inne. Jeśli masz projektów języka Python, otwórz dostęp szablonów elementów za pomocą **projektu > Dodaj nowy element** polecenia menu. Zobacz [elementu szablony](python-item-templates.md) odwołania.
 
 Za pomocą szablonów można zaoszczędzić znaczących godzinę uruchamiania projektu lub tworzenia pliku i są również to dobry sposób na Dowiedz się więcej o różnych typach aplikacji i kodu struktury. Warto dopiero po kilku minutach można utworzyć za pomocą różnych szablonów projektów i elementów do zapoznania się z ich oferty.
 

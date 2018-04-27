@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d5d0224c9f6d8d76f73c79feeaa363a6e0a954a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 
@@ -89,7 +89,7 @@ Visual Studio *okna interaktywnego* dla języka Python zapewnia obsługę sforma
 
 1. Co to po prostu wykonaniu jest umożliwia szybkie środowiska REPL okno interaktywne wyglądają szczegóły dla małych fragment kodu, a następnie wygodnie dodany kod do pliku źródłowym projektu. Jeśli teraz wykonywania kodu ponownie z Ctrl + F5 (lub **debugowania > Uruchom bez debugowania**), zobacz dokładne wyniki potrzebujesz.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Uruchamianie kodu w debugerze](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

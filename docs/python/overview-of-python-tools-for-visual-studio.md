@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a23835ddeb143c723f4275ec337168dc783664b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Praca z języka Python w programie Visual Studio w systemie Windows
 
@@ -88,6 +88,7 @@ Szablony projektów i elementów automatyzacji procesu konfigurowania różnych 
 Informacje dodatkowe:
 
 - Dokumenty: [projektów języka Python Zarządzanie](managing-python-projects-in-visual-studio.md)
+- Dokumenty: [dotyczące szablonów elementu](python-item-templates.md)
 - Dokumenty: [Python szablony projektu](managing-python-projects-in-visual-studio.md#project-templates)
 - Dokumenty: [Praca z C++ i języku Python](working-with-c-cpp-python-in-visual-studio.md)
 - Dokumentacja funkcji ogólne Visual Studio: [szablonów projektów i elementów](../ide/creating-project-and-item-templates.md#visual-studio-templates)

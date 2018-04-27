@@ -9,20 +9,18 @@ description: Dowiedz się, jak Administratorzy mogą edytować przypisania subsk
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edytowanie przypisania subskrypcji programu Visual Studio
 
-Jako administrator subskrypcji możesz mieć możliwość zmiany subskrypcje przypisane do osób w danej organizacji.  W tym artykule omówiono typy zmian może sprawić i niezbędne instrukcje. 
+Jako administrator subskrypcji możesz wprowadzić zmiany do subskrypcji, przypisane do osób w danej organizacji.  W tym artykule omówiono typy zmian można wprowadzać i niezbędne instrukcje. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Wprowadzanie zmian do subskrybenta informacji
 Można edytować informacje abonenta naprawić błędy lub zaktualizować informacje. 
-> [!NOTE]
-> Edycja adres e-mail subskrybenta spowoduje, że wszelkie istniejące korzyści zostaną zresetowane.
 
 Aby edytować subskrybenta, wybierz wielokropek (...), które są wyświetlane obok abonenta adresu e-mail, po wskaźnika myszy nad nim. Pojawi się listy rozwijanej.  Wybierz **Edytuj** Aby zmodyfikować szczegóły abonenta. Możesz również kliknąć dwukrotnie w wierszu abonenta w siatce, aby otworzyć okno edycji.
 

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4e8d28bb96fa17a82d758f5708fd592128296e7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
@@ -78,7 +78,7 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
 
 1. W programie Visual Studio **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz **Dodaj > Nowy element...* . W oknie dialogowym wybierając szablon "Azure" web.config"(Fast CGI) i wybierz OK. Spowoduje to utworzenie `web.config` pliku w katalogu głównym projektu.
 
-1. Modyfikowanie `PythonHandler` wpis w `web.config` , aby ścieżka instalacji języka Python na serwerze. Na przykład dla języka Python 3.6.1 x64 wpis powinna wyglądać następująco:
+1. Modyfikowanie `PythonHandler` wpis w `web.config` , aby ścieżka instalacji języka Python na serwerze (zobacz [odwołanie do konfiguracji usług IIS](https://www.iis.net/configreference) (iis.net) dla szczegółowymi). Na przykład dla języka Python 3.6.1 x64 wpis powinna wyglądać następująco:
 
     ```xml
     <system.webServer>
@@ -106,7 +106,7 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: dwie zmiany są potrzebne do `web.config` dla aplikacji Django. Najpierw należy zmienić `WSGI_HANDLER` do wartości `django.core.wsgi.get_wsgi_application()` (obiekt jest w `wsgi.py` pliku):
+    - **Django**: dwie zmiany są potrzebne do `web.config` dla projektów Django. Najpierw należy zmienić `WSGI_HANDLER` do wartości `django.core.wsgi.get_wsgi_application()` (obiekt jest w `wsgi.py` pliku):
 
         ```xml
         <!-- Django apps only -->
@@ -119,7 +119,7 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Tylko aplikacje Django**: W folderze, który jest zgodna z nazwą projektu, otwórz `settings.py` i Dodaj domenę adres URL witryny do `ALLOWED_HOSTS` jak pokazano poniżej, zastępując "vspython-test-02.azurewebsites .net" adres URL oczywiście:
+1. **Tylko aplikacje Django**: Projekt w Django `settings.py` plików, Dodawanie domeny adres URL witryny do `ALLOWED_HOSTS` jak pokazano poniżej, zastępując "vspython-test-02.azurewebsites .net" adres URL oczywiście:
 
     ```python
     # Change the URL to your specific site
@@ -128,9 +128,13 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
 
     Błąd podczas dodawania adresu URL do tablicy spowoduje błąd "DisallowedHost w lub nieprawidłowy nagłówek HTTP_HOST:"\<adres URL witryny\>". Może być konieczne dodanie "\<adres URL witryny\>" do ALLOWED_HOSTS. "
 
+    Należy pamiętać, że tablica jest pusta, Django automatycznie umożliwia "localhost", ale dodanie adresu URL produkcji usuwa tej możliwości. Aby kopie z tego powodu warto Obsługa oddzielne rozwoju i produkcji `settings.py`, lub użyj zmiennych środowiskowych, aby kontrolować wartości czasu wykonywania.
+
 1. W **Eksploratora rozwiązań**, rozwiń folder o nazwie takiej jak projektu, kliknij prawym przyciskiem myszy `static` folderu, wybierz opcję **Dodaj > Nowy element...** , wybierz szablon "Azure statycznych plików web.config" i wybierz **OK**. Ta akcja tworzy innego `web.config` w `static` folderu, które wyłączają Python przetwarzania dla tego folderu. Ta konfiguracja wysyła żądań dotyczących plików statycznych do domyślnego serwera sieci web, a nie za pomocą aplikacji Python.
 
 1. Następnie zapisać projekt, w programie Visual Studio **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz **publikowania**.
+
+    ![Publikowanie polecenia w menu kontekstowym projektu](media/template-web-publish-command.png)
 
 1. W **publikowania** karty zostanie wyświetlone, wybierz cel publikowania:
 
@@ -166,8 +170,8 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
 
     e. Spróbuj ponownie uruchomić usługę aplikacji po zainstalowaniu nowych pakietów. Ponowne uruchomienie komputera nie jest konieczne w przypadku zmiany `web.config`, tak jak w przypadku usługi aplikacji — automatyczne ponowne uruchomienie po każdej zmianie `web.config` zmiany.
 
-    > [!Tip] 
-    > Jeśli wprowadzisz zmiany do swojej aplikacji `requirements.txt` plików, należy ponownie zainstalować wszystkie pakiety, które są teraz wymienione w tym pliku przy użyciu konsoli Kudu. 
+    > [!Tip]
+    > Jeśli wprowadzisz zmiany do swojej aplikacji `requirements.txt` plików, należy ponownie zainstalować wszystkie pakiety, które są teraz wymienione w tym pliku przy użyciu konsoli Kudu.
 
 1. Po skonfigurowaniu pełni środowiska serwera, Odśwież stronę w przeglądarce i powinna zostać wyświetlona aplikacja sieci web.
 
@@ -175,7 +179,7 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikowanie w usłudze App Service — Visual Studio 2015
 
-> [!Note] 
+> [!Note]
 > Krótki film tego procesu można znaleźć w [Visual Studio Python samouczek: tworzenie witryny sieci Web](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (witrynie youtube.com, 3m10s).
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt wybierz **publikowania**.
@@ -195,7 +199,7 @@ Publikowanie do usługi Azure App Service z kopii programu Visual Studio 2017 ty
 
 1. Wybierz **Dalej >** zgodnie z potrzebami, aby przejrzeć dodatkowe ustawienia. Jeśli planujesz [zdalne debugowanie kodu Python na platformie Azure](debugging-remote-python-code-on-azure.md), należy ustawić **konfiguracji** do **debugowania**
 
-1. Wybierz **publikowania**. Po wdrożeniu aplikacji na platformie Azure domyślnej przeglądarki zostanie otwarty w tej witrynie. 
+1. Wybierz **publikowania**. Po wdrożeniu aplikacji na platformie Azure domyślnej przeglądarki zostanie otwarty w tej witrynie.
 
 W ramach tego procesu Visual Studio wykonuje następujące czynności:
 

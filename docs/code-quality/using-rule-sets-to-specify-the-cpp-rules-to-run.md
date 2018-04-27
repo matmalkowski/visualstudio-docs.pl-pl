@@ -1,6 +1,6 @@
 ---
 title: Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Użyj zestawów reguł do określania reguł C++ do uruchomienia
 
-W programie Visual Studio, można tworzyć i modyfikować niestandardowy *zestaw reguł* do określonego projektu potrzeb skojarzonych z analizy kodu. Aby utworzyć regułę niestandardową C++ zestaw, projektu C/C++ musi być otwarty w programie Visual Studio IDE. Możesz następnie otwórz zestaw standardowych reguł w edytorze zestawu reguł, a następnie dodaj lub usuń określone zasady i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu Określa, że naruszono reguły.
+W programie Visual Studio, można tworzyć i modyfikować niestandardowy *zestaw reguł* do określonego projektu potrzeb skojarzonych z analizy kodu. Zestawy reguł domyślne są przechowywane w `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+
+**Visual Studio 2017 wersji 15.7** można tworzyć niestandardowych zestawów reguł przy użyciu dowolnego tekstu Edytor i ich zastosowania w kompilacji wiersza polecenia niezależnie od tego, co utworzyć używanego systemu. Aby uzyskać więcej informacji, zobacz [/ analyze: zestaw reguł](/cpp/build/reference/analyze-code-quality).
+
+Aby utworzyć regułę niestandardową C++ w programie Visual Studio, projektu C/C++ musi być otwarty w programie Visual Studio IDE. Możesz następnie otwórz zestaw standardowych reguł w edytorze zestawu reguł, a następnie dodaj lub usuń określone zasady i opcjonalnie zmienić akcję, która występuje, gdy analiza kodu Określa, że naruszono reguły.
 
 Aby utworzyć nową regułę niestandardową zestaw, zapisz go przy użyciu nowej nazwy pliku. Zestaw reguł niestandardowych zostanie automatycznie przypisany do projektu.
 
@@ -72,3 +76,20 @@ Aby utworzyć nową regułę niestandardową zestaw, zapisz go przy użyciu nowe
 - Aby przełączyć między pokazywanie i ukrywanie reguł, które są przypisane **Brak** akcji, wybierz **Pokaż reguły, które nie są włączone**.
 
 - Aby dodać lub usunąć domyślną regułę ustawia bieżący zestaw reguł firmy Microsoft, wybierz **Dodaj lub usuń podrzędne zestawy reguł**.
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Aby utworzyć zestaw reguł w edytorze tekstu
+
+Można utworzyć niestandardowego zestawu reguł w tekście edytora, zapisz go w dowolnej lokalizacji z `.ruleset` rozszerzenia i stosuje się przy użyciu [/ analyze: zestaw reguł](/cpp/build/reference/analyze-code-quality) — opcja kompilatora.
+
+W poniższym przykładzie przedstawiono plik, który służy jako punkt początkowy zestawu podstawowych reguł:
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```

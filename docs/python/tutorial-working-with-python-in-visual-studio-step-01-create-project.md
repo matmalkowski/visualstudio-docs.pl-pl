@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f6db6e33b100955c1819b037099f876b1da8014
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Praca z języka Python w programie Visual Studio
 
@@ -31,9 +31,7 @@ Visual Studio obsługuje najwyższej jakości języka Python. W tym samouczku pr
 - [Krok 5: Instalowanie pakietów i zarządzania nimi środowiska Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Krok 6: Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Wymagania wstępne
-
-- Visual Studio 2017 z obciążeniem Python zainstalowane. Zobacz [krok 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md) instrukcje.
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Krok 1: Utwórz nowy projekt języka Python
 
@@ -69,7 +67,7 @@ W tym samouczku rozpoczynać prostego projektu zawierającego jeden pusty plik k
 
     Kliknij prawym przyciskiem myszy dowolny węzeł lub elementu w Eksploratorze rozwiązań, aby uzyskać dostęp do menu odpowiednich poleceń. Na przykład **zmienić** polecenie umożliwia zmianę nazwy węzła lub elementu, łącznie z projektu i rozwiązania.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Zapisywanie i uruchamiania kodu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

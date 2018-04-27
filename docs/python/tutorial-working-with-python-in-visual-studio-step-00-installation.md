@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9be7bdebabb24a4219a61de215f7571f17102c38
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 314aedd06755fba89c1e7e427613b0cad4e81b12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Zainstaluj obsługę języka Python w programie Visual Studio
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
     ![Testowanie Python za pośrednictwem okna interaktywnego](media/installation-interactive-test.png)
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Krok 1: Tworzenie projektu języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

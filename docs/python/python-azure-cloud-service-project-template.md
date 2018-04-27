@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 2acaa7a8012d8ef411eed065d8b4e134b4e52c1e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze Azure dla języka Python
 
 Visual Studio zawiera szablony ułatwiające rozpoczęcie pracy tworzenia usługi w chmurze Azure przy użyciu języka Python.
 
-A [usługi w chmurze](https://docs.microsoft.com/en-us/azure/cloud-services/) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na maszyny wirtualne w razie potrzeby skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](python-web-application-project-templates.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zwykle należy używać pakietów w pakiecie "azure", który jest instalowany z [ `pip install azure` ](http://pypi.org/project/azure).
+A [usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/) składa się z dowolnej liczby *roli proces roboczy* i *sieci web ról*, z których każdy wykonuje koncepcyjnie osobnym zadaniem, ale można osobno być replikowane na maszyny wirtualne w razie potrzeby skalowania. Role sieci Web zawierają hosting aplikacji frontonu sieci web. W przypadku danego języka Python, wszelkie platforma sieci web, który obsługuje WSGI może służyć do pisania takich aplikacji (obsługiwana przez [szablonu projektu sieci Web](python-web-application-project-templates.md)). Proces roboczy są przeznaczone dla procesy długotrwałe, które nie bezpośrednią interakcję z użytkownikami. Zwykle należy używać pakietów w pakiecie "azure", który jest instalowany z [ `pip install azure` ](http://pypi.org/project/azure).
 
 Ten artykuł zawiera szczegółowe informacje o szablonie projektu i innych pomoc techniczna w Visual Studio 2017 r (wcześniejszych wersji są podobne, lecz w edytorze). Aby uzyskać więcej informacji na temat pracy z platformą Azure w języku Python, odwiedź [Centrum deweloperów języka Python Azure](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 

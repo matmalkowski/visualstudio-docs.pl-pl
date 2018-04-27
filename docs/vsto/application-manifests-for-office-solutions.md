@@ -2,8 +2,8 @@
 title: Manifesty aplikacji dla rozwiązań pakietu Office | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa1ee09b3218fbcb485d7c3cd23e23ec18f463c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e31eda8b1e3a1a0c311b35245f9b7690cc37aae0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikacji dla rozwiązań Office
   Manifest aplikacji jest plik XML, który opisuje zestawy, które są ładowane do rozwiązania Microsoft Office. Użyj narzędzia Microsoft Office development w Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schematu manifestu aplikacji zdefiniowane w [Manifest aplikacji ClickOnce](/visualstudio/deployment/clickonce-application-manifest) odwołania.  
@@ -28,12 +28,12 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Opis|Atrybuty|  
 |-------------|-----------------|----------------|  
-|[&#60;zestaw&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/assembly-element-clickonce-deployment)|Wymagany. Element najwyższego poziomu.|`manifestVersion`|  
-|[&#60;element assemblyIdentity&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment)|Wymagany. Identyfikuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] podstawowego zestawu aplikacji.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[&#60;zestaw&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/assembly-element-clickonce-deployment)|Wymagana. Element najwyższego poziomu.|`manifestVersion`|  
+|[&#60;element assemblyIdentity&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment)|Wymagana. Identyfikuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] podstawowego zestawu aplikacji.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
 |[&#60;trustinfo —&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/trustinfo-element-clickonce-application)|Identyfikuje wymagania dotyczące zabezpieczeń aplikacji.|Brak|  
-|[&#60;punkt wejścia&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/entrypoint-element-clickonce-application)|Wymagany. Określa punkt wejścia kodu aplikacji do wykonania.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
-|[&#60;zależności&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/dependency-element-clickonce-deployment)|Wymagany. Identyfikuje poszczególne zależności wymagane do uruchomienia aplikacji. Opcjonalnie określa zestawy, które muszą być preinstalowany.|Brak|  
-|[&#60;plik&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/file-element-clickonce-application)|Wymagany. Identyfikuje każdego pliku z systemem innym niż zestawu, który jest używany przez aplikację. Może zawierać składnika modelu COM (Object) izolacji dane skojarzone z plikiem.|`name`<br /><br /> `size`|  
+|[&#60;punkt wejścia&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/entrypoint-element-clickonce-application)|Wymagana. Określa punkt wejścia kodu aplikacji do wykonania.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
+|[&#60;zależności&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/dependency-element-clickonce-deployment)|Wymagana. Identyfikuje poszczególne zależności wymagane do uruchomienia aplikacji. Opcjonalnie określa zestawy, które muszą być preinstalowany.|Brak|  
+|[&#60;plik&#62; elementu &#40;aplikacji ClickOnce&#41;](/visualstudio/deployment/file-element-clickonce-application)|Wymagana. Identyfikuje każdego pliku z systemem innym niż zestawu, który jest używany przez aplikację. Może zawierać składnika modelu COM (Object) izolacji dane skojarzone z plikiem.|`name`<br /><br /> `size`|  
   
  Manifesty aplikacji dla rozwiązań pakietu Office ma następujący element w `co.v1` przestrzeni nazw.  
   
@@ -71,25 +71,25 @@ ms.lasthandoff: 04/16/2018
   
 |Element|Opis|Atrybuty|  
 |-------------|-----------------|----------------|  
-|[&#60;customHostSpecified&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customhostspecified-element-office-development-in-visual-studio.md)|Wymagany. Oznacza manifest w szczególności jako rozwiązania do pakietu Office.|Brak|  
-|[&#60;Dodatek&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Wymagany. Przechowuje punkty wejścia do jednej przestrzeni nazw.|Brak|  
-|[&#60;entrypointscollection —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypointscollection-element-office-development-in-visual-studio.md)|Wymagany. Grupuje wszystkie zestawy dla jednego lub więcej rozwiązań pakietu Office.|`id`|  
-|[&#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|Wymagany. Grupy wszystkie zestawy do uruchamiania rozwiązań pakietu Office.|Brak|  
-|[&#60;punkt wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Wymagany. Określa zestaw, do uruchamiania w rozwiązaniach pakietu Office.|`class`<br /><br /> `contract`|  
-|[&#60;Zaktualizuj&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Wymagany. Konfiguruje aktualizacje dla rozwiązania.|`enabled`<br /><br /> `expiration`|  
-|[&#60;postactions —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|Opcjonalny. Grupy wszystkie po wdrożeniu akcje, które uruchamiane po zainstalowaniu rozwiązań pakietu Office.|Brak|  
-|[&#60;postAction&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|Opcjonalny. Określa akcję po wdrożeniu.|Brak|  
-|[&#60;postactiondata —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|Opcjonalny. Konfiguruje danych dotyczących akcji po wdrożeniu.|Brak|  
-|[&#60;Aplikacja&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md)|Wymagany. Koduje informacje specyficzne dla aplikacji do jednego węzła.|Brak|  
-|[&#60;Dostosowywanie&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|Wymagany. Przechowuje wszystkie informacje specyficzne dla hosta aplikacji w oddzielnych przestrzeni nazw.|Brak|  
-|[&#60;Dostosowywanie&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Wymagany. Przechowuje informacje specyficzne dla hosta aplikacji w oddzielnych przestrzeni nazw.|`xmlns`|  
+|[&#60;customHostSpecified&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customhostspecified-element-office-development-in-visual-studio.md)|Wymagana. Oznacza manifest w szczególności jako rozwiązania do pakietu Office.|Brak|  
+|[&#60;Dodatek&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Wymagana. Przechowuje punkty wejścia do jednej przestrzeni nazw.|Brak|  
+|[&#60;entrypointscollection —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypointscollection-element-office-development-in-visual-studio.md)|Wymagana. Grupuje wszystkie zestawy dla jednego lub więcej rozwiązań pakietu Office.|`id`|  
+|[&#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|Wymagana. Grupy wszystkie zestawy do uruchamiania rozwiązań pakietu Office.|Brak|  
+|[&#60;punkt wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Wymagana. Określa zestaw, do uruchamiania w rozwiązaniach pakietu Office.|`class`<br /><br /> `contract`|  
+|[&#60;Zaktualizuj&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Wymagana. Konfiguruje aktualizacje dla rozwiązania.|`enabled`<br /><br /> `expiration`|  
+|[&#60;postactions —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|Opcjonalna. Grupy wszystkie po wdrożeniu akcje, które uruchamiane po zainstalowaniu rozwiązań pakietu Office.|Brak|  
+|[&#60;postAction&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|Opcjonalna. Określa akcję po wdrożeniu.|Brak|  
+|[&#60;postactiondata —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|Opcjonalna. Konfiguruje danych dotyczących akcji po wdrożeniu.|Brak|  
+|[&#60;Aplikacja&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md)|Wymagana. Koduje informacje specyficzne dla aplikacji do jednego węzła.|Brak|  
+|[&#60;Dostosowywanie&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|Wymagana. Przechowuje wszystkie informacje specyficzne dla hosta aplikacji w oddzielnych przestrzeni nazw.|Brak|  
+|[&#60;Dostosowywanie&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Wymagana. Przechowuje informacje specyficzne dla hosta aplikacji w oddzielnych przestrzeni nazw.|`xmlns`|  
 |[&#60;dokument&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md)|Wymagane tylko w przypadku rozwiązania na poziomie dokumentu. Przechowuje informacje dotyczące dostosowywania.|`solutionId`|  
 |[&#60;appAddin&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Wymagane tylko w przypadku rozwiązania na poziomie aplikacji. Przechowuje informacje dotyczące dostosowywania.|`application`<br /><br /> `loadBehavior`<br /><br /> `keyName`|  
-|[&#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Opcjonalny. Przechowuje nazwę dodatku VSTO, który pojawia się na liście zainstalowanych dodatków VSTO.|Brak|  
+|[&#60;friendlyName&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Opcjonalna. Przechowuje nazwę dodatku VSTO, który pojawia się na liście zainstalowanych dodatków VSTO.|Brak|  
 |[&#60;Opis elementu&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Wymagany tylko dla dodatków VSTO. Przechowuje opis wyświetlany na liście zainstalowanych programów.|Brak|  
 |[&#60;formregions —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Wymagany tylko dla dodatków VSTO programu Outlook, które obejmują regionów formularzy.|Brak|  
 |[&#60;formRegion&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|Wymagany tylko dla dodatków VSTO programu Outlook, które obejmują regionów formularzy.|`Name`|  
-|[&#60;vstoruntime —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Wymagany. W tym artykule opisano określonej wersji programu Visual Studio Tools for Office runtime, która jest obsługiwana przez rozwiązanie Office.|`release`<br /><br /> `version`<br /><br /> `supportUrl`|  
+|[&#60;vstoruntime —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Wymagana. W tym artykule opisano określonej wersji programu Visual Studio Tools for Office runtime, która jest obsługiwana przez rozwiązanie Office.|`release`<br /><br /> `version`<br /><br /> `supportUrl`|  
   
 ## <a name="remarks"></a>Uwagi  
  Można ręcznie edytować aplikację i manifesty wdrożenia w rozwiązaniach pakietu Office. Następnie należy ponownie podpisać aplikację i manifesty wdrożenia przy użyciu Generowanie manifestu i edytowania narzędzia (mage.exe i mageui.exe). Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  

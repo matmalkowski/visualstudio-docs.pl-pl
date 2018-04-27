@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Kod linting R w programie Visual Studio
 
-Linting jest procesem, która analizuje kod, aby odkryć potencjalne błędy, formatowanie i innych szumu kodu, takie jak fałszywe odstępu. Linting pomaga również w zachęca niektórych Konwencji kodowania, takich jak identyfikatory nazewnictwa, która jest bardzo pomocne w obrębie zespołów i innych sytuacjach współpracy.
+Linting analizuje kod, aby odkryć potencjalne błędy, formatowanie i innych szumu kodu, takie jak fałszywe odstępu. Linting pomaga również w zachęca niektórych Konwencji kodowania, takich jak nazewnictwa identyfikatorów. Takie konwencje są pomocne w obrębie zespołów i innych sytuacjach współpracy.
 
 R narzędzi dla programu Visual Studio (RTVS) zawiera wbudowane linting R z zachowaniem jest kontrolowany za pomocą różnych opcji opisanych w tym artykule. Te opcje można znaleźć w **Narzędzia > Opcje > Edytor tekstu > R > wierszu**.
 
@@ -32,7 +30,7 @@ Po włączeniu linting jest stosowana w edytorze podczas pisania. Problemy są w
 
 ![Przykłady linting dla kodu języka R](media/linting-01.png)
 
-Często Zmień opcje linting zależnie od potrzeb projektu lub pliku. Na przykład użyć przykładowego kodu z kursu online `=` zamiast `<-` wraz z identyfikatory przypadku Pascal. Taki kod może wyświetlić częste linting ostrzeżenia, ponieważ domyślne opcje linting Flaga tych przypadkach. Podczas pracy z kodu, a następnie, możesz po prostu można wyłączyć opcji zamiast poświęcany czas korygowanie każde wystąpienie.
+Często Zmień opcje linting zależnie od potrzeb projektu lub pliku. Na przykład użyć przykładowego kodu z kursu online `=` zamiast `<-` wraz z identyfikatory przypadku Pascal. Taki kod może wyświetlić częste linting ostrzeżenia, ponieważ domyślne opcje linting Flaga tych przypadkach. Następnie podczas pracy z kodem, można wyłączyć opcji zamiast poświęcany czas korygowanie każde wystąpienie.
 
 ## <a name="assignment-group"></a>Przypisanie grupy
 

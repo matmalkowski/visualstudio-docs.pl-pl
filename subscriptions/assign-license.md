@@ -9,11 +9,11 @@ description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisywanie licencji w portalu administratora subskrypcji programu Visual Studio
 
@@ -30,10 +30,10 @@ Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, można 
 
 3.  Wprowadź informacje do pól formularza dla nowych subskrybentów. Jeśli organizacja korzysta z usługi Azure Active Directory, w tym polu działa jako funkcja wyszukiwania: wyszukiwanie osób w bieżącym katalogu, można wybrać użytkownika w wynikach wyszukiwania. Po wybraniu tej osoby ich nazw, logowania poczty e-mail i powiadomienie e-mail zostaną wypełnione automatycznie zgodnie z poniższą. 
 
-    Jeśli Twoja organizacja ma inny adres e-mail do odbierania wiadomości e-mail niż używanego do logowania, istnieje możliwość wprowadzania go tutaj. Wybierz hiperłącze, które wskazuje "Inny adres e-mail dla komunikacji niż logowania?". 
+    Jeśli Twoja organizacja nie używa usługi Azure Active Directory (Azure AD), ale ma inny adres e-mail do odbierania wiadomości e-mail niż używanego do logowania, istnieje możliwość wprowadzania go tutaj. Wybierz hiperłącze z etykietą "Dodaj inny adres e-mail do odbierania komunikacji". 
 
     **Dostęp do plików do pobrania:**  
-    Jeśli chcesz, aby ten subskrybent ma nieprawidłowy plików do pobrania oprogramowania podczas logowania się do [Portal subskrypcji w usłudze Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się, że jest zaznaczone pole pliki do pobrania. Jeśli wybierzesz zaznaczenie tego pola wyboru, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści zawarte w subskrypcji. 
+    Jeśli chcesz, aby ten subskrybent ma nieprawidłowy plików do pobrania oprogramowania podczas logowania się do [Portal subskrypcji w usłudze Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), upewnij się pozostawić Przełącz pliki do pobrania włączone. Jeśli chcesz wyłączyć pliki do pobrania, użytkownik nie ma dostępu do plików do pobrania oprogramowania, ale nadal będzie miał dostęp do wszystkich innych korzyści zawarte w subskrypcji. 
     
     Po zakończeniu wybierania opcji dla tego subskrybenta, kliknij przycisk **Dodaj**.
 
@@ -45,7 +45,7 @@ Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, można 
     ![Subskrybent dodane](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Przydziały zbiorcze
-1.  Aby dodać jednocześnie wiele subskrybentów, przejdź do **subskrybentów** kartę. Na Wstążce u góry kliknij **Dodawanie zbiorcze**. 
+1.  Aby dodać jednocześnie wiele subskrybentów, przejdź do **Zarządzanie subskrybentów** kartę. Na Wstążce u góry kliknij **Dodawanie zbiorcze**. 
 
     ![Dodawanie zbiorcze](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ Jeśli masz dostępnych licencji dla subskrypcji programu Visual Studio, można 
 
     ![Przekaż wielu subskrybentów](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  W arkuszu kalkulacyjnym programu Excel Wypełnij pola o informacje dla użytkowników indywidualnych, które chcesz przypisać subskrypcje. Odwołanie pole jest opcjonalne. Jeśli wypełniony dowolnej części szablonu nieprawidłowo, powinien zostać wyświetlony komunikat o błędzie opisujący problem. Zapisz plik na dysku twardym, jeśli zostaną wykonane.
+3.  W arkuszu kalkulacyjnym programu Excel Wypełnij pola o informacje dla użytkowników indywidualnych, które chcesz przypisać subskrypcje. Odwołanie pole jest opcjonalne. Jeśli wypełniony dowolnej części szablonu nieprawidłowo, powinien zostać wyświetlony komunikat o błędzie opisujący problem. Zapisz plik lokalnie wykonać jeden raz.
 **W celu zapewnienia sprawnego przekazywania, należy stosować poniższe najlepsze rozwiązania:**
     - Upewnij się, że żadne z pól formularza zawierać przecinków.
     - Usuwaj odstępy przed i po pól formularza, takich jak nazwy użytkowników.

@@ -11,15 +11,15 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Zdalne debugowanie kodu Python na platformie Azure
 
-[Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) umożliwia zdalne debugowanie kodu języka Python, który działa na usłudze Azure App Service. W odróżnieniu od prostego zdalnego debugowania, w tym scenariuszu komputer docelowy nie jest bezpośrednio dostępny za pośrednictwem protokołu TCP, więc program Visual Studio udostępnia serwer proxy, który opisuje protokół debugera za pośrednictwem protokołu HTTP. Projektów utworzonych za pomocą szablonu sieci Web automatycznie skonfigurować ten serwer proxy w wygenerowanym `web.debug.config` pliku. Zdalne debugowanie jest włączona podczas publikowania konfiguracji debugowania projektu, zgodnie z opisem na [publikowania w usłudze Azure App Service](python-web-application-project-templates.md#publishing-to-azure-app-service).
+[Python obsługi w programie Visual Studio](installing-python-support-in-visual-studio.md) umożliwia zdalne debugowanie kodu języka Python, który działa na usłudze Azure App Service. W odróżnieniu od prostego zdalnego debugowania, w tym scenariuszu komputer docelowy nie jest bezpośrednio dostępny za pośrednictwem protokołu TCP, więc program Visual Studio udostępnia serwer proxy, który opisuje protokół debugera za pośrednictwem protokołu HTTP. Projektów utworzonych za pomocą szablonu sieci Web automatycznie skonfigurować ten serwer proxy w wygenerowanym `web.debug.config` pliku. Zdalne debugowanie jest włączona podczas publikowania konfiguracji debugowania projektu, zgodnie z opisem w [publikowania w usłudze Azure App Service] (publishing-python-web-applications-do-azure-from-visual-studio.md.
 
 Ponieważ Azure debugowania zdalnego używa gniazda sieci web, sockets musi być włączony dla aplikacji usługi za pośrednictwem [portalu Azure](https://portal.azure.com) , przechodząc do **Ustawienia > Ustawienia aplikacji** i włączając  **Ustawienia ogólne > sieci Web sockets** do **na**, wybierając **zapisać** do zastosowania zmiany. (Należy pamiętać, że **debugowanie** ustawienia nie są stosowane do debugowania języka Python.)
 

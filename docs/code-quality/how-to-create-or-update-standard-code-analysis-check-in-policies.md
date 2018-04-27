@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
@@ -30,7 +30,7 @@ Zasad ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu zespo�
 
 - Dla kodu zarządzanego, ustawić zasady ewidencjonowania, określając *zestaw reguł* zawierającą podzbiór reguł analizy kodu.
 
-- Dla kodu C/C++ zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Można dodać przed procesora dyrektywy Aby wyłączyć określone zasady dla projektów poszczególnych kodu w projekcie zespołowym.
+- Dla kodu C/C++, Visual Studio 2017 wersji 15.6 i starszych wersjach zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Można dodać przed procesora dyrektywy Aby wyłączyć określone zasady dla projektów poszczególnych kodu w projekcie zespołowym. W 15.7 i nowszych można użyć **/ analyze: zestaw reguł** Aby określić, które reguł do uruchomienia. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do określania reguł C++ do uruchomienia](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 Po określeniu zasad ewidencjonowania dla zarządzanego kodu członków zespołu można synchronizować swoje ustawienia analizy kodu dla projektów kodu w ustawieniach zasad projektu zespołowego.
 

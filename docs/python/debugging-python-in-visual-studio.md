@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Debugowanie kodu języka Python
 
@@ -125,7 +125,7 @@ W tym momencie możesz sprawdzić stan programu, w tym stosu wywołań. Jednak p
 
 Pole wyboru dla każdej kontrolki wyjątku czy debugera *zawsze* dzieli, gdy jest on uruchamiany. Zaznacz to pole wyboru, jeśli chcesz podzielić częściej dla określonego wyjątku.
 
-Domyślnie większość wyjątki Przerwij, gdy nie można odnaleźć programu obsługi wyjątków w kodzie źródłowym. Aby zmienić to zachowanie, kliknij prawym przyciskiem myszy każdy wyjątek i zaznaczenie lub usunięcie zaznaczenia **kontynuować po nieobsługiwany w kodzie użytkownika**. Wyczyść to pole, jeśli chcesz podzielić rzadziej dla wyjątku.
+Domyślnie większość wyjątki Przerwij, gdy nie można odnaleźć programu obsługi wyjątków w kodzie źródłowym. Aby zmienić to zachowanie, kliknij prawym przyciskiem myszy każdy wyjątek i zmodyfikować **kontynuować po nieobsługiwany w kodzie użytkownika** opcji. Wyczyść to pole, jeśli chcesz podzielić rzadziej dla wyjątku.
 
 Aby skonfigurować wyjątek, który nie ma na tej liście, kliknij przycisk **Dodaj** przycisk, aby dodać go. Nazwa musi odpowiadać Pełna nazwa wyjątku.
 

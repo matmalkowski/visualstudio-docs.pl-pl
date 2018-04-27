@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7425755f72929cbf2574d6420d9c2ec4c62dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty języka Python w programie Visual Studio
 
@@ -41,9 +41,9 @@ Program Visual Studio oferuje różne szablony projektów języka Python, aby sz
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Dodawanie plików, przypisanie pliku uruchamiania oraz ustawienia środowiska
 
-Podczas opracowywania aplikacji zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików odbywa się przez kliknięcie prawym przyciskiem myszy projekt i wybierając **Dodaj > istniejący element...** . z którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj > Nowy element...** , który wyświetla okno dialogowe z różnych szablonów elementów. Szablony obejmują python puste pliki, python klasy testu jednostkowego i różnych plików związanych z aplikacjami sieci web. Można sprawdzić te opcje z projektu testowego, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
+Podczas opracowywania aplikacji zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików odbywa się przez kliknięcie prawym przyciskiem myszy projekt i wybierając **Dodaj** > **istniejący element** z którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj**  >  **Nowy element**, który wyświetla okno dialogowe z różnych szablonów elementów. Zgodnie z opisem na [elementu szablony](python-item-templates.md) odwołanie, dostępne są następujące opcje python puste pliki, python klasy testu jednostkowego i różnych plików związanych z aplikacjami sieci web. Można sprawdzić te opcje z projektu testowego, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
 
-Każdy projekt Python ma jeden plik przypisanej rozruchu, czcionką pogrubioną w Eksploratorze rozwiązań. Uruchamiania jest plik, który jest uruchamiany po rozpoczęciu debugowania (F5 lub **Debuguj > Rozpocznij debugowanie**) lub po uruchomieniu projektu w oknie interaktywnym (Shift + Alt + F5 lub **debugowania > wykonanie projektu w języku Python Interakcyjne**). Aby go zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik uruchamiania**.
+Każdy projekt Python ma jeden plik przypisanej rozruchu, czcionką pogrubioną w Eksploratorze rozwiązań. Uruchamiania jest plik, który jest uruchamiany po rozpoczęciu debugowania (F5 lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu w oknie interaktywnym (Shift + Alt + F5 lub  **Debugowanie** > **wykonania projektu w języku Python interakcyjne**). Aby go zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik uruchamiania**.
 
 > [!Tip]
 > Usuwanie plików wybranego uruchomienia z projektu i nie zaznaczenie nowego, Visual Studio będą wiedzieć, co Python pliku do uruchomienia z podczas próby uruchomienia projektu. W takim przypadku program Visual Studio 2017 wersji 15.6 i nowszych widoczny błąd; wcześniejszych wersji albo otwórz okno danych wyjściowych z interpreter języka Python uruchomiona, lub zobacz okno danych wyjściowych jest wyświetlana, ale następnie zniknąć niemal natychmiast. Jeśli wystąpiły którekolwiek z tych zachowań, sprawdź, czy plik przypisanej uruchamiania.
@@ -58,7 +58,7 @@ Nowy projekt zawsze jest skojarzony z domyślnego środowiska Python globalnego.
 
 ## <a name="project-templates"></a>Szablony projektu
 
-Program Visual Studio pozwala na wiele sposobów, aby skonfigurować projekt języka Python, od początku lub z istniejącego kodu. Aby użyć szablonu, wybierz **Plik > Nowy > Projekt...**  polecenie menu, kliknij prawym przyciskiem myszy rozwiązanie w Eksploratorze rozwiązań i wybierz **Dodaj > Nowy projekt...** , które przywołać **nowy projekt** okna dialogowego poniżej. Aby wyświetlić szablony specyficzne dla języka Python, wyszukaj frazę "Python" lub wybierz **zainstalowana > Python** węzła:
+Program Visual Studio pozwala na wiele sposobów, aby skonfigurować projekt języka Python, od początku lub z istniejącego kodu. Aby użyć szablonu, wybierz **pliku** > **nowy** > **projektu** polecenie menu, kliknij prawym przyciskiem myszy w Eksploratorze rozwiązań i wybierz rozwiązanie **Dodaj** > **nowy projekt**, które przywołać **nowy projekt** okna dialogowego poniżej. Aby wyświetlić szablony specyficzne dla języka Python, wyszukaj frazę "Python" lub wybierz **zainstalowana** > **Python** węzła:
 
 ![Okno dialogowe nowego projektu z szablonami Python](media/projects-new-project-dialog.png)
 
@@ -69,7 +69,7 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 | [Z istniejącego kodu języka Python](#creating-a-project-from-existing-files) | Tworzy projekt programu Visual Studio z istniejącego kodu języka Python w strukturze folderu.  |
 | Aplikacji Python | Struktura podstawowego projektu dla nowej aplikacji Python z plikiem źródłowym jednej, pusty. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](selecting-a-python-environment-for-a-project.md). |
 | [Usługi w chmurze Azure](python-azure-cloud-service-project-template.md) | Projekt usługi w chmurze Azure napisanych w języku Python. |
-| [Projekty sieci Web](python-web-application-project-templates.md) | Projekty oparte na różnych platform, na przykład Bottle, Flask, Django i Flask/Jade serwerów sieci web. |
+| [Projekty sieci Web](python-web-application-project-templates.md) | Projekty aplikacji sieci web, w oparciu o różnych platform, na przykład Bottle, Django i Flask. |
 | IronPython aplikacji | Podobnie jak szablon aplikacji Python, ale IronPython przez domyślne włączenie .NET międzyoperacyjnego i trybu mieszanego debugowania w językach .NET. |
 | Aplikacja IronPython WPF | Struktury projektu przy użyciu IronPython z plikami Windows Presentation Foundation XAML dla interfejsu użytkownika aplikacji. Program Visual Studio udostępnia projektanta XAML interfejsu użytkownika, związane z kodem mogą być napisane w języku Python i aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | Strony sieci Web IronPython Silverlight | Projekt IronPython, który jest uruchamiany w przeglądarce, za pomocą programu Silverlight. Kodu Python aplikacji znajduje się na stronie sieci web jako skryptu. Tag skryptu umożliwiającego ściąga dół niektórych kod JavaScript, która inicjuje IronPython działają w ramach Silverlight, z którego kodu Python mogą prowadzić interakcję z modelu DOM. |
@@ -80,7 +80,7 @@ Poniższa tabela zawiera podsumowanie szablony dostępne w Visual Studio 2017 r 
 > [!Note]
 > Ponieważ interpretacji języka Python, projektów języka Python w programie Visual Studio nie dają autonomicznego pliku wykonywalnego, podobnie jak inne projekty języka skompilowanych (C#, na przykład). Aby uzyskać więcej informacji, zobacz [pytania i odpowiedzi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-<a name="create-project-from-existing-files"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>Tworzenie projektu z istniejących plików
 

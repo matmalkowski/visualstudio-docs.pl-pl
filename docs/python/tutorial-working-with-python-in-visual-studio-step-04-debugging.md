@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d76ed2511ae5b8b51a08baf1e0c638c2e0fae73f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Uruchamianie kodu w debugerze
 
@@ -100,7 +100,7 @@ Oprócz zarządzania projektami, zapewniając zaawansowanej edycji środowisko i
 > [!Tip]
 > W niektórych sytuacjach, takich jak Niepowodzenie uruchamiania interpreter języka Python, w oknie danych wyjściowych może są wyświetlane tylko chwilę, a następnie Zamknij automatycznie bez co daje możliwość zobaczyć komunikaty błędów. Jeśli tak się stanie, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań wybierz **właściwości**, wybierz pozycję **debugowania** , a następnie dodaj `-i` do **argumenty Interpreter** pole. Ten argument powoduje, że interpreter przejść w trybie interakcyjnym, po zakończeniu programu, co utrzymywanie okna otwarte do momentu wprowadzenia Ctrl + Z Enter, aby wyjść.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Instalowanie pakietów w środowisku Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

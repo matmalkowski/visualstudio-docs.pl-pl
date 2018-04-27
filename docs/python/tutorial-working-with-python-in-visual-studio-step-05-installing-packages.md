@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d37eedca42119fbe91080aa0c62a0f60b576790
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
@@ -66,7 +66,7 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 
   ![Dane wyjściowe przykład matplotlib](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

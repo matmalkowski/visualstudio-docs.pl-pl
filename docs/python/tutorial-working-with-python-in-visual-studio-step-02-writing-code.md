@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 660c2d8cd1070fc368111113ef96ff6b1c7d1cf6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Pisania i uruchamiania kodu
 
@@ -85,7 +85,7 @@ Mimo że Eksplorator rozwiązań zarządza się pliki projektu *edytor* okno jes
 
 1. Ponownie uruchom program z Ctrl + F5 lub **Debuguj > Rozpocznij bez debugowanie**. Zamknij okno dane wyjściowe, gdy wszystko będzie gotowe.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [W oknie interaktywny REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
