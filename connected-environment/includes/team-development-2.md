@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 9da28d29dc431f2f6ec92a01c397244147042f12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/27/2018
+---
 2. Naciśnij klawisz F5 (lub typu `vsce up` okno terminalu) do uruchamiania usługi. W ten sposób automatycznie uruchomi go w naszym nowo wybrane miejsce `scott`. 
 1. Firma Microsoft można potwierdzić, uruchamiając `vsce list` ponownie. Po pierwsze można zauważyć wystąpienia `mywebapi` działa teraz w `scott` miejsca (w wersji `mainline` jest nadal uruchomiony, ale nie ma na liście). Po drugie, adres URL z punktem dostępu `webfrontend` jest prefiksem tekst "scott —". Ten adres URL jest unikatowy dla `scott` miejsce i oznacza, że żądania wysyłane na "scott URL" podejmie próbę pierwszy trasy w usługach `scott` miejsce i powróci do usług w `mainline` miejsca.
 
