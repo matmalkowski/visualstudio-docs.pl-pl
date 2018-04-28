@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abd25d382bf1313cd7cfe0e0d50eea7edec3e48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Skróty klawiaturowe dla programu Visual Studio
 
@@ -26,74 +26,74 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 
 |||
 |-|-|
-|Przeciągnij poza przestawne obszary kart|CTRL + kliknięcie dla wielokrotnego wyboru|
+|Przeciągnij poza przestawne obszary kart|**CTRL**+ kliknij wielokrotnego wyboru|
 |Maksymalizuj okno liczby zmiennoprzecinkowe|Kliknij dwukrotnie ikonę na pasku tytułu|
-|Ponownie dock przestawne okna|CTRL + paska tytułu dwukrotne kliknięcie|
-|Zamknij aktywny dokument.|Ctrl+F4|
-|Pokaż listę plików otwórz|Ctrl+Alt+Down|
-|Pokaż wszystkie okna liczby zmiennoprzecinkowe|Ctrl+Shift+M|
+|Ponownie dock przestawne okna|**CTRL**+ kliknij dwukrotnie pasek tytułu|
+|Zamknij aktywny dokument.|**CTRL**+**F4**|
+|Pokaż listę plików otwórz|**CTRL**+**Alt**+**w dół**|
+|Pokaż wszystkie okna liczby zmiennoprzecinkowe|**CTRL**+**Shift**+**M**|
 
 ## <a name="window-shortcuts"></a>Skróty okna
 
 |||
 |-|-|
-|Przenieś/Dock zmiennoprzecinkową systemu Windows|Win + Strzałka w lewo / Win + Strzałka w prawo|
-|Maksymalizowanie/zminimalizować systemu Windows|Win + Strzałka w górę / Win + Strzałka w dół|
-|Pokaż listę skoku|Win + Alt + N|
-|Uruchom nowe wystąpienie|Win + Shift + N|
-|Przełączanie między systemu Windows|Win + N|
+|Przenieś/Dock zmiennoprzecinkową systemu Windows|**Win**+**lewej** / **Win**+**prawej**|
+|Maksymalizowanie/zminimalizować systemu Windows|**Win**+**się** / **Win**+**w dół**|
+|Pokaż listę skoku|**Win**+**Alt**+**N**|
+|Uruchom nowe wystąpienie|**Win**+**Shift**+**N**|
+|Przełączanie między systemu Windows|**Win**+**N**|
 
 ## <a name="visual-studio-search"></a>Visual Studio wyszukiwania
 
 |||
 |-|-|
-|Wyszukiwanie Eksploratora rozwiązań|Ctrl+;|
-|Fokus miejsce w polu wyszukiwania w dowolnym oknie narzędzia|ALT + "po aktywowaniu okna narzędzi|
-|Szybkie uruchamianie|Ctrl+Q|
+|Wyszukiwanie Eksploratora rozwiązań|**CTRL**+**;**|
+|Fokus miejsce w polu wyszukiwania w dowolnym oknie narzędzia|**ALT** + **`** po aktywowaniu okna narzędzi|
+|Szybkie uruchamianie|**CTRL**+**Q**|
 |Wyniki zakresu szybkiego uruchamiania|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używanych<br />- @doc Otwieranie dokumentów|
-|Wyszukaj w opcji narzędzi|Ctrl+E|
+|Wyszukaj w opcji narzędzi|**CTRL**+**E**|
 
 ## <a name="editor-find"></a>Znajdź edytora
 
 |||
 |-|-|
-|Szybkie wyszukiwanie|Ctrl+F|
-|Szybkie szukanie następnego wyniku|Enter|
-|Szybkie Znajdź poprzedni wynik|Shift+Enter|
-|Szybkie szukanie rozwiń listy w dół|Alt+Down|
-|Odrzuć Znajdź|Esc|
-|Szybkie zamienianie|Ctrl+H|
-|Szybkie następnie zastąp tekst|Alt+R|
-|Szybkie zamienianie Zamień wszystkie|Alt+A|
-|Znajdź w plikach|Ctrl+Shift+F|
-|Zastąp w plikach|Ctrl+Shift+H|
+|Szybkie wyszukiwanie|**CTRL**+**F**|
+|Szybkie szukanie następnego wyniku|**Wprowadź**|
+|Szybkie Znajdź poprzedni wynik|**SHIFT**+**wprowadź**|
+|Szybkie szukanie rozwiń listy w dół|**ALT**+**w dół**|
+|Odrzuć Znajdź|**ESC**|
+|Szybkie zamienianie|**CTRL**+**H**|
+|Szybkie następnie zastąp tekst|**ALT**+**R**|
+|Szybkie zamienianie Zamień wszystkie|**ALT**+**A**|
+|Znajdź w plikach|**CTRL**+**Shift**+**F**|
+|Zastąp w plikach|**CTRL**+**Shift**+**H**|
 
 ##  <a name="BKMK_CodeEditor"></a> Edytor kodu
 
 |Polecenie|Skrót|Dostępność wersji|
 |-|-|-|
-|Tryb sugestii IntelliSense|Ctrl + Alt + spacja (przełącznik)||
-|Wymuś Pokaż IntelliSense|Ctrl+J||
-|Szybkie akcje|Ctrl+.||
-|Selektor wstawek|CTRL + K, X lub?, karta (VB)||
-|Otocz przez|Ctrl+K,S||
-|Pokaż szybkie informacje|Ctrl+K,I||
+|Tryb sugestii IntelliSense|**CTRL**+**Alt**+**miejsca** (przełącznik)||
+|Wymuś Pokaż IntelliSense|**CTRL**+**J**||
+|Szybkie akcje|**Ctrl**+**.**||
+|Selektor wstawek|**CTRL**+**K**,**X** lub **?**,**kartę** (VB)||
+|Otocz przez|**CTRL**+**K**,**S**||
+|Pokaż szybkie informacje|**CTRL**+**K**,**I**||
 |Przejdź do|**CTRL**+**,**||
-|Przejdź wyróżnione odwołań|Ctrl + Shift + w górę (poprzedni), Ctrl + Shift + Strzałka w dół (dalej)||
+|Przejdź wyróżnione odwołań|**CTRL**+**Shift**+**się** (poprzedni) **Ctrl**+**Shift** + **Dół** (dalej)||
 |Edytor powiększenia|**CTRL**+**Shift** + **>** (w) **Ctrl**+**Shift** + **<** (Out)||
-|Blokowanie wybór|Przytrzymaj **Alt** i przeciągnij mysz, klawiszy Shift + Alt + Strzałka||
-|Przenieś wiersz w górę lub w dół|Alt + Strzałka w górę / Alt + Strzałka w dół||
-|Zduplikowany wiersz|Ctrl+E,V|Visual Studio 2017 wersji 15,6|
+|Blokowanie wybór|Przytrzymaj **Alt** i przeciągnij mysz, **Shift**+**Alt**+**klawiszy strzałek**||
+|Przenieś wiersz w górę lub w dół|**ALT**+**się** / **Alt**+**w dół**||
+|Zduplikowany wiersz|**CTRL**+**E**,**V**|Visual Studio 2017 wersji 15,6|
 |Rozwiń wybór|**Shift**+**Alt**+**=**|Visual Studio 2017 wersji 15,5 cala|
 |Wybór umowy|**Shift**+**Alt**+**-**|Visual Studio 2017 wersji 15,5 cala|
-|Przejdź do definicji|F12||
-|Definicji wglądu|Alt+F12||
-|Przejdź do definicji stosu|Ctrl + Shift + 8 (wstecz), Ctrl + Shift + 7 (dalej)||
-|Zamknij okno Wybieranie definicji|Esc||
-|Podwyższ poziom okna definicji wglądu do karty zwykłego dokumentu|Ctrl+Alt+Home||
+|Przejdź do definicji|**F12**||
+|Definicji wglądu|**ALT**+**F12**||
+|Przejdź do definicji stosu|**CTRL**+**Shift**+**8** (kopia), **Ctrl**+**Shift** + **7** (dalej)||
+|Zamknij okno Wybieranie definicji|**ESC**||
+|Podwyższ poziom okna definicji wglądu do karty zwykłego dokumentu|**CTRL**+**Alt**+**strona główna**||
 |Przechodzenie między wiele definicji wglądu systemu windows|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+**=**||
 |Przechodzenie między wiele podglądu wyników|**F8** i **Shift**+**F8**||
-|Przełącz między okna edytora kodu i wgląd definicji|Shift + Esc||
+|Przełącz między okna edytora kodu i wgląd definicji|**SHIFT**+**Esc**||
 
 ## <a name="toolbars"></a>Paski narzędzi
 
@@ -108,17 +108,17 @@ Można przejść w programie Visual Studio łatwiej przy użyciu skróty klawiat
 
 |||
 |-|-|
-|Rozpocznij debugowanie|F5|
-|Zatrzymaj debugowanie|Shift+F5|
-|Uruchom ponownie debugowanie|Ctrl+Shift+F5|
-|Przekrocz|F10|
-|Wkrocz|F11|
-|Wyjdź|Shift+F11|
-|Uruchom do kursora|Ctrl+F10|
-|Ustaw następną instrukcję|Ctrl+Shift+F10|
-|Zestaw i Przełącz punkt przerwania|F9|
-|Wyłączenie punktu przerwania|Ctrl+F9|
-|Okno bezpośrednie|Ctrl+Alt+I|
+|Rozpocznij debugowanie|**F5**|
+|Zatrzymaj debugowanie|**SHIFT**+**F5**|
+|Uruchom ponownie debugowanie|**CTRL**+**Shift**+**F5**|
+|Przekrocz|**F10**|
+|Wkrocz|**F11**|
+|Wyjdź|**SHIFT**+**F11**|
+|Uruchom do kursora|**CTRL**+**F10**|
+|Ustaw następną instrukcję|**CTRL**+**Shift**+**F10**|
+|Zestaw i Przełącz punkt przerwania|**F9**|
+|Wyłączenie punktu przerwania|**CTRL**+**F9**|
+|Okno bezpośrednie|**CTRL**+**Alt**+**I**|
 |Tryb polecenia w oknie bezpośrednim|Typ ">"|
 |Wyczyść bufor okno bezpośrednie|> ze specyfikacją cls|
 |Wartość wydruku w oknie bezpośrednim|? nazwa_zmiennej|

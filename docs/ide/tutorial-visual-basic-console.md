@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Wprowadzenie do języka Visual Basic w programie Visual Studio
 
-W tym samouczku Visual Basic (VB), zostanie utworzone i uruchomione kilka aplikacji w innej konsoli za pomocą programu Visual Studio oraz Eksplorowanie niektóre funkcje programu Visual Studio [zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
+W tym samouczku Visual Basic (VB) można będzie użyć programu Visual Studio do tworzenia i uruchamiania kilka aplikacji w innej konsoli i eksplorować niektóre funkcje [programu Visual Studio zintegrowane środowisko programistyczne (IDE)](visual-studio-ide.md) podczas możesz to zrobić.
 
 Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
 
@@ -55,7 +55,7 @@ Najpierw utworzymy projekt aplikacji Visual Basic. Typ projektu zawiera wszystki
 
 1. Otwórz program Visual Studio 2017 r.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *HelloWorld*.  
 
@@ -74,8 +74,7 @@ Jeśli nie widzisz **aplikacji konsoli (.NET Core)** szablon projektu, możesz p
    ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
-
-1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje...** .
+1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 
 2. Uruchamia Instalator programu Visual Studio. Wybierz **aplikacji dla wielu platform .NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.   
 
@@ -107,8 +106,7 @@ Utwórz aplikację, która wyświetla monit o podanie nazwy użytkownika, a nast
 5. Naciśnij dowolny klawisz, aby zamknąć okno konsoli.
 
 ## <a name="create-a-calculate-this-application"></a>Utwórz aplikację "Obliczyć to"
-
-1. Otwórz program Visual Studio 2017 r, a następnie na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+1. Otwórz program Visual Studio 2017 r, a następnie na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 2. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji konsoli (.NET Core)**. Nadaj nazwę plikowi *CalculateThis*.  
 

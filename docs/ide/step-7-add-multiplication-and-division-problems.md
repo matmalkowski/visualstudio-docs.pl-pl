@@ -1,5 +1,5 @@
 ---
-title: Krok 7. Dodawanie problemów mnożenia i dzielenia
+title: 'Krok 7: Dodawanie problemów mnożenia i dzielenia'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbeeca2e53addab923fa3f62c661543497ea1f35
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c3c89def201f0045d561b180bd3af521ba4c2de
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7. Dodawanie problemów mnożenia i dzielenia
+# <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7: Dodawanie problemów mnożenia i dzielenia
 W siódmego części tego samouczka będziesz Dodawanie problemów mnożenia i dzielenia, ale najpierw zastanowić, jak wprowadzić zmiany. Należy wziąć pod uwagę kroku początkowego, które obejmuje przechowywanie wartości.  
 
-### <a name="to-add-multiplication-and-division-problems"></a>Aby dodać problemów mnożenia i dzielenia  
+## <a name="to-add-multiplication-and-division-problems"></a>Aby dodać problemów mnożenia i dzielenia  
 
 1.  Dodaj więcej zmiennych całkowitą w formularzu.  
 
@@ -38,9 +38,9 @@ W siódmego części tego samouczka będziesz Dodawanie problemów mnożenia i d
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
 
      Nie można łatwo wprowadzić znak mnożenia (x) i znak dzielenia (÷) przy użyciu klawiatury, więc Visual C# i Visual Basic Zaakceptuj znak gwiazdki (*) mnożenia i znaku ukośnika (/) dla dzielenia.  
-
-4.  Zmień ostatniej części programu obsługi zdarzeń Tick czasomierza tak, aby wypełnił w prawidłowa odpowiedź, kiedy skończy się czas.  
-
+  
+4.  Zmień ostatnia część czasomierza <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń, tak że wypełnia prawidłowa odpowiedź, kiedy skończy się czas.  
+  
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]
      [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
 
@@ -49,10 +49,10 @@ W siódmego części tego samouczka będziesz Dodawanie problemów mnożenia i d
      Możliwości kwizu musi odpowiedzieć w czterech problemów do ukończenia testu, jak przedstawiono na poniższej ilustracji.  
 
      ![Matematyczne kwizu czterech problemów](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Matematyczne kwizu czterech problemów  
-
-### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
-
+**Matematyczne kwizu** czterech problemów  
+  
+## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
+  
 -   Aby przejść do następnego kroku samouczka, zobacz [krok 8: dostosowywanie kwizu](../ide/step-8-customize-the-quiz.md).  
-
+  
 -   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodawanie problemu odejmowania](../ide/step-6-add-a-subtraction-problem.md).

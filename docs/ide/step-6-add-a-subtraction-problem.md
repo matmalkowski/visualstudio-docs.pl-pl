@@ -1,5 +1,5 @@
 ---
-title: Krok 6. Dodawanie problemu odejmowania
+title: 'Krok 6: Dodawanie problemu odejmowania'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,13 +11,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e73d32a3917003fe4c425406faadbc6e303f1eac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
+# <a name="step-6-add-a-subtraction-problem"></a>Krok 6: Dodawanie problemu odejmowania
 W szóstego części tego samouczka możesz Dodawanie problemu odejmowania i Dowiedz się, jak wykonywać następujące zadania:
 
 -   Przechowywanie wartości odejmowanie.
@@ -26,9 +26,9 @@ W szóstego części tego samouczka możesz Dodawanie problemu odejmowania i Dow
 
 -   Metoda, która sprawdza odpowiedzi, dzięki czemu sprawdza nowe problemu odejmowania zbyt aktualizacji.
 
--   Program obsługi zdarzeń Tick Twojej czasomierza należy zaktualizować tak, aby program obsługi zdarzeń wypełnia prawidłowa odpowiedź, kiedy skończy się czas.
+-   Aktualizacja Twojego czasomierza <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń, aby program obsługi zdarzeń wypełnia prawidłowa odpowiedź, kiedy skończy się czas.
 
-### <a name="to-add-a-subtraction-problem"></a>Aby dodać problemu odejmowania
+## <a name="to-add-a-subtraction-problem"></a>Aby dodać problemu odejmowania
 
 1.  Dodaj dwie zmienne całkowitą problemu odejmowania do formularza, między zmienne całkowitą problem dodawania i czasomierza. Kod powinien wyglądać następująco.
 
@@ -44,18 +44,19 @@ W szóstego części tego samouczka możesz Dodawanie problemu odejmowania i Dow
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
 
-     Aby zapobiec odpowiedzi ujemnych problemu odejmowania, ten kod używa `Next()` metody `Random` inaczej nieco klasę z jak problem dodawania. Po nadaniu `Next()` wartości metody dwa wybiera liczbę losową, która jest większa lub równa wartości pierwszego i mniejsza niż drugi. Poniższy kod wybierze liczbę losową z zakresu od 1 do 100 i zapisuje je w zmiennej minuend.
+     Aby zapobiec odpowiedzi ujemnych problemu odejmowania, ten kod używa <xref:System.Random.Next> metody <xref:System.Random> inaczej nieco klasę z jak problem dodawania. Po nadaniu `Next()` wartości metody dwa wybiera liczbę losową, która jest większa lub równa wartości pierwszego i mniejsza niż drugi. Poniższy kod wybierze liczbę losową z zakresu od 1 do 100 i zapisuje je w zmiennej minuend.
 
      [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]
 
-     Możesz wywołać `Next()` metody `Random` klasy, które użytkownik o nazwie "Generator losowy" we wcześniejszej części tego samouczka na wiele sposobów. Metody, które można wywołać w więcej niż jeden sposób są określane jako przeciążony i IntelliSense można użyć, aby zapoznać się z nimi. Spójrz ponownie na elemencie tooltip okna IntelliSense dla `Next()` metody.
+     Możesz wywołać `Next()` metody klasy Random nosi nazwę "Generator losowy" we wcześniejszej części tego samouczka na wiele sposobów. Metody, które można wywołać w więcej niż jeden sposób są określane jako przeciążony i IntelliSense można użyć, aby zapoznać się z nimi. Spójrz ponownie na elemencie tooltip okna IntelliSense dla `Next()` metody.
 
-     ![Etykietka narzędzia okna IntelliSense](../ide/media/express_overloads.png "Express_Overloads") tooltip okna IntelliSense
+     ![Etykietka narzędzia okna IntelliSense](../ide/media/express_overloads.png "Express_Overloads")
+**IntelliSense** okna etykietki narzędzia
 
-     Pokazuje tooltip **(+ 2 overload(s))**, co oznacza, że można wywołać `Next()` metody są dwa inne sposoby. Przeciążenia zawierają różne liczby i typy argumentów, aby mogły działać inaczej od siebie nawzajem. Na przykład metoda może przyjmować jeden argument, a jeden z jego przeciążenia może zająć się liczba całkowita i ciąg. Możesz wybrać poprawne przeciążenia oparte na co chcesz wykonania. Po dodaniu kod, aby `StartTheQuiz()` metody, więcej informacji jest wyświetlana w oknie IntelliSense jak wprowadzasz `randomizer.Next(`. Pozwala przełączać przeciążeń, wybierz klawiszy Strzałka w górę i Strzałka w dół, jak pokazano na poniższej ilustracji:
+     Pokazuje tooltip **(+ 2 overload(s))**, co oznacza, że można wywołać `Next()` metody są dwa inne sposoby. Przeciążenia zawierają różne liczby i typy argumentów, aby mogły działać inaczej od siebie nawzajem. Na przykład metoda może przyjmować jeden argument, a jeden z jego przeciążenia może zająć się liczba całkowita i ciąg. Możesz wybrać poprawne przeciążenia oparte na co chcesz wykonania. Po dodaniu kod, aby `StartTheQuiz()` metody, więcej informacji jest wyświetlana w oknie IntelliSense jak wprowadzasz `randomizer.Next(`. Aby przechodzić między przeciążeń, wybierz **Strzałka w górę** i **Strzałka w dół** kluczy, jak pokazano na poniższej ilustracji:
 
-     ![Przeciążenie następny&#40; &#41; metody w technologii IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") przeciążenia dla metody Next() w IntelliSense
+     ![Przeciążenie następny&#40; &#41; metody w technologii IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") przeciążenia dla **Next()** metody w **IntelliSense**
 
      W takim przypadku chcesz wybrać ostatniego przeciążenia, ponieważ można określić wartości minimalną i maksymalną.
 
@@ -75,10 +76,11 @@ W szóstego części tego samouczka możesz Dodawanie problemu odejmowania i Dow
 
      Program zawiera problemu odejmowania, jak przedstawiono na poniższej ilustracji:
 
-     ![Matematyczne testu z problemu odejmowania](../ide/media/express_addsubtract.png "Express_AddSubtract") kwizu matematyczne z problemu odejmowania
+     ![Matematyczne testu z problemu odejmowania](../ide/media/express_addsubtract.png "Express_AddSubtract")
+**kwizu matematyczne** z problemu odejmowania
 
-### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
+## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
--   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: problemów dodać mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
 
 -   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodaj wprowadź obsługi zdarzeń dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

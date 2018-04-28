@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 
@@ -42,11 +42,11 @@ Poniżej przedstawiono środków zaradczych tych problemów.
 
 ## <a name="reference-path-is-incorrect"></a>Ścieżka odwołania jest nieprawidłowy
 
-Jeśli projekty są udostępniane na różnych komputerach, niektórych odwołań może nie można odnaleźć, gdy składnik znajduje się w innym katalogu na każdym komputerze. Odwołania są przechowywane w obszarze nazwy pliku składnika (na przykład MyComponent). Po dodaniu odwołanie do projektu, lokalizacja folderu pliku składnika (na przykład C:\MyComponents\\) jest dołączany do **ReferencePath** właściwości projektu.
+Jeśli projekty są udostępniane na różnych komputerach, niektórych odwołań może nie można odnaleźć, gdy składnik znajduje się w innym katalogu na każdym komputerze. Odwołania są przechowywane w obszarze nazwy pliku składnika (na przykład *MyComponent*). Po dodaniu odwołanie do projektu, lokalizacja folderu pliku składnika (na przykład *C:\MyComponents*) jest dołączany do **ReferencePath** właściwości projektu.
 
-Po otwarciu projektu próbuje zlokalizować te pliki składnika przeszukując katalogi w ścieżce odwołania. Jeśli projekt zostanie otwarty na komputerze, który przechowuje składnika w innym katalogu, takie jak D:\MyComponents\\, nie można odnaleźć odwołania i pojawia się błąd na liście zadań.
+Po otwarciu projektu próbuje zlokalizować te pliki składnika przeszukując katalogi w ścieżce odwołania. Jeśli projekt zostanie otwarty na komputerze, który przechowuje składnika w innym katalogu, takie jak *D:\MyComponents*, nie można odnaleźć odwołania i pojawia się błąd w **listy zadań**.
 
-Aby rozwiązać ten problem, można usunąć uszkodzone odwołanie i zastąp go za pomocą okna dialogowego Dodaj odwołanie. Innym rozwiązaniem jest użycie **ścieżkę odwołania** element na stronach właściwości projektu i zmodyfikować folderów na liście do punktu w poprawnych lokalizacjach. **Ścieżkę odwołania** właściwości jest trwały dla każdego użytkownika, na każdym komputerze. W związku z tym modyfikowanie ścieżce odwołania nie wpływa na innych użytkowników projektu.
+Aby rozwiązać ten problem, możesz usunąć uszkodzone odwołanie i zastąp go przy użyciu **Dodaj odwołanie** okno dialogowe. Innym rozwiązaniem jest użycie **ścieżkę odwołania** element na stronach właściwości projektu i zmodyfikować folderów na liście do punktu w poprawnych lokalizacjach. **Ścieżkę odwołania** właściwości jest trwały dla każdego użytkownika, na każdym komputerze. W związku z tym modyfikowanie ścieżce odwołania nie wpływa na innych użytkowników projektu.
 
 > [!TIP]
 > Odwołania projektu do projektu nie ma tych problemów. Z tego powodu ich używać zamiast odwołania do pliku, jeśli to możliwe.

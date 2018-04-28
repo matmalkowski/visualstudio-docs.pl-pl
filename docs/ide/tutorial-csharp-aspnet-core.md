@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Wprowadzenie do języka C# i ASP.NET w programie Visual Studio
 W tym samouczku środowiska deweloperskiego C# przy użyciu platformy ASP.NET Core za pomocą programu Visual Studio będzie utworzenia aplikacji sieci web platformy ASP.NET Core C#, Dodaj do niej kod, Eksploruj niektóre funkcje IDE i uruchom aplikację.
 
 Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stronę, aby zainstalować ją bezpłatnie.
@@ -42,7 +42,7 @@ Najpierw utworzysz projekt platformy ASP.NET Core. Typ projektu zawiera wszystki
 
 1. Otwórz program Visual Studio 2017 r.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu...** .
+2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
 
 3. W **nowy projekt** okno dialogowe w lewym okienku rozwiń **Visual C#**, rozwiń węzeł **sieci Web**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET Core**, nadaj nazwę plikowi *MyCoreApp*, a następnie wybierz pozycję **OK**.   
 
@@ -61,7 +61,7 @@ Jeśli nie widzisz **aplikacji sieci Web platformy ASP.NET Core** szablon projek
    ![Obciążenie wiele platform .NET core w Instalatorze programu Visual Studio](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
-1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje...** .
+1. Anuluj poza **nowy projekt** okna dialogowego polu, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 
 2. Uruchamia Instalator programu Visual Studio. Wybierz **ASP.NET i sieć web development** obciążenia, a następnie wybierz pozycję **Modyfikuj**.   
 
@@ -86,15 +86,15 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
     ![Eksplorator rozwiązań ASP.NET w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Otwórz **HomeController.cs** plik z **kontrolerów** folderu.
+1. Otwórz *HomeController.cs* plik z **kontrolerów** folderu.
 
       ![Pliku HomeController.cs w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Widok **HomeController.cs**
+2. Widok *HomeController.cs*
 
   ![HomeController.cs w oknie kodu programu Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Projekt ma również **widoków** folder zawierający innych folderach, które mapują na każdym kontrolerze (oraz jednego dla **Shared** widoków). Na przykład, Wyświetl plik CSHTML (rozszerzenia HTML) dla **domowej/o** ścieżka byłaby w **Views/Home/About.cshtml**. Otwórz ten plik.
+4. Projekt ma również **widoków** folder zawierający innych folderach, które mapują na każdym kontrolerze (oraz jednego dla **Shared** widoków). Na przykład, Wyświetl plik CSHTML (rozszerzenia HTML) dla *domowej/o* ścieżka byłaby w *Views/Home/About.cshtml*. Otwórz ten plik.
 
   ![Plik About.cshtml w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -105,11 +105,11 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
  >[!NOTE]
  > Aby dowiedzieć się więcej na ten temat, zobacz [wprowadzenie do języka C# i ASP.NET przy użyciu składni Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) strony.
 
-6. Rozwiązanie zawiera także **wwwroot** folder główny witryny sieci web. Możesz umieścić zawartości statycznej witryny, takiej jak CSS, obrazy i biblioteki języka JavaScript bezpośrednio w ścieżkach mają one znajdować się w po wdrożeniu lokacji.
+6. Rozwiązanie zawiera także *wwwroot* folder główny witryny sieci web. Możesz umieścić zawartości statycznej witryny, takiej jak CSS, obrazy i biblioteki języka JavaScript bezpośrednio w ścieżkach mają one znajdować się w po wdrożeniu lokacji.
 
  ![folder Wwwroot w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. Dostępne są także różne pliki konfiguracji, które służą do zarządzania projektu, jego pakietów i aplikacji w czasie wykonywania. Na przykład domyślna aplikacja [konfiguracji](/aspnet/core/fundamentals/configuration) są przechowywane w **appsettings.json**. Jednak można zastąpić niektórych lub wszystkich tych ustawień na podstawie na środowisku, takich jak zapewniając **appsettings. Development.JSON** plik **programowanie** środowiska.
+7. Dostępne są także różne pliki konfiguracji, które służą do zarządzania projektu, jego pakietów i aplikacji w czasie wykonywania. Na przykład domyślna aplikacja [konfiguracji](/aspnet/core/fundamentals/configuration) są przechowywane w *appsettings.json*. Jednak można zastąpić niektórych lub wszystkich tych ustawień na podstawie na środowisku, takich jak zapewniając *appsettings. Development.JSON* plik **programowanie** środowiska.
 
  ![Pliki konfiguracji w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
  ![Wybierz informacje, w oknie przeglądarki dla aplikacji](../ide/media/csharp-aspnet-browser-page.png)
 
- Między innymi o stronę w przeglądarce renderuje tekst, który jest ustawiana w pliku HomeController.cs.
+ Między innymi **o** renderowania strony w przeglądarce tekst, który jest ustawiony w *HomeController.cs* pliku.
 
    ![Wyświetlanie tekstu na stronie informacje](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Zachowaj okna przeglądarki Otwórz i z powrotem do programu Visual Studio. Otwórz **Controllers/HomeController.cs** , jeśli nie jest jeszcze otwarty.
+1. Zachowaj okna przeglądarki Otwórz i z powrotem do programu Visual Studio. Otwórz *Controllers/HomeController.cs* , jeśli nie jest jeszcze otwarty.
 
  ![Otwórz plik HomeController.cs w Eksploratorze rozwiązań w programie Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. Ustaw punkt przerwania w pierwszym wierszu **o** metody. Aby to zrobić, kliknij na marginesie lub ustaw kursor na wiersza i naciśnij klawisz **F9**.
 
-  Ten wiersz ustawia niektóre dane w **ViewData** kolekcji, który jest renderowany na stronie CSHTML w **Views/Home/About.cshtml**.
+  Ten wiersz ustawia niektóre dane w **ViewData** kolekcji, który jest renderowany na stronie CSHTML w *Views/Home/About.cshtml*.
 
  ![Ustaw punkt przerwania w pierwszym wierszu metody informacje w About.cshtml.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Wróć do przeglądarki, a następnie odśwież stronę informacje. Spowoduje to wyzwolenie punktu przerwania w programie Visual Studio.
+1. Wróć do przeglądarki i Odśwież **o** strony. Spowoduje to wyzwolenie punktu przerwania w programie Visual Studio.
 
 1. W programie Visual Studio myszą **ViewData** element członkowski, aby wyświetlić jego dane.
 
@@ -148,7 +148,7 @@ Wzorzec MVC pomaga w tworzeniu aplikacji, które są łatwiejsze testowanie i ak
 
 1. Usuń punkt przerwania aplikacji przy użyciu tej samej metody używane ją dodać.
 
-1. Otwórz **Views/Home/About.cshtml**.
+1. Otwórz *Views/Home/About.cshtml*.
 
  ![Wybierz About.cshtml w Eksploratorze rozwiązań](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 

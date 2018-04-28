@@ -1,5 +1,5 @@
 ---
-title: 'Krok 11: Uruchom Program i próbowanie innych funkcji'
+title: 'Krok 11: Uruchom program i próbowanie innych funkcji'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,28 +11,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efcf0a09b8d148aa6e904eab57f509585b89f5ba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1d793e695f4a9b9fc44ef431b0e9a0ee07238f8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Uruchom Program i próbowanie innych funkcji
-Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła w elemencie PictureBox. Aby dowiedzieć się więcej, spróbuj zwiększyć program zmiana koloru formularza, dostosowywanie przycisków i pola wyboru i zmiana właściwości formularza.  
-
- Aby pobrać ukończoną wersję przykładu, zobacz [przykładowy samouczek pełny obraz podglądu](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-
+# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Uruchom program i próbowanie innych funkcji
+Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła <xref:System.Windows.Forms.PictureBox>. Aby dowiedzieć się więcej, spróbuj zwiększyć program zmiana koloru formularza, dostosowywanie przycisków i pola wyboru i zmiana właściwości formularza.  
+  
+ Aby pobrać ukończoną wersję przykładu, zobacz [pełnego obrazu podglądu samouczek próbki](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  
  ![łącze do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersję wideo tego tematu, zobacz [samouczek 1: Tworzenie podglądu obrazów w języku Visual Basic - 5 wideo](http://go.microsoft.com/fwlink/?LinkId=205216) lub [samouczek 1: Tworzenie podglądu obrazów w języku C# — Wideo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tych klipów wideo korzysta z wcześniejszej wersji programu Visual Studio, dlatego są niewielkie różnice w niektórych poleceń menu i inne elementy interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
-
-### <a name="to-run-your-program-and-set-the-background-color"></a>Aby uruchomić program i kolor tła  
-
-1.  Wybierz F5 lub na pasku menu **debugowania**, **Rozpocznij debugowanie**.  
-
+  
+## <a name="to-run-your-program-and-set-the-background-color"></a>Aby uruchomić program i kolor tła  
+  
+1.  Wybierz **F5**, lub na pasku menu wybierz **debugowania** > **Rozpocznij debugowanie**.  
+  
 2.  Przed otwarciem obrazu wybierz **kolor tła** przycisku. **Kolor** zostanie otwarte okno dialogowe.  
 
      ![Okno dialogowe kolorów](../ide/media/express_colordialog.png "Express_ColorDialog")  
-Okno dialogowe kolorów  
-
+**Kolor** — okno dialogowe 
+  
 3.  Wybierz kolor, aby ustawić kolor tła PictureBox. Należy dokładnie przejrzeć `backgroundButton_Click()` metodę, aby zrozumieć, jak to działa.  
 
     > [!NOTE]
@@ -40,24 +40,24 @@ Okno dialogowe kolorów
 
 4.  Wybierz **Wyczyść obraz** przycisk, aby upewnić się, usuwa ją. Następnie, zamknij program, wybierając **Zamknij** przycisku.  
 
-### <a name="to-try-other-features"></a>Aby wypróbować inne funkcje  
+## <a name="to-try-other-features"></a>Aby wypróbować inne funkcje  
 
 -   Zmiana koloru formularz i przyciski, za pomocą **BackColor** właściwości.  
 
 -   Dostosowywanie przycisków i pola wyboru przy użyciu **czcionki** i **ForeColor** właściwości.  
 
 -   Zmień formularza **FormBorderStyle** i **ControlBox** właściwości.  
-
--   Użyj formularza **AcceptButton** i **CancelButton** właściwości, gdy użytkownik wybierze klawisz ENTER lub ESC automatycznie wybrano tego przycisków. Ten program był otwarty **Otwieranie pliku** okno dialogowe, gdy użytkownik wybierze wprowadź i zamknąć okno, gdy użytkownik wybierze ESC.  
-
-### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
-
+  
+-   Użyj formularza **AcceptButton** i **CancelButton** właściwości dzięki tym przyciski są automatycznie wybranego gdy użytkownik wybierze **Enter** lub **Esc** klucza. Ten program był otwarty **Otwieranie pliku** okno dialogowe, gdy użytkownik wybierze **Enter** i zamknąć okno, gdy użytkownik wybierze **Esc**.  
+  
+## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
+  
 -   Aby dowiedzieć się więcej na temat programowania w programie Visual Studio, zobacz [koncepcje programowania](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
-
--   Aby dowiedzieć się więcej na temat języka Visual Basic, zobacz [opracowywanie aplikacji za pomocą Visual Basic](/dotnet/visual-basic/developing-apps/index).  
-
+  
+-   Aby dowiedzieć się więcej na temat języka Visual Basic, zobacz [opracowywania aplikacji za pomocą Visual Basic](/dotnet/visual-basic/developing-apps/index).  
+  
 -   Aby dowiedzieć się więcej na temat języka Visual C#, zobacz [wprowadzenie do języka C# i .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).  
-
--   Aby przejść do następnego samouczek, zobacz [samouczek 2: tworzenie upłynął matematyczne quizu](../ide/tutorial-2-create-a-timed-math-quiz.md).  
-
+  
+-   Aby przejść do następnego samouczek, zobacz [samouczek 2: tworzenie kwizu matematycznego](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+  
 -   Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 10: pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

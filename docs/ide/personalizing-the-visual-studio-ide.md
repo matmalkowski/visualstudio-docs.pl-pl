@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -40,7 +40,7 @@ Aby zmienić opcje kolorowania w edytorze, wpisz `environment` w **Szybkie uruch
 
 Możesz zmienić wielkość liter w menu głównym między **Pisownia tytułów** ("plik") i **wersaliki** ("plik"). Typ `environment` w **Szybkie uruchamianie** wybierz opcję **środowiska--> Ogólne**, a następnie zmień **dotyczą stylów wielkość tytułu paska menu** opcji.
 
-### <a name="customze-menus-and-toolbars"></a>Customze menu i pasków narzędzi
+### <a name="customize-menus-and-toolbars"></a>Dostosowywanie menu i pasków narzędzi
 
 Aby dodać lub usunąć elementy menu lub pasek narzędzi, zobacz [porady: Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 

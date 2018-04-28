@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
@@ -34,7 +34,7 @@ Parametry szablonu są zadeklarowane w formacie $*parametru*$. Na przykład:
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Aby włączyć podstawienie parametru w szablonach
 
-1. W pliku .vstemplate szablonu zlokalizuj element `ProjectItem`, który odpowiada elementowi, dla którego chcesz włączyć podmianę parametrów.
+1. W *.vstemplate* pliku szablonu, zlokalizuj `ProjectItem` element, który odpowiada elementu, dla którego chcesz włączyć wymiany parametru.
 
 1. Ustaw atrybut `ReplaceParameters` elementu `ProjectItem` na `true`.
 
@@ -63,7 +63,7 @@ Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mog�
 |SpecificSolutionName|Nazwa rozwiązania. W razie wybrania opcji „Utwórz katalog rozwiązania”, `SpecificSolutionName` ma nazwę rozwiązania. Jeżeli „Utwórz katalog rozwiązania” nie jest zaznaczone, `SpecificSolutionName` jest pusta.|
 |USERDOMAIN|Bieżąca domena użytkownika.|
 |Nazwa użytkownika|Bieżąca nazwa użytkownika.|
-|webnamespace|Nazwa bieżącej witryny sieci Web. Ten parametr jest używany w szablonie formularza sieci Web, aby zagwarantować unikalne nazwy klas. Jeśli witryna sieci Web jest w katalogu głównym serwera sieci Web, ten parametr szablonu jest rozpoznawany jako należący do katalogu głównego serwera sieci Web.|
+|webnamespace|Nazwa bieżącej witryny sieci web. Ten parametr jest używany w szablonie formularza sieci web w celu zagwarantowania unikatowe nazwy klas. W przypadku witryny sieci web w katalogu głównym serwera sieci web, ten parametr szablonu jest rozpoznawany jako katalog główny serwera sieci web.|
 |Roku|Bieżący rok w formacie RRRR.|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mog�
 
 Możesz określić własne parametry szablonu i wartości, oprócz parametry szablonu domyślnego zastrzeżone, które są używane podczas wymiany parametru. Aby uzyskać więcej informacji, zobacz [customparameters — element (szablony Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Przykład: Przy użyciu nazwy projektu dla nazwy pliku
+## <a name="example-use-the-project-name-for-a-file-name"></a>Przykład: Użyj nazwy projektu dla nazwy pliku
 
 Można określić nazwy zmiennej plików dla elementów projektu za pomocą parametru w `TargetFileName` atrybutu.
 
@@ -90,7 +90,7 @@ Poniższy przykład określa, że nazwa pliku wykonywalnego używa nazwy projekt
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Przykład: Przy użyciu nazwy projektu bezpieczne dla nazwy przestrzeni nazw
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Przykład: Użyj nazwy projektu bezpieczne dla nazwy przestrzeni nazw
 
 Aby użyć nazwy projektu bezpieczne dla przestrzeni nazw w pliku klasy C#, użyj następującej składni:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-W pliku .vstemplate szablonu projektu, obejmują `ReplaceParameters="true"` atrybutu, gdy odwołanie do pliku:
+W *.vstemplate* pliku szablonu projektu, obejmują `ReplaceParameters="true"` atrybutu, gdy odwołanie do pliku:
 
 ```xml
 <TemplateContent>
