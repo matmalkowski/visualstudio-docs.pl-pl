@@ -1,10 +1,10 @@
 # [Subskrypcje programu Visual Studio](index.md)
 ## Środowiska subskrybenta
 ### [Korzystanie z portalu dla subskrybentów](using-the-subscriber-portal.md)
-#### [Aktywacja subskrypcji detalicznych](activate-store-subscriptions.md)
+#### [Aktywowanie subskrypcji detalicznych](activate-store-subscriptions.md)
 #### [Logowanie](signing-in.md)
 #### [Alternatywne tożsamości](vs-alternate-identity.md)
-##### [Logowanie się przy użyciu aliasów](aliasing.md)
+##### [Logowanie przy użyciu aliasów](aliasing.md)
 #### [Zarządzanie subskrypcjami](manage-vs-subscriptions.md)
 ### [Pobieranie oprogramowania](subscriber-downloads.md)
 #### [Lista oprogramowania dostępnego do pobrania](software-download-list.md)
