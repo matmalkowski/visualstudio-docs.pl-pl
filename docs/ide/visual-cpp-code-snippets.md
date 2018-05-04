@@ -1,5 +1,5 @@
 ---
-title: Wstawki kodu języka Visual C++
+title: Wstawki kodu programu Visual C++ kod
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu programu Visual C++ kod
 
@@ -23,9 +23,9 @@ W programie Visual Studio można wstawki kodu Dodaj kod najczęściej używanych
 
 Możesz dodać fragment kodu w określonej lokalizacji w kodzie (wstawiania) lub przestrzenny niektórych zaznaczony kod z fragment kodu.
 
-## <a name="inserting-a-code-snippet"></a>Wstawianie wstawek kodu
+## <a name="insert-a-code-snippet"></a>Wstawianie wstawek kodu
 
-Aby wstawić fragment kodu, otwórz plik kodu C++ (.cpp lub .h), kliknij dowolne miejsce w pliku i wykonaj jedną z następujących czynności:
+Aby wstawić fragment kodu, otwórz plik kodu C++ (*.cpp* lub *.h*), kliknij dowolne miejsce w pliku, i wykonaj jedną z następujących czynności:
 
 - Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz **wstawić fragment kodu**
 
@@ -41,9 +41,9 @@ Powinna wyświetlić się lista dostępnych opcji, począwszy od **#if**. Po wyb
 #endif // 0
 ```
 
-Następnie można zastąpić 0 z warunkiem poprawne.
+Następnie można zastąpić **0** z warunkiem poprawne.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Otaczające zaznaczony kod za pomocą wstawek kodu
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Otaczające zaznaczony kod za pomocą wstawek kodu
 
 Aby użyć fragment kodu otaczającego zaznaczony kod, wybierz wiersz (lub wiele wierszy) i wykonaj jedną z następujących czynności:
 
@@ -51,7 +51,7 @@ Aby użyć fragment kodu otaczającego zaznaczony kod, wybierz wiersz (lub wiele
 
 - Z **Edytuj** > **IntelliSense** menu, wybierz opcję **z funkcji Otocz przez**
 
-- Przy użyciu klawiatury, naciśnij klawisz: **CTRL**+**K**+**S**
+- Przy użyciu klawiatury, naciśnij klawisz: **Ctrl**+**K**+**S**
 
 Wybierz **#if**. Powinny pojawić się dane podobne do poniższych:
 
@@ -71,7 +71,7 @@ Nazwy większości fragmentów kodu nie wymaga wyjaśnień, ale niektóre nazwy 
 
 ## <a name="class-vs-classi"></a>Klasa a classi
 
-**Klasy** fragment kodu zawiera definicję klasy o nazwie MyClass, destruktor, gdy definicje Konstruktor i destruktor znajdują się poza klasą i odpowiedni konstruktor domyślny:
+**Klasy** fragment kodu zawiera definicję klasy o nazwie `MyClass`, z odpowiednich domyślny konstruktor i destruktor, gdy definicje Konstruktor i destruktor znajdują się poza klasy:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-**Classi** fragment kodu udostępnia również definicję klasy o nazwie MyClass, ale domyślny konstruktor i destruktor są zdefiniowane w definicji klasy:
+**Classi** fragment kodu udostępnia również definicję klasy o nazwie `MyClass`, ale domyślny konstruktor i destruktor są zdefiniowane w definicji klasy:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Po wstawieniu fragmentu destruktora zapewnia destruktora SomeClass:
+Po wstawieniu fragmentu destruktora zapewnia destruktor dla elementu `SomeClass`:
 
 ```cpp
 class SomeClass {

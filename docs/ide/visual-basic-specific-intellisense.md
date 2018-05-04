@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1334cb7f890f3924ca0720b4704e573a67058356
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense dla plików kodu programu Visual Basic
 
@@ -38,7 +38,7 @@ Porady dotyczące składni Wyświetlanie składni instrukcji, która wpisywania.
 
 Uzupełnianie można wyłączyć domyślnie przez wyłączenie **automatyczna lista członków** z **ogólne** stronę właściwości w **Visual Basic** folderu.
 
-Uzupełnianie można wywołać ręcznie za pomocą listy elementów członkowskich, całe słowo lub ALT + Strzałka w prawo. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
+Uzupełnianie można wywołać ręcznie przez wywołanie listy elementów członkowskich, całe słowo lub **Alt**+**Strzałka w prawo**. Aby uzyskać więcej informacji, zobacz [Użyj IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense w strefie
 

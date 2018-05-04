@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-intellisense"></a>C#, IntelliSense
 
@@ -34,7 +34,7 @@ Listy uzupełniania IntelliSense w języku C# zawiera tokenów z listy elementó
 
 - Słowa kluczowe języka
 
-- Metody rozszerzeń
+- Metody rozszerzenia
 
 Listy uzupełniania w C# jest również inteligentne odfiltrować istotny tokenów i wybierz wstępnie tokenu na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania](#filtered-completion-lists).
 
@@ -53,7 +53,7 @@ W języku C# lista uzupełniania zawiera metody rozszerzenia, które znajdują s
 > [!NOTE]
 > Listy uzupełniania nie są wyświetlane wszystkie metody rozszerzenia dla <xref:System.String> obiektów.
 
-Metody rozszerzenia użyj ikony innego niż metody wystąpienia. Lista ikony na liście, zobacz [Widok klas i przeglądarka obiektów ― ikony](../ide/class-view-and-object-browser-icons.md). Gdy metody wystąpienia i metodę rozszerzenia o tej samej nazwie znajdują się w zakresie, na liście uzupełniania Wyświetla ikonę — metoda rozszerzenia.
+Metody rozszerzenia użyj ikony innego niż metody wystąpienia. Lista ikony na liście, zobacz [ikony w widoku klas i przeglądarka obiektów](../ide/class-view-and-object-browser-icons.md). Gdy metody wystąpienia i metodę rozszerzenia o tej samej nazwie znajdują się w zakresie, na liście uzupełniania Wyświetla ikonę — metoda rozszerzenia.
 
 ## <a name="filtered-completion-lists"></a>Filtrowane listy uzupełniania
 
@@ -67,11 +67,11 @@ IntelliSense usuwa niepotrzebne elementy członkowskie na liście uzupełniania 
 
 - **Inicjatory obiektów**: tylko elementy członkowskie, które mogą być inicjowane pojawi się na liście uzupełniania.
 
-- **New — słowo kluczowe**: podczas wpisywania `new` , a następnie naciśnij klawisz spacji, zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście, na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodach.
+- **New — słowo kluczowe**: podczas wpisywania `new` , a następnie naciśnij klawisz **miejsca**, zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście, na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodach.
 
-- **Enum — słowo kluczowe**: po naciśnięciu spację po znaku równości przydziału wyliczenia, zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście, na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania po słowie kluczowym return i po wprowadzeniu deklaracji.
+- **Enum — słowo kluczowe**: po naciśnięciu **miejsca** po znaku równości przydziału wyliczenia, zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście, na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania po słowie kluczowym return i po wprowadzeniu deklaracji.
 
-- **jako i operatory**: filtrowane zakończeniu zostanie wyświetlona lista automatycznie po naciśnięciu spację po wpisaniu `as` lub `is` — słowo kluczowe.
+- **jako i operatory**: filtrowane zakończeniu zostanie wyświetlona lista automatycznie po naciśnięciu **miejsca** po wpisaniu `as` lub `is` — słowo kluczowe.
 
 - **Zdarzenia**: podczas wpisywania słowa kluczowego `event`, na liście uzupełniania zawiera tylko typy delegatów.
 
@@ -83,7 +83,7 @@ Elementy członkowskie zaznaczone ostatnio w oknie podręcznym pamięta IntelliS
 
 ## <a name="override"></a>override
 
-Podczas wpisywania [zastąpienia](/dotnet/csharp/language-reference/keywords/override) , a następnie naciśnij klawisz spacji, IntelliSense wyświetla wszystkie elementy członkowskie prawidłową klasę podstawową, które można zmienić w oknie Lista rozwijana. Wpisywanie zwracany typ metody po `override` wyświetli monit o IntelliSense w celu wyświetlenia tylko metody, które zwracają tego samego typu. Gdy IntelliSense nie można odnaleźć dopasowań, wyświetla wszystkich elementów członkowskich klasy podstawowej.
+Podczas wpisywania [zastąpienia](/dotnet/csharp/language-reference/keywords/override) , a następnie naciśnij klawisz **miejsca**, IntelliSense wyświetla wszystkie elementy członkowskie prawidłową klasę podstawową, które można zmienić w oknie Lista rozwijana. Wpisywanie zwracany typ metody po `override` wyświetli monit o IntelliSense w celu wyświetlenia tylko metody, które zwracają tego samego typu. Gdy IntelliSense nie można odnaleźć dopasowań, wyświetla wszystkich elementów członkowskich klasy podstawowej.
 
 ## <a name="automatic-code-generation"></a>Automatyczne generowanie kodu
 
@@ -91,7 +91,7 @@ Podczas wpisywania [zastąpienia](/dotnet/csharp/language-reference/keywords/ove
 
 **Dodawanie using** operację funkcji IntelliSense automatycznie dodaje wymaganych `using` dyrektywy w pliku kodu. Ta funkcja pozwala utrzymać fokus na kod użytkownik zapisu, a nie wymaga przejścia do innej części kodu.
 
-Aby zainicjować przy użyciu operacji dodawania, umieść kursor na odwołanie do typu nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsoli i przy dodawaniu `XmlTextReader` do treści `Main` metody czerwona falista pojawia się w tym wierszu kodu, ponieważ nie można rozpoznać odwołania do typu. Następnie można wywoływać, Dodaj przy użyciu za pośrednictwem szybkich akcji. Szybkie działanie jest widoczna tylko w przypadku, gdy kursor znajduje się na typu niezwiązanego.
+Aby zainicjować **Dodawanie using** operacji pozycji kursora typu odwołania, który nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsoli i przy dodawaniu `XmlTextReader` do treści `Main` metody czerwona falista pojawia się w tym wierszu kodu, ponieważ nie można rozpoznać odwołania do typu. Następnie można wywołać **Dodawanie using** za pośrednictwem **szybkie akcje**. **Szybkie akcje** jest widoczny tylko wtedy, gdy kursor znajduje się na typu niezwiązanego.
 
 ![Dodaj obraz rozwinięte akcji przy użyciu, szybkie](../ide/media/addusing-quickaction.png "AddUsing QuickAction")
 
@@ -103,15 +103,15 @@ Kliknij ikonę żarówki, a następnie wybierz pozycję **przy użyciu zestawów
 
 ### <a name="implement-interface"></a>Implementowanie interfejsu
 
-IntelliSense udostępnia opcję, aby zaimplementować [interfejsu](/dotnet/csharp/language-reference/keywords/interface) podczas pracy w edytorze kodu. Zwykle aby prawidłowo zaimplementować interfejs, należy utworzyć deklaracji metody dla każdego członka interfejsu w klasie. Za pomocą funkcji IntelliSense, po wpisaniu nazwy interfejsu w deklaracji klasy, szybkie akcje żarówka jest wyświetlany. Żarówki zapewnia opcję automatycznie, zaimplementuj interfejs przy użyciu jawnych ani niejawnych nazewnictwa. W obszarze nazw jawne deklaracje metody przenoszenia Nazwa interfejsu; w obszarze nazw niejawne deklaracje metody nie wskazują interfejsu, do którego należą. Metody interfejsu jawnie nazwanej można uzyskać tylko za pośrednictwem interfejsu wystąpienia, a nie przez wystąpienie klasy. Aby uzyskać więcej informacji, zobacz [jawnej implementacji interfejsu](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense udostępnia opcję, aby zaimplementować [interfejsu](/dotnet/csharp/language-reference/keywords/interface) podczas pracy w edytorze kodu. Zwykle aby prawidłowo zaimplementować interfejs, należy utworzyć deklaracji metody dla każdego członka interfejsu w klasie. Za pomocą funkcji IntelliSense, po wpisaniu nazwy interfejsu w deklaracji klasy **szybkie akcje** żarówki jest wyświetlany. Żarówki zapewnia opcję automatycznie, zaimplementuj interfejs przy użyciu jawnych ani niejawnych nazewnictwa. W obszarze nazw jawne deklaracje metody przenoszenia Nazwa interfejsu; w obszarze nazw niejawne deklaracje metody nie wskazują interfejsu, do którego należą. Metody interfejsu jawnie nazwanej można uzyskać tylko za pośrednictwem interfejsu wystąpienia, a nie przez wystąpienie klasy. Aby uzyskać więcej informacji, zobacz [jawnej implementacji interfejsu](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 Implementowanie interfejsu wygeneruje minimalną liczbę wycinków kodu metody wymaganych do spełnienia interfejsu. Jeśli klasą podstawową implementuje części interfejsu, tych klas zastępczych nie są generowane.
 
 ### <a name="implement-abstract-base-class"></a>Implementowanie abstrakcyjnych klas podstawowych
 
-IntelliSense udostępnia opcję ułatwiają zaimplementowanie członkami abstrakcyjna klasa podstawowa automatycznie podczas pracy w edytorze kodu. Zazwyczaj do zaimplementowania abstrakcyjne elementy członkowskie klasy podstawowej wymaga tworzenia nowej definicji metody dla każdej metody abstrakcyjnej klasy podstawowej w klasie pochodnej. Za pomocą funkcji IntelliSense, po wpisaniu nazwy abstrakcyjnej klasy podstawowej w deklaracji klasy, szybkie akcje żarówka jest wyświetlany. Żarówki udostępnia opcję, aby automatycznie wdrożyć metod klasy podstawowej.
+IntelliSense udostępnia opcję ułatwiają zaimplementowanie członkami abstrakcyjna klasa podstawowa automatycznie podczas pracy w edytorze kodu. Zazwyczaj do zaimplementowania abstrakcyjne elementy członkowskie klasy podstawowej wymaga tworzenia nowej definicji metody dla każdej metody abstrakcyjnej klasy podstawowej w klasie pochodnej. Po wpisaniu nazwy abstrakcyjnej klasy podstawowej w deklaracji klasy przy użyciu funkcji IntelliSense, **szybkie akcje** żarówki jest wyświetlany. Żarówki udostępnia opcję, aby automatycznie wdrożyć metod klasy podstawowej.
 
-Klas zastępczych — metoda, które są generowane przez funkcję abstrakcyjna klasa podstawowa implementacja jest formowana przez fragment kodu zdefiniowane w pliku MethodStub.snippet. Wstawki kodu są można modyfikować. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md).
+Klas zastępczych metody, które są generowane przez **abstrakcyjna klasa podstawowa implementacja** funkcji jest formowana przez fragment kodu zdefiniowane w pliku *MethodStub.snippet*. Wstawki kodu są można modyfikować. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generowanie na podstawie użycia
 
@@ -119,9 +119,9 @@ Klas zastępczych — metoda, które są generowane przez funkcję abstrakcyjna 
 
 Gramatyczne jest wyświetlana pod każdym Niezdefiniowany identyfikator. Gdy wskaźnik myszy na podstawie identyfikatora, komunikat o błędzie jest wyświetlany w etykietce narzędzia. Aby wyświetlić odpowiednie opcje, użyj jednej z następujących procedur:
 
-- Kliknij przycisk Niezdefiniowany identyfikator. Szybkie akcje żarówka jest wyświetlany w obszarze identyfikator. Kliknij żarówkę.
+- Kliknij przycisk Niezdefiniowany identyfikator. A **szybkie akcje** żarówki jest wyświetlany w obszarze identyfikator. Kliknij żarówkę.
 
-- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl** + **.** (Ctrl + kropka).
+- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl**+**.** (**Ctrl** + kropka).
 
 - Kliknij prawym przyciskiem myszy Niezdefiniowany identyfikator, a następnie kliknij przycisk **szybkie akcje i Refaktoryzacje**.
 
@@ -135,27 +135,27 @@ Wyświetlane opcje mogą być następujące:
 
 - **Generowanie klas**
 
-- **Generowanie nowego typu...**  (dla klasy, struktury, interfejsu lub wyliczenia)
+- **Generowanie nowego typu** (dla klasy, struktury, interfejsu lub wyliczenia)
 
 ## <a name="generate-event-handlers"></a>Generowanie obsługi zdarzeń
 
 W edytorze kodu IntelliSense może pomóc dołączenie do pól zdarzenia metod (procedury obsługi zdarzeń).
 
-Podczas wpisywania `+=` po operator pole zdarzenia w pliku CS, IntelliSense wyświetla naciśnij opcję **kartę** klucza. Wstawia nowe wystąpienie klasy delegata, który wskazuje metodę obsługi zdarzenia.
+Podczas wpisywania `+=` operator po pole zdarzenia w *.cs* pliku, IntelliSense wyświetla naciśnij opcję **kartę** klucza. Wstawia nowe wystąpienie klasy delegata, który wskazuje metodę obsługi zdarzenia.
 
 ![Przycisk Automatyczny punktu zaczepienia się](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
-Jeśli naciśniesz **kartę**, IntelliSense automatycznie zakończeniu instrukcji i odwołanie do programu obsługi zdarzeń będzie wyświetlany jako zaznaczonego tekstu w edytorze kodu. Aby ukończyć podłączenie zdarzenia automatyczne, IntelliSense monit o naciśnięcie **kartę** klucz ponownie, aby utworzyć pusty klasy zastępczej dla programu obsługi zdarzeń.
+Jeśli naciśniesz **kartę**, IntelliSense automatycznie zakończeniu instrukcji i odwołanie do programu obsługi zdarzeń będzie wyświetlany jako tekstu zaznaczonego w edytorze kodu. Aby ukończyć podłączenie zdarzenia automatyczne, IntelliSense monit o naciśnięcie **kartę** klucz ponownie, aby utworzyć pusty klasy zastępczej dla programu obsługi zdarzeń.
 
 ![Generowanie obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
 > [!NOTE]
-> Jeśli nowe delegowanie, który jest tworzony przez funkcję IntelliSense odwołuje się do istniejącego programu obsługi zdarzeń, IntelliSense komunikuje się tych informacji w etykietce narzędzia. Następnie można zmodyfikować tego odwołania; tekst jest już zaznaczone w edytorze kodu. W przeciwnym razie podłączenie zdarzenia automatyczne zakończeniu w tym momencie.
+> Jeśli nowe delegowanie, który jest tworzony przez funkcję IntelliSense odwołuje się do istniejącego programu obsługi zdarzeń, IntelliSense komunikuje się tych informacji w etykietce narzędzia. Następnie można zmodyfikować tego odwołania; tekst została już wybrana w edytorze kodu. W przeciwnym razie podłączenie zdarzenia automatyczne zakończeniu w tym momencie.
 
 Jeśli naciśniesz **kartę**, IntelliSense zastępcze metodę o prawidłowej sygnaturze i umieszcza kursor w treści procedury obsługi zdarzenia.
 
 > [!NOTE]
-> Użyj **Przejdź wstecz** na **widoku** menu (**Ctrl** + **-**) aby powrócić do zdarzenia podłączenie instrukcji.
+> Użyj **Przejdź wstecz** na **widoku** menu (**Ctrl**+**-**) aby powrócić do zdarzenia podłączenie instrukcji.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE — omówienie
 
@@ -55,7 +55,7 @@ Można korzystać z usług platformy Azure dla aplikacji przy użyciu połączen
 
 Nasze współczesnym świecie dyski sieci web i Visual Studio ułatwia pisanie aplikacji dla niego. Można utworzyć aplikacji sieci web ASP.NET, Node.js, Python, JavaScript i TypeScript. Visual Studio rozumie struktur sieci web, takich jak kątową, jQuery, Express i inne. Oprogramowanie .NET Core i ASP.NET Core uruchomienia w systemach operacyjnych Windows, Mac i Linux. [Platformy ASP.NET Core](http://www.asp.net/core/overview) jest dużej aktualizacji MVC, WebAPI i SignalR i działa w systemie Windows, Mac i Linux.  Platformy ASP.NET Core ma został zaprojektowany od podstaw zapewnienie, że program .NET gotowa i zezwala na składanie stosu do tworzenia aplikacji sieci web opartych na chmurze nowoczesnych i usług.
 
-Aby uzyskać więcej informacji, zobacz [nowoczesnych narzędzi sieci Web](https://www.visualstudio.com/vs/modern-web-tooling/).
+Aby uzyskać więcej informacji, zobacz [nowoczesnych witryn sieci web narzędzia](https://www.visualstudio.com/vs/modern-web-tooling/).
 
 ### <a name="build-cross-platform-apps-and-games"></a>Tworzenie wieloplatformowych aplikacji i gier
 
@@ -93,7 +93,7 @@ Po uruchomieniu programu Visual Studio po raz pierwszy, można opcjonalnie Zalog
 
 Dobrym sposobem Dowiedz się więcej o coś jest jej używać! Załóżmy zajrzyj dostęp i utworzyć nowe, proste program.
 
-1. Otwórz program Visual Studio. W menu, wybierz **pliku** > **nowy** > **projektu...** .
+1. Otwórz program Visual Studio. W menu, wybierz **pliku** > **nowy** > **projektu**.
 
   ![Plik > Nowy projekt na pasku menu](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -181,7 +181,7 @@ Aby dać visual Omówienie programu Visual Studio, na poniższej ilustracji prze
 
 Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Visual Studio:
 
-- [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) pole wyszukiwania jest to dobry sposób na szybkie wyszukiwanie informacji w programie Visual Studio. Rozpocząć wpisywanie nazwy niezależnie od, którego szukasz, i Visual Studio listy wyników przyjmujących dokładnie której ma nastąpić przejście. Szybkie uruchamianie zawiera również linki, który uruchamia Instalator programu Visual Studio dla wszystkich obciążeń lub poszczególnych składników.
+- [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) pole wyszukiwania jest to dobry sposób na szybkie wyszukiwanie informacji w programie Visual Studio. Rozpocząć wpisywanie nazwy niezależnie od, którego szukasz, i Visual Studio listy wyników przyjmujących dokładnie której ma nastąpić przejście. **Szybkie uruchamianie** również zawiera łącza, który uruchamia Instalator programu Visual Studio dla wszystkich obciążeń lub poszczególnych składników.
 
   ![Pole wyszukiwania w usłudze szybkiego uruchamiania](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -215,15 +215,15 @@ Poniżej przedstawiono niektóre inne typowe funkcje wydajności w programie Vis
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzanie kodu źródłowego i współpracę z innymi osobami
 
-Możesz zarządzać kodu źródłowego w obsługiwanych przez dowolnego dostawcy, w tym GitHub repozytoriów Git. Lub użyj [programu Visual Studio Team Services (VSTS)](/vsts/index) do zarządzania kodu obok usterek i elementy pracy dla całego projektu. Zobacz [wprowadzenie do usługi Git i zespołu usług (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej o zarządzaniu repozytoriów Git w programie Visual Studio przy użyciu programu Team Explorer. Visual Studio ma również inne funkcje kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [nowe funkcje Git w programie Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Możesz zarządzać kodu źródłowego w obsługiwanych przez dowolnego dostawcy, w tym GitHub repozytoriów Git. Lub użyj [programu Visual Studio Team Services (VSTS)](/vsts/index) do zarządzania kodu obok usterek i elementy pracy dla całego projektu. Zobacz [wprowadzenie do usługi Git i zespołu usług (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej o zarządzaniu repozytoriów Git w programie Visual Studio przy użyciu programu Team Explorer. Visual Studio ma również inne funkcje kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [Git nowych funkcji w programie Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Team Services to usługa oparta na chmurze dla hostingu oprogramowania projektów i umożliwianie współpracy w zespołach. VSTS obsługuje systemów zarówno Git i kontroli źródła programu Team Foundation, a także Scrum, CMMI i Agile metodologii programowanie. Team Foundation wersji formantu (TFVC) używa pojedynczy serwer scentralizowane repozytorium do śledzenia i wersji plików. Lokalne zmiany są zawsze ewidencjonowane na centralnym serwerze, gdy inni deweloperzy mogą pobrać najnowsze zmiany.
 
 Team Foundation Server (TFS) jest Centrum zarządzania cyklem życia aplikacji dla programu Visual Studio. Dzięki temu wszyscy pracownicy z procesem tworzenia do udziału za pomocą jednego rozwiązania. TFS jest przydatne w przypadku za zarządzanie heterogenicznym zespołów i projektów.
 
-Jeśli masz konto usługi Visual Studio Team Services lub Team Foundation Server w sieci, należy się z nim połączyć za pomocą programu Team Explorer okna w programie Visual Studio. Z tego okna można sprawdzić kod do lub z kontroli źródła, zarządzania elementami pracy, kompilacji i rozpoczęcia pokoje zespołów dostępu oraz obszarów roboczych. Możesz otworzyć Team Explorer z **Szybkie uruchamianie** okno, lub w menu głównym z **widok, Team Explorer** lub **zespołu, zarządzanie połączeniami**.
+Jeśli masz konto usługi Visual Studio Team Services lub Team Foundation Server w sieci, należy się z nim połączyć za pośrednictwem **Team Explorer** okna w programie Visual Studio. Z tego okna można sprawdzić kod do lub z kontroli źródła, zarządzania elementami pracy, kompilacji i rozpoczęcia pokoje zespołów dostępu oraz obszarów roboczych. Możesz otworzyć **Team Explorer** z **Szybkie uruchamianie** okno, lub w menu głównym z **widoku** > **Team Explorer** lub **Zespołu** > **Zarządzanie połączeniami**.
 
-Na poniższej ilustracji przedstawiono okno programu Team Explorer rozwiązania, które znajduje się w VSTS.
+Poniższy obraz przedstawia **Team Explorer** okna dla rozwiązania, które znajduje się w VSTS.
 
 ![Program Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Chmura ma kluczowe znaczenie dla współczesnych świata w trybie online, a prog
 
 ![Podłączonych usług](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Wybieranie usługi na **usług połączonych** strony uruchomienie połączone Kreatora usługi, który służy do konfigurowania projektu i pliki do pobrania wymaganych pakietów NuGet i ułatwiają rozpoczęcie pracy kodowania z usługą.
+Wybieranie usługi na **usług połączonych** strony uruchamia **usług połączonych** uruchomić kreatora, który służy do konfigurowania projektu i pliki do pobrania wymaganych pakietów NuGet i ułatwiają rozpoczęcie kodowania przed Usługa.
 
-Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie Azure w ramach programu Visual Studio przy użyciu [Eksplorator chmury](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Eksplorator chmury zawiera zasoby platformy Azure w ramach kont zarządzanych w ramach subskrypcji Azure, które są rejestrowane w. Eksplorator chmury można uzyskać, wybierając **Azure programowanie** obciążenia w Instalatorze programu Visual Studio.
+Można wyświetlić i zarządzać zasobami w chmurze bazujących na platformie Azure w ramach programu Visual Studio przy użyciu [Eksplorator chmury](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Eksplorator chmury zawiera zasoby platformy Azure w ramach kont zarządzanych w ramach subskrypcji Azure, które są rejestrowane w. Możesz uzyskać **Eksplorator chmury** wybierając **Azure programowanie** obciążenia w Instalatorze programu Visual Studio.
 
 ![Eksplorator chmury](../ide/media/VSIDE_CloudExplorer.png)
 
-**W Eksploratorze serwera** ułatwia przeglądanie i zarządzanie wystąpień programu SQL Server i zasobami lokalnie, zdalnie i na witryny Salesforce.com, Office 365, Azure i witryn sieci Web. Aby otworzyć Eksploratora serwera, w menu głównym, wybierz **widoku** > **Eksploratora serwera**. Zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md) Aby uzyskać więcej informacji na temat używania Eksploratora serwera.
+**W Eksploratorze serwera** ułatwia przeglądanie i zarządzanie wystąpień programu SQL Server i zasobami lokalnie, zdalnie i na witryny Salesforce.com, Office 365, Azure i witryn sieci Web. Aby otworzyć **Eksploratora serwera**, w menu głównym wybierz **widoku** > **Eksploratora serwera**. Zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md) Aby uzyskać więcej informacji na temat używania Eksploratora serwera.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) jest wydajne środowisko projektowe dla programu SQL Server, bazy danych SQL Azure i usługi Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, obsługa i Refaktoryzuj baz danych. Możesz pracować z projektem bazy danych lub bezpośrednio z bazy danych połączonych wystąpienia na — lub poza siedzibą firmy.
 
@@ -261,7 +261,7 @@ Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobac
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Dowiedz się więcej i dowiedzieć się, jakie nowości
 
-Jeśli nie znasz programu Visual Studio przed, obejrzyj [uzyskać pracy programowania z użyciem programu Visual Studio](../ide/get-started-developing-with-visual-studio.md), lub sprawdź bezpłatnych kursów Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Jeśli chcesz wyewidencjonować nowe funkcje programu Visual Studio 2017, zobacz [What's New in Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
+Jeśli nie znasz programu Visual Studio przed, obejrzyj [rozpocząć wdrażanie z programem Visual Studio](../ide/get-started-developing-with-visual-studio.md), lub sprawdź bezpłatnych kursów Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Jeśli chcesz wyewidencjonować nowe funkcje programu Visual Studio 2017, zobacz [What's new in Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
 
 Gratulujemy ukończenia samouczka środowiska IDE programu Visual Studio! Mamy nadzieję, że znasz coś przydatne o pewnych jego najważniejszych funkcji.
 

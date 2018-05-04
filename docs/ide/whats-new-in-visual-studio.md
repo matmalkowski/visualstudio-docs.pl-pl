@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5cb7d3ce6ec3fd743d8f332b8df2148c7b29fe0f
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;nowego w Visual Studio 2017 r.
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.6 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -38,7 +38,7 @@ Oto ogólny — podsumowanie zmian, które wprowadziliśmy od poprzedniej wersji
 * **Programowanie AI**. Program Visual Studio Tools dla AI (**nowego 15,5 cala**), można użyć funkcji wydajności programu Visual Studio w celu przyspieszenia innowacji AI. Tworzenia, testowania i wdrażania głębokie Learning / AI rozwiązania, które bezproblemowo integrują się z usługi Azure Machine Learning eksperymenty niezawodne możliwości, takie jak przesyłanie Przygotowanie danych i zadania uczenia modelu niewidocznie do różnych obliczeniowe elementy docelowe. Visual Studio Tools for AI zapewnia obsługę niestandardowych metryk i uruchom śledzenie danych historycznych, które pozwolą powtarzalności nauki danych i inspekcji.
 
 > [!NOTE]
-> Aby uzyskać pełną listę nowych funkcji i możliwości w Visual Studio 2017 zobacz [bieżącej wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). Oraz rzut oka na oferty funkcji w przyszłych wersjach, zobacz [informacje o wersji zapoznawczej](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes).
+> Aby uzyskać pełną listę nowych funkcji i możliwości w Visual Studio 2017 zobacz [bieżące informacje o wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). Oraz rzut oka na oferty funkcji w przyszłych wersjach, zobacz [informacje o wersji zapoznawczej](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes).
 
 W tym bardziej szczegółowe informacje o niektórych najbardziej znaczące ulepszenia i nowe funkcje programu Visual Studio 2017 r.
 
@@ -74,14 +74,14 @@ Użytkownik może nie wylogowuj już, zbyt. Program Visual Studio nie będzie wy
 Nowe Centrum wydajności programu Visual Studio może pomóc Optymalizuj czas uruchamiania programu IDE. Centrum wydajności Wyświetla listę wszystkich rozszerzeń i okien narzędzi, które może to spowolnić uruchamiania IDE. Można go poprawić wydajność uruchomienia przez określenie rozpoczęcia rozszerzenia lub czy otwarty podczas uruchamiania narzędzia systemu windows.
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Szybsze ładowanie rozszerzeń na żądanie
-Visual Studio jest przeniesienie jej rozszerzenia (i Praca z rozszerzenia innych firm za), dzięki czemu są one ładowane na żądanie, a nie przy uruchamianiu IDE. Zastanawiasz się o tym, które rozszerzenia wpływ uruchamiania, ładowania rozwiązania i wpisując wydajności? Można wyświetlić te informacje w pomocy -> Zarządzanie wydajnością programu Visual Studio.
+Visual Studio jest przeniesienie jej rozszerzenia (i Praca z rozszerzenia innych firm za), dzięki czemu są one ładowane na żądanie, a nie przy uruchamianiu IDE. Zastanawiasz się o tym, które rozszerzenia wpływ uruchamiania, ładowania rozwiązania i wpisując wydajności? Można zobaczyć te informacje w **pomocy** > **zarządzanie wydajnością programu Visual Studio**.
 
   ![Opcje — okno dialogowe w programie Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "pomocy programu Visual Studio okno dialogowe — Zarządzanie wydajnością")
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Zarządzanie rozszerzeń z Menedżer roamingu rozszerzeń
 Jest łatwiejsze do skonfigurowania każdego środowiska programowania przy użyciu ulubionych rozszerzeń po zalogowaniu się do programu Visual Studio. Nowy Menedżer roamingu rozszerzeń przechowuje informacje o użyciu ulubionych rozszerzeń przez utworzenie zsynchronizowanej listy w chmurze.  
 
-Aby wyświetlić listę rozszerzeń programu Visual Studio, kliknij menu Narzędzia > rozszerzenia i aktualizacje, a następnie kliknij pozycję Menedżer roamingu rozszerzeń.
+Aby wyświetlić listę rozszerzeń programu Visual Studio, kliknij przycisk **narzędzia** > **rozszerzeń i aktualizacji**, a następnie kliknij przycisk **Menedżer roamingu rozszerzeń**.
 
 ![Visual Studio 2017 r - dialogowym rozszerzenia i aktualizacje](../ide/media/vs2017ide-extensions-and-updates.png "programu Visual Studio 2017 r - Narzędzia > dialogowym rozszerzenia i aktualizacje")
 
@@ -106,13 +106,13 @@ W Visual Studio Enterprise 2017 r. na żywo zapewnia zamieszkania wyniki testów
 
 Aby uzyskać więcej informacji, zobacz [testów jednostkowych wprowadzenie Live](../test/live-unit-testing-intro.md). Aby uzyskać listę nowe funkcje dodane w poszczególnych wersjach programu Visual Studio Enterprise 2017, zobacz [What's new in Live testów jednostkowych](../test/live-unit-testing-whats-new.md).
 
-#### <a name="setting-up-a-cicd-pipeline"></a>Konfigurowanie potoku CI/CD
+#### <a name="set-up-a-cicd-pipeline"></a>Konfigurowanie potoku CI/CD
 #### <a name="automated-testing"></a>Testowanie automatyczne
 Automatycznych testów jest kluczowym elementem żadnych potoku DevOps. Pozwala na spójne i niezawodnego testu i zwolnij rozwiązania na wiele krótszą cykle. Przepływy CI/CD (ciągłej integracji i ciągłego dostarczania) może sprawić, że większą wydajność procesu.
 
 Aby uzyskać więcej informacji na temat zautomatyzowanych testów, zobacz [CI/CD potoku dla testów automatycznych w DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) wpis w blogu.
 
-A, aby uzyskać więcej informacji na temat nowości [ciągłego dostarczania Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs rozszerzenia, zobacz [zatwierdzania bez obaw: Zatwierdź jakości kodu czasu](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) wpis w blogu.
+A, aby uzyskać więcej informacji na temat nowości [ciągłego dostarczania narzędzi dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs rozszerzenia, zobacz [zatwierdzić bez obaw: Zatwierdź jakości kodu czasu](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) wpis w blogu.
 
 ### <a name="visual-studio-ide-enhancements"></a>Ulepszenia usługi Visual Studio IDE
 #### <a name="use-new-refactorings"></a>Użyj nowej refaktoryzacje
@@ -137,15 +137,15 @@ Podczas pracy z projektu programu Visual Studio można skonfigurować i szybko p
 #### <a name="experience-improved-navigation-controls"></a>Środowisko ulepszone formanty nawigacji
 Środowisko nawigacji, aby pomóc Ci z zakresu od A do B z większego zaufania i przeszkadzał odświeżone.
 
-* **Nowość w 15.4**: **przejdź do definicji (Ctrl + kliknięcie lub F12)** &ndash; myszy użytkownicy mają łatwiejszy sposób, aby przejść do definicji elementu członkowskiego, naciskając klawisz **Ctrl** , a następnie klikając polecenie element członkowski . Naciśnięcie przycisku **Ctrl** i aktywowaniu symbol kodu zostanie underline go przekształcić łącza. Zobacz [przejdź do definicji i definicji wglądu](../ide/go-to-and-peek-definition.md) Aby uzyskać więcej informacji.  
+* **Nowość w 15.4**: **przejdź do definicji** (**Ctrl**+**kliknij** lub **F12**) &ndash; myszy użytkowników łatwiejsze mogą przejść do definicji elementu członkowskiego, naciskając klawisz **Ctrl** , a następnie klikając polecenie element członkowski. Naciśnięcie przycisku **Ctrl** i aktywowaniu symbol kodu zostanie underline go przekształcić łącza. Zobacz [przejdź do definicji i definicji wglądu](../ide/go-to-and-peek-definition.md) Aby uzyskać więcej informacji.  
 
-* **Przejdź do implementacji (Ctrl + F12)** &ndash; przechodzą z typu podstawowego lub Członkowskiego do jej różnych implementacji.
+* **Przejdź do implementacji** (**Ctrl**+**F12**) &ndash; przechodzą z typu podstawowego lub Członkowskiego do jej różnych implementacji.
 
-* **Przejdź do wszystkich (Ctrl + T lub Ctrl +)** &ndash; przejdź bezpośrednio do każdej deklaracji plik / / elementu członkowskiego/symbol typu. Można filtrować listę wyników lub użyć składni zapytania (na przykład, "f searchTerm" dla plików.), "t searchTerm" typy itp.
+* **Przejdź do wszystkich** (**Ctrl**+**T** lub **Ctrl**+**,**) &ndash; przejdź bezpośrednio do każdej deklaracji plik / / elementu członkowskiego/symbol typu. Można filtrować listę wyników lub użyć składni zapytania (na przykład, "f searchTerm" dla plików.), "t searchTerm" typy itp.
 
  ![Ulepszone przejdź do wszystkich](../ide/media/vs2017ide-navigation-go-to.png "przykład ulepszone przejdź do wszystkich funkcji")
 
-* **Znajdź wszystkie odwołania (Shift + F12)** &ndash; z kolorowanie składni, w przypadku grupowania wyników Znajdź wszystkie odwołania przy użyciu kombinacji projektu, definicji i ścieżkę. Można również "zablokować" wyników, dzięki czemu można nadal znaleźć inne odwołania bez utraty oryginalne wyniki.
+* **Znajdź wszystkie odwołania** (**Shift**+**F12**) &ndash; z kolorowanie składni, w przypadku grupowania wyników Znajdź wszystkie odwołania przy użyciu kombinacji projektu, definicji, i ścieżka. Można również "zablokować" wyników, dzięki czemu można nadal znaleźć inne odwołania bez utraty oryginalne wyniki.
 
  ![Nowe narzędzia Znajdź wszystkie odwołania](../ide/media/vs2017ide-find-all-references.png "przykładem nowego narzędzia Znajdź wszystkie odwołania")
 
@@ -162,7 +162,7 @@ Jak również wprowadzeniu stałej ponad 250 usterek i zgłoszone problemy w nar
 
 Aby uzyskać szczegółowe informacje, zobacz [nowości w języku Visual C++ w Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) strony.  
 
-### <a name="debugging-and-diagnostics"></a>Debugowanie i diagnostyka
+### <a name="debugging-and-diagnostics"></a>Debugowanie i Diagnostyka
 #### <a name="run-to-click"></a>Uruchom kliknięcie:
 Teraz możesz łatwo przejść od razu podczas debugowania bez ustawienia punktu przerwania może zatrzymać się na wiersz, który ma. Po zatrzymaniu debugera, wystarczy kliknąć ikonę, która pojawia się obok wiersza kodu. Kod zostaną uruchomione i Zatrzymaj w tym wierszu przy następnym zostaje trafiony w ścieżce kodu.
 
@@ -173,12 +173,12 @@ Nowy Pomocnik wyjątków ułatwia przeglądanie sieci wyjątek informacji w szyb
 
 ![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "okno dialogowe nowego pomocnika wyjątków")
 
-Aby uzyskać więcej informacji, zobacz [przy użyciu nowego pomocnika wyjątków w programie Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) wpis w blogu.
+Aby uzyskać więcej informacji, zobacz [Użyj nowego pomocnika wyjątków w programie Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) wpis w blogu.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Migawki i pamięcią krok IntelliTrace:
 **Nowość w 15,5 cala**: zwrotnego krok IntelliTrace automatycznie tworzy migawkę aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawki umożliwiają wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości. IntelliTrace krok wstecz może zaoszczędzić czas podczas chcesz zobacz poprzedni stan aplikacji, ale nie chcesz uruchomić ponownie debugowania lub Utwórz ponownie stan żądanej aplikacji.
 
-Można znaleźć i wyświetlić migawki za pomocą **krok do tyłu** i **krok do przodu** przycisków na pasku narzędzi debugowania. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **narzędzia diagnostyczne** okna. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
+Można znaleźć i wyświetlić migawki za pomocą **krok do tyłu** i **krok do przodu** przycisków w **debugowania** paska narzędzi. Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **narzędzia diagnostyczne** okna. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje debugowania historycznego wybranego zdarzenia.
 
 ![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "przyciski krok do tyłu i do przodu")
 
@@ -193,10 +193,10 @@ Kontenery umożliwiają aplikacji zwiększona gęstość i niższy koszt wdroże
 * Domyślnie program Visual Studio będzie automatycznie ściągać, kompilować i uruchamiać niezbędne obrazy kontenera w tle podczas otwierania projektu obsługującego platformę Docker. Tę opcję można wyłączyć za pomocą ustawienia **Automatycznie uruchom kontenery w tle** w programie Visual Studio.
 
 ## <a name="cloud-app-development-with-azure"></a>Projektowania aplikacji w chmurze przy użyciu platformy Azure
-### <a name="azure-functions-tools"></a>Środowisko Azure Functions narzędzia
+### <a name="azure-functions-tools"></a>Narzędzia funkcji platformy Azure
 W ramach obciążenia "Programowanie Azure" uwzględniliśmy narzędzia umożliwiające tworzenie funkcji platformy Azure przy użyciu wstępnie skompilowanym bibliotek klas C#. Teraz można tworzyć, uruchom i debugowania na komputerze deweloperskim lokalnego, a następnie opublikować bezpośrednio na platformie Azure w programie Visual Studio.
 
-Aby uzyskać więcej informacji, zobacz [narzędzi funkcji Azure dla programu Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) strony.
+Aby uzyskać więcej informacji, zobacz [funkcji Azure tools dla Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) strony.
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debugowania na żywo aplikacji ASP.NET przy użyciu snappoints i logpoints w aplikacji platformy Azure na żywo
 **Nowość w 15,5 cala**: debuger migawki tworzy migawkę aplikacji w środowisku produkcyjnym, gdy wykonuje kod, który chcesz. Aby nakazać debugera do tworzenia migawki, należy ustawić snappoints i logpoints w kodzie. Debuger pozwala zobaczyć dokładnie co poszło źle, bez wpływu na ruch aplikacji produkcyjnej. Debuger migawki ułatwiają znacznie skrócić czas potrzebny na rozwiązać problemy występujące w środowisku produkcyjnym.
@@ -233,12 +233,12 @@ W ramach obciążenia "Mobile development z platformą .NET" deweloperzy zapozna
 Aby uzyskać więcej informacji, zobacz [Visual Studio i Xamarin](../cross-platform/visual-studio-and-xamarin.md) strony.
 
 ### <a name="entitlements-editor"></a>Edytor uprawnień
-**Nowość w 15 ustęp 3**: do potrzeb development iOS dodaliśmy autonomicznej edytora uprawnień. Obejmuje on interfejsu użytkownika, przyjazny dla użytkownika, który można łatwo przeglądać. Aby uruchomić go, kliknij dwukrotnie plik entitlements.plist.
+**Nowość w 15 ustęp 3**: do potrzeb development iOS dodaliśmy autonomicznej edytora uprawnień. Obejmuje on interfejsu użytkownika, przyjazny dla użytkownika, który można łatwo przeglądać. Aby uruchomić go, kliknij dwukrotnie użytkownika *entitlements.plist* pliku.
 
 ![Edytor uprawnień dla platformy Xamarin](../ide/media/xamarin-entitlements-editor.png "Edytor uprawnień dla platformy Xamarin")
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools dla platformy Xamarin
-**Nowość w 15.4**: Xamarin na żywo umożliwia deweloperom stale wdrażanie, testowanie i debugowanie swoje aplikacje bezpośrednio w systemach iOS i urządzeniach z systemem Android. Po pobraniu Xamarin Live Player&mdash;dostępnej w sklepie z aplikacjami lub w witrynie Google Play&mdash;mogą łączyć się urządzenie z programem Visual Studio i zrewolucjonizuje sposób tworzenia aplikacji mobilnych. Ta funkcja jest teraz zawarta w programie Visual Studio i można ją włączyć w menu Narzędzia > Opcje > Xamarin > Inne > Włącz Player Xamarin na żywo.
+**Nowość w 15.4**: Xamarin na żywo umożliwia deweloperom stale wdrażanie, testowanie i debugowanie swoje aplikacje bezpośrednio w systemach iOS i urządzeniach z systemem Android. Po pobraniu Xamarin Live Player&mdash;dostępnej w sklepie z aplikacjami lub w witrynie Google Play&mdash;mogą łączyć się urządzenie z programem Visual Studio i zrewolucjonizuje sposób tworzenia aplikacji mobilnych. Ta funkcja jest teraz zawarta w programie Visual Studio i można ją włączyć, przechodząc do opcji **Narzędzia** > **Opcje** > **Xamarin**  > **Inne** > **Włącz Xamarin Live Player**.
 
 ![Animacja pary Xamarin Player na żywo, wdrożenia i tryby edycji na żywo](../ide/media/xamarinliveplayer.gif)
 
@@ -247,7 +247,7 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio i Xamarin](../cross-platf
 
   ![Środowisko testowe Centrum aplikacji programu Visual Studio](../ide/media/app-center-test-env.png)
 
-Aby uzyskać więcej informacji, zobacz [Centrum aplikacji Introducing: tworzenie testu, dystrybucji i monitorowanie aplikacji w chmurze](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) wpis w blogu.
+Aby uzyskać więcej informacji, zobacz [Centrum aplikacji Introducing: tworzenia, testowania, rozpowszechniania i monitorować aplikacje w chmurze](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) wpis w blogu.
 
 ## <a name="cross-platform-development"></a>Wiele platform
 ### <a name="redgate-data-tools"></a>Narzędzia Redgate danych
@@ -271,7 +271,7 @@ I zawiera teraz Docker pomocy technicznej.
 
 **Nowość w 15 ustęp 3**: Visual Studio 2017 wersji 15 ustęp 3 obsługuje programowanie .NET Core 2.0. Przy użyciu programu .NET Core 2.0 wymaga, pobieranie i Instalowanie zestawu SDK .NET Core 2.0 oddzielnie.  
 
-Aby uzyskać więcej informacji, zobacz [.NET Core przewodnik](/dotnet/core/index) strony.
+Aby uzyskać więcej informacji, zobacz [przewodnik .NET Core](/dotnet/core/index) strony.
 
 ## <a name="games-development"></a>Programowanie gry
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -294,14 +294,14 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for AI](../ai/about
 Jeśli chcesz sugestii dotyczących jak możemy ulepszyć program Visual Studio, lub zgłosić problem, zapoznaj się z artykułem [Porozmawiaj z nami](../ide/talk-to-us.md) strony.  
 
 ### <a name="report-a-problem"></a>Zgłoś problem  
- Czasami komunikat nie jest wystarczająca do przekazania pełnego wpływu został napotkany problem. Występują zawieszenie, awarii lub innych problem z wydajnością, można łatwo udostępniać Opisz kroki i pliki pomocnicze (takie jak zrzuty ekranu i śledzenia i sterty plików zrzutów) z nami za pomocą **zgłosić Problem** narzędzia. Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [jak zgłosić Problem](how-to-report-a-problem-with-visual-studio-2017.md) strony.  
+ Czasami komunikat nie jest wystarczająca do przekazania pełnego wpływu został napotkany problem. Występują zawieszenie, awarii lub innych problem z wydajnością, można łatwo udostępniać Opisz kroki i pliki pomocnicze (takie jak zrzuty ekranu i śledzenia i sterty plików zrzutów) z nami za pomocą **zgłosić Problem** narzędzia. Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [jak zgłosić problem](how-to-report-a-problem-with-visual-studio-2017.md) strony.  
 
 ### <a name="track-your-issue-in-connect"></a>Śledzenie problemu w programie Connect  
- Jeśli chcesz śledzić stan opinii programu Visual Studio, przejdź do [Connect](http://connect.microsoft.com/) i zgłoś ten błąd wystąpił. Po raport go może zwrócić nawiązywanie śledzić jego stan.  
+ Jeśli chcesz śledzić stan opinii programu Visual Studio, przejdź do [Connect](http://connect.microsoft.com/) i zgłoś ten błąd wystąpił. Po możesz zgłosić, można powrócić do **Connect** śledzić jego stan.  
 
 ## <a name="see-also"></a>Zobacz także
-* [Visual Studio 2017 informacje o wersji](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+* [Informacje o wersji Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Co to jest nowe w programie Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Nowości w języku C#](/dotnet/csharp/whats-new)  
+* [Co nowego w języku C#](/dotnet/csharp/whats-new)  
 * [Nowości dotyczące programu Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Co to jest nowe w programie Visual Studio dla komputerów Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

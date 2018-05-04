@@ -1,5 +1,5 @@
 ---
-title: Docelowy program .NET Framework w programie Visual Studio
+title: Dla środowiska .NET Framework w programie Visual Studio
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44ed988c15a77511d880f1877c1038579a360b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio omówienie wielowersyjności kodu
 
@@ -50,7 +50,7 @@ Podczas pracy w projekcie, który jest przeznaczony dla starszej wersji programu
 
 - Filtruje niestandardowe formanty w **przybornika** Usuń te, które nie są dostępne w docelowej wersji i Pokaż tylko najnowsze kontrolek dostępnych wiele formantów.
 
-- Filtruje IntelliSense, aby pominąć funkcje językowe, które nie są dostępne w wersji docelowej.
+- Filtruje **IntelliSense** , aby pominąć funkcje językowe, które nie są dostępne w wersji docelowej.
 
 - Filtruje właściwości w **właściwości** okno, aby pominąć te, które nie są dostępne w docelowej wersji.
 
@@ -61,7 +61,7 @@ Podczas pracy w projekcie, który jest przeznaczony dla starszej wersji programu
 > [!NOTE]
 > Docelowy Framework nie gwarantuje, że aplikacja jest uruchamiana poprawnie. Konieczne jest przetestowanie aplikacji upewnij się, że jej jest uruchamiana dla docelowej wersji. Nie można target framework w wersji starszej niż .NET Framework 2.0.
 
-## <a name="selecting-a-target-framework-version"></a>Wybieranie framework w wersji docelowej
+## <a name="select-a-target-framework-version"></a>Wybierz docelową wersję framework
 
 Podczas tworzenia projektu, wybierz docelową wersję platformy .NET w **nowy projekt** okno dialogowe. Lista dostępnych platform zawiera wersje zainstalowano framework, które mają zastosowanie do typu wybranego szablonu. Dla typów szablonów, które nie wymagają platformy .NET, na przykład szablony .NET Core **Framework** listy rozwijanej jest ukryty.
 
@@ -69,19 +69,19 @@ Podczas tworzenia projektu, wybierz docelową wersję platformy .NET w **nowy pr
 
 W istniejącego projektu, można zmienić obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolving-system-and-user-assembly-references"></a>Rozpoznawanie odwołania do zestawów systemu i użytkownika
+## <a name="resolve-system-and-user-assembly-references"></a>Rozpoznaj odwołania do zestawu systemu i użytkownika
 
 Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odwołuje się do odpowiedniego zestawu. Możesz pobrać pakiety developer dla różnych wersji programu .NET Framework na [pobiera .NET](https://www.microsoft.com/net/download/windows) strony.
 
-**Dodaj odwołanie** okno dialogowe wyłącza zestawy systemu, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemu są plików .dll, które znajdują się w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji.) Nie można rozwiązać odwołania, które należą do wersji struktury, która jest nowsza niż wersja docelowa, i nie można dodać formantów, które są zależne od odniesienie. Jeśli chcesz włączyć odniesienie, zresetuj [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] docelowej projektu, który obejmuje odwołania.  Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Dodaj odwołanie** okno dialogowe wyłącza zestawy systemu, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemu są *.dll* plików uwzględnionych w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji.) Nie można rozwiązać odwołania, które należą do wersji struktury, która jest nowsza niż wersja docelowa, i nie można dodać formantów, które są zależne od odniesienie. Jeśli chcesz włączyć odniesienie, zresetuj [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] docelowej projektu, który obejmuje odwołania.  Aby uzyskać więcej informacji, zobacz [porady: wersja docelowa platformy .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Aby uzyskać więcej informacji na temat odwołania do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enabling-linq"></a>Włączanie LINQ
+## <a name="enable-linq"></a>Włącz LINQ
 
-Jeśli zostanie rozpoczęta dla programu .NET Framework 3.5 lub nowszej, odwołanie do System.Core i importowanie poziom projektu dla System.Linq (w tylko Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, należy również włączyć Option Infer (w tylko Visual Basic). Odwołanie i importu są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji .NET Framework. Aby uzyskać więcej informacji, zobacz [pracy za pomocą LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Jeśli zostanie rozpoczęta dla programu .NET Framework 3.5 lub nowszej, odwołanie do **System.Core** , a następnie zaimportuj poziom projektu dla <xref:System.Linq> (w tylko Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, należy również wyłączyć `Option Infer` na (w tylko Visual Basic). Odwołanie i importu są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji .NET Framework. Aby uzyskać więcej informacji, zobacz [pracy za pomocą LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Przeznaczanie dla wielu platform (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Porady: modyfikowanie docelowego framework i zestawu narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Wyświetlanie struktury kodu
 
@@ -56,11 +56,11 @@ Jeśli projektu jest zaewidencjonowany do kontroli kodu źródłowego, co **wido
 
 ### <a name="class-view-toolbar"></a>Pasek narzędzi widoku klasy
 
-Pasek narzędzi widoku klasy zawiera następujące polecenia.
+**Widoku klasy** narzędzi zawiera następujące polecenia.
 
 |||
 |-|-|
-|**Nowy Folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować najczęściej używanych elementów. Są one zapisywane w pliku rozwiązania active (.suo). Po zmienić lub usunąć element w kodzie, może się pojawić folder wirtualny jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono element, możesz go przenieść z hierarchii projektu do folderu ponownie.|
+|**Nowy Folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować najczęściej używanych elementów. Są one zapisywane w aktywnym rozwiązaniu (*.suo*) pliku. Po zmienić lub usunąć element w kodzie, może się pojawić folder wirtualny jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono element, możesz go przenieść z hierarchii projektu do folderu ponownie.|
 |**Wstecz**|Powoduje przejście do poprzednio wybranego elementu.|
 |**Prześlij dalej**|Przechodzi do następnego wybranego elementu.|
 |**Wyświetlanie diagramu klas** (tylko dla projektów kod zarządzany)|Stają się dostępne po wybierz obszar nazw lub typ w **widoku klasy**. Po wybraniu przestrzeni nazw diagramu klas są wyświetlane wszystkie typy w nim. Po wybraniu typu diagramu klas zawiera tylko tego typu.|
@@ -90,7 +90,7 @@ W menu skrótów **widoku klasy** może zawierać następujące polecenia, w zal
 |**Przejdź do definicji**|Wyszukuje definicji elementu w kodzie źródłowym lub **przeglądarki obiektów**, jeśli element nie jest zdefiniowany w otwartego projektu.|
 |**Przejdź do definicji**|Wyświetla wybrany element w **przeglądarki obiektów**.|
 |**Znajdź wszystkie odwołania**|Wyszukuje element aktualnie zaznaczony obiekt i wyświetla wyniki w **znaleźć wyników** okna.|
-|**Typ filtru** (tylko kod zarządzany)|Wyświetla tylko wybranego typu lub przestrzeni nazw. Filtr można usunąć, wybierając **znaleźć wyczyść** (przycisk Dalej, aby X) **znaleźć** pole.|
+|**Typ filtru** (tylko kod zarządzany)|Wyświetla tylko wybranego typu lub przestrzeni nazw. Filtr można usunąć, wybierając **znaleźć wyczyść** (**X**) znajdujący się obok **znaleźć** pole.|
 |**Kopiuj**|Kopiuje w pełni kwalifikowana nazwa elementu.|
 |**Sortuj alfabetycznie**|Wyświetla listę typów i członków alfabetycznie według nazwy.|
 |**Sortuj według typu członka**|Wyświetla listę typów i członków w kolejności według typu (taki sposób, że interfejsy poprzedzać klasy, interfejsy poprzedzać delegatów i metody poprzedzać właściwości).|
@@ -130,11 +130,11 @@ W menu skrótów **hierarchii wywołań** okna zawiera następujące polecenia.
 
 **Przeglądarki obiektów** okno Wyświetla opisy kodu w projektach.
 
-Można filtrować składniki, które chcesz wyświetlić za pomocą listy rozwijanej w górnej części okna. Niestandardowe składniki mogą zawierać pliki wykonywalne kodu zarządzanego, zestawy bibliotek biblioteki typów i .ocx plików. Nie jest możliwie dodanie niestandardowych składników C++. Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, % APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+Można filtrować składniki, które chcesz wyświetlić za pomocą listy rozwijanej w górnej części okna. Niestandardowe składniki mogą być pliki wykonywalne kodu zarządzanego, zestawy bibliotek, biblioteki typów i *.ocx* plików. Nie jest możliwie dodanie niestandardowych składników C++. Ustawienia niestandardowe są zapisywane w katalogu aplikacji programu Visual Studio użytkownika *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 W lewym okienku **przeglądarki obiektów** pokazuje zestawy. Można rozwinąć do wyświetlenia przestrzeni nazw, które zawierają zestawy, a następnie rozwiń przestrzeni nazw, aby wyświetlić typy, które zawierają. Po wybraniu typu jej elementów członkowskich (na przykład właściwości i metody) są wyświetlane w okienku po prawej stronie. Dolnym okienku po prawej stronie wyświetla szczegółowe informacje na temat wybranego elementu.
 
-Możesz wyszukać konkretny element za pomocą **wyszukiwania** u góry okna. Wyszukiwanie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz **Wyczyść wyszukiwanie** (przycisk Dalej, aby X) **wyszukiwania** pole.
+Możesz wyszukać konkretny element za pomocą **wyszukiwania** u góry okna. Wyszukiwanie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz **Wyczyść wyszukiwanie** (**X**) znajdujący się obok **wyszukiwania** pole.
 
 **Przeglądarki obiektów** śledzi zaznaczeń zostały wykonane, a można przechodzić między opcje przy użyciu **do przodu** i **ponownie** przycisków na pasku narzędzi.
 
@@ -185,7 +185,7 @@ W menu skrótów **przeglądarki obiektów** może zawierać następujące polec
 Mimo że to okno jest tylko do odczytu, można ustawić punktów przerwania lub zakładki w nim. Aby zmodyfikować definicję wyświetlanych, wybierz **edycji definicji** menu skrótów. To powoduje otwarcie pliku źródłowego w edytorze kodu i przenosi punkt wstawiania do wiersza, w którym rozpoczyna się definicji.
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2015, okno definicji kodu można używać tylko z kodem C++.
+> Począwszy od programu Visual Studio 2015, **definicji kodu** okna można używać tylko z kodem C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu skrótów definicji kodu
 
@@ -193,8 +193,8 @@ W menu skrótów **definicji kodu** okna może zawierać następujące polecenia
 
 |||
 |-|-|
-|**Szybkie akcje i Refaktoryzacje...**||
-|**Zmień nazwę...**||
+|**Szybkie akcje i Refaktoryzacje**||
+|**Zmiana nazwy**||
 |**Generowanie grafu plików dołączanych**||
 |**Definicji wglądu**||
 |**Przejdź do definicji**|Wyszukuje definicji (lub definicji klasy częściowe) i wyświetla je w **znaleźć wyników** okna.|

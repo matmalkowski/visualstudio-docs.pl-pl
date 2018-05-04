@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense dla programu Visual C++
 
-IntelliSense dla języka C++ jest dostępna dla autonomicznych pliki także jak w przypadku plików, które są częścią projektu C++. W projektach między platformami niektóre funkcje IntelliSense są dostępne w .cpp i .c pliki w projekcie udostępnionym kodu, nawet jeśli znajdują się w kontekście systemu Android lub iOS.
+IntelliSense dla języka C++ jest dostępna dla autonomicznych pliki także jak w przypadku plików, które są częścią projektu C++. W projektach między platformami, niektóre funkcje IntelliSense są dostępne w *.cpp* i *.c* pliki w projekcie udostępnionym kodu, nawet jeśli znajdują się w kontekście systemu Android lub iOS.
 
 ## <a name="intellisense-features-in-c"></a>Funkcje IntelliSense w języku C++
 
@@ -33,7 +33,7 @@ Elementy menu i skróty klawiaturowe pokazano na poniższej ilustracji umożliwi
 
 Po ponownym uruchomieniu, wpisując słowa kluczowego, typu, funkcji, nazwa zmiennej lub innego elementu programu rozpoznającego przez kompilator, edytor oferuje dokończyć słowo.
 
-Listę ikon i ich znaczenie, zobacz [Widok klas i przeglądarka obiektów ― ikony](../ide/class-view-and-object-browser-icons.md).
+Listę ikon i ich znaczenie, zobacz [ikony w widoku klas i przeglądarka obiektów](../ide/class-view-and-object-browser-icons.md).
 
 ![Visual C&#43; &#43; okna całe słowo](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
@@ -73,31 +73,31 @@ Oto OpenGLES aplikacji, która jest skonfigurowana dla kompilacji dla systemów 
 
 Należy zauważyć, że:
 
-- #Else gałęzi w wierszu 8 będzie szary, aby wskazać regionu nieaktywnych, ponieważ __ANDROID\_ \_ jest zdefiniowany dla systemu android.
+- `#else` Gałęzi w wierszu 8 będzie szary, aby wskazać regionu nieaktywnych, ponieważ `__ANDROID__` jest zdefiniowany dla systemu android.
 
-- Zmienna pozdrowienia w wierszu 11 został zainicjowany z identyfikatorem HELLO, mającej wężyk purpurowy. Jest tak, ponieważ nie identyfikatora HELLO nie została zdefiniowana w projekcie aktualnie nieaktywne w systemie iOS. Gdy w systemie Android czy skompilować projekt wiersza 11, nie będzie w systemie iOS. Ponieważ jest to udostępniony kod, który nie jest należy zmienić nawet kompiluje w aktualnie aktywnej konfiguracji.
+- Zmienna pozdrowienia w wierszu 11 został zainicjowany z identyfikatorem `HELLO`, mającego wężyk purpurowy. Jest to spowodowane nie identyfikatora `HELLO` jest zdefiniowany w projekcie aktualnie nieaktywne w systemie iOS. Gdy w systemie Android czy skompilować projekt wiersza 11, nie będzie w systemie iOS. Ponieważ jest to udostępniony kod, który nie jest należy zmienić nawet kompiluje w aktualnie aktywnej konfiguracji.
 
-- W wierszu 12 znajduje się czerwona falista na podstawie identyfikatora BYE; Ten identyfikator nie jest zdefiniowany w obecnie zaznaczonej aktywnego projektu.
+- W wierszu 12 znajduje się czerwona falista na podstawie identyfikatora `BYE`; ten identyfikator nie jest zdefiniowany w obecnie zaznaczonej aktywnego projektu.
 
-Teraz Zmień aktywnego projektu iOS.StaticLibrary i zwróć uwagę, jak zmienić zygzaki.
+Teraz Zmień aktywnego projektu do **iOS.StaticLibrary** i zwróć uwagę, jak zmienić zygzaki.
 
 ![iOS został wybrany jako aktywnego projektu. ] (../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Należy zauważyć, że:
 
-- Gałęzi #ifdef w wierszu 6 będzie szary, aby wskazać regionu nieaktywnych, ponieważ __ANDROID\_ \_ nie jest zdefiniowany dla projektu iOS.
+- `#ifdef` Gałęzi w wierszu 6 jest wyszarzone, aby wskazać regionu nieaktywnych, ponieważ `__ANDROID__` nie jest zdefiniowany dla projektu iOS.
 
-- Zmienna pozdrowienia w wierszu 11 został zainicjowany z identyfikatorem HELLO, który ma teraz czerwona falista. Jest tak, ponieważ nie identyfikatora HELLO nie została zdefiniowana w projekcie iOS aktualnie aktywny.
+- Zmienna pozdrowienia w wierszu 11 został zainicjowany z identyfikatorem `HELLO`, dla której istnieje czerwona falista. Jest to spowodowane nie identyfikatora `HELLO` jest zdefiniowany w projekcie iOS obecnie aktywne.
 
-- Wiersz 12 ma purpurowa wężyk na podstawie identyfikatora BYE; Ten identyfikator nie jest zdefiniowany w aktualnie nieaktywne Android.NativeActivity projektu.
+- Wiersz 12 ma purpurowa wężyk na podstawie identyfikatora `BYE`; ten identyfikator nie jest zdefiniowany w aktualnie nieaktywne **Android.NativeActivity** projektu.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense dla plików autonomicznych
 
-Po otwarciu pojedynczego pliku poza żadnego projektu nadal otrzymywać IntelliSense. Można włączyć lub wyłączyć określonej funkcji IntelliSense w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++**  >  **Zaawansowane**. Aby skonfigurować IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików poza projektami** sekcji.
+Po otwarciu pojedynczego pliku poza żadnego projektu nadal otrzymywać IntelliSense. Można włączyć lub wyłączyć określonej funkcji IntelliSense w **opcje** okna dialogowego, w obszarze **Edytor tekstu** > **C/C++**  >  **Zaawansowane**. Aby skonfigurować IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądanie dla plików nienależących do projektu** sekcji.
 
 ![Visual C&#43; &#43; intellisense pojedynczy plik](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Domyślnie IntelliSense używane tylko standardowe obejmują pojedynczy plik katalogów można znaleźć plików nagłówka. Aby dodać dodatkowe katalogi, otwórz menu skrótów w węźle rozwiązania i Dodaj katalog na **debugowania kodu źródłowego** listy, jak przedstawiono na poniższej ilustracji:
+Domyślnie IntelliSense używane tylko standardowe obejmują pojedynczy plik katalogów można znaleźć plików nagłówka. Aby dodać kolejne katalogi, otwórz menu skrótów na **rozwiązania** węzeł i Dodaj katalog na **debugowania kodu źródłowego** listy, jak przedstawiono na poniższej ilustracji:
 
 ![Dodawanie ścieżki do pliku nagłówka. ] (../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 

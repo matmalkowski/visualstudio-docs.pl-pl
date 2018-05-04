@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3803a8ffb95aae59846b468b41f04eaa96f324f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b36162c14b07e90368b30e34137ea8e7da03d91a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje Edytor kodu
 
-Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edycji kodu](https://www.visualstudio.com/features/ide-vs) szybki przegląd.
+Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edytować kod](https://www.visualstudio.com/features/ide-vs) szybki przegląd.
 
 Kodu można wyświetlić na kilka różnych sposobów. Domyślnie **Eksploratora rozwiązań** zawiera kod uporządkowane według plików. Możesz kliknąć **widoku klasy** u dołu okna, aby wyświetlić kod uporządkowane według klasy.
 
-Można wyszukiwania i zamieniania tekstu w jednej lub wielu plików. Aby uzyskać więcej informacji, zobacz [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md). Wyrażenia regularne służy do znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Można wyszukiwania i zamieniania tekstu w jednej lub wielu plików. Aby uzyskać więcej informacji, zobacz [Znajdź i Zamień tekst](../ide/finding-and-replacing-text.md). Wyrażenia regularne służy do znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji, zobacz [używanie wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 Języki Visual Studio oferują różne zestawy funkcji, a w niektórych przypadkach funkcje działają inaczej w różnych językach. Wiele z tych różnic są określone w opisach funkcji, ale uzyskać więcej informacji można wyświetlić sekcje na określonych języków Visual Studio.
 
@@ -38,9 +38,9 @@ Języki Visual Studio oferują różne zestawy funkcji, a w niektórych przypadk
 |Struktura wizualizatora|Przerywana łączone pasujących nawiasów klamrowych w plikach kodu, ułatwiając Zobacz otwierający i zamykający nawias klamrowy pary. To może pomóc w znalezieniu kodu w Twojej codebase szybciej. Można włączyć te wiersze lub wyłączyć z **Pokaż wytyczne struktury** w **wyświetlania** sekcji **narzędzia** > **opcje**  >  **Edytor tekstu** > **ogólne** strony.|
 |Numery wiersza|Numery wiersza mogą być wyświetlane na lewym marginesie okna kodu. Nie są wyświetlane domyślnie. Można włączyć tę opcję **edytora tekstów wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**  >  **Wszystkie języki**). Można wyświetlić numery wierszy dla poszczególnych języków programowania, zmieniając ustawienia w tych językach (**narzędzia** > **opcje** > **Edytor tekstu**   >   **\<języka >**). W przypadku numerów wierszy do drukowania, musisz wybrać **zawierają numery wierszy** w **drukowanie** okno dialogowe.|
 |Śledzenie zmian|Kolor lewy margines umożliwia śledzenie zmian wprowadzonych w pliku. Zmiany wprowadzone przez użytkownika, ponieważ plik został otwarty, ale nie zapisano są wskazywane przez żółty pasek na lewym marginesie (nazywane margines zaznaczania). Po zapisaniu zmian (ale przed zamknięciem pliku), pasku włącza zielony. Jeśli po zapisaniu pliku możesz cofnąć zmianę, pasku włącza pomarańczowy. Aby wyłączyć i Włącz tę funkcję, zmień **śledzenia zmian** opcji **Edytor tekstu** ustawień (**narzędzia** > **opcje**  >  **Edytor tekstu**).|
-|Wybieranie kodu i tekstu|Można zaznaczyć tekst w trybie Standardowy strumień ciągłej lub w trybie pole, wybierz prostokątny część tekstu, zamiast zestawu wierszy. Aby dokonać wyboru w trybie pole, trzymając naciśnięty klawisz ALT przeciągnij mysz nad wyborem (lub naciśnij klawisze ALT + SHIFT + \<Strzałka >). Zaznaczenie zawiera wszystkie znaki w prostokącie zdefiniowane przez znak pierwszy i ostatni znak w zaznaczeniu. Dodaje się niczego wpisana lub wklejane obszaru, w tym samym punkcie w każdym wierszu.|
-|Powiększenie|W dowolnym oknie kodu można powiększanie lub pomniejszanie naciskając klawisz CTRL i przenoszenie kółko przewijania myszy (lub CTRL + SHIFT +. Aby zwiększyć i CTRL + SHIFT +, aby zmniejszyć). Można ustawić wartość procentową powiększenia określonych umożliwia także pole powiększenia w lewym dolnym rogu okna kodu. Funkcja powiększenia nie działa w systemie windows narzędzia.|
-|Wirtualna spacja|Domyślnie wierszy w Visual Studio edytory zakończona po ostatnim znaku, aby strzałka w prawo na końcu wiersza przenosi kursor na początek następnego wiersza. W niektórych innych edytory wiersza nie kończy się po ostatnim znaku i umieść kursor dowolne miejsce w wierszu. Można włączyć wirtualną przestrzeń w edytorze w **narzędzia** > **opcje** > **Edytor tekstu** > **wszystkie Języki** ustawienia. Należy pamiętać, że można włączyć jedną **wirtualną przestrzeń** lub **zawijanie**, ale nie oba.|
+|Wybieranie kodu i tekstu|Można zaznaczyć tekst w trybie Standardowy strumień ciągłej lub w trybie pole, wybierz prostokątny część tekstu, zamiast zestawu wierszy. Aby dokonać wyboru w trybie pole, naciśnij klawisz **Alt** przeciągnij mysz nad wyborem (lub naciśnij klawisz **Alt**+**Shift** +  **\<Strzałka >**). Zaznaczenie zawiera wszystkie znaki w prostokącie zdefiniowane przez znak pierwszy i ostatni znak w zaznaczeniu. Dodaje się niczego wpisana lub wklejane obszaru, w tym samym punkcie w każdym wierszu.|
+|Powiększenie|W dowolnym oknie kodu można powiększanie lub pomniejszanie przytrzymując **Ctrl** klucza i przenoszenia kółko przewijania myszy (lub **Ctrl**+**Shift** +**.** Aby zwiększyć i **Ctrl**+**Shift**+**,** zmniejszyć). Można również użyć **powiększenie** pole w lewym dolnym rogu okna Kod, aby ustawić wartość procentową powiększenia określonych. Funkcja powiększenia nie działa w systemie windows narzędzia.|
+|Wirtualna spacja|Domyślnie wierszy w celu edytory Visual Studio za ostatni znak, dzięki czemu **Strzałka w prawo** klucza na końcu wiersza przenosi kursor na początek następnego wiersza. W niektórych innych edytory wiersza nie kończy się po ostatnim znaku i umieść kursor dowolne miejsce w wierszu. Można włączyć wirtualną przestrzeń w edytorze w **narzędzia** > **opcje** > **Edytor tekstu** > **wszystkie Języki** ustawienia. Należy pamiętać, że można włączyć jedną **wirtualną przestrzeń** lub **zawijanie**, ale nie oba.|
 |Drukowanie|Można użyć opcji w **drukowanie** okno dialogowe, aby uwzględnić numery wierszy lub ukrywanie zwinięte regionów kodu podczas drukowania pliku. W **ustawienia strony** okno dialogowe, również można wydrukować pełną ścieżkę i nazwę pliku, wybierając **nagłówek strony**.<br /><br /> Opcje drukowania w kolorze można ustawić w **narzędzia** > **opcje** > **środowiska** > **czcionek i Kolory** okno dialogowe. Wybierz **drukarki** w **Pokaż ustawienia dla** listy, aby dostosować drukowanie kolorów. Można określić różne kolory do drukowania pliku niż do edycji plik.|
 |Globalne cofanie i powtórz|**Cofnij ostatnią akcję globalną** i **wykonaj ponownie ostatnią akcję globalną** polecenia w **Edytuj** menu cofnąć ani ponowić Akcje globalne, które mają wpływ na wiele plików. Globalne akcje obejmują, zmiana nazwy klasy lub przestrzeni nazw, wykonywanie operacji Znajdź i Zamień rozwiązanie refaktoryzacji bazy danych lub innych działań, które zmieniają wiele plików. Można zastosować globalnego cofania i ponawiania poleceń do akcji w bieżącej sesji programu Visual Studio, nawet po zamknięciu rozwiązania, w którym akcja została zastosowana.|
 
@@ -53,14 +53,14 @@ Liczba zaawansowanych funkcji można znaleźć w **Edytuj** > **zaawansowane** m
 |Format dokumentu|Ustawia odpowiednie wcięcia wierszy kodu i przenosi nawiasy klamrowe do osobnych wierszy w dokumencie.|
 |Wybieranie formatu|Ustawia odpowiednie wcięcia wierszy kodu i przenosi nawiasy klamrowe do osobnych wierszy w zaznaczeniu.|
 |Tabify — formatowanie wybranych wierszy|Spacje wiodące na znaki tabulacji, gdzie jest to odpowiednie zmiany.|
-|Untabify wybranych wierszy|Zmiany wiodące tabulatory na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na kartach (lub wszystkie tabulatory na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale może być wywoływany ze okna Szybki dostęp lub okna poleceń.|
+|Untabify wybranych wierszy|Zmiany wiodące tabulatory na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na kartach (lub wszystkie tabulatory na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale możesz je z wywołać **szybki dostęp** okno polecenia lub.|
 |Upewnij się wielkie litery|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie ma żadnego zaznaczenia, zmieni się znak punkt wstawiania na wielkie litery.|
 |Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie ma żadnego zaznaczenia, zmienia znak punkt wstawiania na małe litery.|
-|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrótu: Klawisze ALT + Strzałka w górę.|
-|Przesuń wybrane wiersze w dół|Przenosi wybrany wiersz w dół o jeden wiersz. Skrótu: Klawisze ALT + Strzałka w dół.|
+|Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **Alt**+**Strzałka w górę**.|
+|Przesuń wybrane wiersze w dół|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **Alt**+**Strzałka w dół**.|
 |Usuń biały znak w poziomie|Usuwa tabulatory lub spacje na koniec bieżącego wiersza.|
 |Widok biały znak|Wyświetla spacje jako zgłoszono kropek i karty jako strzałki. Koniec pliku jest wyświetlana jako prostokątne symbolu. Jeśli **narzędzia** > **opcje** > **Edytor tekstu** > **wszystkie języki**  >  **Zawijanie** > **Pokaż symbole widoczne dla zawijania** jest zaznaczone, tego symbolu jest również wyświetlany.|
-|Zawijanie tekstu|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączyć zawijanie i Włącz ustawienia edytora tekstu wszystkie języki (**narzędzia** > **opcje** > **Edytor tekstu**  >  **Wszystkie języki**).|
+|Zawijanie tekstu|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączyć zawijanie i Włącz w **edytora tekstów wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**   >  **Wszystkie języki**).|
 |Zaznaczanie komentarzy|Dodaje komentarz znaków do zaznaczenia lub bieżącego wiersza.|
 |Usuń znaczniki komentarza zaznaczenia|Usuwa znaki komentarza z zaznaczenie lub bieżącego wiersza.|
 |Zwiększ wcięcie wiersza|Dodaje kartę (lub równoważne spacji) do wybranych wierszy lub bieżącego wiersza.|
@@ -70,9 +70,9 @@ Liczba zaawansowanych funkcji można znaleźć w **Edytuj** > **zaawansowane** m
 
 ## <a name="navigate-and-find-code"></a>Nawigację i znalezienie kodu
 
-Można przenosić w edytorze kodu kilka różnych sposobów, łącznie z nawigowania wstecz i przekazuje do poprzednich punktów wstawiania, wyświetlanie definicji typu lub elementu członkowskiego i przejście do określonej metody za pomocą paska nawigacji. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie](navigating-code.md).
+Można przenosić w edytorze kodu kilka różnych sposobów, łącznie z nawigowania wstecz i przekazuje do poprzednich punktów wstawiania, wyświetlanie definicji typu lub elementu członkowskiego i przejście do określonej metody za pomocą paska nawigacji. Aby uzyskać więcej informacji, zobacz [Przejdź kodu](navigating-code.md).
 
-## <a name="finding-references-in-your-code-base"></a>Trwa znajdowanie odwołań w kodzie
+## <a name="find-references-in-your-code-base"></a>Znajdowanie odwołań w kodzie
 
 Aby dowiedzieć się, gdy elementy określonego kodu są przywoływane w całym baza kodu, można użyć **Znajdź wszystkie odwołania** polecenia. Ponadto po kliknięciu typu lub elementu członkowskiego, **podświetlanie odwołań** funkcji automatycznie prezentuje wszystkie odwołania do tego typu lub elementu członkowskiego. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
 
@@ -82,7 +82,7 @@ Można udostępnić ustawienia programu Visual Studio z innego projektanta, mie�
 
 Aby zdefiniowane klawisze dostępu nowe lub zmienione istniejących klawisze dostępu, przejdź do **narzędzia** > **opcje** > **środowiska**  >  **Klawiatury**. Aby uzyskać więcej informacji na temat klawisze dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Aby uzyskać więcej informacji dotyczących dostosowywania edytora, zobacz [dopasowywanie edytora](../ide/customizing-the-editor.md). Opcji edytora specyficznych dla języka JavaScript, zobacz [opcji edytora JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Aby uzyskać więcej informacji dotyczących dostosowywania edytora, zobacz [dostosowanie edytora do](../ide/customizing-the-editor.md). Opcji edytora specyficznych dla języka JavaScript, zobacz [opcji edytora JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Zobacz także
 

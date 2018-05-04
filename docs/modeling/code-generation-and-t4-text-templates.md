@@ -17,19 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a2b6ef6e73fcc4b3fe754377bdad5fdc05eef2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generowanie kodu i szablony tekstowe T4
-W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *szablonu tekstowego T4* jest mieszaniną bloki tekstu i logiki kontroli, które można wygenerować pliku tekstowego. Logika kontroli są zapisywane jako fragmenty kodu programu w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. W programie Visual Studio 2015 Update 2 lub nowszy można użyć funkcji w wersji 6.0 C# w dyrektywach szablony T4. Wygenerowany plik może być tekst dowolnego rodzaju, takich jak strony sieci Web lub plik zasobu lub kodu źródłowego program w dowolnym języku.
 
- Istnieją dwa rodzaje szablonów tekstowych T4:
+W programie Visual Studio *szablonu tekstowego T4* jest mieszaniną bloki tekstu i logiki kontroli, które można wygenerować pliku tekstowego. Logika kontroli są zapisywane jako fragmenty kodu programu w [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. W programie Visual Studio 2015 Update 2 lub nowszy można użyć funkcji w wersji 6.0 C# w dyrektywach szablony T4. Wygenerowany plik może być tekst dowolnego rodzaju, takich jak strony sieci Web lub plik zasobu lub kodu źródłowego program w dowolnym języku.
 
- **Uruchom szablonów tekstowych T4 czasu** ("wstępnie przetworzony" Szablony) są wykonywane w aplikacji do tworzenia ciągów tekstowych, zazwyczaj jako część dane wyjściowe.
-Na przykład można utworzyć szablonu, aby zdefiniować strony HTML:
+Istnieją dwa rodzaje szablonów tekstowych T4: Uruchom czasu i w czasie projektowania.
+
+## <a name="run-time-t4-text-templates"></a>Uruchom szablonów tekstowych T4 czasu
+
+Znany również jako "wstępnie przetworzonych" Szablony, uruchom szablony czasu są wykonywane w aplikacji do tworzenia ciągów tekstowych, zazwyczaj jako część dane wyjściowe. Na przykład można utworzyć szablonu, aby zdefiniować strony HTML:
 
 ```
 <html><body>
@@ -37,30 +39,30 @@ Na przykład można utworzyć szablonu, aby zdefiniować strony HTML:
 </body></html>
 ```
 
- Zwróć uwagę, że szablon jest podobny wygenerowanych danych wyjściowych. Podobieństwa szablonu, aby dane wyjściowe pomaga uniknąć pomyłek, jeśli chcesz je zmienić.
+Zwróć uwagę, że szablon jest podobny wygenerowanych danych wyjściowych. Podobieństwa szablonu, aby dane wyjściowe pomaga uniknąć pomyłek, jeśli chcesz je zmienić.
 
- Ponadto szablon zawiera fragmenty kodu programu. Powtarzaj fragmentów tekstu, aby sekcje warunkowe i umożliwia wyświetlanie danych z aplikacji, można użyć tych fragmentów.
+Ponadto szablon zawiera fragmenty kodu programu. Powtarzaj fragmentów tekstu, aby sekcje warunkowe i umożliwia wyświetlanie danych z aplikacji, można użyć tych fragmentów.
 
- Do generowania danych wyjściowych, aplikacja wywołuje funkcję, która jest generowana przez szablon. Na przykład:
+Do generowania danych wyjściowych, aplikacja wywołuje funkcję, która jest generowana przez szablon. Na przykład:
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
-
 ```
 
- Aplikację można uruchomić na komputerze, na którym nie ma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowane.
+Aplikację można uruchomić na komputerze, na którym nie ma zainstalowanego programu Visual Studio.
 
- Aby utworzyć szablon czasu wykonywania, Dodaj **szablonu tekstowego preprocesora** plik do projektu. Alternatywnie możesz dodać plik tekstowy i ustawić jej **narzędzie niestandardowe** właściwości **texttemplatingfilepreprocessor —**.
+Aby utworzyć szablon czasu wykonywania, Dodaj **szablonu tekstowego preprocesora** plik do projektu. Alternatywnie możesz dodać plik tekstowy i ustawić jej **narzędzie niestandardowe** właściwości **texttemplatingfilepreprocessor —**.
 
- Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania z szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Aby uzyskać więcej informacji na temat składni szablonów, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
+Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania z szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Aby uzyskać więcej informacji na temat składni szablonów, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
- **Szablony tekstowe T4 czasu projektowania** są wykonywane w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do definiowania częścią kodu źródłowego i innych zasobów aplikacji.
-Zwykle będzie przy użyciu kilku szablonów, które odczytywanie danych w jednym pliku wejściowego lub bazy danych, a niektóre Generowanie Twojej `.cs`, `.vb`, lub innych plików źródłowych. Każdy szablon generuje jeden plik. Są one wykonywane w ramach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+## <a name="design-time-t4-text-templates"></a>Szablony tekstowe T4 czasu projektowania
 
- Na przykład dane wejściowe mogą być pliku XML konfiguracji danych. Edytowanie pliku XML podczas tworzenia szablonów tekstowych będzie ponownie wygenerować części kodu aplikacji. Jeden z szablonów można podobne do następujących:
+Szablony czasu projektowania zdefiniuj częścią kodu źródłowego i innych zasobów aplikacji. Zazwyczaj przy użyciu kilku szablonów, które odczytywanie danych w jednym pliku wejściowego lub bazy danych, a niektóre Generowanie Twojej *.cs*, *.vb*, lub innych plików źródłowych. Każdy szablon generuje jeden plik. Są one wykonywane w programie Visual Studio lub MSBuild.
+
+Na przykład dane wejściowe mogą być pliku XML konfiguracji danych. Edytowanie pliku XML podczas tworzenia szablonów tekstowych ponownie wygenerować części kodu aplikacji. Jeden z szablonów można podobne do następujących:
 
 ```
-<#@ output extension=".txt" #>
+<#@ output extension=".cs" #>
 <#@ assembly name="System.Xml" #>
 <#
  System.Xml.XmlDocument configurationData = ...; // Read a data file here.
@@ -69,10 +71,9 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 {
   ... // More code here.
 }
-
 ```
 
- Zależne od wartości w pliku XML, wygenerowany `.cs` pliku będzie podobne do następujących:
+W zależności od wartości w pliku XML, wygenerowany *.cs* pliku będzie podobne do następujących:
 
 ```
 namespace Fabrikam.FirstJob
@@ -81,35 +82,18 @@ namespace Fabrikam.FirstJob
 }
 ```
 
- Inny przykład wejściowy może być diagram przepływu pracy w działalności biznesowej. Gdy użytkownicy zmieniać ich biznesowego przepływu pracy lub po rozpoczęciu pracy z nowych użytkowników, którzy mają różne przepływu pracy, jest proste można ponownie wygenerować kod, aby pomieścić nowy model.
+Inny przykład wejściowy może być diagram przepływu pracy w działalności biznesowej. Gdy użytkownicy zmieniać ich biznesowego przepływu pracy lub po rozpoczęciu pracy z nowych użytkowników, którzy mają różne przepływu pracy, jest proste można ponownie wygenerować kod, aby pomieścić nowy model.
 
- Szablony czasu projektowania stał się szybsze i bardziej niezawodny, aby zmienić konfigurację zmiany wymagań. Zwykle dane wejściowe zdefiniowano pod względem wymagań biznesowych, jak pokazano w przykładzie przepływ pracy. Ułatwia to omówiono w nim zmiany z użytkownikami. Szablony czasu projektowania w związku z tym są przydatne narzędzia w procesie elastyczne programowanie.
+Szablony czasu projektowania stał się szybsze i bardziej niezawodny, aby zmienić konfigurację zmiany wymagań. Zwykle dane wejściowe zdefiniowano pod względem wymagań biznesowych, jak pokazano w przykładzie przepływ pracy. Ułatwia to omówiono w nim zmiany z użytkownikami. Szablony czasu projektowania w związku z tym są przydatne narzędzia w procesie elastyczne programowanie.
 
- Aby utworzyć szablon czasu projektowania, Dodaj **szablonu tekstowego** plik do projektu. Alternatywnie możesz dodać plik tekstowy i ustawić jej **narzędzie niestandardowe** właściwości **texttemplatingfilegenerator —**.
+Aby utworzyć szablon czasu projektowania, Dodaj **szablonu tekstowego** plik do projektu. Alternatywnie możesz dodać plik tekstowy i ustawić jej **narzędzie niestandardowe** właściwości **texttemplatingfilegenerator —**.
 
- Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Aby uzyskać więcej informacji na temat składni szablonów, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
+Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Aby uzyskać więcej informacji na temat składni szablonów, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Termin *modelu* jest czasami używana do opisu danych odczytywane przez jeden lub więcej szablonów. Model może być w dowolnym formacie, w dowolny plik lub bazy danych. Nie ma być modelu UML lub model języka specyficznego dla domeny. "Modelu" tylko wskazuje, czy dane można zdefiniować w kategoriach koncepcje biznesowe, a nie podobny kod.
+> Termin *modelu* jest czasami używana do opisu danych odczytywane przez jeden lub więcej szablonów. Model może być w dowolnym formacie, w dowolny plik lub bazy danych. Nie ma być modelu UML lub model języka specyficznego dla domeny. "Modelu" tylko wskazuje, czy dane można zdefiniować w kategoriach koncepcje biznesowe, a nie podobny kod.
 
- Nosi nazwę funkcji transformacji szablonu tekstowego *T4*.
-
-## <a name="in-this-section"></a>W tej sekcji
- [Generowanie tekstu czasu wykonywania z szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md) w dowolnej aplikacji, które generuje pliki tekstowe, szablony tekstowe prekompilowany jest łatwy i niezawodny metodą Definiowanie tekstu. Jednak ta metoda nie może służyć do szablonów tekstowych, które zmieniają się w czasie wykonywania.
-
- [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) generowanie kodu i innych zasobów z modelu pozwala zaktualizować aplikacji, aktualizując modelu.
-
- [Generowanie w procesie kompilacji kodu](../modeling/code-generation-in-a-build-process.md) po zainstalowaniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania zestawu SDK, można zapewnić wygenerowanego oprogramowania będzie zawsze aktualny zmian w modelu.
-
- [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md) składni szablonu pliku tekstowego.
-
- [Wskazówki: Generowanie kodu przy użyciu szablonów tekstowych](../modeling/walkthrough-generating-code-by-using-text-templates.md) pokaz sposób użycia generowania kodu.
-
- [Debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md) debugowanie szablony tekstowe i typowych błędów szablonu tekstu.
-
- [Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) narzędzie wiersza polecenia, które służy do uruchomienia transformacji szablonu tekstowego.
-
- [Dopasowanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md) jak napisać procesory dyrektywy i hosty tworzenia szablonów niestandardowych dla źródeł danych.
+Nosi nazwę funkcji transformacji szablonu tekstowego *T4*.
 
 ## <a name="see-also"></a>Zobacz też
 

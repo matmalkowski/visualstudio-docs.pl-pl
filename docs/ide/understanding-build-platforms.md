@@ -1,5 +1,5 @@
 ---
-title: Ogólne informacje o platformach kompilacji
+title: Informacje o platformach kompilacji
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc8bb2eddf756b238b88e79050552caef945d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-platforms"></a>Informacje o platformach kompilacji
 
@@ -36,6 +36,6 @@ Można przechowywać różne wersje właściwości rozwiązań i projektów, kt�
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
-- [Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
+- [Wskazówki: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Tworzenie i wyczyścić projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Kompilowanie i kompilacji](../ide/compiling-and-building-in-visual-studio.md)

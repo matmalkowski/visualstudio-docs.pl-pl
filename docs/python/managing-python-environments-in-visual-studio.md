@@ -11,17 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d66a61693497826117715be9a9f8b96ea0e4f7c3
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiska Python w programie Visual Studio
 
 Python *środowiska* jest kontekst, w którym można uruchomić kod języka Python i zawiera globalny, wirtualne i środowisk conda. Środowisko składa się z tłumacza, biblioteki (zazwyczaj Python standardowa biblioteka) i zestaw zainstalowanych pakietów. Te składniki wspólnie określają, które konstrukcji języka i składni są prawidłowe, jakiego systemu operacyjnego funkcje są dostępne, a które pakietów, należy użyć.
 
-W programie Visual Studio w systemie Windows [środowiska Python](#managing-python-environments-in-visual-studio) okno, zgodnie z opisem w tym artykule jest gdzie zarządzać tych środowisk i wybierz jedno jako domyślne dla nowych projektów. Dla żadnego danego projektu można również wybierz określone środowisko, zamiast Użyj wartości domyślnej.
+W programie Visual Studio w systemie Windows [okno środowiska Python](#the-python-environments-window) okno, zgodnie z opisem w tym artykule jest gdzie zarządzać tych środowisk i wybierz jedno jako domyślne dla nowych projektów. Dla żadnego danego projektu można również wybierz określone środowisko, zamiast Użyj wartości domyślnej.
 
 **Uwaga**: Jeśli jesteś nowym użytkownikiem Python w programie Visual Studio, zobacz następujące artykuły w tle konieczne:
 

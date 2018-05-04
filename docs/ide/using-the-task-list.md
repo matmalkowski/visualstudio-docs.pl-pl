@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z listy zadań
+title: Zapoznaj się z listą zadań
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>Korzystanie z listy zadań
+# <a name="use-the-task-list"></a>Zapoznaj się z listą zadań
 
 Użyj **listy zadań** do śledzenia komentarze w kodzie, takich jak używających tokenów `TODO` i `HACK`, lub tokeny niestandardowe i zarządzać skrótów, które spowoduje przejście bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Kliknij element na liście, aby przejść do lokalizacji w kodzie źródłowym.
 
@@ -30,29 +30,29 @@ Użyj **listy zadań** do śledzenia komentarze w kodzie, takich jak używający
 
 Gdy **listy zadań** jest otwarty, prawdopodobnie w dolnej części okna aplikacji.
 
-### <a name="to-open-the-task-list"></a>Aby otworzyć Listę zadań
+### <a name="open-the-task-list"></a>Otwarcie listy zadań
 
-- Na **widoku** menu, wybierz **listy zadań** (klawiatury: Ctrl +\\, T).
+- Na **widoku** menu, wybierz **listy zadań** (klawiatury: **Ctrl**+**\\**,**T**).
 
     ![W oknie Lista zadań](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>Aby zmienić kolejność sortowania listy
+### <a name="change-the-sort-order-of-the-list"></a>Zmień kolejność sortowania listy
 
 - Kliknij nagłówek dowolnej kolumny. Aby dalej zawęzić wyniki wyszukiwania, naciśnij klawisz Shift i kliknij nagłówek drugiej kolumny.
 
-     Alternatywnie, w menu skrótów wybierz **sortować**i wybierz nagłówek. Aby dalej zawęzić wyniki wyszukiwania, naciśnij klawisz Shift i wybierz drugi nagłówek.
+     Alternatywnie, w menu skrótów wybierz **sortować**i wybierz nagłówek. Aby uściślić wyniki wyszukiwania, naciśnij klawisz **Shift** i wybierz nagłówek drugiego.
 
-### <a name="to-show-or-hide-columns"></a>Aby pokazać lub ukryć kolumny
+### <a name="show-or-hide-columns"></a>Pokazywanie lub ukrywanie kolumn
 
 - W menu skrótów wybierz **Pokaż kolumny**. Wybierz kolumny, które chcesz pokazać lub ukryć.
 
-### <a name="to-change-the-order-of-the-columns"></a>Aby zmienić kolejność kolumn
+### <a name="change-the-order-of-the-columns"></a>Zmień kolejność kolumn
 
 - Przeciągnij dowolny nagłówek kolumny do żądanej lokalizacji.
 
 ## <a name="user-tasks"></a>Zadania użytkownika
 
-Funkcja zadań użytkownika została usunięta począwszy od programu Visual Studio 2015. Po otwarciu rozwiązania, które są dane zadanie użytkownika z Visual Studio 2013 i starszej danych zadań użytkownika w pliku .suo nie zostaną zmienione, ale użytkownika zadania nie będą wyświetlane na liście zadań.
+Funkcja zadań użytkownika została usunięta począwszy od programu Visual Studio 2015. Po otwarciu rozwiązania, które zawiera dane zadanie użytkownika z Visual Studio 2013 i starszych wersji użytkownika zadań danych w sieci *.suo* pliku nie zostaną zmienione, ale użytkownika zadania nie będą wyświetlane na liście zadań.
 
 Jeśli chcesz nadal dostępu i zaktualizować swoje dane zadań należy Otwórz projekt w programie Visual Studio 2013 i skopiuj zawartość żadnych zadań użytkownika do narzędzia do zarządzania projektem preferowanych sieci (na przykład Team Foundation Server).
 
@@ -74,11 +74,11 @@ Ponieważ `TODO` jest wstępnie zdefiniowanej tokenu, ten komentarz jest wyświe
 
 ###  <a name="customTokens"></a> Tokeny niestandardowe
 
-Domyślnie program Visual Studio zawiera następujących tokenów: HACK, TODO, COFNIĘTO, Uwaga. Nie są z uwzględnieniem wielkości liter.
+Domyślnie program Visual Studio zawiera następujących tokenów: `HACK`, `TODO`, `UNDONE`, `NOTE`. Nie są z uwzględnieniem wielkości liter.
 
 Można również utworzyć własne niestandardowe tokeny.
 
-#### <a name="to-create-a-custom-token"></a>Aby utworzyć niestandardowy token
+#### <a name="create-a-custom-token"></a>Tworzenie tokenu niestandardowego
 
 1. Na **narzędzia** menu, wybierz **opcje**.
 
@@ -96,7 +96,7 @@ Można również utworzyć własne niestandardowe tokeny.
 
 Domyślnie komentarze C++ TODO są wyświetlane w **listy zadań** okna. Aby zmienić to zachowanie.
 
-#### <a name="to-turn-off-c-todo-comments"></a>Aby wyłączyć komentarze C++ TODO
+#### <a name="turn-off-c-todo-comments"></a>Wyłącz komentarze C++ TODO
 
 Na **narzędzia** menu, wybierz **opcje** > **Edytor tekstu** > **C/C++**  >   **Widok** > **wyliczyć komentarz do zadań** i ustaw wartość false.
 
@@ -106,12 +106,12 @@ A *skrótów* jest zakładek w kodzie, które są śledzone w **listy zadań**; 
 
 ![Ikona skrótu listy zadań programu Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>Aby utworzyć skrót
+### <a name="create-a-shortcut"></a>Tworzenie skrótu
 
-Aby utworzyć skrót, Wstaw wskaźnik do kodu, w której chcesz umieścić skrót. Wybierz **Edytuj** > **zakładki** > **Dodaj skrót do listy zadań** lub naciśnij klawisz **Ctrl**  +  **K**, **Ctrl** + **H**.
+Aby utworzyć skrót, Wstaw wskaźnik do kodu, w której chcesz umieścić skrót. Wybierz **Edytuj** > **zakładki** > **Dodaj skrót do listy zadań** lub naciśnij klawisz **Ctrl** + **K**, **Ctrl**+**H**.
 
 Do nawigowania skróty w kodzie, wybierz skrót na liście, a następnie wybierz **następne zadanie** lub **poprzednie zadanie** z menu skrótów.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zadanie listy, środowisko, opcje — Okno dialogowe](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Lista, środowisko, opcje — Okno dialogowe zadań](../ide/reference/task-list-environment-options-dialog-box.md)

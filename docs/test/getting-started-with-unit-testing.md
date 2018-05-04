@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39ec333cd7d3bebebe8baacd1c8a27f22e2b9cb4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do przeprowadzania testów jednostkowych
 
@@ -70,6 +70,9 @@ Można również utworzyć testu jednostkowego klas zastępczych metody z **twor
 ## <a name="view-live-unit-test-results"></a>Wyświetlanie wyników testu jednostki na żywo
 
 Jeśli używasz MSTest, xUnit lub NUnit framework testowych w Visual Studio 2017 lub nowszej widoczny na żywo wyniki testów jednostkowych.
+
+> [!NOTE]
+> Testy jednostkowe na żywo jest tylko dostępne w programie Visual Studio 2017 Enterprise Edition.
 
 1. Włącz testy z jednostkowe na żywo **testu** menu.
 

@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa uruchamiania testu przez użytkownika wirtualnego
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytuj mieszanego modelu testu w celu określania prawdopodobieństwa uruchamiania testu przez użytkownika wirtualnego
 
 *Model testu mieszanego* określa prawdopodobieństwo wirtualnego użytkownika wykonywanie testu danego scenariusza testu obciążenia. Umożliwia to bardziej realistycznie symulować obciążenia. Zamiast tylko jeden przepływ pracy za pośrednictwem aplikacji może mieć wielu przepływów pracy, czyli bliżej zbliżenia interakcje użytkowników końcowych z aplikacji.
 
 ## <a name="test-mix-model-options"></a>Opcje Model mieszanki testów
- Można określić jedną z następujących opcji model testu mieszanego dla danego scenariusza testu obciążenia:
+
+Można określić jedną z następujących opcji model testu mieszanego dla danego scenariusza testu obciążenia:
 
 -   **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostce sieci Web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Po zakończeniu testu obciążenia liczba uruchomień poszczególnego testu pasuje dystrybucji przypisanych testu. Ten model testu mieszanego należy użyć, jeśli test mieszany oparty jest w procentach transakcji w dzienniku usług IIS lub w danych produkcyjnych.
 

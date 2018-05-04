@@ -1,5 +1,5 @@
 ---
-title: Uprawnienia użytkownika i program Visual Studio
+title: Uprawnienia użytkownika i programu Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,13 +14,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96835e0f884494f4a6b94aa1a311b40e8a9d8ad9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 168fb9441080a9c8f61d703485b0274d91dc3189
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
+# <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i programu Visual Studio
 
 Ze względów bezpieczeństwa należy uruchamiać Visual Studio jako zwykły użytkownik w każdym przypadku, gdy jest to możliwe.
 
@@ -32,26 +32,26 @@ Jako zwykły użytkownik możesz zrobić w środowisku IDE programu Visual Studi
 |Obszar|Zadanie|Więcej informacji|
 |----------|----------|--------------------------|
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
-||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Instalowanie zawartości lokalnej i zarządzanie nią](../ide/install-and-manage-local-content.md)|
+||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Zainstaluj i Zarządzaj zawartości lokalnej](../ide/install-and-manage-local-content.md)|
 |Typy aplikacji|Tworzenie rozwiązań programu SharePoint.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
 ||Uzyskanie licencji dewelopera dla [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Uzyskać licencji dewelopera](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Przybornik|Dodawanie klasycznego modelu COM formantów do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|
 |Dodatki|Instalowanie i używanie dodatków, które zostały napisane przy użyciu klasycznego modelu COM w IDE.|[Tworzenie dodatków i kreatorów](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Kompilowanie|Używanie zdarzeń mających miejsce po kompilacji, które rejestrują składnik.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-||Włączanie etapu rejestracji podczas kompilowania projektów języka C++.|[Ogólne informacje o niestandardowych krokach budowania lub zdarzeniach kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-|Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
+|Kompilowanie|Używanie zdarzeń mających miejsce po kompilacji, które rejestrują składnik.|[Niestandardowe kroki procesu kompilacji zrozumieć i zdarzenia kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||Włączanie etapu rejestracji podczas kompilowania projektów języka C++.|[Niestandardowe kroki procesu kompilacji zrozumieć i zdarzenia kompilacji](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Debugowanie|Debugowanie aplikacji, które działają z podwyższonymi uprawnieniami.|[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)|
 ||Debugowanie aplikacji, które działają na innym koncie użytkownika, takich jak witryny sieci Web programu ASP.NET.|[Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||Debugowanie w strefie dla aplikacji przeglądarki XAML (XBAP).|[Host WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||Debugowanie projektów usług w chmurze Microsoft Azure przy użyciu emulatora.|[Debugowanie usługi w chmurze w programie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
+||Debugowanie projektów usług w chmurze Microsoft Azure przy użyciu emulatora.|[Usługi w chmurze w programie Visual Studio debugowania](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Konfigurowanie zapory do zdalnego debugowania.|[Debugowanie zdalne](../debugger/remote-debugging.md)|
 |Narzędzia wydajności|Profilowanie aplikacji.|[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)|
-|wdrażania|Wdrażanie aplikacji sieci Web do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web ASP.NET przy użyciu programu Visual Studio lub Visual Web Developer u dostawcy hostingu: Wdrażanie usług IIS jako środowisko testowe](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|wdrażania|Wdrażanie aplikacji sieci Web do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web platformy ASP.NET u dostawcy hostingu za pomocą programu Visual Studio lub Visual Web Developer: Wdrażanie usług IIS jako środowisko testowe](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Uruchamianie programu Visual Studio jako administrator
+## <a name="run-visual-studio-as-an-administrator"></a>Uruchom program Visual Studio jako administrator
 
 Możesz uruchomić program Visual Studio z uprawnieniami administracyjnymi przy każdym uruchomieniu IDE lub zmodyfikować skrót aplikacji, aby program był zawsze uruchamiany z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz Pomoc systemu Windows.
 
-### <a name="to-run-visual-studio-with-administrative-permissions"></a>Aby uruchomić program Visual Studio z uprawnieniami administracyjnymi
+### <a name="run-visual-studio-with-administrative-permissions"></a>Uruchom program Visual Studio z uprawnieniami administracyjnymi
 
 Te instrukcje dotyczą systemu Windows 10. Są one podobne w innych wersjach systemu Windows.
 
@@ -63,5 +63,5 @@ Te instrukcje dotyczą systemu Windows 10. Są one podobne w innych wersjach sys
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Port, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Instalowanie programu Visual Studio](../install/install-visual-studio.md)

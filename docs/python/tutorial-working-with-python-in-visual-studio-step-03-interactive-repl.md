@@ -1,5 +1,5 @@
 ---
-title: Praca z samouczka Python, krok 3 okno interaktywne REPL
+title: Praca z samouczka Python, krok 3, interaktywny REPL
 description: Krok 3 przewodnika podstawowe możliwości języka Python w programie Visual Studio, obejmujące okno Python interaktywny REPL.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: aface4f125ea8c5a4209e4f220330f15c8ed6d1c
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: W oknie interaktywny REPL
 
