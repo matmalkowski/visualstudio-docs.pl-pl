@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168fb9441080a9c8f61d703485b0274d91dc3189
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i programu Visual Studio
 
@@ -33,7 +33,7 @@ Jako zwykły użytkownik możesz zrobić w środowisku IDE programu Visual Studi
 |----------|----------|--------------------------|
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości Pomocy.|[Zainstaluj i Zarządzaj zawartości lokalnej](../ide/install-and-manage-local-content.md)|
-|Typy aplikacji|Tworzenie rozwiązań programu SharePoint.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+|Typy aplikacji|Tworzenie rozwiązań programu SharePoint.|[Wymagania związane z opracowywaniem rozwiązań SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
 ||Uzyskanie licencji dewelopera dla [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Uzyskać licencji dewelopera](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Przybornik|Dodawanie klasycznego modelu COM formantów do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|
 |Dodatki|Instalowanie i używanie dodatków, które zostały napisane przy użyciu klasycznego modelu COM w IDE.|[Tworzenie dodatków i kreatorów](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
@@ -46,6 +46,7 @@ Jako zwykły użytkownik możesz zrobić w środowisku IDE programu Visual Studi
 ||Konfigurowanie zapory do zdalnego debugowania.|[Debugowanie zdalne](../debugger/remote-debugging.md)|
 |Narzędzia wydajności|Profilowanie aplikacji.|[Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)|
 |wdrażania|Wdrażanie aplikacji sieci Web do usług Internet Information Services (IIS) na komputerze lokalnym.|[Wdrażanie aplikacji sieci Web platformy ASP.NET u dostawcy hostingu za pomocą programu Visual Studio lub Visual Web Developer: Wdrażanie usług IIS jako środowisko testowe](http://go.microsoft.com/fwlink/?LinkId=266478)|
+>>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Uruchom program Visual Studio jako administrator
 

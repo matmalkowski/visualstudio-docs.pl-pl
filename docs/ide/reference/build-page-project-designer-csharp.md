@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 153a297dea3b392031a07cdc1442070f9cdceba3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 Użyj **kompilacji** strony **projektanta projektu** można określać właściwości konfiguracji kompilacji projektu. Ta strona dotyczy [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tylko projekty.
@@ -32,7 +32,7 @@ Aby uzyskać dostęp do **kompilacji** wybierz węzeł projektu (nie **rozwiąza
 Poniższe opcje pozwalają wybrać configuration i platform, aby wyświetlić lub zmodyfikować.
 
 > [!NOTE]
-> Z konfiguracjami kompilacji uproszczony system projektu określa, czy do kompilacji debugowania lub wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie debugowania i konfiguracje wydania](/debugger/how-to-set-debug-and-release-configurations.md).
+> Z konfiguracjami kompilacji uproszczony system projektu określa, czy do kompilacji debugowania lub wersji. Dlatego te opcje nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie debugowania i konfiguracje wydania](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfiguracja** Określa, które ustawienia konfiguracji, aby wyświetlić lub zmodyfikować. Te ustawienia mogą być **aktywny (debugowanie)** (to jest wartość domyślna), **debugowania**, **wersji**, lub **wszystkie konfiguracje**.
 

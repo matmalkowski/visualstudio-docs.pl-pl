@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87d123e4da3d27d9b8c3ac1db5c3d02fe4b5ac44
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-5-authenticate-users-in-django"></a>Samouczek krok 5: uwierzytelnianie użytkowników w Django
 
@@ -209,4 +209,4 @@ Odpowiedź: `{% crsf_token %}` znacznik zawiera wbudowane w Django [międzylokac
 ## <a name="going-deeper"></a>Przechodząc głębiej
 
 - [Uwierzytelnianie użytkownika w Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python próbki vs — Dowiedz się django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

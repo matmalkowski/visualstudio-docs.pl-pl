@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Samouczek krok 6: należy użyć szablonu projektu sieci Web Django sond
 
@@ -361,7 +361,7 @@ Wywołanie `admin.site.register` tej klasy łączy się następnie z modelu (`Po
 ## <a name="next-steps"></a>Następne kroki
 
 > [!Note]
-> Jeśli do kontroli źródła w toku w tym samouczku zostały zostały zatwierdzania rozwiązania Visual Studio, teraz jest odpowiedni moment, aby czy innego zatwierdzania. Rozwiązanie powinno być zgodne kod źródłowy samouczek w witrynie GitHub: [Microsoft/python próbki vs — Dowiedz się django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Jeśli do kontroli źródła w toku w tym samouczku zostały zostały zatwierdzania rozwiązania Visual Studio, teraz jest odpowiedni moment, aby czy innego zatwierdzania. Rozwiązanie powinno być zgodne kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Teraz zostały przedstawione całości "Pusty projekt sieci Web Django", "Projekt sieci Web Django" i "Projektu sieci Web Django sond" szablonów w programie Visual Studio. Samouczka podstawy Django, takich jak przy użyciu widoków i szablonów i zostały przedstawione routingu, uwierzytelnianie i przy użyciu modelu bazy danych. Teraz można utworzyć aplikację sieci web własny z widoków i modeli, które są potrzebne.
 

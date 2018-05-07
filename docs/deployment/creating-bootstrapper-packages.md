@@ -1,7 +1,7 @@
 ---
-title: Tworzenie pakietów programu inicjującego | Dokumentacja firmy Microsoft
+title: Tworzenie pakietów programu inicjującego
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/02/2018
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
@@ -22,81 +22,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 794d569504e46627c9387046b381fdb843a7818e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
-Program instalacyjny jest ogólny Instalatora, które mogą być skonfigurowane do wykrywania i zainstaluj pakiet redystrybucyjny składniki, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest nazywana programu inicjującego. Jest on zaprogramowane za pomocą zestawu Manifesty XML, określających metadanych do zarządzania instalacją składnika.  
+# <a name="create-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
+Program instalacyjny jest ogólny Instalatora, które mogą być skonfigurowane do wykrywania i zainstaluj pakiet redystrybucyjny składniki, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest nazywana programu inicjującego. Jest on zaprogramowane za pomocą zestawu Manifesty XML, określających metadanych do zarządzania instalacją składnika.  Każdy składnik redystrybucyjny lub wymagań wstępnych, jest pakiet programu inicjującego. Pakiet programu inicjującego to grupa katalogów i plików, które zawierają pliki manifestu, które opisują sposób instalacji wymagań wstępnych. 
   
- Program inicjujący najpierw wykrywa, czy wszelkie wymagania wstępne są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw inicjujący zawiera umowy licencyjne. Drugie po użytkownik końcowy akceptuje umów licencyjnych, instalacja rozpocznie się wymagań wstępnych. W przeciwnym razie jeśli wszystkie wymagania wstępne zostaną wykryte, inicjujący tylko uruchamiania Instalatora aplikacji.  
+Program inicjujący najpierw wykrywa, czy wszelkie wymagania wstępne są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw inicjujący zawiera umowy licencyjne. Drugie po użytkownik końcowy akceptuje umów licencyjnych, instalacja rozpocznie się wymagań wstępnych. W przeciwnym razie jeśli wszystkie wymagania wstępne zostaną wykryte, inicjujący tylko uruchamiania Instalatora aplikacji.  
   
-## <a name="creating-custom-packages"></a>Tworzenie niestandardowych pakietów  
- Manifesty można wygenerować za pomocą edytora XML w Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md) i [porady: tworzenie manifestu produkt](../deployment/how-to-create-a-product-manifest.md). Aby zapoznać się z przykładem tworzenia pakietu programu inicjującego, zobacz [wskazówki: Tworzenie niestandardowego programu inicjującego wyświetlającego monitu prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+## <a name="create-custom-bootstrapper-packages"></a>Utwórz niestandardowe pakiety programu inicjującego  
+Manifesty programu inicjującego można wygenerować za pomocą edytora XML w Visual Studio. Aby zapoznać się z przykładem tworzenia pakietu programu inicjującego, zobacz [wskazówki: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
- Aby utworzyć pakiet programu inicjującego, należy podać pakietu redystrybucyjnego w formie pliku EXE lub MSI file.to Generator manifestu programu inicjującego. Następnie Generator manifestu programu inicjującego tworzy następujące pliki:  
+Aby utworzyć pakiet programu inicjującego, możesz konieczne tworzenie manifestu produkt i, dla każdego zlokalizowanych wersji składnika, jak również manifestu pakietu.
   
--   Manifest produktu product.xml, który zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera wspólne dla wszystkie zlokalizowane wersje składnik redystrybucyjny metadanych.  
+* Manifest produktu *product.xml*, zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera wspólne dla wszystkie zlokalizowane wersje składnik redystrybucyjny metadanych.  Aby utworzyć ten plik, zobacz [porady: tworzenie manifestu produkt](../deployment/how-to-create-a-product-manifest.md).
   
--   Manifest pakietu plik package.xml zawierającego metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty. Składnik musi mieć co najmniej jeden manifest pakietu dla każdego zlokalizowanej wersji tego składnika.  
+* Manifest pakietu *plik package.xml*, zawiera metadane specyficzne dla języka; zwykle zawiera zlokalizowane komunikaty. Składnik musi mieć co najmniej jeden manifest pakietu dla każdego zlokalizowanej wersji tego składnika. Aby utworzyć ten plik, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).
   
- Po utworzeniu te pliki poddane folder o nazwie niestandardowego programu inicjującego pliku manifestu produktu. Plik manifestu pakietu przechodzi w folderze o nazwie dla ustawień regionalnych. Na przykład jeśli plik manifestu pakietu jest przeznaczony dla angielskiej wersji językowej redystrybucji, należy umieścić plik do folderu o nazwie en. Powtórz ten proces dla każdego ustawienia regionalne, takie jak Japonia w języku japońskim i de na język niemiecki. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
+Po utworzeniu te pliki poddane folder o nazwie niestandardowego programu inicjującego pliku manifestu produktu. Plik manifestu pakietu przechodzi w folderze o nazwie dla ustawień regionalnych. Na przykład jeśli plik manifestu pakietu jest przeznaczony dla angielskiej wersji językowej redystrybucji, należy umieścić plik do folderu o nazwie en. Powtórz ten proces dla każdego ustawienia regionalne, takie jak Japonia w języku japońskim i de na język niemiecki. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
+
+    ```
+    CustomBootstrapperPackage
+      product.xml
+      CustomBootstrapper.msi
+      de
+        eula.rtf
+        package.xml
+      en
+        eula.rtf
+        package.xml
+      ja
+        eula.rtf
+        package.xml
+    ```
   
- `CustomBootstrapperPackage`  
+Następnie skopiuj pliki redystrybucyjne do lokalizacji folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+ 
+    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+    
+lub  
+    
+    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
   
- `product.xml`  
+Można również określić lokalizację folderu programu inicjującego z **ścieżki** wartość w następującym kluczu rejestru:  
   
- `CustomBootstrapper.msi`  
+    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
- `de`  
+W systemach 64-bitowych należy użyć następującego klucza rejestru:  
   
- `eula.rtf`  
+    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
- `package.xml`  
+Każdy składnik redystrybucyjny pojawia się we własnym podfolderze w katalogu pakietów. Produkt manifestu i pakietu redystrybucyjnego pliki muszą znajdować się do tego podfolderu. Zlokalizowane wersje manifestów składnika i pakietu musi znajdować się w podfoldery o nazwach według nazwy kultury.  
   
- `en`  
+Gdy te pliki zostaną skopiowane do folderu programu inicjującego, pakiet programu inicjującego pojawia się automatycznie w programie Visual Studio **wymagania wstępne** okno dialogowe. Jeśli nie ma Twojego niestandardowy pakiet programu inicjującego, zamknij i ponownie otwórz **wymagania wstępne** okno dialogowe. Aby uzyskać więcej informacji, zobacz [wstępnie wymagane składniki — okno dialogowe](../ide/reference/prerequisites-dialog-box.md).  
   
- `eula.rtf`  
-  
- `package.xml`  
-  
- `ja`  
-  
- `eula.rtf`  
-  
- `package.xml`  
-  
- Na koniec skopiuj pliki redystrybucyjne do lokalizacji folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
-  
-```  
-\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- lub  
-  
-```  
-\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- Można również określić lokalizację folderu programu inicjującego z **ścieżki** wartość w następującym kluczu rejestru:  
-  
-```  
-HKLM\Software\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- W systemach 64-bitowych należy użyć następującego klucza rejestru:  
-  
-```  
-HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- Każdy składnik redystrybucyjny pojawia się we własnym podfolderze w katalogu pakietów. Produkt pliki manifestu i pakietu redystrybucyjnego są wprowadzane do tego podfolderu. Zlokalizowane wersje manifestów składnika i pakietu są umieszczane w podfoldery o nazwach według nazwy kultury.  
-  
- Gdy te pliki zostaną skopiowane do folderu programu inicjującego pakietu programu inicjującego automatycznie zostanie wyświetlony w oknie dialogowym wymagania wstępne programu Visual Studio. Nie ma Twojego niestandardowy pakiet programu inicjującego, zamknij i ponownie otworzyć okno dialogowe wymagania wstępne. Aby uzyskać więcej informacji, zobacz [wstępnie wymagane składniki — okno dialogowe](../ide/reference/prerequisites-dialog-box.md).  
-  
- W poniższej tabeli przedstawiono właściwości, które są wypełniane automatycznie przez program inicjujący.  
+W poniższej tabeli przedstawiono właściwości, które są wypełniane automatycznie przez program inicjujący.  
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
@@ -109,11 +92,11 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |Tryb instalacji|Tryb instalacji wskazuje, gdzie składnik musi zostać zainstalowany z. Następujące wartości:<br /><br /> -HomeSite — wstępnie wymagane składniki są instalowane z witryny sieci Web dostawcy.<br />-SpecificSite — wstępnie wymagane składniki są instalowane z wybranej lokalizacji.<br />-SameSite — wstępnie wymagane składniki są instalowane z tej samej lokalizacji co aplikacja.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Oddzielanie pakietów redystrybucyjnych z instalacje aplikacji  
- Aby zapobiec plików pakietu redystrybucyjnego wdrażany w projektach Instalatora. Aby to zrobić, należy utworzyć listę pakietu redystrybucyjnego w folderze redistlist — w katalogu .NET Framework:  
+Aby zapobiec plików pakietu redystrybucyjnego wdrażany w projektach Instalatora. Aby to zrobić, należy utworzyć listę pakietu redystrybucyjnego w folderze redistlist — w katalogu .NET Framework:  
   
- `%ProgramFiles%\Microsoft.NET\RedistList`  
+`%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Pakiet redystrybucyjny listy jest plik XML, który należy nazwę w następującym formacie: *nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak na przykład, jeśli składnik jest wywoływana przez xyz Datawidgets, użycie Acme.DataWidgets.RedistList.xml. Przykładem listy do dystrybucji zawartości, może wyglądać następująco:  
+Pakiet redystrybucyjny listy jest plik XML, który należy nazwę w następującym formacie: *nazwa firmy*. *Nazwa składnika*. RedistList.xml. Tak, na przykład, jeśli składnik jest wywoływana przez xyz Datawidgets, użycie *Acme.DataWidgets.RedistList.xml*. Przykładem listy do dystrybucji zawartości, może wyglądać następująco:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

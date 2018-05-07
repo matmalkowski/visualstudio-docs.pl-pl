@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -52,6 +52,7 @@ TypeScript używa wielu źródeł do zbudowania te informacje:
 - [IntelliSense oparte na plikach deklaracji TypeScript](#TsDeclFiles)
 - [Automatyczne nabycie definicji typu](#Auto)
 
+<a name="TypeInference"></a>
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense oparte na wnioskowanie o typie
 
 W języku JavaScript w większości przypadków nie ma żadnych jawnego typu informacji dostępne. Szczęście zwykle jest dość proste typu podany kontekst otaczającego kodu.
@@ -88,6 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
+<a name="JsDoc"></a>
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense w oparciu o JSDoc
 
 Gdzie wnioskowanie o typie nie dostarcza informacji odpowiedniego typu (lub do obsługi dokumentacji), informacje o typie można podać jawnie za pomocą adnotacji JSDoc.  Na przykład aby dać częściowo zadeklarowane obiektu określonego typu, możesz użyć `@type` tagów, jak pokazano poniżej:
@@ -114,14 +116,16 @@ function Foo(param1) {
 
 Zobacz [JSDoc Obsługa w języku JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) dla adnotacji JsDoc obecnie obsługiwane.
 
+<a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>IntelliSense oparte na plikach deklaracji TypeScript
 
 Ponieważ JavaScript i TypeScript, teraz są oparte na tej samej usługi języka, są one możliwość interakcji w sposób bardziej zaawansowane funkcje. Na przykład można podać JavaScript IntelliSense dla wartości zadeklarowany w *. d.ts* pliku (zobacz [dokumentacji maszynie](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), i są typach interfejsów i klasy zadeklarowany na maszynie dostępne do użycia w komentarzy JsDoc jako typy.
 
 Poniżej, prosty przykład pliku definicji TypeScript udostępnienie takich informacji o typie (za pośrednictwem interfejsu) zostanie przedstawiony w pliku języka JavaScript, w tym samym projekcie (przy użyciu `JsDoc` tag).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
 
+<a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Automatyczne nabycie definicji typu
 
 W świecie TypeScript najbardziej popularnych bibliotek JavaScript mają swoje interfejsy API opisanego przez *. d.ts* plików i najbardziej typowych repozytorium dla definicji takich znajduje się na [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).

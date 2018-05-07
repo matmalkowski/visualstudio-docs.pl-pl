@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ecd256084862d05f3cf3248913c5f3a1b093fd1d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy sieci web Django w programie Visual Studio
 
@@ -89,7 +89,7 @@ Ponieważ wybrano **Tworzenie nowego repozytorium Git** w **nowy projekt** okna 
 
     ![Team Explorer okna pokazujący dostępne Git opcji repozytorium dla kontroli źródła](media/django/step01-team-explorer.png)
 
-    Można wybrać dowolną wskazaną usługi dla własnych projektów. W tym samouczku pokazano sposób użycia GitHub, w którym ukończone przykładowy kod dla tego samouczka jest zachowywany w [Microsoft/python próbki vs — Dowiedz się django](https://github.com/Microsoft/python-sample-vs-learn-django) repozytorium.
+    Można wybrać dowolną wskazaną usługi dla własnych projektów. W tym samouczku pokazano sposób użycia GitHub, w którym ukończone przykładowy kod dla tego samouczka jest zachowywany w [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) repozytorium.
 
 1. Podczas zaznaczania poszczególnych **publikowania** formantów, **Team Explorer** monit, aby uzyskać więcej informacji. Na przykład przy publikowaniu przykładowej w tym samouczku, repozytorium sam musieli najpierw należy utworzyć, w którym to przypadku **wypychania do zdalnego repozytorium** użyto opcji z adresem URL z repozytorium.
 
@@ -206,4 +206,4 @@ W tym momencie podstawowego projektu Django nie zawiera żadnych aplikacji. Twor
 
 - Kod projektu Django: [pisanie pierwszej aplikacji Django, część 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Narzędzie administracyjne: [django admin i manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python próbki vs — Dowiedz się django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

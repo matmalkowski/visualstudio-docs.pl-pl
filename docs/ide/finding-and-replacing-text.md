@@ -33,15 +33,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8e0ec78153f7b6fdf0a9f673938a361619f2c2
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="find-and-replace-text"></a>Znajdź i Zamień tekst
 
-Można znaleźć i zastępowanie tekstu w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-replace-in-files).
+Można znaleźć i zastępowanie tekstu w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files).
 
 > [!TIP]
 > Jeśli zmieniasz kod symbole, na przykład zmienne i metody, lepiej jest *[zrefaktoryzuj](../ide/reference/rename.md)* ich niż korzystać Znajdź i Zamień. Refaktoryzacja jest inteligentnego i rozumie zakresu, Znajdź i Zamień ślepo zastępuje wszystkie wystąpienia.

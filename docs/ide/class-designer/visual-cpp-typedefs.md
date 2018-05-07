@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [definicje typów](/cpp/aliases-and-typedefs-cpp#typedefs).
+Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
 
 Kształt C++ element typedef ma kształt z typem określonym w definicji typu. Na przykład, jeśli źródło deklaruje `typedef class`, kształt zaokrąglonymi narożnikami, a etykieta **klasy**. Aby uzyskać `typedef struct`, kształt ma narożniki i etykiety **struktury**.
 
@@ -199,6 +199,8 @@ Class
 
 -> MyIntVect
 
-## <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz także
 
-- [Praca z kodem Visual C++](working-with-visual-cpp-code.md)
+- [Praca z kodem Visual C++](working-with-visual-cpp-code.md)  
+- [Definicje typów](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+

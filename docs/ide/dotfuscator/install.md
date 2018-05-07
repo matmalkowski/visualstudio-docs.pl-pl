@@ -23,11 +23,11 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cfacf9f394e411cc89a6722aaf03ac74bc114f63
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 8de8b8aaefbd49738864496c470aa9ffdbe07fcf
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Zainstaluj Dotfuscator Community Edition (CE)
 
@@ -43,12 +43,12 @@ Jednak jest łatwo zainstalować Dotfuscator CE, nawet jeśli jest już zainstal
 
 Możesz zainstalować Dotfuscator CE ze środowiska IDE programu Visual Studio:
 
-1. W **Szybkie uruchamianie** pasek wyszukiwania (Ctrl + Q), typ `dotfuscator`. <br/> <br/> ![](media/install_from_vs_12.png) <br/> <br/>
+1. W **Szybkie uruchamianie** pasek wyszukiwania (Ctrl + Q), typ `dotfuscator`. <br/> <br/> ![Szybkie uruchamianie](media/install_from_vs_12.png) <br/> <br/>
 2. Na liście szybkiego uruchamiania wyniki wyświetlane w obszarze *zainstalować* nagłówek, wybierz **cenią sobie wcześniejsze ochrony - Dotfuscator (poszczególnych składników)**.
   * Jeśli zamiast tego, w obszarze *menu* nagłówek, **Dotfuscator narzędzia — ochrona cenią sobie wcześniejsze —**, następnie Dotfuscator CE jest już zainstalowana. Szczegóły użycia, zobacz [na stronie wprowadzenie pełnej Podręcznik użytkownika CE Dotfuscator][get-started].
 3. Instalator programu Visual Studio, który uruchomi okna, wstępnie skonfigurowaną do zainstalowania Dotfuscator CE.
   * Może być konieczne Podaj poświadczenia administratora, aby kontynuować.
-4. Zamknij wszystkie wystąpienia programu Visual Studio IDE. <br/> <br/> ![](media/install_from_vs_345.png) <br/> <br/>
+4. Zamknij wszystkie wystąpienia programu Visual Studio IDE. <br/> <br/> ![Kliknij przycisk Instaluj](media/install_from_vs_345.png) <br/> <br/>
 5. W oknie Instalator programu Visual Studio kliknij *zainstalować*.
 
 Po zakończeniu instalacji można uruchomić przy użyciu Dotfuscator CE. Aby uzyskać więcej informacji, zobacz [na stronie wprowadzenie pełnej Podręcznik użytkownika CE Dotfuscator][get-started].
@@ -58,21 +58,21 @@ Po zakończeniu instalacji można uruchomić przy użyciu Dotfuscator CE. Aby uz
 Jeśli program Visual Studio 2017 r nie został jeszcze zainstalowany, możesz uzyskać Instalator z [witryny sieci Web programu Visual Studio][2017-install].
 Po uruchomieniu wyświetli opcje instalacji dla wybranej wersji programu Visual Studio.
 
-![](media/install_ui.png)
+![Opcje instalacji](media/install_ui.png)
 
 Dotfuscator CE można zainstalować jako poszczególnych składników programu Visual Studio 2017:
 
 1. Wybierz **pojedynczych składników** kartę.
-2. W obszarze *kodu narzędzia*, sprawdź *cenią sobie wcześniejsze ochrony - Dotfuscator* elementu.<br/> <br/> ![](media/install_individually_12.png) <br/> <br/>
-3. *Podsumowanie* panelu Wyświetla *cenią sobie wcześniejsze ochrony - Dotfuscator* w obszarze *pojedynczych składników* sekcji. <br/> <br/> ![](media/install_individually_3.png) <br/> <br/>
+2. W obszarze *kodu narzędzia*, sprawdź *cenią sobie wcześniejsze ochrony - Dotfuscator* elementu.<br/> <br/> ![Poszczególne składniki](media/install_individually_12.png) <br/> <br/>
+3. *Podsumowanie* panelu Wyświetla *cenią sobie wcześniejsze ochrony - Dotfuscator* w obszarze *pojedynczych składników* sekcji. <br/> <br/> ![Okienko Podsumowanie](media/install_individually_3.png) <br/> <br/>
 4. Skonfiguruj dodatkowe ustawienia instalacji odpowiednie dla danego środowiska.
 5. Gdy będzie gotowy do zainstalowania programu Visual Studio, kliknij przycisk *zainstalować* przycisku.
 
 Po zakończeniu instalacji można uruchomić przy użyciu Dotfuscator CE. Aby uzyskać więcej informacji, zobacz [na stronie wprowadzenie pełnej Podręcznik użytkownika CE Dotfuscator][get-started].
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
-[W tym temacie w podręczniku użytkownika CE Dotfuscator pełny][full]
+[This topic in the full Dotfuscator CE User Guide]: https://www.preemptive.com/dotfuscator/ce/docs/help/
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 

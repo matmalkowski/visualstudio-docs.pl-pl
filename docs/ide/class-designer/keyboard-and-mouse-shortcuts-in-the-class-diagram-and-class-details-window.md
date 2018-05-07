@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Skróty klawiatury i myszy w oknie Diagram klas i szczegóły klasy (Projektant klas)
 
@@ -32,8 +32,8 @@ Obsługiwane są następujące akcje myszy w diagramach klas:
 |Kombinacja myszy|Kontekst|Opis|
 |-----------------------|-------------|-----------------|
 |Kliknij dwukrotnie|elementy kształtu|Otwiera edytora kodu.|
-||Interfejs typu lizak łącznika|Interfejs typu lizak Rozwiń/Zwiń.|
-||Interfejs typu lizak łącznika etykiety|Wywołuje **Pokaż interfejs** polecenia.|
+|Kliknij dwukrotnie|Interfejs typu lizak łącznika|Interfejs typu lizak Rozwiń/Zwiń.|
+|Kliknij dwukrotnie|Interfejs typu lizak łącznika etykiety|Wywołuje **Pokaż interfejs** polecenia.|
 |Kółka myszy|Diagram klas|Przewiń w pionie.|
 |SHIFT + kółka myszy|Diagram klas|Przewijane w poziomie.|
 |CTRL + kółka myszy|Diagram klas|Powiększenia.|
@@ -60,12 +60,12 @@ Obsługiwane są następujące akcje klawiatury w diagramach klas:
 |Key|Kontekst|Opis|
 |---------|-------------|-----------------|
 |Klawisze strzałek|Kształty typów wewnątrz|Style drzewa nawigacji na zawartość kształtu (otaczania kształt jest obsługiwane). Lewy i prawy klucze Rozwiń/Zwiń bieżący element Jeśli rozwijania i przejdź do elementu nadrzędnego Jeśli nie (zobacz nawigacji w widoku drzewa szczegółowe zachowania).|
-||Kształty najwyższego poziomu|Przenoszenie kształtów na diagramie.|
+|Klawisze strzałek|Kształty najwyższego poziomu|Przenoszenie kształtów na diagramie.|
 |SHIFT + Strzałka w klawisze|Kształty typów wewnątrz|Kompilowanie składające się z elementów kształtu, takich jak elementy członkowskie, typy zagnieżdżone lub przedziałów ciągłego zaznaczenia. Te skróty nie obsługują otaczania.|
 |STRONA GŁÓWNA|Kształty typów wewnątrz|Przejdź do tytułu kształtu najwyższego poziomu.|
-||Kształty najwyższego poziomu|Przejdź do pierwszego kształtu na diagramie.|
+|STRONA GŁÓWNA|Kształty najwyższego poziomu|Przejdź do pierwszego kształtu na diagramie.|
 |END|Kształty typów wewnątrz|Przejdź do ostatniego elementu widoczne wewnątrz kształtu.|
-||Kształty najwyższego poziomu|Przejdź do ostatniego kształt na diagramie.|
+|END|Kształty najwyższego poziomu|Przejdź do ostatniego kształt na diagramie.|
 |SHIFT + HOME|Typ wewnątrz kształtu|Wybiera elementów wewnątrz kształtu, począwszy od bieżącego elementu, a kończąc kształtu tego samego elementu najwyższy.|
 |SHIFT + END|Typ wewnątrz kształtu|Taka sama jak SHIFT + HOME, ale w kierunku do góry do dołu.|
 |ENTER|Wszystkie konteksty|Wywołuje domyślną akcję kształtu, który jest również dostępny za pośrednictwem kliknij dwukrotnie. W większości przypadków jest to widok Kod, ale niektóre elementy definiować go inaczej (lizaki, nagłówki przedziału, etykiet interfejsów typu lizak).|
@@ -75,7 +75,7 @@ Obsługiwane są następujące akcje klawiatury w diagramach klas:
 |ALT + SHIFT + L|Wewnątrz kształty typów + kształtów typu.|Przechodzi do interfejs typu lizak aktualnie wybranego kształtu, jeśli jest obecny.|
 |ALT + SHIFT + B|Wewnątrz kształty typów + kształtów typu.|Jeśli listę typów podstawowych jest wyświetlany dla kształtu typu i ma więcej niż jeden element, to Przełącza stan rozszerzenia listy (Zwiń/Rozwiń).|
 |DELETE|Typ i komentarza kształtów|Wywołuje **usunąć z diagramu** polecenia.|
-||Na wszystkich innych urządzeń.|Wywołuje **usunąć z kodu** polecenia (elementy członkowskie, parametry, skojarzenia, dziedziczenia, etykiet interfejsów typu lizak).|
+|DELETE|Na wszystkich innych urządzeń.|Wywołuje **usunąć z kodu** polecenia (elementy członkowskie, parametry, skojarzenia, dziedziczenia, etykiet interfejsów typu lizak).|
 |CTRL+DELETE|Wszystkie konteksty|Wywołuje **usunąć z kodu** polecenia wyboru.|
 |TAB|Wszystkie konteksty|Przechodzi do następnego podrzędnych w tym samym elemencie nadrzędnym (obsługuje zawijania).|
 |SHIFT+TAB|Wszystkie konteksty|Powoduje przejście do poprzedniego podrzędnych w tym samym elemencie nadrzędnym (obsługuje zawijania).|

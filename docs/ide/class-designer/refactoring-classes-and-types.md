@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoryzacja klas i typów (Projektant klas)
 
@@ -40,8 +40,9 @@ Gdy zrefaktoryzuj kod, można ułatwić zrozumienie, obsługa i bardziej wydajne
 |----------|------------------------|
 |**Refaktoryzacja klas:** refaktoryzacji operacji można użyć do podział klas na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Porady: podział klas na klasy częściowe](how-to-split-a-class-into-partial-classes.md)|
 |**Praca z interfejsów:** Projektant klas można zaimplementować interfejsu na diagramie klas, łącząc go z klasy, która udostępnia kod dla metody interfejsu.|-   [Porady: Implementowanie interfejsu](how-to-implement-an-interface.md)|
-|**Refaktoryzacja typy, elementy członkowskie typu i parametry:** za pomocą projektanta klas, można zmienić nazwy typów, zastępują elementy członkowskie typu lub przenoszeniu ich z jednego typu. Można również utworzyć typy dopuszczające wartości zerowe.|-   [Zmiana nazwy, typy i elementy członkowskie typu](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Porady: Tworzenie typu Zerowalnego](how-to-create-a-nullable-type.md)|
+|**Refaktoryzacja typy, elementy członkowskie typu i parametry:** za pomocą projektanta klas, można zmienić nazwy typów, zastępują elementy członkowskie typu lub przenoszeniu ich z jednego typu. Można również utworzyć typy dopuszczające wartości zerowe.|-   [Zmiana nazwy, typy i elementy członkowskie typu](refactoring-classes-and-types.md#rename)<br />-   [Przenieś elementy członkowskie typu z jednego typu na inny](refactoring-classes-and-types.md#move)<br />-   [Porady: Tworzenie typu Zerowalnego](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Zmiana nazwy, typy i elementy członkowskie typu
 
 W Projektancie klas można zmienić nazwy typu lub elementu członkowskiego typu na diagramie klas, lub w oknie właściwości. W oknie szczegółów klasy można zmienić nazwę członka, lecz nie jest typem. Zmiana nazwy typu lub elementu członkowskiego typu propaguje do wszystkich systemu windows i gdzie pojawił się starą nazwę lokalizacji kodu.
@@ -77,6 +78,7 @@ W Projektancie klas można zmienić nazwy typu lub elementu członkowskiego typu
 
      Nowa nazwa propaguje do wszystkich lokalizacji kodu w bieżącym projekcie gdzie pojawił się starą nazwę i systemu windows.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Przenieś elementy członkowskie typu z jednego typu na inny
 
 Przy użyciu **Projektant klas**, można przenieść członka typu z jednego typu do innego typu, jeśli są widoczne w bieżącym diagramu klas.

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2904e329e26fe588553745f3a9d6ca8a572b5c83
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Samouczek krok 2: tworzenie aplikacji Django z widokami i strony szablonów
 
@@ -278,4 +278,4 @@ Odpowiedź: Gdy Django szuka szablon określony w `render` funkcji używa niezal
 - [Pisanie pierwszej aplikacji Django, część 1 - widoków](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Aby uzyskać więcej możliwości Django szablony, takie jak obejmuje i dziedziczenia, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - [Wyrażenie regularne szkolenia na inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python próbki vs — Dowiedz się django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -10,11 +10,11 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 41126bc657177067dbfe1980f47f0aa1425699d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 413e5170310f3b80b5ea6ad032a113fd2d6de482
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Zapis i zarządzanie nimi kodu za pomocą programu Visual Studio
 
@@ -28,7 +28,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-blocks.svg" alt="" />
+                            <img src="/media/common/i_code-blocks.svg" alt="Create solutions and projects" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,7 +46,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-edit.svg" alt="" />
+                            <img src="/media/common/i_code-edit.svg" alt="Use the code editor" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -64,7 +64,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_agile.svg" alt="" />
+                            <img src="/media/common/i_agile.svg" alt="Navigate code" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -82,7 +82,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-automate.svg" alt="" />
+                            <img src="/media/common/i_code-automate.svg" alt="Generate and fix code" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -118,7 +118,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
+                            <img src="/media/common/i_git-mark.svg" alt="Use Git" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -161,7 +161,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Get started with C++" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -197,7 +197,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="Create Visual Basic console app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -215,7 +215,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Create Node.js web app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -233,7 +233,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="Get started with R Tools" />
                         </div>
                     </div>
                     <div class="cardText">

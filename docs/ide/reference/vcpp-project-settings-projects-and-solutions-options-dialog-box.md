@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kompilacji i ustawienia dotyczące rejestrowania, wydajności i obsługi typów plików projektu.
@@ -71,10 +71,10 @@ To okno dialogowe pozwala zdefiniować [!INCLUDE[vcprvc](../../code-quality/incl
 ## <a name="extensions-to-hide"></a>Ukryte rozszerzenia
   Określa rozszerzeń nazw plików, które nie będą wyświetlane w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** jest włączona.
 
- ## <a name="build-customization-search-path"></a>Ścieżka wyszukiwania dostosowania kompilacji
+## <a name="build-customization-search-path"></a>Ścieżka wyszukiwania dostosowania kompilacji
   Określa listę katalogów, zawierające Rules pliki, które pomagają zdefiniować reguły kompilacji dla projektów.
 
-# <a name="solution-explorer-mode"></a>Tryb Eksploratora rozwiązań
+## <a name="solution-explorer-mode"></a>Tryb Eksploratora rozwiązań
  **Pokaż tylko pliki w projekcie**
 
   Konfiguruje **Eksploratora rozwiązań** Aby wyświetlić tylko pliki w projekcie.

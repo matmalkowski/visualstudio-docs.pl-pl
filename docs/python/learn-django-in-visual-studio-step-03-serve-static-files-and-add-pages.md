@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Samouczek krok 3: obsługi plików statycznych, Dodaj strony i użyj szablonu dziedziczenia
 
@@ -283,4 +283,4 @@ Poniższe kroki prezentują dziedziczenia:
 - [Pisanie pierwszej aplikacji Django, część 3 (widoki)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Aby uzyskać więcej możliwości szablonów Django, takich jak przepływu sterowania, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Aby uzyskać szczegółowe informacje na temat używania `{% url %}` tagów, zobacz [adres url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) w [tagi wbudowanych szablonów i filtry dla odwołania szablonów Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python próbki vs — Dowiedz się django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowy — vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

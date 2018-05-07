@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1996edee476525ec73839fc22dd2fa39de03098a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Ustawienia EditorConfig Konwencji kodowania platformy .NET
 
@@ -238,7 +238,7 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściw
 
 | Nazwa zasady | Identyfikator reguły | Właściwe języki | Domyślne usługi Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 i IDE0014 | C# i Visual Basic | wartość true: Brak |
+| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 i IDE0014 | C# i Visual Basic | wartość true: Brak |
 | dotnet_style_predefined_type_for_member_access | IDE0013 i IDE0015 | C# i Visual Basic | wartość true: Brak |
 
 **DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_zmiennych lokalnych\_parameters_members**
@@ -304,7 +304,7 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściw
 
 | Nazwa zasady | Identyfikator reguły | Właściwe języki | Domyślne usługi Visual Studio | Visual Studio 2017 wersji |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members:none | 15.5 |
+| dotnet_style_require_ accessibility_modifiers | IDE0040 | C# i Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | publiczne, prywatne, chronionych, wewnętrzne, statyczne i zewnętrzne, new, wirtualny, abstrakcyjny, sealed zastąpienie, tylko do odczytu, async niebezpieczne, nietrwałe,: Brak | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Częściowy, domyślny, Private, chroniony, publiczny, Friend, NotOverridable, możliwym do zastąpienia, MustOverride, przeciążenia, zastąpienia, MustInherit NotInheritable, statyczna, udostępniony, cieni, tylko do odczytu, WriteOnly, wymiar, stała, WithEvents, rozszerzanie i zwężanie niestandardowe, Asynchroniczne: Brak | 15.5 |
 
@@ -392,7 +392,7 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguły właściw
 | dotnet_style_collection_initializer | IDE0028 | C# i Visual Basic | PRAWDA: sugestii | Pierwsze wydanie |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + i Visual Basic 15 + | PRAWDA: sugestii | Pierwsze wydanie |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + i Visual Basic 15 + | PRAWDA: sugestii | 15,6 |
-| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# i Visual Basic | PRAWDA: sugestii | 15,6 |
+| dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# i Visual Basic | PRAWDA: sugestii | 15,6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -1497,7 +1497,7 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki, wartości do
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_space_after_cast |  C# | false | 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | false | 15.3  |
+| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_parentheses |  C# | false | 15.3  |
 

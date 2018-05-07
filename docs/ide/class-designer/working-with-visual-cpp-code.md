@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 
@@ -73,7 +73,7 @@ Diagram klas nie zaktualizować zmiany wprowadzone w kodzie, konieczne może by�
 
 -   Typ znajduje się w bibliotece dyrektywa #import odwołuje się. Możliwym obejściem jest aby ręcznie dodać wygenerowanego kodu (plik .tlh —) # dyrektywy include w pliku nagłówka.
 
--   Upewnij się, że **Projektant klas** obsługuje typ, który został wprowadzony. Zobacz [ograniczenia dotyczące elementy kodu C++](#limitations).
+-   Upewnij się, że **Projektant klas** obsługuje typ, który został wprowadzony. Zobacz [ograniczenia dotyczące elementy kodu C++](#limitations-for-c-code-elements).
 
 Błąd najprawdopodobniej wyświetlić problemu rozpoznawania typu jest **nie można odnaleźć kodu dla jednego lub więcej kształtów na diagramie klas '\<elementu > "**. Ten komunikat o błędzie nie musi oznaczać, że kod jest błędny. Oznacza ona, że projektant klas nie może wyświetlić kodu. Spróbuj wykonać następujące działania:
 

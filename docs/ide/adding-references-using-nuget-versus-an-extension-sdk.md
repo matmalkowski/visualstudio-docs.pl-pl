@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Różnice pomiędzy dodawaniem odwołań za pomocą NuGet a extension SDK
 
@@ -50,7 +50,7 @@ Poniższa tabela ułatwia porównanie funkcji odwołaniem do zestawu SDK z odwo�
 |Mechanizm integruje się z manifestów aplikacji.|T|Zestaw SDK musi przejść pomyślnie [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)]-określonych tak, aby opakowania i F5 działają poprawnie zestawów SDK jest dostępny w [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)].|T|Zawartość NuGet staje się częścią projektu. Niezbędne jest nie szczególną uwagę F5.|
 |Mechanizm wdraża pliki bez odwołań (na przykład wdrożyć struktury testowej, na których można uruchamiać testy z [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji).|T|Jeśli zgubisz pliki *\redist* folderów, pliki są automatycznie wdrażane.|T||
 |Mechanizm automatycznie dodaje zestaw SDK platformy w programie Visual Studio IDE.|T|Jeśli zgubisz [!INCLUDE[win8](../debugger/includes/win8_md.md)] zestawu SDK lub Windows Phone SDK w określonym miejscu z układem określonego zestawu SDK automatycznie jest zintegrowany z wszystkimi funkcjami programu Visual Studio.|N||
-|Mechanizm obsługuje maszyny czystą developer. (Oznacza to, że instalacja nie jest wymagana, i działa proste pobierania z kontroli kodu źródłowego.)|N|Ponieważ odwołanie SDK, musisz sprawdzić rozwiązania i zestawu SDK oddzielnie. Można sprawdzić w zestawie SDK z dwóch lokalizacji rejestru z systemem innym niż domyślny, z których MSBuild iteruje zestawów SDK (Aby uzyskać więcej informacji, zobacz [tworzenie zestaw Software Development Kit](../extensibility/creating-a-software-development-kit.md)). Alternatywnie Jeśli lokalizacja niestandardowa składa się z zestawów SDK, można określić następujący kod w pliku projektu:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Następnie zaznacz zestawy SDK do tej lokalizacji.|T|Można wyewidencjonować rozwiązania, a program Visual Studio natychmiast rozpoznaje i działa na plikach.|
+|Mechanizm obsługuje maszyny czystą developer. (Oznacza to, że instalacja nie jest wymagana, i działa proste pobierania z kontroli kodu źródłowego.)|N|Ponieważ odwołanie SDK, musisz sprawdzić rozwiązania i zestawu SDK oddzielnie. Można sprawdzić w zestawie SDK z dwóch lokalizacji rejestru z systemem innym niż domyślny, z których MSBuild iteruje zestawów SDK (Aby uzyskać więcej informacji, zobacz [tworzenie zestaw Software Development Kit](../extensibility/creating-a-software-development-kit.md)). Alternatywnie Jeśli lokalizacja niestandardowa składa się z zestawów SDK, można określić następujący kod w pliku projektu:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Następnie zaznacz zestawy SDK do tej lokalizacji.|T|Można wyewidencjonować rozwiązania, a program Visual Studio natychmiast rozpoznaje i działa na plikach.|
 |Możesz także dołączyć do dużych społeczności istniejącego pakietu autorów.|Brak|Nowości społeczności.|T||
 |Możesz także dołączyć do dużych społeczności istniejących konsumentów pakietu.|Brak|Nowości społeczności.|T||
 |Możesz także dołączyć do ekosystem partnerów (galerie niestandardowe, repozytoria i tak dalej).|Brak|Dostępne repozytoria obejmują Visual Studio Marketplace, Microsoft Download Center, a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|T||

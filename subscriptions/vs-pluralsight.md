@@ -9,11 +9,11 @@ description: Więcej informacji o subskrypcji szkolenia Pluralsight uwzględnion
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8f1a8485f71bb1d9162077730d3fca42478e45a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight w ramach subskrypcji programu Visual Studio
 
@@ -80,9 +80,9 @@ Poniższa tabela zawiera szczegółowe informacje, jakie korzyści z subskrypcji
 | Visual Studio Dev Essentials | NA  | 3 miesiące |Nie|
 | Visual Studio Enterprise, Visual Studio Professional (miesięczne w chmurze) | Azure                                       | Niedostępne                                  |NA|
 | Visual Studio Enterprise (niego<sup>1</sup> ) | Program                                       | Niedostępne                                  |NA|
-<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP), dyrektor Region (RD), partnera firmy Microsoft Wyobraź sobie sieci (MPN) ekwiwalentu pełnego wymiaru czasu.* 
+<sup>1</sup>*obejmuje: nie dla odsprzedaż (niego), programu Visual Studio Industry Partner (VSIP), BizSpark, oprogramowania MCT & dewelopera usługi, MCT oprogramowania i usług, Microsoft o wartościach partnera (MVP), dyrektor Region (RD), partnera firmy Microsoft Wyobraź sobie sieci (MPN) ekwiwalentu pełnego wymiaru czasu.*
 
-<sup>2</sup>*po upływie Pluralsight subskrypcji, może być uprawniony do 12 miesięcy dostęp do 50 wybranego szkolenia Pluralsight w jednym z trzech obszarach analizę.    Zobacz często zadawane pytania poniżej, aby uzyskać więcej informacji.*
+<sup>2</sup>*po upływie Pluralsight subskrypcji, może być uprawniony do 12 miesięcy dostęp do 50 wybranego szkolenia Pluralsight w jednym z trzech obszarach analizę.  Korzyści Pluralsight jest tylko jednorazowy powiązane indywidualnych.  Gdy subskrybent zużywa korzyści, nie zresetować. Zobacz często zadawane pytania poniżej, aby uzyskać więcej informacji.*
 
 Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) aby zobaczyć wszystkie subskrypcje przypisane do adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, może mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje. 
 
@@ -91,10 +91,23 @@ Nie masz pewności subskrypcji, której używasz?  Połączyć się z [ https://
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Pytanie: czy użytkownik ma subskrypcji Visual Studio Enterprise, ale kafelka Pluralsight nie jest widoczny na stronie korzyści. Co jest nie tak? 
 Odpowiedź: nie wszystkie subskrypcje Visual Studio Enterprise obejmują Pluralsight korzyści.  Sprawdź [tabeli eligility](#eligibility) tabeli, aby zobaczyć, czy subskrypcja jest uprawniona.
 
+### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Pytanie: czy mogę uzyskać dostępu do listy odtwarzania dostosowane learning ani kanałów? 
+Odpowiedź: tak jako subskrybent Visual Studio możesz uzyskać dostępu do ekspertów kanałów jako część korzyści szkolenia Pluralsight. Te kanały ma został specjalnie wyselekcjonowanych przez ekspertów firmy Microsoft i są przeznaczone dla learning w obszarach .net, Azure, metodyki DevOps i mobilność. Aktywowanie korzyści Pluralsight portalu subskrypcji programu Visual Studio [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) uzyskać dostęp do tych kanałów na stronie docelowej Pluralsight — 
+
+• Scott Hanselmann (.Net, Azure) — [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+
+• Brązowy Donovan (DevOps) - [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown) 
+
+• Montemagno Kuba (mobilność -) [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+
+
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Pytanie: co się stanie, kiedy skończy się subskrypcję Pluralsight?  
 Odpowiedź: na koniec bezpłatna subskrypcja Pluralsight dostępne są dwie opcje:
 - Pobierz bezpłatny dostęp 12-miesięczny (Sprawdź [tabeli eligility](#eligibility) tabeli, aby zobaczyć, czy subskrypcja jest uprawniona) do ograniczonego zestawu 50 kursy w jeden z trzech kluczowych obszarach, w tym: tworzenie aplikacji w chmurze; AI, uczenie maszynowe i danych. i deweloperzy w chmurze. Śledzenie wiadomości e-mail z Pluralsight do oświadczeń wolnego dostępu po wygaśnięciu. Widać [listę kursów](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) dostępnych w ramach każdej z częściowa biblioteki.
-- Możesz kupić subskrypcję bezpośrednio z Pluralsight rabatem 10%, która zapewnia dostęp do katalogu ich pełną kursu.  Skontaktuj się z [Pluralsight](http://www.pluralsight.com) Aby uzyskać szczegółowe informacje.  
+- Możesz kupić subskrypcję bezpośrednio z Pluralsight rabatem 10%, która zapewnia dostęp do katalogu ich pełną kursu.  Skontaktuj się z [Pluralsight](http://www.pluralsight.com) Aby uzyskać szczegółowe informacje. 
+
+### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Pytanie: czy Moja firma odnawia swoją subskrypcję programu Visual Studio za pośrednictwem umowy Enterprise Agreement. Korzyści Pluralsight powoduje resetowania?
+Odpowiedź: nie.  Korzyści Pluralsight jest tylko jednorazowy powiązane indywidualnych.  Gdy subskrybent zużywa korzyści, nie zresetować.  Dotyczy to wszystkich kanałów zakupów, w tym sprzedaży detalicznej, chmury i zakupów woluminu licencja Zbiorcza. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  [Centrum pomocy Pluralsight](https://help.pluralsight.com/help) biorąc szkolenia Pluralsight lub Pluralsight witryny sieci Web jest dostępna Pomoc. 

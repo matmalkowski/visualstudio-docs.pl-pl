@@ -9,6 +9,7 @@
 ## [Naucz się debugować przy użyciu programu Visual Studio](getting-started-with-the-debugger.md)
 ## [Uruchamianie kodu w języku Python w debugerze...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Debugowanie działającej aplikacji platformy Azure](debug-live-azure-applications.md)
+## [Debugowanie kodu zarządzanego i natywnego](how-to-debug-managed-and-native-code.md)
 ## [Wyświetlanie migawki za pomocą opcji cofania do poprzedniego kroku funkcji IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Przewodniki z instrukcjami
 ## [Nawigowanie po kodzie za pomocą debugera](navigating-through-code-with-the-debugger.md)

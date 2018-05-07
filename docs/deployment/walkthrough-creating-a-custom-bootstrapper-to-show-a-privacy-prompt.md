@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie niestandardowego programu inicjującego wyświetlającego zasad ochrony prywatności Prompt | Dokumentacja firmy Microsoft'
+title: 'Wskazówki: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Wskazówki: tworzenie niestandardowego programu inicjującego wyświetlającego prywatny monit
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Wskazówki: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności
 Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizowane, gdy będą dostępne zestawy za pomocą nowszej wersji plików i wersji zestawu. Aby upewnić się, że klienci zgodę na to zachowanie, można wyświetlić monit o prywatności dla nich. Następnie w ich zdecydować, czy można udzielić uprawnienia do aplikacji automatycznej aktualizacji. Jeśli aplikacja nie może automatycznie zaktualizować, nie jest instalowana.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizo
   
 -   Program Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Tworzenie aktualizacji zgody — okno dialogowe  
+## <a name="create-an-update-consent-dialog-box"></a>Utwórz okno dialogowe zgody aktualizacji  
  Aby wyświetlić monit o ochronie prywatności, tworzenie aplikacji z pytaniem, czytelnika wyrażenia zgody na automatyczne aktualizacje aplikacji.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Aby utworzyć okno dialogowe zgody  
@@ -136,7 +136,7 @@ Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizo
   
 26. Na **kompilacji** menu, kliknij przycisk **BuildSolution**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Tworzenie niestandardowy pakiet programu inicjującego  
+## <a name="create-the-custom-bootstrapper-package"></a>Utwórz niestandardowy pakiet programu inicjującego  
  Aby wyświetlić wiersz prywatności dla użytkowników końcowych, można utworzyć niestandardowy pakiet programu inicjującego stosowania aktualizacji zgody w oknie dialogowym i dołącz ją jako warunek wstępny we wszystkich aplikacjach ClickOnce.  
   
  W tej procedurze pokazano, jak utworzyć niestandardowy pakiet programu inicjującego, tworząc w następujących dokumentach:  
@@ -228,7 +228,7 @@ Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizo
   
 6.  Jeśli to konieczne, Utwórz nowy plik manifestu plik package.xml i nowy dokument eula.rtf dla postanowienia licencyjne dotyczące oprogramowania dla poszczególnych ustawień regionalnych. Na przykład jeśli utworzono podkatalogi dla ustawień regionalnych fr i de, utworzyć oddzielny plik package.xml pliki manifest i postanowienia licencyjne dotyczące oprogramowania i zapisać je w podkatalogach fr i de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Ustawienie aplikacji zgody aktualizacji jako warunek wstępny  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Ustawienia aktualizacji aplikacji zgodę jako warunek wstępny  
  W programie Visual Studio można ustawić jako warunek wstępny zgody aktualizacji aplikacji.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Aby ustawić aktualizacji aplikacji zgodę jako warunek wstępny  
@@ -246,7 +246,7 @@ Można skonfigurować ClickOnce — aplikacje mają być automatycznie aktualizo
   
 5.  Kliknij przycisk **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Tworzenie i testowanie Program instalacyjny  
+## <a name="create-and-test-the-setup-program"></a>Tworzenie i testowanie program instalacyjny  
  Po ustawieniu zgody aktualizacji aplikacji jako warunek wstępny, można wygenerować Instalatora i programu inicjującego dla aplikacji.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Aby utworzyć i przetestować program instalacyjny, nie klikając zgadzam się  

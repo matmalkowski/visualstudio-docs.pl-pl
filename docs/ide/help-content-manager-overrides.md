@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 7a10004227a7979d72f167bcc51abdb741c0370d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="help-content-manager-overrides"></a>Zastąpienia menedżera zawartości pomocy
 
@@ -60,7 +60,7 @@ Następujące dwa można kontrolować przez ustawienie wartości klucza rejestru
 |Zadanie|Klucz rejestru|Wartość|Dane|
 |----------|-----|------|----|
 |Zastąpienie priorytet zadania usługi BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na machine)\Microsoft\Help\v2.3 64-bitowych|BITSPriority|**pierwszego planu**, **wysokiej**, **normalne**, lub **niski**|
-|Wskaż magazynu zawartości lokalnej w udziale sieciowym|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Wskaż magazynu zawartości lokalnej w udziale sieciowym|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Zobacz także
 
