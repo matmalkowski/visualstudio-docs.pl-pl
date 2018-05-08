@@ -97,7 +97,7 @@
 #### [Debugowanie aplikacji ClickOnce używających System.Deployment.Application](debugging-clickonce-applications-that-use-system-deployment-application.md)
 ## [Wstępnie wymagane składniki wdrażania aplikacji](application-deployment-prerequisites.md)
 ### [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](deploying-prerequisites-for-64-bit-applications.md)
-### [Tworzenie pakietów programu inicjującego](creating-bootstrapper-packages.md)
+### [Tworzenie niestandardowych pakietów programu inicjującego](creating-bootstrapper-packages.md)
 ### [Instrukcje: tworzenie manifestu produktu](how-to-create-a-product-manifest.md)
 ### [Instrukcje: tworzenie manifestu pakietu](how-to-create-a-package-manifest.md)
 ### [Instrukcje: tworzenie zlokalizowanego pakietu programu inicjującego](how-to-create-a-localized-bootstrapper-package.md)
