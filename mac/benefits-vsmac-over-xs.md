@@ -1,46 +1,43 @@
 ---
 title: Zalety programu Visual Studio dla komputerów Mac w programie Xamarin Studio
-description: ''
-ms.topic: overview
+description: W tym artykule opisano funkcje i korzyści, które zapewnia programu Visual Studio for Mac w programie Xamarin Studio
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 63f8e0f03797f08383ad3a1ec2b9303a405ed236
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Zalety programu Visual Studio dla komputerów Mac w programie Xamarin Studio 
+ 
+Visual Studio for Mac została zastąpiona Xamarin Studio jako w pełni funkcjonalnego środowiska IDE na komputerach Mac. Zapewnia funkcje, które umożliwiają opracowywanie aplikacji sieci web i usług, i platform mobilnych i klasycznych aplikacji i gier. Ponadto ułatwia integrowanie z Azure błyskawicznie, czy oznacza to publikowanie na platformie Azure lub tworzenie usługi Azure Functions. Ma ona wszystko, czego można oczekiwać od nowoczesnych IDE, w tym edytorze źródła kompletne, zaawansowany debuger obszaru roboczego można dostosowywać, integracja z usługą git i sformatowanego rozszerzenia systemu, wszystkie zaprojektowane w sposób macierzysty dla komputerów Mac.
 
-Visual Studio for Mac została zastąpiona Xamarin Studio jako w pełni funkcjonalnego środowiska IDE na komputerach Mac. Zapewnia funkcje, które umożliwiają opracowywanie aplikacji sieci web i usług, i platform mobilnych i klasycznych aplikacji i gier. Ponadto ułatwia integrowanie z Azure błyskawicznie, czy oznacza to publikowanie na platformie Azure lub tworzenie usługi Azure Functions. Ma ona wszystko, czego można oczekiwać od nowoczesnych IDE, w tym edytorze źródła kompletne, zaawansowany debuger obszaru roboczego można dostosowywać, integracja z usługą git i sformatowanego rozszerzenia systemu, wszystkie zaprojektowane w sposób macierzysty dla komputerów Mac. 
+Oto niektóre inne funkcje:
 
-Oto niektóre inne funkcje: 
+* Na podstawie Roslyn C# IntelliSense, refaktoryzacji analizatory i poprawki kodu
+* Pakiet NuGet zarządzania
+* Format zgodnego projektu usługi Visual Studio
+* Aparat kompilacji MSBuild
+* Zintegrowane testy jednostkowe
+* Obsługa języka F # out-of--box
 
-* Na podstawie Roslyn C# IntelliSense, refaktoryzacji analizatory i poprawki kodu 
-* Pakiet NuGet zarządzania 
-* Format zgodnego projektu usługi Visual Studio 
-* Aparat kompilacji MSBuild 
-* Zintegrowane testy jednostkowe 
-* Obsługa języka F # out-of--box 
-
-Korzyści wymienione w tym przewodniku, które są oznaczone jako **Podgląd** są dostępne tylko w [kanał alfa](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel). 
-
-## <a name="language-support"></a>Obsługa języków 
+## <a name="language-support"></a>Obsługa języków
 
 Pisanie kodu C# 7 na komputerze Mac jest oferowana tylko w programie Visual Studio dla komputerów Mac.
 
-## <a name="net-core"></a>.NET Core  
+## <a name="net-core"></a>.NET Core
 
-[.NET core](https://www.microsoft.com/net/core#macos) to platforma do tworzenia aplikacji dla systemów Windows i Linux oraz dla komputerów Mac. Program Visual Studio for Mac obsługuje ładowanie, tworzenie, uruchamianie i debugowanie projektów platformy .NET Core. 
+[.NET core](https://www.microsoft.com/net/core#macos) to platforma do tworzenia aplikacji dla systemów Windows i Linux oraz dla komputerów Mac. Program Visual Studio for Mac obsługuje ładowanie, tworzenie, uruchamianie i debugowanie projektów platformy .NET Core.
 
 .NET core są zainstalowane z programem Visual Studio dla komputerów Mac i działa bez.
 
-Obsługa platformy .NET Core obejmuje poniższe elementy: 
+Obsługa platformy .NET Core obejmuje poniższe elementy:
 
-* Funkcja IntelliSense języków C# i F#. 
-* Szablony projektów platformy .NET Core dla aplikacji konsoli, biblioteki i sieci Web. 
+* Funkcja IntelliSense języków C# i F#.
+* Szablony projektów platformy .NET Core dla aplikacji konsoli, biblioteki i sieci Web.
 * Pełna obsługa debugowania, w tym punkty przerwania, stos wywołań i okno wyrażeń kontrolnych. 
 * Odwołania do pakietu NuGet i przywracanie na podstawie programu MSBuild. 
 * Jednostka zintegrowane testowania pomocy technicznej do uruchamiania i debugowanie testów z dołączoną do programu .NET Core SDK platformy testowej Visual Studio. 
@@ -94,11 +91,11 @@ Program Visual Studio for Mac jest możliwe do publikowania usług i aplikacji s
 
 ![Publikowanie na platformie Azure](media/benefits-vsmac-over-xs-image1.png)
 
-### <a name="azure-functions-preview"></a>Środowisko Azure Functions (**Podgląd**)
+### <a name="azure-functions"></a>Środowisko Azure Functions
 
 Azure Functions to rozwiązanie umożliwiające łatwe uruchamianie małych fragmentów kodu lub funkcje, w chmurze. Visual Studio for Mac umożliwia kodu i lokalnie debugowania funkcji platformy Azure. Aby rozpocząć korzystanie wygląd dla usługi Azure Functions do chmury w oknie dialogowym Nowy projekt. 
 
-### <a name="docker-support-preview"></a>Obsługa docker (**Podgląd**)
+### <a name="docker-support"></a>Obsługa platformy Docker
 
 Możesz teraz publikowanie aplikacji platformy ASP.NET Core dla kontenerów Docker i uruchamiać je w usłudze Azure App Service. 
 
@@ -164,6 +161,4 @@ Gdy funkcji i platform Xamarin były zawsze najwyższej jakości funkcji program
 
 ### <a name="cross-platform"></a>Wiele platform 
 
-* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/) (**Podgląd**) 
-* [Xamarin IoT](https://developer.xamarin.com/guides/cross-platform/iot/) (**Podgląd**) 
- 
+* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/)

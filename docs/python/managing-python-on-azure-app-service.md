@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service
 
@@ -46,7 +46,7 @@ Można dostosowywać obsługi języka Python w usłudze Azure App Service jest d
 
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Wybieranie wersji języka Python za pomocą usługi Azure Resource Manager
 
-Jeśli wdrażasz App Service przy użyciu szablonu usługi Azure Resource Manager, należy dodać rozszerzenie lokacji jako zasób. Rozszerzenie jest wyświetlany jako zagnieżdżonych zasobów z typem `siteextensions` i nazwy na podstawie [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+Jeśli wdrażasz App Service przy użyciu szablonu usługi Azure Resource Manager, należy dodać rozszerzenie lokacji jako zasób. W szczególności rozszerzenia jest wyświetlany jako zagnieżdżonych zasobów ( `resources` obiekt w obszarze `resources`) z typem `siteextensions` i nazwy na podstawie [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Na przykład po dodawania odwołania do `python361x64` (Python 3.6.1 x 64), Twój szablon może wyglądać następująco (niektóre właściwości pominięcia):
 

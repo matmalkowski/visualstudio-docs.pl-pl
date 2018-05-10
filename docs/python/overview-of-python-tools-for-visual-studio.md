@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
-ms.translationtype: MT
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Praca z języka Python w programie Visual Studio w systemie Windows
 
@@ -46,7 +46,7 @@ Informacje dodatkowe:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edytowanie sformatowanego, IntelliSense i zrozumienia kodu
 
-Visual Studio zapewnia najwyższej jakości edytora języka Python, tym kolorowania składni, funkcja automatycznego uzupełniania kodu i bibliotek, formatowania kodu, pomoc podpisu, refaktoryzacji, typu wskazówki i linting (linting znajduje się poniżej). Program Visual Studio oferuje również unikatowe funkcje, takie jak Widok klas, przejdź do definicji, Znajdź wszystkie odwołania i wstawki kodu. Bezpośrednia Integracja z [okna interaktywnego](#interactive-window) ułatwia szybkie tworzenie kodu języka Python, który jest już zapisana w pliku.
+Program Visual Studio oferuje najwyższej jakości edytora języka Python, tym kolorowania składni, funkcja automatycznego uzupełniania kodu i bibliotek, formatowania kodu, podpis pomocy refaktoryzacji linting (pokazana poniżej) i wpisz wskazówek. Program Visual Studio oferuje również unikatowe funkcje, takie jak Widok klas, przejdź do definicji, Znajdź wszystkie odwołania i wstawki kodu. Bezpośrednia Integracja z [okna interaktywnego](#interactive-window) ułatwia szybkie tworzenie kodu języka Python, który jest już zapisana w pliku.
 
 ![Zakończeń kodu dla kodu języka Python w programie Visual Studio](media/code-editing-completions-simple.png)
 

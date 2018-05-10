@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editing-python-code"></a>Edytowanie kodu języka Python
 
@@ -33,7 +33,7 @@ Można również użyć przeglądarki obiektów Visual Studio (**Widok > inne ok
 
 ## <a name="intellisense"></a>IntelliSense
 
-Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring).
+Udostępnia IntelliSense [zakończeń](#completions), [pomocy podpisu](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie](#code-coloring). Visual Studio 2017 wersji 15.7 lub nowszym obsługuje również [wpisz wskazówek](#type-hints).
 
 Aby zwiększyć wydajność, IntelliSense w **programu Visual Studio 2017 wersji 15,5 cala** i wcześniej zależy od ukończenia bazy danych, generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie Jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okno (element równorzędny Solution Explorer) na **IntelliSense** kartę (zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Wpisanie uruchamia dekoratora i przedstawia potencjalne elementów decorator. Wi
 
 > [!Tip]
 > Można skonfigurować zachowanie zakończeń za pośrednictwem **Narzędzia > Opcje > Edytor tekstu > Python > Zaawansowane "**. Wśród nich **na ciąg wyszukiwania na podstawie listy filtrów**: stosuje filtrowanie sugestii ukończenia podczas wpisywania (domyślny jest zaznaczone), i **zakończenia elementu członkowskiego Wyświetla przecięcie składników** zawiera tylko zakończeń, które są obsługiwane przez wszystkie możliwe typy (Domyślnie zaznaczenie jest usunięte). Zobacz [opcji - wyników zakończenia](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Wskazówki dotyczące typu
+
+*Visual Studio 2017 wersji 15.7 i nowszych.*
+
+"Typ wskazówki" w języku Python 3.5 + ([484 program ten](https://www.python.org/dev/peps/pep-0484/) (python.org) jest składnia adnotacja dla funkcji i klasy, które wskazują typy argumentów, zwracać wartości i atrybuty klasy. IntelliSense wyświetla typ wskazówek po umieszczeniu na wywołania funkcji, argumentów i zmiennych, które mają te adnotacji.
+
+W poniższym przykładzie `Vector` klasy jest zadeklarowany jako `List[float]`i `scale` funkcja zawiera wskazówki typu dla jego argumentów i wartości zwracanej. Kursora myszy nad wywołanie tej funkcji zawiera wskazówki dotyczące typu:
+
+![Ustawiając kursor nad wywołanie funkcji, aby wyświetlić wskazówki typu](media/code-editing-type-hints1.png)
+
+W poniższym przykładzie widać, jak adnotacji atrybutów `Employee` klasy są wyświetlane w menu podręcznym uzupełniania IntelliSense dla atrybutu:
+
+![Wskazówki typu przedstawiający uzupełniania IntelliSense](media/code-editing-type-hints2.png)
+
+Warto także sprawdzić poprawności typu wskazówek w projekcie, ponieważ błędy normalnie nie będą wyświetlane do czasu wykonywania. W tym celu programu Visual Studio integruje branży standardowe narzędzie MyPy za pomocą polecenia menu kontekstowe **Python > Uruchom Mypy** w **Eksploratora rozwiązań**:
+
+![Uruchom polecenie z menu kontekstowego MyPy w Eksploratorze rozwiązań](media/code-editing-type-hints-run-mypy.png)
+
+Uruchomiony wiersz polecenia do zainstalowania pakietu mypy, jeśli potrzebne. Visual Studio następnie uruchamia mypy można sprawdzić poprawności typu wskazówek w każdym pliku Python w projekcie. Błędy są wyświetlane w programie Visual Studio **listy błędów** okna. Zaznaczenie elementu w oknie powoduje przejście do odpowiedniej linii w kodzie.
+
+Jako prosty przykład definicji następujących funkcji zawiera wskazówki typu w celu wskazania, że `input` argument jest typu `str`, podczas gdy wywołanie tej funkcji podejmuje próbę przekazania całkowitą:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Przy użyciu **Uruchom Mypy** polecenia dla tego kodu generuje następujący błąd:
+
+![Przykład wynik sprawdzania poprawności typu wskazówek mypy](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> W przypadku wersji środowiska Python przed 3.5, Visual Studio wyświetla również typ wskazówek, zapewniających za pośrednictwem *stub pliki* (`.pyi`). Pliki szczątkowe można używać zawsze, gdy nie chcesz dołączyć wskazówki typu bezpośrednio w kodzie, lub gdy chcesz utworzyć typu wskazówek dotyczących serwerów biblioteki, która nie używa ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [tworzenia klas zastępczych dla modułów środowiska Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie wiki mypy projektu.
+>
+> W chwili obecnej Visual Studio nie obsługuje typu wskazówek w komentarzach.
 
 ### <a name="signature-help"></a>Podpis pomocy
 

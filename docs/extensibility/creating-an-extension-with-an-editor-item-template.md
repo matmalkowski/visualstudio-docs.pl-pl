@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Tworzenie rozszerzenia z szablonem elementu edytora
 Można użyć szablonów elementów, które znajdują się w Visual Studio SDK do tworzenia podstawowego edytora rozszerzeń, które dodać klasyfikatory, skojarzenia i marginesów do edytora. Szablony elementów edytora są dostępne dla projektów Visual C# lub Visual Basic VSIX.  
@@ -36,7 +36,7 @@ Można użyć szablonów elementów, które znajdują się w Visual Studio SDK d
   
     -   Zawiera EditorClassifier1.cs `EditorClassifier1` klasy.  
   
-    -   Zawiera EditorClassifier1ClassificationDefinition.cs `OEditorClassifier1ClassificationDefinition` klasy.  
+    -   Zawiera EditorClassifier1ClassificationDefinition.cs `EditorClassifier1ClassificationDefinition` klasy.  
   
     -   Zawiera EditorClassifier1Format.cs `EditorClassifier1Format` klasy.  
   
@@ -57,7 +57,7 @@ Można użyć szablonów elementów, które znajdują się w Visual Studio SDK d
   
     -   Zawiera TextAdornment1.cs `TextAdornment1` klasy.  
   
-    -   zawiera extAdornment1TextViewCreationListener.cs `TextAdornment1TextViewCreationListener` klasy.  
+    -   Zawiera TextAdornment1TextViewCreationListener.cs `TextAdornment1TextViewCreationListener` klasy.  
   
 4.  Skompiluj projekt i Rozpocznij debugowanie. Pojawi się eksperymentalne wystąpienie. Po otwarciu pliku tekstowego "" znaków w tekście są opisane w czerwony, niebieski tle.  
   
@@ -88,7 +88,7 @@ Można użyć szablonów elementów, które znajdują się w Visual Studio SDK d
   
 1.  W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **Visual Basic** , a następnie kliknij przycisk **rozszerzalności**. W **szablony** okienku wybierz **projektu VSIX**. W **nazwa** wpisz `MarginExtension`. Kliknij przycisk **OK**.  
   
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. Przejdź do programu Visual C# **rozszerzalności** a następnie wybierz węzeł **ozdób okienka ekranu edytor**. Pozostaw domyślną nazwę pliku (EditorMargin1.cs/vb).  
+2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. Przejdź do programu Visual C# **rozszerzalności** a następnie wybierz węzeł **marginesu edytora**. Pozostaw domyślną nazwę pliku (EditorMargin1.cs/vb).  
   
 3.  Istnieją dwa pliki kodu, w następujący sposób:  
   

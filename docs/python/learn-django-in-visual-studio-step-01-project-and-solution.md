@@ -1,7 +1,7 @@
 ---
 title: Samouczek — Dowiedz się Django w programie Visual Studio, krok 1
 description: Wskazówki dotyczące podstawy Django w kontekście projektów programu Visual Studio, prezentacja obsługi programu Visual Studio udostępnia programowanie Django.
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecd256084862d05f3cf3248913c5f3a1b093fd1d
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: MT
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek krok 1: wprowadzenie do platformy sieci web Django w programie Visual Studio
 
@@ -33,7 +33,9 @@ Z tego samouczka, dowiesz się, jak:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Visual Studio 2017 z obciążeniem Python zainstalowane. Aby uzyskać instrukcje, zobacz [obsługi instalacji języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
+- 2017 Visual Studio z następującymi opcjami:
+  - **Programowania Python** obciążenia (**obciążenia** kartę w Instalatorze). Aby uzyskać instrukcje, zobacz [obsługi instalacji języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
+  - **Git dla systemu Windows** i **rozszerzenie GitHub dla programu Visual Studio** na **pojedynczych składników** w obszarze **kodu narzędzia**.
 
 Szablony projektów Django również są dołączane do wszystkich starszych wersji narzędzi Python Tools for Visual Studio, chociaż szczegóły mogą się różnić od co opisano w tym samouczku (szczególnie różni się w starszych wersjach platformy Django).
 

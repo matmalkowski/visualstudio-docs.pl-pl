@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c848ff9a0234040e60391be8baa05e23791a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias pełne polecenie, pełny polecenia i argumentów lub inny alias.
@@ -33,7 +33,7 @@ Tworzy nowy alias pełne polecenie, pełny polecenia i argumentów lub inny alia
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
@@ -57,19 +57,19 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ## <a name="examples"></a>Przykłady
  W tym przykładzie jest tworzony nowy alias `upper`, aby uzyskać pełną polecenia Edit.MakeUpperCase.
 
-```
+```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
  W tym przykładzie Usuwa alias, `upper`.
 
-```
+```cmd
 >Tools.alias /delete upper
 ```
 
  W tym przykładzie wyświetla listę wszystkich bieżącego aliasy i definicje.
 
-```
+```cmd
 >Tools.Alias
 ```
 

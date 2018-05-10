@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4366235973a3e4aa090f5a2c65b346d40067c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25fe5a4e75ddf349210a936f47d99c94ec70c240
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 Aktualizuje plik rozwiązania i wszystkie jego pliki projektu lub pliku projektu określony do bieżącego [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] formaty tych plików.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 devenv SolutionFile | ProjectFile /upgrade
 ```
 
@@ -48,7 +48,7 @@ devenv SolutionFile | ProjectFile /upgrade
 ## <a name="example"></a>Przykład
  W tym przykładzie uaktualnia plik rozwiązania o nazwie "MyProject.sln" w folderze domyślnym dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozwiązania.
 
-```
+```cmd
 devenv "MyProject.sln" /upgrade
 ```
 

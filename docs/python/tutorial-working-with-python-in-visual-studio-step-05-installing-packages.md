@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
@@ -43,9 +43,9 @@ Społeczność deweloperów języka Python ma wyprodukowanych tysiące przydatne
 
   ![Ukończenie instalacji matplotlib w środowisku](media/environments-add-matplotlib2.png)
 
-  Pasek postępu małych poniżej środowiska wskazuje, że program Visual Studio tworzy bazę danych IntelliSense dla nowo zainstalowany pakiet. **IntelliSense** karta zawiera także szczegółowe informacje. Należy pamiętać, że przed zakończeniem tej bazy danych, funkcje IntelliSense, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
+  Pasek postępu małych może pojawić się poniżej środowiska, aby wskazać, że program Visual Studio tworzy bazę danych IntelliSense dla nowo zainstalowany pakiet. **IntelliSense** karta zawiera także szczegółowe informacje. Należy pamiętać, że przed zakończeniem tej bazy danych, funkcje IntelliSense, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
 
-  Należy pamiętać, że **programu Visual Studio 2017 wersji 15,6** i później używa metody różnych i szybsze do pracy z IntelliSense i wyświetli komunikat w tym celu **IntelliSense** kartę.
+  Należy pamiętać, że **programu Visual Studio 2017 wersji 15,6** później używa metody różnych i szybsze do pracy z IntelliSense i wyświetla komunikat w tym celu **IntelliSense** kartę.
 
 1. Utwórz nowy projekt z **Plik > Nowy > Projekt**, wybierając szablon "Python aplikacji". W pliku kodu, który pojawia się Wklej następujący kod, który tworzy wave cosinus, takich jak poprzednich kroków samouczka tylko tym kreślone graficznie:
 

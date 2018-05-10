@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
-ms.translationtype: MT
+ms.openlocfilehash: a033d8b2709a6eaf871758d1bd46a3ad34f7a08f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Szybki Start: Tworzenie projektu języka Python z szablonu w programie Visual Studio
 
@@ -74,6 +74,6 @@ Za pomocą szablonów można zaoszczędzić znaczących godzinę uruchamiania pr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Ręczne identyfikowanie istniejących interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Zainstaluj obsługę języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md).
 - [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations).

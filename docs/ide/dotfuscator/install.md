@@ -23,11 +23,11 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8de8b8aaefbd49738864496c470aa9ffdbe07fcf
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: 29915018da1a2b8b0f50d5381748b53c1048e970
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Zainstaluj Dotfuscator Community Edition (CE)
 
@@ -76,9 +76,9 @@ Po zakończeniu instalacji można uruchomić przy użyciu Dotfuscator CE. Aby uz
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [2017-install]: https://www.visualstudio.com/downloads/#vs-2017
-- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+[2017-install]:  https://www.visualstudio.com/downloads/#vs-2017
+[get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-- [download]: https://www.preemptive.com/products/dotfuscator/downloads
+[download]:  https://www.preemptive.com/products/dotfuscator/downloads
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html

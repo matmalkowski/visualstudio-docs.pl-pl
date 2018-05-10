@@ -1,7 +1,7 @@
 ---
 title: Przykłady parametru wiersza polecenia do instalacji programu Visual Studio
 description: Dostosowywanie tych przykładach, można utworzyć wiersza polecenia instalacji programu Visual Studio.
-ms.date: 05/06/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b542dbe3bdadb5c51cecc6b70a4a313b1dec55e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 96fee1d5174115d95718fd9468b2b5770275ae99
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.
 
@@ -29,76 +29,104 @@ W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_communit
 > [!NOTE]
 >  Można użyć `^` znak na końcu wiersza polecenia do łączenia wielu wierszy do jednego polecenia. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednikiem jest backtick (`` ` ``) znaków.
 
+## <a name="using---installpath"></a>Przy użyciu--installPath
+
 * Zainstaluj minimalnego wystąpienie programu Visual Studio z nie interakcyjne monitów, ale wyświetlany postęp:
 
-```cmd
-vs_enterprise.exe --installPath C:\minVS ^
+ ```cmd
+ vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
-```
+ ```
 
 * Aktualizacja wystąpienia programu Visual Studio przy użyciu wiersza polecenia nie interakcyjne monitów, ale wyświetlany postęp:
 
-```cmd
-vs_enterprise.exe --update --quiet --wait
-vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
-```
+ ```cmd
+ vs_enterprise.exe --update --quiet --wait
+ vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+ ```
 
  > [!NOTE]
  > Oba polecenia są wymagane. Pierwsze polecenie aktualizacji, Instalator programu Visual Studio. Drugie polecenie aktualizuje wystąpienie programu Visual Studio. Aby uniknąć okno dialogowe kontroli konta użytkownika, należy uruchomić wiersz polecenia jako Administrator.
 
 * Zainstalować pulpitu wystąpienie programu Visual Studio w trybie dyskretnym, przy użyciu pakietu języka francuskiego, zwracanie tylko wtedy, gdy jest zainstalowany produkt.
 
-```cmd
-vs_enterprise.exe --installPath C:\desktopVS ^
+ ```cmd
+ vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
-```
+ ```
 
  > [!NOTE]
  > `--wait` Parametr jest przeznaczony do użytku w pliku wsadowym. W pliku wsadowym wykonanie następnego polecenia nie będzie kontynuowane dopiero po ukończeniu instalacji. `%ERRORLEVEL%` Zmienna środowiskowa będzie zawierał wartość zwracaną polecenie, zgodnie z opisem w [używania parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
 
+## <a name="using---layout"></a>Przy użyciu — układ
+
 * Pobierz edytorze podstawowych programu Visual Studio (najbardziej minimalnej konfiguracji programu Visual Studio). Uwzględnij tylko pakiet języka angielskiego:
 
-```cmd
-vs_community.exe --layout C:\VS2017
+ ```cmd
+ vs_community.exe --layout C:\VS2017
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
-```
+ ```
 
 * Pobierz pulpitu .NET i .NET obciążenia sieci web oraz wszystkie zalecane składniki i rozszerzenie GitHub. Uwzględnij tylko pakiet języka angielskiego:
 
-```cmd
-vs_community.exe --layout C:\VS2017 ^
+ ```cmd
+ vs_community.exe --layout C:\VS2017 ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --add Component.GitHub.VisualStudio ^
    --includeRecommended
-```
+ ```
+
+## <a name="using---includerecommended"></a>Przy użyciu--includeRecommended
 
 * Uruchom instalacji interakcyjnej wszystkich obciążeń i składników, które są dostępne w wersji Visual Studio 2017 Enterprise:
 
-```cmd
-vs_enterprise.exe --all --includeRecommended --includeOptional
-```
+ ```cmd
+ vs_enterprise.exe --all --includeRecommended --includeOptional
+ ```
 
 * Drugi nazwane wystąpienie programu Visual Studio 2017 Professional zostaną zainstalowane na komputerze z zainstalowanym, obsługę programowania Node.js w wersji Visual Studio 2017 Community:
 
-```cmd
-vs_professional.exe --installPath C:\VSforNode ^
+ ```cmd
+ vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
-```
+ ```
+
+## <a name="using---remove"></a>Przy użyciu — Usuń
 
 * Usuń składnik narzędzi profilowania z domyślnego zainstalowane wystąpienie programu Visual Studio:
 
-```cmd
-vs_enterprise.exe modify ^
+ ```cmd
+ vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
-```
+ ```
+
+## <a name="using---path"></a>Przy użyciu — ścieżki
+
+Tych parametrów wiersza polecenia są **nowego 15.7**. Aby uzyskać więcej informacji na ich temat, zobacz [używania parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+
+* Korzystanie z instalacji, pamięci podręcznej i ścieżki udostępnionego:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
+
+* Przy użyciu tylko ścieżek instalacji i pamięci podręcznej:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
+
+* Przy użyciu tylko instalacji i ścieżki udostępnionego:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
+
+* Przy użyciu tylko ścieżka instalacji:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
 ## <a name="get-support"></a>Uzyskaj pomoc techniczną
 

@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio tools danych dla platformy .NET
 
-Visual Studio i .NET Framework razem zapewniają szeroką gamę interfejsu API oraz obsługę łączenie z bazami danych, modelowania danych w pamięci i wyświetlanie danych w interfejsie użytkownika narzędzia. Klasy .NET Framework, które zapewniają funkcje dostępu do danych są określane jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, wraz z danymi, narzędzia programu Visual Studio był pierwotnie przeznaczony głównie do obsługi relacyjnych baz danych i XML. Te dni wielu dostawców bazy danych NoSQL, lub osób trzecich, oferują dostawcy ADO.NET.
+Visual Studio i .NET Framework razem zapewniają szeroką gamę interfejsu API oraz obsługę łączenie z bazami danych, modelowania danych w pamięci i wyświetlanie danych w interfejsie użytkownika narzędzia. Klasy .NET Framework, które zapewniają funkcje dostępu do danych są określane jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, wraz z danymi, narzędzia programu Visual Studio została zaprojektowana głównie w celu obsługi relacyjnych baz danych i XML. Te dni wielu dostawców bazy danych NoSQL, lub osób trzecich, oferują dostawcy ADO.NET.
 
 [Oprogramowanie .NET core](/dotnet/core/) obsługuje ADO.NET, z wyjątkiem zestawów danych i powiązanych typów. Jeśli są przeznaczonych dla platformy .NET Core i wymagają warstwy mapowania relacyjnego obiektu (ORM), użyj [Entity Framework Core](/ef/core/).
 
 Na poniższym diagramie przedstawiono uproszczony widok podstawowej architektury:
 
 ![Architektura ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>Typowy przepływ pracy
 
 Typowy przepływ pracy jest to:
 

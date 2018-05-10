@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd11f5b7db7272a453ec2ebb5c8a0a794498e517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-specify-build-events-c"></a>Porady: Określanie kompilacji zdarzeń (C#)
 
@@ -80,7 +80,7 @@ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjneg
 
 3.  W *Program.cs*, Dodaj następujący wiersz do drugiego `using` instrukcje w górnej części pliku:
 
-    ```
+    ```csharp
     using System.Xml;
     ```
 
@@ -160,7 +160,7 @@ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjneg
 
      Wyszukaj w pliku `<osVersionInfo>` elementu. Na przykład może być wersji:
 
-    ```
+    ```xml
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
@@ -180,7 +180,7 @@ Poniższa procedura pokazuje, jak ustawić minimalnej wersji systemu operacyjneg
 
      Teraz należy odczytać wersji:
 
-    ```
+    ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 

@@ -1,15 +1,15 @@
 ---
 title: Konta użytkowników
-description: ''
+description: Informacje o zalogowaniu się do programu Visual Studio dla komputerów Mac i włączenie subskrypcji w programie Visual Studio dla komputerów Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 8326362b9a6aed4bdab3478534bea9aea414b499
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c5f829a9b2f828e4f7b2ef0cf1a410a607bf86b9
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="user-accounts"></a>Konta użytkowników
 
@@ -19,5 +19,5 @@ Logowanie, umożliwia dostęp do wszystkich usług, które są skojarzone z kont
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-* [Logowanie do programu Visual Studio](signing-in.md)
+* [Logowanie do programu Visual Studio dla komputerów Mac](signing-in.md)
 * [Włączanie subskrypcji](activation.md)

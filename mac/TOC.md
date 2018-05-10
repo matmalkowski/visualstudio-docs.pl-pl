@@ -3,6 +3,7 @@
 # [Samouczek środowiska IDE](ide-tour.md)
 
 # [Instalacja](installation.md)
+## [Podgląd instalacji](install-preview.md)
 ## [Aktualizacja](update.md)
 ## [Dezinstalacja](uninstall.md)
 
@@ -30,6 +31,7 @@
 ## [Wstawki kodu](snippets.md)
 ## [Zaznaczenie blokowe](block-selection.md)
 ## [Edytor motywów](editor-themes.md)
+## [EditorConfig](editorconfig.md)
 ## [Typowe skróty klawiaturowe](keyboard-shortcuts.md)
 
 # [Debugowanie](debugging.md)
@@ -43,6 +45,7 @@
 ### [Tworzenie i edycja konfiguracji](create-and-edit-configurations.md)
 
 # [Kontrola wersji](version-control.md)
+## [Kontrola wersji TF](tf-version-control.md)
 ## [Konfigurowanie repozytorium Git](set-up-git-repository.md)
 ## [Praca z usługą Git](working-with-git.md)
 ## [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md)
@@ -50,7 +53,11 @@
 
 # [Pakiety robocze](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+### [Razor](razor.md)
+### [JavaScript](javascript.md)
 ## [Azure](azure-workload.md)
+### [Wprowadzenie do usługi Azure Functions](azure-functions.md)
+### [Samouczek: Azure Functions](azure-functions-lab.md)
 ### [Usługi połączone](connected-services.md)
 ## [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)

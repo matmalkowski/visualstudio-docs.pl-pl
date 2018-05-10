@@ -1,15 +1,15 @@
 ---
 title: Wprowadzenie do programu Visual Studio dla komputerów Mac
-description: ''
+description: W tym artykule przedstawiono funkcje programu Visual Studio dla komputerów Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Wprowadzenie do programu Visual Studio dla komputerów Mac
 
@@ -72,7 +72,7 @@ Visual Studio ma własną zintegrowane menedżera zestawu SDK systemu Android.
 
 W przypadku aplikacji systemu Android, programu Visual Studio for Mac obejmuje własną designer, który współpracuje z systemem Android `.axml` plików do wizualnego tworzenia interfejsów użytkownika. Visual Studio for Mac Otwórz tych plików w jego projektanta dla systemu Android, jak pokazano na poniższej ilustracji:
 
-![](media/intro-image31.png)
+![Projektant interfejsu użytkownika dla systemu android](media/intro-image31.png)
 
 Aby uzyskać więcej informacji w Projektancie systemu Android, zobacz [Omówienie projektanta](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) dokumentu.
 
@@ -80,7 +80,7 @@ Aby uzyskać więcej informacji w Projektancie systemu Android, zobacz [Omówien
 
 IOS Projektant jest w pełni zintegrowana z programem Visual Studio dla komputerów Mac i umożliwia edycja wizualna .xib i pliki scenorysu, aby utworzyć dla systemu iOS, systemu tvOS i UI WatchOS i przejścia. Cały interfejs użytkownika mogą być tworzone za pomocą funkcji przeciągania i upuszczania między przybornika i powierzchni projektowej, używając intuicyjne rozwiązanie do obsługi zdarzeń. IOS projektanta obsługuje również [Kontrolki niestandardowe](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/) tę zaletę renderowania w czasie projektowania.
 
-![](media/intro-image30.png)
+![Projektant scenorysu z systemem iOS](media/intro-image30.png)
 
 Aby uzyskać więcej informacji na temat używania projektanta dla systemu iOS, zobacz [projektanta](https://developer.xamarin.com/guides/ios/user_interface/designer) dokumentów.
 
@@ -109,7 +109,7 @@ Xamarin Profiler ma trzy instrumentów dostępnych do profilowania. [Wprowadzeni
 
 Inspektor Xamarin zapewnia interaktywne C# konsolę narzędzia do użytkowników. Może służyć jako pomoc debugowania lub diagnostyki podczas sprawdzania aplikacji na żywo w ramach nauczania jako narzędzie dokumentacji lub eksperymenty.
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 Składa się z aplikacja autonomiczna, która udostępnia bogate C# konsolę, która może kierować różnych programowania platform (Android, iOS, Mac i z systemem Windows), a także integrację z debugowania przepływ pracy programu IDE.
 

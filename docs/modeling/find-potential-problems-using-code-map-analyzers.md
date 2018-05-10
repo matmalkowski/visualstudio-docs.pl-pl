@@ -15,13 +15,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 67aa9353f02af88b595f5d973c600683f77682fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e300603280b6c0b57d7397699786f2d3c6ff8317
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu
+
 Uruchom analizatorów na map kodu do określania kodu, który może być zbyt skomplikowane lub które mogą wymagać poprawy jakości. Na przykład można użyć tych analizatorów:
 
 |**Aby znaleźć kod, który ma**|**Sprawdź tych obszarów, aby sprawdzić, czy**|
@@ -32,20 +33,20 @@ Uruchom analizatorów na map kodu do określania kodu, który może być zbyt sk
 
 ## <a name="analyze-code-maps"></a>Analizowanie mapy kodu
 
-1.  Na pasku narzędzi mapy, wybierz **układu**, **analizatorów**, a następnie analizatora, które chcesz uruchomić:
+Na pasku narzędzi mapy, wybierz **układu** > **analizatorów**, a następnie analizatora, które chcesz uruchomić:
 
-    |**Analyzer**|**Aby zidentyfikować węzłów który**|
-    |------------------|--------------------------------|
-    |**Analizator odwołania cykliczne**|Zależności cyklicznych są od siebie wzajemnie. **Uwaga:** zależności cykliczne, które znajdują się w **ogólne** grupy nie są wyświetlane na mapie, gdy rozwiń grupę.|
-    |**Znajdź analizatora koncentratory**|Znajdują się w górnej 25% węzły połączone wysokiej<br /><br /> **Aby ukryć wszystkie węzły na mapie**<br /><br /> -Otwórz menu skrótów mapy, wybierz pozycję **zaawansowane**, **wybierz**, **Ukryj niezaznaczone**.<br />     Mapy ukrywa niezaznaczone węzłów i analizatora identyfikuje nowe węzły jako koncentratorów.|
-    |**Analizator węzłów bez odwołań**|Nie masz odwołania z innych węzłów. **Uwaga:** Sprawdź każdy z tych przypadkach przed przy założeniu, że kod nie jest używany. Niektórych zależności, takich jak zależności XAML i środowiska wykonawczego zależności nie można odnaleźć statycznie w kodzie.|
+|**Analyzer**|**Aby zidentyfikować węzłów który**|
+|------------------|--------------------------------|
+|**Analizator odwołania cykliczne**|Zależności cyklicznych są od siebie wzajemnie. **Uwaga:** zależności cykliczne, które znajdują się w **ogólne** grupy nie są wyświetlane na mapie, gdy rozwiń grupę.|
+|**Znajdź analizatora koncentratory**|Znajdują się w górnej 25% węzły połączone wysokiej<br /><br /> **Aby ukryć wszystkie węzły na mapie**<br /><br /> -Otwórz menu skrótów mapy, wybierz pozycję **zaawansowane**, **wybierz**, **Ukryj niezaznaczone**.<br />     Mapy ukrywa niezaznaczone węzłów i analizatora identyfikuje nowe węzły jako koncentratorów.|
+|**Analizator węzłów bez odwołań**|Nie masz odwołania z innych węzłów. **Uwaga:** Sprawdź każdy z tych przypadkach przed przy założeniu, że kod nie jest używany. Niektórych zależności, takich jak zależności XAML i środowiska wykonawczego zależności nie można odnaleźć statycznie w kodzie.|
 
- Analizatorów mapy kodu będzie nadal działać po ich zainstalowaniu. Jeśli zmienisz mapy analizatorów zastosowane zostanie automatycznie ponownie przetworzyć zaktualizowanej mapy. Zatrzymał analizatora na pasku narzędzi mapy, wybierz **układu**, **analizatorów**. Wyłącz wybrane analizatora.
+Analizatorów mapy kodu będzie nadal działać po ich zainstalowaniu. Jeśli zmienisz mapy analizatorów zastosowane zostanie automatycznie ponownie przetworzyć zaktualizowanej mapy. Zatrzymał analizatora na pasku narzędzi mapy, wybierz **układu** > **analizatorów**. Wyłącz wybrane analizatora.
 
 > [!TIP]
 > Jeśli masz bardzo dużych mapy uruchamiania analizatora może spowodować wyjątek braku pamięci. Jeśli ten problem wystąpi, Edytuj mapę, aby zmniejszyć jej zakres lub wygenerować mniejszy, a następnie uruchom analizatora.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 - [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)

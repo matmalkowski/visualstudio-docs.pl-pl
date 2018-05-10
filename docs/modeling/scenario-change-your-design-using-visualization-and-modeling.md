@@ -17,65 +17,68 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39303e32b4d580834ac1c2996a5a7cb00a67e5f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
+
 Upewnij się, że systemu oprogramowania zaspokoi potrzeby użytkowników z wykorzystaniem wizualizacji i modelowania narzędzia w programie Visual Studio.
 Użyj narzędzi, takich jak mapy kodu, diagramy zależności i diagramów klas do:
 
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują poszczególnych narzędzi, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby dowiedzieć się, które wersje programu Visual Studio obsługują poszczególnych narzędzi, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
--   Wyjaśnienie procesów biznesowych i wymagania dotyczące użytkowników.
+- Wyjaśnienie procesów biznesowych i wymagania dotyczące użytkowników.
 
--   Wizualizowanie i eksplorowanie istniejącego kodu.
+- Wizualizowanie i eksplorowanie istniejącego kodu.
 
--   Opisano zmiany w istniejącym systemie.
+- Opisano zmiany w istniejącym systemie.
 
--   Sprawdź, czy system spełnia wymagania.
+- Sprawdź, czy system spełnia wymagania.
 
--   Zachowaj kod jest zgodne z projektem.
+- Zachowaj kod jest zgodne z projektem.
 
- W tym przewodniku:
+W tym przewodniku:
 
--   W tym artykule opisano, jak te narzędzia mogą korzystać projektu oprogramowania.
+- W tym artykule opisano, jak te narzędzia mogą korzystać projektu oprogramowania.
 
--   Pokazuje, jak można użyć tych narzędzi, niezależnie od tego użytkownika podejście do tworzenia, z przykładowy scenariusz.
+- Pokazuje, jak można użyć tych narzędzi, niezależnie od tego użytkownika podejście do tworzenia, z przykładowy scenariusz.
 
- Aby dowiedzieć się więcej na temat tych narzędzi i scenariusze, które obsługują, zobacz:
+Aby dowiedzieć się więcej na temat tych narzędzi i scenariusze, które obsługują, zobacz:
 
--   [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)
+- [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)
 
--   [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
+- [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
 
-##  <a name="ScenarioOverview"></a> Omówienie scenariusza
- W tym scenariuszu opisano odcinki z cykle rozwoju oprogramowania dwóch fikcyjnej firmy: obiad teraz, a następnie lucerny publikowania. Teraz obiad udostępnia usługę dostarczania opartych na sieci Web zawierają najważniejsze nowości w Seattle. Kolejność potrawy klientom i opłacać je w witrynie obiad teraz. Zamówienia są następnie wysyłane do odpowiednich restauracji lokalnych w celu dostarczania. Publikowania lucerny firmy w Nowym Jorku działa wiele firm, zarówno poza, jak i w sieci Web. Na przykład są uruchamiane witryny sieci Web gdzie zamieścić restauracji recenzje klientów.
+## <a name="scenario-overview"></a>Omówienie scenariusza
 
- Lucerny ostatnio nabyte obiad teraz i chce wprowadzić następujące zmiany:
+W tym scenariuszu opisano odcinki z cykle rozwoju oprogramowania dwóch fikcyjnej firmy: obiad teraz, a następnie lucerny publikowania. Teraz obiad udostępnia usługę dostarczania opartych na sieci Web zawierają najważniejsze nowości w Seattle. Kolejność potrawy klientom i opłacać je w witrynie obiad teraz. Zamówienia są następnie wysyłane do odpowiednich restauracji lokalnych w celu dostarczania. Publikowania lucerny firmy w Nowym Jorku działa wiele firm, zarówno poza, jak i w sieci Web. Na przykład są uruchamiane witryny sieci Web gdzie zamieścić restauracji recenzje klientów.
 
--   Integracja witryn sieci Web, dodając restauracji przegląd możliwości obiad teraz.
+Lucerny ostatnio nabyte obiad teraz i chce wprowadzić następujące zmiany:
 
--   Zastąp obiad teraz przez system płatności lucerny przez system.
+- Integracja witryn sieci Web, dodając restauracji przegląd możliwości obiad teraz.
 
--   Rozwiń węzeł usługi obiad teraz w regionie.
+- Zastąp obiad teraz przez system płatności lucerny przez system.
 
- Teraz obiad używa eXtreme programowanie i SCRUM. Mają one pokrycie testu bardzo duże i bardzo nieco nieobsługiwany kod. One zminimalizować ryzyko tworzenie małych, ale wersje robocze systemu, a następnie stopniowo dodanie funkcji. Opracowują one ich kodu za pośrednictwem krótko- i częste iteracji. Dzięki temu je bezpiecznie dążenie zmiany, często zrefaktoryzuj kod i uniknąć "na początku big projektu".
+- Rozwiń węzeł usługi obiad teraz w regionie.
 
- Lucerny obsługuje znacznie większe i złożonych kolekcji systemów, niektóre z nich więcej niż 40 lat. Są one wyjątkową ostrożność podczas wprowadzania zmian z powodu złożoności i zakres starszej wersji kodu. Bardziej rygorystyczne procesu projektowania, preferowanie do projektowania rozwiązania szczegółowe i do projektowania i zmiany wprowadzone podczas tworzenia dokumentów są zgodne.
+Teraz obiad używa eXtreme programowanie i SCRUM. Mają one pokrycie testu bardzo duże i bardzo nieco nieobsługiwany kod. One zminimalizować ryzyko tworzenie małych, ale wersje robocze systemu, a następnie stopniowo dodanie funkcji. Opracowują one ich kodu za pośrednictwem krótko- i częste iteracji. Dzięki temu je bezpiecznie dążenie zmiany, często zrefaktoryzuj kod i uniknąć "na początku big projektu".
 
- Oba zespoły diagramy modelowania w programie Visual Studio ułatwia ich opracowywanie systemów, które odpowiadają potrzebom użytkownika. Używają Team Foundation Server równolegle z innych narzędzi, aby ułatwić planowanie, organizować i zarządzanie siecią firmową.
+Lucerny obsługuje znacznie większe i złożonych kolekcji systemów, niektóre z nich więcej niż 40 lat. Są one wyjątkową ostrożność podczas wprowadzania zmian z powodu złożoności i zakres starszej wersji kodu. Bardziej rygorystyczne procesu projektowania, preferowanie do projektowania rozwiązania szczegółowe i do projektowania i zmiany wprowadzone podczas tworzenia dokumentów są zgodne.
 
- Aby uzyskać więcej informacji na temat programu Team Foundation Server zobacz:
+Oba zespoły diagramy modelowania w programie Visual Studio ułatwia ich opracowywanie systemów, które odpowiadają potrzebom użytkownika. Używają Team Foundation Server równolegle z innych narzędzi, aby ułatwić planowanie, organizować i zarządzanie siecią firmową.
 
--   [Planowanie i śledzenie pracy](#PlanningTracking)
+Aby uzyskać więcej informacji na temat programu Team Foundation Server zobacz:
 
--   [Testowanie, sprawdzanie poprawności i ewidencjonowanie zaktualizowanego kodu](#TestValidateCheckInCode)
+- [Planowanie i śledzenie pracy](#planning-and-tracking-work)
 
-##  <a name="ModelingDiagramsTools"></a> Role architektura i modelowanie diagramów w rozwoju oprogramowania
- W poniższej tabeli opisano role, które tych narzędzi można odtworzyć wiele i różnych etapach cyklu tworzenia oprogramowania:
+- [Testowanie, sprawdzanie poprawności i ewidencjonowanie zaktualizowanego kodu](#TestValidateCheckInCode)
+
+## <a name="ModelingDiagramsTools"></a> Role architektura i modelowanie diagramów w rozwoju oprogramowania
+
+W poniższej tabeli opisano role, które tych narzędzi można odtworzyć wiele i różnych etapach cyklu tworzenia oprogramowania:
 
 ||**Wymagania dotyczące użytkownika modelowania**|**Modelowanie biznesowe procesu**|**Architektura systemu i projektowanie**|**Kod — wizualizacja & eksploracji**|**Weryfikacja**|
 |------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
@@ -87,74 +90,62 @@ Użyj narzędzi, takich jak mapy kodu, diagramy zależności i diagramów klas d
 Aby narysować diagramy zależności, należy utworzyć jako część istniejącego rozwiązania lub do nowego projektu modelowania. Diagramy te muszą być tworzone w projekcie modelowania.
 Elementów na diagramach zależności znajdują się w projekcie modelowania, ale nie są przechowywane w wspólnego modelu. Mapy kodu i diagramów klasy .NET utworzone na podstawie kodu istnieją spoza projektu modelowania.
 
- Zobacz:
+Zobacz:
 
--   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
+- [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
--   [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- Oba zespoły Ponadto używają walidacji zależności do upewnij się, że kod opracowywane nadal zgodne z projektem.
+Oba zespoły Ponadto używają walidacji zależności do upewnij się, że kod opracowywane nadal zgodne z projektem. Zobacz:
 
- Zobacz:
+- [Utrzymywanie kodu zgodne z projektem](#ValidatingCode)
 
--   [Utrzymywanie kodu zgodne z projektem](#ValidatingCode)
+- [Architektura logiczna opisują: diagramy zależności](#DescribeLayers)
 
--   [Architektura logiczna opisują: diagramy zależności](#DescribeLayers)
+- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
+> [!NOTE]
+> Niektóre wersje programu Visual Studio obsługuje walidacji zależności i wersji tylko do odczytu map kodu do wizualizacji i modelowania. Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-    > [!NOTE]
-    >  Niektóre wersje programu Visual Studio obsługuje walidacji zależności i wersji tylko do odczytu map kodu do wizualizacji i modelowania. Aby dowiedzieć się, które wersje programu Visual Studio obsługują tę funkcję, zobacz [obsługę wersji architektura i modelowanie narzędzia](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+## <a name="understand-and-communicate-information-about-the-system"></a>Informacje o i przekazywania informacji o systemie
 
-##  <a name="UnderstandingCommunicating"></a> Opis i przekazywania informacji o systemie
- Nie ma wymaganych aby za pomocą programu Visual Studio modelowanie diagramów, dzięki czemu można ich używać jako mieściły się potrzeb lub metody. Zwykle zespoły ponownie ich modeli wielokrotnie powtarzane i często w projekcie. Każdy diagram oferuje określonego sile ułatwiające zrozumienie, opis i komunikować się różne aspekty systemu opracowywane.
+Nie ma wymaganych aby za pomocą programu Visual Studio modelowanie diagramów, dzięki czemu można ich używać jako mieściły się potrzeb lub metody. Zwykle zespoły ponownie ich modeli wielokrotnie powtarzane i często w projekcie. Każdy diagram oferuje określonego sile ułatwiające zrozumienie, opis i komunikować się różne aspekty systemu opracowywane.
 
- Teraz obiad i Lucerna komunikować się z każdym innym i uczestników projektu przy użyciu diagramów jako ich języka wspólnego. Na przykład obiad używa teraz diagramy do wykonywania następujących zadań:
+Teraz obiad i Lucerna komunikować się z każdym innym i uczestników projektu przy użyciu diagramów jako ich języka wspólnego. Na przykład obiad używa teraz diagramy do wykonywania następujących zadań:
 
--   Tworzenie wizualizacji kodu istniejących.
+- Tworzenie wizualizacji kodu istniejących.
 
--   Komunikować się z lucerny o nowych lub zaktualizowanych scenariuszy.
+- Komunikować się z lucerny o nowych lub zaktualizowanych scenariuszy.
 
--   Zidentyfikuj zmiany, które są wymagane do obsługi nowych lub zaktualizowanych scenariuszy.
+- Zidentyfikuj zmiany, które są wymagane do obsługi nowych lub zaktualizowanych scenariuszy.
 
- Lucerny używa diagramy do wykonywania następujących zadań:
+Lucerny używa diagramy do wykonywania następujących zadań:
 
--   Więcej informacji na temat procesu biznesowego obiad teraz.
+- Więcej informacji na temat procesu biznesowego obiad teraz.
 
--   Zrozumienie projektowania systemu.
+- Zrozumienie projektowania systemu.
 
--   Komunikować się z obiad teraz o wymaganiach dotyczących nowych lub zaktualizowanych użytkowników.
+- Komunikować się z obiad teraz o wymaganiach dotyczących nowych lub zaktualizowanych użytkowników.
 
--   Aktualizacje dokumentu do systemu.
+- Aktualizacje dokumentu do systemu.
 
- Diagramy są zintegrowane z Team Foundation Server, więc zespołów można zaplanować, zarządzanie i łatwo śledzić pracę. Na przykład użyć ich modeli do identyfikowania przypadków testowych i zadań związanych z projektowaniem i do oszacowania pracy. Łącza lucerny Team Foundation Server elementów roboczych, aby elementy modelu, aby mogli monitorować postęp i upewnij się, że system spełnia wymagania dotyczące użytkowników. Na przykład one łączy przypadki użycia elementów roboczych przypadek testowy, zobaczą, że spełnione są przypadki użycia, gdy wszystkie testy zostały zaliczone pomyślnie.
+Diagramy są zintegrowane z Team Foundation Server, więc zespołów można zaplanować, zarządzanie i łatwo śledzić pracę. Na przykład użyć ich modeli do identyfikowania przypadków testowych i zadań związanych z projektowaniem i do oszacowania pracy. Łącza lucerny Team Foundation Server elementów roboczych, aby elementy modelu, aby mogli monitorować postęp i upewnij się, że system spełnia wymagania dotyczące użytkowników. Na przykład one łączy przypadki użycia elementów roboczych przypadek testowy, zobaczą, że spełnione są przypadki użycia, gdy wszystkie testy zostały zaliczone pomyślnie.
 
- Przed zespoły zaewidencjonować zmian, ich sprawdzić kod przed testy i projekt uruchamiając kompilacje, które obejmują zależności weryfikacji i testów automatycznych. Dzięki temu, upewnij się, że zaktualizowanego kodu nie są w konflikcie z projektu i wcześniej przerwanie pracy funkcji.
+Przed zespoły zaewidencjonować zmian, ich sprawdzić kod przed testy i projekt uruchamiając kompilacje, które obejmują zależności weryfikacji i testów automatycznych. Dzięki temu, upewnij się, że zaktualizowanego kodu nie są w konflikcie z projektu i wcześniej przerwanie pracy funkcji.
 
- Zobacz:
+### <a name="identify-changes-to-the-existing-system"></a>Identyfikuje zmiany w istniejącym systemie
 
--   [Identyfikowanie zmiany w istniejącym systemie](#DeterminingChanges)
-
--   [Utrzymywanie kodu zgodne z projektem](#ValidatingCode)
-
--   [Ogólne porady dotyczące tworzenia i używania modeli](#GeneralTips)
-
--   [Planowanie i śledzenie pracy](#PlanningTracking)
-
--   [Testowanie, sprawdzanie poprawności i ewidencjonowanie zaktualizowanego kodu](#TestValidateCheckInCode)
-
-###  <a name="DeterminingChanges"></a> Identyfikowanie zmiany w istniejącym systemie
- Teraz obiad musi szacowania kosztów spełnienia nowe wymaganie. Zależy to częściowo ile tej zmiany będzie miało wpływ na inne części systemu. Aby ułatwić im to zrozumieć, co deweloperów obiad teraz tworzy tych map i diagramów z istniejącego kodu:
+Teraz obiad musi szacowania kosztów spełnienia nowe wymaganie. Zależy to częściowo ile tej zmiany będzie miało wpływ na inne części systemu. Aby ułatwić im to zrozumieć, co deweloperów obiad teraz tworzy tych map i diagramów z istniejącego kodu:
 
 |**Mapa lub diagram**|**Pokazuje**|
 |------------------------|---------------|
-|*Mapy kodu*<br /><br /> Zobacz:<br /><br /> -   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Zależności i relacje w kodzie.<br /><br /> Na przykład obiad może rozpocząć od przejrzenia map kodu zestawu omówienie zestawy oraz ich zależności. Ich można przejść do szczegółów mapy, aby zapoznać się z przestrzeni nazw i klasy w tych zestawów.<br /><br /> Teraz obiad można również utworzyć mapy, aby zapoznać się z konkretnym obszarów i innych rodzajów relacji w kodzie. Aby znaleźć i wybrać obszarów i relacje, które ich interesują korzystają z Eksploratora rozwiązań.|
+|*Mapy kodu*<br /><br /> Zobacz:<br /><br /> - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />- [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)<br />- [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Zależności i relacje w kodzie.<br /><br /> Na przykład obiad może rozpocząć od przejrzenia map kodu zestawu omówienie zestawy oraz ich zależności. Ich można przejść do szczegółów mapy, aby zapoznać się z przestrzeni nazw i klasy w tych zestawów.<br /><br /> Teraz obiad można również utworzyć mapy, aby zapoznać się z konkretnym obszarów i innych rodzajów relacji w kodzie. Aby znaleźć i wybrać obszarów i relacje, które ich interesują korzystają z Eksploratora rozwiązań.|
 |*Diagram klas opartych na kodzie*<br /><br /> Zobacz [porady: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Istniejące klasy w kodzie|
 
  Na przykład deweloper tworzy mapę kodu. Dopasowuje ona jego zakres, aby skoncentrować się na obszarów, które wpływają na nowy scenariusz. Te obszary są zaznaczone i wyróżnione na mapie:
@@ -177,12 +168,12 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
 |------------------|-------------------|
 |*Diagram klas opartych na kodzie*<br /><br /> Zobacz [porady: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Istniejące klasy w kodzie.|
 
-###  <a name="ValidatingCode"></a> Utrzymywanie kodu zgodne z projektem
+###  <a name="ValidatingCode"></a> Zachowaj kod zgodne z projektem
  Teraz obiad należy się upewnić, że zaktualizowanego kodu jest zgodne z projektem. Tworzenia diagramy zależności, które opisują warstwy funkcjonalności w systemie, określ dozwolone zależności między rozwiązania ich i skojarz artefakty do nich.
 
 |**Diagram**|**W tym artykule opisano**|
 |-----------------|-------------------|
-|*Diagram zależności*<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Architektura logiczna kodu.<br /><br /> Diagram zależności organizuje i mapuje artefaktów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania abstrakcyjnej grupy o nazwie *warstwy*. Te warstwy identyfikowanie ról, zadania lub funkcje służące do wykonywania tych artefaktów w systemie.<br /><br /> Diagramy warstw są przydatne w przypadku opisujące projektowi systemu i sprawdzanie poprawności zmieniające się kod dla tego projektu.<br /><br /> Aby utworzyć warstw, przeciągnij elementy z Eksploratora rozwiązań, mapy kodu, Widok klas i przeglądarka obiektów. Do rysowania nowych warstw, Użyj przybornika, lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię warstwy, a następnie kliknij przycisk **Generowanie zależności**. Aby określić zależności zamierzone, Rysuj nowe zależności.|
+|*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Architektura logiczna kodu.<br /><br /> Diagram zależności organizuje i mapuje artefaktów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania abstrakcyjnej grupy o nazwie *warstwy*. Te warstwy identyfikowanie ról, zadania lub funkcje służące do wykonywania tych artefaktów w systemie.<br /><br /> Diagramy warstw są przydatne w przypadku opisujące projektowi systemu i sprawdzanie poprawności zmieniające się kod dla tego projektu.<br /><br /> Aby utworzyć warstw, przeciągnij elementy z Eksploratora rozwiązań, mapy kodu, Widok klas i przeglądarka obiektów. Do rysowania nowych warstw, Użyj przybornika, lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię warstwy, a następnie kliknij przycisk **Generowanie zależności**. Aby określić zależności zamierzone, Rysuj nowe zależności.|
 
  Na przykład na poniższym diagramie zależności opisano zależności między warstwami i liczbę artefaktów, które są skojarzone z każdą warstwę:
 
@@ -190,155 +181,159 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
 
  **Diagram zależności**
 
- Aby upewnić się, że nie występują konflikty z projektu podczas tworzenia kodu, używa zespołów, sprawdzanie poprawności zależności w kompilacji, które są uruchamiane na Team Foundation Build. Tworzy także niestandardowego zadania MSBuild do wymagania weryfikacji zależności w swoich operacji wyboru. Raporty kompilacji ich użyć do zbierania błędy sprawdzania poprawności.
+Aby upewnić się, że nie występują konflikty z projektu podczas tworzenia kodu, używa zespołów, sprawdzanie poprawności zależności w kompilacji, które są uruchamiane na Team Foundation Build. Tworzy także niestandardowego zadania MSBuild do wymagania weryfikacji zależności w swoich operacji wyboru. Raporty kompilacji ich użyć do zbierania błędy sprawdzania poprawności.
 
- Zobacz:
+Zobacz:
 
--   [Definiowanie procesu kompilacji](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [Definiowanie procesu kompilacji](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
 
--   [Aby zatwierdzić zmiany, użyj procesu kompilacji warunkowe zaewidencjonowanie](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [Aby zatwierdzić zmiany, użyj procesu kompilacji warunkowe zaewidencjonowanie](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
 
--   [Dostosuj szablon procesu kompilacji](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [Dostosuj szablon procesu kompilacji](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-###  <a name="GeneralTips"></a> Ogólne porady dotyczące tworzenia i używania modeli
+### <a name="general-tips-for-creating-and-using-models"></a>Ogólne porady dotyczące tworzenia i używania modeli
 
--   Diagramy większości składają się z węzłów, które są połączone liniami. Dla każdego typu diagram przybornika zawiera różne rodzaje węzłów i wierszy.
+- Diagramy większości składają się z węzłów, które są połączone liniami. Dla każdego typu diagram przybornika zawiera różne rodzaje węzłów i wierszy.
 
      Aby otworzyć w przyborniku **widoku** menu, kliknij przycisk **przybornika**.
 
--   Aby utworzyć węzeł, przeciągnij je z przybornika do diagramu. Niektóre rodzaje węzłów musi przeciągnięto istniejących węzłów. Na przykład na diagramie składników nowy port należy dodać do istniejącego składnika.
+- Aby utworzyć węzeł, przeciągnij je z przybornika do diagramu. Niektóre rodzaje węzłów musi przeciągnięto istniejących węzłów. Na przykład na diagramie składników nowy port należy dodać do istniejącego składnika.
 
--   Aby utworzyć linię lub połączenie, kliknij w przyborniku odpowiednie narzędzia, kliknij węzeł źródła, a następnie kliknij węzeł docelowy. Wiersze mogą być tworzone tylko między niektórych typów węzłów. Kiedy wskaźnik myszy nad możliwe źródłowa lub docelowa, wskaźnik wskazuje, czy można utworzyć połączenia.
+- Aby utworzyć linię lub połączenie, kliknij w przyborniku odpowiednie narzędzia, kliknij węzeł źródła, a następnie kliknij węzeł docelowy. Wiersze mogą być tworzone tylko między niektórych typów węzłów. Kiedy wskaźnik myszy nad możliwe źródłowa lub docelowa, wskaźnik wskazuje, czy można utworzyć połączenia.
 
-###  <a name="PlanningTracking"></a> Planowanie i śledzenie pracy
- Visual Studio modelowania diagramów są zintegrowane z Team Foundation Server, dzięki czemu można zaplanować, zarządzanie i łatwiej śledzenie pracy. Zarówno zespoły użyć modeli, aby zidentyfikować przypadki testowe i zadań związanych z projektowaniem i do oszacowania pracy. Tworzy lucerny i elementy do elementów modelu, takie jak przypadków użycia lub składników pracy łącza Team Foundation Server. Dzięki temu je monitorować ich postęp i śledzenie ich pracy do potrzeb użytkowników. Pomoże im to upewnij się, że swoje zmiany w dalszym ciągu spełnienia tych wymagań.
+### <a name="plan-and-track-work"></a>Planowanie i śledzenie pracy
 
- W miarę postępów prac ich aktualizacji zespoły elementów pracy do uwzględnienia czas poświęcony na ich na ich zadań. Również monitorować i zgłosić stan w pracy przy użyciu następujących funkcji serwera Team Foundation Server:
+Visual Studio modelowania diagramów są zintegrowane z Team Foundation Server, dzięki czemu można zaplanować, zarządzanie i łatwiej śledzenie pracy. Zarówno zespoły użyć modeli, aby zidentyfikować przypadki testowe i zadań związanych z projektowaniem i do oszacowania pracy. Tworzy lucerny i elementy do elementów modelu, takie jak przypadków użycia lub składników pracy łącza Team Foundation Server. Dzięki temu je monitorować ich postęp i śledzenie ich pracy do potrzeb użytkowników. Pomoże im to upewnij się, że swoje zmiany w dalszym ciągu spełnienia tych wymagań.
 
--   Codzienne *raporty postęp* który Pokaż, czy będzie ich zakończeniu planowanej pracy w oczekiwanym czasie. Generują inne podobne raporty z serwera Team Foundation Server, aby śledzić postęp usterek.
+W miarę postępów prac ich aktualizacji zespoły elementów pracy do uwzględnienia czas poświęcony na ich na ich zadań. Również monitorować i zgłosić stan w pracy przy użyciu następujących funkcji serwera Team Foundation Server:
 
--   *Arkusza iteracji* który używa programu Microsoft Excel ułatwiających zespołowi monitorować i równoważenie obciążenia między jego elementów członkowskich. Ten arkusz jest połączony z Team Foundation Server i zapewnia fokus omówienie podczas ich postępu regularne spotkania.
+- Codzienne *raporty postęp* który Pokaż, czy będzie ich zakończeniu planowanej pracy w oczekiwanym czasie. Generują inne podobne raporty z serwera Team Foundation Server, aby śledzić postęp usterek.
 
--   A *pulpitu nawigacyjnego programowanie* używającą Office Project do zachowania zespołu informację o ważnych informacji.
+- *Arkusza iteracji* który używa programu Microsoft Excel ułatwiających zespołowi monitorować i równoważenie obciążenia między jego elementów członkowskich. Ten arkusz jest połączony z Team Foundation Server i zapewnia fokus omówienie podczas ich postępu regularne spotkania.
 
- Zobacz:
+- A *pulpitu nawigacyjnego programowanie* używającą Office Project do zachowania zespołu informację o ważnych informacji.
 
--   [Śledzenie pracy za pomocą programu Visual Studio Team Services lub program Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+Zobacz:
 
--   [Wykresy, pulpity nawigacyjne i raporty dla programu Visual Studio ALM](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)
+- [Śledzenie pracy za pomocą programu Visual Studio Team Services lub program Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
 
--   [Tworzenie zaległości i zadań za pomocą programu Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Wykresy, pulpity nawigacyjne i raporty dla programu Visual Studio ALM](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)
 
-###  <a name="TestValidateCheckInCode"></a> Testowanie, sprawdzanie poprawności i sprawdzania w kodzie
- Jak zespołów, dokończ wszystkie zadania, sprawdź swój kod do kontroli wersji Team Foundation i otrzymywać monitów Team Foundation Server nie pamięta one. Przed Team Foundation Server akceptuje zaewidencjonowania, zespołów uruchamiania testów jednostkowych i walidacji zależności można zweryfikować kodu przed ich przypadków testowych i projektu. Korzystają z Team Foundation Server do uruchomienia kompilacji, testy jednostkowe automatycznych i regularnie walidacji zależności. Dzięki temu, upewnij się, że kod spełnia następujące kryteria:
+- [Tworzenie zaległości i zadań za pomocą programu Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
--   Działa.
+### <a name="TestValidateCheckInCode"></a> Testowanie, zweryfikować i sprawdzić w kodzie
 
--   Go nie DZIEL wcześniej pracy kodu.
+Jak zespołów, dokończ wszystkie zadania, sprawdź swój kod do kontroli wersji Team Foundation i otrzymywać monitów Team Foundation Server nie pamięta one. Przed Team Foundation Server akceptuje zaewidencjonowania, zespołów uruchamiania testów jednostkowych i walidacji zależności można zweryfikować kodu przed ich przypadków testowych i projektu. Korzystają z Team Foundation Server do uruchomienia kompilacji, testy jednostkowe automatycznych i regularnie walidacji zależności. Dzięki temu, upewnij się, że kod spełnia następujące kryteria:
 
--   Nie powoduje konfliktu z projektu.
+- Działa.
 
- Teraz obiad ma dużą kolekcję zautomatyzowanych testów, które lucerny można użyć ponownie, ponieważ prawie wszystkie nadal stosować. Lucerny można również rozbudowywać te testy i dodać nowe, aby pokrywał się nowych funkcji. Aby uruchomić testy ręczne zarówno również użyć programu Visual Studio.
+- Go nie DZIEL wcześniej pracy kodu.
 
- Aby upewnić się, że kod jest zgodny ze projektu, zespołów, należy skonfigurować ich kompilacji w Team Foundation Build uwzględnienie walidacji zależności. Jeśli wystąpią konflikty, raport jest generowany ze szczegółami.
+- Nie powoduje konfliktu z projektu.
 
- Zobacz:
+Teraz obiad ma dużą kolekcję zautomatyzowanych testów, które lucerny można użyć ponownie, ponieważ prawie wszystkie nadal stosować. Lucerny można również rozbudowywać te testy i dodać nowe, aby pokrywał się nowych funkcji. Aby uruchomić testy ręczne zarówno również użyć programu Visual Studio.
 
--   [Testowanie aplikacji](https://www.visualstudio.com/docs/test/overview)
+Aby upewnić się, że kod jest zgodny ze projektu, zespołów, należy skonfigurować ich kompilacji w Team Foundation Build uwzględnienie walidacji zależności. Jeśli wystąpią konflikty, raport jest generowany ze szczegółami.
 
--   [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
+Zobacz:
 
--   [Korzystanie z kontroli wersji](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Testowanie aplikacji](https://www.visualstudio.com/docs/test/overview)
 
--   [Kompilowanie i wydawanie](/vsts/build-release/index)
+- [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 
-##  <a name="UpdatingSystem"></a> Aktualizowanie systemu za pomocą wizualizacji i modelowania
- Lucerny i obiad teraz należy zintegrować ich systemy płatności. W poniższych sekcjach przedstawiono diagramów modelowania w programie Visual Studio ułatwić ich wykonywania tego zadania:
+- [Korzystanie z kontroli wersji](http://go.microsoft.com/fwlink/?LinkID=525605)
 
--   [Tworzenie wizualizacji kodu istniejących: Mapy kodu](#VisualizeCode)
+- [Kompilowanie i wydawanie](/vsts/build-release/index)
 
--   [Zdefiniuj słownik typów: diagramy klas](#DefineClasses)
+## <a name="update-the-system-using-visualization-and-modeling"></a>Aktualizowanie systemu za pomocą wizualizacji i modelowania
 
--   [Architektura logiczna opisują: diagramy zależności](#DescribeLayers)
+Lucerny i obiad teraz należy zintegrować ich systemy płatności. W poniższych sekcjach przedstawiono diagramów modelowania w programie Visual Studio ułatwić ich wykonywania tego zadania:
 
- Zobacz:
+- [Tworzenie wizualizacji kodu istniejących: Mapy kodu](#VisualizeCode)
 
--   [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
+- [Zdefiniuj słownik typów: diagramy klas](#DefineClasses)
 
--   [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
+- [Architektura logiczna opisują: diagramy zależności](#DescribeLayers)
 
--   [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)
+Zobacz:
 
-###  <a name="VisualizeCode"></a> Tworzenie wizualizacji kodu istniejących: Mapy kodu
- Mapy kodu wyświetlenie bieżącego organizacji i relacji w kodzie. Elementy są reprezentowane przez *węzłów* na mapie, i relacje są reprezentowane przez *łącza*. Mapy kodu można wykonywać następujące rodzaje zadań:
+- [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)
 
--   Poznaj nieznane kodu.
+- [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
 
--   Dowiedz się, jak i gdzie proponowanej zmiany mogą mieć wpływ na istniejący kod.
+- [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)
 
--   Znajdź obszary złożoności, fizycznych zależności lub wzorce lub innych obszarów, które mogą korzystać z ulepszeń.
+### <a name="VisualizeCode"></a> Tworzenie wizualizacji kodu istniejących: Mapy kodu
 
- Na przykład obiad teraz oszacować koszt Aktualizacja składnika PaymentProcessing. Zależy to częściowo ile tej zmiany będzie miało wpływ na inne części systemu. Aby ułatwić im to zrozumieć, jedna deweloperów obiad teraz generuje mapy kodu z kodu i dostosowuje obszarów, które mogą wpłynąć na zmianę fokusu zakresu.
+Mapy kodu wyświetlenie bieżącego organizacji i relacji w kodzie. Elementy są reprezentowane przez *węzłów* na mapie, i relacje są reprezentowane przez *łącza*. Mapy kodu można wykonywać następujące rodzaje zadań:
 
- Następujące Mapa pokazuje zależności między klasami PaymentProcessing a innymi składnikami systemu obiad teraz, które są wyświetlane jako wybrane:
+- Poznaj nieznane kodu.
 
- ![Wykres zależności dla obiad teraz system płatności](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+- Dowiedz się, jak i gdzie proponowanej zmiany mogą mieć wpływ na istniejący kod.
 
- **Mapy kodu obiad teraz system płatności**
+- Znajdź obszary złożoności, fizycznych zależności lub wzorce lub innych obszarów, które mogą korzystać z ulepszeń.
 
- Deweloper Eksploruje mapy rozszerzania klasy PaymentProcessing i wybierając jej elementów członkowskich, aby zobaczyć obszarów, które są potencjalnie wpływ:
+Na przykład obiad teraz oszacować koszt Aktualizacja składnika PaymentProcessing. Zależy to częściowo ile tej zmiany będzie miało wpływ na inne części systemu. Aby ułatwić im to zrozumieć, jedna deweloperów obiad teraz generuje mapy kodu z kodu i dostosowuje obszarów, które mogą wpłynąć na zmianę fokusu zakresu.
 
- ![Metody wewnątrz PaymentProcessing i zależności](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+Następujące Mapa pokazuje zależności między klasami PaymentProcessing a innymi składnikami systemu obiad teraz, które są wyświetlane jako wybrane:
 
- **Metody wewnątrz klasy PaymentProcessing oraz ich zależności**
+![Wykres zależności dla obiad teraz system płatności](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
 
- Generują one następujące mapy dla System płatności lucerny sprawdzić jej klas, metod i zależności. Zespół widzi lucerny systemu może być także wymagane pracy na interakcję z innymi częściami obiad teraz:
+**Mapy kodu obiad teraz system płatności**
 
- ![Wykres zależności dla system płatności lucerny](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+Deweloper Eksploruje mapy rozszerzania klasy PaymentProcessing i wybierając jej elementów członkowskich, aby zobaczyć obszarów, które są potencjalnie wpływ:
 
- **Mapy kodu lucerny System płatności**
+![Metody wewnątrz PaymentProcessing i zależności](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
 
- Oba zespoły współdziałać, aby określić zmiany, które są wymagane do integracji z dwóch systemów. Zdecydują Refaktoryzuj części kodu, dzięki czemu będzie łatwiejszy do aktualizacji. Klasa PaymentApprover zostanie przeniesione do obszaru nazw DinnerNow.Business i będzie wymagać pewnych nowych metod. Teraz obiad klasy obsługujące transakcje będą miały własnej przestrzeni nazw. Zespoły tworzenie i używanie elementów roboczych do planu, organizować i śledzenie ich pracy. Elementy modelu, w których jest użyteczny połączone elementy robocze.
+**Metody wewnątrz klasy PaymentProcessing oraz ich zależności**
 
- Po reorganizacja kod, zespołów Generowanie nowej mapy kodu, aby zobaczyć zaktualizowane struktury i relacji:
+Generują one następujące mapy dla System płatności lucerny sprawdzić jej klas, metod i zależności. Zespół widzi lucerny systemu może być także wymagane pracy na interakcję z innymi częściami obiad teraz:
 
- ![Wykres zależności z kodem reorganizowane po kolei](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Wykres zależności dla system płatności lucerny](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
 
- **Mapy kodu z kodem reorganizowane po kolei**
+**Mapy kodu lucerny System płatności**
 
- Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni nazw DinnerNow.Business i ma kilka nowych metod. Klasy transakcji obiad teraz mają teraz własne nazw PaymentSystem, co ułatwia biznesowych w radzeniu sobie z tym kodem później.
+Oba zespoły współdziałać, aby określić zmiany, które są wymagane do integracji z dwóch systemów. Zdecydują Refaktoryzuj części kodu, dzięki czemu będzie łatwiejszy do aktualizacji. Klasa PaymentApprover zostanie przeniesione do obszaru nazw DinnerNow.Business i będzie wymagać pewnych nowych metod. Teraz obiad klasy obsługujące transakcje będą miały własnej przestrzeni nazw. Zespoły tworzenie i używanie elementów roboczych do planu, organizować i śledzenie ich pracy. Elementy modelu, w których jest użyteczny połączone elementy robocze.
+
+Po reorganizacja kod, zespołów Generowanie nowej mapy kodu, aby zobaczyć zaktualizowane struktury i relacji:
+
+![Wykres zależności z kodem reorganizowane po kolei](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+
+**Mapy kodu z kodem reorganizowane po kolei**
+
+Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni nazw DinnerNow.Business i ma kilka nowych metod. Klasy transakcji obiad teraz mają teraz własne nazw PaymentSystem, co ułatwia biznesowych w radzeniu sobie z tym kodem później.
 
 #### <a name="creating-a-code-map"></a>Tworzenie mapy kodu
 
--   W przypadku szybki przegląd kodu źródłowego wykonaj następujące kroki, aby wygenerować mapę kodu:
+- W przypadku szybki przegląd kodu źródłowego wykonaj następujące kroki, aby wygenerować mapę kodu:
 
      Na **architektura** menu, kliknij przycisk **Generuj mapę kodu dla rozwiązania**.
 
      Szybkie omówienie skompilowany kod Utwórz mapę kodu puste, a następnie przeciągnij pliki zestawu lub plików binarnych powierzchnię mapy.
 
--   Aby zapoznać się z określonym kod lub elementy rozwiązania, umożliwia wybór elementów i relacji, które mają być wyświetlane Eksploratora rozwiązań. Możesz następnie wygenerować nową mapę lub Dodaj wybrane elementy do istniejącej mapy. Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+- Aby zapoznać się z określonym kod lub elementy rozwiązania, umożliwia wybór elementów i relacji, które mają być wyświetlane Eksploratora rozwiązań. Możesz następnie wygenerować nową mapę lub Dodaj wybrane elementy do istniejącej mapy. Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
--   Aby pomóc w eksplorowaniu mapy, rozmieszczanie układu, aby pasujące do rodzaje zadań, które chcesz wykonać.
+- Aby pomóc w eksplorowaniu mapy, rozmieszczanie układu, aby pasujące do rodzaje zadań, które chcesz wykonać.
 
      Na przykład w celu wizualizacji Tworzenie warstw w kodzie, wybierz układ drzewa. Zobacz [przeglądania i zmieniać code map](../modeling/browse-and-rearrange-code-maps.md).
 
 #### <a name="summary-strengths-of-code-maps"></a>Podsumowanie: Sile mapy kodu
  Mapy kodu ułatwiają:
 
--   Informacje o organizacji i relacje w istniejącym kodzie.
+- Informacje o organizacji i relacje w istniejącym kodzie.
 
--   Określenie obszarów, które mogą wpłynąć na proponowanej zmiany.
+- Określenie obszarów, które mogą wpłynąć na proponowanej zmiany.
 
--   Znajdź obszarów złożoności, wzorce, warstwy lub innymi obszarami, które można poprawić, aby ułatwić Obsługa, zmienianie i ponowne użycie kodu.
+- Znajdź obszarów złożoności, wzorce, warstwy lub innymi obszarami, które można poprawić, aby ułatwić Obsługa, zmienianie i ponowne użycie kodu.
 
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
 |**Diagram**|**W tym artykule opisano**|
 |-----------------|-------------------|
-|Diagram zależności|Architektura logiczna systemu. Aby upewnić się, że kod jest zgodne z projektem, należy użyć walidacji zależności.<br /><br /> Aby zidentyfikować istniejące dependencys lub zamierzone dependencys, utwórz mapę kodu i grupować powiązane elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> -   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
+|Diagram zależności|Architektura logiczna systemu. Aby upewnić się, że kod jest zgodne z projektem, należy użyć walidacji zależności.<br /><br /> Aby zidentyfikować istniejące dependencys lub zamierzone dependencys, utwórz mapę kodu i grupować powiązane elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
 |Diagram klas (oparte na kodzie)|Istniejące klasy w kodzie dla określonego projektu.<br /><br /> Wizualizacji i modyfikowania istniejącej klasy w kodzie, za pomocą projektanta klas.<br /><br /> Zobacz [porady: Dodawanie diagramów klasy do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
-###  <a name="DefineClasses"></a> Zdefiniuj słownik typów: diagramy klas
+### <a name="DefineClasses"></a> Zdefiniuj słownik typów: diagramy klas
  Diagramy klas Definiowanie jednostek, terminy i pojęcia uczestniczących w systemie oraz ich relacji między sobą. Na przykład można te diagramy podczas tworzenia opisano atrybuty i operacje dla każdej klasy, niezależnie od ich implementacji języka i styl.
 
  Ułatwia lucerny opisują i przedyskutować jednostek, które uczestniczą w przypadku użycia płatności procesu przyjmą na poniższym diagramie klasy:
@@ -356,57 +351,58 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
  **Szczegóły procesu płatności na diagramie klas**
 
 #### <a name="drawing-a-class-diagram"></a>Rysowanie diagramu klas
- Diagram klas zawiera następujące główne funkcje:
 
--   Typy, takich jak klasy, interfejsy i wyliczenia:
+Diagram klas zawiera następujące główne funkcje:
 
-    -   A *klasy* jest definicji obiektów, które mają określone właściwości strukturalne i funkcjonalne.
+- Typy, takich jak klasy, interfejsy i wyliczenia:
 
-    -   *Interfejsu* definiuje część widoczne na zewnątrz zachowanie obiektu.
+    - A *klasy* jest definicji obiektów, które mają określone właściwości strukturalne i funkcjonalne.
 
-    -   *Wyliczenie* jest klasyfikator, który zawiera listę wartości literału.
+    - *Interfejsu* definiuje część widoczne na zewnątrz zachowanie obiektu.
 
--   *Atrybuty* wartości określonego typu opisujące każde wystąpienie *klasyfikatora*. Klasyfikator jest ogólne nazwy dla typów, składników, przypadków użycia i nawet uczestników.
+    - *Wyliczenie* jest klasyfikator, który zawiera listę wartości literału.
 
--   *Operacje* metody lub funkcji, które można wykonać wystąpień klasyfikatora.
+- *Atrybuty* wartości określonego typu opisujące każde wystąpienie *klasyfikatora*. Klasyfikator jest ogólne nazwy dla typów, składników, przypadków użycia i nawet uczestników.
 
--   *Skojarzenie* wskazuje określonego rodzaju relacji między dwoma klasyfikatory.
+- *Operacje* metody lub funkcji, które można wykonać wystąpień klasyfikatora.
 
-    -   *Agregacji* jest skojarzeniem wskazuje udostępnionego własność między klasyfikatory.
+- *Skojarzenie* wskazuje określonego rodzaju relacji między dwoma klasyfikatory.
 
-    -   A *kompozycji* jest skojarzeniem wskazuje całkowitą część relacji między klasyfikatory.
+    - *Agregacji* jest skojarzeniem wskazuje udostępnionego własność między klasyfikatory.
+
+    - A *kompozycji* jest skojarzeniem wskazuje całkowitą część relacji między klasyfikatory.
 
      Aby wyświetlić agregacji lub kompozycji, ustaw **agregacji** właściwości skojarzenia. **Udostępnione** pokazuje agregacji i **złożonego** pokazuje kompozycji.
 
--   A *zależności* wskazuje, że definicja jednego klasyfikatora może zmiana definicji innego klasyfikatora.
+- A *zależności* wskazuje, że definicja jednego klasyfikatora może zmiana definicji innego klasyfikatora.
 
--   A *generalizacji* wskazuje, czy określonych klasyfikatora dziedziczy część definicję klasyfikatora ogólnego. A *realizacji* wskazuje, że klasa implementuje operacji i atrybuty oferowane przez interfejs.
+- A *generalizacji* wskazuje, czy określonych klasyfikatora dziedziczy część definicję klasyfikatora ogólnego. A *realizacji* wskazuje, że klasa implementuje operacji i atrybuty oferowane przez interfejs.
 
      Aby utworzyć te relacje, użyj **dziedziczenia** narzędzia. Alternatywnie realizacją może być reprezentowana jako *interfejs typu lizak*.
 
--   *Pakiety* są grupami klasyfikatory, skojarzenia linii życia, składników i inne pakiety. *Importuj* relacje wskazać, że jeden pakiet zawiera wszystkie definicje inny pakiet.
+- *Pakiety* są grupami klasyfikatory, skojarzenia linii życia, składników i inne pakiety. *Importuj* relacje wskazać, że jeden pakiet zawiera wszystkie definicje inny pakiet.
 
- Jako punktu wyjścia do eksplorowania i przedyskutować istniejące klasy projektanta klas służy do tworzenia diagramów klasy z kodu.
+Jako punktu wyjścia do eksplorowania i przedyskutować istniejące klasy projektanta klas służy do tworzenia diagramów klasy z kodu.
 
--   [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Podsumowanie: Sile diagramy klas
  Diagramy klas w celu określenia:
 
--   Wspólny Słownik terminów do użycia przy omawianiu potrzeb użytkowników i jednostek, które uczestniczą w systemie. Zobacz [modelu wymagania użytkownika](../modeling/model-user-requirements.md).
+- Wspólny Słownik terminów do użycia przy omawianiu potrzeb użytkowników i jednostek, które uczestniczą w systemie. Zobacz [modelu wymagania użytkownika](../modeling/model-user-requirements.md).
 
--   Typy, które są używane przez części systemu, takich jak składniki, niezależnie od ich implementacji. Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
+- Typy, które są używane przez części systemu, takich jak składniki, niezależnie od ich implementacji. Zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).
 
--   Relacje, takich jak zależności między typami. Na przykład można pokazać, że jeden typ może być skojarzony z wielu wystąpień innego typu.
+- Relacje, takich jak zależności między typami. Na przykład można pokazać, że jeden typ może być skojarzony z wielu wystąpień innego typu.
 
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
 |**Diagram**|**Opis**|
 |-----------------|---------------------|
-|Diagram zależności|Zdefiniuj architektura logiczna systemu do klas.<br /><br /> Aby upewnić się, że kod jest zgodne z projektem, należy użyć walidacji zależności.<br /><br /> Zobacz:<br /><br /> -   [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />-   [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />-   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
-|Mapy kodu|Wizualizuj organizacji i relacje w istniejącym kodzie.<br /><br /> Aby zidentyfikować klas, ich relacje i ich metod tworzenia mapy kodu, który pokazuje tych elementów.<br /><br /> Zobacz:<br /><br /> -   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|
+|Diagram zależności|Zdefiniuj architektura logiczna systemu do klas.<br /><br /> Aby upewnić się, że kod jest zgodne z projektem, należy użyć walidacji zależności.<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności w kodzie](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
+|Mapy kodu|Wizualizuj organizacji i relacje w istniejącym kodzie.<br /><br /> Aby zidentyfikować klas, ich relacje i ich metod tworzenia mapy kodu, który pokazuje tych elementów.<br /><br /> Zobacz:<br /><br /> - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|
 
-###  <a name="DescribeLayers"></a> Architektura logiczna opisują: diagramy zależności
+### <a name="DescribeLayers"></a> Architektura logiczna opisują: diagramy zależności
  Diagramy zależności opisano architekturę logicznych systemu przez organizowanie artefaktów w rozwiązaniu w abstrakcyjnej grup lub *warstwy*. Artefakty można wiele rzeczy, takich jak obszary nazw, projektów, klas, metod i tak dalej. Warstwy reprezentują i opisano role lub zadania, które wykonują artefaktów w systemie. Możesz również uwzględnić Walidacja warstw w kompilacji i zaewidencjonuj operacji upewnij się, że kod jest zgodny z jego projekt.
 
  Aby zachować kod jest zgodne z projektem, teraz obiad i lucerny umożliwia na poniższym diagramie zależności sprawdzanie poprawności ich kodu jak ewoluują:
@@ -432,56 +428,58 @@ Elementów na diagramach zależności znajdują się w projekcie modelowania, al
  **Mapy kodu bez PaymentProcessing**
 
 #### <a name="drawing-a-dependency-diagram"></a>Rysowanie Diagram zależności
- Diagram zależności zawiera następujące główne funkcje:
 
--   *Warstwy* opisano grupy logiczne artefaktów.
+Diagram zależności zawiera następujące główne funkcje:
 
--   A *łącze* jest skojarzenie między warstwami artefaktu.
+- *Warstwy* opisano grupy logiczne artefaktów.
+
+- A *łącze* jest skojarzenie między warstwami artefaktu.
 
      Aby utworzyć warstwy z artefaktów, przeciągnij elementy z Eksploratora rozwiązań, mapy kodu, Widok klas lub przeglądarki obiektów. Rysuj nowe warstwy, a następnie połączenie ich do artefaktów, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu do utworzenia warstwy, a następnie przeciągnij elementy do nich.
 
      Numer na warstwie pokazuje liczbę artefaktów, które są połączone z warstwy. Tych artefaktów może być przestrzeni nazw, projektów, klas, metod i tak dalej. Podczas interpretacji liczbę artefaktów na warstwie, należy pamiętać o następujące czynności:
 
-    -   Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
+    - Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
 
          Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.
 
-    -   Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
+    - Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
 
      Aby wyświetlić artefaktów, które są połączone z warstwy, kliknij prawym przyciskiem myszy zależności, a następnie kliknij **Wyświetl łącza** otworzyć **Explorer warstwy**.
 
--   A *zależności* wskazuje jednej warstwie może używać funkcji w innej warstwie, ale nie odwrotnie. A *zależności dwukierunkowego* wskazuje jednej warstwie może używać funkcji w innej warstwie i na odwrót.
+- A *zależności* wskazuje jednej warstwie może używać funkcji w innej warstwie, ale nie odwrotnie. A *zależności dwukierunkowego* wskazuje jednej warstwie może używać funkcji w innej warstwie i na odwrót.
 
      Aby wyświetlić istniejące zależności na diagramie zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie kliknij przycisk **Generowanie zależności**. Do opisania zamierzone zależności, Rysuj nowe.
 
- Zobacz:
+Zobacz:
 
--   [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
+- [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
+- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
 
--   [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)
 
--   [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
+- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 
 #### <a name="summary-strengths-of-dependency-diagrams"></a>Podsumowanie: Sile diagramy zależności
- Diagramy zależności ułatwiają:
 
--   Opisz architektura logiczna systemu zgodnie z funkcji jego artefakty.
+Diagramy zależności ułatwiają:
 
--   Upewnij się, że kod opracowywane odpowiada określonego projektu.
+- Opisz architektura logiczna systemu zgodnie z funkcji jego artefakty.
+
+- Upewnij się, że kod opracowywane odpowiada określonego projektu.
 
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
 |**Diagram**|**Opis**|
 |-----------------|---------------------|
-|Mapy kodu|Wizualizuj organizacji i relacje w istniejącym kodzie.<br /><br /> Aby utworzyć warstwy, Generuj mapę kodu, a następnie grupować elementy na mapie jako potencjalne warstwy. Przeciągnij grup z mapy do diagramu zależności.<br /><br /> Zobacz:<br /><br /> -   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)|
+|Mapy kodu|Wizualizuj organizacji i relacje w istniejącym kodzie.<br /><br /> Aby utworzyć warstwy, Generuj mapę kodu, a następnie grupować elementy na mapie jako potencjalne warstwy. Przeciągnij grup z mapy do diagramu zależności.<br /><br /> Zobacz:<br /><br /> - [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />- [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 |**Kategoria**|**Łącza**|
 |------------------|---------------|
-|**Fora**|-   [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Fora**|- [Visual Studio wizualizacji & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio wizualizacji & modelowania SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Zobacz także
 

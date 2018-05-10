@@ -1,15 +1,15 @@
 ---
-title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań
-description: ''
+title: Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio dla komputerów Mac
+description: W tym artykule opisano sposób tworzenia projektu programu Visual Studio dla komputerów Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 746aefbee359313e6e8a5f0e3b8387cb5eff9a16
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Kompilowanie oraz Oczyszczanie projektów i rozwiązań
 
@@ -21,11 +21,11 @@ Do kompilacji, skompiluj ponownie lub wyczyść całego rozwiązania:
 
 1. Wybierz węzeł rozwiązania w konsoli rozwiązania:
 
-    ![](media/compiling-and-building-image1.png)
+    ![Wybranie węzła rozwiązania](media/compiling-and-building-image1.png)
 
 2. Wybierz Menu kompilacji na pasku Menu, a następnie wybierz jedną z następujących opcji:
 
-    ![](media/compiling-and-building-image2.png)
+    ![Wybieranie kompilacji wszystkich elementów menu](media/compiling-and-building-image2.png)
 
     * **Tworzenie wszystkich** -próbuje kompilacji wszystkich plików w ramach projektu, które zostały zmienione w projekcie od czasu ostatniej kompilacji.
     * **Odbudowanie wszystkiego** — czyści rozwiązania, a następnie kompiluje go.

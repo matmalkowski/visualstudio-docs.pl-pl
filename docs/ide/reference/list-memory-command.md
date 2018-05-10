@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0110a8e9b0e4617ac191bfaab8b575fd8faa6a76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 Wyświetla zawartość z pamięci podanego zakresu.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
@@ -57,13 +57,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="remarks"></a>Uwagi
  Zamiast zapisywania pełnego **Debug.listmemory —** polecenie z wszystkich przełączników, można wywołać polecenia przy użyciu wstępnie zdefiniowane aliasy z przełącznikami, niektórych ustawień do określonej wartości. Na przykład zamiast wprowadzania:
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
  Można napisać:
 
-```
+```cmd
 >df /Count:30 /Unicode
 ```
 
@@ -82,7 +82,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 ## <a name="example"></a>Przykład
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: Co to jest nowa w programie Visual Studio 2017 r.
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb7d3ce6ec3fd743d8f332b8df2148c7b29fe0f
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5ae8a0424f822b4b84aed01badc5bc625aacdde8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;nowego w Visual Studio 2017 r.
-#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.6 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+#### <a name="updated-for-the-157-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Zaktualizowano w celu [15.7 zlecenia](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Szukasz do uaktualnienia z poprzedniej wersji programu Visual Studio? Oto co program Visual Studio 2017 można umożliwiają: bezkonkurencyjną wydajność dla dowolnego deweloperów, dowolną aplikację i dowolnej platformie. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemu Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, można elastyczne i wydajne współpracować z tej wersji!
 
 Oto ogólny — podsumowanie zmian, które wprowadziliśmy od poprzedniej wersji programu Visual Studio 2015:
@@ -55,7 +55,11 @@ Wybierz obciążeń należy i gdy trzeba je zmienić.
 
  ![Okno dialogowe Ustawienia programu Visual Studio 2017](../install/media/install-visual-studio-enterprise.png "ekranie Instalatora programu Visual Studio 2017 r.")
 
-Czy chcesz wybrać składniki zamiast obciążeń? Wybierz **pojedynczych składników** kartę z Instalatora. Czy chcesz zainstalować pakiety językowe bez konieczności zmiany opcji języka systemu Windows? Wybierz **pakiety językowe** kartę Instalatora.  
+I skonfigurowaniu opcji, aby dostosować instalację, za:
+
+* Czy chcesz wybrać składniki zamiast obciążeń? Wybierz **pojedynczych składników** kartę z Instalatora.
+* Czy chcesz zainstalować pakiety językowe bez konieczności zmiany opcji języka systemu Windows? Wybierz **pakiety językowe** kartę Instalatora.
+* **Nowość w 15.7**: Aby zmienić lokalizację, z której instaluje program Visual Studio? Wybierz **opcje instalacji** kartę Instalatora.
 
 Aby dowiedzieć się więcej na temat nowego środowiska instalacji, w tym instrukcje krok po kroku, które przeprowadzi użytkownika przez proces, zobacz [program Visual Studio](../install/install-visual-studio.md) strony.
 
@@ -288,7 +292,7 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Unity](../cross
 Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for AI](../ai/about-ai-tools.md) strony.
 
 
-## <a name="talk-to-us"></a>Porozmawiaj z nami  
+## <a name="contact-us"></a>Skontaktuj się z nami  
  Dlaczego należy wysłać opinię do zespołu Visual Studio? Ponieważ poważnie traktujemy opinie klientów. Dyski większość co zrobić, firma Microsoft.  
 
 Jeśli chcesz sugestii dotyczących jak możemy ulepszyć program Visual Studio, lub zgłosić problem, zapoznaj się z artykułem [Porozmawiaj z nami](../ide/talk-to-us.md) strony.  

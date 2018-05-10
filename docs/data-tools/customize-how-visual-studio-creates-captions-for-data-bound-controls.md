@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosuj sposób tworzenia podpisów dla formantów powiązanych z danymi w Visual Studio
+
 Gdy przeciągnij elementy z [Data Sources — okno](add-new-data-sources.md) do konstruktora, szczególną uwagę wejścia play: nazwy kolumn w etykietach podpis są ponownie sformatowany na ciąg był bardziej czytelny, gdy dwie lub więcej wyrazów okaże się, że połączone ze sobą. Można dostosować sposób tworzenia etykiety, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości r
 > [!CAUTION]
 > Należy zachować ostrożność w Edytorze rejestru żadnego działania. Utwórz kopię zapasową rejestru przed rozpoczęciem edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Microsoft nie gwarantuje, że można rozwiązać problemy powodujące przez niewłaściwego używania Edytora rejestru. Używasz Edytora rejestru na własne ryzyko.
 >
->  Instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracanie rejestru zawiera następujący artykuł bazy wiedzy: [Opis rejestru systemu Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracanie rejestru zawiera następujący artykuł bazy wiedzy: [Opis rejestru systemu Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Aby zmodyfikować zachowanie podpisów inteligentne okna źródeł danych
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modyfikowanie inteligentne podpisów okna źródeł danych
 
 1.  Otwórz okno polecenia, klikając przycisk **Start** , a następnie **Uruchom**.
 
 2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń węzeł **HKEY_CURRENT_USER**, **oprogramowania*, **Microsoft**, **VisualStudio** węzła.
+3.  Rozwiń węzeł **HKEY_CURRENT_USER**, **oprogramowania**, **Microsoft**, **VisualStudio** węzła.
 
 7.  Kliknij prawym przyciskiem myszy **15.0** węzeł i utworzyć nową **klucza** o nazwie `Data Designers`.
 
@@ -80,7 +81,7 @@ W poniższej tabeli wymieniono wewnętrzny domyślne ustawienia tych wartości r
 
     Przy następnym przeciągnij elementy z **źródeł danych** , etykiety podpis są tworzone przy użyciu nowej wartości rejestru, pod warunkiem.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Aby wyłączyć funkcję podpisów inteligentne
+## <a name="turn-off-the-smart-captioning-feature"></a>Wyłącz funkcję podpisów inteligentne
 
 1.  Otwórz okno polecenia, klikając przycisk **Start** , a następnie **Uruchom**.
 

@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632c37ea2ee8afc0a8d3b45e0d3e208de6b76f9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="shell-command"></a>Shell — Polecenie
 Uruchamia programy wykonywalne z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
@@ -66,13 +66,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > Jeśli `path` argument dostarcza ścieżki katalogu, a także nazwę pliku, całą nazwę ścieżki należy ująć w cudzysłowy literału ("" ") w następujących czynności:
 
 
-```
+```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
  Każdy zestaw trzy znaki cudzysłowu ("" ") jest interpretowany przez `Shell` procesora jako znak pojedynczego cudzysłowu. W związku z tym w poprzednim przykładzie przekazuje faktycznie następujący ciąg ścieżki `Shell` polecenia:
 
-```
+```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
@@ -83,7 +83,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ## <a name="example"></a>Przykład
  Polecenie używa xcopy.exe można skopiować pliku `MyText.txt` do `Text` folderu. Dane wyjściowe z xcopy.exe jest wyświetlany zarówno **okno polecenia** i **dane wyjściowe** okna.
 
-```
+```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 

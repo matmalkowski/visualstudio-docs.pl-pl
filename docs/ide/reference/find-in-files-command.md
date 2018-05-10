@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 177a3c0c088e20b37172f6ff0a5b818dce24795c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-in-files-command"></a>Znajdź w plikach — Polecenie
 Wyszukiwania plików przy użyciu podzbiór opcje dostępne na **Znajdź w plikach** karcie **Znajdź i Zamień** okna.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 Edit.FindinFiles findwhat [/case] [/ext:extensions]
 [/lookin:searchpath] [/names] [/options] [/reset] [/stop] [/sub]
 [/text2] [/wild|/regex] [/word]
@@ -52,7 +52,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 
  / stop opcjonalne. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Wyszukiwanie ignoruje wszystkie inne argumenty podczas `/stop` został określony. Na przykład aby zatrzymać bieżące wyszukiwanie należy wprowadzić następujące:
 
-```
+```cmd
 >Edit.FindinFiles /stop
 ```
 
@@ -67,7 +67,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="example"></a>Przykład
  W tym przykładzie szuka btnCancel we wszystkich plikach .cls znajdujące się w folderze "Moje projektów programu Visual Studio" i wyświetla informacje dopasowania w oknie Znajdź 2 wyniki.
 
-```
+```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 

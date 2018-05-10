@@ -1,15 +1,15 @@
 ---
 title: Dostosowywanie systemu kompilacji
-description: ''
+description: Ten artykuł zawiera krótkie wprowadzenie do programu MSBuild kompilacji systemu używany przez Visual Studio dla komputerów Mac
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 649289700aa984235f432528a59b970762d26be0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customizing-the-build-system"></a>Dostosowywanie systemu kompilacji
 

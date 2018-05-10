@@ -1,15 +1,15 @@
 ---
 title: Logowanie do programu Visual Studio dla komputerów Mac
-description: ''
+description: Jak zarejestrować się w programie Visual Studio dla komputerów Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: MT
+ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Logowanie do programu Visual Studio dla komputerów Mac
 
@@ -25,17 +25,17 @@ Aby zalogować się do programu Visual Studio dla komputerów Mac, wykonaj nast�
 
 1. Kliknij znak łącza na stronie powitalnej, aby wyświetlić okno dialogowe kont i naciśnij klawisz **logowania** przycisk:
 
-    ![](media/signing-in-image12.png)
+    ![Okno dialogowe kont w programie Visual Studio dla komputerów Mac](media/signing-in-image12.png)
 
 2. Wprowadź poświadczenia firmy Microsoft:
 
-    ![](media/signing-in-image13.png)
+    ![Okno dialogowe poświadczeń firmy Microsoft](media/signing-in-image13.png)
 
     Nie można użyć poświadczeń Xamarin, aby zalogować się do programu Visual Studio dla komputerów Mac.
 
 3.  Gdy użytkownik zalogował się pomyślnie, zostanie wyświetlony danego typu licencji. W tym oknie dialogowym można dodać dodatkowych kont Microsoft, które mogą się, że używasz:
 
-    ![](media/signing-in-image14.png)
+    ![Zaloguj się pomyślnie](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Dodawanie wielu kont użytkowników
 

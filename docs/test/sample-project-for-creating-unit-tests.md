@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 839aeb7028608c60b2cd2f4170d37b06e3973f55
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sample-code-for-testing"></a>Przykładowy kod do testowania
 
-Ten przykładowy kod zawiera klasę, *BankAccont*, z różnych metod, które można zbadać za pomocą testów jednostkowych.
+Ten przykładowy kod zawiera klasę, *prezentowanie ich*, z różnych metod, które można zbadać za pomocą testów jednostkowych.
 
 Kod jest używany w następujące wskazówki:
 

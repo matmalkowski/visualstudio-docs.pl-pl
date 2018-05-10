@@ -2,7 +2,7 @@
 title: Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
 description: Informacje o sposobie używania parametrów wiersza polecenia, aby kontrolować lub dostosować instalację programu Visual Studio.
 ms.custom: ''
-ms.date: 01/17/2018
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: MT
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
 
@@ -101,6 +101,10 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--nocache` | **Nowość w 15,2 opcjonalne**: Jeśli jest obecny, pakiety zostaną usunięte po zainstalować lub naprawić. Tylko wtedy, gdy są potrzebne i usuwane ponownie po użyciu będzie można ponownie pobrać. Przesłania globalne ustawienia do zastosowania w przypadku kolejnych instaluje, naprawia lub zmiany zasad. Domyślna zasada jest pakiety w pamięci podręcznej. To jest ignorowany dla polecenia dezinstalacji. Jak do odczytu do [wyłączone lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
 | `--noUpdateInstaller` | **Nowość w 15,2 opcjonalne**: Jeśli jest obecny, Instalatorowi na aktualizowanie się, gdy określono cichy. Instalator niepowodzenie polecenia i zwraca kod zakończenia inną niż zero, jeśli noUpdateInstaller zostanie określony z okna, gdy wymagana jest aktualizacja Instalatora. |
 | `--noWeb` | **Nowość w 15 ustęp 3, opcjonalnie**: Instalator pobierze teraz żadnej zawartości, który jest instalowany z Internetu.  Cała zawartość, który jest instalowany musi być dostępny w układzie w trybie offline.  Układu nie ma zawartości, instalacja zakończy się niepowodzeniem.  Aby uzyskać więcej informacji, zobacz [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **Nowość w 15.7 opcjonalne**: służy do określania ścieżki instalacji niestandardowej instalacji. Obsługiwana ścieżka, których nazwy są udostępniane, pamięci podręcznej i instalacji. |
+| `--path cache=<path>` | **Nowość w 15.7 opcjonalne**: używa lokalizacji określ pobierania plików instalacyjnych. Tej lokalizacji można ustawić tylko przy pierwszym uruchomieniu programu Visual Studio jest zainstalowany. Przykład: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Nowość w 15.7 opcjonalne**: zawiera pliki udostępnione do instalacji programu Visual Studio side-by-side. Niektóre narzędzia i zestawy SDK zainstalować produkt w lokalizacji na dysku, podczas gdy inne mogą zastąpić to ustawienie, zainstaluj na inny dysk. Przykład: `--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **Nowość w 15.7 opcjonalne**: odpowiednikiem `–-installPath`. W szczególności `--installPath "C:\VS"` i `--path install="C:\VS"` są równoważne. Jednocześnie można użyć tylko jeden z tych. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista identyfikatorów obciążenia i identyfikatory składników
 

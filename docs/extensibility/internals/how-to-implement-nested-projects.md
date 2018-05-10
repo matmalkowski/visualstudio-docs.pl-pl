@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Porady: wdrożeniu zagnieżdżonych projektów
+
 Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków, które muszą zostać zaimplementowane. Projekt nadrzędny przejmuje niektóre z obowiązków tego samego, które rozwiązanie ma jego projektów zagnieżdżonych (podrzędny). Projekt nadrzędny jest kontenerem projektów podobne do rozwiązania. W szczególności istnieje kilka zdarzeń, które muszą zgłoszone przez rozwiązanie i projekty nadrzędnego do kompilacji hierarchia zagnieżdżonych projektów. Te zdarzenia są opisane w następujących proces tworzenia zagnieżdżonych projektów.
 
-### <a name="to-create-nested-projects"></a>Do tworzenia projektów zagnieżdżonych
+## <a name="create-nested-projects"></a>Tworzenie projektów zagnieżdżonych
 
 1.  Zintegrowane środowisko programistyczne (IDE) ładuje informacje pliku i uruchamianie projektu projektu nadrzędnego wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu. Projekt nadrzędny jest tworzony i dodawany do rozwiązania.
 
     > [!NOTE]
-    >  W tym momencie jest zbyt wczesny procesu dla projektu nadrzędnego do tworzenia projektu zagnieżdżonego, ponieważ można utworzyć projektu nadrzędnego, aby można było utworzyć projektów podrzędnych. Po tej sekwencji projektu nadrzędnego można stosować ustawienia do projektów podrzędnych i projekty podrzędne można uzyskać informacji z projektów nadrzędnego, w razie potrzeby. Ta sekwencja jest, jeśli jest wymagana na przez klientów, takie jak kontroli kodu źródłowego (SCC) i w Eksploratorze rozwiązań.
+    > W tym momencie jest zbyt wczesny procesu dla projektu nadrzędnego do tworzenia projektu zagnieżdżonego, ponieważ można utworzyć projektu nadrzędnego, aby można było utworzyć projektów podrzędnych. Po tej sekwencji projektu nadrzędnego można stosować ustawienia do projektów podrzędnych i projekty podrzędne można uzyskać informacji z projektów nadrzędnego, w razie potrzeby. Ta sekwencja jest, jeśli jest wymagana na przez klientów, takie jak kontroli kodu źródłowego (SCC) i w Eksploratorze rozwiązań.
 
      Projekt nadrzędny musi czekać, aż <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metody do wywołania przez IDE przed przygotowaniem zagnieżdżonych (podrzędnej) projektu lub projektów.
 
@@ -57,7 +58,7 @@ Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków,
      Jeśli go jeszcze nie istnieje, projektu nadrzędnego tworzy identyfikator GUID dla każdego projektu zagnieżdżonego przez wywołanie metody `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` Interfejs API modelu COM jest wywoływane, gdy jest identyfikator GUID ma zostać utworzony. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.
+    > `CoCreateGuid` Interfejs API modelu COM jest wywoływane, gdy jest identyfikator GUID ma zostać utworzony. Aby uzyskać więcej informacji, zobacz `CoCreateGuid` i identyfikatory GUID w bibliotece MSDN.
 
      Projekt nadrzędny przechowuje ten identyfikator GUID w pliku projektu mają zostać pobrane przy następnym otwarciu w IDE. Zobacz krok 4, aby uzyskać więcej informacji dotyczących telefonicznej z `AddVirtualProjectEX` można pobrać `guidProjectID` dla projektu podrzędnego.
 
@@ -66,7 +67,7 @@ Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków,
      Ponieważ projekty nadrzędne i podrzędne są tworzone programowo, można ustawić właściwości dla projektów zagnieżdżonych w tym momencie.
 
     > [!NOTE]
-    >  Nie tylko czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale możesz również poprosić, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób można dodać dodatkowe atrybuty dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.
+    > Nie tylko czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale możesz również poprosić, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób można dodać dodatkowe atrybuty dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.
 
 10. Hierarchia zaprojektowano pod kątem wyświetlania w Eksploratorze rozwiązań w wyniku wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.
 
@@ -78,17 +79,14 @@ Podczas tworzenia projektu zagnieżdżonego typu jest kilka dodatkowych kroków,
 
      Gdy projektu zagnieżdżonego jest zamknięty, ponieważ użytkownik zamknął rozwiązania lub konkretnym projektu, inne metody na `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, nosi nazwę. Projekt nadrzędny opakowuje wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> metody o do rozwiązania zdarzeń są zamykane zagnieżdżonych projektów.
 
- Poniższe tematy dotyczy kilka pojęć wziąć pod uwagę podczas implementowania zagnieżdżonych projektów:
+Poniższe tematy dotyczy kilka pojęć wziąć pod uwagę podczas implementowania zagnieżdżonych projektów:
 
- [Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Zagadnienia dotyczące zwalniania i ponownego ładowania zagnieżdżonych projektów](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Obsługa kreatora dla zagnieżdżonych projektów](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implementowanie obsługi poleceń dla zagnieżdżonych projektów](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Filtrowanie okna dialogowego Dodawanie elementu dla projektów zagnieżdżonych](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
- [Obsługa kreatora dla zagnieżdżonych projektów](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [Implementowanie obsługi poleceń dla zagnieżdżonych projektów](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [Filtrowanie okna dialogowego Dodawanie elementu dla projektów zagnieżdżonych](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie elementów do okien dialogowych Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)

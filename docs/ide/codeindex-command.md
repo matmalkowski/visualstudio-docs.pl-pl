@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0e4172d73544f3fe22764505bbabf182fc4ec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="codeindex-command"></a>CodeIndex — polecenie
 
@@ -33,7 +33,7 @@ Aby użyć **CodeIndex** polecenia, musisz być członkiem **Team Foundation Adm
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
@@ -65,61 +65,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
  Aby wyświetlić kod indeksowania stanu i konfiguracji:
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
 ```
 
  Aby uruchomić indeksowania wszystkich grup zmian:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
 ```
 
  Aby zatrzymać, indeksowania wcześniej utworzonej grupy zmian i uruchomić indeksowania tylko nowych grup zmian:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
 ```
 
  Aby znaleźć do 50 plików, które są większe niż 10 KB:
 
-```
+```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
 ```
 
  Aby wykluczyć określony plik z indeksowania i dodać go do listy zignorowany plik:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
 ```
 
  Aby wyświetlić wszystkie pliki, które nie są indeksowane:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
  Aby wyczyścić wcześniej zindeksowanych danych i uruchom ponownie indeksowania:
 
-```
+```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
 ```
 
  Aby zapisać całą historię zmian:
 
-```
+```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
 ```
 
  Aby usunąć limit rozmiaru na CodeLens dane tymczasowe i kontynuować indeksowanie niezależnie od rozmiaru danych tymczasowych:
 
-```
+```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
 ```
 
  Aby usunąć indeksu kod potwierdzenia:
 
-```
+```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 

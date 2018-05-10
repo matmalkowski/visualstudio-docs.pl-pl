@@ -12,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b36162c14b07e90368b30e34137ea8e7da03d91a
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5280dd0bffab2fb7c9797502e9d94e0589800c39
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje Edytor kodu
 
-Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edytować kod](https://www.visualstudio.com/features/ide-vs) szybki przegląd.
+Edytor programu Visual Studio udostępnia wiele funkcji, które ułatwiają zapisu i zarządzanie kodu i tekstu. Można zwijać i rozwijać różnych bloków kodu za pomocą obramowanie. Użytkownik może dowiedzieć się więcej o kod za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywołań. Możesz znaleźć kodu za pomocą funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawić bloków kodu z fragmentów kodu i istnieje możliwość wygenerowania kodu za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli nie znasz edytorze programu Visual Studio przed, zobacz [edytować kod](https://www.visualstudio.com/vs/features/ide/) szybki przegląd.
 
 Kodu można wyświetlić na kilka różnych sposobów. Domyślnie **Eksploratora rozwiązań** zawiera kod uporządkowane według plików. Możesz kliknąć **widoku klasy** u dołu okna, aby wyświetlić kod uporządkowane według klasy.
 

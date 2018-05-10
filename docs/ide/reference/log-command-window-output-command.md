@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16eb42011a15539193e9d69724d299c73e5cecc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="log-command-window-output-command"></a>Zapisuj dane wyjściowe okna Polecenie — Polecenie
 Kopiuje wszystkie dane wejściowe i wyjściowe z **polecenia** okna do pliku.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
@@ -58,19 +58,19 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="examples"></a>Przykłady
  W tym przykładzie tworzy nowy plik dziennika cmdlog i uruchamia polecenie dziennika.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
  W tym przykładzie zatrzymuje rejestrowanie poleceń.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
  W tym przykładzie wznawia rejestrowanie w pliku dziennika wcześniej używanych poleceń.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /on
 ```
 

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b638d7c2faf792da208cb1dbea153f24db25066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
-W sekcjach w tym temacie wymieniono niektóre typowe szybkie akcje, które mają zastosowanie do kodu zarówno C# i Visual Basic. Te akcje są *kodu poprawki* wbudowanych [reguły analizatora](../code-quality/roslyn-analyzers-overview.md) w programie Visual Studio.
+W sekcjach, w tym temacie wymieniono niektóre typowe **szybkie akcje** dotyczą zarówno C# i Visual Basic kodu. Te akcje są *kodu poprawki* diagnostyki kompilatora lub wbudowane [analizatorów platformy kompilatora .NET](../code-quality/roslyn-analyzers-overview.md) w programie Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Akcje, które błędy
 

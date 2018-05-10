@@ -2,7 +2,7 @@
 title: Zainstaluj program Visual Studio 2017 | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-visual-studio-2017"></a>Zainstaluj program Visual Studio 2017 r.
 
@@ -119,7 +119,15 @@ Domyślnie program Instalator podejmuje próbę język systemu operacyjnego, gdy
 
 Inny sposób, że można zmienić domyślny język jest uruchamiając Instalatora z wiersza polecenia. Na przykład możesz wymusić Instalatora, aby uruchomić w języku angielskim, za pomocą następującego polecenia: `vs_installer.exe --locale en-US`. Instalator zapamiętuje to ustawienie po przy następnym uruchomieniu. Instalator obsługuje następujące tokeny języka: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
 
-## <a name="step-7---start-developing"></a>Krok 7 — rozpocząć tworzenie
+## <a name="step-7---change-the-installation-location-optional"></a>Krok 7 — Zmień lokalizację instalacji (opcjonalnie)
+
+**Nowość w 15.7**: teraz można zmniejszyć rozmiaru instalacji programu Visual Studio na dysku systemowym. Istnieje możliwość przenoszenia pamięć podręczną pobierania, udostępniane składniki, zestawy SDK i narzędzi na różnych dyskach, a także zapewnić Visual Studio na dysku, który uruchamia go najszybciej.
+
+  ![Visual Studio 2017 — Zmień lokalizację instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
+
+Aby uzyskać więcej informacji, zobacz [zmienić lokalizację instalacji programu Visual Studio](change-installation-locations.md) strony.
+
+## <a name="step-8---start-developing"></a>Krok 8 — rozpocząć tworzenie
 
 1. Po zakończeniu instalacji programu Visual Studio kliknij **uruchamianie** przycisk, aby [rozpocząć wdrażanie z programem Visual Studio](../ide/get-started-developing-with-visual-studio.md).
 

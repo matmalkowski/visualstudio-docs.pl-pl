@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f23e2492a183dcae2e2b3cb87e39b08f66a7c2ae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c18d825ae61dd80ab7b72e1e14c7dc3412582317
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-radix-command"></a>Ustaw Radix — Polecenie
 Ustawia lub zwraca base liczbowego, używany do wyświetlania wartości będące liczbami całkowitymi.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
@@ -38,7 +38,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="example"></a>Przykład
  W tym przykładzie środowiska do wyświetlenia w formacie szesnastkowym wartości będące liczbami całkowitymi.
 
-```
+```cmd
 >Debug.SetRadix hex
 ```
 

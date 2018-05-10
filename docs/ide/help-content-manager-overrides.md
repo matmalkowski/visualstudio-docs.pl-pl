@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a10004227a7979d72f167bcc51abdb741c0370d
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-content-manager-overrides"></a>Zastąpienia menedżera zawartości pomocy
 
@@ -24,7 +24,7 @@ Można zmienić domyślne zachowanie związane z pomocy funkcji w programie Visu
 
 1. Utwórz *.pkgdef* pliku z pierwszego wiersza jako `[$RootKey$\Help]`.
 
-2. Dodaj wybrane lub wszystkie wartości klucza rejestru opisanego w poniższej tabeli w osobnych wierszach, na przykład `“UseOnlineHelp”=dword:00000001`.
+2. Dodaj wybrane lub wszystkie wartości klucza rejestru opisanego w poniższej tabeli w osobnych wierszach, na przykład `"UseOnlineHelp"=dword:00000001`.
 
 3. Skopiuj plik do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\< edition\>\Common7\IDE\CommonExtensions*.
 
@@ -45,12 +45,12 @@ Można zmienić domyślne zachowanie związane z pomocy funkcji w programie Visu
 
 ```
 [$RootKey$\Help]
-“NewContentAndUpdateService”=”https://some.service.endpoint”
-“UseOnlineHelp”=dword:00000001
-“OnlineBaseUrl”=”https://some.service.endpoint”
-“OnlineHelpPreferenceDisabled”=dword:00000000
-“DisableManageContent”=dword:00000000
-“DisableFirstRunHelpSelection”=dword:00000001
+"NewContentAndUpdateService"="https://some.service.endpoint"
+"UseOnlineHelp"=dword:00000001
+"OnlineBaseUrl"="https://some.service.endpoint"
+"OnlineHelpPreferenceDisabled"=dword:00000000
+"DisableManageContent"=dword:00000000
+"DisableFirstRunHelpSelection"=dword:00000001
 ```
 
 ## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Użyj Edytora rejestru, aby zmienić zachowanie podglądu pomocy

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d66a61693497826117715be9a9f8b96ea0e4f7c3
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
-ms.translationtype: MT
+ms.openlocfilehash: fbefd6a09537227f9b2343d2311dd1e68b9f0a23
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiska Python w programie Visual Studio
 
@@ -28,7 +28,7 @@ W programie Visual Studio w systemie Windows [okno środowiska Python](#the-pyth
 - [Praca z języka Python w programie Visual Studio](overview-of-python-tools-for-visual-studio.md)
 - [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md)
 
-Również uwaga nie może zarządzać środowiska Python kodu, który jest otwierane tylko w folderze przy użyciu **Plik > Otwórz > folderu** polecenia. Zamiast tego [utworzenia projektu języka Python z istniejącego kodu](quickstart-01-python-in-visual-studio-project-from-existing-code.md) korzystać z funkcji środowiska Visual Studio.
+Ponadto Uwaga nie może zarządzać środowiska Python kodu, który jest otwierać tylko w folderze przy użyciu **pliku** > **Otwórz** > **folderu** polecenie. Zamiast tego [utworzenia projektu języka Python z istniejącego kodu](quickstart-01-python-in-visual-studio-project-from-existing-code.md) korzystać z funkcji środowiska Visual Studio.
 
 Jeśli chcesz zainstalować pakiety w środowisku, można skorzystać z [kartę pakiety](python-environments-window-tab-reference.md#packages-tab).
 
@@ -48,15 +48,35 @@ W programie Visual Studio można utworzyć środowisko wirtualne dla konkretnego
 
 ### <a name="conda-environments"></a>Conda środowisk
 
-Środowisko conda jest utworzony przy użyciu `conda` narzędzia. Środowisk Conda zwykle są przechowywane w `envs` folderu w ramach instalacji Anaconda, a w związku z tym act środowisk podobnie do globalnego. Na przykład instalowanie nowego pakietu do środowiska conda udostępnia tego pakietu do wszystkich projektów przy użyciu tego środowiska.
+Środowisko conda jest utworzony przy użyciu `conda` narzędzia, lub za pomocą zintegrowanego conda zarządzania w programie Visual Studio 2017 wersji 15.7 lub nowszej. (Wymaga Anaconda lub Miniconda; Anaconda jest dostępna za pośrednictwem Instalator programu Visual Studio, zobacz [instalacji — Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017).)
 
-Visual Studio, obecnie automatycznie wykrywa środowisk conda, ale możesz wskazać Visual Studio go ręcznie. Zobacz [ręczne identyfikowanie istniejącego środowiska](#manually-identifying-an-existing-environment).
+> [!Note]
+> Aby uzyskać najlepsze wyniki w środowiskach conda, użyj conda 4.4.8 lub nowszym (conda wersje różnią się od wersji Anaconda). Instalowanie Anaconda 5.1 Instalatora programu Visual Studio 2017 r.
+
+Aby wyświetlić wersji conda, gdzie są przechowywane środowisk conda, oraz inne informacje, uruchom `conda info` Anaconda z wiersza polecenia (czyli wiersz polecenia gdzie Anaconda znajduje się w ścieżce):
+
+```bash
+conda info
+```
+Możesz conda środowiska foldery są wyświetlane w następujący sposób:
+
+```output
+       envs directories : c:\anaconda3\envs
+                          C:\Users\user\AppData\Local\conda\conda\envs
+                          C:\Users\user\.conda\envs
+```
+
+Ponieważ środowisk conda nie są przechowywane z projektem, działają podobnie do globalnego środowisk. Na przykład instalowanie nowego pakietu do środowiska conda udostępnia tego pakietu do wszystkich projektów przy użyciu tego środowiska.
+
+Dla programu Visual Studio 2017 wersji 15.6 lub starszej, można użyć środowiska conda wskazując je ręcznie, zgodnie z opisem w [ręcznie Zidentyfikuj istniejącego środowiska](#manually-identify-an-existing-environment).
+
+Visual Studio 2017 wersji 15.7 i nowszych automatycznie wykrywa środowisk conda i wyświetla je w **środowiska Python** okna zgodnie z opisem w następnej sekcji.
 
 ## <a name="the-python-environments-window"></a>Okno środowiska Python
 
 Środowiska, w których zna Visual Studio są wyświetlane w **środowiska Python** okna. Aby otworzyć okno, użyj jednej z następujących metod:
 
-- Wybierz **Widok > inne okna > środowiska Python** polecenia menu.
+- Wybierz **widoku** > **inne okna** > **środowiska Python** polecenia menu.
 - Kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu w Eksploratorze rozwiązań i wybierz **widok wszystkich środowisk języka Python**:
 
     ![Widok wszystkich środowisk polecenia w Eksploratorze rozwiązań](media/environments-view-all.png)
@@ -65,15 +85,17 @@ W obu przypadkach **środowiska Python** okno jako element równorzędny karty d
 
 ![Okno środowiska Python](media/environments-default-view.png)
 
-Powyższy obraz pokazuje, że program Visual Studio wykrył dwóch instalacji języka Python 3,6 (32-bitowy) wraz z Anaconda 5.0.0.
+Domyślne środowisko pogrubioną czcionką jest 3,6 Python, używający dla wszystkich nowych projektów programu Visual Studio. Środowisku wymienionych dowolnego typu, może służyć jako domyślny.
 
-Domyślne środowisko pogrubioną czcionką jest (w tym przypadku część instalacji Anaconda), 3,6 Python, używający dla wszystkich nowych projektów programu Visual Studio. Polecenia w dolnej części okna dotyczą wybranego 3,6 Python interpreter, które jako użytkownik widzi jest instalacji określonych w `C:\Python36-32`. Jeśli nie widzisz środowisku spodziewasz się, zobacz [ręczne identyfikowanie istniejącego środowiska](#manually-identifying-an-existing-environment).
+Polecenia w dolnej części okna dotyczą interpretera wybrane, jak widać to instalacja określonych w `C:\Python36-32` (część instalacji Anaconda jest pogrubiony domyślnego środowiska). Jeśli nie widzisz środowisku spodziewasz się, zobacz [ręcznie Zidentyfikuj istniejącego środowiska](#manually-identify-an-existing-environment).
 
-Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. Inny formant może pojawić się odświeża IntelliSense bazy danych dla tego środowiska (zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab) szczegółowe informacje o bazie danych).
+Po prawej stronie każdego środowiska wymienionych jest formant, który powoduje otwarcie okna interaktywnego dla tego środowiska. (W programie Visual Studio 2017 w 15,5 cala i starszych inny formant się, że odświeża IntelliSense bazy danych dla tego środowiska. Zobacz [odwołania okno środowiska](python-environments-window-tab-reference.md#intellisense-tab) szczegółowe informacje o bazie danych).
 
 Poniżej listy środowisk jest selektora listy rozwijanej dla **omówienie**, **pakiety**, i **IntelliSense** opcje opisane w [środowiska Python okno karty](python-environments-window-tab-reference.md). Ponadto po rozwinięciu **środowiska Python** okna dostatecznie szerokie, te opcje są wyświetlane jako kart, które może się okazać bardziej wygodne do pracy z:
 
 ![Widok rozszerzony okno środowiska Python](media/environments-expanded-view.png)
+
+Na powyższej ilustracji widać pełną listę środowisk na tym komputerze określonego, wraz z dodatkowych poleceń, aby utworzyć środowiska.
 
 > [!Note]
 > Mimo że program Visual Studio szanuje opcję pakiety w przypadku lokacji systemu, nie udostępnia sposób, aby zmienić go z poziomu programu Visual Studio.
@@ -86,18 +108,20 @@ Poniżej listy środowisk jest selektora listy rozwijanej dla **omówienie**, **
 
 Są wyświetlane nie środowisk, oznacza, że nie można wykryć wszystkie instalacje Python w standardowe lokalizacje programu Visual Studio. Na przykład użytkownik może mają zainstalowaną 2017 usługi Visual Studio, ale wyczyszczone wszystkie opcje interpreter w opcjach Instalatora dla obciążenia Python. Podobnie, został zainstalowany program Visual Studio 2015 lub starszym, ale nie został zainstalowany interpreter ręcznie (zobacz [tłumaczy instalowanie Python](installing-python-interpreters.md)).
 
-Jeśli znasz interpreter języka Python jest zainstalowana na komputerze, ale Visual Studio (dowolna wersja) nie wykryje go, a następnie użyj **+ niestandardowy...**  polecenie, aby ręcznie określić jego lokalizacji. Zobacz następną sekcję [ręczne identyfikowanie istniejącego środowiska](#manually-identifying-an-existing-environment).
+Jeśli znasz interpreter języka Python jest zainstalowana na komputerze, ale Visual Studio (dowolna wersja) nie wykryje go, a następnie użyj **+ niestandardowy...**  polecenie, aby ręcznie określić jego lokalizacji. Zobacz następną sekcję [ręcznie Zidentyfikuj istniejącego środowiska](#manually-identify-an-existing-environment).
 
 > [!Tip]
 > Visual Studio wykrywa aktualizacje do istniejących interpretera, takich jak uaktualnianie Python 2.7.11 do 2.7.14 przy użyciu instalatorów od python.org. W procesie instalacji środowiska starsze zniknie z **środowiska Python** listy aktualizacji pojawia się w jego miejscu.
 >
 > Jednak jeśli ręcznie przenieść interpreter i jego środowiska przy użyciu systemu plików programu Visual Studio będą wiedzieć, nowej lokalizacji. Aby uzyskać więcej informacji, zobacz [przenoszenie interpreter](installing-python-interpreters.md#moving-an-interpreter).
 
-## <a name="manually-identifying-an-existing-environment"></a>Ręczne identyfikowanie istniejącego środowiska
+< name = "ręcznie identyfikowanie — moduł istniejących środowiska ></a>
 
-Aby zidentyfikować środowisku, w którym jest zainstalowany w lokalizacji niestandardowej, również w środowiskach conda, wykonaj następujące kroki:
+## <a name="manually-identify-an-existing-environment"></a>Ręcznie Zidentyfikuj istniejącego środowiska
 
-1. Wybierz **+ niestandardowy...**  w **środowiska Python** okna, które umożliwia otwarcie **Konfiguruj** karty:
+Wykonaj następujące kroki, aby zidentyfikować środowisku, w którym jest zainstalowany w lokalizacji niestandardowej (również w środowiskach conda w Visual Studio 2017 wersji 15.6 i starszych):
+
+1. Wybierz **+ niestandardowe** w **środowiska Python** okna, które umożliwia otwarcie **Konfiguruj** karty:
 
     ![Domyślny widok dla nowego środowiska niestandardowych](media/environments-custom-1.png)
 
@@ -114,6 +138,24 @@ Aby zidentyfikować środowisku, w którym jest zainstalowany w lokalizacji nies
 1. Gdy pola zawierają wartości, które mają, wybierz **Zastosuj** Aby zapisać konfigurację. Można teraz używać środowiska jak każdy inny w programie Visual Studio.
 
 1. Jeśli trzeba usunąć ręcznie zidentyfikowanych środowiska, wybierz **Usuń** na **Konfiguruj** kartę. Automatycznie wykrytej środowisk nie zawierają tej opcji. Aby uzyskać więcej informacji, zobacz [kartę Konfiguracja](python-environments-window-tab-reference.md#configure-tab).
+
+## <a name="create-a-conda-environment"></a>Utwórz środowisko conda
+
+*Visual Studio 2017 wersji 15.7 i nowszych.*
+
+1. Wybierz **+ Utwórz środowisko conda** w **środowiska Python** okna, które umożliwia otwarcie **Tworzenie nowego środowiska conda** karty:
+
+    ![Utwórz kartę dla nowego środowiska conda](media/environments-conda-1.png)
+
+1. Wprowadź nazwę dla środowiska w **nazwa** Wybierz podstawowy interpreter języka Python w **Python** pola i wybierz pozycję **Utwórz**.
+
+1. **Dane wyjściowe** okna pokazywania postępu dla nowego środowiska z kilku instrukcjami interfejsu wiersza polecenia po zakończeniu tworzenia:
+
+    ![Pomyślnym utworzeniu środowiska conda](media/environments-conda-2.png)
+
+1. W programie Visual Studio może aktywować środowisku conda dla projektu, tak jak inne środowisko zgodnie z opisem na [wybierając środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
+
+1. Aby zainstalować pakiety w środowisku, należy użyć [kartę pakiety](python-environments-window-tab-reference.md#packages-tab).
 
 ## <a name="see-also"></a>Zobacz także
 

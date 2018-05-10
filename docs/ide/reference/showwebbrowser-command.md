@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1396cd28244a655d18f6e09f4795dd099a11ca7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser — Polecenie
 Wyświetla adres URL, określ w oknie przeglądarki sieci Web albo w ramach zintegrowane środowisko programistyczne (IDE) lub zewnętrzne względem programu IDE.
 
 ## <a name="syntax"></a>Składnia
 
-```
+```cmd
 View.ShowWebBrowser URL [/new][/ext]
 ```
 
@@ -50,7 +50,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="example"></a>Przykład
  W poniższym przykładzie przedstawiono MSDN Online strony głównej w przeglądarce sieci Web poza IDE. Jeśli wystąpienie przeglądarki sieci Web jest już otwarty, jest używany; w przeciwnym razie uruchamiane jest nowe wystąpienie.
 
-```
+```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext
 ```
 

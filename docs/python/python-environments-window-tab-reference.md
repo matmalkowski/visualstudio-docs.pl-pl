@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odwołanie karty okno środowiska Python
 
@@ -36,7 +36,7 @@ Zawiera podstawowe informacje i poleceń środowiska:
 
 | Polecenie | Opis |
 | --- | --- |
-| Ustaw jako domyślny dla nowych projektów tego środowiska | Ustawia środowisko active, co może spowodować Visual Studio może chwilę nie odpowiadać podczas ładuje IntelliSense bazy danych. Środowiska z wiele pakietów mogą być nieodpowiadająca przez dłuższy czas. |
+| Ustaw jako domyślny dla nowych projektów tego środowiska | Ustawia środowisko active, co może spowodować Visual Studio (wersja 2017 15.5 i starszych) może chwilę nie odpowiadać podczas ładuje IntelliSense bazy danych. Środowiska z wiele pakietów mogą być nieodpowiadająca przez dłuższy czas. |
 | Odwiedź witrynę sieci Web dystrybutora | Otwiera w przeglądarce adres URL udostępniony przez dystrybucję oprogramowania Python. Python 3.x, na przykład przechodzi do python.org. |
 | Otwórz okno interaktywne | Otwiera [okna interaktywnego (REPL)](python-interactive-repl-in-visual-studio.md) dla tego środowiska w programie Visual Studio stosowania [skrypty uruchamiania (patrz poniżej)](#startup-scripts). |
 | Eksploruj interaktywne skryptów | Zobacz [skrypty uruchamiania](#startup-scripts). |
@@ -75,7 +75,7 @@ Jeśli jest dostępna, zawiera szczegółowe informacje, zgodnie z opisem w poni
 
 *Również z etykietą "pip" we wcześniejszych wersjach.*
 
-Zarządza pakiety zainstalowane w środowisku, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności).
+Zarządza pakiety zainstalowane w środowisku przy użyciu narzędzia pip, co umożliwia również wyszukiwanie i instalowanie nowych (w tym wszelkie zależności). W Visual Studio 2017 wersji 15.7 lub nowszym **pakietów (Conda)** opcja jest dostępna, który używa Menedżera pakietów conda zamiast tego. (Jeśli nie widzisz, że wybór, ustaw dla opcji **narzędzia** > **opcje** > **Python** > **eksperymentalne**   >  **Użyj Menedżera pakietów conda dostępne (zamiast pip)** i uruchom ponownie program Visual Studio.)
 
 Pakiety, które są już zainstalowane są wyświetlane z formantami, aby zaktualizować (Strzałka w górę) i Odinstaluj (X koło) pakietu:
 
@@ -105,7 +105,8 @@ Wskazuje bieżący stan bazy danych uzupełniania IntelliSense:
 
 ![Karta IntelliSense środowiska Python](media/environments-intellisense-tab.png)
 
-W **programu Visual Studio 2017 wersji 15,5 cala** i wcześniej, IntelliSense zakończeń są zależne od bazy danych, która jest została skompilowana dla tej biblioteki. Tworzenie bazy danych jest realizowane w tle podczas biblioteki jest zainstalowany, ale może zająć trochę czasu i mogą być niekompletne podczas uruchamiania pisanie kodu. **Visual Studio 2017 wersji 15,6** i później używa szybszej metody, aby zapewnić zakończeń, które nie są zależne od bazy danych, chyba że zostaną ją włączyć.
+- W **programu Visual Studio 2017 wersji 15,5 cala** i wcześniej, IntelliSense zakończeń są zależne od bazy danych, która jest została skompilowana dla tej biblioteki. Tworzenie bazy danych jest realizowane w tle podczas biblioteki jest zainstalowany, ale może zająć trochę czasu i mogą być niekompletne podczas uruchamiania pisanie kodu.
+- **Visual Studio 2017 wersji 15,6** i później używa szybszej metody, aby zapewnić zakończeń, które nie są zależne od bazy danych domyślnie. Z tego powodu etykietą karcie **IntelliSense [bazy danych wyłączone]**. Bazy danych można włączyć po usunięciu zaznaczenia opcji **narzędzia** > **opcje** > **Python**  >   **Eksperymentalne** > **użyć nowego stylu IntelliSense dla środowisk**.
 
 Gdy program Visual Studio wykryje nowego środowiska (lub dodaj je), automatyczne rozpoczęcie do skompilowania bazy danych, analizując biblioteki plików źródłowych. Ten proces może potrwać od minutę na godzinę lub dłużej w zależności od tego, co jest zainstalowany. (Anaconda, na przykład zawiera wiele bibliotek i dopiero po pewnym czasie, aby skompilować bazy danych) Po wykonaniu tych czynności możesz uzyskać szczegółowe IntelliSense i nie trzeba ponownie Odśwież bazy danych (z **Odśwież DB** przycisk) aż do zainstalowania więcej bibliotek.
 

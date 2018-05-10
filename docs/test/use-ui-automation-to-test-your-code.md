@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 897ce97da798509253bf3f7d93a79735cc354965
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -79,7 +79,7 @@ Aby uzyskać więcej informacji o platformach i konfiguracjach obsługiwanych pr
     > [!WARNING]
     > Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, wykonywania działań, które mogą prowadzić do włączenia rejestrowania danych poufnych.
 
-     **Aby usunąć akcje** zapisane przez pomyłkę, wybierz **edytować akcje**.
+     **Aby usunąć akcje** zapisane przez pomyłkę, wybierz **Edytuj kroki**.
 
      **Aby wygenerować kod** który będą replikowane czynności użytkownika, wybierz **Generuj kod** ikony, jak i typ metoda testowa nazwę i opis dla kodowanego interfejsu użytkownika.
 

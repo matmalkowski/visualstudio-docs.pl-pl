@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Wskazówki: Używanie klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótu można odpowiedzieć w rozszerzenia edytora. Poniższe wskazówki przedstawiono sposób dodawania ozdób widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie Edytor ozdób okienka ekranu, i umożliwia dodawanie ozdób przy użyciu + znak.  
@@ -46,8 +46,21 @@ Klawisze skrótu można odpowiedzieć w rozszerzenia edytora. Poniższe wskazów
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
+
+Plik klasy KeyBindingTestTextViewCreationListener.cs, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**:
   
-## <a name="defining-the-command-filter"></a>Definiowanie filtru polecenia  
+    ```csharp  
+    [Export(typeof(AdornmentLayerDefinition))]  
+    [Name("PurpleCornerBox")]  
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+    public AdornmentLayerDefinition editorAdornmentLayer;  
+    ```  
+
+## <a name="handling-typechar-command"></a>Polecenie TYPECHAR obsługi
+Przed Visual Studio 2017 wersji 15,6, jedynym sposobem obsługi poleceń w edytorze rozszerzenie zostało implementacja <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> na podstawie filtru polecenia. Visual Studio 2017 wersji 15,6 wprowadzono nowoczesnych metoda uproszczona oparte na programy obsługi poleceń edytora. W dwóch następnych sekcjach pokazano sposób obsługi polecenia przy użyciu zarówno podejście starszych i nowoczesny.
+
+## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Definiowanie filtru polecenia (przed Visual Studio 2017 wersji 15,6)
+
  Polecenie filtru jest implementacją <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, który obsługuje polecenie przez utworzenie wystąpienia ozdób.  
   
 1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandFilter`.  
@@ -90,7 +103,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 6.  Implementowanie `QueryStatus()` metody w następujący sposób.  
   
-    ```vb  
+    ```csharp  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
     {  
         return m_nextTarget.QueryStatus(ref pguidCmdGroup, cCmds, prgCmds, pCmdText);  
@@ -121,7 +134,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>Dodawanie filtru polecenia  
+## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Dodawanie filtru polecenia (przed Visual Studio 2017 wersji 15,6)
  Dostawca ozdób należy dodać polecenie Filtr do widoku tekstu. W tym przykładzie implementuje dostawcę <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> do nasłuchiwania zdarzeń tworzenia widoku tekstu. Ten dostawca ozdób Eksportuje również warstwy ozdób, która określa porządek osi z ozdób.  
   
 1.  W pliku KeyBindingTestTextViewCreationListener, Dodaj następujące instrukcje using:  
@@ -139,16 +152,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  W definicji warstwy ozdób, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**.  
-  
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
-  
-3.  Aby uzyskać karty widoku tekstu, należy zaimportować <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+2.  Aby uzyskać karty widoku tekstu, należy zaimportować <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +160,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Zmień <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.  
+3.  Zmień <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> metodę, tak że dodaje `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +169,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter` Obsługi pobiera karty widoku tekstu, a następnie dodaje filtr polecenia.  
+4.  `AddCommandFilter` Obsługi pobiera karty widoku tekstu, a następnie dodaje filtr polecenia.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -188,11 +192,90 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
         }  
     }  
     ```  
+
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Wdrożenie programu obsługi poleceń (począwszy od programu Visual Studio 2017 wersji 15,6)
+
+Najpierw należy zaktualizować odwołań Nuget projektu do odwołania najnowsze Edytor interfejsu API:
+
+1. Kliknij prawym przyciskiem myszy na projekt i wybierz **Zarządzaj pakietami Nuget**.
+
+2. W **Menedżera pakietów Nuget**, wybierz pozycję **aktualizacje** wybierz opcję **wybrać wszystkie pakiety** pole wyboru, a następnie wybierz **aktualizacji**.
+
+Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, który obsługuje polecenie przez utworzenie wystąpienia ozdób.  
   
+1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandHandler`.  
+  
+2.  Dodaj następujące instrukcje using.  
+  
+    ```csharp  
+    using Microsoft.VisualStudio.Commanding;
+    using Microsoft.VisualStudio.Text.Editor;
+    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+    using Microsoft.VisualStudio.Utilities;
+    using System.ComponentModel.Composition;   
+    ```  
+  
+3.  Klasa o nazwie KeyBindingCommandHandler powinien dziedziczyć `ICommandHandler<TypeCharCommandArgs>`i wyeksportować ją jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+  
+    ```csharp  
+    [Export(typeof(ICommandHandler))]
+    [ContentType("text")]
+    [Name("KeyBindingTest")]
+    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+    ```  
+  
+4.  Dodaj nazwę wyświetlaną obsługi polecenia:  
+  
+    ```csharp  
+    public string DisplayName => "KeyBindingTest";
+    ```  
+    
+5.  Implementowanie `GetCommandState()` metody w następujący sposób. Ponieważ ten program obsługi poleceń obsługuje polecenie TYPECHAR Edytor core, można delegować, włączanie polecenia do edytora core.
+  
+    ```csharp  
+    public CommandState GetCommandState(TypeCharCommandArgs args)
+    {
+        return CommandState.Unspecified;
+    } 
+    ```  
+  
+6.  Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowa pole do widoku, jeśli + wpisany jest znak. 
+  
+    ```csharp  
+    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+    {
+        if (args.TypedChar == '+')
+        {
+            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+                "KeyBindingTextAdorned", out bool adorned) && adorned;
+            if (!alreadyAdorned)
+            {
+                new PurpleCornerBox((IWpfTextView)args.TextView);
+                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+            }
+        }
+
+        return false;
+    }
+    ```  
+ 7. Skopiuj ozdób warstwy definicję z pliku KeyBindingTestTextViewCreationListener.cs do KeyBindingCommandHandler.cs, a następnie usuń plik KeyBindingTestTextViewCreationListener.cs:
+ 
+    ```csharp  
+    /// <summary>
+    /// Defines the adornment layer for the adornment. This layer is ordered
+    /// after the selection layer in the Z-order.
+    /// </summary>
+    [Export(typeof(AdornmentLayerDefinition))]
+    [Name("PurpleCornerBox")]
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+    private AdornmentLayerDefinition editorAdornmentLayer;    
+    ```  
+
 ## <a name="making-the-adornment-appear-on-every-line"></a>Tworzenie ozdób są wyświetlane w każdym wierszu  
- Oryginalny ozdób znajdowały się na każdym znakiem "" w pliku tekstowym. Teraz, gdy zmieniono kodu w celu dodania ozdób w odpowiedzi na znak "+" dodaje ozdób tylko w wierszu gdzie '+' został wpisany. Możemy zmienić kod ozdób tak, aby ponownie ozdób pojawia się na każdym "".  
+
+Oryginalny ozdób znajdowały się na każdym znakiem "" w pliku tekstowym. Teraz, gdy zmieniono kodu w celu dodania ozdób w odpowiedzi na znak "+" dodaje ozdób tylko w wierszu gdzie '+' został wpisany. Możemy zmienić kod ozdób tak, aby ponownie ozdób pojawia się na każdym "".  
   
- W pliku KeyBindingTest.cs Zmień metodę CreateVisuals() do iterowania po wszystkich wierszy w widoku do dekoracji znak "".  
+W pliku KeyBindingTest.cs Zmień metodę CreateVisuals() do iterowania po wszystkich wierszy w widoku do dekoracji znak "".  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  

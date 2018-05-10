@@ -1,8 +1,8 @@
 ---
-title: Wyświetl migawkę przy użyciu funkcji IntelliTrace krok zwrotnego — Visual Studio | Dokumentacja firmy Microsoft
+title: Wyświetl migawkę przy użyciu zwrotnego krok IntelliTrace
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zwroty kroku migawki widoku przy użyciu funkcji IntelliTrace w programie Visual Studio
 
@@ -38,9 +38,20 @@ W tym samouczku obejmują:
 
     ![Włącz tryb zdarzeń funkcji IntelliTrace i migawki](../debugger/media/intellitrace-enable-snapshots.png "tryb migawki i włączyć zdarzeń funkcji IntelliTrace")
 
+1. Jeśli chcesz skonfigurować opcje wyświetlania migawek na wyjątki, wybierz **IntelliTrace** > **zaawansowane** z **opcje** okno dialogowe.
+
+    Te opcje są dostępne w programie Visual Studio Enterprise 2017 wersji 15.7.
+
+    ![Skonfiguruj zachowanie dla migawki na wyjątki](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Po włączeniu zdarzeń i migawki, tworzenie migawek na wyjątki jest również domyślnie włączone. Możesz wyłączyć migawek na wyjątki przez wyłączenie **zbierane migawki na zdarzeń wyjątków**. Gdy ta funkcja jest włączona, migawek są wykonywane dla nieobsługiwanych wyjątków. Dla wyjątków obsłużonych migawki są wykonywane tylko wtedy, gdy wyjątku i jeśli nie jest ponownie zgłosić wyjątek zgłoszony wcześniej. Maksymalna liczba migawek na wyjątki można ustawić, wybierając wartość z listy rozwijanej. Maksymalna stosuje za każdym razem przez aplikację przejdzie w tryb przerwania (na przykład jeśli aplikacja trafienia punktu przerwania).
+
+    > [!NOTE]
+    > Migawki są wykonywane tylko dla zdarzeń dotyczących wyjątków tego rekordów funkcji IntelliTrace. Jakie zdarzenia funkcji IntelliTrace rekordy można określić, wybierając **narzędzia** > **opcje** > **zdarzeń funkcji IntelliTrace**.
+
 1. W projekcie, ustawić co najmniej jednego punktu przerwania i Rozpocznij debugowanie (naciśnij klawisz **F5**), lub uruchomić debugowanie przy przechodzeniu przez kod (**F10** lub **F11**).
 
-    IntelliTrace tworzy migawkę proces aplikacji w debugerze każdego zdarzenia krok i punktu przerwania. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna, oraz inne zdarzenia funkcji IntelliTrace. Aby otworzyć to okno, wybierz polecenie **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+    IntelliTrace tworzy migawkę proces aplikacji na każdym kroku debugera, zdarzenie punktu przerwania i zdarzeń nieobsługiwany wyjątek. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna, oraz inne zdarzenia funkcji IntelliTrace. Aby otworzyć to okno, wybierz polecenie **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
     Ikona aparatu obok zdarzeń, dla których są dostępne migawki. 
 

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19fde51de5e63a0cde9adebd28ad29fc295c6e9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Przewodnik administratora podglądu pomocy
 
@@ -38,7 +38,7 @@ Jeśli nie masz dostępu do Internetu w danym środowisku sieciowym, podglądu p
 
 Można użyć **menedżera zawartości Pomocy** (*HlpCtntMgr.exe*) do wdrożenia lokalnego zawartość pomocy z Internetu na komputerach klienckich. Należy użyć następującej składni:
 
-```
+```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
@@ -137,7 +137,7 @@ Następnie należy do pakietu zawartości, dlatego może być wdrożony na kompu
 
 2.  Utwórz *bat* plik zawiera skrypt wdrażania zawartości pomocy. Ponieważ klient może prawdopodobnie mają blokady odczytu na dowolny plik usuwane w ramach powiadomienia wypychanego, powinny być zamknięty przed wypychania aktualizacji klienta. Na przykład:
 
-    ```
+    ```cmd
     REM - copy pre-ripped content to ProgramData
     Xcopy %~dp0HelpLibrary2 %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2\ /y /e /k /o
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)

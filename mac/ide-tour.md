@@ -3,13 +3,13 @@ title: Visual Studio for Mac samouczka
 description: Program Visual Studio for Mac udostępnia zintegrowane środowisko programistyczne do tworzenia aplikacji .NET na macOS, łącznie z witryn sieci Web platformy ASP.NET Core i projektów platformy Xamarin dla systemu iOS, Android, Mac i platformy Xamarin.Forms.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: f81ae65090e79c7ab758be5c080b91e4b3bd8dfc
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ffe295d6744af1ff6d91172b99575cf5eba97246
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac samouczka
 
